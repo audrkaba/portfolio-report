@@ -1,9 +1,38 @@
 ---
-layout: default
+layout: null
 title: Baltic investment plan
 description: Nasdaq Baltic portfolio report
 ---
-
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Baltic investment plan</title>
+<style>
+:root { --ink:#17212b; --muted:#607080; --accent:#007f8b; --line:#dce3e8; --paper:#fff; --bg:#f3f6f8; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif; }
+main { width:min(1500px,calc(100% - 32px)); margin:24px auto; padding:42px clamp(18px,5vw,72px); background:var(--paper); border-radius:10px; box-shadow:0 2px 16px #20304018; }
+h1 { color:#173246; font-size:2.25rem; line-height:1.15; }
+h2 { margin-top:2.6rem; padding-bottom:.35rem; color:#173246; border-bottom:2px solid var(--accent); }
+h3 { margin-top:2rem; color:#24536a; }
+details { margin:1rem 0; padding:.25rem .9rem .8rem; border:1px solid var(--line); border-radius:8px; background:#fbfcfd; }
+details details { background:white; }
+summary { cursor:pointer; padding:.65rem .1rem; color:#174d61; }
+summary:hover { color:var(--accent); }
+table { display:block; width:100%; overflow-x:auto; border-collapse:collapse; white-space:nowrap; font-size:.88rem; margin:.7rem 0 1rem; }
+th,td { padding:.5rem .65rem; border:1px solid var(--line); text-align:right; }
+th { background:#dceff1; color:#173246; }
+th:first-child,td:first-child { text-align:left; }
+tr:nth-child(even) td { background:#f7fafb; }
+img { display:block; max-width:100%; height:auto; margin:1rem auto; border:1px solid var(--line); border-radius:6px; cursor:zoom-in; }
+a { color:var(--accent); }
+@media(max-width:700px) { main { width:100%; margin:0; padding:22px 14px; border-radius:0; } h1 { font-size:1.7rem; } }
+</style>
+</head>
+<body><main markdown="1">
 # Baltic investment plan
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
@@ -21,7 +50,7 @@ The best numerical solution found has netSD 0.931034 (OUT=108, IN=0, denominator
 
 Current-portfolio netSD is 0.439655; the optimised-portfolio value is 0.974138. Historical gross dividends for the final whole-share quantities are EUR 1929.36. These historical dividends are a counterfactual, before tax and without reinvestment, rather than a forecast.
 
-<details>
+<details markdown="1">
 <summary><strong>Table 1. Optimisation objective and constraint checks</strong></summary>
 
 | Component | Restriction or objective | Obtained value | Result |
@@ -38,7 +67,7 @@ Current-portfolio netSD is 0.439655; the optimised-portfolio value is 0.974138. 
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><strong>Table 2. Eligible Nasdaq Baltic shares and the optimised allocation</strong></summary>
 
 | asset | name | market | last_price | optimal_weight_percent | current_shares | target_shares | trade_shares | action | invested_EUR | historical_dividend_cash |
@@ -103,7 +132,7 @@ Current-portfolio netSD is 0.439655; the optimised-portfolio value is 0.974138. 
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><strong>Table 3. Buy, sell and hold decisions for nonzero current or target positions</strong></summary>
 
 | asset | name | last_price | target_weight_percent | current_shares | target_shares | trade_shares | action | invested_EUR | total_dividend_per_share | historical_dividend_cash |
@@ -141,7 +170,7 @@ A positive trade_shares value means buy, a negative value means sell, and zero m
 
 Select a share to display its allocation, technical indicators, all PerformanceAnalytics measures, stochastic-dominance curves and leave-one-out effect.
 
-<details id="share-ign1l">
+<details markdown="1" id="share-ign1l">
 <summary><strong>IGN1L — Ignitis grupė</strong> | HOLD | target 8 shares | priority 1</summary>
 
 | Measure | Value |
@@ -161,28 +190,28 @@ Select a share to display its allocation, technical indicators, all PerformanceA
 
 ![IGN1L complete technical history](figures/technical_analysis/IGN1L_technical.png)
 
-<details>
+<details markdown="1">
 <summary>Bollinger Bands — enlarge last year</summary>
 
 ![IGN1L Bollinger Bands — enlarge last year](figures/stock_profiles/IGN1L_bollinger_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>RSI(14) — enlarge last year</summary>
 
 ![IGN1L RSI(14) — enlarge last year](figures/stock_profiles/IGN1L_rsi_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>MACD — enlarge last year</summary>
 
 ![IGN1L MACD — enlarge last year](figures/stock_profiles/IGN1L_macd_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
 ![IGN1L stochastic dominance](figures/stock_profiles/IGN1L_FSD_SSD_TSD.png)
@@ -191,7 +220,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>All 72 PerformanceAnalytics measures</summary>
 
 | Measure | Value |
@@ -271,7 +300,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
 | Measure | Portfolio without share | Change from baseline |
@@ -286,7 +315,7 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 </details>
 
-<details id="share-grg1l">
+<details markdown="1" id="share-grg1l">
 <summary><strong>GRG1L — Grigeo Group</strong> | HOLD | target 723 shares | priority 2</summary>
 
 | Measure | Value |
@@ -306,28 +335,28 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 ![GRG1L complete technical history](figures/technical_analysis/GRG1L_technical.png)
 
-<details>
+<details markdown="1">
 <summary>Bollinger Bands — enlarge last year</summary>
 
 ![GRG1L Bollinger Bands — enlarge last year](figures/stock_profiles/GRG1L_bollinger_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>RSI(14) — enlarge last year</summary>
 
 ![GRG1L RSI(14) — enlarge last year](figures/stock_profiles/GRG1L_rsi_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>MACD — enlarge last year</summary>
 
 ![GRG1L MACD — enlarge last year](figures/stock_profiles/GRG1L_macd_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
 ![GRG1L stochastic dominance](figures/stock_profiles/GRG1L_FSD_SSD_TSD.png)
@@ -336,7 +365,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>All 72 PerformanceAnalytics measures</summary>
 
 | Measure | Value |
@@ -416,7 +445,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
 | Measure | Portfolio without share | Change from baseline |
@@ -431,7 +460,7 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 </details>
 
-<details id="share-vlp1l">
+<details markdown="1" id="share-vlp1l">
 <summary><strong>VLP1L — Vilkyškių pieninė</strong> | HOLD | target 75 shares | priority 2</summary>
 
 | Measure | Value |
@@ -451,28 +480,28 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 ![VLP1L complete technical history](figures/technical_analysis/VLP1L_technical.png)
 
-<details>
+<details markdown="1">
 <summary>Bollinger Bands — enlarge last year</summary>
 
 ![VLP1L Bollinger Bands — enlarge last year](figures/stock_profiles/VLP1L_bollinger_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>RSI(14) — enlarge last year</summary>
 
 ![VLP1L RSI(14) — enlarge last year](figures/stock_profiles/VLP1L_rsi_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>MACD — enlarge last year</summary>
 
 ![VLP1L MACD — enlarge last year](figures/stock_profiles/VLP1L_macd_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
 ![VLP1L stochastic dominance](figures/stock_profiles/VLP1L_FSD_SSD_TSD.png)
@@ -481,7 +510,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>All 72 PerformanceAnalytics measures</summary>
 
 | Measure | Value |
@@ -561,7 +590,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
 | Measure | Portfolio without share | Change from baseline |
@@ -576,7 +605,7 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 </details>
 
-<details id="share-kne1l">
+<details markdown="1" id="share-kne1l">
 <summary><strong>KNE1L — KN Energies</strong> | HOLD | target 1226 shares | priority 4</summary>
 
 | Measure | Value |
@@ -596,28 +625,28 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 ![KNE1L complete technical history](figures/technical_analysis/KNE1L_technical.png)
 
-<details>
+<details markdown="1">
 <summary>Bollinger Bands — enlarge last year</summary>
 
 ![KNE1L Bollinger Bands — enlarge last year](figures/stock_profiles/KNE1L_bollinger_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>RSI(14) — enlarge last year</summary>
 
 ![KNE1L RSI(14) — enlarge last year](figures/stock_profiles/KNE1L_rsi_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>MACD — enlarge last year</summary>
 
 ![KNE1L MACD — enlarge last year](figures/stock_profiles/KNE1L_macd_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
 ![KNE1L stochastic dominance](figures/stock_profiles/KNE1L_FSD_SSD_TSD.png)
@@ -626,7 +655,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>All 72 PerformanceAnalytics measures</summary>
 
 | Measure | Value |
@@ -706,7 +735,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
 | Measure | Portfolio without share | Change from baseline |
@@ -721,7 +750,7 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 </details>
 
-<details id="share-mrk1t">
+<details markdown="1" id="share-mrk1t">
 <summary><strong>MRK1T — Merko Ehitus</strong> | HOLD | target 38 shares | priority 4</summary>
 
 | Measure | Value |
@@ -741,28 +770,28 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 ![MRK1T complete technical history](figures/technical_analysis/MRK1T_technical.png)
 
-<details>
+<details markdown="1">
 <summary>Bollinger Bands — enlarge last year</summary>
 
 ![MRK1T Bollinger Bands — enlarge last year](figures/stock_profiles/MRK1T_bollinger_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>RSI(14) — enlarge last year</summary>
 
 ![MRK1T RSI(14) — enlarge last year](figures/stock_profiles/MRK1T_rsi_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>MACD — enlarge last year</summary>
 
 ![MRK1T MACD — enlarge last year](figures/stock_profiles/MRK1T_macd_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
 ![MRK1T stochastic dominance](figures/stock_profiles/MRK1T_FSD_SSD_TSD.png)
@@ -771,7 +800,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>All 72 PerformanceAnalytics measures</summary>
 
 | Measure | Value |
@@ -851,7 +880,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
 | Measure | Portfolio without share | Change from baseline |
@@ -866,7 +895,7 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 </details>
 
-<details id="share-apg1l">
+<details markdown="1" id="share-apg1l">
 <summary><strong>APG1L — Apranga</strong> | HOLD | target 329 shares | priority 6</summary>
 
 | Measure | Value |
@@ -886,28 +915,28 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 ![APG1L complete technical history](figures/technical_analysis/APG1L_technical.png)
 
-<details>
+<details markdown="1">
 <summary>Bollinger Bands — enlarge last year</summary>
 
 ![APG1L Bollinger Bands — enlarge last year](figures/stock_profiles/APG1L_bollinger_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>RSI(14) — enlarge last year</summary>
 
 ![APG1L RSI(14) — enlarge last year](figures/stock_profiles/APG1L_rsi_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>MACD — enlarge last year</summary>
 
 ![APG1L MACD — enlarge last year](figures/stock_profiles/APG1L_macd_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
 ![APG1L stochastic dominance](figures/stock_profiles/APG1L_FSD_SSD_TSD.png)
@@ -916,7 +945,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>All 72 PerformanceAnalytics measures</summary>
 
 | Measure | Value |
@@ -996,7 +1025,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
 | Measure | Portfolio without share | Change from baseline |
@@ -1011,7 +1040,7 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 </details>
 
-<details id="share-virsi">
+<details markdown="1" id="share-virsi">
 <summary><strong>VIRSI — VIRŠI-A</strong> | HOLD | target 10 shares | priority 7</summary>
 
 | Measure | Value |
@@ -1031,28 +1060,28 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 ![VIRSI complete technical history](figures/technical_analysis/VIRSI_technical.png)
 
-<details>
+<details markdown="1">
 <summary>Bollinger Bands — enlarge last year</summary>
 
 ![VIRSI Bollinger Bands — enlarge last year](figures/stock_profiles/VIRSI_bollinger_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>RSI(14) — enlarge last year</summary>
 
 ![VIRSI RSI(14) — enlarge last year](figures/stock_profiles/VIRSI_rsi_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>MACD — enlarge last year</summary>
 
 ![VIRSI MACD — enlarge last year](figures/stock_profiles/VIRSI_macd_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
 ![VIRSI stochastic dominance](figures/stock_profiles/VIRSI_FSD_SSD_TSD.png)
@@ -1061,7 +1090,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>All 72 PerformanceAnalytics measures</summary>
 
 | Measure | Value |
@@ -1141,7 +1170,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
 | Measure | Portfolio without share | Change from baseline |
@@ -1156,7 +1185,7 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 </details>
 
-<details id="share-rsu1l">
+<details markdown="1" id="share-rsu1l">
 <summary><strong>RSU1L — Rokiškio sūris</strong> | HOLD | target 155 shares | priority 8</summary>
 
 | Measure | Value |
@@ -1176,28 +1205,28 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 ![RSU1L complete technical history](figures/technical_analysis/RSU1L_technical.png)
 
-<details>
+<details markdown="1">
 <summary>Bollinger Bands — enlarge last year</summary>
 
 ![RSU1L Bollinger Bands — enlarge last year](figures/stock_profiles/RSU1L_bollinger_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>RSI(14) — enlarge last year</summary>
 
 ![RSU1L RSI(14) — enlarge last year](figures/stock_profiles/RSU1L_rsi_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>MACD — enlarge last year</summary>
 
 ![RSU1L MACD — enlarge last year](figures/stock_profiles/RSU1L_macd_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
 ![RSU1L stochastic dominance](figures/stock_profiles/RSU1L_FSD_SSD_TSD.png)
@@ -1206,7 +1235,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>All 72 PerformanceAnalytics measures</summary>
 
 | Measure | Value |
@@ -1286,7 +1315,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
 | Measure | Portfolio without share | Change from baseline |
@@ -1301,7 +1330,7 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 </details>
 
-<details id="share-pzv1l">
+<details markdown="1" id="share-pzv1l">
 <summary><strong>PZV1L — Pieno žvaigždės</strong> | HOLD | target 251 shares | priority 9</summary>
 
 | Measure | Value |
@@ -1321,28 +1350,28 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 ![PZV1L complete technical history](figures/technical_analysis/PZV1L_technical.png)
 
-<details>
+<details markdown="1">
 <summary>Bollinger Bands — enlarge last year</summary>
 
 ![PZV1L Bollinger Bands — enlarge last year](figures/stock_profiles/PZV1L_bollinger_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>RSI(14) — enlarge last year</summary>
 
 ![PZV1L RSI(14) — enlarge last year](figures/stock_profiles/PZV1L_rsi_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>MACD — enlarge last year</summary>
 
 ![PZV1L MACD — enlarge last year](figures/stock_profiles/PZV1L_macd_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
 ![PZV1L stochastic dominance](figures/stock_profiles/PZV1L_FSD_SSD_TSD.png)
@@ -1351,7 +1380,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>All 72 PerformanceAnalytics measures</summary>
 
 | Measure | Value |
@@ -1431,7 +1460,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
 | Measure | Portfolio without share | Change from baseline |
@@ -1446,7 +1475,7 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 </details>
 
-<details id="share-roe1l">
+<details markdown="1" id="share-roe1l">
 <summary><strong>ROE1L — Artea Bankas</strong> | HOLD | target 667 shares | priority 9</summary>
 
 | Measure | Value |
@@ -1466,28 +1495,28 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 ![ROE1L complete technical history](figures/technical_analysis/ROE1L_technical.png)
 
-<details>
+<details markdown="1">
 <summary>Bollinger Bands — enlarge last year</summary>
 
 ![ROE1L Bollinger Bands — enlarge last year](figures/stock_profiles/ROE1L_bollinger_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>RSI(14) — enlarge last year</summary>
 
 ![ROE1L RSI(14) — enlarge last year](figures/stock_profiles/ROE1L_rsi_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>MACD — enlarge last year</summary>
 
 ![ROE1L MACD — enlarge last year](figures/stock_profiles/ROE1L_macd_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
 ![ROE1L stochastic dominance](figures/stock_profiles/ROE1L_FSD_SSD_TSD.png)
@@ -1496,7 +1525,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>All 72 PerformanceAnalytics measures</summary>
 
 | Measure | Value |
@@ -1576,7 +1605,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
 | Measure | Portfolio without share | Change from baseline |
@@ -1591,7 +1620,7 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 </details>
 
-<details id="share-tel1l">
+<details markdown="1" id="share-tel1l">
 <summary><strong>TEL1L — Telia Lietuva</strong> | HOLD | target 21 shares | priority 11</summary>
 
 | Measure | Value |
@@ -1611,28 +1640,28 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 ![TEL1L complete technical history](figures/technical_analysis/TEL1L_technical.png)
 
-<details>
+<details markdown="1">
 <summary>Bollinger Bands — enlarge last year</summary>
 
 ![TEL1L Bollinger Bands — enlarge last year](figures/stock_profiles/TEL1L_bollinger_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>RSI(14) — enlarge last year</summary>
 
 ![TEL1L RSI(14) — enlarge last year](figures/stock_profiles/TEL1L_rsi_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>MACD — enlarge last year</summary>
 
 ![TEL1L MACD — enlarge last year](figures/stock_profiles/TEL1L_macd_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
 ![TEL1L stochastic dominance](figures/stock_profiles/TEL1L_FSD_SSD_TSD.png)
@@ -1641,7 +1670,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>All 72 PerformanceAnalytics measures</summary>
 
 | Measure | Value |
@@ -1721,7 +1750,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
 | Measure | Portfolio without share | Change from baseline |
@@ -1736,7 +1765,7 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 </details>
 
-<details id="share-ako1l">
+<details markdown="1" id="share-ako1l">
 <summary><strong>AKO1L — Akola Group</strong> | HOLD | target 112 shares | priority 12</summary>
 
 | Measure | Value |
@@ -1756,28 +1785,28 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 ![AKO1L complete technical history](figures/technical_analysis/AKO1L_technical.png)
 
-<details>
+<details markdown="1">
 <summary>Bollinger Bands — enlarge last year</summary>
 
 ![AKO1L Bollinger Bands — enlarge last year](figures/stock_profiles/AKO1L_bollinger_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>RSI(14) — enlarge last year</summary>
 
 ![AKO1L RSI(14) — enlarge last year](figures/stock_profiles/AKO1L_rsi_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>MACD — enlarge last year</summary>
 
 ![AKO1L MACD — enlarge last year](figures/stock_profiles/AKO1L_macd_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
 ![AKO1L stochastic dominance](figures/stock_profiles/AKO1L_FSD_SSD_TSD.png)
@@ -1786,7 +1815,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>All 72 PerformanceAnalytics measures</summary>
 
 | Measure | Value |
@@ -1866,7 +1895,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
 | Measure | Portfolio without share | Change from baseline |
@@ -1881,7 +1910,7 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 </details>
 
-<details id="share-eft1t">
+<details markdown="1" id="share-eft1t">
 <summary><strong>EFT1T — EfTEN Real Estate Fund</strong> | HOLD | target 20 shares | priority 13</summary>
 
 | Measure | Value |
@@ -1901,28 +1930,28 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 ![EFT1T complete technical history](figures/technical_analysis/EFT1T_technical.png)
 
-<details>
+<details markdown="1">
 <summary>Bollinger Bands — enlarge last year</summary>
 
 ![EFT1T Bollinger Bands — enlarge last year](figures/stock_profiles/EFT1T_bollinger_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>RSI(14) — enlarge last year</summary>
 
 ![EFT1T RSI(14) — enlarge last year](figures/stock_profiles/EFT1T_rsi_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>MACD — enlarge last year</summary>
 
 ![EFT1T MACD — enlarge last year](figures/stock_profiles/EFT1T_macd_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
 ![EFT1T stochastic dominance](figures/stock_profiles/EFT1T_FSD_SSD_TSD.png)
@@ -1931,7 +1960,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>All 72 PerformanceAnalytics measures</summary>
 
 | Measure | Value |
@@ -2011,7 +2040,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
 | Measure | Portfolio without share | Change from baseline |
@@ -2026,7 +2055,7 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 </details>
 
-<details id="share-hae1t">
+<details markdown="1" id="share-hae1t">
 <summary><strong>HAE1T — Harju Elekter Group</strong> | BUY | target 122 shares | priority 13</summary>
 
 | Measure | Value |
@@ -2046,28 +2075,28 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 ![HAE1T complete technical history](figures/technical_analysis/HAE1T_technical.png)
 
-<details>
+<details markdown="1">
 <summary>Bollinger Bands — enlarge last year</summary>
 
 ![HAE1T Bollinger Bands — enlarge last year](figures/stock_profiles/HAE1T_bollinger_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>RSI(14) — enlarge last year</summary>
 
 ![HAE1T RSI(14) — enlarge last year](figures/stock_profiles/HAE1T_rsi_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>MACD — enlarge last year</summary>
 
 ![HAE1T MACD — enlarge last year](figures/stock_profiles/HAE1T_macd_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
 ![HAE1T stochastic dominance](figures/stock_profiles/HAE1T_FSD_SSD_TSD.png)
@@ -2076,7 +2105,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>All 72 PerformanceAnalytics measures</summary>
 
 | Measure | Value |
@@ -2156,7 +2185,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
 | Measure | Portfolio without share | Change from baseline |
@@ -2171,7 +2200,7 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 </details>
 
-<details id="share-lhv1t">
+<details markdown="1" id="share-lhv1t">
 <summary><strong>LHV1T — LHV Group</strong> | HOLD | target 1 shares | priority 15</summary>
 
 | Measure | Value |
@@ -2191,28 +2220,28 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 ![LHV1T complete technical history](figures/technical_analysis/LHV1T_technical.png)
 
-<details>
+<details markdown="1">
 <summary>Bollinger Bands — enlarge last year</summary>
 
 ![LHV1T Bollinger Bands — enlarge last year](figures/stock_profiles/LHV1T_bollinger_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>RSI(14) — enlarge last year</summary>
 
 ![LHV1T RSI(14) — enlarge last year](figures/stock_profiles/LHV1T_rsi_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>MACD — enlarge last year</summary>
 
 ![LHV1T MACD — enlarge last year](figures/stock_profiles/LHV1T_macd_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
 ![LHV1T stochastic dominance](figures/stock_profiles/LHV1T_FSD_SSD_TSD.png)
@@ -2221,7 +2250,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>All 72 PerformanceAnalytics measures</summary>
 
 | Measure | Value |
@@ -2301,7 +2330,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
 | Measure | Portfolio without share | Change from baseline |
@@ -2316,7 +2345,7 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 </details>
 
-<details id="share-tkm1t">
+<details markdown="1" id="share-tkm1t">
 <summary><strong>TKM1T — TKM Grupp</strong> | HOLD | target 305 shares | priority 16</summary>
 
 | Measure | Value |
@@ -2336,28 +2365,28 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 ![TKM1T complete technical history](figures/technical_analysis/TKM1T_technical.png)
 
-<details>
+<details markdown="1">
 <summary>Bollinger Bands — enlarge last year</summary>
 
 ![TKM1T Bollinger Bands — enlarge last year](figures/stock_profiles/TKM1T_bollinger_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>RSI(14) — enlarge last year</summary>
 
 ![TKM1T RSI(14) — enlarge last year](figures/stock_profiles/TKM1T_rsi_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>MACD — enlarge last year</summary>
 
 ![TKM1T MACD — enlarge last year](figures/stock_profiles/TKM1T_macd_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
 ![TKM1T stochastic dominance](figures/stock_profiles/TKM1T_FSD_SSD_TSD.png)
@@ -2366,7 +2395,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>All 72 PerformanceAnalytics measures</summary>
 
 | Measure | Value |
@@ -2446,7 +2475,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
 | Measure | Portfolio without share | Change from baseline |
@@ -2461,7 +2490,7 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 </details>
 
-<details id="share-cpa1t">
+<details markdown="1" id="share-cpa1t">
 <summary><strong>CPA1T — Coop Pank</strong> | HOLD | target 109 shares | priority 17</summary>
 
 | Measure | Value |
@@ -2481,28 +2510,28 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 ![CPA1T complete technical history](figures/technical_analysis/CPA1T_technical.png)
 
-<details>
+<details markdown="1">
 <summary>Bollinger Bands — enlarge last year</summary>
 
 ![CPA1T Bollinger Bands — enlarge last year](figures/stock_profiles/CPA1T_bollinger_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>RSI(14) — enlarge last year</summary>
 
 ![CPA1T RSI(14) — enlarge last year](figures/stock_profiles/CPA1T_rsi_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>MACD — enlarge last year</summary>
 
 ![CPA1T MACD — enlarge last year](figures/stock_profiles/CPA1T_macd_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
 ![CPA1T stochastic dominance](figures/stock_profiles/CPA1T_FSD_SSD_TSD.png)
@@ -2511,7 +2540,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>All 72 PerformanceAnalytics measures</summary>
 
 | Measure | Value |
@@ -2591,7 +2620,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
 | Measure | Portfolio without share | Change from baseline |
@@ -2606,7 +2635,7 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 </details>
 
-<details id="share-molnr">
+<details markdown="1" id="share-molnr">
 <summary><strong>MOLNR — J. Molner</strong> | BUY | target 38 shares | priority 17</summary>
 
 | Measure | Value |
@@ -2626,28 +2655,28 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 ![MOLNR complete technical history](figures/technical_analysis/MOLNR_technical.png)
 
-<details>
+<details markdown="1">
 <summary>Bollinger Bands — enlarge last year</summary>
 
 ![MOLNR Bollinger Bands — enlarge last year](figures/stock_profiles/MOLNR_bollinger_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>RSI(14) — enlarge last year</summary>
 
 ![MOLNR RSI(14) — enlarge last year](figures/stock_profiles/MOLNR_rsi_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>MACD — enlarge last year</summary>
 
 ![MOLNR MACD — enlarge last year](figures/stock_profiles/MOLNR_macd_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
 ![MOLNR stochastic dominance](figures/stock_profiles/MOLNR_FSD_SSD_TSD.png)
@@ -2656,7 +2685,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>All 72 PerformanceAnalytics measures</summary>
 
 | Measure | Value |
@@ -2736,7 +2765,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
 | Measure | Portfolio without share | Change from baseline |
@@ -2751,7 +2780,7 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 </details>
 
-<details id="share-mode">
+<details markdown="1" id="share-mode">
 <summary><strong>MODE — Modera</strong> | HOLD | target 51 shares | priority 19</summary>
 
 | Measure | Value |
@@ -2771,28 +2800,28 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 ![MODE complete technical history](figures/technical_analysis/MODE_technical.png)
 
-<details>
+<details markdown="1">
 <summary>Bollinger Bands — enlarge last year</summary>
 
 ![MODE Bollinger Bands — enlarge last year](figures/stock_profiles/MODE_bollinger_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>RSI(14) — enlarge last year</summary>
 
 ![MODE RSI(14) — enlarge last year](figures/stock_profiles/MODE_rsi_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>MACD — enlarge last year</summary>
 
 ![MODE MACD — enlarge last year](figures/stock_profiles/MODE_macd_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
 ![MODE stochastic dominance](figures/stock_profiles/MODE_FSD_SSD_TSD.png)
@@ -2801,7 +2830,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>All 72 PerformanceAnalytics measures</summary>
 
 | Measure | Value |
@@ -2881,7 +2910,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
 | Measure | Portfolio without share | Change from baseline |
@@ -2896,7 +2925,7 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 </details>
 
-<details id="share-tal1t">
+<details markdown="1" id="share-tal1t">
 <summary><strong>TAL1T — Tallink Grupp</strong> | HOLD | target 919 shares | priority 20</summary>
 
 | Measure | Value |
@@ -2916,28 +2945,28 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 ![TAL1T complete technical history](figures/technical_analysis/TAL1T_technical.png)
 
-<details>
+<details markdown="1">
 <summary>Bollinger Bands — enlarge last year</summary>
 
 ![TAL1T Bollinger Bands — enlarge last year](figures/stock_profiles/TAL1T_bollinger_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>RSI(14) — enlarge last year</summary>
 
 ![TAL1T RSI(14) — enlarge last year](figures/stock_profiles/TAL1T_rsi_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>MACD — enlarge last year</summary>
 
 ![TAL1T MACD — enlarge last year](figures/stock_profiles/TAL1T_macd_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
 ![TAL1T stochastic dominance](figures/stock_profiles/TAL1T_FSD_SSD_TSD.png)
@@ -2946,7 +2975,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>All 72 PerformanceAnalytics measures</summary>
 
 | Measure | Value |
@@ -3026,7 +3055,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
 | Measure | Portfolio without share | Change from baseline |
@@ -3041,7 +3070,7 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 </details>
 
-<details id="share-tve1t">
+<details markdown="1" id="share-tve1t">
 <summary><strong>TVE1T — Tallinna Vesi</strong> | HOLD | target 12 shares | priority 20</summary>
 
 | Measure | Value |
@@ -3061,28 +3090,28 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 ![TVE1T complete technical history](figures/technical_analysis/TVE1T_technical.png)
 
-<details>
+<details markdown="1">
 <summary>Bollinger Bands — enlarge last year</summary>
 
 ![TVE1T Bollinger Bands — enlarge last year](figures/stock_profiles/TVE1T_bollinger_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>RSI(14) — enlarge last year</summary>
 
 ![TVE1T RSI(14) — enlarge last year](figures/stock_profiles/TVE1T_rsi_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>MACD — enlarge last year</summary>
 
 ![TVE1T MACD — enlarge last year](figures/stock_profiles/TVE1T_macd_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
 ![TVE1T stochastic dominance](figures/stock_profiles/TVE1T_FSD_SSD_TSD.png)
@@ -3091,7 +3120,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>All 72 PerformanceAnalytics measures</summary>
 
 | Measure | Value |
@@ -3171,7 +3200,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
 | Measure | Portfolio without share | Change from baseline |
@@ -3186,7 +3215,7 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 </details>
 
-<details id="share-tsm1t">
+<details markdown="1" id="share-tsm1t">
 <summary><strong>TSM1T — Tallinna Sadam</strong> | HOLD | target 330 shares | priority 22</summary>
 
 | Measure | Value |
@@ -3206,28 +3235,28 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 ![TSM1T complete technical history](figures/technical_analysis/TSM1T_technical.png)
 
-<details>
+<details markdown="1">
 <summary>Bollinger Bands — enlarge last year</summary>
 
 ![TSM1T Bollinger Bands — enlarge last year](figures/stock_profiles/TSM1T_bollinger_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>RSI(14) — enlarge last year</summary>
 
 ![TSM1T RSI(14) — enlarge last year](figures/stock_profiles/TSM1T_rsi_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>MACD — enlarge last year</summary>
 
 ![TSM1T MACD — enlarge last year](figures/stock_profiles/TSM1T_macd_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
 ![TSM1T stochastic dominance](figures/stock_profiles/TSM1T_FSD_SSD_TSD.png)
@@ -3236,7 +3265,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>All 72 PerformanceAnalytics measures</summary>
 
 | Measure | Value |
@@ -3316,7 +3345,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
 | Measure | Portfolio without share | Change from baseline |
@@ -3331,7 +3360,7 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 </details>
 
-<details id="share-saf1r">
+<details markdown="1" id="share-saf1r">
 <summary><strong>SAF1R — SAF Tehnika</strong> | SELL | target 100 shares | priority 23</summary>
 
 | Measure | Value |
@@ -3351,28 +3380,28 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 ![SAF1R complete technical history](figures/technical_analysis/SAF1R_technical.png)
 
-<details>
+<details markdown="1">
 <summary>Bollinger Bands — enlarge last year</summary>
 
 ![SAF1R Bollinger Bands — enlarge last year](figures/stock_profiles/SAF1R_bollinger_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>RSI(14) — enlarge last year</summary>
 
 ![SAF1R RSI(14) — enlarge last year](figures/stock_profiles/SAF1R_rsi_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>MACD — enlarge last year</summary>
 
 ![SAF1R MACD — enlarge last year](figures/stock_profiles/SAF1R_macd_1y.png)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
 ![SAF1R stochastic dominance](figures/stock_profiles/SAF1R_FSD_SSD_TSD.png)
@@ -3381,7 +3410,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>All 72 PerformanceAnalytics measures</summary>
 
 | Measure | Value |
@@ -3461,7 +3490,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
 | Measure | Portfolio without share | Change from baseline |
@@ -3482,7 +3511,7 @@ Each scenario removes one share from curent_update_baltic and proportionally res
 
 **Main result.** Removing **CPA1T** produces the largest netSD change (+0.008475); removing **SAF1R** gives the largest Rachev improvement (+0.060114); removing **TKM1T** gives the largest Sortino improvement (+0.017171). These are sensitivity results, not automatically new trade recommendations, because the three criteria can move in opposite directions.
 
-<details>
+<details markdown="1">
 <summary><strong>Open complete netSD, Rachev and Sortino sensitivity table</strong></summary>
 
 | Removed share | netSD | Δ netSD | Rachev | Δ Rachev | Sortino | Δ Sortino |
@@ -3520,7 +3549,7 @@ Priority 1 denotes the largest individual-share netSD ratio. Dividend columns us
 
 curent_update_baltic keeps every currently held share, permits purchases only, and uses the EUR 15,000 ceiling. Its calculated netSD is 0.801724, with OUT=93 and IN=0; the remaining cash is EUR 86.58.
 
-<details>
+<details markdown="1">
 <summary><strong>Table 4. Current and optimised portfolios</strong></summary>
 
 | Portfolio | netSD | OUT | IN | denominator | mean | SD | Historical dividends EUR | Portfolio value EUR |
@@ -3531,7 +3560,7 @@ curent_update_baltic keeps every currently held share, permits purchases only, a
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><strong>Figure 1. Recommended changes relative to current holdings: two adjacent portfolio bars for every share</strong></summary>
 
 ![Report figure 1](report/assets/figure-01.png)
@@ -3541,7 +3570,7 @@ curent_update_baltic keeps every currently held share, permits purchases only, a
 
 Each share has two adjacent bars. The blue bar is the change required for Baltic_NetSD, where negative values are sales. The orange bar is the additional purchase required for curent_update_baltic; it cannot be negative because every current position is retained. Both use the EUR 15,000 ceiling.
 
-<details>
+<details markdown="1">
 <summary><strong>Figure 2. Capital allocation and historical gross dividend contribution</strong></summary>
 
 ![Report figure 2](report/assets/figure-02.png)
@@ -3551,7 +3580,7 @@ Each share has two adjacent bars. The blue bar is the change required for Baltic
 
 ## Is this a suitable time to buy? Technical indicators
 
-<details>
+<details markdown="1">
 <summary><strong>Table 3B. Latest Bollinger-band, RSI and MACD readings for Table 3A shares</strong></summary>
 
 | priority | asset | date | last_price | BB_lower | BB_middle | BB_upper | BB_state | RSI_14 | RSI_state | MACD | MACD_signal | MACD_state | timing_assessment |
@@ -3585,7 +3614,7 @@ Each share has two adjacent bars. The blue bar is the change required for Baltic
 
 Every chart uses the complete available 2023–2026 price history. Bollinger bands use a 20-session mean and two standard deviations. RSI(14) below 30 denotes an oversold condition and above 70 an overbought condition. MACD is bullish when MACD(12,26) is above its 9-session signal line. BUY requires RSI below 45, bullish MACD and price no higher than the Bollinger middle line. SELL is assigned when RSI exceeds 70 or price exceeds the upper Bollinger band. HOLD covers the remaining mixed or neutral configurations.
 
-<details>
+<details markdown="1">
 <summary><strong>Technical chart 1. IGN1L: HOLD</strong></summary>
 
 ![Report figure 3](report/assets/figure-03.png)
@@ -3593,7 +3622,7 @@ Every chart uses the complete available 2023–2026 price history. Bollinger ban
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><strong>Technical chart 2. GRG1L: HOLD</strong></summary>
 
 ![Report figure 4](report/assets/figure-04.png)
@@ -3601,7 +3630,7 @@ Every chart uses the complete available 2023–2026 price history. Bollinger ban
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><strong>Technical chart 2. VLP1L: HOLD</strong></summary>
 
 ![Report figure 5](report/assets/figure-05.png)
@@ -3609,7 +3638,7 @@ Every chart uses the complete available 2023–2026 price history. Bollinger ban
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><strong>Technical chart 4. KNE1L: HOLD</strong></summary>
 
 ![Report figure 6](report/assets/figure-06.png)
@@ -3617,7 +3646,7 @@ Every chart uses the complete available 2023–2026 price history. Bollinger ban
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><strong>Technical chart 4. MRK1T: HOLD</strong></summary>
 
 ![Report figure 7](report/assets/figure-07.png)
@@ -3625,7 +3654,7 @@ Every chart uses the complete available 2023–2026 price history. Bollinger ban
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><strong>Technical chart 6. APG1L: HOLD</strong></summary>
 
 ![Report figure 8](report/assets/figure-08.png)
@@ -3633,7 +3662,7 @@ Every chart uses the complete available 2023–2026 price history. Bollinger ban
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><strong>Technical chart 7. VIRSI: HOLD</strong></summary>
 
 ![Report figure 9](report/assets/figure-09.png)
@@ -3641,7 +3670,7 @@ Every chart uses the complete available 2023–2026 price history. Bollinger ban
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><strong>Technical chart 8. RSU1L: HOLD</strong></summary>
 
 ![Report figure 10](report/assets/figure-10.png)
@@ -3649,7 +3678,7 @@ Every chart uses the complete available 2023–2026 price history. Bollinger ban
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><strong>Technical chart 9. PZV1L: HOLD</strong></summary>
 
 ![Report figure 11](report/assets/figure-11.png)
@@ -3657,7 +3686,7 @@ Every chart uses the complete available 2023–2026 price history. Bollinger ban
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><strong>Technical chart 9. ROE1L: HOLD</strong></summary>
 
 ![Report figure 12](report/assets/figure-12.png)
@@ -3665,7 +3694,7 @@ Every chart uses the complete available 2023–2026 price history. Bollinger ban
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><strong>Technical chart 11. TEL1L: HOLD</strong></summary>
 
 ![Report figure 13](report/assets/figure-13.png)
@@ -3673,7 +3702,7 @@ Every chart uses the complete available 2023–2026 price history. Bollinger ban
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><strong>Technical chart 12. AKO1L: HOLD</strong></summary>
 
 ![Report figure 14](report/assets/figure-14.png)
@@ -3681,7 +3710,7 @@ Every chart uses the complete available 2023–2026 price history. Bollinger ban
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><strong>Technical chart 13. EFT1T: HOLD</strong></summary>
 
 ![Report figure 15](report/assets/figure-15.png)
@@ -3689,7 +3718,7 @@ Every chart uses the complete available 2023–2026 price history. Bollinger ban
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><strong>Technical chart 13. HAE1T: BUY</strong></summary>
 
 ![Report figure 16](report/assets/figure-16.png)
@@ -3697,7 +3726,7 @@ Every chart uses the complete available 2023–2026 price history. Bollinger ban
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><strong>Technical chart 15. LHV1T: HOLD</strong></summary>
 
 ![Report figure 17](report/assets/figure-17.png)
@@ -3705,7 +3734,7 @@ Every chart uses the complete available 2023–2026 price history. Bollinger ban
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><strong>Technical chart 16. TKM1T: HOLD</strong></summary>
 
 ![Report figure 18](report/assets/figure-18.png)
@@ -3713,7 +3742,7 @@ Every chart uses the complete available 2023–2026 price history. Bollinger ban
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><strong>Technical chart 17. CPA1T: HOLD</strong></summary>
 
 ![Report figure 19](report/assets/figure-19.png)
@@ -3721,7 +3750,7 @@ Every chart uses the complete available 2023–2026 price history. Bollinger ban
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><strong>Technical chart 17. MOLNR: BUY</strong></summary>
 
 ![Report figure 20](report/assets/figure-20.png)
@@ -3729,7 +3758,7 @@ Every chart uses the complete available 2023–2026 price history. Bollinger ban
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><strong>Technical chart 19. MODE: HOLD</strong></summary>
 
 ![Report figure 21](report/assets/figure-21.png)
@@ -3737,7 +3766,7 @@ Every chart uses the complete available 2023–2026 price history. Bollinger ban
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><strong>Technical chart 20. TAL1T: HOLD</strong></summary>
 
 ![Report figure 22](report/assets/figure-22.png)
@@ -3745,7 +3774,7 @@ Every chart uses the complete available 2023–2026 price history. Bollinger ban
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><strong>Technical chart 20. TVE1T: HOLD</strong></summary>
 
 ![Report figure 23](report/assets/figure-23.png)
@@ -3753,7 +3782,7 @@ Every chart uses the complete available 2023–2026 price history. Bollinger ban
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><strong>Technical chart 22. TSM1T: HOLD</strong></summary>
 
 ![Report figure 24](report/assets/figure-24.png)
@@ -3761,7 +3790,7 @@ Every chart uses the complete available 2023–2026 price history. Bollinger ban
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><strong>Technical chart 23. SAF1R: SELL</strong></summary>
 
 ![Report figure 25](report/assets/figure-25.png)
@@ -3771,7 +3800,7 @@ Every chart uses the complete available 2023–2026 price history. Bollinger ban
 
 ## Statistical and performance analysis
 
-<details>
+<details markdown="1">
 <summary><strong>Table 5. Empirical statistics of portfolio and S&P 500 daily returns</strong></summary>
 
 | entity | observations | mean | median | SD | minimum | maximum | skewness | kurtosis | VaR_95 | ES_95 |
@@ -3796,7 +3825,7 @@ Every chart uses the complete available 2023–2026 price history. Bollinger ban
 
 Baltic_NetSD has mean daily return 0.000535, median 0.000258 and daily standard deviation 0.004571. Its historical 95% VaR is 0.005288 and ES (CVaR) is 0.009285. VaR is the loss threshold exceeded on approximately 5% of days; ES is the average return in that adverse tail.
 
-<details>
+<details markdown="1">
 <summary><strong>Figure 3. Histograms and kernel densities; every panel uses the same return-axis limits</strong></summary>
 
 ![Report figure 26](report/assets/figure-26.png)
@@ -3806,7 +3835,7 @@ Baltic_NetSD has mean daily return 0.000535, median 0.000258 and daily standard 
 
 The recalculated Baltic_NetSD maximum daily return is 0.044699. The earlier value 0.168092 on 2025-06-25 was traced to RKB1R, whose unadjusted close moved from EUR 0.107 to EUR 0.476 between common Baltic trading dates. RKB1R belongs to the Baltic Secondary List. After excluding every Secondary List share from the investable set, this observation no longer enters the portfolio return; RKB1R remains only in the reference dominance network used to calculate netSD.
 
-<details>
+<details markdown="1">
 <summary><strong>Figure 4a. Portfolio and S&P 500 complete empirical CDF; right side truncated at return 0.05</strong></summary>
 
 ![Report figure 27](report/assets/figure-27.png)
@@ -3814,7 +3843,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.044699. The earlier valu
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><strong>Figure 4b. Portfolio and S&P 500 empirical CDF: enlarged left tail</strong></summary>
 
 ![Report figure 28](report/assets/figure-28.png)
@@ -3822,7 +3851,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.044699. The earlier valu
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><strong>Figure 4c. Portfolio and S&P 500 empirical CDF: enlarged centre</strong></summary>
 
 ![Report figure 29](report/assets/figure-29.png)
@@ -3830,7 +3859,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.044699. The earlier valu
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><strong>Figure 4d. Portfolio and S&P 500 empirical CDF: enlarged right tail</strong></summary>
 
 ![Report figure 30](report/assets/figure-30.png)
@@ -3838,7 +3867,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.044699. The earlier valu
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><strong>Figure 4e. Separate colour and line-pattern key for Figures 4 and 6</strong></summary>
 
 ![Report figure 31](report/assets/figure-31.png)
@@ -3846,7 +3875,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.044699. The earlier valu
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><strong>Figure 5a. Individual-share complete empirical CDF restricted to returns from -0.30 to 0.30</strong></summary>
 
 ![Report figure 32](report/assets/figure-32.png)
@@ -3854,7 +3883,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.044699. The earlier valu
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><strong>Figure 5b. Individual-share empirical CDF: enlarged left tail</strong></summary>
 
 ![Report figure 33](report/assets/figure-33.png)
@@ -3862,7 +3891,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.044699. The earlier valu
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><strong>Figure 5c. Individual-share empirical CDF: enlarged centre</strong></summary>
 
 ![Report figure 34](report/assets/figure-34.png)
@@ -3870,7 +3899,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.044699. The earlier valu
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><strong>Figure 5d. Individual-share empirical CDF: enlarged right tail</strong></summary>
 
 ![Report figure 35](report/assets/figure-35.png)
@@ -3878,7 +3907,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.044699. The earlier valu
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><strong>Figure 5e. Separate colour and line-pattern key for Figures 5 and 7</strong></summary>
 
 ![Report figure 36](report/assets/figure-36.png)
@@ -3886,7 +3915,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.044699. The earlier valu
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><strong>Figure 6a. Portfolio and benchmark FSD component H1(x)</strong></summary>
 
 ![Report figure 37](report/assets/figure-37.png)
@@ -3894,7 +3923,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.044699. The earlier valu
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><strong>Figure 6b. Portfolio and benchmark SSD component H2(x): enlarged right side with curve-end labels</strong></summary>
 
 ![Report figure 38](report/assets/figure-38.png)
@@ -3902,7 +3931,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.044699. The earlier valu
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><strong>Figure 6c. Portfolio and benchmark TSD component H3(x): enlarged right side with curve-end labels</strong></summary>
 
 ![Report figure 39](report/assets/figure-39.png)
@@ -3910,7 +3939,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.044699. The earlier valu
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><strong>Figure 7a. Individual-share FSD component H1(x)</strong></summary>
 
 ![Report figure 40](report/assets/figure-40.png)
@@ -3918,7 +3947,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.044699. The earlier valu
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><strong>Figure 7b. Individual-share SSD component H2(x): enlarged right side with curve-end labels</strong></summary>
 
 ![Report figure 41](report/assets/figure-41.png)
@@ -3926,7 +3955,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.044699. The earlier valu
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><strong>Figure 7c. Individual-share TSD component H3(x): enlarged right side with curve-end labels</strong></summary>
 
 ![Report figure 42](report/assets/figure-42.png)
@@ -3936,7 +3965,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.044699. The earlier valu
 
 For every entity, H1(x)=F(x) is the empirical CDF used for FSD. H2(x)=∫H1(u)du is the cumulative FSD component used for SSD, and H3(x)=∫H2(u)du is the cumulative SSD component used for TSD. The CSV files accompanying the report contain every displayed entity as a separate column on the same return-threshold grid.
 
-<details>
+<details markdown="1">
 <summary><strong>Figure 7d. Baltic_NetSD minus every other portfolio: FSD-component differences</strong></summary>
 
 ![Report figure 43](report/assets/figure-43.png)
@@ -3944,7 +3973,7 @@ For every entity, H1(x)=F(x) is the empirical CDF used for FSD. H2(x)=∫H1(u)du
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><strong>Figure 7e. Baltic_NetSD minus every other portfolio: SSD-component differences</strong></summary>
 
 ![Report figure 44](report/assets/figure-44.png)
@@ -3952,7 +3981,7 @@ For every entity, H1(x)=F(x) is the empirical CDF used for FSD. H2(x)=∫H1(u)du
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><strong>Figure 7f. Baltic_NetSD minus every other portfolio: TSD-component differences</strong></summary>
 
 ![Report figure 45](report/assets/figure-45.png)
@@ -3960,7 +3989,7 @@ For every entity, H1(x)=F(x) is the empirical CDF used for FSD. H2(x)=∫H1(u)du
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><strong>Figure 7g. Baltic_NetSD minus every individual share: FSD-component differences</strong></summary>
 
 ![Report figure 46](report/assets/figure-46.png)
@@ -3968,7 +3997,7 @@ For every entity, H1(x)=F(x) is the empirical CDF used for FSD. H2(x)=∫H1(u)du
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><strong>Figure 7h. Baltic_NetSD minus every individual share: SSD-component differences</strong></summary>
 
 ![Report figure 47](report/assets/figure-47.png)
@@ -3976,7 +4005,7 @@ For every entity, H1(x)=F(x) is the empirical CDF used for FSD. H2(x)=∫H1(u)du
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><strong>Figure 7i. Baltic_NetSD minus every individual share: TSD-component differences</strong></summary>
 
 ![Report figure 48](report/assets/figure-48.png)
@@ -3988,7 +4017,7 @@ Each difference is calculated pointwise as Hq_Baltic_NetSD(x) - Hq_comparator(x)
 
 ### Local SSD advantages at large return thresholds
 
-<details>
+<details markdown="1">
 <summary><strong>Table 7A. Local right-side SSD-component advantages over Baltic_NetSD</strong></summary>
 
 | comparator | type | local_advantage_from_x | display_upper_x | end_difference | maximum_difference |
@@ -4012,7 +4041,7 @@ These are local, right-side comparisons and must not be interpreted as SSD over 
 
 The result that may appear surprising in the difference figures is therefore real but local. NetSD_training has a smaller H2 component than Baltic_NetSD from x=0.012089 to the displayed right endpoint, and NetSD_full does so from x=0.016037. Neither portfolio SSD-dominates Baltic_NetSD over the complete support because the required inequality fails at smaller x values. The five strongest share-level endpoint advantages are VLP1L, RKB1R, KNR1L, IVL1L and INC1L. They deserve separate investment analysis because their upper-threshold SSD components are favourable. RKB1R remains excluded from purchase because it belongs to the Baltic Secondary List; it is retained only as a netSD reference entity. A local right-side advantage is evidence about one part of the distribution and is not full-domain SSD dominance.
 
-<details>
+<details markdown="1">
 <summary><strong>Table 6. Portfolio concentration and diversification</strong></summary>
 
 | portfolio | HHI_weights | effective_number | maximum_weight | number_positive | diversification_ratio |
@@ -4036,7 +4065,7 @@ The result that may appear surprising in the difference figures is therefore rea
 
 For Baltic_NetSD, HHI=0.068719; lower is better because less capital is concentrated in a few shares. Its effective number of equally weighted positions is 14.55, the largest weight is 10.86%, and the diversification ratio is 2.628; a value above 1 means portfolio volatility is below the weighted average volatility of its components.
 
-<details>
+<details markdown="1">
 <summary><strong>Figure 8. HHI concentration comparison</strong></summary>
 
 ![Report figure 49](report/assets/figure-49.png)
@@ -4044,7 +4073,7 @@ For Baltic_NetSD, HHI=0.068719; lower is better because less capital is concentr
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><strong>Table 7. netSD (net stochastic-dominance ratio) results</strong></summary>
 
 | entity | FSD_OUT | FSD_IN | SSD_OUT | SSD_IN | TSD_OUT | TSD_IN | OUT | IN | denominator | netSD |
@@ -4070,7 +4099,7 @@ Baltic_NetSD has OUT=109 and IN=0. Dividing OUT-IN by the common network denomin
 
 For curent_update_baltic, IN=1 because Baltic_NetSD dominates it by third-order stochastic dominance over the complete empirical support. There are no incoming FSD or SSD relations. Thus IN=1 is one directed TSD relation from Baltic_NetSD, rather than one adverse observation or one share.
 
-<details>
+<details markdown="1">
 <summary><strong>Table 8. Systematic risk relative to S&P 500</strong></summary>
 
 | entity | CAPMBeta | CAPMAlpha | JensenAlpha | SpecificRisk | SystematicRisk | TotalRisk | TrackingError_Annualized | Information_Annualized |
@@ -4095,7 +4124,7 @@ For curent_update_baltic, IN=1 because Baltic_NetSD dominates it by third-order 
 
 CAPM beta measures sensitivity to S&P 500: beta below 1 means a smaller average response to market movements, while beta above 1 means greater sensitivity. SpecificRisk is the residual component not explained by the benchmark; SystematicRisk is the benchmark-related component; TotalRisk combines both.
 
-<details>
+<details markdown="1">
 <summary><strong>Table 8A. Individual-share netSD and admissibility for the new optimisation</strong></summary>
 
 | asset | OUT | IN | denominator | netSD | segment | positive_netSD | secondary_list | admissible |
@@ -4162,7 +4191,7 @@ CAPM beta measures sensitivity to S&P 500: beta below 1 means a smaller average 
 
 A share is investment-admissible only when its individual netSD is strictly positive and it does not belong to the Baltic Secondary List. Secondary List shares remain in the dominance reference network used to calculate netSD, but their portfolio weights are fixed at zero.
 
-<details>
+<details markdown="1">
 <summary><strong>Figure 9. Classical mean-SD efficient frontier and observed portfolios</strong></summary>
 
 ![Report figure 50](report/assets/figure-50.png)
@@ -4172,7 +4201,7 @@ A share is investment-admissible only when its individual netSD is strictly posi
 
 The curve is the single long-only Markowitz efficient frontier calculated from all 56 eligible shares. Shares and previously formed portfolios are points. Baltic_NetSD is highlighted in red because it maximises the stochastic-dominance objective rather than variance, so it need not lie on the Markowitz curve.
 
-<details>
+<details markdown="1">
 <summary><strong>Figure 10. Cumulative returns, daily returns and drawdowns</strong></summary>
 
 ![Report figure 51](report/assets/figure-51.png)
@@ -4180,7 +4209,7 @@ The curve is the single long-only Markowitz efficient frontier calculated from a
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><strong>Table 9. Complete PerformanceAnalytics comparison</strong></summary>
 
 | Measure | Current | Markowitz_training | MAD_training | Minimax_training | Robust_training | NetSD_training | Markowitz_full | MAD_full | Minimax_full | Robust_full | NetSD_full | Baltic_NetSD | curent_update_baltic |
@@ -4286,3 +4315,4 @@ The objective is discrete and non-convex. ISRES evaluates candidate portfolios n
 The official Nasdaq Baltic list contained 67 shares. 56 shares had Yahoo closing-price history covering the complete study window and entered the common-date return matrix. Shares with incomplete or unavailable histories are excluded from both the optimisation and Table 2. No price interpolation or zero-return replacement was used.
 
 Sources: official Nasdaq Baltic share-list XLSX and dividend/event XLSX downloaded on 2026-10-13; Yahoo Finance unadjusted closing prices downloaded through quantmod.
+</main></body></html>
