@@ -170,2509 +170,29 @@ A positive trade_shares value means buy, a negative value means sell, and zero m
 
 Select a share to display its allocation, technical indicators, all PerformanceAnalytics measures, stochastic-dominance curves and leave-one-out effect.
 
-<details markdown="1" id="share-ign1l">
-<summary><strong>IGN1L — Ignitis grupė</strong> | HOLD | target 8 shares | priority 1</summary>
-
-| Measure | Value |
-| --- | --- |
-| Current shares | 0 |
-| Target shares | 8 |
-| Change | +8 |
-| Weight | 1.27% |
-| Last price | EUR 22.1000 |
-| Individual netSD | 0.3947 |
-| OUT / IN | 56 / 11 |
-| RSI(14) | 46.17 |
-| MACD state | Bearish |
-| Bollinger state | Inside bands |
-| Technical decision | HOLD |
-| Observation date | 2026-08-28 |
-
-![IGN1L complete technical history](figures/technical_analysis/IGN1L_technical.png)
-
-<details markdown="1">
-<summary>Bollinger Bands — enlarge last year</summary>
-
-![IGN1L Bollinger Bands — enlarge last year](figures/stock_profiles/IGN1L_bollinger_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>RSI(14) — enlarge last year</summary>
-
-![IGN1L RSI(14) — enlarge last year](figures/stock_profiles/IGN1L_rsi_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>MACD — enlarge last year</summary>
-
-![IGN1L MACD — enlarge last year](figures/stock_profiles/IGN1L_macd_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-![IGN1L stochastic dominance](figures/stock_profiles/IGN1L_FSD_SSD_TSD.png)
-
-The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
-
-</details>
-
-<details markdown="1">
-<summary>All 72 PerformanceAnalytics measures</summary>
-
-| Measure | Value |
-| --- | --- |
-| ArithmeticReturn | 0.000108 |
-| GeometricReturn | 0.000087 |
-| AnnualizedReturn_Arithmetic | 0.027126 |
-| AnnualizedReturn_Geometric | 0.022275 |
-| CumulativeReturn | 0.068138 |
-| Volatility | 0.006362 |
-| Volatility_Annualized | 0.101001 |
-| MaximumDrawdown | 0.165620 |
-| AverageDrawdown | 0.044485 |
-| AverageDrawdownLength | 74.400000 |
-| AverageRecoveryTime | 38.900000 |
-| Sharpe_Daily | 0.016919 |
-| Sharpe_Annualized | 0.268574 |
-| Sharpe_VaR | 0.011676 |
-| Sharpe_ES | 0.006979 |
-| Sortino | 0.024262 |
-| Calmar | 0.134494 |
-| Omega | 1.054449 |
-| Sterling | 0.083860 |
-| Burke | 0.127683 |
-| Martin | 0.259626 |
-| UlcerIndex | 0.085796 |
-| PainIndex | 0.070307 |
-| PainRatio | 0.316822 |
-| VaR_Loss | 0.009219 |
-| ES_Loss | 0.015423 |
-| DownsideDeviation | 0.004437 |
-| DrawdownDeviation | 0.007873 |
-| Rachev | 1.039140 |
-| AdjustedSharpe | 0.263485 |
-| Skewness | -0.033254 |
-| Kurtosis | 8.810035 |
-| UpsidePotential | 0.469849 |
-| UpsideRisk | 0.004556 |
-| BernardoLedoit | 1.054449 |
-| DRatio | 0.968757 |
-| Hurst | 0.358896 |
-| Kappa | 0.015679 |
-| Kelly | 2.659124 |
-| Prospect | -0.532723 |
-| Information_Daily | -0.058371 |
-| Information_Annualized | -1.039489 |
-| CAPMAlpha | 0.000085 |
-| JensenAlpha | 0.016326 |
-| Treynor_Daily | 0.003361 |
-| Treynor_Annualized | 0.856261 |
-| Modigliani | 0.000187 |
-| TrackingError_Daily | 0.012509 |
-| TrackingError_Annualized | 0.198573 |
-| M2Sortino | 0.023483 |
-| Appraisal | 0.161912 |
-| CAPMBeta | 0.026014 |
-| ActiveReturn | -0.206414 |
-| OmegaExcessReturn | -0.003127 |
-| BetaCoSkewness | -3.787258 |
-| BetaCoKurtosis | -0.082161 |
-| CDD | 0.109179 |
-| CoSkewness | -0.000001 |
-| CoKurtosis | -0.000000 |
-| FamaBeta | 0.575188 |
-| MSquaredExcess | -0.154606 |
-| NetSelectivity | -0.109264 |
-| Selectivity | 0.016326 |
-| SpecificRisk | 0.100831 |
-| SystematicRisk | 0.004568 |
-| TotalRisk | 0.100934 |
-| UpCapture | 0.040918 |
-| UpNumber | 0.383028 |
-| UpPercent | 0.162844 |
-| DownCapture | 0.019678 |
-| DownNumber | 0.399371 |
-| DownPercent | 0.874214 |
-
-</details>
-
-<details markdown="1">
-<summary>Effect of removing this share from curent_update_baltic</summary>
-
-| Measure | Portfolio without share | Change from baseline |
-| --- | --- | --- |
-| netSD | 0.788136 | -0.008475 |
-| Rachev ratio | 1.201534 | -0.000949 |
-| Sortino ratio | 0.176875 | 0.000292 |
-
-The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
-
-</details>
-
-</details>
-
-<details markdown="1" id="share-grg1l">
-<summary><strong>GRG1L — Grigeo Group</strong> | HOLD | target 723 shares | priority 2</summary>
-
-| Measure | Value |
-| --- | --- |
-| Current shares | 0 |
-| Target shares | 723 |
-| Change | +723 |
-| Weight | 4.87% |
-| Last price | EUR 1.0100 |
-| Individual netSD | 0.3772 |
-| OUT / IN | 49 / 6 |
-| RSI(14) | 35.53 |
-| MACD state | Bearish |
-| Bollinger state | Inside bands |
-| Technical decision | HOLD |
-| Observation date | 2026-08-28 |
-
-![GRG1L complete technical history](figures/technical_analysis/GRG1L_technical.png)
-
-<details markdown="1">
-<summary>Bollinger Bands — enlarge last year</summary>
-
-![GRG1L Bollinger Bands — enlarge last year](figures/stock_profiles/GRG1L_bollinger_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>RSI(14) — enlarge last year</summary>
-
-![GRG1L RSI(14) — enlarge last year](figures/stock_profiles/GRG1L_rsi_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>MACD — enlarge last year</summary>
-
-![GRG1L MACD — enlarge last year](figures/stock_profiles/GRG1L_macd_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-![GRG1L stochastic dominance](figures/stock_profiles/GRG1L_FSD_SSD_TSD.png)
-
-The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
-
-</details>
-
-<details markdown="1">
-<summary>All 72 PerformanceAnalytics measures</summary>
-
-| Measure | Value |
-| --- | --- |
-| ArithmeticReturn | 0.000507 |
-| GeometricReturn | 0.000459 |
-| AnnualizedReturn_Arithmetic | 0.127810 |
-| AnnualizedReturn_Geometric | 0.122677 |
-| CumulativeReturn | 0.413726 |
-| Volatility | 0.009829 |
-| Volatility_Annualized | 0.156023 |
-| MaximumDrawdown | 0.163104 |
-| AverageDrawdown | 0.025521 |
-| AverageDrawdownLength | 19.694444 |
-| AverageRecoveryTime | 12.250000 |
-| Sharpe_Daily | 0.051603 |
-| Sharpe_Annualized | 0.819174 |
-| Sharpe_VaR | 0.035105 |
-| Sharpe_ES | 0.023893 |
-| Sortino | 0.081544 |
-| Calmar | 0.752135 |
-| Omega | 1.173751 |
-| Sterling | 0.466265 |
-| Burke | 0.565621 |
-| Martin | 2.053835 |
-| UlcerIndex | 0.059730 |
-| PainIndex | 0.043336 |
-| PainRatio | 2.830823 |
-| VaR_Loss | 0.014447 |
-| ES_Loss | 0.021228 |
-| DownsideDeviation | 0.006220 |
-| DrawdownDeviation | 0.008942 |
-| Rachev | 1.114414 |
-| AdjustedSharpe | 0.718078 |
-| Skewness | 1.110901 |
-| Kurtosis | 12.838329 |
-| UpsidePotential | 0.550860 |
-| UpsideRisk | 0.007619 |
-| BernardoLedoit | 1.173751 |
-| DRatio | 0.806165 |
-| Hurst | 0.382523 |
-| Kappa | 0.056030 |
-| Kelly | 5.250336 |
-| Prospect | -0.505101 |
-| Information_Daily | -0.024444 |
-| Information_Annualized | -0.455607 |
-| CAPMAlpha | 0.000492 |
-| JensenAlpha | 0.118837 |
-| Treynor_Daily | 0.027355 |
-| Treynor_Annualized | 7.306573 |
-| Modigliani | 0.000571 |
-| TrackingError_Daily | 0.014658 |
-| TrackingError_Annualized | 0.232684 |
-| M2Sortino | 0.124429 |
-| Appraisal | 0.762303 |
-| CAPMBeta | 0.016790 |
-| ActiveReturn | -0.106013 |
-| OmegaExcessReturn | 0.087066 |
-| BetaCoSkewness | -1.870061 |
-| BetaCoKurtosis | 0.013070 |
-| CDD | 0.057321 |
-| CoSkewness | -0.000000 |
-| CoKurtosis | 0.000000 |
-| FamaBeta | 0.888531 |
-| MSquaredExcess | -0.073755 |
-| NetSelectivity | -0.080521 |
-| Selectivity | 0.118837 |
-| SpecificRisk | 0.155892 |
-| SystematicRisk | 0.002948 |
-| TotalRisk | 0.155920 |
-| UpCapture | 0.025515 |
-| UpNumber | 0.348624 |
-| UpPercent | 0.206422 |
-| DownCapture | -0.118101 |
-| DownNumber | 0.355346 |
-| DownPercent | 0.823899 |
-
-</details>
-
-<details markdown="1">
-<summary>Effect of removing this share from curent_update_baltic</summary>
-
-| Measure | Portfolio without share | Change from baseline |
-| --- | --- | --- |
-| netSD | 0.762712 | -0.033898 |
-| Rachev ratio | 1.208206 | 0.005723 |
-| Sortino ratio | 0.171220 | -0.005364 |
-
-The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
-
-</details>
-
-</details>
-
-<details markdown="1" id="share-vlp1l">
-<summary><strong>VLP1L — Vilkyškių pieninė</strong> | HOLD | target 75 shares | priority 2</summary>
-
-| Measure | Value |
-| --- | --- |
-| Current shares | 42 |
-| Target shares | 75 |
-| Change | +33 |
-| Weight | 7.83% |
-| Last price | EUR 15.5000 |
-| Individual netSD | 0.3772 |
-| OUT / IN | 43 / 0 |
-| RSI(14) | 57.67 |
-| MACD state | Bearish |
-| Bollinger state | Inside bands |
-| Technical decision | HOLD |
-| Observation date | 2026-08-28 |
-
-![VLP1L complete technical history](figures/technical_analysis/VLP1L_technical.png)
-
-<details markdown="1">
-<summary>Bollinger Bands — enlarge last year</summary>
-
-![VLP1L Bollinger Bands — enlarge last year](figures/stock_profiles/VLP1L_bollinger_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>RSI(14) — enlarge last year</summary>
-
-![VLP1L RSI(14) — enlarge last year](figures/stock_profiles/VLP1L_rsi_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>MACD — enlarge last year</summary>
-
-![VLP1L MACD — enlarge last year](figures/stock_profiles/VLP1L_macd_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-![VLP1L stochastic dominance](figures/stock_profiles/VLP1L_FSD_SSD_TSD.png)
-
-The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
-
-</details>
-
-<details markdown="1">
-<summary>All 72 PerformanceAnalytics measures</summary>
-
-| Measure | Value |
-| --- | --- |
-| ArithmeticReturn | 0.001223 |
-| GeometricReturn | 0.001140 |
-| AnnualizedReturn_Arithmetic | 0.308070 |
-| AnnualizedReturn_Geometric | 0.332487 |
-| CumulativeReturn | 1.360478 |
-| Volatility | 0.012975 |
-| Volatility_Annualized | 0.205977 |
-| MaximumDrawdown | 0.157158 |
-| AverageDrawdown | 0.039828 |
-| AverageDrawdownLength | 25.392857 |
-| AverageRecoveryTime | 14.107143 |
-| Sharpe_Daily | 0.094217 |
-| Sharpe_Annualized | 1.495653 |
-| Sharpe_VaR | 0.084766 |
-| Sharpe_ES | 0.050656 |
-| Sortino | 0.164747 |
-| Calmar | 2.115625 |
-| Omega | 1.369319 |
-| Sterling | 1.292930 |
-| Burke | 1.256071 |
-| Martin | 5.265313 |
-| UlcerIndex | 0.063147 |
-| PainIndex | 0.047953 |
-| PainRatio | 6.933606 |
-| VaR_Loss | 0.014422 |
-| ES_Loss | 0.024133 |
-| DownsideDeviation | 0.007420 |
-| DrawdownDeviation | 0.010767 |
-| Rachev | 1.428309 |
-| AdjustedSharpe | -0.792235 |
-| Skewness | 1.859172 |
-| Kurtosis | 24.383907 |
-| UpsidePotential | 0.610832 |
-| UpsideRisk | 0.010704 |
-| BernardoLedoit | 1.369319 |
-| DRatio | 0.658191 |
-| Hurst | 0.426761 |
-| Kappa | 0.100544 |
-| Kelly | 7.261257 |
-| Prospect | -0.392858 |
-| Information_Daily | 0.019363 |
-| Information_Annualized | 0.393018 |
-| CAPMAlpha | 0.001173 |
-| JensenAlpha | 0.319473 |
-| Treynor_Daily | 0.020028 |
-| Treynor_Annualized | 5.842701 |
-| Modigliani | 0.001042 |
-| TrackingError_Daily | 0.016637 |
-| TrackingError_Annualized | 0.264105 |
-| M2Sortino | 0.332887 |
-| Appraisal | 1.553874 |
-| CAPMBeta | 0.056906 |
-| ActiveReturn | 0.103798 |
-| OmegaExcessReturn | 0.290002 |
-| BetaCoSkewness | -0.725375 |
-| BetaCoKurtosis | -0.007644 |
-| CDD | 0.095077 |
-| CoSkewness | -0.000000 |
-| CoKurtosis | -0.000000 |
-| FamaBeta | 1.173012 |
-| MSquaredExcess | 0.044566 |
-| NetSelectivity | 0.064232 |
-| Selectivity | 0.319473 |
-| SpecificRisk | 0.205598 |
-| SystematicRisk | 0.009993 |
-| TotalRisk | 0.205841 |
-| UpCapture | 0.183974 |
-| UpNumber | 0.426606 |
-| UpPercent | 0.275229 |
-| DownCapture | -0.130313 |
-| DownNumber | 0.361635 |
-| DownPercent | 0.798742 |
-
-</details>
-
-<details markdown="1">
-<summary>Effect of removing this share from curent_update_baltic</summary>
-
-| Measure | Portfolio without share | Change from baseline |
-| --- | --- | --- |
-| netSD | 0.720339 | -0.076271 |
-| Rachev ratio | 1.202236 | -0.000247 |
-| Sortino ratio | 0.149701 | -0.026882 |
-
-The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
-
-</details>
-
-</details>
-
-<details markdown="1" id="share-kne1l">
-<summary><strong>KNE1L — KN Energies</strong> | HOLD | target 1226 shares | priority 4</summary>
-
-| Measure | Value |
-| --- | --- |
-| Current shares | 0 |
-| Target shares | 1226 |
-| Change | +1226 |
-| Weight | 4.02% |
-| Last price | EUR 0.4920 |
-| Individual netSD | 0.3684 |
-| OUT / IN | 42 / 0 |
-| RSI(14) | 55.64 |
-| MACD state | Bullish |
-| Bollinger state | Inside bands |
-| Technical decision | HOLD |
-| Observation date | 2026-08-28 |
-
-![KNE1L complete technical history](figures/technical_analysis/KNE1L_technical.png)
-
-<details markdown="1">
-<summary>Bollinger Bands — enlarge last year</summary>
-
-![KNE1L Bollinger Bands — enlarge last year](figures/stock_profiles/KNE1L_bollinger_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>RSI(14) — enlarge last year</summary>
-
-![KNE1L RSI(14) — enlarge last year](figures/stock_profiles/KNE1L_rsi_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>MACD — enlarge last year</summary>
-
-![KNE1L MACD — enlarge last year](figures/stock_profiles/KNE1L_macd_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-![KNE1L stochastic dominance](figures/stock_profiles/KNE1L_FSD_SSD_TSD.png)
-
-The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
-
-</details>
-
-<details markdown="1">
-<summary>All 72 PerformanceAnalytics measures</summary>
-
-| Measure | Value |
-| --- | --- |
-| ArithmeticReturn | 0.000970 |
-| GeometricReturn | 0.000892 |
-| AnnualizedReturn_Arithmetic | 0.244434 |
-| AnnualizedReturn_Geometric | 0.251806 |
-| CumulativeReturn | 0.958110 |
-| Volatility | 0.012585 |
-| Volatility_Annualized | 0.199782 |
-| MaximumDrawdown | 0.262350 |
-| AverageDrawdown | 0.040766 |
-| AverageDrawdownLength | 33.000000 |
-| AverageRecoveryTime | 18.954545 |
-| Sharpe_Daily | 0.077074 |
-| Sharpe_Annualized | 1.223506 |
-| Sharpe_VaR | 0.062324 |
-| Sharpe_ES | 0.039062 |
-| Sortino | 0.130612 |
-| Calmar | 0.959809 |
-| Omega | 1.290164 |
-| Sterling | 0.694925 |
-| Burke | 1.001545 |
-| Martin | 2.047422 |
-| UlcerIndex | 0.122987 |
-| PainIndex | 0.091665 |
-| PainRatio | 2.747028 |
-| VaR_Loss | 0.015563 |
-| ES_Loss | 0.024832 |
-| DownsideDeviation | 0.007426 |
-| DrawdownDeviation | 0.011794 |
-| Rachev | 1.379867 |
-| AdjustedSharpe | 0.864712 |
-| Skewness | 1.082079 |
-| Kurtosis | 11.239148 |
-| UpsidePotential | 0.580744 |
-| UpsideRisk | 0.010196 |
-| BernardoLedoit | 1.290164 |
-| DRatio | 0.740349 |
-| Hurst | 0.383627 |
-| Kappa | 0.083316 |
-| Kelly | 6.124211 |
-| Prospect | -0.432052 |
-| Information_Daily | 0.004520 |
-| Information_Annualized | 0.088911 |
-| CAPMAlpha | 0.000925 |
-| JensenAlpha | 0.240138 |
-| Treynor_Daily | 0.017476 |
-| Treynor_Annualized | 4.935416 |
-| Modigliani | 0.000853 |
-| TrackingError_Daily | 0.016379 |
-| TrackingError_Annualized | 0.260001 |
-| M2Sortino | 0.252111 |
-| Appraisal | 1.204012 |
-| CAPMBeta | 0.051020 |
-| ActiveReturn | 0.023117 |
-| OmegaExcessReturn | 0.209287 |
-| BetaCoSkewness | -1.303857 |
-| BetaCoKurtosis | -0.058605 |
-| CDD | 0.090512 |
-| CoSkewness | -0.000000 |
-| CoKurtosis | -0.000000 |
-| FamaBeta | 1.137731 |
-| MSquaredExcess | -0.005995 |
-| NetSelectivity | -0.008381 |
-| Selectivity | 0.240138 |
-| SpecificRisk | 0.199448 |
-| SystematicRisk | 0.008959 |
-| TotalRisk | 0.199650 |
-| UpCapture | 0.160227 |
-| UpNumber | 0.364679 |
-| UpPercent | 0.227064 |
-| DownCapture | -0.085429 |
-| DownNumber | 0.355346 |
-| DownPercent | 0.801887 |
-
-</details>
-
-<details markdown="1">
-<summary>Effect of removing this share from curent_update_baltic</summary>
-
-| Measure | Portfolio without share | Change from baseline |
-| --- | --- | --- |
-| netSD | 0.754237 | -0.042373 |
-| Rachev ratio | 1.209135 | 0.006652 |
-| Sortino ratio | 0.168507 | -0.008076 |
-
-The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
-
-</details>
-
-</details>
-
-<details markdown="1" id="share-mrk1t">
-<summary><strong>MRK1T — Merko Ehitus</strong> | HOLD | target 38 shares | priority 4</summary>
-
-| Measure | Value |
-| --- | --- |
-| Current shares | 20 |
-| Target shares | 38 |
-| Change | +18 |
-| Weight | 6.97% |
-| Last price | EUR 26.9000 |
-| Individual netSD | 0.3684 |
-| OUT / IN | 42 / 0 |
-| RSI(14) | 40.54 |
-| MACD state | Bearish |
-| Bollinger state | Inside bands |
-| Technical decision | HOLD |
-| Observation date | 2026-08-28 |
-
-![MRK1T complete technical history](figures/technical_analysis/MRK1T_technical.png)
-
-<details markdown="1">
-<summary>Bollinger Bands — enlarge last year</summary>
-
-![MRK1T Bollinger Bands — enlarge last year](figures/stock_profiles/MRK1T_bollinger_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>RSI(14) — enlarge last year</summary>
-
-![MRK1T RSI(14) — enlarge last year](figures/stock_profiles/MRK1T_rsi_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>MACD — enlarge last year</summary>
-
-![MRK1T MACD — enlarge last year](figures/stock_profiles/MRK1T_macd_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-![MRK1T stochastic dominance](figures/stock_profiles/MRK1T_FSD_SSD_TSD.png)
-
-The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
-
-</details>
-
-<details markdown="1">
-<summary>All 72 PerformanceAnalytics measures</summary>
-
-| Measure | Value |
-| --- | --- |
-| ArithmeticReturn | 0.000873 |
-| GeometricReturn | 0.000817 |
-| AnnualizedReturn_Arithmetic | 0.219897 |
-| AnnualizedReturn_Geometric | 0.228513 |
-| CumulativeReturn | 0.851101 |
-| Volatility | 0.010598 |
-| Volatility_Annualized | 0.168242 |
-| MaximumDrawdown | 0.213246 |
-| AverageDrawdown | 0.030621 |
-| AverageDrawdownLength | 22.258065 |
-| AverageRecoveryTime | 11.064516 |
-| Sharpe_Daily | 0.082335 |
-| Sharpe_Annualized | 1.307029 |
-| Sharpe_VaR | 0.072461 |
-| Sharpe_ES | 0.040486 |
-| Sortino | 0.138032 |
-| Calmar | 1.071592 |
-| Omega | 1.329059 |
-| Sterling | 0.729500 |
-| Burke | 0.901691 |
-| Martin | 2.953061 |
-| UlcerIndex | 0.077382 |
-| PainIndex | 0.049366 |
-| PainRatio | 4.628938 |
-| VaR_Loss | 0.012042 |
-| ES_Loss | 0.021553 |
-| DownsideDeviation | 0.006322 |
-| DrawdownDeviation | 0.010945 |
-| Rachev | 1.344492 |
-| AdjustedSharpe | 0.276910 |
-| Skewness | 1.268852 |
-| Kurtosis | 17.955590 |
-| UpsidePotential | 0.557509 |
-| UpsideRisk | 0.008542 |
-| BernardoLedoit | 1.329059 |
-| DRatio | 0.694712 |
-| Hurst | 0.405900 |
-| Kappa | 0.082490 |
-| Kelly | 7.768742 |
-| Prospect | -0.386314 |
-| Information_Daily | -0.000039 |
-| Information_Annualized | -0.000761 |
-| CAPMAlpha | 0.000792 |
-| JensenAlpha | 0.207631 |
-| Treynor_Daily | 0.008948 |
-| Treynor_Annualized | 2.502555 |
-| Modigliani | 0.000911 |
-| TrackingError_Daily | 0.014572 |
-| TrackingError_Annualized | 0.231319 |
-| M2Sortino | 0.231256 |
-| Appraisal | 1.240587 |
-| CAPMBeta | 0.091312 |
-| ActiveReturn | -0.000176 |
-| OmegaExcessReturn | 0.192319 |
-| BetaCoSkewness | -0.108044 |
-| BetaCoKurtosis | -0.013832 |
-| CDD | 0.054320 |
-| CoSkewness | -0.000000 |
-| CoKurtosis | -0.000000 |
-| FamaBeta | 0.958116 |
-| MSquaredExcess | 0.007987 |
-| NetSelectivity | 0.009402 |
-| Selectivity | 0.207631 |
-| SpecificRisk | 0.167365 |
-| SystematicRisk | 0.016034 |
-| TotalRisk | 0.168131 |
-| UpCapture | 0.232974 |
-| UpNumber | 0.470183 |
-| UpPercent | 0.243119 |
-| DownCapture | 0.035101 |
-| DownNumber | 0.430818 |
-| DownPercent | 0.808176 |
-
-</details>
-
-<details markdown="1">
-<summary>Effect of removing this share from curent_update_baltic</summary>
-
-| Measure | Portfolio without share | Change from baseline |
-| --- | --- | --- |
-| netSD | 0.728814 | -0.067797 |
-| Rachev ratio | 1.188254 | -0.014229 |
-| Sortino ratio | 0.160993 | -0.015590 |
-
-The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
-
-</details>
-
-</details>
-
-<details markdown="1" id="share-apg1l">
-<summary><strong>APG1L — Apranga</strong> | HOLD | target 329 shares | priority 6</summary>
-
-| Measure | Value |
-| --- | --- |
-| Current shares | 200 |
-| Target shares | 329 |
-| Change | +129 |
-| Weight | 8.74% |
-| Last price | EUR 3.9800 |
-| Individual netSD | 0.3333 |
-| OUT / IN | 38 / 0 |
-| RSI(14) | 55.56 |
-| MACD state | Bearish |
-| Bollinger state | Inside bands |
-| Technical decision | HOLD |
-| Observation date | 2026-08-28 |
-
-![APG1L complete technical history](figures/technical_analysis/APG1L_technical.png)
-
-<details markdown="1">
-<summary>Bollinger Bands — enlarge last year</summary>
-
-![APG1L Bollinger Bands — enlarge last year](figures/stock_profiles/APG1L_bollinger_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>RSI(14) — enlarge last year</summary>
-
-![APG1L RSI(14) — enlarge last year](figures/stock_profiles/APG1L_rsi_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>MACD — enlarge last year</summary>
-
-![APG1L MACD — enlarge last year](figures/stock_profiles/APG1L_macd_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-![APG1L stochastic dominance](figures/stock_profiles/APG1L_FSD_SSD_TSD.png)
-
-The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
-
-</details>
-
-<details markdown="1">
-<summary>All 72 PerformanceAnalytics measures</summary>
-
-| Measure | Value |
-| --- | --- |
-| ArithmeticReturn | 0.000854 |
-| GeometricReturn | 0.000815 |
-| AnnualizedReturn_Arithmetic | 0.215236 |
-| AnnualizedReturn_Geometric | 0.227925 |
-| CumulativeReturn | 0.848452 |
-| Volatility | 0.008762 |
-| Volatility_Annualized | 0.139094 |
-| MaximumDrawdown | 0.122520 |
-| AverageDrawdown | 0.022993 |
-| AverageDrawdownLength | 31.090909 |
-| AverageRecoveryTime | 22.136364 |
-| Sharpe_Daily | 0.097478 |
-| Sharpe_Annualized | 1.547413 |
-| Sharpe_VaR | 0.105986 |
-| Sharpe_ES | 0.045711 |
-| Sortino | 0.132530 |
-| Calmar | 1.860315 |
-| Omega | 1.452921 |
-| Sterling | 1.024293 |
-| Burke | 1.133884 |
-| Martin | 4.059646 |
-| UlcerIndex | 0.056144 |
-| PainIndex | 0.042201 |
-| PainRatio | 5.400998 |
-| VaR_Loss | 0.008059 |
-| ES_Loss | 0.018685 |
-| DownsideDeviation | 0.006445 |
-| DrawdownDeviation | 0.007213 |
-| Rachev | 1.219309 |
-| AdjustedSharpe | -5.572545 |
-| Skewness | -2.803633 |
-| Kurtosis | 41.870691 |
-| UpsidePotential | 0.425141 |
-| UpsideRisk | 0.005989 |
-| BernardoLedoit | 1.452921 |
-| DRatio | 0.504583 |
-| Hurst | 0.441221 |
-| Kappa | 0.062549 |
-| Kelly | 11.124919 |
-| Prospect | -0.233234 |
-| Information_Daily | -0.000181 |
-| Information_Annualized | -0.003533 |
-| CAPMAlpha | 0.000805 |
-| JensenAlpha | 0.215245 |
-| Treynor_Daily | 0.014701 |
-| Treynor_Annualized | 4.110665 |
-| Modigliani | 0.001078 |
-| TrackingError_Daily | 0.013622 |
-| TrackingError_Annualized | 0.216245 |
-| M2Sortino | 0.230300 |
-| Appraisal | 1.552311 |
-| CAPMBeta | 0.055447 |
-| ActiveReturn | -0.000764 |
-| OmegaExcessReturn | 0.191027 |
-| BetaCoSkewness | -1.508227 |
-| BetaCoKurtosis | 0.019251 |
-| CDD | 0.072705 |
-| CoSkewness | -0.000000 |
-| CoKurtosis | 0.000000 |
-| FamaBeta | 0.792124 |
-| MSquaredExcess | 0.048060 |
-| NetSelectivity | 0.046775 |
-| Selectivity | 0.215245 |
-| SpecificRisk | 0.138661 |
-| SystematicRisk | 0.009736 |
-| TotalRisk | 0.139002 |
-| UpCapture | 0.127047 |
-| UpNumber | 0.424312 |
-| UpPercent | 0.181193 |
-| DownCapture | -0.092921 |
-| DownNumber | 0.330189 |
-| DownPercent | 0.877358 |
-
-</details>
-
-<details markdown="1">
-<summary>Effect of removing this share from curent_update_baltic</summary>
-
-| Measure | Portfolio without share | Change from baseline |
-| --- | --- | --- |
-| netSD | 0.711864 | -0.084746 |
-| Rachev ratio | 1.236434 | 0.033951 |
-| Sortino ratio | 0.161783 | -0.014800 |
-
-The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
-
-</details>
-
-</details>
-
-<details markdown="1" id="share-virsi">
-<summary><strong>VIRSI — VIRŠI-A</strong> | HOLD | target 10 shares | priority 7</summary>
-
-| Measure | Value |
-| --- | --- |
-| Current shares | 0 |
-| Target shares | 10 |
-| Change | +10 |
-| Weight | 0.27% |
-| Last price | EUR 4.1000 |
-| Individual netSD | 0.2982 |
-| OUT / IN | 34 / 0 |
-| RSI(14) | 39.50 |
-| MACD state | Bullish |
-| Bollinger state | Inside bands |
-| Technical decision | HOLD |
-| Observation date | 2026-08-28 |
-
-![VIRSI complete technical history](figures/technical_analysis/VIRSI_technical.png)
-
-<details markdown="1">
-<summary>Bollinger Bands — enlarge last year</summary>
-
-![VIRSI Bollinger Bands — enlarge last year](figures/stock_profiles/VIRSI_bollinger_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>RSI(14) — enlarge last year</summary>
-
-![VIRSI RSI(14) — enlarge last year](figures/stock_profiles/VIRSI_rsi_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>MACD — enlarge last year</summary>
-
-![VIRSI MACD — enlarge last year](figures/stock_profiles/VIRSI_macd_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-![VIRSI stochastic dominance](figures/stock_profiles/VIRSI_FSD_SSD_TSD.png)
-
-The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
-
-</details>
-
-<details markdown="1">
-<summary>All 72 PerformanceAnalytics measures</summary>
-
-| Measure | Value |
-| --- | --- |
-| ArithmeticReturn | -0.000133 |
-| GeometricReturn | -0.000137 |
-| AnnualizedReturn_Arithmetic | -0.033418 |
-| AnnualizedReturn_Geometric | -0.033996 |
-| CumulativeReturn | -0.098313 |
-| Volatility | 0.003040 |
-| Volatility_Annualized | 0.048259 |
-| MaximumDrawdown | 0.124120 |
-| AverageDrawdown | 0.027761 |
-| AverageDrawdownLength | 124.833333 |
-| AverageRecoveryTime | 74.500000 |
-| Sharpe_Daily | -0.043621 |
-| Sharpe_Annualized | -0.692463 |
-| Sharpe_VaR | -0.027517 |
-| Sharpe_ES | -0.016389 |
-| Sortino | -0.055034 |
-| Calmar | -0.273898 |
-| Omega | 0.840536 |
-| Sterling | -0.151688 |
-| Burke | -0.454512 |
-| Martin | -0.363783 |
-| UlcerIndex | 0.093452 |
-| PainIndex | 0.081684 |
-| PainRatio | -0.416191 |
-| VaR_Loss | 0.004819 |
-| ES_Loss | 0.008091 |
-| DownsideDeviation | 0.002410 |
-| DrawdownDeviation | 0.004590 |
-| Rachev | 0.830411 |
-| AdjustedSharpe | -0.579847 |
-| Skewness | -1.885460 |
-| Kurtosis | 22.031264 |
-| UpsidePotential | 0.290085 |
-| UpsideRisk | 0.001855 |
-| BernardoLedoit | 0.840536 |
-| DRatio | 1.278744 |
-| Hurst | 0.409033 |
-| Kappa | -0.030795 |
-| Kelly | -14.348873 |
-| Prospect | -0.486434 |
-| Information_Daily | -0.082876 |
-| Information_Annualized | -1.436276 |
-| CAPMAlpha | -0.000129 |
-| JensenAlpha | -0.032932 |
-| Treynor_Daily | 0.029502 |
-| Treynor_Annualized | 7.308020 |
-| Modigliani | -0.000483 |
-| TrackingError_Daily | 0.011521 |
-| TrackingError_Annualized | 0.182893 |
-| M2Sortino | -0.038508 |
-| Appraisal | -0.682961 |
-| CAPMBeta | -0.004652 |
-| ActiveReturn | -0.262686 |
-| OmegaExcessReturn | -0.047792 |
-| BetaCoSkewness | -1.229618 |
-| BetaCoKurtosis | 0.019891 |
-| CDD | 0.070421 |
-| CoSkewness | -0.000000 |
-| CoKurtosis | 0.000000 |
-| FamaBeta | 0.274829 |
-| MSquaredExcess | -0.286801 |
-| NetSelectivity | -0.096847 |
-| Selectivity | -0.032932 |
-| SpecificRisk | 0.048220 |
-| SystematicRisk | -0.000817 |
-| TotalRisk | 0.048227 |
-| UpCapture | -0.032328 |
-| UpNumber | 0.185780 |
-| UpPercent | 0.052752 |
-| DownCapture | -0.001457 |
-| DownNumber | 0.191824 |
-| DownPercent | 0.927673 |
-
-</details>
-
-<details markdown="1">
-<summary>Effect of removing this share from curent_update_baltic</summary>
-
-| Measure | Portfolio without share | Change from baseline |
-| --- | --- | --- |
-| netSD | 0.796610 | 0.000000 |
-| Rachev ratio | 1.202553 | 0.000070 |
-| Sortino ratio | 0.176762 | 0.000179 |
-
-The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
-
-</details>
-
-</details>
-
-<details markdown="1" id="share-rsu1l">
-<summary><strong>RSU1L — Rokiškio sūris</strong> | HOLD | target 155 shares | priority 8</summary>
-
-| Measure | Value |
-| --- | --- |
-| Current shares | 0 |
-| Target shares | 155 |
-| Change | +155 |
-| Weight | 4.74% |
-| Last price | EUR 4.5600 |
-| Individual netSD | 0.2544 |
-| OUT / IN | 35 / 6 |
-| RSI(14) | 58.03 |
-| MACD state | Bullish |
-| Bollinger state | Inside bands |
-| Technical decision | HOLD |
-| Observation date | 2026-08-28 |
-
-![RSU1L complete technical history](figures/technical_analysis/RSU1L_technical.png)
-
-<details markdown="1">
-<summary>Bollinger Bands — enlarge last year</summary>
-
-![RSU1L Bollinger Bands — enlarge last year](figures/stock_profiles/RSU1L_bollinger_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>RSI(14) — enlarge last year</summary>
-
-![RSU1L RSI(14) — enlarge last year](figures/stock_profiles/RSU1L_rsi_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>MACD — enlarge last year</summary>
-
-![RSU1L MACD — enlarge last year](figures/stock_profiles/RSU1L_macd_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-![RSU1L stochastic dominance](figures/stock_profiles/RSU1L_FSD_SSD_TSD.png)
-
-The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
-
-</details>
-
-<details markdown="1">
-<summary>All 72 PerformanceAnalytics measures</summary>
-
-| Measure | Value |
-| --- | --- |
-| ArithmeticReturn | 0.000234 |
-| GeometricReturn | 0.000116 |
-| AnnualizedReturn_Arithmetic | 0.058990 |
-| AnnualizedReturn_Geometric | 0.029780 |
-| CumulativeReturn | 0.091774 |
-| Volatility | 0.015378 |
-| Volatility_Annualized | 0.244115 |
-| MaximumDrawdown | 0.159089 |
-| AverageDrawdown | 0.073389 |
-| AverageDrawdownLength | 67.454545 |
-| AverageRecoveryTime | 35.272727 |
-| Sharpe_Daily | 0.015222 |
-| Sharpe_Annualized | 0.241649 |
-| Sharpe_VaR | 0.009229 |
-| Sharpe_ES | 0.006528 |
-| Sortino | 0.022589 |
-| Calmar | 0.187193 |
-| Omega | 1.052456 |
-| Sterling | 0.114943 |
-| Burke | 0.095021 |
-| Martin | 0.461094 |
-| UlcerIndex | 0.064586 |
-| PainIndex | 0.053798 |
-| PainRatio | 0.553557 |
-| VaR_Loss | 0.025365 |
-| ES_Loss | 0.035860 |
-| DownsideDeviation | 0.010363 |
-| DrawdownDeviation | 0.010488 |
-| Rachev | 1.071028 |
-| AdjustedSharpe | 0.242870 |
-| Skewness | 0.436525 |
-| Kurtosis | 8.148953 |
-| UpsidePotential | 0.453221 |
-| UpsideRisk | 0.011350 |
-| BernardoLedoit | 1.052456 |
-| DRatio | 0.967126 |
-| Hurst | 0.351713 |
-| Kappa | 0.015195 |
-| Kelly | 0.989899 |
-| Prospect | -0.515701 |
-| Information_Daily | -0.038401 |
-| Information_Annualized | -0.686268 |
-| CAPMAlpha | 0.000143 |
-| JensenAlpha | 0.005979 |
-| Treynor_Daily | 0.001119 |
-| Treynor_Annualized | 0.286143 |
-| Modigliani | 0.000168 |
-| TrackingError_Daily | 0.018258 |
-| TrackingError_Annualized | 0.289842 |
-| M2Sortino | 0.028780 |
-| Appraisal | 0.024580 |
-| CAPMBeta | 0.104075 |
-| ActiveReturn | -0.198909 |
-| OmegaExcessReturn | -0.029551 |
-| BetaCoSkewness | -3.452885 |
-| BetaCoKurtosis | 0.121557 |
-| CDD | 0.125774 |
-| CoSkewness | -0.000000 |
-| CoKurtosis | 0.000000 |
-| FamaBeta | 1.390202 |
-| MSquaredExcess | -0.168690 |
-| NetSelectivity | -0.288144 |
-| Selectivity | 0.005979 |
-| SpecificRisk | 0.243268 |
-| SystematicRisk | 0.018275 |
-| TotalRisk | 0.243954 |
-| UpCapture | 0.143059 |
-| UpNumber | 0.309633 |
-| UpPercent | 0.236239 |
-| DownCapture | 0.110948 |
-| DownNumber | 0.339623 |
-| DownPercent | 0.761006 |
-
-</details>
-
-<details markdown="1">
-<summary>Effect of removing this share from curent_update_baltic</summary>
-
-| Measure | Portfolio without share | Change from baseline |
-| --- | --- | --- |
-| netSD | 0.771186 | -0.025424 |
-| Rachev ratio | 1.238953 | 0.036470 |
-| Sortino ratio | 0.179974 | 0.003391 |
-
-The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
-
-</details>
-
-</details>
-
-<details markdown="1" id="share-pzv1l">
-<summary><strong>PZV1L — Pieno žvaigždės</strong> | HOLD | target 251 shares | priority 9</summary>
-
-| Measure | Value |
-| --- | --- |
-| Current shares | 0 |
-| Target shares | 251 |
-| Change | +251 |
-| Weight | 2.90% |
-| Last price | EUR 1.7300 |
-| Individual netSD | 0.1842 |
-| OUT / IN | 35 / 14 |
-| RSI(14) | 46.60 |
-| MACD state | Bearish |
-| Bollinger state | Inside bands |
-| Technical decision | HOLD |
-| Observation date | 2026-08-28 |
-
-![PZV1L complete technical history](figures/technical_analysis/PZV1L_technical.png)
-
-<details markdown="1">
-<summary>Bollinger Bands — enlarge last year</summary>
-
-![PZV1L Bollinger Bands — enlarge last year](figures/stock_profiles/PZV1L_bollinger_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>RSI(14) — enlarge last year</summary>
-
-![PZV1L RSI(14) — enlarge last year](figures/stock_profiles/PZV1L_rsi_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>MACD — enlarge last year</summary>
-
-![PZV1L MACD — enlarge last year](figures/stock_profiles/PZV1L_macd_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-![PZV1L stochastic dominance](figures/stock_profiles/PZV1L_FSD_SSD_TSD.png)
-
-The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
-
-</details>
-
-<details markdown="1">
-<summary>All 72 PerformanceAnalytics measures</summary>
-
-| Measure | Value |
-| --- | --- |
-| ArithmeticReturn | 0.000850 |
-| GeometricReturn | 0.000752 |
-| AnnualizedReturn_Arithmetic | 0.214083 |
-| AnnualizedReturn_Geometric | 0.208457 |
-| CumulativeReturn | 0.762141 |
-| Volatility | 0.014032 |
-| Volatility_Annualized | 0.222748 |
-| MaximumDrawdown | 0.212625 |
-| AverageDrawdown | 0.037616 |
-| AverageDrawdownLength | 18.810811 |
-| AverageRecoveryTime | 9.054054 |
-| Sharpe_Daily | 0.060544 |
-| Sharpe_Annualized | 0.961100 |
-| Sharpe_VaR | 0.050639 |
-| Sharpe_ES | 0.027378 |
-| Sortino | 0.093674 |
-| Calmar | 0.980395 |
-| Omega | 1.241052 |
-| Sterling | 0.666794 |
-| Burke | 0.701161 |
-| Martin | 2.575798 |
-| UlcerIndex | 0.080929 |
-| PainIndex | 0.055102 |
-| PainRatio | 3.783116 |
-| VaR_Loss | 0.016776 |
-| ES_Loss | 0.031030 |
-| DownsideDeviation | 0.009069 |
-| DrawdownDeviation | 0.014074 |
-| Rachev | 1.173382 |
-| AdjustedSharpe | 0.494959 |
-| Skewness | 0.556555 |
-| Kurtosis | 17.917831 |
-| UpsidePotential | 0.482278 |
-| UpsideRisk | 0.010729 |
-| BernardoLedoit | 1.241052 |
-| DRatio | 0.722207 |
-| Hurst | 0.406966 |
-| Kappa | 0.054267 |
-| Kelly | 4.314746 |
-| Prospect | -0.392082 |
-| Information_Daily | -0.003752 |
-| Information_Annualized | -0.072514 |
-| CAPMAlpha | 0.000812 |
-| JensenAlpha | 0.198809 |
-| Treynor_Daily | 0.017818 |
-| Treynor_Annualized | 4.941486 |
-| Modigliani | 0.000670 |
-| TrackingError_Daily | 0.017576 |
-| TrackingError_Annualized | 0.279015 |
-| M2Sortino | 0.206232 |
-| Appraisal | 0.893618 |
-| CAPMBeta | 0.042185 |
-| ActiveReturn | -0.020233 |
-| OmegaExcessReturn | 0.156533 |
-| BetaCoSkewness | -0.465367 |
-| BetaCoKurtosis | 0.055288 |
-| CDD | 0.096713 |
-| CoSkewness | -0.000000 |
-| CoKurtosis | 0.000000 |
-| FamaBeta | 1.268520 |
-| MSquaredExcess | -0.052380 |
-| NetSelectivity | -0.081640 |
-| Selectivity | 0.198809 |
-| SpecificRisk | 0.222477 |
-| SystematicRisk | 0.007408 |
-| TotalRisk | 0.222600 |
-| UpCapture | 0.131042 |
-| UpNumber | 0.362385 |
-| UpPercent | 0.233945 |
-| DownCapture | -0.086529 |
-| DownNumber | 0.314465 |
-| DownPercent | 0.817610 |
-
-</details>
-
-<details markdown="1">
-<summary>Effect of removing this share from curent_update_baltic</summary>
-
-| Measure | Portfolio without share | Change from baseline |
-| --- | --- | --- |
-| netSD | 0.762712 | -0.033898 |
-| Rachev ratio | 1.213216 | 0.010733 |
-| Sortino ratio | 0.171000 | -0.005583 |
-
-The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
-
-</details>
-
-</details>
-
-<details markdown="1" id="share-roe1l">
-<summary><strong>ROE1L — Artea Bankas</strong> | HOLD | target 667 shares | priority 9</summary>
-
-| Measure | Value |
-| --- | --- |
-| Current shares | 416 |
-| Target shares | 667 |
-| Change | +251 |
-| Weight | 3.98% |
-| Last price | EUR 0.8950 |
-| Individual netSD | 0.1842 |
-| OUT / IN | 38 / 17 |
-| RSI(14) | 51.65 |
-| MACD state | Bearish |
-| Bollinger state | Inside bands |
-| Technical decision | HOLD |
-| Observation date | 2026-08-28 |
-
-![ROE1L complete technical history](figures/technical_analysis/ROE1L_technical.png)
-
-<details markdown="1">
-<summary>Bollinger Bands — enlarge last year</summary>
-
-![ROE1L Bollinger Bands — enlarge last year](figures/stock_profiles/ROE1L_bollinger_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>RSI(14) — enlarge last year</summary>
-
-![ROE1L RSI(14) — enlarge last year](figures/stock_profiles/ROE1L_rsi_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>MACD — enlarge last year</summary>
-
-![ROE1L MACD — enlarge last year](figures/stock_profiles/ROE1L_macd_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-![ROE1L stochastic dominance](figures/stock_profiles/ROE1L_FSD_SSD_TSD.png)
-
-The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
-
-</details>
-
-<details markdown="1">
-<summary>All 72 PerformanceAnalytics measures</summary>
-
-| Measure | Value |
-| --- | --- |
-| ArithmeticReturn | 0.000483 |
-| GeometricReturn | 0.000425 |
-| AnnualizedReturn_Arithmetic | 0.121675 |
-| AnnualizedReturn_Geometric | 0.112967 |
-| CumulativeReturn | 0.377457 |
-| Volatility | 0.010850 |
-| Volatility_Annualized | 0.172242 |
-| MaximumDrawdown | 0.195697 |
-| AverageDrawdown | 0.026332 |
-| AverageDrawdownLength | 30.000000 |
-| AverageRecoveryTime | 16.541667 |
-| Sharpe_Daily | 0.044500 |
-| Sharpe_Annualized | 0.706419 |
-| Sharpe_VaR | 0.041965 |
-| Sharpe_ES | 0.022170 |
-| Sortino | 0.074968 |
-| Calmar | 0.577255 |
-| Omega | 1.170781 |
-| Sterling | 0.382037 |
-| Burke | 0.446368 |
-| Martin | 1.405464 |
-| UlcerIndex | 0.080377 |
-| PainIndex | 0.060631 |
-| PainRatio | 1.863187 |
-| VaR_Loss | 0.011506 |
-| ES_Loss | 0.021779 |
-| DownsideDeviation | 0.006441 |
-| DrawdownDeviation | 0.009503 |
-| Rachev | 1.372678 |
-| AdjustedSharpe | 0.560868 |
-| Skewness | 1.895772 |
-| Kurtosis | 23.643745 |
-| UpsidePotential | 0.513939 |
-| UpsideRisk | 0.008736 |
-| BernardoLedoit | 1.170781 |
-| DRatio | 0.967636 |
-| Hurst | 0.412721 |
-| Kappa | 0.045908 |
-| Kelly | 4.101313 |
-| Prospect | -0.473745 |
-| Information_Daily | -0.026193 |
-| Information_Annualized | -0.486139 |
-| CAPMAlpha | 0.000428 |
-| JensenAlpha | 0.098738 |
-| Treynor_Daily | 0.006828 |
-| Treynor_Annualized | 1.815646 |
-| Modigliani | 0.000492 |
-| TrackingError_Daily | 0.014995 |
-| TrackingError_Annualized | 0.238043 |
-| M2Sortino | 0.114315 |
-| Appraisal | 0.574790 |
-| CAPMBeta | 0.062219 |
-| ActiveReturn | -0.115722 |
-| OmegaExcessReturn | 0.076092 |
-| BetaCoSkewness | -3.665609 |
-| BetaCoKurtosis | -0.115281 |
-| CDD | 0.088512 |
-| CoSkewness | -0.000000 |
-| CoKurtosis | -0.000000 |
-| FamaBeta | 0.980897 |
-| MSquaredExcess | -0.092393 |
-| NetSelectivity | -0.111354 |
-| Selectivity | 0.098738 |
-| SpecificRisk | 0.171781 |
-| SystematicRisk | 0.010925 |
-| TotalRisk | 0.172128 |
-| UpCapture | 0.129274 |
-| UpNumber | 0.428899 |
-| UpPercent | 0.208716 |
-| DownCapture | 0.019880 |
-| DownNumber | 0.487421 |
-| DownPercent | 0.779874 |
-
-</details>
-
-<details markdown="1">
-<summary>Effect of removing this share from curent_update_baltic</summary>
-
-| Measure | Portfolio without share | Change from baseline |
-| --- | --- | --- |
-| netSD | 0.788136 | -0.008475 |
-| Rachev ratio | 1.209444 | 0.006961 |
-| Sortino ratio | 0.175665 | -0.000918 |
-
-The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
-
-</details>
-
-</details>
-
-<details markdown="1" id="share-tel1l">
-<summary><strong>TEL1L — Telia Lietuva</strong> | HOLD | target 21 shares | priority 11</summary>
-
-| Measure | Value |
-| --- | --- |
-| Current shares | 0 |
-| Target shares | 21 |
-| Change | +21 |
-| Weight | 0.32% |
-| Last price | EUR 2.2200 |
-| Individual netSD | 0.1667 |
-| OUT / IN | 43 / 24 |
-| RSI(14) | 45.64 |
-| MACD state | Bearish |
-| Bollinger state | Inside bands |
-| Technical decision | HOLD |
-| Observation date | 2026-08-28 |
-
-![TEL1L complete technical history](figures/technical_analysis/TEL1L_technical.png)
-
-<details markdown="1">
-<summary>Bollinger Bands — enlarge last year</summary>
-
-![TEL1L Bollinger Bands — enlarge last year](figures/stock_profiles/TEL1L_bollinger_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>RSI(14) — enlarge last year</summary>
-
-![TEL1L RSI(14) — enlarge last year](figures/stock_profiles/TEL1L_rsi_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>MACD — enlarge last year</summary>
-
-![TEL1L MACD — enlarge last year](figures/stock_profiles/TEL1L_macd_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-![TEL1L stochastic dominance](figures/stock_profiles/TEL1L_FSD_SSD_TSD.png)
-
-The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
-
-</details>
-
-<details markdown="1">
-<summary>All 72 PerformanceAnalytics measures</summary>
-
-| Measure | Value |
-| --- | --- |
-| ArithmeticReturn | 0.000149 |
-| GeometricReturn | 0.000127 |
-| AnnualizedReturn_Arithmetic | 0.037591 |
-| AnnualizedReturn_Geometric | 0.032623 |
-| CumulativeReturn | 0.100817 |
-| Volatility | 0.006598 |
-| Volatility_Annualized | 0.104745 |
-| MaximumDrawdown | 0.225761 |
-| AverageDrawdown | 0.036650 |
-| AverageDrawdownLength | 66.545455 |
-| AverageRecoveryTime | 34.727273 |
-| Sharpe_Daily | 0.022608 |
-| Sharpe_Annualized | 0.358884 |
-| Sharpe_VaR | 0.015944 |
-| Sharpe_ES | 0.009737 |
-| Sortino | 0.032399 |
-| Calmar | 0.144503 |
-| Omega | 1.080062 |
-| Sterling | 0.100144 |
-| Burke | 0.204657 |
-| Martin | 0.221097 |
-| UlcerIndex | 0.147551 |
-| PainIndex | 0.125364 |
-| PainRatio | 0.260227 |
-| VaR_Loss | 0.009356 |
-| ES_Loss | 0.015321 |
-| DownsideDeviation | 0.004604 |
-| DrawdownDeviation | 0.008616 |
-| Rachev | 1.075976 |
-| AdjustedSharpe | 0.333757 |
-| Skewness | -0.329646 |
-| Kurtosis | 12.372385 |
-| UpsidePotential | 0.437074 |
-| UpsideRisk | 0.004723 |
-| BernardoLedoit | 1.080062 |
-| DRatio | 0.934140 |
-| Hurst | 0.379338 |
-| Kappa | 0.019352 |
-| Kelly | 3.426255 |
-| Prospect | -0.473444 |
-| Information_Daily | -0.054410 |
-| Information_Annualized | -0.973675 |
-| CAPMAlpha | 0.000131 |
-| JensenAlpha | 0.027961 |
-| Treynor_Daily | 0.006249 |
-| Treynor_Annualized | 1.600315 |
-| Modigliani | 0.000250 |
-| TrackingError_Daily | 0.012685 |
-| TrackingError_Annualized | 0.201367 |
-| M2Sortino | 0.034150 |
-| Appraisal | 0.267278 |
-| CAPMBeta | 0.020385 |
-| ActiveReturn | -0.196066 |
-| OmegaExcessReturn | 0.006262 |
-| BetaCoSkewness | -2.565127 |
-| BetaCoKurtosis | -0.028307 |
-| CDD | 0.049102 |
-| CoSkewness | -0.000000 |
-| CoKurtosis | -0.000000 |
-| FamaBeta | 0.596511 |
-| MSquaredExcess | -0.141614 |
-| NetSelectivity | -0.103792 |
-| Selectivity | 0.027961 |
-| SpecificRisk | 0.104615 |
-| SystematicRisk | 0.003580 |
-| TotalRisk | 0.104676 |
-| UpCapture | 0.051596 |
-| UpNumber | 0.302752 |
-| UpPercent | 0.178899 |
-| DownCapture | 0.020832 |
-| DownNumber | 0.301887 |
-| DownPercent | 0.861635 |
-
-</details>
-
-<details markdown="1">
-<summary>Effect of removing this share from curent_update_baltic</summary>
-
-| Measure | Portfolio without share | Change from baseline |
-| --- | --- | --- |
-| netSD | 0.796610 | 0.000000 |
-| Rachev ratio | 1.202558 | 0.000075 |
-| Sortino ratio | 0.176610 | 0.000027 |
-
-The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
-
-</details>
-
-</details>
-
-<details markdown="1" id="share-ako1l">
-<summary><strong>AKO1L — Akola Group</strong> | HOLD | target 112 shares | priority 12</summary>
-
-| Measure | Value |
-| --- | --- |
-| Current shares | 0 |
-| Target shares | 112 |
-| Change | +112 |
-| Weight | 1.32% |
-| Last price | EUR 1.7700 |
-| Individual netSD | 0.1228 |
-| OUT / IN | 25 / 11 |
-| RSI(14) | 45.60 |
-| MACD state | Bearish |
-| Bollinger state | Inside bands |
-| Technical decision | HOLD |
-| Observation date | 2026-08-28 |
-
-![AKO1L complete technical history](figures/technical_analysis/AKO1L_technical.png)
-
-<details markdown="1">
-<summary>Bollinger Bands — enlarge last year</summary>
-
-![AKO1L Bollinger Bands — enlarge last year](figures/stock_profiles/AKO1L_bollinger_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>RSI(14) — enlarge last year</summary>
-
-![AKO1L RSI(14) — enlarge last year](figures/stock_profiles/AKO1L_rsi_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>MACD — enlarge last year</summary>
-
-![AKO1L MACD — enlarge last year](figures/stock_profiles/AKO1L_macd_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-![AKO1L stochastic dominance](figures/stock_profiles/AKO1L_FSD_SSD_TSD.png)
-
-The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
-
-</details>
-
-<details markdown="1">
-<summary>All 72 PerformanceAnalytics measures</summary>
-
-| Measure | Value |
-| --- | --- |
-| ArithmeticReturn | 0.000215 |
-| GeometricReturn | 0.000148 |
-| AnnualizedReturn_Arithmetic | 0.054158 |
-| AnnualizedReturn_Geometric | 0.038019 |
-| CumulativeReturn | 0.118116 |
-| Volatility | 0.011582 |
-| Volatility_Annualized | 0.183857 |
-| MaximumDrawdown | 0.406184 |
-| AverageDrawdown | 0.070383 |
-| AverageDrawdownLength | 81.888889 |
-| AverageRecoveryTime | 48.222222 |
-| Sharpe_Daily | 0.018556 |
-| Sharpe_Annualized | 0.294564 |
-| Sharpe_VaR | 0.012857 |
-| Sharpe_ES | 0.008461 |
-| Sortino | 0.027662 |
-| Calmar | 0.093600 |
-| Omega | 1.061023 |
-| Sterling | 0.075109 |
-| Burke | 0.127391 |
-| Martin | 0.149407 |
-| UlcerIndex | 0.254464 |
-| PainIndex | 0.211197 |
-| PainRatio | 0.180016 |
-| VaR_Loss | 0.016716 |
-| ES_Loss | 0.025400 |
-| DownsideDeviation | 0.007769 |
-| DrawdownDeviation | 0.016029 |
-| Rachev | 1.112303 |
-| AdjustedSharpe | 0.288067 |
-| Skewness | 0.385739 |
-| Kurtosis | 14.339191 |
-| UpsidePotential | 0.480974 |
-| UpsideRisk | 0.008582 |
-| BernardoLedoit | 1.061023 |
-| DRatio | 0.959257 |
-| Hurst | 0.408968 |
-| Kappa | 0.017077 |
-| Kelly | 1.602141 |
-| Prospect | -0.538978 |
-| Information_Daily | -0.043019 |
-| Information_Annualized | -0.771779 |
-| CAPMAlpha | 0.000164 |
-| JensenAlpha | 0.024661 |
-| Treynor_Daily | 0.002535 |
-| Treynor_Annualized | 0.650874 |
-| Modigliani | 0.000205 |
-| TrackingError_Daily | 0.015563 |
-| TrackingError_Annualized | 0.247053 |
-| M2Sortino | 0.037933 |
-| Appraisal | 0.134428 |
-| CAPMBeta | 0.058412 |
-| ActiveReturn | -0.190670 |
-| OmegaExcessReturn | -0.006462 |
-| BetaCoSkewness | -4.591177 |
-| BetaCoKurtosis | -0.085834 |
-| CDD | 0.203360 |
-| CoSkewness | -0.000001 |
-| CoKurtosis | -0.000000 |
-| FamaBeta | 1.047039 |
-| MSquaredExcess | -0.156572 |
-| NetSelectivity | -0.201428 |
-| Selectivity | 0.024661 |
-| SpecificRisk | 0.183449 |
-| SystematicRisk | 0.010257 |
-| TotalRisk | 0.183735 |
-| UpCapture | 0.097979 |
-| UpNumber | 0.389908 |
-| UpPercent | 0.238532 |
-| DownCapture | 0.059814 |
-| DownNumber | 0.415094 |
-| DownPercent | 0.789308 |
-
-</details>
-
-<details markdown="1">
-<summary>Effect of removing this share from curent_update_baltic</summary>
-
-| Measure | Portfolio without share | Change from baseline |
-| --- | --- | --- |
-| netSD | 0.788136 | -0.008475 |
-| Rachev ratio | 1.205217 | 0.002734 |
-| Sortino ratio | 0.177027 | 0.000444 |
-
-The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
-
-</details>
-
-</details>
-
-<details markdown="1" id="share-eft1t">
-<summary><strong>EFT1T — EfTEN Real Estate Fund</strong> | HOLD | target 20 shares | priority 13</summary>
-
-| Measure | Value |
-| --- | --- |
-| Current shares | 0 |
-| Target shares | 20 |
-| Change | +20 |
-| Weight | 2.62% |
-| Last price | EUR 19.4000 |
-| Individual netSD | 0.1140 |
-| OUT / IN | 36 / 23 |
-| RSI(14) | 43.20 |
-| MACD state | Bearish |
-| Bollinger state | Inside bands |
-| Technical decision | HOLD |
-| Observation date | 2026-08-28 |
-
-![EFT1T complete technical history](figures/technical_analysis/EFT1T_technical.png)
-
-<details markdown="1">
-<summary>Bollinger Bands — enlarge last year</summary>
-
-![EFT1T Bollinger Bands — enlarge last year](figures/stock_profiles/EFT1T_bollinger_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>RSI(14) — enlarge last year</summary>
-
-![EFT1T RSI(14) — enlarge last year](figures/stock_profiles/EFT1T_rsi_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>MACD — enlarge last year</summary>
-
-![EFT1T MACD — enlarge last year](figures/stock_profiles/EFT1T_macd_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-![EFT1T stochastic dominance](figures/stock_profiles/EFT1T_FSD_SSD_TSD.png)
-
-The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
-
-</details>
-
-<details markdown="1">
-<summary>All 72 PerformanceAnalytics measures</summary>
-
-| Measure | Value |
-| --- | --- |
-| ArithmeticReturn | -0.000063 |
-| GeometricReturn | -0.000082 |
-| AnnualizedReturn_Arithmetic | -0.015907 |
-| AnnualizedReturn_Geometric | -0.020430 |
-| CumulativeReturn | -0.059894 |
-| Volatility | 0.006116 |
-| Volatility_Annualized | 0.097082 |
-| MaximumDrawdown | 0.201964 |
-| AverageDrawdown | 0.045633 |
-| AverageDrawdownLength | 147.000000 |
-| AverageRecoveryTime | 80.800000 |
-| Sharpe_Daily | -0.010321 |
-| Sharpe_Annualized | -0.163847 |
-| Sharpe_VaR | -0.006635 |
-| Sharpe_ES | -0.004086 |
-| Sortino | -0.013496 |
-| Calmar | -0.101159 |
-| Omega | 0.965259 |
-| Sterling | -0.067658 |
-| Burke | -0.129214 |
-| Martin | -0.126159 |
-| UlcerIndex | 0.161942 |
-| PainIndex | 0.153465 |
-| PainRatio | -0.133128 |
-| VaR_Loss | 0.009514 |
-| ES_Loss | 0.015448 |
-| DownsideDeviation | 0.004677 |
-| DrawdownDeviation | 0.007374 |
-| Rachev | 0.875056 |
-| AdjustedSharpe | -0.167524 |
-| Skewness | -1.382197 |
-| Kurtosis | 16.679067 |
-| UpsidePotential | 0.374987 |
-| UpsideRisk | 0.003935 |
-| BernardoLedoit | 0.965259 |
-| DRatio | 0.996650 |
-| Hurst | 0.388273 |
-| Kappa | -0.007768 |
-| Kelly | -1.687710 |
-| Prospect | -0.499101 |
-| Information_Daily | -0.071517 |
-| Information_Annualized | -1.247719 |
-| CAPMAlpha | -0.000069 |
-| JensenAlpha | -0.021895 |
-| Treynor_Daily | -0.012786 |
-| Treynor_Annualized | -3.189276 |
-| Modigliani | -0.000114 |
-| TrackingError_Daily | 0.012577 |
-| TrackingError_Annualized | 0.199660 |
-| M2Sortino | -0.021051 |
-| Appraisal | -0.225699 |
-| CAPMBeta | 0.006406 |
-| ActiveReturn | -0.249120 |
-| OmegaExcessReturn | -0.047208 |
-| BetaCoSkewness | -1.120956 |
-| BetaCoKurtosis | -0.031388 |
-| CDD | 0.115536 |
-| CoSkewness | -0.000000 |
-| CoKurtosis | -0.000000 |
-| FamaBeta | 0.552871 |
-| MSquaredExcess | -0.216200 |
-| NetSelectivity | -0.146866 |
-| Selectivity | -0.021895 |
-| SpecificRisk | 0.097011 |
-| SystematicRisk | 0.001125 |
-| TotalRisk | 0.097018 |
-| UpCapture | -0.005516 |
-| UpNumber | 0.332569 |
-| UpPercent | 0.137615 |
-| DownCapture | 0.011748 |
-| DownNumber | 0.301887 |
-| DownPercent | 0.874214 |
-
-</details>
-
-<details markdown="1">
-<summary>Effect of removing this share from curent_update_baltic</summary>
-
-| Measure | Portfolio without share | Change from baseline |
-| --- | --- | --- |
-| netSD | 0.762712 | -0.033898 |
-| Rachev ratio | 1.206108 | 0.003624 |
-| Sortino ratio | 0.178117 | 0.001534 |
-
-The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
-
-</details>
-
-</details>
-
-<details markdown="1" id="share-hae1t">
-<summary><strong>HAE1T — Harju Elekter Group</strong> | BUY | target 122 shares | priority 13</summary>
-
-| Measure | Value |
-| --- | --- |
-| Current shares | 100 |
-| Target shares | 122 |
-| Change | +22 |
-| Weight | 4.18% |
-| Last price | EUR 5.1400 |
-| Individual netSD | 0.1140 |
-| OUT / IN | 37 / 24 |
-| RSI(14) | 42.59 |
-| MACD state | Bullish |
-| Bollinger state | Inside bands |
-| Technical decision | BUY |
-| Observation date | 2026-08-28 |
-
-![HAE1T complete technical history](figures/technical_analysis/HAE1T_technical.png)
-
-<details markdown="1">
-<summary>Bollinger Bands — enlarge last year</summary>
-
-![HAE1T Bollinger Bands — enlarge last year](figures/stock_profiles/HAE1T_bollinger_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>RSI(14) — enlarge last year</summary>
-
-![HAE1T RSI(14) — enlarge last year](figures/stock_profiles/HAE1T_rsi_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>MACD — enlarge last year</summary>
-
-![HAE1T MACD — enlarge last year](figures/stock_profiles/HAE1T_macd_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-![HAE1T stochastic dominance](figures/stock_profiles/HAE1T_FSD_SSD_TSD.png)
-
-The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
-
-</details>
-
-<details markdown="1">
-<summary>All 72 PerformanceAnalytics measures</summary>
-
-| Measure | Value |
-| --- | --- |
-| ArithmeticReturn | -0.000032 |
-| GeometricReturn | -0.000071 |
-| AnnualizedReturn_Arithmetic | -0.008146 |
-| AnnualizedReturn_Geometric | -0.017725 |
-| CumulativeReturn | -0.052102 |
-| Volatility | 0.008807 |
-| Volatility_Annualized | 0.139804 |
-| MaximumDrawdown | 0.209400 |
-| AverageDrawdown | 0.058845 |
-| AverageDrawdownLength | 93.375000 |
-| AverageRecoveryTime | 15.375000 |
-| Sharpe_Daily | -0.003671 |
-| Sharpe_Annualized | -0.058271 |
-| Sharpe_VaR | -0.002878 |
-| Sharpe_ES | -0.001603 |
-| Sortino | -0.005398 |
-| Calmar | -0.084644 |
-| Omega | 0.988111 |
-| Sterling | -0.057287 |
-| Burke | -0.088405 |
-| Martin | -0.156945 |
-| UlcerIndex | 0.112935 |
-| PainIndex | 0.098550 |
-| PainRatio | -0.179853 |
-| VaR_Loss | 0.011233 |
-| ES_Loss | 0.020168 |
-| DownsideDeviation | 0.005988 |
-| DrawdownDeviation | 0.009361 |
-| Rachev | 1.080200 |
-| AdjustedSharpe | -0.057893 |
-| Skewness | 0.500438 |
-| Kurtosis | 14.435639 |
-| UpsidePotential | 0.448649 |
-| UpsideRisk | 0.006450 |
-| BernardoLedoit | 0.988111 |
-| DRatio | 1.154072 |
-| Hurst | 0.386445 |
-| Kappa | -0.003342 |
-| Kelly | -0.416803 |
-| Prospect | -0.572958 |
-| Information_Daily | -0.063852 |
-| Information_Annualized | -1.115467 |
-| CAPMAlpha | -0.000055 |
-| JensenAlpha | -0.023582 |
-| Treynor_Daily | -0.002770 |
-| Treynor_Annualized | -0.691964 |
-| Modigliani | -0.000041 |
-| TrackingError_Daily | 0.013916 |
-| TrackingError_Annualized | 0.220906 |
-| M2Sortino | -0.017860 |
-| Appraisal | -0.168881 |
-| CAPMBeta | 0.025615 |
-| ActiveReturn | -0.246414 |
-| OmegaExcessReturn | -0.052011 |
-| BetaCoSkewness | 0.134984 |
-| BetaCoKurtosis | 0.053440 |
-| CDD | 0.153779 |
-| CoSkewness | 0.000000 |
-| CoKurtosis | 0.000000 |
-| FamaBeta | 0.796163 |
-| MSquaredExcess | -0.204243 |
-| NetSelectivity | -0.199798 |
-| Selectivity | -0.023582 |
-| SpecificRisk | 0.139638 |
-| SystematicRisk | 0.004498 |
-| TotalRisk | 0.139711 |
-| UpCapture | -0.001326 |
-| UpNumber | 0.373853 |
-| UpPercent | 0.176606 |
-| DownCapture | 0.007906 |
-| DownNumber | 0.430818 |
-| DownPercent | 0.823899 |
-
-</details>
-
-<details markdown="1">
-<summary>Effect of removing this share from curent_update_baltic</summary>
-
-| Measure | Portfolio without share | Change from baseline |
-| --- | --- | --- |
-| netSD | 0.762712 | -0.033898 |
-| Rachev ratio | 1.196361 | -0.006122 |
-| Sortino ratio | 0.180183 | 0.003600 |
-
-The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
-
-</details>
-
-</details>
-
-<details markdown="1" id="share-lhv1t">
-<summary><strong>LHV1T — LHV Group</strong> | HOLD | target 1 shares | priority 15</summary>
-
-| Measure | Value |
-| --- | --- |
-| Current shares | 0 |
-| Target shares | 1 |
-| Change | +1 |
-| Weight | 0.03% |
-| Last price | EUR 3.3350 |
-| Individual netSD | 0.1053 |
-| OUT / IN | 34 / 22 |
-| RSI(14) | 43.80 |
-| MACD state | Bearish |
-| Bollinger state | Inside bands |
-| Technical decision | HOLD |
-| Observation date | 2026-08-28 |
-
-![LHV1T complete technical history](figures/technical_analysis/LHV1T_technical.png)
-
-<details markdown="1">
-<summary>Bollinger Bands — enlarge last year</summary>
-
-![LHV1T Bollinger Bands — enlarge last year](figures/stock_profiles/LHV1T_bollinger_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>RSI(14) — enlarge last year</summary>
-
-![LHV1T RSI(14) — enlarge last year](figures/stock_profiles/LHV1T_rsi_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>MACD — enlarge last year</summary>
-
-![LHV1T MACD — enlarge last year](figures/stock_profiles/LHV1T_macd_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-![LHV1T stochastic dominance](figures/stock_profiles/LHV1T_FSD_SSD_TSD.png)
-
-The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
-
-</details>
-
-<details markdown="1">
-<summary>All 72 PerformanceAnalytics measures</summary>
-
-| Measure | Value |
-| --- | --- |
-| ArithmeticReturn | -0.000299 |
-| GeometricReturn | -0.000338 |
-| AnnualizedReturn_Arithmetic | -0.075467 |
-| AnnualizedReturn_Geometric | -0.081572 |
-| CumulativeReturn | -0.224773 |
-| Volatility | 0.008756 |
-| Volatility_Annualized | 0.138993 |
-| MaximumDrawdown | 0.317810 |
-| AverageDrawdown | 0.069906 |
-| AverageDrawdownLength | 149.600000 |
-| AverageRecoveryTime | 2.600000 |
-| Sharpe_Daily | -0.034203 |
-| Sharpe_Annualized | -0.542953 |
-| Sharpe_VaR | -0.023678 |
-| Sharpe_ES | -0.016078 |
-| Sortino | -0.051795 |
-| Calmar | -0.256669 |
-| Omega | 0.901766 |
-| Sterling | -0.195237 |
-| Burke | -0.373845 |
-| Martin | -0.370437 |
-| UlcerIndex | 0.220205 |
-| PainIndex | 0.206536 |
-| PainRatio | -0.394952 |
-| VaR_Loss | 0.012648 |
-| ES_Loss | 0.018626 |
-| DownsideDeviation | 0.005782 |
-| DrawdownDeviation | 0.011592 |
-| Rachev | 1.213892 |
-| AdjustedSharpe | -0.479708 |
-| Skewness | 0.734623 |
-| Kurtosis | 7.071013 |
-| UpsidePotential | 0.475464 |
-| UpsideRisk | 0.006574 |
-| BernardoLedoit | 0.901766 |
-| DRatio | 1.524267 |
-| Hurst | 0.340010 |
-| Kappa | -0.036120 |
-| Kelly | -3.906329 |
-| Prospect | -0.710868 |
-| Information_Daily | -0.081465 |
-| Information_Annualized | -1.378293 |
-| CAPMAlpha | -0.000292 |
-| JensenAlpha | -0.079647 |
-| Treynor_Daily | 0.040102 |
-| Treynor_Annualized | 9.689265 |
-| Modigliani | -0.000378 |
-| TrackingError_Daily | 0.014180 |
-| TrackingError_Annualized | 0.225105 |
-| M2Sortino | -0.083045 |
-| Appraisal | -0.573439 |
-| CAPMBeta | -0.008419 |
-| ActiveReturn | -0.310261 |
-| OmegaExcessReturn | -0.114675 |
-| BetaCoSkewness | -3.835436 |
-| BetaCoKurtosis | -0.113239 |
-| CDD | 0.180859 |
-| CoSkewness | -0.000001 |
-| CoKurtosis | -0.000000 |
-| FamaBeta | 0.791547 |
-| MSquaredExcess | -0.269998 |
-| NetSelectivity | -0.262590 |
-| Selectivity | -0.079647 |
-| SpecificRisk | 0.138893 |
-| SystematicRisk | -0.001478 |
-| TotalRisk | 0.138901 |
-| UpCapture | -0.077199 |
-| UpNumber | 0.339450 |
-| UpPercent | 0.149083 |
-| DownCapture | -0.008574 |
-| DownNumber | 0.471698 |
-| DownPercent | 0.789308 |
-
-</details>
-
-<details markdown="1">
-<summary>Effect of removing this share from curent_update_baltic</summary>
-
-| Measure | Portfolio without share | Change from baseline |
-| --- | --- | --- |
-| netSD | 0.796610 | 0.000000 |
-| Rachev ratio | 1.202508 | 0.000025 |
-| Sortino ratio | 0.176637 | 0.000054 |
-
-The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
-
-</details>
-
-</details>
-
-<details markdown="1" id="share-tkm1t">
-<summary><strong>TKM1T — TKM Grupp</strong> | HOLD | target 305 shares | priority 16</summary>
-
-| Measure | Value |
-| --- | --- |
-| Current shares | 288 |
-| Target shares | 305 |
-| Change | +17 |
-| Weight | 18.52% |
-| Last price | EUR 9.1000 |
-| Individual netSD | 0.0789 |
-| OUT / IN | 29 / 20 |
-| RSI(14) | 42.63 |
-| MACD state | Bearish |
-| Bollinger state | Inside bands |
-| Technical decision | HOLD |
-| Observation date | 2026-08-28 |
-
-![TKM1T complete technical history](figures/technical_analysis/TKM1T_technical.png)
-
-<details markdown="1">
-<summary>Bollinger Bands — enlarge last year</summary>
-
-![TKM1T Bollinger Bands — enlarge last year](figures/stock_profiles/TKM1T_bollinger_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>RSI(14) — enlarge last year</summary>
-
-![TKM1T RSI(14) — enlarge last year](figures/stock_profiles/TKM1T_rsi_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>MACD — enlarge last year</summary>
-
-![TKM1T MACD — enlarge last year](figures/stock_profiles/TKM1T_macd_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-![TKM1T stochastic dominance](figures/stock_profiles/TKM1T_FSD_SSD_TSD.png)
-
-The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
-
-</details>
-
-<details markdown="1">
-<summary>All 72 PerformanceAnalytics measures</summary>
-
-| Measure | Value |
-| --- | --- |
-| ArithmeticReturn | -0.000048 |
-| GeometricReturn | -0.000068 |
-| AnnualizedReturn_Arithmetic | -0.012162 |
-| AnnualizedReturn_Geometric | -0.016943 |
-| CumulativeReturn | -0.049845 |
-| Volatility | 0.006201 |
-| Volatility_Annualized | 0.098432 |
-| MaximumDrawdown | 0.170070 |
-| AverageDrawdown | 0.021201 |
-| AverageDrawdownLength | 74.300000 |
-| AverageRecoveryTime | 40.000000 |
-| Sharpe_Daily | -0.007783 |
-| Sharpe_Annualized | -0.123558 |
-| Sharpe_VaR | -0.006871 |
-| Sharpe_ES | -0.003093 |
-| Sortino | -0.009456 |
-| Calmar | -0.099626 |
-| Omega | 0.970092 |
-| Sterling | -0.062737 |
-| Burke | -0.104562 |
-| Martin | -0.147483 |
-| UlcerIndex | 0.114883 |
-| PainIndex | 0.105668 |
-| PainRatio | -0.160345 |
-| VaR_Loss | 0.007024 |
-| ES_Loss | 0.015606 |
-| DownsideDeviation | 0.005104 |
-| DrawdownDeviation | 0.006232 |
-| Rachev | 0.888236 |
-| AdjustedSharpe | -0.130610 |
-| Skewness | -4.151940 |
-| Kurtosis | 47.689790 |
-| UpsidePotential | 0.306695 |
-| UpsideRisk | 0.003514 |
-| BernardoLedoit | 0.970092 |
-| DRatio | 1.003342 |
-| Hurst | 0.417088 |
-| Kappa | -0.004604 |
-| Kelly | -1.255266 |
-| Prospect | -0.404644 |
-| Information_Daily | -0.071791 |
-| Information_Annualized | -1.254642 |
-| CAPMAlpha | -0.000080 |
-| JensenAlpha | -0.025078 |
-| Treynor_Daily | -0.001906 |
-| Treynor_Annualized | -0.476317 |
-| Modigliani | -0.000086 |
-| TrackingError_Daily | 0.012333 |
-| TrackingError_Annualized | 0.195779 |
-| M2Sortino | -0.017314 |
-| Appraisal | -0.255460 |
-| CAPMBeta | 0.035572 |
-| ActiveReturn | -0.245633 |
-| OmegaExcessReturn | -0.046166 |
-| BetaCoSkewness | -1.671872 |
-| BetaCoKurtosis | 0.036864 |
-| CDD | 0.021416 |
-| CoSkewness | -0.000000 |
-| CoKurtosis | 0.000000 |
-| FamaBeta | 0.560557 |
-| MSquaredExcess | -0.210725 |
-| NetSelectivity | -0.145137 |
-| Selectivity | -0.025078 |
-| SpecificRisk | 0.098168 |
-| SystematicRisk | 0.006246 |
-| TotalRisk | 0.098367 |
-| UpCapture | 0.023213 |
-| UpNumber | 0.396789 |
-| UpPercent | 0.139908 |
-| DownCapture | 0.043554 |
-| DownNumber | 0.411950 |
-| DownPercent | 0.874214 |
-
-</details>
-
-<details markdown="1">
-<summary>Effect of removing this share from curent_update_baltic</summary>
-
-| Measure | Portfolio without share | Change from baseline |
-| --- | --- | --- |
-| netSD | 0.754237 | -0.042373 |
-| Rachev ratio | 1.253781 | 0.051298 |
-| Sortino ratio | 0.193754 | 0.017171 |
-
-The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
-
-</details>
-
-</details>
-
-<details markdown="1" id="share-cpa1t">
-<summary><strong>CPA1T — Coop Pank</strong> | HOLD | target 109 shares | priority 17</summary>
-
-| Measure | Value |
-| --- | --- |
-| Current shares | 0 |
-| Target shares | 109 |
-| Change | +109 |
-| Weight | 1.71% |
-| Last price | EUR 2.3300 |
-| Individual netSD | 0.0702 |
-| OUT / IN | 30 / 22 |
-| RSI(14) | 56.23 |
-| MACD state | Bearish |
-| Bollinger state | Inside bands |
-| Technical decision | HOLD |
-| Observation date | 2026-08-28 |
-
-![CPA1T complete technical history](figures/technical_analysis/CPA1T_technical.png)
-
-<details markdown="1">
-<summary>Bollinger Bands — enlarge last year</summary>
-
-![CPA1T Bollinger Bands — enlarge last year](figures/stock_profiles/CPA1T_bollinger_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>RSI(14) — enlarge last year</summary>
-
-![CPA1T RSI(14) — enlarge last year](figures/stock_profiles/CPA1T_rsi_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>MACD — enlarge last year</summary>
-
-![CPA1T MACD — enlarge last year](figures/stock_profiles/CPA1T_macd_1y.png)
-
-</details>
-
-<details markdown="1">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-![CPA1T stochastic dominance](figures/stock_profiles/CPA1T_FSD_SSD_TSD.png)
-
-The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
-
-</details>
-
-<details markdown="1">
-<summary>All 72 PerformanceAnalytics measures</summary>
-
-| Measure | Value |
-| --- | --- |
-| ArithmeticReturn | -0.000131 |
-| GeometricReturn | -0.000180 |
-| AnnualizedReturn_Arithmetic | -0.032938 |
-| AnnualizedReturn_Geometric | -0.044259 |
-| CumulativeReturn | -0.126674 |
-| Volatility | 0.009913 |
-| Volatility_Annualized | 0.157369 |
-| MaximumDrawdown | 0.385217 |
-| AverageDrawdown | 0.106368 |
-| AverageDrawdownLength | 187.000000 |
-| AverageRecoveryTime | 45.000000 |
-| Sharpe_Daily | -0.013185 |
-| Sharpe_Annualized | -0.209303 |
-| Sharpe_VaR | -0.008197 |
-| Sharpe_ES | -0.006038 |
-| Sortino | -0.019819 |
-| Calmar | -0.114894 |
-| Omega | 0.961795 |
-| Sterling | -0.091215 |
-| Burke | -0.164865 |
-| Martin | -0.144765 |
-| UlcerIndex | 0.305731 |
-| PainIndex | 0.281857 |
-| PainRatio | -0.157027 |
-| VaR_Loss | 0.015946 |
-| ES_Loss | 0.021647 |
-| DownsideDeviation | 0.006595 |
-| DrawdownDeviation | 0.014058 |
-| Rachev | 1.161109 |
-| AdjustedSharpe | -0.204274 |
-| Skewness | 0.543429 |
-| Kurtosis | 5.777861 |
-| UpsidePotential | 0.498935 |
-| UpsideRisk | 0.007394 |
-| BernardoLedoit | 0.961795 |
-| DRatio | 1.342664 |
-| Hurst | 0.327174 |
-| Kappa | -0.014072 |
-| Kelly | -1.330014 |
-| Prospect | -0.668262 |
-| Information_Daily | -0.069339 |
-| Information_Annualized | -1.195555 |
-| CAPMAlpha | -0.000180 |
-| JensenAlpha | -0.057154 |
-| Treynor_Daily | -0.003186 |
-| Treynor_Annualized | -0.784953 |
-| Modigliani | -0.000146 |
-| TrackingError_Daily | 0.014382 |
-| TrackingError_Annualized | 0.228303 |
-| M2Sortino | -0.044567 |
-| Appraisal | -0.364144 |
-| CAPMBeta | 0.056384 |
-| ActiveReturn | -0.272948 |
-| OmegaExcessReturn | -0.082018 |
-| BetaCoSkewness | -2.462721 |
-| BetaCoKurtosis | 0.012465 |
-| CDD | 0.275115 |
-| CoSkewness | -0.000000 |
-| CoKurtosis | 0.000000 |
-| FamaBeta | 0.896196 |
-| MSquaredExcess | -0.226318 |
-| NetSelectivity | -0.249209 |
-| Selectivity | -0.057154 |
-| SpecificRisk | 0.156953 |
-| SystematicRisk | 0.009901 |
-| TotalRisk | 0.157265 |
-| UpCapture | 0.032163 |
-| UpNumber | 0.373853 |
-| UpPercent | 0.213303 |
-| DownCapture | 0.079258 |
-| DownNumber | 0.474843 |
-| DownPercent | 0.764151 |
-
-</details>
-
-<details markdown="1">
-<summary>Effect of removing this share from curent_update_baltic</summary>
-
-| Measure | Portfolio without share | Change from baseline |
-| --- | --- | --- |
-| netSD | 0.805085 | 0.008475 |
-| Rachev ratio | 1.208621 | 0.006138 |
-| Sortino ratio | 0.180081 | 0.003498 |
-
-The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
-
-</details>
-
-</details>
-
-<details markdown="1" id="share-molnr">
-<summary><strong>MOLNR — J. Molner</strong> | BUY | target 38 shares | priority 17</summary>
-
-| Measure | Value |
-| --- | --- |
-| Current shares | 0 |
-| Target shares | 38 |
-| Change | +38 |
-| Weight | 4.83% |
-| Last price | EUR 18.9000 |
-| Individual netSD | 0.0702 |
-| OUT / IN | 8 / 0 |
-| RSI(14) | 44.96 |
-| MACD state | Bullish |
-| Bollinger state | Inside bands |
-| Technical decision | BUY |
-| Observation date | 2026-08-28 |
+<details markdown="1" class="stock-profile" id="share-molnr">
+<summary><strong>MOLNR — J. Molner</strong> | BUY | target 38 shares | priority 1</summary>
+
+| Current shares | Target shares | Change | Weight | Last price | Individual netSD | OUT / IN | RSI(14) | MACD state | Bollinger state | Technical decision | Observation date |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | 38 | +38 | 4.83% | EUR 18.9000 | 0.0702 | 8 / 0 | 44.96 | Bullish | Inside bands | BUY | 2026-08-28 |
 
 ![MOLNR complete technical history](figures/technical_analysis/MOLNR_technical.png)
 
 <details markdown="1">
-<summary>Bollinger Bands — enlarge last year</summary>
+<summary>Bollinger Bands, RSI(14) and MACD — last 252 observations</summary>
 
-![MOLNR Bollinger Bands — enlarge last year](figures/stock_profiles/MOLNR_bollinger_1y.png)
+**Bollinger Bands**
 
-</details>
+![MOLNR Bollinger Bands](figures/stock_profiles/MOLNR_bollinger_1y.png)
 
-<details markdown="1">
-<summary>RSI(14) — enlarge last year</summary>
+**RSI(14)**
 
-![MOLNR RSI(14) — enlarge last year](figures/stock_profiles/MOLNR_rsi_1y.png)
+![MOLNR RSI(14)](figures/stock_profiles/MOLNR_rsi_1y.png)
 
-</details>
+**MACD**
 
-<details markdown="1">
-<summary>MACD — enlarge last year</summary>
-
-![MOLNR MACD — enlarge last year](figures/stock_profiles/MOLNR_macd_1y.png)
+![MOLNR MACD](figures/stock_profiles/MOLNR_macd_1y.png)
 
 </details>
 
@@ -2688,91 +208,37 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>All 72 PerformanceAnalytics measures</summary>
 
-| Measure | Value |
-| --- | --- |
-| ArithmeticReturn | 0.001511 |
-| GeometricReturn | 0.000922 |
-| AnnualizedReturn_Arithmetic | 0.380894 |
-| AnnualizedReturn_Geometric | 0.261260 |
-| CumulativeReturn | 1.002693 |
-| Volatility | 0.036225 |
-| Volatility_Annualized | 0.575057 |
-| MaximumDrawdown | 0.334865 |
-| AverageDrawdown | 0.142918 |
-| AverageDrawdownLength | 56.923077 |
-| AverageRecoveryTime | 27.461538 |
-| Sharpe_Daily | 0.041725 |
-| Sharpe_Annualized | 0.662359 |
-| Sharpe_VaR | 0.034107 |
-| Sharpe_ES | 0.023600 |
-| Sortino | 0.084093 |
-| Calmar | 0.780197 |
-| Omega | 1.208374 |
-| Sterling | 0.600785 |
-| Burke | 0.411736 |
-| Martin | 1.784282 |
-| UlcerIndex | 0.146423 |
-| PainIndex | 0.124032 |
-| PainRatio | 2.106394 |
-| VaR_Loss | 0.044317 |
-| ES_Loss | 0.064046 |
-| DownsideDeviation | 0.017974 |
-| DrawdownDeviation | 0.023045 |
-| Rachev | 1.395142 |
-| AdjustedSharpe | 0.173690 |
-| Skewness | 5.561928 |
-| Kurtosis | 76.948058 |
-| UpsidePotential | 0.487661 |
-| UpsideRisk | 0.031460 |
-| BernardoLedoit | 1.208374 |
-| DRatio | 1.006490 |
-| Hurst | 0.442163 |
-| Kappa | 0.055208 |
-| Kelly | 1.151816 |
-| Prospect | -0.420367 |
-| Information_Daily | 0.002743 |
-| Information_Annualized | 0.054153 |
-| CAPMAlpha | 0.001515 |
-| JensenAlpha | 0.262135 |
-| Treynor_Daily | -0.241030 |
-| Treynor_Annualized | -68.335799 |
-| Modigliani | 0.000462 |
-| TrackingError_Daily | 0.037889 |
-| TrackingError_Annualized | 0.601465 |
-| M2Sortino | 0.247376 |
-| Appraisal | 0.456144 |
-| CAPMBeta | -0.003823 |
-| ActiveReturn | 0.032571 |
-| OmegaExcessReturn | 0.158352 |
-| BetaCoSkewness | -4.654220 |
-| BetaCoKurtosis | 0.066452 |
-| CDD | 0.282678 |
-| CoSkewness | -0.000001 |
-| CoKurtosis | 0.000000 |
-| FamaBeta | 3.274872 |
-| MSquaredExcess | -0.121196 |
-| NetSelectivity | -0.487668 |
-| Selectivity | 0.262135 |
-| SpecificRisk | 0.574675 |
-| SystematicRisk | -0.000671 |
-| TotalRisk | 0.574675 |
-| UpCapture | 0.139307 |
-| UpNumber | 0.243119 |
-| UpPercent | 0.204128 |
-| DownCapture | -0.272221 |
-| DownNumber | 0.308176 |
-| DownPercent | 0.754717 |
+| Measure | Value | Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| ArithmeticReturn | 0.001511 | Sterling | 0.600785 | Hurst | 0.442163 | BetaCoSkewness | -4.654220 |
+| GeometricReturn | 0.000922 | Burke | 0.411736 | Kappa | 0.055208 | BetaCoKurtosis | 0.066452 |
+| AnnualizedReturn_Arithmetic | 0.380894 | Martin | 1.784282 | Kelly | 1.151816 | CDD | 0.282678 |
+| AnnualizedReturn_Geometric | 0.261260 | UlcerIndex | 0.146423 | Prospect | -0.420367 | CoSkewness | -0.000001 |
+| CumulativeReturn | 1.002693 | PainIndex | 0.124032 | Information_Daily | 0.002743 | CoKurtosis | 0.000000 |
+| Volatility | 0.036225 | PainRatio | 2.106394 | Information_Annualized | 0.054153 | FamaBeta | 3.274872 |
+| Volatility_Annualized | 0.575057 | VaR_Loss | 0.044317 | CAPMAlpha | 0.001515 | MSquaredExcess | -0.121196 |
+| MaximumDrawdown | 0.334865 | ES_Loss | 0.064046 | JensenAlpha | 0.262135 | NetSelectivity | -0.487668 |
+| AverageDrawdown | 0.142918 | DownsideDeviation | 0.017974 | Treynor_Daily | -0.241030 | Selectivity | 0.262135 |
+| AverageDrawdownLength | 56.923077 | DrawdownDeviation | 0.023045 | Treynor_Annualized | -68.335799 | SpecificRisk | 0.574675 |
+| AverageRecoveryTime | 27.461538 | Rachev | 1.395142 | Modigliani | 0.000462 | SystematicRisk | -0.000671 |
+| Sharpe_Daily | 0.041725 | AdjustedSharpe | 0.173690 | TrackingError_Daily | 0.037889 | TotalRisk | 0.574675 |
+| Sharpe_Annualized | 0.662359 | Skewness | 5.561928 | TrackingError_Annualized | 0.601465 | UpCapture | 0.139307 |
+| Sharpe_VaR | 0.034107 | Kurtosis | 76.948058 | M2Sortino | 0.247376 | UpNumber | 0.243119 |
+| Sharpe_ES | 0.023600 | UpsidePotential | 0.487661 | Appraisal | 0.456144 | UpPercent | 0.204128 |
+| Sortino | 0.084093 | UpsideRisk | 0.031460 | CAPMBeta | -0.003823 | DownCapture | -0.272221 |
+| Calmar | 0.780197 | BernardoLedoit | 1.208374 | ActiveReturn | 0.032571 | DownNumber | 0.308176 |
+| Omega | 1.208374 | DRatio | 1.006490 | OmegaExcessReturn | 0.158352 | DownPercent | 0.754717 |
 
 </details>
 
 <details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
-| Measure | Portfolio without share | Change from baseline |
-| --- | --- | --- |
-| netSD | 0.728814 | -0.067797 |
-| Rachev ratio | 1.101756 | -0.100727 |
-| Sortino ratio | 0.154919 | -0.021664 |
+| Measure | Full portfolio | Portfolio without share | Change |
+| --- | --- | --- | --- |
+| netSD | 0.796610 | 0.728814 | -0.067797 |
+| Rachev ratio | 1.202483 | 1.101756 | -0.100727 |
+| Sortino ratio | 0.176583 | 0.154919 | -0.021664 |
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -2780,51 +246,36 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 </details>
 
-<details markdown="1" id="share-mode">
-<summary><strong>MODE — Modera</strong> | HOLD | target 51 shares | priority 19</summary>
+<details markdown="1" class="stock-profile" id="share-vlp1l">
+<summary><strong>VLP1L — Vilkyškių pieninė</strong> | HOLD | target 75 shares | priority 2</summary>
 
-| Measure | Value |
-| --- | --- |
-| Current shares | 0 |
-| Target shares | 51 |
-| Change | +51 |
-| Weight | 2.03% |
-| Last price | EUR 5.9000 |
-| Individual netSD | 0.0263 |
-| OUT / IN | 27 / 24 |
-| RSI(14) | 48.74 |
-| MACD state | Bearish |
-| Bollinger state | Inside bands |
-| Technical decision | HOLD |
-| Observation date | 2026-08-28 |
+| Current shares | Target shares | Change | Weight | Last price | Individual netSD | OUT / IN | RSI(14) | MACD state | Bollinger state | Technical decision | Observation date |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 42 | 75 | +33 | 7.83% | EUR 15.5000 | 0.3772 | 43 / 0 | 57.67 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
-![MODE complete technical history](figures/technical_analysis/MODE_technical.png)
+![VLP1L complete technical history](figures/technical_analysis/VLP1L_technical.png)
 
 <details markdown="1">
-<summary>Bollinger Bands — enlarge last year</summary>
+<summary>Bollinger Bands, RSI(14) and MACD — last 252 observations</summary>
 
-![MODE Bollinger Bands — enlarge last year](figures/stock_profiles/MODE_bollinger_1y.png)
+**Bollinger Bands**
 
-</details>
+![VLP1L Bollinger Bands](figures/stock_profiles/VLP1L_bollinger_1y.png)
 
-<details markdown="1">
-<summary>RSI(14) — enlarge last year</summary>
+**RSI(14)**
 
-![MODE RSI(14) — enlarge last year](figures/stock_profiles/MODE_rsi_1y.png)
+![VLP1L RSI(14)](figures/stock_profiles/VLP1L_rsi_1y.png)
 
-</details>
+**MACD**
 
-<details markdown="1">
-<summary>MACD — enlarge last year</summary>
-
-![MODE MACD — enlarge last year](figures/stock_profiles/MODE_macd_1y.png)
+![VLP1L MACD](figures/stock_profiles/VLP1L_macd_1y.png)
 
 </details>
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
-![MODE stochastic dominance](figures/stock_profiles/MODE_FSD_SSD_TSD.png)
+![VLP1L stochastic dominance](figures/stock_profiles/VLP1L_FSD_SSD_TSD.png)
 
 The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
 
@@ -2833,91 +284,37 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>All 72 PerformanceAnalytics measures</summary>
 
-| Measure | Value |
-| --- | --- |
-| ArithmeticReturn | 0.000581 |
-| GeometricReturn | 0.000335 |
-| AnnualizedReturn_Arithmetic | 0.146305 |
-| AnnualizedReturn_Geometric | 0.088023 |
-| CumulativeReturn | 0.287131 |
-| Volatility | 0.022818 |
-| Volatility_Annualized | 0.362217 |
-| MaximumDrawdown | 0.350099 |
-| AverageDrawdown | 0.078297 |
-| AverageDrawdownLength | 57.538462 |
-| AverageRecoveryTime | 20.076923 |
-| Sharpe_Daily | 0.025444 |
-| Sharpe_Annualized | 0.403915 |
-| Sharpe_VaR | 0.021584 |
-| Sharpe_ES | 0.013710 |
-| Sortino | 0.047600 |
-| Calmar | 0.251422 |
-| Omega | 1.113330 |
-| Sterling | 0.195563 |
-| Burke | 0.227710 |
-| Martin | 0.598998 |
-| UlcerIndex | 0.146950 |
-| PainIndex | 0.119170 |
-| PainRatio | 0.738629 |
-| VaR_Loss | 0.026899 |
-| ES_Loss | 0.042348 |
-| DownsideDeviation | 0.012197 |
-| DrawdownDeviation | 0.017111 |
-| Rachev | 1.327719 |
-| AdjustedSharpe | 0.381751 |
-| Skewness | 4.318793 |
-| Kurtosis | 53.841391 |
-| UpsidePotential | 0.467614 |
-| UpsideRisk | 0.019275 |
-| BernardoLedoit | 1.113330 |
-| DRatio | 1.084627 |
-| Hurst | 0.438359 |
-| Kappa | 0.030570 |
-| Kelly | 1.115118 |
-| Prospect | -0.477417 |
-| Information_Daily | -0.018531 |
-| Information_Annualized | -0.340133 |
-| CAPMAlpha | 0.000709 |
-| JensenAlpha | 0.121395 |
-| Treynor_Daily | -0.002294 |
-| Treynor_Annualized | -0.603190 |
-| Modigliani | 0.000281 |
-| TrackingError_Daily | 0.026052 |
-| TrackingError_Annualized | 0.413563 |
-| M2Sortino | 0.084529 |
-| Appraisal | 0.336208 |
-| CAPMBeta | -0.145928 |
-| ActiveReturn | -0.140667 |
-| OmegaExcessReturn | 0.018190 |
-| BetaCoSkewness | -2.100357 |
-| BetaCoKurtosis | 0.041600 |
-| CDD | 0.225221 |
-| CoSkewness | -0.000000 |
-| CoKurtosis | 0.000000 |
-| FamaBeta | 2.062778 |
-| MSquaredExcess | -0.151395 |
-| NetSelectivity | -0.383713 |
-| Selectivity | 0.121395 |
-| SpecificRisk | 0.361070 |
-| SystematicRisk | -0.025625 |
-| TotalRisk | 0.361978 |
-| UpCapture | -0.136502 |
-| UpNumber | 0.254587 |
-| UpPercent | 0.190367 |
-| DownCapture | -0.344034 |
-| DownNumber | 0.342767 |
-| DownPercent | 0.764151 |
+| Measure | Value | Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| ArithmeticReturn | 0.001223 | Sterling | 1.292930 | Hurst | 0.426761 | BetaCoSkewness | -0.725375 |
+| GeometricReturn | 0.001140 | Burke | 1.256071 | Kappa | 0.100544 | BetaCoKurtosis | -0.007644 |
+| AnnualizedReturn_Arithmetic | 0.308070 | Martin | 5.265313 | Kelly | 7.261257 | CDD | 0.095077 |
+| AnnualizedReturn_Geometric | 0.332487 | UlcerIndex | 0.063147 | Prospect | -0.392858 | CoSkewness | -0.000000 |
+| CumulativeReturn | 1.360478 | PainIndex | 0.047953 | Information_Daily | 0.019363 | CoKurtosis | -0.000000 |
+| Volatility | 0.012975 | PainRatio | 6.933606 | Information_Annualized | 0.393018 | FamaBeta | 1.173012 |
+| Volatility_Annualized | 0.205977 | VaR_Loss | 0.014422 | CAPMAlpha | 0.001173 | MSquaredExcess | 0.044566 |
+| MaximumDrawdown | 0.157158 | ES_Loss | 0.024133 | JensenAlpha | 0.319473 | NetSelectivity | 0.064232 |
+| AverageDrawdown | 0.039828 | DownsideDeviation | 0.007420 | Treynor_Daily | 0.020028 | Selectivity | 0.319473 |
+| AverageDrawdownLength | 25.392857 | DrawdownDeviation | 0.010767 | Treynor_Annualized | 5.842701 | SpecificRisk | 0.205598 |
+| AverageRecoveryTime | 14.107143 | Rachev | 1.428309 | Modigliani | 0.001042 | SystematicRisk | 0.009993 |
+| Sharpe_Daily | 0.094217 | AdjustedSharpe | -0.792235 | TrackingError_Daily | 0.016637 | TotalRisk | 0.205841 |
+| Sharpe_Annualized | 1.495653 | Skewness | 1.859172 | TrackingError_Annualized | 0.264105 | UpCapture | 0.183974 |
+| Sharpe_VaR | 0.084766 | Kurtosis | 24.383907 | M2Sortino | 0.332887 | UpNumber | 0.426606 |
+| Sharpe_ES | 0.050656 | UpsidePotential | 0.610832 | Appraisal | 1.553874 | UpPercent | 0.275229 |
+| Sortino | 0.164747 | UpsideRisk | 0.010704 | CAPMBeta | 0.056906 | DownCapture | -0.130313 |
+| Calmar | 2.115625 | BernardoLedoit | 1.369319 | ActiveReturn | 0.103798 | DownNumber | 0.361635 |
+| Omega | 1.369319 | DRatio | 0.658191 | OmegaExcessReturn | 0.290002 | DownPercent | 0.798742 |
 
 </details>
 
 <details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
-| Measure | Portfolio without share | Change from baseline |
-| --- | --- | --- |
-| netSD | 0.779661 | -0.016949 |
-| Rachev ratio | 1.184296 | -0.018188 |
-| Sortino ratio | 0.173776 | -0.002807 |
+| Measure | Full portfolio | Portfolio without share | Change |
+| --- | --- | --- | --- |
+| netSD | 0.796610 | 0.720339 | -0.076271 |
+| Rachev ratio | 1.202483 | 1.202236 | -0.000247 |
+| Sortino ratio | 0.176583 | 0.149701 | -0.026882 |
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -2925,51 +322,36 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 </details>
 
-<details markdown="1" id="share-tal1t">
-<summary><strong>TAL1T — Tallink Grupp</strong> | HOLD | target 919 shares | priority 20</summary>
+<details markdown="1" class="stock-profile" id="share-kne1l">
+<summary><strong>KNE1L — KN Energies</strong> | HOLD | target 1226 shares | priority 3</summary>
 
-| Measure | Value |
-| --- | --- |
-| Current shares | 700 |
-| Target shares | 919 |
-| Change | +219 |
-| Weight | 3.80% |
-| Last price | EUR 0.6200 |
-| Individual netSD | 0.0175 |
-| OUT / IN | 26 / 24 |
-| RSI(14) | 51.82 |
-| MACD state | Bullish |
-| Bollinger state | Inside bands |
-| Technical decision | HOLD |
-| Observation date | 2026-08-28 |
+| Current shares | Target shares | Change | Weight | Last price | Individual netSD | OUT / IN | RSI(14) | MACD state | Bollinger state | Technical decision | Observation date |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | 1226 | +1226 | 4.02% | EUR 0.4920 | 0.3684 | 42 / 0 | 55.64 | Bullish | Inside bands | HOLD | 2026-08-28 |
 
-![TAL1T complete technical history](figures/technical_analysis/TAL1T_technical.png)
+![KNE1L complete technical history](figures/technical_analysis/KNE1L_technical.png)
 
 <details markdown="1">
-<summary>Bollinger Bands — enlarge last year</summary>
+<summary>Bollinger Bands, RSI(14) and MACD — last 252 observations</summary>
 
-![TAL1T Bollinger Bands — enlarge last year](figures/stock_profiles/TAL1T_bollinger_1y.png)
+**Bollinger Bands**
 
-</details>
+![KNE1L Bollinger Bands](figures/stock_profiles/KNE1L_bollinger_1y.png)
 
-<details markdown="1">
-<summary>RSI(14) — enlarge last year</summary>
+**RSI(14)**
 
-![TAL1T RSI(14) — enlarge last year](figures/stock_profiles/TAL1T_rsi_1y.png)
+![KNE1L RSI(14)](figures/stock_profiles/KNE1L_rsi_1y.png)
 
-</details>
+**MACD**
 
-<details markdown="1">
-<summary>MACD — enlarge last year</summary>
-
-![TAL1T MACD — enlarge last year](figures/stock_profiles/TAL1T_macd_1y.png)
+![KNE1L MACD](figures/stock_profiles/KNE1L_macd_1y.png)
 
 </details>
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
-![TAL1T stochastic dominance](figures/stock_profiles/TAL1T_FSD_SSD_TSD.png)
+![KNE1L stochastic dominance](figures/stock_profiles/KNE1L_FSD_SSD_TSD.png)
 
 The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
 
@@ -2978,91 +360,37 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>All 72 PerformanceAnalytics measures</summary>
 
-| Measure | Value |
-| --- | --- |
-| ArithmeticReturn | 0.000186 |
-| GeometricReturn | 0.000140 |
-| AnnualizedReturn_Arithmetic | 0.046837 |
-| AnnualizedReturn_Geometric | 0.035797 |
-| CumulativeReturn | 0.110972 |
-| Volatility | 0.009629 |
-| Volatility_Annualized | 0.152858 |
-| MaximumDrawdown | 0.173554 |
-| AverageDrawdown | 0.029449 |
-| AverageDrawdownLength | 41.166667 |
-| AverageRecoveryTime | 21.277778 |
-| Sharpe_Daily | 0.019302 |
-| Sharpe_Annualized | 0.306412 |
-| Sharpe_VaR | 0.013499 |
-| Sharpe_ES | 0.007791 |
-| Sortino | 0.028063 |
-| Calmar | 0.206261 |
-| Omega | 1.064954 |
-| Sterling | 0.130860 |
-| Burke | 0.147077 |
-| Martin | 0.410319 |
-| UlcerIndex | 0.087243 |
-| PainIndex | 0.074668 |
-| PainRatio | 0.479418 |
-| VaR_Loss | 0.013769 |
-| ES_Loss | 0.023856 |
-| DownsideDeviation | 0.006623 |
-| DrawdownDeviation | 0.008608 |
-| Rachev | 1.053652 |
-| AdjustedSharpe | 0.299051 |
-| Skewness | 0.092191 |
-| Kurtosis | 10.344557 |
-| UpsidePotential | 0.460100 |
-| UpsideRisk | 0.006983 |
-| BernardoLedoit | 1.064954 |
-| DRatio | 1.020660 |
-| Hurst | 0.365714 |
-| Kappa | 0.017653 |
-| Kelly | 2.004552 |
-| Prospect | -0.511984 |
-| Information_Daily | -0.047277 |
-| Information_Annualized | -0.847278 |
-| CAPMAlpha | 0.000152 |
-| JensenAlpha | 0.027007 |
-| Treynor_Daily | 0.003631 |
-| Treynor_Annualized | 0.931339 |
-| Modigliani | 0.000214 |
-| TrackingError_Daily | 0.014341 |
-| TrackingError_Annualized | 0.227661 |
-| M2Sortino | 0.036221 |
-| Appraisal | 0.176972 |
-| CAPMBeta | 0.038436 |
-| ActiveReturn | -0.192892 |
-| OmegaExcessReturn | -0.002123 |
-| BetaCoSkewness | -3.680137 |
-| BetaCoKurtosis | -0.065405 |
-| CDD | 0.071457 |
-| CoSkewness | -0.000001 |
-| CoKurtosis | -0.000000 |
-| FamaBeta | 0.870506 |
-| MSquaredExcess | -0.152656 |
-| NetSelectivity | -0.163278 |
-| Selectivity | 0.027007 |
-| SpecificRisk | 0.152608 |
-| SystematicRisk | 0.006749 |
-| TotalRisk | 0.152757 |
-| UpCapture | 0.060333 |
-| UpNumber | 0.383028 |
-| UpPercent | 0.176606 |
-| DownCapture | 0.020975 |
-| DownNumber | 0.418239 |
-| DownPercent | 0.820755 |
+| Measure | Value | Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| ArithmeticReturn | 0.000970 | Sterling | 0.694925 | Hurst | 0.383627 | BetaCoSkewness | -1.303857 |
+| GeometricReturn | 0.000892 | Burke | 1.001545 | Kappa | 0.083316 | BetaCoKurtosis | -0.058605 |
+| AnnualizedReturn_Arithmetic | 0.244434 | Martin | 2.047422 | Kelly | 6.124211 | CDD | 0.090512 |
+| AnnualizedReturn_Geometric | 0.251806 | UlcerIndex | 0.122987 | Prospect | -0.432052 | CoSkewness | -0.000000 |
+| CumulativeReturn | 0.958110 | PainIndex | 0.091665 | Information_Daily | 0.004520 | CoKurtosis | -0.000000 |
+| Volatility | 0.012585 | PainRatio | 2.747028 | Information_Annualized | 0.088911 | FamaBeta | 1.137731 |
+| Volatility_Annualized | 0.199782 | VaR_Loss | 0.015563 | CAPMAlpha | 0.000925 | MSquaredExcess | -0.005995 |
+| MaximumDrawdown | 0.262350 | ES_Loss | 0.024832 | JensenAlpha | 0.240138 | NetSelectivity | -0.008381 |
+| AverageDrawdown | 0.040766 | DownsideDeviation | 0.007426 | Treynor_Daily | 0.017476 | Selectivity | 0.240138 |
+| AverageDrawdownLength | 33.000000 | DrawdownDeviation | 0.011794 | Treynor_Annualized | 4.935416 | SpecificRisk | 0.199448 |
+| AverageRecoveryTime | 18.954545 | Rachev | 1.379867 | Modigliani | 0.000853 | SystematicRisk | 0.008959 |
+| Sharpe_Daily | 0.077074 | AdjustedSharpe | 0.864712 | TrackingError_Daily | 0.016379 | TotalRisk | 0.199650 |
+| Sharpe_Annualized | 1.223506 | Skewness | 1.082079 | TrackingError_Annualized | 0.260001 | UpCapture | 0.160227 |
+| Sharpe_VaR | 0.062324 | Kurtosis | 11.239148 | M2Sortino | 0.252111 | UpNumber | 0.364679 |
+| Sharpe_ES | 0.039062 | UpsidePotential | 0.580744 | Appraisal | 1.204012 | UpPercent | 0.227064 |
+| Sortino | 0.130612 | UpsideRisk | 0.010196 | CAPMBeta | 0.051020 | DownCapture | -0.085429 |
+| Calmar | 0.959809 | BernardoLedoit | 1.290164 | ActiveReturn | 0.023117 | DownNumber | 0.355346 |
+| Omega | 1.290164 | DRatio | 0.740349 | OmegaExcessReturn | 0.209287 | DownPercent | 0.801887 |
 
 </details>
 
 <details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
-| Measure | Portfolio without share | Change from baseline |
-| --- | --- | --- |
-| netSD | 0.779661 | -0.016949 |
-| Rachev ratio | 1.209335 | 0.006852 |
-| Sortino ratio | 0.178434 | 0.001851 |
+| Measure | Full portfolio | Portfolio without share | Change |
+| --- | --- | --- | --- |
+| netSD | 0.796610 | 0.754237 | -0.042373 |
+| Rachev ratio | 1.202483 | 1.209135 | 0.006652 |
+| Sortino ratio | 0.176583 | 0.168507 | -0.008076 |
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -3070,51 +398,36 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 </details>
 
-<details markdown="1" id="share-tve1t">
-<summary><strong>TVE1T — Tallinna Vesi</strong> | HOLD | target 12 shares | priority 20</summary>
+<details markdown="1" class="stock-profile" id="share-mrk1t">
+<summary><strong>MRK1T — Merko Ehitus</strong> | HOLD | target 38 shares | priority 4</summary>
 
-| Measure | Value |
-| --- | --- |
-| Current shares | 0 |
-| Target shares | 12 |
-| Change | +12 |
-| Weight | 0.92% |
-| Last price | EUR 10.8500 |
-| Individual netSD | 0.0175 |
-| OUT / IN | 28 / 26 |
-| RSI(14) | 34.52 |
-| MACD state | Bearish |
-| Bollinger state | Inside bands |
-| Technical decision | HOLD |
-| Observation date | 2026-08-28 |
+| Current shares | Target shares | Change | Weight | Last price | Individual netSD | OUT / IN | RSI(14) | MACD state | Bollinger state | Technical decision | Observation date |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 20 | 38 | +18 | 6.97% | EUR 26.9000 | 0.3684 | 42 / 0 | 40.54 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
-![TVE1T complete technical history](figures/technical_analysis/TVE1T_technical.png)
+![MRK1T complete technical history](figures/technical_analysis/MRK1T_technical.png)
 
 <details markdown="1">
-<summary>Bollinger Bands — enlarge last year</summary>
+<summary>Bollinger Bands, RSI(14) and MACD — last 252 observations</summary>
 
-![TVE1T Bollinger Bands — enlarge last year](figures/stock_profiles/TVE1T_bollinger_1y.png)
+**Bollinger Bands**
 
-</details>
+![MRK1T Bollinger Bands](figures/stock_profiles/MRK1T_bollinger_1y.png)
 
-<details markdown="1">
-<summary>RSI(14) — enlarge last year</summary>
+**RSI(14)**
 
-![TVE1T RSI(14) — enlarge last year](figures/stock_profiles/TVE1T_rsi_1y.png)
+![MRK1T RSI(14)](figures/stock_profiles/MRK1T_rsi_1y.png)
 
-</details>
+**MACD**
 
-<details markdown="1">
-<summary>MACD — enlarge last year</summary>
-
-![TVE1T MACD — enlarge last year](figures/stock_profiles/TVE1T_macd_1y.png)
+![MRK1T MACD](figures/stock_profiles/MRK1T_macd_1y.png)
 
 </details>
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
-![TVE1T stochastic dominance](figures/stock_profiles/TVE1T_FSD_SSD_TSD.png)
+![MRK1T stochastic dominance](figures/stock_profiles/MRK1T_FSD_SSD_TSD.png)
 
 The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
 
@@ -3123,91 +436,37 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>All 72 PerformanceAnalytics measures</summary>
 
-| Measure | Value |
-| --- | --- |
-| ArithmeticReturn | -0.000310 |
-| GeometricReturn | -0.000332 |
-| AnnualizedReturn_Arithmetic | -0.078108 |
-| AnnualizedReturn_Geometric | -0.080163 |
-| CumulativeReturn | -0.221208 |
-| Volatility | 0.006551 |
-| Volatility_Annualized | 0.103987 |
-| MaximumDrawdown | 0.297838 |
-| AverageDrawdown | 0.077168 |
-| AverageDrawdownLength | 187.000000 |
-| AverageRecoveryTime | 102.500000 |
-| Sharpe_Daily | -0.047316 |
-| Sharpe_Annualized | -0.751125 |
-| Sharpe_VaR | -0.032181 |
-| Sharpe_ES | -0.017767 |
-| Sortino | -0.059534 |
-| Calmar | -0.269148 |
-| Omega | 0.853972 |
-| Sterling | -0.201495 |
-| Burke | -0.412768 |
-| Martin | -0.317624 |
-| UlcerIndex | 0.252382 |
-| PainIndex | 0.235070 |
-| PainRatio | -0.341015 |
-| VaR_Loss | 0.009632 |
-| ES_Loss | 0.017445 |
-| DownsideDeviation | 0.005206 |
-| DrawdownDeviation | 0.010849 |
-| Rachev | 0.767831 |
-| AdjustedSharpe | -0.702177 |
-| Skewness | -1.446544 |
-| Kurtosis | 13.475446 |
-| UpsidePotential | 0.348158 |
-| UpsideRisk | 0.003981 |
-| BernardoLedoit | 0.853972 |
-| DRatio | 1.203830 |
-| Hurst | 0.366349 |
-| Kappa | -0.035953 |
-| Kelly | -7.223233 |
-| Prospect | -0.569150 |
-| Information_Daily | -0.091195 |
-| Information_Annualized | -1.544032 |
-| CAPMAlpha | -0.000333 |
-| JensenAlpha | -0.086229 |
-| Treynor_Daily | -0.012498 |
-| Treynor_Annualized | -3.022038 |
-| Modigliani | -0.000523 |
-| TrackingError_Daily | 0.012601 |
-| TrackingError_Annualized | 0.200029 |
-| M2Sortino | -0.082400 |
-| Appraisal | -0.830607 |
-| CAPMBeta | 0.026526 |
-| ActiveReturn | -0.308852 |
-| OmegaExcessReturn | -0.109970 |
-| BetaCoSkewness | 0.061649 |
-| BetaCoKurtosis | 0.024684 |
-| CDD | 0.195220 |
-| CoSkewness | 0.000000 |
-| CoKurtosis | 0.000000 |
-| FamaBeta | 0.592195 |
-| MSquaredExcess | -0.296295 |
-| NetSelectivity | -0.215591 |
-| Selectivity | -0.086229 |
-| SpecificRisk | 0.103814 |
-| SystematicRisk | 0.004658 |
-| TotalRisk | 0.103919 |
-| UpCapture | -0.033885 |
-| UpNumber | 0.284404 |
-| UpPercent | 0.121560 |
-| DownCapture | 0.049120 |
-| DownNumber | 0.320755 |
-| DownPercent | 0.823899 |
+| Measure | Value | Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| ArithmeticReturn | 0.000873 | Sterling | 0.729500 | Hurst | 0.405900 | BetaCoSkewness | -0.108044 |
+| GeometricReturn | 0.000817 | Burke | 0.901691 | Kappa | 0.082490 | BetaCoKurtosis | -0.013832 |
+| AnnualizedReturn_Arithmetic | 0.219897 | Martin | 2.953061 | Kelly | 7.768742 | CDD | 0.054320 |
+| AnnualizedReturn_Geometric | 0.228513 | UlcerIndex | 0.077382 | Prospect | -0.386314 | CoSkewness | -0.000000 |
+| CumulativeReturn | 0.851101 | PainIndex | 0.049366 | Information_Daily | -0.000039 | CoKurtosis | -0.000000 |
+| Volatility | 0.010598 | PainRatio | 4.628938 | Information_Annualized | -0.000761 | FamaBeta | 0.958116 |
+| Volatility_Annualized | 0.168242 | VaR_Loss | 0.012042 | CAPMAlpha | 0.000792 | MSquaredExcess | 0.007987 |
+| MaximumDrawdown | 0.213246 | ES_Loss | 0.021553 | JensenAlpha | 0.207631 | NetSelectivity | 0.009402 |
+| AverageDrawdown | 0.030621 | DownsideDeviation | 0.006322 | Treynor_Daily | 0.008948 | Selectivity | 0.207631 |
+| AverageDrawdownLength | 22.258065 | DrawdownDeviation | 0.010945 | Treynor_Annualized | 2.502555 | SpecificRisk | 0.167365 |
+| AverageRecoveryTime | 11.064516 | Rachev | 1.344492 | Modigliani | 0.000911 | SystematicRisk | 0.016034 |
+| Sharpe_Daily | 0.082335 | AdjustedSharpe | 0.276910 | TrackingError_Daily | 0.014572 | TotalRisk | 0.168131 |
+| Sharpe_Annualized | 1.307029 | Skewness | 1.268852 | TrackingError_Annualized | 0.231319 | UpCapture | 0.232974 |
+| Sharpe_VaR | 0.072461 | Kurtosis | 17.955590 | M2Sortino | 0.231256 | UpNumber | 0.470183 |
+| Sharpe_ES | 0.040486 | UpsidePotential | 0.557509 | Appraisal | 1.240587 | UpPercent | 0.243119 |
+| Sortino | 0.138032 | UpsideRisk | 0.008542 | CAPMBeta | 0.091312 | DownCapture | 0.035101 |
+| Calmar | 1.071592 | BernardoLedoit | 1.329059 | ActiveReturn | -0.000176 | DownNumber | 0.430818 |
+| Omega | 1.329059 | DRatio | 0.694712 | OmegaExcessReturn | 0.192319 | DownPercent | 0.808176 |
 
 </details>
 
 <details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
-| Measure | Portfolio without share | Change from baseline |
-| --- | --- | --- |
-| netSD | 0.779661 | -0.016949 |
-| Rachev ratio | 1.203045 | 0.000562 |
-| Sortino ratio | 0.177776 | 0.001192 |
+| Measure | Full portfolio | Portfolio without share | Change |
+| --- | --- | --- | --- |
+| netSD | 0.796610 | 0.728814 | -0.067797 |
+| Rachev ratio | 1.202483 | 1.188254 | -0.014229 |
+| Sortino ratio | 0.176583 | 0.160993 | -0.015590 |
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -3215,51 +474,36 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 </details>
 
-<details markdown="1" id="share-tsm1t">
-<summary><strong>TSM1T — Tallinna Sadam</strong> | HOLD | target 330 shares | priority 22</summary>
+<details markdown="1" class="stock-profile" id="share-apg1l">
+<summary><strong>APG1L — Apranga</strong> | HOLD | target 329 shares | priority 5</summary>
 
-| Measure | Value |
-| --- | --- |
-| Current shares | 330 |
-| Target shares | 330 |
-| Change | +0 |
-| Weight | 2.69% |
-| Last price | EUR 1.2220 |
-| Individual netSD | -0.0175 |
-| OUT / IN | 28 / 30 |
-| RSI(14) | 30.19 |
-| MACD state | Bearish |
-| Bollinger state | Inside bands |
-| Technical decision | HOLD |
-| Observation date | 2026-08-28 |
+| Current shares | Target shares | Change | Weight | Last price | Individual netSD | OUT / IN | RSI(14) | MACD state | Bollinger state | Technical decision | Observation date |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 200 | 329 | +129 | 8.74% | EUR 3.9800 | 0.3333 | 38 / 0 | 55.56 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
-![TSM1T complete technical history](figures/technical_analysis/TSM1T_technical.png)
+![APG1L complete technical history](figures/technical_analysis/APG1L_technical.png)
 
 <details markdown="1">
-<summary>Bollinger Bands — enlarge last year</summary>
+<summary>Bollinger Bands, RSI(14) and MACD — last 252 observations</summary>
 
-![TSM1T Bollinger Bands — enlarge last year](figures/stock_profiles/TSM1T_bollinger_1y.png)
+**Bollinger Bands**
 
-</details>
+![APG1L Bollinger Bands](figures/stock_profiles/APG1L_bollinger_1y.png)
 
-<details markdown="1">
-<summary>RSI(14) — enlarge last year</summary>
+**RSI(14)**
 
-![TSM1T RSI(14) — enlarge last year](figures/stock_profiles/TSM1T_rsi_1y.png)
+![APG1L RSI(14)](figures/stock_profiles/APG1L_rsi_1y.png)
 
-</details>
+**MACD**
 
-<details markdown="1">
-<summary>MACD — enlarge last year</summary>
-
-![TSM1T MACD — enlarge last year](figures/stock_profiles/TSM1T_macd_1y.png)
+![APG1L MACD](figures/stock_profiles/APG1L_macd_1y.png)
 
 </details>
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
-![TSM1T stochastic dominance](figures/stock_profiles/TSM1T_FSD_SSD_TSD.png)
+![APG1L stochastic dominance](figures/stock_profiles/APG1L_FSD_SSD_TSD.png)
 
 The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
 
@@ -3268,91 +512,37 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>All 72 PerformanceAnalytics measures</summary>
 
-| Measure | Value |
-| --- | --- |
-| ArithmeticReturn | -0.000133 |
-| GeometricReturn | -0.000160 |
-| AnnualizedReturn_Arithmetic | -0.033543 |
-| AnnualizedReturn_Geometric | -0.039580 |
-| CumulativeReturn | -0.113818 |
-| Volatility | 0.007339 |
-| Volatility_Annualized | 0.116508 |
-| MaximumDrawdown | 0.278227 |
-| AverageDrawdown | 0.065627 |
-| AverageDrawdownLength | 106.285714 |
-| AverageRecoveryTime | 35.857143 |
-| Sharpe_Daily | -0.018136 |
-| Sharpe_Annualized | -0.287906 |
-| Sharpe_VaR | -0.013894 |
-| Sharpe_ES | -0.007336 |
-| Sortino | -0.023611 |
-| Calmar | -0.142257 |
-| Omega | 0.941679 |
-| Sterling | -0.104646 |
-| Burke | -0.187476 |
-| Martin | -0.193218 |
-| UlcerIndex | 0.204845 |
-| PainIndex | 0.179389 |
-| PainRatio | -0.220636 |
-| VaR_Loss | 0.009580 |
-| ES_Loss | 0.018145 |
-| DownsideDeviation | 0.005637 |
-| DrawdownDeviation | 0.011779 |
-| Rachev | 0.948434 |
-| AdjustedSharpe | -0.294847 |
-| Skewness | -1.672096 |
-| Kurtosis | 19.250328 |
-| UpsidePotential | 0.381236 |
-| UpsideRisk | 0.004694 |
-| BernardoLedoit | 0.941679 |
-| DRatio | 1.094005 |
-| Hurst | 0.376007 |
-| Kappa | -0.013175 |
-| Kelly | -2.471135 |
-| Prospect | -0.529670 |
-| Information_Daily | -0.072945 |
-| Information_Annualized | -1.260667 |
-| CAPMAlpha | -0.000121 |
-| JensenAlpha | -0.036334 |
-| Treynor_Daily | 0.011290 |
-| Treynor_Annualized | 2.788504 |
-| Modigliani | -0.000201 |
-| TrackingError_Daily | 0.013405 |
-| TrackingError_Annualized | 0.212799 |
-| M2Sortino | -0.040305 |
-| Appraisal | -0.312136 |
-| CAPMBeta | -0.014194 |
-| ActiveReturn | -0.268269 |
-| OmegaExcessReturn | -0.071857 |
-| BetaCoSkewness | -1.257074 |
-| BetaCoKurtosis | -0.045930 |
-| CDD | 0.204455 |
-| CoSkewness | -0.000000 |
-| CoKurtosis | -0.000000 |
-| FamaBeta | 0.663495 |
-| MSquaredExcess | -0.234675 |
-| NetSelectivity | -0.191314 |
-| Selectivity | -0.036334 |
-| SpecificRisk | 0.116404 |
-| SystematicRisk | -0.002492 |
-| TotalRisk | 0.116430 |
-| UpCapture | -0.031784 |
-| UpNumber | 0.399083 |
-| UpPercent | 0.178899 |
-| DownCapture | -0.000623 |
-| DownNumber | 0.421384 |
-| DownPercent | 0.839623 |
+| Measure | Value | Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| ArithmeticReturn | 0.000854 | Sterling | 1.024293 | Hurst | 0.441221 | BetaCoSkewness | -1.508227 |
+| GeometricReturn | 0.000815 | Burke | 1.133884 | Kappa | 0.062549 | BetaCoKurtosis | 0.019251 |
+| AnnualizedReturn_Arithmetic | 0.215236 | Martin | 4.059646 | Kelly | 11.124919 | CDD | 0.072705 |
+| AnnualizedReturn_Geometric | 0.227925 | UlcerIndex | 0.056144 | Prospect | -0.233234 | CoSkewness | -0.000000 |
+| CumulativeReturn | 0.848452 | PainIndex | 0.042201 | Information_Daily | -0.000181 | CoKurtosis | 0.000000 |
+| Volatility | 0.008762 | PainRatio | 5.400998 | Information_Annualized | -0.003533 | FamaBeta | 0.792124 |
+| Volatility_Annualized | 0.139094 | VaR_Loss | 0.008059 | CAPMAlpha | 0.000805 | MSquaredExcess | 0.048060 |
+| MaximumDrawdown | 0.122520 | ES_Loss | 0.018685 | JensenAlpha | 0.215245 | NetSelectivity | 0.046775 |
+| AverageDrawdown | 0.022993 | DownsideDeviation | 0.006445 | Treynor_Daily | 0.014701 | Selectivity | 0.215245 |
+| AverageDrawdownLength | 31.090909 | DrawdownDeviation | 0.007213 | Treynor_Annualized | 4.110665 | SpecificRisk | 0.138661 |
+| AverageRecoveryTime | 22.136364 | Rachev | 1.219309 | Modigliani | 0.001078 | SystematicRisk | 0.009736 |
+| Sharpe_Daily | 0.097478 | AdjustedSharpe | -5.572545 | TrackingError_Daily | 0.013622 | TotalRisk | 0.139002 |
+| Sharpe_Annualized | 1.547413 | Skewness | -2.803633 | TrackingError_Annualized | 0.216245 | UpCapture | 0.127047 |
+| Sharpe_VaR | 0.105986 | Kurtosis | 41.870691 | M2Sortino | 0.230300 | UpNumber | 0.424312 |
+| Sharpe_ES | 0.045711 | UpsidePotential | 0.425141 | Appraisal | 1.552311 | UpPercent | 0.181193 |
+| Sortino | 0.132530 | UpsideRisk | 0.005989 | CAPMBeta | 0.055447 | DownCapture | -0.092921 |
+| Calmar | 1.860315 | BernardoLedoit | 1.452921 | ActiveReturn | -0.000764 | DownNumber | 0.330189 |
+| Omega | 1.452921 | DRatio | 0.504583 | OmegaExcessReturn | 0.191027 | DownPercent | 0.877358 |
 
 </details>
 
 <details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
-| Measure | Portfolio without share | Change from baseline |
-| --- | --- | --- |
-| netSD | 0.788136 | -0.008475 |
-| Rachev ratio | 1.209466 | 0.006983 |
-| Sortino ratio | 0.180371 | 0.003788 |
+| Measure | Full portfolio | Portfolio without share | Change |
+| --- | --- | --- | --- |
+| netSD | 0.796610 | 0.711864 | -0.084746 |
+| Rachev ratio | 1.202483 | 1.236434 | 0.033951 |
+| Sortino ratio | 0.176583 | 0.161783 | -0.014800 |
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -3360,44 +550,181 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 </details>
 
-<details markdown="1" id="share-saf1r">
-<summary><strong>SAF1R — SAF Tehnika</strong> | SELL | target 100 shares | priority 23</summary>
+<details markdown="1" class="stock-profile" id="share-virsi">
+<summary><strong>VIRSI — VIRŠI-A</strong> | HOLD | target 10 shares | priority 6</summary>
 
-| Measure | Value |
-| --- | --- |
-| Current shares | 100 |
-| Target shares | 100 |
-| Change | +0 |
-| Weight | 11.43% |
-| Last price | EUR 17.1500 |
-| Individual netSD | -0.1053 |
-| OUT / IN | 12 / 24 |
-| RSI(14) | 88.11 |
-| MACD state | Bullish |
-| Bollinger state | Inside bands |
-| Technical decision | SELL |
-| Observation date | 2026-08-28 |
+| Current shares | Target shares | Change | Weight | Last price | Individual netSD | OUT / IN | RSI(14) | MACD state | Bollinger state | Technical decision | Observation date |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | 10 | +10 | 0.27% | EUR 4.1000 | 0.2982 | 34 / 0 | 39.50 | Bullish | Inside bands | HOLD | 2026-08-28 |
+
+![VIRSI complete technical history](figures/technical_analysis/VIRSI_technical.png)
+
+<details markdown="1">
+<summary>Bollinger Bands, RSI(14) and MACD — last 252 observations</summary>
+
+**Bollinger Bands**
+
+![VIRSI Bollinger Bands](figures/stock_profiles/VIRSI_bollinger_1y.png)
+
+**RSI(14)**
+
+![VIRSI RSI(14)](figures/stock_profiles/VIRSI_rsi_1y.png)
+
+**MACD**
+
+![VIRSI MACD](figures/stock_profiles/VIRSI_macd_1y.png)
+
+</details>
+
+<details markdown="1">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+![VIRSI stochastic dominance](figures/stock_profiles/VIRSI_FSD_SSD_TSD.png)
+
+The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
+
+</details>
+
+<details markdown="1">
+<summary>All 72 PerformanceAnalytics measures</summary>
+
+| Measure | Value | Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| ArithmeticReturn | -0.000133 | Sterling | -0.151688 | Hurst | 0.409033 | BetaCoSkewness | -1.229618 |
+| GeometricReturn | -0.000137 | Burke | -0.454512 | Kappa | -0.030795 | BetaCoKurtosis | 0.019891 |
+| AnnualizedReturn_Arithmetic | -0.033418 | Martin | -0.363783 | Kelly | -14.348873 | CDD | 0.070421 |
+| AnnualizedReturn_Geometric | -0.033996 | UlcerIndex | 0.093452 | Prospect | -0.486434 | CoSkewness | -0.000000 |
+| CumulativeReturn | -0.098313 | PainIndex | 0.081684 | Information_Daily | -0.082876 | CoKurtosis | 0.000000 |
+| Volatility | 0.003040 | PainRatio | -0.416191 | Information_Annualized | -1.436276 | FamaBeta | 0.274829 |
+| Volatility_Annualized | 0.048259 | VaR_Loss | 0.004819 | CAPMAlpha | -0.000129 | MSquaredExcess | -0.286801 |
+| MaximumDrawdown | 0.124120 | ES_Loss | 0.008091 | JensenAlpha | -0.032932 | NetSelectivity | -0.096847 |
+| AverageDrawdown | 0.027761 | DownsideDeviation | 0.002410 | Treynor_Daily | 0.029502 | Selectivity | -0.032932 |
+| AverageDrawdownLength | 124.833333 | DrawdownDeviation | 0.004590 | Treynor_Annualized | 7.308020 | SpecificRisk | 0.048220 |
+| AverageRecoveryTime | 74.500000 | Rachev | 0.830411 | Modigliani | -0.000483 | SystematicRisk | -0.000817 |
+| Sharpe_Daily | -0.043621 | AdjustedSharpe | -0.579847 | TrackingError_Daily | 0.011521 | TotalRisk | 0.048227 |
+| Sharpe_Annualized | -0.692463 | Skewness | -1.885460 | TrackingError_Annualized | 0.182893 | UpCapture | -0.032328 |
+| Sharpe_VaR | -0.027517 | Kurtosis | 22.031264 | M2Sortino | -0.038508 | UpNumber | 0.185780 |
+| Sharpe_ES | -0.016389 | UpsidePotential | 0.290085 | Appraisal | -0.682961 | UpPercent | 0.052752 |
+| Sortino | -0.055034 | UpsideRisk | 0.001855 | CAPMBeta | -0.004652 | DownCapture | -0.001457 |
+| Calmar | -0.273898 | BernardoLedoit | 0.840536 | ActiveReturn | -0.262686 | DownNumber | 0.191824 |
+| Omega | 0.840536 | DRatio | 1.278744 | OmegaExcessReturn | -0.047792 | DownPercent | 0.927673 |
+
+</details>
+
+<details markdown="1">
+<summary>Effect of removing this share from curent_update_baltic</summary>
+
+| Measure | Full portfolio | Portfolio without share | Change |
+| --- | --- | --- | --- |
+| netSD | 0.796610 | 0.796610 | 0.000000 |
+| Rachev ratio | 1.202483 | 1.202553 | 0.000070 |
+| Sortino ratio | 0.176583 | 0.176762 | 0.000179 |
+
+The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
+
+</details>
+
+</details>
+
+<details markdown="1" class="stock-profile" id="share-hae1t">
+<summary><strong>HAE1T — Harju Elekter Group</strong> | BUY | target 122 shares | priority 7</summary>
+
+| Current shares | Target shares | Change | Weight | Last price | Individual netSD | OUT / IN | RSI(14) | MACD state | Bollinger state | Technical decision | Observation date |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 100 | 122 | +22 | 4.18% | EUR 5.1400 | 0.1140 | 37 / 24 | 42.59 | Bullish | Inside bands | BUY | 2026-08-28 |
+
+![HAE1T complete technical history](figures/technical_analysis/HAE1T_technical.png)
+
+<details markdown="1">
+<summary>Bollinger Bands, RSI(14) and MACD — last 252 observations</summary>
+
+**Bollinger Bands**
+
+![HAE1T Bollinger Bands](figures/stock_profiles/HAE1T_bollinger_1y.png)
+
+**RSI(14)**
+
+![HAE1T RSI(14)](figures/stock_profiles/HAE1T_rsi_1y.png)
+
+**MACD**
+
+![HAE1T MACD](figures/stock_profiles/HAE1T_macd_1y.png)
+
+</details>
+
+<details markdown="1">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+![HAE1T stochastic dominance](figures/stock_profiles/HAE1T_FSD_SSD_TSD.png)
+
+The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
+
+</details>
+
+<details markdown="1">
+<summary>All 72 PerformanceAnalytics measures</summary>
+
+| Measure | Value | Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| ArithmeticReturn | -0.000032 | Sterling | -0.057287 | Hurst | 0.386445 | BetaCoSkewness | 0.134984 |
+| GeometricReturn | -0.000071 | Burke | -0.088405 | Kappa | -0.003342 | BetaCoKurtosis | 0.053440 |
+| AnnualizedReturn_Arithmetic | -0.008146 | Martin | -0.156945 | Kelly | -0.416803 | CDD | 0.153779 |
+| AnnualizedReturn_Geometric | -0.017725 | UlcerIndex | 0.112935 | Prospect | -0.572958 | CoSkewness | 0.000000 |
+| CumulativeReturn | -0.052102 | PainIndex | 0.098550 | Information_Daily | -0.063852 | CoKurtosis | 0.000000 |
+| Volatility | 0.008807 | PainRatio | -0.179853 | Information_Annualized | -1.115467 | FamaBeta | 0.796163 |
+| Volatility_Annualized | 0.139804 | VaR_Loss | 0.011233 | CAPMAlpha | -0.000055 | MSquaredExcess | -0.204243 |
+| MaximumDrawdown | 0.209400 | ES_Loss | 0.020168 | JensenAlpha | -0.023582 | NetSelectivity | -0.199798 |
+| AverageDrawdown | 0.058845 | DownsideDeviation | 0.005988 | Treynor_Daily | -0.002770 | Selectivity | -0.023582 |
+| AverageDrawdownLength | 93.375000 | DrawdownDeviation | 0.009361 | Treynor_Annualized | -0.691964 | SpecificRisk | 0.139638 |
+| AverageRecoveryTime | 15.375000 | Rachev | 1.080200 | Modigliani | -0.000041 | SystematicRisk | 0.004498 |
+| Sharpe_Daily | -0.003671 | AdjustedSharpe | -0.057893 | TrackingError_Daily | 0.013916 | TotalRisk | 0.139711 |
+| Sharpe_Annualized | -0.058271 | Skewness | 0.500438 | TrackingError_Annualized | 0.220906 | UpCapture | -0.001326 |
+| Sharpe_VaR | -0.002878 | Kurtosis | 14.435639 | M2Sortino | -0.017860 | UpNumber | 0.373853 |
+| Sharpe_ES | -0.001603 | UpsidePotential | 0.448649 | Appraisal | -0.168881 | UpPercent | 0.176606 |
+| Sortino | -0.005398 | UpsideRisk | 0.006450 | CAPMBeta | 0.025615 | DownCapture | 0.007906 |
+| Calmar | -0.084644 | BernardoLedoit | 0.988111 | ActiveReturn | -0.246414 | DownNumber | 0.430818 |
+| Omega | 0.988111 | DRatio | 1.154072 | OmegaExcessReturn | -0.052011 | DownPercent | 0.823899 |
+
+</details>
+
+<details markdown="1">
+<summary>Effect of removing this share from curent_update_baltic</summary>
+
+| Measure | Full portfolio | Portfolio without share | Change |
+| --- | --- | --- | --- |
+| netSD | 0.796610 | 0.762712 | -0.033898 |
+| Rachev ratio | 1.202483 | 1.196361 | -0.006122 |
+| Sortino ratio | 0.176583 | 0.180183 | 0.003600 |
+
+The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
+
+</details>
+
+</details>
+
+<details markdown="1" class="stock-profile" id="share-saf1r">
+<summary><strong>SAF1R — SAF Tehnika</strong> | SELL | target 100 shares | priority 8</summary>
+
+| Current shares | Target shares | Change | Weight | Last price | Individual netSD | OUT / IN | RSI(14) | MACD state | Bollinger state | Technical decision | Observation date |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 100 | 100 | +0 | 11.43% | EUR 17.1500 | -0.1053 | 12 / 24 | 88.11 | Bullish | Inside bands | SELL | 2026-08-28 |
 
 ![SAF1R complete technical history](figures/technical_analysis/SAF1R_technical.png)
 
 <details markdown="1">
-<summary>Bollinger Bands — enlarge last year</summary>
+<summary>Bollinger Bands, RSI(14) and MACD — last 252 observations</summary>
 
-![SAF1R Bollinger Bands — enlarge last year](figures/stock_profiles/SAF1R_bollinger_1y.png)
+**Bollinger Bands**
 
-</details>
+![SAF1R Bollinger Bands](figures/stock_profiles/SAF1R_bollinger_1y.png)
 
-<details markdown="1">
-<summary>RSI(14) — enlarge last year</summary>
+**RSI(14)**
 
-![SAF1R RSI(14) — enlarge last year](figures/stock_profiles/SAF1R_rsi_1y.png)
+![SAF1R RSI(14)](figures/stock_profiles/SAF1R_rsi_1y.png)
 
-</details>
+**MACD**
 
-<details markdown="1">
-<summary>MACD — enlarge last year</summary>
-
-![SAF1R MACD — enlarge last year](figures/stock_profiles/SAF1R_macd_1y.png)
+![SAF1R MACD](figures/stock_profiles/SAF1R_macd_1y.png)
 
 </details>
 
@@ -3413,91 +740,1177 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>All 72 PerformanceAnalytics measures</summary>
 
-| Measure | Value |
-| --- | --- |
-| ArithmeticReturn | 0.000737 |
-| GeometricReturn | 0.000501 |
-| AnnualizedReturn_Arithmetic | 0.185846 |
-| AnnualizedReturn_Geometric | 0.134576 |
-| CumulativeReturn | 0.459036 |
-| Volatility | 0.021805 |
-| Volatility_Annualized | 0.346141 |
-| MaximumDrawdown | 0.613343 |
-| AverageDrawdown | 0.074566 |
-| AverageDrawdownLength | 81.666667 |
-| AverageRecoveryTime | 45.666667 |
-| Sharpe_Daily | 0.033822 |
-| Sharpe_Annualized | 0.536906 |
-| Sharpe_VaR | 0.028405 |
-| Sharpe_ES | 0.015861 |
-| Sortino | 0.051195 |
-| Calmar | 0.219415 |
-| Omega | 1.133831 |
-| Sterling | 0.188656 |
-| Burke | 0.254843 |
-| Martin | 0.263460 |
-| UlcerIndex | 0.510804 |
-| PainIndex | 0.424909 |
-| PainRatio | 0.316718 |
-| VaR_Loss | 0.025963 |
-| ES_Loss | 0.046496 |
-| DownsideDeviation | 0.014405 |
-| DrawdownDeviation | 0.022354 |
-| Rachev | 1.157893 |
-| AdjustedSharpe | 0.386716 |
-| Skewness | 0.763854 |
-| Kurtosis | 31.980202 |
-| UpsidePotential | 0.433727 |
-| UpsideRisk | 0.016366 |
-| BernardoLedoit | 1.133831 |
-| DRatio | 0.888069 |
-| Hurst | 0.437121 |
-| Kappa | 0.027611 |
-| Kelly | 1.551119 |
-| Prospect | -0.426971 |
-| Information_Daily | -0.013302 |
-| Information_Annualized | -0.249216 |
-| CAPMAlpha | 0.000623 |
-| JensenAlpha | 0.104762 |
-| Treynor_Daily | 0.003844 |
-| Treynor_Annualized | 1.032252 |
-| Modigliani | 0.000374 |
-| TrackingError_Daily | 0.023789 |
-| TrackingError_Annualized | 0.377635 |
-| M2Sortino | 0.129024 |
-| Appraisal | 0.303522 |
-| CAPMBeta | 0.130372 |
-| ActiveReturn | -0.094113 |
-| OmegaExcessReturn | 0.052099 |
-| BetaCoSkewness | 0.819835 |
-| BetaCoKurtosis | 0.368556 |
-| CDD | 0.077069 |
-| CoSkewness | 0.000000 |
-| CoKurtosis | 0.000000 |
-| FamaBeta | 1.971230 |
-| MSquaredExcess | -0.130561 |
-| NetSelectivity | -0.316223 |
-| Selectivity | 0.104762 |
-| SpecificRisk | 0.345154 |
-| SystematicRisk | 0.022893 |
-| TotalRisk | 0.345913 |
-| UpCapture | 0.225107 |
-| UpNumber | 0.389908 |
-| UpPercent | 0.275229 |
-| DownCapture | 0.065218 |
-| DownNumber | 0.408805 |
-| DownPercent | 0.735849 |
+| Measure | Value | Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| ArithmeticReturn | 0.000737 | Sterling | 0.188656 | Hurst | 0.437121 | BetaCoSkewness | 0.819835 |
+| GeometricReturn | 0.000501 | Burke | 0.254843 | Kappa | 0.027611 | BetaCoKurtosis | 0.368556 |
+| AnnualizedReturn_Arithmetic | 0.185846 | Martin | 0.263460 | Kelly | 1.551119 | CDD | 0.077069 |
+| AnnualizedReturn_Geometric | 0.134576 | UlcerIndex | 0.510804 | Prospect | -0.426971 | CoSkewness | 0.000000 |
+| CumulativeReturn | 0.459036 | PainIndex | 0.424909 | Information_Daily | -0.013302 | CoKurtosis | 0.000000 |
+| Volatility | 0.021805 | PainRatio | 0.316718 | Information_Annualized | -0.249216 | FamaBeta | 1.971230 |
+| Volatility_Annualized | 0.346141 | VaR_Loss | 0.025963 | CAPMAlpha | 0.000623 | MSquaredExcess | -0.130561 |
+| MaximumDrawdown | 0.613343 | ES_Loss | 0.046496 | JensenAlpha | 0.104762 | NetSelectivity | -0.316223 |
+| AverageDrawdown | 0.074566 | DownsideDeviation | 0.014405 | Treynor_Daily | 0.003844 | Selectivity | 0.104762 |
+| AverageDrawdownLength | 81.666667 | DrawdownDeviation | 0.022354 | Treynor_Annualized | 1.032252 | SpecificRisk | 0.345154 |
+| AverageRecoveryTime | 45.666667 | Rachev | 1.157893 | Modigliani | 0.000374 | SystematicRisk | 0.022893 |
+| Sharpe_Daily | 0.033822 | AdjustedSharpe | 0.386716 | TrackingError_Daily | 0.023789 | TotalRisk | 0.345913 |
+| Sharpe_Annualized | 0.536906 | Skewness | 0.763854 | TrackingError_Annualized | 0.377635 | UpCapture | 0.225107 |
+| Sharpe_VaR | 0.028405 | Kurtosis | 31.980202 | M2Sortino | 0.129024 | UpNumber | 0.389908 |
+| Sharpe_ES | 0.015861 | UpsidePotential | 0.433727 | Appraisal | 0.303522 | UpPercent | 0.275229 |
+| Sortino | 0.051195 | UpsideRisk | 0.016366 | CAPMBeta | 0.130372 | DownCapture | 0.065218 |
+| Calmar | 0.219415 | BernardoLedoit | 1.133831 | ActiveReturn | -0.094113 | DownNumber | 0.408805 |
+| Omega | 1.133831 | DRatio | 0.888069 | OmegaExcessReturn | 0.052099 | DownPercent | 0.735849 |
 
 </details>
 
 <details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
-| Measure | Portfolio without share | Change from baseline |
-| --- | --- | --- |
-| netSD | 0.771186 | -0.025424 |
-| Rachev ratio | 1.262598 | 0.060114 |
-| Sortino ratio | 0.180990 | 0.004407 |
+| Measure | Full portfolio | Portfolio without share | Change |
+| --- | --- | --- | --- |
+| netSD | 0.796610 | 0.771186 | -0.025424 |
+| Rachev ratio | 1.202483 | 1.262598 | 0.060114 |
+| Sortino ratio | 0.176583 | 0.180990 | 0.004407 |
+
+The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
+
+</details>
+
+</details>
+
+<details markdown="1" class="stock-profile" id="share-grg1l">
+<summary><strong>GRG1L — Grigeo Group</strong> | HOLD | target 723 shares | priority 9</summary>
+
+| Current shares | Target shares | Change | Weight | Last price | Individual netSD | OUT / IN | RSI(14) | MACD state | Bollinger state | Technical decision | Observation date |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | 723 | +723 | 4.87% | EUR 1.0100 | 0.3772 | 49 / 6 | 35.53 | Bearish | Inside bands | HOLD | 2026-08-28 |
+
+![GRG1L complete technical history](figures/technical_analysis/GRG1L_technical.png)
+
+<details markdown="1">
+<summary>Bollinger Bands, RSI(14) and MACD — last 252 observations</summary>
+
+**Bollinger Bands**
+
+![GRG1L Bollinger Bands](figures/stock_profiles/GRG1L_bollinger_1y.png)
+
+**RSI(14)**
+
+![GRG1L RSI(14)](figures/stock_profiles/GRG1L_rsi_1y.png)
+
+**MACD**
+
+![GRG1L MACD](figures/stock_profiles/GRG1L_macd_1y.png)
+
+</details>
+
+<details markdown="1">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+![GRG1L stochastic dominance](figures/stock_profiles/GRG1L_FSD_SSD_TSD.png)
+
+The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
+
+</details>
+
+<details markdown="1">
+<summary>All 72 PerformanceAnalytics measures</summary>
+
+| Measure | Value | Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| ArithmeticReturn | 0.000507 | Sterling | 0.466265 | Hurst | 0.382523 | BetaCoSkewness | -1.870061 |
+| GeometricReturn | 0.000459 | Burke | 0.565621 | Kappa | 0.056030 | BetaCoKurtosis | 0.013070 |
+| AnnualizedReturn_Arithmetic | 0.127810 | Martin | 2.053835 | Kelly | 5.250336 | CDD | 0.057321 |
+| AnnualizedReturn_Geometric | 0.122677 | UlcerIndex | 0.059730 | Prospect | -0.505101 | CoSkewness | -0.000000 |
+| CumulativeReturn | 0.413726 | PainIndex | 0.043336 | Information_Daily | -0.024444 | CoKurtosis | 0.000000 |
+| Volatility | 0.009829 | PainRatio | 2.830823 | Information_Annualized | -0.455607 | FamaBeta | 0.888531 |
+| Volatility_Annualized | 0.156023 | VaR_Loss | 0.014447 | CAPMAlpha | 0.000492 | MSquaredExcess | -0.073755 |
+| MaximumDrawdown | 0.163104 | ES_Loss | 0.021228 | JensenAlpha | 0.118837 | NetSelectivity | -0.080521 |
+| AverageDrawdown | 0.025521 | DownsideDeviation | 0.006220 | Treynor_Daily | 0.027355 | Selectivity | 0.118837 |
+| AverageDrawdownLength | 19.694444 | DrawdownDeviation | 0.008942 | Treynor_Annualized | 7.306573 | SpecificRisk | 0.155892 |
+| AverageRecoveryTime | 12.250000 | Rachev | 1.114414 | Modigliani | 0.000571 | SystematicRisk | 0.002948 |
+| Sharpe_Daily | 0.051603 | AdjustedSharpe | 0.718078 | TrackingError_Daily | 0.014658 | TotalRisk | 0.155920 |
+| Sharpe_Annualized | 0.819174 | Skewness | 1.110901 | TrackingError_Annualized | 0.232684 | UpCapture | 0.025515 |
+| Sharpe_VaR | 0.035105 | Kurtosis | 12.838329 | M2Sortino | 0.124429 | UpNumber | 0.348624 |
+| Sharpe_ES | 0.023893 | UpsidePotential | 0.550860 | Appraisal | 0.762303 | UpPercent | 0.206422 |
+| Sortino | 0.081544 | UpsideRisk | 0.007619 | CAPMBeta | 0.016790 | DownCapture | -0.118101 |
+| Calmar | 0.752135 | BernardoLedoit | 1.173751 | ActiveReturn | -0.106013 | DownNumber | 0.355346 |
+| Omega | 1.173751 | DRatio | 0.806165 | OmegaExcessReturn | 0.087066 | DownPercent | 0.823899 |
+
+</details>
+
+<details markdown="1">
+<summary>Effect of removing this share from curent_update_baltic</summary>
+
+| Measure | Full portfolio | Portfolio without share | Change |
+| --- | --- | --- | --- |
+| netSD | 0.796610 | 0.762712 | -0.033898 |
+| Rachev ratio | 1.202483 | 1.208206 | 0.005723 |
+| Sortino ratio | 0.176583 | 0.171220 | -0.005364 |
+
+The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
+
+</details>
+
+</details>
+
+<details markdown="1" class="stock-profile" id="share-rsu1l">
+<summary><strong>RSU1L — Rokiškio sūris</strong> | HOLD | target 155 shares | priority 10</summary>
+
+| Current shares | Target shares | Change | Weight | Last price | Individual netSD | OUT / IN | RSI(14) | MACD state | Bollinger state | Technical decision | Observation date |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | 155 | +155 | 4.74% | EUR 4.5600 | 0.2544 | 35 / 6 | 58.03 | Bullish | Inside bands | HOLD | 2026-08-28 |
+
+![RSU1L complete technical history](figures/technical_analysis/RSU1L_technical.png)
+
+<details markdown="1">
+<summary>Bollinger Bands, RSI(14) and MACD — last 252 observations</summary>
+
+**Bollinger Bands**
+
+![RSU1L Bollinger Bands](figures/stock_profiles/RSU1L_bollinger_1y.png)
+
+**RSI(14)**
+
+![RSU1L RSI(14)](figures/stock_profiles/RSU1L_rsi_1y.png)
+
+**MACD**
+
+![RSU1L MACD](figures/stock_profiles/RSU1L_macd_1y.png)
+
+</details>
+
+<details markdown="1">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+![RSU1L stochastic dominance](figures/stock_profiles/RSU1L_FSD_SSD_TSD.png)
+
+The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
+
+</details>
+
+<details markdown="1">
+<summary>All 72 PerformanceAnalytics measures</summary>
+
+| Measure | Value | Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| ArithmeticReturn | 0.000234 | Sterling | 0.114943 | Hurst | 0.351713 | BetaCoSkewness | -3.452885 |
+| GeometricReturn | 0.000116 | Burke | 0.095021 | Kappa | 0.015195 | BetaCoKurtosis | 0.121557 |
+| AnnualizedReturn_Arithmetic | 0.058990 | Martin | 0.461094 | Kelly | 0.989899 | CDD | 0.125774 |
+| AnnualizedReturn_Geometric | 0.029780 | UlcerIndex | 0.064586 | Prospect | -0.515701 | CoSkewness | -0.000000 |
+| CumulativeReturn | 0.091774 | PainIndex | 0.053798 | Information_Daily | -0.038401 | CoKurtosis | 0.000000 |
+| Volatility | 0.015378 | PainRatio | 0.553557 | Information_Annualized | -0.686268 | FamaBeta | 1.390202 |
+| Volatility_Annualized | 0.244115 | VaR_Loss | 0.025365 | CAPMAlpha | 0.000143 | MSquaredExcess | -0.168690 |
+| MaximumDrawdown | 0.159089 | ES_Loss | 0.035860 | JensenAlpha | 0.005979 | NetSelectivity | -0.288144 |
+| AverageDrawdown | 0.073389 | DownsideDeviation | 0.010363 | Treynor_Daily | 0.001119 | Selectivity | 0.005979 |
+| AverageDrawdownLength | 67.454545 | DrawdownDeviation | 0.010488 | Treynor_Annualized | 0.286143 | SpecificRisk | 0.243268 |
+| AverageRecoveryTime | 35.272727 | Rachev | 1.071028 | Modigliani | 0.000168 | SystematicRisk | 0.018275 |
+| Sharpe_Daily | 0.015222 | AdjustedSharpe | 0.242870 | TrackingError_Daily | 0.018258 | TotalRisk | 0.243954 |
+| Sharpe_Annualized | 0.241649 | Skewness | 0.436525 | TrackingError_Annualized | 0.289842 | UpCapture | 0.143059 |
+| Sharpe_VaR | 0.009229 | Kurtosis | 8.148953 | M2Sortino | 0.028780 | UpNumber | 0.309633 |
+| Sharpe_ES | 0.006528 | UpsidePotential | 0.453221 | Appraisal | 0.024580 | UpPercent | 0.236239 |
+| Sortino | 0.022589 | UpsideRisk | 0.011350 | CAPMBeta | 0.104075 | DownCapture | 0.110948 |
+| Calmar | 0.187193 | BernardoLedoit | 1.052456 | ActiveReturn | -0.198909 | DownNumber | 0.339623 |
+| Omega | 1.052456 | DRatio | 0.967126 | OmegaExcessReturn | -0.029551 | DownPercent | 0.761006 |
+
+</details>
+
+<details markdown="1">
+<summary>Effect of removing this share from curent_update_baltic</summary>
+
+| Measure | Full portfolio | Portfolio without share | Change |
+| --- | --- | --- | --- |
+| netSD | 0.796610 | 0.771186 | -0.025424 |
+| Rachev ratio | 1.202483 | 1.238953 | 0.036470 |
+| Sortino ratio | 0.176583 | 0.179974 | 0.003391 |
+
+The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
+
+</details>
+
+</details>
+
+<details markdown="1" class="stock-profile" id="share-ign1l">
+<summary><strong>IGN1L — Ignitis grupė</strong> | HOLD | target 8 shares | priority 11</summary>
+
+| Current shares | Target shares | Change | Weight | Last price | Individual netSD | OUT / IN | RSI(14) | MACD state | Bollinger state | Technical decision | Observation date |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | 8 | +8 | 1.27% | EUR 22.1000 | 0.3947 | 56 / 11 | 46.17 | Bearish | Inside bands | HOLD | 2026-08-28 |
+
+![IGN1L complete technical history](figures/technical_analysis/IGN1L_technical.png)
+
+<details markdown="1">
+<summary>Bollinger Bands, RSI(14) and MACD — last 252 observations</summary>
+
+**Bollinger Bands**
+
+![IGN1L Bollinger Bands](figures/stock_profiles/IGN1L_bollinger_1y.png)
+
+**RSI(14)**
+
+![IGN1L RSI(14)](figures/stock_profiles/IGN1L_rsi_1y.png)
+
+**MACD**
+
+![IGN1L MACD](figures/stock_profiles/IGN1L_macd_1y.png)
+
+</details>
+
+<details markdown="1">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+![IGN1L stochastic dominance](figures/stock_profiles/IGN1L_FSD_SSD_TSD.png)
+
+The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
+
+</details>
+
+<details markdown="1">
+<summary>All 72 PerformanceAnalytics measures</summary>
+
+| Measure | Value | Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| ArithmeticReturn | 0.000108 | Sterling | 0.083860 | Hurst | 0.358896 | BetaCoSkewness | -3.787258 |
+| GeometricReturn | 0.000087 | Burke | 0.127683 | Kappa | 0.015679 | BetaCoKurtosis | -0.082161 |
+| AnnualizedReturn_Arithmetic | 0.027126 | Martin | 0.259626 | Kelly | 2.659124 | CDD | 0.109179 |
+| AnnualizedReturn_Geometric | 0.022275 | UlcerIndex | 0.085796 | Prospect | -0.532723 | CoSkewness | -0.000001 |
+| CumulativeReturn | 0.068138 | PainIndex | 0.070307 | Information_Daily | -0.058371 | CoKurtosis | -0.000000 |
+| Volatility | 0.006362 | PainRatio | 0.316822 | Information_Annualized | -1.039489 | FamaBeta | 0.575188 |
+| Volatility_Annualized | 0.101001 | VaR_Loss | 0.009219 | CAPMAlpha | 0.000085 | MSquaredExcess | -0.154606 |
+| MaximumDrawdown | 0.165620 | ES_Loss | 0.015423 | JensenAlpha | 0.016326 | NetSelectivity | -0.109264 |
+| AverageDrawdown | 0.044485 | DownsideDeviation | 0.004437 | Treynor_Daily | 0.003361 | Selectivity | 0.016326 |
+| AverageDrawdownLength | 74.400000 | DrawdownDeviation | 0.007873 | Treynor_Annualized | 0.856261 | SpecificRisk | 0.100831 |
+| AverageRecoveryTime | 38.900000 | Rachev | 1.039140 | Modigliani | 0.000187 | SystematicRisk | 0.004568 |
+| Sharpe_Daily | 0.016919 | AdjustedSharpe | 0.263485 | TrackingError_Daily | 0.012509 | TotalRisk | 0.100934 |
+| Sharpe_Annualized | 0.268574 | Skewness | -0.033254 | TrackingError_Annualized | 0.198573 | UpCapture | 0.040918 |
+| Sharpe_VaR | 0.011676 | Kurtosis | 8.810035 | M2Sortino | 0.023483 | UpNumber | 0.383028 |
+| Sharpe_ES | 0.006979 | UpsidePotential | 0.469849 | Appraisal | 0.161912 | UpPercent | 0.162844 |
+| Sortino | 0.024262 | UpsideRisk | 0.004556 | CAPMBeta | 0.026014 | DownCapture | 0.019678 |
+| Calmar | 0.134494 | BernardoLedoit | 1.054449 | ActiveReturn | -0.206414 | DownNumber | 0.399371 |
+| Omega | 1.054449 | DRatio | 0.968757 | OmegaExcessReturn | -0.003127 | DownPercent | 0.874214 |
+
+</details>
+
+<details markdown="1">
+<summary>Effect of removing this share from curent_update_baltic</summary>
+
+| Measure | Full portfolio | Portfolio without share | Change |
+| --- | --- | --- | --- |
+| netSD | 0.796610 | 0.788136 | -0.008475 |
+| Rachev ratio | 1.202483 | 1.201534 | -0.000949 |
+| Sortino ratio | 0.176583 | 0.176875 | 0.000292 |
+
+The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
+
+</details>
+
+</details>
+
+<details markdown="1" class="stock-profile" id="share-ako1l">
+<summary><strong>AKO1L — Akola Group</strong> | HOLD | target 112 shares | priority 12</summary>
+
+| Current shares | Target shares | Change | Weight | Last price | Individual netSD | OUT / IN | RSI(14) | MACD state | Bollinger state | Technical decision | Observation date |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | 112 | +112 | 1.32% | EUR 1.7700 | 0.1228 | 25 / 11 | 45.60 | Bearish | Inside bands | HOLD | 2026-08-28 |
+
+![AKO1L complete technical history](figures/technical_analysis/AKO1L_technical.png)
+
+<details markdown="1">
+<summary>Bollinger Bands, RSI(14) and MACD — last 252 observations</summary>
+
+**Bollinger Bands**
+
+![AKO1L Bollinger Bands](figures/stock_profiles/AKO1L_bollinger_1y.png)
+
+**RSI(14)**
+
+![AKO1L RSI(14)](figures/stock_profiles/AKO1L_rsi_1y.png)
+
+**MACD**
+
+![AKO1L MACD](figures/stock_profiles/AKO1L_macd_1y.png)
+
+</details>
+
+<details markdown="1">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+![AKO1L stochastic dominance](figures/stock_profiles/AKO1L_FSD_SSD_TSD.png)
+
+The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
+
+</details>
+
+<details markdown="1">
+<summary>All 72 PerformanceAnalytics measures</summary>
+
+| Measure | Value | Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| ArithmeticReturn | 0.000215 | Sterling | 0.075109 | Hurst | 0.408968 | BetaCoSkewness | -4.591177 |
+| GeometricReturn | 0.000148 | Burke | 0.127391 | Kappa | 0.017077 | BetaCoKurtosis | -0.085834 |
+| AnnualizedReturn_Arithmetic | 0.054158 | Martin | 0.149407 | Kelly | 1.602141 | CDD | 0.203360 |
+| AnnualizedReturn_Geometric | 0.038019 | UlcerIndex | 0.254464 | Prospect | -0.538978 | CoSkewness | -0.000001 |
+| CumulativeReturn | 0.118116 | PainIndex | 0.211197 | Information_Daily | -0.043019 | CoKurtosis | -0.000000 |
+| Volatility | 0.011582 | PainRatio | 0.180016 | Information_Annualized | -0.771779 | FamaBeta | 1.047039 |
+| Volatility_Annualized | 0.183857 | VaR_Loss | 0.016716 | CAPMAlpha | 0.000164 | MSquaredExcess | -0.156572 |
+| MaximumDrawdown | 0.406184 | ES_Loss | 0.025400 | JensenAlpha | 0.024661 | NetSelectivity | -0.201428 |
+| AverageDrawdown | 0.070383 | DownsideDeviation | 0.007769 | Treynor_Daily | 0.002535 | Selectivity | 0.024661 |
+| AverageDrawdownLength | 81.888889 | DrawdownDeviation | 0.016029 | Treynor_Annualized | 0.650874 | SpecificRisk | 0.183449 |
+| AverageRecoveryTime | 48.222222 | Rachev | 1.112303 | Modigliani | 0.000205 | SystematicRisk | 0.010257 |
+| Sharpe_Daily | 0.018556 | AdjustedSharpe | 0.288067 | TrackingError_Daily | 0.015563 | TotalRisk | 0.183735 |
+| Sharpe_Annualized | 0.294564 | Skewness | 0.385739 | TrackingError_Annualized | 0.247053 | UpCapture | 0.097979 |
+| Sharpe_VaR | 0.012857 | Kurtosis | 14.339191 | M2Sortino | 0.037933 | UpNumber | 0.389908 |
+| Sharpe_ES | 0.008461 | UpsidePotential | 0.480974 | Appraisal | 0.134428 | UpPercent | 0.238532 |
+| Sortino | 0.027662 | UpsideRisk | 0.008582 | CAPMBeta | 0.058412 | DownCapture | 0.059814 |
+| Calmar | 0.093600 | BernardoLedoit | 1.061023 | ActiveReturn | -0.190670 | DownNumber | 0.415094 |
+| Omega | 1.061023 | DRatio | 0.959257 | OmegaExcessReturn | -0.006462 | DownPercent | 0.789308 |
+
+</details>
+
+<details markdown="1">
+<summary>Effect of removing this share from curent_update_baltic</summary>
+
+| Measure | Full portfolio | Portfolio without share | Change |
+| --- | --- | --- | --- |
+| netSD | 0.796610 | 0.788136 | -0.008475 |
+| Rachev ratio | 1.202483 | 1.205217 | 0.002734 |
+| Sortino ratio | 0.176583 | 0.177027 | 0.000444 |
+
+The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
+
+</details>
+
+</details>
+
+<details markdown="1" class="stock-profile" id="share-pzv1l">
+<summary><strong>PZV1L — Pieno žvaigždės</strong> | HOLD | target 251 shares | priority 13</summary>
+
+| Current shares | Target shares | Change | Weight | Last price | Individual netSD | OUT / IN | RSI(14) | MACD state | Bollinger state | Technical decision | Observation date |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | 251 | +251 | 2.90% | EUR 1.7300 | 0.1842 | 35 / 14 | 46.60 | Bearish | Inside bands | HOLD | 2026-08-28 |
+
+![PZV1L complete technical history](figures/technical_analysis/PZV1L_technical.png)
+
+<details markdown="1">
+<summary>Bollinger Bands, RSI(14) and MACD — last 252 observations</summary>
+
+**Bollinger Bands**
+
+![PZV1L Bollinger Bands](figures/stock_profiles/PZV1L_bollinger_1y.png)
+
+**RSI(14)**
+
+![PZV1L RSI(14)](figures/stock_profiles/PZV1L_rsi_1y.png)
+
+**MACD**
+
+![PZV1L MACD](figures/stock_profiles/PZV1L_macd_1y.png)
+
+</details>
+
+<details markdown="1">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+![PZV1L stochastic dominance](figures/stock_profiles/PZV1L_FSD_SSD_TSD.png)
+
+The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
+
+</details>
+
+<details markdown="1">
+<summary>All 72 PerformanceAnalytics measures</summary>
+
+| Measure | Value | Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| ArithmeticReturn | 0.000850 | Sterling | 0.666794 | Hurst | 0.406966 | BetaCoSkewness | -0.465367 |
+| GeometricReturn | 0.000752 | Burke | 0.701161 | Kappa | 0.054267 | BetaCoKurtosis | 0.055288 |
+| AnnualizedReturn_Arithmetic | 0.214083 | Martin | 2.575798 | Kelly | 4.314746 | CDD | 0.096713 |
+| AnnualizedReturn_Geometric | 0.208457 | UlcerIndex | 0.080929 | Prospect | -0.392082 | CoSkewness | -0.000000 |
+| CumulativeReturn | 0.762141 | PainIndex | 0.055102 | Information_Daily | -0.003752 | CoKurtosis | 0.000000 |
+| Volatility | 0.014032 | PainRatio | 3.783116 | Information_Annualized | -0.072514 | FamaBeta | 1.268520 |
+| Volatility_Annualized | 0.222748 | VaR_Loss | 0.016776 | CAPMAlpha | 0.000812 | MSquaredExcess | -0.052380 |
+| MaximumDrawdown | 0.212625 | ES_Loss | 0.031030 | JensenAlpha | 0.198809 | NetSelectivity | -0.081640 |
+| AverageDrawdown | 0.037616 | DownsideDeviation | 0.009069 | Treynor_Daily | 0.017818 | Selectivity | 0.198809 |
+| AverageDrawdownLength | 18.810811 | DrawdownDeviation | 0.014074 | Treynor_Annualized | 4.941486 | SpecificRisk | 0.222477 |
+| AverageRecoveryTime | 9.054054 | Rachev | 1.173382 | Modigliani | 0.000670 | SystematicRisk | 0.007408 |
+| Sharpe_Daily | 0.060544 | AdjustedSharpe | 0.494959 | TrackingError_Daily | 0.017576 | TotalRisk | 0.222600 |
+| Sharpe_Annualized | 0.961100 | Skewness | 0.556555 | TrackingError_Annualized | 0.279015 | UpCapture | 0.131042 |
+| Sharpe_VaR | 0.050639 | Kurtosis | 17.917831 | M2Sortino | 0.206232 | UpNumber | 0.362385 |
+| Sharpe_ES | 0.027378 | UpsidePotential | 0.482278 | Appraisal | 0.893618 | UpPercent | 0.233945 |
+| Sortino | 0.093674 | UpsideRisk | 0.010729 | CAPMBeta | 0.042185 | DownCapture | -0.086529 |
+| Calmar | 0.980395 | BernardoLedoit | 1.241052 | ActiveReturn | -0.020233 | DownNumber | 0.314465 |
+| Omega | 1.241052 | DRatio | 0.722207 | OmegaExcessReturn | 0.156533 | DownPercent | 0.817610 |
+
+</details>
+
+<details markdown="1">
+<summary>Effect of removing this share from curent_update_baltic</summary>
+
+| Measure | Full portfolio | Portfolio without share | Change |
+| --- | --- | --- | --- |
+| netSD | 0.796610 | 0.762712 | -0.033898 |
+| Rachev ratio | 1.202483 | 1.213216 | 0.010733 |
+| Sortino ratio | 0.176583 | 0.171000 | -0.005583 |
+
+The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
+
+</details>
+
+</details>
+
+<details markdown="1" class="stock-profile" id="share-roe1l">
+<summary><strong>ROE1L — Artea Bankas</strong> | HOLD | target 667 shares | priority 14</summary>
+
+| Current shares | Target shares | Change | Weight | Last price | Individual netSD | OUT / IN | RSI(14) | MACD state | Bollinger state | Technical decision | Observation date |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 416 | 667 | +251 | 3.98% | EUR 0.8950 | 0.1842 | 38 / 17 | 51.65 | Bearish | Inside bands | HOLD | 2026-08-28 |
+
+![ROE1L complete technical history](figures/technical_analysis/ROE1L_technical.png)
+
+<details markdown="1">
+<summary>Bollinger Bands, RSI(14) and MACD — last 252 observations</summary>
+
+**Bollinger Bands**
+
+![ROE1L Bollinger Bands](figures/stock_profiles/ROE1L_bollinger_1y.png)
+
+**RSI(14)**
+
+![ROE1L RSI(14)](figures/stock_profiles/ROE1L_rsi_1y.png)
+
+**MACD**
+
+![ROE1L MACD](figures/stock_profiles/ROE1L_macd_1y.png)
+
+</details>
+
+<details markdown="1">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+![ROE1L stochastic dominance](figures/stock_profiles/ROE1L_FSD_SSD_TSD.png)
+
+The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
+
+</details>
+
+<details markdown="1">
+<summary>All 72 PerformanceAnalytics measures</summary>
+
+| Measure | Value | Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| ArithmeticReturn | 0.000483 | Sterling | 0.382037 | Hurst | 0.412721 | BetaCoSkewness | -3.665609 |
+| GeometricReturn | 0.000425 | Burke | 0.446368 | Kappa | 0.045908 | BetaCoKurtosis | -0.115281 |
+| AnnualizedReturn_Arithmetic | 0.121675 | Martin | 1.405464 | Kelly | 4.101313 | CDD | 0.088512 |
+| AnnualizedReturn_Geometric | 0.112967 | UlcerIndex | 0.080377 | Prospect | -0.473745 | CoSkewness | -0.000000 |
+| CumulativeReturn | 0.377457 | PainIndex | 0.060631 | Information_Daily | -0.026193 | CoKurtosis | -0.000000 |
+| Volatility | 0.010850 | PainRatio | 1.863187 | Information_Annualized | -0.486139 | FamaBeta | 0.980897 |
+| Volatility_Annualized | 0.172242 | VaR_Loss | 0.011506 | CAPMAlpha | 0.000428 | MSquaredExcess | -0.092393 |
+| MaximumDrawdown | 0.195697 | ES_Loss | 0.021779 | JensenAlpha | 0.098738 | NetSelectivity | -0.111354 |
+| AverageDrawdown | 0.026332 | DownsideDeviation | 0.006441 | Treynor_Daily | 0.006828 | Selectivity | 0.098738 |
+| AverageDrawdownLength | 30.000000 | DrawdownDeviation | 0.009503 | Treynor_Annualized | 1.815646 | SpecificRisk | 0.171781 |
+| AverageRecoveryTime | 16.541667 | Rachev | 1.372678 | Modigliani | 0.000492 | SystematicRisk | 0.010925 |
+| Sharpe_Daily | 0.044500 | AdjustedSharpe | 0.560868 | TrackingError_Daily | 0.014995 | TotalRisk | 0.172128 |
+| Sharpe_Annualized | 0.706419 | Skewness | 1.895772 | TrackingError_Annualized | 0.238043 | UpCapture | 0.129274 |
+| Sharpe_VaR | 0.041965 | Kurtosis | 23.643745 | M2Sortino | 0.114315 | UpNumber | 0.428899 |
+| Sharpe_ES | 0.022170 | UpsidePotential | 0.513939 | Appraisal | 0.574790 | UpPercent | 0.208716 |
+| Sortino | 0.074968 | UpsideRisk | 0.008736 | CAPMBeta | 0.062219 | DownCapture | 0.019880 |
+| Calmar | 0.577255 | BernardoLedoit | 1.170781 | ActiveReturn | -0.115722 | DownNumber | 0.487421 |
+| Omega | 1.170781 | DRatio | 0.967636 | OmegaExcessReturn | 0.076092 | DownPercent | 0.779874 |
+
+</details>
+
+<details markdown="1">
+<summary>Effect of removing this share from curent_update_baltic</summary>
+
+| Measure | Full portfolio | Portfolio without share | Change |
+| --- | --- | --- | --- |
+| netSD | 0.796610 | 0.788136 | -0.008475 |
+| Rachev ratio | 1.202483 | 1.209444 | 0.006961 |
+| Sortino ratio | 0.176583 | 0.175665 | -0.000918 |
+
+The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
+
+</details>
+
+</details>
+
+<details markdown="1" class="stock-profile" id="share-tkm1t">
+<summary><strong>TKM1T — TKM Grupp</strong> | HOLD | target 305 shares | priority 15</summary>
+
+| Current shares | Target shares | Change | Weight | Last price | Individual netSD | OUT / IN | RSI(14) | MACD state | Bollinger state | Technical decision | Observation date |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 288 | 305 | +17 | 18.52% | EUR 9.1000 | 0.0789 | 29 / 20 | 42.63 | Bearish | Inside bands | HOLD | 2026-08-28 |
+
+![TKM1T complete technical history](figures/technical_analysis/TKM1T_technical.png)
+
+<details markdown="1">
+<summary>Bollinger Bands, RSI(14) and MACD — last 252 observations</summary>
+
+**Bollinger Bands**
+
+![TKM1T Bollinger Bands](figures/stock_profiles/TKM1T_bollinger_1y.png)
+
+**RSI(14)**
+
+![TKM1T RSI(14)](figures/stock_profiles/TKM1T_rsi_1y.png)
+
+**MACD**
+
+![TKM1T MACD](figures/stock_profiles/TKM1T_macd_1y.png)
+
+</details>
+
+<details markdown="1">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+![TKM1T stochastic dominance](figures/stock_profiles/TKM1T_FSD_SSD_TSD.png)
+
+The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
+
+</details>
+
+<details markdown="1">
+<summary>All 72 PerformanceAnalytics measures</summary>
+
+| Measure | Value | Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| ArithmeticReturn | -0.000048 | Sterling | -0.062737 | Hurst | 0.417088 | BetaCoSkewness | -1.671872 |
+| GeometricReturn | -0.000068 | Burke | -0.104562 | Kappa | -0.004604 | BetaCoKurtosis | 0.036864 |
+| AnnualizedReturn_Arithmetic | -0.012162 | Martin | -0.147483 | Kelly | -1.255266 | CDD | 0.021416 |
+| AnnualizedReturn_Geometric | -0.016943 | UlcerIndex | 0.114883 | Prospect | -0.404644 | CoSkewness | -0.000000 |
+| CumulativeReturn | -0.049845 | PainIndex | 0.105668 | Information_Daily | -0.071791 | CoKurtosis | 0.000000 |
+| Volatility | 0.006201 | PainRatio | -0.160345 | Information_Annualized | -1.254642 | FamaBeta | 0.560557 |
+| Volatility_Annualized | 0.098432 | VaR_Loss | 0.007024 | CAPMAlpha | -0.000080 | MSquaredExcess | -0.210725 |
+| MaximumDrawdown | 0.170070 | ES_Loss | 0.015606 | JensenAlpha | -0.025078 | NetSelectivity | -0.145137 |
+| AverageDrawdown | 0.021201 | DownsideDeviation | 0.005104 | Treynor_Daily | -0.001906 | Selectivity | -0.025078 |
+| AverageDrawdownLength | 74.300000 | DrawdownDeviation | 0.006232 | Treynor_Annualized | -0.476317 | SpecificRisk | 0.098168 |
+| AverageRecoveryTime | 40.000000 | Rachev | 0.888236 | Modigliani | -0.000086 | SystematicRisk | 0.006246 |
+| Sharpe_Daily | -0.007783 | AdjustedSharpe | -0.130610 | TrackingError_Daily | 0.012333 | TotalRisk | 0.098367 |
+| Sharpe_Annualized | -0.123558 | Skewness | -4.151940 | TrackingError_Annualized | 0.195779 | UpCapture | 0.023213 |
+| Sharpe_VaR | -0.006871 | Kurtosis | 47.689790 | M2Sortino | -0.017314 | UpNumber | 0.396789 |
+| Sharpe_ES | -0.003093 | UpsidePotential | 0.306695 | Appraisal | -0.255460 | UpPercent | 0.139908 |
+| Sortino | -0.009456 | UpsideRisk | 0.003514 | CAPMBeta | 0.035572 | DownCapture | 0.043554 |
+| Calmar | -0.099626 | BernardoLedoit | 0.970092 | ActiveReturn | -0.245633 | DownNumber | 0.411950 |
+| Omega | 0.970092 | DRatio | 1.003342 | OmegaExcessReturn | -0.046166 | DownPercent | 0.874214 |
+
+</details>
+
+<details markdown="1">
+<summary>Effect of removing this share from curent_update_baltic</summary>
+
+| Measure | Full portfolio | Portfolio without share | Change |
+| --- | --- | --- | --- |
+| netSD | 0.796610 | 0.754237 | -0.042373 |
+| Rachev ratio | 1.202483 | 1.253781 | 0.051298 |
+| Sortino ratio | 0.176583 | 0.193754 | 0.017171 |
+
+The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
+
+</details>
+
+</details>
+
+<details markdown="1" class="stock-profile" id="share-lhv1t">
+<summary><strong>LHV1T — LHV Group</strong> | HOLD | target 1 shares | priority 16</summary>
+
+| Current shares | Target shares | Change | Weight | Last price | Individual netSD | OUT / IN | RSI(14) | MACD state | Bollinger state | Technical decision | Observation date |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | 1 | +1 | 0.03% | EUR 3.3350 | 0.1053 | 34 / 22 | 43.80 | Bearish | Inside bands | HOLD | 2026-08-28 |
+
+![LHV1T complete technical history](figures/technical_analysis/LHV1T_technical.png)
+
+<details markdown="1">
+<summary>Bollinger Bands, RSI(14) and MACD — last 252 observations</summary>
+
+**Bollinger Bands**
+
+![LHV1T Bollinger Bands](figures/stock_profiles/LHV1T_bollinger_1y.png)
+
+**RSI(14)**
+
+![LHV1T RSI(14)](figures/stock_profiles/LHV1T_rsi_1y.png)
+
+**MACD**
+
+![LHV1T MACD](figures/stock_profiles/LHV1T_macd_1y.png)
+
+</details>
+
+<details markdown="1">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+![LHV1T stochastic dominance](figures/stock_profiles/LHV1T_FSD_SSD_TSD.png)
+
+The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
+
+</details>
+
+<details markdown="1">
+<summary>All 72 PerformanceAnalytics measures</summary>
+
+| Measure | Value | Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| ArithmeticReturn | -0.000299 | Sterling | -0.195237 | Hurst | 0.340010 | BetaCoSkewness | -3.835436 |
+| GeometricReturn | -0.000338 | Burke | -0.373845 | Kappa | -0.036120 | BetaCoKurtosis | -0.113239 |
+| AnnualizedReturn_Arithmetic | -0.075467 | Martin | -0.370437 | Kelly | -3.906329 | CDD | 0.180859 |
+| AnnualizedReturn_Geometric | -0.081572 | UlcerIndex | 0.220205 | Prospect | -0.710868 | CoSkewness | -0.000001 |
+| CumulativeReturn | -0.224773 | PainIndex | 0.206536 | Information_Daily | -0.081465 | CoKurtosis | -0.000000 |
+| Volatility | 0.008756 | PainRatio | -0.394952 | Information_Annualized | -1.378293 | FamaBeta | 0.791547 |
+| Volatility_Annualized | 0.138993 | VaR_Loss | 0.012648 | CAPMAlpha | -0.000292 | MSquaredExcess | -0.269998 |
+| MaximumDrawdown | 0.317810 | ES_Loss | 0.018626 | JensenAlpha | -0.079647 | NetSelectivity | -0.262590 |
+| AverageDrawdown | 0.069906 | DownsideDeviation | 0.005782 | Treynor_Daily | 0.040102 | Selectivity | -0.079647 |
+| AverageDrawdownLength | 149.600000 | DrawdownDeviation | 0.011592 | Treynor_Annualized | 9.689265 | SpecificRisk | 0.138893 |
+| AverageRecoveryTime | 2.600000 | Rachev | 1.213892 | Modigliani | -0.000378 | SystematicRisk | -0.001478 |
+| Sharpe_Daily | -0.034203 | AdjustedSharpe | -0.479708 | TrackingError_Daily | 0.014180 | TotalRisk | 0.138901 |
+| Sharpe_Annualized | -0.542953 | Skewness | 0.734623 | TrackingError_Annualized | 0.225105 | UpCapture | -0.077199 |
+| Sharpe_VaR | -0.023678 | Kurtosis | 7.071013 | M2Sortino | -0.083045 | UpNumber | 0.339450 |
+| Sharpe_ES | -0.016078 | UpsidePotential | 0.475464 | Appraisal | -0.573439 | UpPercent | 0.149083 |
+| Sortino | -0.051795 | UpsideRisk | 0.006574 | CAPMBeta | -0.008419 | DownCapture | -0.008574 |
+| Calmar | -0.256669 | BernardoLedoit | 0.901766 | ActiveReturn | -0.310261 | DownNumber | 0.471698 |
+| Omega | 0.901766 | DRatio | 1.524267 | OmegaExcessReturn | -0.114675 | DownPercent | 0.789308 |
+
+</details>
+
+<details markdown="1">
+<summary>Effect of removing this share from curent_update_baltic</summary>
+
+| Measure | Full portfolio | Portfolio without share | Change |
+| --- | --- | --- | --- |
+| netSD | 0.796610 | 0.796610 | 0.000000 |
+| Rachev ratio | 1.202483 | 1.202508 | 0.000025 |
+| Sortino ratio | 0.176583 | 0.176637 | 0.000054 |
+
+The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
+
+</details>
+
+</details>
+
+<details markdown="1" class="stock-profile" id="share-cpa1t">
+<summary><strong>CPA1T — Coop Pank</strong> | HOLD | target 109 shares | priority 17</summary>
+
+| Current shares | Target shares | Change | Weight | Last price | Individual netSD | OUT / IN | RSI(14) | MACD state | Bollinger state | Technical decision | Observation date |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | 109 | +109 | 1.71% | EUR 2.3300 | 0.0702 | 30 / 22 | 56.23 | Bearish | Inside bands | HOLD | 2026-08-28 |
+
+![CPA1T complete technical history](figures/technical_analysis/CPA1T_technical.png)
+
+<details markdown="1">
+<summary>Bollinger Bands, RSI(14) and MACD — last 252 observations</summary>
+
+**Bollinger Bands**
+
+![CPA1T Bollinger Bands](figures/stock_profiles/CPA1T_bollinger_1y.png)
+
+**RSI(14)**
+
+![CPA1T RSI(14)](figures/stock_profiles/CPA1T_rsi_1y.png)
+
+**MACD**
+
+![CPA1T MACD](figures/stock_profiles/CPA1T_macd_1y.png)
+
+</details>
+
+<details markdown="1">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+![CPA1T stochastic dominance](figures/stock_profiles/CPA1T_FSD_SSD_TSD.png)
+
+The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
+
+</details>
+
+<details markdown="1">
+<summary>All 72 PerformanceAnalytics measures</summary>
+
+| Measure | Value | Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| ArithmeticReturn | -0.000131 | Sterling | -0.091215 | Hurst | 0.327174 | BetaCoSkewness | -2.462721 |
+| GeometricReturn | -0.000180 | Burke | -0.164865 | Kappa | -0.014072 | BetaCoKurtosis | 0.012465 |
+| AnnualizedReturn_Arithmetic | -0.032938 | Martin | -0.144765 | Kelly | -1.330014 | CDD | 0.275115 |
+| AnnualizedReturn_Geometric | -0.044259 | UlcerIndex | 0.305731 | Prospect | -0.668262 | CoSkewness | -0.000000 |
+| CumulativeReturn | -0.126674 | PainIndex | 0.281857 | Information_Daily | -0.069339 | CoKurtosis | 0.000000 |
+| Volatility | 0.009913 | PainRatio | -0.157027 | Information_Annualized | -1.195555 | FamaBeta | 0.896196 |
+| Volatility_Annualized | 0.157369 | VaR_Loss | 0.015946 | CAPMAlpha | -0.000180 | MSquaredExcess | -0.226318 |
+| MaximumDrawdown | 0.385217 | ES_Loss | 0.021647 | JensenAlpha | -0.057154 | NetSelectivity | -0.249209 |
+| AverageDrawdown | 0.106368 | DownsideDeviation | 0.006595 | Treynor_Daily | -0.003186 | Selectivity | -0.057154 |
+| AverageDrawdownLength | 187.000000 | DrawdownDeviation | 0.014058 | Treynor_Annualized | -0.784953 | SpecificRisk | 0.156953 |
+| AverageRecoveryTime | 45.000000 | Rachev | 1.161109 | Modigliani | -0.000146 | SystematicRisk | 0.009901 |
+| Sharpe_Daily | -0.013185 | AdjustedSharpe | -0.204274 | TrackingError_Daily | 0.014382 | TotalRisk | 0.157265 |
+| Sharpe_Annualized | -0.209303 | Skewness | 0.543429 | TrackingError_Annualized | 0.228303 | UpCapture | 0.032163 |
+| Sharpe_VaR | -0.008197 | Kurtosis | 5.777861 | M2Sortino | -0.044567 | UpNumber | 0.373853 |
+| Sharpe_ES | -0.006038 | UpsidePotential | 0.498935 | Appraisal | -0.364144 | UpPercent | 0.213303 |
+| Sortino | -0.019819 | UpsideRisk | 0.007394 | CAPMBeta | 0.056384 | DownCapture | 0.079258 |
+| Calmar | -0.114894 | BernardoLedoit | 0.961795 | ActiveReturn | -0.272948 | DownNumber | 0.474843 |
+| Omega | 0.961795 | DRatio | 1.342664 | OmegaExcessReturn | -0.082018 | DownPercent | 0.764151 |
+
+</details>
+
+<details markdown="1">
+<summary>Effect of removing this share from curent_update_baltic</summary>
+
+| Measure | Full portfolio | Portfolio without share | Change |
+| --- | --- | --- | --- |
+| netSD | 0.796610 | 0.805085 | 0.008475 |
+| Rachev ratio | 1.202483 | 1.208621 | 0.006138 |
+| Sortino ratio | 0.176583 | 0.180081 | 0.003498 |
+
+The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
+
+</details>
+
+</details>
+
+<details markdown="1" class="stock-profile" id="share-eft1t">
+<summary><strong>EFT1T — EfTEN Real Estate Fund</strong> | HOLD | target 20 shares | priority 18</summary>
+
+| Current shares | Target shares | Change | Weight | Last price | Individual netSD | OUT / IN | RSI(14) | MACD state | Bollinger state | Technical decision | Observation date |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | 20 | +20 | 2.62% | EUR 19.4000 | 0.1140 | 36 / 23 | 43.20 | Bearish | Inside bands | HOLD | 2026-08-28 |
+
+![EFT1T complete technical history](figures/technical_analysis/EFT1T_technical.png)
+
+<details markdown="1">
+<summary>Bollinger Bands, RSI(14) and MACD — last 252 observations</summary>
+
+**Bollinger Bands**
+
+![EFT1T Bollinger Bands](figures/stock_profiles/EFT1T_bollinger_1y.png)
+
+**RSI(14)**
+
+![EFT1T RSI(14)](figures/stock_profiles/EFT1T_rsi_1y.png)
+
+**MACD**
+
+![EFT1T MACD](figures/stock_profiles/EFT1T_macd_1y.png)
+
+</details>
+
+<details markdown="1">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+![EFT1T stochastic dominance](figures/stock_profiles/EFT1T_FSD_SSD_TSD.png)
+
+The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
+
+</details>
+
+<details markdown="1">
+<summary>All 72 PerformanceAnalytics measures</summary>
+
+| Measure | Value | Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| ArithmeticReturn | -0.000063 | Sterling | -0.067658 | Hurst | 0.388273 | BetaCoSkewness | -1.120956 |
+| GeometricReturn | -0.000082 | Burke | -0.129214 | Kappa | -0.007768 | BetaCoKurtosis | -0.031388 |
+| AnnualizedReturn_Arithmetic | -0.015907 | Martin | -0.126159 | Kelly | -1.687710 | CDD | 0.115536 |
+| AnnualizedReturn_Geometric | -0.020430 | UlcerIndex | 0.161942 | Prospect | -0.499101 | CoSkewness | -0.000000 |
+| CumulativeReturn | -0.059894 | PainIndex | 0.153465 | Information_Daily | -0.071517 | CoKurtosis | -0.000000 |
+| Volatility | 0.006116 | PainRatio | -0.133128 | Information_Annualized | -1.247719 | FamaBeta | 0.552871 |
+| Volatility_Annualized | 0.097082 | VaR_Loss | 0.009514 | CAPMAlpha | -0.000069 | MSquaredExcess | -0.216200 |
+| MaximumDrawdown | 0.201964 | ES_Loss | 0.015448 | JensenAlpha | -0.021895 | NetSelectivity | -0.146866 |
+| AverageDrawdown | 0.045633 | DownsideDeviation | 0.004677 | Treynor_Daily | -0.012786 | Selectivity | -0.021895 |
+| AverageDrawdownLength | 147.000000 | DrawdownDeviation | 0.007374 | Treynor_Annualized | -3.189276 | SpecificRisk | 0.097011 |
+| AverageRecoveryTime | 80.800000 | Rachev | 0.875056 | Modigliani | -0.000114 | SystematicRisk | 0.001125 |
+| Sharpe_Daily | -0.010321 | AdjustedSharpe | -0.167524 | TrackingError_Daily | 0.012577 | TotalRisk | 0.097018 |
+| Sharpe_Annualized | -0.163847 | Skewness | -1.382197 | TrackingError_Annualized | 0.199660 | UpCapture | -0.005516 |
+| Sharpe_VaR | -0.006635 | Kurtosis | 16.679067 | M2Sortino | -0.021051 | UpNumber | 0.332569 |
+| Sharpe_ES | -0.004086 | UpsidePotential | 0.374987 | Appraisal | -0.225699 | UpPercent | 0.137615 |
+| Sortino | -0.013496 | UpsideRisk | 0.003935 | CAPMBeta | 0.006406 | DownCapture | 0.011748 |
+| Calmar | -0.101159 | BernardoLedoit | 0.965259 | ActiveReturn | -0.249120 | DownNumber | 0.301887 |
+| Omega | 0.965259 | DRatio | 0.996650 | OmegaExcessReturn | -0.047208 | DownPercent | 0.874214 |
+
+</details>
+
+<details markdown="1">
+<summary>Effect of removing this share from curent_update_baltic</summary>
+
+| Measure | Full portfolio | Portfolio without share | Change |
+| --- | --- | --- | --- |
+| netSD | 0.796610 | 0.762712 | -0.033898 |
+| Rachev ratio | 1.202483 | 1.206108 | 0.003624 |
+| Sortino ratio | 0.176583 | 0.178117 | 0.001534 |
+
+The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
+
+</details>
+
+</details>
+
+<details markdown="1" class="stock-profile" id="share-tel1l">
+<summary><strong>TEL1L — Telia Lietuva</strong> | HOLD | target 21 shares | priority 19</summary>
+
+| Current shares | Target shares | Change | Weight | Last price | Individual netSD | OUT / IN | RSI(14) | MACD state | Bollinger state | Technical decision | Observation date |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | 21 | +21 | 0.32% | EUR 2.2200 | 0.1667 | 43 / 24 | 45.64 | Bearish | Inside bands | HOLD | 2026-08-28 |
+
+![TEL1L complete technical history](figures/technical_analysis/TEL1L_technical.png)
+
+<details markdown="1">
+<summary>Bollinger Bands, RSI(14) and MACD — last 252 observations</summary>
+
+**Bollinger Bands**
+
+![TEL1L Bollinger Bands](figures/stock_profiles/TEL1L_bollinger_1y.png)
+
+**RSI(14)**
+
+![TEL1L RSI(14)](figures/stock_profiles/TEL1L_rsi_1y.png)
+
+**MACD**
+
+![TEL1L MACD](figures/stock_profiles/TEL1L_macd_1y.png)
+
+</details>
+
+<details markdown="1">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+![TEL1L stochastic dominance](figures/stock_profiles/TEL1L_FSD_SSD_TSD.png)
+
+The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
+
+</details>
+
+<details markdown="1">
+<summary>All 72 PerformanceAnalytics measures</summary>
+
+| Measure | Value | Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| ArithmeticReturn | 0.000149 | Sterling | 0.100144 | Hurst | 0.379338 | BetaCoSkewness | -2.565127 |
+| GeometricReturn | 0.000127 | Burke | 0.204657 | Kappa | 0.019352 | BetaCoKurtosis | -0.028307 |
+| AnnualizedReturn_Arithmetic | 0.037591 | Martin | 0.221097 | Kelly | 3.426255 | CDD | 0.049102 |
+| AnnualizedReturn_Geometric | 0.032623 | UlcerIndex | 0.147551 | Prospect | -0.473444 | CoSkewness | -0.000000 |
+| CumulativeReturn | 0.100817 | PainIndex | 0.125364 | Information_Daily | -0.054410 | CoKurtosis | -0.000000 |
+| Volatility | 0.006598 | PainRatio | 0.260227 | Information_Annualized | -0.973675 | FamaBeta | 0.596511 |
+| Volatility_Annualized | 0.104745 | VaR_Loss | 0.009356 | CAPMAlpha | 0.000131 | MSquaredExcess | -0.141614 |
+| MaximumDrawdown | 0.225761 | ES_Loss | 0.015321 | JensenAlpha | 0.027961 | NetSelectivity | -0.103792 |
+| AverageDrawdown | 0.036650 | DownsideDeviation | 0.004604 | Treynor_Daily | 0.006249 | Selectivity | 0.027961 |
+| AverageDrawdownLength | 66.545455 | DrawdownDeviation | 0.008616 | Treynor_Annualized | 1.600315 | SpecificRisk | 0.104615 |
+| AverageRecoveryTime | 34.727273 | Rachev | 1.075976 | Modigliani | 0.000250 | SystematicRisk | 0.003580 |
+| Sharpe_Daily | 0.022608 | AdjustedSharpe | 0.333757 | TrackingError_Daily | 0.012685 | TotalRisk | 0.104676 |
+| Sharpe_Annualized | 0.358884 | Skewness | -0.329646 | TrackingError_Annualized | 0.201367 | UpCapture | 0.051596 |
+| Sharpe_VaR | 0.015944 | Kurtosis | 12.372385 | M2Sortino | 0.034150 | UpNumber | 0.302752 |
+| Sharpe_ES | 0.009737 | UpsidePotential | 0.437074 | Appraisal | 0.267278 | UpPercent | 0.178899 |
+| Sortino | 0.032399 | UpsideRisk | 0.004723 | CAPMBeta | 0.020385 | DownCapture | 0.020832 |
+| Calmar | 0.144503 | BernardoLedoit | 1.080062 | ActiveReturn | -0.196066 | DownNumber | 0.301887 |
+| Omega | 1.080062 | DRatio | 0.934140 | OmegaExcessReturn | 0.006262 | DownPercent | 0.861635 |
+
+</details>
+
+<details markdown="1">
+<summary>Effect of removing this share from curent_update_baltic</summary>
+
+| Measure | Full portfolio | Portfolio without share | Change |
+| --- | --- | --- | --- |
+| netSD | 0.796610 | 0.796610 | 0.000000 |
+| Rachev ratio | 1.202483 | 1.202558 | 0.000075 |
+| Sortino ratio | 0.176583 | 0.176610 | 0.000027 |
+
+The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
+
+</details>
+
+</details>
+
+<details markdown="1" class="stock-profile" id="share-mode">
+<summary><strong>MODE — Modera</strong> | HOLD | target 51 shares | priority 20</summary>
+
+| Current shares | Target shares | Change | Weight | Last price | Individual netSD | OUT / IN | RSI(14) | MACD state | Bollinger state | Technical decision | Observation date |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | 51 | +51 | 2.03% | EUR 5.9000 | 0.0263 | 27 / 24 | 48.74 | Bearish | Inside bands | HOLD | 2026-08-28 |
+
+![MODE complete technical history](figures/technical_analysis/MODE_technical.png)
+
+<details markdown="1">
+<summary>Bollinger Bands, RSI(14) and MACD — last 252 observations</summary>
+
+**Bollinger Bands**
+
+![MODE Bollinger Bands](figures/stock_profiles/MODE_bollinger_1y.png)
+
+**RSI(14)**
+
+![MODE RSI(14)](figures/stock_profiles/MODE_rsi_1y.png)
+
+**MACD**
+
+![MODE MACD](figures/stock_profiles/MODE_macd_1y.png)
+
+</details>
+
+<details markdown="1">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+![MODE stochastic dominance](figures/stock_profiles/MODE_FSD_SSD_TSD.png)
+
+The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
+
+</details>
+
+<details markdown="1">
+<summary>All 72 PerformanceAnalytics measures</summary>
+
+| Measure | Value | Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| ArithmeticReturn | 0.000581 | Sterling | 0.195563 | Hurst | 0.438359 | BetaCoSkewness | -2.100357 |
+| GeometricReturn | 0.000335 | Burke | 0.227710 | Kappa | 0.030570 | BetaCoKurtosis | 0.041600 |
+| AnnualizedReturn_Arithmetic | 0.146305 | Martin | 0.598998 | Kelly | 1.115118 | CDD | 0.225221 |
+| AnnualizedReturn_Geometric | 0.088023 | UlcerIndex | 0.146950 | Prospect | -0.477417 | CoSkewness | -0.000000 |
+| CumulativeReturn | 0.287131 | PainIndex | 0.119170 | Information_Daily | -0.018531 | CoKurtosis | 0.000000 |
+| Volatility | 0.022818 | PainRatio | 0.738629 | Information_Annualized | -0.340133 | FamaBeta | 2.062778 |
+| Volatility_Annualized | 0.362217 | VaR_Loss | 0.026899 | CAPMAlpha | 0.000709 | MSquaredExcess | -0.151395 |
+| MaximumDrawdown | 0.350099 | ES_Loss | 0.042348 | JensenAlpha | 0.121395 | NetSelectivity | -0.383713 |
+| AverageDrawdown | 0.078297 | DownsideDeviation | 0.012197 | Treynor_Daily | -0.002294 | Selectivity | 0.121395 |
+| AverageDrawdownLength | 57.538462 | DrawdownDeviation | 0.017111 | Treynor_Annualized | -0.603190 | SpecificRisk | 0.361070 |
+| AverageRecoveryTime | 20.076923 | Rachev | 1.327719 | Modigliani | 0.000281 | SystematicRisk | -0.025625 |
+| Sharpe_Daily | 0.025444 | AdjustedSharpe | 0.381751 | TrackingError_Daily | 0.026052 | TotalRisk | 0.361978 |
+| Sharpe_Annualized | 0.403915 | Skewness | 4.318793 | TrackingError_Annualized | 0.413563 | UpCapture | -0.136502 |
+| Sharpe_VaR | 0.021584 | Kurtosis | 53.841391 | M2Sortino | 0.084529 | UpNumber | 0.254587 |
+| Sharpe_ES | 0.013710 | UpsidePotential | 0.467614 | Appraisal | 0.336208 | UpPercent | 0.190367 |
+| Sortino | 0.047600 | UpsideRisk | 0.019275 | CAPMBeta | -0.145928 | DownCapture | -0.344034 |
+| Calmar | 0.251422 | BernardoLedoit | 1.113330 | ActiveReturn | -0.140667 | DownNumber | 0.342767 |
+| Omega | 1.113330 | DRatio | 1.084627 | OmegaExcessReturn | 0.018190 | DownPercent | 0.764151 |
+
+</details>
+
+<details markdown="1">
+<summary>Effect of removing this share from curent_update_baltic</summary>
+
+| Measure | Full portfolio | Portfolio without share | Change |
+| --- | --- | --- | --- |
+| netSD | 0.796610 | 0.779661 | -0.016949 |
+| Rachev ratio | 1.202483 | 1.184296 | -0.018188 |
+| Sortino ratio | 0.176583 | 0.173776 | -0.002807 |
+
+The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
+
+</details>
+
+</details>
+
+<details markdown="1" class="stock-profile" id="share-tal1t">
+<summary><strong>TAL1T — Tallink Grupp</strong> | HOLD | target 919 shares | priority 21</summary>
+
+| Current shares | Target shares | Change | Weight | Last price | Individual netSD | OUT / IN | RSI(14) | MACD state | Bollinger state | Technical decision | Observation date |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 700 | 919 | +219 | 3.80% | EUR 0.6200 | 0.0175 | 26 / 24 | 51.82 | Bullish | Inside bands | HOLD | 2026-08-28 |
+
+![TAL1T complete technical history](figures/technical_analysis/TAL1T_technical.png)
+
+<details markdown="1">
+<summary>Bollinger Bands, RSI(14) and MACD — last 252 observations</summary>
+
+**Bollinger Bands**
+
+![TAL1T Bollinger Bands](figures/stock_profiles/TAL1T_bollinger_1y.png)
+
+**RSI(14)**
+
+![TAL1T RSI(14)](figures/stock_profiles/TAL1T_rsi_1y.png)
+
+**MACD**
+
+![TAL1T MACD](figures/stock_profiles/TAL1T_macd_1y.png)
+
+</details>
+
+<details markdown="1">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+![TAL1T stochastic dominance](figures/stock_profiles/TAL1T_FSD_SSD_TSD.png)
+
+The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
+
+</details>
+
+<details markdown="1">
+<summary>All 72 PerformanceAnalytics measures</summary>
+
+| Measure | Value | Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| ArithmeticReturn | 0.000186 | Sterling | 0.130860 | Hurst | 0.365714 | BetaCoSkewness | -3.680137 |
+| GeometricReturn | 0.000140 | Burke | 0.147077 | Kappa | 0.017653 | BetaCoKurtosis | -0.065405 |
+| AnnualizedReturn_Arithmetic | 0.046837 | Martin | 0.410319 | Kelly | 2.004552 | CDD | 0.071457 |
+| AnnualizedReturn_Geometric | 0.035797 | UlcerIndex | 0.087243 | Prospect | -0.511984 | CoSkewness | -0.000001 |
+| CumulativeReturn | 0.110972 | PainIndex | 0.074668 | Information_Daily | -0.047277 | CoKurtosis | -0.000000 |
+| Volatility | 0.009629 | PainRatio | 0.479418 | Information_Annualized | -0.847278 | FamaBeta | 0.870506 |
+| Volatility_Annualized | 0.152858 | VaR_Loss | 0.013769 | CAPMAlpha | 0.000152 | MSquaredExcess | -0.152656 |
+| MaximumDrawdown | 0.173554 | ES_Loss | 0.023856 | JensenAlpha | 0.027007 | NetSelectivity | -0.163278 |
+| AverageDrawdown | 0.029449 | DownsideDeviation | 0.006623 | Treynor_Daily | 0.003631 | Selectivity | 0.027007 |
+| AverageDrawdownLength | 41.166667 | DrawdownDeviation | 0.008608 | Treynor_Annualized | 0.931339 | SpecificRisk | 0.152608 |
+| AverageRecoveryTime | 21.277778 | Rachev | 1.053652 | Modigliani | 0.000214 | SystematicRisk | 0.006749 |
+| Sharpe_Daily | 0.019302 | AdjustedSharpe | 0.299051 | TrackingError_Daily | 0.014341 | TotalRisk | 0.152757 |
+| Sharpe_Annualized | 0.306412 | Skewness | 0.092191 | TrackingError_Annualized | 0.227661 | UpCapture | 0.060333 |
+| Sharpe_VaR | 0.013499 | Kurtosis | 10.344557 | M2Sortino | 0.036221 | UpNumber | 0.383028 |
+| Sharpe_ES | 0.007791 | UpsidePotential | 0.460100 | Appraisal | 0.176972 | UpPercent | 0.176606 |
+| Sortino | 0.028063 | UpsideRisk | 0.006983 | CAPMBeta | 0.038436 | DownCapture | 0.020975 |
+| Calmar | 0.206261 | BernardoLedoit | 1.064954 | ActiveReturn | -0.192892 | DownNumber | 0.418239 |
+| Omega | 1.064954 | DRatio | 1.020660 | OmegaExcessReturn | -0.002123 | DownPercent | 0.820755 |
+
+</details>
+
+<details markdown="1">
+<summary>Effect of removing this share from curent_update_baltic</summary>
+
+| Measure | Full portfolio | Portfolio without share | Change |
+| --- | --- | --- | --- |
+| netSD | 0.796610 | 0.779661 | -0.016949 |
+| Rachev ratio | 1.202483 | 1.209335 | 0.006852 |
+| Sortino ratio | 0.176583 | 0.178434 | 0.001851 |
+
+The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
+
+</details>
+
+</details>
+
+<details markdown="1" class="stock-profile" id="share-tve1t">
+<summary><strong>TVE1T — Tallinna Vesi</strong> | HOLD | target 12 shares | priority 22</summary>
+
+| Current shares | Target shares | Change | Weight | Last price | Individual netSD | OUT / IN | RSI(14) | MACD state | Bollinger state | Technical decision | Observation date |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | 12 | +12 | 0.92% | EUR 10.8500 | 0.0175 | 28 / 26 | 34.52 | Bearish | Inside bands | HOLD | 2026-08-28 |
+
+![TVE1T complete technical history](figures/technical_analysis/TVE1T_technical.png)
+
+<details markdown="1">
+<summary>Bollinger Bands, RSI(14) and MACD — last 252 observations</summary>
+
+**Bollinger Bands**
+
+![TVE1T Bollinger Bands](figures/stock_profiles/TVE1T_bollinger_1y.png)
+
+**RSI(14)**
+
+![TVE1T RSI(14)](figures/stock_profiles/TVE1T_rsi_1y.png)
+
+**MACD**
+
+![TVE1T MACD](figures/stock_profiles/TVE1T_macd_1y.png)
+
+</details>
+
+<details markdown="1">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+![TVE1T stochastic dominance](figures/stock_profiles/TVE1T_FSD_SSD_TSD.png)
+
+The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
+
+</details>
+
+<details markdown="1">
+<summary>All 72 PerformanceAnalytics measures</summary>
+
+| Measure | Value | Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| ArithmeticReturn | -0.000310 | Sterling | -0.201495 | Hurst | 0.366349 | BetaCoSkewness | 0.061649 |
+| GeometricReturn | -0.000332 | Burke | -0.412768 | Kappa | -0.035953 | BetaCoKurtosis | 0.024684 |
+| AnnualizedReturn_Arithmetic | -0.078108 | Martin | -0.317624 | Kelly | -7.223233 | CDD | 0.195220 |
+| AnnualizedReturn_Geometric | -0.080163 | UlcerIndex | 0.252382 | Prospect | -0.569150 | CoSkewness | 0.000000 |
+| CumulativeReturn | -0.221208 | PainIndex | 0.235070 | Information_Daily | -0.091195 | CoKurtosis | 0.000000 |
+| Volatility | 0.006551 | PainRatio | -0.341015 | Information_Annualized | -1.544032 | FamaBeta | 0.592195 |
+| Volatility_Annualized | 0.103987 | VaR_Loss | 0.009632 | CAPMAlpha | -0.000333 | MSquaredExcess | -0.296295 |
+| MaximumDrawdown | 0.297838 | ES_Loss | 0.017445 | JensenAlpha | -0.086229 | NetSelectivity | -0.215591 |
+| AverageDrawdown | 0.077168 | DownsideDeviation | 0.005206 | Treynor_Daily | -0.012498 | Selectivity | -0.086229 |
+| AverageDrawdownLength | 187.000000 | DrawdownDeviation | 0.010849 | Treynor_Annualized | -3.022038 | SpecificRisk | 0.103814 |
+| AverageRecoveryTime | 102.500000 | Rachev | 0.767831 | Modigliani | -0.000523 | SystematicRisk | 0.004658 |
+| Sharpe_Daily | -0.047316 | AdjustedSharpe | -0.702177 | TrackingError_Daily | 0.012601 | TotalRisk | 0.103919 |
+| Sharpe_Annualized | -0.751125 | Skewness | -1.446544 | TrackingError_Annualized | 0.200029 | UpCapture | -0.033885 |
+| Sharpe_VaR | -0.032181 | Kurtosis | 13.475446 | M2Sortino | -0.082400 | UpNumber | 0.284404 |
+| Sharpe_ES | -0.017767 | UpsidePotential | 0.348158 | Appraisal | -0.830607 | UpPercent | 0.121560 |
+| Sortino | -0.059534 | UpsideRisk | 0.003981 | CAPMBeta | 0.026526 | DownCapture | 0.049120 |
+| Calmar | -0.269148 | BernardoLedoit | 0.853972 | ActiveReturn | -0.308852 | DownNumber | 0.320755 |
+| Omega | 0.853972 | DRatio | 1.203830 | OmegaExcessReturn | -0.109970 | DownPercent | 0.823899 |
+
+</details>
+
+<details markdown="1">
+<summary>Effect of removing this share from curent_update_baltic</summary>
+
+| Measure | Full portfolio | Portfolio without share | Change |
+| --- | --- | --- | --- |
+| netSD | 0.796610 | 0.779661 | -0.016949 |
+| Rachev ratio | 1.202483 | 1.203045 | 0.000562 |
+| Sortino ratio | 0.176583 | 0.177776 | 0.001192 |
+
+The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
+
+</details>
+
+</details>
+
+<details markdown="1" class="stock-profile" id="share-tsm1t">
+<summary><strong>TSM1T — Tallinna Sadam</strong> | HOLD | target 330 shares | priority 23</summary>
+
+| Current shares | Target shares | Change | Weight | Last price | Individual netSD | OUT / IN | RSI(14) | MACD state | Bollinger state | Technical decision | Observation date |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 330 | 330 | +0 | 2.69% | EUR 1.2220 | -0.0175 | 28 / 30 | 30.19 | Bearish | Inside bands | HOLD | 2026-08-28 |
+
+![TSM1T complete technical history](figures/technical_analysis/TSM1T_technical.png)
+
+<details markdown="1">
+<summary>Bollinger Bands, RSI(14) and MACD — last 252 observations</summary>
+
+**Bollinger Bands**
+
+![TSM1T Bollinger Bands](figures/stock_profiles/TSM1T_bollinger_1y.png)
+
+**RSI(14)**
+
+![TSM1T RSI(14)](figures/stock_profiles/TSM1T_rsi_1y.png)
+
+**MACD**
+
+![TSM1T MACD](figures/stock_profiles/TSM1T_macd_1y.png)
+
+</details>
+
+<details markdown="1">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+![TSM1T stochastic dominance](figures/stock_profiles/TSM1T_FSD_SSD_TSD.png)
+
+The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
+
+</details>
+
+<details markdown="1">
+<summary>All 72 PerformanceAnalytics measures</summary>
+
+| Measure | Value | Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| ArithmeticReturn | -0.000133 | Sterling | -0.104646 | Hurst | 0.376007 | BetaCoSkewness | -1.257074 |
+| GeometricReturn | -0.000160 | Burke | -0.187476 | Kappa | -0.013175 | BetaCoKurtosis | -0.045930 |
+| AnnualizedReturn_Arithmetic | -0.033543 | Martin | -0.193218 | Kelly | -2.471135 | CDD | 0.204455 |
+| AnnualizedReturn_Geometric | -0.039580 | UlcerIndex | 0.204845 | Prospect | -0.529670 | CoSkewness | -0.000000 |
+| CumulativeReturn | -0.113818 | PainIndex | 0.179389 | Information_Daily | -0.072945 | CoKurtosis | -0.000000 |
+| Volatility | 0.007339 | PainRatio | -0.220636 | Information_Annualized | -1.260667 | FamaBeta | 0.663495 |
+| Volatility_Annualized | 0.116508 | VaR_Loss | 0.009580 | CAPMAlpha | -0.000121 | MSquaredExcess | -0.234675 |
+| MaximumDrawdown | 0.278227 | ES_Loss | 0.018145 | JensenAlpha | -0.036334 | NetSelectivity | -0.191314 |
+| AverageDrawdown | 0.065627 | DownsideDeviation | 0.005637 | Treynor_Daily | 0.011290 | Selectivity | -0.036334 |
+| AverageDrawdownLength | 106.285714 | DrawdownDeviation | 0.011779 | Treynor_Annualized | 2.788504 | SpecificRisk | 0.116404 |
+| AverageRecoveryTime | 35.857143 | Rachev | 0.948434 | Modigliani | -0.000201 | SystematicRisk | -0.002492 |
+| Sharpe_Daily | -0.018136 | AdjustedSharpe | -0.294847 | TrackingError_Daily | 0.013405 | TotalRisk | 0.116430 |
+| Sharpe_Annualized | -0.287906 | Skewness | -1.672096 | TrackingError_Annualized | 0.212799 | UpCapture | -0.031784 |
+| Sharpe_VaR | -0.013894 | Kurtosis | 19.250328 | M2Sortino | -0.040305 | UpNumber | 0.399083 |
+| Sharpe_ES | -0.007336 | UpsidePotential | 0.381236 | Appraisal | -0.312136 | UpPercent | 0.178899 |
+| Sortino | -0.023611 | UpsideRisk | 0.004694 | CAPMBeta | -0.014194 | DownCapture | -0.000623 |
+| Calmar | -0.142257 | BernardoLedoit | 0.941679 | ActiveReturn | -0.268269 | DownNumber | 0.421384 |
+| Omega | 0.941679 | DRatio | 1.094005 | OmegaExcessReturn | -0.071857 | DownPercent | 0.839623 |
+
+</details>
+
+<details markdown="1">
+<summary>Effect of removing this share from curent_update_baltic</summary>
+
+| Measure | Full portfolio | Portfolio without share | Change |
+| --- | --- | --- | --- |
+| netSD | 0.796610 | 0.788136 | -0.008475 |
+| Rachev ratio | 1.202483 | 1.209466 | 0.006983 |
+| Sortino ratio | 0.176583 | 0.180371 | 0.003788 |
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -4315,4 +2728,15 @@ The objective is discrete and non-convex. ISRES evaluates candidate portfolios n
 The official Nasdaq Baltic list contained 67 shares. 56 shares had Yahoo closing-price history covering the complete study window and entered the common-date return matrix. Shares with incomplete or unavailable histories are excluded from both the optimisation and Table 2. No price interpolation or zero-return replacement was used.
 
 Sources: official Nasdaq Baltic share-list XLSX and dividend/event XLSX downloaded on 2026-10-13; Yahoo Finance unadjusted closing prices downloaded through quantmod.
-</main></body></html>
+</main>
+<script>
+document.querySelectorAll('details.stock-profile').forEach(function(profile) {
+  profile.addEventListener('toggle', function() {
+    if (!profile.open) return;
+    document.querySelectorAll('details.stock-profile[open]').forEach(function(other) {
+      if (other !== profile) other.open = false;
+    });
+  });
+});
+</script>
+</body></html>
