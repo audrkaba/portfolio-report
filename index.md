@@ -44,7 +44,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-15 17:10 (Europe/Vilnius); market data through 2026-10-14
+# Baltic investment plan - updated 2026-10-15 17:21 (Europe/Vilnius); market data through 2026-10-14
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -262,15 +262,15 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 **Removing this share from curent_update_baltic**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.699115</td><td>-0.123894</td></tr><tr><td>OUT</td><td>93</td><td>79</td><td>-14</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.131153</td><td>-0.013124</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.134036</td><td>-0.030607</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.703390</td><td>-0.110169</td></tr><tr><td>OUT</td><td>96</td><td>83</td><td>-13</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.141760</td><td>-0.006013</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.132985</td><td>-0.028508</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
 **Increasing this existing position in the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>VLP1L shares</td><td>42</td><td>69</td><td>+27</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8462.880051</td><td>418.500000</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.539823</td><td>0.088496</td></tr><tr><td>OUT</td><td>59</td><td>66</td><td>+7</td></tr><tr><td>IN</td><td>8</td><td>5</td><td>-3</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.074459</td><td>0.014068</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.112474</td><td>0.016028</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>VLP1L shares</td><td>42</td><td>65</td><td>+23</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>8313.351983</td><td>356.500000</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.550847</td><td>0.127119</td></tr><tr><td>OUT</td><td>62</td><td>69</td><td>+7</td></tr><tr><td>IN</td><td>12</td><td>4</td><td>-8</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.081760</td><td>0.011637</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.106162</td><td>0.013810</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 42 VLP1L shares. The scenario adds 27 shares from Table 3A, resulting in 69 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 42 VLP1L shares. The scenario adds 23 shares from Table 3A, resulting in 65 shares; every other holding remains unchanged.
 
 </details>
 
@@ -357,15 +357,15 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 **Removing this share from curent_update_baltic**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.769912</td><td>-0.053097</td></tr><tr><td>OUT</td><td>93</td><td>87</td><td>-6</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.155081</td><td>0.010804</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.155578</td><td>-0.009066</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.771186</td><td>-0.042373</td></tr><tr><td>OUT</td><td>96</td><td>91</td><td>-5</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.151322</td><td>0.003548</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.152410</td><td>-0.009082</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
 **Adding this new share to the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>KNE1L shares</td><td>0</td><td>1438</td><td>+1438</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8751.876070</td><td>707.496020</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.566372</td><td>0.115044</td></tr><tr><td>OUT</td><td>59</td><td>68</td><td>+9</td></tr><tr><td>IN</td><td>8</td><td>4</td><td>-4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.071459</td><td>0.011069</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.112131</td><td>0.015685</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>KNE1L shares</td><td>0</td><td>1581</td><td>+1581</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>8720.475000</td><td>763.623016</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.593220</td><td>0.169492</td></tr><tr><td>OUT</td><td>62</td><td>72</td><td>+10</td></tr><tr><td>IN</td><td>12</td><td>2</td><td>-10</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.083441</td><td>0.013318</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.108690</td><td>0.016338</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 0 KNE1L shares. The scenario adds 1438 shares from Table 3A, resulting in 1438 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 KNE1L shares. The scenario adds 1581 shares from Table 3A, resulting in 1581 shares; every other holding remains unchanged.
 
 </details>
 
@@ -452,15 +452,15 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 **Removing this share from curent_update_baltic**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.823009</td><td>0.000000</td></tr><tr><td>OUT</td><td>93</td><td>93</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.144134</td><td>-0.000143</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.164952</td><td>0.000309</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.813559</td><td>0.000000</td></tr><tr><td>OUT</td><td>96</td><td>96</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.147864</td><td>0.000091</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.161557</td><td>0.000065</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
 **Adding this new share to the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>VIRSI shares</td><td>0</td><td>44</td><td>+44</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8237.100051</td><td>192.720000</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.424779</td><td>-0.026549</td></tr><tr><td>OUT</td><td>59</td><td>60</td><td>+1</td></tr><tr><td>IN</td><td>8</td><td>12</td><td>+4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.059883</td><td>-0.000507</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.096263</td><td>-0.000182</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>VIRSI shares</td><td>0</td><td>11</td><td>+11</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>8005.471983</td><td>48.620000</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.423729</td><td>0.000000</td></tr><tr><td>OUT</td><td>62</td><td>62</td><td>+0</td></tr><tr><td>IN</td><td>12</td><td>12</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.069871</td><td>-0.000252</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.092326</td><td>-0.000026</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 0 VIRSI shares. The scenario adds 44 shares from Table 3A, resulting in 44 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 VIRSI shares. The scenario adds 11 shares from Table 3A, resulting in 11 shares; every other holding remains unchanged.
 
 </details>
 
@@ -547,15 +547,15 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 **Removing this share from curent_update_baltic**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.734513</td><td>-0.088496</td></tr><tr><td>OUT</td><td>93</td><td>83</td><td>-10</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.127628</td><td>-0.016649</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.150276</td><td>-0.014368</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.779661</td><td>-0.033898</td></tr><tr><td>OUT</td><td>96</td><td>92</td><td>-4</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.128075</td><td>-0.019698</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.150343</td><td>-0.011150</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
 **Increasing this existing position in the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>MRK1T shares</td><td>20</td><td>42</td><td>+22</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8636.180043</td><td>591.799992</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.548673</td><td>0.097345</td></tr><tr><td>OUT</td><td>59</td><td>66</td><td>+7</td></tr><tr><td>IN</td><td>8</td><td>4</td><td>-4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.082185</td><td>0.021795</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.107872</td><td>0.011426</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>MRK1T shares</td><td>20</td><td>33</td><td>+13</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>8308.501973</td><td>351.649990</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.559322</td><td>0.135593</td></tr><tr><td>OUT</td><td>62</td><td>70</td><td>+8</td></tr><tr><td>IN</td><td>12</td><td>4</td><td>-8</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.083709</td><td>0.013586</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.099495</td><td>0.007143</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 20 MRK1T shares. The scenario adds 22 shares from Table 3A, resulting in 42 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 20 MRK1T shares. The scenario adds 13 shares from Table 3A, resulting in 33 shares; every other holding remains unchanged.
 
 </details>
 
@@ -642,15 +642,15 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 **Removing this share from curent_update_baltic**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.725664</td><td>-0.097345</td></tr><tr><td>OUT</td><td>93</td><td>82</td><td>-11</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.084471</td><td>-0.059806</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.147143</td><td>-0.017500</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.694915</td><td>-0.118644</td></tr><tr><td>OUT</td><td>96</td><td>82</td><td>-14</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.065071</td><td>-0.082703</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.140183</td><td>-0.021309</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
 **Adding this new share to the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>MOLNR shares</td><td>0</td><td>27</td><td>+27</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8554.680041</td><td>510.299990</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.601770</td><td>0.150442</td></tr><tr><td>OUT</td><td>59</td><td>72</td><td>+13</td></tr><tr><td>IN</td><td>8</td><td>4</td><td>-4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.177707</td><td>0.117316</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.121332</td><td>0.024886</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>MOLNR shares</td><td>0</td><td>30</td><td>+30</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>8574.851995</td><td>618.000011</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.610169</td><td>0.186441</td></tr><tr><td>OUT</td><td>62</td><td>75</td><td>+13</td></tr><tr><td>IN</td><td>12</td><td>3</td><td>-9</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.217324</td><td>0.147201</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.122531</td><td>0.030179</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 0 MOLNR shares. The scenario adds 27 shares from Table 3A, resulting in 27 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 MOLNR shares. The scenario adds 30 shares from Table 3A, resulting in 30 shares; every other holding remains unchanged.
 
 </details>
 
@@ -737,15 +737,15 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 **Removing this share from curent_update_baltic**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.823009</td><td>0.000000</td></tr><tr><td>OUT</td><td>93</td><td>93</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.143883</td><td>-0.000394</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.164592</td><td>-0.000052</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.813559</td><td>0.000000</td></tr><tr><td>OUT</td><td>96</td><td>96</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.146862</td><td>-0.000911</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.161498</td><td>0.000006</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
 **Adding this new share to the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>IGN1L shares</td><td>0</td><td>6</td><td>+6</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8176.980053</td><td>132.600002</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.424779</td><td>-0.026549</td></tr><tr><td>OUT</td><td>59</td><td>60</td><td>+1</td></tr><tr><td>IN</td><td>8</td><td>12</td><td>+4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.061430</td><td>0.001039</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.097014</td><td>0.000568</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>IGN1L shares</td><td>0</td><td>14</td><td>+14</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>8262.051973</td><td>305.199989</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.440678</td><td>0.016949</td></tr><tr><td>OUT</td><td>62</td><td>62</td><td>+0</td></tr><tr><td>IN</td><td>12</td><td>10</td><td>-2</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.071911</td><td>0.001788</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.093427</td><td>0.001075</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 0 IGN1L shares. The scenario adds 6 shares from Table 3A, resulting in 6 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 IGN1L shares. The scenario adds 14 shares from Table 3A, resulting in 14 shares; every other holding remains unchanged.
 
 </details>
 
@@ -832,15 +832,15 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 **Removing this share from curent_update_baltic**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.823009</td><td>0.000000</td></tr><tr><td>OUT</td><td>93</td><td>93</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.143852</td><td>-0.000425</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.164145</td><td>-0.000498</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.813559</td><td>0.000000</td></tr><tr><td>OUT</td><td>96</td><td>96</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.154683</td><td>0.006910</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.160163</td><td>-0.001329</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
 **Adding this new share to the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>AKO1L shares</td><td>0</td><td>111</td><td>+111</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8240.850049</td><td>196.469998</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.495575</td><td>0.044248</td></tr><tr><td>OUT</td><td>59</td><td>62</td><td>+3</td></tr><tr><td>IN</td><td>8</td><td>6</td><td>-2</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.057397</td><td>-0.002993</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.098120</td><td>0.001675</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>AKO1L shares</td><td>0</td><td>348</td><td>+348</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>8595.431997</td><td>638.580013</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.508475</td><td>0.084746</td></tr><tr><td>OUT</td><td>62</td><td>66</td><td>+4</td></tr><tr><td>IN</td><td>12</td><td>6</td><td>-6</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.052024</td><td>-0.018099</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.097704</td><td>0.005352</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 0 AKO1L shares. The scenario adds 111 shares from Table 3A, resulting in 111 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 AKO1L shares. The scenario adds 348 shares from Table 3A, resulting in 348 shares; every other holding remains unchanged.
 
 </details>
 
@@ -927,15 +927,15 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 **Removing this share from curent_update_baltic**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.823009</td><td>0.000000</td></tr><tr><td>OUT</td><td>93</td><td>93</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.146552</td><td>0.002275</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.164924</td><td>0.000280</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.813559</td><td>0.000000</td></tr><tr><td>OUT</td><td>96</td><td>96</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.147918</td><td>0.000144</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.161502</td><td>0.000010</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
 **Adding this new share to the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>TEL1L shares</td><td>0</td><td>101</td><td>+101</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8268.600054</td><td>224.220003</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.424779</td><td>-0.026549</td></tr><tr><td>OUT</td><td>59</td><td>60</td><td>+1</td></tr><tr><td>IN</td><td>8</td><td>12</td><td>+4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.058366</td><td>-0.002024</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.096853</td><td>0.000408</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>TEL1L shares</td><td>0</td><td>11</td><td>+11</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>7981.711983</td><td>24.860000</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.423729</td><td>0.000000</td></tr><tr><td>OUT</td><td>62</td><td>62</td><td>+0</td></tr><tr><td>IN</td><td>12</td><td>12</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.070044</td><td>-0.000079</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.092422</td><td>0.000070</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 0 TEL1L shares. The scenario adds 101 shares from Table 3A, resulting in 101 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 TEL1L shares. The scenario adds 11 shares from Table 3A, resulting in 11 shares; every other holding remains unchanged.
 
 </details>
 
@@ -1022,15 +1022,15 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 **Removing this share from curent_update_baltic**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.796460</td><td>-0.026549</td></tr><tr><td>OUT</td><td>93</td><td>90</td><td>-3</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.128937</td><td>-0.015340</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.166639</td><td>0.001996</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.813559</td><td>0.000000</td></tr><tr><td>OUT</td><td>96</td><td>96</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.141945</td><td>-0.005829</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.161638</td><td>0.000145</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
 **Increasing this existing position in the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>HAE1T shares</td><td>100</td><td>147</td><td>+47</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8285.960045</td><td>241.579994</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.424779</td><td>-0.026549</td></tr><tr><td>OUT</td><td>59</td><td>60</td><td>+1</td></tr><tr><td>IN</td><td>8</td><td>12</td><td>+4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.062031</td><td>0.001641</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.095905</td><td>-0.000541</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>HAE1T shares</td><td>100</td><td>101</td><td>+1</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>7962.391983</td><td>5.540000</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.423729</td><td>0.000000</td></tr><tr><td>OUT</td><td>62</td><td>62</td><td>+0</td></tr><tr><td>IN</td><td>12</td><td>12</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.070137</td><td>0.000014</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.092356</td><td>0.000004</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 100 HAE1T shares. The scenario adds 47 shares from Table 3A, resulting in 147 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 100 HAE1T shares. The scenario adds 1 shares from Table 3A, resulting in 101 shares; every other holding remains unchanged.
 
 </details>
 
@@ -1117,15 +1117,15 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 **Removing this share from curent_update_baltic**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.743363</td><td>-0.079646</td></tr><tr><td>OUT</td><td>93</td><td>84</td><td>-9</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.159539</td><td>0.015261</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.154325</td><td>-0.010318</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.745763</td><td>-0.067797</td></tr><tr><td>OUT</td><td>96</td><td>88</td><td>-8</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.171927</td><td>0.024153</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.150793</td><td>-0.010699</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
 **Increasing this existing position in the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>APG1L shares</td><td>200</td><td>254</td><td>+54</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8259.300052</td><td>214.920001</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.504425</td><td>0.053097</td></tr><tr><td>OUT</td><td>59</td><td>62</td><td>+3</td></tr><tr><td>IN</td><td>8</td><td>5</td><td>-3</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.056123</td><td>-0.004268</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.100009</td><td>0.003563</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>APG1L shares</td><td>200</td><td>327</td><td>+127</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>8440.721976</td><td>483.869993</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.525424</td><td>0.101695</td></tr><tr><td>OUT</td><td>62</td><td>66</td><td>+4</td></tr><tr><td>IN</td><td>12</td><td>4</td><td>-8</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.056771</td><td>-0.013352</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.099346</td><td>0.006995</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 200 APG1L shares. The scenario adds 54 shares from Table 3A, resulting in 254 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 200 APG1L shares. The scenario adds 127 shares from Table 3A, resulting in 327 shares; every other holding remains unchanged.
 
 </details>
 
@@ -1212,15 +1212,15 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 **Removing this share from curent_update_baltic**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.814159</td><td>-0.008850</td></tr><tr><td>OUT</td><td>93</td><td>92</td><td>-1</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.140842</td><td>-0.003435</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.161601</td><td>-0.003043</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.788136</td><td>-0.025424</td></tr><tr><td>OUT</td><td>96</td><td>93</td><td>-3</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.148627</td><td>0.000853</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.157428</td><td>-0.004064</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
 **Adding this new share to the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>GRG1L shares</td><td>0</td><td>519</td><td>+519</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8568.570046</td><td>524.189995</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.530973</td><td>0.079646</td></tr><tr><td>OUT</td><td>59</td><td>64</td><td>+5</td></tr><tr><td>IN</td><td>8</td><td>4</td><td>-4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.064156</td><td>0.003765</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.102431</td><td>0.005985</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>GRG1L shares</td><td>0</td><td>722</td><td>+722</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>8686.071976</td><td>729.219993</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.567797</td><td>0.144068</td></tr><tr><td>OUT</td><td>62</td><td>68</td><td>+6</td></tr><tr><td>IN</td><td>12</td><td>1</td><td>-11</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.072681</td><td>0.002558</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.100373</td><td>0.008021</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 0 GRG1L shares. The scenario adds 519 shares from Table 3A, resulting in 519 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 GRG1L shares. The scenario adds 722 shares from Table 3A, resulting in 722 shares; every other holding remains unchanged.
 
 </details>
 
@@ -1307,15 +1307,15 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 **Removing this share from curent_update_baltic**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.796460</td><td>-0.026549</td></tr><tr><td>OUT</td><td>93</td><td>90</td><td>-3</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.158492</td><td>0.014215</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.160546</td><td>-0.004097</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.796610</td><td>-0.016949</td></tr><tr><td>OUT</td><td>96</td><td>94</td><td>-2</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.162612</td><td>0.014839</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.158856</td><td>-0.002636</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
 **Adding this new share to the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>RSU1L shares</td><td>0</td><td>149</td><td>+149</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8723.820042</td><td>679.439991</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.530973</td><td>0.079646</td></tr><tr><td>OUT</td><td>59</td><td>64</td><td>+5</td></tr><tr><td>IN</td><td>8</td><td>4</td><td>-4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.057379</td><td>-0.003012</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.105238</td><td>0.008793</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>RSU1L shares</td><td>0</td><td>116</td><td>+116</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>8476.531986</td><td>519.680002</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.525424</td><td>0.101695</td></tr><tr><td>OUT</td><td>62</td><td>66</td><td>+4</td></tr><tr><td>IN</td><td>12</td><td>4</td><td>-8</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.070077</td><td>-0.000046</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.099239</td><td>0.006888</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 0 RSU1L shares. The scenario adds 149 shares from Table 3A, resulting in 149 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 RSU1L shares. The scenario adds 116 shares from Table 3A, resulting in 116 shares; every other holding remains unchanged.
 
 </details>
 
@@ -1402,15 +1402,15 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 **Removing this share from curent_update_baltic**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.823009</td><td>0.000000</td></tr><tr><td>OUT</td><td>93</td><td>93</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.145374</td><td>0.001097</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.164179</td><td>-0.000465</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.813559</td><td>0.000000</td></tr><tr><td>OUT</td><td>96</td><td>96</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.155041</td><td>0.007267</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.158891</td><td>-0.002601</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
 **Adding this new share to the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>PZV1L shares</td><td>0</td><td>30</td><td>+30</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8096.280051</td><td>51.900001</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.495575</td><td>0.044248</td></tr><tr><td>OUT</td><td>59</td><td>62</td><td>+3</td></tr><tr><td>IN</td><td>8</td><td>6</td><td>-2</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.061808</td><td>0.001418</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.097267</td><td>0.000822</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>PZV1L shares</td><td>0</td><td>171</td><td>+171</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>8262.086978</td><td>305.234994</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.525424</td><td>0.101695</td></tr><tr><td>OUT</td><td>62</td><td>66</td><td>+4</td></tr><tr><td>IN</td><td>12</td><td>4</td><td>-8</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.077902</td><td>0.007779</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.097193</td><td>0.004841</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 0 PZV1L shares. The scenario adds 30 shares from Table 3A, resulting in 30 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 PZV1L shares. The scenario adds 171 shares from Table 3A, resulting in 171 shares; every other holding remains unchanged.
 
 </details>
 
@@ -1497,15 +1497,15 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 **Removing this share from curent_update_baltic**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.831858</td><td>0.008850</td></tr><tr><td>OUT</td><td>93</td><td>94</td><td>+1</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.141467</td><td>-0.002810</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.165744</td><td>0.001101</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.813559</td><td>0.000000</td></tr><tr><td>OUT</td><td>96</td><td>96</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.152716</td><td>0.004942</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.162213</td><td>0.000721</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
 **Increasing this existing position in the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>ROE1L shares</td><td>416</td><td>906</td><td>+490</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8482.930042</td><td>438.549991</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.424779</td><td>-0.026549</td></tr><tr><td>OUT</td><td>59</td><td>60</td><td>+1</td></tr><tr><td>IN</td><td>8</td><td>12</td><td>+4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.063878</td><td>0.003487</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.098405</td><td>0.001959</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>ROE1L shares</td><td>416</td><td>422</td><td>+6</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>7962.143983</td><td>5.292000</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.423729</td><td>0.000000</td></tr><tr><td>OUT</td><td>62</td><td>62</td><td>+0</td></tr><tr><td>IN</td><td>12</td><td>12</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.070192</td><td>0.000069</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.092378</td><td>0.000026</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 416 ROE1L shares. The scenario adds 490 shares from Table 3A, resulting in 906 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 416 ROE1L shares. The scenario adds 6 shares from Table 3A, resulting in 422 shares; every other holding remains unchanged.
 
 </details>
 
@@ -1592,15 +1592,15 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 **Removing this share from curent_update_baltic**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.823009</td><td>0.000000</td></tr><tr><td>OUT</td><td>93</td><td>93</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.151344</td><td>0.007067</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.165890</td><td>0.001247</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.805085</td><td>-0.008475</td></tr><tr><td>OUT</td><td>96</td><td>95</td><td>-1</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.157178</td><td>0.009405</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.161875</td><td>0.000383</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
 **Increasing this existing position in the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>TAL1T shares</td><td>700</td><td>909</td><td>+209</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8173.960052</td><td>129.580001</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.424779</td><td>-0.026549</td></tr><tr><td>OUT</td><td>59</td><td>60</td><td>+1</td></tr><tr><td>IN</td><td>8</td><td>12</td><td>+4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.057263</td><td>-0.003127</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.096608</td><td>0.000162</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>TAL1T shares</td><td>700</td><td>879</td><td>+179</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>8072.306980</td><td>115.454997</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.423729</td><td>0.000000</td></tr><tr><td>OUT</td><td>62</td><td>62</td><td>+0</td></tr><tr><td>IN</td><td>12</td><td>12</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.067318</td><td>-0.002805</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.092669</td><td>0.000318</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 700 TAL1T shares. The scenario adds 209 shares from Table 3A, resulting in 909 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 700 TAL1T shares. The scenario adds 179 shares from Table 3A, resulting in 879 shares; every other holding remains unchanged.
 
 </details>
 
@@ -1639,15 +1639,63 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 </details>
 
 <details markdown="1">
-<summary>All 0 PerformanceAnalytics measures: full period and last 126 observations</summary>
+<summary>All 72 PerformanceAnalytics measures: full period and last 126 observations</summary>
 
 | Measure | Full period | Last 126 | Measure | Full period | Last 126 |
 | --- | --- | --- | --- | --- | --- |
+| ActiveReturn | -0.133680 | 0.209969 | M2Sortino | 0.098890 | 0.465339 |
+| AdjustedSharpe | 0.505423 | -3.361744 | MSquaredExcess | -0.068846 | 0.223420 |
+| AnnualizedReturn_Arithmetic | 0.097455 | 0.378790 | Martin | 1.136901 | 40.755773 |
+| AnnualizedReturn_Geometric | 0.095009 | 0.447178 | MaximumDrawdown | 0.218446 | 0.027235 |
+| Appraisal | 0.747984 | 3.199462 | Modigliani | 0.000587 | 0.001726 |
+| ArithmeticReturn | 0.000387 | 0.001503 | NetSelectivity | -0.055773 | 0.240657 |
+| AverageDrawdown | 0.021368 | 0.012967 | Omega | 1.203861 | 1.823660 |
+| AverageDrawdownLength | 35.950000 | 9.500000 | OmegaExcessReturn | 0.068445 | 0.429557 |
+| AverageRecoveryTime | 15.350000 | 3.666667 | PainIndex | 0.058687 | 0.008199 |
+| BernardoLedoit | 1.203861 | 1.823660 | PainRatio | 1.618916 | 54.540371 |
+| BetaCoKurtosis | -0.001280 | 0.177843 | Prospect | -0.427724 | -0.213865 |
+| BetaCoSkewness | -1.489626 | 9.268103 | Rachev | 1.239206 | 2.135722 |
+| Burke | 0.618415 | 8.338946 | Selectivity | 0.086400 | 0.428103 |
+| CAPMAlpha | 0.000354 | 0.001431 | Sharpe_Annualized | 0.841749 | 2.807605 |
+| CAPMBeta | 0.037644 | 0.080414 | Sharpe_Daily | 0.053025 | 0.176863 |
+| CDD | 0.026227 | 0.025283 | Sharpe_ES | 0.025243 | 0.133253 |
+| Calmar | 0.434932 | 16.419513 | Sharpe_VaR | 0.043434 | 0.219080 |
+| CoKurtosis | -0.000000 | 0.000000 | Skewness | 0.563733 | 2.286271 |
+| CoSkewness | -0.000000 | 0.000000 | Sortino | 0.083350 | 0.413173 |
+| CumulativeReturn | 0.312019 | 0.202987 | SpecificRisk | 0.115511 | 0.133805 |
+| DRatio | 0.785516 | 0.505340 | Sterling | 0.298352 | 3.514597 |
+| DownCapture | 0.039651 | -0.141486 | SystematicRisk | 0.006610 | 0.012461 |
+| DownNumber | 0.383648 | 0.377358 | TotalRisk | 0.115700 | 0.134384 |
+| DownPercent | 0.852201 | 0.849057 | TrackingError_Annualized | 0.204736 | 0.195841 |
+| DownsideDeviation | 0.004640 | 0.003638 | TrackingError_Daily | 0.012897 | 0.012337 |
+| DrawdownDeviation | 0.008279 | 0.004860 | Treynor_Annualized | 2.523863 | 5.560968 |
+| ES_Loss | 0.015320 | 0.011280 | Treynor_Daily | 0.009569 | 0.018253 |
+| FamaBeta | 0.659330 | 0.870628 | UlcerIndex | 0.083568 | 0.010972 |
+| GeometricReturn | 0.000360 | 0.001468 | UpCapture | 0.122368 | 0.239470 |
+| Hurst | 0.415257 | 0.431505 | UpNumber | 0.376147 | 0.383562 |
+| Information_Annualized | -0.652939 | 1.072138 | UpPercent | 0.174312 | 0.205479 |
+| Information_Daily | -0.035462 | 0.050481 | UpsidePotential | 0.492210 | 0.914804 |
+| JensenAlpha | 0.086400 | 0.428103 | UpsideRisk | 0.005634 | 0.007790 |
+| Kappa | 0.047265 | 0.295612 | VaR_Loss | 0.008904 | 0.006861 |
+| Kelly | 7.270480 | 20.810081 | Volatility | 0.007293 | 0.008499 |
+| Kurtosis | 19.212807 | 12.947505 | Volatility_Annualized | 0.115776 | 0.134916 |
 
 </details>
 
 <details markdown="1">
 <summary>Portfolio sensitivity</summary>
+
+**Removing this share from curent_update_baltic**
+
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.813559</td><td>0.000000</td></tr><tr><td>OUT</td><td>96</td><td>96</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.148472</td><td>0.000698</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.161309</td><td>-0.000183</td></tr></tbody></table>
+
+The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
+
+**Adding this new share to the current portfolio**
+
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>DGR1R shares</td><td>0</td><td>160</td><td>+160</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>8229.651990</td><td>272.800007</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.440678</td><td>0.016949</td></tr><tr><td>OUT</td><td>62</td><td>62</td><td>+0</td></tr><tr><td>IN</td><td>12</td><td>10</td><td>-2</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.066584</td><td>-0.003539</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.093313</td><td>0.000961</td></tr></tbody></table>
+
+The starting point is the unmodified current portfolio, which already contains 0 DGR1R shares. The scenario adds 160 shares from Table 3A, resulting in 160 shares; every other holding remains unchanged.
 
 </details>
 
@@ -1734,15 +1782,15 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 **Removing this share from curent_update_baltic**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.805310</td><td>-0.017699</td></tr><tr><td>OUT</td><td>93</td><td>91</td><td>-2</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.145198</td><td>0.000921</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.165381</td><td>0.000737</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.805085</td><td>-0.008475</td></tr><tr><td>OUT</td><td>96</td><td>95</td><td>-1</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.149893</td><td>0.002119</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.161921</td><td>0.000428</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
 **Adding this new share to the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>EFT1T shares</td><td>0</td><td>23</td><td>+23</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8490.580042</td><td>446.199991</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.442478</td><td>-0.008850</td></tr><tr><td>OUT</td><td>59</td><td>60</td><td>+1</td></tr><tr><td>IN</td><td>8</td><td>10</td><td>+2</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.059115</td><td>-0.001275</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.096133</td><td>-0.000312</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>EFT1T shares</td><td>0</td><td>15</td><td>+15</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>8250.101972</td><td>293.249989</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.432203</td><td>0.008475</td></tr><tr><td>OUT</td><td>62</td><td>61</td><td>-1</td></tr><tr><td>IN</td><td>12</td><td>10</td><td>-2</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.069410</td><td>-0.000713</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.092267</td><td>-0.000085</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 0 EFT1T shares. The scenario adds 23 shares from Table 3A, resulting in 23 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 EFT1T shares. The scenario adds 15 shares from Table 3A, resulting in 15 shares; every other holding remains unchanged.
 
 </details>
 
@@ -1829,15 +1877,15 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 **Removing this share from curent_update_baltic**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.778761</td><td>-0.044248</td></tr><tr><td>OUT</td><td>93</td><td>88</td><td>-5</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.197354</td><td>0.053077</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.182056</td><td>0.017413</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.762712</td><td>-0.050847</td></tr><tr><td>OUT</td><td>96</td><td>90</td><td>-6</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.207303</td><td>0.059529</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.181595</td><td>0.020102</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
 **Increasing this existing position in the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>TKM1T shares</td><td>288</td><td>315</td><td>+27</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8290.080061</td><td>245.700010</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.424779</td><td>-0.026549</td></tr><tr><td>OUT</td><td>59</td><td>60</td><td>+1</td></tr><tr><td>IN</td><td>8</td><td>12</td><td>+4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.054719</td><td>-0.005671</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.094497</td><td>-0.001948</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>TKM1T shares</td><td>288</td><td>343</td><td>+55</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>8449.651985</td><td>492.800002</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.440678</td><td>0.016949</td></tr><tr><td>OUT</td><td>62</td><td>62</td><td>+0</td></tr><tr><td>IN</td><td>12</td><td>10</td><td>-2</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.058090</td><td>-0.012033</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.088184</td><td>-0.004168</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 288 TKM1T shares. The scenario adds 27 shares from Table 3A, resulting in 315 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 288 TKM1T shares. The scenario adds 55 shares from Table 3A, resulting in 343 shares; every other holding remains unchanged.
 
 </details>
 
@@ -1876,10 +1924,46 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 </details>
 
 <details markdown="1">
-<summary>All 0 PerformanceAnalytics measures: full period and last 126 observations</summary>
+<summary>All 72 PerformanceAnalytics measures: full period and last 126 observations</summary>
 
 | Measure | Full period | Last 126 | Measure | Full period | Last 126 |
 | --- | --- | --- | --- | --- | --- |
+| ActiveReturn | -0.310261 | -0.406248 | M2Sortino | -0.083045 | -0.172547 |
+| AdjustedSharpe | -0.479708 | 0.387719 | MSquaredExcess | -0.269998 | -0.397120 |
+| AnnualizedReturn_Arithmetic | -0.075467 | -0.179830 | Martin | -0.370437 | -2.714696 |
+| AnnualizedReturn_Geometric | -0.081572 | -0.169039 | MaximumDrawdown | 0.317810 | 0.109872 |
+| Appraisal | -0.573439 | -1.576011 | Modigliani | -0.000378 | -0.001073 |
+| ArithmeticReturn | -0.000299 | -0.000714 | NetSelectivity | -0.262590 | -0.326834 |
+| AverageDrawdown | 0.069906 | 0.040304 | Omega | 0.901766 | 0.690329 |
+| AverageDrawdownLength | 149.600000 | 30.750000 | OmegaExcessReturn | -0.114675 | -0.192733 |
+| AverageRecoveryTime | 2.600000 | 3.500000 | PainIndex | 0.206536 | 0.050031 |
+| BernardoLedoit | 0.901766 | 0.690329 | PainRatio | -0.394952 | -3.378700 |
+| BetaCoKurtosis | -0.113239 | -0.010657 | Prospect | -0.710868 | -0.734706 |
+| BetaCoSkewness | -3.835436 | 3.481287 | Rachev | 1.213892 | 0.865016 |
+| Burke | -0.373845 | -2.494648 | Selectivity | -0.079647 | -0.161638 |
+| CAPMAlpha | -0.000292 | -0.000686 | Sharpe_Annualized | -0.542953 | -1.744500 |
+| CAPMBeta | -0.008419 | -0.031200 | Sharpe_Daily | -0.034203 | -0.109893 |
+| CDD | 0.180859 | 0.084506 | Sharpe_ES | -0.016078 | -0.044190 |
+| Calmar | -0.256669 | -1.538500 | Sharpe_VaR | -0.023678 | -0.069558 |
+| CoKurtosis | -0.000000 | -0.000000 | Skewness | 0.734623 | 0.103992 |
+| CoSkewness | -0.000001 | 0.000000 | Sortino | -0.051795 | -0.145875 |
+| CumulativeReturn | -0.224773 | -0.088429 | SpecificRisk | 0.138893 | 0.102561 |
+| DRatio | 1.524267 | 2.064235 | Sterling | -0.195237 | -0.805435 |
+| DownCapture | -0.008574 | 0.037884 | SystematicRisk | -0.001478 | -0.004835 |
+| DownNumber | 0.471698 | 0.509434 | TotalRisk | 0.138901 | 0.102675 |
+| DownPercent | 0.789308 | 0.867925 | TrackingError_Annualized | 0.225105 | 0.190101 |
+| DownsideDeviation | 0.005782 | 0.004892 | TrackingError_Daily | 0.014180 | 0.011975 |
+| DrawdownDeviation | 0.011592 | 0.010383 | Treynor_Annualized | 9.689265 | 5.417857 |
+| ES_Loss | 0.018626 | 0.016149 | Treynor_Daily | 0.040102 | 0.023543 |
+| FamaBeta | 0.791547 | 0.665215 | UlcerIndex | 0.220205 | 0.062268 |
+| GeometricReturn | -0.000338 | -0.000735 | UpCapture | -0.077199 | -0.136865 |
+| Hurst | 0.340010 | 0.476136 | UpNumber | 0.339450 | 0.287671 |
+| Information_Annualized | -1.378293 | -2.137007 | UpPercent | 0.149083 | 0.068493 |
+| Information_Daily | -0.081465 | -0.131903 | UpsidePotential | 0.475464 | 0.325189 |
+| JensenAlpha | -0.079647 | -0.161638 | UpsideRisk | 0.006574 | 0.004291 |
+| Kappa | -0.036120 | -0.093454 | VaR_Loss | 0.012648 | 0.010259 |
+| Kelly | -3.906329 | -16.923073 | Volatility | 0.008756 | 0.006494 |
+| Kurtosis | 7.071013 | 12.400512 | Volatility_Annualized | 0.138993 | 0.103084 |
 
 </details>
 
@@ -1888,9 +1972,15 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 **Removing this share from curent_update_baltic**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.823009</td><td>0.000000</td></tr><tr><td>OUT</td><td>93</td><td>93</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.144293</td><td>0.000016</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.164663</td><td>0.000019</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.813559</td><td>0.000000</td></tr><tr><td>OUT</td><td>96</td><td>96</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.148276</td><td>0.000503</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.162228</td><td>0.000736</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
+
+**Adding this new share to the current portfolio**
+
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>LHV1T shares</td><td>0</td><td>34</td><td>+34</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>8067.521987</td><td>110.670004</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.423729</td><td>0.000000</td></tr><tr><td>OUT</td><td>62</td><td>62</td><td>+0</td></tr><tr><td>IN</td><td>12</td><td>12</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.068991</td><td>-0.001132</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.091928</td><td>-0.000424</td></tr></tbody></table>
+
+The starting point is the unmodified current portfolio, which already contains 0 LHV1T shares. The scenario adds 34 shares from Table 3A, resulting in 34 shares; every other holding remains unchanged.
 
 </details>
 
@@ -1977,15 +2067,15 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 **Removing this share from curent_update_baltic**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.823009</td><td>0.000000</td></tr><tr><td>OUT</td><td>93</td><td>93</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.144593</td><td>0.000316</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.164935</td><td>0.000292</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.813559</td><td>0.000000</td></tr><tr><td>OUT</td><td>96</td><td>96</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.148909</td><td>0.001135</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.162574</td><td>0.001082</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
 **Adding this new share to the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>CPA1T shares</td><td>0</td><td>12</td><td>+12</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8072.340050</td><td>27.959999</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.415929</td><td>-0.035398</td></tr><tr><td>OUT</td><td>59</td><td>59</td><td>+0</td></tr><tr><td>IN</td><td>8</td><td>12</td><td>+4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.061094</td><td>0.000704</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.096298</td><td>-0.000148</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>CPA1T shares</td><td>0</td><td>46</td><td>+46</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>8064.491979</td><td>107.639996</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.423729</td><td>0.000000</td></tr><tr><td>OUT</td><td>62</td><td>62</td><td>+0</td></tr><tr><td>IN</td><td>12</td><td>12</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.072595</td><td>0.002472</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.091795</td><td>-0.000557</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 0 CPA1T shares. The scenario adds 12 shares from Table 3A, resulting in 12 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 CPA1T shares. The scenario adds 46 shares from Table 3A, resulting in 46 shares; every other holding remains unchanged.
 
 </details>
 
@@ -2072,15 +2162,15 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 **Removing this share from curent_update_baltic**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.814159</td><td>-0.008850</td></tr><tr><td>OUT</td><td>93</td><td>92</td><td>-1</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.139534</td><td>-0.004743</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.166730</td><td>0.002087</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.796610</td><td>-0.016949</td></tr><tr><td>OUT</td><td>96</td><td>94</td><td>-2</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.140537</td><td>-0.007236</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.163699</td><td>0.002207</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
 **Adding this new share to the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>TVE1T shares</td><td>0</td><td>35</td><td>+35</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8424.130064</td><td>379.750013</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.442478</td><td>-0.008850</td></tr><tr><td>OUT</td><td>59</td><td>60</td><td>+1</td></tr><tr><td>IN</td><td>8</td><td>10</td><td>+2</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.063094</td><td>0.002704</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.094235</td><td>-0.002210</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>TVE1T shares</td><td>0</td><td>39</td><td>+39</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>8381.951968</td><td>425.099985</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.440678</td><td>0.016949</td></tr><tr><td>OUT</td><td>62</td><td>62</td><td>+0</td></tr><tr><td>IN</td><td>12</td><td>10</td><td>-2</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.072688</td><td>0.002565</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.089927</td><td>-0.002425</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 0 TVE1T shares. The scenario adds 35 shares from Table 3A, resulting in 35 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 TVE1T shares. The scenario adds 39 shares from Table 3A, resulting in 39 shares; every other holding remains unchanged.
 
 </details>
 
@@ -2167,13 +2257,13 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 **Removing this share from curent_update_baltic**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.796460</td><td>-0.026549</td></tr><tr><td>OUT</td><td>93</td><td>90</td><td>-3</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.175662</td><td>0.031385</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.172213</td><td>0.007569</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.796610</td><td>-0.016949</td></tr><tr><td>OUT</td><td>96</td><td>94</td><td>-2</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.190075</td><td>0.042301</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.168744</td><td>0.007252</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
 **Increasing this existing position in the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>SAF1R shares</td><td>100</td><td>100</td><td>+0</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8044.380051</td><td>0.000000</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.451327</td><td>0.000000</td></tr><tr><td>OUT</td><td>59</td><td>59</td><td>+0</td></tr><tr><td>IN</td><td>8</td><td>8</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.060390</td><td>0.000000</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.096446</td><td>0.000000</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>SAF1R shares</td><td>100</td><td>100</td><td>+0</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>7956.851983</td><td>0.000000</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.423729</td><td>0.000000</td></tr><tr><td>OUT</td><td>62</td><td>62</td><td>+0</td></tr><tr><td>IN</td><td>12</td><td>12</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.070123</td><td>0.000000</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.092352</td><td>0.000000</td></tr></tbody></table>
 
 The starting point is the unmodified current portfolio, which already contains 100 SAF1R shares. The scenario adds 0 shares from Table 3A, resulting in 100 shares; every other holding remains unchanged.
 
@@ -2262,13 +2352,13 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 **Removing this share from curent_update_baltic**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.823009</td><td>0.000000</td></tr><tr><td>OUT</td><td>93</td><td>93</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.150512</td><td>0.006235</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.168777</td><td>0.004133</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.813559</td><td>0.000000</td></tr><tr><td>OUT</td><td>96</td><td>96</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.155889</td><td>0.008116</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.165547</td><td>0.004054</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
 **Increasing this existing position in the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>TSM1T shares</td><td>330</td><td>330</td><td>+0</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8044.380051</td><td>0.000000</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.451327</td><td>0.000000</td></tr><tr><td>OUT</td><td>59</td><td>59</td><td>+0</td></tr><tr><td>IN</td><td>8</td><td>8</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.060390</td><td>0.000000</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.096446</td><td>0.000000</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>TSM1T shares</td><td>330</td><td>330</td><td>+0</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>7956.851983</td><td>0.000000</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.423729</td><td>0.000000</td></tr><tr><td>OUT</td><td>62</td><td>62</td><td>+0</td></tr><tr><td>IN</td><td>12</td><td>12</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.070123</td><td>0.000000</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.092352</td><td>0.000000</td></tr></tbody></table>
 
 The starting point is the unmodified current portfolio, which already contains 330 TSM1T shares. The scenario adds 0 shares from Table 3A, resulting in 330 shares; every other holding remains unchanged.
 
@@ -2280,35 +2370,36 @@ The starting point is the unmodified current portfolio, which already contains 3
 
 ## Single-share additions to the current portfolio
 
-Each row starts from the same unmodified current portfolio and adds only the stated share quantity from Table 3A. Rows are ranked by the change in netSD; larger is better.
+Each row starts from the same unmodified current portfolio and adds only the stated share quantity from Table 3A. Rows are ranked by the change in netSD; larger is better. OUT is the number of dominance relations won, while IN is the number lost; more OUT and fewer IN are preferable.
 
 <details markdown="1">
 <summary><strong>Open ranked comparison of all individual additions</strong></summary>
 
-| Rank | Share | Added shares | Updated value EUR | Current netSD | Updated netSD | Delta netSD | Delta Rachev | Delta Sortino |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | MOLNR | 27 | 8554.680041 | 0.451327 | 0.601770 | 0.150442 | 0.117316 | 0.024886 |
-| 2 | KNE1L | 1438 | 8751.876070 | 0.451327 | 0.566372 | 0.115044 | 0.011069 | 0.015685 |
-| 3 | MRK1T | 22 | 8636.180043 | 0.451327 | 0.548673 | 0.097345 | 0.021795 | 0.011426 |
-| 4 | VLP1L | 27 | 8462.880051 | 0.451327 | 0.539823 | 0.088496 | 0.014068 | 0.016028 |
-| 5 | GRG1L | 519 | 8568.570046 | 0.451327 | 0.530973 | 0.079646 | 0.003765 | 0.005985 |
-| 6 | RSU1L | 149 | 8723.820042 | 0.451327 | 0.530973 | 0.079646 | -0.003012 | 0.008793 |
-| 7 | MODE | 89 | 8569.480059 | 0.451327 | 0.513274 | 0.061947 | -0.001244 | 0.004900 |
-| 8 | APG1L | 54 | 8259.300052 | 0.451327 | 0.504425 | 0.053097 | -0.004268 | 0.003563 |
-| 9 | PZV1L | 30 | 8096.280051 | 0.451327 | 0.495575 | 0.044248 | 0.001418 | 0.000822 |
-| 10 | AKO1L | 111 | 8240.850049 | 0.451327 | 0.495575 | 0.044248 | -0.002993 | 0.001675 |
-| 11 | SAF1R | 0 | 8044.380051 | 0.451327 | 0.451327 | 0.000000 | 0.000000 | 0.000000 |
-| 12 | TSM1T | 0 | 8044.380051 | 0.451327 | 0.451327 | 0.000000 | 0.000000 | 0.000000 |
-| 13 | TVE1T | 35 | 8424.130064 | 0.451327 | 0.442478 | -0.008850 | 0.002704 | -0.002210 |
-| 14 | EFT1T | 23 | 8490.580042 | 0.451327 | 0.442478 | -0.008850 | -0.001275 | -0.000312 |
-| 15 | ROE1L | 490 | 8482.930042 | 0.451327 | 0.424779 | -0.026549 | 0.003487 | 0.001959 |
-| 16 | HAE1T | 47 | 8285.960045 | 0.451327 | 0.424779 | -0.026549 | 0.001641 | -0.000541 |
-| 17 | IGN1L | 6 | 8176.980053 | 0.451327 | 0.424779 | -0.026549 | 0.001039 | 0.000568 |
-| 18 | VIRSI | 44 | 8237.100051 | 0.451327 | 0.424779 | -0.026549 | -0.000507 | -0.000182 |
-| 19 | TEL1L | 101 | 8268.600054 | 0.451327 | 0.424779 | -0.026549 | -0.002024 | 0.000408 |
-| 20 | TAL1T | 209 | 8173.960052 | 0.451327 | 0.424779 | -0.026549 | -0.003127 | 0.000162 |
-| 21 | TKM1T | 27 | 8290.080061 | 0.451327 | 0.424779 | -0.026549 | -0.005671 | -0.001948 |
-| 22 | CPA1T | 12 | 8072.340050 | 0.451327 | 0.415929 | -0.035398 | 0.000704 | -0.000148 |
+| Rank | Share | Added shares | Updated value EUR | Current OUT / IN | Updated OUT / IN | Delta OUT / IN | Current netSD | Updated netSD | Delta netSD | Delta Rachev | Delta Sortino |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | MOLNR | 30 | 8574.851995 | 62 / 12 | 75 / 3 | +13 / -9 | 0.423729 | 0.610169 | 0.186441 | 0.147201 | 0.030179 |
+| 2 | KNE1L | 1581 | 8720.475000 | 62 / 12 | 72 / 2 | +10 / -10 | 0.423729 | 0.593220 | 0.169492 | 0.013318 | 0.016338 |
+| 3 | GRG1L | 722 | 8686.071976 | 62 / 12 | 68 / 1 | +6 / -11 | 0.423729 | 0.567797 | 0.144068 | 0.002558 | 0.008021 |
+| 4 | MRK1T | 13 | 8308.501973 | 62 / 12 | 70 / 4 | +8 / -8 | 0.423729 | 0.559322 | 0.135593 | 0.013586 | 0.007143 |
+| 5 | VLP1L | 23 | 8313.351983 | 62 / 12 | 69 / 4 | +7 / -8 | 0.423729 | 0.550847 | 0.127119 | 0.011637 | 0.013810 |
+| 6 | PZV1L | 171 | 8262.086978 | 62 / 12 | 66 / 4 | +4 / -8 | 0.423729 | 0.525424 | 0.101695 | 0.007779 | 0.004841 |
+| 7 | RSU1L | 116 | 8476.531986 | 62 / 12 | 66 / 4 | +4 / -8 | 0.423729 | 0.525424 | 0.101695 | -0.000046 | 0.006888 |
+| 8 | APG1L | 127 | 8440.721976 | 62 / 12 | 66 / 4 | +4 / -8 | 0.423729 | 0.525424 | 0.101695 | -0.013352 | 0.006995 |
+| 9 | AKO1L | 348 | 8595.431997 | 62 / 12 | 66 / 6 | +4 / -6 | 0.423729 | 0.508475 | 0.084746 | -0.018099 | 0.005352 |
+| 10 | TVE1T | 39 | 8381.951968 | 62 / 12 | 62 / 10 | +0 / -2 | 0.423729 | 0.440678 | 0.016949 | 0.002565 | -0.002425 |
+| 11 | IGN1L | 14 | 8262.051973 | 62 / 12 | 62 / 10 | +0 / -2 | 0.423729 | 0.440678 | 0.016949 | 0.001788 | 0.001075 |
+| 12 | DGR1R | 160 | 8229.651990 | 62 / 12 | 62 / 10 | +0 / -2 | 0.423729 | 0.440678 | 0.016949 | -0.003539 | 0.000961 |
+| 13 | TKM1T | 55 | 8449.651985 | 62 / 12 | 62 / 10 | +0 / -2 | 0.423729 | 0.440678 | 0.016949 | -0.012033 | -0.004168 |
+| 14 | EFT1T | 15 | 8250.101972 | 62 / 12 | 61 / 10 | -1 / -2 | 0.423729 | 0.432203 | 0.008475 | -0.000713 | -0.000085 |
+| 15 | CPA1T | 46 | 8064.491979 | 62 / 12 | 62 / 12 | +0 / +0 | 0.423729 | 0.423729 | 0.000000 | 0.002472 | -0.000557 |
+| 16 | ROE1L | 6 | 7962.143983 | 62 / 12 | 62 / 12 | +0 / +0 | 0.423729 | 0.423729 | 0.000000 | 0.000069 | 0.000026 |
+| 17 | HAE1T | 1 | 7962.391983 | 62 / 12 | 62 / 12 | +0 / +0 | 0.423729 | 0.423729 | 0.000000 | 0.000014 | 0.000004 |
+| 18 | SAF1R | 0 | 7956.851983 | 62 / 12 | 62 / 12 | +0 / +0 | 0.423729 | 0.423729 | 0.000000 | 0.000000 | 0.000000 |
+| 19 | TSM1T | 0 | 7956.851983 | 62 / 12 | 62 / 12 | +0 / +0 | 0.423729 | 0.423729 | 0.000000 | 0.000000 | 0.000000 |
+| 20 | TEL1L | 11 | 7981.711983 | 62 / 12 | 62 / 12 | +0 / +0 | 0.423729 | 0.423729 | 0.000000 | -0.000079 | 0.000070 |
+| 21 | VIRSI | 11 | 8005.471983 | 62 / 12 | 62 / 12 | +0 / +0 | 0.423729 | 0.423729 | 0.000000 | -0.000252 | -0.000026 |
+| 22 | LHV1T | 34 | 8067.521987 | 62 / 12 | 62 / 12 | +0 / +0 | 0.423729 | 0.423729 | 0.000000 | -0.001132 | -0.000424 |
+| 23 | TAL1T | 179 | 8072.306980 | 62 / 12 | 62 / 12 | +0 / +0 | 0.423729 | 0.423729 | 0.000000 | -0.002805 | 0.000318 |
 
 </details>
 
@@ -2316,37 +2407,37 @@ Each row starts from the same unmodified current portfolio and adds only the sta
 
 Each scenario removes one share from curent_update_baltic and proportionally rescales the remaining weights. Positive delta means that the ratio improves after removal; negative delta means that the removed share was beneficial for that criterion.
 
-**Main result.** Removing **ROE1L** produces the largest netSD change (+0.008850); removing **TKM1T** gives the largest Rachev improvement (+0.053077); removing **TKM1T** gives the largest Sortino improvement (+0.017413). These are sensitivity results, not automatically new trade recommendations, because the three criteria can move in opposite directions.
+**Main result.** Removing **AKO1L** produces the largest netSD change (+0.000000); removing **TKM1T** gives the largest Rachev improvement (+0.059529); removing **TKM1T** gives the largest Sortino improvement (+0.020102). These are sensitivity results, not automatically new trade recommendations, because the three criteria can move in opposite directions.
 
 <details markdown="1">
 <summary><strong>Open complete netSD, Rachev and Sortino sensitivity table</strong></summary>
 
 | Removed share | netSD | Δ netSD | Rachev | Δ Rachev | Sortino | Δ Sortino |
 | --- | --- | --- | --- | --- | --- | --- |
-| None (baseline) | 0.823009 | 0.000000 | 1.144277 | 0.000000 | 0.164643 | 0.000000 |
-| AKO1L | 0.823009 | 0.000000 | 1.143852 | -0.000425 | 0.164145 | -0.000498 |
-| APG1L | 0.743363 | -0.079646 | 1.159539 | 0.015261 | 0.154325 | -0.010318 |
-| CPA1T | 0.823009 | 0.000000 | 1.144593 | 0.000316 | 0.164935 | 0.000292 |
-| EFT1T | 0.805310 | -0.017699 | 1.145198 | 0.000921 | 0.165381 | 0.000737 |
-| GRG1L | 0.814159 | -0.008850 | 1.140842 | -0.003435 | 0.161601 | -0.003043 |
-| HAE1T | 0.796460 | -0.026549 | 1.128937 | -0.015340 | 0.166639 | 0.001996 |
-| IGN1L | 0.823009 | 0.000000 | 1.143883 | -0.000394 | 0.164592 | -0.000052 |
-| KNE1L | 0.769912 | -0.053097 | 1.155081 | 0.010804 | 0.155578 | -0.009066 |
-| LHV1T | 0.823009 | 0.000000 | 1.144293 | 0.000016 | 0.164663 | 0.000019 |
-| MODE | 0.814159 | -0.008850 | 1.149703 | 0.005425 | 0.161948 | -0.002695 |
-| MOLNR | 0.725664 | -0.097345 | 1.084471 | -0.059806 | 0.147143 | -0.017500 |
-| MRK1T | 0.734513 | -0.088496 | 1.127628 | -0.016649 | 0.150276 | -0.014368 |
-| PZV1L | 0.823009 | 0.000000 | 1.145374 | 0.001097 | 0.164179 | -0.000465 |
-| ROE1L | 0.831858 | 0.008850 | 1.141467 | -0.002810 | 0.165744 | 0.001101 |
-| RSU1L | 0.796460 | -0.026549 | 1.158492 | 0.014215 | 0.160546 | -0.004097 |
-| SAF1R | 0.796460 | -0.026549 | 1.175662 | 0.031385 | 0.172213 | 0.007569 |
-| TAL1T | 0.823009 | 0.000000 | 1.151344 | 0.007067 | 0.165890 | 0.001247 |
-| TEL1L | 0.823009 | 0.000000 | 1.146552 | 0.002275 | 0.164924 | 0.000280 |
-| TKM1T | 0.778761 | -0.044248 | 1.197354 | 0.053077 | 0.182056 | 0.017413 |
-| TSM1T | 0.823009 | 0.000000 | 1.150512 | 0.006235 | 0.168777 | 0.004133 |
-| TVE1T | 0.814159 | -0.008850 | 1.139534 | -0.004743 | 0.166730 | 0.002087 |
-| VIRSI | 0.823009 | 0.000000 | 1.144134 | -0.000143 | 0.164952 | 0.000309 |
-| VLP1L | 0.699115 | -0.123894 | 1.131153 | -0.013124 | 0.134036 | -0.030607 |
+| None (baseline) | 0.813559 | 0.000000 | 1.147773 | 0.000000 | 0.161492 | 0.000000 |
+| AKO1L | 0.813559 | 0.000000 | 1.154683 | 0.006910 | 0.160163 | -0.001329 |
+| APG1L | 0.745763 | -0.067797 | 1.171927 | 0.024153 | 0.150793 | -0.010699 |
+| CPA1T | 0.813559 | 0.000000 | 1.148909 | 0.001135 | 0.162574 | 0.001082 |
+| DGR1R | 0.813559 | 0.000000 | 1.148472 | 0.000698 | 0.161309 | -0.000183 |
+| EFT1T | 0.805085 | -0.008475 | 1.149893 | 0.002119 | 0.161921 | 0.000428 |
+| GRG1L | 0.788136 | -0.025424 | 1.148627 | 0.000853 | 0.157428 | -0.004064 |
+| HAE1T | 0.813559 | 0.000000 | 1.141945 | -0.005829 | 0.161638 | 0.000145 |
+| IGN1L | 0.813559 | 0.000000 | 1.146862 | -0.000911 | 0.161498 | 0.000006 |
+| KNE1L | 0.771186 | -0.042373 | 1.151322 | 0.003548 | 0.152410 | -0.009082 |
+| LHV1T | 0.813559 | 0.000000 | 1.148276 | 0.000503 | 0.162228 | 0.000736 |
+| MOLNR | 0.694915 | -0.118644 | 1.065071 | -0.082703 | 0.140183 | -0.021309 |
+| MRK1T | 0.779661 | -0.033898 | 1.128075 | -0.019698 | 0.150343 | -0.011150 |
+| PZV1L | 0.813559 | 0.000000 | 1.155041 | 0.007267 | 0.158891 | -0.002601 |
+| ROE1L | 0.813559 | 0.000000 | 1.152716 | 0.004942 | 0.162213 | 0.000721 |
+| RSU1L | 0.796610 | -0.016949 | 1.162612 | 0.014839 | 0.158856 | -0.002636 |
+| SAF1R | 0.796610 | -0.016949 | 1.190075 | 0.042301 | 0.168744 | 0.007252 |
+| TAL1T | 0.805085 | -0.008475 | 1.157178 | 0.009405 | 0.161875 | 0.000383 |
+| TEL1L | 0.813559 | 0.000000 | 1.147918 | 0.000144 | 0.161502 | 0.000010 |
+| TKM1T | 0.762712 | -0.050847 | 1.207303 | 0.059529 | 0.181595 | 0.020102 |
+| TSM1T | 0.813559 | 0.000000 | 1.155889 | 0.008116 | 0.165547 | 0.004054 |
+| TVE1T | 0.796610 | -0.016949 | 1.140537 | -0.007236 | 0.163699 | 0.002207 |
+| VIRSI | 0.813559 | 0.000000 | 1.147864 | 0.000091 | 0.161557 | 0.000065 |
+| VLP1L | 0.703390 | -0.110169 | 1.141760 | -0.006013 | 0.132985 | -0.028508 |
 
 </details>
 
