@@ -177,8 +177,6 @@ Select a share to display its allocation, technical indicators, all PerformanceA
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 0 | 31 | +31 | 3.92% | EUR 18.9000 | 0.0354 | 4 / 0 | 44.96 | Bullish | Inside bands | BUY | 2026-08-28 |
 
-![MOLNR return histogram](figures/stock_profiles/MOLNR_histogram.png)
-
 ![MOLNR complete technical history](figures/technical_analysis/MOLNR_technical.png)
 
 <details markdown="1">
@@ -187,6 +185,8 @@ Select a share to display its allocation, technical indicators, all PerformanceA
 ![MOLNR combined technical indicators](figures/stock_profiles/MOLNR_technicals_6m.png)
 
 </details>
+
+![MOLNR return histogram](figures/stock_profiles/MOLNR_histogram.png)
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -245,8 +245,6 @@ The removed weight is distributed proportionally across all remaining holdings, 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 42 | 87 | +45 | 9.09% | EUR 15.5000 | 0.3805 | 43 / 0 | 57.67 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
-![VLP1L return histogram](figures/stock_profiles/VLP1L_histogram.png)
-
 ![VLP1L complete technical history](figures/technical_analysis/VLP1L_technical.png)
 
 <details markdown="1">
@@ -255,6 +253,8 @@ The removed weight is distributed proportionally across all remaining holdings, 
 ![VLP1L combined technical indicators](figures/stock_profiles/VLP1L_technicals_6m.png)
 
 </details>
+
+![VLP1L return histogram](figures/stock_profiles/VLP1L_histogram.png)
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -313,8 +313,6 @@ The removed weight is distributed proportionally across all remaining holdings, 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 0 | 1378 | +1378 | 4.52% | EUR 0.4920 | 0.3717 | 42 / 0 | 55.64 | Bullish | Inside bands | HOLD | 2026-08-28 |
 
-![KNE1L return histogram](figures/stock_profiles/KNE1L_histogram.png)
-
 ![KNE1L complete technical history](figures/technical_analysis/KNE1L_technical.png)
 
 <details markdown="1">
@@ -323,6 +321,8 @@ The removed weight is distributed proportionally across all remaining holdings, 
 ![KNE1L combined technical indicators](figures/stock_profiles/KNE1L_technicals_6m.png)
 
 </details>
+
+![KNE1L return histogram](figures/stock_profiles/KNE1L_histogram.png)
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -381,8 +381,6 @@ The removed weight is distributed proportionally across all remaining holdings, 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 20 | 36 | +16 | 6.58% | EUR 26.9000 | 0.3717 | 42 / 0 | 40.54 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
-![MRK1T return histogram](figures/stock_profiles/MRK1T_histogram.png)
-
 ![MRK1T complete technical history](figures/technical_analysis/MRK1T_technical.png)
 
 <details markdown="1">
@@ -391,6 +389,8 @@ The removed weight is distributed proportionally across all remaining holdings, 
 ![MRK1T combined technical indicators](figures/stock_profiles/MRK1T_technicals_6m.png)
 
 </details>
+
+![MRK1T return histogram](figures/stock_profiles/MRK1T_histogram.png)
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -449,8 +449,6 @@ The removed weight is distributed proportionally across all remaining holdings, 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 0 | 102 | +102 | 2.99% | EUR 4.3800 | 0.3540 | 40 / 0 | 66.98 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
-![VIRSI return histogram](figures/stock_profiles/VIRSI_histogram.png)
-
 ![VIRSI complete technical history](figures/technical_analysis/VIRSI_technical.png)
 
 <details markdown="1">
@@ -459,6 +457,8 @@ The removed weight is distributed proportionally across all remaining holdings, 
 ![VIRSI combined technical indicators](figures/stock_profiles/VIRSI_technicals_6m.png)
 
 </details>
+
+![VIRSI return histogram](figures/stock_profiles/VIRSI_histogram.png)
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -517,8 +517,6 @@ The removed weight is distributed proportionally across all remaining holdings, 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 200 | 253 | +53 | 6.71% | EUR 3.9800 | 0.3363 | 38 / 0 | 55.56 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
-![APG1L return histogram](figures/stock_profiles/APG1L_histogram.png)
-
 ![APG1L complete technical history](figures/technical_analysis/APG1L_technical.png)
 
 <details markdown="1">
@@ -527,6 +525,8 @@ The removed weight is distributed proportionally across all remaining holdings, 
 ![APG1L combined technical indicators](figures/stock_profiles/APG1L_technicals_6m.png)
 
 </details>
+
+![APG1L return histogram](figures/stock_profiles/APG1L_histogram.png)
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -585,8 +585,6 @@ The removed weight is distributed proportionally across all remaining holdings, 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 100 | 133 | +33 | 4.58% | EUR 5.1400 | 0.1150 | 37 / 24 | 42.59 | Bullish | Inside bands | BUY | 2026-08-28 |
 
-![HAE1T return histogram](figures/stock_profiles/HAE1T_histogram.png)
-
 ![HAE1T complete technical history](figures/technical_analysis/HAE1T_technical.png)
 
 <details markdown="1">
@@ -595,6 +593,8 @@ The removed weight is distributed proportionally across all remaining holdings, 
 ![HAE1T combined technical indicators](figures/stock_profiles/HAE1T_technicals_6m.png)
 
 </details>
+
+![HAE1T return histogram](figures/stock_profiles/HAE1T_histogram.png)
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -653,8 +653,6 @@ The removed weight is distributed proportionally across all remaining holdings, 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 100 | 100 | +0 | 11.43% | EUR 17.1500 | -0.1062 | 12 / 24 | 88.11 | Bullish | Inside bands | SELL | 2026-08-28 |
 
-![SAF1R return histogram](figures/stock_profiles/SAF1R_histogram.png)
-
 ![SAF1R complete technical history](figures/technical_analysis/SAF1R_technical.png)
 
 <details markdown="1">
@@ -663,6 +661,8 @@ The removed weight is distributed proportionally across all remaining holdings, 
 ![SAF1R combined technical indicators](figures/stock_profiles/SAF1R_technicals_6m.png)
 
 </details>
+
+![SAF1R return histogram](figures/stock_profiles/SAF1R_histogram.png)
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -721,8 +721,6 @@ The removed weight is distributed proportionally across all remaining holdings, 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 0 | 526 | +526 | 3.54% | EUR 1.0100 | 0.3805 | 49 / 6 | 35.53 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
-![GRG1L return histogram](figures/stock_profiles/GRG1L_histogram.png)
-
 ![GRG1L complete technical history](figures/technical_analysis/GRG1L_technical.png)
 
 <details markdown="1">
@@ -731,6 +729,8 @@ The removed weight is distributed proportionally across all remaining holdings, 
 ![GRG1L combined technical indicators](figures/stock_profiles/GRG1L_technicals_6m.png)
 
 </details>
+
+![GRG1L return histogram](figures/stock_profiles/GRG1L_histogram.png)
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -789,8 +789,6 @@ The removed weight is distributed proportionally across all remaining holdings, 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 0 | 137 | +137 | 4.19% | EUR 4.5600 | 0.2566 | 35 / 6 | 58.03 | Bullish | Inside bands | HOLD | 2026-08-28 |
 
-![RSU1L return histogram](figures/stock_profiles/RSU1L_histogram.png)
-
 ![RSU1L complete technical history](figures/technical_analysis/RSU1L_technical.png)
 
 <details markdown="1">
@@ -799,6 +797,8 @@ The removed weight is distributed proportionally across all remaining holdings, 
 ![RSU1L combined technical indicators](figures/stock_profiles/RSU1L_technicals_6m.png)
 
 </details>
+
+![RSU1L return histogram](figures/stock_profiles/RSU1L_histogram.png)
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -857,8 +857,6 @@ The removed weight is distributed proportionally across all remaining holdings, 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 0 | 3 | +3 | 0.56% | EUR 22.1000 | 0.3982 | 56 / 11 | 46.17 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
-![IGN1L return histogram](figures/stock_profiles/IGN1L_histogram.png)
-
 ![IGN1L complete technical history](figures/technical_analysis/IGN1L_technical.png)
 
 <details markdown="1">
@@ -867,6 +865,8 @@ The removed weight is distributed proportionally across all remaining holdings, 
 ![IGN1L combined technical indicators](figures/stock_profiles/IGN1L_technicals_6m.png)
 
 </details>
+
+![IGN1L return histogram](figures/stock_profiles/IGN1L_histogram.png)
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -925,8 +925,6 @@ The removed weight is distributed proportionally across all remaining holdings, 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 0 | 123 | +123 | 1.46% | EUR 1.7700 | 0.1239 | 25 / 11 | 45.60 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
-![AKO1L return histogram](figures/stock_profiles/AKO1L_histogram.png)
-
 ![AKO1L complete technical history](figures/technical_analysis/AKO1L_technical.png)
 
 <details markdown="1">
@@ -935,6 +933,8 @@ The removed weight is distributed proportionally across all remaining holdings, 
 ![AKO1L combined technical indicators](figures/stock_profiles/AKO1L_technicals_6m.png)
 
 </details>
+
+![AKO1L return histogram](figures/stock_profiles/AKO1L_histogram.png)
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -993,8 +993,6 @@ The removed weight is distributed proportionally across all remaining holdings, 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 0 | 91 | +91 | 1.05% | EUR 1.7300 | 0.1858 | 35 / 14 | 46.60 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
-![PZV1L return histogram](figures/stock_profiles/PZV1L_histogram.png)
-
 ![PZV1L complete technical history](figures/technical_analysis/PZV1L_technical.png)
 
 <details markdown="1">
@@ -1003,6 +1001,8 @@ The removed weight is distributed proportionally across all remaining holdings, 
 ![PZV1L combined technical indicators](figures/stock_profiles/PZV1L_technicals_6m.png)
 
 </details>
+
+![PZV1L return histogram](figures/stock_profiles/PZV1L_histogram.png)
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -1061,8 +1061,6 @@ The removed weight is distributed proportionally across all remaining holdings, 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 416 | 492 | +76 | 2.94% | EUR 0.8950 | 0.1858 | 38 / 17 | 51.65 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
-![ROE1L return histogram](figures/stock_profiles/ROE1L_histogram.png)
-
 ![ROE1L complete technical history](figures/technical_analysis/ROE1L_technical.png)
 
 <details markdown="1">
@@ -1071,6 +1069,8 @@ The removed weight is distributed proportionally across all remaining holdings, 
 ![ROE1L combined technical indicators](figures/stock_profiles/ROE1L_technicals_6m.png)
 
 </details>
+
+![ROE1L return histogram](figures/stock_profiles/ROE1L_histogram.png)
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -1129,8 +1129,6 @@ The removed weight is distributed proportionally across all remaining holdings, 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 0 | 97 | +97 | 2.17% | EUR 3.3350 | 0.1062 | 34 / 22 | 43.80 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
-![LHV1T return histogram](figures/stock_profiles/LHV1T_histogram.png)
-
 ![LHV1T complete technical history](figures/technical_analysis/LHV1T_technical.png)
 
 <details markdown="1">
@@ -1139,6 +1137,8 @@ The removed weight is distributed proportionally across all remaining holdings, 
 ![LHV1T combined technical indicators](figures/stock_profiles/LHV1T_technicals_6m.png)
 
 </details>
+
+![LHV1T return histogram](figures/stock_profiles/LHV1T_histogram.png)
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -1197,8 +1197,6 @@ The removed weight is distributed proportionally across all remaining holdings, 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 288 | 327 | +39 | 19.89% | EUR 9.1000 | 0.0619 | 29 / 22 | 42.63 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
-![TKM1T return histogram](figures/stock_profiles/TKM1T_histogram.png)
-
 ![TKM1T complete technical history](figures/technical_analysis/TKM1T_technical.png)
 
 <details markdown="1">
@@ -1207,6 +1205,8 @@ The removed weight is distributed proportionally across all remaining holdings, 
 ![TKM1T combined technical indicators](figures/stock_profiles/TKM1T_technicals_6m.png)
 
 </details>
+
+![TKM1T return histogram](figures/stock_profiles/TKM1T_histogram.png)
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -1265,8 +1265,6 @@ The removed weight is distributed proportionally across all remaining holdings, 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 0 | 17 | +17 | 2.30% | EUR 19.4000 | 0.1150 | 36 / 23 | 43.20 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
-![EFT1T return histogram](figures/stock_profiles/EFT1T_histogram.png)
-
 ![EFT1T complete technical history](figures/technical_analysis/EFT1T_technical.png)
 
 <details markdown="1">
@@ -1275,6 +1273,8 @@ The removed weight is distributed proportionally across all remaining holdings, 
 ![EFT1T combined technical indicators](figures/stock_profiles/EFT1T_technicals_6m.png)
 
 </details>
+
+![EFT1T return histogram](figures/stock_profiles/EFT1T_histogram.png)
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -1333,8 +1333,6 @@ The removed weight is distributed proportionally across all remaining holdings, 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 0 | 32 | +32 | 0.48% | EUR 2.2200 | 0.1681 | 43 / 24 | 45.64 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
-![TEL1L return histogram](figures/stock_profiles/TEL1L_histogram.png)
-
 ![TEL1L complete technical history](figures/technical_analysis/TEL1L_technical.png)
 
 <details markdown="1">
@@ -1343,6 +1341,8 @@ The removed weight is distributed proportionally across all remaining holdings, 
 ![TEL1L combined technical indicators](figures/stock_profiles/TEL1L_technicals_6m.png)
 
 </details>
+
+![TEL1L return histogram](figures/stock_profiles/TEL1L_histogram.png)
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -1401,8 +1401,6 @@ The removed weight is distributed proportionally across all remaining holdings, 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 0 | 80 | +80 | 1.24% | EUR 2.3300 | 0.0531 | 30 / 24 | 56.23 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
-![CPA1T return histogram](figures/stock_profiles/CPA1T_histogram.png)
-
 ![CPA1T complete technical history](figures/technical_analysis/CPA1T_technical.png)
 
 <details markdown="1">
@@ -1411,6 +1409,8 @@ The removed weight is distributed proportionally across all remaining holdings, 
 ![CPA1T combined technical indicators](figures/stock_profiles/CPA1T_technicals_6m.png)
 
 </details>
+
+![CPA1T return histogram](figures/stock_profiles/CPA1T_histogram.png)
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -1469,8 +1469,6 @@ The removed weight is distributed proportionally across all remaining holdings, 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 0 | 9 | +9 | 0.38% | EUR 5.9000 | 0.0265 | 27 / 24 | 48.74 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
-![MODE return histogram](figures/stock_profiles/MODE_histogram.png)
-
 ![MODE complete technical history](figures/technical_analysis/MODE_technical.png)
 
 <details markdown="1">
@@ -1479,6 +1477,8 @@ The removed weight is distributed proportionally across all remaining holdings, 
 ![MODE combined technical indicators](figures/stock_profiles/MODE_technicals_6m.png)
 
 </details>
+
+![MODE return histogram](figures/stock_profiles/MODE_histogram.png)
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -1537,8 +1537,6 @@ The removed weight is distributed proportionally across all remaining holdings, 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 700 | 756 | +56 | 3.13% | EUR 0.6200 | 0.0177 | 26 / 24 | 51.82 | Bullish | Inside bands | HOLD | 2026-08-28 |
 
-![TAL1T return histogram](figures/stock_profiles/TAL1T_histogram.png)
-
 ![TAL1T complete technical history](figures/technical_analysis/TAL1T_technical.png)
 
 <details markdown="1">
@@ -1547,6 +1545,8 @@ The removed weight is distributed proportionally across all remaining holdings, 
 ![TAL1T combined technical indicators](figures/stock_profiles/TAL1T_technicals_6m.png)
 
 </details>
+
+![TAL1T return histogram](figures/stock_profiles/TAL1T_histogram.png)
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -1605,8 +1605,6 @@ The removed weight is distributed proportionally across all remaining holdings, 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 0 | 57 | +57 | 4.15% | EUR 10.8500 | 0.0177 | 28 / 26 | 34.52 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
-![TVE1T return histogram](figures/stock_profiles/TVE1T_histogram.png)
-
 ![TVE1T complete technical history](figures/technical_analysis/TVE1T_technical.png)
 
 <details markdown="1">
@@ -1615,6 +1613,8 @@ The removed weight is distributed proportionally across all remaining holdings, 
 ![TVE1T combined technical indicators](figures/stock_profiles/TVE1T_technicals_6m.png)
 
 </details>
+
+![TVE1T return histogram](figures/stock_profiles/TVE1T_histogram.png)
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -1673,8 +1673,6 @@ The removed weight is distributed proportionally across all remaining holdings, 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 330 | 330 | +0 | 2.69% | EUR 1.2220 | -0.0177 | 28 / 30 | 30.19 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
-![TSM1T return histogram](figures/stock_profiles/TSM1T_histogram.png)
-
 ![TSM1T complete technical history](figures/technical_analysis/TSM1T_technical.png)
 
 <details markdown="1">
@@ -1683,6 +1681,8 @@ The removed weight is distributed proportionally across all remaining holdings, 
 ![TSM1T combined technical indicators](figures/stock_profiles/TSM1T_technicals_6m.png)
 
 </details>
+
+![TSM1T return histogram](figures/stock_profiles/TSM1T_histogram.png)
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
