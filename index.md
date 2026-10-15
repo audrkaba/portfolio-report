@@ -41,7 +41,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan
+# Baltic investment plan — updated 2026-10-15 15:39 (Europe/Vilnius)
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
