@@ -228,9 +228,9 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 | Measure | Full portfolio | Portfolio without share | Change |
 | --- | --- | --- | --- |
-| netSD | 0.762712 | 0.694915 | -0.067797 |
-| Rachev ratio | 1.164906 | 1.109635 | -0.055272 |
-| Sortino ratio | 0.151709 | 0.137548 | -0.014161 |
+| netSD | 0.771186 | 0.745763 | -0.025424 |
+| Rachev ratio | 1.160865 | 1.115048 | -0.045817 |
+| Sortino ratio | 0.163417 | 0.150937 | -0.012480 |
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -296,9 +296,9 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 | Measure | Full portfolio | Portfolio without share | Change |
 | --- | --- | --- | --- |
-| netSD | 0.762712 | 0.661017 | -0.101695 |
-| Rachev ratio | 1.164906 | 1.149237 | -0.015670 |
-| Sortino ratio | 0.151709 | 0.118325 | -0.033385 |
+| netSD | 0.771186 | 0.694915 | -0.076271 |
+| Rachev ratio | 1.160865 | 1.148027 | -0.012838 |
+| Sortino ratio | 0.163417 | 0.132939 | -0.030477 |
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -364,9 +364,9 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 | Measure | Full portfolio | Portfolio without share | Change |
 | --- | --- | --- | --- |
-| netSD | 0.762712 | 0.754237 | -0.008475 |
-| Rachev ratio | 1.164906 | 1.171445 | 0.006539 |
-| Sortino ratio | 0.151709 | 0.141491 | -0.010218 |
+| netSD | 0.771186 | 0.737288 | -0.033898 |
+| Rachev ratio | 1.160865 | 1.166501 | 0.005636 |
+| Sortino ratio | 0.163417 | 0.152274 | -0.011143 |
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -432,9 +432,9 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 | Measure | Full portfolio | Portfolio without share | Change |
 | --- | --- | --- | --- |
-| netSD | 0.762712 | 0.720339 | -0.042373 |
-| Rachev ratio | 1.164906 | 1.150245 | -0.014662 |
-| Sortino ratio | 0.151709 | 0.135885 | -0.015824 |
+| netSD | 0.771186 | 0.711864 | -0.059322 |
+| Rachev ratio | 1.160865 | 1.145156 | -0.015708 |
+| Sortino ratio | 0.163417 | 0.147815 | -0.015602 |
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -474,24 +474,24 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 | Measure | Value | Measure | Value | Measure | Value | Measure | Value |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| ArithmeticReturn | -0.000072 | Sterling | -0.074986 | Hurst | 0.448082 | BetaCoSkewness | -2.030547 |
-| GeometricReturn | -0.000082 | Burke | -0.217981 | Kappa | -0.013988 | BetaCoKurtosis | 0.004738 |
-| AnnualizedReturn_Arithmetic | -0.018114 | Martin | -0.214129 | Kelly | -3.419877 | CDD | 0.095249 |
-| AnnualizedReturn_Geometric | -0.020529 | UlcerIndex | 0.095874 | Prospect | -0.511561 | CoSkewness | -0.000000 |
-| CumulativeReturn | -0.060178 | PainIndex | 0.080858 | Information_Daily | -0.074931 | CoKurtosis | 0.000000 |
-| Volatility | 0.004585 | PainRatio | -0.253892 | Information_Annualized | -1.307217 | FamaBeta | 0.414462 |
-| Volatility_Annualized | 0.072778 | VaR_Loss | 0.006772 | CAPMAlpha | -0.000069 | MSquaredExcess | -0.226438 |
-| MaximumDrawdown | 0.173775 | ES_Loss | 0.010609 | JensenAlpha | -0.019729 | NetSelectivity | -0.115312 |
-| AverageDrawdown | 0.036037 | DownsideDeviation | 0.003099 | Treynor_Daily | 0.023511 | Selectivity | -0.019729 |
-| AverageDrawdownLength | 124.833333 | DrawdownDeviation | 0.006378 | Treynor_Annualized | 5.864018 | SpecificRisk | 0.072727 |
-| AverageRecoveryTime | 41.333333 | Rachev | 0.953202 | Modigliani | -0.000173 | SystematicRisk | -0.000615 |
-| Sharpe_Daily | -0.015679 | AdjustedSharpe | -0.198158 | TrackingError_Daily | 0.012010 | TotalRisk | 0.072730 |
-| Sharpe_Annualized | -0.248892 | Skewness | 2.235293 | TrackingError_Annualized | 0.190648 | UpCapture | -0.022895 |
-| Sharpe_VaR | -0.010614 | Kurtosis | 46.048515 | M2Sortino | -0.022177 | UpNumber | 0.252294 |
-| Sharpe_ES | -0.006775 | UpsidePotential | 0.367499 | Appraisal | -0.271269 | UpPercent | 0.094037 |
-| Sortino | -0.023194 | UpsideRisk | 0.003375 | CAPMBeta | -0.003501 | DownCapture | -0.007560 |
-| Calmar | -0.118137 | BernardoLedoit | 0.940633 | ActiveReturn | -0.249219 | DownNumber | 0.251572 |
-| Omega | 0.940633 | DRatio | 1.117079 | OmegaExcessReturn | -0.038273 | DownPercent | 0.902516 |
+| ArithmeticReturn | -0.000070 | Sterling | -0.074176 | Hurst | 0.395572 | BetaCoSkewness | -1.924716 |
+| GeometricReturn | -0.000081 | Burke | -0.195219 | Kappa | -0.014051 | BetaCoKurtosis | 0.010497 |
+| AnnualizedReturn_Arithmetic | -0.017763 | Martin | -0.204125 | Kelly | -3.218401 | CDD | 0.079544 |
+| AnnualizedReturn_Geometric | -0.020308 | UlcerIndex | 0.099486 | Prospect | -0.587322 | CoSkewness | -0.000000 |
+| CumulativeReturn | -0.059541 | PainIndex | 0.084862 | Information_Daily | -0.074984 | CoKurtosis | 0.000000 |
+| Volatility | 0.004680 | PainRatio | -0.239300 | Information_Annualized | -1.308288 | FamaBeta | 0.423082 |
+| Volatility_Annualized | 0.074292 | VaR_Loss | 0.007200 | CAPMAlpha | -0.000072 | MSquaredExcess | -0.225190 |
+| MaximumDrawdown | 0.173775 | ES_Loss | 0.010920 | JensenAlpha | -0.020793 | NetSelectivity | -0.117062 |
+| AverageDrawdown | 0.031050 | DownsideDeviation | 0.003300 | Treynor_Daily | -0.038387 | Selectivity | -0.020793 |
+| AverageDrawdownLength | 107.000000 | DrawdownDeviation | 0.006378 | Treynor_Annualized | -9.575251 | SpecificRisk | 0.074242 |
+| AverageRecoveryTime | 35.285714 | Rachev | 0.954479 | Modigliani | -0.000167 | SystematicRisk | 0.000372 |
+| Sharpe_Daily | -0.015062 | AdjustedSharpe | -0.228646 | TrackingError_Daily | 0.011989 | TotalRisk | 0.074243 |
+| Sharpe_Annualized | -0.239101 | Skewness | 0.479749 | TrackingError_Annualized | 0.190323 | UpCapture | -0.025506 |
+| Sharpe_VaR | -0.009790 | Kurtosis | 13.330999 | M2Sortino | -0.021757 | UpNumber | 0.316514 |
+| Sharpe_ES | -0.006455 | UpsidePotential | 0.431408 | Appraisal | -0.280065 | UpPercent | 0.119266 |
+| Sortino | -0.021361 | UpsideRisk | 0.003315 | CAPMBeta | 0.002121 | DownCapture | -0.011262 |
+| Calmar | -0.116861 | BernardoLedoit | 0.952821 | ActiveReturn | -0.248997 | DownNumber | 0.308176 |
+| Omega | 0.952821 | DRatio | 1.070846 | OmegaExcessReturn | -0.039201 | DownPercent | 0.886792 |
 
 </details>
 
@@ -500,9 +500,9 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 | Measure | Full portfolio | Portfolio without share | Change |
 | --- | --- | --- | --- |
-| netSD | 0.762712 | 0.754237 | -0.008475 |
-| Rachev ratio | 1.164906 | 1.165106 | 0.000199 |
-| Sortino ratio | 0.151709 | 0.153281 | 0.001572 |
+| netSD | 0.771186 | 0.762712 | -0.008475 |
+| Rachev ratio | 1.160865 | 1.160955 | 0.000091 |
+| Sortino ratio | 0.163417 | 0.163898 | 0.000481 |
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -568,9 +568,9 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 | Measure | Full portfolio | Portfolio without share | Change |
 | --- | --- | --- | --- |
-| netSD | 0.762712 | 0.720339 | -0.042373 |
-| Rachev ratio | 1.164906 | 1.185351 | 0.020444 |
-| Sortino ratio | 0.151709 | 0.138648 | -0.013061 |
+| netSD | 0.771186 | 0.745763 | -0.025424 |
+| Rachev ratio | 1.160865 | 1.182541 | 0.021676 |
+| Sortino ratio | 0.163417 | 0.152133 | -0.011284 |
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -636,9 +636,9 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 | Measure | Full portfolio | Portfolio without share | Change |
 | --- | --- | --- | --- |
-| netSD | 0.762712 | 0.754237 | -0.008475 |
-| Rachev ratio | 1.164906 | 1.159221 | -0.005685 |
-| Sortino ratio | 0.151709 | 0.155376 | 0.003667 |
+| netSD | 0.771186 | 0.745763 | -0.025424 |
+| Rachev ratio | 1.160865 | 1.147725 | -0.013140 |
+| Sortino ratio | 0.163417 | 0.168476 | 0.005059 |
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -704,9 +704,9 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 | Measure | Full portfolio | Portfolio without share | Change |
 | --- | --- | --- | --- |
-| netSD | 0.762712 | 0.728814 | -0.033898 |
-| Rachev ratio | 1.164906 | 1.207013 | 0.042106 |
-| Sortino ratio | 0.151709 | 0.148955 | -0.002754 |
+| netSD | 0.771186 | 0.779661 | 0.008475 |
+| Rachev ratio | 1.160865 | 1.210305 | 0.049440 |
+| Sortino ratio | 0.163417 | 0.162984 | -0.000433 |
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -772,9 +772,9 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 | Measure | Full portfolio | Portfolio without share | Change |
 | --- | --- | --- | --- |
-| netSD | 0.762712 | 0.754237 | -0.008475 |
-| Rachev ratio | 1.164906 | 1.161779 | -0.003127 |
-| Sortino ratio | 0.151709 | 0.147083 | -0.004627 |
+| netSD | 0.771186 | 0.728814 | -0.042373 |
+| Rachev ratio | 1.160865 | 1.156594 | -0.004271 |
+| Sortino ratio | 0.163417 | 0.157624 | -0.005793 |
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -840,9 +840,9 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 | Measure | Full portfolio | Portfolio without share | Change |
 | --- | --- | --- | --- |
-| netSD | 0.762712 | 0.754237 | -0.008475 |
-| Rachev ratio | 1.164906 | 1.196454 | 0.031548 |
-| Sortino ratio | 0.151709 | 0.154013 | 0.002304 |
+| netSD | 0.771186 | 0.762712 | -0.008475 |
+| Rachev ratio | 1.160865 | 1.186131 | 0.025266 |
+| Sortino ratio | 0.163417 | 0.165766 | 0.002349 |
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -908,9 +908,9 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 | Measure | Full portfolio | Portfolio without share | Change |
 | --- | --- | --- | --- |
-| netSD | 0.762712 | 0.762712 | 0.000000 |
-| Rachev ratio | 1.164906 | 1.164759 | -0.000147 |
-| Sortino ratio | 0.151709 | 0.151807 | 0.000098 |
+| netSD | 0.771186 | 0.771186 | 0.000000 |
+| Rachev ratio | 1.160865 | 1.160126 | -0.000738 |
+| Sortino ratio | 0.163417 | 0.164062 | 0.000645 |
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -976,9 +976,9 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 | Measure | Full portfolio | Portfolio without share | Change |
 | --- | --- | --- | --- |
-| netSD | 0.762712 | 0.754237 | -0.008475 |
-| Rachev ratio | 1.164906 | 1.167895 | 0.002988 |
-| Sortino ratio | 0.151709 | 0.152086 | 0.000377 |
+| netSD | 0.771186 | 0.762712 | -0.008475 |
+| Rachev ratio | 1.160865 | 1.165920 | 0.005056 |
+| Sortino ratio | 0.163417 | 0.163847 | 0.000430 |
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -1044,9 +1044,9 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 | Measure | Full portfolio | Portfolio without share | Change |
 | --- | --- | --- | --- |
-| netSD | 0.762712 | 0.754237 | -0.008475 |
-| Rachev ratio | 1.164906 | 1.168771 | 0.003864 |
-| Sortino ratio | 0.151709 | 0.149315 | -0.002394 |
+| netSD | 0.771186 | 0.754237 | -0.016949 |
+| Rachev ratio | 1.160865 | 1.166406 | 0.005541 |
+| Sortino ratio | 0.163417 | 0.159923 | -0.003494 |
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -1112,9 +1112,9 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 | Measure | Full portfolio | Portfolio without share | Change |
 | --- | --- | --- | --- |
-| netSD | 0.762712 | 0.754237 | -0.008475 |
-| Rachev ratio | 1.164906 | 1.172114 | 0.007208 |
-| Sortino ratio | 0.151709 | 0.150766 | -0.000943 |
+| netSD | 0.771186 | 0.762712 | -0.008475 |
+| Rachev ratio | 1.160865 | 1.162899 | 0.002034 |
+| Sortino ratio | 0.163417 | 0.162939 | -0.000478 |
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -1180,9 +1180,9 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 | Measure | Full portfolio | Portfolio without share | Change |
 | --- | --- | --- | --- |
-| netSD | 0.762712 | 0.771186 | 0.008475 |
-| Rachev ratio | 1.164906 | 1.167317 | 0.002411 |
-| Sortino ratio | 0.151709 | 0.156274 | 0.004564 |
+| netSD | 0.771186 | 0.779661 | 0.008475 |
+| Rachev ratio | 1.160865 | 1.163802 | 0.002938 |
+| Sortino ratio | 0.163417 | 0.165712 | 0.002296 |
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -1248,9 +1248,9 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 | Measure | Full portfolio | Portfolio without share | Change |
 | --- | --- | --- | --- |
-| netSD | 0.762712 | 0.711864 | -0.050847 |
-| Rachev ratio | 1.164906 | 1.220083 | 0.055177 |
-| Sortino ratio | 0.151709 | 0.169790 | 0.018081 |
+| netSD | 0.771186 | 0.728814 | -0.042373 |
+| Rachev ratio | 1.160865 | 1.217635 | 0.056770 |
+| Sortino ratio | 0.163417 | 0.180924 | 0.017507 |
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -1316,9 +1316,9 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 | Measure | Full portfolio | Portfolio without share | Change |
 | --- | --- | --- | --- |
-| netSD | 0.762712 | 0.754237 | -0.008475 |
-| Rachev ratio | 1.164906 | 1.167737 | 0.002831 |
-| Sortino ratio | 0.151709 | 0.152944 | 0.001234 |
+| netSD | 0.771186 | 0.771186 | 0.000000 |
+| Rachev ratio | 1.160865 | 1.163141 | 0.002276 |
+| Sortino ratio | 0.163417 | 0.164302 | 0.000886 |
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -1384,9 +1384,9 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 | Measure | Full portfolio | Portfolio without share | Change |
 | --- | --- | --- | --- |
-| netSD | 0.762712 | 0.762712 | 0.000000 |
-| Rachev ratio | 1.164906 | 1.165474 | 0.000567 |
-| Sortino ratio | 0.151709 | 0.151732 | 0.000023 |
+| netSD | 0.771186 | 0.754237 | -0.016949 |
+| Rachev ratio | 1.160865 | 1.163438 | 0.002573 |
+| Sortino ratio | 0.163417 | 0.163732 | 0.000315 |
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -1452,9 +1452,9 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 | Measure | Full portfolio | Portfolio without share | Change |
 | --- | --- | --- | --- |
-| netSD | 0.762712 | 0.771186 | 0.008475 |
-| Rachev ratio | 1.164906 | 1.167469 | 0.002563 |
-| Sortino ratio | 0.151709 | 0.154096 | 0.002387 |
+| netSD | 0.771186 | 0.771186 | 0.000000 |
+| Rachev ratio | 1.160865 | 1.162541 | 0.001676 |
+| Sortino ratio | 0.163417 | 0.164694 | 0.001278 |
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -1520,9 +1520,9 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 | Measure | Full portfolio | Portfolio without share | Change |
 | --- | --- | --- | --- |
-| netSD | 0.762712 | 0.762712 | 0.000000 |
-| Rachev ratio | 1.164906 | 1.162434 | -0.002472 |
-| Sortino ratio | 0.151709 | 0.150971 | -0.000738 |
+| netSD | 0.771186 | 0.771186 | 0.000000 |
+| Rachev ratio | 1.160865 | 1.159915 | -0.000949 |
+| Sortino ratio | 0.163417 | 0.162786 | -0.000631 |
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -1588,9 +1588,9 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 | Measure | Full portfolio | Portfolio without share | Change |
 | --- | --- | --- | --- |
-| netSD | 0.762712 | 0.754237 | -0.008475 |
-| Rachev ratio | 1.164906 | 1.171458 | 0.006552 |
-| Sortino ratio | 0.151709 | 0.152758 | 0.001049 |
+| netSD | 0.771186 | 0.771186 | 0.000000 |
+| Rachev ratio | 1.160865 | 1.167762 | 0.006897 |
+| Sortino ratio | 0.163417 | 0.165972 | 0.002555 |
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -1656,9 +1656,9 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 | Measure | Full portfolio | Portfolio without share | Change |
 | --- | --- | --- | --- |
-| netSD | 0.762712 | 0.754237 | -0.008475 |
-| Rachev ratio | 1.164906 | 1.156783 | -0.008123 |
-| Sortino ratio | 0.151709 | 0.157194 | 0.005484 |
+| netSD | 0.771186 | 0.771186 | 0.000000 |
+| Rachev ratio | 1.160865 | 1.160574 | -0.000291 |
+| Sortino ratio | 0.163417 | 0.163677 | 0.000260 |
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -1724,9 +1724,9 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 | Measure | Full portfolio | Portfolio without share | Change |
 | --- | --- | --- | --- |
-| netSD | 0.762712 | 0.762712 | 0.000000 |
-| Rachev ratio | 1.164906 | 1.167529 | 0.002622 |
-| Sortino ratio | 0.151709 | 0.155225 | 0.003516 |
+| netSD | 0.771186 | 0.771186 | 0.000000 |
+| Rachev ratio | 1.160865 | 1.165971 | 0.005107 |
+| Sortino ratio | 0.163417 | 0.167124 | 0.003707 |
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -1738,37 +1738,37 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 Each scenario removes one share from curent_update_baltic and proportionally rescales the remaining weights. Positive delta means that the ratio improves after removal; negative delta means that the removed share was beneficial for that criterion.
 
-**Main result.** Removing **CPA1T** produces the largest netSD change (+0.008475); removing **TKM1T** gives the largest Rachev improvement (+0.055177); removing **TKM1T** gives the largest Sortino improvement (+0.018081). These are sensitivity results, not automatically new trade recommendations, because the three criteria can move in opposite directions.
+**Main result.** Removing **LHV1T** produces the largest netSD change (+0.008475); removing **TKM1T** gives the largest Rachev improvement (+0.056770); removing **TKM1T** gives the largest Sortino improvement (+0.017507). These are sensitivity results, not automatically new trade recommendations, because the three criteria can move in opposite directions.
 
 <details markdown="1">
 <summary><strong>Open complete netSD, Rachev and Sortino sensitivity table</strong></summary>
 
 | Removed share | netSD | Δ netSD | Rachev | Δ Rachev | Sortino | Δ Sortino |
 | --- | --- | --- | --- | --- | --- | --- |
-| None (baseline) | 0.762712 | 0.000000 | 1.164906 | 0.000000 | 0.151709 | 0.000000 |
-| AKO1L | 0.754237 | -0.008475 | 1.167895 | 0.002988 | 0.152086 | 0.000377 |
-| APG1L | 0.720339 | -0.042373 | 1.185351 | 0.020444 | 0.138648 | -0.013061 |
-| CPA1T | 0.771186 | 0.008475 | 1.167469 | 0.002563 | 0.154096 | 0.002387 |
-| EFT1T | 0.754237 | -0.008475 | 1.167737 | 0.002831 | 0.152944 | 0.001234 |
-| GRG1L | 0.754237 | -0.008475 | 1.161779 | -0.003127 | 0.147083 | -0.004627 |
-| HAE1T | 0.754237 | -0.008475 | 1.159221 | -0.005685 | 0.155376 | 0.003667 |
-| IGN1L | 0.762712 | 0.000000 | 1.164759 | -0.000147 | 0.151807 | 0.000098 |
-| KNE1L | 0.754237 | -0.008475 | 1.171445 | 0.006539 | 0.141491 | -0.010218 |
-| LHV1T | 0.771186 | 0.008475 | 1.167317 | 0.002411 | 0.156274 | 0.004564 |
-| MODE | 0.762712 | 0.000000 | 1.162434 | -0.002472 | 0.150971 | -0.000738 |
-| MOLNR | 0.694915 | -0.067797 | 1.109635 | -0.055272 | 0.137548 | -0.014161 |
-| MRK1T | 0.720339 | -0.042373 | 1.150245 | -0.014662 | 0.135885 | -0.015824 |
-| PZV1L | 0.754237 | -0.008475 | 1.168771 | 0.003864 | 0.149315 | -0.002394 |
-| ROE1L | 0.754237 | -0.008475 | 1.172114 | 0.007208 | 0.150766 | -0.000943 |
-| RSU1L | 0.754237 | -0.008475 | 1.196454 | 0.031548 | 0.154013 | 0.002304 |
-| SAF1R | 0.728814 | -0.033898 | 1.207013 | 0.042106 | 0.148955 | -0.002754 |
-| TAL1T | 0.754237 | -0.008475 | 1.171458 | 0.006552 | 0.152758 | 0.001049 |
-| TEL1L | 0.762712 | 0.000000 | 1.165474 | 0.000567 | 0.151732 | 0.000023 |
-| TKM1T | 0.711864 | -0.050847 | 1.220083 | 0.055177 | 0.169790 | 0.018081 |
-| TSM1T | 0.762712 | 0.000000 | 1.167529 | 0.002622 | 0.155225 | 0.003516 |
-| TVE1T | 0.754237 | -0.008475 | 1.156783 | -0.008123 | 0.157194 | 0.005484 |
-| VIRSI | 0.754237 | -0.008475 | 1.165106 | 0.000199 | 0.153281 | 0.001572 |
-| VLP1L | 0.661017 | -0.101695 | 1.149237 | -0.015670 | 0.118325 | -0.033385 |
+| None (baseline) | 0.771186 | 0.000000 | 1.160865 | 0.000000 | 0.163417 | 0.000000 |
+| AKO1L | 0.762712 | -0.008475 | 1.165920 | 0.005056 | 0.163847 | 0.000430 |
+| APG1L | 0.745763 | -0.025424 | 1.182541 | 0.021676 | 0.152133 | -0.011284 |
+| CPA1T | 0.771186 | 0.000000 | 1.162541 | 0.001676 | 0.164694 | 0.001278 |
+| EFT1T | 0.771186 | 0.000000 | 1.163141 | 0.002276 | 0.164302 | 0.000886 |
+| GRG1L | 0.728814 | -0.042373 | 1.156594 | -0.004271 | 0.157624 | -0.005793 |
+| HAE1T | 0.745763 | -0.025424 | 1.147725 | -0.013140 | 0.168476 | 0.005059 |
+| IGN1L | 0.771186 | 0.000000 | 1.160126 | -0.000738 | 0.164062 | 0.000645 |
+| KNE1L | 0.737288 | -0.033898 | 1.166501 | 0.005636 | 0.152274 | -0.011143 |
+| LHV1T | 0.779661 | 0.008475 | 1.163802 | 0.002938 | 0.165712 | 0.002296 |
+| MODE | 0.771186 | 0.000000 | 1.159915 | -0.000949 | 0.162786 | -0.000631 |
+| MOLNR | 0.745763 | -0.025424 | 1.115048 | -0.045817 | 0.150937 | -0.012480 |
+| MRK1T | 0.711864 | -0.059322 | 1.145156 | -0.015708 | 0.147815 | -0.015602 |
+| PZV1L | 0.754237 | -0.016949 | 1.166406 | 0.005541 | 0.159923 | -0.003494 |
+| ROE1L | 0.762712 | -0.008475 | 1.162899 | 0.002034 | 0.162939 | -0.000478 |
+| RSU1L | 0.762712 | -0.008475 | 1.186131 | 0.025266 | 0.165766 | 0.002349 |
+| SAF1R | 0.779661 | 0.008475 | 1.210305 | 0.049440 | 0.162984 | -0.000433 |
+| TAL1T | 0.771186 | 0.000000 | 1.167762 | 0.006897 | 0.165972 | 0.002555 |
+| TEL1L | 0.754237 | -0.016949 | 1.163438 | 0.002573 | 0.163732 | 0.000315 |
+| TKM1T | 0.728814 | -0.042373 | 1.217635 | 0.056770 | 0.180924 | 0.017507 |
+| TSM1T | 0.771186 | 0.000000 | 1.165971 | 0.005107 | 0.167124 | 0.003707 |
+| TVE1T | 0.771186 | 0.000000 | 1.160574 | -0.000291 | 0.163677 | 0.000260 |
+| VIRSI | 0.762712 | -0.008475 | 1.160955 | 0.000091 | 0.163898 | 0.000481 |
+| VLP1L | 0.694915 | -0.076271 | 1.148027 | -0.012838 | 0.132939 | -0.030477 |
 
 </details>
 
