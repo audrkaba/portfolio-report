@@ -31,6 +31,9 @@ table { display:block; width:100%; overflow-x:auto; border-collapse:collapse; wh
 .stock-summary-table th span { display:inline-block; writing-mode:vertical-rl; transform:rotate(180deg); white-space:nowrap; }
 .stock-summary-table td { padding:.4rem .12rem; text-align:center; overflow-wrap:anywhere; }
 .stock-summary-table th:first-child,.stock-summary-table td:first-child { text-align:center; }
+.cdf-with-key { display:grid; grid-template-columns:minmax(0,4fr) minmax(170px,1fr); gap:12px; align-items:center; }
+.cdf-with-key img { width:100%; margin:.5rem 0; }
+.cdf-with-key .cdf-key { max-height:520px; object-fit:contain; }
 th,td { padding:.5rem .65rem; border:1px solid var(--line); text-align:right; }
 th { background:#dceff1; color:#173246; }
 th:first-child,td:first-child { text-align:left; }
@@ -41,7 +44,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan — updated 2026-10-15 15:59 (Europe/Vilnius)
+# Baltic investment plan — updated 2026-10-15 16:22 (Europe/Vilnius)
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -173,9 +176,10 @@ Current-portfolio netSD is 0.451327; the optimised-portfolio value is 0.902655. 
 
 A positive trade_shares value means buy, a negative value means sell, and zero means hold. Target shares are obtained by flooring the continuous optimal allocation at the last observed price; unused cash therefore remains nonnegative.
 
-## Table 3A: interactive share profiles
+<details markdown="1" class="profiles-section">
+<summary><strong>Table 3A. Interactive share profiles</strong></summary>
 
-Select a share to display its allocation, technical indicators, all PerformanceAnalytics measures, stochastic-dominance curves and leave-one-out effect.
+Select a share to display its allocation, technical indicators, all PerformanceAnalytics measures and portfolio sensitivity.
 
 <details markdown="1" class="stock-profile" id="share-molnr">
 <summary><strong>MOLNR — J. Molner</strong> | BUY | target 27 shares | priority 1</summary>
@@ -254,16 +258,15 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 </details>
 
 <details markdown="1">
-<summary>Effect of removing this share from curent_update_baltic</summary>
+<summary>Portfolio sensitivity</summary>
+
+**Removing this share from curent_update_baltic**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.725664</td><td>-0.097345</td></tr><tr><td>OUT</td><td>93</td><td>82</td><td>-11</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.084471</td><td>-0.059806</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.147143</td><td>-0.017500</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
-</details>
-
-<details markdown="1">
-<summary>Effect of adding this share to the current portfolio</summary>
+**Adding this share to the current portfolio**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>Added shares</td><td>0</td><td>27</td><td>+27</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8554.680041</td><td>510.299990</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.601770</td><td>0.150442</td></tr><tr><td>OUT</td><td>59</td><td>72</td><td>+13</td></tr><tr><td>IN</td><td>8</td><td>4</td><td>-4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.177707</td><td>0.117316</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.121332</td><td>0.024886</td></tr></tbody></table>
 
@@ -350,16 +353,15 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 </details>
 
 <details markdown="1">
-<summary>Effect of removing this share from curent_update_baltic</summary>
+<summary>Portfolio sensitivity</summary>
+
+**Removing this share from curent_update_baltic**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.699115</td><td>-0.123894</td></tr><tr><td>OUT</td><td>93</td><td>79</td><td>-14</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.131153</td><td>-0.013124</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.134036</td><td>-0.030607</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
-</details>
-
-<details markdown="1">
-<summary>Effect of adding this share to the current portfolio</summary>
+**Adding this share to the current portfolio**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>Added shares</td><td>0</td><td>27</td><td>+27</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8462.880051</td><td>418.500000</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.539823</td><td>0.088496</td></tr><tr><td>OUT</td><td>59</td><td>66</td><td>+7</td></tr><tr><td>IN</td><td>8</td><td>5</td><td>-3</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.074459</td><td>0.014068</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.112474</td><td>0.016028</td></tr></tbody></table>
 
@@ -446,16 +448,15 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 </details>
 
 <details markdown="1">
-<summary>Effect of removing this share from curent_update_baltic</summary>
+<summary>Portfolio sensitivity</summary>
+
+**Removing this share from curent_update_baltic**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.769912</td><td>-0.053097</td></tr><tr><td>OUT</td><td>93</td><td>87</td><td>-6</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.155081</td><td>0.010804</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.155578</td><td>-0.009066</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
-</details>
-
-<details markdown="1">
-<summary>Effect of adding this share to the current portfolio</summary>
+**Adding this share to the current portfolio**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>Added shares</td><td>0</td><td>1438</td><td>+1438</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8751.876070</td><td>707.496020</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.566372</td><td>0.115044</td></tr><tr><td>OUT</td><td>59</td><td>68</td><td>+9</td></tr><tr><td>IN</td><td>8</td><td>4</td><td>-4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.071459</td><td>0.011069</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.112131</td><td>0.015685</td></tr></tbody></table>
 
@@ -542,16 +543,15 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 </details>
 
 <details markdown="1">
-<summary>Effect of removing this share from curent_update_baltic</summary>
+<summary>Portfolio sensitivity</summary>
+
+**Removing this share from curent_update_baltic**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.734513</td><td>-0.088496</td></tr><tr><td>OUT</td><td>93</td><td>83</td><td>-10</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.127628</td><td>-0.016649</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.150276</td><td>-0.014368</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
-</details>
-
-<details markdown="1">
-<summary>Effect of adding this share to the current portfolio</summary>
+**Adding this share to the current portfolio**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>Added shares</td><td>0</td><td>22</td><td>+22</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8636.180043</td><td>591.799992</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.548673</td><td>0.097345</td></tr><tr><td>OUT</td><td>59</td><td>66</td><td>+7</td></tr><tr><td>IN</td><td>8</td><td>4</td><td>-4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.082185</td><td>0.021795</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.107872</td><td>0.011426</td></tr></tbody></table>
 
@@ -638,16 +638,15 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 </details>
 
 <details markdown="1">
-<summary>Effect of removing this share from curent_update_baltic</summary>
+<summary>Portfolio sensitivity</summary>
+
+**Removing this share from curent_update_baltic**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.823009</td><td>0.000000</td></tr><tr><td>OUT</td><td>93</td><td>93</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.144134</td><td>-0.000143</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.164952</td><td>0.000309</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
-</details>
-
-<details markdown="1">
-<summary>Effect of adding this share to the current portfolio</summary>
+**Adding this share to the current portfolio**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>Added shares</td><td>0</td><td>44</td><td>+44</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8237.100051</td><td>192.720000</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.424779</td><td>-0.026549</td></tr><tr><td>OUT</td><td>59</td><td>60</td><td>+1</td></tr><tr><td>IN</td><td>8</td><td>12</td><td>+4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.059883</td><td>-0.000507</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.096263</td><td>-0.000182</td></tr></tbody></table>
 
@@ -734,16 +733,15 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 </details>
 
 <details markdown="1">
-<summary>Effect of removing this share from curent_update_baltic</summary>
+<summary>Portfolio sensitivity</summary>
+
+**Removing this share from curent_update_baltic**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.743363</td><td>-0.079646</td></tr><tr><td>OUT</td><td>93</td><td>84</td><td>-9</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.159539</td><td>0.015261</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.154325</td><td>-0.010318</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
-</details>
-
-<details markdown="1">
-<summary>Effect of adding this share to the current portfolio</summary>
+**Adding this share to the current portfolio**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>Added shares</td><td>0</td><td>54</td><td>+54</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8259.300052</td><td>214.920001</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.504425</td><td>0.053097</td></tr><tr><td>OUT</td><td>59</td><td>62</td><td>+3</td></tr><tr><td>IN</td><td>8</td><td>5</td><td>-3</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.056123</td><td>-0.004268</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.100009</td><td>0.003563</td></tr></tbody></table>
 
@@ -830,16 +828,15 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 </details>
 
 <details markdown="1">
-<summary>Effect of removing this share from curent_update_baltic</summary>
+<summary>Portfolio sensitivity</summary>
+
+**Removing this share from curent_update_baltic**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.796460</td><td>-0.026549</td></tr><tr><td>OUT</td><td>93</td><td>90</td><td>-3</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.128937</td><td>-0.015340</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.166639</td><td>0.001996</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
-</details>
-
-<details markdown="1">
-<summary>Effect of adding this share to the current portfolio</summary>
+**Adding this share to the current portfolio**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>Added shares</td><td>0</td><td>47</td><td>+47</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8285.960045</td><td>241.579994</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.424779</td><td>-0.026549</td></tr><tr><td>OUT</td><td>59</td><td>60</td><td>+1</td></tr><tr><td>IN</td><td>8</td><td>12</td><td>+4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.062031</td><td>0.001641</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.095905</td><td>-0.000541</td></tr></tbody></table>
 
@@ -926,16 +923,15 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 </details>
 
 <details markdown="1">
-<summary>Effect of removing this share from curent_update_baltic</summary>
+<summary>Portfolio sensitivity</summary>
+
+**Removing this share from curent_update_baltic**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.796460</td><td>-0.026549</td></tr><tr><td>OUT</td><td>93</td><td>90</td><td>-3</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.175662</td><td>0.031385</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.172213</td><td>0.007569</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
-</details>
-
-<details markdown="1">
-<summary>Effect of adding this share to the current portfolio</summary>
+**Adding this share to the current portfolio**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>Added shares</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8044.380051</td><td>0.000000</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.451327</td><td>0.000000</td></tr><tr><td>OUT</td><td>59</td><td>59</td><td>+0</td></tr><tr><td>IN</td><td>8</td><td>8</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.060390</td><td>0.000000</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.096446</td><td>0.000000</td></tr></tbody></table>
 
@@ -1022,16 +1018,15 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 </details>
 
 <details markdown="1">
-<summary>Effect of removing this share from curent_update_baltic</summary>
+<summary>Portfolio sensitivity</summary>
+
+**Removing this share from curent_update_baltic**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.814159</td><td>-0.008850</td></tr><tr><td>OUT</td><td>93</td><td>92</td><td>-1</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.140842</td><td>-0.003435</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.161601</td><td>-0.003043</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
-</details>
-
-<details markdown="1">
-<summary>Effect of adding this share to the current portfolio</summary>
+**Adding this share to the current portfolio**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>Added shares</td><td>0</td><td>519</td><td>+519</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8568.570046</td><td>524.189995</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.530973</td><td>0.079646</td></tr><tr><td>OUT</td><td>59</td><td>64</td><td>+5</td></tr><tr><td>IN</td><td>8</td><td>4</td><td>-4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.064156</td><td>0.003765</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.102431</td><td>0.005985</td></tr></tbody></table>
 
@@ -1118,16 +1113,15 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 </details>
 
 <details markdown="1">
-<summary>Effect of removing this share from curent_update_baltic</summary>
+<summary>Portfolio sensitivity</summary>
+
+**Removing this share from curent_update_baltic**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.796460</td><td>-0.026549</td></tr><tr><td>OUT</td><td>93</td><td>90</td><td>-3</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.158492</td><td>0.014215</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.160546</td><td>-0.004097</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
-</details>
-
-<details markdown="1">
-<summary>Effect of adding this share to the current portfolio</summary>
+**Adding this share to the current portfolio**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>Added shares</td><td>0</td><td>149</td><td>+149</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8723.820042</td><td>679.439991</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.530973</td><td>0.079646</td></tr><tr><td>OUT</td><td>59</td><td>64</td><td>+5</td></tr><tr><td>IN</td><td>8</td><td>4</td><td>-4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.057379</td><td>-0.003012</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.105238</td><td>0.008793</td></tr></tbody></table>
 
@@ -1214,16 +1208,15 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 </details>
 
 <details markdown="1">
-<summary>Effect of removing this share from curent_update_baltic</summary>
+<summary>Portfolio sensitivity</summary>
+
+**Removing this share from curent_update_baltic**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.823009</td><td>0.000000</td></tr><tr><td>OUT</td><td>93</td><td>93</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.143883</td><td>-0.000394</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.164592</td><td>-0.000052</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
-</details>
-
-<details markdown="1">
-<summary>Effect of adding this share to the current portfolio</summary>
+**Adding this share to the current portfolio**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>Added shares</td><td>0</td><td>6</td><td>+6</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8176.980053</td><td>132.600002</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.424779</td><td>-0.026549</td></tr><tr><td>OUT</td><td>59</td><td>60</td><td>+1</td></tr><tr><td>IN</td><td>8</td><td>12</td><td>+4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.061430</td><td>0.001039</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.097014</td><td>0.000568</td></tr></tbody></table>
 
@@ -1310,16 +1303,15 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 </details>
 
 <details markdown="1">
-<summary>Effect of removing this share from curent_update_baltic</summary>
+<summary>Portfolio sensitivity</summary>
+
+**Removing this share from curent_update_baltic**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.823009</td><td>0.000000</td></tr><tr><td>OUT</td><td>93</td><td>93</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.143852</td><td>-0.000425</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.164145</td><td>-0.000498</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
-</details>
-
-<details markdown="1">
-<summary>Effect of adding this share to the current portfolio</summary>
+**Adding this share to the current portfolio**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>Added shares</td><td>0</td><td>111</td><td>+111</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8240.850049</td><td>196.469998</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.495575</td><td>0.044248</td></tr><tr><td>OUT</td><td>59</td><td>62</td><td>+3</td></tr><tr><td>IN</td><td>8</td><td>6</td><td>-2</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.057397</td><td>-0.002993</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.098120</td><td>0.001675</td></tr></tbody></table>
 
@@ -1406,16 +1398,15 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 </details>
 
 <details markdown="1">
-<summary>Effect of removing this share from curent_update_baltic</summary>
+<summary>Portfolio sensitivity</summary>
+
+**Removing this share from curent_update_baltic**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.823009</td><td>0.000000</td></tr><tr><td>OUT</td><td>93</td><td>93</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.145374</td><td>0.001097</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.164179</td><td>-0.000465</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
-</details>
-
-<details markdown="1">
-<summary>Effect of adding this share to the current portfolio</summary>
+**Adding this share to the current portfolio**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>Added shares</td><td>0</td><td>30</td><td>+30</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8096.280051</td><td>51.900001</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.495575</td><td>0.044248</td></tr><tr><td>OUT</td><td>59</td><td>62</td><td>+3</td></tr><tr><td>IN</td><td>8</td><td>6</td><td>-2</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.061808</td><td>0.001418</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.097267</td><td>0.000822</td></tr></tbody></table>
 
@@ -1502,16 +1493,15 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 </details>
 
 <details markdown="1">
-<summary>Effect of removing this share from curent_update_baltic</summary>
+<summary>Portfolio sensitivity</summary>
+
+**Removing this share from curent_update_baltic**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.831858</td><td>0.008850</td></tr><tr><td>OUT</td><td>93</td><td>94</td><td>+1</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.141467</td><td>-0.002810</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.165744</td><td>0.001101</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
-</details>
-
-<details markdown="1">
-<summary>Effect of adding this share to the current portfolio</summary>
+**Adding this share to the current portfolio**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>Added shares</td><td>0</td><td>490</td><td>+490</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8482.930042</td><td>438.549991</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.424779</td><td>-0.026549</td></tr><tr><td>OUT</td><td>59</td><td>60</td><td>+1</td></tr><tr><td>IN</td><td>8</td><td>12</td><td>+4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.063878</td><td>0.003487</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.098405</td><td>0.001959</td></tr></tbody></table>
 
@@ -1598,16 +1588,15 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 </details>
 
 <details markdown="1">
-<summary>Effect of removing this share from curent_update_baltic</summary>
+<summary>Portfolio sensitivity</summary>
+
+**Removing this share from curent_update_baltic**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.778761</td><td>-0.044248</td></tr><tr><td>OUT</td><td>93</td><td>88</td><td>-5</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.197354</td><td>0.053077</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.182056</td><td>0.017413</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
-</details>
-
-<details markdown="1">
-<summary>Effect of adding this share to the current portfolio</summary>
+**Adding this share to the current portfolio**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>Added shares</td><td>0</td><td>27</td><td>+27</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8290.080061</td><td>245.700010</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.424779</td><td>-0.026549</td></tr><tr><td>OUT</td><td>59</td><td>60</td><td>+1</td></tr><tr><td>IN</td><td>8</td><td>12</td><td>+4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.054719</td><td>-0.005671</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.094497</td><td>-0.001948</td></tr></tbody></table>
 
@@ -1694,16 +1683,15 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 </details>
 
 <details markdown="1">
-<summary>Effect of removing this share from curent_update_baltic</summary>
+<summary>Portfolio sensitivity</summary>
+
+**Removing this share from curent_update_baltic**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.805310</td><td>-0.017699</td></tr><tr><td>OUT</td><td>93</td><td>91</td><td>-2</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.145198</td><td>0.000921</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.165381</td><td>0.000737</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
-</details>
-
-<details markdown="1">
-<summary>Effect of adding this share to the current portfolio</summary>
+**Adding this share to the current portfolio**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>Added shares</td><td>0</td><td>23</td><td>+23</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8490.580042</td><td>446.199991</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.442478</td><td>-0.008850</td></tr><tr><td>OUT</td><td>59</td><td>60</td><td>+1</td></tr><tr><td>IN</td><td>8</td><td>10</td><td>+2</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.059115</td><td>-0.001275</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.096133</td><td>-0.000312</td></tr></tbody></table>
 
@@ -1790,16 +1778,15 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 </details>
 
 <details markdown="1">
-<summary>Effect of removing this share from curent_update_baltic</summary>
+<summary>Portfolio sensitivity</summary>
+
+**Removing this share from curent_update_baltic**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.823009</td><td>0.000000</td></tr><tr><td>OUT</td><td>93</td><td>93</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.146552</td><td>0.002275</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.164924</td><td>0.000280</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
-</details>
-
-<details markdown="1">
-<summary>Effect of adding this share to the current portfolio</summary>
+**Adding this share to the current portfolio**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>Added shares</td><td>0</td><td>101</td><td>+101</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8268.600054</td><td>224.220003</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.424779</td><td>-0.026549</td></tr><tr><td>OUT</td><td>59</td><td>60</td><td>+1</td></tr><tr><td>IN</td><td>8</td><td>12</td><td>+4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.058366</td><td>-0.002024</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.096853</td><td>0.000408</td></tr></tbody></table>
 
@@ -1886,16 +1873,15 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 </details>
 
 <details markdown="1">
-<summary>Effect of removing this share from curent_update_baltic</summary>
+<summary>Portfolio sensitivity</summary>
+
+**Removing this share from curent_update_baltic**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.823009</td><td>0.000000</td></tr><tr><td>OUT</td><td>93</td><td>93</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.144593</td><td>0.000316</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.164935</td><td>0.000292</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
-</details>
-
-<details markdown="1">
-<summary>Effect of adding this share to the current portfolio</summary>
+**Adding this share to the current portfolio**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>Added shares</td><td>0</td><td>12</td><td>+12</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8072.340050</td><td>27.959999</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.415929</td><td>-0.035398</td></tr><tr><td>OUT</td><td>59</td><td>59</td><td>+0</td></tr><tr><td>IN</td><td>8</td><td>12</td><td>+4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.061094</td><td>0.000704</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.096298</td><td>-0.000148</td></tr></tbody></table>
 
@@ -1982,16 +1968,15 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 </details>
 
 <details markdown="1">
-<summary>Effect of removing this share from curent_update_baltic</summary>
+<summary>Portfolio sensitivity</summary>
+
+**Removing this share from curent_update_baltic**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.814159</td><td>-0.008850</td></tr><tr><td>OUT</td><td>93</td><td>92</td><td>-1</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.149703</td><td>0.005425</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.161948</td><td>-0.002695</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
-</details>
-
-<details markdown="1">
-<summary>Effect of adding this share to the current portfolio</summary>
+**Adding this share to the current portfolio**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>Added shares</td><td>0</td><td>89</td><td>+89</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8569.480059</td><td>525.100008</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.513274</td><td>0.061947</td></tr><tr><td>OUT</td><td>59</td><td>64</td><td>+5</td></tr><tr><td>IN</td><td>8</td><td>6</td><td>-2</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.059146</td><td>-0.001244</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.101345</td><td>0.004900</td></tr></tbody></table>
 
@@ -2078,16 +2063,15 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 </details>
 
 <details markdown="1">
-<summary>Effect of removing this share from curent_update_baltic</summary>
+<summary>Portfolio sensitivity</summary>
+
+**Removing this share from curent_update_baltic**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.823009</td><td>0.000000</td></tr><tr><td>OUT</td><td>93</td><td>93</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.151344</td><td>0.007067</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.165890</td><td>0.001247</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
-</details>
-
-<details markdown="1">
-<summary>Effect of adding this share to the current portfolio</summary>
+**Adding this share to the current portfolio**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>Added shares</td><td>0</td><td>209</td><td>+209</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8173.960052</td><td>129.580001</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.424779</td><td>-0.026549</td></tr><tr><td>OUT</td><td>59</td><td>60</td><td>+1</td></tr><tr><td>IN</td><td>8</td><td>12</td><td>+4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.057263</td><td>-0.003127</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.096608</td><td>0.000162</td></tr></tbody></table>
 
@@ -2174,16 +2158,15 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 </details>
 
 <details markdown="1">
-<summary>Effect of removing this share from curent_update_baltic</summary>
+<summary>Portfolio sensitivity</summary>
+
+**Removing this share from curent_update_baltic**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.814159</td><td>-0.008850</td></tr><tr><td>OUT</td><td>93</td><td>92</td><td>-1</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.139534</td><td>-0.004743</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.166730</td><td>0.002087</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
-</details>
-
-<details markdown="1">
-<summary>Effect of adding this share to the current portfolio</summary>
+**Adding this share to the current portfolio**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>Added shares</td><td>0</td><td>35</td><td>+35</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8424.130064</td><td>379.750013</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.442478</td><td>-0.008850</td></tr><tr><td>OUT</td><td>59</td><td>60</td><td>+1</td></tr><tr><td>IN</td><td>8</td><td>10</td><td>+2</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.063094</td><td>0.002704</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.094235</td><td>-0.002210</td></tr></tbody></table>
 
@@ -2270,22 +2253,57 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 </details>
 
 <details markdown="1">
-<summary>Effect of removing this share from curent_update_baltic</summary>
+<summary>Portfolio sensitivity</summary>
+
+**Removing this share from curent_update_baltic**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.823009</td><td>0.000000</td></tr><tr><td>OUT</td><td>93</td><td>93</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.150512</td><td>0.006235</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.168777</td><td>0.004133</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
-</details>
-
-<details markdown="1">
-<summary>Effect of adding this share to the current portfolio</summary>
+**Adding this share to the current portfolio**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>Added shares</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8044.380051</td><td>0.000000</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.451327</td><td>0.000000</td></tr><tr><td>OUT</td><td>59</td><td>59</td><td>+0</td></tr><tr><td>IN</td><td>8</td><td>8</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.060390</td><td>0.000000</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.096446</td><td>0.000000</td></tr></tbody></table>
 
 The starting point is the unmodified current portfolio. Only this share is added, using the quantity shown as Change in Table 3A; all existing holdings remain unchanged.
 
 </details>
+
+</details>
+
+</details>
+
+## Single-share additions to the current portfolio
+
+Each row starts from the same unmodified current portfolio and adds only the stated share quantity from Table 3A. Rows are ranked by the change in netSD; larger is better.
+
+<details markdown="1">
+<summary><strong>Open ranked comparison of all individual additions</strong></summary>
+
+| Rank | Share | Added shares | Updated value EUR | Current netSD | Updated netSD | Delta netSD | Delta Rachev | Delta Sortino |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | MOLNR | 27 | 8554.680041 | 0.451327 | 0.601770 | 0.150442 | 0.117316 | 0.024886 |
+| 2 | KNE1L | 1438 | 8751.876070 | 0.451327 | 0.566372 | 0.115044 | 0.011069 | 0.015685 |
+| 3 | MRK1T | 22 | 8636.180043 | 0.451327 | 0.548673 | 0.097345 | 0.021795 | 0.011426 |
+| 4 | VLP1L | 27 | 8462.880051 | 0.451327 | 0.539823 | 0.088496 | 0.014068 | 0.016028 |
+| 5 | GRG1L | 519 | 8568.570046 | 0.451327 | 0.530973 | 0.079646 | 0.003765 | 0.005985 |
+| 6 | RSU1L | 149 | 8723.820042 | 0.451327 | 0.530973 | 0.079646 | -0.003012 | 0.008793 |
+| 7 | MODE | 89 | 8569.480059 | 0.451327 | 0.513274 | 0.061947 | -0.001244 | 0.004900 |
+| 8 | APG1L | 54 | 8259.300052 | 0.451327 | 0.504425 | 0.053097 | -0.004268 | 0.003563 |
+| 9 | PZV1L | 30 | 8096.280051 | 0.451327 | 0.495575 | 0.044248 | 0.001418 | 0.000822 |
+| 10 | AKO1L | 111 | 8240.850049 | 0.451327 | 0.495575 | 0.044248 | -0.002993 | 0.001675 |
+| 11 | SAF1R | 0 | 8044.380051 | 0.451327 | 0.451327 | 0.000000 | 0.000000 | 0.000000 |
+| 12 | TSM1T | 0 | 8044.380051 | 0.451327 | 0.451327 | 0.000000 | 0.000000 | 0.000000 |
+| 13 | TVE1T | 35 | 8424.130064 | 0.451327 | 0.442478 | -0.008850 | 0.002704 | -0.002210 |
+| 14 | EFT1T | 23 | 8490.580042 | 0.451327 | 0.442478 | -0.008850 | -0.001275 | -0.000312 |
+| 15 | ROE1L | 490 | 8482.930042 | 0.451327 | 0.424779 | -0.026549 | 0.003487 | 0.001959 |
+| 16 | HAE1T | 47 | 8285.960045 | 0.451327 | 0.424779 | -0.026549 | 0.001641 | -0.000541 |
+| 17 | IGN1L | 6 | 8176.980053 | 0.451327 | 0.424779 | -0.026549 | 0.001039 | 0.000568 |
+| 18 | VIRSI | 44 | 8237.100051 | 0.451327 | 0.424779 | -0.026549 | -0.000507 | -0.000182 |
+| 19 | TEL1L | 101 | 8268.600054 | 0.451327 | 0.424779 | -0.026549 | -0.002024 | 0.000408 |
+| 20 | TAL1T | 209 | 8173.960052 | 0.451327 | 0.424779 | -0.026549 | -0.003127 | 0.000162 |
+| 21 | TKM1T | 27 | 8290.080061 | 0.451327 | 0.424779 | -0.026549 | -0.005671 | -0.001948 |
+| 22 | CPA1T | 12 | 8072.340050 | 0.451327 | 0.415929 | -0.035398 | 0.000704 | -0.000148 |
 
 </details>
 
@@ -2402,7 +2420,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.036076. The earlier valu
 <details markdown="1">
 <summary><strong>Figure 4a. Portfolio and S&P 500 complete empirical CDF; right side truncated at return 0.05</strong></summary>
 
-![Report figure 4](report/assets/figure-04.png)
+<div class="cdf-with-key"><img src="report/assets/figure-04.png" alt="CDF graph"><img class="cdf-key" src="report/assets/figure-08.png" alt="CDF legend"></div>
 
 </details>
 
@@ -2410,7 +2428,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.036076. The earlier valu
 <details markdown="1">
 <summary><strong>Figure 4b. Portfolio and S&P 500 empirical CDF: enlarged left tail</strong></summary>
 
-![Report figure 5](report/assets/figure-05.png)
+<div class="cdf-with-key"><img src="report/assets/figure-05.png" alt="CDF graph"><img class="cdf-key" src="report/assets/figure-08.png" alt="CDF legend"></div>
 
 </details>
 
@@ -2418,7 +2436,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.036076. The earlier valu
 <details markdown="1">
 <summary><strong>Figure 4c. Portfolio and S&P 500 empirical CDF: enlarged centre</strong></summary>
 
-![Report figure 6](report/assets/figure-06.png)
+<div class="cdf-with-key"><img src="report/assets/figure-06.png" alt="CDF graph"><img class="cdf-key" src="report/assets/figure-08.png" alt="CDF legend"></div>
 
 </details>
 
@@ -2426,15 +2444,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.036076. The earlier valu
 <details markdown="1">
 <summary><strong>Figure 4d. Portfolio and S&P 500 empirical CDF: enlarged right tail</strong></summary>
 
-![Report figure 7](report/assets/figure-07.png)
-
-</details>
-
-
-<details markdown="1">
-<summary><strong>Figure 4e. Separate colour and line-pattern key for Figures 4 and 6</strong></summary>
-
-![Report figure 8](report/assets/figure-08.png)
+<div class="cdf-with-key"><img src="report/assets/figure-07.png" alt="CDF graph"><img class="cdf-key" src="report/assets/figure-08.png" alt="CDF legend"></div>
 
 </details>
 
