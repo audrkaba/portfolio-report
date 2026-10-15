@@ -44,7 +44,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan — updated 2026-10-15 16:39 (Europe/Vilnius)
+# Baltic investment plan - updated 2026-10-15 16:57 (Europe/Vilnius); market data through 2026-08-28
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -184,11 +184,11 @@ Select a share to display its allocation, technical indicators, all PerformanceA
 <details markdown="1" class="stock-profile" id="share-molnr">
 <summary><strong>MOLNR — J. Molner</strong> | BUY | target 27 shares | priority 1</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>0</td><td>27</td><td>+27</td><td>3.43%</td><td>EUR 18.9000</td><td>0.0354</td><td>4 / 0</td><td>44.96</td><td>Bullish</td><td>Inside bands</td><td>BUY</td><td>2026-08-28</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>0</td><td>27</td><td>+27</td><td>3.43%</td><td>EUR 18.9000</td><td>0.0354</td><td>4 / 0</td><td>44.96</td><td>Bullish</td><td>Inside bands</td><td>0.934 (Overbought)</td><td>BUY</td><td>2026-08-28</td></tr></tbody></table>
 
-![MOLNR Bollinger Bands, RSI(14) and MACD — last 126 observations](figures/stock_profiles/MOLNR_technicals_6m.png)
+![MOLNR Bollinger Bands, RSI(14), MACD and Stochastic RSI — last 126 observations](figures/stock_profiles/MOLNR_technicals_6m.png)
 
-Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations.
+Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations. Stochastic RSI is an additional diagnostic and does not change this existing three-indicator classification.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -279,11 +279,11 @@ The starting point is the unmodified current portfolio, which already contains 0
 <details markdown="1" class="stock-profile" id="share-vlp1l">
 <summary><strong>VLP1L — Vilkyškių pieninė</strong> | HOLD | target 69 shares | priority 2</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>42</td><td>69</td><td>+27</td><td>7.13%</td><td>EUR 15.5000</td><td>0.3805</td><td>43 / 0</td><td>57.67</td><td>Bearish</td><td>Inside bands</td><td>HOLD</td><td>2026-08-28</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>42</td><td>69</td><td>+27</td><td>7.13%</td><td>EUR 15.5000</td><td>0.3805</td><td>43 / 0</td><td>57.67</td><td>Bearish</td><td>Inside bands</td><td>0.176 (Oversold)</td><td>HOLD</td><td>2026-08-28</td></tr></tbody></table>
 
-![VLP1L Bollinger Bands, RSI(14) and MACD — last 126 observations](figures/stock_profiles/VLP1L_technicals_6m.png)
+![VLP1L Bollinger Bands, RSI(14), MACD and Stochastic RSI — last 126 observations](figures/stock_profiles/VLP1L_technicals_6m.png)
 
-Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations.
+Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations. Stochastic RSI is an additional diagnostic and does not change this existing three-indicator classification.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -374,11 +374,11 @@ The starting point is the unmodified current portfolio, which already contains 4
 <details markdown="1" class="stock-profile" id="share-kne1l">
 <summary><strong>KNE1L — KN Energies</strong> | HOLD | target 1438 shares | priority 3</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>0</td><td>1438</td><td>+1438</td><td>4.72%</td><td>EUR 0.4920</td><td>0.3717</td><td>42 / 0</td><td>55.64</td><td>Bullish</td><td>Inside bands</td><td>HOLD</td><td>2026-08-28</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>0</td><td>1438</td><td>+1438</td><td>4.72%</td><td>EUR 0.4920</td><td>0.3717</td><td>42 / 0</td><td>55.64</td><td>Bullish</td><td>Inside bands</td><td>0.206 (Neutral)</td><td>HOLD</td><td>2026-08-28</td></tr></tbody></table>
 
-![KNE1L Bollinger Bands, RSI(14) and MACD — last 126 observations](figures/stock_profiles/KNE1L_technicals_6m.png)
+![KNE1L Bollinger Bands, RSI(14), MACD and Stochastic RSI — last 126 observations](figures/stock_profiles/KNE1L_technicals_6m.png)
 
-Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations.
+Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations. Stochastic RSI is an additional diagnostic and does not change this existing three-indicator classification.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -469,11 +469,11 @@ The starting point is the unmodified current portfolio, which already contains 0
 <details markdown="1" class="stock-profile" id="share-mrk1t">
 <summary><strong>MRK1T — Merko Ehitus</strong> | HOLD | target 42 shares | priority 4</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>20</td><td>42</td><td>+22</td><td>7.70%</td><td>EUR 26.9000</td><td>0.3717</td><td>42 / 0</td><td>40.54</td><td>Bearish</td><td>Inside bands</td><td>HOLD</td><td>2026-08-28</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>20</td><td>42</td><td>+22</td><td>7.70%</td><td>EUR 26.9000</td><td>0.3717</td><td>42 / 0</td><td>40.54</td><td>Bearish</td><td>Inside bands</td><td>0.275 (Neutral)</td><td>HOLD</td><td>2026-08-28</td></tr></tbody></table>
 
-![MRK1T Bollinger Bands, RSI(14) and MACD — last 126 observations](figures/stock_profiles/MRK1T_technicals_6m.png)
+![MRK1T Bollinger Bands, RSI(14), MACD and Stochastic RSI — last 126 observations](figures/stock_profiles/MRK1T_technicals_6m.png)
 
-Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations.
+Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations. Stochastic RSI is an additional diagnostic and does not change this existing three-indicator classification.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -564,11 +564,11 @@ The starting point is the unmodified current portfolio, which already contains 2
 <details markdown="1" class="stock-profile" id="share-virsi">
 <summary><strong>VIRSI — VIRŠI-A</strong> | HOLD | target 44 shares | priority 5</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>0</td><td>44</td><td>+44</td><td>1.29%</td><td>EUR 4.3800</td><td>0.3540</td><td>40 / 0</td><td>66.98</td><td>Bearish</td><td>Inside bands</td><td>HOLD</td><td>2026-08-28</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>0</td><td>44</td><td>+44</td><td>1.29%</td><td>EUR 4.3800</td><td>0.3540</td><td>40 / 0</td><td>66.98</td><td>Bearish</td><td>Inside bands</td><td>0.193 (Oversold)</td><td>HOLD</td><td>2026-08-28</td></tr></tbody></table>
 
-![VIRSI Bollinger Bands, RSI(14) and MACD — last 126 observations](figures/stock_profiles/VIRSI_technicals_6m.png)
+![VIRSI Bollinger Bands, RSI(14), MACD and Stochastic RSI — last 126 observations](figures/stock_profiles/VIRSI_technicals_6m.png)
 
-Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations.
+Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations. Stochastic RSI is an additional diagnostic and does not change this existing three-indicator classification.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -659,11 +659,11 @@ The starting point is the unmodified current portfolio, which already contains 0
 <details markdown="1" class="stock-profile" id="share-apg1l">
 <summary><strong>APG1L — Apranga</strong> | HOLD | target 254 shares | priority 6</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>200</td><td>254</td><td>+54</td><td>6.76%</td><td>EUR 3.9800</td><td>0.3363</td><td>38 / 0</td><td>55.56</td><td>Bearish</td><td>Inside bands</td><td>HOLD</td><td>2026-08-28</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>200</td><td>254</td><td>+54</td><td>6.76%</td><td>EUR 3.9800</td><td>0.3363</td><td>38 / 0</td><td>55.56</td><td>Bearish</td><td>Inside bands</td><td>0.355 (Neutral)</td><td>HOLD</td><td>2026-08-28</td></tr></tbody></table>
 
-![APG1L Bollinger Bands, RSI(14) and MACD — last 126 observations](figures/stock_profiles/APG1L_technicals_6m.png)
+![APG1L Bollinger Bands, RSI(14), MACD and Stochastic RSI — last 126 observations](figures/stock_profiles/APG1L_technicals_6m.png)
 
-Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations.
+Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations. Stochastic RSI is an additional diagnostic and does not change this existing three-indicator classification.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -754,11 +754,11 @@ The starting point is the unmodified current portfolio, which already contains 2
 <details markdown="1" class="stock-profile" id="share-hae1t">
 <summary><strong>HAE1T — Harju Elekter Group</strong> | BUY | target 147 shares | priority 7</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>100</td><td>147</td><td>+47</td><td>5.06%</td><td>EUR 5.1400</td><td>0.1150</td><td>37 / 24</td><td>42.59</td><td>Bullish</td><td>Inside bands</td><td>BUY</td><td>2026-08-28</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>100</td><td>147</td><td>+47</td><td>5.06%</td><td>EUR 5.1400</td><td>0.1150</td><td>37 / 24</td><td>42.59</td><td>Bullish</td><td>Inside bands</td><td>0.392 (Neutral)</td><td>BUY</td><td>2026-08-28</td></tr></tbody></table>
 
-![HAE1T Bollinger Bands, RSI(14) and MACD — last 126 observations](figures/stock_profiles/HAE1T_technicals_6m.png)
+![HAE1T Bollinger Bands, RSI(14), MACD and Stochastic RSI — last 126 observations](figures/stock_profiles/HAE1T_technicals_6m.png)
 
-Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations.
+Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations. Stochastic RSI is an additional diagnostic and does not change this existing three-indicator classification.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -849,11 +849,11 @@ The starting point is the unmodified current portfolio, which already contains 1
 <details markdown="1" class="stock-profile" id="share-saf1r">
 <summary><strong>SAF1R — SAF Tehnika</strong> | SELL | target 100 shares | priority 8</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>100</td><td>100</td><td>+0</td><td>11.43%</td><td>EUR 17.1500</td><td>-0.1062</td><td>12 / 24</td><td>88.11</td><td>Bullish</td><td>Inside bands</td><td>SELL</td><td>2026-08-28</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>100</td><td>100</td><td>+0</td><td>11.43%</td><td>EUR 17.1500</td><td>-0.1062</td><td>12 / 24</td><td>88.11</td><td>Bullish</td><td>Inside bands</td><td>0.942 (Overbought)</td><td>SELL</td><td>2026-08-28</td></tr></tbody></table>
 
-![SAF1R Bollinger Bands, RSI(14) and MACD — last 126 observations](figures/stock_profiles/SAF1R_technicals_6m.png)
+![SAF1R Bollinger Bands, RSI(14), MACD and Stochastic RSI — last 126 observations](figures/stock_profiles/SAF1R_technicals_6m.png)
 
-Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations.
+Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations. Stochastic RSI is an additional diagnostic and does not change this existing three-indicator classification.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -944,11 +944,11 @@ The starting point is the unmodified current portfolio, which already contains 1
 <details markdown="1" class="stock-profile" id="share-grg1l">
 <summary><strong>GRG1L — Grigeo Group</strong> | HOLD | target 519 shares | priority 9</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>0</td><td>519</td><td>+519</td><td>3.50%</td><td>EUR 1.0100</td><td>0.3805</td><td>49 / 6</td><td>35.53</td><td>Bearish</td><td>Inside bands</td><td>HOLD</td><td>2026-08-28</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>0</td><td>519</td><td>+519</td><td>3.50%</td><td>EUR 1.0100</td><td>0.3805</td><td>49 / 6</td><td>35.53</td><td>Bearish</td><td>Inside bands</td><td>0.262 (Neutral)</td><td>HOLD</td><td>2026-08-28</td></tr></tbody></table>
 
-![GRG1L Bollinger Bands, RSI(14) and MACD — last 126 observations](figures/stock_profiles/GRG1L_technicals_6m.png)
+![GRG1L Bollinger Bands, RSI(14), MACD and Stochastic RSI — last 126 observations](figures/stock_profiles/GRG1L_technicals_6m.png)
 
-Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations.
+Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations. Stochastic RSI is an additional diagnostic and does not change this existing three-indicator classification.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -1039,11 +1039,11 @@ The starting point is the unmodified current portfolio, which already contains 0
 <details markdown="1" class="stock-profile" id="share-rsu1l">
 <summary><strong>RSU1L — Rokiškio sūris</strong> | HOLD | target 149 shares | priority 10</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>0</td><td>149</td><td>+149</td><td>4.54%</td><td>EUR 4.5600</td><td>0.2566</td><td>35 / 6</td><td>58.03</td><td>Bullish</td><td>Inside bands</td><td>HOLD</td><td>2026-08-28</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>0</td><td>149</td><td>+149</td><td>4.54%</td><td>EUR 4.5600</td><td>0.2566</td><td>35 / 6</td><td>58.03</td><td>Bullish</td><td>Inside bands</td><td>0.575 (Neutral)</td><td>HOLD</td><td>2026-08-28</td></tr></tbody></table>
 
-![RSU1L Bollinger Bands, RSI(14) and MACD — last 126 observations](figures/stock_profiles/RSU1L_technicals_6m.png)
+![RSU1L Bollinger Bands, RSI(14), MACD and Stochastic RSI — last 126 observations](figures/stock_profiles/RSU1L_technicals_6m.png)
 
-Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations.
+Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations. Stochastic RSI is an additional diagnostic and does not change this existing three-indicator classification.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -1134,11 +1134,11 @@ The starting point is the unmodified current portfolio, which already contains 0
 <details markdown="1" class="stock-profile" id="share-ign1l">
 <summary><strong>IGN1L — Ignitis grupė</strong> | HOLD | target 6 shares | priority 11</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>0</td><td>6</td><td>+6</td><td>0.92%</td><td>EUR 22.1000</td><td>0.4071</td><td>56 / 10</td><td>46.17</td><td>Bearish</td><td>Inside bands</td><td>HOLD</td><td>2026-08-28</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>0</td><td>6</td><td>+6</td><td>0.92%</td><td>EUR 22.1000</td><td>0.4071</td><td>56 / 10</td><td>46.17</td><td>Bearish</td><td>Inside bands</td><td>0.241 (Neutral)</td><td>HOLD</td><td>2026-08-28</td></tr></tbody></table>
 
-![IGN1L Bollinger Bands, RSI(14) and MACD — last 126 observations](figures/stock_profiles/IGN1L_technicals_6m.png)
+![IGN1L Bollinger Bands, RSI(14), MACD and Stochastic RSI — last 126 observations](figures/stock_profiles/IGN1L_technicals_6m.png)
 
-Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations.
+Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations. Stochastic RSI is an additional diagnostic and does not change this existing three-indicator classification.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -1229,11 +1229,11 @@ The starting point is the unmodified current portfolio, which already contains 0
 <details markdown="1" class="stock-profile" id="share-ako1l">
 <summary><strong>AKO1L — Akola Group</strong> | HOLD | target 111 shares | priority 12</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>0</td><td>111</td><td>+111</td><td>1.32%</td><td>EUR 1.7700</td><td>0.1239</td><td>25 / 11</td><td>45.60</td><td>Bearish</td><td>Inside bands</td><td>HOLD</td><td>2026-08-28</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>0</td><td>111</td><td>+111</td><td>1.32%</td><td>EUR 1.7700</td><td>0.1239</td><td>25 / 11</td><td>45.60</td><td>Bearish</td><td>Inside bands</td><td>0.123 (Oversold)</td><td>HOLD</td><td>2026-08-28</td></tr></tbody></table>
 
-![AKO1L Bollinger Bands, RSI(14) and MACD — last 126 observations](figures/stock_profiles/AKO1L_technicals_6m.png)
+![AKO1L Bollinger Bands, RSI(14), MACD and Stochastic RSI — last 126 observations](figures/stock_profiles/AKO1L_technicals_6m.png)
 
-Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations.
+Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations. Stochastic RSI is an additional diagnostic and does not change this existing three-indicator classification.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -1324,11 +1324,11 @@ The starting point is the unmodified current portfolio, which already contains 0
 <details markdown="1" class="stock-profile" id="share-pzv1l">
 <summary><strong>PZV1L — Pieno žvaigždės</strong> | HOLD | target 30 shares | priority 13</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>0</td><td>30</td><td>+30</td><td>0.36%</td><td>EUR 1.7300</td><td>0.1858</td><td>35 / 14</td><td>46.60</td><td>Bearish</td><td>Inside bands</td><td>HOLD</td><td>2026-08-28</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>0</td><td>30</td><td>+30</td><td>0.36%</td><td>EUR 1.7300</td><td>0.1858</td><td>35 / 14</td><td>46.60</td><td>Bearish</td><td>Inside bands</td><td>0.000 (Oversold)</td><td>HOLD</td><td>2026-08-28</td></tr></tbody></table>
 
-![PZV1L Bollinger Bands, RSI(14) and MACD — last 126 observations](figures/stock_profiles/PZV1L_technicals_6m.png)
+![PZV1L Bollinger Bands, RSI(14), MACD and Stochastic RSI — last 126 observations](figures/stock_profiles/PZV1L_technicals_6m.png)
 
-Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations.
+Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations. Stochastic RSI is an additional diagnostic and does not change this existing three-indicator classification.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -1419,11 +1419,11 @@ The starting point is the unmodified current portfolio, which already contains 0
 <details markdown="1" class="stock-profile" id="share-roe1l">
 <summary><strong>ROE1L — Artea Bankas</strong> | HOLD | target 906 shares | priority 14</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>416</td><td>906</td><td>+490</td><td>5.41%</td><td>EUR 0.8950</td><td>0.1858</td><td>38 / 17</td><td>51.65</td><td>Bearish</td><td>Inside bands</td><td>HOLD</td><td>2026-08-28</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>416</td><td>906</td><td>+490</td><td>5.41%</td><td>EUR 0.8950</td><td>0.1858</td><td>38 / 17</td><td>51.65</td><td>Bearish</td><td>Inside bands</td><td>0.055 (Oversold)</td><td>HOLD</td><td>2026-08-28</td></tr></tbody></table>
 
-![ROE1L Bollinger Bands, RSI(14) and MACD — last 126 observations](figures/stock_profiles/ROE1L_technicals_6m.png)
+![ROE1L Bollinger Bands, RSI(14), MACD and Stochastic RSI — last 126 observations](figures/stock_profiles/ROE1L_technicals_6m.png)
 
-Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations.
+Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations. Stochastic RSI is an additional diagnostic and does not change this existing three-indicator classification.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -1514,11 +1514,11 @@ The starting point is the unmodified current portfolio, which already contains 4
 <details markdown="1" class="stock-profile" id="share-tkm1t">
 <summary><strong>TKM1T — TKM Grupp</strong> | HOLD | target 315 shares | priority 15</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>288</td><td>315</td><td>+27</td><td>19.15%</td><td>EUR 9.1000</td><td>0.0619</td><td>29 / 22</td><td>42.63</td><td>Bearish</td><td>Inside bands</td><td>HOLD</td><td>2026-08-28</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>288</td><td>315</td><td>+27</td><td>19.15%</td><td>EUR 9.1000</td><td>0.0619</td><td>29 / 22</td><td>42.63</td><td>Bearish</td><td>Inside bands</td><td>0.297 (Neutral)</td><td>HOLD</td><td>2026-08-28</td></tr></tbody></table>
 
-![TKM1T Bollinger Bands, RSI(14) and MACD — last 126 observations](figures/stock_profiles/TKM1T_technicals_6m.png)
+![TKM1T Bollinger Bands, RSI(14), MACD and Stochastic RSI — last 126 observations](figures/stock_profiles/TKM1T_technicals_6m.png)
 
-Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations.
+Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations. Stochastic RSI is an additional diagnostic and does not change this existing three-indicator classification.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -1609,11 +1609,11 @@ The starting point is the unmodified current portfolio, which already contains 2
 <details markdown="1" class="stock-profile" id="share-eft1t">
 <summary><strong>EFT1T — EfTEN Real Estate Fund</strong> | HOLD | target 23 shares | priority 16</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>0</td><td>23</td><td>+23</td><td>3.07%</td><td>EUR 19.4000</td><td>0.1150</td><td>36 / 23</td><td>43.20</td><td>Bearish</td><td>Inside bands</td><td>HOLD</td><td>2026-08-28</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>0</td><td>23</td><td>+23</td><td>3.07%</td><td>EUR 19.4000</td><td>0.1150</td><td>36 / 23</td><td>43.20</td><td>Bearish</td><td>Inside bands</td><td>0.180 (Oversold)</td><td>HOLD</td><td>2026-08-28</td></tr></tbody></table>
 
-![EFT1T Bollinger Bands, RSI(14) and MACD — last 126 observations](figures/stock_profiles/EFT1T_technicals_6m.png)
+![EFT1T Bollinger Bands, RSI(14), MACD and Stochastic RSI — last 126 observations](figures/stock_profiles/EFT1T_technicals_6m.png)
 
-Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations.
+Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations. Stochastic RSI is an additional diagnostic and does not change this existing three-indicator classification.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -1704,11 +1704,11 @@ The starting point is the unmodified current portfolio, which already contains 0
 <details markdown="1" class="stock-profile" id="share-tel1l">
 <summary><strong>TEL1L — Telia Lietuva</strong> | HOLD | target 101 shares | priority 17</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>0</td><td>101</td><td>+101</td><td>1.50%</td><td>EUR 2.2200</td><td>0.1681</td><td>43 / 24</td><td>45.64</td><td>Bearish</td><td>Inside bands</td><td>HOLD</td><td>2026-08-28</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>0</td><td>101</td><td>+101</td><td>1.50%</td><td>EUR 2.2200</td><td>0.1681</td><td>43 / 24</td><td>45.64</td><td>Bearish</td><td>Inside bands</td><td>0.009 (Oversold)</td><td>HOLD</td><td>2026-08-28</td></tr></tbody></table>
 
-![TEL1L Bollinger Bands, RSI(14) and MACD — last 126 observations](figures/stock_profiles/TEL1L_technicals_6m.png)
+![TEL1L Bollinger Bands, RSI(14), MACD and Stochastic RSI — last 126 observations](figures/stock_profiles/TEL1L_technicals_6m.png)
 
-Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations.
+Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations. Stochastic RSI is an additional diagnostic and does not change this existing three-indicator classification.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -1799,11 +1799,11 @@ The starting point is the unmodified current portfolio, which already contains 0
 <details markdown="1" class="stock-profile" id="share-cpa1t">
 <summary><strong>CPA1T — Coop Pank</strong> | HOLD | target 12 shares | priority 18</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>0</td><td>12</td><td>+12</td><td>0.19%</td><td>EUR 2.3300</td><td>0.0531</td><td>30 / 24</td><td>56.23</td><td>Bearish</td><td>Inside bands</td><td>HOLD</td><td>2026-08-28</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>0</td><td>12</td><td>+12</td><td>0.19%</td><td>EUR 2.3300</td><td>0.0531</td><td>30 / 24</td><td>56.23</td><td>Bearish</td><td>Inside bands</td><td>0.205 (Neutral)</td><td>HOLD</td><td>2026-08-28</td></tr></tbody></table>
 
-![CPA1T Bollinger Bands, RSI(14) and MACD — last 126 observations](figures/stock_profiles/CPA1T_technicals_6m.png)
+![CPA1T Bollinger Bands, RSI(14), MACD and Stochastic RSI — last 126 observations](figures/stock_profiles/CPA1T_technicals_6m.png)
 
-Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations.
+Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations. Stochastic RSI is an additional diagnostic and does not change this existing three-indicator classification.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -1894,11 +1894,11 @@ The starting point is the unmodified current portfolio, which already contains 0
 <details markdown="1" class="stock-profile" id="share-mode">
 <summary><strong>MODE — Modera</strong> | HOLD | target 89 shares | priority 19</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>0</td><td>89</td><td>+89</td><td>3.53%</td><td>EUR 5.9000</td><td>0.0265</td><td>27 / 24</td><td>48.74</td><td>Bearish</td><td>Inside bands</td><td>HOLD</td><td>2026-08-28</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>0</td><td>89</td><td>+89</td><td>3.53%</td><td>EUR 5.9000</td><td>0.0265</td><td>27 / 24</td><td>48.74</td><td>Bearish</td><td>Inside bands</td><td>0.219 (Neutral)</td><td>HOLD</td><td>2026-08-28</td></tr></tbody></table>
 
-![MODE Bollinger Bands, RSI(14) and MACD — last 126 observations](figures/stock_profiles/MODE_technicals_6m.png)
+![MODE Bollinger Bands, RSI(14), MACD and Stochastic RSI — last 126 observations](figures/stock_profiles/MODE_technicals_6m.png)
 
-Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations.
+Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations. Stochastic RSI is an additional diagnostic and does not change this existing three-indicator classification.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -1989,11 +1989,11 @@ The starting point is the unmodified current portfolio, which already contains 0
 <details markdown="1" class="stock-profile" id="share-tal1t">
 <summary><strong>TAL1T — Tallink Grupp</strong> | HOLD | target 909 shares | priority 20</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>700</td><td>909</td><td>+209</td><td>3.76%</td><td>EUR 0.6200</td><td>0.0177</td><td>26 / 24</td><td>51.82</td><td>Bullish</td><td>Inside bands</td><td>HOLD</td><td>2026-08-28</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>700</td><td>909</td><td>+209</td><td>3.76%</td><td>EUR 0.6200</td><td>0.0177</td><td>26 / 24</td><td>51.82</td><td>Bullish</td><td>Inside bands</td><td>0.338 (Neutral)</td><td>HOLD</td><td>2026-08-28</td></tr></tbody></table>
 
-![TAL1T Bollinger Bands, RSI(14) and MACD — last 126 observations](figures/stock_profiles/TAL1T_technicals_6m.png)
+![TAL1T Bollinger Bands, RSI(14), MACD and Stochastic RSI — last 126 observations](figures/stock_profiles/TAL1T_technicals_6m.png)
 
-Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations.
+Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations. Stochastic RSI is an additional diagnostic and does not change this existing three-indicator classification.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -2084,11 +2084,11 @@ The starting point is the unmodified current portfolio, which already contains 7
 <details markdown="1" class="stock-profile" id="share-tve1t">
 <summary><strong>TVE1T — Tallinna Vesi</strong> | HOLD | target 35 shares | priority 21</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>0</td><td>35</td><td>+35</td><td>2.53%</td><td>EUR 10.8500</td><td>0.0177</td><td>28 / 26</td><td>34.52</td><td>Bearish</td><td>Inside bands</td><td>HOLD</td><td>2026-08-28</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>0</td><td>35</td><td>+35</td><td>2.53%</td><td>EUR 10.8500</td><td>0.0177</td><td>28 / 26</td><td>34.52</td><td>Bearish</td><td>Inside bands</td><td>0.332 (Neutral)</td><td>HOLD</td><td>2026-08-28</td></tr></tbody></table>
 
-![TVE1T Bollinger Bands, RSI(14) and MACD — last 126 observations](figures/stock_profiles/TVE1T_technicals_6m.png)
+![TVE1T Bollinger Bands, RSI(14), MACD and Stochastic RSI — last 126 observations](figures/stock_profiles/TVE1T_technicals_6m.png)
 
-Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations.
+Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations. Stochastic RSI is an additional diagnostic and does not change this existing three-indicator classification.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -2179,11 +2179,11 @@ The starting point is the unmodified current portfolio, which already contains 0
 <details markdown="1" class="stock-profile" id="share-tsm1t">
 <summary><strong>TSM1T — Tallinna Sadam</strong> | HOLD | target 330 shares | priority 22</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>330</td><td>330</td><td>+0</td><td>2.69%</td><td>EUR 1.2220</td><td>-0.0177</td><td>28 / 30</td><td>30.19</td><td>Bearish</td><td>Inside bands</td><td>HOLD</td><td>2026-08-28</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>330</td><td>330</td><td>+0</td><td>2.69%</td><td>EUR 1.2220</td><td>-0.0177</td><td>28 / 30</td><td>30.19</td><td>Bearish</td><td>Inside bands</td><td>0.136 (Oversold)</td><td>HOLD</td><td>2026-08-28</td></tr></tbody></table>
 
-![TSM1T Bollinger Bands, RSI(14) and MACD — last 126 observations](figures/stock_profiles/TSM1T_technicals_6m.png)
+![TSM1T Bollinger Bands, RSI(14), MACD and Stochastic RSI — last 126 observations](figures/stock_profiles/TSM1T_technicals_6m.png)
 
-Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations.
+Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations. Stochastic RSI is an additional diagnostic and does not change this existing three-indicator classification.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
