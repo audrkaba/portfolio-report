@@ -49,23 +49,23 @@ Study period: 2023-01-01 to 2026-08-29 | Portfolio ceiling: EUR 15,000 | Existin
 
 ## Optimisation result
 
-The best numerical solution found has netSD 0.939130 (OUT=108, IN=0, denominator=115). It is evaluated in the same dominance network as all 56 eligible shares, the current portfolio, and the ten earlier training/full-data portfolios.
+The best numerical solution found has netSD 0.902655 (OUT=102, IN=0, denominator=113). It is evaluated against one fixed reference network containing 55 quality-approved shares, the current portfolio, and the ten earlier training/full-data portfolios.
 
-Current-portfolio netSD is 0.443478; the optimised-portfolio value is 0.939130. Historical gross dividends for the final whole-share quantities are EUR 1942.28. These historical dividends are a counterfactual, before tax and without reinvestment, rather than a forecast.
+Current-portfolio netSD is 0.451327; the optimised-portfolio value is 0.902655. Historical gross dividends for the final whole-share quantities are EUR 2109.24. These historical dividends are a counterfactual, before tax and without reinvestment, rather than a forecast.
 
 <details markdown="1">
 <summary><strong>Table 1. Optimisation objective and constraint checks</strong></summary>
 
 | Component | Restriction or objective | Obtained value | Result |
 | --- | --- | --- | --- |
-| Objective: netSD | maximum value found numerically | 0.93913043 | Reported |
-| Budget | invested <= 15000 | 14903.49702527 | Satisfied |
-| Residual cash | >= 0 | 96.50297473 | Satisfied |
+| Objective: netSD | maximum value found numerically | 0.90265487 | Reported |
+| Budget | invested <= 15000 | 14917.78905687 | Satisfied |
+| Residual cash | >= 0 | 82.21094313 | Satisfied |
 | Full-investment weights | sum(w) = 1 | 1.00000000 | Satisfied |
 | Long only | min(w) >= 0 | 0.00000000 | Satisfied |
 | Sales | existing positions may be reduced to zero | -330.00000000 | Allowed |
-| Minimum mean | >= 0.00037514 | 0.00060556 | Satisfied |
-| Dividend tie-break | largest historical dividend among tied netSD candidates | 1942.28219840 | EUR historical gross cash |
+| Minimum mean | >= 0.00037514 | 0.00059719 | Satisfied |
+| Historical dividends | descriptive only; excluded from objective | 2109.24411680 | EUR historical gross cash |
 
 </details>
 
@@ -76,60 +76,59 @@ Current-portfolio netSD is 0.443478; the optimised-portfolio value is 0.939130. 
 | asset | name | market | last_price | optimal_weight_percent | current_shares | target_shares | trade_shares | action | invested_EUR | historical_dividend_cash |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | AIR | Airobot Technologies | TLN | 1.8100 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
-| AKO1L | Akola Group | VLN | 1.7700 | 2.7390 | 0 | 232 | 232 | BUY | 410.6400 | 0.0000 |
+| AKO1L | Akola Group | VLN | 1.7700 | 1.4616 | 0 | 123 | 123 | BUY | 217.7100 | 0.0000 |
 | AMG1L | Amber Grid | VLN | 1.2000 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
-| APG1L | Apranga | VLN | 3.9800 | 10.7401 | 200 | 404 | 204 | BUY | 1607.9200 | 416.1200 |
+| APG1L | Apranga | VLN | 3.9800 | 9.4074 | 200 | 354 | 154 | BUY | 1408.9200 | 364.6200 |
 | ARC1T | Arco Vara | TLN | 1.2400 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
 | AUG1L | AUGA group | VLN | 0.0976 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
 | BAL1R | Amber Latvijas balzams | RIG | 1.3000 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
 | BERCM | Bercman Technologies | TLN | 1.0850 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
-| CPA1T | Coop Pank | TLN | 2.3300 | 0.5446 | 0 | 35 | 35 | BUY | 81.5500 | 9.3450 |
+| CPA1T | Coop Pank | TLN | 2.3300 | 0.1559 | 0 | 10 | 10 | BUY | 23.3000 | 2.6700 |
 | CTS1L | City Service | VLN | 0.1560 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
 | DGR1R | DelfinGroup | RIG | 1.5300 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
-| EFT1T | EfTEN Real Estate Fund | TLN | 19.4000 | 0.5051 | 0 | 3 | 3 | BUY | 58.2000 | 13.3878 |
+| EFT1T | EfTEN Real Estate Fund | TLN | 19.4000 | 3.9580 | 0 | 30 | 30 | BUY | 582.0000 | 133.8780 |
 | EWA1L | East West Agro | VLN | 15.6000 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
-| GRG1L | Grigeo Group | VLN | 1.0100 | 7.4186 | 0 | 1101 | 1101 | BUY | 1112.0100 | 187.1700 |
-| HAE1T | Harju Elekter Group | TLN | 5.1400 | 3.5915 | 100 | 104 | 4 | BUY | 534.5600 | 60.3200 |
+| GRG1L | Grigeo Group | VLN | 1.0100 | 5.1146 | 0 | 759 | 759 | BUY | 766.5900 | 129.0300 |
+| HAE1T | Harju Elekter Group | TLN | 5.1400 | 3.1770 | 100 | 92 | -8 | SELL | 472.8800 | 53.3600 |
 | HPR1T | Hepsor | TLN | 5.1400 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
 | IDX1R | INDEXO | RIG | 9.3000 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
-| IGN1L | Ignitis grupė | VLN | 22.1000 | 5.1875 | 0 | 35 | 35 | BUY | 773.5000 | 137.1650 |
+| IGN1L | Ignitis grupė | VLN | 22.1000 | 3.5243 | 0 | 23 | 23 | BUY | 508.3000 | 90.1370 |
 | INC1L | INVL Technology | VLN | 4.9200 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
 | INL1L | INVL Baltic Farmland | VLN | 6.9500 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
 | INR1L | INVL Baltic Real Estate | VLN | 3.0400 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
 | IVL1L | Invalda INVL | VLN | 27.8000 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
-| KNE1L | KN Energies | VLN | 0.4920 | 10.3545 | 0 | 3156 | 3156 | BUY | 1552.7520 | 203.2464 |
+| KNE1L | KN Energies | VLN | 0.4920 | 12.0143 | 0 | 3662 | 3662 | BUY | 1801.7040 | 235.8328 |
 | KNR1L | Kauno energija | VLN | 2.0800 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
 | LGD1L | LITGRID | VLN | 1.1200 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
-| LHV1T | LHV Group | TLN | 3.3350 | 0.4766 | 0 | 21 | 21 | BUY | 70.0350 | 9.0300 |
+| LHV1T | LHV Group | TLN | 3.3350 | 0.7640 | 0 | 34 | 34 | BUY | 113.3900 | 14.6200 |
 | LINDA | Linda Nektar | TLN | 4.5000 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
 | MAGIC | TextMagic | TLN | 1.7100 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
 | MDARA | MADARA Cosmetics | RIG | 9.8800 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
-| MODE | Modera | TLN | 5.9000 | 5.8469 | 0 | 148 | 148 | BUY | 873.2000 | 0.0000 |
-| MOLNR | J. Molner | TLN | 18.9000 | 2.5109 | 0 | 19 | 19 | BUY | 359.1000 | 0.0000 |
-| MRK1T | Merko Ehitus | TLN | 26.9000 | 8.3428 | 20 | 46 | 26 | BUY | 1237.4000 | 250.7000 |
+| MODE | Modera | TLN | 5.9000 | 3.1959 | 0 | 81 | 81 | BUY | 477.9000 | 0.0000 |
+| MOLNR | J. Molner | TLN | 18.9000 | 4.7693 | 0 | 37 | 37 | BUY | 699.3000 | 0.0000 |
+| MRK1T | Merko Ehitus | TLN | 26.9000 | 5.2056 | 20 | 29 | 9 | BUY | 780.1000 | 158.0500 |
 | NCN1T | Nordecon | TLN | 0.5980 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
 | NEOFI | NEO Finance | VLN | 2.2000 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
 | PKG1T | Pro Kapital Grupp | TLN | 0.6500 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
 | PRF1T | PRFoods | TLN | 0.0550 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
-| PZV1L | Pieno žvaigždės | VLN | 1.7300 | 4.4443 | 0 | 385 | 385 | BUY | 666.0500 | 161.7000 |
-| RKB1R | Rīgas kuģu būvētava | RIG | 0.3580 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
-| ROE1L | Artea Bankas | VLN | 0.8950 | 2.4754 | 416 | 414 | -2 | SELL | 370.5300 | 56.3040 |
-| RSU1L | Rokiškio sūris | VLN | 4.5600 | 5.4830 | 0 | 180 | 180 | BUY | 820.8000 | 126.0000 |
+| PZV1L | Pieno žvaigždės | VLN | 1.7300 | 3.4439 | 0 | 298 | 298 | BUY | 515.5400 | 125.1600 |
+| ROE1L | Artea Bankas | VLN | 0.8950 | 1.1915 | 416 | 199 | -217 | SELL | 178.1050 | 27.0640 |
+| RSU1L | Rokiškio sūris | VLN | 4.5600 | 7.1815 | 0 | 236 | 236 | BUY | 1076.1600 | 165.2000 |
 | SAF1R | SAF Tehnika | RIG | 17.1500 | 0.0000 | 100 | 0 | -100 | SELL | 0.0000 | 0.0000 |
 | SAUNA | Saunum Group | TLN | 2.6500 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
 | SCM1R | Siguldas ciltslietu un mākslīgās apsēklošanas stacija | RIG | 6.7000 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
 | SFG1T | Silvano Fashion Group | TLN | 1.0700 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
 | SKN1T | Nordic Fibreboard | TLN | 0.6200 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
-| TAL1T | Tallink Grupp | TLN | 0.6200 | 3.3914 | 700 | 820 | 120 | BUY | 508.4000 | 123.0000 |
-| TEL1L | Telia Lietuva | VLN | 2.2200 | 1.2327 | 0 | 83 | 83 | BUY | 184.2600 | 25.7300 |
-| TKM1T | TKM Grupp | TLN | 9.1000 | 0.9285 | 288 | 15 | -273 | SELL | 136.5000 | 39.7500 |
+| TAL1T | Tallink Grupp | TLN | 0.6200 | 4.2543 | 700 | 1029 | 329 | BUY | 637.9800 | 154.3500 |
+| TEL1L | Telia Lietuva | VLN | 2.2200 | 9.3207 | 0 | 629 | 629 | BUY | 1396.3800 | 194.9900 |
+| TKM1T | TKM Grupp | TLN | 9.1000 | 4.1929 | 288 | 69 | -219 | SELL | 627.9000 | 182.8500 |
 | TPD1T | Trigon Property Development | TLN | 0.5700 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
 | TSM1T | Tallinna Sadam | TLN | 1.2220 | 0.0000 | 330 | 0 | -330 | SELL | 0.0000 | 0.0000 |
-| TVE1T | Tallinna Vesi | TLN | 10.8500 | 0.5771 | 0 | 7 | 7 | BUY | 75.9500 | 13.5800 |
+| TVE1T | Tallinna Vesi | TLN | 10.8500 | 0.8246 | 0 | 11 | 11 | BUY | 119.3500 | 21.3400 |
 | UTR1L | Utenos trikotažas | VLN | 0.3840 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
 | VBL1L | Vilniaus baldai | VLN | 9.7000 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
-| VIRSI | VIRŠI-A | RIG | 4.3800 | 11.7867 | 0 | 403 | 403 | BUY | 1765.1400 | 109.7340 |
-| VLP1L | Vilkyškių pieninė | VLN | 15.5000 | 11.4228 | 42 | 110 | 68 | BUY | 1705.0000 | 0.0000 |
+| VIRSI | VIRŠI-A | RIG | 4.3800 | 6.0258 | 0 | 206 | 206 | BUY | 902.2800 | 56.0923 |
+| VLP1L | Vilkyškių pieninė | VLN | 15.5000 | 10.8169 | 42 | 104 | 62 | BUY | 1612.0000 | 0.0000 |
 | ZMP1L | Žemaitijos pienas | VLN | 2.5600 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
 
 </details>
@@ -140,27 +139,27 @@ Current-portfolio netSD is 0.443478; the optimised-portfolio value is 0.939130. 
 
 | asset | name | last_price | target_weight_percent | current_shares | target_shares | trade_shares | action | invested_EUR | total_dividend_per_share | historical_dividend_cash |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| VIRSI | VIRŠI-A | 4.3800 | 11.7867 | 0 | 403 | 403 | BUY | 1765.1400 | 0.2723 | 109.7340 |
-| VLP1L | Vilkyškių pieninė | 15.5000 | 11.4228 | 42 | 110 | 68 | BUY | 1705.0000 | 0.0000 | 0.0000 |
-| APG1L | Apranga | 3.9800 | 10.7401 | 200 | 404 | 204 | BUY | 1607.9200 | 1.0300 | 416.1200 |
-| KNE1L | KN Energies | 0.4920 | 10.3545 | 0 | 3156 | 3156 | BUY | 1552.7520 | 0.0644 | 203.2464 |
-| MRK1T | Merko Ehitus | 26.9000 | 8.3428 | 20 | 46 | 26 | BUY | 1237.4000 | 5.4500 | 250.7000 |
-| GRG1L | Grigeo Group | 1.0100 | 7.4186 | 0 | 1101 | 1101 | BUY | 1112.0100 | 0.1700 | 187.1700 |
-| MODE | Modera | 5.9000 | 5.8469 | 0 | 148 | 148 | BUY | 873.2000 | 0.0000 | 0.0000 |
-| RSU1L | Rokiškio sūris | 4.5600 | 5.4830 | 0 | 180 | 180 | BUY | 820.8000 | 0.7000 | 126.0000 |
-| IGN1L | Ignitis grupė | 22.1000 | 5.1875 | 0 | 35 | 35 | BUY | 773.5000 | 3.9190 | 137.1650 |
-| PZV1L | Pieno žvaigždės | 1.7300 | 4.4443 | 0 | 385 | 385 | BUY | 666.0500 | 0.4200 | 161.7000 |
-| HAE1T | Harju Elekter Group | 5.1400 | 3.5915 | 100 | 104 | 4 | BUY | 534.5600 | 0.5800 | 60.3200 |
-| TAL1T | Tallink Grupp | 0.6200 | 3.3914 | 700 | 820 | 120 | BUY | 508.4000 | 0.1500 | 123.0000 |
-| AKO1L | Akola Group | 1.7700 | 2.7390 | 0 | 232 | 232 | BUY | 410.6400 | 0.0000 | 0.0000 |
-| MOLNR | J. Molner | 18.9000 | 2.5109 | 0 | 19 | 19 | BUY | 359.1000 | 0.0000 | 0.0000 |
-| ROE1L | Artea Bankas | 0.8950 | 2.4754 | 416 | 414 | -2 | SELL | 370.5300 | 0.1360 | 56.3040 |
-| TEL1L | Telia Lietuva | 2.2200 | 1.2327 | 0 | 83 | 83 | BUY | 184.2600 | 0.3100 | 25.7300 |
-| TKM1T | TKM Grupp | 9.1000 | 0.9285 | 288 | 15 | -273 | SELL | 136.5000 | 2.6500 | 39.7500 |
-| TVE1T | Tallinna Vesi | 10.8500 | 0.5771 | 0 | 7 | 7 | BUY | 75.9500 | 1.9400 | 13.5800 |
-| CPA1T | Coop Pank | 2.3300 | 0.5446 | 0 | 35 | 35 | BUY | 81.5500 | 0.2670 | 9.3450 |
-| EFT1T | EfTEN Real Estate Fund | 19.4000 | 0.5051 | 0 | 3 | 3 | BUY | 58.2000 | 4.4626 | 13.3878 |
-| LHV1T | LHV Group | 3.3350 | 0.4766 | 0 | 21 | 21 | BUY | 70.0350 | 0.4300 | 9.0300 |
+| KNE1L | KN Energies | 0.4920 | 12.0143 | 0 | 3662 | 3662 | BUY | 1801.7040 | 0.0644 | 235.8328 |
+| VLP1L | Vilkyškių pieninė | 15.5000 | 10.8169 | 42 | 104 | 62 | BUY | 1612.0000 | 0.0000 | 0.0000 |
+| APG1L | Apranga | 3.9800 | 9.4074 | 200 | 354 | 154 | BUY | 1408.9200 | 1.0300 | 364.6200 |
+| TEL1L | Telia Lietuva | 2.2200 | 9.3207 | 0 | 629 | 629 | BUY | 1396.3800 | 0.3100 | 194.9900 |
+| RSU1L | Rokiškio sūris | 4.5600 | 7.1815 | 0 | 236 | 236 | BUY | 1076.1600 | 0.7000 | 165.2000 |
+| VIRSI | VIRŠI-A | 4.3800 | 6.0258 | 0 | 206 | 206 | BUY | 902.2800 | 0.2723 | 56.0923 |
+| MRK1T | Merko Ehitus | 26.9000 | 5.2056 | 20 | 29 | 9 | BUY | 780.1000 | 5.4500 | 158.0500 |
+| GRG1L | Grigeo Group | 1.0100 | 5.1146 | 0 | 759 | 759 | BUY | 766.5900 | 0.1700 | 129.0300 |
+| MOLNR | J. Molner | 18.9000 | 4.7693 | 0 | 37 | 37 | BUY | 699.3000 | 0.0000 | 0.0000 |
+| TAL1T | Tallink Grupp | 0.6200 | 4.2543 | 700 | 1029 | 329 | BUY | 637.9800 | 0.1500 | 154.3500 |
+| TKM1T | TKM Grupp | 9.1000 | 4.1929 | 288 | 69 | -219 | SELL | 627.9000 | 2.6500 | 182.8500 |
+| EFT1T | EfTEN Real Estate Fund | 19.4000 | 3.9580 | 0 | 30 | 30 | BUY | 582.0000 | 4.4626 | 133.8780 |
+| IGN1L | Ignitis grupė | 22.1000 | 3.5243 | 0 | 23 | 23 | BUY | 508.3000 | 3.9190 | 90.1370 |
+| PZV1L | Pieno žvaigždės | 1.7300 | 3.4439 | 0 | 298 | 298 | BUY | 515.5400 | 0.4200 | 125.1600 |
+| MODE | Modera | 5.9000 | 3.1959 | 0 | 81 | 81 | BUY | 477.9000 | 0.0000 | 0.0000 |
+| HAE1T | Harju Elekter Group | 5.1400 | 3.1770 | 100 | 92 | -8 | SELL | 472.8800 | 0.5800 | 53.3600 |
+| AKO1L | Akola Group | 1.7700 | 1.4616 | 0 | 123 | 123 | BUY | 217.7100 | 0.0000 | 0.0000 |
+| ROE1L | Artea Bankas | 0.8950 | 1.1915 | 416 | 199 | -217 | SELL | 178.1050 | 0.1360 | 27.0640 |
+| TVE1T | Tallinna Vesi | 10.8500 | 0.8246 | 0 | 11 | 11 | BUY | 119.3500 | 1.9400 | 21.3400 |
+| LHV1T | LHV Group | 3.3350 | 0.7640 | 0 | 34 | 34 | BUY | 113.3900 | 0.4300 | 14.6200 |
+| CPA1T | Coop Pank | 2.3300 | 0.1559 | 0 | 10 | 10 | BUY | 23.3000 | 0.2670 | 2.6700 |
 | SAF1R | SAF Tehnika | 17.1500 | 0.0000 | 100 | 0 | -100 | SELL | 0.0000 | 0.0000 | 0.0000 |
 | TSM1T | Tallinna Sadam | 1.2220 | 0.0000 | 330 | 0 | -330 | SELL | 0.0000 | 0.2920 | 0.0000 |
 
@@ -174,11 +173,11 @@ A positive trade_shares value means buy, a negative value means sell, and zero m
 Select a share to display its allocation, technical indicators, all PerformanceAnalytics measures, stochastic-dominance curves and leave-one-out effect.
 
 <details markdown="1" class="stock-profile" id="share-molnr">
-<summary><strong>MOLNR — J. Molner</strong> | BUY | target 31 shares | priority 1</summary>
+<summary><strong>MOLNR — J. Molner</strong> | BUY | target 27 shares | priority 1</summary>
 
 | Current shares | Target shares | Change | Weight | Last price | Individual netSD | OUT / IN | RSI(14) | MACD state | Bollinger state | Technical decision | Observation date |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 0 | 31 | +31 | 3.92% | EUR 18.9000 | 0.0354 | 4 / 0 | 44.96 | Bullish | Inside bands | BUY | 2026-08-28 |
+| 0 | 27 | +27 | 3.43% | EUR 18.9000 | 0.0354 | 4 / 0 | 44.96 | Bullish | Inside bands | BUY | 2026-08-28 |
 
 ![MOLNR complete technical history](figures/technical_analysis/MOLNR_technical.png)
 
@@ -236,7 +235,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.771186</td><td>0.745763</td><td>-0.025424</td></tr><tr><td>OUT</td><td>91</td><td>88</td><td>-3</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.160865</td><td>1.115048</td><td>-0.045817</td></tr><tr><td>Sortino ratio</td><td>0.163417</td><td>0.150937</td><td>-0.012480</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.725664</td><td>-0.097345</td></tr><tr><td>OUT</td><td>93</td><td>82</td><td>-11</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.084471</td><td>-0.059806</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.147143</td><td>-0.017500</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -245,11 +244,11 @@ The removed weight is distributed proportionally across all remaining holdings, 
 </details>
 
 <details markdown="1" class="stock-profile" id="share-vlp1l">
-<summary><strong>VLP1L — Vilkyškių pieninė</strong> | HOLD | target 87 shares | priority 2</summary>
+<summary><strong>VLP1L — Vilkyškių pieninė</strong> | HOLD | target 69 shares | priority 2</summary>
 
 | Current shares | Target shares | Change | Weight | Last price | Individual netSD | OUT / IN | RSI(14) | MACD state | Bollinger state | Technical decision | Observation date |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 42 | 87 | +45 | 9.09% | EUR 15.5000 | 0.3805 | 43 / 0 | 57.67 | Bearish | Inside bands | HOLD | 2026-08-28 |
+| 42 | 69 | +27 | 7.13% | EUR 15.5000 | 0.3805 | 43 / 0 | 57.67 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
 ![VLP1L complete technical history](figures/technical_analysis/VLP1L_technical.png)
 
@@ -307,7 +306,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.771186</td><td>0.694915</td><td>-0.076271</td></tr><tr><td>OUT</td><td>91</td><td>82</td><td>-9</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.160865</td><td>1.148027</td><td>-0.012838</td></tr><tr><td>Sortino ratio</td><td>0.163417</td><td>0.132939</td><td>-0.030477</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.699115</td><td>-0.123894</td></tr><tr><td>OUT</td><td>93</td><td>79</td><td>-14</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.131153</td><td>-0.013124</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.134036</td><td>-0.030607</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -316,11 +315,11 @@ The removed weight is distributed proportionally across all remaining holdings, 
 </details>
 
 <details markdown="1" class="stock-profile" id="share-kne1l">
-<summary><strong>KNE1L — KN Energies</strong> | HOLD | target 1378 shares | priority 3</summary>
+<summary><strong>KNE1L — KN Energies</strong> | HOLD | target 1438 shares | priority 3</summary>
 
 | Current shares | Target shares | Change | Weight | Last price | Individual netSD | OUT / IN | RSI(14) | MACD state | Bollinger state | Technical decision | Observation date |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 0 | 1378 | +1378 | 4.52% | EUR 0.4920 | 0.3717 | 42 / 0 | 55.64 | Bullish | Inside bands | HOLD | 2026-08-28 |
+| 0 | 1438 | +1438 | 4.72% | EUR 0.4920 | 0.3717 | 42 / 0 | 55.64 | Bullish | Inside bands | HOLD | 2026-08-28 |
 
 ![KNE1L complete technical history](figures/technical_analysis/KNE1L_technical.png)
 
@@ -378,7 +377,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.771186</td><td>0.737288</td><td>-0.033898</td></tr><tr><td>OUT</td><td>91</td><td>87</td><td>-4</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.160865</td><td>1.166501</td><td>0.005636</td></tr><tr><td>Sortino ratio</td><td>0.163417</td><td>0.152274</td><td>-0.011143</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.769912</td><td>-0.053097</td></tr><tr><td>OUT</td><td>93</td><td>87</td><td>-6</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.155081</td><td>0.010804</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.155578</td><td>-0.009066</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -387,11 +386,11 @@ The removed weight is distributed proportionally across all remaining holdings, 
 </details>
 
 <details markdown="1" class="stock-profile" id="share-mrk1t">
-<summary><strong>MRK1T — Merko Ehitus</strong> | HOLD | target 36 shares | priority 4</summary>
+<summary><strong>MRK1T — Merko Ehitus</strong> | HOLD | target 42 shares | priority 4</summary>
 
 | Current shares | Target shares | Change | Weight | Last price | Individual netSD | OUT / IN | RSI(14) | MACD state | Bollinger state | Technical decision | Observation date |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 20 | 36 | +16 | 6.58% | EUR 26.9000 | 0.3717 | 42 / 0 | 40.54 | Bearish | Inside bands | HOLD | 2026-08-28 |
+| 20 | 42 | +22 | 7.70% | EUR 26.9000 | 0.3717 | 42 / 0 | 40.54 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
 ![MRK1T complete technical history](figures/technical_analysis/MRK1T_technical.png)
 
@@ -449,7 +448,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.771186</td><td>0.711864</td><td>-0.059322</td></tr><tr><td>OUT</td><td>91</td><td>84</td><td>-7</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.160865</td><td>1.145156</td><td>-0.015708</td></tr><tr><td>Sortino ratio</td><td>0.163417</td><td>0.147815</td><td>-0.015602</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.734513</td><td>-0.088496</td></tr><tr><td>OUT</td><td>93</td><td>83</td><td>-10</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.127628</td><td>-0.016649</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.150276</td><td>-0.014368</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -458,11 +457,11 @@ The removed weight is distributed proportionally across all remaining holdings, 
 </details>
 
 <details markdown="1" class="stock-profile" id="share-virsi">
-<summary><strong>VIRSI — VIRŠI-A</strong> | HOLD | target 102 shares | priority 5</summary>
+<summary><strong>VIRSI — VIRŠI-A</strong> | HOLD | target 44 shares | priority 5</summary>
 
 | Current shares | Target shares | Change | Weight | Last price | Individual netSD | OUT / IN | RSI(14) | MACD state | Bollinger state | Technical decision | Observation date |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 0 | 102 | +102 | 2.99% | EUR 4.3800 | 0.3540 | 40 / 0 | 66.98 | Bearish | Inside bands | HOLD | 2026-08-28 |
+| 0 | 44 | +44 | 1.29% | EUR 4.3800 | 0.3540 | 40 / 0 | 66.98 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
 ![VIRSI complete technical history](figures/technical_analysis/VIRSI_technical.png)
 
@@ -520,7 +519,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.771186</td><td>0.762712</td><td>-0.008475</td></tr><tr><td>OUT</td><td>91</td><td>90</td><td>-1</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.160865</td><td>1.160955</td><td>0.000091</td></tr><tr><td>Sortino ratio</td><td>0.163417</td><td>0.163898</td><td>0.000481</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.823009</td><td>0.000000</td></tr><tr><td>OUT</td><td>93</td><td>93</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.144134</td><td>-0.000143</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.164952</td><td>0.000309</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -529,11 +528,11 @@ The removed weight is distributed proportionally across all remaining holdings, 
 </details>
 
 <details markdown="1" class="stock-profile" id="share-apg1l">
-<summary><strong>APG1L — Apranga</strong> | HOLD | target 253 shares | priority 6</summary>
+<summary><strong>APG1L — Apranga</strong> | HOLD | target 254 shares | priority 6</summary>
 
 | Current shares | Target shares | Change | Weight | Last price | Individual netSD | OUT / IN | RSI(14) | MACD state | Bollinger state | Technical decision | Observation date |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 200 | 253 | +53 | 6.71% | EUR 3.9800 | 0.3363 | 38 / 0 | 55.56 | Bearish | Inside bands | HOLD | 2026-08-28 |
+| 200 | 254 | +54 | 6.76% | EUR 3.9800 | 0.3363 | 38 / 0 | 55.56 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
 ![APG1L complete technical history](figures/technical_analysis/APG1L_technical.png)
 
@@ -591,7 +590,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.771186</td><td>0.745763</td><td>-0.025424</td></tr><tr><td>OUT</td><td>91</td><td>88</td><td>-3</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.160865</td><td>1.182541</td><td>0.021676</td></tr><tr><td>Sortino ratio</td><td>0.163417</td><td>0.152133</td><td>-0.011284</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.743363</td><td>-0.079646</td></tr><tr><td>OUT</td><td>93</td><td>84</td><td>-9</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.159539</td><td>0.015261</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.154325</td><td>-0.010318</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -600,11 +599,11 @@ The removed weight is distributed proportionally across all remaining holdings, 
 </details>
 
 <details markdown="1" class="stock-profile" id="share-hae1t">
-<summary><strong>HAE1T — Harju Elekter Group</strong> | BUY | target 133 shares | priority 7</summary>
+<summary><strong>HAE1T — Harju Elekter Group</strong> | BUY | target 147 shares | priority 7</summary>
 
 | Current shares | Target shares | Change | Weight | Last price | Individual netSD | OUT / IN | RSI(14) | MACD state | Bollinger state | Technical decision | Observation date |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 100 | 133 | +33 | 4.58% | EUR 5.1400 | 0.1150 | 37 / 24 | 42.59 | Bullish | Inside bands | BUY | 2026-08-28 |
+| 100 | 147 | +47 | 5.06% | EUR 5.1400 | 0.1150 | 37 / 24 | 42.59 | Bullish | Inside bands | BUY | 2026-08-28 |
 
 ![HAE1T complete technical history](figures/technical_analysis/HAE1T_technical.png)
 
@@ -662,7 +661,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.771186</td><td>0.745763</td><td>-0.025424</td></tr><tr><td>OUT</td><td>91</td><td>88</td><td>-3</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.160865</td><td>1.147725</td><td>-0.013140</td></tr><tr><td>Sortino ratio</td><td>0.163417</td><td>0.168476</td><td>0.005059</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.796460</td><td>-0.026549</td></tr><tr><td>OUT</td><td>93</td><td>90</td><td>-3</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.128937</td><td>-0.015340</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.166639</td><td>0.001996</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -733,7 +732,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.771186</td><td>0.779661</td><td>0.008475</td></tr><tr><td>OUT</td><td>91</td><td>92</td><td>+1</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.160865</td><td>1.210305</td><td>0.049440</td></tr><tr><td>Sortino ratio</td><td>0.163417</td><td>0.162984</td><td>-0.000433</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.796460</td><td>-0.026549</td></tr><tr><td>OUT</td><td>93</td><td>90</td><td>-3</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.175662</td><td>0.031385</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.172213</td><td>0.007569</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -742,11 +741,11 @@ The removed weight is distributed proportionally across all remaining holdings, 
 </details>
 
 <details markdown="1" class="stock-profile" id="share-grg1l">
-<summary><strong>GRG1L — Grigeo Group</strong> | HOLD | target 526 shares | priority 9</summary>
+<summary><strong>GRG1L — Grigeo Group</strong> | HOLD | target 519 shares | priority 9</summary>
 
 | Current shares | Target shares | Change | Weight | Last price | Individual netSD | OUT / IN | RSI(14) | MACD state | Bollinger state | Technical decision | Observation date |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 0 | 526 | +526 | 3.54% | EUR 1.0100 | 0.3805 | 49 / 6 | 35.53 | Bearish | Inside bands | HOLD | 2026-08-28 |
+| 0 | 519 | +519 | 3.50% | EUR 1.0100 | 0.3805 | 49 / 6 | 35.53 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
 ![GRG1L complete technical history](figures/technical_analysis/GRG1L_technical.png)
 
@@ -804,7 +803,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.771186</td><td>0.728814</td><td>-0.042373</td></tr><tr><td>OUT</td><td>91</td><td>86</td><td>-5</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.160865</td><td>1.156594</td><td>-0.004271</td></tr><tr><td>Sortino ratio</td><td>0.163417</td><td>0.157624</td><td>-0.005793</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.814159</td><td>-0.008850</td></tr><tr><td>OUT</td><td>93</td><td>92</td><td>-1</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.140842</td><td>-0.003435</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.161601</td><td>-0.003043</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -813,11 +812,11 @@ The removed weight is distributed proportionally across all remaining holdings, 
 </details>
 
 <details markdown="1" class="stock-profile" id="share-rsu1l">
-<summary><strong>RSU1L — Rokiškio sūris</strong> | HOLD | target 137 shares | priority 10</summary>
+<summary><strong>RSU1L — Rokiškio sūris</strong> | HOLD | target 149 shares | priority 10</summary>
 
 | Current shares | Target shares | Change | Weight | Last price | Individual netSD | OUT / IN | RSI(14) | MACD state | Bollinger state | Technical decision | Observation date |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 0 | 137 | +137 | 4.19% | EUR 4.5600 | 0.2566 | 35 / 6 | 58.03 | Bullish | Inside bands | HOLD | 2026-08-28 |
+| 0 | 149 | +149 | 4.54% | EUR 4.5600 | 0.2566 | 35 / 6 | 58.03 | Bullish | Inside bands | HOLD | 2026-08-28 |
 
 ![RSU1L complete technical history](figures/technical_analysis/RSU1L_technical.png)
 
@@ -875,7 +874,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.771186</td><td>0.762712</td><td>-0.008475</td></tr><tr><td>OUT</td><td>91</td><td>90</td><td>-1</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.160865</td><td>1.186131</td><td>0.025266</td></tr><tr><td>Sortino ratio</td><td>0.163417</td><td>0.165766</td><td>0.002349</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.796460</td><td>-0.026549</td></tr><tr><td>OUT</td><td>93</td><td>90</td><td>-3</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.158492</td><td>0.014215</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.160546</td><td>-0.004097</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -884,11 +883,11 @@ The removed weight is distributed proportionally across all remaining holdings, 
 </details>
 
 <details markdown="1" class="stock-profile" id="share-ign1l">
-<summary><strong>IGN1L — Ignitis grupė</strong> | HOLD | target 3 shares | priority 11</summary>
+<summary><strong>IGN1L — Ignitis grupė</strong> | HOLD | target 6 shares | priority 11</summary>
 
 | Current shares | Target shares | Change | Weight | Last price | Individual netSD | OUT / IN | RSI(14) | MACD state | Bollinger state | Technical decision | Observation date |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 0 | 3 | +3 | 0.56% | EUR 22.1000 | 0.3982 | 56 / 11 | 46.17 | Bearish | Inside bands | HOLD | 2026-08-28 |
+| 0 | 6 | +6 | 0.92% | EUR 22.1000 | 0.4071 | 56 / 10 | 46.17 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
 ![IGN1L complete technical history](figures/technical_analysis/IGN1L_technical.png)
 
@@ -946,7 +945,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.771186</td><td>0.771186</td><td>0.000000</td></tr><tr><td>OUT</td><td>91</td><td>91</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.160865</td><td>1.160126</td><td>-0.000738</td></tr><tr><td>Sortino ratio</td><td>0.163417</td><td>0.164062</td><td>0.000645</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.823009</td><td>0.000000</td></tr><tr><td>OUT</td><td>93</td><td>93</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.143883</td><td>-0.000394</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.164592</td><td>-0.000052</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -955,11 +954,11 @@ The removed weight is distributed proportionally across all remaining holdings, 
 </details>
 
 <details markdown="1" class="stock-profile" id="share-ako1l">
-<summary><strong>AKO1L — Akola Group</strong> | HOLD | target 123 shares | priority 12</summary>
+<summary><strong>AKO1L — Akola Group</strong> | HOLD | target 111 shares | priority 12</summary>
 
 | Current shares | Target shares | Change | Weight | Last price | Individual netSD | OUT / IN | RSI(14) | MACD state | Bollinger state | Technical decision | Observation date |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 0 | 123 | +123 | 1.46% | EUR 1.7700 | 0.1239 | 25 / 11 | 45.60 | Bearish | Inside bands | HOLD | 2026-08-28 |
+| 0 | 111 | +111 | 1.32% | EUR 1.7700 | 0.1239 | 25 / 11 | 45.60 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
 ![AKO1L complete technical history](figures/technical_analysis/AKO1L_technical.png)
 
@@ -1017,7 +1016,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.771186</td><td>0.762712</td><td>-0.008475</td></tr><tr><td>OUT</td><td>91</td><td>90</td><td>-1</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.160865</td><td>1.165920</td><td>0.005056</td></tr><tr><td>Sortino ratio</td><td>0.163417</td><td>0.163847</td><td>0.000430</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.823009</td><td>0.000000</td></tr><tr><td>OUT</td><td>93</td><td>93</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.143852</td><td>-0.000425</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.164145</td><td>-0.000498</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -1026,11 +1025,11 @@ The removed weight is distributed proportionally across all remaining holdings, 
 </details>
 
 <details markdown="1" class="stock-profile" id="share-pzv1l">
-<summary><strong>PZV1L — Pieno žvaigždės</strong> | HOLD | target 91 shares | priority 13</summary>
+<summary><strong>PZV1L — Pieno žvaigždės</strong> | HOLD | target 30 shares | priority 13</summary>
 
 | Current shares | Target shares | Change | Weight | Last price | Individual netSD | OUT / IN | RSI(14) | MACD state | Bollinger state | Technical decision | Observation date |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 0 | 91 | +91 | 1.05% | EUR 1.7300 | 0.1858 | 35 / 14 | 46.60 | Bearish | Inside bands | HOLD | 2026-08-28 |
+| 0 | 30 | +30 | 0.36% | EUR 1.7300 | 0.1858 | 35 / 14 | 46.60 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
 ![PZV1L complete technical history](figures/technical_analysis/PZV1L_technical.png)
 
@@ -1088,7 +1087,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.771186</td><td>0.754237</td><td>-0.016949</td></tr><tr><td>OUT</td><td>91</td><td>89</td><td>-2</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.160865</td><td>1.166406</td><td>0.005541</td></tr><tr><td>Sortino ratio</td><td>0.163417</td><td>0.159923</td><td>-0.003494</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.823009</td><td>0.000000</td></tr><tr><td>OUT</td><td>93</td><td>93</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.145374</td><td>0.001097</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.164179</td><td>-0.000465</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -1097,11 +1096,11 @@ The removed weight is distributed proportionally across all remaining holdings, 
 </details>
 
 <details markdown="1" class="stock-profile" id="share-roe1l">
-<summary><strong>ROE1L — Artea Bankas</strong> | HOLD | target 492 shares | priority 14</summary>
+<summary><strong>ROE1L — Artea Bankas</strong> | HOLD | target 906 shares | priority 14</summary>
 
 | Current shares | Target shares | Change | Weight | Last price | Individual netSD | OUT / IN | RSI(14) | MACD state | Bollinger state | Technical decision | Observation date |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 416 | 492 | +76 | 2.94% | EUR 0.8950 | 0.1858 | 38 / 17 | 51.65 | Bearish | Inside bands | HOLD | 2026-08-28 |
+| 416 | 906 | +490 | 5.41% | EUR 0.8950 | 0.1858 | 38 / 17 | 51.65 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
 ![ROE1L complete technical history](figures/technical_analysis/ROE1L_technical.png)
 
@@ -1159,78 +1158,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.771186</td><td>0.762712</td><td>-0.008475</td></tr><tr><td>OUT</td><td>91</td><td>90</td><td>-1</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.160865</td><td>1.162899</td><td>0.002034</td></tr><tr><td>Sortino ratio</td><td>0.163417</td><td>0.162939</td><td>-0.000478</td></tr></tbody></table>
-
-The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
-
-</details>
-
-</details>
-
-<details markdown="1" class="stock-profile" id="share-lhv1t">
-<summary><strong>LHV1T — LHV Group</strong> | HOLD | target 97 shares | priority 15</summary>
-
-| Current shares | Target shares | Change | Weight | Last price | Individual netSD | OUT / IN | RSI(14) | MACD state | Bollinger state | Technical decision | Observation date |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 0 | 97 | +97 | 2.17% | EUR 3.3350 | 0.1062 | 34 / 22 | 43.80 | Bearish | Inside bands | HOLD | 2026-08-28 |
-
-![LHV1T complete technical history](figures/technical_analysis/LHV1T_technical.png)
-
-<details markdown="1">
-<summary>Bollinger Bands, RSI(14) and MACD — last 126 observations (approximately six months)</summary>
-
-![LHV1T combined technical indicators](figures/stock_profiles/LHV1T_technicals_6m.png)
-
-Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations.
-
-</details>
-
-<details markdown="1">
-<summary>Return histogram</summary>
-
-![LHV1T return histogram](figures/stock_profiles/LHV1T_histogram.png)
-
-</details>
-
-<details markdown="1">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-![LHV1T stochastic dominance](figures/stock_profiles/LHV1T_FSD_SSD_TSD.png)
-
-The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
-
-</details>
-
-<details markdown="1">
-<summary>All 72 PerformanceAnalytics measures</summary>
-
-| Measure | Value | Measure | Value | Measure | Value | Measure | Value |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| ArithmeticReturn | -0.000299 | Sterling | -0.195237 | Hurst | 0.340010 | BetaCoSkewness | -3.835436 |
-| GeometricReturn | -0.000338 | Burke | -0.373845 | Kappa | -0.036120 | BetaCoKurtosis | -0.113239 |
-| AnnualizedReturn_Arithmetic | -0.075467 | Martin | -0.370437 | Kelly | -3.906329 | CDD | 0.180859 |
-| AnnualizedReturn_Geometric | -0.081572 | UlcerIndex | 0.220205 | Prospect | -0.710868 | CoSkewness | -0.000001 |
-| CumulativeReturn | -0.224773 | PainIndex | 0.206536 | Information_Daily | -0.081465 | CoKurtosis | -0.000000 |
-| Volatility | 0.008756 | PainRatio | -0.394952 | Information_Annualized | -1.378293 | FamaBeta | 0.791547 |
-| Volatility_Annualized | 0.138993 | VaR_Loss | 0.012648 | CAPMAlpha | -0.000292 | MSquaredExcess | -0.269998 |
-| MaximumDrawdown | 0.317810 | ES_Loss | 0.018626 | JensenAlpha | -0.079647 | NetSelectivity | -0.262590 |
-| AverageDrawdown | 0.069906 | DownsideDeviation | 0.005782 | Treynor_Daily | 0.040102 | Selectivity | -0.079647 |
-| AverageDrawdownLength | 149.600000 | DrawdownDeviation | 0.011592 | Treynor_Annualized | 9.689265 | SpecificRisk | 0.138893 |
-| AverageRecoveryTime | 2.600000 | Rachev | 1.213892 | Modigliani | -0.000378 | SystematicRisk | -0.001478 |
-| Sharpe_Daily | -0.034203 | AdjustedSharpe | -0.479708 | TrackingError_Daily | 0.014180 | TotalRisk | 0.138901 |
-| Sharpe_Annualized | -0.542953 | Skewness | 0.734623 | TrackingError_Annualized | 0.225105 | UpCapture | -0.077199 |
-| Sharpe_VaR | -0.023678 | Kurtosis | 7.071013 | M2Sortino | -0.083045 | UpNumber | 0.339450 |
-| Sharpe_ES | -0.016078 | UpsidePotential | 0.475464 | Appraisal | -0.573439 | UpPercent | 0.149083 |
-| Sortino | -0.051795 | UpsideRisk | 0.006574 | CAPMBeta | -0.008419 | DownCapture | -0.008574 |
-| Calmar | -0.256669 | BernardoLedoit | 0.901766 | ActiveReturn | -0.310261 | DownNumber | 0.471698 |
-| Omega | 0.901766 | DRatio | 1.524267 | OmegaExcessReturn | -0.114675 | DownPercent | 0.789308 |
-
-</details>
-
-<details markdown="1">
-<summary>Effect of removing this share from curent_update_baltic</summary>
-
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.771186</td><td>0.779661</td><td>0.008475</td></tr><tr><td>OUT</td><td>91</td><td>92</td><td>+1</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.160865</td><td>1.163802</td><td>0.002938</td></tr><tr><td>Sortino ratio</td><td>0.163417</td><td>0.165712</td><td>0.002296</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.831858</td><td>0.008850</td></tr><tr><td>OUT</td><td>93</td><td>94</td><td>+1</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.141467</td><td>-0.002810</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.165744</td><td>0.001101</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -1239,11 +1167,11 @@ The removed weight is distributed proportionally across all remaining holdings, 
 </details>
 
 <details markdown="1" class="stock-profile" id="share-tkm1t">
-<summary><strong>TKM1T — TKM Grupp</strong> | HOLD | target 327 shares | priority 16</summary>
+<summary><strong>TKM1T — TKM Grupp</strong> | HOLD | target 315 shares | priority 15</summary>
 
 | Current shares | Target shares | Change | Weight | Last price | Individual netSD | OUT / IN | RSI(14) | MACD state | Bollinger state | Technical decision | Observation date |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 288 | 327 | +39 | 19.89% | EUR 9.1000 | 0.0619 | 29 / 22 | 42.63 | Bearish | Inside bands | HOLD | 2026-08-28 |
+| 288 | 315 | +27 | 19.15% | EUR 9.1000 | 0.0619 | 29 / 22 | 42.63 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
 ![TKM1T complete technical history](figures/technical_analysis/TKM1T_technical.png)
 
@@ -1301,7 +1229,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.771186</td><td>0.728814</td><td>-0.042373</td></tr><tr><td>OUT</td><td>91</td><td>86</td><td>-5</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.160865</td><td>1.217635</td><td>0.056770</td></tr><tr><td>Sortino ratio</td><td>0.163417</td><td>0.180924</td><td>0.017507</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.778761</td><td>-0.044248</td></tr><tr><td>OUT</td><td>93</td><td>88</td><td>-5</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.197354</td><td>0.053077</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.182056</td><td>0.017413</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -1310,11 +1238,11 @@ The removed weight is distributed proportionally across all remaining holdings, 
 </details>
 
 <details markdown="1" class="stock-profile" id="share-eft1t">
-<summary><strong>EFT1T — EfTEN Real Estate Fund</strong> | HOLD | target 17 shares | priority 17</summary>
+<summary><strong>EFT1T — EfTEN Real Estate Fund</strong> | HOLD | target 23 shares | priority 16</summary>
 
 | Current shares | Target shares | Change | Weight | Last price | Individual netSD | OUT / IN | RSI(14) | MACD state | Bollinger state | Technical decision | Observation date |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 0 | 17 | +17 | 2.30% | EUR 19.4000 | 0.1150 | 36 / 23 | 43.20 | Bearish | Inside bands | HOLD | 2026-08-28 |
+| 0 | 23 | +23 | 3.07% | EUR 19.4000 | 0.1150 | 36 / 23 | 43.20 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
 ![EFT1T complete technical history](figures/technical_analysis/EFT1T_technical.png)
 
@@ -1372,7 +1300,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.771186</td><td>0.771186</td><td>0.000000</td></tr><tr><td>OUT</td><td>91</td><td>91</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.160865</td><td>1.163141</td><td>0.002276</td></tr><tr><td>Sortino ratio</td><td>0.163417</td><td>0.164302</td><td>0.000886</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.805310</td><td>-0.017699</td></tr><tr><td>OUT</td><td>93</td><td>91</td><td>-2</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.145198</td><td>0.000921</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.165381</td><td>0.000737</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -1381,11 +1309,11 @@ The removed weight is distributed proportionally across all remaining holdings, 
 </details>
 
 <details markdown="1" class="stock-profile" id="share-tel1l">
-<summary><strong>TEL1L — Telia Lietuva</strong> | HOLD | target 32 shares | priority 18</summary>
+<summary><strong>TEL1L — Telia Lietuva</strong> | HOLD | target 101 shares | priority 17</summary>
 
 | Current shares | Target shares | Change | Weight | Last price | Individual netSD | OUT / IN | RSI(14) | MACD state | Bollinger state | Technical decision | Observation date |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 0 | 32 | +32 | 0.48% | EUR 2.2200 | 0.1681 | 43 / 24 | 45.64 | Bearish | Inside bands | HOLD | 2026-08-28 |
+| 0 | 101 | +101 | 1.50% | EUR 2.2200 | 0.1681 | 43 / 24 | 45.64 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
 ![TEL1L complete technical history](figures/technical_analysis/TEL1L_technical.png)
 
@@ -1443,7 +1371,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.771186</td><td>0.754237</td><td>-0.016949</td></tr><tr><td>OUT</td><td>91</td><td>89</td><td>-2</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.160865</td><td>1.163438</td><td>0.002573</td></tr><tr><td>Sortino ratio</td><td>0.163417</td><td>0.163732</td><td>0.000315</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.823009</td><td>0.000000</td></tr><tr><td>OUT</td><td>93</td><td>93</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.146552</td><td>0.002275</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.164924</td><td>0.000280</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -1452,11 +1380,11 @@ The removed weight is distributed proportionally across all remaining holdings, 
 </details>
 
 <details markdown="1" class="stock-profile" id="share-cpa1t">
-<summary><strong>CPA1T — Coop Pank</strong> | HOLD | target 80 shares | priority 19</summary>
+<summary><strong>CPA1T — Coop Pank</strong> | HOLD | target 12 shares | priority 18</summary>
 
 | Current shares | Target shares | Change | Weight | Last price | Individual netSD | OUT / IN | RSI(14) | MACD state | Bollinger state | Technical decision | Observation date |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 0 | 80 | +80 | 1.24% | EUR 2.3300 | 0.0531 | 30 / 24 | 56.23 | Bearish | Inside bands | HOLD | 2026-08-28 |
+| 0 | 12 | +12 | 0.19% | EUR 2.3300 | 0.0531 | 30 / 24 | 56.23 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
 ![CPA1T complete technical history](figures/technical_analysis/CPA1T_technical.png)
 
@@ -1514,7 +1442,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.771186</td><td>0.771186</td><td>0.000000</td></tr><tr><td>OUT</td><td>91</td><td>91</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.160865</td><td>1.162541</td><td>0.001676</td></tr><tr><td>Sortino ratio</td><td>0.163417</td><td>0.164694</td><td>0.001278</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.823009</td><td>0.000000</td></tr><tr><td>OUT</td><td>93</td><td>93</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.144593</td><td>0.000316</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.164935</td><td>0.000292</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -1523,11 +1451,11 @@ The removed weight is distributed proportionally across all remaining holdings, 
 </details>
 
 <details markdown="1" class="stock-profile" id="share-mode">
-<summary><strong>MODE — Modera</strong> | HOLD | target 9 shares | priority 20</summary>
+<summary><strong>MODE — Modera</strong> | HOLD | target 89 shares | priority 19</summary>
 
 | Current shares | Target shares | Change | Weight | Last price | Individual netSD | OUT / IN | RSI(14) | MACD state | Bollinger state | Technical decision | Observation date |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 0 | 9 | +9 | 0.38% | EUR 5.9000 | 0.0265 | 27 / 24 | 48.74 | Bearish | Inside bands | HOLD | 2026-08-28 |
+| 0 | 89 | +89 | 3.53% | EUR 5.9000 | 0.0265 | 27 / 24 | 48.74 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
 ![MODE complete technical history](figures/technical_analysis/MODE_technical.png)
 
@@ -1585,7 +1513,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.771186</td><td>0.771186</td><td>0.000000</td></tr><tr><td>OUT</td><td>91</td><td>91</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.160865</td><td>1.159915</td><td>-0.000949</td></tr><tr><td>Sortino ratio</td><td>0.163417</td><td>0.162786</td><td>-0.000631</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.814159</td><td>-0.008850</td></tr><tr><td>OUT</td><td>93</td><td>92</td><td>-1</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.149703</td><td>0.005425</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.161948</td><td>-0.002695</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -1594,11 +1522,11 @@ The removed weight is distributed proportionally across all remaining holdings, 
 </details>
 
 <details markdown="1" class="stock-profile" id="share-tal1t">
-<summary><strong>TAL1T — Tallink Grupp</strong> | HOLD | target 756 shares | priority 21</summary>
+<summary><strong>TAL1T — Tallink Grupp</strong> | HOLD | target 909 shares | priority 20</summary>
 
 | Current shares | Target shares | Change | Weight | Last price | Individual netSD | OUT / IN | RSI(14) | MACD state | Bollinger state | Technical decision | Observation date |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 700 | 756 | +56 | 3.13% | EUR 0.6200 | 0.0177 | 26 / 24 | 51.82 | Bullish | Inside bands | HOLD | 2026-08-28 |
+| 700 | 909 | +209 | 3.76% | EUR 0.6200 | 0.0177 | 26 / 24 | 51.82 | Bullish | Inside bands | HOLD | 2026-08-28 |
 
 ![TAL1T complete technical history](figures/technical_analysis/TAL1T_technical.png)
 
@@ -1656,7 +1584,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.771186</td><td>0.771186</td><td>0.000000</td></tr><tr><td>OUT</td><td>91</td><td>91</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.160865</td><td>1.167762</td><td>0.006897</td></tr><tr><td>Sortino ratio</td><td>0.163417</td><td>0.165972</td><td>0.002555</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.823009</td><td>0.000000</td></tr><tr><td>OUT</td><td>93</td><td>93</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.151344</td><td>0.007067</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.165890</td><td>0.001247</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -1665,11 +1593,11 @@ The removed weight is distributed proportionally across all remaining holdings, 
 </details>
 
 <details markdown="1" class="stock-profile" id="share-tve1t">
-<summary><strong>TVE1T — Tallinna Vesi</strong> | HOLD | target 57 shares | priority 22</summary>
+<summary><strong>TVE1T — Tallinna Vesi</strong> | HOLD | target 35 shares | priority 21</summary>
 
 | Current shares | Target shares | Change | Weight | Last price | Individual netSD | OUT / IN | RSI(14) | MACD state | Bollinger state | Technical decision | Observation date |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 0 | 57 | +57 | 4.15% | EUR 10.8500 | 0.0177 | 28 / 26 | 34.52 | Bearish | Inside bands | HOLD | 2026-08-28 |
+| 0 | 35 | +35 | 2.53% | EUR 10.8500 | 0.0177 | 28 / 26 | 34.52 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
 ![TVE1T complete technical history](figures/technical_analysis/TVE1T_technical.png)
 
@@ -1727,7 +1655,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.771186</td><td>0.771186</td><td>0.000000</td></tr><tr><td>OUT</td><td>91</td><td>91</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.160865</td><td>1.160574</td><td>-0.000291</td></tr><tr><td>Sortino ratio</td><td>0.163417</td><td>0.163677</td><td>0.000260</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.814159</td><td>-0.008850</td></tr><tr><td>OUT</td><td>93</td><td>92</td><td>-1</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.139534</td><td>-0.004743</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.166730</td><td>0.002087</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -1736,7 +1664,7 @@ The removed weight is distributed proportionally across all remaining holdings, 
 </details>
 
 <details markdown="1" class="stock-profile" id="share-tsm1t">
-<summary><strong>TSM1T — Tallinna Sadam</strong> | HOLD | target 330 shares | priority 23</summary>
+<summary><strong>TSM1T — Tallinna Sadam</strong> | HOLD | target 330 shares | priority 22</summary>
 
 | Current shares | Target shares | Change | Weight | Last price | Individual netSD | OUT / IN | RSI(14) | MACD state | Bollinger state | Technical decision | Observation date |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -1798,7 +1726,7 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>Effect of removing this share from curent_update_baltic</summary>
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.771186</td><td>0.771186</td><td>0.000000</td></tr><tr><td>OUT</td><td>91</td><td>91</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.160865</td><td>1.165971</td><td>0.005107</td></tr><tr><td>Sortino ratio</td><td>0.163417</td><td>0.167124</td><td>0.003707</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.823009</td><td>0.823009</td><td>0.000000</td></tr><tr><td>OUT</td><td>93</td><td>93</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.144277</td><td>1.150512</td><td>0.006235</td></tr><tr><td>Sortino ratio</td><td>0.164643</td><td>0.168777</td><td>0.004133</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
@@ -1810,37 +1738,37 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 Each scenario removes one share from curent_update_baltic and proportionally rescales the remaining weights. Positive delta means that the ratio improves after removal; negative delta means that the removed share was beneficial for that criterion.
 
-**Main result.** Removing **LHV1T** produces the largest netSD change (+0.008475); removing **TKM1T** gives the largest Rachev improvement (+0.056770); removing **TKM1T** gives the largest Sortino improvement (+0.017507). These are sensitivity results, not automatically new trade recommendations, because the three criteria can move in opposite directions.
+**Main result.** Removing **ROE1L** produces the largest netSD change (+0.008850); removing **TKM1T** gives the largest Rachev improvement (+0.053077); removing **TKM1T** gives the largest Sortino improvement (+0.017413). These are sensitivity results, not automatically new trade recommendations, because the three criteria can move in opposite directions.
 
 <details markdown="1">
 <summary><strong>Open complete netSD, Rachev and Sortino sensitivity table</strong></summary>
 
 | Removed share | netSD | Δ netSD | Rachev | Δ Rachev | Sortino | Δ Sortino |
 | --- | --- | --- | --- | --- | --- | --- |
-| None (baseline) | 0.771186 | 0.000000 | 1.160865 | 0.000000 | 0.163417 | 0.000000 |
-| AKO1L | 0.762712 | -0.008475 | 1.165920 | 0.005056 | 0.163847 | 0.000430 |
-| APG1L | 0.745763 | -0.025424 | 1.182541 | 0.021676 | 0.152133 | -0.011284 |
-| CPA1T | 0.771186 | 0.000000 | 1.162541 | 0.001676 | 0.164694 | 0.001278 |
-| EFT1T | 0.771186 | 0.000000 | 1.163141 | 0.002276 | 0.164302 | 0.000886 |
-| GRG1L | 0.728814 | -0.042373 | 1.156594 | -0.004271 | 0.157624 | -0.005793 |
-| HAE1T | 0.745763 | -0.025424 | 1.147725 | -0.013140 | 0.168476 | 0.005059 |
-| IGN1L | 0.771186 | 0.000000 | 1.160126 | -0.000738 | 0.164062 | 0.000645 |
-| KNE1L | 0.737288 | -0.033898 | 1.166501 | 0.005636 | 0.152274 | -0.011143 |
-| LHV1T | 0.779661 | 0.008475 | 1.163802 | 0.002938 | 0.165712 | 0.002296 |
-| MODE | 0.771186 | 0.000000 | 1.159915 | -0.000949 | 0.162786 | -0.000631 |
-| MOLNR | 0.745763 | -0.025424 | 1.115048 | -0.045817 | 0.150937 | -0.012480 |
-| MRK1T | 0.711864 | -0.059322 | 1.145156 | -0.015708 | 0.147815 | -0.015602 |
-| PZV1L | 0.754237 | -0.016949 | 1.166406 | 0.005541 | 0.159923 | -0.003494 |
-| ROE1L | 0.762712 | -0.008475 | 1.162899 | 0.002034 | 0.162939 | -0.000478 |
-| RSU1L | 0.762712 | -0.008475 | 1.186131 | 0.025266 | 0.165766 | 0.002349 |
-| SAF1R | 0.779661 | 0.008475 | 1.210305 | 0.049440 | 0.162984 | -0.000433 |
-| TAL1T | 0.771186 | 0.000000 | 1.167762 | 0.006897 | 0.165972 | 0.002555 |
-| TEL1L | 0.754237 | -0.016949 | 1.163438 | 0.002573 | 0.163732 | 0.000315 |
-| TKM1T | 0.728814 | -0.042373 | 1.217635 | 0.056770 | 0.180924 | 0.017507 |
-| TSM1T | 0.771186 | 0.000000 | 1.165971 | 0.005107 | 0.167124 | 0.003707 |
-| TVE1T | 0.771186 | 0.000000 | 1.160574 | -0.000291 | 0.163677 | 0.000260 |
-| VIRSI | 0.762712 | -0.008475 | 1.160955 | 0.000091 | 0.163898 | 0.000481 |
-| VLP1L | 0.694915 | -0.076271 | 1.148027 | -0.012838 | 0.132939 | -0.030477 |
+| None (baseline) | 0.823009 | 0.000000 | 1.144277 | 0.000000 | 0.164643 | 0.000000 |
+| AKO1L | 0.823009 | 0.000000 | 1.143852 | -0.000425 | 0.164145 | -0.000498 |
+| APG1L | 0.743363 | -0.079646 | 1.159539 | 0.015261 | 0.154325 | -0.010318 |
+| CPA1T | 0.823009 | 0.000000 | 1.144593 | 0.000316 | 0.164935 | 0.000292 |
+| EFT1T | 0.805310 | -0.017699 | 1.145198 | 0.000921 | 0.165381 | 0.000737 |
+| GRG1L | 0.814159 | -0.008850 | 1.140842 | -0.003435 | 0.161601 | -0.003043 |
+| HAE1T | 0.796460 | -0.026549 | 1.128937 | -0.015340 | 0.166639 | 0.001996 |
+| IGN1L | 0.823009 | 0.000000 | 1.143883 | -0.000394 | 0.164592 | -0.000052 |
+| KNE1L | 0.769912 | -0.053097 | 1.155081 | 0.010804 | 0.155578 | -0.009066 |
+| LHV1T | 0.823009 | 0.000000 | 1.144293 | 0.000016 | 0.164663 | 0.000019 |
+| MODE | 0.814159 | -0.008850 | 1.149703 | 0.005425 | 0.161948 | -0.002695 |
+| MOLNR | 0.725664 | -0.097345 | 1.084471 | -0.059806 | 0.147143 | -0.017500 |
+| MRK1T | 0.734513 | -0.088496 | 1.127628 | -0.016649 | 0.150276 | -0.014368 |
+| PZV1L | 0.823009 | 0.000000 | 1.145374 | 0.001097 | 0.164179 | -0.000465 |
+| ROE1L | 0.831858 | 0.008850 | 1.141467 | -0.002810 | 0.165744 | 0.001101 |
+| RSU1L | 0.796460 | -0.026549 | 1.158492 | 0.014215 | 0.160546 | -0.004097 |
+| SAF1R | 0.796460 | -0.026549 | 1.175662 | 0.031385 | 0.172213 | 0.007569 |
+| TAL1T | 0.823009 | 0.000000 | 1.151344 | 0.007067 | 0.165890 | 0.001247 |
+| TEL1L | 0.823009 | 0.000000 | 1.146552 | 0.002275 | 0.164924 | 0.000280 |
+| TKM1T | 0.778761 | -0.044248 | 1.197354 | 0.053077 | 0.182056 | 0.017413 |
+| TSM1T | 0.823009 | 0.000000 | 1.150512 | 0.006235 | 0.168777 | 0.004133 |
+| TVE1T | 0.814159 | -0.008850 | 1.139534 | -0.004743 | 0.166730 | 0.002087 |
+| VIRSI | 0.823009 | 0.000000 | 1.144134 | -0.000143 | 0.164952 | 0.000309 |
+| VLP1L | 0.699115 | -0.123894 | 1.131153 | -0.013124 | 0.134036 | -0.030607 |
 
 </details>
 
@@ -1848,15 +1776,15 @@ Each scenario removes one share from curent_update_baltic and proportionally res
 
 Priority 1 denotes the largest individual-share netSD ratio. Dividend columns use only official payments dated in 2025 and 2026. Annual dividend cash equals dividend per share multiplied by the target number of shares.
 
-curent_update_baltic keeps every currently held share, permits purchases only, and uses the EUR 15,000 ceiling. Its calculated netSD is 0.817391, with OUT=94 and IN=0; the remaining cash is EUR 99.18.
+curent_update_baltic keeps every currently held share, permits purchases only, and uses the EUR 15,000 ceiling. Its calculated netSD is 0.823009, with OUT=93 and IN=0; the remaining cash is EUR 76.64.
 
 <details markdown="1">
 <summary><strong>Table 4. Current and optimised portfolios</strong></summary>
 
 | Portfolio | netSD | OUT | IN | denominator | mean | SD | Historical dividends EUR | Portfolio value EUR |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Current | 0.443478 | 59 | 8 | 115 | 0.000375 | 0.005654 | 1394.136000 | 8044.380051 |
-| Optimised | 0.939130 | 108 | 0 | 115 | 0.000606 | 0.004354 | 1942.282198 | 15000.000000 |
+| Current | 0.451327 | 59 | 8 | 113 | 0.000375 | 0.005654 | 1394.136000 | 8044.380051 |
+| Optimised | 0.902655 | 102 | 0 | 113 | 0.000597 | 0.004457 | 2109.244117 | 15000.000000 |
 
 </details>
 
@@ -1897,14 +1825,14 @@ Each share has two adjacent bars. The blue bar is the change required for Baltic
 | Minimax_full | 754 | 0.000480 | 0.000111 | 0.005340 | -0.021604 | 0.029071 | 0.181686 | 7.266982 | 0.007042 | 0.011974 |
 | Robust_full | 754 | 0.000395 | 0.000351 | 0.004596 | -0.034840 | 0.026102 | -0.927740 | 13.552122 | 0.005530 | 0.010819 |
 | NetSD_full | 754 | 0.000624 | 0.000368 | 0.005256 | -0.036431 | 0.032351 | -0.270819 | 11.048650 | 0.006622 | 0.011672 |
-| Baltic_NetSD | 754 | 0.000581 | 0.000338 | 0.004400 | -0.023743 | 0.026543 | -0.176364 | 9.127867 | 0.005166 | 0.009749 |
-| curent_update_baltic | 754 | 0.000433 | 0.000241 | 0.004364 | -0.021193 | 0.026737 | 0.024791 | 9.637614 | 0.005049 | 0.009772 |
+| Baltic_NetSD | 754 | 0.000552 | 0.000350 | 0.004489 | -0.025982 | 0.036076 | 0.232602 | 12.421674 | 0.005263 | 0.009590 |
+| curent_update_baltic | 754 | 0.000457 | 0.000262 | 0.004399 | -0.021857 | 0.027976 | 0.052546 | 9.903697 | 0.004892 | 0.009816 |
 | SP500 | 754 | 0.000879 | 0.001368 | 0.011062 | -0.062006 | 0.097992 | 0.100965 | 14.865600 | 0.016061 | 0.025050 |
 
 </details>
 
 
-Baltic_NetSD has mean daily return 0.000581, median 0.000338 and daily standard deviation 0.004400. Its historical 95% VaR is 0.005166 and ES (CVaR) is 0.009749. VaR is the loss threshold exceeded on approximately 5% of days; ES is the average return in that adverse tail.
+Baltic_NetSD has mean daily return 0.000552, median 0.000350 and daily standard deviation 0.004489. Its historical 95% VaR is 0.005263 and ES (CVaR) is 0.009590. VaR is the loss threshold exceeded on approximately 5% of days; ES is the average return in that adverse tail.
 
 <details markdown="1">
 <summary><strong>Figure 3. Histograms and kernel densities; every panel uses the same return-axis limits</strong></summary>
@@ -1914,7 +1842,7 @@ Baltic_NetSD has mean daily return 0.000581, median 0.000338 and daily standard 
 </details>
 
 
-The recalculated Baltic_NetSD maximum daily return is 0.026543. The earlier value 0.168092 on 2025-06-25 was traced to RKB1R, whose unadjusted close moved from EUR 0.107 to EUR 0.476 between common Baltic trading dates. RKB1R belongs to the Baltic Secondary List. After excluding every Secondary List share from the investable set, this observation no longer enters the portfolio return; RKB1R remains only in the reference dominance network used to calculate netSD.
+The recalculated Baltic_NetSD maximum daily return is 0.036076. The earlier value 0.168092 on 2025-06-25 was traced to RKB1R, whose unadjusted close moved from EUR 0.107 to EUR 0.476 between common Baltic trading dates. RKB1R belongs to the Baltic Secondary List. After excluding every Secondary List share from the investable set, this observation no longer enters the portfolio return; RKB1R is now excluded from both the investable set and every netSD reference network, so the suspect observation cannot affect the objective or its denominator.
 
 <details markdown="1">
 <summary><strong>Figure 4a. Portfolio and S&P 500 complete empirical CDF; right side truncated at return 0.05</strong></summary>
@@ -2103,26 +2031,26 @@ Each difference is calculated pointwise as Hq_Baltic_NetSD(x) - Hq_comparator(x)
 
 | comparator | type | local_advantage_from_x | display_upper_x | end_difference | maximum_difference |
 | --- | --- | --- | --- | --- | --- |
-| NetSD_training | portfolio | 0.013478 | 0.026641 | 0.000077 | 0.000077 |
-| VLP1L | share | 0.021303 | 0.163122 | 0.000818 | 0.000818 |
-| RKB1R | share | 0.115849 | 0.163122 | 0.000753 | 0.000753 |
-| MOLNR | share | 0.115849 | 0.163122 | 0.000634 | 0.000634 |
-| KNR1L | share | 0.082082 | 0.163122 | 0.000617 | 0.000617 |
-| IVL1L | share | 0.034809 | 0.163122 | 0.000516 | 0.000516 |
-| INC1L | share | 0.034809 | 0.163122 | 0.000453 | 0.000453 |
-| KNE1L | share | 0.038186 | 0.163122 | 0.000283 | 0.000283 |
-| MRK1T | share | 0.038186 | 0.163122 | 0.000173 | 0.000173 |
-| APG1L | share | 0.021303 | 0.163122 | 0.000140 | 0.000140 |
+| NetSD_training | portfolio | 0.012527 | 0.026714 | 0.000097 | 0.000097 |
+| NetSD_full | portfolio | 0.020425 | 0.026714 | 0.000009 | 0.000009 |
+| VLP1L | share | 0.021776 | 0.155865 | 0.000826 | 0.000826 |
+| KNR1L | share | 0.079384 | 0.155865 | 0.000609 | 0.000609 |
+| MOLNR | share | 0.114148 | 0.155865 | 0.000590 | 0.000590 |
+| IVL1L | share | 0.031708 | 0.155865 | 0.000525 | 0.000525 |
+| INC1L | share | 0.033695 | 0.155865 | 0.000462 | 0.000462 |
+| KNE1L | share | 0.035681 | 0.155865 | 0.000292 | 0.000292 |
+| MRK1T | share | 0.036674 | 0.155865 | 0.000181 | 0.000181 |
+| APG1L | share | 0.018796 | 0.155865 | 0.000149 | 0.000149 |
 
 </details>
 
 
-These are local, right-side comparisons and must not be interpreted as SSD over the complete return domain. A positive difference H2_Baltic_NetSD(x)-H2_comparator(x) means that the comparator has the smaller, hence locally preferable, SSD component at that threshold. Among portfolios this occurs for NetSD_training. The five strongest share cases at the displayed endpoint are VLP1L, RKB1R, MOLNR, KNR1L, IVL1L. Smaller positive endpoint differences also occur for INC1L, KNE1L, MRK1T, APG1L. The table reports the threshold from which the advantage remains positive to the displayed upper endpoint. The listed shares are therefore candidates for further investment analysis, while the absence of full-support dominance means this chart alone is insufficient for an investment decision.
+These are local, right-side comparisons and must not be interpreted as SSD over the complete return domain. A positive difference H2_Baltic_NetSD(x)-H2_comparator(x) means that the comparator has the smaller, hence locally preferable, SSD component at that threshold. Among portfolios this occurs for NetSD_training, NetSD_full. The five strongest share cases at the displayed endpoint are VLP1L, KNR1L, MOLNR, IVL1L, INC1L. Smaller positive endpoint differences also occur for KNE1L, MRK1T, APG1L. The table reports the threshold from which the advantage remains positive to the displayed upper endpoint. The listed shares are therefore candidates for further investment analysis, while the absence of full-support dominance means this chart alone is insufficient for an investment decision.
 
-The result that may appear surprising in the difference figures is therefore real but local. NetSD_training has a smaller H2 component than Baltic_NetSD from x=0.012089 to the displayed right endpoint, and NetSD_full does so from x=0.016037. Neither portfolio SSD-dominates Baltic_NetSD over the complete support because the required inequality fails at smaller x values. The five strongest share-level endpoint advantages are VLP1L, RKB1R, KNR1L, IVL1L and INC1L. They deserve separate investment analysis because their upper-threshold SSD components are favourable. RKB1R remains excluded from purchase because it belongs to the Baltic Secondary List; it is retained only as a netSD reference entity. A local right-side advantage is evidence about one part of the distribution and is not full-domain SSD dominance.
+The result that may appear surprising in the difference figures is therefore real but local. NetSD_training has a smaller H2 component than Baltic_NetSD from x=0.012089 to the displayed right endpoint, and NetSD_full does so from x=0.016037. Neither portfolio SSD-dominates Baltic_NetSD over the complete support because the required inequality fails at smaller x values. The listed shares deserve separate investment analysis because their upper-threshold SSD components are favourable. RKB1R is absent from these recalculated comparisons because its suspect unadjusted prices fail the data-quality screen. A local right-side advantage is evidence about one part of the distribution and is not full-domain SSD dominance.
 
 <details markdown="1">
-<summary><strong>Table 6. Portfolio concentration and diversification</strong></summary>
+<summary><strong>Table 6. Weight concentration and diversification</strong></summary>
 
 | portfolio | HHI_weights | effective_number | maximum_weight | number_positive | diversification_ratio |
 | --- | --- | --- | --- | --- | --- |
@@ -2137,13 +2065,13 @@ The result that may appear surprising in the difference figures is therefore rea
 | Minimax_full | 0.157248 | 6.359400 | 0.258417 | 10 | 2.077220 |
 | Robust_full | 0.215235 | 4.646077 | 0.386466 | 10 | 2.157801 |
 | NetSD_full | 0.132893 | 7.524846 | 0.188213 | 10 | 2.210873 |
-| Baltic_NetSD | 0.077535 | 12.897428 | 0.117867 | 21 | 2.662111 |
-| curent_update_baltic | 0.085146 | 11.744587 | 0.198896 | 23 | 2.747513 |
+| Baltic_NetSD | 0.070139 | 14.257415 | 0.120143 | 21 | 2.644089 |
+| curent_update_baltic | 0.083115 | 12.031504 | 0.191487 | 23 | 2.808721 |
 
 </details>
 
 
-For Baltic_NetSD, HHI=0.077535; lower is better because less capital is concentrated in a few shares. Its effective number of equally weighted positions is 12.90, the largest weight is 11.79%, and the diversification ratio is 2.662; a value above 1 means portfolio volatility is below the weighted average volatility of its components.
+For Baltic_NetSD, HHI=0.070139; lower is better because less capital is concentrated in a few shares. Its effective number of equally weighted positions is 14.26, the largest weight is 12.01%, and the diversification ratio is 2.644; a value above 1 means portfolio volatility is below the weighted average volatility of its components.
 
 <details markdown="1">
 <summary><strong>Figure 8. HHI concentration comparison</strong></summary>
@@ -2154,28 +2082,28 @@ For Baltic_NetSD, HHI=0.077535; lower is better because less capital is concentr
 
 
 <details markdown="1">
-<summary><strong>Table 7. netSD (net stochastic-dominance ratio) results</strong></summary>
+<summary><strong>Table 7. Canonical comparable netSD results</strong></summary>
 
-| entity | FSD_OUT | FSD_IN | SSD_OUT | SSD_IN | TSD_OUT | TSD_IN | OUT | IN | denominator | netSD |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Current | 0 | 0 | 29 | 5 | 30 | 7 | 59 | 12 | 117 | 0.401709 |
-| Markowitz_training | 0 | 0 | 32 | 2 | 32 | 2 | 64 | 4 | 117 | 0.512821 |
-| MAD_training | 0 | 0 | 32 | 2 | 32 | 2 | 64 | 4 | 117 | 0.512821 |
-| Minimax_training | 0 | 0 | 41 | 0 | 43 | 0 | 84 | 0 | 117 | 0.717949 |
-| Robust_training | 0 | 0 | 32 | 2 | 32 | 2 | 64 | 4 | 117 | 0.512821 |
-| NetSD_training | 0 | 0 | 43 | 0 | 46 | 0 | 89 | 0 | 117 | 0.760684 |
-| Markowitz_full | 0 | 0 | 32 | 2 | 32 | 2 | 64 | 4 | 117 | 0.512821 |
-| MAD_full | 0 | 0 | 32 | 2 | 32 | 2 | 64 | 4 | 117 | 0.512821 |
-| Minimax_full | 0 | 0 | 36 | 1 | 36 | 1 | 72 | 2 | 117 | 0.598291 |
-| Robust_full | 0 | 0 | 33 | 2 | 33 | 2 | 66 | 4 | 117 | 0.529915 |
-| NetSD_full | 0 | 0 | 45 | 1 | 45 | 1 | 90 | 2 | 117 | 0.752137 |
-| Baltic_NetSD | 0 | 0 | 54 | 0 | 54 | 0 | 108 | 0 | 117 | 0.923077 |
-| curent_update_baltic | 0 | 0 | 47 | 0 | 47 | 0 | 94 | 0 | 117 | 0.803419 |
+| entity | OUT | IN | denominator | netSD | mean | SD |
+| --- | --- | --- | --- | --- | --- | --- |
+| Current | 59 | 8 | 113 | 0.451327 | 0.000375 | 0.005654 |
+| Markowitz_training | 64 | 0 | 113 | 0.566372 | 0.000269 | 0.004359 |
+| MAD_training | 64 | 0 | 113 | 0.566372 | 0.000270 | 0.004367 |
+| Minimax_training | 84 | 0 | 113 | 0.743363 | 0.000568 | 0.005566 |
+| Robust_training | 64 | 0 | 113 | 0.566372 | 0.000334 | 0.004491 |
+| NetSD_training | 88 | 0 | 113 | 0.778761 | 0.000712 | 0.005997 |
+| Markowitz_full | 64 | 0 | 113 | 0.566372 | 0.000375 | 0.004383 |
+| MAD_full | 64 | 0 | 113 | 0.566372 | 0.000375 | 0.004432 |
+| Minimax_full | 72 | 0 | 113 | 0.637168 | 0.000439 | 0.005205 |
+| Robust_full | 66 | 0 | 113 | 0.584071 | 0.000375 | 0.004498 |
+| NetSD_full | 90 | 0 | 113 | 0.796460 | 0.000602 | 0.005197 |
+| Baltic_NetSD | 102 | 0 | 113 | 0.902655 | 0.000597 | 0.004457 |
+| curent_update_baltic | 93 | 0 | 113 | 0.823009 | 0.000467 | 0.004316 |
 
 </details>
 
 
-Baltic_NetSD has OUT=108 and IN=0. Dividing OUT-IN by the common network denominator 117 gives netSD=0.923077. A larger netSD is better.
+Baltic_NetSD has OUT=102 and IN=0. Dividing OUT-IN by the common network fixed denominator 113 gives netSD=0.902655. A larger netSD is better within this exact fixed reference system.
 
 For curent_update_baltic, IN=0 because Baltic_NetSD dominates it by third-order stochastic dominance over the complete empirical support. There are no incoming FSD or SSD relations. Thus IN=1 is one directed TSD relation from Baltic_NetSD, rather than one adverse observation or one share.
 
@@ -2195,8 +2123,8 @@ For curent_update_baltic, IN=0 because Baltic_NetSD dominates it by third-order 
 | Minimax_full | 0.048315 | 0.000438 | 0.113489 | 0.084287 | 0.008484 | 0.084713 | 0.187191 | -0.556390 |
 | Robust_full | 0.054150 | 0.000348 | 0.089344 | 0.072284 | 0.009509 | 0.072906 | 0.181155 | -0.700843 |
 | NetSD_full | 0.062943 | 0.000569 | 0.151827 | 0.082639 | 0.011053 | 0.083375 | 0.184155 | -0.339213 |
-| Baltic_NetSD | 0.031596 | 0.000554 | 0.147709 | 0.069581 | 0.005548 | 0.069802 | 0.183751 | -0.401381 |
-| curent_update_baltic | 0.047269 | 0.000391 | 0.101785 | 0.068727 | 0.008300 | 0.069227 | 0.180881 | -0.641829 |
+| Baltic_NetSD | 0.032170 | 0.000524 | 0.139061 | 0.070993 | 0.005649 | 0.071217 | 0.184198 | -0.446646 |
+| curent_update_baltic | 0.044353 | 0.000418 | 0.109114 | 0.069344 | 0.007788 | 0.069780 | 0.181589 | -0.602634 |
 | SP500 | 1.000000 | 0.000000 | 0.000000 | 0.000000 | 0.175597 | 0.175597 | 0.000000 | nan |
 
 </details>
@@ -2218,7 +2146,7 @@ CAPM beta measures sensitivity to S&P 500: beta below 1 means a smaller average 
 | BAL1R | 0 | 112 | 113 | -0.991150 | Baltic Secondary List | False | True | False |
 | BERCM | 6 | 92 | 113 | -0.761062 | First North Baltic Share List | False | False | False |
 | CPA1T | 30 | 24 | 113 | 0.053097 | Baltic Main List | True | False | True |
-| CTS1L | 0 | 90 | 113 | -0.796460 | Baltic First North Foreign Shares trading list | False | False | False |
+| CTS1L | 0 | 89 | 113 | -0.787611 | Baltic First North Foreign Shares trading list | False | False | False |
 | DGR1R | 24 | 25 | 113 | -0.008850 | Baltic Main List | False | False | False |
 | EFT1T | 36 | 23 | 113 | 0.115044 | Baltic Main List | True | False | True |
 | EWA1L | 29 | 29 | 113 | 0.000000 | First North Baltic Share List | False | False | False |
@@ -2226,7 +2154,7 @@ CAPM beta measures sensitivity to S&P 500: beta below 1 means a smaller average 
 | HAE1T | 37 | 24 | 113 | 0.115044 | Baltic Main List | True | False | True |
 | HPR1T | 17 | 64 | 113 | -0.415929 | Baltic Main List | False | False | False |
 | IDX1R | 17 | 54 | 113 | -0.327434 | Baltic Main List | False | False | False |
-| IGN1L | 56 | 11 | 113 | 0.398230 | Baltic Main List | True | False | True |
+| IGN1L | 56 | 10 | 113 | 0.407080 | Baltic Main List | True | False | True |
 | INC1L | 31 | 4 | 113 | 0.238938 | Baltic Secondary List | True | True | False |
 | INL1L | 11 | 61 | 113 | -0.442478 | Baltic Secondary List | False | True | False |
 | INR1L | 29 | 7 | 113 | 0.194690 | Baltic Secondary List | True | True | False |
@@ -2246,7 +2174,6 @@ CAPM beta measures sensitivity to S&P 500: beta below 1 means a smaller average 
 | PKG1T | 15 | 32 | 113 | -0.150442 | Baltic Main List | False | False | False |
 | PRF1T | 1 | 112 | 113 | -0.982301 | Baltic Secondary List | False | True | False |
 | PZV1L | 35 | 14 | 113 | 0.185841 | Baltic Main List | True | False | True |
-| RKB1R | 1 | 0 | 113 | 0.008850 | Baltic Secondary List | True | True | False |
 | ROE1L | 38 | 17 | 113 | 0.185841 | Baltic Main List | True | False | True |
 | RSU1L | 35 | 6 | 113 | 0.256637 | Baltic Main List | True | False | True |
 | SAF1R | 12 | 24 | 113 | -0.106195 | Baltic Main List | False | False | False |
@@ -2279,7 +2206,7 @@ A share is investment-admissible only when its individual netSD is strictly posi
 </details>
 
 
-The curve is the single long-only Markowitz efficient frontier calculated from all 56 eligible shares. Shares and previously formed portfolios are points. Baltic_NetSD is highlighted in red because it maximises the stochastic-dominance objective rather than variance, so it need not lie on the Markowitz curve.
+The curve is the single long-only Markowitz efficient frontier calculated from all 55 quality-approved shares. Shares and previously formed portfolios are points. Baltic_NetSD is highlighted in red because it maximises the stochastic-dominance objective rather than variance, so it need not lie on the Markowitz curve.
 
 <details markdown="1">
 <summary><strong>Figure 10. Cumulative returns, daily returns and drawdowns</strong></summary>
@@ -2294,105 +2221,271 @@ The curve is the single long-only Markowitz efficient frontier calculated from a
 
 | Measure | Current | Markowitz_training | MAD_training | Minimax_training | Robust_training | NetSD_training | Markowitz_full | MAD_full | Minimax_full | Robust_full | NetSD_full | Baltic_NetSD | curent_update_baltic |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| ArithmeticReturn | 0.000407 | 0.000281 | 0.000289 | 0.000619 | 0.000354 | 0.000680 | 0.000392 | 0.000398 | 0.000480 | 0.000395 | 0.000624 | 0.000581 | 0.000433 |
-| GeometricReturn | 0.000390 | 0.000271 | 0.000279 | 0.000603 | 0.000343 | 0.000663 | 0.000382 | 0.000388 | 0.000466 | 0.000385 | 0.000610 | 0.000572 | 0.000423 |
-| AnnualizedReturn_Arithmetic | 0.102550 | 0.070824 | 0.072744 | 0.155939 | 0.089138 | 0.171390 | 0.098719 | 0.100296 | 0.120984 | 0.099563 | 0.157293 | 0.146521 | 0.109113 |
-| AnnualizedReturn_Geometric | 0.103335 | 0.070677 | 0.072730 | 0.163971 | 0.090323 | 0.181757 | 0.100954 | 0.102608 | 0.124538 | 0.101728 | 0.166221 | 0.154935 | 0.112595 |
-| CumulativeReturn | 0.342094 | 0.226705 | 0.233756 | 0.575080 | 0.295290 | 0.648194 | 0.333449 | 0.339451 | 0.420751 | 0.336254 | 0.584211 | 0.538779 | 0.376079 |
-| Volatility | 0.005773 | 0.004476 | 0.004477 | 0.005683 | 0.004587 | 0.005876 | 0.004475 | 0.004540 | 0.005340 | 0.004596 | 0.005256 | 0.004400 | 0.004364 |
-| Volatility_Annualized | 0.091642 | 0.071054 | 0.071078 | 0.090219 | 0.072824 | 0.093282 | 0.071039 | 0.072067 | 0.084769 | 0.072954 | 0.083429 | 0.069848 | 0.069272 |
-| MaximumDrawdown | 0.202906 | 0.170192 | 0.166449 | 0.157736 | 0.151701 | 0.114377 | 0.143065 | 0.138179 | 0.186881 | 0.132771 | 0.131017 | 0.057596 | 0.118208 |
-| AverageDrawdown | 0.025469 | 0.019669 | 0.024326 | 0.014763 | 0.017239 | 0.018675 | 0.017643 | 0.018183 | 0.014914 | 0.017957 | 0.015602 | 0.008371 | 0.011936 |
-| AverageDrawdownLength | 55.461538 | 51.857143 | 65.727273 | 20.911765 | 34.380952 | 26.576923 | 37.210526 | 39.000000 | 27.692308 | 44.312500 | 24.821429 | 13.529412 | 24.379310 |
-| AverageRecoveryTime | 29.692308 | 28.357143 | 36.181818 | 11.558824 | 13.809524 | 15.500000 | 14.526316 | 15.111111 | 17.153846 | 21.437500 | 14.750000 | 6.333333 | 14.137931 |
-| Sharpe_Daily | 0.070492 | 0.062791 | 0.064471 | 0.108883 | 0.077106 | 0.115741 | 0.087540 | 0.087670 | 0.089906 | 0.085970 | 0.118766 | 0.132143 | 0.099224 |
-| Sharpe_Annualized | 1.119033 | 0.996770 | 1.023446 | 1.728460 | 1.224019 | 1.837330 | 1.389649 | 1.391712 | 1.427221 | 1.364738 | 1.885345 | 2.097712 | 1.575134 |
-| Sharpe_VaR | 0.063218 | 0.047693 | 0.052024 | 0.084465 | 0.061485 | 0.092984 | 0.066397 | 0.070684 | 0.068176 | 0.071441 | 0.094257 | 0.112540 | 0.085751 |
-| Sharpe_ES | 0.031171 | 0.026852 | 0.027327 | 0.050547 | 0.033840 | 0.056387 | 0.037780 | 0.037525 | 0.040094 | 0.036520 | 0.053478 | 0.059640 | 0.044307 |
-| Sortino | 0.103322 | 0.089978 | 0.090696 | 0.175636 | 0.113343 | 0.188039 | 0.126822 | 0.124911 | 0.138998 | 0.121638 | 0.180686 | 0.204798 | 0.151709 |
-| Calmar | 0.509274 | 0.415279 | 0.436951 | 1.039527 | 0.595400 | 1.589095 | 0.705654 | 0.742575 | 0.666402 | 0.766189 | 1.268702 | 2.690011 | 0.952512 |
-| Omega | 1.253802 | 1.207409 | 1.218241 | 1.377407 | 1.260146 | 1.408378 | 1.298163 | 1.305293 | 1.300715 | 1.301546 | 1.420607 | 1.474334 | 1.337922 |
-| Sterling | 0.341144 | 0.261581 | 0.272960 | 0.636196 | 0.358849 | 0.847835 | 0.415339 | 0.430803 | 0.434110 | 0.437030 | 0.719520 | 0.983112 | 0.515997 |
-| Burke | 0.711394 | 0.626776 | 0.642660 | 1.265723 | 0.799609 | 1.363583 | 0.914138 | 0.926048 | 0.960507 | 0.903216 | 1.321467 | 1.471660 | 1.025542 |
-| Martin | 0.985147 | 0.743619 | 0.807360 | 2.110690 | 1.121867 | 3.631643 | 1.386084 | 1.525674 | 1.222933 | 1.655375 | 2.635455 | 8.134404 | 1.942496 |
-| UlcerIndex | 0.104893 | 0.095045 | 0.090084 | 0.077686 | 0.080511 | 0.050048 | 0.072834 | 0.067254 | 0.101835 | 0.061453 | 0.063071 | 0.019047 | 0.057964 |
-| PainIndex | 0.080184 | 0.077883 | 0.073764 | 0.058068 | 0.061619 | 0.038792 | 0.055230 | 0.050917 | 0.075457 | 0.046825 | 0.047385 | 0.013628 | 0.044353 |
-| PainRatio | 1.288719 | 0.907476 | 0.985987 | 2.823785 | 1.465833 | 4.685408 | 1.827879 | 2.015216 | 1.650440 | 2.172525 | 3.507857 | 11.368706 | 2.538584 |
-| VaR_Loss | 0.006437 | 0.005893 | 0.005549 | 0.007326 | 0.005753 | 0.007314 | 0.005900 | 0.005631 | 0.007042 | 0.005530 | 0.006622 | 0.005166 | 0.005049 |
-| ES_Loss | 0.013055 | 0.010467 | 0.010563 | 0.012242 | 0.010453 | 0.012062 | 0.010369 | 0.010606 | 0.011974 | 0.010819 | 0.011672 | 0.009749 | 0.009772 |
-| DownsideDeviation | 0.003939 | 0.003124 | 0.003183 | 0.003523 | 0.003121 | 0.003617 | 0.003089 | 0.003186 | 0.003454 | 0.003248 | 0.003454 | 0.002839 | 0.002854 |
-| DrawdownDeviation | 0.007691 | 0.006487 | 0.006360 | 0.006733 | 0.006269 | 0.005894 | 0.005906 | 0.005779 | 0.007319 | 0.005503 | 0.005868 | 0.003913 | 0.005225 |
-| Rachev | 1.101132 | 1.043589 | 1.025876 | 1.271580 | 1.114071 | 1.279184 | 1.067344 | 1.049732 | 1.175661 | 1.049030 | 1.167225 | 1.248014 | 1.164906 |
-| AdjustedSharpe | 0.196866 | 0.614905 | 0.474911 | 1.081194 | 0.604269 | -0.056304 | 0.349252 | 0.023852 | 0.972030 | -0.040823 | -0.522513 | -0.388505 | 0.504565 |
-| Skewness | -0.054536 | -0.397936 | -0.720441 | 0.377474 | -0.284450 | 0.625424 | -0.517818 | -0.804959 | 0.181686 | -0.927740 | -0.270819 | -0.176364 | 0.024791 |
-| Kurtosis | 18.599062 | 10.657233 | 12.464893 | 6.881817 | 10.181225 | 11.688924 | 10.814045 | 12.865225 | 7.266982 | 13.552122 | 11.048650 | 9.127867 | 9.637614 |
-| UpsidePotential | 0.510416 | 0.523794 | 0.506272 | 0.641010 | 0.549035 | 0.648494 | 0.552168 | 0.534062 | 0.601222 | 0.525020 | 0.610269 | 0.636556 | 0.600657 |
-| UpsideRisk | 0.004235 | 0.003214 | 0.003158 | 0.004497 | 0.003377 | 0.004676 | 0.003258 | 0.003254 | 0.004096 | 0.003271 | 0.004005 | 0.003408 | 0.003325 |
-| BernardoLedoit | 1.253802 | 1.207409 | 1.218241 | 1.377407 | 1.260146 | 1.408378 | 1.298163 | 1.305293 | 1.300715 | 1.301546 | 1.420607 | 1.474334 | 1.337922 |
-| DRatio | 0.680517 | 0.725996 | 0.678011 | 0.636395 | 0.680759 | 0.619052 | 0.622612 | 0.619211 | 0.718885 | 0.624374 | 0.603865 | 0.557035 | 0.672120 |
-| Hurst | 0.408833 | 0.373706 | 0.380678 | 0.330215 | 0.371346 | 0.385210 | 0.383093 | 0.391582 | 0.339636 | 0.390138 | 0.388151 | 0.367693 | 0.361700 |
-| Kappa | 0.059623 | 0.055300 | 0.053849 | 0.116238 | 0.069496 | 0.120127 | 0.076783 | 0.073136 | 0.091296 | 0.070360 | 0.108401 | 0.125263 | 0.094941 |
-| Kelly | 12.210935 | 14.028417 | 14.398990 | 19.158592 | 16.807867 | 19.696548 | 19.561870 | 19.311415 | 16.836604 | 18.706853 | 22.598090 | 30.032451 | 22.738398 |
-| Prospect | -0.405547 | -0.452293 | -0.428775 | -0.406083 | -0.431271 | -0.387529 | -0.404860 | -0.386527 | -0.438782 | -0.382589 | -0.356293 | -0.334900 | -0.409476 |
-| Information_Daily | -0.036029 | -0.047680 | -0.047078 | -0.018192 | -0.041528 | -0.012985 | -0.038213 | -0.037671 | -0.029827 | -0.037950 | -0.017862 | -0.021237 | -0.034588 |
-| Information_Annualized | -0.665855 | -0.868339 | -0.858181 | -0.345150 | -0.763035 | -0.248219 | -0.705471 | -0.695964 | -0.556390 | -0.700843 | -0.339213 | -0.401381 | -0.641829 |
-| CAPMAlpha | 0.000353 | 0.000242 | 0.000248 | 0.000564 | 0.000307 | 0.000626 | 0.000348 | 0.000352 | 0.000438 | 0.000348 | 0.000569 | 0.000554 | 0.000391 |
-| JensenAlpha | 0.089279 | 0.060407 | 0.062126 | 0.149827 | 0.078254 | 0.167719 | 0.089470 | 0.090709 | 0.113489 | 0.089344 | 0.151827 | 0.147709 | 0.101785 |
-| Treynor_Daily | 0.006350 | 0.006035 | 0.006009 | 0.009745 | 0.006504 | 0.010800 | 0.007602 | 0.007451 | 0.009642 | 0.007101 | 0.009697 | 0.018096 | 0.008959 |
-| Treynor_Annualized | 1.681322 | 1.573709 | 1.568491 | 2.651296 | 1.711562 | 2.961042 | 2.010408 | 1.972026 | 2.577618 | 1.878642 | 2.640818 | 4.903598 | 2.382000 |
-| Modigliani | 0.000780 | 0.000695 | 0.000713 | 0.001204 | 0.000853 | 0.001280 | 0.000968 | 0.000970 | 0.000995 | 0.000951 | 0.001314 | 0.001462 | 0.001098 |
-| TrackingError_Daily | 0.011859 | 0.011463 | 0.011448 | 0.011812 | 0.011423 | 0.011911 | 0.011406 | 0.011412 | 0.011792 | 0.011412 | 0.011601 | 0.011575 | 0.011394 |
-| TrackingError_Annualized | 0.188261 | 0.181970 | 0.181733 | 0.187509 | 0.181337 | 0.189078 | 0.181063 | 0.181160 | 0.187191 | 0.181155 | 0.184155 | 0.183751 | 0.180881 |
-| M2Sortino | 0.109296 | 0.077033 | 0.079051 | 0.175263 | 0.098334 | 0.193567 | 0.109982 | 0.111307 | 0.133627 | 0.110080 | 0.178035 | 0.170326 | 0.123960 |
-| Appraisal | 0.981698 | 0.856007 | 0.880431 | 1.673988 | 1.084088 | 1.811307 | 1.270121 | 1.269760 | 1.346451 | 1.236027 | 1.837228 | 2.122830 | 1.480997 |
-| CAPMBeta | 0.061460 | 0.044911 | 0.046369 | 0.061845 | 0.052772 | 0.061383 | 0.050216 | 0.052032 | 0.048315 | 0.054150 | 0.062943 | 0.031596 | 0.047269 |
-| ActiveReturn | -0.125355 | -0.158012 | -0.155959 | -0.064719 | -0.138367 | -0.046933 | -0.127735 | -0.126081 | -0.104151 | -0.126961 | -0.062468 | -0.073754 | -0.116094 |
-| OmegaExcessReturn | 0.080784 | 0.052794 | 0.054507 | 0.143799 | 0.072455 | 0.161048 | 0.083269 | 0.084365 | 0.104763 | 0.083131 | 0.146443 | 0.138680 | 0.096254 |
-| BetaCoSkewness | -1.007663 | -1.030977 | -1.139233 | -0.930234 | -1.006532 | -0.908119 | -1.100709 | -1.118876 | -1.079607 | -1.123072 | -0.954915 | -1.912707 | -1.565530 |
-| BetaCoKurtosis | 0.083192 | 0.049011 | 0.051037 | 0.027872 | 0.047768 | 0.040181 | 0.045809 | 0.051584 | 0.023902 | 0.056251 | 0.050910 | -0.014337 | 0.026794 |
-| CDD | 0.040293 | 0.035628 | 0.046112 | 0.027983 | 0.041533 | 0.044066 | 0.038434 | 0.043415 | 0.025972 | 0.047864 | 0.035587 | 0.022209 | 0.032647 |
+| ArithmeticReturn | 0.000407 | 0.000281 | 0.000289 | 0.000619 | 0.000354 | 0.000680 | 0.000392 | 0.000398 | 0.000480 | 0.000395 | 0.000624 | 0.000552 | 0.000457 |
+| GeometricReturn | 0.000390 | 0.000271 | 0.000279 | 0.000603 | 0.000343 | 0.000663 | 0.000382 | 0.000388 | 0.000466 | 0.000385 | 0.000610 | 0.000542 | 0.000447 |
+| AnnualizedReturn_Arithmetic | 0.102550 | 0.070824 | 0.072744 | 0.155939 | 0.089138 | 0.171390 | 0.098719 | 0.100296 | 0.120984 | 0.099563 | 0.157293 | 0.139212 | 0.115124 |
+| AnnualizedReturn_Geometric | 0.103335 | 0.070677 | 0.072730 | 0.163971 | 0.090323 | 0.181757 | 0.100954 | 0.102608 | 0.124538 | 0.101728 | 0.166221 | 0.146418 | 0.119257 |
+| CumulativeReturn | 0.342094 | 0.226705 | 0.233756 | 0.575080 | 0.295290 | 0.648194 | 0.333449 | 0.339451 | 0.420751 | 0.336254 | 0.584211 | 0.505074 | 0.400882 |
+| Volatility | 0.005773 | 0.004476 | 0.004477 | 0.005683 | 0.004587 | 0.005876 | 0.004475 | 0.004540 | 0.005340 | 0.004596 | 0.005256 | 0.004489 | 0.004399 |
+| Volatility_Annualized | 0.091642 | 0.071054 | 0.071078 | 0.090219 | 0.072824 | 0.093282 | 0.071039 | 0.072067 | 0.084769 | 0.072954 | 0.083429 | 0.071264 | 0.069826 |
+| MaximumDrawdown | 0.202906 | 0.170192 | 0.166449 | 0.157736 | 0.151701 | 0.114377 | 0.143065 | 0.138179 | 0.186881 | 0.132771 | 0.131017 | 0.066539 | 0.118739 |
+| AverageDrawdown | 0.025469 | 0.019669 | 0.024326 | 0.014763 | 0.017239 | 0.018675 | 0.017643 | 0.018183 | 0.014914 | 0.017957 | 0.015602 | 0.010042 | 0.010944 |
+| AverageDrawdownLength | 55.461538 | 51.857143 | 65.727273 | 20.911765 | 34.380952 | 26.576923 | 37.210526 | 39.000000 | 27.692308 | 44.312500 | 24.821429 | 15.409091 | 22.548387 |
+| AverageRecoveryTime | 29.692308 | 28.357143 | 36.181818 | 11.558824 | 13.809524 | 15.500000 | 14.526316 | 15.111111 | 17.153846 | 21.437500 | 14.750000 | 6.431818 | 13.032258 |
+| Sharpe_Daily | 0.070492 | 0.062791 | 0.064471 | 0.108883 | 0.077106 | 0.115741 | 0.087540 | 0.087670 | 0.089906 | 0.085970 | 0.118766 | 0.123056 | 0.103860 |
+| Sharpe_Annualized | 1.119033 | 0.996770 | 1.023446 | 1.728460 | 1.224019 | 1.837330 | 1.389649 | 1.391712 | 1.427221 | 1.364738 | 1.885345 | 1.953461 | 1.648726 |
+| Sharpe_VaR | 0.063218 | 0.047693 | 0.052024 | 0.084465 | 0.061485 | 0.092984 | 0.066397 | 0.070684 | 0.068176 | 0.071441 | 0.094257 | 0.104963 | 0.093380 |
+| Sharpe_ES | 0.031171 | 0.026852 | 0.027327 | 0.050547 | 0.033840 | 0.056387 | 0.037780 | 0.037525 | 0.040094 | 0.036520 | 0.053478 | 0.057606 | 0.046540 |
+| Sortino | 0.103322 | 0.089978 | 0.090696 | 0.175636 | 0.113343 | 0.188039 | 0.126822 | 0.124911 | 0.138998 | 0.121638 | 0.180686 | 0.194047 | 0.159106 |
+| Calmar | 0.509274 | 0.415279 | 0.436951 | 1.039527 | 0.595400 | 1.589095 | 0.705654 | 0.742575 | 0.666402 | 0.766189 | 1.268702 | 2.200475 | 1.004363 |
+| Omega | 1.253802 | 1.207409 | 1.218241 | 1.377407 | 1.260146 | 1.408378 | 1.298163 | 1.305293 | 1.300715 | 1.301546 | 1.420607 | 1.443722 | 1.354910 |
+| Sterling | 0.341144 | 0.261581 | 0.272960 | 0.636196 | 0.358849 | 0.847835 | 0.415339 | 0.430803 | 0.434110 | 0.437030 | 0.719520 | 0.879180 | 0.545203 |
+| Burke | 0.711394 | 0.626776 | 0.642660 | 1.265723 | 0.799609 | 1.363583 | 0.914138 | 0.926048 | 0.960507 | 0.903216 | 1.321467 | 1.386651 | 1.066623 |
+| Martin | 0.985147 | 0.743619 | 0.807360 | 2.110690 | 1.121867 | 3.631643 | 1.386084 | 1.525674 | 1.222933 | 1.655375 | 2.635455 | 6.207138 | 2.089109 |
+| UlcerIndex | 0.104893 | 0.095045 | 0.090084 | 0.077686 | 0.080511 | 0.050048 | 0.072834 | 0.067254 | 0.101835 | 0.061453 | 0.063071 | 0.023589 | 0.057085 |
+| PainIndex | 0.080184 | 0.077883 | 0.073764 | 0.058068 | 0.061619 | 0.038792 | 0.055230 | 0.050917 | 0.075457 | 0.046825 | 0.047385 | 0.016485 | 0.042848 |
+| PainRatio | 1.288719 | 0.907476 | 0.985987 | 2.823785 | 1.465833 | 4.685408 | 1.827879 | 2.015216 | 1.650440 | 2.172525 | 3.507857 | 8.881997 | 2.783287 |
+| VaR_Loss | 0.006437 | 0.005893 | 0.005549 | 0.007326 | 0.005753 | 0.007314 | 0.005900 | 0.005631 | 0.007042 | 0.005530 | 0.006622 | 0.005263 | 0.004892 |
+| ES_Loss | 0.013055 | 0.010467 | 0.010563 | 0.012242 | 0.010453 | 0.012062 | 0.010369 | 0.010606 | 0.011974 | 0.010819 | 0.011672 | 0.009590 | 0.009816 |
+| DownsideDeviation | 0.003939 | 0.003124 | 0.003183 | 0.003523 | 0.003121 | 0.003617 | 0.003089 | 0.003186 | 0.003454 | 0.003248 | 0.003454 | 0.002847 | 0.002871 |
+| DrawdownDeviation | 0.007691 | 0.006487 | 0.006360 | 0.006733 | 0.006269 | 0.005894 | 0.005906 | 0.005779 | 0.007319 | 0.005503 | 0.005868 | 0.004193 | 0.005151 |
+| Rachev | 1.101132 | 1.043589 | 1.025876 | 1.271580 | 1.114071 | 1.279184 | 1.067344 | 1.049732 | 1.175661 | 1.049030 | 1.167225 | 1.254899 | 1.171576 |
+| AdjustedSharpe | 0.196866 | 0.614905 | 0.474911 | 1.081194 | 0.604269 | -0.056304 | 0.349252 | 0.023852 | 0.972030 | -0.040823 | -0.522513 | -0.824987 | 0.383345 |
+| Skewness | -0.054536 | -0.397936 | -0.720441 | 0.377474 | -0.284450 | 0.625424 | -0.517818 | -0.804959 | 0.181686 | -0.927740 | -0.270819 | 0.232602 | 0.052546 |
+| Kurtosis | 18.599062 | 10.657233 | 12.464893 | 6.881817 | 10.181225 | 11.688924 | 10.814045 | 12.865225 | 7.266982 | 13.552122 | 11.048650 | 12.421674 | 9.903697 |
+| UpsidePotential | 0.510416 | 0.523794 | 0.506272 | 0.641010 | 0.549035 | 0.648494 | 0.552168 | 0.534062 | 0.601222 | 0.525020 | 0.610269 | 0.631362 | 0.607405 |
+| UpsideRisk | 0.004235 | 0.003214 | 0.003158 | 0.004497 | 0.003377 | 0.004676 | 0.003258 | 0.003254 | 0.004096 | 0.003271 | 0.004005 | 0.003511 | 0.003360 |
+| BernardoLedoit | 1.253802 | 1.207409 | 1.218241 | 1.377407 | 1.260146 | 1.408378 | 1.298163 | 1.305293 | 1.300715 | 1.301546 | 1.420607 | 1.443722 | 1.354910 |
+| DRatio | 0.680517 | 0.725996 | 0.678011 | 0.636395 | 0.680759 | 0.619052 | 0.622612 | 0.619211 | 0.718885 | 0.624374 | 0.603865 | 0.581154 | 0.639406 |
+| Hurst | 0.408833 | 0.373706 | 0.380678 | 0.330215 | 0.371346 | 0.385210 | 0.383093 | 0.391582 | 0.339636 | 0.390138 | 0.388151 | 0.396413 | 0.366375 |
+| Kappa | 0.059623 | 0.055300 | 0.053849 | 0.116238 | 0.069496 | 0.120127 | 0.076783 | 0.073136 | 0.091296 | 0.070360 | 0.108401 | 0.118488 | 0.099663 |
+| Kelly | 12.210935 | 14.028417 | 14.398990 | 19.158592 | 16.807867 | 19.696548 | 19.561870 | 19.311415 | 16.836604 | 18.706853 | 22.598090 | 27.411431 | 23.611933 |
+| Prospect | -0.405547 | -0.452293 | -0.428775 | -0.406083 | -0.431271 | -0.387529 | -0.404860 | -0.386527 | -0.438782 | -0.382589 | -0.356293 | -0.352598 | -0.401268 |
+| Information_Daily | -0.036029 | -0.047680 | -0.047078 | -0.018192 | -0.041528 | -0.012985 | -0.038213 | -0.037671 | -0.029827 | -0.037950 | -0.017862 | -0.023718 | -0.032381 |
+| Information_Annualized | -0.665855 | -0.868339 | -0.858181 | -0.345150 | -0.763035 | -0.248219 | -0.705471 | -0.695964 | -0.556390 | -0.700843 | -0.339213 | -0.446646 | -0.602634 |
+| CAPMAlpha | 0.000353 | 0.000242 | 0.000248 | 0.000564 | 0.000307 | 0.000626 | 0.000348 | 0.000352 | 0.000438 | 0.000348 | 0.000569 | 0.000524 | 0.000418 |
+| JensenAlpha | 0.089279 | 0.060407 | 0.062126 | 0.149827 | 0.078254 | 0.167719 | 0.089470 | 0.090709 | 0.113489 | 0.089344 | 0.151827 | 0.139061 | 0.109114 |
+| Treynor_Daily | 0.006350 | 0.006035 | 0.006009 | 0.009745 | 0.006504 | 0.010800 | 0.007602 | 0.007451 | 0.009642 | 0.007101 | 0.009697 | 0.016860 | 0.010082 |
+| Treynor_Annualized | 1.681322 | 1.573709 | 1.568491 | 2.651296 | 1.711562 | 2.961042 | 2.010408 | 1.972026 | 2.577618 | 1.878642 | 2.640818 | 4.551443 | 2.688800 |
+| Modigliani | 0.000780 | 0.000695 | 0.000713 | 0.001204 | 0.000853 | 0.001280 | 0.000968 | 0.000970 | 0.000995 | 0.000951 | 0.001314 | 0.001361 | 0.001149 |
+| TrackingError_Daily | 0.011859 | 0.011463 | 0.011448 | 0.011812 | 0.011423 | 0.011911 | 0.011406 | 0.011412 | 0.011792 | 0.011412 | 0.011601 | 0.011603 | 0.011439 |
+| TrackingError_Annualized | 0.188261 | 0.181970 | 0.181733 | 0.187509 | 0.181337 | 0.189078 | 0.181063 | 0.181160 | 0.187191 | 0.181155 | 0.184155 | 0.184198 | 0.181589 |
+| M2Sortino | 0.109296 | 0.077033 | 0.079051 | 0.175263 | 0.098334 | 0.193567 | 0.109982 | 0.111307 | 0.133627 | 0.110080 | 0.178035 | 0.160977 | 0.131133 |
+| Appraisal | 0.981698 | 0.856007 | 0.880431 | 1.673988 | 1.084088 | 1.811307 | 1.270121 | 1.269760 | 1.346451 | 1.236027 | 1.837228 | 1.958797 | 1.573515 |
+| CAPMBeta | 0.061460 | 0.044911 | 0.046369 | 0.061845 | 0.052772 | 0.061383 | 0.050216 | 0.052032 | 0.048315 | 0.054150 | 0.062943 | 0.032170 | 0.044353 |
+| ActiveReturn | -0.125355 | -0.158012 | -0.155959 | -0.064719 | -0.138367 | -0.046933 | -0.127735 | -0.126081 | -0.104151 | -0.126961 | -0.062468 | -0.082271 | -0.109432 |
+| OmegaExcessReturn | 0.080784 | 0.052794 | 0.054507 | 0.143799 | 0.072455 | 0.161048 | 0.083269 | 0.084365 | 0.104763 | 0.083131 | 0.146443 | 0.130118 | 0.102818 |
+| BetaCoSkewness | -1.007663 | -1.030977 | -1.139233 | -0.930234 | -1.006532 | -0.908119 | -1.100709 | -1.118876 | -1.079607 | -1.123072 | -0.954915 | -2.102459 | -1.592190 |
+| BetaCoKurtosis | 0.083192 | 0.049011 | 0.051037 | 0.027872 | 0.047768 | 0.040181 | 0.045809 | 0.051584 | 0.023902 | 0.056251 | 0.050910 | -0.025360 | 0.027992 |
+| CDD | 0.040293 | 0.035628 | 0.046112 | 0.027983 | 0.041533 | 0.044066 | 0.038434 | 0.043415 | 0.025972 | 0.047864 | 0.035587 | 0.024500 | 0.022822 |
 | CoSkewness | -0.000000 | -0.000000 | -0.000000 | -0.000000 | -0.000000 | -0.000000 | -0.000000 | -0.000000 | -0.000000 | -0.000000 | -0.000000 | -0.000000 | -0.000000 |
 | CoKurtosis | 0.000000 | 0.000000 | 0.000000 | 0.000000 | 0.000000 | 0.000000 | 0.000000 | 0.000000 | 0.000000 | 0.000000 | 0.000000 | -0.000000 | 0.000000 |
-| FamaBeta | 0.521888 | 0.404641 | 0.404778 | 0.513783 | 0.414724 | 0.531228 | 0.404556 | 0.410411 | 0.482748 | 0.415463 | 0.475119 | 0.397776 | 0.394495 |
-| MSquaredExcess | -0.024976 | -0.043968 | -0.039889 | 0.073619 | -0.008871 | 0.092338 | 0.016973 | 0.017355 | 0.023837 | 0.013157 | 0.098611 | 0.130882 | 0.046168 |
-| NetSelectivity | -0.016016 | -0.021860 | -0.019838 | 0.046474 | -0.004520 | 0.060270 | 0.008437 | 0.008752 | 0.014139 | 0.006716 | 0.057567 | 0.063968 | 0.022378 |
-| Selectivity | 0.089279 | 0.060407 | 0.062126 | 0.149827 | 0.078254 | 0.167719 | 0.089470 | 0.090709 | 0.113489 | 0.089344 | 0.151827 | 0.147709 | 0.101785 |
-| SpecificRisk | 0.090944 | 0.070568 | 0.070563 | 0.089503 | 0.072184 | 0.092596 | 0.070443 | 0.071438 | 0.084287 | 0.072284 | 0.082639 | 0.069581 | 0.068727 |
-| SystematicRisk | 0.010792 | 0.007886 | 0.008142 | 0.010860 | 0.009267 | 0.010779 | 0.008818 | 0.009137 | 0.008484 | 0.009509 | 0.011053 | 0.005548 | 0.008300 |
-| TotalRisk | 0.091582 | 0.071007 | 0.071031 | 0.090160 | 0.072777 | 0.093221 | 0.070992 | 0.072020 | 0.084713 | 0.072906 | 0.083375 | 0.069802 | 0.069227 |
-| UpCapture | 0.106155 | 0.071291 | 0.073323 | 0.136728 | 0.092194 | 0.138263 | 0.090263 | 0.091277 | 0.102491 | 0.093247 | 0.133385 | 0.088667 | 0.094844 |
-| UpNumber | 0.566514 | 0.555046 | 0.573394 | 0.550459 | 0.575688 | 0.555046 | 0.575688 | 0.580275 | 0.543578 | 0.584862 | 0.564220 | 0.555046 | 0.559633 |
-| UpPercent | 0.174312 | 0.146789 | 0.144495 | 0.178899 | 0.158257 | 0.204128 | 0.153670 | 0.146789 | 0.183486 | 0.149083 | 0.178899 | 0.174312 | 0.165138 |
-| DownCapture | 0.013226 | 0.006585 | 0.006889 | -0.011008 | 0.011399 | -0.027237 | -0.002297 | -0.002875 | -0.013063 | 0.000470 | -0.016812 | -0.060508 | -0.008744 |
-| DownNumber | 0.503145 | 0.503145 | 0.493711 | 0.496855 | 0.518868 | 0.500000 | 0.484277 | 0.490566 | 0.525157 | 0.500000 | 0.503145 | 0.459119 | 0.518868 |
-| DownPercent | 0.874214 | 0.893082 | 0.893082 | 0.861635 | 0.883648 | 0.877358 | 0.893082 | 0.889937 | 0.880503 | 0.883648 | 0.877358 | 0.918239 | 0.893082 |
+| FamaBeta | 0.521888 | 0.404641 | 0.404778 | 0.513783 | 0.414724 | 0.531228 | 0.404556 | 0.410411 | 0.482748 | 0.415463 | 0.475119 | 0.405842 | 0.397650 |
+| MSquaredExcess | -0.024976 | -0.043968 | -0.039889 | 0.073619 | -0.008871 | 0.092338 | 0.016973 | 0.017355 | 0.023837 | 0.013157 | 0.098611 | 0.107502 | 0.057961 |
+| NetSelectivity | -0.016016 | -0.021860 | -0.019838 | 0.046474 | -0.004520 | 0.060270 | 0.008437 | 0.008752 | 0.014139 | 0.006716 | 0.057567 | 0.053606 | 0.028319 |
+| Selectivity | 0.089279 | 0.060407 | 0.062126 | 0.149827 | 0.078254 | 0.167719 | 0.089470 | 0.090709 | 0.113489 | 0.089344 | 0.151827 | 0.139061 | 0.109114 |
+| SpecificRisk | 0.090944 | 0.070568 | 0.070563 | 0.089503 | 0.072184 | 0.092596 | 0.070443 | 0.071438 | 0.084287 | 0.072284 | 0.082639 | 0.070993 | 0.069344 |
+| SystematicRisk | 0.010792 | 0.007886 | 0.008142 | 0.010860 | 0.009267 | 0.010779 | 0.008818 | 0.009137 | 0.008484 | 0.009509 | 0.011053 | 0.005649 | 0.007788 |
+| TotalRisk | 0.091582 | 0.071007 | 0.071031 | 0.090160 | 0.072777 | 0.093221 | 0.070992 | 0.072020 | 0.084713 | 0.072906 | 0.083375 | 0.071217 | 0.069780 |
+| UpCapture | 0.106155 | 0.071291 | 0.073323 | 0.136728 | 0.092194 | 0.138263 | 0.090263 | 0.091277 | 0.102491 | 0.093247 | 0.133385 | 0.091783 | 0.094525 |
+| UpNumber | 0.566514 | 0.555046 | 0.573394 | 0.550459 | 0.575688 | 0.555046 | 0.575688 | 0.580275 | 0.543578 | 0.584862 | 0.564220 | 0.550459 | 0.564220 |
+| UpPercent | 0.174312 | 0.146789 | 0.144495 | 0.178899 | 0.158257 | 0.204128 | 0.153670 | 0.146789 | 0.183486 | 0.149083 | 0.178899 | 0.167431 | 0.178899 |
+| DownCapture | 0.013226 | 0.006585 | 0.006889 | -0.011008 | 0.011399 | -0.027237 | -0.002297 | -0.002875 | -0.013063 | 0.000470 | -0.016812 | -0.047988 | -0.016212 |
+| DownNumber | 0.503145 | 0.503145 | 0.493711 | 0.496855 | 0.518868 | 0.500000 | 0.484277 | 0.490566 | 0.525157 | 0.500000 | 0.503145 | 0.465409 | 0.503145 |
+| DownPercent | 0.874214 | 0.893082 | 0.893082 | 0.861635 | 0.883648 | 0.877358 | 0.893082 | 0.889937 | 0.880503 | 0.883648 | 0.877358 | 0.899371 | 0.893082 |
 
 </details>
 
 
 Table 9 contains all 72 measures calculated directly with PerformanceAnalytics: measures are rows and portfolios are columns. S&P 500 is the benchmark for CAPM, information, tracking-error, capture and systematic-risk measures. It remains in Table 5 and the figures; it is omitted from Table 9 because its information ratio relative to itself has a zero tracking-error denominator.
 
+## Decision risks and implementability
+
+### Liquidity and turnover
+
+<details markdown="1">
+<summary><strong>Table 10. Proposed trades and observed one-year market liquidity</strong></summary>
+
+| asset | trade_shares | trade_value_EUR | median_daily_turnover_EUR | zero_volume_fraction | trade_to_median_turnover | liquidity_flag |
+| --- | --- | --- | --- | --- | --- | --- |
+| KNE1L | 3662 | 1801.7040 | 14744.2945 | 0.0119 | 0.1222 | MEDIUM |
+| GRG1L | 759 | 766.5900 | 14030.0100 | 0.0119 | 0.0546 | MEDIUM |
+| EFT1T | 30 | 582.0000 | 18097.9500 | 0.0119 | 0.0322 | MEDIUM |
+| TVE1T | 11 | 119.3500 | 14487.2500 | 0.0119 | 0.0082 | MEDIUM |
+| HAE1T | -8 | 41.1200 | 16335.3900 | 0.0119 | 0.0025 | MEDIUM |
+| TKM1T | -219 | 1992.9001 | 39903.1900 | 0.0119 | 0.0499 | LOW |
+| VLP1L | 62 | 961.0000 | 24886.8000 | 0.0119 | 0.0386 | LOW |
+| APG1L | 154 | 612.9200 | 21467.7200 | 0.0119 | 0.0286 | LOW |
+| TEL1L | 629 | 1396.3800 | 51206.1300 | 0.0119 | 0.0273 | LOW |
+| AKO1L | 123 | 217.7100 | 24553.0000 | 0.0119 | 0.0089 | LOW |
+| TSM1T | -330 | 403.2600 | 48681.1890 | 0.0119 | 0.0083 | LOW |
+| MRK1T | 9 | 242.1000 | 61536.9500 | 0.0119 | 0.0039 | LOW |
+| TAL1T | 329 | 203.9800 | 76196.4300 | 0.0119 | 0.0027 | LOW |
+| IGN1L | 23 | 508.3000 | 289289.6750 | 0.0119 | 0.0018 | LOW |
+| ROE1L | -217 | 194.2150 | 200231.7685 | 0.0119 | 0.0010 | LOW |
+| LHV1T | 34 | 113.3900 | 263779.8850 | 0.0119 | 0.0004 | LOW |
+| CPA1T | 10 | 23.3000 | 75536.4150 | 0.0119 | 0.0003 | LOW |
+| MOLNR | 37 | 699.3000 | 132.0000 | 0.2659 | 5.2977 | HIGH |
+| MODE | 81 | 477.9000 | 476.6200 | 0.1151 | 1.0027 | HIGH |
+| RSU1L | 236 | 1076.1600 | 1371.7000 | 0.0317 | 0.7845 | HIGH |
+| SAF1R | -100 | 1715.0000 | 4065.6250 | 0.0278 | 0.4218 | HIGH |
+| VIRSI | 206 | 902.2800 | 2494.2600 | 0.0238 | 0.3617 | HIGH |
+| PZV1L | 298 | 515.5400 | 4342.1750 | 0.0119 | 0.1187 | HIGH |
+
+</details>
+
+
+Median daily turnover and zero-volume frequency use official Nasdaq Baltic price-volume observations from the last 365 calendar days of the sample. Trade-to-turnover is the proposed absolute order value divided by median daily turnover. HIGH flags median turnover below EUR 5,000 or an order above 20% of median turnover; MEDIUM flags below EUR 20,000 or above 10%. These are transparent screening thresholds, not a guarantee of execution. HIGH trades should be split, limited or omitted after checking the live order book.
+
+<details markdown="1">
+<summary><strong>Table 11. Illustrative transaction-cost and turnover scenario</strong></summary>
+
+| portfolio | turnover_EUR | number_of_trades | estimated_cost_EUR | high_liquidity_risk_trades | cost_percent_of_15000 |
+| --- | --- | --- | --- | --- | --- |
+| Baltic_NetSD | 15566.3991 | 23 | 223.9929 | 6 | 1.4933 |
+| curent_update_baltic | 6878.9760 | 20 | 122.9841 | 5 | 0.8199 |
+
+</details>
+
+
+The cost scenario uses max(EUR 3, 0.25% of trade value) commission plus an assumed spread/impact of 0.25%, 0.75% or 2.00% for LOW, MEDIUM or HIGH liquidity risk. These are sensitivity assumptions rather than broker quotes. Reported historical returns and dividends are gross; subtract the displayed cost before interpreting an implementation result.
+
+### Capital concentration
+
+<details markdown="1">
+<summary><strong>Table 12. Top-position and effective-position concentration</strong></summary>
+
+| portfolio | positions | top5_share | top10_share | HHI | effective_positions |
+| --- | --- | --- | --- | --- | --- |
+| Baltic_NetSD | 21 | 0.4890 | 0.7428 | 0.0704 | 14.2108 |
+| curent_update_baltic | 22 | 0.5221 | 0.7578 | 0.0834 | 11.9913 |
+
+</details>
+
+
+<details markdown="1">
+<summary><strong>Table 12A. Baltic_NetSD: country, list and industry concentration</strong></summary>
+
+| dimension | category | capital_percent |
+| --- | --- | --- |
+| country_market | RIG | 6.05 |
+| country_market | TLN | 30.39 |
+| country_market | VLN | 63.56 |
+| segment | Baltic Main List | 86.06 |
+| segment | First North Baltic Share List | 13.94 |
+| Industry | Basic Materials | 5.14 |
+| Industry | Consumer Discretionary | 23.98 |
+| Industry | Consumer Staples | 22.94 |
+| Industry | Financials | 4.82 |
+| Industry | Health Care | 4.69 |
+| Industry | Industrials | 20.48 |
+| Industry | Technology | 3.20 |
+| Industry | Telecommunications | 9.36 |
+| Industry | Utilities | 4.21 |
+| Industry | nan | 1.19 |
+| Supersector | Banks | 0.92 |
+| Supersector | Basic Resources | 5.14 |
+| Supersector | Construction and Materials | 5.23 |
+| Supersector | Financial Services | 3.90 |
+| Supersector | Food, Beverage and Tobacco | 22.94 |
+| Supersector | Health Care | 4.69 |
+| Supersector | Industrial Goods and Services | 15.25 |
+| Supersector | Retail | 19.70 |
+| Supersector | Technology | 3.20 |
+| Supersector | Telecommunications | 9.36 |
+| Supersector | Travel and Leisure | 4.28 |
+| Supersector | Utilities | 4.21 |
+| Supersector | nan | 1.19 |
+
+</details>
+
+
+<details markdown="1">
+<summary><strong>Table 12B. curent_update_baltic: country, list and industry concentration</strong></summary>
+
+| dimension | category | capital_percent |
+| --- | --- | --- |
+| country_market | RIG | 12.78 |
+| country_market | TLN | 50.98 |
+| country_market | VLN | 36.24 |
+| segment | Baltic Main List | 91.77 |
+| segment | First North Baltic Share List | 8.23 |
+| Industry | Basic Materials | 3.51 |
+| Industry | Consumer Discretionary | 31.05 |
+| Industry | Consumer Staples | 13.38 |
+| Industry | Financials | 3.18 |
+| Industry | Health Care | 3.42 |
+| Industry | Industrials | 20.08 |
+| Industry | Technology | 3.52 |
+| Industry | Telecommunications | 12.99 |
+| Industry | Utilities | 3.43 |
+| Industry | nan | 5.43 |
+| Supersector | Banks | 0.19 |
+| Supersector | Basic Resources | 3.51 |
+| Supersector | Construction and Materials | 7.57 |
+| Supersector | Financial Services | 2.99 |
+| Supersector | Food, Beverage and Tobacco | 13.38 |
+| Supersector | Health Care | 3.42 |
+| Supersector | Industrial Goods and Services | 12.51 |
+| Supersector | Retail | 27.27 |
+| Supersector | Technology | 3.52 |
+| Supersector | Telecommunications | 12.99 |
+| Supersector | Travel and Leisure | 3.78 |
+| Supersector | Utilities | 3.43 |
+| Supersector | nan | 5.43 |
+
+</details>
+
+
+The number of holdings is not a diversification measure. Top-five and top-ten shares show how much capital is concentrated in the largest positions; HHI and the effective number of positions measure weight concentration. Country, list, industry and supersector totals expose common economic exposures that a position count conceals. Very small positions add trading complexity while making little difference to risk.
+
+### Validation and interpretation limits
+
+<details markdown="1">
+<summary><strong>Table 13. Existing 70/30 holdout experiment: portfolio-only netSD on unseen test data</strong></summary>
+
+| entity | out | in | network_denominator | netSD |
+| --- | --- | --- | --- | --- |
+| Markowitz | 3 | 0 | 6 | 0.500000 |
+| MAD | 0 | 0 | 6 | 0.000000 |
+| Minimax | 3 | 0 | 6 | 0.500000 |
+| Robust | 0 | 1 | 6 | -0.166667 |
+| NetSD | 0 | 2 | 6 | -0.333333 |
+| Current | 3 | 0 | 6 | 0.500000 |
+| SP500 | 0 | 6 | 6 | -1.000000 |
+
+</details>
+
+
+The final Baltic_NetSD weights were selected on the complete 2023–2026 sample. Their 14.64% annualised geometric return and 1.95 annualised Sharpe ratio are therefore in-sample descriptions, not forecasts. The earlier 70/30 experiment is the available independent check: weights were fixed from the first 70% and assessed on the last 30%. Its NetSD portfolio has a negative test-network netSD, which is direct evidence of model-selection instability. No trade should rely on the full-sample figures without a new walk-forward or future-paper-trading test.
+
+netSD counts outgoing minus incoming FSD, SSD and TSD relations relative to a fixed comparison network. It has no monetary unit and does not state expected profit, maximum loss or suitability for an investor. Use it as a distribution-ranking signal together with return, volatility, drawdown, VaR/ES, liquidity, concentration and cost results.
+
+The S&P 500 series is a USD price-index benchmark. It excludes dividends and has not been converted into EUR investor returns, so it is retained only as a broad market sensitivity reference. Direct performance claims require a total-return benchmark converted to EUR over identical dates.
+
+Dividend values are historical gross cash distributions. They are excluded from optimisation and are neither a forecast nor an assessment of dividend sustainability. Company valuation, earnings quality, debt, free cash flow and payout coverage have not been modelled; each proposed purchase therefore requires a separate fundamental review.
+
 ## Model
 
 ### Exact mathematical formulation of the netSD portfolio
 
-Let R_tj be the return of share j on date t, w_j its final portfolio weight, and r_p,t = Σ_j w_j R_tj the candidate portfolio return. Let K denote the fixed reference set consisting of the 56 shares, the current portfolio, and ten earlier portfolios.
+Let R_tj be the return of share j on date t, w_j its final portfolio weight, and r_p,t = Σ_j w_j R_tj the candidate portfolio return. Let K denote the fixed reference set consisting of 55 quality-approved shares, the current portfolio, and ten earlier portfolios.
 
 For entity i, define H_i^(1)(x)=F_i(x) and H_i^(q)(x)=∫_{-∞}^x H_i^(q-1)(u)du for q=2,3. Entity i dominates entity k at order q when H_i^(q)(x) ≤ H_k^(q)(x) for every observed support point x, with a strict inequality for at least one x. The third-order comparison additionally requires E[R_i] ≥ E[R_k]. Let a_ik^(q)=1 when this condition holds and 0 otherwise.
 
 OUT(p)=Σ_{k∈K}Σ_{q=1}^3 a_pk^(q),   IN(p)=Σ_{k∈K}Σ_{q=1}^3 a_kp^(q),   D=max_i{OUT(i)+IN(i)},   netSD(p)=[OUT(p)-IN(p)]/D.
 
-Primary optimisation problem:  max_w netSD(w), subject to Σ_j w_j=1; w_j≥0; μᵀw≥μ_current; and w_j=0 for every share j whose individual netSD_j≤0 or which belongs to the Baltic Secondary List. Selling existing holdings is allowed, so current positions do not impose lower bounds. Among candidates with the same maximal netSD, the secondary lexicographic objective maximises Σ_j w_j d_j/P_j, where d_j is historical dividend per share and P_j is the last observed price.
+Primary optimisation problem: max_w netSD(w), subject to Σ_j w_j=1; w_j≥0; μᵀw≥μ_current; and w_j=0 for every share j whose individual netSD_j≤0 or which belongs to the Baltic Secondary List. Selling existing holdings is allowed, so current positions do not impose lower bounds. Historical dividends are reported separately and do not enter the objective.
 
 The individual-share screening score is calculated before the new candidate enters the network: netSD_j=(OUT_j-IN_j)/D_ref in the fixed 67-entity reference system. This prevents the candidate from changing its own admissible investment universe.
 
-The reference set contains the 56 eligible shares, the current portfolio, and ten earlier portfolios: Markowitz, MAD, Minimax, Robust and NetSD estimated from the training sample and from the complete sample.
+The unchanged reference set contains 55 quality-approved shares, the current portfolio, and ten earlier portfolios: Markowitz, MAD, Minimax, Robust and NetSD estimated from the training sample and from the complete sample. The larger pairwise matrices are diagnostics only; their expanded-network ratios are not presented as the optimisation score.
 
 The objective is discrete and non-convex. ISRES evaluates candidate portfolios numerically. The report therefore states the best solution found; it does not claim a mathematical certificate of global optimality.
 
 ## Data coverage
 
-The official Nasdaq Baltic list contained 67 shares. 56 shares had Yahoo closing-price history covering the complete study window and entered the common-date return matrix. Shares with incomplete or unavailable histories are excluded from both the optimisation and Table 2. No price interpolation or zero-return replacement was used.
+The official Nasdaq Baltic list contained 67 shares. 55 shares had Yahoo closing-price history covering the complete study window and entered the common-date return matrix. Shares with incomplete or unavailable histories are excluded from both the optimisation and Table 2. No price interpolation or zero-return replacement was used.
 
 Sources: official Nasdaq Baltic share-list XLSX and dividend/event XLSX downloaded on 2026-10-13; Yahoo Finance unadjusted closing prices downloaded through quantmod; official Nasdaq Baltic corrections for MODE and MOLNR in 2025 and the complete VIRSI history (2023-01-01 to 2026-08-29).
 </main>
