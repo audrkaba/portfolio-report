@@ -177,22 +177,24 @@ Select a share to display its allocation, technical indicators, all PerformanceA
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 0 | 32 | +32 | 0.90% | EUR 4.1000 | 0.3009 | 34 / 0 | 80.80 | Bearish | Above upper band | SELL | 2026-08-28 |
 
+![VIRSI return histogram](figures/stock_profiles/VIRSI_histogram.png)
+
 ![VIRSI complete technical history](figures/technical_analysis/VIRSI_technical.png)
 
 <details markdown="1">
-<summary>Bollinger Bands, RSI(14) and MACD — last 252 observations</summary>
+<summary>Bollinger Bands, RSI(14) and MACD — last 126 observations (approximately six months)</summary>
 
 **Bollinger Bands**
 
-![VIRSI Bollinger Bands](figures/stock_profiles/VIRSI_bollinger_1y.png)
+![VIRSI Bollinger Bands](figures/stock_profiles/VIRSI_bollinger_6m.png)
 
 **RSI(14)**
 
-![VIRSI RSI(14)](figures/stock_profiles/VIRSI_rsi_1y.png)
+![VIRSI RSI(14)](figures/stock_profiles/VIRSI_rsi_6m.png)
 
 **MACD**
 
-![VIRSI MACD](figures/stock_profiles/VIRSI_macd_1y.png)
+![VIRSI MACD](figures/stock_profiles/VIRSI_macd_6m.png)
 
 </details>
 
@@ -253,22 +255,24 @@ The removed weight is distributed proportionally across all remaining holdings, 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 0 | 28 | +28 | 3.55% | EUR 18.9000 | 0.0354 | 4 / 0 | 44.96 | Bullish | Inside bands | BUY | 2026-08-28 |
 
+![MOLNR return histogram](figures/stock_profiles/MOLNR_histogram.png)
+
 ![MOLNR complete technical history](figures/technical_analysis/MOLNR_technical.png)
 
 <details markdown="1">
-<summary>Bollinger Bands, RSI(14) and MACD — last 252 observations</summary>
+<summary>Bollinger Bands, RSI(14) and MACD — last 126 observations (approximately six months)</summary>
 
 **Bollinger Bands**
 
-![MOLNR Bollinger Bands](figures/stock_profiles/MOLNR_bollinger_1y.png)
+![MOLNR Bollinger Bands](figures/stock_profiles/MOLNR_bollinger_6m.png)
 
 **RSI(14)**
 
-![MOLNR RSI(14)](figures/stock_profiles/MOLNR_rsi_1y.png)
+![MOLNR RSI(14)](figures/stock_profiles/MOLNR_rsi_6m.png)
 
 **MACD**
 
-![MOLNR MACD](figures/stock_profiles/MOLNR_macd_1y.png)
+![MOLNR MACD](figures/stock_profiles/MOLNR_macd_6m.png)
 
 </details>
 
@@ -329,22 +333,24 @@ The removed weight is distributed proportionally across all remaining holdings, 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 42 | 84 | +42 | 8.71% | EUR 15.5000 | 0.3805 | 43 / 0 | 57.67 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
+![VLP1L return histogram](figures/stock_profiles/VLP1L_histogram.png)
+
 ![VLP1L complete technical history](figures/technical_analysis/VLP1L_technical.png)
 
 <details markdown="1">
-<summary>Bollinger Bands, RSI(14) and MACD — last 252 observations</summary>
+<summary>Bollinger Bands, RSI(14) and MACD — last 126 observations (approximately six months)</summary>
 
 **Bollinger Bands**
 
-![VLP1L Bollinger Bands](figures/stock_profiles/VLP1L_bollinger_1y.png)
+![VLP1L Bollinger Bands](figures/stock_profiles/VLP1L_bollinger_6m.png)
 
 **RSI(14)**
 
-![VLP1L RSI(14)](figures/stock_profiles/VLP1L_rsi_1y.png)
+![VLP1L RSI(14)](figures/stock_profiles/VLP1L_rsi_6m.png)
 
 **MACD**
 
-![VLP1L MACD](figures/stock_profiles/VLP1L_macd_1y.png)
+![VLP1L MACD](figures/stock_profiles/VLP1L_macd_6m.png)
 
 </details>
 
@@ -405,22 +411,24 @@ The removed weight is distributed proportionally across all remaining holdings, 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 0 | 1634 | +1634 | 5.36% | EUR 0.4920 | 0.3717 | 42 / 0 | 55.64 | Bullish | Inside bands | HOLD | 2026-08-28 |
 
+![KNE1L return histogram](figures/stock_profiles/KNE1L_histogram.png)
+
 ![KNE1L complete technical history](figures/technical_analysis/KNE1L_technical.png)
 
 <details markdown="1">
-<summary>Bollinger Bands, RSI(14) and MACD — last 252 observations</summary>
+<summary>Bollinger Bands, RSI(14) and MACD — last 126 observations (approximately six months)</summary>
 
 **Bollinger Bands**
 
-![KNE1L Bollinger Bands](figures/stock_profiles/KNE1L_bollinger_1y.png)
+![KNE1L Bollinger Bands](figures/stock_profiles/KNE1L_bollinger_6m.png)
 
 **RSI(14)**
 
-![KNE1L RSI(14)](figures/stock_profiles/KNE1L_rsi_1y.png)
+![KNE1L RSI(14)](figures/stock_profiles/KNE1L_rsi_6m.png)
 
 **MACD**
 
-![KNE1L MACD](figures/stock_profiles/KNE1L_macd_1y.png)
+![KNE1L MACD](figures/stock_profiles/KNE1L_macd_6m.png)
 
 </details>
 
@@ -481,22 +489,24 @@ The removed weight is distributed proportionally across all remaining holdings, 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 20 | 38 | +18 | 6.89% | EUR 26.9000 | 0.3717 | 42 / 0 | 40.54 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
+![MRK1T return histogram](figures/stock_profiles/MRK1T_histogram.png)
+
 ![MRK1T complete technical history](figures/technical_analysis/MRK1T_technical.png)
 
 <details markdown="1">
-<summary>Bollinger Bands, RSI(14) and MACD — last 252 observations</summary>
+<summary>Bollinger Bands, RSI(14) and MACD — last 126 observations (approximately six months)</summary>
 
 **Bollinger Bands**
 
-![MRK1T Bollinger Bands](figures/stock_profiles/MRK1T_bollinger_1y.png)
+![MRK1T Bollinger Bands](figures/stock_profiles/MRK1T_bollinger_6m.png)
 
 **RSI(14)**
 
-![MRK1T RSI(14)](figures/stock_profiles/MRK1T_rsi_1y.png)
+![MRK1T RSI(14)](figures/stock_profiles/MRK1T_rsi_6m.png)
 
 **MACD**
 
-![MRK1T MACD](figures/stock_profiles/MRK1T_macd_1y.png)
+![MRK1T MACD](figures/stock_profiles/MRK1T_macd_6m.png)
 
 </details>
 
@@ -557,22 +567,24 @@ The removed weight is distributed proportionally across all remaining holdings, 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 200 | 240 | +40 | 6.37% | EUR 3.9800 | 0.3363 | 38 / 0 | 55.56 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
+![APG1L return histogram](figures/stock_profiles/APG1L_histogram.png)
+
 ![APG1L complete technical history](figures/technical_analysis/APG1L_technical.png)
 
 <details markdown="1">
-<summary>Bollinger Bands, RSI(14) and MACD — last 252 observations</summary>
+<summary>Bollinger Bands, RSI(14) and MACD — last 126 observations (approximately six months)</summary>
 
 **Bollinger Bands**
 
-![APG1L Bollinger Bands](figures/stock_profiles/APG1L_bollinger_1y.png)
+![APG1L Bollinger Bands](figures/stock_profiles/APG1L_bollinger_6m.png)
 
 **RSI(14)**
 
-![APG1L RSI(14)](figures/stock_profiles/APG1L_rsi_1y.png)
+![APG1L RSI(14)](figures/stock_profiles/APG1L_rsi_6m.png)
 
 **MACD**
 
-![APG1L MACD](figures/stock_profiles/APG1L_macd_1y.png)
+![APG1L MACD](figures/stock_profiles/APG1L_macd_6m.png)
 
 </details>
 
@@ -633,22 +645,24 @@ The removed weight is distributed proportionally across all remaining holdings, 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 100 | 164 | +64 | 5.63% | EUR 5.1400 | 0.1150 | 37 / 24 | 42.59 | Bullish | Inside bands | BUY | 2026-08-28 |
 
+![HAE1T return histogram](figures/stock_profiles/HAE1T_histogram.png)
+
 ![HAE1T complete technical history](figures/technical_analysis/HAE1T_technical.png)
 
 <details markdown="1">
-<summary>Bollinger Bands, RSI(14) and MACD — last 252 observations</summary>
+<summary>Bollinger Bands, RSI(14) and MACD — last 126 observations (approximately six months)</summary>
 
 **Bollinger Bands**
 
-![HAE1T Bollinger Bands](figures/stock_profiles/HAE1T_bollinger_1y.png)
+![HAE1T Bollinger Bands](figures/stock_profiles/HAE1T_bollinger_6m.png)
 
 **RSI(14)**
 
-![HAE1T RSI(14)](figures/stock_profiles/HAE1T_rsi_1y.png)
+![HAE1T RSI(14)](figures/stock_profiles/HAE1T_rsi_6m.png)
 
 **MACD**
 
-![HAE1T MACD](figures/stock_profiles/HAE1T_macd_1y.png)
+![HAE1T MACD](figures/stock_profiles/HAE1T_macd_6m.png)
 
 </details>
 
@@ -709,22 +723,24 @@ The removed weight is distributed proportionally across all remaining holdings, 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 100 | 100 | +0 | 11.43% | EUR 17.1500 | -0.1062 | 12 / 24 | 88.11 | Bullish | Inside bands | SELL | 2026-08-28 |
 
+![SAF1R return histogram](figures/stock_profiles/SAF1R_histogram.png)
+
 ![SAF1R complete technical history](figures/technical_analysis/SAF1R_technical.png)
 
 <details markdown="1">
-<summary>Bollinger Bands, RSI(14) and MACD — last 252 observations</summary>
+<summary>Bollinger Bands, RSI(14) and MACD — last 126 observations (approximately six months)</summary>
 
 **Bollinger Bands**
 
-![SAF1R Bollinger Bands](figures/stock_profiles/SAF1R_bollinger_1y.png)
+![SAF1R Bollinger Bands](figures/stock_profiles/SAF1R_bollinger_6m.png)
 
 **RSI(14)**
 
-![SAF1R RSI(14)](figures/stock_profiles/SAF1R_rsi_1y.png)
+![SAF1R RSI(14)](figures/stock_profiles/SAF1R_rsi_6m.png)
 
 **MACD**
 
-![SAF1R MACD](figures/stock_profiles/SAF1R_macd_1y.png)
+![SAF1R MACD](figures/stock_profiles/SAF1R_macd_6m.png)
 
 </details>
 
@@ -785,22 +801,24 @@ The removed weight is distributed proportionally across all remaining holdings, 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 0 | 747 | +747 | 5.03% | EUR 1.0100 | 0.3805 | 49 / 6 | 35.53 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
+![GRG1L return histogram](figures/stock_profiles/GRG1L_histogram.png)
+
 ![GRG1L complete technical history](figures/technical_analysis/GRG1L_technical.png)
 
 <details markdown="1">
-<summary>Bollinger Bands, RSI(14) and MACD — last 252 observations</summary>
+<summary>Bollinger Bands, RSI(14) and MACD — last 126 observations (approximately six months)</summary>
 
 **Bollinger Bands**
 
-![GRG1L Bollinger Bands](figures/stock_profiles/GRG1L_bollinger_1y.png)
+![GRG1L Bollinger Bands](figures/stock_profiles/GRG1L_bollinger_6m.png)
 
 **RSI(14)**
 
-![GRG1L RSI(14)](figures/stock_profiles/GRG1L_rsi_1y.png)
+![GRG1L RSI(14)](figures/stock_profiles/GRG1L_rsi_6m.png)
 
 **MACD**
 
-![GRG1L MACD](figures/stock_profiles/GRG1L_macd_1y.png)
+![GRG1L MACD](figures/stock_profiles/GRG1L_macd_6m.png)
 
 </details>
 
@@ -861,22 +879,24 @@ The removed weight is distributed proportionally across all remaining holdings, 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 0 | 124 | +124 | 3.79% | EUR 4.5600 | 0.2566 | 35 / 6 | 58.03 | Bullish | Inside bands | HOLD | 2026-08-28 |
 
+![RSU1L return histogram](figures/stock_profiles/RSU1L_histogram.png)
+
 ![RSU1L complete technical history](figures/technical_analysis/RSU1L_technical.png)
 
 <details markdown="1">
-<summary>Bollinger Bands, RSI(14) and MACD — last 252 observations</summary>
+<summary>Bollinger Bands, RSI(14) and MACD — last 126 observations (approximately six months)</summary>
 
 **Bollinger Bands**
 
-![RSU1L Bollinger Bands](figures/stock_profiles/RSU1L_bollinger_1y.png)
+![RSU1L Bollinger Bands](figures/stock_profiles/RSU1L_bollinger_6m.png)
 
 **RSI(14)**
 
-![RSU1L RSI(14)](figures/stock_profiles/RSU1L_rsi_1y.png)
+![RSU1L RSI(14)](figures/stock_profiles/RSU1L_rsi_6m.png)
 
 **MACD**
 
-![RSU1L MACD](figures/stock_profiles/RSU1L_macd_1y.png)
+![RSU1L MACD](figures/stock_profiles/RSU1L_macd_6m.png)
 
 </details>
 
@@ -937,22 +957,24 @@ The removed weight is distributed proportionally across all remaining holdings, 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 0 | 15 | +15 | 2.33% | EUR 22.1000 | 0.3982 | 56 / 11 | 46.17 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
+![IGN1L return histogram](figures/stock_profiles/IGN1L_histogram.png)
+
 ![IGN1L complete technical history](figures/technical_analysis/IGN1L_technical.png)
 
 <details markdown="1">
-<summary>Bollinger Bands, RSI(14) and MACD — last 252 observations</summary>
+<summary>Bollinger Bands, RSI(14) and MACD — last 126 observations (approximately six months)</summary>
 
 **Bollinger Bands**
 
-![IGN1L Bollinger Bands](figures/stock_profiles/IGN1L_bollinger_1y.png)
+![IGN1L Bollinger Bands](figures/stock_profiles/IGN1L_bollinger_6m.png)
 
 **RSI(14)**
 
-![IGN1L RSI(14)](figures/stock_profiles/IGN1L_rsi_1y.png)
+![IGN1L RSI(14)](figures/stock_profiles/IGN1L_rsi_6m.png)
 
 **MACD**
 
-![IGN1L MACD](figures/stock_profiles/IGN1L_macd_1y.png)
+![IGN1L MACD](figures/stock_profiles/IGN1L_macd_6m.png)
 
 </details>
 
@@ -1013,22 +1035,24 @@ The removed weight is distributed proportionally across all remaining holdings, 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 0 | 106 | +106 | 1.26% | EUR 1.7700 | 0.1239 | 25 / 11 | 45.60 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
+![AKO1L return histogram](figures/stock_profiles/AKO1L_histogram.png)
+
 ![AKO1L complete technical history](figures/technical_analysis/AKO1L_technical.png)
 
 <details markdown="1">
-<summary>Bollinger Bands, RSI(14) and MACD — last 252 observations</summary>
+<summary>Bollinger Bands, RSI(14) and MACD — last 126 observations (approximately six months)</summary>
 
 **Bollinger Bands**
 
-![AKO1L Bollinger Bands](figures/stock_profiles/AKO1L_bollinger_1y.png)
+![AKO1L Bollinger Bands](figures/stock_profiles/AKO1L_bollinger_6m.png)
 
 **RSI(14)**
 
-![AKO1L RSI(14)](figures/stock_profiles/AKO1L_rsi_1y.png)
+![AKO1L RSI(14)](figures/stock_profiles/AKO1L_rsi_6m.png)
 
 **MACD**
 
-![AKO1L MACD](figures/stock_profiles/AKO1L_macd_1y.png)
+![AKO1L MACD](figures/stock_profiles/AKO1L_macd_6m.png)
 
 </details>
 
@@ -1089,22 +1113,24 @@ The removed weight is distributed proportionally across all remaining holdings, 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 0 | 142 | +142 | 1.64% | EUR 1.7300 | 0.1858 | 35 / 14 | 46.60 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
+![PZV1L return histogram](figures/stock_profiles/PZV1L_histogram.png)
+
 ![PZV1L complete technical history](figures/technical_analysis/PZV1L_technical.png)
 
 <details markdown="1">
-<summary>Bollinger Bands, RSI(14) and MACD — last 252 observations</summary>
+<summary>Bollinger Bands, RSI(14) and MACD — last 126 observations (approximately six months)</summary>
 
 **Bollinger Bands**
 
-![PZV1L Bollinger Bands](figures/stock_profiles/PZV1L_bollinger_1y.png)
+![PZV1L Bollinger Bands](figures/stock_profiles/PZV1L_bollinger_6m.png)
 
 **RSI(14)**
 
-![PZV1L RSI(14)](figures/stock_profiles/PZV1L_rsi_1y.png)
+![PZV1L RSI(14)](figures/stock_profiles/PZV1L_rsi_6m.png)
 
 **MACD**
 
-![PZV1L MACD](figures/stock_profiles/PZV1L_macd_1y.png)
+![PZV1L MACD](figures/stock_profiles/PZV1L_macd_6m.png)
 
 </details>
 
@@ -1165,22 +1191,24 @@ The removed weight is distributed proportionally across all remaining holdings, 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 416 | 675 | +259 | 4.03% | EUR 0.8950 | 0.1858 | 38 / 17 | 51.65 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
+![ROE1L return histogram](figures/stock_profiles/ROE1L_histogram.png)
+
 ![ROE1L complete technical history](figures/technical_analysis/ROE1L_technical.png)
 
 <details markdown="1">
-<summary>Bollinger Bands, RSI(14) and MACD — last 252 observations</summary>
+<summary>Bollinger Bands, RSI(14) and MACD — last 126 observations (approximately six months)</summary>
 
 **Bollinger Bands**
 
-![ROE1L Bollinger Bands](figures/stock_profiles/ROE1L_bollinger_1y.png)
+![ROE1L Bollinger Bands](figures/stock_profiles/ROE1L_bollinger_6m.png)
 
 **RSI(14)**
 
-![ROE1L RSI(14)](figures/stock_profiles/ROE1L_rsi_1y.png)
+![ROE1L RSI(14)](figures/stock_profiles/ROE1L_rsi_6m.png)
 
 **MACD**
 
-![ROE1L MACD](figures/stock_profiles/ROE1L_macd_1y.png)
+![ROE1L MACD](figures/stock_profiles/ROE1L_macd_6m.png)
 
 </details>
 
@@ -1241,22 +1269,24 @@ The removed weight is distributed proportionally across all remaining holdings, 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 288 | 311 | +23 | 18.93% | EUR 9.1000 | 0.0796 | 29 / 20 | 42.63 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
+![TKM1T return histogram](figures/stock_profiles/TKM1T_histogram.png)
+
 ![TKM1T complete technical history](figures/technical_analysis/TKM1T_technical.png)
 
 <details markdown="1">
-<summary>Bollinger Bands, RSI(14) and MACD — last 252 observations</summary>
+<summary>Bollinger Bands, RSI(14) and MACD — last 126 observations (approximately six months)</summary>
 
 **Bollinger Bands**
 
-![TKM1T Bollinger Bands](figures/stock_profiles/TKM1T_bollinger_1y.png)
+![TKM1T Bollinger Bands](figures/stock_profiles/TKM1T_bollinger_6m.png)
 
 **RSI(14)**
 
-![TKM1T RSI(14)](figures/stock_profiles/TKM1T_rsi_1y.png)
+![TKM1T RSI(14)](figures/stock_profiles/TKM1T_rsi_6m.png)
 
 **MACD**
 
-![TKM1T MACD](figures/stock_profiles/TKM1T_macd_1y.png)
+![TKM1T MACD](figures/stock_profiles/TKM1T_macd_6m.png)
 
 </details>
 
@@ -1317,22 +1347,24 @@ The removed weight is distributed proportionally across all remaining holdings, 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 0 | 47 | +47 | 1.07% | EUR 3.3350 | 0.1062 | 34 / 22 | 43.80 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
+![LHV1T return histogram](figures/stock_profiles/LHV1T_histogram.png)
+
 ![LHV1T complete technical history](figures/technical_analysis/LHV1T_technical.png)
 
 <details markdown="1">
-<summary>Bollinger Bands, RSI(14) and MACD — last 252 observations</summary>
+<summary>Bollinger Bands, RSI(14) and MACD — last 126 observations (approximately six months)</summary>
 
 **Bollinger Bands**
 
-![LHV1T Bollinger Bands](figures/stock_profiles/LHV1T_bollinger_1y.png)
+![LHV1T Bollinger Bands](figures/stock_profiles/LHV1T_bollinger_6m.png)
 
 **RSI(14)**
 
-![LHV1T RSI(14)](figures/stock_profiles/LHV1T_rsi_1y.png)
+![LHV1T RSI(14)](figures/stock_profiles/LHV1T_rsi_6m.png)
 
 **MACD**
 
-![LHV1T MACD](figures/stock_profiles/LHV1T_macd_1y.png)
+![LHV1T MACD](figures/stock_profiles/LHV1T_macd_6m.png)
 
 </details>
 
@@ -1393,22 +1425,24 @@ The removed weight is distributed proportionally across all remaining holdings, 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 0 | 41 | +41 | 0.64% | EUR 2.3300 | 0.0708 | 30 / 22 | 56.23 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
+![CPA1T return histogram](figures/stock_profiles/CPA1T_histogram.png)
+
 ![CPA1T complete technical history](figures/technical_analysis/CPA1T_technical.png)
 
 <details markdown="1">
-<summary>Bollinger Bands, RSI(14) and MACD — last 252 observations</summary>
+<summary>Bollinger Bands, RSI(14) and MACD — last 126 observations (approximately six months)</summary>
 
 **Bollinger Bands**
 
-![CPA1T Bollinger Bands](figures/stock_profiles/CPA1T_bollinger_1y.png)
+![CPA1T Bollinger Bands](figures/stock_profiles/CPA1T_bollinger_6m.png)
 
 **RSI(14)**
 
-![CPA1T RSI(14)](figures/stock_profiles/CPA1T_rsi_1y.png)
+![CPA1T RSI(14)](figures/stock_profiles/CPA1T_rsi_6m.png)
 
 **MACD**
 
-![CPA1T MACD](figures/stock_profiles/CPA1T_macd_1y.png)
+![CPA1T MACD](figures/stock_profiles/CPA1T_macd_6m.png)
 
 </details>
 
@@ -1469,22 +1503,24 @@ The removed weight is distributed proportionally across all remaining holdings, 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 0 | 12 | +12 | 1.67% | EUR 19.4000 | 0.1150 | 36 / 23 | 43.20 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
+![EFT1T return histogram](figures/stock_profiles/EFT1T_histogram.png)
+
 ![EFT1T complete technical history](figures/technical_analysis/EFT1T_technical.png)
 
 <details markdown="1">
-<summary>Bollinger Bands, RSI(14) and MACD — last 252 observations</summary>
+<summary>Bollinger Bands, RSI(14) and MACD — last 126 observations (approximately six months)</summary>
 
 **Bollinger Bands**
 
-![EFT1T Bollinger Bands](figures/stock_profiles/EFT1T_bollinger_1y.png)
+![EFT1T Bollinger Bands](figures/stock_profiles/EFT1T_bollinger_6m.png)
 
 **RSI(14)**
 
-![EFT1T RSI(14)](figures/stock_profiles/EFT1T_rsi_1y.png)
+![EFT1T RSI(14)](figures/stock_profiles/EFT1T_rsi_6m.png)
 
 **MACD**
 
-![EFT1T MACD](figures/stock_profiles/EFT1T_macd_1y.png)
+![EFT1T MACD](figures/stock_profiles/EFT1T_macd_6m.png)
 
 </details>
 
@@ -1545,22 +1581,24 @@ The removed weight is distributed proportionally across all remaining holdings, 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 0 | 157 | +157 | 2.33% | EUR 2.2200 | 0.1681 | 43 / 24 | 45.64 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
+![TEL1L return histogram](figures/stock_profiles/TEL1L_histogram.png)
+
 ![TEL1L complete technical history](figures/technical_analysis/TEL1L_technical.png)
 
 <details markdown="1">
-<summary>Bollinger Bands, RSI(14) and MACD — last 252 observations</summary>
+<summary>Bollinger Bands, RSI(14) and MACD — last 126 observations (approximately six months)</summary>
 
 **Bollinger Bands**
 
-![TEL1L Bollinger Bands](figures/stock_profiles/TEL1L_bollinger_1y.png)
+![TEL1L Bollinger Bands](figures/stock_profiles/TEL1L_bollinger_6m.png)
 
 **RSI(14)**
 
-![TEL1L RSI(14)](figures/stock_profiles/TEL1L_rsi_1y.png)
+![TEL1L RSI(14)](figures/stock_profiles/TEL1L_rsi_6m.png)
 
 **MACD**
 
-![TEL1L MACD](figures/stock_profiles/TEL1L_macd_1y.png)
+![TEL1L MACD](figures/stock_profiles/TEL1L_macd_6m.png)
 
 </details>
 
@@ -1621,22 +1659,24 @@ The removed weight is distributed proportionally across all remaining holdings, 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 0 | 8 | +8 | 0.33% | EUR 5.9000 | 0.0265 | 27 / 24 | 48.74 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
+![MODE return histogram](figures/stock_profiles/MODE_histogram.png)
+
 ![MODE complete technical history](figures/technical_analysis/MODE_technical.png)
 
 <details markdown="1">
-<summary>Bollinger Bands, RSI(14) and MACD — last 252 observations</summary>
+<summary>Bollinger Bands, RSI(14) and MACD — last 126 observations (approximately six months)</summary>
 
 **Bollinger Bands**
 
-![MODE Bollinger Bands](figures/stock_profiles/MODE_bollinger_1y.png)
+![MODE Bollinger Bands](figures/stock_profiles/MODE_bollinger_6m.png)
 
 **RSI(14)**
 
-![MODE RSI(14)](figures/stock_profiles/MODE_rsi_1y.png)
+![MODE RSI(14)](figures/stock_profiles/MODE_rsi_6m.png)
 
 **MACD**
 
-![MODE MACD](figures/stock_profiles/MODE_macd_1y.png)
+![MODE MACD](figures/stock_profiles/MODE_macd_6m.png)
 
 </details>
 
@@ -1697,22 +1737,24 @@ The removed weight is distributed proportionally across all remaining holdings, 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 700 | 1259 | +559 | 5.21% | EUR 0.6200 | 0.0177 | 26 / 24 | 51.82 | Bullish | Inside bands | HOLD | 2026-08-28 |
 
+![TAL1T return histogram](figures/stock_profiles/TAL1T_histogram.png)
+
 ![TAL1T complete technical history](figures/technical_analysis/TAL1T_technical.png)
 
 <details markdown="1">
-<summary>Bollinger Bands, RSI(14) and MACD — last 252 observations</summary>
+<summary>Bollinger Bands, RSI(14) and MACD — last 126 observations (approximately six months)</summary>
 
 **Bollinger Bands**
 
-![TAL1T Bollinger Bands](figures/stock_profiles/TAL1T_bollinger_1y.png)
+![TAL1T Bollinger Bands](figures/stock_profiles/TAL1T_bollinger_6m.png)
 
 **RSI(14)**
 
-![TAL1T RSI(14)](figures/stock_profiles/TAL1T_rsi_1y.png)
+![TAL1T RSI(14)](figures/stock_profiles/TAL1T_rsi_6m.png)
 
 **MACD**
 
-![TAL1T MACD](figures/stock_profiles/TAL1T_macd_1y.png)
+![TAL1T MACD](figures/stock_profiles/TAL1T_macd_6m.png)
 
 </details>
 
@@ -1773,22 +1815,24 @@ The removed weight is distributed proportionally across all remaining holdings, 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 0 | 2 | +2 | 0.21% | EUR 10.8500 | 0.0177 | 28 / 26 | 34.52 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
+![TVE1T return histogram](figures/stock_profiles/TVE1T_histogram.png)
+
 ![TVE1T complete technical history](figures/technical_analysis/TVE1T_technical.png)
 
 <details markdown="1">
-<summary>Bollinger Bands, RSI(14) and MACD — last 252 observations</summary>
+<summary>Bollinger Bands, RSI(14) and MACD — last 126 observations (approximately six months)</summary>
 
 **Bollinger Bands**
 
-![TVE1T Bollinger Bands](figures/stock_profiles/TVE1T_bollinger_1y.png)
+![TVE1T Bollinger Bands](figures/stock_profiles/TVE1T_bollinger_6m.png)
 
 **RSI(14)**
 
-![TVE1T RSI(14)](figures/stock_profiles/TVE1T_rsi_1y.png)
+![TVE1T RSI(14)](figures/stock_profiles/TVE1T_rsi_6m.png)
 
 **MACD**
 
-![TVE1T MACD](figures/stock_profiles/TVE1T_macd_1y.png)
+![TVE1T MACD](figures/stock_profiles/TVE1T_macd_6m.png)
 
 </details>
 
@@ -1849,22 +1893,24 @@ The removed weight is distributed proportionally across all remaining holdings, 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 330 | 330 | +0 | 2.69% | EUR 1.2220 | -0.0177 | 28 / 30 | 30.19 | Bearish | Inside bands | HOLD | 2026-08-28 |
 
+![TSM1T return histogram](figures/stock_profiles/TSM1T_histogram.png)
+
 ![TSM1T complete technical history](figures/technical_analysis/TSM1T_technical.png)
 
 <details markdown="1">
-<summary>Bollinger Bands, RSI(14) and MACD — last 252 observations</summary>
+<summary>Bollinger Bands, RSI(14) and MACD — last 126 observations (approximately six months)</summary>
 
 **Bollinger Bands**
 
-![TSM1T Bollinger Bands](figures/stock_profiles/TSM1T_bollinger_1y.png)
+![TSM1T Bollinger Bands](figures/stock_profiles/TSM1T_bollinger_6m.png)
 
 **RSI(14)**
 
-![TSM1T RSI(14)](figures/stock_profiles/TSM1T_rsi_1y.png)
+![TSM1T RSI(14)](figures/stock_profiles/TSM1T_rsi_6m.png)
 
 **MACD**
 
-![TSM1T MACD](figures/stock_profiles/TSM1T_macd_1y.png)
+![TSM1T MACD](figures/stock_profiles/TSM1T_macd_6m.png)
 
 </details>
 
