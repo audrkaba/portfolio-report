@@ -186,7 +186,12 @@ Select a share to display its allocation, technical indicators, all PerformanceA
 
 </details>
 
+<details markdown="1">
+<summary>Return histogram</summary>
+
 ![MOLNR return histogram](figures/stock_profiles/MOLNR_histogram.png)
+
+</details>
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -254,7 +259,12 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 </details>
 
+<details markdown="1">
+<summary>Return histogram</summary>
+
 ![VLP1L return histogram](figures/stock_profiles/VLP1L_histogram.png)
+
+</details>
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -322,7 +332,12 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 </details>
 
+<details markdown="1">
+<summary>Return histogram</summary>
+
 ![KNE1L return histogram](figures/stock_profiles/KNE1L_histogram.png)
+
+</details>
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -390,7 +405,12 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 </details>
 
+<details markdown="1">
+<summary>Return histogram</summary>
+
 ![MRK1T return histogram](figures/stock_profiles/MRK1T_histogram.png)
+
+</details>
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -458,7 +478,12 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 </details>
 
+<details markdown="1">
+<summary>Return histogram</summary>
+
 ![VIRSI return histogram](figures/stock_profiles/VIRSI_histogram.png)
+
+</details>
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -526,7 +551,12 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 </details>
 
+<details markdown="1">
+<summary>Return histogram</summary>
+
 ![APG1L return histogram](figures/stock_profiles/APG1L_histogram.png)
+
+</details>
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -594,7 +624,12 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 </details>
 
+<details markdown="1">
+<summary>Return histogram</summary>
+
 ![HAE1T return histogram](figures/stock_profiles/HAE1T_histogram.png)
+
+</details>
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -662,7 +697,12 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 </details>
 
+<details markdown="1">
+<summary>Return histogram</summary>
+
 ![SAF1R return histogram](figures/stock_profiles/SAF1R_histogram.png)
+
+</details>
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -730,7 +770,12 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 </details>
 
+<details markdown="1">
+<summary>Return histogram</summary>
+
 ![GRG1L return histogram](figures/stock_profiles/GRG1L_histogram.png)
+
+</details>
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -798,7 +843,12 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 </details>
 
+<details markdown="1">
+<summary>Return histogram</summary>
+
 ![RSU1L return histogram](figures/stock_profiles/RSU1L_histogram.png)
+
+</details>
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -866,7 +916,12 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 </details>
 
+<details markdown="1">
+<summary>Return histogram</summary>
+
 ![IGN1L return histogram](figures/stock_profiles/IGN1L_histogram.png)
+
+</details>
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -934,7 +989,12 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 </details>
 
+<details markdown="1">
+<summary>Return histogram</summary>
+
 ![AKO1L return histogram](figures/stock_profiles/AKO1L_histogram.png)
+
+</details>
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -1002,7 +1062,12 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 </details>
 
+<details markdown="1">
+<summary>Return histogram</summary>
+
 ![PZV1L return histogram](figures/stock_profiles/PZV1L_histogram.png)
+
+</details>
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -1070,7 +1135,12 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 </details>
 
+<details markdown="1">
+<summary>Return histogram</summary>
+
 ![ROE1L return histogram](figures/stock_profiles/ROE1L_histogram.png)
+
+</details>
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -1138,7 +1208,12 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 </details>
 
+<details markdown="1">
+<summary>Return histogram</summary>
+
 ![LHV1T return histogram](figures/stock_profiles/LHV1T_histogram.png)
+
+</details>
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -1206,7 +1281,12 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 </details>
 
+<details markdown="1">
+<summary>Return histogram</summary>
+
 ![TKM1T return histogram](figures/stock_profiles/TKM1T_histogram.png)
+
+</details>
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -1274,7 +1354,12 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 </details>
 
+<details markdown="1">
+<summary>Return histogram</summary>
+
 ![EFT1T return histogram](figures/stock_profiles/EFT1T_histogram.png)
+
+</details>
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -1342,7 +1427,12 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 </details>
 
+<details markdown="1">
+<summary>Return histogram</summary>
+
 ![TEL1L return histogram](figures/stock_profiles/TEL1L_histogram.png)
+
+</details>
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -1410,7 +1500,12 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 </details>
 
+<details markdown="1">
+<summary>Return histogram</summary>
+
 ![CPA1T return histogram](figures/stock_profiles/CPA1T_histogram.png)
+
+</details>
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -1478,7 +1573,12 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 </details>
 
+<details markdown="1">
+<summary>Return histogram</summary>
+
 ![MODE return histogram](figures/stock_profiles/MODE_histogram.png)
+
+</details>
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -1546,7 +1646,12 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 </details>
 
+<details markdown="1">
+<summary>Return histogram</summary>
+
 ![TAL1T return histogram](figures/stock_profiles/TAL1T_histogram.png)
+
+</details>
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -1614,7 +1719,12 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 </details>
 
+<details markdown="1">
+<summary>Return histogram</summary>
+
 ![TVE1T return histogram](figures/stock_profiles/TVE1T_histogram.png)
+
+</details>
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -1682,7 +1792,12 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 </details>
 
+<details markdown="1">
+<summary>Return histogram</summary>
+
 ![TSM1T return histogram](figures/stock_profiles/TSM1T_histogram.png)
+
+</details>
 
 <details markdown="1">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
