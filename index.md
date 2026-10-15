@@ -187,6 +187,8 @@ Select a share to display its allocation, technical indicators, all PerformanceA
 
 ![MOLNR combined technical indicators](figures/stock_profiles/MOLNR_technicals_6m.png)
 
+Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations.
+
 </details>
 
 <details markdown="1">
@@ -255,6 +257,8 @@ The removed weight is distributed proportionally across all remaining holdings, 
 <summary>Bollinger Bands, RSI(14) and MACD — last 126 observations (approximately six months)</summary>
 
 ![VLP1L combined technical indicators](figures/stock_profiles/VLP1L_technicals_6m.png)
+
+Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations.
 
 </details>
 
@@ -325,6 +329,8 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 ![KNE1L combined technical indicators](figures/stock_profiles/KNE1L_technicals_6m.png)
 
+Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations.
+
 </details>
 
 <details markdown="1">
@@ -393,6 +399,8 @@ The removed weight is distributed proportionally across all remaining holdings, 
 <summary>Bollinger Bands, RSI(14) and MACD — last 126 observations (approximately six months)</summary>
 
 ![MRK1T combined technical indicators](figures/stock_profiles/MRK1T_technicals_6m.png)
+
+Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations.
 
 </details>
 
@@ -463,6 +471,8 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 ![VIRSI combined technical indicators](figures/stock_profiles/VIRSI_technicals_6m.png)
 
+Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations.
+
 </details>
 
 <details markdown="1">
@@ -531,6 +541,8 @@ The removed weight is distributed proportionally across all remaining holdings, 
 <summary>Bollinger Bands, RSI(14) and MACD — last 126 observations (approximately six months)</summary>
 
 ![APG1L combined technical indicators](figures/stock_profiles/APG1L_technicals_6m.png)
+
+Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations.
 
 </details>
 
@@ -601,6 +613,8 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 ![HAE1T combined technical indicators](figures/stock_profiles/HAE1T_technicals_6m.png)
 
+Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations.
+
 </details>
 
 <details markdown="1">
@@ -669,6 +683,8 @@ The removed weight is distributed proportionally across all remaining holdings, 
 <summary>Bollinger Bands, RSI(14) and MACD — last 126 observations (approximately six months)</summary>
 
 ![SAF1R combined technical indicators](figures/stock_profiles/SAF1R_technicals_6m.png)
+
+Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations.
 
 </details>
 
@@ -739,6 +755,8 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 ![GRG1L combined technical indicators](figures/stock_profiles/GRG1L_technicals_6m.png)
 
+Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations.
+
 </details>
 
 <details markdown="1">
@@ -807,6 +825,8 @@ The removed weight is distributed proportionally across all remaining holdings, 
 <summary>Bollinger Bands, RSI(14) and MACD — last 126 observations (approximately six months)</summary>
 
 ![RSU1L combined technical indicators](figures/stock_profiles/RSU1L_technicals_6m.png)
+
+Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations.
 
 </details>
 
@@ -877,6 +897,8 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 ![IGN1L combined technical indicators](figures/stock_profiles/IGN1L_technicals_6m.png)
 
+Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations.
+
 </details>
 
 <details markdown="1">
@@ -945,6 +967,8 @@ The removed weight is distributed proportionally across all remaining holdings, 
 <summary>Bollinger Bands, RSI(14) and MACD — last 126 observations (approximately six months)</summary>
 
 ![AKO1L combined technical indicators](figures/stock_profiles/AKO1L_technicals_6m.png)
+
+Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations.
 
 </details>
 
@@ -1015,6 +1039,8 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 ![PZV1L combined technical indicators](figures/stock_profiles/PZV1L_technicals_6m.png)
 
+Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations.
+
 </details>
 
 <details markdown="1">
@@ -1083,6 +1109,8 @@ The removed weight is distributed proportionally across all remaining holdings, 
 <summary>Bollinger Bands, RSI(14) and MACD — last 126 observations (approximately six months)</summary>
 
 ![ROE1L combined technical indicators](figures/stock_profiles/ROE1L_technicals_6m.png)
+
+Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations.
 
 </details>
 
@@ -1153,6 +1181,8 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 ![LHV1T combined technical indicators](figures/stock_profiles/LHV1T_technicals_6m.png)
 
+Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations.
+
 </details>
 
 <details markdown="1">
@@ -1221,6 +1251,8 @@ The removed weight is distributed proportionally across all remaining holdings, 
 <summary>Bollinger Bands, RSI(14) and MACD — last 126 observations (approximately six months)</summary>
 
 ![TKM1T combined technical indicators](figures/stock_profiles/TKM1T_technicals_6m.png)
+
+Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations.
 
 </details>
 
@@ -1291,6 +1323,8 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 ![EFT1T combined technical indicators](figures/stock_profiles/EFT1T_technicals_6m.png)
 
+Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations.
+
 </details>
 
 <details markdown="1">
@@ -1359,6 +1393,8 @@ The removed weight is distributed proportionally across all remaining holdings, 
 <summary>Bollinger Bands, RSI(14) and MACD — last 126 observations (approximately six months)</summary>
 
 ![TEL1L combined technical indicators](figures/stock_profiles/TEL1L_technicals_6m.png)
+
+Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations.
 
 </details>
 
@@ -1429,6 +1465,8 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 ![CPA1T combined technical indicators](figures/stock_profiles/CPA1T_technicals_6m.png)
 
+Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations.
+
 </details>
 
 <details markdown="1">
@@ -1497,6 +1535,8 @@ The removed weight is distributed proportionally across all remaining holdings, 
 <summary>Bollinger Bands, RSI(14) and MACD — last 126 observations (approximately six months)</summary>
 
 ![MODE combined technical indicators](figures/stock_profiles/MODE_technicals_6m.png)
+
+Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations.
 
 </details>
 
@@ -1567,6 +1607,8 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 ![TAL1T combined technical indicators](figures/stock_profiles/TAL1T_technicals_6m.png)
 
+Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations.
+
 </details>
 
 <details markdown="1">
@@ -1636,6 +1678,8 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 ![TVE1T combined technical indicators](figures/stock_profiles/TVE1T_technicals_6m.png)
 
+Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations.
+
 </details>
 
 <details markdown="1">
@@ -1704,6 +1748,8 @@ The removed weight is distributed proportionally across all remaining holdings, 
 <summary>Bollinger Bands, RSI(14) and MACD — last 126 observations (approximately six months)</summary>
 
 ![TSM1T combined technical indicators](figures/stock_profiles/TSM1T_technicals_6m.png)
+
+Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations.
 
 </details>
 
