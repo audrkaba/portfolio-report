@@ -44,7 +44,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan — updated 2026-10-15 16:22 (Europe/Vilnius)
+# Baltic investment plan — updated 2026-10-15 16:39 (Europe/Vilnius)
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -266,11 +266,11 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
-**Adding this share to the current portfolio**
+**Adding this new share to the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>Added shares</td><td>0</td><td>27</td><td>+27</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8554.680041</td><td>510.299990</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.601770</td><td>0.150442</td></tr><tr><td>OUT</td><td>59</td><td>72</td><td>+13</td></tr><tr><td>IN</td><td>8</td><td>4</td><td>-4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.177707</td><td>0.117316</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.121332</td><td>0.024886</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>MOLNR shares</td><td>0</td><td>27</td><td>+27</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8554.680041</td><td>510.299990</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.601770</td><td>0.150442</td></tr><tr><td>OUT</td><td>59</td><td>72</td><td>+13</td></tr><tr><td>IN</td><td>8</td><td>4</td><td>-4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.177707</td><td>0.117316</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.121332</td><td>0.024886</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio. Only this share is added, using the quantity shown as Change in Table 3A; all existing holdings remain unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 MOLNR shares. The scenario adds 27 shares from Table 3A, resulting in 27 shares; every other holding remains unchanged.
 
 </details>
 
@@ -361,11 +361,11 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
-**Adding this share to the current portfolio**
+**Increasing this existing position in the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>Added shares</td><td>0</td><td>27</td><td>+27</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8462.880051</td><td>418.500000</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.539823</td><td>0.088496</td></tr><tr><td>OUT</td><td>59</td><td>66</td><td>+7</td></tr><tr><td>IN</td><td>8</td><td>5</td><td>-3</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.074459</td><td>0.014068</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.112474</td><td>0.016028</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>VLP1L shares</td><td>42</td><td>69</td><td>+27</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8462.880051</td><td>418.500000</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.539823</td><td>0.088496</td></tr><tr><td>OUT</td><td>59</td><td>66</td><td>+7</td></tr><tr><td>IN</td><td>8</td><td>5</td><td>-3</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.074459</td><td>0.014068</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.112474</td><td>0.016028</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio. Only this share is added, using the quantity shown as Change in Table 3A; all existing holdings remain unchanged.
+The starting point is the unmodified current portfolio, which already contains 42 VLP1L shares. The scenario adds 27 shares from Table 3A, resulting in 69 shares; every other holding remains unchanged.
 
 </details>
 
@@ -456,11 +456,11 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
-**Adding this share to the current portfolio**
+**Adding this new share to the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>Added shares</td><td>0</td><td>1438</td><td>+1438</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8751.876070</td><td>707.496020</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.566372</td><td>0.115044</td></tr><tr><td>OUT</td><td>59</td><td>68</td><td>+9</td></tr><tr><td>IN</td><td>8</td><td>4</td><td>-4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.071459</td><td>0.011069</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.112131</td><td>0.015685</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>KNE1L shares</td><td>0</td><td>1438</td><td>+1438</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8751.876070</td><td>707.496020</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.566372</td><td>0.115044</td></tr><tr><td>OUT</td><td>59</td><td>68</td><td>+9</td></tr><tr><td>IN</td><td>8</td><td>4</td><td>-4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.071459</td><td>0.011069</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.112131</td><td>0.015685</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio. Only this share is added, using the quantity shown as Change in Table 3A; all existing holdings remain unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 KNE1L shares. The scenario adds 1438 shares from Table 3A, resulting in 1438 shares; every other holding remains unchanged.
 
 </details>
 
@@ -551,11 +551,11 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
-**Adding this share to the current portfolio**
+**Increasing this existing position in the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>Added shares</td><td>0</td><td>22</td><td>+22</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8636.180043</td><td>591.799992</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.548673</td><td>0.097345</td></tr><tr><td>OUT</td><td>59</td><td>66</td><td>+7</td></tr><tr><td>IN</td><td>8</td><td>4</td><td>-4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.082185</td><td>0.021795</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.107872</td><td>0.011426</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>MRK1T shares</td><td>20</td><td>42</td><td>+22</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8636.180043</td><td>591.799992</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.548673</td><td>0.097345</td></tr><tr><td>OUT</td><td>59</td><td>66</td><td>+7</td></tr><tr><td>IN</td><td>8</td><td>4</td><td>-4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.082185</td><td>0.021795</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.107872</td><td>0.011426</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio. Only this share is added, using the quantity shown as Change in Table 3A; all existing holdings remain unchanged.
+The starting point is the unmodified current portfolio, which already contains 20 MRK1T shares. The scenario adds 22 shares from Table 3A, resulting in 42 shares; every other holding remains unchanged.
 
 </details>
 
@@ -646,11 +646,11 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
-**Adding this share to the current portfolio**
+**Adding this new share to the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>Added shares</td><td>0</td><td>44</td><td>+44</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8237.100051</td><td>192.720000</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.424779</td><td>-0.026549</td></tr><tr><td>OUT</td><td>59</td><td>60</td><td>+1</td></tr><tr><td>IN</td><td>8</td><td>12</td><td>+4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.059883</td><td>-0.000507</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.096263</td><td>-0.000182</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>VIRSI shares</td><td>0</td><td>44</td><td>+44</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8237.100051</td><td>192.720000</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.424779</td><td>-0.026549</td></tr><tr><td>OUT</td><td>59</td><td>60</td><td>+1</td></tr><tr><td>IN</td><td>8</td><td>12</td><td>+4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.059883</td><td>-0.000507</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.096263</td><td>-0.000182</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio. Only this share is added, using the quantity shown as Change in Table 3A; all existing holdings remain unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 VIRSI shares. The scenario adds 44 shares from Table 3A, resulting in 44 shares; every other holding remains unchanged.
 
 </details>
 
@@ -741,11 +741,11 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
-**Adding this share to the current portfolio**
+**Increasing this existing position in the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>Added shares</td><td>0</td><td>54</td><td>+54</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8259.300052</td><td>214.920001</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.504425</td><td>0.053097</td></tr><tr><td>OUT</td><td>59</td><td>62</td><td>+3</td></tr><tr><td>IN</td><td>8</td><td>5</td><td>-3</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.056123</td><td>-0.004268</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.100009</td><td>0.003563</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>APG1L shares</td><td>200</td><td>254</td><td>+54</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8259.300052</td><td>214.920001</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.504425</td><td>0.053097</td></tr><tr><td>OUT</td><td>59</td><td>62</td><td>+3</td></tr><tr><td>IN</td><td>8</td><td>5</td><td>-3</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.056123</td><td>-0.004268</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.100009</td><td>0.003563</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio. Only this share is added, using the quantity shown as Change in Table 3A; all existing holdings remain unchanged.
+The starting point is the unmodified current portfolio, which already contains 200 APG1L shares. The scenario adds 54 shares from Table 3A, resulting in 254 shares; every other holding remains unchanged.
 
 </details>
 
@@ -836,11 +836,11 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
-**Adding this share to the current portfolio**
+**Increasing this existing position in the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>Added shares</td><td>0</td><td>47</td><td>+47</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8285.960045</td><td>241.579994</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.424779</td><td>-0.026549</td></tr><tr><td>OUT</td><td>59</td><td>60</td><td>+1</td></tr><tr><td>IN</td><td>8</td><td>12</td><td>+4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.062031</td><td>0.001641</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.095905</td><td>-0.000541</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>HAE1T shares</td><td>100</td><td>147</td><td>+47</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8285.960045</td><td>241.579994</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.424779</td><td>-0.026549</td></tr><tr><td>OUT</td><td>59</td><td>60</td><td>+1</td></tr><tr><td>IN</td><td>8</td><td>12</td><td>+4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.062031</td><td>0.001641</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.095905</td><td>-0.000541</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio. Only this share is added, using the quantity shown as Change in Table 3A; all existing holdings remain unchanged.
+The starting point is the unmodified current portfolio, which already contains 100 HAE1T shares. The scenario adds 47 shares from Table 3A, resulting in 147 shares; every other holding remains unchanged.
 
 </details>
 
@@ -931,11 +931,11 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
-**Adding this share to the current portfolio**
+**Increasing this existing position in the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>Added shares</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8044.380051</td><td>0.000000</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.451327</td><td>0.000000</td></tr><tr><td>OUT</td><td>59</td><td>59</td><td>+0</td></tr><tr><td>IN</td><td>8</td><td>8</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.060390</td><td>0.000000</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.096446</td><td>0.000000</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>SAF1R shares</td><td>100</td><td>100</td><td>+0</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8044.380051</td><td>0.000000</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.451327</td><td>0.000000</td></tr><tr><td>OUT</td><td>59</td><td>59</td><td>+0</td></tr><tr><td>IN</td><td>8</td><td>8</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.060390</td><td>0.000000</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.096446</td><td>0.000000</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio. Only this share is added, using the quantity shown as Change in Table 3A; all existing holdings remain unchanged.
+The starting point is the unmodified current portfolio, which already contains 100 SAF1R shares. The scenario adds 0 shares from Table 3A, resulting in 100 shares; every other holding remains unchanged.
 
 </details>
 
@@ -1026,11 +1026,11 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
-**Adding this share to the current portfolio**
+**Adding this new share to the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>Added shares</td><td>0</td><td>519</td><td>+519</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8568.570046</td><td>524.189995</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.530973</td><td>0.079646</td></tr><tr><td>OUT</td><td>59</td><td>64</td><td>+5</td></tr><tr><td>IN</td><td>8</td><td>4</td><td>-4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.064156</td><td>0.003765</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.102431</td><td>0.005985</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>GRG1L shares</td><td>0</td><td>519</td><td>+519</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8568.570046</td><td>524.189995</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.530973</td><td>0.079646</td></tr><tr><td>OUT</td><td>59</td><td>64</td><td>+5</td></tr><tr><td>IN</td><td>8</td><td>4</td><td>-4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.064156</td><td>0.003765</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.102431</td><td>0.005985</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio. Only this share is added, using the quantity shown as Change in Table 3A; all existing holdings remain unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 GRG1L shares. The scenario adds 519 shares from Table 3A, resulting in 519 shares; every other holding remains unchanged.
 
 </details>
 
@@ -1121,11 +1121,11 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
-**Adding this share to the current portfolio**
+**Adding this new share to the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>Added shares</td><td>0</td><td>149</td><td>+149</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8723.820042</td><td>679.439991</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.530973</td><td>0.079646</td></tr><tr><td>OUT</td><td>59</td><td>64</td><td>+5</td></tr><tr><td>IN</td><td>8</td><td>4</td><td>-4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.057379</td><td>-0.003012</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.105238</td><td>0.008793</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>RSU1L shares</td><td>0</td><td>149</td><td>+149</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8723.820042</td><td>679.439991</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.530973</td><td>0.079646</td></tr><tr><td>OUT</td><td>59</td><td>64</td><td>+5</td></tr><tr><td>IN</td><td>8</td><td>4</td><td>-4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.057379</td><td>-0.003012</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.105238</td><td>0.008793</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio. Only this share is added, using the quantity shown as Change in Table 3A; all existing holdings remain unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 RSU1L shares. The scenario adds 149 shares from Table 3A, resulting in 149 shares; every other holding remains unchanged.
 
 </details>
 
@@ -1216,11 +1216,11 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
-**Adding this share to the current portfolio**
+**Adding this new share to the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>Added shares</td><td>0</td><td>6</td><td>+6</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8176.980053</td><td>132.600002</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.424779</td><td>-0.026549</td></tr><tr><td>OUT</td><td>59</td><td>60</td><td>+1</td></tr><tr><td>IN</td><td>8</td><td>12</td><td>+4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.061430</td><td>0.001039</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.097014</td><td>0.000568</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>IGN1L shares</td><td>0</td><td>6</td><td>+6</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8176.980053</td><td>132.600002</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.424779</td><td>-0.026549</td></tr><tr><td>OUT</td><td>59</td><td>60</td><td>+1</td></tr><tr><td>IN</td><td>8</td><td>12</td><td>+4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.061430</td><td>0.001039</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.097014</td><td>0.000568</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio. Only this share is added, using the quantity shown as Change in Table 3A; all existing holdings remain unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 IGN1L shares. The scenario adds 6 shares from Table 3A, resulting in 6 shares; every other holding remains unchanged.
 
 </details>
 
@@ -1311,11 +1311,11 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
-**Adding this share to the current portfolio**
+**Adding this new share to the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>Added shares</td><td>0</td><td>111</td><td>+111</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8240.850049</td><td>196.469998</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.495575</td><td>0.044248</td></tr><tr><td>OUT</td><td>59</td><td>62</td><td>+3</td></tr><tr><td>IN</td><td>8</td><td>6</td><td>-2</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.057397</td><td>-0.002993</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.098120</td><td>0.001675</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>AKO1L shares</td><td>0</td><td>111</td><td>+111</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8240.850049</td><td>196.469998</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.495575</td><td>0.044248</td></tr><tr><td>OUT</td><td>59</td><td>62</td><td>+3</td></tr><tr><td>IN</td><td>8</td><td>6</td><td>-2</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.057397</td><td>-0.002993</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.098120</td><td>0.001675</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio. Only this share is added, using the quantity shown as Change in Table 3A; all existing holdings remain unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 AKO1L shares. The scenario adds 111 shares from Table 3A, resulting in 111 shares; every other holding remains unchanged.
 
 </details>
 
@@ -1406,11 +1406,11 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
-**Adding this share to the current portfolio**
+**Adding this new share to the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>Added shares</td><td>0</td><td>30</td><td>+30</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8096.280051</td><td>51.900001</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.495575</td><td>0.044248</td></tr><tr><td>OUT</td><td>59</td><td>62</td><td>+3</td></tr><tr><td>IN</td><td>8</td><td>6</td><td>-2</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.061808</td><td>0.001418</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.097267</td><td>0.000822</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>PZV1L shares</td><td>0</td><td>30</td><td>+30</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8096.280051</td><td>51.900001</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.495575</td><td>0.044248</td></tr><tr><td>OUT</td><td>59</td><td>62</td><td>+3</td></tr><tr><td>IN</td><td>8</td><td>6</td><td>-2</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.061808</td><td>0.001418</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.097267</td><td>0.000822</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio. Only this share is added, using the quantity shown as Change in Table 3A; all existing holdings remain unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 PZV1L shares. The scenario adds 30 shares from Table 3A, resulting in 30 shares; every other holding remains unchanged.
 
 </details>
 
@@ -1501,11 +1501,11 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
-**Adding this share to the current portfolio**
+**Increasing this existing position in the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>Added shares</td><td>0</td><td>490</td><td>+490</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8482.930042</td><td>438.549991</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.424779</td><td>-0.026549</td></tr><tr><td>OUT</td><td>59</td><td>60</td><td>+1</td></tr><tr><td>IN</td><td>8</td><td>12</td><td>+4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.063878</td><td>0.003487</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.098405</td><td>0.001959</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>ROE1L shares</td><td>416</td><td>906</td><td>+490</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8482.930042</td><td>438.549991</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.424779</td><td>-0.026549</td></tr><tr><td>OUT</td><td>59</td><td>60</td><td>+1</td></tr><tr><td>IN</td><td>8</td><td>12</td><td>+4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.063878</td><td>0.003487</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.098405</td><td>0.001959</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio. Only this share is added, using the quantity shown as Change in Table 3A; all existing holdings remain unchanged.
+The starting point is the unmodified current portfolio, which already contains 416 ROE1L shares. The scenario adds 490 shares from Table 3A, resulting in 906 shares; every other holding remains unchanged.
 
 </details>
 
@@ -1596,11 +1596,11 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
-**Adding this share to the current portfolio**
+**Increasing this existing position in the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>Added shares</td><td>0</td><td>27</td><td>+27</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8290.080061</td><td>245.700010</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.424779</td><td>-0.026549</td></tr><tr><td>OUT</td><td>59</td><td>60</td><td>+1</td></tr><tr><td>IN</td><td>8</td><td>12</td><td>+4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.054719</td><td>-0.005671</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.094497</td><td>-0.001948</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>TKM1T shares</td><td>288</td><td>315</td><td>+27</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8290.080061</td><td>245.700010</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.424779</td><td>-0.026549</td></tr><tr><td>OUT</td><td>59</td><td>60</td><td>+1</td></tr><tr><td>IN</td><td>8</td><td>12</td><td>+4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.054719</td><td>-0.005671</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.094497</td><td>-0.001948</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio. Only this share is added, using the quantity shown as Change in Table 3A; all existing holdings remain unchanged.
+The starting point is the unmodified current portfolio, which already contains 288 TKM1T shares. The scenario adds 27 shares from Table 3A, resulting in 315 shares; every other holding remains unchanged.
 
 </details>
 
@@ -1691,11 +1691,11 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
-**Adding this share to the current portfolio**
+**Adding this new share to the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>Added shares</td><td>0</td><td>23</td><td>+23</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8490.580042</td><td>446.199991</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.442478</td><td>-0.008850</td></tr><tr><td>OUT</td><td>59</td><td>60</td><td>+1</td></tr><tr><td>IN</td><td>8</td><td>10</td><td>+2</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.059115</td><td>-0.001275</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.096133</td><td>-0.000312</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>EFT1T shares</td><td>0</td><td>23</td><td>+23</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8490.580042</td><td>446.199991</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.442478</td><td>-0.008850</td></tr><tr><td>OUT</td><td>59</td><td>60</td><td>+1</td></tr><tr><td>IN</td><td>8</td><td>10</td><td>+2</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.059115</td><td>-0.001275</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.096133</td><td>-0.000312</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio. Only this share is added, using the quantity shown as Change in Table 3A; all existing holdings remain unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 EFT1T shares. The scenario adds 23 shares from Table 3A, resulting in 23 shares; every other holding remains unchanged.
 
 </details>
 
@@ -1786,11 +1786,11 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
-**Adding this share to the current portfolio**
+**Adding this new share to the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>Added shares</td><td>0</td><td>101</td><td>+101</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8268.600054</td><td>224.220003</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.424779</td><td>-0.026549</td></tr><tr><td>OUT</td><td>59</td><td>60</td><td>+1</td></tr><tr><td>IN</td><td>8</td><td>12</td><td>+4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.058366</td><td>-0.002024</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.096853</td><td>0.000408</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>TEL1L shares</td><td>0</td><td>101</td><td>+101</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8268.600054</td><td>224.220003</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.424779</td><td>-0.026549</td></tr><tr><td>OUT</td><td>59</td><td>60</td><td>+1</td></tr><tr><td>IN</td><td>8</td><td>12</td><td>+4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.058366</td><td>-0.002024</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.096853</td><td>0.000408</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio. Only this share is added, using the quantity shown as Change in Table 3A; all existing holdings remain unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 TEL1L shares. The scenario adds 101 shares from Table 3A, resulting in 101 shares; every other holding remains unchanged.
 
 </details>
 
@@ -1881,11 +1881,11 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
-**Adding this share to the current portfolio**
+**Adding this new share to the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>Added shares</td><td>0</td><td>12</td><td>+12</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8072.340050</td><td>27.959999</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.415929</td><td>-0.035398</td></tr><tr><td>OUT</td><td>59</td><td>59</td><td>+0</td></tr><tr><td>IN</td><td>8</td><td>12</td><td>+4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.061094</td><td>0.000704</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.096298</td><td>-0.000148</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>CPA1T shares</td><td>0</td><td>12</td><td>+12</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8072.340050</td><td>27.959999</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.415929</td><td>-0.035398</td></tr><tr><td>OUT</td><td>59</td><td>59</td><td>+0</td></tr><tr><td>IN</td><td>8</td><td>12</td><td>+4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.061094</td><td>0.000704</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.096298</td><td>-0.000148</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio. Only this share is added, using the quantity shown as Change in Table 3A; all existing holdings remain unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 CPA1T shares. The scenario adds 12 shares from Table 3A, resulting in 12 shares; every other holding remains unchanged.
 
 </details>
 
@@ -1976,11 +1976,11 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
-**Adding this share to the current portfolio**
+**Adding this new share to the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>Added shares</td><td>0</td><td>89</td><td>+89</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8569.480059</td><td>525.100008</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.513274</td><td>0.061947</td></tr><tr><td>OUT</td><td>59</td><td>64</td><td>+5</td></tr><tr><td>IN</td><td>8</td><td>6</td><td>-2</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.059146</td><td>-0.001244</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.101345</td><td>0.004900</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>MODE shares</td><td>0</td><td>89</td><td>+89</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8569.480059</td><td>525.100008</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.513274</td><td>0.061947</td></tr><tr><td>OUT</td><td>59</td><td>64</td><td>+5</td></tr><tr><td>IN</td><td>8</td><td>6</td><td>-2</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.059146</td><td>-0.001244</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.101345</td><td>0.004900</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio. Only this share is added, using the quantity shown as Change in Table 3A; all existing holdings remain unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 MODE shares. The scenario adds 89 shares from Table 3A, resulting in 89 shares; every other holding remains unchanged.
 
 </details>
 
@@ -2071,11 +2071,11 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
-**Adding this share to the current portfolio**
+**Increasing this existing position in the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>Added shares</td><td>0</td><td>209</td><td>+209</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8173.960052</td><td>129.580001</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.424779</td><td>-0.026549</td></tr><tr><td>OUT</td><td>59</td><td>60</td><td>+1</td></tr><tr><td>IN</td><td>8</td><td>12</td><td>+4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.057263</td><td>-0.003127</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.096608</td><td>0.000162</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>TAL1T shares</td><td>700</td><td>909</td><td>+209</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8173.960052</td><td>129.580001</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.424779</td><td>-0.026549</td></tr><tr><td>OUT</td><td>59</td><td>60</td><td>+1</td></tr><tr><td>IN</td><td>8</td><td>12</td><td>+4</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.057263</td><td>-0.003127</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.096608</td><td>0.000162</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio. Only this share is added, using the quantity shown as Change in Table 3A; all existing holdings remain unchanged.
+The starting point is the unmodified current portfolio, which already contains 700 TAL1T shares. The scenario adds 209 shares from Table 3A, resulting in 909 shares; every other holding remains unchanged.
 
 </details>
 
@@ -2166,11 +2166,11 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
-**Adding this share to the current portfolio**
+**Adding this new share to the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>Added shares</td><td>0</td><td>35</td><td>+35</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8424.130064</td><td>379.750013</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.442478</td><td>-0.008850</td></tr><tr><td>OUT</td><td>59</td><td>60</td><td>+1</td></tr><tr><td>IN</td><td>8</td><td>10</td><td>+2</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.063094</td><td>0.002704</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.094235</td><td>-0.002210</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>TVE1T shares</td><td>0</td><td>35</td><td>+35</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8424.130064</td><td>379.750013</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.442478</td><td>-0.008850</td></tr><tr><td>OUT</td><td>59</td><td>60</td><td>+1</td></tr><tr><td>IN</td><td>8</td><td>10</td><td>+2</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.063094</td><td>0.002704</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.094235</td><td>-0.002210</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio. Only this share is added, using the quantity shown as Change in Table 3A; all existing holdings remain unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 TVE1T shares. The scenario adds 35 shares from Table 3A, resulting in 35 shares; every other holding remains unchanged.
 
 </details>
 
@@ -2261,11 +2261,11 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
-**Adding this share to the current portfolio**
+**Increasing this existing position in the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>Added shares</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8044.380051</td><td>0.000000</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.451327</td><td>0.000000</td></tr><tr><td>OUT</td><td>59</td><td>59</td><td>+0</td></tr><tr><td>IN</td><td>8</td><td>8</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.060390</td><td>0.000000</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.096446</td><td>0.000000</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>TSM1T shares</td><td>330</td><td>330</td><td>+0</td></tr><tr><td>Portfolio value, EUR</td><td>8044.380051</td><td>8044.380051</td><td>0.000000</td></tr><tr><td>netSD</td><td>0.451327</td><td>0.451327</td><td>0.000000</td></tr><tr><td>OUT</td><td>59</td><td>59</td><td>+0</td></tr><tr><td>IN</td><td>8</td><td>8</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.060390</td><td>1.060390</td><td>0.000000</td></tr><tr><td>Sortino ratio</td><td>0.096446</td><td>0.096446</td><td>0.000000</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio. Only this share is added, using the quantity shown as Change in Table 3A; all existing holdings remain unchanged.
+The starting point is the unmodified current portfolio, which already contains 330 TSM1T shares. The scenario adds 0 shares from Table 3A, resulting in 330 shares; every other holding remains unchanged.
 
 </details>
 
