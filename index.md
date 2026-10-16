@@ -44,7 +44,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-16 09:13 (Europe/Vilnius); market data through 2026-10-14
+# Baltic investment plan - updated 2026-10-16 09:27 (Europe/Vilnius); market data through 2026-10-14
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -214,11 +214,11 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 </details>
 
 <details markdown="1">
-<summary>Mean-SD frontier with this share highlighted</summary>
+<summary>All five model frontiers with this share highlighted</summary>
 
-![KNE1L mean-SD frontier](figures/stock_profiles/KNE1L_frontier.png)
+![KNE1L Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/KNE1L_all_frontiers.png)
 
-The highlighted circle is the selected share; diamonds are portfolios and pale circles are the remaining shares.
+The highlighted circle is the selected share and pale circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. In the Robust panel, the individual-share point uses empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR.
 
 </details>
 
@@ -318,11 +318,11 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 </details>
 
 <details markdown="1">
-<summary>Mean-SD frontier with this share highlighted</summary>
+<summary>All five model frontiers with this share highlighted</summary>
 
-![VIRSI mean-SD frontier](figures/stock_profiles/VIRSI_frontier.png)
+![VIRSI Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/VIRSI_all_frontiers.png)
 
-The highlighted circle is the selected share; diamonds are portfolios and pale circles are the remaining shares.
+The highlighted circle is the selected share and pale circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. In the Robust panel, the individual-share point uses empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR.
 
 </details>
 
@@ -422,11 +422,11 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 </details>
 
 <details markdown="1">
-<summary>Mean-SD frontier with this share highlighted</summary>
+<summary>All five model frontiers with this share highlighted</summary>
 
-![VLP1L mean-SD frontier](figures/stock_profiles/VLP1L_frontier.png)
+![VLP1L Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/VLP1L_all_frontiers.png)
 
-The highlighted circle is the selected share; diamonds are portfolios and pale circles are the remaining shares.
+The highlighted circle is the selected share and pale circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. In the Robust panel, the individual-share point uses empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR.
 
 </details>
 
@@ -526,11 +526,11 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 </details>
 
 <details markdown="1">
-<summary>Mean-SD frontier with this share highlighted</summary>
+<summary>All five model frontiers with this share highlighted</summary>
 
-![MRK1T mean-SD frontier](figures/stock_profiles/MRK1T_frontier.png)
+![MRK1T Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/MRK1T_all_frontiers.png)
 
-The highlighted circle is the selected share; diamonds are portfolios and pale circles are the remaining shares.
+The highlighted circle is the selected share and pale circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. In the Robust panel, the individual-share point uses empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR.
 
 </details>
 
@@ -630,11 +630,11 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 </details>
 
 <details markdown="1">
-<summary>Mean-SD frontier with this share highlighted</summary>
+<summary>All five model frontiers with this share highlighted</summary>
 
-![MOLNR mean-SD frontier](figures/stock_profiles/MOLNR_frontier.png)
+![MOLNR Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/MOLNR_all_frontiers.png)
 
-The highlighted circle is the selected share; diamonds are portfolios and pale circles are the remaining shares.
+The highlighted circle is the selected share and pale circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. In the Robust panel, the individual-share point uses empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR.
 
 </details>
 
@@ -734,11 +734,11 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 </details>
 
 <details markdown="1">
-<summary>Mean-SD frontier with this share highlighted</summary>
+<summary>All five model frontiers with this share highlighted</summary>
 
-![HAE1T mean-SD frontier](figures/stock_profiles/HAE1T_frontier.png)
+![HAE1T Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/HAE1T_all_frontiers.png)
 
-The highlighted circle is the selected share; diamonds are portfolios and pale circles are the remaining shares.
+The highlighted circle is the selected share and pale circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. In the Robust panel, the individual-share point uses empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR.
 
 </details>
 
@@ -838,11 +838,11 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 </details>
 
 <details markdown="1">
-<summary>Mean-SD frontier with this share highlighted</summary>
+<summary>All five model frontiers with this share highlighted</summary>
 
-![APG1L mean-SD frontier](figures/stock_profiles/APG1L_frontier.png)
+![APG1L Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/APG1L_all_frontiers.png)
 
-The highlighted circle is the selected share; diamonds are portfolios and pale circles are the remaining shares.
+The highlighted circle is the selected share and pale circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. In the Robust panel, the individual-share point uses empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR.
 
 </details>
 
@@ -942,11 +942,11 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 </details>
 
 <details markdown="1">
-<summary>Mean-SD frontier with this share highlighted</summary>
+<summary>All five model frontiers with this share highlighted</summary>
 
-![GRG1L mean-SD frontier](figures/stock_profiles/GRG1L_frontier.png)
+![GRG1L Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/GRG1L_all_frontiers.png)
 
-The highlighted circle is the selected share; diamonds are portfolios and pale circles are the remaining shares.
+The highlighted circle is the selected share and pale circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. In the Robust panel, the individual-share point uses empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR.
 
 </details>
 
@@ -1046,11 +1046,11 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 </details>
 
 <details markdown="1">
-<summary>Mean-SD frontier with this share highlighted</summary>
+<summary>All five model frontiers with this share highlighted</summary>
 
-![RSU1L mean-SD frontier](figures/stock_profiles/RSU1L_frontier.png)
+![RSU1L Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/RSU1L_all_frontiers.png)
 
-The highlighted circle is the selected share; diamonds are portfolios and pale circles are the remaining shares.
+The highlighted circle is the selected share and pale circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. In the Robust panel, the individual-share point uses empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR.
 
 </details>
 
@@ -1150,11 +1150,11 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 </details>
 
 <details markdown="1">
-<summary>Mean-SD frontier with this share highlighted</summary>
+<summary>All five model frontiers with this share highlighted</summary>
 
-![IGN1L mean-SD frontier](figures/stock_profiles/IGN1L_frontier.png)
+![IGN1L Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/IGN1L_all_frontiers.png)
 
-The highlighted circle is the selected share; diamonds are portfolios and pale circles are the remaining shares.
+The highlighted circle is the selected share and pale circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. In the Robust panel, the individual-share point uses empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR.
 
 </details>
 
@@ -1254,11 +1254,11 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 </details>
 
 <details markdown="1">
-<summary>Mean-SD frontier with this share highlighted</summary>
+<summary>All five model frontiers with this share highlighted</summary>
 
-![PZV1L mean-SD frontier](figures/stock_profiles/PZV1L_frontier.png)
+![PZV1L Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/PZV1L_all_frontiers.png)
 
-The highlighted circle is the selected share; diamonds are portfolios and pale circles are the remaining shares.
+The highlighted circle is the selected share and pale circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. In the Robust panel, the individual-share point uses empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR.
 
 </details>
 
@@ -1358,11 +1358,11 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 </details>
 
 <details markdown="1">
-<summary>Mean-SD frontier with this share highlighted</summary>
+<summary>All five model frontiers with this share highlighted</summary>
 
-![AKO1L mean-SD frontier](figures/stock_profiles/AKO1L_frontier.png)
+![AKO1L Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/AKO1L_all_frontiers.png)
 
-The highlighted circle is the selected share; diamonds are portfolios and pale circles are the remaining shares.
+The highlighted circle is the selected share and pale circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. In the Robust panel, the individual-share point uses empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR.
 
 </details>
 
@@ -1462,11 +1462,11 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 </details>
 
 <details markdown="1">
-<summary>Mean-SD frontier with this share highlighted</summary>
+<summary>All five model frontiers with this share highlighted</summary>
 
-![ROE1L mean-SD frontier](figures/stock_profiles/ROE1L_frontier.png)
+![ROE1L Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/ROE1L_all_frontiers.png)
 
-The highlighted circle is the selected share; diamonds are portfolios and pale circles are the remaining shares.
+The highlighted circle is the selected share and pale circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. In the Robust panel, the individual-share point uses empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR.
 
 </details>
 
@@ -1566,11 +1566,11 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 </details>
 
 <details markdown="1">
-<summary>Mean-SD frontier with this share highlighted</summary>
+<summary>All five model frontiers with this share highlighted</summary>
 
-![TAL1T mean-SD frontier](figures/stock_profiles/TAL1T_frontier.png)
+![TAL1T Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/TAL1T_all_frontiers.png)
 
-The highlighted circle is the selected share; diamonds are portfolios and pale circles are the remaining shares.
+The highlighted circle is the selected share and pale circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. In the Robust panel, the individual-share point uses empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR.
 
 </details>
 
@@ -1670,11 +1670,11 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 </details>
 
 <details markdown="1">
-<summary>Mean-SD frontier with this share highlighted</summary>
+<summary>All five model frontiers with this share highlighted</summary>
 
-![DGR1R mean-SD frontier](figures/stock_profiles/DGR1R_frontier.png)
+![DGR1R Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/DGR1R_all_frontiers.png)
 
-The highlighted circle is the selected share; diamonds are portfolios and pale circles are the remaining shares.
+The highlighted circle is the selected share and pale circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. In the Robust panel, the individual-share point uses empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR.
 
 </details>
 
@@ -1774,11 +1774,11 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 </details>
 
 <details markdown="1">
-<summary>Mean-SD frontier with this share highlighted</summary>
+<summary>All five model frontiers with this share highlighted</summary>
 
-![TEL1L mean-SD frontier](figures/stock_profiles/TEL1L_frontier.png)
+![TEL1L Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/TEL1L_all_frontiers.png)
 
-The highlighted circle is the selected share; diamonds are portfolios and pale circles are the remaining shares.
+The highlighted circle is the selected share and pale circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. In the Robust panel, the individual-share point uses empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR.
 
 </details>
 
@@ -1878,11 +1878,11 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 </details>
 
 <details markdown="1">
-<summary>Mean-SD frontier with this share highlighted</summary>
+<summary>All five model frontiers with this share highlighted</summary>
 
-![EFT1T mean-SD frontier](figures/stock_profiles/EFT1T_frontier.png)
+![EFT1T Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/EFT1T_all_frontiers.png)
 
-The highlighted circle is the selected share; diamonds are portfolios and pale circles are the remaining shares.
+The highlighted circle is the selected share and pale circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. In the Robust panel, the individual-share point uses empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR.
 
 </details>
 
@@ -1982,11 +1982,11 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 </details>
 
 <details markdown="1">
-<summary>Mean-SD frontier with this share highlighted</summary>
+<summary>All five model frontiers with this share highlighted</summary>
 
-![TKM1T mean-SD frontier](figures/stock_profiles/TKM1T_frontier.png)
+![TKM1T Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/TKM1T_all_frontiers.png)
 
-The highlighted circle is the selected share; diamonds are portfolios and pale circles are the remaining shares.
+The highlighted circle is the selected share and pale circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. In the Robust panel, the individual-share point uses empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR.
 
 </details>
 
@@ -2086,11 +2086,11 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 </details>
 
 <details markdown="1">
-<summary>Mean-SD frontier with this share highlighted</summary>
+<summary>All five model frontiers with this share highlighted</summary>
 
-![LHV1T mean-SD frontier](figures/stock_profiles/LHV1T_frontier.png)
+![LHV1T Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/LHV1T_all_frontiers.png)
 
-The highlighted circle is the selected share; diamonds are portfolios and pale circles are the remaining shares.
+The highlighted circle is the selected share and pale circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. In the Robust panel, the individual-share point uses empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR.
 
 </details>
 
@@ -2190,11 +2190,11 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 </details>
 
 <details markdown="1">
-<summary>Mean-SD frontier with this share highlighted</summary>
+<summary>All five model frontiers with this share highlighted</summary>
 
-![CPA1T mean-SD frontier](figures/stock_profiles/CPA1T_frontier.png)
+![CPA1T Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/CPA1T_all_frontiers.png)
 
-The highlighted circle is the selected share; diamonds are portfolios and pale circles are the remaining shares.
+The highlighted circle is the selected share and pale circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. In the Robust panel, the individual-share point uses empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR.
 
 </details>
 
@@ -2294,11 +2294,11 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 </details>
 
 <details markdown="1">
-<summary>Mean-SD frontier with this share highlighted</summary>
+<summary>All five model frontiers with this share highlighted</summary>
 
-![TVE1T mean-SD frontier](figures/stock_profiles/TVE1T_frontier.png)
+![TVE1T Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/TVE1T_all_frontiers.png)
 
-The highlighted circle is the selected share; diamonds are portfolios and pale circles are the remaining shares.
+The highlighted circle is the selected share and pale circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. In the Robust panel, the individual-share point uses empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR.
 
 </details>
 
@@ -2398,11 +2398,11 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 </details>
 
 <details markdown="1">
-<summary>Mean-SD frontier with this share highlighted</summary>
+<summary>All five model frontiers with this share highlighted</summary>
 
-![SAF1R mean-SD frontier](figures/stock_profiles/SAF1R_frontier.png)
+![SAF1R Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/SAF1R_all_frontiers.png)
 
-The highlighted circle is the selected share; diamonds are portfolios and pale circles are the remaining shares.
+The highlighted circle is the selected share and pale circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. In the Robust panel, the individual-share point uses empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR.
 
 </details>
 
@@ -2502,11 +2502,11 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 </details>
 
 <details markdown="1">
-<summary>Mean-SD frontier with this share highlighted</summary>
+<summary>All five model frontiers with this share highlighted</summary>
 
-![TSM1T mean-SD frontier](figures/stock_profiles/TSM1T_frontier.png)
+![TSM1T Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/TSM1T_all_frontiers.png)
 
-The highlighted circle is the selected share; diamonds are portfolios and pale circles are the remaining shares.
+The highlighted circle is the selected share and pale circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. In the Robust panel, the individual-share point uses empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR.
 
 </details>
 
