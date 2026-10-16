@@ -44,7 +44,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-16 14:21 (Europe/Vilnius); market data through 2026-10-14
+# Baltic investment plan - updated 2026-10-16 14:33 (Europe/Vilnius); market data through 2026-10-14
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -212,7 +212,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![KNE1L return histogram](figures/stock_profiles/KNE1L_histogram.png)
+![KNE1L return histogram](figures/stock_profiles/KNE1L_histogram.png?v=1792150404)
 
 </details>
 
@@ -316,7 +316,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![VIRSI return histogram](figures/stock_profiles/VIRSI_histogram.png)
+![VIRSI return histogram](figures/stock_profiles/VIRSI_histogram.png?v=1792150405)
 
 </details>
 
@@ -420,7 +420,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![VLP1L return histogram](figures/stock_profiles/VLP1L_histogram.png)
+![VLP1L return histogram](figures/stock_profiles/VLP1L_histogram.png?v=1792150404)
 
 </details>
 
@@ -524,7 +524,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![MRK1T return histogram](figures/stock_profiles/MRK1T_histogram.png)
+![MRK1T return histogram](figures/stock_profiles/MRK1T_histogram.png?v=1792150404)
 
 </details>
 
@@ -628,7 +628,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![MOLNR return histogram](figures/stock_profiles/MOLNR_histogram.png)
+![MOLNR return histogram](figures/stock_profiles/MOLNR_histogram.png?v=1792150404)
 
 </details>
 
@@ -732,7 +732,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![HAE1T return histogram](figures/stock_profiles/HAE1T_histogram.png)
+![HAE1T return histogram](figures/stock_profiles/HAE1T_histogram.png?v=1792150404)
 
 </details>
 
@@ -836,7 +836,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![APG1L return histogram](figures/stock_profiles/APG1L_histogram.png)
+![APG1L return histogram](figures/stock_profiles/APG1L_histogram.png?v=1792150404)
 
 </details>
 
@@ -940,7 +940,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![GRG1L return histogram](figures/stock_profiles/GRG1L_histogram.png)
+![GRG1L return histogram](figures/stock_profiles/GRG1L_histogram.png?v=1792150404)
 
 </details>
 
@@ -1044,7 +1044,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![RSU1L return histogram](figures/stock_profiles/RSU1L_histogram.png)
+![RSU1L return histogram](figures/stock_profiles/RSU1L_histogram.png?v=1792150404)
 
 </details>
 
@@ -1148,7 +1148,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![IGN1L return histogram](figures/stock_profiles/IGN1L_histogram.png)
+![IGN1L return histogram](figures/stock_profiles/IGN1L_histogram.png?v=1792150405)
 
 </details>
 
@@ -1252,7 +1252,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![PZV1L return histogram](figures/stock_profiles/PZV1L_histogram.png)
+![PZV1L return histogram](figures/stock_profiles/PZV1L_histogram.png?v=1792150405)
 
 </details>
 
@@ -1356,7 +1356,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![AKO1L return histogram](figures/stock_profiles/AKO1L_histogram.png)
+![AKO1L return histogram](figures/stock_profiles/AKO1L_histogram.png?v=1792150404)
 
 </details>
 
@@ -1460,7 +1460,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![ROE1L return histogram](figures/stock_profiles/ROE1L_histogram.png)
+![ROE1L return histogram](figures/stock_profiles/ROE1L_histogram.png?v=1792150405)
 
 </details>
 
@@ -1564,7 +1564,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![TAL1T return histogram](figures/stock_profiles/TAL1T_histogram.png)
+![TAL1T return histogram](figures/stock_profiles/TAL1T_histogram.png?v=1792150404)
 
 </details>
 
@@ -1668,7 +1668,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![DGR1R return histogram](figures/stock_profiles/DGR1R_histogram.png)
+![DGR1R return histogram](figures/stock_profiles/DGR1R_histogram.png?v=1792150405)
 
 </details>
 
@@ -1772,7 +1772,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![TEL1L return histogram](figures/stock_profiles/TEL1L_histogram.png)
+![TEL1L return histogram](figures/stock_profiles/TEL1L_histogram.png?v=1792150405)
 
 </details>
 
@@ -1876,7 +1876,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![EFT1T return histogram](figures/stock_profiles/EFT1T_histogram.png)
+![EFT1T return histogram](figures/stock_profiles/EFT1T_histogram.png?v=1792150405)
 
 </details>
 
@@ -1980,7 +1980,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![TKM1T return histogram](figures/stock_profiles/TKM1T_histogram.png)
+![TKM1T return histogram](figures/stock_profiles/TKM1T_histogram.png?v=1792150404)
 
 </details>
 
@@ -2084,7 +2084,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![LHV1T return histogram](figures/stock_profiles/LHV1T_histogram.png)
+![LHV1T return histogram](figures/stock_profiles/LHV1T_histogram.png?v=1792150405)
 
 </details>
 
@@ -2188,7 +2188,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![CPA1T return histogram](figures/stock_profiles/CPA1T_histogram.png)
+![CPA1T return histogram](figures/stock_profiles/CPA1T_histogram.png?v=1792150405)
 
 </details>
 
@@ -2292,7 +2292,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![TVE1T return histogram](figures/stock_profiles/TVE1T_histogram.png)
+![TVE1T return histogram](figures/stock_profiles/TVE1T_histogram.png?v=1792150404)
 
 </details>
 
@@ -2396,7 +2396,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![SAF1R return histogram](figures/stock_profiles/SAF1R_histogram.png)
+![SAF1R return histogram](figures/stock_profiles/SAF1R_histogram.png?v=1792150404)
 
 </details>
 
@@ -2500,7 +2500,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![TSM1T return histogram](figures/stock_profiles/TSM1T_histogram.png)
+![TSM1T return histogram](figures/stock_profiles/TSM1T_histogram.png?v=1792150405)
 
 </details>
 
