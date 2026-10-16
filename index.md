@@ -44,7 +44,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-16 10:12 (Europe/Vilnius); market data through 2026-10-14
+# Baltic investment plan - updated 2026-10-16 10:36 (Europe/Vilnius); market data through 2026-10-14
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -205,15 +205,6 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 </details>
 
 <details markdown="1">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-![KNE1L stochastic dominance](figures/stock_profiles/KNE1L_FSD_SSD_TSD.png)
-
-The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
-
-</details>
-
-<details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
 ![KNE1L Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/KNE1L_all_frontiers.png?v=1792134390)
@@ -281,6 +272,15 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 The starting point is the unmodified current portfolio, which already contains 0 KNE1L shares. The scenario adds 1581 shares from Table 3A, resulting in 1581 shares; every other holding remains unchanged.
 
+<details markdown="1">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+![KNE1L stochastic dominance](figures/stock_profiles/KNE1L_FSD_SSD_TSD.png?v=1792136111)
+
+The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval. The enlarged hollow circles mark the selected share at the last 10 return thresholds visible on the right edge of each panel.
+
+</details>
+
 </details>
 
 </details>
@@ -305,15 +305,6 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <summary>Return histogram</summary>
 
 ![VIRSI return histogram](figures/stock_profiles/VIRSI_histogram.png)
-
-</details>
-
-<details markdown="1">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-![VIRSI stochastic dominance](figures/stock_profiles/VIRSI_FSD_SSD_TSD.png)
-
-The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
 
 </details>
 
@@ -385,6 +376,15 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 The starting point is the unmodified current portfolio, which already contains 0 VIRSI shares. The scenario adds 11 shares from Table 3A, resulting in 11 shares; every other holding remains unchanged.
 
+<details markdown="1">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+![VIRSI stochastic dominance](figures/stock_profiles/VIRSI_FSD_SSD_TSD.png?v=1792136136)
+
+The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval. The enlarged hollow circles mark the selected share at the last 10 return thresholds visible on the right edge of each panel.
+
+</details>
+
 </details>
 
 </details>
@@ -409,15 +409,6 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <summary>Return histogram</summary>
 
 ![VLP1L return histogram](figures/stock_profiles/VLP1L_histogram.png)
-
-</details>
-
-<details markdown="1">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-![VLP1L stochastic dominance](figures/stock_profiles/VLP1L_FSD_SSD_TSD.png)
-
-The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
 
 </details>
 
@@ -489,6 +480,15 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 The starting point is the unmodified current portfolio, which already contains 42 VLP1L shares. The scenario adds 23 shares from Table 3A, resulting in 65 shares; every other holding remains unchanged.
 
+<details markdown="1">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+![VLP1L stochastic dominance](figures/stock_profiles/VLP1L_FSD_SSD_TSD.png?v=1792136152)
+
+The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval. The enlarged hollow circles mark the selected share at the last 10 return thresholds visible on the right edge of each panel.
+
+</details>
+
 </details>
 
 </details>
@@ -513,15 +513,6 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <summary>Return histogram</summary>
 
 ![MRK1T return histogram](figures/stock_profiles/MRK1T_histogram.png)
-
-</details>
-
-<details markdown="1">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-![MRK1T stochastic dominance](figures/stock_profiles/MRK1T_FSD_SSD_TSD.png)
-
-The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
 
 </details>
 
@@ -593,6 +584,15 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 The starting point is the unmodified current portfolio, which already contains 20 MRK1T shares. The scenario adds 13 shares from Table 3A, resulting in 33 shares; every other holding remains unchanged.
 
+<details markdown="1">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+![MRK1T stochastic dominance](figures/stock_profiles/MRK1T_FSD_SSD_TSD.png?v=1792136111)
+
+The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval. The enlarged hollow circles mark the selected share at the last 10 return thresholds visible on the right edge of each panel.
+
+</details>
+
 </details>
 
 </details>
@@ -617,15 +617,6 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <summary>Return histogram</summary>
 
 ![MOLNR return histogram](figures/stock_profiles/MOLNR_histogram.png)
-
-</details>
-
-<details markdown="1">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-![MOLNR stochastic dominance](figures/stock_profiles/MOLNR_FSD_SSD_TSD.png)
-
-The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
 
 </details>
 
@@ -697,6 +688,15 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 The starting point is the unmodified current portfolio, which already contains 0 MOLNR shares. The scenario adds 30 shares from Table 3A, resulting in 30 shares; every other holding remains unchanged.
 
+<details markdown="1">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+![MOLNR stochastic dominance](figures/stock_profiles/MOLNR_FSD_SSD_TSD.png?v=1792136111)
+
+The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval. The enlarged hollow circles mark the selected share at the last 10 return thresholds visible on the right edge of each panel.
+
+</details>
+
 </details>
 
 </details>
@@ -721,15 +721,6 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <summary>Return histogram</summary>
 
 ![HAE1T return histogram](figures/stock_profiles/HAE1T_histogram.png)
-
-</details>
-
-<details markdown="1">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-![HAE1T stochastic dominance](figures/stock_profiles/HAE1T_FSD_SSD_TSD.png)
-
-The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
 
 </details>
 
@@ -801,6 +792,15 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 The starting point is the unmodified current portfolio, which already contains 100 HAE1T shares. The scenario adds 1 shares from Table 3A, resulting in 101 shares; every other holding remains unchanged.
 
+<details markdown="1">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+![HAE1T stochastic dominance](figures/stock_profiles/HAE1T_FSD_SSD_TSD.png?v=1792136113)
+
+The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval. The enlarged hollow circles mark the selected share at the last 10 return thresholds visible on the right edge of each panel.
+
+</details>
+
 </details>
 
 </details>
@@ -825,15 +825,6 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <summary>Return histogram</summary>
 
 ![APG1L return histogram](figures/stock_profiles/APG1L_histogram.png)
-
-</details>
-
-<details markdown="1">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-![APG1L stochastic dominance](figures/stock_profiles/APG1L_FSD_SSD_TSD.png)
-
-The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
 
 </details>
 
@@ -905,6 +896,15 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 The starting point is the unmodified current portfolio, which already contains 200 APG1L shares. The scenario adds 127 shares from Table 3A, resulting in 327 shares; every other holding remains unchanged.
 
+<details markdown="1">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+![APG1L stochastic dominance](figures/stock_profiles/APG1L_FSD_SSD_TSD.png?v=1792136129)
+
+The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval. The enlarged hollow circles mark the selected share at the last 10 return thresholds visible on the right edge of each panel.
+
+</details>
+
 </details>
 
 </details>
@@ -929,15 +929,6 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <summary>Return histogram</summary>
 
 ![GRG1L return histogram](figures/stock_profiles/GRG1L_histogram.png)
-
-</details>
-
-<details markdown="1">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-![GRG1L stochastic dominance](figures/stock_profiles/GRG1L_FSD_SSD_TSD.png)
-
-The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
 
 </details>
 
@@ -1009,6 +1000,15 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 The starting point is the unmodified current portfolio, which already contains 0 GRG1L shares. The scenario adds 722 shares from Table 3A, resulting in 722 shares; every other holding remains unchanged.
 
+<details markdown="1">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+![GRG1L stochastic dominance](figures/stock_profiles/GRG1L_FSD_SSD_TSD.png?v=1792136139)
+
+The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval. The enlarged hollow circles mark the selected share at the last 10 return thresholds visible on the right edge of each panel.
+
+</details>
+
 </details>
 
 </details>
@@ -1033,15 +1033,6 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <summary>Return histogram</summary>
 
 ![RSU1L return histogram](figures/stock_profiles/RSU1L_histogram.png)
-
-</details>
-
-<details markdown="1">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-![RSU1L stochastic dominance](figures/stock_profiles/RSU1L_FSD_SSD_TSD.png)
-
-The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
 
 </details>
 
@@ -1113,6 +1104,15 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 The starting point is the unmodified current portfolio, which already contains 0 RSU1L shares. The scenario adds 116 shares from Table 3A, resulting in 116 shares; every other holding remains unchanged.
 
+<details markdown="1">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+![RSU1L stochastic dominance](figures/stock_profiles/RSU1L_FSD_SSD_TSD.png?v=1792136113)
+
+The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval. The enlarged hollow circles mark the selected share at the last 10 return thresholds visible on the right edge of each panel.
+
+</details>
+
 </details>
 
 </details>
@@ -1137,15 +1137,6 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <summary>Return histogram</summary>
 
 ![IGN1L return histogram](figures/stock_profiles/IGN1L_histogram.png)
-
-</details>
-
-<details markdown="1">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-![IGN1L stochastic dominance](figures/stock_profiles/IGN1L_FSD_SSD_TSD.png)
-
-The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
 
 </details>
 
@@ -1217,6 +1208,15 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 The starting point is the unmodified current portfolio, which already contains 0 IGN1L shares. The scenario adds 14 shares from Table 3A, resulting in 14 shares; every other holding remains unchanged.
 
+<details markdown="1">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+![IGN1L stochastic dominance](figures/stock_profiles/IGN1L_FSD_SSD_TSD.png?v=1792136137)
+
+The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval. The enlarged hollow circles mark the selected share at the last 10 return thresholds visible on the right edge of each panel.
+
+</details>
+
 </details>
 
 </details>
@@ -1241,15 +1241,6 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <summary>Return histogram</summary>
 
 ![PZV1L return histogram](figures/stock_profiles/PZV1L_histogram.png)
-
-</details>
-
-<details markdown="1">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-![PZV1L stochastic dominance](figures/stock_profiles/PZV1L_FSD_SSD_TSD.png)
-
-The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
 
 </details>
 
@@ -1321,6 +1312,15 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 The starting point is the unmodified current portfolio, which already contains 0 PZV1L shares. The scenario adds 171 shares from Table 3A, resulting in 171 shares; every other holding remains unchanged.
 
+<details markdown="1">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+![PZV1L stochastic dominance](figures/stock_profiles/PZV1L_FSD_SSD_TSD.png?v=1792136113)
+
+The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval. The enlarged hollow circles mark the selected share at the last 10 return thresholds visible on the right edge of each panel.
+
+</details>
+
 </details>
 
 </details>
@@ -1345,15 +1345,6 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <summary>Return histogram</summary>
 
 ![AKO1L return histogram](figures/stock_profiles/AKO1L_histogram.png)
-
-</details>
-
-<details markdown="1">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-![AKO1L stochastic dominance](figures/stock_profiles/AKO1L_FSD_SSD_TSD.png)
-
-The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
 
 </details>
 
@@ -1425,6 +1416,15 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 The starting point is the unmodified current portfolio, which already contains 0 AKO1L shares. The scenario adds 348 shares from Table 3A, resulting in 348 shares; every other holding remains unchanged.
 
+<details markdown="1">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+![AKO1L stochastic dominance](figures/stock_profiles/AKO1L_FSD_SSD_TSD.png?v=1792136111)
+
+The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval. The enlarged hollow circles mark the selected share at the last 10 return thresholds visible on the right edge of each panel.
+
+</details>
+
 </details>
 
 </details>
@@ -1449,15 +1449,6 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <summary>Return histogram</summary>
 
 ![ROE1L return histogram](figures/stock_profiles/ROE1L_histogram.png)
-
-</details>
-
-<details markdown="1">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-![ROE1L stochastic dominance](figures/stock_profiles/ROE1L_FSD_SSD_TSD.png)
-
-The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
 
 </details>
 
@@ -1529,6 +1520,15 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 The starting point is the unmodified current portfolio, which already contains 416 ROE1L shares. The scenario adds 6 shares from Table 3A, resulting in 422 shares; every other holding remains unchanged.
 
+<details markdown="1">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+![ROE1L stochastic dominance](figures/stock_profiles/ROE1L_FSD_SSD_TSD.png?v=1792136112)
+
+The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval. The enlarged hollow circles mark the selected share at the last 10 return thresholds visible on the right edge of each panel.
+
+</details>
+
 </details>
 
 </details>
@@ -1553,15 +1553,6 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <summary>Return histogram</summary>
 
 ![TAL1T return histogram](figures/stock_profiles/TAL1T_histogram.png)
-
-</details>
-
-<details markdown="1">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-![TAL1T stochastic dominance](figures/stock_profiles/TAL1T_FSD_SSD_TSD.png)
-
-The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
 
 </details>
 
@@ -1633,6 +1624,15 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 The starting point is the unmodified current portfolio, which already contains 700 TAL1T shares. The scenario adds 179 shares from Table 3A, resulting in 879 shares; every other holding remains unchanged.
 
+<details markdown="1">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+![TAL1T stochastic dominance](figures/stock_profiles/TAL1T_FSD_SSD_TSD.png?v=1792136140)
+
+The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval. The enlarged hollow circles mark the selected share at the last 10 return thresholds visible on the right edge of each panel.
+
+</details>
+
 </details>
 
 </details>
@@ -1657,15 +1657,6 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <summary>Return histogram</summary>
 
 ![DGR1R return histogram](figures/stock_profiles/DGR1R_histogram.png)
-
-</details>
-
-<details markdown="1">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-![DGR1R stochastic dominance](figures/stock_profiles/DGR1R_FSD_SSD_TSD.png)
-
-The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
 
 </details>
 
@@ -1737,6 +1728,15 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 The starting point is the unmodified current portfolio, which already contains 0 DGR1R shares. The scenario adds 160 shares from Table 3A, resulting in 160 shares; every other holding remains unchanged.
 
+<details markdown="1">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+![DGR1R stochastic dominance](figures/stock_profiles/DGR1R_FSD_SSD_TSD.png?v=1792136134)
+
+The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval. The enlarged hollow circles mark the selected share at the last 10 return thresholds visible on the right edge of each panel.
+
+</details>
+
 </details>
 
 </details>
@@ -1761,15 +1761,6 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <summary>Return histogram</summary>
 
 ![TEL1L return histogram](figures/stock_profiles/TEL1L_histogram.png)
-
-</details>
-
-<details markdown="1">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-![TEL1L stochastic dominance](figures/stock_profiles/TEL1L_FSD_SSD_TSD.png)
-
-The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
 
 </details>
 
@@ -1841,6 +1832,15 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 The starting point is the unmodified current portfolio, which already contains 0 TEL1L shares. The scenario adds 11 shares from Table 3A, resulting in 11 shares; every other holding remains unchanged.
 
+<details markdown="1">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+![TEL1L stochastic dominance](figures/stock_profiles/TEL1L_FSD_SSD_TSD.png?v=1792136157)
+
+The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval. The enlarged hollow circles mark the selected share at the last 10 return thresholds visible on the right edge of each panel.
+
+</details>
+
 </details>
 
 </details>
@@ -1865,15 +1865,6 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <summary>Return histogram</summary>
 
 ![EFT1T return histogram](figures/stock_profiles/EFT1T_histogram.png)
-
-</details>
-
-<details markdown="1">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-![EFT1T stochastic dominance](figures/stock_profiles/EFT1T_FSD_SSD_TSD.png)
-
-The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
 
 </details>
 
@@ -1945,6 +1936,15 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 The starting point is the unmodified current portfolio, which already contains 0 EFT1T shares. The scenario adds 15 shares from Table 3A, resulting in 15 shares; every other holding remains unchanged.
 
+<details markdown="1">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+![EFT1T stochastic dominance](figures/stock_profiles/EFT1T_FSD_SSD_TSD.png?v=1792136113)
+
+The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval. The enlarged hollow circles mark the selected share at the last 10 return thresholds visible on the right edge of each panel.
+
+</details>
+
 </details>
 
 </details>
@@ -1969,15 +1969,6 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <summary>Return histogram</summary>
 
 ![TKM1T return histogram](figures/stock_profiles/TKM1T_histogram.png)
-
-</details>
-
-<details markdown="1">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-![TKM1T stochastic dominance](figures/stock_profiles/TKM1T_FSD_SSD_TSD.png)
-
-The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
 
 </details>
 
@@ -2049,6 +2040,15 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 The starting point is the unmodified current portfolio, which already contains 288 TKM1T shares. The scenario adds 55 shares from Table 3A, resulting in 343 shares; every other holding remains unchanged.
 
+<details markdown="1">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+![TKM1T stochastic dominance](figures/stock_profiles/TKM1T_FSD_SSD_TSD.png?v=1792136113)
+
+The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval. The enlarged hollow circles mark the selected share at the last 10 return thresholds visible on the right edge of each panel.
+
+</details>
+
 </details>
 
 </details>
@@ -2073,15 +2073,6 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <summary>Return histogram</summary>
 
 ![LHV1T return histogram](figures/stock_profiles/LHV1T_histogram.png)
-
-</details>
-
-<details markdown="1">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-![LHV1T stochastic dominance](figures/stock_profiles/LHV1T_FSD_SSD_TSD.png)
-
-The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
 
 </details>
 
@@ -2153,6 +2144,15 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 The starting point is the unmodified current portfolio, which already contains 0 LHV1T shares. The scenario adds 34 shares from Table 3A, resulting in 34 shares; every other holding remains unchanged.
 
+<details markdown="1">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+![LHV1T stochastic dominance](figures/stock_profiles/LHV1T_FSD_SSD_TSD.png?v=1792136112)
+
+The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval. The enlarged hollow circles mark the selected share at the last 10 return thresholds visible on the right edge of each panel.
+
+</details>
+
 </details>
 
 </details>
@@ -2177,15 +2177,6 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <summary>Return histogram</summary>
 
 ![CPA1T return histogram](figures/stock_profiles/CPA1T_histogram.png)
-
-</details>
-
-<details markdown="1">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-![CPA1T stochastic dominance](figures/stock_profiles/CPA1T_FSD_SSD_TSD.png)
-
-The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
 
 </details>
 
@@ -2257,6 +2248,15 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 The starting point is the unmodified current portfolio, which already contains 0 CPA1T shares. The scenario adds 46 shares from Table 3A, resulting in 46 shares; every other holding remains unchanged.
 
+<details markdown="1">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+![CPA1T stochastic dominance](figures/stock_profiles/CPA1T_FSD_SSD_TSD.png?v=1792136112)
+
+The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval. The enlarged hollow circles mark the selected share at the last 10 return thresholds visible on the right edge of each panel.
+
+</details>
+
 </details>
 
 </details>
@@ -2281,15 +2281,6 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <summary>Return histogram</summary>
 
 ![TVE1T return histogram](figures/stock_profiles/TVE1T_histogram.png)
-
-</details>
-
-<details markdown="1">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-![TVE1T stochastic dominance](figures/stock_profiles/TVE1T_FSD_SSD_TSD.png)
-
-The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
 
 </details>
 
@@ -2361,6 +2352,15 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 The starting point is the unmodified current portfolio, which already contains 0 TVE1T shares. The scenario adds 39 shares from Table 3A, resulting in 39 shares; every other holding remains unchanged.
 
+<details markdown="1">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+![TVE1T stochastic dominance](figures/stock_profiles/TVE1T_FSD_SSD_TSD.png?v=1792136133)
+
+The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval. The enlarged hollow circles mark the selected share at the last 10 return thresholds visible on the right edge of each panel.
+
+</details>
+
 </details>
 
 </details>
@@ -2385,15 +2385,6 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <summary>Return histogram</summary>
 
 ![SAF1R return histogram](figures/stock_profiles/SAF1R_histogram.png)
-
-</details>
-
-<details markdown="1">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-![SAF1R stochastic dominance](figures/stock_profiles/SAF1R_FSD_SSD_TSD.png)
-
-The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
 
 </details>
 
@@ -2465,6 +2456,15 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 The starting point is the unmodified current portfolio, which already contains 100 SAF1R shares. The scenario adds 0 shares from Table 3A, resulting in 100 shares; every other holding remains unchanged.
 
+<details markdown="1">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+![SAF1R stochastic dominance](figures/stock_profiles/SAF1R_FSD_SSD_TSD.png?v=1792136113)
+
+The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval. The enlarged hollow circles mark the selected share at the last 10 return thresholds visible on the right edge of each panel.
+
+</details>
+
 </details>
 
 </details>
@@ -2489,15 +2489,6 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <summary>Return histogram</summary>
 
 ![TSM1T return histogram](figures/stock_profiles/TSM1T_histogram.png)
-
-</details>
-
-<details markdown="1">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-![TSM1T stochastic dominance](figures/stock_profiles/TSM1T_FSD_SSD_TSD.png)
-
-The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
 
 </details>
 
@@ -2568,6 +2559,15 @@ The removed weight is distributed proportionally across all remaining holdings, 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>TSM1T shares</td><td>330</td><td>330</td><td>+0</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>7956.851983</td><td>0.000000</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.423729</td><td>0.000000</td></tr><tr><td>OUT</td><td>62</td><td>62</td><td>+0</td></tr><tr><td>IN</td><td>12</td><td>12</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.070123</td><td>0.000000</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.092352</td><td>0.000000</td></tr></tbody></table>
 
 The starting point is the unmodified current portfolio, which already contains 330 TSM1T shares. The scenario adds 0 shares from Table 3A, resulting in 330 shares; every other holding remains unchanged.
+
+<details markdown="1">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+![TSM1T stochastic dominance](figures/stock_profiles/TSM1T_FSD_SSD_TSD.png?v=1792136112)
+
+The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval. The enlarged hollow circles mark the selected share at the last 10 return thresholds visible on the right edge of each panel.
+
+</details>
 
 </details>
 
