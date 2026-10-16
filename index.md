@@ -52,7 +52,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-16 20:17 (Europe/Vilnius); market data through 2026-10-14
+# Baltic investment plan - updated 2026-10-16 20:22 (Europe/Vilnius); market data through 2026-10-14
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -400,7 +400,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![KNE1L high-resolution stochastic dominance](figures/stock_profiles/KNE1L_FSD_SSD_TSD.png?v=1792171006)
+![KNE1L high-resolution stochastic dominance](figures/stock_profiles/KNE1L_FSD_SSD_TSD.png?v=1792171283)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -603,7 +603,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![VIRSI high-resolution stochastic dominance](figures/stock_profiles/VIRSI_FSD_SSD_TSD.png?v=1792171032)
+![VIRSI high-resolution stochastic dominance](figures/stock_profiles/VIRSI_FSD_SSD_TSD.png?v=1792171314)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -806,7 +806,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![VLP1L high-resolution stochastic dominance](figures/stock_profiles/VLP1L_FSD_SSD_TSD.png?v=1792171035)
+![VLP1L high-resolution stochastic dominance](figures/stock_profiles/VLP1L_FSD_SSD_TSD.png?v=1792171317)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -1022,7 +1022,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![MRK1T high-resolution stochastic dominance](figures/stock_profiles/MRK1T_FSD_SSD_TSD.png?v=1792171012)
+![MRK1T high-resolution stochastic dominance](figures/stock_profiles/MRK1T_FSD_SSD_TSD.png?v=1792171290)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -1219,7 +1219,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![MOLNR high-resolution stochastic dominance](figures/stock_profiles/MOLNR_FSD_SSD_TSD.png?v=1792171010)
+![MOLNR high-resolution stochastic dominance](figures/stock_profiles/MOLNR_FSD_SSD_TSD.png?v=1792171287)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -1430,7 +1430,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![HAE1T high-resolution stochastic dominance](figures/stock_profiles/HAE1T_FSD_SSD_TSD.png?v=1792171002)
+![HAE1T high-resolution stochastic dominance](figures/stock_profiles/HAE1T_FSD_SSD_TSD.png?v=1792171278)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -1684,7 +1684,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![APG1L high-resolution stochastic dominance](figures/stock_profiles/APG1L_FSD_SSD_TSD.png?v=1792170991)
+![APG1L high-resolution stochastic dominance](figures/stock_profiles/APG1L_FSD_SSD_TSD.png?v=1792171263)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -1880,7 +1880,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![GRG1L high-resolution stochastic dominance](figures/stock_profiles/GRG1L_FSD_SSD_TSD.png?v=1792171000)
+![GRG1L high-resolution stochastic dominance](figures/stock_profiles/GRG1L_FSD_SSD_TSD.png?v=1792171275)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -2077,7 +2077,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![RSU1L high-resolution stochastic dominance](figures/stock_profiles/RSU1L_FSD_SSD_TSD.png?v=1792171017)
+![RSU1L high-resolution stochastic dominance](figures/stock_profiles/RSU1L_FSD_SSD_TSD.png?v=1792171297)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -2286,7 +2286,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![IGN1L high-resolution stochastic dominance](figures/stock_profiles/IGN1L_FSD_SSD_TSD.png?v=1792171004)
+![IGN1L high-resolution stochastic dominance](figures/stock_profiles/IGN1L_FSD_SSD_TSD.png?v=1792171280)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -2494,7 +2494,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![PZV1L high-resolution stochastic dominance](figures/stock_profiles/PZV1L_FSD_SSD_TSD.png?v=1792171014)
+![PZV1L high-resolution stochastic dominance](figures/stock_profiles/PZV1L_FSD_SSD_TSD.png?v=1792171292)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -2698,7 +2698,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![AKO1L high-resolution stochastic dominance](figures/stock_profiles/AKO1L_FSD_SSD_TSD.png?v=1792170989)
+![AKO1L high-resolution stochastic dominance](figures/stock_profiles/AKO1L_FSD_SSD_TSD.png?v=1792171260)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -2908,7 +2908,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![ROE1L high-resolution stochastic dominance](figures/stock_profiles/ROE1L_FSD_SSD_TSD.png?v=1792171016)
+![ROE1L high-resolution stochastic dominance](figures/stock_profiles/ROE1L_FSD_SSD_TSD.png?v=1792171295)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -3128,7 +3128,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![TAL1T high-resolution stochastic dominance](figures/stock_profiles/TAL1T_FSD_SSD_TSD.png?v=1792171022)
+![TAL1T high-resolution stochastic dominance](figures/stock_profiles/TAL1T_FSD_SSD_TSD.png?v=1792171302)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -3355,7 +3355,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![DGR1R high-resolution stochastic dominance](figures/stock_profiles/DGR1R_FSD_SSD_TSD.png?v=1792170996)
+![DGR1R high-resolution stochastic dominance](figures/stock_profiles/DGR1R_FSD_SSD_TSD.png?v=1792171268)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -3555,7 +3555,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![TEL1L high-resolution stochastic dominance](figures/stock_profiles/TEL1L_FSD_SSD_TSD.png?v=1792171024)
+![TEL1L high-resolution stochastic dominance](figures/stock_profiles/TEL1L_FSD_SSD_TSD.png?v=1792171305)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -3771,7 +3771,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![EFT1T high-resolution stochastic dominance](figures/stock_profiles/EFT1T_FSD_SSD_TSD.png?v=1792170998)
+![EFT1T high-resolution stochastic dominance](figures/stock_profiles/EFT1T_FSD_SSD_TSD.png?v=1792171272)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -3981,7 +3981,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![TKM1T high-resolution stochastic dominance](figures/stock_profiles/TKM1T_FSD_SSD_TSD.png?v=1792171026)
+![TKM1T high-resolution stochastic dominance](figures/stock_profiles/TKM1T_FSD_SSD_TSD.png?v=1792171307)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -4205,7 +4205,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![LHV1T high-resolution stochastic dominance](figures/stock_profiles/LHV1T_FSD_SSD_TSD.png?v=1792171008)
+![LHV1T high-resolution stochastic dominance](figures/stock_profiles/LHV1T_FSD_SSD_TSD.png?v=1792171285)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -4426,7 +4426,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![CPA1T high-resolution stochastic dominance](figures/stock_profiles/CPA1T_FSD_SSD_TSD.png?v=1792170993)
+![CPA1T high-resolution stochastic dominance](figures/stock_profiles/CPA1T_FSD_SSD_TSD.png?v=1792171266)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -4642,7 +4642,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![TVE1T high-resolution stochastic dominance](figures/stock_profiles/TVE1T_FSD_SSD_TSD.png?v=1792171030)
+![TVE1T high-resolution stochastic dominance](figures/stock_profiles/TVE1T_FSD_SSD_TSD.png?v=1792171312)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -4847,7 +4847,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![SAF1R high-resolution stochastic dominance](figures/stock_profiles/SAF1R_FSD_SSD_TSD.png?v=1792171019)
+![SAF1R high-resolution stochastic dominance](figures/stock_profiles/SAF1R_FSD_SSD_TSD.png?v=1792171299)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -5060,7 +5060,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![TSM1T high-resolution stochastic dominance](figures/stock_profiles/TSM1T_FSD_SSD_TSD.png?v=1792171028)
+![TSM1T high-resolution stochastic dominance](figures/stock_profiles/TSM1T_FSD_SSD_TSD.png?v=1792171309)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -5936,9 +5936,9 @@ function initialiseDominanceExplorer(box) {
       function yrange(i0,i1,keys=names) { let mn=Infinity,mx=-Infinity; keys.forEach(k=>{for(let i=i0;i<=i1;i++){const v=d.series[k][i];if(v<mn)mn=v;if(v>mx)mx=v;}}); if(mx===mn){mx+=1;mn-=1} return [mn,mx]; }
       function arrayRange(a,i0,i1){let mn=Infinity,mx=-Infinity;for(let i=i0;i<=i1;i++){if(a[i]<mn)mn=a[i];if(a[i]>mx)mx=a[i];}if(mx===mn){mx+=1;mn-=1}return[mn,mx];}
       function magnify(y,m){const c=(y[0]+y[1])/2,h=(y[1]-y[0])/2/Number(m);return[c-h,c+h];}
-      function axes(p,x0,x1,y0,y1,label) { ctx.strokeStyle='#9aabb5';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(p.l,p.t);ctx.lineTo(p.l,p.b);ctx.lineTo(p.r,p.b);ctx.stroke();ctx.fillStyle='#263d4b';ctx.fillText(label,p.l,p.t-9); for(let j=0;j<=6;j++){const xx=p.l+(p.r-p.l)*j/6,xv=x0+(x1-x0)*j/6;ctx.fillText(xv.toFixed(5),xx-22,p.b+17);} for(let j=0;j<=5;j++){const yy=p.b-(p.b-p.t)*j/5,yv=y0+(y1-y0)*j/5;ctx.fillText(yv.toExponential(2),Math.max(1,p.l-62),yy+4);} }
+      function axes(p,x0,x1,y0,y1,label) { ctx.strokeStyle='#9aabb5';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(p.l,p.t);ctx.lineTo(p.l,p.b);ctx.lineTo(p.r,p.b);ctx.stroke();ctx.fillStyle='#263d4b';ctx.fillText(label,p.l,p.t-9); for(let j=0;j<=6;j++){const xx=p.l+(p.r-p.l)*j/6,xv=x0+(x1-x0)*j/6;ctx.fillText(xv.toFixed(5),xx-22,p.b+17);} for(let j=0;j<=5;j++){const yy=p.b-(p.b-p.t)*j/5,yv=y0+(y1-y0)*j/5;ctx.fillText(yv.toExponential(2),Math.max(1,p.l-62),yy+4);} if(y0<=0&&y1>=0){const zy=p.b-(0-y0)/(y1-y0)*(p.b-p.t);ctx.strokeStyle='#17212b';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(p.l,zy);ctx.lineTo(p.r,zy);ctx.stroke();ctx.fillStyle='#17212b';ctx.font='bold 13px system-ui';ctx.fillText('0',p.l-15,zy+4);ctx.font='12px system-ui';} }
       function plot(p,i0,i1,y0,y1) { names.forEach((k,ki)=>{const special=k===asset||k==='Current'||k==='Baltic_NetSD'||k==='curent_update_baltic'||k===bench;ctx.strokeStyle=k===asset?'#c2185b':k==='Current'?'#009e73':k==='Baltic_NetSD'?'#0072b2':k==='curent_update_baltic'?'#d55e00':k===bench?'#6a3d9a':palette[ki%palette.length];ctx.globalAlpha=special?1:.30;ctx.lineWidth=k===asset?3:special?2.1:1;ctx.beginPath();for(let i=i0;i<=i1;i++){const px=p.l+(x[i]-x[i0])/(x[i1]-x[i0]||1)*(p.r-p.l),py=p.b-(d.series[k][i]-y0)/(y1-y0||1)*(p.b-p.t);if(i===i0)ctx.moveTo(px,py);else ctx.lineTo(px,py);}ctx.stroke();});ctx.globalAlpha=1; }
-      function plotDifference(p,i0,i1,y0,y1){ctx.strokeStyle='#c2185b';ctx.lineWidth=2.8;ctx.beginPath();for(let i=i0;i<=i1;i++){const px=p.l+(x[i]-x[i0])/(x[i1]-x[i0]||1)*(p.r-p.l),py=p.b-(difference[i]-y0)/(y1-y0||1)*(p.b-p.t);if(i===i0)ctx.moveTo(px,py);else ctx.lineTo(px,py);}ctx.stroke();if(y0<=0&&y1>=0){const zy=p.b-(0-y0)/(y1-y0)*(p.b-p.t);ctx.strokeStyle='#444';ctx.lineWidth=1;ctx.setLineDash([5,4]);ctx.beginPath();ctx.moveTo(p.l,zy);ctx.lineTo(p.r,zy);ctx.stroke();ctx.setLineDash([]);}}
+      function plotDifference(p,i0,i1,y0,y1){ctx.strokeStyle='#c2185b';ctx.lineWidth=2.8;ctx.beginPath();for(let i=i0;i<=i1;i++){const px=p.l+(x[i]-x[i0])/(x[i1]-x[i0]||1)*(p.r-p.l),py=p.b-(difference[i]-y0)/(y1-y0||1)*(p.b-p.t);if(i===i0)ctx.moveTo(px,py);else ctx.lineTo(px,py);}ctx.stroke();}
       const ym=yrange(0,n-1); axes(main,x[0],x[n-1],ym[0],ym[1],`${asset}: ${order.value} components - scroll or click to move`); plot(main,0,n-1,ym[0],ym[1]);
       const sx0=main.l+(x[lo]-x[0])/(x[n-1]-x[0])*(main.r-main.l), sx1=main.l+(x[hi]-x[0])/(x[n-1]-x[0])*(main.r-main.l);ctx.strokeStyle='#d7191c';ctx.lineWidth=2;ctx.strokeRect(sx0,main.t,Math.max(2,sx1-sx0),main.b-main.t);
       let yz=magnify(yrange(lo,hi),vz.value); axes(zoom,x[lo],x[hi],yz[0],yz[1],`Magnified components (${hz.value}x by ${vz.value}x)`); plot(zoom,lo,hi,yz[0],yz[1]);
