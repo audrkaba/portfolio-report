@@ -44,7 +44,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-16 14:33 (Europe/Vilnius); market data through 2026-10-14
+# Baltic investment plan - updated 2026-10-16 14:43 (Europe/Vilnius); market data through 2026-10-14
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -219,9 +219,9 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![KNE1L Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/KNE1L_all_frontiers.png?v=1792134390)
+![KNE1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/KNE1L_all_frontiers.png?v=1792150965)
 
-The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. Baltic_NetSD and curent_update_baltic are shown as separately labelled portfolio points in every panel. In the Robust panel, the individual-share and Baltic-portfolio points use empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
+The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
 </details>
 
@@ -323,9 +323,9 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![VIRSI Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/VIRSI_all_frontiers.png?v=1792134391)
+![VIRSI Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/VIRSI_all_frontiers.png?v=1792150974)
 
-The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. Baltic_NetSD and curent_update_baltic are shown as separately labelled portfolio points in every panel. In the Robust panel, the individual-share and Baltic-portfolio points use empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
+The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
 </details>
 
@@ -427,9 +427,9 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![VLP1L Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/VLP1L_all_frontiers.png?v=1792134392)
+![VLP1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/VLP1L_all_frontiers.png?v=1792150964)
 
-The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. Baltic_NetSD and curent_update_baltic are shown as separately labelled portfolio points in every panel. In the Robust panel, the individual-share and Baltic-portfolio points use empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
+The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
 </details>
 
@@ -531,9 +531,9 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![MRK1T Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/MRK1T_all_frontiers.png?v=1792134387)
+![MRK1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/MRK1T_all_frontiers.png?v=1792150965)
 
-The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. Baltic_NetSD and curent_update_baltic are shown as separately labelled portfolio points in every panel. In the Robust panel, the individual-share and Baltic-portfolio points use empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
+The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
 </details>
 
@@ -635,9 +635,9 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![MOLNR Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/MOLNR_all_frontiers.png?v=1792134389)
+![MOLNR Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/MOLNR_all_frontiers.png?v=1792150968)
 
-The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. Baltic_NetSD and curent_update_baltic are shown as separately labelled portfolio points in every panel. In the Robust panel, the individual-share and Baltic-portfolio points use empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
+The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
 </details>
 
@@ -739,9 +739,9 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![HAE1T Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/HAE1T_all_frontiers.png?v=1792134387)
+![HAE1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/HAE1T_all_frontiers.png?v=1792150969)
 
-The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. Baltic_NetSD and curent_update_baltic are shown as separately labelled portfolio points in every panel. In the Robust panel, the individual-share and Baltic-portfolio points use empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
+The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
 </details>
 
@@ -843,9 +843,9 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![APG1L Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/APG1L_all_frontiers.png?v=1792134391)
+![APG1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/APG1L_all_frontiers.png?v=1792150963)
 
-The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. Baltic_NetSD and curent_update_baltic are shown as separately labelled portfolio points in every panel. In the Robust panel, the individual-share and Baltic-portfolio points use empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
+The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
 </details>
 
@@ -947,9 +947,9 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![GRG1L Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/GRG1L_all_frontiers.png?v=1792134392)
+![GRG1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/GRG1L_all_frontiers.png?v=1792150966)
 
-The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. Baltic_NetSD and curent_update_baltic are shown as separately labelled portfolio points in every panel. In the Robust panel, the individual-share and Baltic-portfolio points use empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
+The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
 </details>
 
@@ -1051,9 +1051,9 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![RSU1L Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/RSU1L_all_frontiers.png?v=1792134390)
+![RSU1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/RSU1L_all_frontiers.png?v=1792150969)
 
-The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. Baltic_NetSD and curent_update_baltic are shown as separately labelled portfolio points in every panel. In the Robust panel, the individual-share and Baltic-portfolio points use empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
+The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
 </details>
 
@@ -1155,9 +1155,9 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![IGN1L Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/IGN1L_all_frontiers.png?v=1792134392)
+![IGN1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/IGN1L_all_frontiers.png?v=1792150971)
 
-The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. Baltic_NetSD and curent_update_baltic are shown as separately labelled portfolio points in every panel. In the Robust panel, the individual-share and Baltic-portfolio points use empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
+The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
 </details>
 
@@ -1259,9 +1259,9 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![PZV1L Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/PZV1L_all_frontiers.png?v=1792134390)
+![PZV1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/PZV1L_all_frontiers.png?v=1792150972)
 
-The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. Baltic_NetSD and curent_update_baltic are shown as separately labelled portfolio points in every panel. In the Robust panel, the individual-share and Baltic-portfolio points use empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
+The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
 </details>
 
@@ -1363,9 +1363,9 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![AKO1L Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/AKO1L_all_frontiers.png?v=1792134387)
+![AKO1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/AKO1L_all_frontiers.png?v=1792150967)
 
-The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. Baltic_NetSD and curent_update_baltic are shown as separately labelled portfolio points in every panel. In the Robust panel, the individual-share and Baltic-portfolio points use empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
+The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
 </details>
 
@@ -1467,9 +1467,9 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![ROE1L Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/ROE1L_all_frontiers.png?v=1792134390)
+![ROE1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/ROE1L_all_frontiers.png?v=1792150971)
 
-The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. Baltic_NetSD and curent_update_baltic are shown as separately labelled portfolio points in every panel. In the Robust panel, the individual-share and Baltic-portfolio points use empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
+The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
 </details>
 
@@ -1571,9 +1571,9 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![TAL1T Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/TAL1T_all_frontiers.png?v=1792134391)
+![TAL1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TAL1T_all_frontiers.png?v=1792150968)
 
-The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. Baltic_NetSD and curent_update_baltic are shown as separately labelled portfolio points in every panel. In the Robust panel, the individual-share and Baltic-portfolio points use empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
+The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
 </details>
 
@@ -1675,9 +1675,9 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![DGR1R Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/DGR1R_all_frontiers.png?v=1792134392)
+![DGR1R Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/DGR1R_all_frontiers.png?v=1792150973)
 
-The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. Baltic_NetSD and curent_update_baltic are shown as separately labelled portfolio points in every panel. In the Robust panel, the individual-share and Baltic-portfolio points use empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
+The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
 </details>
 
@@ -1779,9 +1779,9 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![TEL1L Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/TEL1L_all_frontiers.png?v=1792134392)
+![TEL1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TEL1L_all_frontiers.png?v=1792150975)
 
-The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. Baltic_NetSD and curent_update_baltic are shown as separately labelled portfolio points in every panel. In the Robust panel, the individual-share and Baltic-portfolio points use empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
+The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
 </details>
 
@@ -1883,9 +1883,9 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![EFT1T Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/EFT1T_all_frontiers.png?v=1792134387)
+![EFT1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/EFT1T_all_frontiers.png?v=1792150972)
 
-The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. Baltic_NetSD and curent_update_baltic are shown as separately labelled portfolio points in every panel. In the Robust panel, the individual-share and Baltic-portfolio points use empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
+The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
 </details>
 
@@ -1987,9 +1987,9 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![TKM1T Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/TKM1T_all_frontiers.png?v=1792134387)
+![TKM1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TKM1T_all_frontiers.png?v=1792150961)
 
-The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. Baltic_NetSD and curent_update_baltic are shown as separately labelled portfolio points in every panel. In the Robust panel, the individual-share and Baltic-portfolio points use empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
+The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
 </details>
 
@@ -2091,9 +2091,9 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![LHV1T Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/LHV1T_all_frontiers.png?v=1792134387)
+![LHV1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/LHV1T_all_frontiers.png?v=1792150973)
 
-The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. Baltic_NetSD and curent_update_baltic are shown as separately labelled portfolio points in every panel. In the Robust panel, the individual-share and Baltic-portfolio points use empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
+The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
 </details>
 
@@ -2195,9 +2195,9 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![CPA1T Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/CPA1T_all_frontiers.png?v=1792134390)
+![CPA1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/CPA1T_all_frontiers.png?v=1792150974)
 
-The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. Baltic_NetSD and curent_update_baltic are shown as separately labelled portfolio points in every panel. In the Robust panel, the individual-share and Baltic-portfolio points use empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
+The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
 </details>
 
@@ -2299,9 +2299,9 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![TVE1T Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/TVE1T_all_frontiers.png?v=1792134392)
+![TVE1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TVE1T_all_frontiers.png?v=1792150970)
 
-The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. Baltic_NetSD and curent_update_baltic are shown as separately labelled portfolio points in every panel. In the Robust panel, the individual-share and Baltic-portfolio points use empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
+The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
 </details>
 
@@ -2403,9 +2403,9 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![SAF1R Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/SAF1R_all_frontiers.png?v=1792134389)
+![SAF1R Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/SAF1R_all_frontiers.png?v=1792150962)
 
-The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. Baltic_NetSD and curent_update_baltic are shown as separately labelled portfolio points in every panel. In the Robust panel, the individual-share and Baltic-portfolio points use empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
+The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
 </details>
 
@@ -2507,9 +2507,9 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![TSM1T Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/TSM1T_all_frontiers.png?v=1792134387)
+![TSM1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TSM1T_all_frontiers.png?v=1792150970)
 
-The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. Baltic_NetSD and curent_update_baltic are shown as separately labelled portfolio points in every panel. In the Robust panel, the individual-share and Baltic-portfolio points use empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
+The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
 </details>
 
