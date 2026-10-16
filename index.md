@@ -51,7 +51,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-16 16:53 (Europe/Vilnius); market data through 2026-10-14
+# Baltic investment plan - updated 2026-10-16 16:57 (Europe/Vilnius); market data through 2026-10-14
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -296,7 +296,7 @@ The starting point is the unmodified current portfolio, which already contains 0
 
 ![KNE1L stochastic dominance](figures/stock_profiles/KNE1L_FSD_SSD_TSD.png?v=1792153639)
 
-The main x-axis is restricted to this share's observed minimum and maximum return. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. The main x-axis is restricted to this share's observed minimum and maximum return. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
 
 <div class="dominance-explorer" data-asset="KNE1L"><p>Open this section to load the interactive curve explorer.</p></div>
 
@@ -402,7 +402,7 @@ The starting point is the unmodified current portfolio, which already contains 0
 
 ![VIRSI stochastic dominance](figures/stock_profiles/VIRSI_FSD_SSD_TSD.png?v=1792153702)
 
-The main x-axis is restricted to this share's observed minimum and maximum return. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. The main x-axis is restricted to this share's observed minimum and maximum return. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
 
 <div class="dominance-explorer" data-asset="VIRSI"><p>Open this section to load the interactive curve explorer.</p></div>
 
@@ -508,7 +508,7 @@ The starting point is the unmodified current portfolio, which already contains 4
 
 ![VLP1L stochastic dominance](figures/stock_profiles/VLP1L_FSD_SSD_TSD.png?v=1792153712)
 
-The main x-axis is restricted to this share's observed minimum and maximum return. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. The main x-axis is restricted to this share's observed minimum and maximum return. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
 
 <div class="dominance-explorer" data-asset="VLP1L"><p>Open this section to load the interactive curve explorer.</p></div>
 
@@ -614,7 +614,7 @@ The starting point is the unmodified current portfolio, which already contains 2
 
 ![MRK1T stochastic dominance](figures/stock_profiles/MRK1T_FSD_SSD_TSD.png?v=1792153535)
 
-The main x-axis is restricted to this share's observed minimum and maximum return. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. The main x-axis is restricted to this share's observed minimum and maximum return. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
 
 <div class="dominance-explorer" data-asset="MRK1T"><p>Open this section to load the interactive curve explorer.</p></div>
 
@@ -720,7 +720,7 @@ The starting point is the unmodified current portfolio, which already contains 0
 
 ![MOLNR stochastic dominance](figures/stock_profiles/MOLNR_FSD_SSD_TSD.png?v=1792153642)
 
-The main x-axis is restricted to this share's observed minimum and maximum return. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. The main x-axis is restricted to this share's observed minimum and maximum return. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
 
 <div class="dominance-explorer" data-asset="MOLNR"><p>Open this section to load the interactive curve explorer.</p></div>
 
@@ -826,7 +826,7 @@ The starting point is the unmodified current portfolio, which already contains 1
 
 ![HAE1T stochastic dominance](figures/stock_profiles/HAE1T_FSD_SSD_TSD.png?v=1792153535)
 
-The main x-axis is restricted to this share's observed minimum and maximum return. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. The main x-axis is restricted to this share's observed minimum and maximum return. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
 
 <div class="dominance-explorer" data-asset="HAE1T"><p>Open this section to load the interactive curve explorer.</p></div>
 
@@ -932,7 +932,7 @@ The starting point is the unmodified current portfolio, which already contains 2
 
 ![APG1L stochastic dominance](figures/stock_profiles/APG1L_FSD_SSD_TSD.png?v=1792153702)
 
-The main x-axis is restricted to this share's observed minimum and maximum return. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. The main x-axis is restricted to this share's observed minimum and maximum return. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
 
 <div class="dominance-explorer" data-asset="APG1L"><p>Open this section to load the interactive curve explorer.</p></div>
 
@@ -1038,7 +1038,7 @@ The starting point is the unmodified current portfolio, which already contains 0
 
 ![GRG1L stochastic dominance](figures/stock_profiles/GRG1L_FSD_SSD_TSD.png?v=1792153705)
 
-The main x-axis is restricted to this share's observed minimum and maximum return. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. The main x-axis is restricted to this share's observed minimum and maximum return. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
 
 <div class="dominance-explorer" data-asset="GRG1L"><p>Open this section to load the interactive curve explorer.</p></div>
 
@@ -1144,7 +1144,7 @@ The starting point is the unmodified current portfolio, which already contains 0
 
 ![RSU1L stochastic dominance](figures/stock_profiles/RSU1L_FSD_SSD_TSD.png?v=1792153614)
 
-The main x-axis is restricted to this share's observed minimum and maximum return. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. The main x-axis is restricted to this share's observed minimum and maximum return. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
 
 <div class="dominance-explorer" data-asset="RSU1L"><p>Open this section to load the interactive curve explorer.</p></div>
 
@@ -1250,7 +1250,7 @@ The starting point is the unmodified current portfolio, which already contains 0
 
 ![IGN1L stochastic dominance](figures/stock_profiles/IGN1L_FSD_SSD_TSD.png?v=1792153704)
 
-The main x-axis is restricted to this share's observed minimum and maximum return. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. The main x-axis is restricted to this share's observed minimum and maximum return. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
 
 <div class="dominance-explorer" data-asset="IGN1L"><p>Open this section to load the interactive curve explorer.</p></div>
 
@@ -1356,7 +1356,7 @@ The starting point is the unmodified current portfolio, which already contains 0
 
 ![PZV1L stochastic dominance](figures/stock_profiles/PZV1L_FSD_SSD_TSD.png?v=1792153600)
 
-The main x-axis is restricted to this share's observed minimum and maximum return. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. The main x-axis is restricted to this share's observed minimum and maximum return. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
 
 <div class="dominance-explorer" data-asset="PZV1L"><p>Open this section to load the interactive curve explorer.</p></div>
 
@@ -1462,7 +1462,7 @@ The starting point is the unmodified current portfolio, which already contains 0
 
 ![AKO1L stochastic dominance](figures/stock_profiles/AKO1L_FSD_SSD_TSD.png?v=1792153543)
 
-The main x-axis is restricted to this share's observed minimum and maximum return. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. The main x-axis is restricted to this share's observed minimum and maximum return. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
 
 <div class="dominance-explorer" data-asset="AKO1L"><p>Open this section to load the interactive curve explorer.</p></div>
 
@@ -1568,7 +1568,7 @@ The starting point is the unmodified current portfolio, which already contains 4
 
 ![ROE1L stochastic dominance](figures/stock_profiles/ROE1L_FSD_SSD_TSD.png?v=1792153630)
 
-The main x-axis is restricted to this share's observed minimum and maximum return. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. The main x-axis is restricted to this share's observed minimum and maximum return. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
 
 <div class="dominance-explorer" data-asset="ROE1L"><p>Open this section to load the interactive curve explorer.</p></div>
 
@@ -1674,7 +1674,7 @@ The starting point is the unmodified current portfolio, which already contains 7
 
 ![TAL1T stochastic dominance](figures/stock_profiles/TAL1T_FSD_SSD_TSD.png?v=1792153705)
 
-The main x-axis is restricted to this share's observed minimum and maximum return. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. The main x-axis is restricted to this share's observed minimum and maximum return. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
 
 <div class="dominance-explorer" data-asset="TAL1T"><p>Open this section to load the interactive curve explorer.</p></div>
 
@@ -1780,7 +1780,7 @@ The starting point is the unmodified current portfolio, which already contains 0
 
 ![DGR1R stochastic dominance](figures/stock_profiles/DGR1R_FSD_SSD_TSD.png?v=1792153692)
 
-The main x-axis is restricted to this share's observed minimum and maximum return. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. The main x-axis is restricted to this share's observed minimum and maximum return. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
 
 <div class="dominance-explorer" data-asset="DGR1R"><p>Open this section to load the interactive curve explorer.</p></div>
 
@@ -1886,7 +1886,7 @@ The starting point is the unmodified current portfolio, which already contains 0
 
 ![TEL1L stochastic dominance](figures/stock_profiles/TEL1L_FSD_SSD_TSD.png?v=1792153711)
 
-The main x-axis is restricted to this share's observed minimum and maximum return. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. The main x-axis is restricted to this share's observed minimum and maximum return. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
 
 <div class="dominance-explorer" data-asset="TEL1L"><p>Open this section to load the interactive curve explorer.</p></div>
 
@@ -1992,7 +1992,7 @@ The starting point is the unmodified current portfolio, which already contains 0
 
 ![EFT1T stochastic dominance](figures/stock_profiles/EFT1T_FSD_SSD_TSD.png?v=1792153532)
 
-The main x-axis is restricted to this share's observed minimum and maximum return. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. The main x-axis is restricted to this share's observed minimum and maximum return. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
 
 <div class="dominance-explorer" data-asset="EFT1T"><p>Open this section to load the interactive curve explorer.</p></div>
 
@@ -2098,7 +2098,7 @@ The starting point is the unmodified current portfolio, which already contains 2
 
 ![TKM1T stochastic dominance](figures/stock_profiles/TKM1T_FSD_SSD_TSD.png?v=1792153533)
 
-The main x-axis is restricted to this share's observed minimum and maximum return. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. The main x-axis is restricted to this share's observed minimum and maximum return. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
 
 <div class="dominance-explorer" data-asset="TKM1T"><p>Open this section to load the interactive curve explorer.</p></div>
 
@@ -2204,7 +2204,7 @@ The starting point is the unmodified current portfolio, which already contains 0
 
 ![LHV1T stochastic dominance](figures/stock_profiles/LHV1T_FSD_SSD_TSD.png?v=1792153535)
 
-The main x-axis is restricted to this share's observed minimum and maximum return. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. The main x-axis is restricted to this share's observed minimum and maximum return. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
 
 <div class="dominance-explorer" data-asset="LHV1T"><p>Open this section to load the interactive curve explorer.</p></div>
 
@@ -2310,7 +2310,7 @@ The starting point is the unmodified current portfolio, which already contains 0
 
 ![CPA1T stochastic dominance](figures/stock_profiles/CPA1T_FSD_SSD_TSD.png?v=1792153637)
 
-The main x-axis is restricted to this share's observed minimum and maximum return. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. The main x-axis is restricted to this share's observed minimum and maximum return. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
 
 <div class="dominance-explorer" data-asset="CPA1T"><p>Open this section to load the interactive curve explorer.</p></div>
 
@@ -2416,7 +2416,7 @@ The starting point is the unmodified current portfolio, which already contains 0
 
 ![TVE1T stochastic dominance](figures/stock_profiles/TVE1T_FSD_SSD_TSD.png?v=1792153692)
 
-The main x-axis is restricted to this share's observed minimum and maximum return. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. The main x-axis is restricted to this share's observed minimum and maximum return. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
 
 <div class="dominance-explorer" data-asset="TVE1T"><p>Open this section to load the interactive curve explorer.</p></div>
 
@@ -2522,7 +2522,7 @@ The starting point is the unmodified current portfolio, which already contains 1
 
 ![SAF1R stochastic dominance](figures/stock_profiles/SAF1R_FSD_SSD_TSD.png?v=1792153627)
 
-The main x-axis is restricted to this share's observed minimum and maximum return. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. The main x-axis is restricted to this share's observed minimum and maximum return. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
 
 <div class="dominance-explorer" data-asset="SAF1R"><p>Open this section to load the interactive curve explorer.</p></div>
 
@@ -2628,7 +2628,7 @@ The starting point is the unmodified current portfolio, which already contains 3
 
 ![TSM1T stochastic dominance](figures/stock_profiles/TSM1T_FSD_SSD_TSD.png?v=1792153534)
 
-The main x-axis is restricted to this share's observed minimum and maximum return. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. The main x-axis is restricted to this share's observed minimum and maximum return. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
 
 <div class="dominance-explorer" data-asset="TSM1T"><p>Open this section to load the interactive curve explorer.</p></div>
 
