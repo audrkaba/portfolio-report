@@ -44,7 +44,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-15 17:21 (Europe/Vilnius); market data through 2026-10-14
+# Baltic investment plan - updated 2026-10-16 09:01 (Europe/Vilnius); market data through 2026-10-14
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -181,109 +181,14 @@ A positive trade_shares value means buy, a negative value means sell, and zero m
 
 Select a share to display its allocation, technical indicators, all PerformanceAnalytics measures and portfolio sensitivity.
 
-<details markdown="1" class="stock-profile" id="share-vlp1l">
-<summary><strong>VLP1L — Vilkyškių pieninė</strong> | SELL | target 65 shares | priority 1</summary>
-
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>42</td><td>65</td><td>+23</td><td>6.77%</td><td>EUR 15.5000</td><td>0.3644</td><td>43 / 0</td><td>62.15</td><td>Bullish</td><td>Above upper band</td><td>1.000 (Overbought)</td><td>SELL</td><td>2026-10-14</td></tr></tbody></table>
-
-![VLP1L Bollinger Bands, RSI(14), MACD and Stochastic RSI — last 126 observations](figures/stock_profiles/VLP1L_technicals_6m.png)
-
-Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations. Stochastic RSI is an additional diagnostic and does not change this existing three-indicator classification.
-
-<details markdown="1">
-<summary>Complete technical history</summary>
-
-![VLP1L complete technical history](figures/technical_analysis/VLP1L_technical.png)
-
-</details>
-
-<details markdown="1">
-<summary>Return histogram</summary>
-
-![VLP1L return histogram](figures/stock_profiles/VLP1L_histogram.png)
-
-</details>
-
-<details markdown="1">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-![VLP1L stochastic dominance](figures/stock_profiles/VLP1L_FSD_SSD_TSD.png)
-
-The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
-
-</details>
-
-<details markdown="1">
-<summary>All 72 PerformanceAnalytics measures: full period and last 126 observations</summary>
-
-| Measure | Full period | Last 126 | Measure | Full period | Last 126 |
-| --- | --- | --- | --- | --- | --- |
-| ActiveReturn | 0.103798 | 0.335868 | M2Sortino | 0.332887 | 0.563470 |
-| AdjustedSharpe | -0.792235 | -2.184440 | MSquaredExcess | 0.044566 | 0.125481 |
-| AnnualizedReturn_Arithmetic | 0.308070 | 0.479041 | Martin | 5.265313 | 9.792844 |
-| AnnualizedReturn_Geometric | 0.332487 | 0.573077 | MaximumDrawdown | 0.157158 | 0.112450 |
-| Appraisal | 1.553874 | 2.408683 | Modigliani | 0.001042 | 0.001302 |
-| ArithmeticReturn | 0.001223 | 0.001901 | NetSelectivity | 0.064232 | 0.226696 |
-| AverageDrawdown | 0.039828 | 0.026784 | Omega | 1.369319 | 1.540203 |
-| AverageDrawdownLength | 25.392857 | 12.444444 | OmegaExcessReturn | 0.290002 | 0.527552 |
-| AverageRecoveryTime | 14.107143 | 7.222222 | PainIndex | 0.047953 | 0.043557 |
-| BernardoLedoit | 1.369319 | 1.540203 | PainRatio | 6.933606 | 13.156916 |
-| BetaCoKurtosis | -0.007644 | 0.180060 | Prospect | -0.392858 | -0.265746 |
-| BetaCoSkewness | -0.725375 | -8.594713 | Rachev | 1.428309 | 1.339621 |
-| Burke | 1.256071 | 4.765844 | Selectivity | 0.319473 | 0.540466 |
-| CAPMAlpha | 0.001173 | 0.001778 | Sharpe_Annualized | 1.495653 | 2.116998 |
-| CAPMBeta | 0.056906 | 0.137476 | Sharpe_Daily | 0.094217 | 0.133358 |
-| CDD | 0.095077 | 0.056340 | Sharpe_ES | 0.050656 | 0.065740 |
-| Calmar | 2.115625 | 5.096293 | Sharpe_VaR | 0.084766 | 0.143087 |
-| CoKurtosis | -0.000000 | 0.000000 | Skewness | 1.859172 | -0.912603 |
-| CoSkewness | -0.000000 | -0.000000 | Sortino | 0.164747 | 0.202250 |
-| CumulativeReturn | 1.360478 | 0.254224 | SpecificRisk | 0.205598 | 0.224383 |
-| DRatio | 0.658191 | 0.533325 | Sterling | 1.292930 | 2.697470 |
-| DownCapture | -0.130313 | -0.061796 | SystematicRisk | 0.009993 | 0.021304 |
-| DownNumber | 0.361635 | 0.396226 | TotalRisk | 0.205841 | 0.225392 |
-| DownPercent | 0.798742 | 0.811321 | TrackingError_Annualized | 0.264105 | 0.261945 |
-| DownsideDeviation | 0.007420 | 0.009399 | TrackingError_Daily | 0.016637 | 0.016501 |
-| DrawdownDeviation | 0.010767 | 0.011334 | Treynor_Annualized | 5.842701 | 4.168566 |
-| ES_Loss | 0.024133 | 0.028916 | Treynor_Daily | 0.020028 | 0.013089 |
-| FamaBeta | 1.173012 | 1.460236 | UlcerIndex | 0.063147 | 0.058520 |
-| GeometricReturn | 0.001140 | 0.001799 | UpCapture | 0.183974 | 0.395549 |
-| Hurst | 0.426761 | 0.450503 | UpNumber | 0.426606 | 0.493151 |
-| Information_Annualized | 0.393018 | 1.282207 | UpPercent | 0.275229 | 0.356164 |
-| Information_Daily | 0.019363 | 0.057835 | UpsidePotential | 0.610832 | 0.576647 |
-| JensenAlpha | 0.319473 | 0.540466 | UpsideRisk | 0.010704 | 0.010810 |
-| Kappa | 0.100544 | 0.111932 | VaR_Loss | 0.014422 | 0.013285 |
-| Kelly | 7.261257 | 9.355517 | Volatility | 0.012975 | 0.014255 |
-| Kurtosis | 24.383907 | 12.156535 | Volatility_Annualized | 0.205977 | 0.226283 |
-
-</details>
-
-<details markdown="1">
-<summary>Portfolio sensitivity</summary>
-
-**Removing this share from curent_update_baltic**
-
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.703390</td><td>-0.110169</td></tr><tr><td>OUT</td><td>96</td><td>83</td><td>-13</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.141760</td><td>-0.006013</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.132985</td><td>-0.028508</td></tr></tbody></table>
-
-The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
-
-**Increasing this existing position in the current portfolio**
-
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>VLP1L shares</td><td>42</td><td>65</td><td>+23</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>8313.351983</td><td>356.500000</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.550847</td><td>0.127119</td></tr><tr><td>OUT</td><td>62</td><td>69</td><td>+7</td></tr><tr><td>IN</td><td>12</td><td>4</td><td>-8</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.081760</td><td>0.011637</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.106162</td><td>0.013810</td></tr></tbody></table>
-
-The starting point is the unmodified current portfolio, which already contains 42 VLP1L shares. The scenario adds 23 shares from Table 3A, resulting in 65 shares; every other holding remains unchanged.
-
-</details>
-
-</details>
-
 <details markdown="1" class="stock-profile" id="share-kne1l">
-<summary><strong>KNE1L — KN Energies</strong> | HOLD | target 1581 shares | priority 2</summary>
+<summary><strong>KNE1L — KN Energies</strong> | HOLD | target 1581 shares | priority 1</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>0</td><td>1581</td><td>+1581</td><td>5.09%</td><td>EUR 0.4830</td><td>0.3729</td><td>44 / 0</td><td>38.03</td><td>Bearish</td><td>Inside bands</td><td>0.084 (Oversold)</td><td>HOLD</td><td>2026-10-14</td></tr></tbody></table>
 
-![KNE1L Bollinger Bands, RSI(14), MACD and Stochastic RSI — last 126 observations](figures/stock_profiles/KNE1L_technicals_6m.png)
+![KNE1L Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/KNE1L_technicals_6m.png)
 
-Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations. Stochastic RSI is an additional diagnostic and does not change this existing three-indicator classification.
+Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -372,13 +277,13 @@ The starting point is the unmodified current portfolio, which already contains 0
 </details>
 
 <details markdown="1" class="stock-profile" id="share-virsi">
-<summary><strong>VIRSI — VIRŠI-A</strong> | HOLD | target 11 shares | priority 3</summary>
+<summary><strong>VIRSI — VIRŠI-A</strong> | HOLD | target 11 shares | priority 2</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>0</td><td>11</td><td>+11</td><td>0.34%</td><td>EUR 4.4200</td><td>0.3729</td><td>44 / 0</td><td>53.63</td><td>Bearish</td><td>Inside bands</td><td>0.000 (Oversold)</td><td>HOLD</td><td>2026-10-14</td></tr></tbody></table>
 
-![VIRSI Bollinger Bands, RSI(14), MACD and Stochastic RSI — last 126 observations](figures/stock_profiles/VIRSI_technicals_6m.png)
+![VIRSI Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/VIRSI_technicals_6m.png)
 
-Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations. Stochastic RSI is an additional diagnostic and does not change this existing three-indicator classification.
+Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -466,14 +371,109 @@ The starting point is the unmodified current portfolio, which already contains 0
 
 </details>
 
+<details markdown="1" class="stock-profile" id="share-vlp1l">
+<summary><strong>VLP1L — Vilkyškių pieninė</strong> | HOLD | target 65 shares | priority 3</summary>
+
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>42</td><td>65</td><td>+23</td><td>6.77%</td><td>EUR 15.5000</td><td>0.3644</td><td>43 / 0</td><td>62.15</td><td>Bullish</td><td>Above upper band</td><td>1.000 (Overbought)</td><td>HOLD</td><td>2026-10-14</td></tr></tbody></table>
+
+![VLP1L Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/VLP1L_technicals_6m.png)
+
+Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
+
+<details markdown="1">
+<summary>Complete technical history</summary>
+
+![VLP1L complete technical history](figures/technical_analysis/VLP1L_technical.png)
+
+</details>
+
+<details markdown="1">
+<summary>Return histogram</summary>
+
+![VLP1L return histogram](figures/stock_profiles/VLP1L_histogram.png)
+
+</details>
+
+<details markdown="1">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+![VLP1L stochastic dominance](figures/stock_profiles/VLP1L_FSD_SSD_TSD.png)
+
+The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
+
+</details>
+
+<details markdown="1">
+<summary>All 72 PerformanceAnalytics measures: full period and last 126 observations</summary>
+
+| Measure | Full period | Last 126 | Measure | Full period | Last 126 |
+| --- | --- | --- | --- | --- | --- |
+| ActiveReturn | 0.103798 | 0.335868 | M2Sortino | 0.332887 | 0.563470 |
+| AdjustedSharpe | -0.792235 | -2.184440 | MSquaredExcess | 0.044566 | 0.125481 |
+| AnnualizedReturn_Arithmetic | 0.308070 | 0.479041 | Martin | 5.265313 | 9.792844 |
+| AnnualizedReturn_Geometric | 0.332487 | 0.573077 | MaximumDrawdown | 0.157158 | 0.112450 |
+| Appraisal | 1.553874 | 2.408683 | Modigliani | 0.001042 | 0.001302 |
+| ArithmeticReturn | 0.001223 | 0.001901 | NetSelectivity | 0.064232 | 0.226696 |
+| AverageDrawdown | 0.039828 | 0.026784 | Omega | 1.369319 | 1.540203 |
+| AverageDrawdownLength | 25.392857 | 12.444444 | OmegaExcessReturn | 0.290002 | 0.527552 |
+| AverageRecoveryTime | 14.107143 | 7.222222 | PainIndex | 0.047953 | 0.043557 |
+| BernardoLedoit | 1.369319 | 1.540203 | PainRatio | 6.933606 | 13.156916 |
+| BetaCoKurtosis | -0.007644 | 0.180060 | Prospect | -0.392858 | -0.265746 |
+| BetaCoSkewness | -0.725375 | -8.594713 | Rachev | 1.428309 | 1.339621 |
+| Burke | 1.256071 | 4.765844 | Selectivity | 0.319473 | 0.540466 |
+| CAPMAlpha | 0.001173 | 0.001778 | Sharpe_Annualized | 1.495653 | 2.116998 |
+| CAPMBeta | 0.056906 | 0.137476 | Sharpe_Daily | 0.094217 | 0.133358 |
+| CDD | 0.095077 | 0.056340 | Sharpe_ES | 0.050656 | 0.065740 |
+| Calmar | 2.115625 | 5.096293 | Sharpe_VaR | 0.084766 | 0.143087 |
+| CoKurtosis | -0.000000 | 0.000000 | Skewness | 1.859172 | -0.912603 |
+| CoSkewness | -0.000000 | -0.000000 | Sortino | 0.164747 | 0.202250 |
+| CumulativeReturn | 1.360478 | 0.254224 | SpecificRisk | 0.205598 | 0.224383 |
+| DRatio | 0.658191 | 0.533325 | Sterling | 1.292930 | 2.697470 |
+| DownCapture | -0.130313 | -0.061796 | SystematicRisk | 0.009993 | 0.021304 |
+| DownNumber | 0.361635 | 0.396226 | TotalRisk | 0.205841 | 0.225392 |
+| DownPercent | 0.798742 | 0.811321 | TrackingError_Annualized | 0.264105 | 0.261945 |
+| DownsideDeviation | 0.007420 | 0.009399 | TrackingError_Daily | 0.016637 | 0.016501 |
+| DrawdownDeviation | 0.010767 | 0.011334 | Treynor_Annualized | 5.842701 | 4.168566 |
+| ES_Loss | 0.024133 | 0.028916 | Treynor_Daily | 0.020028 | 0.013089 |
+| FamaBeta | 1.173012 | 1.460236 | UlcerIndex | 0.063147 | 0.058520 |
+| GeometricReturn | 0.001140 | 0.001799 | UpCapture | 0.183974 | 0.395549 |
+| Hurst | 0.426761 | 0.450503 | UpNumber | 0.426606 | 0.493151 |
+| Information_Annualized | 0.393018 | 1.282207 | UpPercent | 0.275229 | 0.356164 |
+| Information_Daily | 0.019363 | 0.057835 | UpsidePotential | 0.610832 | 0.576647 |
+| JensenAlpha | 0.319473 | 0.540466 | UpsideRisk | 0.010704 | 0.010810 |
+| Kappa | 0.100544 | 0.111932 | VaR_Loss | 0.014422 | 0.013285 |
+| Kelly | 7.261257 | 9.355517 | Volatility | 0.012975 | 0.014255 |
+| Kurtosis | 24.383907 | 12.156535 | Volatility_Annualized | 0.205977 | 0.226283 |
+
+</details>
+
+<details markdown="1">
+<summary>Portfolio sensitivity</summary>
+
+**Removing this share from curent_update_baltic**
+
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.703390</td><td>-0.110169</td></tr><tr><td>OUT</td><td>96</td><td>83</td><td>-13</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.141760</td><td>-0.006013</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.132985</td><td>-0.028508</td></tr></tbody></table>
+
+The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
+
+**Increasing this existing position in the current portfolio**
+
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>VLP1L shares</td><td>42</td><td>65</td><td>+23</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>8313.351983</td><td>356.500000</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.550847</td><td>0.127119</td></tr><tr><td>OUT</td><td>62</td><td>69</td><td>+7</td></tr><tr><td>IN</td><td>12</td><td>4</td><td>-8</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.081760</td><td>0.011637</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.106162</td><td>0.013810</td></tr></tbody></table>
+
+The starting point is the unmodified current portfolio, which already contains 42 VLP1L shares. The scenario adds 23 shares from Table 3A, resulting in 65 shares; every other holding remains unchanged.
+
+</details>
+
+</details>
+
 <details markdown="1" class="stock-profile" id="share-mrk1t">
 <summary><strong>MRK1T — Merko Ehitus</strong> | HOLD | target 33 shares | priority 4</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>20</td><td>33</td><td>+13</td><td>5.97%</td><td>EUR 27.0500</td><td>0.3559</td><td>42 / 0</td><td>47.87</td><td>Bearish</td><td>Inside bands</td><td>0.328 (Neutral)</td><td>HOLD</td><td>2026-10-14</td></tr></tbody></table>
 
-![MRK1T Bollinger Bands, RSI(14), MACD and Stochastic RSI — last 126 observations](figures/stock_profiles/MRK1T_technicals_6m.png)
+![MRK1T Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/MRK1T_technicals_6m.png)
 
-Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations. Stochastic RSI is an additional diagnostic and does not change this existing three-indicator classification.
+Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -566,9 +566,9 @@ The starting point is the unmodified current portfolio, which already contains 2
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>0</td><td>30</td><td>+30</td><td>4.21%</td><td>EUR 20.6000</td><td>0.0424</td><td>5 / 0</td><td>56.42</td><td>Bullish</td><td>Inside bands</td><td>0.466 (Neutral)</td><td>HOLD</td><td>2026-10-14</td></tr></tbody></table>
 
-![MOLNR Bollinger Bands, RSI(14), MACD and Stochastic RSI — last 126 observations](figures/stock_profiles/MOLNR_technicals_6m.png)
+![MOLNR Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/MOLNR_technicals_6m.png)
 
-Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations. Stochastic RSI is an additional diagnostic and does not change this existing three-indicator classification.
+Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -656,299 +656,14 @@ The starting point is the unmodified current portfolio, which already contains 0
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-ign1l">
-<summary><strong>IGN1L — Ignitis grupė</strong> | BUY | target 14 shares | priority 6</summary>
-
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>0</td><td>14</td><td>+14</td><td>2.07%</td><td>EUR 21.8000</td><td>0.3644</td><td>53 / 10</td><td>43.89</td><td>Bullish</td><td>Inside bands</td><td>1.000 (Overbought)</td><td>BUY</td><td>2026-10-14</td></tr></tbody></table>
-
-![IGN1L Bollinger Bands, RSI(14), MACD and Stochastic RSI — last 126 observations](figures/stock_profiles/IGN1L_technicals_6m.png)
-
-Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations. Stochastic RSI is an additional diagnostic and does not change this existing three-indicator classification.
-
-<details markdown="1">
-<summary>Complete technical history</summary>
-
-![IGN1L complete technical history](figures/technical_analysis/IGN1L_technical.png)
-
-</details>
-
-<details markdown="1">
-<summary>Return histogram</summary>
-
-![IGN1L return histogram](figures/stock_profiles/IGN1L_histogram.png)
-
-</details>
-
-<details markdown="1">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-![IGN1L stochastic dominance](figures/stock_profiles/IGN1L_FSD_SSD_TSD.png)
-
-The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
-
-</details>
-
-<details markdown="1">
-<summary>All 72 PerformanceAnalytics measures: full period and last 126 observations</summary>
-
-| Measure | Full period | Last 126 | Measure | Full period | Last 126 |
-| --- | --- | --- | --- | --- | --- |
-| ActiveReturn | -0.206414 | -0.329730 | M2Sortino | 0.023483 | -0.097384 |
-| AdjustedSharpe | 0.263485 | -1.154161 | MSquaredExcess | -0.154606 | -0.345176 |
-| AnnualizedReturn_Arithmetic | 0.027126 | -0.094236 | Martin | 0.259626 | -1.700111 |
-| AnnualizedReturn_Geometric | 0.022275 | -0.092520 | MaximumDrawdown | 0.165620 | 0.083436 |
-| Appraisal | 0.161912 | -1.387410 | Modigliani | 0.000187 | -0.000767 |
-| ArithmeticReturn | 0.000108 | -0.000374 | NetSelectivity | -0.109264 | -0.208123 |
-| AverageDrawdown | 0.044485 | 0.048326 | Omega | 1.054449 | 0.805154 |
-| AverageDrawdownLength | 74.400000 | 63.000000 | OmegaExcessReturn | -0.003127 | -0.109577 |
-| AverageRecoveryTime | 38.900000 | 19.500000 | PainIndex | 0.070307 | 0.050002 |
-| BernardoLedoit | 1.054449 | 0.805154 | PainRatio | 0.316822 | -1.850328 |
-| BetaCoKurtosis | -0.082161 | 0.030921 | Prospect | -0.532723 | -0.787432 |
-| BetaCoSkewness | -3.787258 | -21.478044 | Rachev | 1.039140 | 0.922872 |
-| Burke | 0.127683 | -1.892262 | Selectivity | 0.016326 | -0.103858 |
-| CAPMAlpha | 0.000085 | -0.000417 | Sharpe_Annualized | 0.268574 | -1.247812 |
-| CAPMBeta | 0.026014 | 0.047798 | Sharpe_Daily | 0.016919 | -0.078605 |
-| CDD | 0.109179 | 0.072903 | Sharpe_ES | 0.006979 | -0.035029 |
-| Calmar | 0.134494 | -1.108877 | Sharpe_VaR | 0.011676 | -0.053100 |
-| CoKurtosis | -0.000000 | 0.000000 | Skewness | -0.033254 | 0.049286 |
-| CoSkewness | -0.000001 | -0.000000 | Sortino | 0.024262 | -0.106190 |
-| CumulativeReturn | 0.068138 | -0.047383 | SpecificRisk | 0.100831 | 0.074858 |
-| DRatio | 0.968757 | 1.567283 | Sterling | 0.083860 | -0.504374 |
-| DownCapture | 0.019678 | 0.138513 | SystematicRisk | 0.004568 | 0.007407 |
-| DownNumber | 0.399371 | 0.490566 | TotalRisk | 0.100934 | 0.075223 |
-| DownPercent | 0.874214 | 0.886792 | TrackingError_Annualized | 0.198573 | 0.165594 |
-| DownsideDeviation | 0.004437 | 0.003522 | TrackingError_Daily | 0.012509 | 0.010431 |
-| DrawdownDeviation | 0.007873 | 0.007526 | Treynor_Annualized | 0.856261 | -1.935667 |
-| ES_Loss | 0.015423 | 0.010675 | Treynor_Daily | 0.003361 | -0.008059 |
-| FamaBeta | 0.575188 | 0.487345 | UlcerIndex | 0.085796 | 0.054420 |
-| GeometricReturn | 0.000087 | -0.000385 | UpCapture | 0.040918 | 0.022186 |
-| Hurst | 0.358896 | 0.362031 | UpNumber | 0.383028 | 0.342466 |
-| Information_Annualized | -1.039489 | -1.991189 | UpPercent | 0.162844 | 0.150685 |
-| Information_Daily | -0.058371 | -0.117933 | UpsidePotential | 0.469849 | 0.438804 |
-| JensenAlpha | 0.016326 | -0.103858 | UpsideRisk | 0.004556 | 0.003192 |
-| Kappa | 0.015679 | -0.078562 | VaR_Loss | 0.009219 | 0.007042 |
-| Kelly | 2.659124 | -16.522785 | Volatility | 0.006362 | 0.004757 |
-| Kurtosis | 8.810035 | 3.998859 | Volatility_Annualized | 0.101001 | 0.075521 |
-
-</details>
-
-<details markdown="1">
-<summary>Portfolio sensitivity</summary>
-
-**Removing this share from curent_update_baltic**
-
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.813559</td><td>0.000000</td></tr><tr><td>OUT</td><td>96</td><td>96</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.146862</td><td>-0.000911</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.161498</td><td>0.000006</td></tr></tbody></table>
-
-The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
-
-**Adding this new share to the current portfolio**
-
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>IGN1L shares</td><td>0</td><td>14</td><td>+14</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>8262.051973</td><td>305.199989</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.440678</td><td>0.016949</td></tr><tr><td>OUT</td><td>62</td><td>62</td><td>+0</td></tr><tr><td>IN</td><td>12</td><td>10</td><td>-2</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.071911</td><td>0.001788</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.093427</td><td>0.001075</td></tr></tbody></table>
-
-The starting point is the unmodified current portfolio, which already contains 0 IGN1L shares. The scenario adds 14 shares from Table 3A, resulting in 14 shares; every other holding remains unchanged.
-
-</details>
-
-</details>
-
-<details markdown="1" class="stock-profile" id="share-ako1l">
-<summary><strong>AKO1L — Akola Group</strong> | SELL | target 348 shares | priority 7</summary>
-
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>0</td><td>348</td><td>+348</td><td>4.26%</td><td>EUR 1.8350</td><td>0.1780</td><td>32 / 11</td><td>80.20</td><td>Bullish</td><td>Inside bands</td><td>1.000 (Overbought)</td><td>SELL</td><td>2026-10-14</td></tr></tbody></table>
-
-![AKO1L Bollinger Bands, RSI(14), MACD and Stochastic RSI — last 126 observations](figures/stock_profiles/AKO1L_technicals_6m.png)
-
-Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations. Stochastic RSI is an additional diagnostic and does not change this existing three-indicator classification.
-
-<details markdown="1">
-<summary>Complete technical history</summary>
-
-![AKO1L complete technical history](figures/technical_analysis/AKO1L_technical.png)
-
-</details>
-
-<details markdown="1">
-<summary>Return histogram</summary>
-
-![AKO1L return histogram](figures/stock_profiles/AKO1L_histogram.png)
-
-</details>
-
-<details markdown="1">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-![AKO1L stochastic dominance](figures/stock_profiles/AKO1L_FSD_SSD_TSD.png)
-
-The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
-
-</details>
-
-<details markdown="1">
-<summary>All 72 PerformanceAnalytics measures: full period and last 126 observations</summary>
-
-| Measure | Full period | Last 126 | Measure | Full period | Last 126 |
-| --- | --- | --- | --- | --- | --- |
-| ActiveReturn | -0.190670 | -0.435112 | M2Sortino | 0.037933 | -0.195375 |
-| AdjustedSharpe | 0.288067 | -1.013817 | MSquaredExcess | -0.156572 | -0.343643 |
-| AnnualizedReturn_Arithmetic | 0.054158 | -0.207161 | Martin | 0.149407 | -1.937896 |
-| AnnualizedReturn_Geometric | 0.038019 | -0.197903 | MaximumDrawdown | 0.406184 | 0.167568 |
-| Appraisal | 0.134428 | -1.359501 | Modigliani | 0.000205 | -0.000781 |
-| ArithmeticReturn | 0.000215 | -0.000822 | NetSelectivity | -0.201428 | -0.447675 |
-| AverageDrawdown | 0.070383 | 0.167568 | Omega | 1.061023 | 0.777152 |
-| AverageDrawdownLength | 81.888889 | 126.000000 | OmegaExcessReturn | -0.006462 | -0.236392 |
-| AverageRecoveryTime | 48.222222 | 79.000000 | PainIndex | 0.211197 | 0.088969 |
-| BernardoLedoit | 1.061023 | 0.777152 | PainRatio | 0.180016 | -2.224408 |
-| BetaCoKurtosis | -0.085834 | 0.099825 | Prospect | -0.538978 | -0.683735 |
-| BetaCoSkewness | -4.591177 | -4.726973 | Rachev | 1.112303 | 0.809991 |
-| Burke | 0.127391 | -1.295181 | Selectivity | 0.024661 | -0.220076 |
-| CAPMAlpha | 0.000164 | -0.000905 | Sharpe_Annualized | 0.294564 | -1.269597 |
-| CAPMBeta | 0.058412 | 0.093475 | Sharpe_Daily | 0.018556 | -0.079977 |
-| CDD | 0.203360 | 0.159189 | Sharpe_ES | 0.008461 | -0.030084 |
-| Calmar | 0.093600 | -1.181033 | Sharpe_VaR | 0.012857 | -0.049292 |
-| CoKurtosis | -0.000000 | 0.000000 | Skewness | 0.385739 | -0.509137 |
-| CoSkewness | -0.000001 | -0.000000 | Sortino | 0.027662 | -0.103452 |
-| CumulativeReturn | 0.118116 | -0.104401 | SpecificRisk | 0.183449 | 0.161880 |
-| DRatio | 0.959257 | 1.454587 | Sterling | 0.075109 | -0.739637 |
-| DownCapture | 0.059814 | 0.224273 | SystematicRisk | 0.010257 | 0.014485 |
-| DownNumber | 0.415094 | 0.396226 | TotalRisk | 0.183735 | 0.162527 |
-| DownPercent | 0.789308 | 0.773585 | TrackingError_Annualized | 0.247053 | 0.214823 |
-| DownsideDeviation | 0.007769 | 0.007946 | TrackingError_Daily | 0.015563 | 0.013533 |
-| DrawdownDeviation | 0.016029 | 0.014928 | Treynor_Annualized | 0.650874 | -2.117175 |
-| ES_Loss | 0.025400 | 0.027326 | Treynor_Daily | 0.002535 | -0.009358 |
-| FamaBeta | 1.047039 | 1.052960 | UlcerIndex | 0.254464 | 0.102123 |
-| GeometricReturn | 0.000148 | -0.000875 | UpCapture | 0.097979 | -0.014717 |
-| Hurst | 0.408968 | 0.430814 | UpNumber | 0.389908 | 0.397260 |
-| Information_Annualized | -0.771779 | -2.025444 | UpPercent | 0.238532 | 0.205479 |
-| Information_Daily | -0.043019 | -0.127082 | UpsidePotential | 0.480974 | 0.360774 |
-| JensenAlpha | 0.024661 | -0.220076 | UpsideRisk | 0.008582 | 0.006507 |
-| Kappa | 0.017077 | -0.068466 | VaR_Loss | 0.016716 | 0.016677 |
-| Kelly | 1.602141 | -7.780800 | Volatility | 0.011582 | 0.010279 |
-| Kurtosis | 14.339191 | 7.603804 | Volatility_Annualized | 0.183857 | 0.163170 |
-
-</details>
-
-<details markdown="1">
-<summary>Portfolio sensitivity</summary>
-
-**Removing this share from curent_update_baltic**
-
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.813559</td><td>0.000000</td></tr><tr><td>OUT</td><td>96</td><td>96</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.154683</td><td>0.006910</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.160163</td><td>-0.001329</td></tr></tbody></table>
-
-The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
-
-**Adding this new share to the current portfolio**
-
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>AKO1L shares</td><td>0</td><td>348</td><td>+348</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>8595.431997</td><td>638.580013</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.508475</td><td>0.084746</td></tr><tr><td>OUT</td><td>62</td><td>66</td><td>+4</td></tr><tr><td>IN</td><td>12</td><td>6</td><td>-6</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.052024</td><td>-0.018099</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.097704</td><td>0.005352</td></tr></tbody></table>
-
-The starting point is the unmodified current portfolio, which already contains 0 AKO1L shares. The scenario adds 348 shares from Table 3A, resulting in 348 shares; every other holding remains unchanged.
-
-</details>
-
-</details>
-
-<details markdown="1" class="stock-profile" id="share-tel1l">
-<summary><strong>TEL1L — Telia Lietuva</strong> | SELL | target 11 shares | priority 8</summary>
-
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>0</td><td>11</td><td>+11</td><td>0.17%</td><td>EUR 2.2600</td><td>0.1610</td><td>42 / 23</td><td>77.86</td><td>Bullish</td><td>Inside bands</td><td>1.000 (Overbought)</td><td>SELL</td><td>2026-10-14</td></tr></tbody></table>
-
-![TEL1L Bollinger Bands, RSI(14), MACD and Stochastic RSI — last 126 observations](figures/stock_profiles/TEL1L_technicals_6m.png)
-
-Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations. Stochastic RSI is an additional diagnostic and does not change this existing three-indicator classification.
-
-<details markdown="1">
-<summary>Complete technical history</summary>
-
-![TEL1L complete technical history](figures/technical_analysis/TEL1L_technical.png)
-
-</details>
-
-<details markdown="1">
-<summary>Return histogram</summary>
-
-![TEL1L return histogram](figures/stock_profiles/TEL1L_histogram.png)
-
-</details>
-
-<details markdown="1">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-![TEL1L stochastic dominance](figures/stock_profiles/TEL1L_FSD_SSD_TSD.png)
-
-The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
-
-</details>
-
-<details markdown="1">
-<summary>All 72 PerformanceAnalytics measures: full period and last 126 observations</summary>
-
-| Measure | Full period | Last 126 | Measure | Full period | Last 126 |
-| --- | --- | --- | --- | --- | --- |
-| ActiveReturn | -0.196066 | -0.066828 | M2Sortino | 0.034150 | 0.177795 |
-| AdjustedSharpe | 0.333757 | 1.660770 | MSquaredExcess | -0.141614 | 0.023635 |
-| AnnualizedReturn_Arithmetic | 0.037591 | 0.162236 | Martin | 0.221097 | 7.912122 |
-| AnnualizedReturn_Geometric | 0.032623 | 0.170381 | MaximumDrawdown | 0.225761 | 0.049932 |
-| Appraisal | 0.267278 | 1.722501 | Modigliani | 0.000250 | 0.001007 |
-| ArithmeticReturn | 0.000149 | 0.000644 | NetSelectivity | -0.103792 | 0.018699 |
-| AverageDrawdown | 0.036650 | 0.019687 | Omega | 1.080062 | 1.352935 |
-| AverageDrawdownLength | 66.545455 | 14.500000 | OmegaExcessReturn | 0.006262 | 0.152396 |
-| AverageRecoveryTime | 34.727273 | 7.375000 | PainIndex | 0.125364 | 0.017126 |
-| BernardoLedoit | 1.080062 | 1.352935 | PainRatio | 0.260227 | 9.948620 |
-| BetaCoKurtosis | -0.028307 | 0.076703 | Prospect | -0.473444 | -0.440691 |
-| BetaCoSkewness | -2.565127 | 1.493734 | Rachev | 1.075976 | 1.439696 |
-| Burke | 0.204657 | 3.046626 | Selectivity | 0.027961 | 0.170005 |
-| CAPMAlpha | 0.000131 | 0.000642 | Sharpe_Annualized | 0.358884 | 1.637248 |
-| CAPMBeta | 0.020385 | 0.001586 | Sharpe_Daily | 0.022608 | 0.103137 |
-| CDD | 0.049102 | 0.037483 | Sharpe_ES | 0.009737 | 0.059247 |
-| Calmar | 0.144503 | 3.412236 | Sharpe_VaR | 0.015944 | 0.068966 |
-| CoKurtosis | -0.000000 | 0.000000 | Skewness | -0.329646 | 0.490767 |
-| CoSkewness | -0.000000 | 0.000000 | Sortino | 0.032399 | 0.173382 |
-| CumulativeReturn | 0.100817 | 0.081841 | SpecificRisk | 0.104615 | 0.098696 |
-| DRatio | 0.934140 | 0.701230 | Sterling | 0.100144 | 1.136385 |
-| DownCapture | 0.020832 | -0.120621 | SystematicRisk | 0.003580 | 0.000246 |
-| DownNumber | 0.301887 | 0.283019 | TotalRisk | 0.104676 | 0.098697 |
-| DownPercent | 0.861635 | 0.849057 | TrackingError_Annualized | 0.201367 | 0.183729 |
-| DownsideDeviation | 0.004604 | 0.003713 | TrackingError_Daily | 0.012685 | 0.011574 |
-| DrawdownDeviation | 0.008616 | 0.006146 | Treynor_Annualized | 1.600315 | 107.436660 |
-| ES_Loss | 0.015321 | 0.010866 | Treynor_Daily | 0.006249 | 0.393800 |
-| FamaBeta | 0.596511 | 0.639446 | UlcerIndex | 0.147551 | 0.021534 |
-| GeometricReturn | 0.000127 | 0.000625 | UpCapture | 0.051596 | 0.055064 |
-| Hurst | 0.379338 | 0.373845 | UpNumber | 0.302752 | 0.287671 |
-| Information_Annualized | -0.973675 | -0.363732 | UpPercent | 0.178899 | 0.205479 |
-| Information_Daily | -0.054410 | -0.019053 | UpsidePotential | 0.437074 | 0.664641 |
-| JensenAlpha | 0.027961 | 0.170005 | UpsideRisk | 0.004723 | 0.005028 |
-| Kappa | 0.019352 | 0.126490 | VaR_Loss | 0.009356 | 0.009335 |
-| Kelly | 3.426255 | 16.522720 | Volatility | 0.006598 | 0.006242 |
-| Kurtosis | 12.372385 | 4.070376 | Volatility_Annualized | 0.104745 | 0.099091 |
-
-</details>
-
-<details markdown="1">
-<summary>Portfolio sensitivity</summary>
-
-**Removing this share from curent_update_baltic**
-
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.813559</td><td>0.000000</td></tr><tr><td>OUT</td><td>96</td><td>96</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.147918</td><td>0.000144</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.161502</td><td>0.000010</td></tr></tbody></table>
-
-The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
-
-**Adding this new share to the current portfolio**
-
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>TEL1L shares</td><td>0</td><td>11</td><td>+11</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>7981.711983</td><td>24.860000</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.423729</td><td>0.000000</td></tr><tr><td>OUT</td><td>62</td><td>62</td><td>+0</td></tr><tr><td>IN</td><td>12</td><td>12</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.070044</td><td>-0.000079</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.092422</td><td>0.000070</td></tr></tbody></table>
-
-The starting point is the unmodified current portfolio, which already contains 0 TEL1L shares. The scenario adds 11 shares from Table 3A, resulting in 11 shares; every other holding remains unchanged.
-
-</details>
-
-</details>
-
 <details markdown="1" class="stock-profile" id="share-hae1t">
-<summary><strong>HAE1T — Harju Elekter Group</strong> | SELL | target 101 shares | priority 9</summary>
+<summary><strong>HAE1T — Harju Elekter Group</strong> | SELL | target 101 shares | priority 6</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>100</td><td>101</td><td>+1</td><td>3.75%</td><td>EUR 5.5400</td><td>0.1271</td><td>39 / 24</td><td>74.94</td><td>Bullish</td><td>Above upper band</td><td>1.000 (Overbought)</td><td>SELL</td><td>2026-10-14</td></tr></tbody></table>
 
-![HAE1T Bollinger Bands, RSI(14), MACD and Stochastic RSI — last 126 observations](figures/stock_profiles/HAE1T_technicals_6m.png)
+![HAE1T Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/HAE1T_technicals_6m.png)
 
-Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations. Stochastic RSI is an additional diagnostic and does not change this existing three-indicator classification.
+Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -1037,13 +752,13 @@ The starting point is the unmodified current portfolio, which already contains 1
 </details>
 
 <details markdown="1" class="stock-profile" id="share-apg1l">
-<summary><strong>APG1L — Apranga</strong> | HOLD | target 327 shares | priority 10</summary>
+<summary><strong>APG1L — Apranga</strong> | HOLD | target 327 shares | priority 7</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>200</td><td>327</td><td>+127</td><td>8.33%</td><td>EUR 3.8100</td><td>0.3051</td><td>38 / 2</td><td>33.00</td><td>Bearish</td><td>Inside bands</td><td>0.772 (Neutral)</td><td>HOLD</td><td>2026-10-14</td></tr></tbody></table>
 
-![APG1L Bollinger Bands, RSI(14), MACD and Stochastic RSI — last 126 observations](figures/stock_profiles/APG1L_technicals_6m.png)
+![APG1L Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/APG1L_technicals_6m.png)
 
-Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations. Stochastic RSI is an additional diagnostic and does not change this existing three-indicator classification.
+Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -1132,13 +847,13 @@ The starting point is the unmodified current portfolio, which already contains 2
 </details>
 
 <details markdown="1" class="stock-profile" id="share-grg1l">
-<summary><strong>GRG1L — Grigeo Group</strong> | HOLD | target 722 shares | priority 11</summary>
+<summary><strong>GRG1L — Grigeo Group</strong> | HOLD | target 722 shares | priority 8</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>0</td><td>722</td><td>+722</td><td>4.86%</td><td>EUR 1.0100</td><td>0.3983</td><td>53 / 6</td><td>47.42</td><td>Bullish</td><td>Inside bands</td><td>0.336 (Neutral)</td><td>HOLD</td><td>2026-10-14</td></tr></tbody></table>
 
-![GRG1L Bollinger Bands, RSI(14), MACD and Stochastic RSI — last 126 observations](figures/stock_profiles/GRG1L_technicals_6m.png)
+![GRG1L Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/GRG1L_technicals_6m.png)
 
-Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations. Stochastic RSI is an additional diagnostic and does not change this existing three-indicator classification.
+Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -1227,13 +942,13 @@ The starting point is the unmodified current portfolio, which already contains 0
 </details>
 
 <details markdown="1" class="stock-profile" id="share-rsu1l">
-<summary><strong>RSU1L — Rokiškio sūris</strong> | HOLD | target 116 shares | priority 12</summary>
+<summary><strong>RSU1L — Rokiškio sūris</strong> | HOLD | target 116 shares | priority 9</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>0</td><td>116</td><td>+116</td><td>3.47%</td><td>EUR 4.4800</td><td>0.2373</td><td>35 / 7</td><td>47.35</td><td>Bearish</td><td>Inside bands</td><td>0.331 (Neutral)</td><td>HOLD</td><td>2026-10-14</td></tr></tbody></table>
 
-![RSU1L Bollinger Bands, RSI(14), MACD and Stochastic RSI — last 126 observations](figures/stock_profiles/RSU1L_technicals_6m.png)
+![RSU1L Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/RSU1L_technicals_6m.png)
 
-Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations. Stochastic RSI is an additional diagnostic and does not change this existing three-indicator classification.
+Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -1321,14 +1036,109 @@ The starting point is the unmodified current portfolio, which already contains 0
 
 </details>
 
+<details markdown="1" class="stock-profile" id="share-ign1l">
+<summary><strong>IGN1L — Ignitis grupė</strong> | HOLD | target 14 shares | priority 10</summary>
+
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>0</td><td>14</td><td>+14</td><td>2.07%</td><td>EUR 21.8000</td><td>0.3644</td><td>53 / 10</td><td>43.89</td><td>Bullish</td><td>Inside bands</td><td>1.000 (Overbought)</td><td>HOLD</td><td>2026-10-14</td></tr></tbody></table>
+
+![IGN1L Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/IGN1L_technicals_6m.png)
+
+Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
+
+<details markdown="1">
+<summary>Complete technical history</summary>
+
+![IGN1L complete technical history](figures/technical_analysis/IGN1L_technical.png)
+
+</details>
+
+<details markdown="1">
+<summary>Return histogram</summary>
+
+![IGN1L return histogram](figures/stock_profiles/IGN1L_histogram.png)
+
+</details>
+
+<details markdown="1">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+![IGN1L stochastic dominance](figures/stock_profiles/IGN1L_FSD_SSD_TSD.png)
+
+The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
+
+</details>
+
+<details markdown="1">
+<summary>All 72 PerformanceAnalytics measures: full period and last 126 observations</summary>
+
+| Measure | Full period | Last 126 | Measure | Full period | Last 126 |
+| --- | --- | --- | --- | --- | --- |
+| ActiveReturn | -0.206414 | -0.329730 | M2Sortino | 0.023483 | -0.097384 |
+| AdjustedSharpe | 0.263485 | -1.154161 | MSquaredExcess | -0.154606 | -0.345176 |
+| AnnualizedReturn_Arithmetic | 0.027126 | -0.094236 | Martin | 0.259626 | -1.700111 |
+| AnnualizedReturn_Geometric | 0.022275 | -0.092520 | MaximumDrawdown | 0.165620 | 0.083436 |
+| Appraisal | 0.161912 | -1.387410 | Modigliani | 0.000187 | -0.000767 |
+| ArithmeticReturn | 0.000108 | -0.000374 | NetSelectivity | -0.109264 | -0.208123 |
+| AverageDrawdown | 0.044485 | 0.048326 | Omega | 1.054449 | 0.805154 |
+| AverageDrawdownLength | 74.400000 | 63.000000 | OmegaExcessReturn | -0.003127 | -0.109577 |
+| AverageRecoveryTime | 38.900000 | 19.500000 | PainIndex | 0.070307 | 0.050002 |
+| BernardoLedoit | 1.054449 | 0.805154 | PainRatio | 0.316822 | -1.850328 |
+| BetaCoKurtosis | -0.082161 | 0.030921 | Prospect | -0.532723 | -0.787432 |
+| BetaCoSkewness | -3.787258 | -21.478044 | Rachev | 1.039140 | 0.922872 |
+| Burke | 0.127683 | -1.892262 | Selectivity | 0.016326 | -0.103858 |
+| CAPMAlpha | 0.000085 | -0.000417 | Sharpe_Annualized | 0.268574 | -1.247812 |
+| CAPMBeta | 0.026014 | 0.047798 | Sharpe_Daily | 0.016919 | -0.078605 |
+| CDD | 0.109179 | 0.072903 | Sharpe_ES | 0.006979 | -0.035029 |
+| Calmar | 0.134494 | -1.108877 | Sharpe_VaR | 0.011676 | -0.053100 |
+| CoKurtosis | -0.000000 | 0.000000 | Skewness | -0.033254 | 0.049286 |
+| CoSkewness | -0.000001 | -0.000000 | Sortino | 0.024262 | -0.106190 |
+| CumulativeReturn | 0.068138 | -0.047383 | SpecificRisk | 0.100831 | 0.074858 |
+| DRatio | 0.968757 | 1.567283 | Sterling | 0.083860 | -0.504374 |
+| DownCapture | 0.019678 | 0.138513 | SystematicRisk | 0.004568 | 0.007407 |
+| DownNumber | 0.399371 | 0.490566 | TotalRisk | 0.100934 | 0.075223 |
+| DownPercent | 0.874214 | 0.886792 | TrackingError_Annualized | 0.198573 | 0.165594 |
+| DownsideDeviation | 0.004437 | 0.003522 | TrackingError_Daily | 0.012509 | 0.010431 |
+| DrawdownDeviation | 0.007873 | 0.007526 | Treynor_Annualized | 0.856261 | -1.935667 |
+| ES_Loss | 0.015423 | 0.010675 | Treynor_Daily | 0.003361 | -0.008059 |
+| FamaBeta | 0.575188 | 0.487345 | UlcerIndex | 0.085796 | 0.054420 |
+| GeometricReturn | 0.000087 | -0.000385 | UpCapture | 0.040918 | 0.022186 |
+| Hurst | 0.358896 | 0.362031 | UpNumber | 0.383028 | 0.342466 |
+| Information_Annualized | -1.039489 | -1.991189 | UpPercent | 0.162844 | 0.150685 |
+| Information_Daily | -0.058371 | -0.117933 | UpsidePotential | 0.469849 | 0.438804 |
+| JensenAlpha | 0.016326 | -0.103858 | UpsideRisk | 0.004556 | 0.003192 |
+| Kappa | 0.015679 | -0.078562 | VaR_Loss | 0.009219 | 0.007042 |
+| Kelly | 2.659124 | -16.522785 | Volatility | 0.006362 | 0.004757 |
+| Kurtosis | 8.810035 | 3.998859 | Volatility_Annualized | 0.101001 | 0.075521 |
+
+</details>
+
+<details markdown="1">
+<summary>Portfolio sensitivity</summary>
+
+**Removing this share from curent_update_baltic**
+
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.813559</td><td>0.000000</td></tr><tr><td>OUT</td><td>96</td><td>96</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.146862</td><td>-0.000911</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.161498</td><td>0.000006</td></tr></tbody></table>
+
+The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
+
+**Adding this new share to the current portfolio**
+
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>IGN1L shares</td><td>0</td><td>14</td><td>+14</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>8262.051973</td><td>305.199989</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.440678</td><td>0.016949</td></tr><tr><td>OUT</td><td>62</td><td>62</td><td>+0</td></tr><tr><td>IN</td><td>12</td><td>10</td><td>-2</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.071911</td><td>0.001788</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.093427</td><td>0.001075</td></tr></tbody></table>
+
+The starting point is the unmodified current portfolio, which already contains 0 IGN1L shares. The scenario adds 14 shares from Table 3A, resulting in 14 shares; every other holding remains unchanged.
+
+</details>
+
+</details>
+
 <details markdown="1" class="stock-profile" id="share-pzv1l">
-<summary><strong>PZV1L — Pieno žvaigždės</strong> | HOLD | target 171 shares | priority 13</summary>
+<summary><strong>PZV1L — Pieno žvaigždės</strong> | HOLD | target 171 shares | priority 11</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>0</td><td>171</td><td>+171</td><td>2.04%</td><td>EUR 1.7850</td><td>0.2034</td><td>35 / 11</td><td>57.98</td><td>Bearish</td><td>Inside bands</td><td>0.145 (Oversold)</td><td>HOLD</td><td>2026-10-14</td></tr></tbody></table>
 
-![PZV1L Bollinger Bands, RSI(14), MACD and Stochastic RSI — last 126 observations](figures/stock_profiles/PZV1L_technicals_6m.png)
+![PZV1L Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/PZV1L_technicals_6m.png)
 
-Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations. Stochastic RSI is an additional diagnostic and does not change this existing three-indicator classification.
+Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -1416,14 +1226,109 @@ The starting point is the unmodified current portfolio, which already contains 0
 
 </details>
 
+<details markdown="1" class="stock-profile" id="share-ako1l">
+<summary><strong>AKO1L — Akola Group</strong> | HOLD | target 348 shares | priority 12</summary>
+
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>0</td><td>348</td><td>+348</td><td>4.26%</td><td>EUR 1.8350</td><td>0.1780</td><td>32 / 11</td><td>80.20</td><td>Bullish</td><td>Inside bands</td><td>1.000 (Overbought)</td><td>HOLD</td><td>2026-10-14</td></tr></tbody></table>
+
+![AKO1L Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/AKO1L_technicals_6m.png)
+
+Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
+
+<details markdown="1">
+<summary>Complete technical history</summary>
+
+![AKO1L complete technical history](figures/technical_analysis/AKO1L_technical.png)
+
+</details>
+
+<details markdown="1">
+<summary>Return histogram</summary>
+
+![AKO1L return histogram](figures/stock_profiles/AKO1L_histogram.png)
+
+</details>
+
+<details markdown="1">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+![AKO1L stochastic dominance](figures/stock_profiles/AKO1L_FSD_SSD_TSD.png)
+
+The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
+
+</details>
+
+<details markdown="1">
+<summary>All 72 PerformanceAnalytics measures: full period and last 126 observations</summary>
+
+| Measure | Full period | Last 126 | Measure | Full period | Last 126 |
+| --- | --- | --- | --- | --- | --- |
+| ActiveReturn | -0.190670 | -0.435112 | M2Sortino | 0.037933 | -0.195375 |
+| AdjustedSharpe | 0.288067 | -1.013817 | MSquaredExcess | -0.156572 | -0.343643 |
+| AnnualizedReturn_Arithmetic | 0.054158 | -0.207161 | Martin | 0.149407 | -1.937896 |
+| AnnualizedReturn_Geometric | 0.038019 | -0.197903 | MaximumDrawdown | 0.406184 | 0.167568 |
+| Appraisal | 0.134428 | -1.359501 | Modigliani | 0.000205 | -0.000781 |
+| ArithmeticReturn | 0.000215 | -0.000822 | NetSelectivity | -0.201428 | -0.447675 |
+| AverageDrawdown | 0.070383 | 0.167568 | Omega | 1.061023 | 0.777152 |
+| AverageDrawdownLength | 81.888889 | 126.000000 | OmegaExcessReturn | -0.006462 | -0.236392 |
+| AverageRecoveryTime | 48.222222 | 79.000000 | PainIndex | 0.211197 | 0.088969 |
+| BernardoLedoit | 1.061023 | 0.777152 | PainRatio | 0.180016 | -2.224408 |
+| BetaCoKurtosis | -0.085834 | 0.099825 | Prospect | -0.538978 | -0.683735 |
+| BetaCoSkewness | -4.591177 | -4.726973 | Rachev | 1.112303 | 0.809991 |
+| Burke | 0.127391 | -1.295181 | Selectivity | 0.024661 | -0.220076 |
+| CAPMAlpha | 0.000164 | -0.000905 | Sharpe_Annualized | 0.294564 | -1.269597 |
+| CAPMBeta | 0.058412 | 0.093475 | Sharpe_Daily | 0.018556 | -0.079977 |
+| CDD | 0.203360 | 0.159189 | Sharpe_ES | 0.008461 | -0.030084 |
+| Calmar | 0.093600 | -1.181033 | Sharpe_VaR | 0.012857 | -0.049292 |
+| CoKurtosis | -0.000000 | 0.000000 | Skewness | 0.385739 | -0.509137 |
+| CoSkewness | -0.000001 | -0.000000 | Sortino | 0.027662 | -0.103452 |
+| CumulativeReturn | 0.118116 | -0.104401 | SpecificRisk | 0.183449 | 0.161880 |
+| DRatio | 0.959257 | 1.454587 | Sterling | 0.075109 | -0.739637 |
+| DownCapture | 0.059814 | 0.224273 | SystematicRisk | 0.010257 | 0.014485 |
+| DownNumber | 0.415094 | 0.396226 | TotalRisk | 0.183735 | 0.162527 |
+| DownPercent | 0.789308 | 0.773585 | TrackingError_Annualized | 0.247053 | 0.214823 |
+| DownsideDeviation | 0.007769 | 0.007946 | TrackingError_Daily | 0.015563 | 0.013533 |
+| DrawdownDeviation | 0.016029 | 0.014928 | Treynor_Annualized | 0.650874 | -2.117175 |
+| ES_Loss | 0.025400 | 0.027326 | Treynor_Daily | 0.002535 | -0.009358 |
+| FamaBeta | 1.047039 | 1.052960 | UlcerIndex | 0.254464 | 0.102123 |
+| GeometricReturn | 0.000148 | -0.000875 | UpCapture | 0.097979 | -0.014717 |
+| Hurst | 0.408968 | 0.430814 | UpNumber | 0.389908 | 0.397260 |
+| Information_Annualized | -0.771779 | -2.025444 | UpPercent | 0.238532 | 0.205479 |
+| Information_Daily | -0.043019 | -0.127082 | UpsidePotential | 0.480974 | 0.360774 |
+| JensenAlpha | 0.024661 | -0.220076 | UpsideRisk | 0.008582 | 0.006507 |
+| Kappa | 0.017077 | -0.068466 | VaR_Loss | 0.016716 | 0.016677 |
+| Kelly | 1.602141 | -7.780800 | Volatility | 0.011582 | 0.010279 |
+| Kurtosis | 14.339191 | 7.603804 | Volatility_Annualized | 0.183857 | 0.163170 |
+
+</details>
+
+<details markdown="1">
+<summary>Portfolio sensitivity</summary>
+
+**Removing this share from curent_update_baltic**
+
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.813559</td><td>0.000000</td></tr><tr><td>OUT</td><td>96</td><td>96</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.154683</td><td>0.006910</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.160163</td><td>-0.001329</td></tr></tbody></table>
+
+The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
+
+**Adding this new share to the current portfolio**
+
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>AKO1L shares</td><td>0</td><td>348</td><td>+348</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>8595.431997</td><td>638.580013</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.508475</td><td>0.084746</td></tr><tr><td>OUT</td><td>62</td><td>66</td><td>+4</td></tr><tr><td>IN</td><td>12</td><td>6</td><td>-6</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.052024</td><td>-0.018099</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.097704</td><td>0.005352</td></tr></tbody></table>
+
+The starting point is the unmodified current portfolio, which already contains 0 AKO1L shares. The scenario adds 348 shares from Table 3A, resulting in 348 shares; every other holding remains unchanged.
+
+</details>
+
+</details>
+
 <details markdown="1" class="stock-profile" id="share-roe1l">
-<summary><strong>ROE1L — Artea Bankas</strong> | HOLD | target 422 shares | priority 14</summary>
+<summary><strong>ROE1L — Artea Bankas</strong> | HOLD | target 422 shares | priority 13</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>416</td><td>422</td><td>+6</td><td>2.48%</td><td>EUR 0.8820</td><td>0.1525</td><td>37 / 19</td><td>43.60</td><td>Bearish</td><td>Inside bands</td><td>0.127 (Oversold)</td><td>HOLD</td><td>2026-10-14</td></tr></tbody></table>
 
-![ROE1L Bollinger Bands, RSI(14), MACD and Stochastic RSI — last 126 observations](figures/stock_profiles/ROE1L_technicals_6m.png)
+![ROE1L Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/ROE1L_technicals_6m.png)
 
-Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations. Stochastic RSI is an additional diagnostic and does not change this existing three-indicator classification.
+Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -1512,13 +1417,13 @@ The starting point is the unmodified current portfolio, which already contains 4
 </details>
 
 <details markdown="1" class="stock-profile" id="share-tal1t">
-<summary><strong>TAL1T — Tallink Grupp</strong> | HOLD | target 879 shares | priority 15</summary>
+<summary><strong>TAL1T — Tallink Grupp</strong> | HOLD | target 879 shares | priority 14</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>700</td><td>879</td><td>+179</td><td>3.78%</td><td>EUR 0.6450</td><td>0.0593</td><td>26 / 19</td><td>60.34</td><td>Bearish</td><td>Inside bands</td><td>0.000 (Oversold)</td><td>HOLD</td><td>2026-10-14</td></tr></tbody></table>
 
-![TAL1T Bollinger Bands, RSI(14), MACD and Stochastic RSI — last 126 observations](figures/stock_profiles/TAL1T_technicals_6m.png)
+![TAL1T Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/TAL1T_technicals_6m.png)
 
-Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations. Stochastic RSI is an additional diagnostic and does not change this existing three-indicator classification.
+Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -1607,13 +1512,13 @@ The starting point is the unmodified current portfolio, which already contains 7
 </details>
 
 <details markdown="1" class="stock-profile" id="share-dgr1r">
-<summary><strong>DGR1R — DelfinGroup</strong> | HOLD | target 160 shares | priority 16</summary>
+<summary><strong>DGR1R — DelfinGroup</strong> | HOLD | target 160 shares | priority 15</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>0</td><td>160</td><td>+160</td><td>1.82%</td><td>EUR 1.7050</td><td>0.0339</td><td>26 / 22</td><td>67.67</td><td>Bullish</td><td>Inside bands</td><td>0.536 (Neutral)</td><td>HOLD</td><td>2026-10-14</td></tr></tbody></table>
 
-![DGR1R Bollinger Bands, RSI(14), MACD and Stochastic RSI — last 126 observations](figures/stock_profiles/DGR1R_technicals_6m.png)
+![DGR1R Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/DGR1R_technicals_6m.png)
 
-Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations. Stochastic RSI is an additional diagnostic and does not change this existing three-indicator classification.
+Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -1701,14 +1606,109 @@ The starting point is the unmodified current portfolio, which already contains 0
 
 </details>
 
+<details markdown="1" class="stock-profile" id="share-tel1l">
+<summary><strong>TEL1L — Telia Lietuva</strong> | HOLD | target 11 shares | priority 16</summary>
+
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>0</td><td>11</td><td>+11</td><td>0.17%</td><td>EUR 2.2600</td><td>0.1610</td><td>42 / 23</td><td>77.86</td><td>Bullish</td><td>Inside bands</td><td>1.000 (Overbought)</td><td>HOLD</td><td>2026-10-14</td></tr></tbody></table>
+
+![TEL1L Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/TEL1L_technicals_6m.png)
+
+Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
+
+<details markdown="1">
+<summary>Complete technical history</summary>
+
+![TEL1L complete technical history](figures/technical_analysis/TEL1L_technical.png)
+
+</details>
+
+<details markdown="1">
+<summary>Return histogram</summary>
+
+![TEL1L return histogram](figures/stock_profiles/TEL1L_histogram.png)
+
+</details>
+
+<details markdown="1">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+![TEL1L stochastic dominance](figures/stock_profiles/TEL1L_FSD_SSD_TSD.png)
+
+The lower integrated CDF component is preferred at a given return threshold. Dominance requires the relevant curve to remain no higher over the complete domain, not merely over one interval.
+
+</details>
+
+<details markdown="1">
+<summary>All 72 PerformanceAnalytics measures: full period and last 126 observations</summary>
+
+| Measure | Full period | Last 126 | Measure | Full period | Last 126 |
+| --- | --- | --- | --- | --- | --- |
+| ActiveReturn | -0.196066 | -0.066828 | M2Sortino | 0.034150 | 0.177795 |
+| AdjustedSharpe | 0.333757 | 1.660770 | MSquaredExcess | -0.141614 | 0.023635 |
+| AnnualizedReturn_Arithmetic | 0.037591 | 0.162236 | Martin | 0.221097 | 7.912122 |
+| AnnualizedReturn_Geometric | 0.032623 | 0.170381 | MaximumDrawdown | 0.225761 | 0.049932 |
+| Appraisal | 0.267278 | 1.722501 | Modigliani | 0.000250 | 0.001007 |
+| ArithmeticReturn | 0.000149 | 0.000644 | NetSelectivity | -0.103792 | 0.018699 |
+| AverageDrawdown | 0.036650 | 0.019687 | Omega | 1.080062 | 1.352935 |
+| AverageDrawdownLength | 66.545455 | 14.500000 | OmegaExcessReturn | 0.006262 | 0.152396 |
+| AverageRecoveryTime | 34.727273 | 7.375000 | PainIndex | 0.125364 | 0.017126 |
+| BernardoLedoit | 1.080062 | 1.352935 | PainRatio | 0.260227 | 9.948620 |
+| BetaCoKurtosis | -0.028307 | 0.076703 | Prospect | -0.473444 | -0.440691 |
+| BetaCoSkewness | -2.565127 | 1.493734 | Rachev | 1.075976 | 1.439696 |
+| Burke | 0.204657 | 3.046626 | Selectivity | 0.027961 | 0.170005 |
+| CAPMAlpha | 0.000131 | 0.000642 | Sharpe_Annualized | 0.358884 | 1.637248 |
+| CAPMBeta | 0.020385 | 0.001586 | Sharpe_Daily | 0.022608 | 0.103137 |
+| CDD | 0.049102 | 0.037483 | Sharpe_ES | 0.009737 | 0.059247 |
+| Calmar | 0.144503 | 3.412236 | Sharpe_VaR | 0.015944 | 0.068966 |
+| CoKurtosis | -0.000000 | 0.000000 | Skewness | -0.329646 | 0.490767 |
+| CoSkewness | -0.000000 | 0.000000 | Sortino | 0.032399 | 0.173382 |
+| CumulativeReturn | 0.100817 | 0.081841 | SpecificRisk | 0.104615 | 0.098696 |
+| DRatio | 0.934140 | 0.701230 | Sterling | 0.100144 | 1.136385 |
+| DownCapture | 0.020832 | -0.120621 | SystematicRisk | 0.003580 | 0.000246 |
+| DownNumber | 0.301887 | 0.283019 | TotalRisk | 0.104676 | 0.098697 |
+| DownPercent | 0.861635 | 0.849057 | TrackingError_Annualized | 0.201367 | 0.183729 |
+| DownsideDeviation | 0.004604 | 0.003713 | TrackingError_Daily | 0.012685 | 0.011574 |
+| DrawdownDeviation | 0.008616 | 0.006146 | Treynor_Annualized | 1.600315 | 107.436660 |
+| ES_Loss | 0.015321 | 0.010866 | Treynor_Daily | 0.006249 | 0.393800 |
+| FamaBeta | 0.596511 | 0.639446 | UlcerIndex | 0.147551 | 0.021534 |
+| GeometricReturn | 0.000127 | 0.000625 | UpCapture | 0.051596 | 0.055064 |
+| Hurst | 0.379338 | 0.373845 | UpNumber | 0.302752 | 0.287671 |
+| Information_Annualized | -0.973675 | -0.363732 | UpPercent | 0.178899 | 0.205479 |
+| Information_Daily | -0.054410 | -0.019053 | UpsidePotential | 0.437074 | 0.664641 |
+| JensenAlpha | 0.027961 | 0.170005 | UpsideRisk | 0.004723 | 0.005028 |
+| Kappa | 0.019352 | 0.126490 | VaR_Loss | 0.009356 | 0.009335 |
+| Kelly | 3.426255 | 16.522720 | Volatility | 0.006598 | 0.006242 |
+| Kurtosis | 12.372385 | 4.070376 | Volatility_Annualized | 0.104745 | 0.099091 |
+
+</details>
+
+<details markdown="1">
+<summary>Portfolio sensitivity</summary>
+
+**Removing this share from curent_update_baltic**
+
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.813559</td><td>0.000000</td></tr><tr><td>OUT</td><td>96</td><td>96</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.147918</td><td>0.000144</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.161502</td><td>0.000010</td></tr></tbody></table>
+
+The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
+
+**Adding this new share to the current portfolio**
+
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>TEL1L shares</td><td>0</td><td>11</td><td>+11</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>7981.711983</td><td>24.860000</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.423729</td><td>0.000000</td></tr><tr><td>OUT</td><td>62</td><td>62</td><td>+0</td></tr><tr><td>IN</td><td>12</td><td>12</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.070044</td><td>-0.000079</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.092422</td><td>0.000070</td></tr></tbody></table>
+
+The starting point is the unmodified current portfolio, which already contains 0 TEL1L shares. The scenario adds 11 shares from Table 3A, resulting in 11 shares; every other holding remains unchanged.
+
+</details>
+
+</details>
+
 <details markdown="1" class="stock-profile" id="share-eft1t">
 <summary><strong>EFT1T — EfTEN Real Estate Fund</strong> | HOLD | target 15 shares | priority 17</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>0</td><td>15</td><td>+15</td><td>2.05%</td><td>EUR 19.5500</td><td>0.1102</td><td>36 / 23</td><td>51.02</td><td>Bullish</td><td>Inside bands</td><td>0.577 (Neutral)</td><td>HOLD</td><td>2026-10-14</td></tr></tbody></table>
 
-![EFT1T Bollinger Bands, RSI(14), MACD and Stochastic RSI — last 126 observations](figures/stock_profiles/EFT1T_technicals_6m.png)
+![EFT1T Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/EFT1T_technicals_6m.png)
 
-Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations. Stochastic RSI is an additional diagnostic and does not change this existing three-indicator classification.
+Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -1801,9 +1801,9 @@ The starting point is the unmodified current portfolio, which already contains 0
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>288</td><td>343</td><td>+55</td><td>20.51%</td><td>EUR 8.9600</td><td>0.0508</td><td>29 / 23</td><td>31.65</td><td>Bearish</td><td>Below lower band</td><td>0.000 (Oversold)</td><td>HOLD</td><td>2026-10-14</td></tr></tbody></table>
 
-![TKM1T Bollinger Bands, RSI(14), MACD and Stochastic RSI — last 126 observations](figures/stock_profiles/TKM1T_technicals_6m.png)
+![TKM1T Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/TKM1T_technicals_6m.png)
 
-Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations. Stochastic RSI is an additional diagnostic and does not change this existing three-indicator classification.
+Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -1896,9 +1896,9 @@ The starting point is the unmodified current portfolio, which already contains 2
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>0</td><td>34</td><td>+34</td><td>0.75%</td><td>EUR 3.2550</td><td>0.0847</td><td>34 / 24</td><td>34.21</td><td>Bearish</td><td>Inside bands</td><td>0.409 (Neutral)</td><td>HOLD</td><td>2026-10-14</td></tr></tbody></table>
 
-![LHV1T Bollinger Bands, RSI(14), MACD and Stochastic RSI — last 126 observations](figures/stock_profiles/LHV1T_technicals_6m.png)
+![LHV1T Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/LHV1T_technicals_6m.png)
 
-Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations. Stochastic RSI is an additional diagnostic and does not change this existing three-indicator classification.
+Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -1991,9 +1991,9 @@ The starting point is the unmodified current portfolio, which already contains 0
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>0</td><td>46</td><td>+46</td><td>0.72%</td><td>EUR 2.3400</td><td>0.0508</td><td>30 / 24</td><td>51.24</td><td>Bullish</td><td>Inside bands</td><td>0.692 (Neutral)</td><td>HOLD</td><td>2026-10-14</td></tr></tbody></table>
 
-![CPA1T Bollinger Bands, RSI(14), MACD and Stochastic RSI — last 126 observations](figures/stock_profiles/CPA1T_technicals_6m.png)
+![CPA1T Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/CPA1T_technicals_6m.png)
 
-Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations. Stochastic RSI is an additional diagnostic and does not change this existing three-indicator classification.
+Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -2086,9 +2086,9 @@ The starting point is the unmodified current portfolio, which already contains 0
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>0</td><td>39</td><td>+39</td><td>2.88%</td><td>EUR 10.9000</td><td>0.0424</td><td>31 / 26</td><td>52.49</td><td>Bullish</td><td>Inside bands</td><td>1.000 (Overbought)</td><td>HOLD</td><td>2026-10-14</td></tr></tbody></table>
 
-![TVE1T Bollinger Bands, RSI(14), MACD and Stochastic RSI — last 126 observations](figures/stock_profiles/TVE1T_technicals_6m.png)
+![TVE1T Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/TVE1T_technicals_6m.png)
 
-Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations. Stochastic RSI is an additional diagnostic and does not change this existing three-indicator classification.
+Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -2181,9 +2181,9 @@ The starting point is the unmodified current portfolio, which already contains 0
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>100</td><td>100</td><td>+0</td><td>11.00%</td><td>EUR 16.5000</td><td>-0.1186</td><td>12 / 26</td><td>48.45</td><td>Bearish</td><td>Inside bands</td><td>0.331 (Neutral)</td><td>HOLD</td><td>2026-10-14</td></tr></tbody></table>
 
-![SAF1R Bollinger Bands, RSI(14), MACD and Stochastic RSI — last 126 observations](figures/stock_profiles/SAF1R_technicals_6m.png)
+![SAF1R Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/SAF1R_technicals_6m.png)
 
-Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations. Stochastic RSI is an additional diagnostic and does not change this existing three-indicator classification.
+Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -2276,9 +2276,9 @@ The starting point is the unmodified current portfolio, which already contains 1
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>Observation date</span></th></tr></thead><tbody><tr><td>330</td><td>330</td><td>+0</td><td>2.67%</td><td>EUR 1.2120</td><td>-0.0254</td><td>28 / 31</td><td>46.89</td><td>Bullish</td><td>Inside bands</td><td>1.000 (Overbought)</td><td>HOLD</td><td>2026-10-14</td></tr></tbody></table>
 
-![TSM1T Bollinger Bands, RSI(14), MACD and Stochastic RSI — last 126 observations](figures/stock_profiles/TSM1T_technicals_6m.png)
+![TSM1T Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/TSM1T_technicals_6m.png)
 
-Green/red vertical lines mark unanimous 3-of-3 buy/sell signals. Blue/purple lines mark 2-of-3 buy/sell confirmations. Stochastic RSI is an additional diagnostic and does not change this existing three-indicator classification.
+Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
