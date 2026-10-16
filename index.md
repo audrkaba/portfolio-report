@@ -44,7 +44,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-16 10:07 (Europe/Vilnius); market data through 2026-10-14
+# Baltic investment plan - updated 2026-10-16 10:12 (Europe/Vilnius); market data through 2026-10-14
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -216,9 +216,9 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![KNE1L Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/KNE1L_all_frontiers.png)
+![KNE1L Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/KNE1L_all_frontiers.png?v=1792134390)
 
-The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. In the Robust panel, the individual-share point uses empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
+The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. Baltic_NetSD and curent_update_baltic are shown as separately labelled portfolio points in every panel. In the Robust panel, the individual-share and Baltic-portfolio points use empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
 
 </details>
 
@@ -320,9 +320,9 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![VIRSI Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/VIRSI_all_frontiers.png)
+![VIRSI Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/VIRSI_all_frontiers.png?v=1792134391)
 
-The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. In the Robust panel, the individual-share point uses empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
+The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. Baltic_NetSD and curent_update_baltic are shown as separately labelled portfolio points in every panel. In the Robust panel, the individual-share and Baltic-portfolio points use empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
 
 </details>
 
@@ -424,9 +424,9 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![VLP1L Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/VLP1L_all_frontiers.png)
+![VLP1L Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/VLP1L_all_frontiers.png?v=1792134392)
 
-The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. In the Robust panel, the individual-share point uses empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
+The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. Baltic_NetSD and curent_update_baltic are shown as separately labelled portfolio points in every panel. In the Robust panel, the individual-share and Baltic-portfolio points use empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
 
 </details>
 
@@ -528,9 +528,9 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![MRK1T Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/MRK1T_all_frontiers.png)
+![MRK1T Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/MRK1T_all_frontiers.png?v=1792134387)
 
-The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. In the Robust panel, the individual-share point uses empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
+The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. Baltic_NetSD and curent_update_baltic are shown as separately labelled portfolio points in every panel. In the Robust panel, the individual-share and Baltic-portfolio points use empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
 
 </details>
 
@@ -632,9 +632,9 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![MOLNR Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/MOLNR_all_frontiers.png)
+![MOLNR Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/MOLNR_all_frontiers.png?v=1792134389)
 
-The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. In the Robust panel, the individual-share point uses empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
+The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. Baltic_NetSD and curent_update_baltic are shown as separately labelled portfolio points in every panel. In the Robust panel, the individual-share and Baltic-portfolio points use empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
 
 </details>
 
@@ -736,9 +736,9 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![HAE1T Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/HAE1T_all_frontiers.png)
+![HAE1T Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/HAE1T_all_frontiers.png?v=1792134387)
 
-The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. In the Robust panel, the individual-share point uses empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
+The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. Baltic_NetSD and curent_update_baltic are shown as separately labelled portfolio points in every panel. In the Robust panel, the individual-share and Baltic-portfolio points use empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
 
 </details>
 
@@ -840,9 +840,9 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![APG1L Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/APG1L_all_frontiers.png)
+![APG1L Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/APG1L_all_frontiers.png?v=1792134391)
 
-The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. In the Robust panel, the individual-share point uses empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
+The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. Baltic_NetSD and curent_update_baltic are shown as separately labelled portfolio points in every panel. In the Robust panel, the individual-share and Baltic-portfolio points use empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
 
 </details>
 
@@ -944,9 +944,9 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![GRG1L Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/GRG1L_all_frontiers.png)
+![GRG1L Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/GRG1L_all_frontiers.png?v=1792134392)
 
-The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. In the Robust panel, the individual-share point uses empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
+The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. Baltic_NetSD and curent_update_baltic are shown as separately labelled portfolio points in every panel. In the Robust panel, the individual-share and Baltic-portfolio points use empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
 
 </details>
 
@@ -1048,9 +1048,9 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![RSU1L Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/RSU1L_all_frontiers.png)
+![RSU1L Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/RSU1L_all_frontiers.png?v=1792134390)
 
-The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. In the Robust panel, the individual-share point uses empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
+The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. Baltic_NetSD and curent_update_baltic are shown as separately labelled portfolio points in every panel. In the Robust panel, the individual-share and Baltic-portfolio points use empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
 
 </details>
 
@@ -1152,9 +1152,9 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![IGN1L Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/IGN1L_all_frontiers.png)
+![IGN1L Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/IGN1L_all_frontiers.png?v=1792134392)
 
-The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. In the Robust panel, the individual-share point uses empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
+The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. Baltic_NetSD and curent_update_baltic are shown as separately labelled portfolio points in every panel. In the Robust panel, the individual-share and Baltic-portfolio points use empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
 
 </details>
 
@@ -1256,9 +1256,9 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![PZV1L Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/PZV1L_all_frontiers.png)
+![PZV1L Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/PZV1L_all_frontiers.png?v=1792134390)
 
-The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. In the Robust panel, the individual-share point uses empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
+The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. Baltic_NetSD and curent_update_baltic are shown as separately labelled portfolio points in every panel. In the Robust panel, the individual-share and Baltic-portfolio points use empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
 
 </details>
 
@@ -1360,9 +1360,9 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![AKO1L Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/AKO1L_all_frontiers.png)
+![AKO1L Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/AKO1L_all_frontiers.png?v=1792134387)
 
-The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. In the Robust panel, the individual-share point uses empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
+The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. Baltic_NetSD and curent_update_baltic are shown as separately labelled portfolio points in every panel. In the Robust panel, the individual-share and Baltic-portfolio points use empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
 
 </details>
 
@@ -1464,9 +1464,9 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![ROE1L Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/ROE1L_all_frontiers.png)
+![ROE1L Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/ROE1L_all_frontiers.png?v=1792134390)
 
-The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. In the Robust panel, the individual-share point uses empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
+The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. Baltic_NetSD and curent_update_baltic are shown as separately labelled portfolio points in every panel. In the Robust panel, the individual-share and Baltic-portfolio points use empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
 
 </details>
 
@@ -1568,9 +1568,9 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![TAL1T Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/TAL1T_all_frontiers.png)
+![TAL1T Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/TAL1T_all_frontiers.png?v=1792134391)
 
-The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. In the Robust panel, the individual-share point uses empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
+The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. Baltic_NetSD and curent_update_baltic are shown as separately labelled portfolio points in every panel. In the Robust panel, the individual-share and Baltic-portfolio points use empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
 
 </details>
 
@@ -1672,9 +1672,9 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![DGR1R Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/DGR1R_all_frontiers.png)
+![DGR1R Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/DGR1R_all_frontiers.png?v=1792134392)
 
-The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. In the Robust panel, the individual-share point uses empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
+The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. Baltic_NetSD and curent_update_baltic are shown as separately labelled portfolio points in every panel. In the Robust panel, the individual-share and Baltic-portfolio points use empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
 
 </details>
 
@@ -1776,9 +1776,9 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![TEL1L Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/TEL1L_all_frontiers.png)
+![TEL1L Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/TEL1L_all_frontiers.png?v=1792134392)
 
-The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. In the Robust panel, the individual-share point uses empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
+The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. Baltic_NetSD and curent_update_baltic are shown as separately labelled portfolio points in every panel. In the Robust panel, the individual-share and Baltic-portfolio points use empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
 
 </details>
 
@@ -1880,9 +1880,9 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![EFT1T Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/EFT1T_all_frontiers.png)
+![EFT1T Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/EFT1T_all_frontiers.png?v=1792134387)
 
-The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. In the Robust panel, the individual-share point uses empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
+The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. Baltic_NetSD and curent_update_baltic are shown as separately labelled portfolio points in every panel. In the Robust panel, the individual-share and Baltic-portfolio points use empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
 
 </details>
 
@@ -1984,9 +1984,9 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![TKM1T Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/TKM1T_all_frontiers.png)
+![TKM1T Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/TKM1T_all_frontiers.png?v=1792134387)
 
-The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. In the Robust panel, the individual-share point uses empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
+The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. Baltic_NetSD and curent_update_baltic are shown as separately labelled portfolio points in every panel. In the Robust panel, the individual-share and Baltic-portfolio points use empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
 
 </details>
 
@@ -2088,9 +2088,9 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![LHV1T Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/LHV1T_all_frontiers.png)
+![LHV1T Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/LHV1T_all_frontiers.png?v=1792134387)
 
-The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. In the Robust panel, the individual-share point uses empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
+The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. Baltic_NetSD and curent_update_baltic are shown as separately labelled portfolio points in every panel. In the Robust panel, the individual-share and Baltic-portfolio points use empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
 
 </details>
 
@@ -2192,9 +2192,9 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![CPA1T Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/CPA1T_all_frontiers.png)
+![CPA1T Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/CPA1T_all_frontiers.png?v=1792134390)
 
-The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. In the Robust panel, the individual-share point uses empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
+The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. Baltic_NetSD and curent_update_baltic are shown as separately labelled portfolio points in every panel. In the Robust panel, the individual-share and Baltic-portfolio points use empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
 
 </details>
 
@@ -2296,9 +2296,9 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![TVE1T Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/TVE1T_all_frontiers.png)
+![TVE1T Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/TVE1T_all_frontiers.png?v=1792134392)
 
-The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. In the Robust panel, the individual-share point uses empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
+The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. Baltic_NetSD and curent_update_baltic are shown as separately labelled portfolio points in every panel. In the Robust panel, the individual-share and Baltic-portfolio points use empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
 
 </details>
 
@@ -2400,9 +2400,9 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![SAF1R Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/SAF1R_all_frontiers.png)
+![SAF1R Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/SAF1R_all_frontiers.png?v=1792134389)
 
-The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. In the Robust panel, the individual-share point uses empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
+The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. Baltic_NetSD and curent_update_baltic are shown as separately labelled portfolio points in every panel. In the Robust panel, the individual-share and Baltic-portfolio points use empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
 
 </details>
 
@@ -2504,9 +2504,9 @@ The lower integrated CDF component is preferred at a given return threshold. Dom
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![TSM1T Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/TSM1T_all_frontiers.png)
+![TSM1T Markowitz, MAD, Minimax, Robust and netSD frontiers](figures/stock_profiles/TSM1T_all_frontiers.png?v=1792134387)
 
-The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. In the Robust panel, the individual-share point uses empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
+The highlighted circle is the selected share and pale filled circles are the remaining shares. The five panels show Markowitz, MAD, Minimax, regime-aware Robust mean-CVaR and netSD frontiers. Baltic_NetSD and curent_update_baltic are shown as separately labelled portfolio points in every panel. In the Robust panel, the individual-share and Baltic-portfolio points use empirical 95% CVaR as an approximation, while the portfolio frontier uses worst-regime CVaR. The netSD panel uses the same 527-observation training sample and the same fixed 16-series reference network for its frontier, portfolios and shares. Its horizontal axis is 1 - netSD, so lower is better. netSD is discrete: the line joins only Pareto-nondominated candidates, while hollow grey circles show the rejected numerical candidates; it must not be interpreted as a smooth frontier.
 
 </details>
 
