@@ -44,9 +44,9 @@ img { display:block; max-width:100%; height:auto; margin:1rem auto; border:1px s
 .dominance-controls label { display:grid; gap:3px; color:#29485a; font-size:.86rem; }
 .dominance-controls select,.dominance-controls input { width:100%; }
 .dominance-controls button { min-height:35px; border:1px solid #8aa6b2; border-radius:5px; color:#174d61; background:#eef7f8; cursor:pointer; }
-.dominance-canvas { width:100%; height:980px; border:1px solid var(--line); border-radius:5px; cursor:crosshair; }
+.dominance-canvas { width:100%; height:735px; border:1px solid var(--line); border-radius:5px; cursor:crosshair; }
 .dominance-status { margin:.45rem 0 0; color:#455f70; font-size:.84rem; font-variant-numeric:tabular-nums; }
-@media(max-width:900px) { .dominance-controls { grid-template-columns:1fr 1fr; } .dominance-canvas { height:900px; } }
+@media(max-width:900px) { .dominance-controls { grid-template-columns:1fr 1fr; } .dominance-canvas { height:675px; } }
 a { color:var(--accent); }
 @media(max-width:700px) { main { width:100%; margin:0; padding:22px 14px; border-radius:0; } h1 { font-size:1.7rem; } }
 </style>
