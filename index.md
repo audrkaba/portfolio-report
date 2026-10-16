@@ -44,7 +44,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-16 15:12 (Europe/Vilnius); market data through 2026-10-14
+# Baltic investment plan - updated 2026-10-16 16:26 (Europe/Vilnius); market data through 2026-10-14
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -287,9 +287,9 @@ The starting point is the unmodified current portfolio, which already contains 0
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
-![KNE1L stochastic dominance](figures/stock_profiles/KNE1L_FSD_SSD_TSD.png?v=1792152616)
+![KNE1L stochastic dominance](figures/stock_profiles/KNE1L_FSD_SSD_TSD.png?v=1792153639)
 
-The main x-axis is restricted to this share's observed minimum and maximum return. The dashed rectangle marks the selected comparison zone and the arrow leads to the circular magnifying lens in the lower-right corner. FSD magnifies the centre around FSD = 0.5; SSD and TSD use a much tighter lens covering only the final 10 return thresholds. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
+The main x-axis is restricted to this share's observed minimum and maximum return. A small red circle marks the selected comparison zone; two red common tangents connect it proportionally to the circular magnifying lens. FSD magnifies the centre around FSD = 0.5; SSD and TSD use a much tighter lens covering only the final 10 return thresholds. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
 
 </details>
 
@@ -391,9 +391,9 @@ The starting point is the unmodified current portfolio, which already contains 0
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
-![VIRSI stochastic dominance](figures/stock_profiles/VIRSI_FSD_SSD_TSD.png?v=1792152679)
+![VIRSI stochastic dominance](figures/stock_profiles/VIRSI_FSD_SSD_TSD.png?v=1792153702)
 
-The main x-axis is restricted to this share's observed minimum and maximum return. The dashed rectangle marks the selected comparison zone and the arrow leads to the circular magnifying lens in the lower-right corner. FSD magnifies the centre around FSD = 0.5; SSD and TSD use a much tighter lens covering only the final 10 return thresholds. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
+The main x-axis is restricted to this share's observed minimum and maximum return. A small red circle marks the selected comparison zone; two red common tangents connect it proportionally to the circular magnifying lens. FSD magnifies the centre around FSD = 0.5; SSD and TSD use a much tighter lens covering only the final 10 return thresholds. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
 
 </details>
 
@@ -495,9 +495,9 @@ The starting point is the unmodified current portfolio, which already contains 4
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
-![VLP1L stochastic dominance](figures/stock_profiles/VLP1L_FSD_SSD_TSD.png?v=1792152687)
+![VLP1L stochastic dominance](figures/stock_profiles/VLP1L_FSD_SSD_TSD.png?v=1792153712)
 
-The main x-axis is restricted to this share's observed minimum and maximum return. The dashed rectangle marks the selected comparison zone and the arrow leads to the circular magnifying lens in the lower-right corner. FSD magnifies the centre around FSD = 0.5; SSD and TSD use a much tighter lens covering only the final 10 return thresholds. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
+The main x-axis is restricted to this share's observed minimum and maximum return. A small red circle marks the selected comparison zone; two red common tangents connect it proportionally to the circular magnifying lens. FSD magnifies the centre around FSD = 0.5; SSD and TSD use a much tighter lens covering only the final 10 return thresholds. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
 
 </details>
 
@@ -599,9 +599,9 @@ The starting point is the unmodified current portfolio, which already contains 2
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
-![MRK1T stochastic dominance](figures/stock_profiles/MRK1T_FSD_SSD_TSD.png?v=1792152540)
+![MRK1T stochastic dominance](figures/stock_profiles/MRK1T_FSD_SSD_TSD.png?v=1792153535)
 
-The main x-axis is restricted to this share's observed minimum and maximum return. The dashed rectangle marks the selected comparison zone and the arrow leads to the circular magnifying lens in the lower-right corner. FSD magnifies the centre around FSD = 0.5; SSD and TSD use a much tighter lens covering only the final 10 return thresholds. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
+The main x-axis is restricted to this share's observed minimum and maximum return. A small red circle marks the selected comparison zone; two red common tangents connect it proportionally to the circular magnifying lens. FSD magnifies the centre around FSD = 0.5; SSD and TSD use a much tighter lens covering only the final 10 return thresholds. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
 
 </details>
 
@@ -703,9 +703,9 @@ The starting point is the unmodified current portfolio, which already contains 0
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
-![MOLNR stochastic dominance](figures/stock_profiles/MOLNR_FSD_SSD_TSD.png?v=1792152617)
+![MOLNR stochastic dominance](figures/stock_profiles/MOLNR_FSD_SSD_TSD.png?v=1792153642)
 
-The main x-axis is restricted to this share's observed minimum and maximum return. The dashed rectangle marks the selected comparison zone and the arrow leads to the circular magnifying lens in the lower-right corner. FSD magnifies the centre around FSD = 0.5; SSD and TSD use a much tighter lens covering only the final 10 return thresholds. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
+The main x-axis is restricted to this share's observed minimum and maximum return. A small red circle marks the selected comparison zone; two red common tangents connect it proportionally to the circular magnifying lens. FSD magnifies the centre around FSD = 0.5; SSD and TSD use a much tighter lens covering only the final 10 return thresholds. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
 
 </details>
 
@@ -807,9 +807,9 @@ The starting point is the unmodified current portfolio, which already contains 1
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
-![HAE1T stochastic dominance](figures/stock_profiles/HAE1T_FSD_SSD_TSD.png?v=1792152537)
+![HAE1T stochastic dominance](figures/stock_profiles/HAE1T_FSD_SSD_TSD.png?v=1792153535)
 
-The main x-axis is restricted to this share's observed minimum and maximum return. The dashed rectangle marks the selected comparison zone and the arrow leads to the circular magnifying lens in the lower-right corner. FSD magnifies the centre around FSD = 0.5; SSD and TSD use a much tighter lens covering only the final 10 return thresholds. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
+The main x-axis is restricted to this share's observed minimum and maximum return. A small red circle marks the selected comparison zone; two red common tangents connect it proportionally to the circular magnifying lens. FSD magnifies the centre around FSD = 0.5; SSD and TSD use a much tighter lens covering only the final 10 return thresholds. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
 
 </details>
 
@@ -911,9 +911,9 @@ The starting point is the unmodified current portfolio, which already contains 2
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
-![APG1L stochastic dominance](figures/stock_profiles/APG1L_FSD_SSD_TSD.png?v=1792152668)
+![APG1L stochastic dominance](figures/stock_profiles/APG1L_FSD_SSD_TSD.png?v=1792153702)
 
-The main x-axis is restricted to this share's observed minimum and maximum return. The dashed rectangle marks the selected comparison zone and the arrow leads to the circular magnifying lens in the lower-right corner. FSD magnifies the centre around FSD = 0.5; SSD and TSD use a much tighter lens covering only the final 10 return thresholds. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
+The main x-axis is restricted to this share's observed minimum and maximum return. A small red circle marks the selected comparison zone; two red common tangents connect it proportionally to the circular magnifying lens. FSD magnifies the centre around FSD = 0.5; SSD and TSD use a much tighter lens covering only the final 10 return thresholds. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
 
 </details>
 
@@ -1015,9 +1015,9 @@ The starting point is the unmodified current portfolio, which already contains 0
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
-![GRG1L stochastic dominance](figures/stock_profiles/GRG1L_FSD_SSD_TSD.png?v=1792152674)
+![GRG1L stochastic dominance](figures/stock_profiles/GRG1L_FSD_SSD_TSD.png?v=1792153705)
 
-The main x-axis is restricted to this share's observed minimum and maximum return. The dashed rectangle marks the selected comparison zone and the arrow leads to the circular magnifying lens in the lower-right corner. FSD magnifies the centre around FSD = 0.5; SSD and TSD use a much tighter lens covering only the final 10 return thresholds. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
+The main x-axis is restricted to this share's observed minimum and maximum return. A small red circle marks the selected comparison zone; two red common tangents connect it proportionally to the circular magnifying lens. FSD magnifies the centre around FSD = 0.5; SSD and TSD use a much tighter lens covering only the final 10 return thresholds. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
 
 </details>
 
@@ -1119,9 +1119,9 @@ The starting point is the unmodified current portfolio, which already contains 0
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
-![RSU1L stochastic dominance](figures/stock_profiles/RSU1L_FSD_SSD_TSD.png?v=1792152592)
+![RSU1L stochastic dominance](figures/stock_profiles/RSU1L_FSD_SSD_TSD.png?v=1792153614)
 
-The main x-axis is restricted to this share's observed minimum and maximum return. The dashed rectangle marks the selected comparison zone and the arrow leads to the circular magnifying lens in the lower-right corner. FSD magnifies the centre around FSD = 0.5; SSD and TSD use a much tighter lens covering only the final 10 return thresholds. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
+The main x-axis is restricted to this share's observed minimum and maximum return. A small red circle marks the selected comparison zone; two red common tangents connect it proportionally to the circular magnifying lens. FSD magnifies the centre around FSD = 0.5; SSD and TSD use a much tighter lens covering only the final 10 return thresholds. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
 
 </details>
 
@@ -1223,9 +1223,9 @@ The starting point is the unmodified current portfolio, which already contains 0
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
-![IGN1L stochastic dominance](figures/stock_profiles/IGN1L_FSD_SSD_TSD.png?v=1792152670)
+![IGN1L stochastic dominance](figures/stock_profiles/IGN1L_FSD_SSD_TSD.png?v=1792153704)
 
-The main x-axis is restricted to this share's observed minimum and maximum return. The dashed rectangle marks the selected comparison zone and the arrow leads to the circular magnifying lens in the lower-right corner. FSD magnifies the centre around FSD = 0.5; SSD and TSD use a much tighter lens covering only the final 10 return thresholds. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
+The main x-axis is restricted to this share's observed minimum and maximum return. A small red circle marks the selected comparison zone; two red common tangents connect it proportionally to the circular magnifying lens. FSD magnifies the centre around FSD = 0.5; SSD and TSD use a much tighter lens covering only the final 10 return thresholds. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
 
 </details>
 
@@ -1327,9 +1327,9 @@ The starting point is the unmodified current portfolio, which already contains 0
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
-![PZV1L stochastic dominance](figures/stock_profiles/PZV1L_FSD_SSD_TSD.png?v=1792152613)
+![PZV1L stochastic dominance](figures/stock_profiles/PZV1L_FSD_SSD_TSD.png?v=1792153600)
 
-The main x-axis is restricted to this share's observed minimum and maximum return. The dashed rectangle marks the selected comparison zone and the arrow leads to the circular magnifying lens in the lower-right corner. FSD magnifies the centre around FSD = 0.5; SSD and TSD use a much tighter lens covering only the final 10 return thresholds. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
+The main x-axis is restricted to this share's observed minimum and maximum return. A small red circle marks the selected comparison zone; two red common tangents connect it proportionally to the circular magnifying lens. FSD magnifies the centre around FSD = 0.5; SSD and TSD use a much tighter lens covering only the final 10 return thresholds. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
 
 </details>
 
@@ -1431,9 +1431,9 @@ The starting point is the unmodified current portfolio, which already contains 0
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
-![AKO1L stochastic dominance](figures/stock_profiles/AKO1L_FSD_SSD_TSD.png?v=1792152544)
+![AKO1L stochastic dominance](figures/stock_profiles/AKO1L_FSD_SSD_TSD.png?v=1792153543)
 
-The main x-axis is restricted to this share's observed minimum and maximum return. The dashed rectangle marks the selected comparison zone and the arrow leads to the circular magnifying lens in the lower-right corner. FSD magnifies the centre around FSD = 0.5; SSD and TSD use a much tighter lens covering only the final 10 return thresholds. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
+The main x-axis is restricted to this share's observed minimum and maximum return. A small red circle marks the selected comparison zone; two red common tangents connect it proportionally to the circular magnifying lens. FSD magnifies the centre around FSD = 0.5; SSD and TSD use a much tighter lens covering only the final 10 return thresholds. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
 
 </details>
 
@@ -1535,9 +1535,9 @@ The starting point is the unmodified current portfolio, which already contains 4
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
-![ROE1L stochastic dominance](figures/stock_profiles/ROE1L_FSD_SSD_TSD.png?v=1792152614)
+![ROE1L stochastic dominance](figures/stock_profiles/ROE1L_FSD_SSD_TSD.png?v=1792153630)
 
-The main x-axis is restricted to this share's observed minimum and maximum return. The dashed rectangle marks the selected comparison zone and the arrow leads to the circular magnifying lens in the lower-right corner. FSD magnifies the centre around FSD = 0.5; SSD and TSD use a much tighter lens covering only the final 10 return thresholds. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
+The main x-axis is restricted to this share's observed minimum and maximum return. A small red circle marks the selected comparison zone; two red common tangents connect it proportionally to the circular magnifying lens. FSD magnifies the centre around FSD = 0.5; SSD and TSD use a much tighter lens covering only the final 10 return thresholds. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
 
 </details>
 
@@ -1639,9 +1639,9 @@ The starting point is the unmodified current portfolio, which already contains 7
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
-![TAL1T stochastic dominance](figures/stock_profiles/TAL1T_FSD_SSD_TSD.png?v=1792152679)
+![TAL1T stochastic dominance](figures/stock_profiles/TAL1T_FSD_SSD_TSD.png?v=1792153705)
 
-The main x-axis is restricted to this share's observed minimum and maximum return. The dashed rectangle marks the selected comparison zone and the arrow leads to the circular magnifying lens in the lower-right corner. FSD magnifies the centre around FSD = 0.5; SSD and TSD use a much tighter lens covering only the final 10 return thresholds. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
+The main x-axis is restricted to this share's observed minimum and maximum return. A small red circle marks the selected comparison zone; two red common tangents connect it proportionally to the circular magnifying lens. FSD magnifies the centre around FSD = 0.5; SSD and TSD use a much tighter lens covering only the final 10 return thresholds. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
 
 </details>
 
@@ -1743,9 +1743,9 @@ The starting point is the unmodified current portfolio, which already contains 0
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
-![DGR1R stochastic dominance](figures/stock_profiles/DGR1R_FSD_SSD_TSD.png?v=1792152662)
+![DGR1R stochastic dominance](figures/stock_profiles/DGR1R_FSD_SSD_TSD.png?v=1792153692)
 
-The main x-axis is restricted to this share's observed minimum and maximum return. The dashed rectangle marks the selected comparison zone and the arrow leads to the circular magnifying lens in the lower-right corner. FSD magnifies the centre around FSD = 0.5; SSD and TSD use a much tighter lens covering only the final 10 return thresholds. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
+The main x-axis is restricted to this share's observed minimum and maximum return. A small red circle marks the selected comparison zone; two red common tangents connect it proportionally to the circular magnifying lens. FSD magnifies the centre around FSD = 0.5; SSD and TSD use a much tighter lens covering only the final 10 return thresholds. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
 
 </details>
 
@@ -1847,9 +1847,9 @@ The starting point is the unmodified current portfolio, which already contains 0
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
-![TEL1L stochastic dominance](figures/stock_profiles/TEL1L_FSD_SSD_TSD.png?v=1792152689)
+![TEL1L stochastic dominance](figures/stock_profiles/TEL1L_FSD_SSD_TSD.png?v=1792153711)
 
-The main x-axis is restricted to this share's observed minimum and maximum return. The dashed rectangle marks the selected comparison zone and the arrow leads to the circular magnifying lens in the lower-right corner. FSD magnifies the centre around FSD = 0.5; SSD and TSD use a much tighter lens covering only the final 10 return thresholds. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
+The main x-axis is restricted to this share's observed minimum and maximum return. A small red circle marks the selected comparison zone; two red common tangents connect it proportionally to the circular magnifying lens. FSD magnifies the centre around FSD = 0.5; SSD and TSD use a much tighter lens covering only the final 10 return thresholds. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
 
 </details>
 
@@ -1951,9 +1951,9 @@ The starting point is the unmodified current portfolio, which already contains 0
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
-![EFT1T stochastic dominance](figures/stock_profiles/EFT1T_FSD_SSD_TSD.png?v=1792152525)
+![EFT1T stochastic dominance](figures/stock_profiles/EFT1T_FSD_SSD_TSD.png?v=1792153532)
 
-The main x-axis is restricted to this share's observed minimum and maximum return. The dashed rectangle marks the selected comparison zone and the arrow leads to the circular magnifying lens in the lower-right corner. FSD magnifies the centre around FSD = 0.5; SSD and TSD use a much tighter lens covering only the final 10 return thresholds. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
+The main x-axis is restricted to this share's observed minimum and maximum return. A small red circle marks the selected comparison zone; two red common tangents connect it proportionally to the circular magnifying lens. FSD magnifies the centre around FSD = 0.5; SSD and TSD use a much tighter lens covering only the final 10 return thresholds. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
 
 </details>
 
@@ -2055,9 +2055,9 @@ The starting point is the unmodified current portfolio, which already contains 2
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
-![TKM1T stochastic dominance](figures/stock_profiles/TKM1T_FSD_SSD_TSD.png?v=1792152536)
+![TKM1T stochastic dominance](figures/stock_profiles/TKM1T_FSD_SSD_TSD.png?v=1792153533)
 
-The main x-axis is restricted to this share's observed minimum and maximum return. The dashed rectangle marks the selected comparison zone and the arrow leads to the circular magnifying lens in the lower-right corner. FSD magnifies the centre around FSD = 0.5; SSD and TSD use a much tighter lens covering only the final 10 return thresholds. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
+The main x-axis is restricted to this share's observed minimum and maximum return. A small red circle marks the selected comparison zone; two red common tangents connect it proportionally to the circular magnifying lens. FSD magnifies the centre around FSD = 0.5; SSD and TSD use a much tighter lens covering only the final 10 return thresholds. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
 
 </details>
 
@@ -2159,9 +2159,9 @@ The starting point is the unmodified current portfolio, which already contains 0
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
-![LHV1T stochastic dominance](figures/stock_profiles/LHV1T_FSD_SSD_TSD.png?v=1792152543)
+![LHV1T stochastic dominance](figures/stock_profiles/LHV1T_FSD_SSD_TSD.png?v=1792153535)
 
-The main x-axis is restricted to this share's observed minimum and maximum return. The dashed rectangle marks the selected comparison zone and the arrow leads to the circular magnifying lens in the lower-right corner. FSD magnifies the centre around FSD = 0.5; SSD and TSD use a much tighter lens covering only the final 10 return thresholds. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
+The main x-axis is restricted to this share's observed minimum and maximum return. A small red circle marks the selected comparison zone; two red common tangents connect it proportionally to the circular magnifying lens. FSD magnifies the centre around FSD = 0.5; SSD and TSD use a much tighter lens covering only the final 10 return thresholds. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
 
 </details>
 
@@ -2263,9 +2263,9 @@ The starting point is the unmodified current portfolio, which already contains 0
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
-![CPA1T stochastic dominance](figures/stock_profiles/CPA1T_FSD_SSD_TSD.png?v=1792152628)
+![CPA1T stochastic dominance](figures/stock_profiles/CPA1T_FSD_SSD_TSD.png?v=1792153637)
 
-The main x-axis is restricted to this share's observed minimum and maximum return. The dashed rectangle marks the selected comparison zone and the arrow leads to the circular magnifying lens in the lower-right corner. FSD magnifies the centre around FSD = 0.5; SSD and TSD use a much tighter lens covering only the final 10 return thresholds. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
+The main x-axis is restricted to this share's observed minimum and maximum return. A small red circle marks the selected comparison zone; two red common tangents connect it proportionally to the circular magnifying lens. FSD magnifies the centre around FSD = 0.5; SSD and TSD use a much tighter lens covering only the final 10 return thresholds. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
 
 </details>
 
@@ -2367,9 +2367,9 @@ The starting point is the unmodified current portfolio, which already contains 0
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
-![TVE1T stochastic dominance](figures/stock_profiles/TVE1T_FSD_SSD_TSD.png?v=1792152660)
+![TVE1T stochastic dominance](figures/stock_profiles/TVE1T_FSD_SSD_TSD.png?v=1792153692)
 
-The main x-axis is restricted to this share's observed minimum and maximum return. The dashed rectangle marks the selected comparison zone and the arrow leads to the circular magnifying lens in the lower-right corner. FSD magnifies the centre around FSD = 0.5; SSD and TSD use a much tighter lens covering only the final 10 return thresholds. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
+The main x-axis is restricted to this share's observed minimum and maximum return. A small red circle marks the selected comparison zone; two red common tangents connect it proportionally to the circular magnifying lens. FSD magnifies the centre around FSD = 0.5; SSD and TSD use a much tighter lens covering only the final 10 return thresholds. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
 
 </details>
 
@@ -2471,9 +2471,9 @@ The starting point is the unmodified current portfolio, which already contains 1
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
-![SAF1R stochastic dominance](figures/stock_profiles/SAF1R_FSD_SSD_TSD.png?v=1792152614)
+![SAF1R stochastic dominance](figures/stock_profiles/SAF1R_FSD_SSD_TSD.png?v=1792153627)
 
-The main x-axis is restricted to this share's observed minimum and maximum return. The dashed rectangle marks the selected comparison zone and the arrow leads to the circular magnifying lens in the lower-right corner. FSD magnifies the centre around FSD = 0.5; SSD and TSD use a much tighter lens covering only the final 10 return thresholds. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
+The main x-axis is restricted to this share's observed minimum and maximum return. A small red circle marks the selected comparison zone; two red common tangents connect it proportionally to the circular magnifying lens. FSD magnifies the centre around FSD = 0.5; SSD and TSD use a much tighter lens covering only the final 10 return thresholds. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
 
 </details>
 
@@ -2575,9 +2575,9 @@ The starting point is the unmodified current portfolio, which already contains 3
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
-![TSM1T stochastic dominance](figures/stock_profiles/TSM1T_FSD_SSD_TSD.png?v=1792152541)
+![TSM1T stochastic dominance](figures/stock_profiles/TSM1T_FSD_SSD_TSD.png?v=1792153534)
 
-The main x-axis is restricted to this share's observed minimum and maximum return. The dashed rectangle marks the selected comparison zone and the arrow leads to the circular magnifying lens in the lower-right corner. FSD magnifies the centre around FSD = 0.5; SSD and TSD use a much tighter lens covering only the final 10 return thresholds. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
+The main x-axis is restricted to this share's observed minimum and maximum return. A small red circle marks the selected comparison zone; two red common tangents connect it proportionally to the circular magnifying lens. FSD magnifies the centre around FSD = 0.5; SSD and TSD use a much tighter lens covering only the final 10 return thresholds. Lower integrated-CDF components are preferred, but dominance requires the relevant curve to remain no higher over the complete displayed domain.
 
 </details>
 
