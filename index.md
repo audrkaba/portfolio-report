@@ -44,7 +44,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-16 09:49 (Europe/Vilnius); market data through 2026-10-14
+# Baltic investment plan - updated 2026-10-16 10:07 (Europe/Vilnius); market data through 2026-10-14
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -2659,8 +2659,9 @@ curent_update_baltic keeps every currently held share, permits purchases only, a
 
 | Portfolio | netSD | OUT | IN | denominator | mean | SD | Historical dividends EUR | Portfolio value EUR |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Current | 0.451327 | 59 | 8 | 113 | 0.000375 | 0.005654 | 1394.136000 | 8044.380051 |
-| Optimised | 0.902655 | 102 | 0 | 113 | 0.000597 | 0.004457 | 2109.244117 | 15000.000000 |
+| Current | 0.423729 | 62 | 12 | 118 | 0.000349 | 0.005498 | 1394.136000 | 7956.851983 |
+| Optimised | 0.864407 | 102 | 0 | 118 | 0.000576 | 0.004512 | 2222.386006 | 15000.000000 |
+| curent_update_baltic | 0.813559 | 96 | 0 | 118 | 0.000451 | 0.004252 | 2430.492621 | 14930.436965 |
 
 </details>
 
