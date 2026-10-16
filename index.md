@@ -51,7 +51,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-16 16:57 (Europe/Vilnius); market data through 2026-10-14
+# Baltic investment plan - updated 2026-10-16 17:32 (Europe/Vilnius); market data through 2026-10-14
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -223,6 +223,55 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 </details>
 
+<details markdown="1" class="seasonality-section">
+<summary>Seasonality, drawdowns and upside periods</summary>
+
+The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
+
+| Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- |
+| Maximum drawdown | -26.64% (2023-12-20) | Average gain / average loss | 1.215 | Best 21-day period | 25.23% (ending 2025-12-08) |
+| Average underwater drawdown | 10.90% | Upside potential ratio | 1.451 | Worst 21-day period | -9.36% (ending 2024-02-12) |
+| Conditional drawdown 95% | 25.00% | Upside capture vs Baltic EW | 113.0% | Best 5-day period | 14.81% (ending 2025-12-05) |
+| Ulcer index | 12.93 | Downside capture vs Baltic EW | 54.0% | Best 63-day period | 44.90% (ending 2026-01-09) |
+| Longest underwater period | 728 calendar days | Positive trading days | 37.6% | Repeated calendar pattern | Jan: 100% positive across 4 years |
+| Daily downside deviation | 0.747% | Best day | 8.61% (2024-01-08) |  |  |
+| Daily upside deviation | 0.972% | Worst day | -7.37% (2025-05-14) |  |  |
+
+**Calendar-effect tests and observed averages**
+
+| Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
+| --- | --- | --- | --- | --- |
+| Weekday | Best: Friday (0.282%); worst: Monday (-0.061%) | 0.0237 | 0.1363 | Not detected |
+| Calendar month | Best: Jan (0.533% daily); worst: Mar (-0.167% daily) | 0.4280 | 0.5791 | Not detected |
+| Turn of month | First/last three days: 0.242%; other days: 0.046% | 0.0655 | 0.3767 | Not detected |
+
+![KNE1L seasonality, drawdowns and upside periods](figures/stock_profiles/KNE1L_seasonality.png?v=1792161056)
+
+**Five deepest drawdown episodes**
+
+| Rank | Peak | Trough | Recovery | Loss | Underwater days |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 2023-01-27 | 2023-12-20 | 2025-01-24 | -26.64% | 728 |
+| 2 | 2026-01-09 | 2026-03-27 | 2026-05-05 | -10.77% | 116 |
+| 3 | 2026-05-08 | 2026-05-20 | 2026-06-02 | -10.23% | 25 |
+| 4 | 2025-05-13 | 2025-06-25 | 2025-08-22 | -8.33% | 101 |
+| 5 | 2025-02-28 | 2025-03-06 | 2025-04-14 | -5.56% | 45 |
+
+**Five strongest non-overlapping 21-trading-day rises**
+
+| Rank | Start | End | 21-day return |
+| --- | --- | --- | --- |
+| 1 | 2025-11-05 | 2025-12-08 | 25.23% |
+| 2 | 2024-12-17 | 2025-01-24 | 15.61% |
+| 3 | 2023-12-11 | 2024-01-12 | 14.63% |
+| 4 | 2025-12-10 | 2026-01-16 | 13.77% |
+| 5 | 2025-04-07 | 2025-05-13 | 13.45% |
+
+The dated extremes identify where company announcements, dividends, corporate actions or data anomalies should be checked. A repeated calendar average is descriptive until it survives the adjusted test and a later out-of-sample period; it is not by itself a buy or sell signal.
+
+</details>
+
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
@@ -326,6 +375,55 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <summary>Return histogram</summary>
 
 ![VIRSI return histogram](figures/stock_profiles/VIRSI_histogram.png?v=1792150405)
+
+</details>
+
+<details markdown="1" class="seasonality-section">
+<summary>Seasonality, drawdowns and upside periods</summary>
+
+The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
+
+| Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- |
+| Maximum drawdown | -16.89% (2025-11-06) | Average gain / average loss | 1.008 | Best 21-day period | 10.50% (ending 2026-08-14) |
+| Average underwater drawdown | 7.26% | Upside potential ratio | 1.387 | Worst 21-day period | -4.29% (ending 2024-07-03) |
+| Conditional drawdown 95% | 15.97% | Upside capture vs Baltic EW | 19.3% | Best 5-day period | 7.41% (ending 2026-08-13) |
+| Ulcer index | 8.49 | Downside capture vs Baltic EW | 19.2% | Best 63-day period | 10.75% (ending 2026-10-12) |
+| Longest underwater period | 1232 calendar days | Positive trading days | 33.0% | Repeated calendar pattern | Jun: 0% positive across 4 years |
+| Daily downside deviation | 0.323% | Best day | 3.88% (2026-01-05) |  |  |
+| Daily upside deviation | 0.342% | Worst day | -2.56% (2025-08-19) |  |  |
+
+**Calendar-effect tests and observed averages**
+
+| Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
+| --- | --- | --- | --- | --- |
+| Weekday | Best: Friday (0.071%); worst: Monday (-0.068%) | 0.0666 | 0.1863 | Not detected |
+| Calendar month | Best: Dec (0.090% daily); worst: Jun (-0.094% daily) | 0.3448 | 0.4956 | Not detected |
+| Turn of month | First/last three days: -0.034%; other days: 0.009% | 0.7547 | 0.9443 | Not detected |
+
+![VIRSI seasonality, drawdowns and upside periods](figures/stock_profiles/VIRSI_seasonality.png?v=1792161115)
+
+**Five deepest drawdown episodes**
+
+| Rank | Peak | Trough | Recovery | Loss | Underwater days |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 2023-05-31 | 2025-11-06 | Not recovered | -16.89% | 1232 |
+| 2 | 2023-03-07 | 2023-03-24 | 2023-04-11 | -1.67% | 35 |
+| 3 | 2023-01-03 | 2023-02-02 | 2023-02-28 | -1.24% | 56 |
+| 4 | 2023-04-14 | 2023-05-10 | 2023-05-16 | -0.67% | 32 |
+| 5 | 2023-05-17 | 2023-05-22 | 2023-05-30 | -0.44% | 13 |
+
+**Five strongest non-overlapping 21-trading-day rises**
+
+| Rank | Start | End | 21-day return |
+| --- | --- | --- | --- |
+| 1 | 2026-07-16 | 2026-08-14 | 10.50% |
+| 2 | 2025-12-04 | 2026-01-12 | 7.98% |
+| 3 | 2024-09-19 | 2024-10-18 | 3.92% |
+| 4 | 2023-11-03 | 2023-12-05 | 3.07% |
+| 5 | 2025-08-19 | 2025-09-18 | 2.89% |
+
+The dated extremes identify where company announcements, dividends, corporate actions or data anomalies should be checked. A repeated calendar average is descriptive until it survives the adjusted test and a later out-of-sample period; it is not by itself a buy or sell signal.
 
 </details>
 
@@ -435,6 +533,55 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 </details>
 
+<details markdown="1" class="seasonality-section">
+<summary>Seasonality, drawdowns and upside periods</summary>
+
+The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
+
+| Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- |
+| Maximum drawdown | -21.29% (2025-09-05) | Average gain / average loss | 1.214 | Best 21-day period | 35.81% (ending 2025-05-13) |
+| Average underwater drawdown | 7.09% | Upside potential ratio | 1.423 | Worst 21-day period | -10.89% (ending 2023-06-05) |
+| Conditional drawdown 95% | 18.03% | Upside capture vs Baltic EW | 134.3% | Best 5-day period | 17.77% (ending 2025-04-28) |
+| Ulcer index | 8.36 | Downside capture vs Baltic EW | 35.4% | Best 63-day period | 44.34% (ending 2026-07-02) |
+| Longest underwater period | 326 calendar days | Positive trading days | 42.4% | Repeated calendar pattern | Dec: 100% positive across 3 years |
+| Daily downside deviation | 0.771% | Best day | 13.80% (2025-01-23) |  |  |
+| Daily upside deviation | 1.088% | Worst day | -8.13% (2026-03-02) |  |  |
+
+**Calendar-effect tests and observed averages**
+
+| Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
+| --- | --- | --- | --- | --- |
+| Weekday | Best: Thursday (0.192%); worst: Wednesday (0.077%) | 0.9547 | 0.9547 | Not detected |
+| Calendar month | Best: Dec (0.466% daily); worst: Mar (-0.170% daily) | 0.2813 | 0.4956 | Not detected |
+| Turn of month | First/last three days: 0.133%; other days: 0.138% | 0.9477 | 0.9477 | Not detected |
+
+![VLP1L seasonality, drawdowns and upside periods](figures/stock_profiles/VLP1L_seasonality.png?v=1792161047)
+
+**Five deepest drawdown episodes**
+
+| Rank | Peak | Trough | Recovery | Loss | Underwater days |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 2025-05-12 | 2025-09-05 | 2026-02-19 | -21.29% | 283 |
+| 2 | 2023-01-23 | 2023-08-31 | 2023-12-15 | -16.67% | 326 |
+| 3 | 2026-02-19 | 2026-03-25 | 2026-06-05 | -11.24% | 106 |
+| 4 | 2024-02-29 | 2024-05-21 | 2024-06-05 | -9.64% | 97 |
+| 5 | 2026-07-02 | 2026-07-30 | Not recovered | -7.52% | 104 |
+
+**Five strongest non-overlapping 21-trading-day rises**
+
+| Rank | Start | End | 21-day return |
+| --- | --- | --- | --- |
+| 1 | 2025-04-07 | 2025-05-13 | 35.81% |
+| 2 | 2026-05-29 | 2026-07-02 | 35.74% |
+| 3 | 2024-05-10 | 2024-06-10 | 18.68% |
+| 4 | 2024-08-05 | 2024-09-05 | 18.21% |
+| 5 | 2024-12-16 | 2025-01-23 | 16.05% |
+
+The dated extremes identify where company announcements, dividends, corporate actions or data anomalies should be checked. A repeated calendar average is descriptive until it survives the adjusted test and a later out-of-sample period; it is not by itself a buy or sell signal.
+
+</details>
+
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
@@ -538,6 +685,55 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <summary>Return histogram</summary>
 
 ![MRK1T return histogram](figures/stock_profiles/MRK1T_histogram.png?v=1792150404)
+
+</details>
+
+<details markdown="1" class="seasonality-section">
+<summary>Seasonality, drawdowns and upside periods</summary>
+
+The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
+
+| Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- |
+| Maximum drawdown | -19.70% (2025-09-29) | Average gain / average loss | 1.131 | Best 21-day period | 22.22% (ending 2025-05-19) |
+| Average underwater drawdown | 7.70% | Upside potential ratio | 1.107 | Worst 21-day period | -13.41% (ending 2026-03-09) |
+| Conditional drawdown 95% | 18.55% | Upside capture vs Baltic EW | 113.4% | Best 5-day period | 12.64% (ending 2025-02-07) |
+| Ulcer index | 9.11 | Downside capture vs Baltic EW | 60.6% | Best 63-day period | 46.65% (ending 2025-02-07) |
+| Longest underwater period | 491 calendar days | Positive trading days | 44.1% | Repeated calendar pattern | Dec: 100% positive across 3 years |
+| Daily downside deviation | 0.710% | Best day | 8.89% (2024-11-07) |  |  |
+| Daily upside deviation | 0.834% | Worst day | -7.32% (2024-06-07) |  |  |
+
+**Calendar-effect tests and observed averages**
+
+| Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
+| --- | --- | --- | --- | --- |
+| Weekday | Best: Friday (0.125%); worst: Monday (-0.034%) | 0.3631 | 0.4913 | Not detected |
+| Calendar month | Best: Dec (0.406% daily); worst: Jun (-0.210% daily) | 0.0740 | 0.2492 | Not detected |
+| Turn of month | First/last three days: 0.045%; other days: 0.083% | 0.6238 | 0.9250 | Not detected |
+
+![MRK1T seasonality, drawdowns and upside periods](figures/stock_profiles/MRK1T_seasonality.png?v=1792161051)
+
+**Five deepest drawdown episodes**
+
+| Rank | Peak | Trough | Recovery | Loss | Underwater days |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 2025-06-10 | 2025-09-29 | Not recovered | -19.70% | 491 |
+| 2 | 2023-04-14 | 2023-06-08 | 2024-02-07 | -11.43% | 299 |
+| 3 | 2024-06-03 | 2024-08-05 | 2024-11-07 | -9.57% | 157 |
+| 4 | 2025-05-19 | 2025-05-30 | 2025-06-09 | -6.36% | 21 |
+| 5 | 2023-02-17 | 2023-03-24 | 2023-04-12 | -5.12% | 54 |
+
+**Five strongest non-overlapping 21-trading-day rises**
+
+| Rank | Start | End | 21-day return |
+| --- | --- | --- | --- |
+| 1 | 2025-04-11 | 2025-05-19 | 22.22% |
+| 2 | 2024-12-03 | 2025-01-10 | 18.78% |
+| 3 | 2025-11-26 | 2025-12-30 | 14.65% |
+| 4 | 2025-01-20 | 2025-02-18 | 14.61% |
+| 5 | 2023-01-18 | 2023-02-17 | 11.56% |
+
+The dated extremes identify where company announcements, dividends, corporate actions or data anomalies should be checked. A repeated calendar average is descriptive until it survives the adjusted test and a later out-of-sample period; it is not by itself a buy or sell signal.
 
 </details>
 
@@ -647,6 +843,55 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 </details>
 
+<details markdown="1" class="seasonality-section">
+<summary>Seasonality, drawdowns and upside periods</summary>
+
+The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
+
+| Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- |
+| Maximum drawdown | -47.85% (2026-09-29) | Average gain / average loss | 1.481 | Best 21-day period | 73.58% (ending 2023-07-07) |
+| Average underwater drawdown | 18.59% | Upside potential ratio | 1.796 | Worst 21-day period | -28.17% (ending 2023-03-30) |
+| Conditional drawdown 95% | 43.87% | Upside capture vs Baltic EW | 344.1% | Best 5-day period | 60.38% (ending 2023-06-14) |
+| Ulcer index | 21.29 | Downside capture vs Baltic EW | 219.1% | Best 63-day period | 117.95% (ending 2023-07-19) |
+| Longest underwater period | 608 calendar days | Positive trading days | 29.9% | Repeated calendar pattern | Mar: 0% positive across 4 years |
+| Daily downside deviation | 2.104% | Best day | 44.39% (2025-01-02) |  |  |
+| Daily upside deviation | 3.320% | Worst day | -12.73% (2023-03-14) |  |  |
+
+**Calendar-effect tests and observed averages**
+
+| Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
+| --- | --- | --- | --- | --- |
+| Weekday | Best: Wednesday (0.639%); worst: Monday (-0.592%) | 0.0038 | 0.0882 | Not detected |
+| Calendar month | Best: Jan (0.864% daily); worst: Mar (-0.846% daily) | 0.3406 | 0.4956 | Not detected |
+| Turn of month | First/last three days: 0.806%; other days: 0.035% | 0.1479 | 0.4860 | Not detected |
+
+![MOLNR seasonality, drawdowns and upside periods](figures/stock_profiles/MOLNR_seasonality.png?v=1792161067)
+
+**Five deepest drawdown episodes**
+
+| Rank | Peak | Trough | Recovery | Loss | Underwater days |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 2025-02-13 | 2026-09-29 | Not recovered | -47.85% | 608 |
+| 2 | 2023-01-13 | 2023-04-05 | 2023-06-12 | -32.71% | 150 |
+| 3 | 2024-01-09 | 2024-06-03 | 2024-09-20 | -27.02% | 255 |
+| 4 | 2023-07-19 | 2023-08-08 | 2023-10-17 | -22.35% | 90 |
+| 5 | 2023-06-14 | 2023-06-22 | 2023-07-07 | -18.12% | 23 |
+
+**Five strongest non-overlapping 21-trading-day rises**
+
+| Rank | Start | End | 21-day return |
+| --- | --- | --- | --- |
+| 1 | 2023-06-06 | 2023-07-07 | 73.58% |
+| 2 | 2024-12-13 | 2025-01-22 | 60.43% |
+| 3 | 2023-12-15 | 2024-01-18 | 51.75% |
+| 4 | 2024-08-28 | 2024-09-26 | 40.85% |
+| 5 | 2026-09-02 | 2026-10-01 | 34.44% |
+
+The dated extremes identify where company announcements, dividends, corporate actions or data anomalies should be checked. A repeated calendar average is descriptive until it survives the adjusted test and a later out-of-sample period; it is not by itself a buy or sell signal.
+
+</details>
+
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
@@ -750,6 +995,55 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <summary>Return histogram</summary>
 
 ![HAE1T return histogram](figures/stock_profiles/HAE1T_histogram.png?v=1792150404)
+
+</details>
+
+<details markdown="1" class="seasonality-section">
+<summary>Seasonality, drawdowns and upside periods</summary>
+
+The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
+
+| Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- |
+| Maximum drawdown | -14.80% (2025-03-07) | Average gain / average loss | 1.138 | Best 21-day period | 15.63% (ending 2026-01-14) |
+| Average underwater drawdown | 8.00% | Upside potential ratio | 1.229 | Worst 21-day period | -8.81% (ending 2025-03-12) |
+| Conditional drawdown 95% | 14.16% | Upside capture vs Baltic EW | 54.6% | Best 5-day period | 10.20% (ending 2026-01-14) |
+| Ulcer index | 8.78 | Downside capture vs Baltic EW | 45.6% | Best 63-day period | 25.21% (ending 2026-03-13) |
+| Longest underwater period | 608 calendar days | Positive trading days | 38.7% | Repeated calendar pattern | Jan: 75% positive across 4 years |
+| Daily downside deviation | 0.574% | Best day | 6.25% (2024-05-15) |  |  |
+| Daily upside deviation | 0.641% | Worst day | -5.15% (2025-02-20) |  |  |
+
+**Calendar-effect tests and observed averages**
+
+| Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
+| --- | --- | --- | --- | --- |
+| Weekday | Best: Friday (0.106%); worst: Thursday (-0.082%) | 0.0729 | 0.1863 | Not detected |
+| Calendar month | Best: Jan (0.215% daily); worst: Jun (-0.102% daily) | 0.5909 | 0.7152 | Not detected |
+| Turn of month | First/last three days: -0.051%; other days: 0.031% | 0.4276 | 0.8190 | Not detected |
+
+![HAE1T seasonality, drawdowns and upside periods](figures/stock_profiles/HAE1T_seasonality.png?v=1792161075)
+
+**Five deepest drawdown episodes**
+
+| Rank | Peak | Trough | Recovery | Loss | Underwater days |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 2024-05-15 | 2025-03-07 | 2026-01-13 | -14.80% | 608 |
+| 2 | 2026-04-16 | 2026-08-14 | Not recovered | -14.72% | 181 |
+| 3 | 2023-01-27 | 2024-04-10 | 2024-05-15 | -11.52% | 474 |
+| 4 | 2026-03-13 | 2026-03-31 | 2026-04-08 | -4.44% | 26 |
+| 5 | 2026-02-19 | 2026-03-04 | 2026-03-13 | -3.48% | 22 |
+
+**Five strongest non-overlapping 21-trading-day rises**
+
+| Rank | Start | End | 21-day return |
+| --- | --- | --- | --- |
+| 1 | 2025-12-08 | 2026-01-14 | 15.63% |
+| 2 | 2024-04-11 | 2024-05-15 | 13.21% |
+| 3 | 2026-02-09 | 2026-03-13 | 10.57% |
+| 4 | 2024-12-16 | 2025-01-23 | 7.35% |
+| 5 | 2026-09-15 | 2026-10-14 | 6.54% |
+
+The dated extremes identify where company announcements, dividends, corporate actions or data anomalies should be checked. A repeated calendar average is descriptive until it survives the adjusted test and a later out-of-sample period; it is not by itself a buy or sell signal.
 
 </details>
 
@@ -859,6 +1153,55 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 </details>
 
+<details markdown="1" class="seasonality-section">
+<summary>Seasonality, drawdowns and upside periods</summary>
+
+The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistically supported calendar effects: **calendar-month, turn-of-month**. Adjusted p-values control the false-discovery rate across all analysed shares.
+
+| Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- |
+| Maximum drawdown | -14.75% (2023-05-29) | Average gain / average loss | 1.022 | Best 21-day period | 19.43% (ending 2023-04-28) |
+| Average underwater drawdown | 5.72% | Upside potential ratio | 0.998 | Worst 21-day period | -13.12% (ending 2023-06-06) |
+| Conditional drawdown 95% | 12.19% | Upside capture vs Baltic EW | 72.2% | Best 5-day period | 8.87% (ending 2023-04-05) |
+| Ulcer index | 6.54 | Downside capture vs Baltic EW | 24.1% | Best 63-day period | 35.32% (ending 2023-04-28) |
+| Longest underwater period | 348 calendar days | Positive trading days | 40.3% | Repeated calendar pattern | May: 0% positive across 4 years |
+| Daily downside deviation | 0.644% | Best day | 6.30% (2023-04-05) |  |  |
+| Daily upside deviation | 0.572% | Worst day | -10.00% (2023-05-11) |  |  |
+
+**Calendar-effect tests and observed averages**
+
+| Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
+| --- | --- | --- | --- | --- |
+| Weekday | Best: Friday (0.132%); worst: Monday (0.015%) | 0.1263 | 0.2641 | Not detected |
+| Calendar month | Best: Apr (0.343% daily); worst: May (-0.440% daily) | 0.0010 | 0.0117 | Detected |
+| Turn of month | First/last three days: 0.251%; other days: 0.023% | 0.0005 | 0.0110 | Detected |
+
+![APG1L seasonality, drawdowns and upside periods](figures/stock_profiles/APG1L_seasonality.png?v=1792161041)
+
+**Five deepest drawdown episodes**
+
+| Rank | Peak | Trough | Recovery | Loss | Underwater days |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 2023-04-28 | 2023-05-29 | 2024-02-26 | -14.75% | 304 |
+| 2 | 2024-02-28 | 2024-08-06 | 2025-02-10 | -11.48% | 348 |
+| 3 | 2026-05-11 | 2026-05-27 | Not recovered | -8.76% | 156 |
+| 4 | 2025-02-14 | 2025-06-02 | 2025-11-03 | -8.29% | 262 |
+| 5 | 2026-02-03 | 2026-03-26 | 2026-04-23 | -7.98% | 79 |
+
+**Five strongest non-overlapping 21-trading-day rises**
+
+| Rank | Start | End | 21-day return |
+| --- | --- | --- | --- |
+| 1 | 2023-03-28 | 2023-04-28 | 19.43% |
+| 2 | 2025-12-10 | 2026-01-16 | 17.67% |
+| 3 | 2023-01-19 | 2023-02-20 | 15.21% |
+| 4 | 2026-03-31 | 2026-05-05 | 12.75% |
+| 5 | 2024-01-26 | 2024-02-27 | 10.83% |
+
+The dated extremes identify where company announcements, dividends, corporate actions or data anomalies should be checked. A repeated calendar average is descriptive until it survives the adjusted test and a later out-of-sample period; it is not by itself a buy or sell signal.
+
+</details>
+
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
@@ -962,6 +1305,55 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <summary>Return histogram</summary>
 
 ![GRG1L return histogram](figures/stock_profiles/GRG1L_histogram.png?v=1792150404)
+
+</details>
+
+<details markdown="1" class="seasonality-section">
+<summary>Seasonality, drawdowns and upside periods</summary>
+
+The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
+
+| Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- |
+| Maximum drawdown | -15.59% (2025-11-28) | Average gain / average loss | 1.078 | Best 21-day period | 16.34% (ending 2023-01-31) |
+| Average underwater drawdown | 6.31% | Upside potential ratio | 1.436 | Worst 21-day period | -9.33% (ending 2026-06-01) |
+| Conditional drawdown 95% | 14.53% | Upside capture vs Baltic EW | 59.1% | Best 5-day period | 11.62% (ending 2023-01-31) |
+| Ulcer index | 7.39 | Downside capture vs Baltic EW | 28.7% | Best 63-day period | 23.03% (ending 2023-04-18) |
+| Longest underwater period | 491 calendar days | Positive trading days | 37.1% | Repeated calendar pattern | Dec: 100% positive across 3 years |
+| Daily downside deviation | 0.639% | Best day | 8.37% (2023-12-19) |  |  |
+| Daily upside deviation | 0.744% | Worst day | -4.02% (2026-02-26) |  |  |
+
+**Calendar-effect tests and observed averages**
+
+| Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
+| --- | --- | --- | --- | --- |
+| Weekday | Best: Tuesday (0.117%); worst: Wednesday (0.010%) | 0.6480 | 0.6778 | Not detected |
+| Calendar month | Best: Dec (0.534% daily); worst: May (-0.202% daily) | 0.2466 | 0.4726 | Not detected |
+| Turn of month | First/last three days: 0.026%; other days: 0.047% | 0.9027 | 0.9477 | Not detected |
+
+![GRG1L seasonality, drawdowns and upside periods](figures/stock_profiles/GRG1L_seasonality.png?v=1792161060)
+
+**Five deepest drawdown episodes**
+
+| Rank | Peak | Trough | Recovery | Loss | Underwater days |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 2025-08-19 | 2025-11-28 | Not recovered | -15.59% | 421 |
+| 2 | 2024-04-10 | 2024-08-07 | 2025-08-14 | -11.50% | 491 |
+| 3 | 2023-10-23 | 2023-11-06 | 2023-12-18 | -8.80% | 56 |
+| 4 | 2023-05-11 | 2023-05-24 | 2023-06-14 | -6.89% | 34 |
+| 5 | 2023-12-20 | 2024-01-12 | 2024-02-13 | -5.88% | 55 |
+
+**Five strongest non-overlapping 21-trading-day rises**
+
+| Rank | Start | End | 21-day return |
+| --- | --- | --- | --- |
+| 1 | 2023-01-02 | 2023-01-31 | 16.34% |
+| 2 | 2023-11-17 | 2023-12-19 | 15.30% |
+| 3 | 2025-11-27 | 2026-01-05 | 14.50% |
+| 4 | 2025-07-18 | 2025-08-19 | 8.26% |
+| 5 | 2023-09-22 | 2023-10-23 | 8.23% |
+
+The dated extremes identify where company announcements, dividends, corporate actions or data anomalies should be checked. A repeated calendar average is descriptive until it survives the adjusted test and a later out-of-sample period; it is not by itself a buy or sell signal.
 
 </details>
 
@@ -1071,6 +1463,55 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 </details>
 
+<details markdown="1" class="seasonality-section">
+<summary>Seasonality, drawdowns and upside periods</summary>
+
+The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
+
+| Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- |
+| Maximum drawdown | -10.23% (2025-06-05) | Average gain / average loss | 1.048 | Best 21-day period | 23.53% (ending 2025-01-20) |
+| Average underwater drawdown | 4.62% | Upside potential ratio | 1.523 | Worst 21-day period | -9.05% (ending 2025-02-18) |
+| Conditional drawdown 95% | 9.44% | Upside capture vs Baltic EW | 85.5% | Best 5-day period | 15.38% (ending 2025-01-20) |
+| Ulcer index | 4.81 | Downside capture vs Baltic EW | 47.3% | Best 63-day period | 25.00% (ending 2025-03-25) |
+| Longest underwater period | 405 calendar days | Positive trading days | 30.6% | Repeated calendar pattern | Dec: 100% positive across 3 years |
+| Daily downside deviation | 1.005% | Best day | 9.47% (2024-12-03) |  |  |
+| Daily upside deviation | 1.114% | Worst day | -6.78% (2024-08-23) |  |  |
+
+**Calendar-effect tests and observed averages**
+
+| Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
+| --- | --- | --- | --- | --- |
+| Weekday | Best: Wednesday (0.200%); worst: Thursday (-0.078%) | 0.0513 | 0.1691 | Not detected |
+| Calendar month | Best: Dec (0.288% daily); worst: Nov (-0.087% daily) | 0.9663 | 0.9719 | Not detected |
+| Turn of month | First/last three days: 0.132%; other days: 0.037% | 0.4923 | 0.8190 | Not detected |
+
+![RSU1L seasonality, drawdowns and upside periods](figures/stock_profiles/RSU1L_seasonality.png?v=1792161078)
+
+**Five deepest drawdown episodes**
+
+| Rank | Peak | Trough | Recovery | Loss | Underwater days |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 2025-03-25 | 2025-06-05 | 2025-09-12 | -10.23% | 171 |
+| 2 | 2024-08-21 | 2024-08-26 | 2024-12-03 | -9.55% | 104 |
+| 3 | 2026-03-23 | 2026-06-26 | Not recovered | -9.32% | 205 |
+| 4 | 2024-12-04 | 2024-12-10 | 2025-01-02 | -9.19% | 29 |
+| 5 | 2025-01-20 | 2025-02-13 | 2025-03-25 | -9.05% | 64 |
+
+**Five strongest non-overlapping 21-trading-day rises**
+
+| Rank | Start | End | 21-day return |
+| --- | --- | --- | --- |
+| 1 | 2024-12-11 | 2025-01-20 | 23.53% |
+| 2 | 2024-07-19 | 2024-08-21 | 11.25% |
+| 3 | 2024-05-16 | 2024-06-14 | 11.19% |
+| 4 | 2025-08-19 | 2025-09-18 | 10.40% |
+| 5 | 2024-10-31 | 2024-12-03 | 9.47% |
+
+The dated extremes identify where company announcements, dividends, corporate actions or data anomalies should be checked. A repeated calendar average is descriptive until it survives the adjusted test and a later out-of-sample period; it is not by itself a buy or sell signal.
+
+</details>
+
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
@@ -1174,6 +1615,55 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <summary>Return histogram</summary>
 
 ![IGN1L return histogram](figures/stock_profiles/IGN1L_histogram.png?v=1792150405)
+
+</details>
+
+<details markdown="1" class="seasonality-section">
+<summary>Seasonality, drawdowns and upside periods</summary>
+
+The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
+
+| Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- |
+| Maximum drawdown | -14.56% (2024-04-24) | Average gain / average loss | 1.052 | Best 21-day period | 9.93% (ending 2026-01-16) |
+| Average underwater drawdown | 6.14% | Upside potential ratio | 1.262 | Worst 21-day period | -9.87% (ending 2025-03-19) |
+| Conditional drawdown 95% | 13.20% | Upside capture vs Baltic EW | 49.4% | Best 5-day period | 5.44% (ending 2025-02-14) |
+| Ulcer index | 7.03 | Downside capture vs Baltic EW | 38.7% | Best 63-day period | 16.77% (ending 2025-02-17) |
+| Longest underwater period | 611 calendar days | Positive trading days | 37.8% | Repeated calendar pattern | Jan: 100% positive across 4 years |
+| Daily downside deviation | 0.427% | Best day | 3.92% (2025-03-27) |  |  |
+| Daily upside deviation | 0.438% | Worst day | -2.94% (2024-04-10) |  |  |
+
+**Calendar-effect tests and observed averages**
+
+| Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
+| --- | --- | --- | --- | --- |
+| Weekday | Best: Friday (0.066%); worst: Tuesday (-0.025%) | 0.2980 | 0.4569 | Not detected |
+| Calendar month | Best: Jan (0.193% daily); worst: Nov (-0.133% daily) | 0.0493 | 0.2266 | Not detected |
+| Turn of month | First/last three days: 0.013%; other days: 0.018% | 0.9314 | 0.9477 | Not detected |
+
+![IGN1L seasonality, drawdowns and upside periods](figures/stock_profiles/IGN1L_seasonality.png?v=1792161093)
+
+**Five deepest drawdown episodes**
+
+| Rank | Peak | Trough | Recovery | Loss | Underwater days |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 2023-05-23 | 2024-04-24 | 2025-01-23 | -14.56% | 611 |
+| 2 | 2025-02-17 | 2025-03-04 | 2026-01-15 | -10.29% | 332 |
+| 3 | 2026-01-26 | 2026-06-08 | Not recovered | -7.49% | 261 |
+| 4 | 2023-03-08 | 2023-03-13 | 2023-04-26 | -3.14% | 49 |
+| 5 | 2025-01-24 | 2025-01-28 | 2025-02-06 | -2.12% | 13 |
+
+**Five strongest non-overlapping 21-trading-day rises**
+
+| Rank | Start | End | 21-day return |
+| --- | --- | --- | --- |
+| 1 | 2025-12-11 | 2026-01-19 | 9.93% |
+| 2 | 2024-12-03 | 2025-01-10 | 7.71% |
+| 3 | 2025-01-14 | 2025-02-12 | 7.37% |
+| 4 | 2026-06-17 | 2026-07-22 | 6.65% |
+| 5 | 2025-04-11 | 2025-05-19 | 6.47% |
+
+The dated extremes identify where company announcements, dividends, corporate actions or data anomalies should be checked. A repeated calendar average is descriptive until it survives the adjusted test and a later out-of-sample period; it is not by itself a buy or sell signal.
 
 </details>
 
@@ -1283,6 +1773,55 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 </details>
 
+<details markdown="1" class="seasonality-section">
+<summary>Seasonality, drawdowns and upside periods</summary>
+
+The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
+
+| Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- |
+| Maximum drawdown | -30.11% (2025-11-06) | Average gain / average loss | 1.044 | Best 21-day period | 19.23% (ending 2025-12-09) |
+| Average underwater drawdown | 7.97% | Upside potential ratio | 1.244 | Worst 21-day period | -22.16% (ending 2025-11-06) |
+| Conditional drawdown 95% | 21.37% | Upside capture vs Baltic EW | 107.3% | Best 5-day period | 13.08% (ending 2025-11-13) |
+| Ulcer index | 9.18 | Downside capture vs Baltic EW | 67.0% | Best 63-day period | 24.62% (ending 2026-02-13) |
+| Longest underwater period | 524 calendar days | Positive trading days | 36.1% | Repeated calendar pattern | Dec: 100% positive across 3 years |
+| Daily downside deviation | 0.933% | Best day | 10.09% (2023-08-02) |  |  |
+| Daily upside deviation | 1.016% | Worst day | -10.71% (2024-05-14) |  |  |
+
+**Calendar-effect tests and observed averages**
+
+| Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
+| --- | --- | --- | --- | --- |
+| Weekday | Best: Wednesday (0.173%); worst: Tuesday (-0.039%) | 0.4424 | 0.5163 | Not detected |
+| Calendar month | Best: Dec (0.465% daily); worst: May (-0.347% daily) | 0.0800 | 0.2492 | Not detected |
+| Turn of month | First/last three days: 0.110%; other days: 0.047% | 0.7801 | 0.9443 | Not detected |
+
+![PZV1L seasonality, drawdowns and upside periods](figures/stock_profiles/PZV1L_seasonality.png?v=1792161101)
+
+**Five deepest drawdown episodes**
+
+| Rank | Peak | Trough | Recovery | Loss | Underwater days |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 2025-05-08 | 2025-11-06 | Not recovered | -30.11% | 524 |
+| 2 | 2024-02-12 | 2024-05-20 | 2024-12-05 | -18.39% | 297 |
+| 3 | 2023-05-09 | 2023-06-28 | 2023-08-02 | -8.20% | 85 |
+| 4 | 2025-02-25 | 2025-03-05 | 2025-04-28 | -8.09% | 62 |
+| 5 | 2023-08-03 | 2023-08-10 | 2023-12-01 | -7.51% | 120 |
+
+**Five strongest non-overlapping 21-trading-day rises**
+
+| Rank | Start | End | 21-day return |
+| --- | --- | --- | --- |
+| 1 | 2025-11-06 | 2025-12-09 | 19.23% |
+| 2 | 2024-11-28 | 2025-01-07 | 15.86% |
+| 3 | 2026-03-27 | 2026-04-29 | 12.75% |
+| 4 | 2025-04-02 | 2025-05-08 | 12.05% |
+| 5 | 2026-06-11 | 2026-07-16 | 11.91% |
+
+The dated extremes identify where company announcements, dividends, corporate actions or data anomalies should be checked. A repeated calendar average is descriptive until it survives the adjusted test and a later out-of-sample period; it is not by itself a buy or sell signal.
+
+</details>
+
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
@@ -1386,6 +1925,55 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <summary>Return histogram</summary>
 
 ![AKO1L return histogram](figures/stock_profiles/AKO1L_histogram.png?v=1792150404)
+
+</details>
+
+<details markdown="1" class="seasonality-section">
+<summary>Seasonality, drawdowns and upside periods</summary>
+
+The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
+
+| Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- |
+| Maximum drawdown | -45.90% (2024-04-18) | Average gain / average loss | 1.086 | Best 21-day period | 20.19% (ending 2024-05-22) |
+| Average underwater drawdown | 20.63% | Upside potential ratio | 1.288 | Worst 21-day period | -13.79% (ending 2023-06-09) |
+| Conditional drawdown 95% | 42.74% | Upside capture vs Baltic EW | 100.3% | Best 5-day period | 11.42% (ending 2024-06-06) |
+| Ulcer index | 23.66 | Downside capture vs Baltic EW | 73.4% | Best 63-day period | 26.60% (ending 2024-07-22) |
+| Longest underwater period | 957 calendar days | Positive trading days | 37.8% | Repeated calendar pattern | Mar: 0% positive across 4 years |
+| Daily downside deviation | 0.777% | Best day | 8.66% (2025-05-22) |  |  |
+| Daily upside deviation | 0.852% | Worst day | -8.74% (2023-06-01) |  |  |
+
+**Calendar-effect tests and observed averages**
+
+| Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
+| --- | --- | --- | --- | --- |
+| Weekday | Best: Tuesday (0.128%); worst: Monday (-0.080%) | 0.1886 | 0.3336 | Not detected |
+| Calendar month | Best: May (0.296% daily); worst: Mar (-0.396% daily) | 0.0388 | 0.2230 | Not detected |
+| Turn of month | First/last three days: 0.042%; other days: 0.041% | 0.4709 | 0.8190 | Not detected |
+
+![AKO1L seasonality, drawdowns and upside periods](figures/stock_profiles/AKO1L_seasonality.png?v=1792161063)
+
+**Five deepest drawdown episodes**
+
+| Rank | Peak | Trough | Recovery | Loss | Underwater days |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 2023-02-23 | 2024-04-18 | 2025-10-07 | -45.90% | 957 |
+| 2 | 2026-01-16 | 2026-03-30 | Not recovered | -16.98% | 271 |
+| 3 | 2025-11-12 | 2025-11-14 | 2025-12-12 | -3.86% | 30 |
+| 4 | 2023-02-03 | 2023-02-06 | 2023-02-08 | -1.58% | 5 |
+| 5 | 2023-01-10 | 2023-01-11 | 2023-01-12 | -1.39% | 2 |
+
+**Five strongest non-overlapping 21-trading-day rises**
+
+| Rank | Start | End | 21-day return |
+| --- | --- | --- | --- |
+| 1 | 2024-04-18 | 2024-05-22 | 20.19% |
+| 2 | 2023-01-24 | 2023-02-23 | 20.14% |
+| 3 | 2025-05-09 | 2025-06-10 | 19.92% |
+| 4 | 2025-09-11 | 2025-10-10 | 14.42% |
+| 5 | 2026-03-30 | 2026-04-30 | 10.39% |
+
+The dated extremes identify where company announcements, dividends, corporate actions or data anomalies should be checked. A repeated calendar average is descriptive until it survives the adjusted test and a later out-of-sample period; it is not by itself a buy or sell signal.
 
 </details>
 
@@ -1495,6 +2083,55 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 </details>
 
+<details markdown="1" class="seasonality-section">
+<summary>Seasonality, drawdowns and upside periods</summary>
+
+The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistically supported calendar effects: **calendar-month**. Adjusted p-values control the false-discovery rate across all analysed shares.
+
+| Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- |
+| Maximum drawdown | -20.90% (2025-09-17) | Average gain / average loss | 1.233 | Best 21-day period | 17.11% (ending 2023-11-30) |
+| Average underwater drawdown | 9.72% | Upside potential ratio | 1.183 | Worst 21-day period | -11.16% (ending 2025-04-30) |
+| Conditional drawdown 95% | 19.64% | Upside capture vs Baltic EW | 78.5% | Best 5-day period | 9.79% (ending 2026-03-13) |
+| Ulcer index | 10.87 | Downside capture vs Baltic EW | 58.3% | Best 63-day period | 24.55% (ending 2025-01-08) |
+| Longest underwater period | 607 calendar days | Positive trading days | 40.3% | Repeated calendar pattern | Nov: 100% positive across 3 years |
+| Daily downside deviation | 0.655% | Best day | 11.07% (2026-03-13) |  |  |
+| Daily upside deviation | 0.817% | Worst day | -5.89% (2025-04-11) |  |  |
+
+**Calendar-effect tests and observed averages**
+
+| Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
+| --- | --- | --- | --- | --- |
+| Weekday | Best: Tuesday (0.081%); worst: Monday (-0.061%) | 0.6483 | 0.6778 | Not detected |
+| Calendar month | Best: Nov (0.532% daily); worst: Apr (-0.232% daily) | 0.0029 | 0.0222 | Detected |
+| Turn of month | First/last three days: 0.069%; other days: 0.022% | 0.4876 | 0.8190 | Not detected |
+
+![ROE1L seasonality, drawdowns and upside periods](figures/stock_profiles/ROE1L_seasonality.png?v=1792161089)
+
+**Five deepest drawdown episodes**
+
+| Rank | Peak | Trough | Recovery | Loss | Underwater days |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 2025-02-14 | 2025-09-17 | Not recovered | -20.90% | 607 |
+| 2 | 2023-02-09 | 2023-10-26 | 2024-10-01 | -19.07% | 600 |
+| 3 | 2025-01-16 | 2025-01-27 | 2025-01-31 | -3.60% | 15 |
+| 4 | 2023-01-03 | 2023-01-05 | 2023-01-12 | -1.68% | 9 |
+| 5 | 2024-10-24 | 2024-10-29 | 2024-10-31 | -1.34% | 7 |
+
+**Five strongest non-overlapping 21-trading-day rises**
+
+| Rank | Start | End | 21-day return |
+| --- | --- | --- | --- |
+| 1 | 2023-10-27 | 2023-11-30 | 17.11% |
+| 2 | 2025-10-29 | 2025-12-01 | 15.62% |
+| 3 | 2024-09-25 | 2024-10-24 | 14.80% |
+| 4 | 2026-03-09 | 2026-04-10 | 11.37% |
+| 5 | 2024-12-27 | 2025-01-30 | 10.80% |
+
+The dated extremes identify where company announcements, dividends, corporate actions or data anomalies should be checked. A repeated calendar average is descriptive until it survives the adjusted test and a later out-of-sample period; it is not by itself a buy or sell signal.
+
+</details>
+
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
@@ -1598,6 +2235,55 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <summary>Return histogram</summary>
 
 ![TAL1T return histogram](figures/stock_profiles/TAL1T_histogram.png?v=1792150404)
+
+</details>
+
+<details markdown="1" class="seasonality-section">
+<summary>Seasonality, drawdowns and upside periods</summary>
+
+The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
+
+| Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- |
+| Maximum drawdown | -24.80% (2025-11-24) | Average gain / average loss | 1.211 | Best 21-day period | 17.29% (ending 2023-08-21) |
+| Average underwater drawdown | 12.96% | Upside potential ratio | 1.135 | Worst 21-day period | -17.67% (ending 2024-07-02) |
+| Conditional drawdown 95% | 23.62% | Upside capture vs Baltic EW | 66.4% | Best 5-day period | 8.16% (ending 2023-07-27) |
+| Ulcer index | 14.75 | Downside capture vs Baltic EW | 49.2% | Best 63-day period | 27.08% (ending 2023-09-08) |
+| Longest underwater period | 859 calendar days | Positive trading days | 39.4% | Repeated calendar pattern | Feb: 100% positive across 4 years |
+| Daily downside deviation | 0.687% | Best day | 5.37% (2024-02-22) |  |  |
+| Daily upside deviation | 0.692% | Worst day | -8.83% (2024-06-19) |  |  |
+
+**Calendar-effect tests and observed averages**
+
+| Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
+| --- | --- | --- | --- | --- |
+| Weekday | Best: Thursday (0.097%); worst: Monday (-0.082%) | 0.2838 | 0.4569 | Not detected |
+| Calendar month | Best: Feb (0.211% daily); worst: Jun (-0.269% daily) | 0.6784 | 0.7801 | Not detected |
+| Turn of month | First/last three days: 0.100%; other days: 0.009% | 0.3339 | 0.8190 | Not detected |
+
+![TAL1T seasonality, drawdowns and upside periods](figures/stock_profiles/TAL1T_seasonality.png?v=1792161071)
+
+**Five deepest drawdown episodes**
+
+| Rank | Peak | Trough | Recovery | Loss | Underwater days |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 2024-06-07 | 2025-11-24 | Not recovered | -24.80% | 859 |
+| 2 | 2023-09-07 | 2023-10-17 | 2024-04-09 | -11.81% | 215 |
+| 3 | 2023-03-07 | 2023-03-13 | 2023-06-20 | -4.81% | 105 |
+| 4 | 2023-08-21 | 2023-08-24 | 2023-09-07 | -3.48% | 17 |
+| 5 | 2024-04-11 | 2024-05-20 | 2024-05-31 | -3.37% | 50 |
+
+**Five strongest non-overlapping 21-trading-day rises**
+
+| Rank | Start | End | 21-day return |
+| --- | --- | --- | --- |
+| 1 | 2023-07-20 | 2023-08-21 | 17.29% |
+| 2 | 2024-12-27 | 2025-01-30 | 11.65% |
+| 3 | 2023-10-17 | 2023-11-17 | 9.29% |
+| 4 | 2024-09-23 | 2024-10-22 | 9.17% |
+| 5 | 2023-02-02 | 2023-03-07 | 8.99% |
+
+The dated extremes identify where company announcements, dividends, corporate actions or data anomalies should be checked. A repeated calendar average is descriptive until it survives the adjusted test and a later out-of-sample period; it is not by itself a buy or sell signal.
 
 </details>
 
@@ -1707,6 +2393,55 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 </details>
 
+<details markdown="1" class="seasonality-section">
+<summary>Seasonality, drawdowns and upside periods</summary>
+
+The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
+
+| Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- |
+| Maximum drawdown | -35.19% (2024-09-04) | Average gain / average loss | 1.068 | Best 21-day period | 12.70% (ending 2026-10-09) |
+| Average underwater drawdown | 17.10% | Upside potential ratio | 1.142 | Worst 21-day period | -16.13% (ending 2024-05-17) |
+| Conditional drawdown 95% | 33.15% | Upside capture vs Baltic EW | 24.7% | Best 5-day period | 8.18% (ending 2026-10-07) |
+| Ulcer index | 19.23 | Downside capture vs Baltic EW | 11.9% | Best 63-day period | 16.41% (ending 2026-06-03) |
+| Longest underwater period | 1288 calendar days | Positive trading days | 36.0% | Repeated calendar pattern | Nov: 100% positive across 3 years |
+| Daily downside deviation | 0.548% | Best day | 5.23% (2026-05-13) |  |  |
+| Daily upside deviation | 0.551% | Worst day | -7.59% (2023-05-19) |  |  |
+
+**Calendar-effect tests and observed averages**
+
+| Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
+| --- | --- | --- | --- | --- |
+| Weekday | Best: Wednesday (0.149%); worst: Friday (-0.059%) | 0.4221 | 0.5163 | Not detected |
+| Calendar month | Best: Feb (0.119% daily); worst: May (-0.154% daily) | 0.9719 | 0.9719 | Not detected |
+| Turn of month | First/last three days: 0.106%; other days: -0.003% | 0.0227 | 0.2149 | Not detected |
+
+![DGR1R seasonality, drawdowns and upside periods](figures/stock_profiles/DGR1R_seasonality.png?v=1792161104)
+
+**Five deepest drawdown episodes**
+
+| Rank | Peak | Trough | Recovery | Loss | Underwater days |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 2023-03-03 | 2024-09-04 | 2026-09-11 | -35.19% | 1288 |
+| 2 | 2026-09-24 | 2026-09-28 | 2026-10-05 | -3.09% | 11 |
+| 3 | 2026-10-07 | 2026-10-08 | 2026-10-09 | -1.74% | 2 |
+| 4 | 2026-10-12 | 2026-10-13 | Not recovered | -1.45% | 2 |
+| 5 | 2023-01-10 | 2023-01-17 | 2023-01-24 | -0.53% | 14 |
+
+**Five strongest non-overlapping 21-trading-day rises**
+
+| Rank | Start | End | 21-day return |
+| --- | --- | --- | --- |
+| 1 | 2026-09-10 | 2026-10-09 | 12.70% |
+| 2 | 2024-09-10 | 2024-10-09 | 9.56% |
+| 3 | 2025-07-11 | 2025-08-11 | 9.27% |
+| 4 | 2025-02-06 | 2025-03-10 | 8.24% |
+| 5 | 2026-02-09 | 2026-03-13 | 7.67% |
+
+The dated extremes identify where company announcements, dividends, corporate actions or data anomalies should be checked. A repeated calendar average is descriptive until it survives the adjusted test and a later out-of-sample period; it is not by itself a buy or sell signal.
+
+</details>
+
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
@@ -1810,6 +2545,55 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <summary>Return histogram</summary>
 
 ![TEL1L return histogram](figures/stock_profiles/TEL1L_histogram.png?v=1792150405)
+
+</details>
+
+<details markdown="1" class="seasonality-section">
+<summary>Seasonality, drawdowns and upside periods</summary>
+
+The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
+
+| Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- |
+| Maximum drawdown | -25.25% (2024-08-05) | Average gain / average loss | 1.026 | Best 21-day period | 12.09% (ending 2026-01-09) |
+| Average underwater drawdown | 13.79% | Upside potential ratio | 1.318 | Worst 21-day period | -11.05% (ending 2023-08-08) |
+| Conditional drawdown 95% | 23.35% | Upside capture vs Baltic EW | 46.1% | Best 5-day period | 7.94% (ending 2026-01-09) |
+| Ulcer index | 15.41 | Downside capture vs Baltic EW | 35.6% | Best 63-day period | 18.26% (ending 2026-01-09) |
+| Longest underwater period | 987 calendar days | Positive trading days | 30.5% | Repeated calendar pattern | May: 0% positive across 4 years |
+| Daily downside deviation | 0.500% | Best day | 3.67% (2026-04-24) |  |  |
+| Daily upside deviation | 0.473% | Worst day | -5.60% (2026-05-08) |  |  |
+
+**Calendar-effect tests and observed averages**
+
+| Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
+| --- | --- | --- | --- | --- |
+| Weekday | Best: Thursday (0.068%); worst: Monday (-0.081%) | 0.3578 | 0.4913 | Not detected |
+| Calendar month | Best: Jan (0.207% daily); worst: May (-0.300% daily) | 0.0867 | 0.2492 | Not detected |
+| Turn of month | First/last three days: 0.052%; other days: 0.008% | 0.4985 | 0.8190 | Not detected |
+
+![TEL1L seasonality, drawdowns and upside periods](figures/stock_profiles/TEL1L_seasonality.png?v=1792161118)
+
+**Five deepest drawdown episodes**
+
+| Rank | Peak | Trough | Recovery | Loss | Underwater days |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 2023-04-28 | 2024-08-05 | 2026-01-09 | -25.25% | 987 |
+| 2 | 2026-05-07 | 2026-06-18 | Not recovered | -9.05% | 160 |
+| 3 | 2023-03-17 | 2023-04-18 | 2023-04-28 | -3.43% | 42 |
+| 4 | 2026-02-18 | 2026-03-12 | 2026-04-07 | -3.33% | 48 |
+| 5 | 2026-01-29 | 2026-02-05 | 2026-02-18 | -1.90% | 20 |
+
+**Five strongest non-overlapping 21-trading-day rises**
+
+| Rank | Start | End | 21-day return |
+| --- | --- | --- | --- |
+| 1 | 2025-12-03 | 2026-01-09 | 12.09% |
+| 2 | 2026-03-25 | 2026-04-27 | 11.22% |
+| 3 | 2023-10-27 | 2023-11-30 | 8.86% |
+| 4 | 2026-06-18 | 2026-07-23 | 7.11% |
+| 5 | 2025-06-17 | 2025-07-18 | 6.17% |
+
+The dated extremes identify where company announcements, dividends, corporate actions or data anomalies should be checked. A repeated calendar average is descriptive until it survives the adjusted test and a later out-of-sample period; it is not by itself a buy or sell signal.
 
 </details>
 
@@ -1919,6 +2703,55 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 </details>
 
+<details markdown="1" class="seasonality-section">
+<summary>Seasonality, drawdowns and upside periods</summary>
+
+The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
+
+| Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- |
+| Maximum drawdown | -19.00% (2023-08-29) | Average gain / average loss | 0.955 | Best 21-day period | 11.62% (ending 2023-02-14) |
+| Average underwater drawdown | 12.29% | Upside potential ratio | 1.195 | Worst 21-day period | -9.75% (ending 2023-08-25) |
+| Conditional drawdown 95% | 16.64% | Upside capture vs Baltic EW | 33.2% | Best 5-day period | 9.75% (ending 2023-09-06) |
+| Ulcer index | 12.56 | Downside capture vs Baltic EW | 32.9% | Best 63-day period | 8.72% (ending 2023-04-03) |
+| Longest underwater period | 1338 calendar days | Positive trading days | 32.3% | Repeated calendar pattern | Jan: 100% positive across 4 years |
+| Daily downside deviation | 0.466% | Best day | 4.99% (2023-09-04) |  |  |
+| Daily upside deviation | 0.421% | Worst day | -4.73% (2025-04-17) |  |  |
+
+**Calendar-effect tests and observed averages**
+
+| Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
+| --- | --- | --- | --- | --- |
+| Weekday | Best: Friday (0.065%); worst: Tuesday (-0.052%) | 0.1003 | 0.2307 | Not detected |
+| Calendar month | Best: Jan (0.194% daily); worst: Aug (-0.134% daily) | 0.1308 | 0.3344 | Not detected |
+| Turn of month | First/last three days: 0.052%; other days: -0.010% | 0.1324 | 0.4860 | Not detected |
+
+![EFT1T seasonality, drawdowns and upside periods](figures/stock_profiles/EFT1T_seasonality.png?v=1792161097)
+
+**Five deepest drawdown episodes**
+
+| Rank | Peak | Trough | Recovery | Loss | Underwater days |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 2023-02-14 | 2023-08-29 | Not recovered | -19.00% | 1338 |
+| 2 | 2023-01-17 | 2023-01-18 | 2023-01-26 | -0.99% | 9 |
+| 3 | 2023-01-13 | 2023-01-16 | 2023-01-17 | -0.50% | 4 |
+| 4 | 2023-02-08 | 2023-02-09 | 2023-02-10 | -0.47% | 2 |
+| 5 | 2023-01-09 | 2023-01-10 | 2023-01-11 | -0.26% | 2 |
+
+**Five strongest non-overlapping 21-trading-day rises**
+
+| Rank | Start | End | 21-day return |
+| --- | --- | --- | --- |
+| 1 | 2023-01-16 | 2023-02-14 | 11.62% |
+| 2 | 2024-12-19 | 2025-01-28 | 5.82% |
+| 3 | 2023-08-29 | 2023-09-27 | 5.59% |
+| 4 | 2024-09-26 | 2024-10-25 | 4.61% |
+| 5 | 2026-07-01 | 2026-07-31 | 4.47% |
+
+The dated extremes identify where company announcements, dividends, corporate actions or data anomalies should be checked. A repeated calendar average is descriptive until it survives the adjusted test and a later out-of-sample period; it is not by itself a buy or sell signal.
+
+</details>
+
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
@@ -2022,6 +2855,55 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <summary>Return histogram</summary>
 
 ![TKM1T return histogram](figures/stock_profiles/TKM1T_histogram.png?v=1792150404)
+
+</details>
+
+<details markdown="1" class="seasonality-section">
+<summary>Seasonality, drawdowns and upside periods</summary>
+
+The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
+
+| Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- |
+| Maximum drawdown | -16.10% (2026-10-14) | Average gain / average loss | 0.927 | Best 21-day period | 6.93% (ending 2025-01-07) |
+| Average underwater drawdown | 9.53% | Upside potential ratio | 0.788 | Worst 21-day period | -9.08% (ending 2024-04-29) |
+| Conditional drawdown 95% | 15.15% | Upside capture vs Baltic EW | 17.8% | Best 5-day period | 4.88% (ending 2025-01-07) |
+| Ulcer index | 10.14 | Downside capture vs Baltic EW | 22.3% | Best 63-day period | 9.50% (ending 2025-02-10) |
+| Longest underwater period | 930 calendar days | Positive trading days | 40.0% | Repeated calendar pattern | Feb: 100% positive across 4 years |
+| Daily downside deviation | 0.488% | Best day | 3.06% (2025-01-03) |  |  |
+| Daily upside deviation | 0.341% | Worst day | -6.77% (2026-03-31) |  |  |
+
+**Calendar-effect tests and observed averages**
+
+| Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
+| --- | --- | --- | --- | --- |
+| Weekday | Best: Wednesday (0.051%); worst: Tuesday (-0.065%) | 0.0515 | 0.1691 | Not detected |
+| Calendar month | Best: Jan (0.142% daily); worst: Apr (-0.154% daily) | 0.2331 | 0.4726 | Not detected |
+| Turn of month | First/last three days: -0.095%; other days: 0.016% | 0.4974 | 0.8190 | Not detected |
+
+![TKM1T seasonality, drawdowns and upside periods](figures/stock_profiles/TKM1T_seasonality.png?v=1792161033)
+
+**Five deepest drawdown episodes**
+
+| Rank | Peak | Trough | Recovery | Loss | Underwater days |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 2024-03-28 | 2026-10-14 | Not recovered | -16.10% | 930 |
+| 2 | 2023-03-27 | 2023-09-22 | 2024-02-21 | -9.33% | 331 |
+| 3 | 2023-02-09 | 2023-02-14 | 2023-03-01 | -1.36% | 20 |
+| 4 | 2024-02-21 | 2024-02-29 | 2024-03-15 | -1.33% | 23 |
+| 5 | 2023-03-01 | 2023-03-02 | 2023-03-03 | -1.17% | 2 |
+
+**Five strongest non-overlapping 21-trading-day rises**
+
+| Rank | Start | End | 21-day return |
+| --- | --- | --- | --- |
+| 1 | 2024-11-28 | 2025-01-07 | 6.93% |
+| 2 | 2023-01-02 | 2023-01-31 | 6.61% |
+| 3 | 2025-12-09 | 2026-01-15 | 6.50% |
+| 4 | 2024-01-22 | 2024-02-21 | 4.79% |
+| 5 | 2023-09-22 | 2023-10-23 | 4.31% |
+
+The dated extremes identify where company announcements, dividends, corporate actions or data anomalies should be checked. A repeated calendar average is descriptive until it survives the adjusted test and a later out-of-sample period; it is not by itself a buy or sell signal.
 
 </details>
 
@@ -2131,6 +3013,55 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 </details>
 
+<details markdown="1" class="seasonality-section">
+<summary>Seasonality, drawdowns and upside periods</summary>
+
+The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
+
+| Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- |
+| Maximum drawdown | -18.99% (2024-12-04) | Average gain / average loss | 1.282 | Best 21-day period | 18.54% (ending 2025-02-17) |
+| Average underwater drawdown | 11.36% | Upside potential ratio | 1.404 | Worst 21-day period | -9.62% (ending 2025-03-20) |
+| Conditional drawdown 95% | 17.70% | Upside capture vs Baltic EW | 65.0% | Best 5-day period | 10.50% (ending 2023-01-16) |
+| Ulcer index | 11.85 | Downside capture vs Baltic EW | 67.6% | Best 63-day period | 14.37% (ending 2025-02-17) |
+| Longest underwater period | 1346 calendar days | Positive trading days | 36.9% | Repeated calendar pattern | Dec: 100% positive across 3 years |
+| Daily downside deviation | 0.545% | Best day | 4.62% (2025-11-27) |  |  |
+| Daily upside deviation | 0.671% | Worst day | -3.86% (2023-03-13) |  |  |
+
+**Calendar-effect tests and observed averages**
+
+| Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
+| --- | --- | --- | --- | --- |
+| Weekday | Best: Friday (0.091%); worst: Monday (-0.149%) | 0.0205 | 0.1363 | Not detected |
+| Calendar month | Best: Jan (0.280% daily); worst: Apr (-0.132% daily) | 0.7419 | 0.8126 | Not detected |
+| Turn of month | First/last three days: 0.009%; other days: -0.002% | 0.7297 | 0.9443 | Not detected |
+
+![LHV1T seasonality, drawdowns and upside periods](figures/stock_profiles/LHV1T_seasonality.png?v=1792161108)
+
+**Five deepest drawdown episodes**
+
+| Rank | Peak | Trough | Recovery | Loss | Underwater days |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 2023-02-06 | 2024-12-04 | Not recovered | -18.99% | 1346 |
+| 2 | 2023-01-18 | 2023-01-19 | 2023-01-25 | -1.33% | 7 |
+| 3 | 2023-01-16 | 2023-01-17 | 2023-01-18 | -0.80% | 2 |
+| 4 | 2023-01-27 | 2023-01-30 | 2023-02-01 | -0.77% | 5 |
+| 5 | 2023-02-02 | 2023-02-03 | 2023-02-06 | -0.76% | 4 |
+
+**Five strongest non-overlapping 21-trading-day rises**
+
+| Rank | Start | End | 21-day return |
+| --- | --- | --- | --- |
+| 1 | 2025-01-17 | 2025-02-17 | 18.54% |
+| 2 | 2023-01-04 | 2023-02-02 | 16.86% |
+| 3 | 2025-04-23 | 2025-05-27 | 10.30% |
+| 4 | 2025-11-26 | 2025-12-30 | 10.00% |
+| 5 | 2023-12-04 | 2024-01-05 | 8.48% |
+
+The dated extremes identify where company announcements, dividends, corporate actions or data anomalies should be checked. A repeated calendar average is descriptive until it survives the adjusted test and a later out-of-sample period; it is not by itself a buy or sell signal.
+
+</details>
+
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
@@ -2234,6 +3165,54 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <summary>Return histogram</summary>
 
 ![CPA1T return histogram](figures/stock_profiles/CPA1T_histogram.png?v=1792150405)
+
+</details>
+
+<details markdown="1" class="seasonality-section">
+<summary>Seasonality, drawdowns and upside periods</summary>
+
+The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
+
+| Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- |
+| Maximum drawdown | -37.66% (2025-10-27) | Average gain / average loss | 1.208 | Best 21-day period | 23.44% (ending 2023-02-02) |
+| Average underwater drawdown | 25.43% | Upside potential ratio | 1.339 | Worst 21-day period | -13.07% (ending 2023-05-25) |
+| Conditional drawdown 95% | 37.17% | Upside capture vs Baltic EW | 79.9% | Best 5-day period | 8.80% (ending 2023-01-16) |
+| Ulcer index | 26.76 | Downside capture vs Baltic EW | 84.3% | Best 63-day period | 20.46% (ending 2026-02-20) |
+| Longest underwater period | 1350 calendar days | Positive trading days | 38.4% | Repeated calendar pattern | Jan: 100% positive across 4 years |
+| Daily downside deviation | 0.629% | Best day | 4.84% (2026-01-22) |  |  |
+| Daily upside deviation | 0.713% | Worst day | -3.82% (2023-03-13) |  |  |
+
+**Calendar-effect tests and observed averages**
+
+| Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
+| --- | --- | --- | --- | --- |
+| Weekday | Best: Friday (0.144%); worst: Monday (-0.171%) | 0.0133 | 0.1363 | Not detected |
+| Calendar month | Best: Jan (0.348% daily); worst: May (-0.207% daily) | 0.1726 | 0.3970 | Not detected |
+| Turn of month | First/last three days: 0.010%; other days: -0.004% | 0.6435 | 0.9250 | Not detected |
+
+![CPA1T seasonality, drawdowns and upside periods](figures/stock_profiles/CPA1T_seasonality.png?v=1792161111)
+
+**Five deepest drawdown episodes**
+
+| Rank | Peak | Trough | Recovery | Loss | Underwater days |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 2023-02-02 | 2025-10-27 | Not recovered | -37.66% | 1350 |
+| 2 | 2023-01-16 | 2023-01-24 | 2023-01-26 | -1.82% | 10 |
+| 3 | 2023-01-03 | 2023-01-06 | 2023-01-09 | -1.52% | 6 |
+| 4 | 2023-01-30 | 2023-01-31 | 2023-02-01 | -0.68% | 2 |
+
+**Five strongest non-overlapping 21-trading-day rises**
+
+| Rank | Start | End | 21-day return |
+| --- | --- | --- | --- |
+| 1 | 2023-01-04 | 2023-02-02 | 23.44% |
+| 2 | 2025-01-14 | 2025-02-12 | 17.48% |
+| 3 | 2026-01-21 | 2026-02-20 | 12.35% |
+| 4 | 2025-11-28 | 2026-01-06 | 12.21% |
+| 5 | 2024-09-26 | 2024-10-25 | 11.86% |
+
+The dated extremes identify where company announcements, dividends, corporate actions or data anomalies should be checked. A repeated calendar average is descriptive until it survives the adjusted test and a later out-of-sample period; it is not by itself a buy or sell signal.
 
 </details>
 
@@ -2343,6 +3322,55 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 </details>
 
+<details markdown="1" class="seasonality-section">
+<summary>Seasonality, drawdowns and upside periods</summary>
+
+The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
+
+| Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- |
+| Maximum drawdown | -24.32% (2024-09-05) | Average gain / average loss | 0.921 | Best 21-day period | 12.56% (ending 2025-05-20) |
+| Average underwater drawdown | 17.55% | Upside potential ratio | 1.314 | Worst 21-day period | -8.86% (ending 2023-08-24) |
+| Conditional drawdown 95% | 23.79% | Upside capture vs Baltic EW | 27.8% | Best 5-day period | 7.37% (ending 2025-05-20) |
+| Ulcer index | 18.24 | Downside capture vs Baltic EW | 39.7% | Best 63-day period | 12.02% (ending 2025-06-04) |
+| Longest underwater period | 1357 calendar days | Positive trading days | 29.3% | Repeated calendar pattern | Apr: 100% positive across 4 years |
+| Daily downside deviation | 0.495% | Best day | 2.75% (2025-05-16) |  |  |
+| Daily upside deviation | 0.417% | Worst day | -4.74% (2026-05-11) |  |  |
+
+**Calendar-effect tests and observed averages**
+
+| Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
+| --- | --- | --- | --- | --- |
+| Weekday | Best: Friday (0.079%); worst: Monday (-0.103%) | 0.1567 | 0.3003 | Not detected |
+| Calendar month | Best: Apr (0.138% daily); worst: Jun (-0.141% daily) | 0.4903 | 0.6265 | Not detected |
+| Turn of month | First/last three days: 0.076%; other days: -0.035% | 0.0280 | 0.2149 | Not detected |
+
+![TVE1T seasonality, drawdowns and upside periods](figures/stock_profiles/TVE1T_seasonality.png?v=1792161082)
+
+**Five deepest drawdown episodes**
+
+| Rank | Peak | Trough | Recovery | Loss | Underwater days |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 2023-01-26 | 2024-09-05 | Not recovered | -24.32% | 1357 |
+| 2 | 2023-01-04 | 2023-01-05 | 2023-01-06 | -0.31% | 2 |
+| 3 | 2023-01-16 | 2023-01-17 | 2023-01-18 | -0.31% | 2 |
+| 4 | 2023-01-20 | 2023-01-23 | 2023-01-24 | -0.30% | 4 |
+| 5 | 2023-01-10 | 2023-01-11 | 2023-01-16 | -0.16% | 6 |
+
+**Five strongest non-overlapping 21-trading-day rises**
+
+| Rank | Start | End | 21-day return |
+| --- | --- | --- | --- |
+| 1 | 2025-04-15 | 2025-05-21 | 12.56% |
+| 2 | 2025-12-03 | 2026-01-09 | 6.60% |
+| 3 | 2025-01-13 | 2025-02-11 | 4.90% |
+| 4 | 2024-04-04 | 2024-05-07 | 4.85% |
+| 5 | 2026-05-21 | 2026-06-19 | 4.57% |
+
+The dated extremes identify where company announcements, dividends, corporate actions or data anomalies should be checked. A repeated calendar average is descriptive until it survives the adjusted test and a later out-of-sample period; it is not by itself a buy or sell signal.
+
+</details>
+
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
@@ -2449,6 +3477,55 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 </details>
 
+<details markdown="1" class="seasonality-section">
+<summary>Seasonality, drawdowns and upside periods</summary>
+
+The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
+
+| Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- |
+| Maximum drawdown | -68.54% (2024-09-02) | Average gain / average loss | 1.167 | Best 21-day period | 40.17% (ending 2026-08-26) |
+| Average underwater drawdown | 42.89% | Upside potential ratio | 1.161 | Worst 21-day period | -33.33% (ending 2023-11-13) |
+| Conditional drawdown 95% | 65.78% | Upside capture vs Baltic EW | 99.7% | Best 5-day period | 25.62% (ending 2026-02-12) |
+| Ulcer index | 46.65 | Downside capture vs Baltic EW | 65.5% | Best 63-day period | 70.30% (ending 2026-02-12) |
+| Longest underwater period | 1288 calendar days | Positive trading days | 37.5% | Repeated calendar pattern | Jan: 75% positive across 4 years |
+| Daily downside deviation | 1.386% | Best day | 20.83% (2026-02-12) |  |  |
+| Daily upside deviation | 1.579% | Worst day | -18.64% (2023-11-09) |  |  |
+
+**Calendar-effect tests and observed averages**
+
+| Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
+| --- | --- | --- | --- | --- |
+| Weekday | Best: Tuesday (0.269%); worst: Thursday (-0.185%) | 0.4490 | 0.5163 | Not detected |
+| Calendar month | Best: Jan (0.459% daily); worst: Nov (-0.409% daily) | 0.3085 | 0.4956 | Not detected |
+| Turn of month | First/last three days: 0.014%; other days: 0.059% | 0.8311 | 0.9477 | Not detected |
+
+![SAF1R seasonality, drawdowns and upside periods](figures/stock_profiles/SAF1R_seasonality.png?v=1792161036)
+
+**Five deepest drawdown episodes**
+
+| Rank | Peak | Trough | Recovery | Loss | Underwater days |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 2023-02-08 | 2024-09-02 | 2026-08-19 | -68.54% | 1288 |
+| 2 | 2026-09-08 | 2026-09-28 | Not recovered | -10.36% | 36 |
+| 3 | 2023-02-01 | 2023-02-02 | 2023-02-06 | -1.75% | 5 |
+| 4 | 2023-01-27 | 2023-01-30 | 2023-01-31 | -1.06% | 4 |
+| 5 | 2026-08-27 | 2026-08-31 | 2026-09-01 | -0.87% | 5 |
+
+**Five strongest non-overlapping 21-trading-day rises**
+
+| Rank | Start | End | 21-day return |
+| --- | --- | --- | --- |
+| 1 | 2026-07-27 | 2026-08-26 | 40.17% |
+| 2 | 2026-01-14 | 2026-02-12 | 37.91% |
+| 3 | 2024-09-02 | 2024-10-01 | 25.39% |
+| 4 | 2026-04-14 | 2026-05-18 | 23.08% |
+| 5 | 2025-11-28 | 2026-01-06 | 19.43% |
+
+The dated extremes identify where company announcements, dividends, corporate actions or data anomalies should be checked. A repeated calendar average is descriptive until it survives the adjusted test and a later out-of-sample period; it is not by itself a buy or sell signal.
+
+</details>
+
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
@@ -2552,6 +3629,55 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <summary>Return histogram</summary>
 
 ![TSM1T return histogram](figures/stock_profiles/TSM1T_histogram.png?v=1792150405)
+
+</details>
+
+<details markdown="1" class="seasonality-section">
+<summary>Seasonality, drawdowns and upside periods</summary>
+
+The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistically supported calendar effects: **calendar-month**. Adjusted p-values control the false-discovery rate across all analysed shares.
+
+| Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- |
+| Maximum drawdown | -29.81% (2024-12-11) | Average gain / average loss | 0.946 | Best 21-day period | 15.44% (ending 2026-01-30) |
+| Average underwater drawdown | 17.99% | Upside potential ratio | 0.929 | Worst 21-day period | -14.31% (ending 2026-05-28) |
+| Conditional drawdown 95% | 29.36% | Upside capture vs Baltic EW | 47.0% | Best 5-day period | 8.50% (ending 2026-01-30) |
+| Ulcer index | 19.61 | Downside capture vs Baltic EW | 60.2% | Best 63-day period | 25.39% (ending 2026-02-11) |
+| Longest underwater period | 1325 calendar days | Positive trading days | 39.3% | Repeated calendar pattern | May: 0% positive across 4 years |
+| Daily downside deviation | 0.562% | Best day | 2.77% (2024-04-08) |  |  |
+| Daily upside deviation | 0.450% | Worst day | -6.09% (2025-05-08) |  |  |
+
+**Calendar-effect tests and observed averages**
+
+| Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
+| --- | --- | --- | --- | --- |
+| Weekday | Best: Wednesday (0.051%); worst: Monday (-0.093%) | 0.0465 | 0.1691 | Not detected |
+| Calendar month | Best: Jan (0.299% daily); worst: May (-0.388% daily) | 0.0002 | 0.0056 | Detected |
+| Turn of month | First/last three days: 0.068%; other days: -0.034% | 0.1396 | 0.4860 | Not detected |
+
+![TSM1T seasonality, drawdowns and upside periods](figures/stock_profiles/TSM1T_seasonality.png?v=1792161086)
+
+**Five deepest drawdown episodes**
+
+| Rank | Peak | Trough | Recovery | Loss | Underwater days |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 2023-02-27 | 2024-12-11 | Not recovered | -29.81% | 1325 |
+| 2 | 2023-01-16 | 2023-01-18 | 2023-01-20 | -0.56% | 4 |
+| 3 | 2023-02-09 | 2023-02-10 | 2023-02-27 | -0.40% | 18 |
+| 4 | 2023-01-09 | 2023-01-10 | 2023-01-13 | -0.28% | 4 |
+| 5 | 2023-01-26 | 2023-01-27 | 2023-01-30 | -0.28% | 4 |
+
+**Five strongest non-overlapping 21-trading-day rises**
+
+| Rank | Start | End | 21-day return |
+| --- | --- | --- | --- |
+| 1 | 2025-12-29 | 2026-01-30 | 15.44% |
+| 2 | 2025-01-20 | 2025-02-18 | 9.82% |
+| 3 | 2024-04-03 | 2024-05-03 | 7.23% |
+| 4 | 2025-11-04 | 2025-12-05 | 6.22% |
+| 5 | 2025-03-04 | 2025-04-03 | 6.09% |
+
+The dated extremes identify where company announcements, dividends, corporate actions or data anomalies should be checked. A repeated calendar average is descriptive until it survives the adjusted test and a later out-of-sample period; it is not by itself a buy or sell signal.
 
 </details>
 
