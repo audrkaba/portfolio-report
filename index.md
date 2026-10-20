@@ -36,6 +36,11 @@ table { display:block; width:100%; overflow-x:auto; border-collapse:collapse; wh
 .add-one-comparison td { padding:.32rem .10rem; text-align:center; overflow-wrap:anywhere; font-variant-numeric:tabular-nums; }
 .add-one-comparison th:first-child,.add-one-comparison td:first-child { width:4.2%; text-align:center; }
 .add-one-comparison th:nth-child(2),.add-one-comparison td:nth-child(2) { width:6.5%; text-align:center; }
+.trade-decision-table { display:table; width:100%; table-layout:fixed; overflow:visible; white-space:normal; font-size:.67rem; }
+.trade-decision-table th { height:145px; padding:.25rem .08rem; text-align:center; vertical-align:bottom; }
+.trade-decision-table th span { display:inline-block; writing-mode:vertical-rl; transform:rotate(180deg); white-space:nowrap; }
+.trade-decision-table td { padding:.3rem .08rem; text-align:center; overflow-wrap:anywhere; font-variant-numeric:tabular-nums; }
+.trade-decision-table th:nth-child(3),.trade-decision-table td:nth-child(3) { width:10%; text-align:left; }
 .profile-filters { position:sticky; top:0; z-index:8; display:flex; flex-wrap:wrap; align-items:center; gap:.55rem 1rem; margin:.75rem 0 1rem; padding:.7rem .9rem; border:1px solid #b9d1d8; border-radius:7px; background:#eef7f8f2; box-shadow:0 2px 7px #20304016; }
 .profile-filters label { display:inline-flex; align-items:center; gap:.35rem; cursor:pointer; font-weight:650; }
 .profile-filters input { width:1.05rem; height:1.05rem; accent-color:var(--accent); }
@@ -61,7 +66,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-20 13:37 (Europe/Vilnius); return analysis through 2026-10-16; valuation prices through 2026-10-19
+# Baltic investment plan - updated 2026-10-20 13:43 (Europe/Vilnius); return analysis through 2026-10-16; valuation prices through 2026-10-19
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -173,34 +178,12 @@ Return and technical analysis uses common observations through 2026-10-16; valua
 </details>
 
 
-<details markdown="1">
+<details markdown="1" class="trade-decision-section">
 <summary><strong>Table 3. Canonical Baltic_NetSD model trades: selling permitted</strong></summary>
 
-| execution_phase | asset | name | last_price | target_weight_percent | current_shares | trade_shares | trade_EUR | target_shares | invested_EUR | action | historical_dividend_cash |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | TAL1T | Tallink Grupp | 0.6460 | 1.3939 | 700 | -377 | -243.5420 | 323 | 208.6580 | SELL | 48.4500 |
-| 1 | ROE1L | Artea Bankas | 0.8800 | 0.4087 | 416 | -347 | -305.3600 | 69 | 60.7200 | SELL | 9.3840 |
-| 1 | TSM1T | Tallinna Sadam | 1.2140 | 0.0000 | 330 | -330 | -400.6200 | 0 | 0.0000 | SELL | 0.0000 |
-| 1 | TKM1T | TKM Grupp | 8.9000 | 9.6967 | 288 | -125 | -1112.5000 | 163 | 1450.6999 | SELL | 431.9500 |
-| 1 | SAF1R | SAF Tehnika | 16.3500 | 0.0000 | 100 | -100 | -1635.0000 | 0 | 0.0000 | SELL | 0.0000 |
-| 2 | GRG1L | Grigeo Group | 1.0000 | 10.1549 | 0 | 1523 | 1523.0000 | 1523 | 1523.0000 | BUY | 258.9100 |
-| 2 | KNE1L | KN Energies | 0.4800 | 9.5139 | 0 | 2973 | 1427.0400 | 2973 | 1427.0400 | BUY | 191.4612 |
-| 2 | EFT1T | EfTEN Real Estate Fund | 19.6000 | 9.2677 | 0 | 70 | 1372.0000 | 70 | 1372.0000 | BUY | 312.3820 |
-| 2 | VLP1L | Vilkyškių pieninė | 15.6000 | 11.2884 | 42 | 66 | 1029.6000 | 108 | 1684.8000 | BUY | 0.0000 |
-| 2 | MRK1T | Merko Ehitus | 27.1000 | 9.8837 | 20 | 34 | 921.4000 | 54 | 1463.4000 | BUY | 294.3000 |
-| 2 | RSU1L | Rokiškio sūris | 4.4800 | 4.8794 | 0 | 163 | 730.2400 | 163 | 730.2400 | BUY | 114.1000 |
-| 2 | AKO1L | Akola Group | 1.8350 | 3.8355 | 0 | 313 | 574.3550 | 313 | 574.3550 | BUY | 0.0000 |
-| 2 | PZV1L | Pieno žvaigždės | 1.7950 | 3.1307 | 0 | 261 | 468.4950 | 261 | 468.4950 | BUY | 109.6200 |
-| 2 | IGN1L | Ignitis grupė | 21.7500 | 2.9497 | 0 | 20 | 435.0000 | 20 | 435.0000 | BUY | 78.3800 |
-| 2 | TVE1T | Tallinna Vesi | 10.8500 | 2.9539 | 0 | 40 | 434.0000 | 40 | 434.0000 | BUY | 77.6000 |
-| 2 | APG1L | Apranga | 3.8100 | 7.3585 | 200 | 89 | 339.0900 | 289 | 1101.0900 | BUY | 297.6700 |
-| 2 | HAE1T | Harju Elekter Group | 5.3600 | 5.7378 | 100 | 60 | 321.6000 | 160 | 857.6000 | BUY | 92.8000 |
-| 2 | TEL1L | Telia Lietuva | 2.2900 | 2.1474 | 0 | 140 | 320.6000 | 140 | 320.6000 | BUY | 43.4000 |
-| 2 | DGR1R | DelfinGroup | 1.7200 | 1.5401 | 0 | 134 | 230.4800 | 134 | 230.4800 | BUY | 43.8448 |
-| 2 | VIRSI | VIRŠI-A | 4.4200 | 1.1552 | 0 | 39 | 172.3800 | 39 | 172.3800 | BUY | 10.6194 |
-| 2 | MOLNR | J. Molner | 20.4000 | 1.1164 | 0 | 8 | 163.2000 | 8 | 163.2000 | BUY | 0.0000 |
-| 2 | LHV1T | LHV Group | 3.2500 | 0.8120 | 0 | 37 | 120.2500 | 37 | 120.2500 | BUY | 15.9100 |
-| 2 | CPA1T | Coop Pank | 2.3500 | 0.7757 | 0 | 49 | 115.1500 | 49 | 115.1500 | BUY | 13.0830 |
+<table class="trade-decision-table"><thead><tr><th><span>Phase</span></th><th><span>Share</span></th><th><span>Company</span></th><th><span>Last price</span></th><th><span>Indicative buy ≤</span></th><th><span>Buy distance</span></th><th><span>Indicative sell ≥</span></th><th><span>Sell distance</span></th><th><span>Price zone</span></th><th><span>Target weight</span></th><th><span>Current shares</span></th><th><span>Trade shares</span></th><th><span>Trade EUR</span></th><th><span>Target shares</span></th><th><span>Final value EUR</span></th><th><span>Model action</span></th><th><span>Historical dividends EUR</span></th></tr></thead><tbody><tr><td>1</td><td>TAL1T</td><td>Tallink Grupp</td><td>0.6460</td><td>0.6373</td><td>-1.34%</td><td>0.6508</td><td>+0.74%</td><td>HOLD</td><td>1.39%</td><td>700</td><td>-377</td><td>-243.54</td><td>323</td><td>208.66</td><td>SELL</td><td>48.45</td></tr><tr><td>1</td><td>ROE1L</td><td>Artea Bankas</td><td>0.8800</td><td>0.8712</td><td>-1.00%</td><td>0.9137</td><td>+3.83%</td><td>HOLD</td><td>0.41%</td><td>416</td><td>-347</td><td>-305.36</td><td>69</td><td>60.72</td><td>SELL</td><td>9.38</td></tr><tr><td>1</td><td>TSM1T</td><td>Tallinna Sadam</td><td>1.2140</td><td>1.2035</td><td>-0.87%</td><td>1.2189</td><td>+0.41%</td><td>HOLD</td><td>0.00%</td><td>330</td><td>-330</td><td>-400.62</td><td>0</td><td>0.00</td><td>SELL</td><td>0.00</td></tr><tr><td>1</td><td>TKM1T</td><td>TKM Grupp</td><td>8.9000</td><td>8.9183</td><td>+0.21%</td><td>9.0967</td><td>+2.21%</td><td>BUY</td><td>9.70%</td><td>288</td><td>-125</td><td>-1112.50</td><td>163</td><td>1450.70</td><td>SELL</td><td>431.95</td></tr><tr><td>1</td><td>SAF1R</td><td>SAF Tehnika</td><td>16.3500</td><td>16.0810</td><td>-1.65%</td><td>17.2490</td><td>+5.50%</td><td>HOLD</td><td>0.00%</td><td>100</td><td>-100</td><td>-1635.00</td><td>0</td><td>0.00</td><td>SELL</td><td>0.00</td></tr><tr><td>2</td><td>GRG1L</td><td>Grigeo Group</td><td>1.0000</td><td>0.9995</td><td>-0.05%</td><td>1.0210</td><td>+2.10%</td><td>HOLD</td><td>10.15%</td><td>0</td><td>+1523</td><td>1523.00</td><td>1523</td><td>1523.00</td><td>BUY</td><td>258.91</td></tr><tr><td>2</td><td>KNE1L</td><td>KN Energies</td><td>0.4800</td><td>0.4790</td><td>-0.21%</td><td>0.4955</td><td>+3.23%</td><td>HOLD</td><td>9.51%</td><td>0</td><td>+2973</td><td>1427.04</td><td>2973</td><td>1427.04</td><td>BUY</td><td>191.46</td></tr><tr><td>2</td><td>EFT1T</td><td>EfTEN Real Estate Fund</td><td>19.6000</td><td>19.4049</td><td>-1.00%</td><td>19.6601</td><td>+0.31%</td><td>HOLD</td><td>9.27%</td><td>0</td><td>+70</td><td>1372.00</td><td>70</td><td>1372.00</td><td>BUY</td><td>312.38</td></tr><tr><td>2</td><td>VLP1L</td><td>Vilkyškių pieninė</td><td>15.6000</td><td>15.1951</td><td>-2.60%</td><td>15.5499</td><td>-0.32%</td><td>SELL</td><td>11.29%</td><td>42</td><td>+66</td><td>1029.60</td><td>108</td><td>1684.80</td><td>BUY</td><td>0.00</td></tr><tr><td>2</td><td>MRK1T</td><td>Merko Ehitus</td><td>27.1000</td><td>26.9915</td><td>-0.40%</td><td>27.1735</td><td>+0.27%</td><td>HOLD</td><td>9.88%</td><td>20</td><td>+34</td><td>921.40</td><td>54</td><td>1463.40</td><td>BUY</td><td>294.30</td></tr><tr><td>2</td><td>RSU1L</td><td>Rokiškio sūris</td><td>4.4800</td><td>4.4368</td><td>-0.96%</td><td>4.5352</td><td>+1.23%</td><td>HOLD</td><td>4.88%</td><td>0</td><td>+163</td><td>730.24</td><td>163</td><td>730.24</td><td>BUY</td><td>114.10</td></tr><tr><td>2</td><td>AKO1L</td><td>Akola Group</td><td>1.8350</td><td>1.7252</td><td>-5.98%</td><td>1.8503</td><td>+0.83%</td><td>HOLD</td><td>3.84%</td><td>0</td><td>+313</td><td>574.36</td><td>313</td><td>574.36</td><td>BUY</td><td>0.00</td></tr><tr><td>2</td><td>PZV1L</td><td>Pieno žvaigždės</td><td>1.7950</td><td>1.7233</td><td>-3.99%</td><td>1.8322</td><td>+2.07%</td><td>HOLD</td><td>3.13%</td><td>0</td><td>+261</td><td>468.49</td><td>261</td><td>468.49</td><td>BUY</td><td>109.62</td></tr><tr><td>2</td><td>IGN1L</td><td>Ignitis grupė</td><td>21.7500</td><td>21.4589</td><td>-1.34%</td><td>22.1261</td><td>+1.73%</td><td>HOLD</td><td>2.95%</td><td>0</td><td>+20</td><td>435.00</td><td>20</td><td>435.00</td><td>BUY</td><td>78.38</td></tr><tr><td>2</td><td>TVE1T</td><td>Tallinna Vesi</td><td>10.8500</td><td>10.7922</td><td>-0.53%</td><td>10.9278</td><td>+0.72%</td><td>HOLD</td><td>2.95%</td><td>0</td><td>+40</td><td>434.00</td><td>40</td><td>434.00</td><td>BUY</td><td>77.60</td></tr><tr><td>2</td><td>APG1L</td><td>Apranga</td><td>3.8100</td><td>3.7812</td><td>-0.76%</td><td>3.9138</td><td>+2.72%</td><td>HOLD</td><td>7.36%</td><td>200</td><td>+89</td><td>339.09</td><td>289</td><td>1101.09</td><td>BUY</td><td>297.67</td></tr><tr><td>2</td><td>HAE1T</td><td>Harju Elekter Group</td><td>5.3600</td><td>5.0526</td><td>-5.73%</td><td>5.4174</td><td>+1.07%</td><td>HOLD</td><td>5.74%</td><td>100</td><td>+60</td><td>321.60</td><td>160</td><td>857.60</td><td>BUY</td><td>92.80</td></tr><tr><td>2</td><td>TEL1L</td><td>Telia Lietuva</td><td>2.2900</td><td>2.1891</td><td>-4.41%</td><td>2.2789</td><td>-0.48%</td><td>SELL</td><td>2.15%</td><td>0</td><td>+140</td><td>320.60</td><td>140</td><td>320.60</td><td>BUY</td><td>43.40</td></tr><tr><td>2</td><td>DGR1R</td><td>DelfinGroup</td><td>1.7200</td><td>1.5420</td><td>-10.35%</td><td>1.7600</td><td>+2.32%</td><td>HOLD</td><td>1.54%</td><td>0</td><td>+134</td><td>230.48</td><td>134</td><td>230.48</td><td>BUY</td><td>43.84</td></tr><tr><td>2</td><td>VIRSI</td><td>VIRŠI-A</td><td>4.4200</td><td>4.4040</td><td>-0.36%</td><td>4.4450</td><td>+0.56%</td><td>HOLD</td><td>1.16%</td><td>0</td><td>+39</td><td>172.38</td><td>39</td><td>172.38</td><td>BUY</td><td>10.62</td></tr><tr><td>2</td><td>MOLNR</td><td>J. Molner</td><td>20.4000</td><td>15.7195</td><td>-22.94%</td><td>24.0105</td><td>+17.70%</td><td>HOLD</td><td>1.12%</td><td>0</td><td>+8</td><td>163.20</td><td>8</td><td>163.20</td><td>BUY</td><td>0.00</td></tr><tr><td>2</td><td>LHV1T</td><td>LHV Group</td><td>3.2500</td><td>3.2447</td><td>-0.16%</td><td>3.3083</td><td>+1.79%</td><td>HOLD</td><td>0.81%</td><td>0</td><td>+37</td><td>120.25</td><td>37</td><td>120.25</td><td>BUY</td><td>15.91</td></tr><tr><td>2</td><td>CPA1T</td><td>Coop Pank</td><td>2.3500</td><td>2.2940</td><td>-2.38%</td><td>2.3705</td><td>+0.87%</td><td>HOLD</td><td>0.78%</td><td>0</td><td>+49</td><td>115.15</td><td>49</td><td>115.15</td><td>BUY</td><td>13.08</td></tr></tbody></table>
+
+Indicative buy and sell prices are the current 20-observation Bollinger lower and upper bands. Buy distance and sell distance show the percentage move from the last price to each limit. Price zone applies only these limits; Model action remains the Baltic_NetSD allocation decision. These technical limits are descriptive and will be replaced when the walk-forward acceptable-price model is validated.
 
 </details>
 
@@ -223,16 +206,13 @@ Select a share to display its allocation, technical indicators, all PerformanceA
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
-**Planned acceptable-price signal rules**
+**Current indicative buy and sell prices**
 
-| Price condition | Signal |
-| --- | --- |
-| Current price ≤ Buy below | BUY |
-| Buy below < current price < Sell above | HOLD |
-| Current price ≥ Sell above | SELL |
-| Forecast uncertainty is too high | WAIT / LOW CONFIDENCE |
+| Current price | Buy below | Distance to buy | Sell above | Distance to sell | Price signal |
+| --- | --- | --- | --- | --- | --- |
+| EUR 0.4800 | EUR 0.4790 | -0.21% | EUR 0.4955 | +3.23% | HOLD |
 
-Buy below and Sell above will be generated by the walk-forward acceptable-price model. Until those numerical limits are calculated and validated, this table defines the decision rule only and does not replace the current four-indicator technical decision.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -469,16 +449,13 @@ The static figure is collapsed because the interactive plots above provide the d
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
-**Planned acceptable-price signal rules**
+**Current indicative buy and sell prices**
 
-| Price condition | Signal |
-| --- | --- |
-| Current price ≤ Buy below | BUY |
-| Buy below < current price < Sell above | HOLD |
-| Current price ≥ Sell above | SELL |
-| Forecast uncertainty is too high | WAIT / LOW CONFIDENCE |
+| Current price | Buy below | Distance to buy | Sell above | Distance to sell | Price signal |
+| --- | --- | --- | --- | --- | --- |
+| EUR 27.1000 | EUR 26.9915 | -0.40% | EUR 27.1735 | +0.27% | HOLD |
 
-Buy below and Sell above will be generated by the walk-forward acceptable-price model. Until those numerical limits are calculated and validated, this table defines the decision rule only and does not replace the current four-indicator technical decision.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -733,16 +710,13 @@ The static figure is collapsed because the interactive plots above provide the d
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
-**Planned acceptable-price signal rules**
+**Current indicative buy and sell prices**
 
-| Price condition | Signal |
-| --- | --- |
-| Current price ≤ Buy below | BUY |
-| Buy below < current price < Sell above | HOLD |
-| Current price ≥ Sell above | SELL |
-| Forecast uncertainty is too high | WAIT / LOW CONFIDENCE |
+| Current price | Buy below | Distance to buy | Sell above | Distance to sell | Price signal |
+| --- | --- | --- | --- | --- | --- |
+| EUR 4.4200 | EUR 4.4040 | -0.36% | EUR 4.4450 | +0.56% | HOLD |
 
-Buy below and Sell above will be generated by the walk-forward acceptable-price model. Until those numerical limits are calculated and validated, this table defines the decision rule only and does not replace the current four-indicator technical decision.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -979,16 +953,13 @@ The static figure is collapsed because the interactive plots above provide the d
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
-**Planned acceptable-price signal rules**
+**Current indicative buy and sell prices**
 
-| Price condition | Signal |
-| --- | --- |
-| Current price ≤ Buy below | BUY |
-| Buy below < current price < Sell above | HOLD |
-| Current price ≥ Sell above | SELL |
-| Forecast uncertainty is too high | WAIT / LOW CONFIDENCE |
+| Current price | Buy below | Distance to buy | Sell above | Distance to sell | Price signal |
+| --- | --- | --- | --- | --- | --- |
+| EUR 15.6000 | EUR 15.1951 | -2.60% | EUR 15.5499 | -0.32% | SELL |
 
-Buy below and Sell above will be generated by the walk-forward acceptable-price model. Until those numerical limits are calculated and validated, this table defines the decision rule only and does not replace the current four-indicator technical decision.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -1224,16 +1195,13 @@ The static figure is collapsed because the interactive plots above provide the d
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
-**Planned acceptable-price signal rules**
+**Current indicative buy and sell prices**
 
-| Price condition | Signal |
-| --- | --- |
-| Current price ≤ Buy below | BUY |
-| Buy below < current price < Sell above | HOLD |
-| Current price ≥ Sell above | SELL |
-| Forecast uncertainty is too high | WAIT / LOW CONFIDENCE |
+| Current price | Buy below | Distance to buy | Sell above | Distance to sell | Price signal |
+| --- | --- | --- | --- | --- | --- |
+| EUR 20.4000 | EUR 15.7195 | -22.94% | EUR 24.0105 | +17.70% | HOLD |
 
-Buy below and Sell above will be generated by the walk-forward acceptable-price model. Until those numerical limits are calculated and validated, this table defines the decision rule only and does not replace the current four-indicator technical decision.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -1456,16 +1424,13 @@ The static figure is collapsed because the interactive plots above provide the d
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
-**Planned acceptable-price signal rules**
+**Current indicative buy and sell prices**
 
-| Price condition | Signal |
-| --- | --- |
-| Current price ≤ Buy below | BUY |
-| Buy below < current price < Sell above | HOLD |
-| Current price ≥ Sell above | SELL |
-| Forecast uncertainty is too high | WAIT / LOW CONFIDENCE |
+| Current price | Buy below | Distance to buy | Sell above | Distance to sell | Price signal |
+| --- | --- | --- | --- | --- | --- |
+| EUR 2.2900 | EUR 2.1891 | -4.41% | EUR 2.2789 | -0.48% | SELL |
 
-Buy below and Sell above will be generated by the walk-forward acceptable-price model. Until those numerical limits are calculated and validated, this table defines the decision rule only and does not replace the current four-indicator technical decision.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -1667,16 +1632,13 @@ The static figure is collapsed because the interactive plots above provide the d
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
-**Planned acceptable-price signal rules**
+**Current indicative buy and sell prices**
 
-| Price condition | Signal |
-| --- | --- |
-| Current price ≤ Buy below | BUY |
-| Buy below < current price < Sell above | HOLD |
-| Current price ≥ Sell above | SELL |
-| Forecast uncertainty is too high | WAIT / LOW CONFIDENCE |
+| Current price | Buy below | Distance to buy | Sell above | Distance to sell | Price signal |
+| --- | --- | --- | --- | --- | --- |
+| EUR 8.9000 | EUR 8.9183 | +0.21% | EUR 9.0967 | +2.21% | BUY |
 
-Buy below and Sell above will be generated by the walk-forward acceptable-price model. Until those numerical limits are calculated and validated, this table defines the decision rule only and does not replace the current four-indicator technical decision.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -1929,16 +1891,13 @@ The static figure is collapsed because the interactive plots above provide the d
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
-**Planned acceptable-price signal rules**
+**Current indicative buy and sell prices**
 
-| Price condition | Signal |
-| --- | --- |
-| Current price ≤ Buy below | BUY |
-| Buy below < current price < Sell above | HOLD |
-| Current price ≥ Sell above | SELL |
-| Forecast uncertainty is too high | WAIT / LOW CONFIDENCE |
+| Current price | Buy below | Distance to buy | Sell above | Distance to sell | Price signal |
+| --- | --- | --- | --- | --- | --- |
+| EUR 3.8100 | EUR 3.7812 | -0.76% | EUR 3.9138 | +2.72% | HOLD |
 
-Buy below and Sell above will be generated by the walk-forward acceptable-price model. Until those numerical limits are calculated and validated, this table defines the decision rule only and does not replace the current four-indicator technical decision.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -2221,16 +2180,13 @@ The static figure is collapsed because the interactive plots above provide the d
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
-**Planned acceptable-price signal rules**
+**Current indicative buy and sell prices**
 
-| Price condition | Signal |
-| --- | --- |
-| Current price ≤ Buy below | BUY |
-| Buy below < current price < Sell above | HOLD |
-| Current price ≥ Sell above | SELL |
-| Forecast uncertainty is too high | WAIT / LOW CONFIDENCE |
+| Current price | Buy below | Distance to buy | Sell above | Distance to sell | Price signal |
+| --- | --- | --- | --- | --- | --- |
+| EUR 1.0000 | EUR 0.9995 | -0.05% | EUR 1.0210 | +2.10% | HOLD |
 
-Buy below and Sell above will be generated by the walk-forward acceptable-price model. Until those numerical limits are calculated and validated, this table defines the decision rule only and does not replace the current four-indicator technical decision.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -2430,16 +2386,13 @@ The static figure is collapsed because the interactive plots above provide the d
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
-**Planned acceptable-price signal rules**
+**Current indicative buy and sell prices**
 
-| Price condition | Signal |
-| --- | --- |
-| Current price ≤ Buy below | BUY |
-| Buy below < current price < Sell above | HOLD |
-| Current price ≥ Sell above | SELL |
-| Forecast uncertainty is too high | WAIT / LOW CONFIDENCE |
+| Current price | Buy below | Distance to buy | Sell above | Distance to sell | Price signal |
+| --- | --- | --- | --- | --- | --- |
+| EUR 4.4800 | EUR 4.4368 | -0.96% | EUR 4.5352 | +1.23% | HOLD |
 
-Buy below and Sell above will be generated by the walk-forward acceptable-price model. Until those numerical limits are calculated and validated, this table defines the decision rule only and does not replace the current four-indicator technical decision.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -2662,16 +2615,13 @@ The static figure is collapsed because the interactive plots above provide the d
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
-**Planned acceptable-price signal rules**
+**Current indicative buy and sell prices**
 
-| Price condition | Signal |
-| --- | --- |
-| Current price ≤ Buy below | BUY |
-| Buy below < current price < Sell above | HOLD |
-| Current price ≥ Sell above | SELL |
-| Forecast uncertainty is too high | WAIT / LOW CONFIDENCE |
+| Current price | Buy below | Distance to buy | Sell above | Distance to sell | Price signal |
+| --- | --- | --- | --- | --- | --- |
+| EUR 1.8350 | EUR 1.7252 | -5.98% | EUR 1.8503 | +0.83% | HOLD |
 
-Buy below and Sell above will be generated by the walk-forward acceptable-price model. Until those numerical limits are calculated and validated, this table defines the decision rule only and does not replace the current four-indicator technical decision.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -2907,16 +2857,13 @@ The static figure is collapsed because the interactive plots above provide the d
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
-**Planned acceptable-price signal rules**
+**Current indicative buy and sell prices**
 
-| Price condition | Signal |
-| --- | --- |
-| Current price ≤ Buy below | BUY |
-| Buy below < current price < Sell above | HOLD |
-| Current price ≥ Sell above | SELL |
-| Forecast uncertainty is too high | WAIT / LOW CONFIDENCE |
+| Current price | Buy below | Distance to buy | Sell above | Distance to sell | Price signal |
+| --- | --- | --- | --- | --- | --- |
+| EUR 21.7500 | EUR 21.4589 | -1.34% | EUR 22.1261 | +1.73% | HOLD |
 
-Buy below and Sell above will be generated by the walk-forward acceptable-price model. Until those numerical limits are calculated and validated, this table defines the decision rule only and does not replace the current four-indicator technical decision.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -3163,16 +3110,13 @@ The static figure is collapsed because the interactive plots above provide the d
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
-**Planned acceptable-price signal rules**
+**Current indicative buy and sell prices**
 
-| Price condition | Signal |
-| --- | --- |
-| Current price ≤ Buy below | BUY |
-| Buy below < current price < Sell above | HOLD |
-| Current price ≥ Sell above | SELL |
-| Forecast uncertainty is too high | WAIT / LOW CONFIDENCE |
+| Current price | Buy below | Distance to buy | Sell above | Distance to sell | Price signal |
+| --- | --- | --- | --- | --- | --- |
+| EUR 1.7950 | EUR 1.7233 | -3.99% | EUR 1.8322 | +2.07% | HOLD |
 
-Buy below and Sell above will be generated by the walk-forward acceptable-price model. Until those numerical limits are calculated and validated, this table defines the decision rule only and does not replace the current four-indicator technical decision.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -3407,16 +3351,13 @@ The static figure is collapsed because the interactive plots above provide the d
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
-**Planned acceptable-price signal rules**
+**Current indicative buy and sell prices**
 
-| Price condition | Signal |
-| --- | --- |
-| Current price ≤ Buy below | BUY |
-| Buy below < current price < Sell above | HOLD |
-| Current price ≥ Sell above | SELL |
-| Forecast uncertainty is too high | WAIT / LOW CONFIDENCE |
+| Current price | Buy below | Distance to buy | Sell above | Distance to sell | Price signal |
+| --- | --- | --- | --- | --- | --- |
+| EUR 0.8800 | EUR 0.8712 | -1.00% | EUR 0.9137 | +3.83% | HOLD |
 
-Buy below and Sell above will be generated by the walk-forward acceptable-price model. Until those numerical limits are calculated and validated, this table defines the decision rule only and does not replace the current four-indicator technical decision.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -3660,16 +3601,13 @@ The static figure is collapsed because the interactive plots above provide the d
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
-**Planned acceptable-price signal rules**
+**Current indicative buy and sell prices**
 
-| Price condition | Signal |
-| --- | --- |
-| Current price ≤ Buy below | BUY |
-| Buy below < current price < Sell above | HOLD |
-| Current price ≥ Sell above | SELL |
-| Forecast uncertainty is too high | WAIT / LOW CONFIDENCE |
+| Current price | Buy below | Distance to buy | Sell above | Distance to sell | Price signal |
+| --- | --- | --- | --- | --- | --- |
+| EUR 0.6460 | EUR 0.6373 | -1.34% | EUR 0.6508 | +0.74% | HOLD |
 
-Buy below and Sell above will be generated by the walk-forward acceptable-price model. Until those numerical limits are calculated and validated, this table defines the decision rule only and does not replace the current four-indicator technical decision.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -3929,16 +3867,13 @@ The static figure is collapsed because the interactive plots above provide the d
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
-**Planned acceptable-price signal rules**
+**Current indicative buy and sell prices**
 
-| Price condition | Signal |
-| --- | --- |
-| Current price ≤ Buy below | BUY |
-| Buy below < current price < Sell above | HOLD |
-| Current price ≥ Sell above | SELL |
-| Forecast uncertainty is too high | WAIT / LOW CONFIDENCE |
+| Current price | Buy below | Distance to buy | Sell above | Distance to sell | Price signal |
+| --- | --- | --- | --- | --- | --- |
+| EUR 1.7200 | EUR 1.5420 | -10.35% | EUR 1.7600 | +2.32% | HOLD |
 
-Buy below and Sell above will be generated by the walk-forward acceptable-price model. Until those numerical limits are calculated and validated, this table defines the decision rule only and does not replace the current four-indicator technical decision.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -4221,16 +4156,13 @@ The static figure is collapsed because the interactive plots above provide the d
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
-**Planned acceptable-price signal rules**
+**Current indicative buy and sell prices**
 
-| Price condition | Signal |
-| --- | --- |
-| Current price ≤ Buy below | BUY |
-| Buy below < current price < Sell above | HOLD |
-| Current price ≥ Sell above | SELL |
-| Forecast uncertainty is too high | WAIT / LOW CONFIDENCE |
+| Current price | Buy below | Distance to buy | Sell above | Distance to sell | Price signal |
+| --- | --- | --- | --- | --- | --- |
+| EUR 19.6000 | EUR 19.4049 | -1.00% | EUR 19.6601 | +0.31% | HOLD |
 
-Buy below and Sell above will be generated by the walk-forward acceptable-price model. Until those numerical limits are calculated and validated, this table defines the decision rule only and does not replace the current four-indicator technical decision.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -4486,16 +4418,13 @@ The static figure is collapsed because the interactive plots above provide the d
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
-**Planned acceptable-price signal rules**
+**Current indicative buy and sell prices**
 
-| Price condition | Signal |
-| --- | --- |
-| Current price ≤ Buy below | BUY |
-| Buy below < current price < Sell above | HOLD |
-| Current price ≥ Sell above | SELL |
-| Forecast uncertainty is too high | WAIT / LOW CONFIDENCE |
+| Current price | Buy below | Distance to buy | Sell above | Distance to sell | Price signal |
+| --- | --- | --- | --- | --- | --- |
+| EUR 5.3600 | EUR 5.0526 | -5.73% | EUR 5.4174 | +1.07% | HOLD |
 
-Buy below and Sell above will be generated by the walk-forward acceptable-price model. Until those numerical limits are calculated and validated, this table defines the decision rule only and does not replace the current four-indicator technical decision.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -4751,16 +4680,13 @@ The static figure is collapsed because the interactive plots above provide the d
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
-**Planned acceptable-price signal rules**
+**Current indicative buy and sell prices**
 
-| Price condition | Signal |
-| --- | --- |
-| Current price ≤ Buy below | BUY |
-| Buy below < current price < Sell above | HOLD |
-| Current price ≥ Sell above | SELL |
-| Forecast uncertainty is too high | WAIT / LOW CONFIDENCE |
+| Current price | Buy below | Distance to buy | Sell above | Distance to sell | Price signal |
+| --- | --- | --- | --- | --- | --- |
+| EUR 3.2500 | EUR 3.2447 | -0.16% | EUR 3.3083 | +1.79% | HOLD |
 
-Buy below and Sell above will be generated by the walk-forward acceptable-price model. Until those numerical limits are calculated and validated, this table defines the decision rule only and does not replace the current four-indicator technical decision.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -5022,16 +4948,13 @@ The static figure is collapsed because the interactive plots above provide the d
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
-**Planned acceptable-price signal rules**
+**Current indicative buy and sell prices**
 
-| Price condition | Signal |
-| --- | --- |
-| Current price ≤ Buy below | BUY |
-| Buy below < current price < Sell above | HOLD |
-| Current price ≥ Sell above | SELL |
-| Forecast uncertainty is too high | WAIT / LOW CONFIDENCE |
+| Current price | Buy below | Distance to buy | Sell above | Distance to sell | Price signal |
+| --- | --- | --- | --- | --- | --- |
+| EUR 2.3500 | EUR 2.2940 | -2.38% | EUR 2.3705 | +0.87% | HOLD |
 
-Buy below and Sell above will be generated by the walk-forward acceptable-price model. Until those numerical limits are calculated and validated, this table defines the decision rule only and does not replace the current four-indicator technical decision.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -5291,16 +5214,13 @@ The static figure is collapsed because the interactive plots above provide the d
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
-**Planned acceptable-price signal rules**
+**Current indicative buy and sell prices**
 
-| Price condition | Signal |
-| --- | --- |
-| Current price ≤ Buy below | BUY |
-| Buy below < current price < Sell above | HOLD |
-| Current price ≥ Sell above | SELL |
-| Forecast uncertainty is too high | WAIT / LOW CONFIDENCE |
+| Current price | Buy below | Distance to buy | Sell above | Distance to sell | Price signal |
+| --- | --- | --- | --- | --- | --- |
+| EUR 10.8500 | EUR 10.7922 | -0.53% | EUR 10.9278 | +0.72% | HOLD |
 
-Buy below and Sell above will be generated by the walk-forward acceptable-price model. Until those numerical limits are calculated and validated, this table defines the decision rule only and does not replace the current four-indicator technical decision.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -5556,16 +5476,13 @@ The static figure is collapsed because the interactive plots above provide the d
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
-**Planned acceptable-price signal rules**
+**Current indicative buy and sell prices**
 
-| Price condition | Signal |
-| --- | --- |
-| Current price ≤ Buy below | BUY |
-| Buy below < current price < Sell above | HOLD |
-| Current price ≥ Sell above | SELL |
-| Forecast uncertainty is too high | WAIT / LOW CONFIDENCE |
+| Current price | Buy below | Distance to buy | Sell above | Distance to sell | Price signal |
+| --- | --- | --- | --- | --- | --- |
+| EUR 16.3500 | EUR 16.0810 | -1.65% | EUR 17.2490 | +5.50% | HOLD |
 
-Buy below and Sell above will be generated by the walk-forward acceptable-price model. Until those numerical limits are calculated and validated, this table defines the decision rule only and does not replace the current four-indicator technical decision.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -5804,16 +5721,13 @@ The static figure is collapsed because the interactive plots above provide the d
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
-**Planned acceptable-price signal rules**
+**Current indicative buy and sell prices**
 
-| Price condition | Signal |
-| --- | --- |
-| Current price ≤ Buy below | BUY |
-| Buy below < current price < Sell above | HOLD |
-| Current price ≥ Sell above | SELL |
-| Forecast uncertainty is too high | WAIT / LOW CONFIDENCE |
+| Current price | Buy below | Distance to buy | Sell above | Distance to sell | Price signal |
+| --- | --- | --- | --- | --- | --- |
+| EUR 1.2140 | EUR 1.2035 | -0.87% | EUR 1.2189 | +0.41% | HOLD |
 
-Buy below and Sell above will be generated by the walk-forward acceptable-price model. Until those numerical limits are calculated and validated, this table defines the decision rule only and does not replace the current four-indicator technical decision.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
