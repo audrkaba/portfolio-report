@@ -36,6 +36,10 @@ table { display:block; width:100%; overflow-x:auto; border-collapse:collapse; wh
 .add-one-comparison td { padding:.32rem .10rem; text-align:center; overflow-wrap:anywhere; font-variant-numeric:tabular-nums; }
 .add-one-comparison th:first-child,.add-one-comparison td:first-child { width:4.2%; text-align:center; }
 .add-one-comparison th:nth-child(2),.add-one-comparison td:nth-child(2) { width:6.5%; text-align:center; }
+.profile-filters { position:sticky; top:0; z-index:8; display:flex; flex-wrap:wrap; align-items:center; gap:.55rem 1rem; margin:.75rem 0 1rem; padding:.7rem .9rem; border:1px solid #b9d1d8; border-radius:7px; background:#eef7f8f2; box-shadow:0 2px 7px #20304016; }
+.profile-filters label { display:inline-flex; align-items:center; gap:.35rem; cursor:pointer; font-weight:650; }
+.profile-filters input { width:1.05rem; height:1.05rem; accent-color:var(--accent); }
+.profile-filter-count { margin-left:auto; color:var(--muted); font-size:.88rem; }
 .cdf-with-key { display:grid; grid-template-columns:minmax(0,4fr) minmax(170px,1fr); gap:12px; align-items:center; }
 .cdf-with-key img { width:100%; margin:.5rem 0; }
 .cdf-with-key .cdf-key { max-height:520px; object-fit:contain; }
@@ -57,7 +61,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-20 13:20 (Europe/Vilnius); return analysis through 2026-10-16; valuation prices through 2026-10-19
+# Baltic investment plan - updated 2026-10-20 13:23 (Europe/Vilnius); return analysis through 2026-10-16; valuation prices through 2026-10-19
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -246,7 +250,9 @@ The BH adjustment covers the full family of share-level, pooled and pairwise tes
 
 Select a share to display its allocation, technical indicators, all PerformanceAnalytics measures and portfolio sensitivity.
 
-<details markdown="1" class="stock-profile" id="share-kne1l">
+<div class="profile-filters" role="group" aria-label="Filter shares by technical decision"><strong>Show:</strong><label><input type="checkbox" value="BUY" checked> BUY</label><label><input type="checkbox" value="SELL" checked> SELL</label><label><input type="checkbox" value="HOLD" checked> HOLD</label><span class="profile-filter-count" aria-live="polite"></span></div>
+
+<details markdown="1" class="stock-profile" id="share-kne1l" data-signal="HOLD">
 <summary><strong>KNE1L — KN Energies</strong> | HOLD | target 928 shares | priority 1</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>928</td><td>+928</td><td>2.97%</td><td>EUR 0.4800</td><td>0.3729</td><td>44 / 0</td><td>32.76</td><td>Bearish</td><td>Inside bands</td><td>0.000 (Oversold)</td><td>HOLD</td><td>0.000883 (1.139% of portfolio HHI)</td><td>EUR 14,251</td><td>3.1%</td><td>1.2%</td><td>MEDIUM</td></tr></tbody></table>
@@ -481,7 +487,7 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-mrk1t">
+<details markdown="1" class="stock-profile" id="share-mrk1t" data-signal="HOLD">
 <summary><strong>MRK1T — Merko Ehitus</strong> | HOLD | target 44 shares | priority 2</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>20</td><td>44</td><td>+24</td><td>7.97%</td><td>EUR 27.1000</td><td>0.3729</td><td>44 / 0</td><td>50.97</td><td>Bearish</td><td>Inside bands</td><td>0.705 (Neutral)</td><td>HOLD</td><td>0.006358 (8.200% of portfolio HHI)</td><td>EUR 58,112</td><td>1.1%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
@@ -734,7 +740,7 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-virsi">
+<details markdown="1" class="stock-profile" id="share-virsi" data-signal="HOLD">
 <summary><strong>VIRSI — VIRŠI-A</strong> | HOLD | target 125 shares | priority 3</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>125</td><td>+125</td><td>3.69%</td><td>EUR 4.4200</td><td>0.3729</td><td>44 / 0</td><td>56.60</td><td>Bearish</td><td>Inside bands</td><td>0.362 (Neutral)</td><td>HOLD</td><td>0.001363 (1.757% of portfolio HHI)</td><td>EUR 2,721</td><td>20.3%</td><td>2.4%</td><td>HIGH</td></tr></tbody></table>
@@ -969,7 +975,7 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-vlp1l">
+<details markdown="1" class="stock-profile" id="share-vlp1l" data-signal="HOLD">
 <summary><strong>VLP1L — Vilkyškių pieninė</strong> | HOLD | target 72 shares | priority 4</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>42</td><td>72</td><td>+30</td><td>7.52%</td><td>EUR 15.6000</td><td>0.3644</td><td>43 / 0</td><td>65.87</td><td>Bullish</td><td>Above upper band</td><td>1.000 (Overbought)</td><td>HOLD</td><td>0.005662 (7.302% of portfolio HHI)</td><td>EUR 21,740</td><td>2.2%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
@@ -1203,7 +1209,7 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-molnr">
+<details markdown="1" class="stock-profile" id="share-molnr" data-signal="HOLD">
 <summary><strong>MOLNR — J. Molner</strong> | HOLD | target 22 shares | priority 5</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>22</td><td>+22</td><td>3.13%</td><td>EUR 20.4000</td><td>0.0424</td><td>5 / 0</td><td>54.39</td><td>Bearish</td><td>Inside bands</td><td>0.427 (Neutral)</td><td>HOLD</td><td>0.000978 (1.262% of portfolio HHI)</td><td>EUR 98</td><td>458.0%</td><td>29.4%</td><td>HIGH</td></tr></tbody></table>
@@ -1424,7 +1430,7 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-tel1l">
+<details markdown="1" class="stock-profile" id="share-tel1l" data-signal="SELL">
 <summary><strong>TEL1L — Telia Lietuva</strong> | SELL | target 78 shares | priority 6</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>78</td><td>+78</td><td>1.20%</td><td>EUR 2.2900</td><td>0.1695</td><td>42 / 22</td><td>85.18</td><td>Bullish</td><td>Above upper band</td><td>1.000 (Overbought)</td><td>SELL</td><td>0.000143 (0.185% of portfolio HHI)</td><td>EUR 56,394</td><td>0.3%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
@@ -1624,7 +1630,7 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-tkm1t">
+<details markdown="1" class="stock-profile" id="share-tkm1t" data-signal="BUY">
 <summary><strong>TKM1T — TKM Grupp</strong> | BUY | target 293 shares | priority 7</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>288</td><td>293</td><td>+5</td><td>17.41%</td><td>EUR 8.9000</td><td>0.0424</td><td>29 / 24</td><td>24.21</td><td>Bearish</td><td>Below lower band</td><td>0.000 (Oversold)</td><td>BUY</td><td>0.030318 (39.099% of portfolio HHI)</td><td>EUR 39,989</td><td>0.1%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
@@ -1875,7 +1881,7 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-apg1l">
+<details markdown="1" class="stock-profile" id="share-apg1l" data-signal="HOLD">
 <summary><strong>APG1L — Apranga</strong> | HOLD | target 302 shares | priority 8</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>200</td><td>302</td><td>+102</td><td>7.69%</td><td>EUR 3.8100</td><td>0.3051</td><td>38 / 2</td><td>33.00</td><td>Bearish</td><td>Inside bands</td><td>0.772 (Neutral)</td><td>HOLD</td><td>0.005918 (7.632% of portfolio HHI)</td><td>EUR 24,618</td><td>1.6%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
@@ -2156,7 +2162,7 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-grg1l">
+<details markdown="1" class="stock-profile" id="share-grg1l" data-signal="HOLD">
 <summary><strong>GRG1L — Grigeo Group</strong> | HOLD | target 543 shares | priority 9</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>543</td><td>+543</td><td>3.62%</td><td>EUR 1.0000</td><td>0.3983</td><td>53 / 6</td><td>40.19</td><td>Bearish</td><td>Inside bands</td><td>0.000 (Oversold)</td><td>HOLD</td><td>0.001312 (1.692% of portfolio HHI)</td><td>EUR 12,104</td><td>4.5%</td><td>1.2%</td><td>MEDIUM</td></tr></tbody></table>
@@ -2354,7 +2360,7 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-rsu1l">
+<details markdown="1" class="stock-profile" id="share-rsu1l" data-signal="HOLD">
 <summary><strong>RSU1L — Rokiškio sūris</strong> | HOLD | target 126 shares | priority 10</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>126</td><td>+126</td><td>3.79%</td><td>EUR 4.4800</td><td>0.2373</td><td>35 / 7</td><td>47.35</td><td>Bearish</td><td>Inside bands</td><td>0.331 (Neutral)</td><td>HOLD</td><td>0.001433 (1.848% of portfolio HHI)</td><td>EUR 1,184</td><td>47.7%</td><td>5.2%</td><td>HIGH</td></tr></tbody></table>
@@ -2575,7 +2581,7 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-ako1l">
+<details markdown="1" class="stock-profile" id="share-ako1l" data-signal="HOLD">
 <summary><strong>AKO1L — Akola Group</strong> | HOLD | target 167 shares | priority 11</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>167</td><td>+167</td><td>2.04%</td><td>EUR 1.8350</td><td>0.1949</td><td>32 / 9</td><td>77.07</td><td>Bullish</td><td>Inside bands</td><td>0.869 (Overbought)</td><td>HOLD</td><td>0.000418 (0.539% of portfolio HHI)</td><td>EUR 22,415</td><td>1.4%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
@@ -2809,7 +2815,7 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-ign1l">
+<details markdown="1" class="stock-profile" id="share-ign1l" data-signal="HOLD">
 <summary><strong>IGN1L — Ignitis grupė</strong> | HOLD | target 27 shares | priority 12</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>27</td><td>+27</td><td>4.05%</td><td>EUR 21.7500</td><td>0.3559</td><td>52 / 10</td><td>44.10</td><td>Bullish</td><td>Inside bands</td><td>1.000 (Overbought)</td><td>HOLD</td><td>0.001640 (2.115% of portfolio HHI)</td><td>EUR 284,653</td><td>0.2%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
@@ -3054,7 +3060,7 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-pzv1l">
+<details markdown="1" class="stock-profile" id="share-pzv1l" data-signal="HOLD">
 <summary><strong>PZV1L — Pieno žvaigždės</strong> | HOLD | target 56 shares | priority 13</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>56</td><td>+56</td><td>0.67%</td><td>EUR 1.7950</td><td>0.2034</td><td>35 / 11</td><td>62.14</td><td>Bearish</td><td>Inside bands</td><td>0.302 (Neutral)</td><td>HOLD</td><td>0.000045 (0.058% of portfolio HHI)</td><td>EUR 4,516</td><td>2.2%</td><td>1.2%</td><td>HIGH</td></tr></tbody></table>
@@ -3287,7 +3293,7 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-roe1l">
+<details markdown="1" class="stock-profile" id="share-roe1l" data-signal="HOLD">
 <summary><strong>ROE1L — Artea Bankas</strong> | HOLD | target 541 shares | priority 14</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>416</td><td>541</td><td>+125</td><td>3.17%</td><td>EUR 0.8800</td><td>0.1525</td><td>37 / 19</td><td>42.30</td><td>Bearish</td><td>Inside bands</td><td>0.095 (Oversold)</td><td>HOLD</td><td>0.001007 (1.299% of portfolio HHI)</td><td>EUR 186,592</td><td>0.1%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
@@ -3529,7 +3535,7 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-tal1t">
+<details markdown="1" class="stock-profile" id="share-tal1t" data-signal="HOLD">
 <summary><strong>TAL1T — Tallink Grupp</strong> | HOLD | target 1116 shares | priority 15</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>700</td><td>1116</td><td>+416</td><td>4.81%</td><td>EUR 0.6460</td><td>0.0593</td><td>26 / 19</td><td>60.60</td><td>Bearish</td><td>Inside bands</td><td>0.276 (Neutral)</td><td>HOLD</td><td>0.002311 (2.980% of portfolio HHI)</td><td>EUR 77,090</td><td>0.3%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
@@ -3787,7 +3793,7 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-dgr1r">
+<details markdown="1" class="stock-profile" id="share-dgr1r" data-signal="HOLD">
 <summary><strong>DGR1R — DelfinGroup</strong> | HOLD | target 36 shares | priority 16</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>36</td><td>+36</td><td>0.42%</td><td>EUR 1.7200</td><td>0.0339</td><td>26 / 22</td><td>68.46</td><td>Bullish</td><td>Inside bands</td><td>0.503 (Neutral)</td><td>HOLD</td><td>0.000018 (0.023% of portfolio HHI)</td><td>EUR 12,395</td><td>0.5%</td><td>2.4%</td><td>MEDIUM</td></tr></tbody></table>
@@ -4068,7 +4074,7 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-eft1t">
+<details markdown="1" class="stock-profile" id="share-eft1t" data-signal="HOLD">
 <summary><strong>EFT1T — EfTEN Real Estate Fund</strong> | HOLD | target 3 shares | priority 17</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>3</td><td>+3</td><td>0.48%</td><td>EUR 19.6000</td><td>0.1186</td><td>37 / 23</td><td>53.70</td><td>Bullish</td><td>Inside bands</td><td>0.769 (Neutral)</td><td>HOLD</td><td>0.000023 (0.030% of portfolio HHI)</td><td>EUR 20,301</td><td>0.3%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
@@ -4322,7 +4328,7 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-hae1t">
+<details markdown="1" class="stock-profile" id="share-hae1t" data-signal="HOLD">
 <summary><strong>HAE1T — Harju Elekter Group</strong> | HOLD | target 173 shares | priority 18</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>100</td><td>173</td><td>+73</td><td>6.19%</td><td>EUR 5.3600</td><td>0.1102</td><td>37 / 24</td><td>58.25</td><td>Bullish</td><td>Inside bands</td><td>0.425 (Neutral)</td><td>HOLD</td><td>0.003835 (4.946% of portfolio HHI)</td><td>EUR 17,025</td><td>2.3%</td><td>1.2%</td><td>MEDIUM</td></tr></tbody></table>
@@ -4576,7 +4582,7 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-lhv1t">
+<details markdown="1" class="stock-profile" id="share-lhv1t" data-signal="HOLD">
 <summary><strong>LHV1T — LHV Group</strong> | HOLD | target 65 shares | priority 19</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>65</td><td>+65</td><td>1.42%</td><td>EUR 3.2500</td><td>0.0678</td><td>32 / 24</td><td>35.02</td><td>Bearish</td><td>Inside bands</td><td>0.472 (Neutral)</td><td>HOLD</td><td>0.000201 (0.260% of portfolio HHI)</td><td>EUR 269,011</td><td>0.1%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
@@ -4836,7 +4842,7 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-cpa1t">
+<details markdown="1" class="stock-profile" id="share-cpa1t" data-signal="HOLD">
 <summary><strong>CPA1T — Coop Pank</strong> | HOLD | target 67 shares | priority 20</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>67</td><td>+67</td><td>1.06%</td><td>EUR 2.3500</td><td>0.0508</td><td>30 / 24</td><td>54.99</td><td>Bullish</td><td>Inside bands</td><td>0.829 (Overbought)</td><td>HOLD</td><td>0.000113 (0.145% of portfolio HHI)</td><td>EUR 78,808</td><td>0.2%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
@@ -5094,7 +5100,7 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-tve1t">
+<details markdown="1" class="stock-profile" id="share-tve1t" data-signal="HOLD">
 <summary><strong>TVE1T — Tallinna Vesi</strong> | HOLD | target 43 shares | priority 21</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>43</td><td>+43</td><td>3.11%</td><td>EUR 10.8500</td><td>0.0339</td><td>30 / 26</td><td>46.98</td><td>Bullish</td><td>Inside bands</td><td>0.486 (Neutral)</td><td>HOLD</td><td>0.000968 (1.248% of portfolio HHI)</td><td>EUR 14,562</td><td>3.2%</td><td>1.2%</td><td>MEDIUM</td></tr></tbody></table>
@@ -5348,7 +5354,7 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-saf1r">
+<details markdown="1" class="stock-profile" id="share-saf1r" data-signal="HOLD">
 <summary><strong>SAF1R — SAF Tehnika</strong> | HOLD | target 100 shares | priority 22</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>100</td><td>100</td><td>+0</td><td>10.90%</td><td>EUR 16.3500</td><td>-0.1186</td><td>12 / 26</td><td>45.55</td><td>Bearish</td><td>Inside bands</td><td>0.000 (Oversold)</td><td>HOLD</td><td>0.011881 (15.322% of portfolio HHI)</td><td>EUR 7,531</td><td>0.0%</td><td>2.4%</td><td>MEDIUM</td></tr></tbody></table>
@@ -5585,7 +5591,7 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-tsm1t">
+<details markdown="1" class="stock-profile" id="share-tsm1t" data-signal="HOLD">
 <summary><strong>TSM1T — Tallinna Sadam</strong> | HOLD | target 330 shares | priority 23</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>330</td><td>330</td><td>+0</td><td>2.67%</td><td>EUR 1.2140</td><td>-0.0169</td><td>28 / 30</td><td>49.57</td><td>Bullish</td><td>Inside bands</td><td>1.000 (Overbought)</td><td>HOLD</td><td>0.000713 (0.920% of portfolio HHI)</td><td>EUR 45,487</td><td>0.0%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
@@ -6701,6 +6707,24 @@ document.querySelectorAll('details.stock-profile').forEach(function(profile) {
       if (other !== profile) other.open = false;
     });
   });
+});
+document.querySelectorAll('details.profiles-section').forEach(function(section) {
+  const filters=[...section.querySelectorAll('.profile-filters input[type="checkbox"]')];
+  const profiles=[...section.querySelectorAll(':scope > details.stock-profile')];
+  const counter=section.querySelector('.profile-filter-count');
+  function applyProfileFilters() {
+    const selected=new Set(filters.filter(box=>box.checked).map(box=>box.value));
+    let visible=0;
+    profiles.forEach(function(profile) {
+      const show=selected.has(profile.dataset.signal);
+      profile.hidden=!show;
+      if (!show) profile.open=false;
+      if (show) visible++;
+    });
+    if (counter) counter.textContent=`${visible} of ${profiles.length} shares shown`;
+  }
+  filters.forEach(box=>box.addEventListener('change',applyProfileFilters));
+  applyProfileFilters();
 });
 document.querySelectorAll('details.portfolio-sensitivity').forEach(function(sensitivity) {
   sensitivity.addEventListener('toggle', function() {
