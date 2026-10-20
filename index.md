@@ -66,7 +66,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-20 13:45 (Europe/Vilnius); return analysis through 2026-10-16; valuation prices through 2026-10-19
+# Baltic investment plan - updated 2026-10-20 13:48 (Europe/Vilnius); return analysis through 2026-10-16; valuation prices through 2026-10-19
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -181,7 +181,7 @@ Return and technical analysis uses common observations through 2026-10-16; valua
 <details markdown="1" class="trade-decision-section">
 <summary><strong>Table 3. Canonical Baltic_NetSD model trades: selling permitted</strong></summary>
 
-<table class="trade-decision-table"><thead><tr><th><span>Phase</span></th><th><span>Share</span></th><th><span>Company</span></th><th><span>Last price</span></th><th><span>Indicative buy ≤</span></th><th><span>Indicative sell ≥</span></th><th><span>Price zone</span></th><th><span>Target weight</span></th><th><span>Current shares</span></th><th><span>Trade shares</span></th><th><span>Trade EUR</span></th><th><span>Target shares</span></th><th><span>Final value EUR</span></th><th><span>Model action</span></th><th><span>Historical dividends EUR</span></th></tr></thead><tbody><tr><td>1</td><td>TAL1T</td><td>Tallink Grupp</td><td>0.6460</td><td>0.6373</td><td>0.6508</td><td>HOLD</td><td>1.39%</td><td>700</td><td>-377</td><td>-243.54</td><td>323</td><td>208.66</td><td>SELL</td><td>48.45</td></tr><tr><td>1</td><td>ROE1L</td><td>Artea Bankas</td><td>0.8800</td><td>0.8712</td><td>0.9137</td><td>HOLD</td><td>0.41%</td><td>416</td><td>-347</td><td>-305.36</td><td>69</td><td>60.72</td><td>SELL</td><td>9.38</td></tr><tr><td>1</td><td>TSM1T</td><td>Tallinna Sadam</td><td>1.2140</td><td>1.2035</td><td>1.2189</td><td>HOLD</td><td>0.00%</td><td>330</td><td>-330</td><td>-400.62</td><td>0</td><td>0.00</td><td>SELL</td><td>0.00</td></tr><tr><td>1</td><td>TKM1T</td><td>TKM Grupp</td><td>8.9000</td><td>8.9183</td><td>9.0967</td><td>BUY</td><td>9.70%</td><td>288</td><td>-125</td><td>-1112.50</td><td>163</td><td>1450.70</td><td>SELL</td><td>431.95</td></tr><tr><td>1</td><td>SAF1R</td><td>SAF Tehnika</td><td>16.3500</td><td>16.0810</td><td>17.2490</td><td>HOLD</td><td>0.00%</td><td>100</td><td>-100</td><td>-1635.00</td><td>0</td><td>0.00</td><td>SELL</td><td>0.00</td></tr><tr><td>2</td><td>GRG1L</td><td>Grigeo Group</td><td>1.0000</td><td>0.9995</td><td>1.0210</td><td>HOLD</td><td>10.15%</td><td>0</td><td>+1523</td><td>1523.00</td><td>1523</td><td>1523.00</td><td>BUY</td><td>258.91</td></tr><tr><td>2</td><td>KNE1L</td><td>KN Energies</td><td>0.4800</td><td>0.4790</td><td>0.4955</td><td>HOLD</td><td>9.51%</td><td>0</td><td>+2973</td><td>1427.04</td><td>2973</td><td>1427.04</td><td>BUY</td><td>191.46</td></tr><tr><td>2</td><td>EFT1T</td><td>EfTEN Real Estate Fund</td><td>19.6000</td><td>19.4049</td><td>19.6601</td><td>HOLD</td><td>9.27%</td><td>0</td><td>+70</td><td>1372.00</td><td>70</td><td>1372.00</td><td>BUY</td><td>312.38</td></tr><tr><td>2</td><td>VLP1L</td><td>Vilkyškių pieninė</td><td>15.6000</td><td>15.1951</td><td>15.5499</td><td>SELL</td><td>11.29%</td><td>42</td><td>+66</td><td>1029.60</td><td>108</td><td>1684.80</td><td>BUY</td><td>0.00</td></tr><tr><td>2</td><td>MRK1T</td><td>Merko Ehitus</td><td>27.1000</td><td>26.9915</td><td>27.1735</td><td>HOLD</td><td>9.88%</td><td>20</td><td>+34</td><td>921.40</td><td>54</td><td>1463.40</td><td>BUY</td><td>294.30</td></tr><tr><td>2</td><td>RSU1L</td><td>Rokiškio sūris</td><td>4.4800</td><td>4.4368</td><td>4.5352</td><td>HOLD</td><td>4.88%</td><td>0</td><td>+163</td><td>730.24</td><td>163</td><td>730.24</td><td>BUY</td><td>114.10</td></tr><tr><td>2</td><td>AKO1L</td><td>Akola Group</td><td>1.8350</td><td>1.7252</td><td>1.8503</td><td>HOLD</td><td>3.84%</td><td>0</td><td>+313</td><td>574.36</td><td>313</td><td>574.36</td><td>BUY</td><td>0.00</td></tr><tr><td>2</td><td>PZV1L</td><td>Pieno žvaigždės</td><td>1.7950</td><td>1.7233</td><td>1.8322</td><td>HOLD</td><td>3.13%</td><td>0</td><td>+261</td><td>468.49</td><td>261</td><td>468.49</td><td>BUY</td><td>109.62</td></tr><tr><td>2</td><td>IGN1L</td><td>Ignitis grupė</td><td>21.7500</td><td>21.4589</td><td>22.1261</td><td>HOLD</td><td>2.95%</td><td>0</td><td>+20</td><td>435.00</td><td>20</td><td>435.00</td><td>BUY</td><td>78.38</td></tr><tr><td>2</td><td>TVE1T</td><td>Tallinna Vesi</td><td>10.8500</td><td>10.7922</td><td>10.9278</td><td>HOLD</td><td>2.95%</td><td>0</td><td>+40</td><td>434.00</td><td>40</td><td>434.00</td><td>BUY</td><td>77.60</td></tr><tr><td>2</td><td>APG1L</td><td>Apranga</td><td>3.8100</td><td>3.7812</td><td>3.9138</td><td>HOLD</td><td>7.36%</td><td>200</td><td>+89</td><td>339.09</td><td>289</td><td>1101.09</td><td>BUY</td><td>297.67</td></tr><tr><td>2</td><td>HAE1T</td><td>Harju Elekter Group</td><td>5.3600</td><td>5.0526</td><td>5.4174</td><td>HOLD</td><td>5.74%</td><td>100</td><td>+60</td><td>321.60</td><td>160</td><td>857.60</td><td>BUY</td><td>92.80</td></tr><tr><td>2</td><td>TEL1L</td><td>Telia Lietuva</td><td>2.2900</td><td>2.1891</td><td>2.2789</td><td>SELL</td><td>2.15%</td><td>0</td><td>+140</td><td>320.60</td><td>140</td><td>320.60</td><td>BUY</td><td>43.40</td></tr><tr><td>2</td><td>DGR1R</td><td>DelfinGroup</td><td>1.7200</td><td>1.5420</td><td>1.7600</td><td>HOLD</td><td>1.54%</td><td>0</td><td>+134</td><td>230.48</td><td>134</td><td>230.48</td><td>BUY</td><td>43.84</td></tr><tr><td>2</td><td>VIRSI</td><td>VIRŠI-A</td><td>4.4200</td><td>4.4040</td><td>4.4450</td><td>HOLD</td><td>1.16%</td><td>0</td><td>+39</td><td>172.38</td><td>39</td><td>172.38</td><td>BUY</td><td>10.62</td></tr><tr><td>2</td><td>MOLNR</td><td>J. Molner</td><td>20.4000</td><td>15.7195</td><td>24.0105</td><td>HOLD</td><td>1.12%</td><td>0</td><td>+8</td><td>163.20</td><td>8</td><td>163.20</td><td>BUY</td><td>0.00</td></tr><tr><td>2</td><td>LHV1T</td><td>LHV Group</td><td>3.2500</td><td>3.2447</td><td>3.3083</td><td>HOLD</td><td>0.81%</td><td>0</td><td>+37</td><td>120.25</td><td>37</td><td>120.25</td><td>BUY</td><td>15.91</td></tr><tr><td>2</td><td>CPA1T</td><td>Coop Pank</td><td>2.3500</td><td>2.2940</td><td>2.3705</td><td>HOLD</td><td>0.78%</td><td>0</td><td>+49</td><td>115.15</td><td>49</td><td>115.15</td><td>BUY</td><td>13.08</td></tr></tbody></table>
+<table class="trade-decision-table"><thead><tr><th><span>Phase</span></th><th><span>Share</span></th><th><span>Company</span></th><th><span>Last price</span></th><th><span>Indicative buy ≤</span></th><th><span>Indicative sell ≥</span></th><th><span>Price zone</span></th><th><span>Target weight</span></th><th><span>Current shares</span></th><th><span>Trade shares</span></th><th><span>Trade EUR</span></th><th><span>Target shares</span></th><th><span>Final value EUR</span></th><th><span>Model action</span></th><th><span>Historical dividends EUR</span></th></tr></thead><tbody><tr><td>1</td><td>TAL1T</td><td>Tallink Grupp</td><td>0.6460</td><td>0.6373 (-1.34%)</td><td>0.6508 (+0.74%)</td><td>HOLD</td><td>1.39%</td><td>700</td><td>-377</td><td>-243.54</td><td>323</td><td>208.66</td><td>SELL</td><td>48.45</td></tr><tr><td>1</td><td>ROE1L</td><td>Artea Bankas</td><td>0.8800</td><td>0.8712 (-1.00%)</td><td>0.9137 (+3.83%)</td><td>HOLD</td><td>0.41%</td><td>416</td><td>-347</td><td>-305.36</td><td>69</td><td>60.72</td><td>SELL</td><td>9.38</td></tr><tr><td>1</td><td>TSM1T</td><td>Tallinna Sadam</td><td>1.2140</td><td>1.2035 (-0.87%)</td><td>1.2189 (+0.41%)</td><td>HOLD</td><td>0.00%</td><td>330</td><td>-330</td><td>-400.62</td><td>0</td><td>0.00</td><td>SELL</td><td>0.00</td></tr><tr><td>1</td><td>TKM1T</td><td>TKM Grupp</td><td>8.9000</td><td>8.9183 (+0.21%)</td><td>9.0967 (+2.21%)</td><td>BUY</td><td>9.70%</td><td>288</td><td>-125</td><td>-1112.50</td><td>163</td><td>1450.70</td><td>SELL</td><td>431.95</td></tr><tr><td>1</td><td>SAF1R</td><td>SAF Tehnika</td><td>16.3500</td><td>16.0810 (-1.65%)</td><td>17.2490 (+5.50%)</td><td>HOLD</td><td>0.00%</td><td>100</td><td>-100</td><td>-1635.00</td><td>0</td><td>0.00</td><td>SELL</td><td>0.00</td></tr><tr><td>2</td><td>GRG1L</td><td>Grigeo Group</td><td>1.0000</td><td>0.9995 (-0.05%)</td><td>1.0210 (+2.10%)</td><td>HOLD</td><td>10.15%</td><td>0</td><td>+1523</td><td>1523.00</td><td>1523</td><td>1523.00</td><td>BUY</td><td>258.91</td></tr><tr><td>2</td><td>KNE1L</td><td>KN Energies</td><td>0.4800</td><td>0.4790 (-0.21%)</td><td>0.4955 (+3.23%)</td><td>HOLD</td><td>9.51%</td><td>0</td><td>+2973</td><td>1427.04</td><td>2973</td><td>1427.04</td><td>BUY</td><td>191.46</td></tr><tr><td>2</td><td>EFT1T</td><td>EfTEN Real Estate Fund</td><td>19.6000</td><td>19.4049 (-1.00%)</td><td>19.6601 (+0.31%)</td><td>HOLD</td><td>9.27%</td><td>0</td><td>+70</td><td>1372.00</td><td>70</td><td>1372.00</td><td>BUY</td><td>312.38</td></tr><tr><td>2</td><td>VLP1L</td><td>Vilkyškių pieninė</td><td>15.6000</td><td>15.1951 (-2.60%)</td><td>15.5499 (-0.32%)</td><td>SELL</td><td>11.29%</td><td>42</td><td>+66</td><td>1029.60</td><td>108</td><td>1684.80</td><td>BUY</td><td>0.00</td></tr><tr><td>2</td><td>MRK1T</td><td>Merko Ehitus</td><td>27.1000</td><td>26.9915 (-0.40%)</td><td>27.1735 (+0.27%)</td><td>HOLD</td><td>9.88%</td><td>20</td><td>+34</td><td>921.40</td><td>54</td><td>1463.40</td><td>BUY</td><td>294.30</td></tr><tr><td>2</td><td>RSU1L</td><td>Rokiškio sūris</td><td>4.4800</td><td>4.4368 (-0.96%)</td><td>4.5352 (+1.23%)</td><td>HOLD</td><td>4.88%</td><td>0</td><td>+163</td><td>730.24</td><td>163</td><td>730.24</td><td>BUY</td><td>114.10</td></tr><tr><td>2</td><td>AKO1L</td><td>Akola Group</td><td>1.8350</td><td>1.7252 (-5.98%)</td><td>1.8503 (+0.83%)</td><td>HOLD</td><td>3.84%</td><td>0</td><td>+313</td><td>574.36</td><td>313</td><td>574.36</td><td>BUY</td><td>0.00</td></tr><tr><td>2</td><td>PZV1L</td><td>Pieno žvaigždės</td><td>1.7950</td><td>1.7233 (-3.99%)</td><td>1.8322 (+2.07%)</td><td>HOLD</td><td>3.13%</td><td>0</td><td>+261</td><td>468.49</td><td>261</td><td>468.49</td><td>BUY</td><td>109.62</td></tr><tr><td>2</td><td>IGN1L</td><td>Ignitis grupė</td><td>21.7500</td><td>21.4589 (-1.34%)</td><td>22.1261 (+1.73%)</td><td>HOLD</td><td>2.95%</td><td>0</td><td>+20</td><td>435.00</td><td>20</td><td>435.00</td><td>BUY</td><td>78.38</td></tr><tr><td>2</td><td>TVE1T</td><td>Tallinna Vesi</td><td>10.8500</td><td>10.7922 (-0.53%)</td><td>10.9278 (+0.72%)</td><td>HOLD</td><td>2.95%</td><td>0</td><td>+40</td><td>434.00</td><td>40</td><td>434.00</td><td>BUY</td><td>77.60</td></tr><tr><td>2</td><td>APG1L</td><td>Apranga</td><td>3.8100</td><td>3.7812 (-0.76%)</td><td>3.9138 (+2.72%)</td><td>HOLD</td><td>7.36%</td><td>200</td><td>+89</td><td>339.09</td><td>289</td><td>1101.09</td><td>BUY</td><td>297.67</td></tr><tr><td>2</td><td>HAE1T</td><td>Harju Elekter Group</td><td>5.3600</td><td>5.0526 (-5.73%)</td><td>5.4174 (+1.07%)</td><td>HOLD</td><td>5.74%</td><td>100</td><td>+60</td><td>321.60</td><td>160</td><td>857.60</td><td>BUY</td><td>92.80</td></tr><tr><td>2</td><td>TEL1L</td><td>Telia Lietuva</td><td>2.2900</td><td>2.1891 (-4.41%)</td><td>2.2789 (-0.48%)</td><td>SELL</td><td>2.15%</td><td>0</td><td>+140</td><td>320.60</td><td>140</td><td>320.60</td><td>BUY</td><td>43.40</td></tr><tr><td>2</td><td>DGR1R</td><td>DelfinGroup</td><td>1.7200</td><td>1.5420 (-10.35%)</td><td>1.7600 (+2.32%)</td><td>HOLD</td><td>1.54%</td><td>0</td><td>+134</td><td>230.48</td><td>134</td><td>230.48</td><td>BUY</td><td>43.84</td></tr><tr><td>2</td><td>VIRSI</td><td>VIRŠI-A</td><td>4.4200</td><td>4.4040 (-0.36%)</td><td>4.4450 (+0.56%)</td><td>HOLD</td><td>1.16%</td><td>0</td><td>+39</td><td>172.38</td><td>39</td><td>172.38</td><td>BUY</td><td>10.62</td></tr><tr><td>2</td><td>MOLNR</td><td>J. Molner</td><td>20.4000</td><td>15.7195 (-22.94%)</td><td>24.0105 (+17.70%)</td><td>HOLD</td><td>1.12%</td><td>0</td><td>+8</td><td>163.20</td><td>8</td><td>163.20</td><td>BUY</td><td>0.00</td></tr><tr><td>2</td><td>LHV1T</td><td>LHV Group</td><td>3.2500</td><td>3.2447 (-0.16%)</td><td>3.3083 (+1.79%)</td><td>HOLD</td><td>0.81%</td><td>0</td><td>+37</td><td>120.25</td><td>37</td><td>120.25</td><td>BUY</td><td>15.91</td></tr><tr><td>2</td><td>CPA1T</td><td>Coop Pank</td><td>2.3500</td><td>2.2940 (-2.38%)</td><td>2.3705 (+0.87%)</td><td>HOLD</td><td>0.78%</td><td>0</td><td>+49</td><td>115.15</td><td>49</td><td>115.15</td><td>BUY</td><td>13.08</td></tr></tbody></table>
 
 Indicative buy and sell prices are the current 20-observation Bollinger lower and upper bands. Price zone applies only these limits; Model action remains the Baltic_NetSD allocation decision. These technical limits are descriptive and will be replaced when the walk-forward acceptable-price model is validated.
 
@@ -210,7 +210,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 | Current price | Buy below | Sell above | Price signal |
 | --- | --- | --- | --- |
-| EUR 0.4800 | EUR 0.4790 | EUR 0.4955 | HOLD |
+| EUR 0.4800 | EUR 0.4790 (-0.21%) | EUR 0.4955 (+3.23%) | HOLD |
 
 Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
 
@@ -453,7 +453,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 | Current price | Buy below | Sell above | Price signal |
 | --- | --- | --- | --- |
-| EUR 27.1000 | EUR 26.9915 | EUR 27.1735 | HOLD |
+| EUR 27.1000 | EUR 26.9915 (-0.40%) | EUR 27.1735 (+0.27%) | HOLD |
 
 Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
 
@@ -714,7 +714,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 | Current price | Buy below | Sell above | Price signal |
 | --- | --- | --- | --- |
-| EUR 4.4200 | EUR 4.4040 | EUR 4.4450 | HOLD |
+| EUR 4.4200 | EUR 4.4040 (-0.36%) | EUR 4.4450 (+0.56%) | HOLD |
 
 Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
 
@@ -957,7 +957,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 | Current price | Buy below | Sell above | Price signal |
 | --- | --- | --- | --- |
-| EUR 15.6000 | EUR 15.1951 | EUR 15.5499 | SELL |
+| EUR 15.6000 | EUR 15.1951 (-2.60%) | EUR 15.5499 (-0.32%) | SELL |
 
 Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
 
@@ -1199,7 +1199,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 | Current price | Buy below | Sell above | Price signal |
 | --- | --- | --- | --- |
-| EUR 20.4000 | EUR 15.7195 | EUR 24.0105 | HOLD |
+| EUR 20.4000 | EUR 15.7195 (-22.94%) | EUR 24.0105 (+17.70%) | HOLD |
 
 Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
 
@@ -1428,7 +1428,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 | Current price | Buy below | Sell above | Price signal |
 | --- | --- | --- | --- |
-| EUR 2.2900 | EUR 2.1891 | EUR 2.2789 | SELL |
+| EUR 2.2900 | EUR 2.1891 (-4.41%) | EUR 2.2789 (-0.48%) | SELL |
 
 Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
 
@@ -1636,7 +1636,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 | Current price | Buy below | Sell above | Price signal |
 | --- | --- | --- | --- |
-| EUR 8.9000 | EUR 8.9183 | EUR 9.0967 | BUY |
+| EUR 8.9000 | EUR 8.9183 (+0.21%) | EUR 9.0967 (+2.21%) | BUY |
 
 Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
 
@@ -1895,7 +1895,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 | Current price | Buy below | Sell above | Price signal |
 | --- | --- | --- | --- |
-| EUR 3.8100 | EUR 3.7812 | EUR 3.9138 | HOLD |
+| EUR 3.8100 | EUR 3.7812 (-0.76%) | EUR 3.9138 (+2.72%) | HOLD |
 
 Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
 
@@ -2184,7 +2184,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 | Current price | Buy below | Sell above | Price signal |
 | --- | --- | --- | --- |
-| EUR 1.0000 | EUR 0.9995 | EUR 1.0210 | HOLD |
+| EUR 1.0000 | EUR 0.9995 (-0.05%) | EUR 1.0210 (+2.10%) | HOLD |
 
 Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
 
@@ -2390,7 +2390,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 | Current price | Buy below | Sell above | Price signal |
 | --- | --- | --- | --- |
-| EUR 4.4800 | EUR 4.4368 | EUR 4.5352 | HOLD |
+| EUR 4.4800 | EUR 4.4368 (-0.96%) | EUR 4.5352 (+1.23%) | HOLD |
 
 Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
 
@@ -2619,7 +2619,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 | Current price | Buy below | Sell above | Price signal |
 | --- | --- | --- | --- |
-| EUR 1.8350 | EUR 1.7252 | EUR 1.8503 | HOLD |
+| EUR 1.8350 | EUR 1.7252 (-5.98%) | EUR 1.8503 (+0.83%) | HOLD |
 
 Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
 
@@ -2861,7 +2861,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 | Current price | Buy below | Sell above | Price signal |
 | --- | --- | --- | --- |
-| EUR 21.7500 | EUR 21.4589 | EUR 22.1261 | HOLD |
+| EUR 21.7500 | EUR 21.4589 (-1.34%) | EUR 22.1261 (+1.73%) | HOLD |
 
 Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
 
@@ -3114,7 +3114,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 | Current price | Buy below | Sell above | Price signal |
 | --- | --- | --- | --- |
-| EUR 1.7950 | EUR 1.7233 | EUR 1.8322 | HOLD |
+| EUR 1.7950 | EUR 1.7233 (-3.99%) | EUR 1.8322 (+2.07%) | HOLD |
 
 Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
 
@@ -3355,7 +3355,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 | Current price | Buy below | Sell above | Price signal |
 | --- | --- | --- | --- |
-| EUR 0.8800 | EUR 0.8712 | EUR 0.9137 | HOLD |
+| EUR 0.8800 | EUR 0.8712 (-1.00%) | EUR 0.9137 (+3.83%) | HOLD |
 
 Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
 
@@ -3605,7 +3605,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 | Current price | Buy below | Sell above | Price signal |
 | --- | --- | --- | --- |
-| EUR 0.6460 | EUR 0.6373 | EUR 0.6508 | HOLD |
+| EUR 0.6460 | EUR 0.6373 (-1.34%) | EUR 0.6508 (+0.74%) | HOLD |
 
 Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
 
@@ -3871,7 +3871,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 | Current price | Buy below | Sell above | Price signal |
 | --- | --- | --- | --- |
-| EUR 1.7200 | EUR 1.5420 | EUR 1.7600 | HOLD |
+| EUR 1.7200 | EUR 1.5420 (-10.35%) | EUR 1.7600 (+2.32%) | HOLD |
 
 Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
 
@@ -4160,7 +4160,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 | Current price | Buy below | Sell above | Price signal |
 | --- | --- | --- | --- |
-| EUR 19.6000 | EUR 19.4049 | EUR 19.6601 | HOLD |
+| EUR 19.6000 | EUR 19.4049 (-1.00%) | EUR 19.6601 (+0.31%) | HOLD |
 
 Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
 
@@ -4422,7 +4422,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 | Current price | Buy below | Sell above | Price signal |
 | --- | --- | --- | --- |
-| EUR 5.3600 | EUR 5.0526 | EUR 5.4174 | HOLD |
+| EUR 5.3600 | EUR 5.0526 (-5.73%) | EUR 5.4174 (+1.07%) | HOLD |
 
 Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
 
@@ -4684,7 +4684,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 | Current price | Buy below | Sell above | Price signal |
 | --- | --- | --- | --- |
-| EUR 3.2500 | EUR 3.2447 | EUR 3.3083 | HOLD |
+| EUR 3.2500 | EUR 3.2447 (-0.16%) | EUR 3.3083 (+1.79%) | HOLD |
 
 Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
 
@@ -4952,7 +4952,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 | Current price | Buy below | Sell above | Price signal |
 | --- | --- | --- | --- |
-| EUR 2.3500 | EUR 2.2940 | EUR 2.3705 | HOLD |
+| EUR 2.3500 | EUR 2.2940 (-2.38%) | EUR 2.3705 (+0.87%) | HOLD |
 
 Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
 
@@ -5218,7 +5218,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 | Current price | Buy below | Sell above | Price signal |
 | --- | --- | --- | --- |
-| EUR 10.8500 | EUR 10.7922 | EUR 10.9278 | HOLD |
+| EUR 10.8500 | EUR 10.7922 (-0.53%) | EUR 10.9278 (+0.72%) | HOLD |
 
 Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
 
@@ -5480,7 +5480,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 | Current price | Buy below | Sell above | Price signal |
 | --- | --- | --- | --- |
-| EUR 16.3500 | EUR 16.0810 | EUR 17.2490 | HOLD |
+| EUR 16.3500 | EUR 16.0810 (-1.65%) | EUR 17.2490 (+5.50%) | HOLD |
 
 Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
 
@@ -5725,7 +5725,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 | Current price | Buy below | Sell above | Price signal |
 | --- | --- | --- | --- |
-| EUR 1.2140 | EUR 1.2035 | EUR 1.2189 | HOLD |
+| EUR 1.2140 | EUR 1.2035 (-0.87%) | EUR 1.2189 (+0.41%) | HOLD |
 
 Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
 
