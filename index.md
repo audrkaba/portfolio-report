@@ -31,6 +31,11 @@ table { display:block; width:100%; overflow-x:auto; border-collapse:collapse; wh
 .stock-summary-table th span { display:inline-block; writing-mode:vertical-rl; transform:rotate(180deg); white-space:nowrap; }
 .stock-summary-table td { padding:.4rem .12rem; text-align:center; overflow-wrap:anywhere; }
 .stock-summary-table th:first-child,.stock-summary-table td:first-child { text-align:center; }
+.add-one-comparison table { display:table; width:100%; table-layout:fixed; overflow:visible; white-space:normal; font-size:.70rem; }
+.add-one-comparison th { height:142px; padding:.25rem .12rem; vertical-align:middle; text-align:center; writing-mode:vertical-rl; text-orientation:mixed; }
+.add-one-comparison td { padding:.32rem .10rem; text-align:center; overflow-wrap:anywhere; font-variant-numeric:tabular-nums; }
+.add-one-comparison th:first-child,.add-one-comparison td:first-child { width:4.2%; text-align:center; }
+.add-one-comparison th:nth-child(2),.add-one-comparison td:nth-child(2) { width:6.5%; text-align:center; }
 .cdf-with-key { display:grid; grid-template-columns:minmax(0,4fr) minmax(170px,1fr); gap:12px; align-items:center; }
 .cdf-with-key img { width:100%; margin:.5rem 0; }
 .cdf-with-key .cdf-key { max-height:520px; object-fit:contain; }
@@ -48,11 +53,11 @@ img { display:block; max-width:100%; height:auto; margin:1rem auto; border:1px s
 .dominance-status { margin:.45rem 0 0; color:#455f70; font-size:.84rem; font-variant-numeric:tabular-nums; }
 @media(max-width:900px) { .dominance-controls { grid-template-columns:1fr 1fr; } .dominance-canvas { height:675px; } }
 a { color:var(--accent); }
-@media(max-width:700px) { main { width:100%; margin:0; padding:22px 14px; border-radius:0; } h1 { font-size:1.7rem; } }
+@media(max-width:700px) { main { width:100%; margin:0; padding:22px 8px; border-radius:0; } h1 { font-size:1.7rem; } .add-one-comparison table { font-size:.62rem; } .add-one-comparison th { height:128px; } }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-16 20:26 (Europe/Vilnius); market data through 2026-10-14
+# Baltic investment plan - updated 2026-10-20 11:56 (Europe/Vilnius); return analysis through 2026-10-16; valuation prices through 2026-10-19
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -61,13 +66,15 @@ Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share i
 
 # Nasdaq Baltic universe: maximum-netSD portfolio
 
-Study period: 2023-01-01 to 2026-10-14 | Portfolio ceiling: EUR 15,000 | Existing positions may be sold
+Study period: 2023-01-01 to 2026-10-16 | Portfolio ceiling: EUR 15,000 | Existing positions may be sold
+
+Return statistics use complete common trading dates through 2026-10-16. Valuation, whole-share quantities and EUR trade amounts use each share's latest observed close through 2026-10-19.
 
 ## Optimisation result
 
-The best numerical solution found has netSD 0.864407 (OUT=102, IN=0, denominator=118). It is evaluated against one fixed reference network containing 55 quality-approved shares, the current portfolio, and the ten earlier training/full-data portfolios.
+The best numerical solution found has netSD 0.822034 (OUT=97, IN=0, denominator=118). It is evaluated against one fixed reference network containing 55 quality-approved shares, the current portfolio, and the ten earlier training/full-data portfolios.
 
-Current-portfolio netSD is 0.423729; the optimised-portfolio value is 0.864407. Historical gross dividends for the final whole-share quantities are EUR 2222.39. These historical dividends are a counterfactual, before tax and without reinvestment, rather than a forecast.
+Current-portfolio netSD is 0.457627; the optimised-portfolio value is 0.822034. Historical gross dividends for the final whole-share quantities are EUR 2443.86. These historical dividends are a counterfactual, before tax and without reinvestment, rather than a forecast.
 
 ## Decision guide
 
@@ -79,21 +86,21 @@ The Priority field in Table 3A and the single-share-addition experiments are dia
 
 Suggested execution process: (1) refresh prices, cash and order-book depth; (2) select one scenario; (3) review liquidity and transaction costs; (4) place limit orders, splitting illiquid trades; (5) recalculate quantities and residual cash after fills. In-sample results and the unstable holdout test require paper trading or walk-forward validation before relying on the allocation.
 
-Return, price, liquidity and technical data used by the current Baltic analysis run through 2026-10-14. The 70/30 validation uses an earlier fixed split and is reported separately from the complete-period analysis.
+Return and technical analysis uses common observations through 2026-10-16; valuation prices and trade quantities are refreshed through 2026-10-19. The 70/30 validation uses an earlier fixed split and is reported separately from the complete-period analysis.
 
 <details markdown="1">
 <summary><strong>Table 1. Optimisation objective and constraint checks</strong></summary>
 
 | Component | Restriction or objective | Obtained value | Result |
 | --- | --- | --- | --- |
-| Objective: netSD | maximum value found numerically | 0.86440678 | Reported |
-| Budget | invested <= 15000 | 14920.82385351 | Satisfied |
-| Residual cash | >= 0 | 79.17614649 | Satisfied |
+| Objective: netSD | maximum value found numerically | 0.82203390 | Reported |
+| Budget | invested <= 15000 | 14913.15801773 | Satisfied |
+| Residual cash | >= 0 | 86.84198227 | Satisfied |
 | Full-investment weights | sum(w) = 1 | 1.00000000 | Satisfied |
 | Long only | min(w) >= 0 | 0.00000000 | Satisfied |
-| Sales | existing positions may be reduced to zero | -383.00000000 | Allowed |
-| Minimum mean | >= 0.00034894 | 0.00057616 | Satisfied |
-| Historical dividends | descriptive only; excluded from objective | 2222.38600640 | EUR historical gross cash |
+| Sales | existing positions may be reduced to zero | -377.00000000 | Allowed |
+| Minimum mean | >= 0.00034375 | 0.00049805 | Satisfied |
+| Historical dividends | descriptive only; excluded from objective | 2443.86441920 | EUR historical gross cash |
 
 </details>
 
@@ -103,61 +110,61 @@ Return, price, liquidity and technical data used by the current Baltic analysis 
 
 | asset | name | market | last_price | optimal_weight_percent | current_shares | target_shares | trade_shares | action | invested_EUR | historical_dividend_cash |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| AIR | Airobot Technologies | TLN | 1.7700 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
-| AKO1L | Akola Group | VLN | 1.8350 | 3.2076 | 0 | 262 | 262 | BUY | 480.7700 | 0.0000 |
-| AMG1L | Amber Grid | VLN | 1.1900 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
-| APG1L | Apranga | VLN | 3.8100 | 9.0277 | 200 | 355 | 155 | BUY | 1352.5500 | 365.6500 |
-| ARC1T | Arco Vara | TLN | 1.0550 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
-| AUG1L | AUGA group | VLN | 0.0764 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
-| BAL1R | Amber Latvijas balzams | RIG | 0.7500 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
+| AIR | Airobot Technologies | TLN | 1.8500 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
+| AKO1L | Akola Group | VLN | 1.8350 | 3.8355 | 0 | 313 | 313 | BUY | 574.3550 | 0.0000 |
+| AMG1L | Amber Grid | VLN | 1.2000 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
+| APG1L | Apranga | VLN | 3.8100 | 7.3585 | 200 | 289 | 89 | BUY | 1101.0900 | 297.6700 |
+| ARC1T | Arco Vara | TLN | 1.0500 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
+| AUG1L | AUGA group | VLN | 0.0710 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
+| BAL1R | Amber Latvijas balzams | RIG | 0.9000 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
 | BERCM | Bercman Technologies | TLN | 1.0350 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
-| CPA1T | Coop Pank | TLN | 2.3400 | 0.3851 | 0 | 24 | 24 | BUY | 56.1600 | 6.4080 |
+| CPA1T | Coop Pank | TLN | 2.3500 | 0.7757 | 0 | 49 | 49 | BUY | 115.1500 | 13.0830 |
 | CTS1L | City Service | VLN | 0.1560 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
-| DGR1R | DelfinGroup | RIG | 1.7050 | 2.0577 | 0 | 181 | 181 | BUY | 308.6050 | 59.2232 |
-| EFT1T | EfTEN Real Estate Fund | TLN | 19.5500 | 2.1580 | 0 | 16 | 16 | BUY | 312.8000 | 71.4016 |
+| DGR1R | DelfinGroup | RIG | 1.7200 | 1.5401 | 0 | 134 | 134 | BUY | 230.4800 | 43.8448 |
+| EFT1T | EfTEN Real Estate Fund | TLN | 19.6000 | 9.2677 | 0 | 70 | 70 | BUY | 1372.0000 | 312.3820 |
 | EWA1L | East West Agro | VLN | 15.6000 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
-| GRG1L | Grigeo Group | VLN | 1.0100 | 5.9285 | 0 | 880 | 880 | BUY | 888.8000 | 149.6000 |
-| HAE1T | Harju Elekter Group | TLN | 5.5400 | 7.3685 | 100 | 199 | 99 | BUY | 1102.4600 | 115.4200 |
-| HPR1T | Hepsor | TLN | 4.5100 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
-| IDX1R | INDEXO | RIG | 2.4835 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
-| IGN1L | Ignitis grupė | VLN | 21.8000 | 1.7217 | 0 | 11 | 11 | BUY | 239.8000 | 43.1090 |
-| INC1L | INVL Technology | VLN | 5.2500 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
-| INL1L | INVL Baltic Farmland | VLN | 6.9500 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
-| INR1L | INVL Baltic Real Estate | VLN | 2.9200 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
-| IVL1L | Invalda INVL | VLN | 26.2000 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
-| KNE1L | KN Energies | VLN | 0.4830 | 3.4026 | 0 | 1056 | 1056 | BUY | 510.0480 | 68.0064 |
-| KNR1L | Kauno energija | VLN | 2.1000 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
-| LGD1L | LITGRID | VLN | 1.1200 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
-| LHV1T | LHV Group | TLN | 3.2550 | 0.8984 | 0 | 41 | 41 | BUY | 133.4550 | 17.6300 |
-| LINDA | Linda Nektar | TLN | 4.2800 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
-| MAGIC | TextMagic | TLN | 1.8200 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
+| GRG1L | Grigeo Group | VLN | 1.0000 | 10.1549 | 0 | 1523 | 1523 | BUY | 1523.0000 | 258.9100 |
+| HAE1T | Harju Elekter Group | TLN | 5.3600 | 5.7378 | 100 | 160 | 60 | BUY | 857.6000 | 92.8000 |
+| HPR1T | Hepsor | TLN | 4.4500 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
+| IDX1R | INDEXO | RIG | 2.4550 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
+| IGN1L | Ignitis grupė | VLN | 21.7500 | 2.9497 | 0 | 20 | 20 | BUY | 435.0000 | 78.3800 |
+| INC1L | INVL Technology | VLN | 5.3000 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
+| INL1L | INVL Baltic Farmland | VLN | 7.1000 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
+| INR1L | INVL Baltic Real Estate | VLN | 2.8600 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
+| IVL1L | Invalda INVL | VLN | 25.8000 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
+| KNE1L | KN Energies | VLN | 0.4800 | 9.5139 | 0 | 2973 | 2973 | BUY | 1427.0400 | 191.4612 |
+| KNR1L | Kauno energija | VLN | 2.0800 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
+| LGD1L | LITGRID | VLN | 1.1300 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
+| LHV1T | LHV Group | TLN | 3.2500 | 0.8120 | 0 | 37 | 37 | BUY | 120.2500 | 15.9100 |
+| LINDA | Linda Nektar | TLN | 4.0600 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
+| MAGIC | TextMagic | TLN | 1.8500 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
 | MDARA | MADARA Cosmetics | RIG | 9.8800 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
 | MODE | Modera | TLN | 5.0000 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
-| MOLNR | J. Molner | TLN | 20.6000 | 5.9195 | 0 | 43 | 43 | BUY | 885.8000 | 0.0000 |
-| MRK1T | Merko Ehitus | TLN | 27.0500 | 10.5420 | 20 | 58 | 38 | BUY | 1568.9000 | 316.1000 |
-| NCN1T | Nordecon | TLN | 0.5260 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
+| MOLNR | J. Molner | TLN | 20.4000 | 1.1164 | 0 | 8 | 8 | BUY | 163.2000 | 0.0000 |
+| MRK1T | Merko Ehitus | TLN | 27.1000 | 9.8837 | 20 | 54 | 34 | BUY | 1463.4000 | 294.3000 |
+| NCN1T | Nordecon | TLN | 0.5340 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
 | NEOFI | NEO Finance | VLN | 2.2000 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
-| PKG1T | Pro Kapital Grupp | TLN | 0.6350 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
-| PRF1T | PRFoods | TLN | 0.0518 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
-| PZV1L | Pieno žvaigždės | VLN | 1.7850 | 7.4654 | 0 | 627 | 627 | BUY | 1119.1950 | 263.3400 |
-| ROE1L | Artea Bankas | VLN | 0.8820 | 0.1979 | 416 | 33 | -383 | SELL | 29.1060 | 4.4880 |
-| RSU1L | Rokiškio sūris | VLN | 4.4800 | 1.7910 | 0 | 59 | 59 | BUY | 264.3200 | 41.3000 |
-| SAF1R | SAF Tehnika | RIG | 16.5000 | 0.0000 | 100 | 0 | -100 | SELL | 0.0000 | 0.0000 |
-| SAUNA | Saunum Group | TLN | 2.4600 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
-| SCM1R | Siguldas ciltslietu un mākslīgās apsēklošanas stacija | RIG | 5.9000 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
-| SFG1T | Silvano Fashion Group | TLN | 1.0700 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
-| SKN1T | Nordic Fibreboard | TLN | 0.4600 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
-| TAL1T | Tallink Grupp | TLN | 0.6450 | 6.4495 | 700 | 1499 | 799 | BUY | 966.8550 | 224.8500 |
-| TEL1L | Telia Lietuva | VLN | 2.2600 | 9.6126 | 0 | 638 | 638 | BUY | 1441.8800 | 197.7800 |
-| TKM1T | TKM Grupp | TLN | 8.9600 | 1.5662 | 288 | 26 | -262 | SELL | 232.9600 | 68.9000 |
+| PKG1T | Pro Kapital Grupp | TLN | 0.6300 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
+| PRF1T | PRFoods | TLN | 0.0510 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
+| PZV1L | Pieno žvaigždės | VLN | 1.7950 | 3.1307 | 0 | 261 | 261 | BUY | 468.4950 | 109.6200 |
+| ROE1L | Artea Bankas | VLN | 0.8800 | 0.4087 | 416 | 69 | -347 | SELL | 60.7200 | 9.3840 |
+| RSU1L | Rokiškio sūris | VLN | 4.4800 | 4.8794 | 0 | 163 | 163 | BUY | 730.2400 | 114.1000 |
+| SAF1R | SAF Tehnika | RIG | 16.3500 | 0.0000 | 100 | 0 | -100 | SELL | 0.0000 | 0.0000 |
+| SAUNA | Saunum Group | TLN | 2.5000 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
+| SCM1R | Siguldas ciltslietu un mākslīgās apsēklošanas stacija | RIG | 5.3500 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
+| SFG1T | Silvano Fashion Group | TLN | 1.0650 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
+| SKN1T | Nordic Fibreboard | TLN | 0.4800 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
+| TAL1T | Tallink Grupp | TLN | 0.6460 | 1.3939 | 700 | 323 | -377 | SELL | 208.6580 | 48.4500 |
+| TEL1L | Telia Lietuva | VLN | 2.2900 | 2.1474 | 0 | 140 | 140 | BUY | 320.6000 | 43.4000 |
+| TKM1T | TKM Grupp | TLN | 8.9000 | 9.6967 | 288 | 163 | -125 | SELL | 1450.6999 | 431.9500 |
 | TPD1T | Trigon Property Development | TLN | 0.5800 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
-| TSM1T | Tallinna Sadam | TLN | 1.2120 | 0.0000 | 330 | 0 | -330 | SELL | 0.0000 | 0.0000 |
-| TVE1T | Tallinna Vesi | TLN | 10.9000 | 7.7510 | 0 | 106 | 106 | BUY | 1155.4000 | 205.6400 |
-| UTR1L | Utenos trikotažas | VLN | 0.3540 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
-| VBL1L | Vilniaus baldai | VLN | 9.6500 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
-| VIRSI | VIRŠI-A | RIG | 4.4200 | 0.4042 | 0 | 13 | 13 | BUY | 57.4600 | 3.5398 |
-| VLP1L | Vilkyškių pieninė | VLN | 15.5000 | 12.1448 | 42 | 117 | 75 | BUY | 1813.5000 | 0.0000 |
-| ZMP1L | Žemaitijos pienas | VLN | 2.9400 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
+| TSM1T | Tallinna Sadam | TLN | 1.2140 | 0.0000 | 330 | 0 | -330 | SELL | 0.0000 | 0.0000 |
+| TVE1T | Tallinna Vesi | TLN | 10.8500 | 2.9539 | 0 | 40 | 40 | BUY | 434.0000 | 77.6000 |
+| UTR1L | Utenos trikotažas | VLN | 0.3500 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
+| VBL1L | Vilniaus baldai | VLN | 9.8500 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
+| VIRSI | VIRŠI-A | RIG | 4.4200 | 1.1552 | 0 | 39 | 39 | BUY | 172.3800 | 10.6194 |
+| VLP1L | Vilkyškių pieninė | VLN | 15.6000 | 11.2884 | 42 | 108 | 66 | BUY | 1684.8000 | 0.0000 |
+| ZMP1L | Žemaitijos pienas | VLN | 2.8800 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
 
 </details>
 
@@ -167,29 +174,29 @@ Return, price, liquidity and technical data used by the current Baltic analysis 
 
 | execution_phase | asset | name | last_price | target_weight_percent | current_shares | trade_shares | trade_EUR | target_shares | invested_EUR | action | historical_dividend_cash |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | ROE1L | Artea Bankas | 0.8820 | 0.1979 | 416 | -383 | -337.8060 | 33 | 29.1060 | SELL | 4.4880 |
-| 1 | TSM1T | Tallinna Sadam | 1.2120 | 0.0000 | 330 | -330 | -399.9600 | 0 | 0.0000 | SELL | 0.0000 |
-| 1 | SAF1R | SAF Tehnika | 16.5000 | 0.0000 | 100 | -100 | -1650.0000 | 0 | 0.0000 | SELL | 0.0000 |
-| 1 | TKM1T | TKM Grupp | 8.9600 | 1.5662 | 288 | -262 | -2347.5200 | 26 | 232.9600 | SELL | 68.9000 |
-| 2 | TEL1L | Telia Lietuva | 2.2600 | 9.6126 | 0 | 638 | 1441.8800 | 638 | 1441.8800 | BUY | 197.7800 |
-| 2 | VLP1L | Vilkyškių pieninė | 15.5000 | 12.1448 | 42 | 75 | 1162.5000 | 117 | 1813.5000 | BUY | 0.0000 |
-| 2 | TVE1T | Tallinna Vesi | 10.9000 | 7.7510 | 0 | 106 | 1155.4000 | 106 | 1155.4000 | BUY | 205.6400 |
-| 2 | PZV1L | Pieno žvaigždės | 1.7850 | 7.4654 | 0 | 627 | 1119.1950 | 627 | 1119.1950 | BUY | 263.3400 |
-| 2 | MRK1T | Merko Ehitus | 27.0500 | 10.5420 | 20 | 38 | 1027.9000 | 58 | 1568.9000 | BUY | 316.1000 |
-| 2 | GRG1L | Grigeo Group | 1.0100 | 5.9285 | 0 | 880 | 888.8000 | 880 | 888.8000 | BUY | 149.6000 |
-| 2 | MOLNR | J. Molner | 20.6000 | 5.9195 | 0 | 43 | 885.8000 | 43 | 885.8000 | BUY | 0.0000 |
-| 2 | APG1L | Apranga | 3.8100 | 9.0277 | 200 | 155 | 590.5500 | 355 | 1352.5500 | BUY | 365.6500 |
-| 2 | HAE1T | Harju Elekter Group | 5.5400 | 7.3685 | 100 | 99 | 548.4600 | 199 | 1102.4600 | BUY | 115.4200 |
-| 2 | TAL1T | Tallink Grupp | 0.6450 | 6.4495 | 700 | 799 | 515.3550 | 1499 | 966.8550 | BUY | 224.8500 |
-| 2 | KNE1L | KN Energies | 0.4830 | 3.4026 | 0 | 1056 | 510.0480 | 1056 | 510.0480 | BUY | 68.0064 |
-| 2 | AKO1L | Akola Group | 1.8350 | 3.2076 | 0 | 262 | 480.7700 | 262 | 480.7700 | BUY | 0.0000 |
-| 2 | EFT1T | EfTEN Real Estate Fund | 19.5500 | 2.1580 | 0 | 16 | 312.8000 | 16 | 312.8000 | BUY | 71.4016 |
-| 2 | DGR1R | DelfinGroup | 1.7050 | 2.0577 | 0 | 181 | 308.6050 | 181 | 308.6050 | BUY | 59.2232 |
-| 2 | RSU1L | Rokiškio sūris | 4.4800 | 1.7910 | 0 | 59 | 264.3200 | 59 | 264.3200 | BUY | 41.3000 |
-| 2 | IGN1L | Ignitis grupė | 21.8000 | 1.7217 | 0 | 11 | 239.8000 | 11 | 239.8000 | BUY | 43.1090 |
-| 2 | LHV1T | LHV Group | 3.2550 | 0.8984 | 0 | 41 | 133.4550 | 41 | 133.4550 | BUY | 17.6300 |
-| 2 | VIRSI | VIRŠI-A | 4.4200 | 0.4042 | 0 | 13 | 57.4600 | 13 | 57.4600 | BUY | 3.5398 |
-| 2 | CPA1T | Coop Pank | 2.3400 | 0.3851 | 0 | 24 | 56.1600 | 24 | 56.1600 | BUY | 6.4080 |
+| 1 | TAL1T | Tallink Grupp | 0.6460 | 1.3939 | 700 | -377 | -243.5420 | 323 | 208.6580 | SELL | 48.4500 |
+| 1 | ROE1L | Artea Bankas | 0.8800 | 0.4087 | 416 | -347 | -305.3600 | 69 | 60.7200 | SELL | 9.3840 |
+| 1 | TSM1T | Tallinna Sadam | 1.2140 | 0.0000 | 330 | -330 | -400.6200 | 0 | 0.0000 | SELL | 0.0000 |
+| 1 | TKM1T | TKM Grupp | 8.9000 | 9.6967 | 288 | -125 | -1112.5000 | 163 | 1450.6999 | SELL | 431.9500 |
+| 1 | SAF1R | SAF Tehnika | 16.3500 | 0.0000 | 100 | -100 | -1635.0000 | 0 | 0.0000 | SELL | 0.0000 |
+| 2 | GRG1L | Grigeo Group | 1.0000 | 10.1549 | 0 | 1523 | 1523.0000 | 1523 | 1523.0000 | BUY | 258.9100 |
+| 2 | KNE1L | KN Energies | 0.4800 | 9.5139 | 0 | 2973 | 1427.0400 | 2973 | 1427.0400 | BUY | 191.4612 |
+| 2 | EFT1T | EfTEN Real Estate Fund | 19.6000 | 9.2677 | 0 | 70 | 1372.0000 | 70 | 1372.0000 | BUY | 312.3820 |
+| 2 | VLP1L | Vilkyškių pieninė | 15.6000 | 11.2884 | 42 | 66 | 1029.6000 | 108 | 1684.8000 | BUY | 0.0000 |
+| 2 | MRK1T | Merko Ehitus | 27.1000 | 9.8837 | 20 | 34 | 921.4000 | 54 | 1463.4000 | BUY | 294.3000 |
+| 2 | RSU1L | Rokiškio sūris | 4.4800 | 4.8794 | 0 | 163 | 730.2400 | 163 | 730.2400 | BUY | 114.1000 |
+| 2 | AKO1L | Akola Group | 1.8350 | 3.8355 | 0 | 313 | 574.3550 | 313 | 574.3550 | BUY | 0.0000 |
+| 2 | PZV1L | Pieno žvaigždės | 1.7950 | 3.1307 | 0 | 261 | 468.4950 | 261 | 468.4950 | BUY | 109.6200 |
+| 2 | IGN1L | Ignitis grupė | 21.7500 | 2.9497 | 0 | 20 | 435.0000 | 20 | 435.0000 | BUY | 78.3800 |
+| 2 | TVE1T | Tallinna Vesi | 10.8500 | 2.9539 | 0 | 40 | 434.0000 | 40 | 434.0000 | BUY | 77.6000 |
+| 2 | APG1L | Apranga | 3.8100 | 7.3585 | 200 | 89 | 339.0900 | 289 | 1101.0900 | BUY | 297.6700 |
+| 2 | HAE1T | Harju Elekter Group | 5.3600 | 5.7378 | 100 | 60 | 321.6000 | 160 | 857.6000 | BUY | 92.8000 |
+| 2 | TEL1L | Telia Lietuva | 2.2900 | 2.1474 | 0 | 140 | 320.6000 | 140 | 320.6000 | BUY | 43.4000 |
+| 2 | DGR1R | DelfinGroup | 1.7200 | 1.5401 | 0 | 134 | 230.4800 | 134 | 230.4800 | BUY | 43.8448 |
+| 2 | VIRSI | VIRŠI-A | 4.4200 | 1.1552 | 0 | 39 | 172.3800 | 39 | 172.3800 | BUY | 10.6194 |
+| 2 | MOLNR | J. Molner | 20.4000 | 1.1164 | 0 | 8 | 163.2000 | 8 | 163.2000 | BUY | 0.0000 |
+| 2 | LHV1T | LHV Group | 3.2500 | 0.8120 | 0 | 37 | 120.2500 | 37 | 120.2500 | BUY | 15.9100 |
+| 2 | CPA1T | Coop Pank | 2.3500 | 0.7757 | 0 | 49 | 115.1500 | 49 | 115.1500 | BUY | 13.0830 |
 
 </details>
 
@@ -202,9 +209,9 @@ Phase 1 contains model sales, phase 2 model purchases and phase 3 unchanged posi
 Select a share to display its allocation, technical indicators, all PerformanceAnalytics measures and portfolio sensitivity.
 
 <details markdown="1" class="stock-profile" id="share-kne1l">
-<summary><strong>KNE1L — KN Energies</strong> | HOLD | target 1581 shares | priority 1</summary>
+<summary><strong>KNE1L — KN Energies</strong> | HOLD | target 928 shares | priority 1</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>1581</td><td>+1581</td><td>5.09%</td><td>EUR 0.4830</td><td>0.3729</td><td>44 / 0</td><td>38.03</td><td>Bearish</td><td>Inside bands</td><td>0.084 (Oversold)</td><td>HOLD</td><td>0.002595 (3.027% of portfolio HHI)</td><td>EUR 14,251</td><td>5.4%</td><td>1.2%</td><td>MEDIUM</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>928</td><td>+928</td><td>2.97%</td><td>EUR 0.4800</td><td>0.3729</td><td>44 / 0</td><td>32.76</td><td>Bearish</td><td>Inside bands</td><td>0.000 (Oversold)</td><td>HOLD</td><td>0.000883 (1.139% of portfolio HHI)</td><td>EUR 14,251</td><td>3.1%</td><td>1.2%</td><td>MEDIUM</td></tr></tbody></table>
 
 ![KNE1L Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/KNE1L_technicals_6m.png)
 
@@ -220,34 +227,34 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![KNE1L return histogram](figures/stock_profiles/KNE1L_histogram.png?v=1792150404)
+![KNE1L return histogram](figures/stock_profiles/KNE1L_histogram.png?v=1792485732)
 
 </details>
 
 <details markdown="1" class="seasonality-section">
 <summary>Seasonality, drawdowns and upside periods</summary>
 
-The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
+The analysis covers 919 daily returns from 2023-01-02 to 2026-10-16. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
 
 | Measure | Value | Measure | Value | Measure | Value |
 | --- | --- | --- | --- | --- | --- |
-| Maximum drawdown | -26.64% (2023-12-20) | Average gain / average loss | 1.215 | Best 21-day period | 25.23% (ending 2025-12-08) |
-| Average underwater drawdown | 10.90% | Upside potential ratio | 1.451 | Worst 21-day period | -9.36% (ending 2024-02-12) |
-| Conditional drawdown 95% | 25.00% | Upside capture vs Baltic EW | 113.0% | Best 5-day period | 14.81% (ending 2025-12-05) |
-| Ulcer index | 12.93 | Downside capture vs Baltic EW | 54.0% | Best 63-day period | 44.90% (ending 2026-01-09) |
-| Longest underwater period | 728 calendar days | Positive trading days | 37.6% | Repeated calendar pattern | Jan: 100% positive across 4 years |
-| Daily downside deviation | 0.747% | Best day | 8.61% (2024-01-08) |  |  |
-| Daily upside deviation | 0.972% | Worst day | -7.37% (2025-05-14) |  |  |
+| Maximum drawdown | -26.64% (2023-12-20) | Average gain / average loss | 1.220 | Best 21-day period | 25.23% (ending 2025-12-08) |
+| Average underwater drawdown | 10.89% | Upside potential ratio | 1.452 | Worst 21-day period | -9.36% (ending 2024-02-12) |
+| Conditional drawdown 95% | 25.00% | Upside capture vs Baltic EW | 112.6% | Best 5-day period | 14.81% (ending 2025-12-05) |
+| Ulcer index | 12.92 | Downside capture vs Baltic EW | 54.3% | Best 63-day period | 44.90% (ending 2026-01-09) |
+| Longest underwater period | 728 calendar days | Positive trading days | 37.5% | Repeated calendar pattern | Jan: 100% positive across 4 years |
+| Daily downside deviation | 0.746% | Best day | 8.61% (2024-01-08) |  |  |
+| Daily upside deviation | 0.971% | Worst day | -7.37% (2025-05-14) |  |  |
 
 **Calendar-effect tests and observed averages**
 
 | Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
 | --- | --- | --- | --- | --- |
-| Weekday | Best: Friday (0.282%); worst: Monday (-0.061%) | 0.0237 | 0.1363 | Not detected |
-| Calendar month | Best: Jan (0.533% daily); worst: Mar (-0.167% daily) | 0.4280 | 0.5791 | Not detected |
-| Turn of month | First/last three days: 0.242%; other days: 0.046% | 0.0655 | 0.3767 | Not detected |
+| Weekday | Best: Friday (0.278%); worst: Monday (-0.061%) | 0.0266 | 0.1527 | Not detected |
+| Calendar month | Best: Jan (0.533% daily); worst: Mar (-0.167% daily) | 0.4250 | 0.5750 | Not detected |
+| Turn of month | First/last three days: 0.242%; other days: 0.045% | 0.0621 | 0.3572 | Not detected |
 
-![KNE1L seasonality, drawdowns and upside periods](figures/stock_profiles/KNE1L_seasonality.png?v=1792161056)
+![KNE1L seasonality, drawdowns and upside periods](figures/stock_profiles/KNE1L_seasonality.png?v=1792486403)
 
 **Five deepest drawdown episodes**
 
@@ -280,10 +287,10 @@ Announcement times and links come from the official Nasdaq news service. The eff
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Dividend payment | 1 | 0.90% | 1.90% | 4.80% | 100% | 100% | 1.0000 | 1.0000 | No adjusted statistical evidence |
 | Earnings | 22 | 0.49% | 0.16% | 1.32% | 50% | 36% | 1.0000 | 1.0000 | No adjusted statistical evidence |
-| Ex-dividend | 3 | -5.59% | -4.00% | -1.15% | 0% | 33% | 0.0028 | 0.8663 | Different from ordinary periods; price drop may be mechanical |
+| Ex-dividend | 3 | -5.59% | -4.00% | -1.15% | 0% | 33% | 0.0028 | 0.8659 | Different from ordinary periods; price drop may be mechanical |
 | Guidance | 1 | -0.15% | -1.19% | -6.87% | 0% | 100% | 1.0000 | 1.0000 | No adjusted statistical evidence |
 
-![KNE1L official announcements and abnormal returns](figures/stock_profiles/KNE1L_company_events.png?v=1792171543)
+![KNE1L official announcements and abnormal returns](figures/stock_profiles/KNE1L_company_events.png?v=1792486528)
 
 A direction reversal requires opposite fitted price slopes during the ten trading days before and after the event and at least a 1% five-day move. This identifies temporal association, not proof that the announcement caused the change.
 
@@ -329,7 +336,7 @@ A direction reversal requires opposite fitted price slopes during the ten tradin
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![KNE1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/KNE1L_all_frontiers.png?v=1792150965)
+![KNE1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/KNE1L_all_frontiers.png?v=1792486195)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -390,9 +397,9 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 **Adding this new share to the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>KNE1L shares</td><td>0</td><td>1581</td><td>+1581</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>8720.475000</td><td>763.623016</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.593220</td><td>0.169492</td></tr><tr><td>OUT</td><td>62</td><td>72</td><td>+10</td></tr><tr><td>IN</td><td>12</td><td>2</td><td>-10</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.083441</td><td>0.013318</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.108690</td><td>0.016338</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>KNE1L shares</td><td>0</td><td>928</td><td>+928</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>8357.739957</td><td>445.439990</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.559322</td><td>0.101695</td></tr><tr><td>OUT</td><td>62</td><td>70</td><td>+8</td></tr><tr><td>IN</td><td>8</td><td>4</td><td>-4</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.075434</td><td>0.005262</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.101209</td><td>0.010053</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 0 KNE1L shares. The scenario adds 1581 shares from Table 3A, resulting in 1581 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 KNE1L shares. The scenario adds 928 shares from Table 3A, resulting in 928 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -404,427 +411,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![KNE1L high-resolution stochastic dominance](figures/stock_profiles/KNE1L_FSD_SSD_TSD.png?v=1792171283)
-
-The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
-
-</details>
-
-</details>
-
-</details>
-
-</details>
-
-<details markdown="1" class="stock-profile" id="share-virsi">
-<summary><strong>VIRSI — VIRŠI-A</strong> | HOLD | target 11 shares | priority 2</summary>
-
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>11</td><td>+11</td><td>0.34%</td><td>EUR 4.4200</td><td>0.3729</td><td>44 / 0</td><td>53.63</td><td>Bearish</td><td>Inside bands</td><td>0.000 (Oversold)</td><td>HOLD</td><td>0.000012 (0.014% of portfolio HHI)</td><td>EUR 2,659</td><td>1.8%</td><td>2.4%</td><td>HIGH</td></tr></tbody></table>
-
-![VIRSI Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/VIRSI_technicals_6m.png)
-
-Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
-
-<details markdown="1">
-<summary>Complete technical history</summary>
-
-![VIRSI complete technical history](figures/technical_analysis/VIRSI_technical.png)
-
-</details>
-
-<details markdown="1">
-<summary>Return histogram</summary>
-
-![VIRSI return histogram](figures/stock_profiles/VIRSI_histogram.png?v=1792150405)
-
-</details>
-
-<details markdown="1" class="seasonality-section">
-<summary>Seasonality, drawdowns and upside periods</summary>
-
-The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
-
-| Measure | Value | Measure | Value | Measure | Value |
-| --- | --- | --- | --- | --- | --- |
-| Maximum drawdown | -16.89% (2025-11-06) | Average gain / average loss | 1.008 | Best 21-day period | 10.50% (ending 2026-08-14) |
-| Average underwater drawdown | 7.26% | Upside potential ratio | 1.387 | Worst 21-day period | -4.29% (ending 2024-07-03) |
-| Conditional drawdown 95% | 15.97% | Upside capture vs Baltic EW | 19.3% | Best 5-day period | 7.41% (ending 2026-08-13) |
-| Ulcer index | 8.49 | Downside capture vs Baltic EW | 19.2% | Best 63-day period | 10.75% (ending 2026-10-12) |
-| Longest underwater period | 1232 calendar days | Positive trading days | 33.0% | Repeated calendar pattern | Jun: 0% positive across 4 years |
-| Daily downside deviation | 0.323% | Best day | 3.88% (2026-01-05) |  |  |
-| Daily upside deviation | 0.342% | Worst day | -2.56% (2025-08-19) |  |  |
-
-**Calendar-effect tests and observed averages**
-
-| Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
-| --- | --- | --- | --- | --- |
-| Weekday | Best: Friday (0.071%); worst: Monday (-0.068%) | 0.0666 | 0.1863 | Not detected |
-| Calendar month | Best: Dec (0.090% daily); worst: Jun (-0.094% daily) | 0.3448 | 0.4956 | Not detected |
-| Turn of month | First/last three days: -0.034%; other days: 0.009% | 0.7547 | 0.9443 | Not detected |
-
-![VIRSI seasonality, drawdowns and upside periods](figures/stock_profiles/VIRSI_seasonality.png?v=1792161115)
-
-**Five deepest drawdown episodes**
-
-| Rank | Peak | Trough | Recovery | Loss | Underwater days |
-| --- | --- | --- | --- | --- | --- |
-| 1 | 2023-05-31 | 2025-11-06 | Not recovered | -16.89% | 1232 |
-| 2 | 2023-03-07 | 2023-03-24 | 2023-04-11 | -1.67% | 35 |
-| 3 | 2023-01-03 | 2023-02-02 | 2023-02-28 | -1.24% | 56 |
-| 4 | 2023-04-14 | 2023-05-10 | 2023-05-16 | -0.67% | 32 |
-| 5 | 2023-05-17 | 2023-05-22 | 2023-05-30 | -0.44% | 13 |
-
-**Five strongest non-overlapping 21-trading-day rises**
-
-| Rank | Start | End | 21-day return |
-| --- | --- | --- | --- |
-| 1 | 2026-07-16 | 2026-08-14 | 10.50% |
-| 2 | 2025-12-04 | 2026-01-12 | 7.98% |
-| 3 | 2024-09-19 | 2024-10-18 | 3.92% |
-| 4 | 2023-11-03 | 2023-12-05 | 3.07% |
-| 5 | 2025-08-19 | 2025-09-18 | 2.89% |
-
-The dated extremes identify where company announcements, dividends, corporate actions or data anomalies should be checked. A repeated calendar average is descriptive until it survives the adjusted test and a later out-of-sample period; it is not by itself a buy or sell signal.
-
-<details markdown="1" class="company-events">
-<summary>Official company-news calendar and price-direction analysis (23 events)</summary>
-
-Announcement times and links come from the official Nasdaq news service. The effective date is the first trading close strictly after publication. Abnormal return means the share return minus the equal-weight Baltic-market return over the same window.
-
-| Event type | N | Abnormal 1d | Abnormal 5d | Abnormal 21d | Positive 5d | Direction reversal | BH p(5d) | BH p(21d) | Interpretation |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Dividend announcement | 1 | 0.67% | 1.56% | 1.80% | 100% | 0% | 1.0000 | 1.0000 | No adjusted statistical evidence |
-| Dividend payment | 4 | -0.21% | -0.78% | -1.00% | 0% | 0% | 0.3640 | 0.7522 | No adjusted statistical evidence |
-| Earnings | 9 | 0.14% | 0.70% | 1.49% | 78% | 0% | 0.8351 | 0.1740 | No adjusted statistical evidence |
-| Ex-dividend | 5 | -0.20% | -0.08% | -1.15% | 80% | 20% | 1.0000 | 0.5738 | No adjusted statistical evidence; price drop may be mechanical |
-| Revenue | 4 | 0.24% | -0.14% | 0.87% | 50% | 0% | 1.0000 | 0.7250 | No adjusted statistical evidence |
-
-![VIRSI official announcements and abnormal returns](figures/stock_profiles/VIRSI_company_events.png?v=1792171570)
-
-A direction reversal requires opposite fitted price slopes during the ten trading days before and after the event and at least a 1% five-day move. This identifies temporal association, not proof that the announcement caused the change.
-
-<details markdown="1">
-<summary>Complete official event calendar (23 announcements)</summary>
-
-| Published | Type | Official announcement | Headline fundamental cue | Pre 5d | Post 1d | Post 5d | Post 21d | Abnormal 5d | Reversal |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2026-08-07 08:00 | Earnings | [AS VIRŠI-A reports net profit of EUR 4.2 million in the first half of the year](https://view.news.eu.nasdaq.com/view?id=b048574882a6dccd458b5a2309f4c8dad&lang=en&src=listed) | NET PROFIT; PROFIT; EUR 4.2 million | 2.46% | 2.16% | 6.25% | 6.73% | 6.13% | No |
-| 2026-06-12 08:00 | Dividend payment | [Official dividend calendar: Dividend payment date, EUR 0.0592514 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.0592514  | -0.49% | 0.74% | -0.74% | -1.23% | -0.00% | No |
-| 2026-06-03 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.0592514 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.0592514  | -0.25% | 0.25% | 0.25% | -0.74% | 0.17% | No |
-| 2026-04-20 20:10 | Earnings | [AS VIRŠI-A publishes its Annual Report for 2025 together with the independent auditor's report](https://view.news.eu.nasdaq.com/view?id=ba558c89bfdc2f69a4deff05711de1e6f&lang=en&src=listed) | Open official announcement | -0.25% | 0.25% | 0.75% | 1.24% | 0.61% | No |
-| 2026-02-27 08:00 | Revenue | [AS VIRŠI-A achieves its highest ever turnover in 2025](https://view.news.eu.nasdaq.com/view?id=b513838be4f792a12846ffacad5122890&lang=en&src=listed) | TURNOVER | 0.75% | -0.25% | -0.25% | -1.23% | 0.64% | No |
-| 2025-08-08 08:18 | Revenue | [AS VIRŠI-A closes the first half of the year with EUR 188.6 million turnover and EUR 7.4 million in investments](https://view.news.eu.nasdaq.com/view?id=b72604ee36bcda46757ed90c363359b0e&lang=en&src=listed) | TURNOVER; EUR 188.6 million; EUR 7.4 million | -0.25% | 0.00% | -0.51% | 0.25% | -1.44% | No |
-| 2025-06-12 08:00 | Dividend payment | [Official dividend calendar: Dividend payment date, EUR 0.0493432 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.0493432  | -0.25% | 0.00% | -2.25% | -1.50% | -1.10% | No |
-| 2025-06-03 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.0493432 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.0493432  | 0.50% | -0.74% | -0.50% | -1.74% | 0.11% | No |
-| 2025-04-23 17:19 | Earnings | [AS VIRŠI-A publishes the Annual Report for 2024 together with the independent auditor's report](https://view.news.eu.nasdaq.com/view?id=bf523dd7861c8fab9ddd242808a244245&lang=en&src=listed) | Open official announcement | 0.00% | -0.25% | -0.25% | -0.50% | -0.98% | No |
-| 2024-06-12 08:00 | Dividend payment | [Official dividend calendar: Dividend payment date, EUR 0.0539219 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.0539219  | -0.71% | -0.72% | -0.96% | -1.67% | -1.06% | No |
-| 2024-06-03 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.0539219 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.0539219  | 0.71% | -0.71% | -1.42% | -2.84% | -1.40% | Yes |
-| 2024-04-18 09:09 | Earnings | [CORRECTION: AS VIRŠI-A publishes the Annual Report for 2023 together with the independent auditor's report](https://view.news.eu.nasdaq.com/view?id=b466ac709f2159039d184385e4ad52fac&lang=en&src=listed) | Open official announcement | 0.00% | 0.24% | 0.24% | 0.72% | -0.18% | No |
-| 2024-04-17 21:45 | Earnings | [AS VIRŠI-A publishes the Annual Report for 2023 together with the independent auditor's report](https://view.news.eu.nasdaq.com/view?id=ba88cb61a4d31e37e2fa17d2a29a1ec94&lang=en&src=listed) | Open official announcement | 0.48% | -0.24% | 0.00% | 0.48% | 0.24% | No |
-| 2024-02-29 08:48 | Earnings | [Virši closes 2023 with significant investments and strong financial results](https://view.news.eu.nasdaq.com/view?id=b43bb7d049c07dece64ce4d57e39951f2&lang=en&src=listed) | Open official announcement | -0.46% | -0.23% | -0.47% | -3.49% | 0.06% | No |
-| 2023-10-20 17:00 | Earnings | [Summary of AS VIRŠI-A operational activity and other developments for the 3rd quarter of 2023](https://view.news.eu.nasdaq.com/view?id=bc39fc4eced0375f0064fdb722e4b3586&lang=en&src=listed) | Open official announcement | -0.23% | -0.23% | -0.46% | -0.91% | 0.12% | No |
-| 2023-08-09 08:56 | Revenue | [AS VIRŠI-A continues its strong development, closing the first half of the year with a turnover of EUR 162.4 million](https://view.news.eu.nasdaq.com/view?id=b126a477a933003098d0361448ad4d8cb&lang=en&src=listed) | TURNOVER; EUR 162.4 million | -0.23% | -0.68% | 0.23% | 0.00% | 0.36% | No |
-| 2023-06-14 08:00 | Dividend payment | [Official dividend calendar: Dividend payment date, EUR 0.109776 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.109776  | -0.45% | -0.45% | -0.90% | 0.45% | -0.94% | No |
-| 2023-06-01 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.109776 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.109776  | 0.45% | -0.67% | -0.89% | -1.33% | 0.10% | No |
-| 2023-05-30 07:52 | Ex-dividend | [Dividend payment ex-date of AS VIRŠI-A](https://view.news.eu.nasdaq.com/view?id=b95307478ed703eb6a6594e6483ae7324&lang=en&src=listed) | Open official announcement | 0.22% | 0.00% | -0.89% | -2.00% | 0.62% | No |
-| 2023-04-13 17:51 | Earnings | [CORRECTION: AS VIRŠI-A publishes the Annual Report for 2022 together with the independent auditor's report ](https://view.news.eu.nasdaq.com/view?id=b71e71be9aca08c9238dfe0ef5b58250b&lang=en&src=listed) | Open official announcement | 1.58% | 0.00% | -0.22% | 0.00% | 0.18% | No |
-| 2023-04-11 09:46 | Earnings | [AS VIRŠI-A publishes the Annual Report for 2022 together with the independent auditor's report](https://view.news.eu.nasdaq.com/view?id=b31df8561e981d64f5ba8353f4ce922e5&lang=en&src=listed) | Open official announcement | 1.13% | 0.00% | 0.00% | 0.00% | 0.11% | No |
-| 2023-04-04 08:53 | Dividend announcement | [Publishing of the audited annual report for 2022 and dividend distribution proposal of AS VIRŠI-A](https://view.news.eu.nasdaq.com/view?id=b22543b41d7f8c92cda2c9ffaacd0e72e&lang=en&src=listed) | Open official announcement | -0.23% | 0.23% | 1.58% | 0.90% | 1.56% | No |
-| 2023-02-28 08:47 | Revenue | [AS VIRŠI-A grows its turnover by 70% in 2022](https://view.news.eu.nasdaq.com/view?id=bce503546959b4b4c47fd23734df006a1&lang=en&src=listed) | TURNOVER; 70% | 2.05% | 0.00% | 0.11% | -1.23% | -0.11% | No |
-
-</details>
-
-</details>
-
-</details>
-
-<details markdown="1">
-<summary>All five model frontiers with this share highlighted</summary>
-
-![VIRSI Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/VIRSI_all_frontiers.png?v=1792150974)
-
-The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
-
-</details>
-
-<details markdown="1">
-<summary>All 72 PerformanceAnalytics measures: full period and last 126 observations</summary>
-
-| Measure | Full period | Last 126 | Measure | Full period | Last 126 |
-| --- | --- | --- | --- | --- | --- |
-| ActiveReturn | -0.248997 | -0.200331 | M2Sortino | -0.021757 | 0.039084 |
-| AdjustedSharpe | -0.228646 | 0.487406 | MSquaredExcess | -0.225190 | -0.132659 |
-| AnnualizedReturn_Arithmetic | -0.017763 | 0.039249 | Martin | -0.204125 | 2.586994 |
-| AnnualizedReturn_Geometric | -0.020308 | 0.036878 | MaximumDrawdown | 0.173775 | 0.031599 |
-| Appraisal | -0.280065 | 0.476953 | Modigliani | -0.000167 | 0.000309 |
-| ArithmeticReturn | -0.000070 | 0.000156 | NetSelectivity | -0.117062 | -0.082821 |
-| AverageDrawdown | 0.031050 | 0.010552 | Omega | 0.952821 | 1.098862 |
-| AverageDrawdownLength | 107.000000 | 15.125000 | OmegaExcessReturn | -0.039201 | 0.020479 |
-| AverageRecoveryTime | 35.285714 | 11.000000 | PainIndex | 0.084862 | 0.010946 |
-| BernardoLedoit | 0.952821 | 1.098862 | PainRatio | -0.239300 | 3.369202 |
-| BetaCoKurtosis | 0.010497 | 0.034514 | Prospect | -0.587322 | -0.535624 |
-| BetaCoSkewness | -1.924716 | -11.264759 | Rachev | 0.954479 | 0.977323 |
-| Burke | -0.195219 | 0.901220 | Selectivity | -0.020793 | 0.037148 |
-| CAPMAlpha | -0.000072 | 0.000157 | Sharpe_Annualized | -0.239101 | 0.501923 |
-| CAPMBeta | 0.002121 | -0.001136 | Sharpe_Daily | -0.015062 | 0.031618 |
-| CDD | 0.079544 | 0.020799 | Sharpe_ES | -0.006455 | 0.014881 |
-| Calmar | -0.116861 | 1.167082 | Sharpe_VaR | -0.009790 | 0.021000 |
-| CoKurtosis | 0.000000 | 0.000000 | Skewness | 0.479749 | 0.124337 |
-| CoSkewness | -0.000000 | -0.000000 | Sortino | -0.021361 | 0.046000 |
-| CumulativeReturn | -0.059541 | 0.018272 | SpecificRisk | 0.074242 | 0.077886 |
-| DRatio | 1.070846 | 0.755133 | Sterling | -0.074176 | 0.280234 |
-| DownCapture | -0.011262 | -0.039889 | SystematicRisk | 0.000372 | -0.000176 |
-| DownNumber | 0.308176 | 0.301887 | TotalRisk | 0.074243 | 0.077886 |
-| DownPercent | 0.886792 | 0.924528 | TrackingError_Annualized | 0.190323 | 0.173733 |
-| DownsideDeviation | 0.003300 | 0.003386 | TrackingError_Daily | 0.011989 | 0.010944 |
-| DrawdownDeviation | 0.006378 | 0.003585 | Treynor_Annualized | -9.575251 | -32.456639 |
-| ES_Loss | 0.010920 | 0.010467 | Treynor_Daily | -0.038387 | -0.126487 |
-| FamaBeta | 0.423082 | 0.504616 | UlcerIndex | 0.099486 | 0.014255 |
-| GeometricReturn | -0.000081 | 0.000144 | UpCapture | -0.025506 | 0.004847 |
-| Hurst | 0.395572 | 0.439377 | UpNumber | 0.316514 | 0.356164 |
-| Information_Annualized | -1.308288 | -1.153097 | UpPercent | 0.119266 | 0.136986 |
-| Information_Daily | -0.074984 | -0.064081 | UpsidePotential | 0.431408 | 0.511300 |
-| JensenAlpha | -0.020793 | 0.037148 | UpsideRisk | 0.003315 | 0.003554 |
-| Kappa | -0.014051 | 0.031662 | VaR_Loss | 0.007200 | 0.007417 |
-| Kelly | -3.218401 | 6.418696 | Volatility | 0.004680 | 0.004926 |
-| Kurtosis | 13.330999 | 6.746270 | Volatility_Annualized | 0.074292 | 0.078197 |
-
-</details>
-
-<details markdown="1" class="portfolio-sensitivity">
-<summary>Portfolio sensitivity</summary>
-
-**Removing this share from curent_update_baltic**
-
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.813559</td><td>0.000000</td></tr><tr><td>OUT</td><td>96</td><td>96</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.147864</td><td>0.000091</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.161557</td><td>0.000065</td></tr></tbody></table>
-
-The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
-
-**Adding this new share to the current portfolio**
-
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>VIRSI shares</td><td>0</td><td>11</td><td>+11</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>8005.471983</td><td>48.620000</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.423729</td><td>0.000000</td></tr><tr><td>OUT</td><td>62</td><td>62</td><td>+0</td></tr><tr><td>IN</td><td>12</td><td>12</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.069871</td><td>-0.000252</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.092326</td><td>-0.000026</td></tr></tbody></table>
-
-The starting point is the unmodified current portfolio, which already contains 0 VIRSI shares. The scenario adds 11 shares from Table 3A, resulting in 11 shares; every other holding remains unchanged.
-
-<details markdown="1" class="dominance-components">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Choose S&P 500, Current or any model portfolio as the benchmark for the difference panels.
-
-<div class="dominance-explorer" data-asset="VIRSI"><p>Open this section to load the interactive curve explorer.</p></div>
-
-<details markdown="1" class="static-dominance">
-<summary>High-resolution static FSD, SSD and TSD figure</summary>
-
-![VIRSI high-resolution stochastic dominance](figures/stock_profiles/VIRSI_FSD_SSD_TSD.png?v=1792171314)
-
-The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
-
-</details>
-
-</details>
-
-</details>
-
-</details>
-
-<details markdown="1" class="stock-profile" id="share-vlp1l">
-<summary><strong>VLP1L — Vilkyškių pieninė</strong> | HOLD | target 65 shares | priority 3</summary>
-
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>42</td><td>65</td><td>+23</td><td>6.77%</td><td>EUR 15.5000</td><td>0.3644</td><td>43 / 0</td><td>62.15</td><td>Bullish</td><td>Above upper band</td><td>1.000 (Overbought)</td><td>HOLD</td><td>0.004577 (5.339% of portfolio HHI)</td><td>EUR 21,740</td><td>1.6%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
-
-![VLP1L Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/VLP1L_technicals_6m.png)
-
-Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
-
-<details markdown="1">
-<summary>Complete technical history</summary>
-
-![VLP1L complete technical history](figures/technical_analysis/VLP1L_technical.png)
-
-</details>
-
-<details markdown="1">
-<summary>Return histogram</summary>
-
-![VLP1L return histogram](figures/stock_profiles/VLP1L_histogram.png?v=1792150404)
-
-</details>
-
-<details markdown="1" class="seasonality-section">
-<summary>Seasonality, drawdowns and upside periods</summary>
-
-The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
-
-| Measure | Value | Measure | Value | Measure | Value |
-| --- | --- | --- | --- | --- | --- |
-| Maximum drawdown | -21.29% (2025-09-05) | Average gain / average loss | 1.214 | Best 21-day period | 35.81% (ending 2025-05-13) |
-| Average underwater drawdown | 7.09% | Upside potential ratio | 1.423 | Worst 21-day period | -10.89% (ending 2023-06-05) |
-| Conditional drawdown 95% | 18.03% | Upside capture vs Baltic EW | 134.3% | Best 5-day period | 17.77% (ending 2025-04-28) |
-| Ulcer index | 8.36 | Downside capture vs Baltic EW | 35.4% | Best 63-day period | 44.34% (ending 2026-07-02) |
-| Longest underwater period | 326 calendar days | Positive trading days | 42.4% | Repeated calendar pattern | Dec: 100% positive across 3 years |
-| Daily downside deviation | 0.771% | Best day | 13.80% (2025-01-23) |  |  |
-| Daily upside deviation | 1.088% | Worst day | -8.13% (2026-03-02) |  |  |
-
-**Calendar-effect tests and observed averages**
-
-| Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
-| --- | --- | --- | --- | --- |
-| Weekday | Best: Thursday (0.192%); worst: Wednesday (0.077%) | 0.9547 | 0.9547 | Not detected |
-| Calendar month | Best: Dec (0.466% daily); worst: Mar (-0.170% daily) | 0.2813 | 0.4956 | Not detected |
-| Turn of month | First/last three days: 0.133%; other days: 0.138% | 0.9477 | 0.9477 | Not detected |
-
-![VLP1L seasonality, drawdowns and upside periods](figures/stock_profiles/VLP1L_seasonality.png?v=1792161047)
-
-**Five deepest drawdown episodes**
-
-| Rank | Peak | Trough | Recovery | Loss | Underwater days |
-| --- | --- | --- | --- | --- | --- |
-| 1 | 2025-05-12 | 2025-09-05 | 2026-02-19 | -21.29% | 283 |
-| 2 | 2023-01-23 | 2023-08-31 | 2023-12-15 | -16.67% | 326 |
-| 3 | 2026-02-19 | 2026-03-25 | 2026-06-05 | -11.24% | 106 |
-| 4 | 2024-02-29 | 2024-05-21 | 2024-06-05 | -9.64% | 97 |
-| 5 | 2026-07-02 | 2026-07-30 | Not recovered | -7.52% | 104 |
-
-**Five strongest non-overlapping 21-trading-day rises**
-
-| Rank | Start | End | 21-day return |
-| --- | --- | --- | --- |
-| 1 | 2025-04-07 | 2025-05-13 | 35.81% |
-| 2 | 2026-05-29 | 2026-07-02 | 35.74% |
-| 3 | 2024-05-10 | 2024-06-10 | 18.68% |
-| 4 | 2024-08-05 | 2024-09-05 | 18.21% |
-| 5 | 2024-12-16 | 2025-01-23 | 16.05% |
-
-The dated extremes identify where company announcements, dividends, corporate actions or data anomalies should be checked. A repeated calendar average is descriptive until it survives the adjusted test and a later out-of-sample period; it is not by itself a buy or sell signal.
-
-<details markdown="1" class="company-events">
-<summary>Official company-news calendar and price-direction analysis (21 events)</summary>
-
-Announcement times and links come from the official Nasdaq news service. The effective date is the first trading close strictly after publication. Abnormal return means the share return minus the equal-weight Baltic-market return over the same window.
-
-| Event type | N | Abnormal 1d | Abnormal 5d | Abnormal 21d | Positive 5d | Direction reversal | BH p(5d) | BH p(21d) | Interpretation |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Earnings | 16 | -0.46% | 0.55% | 3.53% | 38% | 44% | 0.8351 | 1.0000 | No adjusted statistical evidence |
-| Ex-dividend | 4 | -2.25% | -2.18% | 2.49% | 25% | 50% | 0.2646 | 1.0000 | No adjusted statistical evidence; price drop may be mechanical |
-| Revenue | 1 | -0.95% | 3.80% | 13.41% | 100% | 0% | 1.0000 | 1.0000 | No adjusted statistical evidence |
-
-![VLP1L official announcements and abnormal returns](figures/stock_profiles/VLP1L_company_events.png?v=1792171540)
-
-A direction reversal requires opposite fitted price slopes during the ten trading days before and after the event and at least a 1% five-day move. This identifies temporal association, not proof that the announcement caused the change.
-
-<details markdown="1">
-<summary>Complete official event calendar (21 announcements)</summary>
-
-| Published | Type | Official announcement | Headline fundamental cue | Pre 5d | Post 1d | Post 5d | Post 21d | Abnormal 5d | Reversal |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2026-08-31 18:45 | Earnings | [VILVI Group unaudited consolidated financial results for the six months of 2026](https://view.news.eu.nasdaq.com/view?id=b3af999bf1bb819fe7a925bdaf9adfacc&lang=en&src=listed) | Open official announcement | 0.32% | -2.25% | -1.29% | -0.96% | -0.66% | Yes |
-| 2026-06-05 09:51 | Revenue | [VILVI Group Expects Revenue Growth of Approximately 50% to EUR 430 Million in 2026](https://view.news.eu.nasdaq.com/view?id=b58538e57a5a9de23352ab2c6ae7b2ada&lang=en&src=listed) | REVENUE; 50%; EUR 430 Million | 11.49% | -1.15% | 3.44% | 13.36% | 3.80% | No |
-| 2026-05-29 16:04 | Earnings | [VILVI Group unaudited consolidated financial results for the first three months of 2026 ](https://view.news.eu.nasdaq.com/view?id=b73e15abb9a115ef79400c112c0e2abfc&lang=en&src=listed) | Open official announcement | -0.42% | -2.13% | 11.49% | 35.74% | 11.00% | No |
-| 2026-05-11 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.23 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.23  | 0.00% | 0.00% | 1.29% | 13.36% | 1.84% | No |
-| 2026-02-27 16:05 | Earnings | [Unaudited financial results of VILVI Group for the 12 months of 2025](https://view.news.eu.nasdaq.com/view?id=b89d35c9363227f9267573d12c35b6d63&lang=en&src=listed) | Open official announcement | -1.20% | -8.13% | -5.69% | -8.13% | -4.81% | No |
-| 2025-11-28 09:39 | Earnings | [Unaudited consolidated financial results of VILVI Group for 9 months of 2025](https://view.news.eu.nasdaq.com/view?id=bd30dd181058527539fdc4e68606f60b2&lang=en&src=listed) | Open official announcement | -2.30% | 3.30% | 4.72% | 8.49% | 4.26% | Yes |
-| 2025-08-29 09:44 | Earnings | [VILVI Group unaudited consolidated financial results for the six months of 2025](https://view.news.eu.nasdaq.com/view?id=b173e4dfa80bfab952b1139285ae4239d&lang=en&src=listed) | Open official announcement | -1.96% | -0.20% | -2.00% | 10.50% | -2.44% | Yes |
-| 2025-05-30 09:03 | Earnings | [Unaudited consolidated financial results of VILVI Group for 3 months of 2025](https://view.news.eu.nasdaq.com/view?id=b5987d77bf7d423cfa8d1cf0dbf060cae&lang=en&src=listed) | Open official announcement | -3.35% | 0.87% | -0.43% | -3.03% | -0.15% | No |
-| 2025-05-13 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.54 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.54  | 13.70% | -1.61% | -3.61% | -8.84% | -4.03% | Yes |
-| 2025-02-28 09:18 | Earnings | [Unaudited financial results of VILVI Group for the 12 months of 2024](https://view.news.eu.nasdaq.com/view?id=b80043a95d6bfbaf23c3b35d2c54d0628&lang=en&src=listed) | Open official announcement | 1.31% | -1.08% | -2.58% | -0.43% | -2.58% | No |
-| 2024-11-29 09:47 | Earnings | [Unaudited financial results of VILVI GROUP for the nine months of 2024](https://view.news.eu.nasdaq.com/view?id=b117a583cc9fb584f6332942b5f650d6e&lang=en&src=listed) | Open official announcement | 4.28% | 3.08% | 3.85% | 4.87% | 1.96% | No |
-| 2024-08-30 09:52 | Earnings | [Unaudited financial results of VILVI GROUP for the first six months of 2024](https://view.news.eu.nasdaq.com/view?id=b28c7660c9a343961920f78323a76e842&lang=en&src=listed) | Open official announcement | 7.83% | 1.96% | -0.56% | -1.68% | -0.60% | No |
-| 2024-05-31 09:15 | Earnings | [Unaudited financial results of VILVI GROUP for the first three months of 2024](https://view.news.eu.nasdaq.com/view?id=bdc9fad615b1b400b2d71d0fb24eea209&lang=en&src=listed) | Open official announcement | 7.00% | -0.36% | 8.73% | 9.45% | 8.75% | No |
-| 2024-05-10 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.31 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.31  | -1.11% | -4.10% | -4.85% | 11.57% | -3.21% | No |
-| 2024-02-29 09:55 | Earnings | [Unaudited financial results of VILVI GROUP for the 12 months of 2023](https://view.news.eu.nasdaq.com/view?id=b470f79fae07f4b1d6e98116365578bcc&lang=en&src=listed) | Open official announcement | 3.32% | -1.43% | -6.43% | -8.21% | -5.91% | Yes |
-| 2023-11-30 16:23 | Earnings | [Unaudited financial results of “Vilvi Group“ for the first nine months of 2023](https://view.news.eu.nasdaq.com/view?id=be1812e8d1b4bb947b47179a1eb511875&lang=en&src=listed) | Open official announcement | -0.42% | 0.00% | 1.69% | 11.02% | 2.78% | Yes |
-| 2023-08-31 09:57 | Earnings | [Unaudited financial results of “Vilvi Group“ for the first six months of 2023](https://view.news.eu.nasdaq.com/view?id=b5fdaf6ff1bb94e6db906304d6b212e7d&lang=en&src=listed) | Open official announcement | -2.47% | 1.61% | 3.22% | 6.67% | 3.20% | Yes |
-| 2023-06-01 08:45 | Earnings | [Correction: Unaudited financial results of “Vilvi Group“ for the first three months of 2023](https://view.news.eu.nasdaq.com/view?id=b9351d6bc063f7a26847bf61d7c67ef44&lang=en&src=listed) | Open official announcement | -1.47% | -1.28% | -2.13% | -5.53% | -1.25% | No |
-| 2023-05-31 16:30 | Earnings | [Unaudited financial results of “Vilvi Group“ for the first three months of 2023](https://view.news.eu.nasdaq.com/view?id=b28225eaaca9efd36b0669b07794d25cd&lang=en&src=listed) | Open official announcement | 0.21% | -1.47% | -3.56% | -6.71% | -2.58% | No |
-| 2023-05-12 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.265 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.265  | -1.56% | -3.95% | -4.74% | -9.49% | -3.32% | Yes |
-| 2023-02-28 09:15 | Earnings | [Unaudited financial results of “Vilvi Group“ for the 12 months of 2022](https://view.news.eu.nasdaq.com/view?id=bceb5a3a5e69731357e66b3b34c1c56e1&lang=en&src=listed) | Open official announcement | -1.57% | -0.40% | -1.99% | 0.80% | -2.21% | Yes |
-
-</details>
-
-</details>
-
-</details>
-
-<details markdown="1">
-<summary>All five model frontiers with this share highlighted</summary>
-
-![VLP1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/VLP1L_all_frontiers.png?v=1792150964)
-
-The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
-
-</details>
-
-<details markdown="1">
-<summary>All 72 PerformanceAnalytics measures: full period and last 126 observations</summary>
-
-| Measure | Full period | Last 126 | Measure | Full period | Last 126 |
-| --- | --- | --- | --- | --- | --- |
-| ActiveReturn | 0.103798 | 0.335868 | M2Sortino | 0.332887 | 0.563470 |
-| AdjustedSharpe | -0.792235 | -2.184440 | MSquaredExcess | 0.044566 | 0.125481 |
-| AnnualizedReturn_Arithmetic | 0.308070 | 0.479041 | Martin | 5.265313 | 9.792844 |
-| AnnualizedReturn_Geometric | 0.332487 | 0.573077 | MaximumDrawdown | 0.157158 | 0.112450 |
-| Appraisal | 1.553874 | 2.408683 | Modigliani | 0.001042 | 0.001302 |
-| ArithmeticReturn | 0.001223 | 0.001901 | NetSelectivity | 0.064232 | 0.226696 |
-| AverageDrawdown | 0.039828 | 0.026784 | Omega | 1.369319 | 1.540203 |
-| AverageDrawdownLength | 25.392857 | 12.444444 | OmegaExcessReturn | 0.290002 | 0.527552 |
-| AverageRecoveryTime | 14.107143 | 7.222222 | PainIndex | 0.047953 | 0.043557 |
-| BernardoLedoit | 1.369319 | 1.540203 | PainRatio | 6.933606 | 13.156916 |
-| BetaCoKurtosis | -0.007644 | 0.180060 | Prospect | -0.392858 | -0.265746 |
-| BetaCoSkewness | -0.725375 | -8.594713 | Rachev | 1.428309 | 1.339621 |
-| Burke | 1.256071 | 4.765844 | Selectivity | 0.319473 | 0.540466 |
-| CAPMAlpha | 0.001173 | 0.001778 | Sharpe_Annualized | 1.495653 | 2.116998 |
-| CAPMBeta | 0.056906 | 0.137476 | Sharpe_Daily | 0.094217 | 0.133358 |
-| CDD | 0.095077 | 0.056340 | Sharpe_ES | 0.050656 | 0.065740 |
-| Calmar | 2.115625 | 5.096293 | Sharpe_VaR | 0.084766 | 0.143087 |
-| CoKurtosis | -0.000000 | 0.000000 | Skewness | 1.859172 | -0.912603 |
-| CoSkewness | -0.000000 | -0.000000 | Sortino | 0.164747 | 0.202250 |
-| CumulativeReturn | 1.360478 | 0.254224 | SpecificRisk | 0.205598 | 0.224383 |
-| DRatio | 0.658191 | 0.533325 | Sterling | 1.292930 | 2.697470 |
-| DownCapture | -0.130313 | -0.061796 | SystematicRisk | 0.009993 | 0.021304 |
-| DownNumber | 0.361635 | 0.396226 | TotalRisk | 0.205841 | 0.225392 |
-| DownPercent | 0.798742 | 0.811321 | TrackingError_Annualized | 0.264105 | 0.261945 |
-| DownsideDeviation | 0.007420 | 0.009399 | TrackingError_Daily | 0.016637 | 0.016501 |
-| DrawdownDeviation | 0.010767 | 0.011334 | Treynor_Annualized | 5.842701 | 4.168566 |
-| ES_Loss | 0.024133 | 0.028916 | Treynor_Daily | 0.020028 | 0.013089 |
-| FamaBeta | 1.173012 | 1.460236 | UlcerIndex | 0.063147 | 0.058520 |
-| GeometricReturn | 0.001140 | 0.001799 | UpCapture | 0.183974 | 0.395549 |
-| Hurst | 0.426761 | 0.450503 | UpNumber | 0.426606 | 0.493151 |
-| Information_Annualized | 0.393018 | 1.282207 | UpPercent | 0.275229 | 0.356164 |
-| Information_Daily | 0.019363 | 0.057835 | UpsidePotential | 0.610832 | 0.576647 |
-| JensenAlpha | 0.319473 | 0.540466 | UpsideRisk | 0.010704 | 0.010810 |
-| Kappa | 0.100544 | 0.111932 | VaR_Loss | 0.014422 | 0.013285 |
-| Kelly | 7.261257 | 9.355517 | Volatility | 0.012975 | 0.014255 |
-| Kurtosis | 24.383907 | 12.156535 | Volatility_Annualized | 0.205977 | 0.226283 |
-
-</details>
-
-<details markdown="1" class="portfolio-sensitivity">
-<summary>Portfolio sensitivity</summary>
-
-**Removing this share from curent_update_baltic**
-
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.703390</td><td>-0.110169</td></tr><tr><td>OUT</td><td>96</td><td>83</td><td>-13</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.141760</td><td>-0.006013</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.132985</td><td>-0.028508</td></tr></tbody></table>
-
-The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
-
-**Increasing this existing position in the current portfolio**
-
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>VLP1L shares</td><td>42</td><td>65</td><td>+23</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>8313.351983</td><td>356.500000</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.550847</td><td>0.127119</td></tr><tr><td>OUT</td><td>62</td><td>69</td><td>+7</td></tr><tr><td>IN</td><td>12</td><td>4</td><td>-8</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.081760</td><td>0.011637</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.106162</td><td>0.013810</td></tr></tbody></table>
-
-The starting point is the unmodified current portfolio, which already contains 42 VLP1L shares. The scenario adds 23 shares from Table 3A, resulting in 65 shares; every other holding remains unchanged.
-
-<details markdown="1" class="dominance-components">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Choose S&P 500, Current or any model portfolio as the benchmark for the difference panels.
-
-<div class="dominance-explorer" data-asset="VLP1L"><p>Open this section to load the interactive curve explorer.</p></div>
-
-<details markdown="1" class="static-dominance">
-<summary>High-resolution static FSD, SSD and TSD figure</summary>
-
-![VLP1L high-resolution stochastic dominance](figures/stock_profiles/VLP1L_FSD_SSD_TSD.png?v=1792171317)
+![KNE1L high-resolution stochastic dominance](figures/stock_profiles/KNE1L_FSD_SSD_TSD.png?v=1792486453)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -837,9 +424,9 @@ The static figure is collapsed because the interactive plots above provide the d
 </details>
 
 <details markdown="1" class="stock-profile" id="share-mrk1t">
-<summary><strong>MRK1T — Merko Ehitus</strong> | HOLD | target 33 shares | priority 4</summary>
+<summary><strong>MRK1T — Merko Ehitus</strong> | HOLD | target 44 shares | priority 2</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>20</td><td>33</td><td>+13</td><td>5.97%</td><td>EUR 27.0500</td><td>0.3559</td><td>42 / 0</td><td>47.87</td><td>Bearish</td><td>Inside bands</td><td>0.328 (Neutral)</td><td>HOLD</td><td>0.003562 (4.155% of portfolio HHI)</td><td>EUR 57,645</td><td>0.6%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>20</td><td>44</td><td>+24</td><td>7.97%</td><td>EUR 27.1000</td><td>0.3729</td><td>44 / 0</td><td>50.97</td><td>Bearish</td><td>Inside bands</td><td>0.705 (Neutral)</td><td>HOLD</td><td>0.006358 (8.200% of portfolio HHI)</td><td>EUR 58,112</td><td>1.1%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
 ![MRK1T Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/MRK1T_technicals_6m.png)
 
@@ -855,40 +442,40 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![MRK1T return histogram](figures/stock_profiles/MRK1T_histogram.png?v=1792150404)
+![MRK1T return histogram](figures/stock_profiles/MRK1T_histogram.png?v=1792485734)
 
 </details>
 
 <details markdown="1" class="seasonality-section">
 <summary>Seasonality, drawdowns and upside periods</summary>
 
-The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
+The analysis covers 919 daily returns from 2023-01-02 to 2026-10-16. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
 
 | Measure | Value | Measure | Value | Measure | Value |
 | --- | --- | --- | --- | --- | --- |
-| Maximum drawdown | -19.70% (2025-09-29) | Average gain / average loss | 1.131 | Best 21-day period | 22.22% (ending 2025-05-19) |
-| Average underwater drawdown | 7.70% | Upside potential ratio | 1.107 | Worst 21-day period | -13.41% (ending 2026-03-09) |
-| Conditional drawdown 95% | 18.55% | Upside capture vs Baltic EW | 113.4% | Best 5-day period | 12.64% (ending 2025-02-07) |
-| Ulcer index | 9.11 | Downside capture vs Baltic EW | 60.6% | Best 63-day period | 46.65% (ending 2025-02-07) |
-| Longest underwater period | 491 calendar days | Positive trading days | 44.1% | Repeated calendar pattern | Dec: 100% positive across 3 years |
-| Daily downside deviation | 0.710% | Best day | 8.89% (2024-11-07) |  |  |
-| Daily upside deviation | 0.834% | Worst day | -7.32% (2024-06-07) |  |  |
+| Maximum drawdown | -19.70% (2025-09-29) | Average gain / average loss | 1.129 | Best 21-day period | 22.22% (ending 2025-05-19) |
+| Average underwater drawdown | 7.73% | Upside potential ratio | 1.106 | Worst 21-day period | -13.41% (ending 2026-03-09) |
+| Conditional drawdown 95% | 18.55% | Upside capture vs Baltic EW | 113.3% | Best 5-day period | 12.64% (ending 2025-02-07) |
+| Ulcer index | 9.14 | Downside capture vs Baltic EW | 60.5% | Best 63-day period | 46.65% (ending 2025-02-07) |
+| Longest underwater period | 493 calendar days | Positive trading days | 44.1% | Repeated calendar pattern | Dec: 100% positive across 3 years |
+| Daily downside deviation | 0.709% | Best day | 8.89% (2024-11-07) |  |  |
+| Daily upside deviation | 0.833% | Worst day | -7.32% (2024-06-07) |  |  |
 
 **Calendar-effect tests and observed averages**
 
 | Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
 | --- | --- | --- | --- | --- |
-| Weekday | Best: Friday (0.125%); worst: Monday (-0.034%) | 0.3631 | 0.4913 | Not detected |
-| Calendar month | Best: Dec (0.406% daily); worst: Jun (-0.210% daily) | 0.0740 | 0.2492 | Not detected |
-| Turn of month | First/last three days: 0.045%; other days: 0.083% | 0.6238 | 0.9250 | Not detected |
+| Weekday | Best: Friday (0.124%); worst: Monday (-0.034%) | 0.3718 | 0.5030 | Not detected |
+| Calendar month | Best: Dec (0.406% daily); worst: Jun (-0.210% daily) | 0.0724 | 0.2493 | Not detected |
+| Turn of month | First/last three days: 0.045%; other days: 0.083% | 0.6292 | 0.9400 | Not detected |
 
-![MRK1T seasonality, drawdowns and upside periods](figures/stock_profiles/MRK1T_seasonality.png?v=1792161051)
+![MRK1T seasonality, drawdowns and upside periods](figures/stock_profiles/MRK1T_seasonality.png?v=1792486381)
 
 **Five deepest drawdown episodes**
 
 | Rank | Peak | Trough | Recovery | Loss | Underwater days |
 | --- | --- | --- | --- | --- | --- |
-| 1 | 2025-06-10 | 2025-09-29 | Not recovered | -19.70% | 491 |
+| 1 | 2025-06-10 | 2025-09-29 | Not recovered | -19.70% | 493 |
 | 2 | 2023-04-14 | 2023-06-08 | 2024-02-07 | -11.43% | 299 |
 | 3 | 2024-06-03 | 2024-08-05 | 2024-11-07 | -9.57% | 157 |
 | 4 | 2025-05-19 | 2025-05-30 | 2025-06-09 | -6.36% | 21 |
@@ -913,11 +500,11 @@ Announcement times and links come from the official Nasdaq news service. The eff
 
 | Event type | N | Abnormal 1d | Abnormal 5d | Abnormal 21d | Positive 5d | Direction reversal | BH p(5d) | BH p(21d) | Interpretation |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Dividend payment | 4 | 0.91% | 2.71% | 1.27% | 100% | 25% | 0.2693 | 1.0000 | No adjusted statistical evidence |
-| Earnings | 24 | 0.03% | 0.61% | 0.53% | 58% | 38% | 0.9852 | 0.6692 | No adjusted statistical evidence |
+| Dividend payment | 4 | 0.91% | 2.71% | 1.27% | 100% | 25% | 0.2695 | 1.0000 | No adjusted statistical evidence |
+| Earnings | 24 | 0.03% | 0.61% | 0.53% | 58% | 38% | 0.9869 | 0.6695 | No adjusted statistical evidence |
 | Ex-dividend | 8 | -2.80% | -4.96% | -5.75% | 25% | 50% | 0.0029 | 0.0000 | Different from ordinary periods; price drop may be mechanical |
 
-![MRK1T official announcements and abnormal returns](figures/stock_profiles/MRK1T_company_events.png?v=1792171542)
+![MRK1T official announcements and abnormal returns](figures/stock_profiles/MRK1T_company_events.png?v=1792486513)
 
 A direction reversal requires opposite fitted price slopes during the ten trading days before and after the event and at least a 1% five-day move. This identifies temporal association, not proof that the announcement caused the change.
 
@@ -972,7 +559,7 @@ A direction reversal requires opposite fitted price slopes during the ten tradin
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![MRK1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/MRK1T_all_frontiers.png?v=1792150965)
+![MRK1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/MRK1T_all_frontiers.png?v=1792486188)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -1033,9 +620,9 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 **Increasing this existing position in the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>MRK1T shares</td><td>20</td><td>33</td><td>+13</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>8308.501973</td><td>351.649990</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.559322</td><td>0.135593</td></tr><tr><td>OUT</td><td>62</td><td>70</td><td>+8</td></tr><tr><td>IN</td><td>12</td><td>4</td><td>-8</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.083709</td><td>0.013586</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.099495</td><td>0.007143</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>MRK1T shares</td><td>20</td><td>44</td><td>+24</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>8562.699976</td><td>650.400009</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.593220</td><td>0.135593</td></tr><tr><td>OUT</td><td>62</td><td>72</td><td>+10</td></tr><tr><td>IN</td><td>8</td><td>2</td><td>-6</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.092428</td><td>0.022255</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.103788</td><td>0.012632</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 20 MRK1T shares. The scenario adds 13 shares from Table 3A, resulting in 33 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 20 MRK1T shares. The scenario adds 24 shares from Table 3A, resulting in 44 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -1047,7 +634,427 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![MRK1T high-resolution stochastic dominance](figures/stock_profiles/MRK1T_FSD_SSD_TSD.png?v=1792171290)
+![MRK1T high-resolution stochastic dominance](figures/stock_profiles/MRK1T_FSD_SSD_TSD.png?v=1792486459)
+
+The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
+
+</details>
+
+</details>
+
+</details>
+
+</details>
+
+<details markdown="1" class="stock-profile" id="share-virsi">
+<summary><strong>VIRSI — VIRŠI-A</strong> | HOLD | target 125 shares | priority 3</summary>
+
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>125</td><td>+125</td><td>3.69%</td><td>EUR 4.4200</td><td>0.3729</td><td>44 / 0</td><td>56.60</td><td>Bearish</td><td>Inside bands</td><td>0.362 (Neutral)</td><td>HOLD</td><td>0.001363 (1.757% of portfolio HHI)</td><td>EUR 2,721</td><td>20.3%</td><td>2.4%</td><td>HIGH</td></tr></tbody></table>
+
+![VIRSI Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/VIRSI_technicals_6m.png)
+
+Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
+
+<details markdown="1">
+<summary>Complete technical history</summary>
+
+![VIRSI complete technical history](figures/technical_analysis/VIRSI_technical.png)
+
+</details>
+
+<details markdown="1">
+<summary>Return histogram</summary>
+
+![VIRSI return histogram](figures/stock_profiles/VIRSI_histogram.png?v=1792485735)
+
+</details>
+
+<details markdown="1" class="seasonality-section">
+<summary>Seasonality, drawdowns and upside periods</summary>
+
+The analysis covers 919 daily returns from 2023-01-02 to 2026-10-16. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
+
+| Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- |
+| Maximum drawdown | -16.89% (2025-11-06) | Average gain / average loss | 1.006 | Best 21-day period | 10.50% (ending 2026-08-14) |
+| Average underwater drawdown | 7.25% | Upside potential ratio | 1.386 | Worst 21-day period | -4.29% (ending 2024-07-03) |
+| Conditional drawdown 95% | 15.97% | Upside capture vs Baltic EW | 19.4% | Best 5-day period | 7.41% (ending 2026-08-13) |
+| Ulcer index | 8.48 | Downside capture vs Baltic EW | 19.2% | Best 63-day period | 10.75% (ending 2026-10-12) |
+| Longest underwater period | 1234 calendar days | Positive trading days | 33.1% | Repeated calendar pattern | Jun: 0% positive across 4 years |
+| Daily downside deviation | 0.323% | Best day | 3.88% (2026-01-05) |  |  |
+| Daily upside deviation | 0.342% | Worst day | -2.56% (2025-08-19) |  |  |
+
+**Calendar-effect tests and observed averages**
+
+| Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
+| --- | --- | --- | --- | --- |
+| Weekday | Best: Friday (0.071%); worst: Monday (-0.068%) | 0.0662 | 0.1902 | Not detected |
+| Calendar month | Best: Dec (0.090% daily); worst: Jun (-0.094% daily) | 0.3448 | 0.5029 | Not detected |
+| Turn of month | First/last three days: -0.034%; other days: 0.010% | 0.7474 | 0.9400 | Not detected |
+
+![VIRSI seasonality, drawdowns and upside periods](figures/stock_profiles/VIRSI_seasonality.png?v=1792486394)
+
+**Five deepest drawdown episodes**
+
+| Rank | Peak | Trough | Recovery | Loss | Underwater days |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 2023-05-31 | 2025-11-06 | Not recovered | -16.89% | 1234 |
+| 2 | 2023-03-07 | 2023-03-24 | 2023-04-11 | -1.67% | 35 |
+| 3 | 2023-01-03 | 2023-02-02 | 2023-02-28 | -1.24% | 56 |
+| 4 | 2023-04-14 | 2023-05-10 | 2023-05-16 | -0.67% | 32 |
+| 5 | 2023-05-17 | 2023-05-22 | 2023-05-30 | -0.44% | 13 |
+
+**Five strongest non-overlapping 21-trading-day rises**
+
+| Rank | Start | End | 21-day return |
+| --- | --- | --- | --- |
+| 1 | 2026-07-16 | 2026-08-14 | 10.50% |
+| 2 | 2025-12-04 | 2026-01-12 | 7.98% |
+| 3 | 2024-09-19 | 2024-10-18 | 3.92% |
+| 4 | 2023-11-03 | 2023-12-05 | 3.07% |
+| 5 | 2025-08-19 | 2025-09-18 | 2.89% |
+
+The dated extremes identify where company announcements, dividends, corporate actions or data anomalies should be checked. A repeated calendar average is descriptive until it survives the adjusted test and a later out-of-sample period; it is not by itself a buy or sell signal.
+
+<details markdown="1" class="company-events">
+<summary>Official company-news calendar and price-direction analysis (23 events)</summary>
+
+Announcement times and links come from the official Nasdaq news service. The effective date is the first trading close strictly after publication. Abnormal return means the share return minus the equal-weight Baltic-market return over the same window.
+
+| Event type | N | Abnormal 1d | Abnormal 5d | Abnormal 21d | Positive 5d | Direction reversal | BH p(5d) | BH p(21d) | Interpretation |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Dividend announcement | 1 | 0.67% | 1.56% | 1.80% | 100% | 0% | 1.0000 | 1.0000 | No adjusted statistical evidence |
+| Dividend payment | 4 | -0.21% | -0.78% | -1.00% | 0% | 0% | 0.3608 | 0.7504 | No adjusted statistical evidence |
+| Earnings | 9 | 0.14% | 0.70% | 1.49% | 78% | 0% | 0.8443 | 0.1766 | No adjusted statistical evidence |
+| Ex-dividend | 5 | -0.20% | -0.08% | -1.15% | 80% | 20% | 1.0000 | 0.5679 | No adjusted statistical evidence; price drop may be mechanical |
+| Revenue | 4 | 0.24% | -0.14% | 0.87% | 50% | 0% | 1.0000 | 0.7324 | No adjusted statistical evidence |
+
+![VIRSI official announcements and abnormal returns](figures/stock_profiles/VIRSI_company_events.png?v=1792486522)
+
+A direction reversal requires opposite fitted price slopes during the ten trading days before and after the event and at least a 1% five-day move. This identifies temporal association, not proof that the announcement caused the change.
+
+<details markdown="1">
+<summary>Complete official event calendar (23 announcements)</summary>
+
+| Published | Type | Official announcement | Headline fundamental cue | Pre 5d | Post 1d | Post 5d | Post 21d | Abnormal 5d | Reversal |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-08-07 08:00 | Earnings | [AS VIRŠI-A reports net profit of EUR 4.2 million in the first half of the year](https://view.news.eu.nasdaq.com/view?id=b048574882a6dccd458b5a2309f4c8dad&lang=en&src=listed) | NET PROFIT; PROFIT; EUR 4.2 million | 2.46% | 2.16% | 6.25% | 6.73% | 6.13% | No |
+| 2026-06-12 08:00 | Dividend payment | [Official dividend calendar: Dividend payment date, EUR 0.0592514 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.0592514  | -0.49% | 0.74% | -0.74% | -1.23% | -0.00% | No |
+| 2026-06-03 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.0592514 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.0592514  | -0.25% | 0.25% | 0.25% | -0.74% | 0.17% | No |
+| 2026-04-20 20:10 | Earnings | [AS VIRŠI-A publishes its Annual Report for 2025 together with the independent auditor's report](https://view.news.eu.nasdaq.com/view?id=ba558c89bfdc2f69a4deff05711de1e6f&lang=en&src=listed) | Open official announcement | -0.25% | 0.25% | 0.75% | 1.24% | 0.61% | No |
+| 2026-02-27 08:00 | Revenue | [AS VIRŠI-A achieves its highest ever turnover in 2025](https://view.news.eu.nasdaq.com/view?id=b513838be4f792a12846ffacad5122890&lang=en&src=listed) | TURNOVER | 0.75% | -0.25% | -0.25% | -1.23% | 0.64% | No |
+| 2025-08-08 08:18 | Revenue | [AS VIRŠI-A closes the first half of the year with EUR 188.6 million turnover and EUR 7.4 million in investments](https://view.news.eu.nasdaq.com/view?id=b72604ee36bcda46757ed90c363359b0e&lang=en&src=listed) | TURNOVER; EUR 188.6 million; EUR 7.4 million | -0.25% | 0.00% | -0.51% | 0.25% | -1.44% | No |
+| 2025-06-12 08:00 | Dividend payment | [Official dividend calendar: Dividend payment date, EUR 0.0493432 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.0493432  | -0.25% | 0.00% | -2.25% | -1.50% | -1.10% | No |
+| 2025-06-03 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.0493432 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.0493432  | 0.50% | -0.74% | -0.50% | -1.74% | 0.11% | No |
+| 2025-04-23 17:19 | Earnings | [AS VIRŠI-A publishes the Annual Report for 2024 together with the independent auditor's report](https://view.news.eu.nasdaq.com/view?id=bf523dd7861c8fab9ddd242808a244245&lang=en&src=listed) | Open official announcement | 0.00% | -0.25% | -0.25% | -0.50% | -0.98% | No |
+| 2024-06-12 08:00 | Dividend payment | [Official dividend calendar: Dividend payment date, EUR 0.0539219 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.0539219  | -0.71% | -0.72% | -0.96% | -1.67% | -1.06% | No |
+| 2024-06-03 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.0539219 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.0539219  | 0.71% | -0.71% | -1.42% | -2.84% | -1.40% | Yes |
+| 2024-04-18 09:09 | Earnings | [CORRECTION: AS VIRŠI-A publishes the Annual Report for 2023 together with the independent auditor's report](https://view.news.eu.nasdaq.com/view?id=b466ac709f2159039d184385e4ad52fac&lang=en&src=listed) | Open official announcement | 0.00% | 0.24% | 0.24% | 0.72% | -0.18% | No |
+| 2024-04-17 21:45 | Earnings | [AS VIRŠI-A publishes the Annual Report for 2023 together with the independent auditor's report](https://view.news.eu.nasdaq.com/view?id=ba88cb61a4d31e37e2fa17d2a29a1ec94&lang=en&src=listed) | Open official announcement | 0.48% | -0.24% | 0.00% | 0.48% | 0.24% | No |
+| 2024-02-29 08:48 | Earnings | [Virši closes 2023 with significant investments and strong financial results](https://view.news.eu.nasdaq.com/view?id=b43bb7d049c07dece64ce4d57e39951f2&lang=en&src=listed) | Open official announcement | -0.46% | -0.23% | -0.47% | -3.49% | 0.06% | No |
+| 2023-10-20 17:00 | Earnings | [Summary of AS VIRŠI-A operational activity and other developments for the 3rd quarter of 2023](https://view.news.eu.nasdaq.com/view?id=bc39fc4eced0375f0064fdb722e4b3586&lang=en&src=listed) | Open official announcement | -0.23% | -0.23% | -0.46% | -0.91% | 0.12% | No |
+| 2023-08-09 08:56 | Revenue | [AS VIRŠI-A continues its strong development, closing the first half of the year with a turnover of EUR 162.4 million](https://view.news.eu.nasdaq.com/view?id=b126a477a933003098d0361448ad4d8cb&lang=en&src=listed) | TURNOVER; EUR 162.4 million | -0.23% | -0.68% | 0.23% | 0.00% | 0.36% | No |
+| 2023-06-14 08:00 | Dividend payment | [Official dividend calendar: Dividend payment date, EUR 0.109776 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.109776  | -0.45% | -0.45% | -0.90% | 0.45% | -0.94% | No |
+| 2023-06-01 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.109776 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.109776  | 0.45% | -0.67% | -0.89% | -1.33% | 0.10% | No |
+| 2023-05-30 07:52 | Ex-dividend | [Dividend payment ex-date of AS VIRŠI-A](https://view.news.eu.nasdaq.com/view?id=b95307478ed703eb6a6594e6483ae7324&lang=en&src=listed) | Open official announcement | 0.22% | 0.00% | -0.89% | -2.00% | 0.62% | No |
+| 2023-04-13 17:51 | Earnings | [CORRECTION: AS VIRŠI-A publishes the Annual Report for 2022 together with the independent auditor's report ](https://view.news.eu.nasdaq.com/view?id=b71e71be9aca08c9238dfe0ef5b58250b&lang=en&src=listed) | Open official announcement | 1.58% | 0.00% | -0.22% | 0.00% | 0.18% | No |
+| 2023-04-11 09:46 | Earnings | [AS VIRŠI-A publishes the Annual Report for 2022 together with the independent auditor's report](https://view.news.eu.nasdaq.com/view?id=b31df8561e981d64f5ba8353f4ce922e5&lang=en&src=listed) | Open official announcement | 1.13% | 0.00% | 0.00% | 0.00% | 0.11% | No |
+| 2023-04-04 08:53 | Dividend announcement | [Publishing of the audited annual report for 2022 and dividend distribution proposal of AS VIRŠI-A](https://view.news.eu.nasdaq.com/view?id=b22543b41d7f8c92cda2c9ffaacd0e72e&lang=en&src=listed) | Open official announcement | -0.23% | 0.23% | 1.58% | 0.90% | 1.56% | No |
+| 2023-02-28 08:47 | Revenue | [AS VIRŠI-A grows its turnover by 70% in 2022](https://view.news.eu.nasdaq.com/view?id=bce503546959b4b4c47fd23734df006a1&lang=en&src=listed) | TURNOVER; 70% | 2.05% | 0.00% | 0.11% | -1.23% | -0.11% | No |
+
+</details>
+
+</details>
+
+</details>
+
+<details markdown="1">
+<summary>All five model frontiers with this share highlighted</summary>
+
+![VIRSI Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/VIRSI_all_frontiers.png?v=1792486192)
+
+The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
+
+</details>
+
+<details markdown="1">
+<summary>All 72 PerformanceAnalytics measures: full period and last 126 observations</summary>
+
+| Measure | Full period | Last 126 | Measure | Full period | Last 126 |
+| --- | --- | --- | --- | --- | --- |
+| ActiveReturn | -0.248997 | -0.200331 | M2Sortino | -0.021757 | 0.039084 |
+| AdjustedSharpe | -0.228646 | 0.487406 | MSquaredExcess | -0.225190 | -0.132659 |
+| AnnualizedReturn_Arithmetic | -0.017763 | 0.039249 | Martin | -0.204125 | 2.586994 |
+| AnnualizedReturn_Geometric | -0.020308 | 0.036878 | MaximumDrawdown | 0.173775 | 0.031599 |
+| Appraisal | -0.280065 | 0.476953 | Modigliani | -0.000167 | 0.000309 |
+| ArithmeticReturn | -0.000070 | 0.000156 | NetSelectivity | -0.117062 | -0.082821 |
+| AverageDrawdown | 0.031050 | 0.010552 | Omega | 0.952821 | 1.098862 |
+| AverageDrawdownLength | 107.000000 | 15.125000 | OmegaExcessReturn | -0.039201 | 0.020479 |
+| AverageRecoveryTime | 35.285714 | 11.000000 | PainIndex | 0.084862 | 0.010946 |
+| BernardoLedoit | 0.952821 | 1.098862 | PainRatio | -0.239300 | 3.369202 |
+| BetaCoKurtosis | 0.010497 | 0.034514 | Prospect | -0.587322 | -0.535624 |
+| BetaCoSkewness | -1.924716 | -11.264759 | Rachev | 0.954479 | 0.977323 |
+| Burke | -0.195219 | 0.901220 | Selectivity | -0.020793 | 0.037148 |
+| CAPMAlpha | -0.000072 | 0.000157 | Sharpe_Annualized | -0.239101 | 0.501923 |
+| CAPMBeta | 0.002121 | -0.001136 | Sharpe_Daily | -0.015062 | 0.031618 |
+| CDD | 0.079544 | 0.020799 | Sharpe_ES | -0.006455 | 0.014881 |
+| Calmar | -0.116861 | 1.167082 | Sharpe_VaR | -0.009790 | 0.021000 |
+| CoKurtosis | 0.000000 | 0.000000 | Skewness | 0.479749 | 0.124337 |
+| CoSkewness | -0.000000 | -0.000000 | Sortino | -0.021361 | 0.046000 |
+| CumulativeReturn | -0.059541 | 0.018272 | SpecificRisk | 0.074242 | 0.077886 |
+| DRatio | 1.070846 | 0.755133 | Sterling | -0.074176 | 0.280234 |
+| DownCapture | -0.011262 | -0.039889 | SystematicRisk | 0.000372 | -0.000176 |
+| DownNumber | 0.308176 | 0.301887 | TotalRisk | 0.074243 | 0.077886 |
+| DownPercent | 0.886792 | 0.924528 | TrackingError_Annualized | 0.190323 | 0.173733 |
+| DownsideDeviation | 0.003300 | 0.003386 | TrackingError_Daily | 0.011989 | 0.010944 |
+| DrawdownDeviation | 0.006378 | 0.003585 | Treynor_Annualized | -9.575251 | -32.456639 |
+| ES_Loss | 0.010920 | 0.010467 | Treynor_Daily | -0.038387 | -0.126487 |
+| FamaBeta | 0.423082 | 0.504616 | UlcerIndex | 0.099486 | 0.014255 |
+| GeometricReturn | -0.000081 | 0.000144 | UpCapture | -0.025506 | 0.004847 |
+| Hurst | 0.395572 | 0.439377 | UpNumber | 0.316514 | 0.356164 |
+| Information_Annualized | -1.308288 | -1.153097 | UpPercent | 0.119266 | 0.136986 |
+| Information_Daily | -0.074984 | -0.064081 | UpsidePotential | 0.431408 | 0.511300 |
+| JensenAlpha | -0.020793 | 0.037148 | UpsideRisk | 0.003315 | 0.003554 |
+| Kappa | -0.014051 | 0.031662 | VaR_Loss | 0.007200 | 0.007417 |
+| Kelly | -3.218401 | 6.418696 | Volatility | 0.004680 | 0.004926 |
+| Kurtosis | 13.330999 | 6.746270 | Volatility_Annualized | 0.074292 | 0.078197 |
+
+</details>
+
+<details markdown="1" class="portfolio-sensitivity">
+<summary>Portfolio sensitivity</summary>
+
+**Removing this share from curent_update_baltic**
+
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.813559</td><td>0.000000</td></tr><tr><td>OUT</td><td>96</td><td>96</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.147864</td><td>0.000091</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.161557</td><td>0.000065</td></tr></tbody></table>
+
+The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
+
+**Adding this new share to the current portfolio**
+
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>VIRSI shares</td><td>0</td><td>125</td><td>+125</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>8464.799967</td><td>552.500000</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.466102</td><td>0.008475</td></tr><tr><td>OUT</td><td>62</td><td>63</td><td>+1</td></tr><tr><td>IN</td><td>8</td><td>8</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.067717</td><td>-0.002456</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.090791</td><td>-0.000364</td></tr></tbody></table>
+
+The starting point is the unmodified current portfolio, which already contains 0 VIRSI shares. The scenario adds 125 shares from Table 3A, resulting in 125 shares; every other holding remains unchanged.
+
+<details markdown="1" class="dominance-components">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Choose S&P 500, Current or any model portfolio as the benchmark for the difference panels.
+
+<div class="dominance-explorer" data-asset="VIRSI"><p>Open this section to load the interactive curve explorer.</p></div>
+
+<details markdown="1" class="static-dominance">
+<summary>High-resolution static FSD, SSD and TSD figure</summary>
+
+![VIRSI high-resolution stochastic dominance](figures/stock_profiles/VIRSI_FSD_SSD_TSD.png?v=1792486479)
+
+The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
+
+</details>
+
+</details>
+
+</details>
+
+</details>
+
+<details markdown="1" class="stock-profile" id="share-vlp1l">
+<summary><strong>VLP1L — Vilkyškių pieninė</strong> | HOLD | target 72 shares | priority 4</summary>
+
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>42</td><td>72</td><td>+30</td><td>7.52%</td><td>EUR 15.6000</td><td>0.3644</td><td>43 / 0</td><td>65.87</td><td>Bullish</td><td>Above upper band</td><td>1.000 (Overbought)</td><td>HOLD</td><td>0.005662 (7.302% of portfolio HHI)</td><td>EUR 21,740</td><td>2.2%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+
+![VLP1L Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/VLP1L_technicals_6m.png)
+
+Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
+
+<details markdown="1">
+<summary>Complete technical history</summary>
+
+![VLP1L complete technical history](figures/technical_analysis/VLP1L_technical.png)
+
+</details>
+
+<details markdown="1">
+<summary>Return histogram</summary>
+
+![VLP1L return histogram](figures/stock_profiles/VLP1L_histogram.png?v=1792485730)
+
+</details>
+
+<details markdown="1" class="seasonality-section">
+<summary>Seasonality, drawdowns and upside periods</summary>
+
+The analysis covers 919 daily returns from 2023-01-02 to 2026-10-16. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
+
+| Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- |
+| Maximum drawdown | -21.29% (2025-09-05) | Average gain / average loss | 1.216 | Best 21-day period | 35.81% (ending 2025-05-13) |
+| Average underwater drawdown | 7.08% | Upside potential ratio | 1.424 | Worst 21-day period | -10.89% (ending 2023-06-05) |
+| Conditional drawdown 95% | 18.03% | Upside capture vs Baltic EW | 133.7% | Best 5-day period | 17.77% (ending 2025-04-28) |
+| Ulcer index | 8.35 | Downside capture vs Baltic EW | 34.6% | Best 63-day period | 44.34% (ending 2026-07-02) |
+| Longest underwater period | 326 calendar days | Positive trading days | 42.4% | Repeated calendar pattern | Dec: 100% positive across 3 years |
+| Daily downside deviation | 0.770% | Best day | 13.80% (2025-01-23) |  |  |
+| Daily upside deviation | 1.087% | Worst day | -8.13% (2026-03-02) |  |  |
+
+**Calendar-effect tests and observed averages**
+
+| Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
+| --- | --- | --- | --- | --- |
+| Weekday | Best: Thursday (0.189%); worst: Wednesday (0.077%) | 0.9479 | 0.9479 | Not detected |
+| Calendar month | Best: Dec (0.466% daily); worst: Mar (-0.170% daily) | 0.2818 | 0.4816 | Not detected |
+| Turn of month | First/last three days: 0.133%; other days: 0.139% | 0.9400 | 0.9400 | Not detected |
+
+![VLP1L seasonality, drawdowns and upside periods](figures/stock_profiles/VLP1L_seasonality.png?v=1792486384)
+
+**Five deepest drawdown episodes**
+
+| Rank | Peak | Trough | Recovery | Loss | Underwater days |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 2025-05-12 | 2025-09-05 | 2026-02-19 | -21.29% | 283 |
+| 2 | 2023-01-23 | 2023-08-31 | 2023-12-15 | -16.67% | 326 |
+| 3 | 2026-02-19 | 2026-03-25 | 2026-06-05 | -11.24% | 106 |
+| 4 | 2024-02-29 | 2024-05-21 | 2024-06-05 | -9.64% | 97 |
+| 5 | 2026-07-02 | 2026-07-30 | Not recovered | -7.52% | 106 |
+
+**Five strongest non-overlapping 21-trading-day rises**
+
+| Rank | Start | End | 21-day return |
+| --- | --- | --- | --- |
+| 1 | 2025-04-07 | 2025-05-13 | 35.81% |
+| 2 | 2026-05-29 | 2026-07-02 | 35.74% |
+| 3 | 2024-05-10 | 2024-06-10 | 18.68% |
+| 4 | 2024-08-05 | 2024-09-05 | 18.21% |
+| 5 | 2024-12-16 | 2025-01-23 | 16.05% |
+
+The dated extremes identify where company announcements, dividends, corporate actions or data anomalies should be checked. A repeated calendar average is descriptive until it survives the adjusted test and a later out-of-sample period; it is not by itself a buy or sell signal.
+
+<details markdown="1" class="company-events">
+<summary>Official company-news calendar and price-direction analysis (21 events)</summary>
+
+Announcement times and links come from the official Nasdaq news service. The effective date is the first trading close strictly after publication. Abnormal return means the share return minus the equal-weight Baltic-market return over the same window.
+
+| Event type | N | Abnormal 1d | Abnormal 5d | Abnormal 21d | Positive 5d | Direction reversal | BH p(5d) | BH p(21d) | Interpretation |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Earnings | 16 | -0.46% | 0.55% | 3.53% | 38% | 44% | 0.8405 | 1.0000 | No adjusted statistical evidence |
+| Ex-dividend | 4 | -2.25% | -2.18% | 2.49% | 25% | 50% | 0.2636 | 1.0000 | No adjusted statistical evidence; price drop may be mechanical |
+| Revenue | 1 | -0.95% | 3.80% | 13.41% | 100% | 0% | 1.0000 | 1.0000 | No adjusted statistical evidence |
+
+![VLP1L official announcements and abnormal returns](figures/stock_profiles/VLP1L_company_events.png?v=1792486516)
+
+A direction reversal requires opposite fitted price slopes during the ten trading days before and after the event and at least a 1% five-day move. This identifies temporal association, not proof that the announcement caused the change.
+
+<details markdown="1">
+<summary>Complete official event calendar (21 announcements)</summary>
+
+| Published | Type | Official announcement | Headline fundamental cue | Pre 5d | Post 1d | Post 5d | Post 21d | Abnormal 5d | Reversal |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-08-31 18:45 | Earnings | [VILVI Group unaudited consolidated financial results for the six months of 2026](https://view.news.eu.nasdaq.com/view?id=b3af999bf1bb819fe7a925bdaf9adfacc&lang=en&src=listed) | Open official announcement | 0.32% | -2.25% | -1.29% | -0.96% | -0.66% | Yes |
+| 2026-06-05 09:51 | Revenue | [VILVI Group Expects Revenue Growth of Approximately 50% to EUR 430 Million in 2026](https://view.news.eu.nasdaq.com/view?id=b58538e57a5a9de23352ab2c6ae7b2ada&lang=en&src=listed) | REVENUE; 50%; EUR 430 Million | 11.49% | -1.15% | 3.44% | 13.36% | 3.80% | No |
+| 2026-05-29 16:04 | Earnings | [VILVI Group unaudited consolidated financial results for the first three months of 2026 ](https://view.news.eu.nasdaq.com/view?id=b73e15abb9a115ef79400c112c0e2abfc&lang=en&src=listed) | Open official announcement | -0.42% | -2.13% | 11.49% | 35.74% | 11.00% | No |
+| 2026-05-11 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.23 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.23  | 0.00% | 0.00% | 1.29% | 13.36% | 1.84% | No |
+| 2026-02-27 16:05 | Earnings | [Unaudited financial results of VILVI Group for the 12 months of 2025](https://view.news.eu.nasdaq.com/view?id=b89d35c9363227f9267573d12c35b6d63&lang=en&src=listed) | Open official announcement | -1.20% | -8.13% | -5.69% | -8.13% | -4.81% | No |
+| 2025-11-28 09:39 | Earnings | [Unaudited consolidated financial results of VILVI Group for 9 months of 2025](https://view.news.eu.nasdaq.com/view?id=bd30dd181058527539fdc4e68606f60b2&lang=en&src=listed) | Open official announcement | -2.30% | 3.30% | 4.72% | 8.49% | 4.26% | Yes |
+| 2025-08-29 09:44 | Earnings | [VILVI Group unaudited consolidated financial results for the six months of 2025](https://view.news.eu.nasdaq.com/view?id=b173e4dfa80bfab952b1139285ae4239d&lang=en&src=listed) | Open official announcement | -1.96% | -0.20% | -2.00% | 10.50% | -2.44% | Yes |
+| 2025-05-30 09:03 | Earnings | [Unaudited consolidated financial results of VILVI Group for 3 months of 2025](https://view.news.eu.nasdaq.com/view?id=b5987d77bf7d423cfa8d1cf0dbf060cae&lang=en&src=listed) | Open official announcement | -3.35% | 0.87% | -0.43% | -3.03% | -0.15% | No |
+| 2025-05-13 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.54 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.54  | 13.70% | -1.61% | -3.61% | -8.84% | -4.03% | Yes |
+| 2025-02-28 09:18 | Earnings | [Unaudited financial results of VILVI Group for the 12 months of 2024](https://view.news.eu.nasdaq.com/view?id=b80043a95d6bfbaf23c3b35d2c54d0628&lang=en&src=listed) | Open official announcement | 1.31% | -1.08% | -2.58% | -0.43% | -2.58% | No |
+| 2024-11-29 09:47 | Earnings | [Unaudited financial results of VILVI GROUP for the nine months of 2024](https://view.news.eu.nasdaq.com/view?id=b117a583cc9fb584f6332942b5f650d6e&lang=en&src=listed) | Open official announcement | 4.28% | 3.08% | 3.85% | 4.87% | 1.96% | No |
+| 2024-08-30 09:52 | Earnings | [Unaudited financial results of VILVI GROUP for the first six months of 2024](https://view.news.eu.nasdaq.com/view?id=b28c7660c9a343961920f78323a76e842&lang=en&src=listed) | Open official announcement | 7.83% | 1.96% | -0.56% | -1.68% | -0.60% | No |
+| 2024-05-31 09:15 | Earnings | [Unaudited financial results of VILVI GROUP for the first three months of 2024](https://view.news.eu.nasdaq.com/view?id=bdc9fad615b1b400b2d71d0fb24eea209&lang=en&src=listed) | Open official announcement | 7.00% | -0.36% | 8.73% | 9.45% | 8.75% | No |
+| 2024-05-10 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.31 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.31  | -1.11% | -4.10% | -4.85% | 11.57% | -3.21% | No |
+| 2024-02-29 09:55 | Earnings | [Unaudited financial results of VILVI GROUP for the 12 months of 2023](https://view.news.eu.nasdaq.com/view?id=b470f79fae07f4b1d6e98116365578bcc&lang=en&src=listed) | Open official announcement | 3.32% | -1.43% | -6.43% | -8.21% | -5.91% | Yes |
+| 2023-11-30 16:23 | Earnings | [Unaudited financial results of “Vilvi Group“ for the first nine months of 2023](https://view.news.eu.nasdaq.com/view?id=be1812e8d1b4bb947b47179a1eb511875&lang=en&src=listed) | Open official announcement | -0.42% | 0.00% | 1.69% | 11.02% | 2.78% | Yes |
+| 2023-08-31 09:57 | Earnings | [Unaudited financial results of “Vilvi Group“ for the first six months of 2023](https://view.news.eu.nasdaq.com/view?id=b5fdaf6ff1bb94e6db906304d6b212e7d&lang=en&src=listed) | Open official announcement | -2.47% | 1.61% | 3.22% | 6.67% | 3.20% | Yes |
+| 2023-06-01 08:45 | Earnings | [Correction: Unaudited financial results of “Vilvi Group“ for the first three months of 2023](https://view.news.eu.nasdaq.com/view?id=b9351d6bc063f7a26847bf61d7c67ef44&lang=en&src=listed) | Open official announcement | -1.47% | -1.28% | -2.13% | -5.53% | -1.25% | No |
+| 2023-05-31 16:30 | Earnings | [Unaudited financial results of “Vilvi Group“ for the first three months of 2023](https://view.news.eu.nasdaq.com/view?id=b28225eaaca9efd36b0669b07794d25cd&lang=en&src=listed) | Open official announcement | 0.21% | -1.47% | -3.56% | -6.71% | -2.58% | No |
+| 2023-05-12 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.265 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.265  | -1.56% | -3.95% | -4.74% | -9.49% | -3.32% | Yes |
+| 2023-02-28 09:15 | Earnings | [Unaudited financial results of “Vilvi Group“ for the 12 months of 2022](https://view.news.eu.nasdaq.com/view?id=bceb5a3a5e69731357e66b3b34c1c56e1&lang=en&src=listed) | Open official announcement | -1.57% | -0.40% | -1.99% | 0.80% | -2.21% | Yes |
+
+</details>
+
+</details>
+
+</details>
+
+<details markdown="1">
+<summary>All five model frontiers with this share highlighted</summary>
+
+![VLP1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/VLP1L_all_frontiers.png?v=1792486189)
+
+The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
+
+</details>
+
+<details markdown="1">
+<summary>All 72 PerformanceAnalytics measures: full period and last 126 observations</summary>
+
+| Measure | Full period | Last 126 | Measure | Full period | Last 126 |
+| --- | --- | --- | --- | --- | --- |
+| ActiveReturn | 0.103798 | 0.335868 | M2Sortino | 0.332887 | 0.563470 |
+| AdjustedSharpe | -0.792235 | -2.184440 | MSquaredExcess | 0.044566 | 0.125481 |
+| AnnualizedReturn_Arithmetic | 0.308070 | 0.479041 | Martin | 5.265313 | 9.792844 |
+| AnnualizedReturn_Geometric | 0.332487 | 0.573077 | MaximumDrawdown | 0.157158 | 0.112450 |
+| Appraisal | 1.553874 | 2.408683 | Modigliani | 0.001042 | 0.001302 |
+| ArithmeticReturn | 0.001223 | 0.001901 | NetSelectivity | 0.064232 | 0.226696 |
+| AverageDrawdown | 0.039828 | 0.026784 | Omega | 1.369319 | 1.540203 |
+| AverageDrawdownLength | 25.392857 | 12.444444 | OmegaExcessReturn | 0.290002 | 0.527552 |
+| AverageRecoveryTime | 14.107143 | 7.222222 | PainIndex | 0.047953 | 0.043557 |
+| BernardoLedoit | 1.369319 | 1.540203 | PainRatio | 6.933606 | 13.156916 |
+| BetaCoKurtosis | -0.007644 | 0.180060 | Prospect | -0.392858 | -0.265746 |
+| BetaCoSkewness | -0.725375 | -8.594713 | Rachev | 1.428309 | 1.339621 |
+| Burke | 1.256071 | 4.765844 | Selectivity | 0.319473 | 0.540466 |
+| CAPMAlpha | 0.001173 | 0.001778 | Sharpe_Annualized | 1.495653 | 2.116998 |
+| CAPMBeta | 0.056906 | 0.137476 | Sharpe_Daily | 0.094217 | 0.133358 |
+| CDD | 0.095077 | 0.056340 | Sharpe_ES | 0.050656 | 0.065740 |
+| Calmar | 2.115625 | 5.096293 | Sharpe_VaR | 0.084766 | 0.143087 |
+| CoKurtosis | -0.000000 | 0.000000 | Skewness | 1.859172 | -0.912603 |
+| CoSkewness | -0.000000 | -0.000000 | Sortino | 0.164747 | 0.202250 |
+| CumulativeReturn | 1.360478 | 0.254224 | SpecificRisk | 0.205598 | 0.224383 |
+| DRatio | 0.658191 | 0.533325 | Sterling | 1.292930 | 2.697470 |
+| DownCapture | -0.130313 | -0.061796 | SystematicRisk | 0.009993 | 0.021304 |
+| DownNumber | 0.361635 | 0.396226 | TotalRisk | 0.205841 | 0.225392 |
+| DownPercent | 0.798742 | 0.811321 | TrackingError_Annualized | 0.264105 | 0.261945 |
+| DownsideDeviation | 0.007420 | 0.009399 | TrackingError_Daily | 0.016637 | 0.016501 |
+| DrawdownDeviation | 0.010767 | 0.011334 | Treynor_Annualized | 5.842701 | 4.168566 |
+| ES_Loss | 0.024133 | 0.028916 | Treynor_Daily | 0.020028 | 0.013089 |
+| FamaBeta | 1.173012 | 1.460236 | UlcerIndex | 0.063147 | 0.058520 |
+| GeometricReturn | 0.001140 | 0.001799 | UpCapture | 0.183974 | 0.395549 |
+| Hurst | 0.426761 | 0.450503 | UpNumber | 0.426606 | 0.493151 |
+| Information_Annualized | 0.393018 | 1.282207 | UpPercent | 0.275229 | 0.356164 |
+| Information_Daily | 0.019363 | 0.057835 | UpsidePotential | 0.610832 | 0.576647 |
+| JensenAlpha | 0.319473 | 0.540466 | UpsideRisk | 0.010704 | 0.010810 |
+| Kappa | 0.100544 | 0.111932 | VaR_Loss | 0.014422 | 0.013285 |
+| Kelly | 7.261257 | 9.355517 | Volatility | 0.012975 | 0.014255 |
+| Kurtosis | 24.383907 | 12.156535 | Volatility_Annualized | 0.205977 | 0.226283 |
+
+</details>
+
+<details markdown="1" class="portfolio-sensitivity">
+<summary>Portfolio sensitivity</summary>
+
+**Removing this share from curent_update_baltic**
+
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.703390</td><td>-0.110169</td></tr><tr><td>OUT</td><td>96</td><td>83</td><td>-13</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.141760</td><td>-0.006013</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.132985</td><td>-0.028508</td></tr></tbody></table>
+
+The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
+
+**Increasing this existing position in the current portfolio**
+
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>VLP1L shares</td><td>42</td><td>72</td><td>+30</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>8380.299978</td><td>468.000011</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.576271</td><td>0.118644</td></tr><tr><td>OUT</td><td>62</td><td>72</td><td>+10</td></tr><tr><td>IN</td><td>8</td><td>4</td><td>-4</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.085773</td><td>0.015600</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.109190</td><td>0.018034</td></tr></tbody></table>
+
+The starting point is the unmodified current portfolio, which already contains 42 VLP1L shares. The scenario adds 30 shares from Table 3A, resulting in 72 shares; every other holding remains unchanged.
+
+<details markdown="1" class="dominance-components">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Choose S&P 500, Current or any model portfolio as the benchmark for the difference panels.
+
+<div class="dominance-explorer" data-asset="VLP1L"><p>Open this section to load the interactive curve explorer.</p></div>
+
+<details markdown="1" class="static-dominance">
+<summary>High-resolution static FSD, SSD and TSD figure</summary>
+
+![VLP1L high-resolution stochastic dominance](figures/stock_profiles/VLP1L_FSD_SSD_TSD.png?v=1792486482)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -1060,9 +1067,9 @@ The static figure is collapsed because the interactive plots above provide the d
 </details>
 
 <details markdown="1" class="stock-profile" id="share-molnr">
-<summary><strong>MOLNR — J. Molner</strong> | HOLD | target 30 shares | priority 5</summary>
+<summary><strong>MOLNR — J. Molner</strong> | HOLD | target 22 shares | priority 5</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>30</td><td>+30</td><td>4.21%</td><td>EUR 20.6000</td><td>0.0424</td><td>5 / 0</td><td>56.42</td><td>Bullish</td><td>Inside bands</td><td>0.466 (Neutral)</td><td>HOLD</td><td>0.001772 (2.067% of portfolio HHI)</td><td>EUR 98</td><td>630.6%</td><td>29.4%</td><td>HIGH</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>22</td><td>+22</td><td>3.13%</td><td>EUR 20.4000</td><td>0.0424</td><td>5 / 0</td><td>54.39</td><td>Bearish</td><td>Inside bands</td><td>0.427 (Neutral)</td><td>HOLD</td><td>0.000978 (1.262% of portfolio HHI)</td><td>EUR 98</td><td>458.0%</td><td>29.4%</td><td>HIGH</td></tr></tbody></table>
 
 ![MOLNR Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/MOLNR_technicals_6m.png)
 
@@ -1078,40 +1085,40 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![MOLNR return histogram](figures/stock_profiles/MOLNR_histogram.png?v=1792150404)
+![MOLNR return histogram](figures/stock_profiles/MOLNR_histogram.png?v=1792485734)
 
 </details>
 
 <details markdown="1" class="seasonality-section">
 <summary>Seasonality, drawdowns and upside periods</summary>
 
-The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
+The analysis covers 919 daily returns from 2023-01-02 to 2026-10-16. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
 
 | Measure | Value | Measure | Value | Measure | Value |
 | --- | --- | --- | --- | --- | --- |
-| Maximum drawdown | -47.85% (2026-09-29) | Average gain / average loss | 1.481 | Best 21-day period | 73.58% (ending 2023-07-07) |
-| Average underwater drawdown | 18.59% | Upside potential ratio | 1.796 | Worst 21-day period | -28.17% (ending 2023-03-30) |
+| Maximum drawdown | -47.85% (2026-09-29) | Average gain / average loss | 1.478 | Best 21-day period | 73.58% (ending 2023-07-07) |
+| Average underwater drawdown | 18.63% | Upside potential ratio | 1.792 | Worst 21-day period | -28.17% (ending 2023-03-30) |
 | Conditional drawdown 95% | 43.87% | Upside capture vs Baltic EW | 344.1% | Best 5-day period | 60.38% (ending 2023-06-14) |
-| Ulcer index | 21.29 | Downside capture vs Baltic EW | 219.1% | Best 63-day period | 117.95% (ending 2023-07-19) |
-| Longest underwater period | 608 calendar days | Positive trading days | 29.9% | Repeated calendar pattern | Mar: 0% positive across 4 years |
-| Daily downside deviation | 2.104% | Best day | 44.39% (2025-01-02) |  |  |
-| Daily upside deviation | 3.320% | Worst day | -12.73% (2023-03-14) |  |  |
+| Ulcer index | 21.34 | Downside capture vs Baltic EW | 220.4% | Best 63-day period | 117.95% (ending 2023-07-19) |
+| Longest underwater period | 610 calendar days | Positive trading days | 29.9% | Repeated calendar pattern | Mar: 0% positive across 4 years |
+| Daily downside deviation | 2.102% | Best day | 44.39% (2025-01-02) |  |  |
+| Daily upside deviation | 3.317% | Worst day | -12.73% (2023-03-14) |  |  |
 
 **Calendar-effect tests and observed averages**
 
 | Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
 | --- | --- | --- | --- | --- |
-| Weekday | Best: Wednesday (0.639%); worst: Monday (-0.592%) | 0.0038 | 0.0882 | Not detected |
-| Calendar month | Best: Jan (0.864% daily); worst: Mar (-0.846% daily) | 0.3406 | 0.4956 | Not detected |
-| Turn of month | First/last three days: 0.806%; other days: 0.035% | 0.1479 | 0.4860 | Not detected |
+| Weekday | Best: Wednesday (0.639%); worst: Monday (-0.592%) | 0.0037 | 0.0846 | Not detected |
+| Calendar month | Best: Jan (0.864% daily); worst: Mar (-0.846% daily) | 0.3498 | 0.5029 | Not detected |
+| Turn of month | First/last three days: 0.806%; other days: 0.034% | 0.1476 | 0.4850 | Not detected |
 
-![MOLNR seasonality, drawdowns and upside periods](figures/stock_profiles/MOLNR_seasonality.png?v=1792161067)
+![MOLNR seasonality, drawdowns and upside periods](figures/stock_profiles/MOLNR_seasonality.png?v=1792486399)
 
 **Five deepest drawdown episodes**
 
 | Rank | Peak | Trough | Recovery | Loss | Underwater days |
 | --- | --- | --- | --- | --- | --- |
-| 1 | 2025-02-13 | 2026-09-29 | Not recovered | -47.85% | 608 |
+| 1 | 2025-02-13 | 2026-09-29 | Not recovered | -47.85% | 610 |
 | 2 | 2023-01-13 | 2023-04-05 | 2023-06-12 | -32.71% | 150 |
 | 3 | 2024-01-09 | 2024-06-03 | 2024-09-20 | -27.02% | 255 |
 | 4 | 2023-07-19 | 2023-08-08 | 2023-10-17 | -22.35% | 90 |
@@ -1122,7 +1129,7 @@ The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistical
 | Rank | Start | End | 21-day return |
 | --- | --- | --- | --- |
 | 1 | 2023-06-06 | 2023-07-07 | 73.58% |
-| 2 | 2024-12-13 | 2025-01-22 | 60.43% |
+| 2 | 2024-12-06 | 2025-01-15 | 60.43% |
 | 3 | 2023-12-15 | 2024-01-18 | 51.75% |
 | 4 | 2024-08-28 | 2024-09-26 | 40.85% |
 | 5 | 2026-09-02 | 2026-10-01 | 34.44% |
@@ -1136,9 +1143,9 @@ Announcement times and links come from the official Nasdaq news service. The eff
 
 | Event type | N | Abnormal 1d | Abnormal 5d | Abnormal 21d | Positive 5d | Direction reversal | BH p(5d) | BH p(21d) | Interpretation |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Earnings | 10 | 1.85% | 0.28% | 1.96% | 70% | 20% | 0.7147 | 1.0000 | No adjusted statistical evidence |
+| Earnings | 10 | 1.85% | 0.28% | 1.96% | 70% | 20% | 0.7175 | 1.0000 | No adjusted statistical evidence |
 
-![MOLNR official announcements and abnormal returns](figures/stock_profiles/MOLNR_company_events.png?v=1792171548)
+![MOLNR official announcements and abnormal returns](figures/stock_profiles/MOLNR_company_events.png?v=1792486525)
 
 A direction reversal requires opposite fitted price slopes during the ten trading days before and after the event and at least a 1% five-day move. This identifies temporal association, not proof that the announcement caused the change.
 
@@ -1167,7 +1174,7 @@ A direction reversal requires opposite fitted price slopes during the ten tradin
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![MOLNR Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/MOLNR_all_frontiers.png?v=1792150968)
+![MOLNR Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/MOLNR_all_frontiers.png?v=1792486194)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -1228,9 +1235,9 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 **Adding this new share to the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>MOLNR shares</td><td>0</td><td>30</td><td>+30</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>8574.851995</td><td>618.000011</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.610169</td><td>0.186441</td></tr><tr><td>OUT</td><td>62</td><td>75</td><td>+13</td></tr><tr><td>IN</td><td>12</td><td>3</td><td>-9</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.217324</td><td>0.147201</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.122531</td><td>0.030179</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>MOLNR shares</td><td>0</td><td>22</td><td>+22</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>8361.099958</td><td>448.799992</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.618644</td><td>0.161017</td></tr><tr><td>OUT</td><td>62</td><td>76</td><td>+14</td></tr><tr><td>IN</td><td>8</td><td>3</td><td>-5</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.173471</td><td>0.103299</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.115416</td><td>0.024261</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 0 MOLNR shares. The scenario adds 30 shares from Table 3A, resulting in 30 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 MOLNR shares. The scenario adds 22 shares from Table 3A, resulting in 22 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -1242,7 +1249,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![MOLNR high-resolution stochastic dominance](figures/stock_profiles/MOLNR_FSD_SSD_TSD.png?v=1792171287)
+![MOLNR high-resolution stochastic dominance](figures/stock_profiles/MOLNR_FSD_SSD_TSD.png?v=1792486457)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -1254,127 +1261,112 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-hae1t">
-<summary><strong>HAE1T — Harju Elekter Group</strong> | SELL | target 101 shares | priority 6</summary>
+<details markdown="1" class="stock-profile" id="share-tel1l">
+<summary><strong>TEL1L — Telia Lietuva</strong> | SELL | target 78 shares | priority 6</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>100</td><td>101</td><td>+1</td><td>3.75%</td><td>EUR 5.5400</td><td>0.1271</td><td>39 / 24</td><td>74.94</td><td>Bullish</td><td>Above upper band</td><td>1.000 (Overbought)</td><td>SELL</td><td>0.001407 (1.641% of portfolio HHI)</td><td>EUR 16,472</td><td>0.0%</td><td>1.2%</td><td>MEDIUM</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>78</td><td>+78</td><td>1.20%</td><td>EUR 2.2900</td><td>0.1695</td><td>42 / 22</td><td>85.18</td><td>Bullish</td><td>Above upper band</td><td>1.000 (Overbought)</td><td>SELL</td><td>0.000143 (0.185% of portfolio HHI)</td><td>EUR 56,394</td><td>0.3%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
-![HAE1T Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/HAE1T_technicals_6m.png)
+![TEL1L Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/TEL1L_technicals_6m.png)
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
 
-![HAE1T complete technical history](figures/technical_analysis/HAE1T_technical.png)
+![TEL1L complete technical history](figures/technical_analysis/TEL1L_technical.png)
 
 </details>
 
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![HAE1T return histogram](figures/stock_profiles/HAE1T_histogram.png?v=1792150404)
+![TEL1L return histogram](figures/stock_profiles/TEL1L_histogram.png?v=1792485735)
 
 </details>
 
 <details markdown="1" class="seasonality-section">
 <summary>Seasonality, drawdowns and upside periods</summary>
 
-The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
+The analysis covers 919 daily returns from 2023-01-02 to 2026-10-16. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
 
 | Measure | Value | Measure | Value | Measure | Value |
 | --- | --- | --- | --- | --- | --- |
-| Maximum drawdown | -14.80% (2025-03-07) | Average gain / average loss | 1.138 | Best 21-day period | 15.63% (ending 2026-01-14) |
-| Average underwater drawdown | 8.00% | Upside potential ratio | 1.229 | Worst 21-day period | -8.81% (ending 2025-03-12) |
-| Conditional drawdown 95% | 14.16% | Upside capture vs Baltic EW | 54.6% | Best 5-day period | 10.20% (ending 2026-01-14) |
-| Ulcer index | 8.78 | Downside capture vs Baltic EW | 45.6% | Best 63-day period | 25.21% (ending 2026-03-13) |
-| Longest underwater period | 608 calendar days | Positive trading days | 38.7% | Repeated calendar pattern | Jan: 75% positive across 4 years |
-| Daily downside deviation | 0.574% | Best day | 6.25% (2024-05-15) |  |  |
-| Daily upside deviation | 0.641% | Worst day | -5.15% (2025-02-20) |  |  |
+| Maximum drawdown | -25.25% (2024-08-05) | Average gain / average loss | 1.026 | Best 21-day period | 12.09% (ending 2026-01-09) |
+| Average underwater drawdown | 13.76% | Upside potential ratio | 1.320 | Worst 21-day period | -11.05% (ending 2023-08-08) |
+| Conditional drawdown 95% | 23.35% | Upside capture vs Baltic EW | 46.3% | Best 5-day period | 7.94% (ending 2026-01-09) |
+| Ulcer index | 15.39 | Downside capture vs Baltic EW | 34.8% | Best 63-day period | 18.26% (ending 2026-01-09) |
+| Longest underwater period | 987 calendar days | Positive trading days | 30.7% | Repeated calendar pattern | May: 0% positive across 4 years |
+| Daily downside deviation | 0.500% | Best day | 3.67% (2026-04-24) |  |  |
+| Daily upside deviation | 0.474% | Worst day | -5.60% (2026-05-08) |  |  |
 
 **Calendar-effect tests and observed averages**
 
 | Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
 | --- | --- | --- | --- | --- |
-| Weekday | Best: Friday (0.106%); worst: Thursday (-0.082%) | 0.0729 | 0.1863 | Not detected |
-| Calendar month | Best: Jan (0.215% daily); worst: Jun (-0.102% daily) | 0.5909 | 0.7152 | Not detected |
-| Turn of month | First/last three days: -0.051%; other days: 0.031% | 0.4276 | 0.8190 | Not detected |
+| Weekday | Best: Thursday (0.070%); worst: Monday (-0.081%) | 0.3130 | 0.4499 | Not detected |
+| Calendar month | Best: Jan (0.207% daily); worst: May (-0.300% daily) | 0.0765 | 0.2493 | Not detected |
+| Turn of month | First/last three days: 0.052%; other days: 0.010% | 0.4732 | 0.8443 | Not detected |
 
-![HAE1T seasonality, drawdowns and upside periods](figures/stock_profiles/HAE1T_seasonality.png?v=1792161075)
+![TEL1L seasonality, drawdowns and upside periods](figures/stock_profiles/TEL1L_seasonality.png?v=1792486412)
 
 **Five deepest drawdown episodes**
 
 | Rank | Peak | Trough | Recovery | Loss | Underwater days |
 | --- | --- | --- | --- | --- | --- |
-| 1 | 2024-05-15 | 2025-03-07 | 2026-01-13 | -14.80% | 608 |
-| 2 | 2026-04-16 | 2026-08-14 | Not recovered | -14.72% | 181 |
-| 3 | 2023-01-27 | 2024-04-10 | 2024-05-15 | -11.52% | 474 |
-| 4 | 2026-03-13 | 2026-03-31 | 2026-04-08 | -4.44% | 26 |
-| 5 | 2026-02-19 | 2026-03-04 | 2026-03-13 | -3.48% | 22 |
+| 1 | 2023-04-28 | 2024-08-05 | 2026-01-09 | -25.25% | 987 |
+| 2 | 2026-05-07 | 2026-06-18 | Not recovered | -9.05% | 162 |
+| 3 | 2023-03-17 | 2023-04-18 | 2023-04-28 | -3.43% | 42 |
+| 4 | 2026-02-18 | 2026-03-12 | 2026-04-07 | -3.33% | 48 |
+| 5 | 2026-01-29 | 2026-02-05 | 2026-02-18 | -1.90% | 20 |
 
 **Five strongest non-overlapping 21-trading-day rises**
 
 | Rank | Start | End | 21-day return |
 | --- | --- | --- | --- |
-| 1 | 2025-12-08 | 2026-01-14 | 15.63% |
-| 2 | 2024-04-11 | 2024-05-15 | 13.21% |
-| 3 | 2026-02-09 | 2026-03-13 | 10.57% |
-| 4 | 2024-12-16 | 2025-01-23 | 7.35% |
-| 5 | 2026-09-15 | 2026-10-14 | 6.54% |
+| 1 | 2025-12-03 | 2026-01-09 | 12.09% |
+| 2 | 2026-03-25 | 2026-04-27 | 11.22% |
+| 3 | 2023-10-27 | 2023-11-30 | 8.86% |
+| 4 | 2026-06-18 | 2026-07-23 | 7.11% |
+| 5 | 2025-06-17 | 2025-07-18 | 6.17% |
 
 The dated extremes identify where company announcements, dividends, corporate actions or data anomalies should be checked. A repeated calendar average is descriptive until it survives the adjusted test and a later out-of-sample period; it is not by itself a buy or sell signal.
 
 <details markdown="1" class="company-events">
-<summary>Official company-news calendar and price-direction analysis (31 events)</summary>
+<summary>Official company-news calendar and price-direction analysis (15 events)</summary>
 
 Announcement times and links come from the official Nasdaq news service. The effective date is the first trading close strictly after publication. Abnormal return means the share return minus the equal-weight Baltic-market return over the same window.
 
 | Event type | N | Abnormal 1d | Abnormal 5d | Abnormal 21d | Positive 5d | Direction reversal | BH p(5d) | BH p(21d) | Interpretation |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Dividend payment | 4 | 0.48% | -0.64% | -0.66% | 25% | 25% | 0.7385 | 1.0000 | No adjusted statistical evidence |
-| Earnings | 19 | -0.10% | -0.01% | 0.71% | 58% | 32% | 0.9852 | 0.8240 | No adjusted statistical evidence |
-| Ex-dividend | 8 | -1.16% | -2.54% | -3.88% | 25% | 62% | 0.0340 | 0.0633 | Different from ordinary periods; price drop may be mechanical |
+| Dividend announcement | 8 | 0.18% | -1.05% | -1.15% | 50% | 38% | 0.8443 | 0.7244 | No adjusted statistical evidence |
+| Dividend payment | 1 | -0.42% | -0.72% | 1.06% | 0% | 0% | 1.0000 | 1.0000 | No adjusted statistical evidence |
+| Earnings | 2 | 0.64% | 0.81% | -0.23% | 50% | 100% | 1.0000 | 1.0000 | No adjusted statistical evidence |
+| Ex-dividend | 4 | -3.93% | -3.82% | -4.29% | 25% | 100% | 0.0423 | 0.0697 | Different from ordinary periods; price drop may be mechanical |
 
-![HAE1T official announcements and abnormal returns](figures/stock_profiles/HAE1T_company_events.png?v=1792171551)
+![TEL1L official announcements and abnormal returns](figures/stock_profiles/TEL1L_company_events.png?v=1792486534)
 
 A direction reversal requires opposite fitted price slopes during the ten trading days before and after the event and at least a 1% five-day move. This identifies temporal association, not proof that the announcement caused the change.
 
 <details markdown="1">
-<summary>Complete official event calendar (31 announcements)</summary>
+<summary>Complete official event calendar (15 announcements)</summary>
 
 | Published | Type | Official announcement | Headline fundamental cue | Pre 5d | Post 1d | Post 5d | Post 21d | Abnormal 5d | Reversal |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2026-07-23 07:00 | Earnings | [Harju Elekter Group financial results, 1-6/2026](https://view.news.eu.nasdaq.com/view?id=bb831cad24851c6144aded6ae2f08ef94&lang=en&src=listed) | Open official announcement | -4.07% | -0.77% | -0.77% | 2.32% | -0.78% | No |
-| 2026-05-28 08:00 | Dividend payment | [Official dividend calendar: Dividend payment date, EUR 0.25 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.25  | -4.48% | 1.08% | -0.72% | -1.81% | -0.84% | No |
-| 2026-05-20 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.25 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.25  | -1.02% | 0.00% | -4.14% | -6.90% | -4.72% | Yes |
-| 2026-05-15 07:00 | Ex-dividend | [Dividend payment ex-date of AS Harju Elekter Group](https://view.news.eu.nasdaq.com/view?id=bae459a0eaad19cfe634ddb1038133fa0&lang=en&src=listed) | Open official announcement | -0.68% | -0.34% | -4.76% | -7.82% | -4.32% | Yes |
-| 2026-04-23 07:00 | Earnings | [Harju Elekter Group financial results, 1-3/2026](https://view.news.eu.nasdaq.com/view?id=b716fc47c9b03923cb049b0354763075b&lang=en&src=listed) | Open official announcement | -5.35% | 0.35% | -0.35% | -2.12% | 0.47% | No |
-| 2026-03-30 10:19 | Earnings | [ Harju Elekter Group's audited Annual Report 2025](https://view.news.eu.nasdaq.com/view?id=b16e68f9d00f673d1a748f0c16ad936ed&lang=en&src=listed) | Open official announcement | -1.39% | -1.41% | 3.87% | -0.70% | 2.94% | Yes |
-| 2026-02-19 07:00 | Earnings | [Harju Elekter Group financial results, 1-12/2025](https://view.news.eu.nasdaq.com/view?id=ba5b76fe3d4d742b568831b069e0e7219&lang=en&src=listed) | Open official announcement | 7.49% | -0.70% | -1.39% | 0.00% | -0.49% | Yes |
-| 2025-10-30 07:00 | Earnings | [Harju Elekter Group financial results, 1-9/2025](https://view.news.eu.nasdaq.com/view?id=bc1c7abe1bc0e479751af81366937d865&lang=en&src=listed) | Open official announcement | 1.74% | 0.43% | -0.21% | 0.43% | -0.03% | No |
-| 2025-07-24 07:00 | Earnings | [Harju Elekter Group financial results, 1-6/2025](https://view.news.eu.nasdaq.com/view?id=b5cda42db997f0911f76183be52252a1a&lang=en&src=listed) | Open official announcement | -0.83% | 0.00% | -0.63% | -1.26% | -0.72% | No |
-| 2025-05-28 08:00 | Dividend payment | [Official dividend calendar: Dividend payment date, EUR 0.15 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.15  | 0.42% | 0.00% | -1.26% | 1.05% | -1.25% | No |
-| 2025-05-20 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.15 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.15  | 0.82% | -3.27% | -3.47% | -4.29% | -3.40% | No |
-| 2025-05-15 07:00 | Ex-dividend | [Dividend payment ex-date of AS Harju Elekter Group](https://view.news.eu.nasdaq.com/view?id=bdf92446b47cf58bee5ef2ab263b20805&lang=en&src=listed) | Open official announcement | 0.41% | 1.23% | -2.47% | -2.88% | -3.32% | Yes |
-| 2025-04-24 07:00 | Earnings | [Harju Elekter Group financial results, 1-3/2025](https://view.news.eu.nasdaq.com/view?id=bc6c53a85512ab746dde5bfb050e38c70&lang=en&src=listed) | Open official announcement | -0.43% | 0.00% | 3.00% | 2.15% | 0.88% | Yes |
-| 2025-03-27 07:42 | Earnings | [CORRECTION: Harju Elekter Group's audited Annual Report 2024](https://view.news.eu.nasdaq.com/view?id=b11e03c6b7e0673dd5d7aa8beae40fac3&lang=en&src=listed) | Open official announcement | -0.33% | 0.65% | 2.39% | 0.87% | 2.11% | No |
-| 2025-02-20 07:00 | Earnings | [Harju Elekter Group financial results, 1-12/2024](https://view.news.eu.nasdaq.com/view?id=b84af3d8acaab4dd1af8ea0b3b48d7351&lang=en&src=listed) | Open official announcement | -4.67% | 0.00% | -3.83% | -2.87% | -3.97% | No |
-| 2024-10-23 07:00 | Earnings | [Harju Elekter Group financial results, 1-9/2024](https://view.news.eu.nasdaq.com/view?id=bb119455ebab635b6f2e32dc644dc80c8&lang=en&src=listed) | Open official announcement | -2.64% | 0.54% | 0.00% | -0.22% | 0.14% | No |
-| 2024-07-24 09:39 | Earnings | [Correction: Harju Elekter Group financial results, 1-6/2024](https://view.news.eu.nasdaq.com/view?id=b307d54534f45fe12d6e22747c131674d&lang=en&src=listed) | Open official announcement | 2.00% | -0.93% | -0.10% | -2.58% | 0.49% | No |
-| 2024-05-28 08:00 | Dividend payment | [Official dividend calendar: Dividend payment date, EUR 0.13 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.13  | 0.31% | 0.61% | -1.32% | -2.85% | -1.87% | No |
-| 2024-05-20 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.13 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.13  | 5.13% | -4.30% | -3.52% | -7.03% | -3.21% | Yes |
-| 2024-05-15 08:00 | Ex-dividend | [Dividend payment ex-date of AS Harju Elekter Group](https://view.news.eu.nasdaq.com/view?id=b2fd0fc481cfc3c6944a0336a882a6ed9&lang=en&src=listed) | Open official announcement | 9.11% | -2.85% | -4.93% | -7.31% | -4.44% | Yes |
-| 2024-04-24 07:00 | Earnings | [Harju Elekter Group financial results, 1-3/2024](https://view.news.eu.nasdaq.com/view?id=bef401f55bedf01e88b6f0157cb805c90&lang=en&src=listed) | Open official announcement | 0.64% | 0.85% | 2.13% | 5.21% | 1.64% | No |
-| 2024-03-27 08:00 | Earnings | [Harju Elekter Group's audited Annual Report 2023](https://view.news.eu.nasdaq.com/view?id=b5153c176e45f6bac6a736aa4db092119&lang=en&src=listed) | Open official announcement | -0.10% | -1.03% | -2.79% | -0.21% | -3.36% | No |
-| 2024-02-21 08:00 | Earnings | [Harju Elekter Group financial results, 1-12/2023](https://view.news.eu.nasdaq.com/view?id=b4991a9e6923ac426c1cbf6093fc3ff96&lang=en&src=listed) | Open official announcement | 0.92% | -0.41% | -1.02% | -2.13% | -2.05% | Yes |
-| 2023-10-25 08:00 | Earnings | [Harju Elekter Group financial results, 1-9/2023](https://view.news.eu.nasdaq.com/view?id=b9ddb78545746cb52528d3eddc3a542b5&lang=en&src=listed) | Open official announcement | 1.00% | -0.20% | -1.19% | -1.58% | -1.33% | Yes |
-| 2023-07-26 07:30 | Earnings | [Harju Elekter Group financial results, 1-6/2023](https://view.news.eu.nasdaq.com/view?id=b297fd4ab03daef223ea413c03b21db6c&lang=en&src=listed) | Open official announcement | 1.00% | 0.40% | 0.40% | 1.38% | 0.30% | No |
-| 2023-05-24 08:00 | Dividend payment | [Official dividend calendar: Dividend payment date, EUR 0.05 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.05  | 0.80% | -0.20% | 1.39% | -0.99% | 1.39% | Yes |
-| 2023-05-16 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.05 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.05  | -0.99% | -0.40% | 0.80% | 0.00% | 2.24% | No |
-| 2023-05-11 08:00 | Ex-dividend | [Dividend payment ex-date of AS Harju Elekter](https://view.news.eu.nasdaq.com/view?id=b3df289f433e301fecf444e9bba4caa69&lang=en&src=listed) | Open official announcement | 0.60% | -0.20% | -0.60% | 0.00% | 0.82% | No |
-| 2023-04-26 08:00 | Earnings | [Harju Elekter Group financial results, 1-3/2023](https://view.news.eu.nasdaq.com/view?id=b6dfcac1dcf1cc683434ff289ddcc7829&lang=en&src=listed) | Open official announcement | 0.60% | 0.00% | 1.20% | 3.00% | 1.51% | Yes |
-| 2023-03-29 10:43 | Earnings | [Harju Elekter Group's audited Annual Report 2022](https://view.news.eu.nasdaq.com/view?id=bb2a0fe1affe265877851169e13b0686d&lang=en&src=listed) | Open official announcement | -0.20% | 0.00% | 0.20% | 0.20% | 0.47% | No |
-| 2023-02-22 08:00 | Earnings | [Harju Elekter Group financial results, 1-12/2022](https://view.news.eu.nasdaq.com/view?id=bfd02efb5df051589dc2a76f464b5d956&lang=en&src=listed) | Open official announcement | -1.77% | 0.60% | 1.40% | 0.40% | 1.64% | No |
+| 2026-05-08 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.14 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.14  | 1.75% | -5.60% | -8.19% | -7.76% | -7.12% | Yes |
+| 2026-04-27 16:05 | Dividend announcement | [Procedure for the payment of Telia Lietuva dividends for the year 2025](https://view.news.eu.nasdaq.com/view?id=b52a35e6570c9cb1d22e5f68ba1454a59&lang=en&src=listed) | Open official announcement | 5.56% | 0.00% | 0.88% | -6.58% | 0.68% | No |
+| 2026-03-27 21:30 | Dividend announcement | [The Board approved financial statements for the year 2025 and proposes to pay EUR 0.14 dividend per share for the year 2025](https://view.news.eu.nasdaq.com/view?id=b65cd483dd3b129e0e15e28809b5a0894&lang=en&src=listed) | EUR 0.14  | 0.49% | 0.49% | 2.91% | 10.19% | 3.00% | Yes |
+| 2025-05-27 08:00 | Dividend payment | [Official dividend calendar: Dividend payment date, EUR 0.11 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.11  | -1.22% | 0.31% | 0.00% | 0.62% | -0.72% | No |
+| 2025-05-12 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.11 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.11  | 1.18% | -4.66% | -4.37% | -5.54% | -4.85% | Yes |
+| 2025-04-30 16:13 | Dividend announcement | [Procedure for the payment of Telia Lietuva dividends for the year 2024](https://view.news.eu.nasdaq.com/view?id=bb619e87f2d63301ab59ddd77d9a9a9c3&lang=en&src=listed) | Open official announcement | 3.04% | 1.18% | -3.54% | -4.72% | -5.15% | Yes |
+| 2025-04-03 16:00 | Dividend announcement | [The Board approved financial statements for the year 2024 and proposes to pay EUR 0.11 dividend per share for the year 2024](https://view.news.eu.nasdaq.com/view?id=bcc0e8bd676eeaf696be57489b03fa52e&lang=en&src=listed) | EUR 0.11  | 1.23% | 0.00% | -0.61% | 4.57% | 1.18% | No |
+| 2024-10-04 16:00 | Earnings | [Hannu-Matti Mäkinen elected as a new Chair of the Audit Committee of Telia Lietuva](https://view.news.eu.nasdaq.com/view?id=b1b69bba750be96935a542d758d23a562&lang=en&src=listed) | Open official announcement | -1.25% | 0.32% | 1.90% | 1.90% | -0.03% | Yes |
+| 2024-09-09 16:00 | Earnings | [Agneta Wallmark resigns from the Board and the Audit Committee of Telia Lietuva](https://view.news.eu.nasdaq.com/view?id=bd099b66a2a25a67f0b7b13cbe07f2fe1&lang=en&src=listed) | Open official announcement | 0.63% | 0.95% | 1.58% | 0.95% | 1.65% | Yes |
+| 2024-05-10 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.09 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.09  | 0.29% | -4.71% | -5.00% | -5.59% | -3.35% | Yes |
+| 2024-04-30 16:30 | Dividend announcement | [Procedure for the payment of Telia Lietuva dividends for the year 2023](https://view.news.eu.nasdaq.com/view?id=bb3264ad87e45486fb54ced8673d4a165&lang=en&src=listed) | Open official announcement | -0.29% | 0.30% | -4.14% | -5.03% | -4.40% | No |
+| 2024-04-05 18:36 | Dividend announcement | [Valdyba patvirtino 2023 m. finansines ataskaitas ir siūlo mokėti 0,09 euro dividendų vienai akcijai už 2023 metus](https://view.news.eu.nasdaq.com/view?id=bc84fe25559e2ce03bfc5a8739386ab2c&lang=en&src=listed) | Open official announcement | 1.49% | 1.18% | 0.29% | 0.00% | 0.48% | No |
+| 2023-05-11 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.06 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.06  | -2.45% | -2.26% | -2.01% | -2.76% | 0.03% | Yes |
+| 2023-04-28 16:05 | Dividend announcement | [Procedure for the payment of Telia Lietuva dividends for the year 2022](https://view.news.eu.nasdaq.com/view?id=bb5a582ef27ce29b0d9d9f6125b6ae2c3&lang=en&src=listed) | Open official announcement | 2.51% | -0.98% | -2.45% | -5.39% | -2.42% | Yes |
+| 2023-04-04 16:00 | Dividend announcement | [The Board approved financial statements for the year 2022 and proposes to pay 0.06 euro dividend per share for the year 2022](https://view.news.eu.nasdaq.com/view?id=b6f85e51534ede96fb95a3c51ad44feb1&lang=en&src=listed) | Open official announcement | 0.00% | -0.99% | -1.73% | -1.49% | -1.76% | No |
 
 </details>
 
@@ -1385,7 +1377,7 @@ A direction reversal requires opposite fitted price slopes during the ten tradin
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![HAE1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/HAE1T_all_frontiers.png?v=1792150969)
+![TEL1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TEL1L_all_frontiers.png?v=1792486197)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -1396,42 +1388,42 @@ The highlighted circle is the selected share and pale circles are the remaining 
 
 | Measure | Full period | Last 126 | Measure | Full period | Last 126 |
 | --- | --- | --- | --- | --- | --- |
-| ActiveReturn | -0.246414 | -0.309903 | M2Sortino | -0.017860 | -0.072074 |
-| AdjustedSharpe | -0.057893 | -0.321064 | MSquaredExcess | -0.204243 | -0.242654 |
-| AnnualizedReturn_Arithmetic | -0.008146 | -0.059614 | Martin | -0.156945 | -1.117513 |
-| AnnualizedReturn_Geometric | -0.017725 | -0.072693 | MaximumDrawdown | 0.209400 | 0.135239 |
-| Appraisal | -0.168881 | -0.234070 | Modigliani | -0.000041 | -0.000205 |
-| ArithmeticReturn | -0.000032 | -0.000237 | NetSelectivity | -0.199798 | -0.346380 |
-| AverageDrawdown | 0.058845 | 0.032257 | Omega | 0.988111 | 0.936887 |
-| AverageDrawdownLength | 93.375000 | 15.125000 | OmegaExcessReturn | -0.052011 | -0.109853 |
-| AverageRecoveryTime | 15.375000 | 4.000000 | PainIndex | 0.098550 | 0.047630 |
-| BernardoLedoit | 0.988111 | 0.936887 | PainRatio | -0.179853 | -1.526195 |
-| BetaCoKurtosis | 0.053440 | 0.011496 | Prospect | -0.572958 | -0.641539 |
-| BetaCoSkewness | 0.134984 | 15.884029 | Rachev | 1.080200 | 1.141043 |
-| Burke | -0.088405 | -0.738308 | Selectivity | -0.023582 | -0.041411 |
-| CAPMAlpha | -0.000055 | -0.000119 | Sharpe_Annualized | -0.058271 | -0.333424 |
-| CAPMBeta | 0.025615 | -0.131879 | Sharpe_Daily | -0.003671 | -0.021004 |
-| CDD | 0.153779 | 0.071630 | Sharpe_ES | -0.001603 | -0.010348 |
-| Calmar | -0.084644 | -0.537518 | Sharpe_VaR | -0.002878 | -0.016752 |
-| CoKurtosis | 0.000000 | 0.000000 | Skewness | 0.500438 | 0.194003 |
-| CoSkewness | 0.000000 | 0.000000 | Sortino | -0.005398 | -0.030835 |
-| CumulativeReturn | -0.052102 | -0.037032 | SpecificRisk | 0.139638 | 0.176916 |
-| DRatio | 1.154072 | 1.473980 | Sterling | -0.057287 | -0.309019 |
-| DownCapture | 0.007906 | -0.130043 | SystematicRisk | 0.004498 | -0.020436 |
-| DownNumber | 0.430818 | 0.358491 | TotalRisk | 0.139711 | 0.178092 |
-| DownPercent | 0.823899 | 0.792453 | TrackingError_Annualized | 0.220906 | 0.249629 |
-| DownsideDeviation | 0.005988 | 0.007672 | TrackingError_Daily | 0.013916 | 0.015725 |
-| DrawdownDeviation | 0.009361 | 0.013210 | Treynor_Annualized | -0.691964 | 0.551214 |
-| ES_Loss | 0.020168 | 0.022862 | Treynor_Daily | -0.002770 | 0.002271 |
-| FamaBeta | 0.796163 | 1.153778 | UlcerIndex | 0.112935 | 0.065049 |
-| GeometricReturn | -0.000071 | -0.000299 | UpCapture | -0.001326 | -0.158224 |
-| Hurst | 0.386445 | 0.446875 | UpNumber | 0.373853 | 0.260274 |
-| Information_Annualized | -1.115467 | -1.241453 | UpPercent | 0.176606 | 0.205479 |
-| Information_Daily | -0.063852 | -0.072780 | UpsidePotential | 0.448649 | 0.457729 |
-| JensenAlpha | -0.023582 | -0.041411 | UpsideRisk | 0.006450 | 0.008188 |
-| Kappa | -0.003342 | -0.019715 | VaR_Loss | 0.011233 | 0.014122 |
-| Kelly | -0.416803 | -1.864855 | Volatility | 0.008807 | 0.011263 |
-| Kurtosis | 14.435639 | 8.675222 | Volatility_Annualized | 0.139804 | 0.178794 |
+| ActiveReturn | -0.196066 | -0.066828 | M2Sortino | 0.034150 | 0.177795 |
+| AdjustedSharpe | 0.333757 | 1.660770 | MSquaredExcess | -0.141614 | 0.023635 |
+| AnnualizedReturn_Arithmetic | 0.037591 | 0.162236 | Martin | 0.221097 | 7.912122 |
+| AnnualizedReturn_Geometric | 0.032623 | 0.170381 | MaximumDrawdown | 0.225761 | 0.049932 |
+| Appraisal | 0.267278 | 1.722501 | Modigliani | 0.000250 | 0.001007 |
+| ArithmeticReturn | 0.000149 | 0.000644 | NetSelectivity | -0.103792 | 0.018699 |
+| AverageDrawdown | 0.036650 | 0.019687 | Omega | 1.080062 | 1.352935 |
+| AverageDrawdownLength | 66.545455 | 14.500000 | OmegaExcessReturn | 0.006262 | 0.152396 |
+| AverageRecoveryTime | 34.727273 | 7.375000 | PainIndex | 0.125364 | 0.017126 |
+| BernardoLedoit | 1.080062 | 1.352935 | PainRatio | 0.260227 | 9.948620 |
+| BetaCoKurtosis | -0.028307 | 0.076703 | Prospect | -0.473444 | -0.440691 |
+| BetaCoSkewness | -2.565127 | 1.493734 | Rachev | 1.075976 | 1.439696 |
+| Burke | 0.204657 | 3.046626 | Selectivity | 0.027961 | 0.170005 |
+| CAPMAlpha | 0.000131 | 0.000642 | Sharpe_Annualized | 0.358884 | 1.637248 |
+| CAPMBeta | 0.020385 | 0.001586 | Sharpe_Daily | 0.022608 | 0.103137 |
+| CDD | 0.049102 | 0.037483 | Sharpe_ES | 0.009737 | 0.059247 |
+| Calmar | 0.144503 | 3.412236 | Sharpe_VaR | 0.015944 | 0.068966 |
+| CoKurtosis | -0.000000 | 0.000000 | Skewness | -0.329646 | 0.490767 |
+| CoSkewness | -0.000000 | 0.000000 | Sortino | 0.032399 | 0.173382 |
+| CumulativeReturn | 0.100817 | 0.081841 | SpecificRisk | 0.104615 | 0.098696 |
+| DRatio | 0.934140 | 0.701230 | Sterling | 0.100144 | 1.136385 |
+| DownCapture | 0.020832 | -0.120621 | SystematicRisk | 0.003580 | 0.000246 |
+| DownNumber | 0.301887 | 0.283019 | TotalRisk | 0.104676 | 0.098697 |
+| DownPercent | 0.861635 | 0.849057 | TrackingError_Annualized | 0.201367 | 0.183729 |
+| DownsideDeviation | 0.004604 | 0.003713 | TrackingError_Daily | 0.012685 | 0.011574 |
+| DrawdownDeviation | 0.008616 | 0.006146 | Treynor_Annualized | 1.600315 | 107.436660 |
+| ES_Loss | 0.015321 | 0.010866 | Treynor_Daily | 0.006249 | 0.393800 |
+| FamaBeta | 0.596511 | 0.639446 | UlcerIndex | 0.147551 | 0.021534 |
+| GeometricReturn | 0.000127 | 0.000625 | UpCapture | 0.051596 | 0.055064 |
+| Hurst | 0.379338 | 0.373845 | UpNumber | 0.302752 | 0.287671 |
+| Information_Annualized | -0.973675 | -0.363732 | UpPercent | 0.178899 | 0.205479 |
+| Information_Daily | -0.054410 | -0.019053 | UpsidePotential | 0.437074 | 0.664641 |
+| JensenAlpha | 0.027961 | 0.170005 | UpsideRisk | 0.004723 | 0.005028 |
+| Kappa | 0.019352 | 0.126490 | VaR_Loss | 0.009356 | 0.009335 |
+| Kelly | 3.426255 | 16.522720 | Volatility | 0.006598 | 0.006242 |
+| Kurtosis | 12.372385 | 4.070376 | Volatility_Annualized | 0.104745 | 0.099091 |
 
 </details>
 
@@ -1440,27 +1432,246 @@ The highlighted circle is the selected share and pale circles are the remaining 
 
 **Removing this share from curent_update_baltic**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.813559</td><td>0.000000</td></tr><tr><td>OUT</td><td>96</td><td>96</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.141945</td><td>-0.005829</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.161638</td><td>0.000145</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.813559</td><td>0.000000</td></tr><tr><td>OUT</td><td>96</td><td>96</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.147918</td><td>0.000144</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.161502</td><td>0.000010</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
-**Increasing this existing position in the current portfolio**
+**Adding this new share to the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>HAE1T shares</td><td>100</td><td>101</td><td>+1</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>7962.391983</td><td>5.540000</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.423729</td><td>0.000000</td></tr><tr><td>OUT</td><td>62</td><td>62</td><td>+0</td></tr><tr><td>IN</td><td>12</td><td>12</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.070137</td><td>0.000014</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.092356</td><td>0.000004</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>TEL1L shares</td><td>0</td><td>78</td><td>+78</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>8090.919964</td><td>178.619997</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.423729</td><td>-0.033898</td></tr><tr><td>OUT</td><td>62</td><td>60</td><td>-2</td></tr><tr><td>IN</td><td>8</td><td>10</td><td>+2</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.068946</td><td>-0.001226</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.091717</td><td>0.000562</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 100 HAE1T shares. The scenario adds 1 shares from Table 3A, resulting in 101 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 TEL1L shares. The scenario adds 78 shares from Table 3A, resulting in 78 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
 The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Choose S&P 500, Current or any model portfolio as the benchmark for the difference panels.
 
-<div class="dominance-explorer" data-asset="HAE1T"><p>Open this section to load the interactive curve explorer.</p></div>
+<div class="dominance-explorer" data-asset="TEL1L"><p>Open this section to load the interactive curve explorer.</p></div>
 
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![HAE1T high-resolution stochastic dominance](figures/stock_profiles/HAE1T_FSD_SSD_TSD.png?v=1792171278)
+![TEL1L high-resolution stochastic dominance](figures/stock_profiles/TEL1L_FSD_SSD_TSD.png?v=1792486471)
+
+The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
+
+</details>
+
+</details>
+
+</details>
+
+</details>
+
+<details markdown="1" class="stock-profile" id="share-tkm1t">
+<summary><strong>TKM1T — TKM Grupp</strong> | BUY | target 293 shares | priority 7</summary>
+
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>288</td><td>293</td><td>+5</td><td>17.41%</td><td>EUR 8.9000</td><td>0.0424</td><td>29 / 24</td><td>24.21</td><td>Bearish</td><td>Below lower band</td><td>0.000 (Oversold)</td><td>BUY</td><td>0.030318 (39.099% of portfolio HHI)</td><td>EUR 39,989</td><td>0.1%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+
+![TKM1T Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/TKM1T_technicals_6m.png)
+
+Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
+
+<details markdown="1">
+<summary>Complete technical history</summary>
+
+![TKM1T complete technical history](figures/technical_analysis/TKM1T_technical.png)
+
+</details>
+
+<details markdown="1">
+<summary>Return histogram</summary>
+
+![TKM1T return histogram](figures/stock_profiles/TKM1T_histogram.png?v=1792485730)
+
+</details>
+
+<details markdown="1" class="seasonality-section">
+<summary>Seasonality, drawdowns and upside periods</summary>
+
+The analysis covers 919 daily returns from 2023-01-02 to 2026-10-16. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
+
+| Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- |
+| Maximum drawdown | -16.67% (2026-10-15) | Average gain / average loss | 0.925 | Best 21-day period | 6.93% (ending 2025-01-07) |
+| Average underwater drawdown | 9.55% | Upside potential ratio | 0.788 | Worst 21-day period | -9.08% (ending 2024-04-29) |
+| Conditional drawdown 95% | 15.21% | Upside capture vs Baltic EW | 17.2% | Best 5-day period | 4.88% (ending 2025-01-07) |
+| Ulcer index | 10.15 | Downside capture vs Baltic EW | 22.2% | Best 63-day period | 9.50% (ending 2025-02-10) |
+| Longest underwater period | 932 calendar days | Positive trading days | 39.9% | Repeated calendar pattern | Feb: 100% positive across 4 years |
+| Daily downside deviation | 0.488% | Best day | 3.06% (2025-01-03) |  |  |
+| Daily upside deviation | 0.341% | Worst day | -6.77% (2026-03-31) |  |  |
+
+**Calendar-effect tests and observed averages**
+
+| Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
+| --- | --- | --- | --- | --- |
+| Weekday | Best: Wednesday (0.051%); worst: Tuesday (-0.065%) | 0.0470 | 0.1700 | Not detected |
+| Calendar month | Best: Jan (0.142% daily); worst: Apr (-0.154% daily) | 0.2240 | 0.4574 | Not detected |
+| Turn of month | First/last three days: -0.095%; other days: 0.016% | 0.5139 | 0.8443 | Not detected |
+
+![TKM1T seasonality, drawdowns and upside periods](figures/stock_profiles/TKM1T_seasonality.png?v=1792486377)
+
+**Five deepest drawdown episodes**
+
+| Rank | Peak | Trough | Recovery | Loss | Underwater days |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 2024-03-28 | 2026-10-15 | Not recovered | -16.67% | 932 |
+| 2 | 2023-03-27 | 2023-09-22 | 2024-02-21 | -9.33% | 331 |
+| 3 | 2023-02-09 | 2023-02-14 | 2023-03-01 | -1.36% | 20 |
+| 4 | 2024-02-21 | 2024-02-29 | 2024-03-15 | -1.33% | 23 |
+| 5 | 2023-03-01 | 2023-03-02 | 2023-03-03 | -1.17% | 2 |
+
+**Five strongest non-overlapping 21-trading-day rises**
+
+| Rank | Start | End | 21-day return |
+| --- | --- | --- | --- |
+| 1 | 2024-11-28 | 2025-01-07 | 6.93% |
+| 2 | 2023-01-02 | 2023-01-31 | 6.61% |
+| 3 | 2025-12-09 | 2026-01-15 | 6.50% |
+| 4 | 2024-01-22 | 2024-02-21 | 4.79% |
+| 5 | 2023-09-22 | 2023-10-23 | 4.31% |
+
+The dated extremes identify where company announcements, dividends, corporate actions or data anomalies should be checked. A repeated calendar average is descriptive until it survives the adjusted test and a later out-of-sample period; it is not by itself a buy or sell signal.
+
+<details markdown="1" class="company-events">
+<summary>Official company-news calendar and price-direction analysis (32 events)</summary>
+
+Announcement times and links come from the official Nasdaq news service. The effective date is the first trading close strictly after publication. Abnormal return means the share return minus the equal-weight Baltic-market return over the same window.
+
+| Event type | N | Abnormal 1d | Abnormal 5d | Abnormal 21d | Positive 5d | Direction reversal | BH p(5d) | BH p(21d) | Interpretation |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Dividend payment | 4 | 0.75% | 0.49% | -1.29% | 25% | 0% | 1.0000 | 0.6695 | No adjusted statistical evidence |
+| Earnings | 20 | -0.44% | -0.15% | 0.61% | 50% | 20% | 0.9869 | 0.5457 | No adjusted statistical evidence |
+| Ex-dividend | 8 | -1.86% | -6.03% | -7.55% | 0% | 88% | 0.0000 | 0.0000 | Different from ordinary periods; price drop may be mechanical |
+
+![TKM1T official announcements and abnormal returns](figures/stock_profiles/TKM1T_company_events.png?v=1792486511)
+
+A direction reversal requires opposite fitted price slopes during the ten trading days before and after the event and at least a 1% five-day move. This identifies temporal association, not proof that the announcement caused the change.
+
+<details markdown="1">
+<summary>Complete official event calendar (32 announcements)</summary>
+
+| Published | Type | Official announcement | Headline fundamental cue | Pre 5d | Post 1d | Post 5d | Post 21d | Abnormal 5d | Reversal |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-07-10 16:30 | Earnings | [Unaudited consolidated interim accounts for the second quarter and first six months of 2026](https://view.news.eu.nasdaq.com/view?id=bc94e61ae93435ef732b90cb75dafb9e3&lang=en&src=listed) | Open official announcement | -0.22% | -0.44% | 0.22% | -0.11% | -0.43% | No |
+| 2026-04-10 16:30 | Earnings | [Unaudited consolidated interim accounts for the first quarter of 2026](https://view.news.eu.nasdaq.com/view?id=ba566a451cdc6edd9cf00d93b39abda9d&lang=en&src=listed) | Open official announcement | 0.87% | 0.00% | -0.11% | -1.08% | -0.66% | No |
+| 2026-04-07 08:00 | Dividend payment | [Official dividend calendar: Dividend payment date, EUR 0.6 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.6  | -6.59% | 0.98% | 0.98% | 0.98% | -0.72% | No |
+| 2026-03-30 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.6 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.6  | 0.41% | 0.00% | -6.06% | -6.67% | -5.98% | Yes |
+| 2026-03-25 16:30 | Ex-dividend | [Dividend payment ex-date of TKM Grupp AS](https://view.news.eu.nasdaq.com/view?id=b69e5ffb656e8ca2593ae9b5f7d224119&lang=en&src=listed) | Open official announcement | 0.20% | 0.00% | -6.49% | -6.09% | -5.45% | Yes |
+| 2026-02-19 16:30 | Earnings | [Audited annual report 2025](https://view.news.eu.nasdaq.com/view?id=b6ad8814c26e0bf4cedd01f2a21c90f10&lang=en&src=listed) | Open official announcement | -0.21% | 1.77% | 1.46% | 2.61% | 2.36% | No |
+| 2026-01-16 16:30 | Earnings | [Unaudited consolidated interim accounts for the fourth quarter and twelve months of 2025](https://view.news.eu.nasdaq.com/view?id=bdb594d68cdc426e73ee5b759a1019358&lang=en&src=listed) | Open official announcement | -1.33% | -2.60% | -1.77% | -0.21% | -2.05% | No |
+| 2025-11-14 16:30 | Earnings | [Prolongation of authorities of members of the Management Board of the subsidiaries of TKM Grupp AS and members of the Audit Committee ](https://view.news.eu.nasdaq.com/view?id=b06eb1590c201a08533ef6ca343acce82&lang=en&src=listed) | Open official announcement | -0.11% | 0.11% | 1.09% | 1.96% | 1.70% | Yes |
+| 2025-10-09 16:30 | Earnings | [Unaudited consolidated interim accounts for the third quarter and first nine months of 2025](https://view.news.eu.nasdaq.com/view?id=b7f84bf1933a01e0dbcc2c57c37261dd4&lang=en&src=listed) | Open official announcement | -0.11% | -0.11% | 0.11% | -0.22% | 0.35% | No |
+| 2025-07-09 16:30 | Earnings | [Unaudited consolidated interim accounts for the second quarter and first six months of 2025](https://view.news.eu.nasdaq.com/view?id=b0e9b59515a30f24019b036c6848e2d9a&lang=en&src=listed) | Open official announcement | 0.53% | -1.06% | -1.17% | -1.17% | -1.68% | No |
+| 2025-04-09 16:30 | Earnings | [Unaudited consolidated interim accounts for the first quarter of 2025](https://view.news.eu.nasdaq.com/view?id=b196cedf60b04cbc56aaa52950cddbcb3&lang=en&src=listed) | Open official announcement | -0.53% | -1.39% | -1.18% | 0.64% | -3.18% | Yes |
+| 2025-04-03 08:00 | Dividend payment | [Official dividend calendar: Dividend payment date, EUR 0.65 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.65  | -5.05% | 0.11% | -0.53% | -0.74% | 2.92% | No |
+| 2025-03-28 07:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.65 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.65  | -0.60% | -3.42% | -5.23% | -6.44% | -5.51% | No |
+| 2025-03-25 09:00 | Ex-dividend | [Dividend payment ex-date of TKM Grupp AS](https://view.news.eu.nasdaq.com/view?id=bbbedb7de4849789c6e21914ac4d518e7&lang=en&src=listed) | Open official announcement | -0.20% | -0.40% | -4.52% | -6.43% | -4.92% | Yes |
+| 2025-02-20 16:30 | Earnings | [Audited annual report 2024](https://view.news.eu.nasdaq.com/view?id=b68e6e54cfea7c627a3ea83f736c7f7d8&lang=en&src=listed) | Open official announcement | 0.00% | 0.00% | 0.10% | 0.30% | -0.04% | No |
+| 2025-01-16 16:30 | Earnings | [Unaudited consolidated interim accounts for the fourth quarter and twelve months of 2024](https://view.news.eu.nasdaq.com/view?id=bf8954469635fd3d51ed94439160b8ab2&lang=en&src=listed) | Open official announcement | 0.30% | -1.62% | -1.01% | 0.20% | -2.08% | No |
+| 2024-10-10 16:30 | Earnings | [Unaudited consolidated interim accounts for the third quarter and first nine months of 2024](https://view.news.eu.nasdaq.com/view?id=bb6e49742b476dde8dc28f2c00488ea8c&lang=en&src=listed) | Open official announcement | -0.42% | -0.74% | 0.74% | -1.89% | 0.05% | No |
+| 2024-07-10 16:30 | Earnings | [Unaudited consolidated interim accounts for the second quarter and first six months of 2024](https://view.news.eu.nasdaq.com/view?id=b661d26e2a9d8c9fbf93d926ec1570a6c&lang=en&src=listed) | Open official announcement | 2.11% | -1.34% | -0.21% | -1.44% | 0.52% | No |
+| 2024-04-10 16:30 | Earnings | [Unaudited consolidated interim accounts for the first quarter of 2024](https://view.news.eu.nasdaq.com/view?id=b3c0810db4b364f06ae7e966c4cda6d5e&lang=en&src=listed) | Open official announcement | 0.10% | -1.11% | -0.81% | -1.62% | 0.26% | No |
+| 2024-04-08 08:00 | Dividend payment | [Official dividend calendar: Dividend payment date, EUR 0.72 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.72  | -7.68% | 0.20% | -0.41% | -1.52% | -0.22% | No |
+| 2024-04-02 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.72 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.72  | 0.00% | -6.55% | -7.49% | -8.90% | -7.76% | Yes |
+| 2024-03-26 09:35 | Ex-dividend | [Dividend payment ex-date of Tallinna Kaubamaja Grupp AS](https://view.news.eu.nasdaq.com/view?id=b9c6e1e0b4a2d4ac37f829075b1ff419f&lang=en&src=listed) | Open official announcement | 0.19% | 0.19% | -7.60% | -8.82% | -7.51% | Yes |
+| 2024-02-21 16:30 | Earnings | [Audited annual report 2023](https://view.news.eu.nasdaq.com/view?id=bf0619fbd95f5185f235f8d6bfe671702&lang=en&src=listed) | Open official announcement | 1.94% | -0.95% | -0.95% | 1.33% | -1.99% | No |
+| 2024-01-18 16:30 | Earnings | [Unaudited consolidated interim accounts for the fourth quarter and twelve months of 2023](https://view.news.eu.nasdaq.com/view?id=b3022f8ae832f1399b0dde16e33aa4209&lang=en&src=listed) | Open official announcement | 3.03% | -0.78% | -1.57% | 1.76% | -0.52% | Yes |
+| 2023-10-11 16:30 | Earnings | [Unaudited consolidated interim accounts for the third quarter and first nine months of 2023](https://view.news.eu.nasdaq.com/view?id=b718d45e41deba535cb9d6c27d0b2b480&lang=en&src=listed) | Open official announcement | 0.82% | -0.20% | 0.10% | 0.00% | -0.16% | No |
+| 2023-07-12 16:30 | Earnings | [Unaudited consolidated interim accounts for the second quarter and first six months of 2023](https://view.news.eu.nasdaq.com/view?id=b205cc4450fb96adffd3a1ca00370fbbe&lang=en&src=listed) | Open official announcement | 1.02% | 0.60% | 0.60% | 0.60% | 0.41% | No |
+| 2023-04-12 16:30 | Earnings | [Unaudited consolidated interim accounts for the first quarter of 2023](https://view.news.eu.nasdaq.com/view?id=baccba5617cf059530047886bf21fb7d5&lang=en&src=listed) | Open official announcement | 0.00% | 0.20% | 0.10% | -0.30% | 0.22% | No |
+| 2023-04-05 08:00 | Dividend payment | [Official dividend calendar: Dividend payment date, EUR 0.68 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.68  | -5.82% | 0.30% | 0.00% | -0.51% | -0.02% | No |
+| 2023-03-30 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.68 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.68  | 0.19% | -5.53% | -5.53% | -6.30% | -5.26% | Yes |
+| 2023-03-27 09:30 | Ex-dividend | [Dividend payment ex-date of Tallinna Kaubamaja Grupp AS](https://view.news.eu.nasdaq.com/view?id=b2cb85346da34ac7e9532ce6a0cd7aa87&lang=en&src=listed) | Open official announcement | 0.19% | -0.19% | -6.19% | -6.38% | -5.87% | Yes |
+| 2023-02-21 16:30 | Earnings | [Audited annual report 2022](https://view.news.eu.nasdaq.com/view?id=bd66c155ba40261254f10f6a8ef347428&lang=en&src=listed) | Open official announcement | -0.39% | 0.39% | 1.38% | 3.35% | 1.44% | Yes |
+| 2023-01-19 16:30 | Earnings | [Unaudited consolidated interim accounts for the fourth quarter and twelve months of 2022](https://view.news.eu.nasdaq.com/view?id=b6dcd5e262fb119a6ff1c63157465af7e&lang=en&src=listed) | Open official announcement | -0.10% | 0.10% | 3.38% | 4.40% | 2.52% | No |
+
+</details>
+
+</details>
+
+</details>
+
+<details markdown="1">
+<summary>All five model frontiers with this share highlighted</summary>
+
+![TKM1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TKM1T_all_frontiers.png?v=1792486187)
+
+The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
+
+</details>
+
+<details markdown="1">
+<summary>All 72 PerformanceAnalytics measures: full period and last 126 observations</summary>
+
+| Measure | Full period | Last 126 | Measure | Full period | Last 126 |
+| --- | --- | --- | --- | --- | --- |
+| ActiveReturn | -0.245633 | -0.320675 | M2Sortino | -0.017314 | -0.083390 |
+| AdjustedSharpe | -0.130610 | -0.343215 | MSquaredExcess | -0.210725 | -0.284093 |
+| AnnualizedReturn_Arithmetic | -0.012162 | -0.080571 | Martin | -0.147483 | -1.725960 |
+| AnnualizedReturn_Geometric | -0.016943 | -0.083466 | MaximumDrawdown | 0.170070 | 0.075107 |
+| Appraisal | -0.255460 | -0.524923 | Modigliani | -0.000086 | -0.000438 |
+| ArithmeticReturn | -0.000048 | -0.000320 | NetSelectivity | -0.145137 | -0.256724 |
+| AverageDrawdown | 0.021201 | 0.018467 | Omega | 0.970092 | 0.790245 |
+| AverageDrawdownLength | 74.300000 | 19.500000 | OmegaExcessReturn | -0.046166 | -0.114968 |
+| AverageRecoveryTime | 40.000000 | 4.500000 | PainIndex | 0.105668 | 0.039159 |
+| BernardoLedoit | 0.970092 | 0.790245 | PainRatio | -0.160345 | -2.131479 |
+| BetaCoKurtosis | 0.036864 | -0.084826 | Prospect | -0.404644 | -0.342116 |
+| BetaCoSkewness | -1.671872 | -4.816994 | Rachev | 0.888236 | 0.702365 |
+| Burke | -0.104562 | -1.139562 | Selectivity | -0.025078 | -0.058563 |
+| CAPMAlpha | -0.000080 | -0.000226 | Sharpe_Annualized | -0.123558 | -0.711850 |
+| CAPMBeta | 0.035572 | -0.104983 | Sharpe_Daily | -0.007783 | -0.044842 |
+| CDD | 0.021416 | 0.047726 | Sharpe_ES | -0.003093 | -0.019428 |
+| Calmar | -0.099626 | -1.111300 | Sharpe_VaR | -0.006871 | -0.073416 |
+| CoKurtosis | 0.000000 | -0.000000 | Skewness | -4.151940 | -6.712294 |
+| CoSkewness | -0.000000 | -0.000000 | Sortino | -0.009456 | -0.049159 |
+| CumulativeReturn | -0.049845 | -0.042642 | SpecificRisk | 0.098168 | 0.111565 |
+| DRatio | 1.003342 | 1.375468 | Sterling | -0.062737 | -0.476658 |
+| DownCapture | 0.043554 | -0.048834 | SystematicRisk | 0.006246 | -0.016269 |
+| DownNumber | 0.411950 | 0.358491 | TotalRisk | 0.098367 | 0.112745 |
+| DownPercent | 0.874214 | 0.981132 | TrackingError_Annualized | 0.195779 | 0.204614 |
+| DownsideDeviation | 0.005104 | 0.006504 | TrackingError_Daily | 0.012333 | 0.012889 |
+| DrawdownDeviation | 0.006232 | 0.006974 | Treynor_Annualized | -0.476317 | 0.795044 |
+| ES_Loss | 0.015606 | 0.016457 | Treynor_Daily | -0.001906 | 0.003294 |
+| FamaBeta | 0.560557 | 0.730403 | UlcerIndex | 0.114883 | 0.048359 |
+| GeometricReturn | -0.000068 | -0.000346 | UpCapture | 0.023213 | -0.113401 |
+| Hurst | 0.417088 | 0.513426 | UpNumber | 0.396789 | 0.315068 |
+| Information_Annualized | -1.254642 | -1.567222 | UpPercent | 0.139908 | 0.136986 |
+| Information_Daily | -0.071791 | -0.092388 | UpsidePotential | 0.306695 | 0.185206 |
+| JensenAlpha | -0.025078 | -0.058563 | UpsideRisk | 0.003514 | 0.002870 |
+| Kappa | -0.004604 | -0.023436 | VaR_Loss | 0.007024 | 0.004355 |
+| Kelly | -1.255266 | -6.289215 | Volatility | 0.006201 | 0.007130 |
+| Kurtosis | 47.689790 | 65.244397 | Volatility_Annualized | 0.098432 | 0.113186 |
+
+</details>
+
+<details markdown="1" class="portfolio-sensitivity">
+<summary>Portfolio sensitivity</summary>
+
+**Removing this share from curent_update_baltic**
+
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.762712</td><td>-0.050847</td></tr><tr><td>OUT</td><td>96</td><td>90</td><td>-6</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.207303</td><td>0.059529</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.181595</td><td>0.020102</td></tr></tbody></table>
+
+The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
+
+**Increasing this existing position in the current portfolio**
+
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>TKM1T shares</td><td>288</td><td>293</td><td>+5</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>7956.799965</td><td>44.499998</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.406780</td><td>-0.050847</td></tr><tr><td>OUT</td><td>62</td><td>60</td><td>-2</td></tr><tr><td>IN</td><td>8</td><td>12</td><td>+4</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.069018</td><td>-0.001155</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.090773</td><td>-0.000382</td></tr></tbody></table>
+
+The starting point is the unmodified current portfolio, which already contains 288 TKM1T shares. The scenario adds 5 shares from Table 3A, resulting in 293 shares; every other holding remains unchanged.
+
+<details markdown="1" class="dominance-components">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Choose S&P 500, Current or any model portfolio as the benchmark for the difference panels.
+
+<div class="dominance-explorer" data-asset="TKM1T"><p>Open this section to load the interactive curve explorer.</p></div>
+
+<details markdown="1" class="static-dominance">
+<summary>High-resolution static FSD, SSD and TSD figure</summary>
+
+![TKM1T high-resolution stochastic dominance](figures/stock_profiles/TKM1T_FSD_SSD_TSD.png?v=1792486473)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -1473,9 +1684,9 @@ The static figure is collapsed because the interactive plots above provide the d
 </details>
 
 <details markdown="1" class="stock-profile" id="share-apg1l">
-<summary><strong>APG1L — Apranga</strong> | HOLD | target 327 shares | priority 7</summary>
+<summary><strong>APG1L — Apranga</strong> | HOLD | target 302 shares | priority 8</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>200</td><td>327</td><td>+127</td><td>8.33%</td><td>EUR 3.8100</td><td>0.3051</td><td>38 / 2</td><td>33.00</td><td>Bearish</td><td>Inside bands</td><td>0.772 (Neutral)</td><td>HOLD</td><td>0.006931 (8.085% of portfolio HHI)</td><td>EUR 24,618</td><td>2.0%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>200</td><td>302</td><td>+102</td><td>7.69%</td><td>EUR 3.8100</td><td>0.3051</td><td>38 / 2</td><td>33.00</td><td>Bearish</td><td>Inside bands</td><td>0.772 (Neutral)</td><td>HOLD</td><td>0.005918 (7.632% of portfolio HHI)</td><td>EUR 24,618</td><td>1.6%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
 ![APG1L Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/APG1L_technicals_6m.png)
 
@@ -1491,34 +1702,34 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![APG1L return histogram](figures/stock_profiles/APG1L_histogram.png?v=1792150404)
+![APG1L return histogram](figures/stock_profiles/APG1L_histogram.png?v=1792485735)
 
 </details>
 
 <details markdown="1" class="seasonality-section">
 <summary>Seasonality, drawdowns and upside periods</summary>
 
-The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistically supported calendar effects: **calendar-month, turn-of-month**. Adjusted p-values control the false-discovery rate across all analysed shares.
+The analysis covers 919 daily returns from 2023-01-02 to 2026-10-16. Statistically supported calendar effects: **calendar-month, turn-of-month**. Adjusted p-values control the false-discovery rate across all analysed shares.
 
 | Measure | Value | Measure | Value | Measure | Value |
 | --- | --- | --- | --- | --- | --- |
 | Maximum drawdown | -14.75% (2023-05-29) | Average gain / average loss | 1.022 | Best 21-day period | 19.43% (ending 2023-04-28) |
-| Average underwater drawdown | 5.72% | Upside potential ratio | 0.998 | Worst 21-day period | -13.12% (ending 2023-06-06) |
-| Conditional drawdown 95% | 12.19% | Upside capture vs Baltic EW | 72.2% | Best 5-day period | 8.87% (ending 2023-04-05) |
+| Average underwater drawdown | 5.73% | Upside potential ratio | 0.999 | Worst 21-day period | -13.12% (ending 2023-06-06) |
+| Conditional drawdown 95% | 12.19% | Upside capture vs Baltic EW | 72.1% | Best 5-day period | 8.87% (ending 2023-04-05) |
 | Ulcer index | 6.54 | Downside capture vs Baltic EW | 24.1% | Best 63-day period | 35.32% (ending 2023-04-28) |
 | Longest underwater period | 348 calendar days | Positive trading days | 40.3% | Repeated calendar pattern | May: 0% positive across 4 years |
-| Daily downside deviation | 0.644% | Best day | 6.30% (2023-04-05) |  |  |
-| Daily upside deviation | 0.572% | Worst day | -10.00% (2023-05-11) |  |  |
+| Daily downside deviation | 0.643% | Best day | 6.30% (2023-04-05) |  |  |
+| Daily upside deviation | 0.571% | Worst day | -10.00% (2023-05-11) |  |  |
 
 **Calendar-effect tests and observed averages**
 
 | Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
 | --- | --- | --- | --- | --- |
-| Weekday | Best: Friday (0.132%); worst: Monday (0.015%) | 0.1263 | 0.2641 | Not detected |
-| Calendar month | Best: Apr (0.343% daily); worst: May (-0.440% daily) | 0.0010 | 0.0117 | Detected |
-| Turn of month | First/last three days: 0.251%; other days: 0.023% | 0.0005 | 0.0110 | Detected |
+| Weekday | Best: Friday (0.132%); worst: Monday (0.015%) | 0.1291 | 0.2699 | Not detected |
+| Calendar month | Best: Apr (0.343% daily); worst: May (-0.440% daily) | 0.0010 | 0.0115 | Detected |
+| Turn of month | First/last three days: 0.251%; other days: 0.023% | 0.0005 | 0.0107 | Detected |
 
-![APG1L seasonality, drawdowns and upside periods](figures/stock_profiles/APG1L_seasonality.png?v=1792161041)
+![APG1L seasonality, drawdowns and upside periods](figures/stock_profiles/APG1L_seasonality.png?v=1792486383)
 
 **Five deepest drawdown episodes**
 
@@ -1526,7 +1737,7 @@ The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistical
 | --- | --- | --- | --- | --- | --- |
 | 1 | 2023-04-28 | 2023-05-29 | 2024-02-26 | -14.75% | 304 |
 | 2 | 2024-02-28 | 2024-08-06 | 2025-02-10 | -11.48% | 348 |
-| 3 | 2026-05-11 | 2026-05-27 | Not recovered | -8.76% | 156 |
+| 3 | 2026-05-11 | 2026-05-27 | Not recovered | -8.76% | 158 |
 | 4 | 2025-02-14 | 2025-06-02 | 2025-11-03 | -8.29% | 262 |
 | 5 | 2026-02-03 | 2026-03-26 | 2026-04-23 | -7.98% | 79 |
 
@@ -1536,7 +1747,7 @@ The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistical
 | --- | --- | --- | --- |
 | 1 | 2023-03-28 | 2023-04-28 | 19.43% |
 | 2 | 2025-12-10 | 2026-01-16 | 17.67% |
-| 3 | 2023-01-19 | 2023-02-20 | 15.21% |
+| 3 | 2023-01-20 | 2023-02-21 | 15.21% |
 | 4 | 2026-03-31 | 2026-05-05 | 12.75% |
 | 5 | 2024-01-26 | 2024-02-27 | 10.83% |
 
@@ -1550,12 +1761,12 @@ Announcement times and links come from the official Nasdaq news service. The eff
 | Event type | N | Abnormal 1d | Abnormal 5d | Abnormal 21d | Positive 5d | Direction reversal | BH p(5d) | BH p(21d) | Interpretation |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Dividend announcement | 2 | 0.13% | 1.93% | -6.09% | 50% | 50% | 1.0000 | 1.0000 | No adjusted statistical evidence |
-| Earnings | 13 | 0.34% | 0.70% | -4.06% | 46% | 31% | 1.0000 | 0.0043 | Different from ordinary periods |
+| Earnings | 13 | 0.34% | 0.70% | -4.06% | 46% | 31% | 1.0000 | 0.0044 | Different from ordinary periods |
 | Ex-dividend | 6 | -5.07% | -7.53% | -8.11% | 0% | 67% | 0.0000 | 0.0000 | Different from ordinary periods; price drop may be mechanical |
 | Guidance | 1 | -1.19% | -1.95% | -3.90% | 0% | 0% | 1.0000 | 1.0000 | No adjusted statistical evidence |
-| Revenue | 47 | 0.08% | 0.24% | 1.41% | 57% | 17% | 0.9852 | 1.0000 | No adjusted statistical evidence |
+| Revenue | 47 | 0.08% | 0.24% | 1.41% | 57% | 17% | 0.9869 | 1.0000 | No adjusted statistical evidence |
 
-![APG1L official announcements and abnormal returns](figures/stock_profiles/APG1L_company_events.png?v=1792171539)
+![APG1L official announcements and abnormal returns](figures/stock_profiles/APG1L_company_events.png?v=1792486514)
 
 A direction reversal requires opposite fitted price slopes during the ten trading days before and after the event and at least a 1% five-day move. This identifies temporal association, not proof that the announcement caused the change.
 
@@ -1643,7 +1854,7 @@ A direction reversal requires opposite fitted price slopes during the ten tradin
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![APG1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/APG1L_all_frontiers.png?v=1792150963)
+![APG1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/APG1L_all_frontiers.png?v=1792486189)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -1704,9 +1915,9 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 **Increasing this existing position in the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>APG1L shares</td><td>200</td><td>327</td><td>+127</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>8440.721976</td><td>483.869993</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.525424</td><td>0.101695</td></tr><tr><td>OUT</td><td>62</td><td>66</td><td>+4</td></tr><tr><td>IN</td><td>12</td><td>4</td><td>-8</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.056771</td><td>-0.013352</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.099346</td><td>0.006995</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>APG1L shares</td><td>200</td><td>302</td><td>+102</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>8300.919961</td><td>388.619994</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.525424</td><td>0.067797</td></tr><tr><td>OUT</td><td>62</td><td>66</td><td>+4</td></tr><tr><td>IN</td><td>8</td><td>4</td><td>-4</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.059608</td><td>-0.010565</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.096931</td><td>0.005776</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 200 APG1L shares. The scenario adds 127 shares from Table 3A, resulting in 327 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 200 APG1L shares. The scenario adds 102 shares from Table 3A, resulting in 302 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -1718,7 +1929,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![APG1L high-resolution stochastic dominance](figures/stock_profiles/APG1L_FSD_SSD_TSD.png?v=1792171263)
+![APG1L high-resolution stochastic dominance](figures/stock_profiles/APG1L_FSD_SSD_TSD.png?v=1792486439)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -1731,9 +1942,9 @@ The static figure is collapsed because the interactive plots above provide the d
 </details>
 
 <details markdown="1" class="stock-profile" id="share-grg1l">
-<summary><strong>GRG1L — Grigeo Group</strong> | HOLD | target 722 shares | priority 8</summary>
+<summary><strong>GRG1L — Grigeo Group</strong> | HOLD | target 543 shares | priority 9</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>722</td><td>+722</td><td>4.86%</td><td>EUR 1.0100</td><td>0.3983</td><td>53 / 6</td><td>47.42</td><td>Bullish</td><td>Inside bands</td><td>0.336 (Neutral)</td><td>HOLD</td><td>0.002367 (2.761% of portfolio HHI)</td><td>EUR 12,104</td><td>6.0%</td><td>1.2%</td><td>MEDIUM</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>543</td><td>+543</td><td>3.62%</td><td>EUR 1.0000</td><td>0.3983</td><td>53 / 6</td><td>40.19</td><td>Bearish</td><td>Inside bands</td><td>0.000 (Oversold)</td><td>HOLD</td><td>0.001312 (1.692% of portfolio HHI)</td><td>EUR 12,104</td><td>4.5%</td><td>1.2%</td><td>MEDIUM</td></tr></tbody></table>
 
 ![GRG1L Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/GRG1L_technicals_6m.png)
 
@@ -1749,40 +1960,40 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![GRG1L return histogram](figures/stock_profiles/GRG1L_histogram.png?v=1792150404)
+![GRG1L return histogram](figures/stock_profiles/GRG1L_histogram.png?v=1792485730)
 
 </details>
 
 <details markdown="1" class="seasonality-section">
 <summary>Seasonality, drawdowns and upside periods</summary>
 
-The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
+The analysis covers 919 daily returns from 2023-01-02 to 2026-10-16. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
 
 | Measure | Value | Measure | Value | Measure | Value |
 | --- | --- | --- | --- | --- | --- |
-| Maximum drawdown | -15.59% (2025-11-28) | Average gain / average loss | 1.078 | Best 21-day period | 16.34% (ending 2023-01-31) |
-| Average underwater drawdown | 6.31% | Upside potential ratio | 1.436 | Worst 21-day period | -9.33% (ending 2026-06-01) |
-| Conditional drawdown 95% | 14.53% | Upside capture vs Baltic EW | 59.1% | Best 5-day period | 11.62% (ending 2023-01-31) |
-| Ulcer index | 7.39 | Downside capture vs Baltic EW | 28.7% | Best 63-day period | 23.03% (ending 2023-04-18) |
-| Longest underwater period | 491 calendar days | Positive trading days | 37.1% | Repeated calendar pattern | Dec: 100% positive across 3 years |
-| Daily downside deviation | 0.639% | Best day | 8.37% (2023-12-19) |  |  |
+| Maximum drawdown | -15.59% (2025-11-28) | Average gain / average loss | 1.081 | Best 21-day period | 16.34% (ending 2023-01-31) |
+| Average underwater drawdown | 6.33% | Upside potential ratio | 1.437 | Worst 21-day period | -9.33% (ending 2026-06-01) |
+| Conditional drawdown 95% | 14.55% | Upside capture vs Baltic EW | 58.6% | Best 5-day period | 11.62% (ending 2023-01-31) |
+| Ulcer index | 7.42 | Downside capture vs Baltic EW | 29.1% | Best 63-day period | 23.03% (ending 2023-04-18) |
+| Longest underwater period | 491 calendar days | Positive trading days | 37.0% | Repeated calendar pattern | Dec: 100% positive across 3 years |
+| Daily downside deviation | 0.638% | Best day | 8.37% (2023-12-19) |  |  |
 | Daily upside deviation | 0.744% | Worst day | -4.02% (2026-02-26) |  |  |
 
 **Calendar-effect tests and observed averages**
 
 | Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
 | --- | --- | --- | --- | --- |
-| Weekday | Best: Tuesday (0.117%); worst: Wednesday (0.010%) | 0.6480 | 0.6778 | Not detected |
-| Calendar month | Best: Dec (0.534% daily); worst: May (-0.202% daily) | 0.2466 | 0.4726 | Not detected |
-| Turn of month | First/last three days: 0.026%; other days: 0.047% | 0.9027 | 0.9477 | Not detected |
+| Weekday | Best: Tuesday (0.117%); worst: Thursday (0.007%) | 0.6695 | 0.7000 | Not detected |
+| Calendar month | Best: Dec (0.534% daily); worst: May (-0.202% daily) | 0.2386 | 0.4574 | Not detected |
+| Turn of month | First/last three days: 0.026%; other days: 0.046% | 0.8691 | 0.9400 | Not detected |
 
-![GRG1L seasonality, drawdowns and upside periods](figures/stock_profiles/GRG1L_seasonality.png?v=1792161060)
+![GRG1L seasonality, drawdowns and upside periods](figures/stock_profiles/GRG1L_seasonality.png?v=1792486396)
 
 **Five deepest drawdown episodes**
 
 | Rank | Peak | Trough | Recovery | Loss | Underwater days |
 | --- | --- | --- | --- | --- | --- |
-| 1 | 2025-08-19 | 2025-11-28 | Not recovered | -15.59% | 421 |
+| 1 | 2025-08-19 | 2025-11-28 | Not recovered | -15.59% | 423 |
 | 2 | 2024-04-10 | 2024-08-07 | 2025-08-14 | -11.50% | 491 |
 | 3 | 2023-10-23 | 2023-11-06 | 2023-12-18 | -8.80% | 56 |
 | 4 | 2023-05-11 | 2023-05-24 | 2023-06-14 | -6.89% | 34 |
@@ -1796,7 +2007,7 @@ The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistical
 | 2 | 2023-11-17 | 2023-12-19 | 15.30% |
 | 3 | 2025-11-27 | 2026-01-05 | 14.50% |
 | 4 | 2025-07-18 | 2025-08-19 | 8.26% |
-| 5 | 2023-09-22 | 2023-10-23 | 8.23% |
+| 5 | 2023-09-21 | 2023-10-20 | 8.23% |
 
 The dated extremes identify where company announcements, dividends, corporate actions or data anomalies should be checked. A repeated calendar average is descriptive until it survives the adjusted test and a later out-of-sample period; it is not by itself a buy or sell signal.
 
@@ -1807,11 +2018,11 @@ Announcement times and links come from the official Nasdaq news service. The eff
 
 | Event type | N | Abnormal 1d | Abnormal 5d | Abnormal 21d | Positive 5d | Direction reversal | BH p(5d) | BH p(21d) | Interpretation |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Dividend announcement | 4 | -0.08% | 0.67% | 0.24% | 50% | 0% | 0.9358 | 1.0000 | No adjusted statistical evidence |
+| Dividend announcement | 4 | -0.08% | 0.67% | 0.24% | 50% | 0% | 0.9310 | 1.0000 | No adjusted statistical evidence |
 | Earnings | 1 | 0.96% | 1.15% | 3.29% | 100% | 100% | 1.0000 | 1.0000 | No adjusted statistical evidence |
-| Ex-dividend | 8 | -1.35% | -1.47% | -3.04% | 38% | 50% | 0.4025 | 0.1241 | No adjusted statistical evidence; price drop may be mechanical |
+| Ex-dividend | 8 | -1.35% | -1.47% | -3.04% | 38% | 50% | 0.4044 | 0.1240 | No adjusted statistical evidence; price drop may be mechanical |
 
-![GRG1L official announcements and abnormal returns](figures/stock_profiles/GRG1L_company_events.png?v=1792171545)
+![GRG1L official announcements and abnormal returns](figures/stock_profiles/GRG1L_company_events.png?v=1792486523)
 
 A direction reversal requires opposite fitted price slopes during the ten trading days before and after the event and at least a 1% five-day move. This identifies temporal association, not proof that the announcement caused the change.
 
@@ -1843,7 +2054,7 @@ A direction reversal requires opposite fitted price slopes during the ten tradin
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![GRG1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/GRG1L_all_frontiers.png?v=1792150966)
+![GRG1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/GRG1L_all_frontiers.png?v=1792486193)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -1904,9 +2115,9 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 **Adding this new share to the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>GRG1L shares</td><td>0</td><td>722</td><td>+722</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>8686.071976</td><td>729.219993</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.567797</td><td>0.144068</td></tr><tr><td>OUT</td><td>62</td><td>68</td><td>+6</td></tr><tr><td>IN</td><td>12</td><td>1</td><td>-11</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.072681</td><td>0.002558</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.100373</td><td>0.008021</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>GRG1L shares</td><td>0</td><td>543</td><td>+543</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>8455.299967</td><td>543.000000</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.550847</td><td>0.093220</td></tr><tr><td>OUT</td><td>62</td><td>69</td><td>+7</td></tr><tr><td>IN</td><td>8</td><td>4</td><td>-4</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.071281</td><td>0.001109</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.097179</td><td>0.006023</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 0 GRG1L shares. The scenario adds 722 shares from Table 3A, resulting in 722 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 GRG1L shares. The scenario adds 543 shares from Table 3A, resulting in 543 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -1918,7 +2129,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![GRG1L high-resolution stochastic dominance](figures/stock_profiles/GRG1L_FSD_SSD_TSD.png?v=1792171275)
+![GRG1L high-resolution stochastic dominance](figures/stock_profiles/GRG1L_FSD_SSD_TSD.png?v=1792486447)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -1931,9 +2142,9 @@ The static figure is collapsed because the interactive plots above provide the d
 </details>
 
 <details markdown="1" class="stock-profile" id="share-rsu1l">
-<summary><strong>RSU1L — Rokiškio sūris</strong> | HOLD | target 116 shares | priority 9</summary>
+<summary><strong>RSU1L — Rokiškio sūris</strong> | HOLD | target 126 shares | priority 10</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>116</td><td>+116</td><td>3.47%</td><td>EUR 4.4800</td><td>0.2373</td><td>35 / 7</td><td>47.35</td><td>Bearish</td><td>Inside bands</td><td>0.331 (Neutral)</td><td>HOLD</td><td>0.001207 (1.408% of portfolio HHI)</td><td>EUR 1,260</td><td>41.2%</td><td>4.8%</td><td>HIGH</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>126</td><td>+126</td><td>3.79%</td><td>EUR 4.4800</td><td>0.2373</td><td>35 / 7</td><td>47.35</td><td>Bearish</td><td>Inside bands</td><td>0.331 (Neutral)</td><td>HOLD</td><td>0.001433 (1.848% of portfolio HHI)</td><td>EUR 1,184</td><td>47.7%</td><td>5.2%</td><td>HIGH</td></tr></tbody></table>
 
 ![RSU1L Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/RSU1L_technicals_6m.png)
 
@@ -1949,34 +2160,34 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![RSU1L return histogram](figures/stock_profiles/RSU1L_histogram.png?v=1792150404)
+![RSU1L return histogram](figures/stock_profiles/RSU1L_histogram.png?v=1792485733)
 
 </details>
 
 <details markdown="1" class="seasonality-section">
 <summary>Seasonality, drawdowns and upside periods</summary>
 
-The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
+The analysis covers 919 daily returns from 2023-01-02 to 2026-10-16. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
 
 | Measure | Value | Measure | Value | Measure | Value |
 | --- | --- | --- | --- | --- | --- |
 | Maximum drawdown | -10.23% (2025-06-05) | Average gain / average loss | 1.048 | Best 21-day period | 23.53% (ending 2025-01-20) |
-| Average underwater drawdown | 4.62% | Upside potential ratio | 1.523 | Worst 21-day period | -9.05% (ending 2025-02-18) |
-| Conditional drawdown 95% | 9.44% | Upside capture vs Baltic EW | 85.5% | Best 5-day period | 15.38% (ending 2025-01-20) |
-| Ulcer index | 4.81 | Downside capture vs Baltic EW | 47.3% | Best 63-day period | 25.00% (ending 2025-03-25) |
+| Average underwater drawdown | 4.63% | Upside potential ratio | 1.525 | Worst 21-day period | -9.05% (ending 2025-02-18) |
+| Conditional drawdown 95% | 9.44% | Upside capture vs Baltic EW | 85.3% | Best 5-day period | 15.38% (ending 2025-01-20) |
+| Ulcer index | 4.81 | Downside capture vs Baltic EW | 47.2% | Best 63-day period | 25.00% (ending 2025-03-25) |
 | Longest underwater period | 405 calendar days | Positive trading days | 30.6% | Repeated calendar pattern | Dec: 100% positive across 3 years |
-| Daily downside deviation | 1.005% | Best day | 9.47% (2024-12-03) |  |  |
-| Daily upside deviation | 1.114% | Worst day | -6.78% (2024-08-23) |  |  |
+| Daily downside deviation | 1.004% | Best day | 9.47% (2024-12-03) |  |  |
+| Daily upside deviation | 1.113% | Worst day | -6.78% (2024-08-23) |  |  |
 
 **Calendar-effect tests and observed averages**
 
 | Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
 | --- | --- | --- | --- | --- |
-| Weekday | Best: Wednesday (0.200%); worst: Thursday (-0.078%) | 0.0513 | 0.1691 | Not detected |
-| Calendar month | Best: Dec (0.288% daily); worst: Nov (-0.087% daily) | 0.9663 | 0.9719 | Not detected |
-| Turn of month | First/last three days: 0.132%; other days: 0.037% | 0.4923 | 0.8190 | Not detected |
+| Weekday | Best: Wednesday (0.200%); worst: Thursday (-0.077%) | 0.0517 | 0.1700 | Not detected |
+| Calendar month | Best: Dec (0.288% daily); worst: Nov (-0.087% daily) | 0.9659 | 0.9726 | Not detected |
+| Turn of month | First/last three days: 0.132%; other days: 0.037% | 0.4909 | 0.8443 | Not detected |
 
-![RSU1L seasonality, drawdowns and upside periods](figures/stock_profiles/RSU1L_seasonality.png?v=1792161078)
+![RSU1L seasonality, drawdowns and upside periods](figures/stock_profiles/RSU1L_seasonality.png?v=1792486392)
 
 **Five deepest drawdown episodes**
 
@@ -1984,7 +2195,7 @@ The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistical
 | --- | --- | --- | --- | --- | --- |
 | 1 | 2025-03-25 | 2025-06-05 | 2025-09-12 | -10.23% | 171 |
 | 2 | 2024-08-21 | 2024-08-26 | 2024-12-03 | -9.55% | 104 |
-| 3 | 2026-03-23 | 2026-06-26 | Not recovered | -9.32% | 205 |
+| 3 | 2026-03-23 | 2026-06-26 | Not recovered | -9.32% | 207 |
 | 4 | 2024-12-04 | 2024-12-10 | 2025-01-02 | -9.19% | 29 |
 | 5 | 2025-01-20 | 2025-02-13 | 2025-03-25 | -9.05% | 64 |
 
@@ -1996,7 +2207,7 @@ The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistical
 | 2 | 2024-07-19 | 2024-08-21 | 11.25% |
 | 3 | 2024-05-16 | 2024-06-14 | 11.19% |
 | 4 | 2025-08-19 | 2025-09-18 | 10.40% |
-| 5 | 2024-10-31 | 2024-12-03 | 9.47% |
+| 5 | 2024-11-04 | 2024-12-04 | 9.47% |
 
 The dated extremes identify where company announcements, dividends, corporate actions or data anomalies should be checked. A repeated calendar average is descriptive until it survives the adjusted test and a later out-of-sample period; it is not by itself a buy or sell signal.
 
@@ -2007,11 +2218,11 @@ Announcement times and links come from the official Nasdaq news service. The eff
 
 | Event type | N | Abnormal 1d | Abnormal 5d | Abnormal 21d | Positive 5d | Direction reversal | BH p(5d) | BH p(21d) | Interpretation |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Dividend announcement | 7 | 0.39% | 0.51% | 0.47% | 57% | 29% | 0.9852 | 0.9816 | No adjusted statistical evidence |
-| Earnings | 4 | -0.19% | 0.97% | -0.64% | 75% | 0% | 0.8716 | 0.7522 | No adjusted statistical evidence |
-| Ex-dividend | 4 | -2.69% | -1.57% | -1.28% | 25% | 50% | 0.5386 | 0.6692 | No adjusted statistical evidence; price drop may be mechanical |
+| Dividend announcement | 7 | 0.39% | 0.51% | 0.47% | 57% | 29% | 0.9869 | 0.9781 | No adjusted statistical evidence |
+| Earnings | 4 | -0.19% | 0.97% | -0.64% | 75% | 0% | 0.8693 | 0.7504 | No adjusted statistical evidence |
+| Ex-dividend | 4 | -2.69% | -1.57% | -1.28% | 25% | 50% | 0.5379 | 0.6695 | No adjusted statistical evidence; price drop may be mechanical |
 
-![RSU1L official announcements and abnormal returns](figures/stock_profiles/RSU1L_company_events.png?v=1792171552)
+![RSU1L official announcements and abnormal returns](figures/stock_profiles/RSU1L_company_events.png?v=1792486521)
 
 A direction reversal requires opposite fitted price slopes during the ten trading days before and after the event and at least a 1% five-day move. This identifies temporal association, not proof that the announcement caused the change.
 
@@ -2045,7 +2256,7 @@ A direction reversal requires opposite fitted price slopes during the ten tradin
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![RSU1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/RSU1L_all_frontiers.png?v=1792150969)
+![RSU1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/RSU1L_all_frontiers.png?v=1792486192)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -2106,9 +2317,9 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 **Adding this new share to the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>RSU1L shares</td><td>0</td><td>116</td><td>+116</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>8476.531986</td><td>519.680002</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.525424</td><td>0.101695</td></tr><tr><td>OUT</td><td>62</td><td>66</td><td>+4</td></tr><tr><td>IN</td><td>12</td><td>4</td><td>-8</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.070077</td><td>-0.000046</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.099239</td><td>0.006888</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>RSU1L shares</td><td>0</td><td>126</td><td>+126</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>8476.779969</td><td>564.480002</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.559322</td><td>0.101695</td></tr><tr><td>OUT</td><td>62</td><td>70</td><td>+8</td></tr><tr><td>IN</td><td>8</td><td>4</td><td>-4</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.069275</td><td>-0.000898</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.098533</td><td>0.007377</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 0 RSU1L shares. The scenario adds 116 shares from Table 3A, resulting in 116 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 RSU1L shares. The scenario adds 126 shares from Table 3A, resulting in 126 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -2120,437 +2331,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![RSU1L high-resolution stochastic dominance](figures/stock_profiles/RSU1L_FSD_SSD_TSD.png?v=1792171297)
-
-The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
-
-</details>
-
-</details>
-
-</details>
-
-</details>
-
-<details markdown="1" class="stock-profile" id="share-ign1l">
-<summary><strong>IGN1L — Ignitis grupė</strong> | HOLD | target 14 shares | priority 10</summary>
-
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>14</td><td>+14</td><td>2.07%</td><td>EUR 21.8000</td><td>0.3644</td><td>53 / 10</td><td>43.89</td><td>Bullish</td><td>Inside bands</td><td>1.000 (Overbought)</td><td>HOLD</td><td>0.000427 (0.498% of portfolio HHI)</td><td>EUR 290,959</td><td>0.1%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
-
-![IGN1L Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/IGN1L_technicals_6m.png)
-
-Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
-
-<details markdown="1">
-<summary>Complete technical history</summary>
-
-![IGN1L complete technical history](figures/technical_analysis/IGN1L_technical.png)
-
-</details>
-
-<details markdown="1">
-<summary>Return histogram</summary>
-
-![IGN1L return histogram](figures/stock_profiles/IGN1L_histogram.png?v=1792150405)
-
-</details>
-
-<details markdown="1" class="seasonality-section">
-<summary>Seasonality, drawdowns and upside periods</summary>
-
-The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
-
-| Measure | Value | Measure | Value | Measure | Value |
-| --- | --- | --- | --- | --- | --- |
-| Maximum drawdown | -14.56% (2024-04-24) | Average gain / average loss | 1.052 | Best 21-day period | 9.93% (ending 2026-01-16) |
-| Average underwater drawdown | 6.14% | Upside potential ratio | 1.262 | Worst 21-day period | -9.87% (ending 2025-03-19) |
-| Conditional drawdown 95% | 13.20% | Upside capture vs Baltic EW | 49.4% | Best 5-day period | 5.44% (ending 2025-02-14) |
-| Ulcer index | 7.03 | Downside capture vs Baltic EW | 38.7% | Best 63-day period | 16.77% (ending 2025-02-17) |
-| Longest underwater period | 611 calendar days | Positive trading days | 37.8% | Repeated calendar pattern | Jan: 100% positive across 4 years |
-| Daily downside deviation | 0.427% | Best day | 3.92% (2025-03-27) |  |  |
-| Daily upside deviation | 0.438% | Worst day | -2.94% (2024-04-10) |  |  |
-
-**Calendar-effect tests and observed averages**
-
-| Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
-| --- | --- | --- | --- | --- |
-| Weekday | Best: Friday (0.066%); worst: Tuesday (-0.025%) | 0.2980 | 0.4569 | Not detected |
-| Calendar month | Best: Jan (0.193% daily); worst: Nov (-0.133% daily) | 0.0493 | 0.2266 | Not detected |
-| Turn of month | First/last three days: 0.013%; other days: 0.018% | 0.9314 | 0.9477 | Not detected |
-
-![IGN1L seasonality, drawdowns and upside periods](figures/stock_profiles/IGN1L_seasonality.png?v=1792161093)
-
-**Five deepest drawdown episodes**
-
-| Rank | Peak | Trough | Recovery | Loss | Underwater days |
-| --- | --- | --- | --- | --- | --- |
-| 1 | 2023-05-23 | 2024-04-24 | 2025-01-23 | -14.56% | 611 |
-| 2 | 2025-02-17 | 2025-03-04 | 2026-01-15 | -10.29% | 332 |
-| 3 | 2026-01-26 | 2026-06-08 | Not recovered | -7.49% | 261 |
-| 4 | 2023-03-08 | 2023-03-13 | 2023-04-26 | -3.14% | 49 |
-| 5 | 2025-01-24 | 2025-01-28 | 2025-02-06 | -2.12% | 13 |
-
-**Five strongest non-overlapping 21-trading-day rises**
-
-| Rank | Start | End | 21-day return |
-| --- | --- | --- | --- |
-| 1 | 2025-12-11 | 2026-01-19 | 9.93% |
-| 2 | 2024-12-03 | 2025-01-10 | 7.71% |
-| 3 | 2025-01-14 | 2025-02-12 | 7.37% |
-| 4 | 2026-06-17 | 2026-07-22 | 6.65% |
-| 5 | 2025-04-11 | 2025-05-19 | 6.47% |
-
-The dated extremes identify where company announcements, dividends, corporate actions or data anomalies should be checked. A repeated calendar average is descriptive until it survives the adjusted test and a later out-of-sample period; it is not by itself a buy or sell signal.
-
-<details markdown="1" class="company-events">
-<summary>Official company-news calendar and price-direction analysis (31 events)</summary>
-
-Announcement times and links come from the official Nasdaq news service. The effective date is the first trading close strictly after publication. Abnormal return means the share return minus the equal-weight Baltic-market return over the same window.
-
-| Event type | N | Abnormal 1d | Abnormal 5d | Abnormal 21d | Positive 5d | Direction reversal | BH p(5d) | BH p(21d) | Interpretation |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Dividend payment | 6 | 0.14% | 0.29% | 1.27% | 50% | 33% | 0.9852 | 0.5486 | No adjusted statistical evidence |
-| Earnings | 16 | -0.11% | -0.47% | 0.26% | 31% | 31% | 0.5353 | 1.0000 | No adjusted statistical evidence |
-| Ex-dividend | 6 | -2.42% | -2.47% | -1.44% | 0% | 50% | 0.0026 | 0.2549 | Different from ordinary periods; price drop may be mechanical |
-| Guidance | 3 | -0.32% | 0.22% | 0.67% | 67% | 33% | 0.9852 | 1.0000 | No adjusted statistical evidence |
-
-![IGN1L official announcements and abnormal returns](figures/stock_profiles/IGN1L_company_events.png?v=1792171559)
-
-A direction reversal requires opposite fitted price slopes during the ten trading days before and after the event and at least a 1% five-day move. This identifies temporal association, not proof that the announcement caused the change.
-
-<details markdown="1">
-<summary>Complete official event calendar (31 announcements)</summary>
-
-| Published | Type | Official announcement | Headline fundamental cue | Pre 5d | Post 1d | Post 5d | Post 21d | Abnormal 5d | Reversal |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2026-08-12 09:00 | Earnings | [First six months 2026 interim report: sustained strategic progress and consistent financial performance. Full-year 2026 guidance for Adjusted EBITDA and Investments reiterated](https://view.news.eu.nasdaq.com/view?id=b23c9cb57695e371ed8640bfeef0d7640&lang=en&src=listed) | EBITDA | -0.67% | -0.22% | -1.35% | -0.67% | -1.40% | Yes |
-| 2026-05-13 09:00 | Earnings | [First three months 2026 interim report: solid performance and debut asset rotation transaction completed. Full-year 2026 guidance for Adjusted EBITDA and Investments reiterated](https://view.news.eu.nasdaq.com/view?id=bec1aa53fcd36d7817f04b1eb522f7197&lang=en&src=listed) | EBITDA | -0.47% | -0.23% | -0.93% | -1.17% | -0.36% | No |
-| 2026-02-25 09:31 | Earnings | [Integrated Annual Report 2025: record strategic progress with +0.7 GW of new green capacities installed, completed mass smart meter roll-out, and Adjusted EBITDA beat ](https://view.news.eu.nasdaq.com/view?id=bb041135c4b64fadf4935af5069f81d50&lang=en&src=listed) | EBITDA | -1.35% | 0.23% | -0.92% | -2.06% | -0.31% | No |
-| 2025-12-15 16:00 | Earnings | [On the tentative award of a Polish capacity mechanism quarterly auction for 2030 to Ignitis Gamyba](https://view.news.eu.nasdaq.com/view?id=b3992b6b4d7a109cd6a4b141f247e4bf1&lang=en&src=listed) | Open official announcement | 0.49% | 0.00% | 1.21% | 8.45% | 0.61% | No |
-| 2025-11-12 09:00 | Earnings | [First nine months 2025 interim report: strong earnings and business plan delivery with +0.7 GW installed green capacities. Full-year 2025 guidance for Adjusted EBITDA and Investments updated](https://view.news.eu.nasdaq.com/view?id=b153d72e9b1d6fd3c4522e49b2f527554&lang=en&src=listed) | EBITDA | -0.95% | 0.00% | 0.24% | -0.24% | 0.63% | No |
-| 2025-10-03 08:00 | Dividend payment | [Official dividend calendar: Dividend payment date, EUR 0.683 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.683  | 0.73% | 0.00% | 0.97% | 1.45% | 0.69% | No |
-| 2025-09-23 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.683 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.683  | 0.24% | -2.84% | -3.07% | -0.71% | -2.75% | Yes |
-| 2025-08-13 09:00 | Guidance | [First six months 2025: solid results and continued strategy delivery, highlighted by the launch of 313.7 MW Kelmė wind farm, the largest in the Baltics. Full-year 2025 Adjusted EBITDA and Investments guidance reiterated](https://view.news.eu.nasdaq.com/view?id=b2af26ecba6eba6d468dcb4bf74520da7&lang=en&src=listed) | EBITDA | 0.97% | 0.00% | 0.96% | 0.96% | 1.09% | No |
-| 2025-05-14 09:00 | Earnings | [First three months 2025 interim report: strong performance and strategic plan execution marked by the launch of Kelmė wind farm I. Full-year 2025 Adjusted EBITDA and Investments guidance reiterated](https://view.news.eu.nasdaq.com/view?id=be14dc8f7c8f016ce03a963cb8acef3c5&lang=en&src=listed) | EBITDA | 0.00% | 1.18% | 0.95% | -0.95% | -0.28% | No |
-| 2025-04-22 08:00 | Dividend payment | [Official dividend calendar: Dividend payment date, EUR 0.663 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.663  | -1.47% | 0.75% | 1.74% | 4.98% | -0.14% | Yes |
-| 2025-04-08 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.663 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.663  | -2.83% | -0.24% | -1.94% | 3.16% | -4.07% | Yes |
-| 2025-04-01 16:15 | Earnings | [On the tentative award of a Polish capacity mechanism quarterly auction for 2026 to Ignitis Gamyba](https://view.news.eu.nasdaq.com/view?id=b4a790a7976beca1fac09b1c7bb1e1463&lang=en&src=listed) | Open official announcement | 4.17% | -0.24% | -3.29% | -0.47% | -1.14% | Yes |
-| 2025-02-26 09:01 | Earnings | [Integrated Annual Report 2024: continued strategy delivery with strong underlying results. Full-year Adjusted EBITDA guidance beat](https://view.news.eu.nasdaq.com/view?id=b7b30a6a4946d68f666d39ac59e2bd9d2&lang=en&src=listed) | EBITDA | -2.27% | -2.78% | -5.34% | -1.62% | -5.57% | No |
-| 2024-11-13 09:00 | Earnings | [First nine months 2024 interim report: strong performance and continued project delivery. Full-year Adjusted EBITDA guidance increased](https://view.news.eu.nasdaq.com/view?id=b6317df359f513018cedc64985223b92a&lang=en&src=listed) | EBITDA | -0.42% | 0.10% | -0.52% | 2.51% | 0.27% | No |
-| 2024-10-04 08:00 | Dividend payment | [Official dividend calendar: Dividend payment date, EUR 0.663 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.663  | -1.27% | 0.75% | 0.97% | 3.11% | -0.92% | No |
-| 2024-09-24 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.663 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.663  | 0.53% | -2.63% | -1.26% | 1.89% | -1.04% | No |
-| 2024-08-14 09:00 | Earnings | [First six months 2024 interim report: strategy delivery with three Green Capacities projects reaching COD and 2024 guidance upgrade](https://view.news.eu.nasdaq.com/view?id=b56f238f4011c31c49133e48420b9f89b&lang=en&src=listed) | Open official announcement | -0.65% | 0.77% | 1.20% | 3.50% | 1.48% | Yes |
-| 2024-05-15 09:03 | Earnings | [First three months 2024 interim report: continued Green Capacities Portfolio growth ](https://view.news.eu.nasdaq.com/view?id=b7169e677fdd324d8695918eed1b0ba12&lang=en&src=listed) | Open official announcement | 0.00% | -0.22% | -1.53% | 3.17% | -1.04% | No |
-| 2024-04-23 08:00 | Dividend payment | [Official dividend calendar: Dividend payment date, EUR 0.643 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.643  | -1.10% | 0.00% | 2.23% | 0.33% | 1.80% | Yes |
-| 2024-04-10 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.643 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.643  | 2.25% | -2.94% | -5.25% | -4.09% | -4.26% | Yes |
-| 2024-02-28 09:05 | Earnings | [Integrated Annual Report 2023: guidance beat, all time high investments and the largest renewable energy projects in the Baltics secured](https://view.news.eu.nasdaq.com/view?id=b7cd799d8817c9769263793387869b498&lang=en&src=listed) | Open official announcement | 1.18% | -1.17% | -0.53% | -1.06% | -0.21% | No |
-| 2023-11-21 09:15 | Earnings | [First nine months 2023 interim report: all time high investments, start of construction of the largest onshore wind farm in the Baltics, and final investment decision taken for the largest solar portfolio in the Baltics](https://view.news.eu.nasdaq.com/view?id=bc234fdd2382985cff6d1ae3109d382eb&lang=en&src=listed) | Open official announcement | -1.41% | -0.41% | -0.92% | -4.39% | -0.53% | No |
-| 2023-10-17 08:00 | Dividend payment | [Official dividend calendar: Dividend payment date, EUR 0.643 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.643  | 0.25% | 0.00% | 0.00% | -2.29% | -0.27% | No |
-| 2023-10-04 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.643 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.643  | 0.49% | -2.43% | -2.91% | -3.69% | -2.54% | No |
-| 2023-08-22 09:00 | Earnings | [First six months 2023 interim report: strong performance and significant offshore wind development progress](https://view.news.eu.nasdaq.com/view?id=bc4bb6c4b781d7ddf944ca6ed15f8c368&lang=en&src=listed) | Open official announcement | 0.50% | -0.74% | -0.74% | 0.99% | -0.98% | No |
-| 2023-05-23 09:05 | Guidance | [AB “Ignitis grupė” strategy update and Strategic plan 2023-2026 establish even more ambitious Green Generation and decarbonisation targets](https://view.news.eu.nasdaq.com/view?id=b1372b135924ed0b8ac8699cb442f9b4d&lang=en&src=listed) | Open official announcement | 1.70% | -0.72% | -1.43% | -3.34% | -1.43% | Yes |
-| 2023-05-23 09:00 | Earnings | [First three months 2023 interim report: strong results despite lower power prices ](https://view.news.eu.nasdaq.com/view?id=ba02d4111e49f2529c69842eb70ee7e01&lang=en&src=listed) | Open official announcement | 1.70% | -0.72% | -1.43% | -3.34% | -1.43% | Yes |
-| 2023-05-09 09:00 | Guidance | [Ignitis Group to present 3M 2023 results, Strategy update and Strategic plan 2023-2026 on 23 May](https://view.news.eu.nasdaq.com/view?id=b98fddaf05e574c325ce991b0e4433633&lang=en&src=listed) | Open official announcement | -0.48% | -0.24% | 0.00% | -0.49% | 1.00% | No |
-| 2023-04-26 08:00 | Dividend payment | [Official dividend calendar: Dividend payment date, EUR 0.624 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.624  | 0.24% | 0.49% | 0.24% | 0.24% | 0.56% | No |
-| 2023-04-13 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.624 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.624  | 1.72% | -2.66% | -0.24% | -0.24% | -0.12% | No |
-| 2023-02-28 09:18 | Earnings | [Annual report 2022: strong financial and strategic performance dominated by Green Generation growth ](https://view.news.eu.nasdaq.com/view?id=bc22de83da9b04f39713f1d9f88d2edfd&lang=en&src=listed) | Open official announcement | 2.55% | 1.49% | 2.99% | 1.24% | 2.77% | Yes |
-
-</details>
-
-</details>
-
-</details>
-
-<details markdown="1">
-<summary>All five model frontiers with this share highlighted</summary>
-
-![IGN1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/IGN1L_all_frontiers.png?v=1792150971)
-
-The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
-
-</details>
-
-<details markdown="1">
-<summary>All 72 PerformanceAnalytics measures: full period and last 126 observations</summary>
-
-| Measure | Full period | Last 126 | Measure | Full period | Last 126 |
-| --- | --- | --- | --- | --- | --- |
-| ActiveReturn | -0.206414 | -0.329730 | M2Sortino | 0.023483 | -0.097384 |
-| AdjustedSharpe | 0.263485 | -1.154161 | MSquaredExcess | -0.154606 | -0.345176 |
-| AnnualizedReturn_Arithmetic | 0.027126 | -0.094236 | Martin | 0.259626 | -1.700111 |
-| AnnualizedReturn_Geometric | 0.022275 | -0.092520 | MaximumDrawdown | 0.165620 | 0.083436 |
-| Appraisal | 0.161912 | -1.387410 | Modigliani | 0.000187 | -0.000767 |
-| ArithmeticReturn | 0.000108 | -0.000374 | NetSelectivity | -0.109264 | -0.208123 |
-| AverageDrawdown | 0.044485 | 0.048326 | Omega | 1.054449 | 0.805154 |
-| AverageDrawdownLength | 74.400000 | 63.000000 | OmegaExcessReturn | -0.003127 | -0.109577 |
-| AverageRecoveryTime | 38.900000 | 19.500000 | PainIndex | 0.070307 | 0.050002 |
-| BernardoLedoit | 1.054449 | 0.805154 | PainRatio | 0.316822 | -1.850328 |
-| BetaCoKurtosis | -0.082161 | 0.030921 | Prospect | -0.532723 | -0.787432 |
-| BetaCoSkewness | -3.787258 | -21.478044 | Rachev | 1.039140 | 0.922872 |
-| Burke | 0.127683 | -1.892262 | Selectivity | 0.016326 | -0.103858 |
-| CAPMAlpha | 0.000085 | -0.000417 | Sharpe_Annualized | 0.268574 | -1.247812 |
-| CAPMBeta | 0.026014 | 0.047798 | Sharpe_Daily | 0.016919 | -0.078605 |
-| CDD | 0.109179 | 0.072903 | Sharpe_ES | 0.006979 | -0.035029 |
-| Calmar | 0.134494 | -1.108877 | Sharpe_VaR | 0.011676 | -0.053100 |
-| CoKurtosis | -0.000000 | 0.000000 | Skewness | -0.033254 | 0.049286 |
-| CoSkewness | -0.000001 | -0.000000 | Sortino | 0.024262 | -0.106190 |
-| CumulativeReturn | 0.068138 | -0.047383 | SpecificRisk | 0.100831 | 0.074858 |
-| DRatio | 0.968757 | 1.567283 | Sterling | 0.083860 | -0.504374 |
-| DownCapture | 0.019678 | 0.138513 | SystematicRisk | 0.004568 | 0.007407 |
-| DownNumber | 0.399371 | 0.490566 | TotalRisk | 0.100934 | 0.075223 |
-| DownPercent | 0.874214 | 0.886792 | TrackingError_Annualized | 0.198573 | 0.165594 |
-| DownsideDeviation | 0.004437 | 0.003522 | TrackingError_Daily | 0.012509 | 0.010431 |
-| DrawdownDeviation | 0.007873 | 0.007526 | Treynor_Annualized | 0.856261 | -1.935667 |
-| ES_Loss | 0.015423 | 0.010675 | Treynor_Daily | 0.003361 | -0.008059 |
-| FamaBeta | 0.575188 | 0.487345 | UlcerIndex | 0.085796 | 0.054420 |
-| GeometricReturn | 0.000087 | -0.000385 | UpCapture | 0.040918 | 0.022186 |
-| Hurst | 0.358896 | 0.362031 | UpNumber | 0.383028 | 0.342466 |
-| Information_Annualized | -1.039489 | -1.991189 | UpPercent | 0.162844 | 0.150685 |
-| Information_Daily | -0.058371 | -0.117933 | UpsidePotential | 0.469849 | 0.438804 |
-| JensenAlpha | 0.016326 | -0.103858 | UpsideRisk | 0.004556 | 0.003192 |
-| Kappa | 0.015679 | -0.078562 | VaR_Loss | 0.009219 | 0.007042 |
-| Kelly | 2.659124 | -16.522785 | Volatility | 0.006362 | 0.004757 |
-| Kurtosis | 8.810035 | 3.998859 | Volatility_Annualized | 0.101001 | 0.075521 |
-
-</details>
-
-<details markdown="1" class="portfolio-sensitivity">
-<summary>Portfolio sensitivity</summary>
-
-**Removing this share from curent_update_baltic**
-
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.813559</td><td>0.000000</td></tr><tr><td>OUT</td><td>96</td><td>96</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.146862</td><td>-0.000911</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.161498</td><td>0.000006</td></tr></tbody></table>
-
-The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
-
-**Adding this new share to the current portfolio**
-
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>IGN1L shares</td><td>0</td><td>14</td><td>+14</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>8262.051973</td><td>305.199989</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.440678</td><td>0.016949</td></tr><tr><td>OUT</td><td>62</td><td>62</td><td>+0</td></tr><tr><td>IN</td><td>12</td><td>10</td><td>-2</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.071911</td><td>0.001788</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.093427</td><td>0.001075</td></tr></tbody></table>
-
-The starting point is the unmodified current portfolio, which already contains 0 IGN1L shares. The scenario adds 14 shares from Table 3A, resulting in 14 shares; every other holding remains unchanged.
-
-<details markdown="1" class="dominance-components">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Choose S&P 500, Current or any model portfolio as the benchmark for the difference panels.
-
-<div class="dominance-explorer" data-asset="IGN1L"><p>Open this section to load the interactive curve explorer.</p></div>
-
-<details markdown="1" class="static-dominance">
-<summary>High-resolution static FSD, SSD and TSD figure</summary>
-
-![IGN1L high-resolution stochastic dominance](figures/stock_profiles/IGN1L_FSD_SSD_TSD.png?v=1792171280)
-
-The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
-
-</details>
-
-</details>
-
-</details>
-
-</details>
-
-<details markdown="1" class="stock-profile" id="share-pzv1l">
-<summary><strong>PZV1L — Pieno žvaigždės</strong> | HOLD | target 171 shares | priority 11</summary>
-
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>171</td><td>+171</td><td>2.04%</td><td>EUR 1.7850</td><td>0.2034</td><td>35 / 11</td><td>57.98</td><td>Bearish</td><td>Inside bands</td><td>0.145 (Oversold)</td><td>HOLD</td><td>0.000418 (0.487% of portfolio HHI)</td><td>EUR 4,749</td><td>6.4%</td><td>1.2%</td><td>HIGH</td></tr></tbody></table>
-
-![PZV1L Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/PZV1L_technicals_6m.png)
-
-Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
-
-<details markdown="1">
-<summary>Complete technical history</summary>
-
-![PZV1L complete technical history](figures/technical_analysis/PZV1L_technical.png)
-
-</details>
-
-<details markdown="1">
-<summary>Return histogram</summary>
-
-![PZV1L return histogram](figures/stock_profiles/PZV1L_histogram.png?v=1792150405)
-
-</details>
-
-<details markdown="1" class="seasonality-section">
-<summary>Seasonality, drawdowns and upside periods</summary>
-
-The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
-
-| Measure | Value | Measure | Value | Measure | Value |
-| --- | --- | --- | --- | --- | --- |
-| Maximum drawdown | -30.11% (2025-11-06) | Average gain / average loss | 1.044 | Best 21-day period | 19.23% (ending 2025-12-09) |
-| Average underwater drawdown | 7.97% | Upside potential ratio | 1.244 | Worst 21-day period | -22.16% (ending 2025-11-06) |
-| Conditional drawdown 95% | 21.37% | Upside capture vs Baltic EW | 107.3% | Best 5-day period | 13.08% (ending 2025-11-13) |
-| Ulcer index | 9.18 | Downside capture vs Baltic EW | 67.0% | Best 63-day period | 24.62% (ending 2026-02-13) |
-| Longest underwater period | 524 calendar days | Positive trading days | 36.1% | Repeated calendar pattern | Dec: 100% positive across 3 years |
-| Daily downside deviation | 0.933% | Best day | 10.09% (2023-08-02) |  |  |
-| Daily upside deviation | 1.016% | Worst day | -10.71% (2024-05-14) |  |  |
-
-**Calendar-effect tests and observed averages**
-
-| Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
-| --- | --- | --- | --- | --- |
-| Weekday | Best: Wednesday (0.173%); worst: Tuesday (-0.039%) | 0.4424 | 0.5163 | Not detected |
-| Calendar month | Best: Dec (0.465% daily); worst: May (-0.347% daily) | 0.0800 | 0.2492 | Not detected |
-| Turn of month | First/last three days: 0.110%; other days: 0.047% | 0.7801 | 0.9443 | Not detected |
-
-![PZV1L seasonality, drawdowns and upside periods](figures/stock_profiles/PZV1L_seasonality.png?v=1792161101)
-
-**Five deepest drawdown episodes**
-
-| Rank | Peak | Trough | Recovery | Loss | Underwater days |
-| --- | --- | --- | --- | --- | --- |
-| 1 | 2025-05-08 | 2025-11-06 | Not recovered | -30.11% | 524 |
-| 2 | 2024-02-12 | 2024-05-20 | 2024-12-05 | -18.39% | 297 |
-| 3 | 2023-05-09 | 2023-06-28 | 2023-08-02 | -8.20% | 85 |
-| 4 | 2025-02-25 | 2025-03-05 | 2025-04-28 | -8.09% | 62 |
-| 5 | 2023-08-03 | 2023-08-10 | 2023-12-01 | -7.51% | 120 |
-
-**Five strongest non-overlapping 21-trading-day rises**
-
-| Rank | Start | End | 21-day return |
-| --- | --- | --- | --- |
-| 1 | 2025-11-06 | 2025-12-09 | 19.23% |
-| 2 | 2024-11-28 | 2025-01-07 | 15.86% |
-| 3 | 2026-03-27 | 2026-04-29 | 12.75% |
-| 4 | 2025-04-02 | 2025-05-08 | 12.05% |
-| 5 | 2026-06-11 | 2026-07-16 | 11.91% |
-
-The dated extremes identify where company announcements, dividends, corporate actions or data anomalies should be checked. A repeated calendar average is descriptive until it survives the adjusted test and a later out-of-sample period; it is not by itself a buy or sell signal.
-
-<details markdown="1" class="company-events">
-<summary>Official company-news calendar and price-direction analysis (24 events)</summary>
-
-Announcement times and links come from the official Nasdaq news service. The effective date is the first trading close strictly after publication. Abnormal return means the share return minus the equal-weight Baltic-market return over the same window.
-
-| Event type | N | Abnormal 1d | Abnormal 5d | Abnormal 21d | Positive 5d | Direction reversal | BH p(5d) | BH p(21d) | Interpretation |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Dividend payment | 1 | -0.66% | -2.62% | 3.07% | 0% | 100% | 1.0000 | 1.0000 | No adjusted statistical evidence |
-| Earnings | 17 | 0.68% | -0.06% | -0.46% | 47% | 35% | 0.9852 | 0.7250 | No adjusted statistical evidence |
-| Ex-dividend | 6 | -3.79% | -6.89% | -9.34% | 17% | 33% | 0.0029 | 0.0001 | Different from ordinary periods; price drop may be mechanical |
-
-![PZV1L official announcements and abnormal returns](figures/stock_profiles/PZV1L_company_events.png?v=1792171562)
-
-A direction reversal requires opposite fitted price slopes during the ten trading days before and after the event and at least a 1% five-day move. This identifies temporal association, not proof that the announcement caused the change.
-
-<details markdown="1">
-<summary>Complete official event calendar (24 announcements)</summary>
-
-| Published | Type | Official announcement | Headline fundamental cue | Pre 5d | Post 1d | Post 5d | Post 21d | Abnormal 5d | Reversal |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2026-05-29 21:00 | Earnings | [Unaudited financial results of AB Pieno žvaigždės for the three months of 2026](https://view.news.eu.nasdaq.com/view?id=bda3c7599420f5fd67a7028dc1cdf1113&lang=en&src=listed) | Open official announcement | -1.55% | 3.15% | 1.26% | 6.94% | 0.78% | No |
-| 2026-05-21 08:00 | Dividend payment | [Official dividend calendar: Dividend payment date, EUR 0.14 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.14  | 0.63% | -0.62% | -2.49% | 2.18% | -2.62% | Yes |
-| 2026-05-12 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.14 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.14  | 0.88% | -7.27% | -7.56% | -6.40% | -6.52% | No |
-| 2026-04-28 21:00 | Earnings | [Election of the Supervisory Board, Management Board and Audit Committee of AB Pieno žvaigždės](https://view.news.eu.nasdaq.com/view?id=b98dad7349686ff327592f4dbf9f80eb8&lang=en&src=listed) | Open official announcement | 0.88% | 0.00% | 1.16% | -5.22% | 0.93% | Yes |
-| 2026-04-28 20:45 | Ex-dividend | [Ex-dividend date and procedure for the payment of Pieno Žvaigždės AB dividends for the year 2025](https://view.news.eu.nasdaq.com/view?id=b8f19491c5dfb05f42eb8452807f39063&lang=en&src=listed) | Open official announcement | 0.88% | 0.00% | 1.16% | -5.22% | 0.93% | Yes |
-| 2026-02-27 20:45 | Earnings | [Unaudited financial results of AB Pieno žvaigždės for 2025](https://view.news.eu.nasdaq.com/view?id=bc3c8d2a356fe1e4142de8dc6ee5df352&lang=en&src=listed) | Open official announcement | 0.31% | -1.23% | -1.54% | -4.94% | -0.66% | No |
-| 2025-11-28 18:00 | Earnings | [Nine-month unaudited financial results of AB Pieno Zvaigzdes for 2025](https://view.news.eu.nasdaq.com/view?id=b7a1f0194f97886ffd37a82351d7b23b7&lang=en&src=listed) | Open official announcement | 1.35% | 0.33% | 2.33% | 9.00% | 1.88% | No |
-| 2025-09-25 19:00 | Earnings | [AB "Pieno žvaigždės" Unaudited Financial Results for the First Six Months of 2025](https://view.news.eu.nasdaq.com/view?id=b0c91aca970782257d8f658719077777e&lang=en&src=listed) | Open official announcement | -2.94% | -0.61% | -1.21% | -14.55% | -1.76% | Yes |
-| 2025-05-29 21:30 | Earnings | [Unaudited financial results of AB Pieno žvaigždės for the three months of 2025](https://view.news.eu.nasdaq.com/view?id=bddf5bf49b96e39767a2bed7a4733f1c8&lang=en&src=listed) | Open official announcement | -1.47% | -2.69% | -4.78% | -2.99% | -4.49% | Yes |
-| 2025-05-09 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.14 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.14  | 5.68% | -8.06% | -9.14% | -14.52% | -8.91% | No |
-| 2025-05-05 20:00 | Ex-dividend | [Correction: Ex-dividend date and procedure for the payment of Pieno Žvaigždės AB dividends for the year 2024](https://view.news.eu.nasdaq.com/view?id=ba8b91f09e1d6cad3508f0a453fa96eb2&lang=en&src=listed) | Open official announcement | 2.32% | 3.12% | -3.68% | -10.76% | -5.30% | Yes |
-| 2025-04-30 19:00 | Earnings | [Unaudited financial results of AB Pieno žvaigždės for the three months of 2025](https://view.news.eu.nasdaq.com/view?id=ba89c61d9cecbd0092e27991215520f20&lang=en&src=listed) | Open official announcement | 2.32% | 3.12% | -3.68% | -10.76% | -5.30% | Yes |
-| 2025-02-28 18:00 | Earnings | [Unaudited financial results of AB Pieno žvaigždės for 2024](https://view.news.eu.nasdaq.com/view?id=b19185cf88d17f2efc2e680a70ae5958f&lang=en&src=listed) | Open official announcement | 0.58% | -5.81% | -4.65% | -4.07% | -4.65% | No |
-| 2024-11-30 16:00 | Earnings | [Nine-month unaudited financial results of AB Pieno zvaigzdes for 2024](https://view.news.eu.nasdaq.com/view?id=bbc53a32d833c6084aed9a82f8409918b&lang=en&src=listed) | Open official announcement | 1.39% | 0.00% | 1.37% | 15.07% | -0.52% | No |
-| 2024-09-19 19:00 | Earnings | [AB "Pieno žvaigždės" Unaudited Financial Results for the First Six Months of 2024](https://view.news.eu.nasdaq.com/view?id=b5012d284a5945cbc94f2150e29f8f2b2&lang=en&src=listed) | Open official announcement | 1.43% | -0.70% | -0.70% | -0.70% | -0.10% | No |
-| 2024-05-31 17:00 | Earnings | [Unaudited financial results of AB Pieno žvaigždės for the three months of 2024](https://view.news.eu.nasdaq.com/view?id=b9d4d15db84d9a50d17c3d90136dacadd&lang=en&src=listed) | Open official announcement | 1.61% | -0.79% | 0.79% | 2.38% | 0.82% | No |
-| 2024-05-14 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.14 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.14  | -2.78% | -10.71% | -12.86% | -10.00% | -11.78% | No |
-| 2024-05-09 20:00 | Ex-dividend | [Ex-dividend date and procedure for the payment of Pieno Žvaigždės AB dividends for the year 2023](https://view.news.eu.nasdaq.com/view?id=bb8a048a05aa6ea539459b561ea8bd5f8&lang=en&src=listed) | Open official announcement | -3.45% | 0.00% | -11.43% | -9.29% | -9.78% | No |
-| 2024-02-29 18:15 | Earnings | [Unaudited financial results of AB Pieno žvaigždės for 2023](https://view.news.eu.nasdaq.com/view?id=ba2507a45c44e1cc022a59edceebfba91&lang=en&src=listed) | Open official announcement | 2.41% | -0.67% | -6.04% | -6.04% | -5.52% | Yes |
-| 2023-10-18 17:00 | Earnings | [Nine-month unaudited financial results of AB Pieno zvaigzdes for 2023](https://view.news.eu.nasdaq.com/view?id=bfa7594f2c6869d525dd63c88a1848bb8&lang=en&src=listed) | Open official announcement | 0.00% | 5.93% | 4.24% | 5.51% | 4.83% | No |
-| 2023-08-01 17:00 | Earnings | [Unaudited financial results of AB Pieno žvaigždės for the six months of 2023](https://view.news.eu.nasdaq.com/view?id=b48e1e9a1a9289dab1423d7af85a3b7ae&lang=en&src=listed) | Open official announcement | 0.00% | 10.09% | 7.02% | 6.14% | 7.14% | Yes |
-| 2023-05-05 17:00 | Earnings | [Unaudited financial results of AB Pieno žvaigždės for the three months of 2023](https://view.news.eu.nasdaq.com/view?id=bb069acf3c9df6121e57b055bacd5e368&lang=en&src=listed) | Open official announcement | -1.28% | 3.90% | 4.76% | -1.73% | 5.44% | No |
-| 2023-03-01 16:41 | Earnings | [Correction: Unaudited financial results of AB Pieno žvaigždės for 2022](https://view.news.eu.nasdaq.com/view?id=b002277d8782b40eb6bea6eb02e706e40&lang=en&src=listed) | Open official announcement | -3.28% | -0.42% | 0.00% | -3.39% | 0.38% | No |
-| 2023-02-28 18:00 | Earnings | [Unaudited financial results of AB Pieno žvaigždės for 2022](https://view.news.eu.nasdaq.com/view?id=b9ca4b3a55215abe89615c679a3e7d910&lang=en&src=listed) | Open official announcement | -1.67% | 0.00% | 0.00% | -3.81% | -0.22% | No |
-
-</details>
-
-</details>
-
-</details>
-
-<details markdown="1">
-<summary>All five model frontiers with this share highlighted</summary>
-
-![PZV1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/PZV1L_all_frontiers.png?v=1792150972)
-
-The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
-
-</details>
-
-<details markdown="1">
-<summary>All 72 PerformanceAnalytics measures: full period and last 126 observations</summary>
-
-| Measure | Full period | Last 126 | Measure | Full period | Last 126 |
-| --- | --- | --- | --- | --- | --- |
-| ActiveReturn | -0.020233 | -0.226031 | M2Sortino | 0.206232 | 0.010702 |
-| AdjustedSharpe | 0.494959 | 0.156930 | MSquaredExcess | -0.052380 | -0.184990 |
-| AnnualizedReturn_Arithmetic | 0.214083 | 0.032358 | Martin | 2.575798 | 0.233270 |
-| AnnualizedReturn_Geometric | 0.208457 | 0.011178 | MaximumDrawdown | 0.212625 | 0.120349 |
-| Appraisal | 0.893618 | 0.175202 | Modigliani | 0.000670 | 0.000096 |
-| ArithmeticReturn | 0.000850 | 0.000128 | NetSelectivity | -0.081640 | -0.306835 |
-| AverageDrawdown | 0.037616 | 0.038908 | Omega | 1.241052 | 1.037313 |
-| AverageDrawdownLength | 18.810811 | 17.714286 | OmegaExcessReturn | 0.156533 | -0.029300 |
-| AverageRecoveryTime | 9.054054 | 7.142857 | PainIndex | 0.055102 | 0.035411 |
-| BernardoLedoit | 1.241052 | 1.037313 | PainRatio | 3.783116 | 0.315666 |
-| BetaCoKurtosis | 0.055288 | -0.060055 | Prospect | -0.392082 | -0.499354 |
-| BetaCoSkewness | -0.465367 | -8.424866 | Rachev | 1.173382 | 1.208888 |
-| Burke | 0.701161 | 0.096201 | Selectivity | 0.198809 | 0.036142 |
-| CAPMAlpha | 0.000812 | 0.000222 | Sharpe_Annualized | 0.961100 | 0.155753 |
-| CAPMBeta | 0.042185 | -0.105240 | Sharpe_Daily | 0.060544 | 0.009812 |
-| CDD | 0.096713 | 0.088394 | Sharpe_ES | 0.027378 | 0.005290 |
-| Calmar | 0.980395 | 0.092880 | Sharpe_VaR | 0.050639 | 0.010280 |
-| CoKurtosis | 0.000000 | -0.000000 | Skewness | 0.556555 | 1.109540 |
-| CoSkewness | -0.000000 | -0.000000 | Sortino | 0.093674 | 0.015365 |
-| CumulativeReturn | 0.762141 | 0.005573 | SpecificRisk | 0.222477 | 0.206287 |
-| DRatio | 0.722207 | 1.293210 | Sterling | 0.666794 | 0.050729 |
-| DownCapture | -0.086529 | -0.269291 | SystematicRisk | 0.007408 | -0.016308 |
-| DownNumber | 0.314465 | 0.358491 | TotalRisk | 0.222600 | 0.206930 |
-| DownPercent | 0.817610 | 0.943396 | TrackingError_Annualized | 0.279015 | 0.268754 |
-| DownsideDeviation | 0.009069 | 0.008357 | TrackingError_Daily | 0.017576 | 0.016930 |
-| DrawdownDeviation | 0.014074 | 0.013245 | Treynor_Annualized | 4.941486 | -0.106215 |
-| ES_Loss | 0.031030 | 0.024274 | Treynor_Daily | 0.017818 | -0.000419 |
-| FamaBeta | 1.268520 | 1.340646 | UlcerIndex | 0.080929 | 0.047919 |
-| GeometricReturn | 0.000752 | 0.000044 | UpCapture | 0.131042 | -0.183091 |
-| Hurst | 0.406966 | 0.517001 | UpNumber | 0.362385 | 0.315068 |
-| Information_Annualized | -0.072514 | -0.841034 | UpPercent | 0.233945 | 0.219178 |
-| Information_Daily | -0.003752 | -0.047308 | UpsidePotential | 0.482278 | 0.427140 |
-| JensenAlpha | 0.198809 | 0.036142 | UpsideRisk | 0.010729 | 0.010004 |
-| Kappa | 0.054267 | 0.008526 | VaR_Loss | 0.016776 | 0.012491 |
-| Kelly | 4.314746 | 0.749711 | Volatility | 0.014032 | 0.013087 |
-| Kurtosis | 17.917831 | 24.019710 | Volatility_Annualized | 0.222748 | 0.207751 |
-
-</details>
-
-<details markdown="1" class="portfolio-sensitivity">
-<summary>Portfolio sensitivity</summary>
-
-**Removing this share from curent_update_baltic**
-
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.813559</td><td>0.000000</td></tr><tr><td>OUT</td><td>96</td><td>96</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.155041</td><td>0.007267</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.158891</td><td>-0.002601</td></tr></tbody></table>
-
-The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
-
-**Adding this new share to the current portfolio**
-
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>PZV1L shares</td><td>0</td><td>171</td><td>+171</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>8262.086978</td><td>305.234994</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.525424</td><td>0.101695</td></tr><tr><td>OUT</td><td>62</td><td>66</td><td>+4</td></tr><tr><td>IN</td><td>12</td><td>4</td><td>-8</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.077902</td><td>0.007779</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.097193</td><td>0.004841</td></tr></tbody></table>
-
-The starting point is the unmodified current portfolio, which already contains 0 PZV1L shares. The scenario adds 171 shares from Table 3A, resulting in 171 shares; every other holding remains unchanged.
-
-<details markdown="1" class="dominance-components">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Choose S&P 500, Current or any model portfolio as the benchmark for the difference panels.
-
-<div class="dominance-explorer" data-asset="PZV1L"><p>Open this section to load the interactive curve explorer.</p></div>
-
-<details markdown="1" class="static-dominance">
-<summary>High-resolution static FSD, SSD and TSD figure</summary>
-
-![PZV1L high-resolution stochastic dominance](figures/stock_profiles/PZV1L_FSD_SSD_TSD.png?v=1792171292)
+![RSU1L high-resolution stochastic dominance](figures/stock_profiles/RSU1L_FSD_SSD_TSD.png?v=1792486465)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -2563,9 +2344,9 @@ The static figure is collapsed because the interactive plots above provide the d
 </details>
 
 <details markdown="1" class="stock-profile" id="share-ako1l">
-<summary><strong>AKO1L — Akola Group</strong> | HOLD | target 348 shares | priority 12</summary>
+<summary><strong>AKO1L — Akola Group</strong> | HOLD | target 167 shares | priority 11</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>348</td><td>+348</td><td>4.26%</td><td>EUR 1.8350</td><td>0.1780</td><td>32 / 11</td><td>80.20</td><td>Bullish</td><td>Inside bands</td><td>1.000 (Overbought)</td><td>HOLD</td><td>0.001816 (2.119% of portfolio HHI)</td><td>EUR 22,875</td><td>2.8%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>167</td><td>+167</td><td>2.04%</td><td>EUR 1.8350</td><td>0.1949</td><td>32 / 9</td><td>77.07</td><td>Bullish</td><td>Inside bands</td><td>0.869 (Overbought)</td><td>HOLD</td><td>0.000418 (0.539% of portfolio HHI)</td><td>EUR 22,415</td><td>1.4%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
 ![AKO1L Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/AKO1L_technicals_6m.png)
 
@@ -2581,41 +2362,41 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![AKO1L return histogram](figures/stock_profiles/AKO1L_histogram.png?v=1792150404)
+![AKO1L return histogram](figures/stock_profiles/AKO1L_histogram.png?v=1792485730)
 
 </details>
 
 <details markdown="1" class="seasonality-section">
 <summary>Seasonality, drawdowns and upside periods</summary>
 
-The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
+The analysis covers 919 daily returns from 2023-01-02 to 2026-10-16. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
 
 | Measure | Value | Measure | Value | Measure | Value |
 | --- | --- | --- | --- | --- | --- |
 | Maximum drawdown | -45.90% (2024-04-18) | Average gain / average loss | 1.086 | Best 21-day period | 20.19% (ending 2024-05-22) |
-| Average underwater drawdown | 20.63% | Upside potential ratio | 1.288 | Worst 21-day period | -13.79% (ending 2023-06-09) |
-| Conditional drawdown 95% | 42.74% | Upside capture vs Baltic EW | 100.3% | Best 5-day period | 11.42% (ending 2024-06-06) |
-| Ulcer index | 23.66 | Downside capture vs Baltic EW | 73.4% | Best 63-day period | 26.60% (ending 2024-07-22) |
-| Longest underwater period | 957 calendar days | Positive trading days | 37.8% | Repeated calendar pattern | Mar: 0% positive across 4 years |
+| Average underwater drawdown | 20.58% | Upside potential ratio | 1.287 | Worst 21-day period | -13.79% (ending 2023-06-09) |
+| Conditional drawdown 95% | 42.74% | Upside capture vs Baltic EW | 99.9% | Best 5-day period | 11.42% (ending 2024-06-06) |
+| Ulcer index | 23.64 | Downside capture vs Baltic EW | 73.0% | Best 63-day period | 26.60% (ending 2024-07-22) |
+| Longest underwater period | 957 calendar days | Positive trading days | 37.9% | Repeated calendar pattern | Mar: 0% positive across 4 years |
 | Daily downside deviation | 0.777% | Best day | 8.66% (2025-05-22) |  |  |
-| Daily upside deviation | 0.852% | Worst day | -8.74% (2023-06-01) |  |  |
+| Daily upside deviation | 0.851% | Worst day | -8.74% (2023-06-01) |  |  |
 
 **Calendar-effect tests and observed averages**
 
 | Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
 | --- | --- | --- | --- | --- |
-| Weekday | Best: Tuesday (0.128%); worst: Monday (-0.080%) | 0.1886 | 0.3336 | Not detected |
-| Calendar month | Best: May (0.296% daily); worst: Mar (-0.396% daily) | 0.0388 | 0.2230 | Not detected |
-| Turn of month | First/last three days: 0.042%; other days: 0.041% | 0.4709 | 0.8190 | Not detected |
+| Weekday | Best: Tuesday (0.128%); worst: Monday (-0.080%) | 0.1875 | 0.3316 | Not detected |
+| Calendar month | Best: May (0.296% daily); worst: Mar (-0.396% daily) | 0.0398 | 0.2287 | Not detected |
+| Turn of month | First/last three days: 0.042%; other days: 0.040% | 0.4703 | 0.8443 | Not detected |
 
-![AKO1L seasonality, drawdowns and upside periods](figures/stock_profiles/AKO1L_seasonality.png?v=1792161063)
+![AKO1L seasonality, drawdowns and upside periods](figures/stock_profiles/AKO1L_seasonality.png?v=1792486407)
 
 **Five deepest drawdown episodes**
 
 | Rank | Peak | Trough | Recovery | Loss | Underwater days |
 | --- | --- | --- | --- | --- | --- |
 | 1 | 2023-02-23 | 2024-04-18 | 2025-10-07 | -45.90% | 957 |
-| 2 | 2026-01-16 | 2026-03-30 | Not recovered | -16.98% | 271 |
+| 2 | 2026-01-16 | 2026-03-30 | Not recovered | -16.98% | 273 |
 | 3 | 2025-11-12 | 2025-11-14 | 2025-12-12 | -3.86% | 30 |
 | 4 | 2023-02-03 | 2023-02-06 | 2023-02-08 | -1.58% | 5 |
 | 5 | 2023-01-10 | 2023-01-11 | 2023-01-12 | -1.39% | 2 |
@@ -2639,13 +2420,13 @@ Announcement times and links come from the official Nasdaq news service. The eff
 
 | Event type | N | Abnormal 1d | Abnormal 5d | Abnormal 21d | Positive 5d | Direction reversal | BH p(5d) | BH p(21d) | Interpretation |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Dividend announcement | 4 | 0.52% | -0.58% | -2.02% | 25% | 25% | 0.8351 | 0.7250 | No adjusted statistical evidence |
-| Earnings | 8 | 0.32% | -0.41% | -0.88% | 62% | 38% | 1.0000 | 0.7728 | No adjusted statistical evidence |
-| Ex-dividend | 3 | -1.94% | -2.33% | -1.88% | 0% | 0% | 0.0644 | 0.8356 | No adjusted statistical evidence; price drop may be mechanical |
+| Dividend announcement | 4 | 0.52% | -0.58% | -2.02% | 25% | 25% | 0.8405 | 0.7244 | No adjusted statistical evidence |
+| Earnings | 8 | 0.32% | -0.41% | -0.88% | 62% | 38% | 1.0000 | 0.7659 | No adjusted statistical evidence |
+| Ex-dividend | 3 | -1.94% | -2.33% | -1.88% | 0% | 0% | 0.0639 | 0.8362 | No adjusted statistical evidence; price drop may be mechanical |
 | Guidance | 1 | -0.54% | 0.02% | 6.51% | 100% | 0% | 1.0000 | 1.0000 | No adjusted statistical evidence |
-| Revenue | 3 | 1.87% | 0.63% | 0.36% | 67% | 33% | 0.9852 | 1.0000 | No adjusted statistical evidence |
+| Revenue | 3 | 1.87% | 0.63% | 0.36% | 67% | 33% | 0.9869 | 1.0000 | No adjusted statistical evidence |
 
-![AKO1L official announcements and abnormal returns](figures/stock_profiles/AKO1L_company_events.png?v=1792171546)
+![AKO1L official announcements and abnormal returns](figures/stock_profiles/AKO1L_company_events.png?v=1792486531)
 
 A direction reversal requires opposite fitted price slopes during the ten trading days before and after the event and at least a 1% five-day move. This identifies temporal association, not proof that the announcement caused the change.
 
@@ -2683,7 +2464,7 @@ A direction reversal requires opposite fitted price slopes during the ten tradin
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![AKO1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/AKO1L_all_frontiers.png?v=1792150967)
+![AKO1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/AKO1L_all_frontiers.png?v=1792486196)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -2744,9 +2525,9 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 **Adding this new share to the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>AKO1L shares</td><td>0</td><td>348</td><td>+348</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>8595.431997</td><td>638.580013</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.508475</td><td>0.084746</td></tr><tr><td>OUT</td><td>62</td><td>66</td><td>+4</td></tr><tr><td>IN</td><td>12</td><td>6</td><td>-6</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.052024</td><td>-0.018099</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.097704</td><td>0.005352</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>AKO1L shares</td><td>0</td><td>167</td><td>+167</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>8218.744973</td><td>306.445006</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.491525</td><td>0.033898</td></tr><tr><td>OUT</td><td>62</td><td>64</td><td>+2</td></tr><tr><td>IN</td><td>8</td><td>6</td><td>-2</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.063328</td><td>-0.006844</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.094109</td><td>0.002953</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 0 AKO1L shares. The scenario adds 348 shares from Table 3A, resulting in 348 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 AKO1L shares. The scenario adds 167 shares from Table 3A, resulting in 167 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -2758,7 +2539,437 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![AKO1L high-resolution stochastic dominance](figures/stock_profiles/AKO1L_FSD_SSD_TSD.png?v=1792171260)
+![AKO1L high-resolution stochastic dominance](figures/stock_profiles/AKO1L_FSD_SSD_TSD.png?v=1792486436)
+
+The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
+
+</details>
+
+</details>
+
+</details>
+
+</details>
+
+<details markdown="1" class="stock-profile" id="share-ign1l">
+<summary><strong>IGN1L — Ignitis grupė</strong> | HOLD | target 27 shares | priority 12</summary>
+
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>27</td><td>+27</td><td>4.05%</td><td>EUR 21.7500</td><td>0.3559</td><td>52 / 10</td><td>44.10</td><td>Bullish</td><td>Inside bands</td><td>1.000 (Overbought)</td><td>HOLD</td><td>0.001640 (2.115% of portfolio HHI)</td><td>EUR 284,653</td><td>0.2%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+
+![IGN1L Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/IGN1L_technicals_6m.png)
+
+Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
+
+<details markdown="1">
+<summary>Complete technical history</summary>
+
+![IGN1L complete technical history](figures/technical_analysis/IGN1L_technical.png)
+
+</details>
+
+<details markdown="1">
+<summary>Return histogram</summary>
+
+![IGN1L return histogram](figures/stock_profiles/IGN1L_histogram.png?v=1792485730)
+
+</details>
+
+<details markdown="1" class="seasonality-section">
+<summary>Seasonality, drawdowns and upside periods</summary>
+
+The analysis covers 919 daily returns from 2023-01-02 to 2026-10-16. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
+
+| Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- |
+| Maximum drawdown | -14.56% (2024-04-24) | Average gain / average loss | 1.050 | Best 21-day period | 9.93% (ending 2026-01-16) |
+| Average underwater drawdown | 6.14% | Upside potential ratio | 1.261 | Worst 21-day period | -9.87% (ending 2025-03-19) |
+| Conditional drawdown 95% | 13.20% | Upside capture vs Baltic EW | 48.5% | Best 5-day period | 5.44% (ending 2025-02-14) |
+| Ulcer index | 7.02 | Downside capture vs Baltic EW | 38.1% | Best 63-day period | 16.77% (ending 2025-02-17) |
+| Longest underwater period | 611 calendar days | Positive trading days | 37.9% | Repeated calendar pattern | Jan: 100% positive across 4 years |
+| Daily downside deviation | 0.428% | Best day | 3.92% (2025-03-27) |  |  |
+| Daily upside deviation | 0.438% | Worst day | -2.94% (2024-04-10) |  |  |
+
+**Calendar-effect tests and observed averages**
+
+| Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
+| --- | --- | --- | --- | --- |
+| Weekday | Best: Friday (0.069%); worst: Tuesday (-0.025%) | 0.2766 | 0.4399 | Not detected |
+| Calendar month | Best: Jan (0.193% daily); worst: Nov (-0.133% daily) | 0.0503 | 0.2313 | Not detected |
+| Turn of month | First/last three days: 0.013%; other days: 0.017% | 0.9339 | 0.9400 | Not detected |
+
+![IGN1L seasonality, drawdowns and upside periods](figures/stock_profiles/IGN1L_seasonality.png?v=1792486390)
+
+**Five deepest drawdown episodes**
+
+| Rank | Peak | Trough | Recovery | Loss | Underwater days |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 2023-05-23 | 2024-04-24 | 2025-01-23 | -14.56% | 611 |
+| 2 | 2025-02-17 | 2025-03-04 | 2026-01-15 | -10.29% | 332 |
+| 3 | 2026-01-26 | 2026-06-08 | Not recovered | -7.49% | 263 |
+| 4 | 2023-03-08 | 2023-03-13 | 2023-04-26 | -3.14% | 49 |
+| 5 | 2025-01-24 | 2025-01-28 | 2025-02-06 | -2.12% | 13 |
+
+**Five strongest non-overlapping 21-trading-day rises**
+
+| Rank | Start | End | 21-day return |
+| --- | --- | --- | --- |
+| 1 | 2025-12-10 | 2026-01-16 | 9.93% |
+| 2 | 2024-12-03 | 2025-01-10 | 7.71% |
+| 3 | 2025-01-14 | 2025-02-12 | 7.37% |
+| 4 | 2026-06-17 | 2026-07-22 | 6.65% |
+| 5 | 2025-04-11 | 2025-05-19 | 6.47% |
+
+The dated extremes identify where company announcements, dividends, corporate actions or data anomalies should be checked. A repeated calendar average is descriptive until it survives the adjusted test and a later out-of-sample period; it is not by itself a buy or sell signal.
+
+<details markdown="1" class="company-events">
+<summary>Official company-news calendar and price-direction analysis (31 events)</summary>
+
+Announcement times and links come from the official Nasdaq news service. The effective date is the first trading close strictly after publication. Abnormal return means the share return minus the equal-weight Baltic-market return over the same window.
+
+| Event type | N | Abnormal 1d | Abnormal 5d | Abnormal 21d | Positive 5d | Direction reversal | BH p(5d) | BH p(21d) | Interpretation |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Dividend payment | 6 | 0.14% | 0.29% | 1.27% | 50% | 33% | 0.9869 | 0.5457 | No adjusted statistical evidence |
+| Earnings | 16 | -0.11% | -0.47% | 0.26% | 31% | 31% | 0.5299 | 1.0000 | No adjusted statistical evidence |
+| Ex-dividend | 6 | -2.42% | -2.47% | -1.44% | 0% | 50% | 0.0025 | 0.2586 | Different from ordinary periods; price drop may be mechanical |
+| Guidance | 3 | -0.32% | 0.22% | 0.67% | 67% | 33% | 0.9869 | 1.0000 | No adjusted statistical evidence |
+
+![IGN1L official announcements and abnormal returns](figures/stock_profiles/IGN1L_company_events.png?v=1792486519)
+
+A direction reversal requires opposite fitted price slopes during the ten trading days before and after the event and at least a 1% five-day move. This identifies temporal association, not proof that the announcement caused the change.
+
+<details markdown="1">
+<summary>Complete official event calendar (31 announcements)</summary>
+
+| Published | Type | Official announcement | Headline fundamental cue | Pre 5d | Post 1d | Post 5d | Post 21d | Abnormal 5d | Reversal |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-08-12 09:00 | Earnings | [First six months 2026 interim report: sustained strategic progress and consistent financial performance. Full-year 2026 guidance for Adjusted EBITDA and Investments reiterated](https://view.news.eu.nasdaq.com/view?id=b23c9cb57695e371ed8640bfeef0d7640&lang=en&src=listed) | EBITDA | -0.67% | -0.22% | -1.35% | -0.67% | -1.40% | Yes |
+| 2026-05-13 09:00 | Earnings | [First three months 2026 interim report: solid performance and debut asset rotation transaction completed. Full-year 2026 guidance for Adjusted EBITDA and Investments reiterated](https://view.news.eu.nasdaq.com/view?id=bec1aa53fcd36d7817f04b1eb522f7197&lang=en&src=listed) | EBITDA | -0.47% | -0.23% | -0.93% | -1.17% | -0.36% | No |
+| 2026-02-25 09:31 | Earnings | [Integrated Annual Report 2025: record strategic progress with +0.7 GW of new green capacities installed, completed mass smart meter roll-out, and Adjusted EBITDA beat ](https://view.news.eu.nasdaq.com/view?id=bb041135c4b64fadf4935af5069f81d50&lang=en&src=listed) | EBITDA | -1.35% | 0.23% | -0.92% | -2.06% | -0.31% | No |
+| 2025-12-15 16:00 | Earnings | [On the tentative award of a Polish capacity mechanism quarterly auction for 2030 to Ignitis Gamyba](https://view.news.eu.nasdaq.com/view?id=b3992b6b4d7a109cd6a4b141f247e4bf1&lang=en&src=listed) | Open official announcement | 0.49% | 0.00% | 1.21% | 8.45% | 0.61% | No |
+| 2025-11-12 09:00 | Earnings | [First nine months 2025 interim report: strong earnings and business plan delivery with +0.7 GW installed green capacities. Full-year 2025 guidance for Adjusted EBITDA and Investments updated](https://view.news.eu.nasdaq.com/view?id=b153d72e9b1d6fd3c4522e49b2f527554&lang=en&src=listed) | EBITDA | -0.95% | 0.00% | 0.24% | -0.24% | 0.63% | No |
+| 2025-10-03 08:00 | Dividend payment | [Official dividend calendar: Dividend payment date, EUR 0.683 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.683  | 0.73% | 0.00% | 0.97% | 1.45% | 0.69% | No |
+| 2025-09-23 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.683 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.683  | 0.24% | -2.84% | -3.07% | -0.71% | -2.75% | Yes |
+| 2025-08-13 09:00 | Guidance | [First six months 2025: solid results and continued strategy delivery, highlighted by the launch of 313.7 MW Kelmė wind farm, the largest in the Baltics. Full-year 2025 Adjusted EBITDA and Investments guidance reiterated](https://view.news.eu.nasdaq.com/view?id=b2af26ecba6eba6d468dcb4bf74520da7&lang=en&src=listed) | EBITDA | 0.97% | 0.00% | 0.96% | 0.96% | 1.09% | No |
+| 2025-05-14 09:00 | Earnings | [First three months 2025 interim report: strong performance and strategic plan execution marked by the launch of Kelmė wind farm I. Full-year 2025 Adjusted EBITDA and Investments guidance reiterated](https://view.news.eu.nasdaq.com/view?id=be14dc8f7c8f016ce03a963cb8acef3c5&lang=en&src=listed) | EBITDA | 0.00% | 1.18% | 0.95% | -0.95% | -0.28% | No |
+| 2025-04-22 08:00 | Dividend payment | [Official dividend calendar: Dividend payment date, EUR 0.663 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.663  | -1.47% | 0.75% | 1.74% | 4.98% | -0.14% | Yes |
+| 2025-04-08 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.663 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.663  | -2.83% | -0.24% | -1.94% | 3.16% | -4.07% | Yes |
+| 2025-04-01 16:15 | Earnings | [On the tentative award of a Polish capacity mechanism quarterly auction for 2026 to Ignitis Gamyba](https://view.news.eu.nasdaq.com/view?id=b4a790a7976beca1fac09b1c7bb1e1463&lang=en&src=listed) | Open official announcement | 4.17% | -0.24% | -3.29% | -0.47% | -1.14% | Yes |
+| 2025-02-26 09:01 | Earnings | [Integrated Annual Report 2024: continued strategy delivery with strong underlying results. Full-year Adjusted EBITDA guidance beat](https://view.news.eu.nasdaq.com/view?id=b7b30a6a4946d68f666d39ac59e2bd9d2&lang=en&src=listed) | EBITDA | -2.27% | -2.78% | -5.34% | -1.62% | -5.57% | No |
+| 2024-11-13 09:00 | Earnings | [First nine months 2024 interim report: strong performance and continued project delivery. Full-year Adjusted EBITDA guidance increased](https://view.news.eu.nasdaq.com/view?id=b6317df359f513018cedc64985223b92a&lang=en&src=listed) | EBITDA | -0.42% | 0.10% | -0.52% | 2.51% | 0.27% | No |
+| 2024-10-04 08:00 | Dividend payment | [Official dividend calendar: Dividend payment date, EUR 0.663 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.663  | -1.27% | 0.75% | 0.97% | 3.11% | -0.92% | No |
+| 2024-09-24 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.663 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.663  | 0.53% | -2.63% | -1.26% | 1.89% | -1.04% | No |
+| 2024-08-14 09:00 | Earnings | [First six months 2024 interim report: strategy delivery with three Green Capacities projects reaching COD and 2024 guidance upgrade](https://view.news.eu.nasdaq.com/view?id=b56f238f4011c31c49133e48420b9f89b&lang=en&src=listed) | Open official announcement | -0.65% | 0.77% | 1.20% | 3.50% | 1.48% | Yes |
+| 2024-05-15 09:03 | Earnings | [First three months 2024 interim report: continued Green Capacities Portfolio growth ](https://view.news.eu.nasdaq.com/view?id=b7169e677fdd324d8695918eed1b0ba12&lang=en&src=listed) | Open official announcement | 0.00% | -0.22% | -1.53% | 3.17% | -1.04% | No |
+| 2024-04-23 08:00 | Dividend payment | [Official dividend calendar: Dividend payment date, EUR 0.643 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.643  | -1.10% | 0.00% | 2.23% | 0.33% | 1.80% | Yes |
+| 2024-04-10 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.643 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.643  | 2.25% | -2.94% | -5.25% | -4.09% | -4.26% | Yes |
+| 2024-02-28 09:05 | Earnings | [Integrated Annual Report 2023: guidance beat, all time high investments and the largest renewable energy projects in the Baltics secured](https://view.news.eu.nasdaq.com/view?id=b7cd799d8817c9769263793387869b498&lang=en&src=listed) | Open official announcement | 1.18% | -1.17% | -0.53% | -1.06% | -0.21% | No |
+| 2023-11-21 09:15 | Earnings | [First nine months 2023 interim report: all time high investments, start of construction of the largest onshore wind farm in the Baltics, and final investment decision taken for the largest solar portfolio in the Baltics](https://view.news.eu.nasdaq.com/view?id=bc234fdd2382985cff6d1ae3109d382eb&lang=en&src=listed) | Open official announcement | -1.41% | -0.41% | -0.92% | -4.39% | -0.53% | No |
+| 2023-10-17 08:00 | Dividend payment | [Official dividend calendar: Dividend payment date, EUR 0.643 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.643  | 0.25% | 0.00% | 0.00% | -2.29% | -0.27% | No |
+| 2023-10-04 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.643 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.643  | 0.49% | -2.43% | -2.91% | -3.69% | -2.54% | No |
+| 2023-08-22 09:00 | Earnings | [First six months 2023 interim report: strong performance and significant offshore wind development progress](https://view.news.eu.nasdaq.com/view?id=bc4bb6c4b781d7ddf944ca6ed15f8c368&lang=en&src=listed) | Open official announcement | 0.50% | -0.74% | -0.74% | 0.99% | -0.98% | No |
+| 2023-05-23 09:05 | Guidance | [AB “Ignitis grupė” strategy update and Strategic plan 2023-2026 establish even more ambitious Green Generation and decarbonisation targets](https://view.news.eu.nasdaq.com/view?id=b1372b135924ed0b8ac8699cb442f9b4d&lang=en&src=listed) | Open official announcement | 1.70% | -0.72% | -1.43% | -3.34% | -1.43% | Yes |
+| 2023-05-23 09:00 | Earnings | [First three months 2023 interim report: strong results despite lower power prices ](https://view.news.eu.nasdaq.com/view?id=ba02d4111e49f2529c69842eb70ee7e01&lang=en&src=listed) | Open official announcement | 1.70% | -0.72% | -1.43% | -3.34% | -1.43% | Yes |
+| 2023-05-09 09:00 | Guidance | [Ignitis Group to present 3M 2023 results, Strategy update and Strategic plan 2023-2026 on 23 May](https://view.news.eu.nasdaq.com/view?id=b98fddaf05e574c325ce991b0e4433633&lang=en&src=listed) | Open official announcement | -0.48% | -0.24% | 0.00% | -0.49% | 1.00% | No |
+| 2023-04-26 08:00 | Dividend payment | [Official dividend calendar: Dividend payment date, EUR 0.624 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.624  | 0.24% | 0.49% | 0.24% | 0.24% | 0.56% | No |
+| 2023-04-13 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.624 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.624  | 1.72% | -2.66% | -0.24% | -0.24% | -0.12% | No |
+| 2023-02-28 09:18 | Earnings | [Annual report 2022: strong financial and strategic performance dominated by Green Generation growth ](https://view.news.eu.nasdaq.com/view?id=bc22de83da9b04f39713f1d9f88d2edfd&lang=en&src=listed) | Open official announcement | 2.55% | 1.49% | 2.99% | 1.24% | 2.77% | Yes |
+
+</details>
+
+</details>
+
+</details>
+
+<details markdown="1">
+<summary>All five model frontiers with this share highlighted</summary>
+
+![IGN1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/IGN1L_all_frontiers.png?v=1792486191)
+
+The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
+
+</details>
+
+<details markdown="1">
+<summary>All 72 PerformanceAnalytics measures: full period and last 126 observations</summary>
+
+| Measure | Full period | Last 126 | Measure | Full period | Last 126 |
+| --- | --- | --- | --- | --- | --- |
+| ActiveReturn | -0.206414 | -0.329730 | M2Sortino | 0.023483 | -0.097384 |
+| AdjustedSharpe | 0.263485 | -1.154161 | MSquaredExcess | -0.154606 | -0.345176 |
+| AnnualizedReturn_Arithmetic | 0.027126 | -0.094236 | Martin | 0.259626 | -1.700111 |
+| AnnualizedReturn_Geometric | 0.022275 | -0.092520 | MaximumDrawdown | 0.165620 | 0.083436 |
+| Appraisal | 0.161912 | -1.387410 | Modigliani | 0.000187 | -0.000767 |
+| ArithmeticReturn | 0.000108 | -0.000374 | NetSelectivity | -0.109264 | -0.208123 |
+| AverageDrawdown | 0.044485 | 0.048326 | Omega | 1.054449 | 0.805154 |
+| AverageDrawdownLength | 74.400000 | 63.000000 | OmegaExcessReturn | -0.003127 | -0.109577 |
+| AverageRecoveryTime | 38.900000 | 19.500000 | PainIndex | 0.070307 | 0.050002 |
+| BernardoLedoit | 1.054449 | 0.805154 | PainRatio | 0.316822 | -1.850328 |
+| BetaCoKurtosis | -0.082161 | 0.030921 | Prospect | -0.532723 | -0.787432 |
+| BetaCoSkewness | -3.787258 | -21.478044 | Rachev | 1.039140 | 0.922872 |
+| Burke | 0.127683 | -1.892262 | Selectivity | 0.016326 | -0.103858 |
+| CAPMAlpha | 0.000085 | -0.000417 | Sharpe_Annualized | 0.268574 | -1.247812 |
+| CAPMBeta | 0.026014 | 0.047798 | Sharpe_Daily | 0.016919 | -0.078605 |
+| CDD | 0.109179 | 0.072903 | Sharpe_ES | 0.006979 | -0.035029 |
+| Calmar | 0.134494 | -1.108877 | Sharpe_VaR | 0.011676 | -0.053100 |
+| CoKurtosis | -0.000000 | 0.000000 | Skewness | -0.033254 | 0.049286 |
+| CoSkewness | -0.000001 | -0.000000 | Sortino | 0.024262 | -0.106190 |
+| CumulativeReturn | 0.068138 | -0.047383 | SpecificRisk | 0.100831 | 0.074858 |
+| DRatio | 0.968757 | 1.567283 | Sterling | 0.083860 | -0.504374 |
+| DownCapture | 0.019678 | 0.138513 | SystematicRisk | 0.004568 | 0.007407 |
+| DownNumber | 0.399371 | 0.490566 | TotalRisk | 0.100934 | 0.075223 |
+| DownPercent | 0.874214 | 0.886792 | TrackingError_Annualized | 0.198573 | 0.165594 |
+| DownsideDeviation | 0.004437 | 0.003522 | TrackingError_Daily | 0.012509 | 0.010431 |
+| DrawdownDeviation | 0.007873 | 0.007526 | Treynor_Annualized | 0.856261 | -1.935667 |
+| ES_Loss | 0.015423 | 0.010675 | Treynor_Daily | 0.003361 | -0.008059 |
+| FamaBeta | 0.575188 | 0.487345 | UlcerIndex | 0.085796 | 0.054420 |
+| GeometricReturn | 0.000087 | -0.000385 | UpCapture | 0.040918 | 0.022186 |
+| Hurst | 0.358896 | 0.362031 | UpNumber | 0.383028 | 0.342466 |
+| Information_Annualized | -1.039489 | -1.991189 | UpPercent | 0.162844 | 0.150685 |
+| Information_Daily | -0.058371 | -0.117933 | UpsidePotential | 0.469849 | 0.438804 |
+| JensenAlpha | 0.016326 | -0.103858 | UpsideRisk | 0.004556 | 0.003192 |
+| Kappa | 0.015679 | -0.078562 | VaR_Loss | 0.009219 | 0.007042 |
+| Kelly | 2.659124 | -16.522785 | Volatility | 0.006362 | 0.004757 |
+| Kurtosis | 8.810035 | 3.998859 | Volatility_Annualized | 0.101001 | 0.075521 |
+
+</details>
+
+<details markdown="1" class="portfolio-sensitivity">
+<summary>Portfolio sensitivity</summary>
+
+**Removing this share from curent_update_baltic**
+
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.813559</td><td>0.000000</td></tr><tr><td>OUT</td><td>96</td><td>96</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.146862</td><td>-0.000911</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.161498</td><td>0.000006</td></tr></tbody></table>
+
+The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
+
+**Adding this new share to the current portfolio**
+
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>IGN1L shares</td><td>0</td><td>27</td><td>+27</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>8499.549967</td><td>587.250000</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.466102</td><td>0.008475</td></tr><tr><td>OUT</td><td>62</td><td>63</td><td>+1</td></tr><tr><td>IN</td><td>8</td><td>8</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.074828</td><td>0.004655</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.092991</td><td>0.001835</td></tr></tbody></table>
+
+The starting point is the unmodified current portfolio, which already contains 0 IGN1L shares. The scenario adds 27 shares from Table 3A, resulting in 27 shares; every other holding remains unchanged.
+
+<details markdown="1" class="dominance-components">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Choose S&P 500, Current or any model portfolio as the benchmark for the difference panels.
+
+<div class="dominance-explorer" data-asset="IGN1L"><p>Open this section to load the interactive curve explorer.</p></div>
+
+<details markdown="1" class="static-dominance">
+<summary>High-resolution static FSD, SSD and TSD figure</summary>
+
+![IGN1L high-resolution stochastic dominance](figures/stock_profiles/IGN1L_FSD_SSD_TSD.png?v=1792486451)
+
+The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
+
+</details>
+
+</details>
+
+</details>
+
+</details>
+
+<details markdown="1" class="stock-profile" id="share-pzv1l">
+<summary><strong>PZV1L — Pieno žvaigždės</strong> | HOLD | target 56 shares | priority 13</summary>
+
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>56</td><td>+56</td><td>0.67%</td><td>EUR 1.7950</td><td>0.2034</td><td>35 / 11</td><td>62.14</td><td>Bearish</td><td>Inside bands</td><td>0.302 (Neutral)</td><td>HOLD</td><td>0.000045 (0.058% of portfolio HHI)</td><td>EUR 4,516</td><td>2.2%</td><td>1.2%</td><td>HIGH</td></tr></tbody></table>
+
+![PZV1L Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/PZV1L_technicals_6m.png)
+
+Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
+
+<details markdown="1">
+<summary>Complete technical history</summary>
+
+![PZV1L complete technical history](figures/technical_analysis/PZV1L_technical.png)
+
+</details>
+
+<details markdown="1">
+<summary>Return histogram</summary>
+
+![PZV1L return histogram](figures/stock_profiles/PZV1L_histogram.png?v=1792485733)
+
+</details>
+
+<details markdown="1" class="seasonality-section">
+<summary>Seasonality, drawdowns and upside periods</summary>
+
+The analysis covers 919 daily returns from 2023-01-02 to 2026-10-16. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
+
+| Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- |
+| Maximum drawdown | -30.11% (2025-11-06) | Average gain / average loss | 1.042 | Best 21-day period | 19.23% (ending 2025-12-09) |
+| Average underwater drawdown | 7.96% | Upside potential ratio | 1.244 | Worst 21-day period | -22.16% (ending 2025-11-06) |
+| Conditional drawdown 95% | 21.37% | Upside capture vs Baltic EW | 107.1% | Best 5-day period | 13.08% (ending 2025-11-13) |
+| Ulcer index | 9.17 | Downside capture vs Baltic EW | 66.4% | Best 63-day period | 24.62% (ending 2026-02-13) |
+| Longest underwater period | 526 calendar days | Positive trading days | 36.1% | Repeated calendar pattern | Dec: 100% positive across 3 years |
+| Daily downside deviation | 0.932% | Best day | 10.09% (2023-08-02) |  |  |
+| Daily upside deviation | 1.015% | Worst day | -10.71% (2024-05-14) |  |  |
+
+**Calendar-effect tests and observed averages**
+
+| Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
+| --- | --- | --- | --- | --- |
+| Weekday | Best: Wednesday (0.173%); worst: Tuesday (-0.039%) | 0.4325 | 0.5149 | Not detected |
+| Calendar month | Best: Dec (0.465% daily); worst: May (-0.347% daily) | 0.0867 | 0.2493 | Not detected |
+| Turn of month | First/last three days: 0.110%; other days: 0.047% | 0.7893 | 0.9400 | Not detected |
+
+![PZV1L seasonality, drawdowns and upside periods](figures/stock_profiles/PZV1L_seasonality.png?v=1792486424)
+
+**Five deepest drawdown episodes**
+
+| Rank | Peak | Trough | Recovery | Loss | Underwater days |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 2025-05-08 | 2025-11-06 | Not recovered | -30.11% | 526 |
+| 2 | 2024-02-12 | 2024-05-20 | 2024-12-05 | -18.39% | 297 |
+| 3 | 2023-05-09 | 2023-06-28 | 2023-08-02 | -8.20% | 85 |
+| 4 | 2025-02-25 | 2025-03-05 | 2025-04-28 | -8.09% | 62 |
+| 5 | 2023-08-03 | 2023-08-10 | 2023-12-01 | -7.51% | 120 |
+
+**Five strongest non-overlapping 21-trading-day rises**
+
+| Rank | Start | End | 21-day return |
+| --- | --- | --- | --- |
+| 1 | 2025-11-06 | 2025-12-09 | 19.23% |
+| 2 | 2024-11-28 | 2025-01-07 | 15.86% |
+| 3 | 2026-03-27 | 2026-04-29 | 12.75% |
+| 4 | 2025-04-02 | 2025-05-08 | 12.05% |
+| 5 | 2026-06-11 | 2026-07-16 | 11.91% |
+
+The dated extremes identify where company announcements, dividends, corporate actions or data anomalies should be checked. A repeated calendar average is descriptive until it survives the adjusted test and a later out-of-sample period; it is not by itself a buy or sell signal.
+
+<details markdown="1" class="company-events">
+<summary>Official company-news calendar and price-direction analysis (24 events)</summary>
+
+Announcement times and links come from the official Nasdaq news service. The effective date is the first trading close strictly after publication. Abnormal return means the share return minus the equal-weight Baltic-market return over the same window.
+
+| Event type | N | Abnormal 1d | Abnormal 5d | Abnormal 21d | Positive 5d | Direction reversal | BH p(5d) | BH p(21d) | Interpretation |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Dividend payment | 1 | -0.66% | -2.62% | 3.07% | 0% | 100% | 1.0000 | 1.0000 | No adjusted statistical evidence |
+| Earnings | 17 | 0.68% | -0.06% | -0.46% | 47% | 35% | 0.9869 | 0.7324 | No adjusted statistical evidence |
+| Ex-dividend | 6 | -3.79% | -6.89% | -9.34% | 17% | 33% | 0.0029 | 0.0001 | Different from ordinary periods; price drop may be mechanical |
+
+![PZV1L official announcements and abnormal returns](figures/stock_profiles/PZV1L_company_events.png?v=1792486537)
+
+A direction reversal requires opposite fitted price slopes during the ten trading days before and after the event and at least a 1% five-day move. This identifies temporal association, not proof that the announcement caused the change.
+
+<details markdown="1">
+<summary>Complete official event calendar (24 announcements)</summary>
+
+| Published | Type | Official announcement | Headline fundamental cue | Pre 5d | Post 1d | Post 5d | Post 21d | Abnormal 5d | Reversal |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-05-29 21:00 | Earnings | [Unaudited financial results of AB Pieno žvaigždės for the three months of 2026](https://view.news.eu.nasdaq.com/view?id=bda3c7599420f5fd67a7028dc1cdf1113&lang=en&src=listed) | Open official announcement | -1.55% | 3.15% | 1.26% | 6.94% | 0.78% | No |
+| 2026-05-21 08:00 | Dividend payment | [Official dividend calendar: Dividend payment date, EUR 0.14 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.14  | 0.63% | -0.62% | -2.49% | 2.18% | -2.62% | Yes |
+| 2026-05-12 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.14 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.14  | 0.88% | -7.27% | -7.56% | -6.40% | -6.52% | No |
+| 2026-04-28 21:00 | Earnings | [Election of the Supervisory Board, Management Board and Audit Committee of AB Pieno žvaigždės](https://view.news.eu.nasdaq.com/view?id=b98dad7349686ff327592f4dbf9f80eb8&lang=en&src=listed) | Open official announcement | 0.88% | 0.00% | 1.16% | -5.22% | 0.93% | Yes |
+| 2026-04-28 20:45 | Ex-dividend | [Ex-dividend date and procedure for the payment of Pieno Žvaigždės AB dividends for the year 2025](https://view.news.eu.nasdaq.com/view?id=b8f19491c5dfb05f42eb8452807f39063&lang=en&src=listed) | Open official announcement | 0.88% | 0.00% | 1.16% | -5.22% | 0.93% | Yes |
+| 2026-02-27 20:45 | Earnings | [Unaudited financial results of AB Pieno žvaigždės for 2025](https://view.news.eu.nasdaq.com/view?id=bc3c8d2a356fe1e4142de8dc6ee5df352&lang=en&src=listed) | Open official announcement | 0.31% | -1.23% | -1.54% | -4.94% | -0.66% | No |
+| 2025-11-28 18:00 | Earnings | [Nine-month unaudited financial results of AB Pieno Zvaigzdes for 2025](https://view.news.eu.nasdaq.com/view?id=b7a1f0194f97886ffd37a82351d7b23b7&lang=en&src=listed) | Open official announcement | 1.35% | 0.33% | 2.33% | 9.00% | 1.88% | No |
+| 2025-09-25 19:00 | Earnings | [AB "Pieno žvaigždės" Unaudited Financial Results for the First Six Months of 2025](https://view.news.eu.nasdaq.com/view?id=b0c91aca970782257d8f658719077777e&lang=en&src=listed) | Open official announcement | -2.94% | -0.61% | -1.21% | -14.55% | -1.76% | Yes |
+| 2025-05-29 21:30 | Earnings | [Unaudited financial results of AB Pieno žvaigždės for the three months of 2025](https://view.news.eu.nasdaq.com/view?id=bddf5bf49b96e39767a2bed7a4733f1c8&lang=en&src=listed) | Open official announcement | -1.47% | -2.69% | -4.78% | -2.99% | -4.49% | Yes |
+| 2025-05-09 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.14 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.14  | 5.68% | -8.06% | -9.14% | -14.52% | -8.91% | No |
+| 2025-05-05 20:00 | Ex-dividend | [Correction: Ex-dividend date and procedure for the payment of Pieno Žvaigždės AB dividends for the year 2024](https://view.news.eu.nasdaq.com/view?id=ba8b91f09e1d6cad3508f0a453fa96eb2&lang=en&src=listed) | Open official announcement | 2.32% | 3.12% | -3.68% | -10.76% | -5.30% | Yes |
+| 2025-04-30 19:00 | Earnings | [Unaudited financial results of AB Pieno žvaigždės for the three months of 2025](https://view.news.eu.nasdaq.com/view?id=ba89c61d9cecbd0092e27991215520f20&lang=en&src=listed) | Open official announcement | 2.32% | 3.12% | -3.68% | -10.76% | -5.30% | Yes |
+| 2025-02-28 18:00 | Earnings | [Unaudited financial results of AB Pieno žvaigždės for 2024](https://view.news.eu.nasdaq.com/view?id=b19185cf88d17f2efc2e680a70ae5958f&lang=en&src=listed) | Open official announcement | 0.58% | -5.81% | -4.65% | -4.07% | -4.65% | No |
+| 2024-11-30 16:00 | Earnings | [Nine-month unaudited financial results of AB Pieno zvaigzdes for 2024](https://view.news.eu.nasdaq.com/view?id=bbc53a32d833c6084aed9a82f8409918b&lang=en&src=listed) | Open official announcement | 1.39% | 0.00% | 1.37% | 15.07% | -0.52% | No |
+| 2024-09-19 19:00 | Earnings | [AB "Pieno žvaigždės" Unaudited Financial Results for the First Six Months of 2024](https://view.news.eu.nasdaq.com/view?id=b5012d284a5945cbc94f2150e29f8f2b2&lang=en&src=listed) | Open official announcement | 1.43% | -0.70% | -0.70% | -0.70% | -0.10% | No |
+| 2024-05-31 17:00 | Earnings | [Unaudited financial results of AB Pieno žvaigždės for the three months of 2024](https://view.news.eu.nasdaq.com/view?id=b9d4d15db84d9a50d17c3d90136dacadd&lang=en&src=listed) | Open official announcement | 1.61% | -0.79% | 0.79% | 2.38% | 0.82% | No |
+| 2024-05-14 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.14 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.14  | -2.78% | -10.71% | -12.86% | -10.00% | -11.78% | No |
+| 2024-05-09 20:00 | Ex-dividend | [Ex-dividend date and procedure for the payment of Pieno Žvaigždės AB dividends for the year 2023](https://view.news.eu.nasdaq.com/view?id=bb8a048a05aa6ea539459b561ea8bd5f8&lang=en&src=listed) | Open official announcement | -3.45% | 0.00% | -11.43% | -9.29% | -9.78% | No |
+| 2024-02-29 18:15 | Earnings | [Unaudited financial results of AB Pieno žvaigždės for 2023](https://view.news.eu.nasdaq.com/view?id=ba2507a45c44e1cc022a59edceebfba91&lang=en&src=listed) | Open official announcement | 2.41% | -0.67% | -6.04% | -6.04% | -5.52% | Yes |
+| 2023-10-18 17:00 | Earnings | [Nine-month unaudited financial results of AB Pieno zvaigzdes for 2023](https://view.news.eu.nasdaq.com/view?id=bfa7594f2c6869d525dd63c88a1848bb8&lang=en&src=listed) | Open official announcement | 0.00% | 5.93% | 4.24% | 5.51% | 4.83% | No |
+| 2023-08-01 17:00 | Earnings | [Unaudited financial results of AB Pieno žvaigždės for the six months of 2023](https://view.news.eu.nasdaq.com/view?id=b48e1e9a1a9289dab1423d7af85a3b7ae&lang=en&src=listed) | Open official announcement | 0.00% | 10.09% | 7.02% | 6.14% | 7.14% | Yes |
+| 2023-05-05 17:00 | Earnings | [Unaudited financial results of AB Pieno žvaigždės for the three months of 2023](https://view.news.eu.nasdaq.com/view?id=bb069acf3c9df6121e57b055bacd5e368&lang=en&src=listed) | Open official announcement | -1.28% | 3.90% | 4.76% | -1.73% | 5.44% | No |
+| 2023-03-01 16:41 | Earnings | [Correction: Unaudited financial results of AB Pieno žvaigždės for 2022](https://view.news.eu.nasdaq.com/view?id=b002277d8782b40eb6bea6eb02e706e40&lang=en&src=listed) | Open official announcement | -3.28% | -0.42% | 0.00% | -3.39% | 0.38% | No |
+| 2023-02-28 18:00 | Earnings | [Unaudited financial results of AB Pieno žvaigždės for 2022](https://view.news.eu.nasdaq.com/view?id=b9ca4b3a55215abe89615c679a3e7d910&lang=en&src=listed) | Open official announcement | -1.67% | 0.00% | 0.00% | -3.81% | -0.22% | No |
+
+</details>
+
+</details>
+
+</details>
+
+<details markdown="1">
+<summary>All five model frontiers with this share highlighted</summary>
+
+![PZV1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/PZV1L_all_frontiers.png?v=1792486200)
+
+The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
+
+</details>
+
+<details markdown="1">
+<summary>All 72 PerformanceAnalytics measures: full period and last 126 observations</summary>
+
+| Measure | Full period | Last 126 | Measure | Full period | Last 126 |
+| --- | --- | --- | --- | --- | --- |
+| ActiveReturn | -0.020233 | -0.226031 | M2Sortino | 0.206232 | 0.010702 |
+| AdjustedSharpe | 0.494959 | 0.156930 | MSquaredExcess | -0.052380 | -0.184990 |
+| AnnualizedReturn_Arithmetic | 0.214083 | 0.032358 | Martin | 2.575798 | 0.233270 |
+| AnnualizedReturn_Geometric | 0.208457 | 0.011178 | MaximumDrawdown | 0.212625 | 0.120349 |
+| Appraisal | 0.893618 | 0.175202 | Modigliani | 0.000670 | 0.000096 |
+| ArithmeticReturn | 0.000850 | 0.000128 | NetSelectivity | -0.081640 | -0.306835 |
+| AverageDrawdown | 0.037616 | 0.038908 | Omega | 1.241052 | 1.037313 |
+| AverageDrawdownLength | 18.810811 | 17.714286 | OmegaExcessReturn | 0.156533 | -0.029300 |
+| AverageRecoveryTime | 9.054054 | 7.142857 | PainIndex | 0.055102 | 0.035411 |
+| BernardoLedoit | 1.241052 | 1.037313 | PainRatio | 3.783116 | 0.315666 |
+| BetaCoKurtosis | 0.055288 | -0.060055 | Prospect | -0.392082 | -0.499354 |
+| BetaCoSkewness | -0.465367 | -8.424866 | Rachev | 1.173382 | 1.208888 |
+| Burke | 0.701161 | 0.096201 | Selectivity | 0.198809 | 0.036142 |
+| CAPMAlpha | 0.000812 | 0.000222 | Sharpe_Annualized | 0.961100 | 0.155753 |
+| CAPMBeta | 0.042185 | -0.105240 | Sharpe_Daily | 0.060544 | 0.009812 |
+| CDD | 0.096713 | 0.088394 | Sharpe_ES | 0.027378 | 0.005290 |
+| Calmar | 0.980395 | 0.092880 | Sharpe_VaR | 0.050639 | 0.010280 |
+| CoKurtosis | 0.000000 | -0.000000 | Skewness | 0.556555 | 1.109540 |
+| CoSkewness | -0.000000 | -0.000000 | Sortino | 0.093674 | 0.015365 |
+| CumulativeReturn | 0.762141 | 0.005573 | SpecificRisk | 0.222477 | 0.206287 |
+| DRatio | 0.722207 | 1.293210 | Sterling | 0.666794 | 0.050729 |
+| DownCapture | -0.086529 | -0.269291 | SystematicRisk | 0.007408 | -0.016308 |
+| DownNumber | 0.314465 | 0.358491 | TotalRisk | 0.222600 | 0.206930 |
+| DownPercent | 0.817610 | 0.943396 | TrackingError_Annualized | 0.279015 | 0.268754 |
+| DownsideDeviation | 0.009069 | 0.008357 | TrackingError_Daily | 0.017576 | 0.016930 |
+| DrawdownDeviation | 0.014074 | 0.013245 | Treynor_Annualized | 4.941486 | -0.106215 |
+| ES_Loss | 0.031030 | 0.024274 | Treynor_Daily | 0.017818 | -0.000419 |
+| FamaBeta | 1.268520 | 1.340646 | UlcerIndex | 0.080929 | 0.047919 |
+| GeometricReturn | 0.000752 | 0.000044 | UpCapture | 0.131042 | -0.183091 |
+| Hurst | 0.406966 | 0.517001 | UpNumber | 0.362385 | 0.315068 |
+| Information_Annualized | -0.072514 | -0.841034 | UpPercent | 0.233945 | 0.219178 |
+| Information_Daily | -0.003752 | -0.047308 | UpsidePotential | 0.482278 | 0.427140 |
+| JensenAlpha | 0.198809 | 0.036142 | UpsideRisk | 0.010729 | 0.010004 |
+| Kappa | 0.054267 | 0.008526 | VaR_Loss | 0.016776 | 0.012491 |
+| Kelly | 4.314746 | 0.749711 | Volatility | 0.014032 | 0.013087 |
+| Kurtosis | 17.917831 | 24.019710 | Volatility_Annualized | 0.222748 | 0.207751 |
+
+</details>
+
+<details markdown="1" class="portfolio-sensitivity">
+<summary>Portfolio sensitivity</summary>
+
+**Removing this share from curent_update_baltic**
+
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.813559</td><td>0.000000</td></tr><tr><td>OUT</td><td>96</td><td>96</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.155041</td><td>0.007267</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.158891</td><td>-0.002601</td></tr></tbody></table>
+
+The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
+
+**Adding this new share to the current portfolio**
+
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>PZV1L shares</td><td>0</td><td>56</td><td>+56</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>8012.819964</td><td>100.519998</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.483051</td><td>0.025424</td></tr><tr><td>OUT</td><td>62</td><td>64</td><td>+2</td></tr><tr><td>IN</td><td>8</td><td>7</td><td>-1</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.072849</td><td>0.002677</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.092878</td><td>0.001723</td></tr></tbody></table>
+
+The starting point is the unmodified current portfolio, which already contains 0 PZV1L shares. The scenario adds 56 shares from Table 3A, resulting in 56 shares; every other holding remains unchanged.
+
+<details markdown="1" class="dominance-components">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Choose S&P 500, Current or any model portfolio as the benchmark for the difference panels.
+
+<div class="dominance-explorer" data-asset="PZV1L"><p>Open this section to load the interactive curve explorer.</p></div>
+
+<details markdown="1" class="static-dominance">
+<summary>High-resolution static FSD, SSD and TSD figure</summary>
+
+![PZV1L high-resolution stochastic dominance](figures/stock_profiles/PZV1L_FSD_SSD_TSD.png?v=1792486461)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -2771,9 +2982,9 @@ The static figure is collapsed because the interactive plots above provide the d
 </details>
 
 <details markdown="1" class="stock-profile" id="share-roe1l">
-<summary><strong>ROE1L — Artea Bankas</strong> | HOLD | target 422 shares | priority 13</summary>
+<summary><strong>ROE1L — Artea Bankas</strong> | HOLD | target 541 shares | priority 14</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>416</td><td>422</td><td>+6</td><td>2.48%</td><td>EUR 0.8820</td><td>0.1525</td><td>37 / 19</td><td>43.60</td><td>Bearish</td><td>Inside bands</td><td>0.127 (Oversold)</td><td>HOLD</td><td>0.000616 (0.719% of portfolio HHI)</td><td>EUR 193,178</td><td>0.0%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>416</td><td>541</td><td>+125</td><td>3.17%</td><td>EUR 0.8800</td><td>0.1525</td><td>37 / 19</td><td>42.30</td><td>Bearish</td><td>Inside bands</td><td>0.095 (Oversold)</td><td>HOLD</td><td>0.001007 (1.299% of portfolio HHI)</td><td>EUR 186,592</td><td>0.1%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
 ![ROE1L Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/ROE1L_technicals_6m.png)
 
@@ -2789,40 +3000,40 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![ROE1L return histogram](figures/stock_profiles/ROE1L_histogram.png?v=1792150405)
+![ROE1L return histogram](figures/stock_profiles/ROE1L_histogram.png?v=1792485733)
 
 </details>
 
 <details markdown="1" class="seasonality-section">
 <summary>Seasonality, drawdowns and upside periods</summary>
 
-The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistically supported calendar effects: **calendar-month**. Adjusted p-values control the false-discovery rate across all analysed shares.
+The analysis covers 919 daily returns from 2023-01-02 to 2026-10-16. Statistically supported calendar effects: **calendar-month**. Adjusted p-values control the false-discovery rate across all analysed shares.
 
 | Measure | Value | Measure | Value | Measure | Value |
 | --- | --- | --- | --- | --- | --- |
-| Maximum drawdown | -20.90% (2025-09-17) | Average gain / average loss | 1.233 | Best 21-day period | 17.11% (ending 2023-11-30) |
-| Average underwater drawdown | 9.72% | Upside potential ratio | 1.183 | Worst 21-day period | -11.16% (ending 2025-04-30) |
-| Conditional drawdown 95% | 19.64% | Upside capture vs Baltic EW | 78.5% | Best 5-day period | 9.79% (ending 2026-03-13) |
-| Ulcer index | 10.87 | Downside capture vs Baltic EW | 58.3% | Best 63-day period | 24.55% (ending 2025-01-08) |
-| Longest underwater period | 607 calendar days | Positive trading days | 40.3% | Repeated calendar pattern | Nov: 100% positive across 3 years |
-| Daily downside deviation | 0.655% | Best day | 11.07% (2026-03-13) |  |  |
-| Daily upside deviation | 0.817% | Worst day | -5.89% (2025-04-11) |  |  |
+| Maximum drawdown | -20.90% (2025-09-17) | Average gain / average loss | 1.231 | Best 21-day period | 17.11% (ending 2023-11-30) |
+| Average underwater drawdown | 9.73% | Upside potential ratio | 1.182 | Worst 21-day period | -11.16% (ending 2025-04-30) |
+| Conditional drawdown 95% | 19.64% | Upside capture vs Baltic EW | 78.1% | Best 5-day period | 9.79% (ending 2026-03-13) |
+| Ulcer index | 10.88 | Downside capture vs Baltic EW | 58.1% | Best 63-day period | 24.55% (ending 2025-01-08) |
+| Longest underwater period | 609 calendar days | Positive trading days | 40.4% | Repeated calendar pattern | Nov: 100% positive across 3 years |
+| Daily downside deviation | 0.654% | Best day | 11.07% (2026-03-13) |  |  |
+| Daily upside deviation | 0.816% | Worst day | -5.89% (2025-04-11) |  |  |
 
 **Calendar-effect tests and observed averages**
 
 | Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
 | --- | --- | --- | --- | --- |
-| Weekday | Best: Tuesday (0.081%); worst: Monday (-0.061%) | 0.6483 | 0.6778 | Not detected |
-| Calendar month | Best: Nov (0.532% daily); worst: Apr (-0.232% daily) | 0.0029 | 0.0222 | Detected |
-| Turn of month | First/last three days: 0.069%; other days: 0.022% | 0.4876 | 0.8190 | Not detected |
+| Weekday | Best: Tuesday (0.081%); worst: Monday (-0.061%) | 0.6438 | 0.7000 | Not detected |
+| Calendar month | Best: Nov (0.532% daily); worst: Apr (-0.232% daily) | 0.0028 | 0.0217 | Detected |
+| Turn of month | First/last three days: 0.069%; other days: 0.022% | 0.4825 | 0.8443 | Not detected |
 
-![ROE1L seasonality, drawdowns and upside periods](figures/stock_profiles/ROE1L_seasonality.png?v=1792161089)
+![ROE1L seasonality, drawdowns and upside periods](figures/stock_profiles/ROE1L_seasonality.png?v=1792486398)
 
 **Five deepest drawdown episodes**
 
 | Rank | Peak | Trough | Recovery | Loss | Underwater days |
 | --- | --- | --- | --- | --- | --- |
-| 1 | 2025-02-14 | 2025-09-17 | Not recovered | -20.90% | 607 |
+| 1 | 2025-02-14 | 2025-09-17 | Not recovered | -20.90% | 609 |
 | 2 | 2023-02-09 | 2023-10-26 | 2024-10-01 | -19.07% | 600 |
 | 3 | 2025-01-16 | 2025-01-27 | 2025-01-31 | -3.60% | 15 |
 | 4 | 2023-01-03 | 2023-01-05 | 2023-01-12 | -1.68% | 9 |
@@ -2847,13 +3058,13 @@ Announcement times and links come from the official Nasdaq news service. The eff
 
 | Event type | N | Abnormal 1d | Abnormal 5d | Abnormal 21d | Positive 5d | Direction reversal | BH p(5d) | BH p(21d) | Interpretation |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Dividend announcement | 6 | 0.89% | 0.03% | 1.07% | 17% | 33% | 0.6558 | 1.0000 | No adjusted statistical evidence |
-| Dividend payment | 4 | -0.03% | -0.64% | -0.54% | 50% | 25% | 0.9852 | 1.0000 | No adjusted statistical evidence |
-| Earnings | 8 | -0.30% | -0.37% | 0.44% | 38% | 12% | 0.9358 | 1.0000 | No adjusted statistical evidence |
+| Dividend announcement | 6 | 0.89% | 0.03% | 1.07% | 17% | 33% | 0.6519 | 1.0000 | No adjusted statistical evidence |
+| Dividend payment | 4 | -0.03% | -0.64% | -0.54% | 50% | 25% | 0.9869 | 1.0000 | No adjusted statistical evidence |
+| Earnings | 8 | -0.30% | -0.37% | 0.44% | 38% | 12% | 0.9310 | 1.0000 | No adjusted statistical evidence |
 | Ex-dividend | 8 | -2.20% | -3.55% | -5.57% | 12% | 50% | 0.0029 | 0.0023 | Different from ordinary periods; price drop may be mechanical |
-| Guidance | 4 | -0.33% | -0.39% | 0.43% | 25% | 0% | 0.9852 | 1.0000 | No adjusted statistical evidence |
+| Guidance | 4 | -0.33% | -0.39% | 0.43% | 25% | 0% | 0.9869 | 1.0000 | No adjusted statistical evidence |
 
-![ROE1L official announcements and abnormal returns](figures/stock_profiles/ROE1L_company_events.png?v=1792171558)
+![ROE1L official announcements and abnormal returns](figures/stock_profiles/ROE1L_company_events.png?v=1792486524)
 
 A direction reversal requires opposite fitted price slopes during the ten trading days before and after the event and at least a 1% five-day move. This identifies temporal association, not proof that the announcement caused the change.
 
@@ -2902,7 +3113,7 @@ A direction reversal requires opposite fitted price slopes during the ten tradin
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![ROE1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/ROE1L_all_frontiers.png?v=1792150971)
+![ROE1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/ROE1L_all_frontiers.png?v=1792486193)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -2963,9 +3174,9 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 **Increasing this existing position in the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>ROE1L shares</td><td>416</td><td>422</td><td>+6</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>7962.143983</td><td>5.292000</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.423729</td><td>0.000000</td></tr><tr><td>OUT</td><td>62</td><td>62</td><td>+0</td></tr><tr><td>IN</td><td>12</td><td>12</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.070192</td><td>0.000069</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.092378</td><td>0.000026</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>ROE1L shares</td><td>416</td><td>541</td><td>+125</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>8022.299966</td><td>109.999999</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.440678</td><td>-0.016949</td></tr><tr><td>OUT</td><td>62</td><td>62</td><td>+0</td></tr><tr><td>IN</td><td>8</td><td>10</td><td>+2</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.070363</td><td>0.000191</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.091677</td><td>0.000522</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 416 ROE1L shares. The scenario adds 6 shares from Table 3A, resulting in 422 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 416 ROE1L shares. The scenario adds 125 shares from Table 3A, resulting in 541 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -2977,7 +3188,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![ROE1L high-resolution stochastic dominance](figures/stock_profiles/ROE1L_FSD_SSD_TSD.png?v=1792171295)
+![ROE1L high-resolution stochastic dominance](figures/stock_profiles/ROE1L_FSD_SSD_TSD.png?v=1792486463)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -2990,9 +3201,9 @@ The static figure is collapsed because the interactive plots above provide the d
 </details>
 
 <details markdown="1" class="stock-profile" id="share-tal1t">
-<summary><strong>TAL1T — Tallink Grupp</strong> | HOLD | target 879 shares | priority 14</summary>
+<summary><strong>TAL1T — Tallink Grupp</strong> | HOLD | target 1116 shares | priority 15</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>700</td><td>879</td><td>+179</td><td>3.78%</td><td>EUR 0.6450</td><td>0.0593</td><td>26 / 19</td><td>60.34</td><td>Bearish</td><td>Inside bands</td><td>0.000 (Oversold)</td><td>HOLD</td><td>0.001432 (1.670% of portfolio HHI)</td><td>EUR 77,229</td><td>0.1%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>700</td><td>1116</td><td>+416</td><td>4.81%</td><td>EUR 0.6460</td><td>0.0593</td><td>26 / 19</td><td>60.60</td><td>Bearish</td><td>Inside bands</td><td>0.276 (Neutral)</td><td>HOLD</td><td>0.002311 (2.980% of portfolio HHI)</td><td>EUR 77,090</td><td>0.3%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
 ![TAL1T Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/TAL1T_technicals_6m.png)
 
@@ -3008,40 +3219,40 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![TAL1T return histogram](figures/stock_profiles/TAL1T_histogram.png?v=1792150404)
+![TAL1T return histogram](figures/stock_profiles/TAL1T_histogram.png?v=1792485734)
 
 </details>
 
 <details markdown="1" class="seasonality-section">
 <summary>Seasonality, drawdowns and upside periods</summary>
 
-The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
+The analysis covers 919 daily returns from 2023-01-02 to 2026-10-16. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
 
 | Measure | Value | Measure | Value | Measure | Value |
 | --- | --- | --- | --- | --- | --- |
-| Maximum drawdown | -24.80% (2025-11-24) | Average gain / average loss | 1.211 | Best 21-day period | 17.29% (ending 2023-08-21) |
-| Average underwater drawdown | 12.96% | Upside potential ratio | 1.135 | Worst 21-day period | -17.67% (ending 2024-07-02) |
-| Conditional drawdown 95% | 23.62% | Upside capture vs Baltic EW | 66.4% | Best 5-day period | 8.16% (ending 2023-07-27) |
-| Ulcer index | 14.75 | Downside capture vs Baltic EW | 49.2% | Best 63-day period | 27.08% (ending 2023-09-08) |
-| Longest underwater period | 859 calendar days | Positive trading days | 39.4% | Repeated calendar pattern | Feb: 100% positive across 4 years |
-| Daily downside deviation | 0.687% | Best day | 5.37% (2024-02-22) |  |  |
+| Maximum drawdown | -24.80% (2025-11-24) | Average gain / average loss | 1.212 | Best 21-day period | 17.29% (ending 2023-08-21) |
+| Average underwater drawdown | 12.96% | Upside potential ratio | 1.134 | Worst 21-day period | -17.67% (ending 2024-07-02) |
+| Conditional drawdown 95% | 23.62% | Upside capture vs Baltic EW | 66.0% | Best 5-day period | 8.16% (ending 2023-07-27) |
+| Ulcer index | 14.75 | Downside capture vs Baltic EW | 48.8% | Best 63-day period | 27.08% (ending 2023-09-08) |
+| Longest underwater period | 861 calendar days | Positive trading days | 39.4% | Repeated calendar pattern | Feb: 100% positive across 4 years |
+| Daily downside deviation | 0.686% | Best day | 5.37% (2024-02-22) |  |  |
 | Daily upside deviation | 0.692% | Worst day | -8.83% (2024-06-19) |  |  |
 
 **Calendar-effect tests and observed averages**
 
 | Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
 | --- | --- | --- | --- | --- |
-| Weekday | Best: Thursday (0.097%); worst: Monday (-0.082%) | 0.2838 | 0.4569 | Not detected |
-| Calendar month | Best: Feb (0.211% daily); worst: Jun (-0.269% daily) | 0.6784 | 0.7801 | Not detected |
-| Turn of month | First/last three days: 0.100%; other days: 0.009% | 0.3339 | 0.8190 | Not detected |
+| Weekday | Best: Friday (0.095%); worst: Monday (-0.082%) | 0.2869 | 0.4399 | Not detected |
+| Calendar month | Best: Feb (0.211% daily); worst: Jun (-0.269% daily) | 0.6869 | 0.7899 | Not detected |
+| Turn of month | First/last three days: 0.100%; other days: 0.009% | 0.3365 | 0.8443 | Not detected |
 
-![TAL1T seasonality, drawdowns and upside periods](figures/stock_profiles/TAL1T_seasonality.png?v=1792161071)
+![TAL1T seasonality, drawdowns and upside periods](figures/stock_profiles/TAL1T_seasonality.png?v=1792486388)
 
 **Five deepest drawdown episodes**
 
 | Rank | Peak | Trough | Recovery | Loss | Underwater days |
 | --- | --- | --- | --- | --- | --- |
-| 1 | 2024-06-07 | 2025-11-24 | Not recovered | -24.80% | 859 |
+| 1 | 2024-06-07 | 2025-11-24 | Not recovered | -24.80% | 861 |
 | 2 | 2023-09-07 | 2023-10-17 | 2024-04-09 | -11.81% | 215 |
 | 3 | 2023-03-07 | 2023-03-13 | 2023-06-20 | -4.81% | 105 |
 | 4 | 2023-08-21 | 2023-08-24 | 2023-09-07 | -3.48% | 17 |
@@ -3066,11 +3277,11 @@ Announcement times and links come from the official Nasdaq news service. The eff
 
 | Event type | N | Abnormal 1d | Abnormal 5d | Abnormal 21d | Positive 5d | Direction reversal | BH p(5d) | BH p(21d) | Interpretation |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Dividend payment | 4 | 0.40% | 0.63% | -0.99% | 25% | 0% | 1.0000 | 0.8240 | No adjusted statistical evidence |
-| Earnings | 27 | -0.01% | -0.14% | 0.85% | 41% | 33% | 0.6299 | 1.0000 | No adjusted statistical evidence |
+| Dividend payment | 4 | 0.40% | 0.63% | -0.99% | 25% | 0% | 1.0000 | 0.8235 | No adjusted statistical evidence |
+| Earnings | 27 | -0.01% | -0.14% | 0.85% | 41% | 33% | 0.6344 | 1.0000 | No adjusted statistical evidence |
 | Ex-dividend | 7 | -3.05% | -6.74% | -8.32% | 0% | 86% | 0.0000 | 0.0000 | Different from ordinary periods; price drop may be mechanical |
 
-![TAL1T official announcements and abnormal returns](figures/stock_profiles/TAL1T_company_events.png?v=1792171549)
+![TAL1T official announcements and abnormal returns](figures/stock_profiles/TAL1T_company_events.png?v=1792486518)
 
 A direction reversal requires opposite fitted price slopes during the ten trading days before and after the event and at least a 1% five-day move. This identifies temporal association, not proof that the announcement caused the change.
 
@@ -3127,7 +3338,7 @@ A direction reversal requires opposite fitted price slopes during the ten tradin
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![TAL1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TAL1T_all_frontiers.png?v=1792150968)
+![TAL1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TAL1T_all_frontiers.png?v=1792486190)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -3188,9 +3399,9 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 **Increasing this existing position in the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>TAL1T shares</td><td>700</td><td>879</td><td>+179</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>8072.306980</td><td>115.454997</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.423729</td><td>0.000000</td></tr><tr><td>OUT</td><td>62</td><td>62</td><td>+0</td></tr><tr><td>IN</td><td>12</td><td>12</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.067318</td><td>-0.002805</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.092669</td><td>0.000318</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>TAL1T shares</td><td>700</td><td>1116</td><td>+416</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>8181.035978</td><td>268.736012</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.423729</td><td>-0.033898</td></tr><tr><td>OUT</td><td>62</td><td>60</td><td>-2</td></tr><tr><td>IN</td><td>8</td><td>10</td><td>+2</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.061612</td><td>-0.008560</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.091827</td><td>0.000672</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 700 TAL1T shares. The scenario adds 179 shares from Table 3A, resulting in 879 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 700 TAL1T shares. The scenario adds 416 shares from Table 3A, resulting in 1116 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -3202,7 +3413,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![TAL1T high-resolution stochastic dominance](figures/stock_profiles/TAL1T_FSD_SSD_TSD.png?v=1792171302)
+![TAL1T high-resolution stochastic dominance](figures/stock_profiles/TAL1T_FSD_SSD_TSD.png?v=1792486469)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -3215,9 +3426,9 @@ The static figure is collapsed because the interactive plots above provide the d
 </details>
 
 <details markdown="1" class="stock-profile" id="share-dgr1r">
-<summary><strong>DGR1R — DelfinGroup</strong> | HOLD | target 160 shares | priority 15</summary>
+<summary><strong>DGR1R — DelfinGroup</strong> | HOLD | target 36 shares | priority 16</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>160</td><td>+160</td><td>1.82%</td><td>EUR 1.7050</td><td>0.0339</td><td>26 / 22</td><td>67.67</td><td>Bullish</td><td>Inside bands</td><td>0.536 (Neutral)</td><td>HOLD</td><td>0.000332 (0.387% of portfolio HHI)</td><td>EUR 12,310</td><td>2.2%</td><td>2.4%</td><td>MEDIUM</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>36</td><td>+36</td><td>0.42%</td><td>EUR 1.7200</td><td>0.0339</td><td>26 / 22</td><td>68.46</td><td>Bullish</td><td>Inside bands</td><td>0.503 (Neutral)</td><td>HOLD</td><td>0.000018 (0.023% of portfolio HHI)</td><td>EUR 12,395</td><td>0.5%</td><td>2.4%</td><td>MEDIUM</td></tr></tbody></table>
 
 ![DGR1R Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/DGR1R_technicals_6m.png)
 
@@ -3233,34 +3444,34 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![DGR1R return histogram](figures/stock_profiles/DGR1R_histogram.png?v=1792150405)
+![DGR1R return histogram](figures/stock_profiles/DGR1R_histogram.png?v=1792485736)
 
 </details>
 
 <details markdown="1" class="seasonality-section">
 <summary>Seasonality, drawdowns and upside periods</summary>
 
-The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
+The analysis covers 919 daily returns from 2023-01-02 to 2026-10-16. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
 
 | Measure | Value | Measure | Value | Measure | Value |
 | --- | --- | --- | --- | --- | --- |
-| Maximum drawdown | -35.19% (2024-09-04) | Average gain / average loss | 1.068 | Best 21-day period | 12.70% (ending 2026-10-09) |
-| Average underwater drawdown | 17.10% | Upside potential ratio | 1.142 | Worst 21-day period | -16.13% (ending 2024-05-17) |
-| Conditional drawdown 95% | 33.15% | Upside capture vs Baltic EW | 24.7% | Best 5-day period | 8.18% (ending 2026-10-07) |
-| Ulcer index | 19.23 | Downside capture vs Baltic EW | 11.9% | Best 63-day period | 16.41% (ending 2026-06-03) |
+| Maximum drawdown | -35.19% (2024-09-04) | Average gain / average loss | 1.072 | Best 21-day period | 12.70% (ending 2026-10-09) |
+| Average underwater drawdown | 17.06% | Upside potential ratio | 1.147 | Worst 21-day period | -16.13% (ending 2024-05-17) |
+| Conditional drawdown 95% | 33.08% | Upside capture vs Baltic EW | 24.1% | Best 5-day period | 8.18% (ending 2026-10-07) |
+| Ulcer index | 19.21 | Downside capture vs Baltic EW | 10.6% | Best 63-day period | 16.41% (ending 2026-06-03) |
 | Longest underwater period | 1288 calendar days | Positive trading days | 36.0% | Repeated calendar pattern | Nov: 100% positive across 3 years |
 | Daily downside deviation | 0.548% | Best day | 5.23% (2026-05-13) |  |  |
-| Daily upside deviation | 0.551% | Worst day | -7.59% (2023-05-19) |  |  |
+| Daily upside deviation | 0.553% | Worst day | -7.59% (2023-05-19) |  |  |
 
 **Calendar-effect tests and observed averages**
 
 | Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
 | --- | --- | --- | --- | --- |
-| Weekday | Best: Wednesday (0.149%); worst: Friday (-0.059%) | 0.4221 | 0.5163 | Not detected |
-| Calendar month | Best: Feb (0.119% daily); worst: May (-0.154% daily) | 0.9719 | 0.9719 | Not detected |
-| Turn of month | First/last three days: 0.106%; other days: -0.003% | 0.0227 | 0.2149 | Not detected |
+| Weekday | Best: Wednesday (0.149%); worst: Friday (-0.051%) | 0.4303 | 0.5149 | Not detected |
+| Calendar month | Best: Feb (0.119% daily); worst: May (-0.154% daily) | 0.9726 | 0.9726 | Not detected |
+| Turn of month | First/last three days: 0.106%; other days: -0.001% | 0.0232 | 0.2058 | Not detected |
 
-![DGR1R seasonality, drawdowns and upside periods](figures/stock_profiles/DGR1R_seasonality.png?v=1792161104)
+![DGR1R seasonality, drawdowns and upside periods](figures/stock_profiles/DGR1R_seasonality.png?v=1792486429)
 
 **Five deepest drawdown episodes**
 
@@ -3268,8 +3479,8 @@ The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistical
 | --- | --- | --- | --- | --- | --- |
 | 1 | 2023-03-03 | 2024-09-04 | 2026-09-11 | -35.19% | 1288 |
 | 2 | 2026-09-24 | 2026-09-28 | 2026-10-05 | -3.09% | 11 |
-| 3 | 2026-10-07 | 2026-10-08 | 2026-10-09 | -1.74% | 2 |
-| 4 | 2026-10-12 | 2026-10-13 | Not recovered | -1.45% | 2 |
+| 3 | 2026-10-12 | 2026-10-15 | Not recovered | -2.02% | 4 |
+| 4 | 2026-10-07 | 2026-10-08 | 2026-10-09 | -1.74% | 2 |
 | 5 | 2023-01-10 | 2023-01-17 | 2023-01-24 | -0.53% | 14 |
 
 **Five strongest non-overlapping 21-trading-day rises**
@@ -3292,13 +3503,13 @@ Announcement times and links come from the official Nasdaq news service. The eff
 | Event type | N | Abnormal 1d | Abnormal 5d | Abnormal 21d | Positive 5d | Direction reversal | BH p(5d) | BH p(21d) | Interpretation |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Dividend announcement | 1 | 0.49% | 0.27% | -0.78% | 100% | 0% | 1.0000 | 1.0000 | No adjusted statistical evidence |
-| Dividend payment | 16 | -0.06% | -0.32% | -1.56% | 31% | 19% | 0.5353 | 0.4642 | No adjusted statistical evidence |
-| Earnings | 17 | 0.03% | -1.35% | -1.44% | 35% | 35% | 0.4871 | 0.5475 | No adjusted statistical evidence |
-| Ex-dividend | 29 | -0.45% | -1.29% | -1.74% | 10% | 34% | 0.0000 | 0.0377 | Different from ordinary periods; price drop may be mechanical |
+| Dividend payment | 16 | -0.06% | -0.32% | -1.56% | 31% | 19% | 0.5299 | 0.4533 | No adjusted statistical evidence |
+| Earnings | 17 | 0.03% | -1.35% | -1.44% | 35% | 35% | 0.4842 | 0.5345 | No adjusted statistical evidence |
+| Ex-dividend | 29 | -0.45% | -1.29% | -1.74% | 10% | 34% | 0.0000 | 0.0361 | Different from ordinary periods; price drop may be mechanical |
 | Guidance | 2 | 0.13% | -0.29% | 0.37% | 0% | 0% | 1.0000 | 1.0000 | No adjusted statistical evidence |
 | Revenue | 4 | 0.11% | 0.02% | -0.05% | 50% | 0% | 1.0000 | 1.0000 | No adjusted statistical evidence |
 
-![DGR1R official announcements and abnormal returns](figures/stock_profiles/DGR1R_company_events.png?v=1792171565)
+![DGR1R official announcements and abnormal returns](figures/stock_profiles/DGR1R_company_events.png?v=1792486540)
 
 A direction reversal requires opposite fitted price slopes during the ten trading days before and after the event and at least a 1% five-day move. This identifies temporal association, not proof that the announcement caused the change.
 
@@ -3386,7 +3597,7 @@ A direction reversal requires opposite fitted price slopes during the ten tradin
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![DGR1R Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/DGR1R_all_frontiers.png?v=1792150973)
+![DGR1R Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/DGR1R_all_frontiers.png?v=1792486202)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -3447,9 +3658,9 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 **Adding this new share to the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>DGR1R shares</td><td>0</td><td>160</td><td>+160</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>8229.651990</td><td>272.800007</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.440678</td><td>0.016949</td></tr><tr><td>OUT</td><td>62</td><td>62</td><td>+0</td></tr><tr><td>IN</td><td>12</td><td>10</td><td>-2</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.066584</td><td>-0.003539</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.093313</td><td>0.000961</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>DGR1R shares</td><td>0</td><td>36</td><td>+36</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>7974.219968</td><td>61.920001</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.423729</td><td>-0.033898</td></tr><tr><td>OUT</td><td>62</td><td>62</td><td>+0</td></tr><tr><td>IN</td><td>8</td><td>12</td><td>+4</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.069494</td><td>-0.000679</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.091417</td><td>0.000262</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 0 DGR1R shares. The scenario adds 160 shares from Table 3A, resulting in 160 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 DGR1R shares. The scenario adds 36 shares from Table 3A, resulting in 36 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -3461,210 +3672,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![DGR1R high-resolution stochastic dominance](figures/stock_profiles/DGR1R_FSD_SSD_TSD.png?v=1792171268)
-
-The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
-
-</details>
-
-</details>
-
-</details>
-
-</details>
-
-<details markdown="1" class="stock-profile" id="share-tel1l">
-<summary><strong>TEL1L — Telia Lietuva</strong> | HOLD | target 11 shares | priority 16</summary>
-
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>11</td><td>+11</td><td>0.17%</td><td>EUR 2.2600</td><td>0.1610</td><td>42 / 23</td><td>77.86</td><td>Bullish</td><td>Inside bands</td><td>1.000 (Overbought)</td><td>HOLD</td><td>0.000003 (0.003% of portfolio HHI)</td><td>EUR 56,053</td><td>0.0%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
-
-![TEL1L Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/TEL1L_technicals_6m.png)
-
-Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
-
-<details markdown="1">
-<summary>Complete technical history</summary>
-
-![TEL1L complete technical history](figures/technical_analysis/TEL1L_technical.png)
-
-</details>
-
-<details markdown="1">
-<summary>Return histogram</summary>
-
-![TEL1L return histogram](figures/stock_profiles/TEL1L_histogram.png?v=1792150405)
-
-</details>
-
-<details markdown="1" class="seasonality-section">
-<summary>Seasonality, drawdowns and upside periods</summary>
-
-The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
-
-| Measure | Value | Measure | Value | Measure | Value |
-| --- | --- | --- | --- | --- | --- |
-| Maximum drawdown | -25.25% (2024-08-05) | Average gain / average loss | 1.026 | Best 21-day period | 12.09% (ending 2026-01-09) |
-| Average underwater drawdown | 13.79% | Upside potential ratio | 1.318 | Worst 21-day period | -11.05% (ending 2023-08-08) |
-| Conditional drawdown 95% | 23.35% | Upside capture vs Baltic EW | 46.1% | Best 5-day period | 7.94% (ending 2026-01-09) |
-| Ulcer index | 15.41 | Downside capture vs Baltic EW | 35.6% | Best 63-day period | 18.26% (ending 2026-01-09) |
-| Longest underwater period | 987 calendar days | Positive trading days | 30.5% | Repeated calendar pattern | May: 0% positive across 4 years |
-| Daily downside deviation | 0.500% | Best day | 3.67% (2026-04-24) |  |  |
-| Daily upside deviation | 0.473% | Worst day | -5.60% (2026-05-08) |  |  |
-
-**Calendar-effect tests and observed averages**
-
-| Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
-| --- | --- | --- | --- | --- |
-| Weekday | Best: Thursday (0.068%); worst: Monday (-0.081%) | 0.3578 | 0.4913 | Not detected |
-| Calendar month | Best: Jan (0.207% daily); worst: May (-0.300% daily) | 0.0867 | 0.2492 | Not detected |
-| Turn of month | First/last three days: 0.052%; other days: 0.008% | 0.4985 | 0.8190 | Not detected |
-
-![TEL1L seasonality, drawdowns and upside periods](figures/stock_profiles/TEL1L_seasonality.png?v=1792161118)
-
-**Five deepest drawdown episodes**
-
-| Rank | Peak | Trough | Recovery | Loss | Underwater days |
-| --- | --- | --- | --- | --- | --- |
-| 1 | 2023-04-28 | 2024-08-05 | 2026-01-09 | -25.25% | 987 |
-| 2 | 2026-05-07 | 2026-06-18 | Not recovered | -9.05% | 160 |
-| 3 | 2023-03-17 | 2023-04-18 | 2023-04-28 | -3.43% | 42 |
-| 4 | 2026-02-18 | 2026-03-12 | 2026-04-07 | -3.33% | 48 |
-| 5 | 2026-01-29 | 2026-02-05 | 2026-02-18 | -1.90% | 20 |
-
-**Five strongest non-overlapping 21-trading-day rises**
-
-| Rank | Start | End | 21-day return |
-| --- | --- | --- | --- |
-| 1 | 2025-12-03 | 2026-01-09 | 12.09% |
-| 2 | 2026-03-25 | 2026-04-27 | 11.22% |
-| 3 | 2023-10-27 | 2023-11-30 | 8.86% |
-| 4 | 2026-06-18 | 2026-07-23 | 7.11% |
-| 5 | 2025-06-17 | 2025-07-18 | 6.17% |
-
-The dated extremes identify where company announcements, dividends, corporate actions or data anomalies should be checked. A repeated calendar average is descriptive until it survives the adjusted test and a later out-of-sample period; it is not by itself a buy or sell signal.
-
-<details markdown="1" class="company-events">
-<summary>Official company-news calendar and price-direction analysis (15 events)</summary>
-
-Announcement times and links come from the official Nasdaq news service. The effective date is the first trading close strictly after publication. Abnormal return means the share return minus the equal-weight Baltic-market return over the same window.
-
-| Event type | N | Abnormal 1d | Abnormal 5d | Abnormal 21d | Positive 5d | Direction reversal | BH p(5d) | BH p(21d) | Interpretation |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Dividend announcement | 8 | 0.18% | -1.05% | -1.15% | 50% | 38% | 0.8351 | 0.7250 | No adjusted statistical evidence |
-| Dividend payment | 1 | -0.42% | -0.72% | 1.06% | 0% | 0% | 1.0000 | 1.0000 | No adjusted statistical evidence |
-| Earnings | 2 | 0.64% | 0.81% | -0.23% | 50% | 100% | 1.0000 | 1.0000 | No adjusted statistical evidence |
-| Ex-dividend | 4 | -3.93% | -3.82% | -4.29% | 25% | 100% | 0.0426 | 0.0704 | Different from ordinary periods; price drop may be mechanical |
-
-![TEL1L official announcements and abnormal returns](figures/stock_profiles/TEL1L_company_events.png?v=1792171572)
-
-A direction reversal requires opposite fitted price slopes during the ten trading days before and after the event and at least a 1% five-day move. This identifies temporal association, not proof that the announcement caused the change.
-
-<details markdown="1">
-<summary>Complete official event calendar (15 announcements)</summary>
-
-| Published | Type | Official announcement | Headline fundamental cue | Pre 5d | Post 1d | Post 5d | Post 21d | Abnormal 5d | Reversal |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2026-05-08 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.14 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.14  | 1.75% | -5.60% | -8.19% | -7.76% | -7.12% | Yes |
-| 2026-04-27 16:05 | Dividend announcement | [Procedure for the payment of Telia Lietuva dividends for the year 2025](https://view.news.eu.nasdaq.com/view?id=b52a35e6570c9cb1d22e5f68ba1454a59&lang=en&src=listed) | Open official announcement | 5.56% | 0.00% | 0.88% | -6.58% | 0.68% | No |
-| 2026-03-27 21:30 | Dividend announcement | [The Board approved financial statements for the year 2025 and proposes to pay EUR 0.14 dividend per share for the year 2025](https://view.news.eu.nasdaq.com/view?id=b65cd483dd3b129e0e15e28809b5a0894&lang=en&src=listed) | EUR 0.14  | 0.49% | 0.49% | 2.91% | 10.19% | 3.00% | Yes |
-| 2025-05-27 08:00 | Dividend payment | [Official dividend calendar: Dividend payment date, EUR 0.11 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.11  | -1.22% | 0.31% | 0.00% | 0.62% | -0.72% | No |
-| 2025-05-12 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.11 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.11  | 1.18% | -4.66% | -4.37% | -5.54% | -4.85% | Yes |
-| 2025-04-30 16:13 | Dividend announcement | [Procedure for the payment of Telia Lietuva dividends for the year 2024](https://view.news.eu.nasdaq.com/view?id=bb619e87f2d63301ab59ddd77d9a9a9c3&lang=en&src=listed) | Open official announcement | 3.04% | 1.18% | -3.54% | -4.72% | -5.15% | Yes |
-| 2025-04-03 16:00 | Dividend announcement | [The Board approved financial statements for the year 2024 and proposes to pay EUR 0.11 dividend per share for the year 2024](https://view.news.eu.nasdaq.com/view?id=bcc0e8bd676eeaf696be57489b03fa52e&lang=en&src=listed) | EUR 0.11  | 1.23% | 0.00% | -0.61% | 4.57% | 1.18% | No |
-| 2024-10-04 16:00 | Earnings | [Hannu-Matti Mäkinen elected as a new Chair of the Audit Committee of Telia Lietuva](https://view.news.eu.nasdaq.com/view?id=b1b69bba750be96935a542d758d23a562&lang=en&src=listed) | Open official announcement | -1.25% | 0.32% | 1.90% | 1.90% | -0.03% | Yes |
-| 2024-09-09 16:00 | Earnings | [Agneta Wallmark resigns from the Board and the Audit Committee of Telia Lietuva](https://view.news.eu.nasdaq.com/view?id=bd099b66a2a25a67f0b7b13cbe07f2fe1&lang=en&src=listed) | Open official announcement | 0.63% | 0.95% | 1.58% | 0.95% | 1.65% | Yes |
-| 2024-05-10 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.09 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.09  | 0.29% | -4.71% | -5.00% | -5.59% | -3.35% | Yes |
-| 2024-04-30 16:30 | Dividend announcement | [Procedure for the payment of Telia Lietuva dividends for the year 2023](https://view.news.eu.nasdaq.com/view?id=bb3264ad87e45486fb54ced8673d4a165&lang=en&src=listed) | Open official announcement | -0.29% | 0.30% | -4.14% | -5.03% | -4.40% | No |
-| 2024-04-05 18:36 | Dividend announcement | [Valdyba patvirtino 2023 m. finansines ataskaitas ir siūlo mokėti 0,09 euro dividendų vienai akcijai už 2023 metus](https://view.news.eu.nasdaq.com/view?id=bc84fe25559e2ce03bfc5a8739386ab2c&lang=en&src=listed) | Open official announcement | 1.49% | 1.18% | 0.29% | 0.00% | 0.48% | No |
-| 2023-05-11 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.06 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.06  | -2.45% | -2.26% | -2.01% | -2.76% | 0.03% | Yes |
-| 2023-04-28 16:05 | Dividend announcement | [Procedure for the payment of Telia Lietuva dividends for the year 2022](https://view.news.eu.nasdaq.com/view?id=bb5a582ef27ce29b0d9d9f6125b6ae2c3&lang=en&src=listed) | Open official announcement | 2.51% | -0.98% | -2.45% | -5.39% | -2.42% | Yes |
-| 2023-04-04 16:00 | Dividend announcement | [The Board approved financial statements for the year 2022 and proposes to pay 0.06 euro dividend per share for the year 2022](https://view.news.eu.nasdaq.com/view?id=b6f85e51534ede96fb95a3c51ad44feb1&lang=en&src=listed) | Open official announcement | 0.00% | -0.99% | -1.73% | -1.49% | -1.76% | No |
-
-</details>
-
-</details>
-
-</details>
-
-<details markdown="1">
-<summary>All five model frontiers with this share highlighted</summary>
-
-![TEL1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TEL1L_all_frontiers.png?v=1792150975)
-
-The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
-
-</details>
-
-<details markdown="1">
-<summary>All 72 PerformanceAnalytics measures: full period and last 126 observations</summary>
-
-| Measure | Full period | Last 126 | Measure | Full period | Last 126 |
-| --- | --- | --- | --- | --- | --- |
-| ActiveReturn | -0.196066 | -0.066828 | M2Sortino | 0.034150 | 0.177795 |
-| AdjustedSharpe | 0.333757 | 1.660770 | MSquaredExcess | -0.141614 | 0.023635 |
-| AnnualizedReturn_Arithmetic | 0.037591 | 0.162236 | Martin | 0.221097 | 7.912122 |
-| AnnualizedReturn_Geometric | 0.032623 | 0.170381 | MaximumDrawdown | 0.225761 | 0.049932 |
-| Appraisal | 0.267278 | 1.722501 | Modigliani | 0.000250 | 0.001007 |
-| ArithmeticReturn | 0.000149 | 0.000644 | NetSelectivity | -0.103792 | 0.018699 |
-| AverageDrawdown | 0.036650 | 0.019687 | Omega | 1.080062 | 1.352935 |
-| AverageDrawdownLength | 66.545455 | 14.500000 | OmegaExcessReturn | 0.006262 | 0.152396 |
-| AverageRecoveryTime | 34.727273 | 7.375000 | PainIndex | 0.125364 | 0.017126 |
-| BernardoLedoit | 1.080062 | 1.352935 | PainRatio | 0.260227 | 9.948620 |
-| BetaCoKurtosis | -0.028307 | 0.076703 | Prospect | -0.473444 | -0.440691 |
-| BetaCoSkewness | -2.565127 | 1.493734 | Rachev | 1.075976 | 1.439696 |
-| Burke | 0.204657 | 3.046626 | Selectivity | 0.027961 | 0.170005 |
-| CAPMAlpha | 0.000131 | 0.000642 | Sharpe_Annualized | 0.358884 | 1.637248 |
-| CAPMBeta | 0.020385 | 0.001586 | Sharpe_Daily | 0.022608 | 0.103137 |
-| CDD | 0.049102 | 0.037483 | Sharpe_ES | 0.009737 | 0.059247 |
-| Calmar | 0.144503 | 3.412236 | Sharpe_VaR | 0.015944 | 0.068966 |
-| CoKurtosis | -0.000000 | 0.000000 | Skewness | -0.329646 | 0.490767 |
-| CoSkewness | -0.000000 | 0.000000 | Sortino | 0.032399 | 0.173382 |
-| CumulativeReturn | 0.100817 | 0.081841 | SpecificRisk | 0.104615 | 0.098696 |
-| DRatio | 0.934140 | 0.701230 | Sterling | 0.100144 | 1.136385 |
-| DownCapture | 0.020832 | -0.120621 | SystematicRisk | 0.003580 | 0.000246 |
-| DownNumber | 0.301887 | 0.283019 | TotalRisk | 0.104676 | 0.098697 |
-| DownPercent | 0.861635 | 0.849057 | TrackingError_Annualized | 0.201367 | 0.183729 |
-| DownsideDeviation | 0.004604 | 0.003713 | TrackingError_Daily | 0.012685 | 0.011574 |
-| DrawdownDeviation | 0.008616 | 0.006146 | Treynor_Annualized | 1.600315 | 107.436660 |
-| ES_Loss | 0.015321 | 0.010866 | Treynor_Daily | 0.006249 | 0.393800 |
-| FamaBeta | 0.596511 | 0.639446 | UlcerIndex | 0.147551 | 0.021534 |
-| GeometricReturn | 0.000127 | 0.000625 | UpCapture | 0.051596 | 0.055064 |
-| Hurst | 0.379338 | 0.373845 | UpNumber | 0.302752 | 0.287671 |
-| Information_Annualized | -0.973675 | -0.363732 | UpPercent | 0.178899 | 0.205479 |
-| Information_Daily | -0.054410 | -0.019053 | UpsidePotential | 0.437074 | 0.664641 |
-| JensenAlpha | 0.027961 | 0.170005 | UpsideRisk | 0.004723 | 0.005028 |
-| Kappa | 0.019352 | 0.126490 | VaR_Loss | 0.009356 | 0.009335 |
-| Kelly | 3.426255 | 16.522720 | Volatility | 0.006598 | 0.006242 |
-| Kurtosis | 12.372385 | 4.070376 | Volatility_Annualized | 0.104745 | 0.099091 |
-
-</details>
-
-<details markdown="1" class="portfolio-sensitivity">
-<summary>Portfolio sensitivity</summary>
-
-**Removing this share from curent_update_baltic**
-
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.813559</td><td>0.000000</td></tr><tr><td>OUT</td><td>96</td><td>96</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.147918</td><td>0.000144</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.161502</td><td>0.000010</td></tr></tbody></table>
-
-The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
-
-**Adding this new share to the current portfolio**
-
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>TEL1L shares</td><td>0</td><td>11</td><td>+11</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>7981.711983</td><td>24.860000</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.423729</td><td>0.000000</td></tr><tr><td>OUT</td><td>62</td><td>62</td><td>+0</td></tr><tr><td>IN</td><td>12</td><td>12</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.070044</td><td>-0.000079</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.092422</td><td>0.000070</td></tr></tbody></table>
-
-The starting point is the unmodified current portfolio, which already contains 0 TEL1L shares. The scenario adds 11 shares from Table 3A, resulting in 11 shares; every other holding remains unchanged.
-
-<details markdown="1" class="dominance-components">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Choose S&P 500, Current or any model portfolio as the benchmark for the difference panels.
-
-<div class="dominance-explorer" data-asset="TEL1L"><p>Open this section to load the interactive curve explorer.</p></div>
-
-<details markdown="1" class="static-dominance">
-<summary>High-resolution static FSD, SSD and TSD figure</summary>
-
-![TEL1L high-resolution stochastic dominance](figures/stock_profiles/TEL1L_FSD_SSD_TSD.png?v=1792171305)
+![DGR1R high-resolution stochastic dominance](figures/stock_profiles/DGR1R_FSD_SSD_TSD.png?v=1792486443)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -3677,9 +3685,9 @@ The static figure is collapsed because the interactive plots above provide the d
 </details>
 
 <details markdown="1" class="stock-profile" id="share-eft1t">
-<summary><strong>EFT1T — EfTEN Real Estate Fund</strong> | HOLD | target 15 shares | priority 17</summary>
+<summary><strong>EFT1T — EfTEN Real Estate Fund</strong> | HOLD | target 3 shares | priority 17</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>15</td><td>+15</td><td>2.05%</td><td>EUR 19.5500</td><td>0.1102</td><td>36 / 23</td><td>51.02</td><td>Bullish</td><td>Inside bands</td><td>0.577 (Neutral)</td><td>HOLD</td><td>0.000420 (0.489% of portfolio HHI)</td><td>EUR 20,013</td><td>1.5%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>3</td><td>+3</td><td>0.48%</td><td>EUR 19.6000</td><td>0.1186</td><td>37 / 23</td><td>53.70</td><td>Bullish</td><td>Inside bands</td><td>0.769 (Neutral)</td><td>HOLD</td><td>0.000023 (0.030% of portfolio HHI)</td><td>EUR 20,301</td><td>0.3%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
 ![EFT1T Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/EFT1T_technicals_6m.png)
 
@@ -3695,22 +3703,22 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![EFT1T return histogram](figures/stock_profiles/EFT1T_histogram.png?v=1792150405)
+![EFT1T return histogram](figures/stock_profiles/EFT1T_histogram.png?v=1792485735)
 
 </details>
 
 <details markdown="1" class="seasonality-section">
 <summary>Seasonality, drawdowns and upside periods</summary>
 
-The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
+The analysis covers 919 daily returns from 2023-01-02 to 2026-10-16. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
 
 | Measure | Value | Measure | Value | Measure | Value |
 | --- | --- | --- | --- | --- | --- |
-| Maximum drawdown | -19.00% (2023-08-29) | Average gain / average loss | 0.955 | Best 21-day period | 11.62% (ending 2023-02-14) |
-| Average underwater drawdown | 12.29% | Upside potential ratio | 1.195 | Worst 21-day period | -9.75% (ending 2023-08-25) |
-| Conditional drawdown 95% | 16.64% | Upside capture vs Baltic EW | 33.2% | Best 5-day period | 9.75% (ending 2023-09-06) |
-| Ulcer index | 12.56 | Downside capture vs Baltic EW | 32.9% | Best 63-day period | 8.72% (ending 2023-04-03) |
-| Longest underwater period | 1338 calendar days | Positive trading days | 32.3% | Repeated calendar pattern | Jan: 100% positive across 4 years |
+| Maximum drawdown | -19.00% (2023-08-29) | Average gain / average loss | 0.953 | Best 21-day period | 11.62% (ending 2023-02-14) |
+| Average underwater drawdown | 12.29% | Upside potential ratio | 1.194 | Worst 21-day period | -9.75% (ending 2023-08-25) |
+| Conditional drawdown 95% | 16.64% | Upside capture vs Baltic EW | 33.3% | Best 5-day period | 9.75% (ending 2023-09-06) |
+| Ulcer index | 12.55 | Downside capture vs Baltic EW | 32.8% | Best 63-day period | 8.72% (ending 2023-04-03) |
+| Longest underwater period | 1340 calendar days | Positive trading days | 32.3% | Repeated calendar pattern | Jan: 100% positive across 4 years |
 | Daily downside deviation | 0.466% | Best day | 4.99% (2023-09-04) |  |  |
 | Daily upside deviation | 0.421% | Worst day | -4.73% (2025-04-17) |  |  |
 
@@ -3718,17 +3726,17 @@ The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistical
 
 | Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
 | --- | --- | --- | --- | --- |
-| Weekday | Best: Friday (0.065%); worst: Tuesday (-0.052%) | 0.1003 | 0.2307 | Not detected |
-| Calendar month | Best: Jan (0.194% daily); worst: Aug (-0.134% daily) | 0.1308 | 0.3344 | Not detected |
-| Turn of month | First/last three days: 0.052%; other days: -0.010% | 0.1324 | 0.4860 | Not detected |
+| Weekday | Best: Friday (0.064%); worst: Tuesday (-0.052%) | 0.0989 | 0.2275 | Not detected |
+| Calendar month | Best: Jan (0.194% daily); worst: Aug (-0.134% daily) | 0.1267 | 0.3237 | Not detected |
+| Turn of month | First/last three days: 0.052%; other days: -0.009% | 0.1347 | 0.4850 | Not detected |
 
-![EFT1T seasonality, drawdowns and upside periods](figures/stock_profiles/EFT1T_seasonality.png?v=1792161097)
+![EFT1T seasonality, drawdowns and upside periods](figures/stock_profiles/EFT1T_seasonality.png?v=1792486427)
 
 **Five deepest drawdown episodes**
 
 | Rank | Peak | Trough | Recovery | Loss | Underwater days |
 | --- | --- | --- | --- | --- | --- |
-| 1 | 2023-02-14 | 2023-08-29 | Not recovered | -19.00% | 1338 |
+| 1 | 2023-02-14 | 2023-08-29 | Not recovered | -19.00% | 1340 |
 | 2 | 2023-01-17 | 2023-01-18 | 2023-01-26 | -0.99% | 9 |
 | 3 | 2023-01-13 | 2023-01-16 | 2023-01-17 | -0.50% | 4 |
 | 4 | 2023-02-08 | 2023-02-09 | 2023-02-10 | -0.47% | 2 |
@@ -3742,7 +3750,7 @@ The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistical
 | 2 | 2024-12-19 | 2025-01-28 | 5.82% |
 | 3 | 2023-08-29 | 2023-09-27 | 5.59% |
 | 4 | 2024-09-26 | 2024-10-25 | 4.61% |
-| 5 | 2026-07-01 | 2026-07-31 | 4.47% |
+| 5 | 2026-07-02 | 2026-08-03 | 4.47% |
 
 The dated extremes identify where company announcements, dividends, corporate actions or data anomalies should be checked. A repeated calendar average is descriptive until it survives the adjusted test and a later out-of-sample period; it is not by itself a buy or sell signal.
 
@@ -3753,11 +3761,11 @@ Announcement times and links come from the official Nasdaq news service. The eff
 
 | Event type | N | Abnormal 1d | Abnormal 5d | Abnormal 21d | Positive 5d | Direction reversal | BH p(5d) | BH p(21d) | Interpretation |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Dividend payment | 4 | 0.66% | 0.17% | -0.13% | 50% | 0% | 0.9852 | 1.0000 | No adjusted statistical evidence |
-| Earnings | 27 | -0.06% | -0.24% | -0.72% | 48% | 15% | 0.9852 | 0.9797 | No adjusted statistical evidence |
+| Dividend payment | 4 | 0.66% | 0.17% | -0.13% | 50% | 0% | 0.9869 | 1.0000 | No adjusted statistical evidence |
+| Earnings | 27 | -0.06% | -0.24% | -0.72% | 48% | 15% | 0.9869 | 0.9687 | No adjusted statistical evidence |
 | Ex-dividend | 6 | -2.56% | -4.77% | -5.25% | 0% | 83% | 0.0000 | 0.0000 | Different from ordinary periods; price drop may be mechanical |
 
-![EFT1T official announcements and abnormal returns](figures/stock_profiles/EFT1T_company_events.png?v=1792171561)
+![EFT1T official announcements and abnormal returns](figures/stock_profiles/EFT1T_company_events.png?v=1792486538)
 
 A direction reversal requires opposite fitted price slopes during the ten trading days before and after the event and at least a 1% five-day move. This identifies temporal association, not proof that the announcement caused the change.
 
@@ -3813,7 +3821,7 @@ A direction reversal requires opposite fitted price slopes during the ten tradin
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![EFT1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/EFT1T_all_frontiers.png?v=1792150972)
+![EFT1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/EFT1T_all_frontiers.png?v=1792486201)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -3874,9 +3882,9 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 **Adding this new share to the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>EFT1T shares</td><td>0</td><td>15</td><td>+15</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>8250.101972</td><td>293.249989</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.432203</td><td>0.008475</td></tr><tr><td>OUT</td><td>62</td><td>61</td><td>-1</td></tr><tr><td>IN</td><td>12</td><td>10</td><td>-2</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.069410</td><td>-0.000713</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.092267</td><td>-0.000085</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>EFT1T shares</td><td>0</td><td>3</td><td>+3</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>7971.099968</td><td>58.800001</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.406780</td><td>-0.050847</td></tr><tr><td>OUT</td><td>62</td><td>60</td><td>-2</td></tr><tr><td>IN</td><td>8</td><td>12</td><td>+4</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.070439</td><td>0.000267</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.091158</td><td>0.000002</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 0 EFT1T shares. The scenario adds 15 shares from Table 3A, resulting in 15 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 EFT1T shares. The scenario adds 3 shares from Table 3A, resulting in 3 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -3888,7 +3896,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![EFT1T high-resolution stochastic dominance](figures/stock_profiles/EFT1T_FSD_SSD_TSD.png?v=1792171272)
+![EFT1T high-resolution stochastic dominance](figures/stock_profiles/EFT1T_FSD_SSD_TSD.png?v=1792486445)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -3900,128 +3908,127 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-tkm1t">
-<summary><strong>TKM1T — TKM Grupp</strong> | HOLD | target 343 shares | priority 18</summary>
+<details markdown="1" class="stock-profile" id="share-hae1t">
+<summary><strong>HAE1T — Harju Elekter Group</strong> | HOLD | target 173 shares | priority 18</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>288</td><td>343</td><td>+55</td><td>20.51%</td><td>EUR 8.9600</td><td>0.0508</td><td>29 / 23</td><td>31.65</td><td>Bearish</td><td>Below lower band</td><td>0.000 (Oversold)</td><td>HOLD</td><td>0.042083 (49.092% of portfolio HHI)</td><td>EUR 39,903</td><td>1.2%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>100</td><td>173</td><td>+73</td><td>6.19%</td><td>EUR 5.3600</td><td>0.1102</td><td>37 / 24</td><td>58.25</td><td>Bullish</td><td>Inside bands</td><td>0.425 (Neutral)</td><td>HOLD</td><td>0.003835 (4.946% of portfolio HHI)</td><td>EUR 17,025</td><td>2.3%</td><td>1.2%</td><td>MEDIUM</td></tr></tbody></table>
 
-![TKM1T Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/TKM1T_technicals_6m.png)
+![HAE1T Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/HAE1T_technicals_6m.png)
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
 
-![TKM1T complete technical history](figures/technical_analysis/TKM1T_technical.png)
+![HAE1T complete technical history](figures/technical_analysis/HAE1T_technical.png)
 
 </details>
 
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![TKM1T return histogram](figures/stock_profiles/TKM1T_histogram.png?v=1792150404)
+![HAE1T return histogram](figures/stock_profiles/HAE1T_histogram.png?v=1792485732)
 
 </details>
 
 <details markdown="1" class="seasonality-section">
 <summary>Seasonality, drawdowns and upside periods</summary>
 
-The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
+The analysis covers 919 daily returns from 2023-01-02 to 2026-10-16. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
 
 | Measure | Value | Measure | Value | Measure | Value |
 | --- | --- | --- | --- | --- | --- |
-| Maximum drawdown | -16.10% (2026-10-14) | Average gain / average loss | 0.927 | Best 21-day period | 6.93% (ending 2025-01-07) |
-| Average underwater drawdown | 9.53% | Upside potential ratio | 0.788 | Worst 21-day period | -9.08% (ending 2024-04-29) |
-| Conditional drawdown 95% | 15.15% | Upside capture vs Baltic EW | 17.8% | Best 5-day period | 4.88% (ending 2025-01-07) |
-| Ulcer index | 10.14 | Downside capture vs Baltic EW | 22.3% | Best 63-day period | 9.50% (ending 2025-02-10) |
-| Longest underwater period | 930 calendar days | Positive trading days | 40.0% | Repeated calendar pattern | Feb: 100% positive across 4 years |
-| Daily downside deviation | 0.488% | Best day | 3.06% (2025-01-03) |  |  |
-| Daily upside deviation | 0.341% | Worst day | -6.77% (2026-03-31) |  |  |
+| Maximum drawdown | -14.80% (2025-03-07) | Average gain / average loss | 1.128 | Best 21-day period | 15.63% (ending 2026-01-14) |
+| Average underwater drawdown | 8.01% | Upside potential ratio | 1.214 | Worst 21-day period | -8.81% (ending 2025-03-12) |
+| Conditional drawdown 95% | 14.16% | Upside capture vs Baltic EW | 52.2% | Best 5-day period | 10.20% (ending 2026-01-14) |
+| Ulcer index | 8.79 | Downside capture vs Baltic EW | 45.8% | Best 63-day period | 25.21% (ending 2026-03-13) |
+| Longest underwater period | 608 calendar days | Positive trading days | 38.6% | Repeated calendar pattern | Jan: 75% positive across 4 years |
+| Daily downside deviation | 0.581% | Best day | 6.25% (2024-05-15) |  |  |
+| Daily upside deviation | 0.641% | Worst day | -5.15% (2025-02-20) |  |  |
 
 **Calendar-effect tests and observed averages**
 
 | Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
 | --- | --- | --- | --- | --- |
-| Weekday | Best: Wednesday (0.051%); worst: Tuesday (-0.065%) | 0.0515 | 0.1691 | Not detected |
-| Calendar month | Best: Jan (0.142% daily); worst: Apr (-0.154% daily) | 0.2331 | 0.4726 | Not detected |
-| Turn of month | First/last three days: -0.095%; other days: 0.016% | 0.4974 | 0.8190 | Not detected |
+| Weekday | Best: Friday (0.104%); worst: Thursday (-0.097%) | 0.0746 | 0.1906 | Not detected |
+| Calendar month | Best: Jan (0.215% daily); worst: Jun (-0.102% daily) | 0.6479 | 0.7843 | Not detected |
+| Turn of month | First/last three days: -0.051%; other days: 0.026% | 0.4532 | 0.8443 | Not detected |
 
-![TKM1T seasonality, drawdowns and upside periods](figures/stock_profiles/TKM1T_seasonality.png?v=1792161033)
+![HAE1T seasonality, drawdowns and upside periods](figures/stock_profiles/HAE1T_seasonality.png?v=1792486386)
 
 **Five deepest drawdown episodes**
 
 | Rank | Peak | Trough | Recovery | Loss | Underwater days |
 | --- | --- | --- | --- | --- | --- |
-| 1 | 2024-03-28 | 2026-10-14 | Not recovered | -16.10% | 930 |
-| 2 | 2023-03-27 | 2023-09-22 | 2024-02-21 | -9.33% | 331 |
-| 3 | 2023-02-09 | 2023-02-14 | 2023-03-01 | -1.36% | 20 |
-| 4 | 2024-02-21 | 2024-02-29 | 2024-03-15 | -1.33% | 23 |
-| 5 | 2023-03-01 | 2023-03-02 | 2023-03-03 | -1.17% | 2 |
+| 1 | 2024-05-15 | 2025-03-07 | 2026-01-13 | -14.80% | 608 |
+| 2 | 2026-04-16 | 2026-08-14 | Not recovered | -14.72% | 183 |
+| 3 | 2023-01-27 | 2024-04-10 | 2024-05-15 | -11.52% | 474 |
+| 4 | 2026-03-13 | 2026-03-31 | 2026-04-08 | -4.44% | 26 |
+| 5 | 2026-02-19 | 2026-03-04 | 2026-03-13 | -3.48% | 22 |
 
 **Five strongest non-overlapping 21-trading-day rises**
 
 | Rank | Start | End | 21-day return |
 | --- | --- | --- | --- |
-| 1 | 2024-11-28 | 2025-01-07 | 6.93% |
-| 2 | 2023-01-02 | 2023-01-31 | 6.61% |
-| 3 | 2025-12-09 | 2026-01-15 | 6.50% |
-| 4 | 2024-01-22 | 2024-02-21 | 4.79% |
-| 5 | 2023-09-22 | 2023-10-23 | 4.31% |
+| 1 | 2025-12-08 | 2026-01-14 | 15.63% |
+| 2 | 2024-04-11 | 2024-05-15 | 13.21% |
+| 3 | 2026-02-09 | 2026-03-13 | 10.57% |
+| 4 | 2024-12-16 | 2025-01-23 | 7.35% |
+| 5 | 2026-09-15 | 2026-10-14 | 6.54% |
 
 The dated extremes identify where company announcements, dividends, corporate actions or data anomalies should be checked. A repeated calendar average is descriptive until it survives the adjusted test and a later out-of-sample period; it is not by itself a buy or sell signal.
 
 <details markdown="1" class="company-events">
-<summary>Official company-news calendar and price-direction analysis (32 events)</summary>
+<summary>Official company-news calendar and price-direction analysis (31 events)</summary>
 
 Announcement times and links come from the official Nasdaq news service. The effective date is the first trading close strictly after publication. Abnormal return means the share return minus the equal-weight Baltic-market return over the same window.
 
 | Event type | N | Abnormal 1d | Abnormal 5d | Abnormal 21d | Positive 5d | Direction reversal | BH p(5d) | BH p(21d) | Interpretation |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Dividend payment | 4 | 0.75% | 0.49% | -1.29% | 25% | 0% | 1.0000 | 0.6692 | No adjusted statistical evidence |
-| Earnings | 20 | -0.44% | -0.15% | 0.61% | 50% | 20% | 0.9852 | 0.5486 | No adjusted statistical evidence |
-| Ex-dividend | 8 | -1.86% | -6.03% | -7.55% | 0% | 88% | 0.0000 | 0.0000 | Different from ordinary periods; price drop may be mechanical |
+| Dividend payment | 4 | 0.48% | -0.64% | -0.66% | 25% | 25% | 0.7325 | 1.0000 | No adjusted statistical evidence |
+| Earnings | 19 | -0.10% | -0.01% | 0.71% | 58% | 32% | 0.9869 | 0.8235 | No adjusted statistical evidence |
+| Ex-dividend | 8 | -1.16% | -2.54% | -3.88% | 25% | 62% | 0.0335 | 0.0622 | Different from ordinary periods; price drop may be mechanical |
 
-![TKM1T official announcements and abnormal returns](figures/stock_profiles/TKM1T_company_events.png?v=1792171536)
+![HAE1T official announcements and abnormal returns](figures/stock_profiles/HAE1T_company_events.png?v=1792486517)
 
 A direction reversal requires opposite fitted price slopes during the ten trading days before and after the event and at least a 1% five-day move. This identifies temporal association, not proof that the announcement caused the change.
 
 <details markdown="1">
-<summary>Complete official event calendar (32 announcements)</summary>
+<summary>Complete official event calendar (31 announcements)</summary>
 
 | Published | Type | Official announcement | Headline fundamental cue | Pre 5d | Post 1d | Post 5d | Post 21d | Abnormal 5d | Reversal |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2026-07-10 16:30 | Earnings | [Unaudited consolidated interim accounts for the second quarter and first six months of 2026](https://view.news.eu.nasdaq.com/view?id=bc94e61ae93435ef732b90cb75dafb9e3&lang=en&src=listed) | Open official announcement | -0.22% | -0.44% | 0.22% | -0.11% | -0.43% | No |
-| 2026-04-10 16:30 | Earnings | [Unaudited consolidated interim accounts for the first quarter of 2026](https://view.news.eu.nasdaq.com/view?id=ba566a451cdc6edd9cf00d93b39abda9d&lang=en&src=listed) | Open official announcement | 0.87% | 0.00% | -0.11% | -1.08% | -0.66% | No |
-| 2026-04-07 08:00 | Dividend payment | [Official dividend calendar: Dividend payment date, EUR 0.6 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.6  | -6.59% | 0.98% | 0.98% | 0.98% | -0.72% | No |
-| 2026-03-30 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.6 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.6  | 0.41% | 0.00% | -6.06% | -6.67% | -5.98% | Yes |
-| 2026-03-25 16:30 | Ex-dividend | [Dividend payment ex-date of TKM Grupp AS](https://view.news.eu.nasdaq.com/view?id=b69e5ffb656e8ca2593ae9b5f7d224119&lang=en&src=listed) | Open official announcement | 0.20% | 0.00% | -6.49% | -6.09% | -5.45% | Yes |
-| 2026-02-19 16:30 | Earnings | [Audited annual report 2025](https://view.news.eu.nasdaq.com/view?id=b6ad8814c26e0bf4cedd01f2a21c90f10&lang=en&src=listed) | Open official announcement | -0.21% | 1.77% | 1.46% | 2.61% | 2.36% | No |
-| 2026-01-16 16:30 | Earnings | [Unaudited consolidated interim accounts for the fourth quarter and twelve months of 2025](https://view.news.eu.nasdaq.com/view?id=bdb594d68cdc426e73ee5b759a1019358&lang=en&src=listed) | Open official announcement | -1.33% | -2.60% | -1.77% | -0.21% | -2.05% | No |
-| 2025-11-14 16:30 | Earnings | [Prolongation of authorities of members of the Management Board of the subsidiaries of TKM Grupp AS and members of the Audit Committee ](https://view.news.eu.nasdaq.com/view?id=b06eb1590c201a08533ef6ca343acce82&lang=en&src=listed) | Open official announcement | -0.11% | 0.11% | 1.09% | 1.96% | 1.70% | Yes |
-| 2025-10-09 16:30 | Earnings | [Unaudited consolidated interim accounts for the third quarter and first nine months of 2025](https://view.news.eu.nasdaq.com/view?id=b7f84bf1933a01e0dbcc2c57c37261dd4&lang=en&src=listed) | Open official announcement | -0.11% | -0.11% | 0.11% | -0.22% | 0.35% | No |
-| 2025-07-09 16:30 | Earnings | [Unaudited consolidated interim accounts for the second quarter and first six months of 2025](https://view.news.eu.nasdaq.com/view?id=b0e9b59515a30f24019b036c6848e2d9a&lang=en&src=listed) | Open official announcement | 0.53% | -1.06% | -1.17% | -1.17% | -1.68% | No |
-| 2025-04-09 16:30 | Earnings | [Unaudited consolidated interim accounts for the first quarter of 2025](https://view.news.eu.nasdaq.com/view?id=b196cedf60b04cbc56aaa52950cddbcb3&lang=en&src=listed) | Open official announcement | -0.53% | -1.39% | -1.18% | 0.64% | -3.18% | Yes |
-| 2025-04-03 08:00 | Dividend payment | [Official dividend calendar: Dividend payment date, EUR 0.65 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.65  | -5.05% | 0.11% | -0.53% | -0.74% | 2.92% | No |
-| 2025-03-28 07:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.65 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.65  | -0.60% | -3.42% | -5.23% | -6.44% | -5.51% | No |
-| 2025-03-25 09:00 | Ex-dividend | [Dividend payment ex-date of TKM Grupp AS](https://view.news.eu.nasdaq.com/view?id=bbbedb7de4849789c6e21914ac4d518e7&lang=en&src=listed) | Open official announcement | -0.20% | -0.40% | -4.52% | -6.43% | -4.92% | Yes |
-| 2025-02-20 16:30 | Earnings | [Audited annual report 2024](https://view.news.eu.nasdaq.com/view?id=b68e6e54cfea7c627a3ea83f736c7f7d8&lang=en&src=listed) | Open official announcement | 0.00% | 0.00% | 0.10% | 0.30% | -0.04% | No |
-| 2025-01-16 16:30 | Earnings | [Unaudited consolidated interim accounts for the fourth quarter and twelve months of 2024](https://view.news.eu.nasdaq.com/view?id=bf8954469635fd3d51ed94439160b8ab2&lang=en&src=listed) | Open official announcement | 0.30% | -1.62% | -1.01% | 0.20% | -2.08% | No |
-| 2024-10-10 16:30 | Earnings | [Unaudited consolidated interim accounts for the third quarter and first nine months of 2024](https://view.news.eu.nasdaq.com/view?id=bb6e49742b476dde8dc28f2c00488ea8c&lang=en&src=listed) | Open official announcement | -0.42% | -0.74% | 0.74% | -1.89% | 0.05% | No |
-| 2024-07-10 16:30 | Earnings | [Unaudited consolidated interim accounts for the second quarter and first six months of 2024](https://view.news.eu.nasdaq.com/view?id=b661d26e2a9d8c9fbf93d926ec1570a6c&lang=en&src=listed) | Open official announcement | 2.11% | -1.34% | -0.21% | -1.44% | 0.52% | No |
-| 2024-04-10 16:30 | Earnings | [Unaudited consolidated interim accounts for the first quarter of 2024](https://view.news.eu.nasdaq.com/view?id=b3c0810db4b364f06ae7e966c4cda6d5e&lang=en&src=listed) | Open official announcement | 0.10% | -1.11% | -0.81% | -1.62% | 0.26% | No |
-| 2024-04-08 08:00 | Dividend payment | [Official dividend calendar: Dividend payment date, EUR 0.72 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.72  | -7.68% | 0.20% | -0.41% | -1.52% | -0.22% | No |
-| 2024-04-02 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.72 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.72  | 0.00% | -6.55% | -7.49% | -8.90% | -7.76% | Yes |
-| 2024-03-26 09:35 | Ex-dividend | [Dividend payment ex-date of Tallinna Kaubamaja Grupp AS](https://view.news.eu.nasdaq.com/view?id=b9c6e1e0b4a2d4ac37f829075b1ff419f&lang=en&src=listed) | Open official announcement | 0.19% | 0.19% | -7.60% | -8.82% | -7.51% | Yes |
-| 2024-02-21 16:30 | Earnings | [Audited annual report 2023](https://view.news.eu.nasdaq.com/view?id=bf0619fbd95f5185f235f8d6bfe671702&lang=en&src=listed) | Open official announcement | 1.94% | -0.95% | -0.95% | 1.33% | -1.99% | No |
-| 2024-01-18 16:30 | Earnings | [Unaudited consolidated interim accounts for the fourth quarter and twelve months of 2023](https://view.news.eu.nasdaq.com/view?id=b3022f8ae832f1399b0dde16e33aa4209&lang=en&src=listed) | Open official announcement | 3.03% | -0.78% | -1.57% | 1.76% | -0.52% | Yes |
-| 2023-10-11 16:30 | Earnings | [Unaudited consolidated interim accounts for the third quarter and first nine months of 2023](https://view.news.eu.nasdaq.com/view?id=b718d45e41deba535cb9d6c27d0b2b480&lang=en&src=listed) | Open official announcement | 0.82% | -0.20% | 0.10% | 0.00% | -0.16% | No |
-| 2023-07-12 16:30 | Earnings | [Unaudited consolidated interim accounts for the second quarter and first six months of 2023](https://view.news.eu.nasdaq.com/view?id=b205cc4450fb96adffd3a1ca00370fbbe&lang=en&src=listed) | Open official announcement | 1.02% | 0.60% | 0.60% | 0.60% | 0.41% | No |
-| 2023-04-12 16:30 | Earnings | [Unaudited consolidated interim accounts for the first quarter of 2023](https://view.news.eu.nasdaq.com/view?id=baccba5617cf059530047886bf21fb7d5&lang=en&src=listed) | Open official announcement | 0.00% | 0.20% | 0.10% | -0.30% | 0.22% | No |
-| 2023-04-05 08:00 | Dividend payment | [Official dividend calendar: Dividend payment date, EUR 0.68 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.68  | -5.82% | 0.30% | 0.00% | -0.51% | -0.02% | No |
-| 2023-03-30 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.68 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.68  | 0.19% | -5.53% | -5.53% | -6.30% | -5.26% | Yes |
-| 2023-03-27 09:30 | Ex-dividend | [Dividend payment ex-date of Tallinna Kaubamaja Grupp AS](https://view.news.eu.nasdaq.com/view?id=b2cb85346da34ac7e9532ce6a0cd7aa87&lang=en&src=listed) | Open official announcement | 0.19% | -0.19% | -6.19% | -6.38% | -5.87% | Yes |
-| 2023-02-21 16:30 | Earnings | [Audited annual report 2022](https://view.news.eu.nasdaq.com/view?id=bd66c155ba40261254f10f6a8ef347428&lang=en&src=listed) | Open official announcement | -0.39% | 0.39% | 1.38% | 3.35% | 1.44% | Yes |
-| 2023-01-19 16:30 | Earnings | [Unaudited consolidated interim accounts for the fourth quarter and twelve months of 2022](https://view.news.eu.nasdaq.com/view?id=b6dcd5e262fb119a6ff1c63157465af7e&lang=en&src=listed) | Open official announcement | -0.10% | 0.10% | 3.38% | 4.40% | 2.52% | No |
+| 2026-07-23 07:00 | Earnings | [Harju Elekter Group financial results, 1-6/2026](https://view.news.eu.nasdaq.com/view?id=bb831cad24851c6144aded6ae2f08ef94&lang=en&src=listed) | Open official announcement | -4.07% | -0.77% | -0.77% | 2.32% | -0.78% | No |
+| 2026-05-28 08:00 | Dividend payment | [Official dividend calendar: Dividend payment date, EUR 0.25 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.25  | -4.48% | 1.08% | -0.72% | -1.81% | -0.84% | No |
+| 2026-05-20 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.25 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.25  | -1.02% | 0.00% | -4.14% | -6.90% | -4.72% | Yes |
+| 2026-05-15 07:00 | Ex-dividend | [Dividend payment ex-date of AS Harju Elekter Group](https://view.news.eu.nasdaq.com/view?id=bae459a0eaad19cfe634ddb1038133fa0&lang=en&src=listed) | Open official announcement | -0.68% | -0.34% | -4.76% | -7.82% | -4.32% | Yes |
+| 2026-04-23 07:00 | Earnings | [Harju Elekter Group financial results, 1-3/2026](https://view.news.eu.nasdaq.com/view?id=b716fc47c9b03923cb049b0354763075b&lang=en&src=listed) | Open official announcement | -5.35% | 0.35% | -0.35% | -2.12% | 0.47% | No |
+| 2026-03-30 10:19 | Earnings | [ Harju Elekter Group's audited Annual Report 2025](https://view.news.eu.nasdaq.com/view?id=b16e68f9d00f673d1a748f0c16ad936ed&lang=en&src=listed) | Open official announcement | -1.39% | -1.41% | 3.87% | -0.70% | 2.94% | Yes |
+| 2026-02-19 07:00 | Earnings | [Harju Elekter Group financial results, 1-12/2025](https://view.news.eu.nasdaq.com/view?id=ba5b76fe3d4d742b568831b069e0e7219&lang=en&src=listed) | Open official announcement | 7.49% | -0.70% | -1.39% | 0.00% | -0.49% | Yes |
+| 2025-10-30 07:00 | Earnings | [Harju Elekter Group financial results, 1-9/2025](https://view.news.eu.nasdaq.com/view?id=bc1c7abe1bc0e479751af81366937d865&lang=en&src=listed) | Open official announcement | 1.74% | 0.43% | -0.21% | 0.43% | -0.03% | No |
+| 2025-07-24 07:00 | Earnings | [Harju Elekter Group financial results, 1-6/2025](https://view.news.eu.nasdaq.com/view?id=b5cda42db997f0911f76183be52252a1a&lang=en&src=listed) | Open official announcement | -0.83% | 0.00% | -0.63% | -1.26% | -0.72% | No |
+| 2025-05-28 08:00 | Dividend payment | [Official dividend calendar: Dividend payment date, EUR 0.15 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.15  | 0.42% | 0.00% | -1.26% | 1.05% | -1.25% | No |
+| 2025-05-20 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.15 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.15  | 0.82% | -3.27% | -3.47% | -4.29% | -3.40% | No |
+| 2025-05-15 07:00 | Ex-dividend | [Dividend payment ex-date of AS Harju Elekter Group](https://view.news.eu.nasdaq.com/view?id=bdf92446b47cf58bee5ef2ab263b20805&lang=en&src=listed) | Open official announcement | 0.41% | 1.23% | -2.47% | -2.88% | -3.32% | Yes |
+| 2025-04-24 07:00 | Earnings | [Harju Elekter Group financial results, 1-3/2025](https://view.news.eu.nasdaq.com/view?id=bc6c53a85512ab746dde5bfb050e38c70&lang=en&src=listed) | Open official announcement | -0.43% | 0.00% | 3.00% | 2.15% | 0.88% | Yes |
+| 2025-03-27 07:42 | Earnings | [CORRECTION: Harju Elekter Group's audited Annual Report 2024](https://view.news.eu.nasdaq.com/view?id=b11e03c6b7e0673dd5d7aa8beae40fac3&lang=en&src=listed) | Open official announcement | -0.33% | 0.65% | 2.39% | 0.87% | 2.11% | No |
+| 2025-02-20 07:00 | Earnings | [Harju Elekter Group financial results, 1-12/2024](https://view.news.eu.nasdaq.com/view?id=b84af3d8acaab4dd1af8ea0b3b48d7351&lang=en&src=listed) | Open official announcement | -4.67% | 0.00% | -3.83% | -2.87% | -3.97% | No |
+| 2024-10-23 07:00 | Earnings | [Harju Elekter Group financial results, 1-9/2024](https://view.news.eu.nasdaq.com/view?id=bb119455ebab635b6f2e32dc644dc80c8&lang=en&src=listed) | Open official announcement | -2.64% | 0.54% | 0.00% | -0.22% | 0.14% | No |
+| 2024-07-24 09:39 | Earnings | [Correction: Harju Elekter Group financial results, 1-6/2024](https://view.news.eu.nasdaq.com/view?id=b307d54534f45fe12d6e22747c131674d&lang=en&src=listed) | Open official announcement | 2.00% | -0.93% | -0.10% | -2.58% | 0.49% | No |
+| 2024-05-28 08:00 | Dividend payment | [Official dividend calendar: Dividend payment date, EUR 0.13 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.13  | 0.31% | 0.61% | -1.32% | -2.85% | -1.87% | No |
+| 2024-05-20 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.13 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.13  | 5.13% | -4.30% | -3.52% | -7.03% | -3.21% | Yes |
+| 2024-05-15 08:00 | Ex-dividend | [Dividend payment ex-date of AS Harju Elekter Group](https://view.news.eu.nasdaq.com/view?id=b2fd0fc481cfc3c6944a0336a882a6ed9&lang=en&src=listed) | Open official announcement | 9.11% | -2.85% | -4.93% | -7.31% | -4.44% | Yes |
+| 2024-04-24 07:00 | Earnings | [Harju Elekter Group financial results, 1-3/2024](https://view.news.eu.nasdaq.com/view?id=bef401f55bedf01e88b6f0157cb805c90&lang=en&src=listed) | Open official announcement | 0.64% | 0.85% | 2.13% | 5.21% | 1.64% | No |
+| 2024-03-27 08:00 | Earnings | [Harju Elekter Group's audited Annual Report 2023](https://view.news.eu.nasdaq.com/view?id=b5153c176e45f6bac6a736aa4db092119&lang=en&src=listed) | Open official announcement | -0.10% | -1.03% | -2.79% | -0.21% | -3.36% | No |
+| 2024-02-21 08:00 | Earnings | [Harju Elekter Group financial results, 1-12/2023](https://view.news.eu.nasdaq.com/view?id=b4991a9e6923ac426c1cbf6093fc3ff96&lang=en&src=listed) | Open official announcement | 0.92% | -0.41% | -1.02% | -2.13% | -2.05% | Yes |
+| 2023-10-25 08:00 | Earnings | [Harju Elekter Group financial results, 1-9/2023](https://view.news.eu.nasdaq.com/view?id=b9ddb78545746cb52528d3eddc3a542b5&lang=en&src=listed) | Open official announcement | 1.00% | -0.20% | -1.19% | -1.58% | -1.33% | Yes |
+| 2023-07-26 07:30 | Earnings | [Harju Elekter Group financial results, 1-6/2023](https://view.news.eu.nasdaq.com/view?id=b297fd4ab03daef223ea413c03b21db6c&lang=en&src=listed) | Open official announcement | 1.00% | 0.40% | 0.40% | 1.38% | 0.30% | No |
+| 2023-05-24 08:00 | Dividend payment | [Official dividend calendar: Dividend payment date, EUR 0.05 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.05  | 0.80% | -0.20% | 1.39% | -0.99% | 1.39% | Yes |
+| 2023-05-16 08:00 | Ex-dividend | [Official dividend calendar: Dividend ex-date, EUR 0.05 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.05  | -0.99% | -0.40% | 0.80% | 0.00% | 2.24% | No |
+| 2023-05-11 08:00 | Ex-dividend | [Dividend payment ex-date of AS Harju Elekter](https://view.news.eu.nasdaq.com/view?id=b3df289f433e301fecf444e9bba4caa69&lang=en&src=listed) | Open official announcement | 0.60% | -0.20% | -0.60% | 0.00% | 0.82% | No |
+| 2023-04-26 08:00 | Earnings | [Harju Elekter Group financial results, 1-3/2023](https://view.news.eu.nasdaq.com/view?id=b6dfcac1dcf1cc683434ff289ddcc7829&lang=en&src=listed) | Open official announcement | 0.60% | 0.00% | 1.20% | 3.00% | 1.51% | Yes |
+| 2023-03-29 10:43 | Earnings | [Harju Elekter Group's audited Annual Report 2022](https://view.news.eu.nasdaq.com/view?id=bb2a0fe1affe265877851169e13b0686d&lang=en&src=listed) | Open official announcement | -0.20% | 0.00% | 0.20% | 0.20% | 0.47% | No |
+| 2023-02-22 08:00 | Earnings | [Harju Elekter Group financial results, 1-12/2022](https://view.news.eu.nasdaq.com/view?id=bfd02efb5df051589dc2a76f464b5d956&lang=en&src=listed) | Open official announcement | -1.77% | 0.60% | 1.40% | 0.40% | 1.64% | No |
 
 </details>
 
@@ -4032,7 +4039,7 @@ A direction reversal requires opposite fitted price slopes during the ten tradin
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![TKM1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TKM1T_all_frontiers.png?v=1792150961)
+![HAE1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/HAE1T_all_frontiers.png?v=1792486190)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -4043,42 +4050,42 @@ The highlighted circle is the selected share and pale circles are the remaining 
 
 | Measure | Full period | Last 126 | Measure | Full period | Last 126 |
 | --- | --- | --- | --- | --- | --- |
-| ActiveReturn | -0.245633 | -0.320675 | M2Sortino | -0.017314 | -0.083390 |
-| AdjustedSharpe | -0.130610 | -0.343215 | MSquaredExcess | -0.210725 | -0.284093 |
-| AnnualizedReturn_Arithmetic | -0.012162 | -0.080571 | Martin | -0.147483 | -1.725960 |
-| AnnualizedReturn_Geometric | -0.016943 | -0.083466 | MaximumDrawdown | 0.170070 | 0.075107 |
-| Appraisal | -0.255460 | -0.524923 | Modigliani | -0.000086 | -0.000438 |
-| ArithmeticReturn | -0.000048 | -0.000320 | NetSelectivity | -0.145137 | -0.256724 |
-| AverageDrawdown | 0.021201 | 0.018467 | Omega | 0.970092 | 0.790245 |
-| AverageDrawdownLength | 74.300000 | 19.500000 | OmegaExcessReturn | -0.046166 | -0.114968 |
-| AverageRecoveryTime | 40.000000 | 4.500000 | PainIndex | 0.105668 | 0.039159 |
-| BernardoLedoit | 0.970092 | 0.790245 | PainRatio | -0.160345 | -2.131479 |
-| BetaCoKurtosis | 0.036864 | -0.084826 | Prospect | -0.404644 | -0.342116 |
-| BetaCoSkewness | -1.671872 | -4.816994 | Rachev | 0.888236 | 0.702365 |
-| Burke | -0.104562 | -1.139562 | Selectivity | -0.025078 | -0.058563 |
-| CAPMAlpha | -0.000080 | -0.000226 | Sharpe_Annualized | -0.123558 | -0.711850 |
-| CAPMBeta | 0.035572 | -0.104983 | Sharpe_Daily | -0.007783 | -0.044842 |
-| CDD | 0.021416 | 0.047726 | Sharpe_ES | -0.003093 | -0.019428 |
-| Calmar | -0.099626 | -1.111300 | Sharpe_VaR | -0.006871 | -0.073416 |
-| CoKurtosis | 0.000000 | -0.000000 | Skewness | -4.151940 | -6.712294 |
-| CoSkewness | -0.000000 | -0.000000 | Sortino | -0.009456 | -0.049159 |
-| CumulativeReturn | -0.049845 | -0.042642 | SpecificRisk | 0.098168 | 0.111565 |
-| DRatio | 1.003342 | 1.375468 | Sterling | -0.062737 | -0.476658 |
-| DownCapture | 0.043554 | -0.048834 | SystematicRisk | 0.006246 | -0.016269 |
-| DownNumber | 0.411950 | 0.358491 | TotalRisk | 0.098367 | 0.112745 |
-| DownPercent | 0.874214 | 0.981132 | TrackingError_Annualized | 0.195779 | 0.204614 |
-| DownsideDeviation | 0.005104 | 0.006504 | TrackingError_Daily | 0.012333 | 0.012889 |
-| DrawdownDeviation | 0.006232 | 0.006974 | Treynor_Annualized | -0.476317 | 0.795044 |
-| ES_Loss | 0.015606 | 0.016457 | Treynor_Daily | -0.001906 | 0.003294 |
-| FamaBeta | 0.560557 | 0.730403 | UlcerIndex | 0.114883 | 0.048359 |
-| GeometricReturn | -0.000068 | -0.000346 | UpCapture | 0.023213 | -0.113401 |
-| Hurst | 0.417088 | 0.513426 | UpNumber | 0.396789 | 0.315068 |
-| Information_Annualized | -1.254642 | -1.567222 | UpPercent | 0.139908 | 0.136986 |
-| Information_Daily | -0.071791 | -0.092388 | UpsidePotential | 0.306695 | 0.185206 |
-| JensenAlpha | -0.025078 | -0.058563 | UpsideRisk | 0.003514 | 0.002870 |
-| Kappa | -0.004604 | -0.023436 | VaR_Loss | 0.007024 | 0.004355 |
-| Kelly | -1.255266 | -6.289215 | Volatility | 0.006201 | 0.007130 |
-| Kurtosis | 47.689790 | 65.244397 | Volatility_Annualized | 0.098432 | 0.113186 |
+| ActiveReturn | -0.246414 | -0.309903 | M2Sortino | -0.017860 | -0.072074 |
+| AdjustedSharpe | -0.057893 | -0.321064 | MSquaredExcess | -0.204243 | -0.242654 |
+| AnnualizedReturn_Arithmetic | -0.008146 | -0.059614 | Martin | -0.156945 | -1.117513 |
+| AnnualizedReturn_Geometric | -0.017725 | -0.072693 | MaximumDrawdown | 0.209400 | 0.135239 |
+| Appraisal | -0.168881 | -0.234070 | Modigliani | -0.000041 | -0.000205 |
+| ArithmeticReturn | -0.000032 | -0.000237 | NetSelectivity | -0.199798 | -0.346380 |
+| AverageDrawdown | 0.058845 | 0.032257 | Omega | 0.988111 | 0.936887 |
+| AverageDrawdownLength | 93.375000 | 15.125000 | OmegaExcessReturn | -0.052011 | -0.109853 |
+| AverageRecoveryTime | 15.375000 | 4.000000 | PainIndex | 0.098550 | 0.047630 |
+| BernardoLedoit | 0.988111 | 0.936887 | PainRatio | -0.179853 | -1.526195 |
+| BetaCoKurtosis | 0.053440 | 0.011496 | Prospect | -0.572958 | -0.641539 |
+| BetaCoSkewness | 0.134984 | 15.884029 | Rachev | 1.080200 | 1.141043 |
+| Burke | -0.088405 | -0.738308 | Selectivity | -0.023582 | -0.041411 |
+| CAPMAlpha | -0.000055 | -0.000119 | Sharpe_Annualized | -0.058271 | -0.333424 |
+| CAPMBeta | 0.025615 | -0.131879 | Sharpe_Daily | -0.003671 | -0.021004 |
+| CDD | 0.153779 | 0.071630 | Sharpe_ES | -0.001603 | -0.010348 |
+| Calmar | -0.084644 | -0.537518 | Sharpe_VaR | -0.002878 | -0.016752 |
+| CoKurtosis | 0.000000 | 0.000000 | Skewness | 0.500438 | 0.194003 |
+| CoSkewness | 0.000000 | 0.000000 | Sortino | -0.005398 | -0.030835 |
+| CumulativeReturn | -0.052102 | -0.037032 | SpecificRisk | 0.139638 | 0.176916 |
+| DRatio | 1.154072 | 1.473980 | Sterling | -0.057287 | -0.309019 |
+| DownCapture | 0.007906 | -0.130043 | SystematicRisk | 0.004498 | -0.020436 |
+| DownNumber | 0.430818 | 0.358491 | TotalRisk | 0.139711 | 0.178092 |
+| DownPercent | 0.823899 | 0.792453 | TrackingError_Annualized | 0.220906 | 0.249629 |
+| DownsideDeviation | 0.005988 | 0.007672 | TrackingError_Daily | 0.013916 | 0.015725 |
+| DrawdownDeviation | 0.009361 | 0.013210 | Treynor_Annualized | -0.691964 | 0.551214 |
+| ES_Loss | 0.020168 | 0.022862 | Treynor_Daily | -0.002770 | 0.002271 |
+| FamaBeta | 0.796163 | 1.153778 | UlcerIndex | 0.112935 | 0.065049 |
+| GeometricReturn | -0.000071 | -0.000299 | UpCapture | -0.001326 | -0.158224 |
+| Hurst | 0.386445 | 0.446875 | UpNumber | 0.373853 | 0.260274 |
+| Information_Annualized | -1.115467 | -1.241453 | UpPercent | 0.176606 | 0.205479 |
+| Information_Daily | -0.063852 | -0.072780 | UpsidePotential | 0.448649 | 0.457729 |
+| JensenAlpha | -0.023582 | -0.041411 | UpsideRisk | 0.006450 | 0.008188 |
+| Kappa | -0.003342 | -0.019715 | VaR_Loss | 0.011233 | 0.014122 |
+| Kelly | -0.416803 | -1.864855 | Volatility | 0.008807 | 0.011263 |
+| Kurtosis | 14.435639 | 8.675222 | Volatility_Annualized | 0.139804 | 0.178794 |
 
 </details>
 
@@ -4087,27 +4094,27 @@ The highlighted circle is the selected share and pale circles are the remaining 
 
 **Removing this share from curent_update_baltic**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.762712</td><td>-0.050847</td></tr><tr><td>OUT</td><td>96</td><td>90</td><td>-6</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.207303</td><td>0.059529</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.181595</td><td>0.020102</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.813559</td><td>0.000000</td></tr><tr><td>OUT</td><td>96</td><td>96</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.141945</td><td>-0.005829</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.161638</td><td>0.000145</td></tr></tbody></table>
 
 The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
 
 **Increasing this existing position in the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>TKM1T shares</td><td>288</td><td>343</td><td>+55</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>8449.651985</td><td>492.800002</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.440678</td><td>0.016949</td></tr><tr><td>OUT</td><td>62</td><td>62</td><td>+0</td></tr><tr><td>IN</td><td>12</td><td>10</td><td>-2</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.058090</td><td>-0.012033</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.088184</td><td>-0.004168</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>HAE1T shares</td><td>100</td><td>173</td><td>+73</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>8303.579977</td><td>391.280010</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.440678</td><td>-0.016949</td></tr><tr><td>OUT</td><td>62</td><td>62</td><td>+0</td></tr><tr><td>IN</td><td>8</td><td>10</td><td>+2</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.070811</td><td>0.000639</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.090759</td><td>-0.000397</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 288 TKM1T shares. The scenario adds 55 shares from Table 3A, resulting in 343 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 100 HAE1T shares. The scenario adds 73 shares from Table 3A, resulting in 173 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
 The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Choose S&P 500, Current or any model portfolio as the benchmark for the difference panels.
 
-<div class="dominance-explorer" data-asset="TKM1T"><p>Open this section to load the interactive curve explorer.</p></div>
+<div class="dominance-explorer" data-asset="HAE1T"><p>Open this section to load the interactive curve explorer.</p></div>
 
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![TKM1T high-resolution stochastic dominance](figures/stock_profiles/TKM1T_FSD_SSD_TSD.png?v=1792171307)
+![HAE1T high-resolution stochastic dominance](figures/stock_profiles/HAE1T_FSD_SSD_TSD.png?v=1792486449)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -4120,9 +4127,9 @@ The static figure is collapsed because the interactive plots above provide the d
 </details>
 
 <details markdown="1" class="stock-profile" id="share-lhv1t">
-<summary><strong>LHV1T — LHV Group</strong> | HOLD | target 34 shares | priority 19</summary>
+<summary><strong>LHV1T — LHV Group</strong> | HOLD | target 65 shares | priority 19</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>34</td><td>+34</td><td>0.75%</td><td>EUR 3.2550</td><td>0.0847</td><td>34 / 24</td><td>34.21</td><td>Bearish</td><td>Inside bands</td><td>0.409 (Neutral)</td><td>HOLD</td><td>0.000056 (0.065% of portfolio HHI)</td><td>EUR 265,034</td><td>0.0%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>65</td><td>+65</td><td>1.42%</td><td>EUR 3.2500</td><td>0.0678</td><td>32 / 24</td><td>35.02</td><td>Bearish</td><td>Inside bands</td><td>0.472 (Neutral)</td><td>HOLD</td><td>0.000201 (0.260% of portfolio HHI)</td><td>EUR 269,011</td><td>0.1%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
 ![LHV1T Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/LHV1T_technicals_6m.png)
 
@@ -4138,22 +4145,22 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![LHV1T return histogram](figures/stock_profiles/LHV1T_histogram.png?v=1792150405)
+![LHV1T return histogram](figures/stock_profiles/LHV1T_histogram.png?v=1792485733)
 
 </details>
 
 <details markdown="1" class="seasonality-section">
 <summary>Seasonality, drawdowns and upside periods</summary>
 
-The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
+The analysis covers 919 daily returns from 2023-01-02 to 2026-10-16. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
 
 | Measure | Value | Measure | Value | Measure | Value |
 | --- | --- | --- | --- | --- | --- |
-| Maximum drawdown | -18.99% (2024-12-04) | Average gain / average loss | 1.282 | Best 21-day period | 18.54% (ending 2025-02-17) |
-| Average underwater drawdown | 11.36% | Upside potential ratio | 1.404 | Worst 21-day period | -9.62% (ending 2025-03-20) |
-| Conditional drawdown 95% | 17.70% | Upside capture vs Baltic EW | 65.0% | Best 5-day period | 10.50% (ending 2023-01-16) |
-| Ulcer index | 11.85 | Downside capture vs Baltic EW | 67.6% | Best 63-day period | 14.37% (ending 2025-02-17) |
-| Longest underwater period | 1346 calendar days | Positive trading days | 36.9% | Repeated calendar pattern | Dec: 100% positive across 3 years |
+| Maximum drawdown | -18.99% (2024-12-04) | Average gain / average loss | 1.281 | Best 21-day period | 18.54% (ending 2025-02-17) |
+| Average underwater drawdown | 11.37% | Upside potential ratio | 1.402 | Worst 21-day period | -9.62% (ending 2025-03-20) |
+| Conditional drawdown 95% | 17.70% | Upside capture vs Baltic EW | 65.1% | Best 5-day period | 10.50% (ending 2023-01-16) |
+| Ulcer index | 11.86 | Downside capture vs Baltic EW | 67.9% | Best 63-day period | 14.37% (ending 2025-02-17) |
+| Longest underwater period | 1348 calendar days | Positive trading days | 36.9% | Repeated calendar pattern | Dec: 100% positive across 3 years |
 | Daily downside deviation | 0.545% | Best day | 4.62% (2025-11-27) |  |  |
 | Daily upside deviation | 0.671% | Worst day | -3.86% (2023-03-13) |  |  |
 
@@ -4161,17 +4168,17 @@ The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistical
 
 | Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
 | --- | --- | --- | --- | --- |
-| Weekday | Best: Friday (0.091%); worst: Monday (-0.149%) | 0.0205 | 0.1363 | Not detected |
-| Calendar month | Best: Jan (0.280% daily); worst: Apr (-0.132% daily) | 0.7419 | 0.8126 | Not detected |
-| Turn of month | First/last three days: 0.009%; other days: -0.002% | 0.7297 | 0.9443 | Not detected |
+| Weekday | Best: Friday (0.088%); worst: Monday (-0.149%) | 0.0218 | 0.1527 | Not detected |
+| Calendar month | Best: Jan (0.280% daily); worst: Apr (-0.132% daily) | 0.7419 | 0.8125 | Not detected |
+| Turn of month | First/last three days: 0.009%; other days: -0.002% | 0.7294 | 0.9400 | Not detected |
 
-![LHV1T seasonality, drawdowns and upside periods](figures/stock_profiles/LHV1T_seasonality.png?v=1792161108)
+![LHV1T seasonality, drawdowns and upside periods](figures/stock_profiles/LHV1T_seasonality.png?v=1792486409)
 
 **Five deepest drawdown episodes**
 
 | Rank | Peak | Trough | Recovery | Loss | Underwater days |
 | --- | --- | --- | --- | --- | --- |
-| 1 | 2023-02-06 | 2024-12-04 | Not recovered | -18.99% | 1346 |
+| 1 | 2023-02-06 | 2024-12-04 | Not recovered | -18.99% | 1348 |
 | 2 | 2023-01-18 | 2023-01-19 | 2023-01-25 | -1.33% | 7 |
 | 3 | 2023-01-16 | 2023-01-17 | 2023-01-18 | -0.80% | 2 |
 | 4 | 2023-01-27 | 2023-01-30 | 2023-02-01 | -0.77% | 5 |
@@ -4197,12 +4204,12 @@ Announcement times and links come from the official Nasdaq news service. The eff
 | Event type | N | Abnormal 1d | Abnormal 5d | Abnormal 21d | Positive 5d | Direction reversal | BH p(5d) | BH p(21d) | Interpretation |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Dividend announcement | 4 | -0.05% | -0.96% | -0.34% | 50% | 0% | 1.0000 | 1.0000 | No adjusted statistical evidence |
-| Dividend payment | 4 | 0.53% | 0.51% | -0.29% | 75% | 25% | 0.8057 | 1.0000 | No adjusted statistical evidence |
+| Dividend payment | 4 | 0.53% | 0.51% | -0.29% | 75% | 25% | 0.7999 | 1.0000 | No adjusted statistical evidence |
 | Earnings | 21 | 0.10% | -0.25% | -0.58% | 38% | 33% | 1.0000 | 1.0000 | No adjusted statistical evidence |
-| Ex-dividend | 7 | -1.01% | -2.55% | -1.90% | 0% | 43% | 0.0029 | 0.8356 | Different from ordinary periods; price drop may be mechanical |
-| Guidance | 5 | -0.32% | -1.06% | -1.98% | 40% | 40% | 0.9852 | 1.0000 | No adjusted statistical evidence |
+| Ex-dividend | 7 | -1.01% | -2.55% | -1.90% | 0% | 43% | 0.0029 | 0.8362 | Different from ordinary periods; price drop may be mechanical |
+| Guidance | 5 | -0.32% | -1.06% | -1.98% | 40% | 40% | 0.9869 | 1.0000 | No adjusted statistical evidence |
 
-![LHV1T official announcements and abnormal returns](figures/stock_profiles/LHV1T_company_events.png?v=1792171567)
+![LHV1T official announcements and abnormal returns](figures/stock_profiles/LHV1T_company_events.png?v=1792486532)
 
 A direction reversal requires opposite fitted price slopes during the ten trading days before and after the event and at least a 1% five-day move. This identifies temporal association, not proof that the announcement caused the change.
 
@@ -4262,7 +4269,7 @@ A direction reversal requires opposite fitted price slopes during the ten tradin
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![LHV1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/LHV1T_all_frontiers.png?v=1792150973)
+![LHV1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/LHV1T_all_frontiers.png?v=1792486196)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -4323,9 +4330,9 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 **Adding this new share to the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>LHV1T shares</td><td>0</td><td>34</td><td>+34</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>8067.521987</td><td>110.670004</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.423729</td><td>0.000000</td></tr><tr><td>OUT</td><td>62</td><td>62</td><td>+0</td></tr><tr><td>IN</td><td>12</td><td>12</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.068991</td><td>-0.001132</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.091928</td><td>-0.000424</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>LHV1T shares</td><td>0</td><td>65</td><td>+65</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>8123.549967</td><td>211.250000</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.423729</td><td>-0.033898</td></tr><tr><td>OUT</td><td>62</td><td>60</td><td>-2</td></tr><tr><td>IN</td><td>8</td><td>10</td><td>+2</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.067756</td><td>-0.002417</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.090316</td><td>-0.000839</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 0 LHV1T shares. The scenario adds 34 shares from Table 3A, resulting in 34 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 LHV1T shares. The scenario adds 65 shares from Table 3A, resulting in 65 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -4337,7 +4344,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![LHV1T high-resolution stochastic dominance](figures/stock_profiles/LHV1T_FSD_SSD_TSD.png?v=1792171285)
+![LHV1T high-resolution stochastic dominance](figures/stock_profiles/LHV1T_FSD_SSD_TSD.png?v=1792486455)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -4350,9 +4357,9 @@ The static figure is collapsed because the interactive plots above provide the d
 </details>
 
 <details markdown="1" class="stock-profile" id="share-cpa1t">
-<summary><strong>CPA1T — Coop Pank</strong> | HOLD | target 46 shares | priority 20</summary>
+<summary><strong>CPA1T — Coop Pank</strong> | HOLD | target 67 shares | priority 20</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>46</td><td>+46</td><td>0.72%</td><td>EUR 2.3400</td><td>0.0508</td><td>30 / 24</td><td>51.24</td><td>Bullish</td><td>Inside bands</td><td>0.692 (Neutral)</td><td>HOLD</td><td>0.000052 (0.061% of portfolio HHI)</td><td>EUR 80,229</td><td>0.1%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>67</td><td>+67</td><td>1.06%</td><td>EUR 2.3500</td><td>0.0508</td><td>30 / 24</td><td>54.99</td><td>Bullish</td><td>Inside bands</td><td>0.829 (Overbought)</td><td>HOLD</td><td>0.000113 (0.145% of portfolio HHI)</td><td>EUR 78,808</td><td>0.2%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
 ![CPA1T Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/CPA1T_technicals_6m.png)
 
@@ -4368,40 +4375,40 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![CPA1T return histogram](figures/stock_profiles/CPA1T_histogram.png?v=1792150405)
+![CPA1T return histogram](figures/stock_profiles/CPA1T_histogram.png?v=1792485730)
 
 </details>
 
 <details markdown="1" class="seasonality-section">
 <summary>Seasonality, drawdowns and upside periods</summary>
 
-The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
+The analysis covers 919 daily returns from 2023-01-02 to 2026-10-16. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
 
 | Measure | Value | Measure | Value | Measure | Value |
 | --- | --- | --- | --- | --- | --- |
-| Maximum drawdown | -37.66% (2025-10-27) | Average gain / average loss | 1.208 | Best 21-day period | 23.44% (ending 2023-02-02) |
-| Average underwater drawdown | 25.43% | Upside potential ratio | 1.339 | Worst 21-day period | -13.07% (ending 2023-05-25) |
-| Conditional drawdown 95% | 37.17% | Upside capture vs Baltic EW | 79.9% | Best 5-day period | 8.80% (ending 2023-01-16) |
-| Ulcer index | 26.76 | Downside capture vs Baltic EW | 84.3% | Best 63-day period | 20.46% (ending 2026-02-20) |
-| Longest underwater period | 1350 calendar days | Positive trading days | 38.4% | Repeated calendar pattern | Jan: 100% positive across 4 years |
-| Daily downside deviation | 0.629% | Best day | 4.84% (2026-01-22) |  |  |
-| Daily upside deviation | 0.713% | Worst day | -3.82% (2023-03-13) |  |  |
+| Maximum drawdown | -37.66% (2025-10-27) | Average gain / average loss | 1.206 | Best 21-day period | 23.44% (ending 2023-02-02) |
+| Average underwater drawdown | 25.42% | Upside potential ratio | 1.339 | Worst 21-day period | -13.07% (ending 2023-05-25) |
+| Conditional drawdown 95% | 37.17% | Upside capture vs Baltic EW | 79.7% | Best 5-day period | 8.80% (ending 2023-01-16) |
+| Ulcer index | 26.75 | Downside capture vs Baltic EW | 83.9% | Best 63-day period | 20.46% (ending 2026-02-20) |
+| Longest underwater period | 1352 calendar days | Positive trading days | 38.4% | Repeated calendar pattern | Jan: 100% positive across 4 years |
+| Daily downside deviation | 0.628% | Best day | 4.84% (2026-01-22) |  |  |
+| Daily upside deviation | 0.712% | Worst day | -3.82% (2023-03-13) |  |  |
 
 **Calendar-effect tests and observed averages**
 
 | Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
 | --- | --- | --- | --- | --- |
-| Weekday | Best: Friday (0.144%); worst: Monday (-0.171%) | 0.0133 | 0.1363 | Not detected |
-| Calendar month | Best: Jan (0.348% daily); worst: May (-0.207% daily) | 0.1726 | 0.3970 | Not detected |
-| Turn of month | First/last three days: 0.010%; other days: -0.004% | 0.6435 | 0.9250 | Not detected |
+| Weekday | Best: Friday (0.145%); worst: Monday (-0.171%) | 0.0118 | 0.1354 | Not detected |
+| Calendar month | Best: Jan (0.348% daily); worst: May (-0.207% daily) | 0.1570 | 0.3610 | Not detected |
+| Turn of month | First/last three days: 0.010%; other days: -0.003% | 0.6546 | 0.9400 | Not detected |
 
-![CPA1T seasonality, drawdowns and upside periods](figures/stock_profiles/CPA1T_seasonality.png?v=1792161111)
+![CPA1T seasonality, drawdowns and upside periods](figures/stock_profiles/CPA1T_seasonality.png?v=1792486421)
 
 **Five deepest drawdown episodes**
 
 | Rank | Peak | Trough | Recovery | Loss | Underwater days |
 | --- | --- | --- | --- | --- | --- |
-| 1 | 2023-02-02 | 2025-10-27 | Not recovered | -37.66% | 1350 |
+| 1 | 2023-02-02 | 2025-10-27 | Not recovered | -37.66% | 1352 |
 | 2 | 2023-01-16 | 2023-01-24 | 2023-01-26 | -1.82% | 10 |
 | 3 | 2023-01-03 | 2023-01-06 | 2023-01-09 | -1.52% | 6 |
 | 4 | 2023-01-30 | 2023-01-31 | 2023-02-01 | -0.68% | 2 |
@@ -4425,12 +4432,12 @@ Announcement times and links come from the official Nasdaq news service. The eff
 
 | Event type | N | Abnormal 1d | Abnormal 5d | Abnormal 21d | Positive 5d | Direction reversal | BH p(5d) | BH p(21d) | Interpretation |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Dividend payment | 4 | -0.57% | -0.24% | -2.42% | 50% | 0% | 1.0000 | 0.7133 | No adjusted statistical evidence |
-| Earnings | 24 | -0.01% | -0.55% | -1.11% | 33% | 46% | 0.5821 | 1.0000 | No adjusted statistical evidence |
+| Dividend payment | 4 | -0.57% | -0.24% | -2.42% | 50% | 0% | 1.0000 | 0.7072 | No adjusted statistical evidence |
+| Earnings | 24 | -0.01% | -0.55% | -1.11% | 33% | 46% | 0.5787 | 1.0000 | No adjusted statistical evidence |
 | Ex-dividend | 8 | -0.83% | -3.78% | -5.78% | 0% | 50% | 0.0000 | 0.0010 | Different from ordinary periods; price drop may be mechanical |
-| Guidance | 6 | -0.09% | 0.13% | -0.52% | 67% | 33% | 0.9852 | 1.0000 | No adjusted statistical evidence |
+| Guidance | 6 | -0.09% | 0.13% | -0.52% | 67% | 33% | 0.9869 | 1.0000 | No adjusted statistical evidence |
 
-![CPA1T official announcements and abnormal returns](figures/stock_profiles/CPA1T_company_events.png?v=1792171568)
+![CPA1T official announcements and abnormal returns](figures/stock_profiles/CPA1T_company_events.png?v=1792486535)
 
 A direction reversal requires opposite fitted price slopes during the ten trading days before and after the event and at least a 1% five-day move. This identifies temporal association, not proof that the announcement caused the change.
 
@@ -4491,7 +4498,7 @@ A direction reversal requires opposite fitted price slopes during the ten tradin
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![CPA1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/CPA1T_all_frontiers.png?v=1792150974)
+![CPA1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/CPA1T_all_frontiers.png?v=1792486198)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -4552,9 +4559,9 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 **Adding this new share to the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>CPA1T shares</td><td>0</td><td>46</td><td>+46</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>8064.491979</td><td>107.639996</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.423729</td><td>0.000000</td></tr><tr><td>OUT</td><td>62</td><td>62</td><td>+0</td></tr><tr><td>IN</td><td>12</td><td>12</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.072595</td><td>0.002472</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.091795</td><td>-0.000557</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>CPA1T shares</td><td>0</td><td>67</td><td>+67</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>8069.749960</td><td>157.449994</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.406780</td><td>-0.050847</td></tr><tr><td>OUT</td><td>62</td><td>60</td><td>-2</td></tr><tr><td>IN</td><td>8</td><td>12</td><td>+4</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.073798</td><td>0.003626</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.090358</td><td>-0.000798</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 0 CPA1T shares. The scenario adds 46 shares from Table 3A, resulting in 46 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 CPA1T shares. The scenario adds 67 shares from Table 3A, resulting in 67 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -4566,7 +4573,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![CPA1T high-resolution stochastic dominance](figures/stock_profiles/CPA1T_FSD_SSD_TSD.png?v=1792171266)
+![CPA1T high-resolution stochastic dominance](figures/stock_profiles/CPA1T_FSD_SSD_TSD.png?v=1792486441)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -4579,9 +4586,9 @@ The static figure is collapsed because the interactive plots above provide the d
 </details>
 
 <details markdown="1" class="stock-profile" id="share-tve1t">
-<summary><strong>TVE1T — Tallinna Vesi</strong> | HOLD | target 39 shares | priority 21</summary>
+<summary><strong>TVE1T — Tallinna Vesi</strong> | HOLD | target 43 shares | priority 21</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>39</td><td>+39</td><td>2.88%</td><td>EUR 10.9000</td><td>0.0424</td><td>31 / 26</td><td>52.49</td><td>Bullish</td><td>Inside bands</td><td>1.000 (Overbought)</td><td>HOLD</td><td>0.000829 (0.967% of portfolio HHI)</td><td>EUR 14,562</td><td>2.9%</td><td>1.2%</td><td>MEDIUM</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>43</td><td>+43</td><td>3.11%</td><td>EUR 10.8500</td><td>0.0339</td><td>30 / 26</td><td>46.98</td><td>Bullish</td><td>Inside bands</td><td>0.486 (Neutral)</td><td>HOLD</td><td>0.000968 (1.248% of portfolio HHI)</td><td>EUR 14,562</td><td>3.2%</td><td>1.2%</td><td>MEDIUM</td></tr></tbody></table>
 
 ![TVE1T Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/TVE1T_technicals_6m.png)
 
@@ -4597,22 +4604,22 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![TVE1T return histogram](figures/stock_profiles/TVE1T_histogram.png?v=1792150404)
+![TVE1T return histogram](figures/stock_profiles/TVE1T_histogram.png?v=1792485730)
 
 </details>
 
 <details markdown="1" class="seasonality-section">
 <summary>Seasonality, drawdowns and upside periods</summary>
 
-The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
+The analysis covers 919 daily returns from 2023-01-02 to 2026-10-16. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
 
 | Measure | Value | Measure | Value | Measure | Value |
 | --- | --- | --- | --- | --- | --- |
-| Maximum drawdown | -24.32% (2024-09-05) | Average gain / average loss | 0.921 | Best 21-day period | 12.56% (ending 2025-05-20) |
+| Maximum drawdown | -24.32% (2024-09-05) | Average gain / average loss | 0.922 | Best 21-day period | 12.56% (ending 2025-05-20) |
 | Average underwater drawdown | 17.55% | Upside potential ratio | 1.314 | Worst 21-day period | -8.86% (ending 2023-08-24) |
-| Conditional drawdown 95% | 23.79% | Upside capture vs Baltic EW | 27.8% | Best 5-day period | 7.37% (ending 2025-05-20) |
-| Ulcer index | 18.24 | Downside capture vs Baltic EW | 39.7% | Best 63-day period | 12.02% (ending 2025-06-04) |
-| Longest underwater period | 1357 calendar days | Positive trading days | 29.3% | Repeated calendar pattern | Apr: 100% positive across 4 years |
+| Conditional drawdown 95% | 23.79% | Upside capture vs Baltic EW | 27.7% | Best 5-day period | 7.37% (ending 2025-05-20) |
+| Ulcer index | 18.24 | Downside capture vs Baltic EW | 40.0% | Best 63-day period | 12.02% (ending 2025-06-04) |
+| Longest underwater period | 1359 calendar days | Positive trading days | 29.3% | Repeated calendar pattern | Apr: 100% positive across 4 years |
 | Daily downside deviation | 0.495% | Best day | 2.75% (2025-05-16) |  |  |
 | Daily upside deviation | 0.417% | Worst day | -4.74% (2026-05-11) |  |  |
 
@@ -4620,17 +4627,17 @@ The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistical
 
 | Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
 | --- | --- | --- | --- | --- |
-| Weekday | Best: Friday (0.079%); worst: Monday (-0.103%) | 0.1567 | 0.3003 | Not detected |
-| Calendar month | Best: Apr (0.138% daily); worst: Jun (-0.141% daily) | 0.4903 | 0.6265 | Not detected |
-| Turn of month | First/last three days: 0.076%; other days: -0.035% | 0.0280 | 0.2149 | Not detected |
+| Weekday | Best: Friday (0.076%); worst: Monday (-0.103%) | 0.1686 | 0.3231 | Not detected |
+| Calendar month | Best: Apr (0.138% daily); worst: Jun (-0.141% daily) | 0.5004 | 0.6394 | Not detected |
+| Turn of month | First/last three days: 0.076%; other days: -0.036% | 0.0268 | 0.2058 | Not detected |
 
-![TVE1T seasonality, drawdowns and upside periods](figures/stock_profiles/TVE1T_seasonality.png?v=1792161082)
+![TVE1T seasonality, drawdowns and upside periods](figures/stock_profiles/TVE1T_seasonality.png?v=1792486401)
 
 **Five deepest drawdown episodes**
 
 | Rank | Peak | Trough | Recovery | Loss | Underwater days |
 | --- | --- | --- | --- | --- | --- |
-| 1 | 2023-01-26 | 2024-09-05 | Not recovered | -24.32% | 1357 |
+| 1 | 2023-01-26 | 2024-09-05 | Not recovered | -24.32% | 1359 |
 | 2 | 2023-01-04 | 2023-01-05 | 2023-01-06 | -0.31% | 2 |
 | 3 | 2023-01-16 | 2023-01-17 | 2023-01-18 | -0.31% | 2 |
 | 4 | 2023-01-20 | 2023-01-23 | 2023-01-24 | -0.30% | 4 |
@@ -4640,7 +4647,7 @@ The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistical
 
 | Rank | Start | End | 21-day return |
 | --- | --- | --- | --- |
-| 1 | 2025-04-15 | 2025-05-21 | 12.56% |
+| 1 | 2025-04-14 | 2025-05-20 | 12.56% |
 | 2 | 2025-12-03 | 2026-01-09 | 6.60% |
 | 3 | 2025-01-13 | 2025-02-11 | 4.90% |
 | 4 | 2024-04-04 | 2024-05-07 | 4.85% |
@@ -4655,12 +4662,12 @@ Announcement times and links come from the official Nasdaq news service. The eff
 
 | Event type | N | Abnormal 1d | Abnormal 5d | Abnormal 21d | Positive 5d | Direction reversal | BH p(5d) | BH p(21d) | Interpretation |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Dividend announcement | 4 | -0.21% | 0.48% | 3.86% | 50% | 25% | 1.0000 | 0.0099 | Different from ordinary periods |
-| Dividend payment | 4 | 0.36% | -0.21% | 1.49% | 25% | 0% | 1.0000 | 0.3953 | No adjusted statistical evidence |
-| Earnings | 19 | -0.01% | -0.31% | -0.70% | 37% | 37% | 0.8057 | 1.0000 | No adjusted statistical evidence |
+| Dividend announcement | 4 | -0.21% | 0.48% | 3.86% | 50% | 25% | 1.0000 | 0.0100 | Different from ordinary periods |
+| Dividend payment | 4 | 0.36% | -0.21% | 1.49% | 25% | 0% | 1.0000 | 0.3987 | No adjusted statistical evidence |
+| Earnings | 19 | -0.01% | -0.31% | -0.70% | 37% | 37% | 0.7999 | 1.0000 | No adjusted statistical evidence |
 | Ex-dividend | 8 | -1.95% | -4.20% | -4.45% | 0% | 75% | 0.0000 | 0.0006 | Different from ordinary periods; price drop may be mechanical |
 
-![TVE1T official announcements and abnormal returns](figures/stock_profiles/TVE1T_company_events.png?v=1792171554)
+![TVE1T official announcements and abnormal returns](figures/stock_profiles/TVE1T_company_events.png?v=1792486527)
 
 A direction reversal requires opposite fitted price slopes during the ten trading days before and after the event and at least a 1% five-day move. This identifies temporal association, not proof that the announcement caused the change.
 
@@ -4714,7 +4721,7 @@ A direction reversal requires opposite fitted price slopes during the ten tradin
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![TVE1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TVE1T_all_frontiers.png?v=1792150970)
+![TVE1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TVE1T_all_frontiers.png?v=1792486194)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -4775,9 +4782,9 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 **Adding this new share to the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>TVE1T shares</td><td>0</td><td>39</td><td>+39</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>8381.951968</td><td>425.099985</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.440678</td><td>0.016949</td></tr><tr><td>OUT</td><td>62</td><td>62</td><td>+0</td></tr><tr><td>IN</td><td>12</td><td>10</td><td>-2</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.072688</td><td>0.002565</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.089927</td><td>-0.002425</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>TVE1T shares</td><td>0</td><td>43</td><td>+43</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>8378.849983</td><td>466.550016</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.449153</td><td>-0.008475</td></tr><tr><td>OUT</td><td>62</td><td>62</td><td>+0</td></tr><tr><td>IN</td><td>8</td><td>9</td><td>+1</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.073171</td><td>0.002998</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.088386</td><td>-0.002770</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 0 TVE1T shares. The scenario adds 39 shares from Table 3A, resulting in 39 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 TVE1T shares. The scenario adds 43 shares from Table 3A, resulting in 43 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -4789,7 +4796,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![TVE1T high-resolution stochastic dominance](figures/stock_profiles/TVE1T_FSD_SSD_TSD.png?v=1792171312)
+![TVE1T high-resolution stochastic dominance](figures/stock_profiles/TVE1T_FSD_SSD_TSD.png?v=1792486477)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -4804,7 +4811,7 @@ The static figure is collapsed because the interactive plots above provide the d
 <details markdown="1" class="stock-profile" id="share-saf1r">
 <summary><strong>SAF1R — SAF Tehnika</strong> | HOLD | target 100 shares | priority 22</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>100</td><td>100</td><td>+0</td><td>11.00%</td><td>EUR 16.5000</td><td>-0.1186</td><td>12 / 26</td><td>48.45</td><td>Bearish</td><td>Inside bands</td><td>0.331 (Neutral)</td><td>HOLD</td><td>0.012100 (14.115% of portfolio HHI)</td><td>EUR 7,130</td><td>0.0%</td><td>2.4%</td><td>MEDIUM</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>100</td><td>100</td><td>+0</td><td>10.90%</td><td>EUR 16.3500</td><td>-0.1186</td><td>12 / 26</td><td>45.55</td><td>Bearish</td><td>Inside bands</td><td>0.000 (Oversold)</td><td>HOLD</td><td>0.011881 (15.322% of portfolio HHI)</td><td>EUR 7,531</td><td>0.0%</td><td>2.4%</td><td>MEDIUM</td></tr></tbody></table>
 
 ![SAF1R Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/SAF1R_technicals_6m.png)
 
@@ -4820,41 +4827,41 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![SAF1R return histogram](figures/stock_profiles/SAF1R_histogram.png?v=1792150404)
+![SAF1R return histogram](figures/stock_profiles/SAF1R_histogram.png?v=1792485732)
 
 </details>
 
 <details markdown="1" class="seasonality-section">
 <summary>Seasonality, drawdowns and upside periods</summary>
 
-The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
+The analysis covers 919 daily returns from 2023-01-02 to 2026-10-16. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
 
 | Measure | Value | Measure | Value | Measure | Value |
 | --- | --- | --- | --- | --- | --- |
-| Maximum drawdown | -68.54% (2024-09-02) | Average gain / average loss | 1.167 | Best 21-day period | 40.17% (ending 2026-08-26) |
-| Average underwater drawdown | 42.89% | Upside potential ratio | 1.161 | Worst 21-day period | -33.33% (ending 2023-11-13) |
-| Conditional drawdown 95% | 65.78% | Upside capture vs Baltic EW | 99.7% | Best 5-day period | 25.62% (ending 2026-02-12) |
-| Ulcer index | 46.65 | Downside capture vs Baltic EW | 65.5% | Best 63-day period | 70.30% (ending 2026-02-12) |
-| Longest underwater period | 1288 calendar days | Positive trading days | 37.5% | Repeated calendar pattern | Jan: 75% positive across 4 years |
-| Daily downside deviation | 1.386% | Best day | 20.83% (2026-02-12) |  |  |
-| Daily upside deviation | 1.579% | Worst day | -18.64% (2023-11-09) |  |  |
+| Maximum drawdown | -68.54% (2024-09-02) | Average gain / average loss | 1.169 | Best 21-day period | 40.17% (ending 2026-08-26) |
+| Average underwater drawdown | 42.81% | Upside potential ratio | 1.162 | Worst 21-day period | -33.33% (ending 2023-11-13) |
+| Conditional drawdown 95% | 65.78% | Upside capture vs Baltic EW | 99.5% | Best 5-day period | 25.62% (ending 2026-02-12) |
+| Ulcer index | 46.60 | Downside capture vs Baltic EW | 66.2% | Best 63-day period | 70.30% (ending 2026-02-12) |
+| Longest underwater period | 1288 calendar days | Positive trading days | 37.4% | Repeated calendar pattern | Jan: 75% positive across 4 years |
+| Daily downside deviation | 1.385% | Best day | 20.83% (2026-02-12) |  |  |
+| Daily upside deviation | 1.578% | Worst day | -18.64% (2023-11-09) |  |  |
 
 **Calendar-effect tests and observed averages**
 
 | Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
 | --- | --- | --- | --- | --- |
-| Weekday | Best: Tuesday (0.269%); worst: Thursday (-0.185%) | 0.4490 | 0.5163 | Not detected |
-| Calendar month | Best: Jan (0.459% daily); worst: Nov (-0.409% daily) | 0.3085 | 0.4956 | Not detected |
-| Turn of month | First/last three days: 0.014%; other days: 0.059% | 0.8311 | 0.9477 | Not detected |
+| Weekday | Best: Tuesday (0.269%); worst: Thursday (-0.184%) | 0.4478 | 0.5149 | Not detected |
+| Calendar month | Best: Jan (0.459% daily); worst: Nov (-0.409% daily) | 0.2932 | 0.4816 | Not detected |
+| Turn of month | First/last three days: 0.014%; other days: 0.058% | 0.8176 | 0.9400 | Not detected |
 
-![SAF1R seasonality, drawdowns and upside periods](figures/stock_profiles/SAF1R_seasonality.png?v=1792161036)
+![SAF1R seasonality, drawdowns and upside periods](figures/stock_profiles/SAF1R_seasonality.png?v=1792486379)
 
 **Five deepest drawdown episodes**
 
 | Rank | Peak | Trough | Recovery | Loss | Underwater days |
 | --- | --- | --- | --- | --- | --- |
 | 1 | 2023-02-08 | 2024-09-02 | 2026-08-19 | -68.54% | 1288 |
-| 2 | 2026-09-08 | 2026-09-28 | Not recovered | -10.36% | 36 |
+| 2 | 2026-09-08 | 2026-09-28 | Not recovered | -10.36% | 38 |
 | 3 | 2023-02-01 | 2023-02-02 | 2023-02-06 | -1.75% | 5 |
 | 4 | 2023-01-27 | 2023-01-30 | 2023-01-31 | -1.06% | 4 |
 | 5 | 2026-08-27 | 2026-08-31 | 2026-09-01 | -0.87% | 5 |
@@ -4878,9 +4885,9 @@ Announcement times and links come from the official Nasdaq news service. The eff
 
 | Event type | N | Abnormal 1d | Abnormal 5d | Abnormal 21d | Positive 5d | Direction reversal | BH p(5d) | BH p(21d) | Interpretation |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Earnings | 19 | -0.72% | -2.07% | -0.49% | 42% | 47% | 0.4085 | 1.0000 | No adjusted statistical evidence |
+| Earnings | 19 | -0.72% | -2.07% | -0.49% | 42% | 47% | 0.4092 | 1.0000 | No adjusted statistical evidence |
 
-![SAF1R official announcements and abnormal returns](figures/stock_profiles/SAF1R_company_events.png?v=1792171537)
+![SAF1R official announcements and abnormal returns](figures/stock_profiles/SAF1R_company_events.png?v=1792486512)
 
 A direction reversal requires opposite fitted price slopes during the ten trading days before and after the event and at least a 1% five-day move. This identifies temporal association, not proof that the announcement caused the change.
 
@@ -4918,7 +4925,7 @@ A direction reversal requires opposite fitted price slopes during the ten tradin
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![SAF1R Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/SAF1R_all_frontiers.png?v=1792150962)
+![SAF1R Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/SAF1R_all_frontiers.png?v=1792486188)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -4979,7 +4986,7 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 **Increasing this existing position in the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>SAF1R shares</td><td>100</td><td>100</td><td>+0</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>7956.851983</td><td>0.000000</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.423729</td><td>0.000000</td></tr><tr><td>OUT</td><td>62</td><td>62</td><td>+0</td></tr><tr><td>IN</td><td>12</td><td>12</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.070123</td><td>0.000000</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.092352</td><td>0.000000</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>SAF1R shares</td><td>100</td><td>100</td><td>+0</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>7912.299967</td><td>0.000000</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.457627</td><td>0.000000</td></tr><tr><td>OUT</td><td>62</td><td>62</td><td>+0</td></tr><tr><td>IN</td><td>8</td><td>8</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.070173</td><td>0.000000</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.091156</td><td>0.000000</td></tr></tbody></table>
 
 The starting point is the unmodified current portfolio, which already contains 100 SAF1R shares. The scenario adds 0 shares from Table 3A, resulting in 100 shares; every other holding remains unchanged.
 
@@ -4993,7 +5000,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![SAF1R high-resolution stochastic dominance](figures/stock_profiles/SAF1R_FSD_SSD_TSD.png?v=1792171299)
+![SAF1R high-resolution stochastic dominance](figures/stock_profiles/SAF1R_FSD_SSD_TSD.png?v=1792486467)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -5008,7 +5015,7 @@ The static figure is collapsed because the interactive plots above provide the d
 <details markdown="1" class="stock-profile" id="share-tsm1t">
 <summary><strong>TSM1T — Tallinna Sadam</strong> | HOLD | target 330 shares | priority 23</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>330</td><td>330</td><td>+0</td><td>2.67%</td><td>EUR 1.2120</td><td>-0.0254</td><td>28 / 31</td><td>46.89</td><td>Bullish</td><td>Inside bands</td><td>1.000 (Overbought)</td><td>HOLD</td><td>0.000711 (0.829% of portfolio HHI)</td><td>EUR 45,487</td><td>0.0%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>330</td><td>330</td><td>+0</td><td>2.67%</td><td>EUR 1.2140</td><td>-0.0169</td><td>28 / 30</td><td>49.57</td><td>Bullish</td><td>Inside bands</td><td>1.000 (Overbought)</td><td>HOLD</td><td>0.000713 (0.920% of portfolio HHI)</td><td>EUR 45,487</td><td>0.0%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
 ![TSM1T Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/TSM1T_technicals_6m.png)
 
@@ -5024,40 +5031,40 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![TSM1T return histogram](figures/stock_profiles/TSM1T_histogram.png?v=1792150405)
+![TSM1T return histogram](figures/stock_profiles/TSM1T_histogram.png?v=1792485734)
 
 </details>
 
 <details markdown="1" class="seasonality-section">
 <summary>Seasonality, drawdowns and upside periods</summary>
 
-The analysis covers 917 daily returns from 2023-01-02 to 2026-10-14. Statistically supported calendar effects: **calendar-month**. Adjusted p-values control the false-discovery rate across all analysed shares.
+The analysis covers 919 daily returns from 2023-01-02 to 2026-10-16. Statistically supported calendar effects: **calendar-month**. Adjusted p-values control the false-discovery rate across all analysed shares.
 
 | Measure | Value | Measure | Value | Measure | Value |
 | --- | --- | --- | --- | --- | --- |
-| Maximum drawdown | -29.81% (2024-12-11) | Average gain / average loss | 0.946 | Best 21-day period | 15.44% (ending 2026-01-30) |
+| Maximum drawdown | -29.81% (2024-12-11) | Average gain / average loss | 0.947 | Best 21-day period | 15.44% (ending 2026-01-30) |
 | Average underwater drawdown | 17.99% | Upside potential ratio | 0.929 | Worst 21-day period | -14.31% (ending 2026-05-28) |
-| Conditional drawdown 95% | 29.36% | Upside capture vs Baltic EW | 47.0% | Best 5-day period | 8.50% (ending 2026-01-30) |
-| Ulcer index | 19.61 | Downside capture vs Baltic EW | 60.2% | Best 63-day period | 25.39% (ending 2026-02-11) |
-| Longest underwater period | 1325 calendar days | Positive trading days | 39.3% | Repeated calendar pattern | May: 0% positive across 4 years |
-| Daily downside deviation | 0.562% | Best day | 2.77% (2024-04-08) |  |  |
+| Conditional drawdown 95% | 29.36% | Upside capture vs Baltic EW | 46.8% | Best 5-day period | 8.50% (ending 2026-01-30) |
+| Ulcer index | 19.61 | Downside capture vs Baltic EW | 59.8% | Best 63-day period | 25.39% (ending 2026-02-11) |
+| Longest underwater period | 1327 calendar days | Positive trading days | 39.3% | Repeated calendar pattern | May: 0% positive across 4 years |
+| Daily downside deviation | 0.561% | Best day | 2.77% (2024-04-08) |  |  |
 | Daily upside deviation | 0.450% | Worst day | -6.09% (2025-05-08) |  |  |
 
 **Calendar-effect tests and observed averages**
 
 | Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
 | --- | --- | --- | --- | --- |
-| Weekday | Best: Wednesday (0.051%); worst: Monday (-0.093%) | 0.0465 | 0.1691 | Not detected |
-| Calendar month | Best: Jan (0.299% daily); worst: May (-0.388% daily) | 0.0002 | 0.0056 | Detected |
-| Turn of month | First/last three days: 0.068%; other days: -0.034% | 0.1396 | 0.4860 | Not detected |
+| Weekday | Best: Wednesday (0.051%); worst: Monday (-0.093%) | 0.0466 | 0.1700 | Not detected |
+| Calendar month | Best: Jan (0.299% daily); worst: May (-0.388% daily) | 0.0003 | 0.0058 | Detected |
+| Turn of month | First/last three days: 0.068%; other days: -0.034% | 0.1412 | 0.4850 | Not detected |
 
-![TSM1T seasonality, drawdowns and upside periods](figures/stock_profiles/TSM1T_seasonality.png?v=1792161086)
+![TSM1T seasonality, drawdowns and upside periods](figures/stock_profiles/TSM1T_seasonality.png?v=1792486405)
 
 **Five deepest drawdown episodes**
 
 | Rank | Peak | Trough | Recovery | Loss | Underwater days |
 | --- | --- | --- | --- | --- | --- |
-| 1 | 2023-02-27 | 2024-12-11 | Not recovered | -29.81% | 1325 |
+| 1 | 2023-02-27 | 2024-12-11 | Not recovered | -29.81% | 1327 |
 | 2 | 2023-01-16 | 2023-01-18 | 2023-01-20 | -0.56% | 4 |
 | 3 | 2023-02-09 | 2023-02-10 | 2023-02-27 | -0.40% | 18 |
 | 4 | 2023-01-09 | 2023-01-10 | 2023-01-13 | -0.28% | 4 |
@@ -5082,12 +5089,12 @@ Announcement times and links come from the official Nasdaq news service. The eff
 
 | Event type | N | Abnormal 1d | Abnormal 5d | Abnormal 21d | Positive 5d | Direction reversal | BH p(5d) | BH p(21d) | Interpretation |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Dividend announcement | 4 | -0.04% | 1.22% | -0.82% | 75% | 25% | 0.7147 | 1.0000 | No adjusted statistical evidence |
-| Dividend payment | 4 | -0.20% | -1.24% | -0.79% | 25% | 0% | 0.7147 | 1.0000 | No adjusted statistical evidence |
-| Earnings | 15 | -0.42% | -0.29% | -1.26% | 53% | 20% | 0.9852 | 1.0000 | No adjusted statistical evidence |
+| Dividend announcement | 4 | -0.04% | 1.22% | -0.82% | 75% | 25% | 0.7175 | 1.0000 | No adjusted statistical evidence |
+| Dividend payment | 4 | -0.20% | -1.24% | -0.79% | 25% | 0% | 0.7175 | 1.0000 | No adjusted statistical evidence |
+| Earnings | 15 | -0.42% | -0.29% | -1.26% | 53% | 20% | 0.9869 | 1.0000 | No adjusted statistical evidence |
 | Ex-dividend | 7 | -3.48% | -5.59% | -7.34% | 0% | 43% | 0.0000 | 0.0003 | Different from ordinary periods; price drop may be mechanical |
 
-![TSM1T official announcements and abnormal returns](figures/stock_profiles/TSM1T_company_events.png?v=1792171556)
+![TSM1T official announcements and abnormal returns](figures/stock_profiles/TSM1T_company_events.png?v=1792486530)
 
 A direction reversal requires opposite fitted price slopes during the ten trading days before and after the event and at least a 1% five-day move. This identifies temporal association, not proof that the announcement caused the change.
 
@@ -5136,7 +5143,7 @@ A direction reversal requires opposite fitted price slopes during the ten tradin
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![TSM1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TSM1T_all_frontiers.png?v=1792150970)
+![TSM1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TSM1T_all_frontiers.png?v=1792486195)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -5197,7 +5204,7 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 **Increasing this existing position in the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>TSM1T shares</td><td>330</td><td>330</td><td>+0</td></tr><tr><td>Portfolio value, EUR</td><td>7956.851983</td><td>7956.851983</td><td>0.000000</td></tr><tr><td>netSD</td><td>0.423729</td><td>0.423729</td><td>0.000000</td></tr><tr><td>OUT</td><td>62</td><td>62</td><td>+0</td></tr><tr><td>IN</td><td>12</td><td>12</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.070123</td><td>1.070123</td><td>0.000000</td></tr><tr><td>Sortino ratio</td><td>0.092352</td><td>0.092352</td><td>0.000000</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>TSM1T shares</td><td>330</td><td>330</td><td>+0</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>7912.299967</td><td>0.000000</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.457627</td><td>0.000000</td></tr><tr><td>OUT</td><td>62</td><td>62</td><td>+0</td></tr><tr><td>IN</td><td>8</td><td>8</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.070173</td><td>0.000000</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.091156</td><td>0.000000</td></tr></tbody></table>
 
 The starting point is the unmodified current portfolio, which already contains 330 TSM1T shares. The scenario adds 0 shares from Table 3A, resulting in 330 shares; every other holding remains unchanged.
 
@@ -5211,7 +5218,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![TSM1T high-resolution stochastic dominance](figures/stock_profiles/TSM1T_FSD_SSD_TSD.png?v=1792171309)
+![TSM1T high-resolution stochastic dominance](figures/stock_profiles/TSM1T_FSD_SSD_TSD.png?v=1792486475)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -5229,34 +5236,34 @@ The static figure is collapsed because the interactive plots above provide the d
 
 Each row starts from the same unmodified current portfolio and adds only the stated share quantity from Table 3A. Rows are ranked by the change in netSD; larger is better. OUT is the number of dominance relations won, while IN is the number lost; more OUT and fewer IN are preferable.
 
-<details markdown="1">
+<details markdown="1" class="add-one-comparison">
 <summary><strong>Open ranked comparison of all individual additions</strong></summary>
 
 | Rank | Share | Added shares | Updated value EUR | Current OUT / IN | Updated OUT / IN | Delta OUT / IN | Current netSD | Updated netSD | Delta netSD | Delta Rachev | Delta Sortino |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | MOLNR | 30 | 8574.851995 | 62 / 12 | 75 / 3 | +13 / -9 | 0.423729 | 0.610169 | 0.186441 | 0.147201 | 0.030179 |
-| 2 | KNE1L | 1581 | 8720.475000 | 62 / 12 | 72 / 2 | +10 / -10 | 0.423729 | 0.593220 | 0.169492 | 0.013318 | 0.016338 |
-| 3 | GRG1L | 722 | 8686.071976 | 62 / 12 | 68 / 1 | +6 / -11 | 0.423729 | 0.567797 | 0.144068 | 0.002558 | 0.008021 |
-| 4 | MRK1T | 13 | 8308.501973 | 62 / 12 | 70 / 4 | +8 / -8 | 0.423729 | 0.559322 | 0.135593 | 0.013586 | 0.007143 |
-| 5 | VLP1L | 23 | 8313.351983 | 62 / 12 | 69 / 4 | +7 / -8 | 0.423729 | 0.550847 | 0.127119 | 0.011637 | 0.013810 |
-| 6 | PZV1L | 171 | 8262.086978 | 62 / 12 | 66 / 4 | +4 / -8 | 0.423729 | 0.525424 | 0.101695 | 0.007779 | 0.004841 |
-| 7 | RSU1L | 116 | 8476.531986 | 62 / 12 | 66 / 4 | +4 / -8 | 0.423729 | 0.525424 | 0.101695 | -0.000046 | 0.006888 |
-| 8 | APG1L | 127 | 8440.721976 | 62 / 12 | 66 / 4 | +4 / -8 | 0.423729 | 0.525424 | 0.101695 | -0.013352 | 0.006995 |
-| 9 | AKO1L | 348 | 8595.431997 | 62 / 12 | 66 / 6 | +4 / -6 | 0.423729 | 0.508475 | 0.084746 | -0.018099 | 0.005352 |
-| 10 | TVE1T | 39 | 8381.951968 | 62 / 12 | 62 / 10 | +0 / -2 | 0.423729 | 0.440678 | 0.016949 | 0.002565 | -0.002425 |
-| 11 | IGN1L | 14 | 8262.051973 | 62 / 12 | 62 / 10 | +0 / -2 | 0.423729 | 0.440678 | 0.016949 | 0.001788 | 0.001075 |
-| 12 | DGR1R | 160 | 8229.651990 | 62 / 12 | 62 / 10 | +0 / -2 | 0.423729 | 0.440678 | 0.016949 | -0.003539 | 0.000961 |
-| 13 | TKM1T | 55 | 8449.651985 | 62 / 12 | 62 / 10 | +0 / -2 | 0.423729 | 0.440678 | 0.016949 | -0.012033 | -0.004168 |
-| 14 | EFT1T | 15 | 8250.101972 | 62 / 12 | 61 / 10 | -1 / -2 | 0.423729 | 0.432203 | 0.008475 | -0.000713 | -0.000085 |
-| 15 | CPA1T | 46 | 8064.491979 | 62 / 12 | 62 / 12 | +0 / +0 | 0.423729 | 0.423729 | 0.000000 | 0.002472 | -0.000557 |
-| 16 | ROE1L | 6 | 7962.143983 | 62 / 12 | 62 / 12 | +0 / +0 | 0.423729 | 0.423729 | 0.000000 | 0.000069 | 0.000026 |
-| 17 | HAE1T | 1 | 7962.391983 | 62 / 12 | 62 / 12 | +0 / +0 | 0.423729 | 0.423729 | 0.000000 | 0.000014 | 0.000004 |
-| 18 | SAF1R | 0 | 7956.851983 | 62 / 12 | 62 / 12 | +0 / +0 | 0.423729 | 0.423729 | 0.000000 | 0.000000 | 0.000000 |
-| 19 | TSM1T | 0 | 7956.851983 | 62 / 12 | 62 / 12 | +0 / +0 | 0.423729 | 0.423729 | 0.000000 | 0.000000 | 0.000000 |
-| 20 | TEL1L | 11 | 7981.711983 | 62 / 12 | 62 / 12 | +0 / +0 | 0.423729 | 0.423729 | 0.000000 | -0.000079 | 0.000070 |
-| 21 | VIRSI | 11 | 8005.471983 | 62 / 12 | 62 / 12 | +0 / +0 | 0.423729 | 0.423729 | 0.000000 | -0.000252 | -0.000026 |
-| 22 | LHV1T | 34 | 8067.521987 | 62 / 12 | 62 / 12 | +0 / +0 | 0.423729 | 0.423729 | 0.000000 | -0.001132 | -0.000424 |
-| 23 | TAL1T | 179 | 8072.306980 | 62 / 12 | 62 / 12 | +0 / +0 | 0.423729 | 0.423729 | 0.000000 | -0.002805 | 0.000318 |
+| 1 | MOLNR | 22 | 8361.099958 | 62 / 8 | 76 / 3 | +14 / -5 | 0.457627 | 0.618644 | 0.161017 | 0.103299 | 0.024261 |
+| 2 | MRK1T | 24 | 8562.699976 | 62 / 8 | 72 / 2 | +10 / -6 | 0.457627 | 0.593220 | 0.135593 | 0.022255 | 0.012632 |
+| 3 | VLP1L | 30 | 8380.299978 | 62 / 8 | 72 / 4 | +10 / -4 | 0.457627 | 0.576271 | 0.118644 | 0.015600 | 0.018034 |
+| 4 | KNE1L | 928 | 8357.739957 | 62 / 8 | 70 / 4 | +8 / -4 | 0.457627 | 0.559322 | 0.101695 | 0.005262 | 0.010053 |
+| 5 | RSU1L | 126 | 8476.779969 | 62 / 8 | 70 / 4 | +8 / -4 | 0.457627 | 0.559322 | 0.101695 | -0.000898 | 0.007377 |
+| 6 | GRG1L | 543 | 8455.299967 | 62 / 8 | 69 / 4 | +7 / -4 | 0.457627 | 0.550847 | 0.093220 | 0.001109 | 0.006023 |
+| 7 | APG1L | 102 | 8300.919961 | 62 / 8 | 66 / 4 | +4 / -4 | 0.457627 | 0.525424 | 0.067797 | -0.010565 | 0.005776 |
+| 8 | AKO1L | 167 | 8218.744973 | 62 / 8 | 64 / 6 | +2 / -2 | 0.457627 | 0.491525 | 0.033898 | -0.006844 | 0.002953 |
+| 9 | PZV1L | 56 | 8012.819964 | 62 / 8 | 64 / 7 | +2 / -1 | 0.457627 | 0.483051 | 0.025424 | 0.002677 | 0.001723 |
+| 10 | IGN1L | 27 | 8499.549967 | 62 / 8 | 63 / 8 | +1 / +0 | 0.457627 | 0.466102 | 0.008475 | 0.004655 | 0.001835 |
+| 11 | VIRSI | 125 | 8464.799967 | 62 / 8 | 63 / 8 | +1 / +0 | 0.457627 | 0.466102 | 0.008475 | -0.002456 | -0.000364 |
+| 12 | SAF1R | 0 | 7912.299967 | 62 / 8 | 62 / 8 | +0 / +0 | 0.457627 | 0.457627 | 0.000000 | 0.000000 | 0.000000 |
+| 13 | TSM1T | 0 | 7912.299967 | 62 / 8 | 62 / 8 | +0 / +0 | 0.457627 | 0.457627 | 0.000000 | 0.000000 | 0.000000 |
+| 14 | TVE1T | 43 | 8378.849983 | 62 / 8 | 62 / 9 | +0 / +1 | 0.457627 | 0.449153 | -0.008475 | 0.002998 | -0.002770 |
+| 15 | HAE1T | 73 | 8303.579977 | 62 / 8 | 62 / 10 | +0 / +2 | 0.457627 | 0.440678 | -0.016949 | 0.000639 | -0.000397 |
+| 16 | ROE1L | 125 | 8022.299966 | 62 / 8 | 62 / 10 | +0 / +2 | 0.457627 | 0.440678 | -0.016949 | 0.000191 | 0.000522 |
+| 17 | DGR1R | 36 | 7974.219968 | 62 / 8 | 62 / 12 | +0 / +4 | 0.457627 | 0.423729 | -0.033898 | -0.000679 | 0.000262 |
+| 18 | TEL1L | 78 | 8090.919964 | 62 / 8 | 60 / 10 | -2 / +2 | 0.457627 | 0.423729 | -0.033898 | -0.001226 | 0.000562 |
+| 19 | LHV1T | 65 | 8123.549967 | 62 / 8 | 60 / 10 | -2 / +2 | 0.457627 | 0.423729 | -0.033898 | -0.002417 | -0.000839 |
+| 20 | TAL1T | 416 | 8181.035978 | 62 / 8 | 60 / 10 | -2 / +2 | 0.457627 | 0.423729 | -0.033898 | -0.008560 | 0.000672 |
+| 21 | CPA1T | 67 | 8069.749960 | 62 / 8 | 60 / 12 | -2 / +4 | 0.457627 | 0.406780 | -0.050847 | 0.003626 | -0.000798 |
+| 22 | EFT1T | 3 | 7971.099968 | 62 / 8 | 60 / 12 | -2 / +4 | 0.457627 | 0.406780 | -0.050847 | 0.000267 | 0.000002 |
+| 23 | TKM1T | 5 | 7956.799965 | 62 / 8 | 60 / 12 | -2 / +4 | 0.457627 | 0.406780 | -0.050847 | -0.001155 | -0.000382 |
 
 </details>
 
@@ -5302,16 +5309,16 @@ Each scenario removes one share from curent_update_baltic and proportionally res
 
 Diagnostic priority 1 denotes the largest admissible individual-share netSD ratio after shares with IN>0 are moved to the end. It is not an execution order and does not rank the complete portfolio effect. Dividend columns use only official payments dated in 2025 and 2026. Annual dividend cash equals dividend per share multiplied by the target number of shares.
 
-curent_update_baltic keeps every currently held share, permits purchases only, and uses the EUR 15,000 ceiling. Its calculated netSD is 0.813559, with OUT=96 and IN=0; the remaining cash is EUR 69.56.
+curent_update_baltic keeps every currently held share, permits purchases only, and uses the EUR 15,000 ceiling. Its calculated netSD is 0.813559, with OUT=96 and IN=0; the remaining cash is EUR 83.14.
 
 <details markdown="1">
 <summary><strong>Table 4. Current and optimised portfolios</strong></summary>
 
 | Portfolio | netSD | OUT | IN | denominator | mean | SD | Historical dividends EUR | Portfolio value EUR |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Current | 0.423729 | 62 | 12 | 118 | 0.000349 | 0.005498 | 1394.136000 | 7956.851983 |
-| Optimised | 0.864407 | 102 | 0 | 118 | 0.000576 | 0.004512 | 2222.386006 | 15000.000000 |
-| curent_update_baltic | 0.813559 | 96 | 0 | 118 | 0.000451 | 0.004252 | 2430.492621 | 14930.436965 |
+| Current | 0.457627 | 62 | 8 | 118 | 0.000344 | 0.005486 | 1394.136000 | 7912.299967 |
+| Optimised | 0.822034 | 97 | 0 | 118 | 0.000498 | 0.003881 | 2443.864419 | 15000.000000 |
+| curent_update_baltic | 0.813559 | 96 | 0 | 118 | 0.000420 | 0.004095 | 2347.234800 | 14916.860998 |
 
 </details>
 
@@ -5341,7 +5348,7 @@ Each share has two adjacent bars. The blue bar is the change required for Baltic
 
 | entity | observations | mean | median | SD | minimum | maximum | skewness | kurtosis | VaR_95 | ES_95 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Current | 754 | 0.000402 | 0.000376 | 0.005680 | -0.039100 | 0.045424 | -0.068165 | 18.081851 | 0.006347 | 0.012839 |
+| Current | 754 | 0.000404 | 0.000384 | 0.005669 | -0.038959 | 0.045241 | -0.073388 | 18.006497 | 0.006317 | 0.012814 |
 | Markowitz_training | 754 | 0.000281 | 0.000273 | 0.004476 | -0.025519 | 0.027713 | -0.397936 | 10.657233 | 0.005893 | 0.010467 |
 | MAD_training | 754 | 0.000289 | 0.000321 | 0.004477 | -0.028989 | 0.026779 | -0.720441 | 12.464893 | 0.005549 | 0.010563 |
 | Minimax_training | 754 | 0.000619 | 0.000276 | 0.005683 | -0.021554 | 0.029115 | 0.377474 | 6.881817 | 0.007326 | 0.012242 |
@@ -5352,14 +5359,14 @@ Each share has two adjacent bars. The blue bar is the change required for Baltic
 | Minimax_full | 754 | 0.000480 | 0.000111 | 0.005340 | -0.021604 | 0.029071 | 0.181686 | 7.266982 | 0.007042 | 0.011974 |
 | Robust_full | 754 | 0.000395 | 0.000351 | 0.004596 | -0.034840 | 0.026102 | -0.927740 | 13.552122 | 0.005530 | 0.010819 |
 | NetSD_full | 754 | 0.000624 | 0.000368 | 0.005256 | -0.036431 | 0.032351 | -0.270819 | 11.048650 | 0.006622 | 0.011672 |
-| Baltic_NetSD | 754 | 0.000543 | 0.000264 | 0.004510 | -0.024711 | 0.032385 | 0.321776 | 11.052737 | 0.005386 | 0.009313 |
-| curent_update_baltic | 754 | 0.000455 | 0.000346 | 0.004379 | -0.021360 | 0.027182 | -0.033996 | 9.773973 | 0.004929 | 0.009881 |
+| Baltic_NetSD | 754 | 0.000484 | 0.000319 | 0.003947 | -0.021823 | 0.015231 | -0.320871 | 7.352343 | 0.004583 | 0.008834 |
+| curent_update_baltic | 754 | 0.000417 | 0.000210 | 0.004219 | -0.021513 | 0.024368 | -0.110549 | 9.707420 | 0.004754 | 0.009433 |
 | SP500 | 754 | 0.000879 | 0.001368 | 0.011062 | -0.062006 | 0.097992 | 0.100965 | 14.865600 | 0.016061 | 0.025050 |
 
 </details>
 
 
-Baltic_NetSD has mean daily return 0.000543, median 0.000264 and daily standard deviation 0.004510. Its historical 95% VaR is 0.005386 and ES (CVaR) is 0.009313. VaR is the loss threshold exceeded on approximately 5% of days; ES is the average return in that adverse tail.
+Baltic_NetSD has mean daily return 0.000484, median 0.000319 and daily standard deviation 0.003947. Its historical 95% VaR is 0.004583 and ES (CVaR) is 0.008834. VaR is the loss threshold exceeded on approximately 5% of days; ES is the average return in that adverse tail.
 
 <details markdown="1">
 <summary><strong>Figure 3. Histograms and kernel densities; every panel uses the same return-axis limits</strong></summary>
@@ -5369,7 +5376,7 @@ Baltic_NetSD has mean daily return 0.000543, median 0.000264 and daily standard 
 </details>
 
 
-The recalculated Baltic_NetSD maximum daily return is 0.032385. The earlier value 0.168092 on 2025-06-25 was traced to RKB1R, whose unadjusted close moved from EUR 0.107 to EUR 0.476 between common Baltic trading dates. RKB1R belongs to the Baltic Secondary List. After excluding every Secondary List share from the investable set, this observation no longer enters the portfolio return; RKB1R is now excluded from both the investable set and every netSD reference network, so the suspect observation cannot affect the objective or its denominator.
+The recalculated Baltic_NetSD maximum daily return is 0.015231. The earlier value 0.168092 on 2025-06-25 was traced to RKB1R, whose unadjusted close moved from EUR 0.107 to EUR 0.476 between common Baltic trading dates. RKB1R belongs to the Baltic Secondary List. After excluding every Secondary List share from the investable set, this observation no longer enters the portfolio return; RKB1R is now excluded from both the investable set and every netSD reference network, so the suspect observation cannot affect the objective or its denominator.
 
 <details markdown="1">
 <summary><strong>Figure 4a. Portfolio and S&P 500 complete empirical CDF; right side truncated at return 0.05</strong></summary>
@@ -5550,22 +5557,27 @@ Each difference is calculated pointwise as Hq_Baltic_NetSD(x) - Hq_comparator(x)
 
 | comparator | type | local_advantage_from_x | display_upper_x | end_difference | maximum_difference |
 | --- | --- | --- | --- | --- | --- |
-| NetSD_training | portfolio | 0.012069 | 0.026740 | 0.000085 | 0.000085 |
-| VLP1L | share | 0.021776 | 0.156858 | 0.000797 | 0.000797 |
-| MOLNR | share | 0.116135 | 0.156858 | 0.000637 | 0.000637 |
-| KNR1L | share | 0.078391 | 0.156858 | 0.000605 | 0.000605 |
-| INC1L | share | 0.033695 | 0.156858 | 0.000523 | 0.000523 |
-| IVL1L | share | 0.033695 | 0.156858 | 0.000444 | 0.000444 |
-| KNE1L | share | 0.036674 | 0.156858 | 0.000261 | 0.000261 |
-| MRK1T | share | 0.035681 | 0.156858 | 0.000180 | 0.000180 |
-| APG1L | share | 0.021776 | 0.156858 | 0.000096 | 0.000096 |
-| ZMP1L | share | 0.086337 | 0.156858 | 0.000082 | 0.000082 |
-| PZV1L | share | 0.092297 | 0.156858 | 0.000013 | 0.000013 |
+| NetSD_training | portfolio | 0.011044 | 0.026485 | 0.000153 | 0.000153 |
+| NetSD_full | portfolio | 0.012415 | 0.026485 | 0.000059 | 0.000059 |
+| Minimax_training | portfolio | 0.019342 | 0.026485 | 0.000031 | 0.000031 |
+| VLP1L | share | 0.019789 | 0.156858 | 0.000879 | 0.000879 |
+| MOLNR | share | 0.113155 | 0.156858 | 0.000702 | 0.000702 |
+| KNR1L | share | 0.074418 | 0.156858 | 0.000670 | 0.000670 |
+| INC1L | share | 0.030715 | 0.156858 | 0.000609 | 0.000609 |
+| IVL1L | share | 0.031708 | 0.156858 | 0.000503 | 0.000503 |
+| KNE1L | share | 0.033695 | 0.156858 | 0.000331 | 0.000331 |
+| MRK1T | share | 0.029722 | 0.156858 | 0.000259 | 0.000259 |
+| APG1L | share | 0.017803 | 0.156858 | 0.000172 | 0.000172 |
+| ZMP1L | share | 0.068458 | 0.156858 | 0.000136 | 0.000136 |
+| PZV1L | share | 0.065479 | 0.156858 | 0.000096 | 0.000096 |
+| LGD1L | share | 0.047600 | 0.156858 | 0.000078 | 0.000078 |
+| RSU1L | share | 0.062499 | 0.156858 | 0.000050 | 0.000050 |
+| VBL1L | share | 0.119114 | 0.156858 | 0.000029 | 0.000029 |
 
 </details>
 
 
-These are local, right-side comparisons and must not be interpreted as SSD over the complete return domain. A positive difference H2_Baltic_NetSD(x)-H2_comparator(x) means that the comparator has the smaller, hence locally preferable, SSD component at that threshold. Among portfolios this occurs for NetSD_training. The five strongest share cases at the displayed endpoint are VLP1L, MOLNR, KNR1L, INC1L, IVL1L. Smaller positive endpoint differences also occur for KNE1L, MRK1T, APG1L, ZMP1L, PZV1L. The table reports the threshold from which the advantage remains positive to the displayed upper endpoint. The listed shares are therefore candidates for further investment analysis, while the absence of full-support dominance means this chart alone is insufficient for an investment decision.
+These are local, right-side comparisons and must not be interpreted as SSD over the complete return domain. A positive difference H2_Baltic_NetSD(x)-H2_comparator(x) means that the comparator has the smaller, hence locally preferable, SSD component at that threshold. Among portfolios this occurs for NetSD_training, NetSD_full, Minimax_training. The five strongest share cases at the displayed endpoint are VLP1L, MOLNR, KNR1L, INC1L, IVL1L. Smaller positive endpoint differences also occur for KNE1L, MRK1T, APG1L, ZMP1L, PZV1L, LGD1L, RSU1L, VBL1L. The table reports the threshold from which the advantage remains positive to the displayed upper endpoint. The listed shares are therefore candidates for further investment analysis, while the absence of full-support dominance means this chart alone is insufficient for an investment decision.
 
 The result that may appear surprising in the difference figures is therefore real but local. NetSD_training has a smaller H2 component than Baltic_NetSD from x=0.012089 to the displayed right endpoint, and NetSD_full does so from x=0.016037. Neither portfolio SSD-dominates Baltic_NetSD over the complete support because the required inequality fails at smaller x values. The listed shares deserve separate investment analysis because their upper-threshold SSD components are favourable. RKB1R is absent from these recalculated comparisons because its suspect unadjusted prices fail the data-quality screen. A local right-side advantage is evidence about one part of the distribution and is not full-domain SSD dominance.
 
@@ -5574,24 +5586,24 @@ The result that may appear surprising in the difference figures is therefore rea
 
 | portfolio | HHI_weights | effective_number | maximum_weight | number_positive | diversification_ratio |
 | --- | --- | --- | --- | --- | --- |
-| Current | 0.181387 | 5.513083 | 0.324309 | 9 | 1.989659 |
-| Markowitz_training | 0.173946 | 5.748903 | 0.325443 | 10 | 2.221157 |
-| MAD_training | 0.202077 | 4.948602 | 0.379940 | 10 | 2.168111 |
-| Minimax_training | 0.169523 | 5.898915 | 0.279680 | 10 | 2.048136 |
-| Robust_training | 0.180150 | 5.550933 | 0.349431 | 10 | 2.229121 |
-| NetSD_training | 0.188413 | 5.307499 | 0.337844 | 10 | 1.958378 |
-| Markowitz_full | 0.152149 | 6.572488 | 0.295792 | 10 | 2.293628 |
-| MAD_full | 0.182270 | 5.486352 | 0.338655 | 10 | 2.221170 |
-| Minimax_full | 0.157248 | 6.359400 | 0.258417 | 10 | 2.080744 |
-| Robust_full | 0.215235 | 4.646077 | 0.386466 | 10 | 2.161859 |
-| NetSD_full | 0.132893 | 7.524846 | 0.188213 | 10 | 2.212255 |
-| Baltic_NetSD | 0.075496 | 13.245713 | 0.121448 | 21 | 2.572510 |
-| curent_update_baltic | 0.085722 | 11.665594 | 0.205140 | 23 | 2.760338 |
+| Current | 0.181029 | 5.523988 | 0.323951 | 9 | 1.992852 |
+| Markowitz_training | 0.173946 | 5.748903 | 0.325443 | 10 | 2.219961 |
+| MAD_training | 0.202077 | 4.948602 | 0.379940 | 10 | 2.167419 |
+| Minimax_training | 0.169523 | 5.898915 | 0.279680 | 10 | 2.048226 |
+| Robust_training | 0.180150 | 5.550933 | 0.349431 | 10 | 2.228326 |
+| NetSD_training | 0.188413 | 5.307499 | 0.337844 | 10 | 1.958532 |
+| Markowitz_full | 0.152149 | 6.572488 | 0.295792 | 10 | 2.293096 |
+| MAD_full | 0.182270 | 5.486352 | 0.338655 | 10 | 2.220685 |
+| Minimax_full | 0.157248 | 6.359400 | 0.258417 | 10 | 2.080794 |
+| Robust_full | 0.215235 | 4.646077 | 0.386466 | 10 | 2.161409 |
+| NetSD_full | 0.132893 | 7.524846 | 0.188213 | 10 | 2.212419 |
+| Baltic_NetSD | 0.076442 | 13.081854 | 0.112884 | 21 | 2.597743 |
+| curent_update_baltic | 0.077542 | 12.896259 | 0.174121 | 23 | 2.739180 |
 
 </details>
 
 
-For Baltic_NetSD, HHI=0.075496; lower is better because less capital is concentrated in a few shares. Its effective number of equally weighted positions is 13.25, the largest weight is 12.14%, and the diversification ratio is 2.573; a value above 1 means portfolio volatility is below the weighted average volatility of its components.
+For Baltic_NetSD, HHI=0.076442; lower is better because less capital is concentrated in a few shares. Its effective number of equally weighted positions is 13.08, the largest weight is 11.29%, and the diversification ratio is 2.598; a value above 1 means portfolio volatility is below the weighted average volatility of its components.
 
 <details markdown="1">
 <summary><strong>Figure 8. HHI concentration comparison</strong></summary>
@@ -5606,24 +5618,24 @@ For Baltic_NetSD, HHI=0.075496; lower is better because less capital is concentr
 
 | entity | OUT | IN | denominator | netSD | mean | SD |
 | --- | --- | --- | --- | --- | --- | --- |
-| Current | 62 | 12 | 118 | 0.423729 | 0.000349 | 0.005498 |
-| Markowitz_training | 63 | 0 | 118 | 0.533898 | 0.000257 | 0.004303 |
-| MAD_training | 62 | 2 | 118 | 0.508475 | 0.000251 | 0.004307 |
-| Minimax_training | 82 | 0 | 118 | 0.694915 | 0.000539 | 0.005484 |
-| Robust_training | 67 | 0 | 118 | 0.567797 | 0.000319 | 0.004430 |
-| NetSD_training | 90 | 0 | 118 | 0.762712 | 0.000682 | 0.005912 |
-| Markowitz_full | 71 | 0 | 118 | 0.601695 | 0.000354 | 0.004323 |
-| MAD_full | 69 | 1 | 118 | 0.576271 | 0.000351 | 0.004373 |
-| Minimax_full | 78 | 0 | 118 | 0.661017 | 0.000412 | 0.005130 |
-| Robust_full | 68 | 3 | 118 | 0.550847 | 0.000350 | 0.004438 |
-| NetSD_full | 86 | 0 | 118 | 0.728814 | 0.000569 | 0.005129 |
-| Baltic_NetSD | 102 | 0 | 118 | 0.864407 | 0.000576 | 0.004512 |
-| curent_update_baltic | 96 | 0 | 118 | 0.813559 | 0.000451 | 0.004252 |
+| Current | 62 | 8 | 118 | 0.457627 | 0.000344 | 0.005486 |
+| Markowitz_training | 63 | 0 | 118 | 0.533898 | 0.000248 | 0.004305 |
+| MAD_training | 62 | 2 | 118 | 0.508475 | 0.000243 | 0.004307 |
+| Minimax_training | 82 | 0 | 118 | 0.694915 | 0.000532 | 0.005481 |
+| Robust_training | 67 | 0 | 118 | 0.567797 | 0.000310 | 0.004431 |
+| NetSD_training | 90 | 0 | 118 | 0.762712 | 0.000679 | 0.005908 |
+| Markowitz_full | 71 | 0 | 118 | 0.601695 | 0.000347 | 0.004323 |
+| MAD_full | 67 | 1 | 118 | 0.559322 | 0.000343 | 0.004372 |
+| Minimax_full | 76 | 0 | 118 | 0.644068 | 0.000406 | 0.005127 |
+| Robust_full | 66 | 3 | 118 | 0.533898 | 0.000343 | 0.004437 |
+| NetSD_full | 84 | 0 | 118 | 0.711864 | 0.000564 | 0.005125 |
+| Baltic_NetSD | 97 | 0 | 118 | 0.822034 | 0.000498 | 0.003881 |
+| curent_update_baltic | 96 | 0 | 118 | 0.813559 | 0.000420 | 0.004095 |
 
 </details>
 
 
-Baltic_NetSD has OUT=102 and IN=0. Dividing OUT-IN by the common network fixed denominator 118 gives netSD=0.864407. A larger netSD is better within this exact fixed reference system.
+Baltic_NetSD has OUT=97 and IN=0. Dividing OUT-IN by the common network fixed denominator 118 gives netSD=0.822034. A larger netSD is better within this exact fixed reference system.
 
 For curent_update_baltic, IN=0 because Baltic_NetSD dominates it by third-order stochastic dominance over the complete empirical support. There are no incoming FSD or SSD relations. Thus IN=1 is one directed TSD relation from Baltic_NetSD, rather than one adverse observation or one share.
 
@@ -5632,7 +5644,7 @@ For curent_update_baltic, IN=0 because Baltic_NetSD dominates it by third-order 
 
 | entity | CAPMBeta | CAPMAlpha | JensenAlpha | SpecificRisk | SystematicRisk | TotalRisk | TrackingError_Annualized | Information_Annualized |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Current | 0.060866 | 0.000349 | 0.088271 | 0.089466 | 0.010688 | 0.090102 | 0.187643 | -0.674146 |
+| Current | 0.060863 | 0.000351 | 0.088778 | 0.089296 | 0.010687 | 0.089933 | 0.187562 | -0.671742 |
 | Markowitz_training | 0.044911 | 0.000242 | 0.060407 | 0.070568 | 0.007886 | 0.071007 | 0.181970 | -0.868339 |
 | MAD_training | 0.046369 | 0.000248 | 0.062126 | 0.070563 | 0.008142 | 0.071031 | 0.181733 | -0.858181 |
 | Minimax_training | 0.061845 | 0.000564 | 0.149827 | 0.089503 | 0.010860 | 0.090160 | 0.187509 | -0.345150 |
@@ -5643,8 +5655,8 @@ For curent_update_baltic, IN=0 because Baltic_NetSD dominates it by third-order 
 | Minimax_full | 0.048315 | 0.000438 | 0.113489 | 0.084287 | 0.008484 | 0.084713 | 0.187191 | -0.556390 |
 | Robust_full | 0.054150 | 0.000348 | 0.089344 | 0.072284 | 0.009509 | 0.072906 | 0.181155 | -0.700843 |
 | NetSD_full | 0.062943 | 0.000569 | 0.151827 | 0.082639 | 0.011053 | 0.083375 | 0.184155 | -0.339213 |
-| Baltic_NetSD | 0.036399 | 0.000511 | 0.135252 | 0.071258 | 0.006391 | 0.071544 | 0.183616 | -0.463541 |
-| curent_update_baltic | 0.048227 | 0.000412 | 0.107621 | 0.068945 | 0.008468 | 0.069463 | 0.180808 | -0.608595 |
+| Baltic_NetSD | 0.042986 | 0.000446 | 0.117582 | 0.062165 | 0.007548 | 0.062621 | 0.179192 | -0.565188 |
+| curent_update_baltic | 0.048853 | 0.000374 | 0.097191 | 0.066377 | 0.008578 | 0.066929 | 0.179741 | -0.669444 |
 | SP500 | 1.000000 | 0.000000 | 0.000000 | 0.000000 | 0.175597 | 0.175597 | 0.000000 | nan |
 
 </details>
@@ -5657,56 +5669,56 @@ CAPM beta measures sensitivity to S&P 500: beta below 1 means a smaller average 
 
 | asset | OUT | IN | denominator | netSD | segment | positive_netSD | secondary_list | admissible |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| AIR | 6 | 98 | 118 | -0.779661 | First North Baltic Share List | False | False | False |
-| AKO1L | 32 | 11 | 118 | 0.177966 | Baltic Main List | True | False | True |
-| AMG1L | 28 | 36 | 118 | -0.067797 | Baltic Secondary List | False | True | False |
+| AIR | 7 | 96 | 118 | -0.754237 | First North Baltic Share List | False | False | False |
+| AKO1L | 32 | 9 | 118 | 0.194915 | Baltic Main List | True | False | True |
+| AMG1L | 28 | 34 | 118 | -0.050847 | Baltic Secondary List | False | True | False |
 | APG1L | 38 | 2 | 118 | 0.305085 | Baltic Main List | True | False | True |
-| ARC1T | 19 | 40 | 118 | -0.177966 | Baltic Main List | False | False | False |
-| AUG1L | 1 | 110 | 118 | -0.923729 | Baltic Secondary List | False | True | False |
+| ARC1T | 17 | 40 | 118 | -0.194915 | Baltic Main List | False | False | False |
+| AUG1L | 1 | 113 | 118 | -0.949153 | Baltic Secondary List | False | True | False |
 | BAL1R | 0 | 118 | 118 | -1.000000 | Baltic Secondary List | False | True | False |
 | BERCM | 6 | 93 | 118 | -0.737288 | First North Baltic Share List | False | False | False |
 | CPA1T | 30 | 24 | 118 | 0.050847 | Baltic Main List | True | False | True |
 | CTS1L | 0 | 89 | 118 | -0.754237 | Baltic First North Foreign Shares trading list | False | False | False |
 | DGR1R | 26 | 22 | 118 | 0.033898 | Baltic Main List | True | False | True |
-| EFT1T | 36 | 23 | 118 | 0.110169 | Baltic Main List | True | False | True |
+| EFT1T | 37 | 23 | 118 | 0.118644 | Baltic Main List | True | False | True |
 | EWA1L | 29 | 29 | 118 | 0.000000 | First North Baltic Share List | False | False | False |
 | GRG1L | 53 | 6 | 118 | 0.398305 | Baltic Main List | True | False | True |
-| HAE1T | 39 | 24 | 118 | 0.127119 | Baltic Main List | True | False | True |
+| HAE1T | 37 | 24 | 118 | 0.110169 | Baltic Main List | True | False | True |
 | HPR1T | 15 | 64 | 118 | -0.415254 | Baltic Main List | False | False | False |
-| IDX1R | 17 | 52 | 118 | -0.296610 | Baltic Main List | False | False | False |
-| IGN1L | 53 | 10 | 118 | 0.364407 | Baltic Main List | True | False | True |
+| IDX1R | 19 | 52 | 118 | -0.279661 | Baltic Main List | False | False | False |
+| IGN1L | 52 | 10 | 118 | 0.355932 | Baltic Main List | True | False | True |
 | INC1L | 31 | 2 | 118 | 0.245763 | Baltic Secondary List | True | True | False |
-| INL1L | 12 | 65 | 118 | -0.449153 | Baltic Secondary List | False | True | False |
+| INL1L | 12 | 63 | 118 | -0.432203 | Baltic Secondary List | False | True | False |
 | INR1L | 31 | 12 | 118 | 0.161017 | Baltic Secondary List | True | True | False |
 | IVL1L | 47 | 0 | 118 | 0.398305 | Baltic Secondary List | True | True | False |
 | KNE1L | 44 | 0 | 118 | 0.372881 | Baltic Main List | True | False | True |
 | KNR1L | 13 | 2 | 118 | 0.093220 | Baltic Secondary List | True | True | False |
-| LGD1L | 43 | 4 | 118 | 0.330508 | Baltic Secondary List | True | True | False |
-| LHV1T | 34 | 24 | 118 | 0.084746 | Baltic Main List | True | False | True |
-| LINDA | 5 | 90 | 118 | -0.720339 | First North Baltic Share List | False | False | False |
-| MAGIC | 3 | 104 | 118 | -0.855932 | First North Baltic Share List | False | False | False |
+| LGD1L | 43 | 2 | 118 | 0.347458 | Baltic Secondary List | True | True | False |
+| LHV1T | 32 | 24 | 118 | 0.067797 | Baltic Main List | True | False | True |
+| LINDA | 5 | 93 | 118 | -0.745763 | First North Baltic Share List | False | False | False |
+| MAGIC | 3 | 105 | 118 | -0.864407 | First North Baltic Share List | False | False | False |
 | MDARA | 18 | 54 | 118 | -0.305085 | First North Baltic Share List | False | False | False |
 | MODE | 22 | 40 | 118 | -0.152542 | First North Baltic Share List | False | False | False |
 | MOLNR | 5 | 0 | 118 | 0.042373 | First North Baltic Share List | True | False | True |
-| MRK1T | 42 | 0 | 118 | 0.355932 | Baltic Main List | True | False | True |
+| MRK1T | 44 | 0 | 118 | 0.372881 | Baltic Main List | True | False | True |
 | NCN1T | 21 | 55 | 118 | -0.288136 | Baltic Main List | False | False | False |
-| NEOFI | 7 | 54 | 118 | -0.398305 | First North Baltic Share List | False | False | False |
+| NEOFI | 9 | 54 | 118 | -0.381356 | First North Baltic Share List | False | False | False |
 | PKG1T | 19 | 32 | 118 | -0.110169 | Baltic Main List | False | False | False |
 | PRF1T | 1 | 112 | 118 | -0.940678 | Baltic Secondary List | False | True | False |
 | PZV1L | 35 | 11 | 118 | 0.203390 | Baltic Main List | True | False | True |
 | ROE1L | 37 | 19 | 118 | 0.152542 | Baltic Main List | True | False | True |
 | RSU1L | 35 | 7 | 118 | 0.237288 | Baltic Main List | True | False | True |
 | SAF1R | 12 | 26 | 118 | -0.118644 | Baltic Main List | False | False | False |
-| SAUNA | 5 | 95 | 118 | -0.762712 | First North Baltic Share List | False | False | False |
-| SCM1R | 1 | 11 | 118 | -0.084746 | Baltic Secondary List | False | True | False |
+| SAUNA | 6 | 95 | 118 | -0.754237 | First North Baltic Share List | False | False | False |
+| SCM1R | 1 | 13 | 118 | -0.101695 | Baltic Secondary List | False | True | False |
 | SFG1T | 25 | 32 | 118 | -0.059322 | Baltic Main List | False | False | False |
-| SKN1T | 4 | 99 | 118 | -0.805085 | Baltic Secondary List | False | True | False |
+| SKN1T | 5 | 99 | 118 | -0.796610 | Baltic Secondary List | False | True | False |
 | TAL1T | 26 | 19 | 118 | 0.059322 | Baltic Main List | True | False | True |
-| TEL1L | 42 | 23 | 118 | 0.161017 | Baltic Main List | True | False | True |
-| TKM1T | 29 | 23 | 118 | 0.050847 | Baltic Main List | True | False | True |
+| TEL1L | 42 | 22 | 118 | 0.169492 | Baltic Main List | True | False | True |
+| TKM1T | 29 | 24 | 118 | 0.042373 | Baltic Main List | True | False | True |
 | TPD1T | 13 | 80 | 118 | -0.567797 | Baltic Secondary List | False | True | False |
-| TSM1T | 28 | 31 | 118 | -0.025424 | Baltic Main List | False | False | False |
-| TVE1T | 31 | 26 | 118 | 0.042373 | Baltic Main List | True | False | True |
+| TSM1T | 28 | 30 | 118 | -0.016949 | Baltic Main List | False | False | False |
+| TVE1T | 30 | 26 | 118 | 0.033898 | Baltic Main List | True | False | True |
 | UTR1L | 1 | 44 | 118 | -0.364407 | Baltic Secondary List | False | True | False |
 | VBL1L | 23 | 24 | 118 | -0.008475 | Baltic Secondary List | False | True | False |
 | VIRSI | 44 | 0 | 118 | 0.372881 | First North Baltic Share List | True | False | True |
@@ -5741,78 +5753,78 @@ The curve is the single long-only Markowitz efficient frontier calculated from a
 
 | Measure | Current | Markowitz_training | MAD_training | Minimax_training | Robust_training | NetSD_training | Markowitz_full | MAD_full | Minimax_full | Robust_full | NetSD_full | Baltic_NetSD | curent_update_baltic |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| ArithmeticReturn | 0.000402 | 0.000281 | 0.000289 | 0.000619 | 0.000354 | 0.000680 | 0.000392 | 0.000398 | 0.000480 | 0.000395 | 0.000624 | 0.000543 | 0.000455 |
-| GeometricReturn | 0.000386 | 0.000271 | 0.000279 | 0.000603 | 0.000343 | 0.000663 | 0.000382 | 0.000388 | 0.000466 | 0.000385 | 0.000610 | 0.000533 | 0.000445 |
-| AnnualizedReturn_Arithmetic | 0.101378 | 0.070824 | 0.072744 | 0.155939 | 0.089138 | 0.171390 | 0.098719 | 0.100296 | 0.120984 | 0.099563 | 0.157293 | 0.136751 | 0.114560 |
-| AnnualizedReturn_Geometric | 0.102191 | 0.070677 | 0.072730 | 0.163971 | 0.090323 | 0.181757 | 0.100954 | 0.102608 | 0.124538 | 0.101728 | 0.166221 | 0.143576 | 0.118650 |
-| CumulativeReturn | 0.337934 | 0.226705 | 0.233756 | 0.575080 | 0.295290 | 0.648194 | 0.333449 | 0.339451 | 0.420751 | 0.336254 | 0.584211 | 0.493937 | 0.398610 |
-| Volatility | 0.005680 | 0.004476 | 0.004477 | 0.005683 | 0.004587 | 0.005876 | 0.004475 | 0.004540 | 0.005340 | 0.004596 | 0.005256 | 0.004510 | 0.004379 |
-| Volatility_Annualized | 0.090161 | 0.071054 | 0.071078 | 0.090219 | 0.072824 | 0.093282 | 0.071039 | 0.072067 | 0.084769 | 0.072954 | 0.083429 | 0.071591 | 0.069509 |
-| MaximumDrawdown | 0.199157 | 0.170192 | 0.166449 | 0.157736 | 0.151701 | 0.114377 | 0.143065 | 0.138179 | 0.186881 | 0.132771 | 0.131017 | 0.057524 | 0.114046 |
-| AverageDrawdown | 0.025075 | 0.019669 | 0.024326 | 0.014763 | 0.017239 | 0.018675 | 0.017643 | 0.018183 | 0.014914 | 0.017957 | 0.015602 | 0.010475 | 0.010777 |
-| AverageDrawdownLength | 55.461538 | 51.857143 | 65.727273 | 20.911765 | 34.380952 | 26.576923 | 37.210526 | 39.000000 | 27.692308 | 44.312500 | 24.821429 | 16.829268 | 22.548387 |
-| AverageRecoveryTime | 29.615385 | 28.357143 | 36.181818 | 11.558824 | 13.809524 | 15.500000 | 14.526316 | 15.111111 | 17.153846 | 21.437500 | 14.750000 | 7.219512 | 8.032258 |
-| Sharpe_Daily | 0.070831 | 0.062791 | 0.064471 | 0.108883 | 0.077106 | 0.115741 | 0.087540 | 0.087670 | 0.089906 | 0.085970 | 0.118766 | 0.120330 | 0.103823 |
-| Sharpe_Annualized | 1.124410 | 0.996770 | 1.023446 | 1.728460 | 1.224019 | 1.837330 | 1.389649 | 1.391712 | 1.427221 | 1.364738 | 1.885345 | 1.910182 | 1.648133 |
-| Sharpe_VaR | 0.063380 | 0.047693 | 0.052024 | 0.084465 | 0.061485 | 0.092984 | 0.066397 | 0.070684 | 0.068176 | 0.071441 | 0.094257 | 0.100747 | 0.092233 |
-| Sharpe_ES | 0.031334 | 0.026852 | 0.027327 | 0.050547 | 0.033840 | 0.056387 | 0.037780 | 0.037525 | 0.040094 | 0.036520 | 0.053478 | 0.058269 | 0.046007 |
-| Sortino | 0.103789 | 0.089978 | 0.090696 | 0.175636 | 0.113343 | 0.188039 | 0.126822 | 0.124911 | 0.138998 | 0.121638 | 0.180686 | 0.192978 | 0.157818 |
-| Calmar | 0.513117 | 0.415279 | 0.436951 | 1.039527 | 0.595400 | 1.589095 | 0.705654 | 0.742575 | 0.666402 | 0.766189 | 1.268702 | 2.495914 | 1.040373 |
-| Omega | 1.253807 | 1.207409 | 1.218241 | 1.377407 | 1.260146 | 1.408378 | 1.298163 | 1.305293 | 1.300715 | 1.301546 | 1.420607 | 1.429441 | 1.356009 |
-| Sterling | 0.341596 | 0.261581 | 0.272960 | 0.636196 | 0.358849 | 0.847835 | 0.415339 | 0.430803 | 0.434110 | 0.437030 | 0.719520 | 0.911451 | 0.554322 |
-| Burke | 0.714375 | 0.626776 | 0.642660 | 1.265723 | 0.799609 | 1.363583 | 0.914138 | 0.926048 | 0.960507 | 0.903216 | 1.321467 | 1.276888 | 1.055817 |
-| Martin | 0.998131 | 0.743619 | 0.807360 | 2.110690 | 1.121867 | 3.631643 | 1.386084 | 1.525674 | 1.222933 | 1.655375 | 2.635455 | 6.639859 | 2.140853 |
-| UlcerIndex | 0.102382 | 0.095045 | 0.090084 | 0.077686 | 0.080511 | 0.050048 | 0.072834 | 0.067254 | 0.101835 | 0.061453 | 0.063071 | 0.021623 | 0.055422 |
-| PainIndex | 0.077990 | 0.077883 | 0.073764 | 0.058068 | 0.061619 | 0.038792 | 0.055230 | 0.050917 | 0.075457 | 0.046825 | 0.047385 | 0.016119 | 0.041545 |
-| PainRatio | 1.310310 | 0.907476 | 0.985987 | 2.823785 | 1.465833 | 4.685408 | 1.827879 | 2.015216 | 1.650440 | 2.172525 | 3.507857 | 8.907382 | 2.855962 |
-| VaR_Loss | 0.006347 | 0.005893 | 0.005549 | 0.007326 | 0.005753 | 0.007314 | 0.005900 | 0.005631 | 0.007042 | 0.005530 | 0.006622 | 0.005386 | 0.004929 |
-| ES_Loss | 0.012839 | 0.010467 | 0.010563 | 0.012242 | 0.010453 | 0.012062 | 0.010369 | 0.010606 | 0.011974 | 0.010819 | 0.011672 | 0.009313 | 0.009881 |
-| DownsideDeviation | 0.003876 | 0.003124 | 0.003183 | 0.003523 | 0.003121 | 0.003617 | 0.003089 | 0.003186 | 0.003454 | 0.003248 | 0.003454 | 0.002812 | 0.002881 |
-| DrawdownDeviation | 0.007558 | 0.006487 | 0.006360 | 0.006733 | 0.006269 | 0.005894 | 0.005906 | 0.005779 | 0.007319 | 0.005503 | 0.005868 | 0.004335 | 0.005066 |
-| Rachev | 1.100289 | 1.043589 | 1.025876 | 1.271580 | 1.114071 | 1.279184 | 1.067344 | 1.049732 | 1.175661 | 1.049030 | 1.167225 | 1.280925 | 1.145040 |
-| AdjustedSharpe | 0.216706 | 0.614905 | 0.474911 | 1.081194 | 0.604269 | -0.056304 | 0.349252 | 0.023852 | 0.972030 | -0.040823 | -0.522513 | -0.232737 | 0.369144 |
-| Skewness | -0.068165 | -0.397936 | -0.720441 | 0.377474 | -0.284450 | 0.625424 | -0.517818 | -0.804959 | 0.181686 | -0.927740 | -0.270819 | 0.321776 | -0.033996 |
-| Kurtosis | 18.081851 | 10.657233 | 12.464893 | 6.881817 | 10.181225 | 11.688924 | 10.814045 | 12.865225 | 7.266982 | 13.552122 | 11.048650 | 11.052737 | 9.773973 |
-| UpsidePotential | 0.512719 | 0.523794 | 0.506272 | 0.641010 | 0.549035 | 0.648494 | 0.552168 | 0.534062 | 0.601222 | 0.525020 | 0.610269 | 0.642349 | 0.601117 |
-| UpsideRisk | 0.004166 | 0.003214 | 0.003158 | 0.004497 | 0.003377 | 0.004676 | 0.003258 | 0.003254 | 0.004096 | 0.003271 | 0.004005 | 0.003563 | 0.003325 |
-| BernardoLedoit | 1.253807 | 1.207409 | 1.218241 | 1.377407 | 1.260146 | 1.408378 | 1.298163 | 1.305293 | 1.300715 | 1.301546 | 1.420607 | 1.429441 | 1.356009 |
-| DRatio | 0.680515 | 0.725996 | 0.678011 | 0.636395 | 0.680759 | 0.619052 | 0.622612 | 0.619211 | 0.718885 | 0.624374 | 0.603865 | 0.623992 | 0.623586 |
-| Hurst | 0.407547 | 0.373706 | 0.380678 | 0.330215 | 0.371346 | 0.385210 | 0.383093 | 0.391582 | 0.339636 | 0.390138 | 0.388151 | 0.383144 | 0.363101 |
-| Kappa | 0.060113 | 0.055300 | 0.053849 | 0.116238 | 0.069496 | 0.120127 | 0.076783 | 0.073136 | 0.091296 | 0.070360 | 0.108401 | 0.119140 | 0.098445 |
-| Kelly | 12.471090 | 14.028417 | 14.398990 | 19.158592 | 16.807867 | 19.696548 | 19.561870 | 19.311415 | 16.836604 | 18.706853 | 22.598090 | 26.681967 | 23.711148 |
-| Prospect | -0.407373 | -0.452293 | -0.428775 | -0.406083 | -0.431271 | -0.387529 | -0.404860 | -0.386527 | -0.438782 | -0.382589 | -0.356293 | -0.368735 | -0.396305 |
-| Information_Daily | -0.036497 | -0.047680 | -0.047078 | -0.018192 | -0.041528 | -0.012985 | -0.038213 | -0.037671 | -0.029827 | -0.037950 | -0.017862 | -0.024645 | -0.032710 |
-| Information_Annualized | -0.674146 | -0.868339 | -0.858181 | -0.345150 | -0.763035 | -0.248219 | -0.705471 | -0.695964 | -0.556390 | -0.700843 | -0.339213 | -0.463541 | -0.608595 |
-| CAPMAlpha | 0.000349 | 0.000242 | 0.000248 | 0.000564 | 0.000307 | 0.000626 | 0.000348 | 0.000352 | 0.000438 | 0.000348 | 0.000569 | 0.000511 | 0.000412 |
-| JensenAlpha | 0.088271 | 0.060407 | 0.062126 | 0.149827 | 0.078254 | 0.167719 | 0.089470 | 0.090709 | 0.113489 | 0.089344 | 0.151827 | 0.135252 | 0.107621 |
-| Treynor_Daily | 0.006345 | 0.006035 | 0.006009 | 0.009745 | 0.006504 | 0.010800 | 0.007602 | 0.007451 | 0.009642 | 0.007101 | 0.009697 | 0.014630 | 0.009228 |
-| Treynor_Annualized | 1.678958 | 1.573709 | 1.568491 | 2.651296 | 1.711562 | 2.961042 | 2.010408 | 1.972026 | 2.577618 | 1.878642 | 2.640818 | 3.944539 | 2.460252 |
-| Modigliani | 0.000784 | 0.000695 | 0.000713 | 0.001204 | 0.000853 | 0.001280 | 0.000968 | 0.000970 | 0.000995 | 0.000951 | 0.001314 | 0.001331 | 0.001148 |
-| TrackingError_Daily | 0.011820 | 0.011463 | 0.011448 | 0.011812 | 0.011423 | 0.011911 | 0.011406 | 0.011412 | 0.011792 | 0.011412 | 0.011601 | 0.011567 | 0.011390 |
-| TrackingError_Annualized | 0.187643 | 0.181970 | 0.181733 | 0.187509 | 0.181337 | 0.189078 | 0.181063 | 0.181160 | 0.187191 | 0.181155 | 0.184155 | 0.183616 | 0.180808 |
-| M2Sortino | 0.108282 | 0.077033 | 0.079051 | 0.175263 | 0.098334 | 0.193567 | 0.109982 | 0.111307 | 0.133627 | 0.110080 | 0.178035 | 0.158161 | 0.130407 |
-| Appraisal | 0.986645 | 0.856007 | 0.880431 | 1.673988 | 1.084088 | 1.811307 | 1.270121 | 1.269760 | 1.346451 | 1.236027 | 1.837228 | 1.898069 | 1.560969 |
-| CAPMBeta | 0.060866 | 0.044911 | 0.046369 | 0.061845 | 0.052772 | 0.061383 | 0.050216 | 0.052032 | 0.048315 | 0.054150 | 0.062943 | 0.036399 | 0.048227 |
-| ActiveReturn | -0.126499 | -0.158012 | -0.155959 | -0.064719 | -0.138367 | -0.046933 | -0.127735 | -0.126081 | -0.104151 | -0.126961 | -0.062468 | -0.085114 | -0.110039 |
-| OmegaExcessReturn | 0.079999 | 0.052794 | 0.054507 | 0.143799 | 0.072455 | 0.161048 | 0.083269 | 0.084365 | 0.104763 | 0.083131 | 0.146443 | 0.127476 | 0.102158 |
-| BetaCoSkewness | -1.014972 | -1.030977 | -1.139233 | -0.930234 | -1.006532 | -0.908119 | -1.100709 | -1.118876 | -1.079607 | -1.123072 | -0.954915 | -1.797892 | -1.706675 |
-| BetaCoKurtosis | 0.081045 | 0.049011 | 0.051037 | 0.027872 | 0.047768 | 0.040181 | 0.045809 | 0.051584 | 0.023902 | 0.056251 | 0.050910 | -0.029645 | 0.021140 |
-| CDD | 0.040237 | 0.035628 | 0.046112 | 0.027983 | 0.041533 | 0.044066 | 0.038434 | 0.043415 | 0.025972 | 0.047864 | 0.035587 | 0.028584 | 0.019241 |
+| ArithmeticReturn | 0.000404 | 0.000281 | 0.000289 | 0.000619 | 0.000354 | 0.000680 | 0.000392 | 0.000398 | 0.000480 | 0.000395 | 0.000624 | 0.000484 | 0.000417 |
+| GeometricReturn | 0.000388 | 0.000271 | 0.000279 | 0.000603 | 0.000343 | 0.000663 | 0.000382 | 0.000388 | 0.000466 | 0.000385 | 0.000610 | 0.000476 | 0.000408 |
+| AnnualizedReturn_Arithmetic | 0.101822 | 0.070824 | 0.072744 | 0.155939 | 0.089138 | 0.171390 | 0.098719 | 0.100296 | 0.120984 | 0.099563 | 0.157293 | 0.121915 | 0.105145 |
+| AnnualizedReturn_Geometric | 0.102696 | 0.070677 | 0.072730 | 0.163971 | 0.090323 | 0.181757 | 0.100954 | 0.102608 | 0.124538 | 0.101728 | 0.166221 | 0.127412 | 0.108363 |
+| CumulativeReturn | 0.339771 | 0.226705 | 0.233756 | 0.575080 | 0.295290 | 0.648194 | 0.333449 | 0.339451 | 0.420751 | 0.336254 | 0.584211 | 0.431642 | 0.360477 |
+| Volatility | 0.005669 | 0.004476 | 0.004477 | 0.005683 | 0.004587 | 0.005876 | 0.004475 | 0.004540 | 0.005340 | 0.004596 | 0.005256 | 0.003947 | 0.004219 |
+| Volatility_Annualized | 0.089992 | 0.071054 | 0.071078 | 0.090219 | 0.072824 | 0.093282 | 0.071039 | 0.072067 | 0.084769 | 0.072954 | 0.083429 | 0.062662 | 0.066973 |
+| MaximumDrawdown | 0.198339 | 0.170192 | 0.166449 | 0.157736 | 0.151701 | 0.114377 | 0.143065 | 0.138179 | 0.186881 | 0.132771 | 0.131017 | 0.075343 | 0.116058 |
+| AverageDrawdown | 0.025001 | 0.019669 | 0.024326 | 0.014763 | 0.017239 | 0.018675 | 0.017643 | 0.018183 | 0.014914 | 0.017957 | 0.015602 | 0.009260 | 0.012556 |
+| AverageDrawdownLength | 55.384615 | 51.857143 | 65.727273 | 20.911765 | 34.380952 | 26.576923 | 37.210526 | 39.000000 | 27.692308 | 44.312500 | 24.821429 | 17.425000 | 27.076923 |
+| AverageRecoveryTime | 29.538462 | 28.357143 | 36.181818 | 11.558824 | 13.809524 | 15.500000 | 14.526316 | 15.111111 | 17.153846 | 21.437500 | 14.750000 | 8.725000 | 10.115385 |
+| Sharpe_Daily | 0.071275 | 0.062791 | 0.064471 | 0.108883 | 0.077106 | 0.115741 | 0.087540 | 0.087670 | 0.089906 | 0.085970 | 0.118766 | 0.122560 | 0.098898 |
+| Sharpe_Annualized | 1.131452 | 0.996770 | 1.023446 | 1.728460 | 1.224019 | 1.837330 | 1.389649 | 1.391712 | 1.427221 | 1.364738 | 1.885345 | 1.945587 | 1.569957 |
+| Sharpe_VaR | 0.063965 | 0.047693 | 0.052024 | 0.084465 | 0.061485 | 0.092984 | 0.066397 | 0.070684 | 0.068176 | 0.071441 | 0.094257 | 0.105568 | 0.087767 |
+| Sharpe_ES | 0.031532 | 0.026852 | 0.027327 | 0.050547 | 0.033840 | 0.056387 | 0.037780 | 0.037525 | 0.040094 | 0.036520 | 0.053478 | 0.054764 | 0.044232 |
+| Sortino | 0.104445 | 0.089978 | 0.090696 | 0.175636 | 0.113343 | 0.188039 | 0.126822 | 0.124911 | 0.138998 | 0.121638 | 0.180686 | 0.187358 | 0.149971 |
+| Calmar | 0.517780 | 0.415279 | 0.436951 | 1.039527 | 0.595400 | 1.589095 | 0.705654 | 0.742575 | 0.666402 | 0.766189 | 1.268702 | 1.691086 | 0.933695 |
+| Omega | 1.255296 | 1.207409 | 1.218241 | 1.377407 | 1.260146 | 1.408378 | 1.298163 | 1.305293 | 1.300715 | 1.301546 | 1.420607 | 1.422455 | 1.337581 |
+| Sterling | 0.344226 | 0.261581 | 0.272960 | 0.636196 | 0.358849 | 0.847835 | 0.415339 | 0.430803 | 0.434110 | 0.437030 | 0.719520 | 0.726643 | 0.501545 |
+| Burke | 0.719285 | 0.626776 | 0.642660 | 1.265723 | 0.799609 | 1.363583 | 0.914138 | 0.926048 | 0.960507 | 0.903216 | 1.321467 | 1.269866 | 0.997922 |
+| Martin | 1.009283 | 0.743619 | 0.807360 | 2.110690 | 1.121867 | 3.631643 | 1.386084 | 1.525674 | 1.222933 | 1.655375 | 2.635455 | 4.752766 | 1.971670 |
+| UlcerIndex | 0.101752 | 0.095045 | 0.090084 | 0.077686 | 0.080511 | 0.050048 | 0.072834 | 0.067254 | 0.101835 | 0.061453 | 0.063071 | 0.026808 | 0.054960 |
+| PainIndex | 0.077279 | 0.077883 | 0.073764 | 0.058068 | 0.061619 | 0.038792 | 0.055230 | 0.050917 | 0.075457 | 0.046825 | 0.047385 | 0.018022 | 0.042080 |
+| PainRatio | 1.328909 | 0.907476 | 0.985987 | 2.823785 | 1.465833 | 4.685408 | 1.827879 | 2.015216 | 1.650440 | 2.172525 | 3.507857 | 7.069835 | 2.575182 |
+| VaR_Loss | 0.006317 | 0.005893 | 0.005549 | 0.007326 | 0.005753 | 0.007314 | 0.005900 | 0.005631 | 0.007042 | 0.005530 | 0.006622 | 0.004583 | 0.004754 |
+| ES_Loss | 0.012814 | 0.010467 | 0.010563 | 0.012242 | 0.010453 | 0.012062 | 0.010369 | 0.010606 | 0.011974 | 0.010819 | 0.011672 | 0.008834 | 0.009433 |
+| DownsideDeviation | 0.003869 | 0.003124 | 0.003183 | 0.003523 | 0.003121 | 0.003617 | 0.003089 | 0.003186 | 0.003454 | 0.003248 | 0.003454 | 0.002582 | 0.002782 |
+| DrawdownDeviation | 0.007530 | 0.006487 | 0.006360 | 0.006733 | 0.006269 | 0.005894 | 0.005906 | 0.005779 | 0.007319 | 0.005503 | 0.005868 | 0.004089 | 0.005113 |
+| Rachev | 1.100365 | 1.043589 | 1.025876 | 1.271580 | 1.114071 | 1.279184 | 1.067344 | 1.049732 | 1.175661 | 1.049030 | 1.167225 | 1.216316 | 1.159968 |
+| AdjustedSharpe | 0.210110 | 0.614905 | 0.474911 | 1.081194 | 0.604269 | -0.056304 | 0.349252 | 0.023852 | 0.972030 | -0.040823 | -0.522513 | 0.407592 | 0.443091 |
+| Skewness | -0.073388 | -0.397936 | -0.720441 | 0.377474 | -0.284450 | 0.625424 | -0.517818 | -0.804959 | 0.181686 | -0.927740 | -0.270819 | -0.320871 | -0.110549 |
+| Kurtosis | 18.006497 | 10.657233 | 12.464893 | 6.881817 | 10.181225 | 11.688924 | 10.814045 | 12.865225 | 7.266982 | 13.552122 | 11.048650 | 7.352343 | 9.707420 |
+| UpsidePotential | 0.513559 | 0.523794 | 0.506272 | 0.641010 | 0.549035 | 0.648494 | 0.552168 | 0.534062 | 0.601222 | 0.525020 | 0.610269 | 0.630857 | 0.594222 |
+| UpsideRisk | 0.004158 | 0.003214 | 0.003158 | 0.004497 | 0.003377 | 0.004676 | 0.003258 | 0.003254 | 0.004096 | 0.003271 | 0.004005 | 0.003021 | 0.003195 |
+| BernardoLedoit | 1.255296 | 1.207409 | 1.218241 | 1.377407 | 1.260146 | 1.408378 | 1.298163 | 1.305293 | 1.300715 | 1.301546 | 1.420607 | 1.422455 | 1.337581 |
+| DRatio | 0.683389 | 0.725996 | 0.678011 | 0.636395 | 0.680759 | 0.619052 | 0.622612 | 0.619211 | 0.718885 | 0.624374 | 0.603865 | 0.600848 | 0.649296 |
+| Hurst | 0.407249 | 0.373706 | 0.380678 | 0.330215 | 0.371346 | 0.385210 | 0.383093 | 0.391582 | 0.339636 | 0.390138 | 0.388151 | 0.337995 | 0.360201 |
+| Kappa | 0.060508 | 0.055300 | 0.053849 | 0.116238 | 0.069496 | 0.120127 | 0.076783 | 0.073136 | 0.091296 | 0.070360 | 0.108401 | 0.117018 | 0.092636 |
+| Kelly | 12.572804 | 14.028417 | 14.398990 | 19.158592 | 16.807867 | 19.696548 | 19.561870 | 19.311415 | 16.836604 | 18.706853 | 22.598090 | 31.048858 | 23.441691 |
+| Prospect | -0.406948 | -0.452293 | -0.428775 | -0.406083 | -0.431271 | -0.387529 | -0.404860 | -0.386527 | -0.438782 | -0.382589 | -0.356293 | -0.367015 | -0.405343 |
+| Information_Daily | -0.036358 | -0.047680 | -0.047078 | -0.018192 | -0.041528 | -0.012985 | -0.038213 | -0.037671 | -0.029827 | -0.037950 | -0.017862 | -0.030261 | -0.036143 |
+| Information_Annualized | -0.671742 | -0.868339 | -0.858181 | -0.345150 | -0.763035 | -0.248219 | -0.705471 | -0.695964 | -0.556390 | -0.700843 | -0.339213 | -0.565188 | -0.669444 |
+| CAPMAlpha | 0.000351 | 0.000242 | 0.000248 | 0.000564 | 0.000307 | 0.000626 | 0.000348 | 0.000352 | 0.000438 | 0.000348 | 0.000569 | 0.000446 | 0.000374 |
+| JensenAlpha | 0.088778 | 0.060407 | 0.062126 | 0.149827 | 0.078254 | 0.167719 | 0.089470 | 0.090709 | 0.113489 | 0.089344 | 0.151827 | 0.117582 | 0.097191 |
+| Treynor_Daily | 0.006375 | 0.006035 | 0.006009 | 0.009745 | 0.006504 | 0.010800 | 0.007602 | 0.007451 | 0.009642 | 0.007101 | 0.009697 | 0.011074 | 0.008359 |
+| Treynor_Annualized | 1.687345 | 1.573709 | 1.568491 | 2.651296 | 1.711562 | 2.961042 | 2.010408 | 1.972026 | 2.577618 | 1.878642 | 2.640818 | 2.964063 | 2.218134 |
+| Modigliani | 0.000788 | 0.000695 | 0.000713 | 0.001204 | 0.000853 | 0.001280 | 0.000968 | 0.000970 | 0.000995 | 0.000951 | 0.001314 | 0.001356 | 0.001094 |
+| TrackingError_Daily | 0.011815 | 0.011463 | 0.011448 | 0.011812 | 0.011423 | 0.011911 | 0.011406 | 0.011412 | 0.011792 | 0.011412 | 0.011601 | 0.011288 | 0.011323 |
+| TrackingError_Annualized | 0.187562 | 0.181970 | 0.181733 | 0.187509 | 0.181337 | 0.189078 | 0.181063 | 0.181160 | 0.187191 | 0.181155 | 0.184155 | 0.179192 | 0.179741 |
+| M2Sortino | 0.108839 | 0.077033 | 0.079051 | 0.175263 | 0.098334 | 0.193567 | 0.109982 | 0.111307 | 0.133627 | 0.110080 | 0.178035 | 0.142257 | 0.119769 |
+| Appraisal | 0.994195 | 0.856007 | 0.880431 | 1.673988 | 1.084088 | 1.811307 | 1.270121 | 1.269760 | 1.346451 | 1.236027 | 1.837228 | 1.891455 | 1.464217 |
+| CAPMBeta | 0.060863 | 0.044911 | 0.046369 | 0.061845 | 0.052772 | 0.061383 | 0.050216 | 0.052032 | 0.048315 | 0.054150 | 0.062943 | 0.042986 | 0.048853 |
+| ActiveReturn | -0.125993 | -0.158012 | -0.155959 | -0.064719 | -0.138367 | -0.046933 | -0.127735 | -0.126081 | -0.104151 | -0.126961 | -0.062468 | -0.101277 | -0.120327 |
+| OmegaExcessReturn | 0.080547 | 0.052794 | 0.054507 | 0.143799 | 0.072455 | 0.161048 | 0.083269 | 0.084365 | 0.104763 | 0.083131 | 0.146443 | 0.112628 | 0.092434 |
+| BetaCoSkewness | -1.019341 | -1.030977 | -1.139233 | -0.930234 | -1.006532 | -0.908119 | -1.100709 | -1.118876 | -1.079607 | -1.123072 | -0.954915 | -1.553752 | -1.637290 |
+| BetaCoKurtosis | 0.080597 | 0.049011 | 0.051037 | 0.027872 | 0.047768 | 0.040181 | 0.045809 | 0.051584 | 0.023902 | 0.056251 | 0.050910 | -0.006561 | 0.024927 |
+| CDD | 0.040296 | 0.035628 | 0.046112 | 0.027983 | 0.041533 | 0.044066 | 0.038434 | 0.043415 | 0.025972 | 0.047864 | 0.035587 | 0.018744 | 0.036589 |
 | CoSkewness | -0.000000 | -0.000000 | -0.000000 | -0.000000 | -0.000000 | -0.000000 | -0.000000 | -0.000000 | -0.000000 | -0.000000 | -0.000000 | -0.000000 | -0.000000 |
 | CoKurtosis | 0.000000 | 0.000000 | 0.000000 | 0.000000 | 0.000000 | 0.000000 | 0.000000 | 0.000000 | 0.000000 | 0.000000 | 0.000000 | -0.000000 | 0.000000 |
-| FamaBeta | 0.513457 | 0.404641 | 0.404778 | 0.513783 | 0.414724 | 0.531228 | 0.404556 | 0.410411 | 0.482748 | 0.415463 | 0.475119 | 0.407700 | 0.395843 |
-| MSquaredExcess | -0.024143 | -0.043968 | -0.039889 | 0.073619 | -0.008871 | 0.092338 | 0.016973 | 0.017355 | 0.023837 | 0.013157 | 0.098611 | 0.100490 | 0.057827 |
-| NetSelectivity | -0.015231 | -0.021860 | -0.019838 | 0.046474 | -0.004520 | 0.060270 | 0.008437 | 0.008752 | 0.014139 | 0.006716 | 0.057567 | 0.050339 | 0.028125 |
-| Selectivity | 0.088271 | 0.060407 | 0.062126 | 0.149827 | 0.078254 | 0.167719 | 0.089470 | 0.090709 | 0.113489 | 0.089344 | 0.151827 | 0.135252 | 0.107621 |
-| SpecificRisk | 0.089466 | 0.070568 | 0.070563 | 0.089503 | 0.072184 | 0.092596 | 0.070443 | 0.071438 | 0.084287 | 0.072284 | 0.082639 | 0.071258 | 0.068945 |
-| SystematicRisk | 0.010688 | 0.007886 | 0.008142 | 0.010860 | 0.009267 | 0.010779 | 0.008818 | 0.009137 | 0.008484 | 0.009509 | 0.011053 | 0.006391 | 0.008468 |
-| TotalRisk | 0.090102 | 0.071007 | 0.071031 | 0.090160 | 0.072777 | 0.093221 | 0.070992 | 0.072020 | 0.084713 | 0.072906 | 0.083375 | 0.071544 | 0.069463 |
-| UpCapture | 0.104962 | 0.071291 | 0.073323 | 0.136728 | 0.092194 | 0.138263 | 0.090263 | 0.091277 | 0.102491 | 0.093247 | 0.133385 | 0.098812 | 0.100178 |
-| UpNumber | 0.564220 | 0.555046 | 0.573394 | 0.550459 | 0.575688 | 0.555046 | 0.575688 | 0.580275 | 0.543578 | 0.584862 | 0.564220 | 0.552752 | 0.573394 |
-| UpPercent | 0.172018 | 0.146789 | 0.144495 | 0.178899 | 0.158257 | 0.204128 | 0.153670 | 0.146789 | 0.183486 | 0.149083 | 0.178899 | 0.158257 | 0.176606 |
-| DownCapture | 0.013101 | 0.006585 | 0.006889 | -0.011008 | 0.011399 | -0.027237 | -0.002297 | -0.002875 | -0.013063 | 0.000470 | -0.016812 | -0.036236 | -0.008425 |
-| DownNumber | 0.500000 | 0.503145 | 0.493711 | 0.496855 | 0.518868 | 0.500000 | 0.484277 | 0.490566 | 0.525157 | 0.500000 | 0.503145 | 0.506289 | 0.503145 |
-| DownPercent | 0.874214 | 0.893082 | 0.893082 | 0.861635 | 0.883648 | 0.877358 | 0.893082 | 0.889937 | 0.880503 | 0.883648 | 0.877358 | 0.874214 | 0.893082 |
+| FamaBeta | 0.512493 | 0.404641 | 0.404778 | 0.513783 | 0.414724 | 0.531228 | 0.404556 | 0.410411 | 0.482748 | 0.415463 | 0.475119 | 0.356853 | 0.381402 |
+| MSquaredExcess | -0.023036 | -0.043968 | -0.039889 | 0.073619 | -0.008871 | 0.092338 | 0.016973 | 0.017355 | 0.023837 | 0.013157 | 0.098611 | 0.104464 | 0.045111 |
+| NetSelectivity | -0.014505 | -0.021860 | -0.019838 | 0.046474 | -0.004520 | 0.060270 | 0.008437 | 0.008752 | 0.014139 | 0.006716 | 0.057567 | 0.045804 | 0.021140 |
+| Selectivity | 0.088778 | 0.060407 | 0.062126 | 0.149827 | 0.078254 | 0.167719 | 0.089470 | 0.090709 | 0.113489 | 0.089344 | 0.151827 | 0.117582 | 0.097191 |
+| SpecificRisk | 0.089296 | 0.070568 | 0.070563 | 0.089503 | 0.072184 | 0.092596 | 0.070443 | 0.071438 | 0.084287 | 0.072284 | 0.082639 | 0.062165 | 0.066377 |
+| SystematicRisk | 0.010687 | 0.007886 | 0.008142 | 0.010860 | 0.009267 | 0.010779 | 0.008818 | 0.009137 | 0.008484 | 0.009509 | 0.011053 | 0.007548 | 0.008578 |
+| TotalRisk | 0.089933 | 0.071007 | 0.071031 | 0.090160 | 0.072777 | 0.093221 | 0.070992 | 0.072020 | 0.084713 | 0.072906 | 0.083375 | 0.062621 | 0.066929 |
+| UpCapture | 0.105195 | 0.071291 | 0.073323 | 0.136728 | 0.092194 | 0.138263 | 0.090263 | 0.091277 | 0.102491 | 0.093247 | 0.133385 | 0.093040 | 0.095495 |
+| UpNumber | 0.564220 | 0.555046 | 0.573394 | 0.550459 | 0.575688 | 0.555046 | 0.575688 | 0.580275 | 0.543578 | 0.584862 | 0.564220 | 0.548165 | 0.555046 |
+| UpPercent | 0.172018 | 0.146789 | 0.144495 | 0.178899 | 0.158257 | 0.204128 | 0.153670 | 0.146789 | 0.183486 | 0.149083 | 0.178899 | 0.135321 | 0.162844 |
+| DownCapture | 0.012873 | 0.006585 | 0.006889 | -0.011008 | 0.011399 | -0.027237 | -0.002297 | -0.002875 | -0.013063 | 0.000470 | -0.016812 | -0.026068 | -0.003259 |
+| DownNumber | 0.503145 | 0.503145 | 0.493711 | 0.496855 | 0.518868 | 0.500000 | 0.484277 | 0.490566 | 0.525157 | 0.500000 | 0.503145 | 0.474843 | 0.493711 |
+| DownPercent | 0.874214 | 0.893082 | 0.893082 | 0.861635 | 0.883648 | 0.877358 | 0.893082 | 0.889937 | 0.880503 | 0.883648 | 0.877358 | 0.902516 | 0.893082 |
 
 </details>
 
@@ -5828,29 +5840,29 @@ Table 9 contains all 72 measures calculated directly with PerformanceAnalytics: 
 
 | asset | trade_shares | trade_value_EUR | median_daily_turnover_EUR | zero_volume_fraction | trade_to_median_turnover | liquidity_flag |
 | --- | --- | --- | --- | --- | --- | --- |
-| TVE1T | 106 | 1155.4000 | 14561.8250 | 0.0119 | 0.0793 | MEDIUM |
-| GRG1L | 880 | 888.8000 | 12103.8375 | 0.0119 | 0.0734 | MEDIUM |
-| KNE1L | 1056 | 510.0480 | 14251.1950 | 0.0119 | 0.0358 | MEDIUM |
-| HAE1T | 99 | 548.4600 | 16471.5600 | 0.0119 | 0.0333 | MEDIUM |
-| DGR1R | 181 | 308.6050 | 12309.7360 | 0.0238 | 0.0251 | MEDIUM |
-| TKM1T | -262 | 2347.5200 | 39903.1900 | 0.0119 | 0.0588 | LOW |
-| VLP1L | 75 | 1162.5000 | 21740.5000 | 0.0119 | 0.0535 | LOW |
-| TEL1L | 638 | 1441.8800 | 56052.8600 | 0.0119 | 0.0257 | LOW |
-| APG1L | 155 | 590.5500 | 24617.8400 | 0.0119 | 0.0240 | LOW |
-| AKO1L | 262 | 480.7700 | 22874.8825 | 0.0119 | 0.0210 | LOW |
-| MRK1T | 38 | 1027.9000 | 57645.3500 | 0.0119 | 0.0178 | LOW |
-| EFT1T | 16 | 312.8000 | 20013.3500 | 0.0119 | 0.0156 | LOW |
-| TSM1T | -330 | 399.9600 | 45486.8640 | 0.0119 | 0.0088 | LOW |
-| TAL1T | 799 | 515.3550 | 77229.4990 | 0.0119 | 0.0067 | LOW |
-| ROE1L | -383 | 337.8060 | 193177.7220 | 0.0119 | 0.0017 | LOW |
-| IGN1L | 11 | 239.8000 | 290959.3750 | 0.0119 | 0.0008 | LOW |
-| CPA1T | 24 | 56.1600 | 80229.0455 | 0.0119 | 0.0007 | LOW |
-| LHV1T | 41 | 133.4550 | 265034.2950 | 0.0119 | 0.0005 | LOW |
-| MOLNR | 43 | 885.8000 | 98.0000 | 0.2937 | 9.0388 | HIGH |
-| PZV1L | 627 | 1119.1950 | 4749.0900 | 0.0119 | 0.2357 | HIGH |
-| SAF1R | -100 | 1650.0000 | 7130.0100 | 0.0238 | 0.2314 | HIGH |
-| RSU1L | 59 | 264.3200 | 1260.2600 | 0.0476 | 0.2097 | HIGH |
-| VIRSI | 13 | 57.4600 | 2659.2500 | 0.0238 | 0.0216 | HIGH |
+| GRG1L | 1523 | 1523.0000 | 12103.8375 | 0.0119 | 0.1258 | MEDIUM |
+| KNE1L | 2973 | 1427.0400 | 14251.1950 | 0.0119 | 0.1001 | MEDIUM |
+| TVE1T | 40 | 434.0000 | 14561.8250 | 0.0119 | 0.0298 | MEDIUM |
+| HAE1T | 60 | 321.6000 | 17025.3300 | 0.0119 | 0.0189 | MEDIUM |
+| DGR1R | 134 | 230.4800 | 12395.1510 | 0.0238 | 0.0186 | MEDIUM |
+| EFT1T | 70 | 1372.0000 | 20301.0000 | 0.0119 | 0.0676 | LOW |
+| VLP1L | 66 | 1029.6000 | 21740.5000 | 0.0119 | 0.0474 | LOW |
+| TKM1T | -125 | 1112.5000 | 39988.8550 | 0.0119 | 0.0278 | LOW |
+| AKO1L | 313 | 574.3550 | 22415.0500 | 0.0119 | 0.0256 | LOW |
+| MRK1T | 34 | 921.4000 | 58112.4000 | 0.0119 | 0.0159 | LOW |
+| APG1L | 89 | 339.0900 | 24617.8400 | 0.0119 | 0.0138 | LOW |
+| TSM1T | -330 | 400.6200 | 45486.8640 | 0.0119 | 0.0088 | LOW |
+| TEL1L | 140 | 320.6000 | 56394.4800 | 0.0119 | 0.0057 | LOW |
+| TAL1T | -377 | 243.5420 | 77090.3715 | 0.0119 | 0.0032 | LOW |
+| ROE1L | -347 | 305.3600 | 186591.6075 | 0.0119 | 0.0016 | LOW |
+| IGN1L | 20 | 435.0000 | 284652.8000 | 0.0119 | 0.0015 | LOW |
+| CPA1T | 49 | 115.1500 | 78807.5240 | 0.0119 | 0.0015 | LOW |
+| LHV1T | 37 | 120.2500 | 269011.2300 | 0.0119 | 0.0004 | LOW |
+| MOLNR | 8 | 163.2000 | 98.0000 | 0.2937 | 1.6653 | HIGH |
+| RSU1L | 163 | 730.2400 | 1184.3000 | 0.0516 | 0.6166 | HIGH |
+| SAF1R | -100 | 1635.0000 | 7531.2500 | 0.0238 | 0.2171 | HIGH |
+| PZV1L | 261 | 468.4950 | 4516.2250 | 0.0119 | 0.1037 | HIGH |
+| VIRSI | 39 | 172.3800 | 2721.0000 | 0.0238 | 0.0634 | HIGH |
 
 </details>
 
@@ -5862,8 +5874,8 @@ Median daily turnover and zero-volume frequency use official Nasdaq Baltic price
 
 | portfolio | turnover_EUR | number_of_trades | estimated_cost_EUR | high_liquidity_risk_trades | cost_percent_of_15000 |
 | --- | --- | --- | --- | --- | --- |
-| Baltic_NetSD | 16434.5439 | 23 | 201.3350 | 5 | 1.3422 |
-| curent_update_baltic | 6973.5850 | 21 | 117.5172 | 4 | 0.7834 |
+| Baltic_NetSD | 14394.9020 | 23 | 183.0235 | 5 | 1.2202 |
+| curent_update_baltic | 7004.5610 | 21 | 119.2126 | 4 | 0.7948 |
 
 </details>
 
@@ -5877,8 +5889,8 @@ The cost scenario uses max(EUR 3, 0.25% of trade value) commission plus an assum
 
 | portfolio | positions | top5_share | top10_share | HHI | effective_positions |
 | --- | --- | --- | --- | --- | --- |
-| Baltic_NetSD | 21 | 0.4914 | 0.8240 | 0.0757 | 13.2030 |
-| curent_update_baltic | 23 | 0.5271 | 0.7492 | 0.0861 | 11.6142 |
+| Baltic_NetSD | 21 | 0.5062 | 0.8170 | 0.0765 | 13.0685 |
+| curent_update_baltic | 23 | 0.5168 | 0.7415 | 0.0779 | 12.8315 |
 
 </details>
 
@@ -5888,32 +5900,32 @@ The cost scenario uses max(EUR 3, 0.25% of trade value) commission plus an assum
 
 | dimension | category | capital_percent |
 | --- | --- | --- |
-| country_market | RIG | 2.45 |
-| country_market | TLN | 42.99 |
-| country_market | VLN | 54.55 |
-| segment | Baltic Main List | 93.68 |
-| segment | First North Baltic Share List | 6.32 |
-| Industry | Basic Materials | 5.96 |
-| Industry | Consumer Discretionary | 17.49 |
-| Industry | Consumer Staples | 24.65 |
-| Industry | Financials | 5.44 |
-| Industry | Health Care | 5.94 |
-| Industry | Industrials | 21.32 |
-| Industry | Telecommunications | 9.66 |
-| Industry | Utilities | 9.35 |
-| Industry | nan | 0.20 |
-| Supersector | Banks | 1.27 |
-| Supersector | Basic Resources | 5.96 |
-| Supersector | Construction and Materials | 10.51 |
-| Supersector | Financial Services | 4.16 |
-| Supersector | Food, Beverage and Tobacco | 24.65 |
-| Supersector | Health Care | 5.94 |
-| Supersector | Industrial Goods and Services | 10.81 |
-| Supersector | Retail | 11.01 |
-| Supersector | Telecommunications | 9.66 |
-| Supersector | Travel and Leisure | 6.48 |
-| Supersector | Utilities | 9.35 |
-| Supersector | nan | 0.20 |
+| country_market | RIG | 2.70 |
+| country_market | TLN | 41.47 |
+| country_market | VLN | 55.83 |
+| segment | Baltic Main List | 97.75 |
+| segment | First North Baltic Share List | 2.25 |
+| Industry | Basic Materials | 10.21 |
+| Industry | Consumer Discretionary | 19.67 |
+| Industry | Consumer Staples | 23.19 |
+| Industry | Financials | 12.32 |
+| Industry | Health Care | 1.09 |
+| Industry | Industrials | 25.13 |
+| Industry | Telecommunications | 2.15 |
+| Industry | Utilities | 5.83 |
+| Industry | nan | 0.41 |
+| Supersector | Banks | 1.58 |
+| Supersector | Basic Resources | 10.21 |
+| Supersector | Construction and Materials | 9.81 |
+| Supersector | Financial Services | 10.75 |
+| Supersector | Food, Beverage and Tobacco | 23.19 |
+| Supersector | Health Care | 1.09 |
+| Supersector | Industrial Goods and Services | 15.32 |
+| Supersector | Retail | 18.27 |
+| Supersector | Telecommunications | 2.15 |
+| Supersector | Travel and Leisure | 1.40 |
+| Supersector | Utilities | 5.83 |
+| Supersector | nan | 0.41 |
 
 </details>
 
@@ -5923,32 +5935,32 @@ The cost scenario uses max(EUR 3, 0.25% of trade value) commission plus an assum
 
 | dimension | category | capital_percent |
 | --- | --- | --- |
-| country_market | RIG | 13.20 |
-| country_market | TLN | 47.20 |
-| country_market | VLN | 39.60 |
-| segment | Baltic Main List | 95.54 |
-| segment | First North Baltic Share List | 4.46 |
-| Industry | Basic Materials | 4.88 |
-| Industry | Consumer Discretionary | 33.05 |
-| Industry | Consumer Staples | 16.55 |
-| Industry | Financials | 5.25 |
-| Industry | Health Care | 4.14 |
-| Industry | Industrials | 17.52 |
-| Industry | Telecommunications | 11.22 |
-| Industry | Utilities | 4.89 |
-| Industry | nan | 2.49 |
-| Supersector | Banks | 1.46 |
-| Supersector | Basic Resources | 4.88 |
-| Supersector | Construction and Materials | 5.98 |
-| Supersector | Financial Services | 3.79 |
-| Supersector | Food, Beverage and Tobacco | 16.55 |
-| Supersector | Health Care | 4.14 |
-| Supersector | Industrial Goods and Services | 11.54 |
-| Supersector | Retail | 29.25 |
-| Supersector | Telecommunications | 11.22 |
-| Supersector | Travel and Leisure | 3.80 |
-| Supersector | Utilities | 4.89 |
-| Supersector | nan | 2.49 |
+| country_market | RIG | 15.08 |
+| country_market | TLN | 48.21 |
+| country_market | VLN | 36.71 |
+| segment | Baltic Main List | 93.29 |
+| segment | First North Baltic Share List | 6.71 |
+| Industry | Basic Materials | 3.64 |
+| Industry | Consumer Discretionary | 33.73 |
+| Industry | Consumer Staples | 14.04 |
+| Industry | Financials | 3.28 |
+| Industry | Health Care | 3.01 |
+| Industry | Industrials | 19.88 |
+| Industry | Telecommunications | 12.16 |
+| Industry | Utilities | 7.06 |
+| Industry | nan | 3.19 |
+| Supersector | Banks | 2.47 |
+| Supersector | Basic Resources | 3.64 |
+| Supersector | Construction and Materials | 7.99 |
+| Supersector | Financial Services | 0.81 |
+| Supersector | Food, Beverage and Tobacco | 14.04 |
+| Supersector | Health Care | 3.01 |
+| Supersector | Industrial Goods and Services | 11.89 |
+| Supersector | Retail | 28.90 |
+| Supersector | Telecommunications | 12.16 |
+| Supersector | Travel and Leisure | 4.83 |
+| Supersector | Utilities | 7.06 |
+| Supersector | nan | 3.19 |
 
 </details>
 
@@ -6005,7 +6017,7 @@ Tables 13A and 13B use the same fixed 70/30 split. Portfolio weights are estimat
 </details>
 
 
-The final Baltic_NetSD weights were selected on the complete 2023–2026 sample. Their 14.36% annualised geometric return and 1.91 annualised Sharpe ratio are therefore in-sample descriptions, not forecasts. The earlier 70/30 experiment is the available independent check: weights were fixed from the first 70% and assessed on the last 30%. Its NetSD portfolio has a negative test-network netSD, which is direct evidence of model-selection instability. No trade should rely on the full-sample figures without a new walk-forward or future-paper-trading test.
+The final Baltic_NetSD weights were selected on the complete 2023–2026 sample. Their 12.74% annualised geometric return and 1.95 annualised Sharpe ratio are therefore in-sample descriptions, not forecasts. The earlier 70/30 experiment is the available independent check: weights were fixed from the first 70% and assessed on the last 30%. Its NetSD portfolio has a negative test-network netSD, which is direct evidence of model-selection instability. No trade should rely on the full-sample figures without a new walk-forward or future-paper-trading test.
 
 netSD counts outgoing minus incoming FSD, SSD and TSD relations relative to a fixed comparison network. It has no monetary unit and does not state expected profit, maximum loss or suitability for an investor. Use it as a distribution-ranking signal together with return, volatility, drawdown, VaR/ES, liquidity, concentration and cost results.
 
@@ -6035,7 +6047,7 @@ The objective is discrete and non-convex. ISRES evaluates candidate portfolios n
 
 The official Nasdaq Baltic list contained 67 shares. 55 shares had Yahoo closing-price history covering the complete study window and entered the common-date return matrix. Shares with incomplete or unavailable histories are excluded from both the optimisation and Table 2. No price interpolation or zero-return replacement was used.
 
-Sources: official Nasdaq Baltic share-list XLSX and dividend/event XLSX downloaded on 2026-10-13; Yahoo Finance unadjusted closing prices downloaded through quantmod; official Nasdaq Baltic corrections for MODE and MOLNR in 2025 and the complete VIRSI history (2023-01-01 to 2026-10-14).
+Sources: official Nasdaq Baltic share-list and dividend/event workbooks; Yahoo Finance unadjusted closing prices downloaded through quantmod; official Nasdaq Baltic corrections for MODE and MOLNR in 2025 and the complete VIRSI history. Return analysis ends 2026-10-16; latest valuation prices run through 2026-10-19.
 </main>
 <script>
 document.querySelectorAll('details.stock-profile').forEach(function(profile) {
