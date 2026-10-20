@@ -61,7 +61,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-20 13:23 (Europe/Vilnius); return analysis through 2026-10-16; valuation prices through 2026-10-19
+# Baltic investment plan - updated 2026-10-20 13:28 (Europe/Vilnius); return analysis through 2026-10-16; valuation prices through 2026-10-19
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -206,44 +206,6 @@ Return and technical analysis uses common observations through 2026-10-16; valua
 
 
 Phase 1 contains model sales, phase 2 model purchases and phase 3 unchanged positions. trade_EUR is the signed transaction amount: positive means cash required for a purchase and negative means sale proceeds before costs. invested_EUR is the complete final position value, not the purchase amount. Actual execution still depends on current quotes, liquidity and costs.
-
-## Earnings outcome and subsequent price changes
-
-Official announcement text allowed **213 of 340** earnings releases to be classified as higher profit, lower profit, explicitly in line/unchanged, or a realised loss. Unclassified releases are retained in the event calendar but excluded here.
-
-Higher/lower profit means relative to the earlier comparable period unless the issuer explicitly gives a plan or forecast comparison. This distinction avoids treating ordinary year-on-year growth as an analyst-expectation surprise.
-
-<details markdown="1">
-<summary><strong>Open pooled conditional statistics and statistical tests</strong></summary>
-
-| Profit outcome | Horizon | N | Conditional mean | Variance | Median | Positive share | Mean abnormal |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| Higher profit | 1d | 139 | 0.19% | 2.222 | 0.00% | 40% | 0.19% |
-| Higher profit | 5d | 139 | 0.02% | 7.485 | -0.21% | 42% | 0.04% |
-| Higher profit | 21d | 139 | -0.32% | 28.008 | -0.43% | 38% | 0.33% |
-| Lower profit | 1d | 39 | -0.45% | 2.733 | 0.00% | 36% | -0.55% |
-| Lower profit | 5d | 39 | -0.64% | 8.844 | -0.35% | 36% | -0.67% |
-| Lower profit | 21d | 39 | -0.93% | 14.448 | -0.65% | 36% | -0.48% |
-| In line / unchanged | 1d | 16 | 3.05% | 36.318 | 0.44% | 56% | 3.18% |
-| In line / unchanged | 5d | 16 | 2.36% | 35.282 | -0.37% | 44% | 2.77% |
-| In line / unchanged | 21d | 16 | 3.99% | 93.203 | 1.20% | 62% | 4.39% |
-| Loss | 1d | 19 | -0.48% | 0.674 | -0.34% | 11% | -0.54% |
-| Loss | 5d | 19 | -0.64% | 3.151 | -0.16% | 26% | -0.62% |
-| Loss | 21d | 19 | -1.10% | 17.950 | -1.08% | 37% | -0.13% |
-
-Variance is in squared percentage points. Abnormal return subtracts the equal-weight Baltic-market return.
-
-| Horizon | Groups | N | Kruskal H | Raw p | BH-adjusted p | Conclusion |
-| --- | --- | --- | --- | --- | --- | --- |
-| 1d | 4 | 213 | 12.588 | 0.0056 | 0.1854 | No adjusted evidence |
-| 5d | 4 | 213 | 6.055 | 0.1090 | 0.4170 | No adjusted evidence |
-| 21d | 4 | 213 | 3.117 | 0.3739 | 0.6888 | No adjusted evidence |
-
-**Pairwise result:** No pooled pairwise comparison survives BH adjustment.
-
-The BH adjustment covers the full family of share-level, pooled and pairwise tests. These estimates show historical association and do not establish that the announcement caused the subsequent return.
-
-</details>
 
 <details markdown="1" class="profiles-section">
 <summary><strong>Table 3A. Interactive share profiles</strong></summary>
