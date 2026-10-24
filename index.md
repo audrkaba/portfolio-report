@@ -68,7 +68,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-24 15:31 (Europe/Vilnius); return analysis through 2026-10-21; valuation prices through 2026-10-22
+# Baltic investment plan - updated 2026-10-24 15:36 (Europe/Vilnius); return analysis through 2026-10-21; valuation prices through 2026-10-22
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -119,7 +119,7 @@ Return and technical analysis uses common observations through 2026-10-21; valua
 <details markdown="1">
 <summary><strong>Table 2. Eligible Nasdaq Baltic shares and the optimised allocation</strong></summary>
 
-| asset | name | market | last_price | optimal_weight_percent | current_shares | target_shares | trade_shares | action | invested_EUR | historical_dividend_cash |
+| asset | name | market | last_price | optimal_weight_percent | current_shares | target_shares | trade_shares | allocation_change_direction | invested_EUR | historical_dividend_cash |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | AIR | Airobot Technologies | TLN | 1.7900 | 0.0000 | 0 | 0 | 0 | HOLD | 0.0000 | 0.0000 |
 | AKO1L | Akola Group | VLN | 1.8500 | 9.5362 | 0 | 773 | 773 | BUY | 1430.0500 | 0.0000 |
@@ -180,271 +180,31 @@ Return and technical analysis uses common observations through 2026-10-21; valua
 </details>
 
 
+allocation_change_direction describes the optimiser's target relative to current holdings. It is not the current execution recommendation; use current_execution_decision in Tables 3 and 3A for that purpose.
+
 <details markdown="1" class="trade-decision-section">
-<summary><strong>Table 3. Canonical Baltic_NetSD model trades: selling permitted</strong></summary>
+<summary><strong>Table 3. Baltic_NetSD target allocation and current execution decisions</strong></summary>
 
-<table class="trade-decision-table"><thead><tr><th><span>Phase</span></th><th><span>Share</span></th><th><span>Company</span></th><th><span>Last price</span></th><th><span>Indicative buy ≤</span></th><th><span>Indicative sell ≥</span></th><th><span>Price zone</span></th><th><span>Target weight</span></th><th><span>Current shares</span></th><th><span>Trade shares</span></th><th><span>Trade EUR</span></th><th><span>Target shares</span></th><th><span>Final value EUR</span></th><th><span>Model action</span></th><th><span>Historical dividends EUR</span></th></tr></thead><tbody><tr><td>1</td><td>TAL1T</td><td>Tallink Grupp</td><td>0.6470</td><td>0.6397 (-1.14%)</td><td>0.6501 (+0.49%)</td><td>HOLD</td><td>2.42%</td><td>700</td><td>-140</td><td>-90.58</td><td>560</td><td>362.32</td><td>SELL</td><td>84.00</td></tr><tr><td>1</td><td>ROE1L</td><td>Artea Bankas</td><td>0.8830</td><td>0.8691 (-1.57%)</td><td>0.9122 (+3.31%)</td><td>HOLD</td><td>1.08%</td><td>416</td><td>-234</td><td>-206.62</td><td>182</td><td>160.71</td><td>SELL</td><td>24.75</td></tr><tr><td>1</td><td>TSM1T</td><td>Tallinna Sadam</td><td>1.2040</td><td>1.2009 (-0.25%)</td><td>1.2181 (+1.17%)</td><td>HOLD</td><td>0.00%</td><td>330</td><td>-330</td><td>-397.32</td><td>0</td><td>0.00</td><td>SELL</td><td>0.00</td></tr><tr><td>1</td><td>GRG1L</td><td>Grigeo Group</td><td>1.0100</td><td>0.9960 (-1.39%)</td><td>1.0224 (+1.23%)</td><td>HOLD</td><td>1.00%</td><td>543</td><td>-394</td><td>-397.94</td><td>149</td><td>150.49</td><td>SELL</td><td>25.33</td></tr><tr><td>1</td><td>SAF1R</td><td>SAF Tehnika</td><td>16.3500</td><td>16.0314 (-1.95%)</td><td>17.1186 (+4.70%)</td><td>HOLD</td><td>0.00%</td><td>100</td><td>-100</td><td>-1635.00</td><td>0</td><td>0.00</td><td>SELL</td><td>0.00</td></tr><tr><td>1</td><td>TKM1T</td><td>TKM Grupp</td><td>8.9000</td><td>8.8777 (-0.25%)</td><td>9.1003 (+2.25%)</td><td>HOLD</td><td>0.14%</td><td>288</td><td>-286</td><td>-2545.40</td><td>2</td><td>17.80</td><td>SELL</td><td>5.30</td></tr><tr><td>2</td><td>VLP1L</td><td>Vilkyškių pieninė</td><td>15.8000</td><td>15.1135 (-4.35%)</td><td>15.7765 (-0.15%)</td><td>SELL</td><td>17.37%</td><td>42</td><td>+122</td><td>1927.60</td><td>164</td><td>2591.20</td><td>BUY</td><td>0.00</td></tr><tr><td>2</td><td>KNE1L</td><td>KN Energies</td><td>0.4770</td><td>0.4772 (+0.05%)</td><td>0.4932 (+3.39%)</td><td>BUY</td><td>9.87%</td><td>0</td><td>+3103</td><td>1480.13</td><td>3103</td><td>1480.13</td><td>BUY</td><td>199.83</td></tr><tr><td>2</td><td>AKO1L</td><td>Akola Group</td><td>1.8500</td><td>1.7422 (-5.83%)</td><td>1.8628 (+0.69%)</td><td>HOLD</td><td>9.54%</td><td>0</td><td>+773</td><td>1430.05</td><td>773</td><td>1430.05</td><td>BUY</td><td>0.00</td></tr><tr><td>2</td><td>MRK1T</td><td>Merko Ehitus</td><td>27.0000</td><td>26.9828 (-0.06%)</td><td>27.1672 (+0.62%)</td><td>HOLD</td><td>10.64%</td><td>20</td><td>+39</td><td>1053.00</td><td>59</td><td>1593.00</td><td>BUY</td><td>321.55</td></tr><tr><td>2</td><td>TEL1L</td><td>Telia Lietuva</td><td>2.2500</td><td>2.1943 (-2.48%)</td><td>2.3037 (+2.39%)</td><td>HOLD</td><td>7.03%</td><td>0</td><td>+468</td><td>1053.00</td><td>468</td><td>1053.00</td><td>BUY</td><td>145.08</td></tr><tr><td>2</td><td>EFT1T</td><td>EfTEN Real Estate Fund</td><td>19.5000</td><td>19.3732 (-0.65%)</td><td>19.6568 (+0.80%)</td><td>HOLD</td><td>6.55%</td><td>0</td><td>+50</td><td>975.00</td><td>50</td><td>975.00</td><td>BUY</td><td>223.13</td></tr><tr><td>2</td><td>DGR1R</td><td>DelfinGroup</td><td>1.7050</td><td>1.5556 (-8.77%)</td><td>1.7804 (+4.42%)</td><td>HOLD</td><td>6.25%</td><td>0</td><td>+550</td><td>937.75</td><td>550</td><td>937.75</td><td>BUY</td><td>179.96</td></tr><tr><td>2</td><td>VIRSI</td><td>VIRŠI-A</td><td>4.4100</td><td>4.4040 (-0.14%)</td><td>4.4450 (+0.79%)</td><td>HOLD</td><td>4.48%</td><td>0</td><td>+152</td><td>670.32</td><td>152</td><td>670.32</td><td>BUY</td><td>41.39</td></tr><tr><td>2</td><td>RSU1L</td><td>Rokiškio sūris</td><td>4.4400</td><td>4.4275 (-0.28%)</td><td>4.5385 (+2.22%)</td><td>HOLD</td><td>3.77%</td><td>0</td><td>+127</td><td>563.88</td><td>127</td><td>563.88</td><td>BUY</td><td>88.90</td></tr><tr><td>2</td><td>HAE1T</td><td>Harju Elekter Group</td><td>5.2600</td><td>5.0487 (-4.02%)</td><td>5.4613 (+3.83%)</td><td>HOLD</td><td>7.18%</td><td>100</td><td>+104</td><td>547.04</td><td>204</td><td>1073.04</td><td>BUY</td><td>118.32</td></tr><tr><td>2</td><td>TVE1T</td><td>Tallinna Vesi</td><td>10.8500</td><td>10.8010 (-0.45%)</td><td>10.9290 (+0.73%)</td><td>HOLD</td><td>2.66%</td><td>0</td><td>+36</td><td>390.60</td><td>36</td><td>390.60</td><td>BUY</td><td>69.84</td></tr><tr><td>2</td><td>APG1L</td><td>Apranga</td><td>3.8100</td><td>3.7812 (-0.76%)</td><td>3.8848 (+1.96%)</td><td>HOLD</td><td>7.33%</td><td>200</td><td>+88</td><td>335.28</td><td>288</td><td>1097.28</td><td>BUY</td><td>296.64</td></tr><tr><td>2</td><td>MOLNR</td><td>J. Molner</td><td>21.2000</td><td>16.8116 (-20.70%)</td><td>24.0684 (+13.53%)</td><td>HOLD</td><td>1.20%</td><td>0</td><td>+8</td><td>169.60</td><td>8</td><td>169.60</td><td>BUY</td><td>0.00</td></tr><tr><td>2</td><td>IGN1L</td><td>Ignitis grupė</td><td>21.7500</td><td>21.6155 (-0.62%)</td><td>21.8595 (+0.50%)</td><td>HOLD</td><td>0.55%</td><td>0</td><td>+3</td><td>65.25</td><td>3</td><td>65.25</td><td>BUY</td><td>11.76</td></tr><tr><td>2</td><td>CPA1T</td><td>Coop Pank</td><td>2.3750</td><td>2.2880 (-3.66%)</td><td>2.3855 (+0.44%)</td><td>HOLD</td><td>0.37%</td><td>0</td><td>+23</td><td>54.62</td><td>23</td><td>54.62</td><td>BUY</td><td>6.14</td></tr><tr><td>2</td><td>PZV1L</td><td>Pieno žvaigždės</td><td>1.7700</td><td>1.7376 (-1.83%)</td><td>1.8279 (+3.27%)</td><td>HOLD</td><td>0.33%</td><td>0</td><td>+27</td><td>47.79</td><td>27</td><td>47.79</td><td>BUY</td><td>11.34</td></tr><tr><td>2</td><td>LHV1T</td><td>LHV Group</td><td>3.2750</td><td>3.2464 (-0.87%)</td><td>3.3031 (+0.86%)</td><td>HOLD</td><td>0.25%</td><td>0</td><td>+11</td><td>36.03</td><td>11</td><td>36.03</td><td>BUY</td><td>4.73</td></tr></tbody></table>
+<table class="trade-decision-table"><thead><tr><th><span>Phase</span></th><th><span>Share</span></th><th><span>Company</span></th><th><span>Last price</span></th><th><span>Indicative buy ≤</span></th><th><span>Indicative sell ≥</span></th><th><span>Bollinger zone</span></th><th><span>Technical timing</span></th><th><span>Target weight</span></th><th><span>Current shares</span></th><th><span>Allocation change</span></th><th><span>Trade EUR</span></th><th><span>Target shares</span></th><th><span>Final value EUR</span></th><th><span>Current execution decision</span></th><th><span>Historical dividends EUR</span></th></tr></thead><tbody><tr><td>1</td><td>TAL1T</td><td>Tallink Grupp</td><td>0.6470</td><td>0.6397 (-1.14%)</td><td>0.6501 (+0.49%)</td><td>HOLD</td><td>HOLD</td><td>2.42%</td><td>700</td><td>-140</td><td>-90.58</td><td>560</td><td>362.32</td><td>SELL</td><td>84.00</td></tr><tr><td>1</td><td>ROE1L</td><td>Artea Bankas</td><td>0.8830</td><td>0.8691 (-1.57%)</td><td>0.9122 (+3.31%)</td><td>HOLD</td><td>HOLD</td><td>1.08%</td><td>416</td><td>-234</td><td>-206.62</td><td>182</td><td>160.71</td><td>SELL</td><td>24.75</td></tr><tr><td>1</td><td>TSM1T</td><td>Tallinna Sadam</td><td>1.2040</td><td>1.2009 (-0.25%)</td><td>1.2181 (+1.17%)</td><td>HOLD</td><td>HOLD</td><td>0.00%</td><td>330</td><td>-330</td><td>-397.32</td><td>0</td><td>0.00</td><td>SELL</td><td>0.00</td></tr><tr><td>1</td><td>GRG1L</td><td>Grigeo Group</td><td>1.0100</td><td>0.9960 (-1.39%)</td><td>1.0224 (+1.23%)</td><td>HOLD</td><td>HOLD</td><td>1.00%</td><td>543</td><td>-394</td><td>-397.94</td><td>149</td><td>150.49</td><td>SELL</td><td>25.33</td></tr><tr><td>1</td><td>SAF1R</td><td>SAF Tehnika</td><td>16.3500</td><td>16.0314 (-1.95%)</td><td>17.1186 (+4.70%)</td><td>HOLD</td><td>HOLD</td><td>0.00%</td><td>100</td><td>-100</td><td>-1635.00</td><td>0</td><td>0.00</td><td>SELL</td><td>0.00</td></tr><tr><td>1</td><td>TKM1T</td><td>TKM Grupp</td><td>8.9000</td><td>8.8777 (-0.25%)</td><td>9.1003 (+2.25%)</td><td>HOLD</td><td>HOLD</td><td>0.14%</td><td>288</td><td>-286</td><td>-2545.40</td><td>2</td><td>17.80</td><td>SELL</td><td>5.30</td></tr><tr><td>2</td><td>VLP1L</td><td>Vilkyškių pieninė</td><td>15.8000</td><td>15.1135 (-4.35%)</td><td>15.7765 (-0.15%)</td><td>SELL</td><td>SELL</td><td>17.37%</td><td>42</td><td>+122</td><td>1927.60</td><td>164</td><td>2591.20</td><td>WAIT</td><td>0.00</td></tr><tr><td>2</td><td>KNE1L</td><td>KN Energies</td><td>0.4770</td><td>0.4772 (+0.05%)</td><td>0.4932 (+3.39%)</td><td>BUY</td><td>HOLD</td><td>9.87%</td><td>0</td><td>+3103</td><td>1480.13</td><td>3103</td><td>1480.13</td><td>WAIT</td><td>199.83</td></tr><tr><td>2</td><td>AKO1L</td><td>Akola Group</td><td>1.8500</td><td>1.7422 (-5.83%)</td><td>1.8628 (+0.69%)</td><td>HOLD</td><td>HOLD</td><td>9.54%</td><td>0</td><td>+773</td><td>1430.05</td><td>773</td><td>1430.05</td><td>WAIT</td><td>0.00</td></tr><tr><td>2</td><td>MRK1T</td><td>Merko Ehitus</td><td>27.0000</td><td>26.9828 (-0.06%)</td><td>27.1672 (+0.62%)</td><td>HOLD</td><td>HOLD</td><td>10.64%</td><td>20</td><td>+39</td><td>1053.00</td><td>59</td><td>1593.00</td><td>WAIT</td><td>321.55</td></tr><tr><td>2</td><td>TEL1L</td><td>Telia Lietuva</td><td>2.2500</td><td>2.1943 (-2.48%)</td><td>2.3037 (+2.39%)</td><td>HOLD</td><td>HOLD</td><td>7.03%</td><td>0</td><td>+468</td><td>1053.00</td><td>468</td><td>1053.00</td><td>WAIT</td><td>145.08</td></tr><tr><td>2</td><td>EFT1T</td><td>EfTEN Real Estate Fund</td><td>19.5000</td><td>19.3732 (-0.65%)</td><td>19.6568 (+0.80%)</td><td>HOLD</td><td>HOLD</td><td>6.55%</td><td>0</td><td>+50</td><td>975.00</td><td>50</td><td>975.00</td><td>WAIT</td><td>223.13</td></tr><tr><td>2</td><td>DGR1R</td><td>DelfinGroup</td><td>1.7050</td><td>1.5556 (-8.77%)</td><td>1.7804 (+4.42%)</td><td>HOLD</td><td>HOLD</td><td>6.25%</td><td>0</td><td>+550</td><td>937.75</td><td>550</td><td>937.75</td><td>WAIT</td><td>179.96</td></tr><tr><td>2</td><td>VIRSI</td><td>VIRŠI-A</td><td>4.4100</td><td>4.4040 (-0.14%)</td><td>4.4450 (+0.79%)</td><td>HOLD</td><td>HOLD</td><td>4.48%</td><td>0</td><td>+152</td><td>670.32</td><td>152</td><td>670.32</td><td>WAIT</td><td>41.39</td></tr><tr><td>2</td><td>RSU1L</td><td>Rokiškio sūris</td><td>4.4400</td><td>4.4275 (-0.28%)</td><td>4.5385 (+2.22%)</td><td>HOLD</td><td>HOLD</td><td>3.77%</td><td>0</td><td>+127</td><td>563.88</td><td>127</td><td>563.88</td><td>WAIT</td><td>88.90</td></tr><tr><td>2</td><td>HAE1T</td><td>Harju Elekter Group</td><td>5.2600</td><td>5.0487 (-4.02%)</td><td>5.4613 (+3.83%)</td><td>HOLD</td><td>HOLD</td><td>7.18%</td><td>100</td><td>+104</td><td>547.04</td><td>204</td><td>1073.04</td><td>WAIT</td><td>118.32</td></tr><tr><td>2</td><td>TVE1T</td><td>Tallinna Vesi</td><td>10.8500</td><td>10.8010 (-0.45%)</td><td>10.9290 (+0.73%)</td><td>HOLD</td><td>HOLD</td><td>2.66%</td><td>0</td><td>+36</td><td>390.60</td><td>36</td><td>390.60</td><td>WAIT</td><td>69.84</td></tr><tr><td>2</td><td>APG1L</td><td>Apranga</td><td>3.8100</td><td>3.7812 (-0.76%)</td><td>3.8848 (+1.96%)</td><td>HOLD</td><td>HOLD</td><td>7.33%</td><td>200</td><td>+88</td><td>335.28</td><td>288</td><td>1097.28</td><td>WAIT</td><td>296.64</td></tr><tr><td>2</td><td>MOLNR</td><td>J. Molner</td><td>21.2000</td><td>16.8116 (-20.70%)</td><td>24.0684 (+13.53%)</td><td>HOLD</td><td>HOLD</td><td>1.20%</td><td>0</td><td>+8</td><td>169.60</td><td>8</td><td>169.60</td><td>WAIT</td><td>0.00</td></tr><tr><td>2</td><td>IGN1L</td><td>Ignitis grupė</td><td>21.7500</td><td>21.6155 (-0.62%)</td><td>21.8595 (+0.50%)</td><td>HOLD</td><td>HOLD</td><td>0.55%</td><td>0</td><td>+3</td><td>65.25</td><td>3</td><td>65.25</td><td>WAIT</td><td>11.76</td></tr><tr><td>2</td><td>CPA1T</td><td>Coop Pank</td><td>2.3750</td><td>2.2880 (-3.66%)</td><td>2.3855 (+0.44%)</td><td>HOLD</td><td>HOLD</td><td>0.37%</td><td>0</td><td>+23</td><td>54.62</td><td>23</td><td>54.62</td><td>WAIT</td><td>6.14</td></tr><tr><td>2</td><td>PZV1L</td><td>Pieno žvaigždės</td><td>1.7700</td><td>1.7376 (-1.83%)</td><td>1.8279 (+3.27%)</td><td>HOLD</td><td>HOLD</td><td>0.33%</td><td>0</td><td>+27</td><td>47.79</td><td>27</td><td>47.79</td><td>WAIT</td><td>11.34</td></tr><tr><td>2</td><td>LHV1T</td><td>LHV Group</td><td>3.2750</td><td>3.2464 (-0.87%)</td><td>3.3031 (+0.86%)</td><td>HOLD</td><td>HOLD</td><td>0.25%</td><td>0</td><td>+11</td><td>36.03</td><td>11</td><td>36.03</td><td>WAIT</td><td>4.73</td></tr></tbody></table>
 
-Indicative buy and sell prices are the current 20-observation Bollinger lower and upper bands. Price zone applies only these limits; Model action remains the Baltic_NetSD allocation decision. These technical limits are descriptive and will be replaced when the walk-forward acceptable-price model is validated.
+Allocation change is the optimiser's target quantity, not an instruction to trade immediately. Current execution decision is the only action recommendation: BUY requires a positive allocation change and BUY technical timing; WAIT means the optimiser wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD. The Bollinger zone is diagnostic only.
 
 </details>
 
 
-Phase 1 contains model sales, phase 2 model purchases and phase 3 unchanged positions. trade_EUR is the signed transaction amount: positive means cash required for a purchase and negative means sale proceeds before costs. invested_EUR is the complete final position value, not the purchase amount. Actual execution still depends on current quotes, liquidity and costs.
+trade_shares is the optimiser's allocation change, not an instruction to trade immediately. current_execution_decision is the only action recommendation: BUY requires a positive allocation change and BUY technical timing; WAIT means the optimiser wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD. trade_EUR is the signed transaction amount before costs.
 
 <details markdown="1" class="profiles-section">
 <summary><strong>Table 3A. Interactive share profiles</strong></summary>
 
 Select a share to display its allocation, technical indicators, all PerformanceAnalytics measures and portfolio sensitivity.
 
-<div class="profile-filters"><fieldset class="signal-filters"><legend>Technical decision</legend><label><input type="checkbox" value="BUY" checked> BUY</label><label><input type="checkbox" value="SELL" checked> SELL</label><label><input type="checkbox" value="HOLD" checked> HOLD</label></fieldset><fieldset class="netsd-filters"><legend>netSD after adding this share</legend><label><input type="checkbox" value="INCREASE" checked> Increases</label><label><input type="checkbox" value="DECREASE" checked> Decreases</label><label><input type="checkbox" value="UNCHANGED" checked> Unchanged</label></fieldset><span class="profile-filter-count" aria-live="polite"></span></div>
+<div class="profile-filters"><fieldset class="signal-filters"><legend>Current execution decision</legend><label><input type="checkbox" value="BUY" checked> BUY</label><label><input type="checkbox" value="WAIT" checked> WAIT</label><label><input type="checkbox" value="SELL" checked> SELL</label><label><input type="checkbox" value="HOLD" checked> HOLD</label></fieldset><fieldset class="netsd-filters"><legend>netSD after adding this share</legend><label><input type="checkbox" value="INCREASE" checked> Increases</label><label><input type="checkbox" value="DECREASE" checked> Decreases</label><label><input type="checkbox" value="UNCHANGED" checked> Unchanged</label></fieldset><span class="profile-filter-count" aria-live="polite"></span></div>
 
-<details markdown="1" class="stock-profile" id="share-vlp1l" data-signal="SELL" data-netsd-effect="INCREASE">
-<summary><strong>VLP1L — Vilkyškių pieninė</strong> | SELL | target 77 shares | priority 1</summary>
+<details markdown="1" class="stock-profile" id="share-kne1l" data-signal="WAIT" data-netsd-effect="INCREASE">
+<summary><strong>KNE1L — KN Energies</strong> | current action: WAIT | allocation target 1295 shares | priority 1</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>42</td><td>77</td><td>+35</td><td>8.19%</td><td>EUR 15.8000</td><td>0.3644</td><td>43 / 0</td><td>77.09</td><td>Bullish</td><td>Above upper band</td><td>1.000 (Overbought)</td><td>SELL</td><td>0.006713 (8.121% of portfolio HHI)</td><td>EUR 21,695</td><td>2.5%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
-
-![VLP1L Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/VLP1L_technicals_6m.png)
-
-Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
-
-**Current indicative buy and sell prices**
-
-| Current price | Buy below | Sell above | Price signal |
-| --- | --- | --- | --- |
-| EUR 15.8000 | EUR 15.1135 (-4.35%) | EUR 15.7765 (-0.15%) | SELL |
-
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
-
-<details markdown="1">
-<summary>Complete technical history</summary>
-
-![VLP1L complete technical history](figures/technical_analysis/VLP1L_technical.png)
-
-</details>
-
-<details markdown="1">
-<summary>Return histogram</summary>
-
-![VLP1L return histogram](figures/stock_profiles/VLP1L_histogram.png?v=1792844208)
-
-</details>
-
-<details markdown="1" class="seasonality-section">
-<summary>Seasonality, drawdowns and upside periods</summary>
-
-The analysis covers 922 daily returns from 2023-01-02 to 2026-10-21. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
-
-| Measure | Value | Measure | Value | Measure | Value |
-| --- | --- | --- | --- | --- | --- |
-| Maximum drawdown | -21.29% (2025-09-05) | Average gain / average loss | 1.220 | Best 21-day period | 35.81% (ending 2025-05-13) |
-| Average underwater drawdown | 7.06% | Upside potential ratio | 1.429 | Worst 21-day period | -10.89% (ending 2023-06-05) |
-| Conditional drawdown 95% | 18.03% | Upside capture vs Baltic EW | 134.7% | Best 5-day period | 17.77% (ending 2025-04-28) |
-| Ulcer index | 8.34 | Downside capture vs Baltic EW | 33.7% | Best 63-day period | 44.34% (ending 2026-07-02) |
-| Longest underwater period | 326 calendar days | Positive trading days | 42.5% | Repeated calendar pattern | Dec: 100% positive across 3 years |
-| Daily downside deviation | 0.769% | Best day | 13.80% (2025-01-23) |  |  |
-| Daily upside deviation | 1.088% | Worst day | -8.13% (2026-03-02) |  |  |
-
-**Calendar-effect tests and observed averages**
-
-| Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
-| --- | --- | --- | --- | --- |
-| Weekday | Best: Thursday (0.189%); worst: Wednesday (0.086%) | 0.9650 | 0.9650 | Not detected |
-| Calendar month | Best: Dec (0.466% daily); worst: Mar (-0.170% daily) | 0.2801 | 0.4800 | Not detected |
-| Turn of month | First/last three days: 0.133%; other days: 0.142% | 0.9144 | 0.9432 | Not detected |
-
-![VLP1L seasonality, drawdowns and upside periods](figures/stock_profiles/VLP1L_seasonality.png?v=1792844744)
-
-**Five deepest drawdown episodes**
-
-| Rank | Peak | Trough | Recovery | Loss | Underwater days |
-| --- | --- | --- | --- | --- | --- |
-| 1 | 2025-05-12 | 2025-09-05 | 2026-02-19 | -21.29% | 283 |
-| 2 | 2023-01-23 | 2023-08-31 | 2023-12-15 | -16.67% | 326 |
-| 3 | 2026-02-19 | 2026-03-25 | 2026-06-05 | -11.24% | 106 |
-| 4 | 2024-02-29 | 2024-05-21 | 2024-06-05 | -9.64% | 97 |
-| 5 | 2026-07-02 | 2026-07-30 | 2026-10-21 | -7.52% | 111 |
-
-**Five strongest non-overlapping 21-trading-day rises**
-
-| Rank | Start | End | 21-day return |
-| --- | --- | --- | --- |
-| 1 | 2025-04-07 | 2025-05-13 | 35.81% |
-| 2 | 2026-05-29 | 2026-07-02 | 35.74% |
-| 3 | 2024-05-10 | 2024-06-10 | 18.68% |
-| 4 | 2024-08-05 | 2024-09-05 | 18.21% |
-| 5 | 2024-12-16 | 2025-01-23 | 16.05% |
-
-The dated extremes identify where company announcements, dividends, corporate actions or data anomalies should be checked. A repeated calendar average is descriptive until it survives the adjusted test and a later out-of-sample period; it is not by itself a buy or sell signal.
-
-<details markdown="1" class="company-events">
-<summary>Official company-news calendar and price-direction analysis (21 events)</summary>
-
-Announcement times and links come from the official Nasdaq news service. The effective date is the first trading close strictly after publication. Abnormal return means the share return minus the equal-weight Baltic-market return over the same window.
-
-| Event type | N | Abnormal 1d | Abnormal 5d | Abnormal 21d | Positive 5d | Direction reversal | BH p(5d) | BH p(21d) | Interpretation |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Earnings | 16 | -0.46% | 0.55% | 3.53% | 38% | 44% | 0.7790 | 1.0000 | No adjusted statistical evidence |
-| Ex-dividend | 4 | -2.25% | -2.18% | 2.49% | 25% | 50% | 0.2521 | 1.0000 | No adjusted statistical evidence; price drop may be mechanical |
-| Revenue | 1 | -0.95% | 3.80% | 13.41% | 100% | 0% | 1.0000 | 1.0000 | No adjusted statistical evidence |
-
-![VLP1L official announcements and abnormal returns](figures/stock_profiles/VLP1L_company_events.png?v=1792844768)
-
-A direction reversal requires opposite fitted price slopes during the ten trading days before and after the event and at least a 1% five-day move. This identifies temporal association, not proof that the announcement caused the change.
-
-<details markdown="1">
-<summary>Complete official event calendar (21 announcements)</summary>
-
-| Published | Type | Profit outcome | Official announcement | Headline fundamental cue | Pre 5d | Post 1d | Post 5d | Post 21d | Abnormal 5d | Reversal |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2026-08-31 18:45 | Earnings | Higher profit | [VILVI Group unaudited consolidated financial results for the six months of 2026](https://view.news.eu.nasdaq.com/view?id=b3af999bf1bb819fe7a925bdaf9adfacc&lang=en&src=listed) | Open official announcement | 0.32% | -2.25% | -1.29% | -0.96% | -0.66% | Yes |
-| 2026-06-05 09:51 | Revenue | — | [VILVI Group Expects Revenue Growth of Approximately 50% to EUR 430 Million in 2026](https://view.news.eu.nasdaq.com/view?id=b58538e57a5a9de23352ab2c6ae7b2ada&lang=en&src=listed) | REVENUE; 50%; EUR 430 Million | 11.49% | -1.15% | 3.44% | 13.36% | 3.80% | No |
-| 2026-05-29 16:04 | Earnings | Higher profit | [VILVI Group unaudited consolidated financial results for the first three months of 2026 ](https://view.news.eu.nasdaq.com/view?id=b73e15abb9a115ef79400c112c0e2abfc&lang=en&src=listed) | Open official announcement | -0.42% | -2.13% | 11.49% | 35.74% | 11.00% | No |
-| 2026-05-11 08:00 | Ex-dividend | — | [Official dividend calendar: Dividend ex-date, EUR 0.23 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.23  | 0.00% | 0.00% | 1.29% | 13.36% | 1.84% | No |
-| 2026-02-27 16:05 | Earnings | Unclassified earnings release | [Unaudited financial results of VILVI Group for the 12 months of 2025](https://view.news.eu.nasdaq.com/view?id=b89d35c9363227f9267573d12c35b6d63&lang=en&src=listed) | Open official announcement | -1.20% | -8.13% | -5.69% | -8.13% | -4.81% | No |
-| 2025-11-28 09:39 | Earnings | Unclassified earnings release | [Unaudited consolidated financial results of VILVI Group for 9 months of 2025](https://view.news.eu.nasdaq.com/view?id=bd30dd181058527539fdc4e68606f60b2&lang=en&src=listed) | Open official announcement | -2.30% | 3.30% | 4.72% | 8.49% | 4.26% | Yes |
-| 2025-08-29 09:44 | Earnings | Unclassified earnings release | [VILVI Group unaudited consolidated financial results for the six months of 2025](https://view.news.eu.nasdaq.com/view?id=b173e4dfa80bfab952b1139285ae4239d&lang=en&src=listed) | Open official announcement | -1.96% | -0.20% | -2.00% | 10.50% | -2.44% | Yes |
-| 2025-05-30 09:03 | Earnings | Unclassified earnings release | [Unaudited consolidated financial results of VILVI Group for 3 months of 2025](https://view.news.eu.nasdaq.com/view?id=b5987d77bf7d423cfa8d1cf0dbf060cae&lang=en&src=listed) | Open official announcement | -3.35% | 0.87% | -0.43% | -3.03% | -0.15% | No |
-| 2025-05-13 08:00 | Ex-dividend | — | [Official dividend calendar: Dividend ex-date, EUR 0.54 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.54  | 13.70% | -1.61% | -3.61% | -8.84% | -4.03% | Yes |
-| 2025-02-28 09:18 | Earnings | Higher profit | [Unaudited financial results of VILVI Group for the 12 months of 2024](https://view.news.eu.nasdaq.com/view?id=b80043a95d6bfbaf23c3b35d2c54d0628&lang=en&src=listed) | Open official announcement | 1.31% | -1.08% | -2.58% | -0.43% | -2.58% | No |
-| 2024-11-29 09:47 | Earnings | Higher profit | [Unaudited financial results of VILVI GROUP for the nine months of 2024](https://view.news.eu.nasdaq.com/view?id=b117a583cc9fb584f6332942b5f650d6e&lang=en&src=listed) | Open official announcement | 4.28% | 3.08% | 3.85% | 4.87% | 1.96% | No |
-| 2024-08-30 09:52 | Earnings | Unclassified earnings release | [Unaudited financial results of VILVI GROUP for the first six months of 2024](https://view.news.eu.nasdaq.com/view?id=b28c7660c9a343961920f78323a76e842&lang=en&src=listed) | Open official announcement | 7.83% | 1.96% | -0.56% | -1.68% | -0.60% | No |
-| 2024-05-31 09:15 | Earnings | Higher profit | [Unaudited financial results of VILVI GROUP for the first three months of 2024](https://view.news.eu.nasdaq.com/view?id=bdc9fad615b1b400b2d71d0fb24eea209&lang=en&src=listed) | Open official announcement | 7.00% | -0.36% | 8.73% | 9.45% | 8.75% | No |
-| 2024-05-10 08:00 | Ex-dividend | — | [Official dividend calendar: Dividend ex-date, EUR 0.31 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.31  | -1.11% | -4.10% | -4.85% | 11.57% | -3.21% | No |
-| 2024-02-29 09:55 | Earnings | Lower profit | [Unaudited financial results of VILVI GROUP for the 12 months of 2023](https://view.news.eu.nasdaq.com/view?id=b470f79fae07f4b1d6e98116365578bcc&lang=en&src=listed) | Open official announcement | 3.32% | -1.43% | -6.43% | -8.21% | -5.91% | Yes |
-| 2023-11-30 16:23 | Earnings | Unclassified earnings release | [Unaudited financial results of “Vilvi Group“ for the first nine months of 2023](https://view.news.eu.nasdaq.com/view?id=be1812e8d1b4bb947b47179a1eb511875&lang=en&src=listed) | Open official announcement | -0.42% | 0.00% | 1.69% | 11.02% | 2.78% | Yes |
-| 2023-08-31 09:57 | Earnings | Unclassified earnings release | [Unaudited financial results of “Vilvi Group“ for the first six months of 2023](https://view.news.eu.nasdaq.com/view?id=b5fdaf6ff1bb94e6db906304d6b212e7d&lang=en&src=listed) | Open official announcement | -2.47% | 1.61% | 3.22% | 6.67% | 3.20% | Yes |
-| 2023-06-01 08:45 | Earnings | Unclassified earnings release | [Correction: Unaudited financial results of “Vilvi Group“ for the first three months of 2023](https://view.news.eu.nasdaq.com/view?id=b9351d6bc063f7a26847bf61d7c67ef44&lang=en&src=listed) | Open official announcement | -1.47% | -1.28% | -2.13% | -5.53% | -1.25% | No |
-| 2023-05-31 16:30 | Earnings | Unclassified earnings release | [Unaudited financial results of “Vilvi Group“ for the first three months of 2023](https://view.news.eu.nasdaq.com/view?id=b28225eaaca9efd36b0669b07794d25cd&lang=en&src=listed) | Open official announcement | 0.21% | -1.47% | -3.56% | -6.71% | -2.58% | No |
-| 2023-05-12 08:00 | Ex-dividend | — | [Official dividend calendar: Dividend ex-date, EUR 0.265 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.265  | -1.56% | -3.95% | -4.74% | -9.49% | -3.32% | Yes |
-| 2023-02-28 09:15 | Earnings | Higher profit | [Unaudited financial results of “Vilvi Group“ for the 12 months of 2022](https://view.news.eu.nasdaq.com/view?id=bceb5a3a5e69731357e66b3b34c1c56e1&lang=en&src=listed) | Open official announcement | -1.57% | -0.40% | -1.99% | 0.80% | -2.21% | Yes |
-
-</details>
-
-</details>
-
-<details markdown="1" class="earnings-outcomes">
-<summary>Profit outcome and subsequent price analysis (7 classified of 16 earnings releases)</summary>
-
-Higher/lower profit refers to the issuer's explicit comparison with the earlier comparable period. ‘In line / unchanged’ is used only when the issuer explicitly says that profit met a plan, forecast or expectation, or was unchanged. ‘Loss’ requires an explicit realised net or operating loss. Releases without such wording remain unclassified and are excluded from the conditional estimates.
-
-Variance is reported in squared percentage points. Abnormal return is the share return minus the equal-weight Baltic-market return over the same horizon.
-
-| Profit outcome | Horizon | N | Conditional mean | Variance | Median | Positive share | Mean abnormal | Abnormal variance | Median abnormal |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Higher profit | 1d | 6 | -0.52% | 3.773 | -0.74% | 17% | -0.65% | 2.561 | -0.91% |
-| Higher profit | 5d | 6 | 3.03% | 36.003 | 1.28% | 50% | 2.71% | 33.884 | 0.65% |
-| Higher profit | 21d | 6 | 8.25% | 196.925 | 2.83% | 67% | 8.06% | 205.781 | 1.32% |
-| Lower profit | 1d | 1 | -1.43% | — | -1.43% | 0% | -1.82% | — | -1.82% |
-| Lower profit | 5d | 1 | -6.43% | — | -6.43% | 0% | -5.91% | — | -5.91% |
-| Lower profit | 21d | 1 | -8.21% | — | -8.21% | 0% | -6.55% | — | -6.55% |
-
-**Kruskal–Wallis test across the available outcome groups**
-
-At least two outcome groups with two observations each are required; this share does not have enough observations for the omnibus test.
-
-**Pairwise result:** No pairwise difference survives BH adjustment.
-
-The test describes historical association. Small groups, overlapping horizons and repeated releases from the same company limit causal interpretation.
-
-</details>
-
-</details>
-
-<details markdown="1">
-<summary>All five model frontiers with this share highlighted</summary>
-
-![VLP1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/VLP1L_all_frontiers.png?v=1792844639)
-
-The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
-
-</details>
-
-<details markdown="1">
-<summary>All 72 PerformanceAnalytics measures: full period and last 126 observations</summary>
-
-| Measure | Full period | Last 126 | Measure | Full period | Last 126 |
-| --- | --- | --- | --- | --- | --- |
-| ActiveReturn | 0.103798 | 0.335868 | M2Sortino | 0.332887 | 0.563470 |
-| AdjustedSharpe | -0.792235 | -2.184440 | MSquaredExcess | 0.044566 | 0.125481 |
-| AnnualizedReturn_Arithmetic | 0.308070 | 0.479041 | Martin | 5.265313 | 9.792844 |
-| AnnualizedReturn_Geometric | 0.332487 | 0.573077 | MaximumDrawdown | 0.157158 | 0.112450 |
-| Appraisal | 1.553874 | 2.408683 | Modigliani | 0.001042 | 0.001302 |
-| ArithmeticReturn | 0.001223 | 0.001901 | NetSelectivity | 0.064232 | 0.226696 |
-| AverageDrawdown | 0.039828 | 0.026784 | Omega | 1.369319 | 1.540203 |
-| AverageDrawdownLength | 25.392857 | 12.444444 | OmegaExcessReturn | 0.290002 | 0.527552 |
-| AverageRecoveryTime | 14.107143 | 7.222222 | PainIndex | 0.047953 | 0.043557 |
-| BernardoLedoit | 1.369319 | 1.540203 | PainRatio | 6.933606 | 13.156916 |
-| BetaCoKurtosis | -0.007644 | 0.180060 | Prospect | -0.392858 | -0.265746 |
-| BetaCoSkewness | -0.725375 | -8.594713 | Rachev | 1.428309 | 1.339621 |
-| Burke | 1.256071 | 4.765844 | Selectivity | 0.319473 | 0.540466 |
-| CAPMAlpha | 0.001173 | 0.001778 | Sharpe_Annualized | 1.495653 | 2.116998 |
-| CAPMBeta | 0.056906 | 0.137476 | Sharpe_Daily | 0.094217 | 0.133358 |
-| CDD | 0.095077 | 0.056340 | Sharpe_ES | 0.050656 | 0.065740 |
-| Calmar | 2.115625 | 5.096293 | Sharpe_VaR | 0.084766 | 0.143087 |
-| CoKurtosis | -0.000000 | 0.000000 | Skewness | 1.859172 | -0.912603 |
-| CoSkewness | -0.000000 | -0.000000 | Sortino | 0.164747 | 0.202250 |
-| CumulativeReturn | 1.360478 | 0.254224 | SpecificRisk | 0.205598 | 0.224383 |
-| DRatio | 0.658191 | 0.533325 | Sterling | 1.292930 | 2.697470 |
-| DownCapture | -0.130313 | -0.061796 | SystematicRisk | 0.009993 | 0.021304 |
-| DownNumber | 0.361635 | 0.396226 | TotalRisk | 0.205841 | 0.225392 |
-| DownPercent | 0.798742 | 0.811321 | TrackingError_Annualized | 0.264105 | 0.261945 |
-| DownsideDeviation | 0.007420 | 0.009399 | TrackingError_Daily | 0.016637 | 0.016501 |
-| DrawdownDeviation | 0.010767 | 0.011334 | Treynor_Annualized | 5.842701 | 4.168566 |
-| ES_Loss | 0.024133 | 0.028916 | Treynor_Daily | 0.020028 | 0.013089 |
-| FamaBeta | 1.173012 | 1.460236 | UlcerIndex | 0.063147 | 0.058520 |
-| GeometricReturn | 0.001140 | 0.001799 | UpCapture | 0.183974 | 0.395549 |
-| Hurst | 0.426761 | 0.450503 | UpNumber | 0.426606 | 0.493151 |
-| Information_Annualized | 0.393018 | 1.282207 | UpPercent | 0.275229 | 0.356164 |
-| Information_Daily | 0.019363 | 0.057835 | UpsidePotential | 0.610832 | 0.576647 |
-| JensenAlpha | 0.319473 | 0.540466 | UpsideRisk | 0.010704 | 0.010810 |
-| Kappa | 0.100544 | 0.111932 | VaR_Loss | 0.014422 | 0.013285 |
-| Kelly | 7.261257 | 9.355517 | Volatility | 0.012975 | 0.014255 |
-| Kurtosis | 24.383907 | 12.156535 | Volatility_Annualized | 0.205977 | 0.226283 |
-
-</details>
-
-<details markdown="1" class="portfolio-sensitivity">
-<summary>Portfolio sensitivity</summary>
-
-**Removing this share from curent_update_baltic**
-
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.703390</td><td>-0.110169</td></tr><tr><td>OUT</td><td>96</td><td>83</td><td>-13</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.141760</td><td>-0.006013</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.132985</td><td>-0.028508</td></tr></tbody></table>
-
-The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
-
-**Increasing this existing position in the current portfolio**
-
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>VLP1L shares</td><td>42</td><td>72</td><td>+30</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>8380.299978</td><td>468.000011</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.576271</td><td>0.118644</td></tr><tr><td>OUT</td><td>62</td><td>72</td><td>+10</td></tr><tr><td>IN</td><td>8</td><td>4</td><td>-4</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.085773</td><td>0.015600</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.109190</td><td>0.018034</td></tr></tbody></table>
-
-The starting point is the unmodified current portfolio, which already contains 42 VLP1L shares. The scenario adds 30 shares from Table 3A, resulting in 72 shares; every other holding remains unchanged.
-
-<details markdown="1" class="dominance-components">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Choose S&P 500, Current or any model portfolio as the benchmark for the difference panels.
-
-<div class="dominance-explorer" data-asset="VLP1L"><p>Open this section to load the interactive curve explorer.</p></div>
-
-<details markdown="1" class="static-dominance">
-<summary>High-resolution static FSD, SSD and TSD figure</summary>
-
-![VLP1L high-resolution stochastic dominance](figures/stock_profiles/VLP1L_FSD_SSD_TSD.png?v=1792844913)
-
-The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
-
-</details>
-
-</details>
-
-</details>
-
-</details>
-
-<details markdown="1" class="stock-profile" id="share-kne1l" data-signal="HOLD" data-netsd-effect="INCREASE">
-<summary><strong>KNE1L — KN Energies</strong> | HOLD | target 1295 shares | priority 2</summary>
-
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>1295</td><td>+1295</td><td>4.12%</td><td>EUR 0.4770</td><td>0.3729</td><td>44 / 0</td><td>34.72</td><td>Bearish</td><td>Inside bands</td><td>0.250 (Neutral)</td><td>HOLD</td><td>0.001696 (2.052% of portfolio HHI)</td><td>EUR 14,192</td><td>4.4%</td><td>1.2%</td><td>MEDIUM</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>1295</td><td>+1295</td><td>4.12%</td><td>EUR 0.4770</td><td>0.3729</td><td>44 / 0</td><td>34.72</td><td>Bearish</td><td>Inside bands</td><td>0.250 (Neutral)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>0.001696 (2.052% of portfolio HHI)</td><td>EUR 14,192</td><td>4.4%</td><td>1.2%</td><td>MEDIUM</td></tr></tbody></table>
 
 ![KNE1L Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/KNE1L_technicals_6m.png)
 
@@ -452,11 +212,11 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 **Current indicative buy and sell prices**
 
-| Current price | Buy below | Sell above | Price signal |
+| Current price | Buy below | Sell above | Bollinger price zone |
 | --- | --- | --- | --- |
 | EUR 0.4770 | EUR 0.4772 (+0.05%) | EUR 0.4932 (+3.39%) | BUY |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires both a positive allocation change and a BUY technical timing signal; WAIT means the model wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -684,10 +444,252 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-mrk1t" data-signal="HOLD" data-netsd-effect="INCREASE">
-<summary><strong>MRK1T — Merko Ehitus</strong> | HOLD | target 42 shares | priority 3</summary>
+<details markdown="1" class="stock-profile" id="share-vlp1l" data-signal="WAIT" data-netsd-effect="INCREASE">
+<summary><strong>VLP1L — Vilkyškių pieninė</strong> | current action: WAIT | allocation target 77 shares | priority 2</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>20</td><td>42</td><td>+22</td><td>7.56%</td><td>EUR 27.0000</td><td>0.3559</td><td>42 / 0</td><td>44.81</td><td>Bearish</td><td>Inside bands</td><td>0.000 (Oversold)</td><td>HOLD</td><td>0.005719 (6.919% of portfolio HHI)</td><td>EUR 58,706</td><td>1.0%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>42</td><td>77</td><td>+35</td><td>8.19%</td><td>EUR 15.8000</td><td>0.3644</td><td>43 / 0</td><td>77.09</td><td>Bullish</td><td>Above upper band</td><td>1.000 (Overbought)</td><td>SELL</td><td>BUY</td><td>WAIT</td><td>0.006713 (8.121% of portfolio HHI)</td><td>EUR 21,695</td><td>2.5%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+
+![VLP1L Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/VLP1L_technicals_6m.png)
+
+Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
+
+**Current indicative buy and sell prices**
+
+| Current price | Buy below | Sell above | Bollinger price zone |
+| --- | --- | --- | --- |
+| EUR 15.8000 | EUR 15.1135 (-4.35%) | EUR 15.7765 (-0.15%) | SELL |
+
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires both a positive allocation change and a BUY technical timing signal; WAIT means the model wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD.
+
+<details markdown="1">
+<summary>Complete technical history</summary>
+
+![VLP1L complete technical history](figures/technical_analysis/VLP1L_technical.png)
+
+</details>
+
+<details markdown="1">
+<summary>Return histogram</summary>
+
+![VLP1L return histogram](figures/stock_profiles/VLP1L_histogram.png?v=1792844208)
+
+</details>
+
+<details markdown="1" class="seasonality-section">
+<summary>Seasonality, drawdowns and upside periods</summary>
+
+The analysis covers 922 daily returns from 2023-01-02 to 2026-10-21. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
+
+| Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- |
+| Maximum drawdown | -21.29% (2025-09-05) | Average gain / average loss | 1.220 | Best 21-day period | 35.81% (ending 2025-05-13) |
+| Average underwater drawdown | 7.06% | Upside potential ratio | 1.429 | Worst 21-day period | -10.89% (ending 2023-06-05) |
+| Conditional drawdown 95% | 18.03% | Upside capture vs Baltic EW | 134.7% | Best 5-day period | 17.77% (ending 2025-04-28) |
+| Ulcer index | 8.34 | Downside capture vs Baltic EW | 33.7% | Best 63-day period | 44.34% (ending 2026-07-02) |
+| Longest underwater period | 326 calendar days | Positive trading days | 42.5% | Repeated calendar pattern | Dec: 100% positive across 3 years |
+| Daily downside deviation | 0.769% | Best day | 13.80% (2025-01-23) |  |  |
+| Daily upside deviation | 1.088% | Worst day | -8.13% (2026-03-02) |  |  |
+
+**Calendar-effect tests and observed averages**
+
+| Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
+| --- | --- | --- | --- | --- |
+| Weekday | Best: Thursday (0.189%); worst: Wednesday (0.086%) | 0.9650 | 0.9650 | Not detected |
+| Calendar month | Best: Dec (0.466% daily); worst: Mar (-0.170% daily) | 0.2801 | 0.4800 | Not detected |
+| Turn of month | First/last three days: 0.133%; other days: 0.142% | 0.9144 | 0.9432 | Not detected |
+
+![VLP1L seasonality, drawdowns and upside periods](figures/stock_profiles/VLP1L_seasonality.png?v=1792844744)
+
+**Five deepest drawdown episodes**
+
+| Rank | Peak | Trough | Recovery | Loss | Underwater days |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 2025-05-12 | 2025-09-05 | 2026-02-19 | -21.29% | 283 |
+| 2 | 2023-01-23 | 2023-08-31 | 2023-12-15 | -16.67% | 326 |
+| 3 | 2026-02-19 | 2026-03-25 | 2026-06-05 | -11.24% | 106 |
+| 4 | 2024-02-29 | 2024-05-21 | 2024-06-05 | -9.64% | 97 |
+| 5 | 2026-07-02 | 2026-07-30 | 2026-10-21 | -7.52% | 111 |
+
+**Five strongest non-overlapping 21-trading-day rises**
+
+| Rank | Start | End | 21-day return |
+| --- | --- | --- | --- |
+| 1 | 2025-04-07 | 2025-05-13 | 35.81% |
+| 2 | 2026-05-29 | 2026-07-02 | 35.74% |
+| 3 | 2024-05-10 | 2024-06-10 | 18.68% |
+| 4 | 2024-08-05 | 2024-09-05 | 18.21% |
+| 5 | 2024-12-16 | 2025-01-23 | 16.05% |
+
+The dated extremes identify where company announcements, dividends, corporate actions or data anomalies should be checked. A repeated calendar average is descriptive until it survives the adjusted test and a later out-of-sample period; it is not by itself a buy or sell signal.
+
+<details markdown="1" class="company-events">
+<summary>Official company-news calendar and price-direction analysis (21 events)</summary>
+
+Announcement times and links come from the official Nasdaq news service. The effective date is the first trading close strictly after publication. Abnormal return means the share return minus the equal-weight Baltic-market return over the same window.
+
+| Event type | N | Abnormal 1d | Abnormal 5d | Abnormal 21d | Positive 5d | Direction reversal | BH p(5d) | BH p(21d) | Interpretation |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Earnings | 16 | -0.46% | 0.55% | 3.53% | 38% | 44% | 0.7790 | 1.0000 | No adjusted statistical evidence |
+| Ex-dividend | 4 | -2.25% | -2.18% | 2.49% | 25% | 50% | 0.2521 | 1.0000 | No adjusted statistical evidence; price drop may be mechanical |
+| Revenue | 1 | -0.95% | 3.80% | 13.41% | 100% | 0% | 1.0000 | 1.0000 | No adjusted statistical evidence |
+
+![VLP1L official announcements and abnormal returns](figures/stock_profiles/VLP1L_company_events.png?v=1792844768)
+
+A direction reversal requires opposite fitted price slopes during the ten trading days before and after the event and at least a 1% five-day move. This identifies temporal association, not proof that the announcement caused the change.
+
+<details markdown="1">
+<summary>Complete official event calendar (21 announcements)</summary>
+
+| Published | Type | Profit outcome | Official announcement | Headline fundamental cue | Pre 5d | Post 1d | Post 5d | Post 21d | Abnormal 5d | Reversal |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-08-31 18:45 | Earnings | Higher profit | [VILVI Group unaudited consolidated financial results for the six months of 2026](https://view.news.eu.nasdaq.com/view?id=b3af999bf1bb819fe7a925bdaf9adfacc&lang=en&src=listed) | Open official announcement | 0.32% | -2.25% | -1.29% | -0.96% | -0.66% | Yes |
+| 2026-06-05 09:51 | Revenue | — | [VILVI Group Expects Revenue Growth of Approximately 50% to EUR 430 Million in 2026](https://view.news.eu.nasdaq.com/view?id=b58538e57a5a9de23352ab2c6ae7b2ada&lang=en&src=listed) | REVENUE; 50%; EUR 430 Million | 11.49% | -1.15% | 3.44% | 13.36% | 3.80% | No |
+| 2026-05-29 16:04 | Earnings | Higher profit | [VILVI Group unaudited consolidated financial results for the first three months of 2026 ](https://view.news.eu.nasdaq.com/view?id=b73e15abb9a115ef79400c112c0e2abfc&lang=en&src=listed) | Open official announcement | -0.42% | -2.13% | 11.49% | 35.74% | 11.00% | No |
+| 2026-05-11 08:00 | Ex-dividend | — | [Official dividend calendar: Dividend ex-date, EUR 0.23 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.23  | 0.00% | 0.00% | 1.29% | 13.36% | 1.84% | No |
+| 2026-02-27 16:05 | Earnings | Unclassified earnings release | [Unaudited financial results of VILVI Group for the 12 months of 2025](https://view.news.eu.nasdaq.com/view?id=b89d35c9363227f9267573d12c35b6d63&lang=en&src=listed) | Open official announcement | -1.20% | -8.13% | -5.69% | -8.13% | -4.81% | No |
+| 2025-11-28 09:39 | Earnings | Unclassified earnings release | [Unaudited consolidated financial results of VILVI Group for 9 months of 2025](https://view.news.eu.nasdaq.com/view?id=bd30dd181058527539fdc4e68606f60b2&lang=en&src=listed) | Open official announcement | -2.30% | 3.30% | 4.72% | 8.49% | 4.26% | Yes |
+| 2025-08-29 09:44 | Earnings | Unclassified earnings release | [VILVI Group unaudited consolidated financial results for the six months of 2025](https://view.news.eu.nasdaq.com/view?id=b173e4dfa80bfab952b1139285ae4239d&lang=en&src=listed) | Open official announcement | -1.96% | -0.20% | -2.00% | 10.50% | -2.44% | Yes |
+| 2025-05-30 09:03 | Earnings | Unclassified earnings release | [Unaudited consolidated financial results of VILVI Group for 3 months of 2025](https://view.news.eu.nasdaq.com/view?id=b5987d77bf7d423cfa8d1cf0dbf060cae&lang=en&src=listed) | Open official announcement | -3.35% | 0.87% | -0.43% | -3.03% | -0.15% | No |
+| 2025-05-13 08:00 | Ex-dividend | — | [Official dividend calendar: Dividend ex-date, EUR 0.54 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.54  | 13.70% | -1.61% | -3.61% | -8.84% | -4.03% | Yes |
+| 2025-02-28 09:18 | Earnings | Higher profit | [Unaudited financial results of VILVI Group for the 12 months of 2024](https://view.news.eu.nasdaq.com/view?id=b80043a95d6bfbaf23c3b35d2c54d0628&lang=en&src=listed) | Open official announcement | 1.31% | -1.08% | -2.58% | -0.43% | -2.58% | No |
+| 2024-11-29 09:47 | Earnings | Higher profit | [Unaudited financial results of VILVI GROUP for the nine months of 2024](https://view.news.eu.nasdaq.com/view?id=b117a583cc9fb584f6332942b5f650d6e&lang=en&src=listed) | Open official announcement | 4.28% | 3.08% | 3.85% | 4.87% | 1.96% | No |
+| 2024-08-30 09:52 | Earnings | Unclassified earnings release | [Unaudited financial results of VILVI GROUP for the first six months of 2024](https://view.news.eu.nasdaq.com/view?id=b28c7660c9a343961920f78323a76e842&lang=en&src=listed) | Open official announcement | 7.83% | 1.96% | -0.56% | -1.68% | -0.60% | No |
+| 2024-05-31 09:15 | Earnings | Higher profit | [Unaudited financial results of VILVI GROUP for the first three months of 2024](https://view.news.eu.nasdaq.com/view?id=bdc9fad615b1b400b2d71d0fb24eea209&lang=en&src=listed) | Open official announcement | 7.00% | -0.36% | 8.73% | 9.45% | 8.75% | No |
+| 2024-05-10 08:00 | Ex-dividend | — | [Official dividend calendar: Dividend ex-date, EUR 0.31 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.31  | -1.11% | -4.10% | -4.85% | 11.57% | -3.21% | No |
+| 2024-02-29 09:55 | Earnings | Lower profit | [Unaudited financial results of VILVI GROUP for the 12 months of 2023](https://view.news.eu.nasdaq.com/view?id=b470f79fae07f4b1d6e98116365578bcc&lang=en&src=listed) | Open official announcement | 3.32% | -1.43% | -6.43% | -8.21% | -5.91% | Yes |
+| 2023-11-30 16:23 | Earnings | Unclassified earnings release | [Unaudited financial results of “Vilvi Group“ for the first nine months of 2023](https://view.news.eu.nasdaq.com/view?id=be1812e8d1b4bb947b47179a1eb511875&lang=en&src=listed) | Open official announcement | -0.42% | 0.00% | 1.69% | 11.02% | 2.78% | Yes |
+| 2023-08-31 09:57 | Earnings | Unclassified earnings release | [Unaudited financial results of “Vilvi Group“ for the first six months of 2023](https://view.news.eu.nasdaq.com/view?id=b5fdaf6ff1bb94e6db906304d6b212e7d&lang=en&src=listed) | Open official announcement | -2.47% | 1.61% | 3.22% | 6.67% | 3.20% | Yes |
+| 2023-06-01 08:45 | Earnings | Unclassified earnings release | [Correction: Unaudited financial results of “Vilvi Group“ for the first three months of 2023](https://view.news.eu.nasdaq.com/view?id=b9351d6bc063f7a26847bf61d7c67ef44&lang=en&src=listed) | Open official announcement | -1.47% | -1.28% | -2.13% | -5.53% | -1.25% | No |
+| 2023-05-31 16:30 | Earnings | Unclassified earnings release | [Unaudited financial results of “Vilvi Group“ for the first three months of 2023](https://view.news.eu.nasdaq.com/view?id=b28225eaaca9efd36b0669b07794d25cd&lang=en&src=listed) | Open official announcement | 0.21% | -1.47% | -3.56% | -6.71% | -2.58% | No |
+| 2023-05-12 08:00 | Ex-dividend | — | [Official dividend calendar: Dividend ex-date, EUR 0.265 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.265  | -1.56% | -3.95% | -4.74% | -9.49% | -3.32% | Yes |
+| 2023-02-28 09:15 | Earnings | Higher profit | [Unaudited financial results of “Vilvi Group“ for the 12 months of 2022](https://view.news.eu.nasdaq.com/view?id=bceb5a3a5e69731357e66b3b34c1c56e1&lang=en&src=listed) | Open official announcement | -1.57% | -0.40% | -1.99% | 0.80% | -2.21% | Yes |
+
+</details>
+
+</details>
+
+<details markdown="1" class="earnings-outcomes">
+<summary>Profit outcome and subsequent price analysis (7 classified of 16 earnings releases)</summary>
+
+Higher/lower profit refers to the issuer's explicit comparison with the earlier comparable period. ‘In line / unchanged’ is used only when the issuer explicitly says that profit met a plan, forecast or expectation, or was unchanged. ‘Loss’ requires an explicit realised net or operating loss. Releases without such wording remain unclassified and are excluded from the conditional estimates.
+
+Variance is reported in squared percentage points. Abnormal return is the share return minus the equal-weight Baltic-market return over the same horizon.
+
+| Profit outcome | Horizon | N | Conditional mean | Variance | Median | Positive share | Mean abnormal | Abnormal variance | Median abnormal |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Higher profit | 1d | 6 | -0.52% | 3.773 | -0.74% | 17% | -0.65% | 2.561 | -0.91% |
+| Higher profit | 5d | 6 | 3.03% | 36.003 | 1.28% | 50% | 2.71% | 33.884 | 0.65% |
+| Higher profit | 21d | 6 | 8.25% | 196.925 | 2.83% | 67% | 8.06% | 205.781 | 1.32% |
+| Lower profit | 1d | 1 | -1.43% | — | -1.43% | 0% | -1.82% | — | -1.82% |
+| Lower profit | 5d | 1 | -6.43% | — | -6.43% | 0% | -5.91% | — | -5.91% |
+| Lower profit | 21d | 1 | -8.21% | — | -8.21% | 0% | -6.55% | — | -6.55% |
+
+**Kruskal–Wallis test across the available outcome groups**
+
+At least two outcome groups with two observations each are required; this share does not have enough observations for the omnibus test.
+
+**Pairwise result:** No pairwise difference survives BH adjustment.
+
+The test describes historical association. Small groups, overlapping horizons and repeated releases from the same company limit causal interpretation.
+
+</details>
+
+</details>
+
+<details markdown="1">
+<summary>All five model frontiers with this share highlighted</summary>
+
+![VLP1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/VLP1L_all_frontiers.png?v=1792844639)
+
+The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
+
+</details>
+
+<details markdown="1">
+<summary>All 72 PerformanceAnalytics measures: full period and last 126 observations</summary>
+
+| Measure | Full period | Last 126 | Measure | Full period | Last 126 |
+| --- | --- | --- | --- | --- | --- |
+| ActiveReturn | 0.103798 | 0.335868 | M2Sortino | 0.332887 | 0.563470 |
+| AdjustedSharpe | -0.792235 | -2.184440 | MSquaredExcess | 0.044566 | 0.125481 |
+| AnnualizedReturn_Arithmetic | 0.308070 | 0.479041 | Martin | 5.265313 | 9.792844 |
+| AnnualizedReturn_Geometric | 0.332487 | 0.573077 | MaximumDrawdown | 0.157158 | 0.112450 |
+| Appraisal | 1.553874 | 2.408683 | Modigliani | 0.001042 | 0.001302 |
+| ArithmeticReturn | 0.001223 | 0.001901 | NetSelectivity | 0.064232 | 0.226696 |
+| AverageDrawdown | 0.039828 | 0.026784 | Omega | 1.369319 | 1.540203 |
+| AverageDrawdownLength | 25.392857 | 12.444444 | OmegaExcessReturn | 0.290002 | 0.527552 |
+| AverageRecoveryTime | 14.107143 | 7.222222 | PainIndex | 0.047953 | 0.043557 |
+| BernardoLedoit | 1.369319 | 1.540203 | PainRatio | 6.933606 | 13.156916 |
+| BetaCoKurtosis | -0.007644 | 0.180060 | Prospect | -0.392858 | -0.265746 |
+| BetaCoSkewness | -0.725375 | -8.594713 | Rachev | 1.428309 | 1.339621 |
+| Burke | 1.256071 | 4.765844 | Selectivity | 0.319473 | 0.540466 |
+| CAPMAlpha | 0.001173 | 0.001778 | Sharpe_Annualized | 1.495653 | 2.116998 |
+| CAPMBeta | 0.056906 | 0.137476 | Sharpe_Daily | 0.094217 | 0.133358 |
+| CDD | 0.095077 | 0.056340 | Sharpe_ES | 0.050656 | 0.065740 |
+| Calmar | 2.115625 | 5.096293 | Sharpe_VaR | 0.084766 | 0.143087 |
+| CoKurtosis | -0.000000 | 0.000000 | Skewness | 1.859172 | -0.912603 |
+| CoSkewness | -0.000000 | -0.000000 | Sortino | 0.164747 | 0.202250 |
+| CumulativeReturn | 1.360478 | 0.254224 | SpecificRisk | 0.205598 | 0.224383 |
+| DRatio | 0.658191 | 0.533325 | Sterling | 1.292930 | 2.697470 |
+| DownCapture | -0.130313 | -0.061796 | SystematicRisk | 0.009993 | 0.021304 |
+| DownNumber | 0.361635 | 0.396226 | TotalRisk | 0.205841 | 0.225392 |
+| DownPercent | 0.798742 | 0.811321 | TrackingError_Annualized | 0.264105 | 0.261945 |
+| DownsideDeviation | 0.007420 | 0.009399 | TrackingError_Daily | 0.016637 | 0.016501 |
+| DrawdownDeviation | 0.010767 | 0.011334 | Treynor_Annualized | 5.842701 | 4.168566 |
+| ES_Loss | 0.024133 | 0.028916 | Treynor_Daily | 0.020028 | 0.013089 |
+| FamaBeta | 1.173012 | 1.460236 | UlcerIndex | 0.063147 | 0.058520 |
+| GeometricReturn | 0.001140 | 0.001799 | UpCapture | 0.183974 | 0.395549 |
+| Hurst | 0.426761 | 0.450503 | UpNumber | 0.426606 | 0.493151 |
+| Information_Annualized | 0.393018 | 1.282207 | UpPercent | 0.275229 | 0.356164 |
+| Information_Daily | 0.019363 | 0.057835 | UpsidePotential | 0.610832 | 0.576647 |
+| JensenAlpha | 0.319473 | 0.540466 | UpsideRisk | 0.010704 | 0.010810 |
+| Kappa | 0.100544 | 0.111932 | VaR_Loss | 0.014422 | 0.013285 |
+| Kelly | 7.261257 | 9.355517 | Volatility | 0.012975 | 0.014255 |
+| Kurtosis | 24.383907 | 12.156535 | Volatility_Annualized | 0.205977 | 0.226283 |
+
+</details>
+
+<details markdown="1" class="portfolio-sensitivity">
+<summary>Portfolio sensitivity</summary>
+
+**Removing this share from curent_update_baltic**
+
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.703390</td><td>-0.110169</td></tr><tr><td>OUT</td><td>96</td><td>83</td><td>-13</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.141760</td><td>-0.006013</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.132985</td><td>-0.028508</td></tr></tbody></table>
+
+The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
+
+**Increasing this existing position in the current portfolio**
+
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>VLP1L shares</td><td>42</td><td>72</td><td>+30</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>8380.299978</td><td>468.000011</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.576271</td><td>0.118644</td></tr><tr><td>OUT</td><td>62</td><td>72</td><td>+10</td></tr><tr><td>IN</td><td>8</td><td>4</td><td>-4</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.085773</td><td>0.015600</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.109190</td><td>0.018034</td></tr></tbody></table>
+
+The starting point is the unmodified current portfolio, which already contains 42 VLP1L shares. The scenario adds 30 shares from Table 3A, resulting in 72 shares; every other holding remains unchanged.
+
+<details markdown="1" class="dominance-components">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Choose S&P 500, Current or any model portfolio as the benchmark for the difference panels.
+
+<div class="dominance-explorer" data-asset="VLP1L"><p>Open this section to load the interactive curve explorer.</p></div>
+
+<details markdown="1" class="static-dominance">
+<summary>High-resolution static FSD, SSD and TSD figure</summary>
+
+![VLP1L high-resolution stochastic dominance](figures/stock_profiles/VLP1L_FSD_SSD_TSD.png?v=1792844913)
+
+The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
+
+</details>
+
+</details>
+
+</details>
+
+</details>
+
+<details markdown="1" class="stock-profile" id="share-mrk1t" data-signal="WAIT" data-netsd-effect="INCREASE">
+<summary><strong>MRK1T — Merko Ehitus</strong> | current action: WAIT | allocation target 42 shares | priority 3</summary>
+
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>20</td><td>42</td><td>+22</td><td>7.56%</td><td>EUR 27.0000</td><td>0.3559</td><td>42 / 0</td><td>44.81</td><td>Bearish</td><td>Inside bands</td><td>0.000 (Oversold)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>0.005719 (6.919% of portfolio HHI)</td><td>EUR 58,706</td><td>1.0%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
 ![MRK1T Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/MRK1T_technicals_6m.png)
 
@@ -695,11 +697,11 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 **Current indicative buy and sell prices**
 
-| Current price | Buy below | Sell above | Price signal |
+| Current price | Buy below | Sell above | Bollinger price zone |
 | --- | --- | --- | --- |
 | EUR 27.0000 | EUR 26.9828 (-0.06%) | EUR 27.1672 (+0.62%) | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires both a positive allocation change and a BUY technical timing signal; WAIT means the model wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -945,10 +947,10 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-virsi" data-signal="HOLD" data-netsd-effect="INCREASE">
-<summary><strong>VIRSI — VIRŠI-A</strong> | HOLD | target 23 shares | priority 4</summary>
+<details markdown="1" class="stock-profile" id="share-virsi" data-signal="WAIT" data-netsd-effect="INCREASE">
+<summary><strong>VIRSI — VIRŠI-A</strong> | current action: WAIT | allocation target 23 shares | priority 4</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>23</td><td>+23</td><td>0.68%</td><td>EUR 4.4100</td><td>0.3220</td><td>38 / 0</td><td>49.39</td><td>Bearish</td><td>Inside bands</td><td>0.294 (Neutral)</td><td>HOLD</td><td>0.000047 (0.057% of portfolio HHI)</td><td>EUR 2,763</td><td>3.7%</td><td>2.4%</td><td>HIGH</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>23</td><td>+23</td><td>0.68%</td><td>EUR 4.4100</td><td>0.3220</td><td>38 / 0</td><td>49.39</td><td>Bearish</td><td>Inside bands</td><td>0.294 (Neutral)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>0.000047 (0.057% of portfolio HHI)</td><td>EUR 2,763</td><td>3.7%</td><td>2.4%</td><td>HIGH</td></tr></tbody></table>
 
 ![VIRSI Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/VIRSI_technicals_6m.png)
 
@@ -956,11 +958,11 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 **Current indicative buy and sell prices**
 
-| Current price | Buy below | Sell above | Price signal |
+| Current price | Buy below | Sell above | Bollinger price zone |
 | --- | --- | --- | --- |
 | EUR 4.4100 | EUR 4.4040 (-0.14%) | EUR 4.4450 (+0.79%) | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires both a positive allocation change and a BUY technical timing signal; WAIT means the model wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -1188,10 +1190,10 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-molnr" data-signal="HOLD" data-netsd-effect="INCREASE">
-<summary><strong>MOLNR — J. Molner</strong> | HOLD | target 22 shares | priority 5</summary>
+<details markdown="1" class="stock-profile" id="share-molnr" data-signal="WAIT" data-netsd-effect="INCREASE">
+<summary><strong>MOLNR — J. Molner</strong> | current action: WAIT | allocation target 22 shares | priority 5</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>22</td><td>+22</td><td>3.18%</td><td>EUR 21.2000</td><td>0.0424</td><td>5 / 0</td><td>59.30</td><td>Bearish</td><td>Inside bands</td><td>0.315 (Neutral)</td><td>HOLD</td><td>0.001012 (1.224% of portfolio HHI)</td><td>EUR 94</td><td>496.7%</td><td>29.4%</td><td>HIGH</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>22</td><td>+22</td><td>3.18%</td><td>EUR 21.2000</td><td>0.0424</td><td>5 / 0</td><td>59.30</td><td>Bearish</td><td>Inside bands</td><td>0.315 (Neutral)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>0.001012 (1.224% of portfolio HHI)</td><td>EUR 94</td><td>496.7%</td><td>29.4%</td><td>HIGH</td></tr></tbody></table>
 
 ![MOLNR Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/MOLNR_technicals_6m.png)
 
@@ -1199,11 +1201,11 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 **Current indicative buy and sell prices**
 
-| Current price | Buy below | Sell above | Price signal |
+| Current price | Buy below | Sell above | Bollinger price zone |
 | --- | --- | --- | --- |
 | EUR 21.2000 | EUR 16.8116 (-20.70%) | EUR 24.0684 (+13.53%) | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires both a positive allocation change and a BUY technical timing signal; WAIT means the model wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -1417,10 +1419,10 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-apg1l" data-signal="HOLD" data-netsd-effect="INCREASE">
-<summary><strong>APG1L — Apranga</strong> | HOLD | target 312 shares | priority 6</summary>
+<details markdown="1" class="stock-profile" id="share-apg1l" data-signal="WAIT" data-netsd-effect="INCREASE">
+<summary><strong>APG1L — Apranga</strong> | current action: WAIT | allocation target 312 shares | priority 6</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>200</td><td>312</td><td>+112</td><td>7.95%</td><td>EUR 3.8100</td><td>0.3051</td><td>38 / 2</td><td>35.26</td><td>Bullish</td><td>Inside bands</td><td>0.791 (Neutral)</td><td>HOLD</td><td>0.006313 (7.638% of portfolio HHI)</td><td>EUR 24,360</td><td>1.8%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>200</td><td>312</td><td>+112</td><td>7.95%</td><td>EUR 3.8100</td><td>0.3051</td><td>38 / 2</td><td>35.26</td><td>Bullish</td><td>Inside bands</td><td>0.791 (Neutral)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>0.006313 (7.638% of portfolio HHI)</td><td>EUR 24,360</td><td>1.8%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
 ![APG1L Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/APG1L_technicals_6m.png)
 
@@ -1428,11 +1430,11 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 **Current indicative buy and sell prices**
 
-| Current price | Buy below | Sell above | Price signal |
+| Current price | Buy below | Sell above | Bollinger price zone |
 | --- | --- | --- | --- |
 | EUR 3.8100 | EUR 3.7812 (-0.76%) | EUR 3.8848 (+1.96%) | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires both a positive allocation change and a BUY technical timing signal; WAIT means the model wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -1706,10 +1708,10 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-grg1l" data-signal="HOLD" data-netsd-effect="INCREASE">
-<summary><strong>GRG1L — Grigeo Group</strong> | HOLD | target 774 shares | priority 7</summary>
+<details markdown="1" class="stock-profile" id="share-grg1l" data-signal="WAIT" data-netsd-effect="INCREASE">
+<summary><strong>GRG1L — Grigeo Group</strong> | current action: WAIT | allocation target 774 shares | priority 7</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>543</td><td>774</td><td>+231</td><td>5.21%</td><td>EUR 1.0100</td><td>0.3983</td><td>53 / 6</td><td>50.35</td><td>Bearish</td><td>Inside bands</td><td>0.699 (Neutral)</td><td>HOLD</td><td>0.002719 (3.289% of portfolio HHI)</td><td>EUR 12,104</td><td>1.9%</td><td>1.2%</td><td>MEDIUM</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>543</td><td>774</td><td>+231</td><td>5.21%</td><td>EUR 1.0100</td><td>0.3983</td><td>53 / 6</td><td>50.35</td><td>Bearish</td><td>Inside bands</td><td>0.699 (Neutral)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>0.002719 (3.289% of portfolio HHI)</td><td>EUR 12,104</td><td>1.9%</td><td>1.2%</td><td>MEDIUM</td></tr></tbody></table>
 
 ![GRG1L Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/GRG1L_technicals_6m.png)
 
@@ -1717,11 +1719,11 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 **Current indicative buy and sell prices**
 
-| Current price | Buy below | Sell above | Price signal |
+| Current price | Buy below | Sell above | Bollinger price zone |
 | --- | --- | --- | --- |
 | EUR 1.0100 | EUR 0.9960 (-1.39%) | EUR 1.0224 (+1.23%) | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires both a positive allocation change and a BUY technical timing signal; WAIT means the model wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -1912,10 +1914,10 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-rsu1l" data-signal="HOLD" data-netsd-effect="INCREASE">
-<summary><strong>RSU1L — Rokiškio sūris</strong> | HOLD | target 93 shares | priority 8</summary>
+<details markdown="1" class="stock-profile" id="share-rsu1l" data-signal="WAIT" data-netsd-effect="INCREASE">
+<summary><strong>RSU1L — Rokiškio sūris</strong> | current action: WAIT | allocation target 93 shares | priority 8</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>93</td><td>+93</td><td>2.77%</td><td>EUR 4.4400</td><td>0.2373</td><td>35 / 7</td><td>40.37</td><td>Bearish</td><td>Inside bands</td><td>0.083 (Oversold)</td><td>HOLD</td><td>0.000769 (0.931% of portfolio HHI)</td><td>EUR 1,184</td><td>34.9%</td><td>4.8%</td><td>HIGH</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>93</td><td>+93</td><td>2.77%</td><td>EUR 4.4400</td><td>0.2373</td><td>35 / 7</td><td>40.37</td><td>Bearish</td><td>Inside bands</td><td>0.083 (Oversold)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>0.000769 (0.931% of portfolio HHI)</td><td>EUR 1,184</td><td>34.9%</td><td>4.8%</td><td>HIGH</td></tr></tbody></table>
 
 ![RSU1L Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/RSU1L_technicals_6m.png)
 
@@ -1923,11 +1925,11 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 **Current indicative buy and sell prices**
 
-| Current price | Buy below | Sell above | Price signal |
+| Current price | Buy below | Sell above | Bollinger price zone |
 | --- | --- | --- | --- |
 | EUR 4.4400 | EUR 4.4275 (-0.28%) | EUR 4.5385 (+2.22%) | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires both a positive allocation change and a BUY technical timing signal; WAIT means the model wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -2141,10 +2143,10 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-ako1l" data-signal="HOLD" data-netsd-effect="INCREASE">
-<summary><strong>AKO1L — Akola Group</strong> | HOLD | target 148 shares | priority 9</summary>
+<details markdown="1" class="stock-profile" id="share-ako1l" data-signal="WAIT" data-netsd-effect="INCREASE">
+<summary><strong>AKO1L — Akola Group</strong> | current action: WAIT | allocation target 148 shares | priority 9</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>148</td><td>+148</td><td>1.83%</td><td>EUR 1.8500</td><td>0.1949</td><td>32 / 9</td><td>78.16</td><td>Bullish</td><td>Inside bands</td><td>0.904 (Overbought)</td><td>HOLD</td><td>0.000334 (0.404% of portfolio HHI)</td><td>EUR 22,139</td><td>1.2%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>148</td><td>+148</td><td>1.83%</td><td>EUR 1.8500</td><td>0.1949</td><td>32 / 9</td><td>78.16</td><td>Bullish</td><td>Inside bands</td><td>0.904 (Overbought)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>0.000334 (0.404% of portfolio HHI)</td><td>EUR 22,139</td><td>1.2%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
 ![AKO1L Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/AKO1L_technicals_6m.png)
 
@@ -2152,11 +2154,11 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 **Current indicative buy and sell prices**
 
-| Current price | Buy below | Sell above | Price signal |
+| Current price | Buy below | Sell above | Bollinger price zone |
 | --- | --- | --- | --- |
 | EUR 1.8500 | EUR 1.7422 (-5.83%) | EUR 1.8628 (+0.69%) | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires both a positive allocation change and a BUY technical timing signal; WAIT means the model wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -2383,10 +2385,10 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-ign1l" data-signal="HOLD" data-netsd-effect="INCREASE">
-<summary><strong>IGN1L — Ignitis grupė</strong> | HOLD | target 8 shares | priority 10</summary>
+<details markdown="1" class="stock-profile" id="share-ign1l" data-signal="WAIT" data-netsd-effect="INCREASE">
+<summary><strong>IGN1L — Ignitis grupė</strong> | current action: WAIT | allocation target 8 shares | priority 10</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>8</td><td>+8</td><td>1.16%</td><td>EUR 21.7500</td><td>0.3559</td><td>52 / 10</td><td>42.32</td><td>Bullish</td><td>Inside bands</td><td>0.760 (Neutral)</td><td>HOLD</td><td>0.000135 (0.163% of portfolio HHI)</td><td>EUR 284,653</td><td>0.1%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>8</td><td>+8</td><td>1.16%</td><td>EUR 21.7500</td><td>0.3559</td><td>52 / 10</td><td>42.32</td><td>Bullish</td><td>Inside bands</td><td>0.760 (Neutral)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>0.000135 (0.163% of portfolio HHI)</td><td>EUR 284,653</td><td>0.1%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
 ![IGN1L Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/IGN1L_technicals_6m.png)
 
@@ -2394,11 +2396,11 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 **Current indicative buy and sell prices**
 
-| Current price | Buy below | Sell above | Price signal |
+| Current price | Buy below | Sell above | Bollinger price zone |
 | --- | --- | --- | --- |
 | EUR 21.7500 | EUR 21.6155 (-0.62%) | EUR 21.8595 (+0.50%) | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires both a positive allocation change and a BUY technical timing signal; WAIT means the model wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -2636,10 +2638,10 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-pzv1l" data-signal="HOLD" data-netsd-effect="INCREASE">
-<summary><strong>PZV1L — Pieno žvaigždės</strong> | HOLD | target 62 shares | priority 11</summary>
+<details markdown="1" class="stock-profile" id="share-pzv1l" data-signal="WAIT" data-netsd-effect="INCREASE">
+<summary><strong>PZV1L — Pieno žvaigždės</strong> | current action: WAIT | allocation target 62 shares | priority 11</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>62</td><td>+62</td><td>0.74%</td><td>EUR 1.7700</td><td>0.2034</td><td>35 / 11</td><td>48.73</td><td>Bearish</td><td>Inside bands</td><td>0.000 (Oversold)</td><td>HOLD</td><td>0.000055 (0.066% of portfolio HHI)</td><td>EUR 4,466</td><td>2.5%</td><td>1.2%</td><td>HIGH</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>62</td><td>+62</td><td>0.74%</td><td>EUR 1.7700</td><td>0.2034</td><td>35 / 11</td><td>48.73</td><td>Bearish</td><td>Inside bands</td><td>0.000 (Oversold)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>0.000055 (0.066% of portfolio HHI)</td><td>EUR 4,466</td><td>2.5%</td><td>1.2%</td><td>HIGH</td></tr></tbody></table>
 
 ![PZV1L Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/PZV1L_technicals_6m.png)
 
@@ -2647,11 +2649,11 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 **Current indicative buy and sell prices**
 
-| Current price | Buy below | Sell above | Price signal |
+| Current price | Buy below | Sell above | Bollinger price zone |
 | --- | --- | --- | --- |
 | EUR 1.7700 | EUR 1.7376 (-1.83%) | EUR 1.8279 (+3.27%) | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires both a positive allocation change and a BUY technical timing signal; WAIT means the model wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -2877,10 +2879,10 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-roe1l" data-signal="HOLD" data-netsd-effect="DECREASE">
-<summary><strong>ROE1L — Artea Bankas</strong> | HOLD | target 711 shares | priority 12</summary>
+<details markdown="1" class="stock-profile" id="share-roe1l" data-signal="WAIT" data-netsd-effect="DECREASE">
+<summary><strong>ROE1L — Artea Bankas</strong> | current action: WAIT | allocation target 711 shares | priority 12</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>416</td><td>711</td><td>+295</td><td>4.19%</td><td>EUR 0.8830</td><td>0.1695</td><td>39 / 19</td><td>47.52</td><td>Bearish</td><td>Inside bands</td><td>0.416 (Neutral)</td><td>HOLD</td><td>0.001754 (2.123% of portfolio HHI)</td><td>EUR 182,895</td><td>0.1%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>416</td><td>711</td><td>+295</td><td>4.19%</td><td>EUR 0.8830</td><td>0.1695</td><td>39 / 19</td><td>47.52</td><td>Bearish</td><td>Inside bands</td><td>0.416 (Neutral)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>0.001754 (2.123% of portfolio HHI)</td><td>EUR 182,895</td><td>0.1%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
 ![ROE1L Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/ROE1L_technicals_6m.png)
 
@@ -2888,11 +2890,11 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 **Current indicative buy and sell prices**
 
-| Current price | Buy below | Sell above | Price signal |
+| Current price | Buy below | Sell above | Bollinger price zone |
 | --- | --- | --- | --- |
 | EUR 0.8830 | EUR 0.8691 (-1.57%) | EUR 0.9122 (+3.31%) | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires both a positive allocation change and a BUY technical timing signal; WAIT means the model wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -3127,10 +3129,10 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-tal1t" data-signal="HOLD" data-netsd-effect="DECREASE">
-<summary><strong>TAL1T — Tallink Grupp</strong> | HOLD | target 1336 shares | priority 13</summary>
+<details markdown="1" class="stock-profile" id="share-tal1t" data-signal="WAIT" data-netsd-effect="DECREASE">
+<summary><strong>TAL1T — Tallink Grupp</strong> | current action: WAIT | allocation target 1336 shares | priority 13</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>700</td><td>1336</td><td>+636</td><td>5.77%</td><td>EUR 0.6470</td><td>0.0593</td><td>26 / 19</td><td>58.06</td><td>Bearish</td><td>Inside bands</td><td>0.136 (Oversold)</td><td>HOLD</td><td>0.003325 (4.023% of portfolio HHI)</td><td>EUR 77,090</td><td>0.5%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>700</td><td>1336</td><td>+636</td><td>5.77%</td><td>EUR 0.6470</td><td>0.0593</td><td>26 / 19</td><td>58.06</td><td>Bearish</td><td>Inside bands</td><td>0.136 (Oversold)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>0.003325 (4.023% of portfolio HHI)</td><td>EUR 77,090</td><td>0.5%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
 ![TAL1T Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/TAL1T_technicals_6m.png)
 
@@ -3138,11 +3140,11 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 **Current indicative buy and sell prices**
 
-| Current price | Buy below | Sell above | Price signal |
+| Current price | Buy below | Sell above | Bollinger price zone |
 | --- | --- | --- | --- |
 | EUR 0.6470 | EUR 0.6397 (-1.14%) | EUR 0.6501 (+0.49%) | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires both a positive allocation change and a BUY technical timing signal; WAIT means the model wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -3393,10 +3395,10 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-tel1l" data-signal="HOLD" data-netsd-effect="DECREASE">
-<summary><strong>TEL1L — Telia Lietuva</strong> | HOLD | target 8 shares | priority 14</summary>
+<details markdown="1" class="stock-profile" id="share-tel1l" data-signal="WAIT" data-netsd-effect="DECREASE">
+<summary><strong>TEL1L — Telia Lietuva</strong> | current action: WAIT | allocation target 8 shares | priority 14</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>8</td><td>+8</td><td>0.12%</td><td>EUR 2.2500</td><td>0.1695</td><td>42 / 22</td><td>86.79</td><td>Bullish</td><td>Inside bands</td><td>1.000 (Overbought)</td><td>HOLD</td><td>0.000001 (0.002% of portfolio HHI)</td><td>EUR 56,454</td><td>0.0%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>8</td><td>+8</td><td>0.12%</td><td>EUR 2.2500</td><td>0.1695</td><td>42 / 22</td><td>86.79</td><td>Bullish</td><td>Inside bands</td><td>1.000 (Overbought)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>0.000001 (0.002% of portfolio HHI)</td><td>EUR 56,454</td><td>0.0%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
 ![TEL1L Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/TEL1L_technicals_6m.png)
 
@@ -3404,11 +3406,11 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 **Current indicative buy and sell prices**
 
-| Current price | Buy below | Sell above | Price signal |
+| Current price | Buy below | Sell above | Bollinger price zone |
 | --- | --- | --- | --- |
 | EUR 2.2500 | EUR 2.1943 (-2.48%) | EUR 2.3037 (+2.39%) | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires both a positive allocation change and a BUY technical timing signal; WAIT means the model wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -3601,10 +3603,10 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-dgr1r" data-signal="HOLD" data-netsd-effect="DECREASE">
-<summary><strong>DGR1R — DelfinGroup</strong> | HOLD | target 316 shares | priority 15</summary>
+<details markdown="1" class="stock-profile" id="share-dgr1r" data-signal="WAIT" data-netsd-effect="DECREASE">
+<summary><strong>DGR1R — DelfinGroup</strong> | current action: WAIT | allocation target 316 shares | priority 15</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>316</td><td>+316</td><td>3.60%</td><td>EUR 1.7050</td><td>0.0339</td><td>26 / 22</td><td>63.35</td><td>Bullish</td><td>Inside bands</td><td>0.000 (Oversold)</td><td>HOLD</td><td>0.001298 (1.570% of portfolio HHI)</td><td>EUR 12,310</td><td>4.4%</td><td>2.4%</td><td>MEDIUM</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>316</td><td>+316</td><td>3.60%</td><td>EUR 1.7050</td><td>0.0339</td><td>26 / 22</td><td>63.35</td><td>Bullish</td><td>Inside bands</td><td>0.000 (Oversold)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>0.001298 (1.570% of portfolio HHI)</td><td>EUR 12,310</td><td>4.4%</td><td>2.4%</td><td>MEDIUM</td></tr></tbody></table>
 
 ![DGR1R Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/DGR1R_technicals_6m.png)
 
@@ -3612,11 +3614,11 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 **Current indicative buy and sell prices**
 
-| Current price | Buy below | Sell above | Price signal |
+| Current price | Buy below | Sell above | Bollinger price zone |
 | --- | --- | --- | --- |
 | EUR 1.7050 | EUR 1.5556 (-8.77%) | EUR 1.7804 (+4.42%) | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires both a positive allocation change and a BUY technical timing signal; WAIT means the model wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -3890,10 +3892,10 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-eft1t" data-signal="HOLD" data-netsd-effect="DECREASE">
-<summary><strong>EFT1T — EfTEN Real Estate Fund</strong> | HOLD | target 22 shares | priority 16</summary>
+<details markdown="1" class="stock-profile" id="share-eft1t" data-signal="WAIT" data-netsd-effect="DECREASE">
+<summary><strong>EFT1T — EfTEN Real Estate Fund</strong> | current action: WAIT | allocation target 22 shares | priority 16</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>22</td><td>+22</td><td>2.97%</td><td>EUR 19.5000</td><td>0.1102</td><td>36 / 23</td><td>45.79</td><td>Bearish</td><td>Inside bands</td><td>0.210 (Neutral)</td><td>HOLD</td><td>0.000879 (1.064% of portfolio HHI)</td><td>EUR 20,301</td><td>2.1%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>22</td><td>+22</td><td>2.97%</td><td>EUR 19.5000</td><td>0.1102</td><td>36 / 23</td><td>45.79</td><td>Bearish</td><td>Inside bands</td><td>0.210 (Neutral)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>0.000879 (1.064% of portfolio HHI)</td><td>EUR 20,301</td><td>2.1%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
 ![EFT1T Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/EFT1T_technicals_6m.png)
 
@@ -3901,11 +3903,11 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 **Current indicative buy and sell prices**
 
-| Current price | Buy below | Sell above | Price signal |
+| Current price | Buy below | Sell above | Bollinger price zone |
 | --- | --- | --- | --- |
 | EUR 19.5000 | EUR 19.3732 (-0.65%) | EUR 19.6568 (+0.80%) | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires both a positive allocation change and a BUY technical timing signal; WAIT means the model wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -4152,10 +4154,10 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-cpa1t" data-signal="HOLD" data-netsd-effect="DECREASE">
-<summary><strong>CPA1T — Coop Pank</strong> | HOLD | target 80 shares | priority 17</summary>
+<details markdown="1" class="stock-profile" id="share-cpa1t" data-signal="WAIT" data-netsd-effect="DECREASE">
+<summary><strong>CPA1T — Coop Pank</strong> | current action: WAIT | allocation target 80 shares | priority 17</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>80</td><td>+80</td><td>1.28%</td><td>EUR 2.3750</td><td>0.0593</td><td>30 / 23</td><td>68.35</td><td>Bullish</td><td>Above upper band</td><td>1.000 (Overbought)</td><td>HOLD</td><td>0.000163 (0.197% of portfolio HHI)</td><td>EUR 81,735</td><td>0.2%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>80</td><td>+80</td><td>1.28%</td><td>EUR 2.3750</td><td>0.0593</td><td>30 / 23</td><td>68.35</td><td>Bullish</td><td>Above upper band</td><td>1.000 (Overbought)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>0.000163 (0.197% of portfolio HHI)</td><td>EUR 81,735</td><td>0.2%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
 ![CPA1T Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/CPA1T_technicals_6m.png)
 
@@ -4163,11 +4165,11 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 **Current indicative buy and sell prices**
 
-| Current price | Buy below | Sell above | Price signal |
+| Current price | Buy below | Sell above | Bollinger price zone |
 | --- | --- | --- | --- |
 | EUR 2.3750 | EUR 2.2880 (-3.66%) | EUR 2.3855 (+0.44%) | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires both a positive allocation change and a BUY technical timing signal; WAIT means the model wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -4418,10 +4420,10 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-tkm1t" data-signal="HOLD" data-netsd-effect="DECREASE">
-<summary><strong>TKM1T — TKM Grupp</strong> | HOLD | target 315 shares | priority 18</summary>
+<details markdown="1" class="stock-profile" id="share-tkm1t" data-signal="WAIT" data-netsd-effect="DECREASE">
+<summary><strong>TKM1T — TKM Grupp</strong> | current action: WAIT | allocation target 315 shares | priority 18</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>288</td><td>315</td><td>+27</td><td>18.71%</td><td>EUR 8.9000</td><td>0.0508</td><td>29 / 23</td><td>28.25</td><td>Bearish</td><td>Inside bands</td><td>0.173 (Oversold)</td><td>HOLD</td><td>0.035001 (42.346% of portfolio HHI)</td><td>EUR 39,989</td><td>0.6%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>288</td><td>315</td><td>+27</td><td>18.71%</td><td>EUR 8.9000</td><td>0.0508</td><td>29 / 23</td><td>28.25</td><td>Bearish</td><td>Inside bands</td><td>0.173 (Oversold)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>0.035001 (42.346% of portfolio HHI)</td><td>EUR 39,989</td><td>0.6%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
 ![TKM1T Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/TKM1T_technicals_6m.png)
 
@@ -4429,11 +4431,11 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 **Current indicative buy and sell prices**
 
-| Current price | Buy below | Sell above | Price signal |
+| Current price | Buy below | Sell above | Bollinger price zone |
 | --- | --- | --- | --- |
 | EUR 8.9000 | EUR 8.8777 (-0.25%) | EUR 9.1003 (+2.25%) | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires both a positive allocation change and a BUY technical timing signal; WAIT means the model wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -4677,10 +4679,10 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-hae1t" data-signal="HOLD" data-netsd-effect="DECREASE">
-<summary><strong>HAE1T — Harju Elekter Group</strong> | HOLD | target 119 shares | priority 19</summary>
+<details markdown="1" class="stock-profile" id="share-hae1t" data-signal="WAIT" data-netsd-effect="DECREASE">
+<summary><strong>HAE1T — Harju Elekter Group</strong> | current action: WAIT | allocation target 119 shares | priority 19</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>100</td><td>119</td><td>+19</td><td>4.18%</td><td>EUR 5.2600</td><td>0.1102</td><td>37 / 24</td><td>60.43</td><td>Bullish</td><td>Inside bands</td><td>0.500 (Neutral)</td><td>HOLD</td><td>0.001743 (2.109% of portfolio HHI)</td><td>EUR 17,505</td><td>0.6%</td><td>1.2%</td><td>MEDIUM</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>100</td><td>119</td><td>+19</td><td>4.18%</td><td>EUR 5.2600</td><td>0.1102</td><td>37 / 24</td><td>60.43</td><td>Bullish</td><td>Inside bands</td><td>0.500 (Neutral)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>0.001743 (2.109% of portfolio HHI)</td><td>EUR 17,505</td><td>0.6%</td><td>1.2%</td><td>MEDIUM</td></tr></tbody></table>
 
 ![HAE1T Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/HAE1T_technicals_6m.png)
 
@@ -4688,11 +4690,11 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 **Current indicative buy and sell prices**
 
-| Current price | Buy below | Sell above | Price signal |
+| Current price | Buy below | Sell above | Bollinger price zone |
 | --- | --- | --- | --- |
 | EUR 5.2600 | EUR 5.0487 (-4.02%) | EUR 5.4613 (+3.83%) | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires both a positive allocation change and a BUY technical timing signal; WAIT means the model wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -4939,10 +4941,10 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-lhv1t" data-signal="HOLD" data-netsd-effect="DECREASE">
-<summary><strong>LHV1T — LHV Group</strong> | HOLD | target 12 shares | priority 20</summary>
+<details markdown="1" class="stock-profile" id="share-lhv1t" data-signal="WAIT" data-netsd-effect="DECREASE">
+<summary><strong>LHV1T — LHV Group</strong> | current action: WAIT | allocation target 12 shares | priority 20</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>12</td><td>+12</td><td>0.28%</td><td>EUR 3.2750</td><td>0.0847</td><td>34 / 24</td><td>55.85</td><td>Bullish</td><td>Inside bands</td><td>1.000 (Overbought)</td><td>HOLD</td><td>0.000008 (0.010% of portfolio HHI)</td><td>EUR 267,157</td><td>0.0%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>12</td><td>+12</td><td>0.28%</td><td>EUR 3.2750</td><td>0.0847</td><td>34 / 24</td><td>55.85</td><td>Bullish</td><td>Inside bands</td><td>1.000 (Overbought)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>0.000008 (0.010% of portfolio HHI)</td><td>EUR 267,157</td><td>0.0%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
 ![LHV1T Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/LHV1T_technicals_6m.png)
 
@@ -4950,11 +4952,11 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 **Current indicative buy and sell prices**
 
-| Current price | Buy below | Sell above | Price signal |
+| Current price | Buy below | Sell above | Bollinger price zone |
 | --- | --- | --- | --- |
 | EUR 3.2750 | EUR 3.2464 (-0.87%) | EUR 3.3031 (+0.86%) | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires both a positive allocation change and a BUY technical timing signal; WAIT means the model wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -5207,10 +5209,10 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-tve1t" data-signal="HOLD" data-netsd-effect="DECREASE">
-<summary><strong>TVE1T — Tallinna Vesi</strong> | HOLD | target 27 shares | priority 21</summary>
+<details markdown="1" class="stock-profile" id="share-tve1t" data-signal="WAIT" data-netsd-effect="DECREASE">
+<summary><strong>TVE1T — Tallinna Vesi</strong> | current action: WAIT | allocation target 27 shares | priority 21</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>27</td><td>+27</td><td>1.97%</td><td>EUR 10.8500</td><td>0.0593</td><td>33 / 26</td><td>52.74</td><td>Bullish</td><td>Inside bands</td><td>1.000 (Overbought)</td><td>HOLD</td><td>0.000388 (0.470% of portfolio HHI)</td><td>EUR 14,562</td><td>2.0%</td><td>1.2%</td><td>MEDIUM</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>27</td><td>+27</td><td>1.97%</td><td>EUR 10.8500</td><td>0.0593</td><td>33 / 26</td><td>52.74</td><td>Bullish</td><td>Inside bands</td><td>1.000 (Overbought)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>0.000388 (0.470% of portfolio HHI)</td><td>EUR 14,562</td><td>2.0%</td><td>1.2%</td><td>MEDIUM</td></tr></tbody></table>
 
 ![TVE1T Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/TVE1T_technicals_6m.png)
 
@@ -5218,11 +5220,11 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 **Current indicative buy and sell prices**
 
-| Current price | Buy below | Sell above | Price signal |
+| Current price | Buy below | Sell above | Bollinger price zone |
 | --- | --- | --- | --- |
 | EUR 10.8500 | EUR 10.8010 (-0.45%) | EUR 10.9290 (+0.73%) | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires both a positive allocation change and a BUY technical timing signal; WAIT means the model wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -5470,9 +5472,9 @@ The static figure is collapsed because the interactive plots above provide the d
 </details>
 
 <details markdown="1" class="stock-profile" id="share-saf1r" data-signal="HOLD" data-netsd-effect="UNCHANGED">
-<summary><strong>SAF1R — SAF Tehnika</strong> | HOLD | target 100 shares | priority 22</summary>
+<summary><strong>SAF1R — SAF Tehnika</strong> | current action: HOLD | allocation target 100 shares | priority 22</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>100</td><td>100</td><td>+0</td><td>10.90%</td><td>EUR 16.3500</td><td>-0.1186</td><td>12 / 26</td><td>45.66</td><td>Bearish</td><td>Inside bands</td><td>0.014 (Oversold)</td><td>HOLD</td><td>0.011881 (14.374% of portfolio HHI)</td><td>EUR 7,987</td><td>0.0%</td><td>2.4%</td><td>MEDIUM</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>100</td><td>100</td><td>+0</td><td>10.90%</td><td>EUR 16.3500</td><td>-0.1186</td><td>12 / 26</td><td>45.66</td><td>Bearish</td><td>Inside bands</td><td>0.014 (Oversold)</td><td>HOLD</td><td>HOLD</td><td>HOLD</td><td>0.011881 (14.374% of portfolio HHI)</td><td>EUR 7,987</td><td>0.0%</td><td>2.4%</td><td>MEDIUM</td></tr></tbody></table>
 
 ![SAF1R Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/SAF1R_technicals_6m.png)
 
@@ -5480,11 +5482,11 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 **Current indicative buy and sell prices**
 
-| Current price | Buy below | Sell above | Price signal |
+| Current price | Buy below | Sell above | Bollinger price zone |
 | --- | --- | --- | --- |
 | EUR 16.3500 | EUR 16.0314 (-1.95%) | EUR 17.1186 (+4.70%) | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires both a positive allocation change and a BUY technical timing signal; WAIT means the model wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -5715,9 +5717,9 @@ The static figure is collapsed because the interactive plots above provide the d
 </details>
 
 <details markdown="1" class="stock-profile" id="share-tsm1t" data-signal="HOLD" data-netsd-effect="UNCHANGED">
-<summary><strong>TSM1T — Tallinna Sadam</strong> | HOLD | target 330 shares | priority 23</summary>
+<summary><strong>TSM1T — Tallinna Sadam</strong> | current action: HOLD | allocation target 330 shares | priority 23</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>330</td><td>330</td><td>+0</td><td>2.65%</td><td>EUR 1.2040</td><td>-0.0085</td><td>30 / 31</td><td>41.68</td><td>Bullish</td><td>Inside bands</td><td>0.592 (Neutral)</td><td>HOLD</td><td>0.000702 (0.849% of portfolio HHI)</td><td>EUR 45,487</td><td>0.0%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>330</td><td>330</td><td>+0</td><td>2.65%</td><td>EUR 1.2040</td><td>-0.0085</td><td>30 / 31</td><td>41.68</td><td>Bullish</td><td>Inside bands</td><td>0.592 (Neutral)</td><td>HOLD</td><td>HOLD</td><td>HOLD</td><td>0.000702 (0.849% of portfolio HHI)</td><td>EUR 45,487</td><td>0.0%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
 ![TSM1T Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/TSM1T_technicals_6m.png)
 
@@ -5725,11 +5727,11 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 **Current indicative buy and sell prices**
 
-| Current price | Buy below | Sell above | Price signal |
+| Current price | Buy below | Sell above | Bollinger price zone |
 | --- | --- | --- | --- |
 | EUR 1.2040 | EUR 1.2009 (-0.25%) | EUR 1.2181 (+1.17%) | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The price signal uses these concrete limits only; the separate technical decision above combines all four indicators. These descriptive limits will be replaced when the walk-forward acceptable-price model is validated.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires both a positive allocation change and a BUY technical timing signal; WAIT means the model wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -6047,7 +6049,7 @@ Each scenario removes one share from curent_update_baltic and proportionally res
 
 
 
-Diagnostic priority 1 denotes the largest admissible individual-share netSD ratio after shares with IN>0 are moved to the end. It is not an execution order and does not rank the complete portfolio effect. Dividend columns use only official payments dated in 2025 and 2026. Annual dividend cash equals dividend per share multiplied by the target number of shares.
+current_execution_decision is the only action recommendation. BUY requires both a positive allocation change and BUY technical timing; WAIT means the target quantity is higher but current timing does not support buying; HOLD means no allocation change; SELL means a negative allocation change. Diagnostic priority is not an execution order. Dividend columns use official 2025 and 2026 payments.
 
 curent_update_baltic keeps every currently held share, permits purchases only, and uses the EUR 15,000 ceiling. Its calculated netSD is 0.813559, with OUT=96 and IN=0; the remaining cash is EUR 60.94.
 
@@ -6064,7 +6066,7 @@ curent_update_baltic keeps every currently held share, permits purchases only, a
 
 
 <details markdown="1">
-<summary><strong>Figure 1. Recommended changes relative to current holdings: two adjacent portfolio bars for every share</strong></summary>
+<summary><strong>Figure 1. Optimiser target changes relative to current holdings: two adjacent portfolio bars for every share</strong></summary>
 
 ![Report figure 1](report/assets/figure-01.png)
 
