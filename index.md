@@ -68,7 +68,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-25 14:54 (Europe/Vilnius); return analysis through 2026-10-23; valuation prices through 2026-10-23
+# Baltic investment plan - updated 2026-10-25 15:45 (Europe/Vilnius); return analysis through 2026-10-23; valuation prices through 2026-10-23
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -210,13 +210,17 @@ Select a share to display its allocation, technical indicators, all PerformanceA
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
-**Current indicative buy and sell prices**
+**Current indicative prices and four-indicator signals**
 
-| Current price | Buy below | Sell above | Bollinger price zone |
-| --- | --- | --- | --- |
-| EUR 0.4790 | EUR 0.4764 (-0.55%) | EUR 0.4911 (+2.54%) | HOLD |
+| Indicator | Current value | BUY condition | SELL condition | Current signal |
+| --- | --- | --- | --- | --- |
+| Bollinger price | EUR 0.4790 | ≤ EUR 0.4764 (-0.55%) | ≥ EUR 0.4911 (+2.54%) | HOLD |
+| RSI(14) | 36.14 | ≤ 30 | ≥ 70 | HOLD |
+| Stochastic RSI %K | 0.422 | ≤ 0.20 | ≥ 0.80 | HOLD |
+| MACD | -0.0030; signal -0.0024 | MACD > signal | MACD < signal | SELL |
+| Consensus | BUY 0/4; SELL 1/4; neutral 3/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires an economically material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD.
+The Bollinger thresholds are the current 20-observation lower and upper bands. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD. Current execution decision also considers the required allocation change and its economic size.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -228,7 +232,7 @@ Buy below and Sell above are the current 20-observation Bollinger lower and uppe
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![KNE1L return histogram](figures/stock_profiles/KNE1L_histogram.png?v=1792850135)
+![KNE1L return histogram](figures/stock_profiles/KNE1L_histogram.png?v=1792933175)
 
 </details>
 
@@ -357,7 +361,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![KNE1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/KNE1L_all_frontiers.png?v=1792850681)
+![KNE1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/KNE1L_all_frontiers.png?v=1792933680)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -432,7 +436,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![KNE1L high-resolution stochastic dominance](figures/stock_profiles/KNE1L_FSD_SSD_TSD.png?v=1792850960)
+![KNE1L high-resolution stochastic dominance](figures/stock_profiles/KNE1L_FSD_SSD_TSD.png?v=1792933508)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -453,13 +457,17 @@ The static figure is collapsed because the interactive plots above provide the d
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
-**Current indicative buy and sell prices**
+**Current indicative prices and four-indicator signals**
 
-| Current price | Buy below | Sell above | Bollinger price zone |
-| --- | --- | --- | --- |
-| EUR 15.7500 | EUR 15.0987 (-4.14%) | EUR 15.8663 (+0.74%) | HOLD |
+| Indicator | Current value | BUY condition | SELL condition | Current signal |
+| --- | --- | --- | --- | --- |
+| Bollinger price | EUR 15.7500 | ≤ EUR 15.0987 (-4.14%) | ≥ EUR 15.8663 (+0.74%) | HOLD |
+| RSI(14) | 61.54 | ≤ 30 | ≥ 70 | HOLD |
+| Stochastic RSI %K | 0.492 | ≤ 0.20 | ≥ 0.80 | HOLD |
+| MACD | 0.1149; signal 0.0686 | MACD > signal | MACD < signal | BUY |
+| Consensus | BUY 1/4; SELL 0/4; neutral 3/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires an economically material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD.
+The Bollinger thresholds are the current 20-observation lower and upper bands. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD. Current execution decision also considers the required allocation change and its economic size.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -471,7 +479,7 @@ Buy below and Sell above are the current 20-observation Bollinger lower and uppe
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![VLP1L return histogram](figures/stock_profiles/VLP1L_histogram.png?v=1792850137)
+![VLP1L return histogram](figures/stock_profiles/VLP1L_histogram.png?v=1792933176)
 
 </details>
 
@@ -599,7 +607,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![VLP1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/VLP1L_all_frontiers.png?v=1792850676)
+![VLP1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/VLP1L_all_frontiers.png?v=1792933675)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -674,7 +682,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![VLP1L high-resolution stochastic dominance](figures/stock_profiles/VLP1L_FSD_SSD_TSD.png?v=1792851006)
+![VLP1L high-resolution stochastic dominance](figures/stock_profiles/VLP1L_FSD_SSD_TSD.png?v=1792933519)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -695,13 +703,17 @@ The static figure is collapsed because the interactive plots above provide the d
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
-**Current indicative buy and sell prices**
+**Current indicative prices and four-indicator signals**
 
-| Current price | Buy below | Sell above | Bollinger price zone |
-| --- | --- | --- | --- |
-| EUR 27.0000 | EUR 26.9752 (-0.09%) | EUR 27.1698 (+0.63%) | HOLD |
+| Indicator | Current value | BUY condition | SELL condition | Current signal |
+| --- | --- | --- | --- | --- |
+| Bollinger price | EUR 27.0000 | ≤ EUR 26.9752 (-0.09%) | ≥ EUR 27.1698 (+0.63%) | HOLD |
+| RSI(14) | 44.83 | ≤ 30 | ≥ 70 | HOLD |
+| Stochastic RSI %K | 0.000 | ≤ 0.20 | ≥ 0.80 | BUY |
+| MACD | -0.0162; signal -0.0059 | MACD > signal | MACD < signal | SELL |
+| Consensus | BUY 1/4; SELL 1/4; neutral 2/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires an economically material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD.
+The Bollinger thresholds are the current 20-observation lower and upper bands. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD. Current execution decision also considers the required allocation change and its economic size.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -713,7 +725,7 @@ Buy below and Sell above are the current 20-observation Bollinger lower and uppe
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![MRK1T return histogram](figures/stock_profiles/MRK1T_histogram.png?v=1792850131)
+![MRK1T return histogram](figures/stock_profiles/MRK1T_histogram.png?v=1792933171)
 
 </details>
 
@@ -860,7 +872,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![MRK1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/MRK1T_all_frontiers.png?v=1792850677)
+![MRK1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/MRK1T_all_frontiers.png?v=1792933676)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -935,7 +947,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![MRK1T high-resolution stochastic dominance](figures/stock_profiles/MRK1T_FSD_SSD_TSD.png?v=1792850971)
+![MRK1T high-resolution stochastic dominance](figures/stock_profiles/MRK1T_FSD_SSD_TSD.png?v=1792933291)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -956,13 +968,17 @@ The static figure is collapsed because the interactive plots above provide the d
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
-**Current indicative buy and sell prices**
+**Current indicative prices and four-indicator signals**
 
-| Current price | Buy below | Sell above | Bollinger price zone |
-| --- | --- | --- | --- |
-| EUR 20.6000 | EUR 17.8599 (-13.30%) | EUR 23.7501 (+15.29%) | HOLD |
+| Indicator | Current value | BUY condition | SELL condition | Current signal |
+| --- | --- | --- | --- | --- |
+| Bollinger price | EUR 20.6000 | ≤ EUR 17.8599 (-13.30%) | ≥ EUR 23.7501 (+15.29%) | HOLD |
+| RSI(14) | 53.51 | ≤ 30 | ≥ 70 | HOLD |
+| Stochastic RSI %K | 0.000 | ≤ 0.20 | ≥ 0.80 | BUY |
+| MACD | 0.5549; signal 0.6204 | MACD > signal | MACD < signal | SELL |
+| Consensus | BUY 1/4; SELL 1/4; neutral 2/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires an economically material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD.
+The Bollinger thresholds are the current 20-observation lower and upper bands. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD. Current execution decision also considers the required allocation change and its economic size.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -974,7 +990,7 @@ Buy below and Sell above are the current 20-observation Bollinger lower and uppe
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![MOLNR return histogram](figures/stock_profiles/MOLNR_histogram.png?v=1792850132)
+![MOLNR return histogram](figures/stock_profiles/MOLNR_histogram.png?v=1792933172)
 
 </details>
 
@@ -1089,7 +1105,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![MOLNR Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/MOLNR_all_frontiers.png?v=1792850679)
+![MOLNR Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/MOLNR_all_frontiers.png?v=1792933679)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -1164,7 +1180,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![MOLNR high-resolution stochastic dominance](figures/stock_profiles/MOLNR_FSD_SSD_TSD.png?v=1792850967)
+![MOLNR high-resolution stochastic dominance](figures/stock_profiles/MOLNR_FSD_SSD_TSD.png?v=1792933288)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -1185,13 +1201,17 @@ The static figure is collapsed because the interactive plots above provide the d
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
-**Current indicative buy and sell prices**
+**Current indicative prices and four-indicator signals**
 
-| Current price | Buy below | Sell above | Bollinger price zone |
-| --- | --- | --- | --- |
-| EUR 3.8200 | EUR 3.7878 (-0.84%) | EUR 3.8642 (+1.16%) | HOLD |
+| Indicator | Current value | BUY condition | SELL condition | Current signal |
+| --- | --- | --- | --- | --- |
+| Bollinger price | EUR 3.8200 | ≤ EUR 3.7878 (-0.84%) | ≥ EUR 3.8642 (+1.16%) | HOLD |
+| RSI(14) | 39.86 | ≤ 30 | ≥ 70 | HOLD |
+| Stochastic RSI %K | 1.000 | ≤ 0.20 | ≥ 0.80 | SELL |
+| MACD | -0.0251; signal -0.0283 | MACD > signal | MACD < signal | BUY |
+| Consensus | BUY 1/4; SELL 1/4; neutral 2/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires an economically material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD.
+The Bollinger thresholds are the current 20-observation lower and upper bands. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD. Current execution decision also considers the required allocation change and its economic size.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -1203,7 +1223,7 @@ Buy below and Sell above are the current 20-observation Bollinger lower and uppe
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![APG1L return histogram](figures/stock_profiles/APG1L_histogram.png?v=1792850135)
+![APG1L return histogram](figures/stock_profiles/APG1L_histogram.png?v=1792933174)
 
 </details>
 
@@ -1378,7 +1398,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![APG1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/APG1L_all_frontiers.png?v=1792850674)
+![APG1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/APG1L_all_frontiers.png?v=1792933674)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -1453,7 +1473,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![APG1L high-resolution stochastic dominance](figures/stock_profiles/APG1L_FSD_SSD_TSD.png?v=1792850922)
+![APG1L high-resolution stochastic dominance](figures/stock_profiles/APG1L_FSD_SSD_TSD.png?v=1792933486)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -1474,13 +1494,17 @@ The static figure is collapsed because the interactive plots above provide the d
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
-**Current indicative buy and sell prices**
+**Current indicative prices and four-indicator signals**
 
-| Current price | Buy below | Sell above | Bollinger price zone |
-| --- | --- | --- | --- |
-| EUR 1.0100 | EUR 0.9963 (-1.35%) | EUR 1.0226 (+1.24%) | HOLD |
+| Indicator | Current value | BUY condition | SELL condition | Current signal |
+| --- | --- | --- | --- | --- |
+| Bollinger price | EUR 1.0100 | ≤ EUR 0.9963 (-1.35%) | ≥ EUR 1.0226 (+1.24%) | HOLD |
+| RSI(14) | 50.37 | ≤ 30 | ≥ 70 | HOLD |
+| Stochastic RSI %K | 0.696 | ≤ 0.20 | ≥ 0.80 | HOLD |
+| MACD | -0.0022; signal -0.0027 | MACD > signal | MACD < signal | BUY |
+| Consensus | BUY 1/4; SELL 0/4; neutral 3/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires an economically material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD.
+The Bollinger thresholds are the current 20-observation lower and upper bands. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD. Current execution decision also considers the required allocation change and its economic size.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -1492,7 +1516,7 @@ Buy below and Sell above are the current 20-observation Bollinger lower and uppe
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![GRG1L return histogram](figures/stock_profiles/GRG1L_histogram.png?v=1792850135)
+![GRG1L return histogram](figures/stock_profiles/GRG1L_histogram.png?v=1792933175)
 
 </details>
 
@@ -1584,7 +1608,7 @@ A direction reversal requires opposite fitted price slopes during the ten tradin
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![GRG1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/GRG1L_all_frontiers.png?v=1792850678)
+![GRG1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/GRG1L_all_frontiers.png?v=1792933678)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -1659,7 +1683,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![GRG1L high-resolution stochastic dominance](figures/stock_profiles/GRG1L_FSD_SSD_TSD.png?v=1792850946)
+![GRG1L high-resolution stochastic dominance](figures/stock_profiles/GRG1L_FSD_SSD_TSD.png?v=1792933510)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -1680,13 +1704,17 @@ The static figure is collapsed because the interactive plots above provide the d
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
-**Current indicative buy and sell prices**
+**Current indicative prices and four-indicator signals**
 
-| Current price | Buy below | Sell above | Bollinger price zone |
-| --- | --- | --- | --- |
-| EUR 4.4000 | EUR 4.4100 (+0.23%) | EUR 4.5460 (+3.32%) | BUY |
+| Indicator | Current value | BUY condition | SELL condition | Current signal |
+| --- | --- | --- | --- | --- |
+| Bollinger price | EUR 4.4000 | ≤ EUR 4.4100 (+0.23%) | ≥ EUR 4.5460 (+3.32%) | BUY |
+| RSI(14) | 33.46 | ≤ 30 | ≥ 70 | HOLD |
+| Stochastic RSI %K | 0.000 | ≤ 0.20 | ≥ 0.80 | BUY |
+| MACD | -0.0172; signal -0.0100 | MACD > signal | MACD < signal | SELL |
+| Consensus | BUY 2/4; SELL 1/4; neutral 1/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires an economically material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD.
+The Bollinger thresholds are the current 20-observation lower and upper bands. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD. Current execution decision also considers the required allocation change and its economic size.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -1698,7 +1726,7 @@ Buy below and Sell above are the current 20-observation Bollinger lower and uppe
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![RSU1L return histogram](figures/stock_profiles/RSU1L_histogram.png?v=1792850131)
+![RSU1L return histogram](figures/stock_profiles/RSU1L_histogram.png?v=1792933172)
 
 </details>
 
@@ -1813,7 +1841,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![RSU1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/RSU1L_all_frontiers.png?v=1792850685)
+![RSU1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/RSU1L_all_frontiers.png?v=1792933683)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -1888,7 +1916,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![RSU1L high-resolution stochastic dominance](figures/stock_profiles/RSU1L_FSD_SSD_TSD.png?v=1792850981)
+![RSU1L high-resolution stochastic dominance](figures/stock_profiles/RSU1L_FSD_SSD_TSD.png?v=1792933268)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -1909,13 +1937,17 @@ The static figure is collapsed because the interactive plots above provide the d
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
-**Current indicative buy and sell prices**
+**Current indicative prices and four-indicator signals**
 
-| Current price | Buy below | Sell above | Bollinger price zone |
-| --- | --- | --- | --- |
-| EUR 21.7000 | EUR 21.6273 (-0.34%) | EUR 21.8577 (+0.73%) | HOLD |
+| Indicator | Current value | BUY condition | SELL condition | Current signal |
+| --- | --- | --- | --- | --- |
+| Bollinger price | EUR 21.7000 | ≤ EUR 21.6273 (-0.34%) | ≥ EUR 21.8577 (+0.73%) | HOLD |
+| RSI(14) | 42.87 | ≤ 30 | ≥ 70 | HOLD |
+| Stochastic RSI %K | 0.737 | ≤ 0.20 | ≥ 0.80 | HOLD |
+| MACD | -0.0946; signal -0.1112 | MACD > signal | MACD < signal | BUY |
+| Consensus | BUY 1/4; SELL 0/4; neutral 3/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires an economically material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD.
+The Bollinger thresholds are the current 20-observation lower and upper bands. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD. Current execution decision also considers the required allocation change and its economic size.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -1927,7 +1959,7 @@ Buy below and Sell above are the current 20-observation Bollinger lower and uppe
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![IGN1L return histogram](figures/stock_profiles/IGN1L_histogram.png?v=1792850134)
+![IGN1L return histogram](figures/stock_profiles/IGN1L_histogram.png?v=1792933174)
 
 </details>
 
@@ -2066,7 +2098,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![IGN1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/IGN1L_all_frontiers.png?v=1792850686)
+![IGN1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/IGN1L_all_frontiers.png?v=1792933684)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -2141,7 +2173,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![IGN1L high-resolution stochastic dominance](figures/stock_profiles/IGN1L_FSD_SSD_TSD.png?v=1792850955)
+![IGN1L high-resolution stochastic dominance](figures/stock_profiles/IGN1L_FSD_SSD_TSD.png?v=1792933385)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -2162,13 +2194,17 @@ The static figure is collapsed because the interactive plots above provide the d
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
-**Current indicative buy and sell prices**
+**Current indicative prices and four-indicator signals**
 
-| Current price | Buy below | Sell above | Bollinger price zone |
-| --- | --- | --- | --- |
-| EUR 1.7750 | EUR 1.7470 (-1.58%) | EUR 1.8240 (+2.76%) | HOLD |
+| Indicator | Current value | BUY condition | SELL condition | Current signal |
+| --- | --- | --- | --- | --- |
+| Bollinger price | EUR 1.7750 | ≤ EUR 1.7470 (-1.58%) | ≥ EUR 1.8240 (+2.76%) | HOLD |
+| RSI(14) | 51.45 | ≤ 30 | ≥ 70 | HOLD |
+| Stochastic RSI %K | 0.135 | ≤ 0.20 | ≥ 0.80 | BUY |
+| MACD | 0.0052; signal 0.0093 | MACD > signal | MACD < signal | SELL |
+| Consensus | BUY 1/4; SELL 1/4; neutral 2/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires an economically material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD.
+The Bollinger thresholds are the current 20-observation lower and upper bands. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD. Current execution decision also considers the required allocation change and its economic size.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -2180,7 +2216,7 @@ Buy below and Sell above are the current 20-observation Bollinger lower and uppe
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![PZV1L return histogram](figures/stock_profiles/PZV1L_histogram.png?v=1792850131)
+![PZV1L return histogram](figures/stock_profiles/PZV1L_histogram.png?v=1792933171)
 
 </details>
 
@@ -2308,7 +2344,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![PZV1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/PZV1L_all_frontiers.png?v=1792850687)
+![PZV1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/PZV1L_all_frontiers.png?v=1792933685)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -2383,7 +2419,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![PZV1L high-resolution stochastic dominance](figures/stock_profiles/PZV1L_FSD_SSD_TSD.png?v=1792850974)
+![PZV1L high-resolution stochastic dominance](figures/stock_profiles/PZV1L_FSD_SSD_TSD.png?v=1792933289)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -2404,13 +2440,17 @@ The static figure is collapsed because the interactive plots above provide the d
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
-**Current indicative buy and sell prices**
+**Current indicative prices and four-indicator signals**
 
-| Current price | Buy below | Sell above | Bollinger price zone |
-| --- | --- | --- | --- |
-| EUR 1.8500 | EUR 1.7524 (-5.27%) | EUR 1.8706 (+1.11%) | HOLD |
+| Indicator | Current value | BUY condition | SELL condition | Current signal |
+| --- | --- | --- | --- | --- |
+| Bollinger price | EUR 1.8500 | ≤ EUR 1.7524 (-5.27%) | ≥ EUR 1.8706 (+1.11%) | HOLD |
+| RSI(14) | 78.10 | ≤ 30 | ≥ 70 | SELL |
+| Stochastic RSI %K | 0.855 | ≤ 0.20 | ≥ 0.80 | SELL |
+| MACD | 0.0219; signal 0.0184 | MACD > signal | MACD < signal | BUY |
+| Consensus | BUY 1/4; SELL 2/4; neutral 1/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires an economically material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD.
+The Bollinger thresholds are the current 20-observation lower and upper bands. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD. Current execution decision also considers the required allocation change and its economic size.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -2422,7 +2462,7 @@ Buy below and Sell above are the current 20-observation Bollinger lower and uppe
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![AKO1L return histogram](figures/stock_profiles/AKO1L_histogram.png?v=1792850135)
+![AKO1L return histogram](figures/stock_profiles/AKO1L_histogram.png?v=1792933175)
 
 </details>
 
@@ -2550,7 +2590,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![AKO1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/AKO1L_all_frontiers.png?v=1792850687)
+![AKO1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/AKO1L_all_frontiers.png?v=1792933685)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -2625,7 +2665,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![AKO1L high-resolution stochastic dominance](figures/stock_profiles/AKO1L_FSD_SSD_TSD.png?v=1792850918)
+![AKO1L high-resolution stochastic dominance](figures/stock_profiles/AKO1L_FSD_SSD_TSD.png?v=1792933497)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -2646,13 +2686,17 @@ The static figure is collapsed because the interactive plots above provide the d
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
-**Current indicative buy and sell prices**
+**Current indicative prices and four-indicator signals**
 
-| Current price | Buy below | Sell above | Bollinger price zone |
-| --- | --- | --- | --- |
-| EUR 4.4100 | EUR 4.4023 (-0.18%) | EUR 4.4447 (+0.79%) | HOLD |
+| Indicator | Current value | BUY condition | SELL condition | Current signal |
+| --- | --- | --- | --- | --- |
+| Bollinger price | EUR 4.4100 | ≤ EUR 4.4023 (-0.18%) | ≥ EUR 4.4447 (+0.79%) | HOLD |
+| RSI(14) | 49.23 | ≤ 30 | ≥ 70 | HOLD |
+| Stochastic RSI %K | 0.297 | ≤ 0.20 | ≥ 0.80 | HOLD |
+| MACD | 0.0043; signal 0.0098 | MACD > signal | MACD < signal | SELL |
+| Consensus | BUY 0/4; SELL 1/4; neutral 3/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires an economically material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD.
+The Bollinger thresholds are the current 20-observation lower and upper bands. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD. Current execution decision also considers the required allocation change and its economic size.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -2664,7 +2708,7 @@ Buy below and Sell above are the current 20-observation Bollinger lower and uppe
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![VIRSI return histogram](figures/stock_profiles/VIRSI_histogram.png?v=1792850133)
+![VIRSI return histogram](figures/stock_profiles/VIRSI_histogram.png?v=1792933174)
 
 </details>
 
@@ -2793,7 +2837,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![VIRSI Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/VIRSI_all_frontiers.png?v=1792850688)
+![VIRSI Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/VIRSI_all_frontiers.png?v=1792933686)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -2868,7 +2912,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![VIRSI high-resolution stochastic dominance](figures/stock_profiles/VIRSI_FSD_SSD_TSD.png?v=1792851003)
+![VIRSI high-resolution stochastic dominance](figures/stock_profiles/VIRSI_FSD_SSD_TSD.png?v=1792933392)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -2889,13 +2933,17 @@ The static figure is collapsed because the interactive plots above provide the d
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
-**Current indicative buy and sell prices**
+**Current indicative prices and four-indicator signals**
 
-| Current price | Buy below | Sell above | Bollinger price zone |
-| --- | --- | --- | --- |
-| EUR 0.8820 | EUR 0.8688 (-1.49%) | EUR 0.9079 (+2.93%) | HOLD |
+| Indicator | Current value | BUY condition | SELL condition | Current signal |
+| --- | --- | --- | --- | --- |
+| Bollinger price | EUR 0.8820 | ≤ EUR 0.8688 (-1.49%) | ≥ EUR 0.9079 (+2.93%) | HOLD |
+| RSI(14) | 45.19 | ≤ 30 | ≥ 70 | HOLD |
+| Stochastic RSI %K | 0.453 | ≤ 0.20 | ≥ 0.80 | HOLD |
+| MACD | -0.0021; signal -0.0015 | MACD > signal | MACD < signal | SELL |
+| Consensus | BUY 0/4; SELL 1/4; neutral 3/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires an economically material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD.
+The Bollinger thresholds are the current 20-observation lower and upper bands. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD. Current execution decision also considers the required allocation change and its economic size.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -2907,7 +2955,7 @@ Buy below and Sell above are the current 20-observation Bollinger lower and uppe
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![ROE1L return histogram](figures/stock_profiles/ROE1L_histogram.png?v=1792850133)
+![ROE1L return histogram](figures/stock_profiles/ROE1L_histogram.png?v=1792933173)
 
 </details>
 
@@ -3043,7 +3091,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![ROE1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/ROE1L_all_frontiers.png?v=1792850678)
+![ROE1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/ROE1L_all_frontiers.png?v=1792933677)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -3118,7 +3166,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![ROE1L high-resolution stochastic dominance](figures/stock_profiles/ROE1L_FSD_SSD_TSD.png?v=1792850978)
+![ROE1L high-resolution stochastic dominance](figures/stock_profiles/ROE1L_FSD_SSD_TSD.png?v=1792933412)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -3139,13 +3187,17 @@ The static figure is collapsed because the interactive plots above provide the d
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
-**Current indicative buy and sell prices**
+**Current indicative prices and four-indicator signals**
 
-| Current price | Buy below | Sell above | Bollinger price zone |
-| --- | --- | --- | --- |
-| EUR 1.7000 | EUR 1.5696 (-7.67%) | EUR 1.7844 (+4.97%) | HOLD |
+| Indicator | Current value | BUY condition | SELL condition | Current signal |
+| --- | --- | --- | --- | --- |
+| Bollinger price | EUR 1.7000 | ≤ EUR 1.5696 (-7.67%) | ≥ EUR 1.7844 (+4.97%) | HOLD |
+| RSI(14) | 60.14 | ≤ 30 | ≥ 70 | HOLD |
+| Stochastic RSI %K | 0.000 | ≤ 0.20 | ≥ 0.80 | BUY |
+| MACD | 0.0336; signal 0.0370 | MACD > signal | MACD < signal | SELL |
+| Consensus | BUY 1/4; SELL 1/4; neutral 2/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires an economically material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD.
+The Bollinger thresholds are the current 20-observation lower and upper bands. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD. Current execution decision also considers the required allocation change and its economic size.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -3157,7 +3209,7 @@ Buy below and Sell above are the current 20-observation Bollinger lower and uppe
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![DGR1R return histogram](figures/stock_profiles/DGR1R_histogram.png?v=1792850137)
+![DGR1R return histogram](figures/stock_profiles/DGR1R_histogram.png?v=1792933177)
 
 </details>
 
@@ -3332,7 +3384,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![DGR1R Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/DGR1R_all_frontiers.png?v=1792850684)
+![DGR1R Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/DGR1R_all_frontiers.png?v=1792933683)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -3407,7 +3459,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![DGR1R high-resolution stochastic dominance](figures/stock_profiles/DGR1R_FSD_SSD_TSD.png?v=1792850932)
+![DGR1R high-resolution stochastic dominance](figures/stock_profiles/DGR1R_FSD_SSD_TSD.png?v=1792933520)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -3428,13 +3480,17 @@ The static figure is collapsed because the interactive plots above provide the d
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
-**Current indicative buy and sell prices**
+**Current indicative prices and four-indicator signals**
 
-| Current price | Buy below | Sell above | Bollinger price zone |
-| --- | --- | --- | --- |
-| EUR 19.3500 | EUR 19.3537 (+0.02%) | EUR 19.6563 (+1.58%) | BUY |
+| Indicator | Current value | BUY condition | SELL condition | Current signal |
+| --- | --- | --- | --- | --- |
+| Bollinger price | EUR 19.3500 | ≤ EUR 19.3537 (+0.02%) | ≥ EUR 19.6563 (+1.58%) | BUY |
+| RSI(14) | 41.29 | ≤ 30 | ≥ 70 | HOLD |
+| Stochastic RSI %K | 0.000 | ≤ 0.20 | ≥ 0.80 | BUY |
+| MACD | -0.0241; signal -0.0098 | MACD > signal | MACD < signal | SELL |
+| Consensus | BUY 2/4; SELL 1/4; neutral 1/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires an economically material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD.
+The Bollinger thresholds are the current 20-observation lower and upper bands. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD. Current execution decision also considers the required allocation change and its economic size.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -3446,7 +3502,7 @@ Buy below and Sell above are the current 20-observation Bollinger lower and uppe
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![EFT1T return histogram](figures/stock_profiles/EFT1T_histogram.png?v=1792850134)
+![EFT1T return histogram](figures/stock_profiles/EFT1T_histogram.png?v=1792933174)
 
 </details>
 
@@ -3594,7 +3650,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![EFT1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/EFT1T_all_frontiers.png?v=1792850682)
+![EFT1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/EFT1T_all_frontiers.png?v=1792933681)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -3669,7 +3725,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![EFT1T high-resolution stochastic dominance](figures/stock_profiles/EFT1T_FSD_SSD_TSD.png?v=1792850936)
+![EFT1T high-resolution stochastic dominance](figures/stock_profiles/EFT1T_FSD_SSD_TSD.png?v=1792933387)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -3690,13 +3746,17 @@ The static figure is collapsed because the interactive plots above provide the d
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
-**Current indicative buy and sell prices**
+**Current indicative prices and four-indicator signals**
 
-| Current price | Buy below | Sell above | Bollinger price zone |
-| --- | --- | --- | --- |
-| EUR 16.2000 | EUR 16.0037 (-1.21%) | EUR 17.1263 (+5.72%) | HOLD |
+| Indicator | Current value | BUY condition | SELL condition | Current signal |
+| --- | --- | --- | --- | --- |
+| Bollinger price | EUR 16.2000 | ≤ EUR 16.0037 (-1.21%) | ≥ EUR 17.1263 (+5.72%) | HOLD |
+| RSI(14) | 42.00 | ≤ 30 | ≥ 70 | HOLD |
+| Stochastic RSI %K | 0.000 | ≤ 0.20 | ≥ 0.80 | BUY |
+| MACD | -0.0618; signal 0.0102 | MACD > signal | MACD < signal | SELL |
+| Consensus | BUY 1/4; SELL 1/4; neutral 2/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires an economically material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD.
+The Bollinger thresholds are the current 20-observation lower and upper bands. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD. Current execution decision also considers the required allocation change and its economic size.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -3708,7 +3768,7 @@ Buy below and Sell above are the current 20-observation Bollinger lower and uppe
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![SAF1R return histogram](figures/stock_profiles/SAF1R_histogram.png?v=1792850133)
+![SAF1R return histogram](figures/stock_profiles/SAF1R_histogram.png?v=1792933173)
 
 </details>
 
@@ -3840,7 +3900,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![SAF1R Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/SAF1R_all_frontiers.png?v=1792850674)
+![SAF1R Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/SAF1R_all_frontiers.png?v=1792933674)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -3915,7 +3975,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![SAF1R high-resolution stochastic dominance](figures/stock_profiles/SAF1R_FSD_SSD_TSD.png?v=1792850984)
+![SAF1R high-resolution stochastic dominance](figures/stock_profiles/SAF1R_FSD_SSD_TSD.png?v=1792933397)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -3936,13 +3996,17 @@ The static figure is collapsed because the interactive plots above provide the d
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
-**Current indicative buy and sell prices**
+**Current indicative prices and four-indicator signals**
 
-| Current price | Buy below | Sell above | Bollinger price zone |
-| --- | --- | --- | --- |
-| EUR 1.2000 | EUR 1.1991 (-0.08%) | EUR 1.2177 (+1.48%) | HOLD |
+| Indicator | Current value | BUY condition | SELL condition | Current signal |
+| --- | --- | --- | --- | --- |
+| Bollinger price | EUR 1.2000 | ≤ EUR 1.1991 (-0.08%) | ≥ EUR 1.2177 (+1.48%) | HOLD |
+| RSI(14) | 40.77 | ≤ 30 | ≥ 70 | HOLD |
+| Stochastic RSI %K | 0.478 | ≤ 0.20 | ≥ 0.80 | HOLD |
+| MACD | -0.0043; signal -0.0042 | MACD > signal | MACD < signal | SELL |
+| Consensus | BUY 0/4; SELL 1/4; neutral 3/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires an economically material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD.
+The Bollinger thresholds are the current 20-observation lower and upper bands. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD. Current execution decision also considers the required allocation change and its economic size.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -3954,7 +4018,7 @@ Buy below and Sell above are the current 20-observation Bollinger lower and uppe
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![TSM1T return histogram](figures/stock_profiles/TSM1T_histogram.png?v=1792850135)
+![TSM1T return histogram](figures/stock_profiles/TSM1T_histogram.png?v=1792933176)
 
 </details>
 
@@ -4096,7 +4160,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![TSM1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TSM1T_all_frontiers.png?v=1792850683)
+![TSM1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TSM1T_all_frontiers.png?v=1792933682)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -4171,7 +4235,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![TSM1T high-resolution stochastic dominance](figures/stock_profiles/TSM1T_FSD_SSD_TSD.png?v=1792850996)
+![TSM1T high-resolution stochastic dominance](figures/stock_profiles/TSM1T_FSD_SSD_TSD.png?v=1792933492)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -4192,13 +4256,17 @@ The static figure is collapsed because the interactive plots above provide the d
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
-**Current indicative buy and sell prices**
+**Current indicative prices and four-indicator signals**
 
-| Current price | Buy below | Sell above | Bollinger price zone |
-| --- | --- | --- | --- |
-| EUR 0.6500 | EUR 0.6419 (-1.25%) | EUR 0.6498 (-0.03%) | SELL |
+| Indicator | Current value | BUY condition | SELL condition | Current signal |
+| --- | --- | --- | --- | --- |
+| Bollinger price | EUR 0.6500 | ≤ EUR 0.6419 (-1.25%) | ≥ EUR 0.6498 (-0.03%) | SELL |
+| RSI(14) | 66.63 | ≤ 30 | ≥ 70 | HOLD |
+| Stochastic RSI %K | 0.599 | ≤ 0.20 | ≥ 0.80 | HOLD |
+| MACD | 0.0032; signal 0.0037 | MACD > signal | MACD < signal | SELL |
+| Consensus | BUY 0/4; SELL 2/4; neutral 2/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires an economically material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD.
+The Bollinger thresholds are the current 20-observation lower and upper bands. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD. Current execution decision also considers the required allocation change and its economic size.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -4210,7 +4278,7 @@ Buy below and Sell above are the current 20-observation Bollinger lower and uppe
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![TAL1T return histogram](figures/stock_profiles/TAL1T_histogram.png?v=1792850132)
+![TAL1T return histogram](figures/stock_profiles/TAL1T_histogram.png?v=1792933171)
 
 </details>
 
@@ -4362,7 +4430,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![TAL1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TAL1T_all_frontiers.png?v=1792850682)
+![TAL1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TAL1T_all_frontiers.png?v=1792933681)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -4437,7 +4505,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![TAL1T high-resolution stochastic dominance](figures/stock_profiles/TAL1T_FSD_SSD_TSD.png?v=1792850987)
+![TAL1T high-resolution stochastic dominance](figures/stock_profiles/TAL1T_FSD_SSD_TSD.png?v=1792933283)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -4458,13 +4526,17 @@ The static figure is collapsed because the interactive plots above provide the d
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
-**Current indicative buy and sell prices**
+**Current indicative prices and four-indicator signals**
 
-| Current price | Buy below | Sell above | Bollinger price zone |
-| --- | --- | --- | --- |
-| EUR 8.9000 | EUR 8.8594 (-0.46%) | EUR 9.0886 (+2.12%) | HOLD |
+| Indicator | Current value | BUY condition | SELL condition | Current signal |
+| --- | --- | --- | --- | --- |
+| Bollinger price | EUR 8.9000 | ≤ EUR 8.8594 (-0.46%) | ≥ EUR 9.0886 (+2.12%) | HOLD |
+| RSI(14) | 28.20 | ≤ 30 | ≥ 70 | BUY |
+| Stochastic RSI %K | 0.254 | ≤ 0.20 | ≥ 0.80 | HOLD |
+| MACD | -0.0432; signal -0.0374 | MACD > signal | MACD < signal | SELL |
+| Consensus | BUY 1/4; SELL 1/4; neutral 2/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires an economically material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD.
+The Bollinger thresholds are the current 20-observation lower and upper bands. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD. Current execution decision also considers the required allocation change and its economic size.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -4476,7 +4548,7 @@ Buy below and Sell above are the current 20-observation Bollinger lower and uppe
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![TKM1T return histogram](figures/stock_profiles/TKM1T_histogram.png?v=1792850132)
+![TKM1T return histogram](figures/stock_profiles/TKM1T_histogram.png?v=1792933171)
 
 </details>
 
@@ -4621,7 +4693,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![TKM1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TKM1T_all_frontiers.png?v=1792850673)
+![TKM1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TKM1T_all_frontiers.png?v=1792933673)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -4696,7 +4768,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![TKM1T high-resolution stochastic dominance](figures/stock_profiles/TKM1T_FSD_SSD_TSD.png?v=1792850993)
+![TKM1T high-resolution stochastic dominance](figures/stock_profiles/TKM1T_FSD_SSD_TSD.png?v=1792933271)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -4717,13 +4789,17 @@ The static figure is collapsed because the interactive plots above provide the d
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
-**Current indicative buy and sell prices**
+**Current indicative prices and four-indicator signals**
 
-| Current price | Buy below | Sell above | Bollinger price zone |
-| --- | --- | --- | --- |
-| EUR 2.3850 | EUR 2.2932 (-3.85%) | EUR 2.3948 (+0.41%) | HOLD |
+| Indicator | Current value | BUY condition | SELL condition | Current signal |
+| --- | --- | --- | --- | --- |
+| Bollinger price | EUR 2.3850 | ≤ EUR 2.2932 (-3.85%) | ≥ EUR 2.3948 (+0.41%) | HOLD |
+| RSI(14) | 62.27 | ≤ 30 | ≥ 70 | HOLD |
+| Stochastic RSI %K | 0.669 | ≤ 0.20 | ≥ 0.80 | HOLD |
+| MACD | 0.0115; signal 0.0067 | MACD > signal | MACD < signal | BUY |
+| Consensus | BUY 1/4; SELL 0/4; neutral 3/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires an economically material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD.
+The Bollinger thresholds are the current 20-observation lower and upper bands. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD. Current execution decision also considers the required allocation change and its economic size.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -4735,7 +4811,7 @@ Buy below and Sell above are the current 20-observation Bollinger lower and uppe
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![CPA1T return histogram](figures/stock_profiles/CPA1T_histogram.png?v=1792850137)
+![CPA1T return histogram](figures/stock_profiles/CPA1T_histogram.png?v=1792933177)
 
 </details>
 
@@ -4887,7 +4963,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![CPA1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/CPA1T_all_frontiers.png?v=1792850692)
+![CPA1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/CPA1T_all_frontiers.png?v=1792933689)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -4962,7 +5038,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![CPA1T high-resolution stochastic dominance](figures/stock_profiles/CPA1T_FSD_SSD_TSD.png?v=1792850927)
+![CPA1T high-resolution stochastic dominance](figures/stock_profiles/CPA1T_FSD_SSD_TSD.png?v=1792933518)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -4983,13 +5059,17 @@ The static figure is collapsed because the interactive plots above provide the d
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
-**Current indicative buy and sell prices**
+**Current indicative prices and four-indicator signals**
 
-| Current price | Buy below | Sell above | Bollinger price zone |
-| --- | --- | --- | --- |
-| EUR 2.2300 | EUR 2.2008 (-1.31%) | EUR 2.3022 (+3.24%) | HOLD |
+| Indicator | Current value | BUY condition | SELL condition | Current signal |
+| --- | --- | --- | --- | --- |
+| Bollinger price | EUR 2.2300 | ≤ EUR 2.2008 (-1.31%) | ≥ EUR 2.3022 (+3.24%) | HOLD |
+| RSI(14) | 44.08 | ≤ 30 | ≥ 70 | HOLD |
+| Stochastic RSI %K | 0.000 | ≤ 0.20 | ≥ 0.80 | BUY |
+| MACD | 0.0153; signal 0.0167 | MACD > signal | MACD < signal | SELL |
+| Consensus | BUY 1/4; SELL 1/4; neutral 2/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires an economically material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD.
+The Bollinger thresholds are the current 20-observation lower and upper bands. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD. Current execution decision also considers the required allocation change and its economic size.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -5001,7 +5081,7 @@ Buy below and Sell above are the current 20-observation Bollinger lower and uppe
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![TEL1L return histogram](figures/stock_profiles/TEL1L_histogram.png?v=1792850132)
+![TEL1L return histogram](figures/stock_profiles/TEL1L_histogram.png?v=1792933171)
 
 </details>
 
@@ -5095,7 +5175,7 @@ A direction reversal requires opposite fitted price slopes during the ten tradin
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![TEL1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TEL1L_all_frontiers.png?v=1792850690)
+![TEL1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TEL1L_all_frontiers.png?v=1792933687)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -5170,7 +5250,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![TEL1L high-resolution stochastic dominance](figures/stock_profiles/TEL1L_FSD_SSD_TSD.png?v=1792850990)
+![TEL1L high-resolution stochastic dominance](figures/stock_profiles/TEL1L_FSD_SSD_TSD.png?v=1792933275)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -5191,13 +5271,17 @@ The static figure is collapsed because the interactive plots above provide the d
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
-**Current indicative buy and sell prices**
+**Current indicative prices and four-indicator signals**
 
-| Current price | Buy below | Sell above | Bollinger price zone |
-| --- | --- | --- | --- |
-| EUR 5.3600 | EUR 5.0664 (-5.48%) | EUR 5.4716 (+2.08%) | HOLD |
+| Indicator | Current value | BUY condition | SELL condition | Current signal |
+| --- | --- | --- | --- | --- |
+| Bollinger price | EUR 5.3600 | ≤ EUR 5.0664 (-5.48%) | ≥ EUR 5.4716 (+2.08%) | HOLD |
+| RSI(14) | 54.56 | ≤ 30 | ≥ 70 | HOLD |
+| Stochastic RSI %K | 0.296 | ≤ 0.20 | ≥ 0.80 | HOLD |
+| MACD | 0.0430; signal 0.0367 | MACD > signal | MACD < signal | BUY |
+| Consensus | BUY 1/4; SELL 0/4; neutral 3/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires an economically material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD.
+The Bollinger thresholds are the current 20-observation lower and upper bands. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD. Current execution decision also considers the required allocation change and its economic size.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -5209,7 +5293,7 @@ Buy below and Sell above are the current 20-observation Bollinger lower and uppe
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![HAE1T return histogram](figures/stock_profiles/HAE1T_histogram.png?v=1792850133)
+![HAE1T return histogram](figures/stock_profiles/HAE1T_histogram.png?v=1792933174)
 
 </details>
 
@@ -5357,7 +5441,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![HAE1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/HAE1T_all_frontiers.png?v=1792850680)
+![HAE1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/HAE1T_all_frontiers.png?v=1792933679)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -5432,7 +5516,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![HAE1T high-resolution stochastic dominance](figures/stock_profiles/HAE1T_FSD_SSD_TSD.png?v=1792850950)
+![HAE1T high-resolution stochastic dominance](figures/stock_profiles/HAE1T_FSD_SSD_TSD.png?v=1792933413)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -5453,13 +5537,17 @@ The static figure is collapsed because the interactive plots above provide the d
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
-**Current indicative buy and sell prices**
+**Current indicative prices and four-indicator signals**
 
-| Current price | Buy below | Sell above | Bollinger price zone |
-| --- | --- | --- | --- |
-| EUR 10.9000 | EUR 10.8103 (-0.82%) | EUR 10.9247 (+0.23%) | HOLD |
+| Indicator | Current value | BUY condition | SELL condition | Current signal |
+| --- | --- | --- | --- | --- |
+| Bollinger price | EUR 10.9000 | ≤ EUR 10.8103 (-0.82%) | ≥ EUR 10.9247 (+0.23%) | HOLD |
+| RSI(14) | 52.60 | ≤ 30 | ≥ 70 | HOLD |
+| Stochastic RSI %K | 0.967 | ≤ 0.20 | ≥ 0.80 | SELL |
+| MACD | -0.0013; signal -0.0065 | MACD > signal | MACD < signal | BUY |
+| Consensus | BUY 1/4; SELL 1/4; neutral 2/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires an economically material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD.
+The Bollinger thresholds are the current 20-observation lower and upper bands. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD. Current execution decision also considers the required allocation change and its economic size.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -5471,7 +5559,7 @@ Buy below and Sell above are the current 20-observation Bollinger lower and uppe
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![TVE1T return histogram](figures/stock_profiles/TVE1T_histogram.png?v=1792850135)
+![TVE1T return histogram](figures/stock_profiles/TVE1T_histogram.png?v=1792933175)
 
 </details>
 
@@ -5619,7 +5707,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![TVE1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TVE1T_all_frontiers.png?v=1792850692)
+![TVE1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TVE1T_all_frontiers.png?v=1792933689)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -5694,7 +5782,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![TVE1T high-resolution stochastic dominance](figures/stock_profiles/TVE1T_FSD_SSD_TSD.png?v=1792850999)
+![TVE1T high-resolution stochastic dominance](figures/stock_profiles/TVE1T_FSD_SSD_TSD.png?v=1792933462)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -5715,13 +5803,17 @@ The static figure is collapsed because the interactive plots above provide the d
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
-**Current indicative buy and sell prices**
+**Current indicative prices and four-indicator signals**
 
-| Current price | Buy below | Sell above | Bollinger price zone |
-| --- | --- | --- | --- |
-| EUR 3.2750 | EUR 3.2478 (-0.83%) | EUR 3.2977 (+0.69%) | HOLD |
+| Indicator | Current value | BUY condition | SELL condition | Current signal |
+| --- | --- | --- | --- | --- |
+| Bollinger price | EUR 3.2750 | ≤ EUR 3.2478 (-0.83%) | ≥ EUR 3.2977 (+0.69%) | HOLD |
+| RSI(14) | 46.95 | ≤ 30 | ≥ 70 | HOLD |
+| Stochastic RSI %K | 0.609 | ≤ 0.20 | ≥ 0.80 | HOLD |
+| MACD | -0.0069; signal -0.0107 | MACD > signal | MACD < signal | BUY |
+| Consensus | BUY 1/4; SELL 0/4; neutral 3/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires an economically material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD.
+The Bollinger thresholds are the current 20-observation lower and upper bands. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD. Current execution decision also considers the required allocation change and its economic size.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -5733,7 +5825,7 @@ Buy below and Sell above are the current 20-observation Bollinger lower and uppe
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![LHV1T return histogram](figures/stock_profiles/LHV1T_histogram.png?v=1792850135)
+![LHV1T return histogram](figures/stock_profiles/LHV1T_histogram.png?v=1792933175)
 
 </details>
 
@@ -5887,7 +5979,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![LHV1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/LHV1T_all_frontiers.png?v=1792850689)
+![LHV1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/LHV1T_all_frontiers.png?v=1792933687)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -5962,7 +6054,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![LHV1T high-resolution stochastic dominance](figures/stock_profiles/LHV1T_FSD_SSD_TSD.png?v=1792850964)
+![LHV1T high-resolution stochastic dominance](figures/stock_profiles/LHV1T_FSD_SSD_TSD.png?v=1792933493)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -5983,13 +6075,17 @@ The static figure is collapsed because the interactive plots above provide the d
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
-**Current indicative buy and sell prices**
+**Current indicative prices and four-indicator signals**
 
-| Current price | Buy below | Sell above | Bollinger price zone |
-| --- | --- | --- | --- |
-| EUR 15.6000 | EUR 15.6000 (+0.00%) | EUR 15.6000 (+0.00%) | BUY |
+| Indicator | Current value | BUY condition | SELL condition | Current signal |
+| --- | --- | --- | --- | --- |
+| Bollinger price | EUR 15.6000 | ≤ EUR 15.6000 (+0.00%) | ≥ EUR 15.6000 (+0.00%) | BUY |
+| RSI(14) | 49.97 | ≤ 30 | ≥ 70 | HOLD |
+| Stochastic RSI %K | 0.000 | ≤ 0.20 | ≥ 0.80 | BUY |
+| MACD | -0.0000; signal -0.0000 | MACD > signal | MACD < signal | SELL |
+| Consensus | BUY 2/4; SELL 1/4; neutral 1/4 | At least 3 BUY votes | At least 3 SELL votes | BUY |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires an economically material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD.
+The Bollinger thresholds are the current 20-observation lower and upper bands. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD. Current execution decision also considers the required allocation change and its economic size.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -6001,7 +6097,7 @@ Buy below and Sell above are the current 20-observation Bollinger lower and uppe
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![EWA1L return histogram](figures/stock_profiles/EWA1L_histogram.png?v=1792850133)
+![EWA1L return histogram](figures/stock_profiles/EWA1L_histogram.png?v=1792933173)
 
 </details>
 
@@ -6126,7 +6222,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![EWA1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/EWA1L_all_frontiers.png?v=1792850691)
+![EWA1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/EWA1L_all_frontiers.png?v=1792933688)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -6189,7 +6285,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![EWA1L high-resolution stochastic dominance](figures/stock_profiles/EWA1L_FSD_SSD_TSD.png?v=1792850941)
+![EWA1L high-resolution stochastic dominance](figures/stock_profiles/EWA1L_FSD_SSD_TSD.png?v=1792933378)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
