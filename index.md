@@ -68,7 +68,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-24 17:10 (Europe/Vilnius); return analysis through 2026-10-23; valuation prices through 2026-10-23
+# Baltic investment plan - updated 2026-10-25 14:54 (Europe/Vilnius); return analysis through 2026-10-23; valuation prices through 2026-10-23
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -185,26 +185,26 @@ allocation_change_direction describes the optimiser's target relative to current
 <details markdown="1" class="trade-decision-section">
 <summary><strong>Table 3. Baltic_NetSD target allocation and current execution decisions</strong></summary>
 
-<table class="trade-decision-table"><thead><tr><th><span>Phase</span></th><th><span>Share</span></th><th><span>Company</span></th><th><span>Last price</span></th><th><span>Indicative buy ≤</span></th><th><span>Indicative sell ≥</span></th><th><span>Bollinger zone</span></th><th><span>Technical timing</span></th><th><span>Target weight</span></th><th><span>Current shares</span></th><th><span>Allocation change</span></th><th><span>Trade EUR</span></th><th><span>Target shares</span></th><th><span>Final value EUR</span></th><th><span>Current execution decision</span></th><th><span>Historical dividends EUR</span></th></tr></thead><tbody><tr><td>1</td><td>HAE1T</td><td>Harju Elekter Group</td><td>5.3600</td><td>5.0664 (-5.48%)</td><td>5.4716 (+2.08%)</td><td>HOLD</td><td>HOLD</td><td>2.75%</td><td>100</td><td>-23</td><td>-123.28</td><td>77</td><td>412.72</td><td>SELL</td><td>44.66</td></tr><tr><td>1</td><td>TSM1T</td><td>Tallinna Sadam</td><td>1.2000</td><td>1.1991 (-0.08%)</td><td>1.2177 (+1.48%)</td><td>HOLD</td><td>HOLD</td><td>0.00%</td><td>330</td><td>-330</td><td>-396.00</td><td>0</td><td>0.00</td><td>SELL</td><td>0.00</td></tr><tr><td>1</td><td>SAF1R</td><td>SAF Tehnika</td><td>16.2000</td><td>16.0037 (-1.21%)</td><td>17.1263 (+5.72%)</td><td>HOLD</td><td>HOLD</td><td>0.00%</td><td>100</td><td>-100</td><td>-1620.00</td><td>0</td><td>0.00</td><td>SELL</td><td>0.00</td></tr><tr><td>1</td><td>TKM1T</td><td>TKM Grupp</td><td>8.9000</td><td>8.8594 (-0.46%)</td><td>9.0886 (+2.12%)</td><td>HOLD</td><td>HOLD</td><td>5.09%</td><td>288</td><td>-203</td><td>-1806.70</td><td>85</td><td>756.50</td><td>SELL</td><td>225.25</td></tr><tr><td>2</td><td>VLP1L</td><td>Vilkyškių pieninė</td><td>15.7500</td><td>15.0987 (-4.14%)</td><td>15.8663 (+0.74%)</td><td>HOLD</td><td>HOLD</td><td>15.98%</td><td>42</td><td>+110</td><td>1732.50</td><td>152</td><td>2394.00</td><td>WAIT</td><td>0.00</td></tr><tr><td>2</td><td>APG1L</td><td>Apranga</td><td>3.8200</td><td>3.7878 (-0.84%)</td><td>3.8642 (+1.16%)</td><td>HOLD</td><td>HOLD</td><td>14.84%</td><td>200</td><td>+382</td><td>1459.24</td><td>582</td><td>2223.24</td><td>WAIT</td><td>599.46</td></tr><tr><td>2</td><td>DGR1R</td><td>DelfinGroup</td><td>1.7000</td><td>1.5696 (-7.67%)</td><td>1.7844 (+4.97%)</td><td>HOLD</td><td>HOLD</td><td>6.58%</td><td>0</td><td>+580</td><td>986.00</td><td>580</td><td>986.00</td><td>WAIT</td><td>189.78</td></tr><tr><td>2</td><td>PZV1L</td><td>Pieno žvaigždės</td><td>1.7750</td><td>1.7470 (-1.58%)</td><td>1.8240 (+2.76%)</td><td>HOLD</td><td>HOLD</td><td>6.56%</td><td>0</td><td>+554</td><td>983.35</td><td>554</td><td>983.35</td><td>WAIT</td><td>232.68</td></tr><tr><td>2</td><td>EFT1T</td><td>EfTEN Real Estate Fund</td><td>19.3500</td><td>19.3537 (+0.02%)</td><td>19.6563 (+1.58%)</td><td>BUY</td><td>HOLD</td><td>4.62%</td><td>0</td><td>+35</td><td>677.25</td><td>35</td><td>677.25</td><td>WAIT</td><td>156.19</td></tr><tr><td>2</td><td>KNE1L</td><td>KN Energies</td><td>0.4790</td><td>0.4764 (-0.55%)</td><td>0.4911 (+2.54%)</td><td>HOLD</td><td>HOLD</td><td>4.51%</td><td>0</td><td>+1411</td><td>675.87</td><td>1411</td><td>675.87</td><td>WAIT</td><td>90.87</td></tr><tr><td>2</td><td>MOLNR</td><td>J. Molner</td><td>20.6000</td><td>17.8599 (-13.30%)</td><td>23.7501 (+15.29%)</td><td>HOLD</td><td>HOLD</td><td>4.31%</td><td>0</td><td>+31</td><td>638.60</td><td>31</td><td>638.60</td><td>WAIT</td><td>0.00</td></tr><tr><td>2</td><td>RSU1L</td><td>Rokiškio sūris</td><td>4.4000</td><td>4.4100 (+0.23%)</td><td>4.5460 (+3.32%)</td><td>BUY</td><td>HOLD</td><td>3.92%</td><td>0</td><td>+133</td><td>585.20</td><td>133</td><td>585.20</td><td>WAIT</td><td>93.10</td></tr><tr><td>2</td><td>LHV1T</td><td>LHV Group</td><td>3.2750</td><td>3.2478 (-0.83%)</td><td>3.2977 (+0.69%)</td><td>HOLD</td><td>HOLD</td><td>3.41%</td><td>0</td><td>+156</td><td>510.90</td><td>156</td><td>510.90</td><td>WAIT</td><td>67.08</td></tr><tr><td>2</td><td>AKO1L</td><td>Akola Group</td><td>1.8500</td><td>1.7524 (-5.27%)</td><td>1.8706 (+1.11%)</td><td>HOLD</td><td>HOLD</td><td>3.10%</td><td>0</td><td>+251</td><td>464.35</td><td>251</td><td>464.35</td><td>WAIT</td><td>0.00</td></tr><tr><td>2</td><td>MRK1T</td><td>Merko Ehitus</td><td>27.0000</td><td>26.9752 (-0.09%)</td><td>27.1698 (+0.63%)</td><td>HOLD</td><td>HOLD</td><td>6.80%</td><td>20</td><td>+17</td><td>459.00</td><td>37</td><td>999.00</td><td>WAIT</td><td>201.65</td></tr><tr><td>2</td><td>TEL1L</td><td>Telia Lietuva</td><td>2.2300</td><td>2.2008 (-1.31%)</td><td>2.3022 (+3.24%)</td><td>HOLD</td><td>HOLD</td><td>1.90%</td><td>0</td><td>+127</td><td>283.21</td><td>127</td><td>283.21</td><td>WAIT</td><td>39.37</td></tr><tr><td>2</td><td>TAL1T</td><td>Tallink Grupp</td><td>0.6500</td><td>0.6419 (-1.25%)</td><td>0.6498 (-0.03%)</td><td>SELL</td><td>HOLD</td><td>4.76%</td><td>700</td><td>+399</td><td>259.35</td><td>1099</td><td>714.35</td><td>WAIT</td><td>164.85</td></tr><tr><td>2</td><td>ROE1L</td><td>Artea Bankas</td><td>0.8820</td><td>0.8688 (-1.49%)</td><td>0.9079 (+2.93%)</td><td>HOLD</td><td>HOLD</td><td>3.95%</td><td>416</td><td>+256</td><td>225.79</td><td>672</td><td>592.70</td><td>WAIT</td><td>91.39</td></tr><tr><td>2</td><td>TVE1T</td><td>Tallinna Vesi</td><td>10.9000</td><td>10.8103 (-0.82%)</td><td>10.9247 (+0.23%)</td><td>HOLD</td><td>HOLD</td><td>1.51%</td><td>0</td><td>+20</td><td>218.00</td><td>20</td><td>218.00</td><td>WAIT</td><td>38.80</td></tr><tr><td>2</td><td>EWA1L</td><td>East West Agro</td><td>15.6000</td><td>15.6000 (+0.00%)</td><td>15.6000 (+0.00%)</td><td>SELL</td><td>BUY</td><td>1.07%</td><td>0</td><td>+10</td><td>156.00</td><td>10</td><td>156.00</td><td>BUY</td><td>0.00</td></tr><tr><td>2</td><td>VIRSI</td><td>VIRŠI-A</td><td>4.4100</td><td>4.4023 (-0.18%)</td><td>4.4447 (+0.79%)</td><td>HOLD</td><td>HOLD</td><td>0.64%</td><td>0</td><td>+21</td><td>92.61</td><td>21</td><td>92.61</td><td>WAIT</td><td>5.72</td></tr><tr><td>2</td><td>GRG1L</td><td>Grigeo Group</td><td>1.0100</td><td>0.9963 (-1.35%)</td><td>1.0226 (+1.24%)</td><td>HOLD</td><td>HOLD</td><td>3.67%</td><td>543</td><td>+2</td><td>2.02</td><td>545</td><td>550.45</td><td>WAIT</td><td>92.65</td></tr></tbody></table>
+<table class="trade-decision-table"><thead><tr><th><span>Phase</span></th><th><span>Share</span></th><th><span>Company</span></th><th><span>Last price</span></th><th><span>Indicative buy ≤</span></th><th><span>Indicative sell ≥</span></th><th><span>Bollinger zone</span></th><th><span>Technical timing</span></th><th><span>Target weight</span></th><th><span>Current shares</span></th><th><span>Allocation change</span></th><th><span>Trade EUR</span></th><th><span>Target shares</span></th><th><span>Final value EUR</span></th><th><span>Current execution decision</span></th><th><span>Historical dividends EUR</span></th></tr></thead><tbody><tr><td>1</td><td>HAE1T</td><td>Harju Elekter Group</td><td>5.3600</td><td>5.0664 (-5.48%)</td><td>5.4716 (+2.08%)</td><td>HOLD</td><td>HOLD</td><td>2.75%</td><td>100</td><td>-23</td><td>-123.28</td><td>77</td><td>412.72</td><td>SELL</td><td>44.66</td></tr><tr><td>1</td><td>TSM1T</td><td>Tallinna Sadam</td><td>1.2000</td><td>1.1991 (-0.08%)</td><td>1.2177 (+1.48%)</td><td>HOLD</td><td>HOLD</td><td>0.00%</td><td>330</td><td>-330</td><td>-396.00</td><td>0</td><td>0.00</td><td>SELL</td><td>0.00</td></tr><tr><td>1</td><td>SAF1R</td><td>SAF Tehnika</td><td>16.2000</td><td>16.0037 (-1.21%)</td><td>17.1263 (+5.72%)</td><td>HOLD</td><td>HOLD</td><td>0.00%</td><td>100</td><td>-100</td><td>-1620.00</td><td>0</td><td>0.00</td><td>SELL</td><td>0.00</td></tr><tr><td>1</td><td>TKM1T</td><td>TKM Grupp</td><td>8.9000</td><td>8.8594 (-0.46%)</td><td>9.0886 (+2.12%)</td><td>HOLD</td><td>HOLD</td><td>5.09%</td><td>288</td><td>-203</td><td>-1806.70</td><td>85</td><td>756.50</td><td>SELL</td><td>225.25</td></tr><tr><td>2</td><td>VLP1L</td><td>Vilkyškių pieninė</td><td>15.7500</td><td>15.0987 (-4.14%)</td><td>15.8663 (+0.74%)</td><td>HOLD</td><td>HOLD</td><td>15.98%</td><td>42</td><td>+110</td><td>1732.50</td><td>152</td><td>2394.00</td><td>WAIT</td><td>0.00</td></tr><tr><td>2</td><td>APG1L</td><td>Apranga</td><td>3.8200</td><td>3.7878 (-0.84%)</td><td>3.8642 (+1.16%)</td><td>HOLD</td><td>HOLD</td><td>14.84%</td><td>200</td><td>+382</td><td>1459.24</td><td>582</td><td>2223.24</td><td>WAIT</td><td>599.46</td></tr><tr><td>2</td><td>DGR1R</td><td>DelfinGroup</td><td>1.7000</td><td>1.5696 (-7.67%)</td><td>1.7844 (+4.97%)</td><td>HOLD</td><td>HOLD</td><td>6.58%</td><td>0</td><td>+580</td><td>986.00</td><td>580</td><td>986.00</td><td>WAIT</td><td>189.78</td></tr><tr><td>2</td><td>PZV1L</td><td>Pieno žvaigždės</td><td>1.7750</td><td>1.7470 (-1.58%)</td><td>1.8240 (+2.76%)</td><td>HOLD</td><td>HOLD</td><td>6.56%</td><td>0</td><td>+554</td><td>983.35</td><td>554</td><td>983.35</td><td>WAIT</td><td>232.68</td></tr><tr><td>2</td><td>EFT1T</td><td>EfTEN Real Estate Fund</td><td>19.3500</td><td>19.3537 (+0.02%)</td><td>19.6563 (+1.58%)</td><td>BUY</td><td>HOLD</td><td>4.62%</td><td>0</td><td>+35</td><td>677.25</td><td>35</td><td>677.25</td><td>WAIT</td><td>156.19</td></tr><tr><td>2</td><td>KNE1L</td><td>KN Energies</td><td>0.4790</td><td>0.4764 (-0.55%)</td><td>0.4911 (+2.54%)</td><td>HOLD</td><td>HOLD</td><td>4.51%</td><td>0</td><td>+1411</td><td>675.87</td><td>1411</td><td>675.87</td><td>WAIT</td><td>90.87</td></tr><tr><td>2</td><td>MOLNR</td><td>J. Molner</td><td>20.6000</td><td>17.8599 (-13.30%)</td><td>23.7501 (+15.29%)</td><td>HOLD</td><td>HOLD</td><td>4.31%</td><td>0</td><td>+31</td><td>638.60</td><td>31</td><td>638.60</td><td>WAIT</td><td>0.00</td></tr><tr><td>2</td><td>RSU1L</td><td>Rokiškio sūris</td><td>4.4000</td><td>4.4100 (+0.23%)</td><td>4.5460 (+3.32%)</td><td>BUY</td><td>HOLD</td><td>3.92%</td><td>0</td><td>+133</td><td>585.20</td><td>133</td><td>585.20</td><td>WAIT</td><td>93.10</td></tr><tr><td>2</td><td>LHV1T</td><td>LHV Group</td><td>3.2750</td><td>3.2478 (-0.83%)</td><td>3.2977 (+0.69%)</td><td>HOLD</td><td>HOLD</td><td>3.41%</td><td>0</td><td>+156</td><td>510.90</td><td>156</td><td>510.90</td><td>WAIT</td><td>67.08</td></tr><tr><td>2</td><td>AKO1L</td><td>Akola Group</td><td>1.8500</td><td>1.7524 (-5.27%)</td><td>1.8706 (+1.11%)</td><td>HOLD</td><td>HOLD</td><td>3.10%</td><td>0</td><td>+251</td><td>464.35</td><td>251</td><td>464.35</td><td>WAIT</td><td>0.00</td></tr><tr><td>2</td><td>MRK1T</td><td>Merko Ehitus</td><td>27.0000</td><td>26.9752 (-0.09%)</td><td>27.1698 (+0.63%)</td><td>HOLD</td><td>HOLD</td><td>6.80%</td><td>20</td><td>+17</td><td>459.00</td><td>37</td><td>999.00</td><td>WAIT</td><td>201.65</td></tr><tr><td>2</td><td>TEL1L</td><td>Telia Lietuva</td><td>2.2300</td><td>2.2008 (-1.31%)</td><td>2.3022 (+3.24%)</td><td>HOLD</td><td>HOLD</td><td>1.90%</td><td>0</td><td>+127</td><td>283.21</td><td>127</td><td>283.21</td><td>WAIT</td><td>39.37</td></tr><tr><td>2</td><td>TAL1T</td><td>Tallink Grupp</td><td>0.6500</td><td>0.6419 (-1.25%)</td><td>0.6498 (-0.03%)</td><td>SELL</td><td>HOLD</td><td>4.76%</td><td>700</td><td>+399</td><td>259.35</td><td>1099</td><td>714.35</td><td>WAIT</td><td>164.85</td></tr><tr><td>2</td><td>ROE1L</td><td>Artea Bankas</td><td>0.8820</td><td>0.8688 (-1.49%)</td><td>0.9079 (+2.93%)</td><td>HOLD</td><td>HOLD</td><td>3.95%</td><td>416</td><td>+256</td><td>225.79</td><td>672</td><td>592.70</td><td>WAIT</td><td>91.39</td></tr><tr><td>2</td><td>TVE1T</td><td>Tallinna Vesi</td><td>10.9000</td><td>10.8103 (-0.82%)</td><td>10.9247 (+0.23%)</td><td>HOLD</td><td>HOLD</td><td>1.51%</td><td>0</td><td>+20</td><td>218.00</td><td>20</td><td>218.00</td><td>WAIT</td><td>38.80</td></tr><tr><td>2</td><td>EWA1L</td><td>East West Agro</td><td>15.6000</td><td>15.6000 (+0.00%)</td><td>15.6000 (+0.00%)</td><td>SELL</td><td>BUY</td><td>1.07%</td><td>0</td><td>+10</td><td>156.00</td><td>10</td><td>156.00</td><td>BUY</td><td>0.00</td></tr><tr><td>2</td><td>VIRSI</td><td>VIRŠI-A</td><td>4.4100</td><td>4.4023 (-0.18%)</td><td>4.4447 (+0.79%)</td><td>HOLD</td><td>HOLD</td><td>0.64%</td><td>0</td><td>+21</td><td>92.61</td><td>21</td><td>92.61</td><td>SKIP</td><td>5.72</td></tr><tr><td>2</td><td>GRG1L</td><td>Grigeo Group</td><td>1.0100</td><td>0.9963 (-1.35%)</td><td>1.0226 (+1.24%)</td><td>HOLD</td><td>HOLD</td><td>3.67%</td><td>543</td><td>+2</td><td>2.02</td><td>545</td><td>550.45</td><td>SKIP</td><td>92.65</td></tr></tbody></table>
 
-Allocation change is the optimiser's target quantity, not an instruction to trade immediately. Current execution decision is the only action recommendation: BUY requires a positive allocation change and BUY technical timing; WAIT means the optimiser wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD. The Bollinger zone is diagnostic only.
+Allocation change is the optimiser's target quantity, not an instruction to trade immediately. Current execution decision is the only action recommendation: BUY requires a material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD. The Bollinger zone is diagnostic only.
 
 </details>
 
 
-trade_shares is the optimiser's allocation change, not an instruction to trade immediately. current_execution_decision is the only action recommendation: BUY requires a positive allocation change and BUY technical timing; WAIT means the optimiser wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD. trade_EUR is the signed transaction amount before costs.
+trade_shares is the optimiser's allocation change, not an instruction to trade immediately. current_execution_decision is the only action recommendation: BUY requires a material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD. trade_EUR is the signed transaction amount before costs.
 
 <details markdown="1" class="profiles-section">
 <summary><strong>Table 3A. Interactive share profiles</strong></summary>
 
 Select a share to display its allocation, technical indicators, all PerformanceAnalytics measures and portfolio sensitivity.
 
-<div class="profile-filters"><fieldset class="signal-filters"><legend>Current execution decision</legend><label><input type="checkbox" value="BUY" checked> BUY</label><label><input type="checkbox" value="WAIT" checked> WAIT</label><label><input type="checkbox" value="SELL" checked> SELL</label><label><input type="checkbox" value="HOLD" checked> HOLD</label></fieldset><fieldset class="netsd-filters"><legend>netSD after adding this share</legend><label><input type="checkbox" value="INCREASE" checked> Increases</label><label><input type="checkbox" value="DECREASE" checked> Decreases</label><label><input type="checkbox" value="UNCHANGED" checked> Unchanged</label></fieldset><span class="profile-filter-count" aria-live="polite"></span></div>
+<div class="profile-filters"><fieldset class="signal-filters"><legend>Current execution decision</legend><label><input type="checkbox" value="BUY" checked> BUY</label><label><input type="checkbox" value="WAIT" checked> WAIT</label><label><input type="checkbox" value="SELL" checked> SELL</label><label><input type="checkbox" value="HOLD" checked> HOLD</label><label><input type="checkbox" value="SKIP" checked> SKIP</label></fieldset><fieldset class="netsd-filters"><legend>netSD after adding this share</legend><label><input type="checkbox" value="INCREASE" checked> Increases</label><label><input type="checkbox" value="DECREASE" checked> Decreases</label><label><input type="checkbox" value="UNCHANGED" checked> Unchanged</label></fieldset><span class="profile-filter-count" aria-live="polite"></span></div>
 
 <details markdown="1" class="stock-profile" id="share-kne1l" data-signal="WAIT" data-netsd-effect="INCREASE">
-<summary><strong>KNE1L — KN Energies</strong> | current action: WAIT | allocation target 1119 shares | priority 1</summary>
+<summary><strong>KNE1L — KN Energies</strong> | current action: WAIT | allocation target 1119 shares | netSD diagnostic rank 1</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>1119</td><td>+1119</td><td>3.58%</td><td>EUR 0.4790</td><td>0.3814</td><td>45 / 0</td><td>36.14</td><td>Bearish</td><td>Inside bands</td><td>0.422 (Neutral)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>0.001279 (1.558% of portfolio HHI)</td><td>EUR 14,192</td><td>3.8%</td><td>1.2%</td><td>MEDIUM</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>Execution rationale</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>1119</td><td>+1119</td><td>3.58%</td><td>EUR 0.4790</td><td>0.3814</td><td>45 / 0</td><td>36.14</td><td>Bearish</td><td>Inside bands</td><td>0.422 (Neutral)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>Allocation target is higher, but technical timing does not support buying now.</td><td>0.001279 (1.558% of portfolio HHI)</td><td>EUR 14,192</td><td>3.8%</td><td>1.2%</td><td>MEDIUM</td></tr></tbody></table>
 
 ![KNE1L Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/KNE1L_technicals_6m.png)
 
@@ -216,7 +216,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 | --- | --- | --- | --- |
 | EUR 0.4790 | EUR 0.4764 (-0.55%) | EUR 0.4911 (+2.54%) | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires both a positive allocation change and a BUY technical timing signal; WAIT means the model wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires an economically material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -445,9 +445,9 @@ The static figure is collapsed because the interactive plots above provide the d
 </details>
 
 <details markdown="1" class="stock-profile" id="share-vlp1l" data-signal="WAIT" data-netsd-effect="INCREASE">
-<summary><strong>VLP1L — Vilkyškių pieninė</strong> | current action: WAIT | allocation target 85 shares | priority 2</summary>
+<summary><strong>VLP1L — Vilkyškių pieninė</strong> | current action: WAIT | allocation target 85 shares | netSD diagnostic rank 2</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>42</td><td>85</td><td>+43</td><td>8.97%</td><td>EUR 15.7500</td><td>0.3814</td><td>45 / 0</td><td>61.54</td><td>Bullish</td><td>Inside bands</td><td>0.492 (Neutral)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>0.008045 (9.799% of portfolio HHI)</td><td>EUR 21,695</td><td>3.1%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>Execution rationale</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>42</td><td>85</td><td>+43</td><td>8.97%</td><td>EUR 15.7500</td><td>0.3814</td><td>45 / 0</td><td>61.54</td><td>Bullish</td><td>Inside bands</td><td>0.492 (Neutral)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>Allocation target is higher, but technical timing does not support buying now.</td><td>0.008045 (9.799% of portfolio HHI)</td><td>EUR 21,695</td><td>3.1%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
 ![VLP1L Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/VLP1L_technicals_6m.png)
 
@@ -459,7 +459,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 | --- | --- | --- | --- |
 | EUR 15.7500 | EUR 15.0987 (-4.14%) | EUR 15.8663 (+0.74%) | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires both a positive allocation change and a BUY technical timing signal; WAIT means the model wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires an economically material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -687,9 +687,9 @@ The static figure is collapsed because the interactive plots above provide the d
 </details>
 
 <details markdown="1" class="stock-profile" id="share-mrk1t" data-signal="WAIT" data-netsd-effect="INCREASE">
-<summary><strong>MRK1T — Merko Ehitus</strong> | current action: WAIT | allocation target 44 shares | priority 3</summary>
+<summary><strong>MRK1T — Merko Ehitus</strong> | current action: WAIT | allocation target 44 shares | netSD diagnostic rank 3</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>20</td><td>44</td><td>+24</td><td>8.07%</td><td>EUR 27.0000</td><td>0.3729</td><td>44 / 0</td><td>44.83</td><td>Bearish</td><td>Inside bands</td><td>0.000 (Oversold)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>0.006511 (7.930% of portfolio HHI)</td><td>EUR 58,706</td><td>1.1%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>Execution rationale</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>20</td><td>44</td><td>+24</td><td>8.07%</td><td>EUR 27.0000</td><td>0.3729</td><td>44 / 0</td><td>44.83</td><td>Bearish</td><td>Inside bands</td><td>0.000 (Oversold)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>Allocation target is higher, but technical timing does not support buying now.</td><td>0.006511 (7.930% of portfolio HHI)</td><td>EUR 58,706</td><td>1.1%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
 ![MRK1T Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/MRK1T_technicals_6m.png)
 
@@ -701,7 +701,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 | --- | --- | --- | --- |
 | EUR 27.0000 | EUR 26.9752 (-0.09%) | EUR 27.1698 (+0.63%) | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires both a positive allocation change and a BUY technical timing signal; WAIT means the model wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires an economically material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -948,9 +948,9 @@ The static figure is collapsed because the interactive plots above provide the d
 </details>
 
 <details markdown="1" class="stock-profile" id="share-molnr" data-signal="WAIT" data-netsd-effect="INCREASE">
-<summary><strong>MOLNR — J. Molner</strong> | current action: WAIT | allocation target 32 shares | priority 4</summary>
+<summary><strong>MOLNR — J. Molner</strong> | current action: WAIT | allocation target 32 shares | netSD diagnostic rank 4</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>32</td><td>+32</td><td>4.43%</td><td>EUR 20.6000</td><td>0.0424</td><td>5 / 0</td><td>53.51</td><td>Bearish</td><td>Inside bands</td><td>0.000 (Oversold)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>0.001960 (2.387% of portfolio HHI)</td><td>EUR 94</td><td>702.0%</td><td>29.4%</td><td>HIGH</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>Execution rationale</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>32</td><td>+32</td><td>4.43%</td><td>EUR 20.6000</td><td>0.0424</td><td>5 / 0</td><td>53.51</td><td>Bearish</td><td>Inside bands</td><td>0.000 (Oversold)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>Allocation target is higher, but technical timing does not support buying now.</td><td>0.001960 (2.387% of portfolio HHI)</td><td>EUR 94</td><td>702.0%</td><td>29.4%</td><td>HIGH</td></tr></tbody></table>
 
 ![MOLNR Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/MOLNR_technicals_6m.png)
 
@@ -962,7 +962,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 | --- | --- | --- | --- |
 | EUR 20.6000 | EUR 17.8599 (-13.30%) | EUR 23.7501 (+15.29%) | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires both a positive allocation change and a BUY technical timing signal; WAIT means the model wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires an economically material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -1176,237 +1176,10 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-ewa1l" data-signal="BUY" data-netsd-effect="UNCHANGED">
-<summary><strong>EWA1L — East West Agro</strong> | current action: BUY | allocation target 3 shares | priority 5</summary>
-
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>3</td><td>+3</td><td>0.40%</td><td>EUR 15.6000</td><td>0.0085</td><td>30 / 29</td><td>49.97</td><td>Bullish</td><td>Below lower band</td><td>0.000 (Oversold)</td><td>BUY</td><td>BUY</td><td>BUY</td><td>0.000016 (0.020% of portfolio HHI)</td><td>EUR 290</td><td>16.1%</td><td>16.3%</td><td>HIGH</td></tr></tbody></table>
-
-![EWA1L Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/EWA1L_technicals_6m.png)
-
-Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
-
-**Current indicative buy and sell prices**
-
-| Current price | Buy below | Sell above | Bollinger price zone |
-| --- | --- | --- | --- |
-| EUR 15.6000 | EUR 15.6000 (+0.00%) | EUR 15.6000 (+0.00%) | BUY |
-
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires both a positive allocation change and a BUY technical timing signal; WAIT means the model wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD.
-
-<details markdown="1">
-<summary>Complete technical history</summary>
-
-![EWA1L complete technical history](figures/technical_analysis/EWA1L_technical.png)
-
-</details>
-
-<details markdown="1">
-<summary>Return histogram</summary>
-
-![EWA1L return histogram](figures/stock_profiles/EWA1L_histogram.png?v=1792850133)
-
-</details>
-
-<details markdown="1" class="seasonality-section">
-<summary>Seasonality, drawdowns and upside periods</summary>
-
-The analysis covers 962 daily returns from 2023-01-02 to 2026-10-23. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
-
-| Measure | Value | Measure | Value | Measure | Value |
-| --- | --- | --- | --- | --- | --- |
-| Maximum drawdown | -28.16% (2024-11-21) | Average gain / average loss | 1.108 | Best 21-day period | 20.24% (ending 2023-04-06) |
-| Average underwater drawdown | 19.70% | Upside potential ratio | 2.346 | Worst 21-day period | -12.62% (ending 2023-06-05) |
-| Conditional drawdown 95% | 25.83% | Upside capture vs Baltic EW | 44.5% | Best 5-day period | 17.65% (ending 2023-03-30) |
-| Ulcer index | 20.59 | Downside capture vs Baltic EW | 44.0% | Best 63-day period | 27.85% (ending 2023-05-09) |
-| Longest underwater period | 1268 calendar days | Positive trading days | 13.3% | Repeated calendar pattern | May: 0% positive across 4 years |
-| Daily downside deviation | 0.775% | Best day | 9.41% (2023-10-11) |  |  |
-| Daily upside deviation | 0.908% | Worst day | -6.45% (2023-10-18) |  |  |
-
-**Calendar-effect tests and observed averages**
-
-| Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
-| --- | --- | --- | --- | --- |
-| Weekday | Best: Tuesday (0.052%); worst: Monday (-0.052%) | 0.3855 | 0.5140 | Not detected |
-| Calendar month | Best: Mar (0.151% daily); worst: May (-0.142% daily) | 0.6798 | 0.7770 | Not detected |
-| Turn of month | First/last three days: 0.091%; other days: -0.017% | 0.9307 | 0.9307 | Not detected |
-
-![EWA1L seasonality, drawdowns and upside periods](figures/stock_profiles/EWA1L_seasonality.png?v=1792850891)
-
-**Five deepest drawdown episodes**
-
-| Rank | Peak | Trough | Recovery | Loss | Underwater days |
-| --- | --- | --- | --- | --- | --- |
-| 1 | 2023-05-04 | 2024-11-21 | Not recovered | -28.16% | 1268 |
-| 2 | 2023-03-30 | 2023-03-31 | 2023-04-04 | -5.50% | 5 |
-| 3 | 2023-02-02 | 2023-02-06 | 2023-02-23 | -4.24% | 21 |
-| 4 | 2023-04-19 | 2023-05-02 | 2023-05-04 | -3.92% | 15 |
-| 5 | 2023-03-15 | 2023-03-16 | 2023-03-29 | -2.86% | 14 |
-
-**Five strongest non-overlapping 21-trading-day rises**
-
-| Rank | Start | End | 21-day return |
-| --- | --- | --- | --- |
-| 1 | 2023-03-09 | 2023-04-11 | 20.24% |
-| 2 | 2023-07-04 | 2023-08-02 | 9.88% |
-| 3 | 2023-09-13 | 2023-10-12 | 8.77% |
-| 4 | 2023-02-06 | 2023-03-07 | 7.59% |
-| 5 | 2023-11-22 | 2023-12-21 | 6.13% |
-
-The dated extremes identify where company announcements, dividends, corporate actions or data anomalies should be checked. A repeated calendar average is descriptive until it survives the adjusted test and a later out-of-sample period; it is not by itself a buy or sell signal.
-
-<details markdown="1" class="company-events">
-<summary>Official company-news calendar and price-direction analysis (14 events)</summary>
-
-Announcement times and links come from the official Nasdaq news service. The effective date is the first trading close strictly after publication. Abnormal return means the share return minus the equal-weight Baltic-market return over the same window.
-
-| Event type | N | Abnormal 1d | Abnormal 5d | Abnormal 21d | Positive 5d | Direction reversal | BH p(5d) | BH p(21d) | Interpretation |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Dividend announcement | 3 | 0.51% | -0.25% | -2.10% | 33% | 33% | 1.0000 | 0.5608 | No adjusted statistical evidence |
-| Earnings | 8 | -0.07% | 0.24% | 0.47% | 62% | 12% | 1.0000 | 0.8133 | No adjusted statistical evidence |
-| Ex-dividend | 3 | -2.09% | -1.93% | -4.06% | 33% | 67% | 0.4288 | 0.3466 | No adjusted statistical evidence; price drop may be mechanical |
-
-![EWA1L official announcements and abnormal returns](figures/stock_profiles/EWA1L_company_events.png?v=1792850897)
-
-A direction reversal requires opposite fitted price slopes during the ten trading days before and after the event and at least a 1% five-day move. This identifies temporal association, not proof that the announcement caused the change.
-
-<details markdown="1">
-<summary>Complete official event calendar (14 announcements)</summary>
-
-| Published | Type | Profit outcome | Official announcement | Headline fundamental cue | Pre 5d | Post 1d | Post 5d | Post 21d | Abnormal 5d | Reversal |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2026-04-08 15:03 | Earnings | Unclassified earnings release | [AB East West Agro Notice on audited financial statements for 2025](https://view.news.eu.nasdaq.com/view?id=b9bf072d61fc052bbf06afce59617ece2&lang=en&src=listed) | Open official announcement | 0.00% | 0.00% | 0.00% | 0.00% | -1.25% | No |
-| 2026-02-27 16:31 | Earnings | Higher profit | [„East West Agro“ JSC 12-Month Activity Report and Unaudited Financial Statements for 2025](https://view.news.eu.nasdaq.com/view?id=b59c6063b34ed09677a36d4601b01f21c&lang=en&src=listed) | Open official announcement | 0.00% | 0.00% | 0.00% | 0.00% | 0.88% | No |
-| 2025-08-26 14:44 | Earnings | Unclassified earnings release | [Interim report for 6 months of 2025](https://view.news.eu.nasdaq.com/view?id=b933e737d302fa85413c328f86abb98c6&lang=en&src=listed) | Open official announcement | 0.00% | 0.00% | 0.00% | 0.00% | 0.00% | No |
-| 2025-05-09 08:00 | Ex-dividend | — | [Official dividend calendar: Dividend ex-date, EUR 0.8 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.8  | 0.00% | 0.00% | 0.00% | 0.00% | 0.23% | No |
-| 2025-04-28 09:24 | Dividend announcement | — | [Procedure for the payment of dividends for the year 2024](https://view.news.eu.nasdaq.com/view?id=bc4cc814ec86d2a4718103e79e4337f2d&lang=en&src=listed) | Open official announcement | 0.00% | 0.00% | 0.00% | 0.00% | -1.23% | No |
-| 2025-02-28 11:45 | Earnings | Lower profit | [AB East West Agro interim report for 12 months of 2024](https://view.news.eu.nasdaq.com/view?id=b03a9d268c95cf32861e04996b6bbd72c&lang=en&src=listed) | Open official announcement | -2.53% | 1.30% | 1.30% | 1.30% | 1.30% | No |
-| 2024-08-29 09:10 | Earnings | Unclassified earnings release | [Interim report for 6 months of 2024](https://view.news.eu.nasdaq.com/view?id=bf8d3bfa95ca753919b6378cdf88ac51c&lang=en&src=listed) | Open official announcement | -2.58% | -1.32% | 3.97% | 4.64% | 4.18% | Yes |
-| 2024-05-14 08:00 | Ex-dividend | — | [Official dividend calendar: Dividend ex-date, EUR 0.8 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.8  | -1.16% | -2.92% | -3.51% | -3.51% | -2.43% | Yes |
-| 2024-05-06 13:46 | Dividend announcement | — | [Procedure for the payment of dividends for the year 2023](https://view.news.eu.nasdaq.com/view?id=b1e22ae077381d95285ab7901460cbbfd&lang=en&src=listed) | Open official announcement | -0.58% | 0.00% | -3.49% | -2.33% | -2.53% | Yes |
-| 2024-02-27 16:30 | Earnings | Lower profit | [AB East West Agro interim report for 12 months of 2022](https://view.news.eu.nasdaq.com/view?id=bcc706af5503af1f9afb403a8ee031e61&lang=en&src=listed) | Open official announcement | 1.68% | 0.00% | -1.65% | -4.40% | -1.79% | No |
-| 2023-08-29 09:11 | Earnings | Unclassified earnings release | [Interim report for 6 months of 2023](https://view.news.eu.nasdaq.com/view?id=b1aca317cd481d2f2c68bd60544dbf802&lang=en&src=listed) | Open official announcement | -1.58% | 0.00% | -3.21% | -9.09% | -2.82% | No |
-| 2023-05-12 08:00 | Ex-dividend | — | [Official dividend calendar: Dividend ex-date, EUR 1.7 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 1.7  | -2.91% | -4.50% | -5.00% | -11.00% | -3.58% | Yes |
-| 2023-05-02 13:48 | Dividend announcement | — | [Procedure for the payment of dividends for the year 2022](https://view.news.eu.nasdaq.com/view?id=b58da8597730f5d97e40ce7c411608d7d&lang=en&src=listed) | Open official announcement | -1.51% | 2.04% | 3.06% | -5.10% | 2.99% | No |
-| 2023-02-23 13:07 | Earnings | Higher profit | [CORRECTION: AB East West Agro interim report for 12 months of 2022](https://view.news.eu.nasdaq.com/view?id=b04f119068db48df42f5bca9d0530005d&lang=en&src=listed) | Open official announcement | 3.70% | 0.00% | 1.19% | 3.57% | 1.39% | No |
-
-</details>
-
-</details>
-
-<details markdown="1" class="earnings-outcomes">
-<summary>Profit outcome and subsequent price analysis (4 classified of 8 earnings releases)</summary>
-
-Higher/lower profit refers to the issuer's explicit comparison with the earlier comparable period. ‘In line / unchanged’ is used only when the issuer explicitly says that profit met a plan, forecast or expectation, or was unchanged. ‘Loss’ requires an explicit realised net or operating loss. Releases without such wording remain unclassified and are excluded from the conditional estimates.
-
-Variance is reported in squared percentage points. Abnormal return is the share return minus the equal-weight Baltic-market return over the same horizon.
-
-| Profit outcome | Horizon | N | Conditional mean | Variance | Median | Positive share | Mean abnormal | Abnormal variance | Median abnormal |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Higher profit | 1d | 2 | 0.00% | 0.000 | 0.00% | 0% | 0.26% | 0.302 | 0.26% |
-| Higher profit | 5d | 2 | 0.60% | 0.709 | 0.60% | 50% | 1.14% | 0.129 | 1.14% |
-| Higher profit | 21d | 2 | 1.79% | 6.378 | 1.79% | 50% | 4.52% | 2.115 | 4.52% |
-| Lower profit | 1d | 2 | 0.65% | 0.843 | 0.65% | 50% | 0.46% | 1.592 | 0.46% |
-| Lower profit | 5d | 2 | -0.17% | 4.343 | -0.17% | 50% | -0.25% | 4.766 | -0.25% |
-| Lower profit | 21d | 2 | -1.55% | 16.213 | -1.55% | 50% | -1.04% | 9.852 | -1.04% |
-
-**Kruskal–Wallis test across the available outcome groups**
-
-| Horizon | Groups | N | H | Raw p | BH-adjusted p | Conclusion |
-| --- | --- | --- | --- | --- | --- | --- |
-| 1d | 2 | 4 | 0.000 | 1.0000 | 1.0000 | No adjusted evidence |
-| 5d | 2 | 4 | 0.600 | 0.4386 | 0.7778 | No adjusted evidence |
-| 21d | 2 | 4 | 2.400 | 0.1213 | 0.5008 | No adjusted evidence |
-
-**Pairwise result:** No pairwise difference survives BH adjustment.
-
-The test describes historical association. Small groups, overlapping horizons and repeated releases from the same company limit causal interpretation.
-
-</details>
-
-</details>
-
-<details markdown="1">
-<summary>All five model frontiers with this share highlighted</summary>
-
-![EWA1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/EWA1L_all_frontiers.png?v=1792850691)
-
-The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
-
-</details>
-
-<details markdown="1">
-<summary>All 72 PerformanceAnalytics measures: full period and last 126 observations</summary>
-
-| Measure | Full period | Last 126 | Measure | Full period | Last 126 |
-| --- | --- | --- | --- | --- | --- |
-| ActiveReturn | -0.244073 | -0.237209 | M2Sortino | -0.015387 | NA |
-| AdjustedSharpe | 0.014866 | NA | MSquaredExcess | -0.197526 | NA |
-| AnnualizedReturn_Arithmetic | 0.002856 | 0.000000 | Martin | -0.057131 | NA |
-| AnnualizedReturn_Geometric | -0.015384 | 0.000000 | MaximumDrawdown | 0.362375 | 0.000000 |
-| Appraisal | -0.167227 | NA | Modigliani | 0.000010 | NA |
-| ArithmeticReturn | 0.000011 | 0.000000 | NetSelectivity | -0.266516 | 0.000000 |
-| AverageDrawdown | 0.066346 | 0.000000 | Omega | 1.004493 | NA |
-| AverageDrawdownLength | 67.000000 | 0.000000 | OmegaExcessReturn | -0.059707 | 0.000000 |
-| AverageRecoveryTime | 43.090909 | 0.000000 | PainIndex | 0.231347 | 0.000000 |
-| BernardoLedoit | 1.004493 | NA | PainRatio | -0.066496 | NA |
-| BetaCoKurtosis | 0.087045 | 0.000000 | Prospect | -0.405820 | NA |
-| BetaCoSkewness | -2.667071 | 0.000000 | Rachev | 1.055640 | NA |
-| Burke | -0.063419 | NA | Selectivity | -0.032153 | 0.000000 |
-| CAPMAlpha | -0.000053 | 0.000000 | Sharpe_Annualized | 0.014812 | NA |
-| CAPMBeta | 0.073328 | 0.000000 | Sharpe_Daily | 0.000933 | NA |
-| CDD | 0.111440 | 0.000000 | Sharpe_ES | 0.000388 | NA |
-| Calmar | -0.042452 | NA | Sharpe_VaR | 0.000623 | NA |
-| CoKurtosis | 0.000000 | 0.000000 | Skewness | 1.542213 | NA |
-| CoSkewness | -0.000000 | 0.000000 | Sortino | 0.001464 | NA |
-| CumulativeReturn | -0.045327 | 0.000000 | SpecificRisk | 0.192271 | 0.000000 |
-| DRatio | 1.116479 | NA | Sterling | -0.033271 | 0.000000 |
-| DownCapture | 0.055448 | 0.000000 | SystematicRisk | 0.012876 | 0.000000 |
-| DownNumber | 0.157233 | 0.000000 | TotalRisk | 0.192702 | 0.000000 |
-| DownPercent | 0.874214 | 1.000000 | TrackingError_Annualized | 0.251983 | 0.154964 |
-| DownsideDeviation | 0.007742 | 0.000000 | TrackingError_Daily | 0.015873 | 0.009762 |
-| DrawdownDeviation | 0.014414 | 0.000000 | Treynor_Annualized | -0.209789 | NA |
-| ES_Loss | 0.029200 | 0.000000 | Treynor_Daily | -0.000839 | NA |
-| FamaBeta | 1.098138 | 0.000000 | UlcerIndex | 0.269269 | 0.000000 |
-| GeometricReturn | -0.000062 | 0.000000 | UpCapture | 0.046660 | 0.000000 |
-| Hurst | 0.387827 | NA | UpNumber | 0.142202 | 0.000000 |
-| Information_Annualized | -0.968609 | -1.530742 | UpPercent | 0.110092 | 0.000000 |
-| Information_Daily | -0.055382 | -0.086565 | UpsidePotential | 0.327291 | NA |
-| JensenAlpha | -0.032153 | 0.000000 | UpsideRisk | 0.009350 | 0.000000 |
-| Kappa | 0.000905 | NA | VaR_Loss | 0.018182 | 0.000000 |
-| Kelly | 0.076812 | NA | Volatility | 0.012147 | 0.000000 |
-| Kurtosis | 18.512640 | NA | Volatility_Annualized | 0.192829 | 0.000000 |
-
-</details>
-
-<details markdown="1" class="portfolio-sensitivity">
-<summary>Portfolio sensitivity</summary>
-
-<details markdown="1" class="dominance-components">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Choose S&P 500, Current or any model portfolio as the benchmark for the difference panels.
-
-<div class="dominance-explorer" data-asset="EWA1L"><p>Open this section to load the interactive curve explorer.</p></div>
-
-<details markdown="1" class="static-dominance">
-<summary>High-resolution static FSD, SSD and TSD figure</summary>
-
-![EWA1L high-resolution stochastic dominance](figures/stock_profiles/EWA1L_FSD_SSD_TSD.png?v=1792850941)
-
-The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
-
-</details>
-
-</details>
-
-</details>
-
-</details>
-
 <details markdown="1" class="stock-profile" id="share-apg1l" data-signal="WAIT" data-netsd-effect="INCREASE">
-<summary><strong>APG1L — Apranga</strong> | current action: WAIT | allocation target 385 shares | priority 6</summary>
+<summary><strong>APG1L — Apranga</strong> | current action: WAIT | allocation target 385 shares | netSD diagnostic rank 5</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>200</td><td>385</td><td>+185</td><td>9.82%</td><td>EUR 3.8200</td><td>0.3051</td><td>38 / 2</td><td>39.86</td><td>Bullish</td><td>Inside bands</td><td>1.000 (Overbought)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>0.009643 (11.745% of portfolio HHI)</td><td>EUR 24,360</td><td>2.9%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>Execution rationale</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>200</td><td>385</td><td>+185</td><td>9.82%</td><td>EUR 3.8200</td><td>0.3051</td><td>38 / 2</td><td>39.86</td><td>Bullish</td><td>Inside bands</td><td>1.000 (Overbought)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>Allocation target is higher, but technical timing does not support buying now.</td><td>0.009643 (11.745% of portfolio HHI)</td><td>EUR 24,360</td><td>2.9%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
 ![APG1L Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/APG1L_technicals_6m.png)
 
@@ -1418,7 +1191,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 | --- | --- | --- | --- |
 | EUR 3.8200 | EUR 3.7878 (-0.84%) | EUR 3.8642 (+1.16%) | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires both a positive allocation change and a BUY technical timing signal; WAIT means the model wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires an economically material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -1693,9 +1466,9 @@ The static figure is collapsed because the interactive plots above provide the d
 </details>
 
 <details markdown="1" class="stock-profile" id="share-grg1l" data-signal="WAIT" data-netsd-effect="INCREASE">
-<summary><strong>GRG1L — Grigeo Group</strong> | current action: WAIT | allocation target 711 shares | priority 7</summary>
+<summary><strong>GRG1L — Grigeo Group</strong> | current action: WAIT | allocation target 711 shares | netSD diagnostic rank 6</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>543</td><td>711</td><td>+168</td><td>4.79%</td><td>EUR 1.0100</td><td>0.3983</td><td>53 / 6</td><td>50.37</td><td>Bullish</td><td>Inside bands</td><td>0.696 (Neutral)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>0.002298 (2.799% of portfolio HHI)</td><td>EUR 12,104</td><td>1.4%</td><td>1.2%</td><td>MEDIUM</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>Execution rationale</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>543</td><td>711</td><td>+168</td><td>4.79%</td><td>EUR 1.0100</td><td>0.3983</td><td>53 / 6</td><td>50.37</td><td>Bullish</td><td>Inside bands</td><td>0.696 (Neutral)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>Allocation target is higher, but technical timing does not support buying now.</td><td>0.002298 (2.799% of portfolio HHI)</td><td>EUR 12,104</td><td>1.4%</td><td>1.2%</td><td>MEDIUM</td></tr></tbody></table>
 
 ![GRG1L Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/GRG1L_technicals_6m.png)
 
@@ -1707,7 +1480,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 | --- | --- | --- | --- |
 | EUR 1.0100 | EUR 0.9963 (-1.35%) | EUR 1.0226 (+1.24%) | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires both a positive allocation change and a BUY technical timing signal; WAIT means the model wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires an economically material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -1899,9 +1672,9 @@ The static figure is collapsed because the interactive plots above provide the d
 </details>
 
 <details markdown="1" class="stock-profile" id="share-rsu1l" data-signal="WAIT" data-netsd-effect="INCREASE">
-<summary><strong>RSU1L — Rokiškio sūris</strong> | current action: WAIT | allocation target 84 shares | priority 8</summary>
+<summary><strong>RSU1L — Rokiškio sūris</strong> | current action: WAIT | allocation target 84 shares | netSD diagnostic rank 7</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>84</td><td>+84</td><td>2.47%</td><td>EUR 4.4000</td><td>0.2288</td><td>35 / 8</td><td>33.46</td><td>Bearish</td><td>Below lower band</td><td>0.000 (Oversold)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>0.000611 (0.744% of portfolio HHI)</td><td>EUR 1,184</td><td>31.2%</td><td>4.8%</td><td>HIGH</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>Execution rationale</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>84</td><td>+84</td><td>2.47%</td><td>EUR 4.4000</td><td>0.2288</td><td>35 / 8</td><td>33.46</td><td>Bearish</td><td>Below lower band</td><td>0.000 (Oversold)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>Allocation target is higher, but technical timing does not support buying now.</td><td>0.000611 (0.744% of portfolio HHI)</td><td>EUR 1,184</td><td>31.2%</td><td>4.8%</td><td>HIGH</td></tr></tbody></table>
 
 ![RSU1L Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/RSU1L_technicals_6m.png)
 
@@ -1913,7 +1686,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 | --- | --- | --- | --- |
 | EUR 4.4000 | EUR 4.4100 (+0.23%) | EUR 4.5460 (+3.32%) | BUY |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires both a positive allocation change and a BUY technical timing signal; WAIT means the model wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires an economically material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -2128,9 +1901,9 @@ The static figure is collapsed because the interactive plots above provide the d
 </details>
 
 <details markdown="1" class="stock-profile" id="share-ign1l" data-signal="WAIT" data-netsd-effect="INCREASE">
-<summary><strong>IGN1L — Ignitis grupė</strong> | current action: WAIT | allocation target 13 shares | priority 9</summary>
+<summary><strong>IGN1L — Ignitis grupė</strong> | current action: WAIT | allocation target 13 shares | netSD diagnostic rank 8</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>13</td><td>+13</td><td>1.93%</td><td>EUR 21.7000</td><td>0.3729</td><td>54 / 10</td><td>42.87</td><td>Bullish</td><td>Inside bands</td><td>0.737 (Neutral)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>0.000371 (0.452% of portfolio HHI)</td><td>EUR 284,653</td><td>0.1%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>Execution rationale</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>13</td><td>+13</td><td>1.93%</td><td>EUR 21.7000</td><td>0.3729</td><td>54 / 10</td><td>42.87</td><td>Bullish</td><td>Inside bands</td><td>0.737 (Neutral)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>Allocation target is higher, but technical timing does not support buying now.</td><td>0.000371 (0.452% of portfolio HHI)</td><td>EUR 284,653</td><td>0.1%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
 ![IGN1L Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/IGN1L_technicals_6m.png)
 
@@ -2142,7 +1915,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 | --- | --- | --- | --- |
 | EUR 21.7000 | EUR 21.6273 (-0.34%) | EUR 21.8577 (+0.73%) | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires both a positive allocation change and a BUY technical timing signal; WAIT means the model wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires an economically material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -2381,9 +2154,9 @@ The static figure is collapsed because the interactive plots above provide the d
 </details>
 
 <details markdown="1" class="stock-profile" id="share-pzv1l" data-signal="WAIT" data-netsd-effect="INCREASE">
-<summary><strong>PZV1L — Pieno žvaigždės</strong> | current action: WAIT | allocation target 101 shares | priority 10</summary>
+<summary><strong>PZV1L — Pieno žvaigždės</strong> | current action: WAIT | allocation target 101 shares | netSD diagnostic rank 9</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>101</td><td>+101</td><td>1.20%</td><td>EUR 1.7750</td><td>0.2119</td><td>35 / 10</td><td>51.45</td><td>Bearish</td><td>Inside bands</td><td>0.135 (Oversold)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>0.000145 (0.177% of portfolio HHI)</td><td>EUR 4,466</td><td>4.0%</td><td>1.2%</td><td>HIGH</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>Execution rationale</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>101</td><td>+101</td><td>1.20%</td><td>EUR 1.7750</td><td>0.2119</td><td>35 / 10</td><td>51.45</td><td>Bearish</td><td>Inside bands</td><td>0.135 (Oversold)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>Allocation target is higher, but technical timing does not support buying now.</td><td>0.000145 (0.177% of portfolio HHI)</td><td>EUR 4,466</td><td>4.0%</td><td>1.2%</td><td>HIGH</td></tr></tbody></table>
 
 ![PZV1L Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/PZV1L_technicals_6m.png)
 
@@ -2395,7 +2168,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 | --- | --- | --- | --- |
 | EUR 1.7750 | EUR 1.7470 (-1.58%) | EUR 1.8240 (+2.76%) | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires both a positive allocation change and a BUY technical timing signal; WAIT means the model wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires an economically material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -2623,9 +2396,9 @@ The static figure is collapsed because the interactive plots above provide the d
 </details>
 
 <details markdown="1" class="stock-profile" id="share-ako1l" data-signal="WAIT" data-netsd-effect="INCREASE">
-<summary><strong>AKO1L — Akola Group</strong> | current action: WAIT | allocation target 129 shares | priority 11</summary>
+<summary><strong>AKO1L — Akola Group</strong> | current action: WAIT | allocation target 129 shares | netSD diagnostic rank 10</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>129</td><td>+129</td><td>1.60%</td><td>EUR 1.8500</td><td>0.2034</td><td>34 / 10</td><td>78.10</td><td>Bullish</td><td>Inside bands</td><td>0.855 (Overbought)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>0.000255 (0.311% of portfolio HHI)</td><td>EUR 22,139</td><td>1.1%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>Execution rationale</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>129</td><td>+129</td><td>1.60%</td><td>EUR 1.8500</td><td>0.2034</td><td>34 / 10</td><td>78.10</td><td>Bullish</td><td>Inside bands</td><td>0.855 (Overbought)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>Allocation target is higher, but technical timing does not support buying now.</td><td>0.000255 (0.311% of portfolio HHI)</td><td>EUR 22,139</td><td>1.1%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
 ![AKO1L Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/AKO1L_technicals_6m.png)
 
@@ -2637,7 +2410,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 | --- | --- | --- | --- |
 | EUR 1.8500 | EUR 1.7524 (-5.27%) | EUR 1.8706 (+1.11%) | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires both a positive allocation change and a BUY technical timing signal; WAIT means the model wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires an economically material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -2865,9 +2638,9 @@ The static figure is collapsed because the interactive plots above provide the d
 </details>
 
 <details markdown="1" class="stock-profile" id="share-virsi" data-signal="WAIT" data-netsd-effect="INCREASE">
-<summary><strong>VIRSI — VIRŠI-A</strong> | current action: WAIT | allocation target 40 shares | priority 12</summary>
+<summary><strong>VIRSI — VIRŠI-A</strong> | current action: WAIT | allocation target 40 shares | netSD diagnostic rank 11</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>40</td><td>+40</td><td>1.20%</td><td>EUR 4.4100</td><td>0.1525</td><td>35 / 17</td><td>49.23</td><td>Bearish</td><td>Inside bands</td><td>0.297 (Neutral)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>0.000144 (0.175% of portfolio HHI)</td><td>EUR 2,763</td><td>6.4%</td><td>2.4%</td><td>HIGH</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>Execution rationale</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>40</td><td>+40</td><td>1.20%</td><td>EUR 4.4100</td><td>0.1525</td><td>35 / 17</td><td>49.23</td><td>Bearish</td><td>Inside bands</td><td>0.297 (Neutral)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>Allocation target is higher, but technical timing does not support buying now.</td><td>0.000144 (0.175% of portfolio HHI)</td><td>EUR 2,763</td><td>6.4%</td><td>2.4%</td><td>HIGH</td></tr></tbody></table>
 
 ![VIRSI Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/VIRSI_technicals_6m.png)
 
@@ -2879,7 +2652,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 | --- | --- | --- | --- |
 | EUR 4.4100 | EUR 4.4023 (-0.18%) | EUR 4.4447 (+0.79%) | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires both a positive allocation change and a BUY technical timing signal; WAIT means the model wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires an economically material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -3108,9 +2881,9 @@ The static figure is collapsed because the interactive plots above provide the d
 </details>
 
 <details markdown="1" class="stock-profile" id="share-roe1l" data-signal="WAIT" data-netsd-effect="DECREASE">
-<summary><strong>ROE1L — Artea Bankas</strong> | current action: WAIT | allocation target 1033 shares | priority 13</summary>
+<summary><strong>ROE1L — Artea Bankas</strong> | current action: WAIT | allocation target 1033 shares | netSD diagnostic rank 12</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>416</td><td>1033</td><td>+617</td><td>6.08%</td><td>EUR 0.8820</td><td>0.1864</td><td>41 / 19</td><td>45.19</td><td>Bearish</td><td>Inside bands</td><td>0.453 (Neutral)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>0.003696 (4.501% of portfolio HHI)</td><td>EUR 182,895</td><td>0.3%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>Execution rationale</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>416</td><td>1033</td><td>+617</td><td>6.08%</td><td>EUR 0.8820</td><td>0.1864</td><td>41 / 19</td><td>45.19</td><td>Bearish</td><td>Inside bands</td><td>0.453 (Neutral)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>Allocation target is higher, but technical timing does not support buying now.</td><td>0.003696 (4.501% of portfolio HHI)</td><td>EUR 182,895</td><td>0.3%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
 ![ROE1L Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/ROE1L_technicals_6m.png)
 
@@ -3122,7 +2895,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 | --- | --- | --- | --- |
 | EUR 0.8820 | EUR 0.8688 (-1.49%) | EUR 0.9079 (+2.93%) | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires both a positive allocation change and a BUY technical timing signal; WAIT means the model wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires an economically material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -3357,535 +3130,10 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-tal1t" data-signal="WAIT" data-netsd-effect="DECREASE">
-<summary><strong>TAL1T — Tallink Grupp</strong> | current action: WAIT | allocation target 775 shares | priority 14</summary>
-
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>700</td><td>775</td><td>+75</td><td>3.36%</td><td>EUR 0.6500</td><td>0.0763</td><td>28 / 19</td><td>66.63</td><td>Bearish</td><td>Above upper band</td><td>0.599 (Neutral)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>0.001129 (1.375% of portfolio HHI)</td><td>EUR 77,090</td><td>0.1%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
-
-![TAL1T Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/TAL1T_technicals_6m.png)
-
-Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
-
-**Current indicative buy and sell prices**
-
-| Current price | Buy below | Sell above | Bollinger price zone |
-| --- | --- | --- | --- |
-| EUR 0.6500 | EUR 0.6419 (-1.25%) | EUR 0.6498 (-0.03%) | SELL |
-
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires both a positive allocation change and a BUY technical timing signal; WAIT means the model wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD.
-
-<details markdown="1">
-<summary>Complete technical history</summary>
-
-![TAL1T complete technical history](figures/technical_analysis/TAL1T_technical.png)
-
-</details>
-
-<details markdown="1">
-<summary>Return histogram</summary>
-
-![TAL1T return histogram](figures/stock_profiles/TAL1T_histogram.png?v=1792850132)
-
-</details>
-
-<details markdown="1" class="seasonality-section">
-<summary>Seasonality, drawdowns and upside periods</summary>
-
-The analysis covers 962 daily returns from 2023-01-02 to 2026-10-23. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
-
-| Measure | Value | Measure | Value | Measure | Value |
-| --- | --- | --- | --- | --- | --- |
-| Maximum drawdown | -24.80% (2025-11-24) | Average gain / average loss | 1.214 | Best 21-day period | 16.31% (ending 2023-08-18) |
-| Average underwater drawdown | 13.02% | Upside potential ratio | 1.137 | Worst 21-day period | -17.67% (ending 2024-07-02) |
-| Conditional drawdown 95% | 23.76% | Upside capture vs Baltic EW | 65.3% | Best 5-day period | 8.16% (ending 2023-07-27) |
-| Ulcer index | 14.78 | Downside capture vs Baltic EW | 48.1% | Best 63-day period | 27.30% (ending 2023-08-22) |
-| Longest underwater period | 868 calendar days | Positive trading days | 39.0% | Repeated calendar pattern | Feb: 100% positive across 4 years |
-| Daily downside deviation | 0.674% | Best day | 5.37% (2024-02-22) |  |  |
-| Daily upside deviation | 0.677% | Worst day | -8.83% (2024-06-19) |  |  |
-
-**Calendar-effect tests and observed averages**
-
-| Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
-| --- | --- | --- | --- | --- |
-| Weekday | Best: Friday (0.101%); worst: Monday (-0.098%) | 0.1714 | 0.2574 | Not detected |
-| Calendar month | Best: Feb (0.195% daily); worst: Jun (-0.256% daily) | 0.6688 | 0.7770 | Not detected |
-| Turn of month | First/last three days: 0.107%; other days: 0.007% | 0.3026 | 0.8571 | Not detected |
-
-![TAL1T seasonality, drawdowns and upside periods](figures/stock_profiles/TAL1T_seasonality.png?v=1792850841)
-
-**Five deepest drawdown episodes**
-
-| Rank | Peak | Trough | Recovery | Loss | Underwater days |
-| --- | --- | --- | --- | --- | --- |
-| 1 | 2024-06-07 | 2025-11-24 | Not recovered | -24.80% | 868 |
-| 2 | 2023-09-07 | 2023-10-17 | 2024-04-09 | -11.81% | 215 |
-| 3 | 2023-03-07 | 2023-03-13 | 2023-06-20 | -4.81% | 105 |
-| 4 | 2023-08-21 | 2023-08-24 | 2023-09-07 | -3.48% | 17 |
-| 5 | 2024-04-11 | 2024-05-20 | 2024-05-31 | -3.37% | 50 |
-
-**Five strongest non-overlapping 21-trading-day rises**
-
-| Rank | Start | End | 21-day return |
-| --- | --- | --- | --- |
-| 1 | 2023-07-20 | 2023-08-18 | 16.31% |
-| 2 | 2024-12-27 | 2025-01-29 | 11.65% |
-| 3 | 2024-09-23 | 2024-10-22 | 9.17% |
-| 4 | 2023-02-06 | 2023-03-07 | 8.18% |
-| 5 | 2026-01-21 | 2026-02-19 | 7.61% |
-
-The dated extremes identify where company announcements, dividends, corporate actions or data anomalies should be checked. A repeated calendar average is descriptive until it survives the adjusted test and a later out-of-sample period; it is not by itself a buy or sell signal.
-
-<details markdown="1" class="company-events">
-<summary>Official company-news calendar and price-direction analysis (38 events)</summary>
-
-Announcement times and links come from the official Nasdaq news service. The effective date is the first trading close strictly after publication. Abnormal return means the share return minus the equal-weight Baltic-market return over the same window.
-
-| Event type | N | Abnormal 1d | Abnormal 5d | Abnormal 21d | Positive 5d | Direction reversal | BH p(5d) | BH p(21d) | Interpretation |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Dividend payment | 4 | 0.40% | 0.59% | -0.98% | 25% | 0% | 1.0000 | 0.7934 | No adjusted statistical evidence |
-| Earnings | 27 | -0.01% | -0.24% | 1.02% | 41% | 33% | 0.3842 | 0.9508 | No adjusted statistical evidence |
-| Ex-dividend | 7 | -3.05% | -6.90% | -8.29% | 0% | 86% | 0.0000 | 0.0000 | Different from ordinary periods; price drop may be mechanical |
-
-![TAL1T official announcements and abnormal returns](figures/stock_profiles/TAL1T_company_events.png?v=1792850867)
-
-A direction reversal requires opposite fitted price slopes during the ten trading days before and after the event and at least a 1% five-day move. This identifies temporal association, not proof that the announcement caused the change.
-
-<details markdown="1">
-<summary>Complete official event calendar (38 announcements)</summary>
-
-| Published | Type | Profit outcome | Official announcement | Headline fundamental cue | Pre 5d | Post 1d | Post 5d | Post 21d | Abnormal 5d | Reversal |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2026-07-23 09:00 | Earnings | Loss | [AS Tallink Grupp Unaudited Consolidated Interim Report for the Q2 2026](https://view.news.eu.nasdaq.com/view?id=b810aadb2a6fa5c308db2c732663f163d&lang=en&src=listed) | Open official announcement | -0.16% | -0.16% | -0.16% | 1.47% | -0.17% | No |
-| 2026-07-03 09:00 | Earnings | Unclassified earnings release | [AS Tallink Grupp Statistics for June and the Second Quarter of 2026](https://view.news.eu.nasdaq.com/view?id=bd34c3946e1d448133fa85e5cc70b7720&lang=en&src=listed) | Open official announcement | 0.16% | 0.00% | -0.32% | -0.32% | -1.28% | No |
-| 2026-07-01 08:00 | Dividend payment | — | [Official dividend calendar: Dividend payment date, EUR 0.03 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.03  | 0.33% | 0.33% | 0.16% | -0.49% | -0.60% | No |
-| 2026-06-17 08:00 | Ex-dividend | — | [Official dividend calendar: Dividend ex-date, EUR 0.03 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.03  | 0.00% | -5.50% | -6.56% | -6.56% | -5.92% | Yes |
-| 2026-06-12 09:00 | Ex-dividend | — | [Dividend payment ex-date of AS Tallink Grupp ](https://view.news.eu.nasdaq.com/view?id=bbd5fd5003b998bb0ce4da7a2c5c5f4ec&lang=en&src=listed) | Open official announcement | 0.77% | 0.15% | -5.96% | -6.42% | -5.02% | Yes |
-| 2026-04-23 09:00 | Earnings | Higher profit | [AS-i Tallink Grupp 2026. majandusaasta auditeerimata konsolideeritud I kv tulemuste vahearuanne](https://view.news.eu.nasdaq.com/view?id=bbfa8c39196898346b9433e088d58bc59&lang=en&src=listed) | Open official announcement | -0.63% | 0.48% | 3.02% | 2.54% | 3.84% | No |
-| 2026-04-14 09:00 | Earnings | Lower profit | [AS Tallink Grupp Audited Annual Report for the Financial Year 2025](https://view.news.eu.nasdaq.com/view?id=b95719f5e702602be3809d7b9a43b6d1a&lang=en&src=listed) | Open official announcement | 1.96% | 0.64% | 0.48% | 4.33% | 0.31% | No |
-| 2026-04-06 09:00 | Earnings | Unclassified earnings release | [AS Tallink Grupp Statistics for March and the First Quarter of 2026](https://view.news.eu.nasdaq.com/view?id=bdc9367ae37cb63180e904e380783b03e&lang=en&src=listed) | Open official announcement | -0.49% | 0.33% | 2.13% | 6.57% | 0.44% | Yes |
-| 2026-02-19 09:00 | Earnings | Lower profit | [AS Tallink Grupp Unaudited Consolidated Interim Report for the Q4 and 12 months of 2025](https://view.news.eu.nasdaq.com/view?id=b7f20e74fd862485e23b933e9a05263fb&lang=en&src=listed) | Open official announcement | 5.65% | -0.79% | -3.93% | -2.36% | -2.55% | Yes |
-| 2026-01-05 09:00 | Earnings | Unclassified earnings release | [AS Tallink Grupp Statistics for December and the Fourth Quarter of 2025](https://view.news.eu.nasdaq.com/view?id=bbc67dbc633b570c22325435f47cf72f4&lang=en&src=listed) | Open official announcement | 0.86% | 0.17% | 1.88% | 2.74% | 0.42% | No |
-| 2025-11-25 07:00 | Dividend payment | — | [Official dividend calendar: Dividend payment date, EUR 0.03 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.03  | -0.70% | 0.53% | 0.53% | 2.65% | -0.13% | No |
-| 2025-11-13 07:00 | Ex-dividend | — | [Official dividend calendar: Dividend ex-date, EUR 0.03 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.03  | -0.33% | -3.17% | -5.17% | -3.67% | -5.44% | Yes |
-| 2025-11-10 09:00 | Ex-dividend | — | [Dividend payment ex-date of AS Tallink Grupp ](https://view.news.eu.nasdaq.com/view?id=b98b50c5921af80ef8ad9e0d84cc37db2&lang=en&src=listed) | Open official announcement | -1.15% | 0.17% | -4.83% | -4.17% | -4.85% | Yes |
-| 2025-10-23 16:30 | Earnings | Unclassified earnings release | [Correction: AS Tallink Grupp Unaudited Consolidated Interim Report for the Q3 2025](https://view.news.eu.nasdaq.com/view?id=b0b44d930e03f99fc4038db808bca56de&lang=en&src=listed) | Open official announcement | 0.17% | -0.17% | -1.84% | -5.18% | -1.70% | Yes |
-| 2025-10-03 09:00 | Earnings | Unclassified earnings release | [AS Tallink Grupp Statistics for September and the Third Quarter of 2025](https://view.news.eu.nasdaq.com/view?id=b7e9c8045dd261bdecb9bce6461c16162&lang=en&src=listed) | Open official announcement | -0.17% | 0.00% | 0.67% | 1.17% | 0.36% | No |
-| 2025-07-24 09:00 | Earnings | Lower profit | [AS Tallink Grupp Unaudited Consolidated Interim Report for the Q2 2025](https://view.news.eu.nasdaq.com/view?id=b7800d40a00468096638dfac917bf6186&lang=en&src=listed) | Open official announcement | -1.13% | 0.00% | -1.46% | 0.00% | -1.55% | No |
-| 2025-07-03 09:00 | Earnings | Unclassified earnings release | [AS Tallink Grupp Statistics for June and the Second Quarter of 2025](https://view.news.eu.nasdaq.com/view?id=b5f2d839432486cba1d713b19f7f84935&lang=en&src=listed) | Open official announcement | -0.16% | 0.00% | -0.32% | -1.13% | -0.93% | No |
-| 2025-07-02 08:00 | Dividend payment | — | [Official dividend calendar: Dividend payment date, EUR 0.03 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.03  | 0.32% | 0.48% | -0.16% | -1.45% | -0.05% | No |
-| 2025-06-18 08:00 | Ex-dividend | — | [Official dividend calendar: Dividend ex-date, EUR 0.03 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.03  | -0.76% | -4.87% | -5.63% | -5.33% | -5.87% | Yes |
-| 2025-04-24 09:00 | Earnings | Unclassified earnings release | [AS Tallink Grupp Unaudited Consolidated Interim Report for the Q1 2025](https://view.news.eu.nasdaq.com/view?id=be2094245113083aff4883b80f45ef684&lang=en&src=listed) | Open official announcement | -3.92% | -0.33% | 0.49% | 6.53% | -0.59% | No |
-| 2025-04-16 16:30 | Earnings | Unclassified earnings release | [AS Tallink Grupp Audited Annual Report for the Financial Year 2024](https://view.news.eu.nasdaq.com/view?id=bc2f19b7dc4b9743de1b697269b5c1b4b&lang=en&src=listed) | Open official announcement | 4.78% | -0.31% | -3.93% | 1.57% | -5.27% | Yes |
-| 2025-04-03 09:00 | Earnings | Unclassified earnings release | [AS Tallink Grupp Statistics for March and the First Quarter of 2025](https://view.news.eu.nasdaq.com/view?id=b3804420d07f31491a6435605987479c3&lang=en&src=listed) | Open official announcement | 0.31% | -1.09% | -2.97% | -2.03% | -1.18% | No |
-| 2025-02-20 09:00 | Earnings | Lower profit | [AS Tallink Grupp Unaudited Consolidated Interim Report for the Q4 and 12 months of 2024](https://view.news.eu.nasdaq.com/view?id=bf2e57d6894634da8edadc4bfdd454bdc&lang=en&src=listed) | Open official announcement | 6.19% | 0.00% | -2.39% | -4.78% | -2.07% | Yes |
-| 2025-01-03 09:00 | Earnings | Unclassified earnings release | [AS Tallink Grupp Statistics for December and the Fourth Quarter of 2024](https://view.news.eu.nasdaq.com/view?id=bf0ca12b705bf7ed63bcc923ff5ba3398&lang=en&src=listed) | Open official announcement | 2.78% | 1.86% | 2.36% | 7.77% | 0.80% | No |
-| 2024-10-24 09:00 | Earnings | Lower profit | [AS Tallink Grupp Unaudited Consolidated Interim Report Q3 2024](https://view.news.eu.nasdaq.com/view?id=b76b7368699b4240251aa0a4e7789d7f0&lang=en&src=listed) | Open official announcement | -1.76% | -0.16% | -2.12% | -5.22% | -1.99% | Yes |
-| 2024-07-25 09:00 | Earnings | Lower profit | [AS Tallink Grupp Unaudited Consolidated Interim Report Q2 2024](https://view.news.eu.nasdaq.com/view?id=b4e690d5d91c719bad60092852357f019&lang=en&src=listed) | Open official announcement | -2.65% | -0.51% | 4.08% | 3.06% | 4.16% | Yes |
-| 2024-07-03 08:00 | Dividend payment | — | [Official dividend calendar: Dividend payment date, EUR 0.06 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.06  | -5.38% | 0.98% | 3.25% | -1.79% | 3.13% | No |
-| 2024-06-19 08:00 | Ex-dividend | — | [Official dividend calendar: Dividend ex-date, EUR 0.06 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.06  | -6.65% | -8.83% | -7.41% | -13.96% | -6.94% | No |
-| 2024-06-12 09:00 | Ex-dividend | — | [Dividend payment ex-date of AS Tallink Grupp ](https://view.news.eu.nasdaq.com/view?id=b57d95610e8103e9b1b006511cd7925f3&lang=en&src=listed) | Open official announcement | 0.13% | -0.13% | -14.78% | -16.64% | -14.24% | Yes |
-| 2024-04-25 09:00 | Earnings | Loss | [AS Tallink Grupp Unaudited Consolidated Interim Report Q1 2024](https://view.news.eu.nasdaq.com/view?id=bd6e24c67ce2e6f0f2b4b03fa0f300cd7&lang=en&src=listed) | Open official announcement | 0.69% | -1.37% | -1.37% | 1.23% | -1.64% | Yes |
-| 2024-04-04 14:00 | Earnings | Higher profit | [AS Tallink Grupp Audited Annual Report for the Financial Year 2023](https://view.news.eu.nasdaq.com/view?id=bbcf084af2e6f9d10dc1e6bd92c495c43&lang=en&src=listed) | Open official announcement | 0.00% | 2.14% | 6.00% | 3.29% | 5.87% | Yes |
-| 2024-02-22 09:00 | Earnings | Higher profit | [AS Tallink Grupp unaudited consolidated Interim Report for the fourth quarter and 12 months of 2023](https://view.news.eu.nasdaq.com/view?id=b167c1880926388070032ab7eebca7d94&lang=en&src=listed) | Open official announcement | 6.16% | 1.13% | -0.99% | -1.13% | -2.03% | No |
-| 2023-10-26 09:00 | Earnings | Higher profit | [AS Tallink Grupp Unaudited Consolidated Interim Report Q3 2023](https://view.news.eu.nasdaq.com/view?id=b6f84f9b4b0043fa3f5333b70474f6037&lang=en&src=listed) | Open official announcement | 1.24% | -0.15% | 1.07% | 4.75% | 0.95% | No |
-| 2023-07-27 09:00 | Earnings | Loss | [AS Tallink Grupp Unaudited Consolidated Interim Report Q2 2023](https://view.news.eu.nasdaq.com/view?id=b2ba9fddc03237b5fc83ad55a33195b4d&lang=en&src=listed) | Open official announcement | 8.16% | -0.45% | -0.15% | 5.43% | -0.43% | No |
-| 2023-04-27 09:00 | Earnings | Loss | [AS Tallink Grupp Unaudited Consolidated Interim Report Q1 2023](https://view.news.eu.nasdaq.com/view?id=b4188886b41d24f27a29997d4c60ed5de&lang=en&src=listed) | Open official announcement | -0.87% | -0.35% | -0.53% | -0.35% | -0.24% | No |
-| 2023-04-17 18:00 | Earnings | Loss | [Correction: AS Tallink Grupp Audited Annual Report of the 2022 Financial Year](https://view.news.eu.nasdaq.com/view?id=bebc216ee317e886485b8718a2b6b207d&lang=en&src=listed) | Open official announcement | 0.52% | -0.17% | -0.35% | -1.04% | 0.28% | No |
-| 2023-04-03 09:00 | Earnings | Loss | [AS Tallink Grupp Audited Annual Report of the 2022 Financial Year](https://view.news.eu.nasdaq.com/view?id=bfc82fa1835156bd44da1382ba91479ed&lang=en&src=listed) | Open official announcement | 0.17% | 0.52% | -0.70% | -1.22% | -0.70% | No |
-| 2023-02-22 09:00 | Earnings | Loss | [AS Tallink Grupp Unaudited Consolidated Interim Report Q4 2022](https://view.news.eu.nasdaq.com/view?id=b6ec8e8b2c07fe9e6a83994224d099fd6&lang=en&src=listed) | Open official announcement | 3.49% | 0.00% | 0.53% | 0.89% | 0.46% | No |
-
-</details>
-
-</details>
-
-<details markdown="1" class="earnings-outcomes">
-<summary>Profit outcome and subsequent price analysis (17 classified of 27 earnings releases)</summary>
-
-Higher/lower profit refers to the issuer's explicit comparison with the earlier comparable period. ‘In line / unchanged’ is used only when the issuer explicitly says that profit met a plan, forecast or expectation, or was unchanged. ‘Loss’ requires an explicit realised net or operating loss. Releases without such wording remain unclassified and are excluded from the conditional estimates.
-
-Variance is reported in squared percentage points. Abnormal return is the share return minus the equal-weight Baltic-market return over the same horizon.
-
-| Profit outcome | Horizon | N | Conditional mean | Variance | Median | Positive share | Mean abnormal | Abnormal variance | Median abnormal |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Higher profit | 1d | 4 | 0.90% | 0.962 | 0.80% | 75% | 0.62% | 0.817 | 0.72% |
-| Higher profit | 5d | 4 | 2.28% | 8.847 | 2.05% | 75% | 2.16% | 11.860 | 2.40% |
-| Higher profit | 21d | 4 | 2.36% | 6.260 | 2.91% | 75% | 2.86% | 10.302 | 3.10% |
-| Lower profit | 1d | 6 | -0.14% | 0.241 | -0.08% | 17% | -0.08% | 0.266 | -0.22% |
-| Lower profit | 5d | 6 | -0.89% | 7.989 | -1.79% | 33% | -0.61% | 6.465 | -1.77% |
-| Lower profit | 21d | 6 | -0.83% | 15.947 | -1.18% | 33% | 0.38% | 12.008 | -0.40% |
-| Loss | 1d | 7 | -0.28% | 0.327 | -0.17% | 14% | -0.23% | 0.273 | -0.09% |
-| Loss | 5d | 7 | -0.39% | 0.338 | -0.35% | 14% | -0.35% | 0.483 | -0.24% |
-| Loss | 21d | 7 | 0.92% | 5.130 | 0.89% | 57% | 2.20% | 4.335 | 2.27% |
-
-**Kruskal–Wallis test across the available outcome groups**
-
-| Horizon | Groups | N | H | Raw p | BH-adjusted p | Conclusion |
-| --- | --- | --- | --- | --- | --- | --- |
-| 1d | 3 | 17 | 1.850 | 0.3966 | 0.7778 | No adjusted evidence |
-| 5d | 3 | 17 | 2.761 | 0.2514 | 0.7542 | No adjusted evidence |
-| 21d | 3 | 17 | 1.786 | 0.4095 | 0.7778 | No adjusted evidence |
-
-**Pairwise result:** No pairwise difference survives BH adjustment.
-
-The test describes historical association. Small groups, overlapping horizons and repeated releases from the same company limit causal interpretation.
-
-</details>
-
-</details>
-
-<details markdown="1">
-<summary>All five model frontiers with this share highlighted</summary>
-
-![TAL1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TAL1T_all_frontiers.png?v=1792850682)
-
-The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
-
-</details>
-
-<details markdown="1">
-<summary>All 72 PerformanceAnalytics measures: full period and last 126 observations</summary>
-
-| Measure | Full period | Last 126 | Measure | Full period | Last 126 |
-| --- | --- | --- | --- | --- | --- |
-| ActiveReturn | -0.197670 | -0.183548 | M2Sortino | 0.031431 | 0.053917 |
-| AdjustedSharpe | 0.271995 | 0.314804 | MSquaredExcess | -0.156828 | -0.138950 |
-| AnnualizedReturn_Arithmetic | 0.041977 | 0.060392 | Martin | 0.329382 | 1.495957 |
-| AnnualizedReturn_Geometric | 0.031019 | 0.053661 | MaximumDrawdown | 0.175944 | 0.063721 |
-| Appraisal | 0.160896 | 0.337234 | Modigliani | 0.000193 | 0.000292 |
-| ArithmeticReturn | 0.000167 | 0.000240 | NetSelectivity | -0.166044 | -0.141273 |
-| AverageDrawdown | 0.025928 | 0.022571 | Omega | 1.058900 | 1.123630 |
-| AverageDrawdownLength | 33.590909 | 19.500000 | OmegaExcessReturn | -0.006498 | 0.024587 |
-| AverageRecoveryTime | 17.090909 | 10.666667 | PainIndex | 0.079540 | 0.029274 |
-| BernardoLedoit | 1.058900 | 1.123630 | PainRatio | 0.389979 | 1.833065 |
-| BetaCoKurtosis | -0.069578 | 0.055675 | Prospect | -0.514081 | -0.363752 |
-| BetaCoSkewness | -3.852091 | -4.067840 | Rachev | 1.055850 | 0.986435 |
-| Burke | 0.129772 | 0.703625 | Selectivity | 0.024315 | 0.042707 |
-| CAPMAlpha | 0.000141 | 0.000198 | Sharpe_Annualized | 0.277422 | 0.474239 |
-| CAPMBeta | 0.029312 | 0.046178 | Sharpe_Daily | 0.017476 | 0.029874 |
-| CDD | 0.046842 | 0.057087 | Sharpe_ES | 0.007079 | 0.013255 |
-| Calmar | 0.176299 | 0.842128 | Sharpe_VaR | 0.012543 | 0.032511 |
-| CoKurtosis | -0.000000 | 0.000000 | Skewness | 0.107627 | -1.573812 |
-| CoSkewness | -0.000001 | -0.000000 | Sortino | 0.025421 | 0.039925 |
-| CumulativeReturn | 0.095707 | 0.026480 | SpecificRisk | 0.151125 | 0.126639 |
-| DRatio | 1.039768 | 0.853647 | Sterling | 0.112409 | 0.327759 |
-| DownCapture | 0.007492 | 0.053809 | SystematicRisk | 0.005147 | 0.007156 |
-| DownNumber | 0.415094 | 0.339623 | TotalRisk | 0.151212 | 0.126841 |
-| DownPercent | 0.827044 | 0.905660 | TrackingError_Annualized | 0.227864 | 0.194969 |
-| DownsideDeviation | 0.006553 | 0.006002 | TrackingError_Daily | 0.014354 | 0.012282 |
-| DrawdownDeviation | 0.008712 | 0.007365 | Treynor_Annualized | 1.058222 | 1.162041 |
-| ES_Loss | 0.023531 | 0.018080 | Treynor_Daily | 0.004136 | 0.004492 |
-| FamaBeta | 0.861705 | 0.821779 | UlcerIndex | 0.094173 | 0.035871 |
-| GeometricReturn | 0.000121 | 0.000207 | UpCapture | 0.045102 | 0.098616 |
-| Hurst | 0.367248 | 0.516622 | UpNumber | 0.376147 | 0.342466 |
-| Information_Annualized | -0.867493 | -0.941423 | UpPercent | 0.174312 | 0.136986 |
-| Information_Daily | -0.048513 | -0.051913 | UpsidePotential | 0.457023 | 0.362867 |
-| JensenAlpha | 0.024315 | 0.042707 | UpsideRisk | 0.006916 | 0.005279 |
-| Kappa | 0.015929 | 0.020954 | VaR_Loss | 0.013280 | 0.007371 |
-| Kelly | 1.833434 | 3.724025 | Volatility | 0.009532 | 0.008022 |
-| Kurtosis | 10.651832 | 25.601587 | Volatility_Annualized | 0.151313 | 0.127346 |
-
-</details>
-
-<details markdown="1" class="portfolio-sensitivity">
-<summary>Portfolio sensitivity</summary>
-
-**Removing this share from curent_update_baltic**
-
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.805085</td><td>-0.008475</td></tr><tr><td>OUT</td><td>96</td><td>95</td><td>-1</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.157178</td><td>0.009405</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.161875</td><td>0.000383</td></tr></tbody></table>
-
-The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
-
-**Increasing this existing position in the current portfolio**
-
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>TAL1T shares</td><td>700</td><td>1116</td><td>+416</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>8181.035978</td><td>268.736012</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.423729</td><td>-0.033898</td></tr><tr><td>OUT</td><td>62</td><td>60</td><td>-2</td></tr><tr><td>IN</td><td>8</td><td>10</td><td>+2</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.061612</td><td>-0.008560</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.091827</td><td>0.000672</td></tr></tbody></table>
-
-The starting point is the unmodified current portfolio, which already contains 700 TAL1T shares. The scenario adds 416 shares from Table 3A, resulting in 1116 shares; every other holding remains unchanged.
-
-<details markdown="1" class="dominance-components">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Choose S&P 500, Current or any model portfolio as the benchmark for the difference panels.
-
-<div class="dominance-explorer" data-asset="TAL1T"><p>Open this section to load the interactive curve explorer.</p></div>
-
-<details markdown="1" class="static-dominance">
-<summary>High-resolution static FSD, SSD and TSD figure</summary>
-
-![TAL1T high-resolution stochastic dominance](figures/stock_profiles/TAL1T_FSD_SSD_TSD.png?v=1792850987)
-
-The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
-
-</details>
-
-</details>
-
-</details>
-
-</details>
-
-<details markdown="1" class="stock-profile" id="share-tkm1t" data-signal="WAIT" data-netsd-effect="DECREASE">
-<summary><strong>TKM1T — TKM Grupp</strong> | current action: WAIT | allocation target 294 shares | priority 15</summary>
-
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>288</td><td>294</td><td>+6</td><td>17.50%</td><td>EUR 8.9000</td><td>0.0593</td><td>29 / 22</td><td>28.20</td><td>Bearish</td><td>Inside bands</td><td>0.254 (Neutral)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>0.030624 (37.300% of portfolio HHI)</td><td>EUR 39,989</td><td>0.1%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
-
-![TKM1T Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/TKM1T_technicals_6m.png)
-
-Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
-
-**Current indicative buy and sell prices**
-
-| Current price | Buy below | Sell above | Bollinger price zone |
-| --- | --- | --- | --- |
-| EUR 8.9000 | EUR 8.8594 (-0.46%) | EUR 9.0886 (+2.12%) | HOLD |
-
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires both a positive allocation change and a BUY technical timing signal; WAIT means the model wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD.
-
-<details markdown="1">
-<summary>Complete technical history</summary>
-
-![TKM1T complete technical history](figures/technical_analysis/TKM1T_technical.png)
-
-</details>
-
-<details markdown="1">
-<summary>Return histogram</summary>
-
-![TKM1T return histogram](figures/stock_profiles/TKM1T_histogram.png?v=1792850132)
-
-</details>
-
-<details markdown="1" class="seasonality-section">
-<summary>Seasonality, drawdowns and upside periods</summary>
-
-The analysis covers 962 daily returns from 2023-01-02 to 2026-10-23. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
-
-| Measure | Value | Measure | Value | Measure | Value |
-| --- | --- | --- | --- | --- | --- |
-| Maximum drawdown | -16.67% (2026-10-15) | Average gain / average loss | 0.937 | Best 21-day period | 6.68% (ending 2025-01-16) |
-| Average underwater drawdown | 9.57% | Upside potential ratio | 0.799 | Worst 21-day period | -9.08% (ending 2024-04-29) |
-| Conditional drawdown 95% | 15.40% | Upside capture vs Baltic EW | 18.1% | Best 5-day period | 4.55% (ending 2025-01-07) |
-| Ulcer index | 10.20 | Downside capture vs Baltic EW | 23.1% | Best 63-day period | 11.52% (ending 2025-02-10) |
-| Longest underwater period | 939 calendar days | Positive trading days | 39.2% | Repeated calendar pattern | Feb: 100% positive across 4 years |
-| Daily downside deviation | 0.477% | Best day | 3.06% (2025-01-03) |  |  |
-| Daily upside deviation | 0.335% | Worst day | -6.77% (2026-03-31) |  |  |
-
-**Calendar-effect tests and observed averages**
-
-| Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
-| --- | --- | --- | --- | --- |
-| Weekday | Best: Wednesday (0.046%); worst: Tuesday (-0.059%) | 0.0438 | 0.1502 | Not detected |
-| Calendar month | Best: Jan (0.138% daily); worst: Apr (-0.154% daily) | 0.2077 | 0.4532 | Not detected |
-| Turn of month | First/last three days: -0.082%; other days: 0.012% | 0.6703 | 0.8571 | Not detected |
-
-![TKM1T seasonality, drawdowns and upside periods](figures/stock_profiles/TKM1T_seasonality.png?v=1792850798)
-
-**Five deepest drawdown episodes**
-
-| Rank | Peak | Trough | Recovery | Loss | Underwater days |
-| --- | --- | --- | --- | --- | --- |
-| 1 | 2024-03-28 | 2026-10-15 | Not recovered | -16.67% | 939 |
-| 2 | 2023-03-27 | 2023-09-22 | 2024-02-21 | -9.33% | 331 |
-| 3 | 2023-02-09 | 2023-02-14 | 2023-03-01 | -1.36% | 20 |
-| 4 | 2024-02-21 | 2024-02-29 | 2024-03-15 | -1.33% | 23 |
-| 5 | 2023-03-01 | 2023-03-02 | 2023-03-03 | -1.17% | 2 |
-
-**Five strongest non-overlapping 21-trading-day rises**
-
-| Rank | Start | End | 21-day return |
-| --- | --- | --- | --- |
-| 1 | 2024-12-11 | 2025-01-16 | 6.68% |
-| 2 | 2023-01-02 | 2023-01-31 | 6.61% |
-| 3 | 2025-12-09 | 2026-01-14 | 6.39% |
-| 4 | 2024-01-09 | 2024-02-07 | 4.65% |
-| 5 | 2023-09-22 | 2023-10-23 | 4.31% |
-
-The dated extremes identify where company announcements, dividends, corporate actions or data anomalies should be checked. A repeated calendar average is descriptive until it survives the adjusted test and a later out-of-sample period; it is not by itself a buy or sell signal.
-
-<details markdown="1" class="company-events">
-<summary>Official company-news calendar and price-direction analysis (31 events)</summary>
-
-Announcement times and links come from the official Nasdaq news service. The effective date is the first trading close strictly after publication. Abnormal return means the share return minus the equal-weight Baltic-market return over the same window.
-
-| Event type | N | Abnormal 1d | Abnormal 5d | Abnormal 21d | Positive 5d | Direction reversal | BH p(5d) | BH p(21d) | Interpretation |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Dividend payment | 4 | 0.75% | 0.49% | -1.36% | 25% | 0% | 1.0000 | 0.5864 | No adjusted statistical evidence |
-| Earnings | 19 | -0.48% | -0.24% | 0.35% | 53% | 11% | 0.9407 | 0.7052 | No adjusted statistical evidence |
-| Ex-dividend | 8 | -1.86% | -6.03% | -7.55% | 0% | 88% | 0.0000 | 0.0000 | Different from ordinary periods; price drop may be mechanical |
-
-![TKM1T official announcements and abnormal returns](figures/stock_profiles/TKM1T_company_events.png?v=1792850843)
-
-A direction reversal requires opposite fitted price slopes during the ten trading days before and after the event and at least a 1% five-day move. This identifies temporal association, not proof that the announcement caused the change.
-
-<details markdown="1">
-<summary>Complete official event calendar (31 announcements)</summary>
-
-| Published | Type | Profit outcome | Official announcement | Headline fundamental cue | Pre 5d | Post 1d | Post 5d | Post 21d | Abnormal 5d | Reversal |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2026-07-10 16:30 | Earnings | Lower profit | [Unaudited consolidated interim accounts for the second quarter and first six months of 2026](https://view.news.eu.nasdaq.com/view?id=bc94e61ae93435ef732b90cb75dafb9e3&lang=en&src=listed) | Open official announcement | -0.22% | -0.44% | 0.22% | -0.11% | -0.43% | No |
-| 2026-04-10 16:30 | Earnings | Loss | [Unaudited consolidated interim accounts for the first quarter of 2026](https://view.news.eu.nasdaq.com/view?id=ba566a451cdc6edd9cf00d93b39abda9d&lang=en&src=listed) | Open official announcement | 0.87% | 0.00% | -0.11% | -0.86% | -0.66% | No |
-| 2026-04-07 08:00 | Dividend payment | — | [Official dividend calendar: Dividend payment date, EUR 0.6 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.6  | -6.59% | 0.98% | 0.98% | 0.11% | -0.72% | No |
-| 2026-03-30 08:00 | Ex-dividend | — | [Official dividend calendar: Dividend ex-date, EUR 0.6 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.6  | 0.41% | 0.00% | -6.06% | -6.67% | -5.98% | Yes |
-| 2026-03-25 16:30 | Ex-dividend | — | [Dividend payment ex-date of TKM Grupp AS](https://view.news.eu.nasdaq.com/view?id=b69e5ffb656e8ca2593ae9b5f7d224119&lang=en&src=listed) | Open official announcement | 0.20% | 0.00% | -6.49% | -6.09% | -5.45% | Yes |
-| 2026-02-19 16:30 | Earnings | Unclassified earnings release | [Audited annual report 2025](https://view.news.eu.nasdaq.com/view?id=b6ad8814c26e0bf4cedd01f2a21c90f10&lang=en&src=listed) | Open official announcement | -0.31% | 1.77% | 1.36% | 2.82% | 2.74% | No |
-| 2026-01-16 16:30 | Earnings | Lower profit | [Unaudited consolidated interim accounts for the fourth quarter and twelve months of 2025](https://view.news.eu.nasdaq.com/view?id=bdb594d68cdc426e73ee5b759a1019358&lang=en&src=listed) | Open official announcement | -1.33% | -2.60% | -1.77% | -0.31% | -2.05% | No |
-| 2025-10-09 16:30 | Earnings | Lower profit | [Unaudited consolidated interim accounts for the third quarter and first nine months of 2025](https://view.news.eu.nasdaq.com/view?id=b7f84bf1933a01e0dbcc2c57c37261dd4&lang=en&src=listed) | Open official announcement | -0.11% | -0.11% | 0.11% | -0.22% | 0.35% | No |
-| 2025-07-09 16:30 | Earnings | Lower profit | [Unaudited consolidated interim accounts for the second quarter and first six months of 2025](https://view.news.eu.nasdaq.com/view?id=b0e9b59515a30f24019b036c6848e2d9a&lang=en&src=listed) | Open official announcement | 0.53% | -1.06% | -1.17% | -1.17% | -1.68% | No |
-| 2025-04-09 16:30 | Earnings | Lower profit | [Unaudited consolidated interim accounts for the first quarter of 2025](https://view.news.eu.nasdaq.com/view?id=b196cedf60b04cbc56aaa52950cddbcb3&lang=en&src=listed) | Open official announcement | -0.53% | -1.39% | -1.18% | 0.21% | -3.18% | Yes |
-| 2025-04-03 08:00 | Dividend payment | — | [Official dividend calendar: Dividend payment date, EUR 0.65 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.65  | -5.05% | 0.11% | -0.53% | -0.74% | 2.92% | No |
-| 2025-03-28 07:00 | Ex-dividend | — | [Official dividend calendar: Dividend ex-date, EUR 0.65 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.65  | -0.60% | -3.42% | -5.23% | -6.44% | -5.51% | No |
-| 2025-03-25 09:00 | Ex-dividend | — | [Dividend payment ex-date of TKM Grupp AS](https://view.news.eu.nasdaq.com/view?id=bbbedb7de4849789c6e21914ac4d518e7&lang=en&src=listed) | Open official announcement | -0.20% | -0.40% | -4.52% | -6.43% | -4.92% | Yes |
-| 2025-02-20 16:30 | Earnings | Unclassified earnings release | [Audited annual report 2024](https://view.news.eu.nasdaq.com/view?id=b68e6e54cfea7c627a3ea83f736c7f7d8&lang=en&src=listed) | Open official announcement | 0.00% | 0.00% | 0.10% | 0.81% | 0.42% | No |
-| 2025-01-16 16:30 | Earnings | Higher profit | [Unaudited consolidated interim accounts for the fourth quarter and twelve months of 2024](https://view.news.eu.nasdaq.com/view?id=bf8954469635fd3d51ed94439160b8ab2&lang=en&src=listed) | Open official announcement | 0.30% | -1.62% | -1.01% | 0.20% | -2.08% | No |
-| 2024-10-10 16:30 | Earnings | Lower profit | [Unaudited consolidated interim accounts for the third quarter and first nine months of 2024](https://view.news.eu.nasdaq.com/view?id=bb6e49742b476dde8dc28f2c00488ea8c&lang=en&src=listed) | Open official announcement | -0.42% | -0.74% | 0.74% | -2.63% | 0.05% | No |
-| 2024-07-10 16:30 | Earnings | Lower profit | [Unaudited consolidated interim accounts for the second quarter and first six months of 2024](https://view.news.eu.nasdaq.com/view?id=b661d26e2a9d8c9fbf93d926ec1570a6c&lang=en&src=listed) | Open official announcement | 2.11% | -1.34% | -0.21% | -1.44% | 0.52% | No |
-| 2024-04-10 16:30 | Earnings | Lower profit | [Unaudited consolidated interim accounts for the first quarter of 2024](https://view.news.eu.nasdaq.com/view?id=b3c0810db4b364f06ae7e966c4cda6d5e&lang=en&src=listed) | Open official announcement | 0.10% | -1.11% | -0.81% | -1.82% | 0.26% | No |
-| 2024-04-08 08:00 | Dividend payment | — | [Official dividend calendar: Dividend payment date, EUR 0.72 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.72  | -7.68% | 0.20% | -0.41% | -1.52% | -0.22% | No |
-| 2024-04-02 08:00 | Ex-dividend | — | [Official dividend calendar: Dividend ex-date, EUR 0.72 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.72  | 0.00% | -6.55% | -7.49% | -8.90% | -7.76% | Yes |
-| 2024-03-26 09:35 | Ex-dividend | — | [Dividend payment ex-date of Tallinna Kaubamaja Grupp AS](https://view.news.eu.nasdaq.com/view?id=b9c6e1e0b4a2d4ac37f829075b1ff419f&lang=en&src=listed) | Open official announcement | 0.19% | 0.19% | -7.60% | -8.82% | -7.51% | Yes |
-| 2024-02-21 16:30 | Earnings | Unclassified earnings release | [Audited annual report 2023](https://view.news.eu.nasdaq.com/view?id=bf0619fbd95f5185f235f8d6bfe671702&lang=en&src=listed) | Open official announcement | 2.74% | -0.95% | -0.95% | 1.71% | -1.99% | No |
-| 2024-01-18 16:30 | Earnings | Higher profit | [Unaudited consolidated interim accounts for the fourth quarter and twelve months of 2023](https://view.news.eu.nasdaq.com/view?id=b3022f8ae832f1399b0dde16e33aa4209&lang=en&src=listed) | Open official announcement | 3.03% | -0.78% | -1.57% | 1.37% | -0.52% | Yes |
-| 2023-10-11 16:30 | Earnings | Higher profit | [Unaudited consolidated interim accounts for the third quarter and first nine months of 2023](https://view.news.eu.nasdaq.com/view?id=b718d45e41deba535cb9d6c27d0b2b480&lang=en&src=listed) | Open official announcement | 0.82% | -0.20% | 0.10% | 0.20% | -0.16% | No |
-| 2023-07-12 16:30 | Earnings | Higher profit | [Unaudited consolidated interim accounts for the second quarter and first six months of 2023](https://view.news.eu.nasdaq.com/view?id=b205cc4450fb96adffd3a1ca00370fbbe&lang=en&src=listed) | Open official announcement | 0.81% | 0.60% | 0.60% | 0.60% | 0.41% | No |
-| 2023-04-12 16:30 | Earnings | Higher profit | [Unaudited consolidated interim accounts for the first quarter of 2023](https://view.news.eu.nasdaq.com/view?id=baccba5617cf059530047886bf21fb7d5&lang=en&src=listed) | Open official announcement | 0.00% | 0.20% | 0.10% | -0.10% | 0.22% | No |
-| 2023-04-05 08:00 | Dividend payment | — | [Official dividend calendar: Dividend payment date, EUR 0.68 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.68  | -5.82% | 0.30% | 0.00% | -0.30% | -0.02% | No |
-| 2023-03-30 08:00 | Ex-dividend | — | [Official dividend calendar: Dividend ex-date, EUR 0.68 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.68  | 0.19% | -5.53% | -5.53% | -6.30% | -5.26% | Yes |
-| 2023-03-27 09:30 | Ex-dividend | — | [Dividend payment ex-date of Tallinna Kaubamaja Grupp AS](https://view.news.eu.nasdaq.com/view?id=b2cb85346da34ac7e9532ce6a0cd7aa87&lang=en&src=listed) | Open official announcement | 0.19% | -0.19% | -6.19% | -6.38% | -5.87% | Yes |
-| 2023-02-21 16:30 | Earnings | Unclassified earnings release | [Audited annual report 2022](https://view.news.eu.nasdaq.com/view?id=bd66c155ba40261254f10f6a8ef347428&lang=en&src=listed) | Open official announcement | 0.00% | 0.39% | 0.20% | 2.95% | 0.65% | No |
-| 2023-01-19 16:30 | Earnings | Lower profit | [Unaudited consolidated interim accounts for the fourth quarter and twelve months of 2022](https://view.news.eu.nasdaq.com/view?id=b6dcd5e262fb119a6ff1c63157465af7e&lang=en&src=listed) | Open official announcement | -0.10% | 0.10% | 3.38% | 4.40% | 2.52% | No |
-
-</details>
-
-</details>
-
-<details markdown="1" class="earnings-outcomes">
-<summary>Profit outcome and subsequent price analysis (15 classified of 19 earnings releases)</summary>
-
-Higher/lower profit refers to the issuer's explicit comparison with the earlier comparable period. ‘In line / unchanged’ is used only when the issuer explicitly says that profit met a plan, forecast or expectation, or was unchanged. ‘Loss’ requires an explicit realised net or operating loss. Releases without such wording remain unclassified and are excluded from the conditional estimates.
-
-Variance is reported in squared percentage points. Abnormal return is the share return minus the equal-weight Baltic-market return over the same horizon.
-
-| Profit outcome | Horizon | N | Conditional mean | Variance | Median | Positive share | Mean abnormal | Abnormal variance | Median abnormal |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Higher profit | 1d | 5 | -0.36% | 0.757 | -0.20% | 40% | -0.36% | 0.963 | -0.44% |
-| Higher profit | 5d | 5 | -0.35% | 0.809 | 0.10% | 60% | -0.43% | 0.983 | -0.16% |
-| Higher profit | 21d | 5 | 0.46% | 0.325 | 0.20% | 80% | 0.71% | 6.991 | 1.57% |
-| Lower profit | 1d | 9 | -0.96% | 0.652 | -1.06% | 11% | -0.97% | 0.727 | -0.85% |
-| Lower profit | 5d | 9 | -0.08% | 2.315 | -0.21% | 44% | -0.41% | 2.835 | 0.05% |
-| Lower profit | 21d | 9 | -0.34% | 4.022 | -0.31% | 22% | -0.85% | 4.628 | -0.82% |
-| Loss | 1d | 1 | 0.00% | — | 0.00% | 0% | -0.26% | — | -0.26% |
-| Loss | 5d | 1 | -0.11% | — | -0.11% | 0% | -0.66% | — | -0.66% |
-| Loss | 21d | 1 | -0.86% | — | -0.86% | 0% | -1.28% | — | -1.28% |
-
-**Kruskal–Wallis test across the available outcome groups**
-
-| Horizon | Groups | N | H | Raw p | BH-adjusted p | Conclusion |
-| --- | --- | --- | --- | --- | --- | --- |
-| 1d | 2 | 14 | 1.604 | 0.2053 | 0.6718 | No adjusted evidence |
-| 5d | 2 | 14 | 0.111 | 0.7389 | 0.9048 | No adjusted evidence |
-| 21d | 2 | 14 | 2.351 | 0.1252 | 0.5008 | No adjusted evidence |
-
-**Pairwise result:** No pairwise difference survives BH adjustment.
-
-The test describes historical association. Small groups, overlapping horizons and repeated releases from the same company limit causal interpretation.
-
-</details>
-
-</details>
-
-<details markdown="1">
-<summary>All five model frontiers with this share highlighted</summary>
-
-![TKM1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TKM1T_all_frontiers.png?v=1792850673)
-
-The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
-
-</details>
-
-<details markdown="1">
-<summary>All 72 PerformanceAnalytics measures: full period and last 126 observations</summary>
-
-| Measure | Full period | Last 126 | Measure | Full period | Last 126 |
-| --- | --- | --- | --- | --- | --- |
-| ActiveReturn | -0.245834 | -0.310996 | M2Sortino | -0.017525 | -0.073722 |
-| AdjustedSharpe | -0.134226 | -0.432526 | MSquaredExcess | -0.211143 | -0.273358 |
-| AnnualizedReturn_Arithmetic | -0.012415 | -0.070065 | Martin | -0.155489 | -1.561295 |
-| AnnualizedReturn_Geometric | -0.017144 | -0.073786 | MaximumDrawdown | 0.166757 | 0.073093 |
-| Appraisal | -0.262838 | -0.433794 | Modigliani | -0.000088 | -0.000381 |
-| ArithmeticReturn | -0.000049 | -0.000278 | NetSelectivity | -0.144689 | -0.247095 |
-| AverageDrawdown | 0.023401 | 0.013726 | Omega | 0.969178 | 0.815509 |
-| AverageDrawdownLength | 82.555556 | 14.250000 | OmegaExcessReturn | -0.046307 | -0.105275 |
-| AverageRecoveryTime | 44.555556 | 3.750000 | PainIndex | 0.101675 | 0.038140 |
-| BernardoLedoit | 0.969178 | 0.815509 | PainRatio | -0.168618 | -1.934643 |
-| BetaCoKurtosis | 0.039924 | -0.085886 | Prospect | -0.401935 | -0.332539 |
-| BetaCoSkewness | -1.540809 | -4.864661 | Rachev | 0.880477 | 0.702365 |
-| Burke | -0.105762 | -1.008522 | Selectivity | -0.025666 | -0.048390 |
-| CAPMAlpha | -0.000082 | -0.000183 | Sharpe_Annualized | -0.126771 | -0.618848 |
-| CAPMBeta | 0.037264 | -0.107062 | Sharpe_Daily | -0.007986 | -0.038984 |
-| CDD | 0.039836 | 0.036170 | Sharpe_ES | -0.003171 | -0.016895 |
-| Calmar | -0.102810 | -1.009492 | Sharpe_VaR | -0.007722 | -0.063843 |
-| CoKurtosis | 0.000000 | -0.000000 | Skewness | -4.229134 | -6.723593 |
-| CoSkewness | -0.000000 | -0.000000 | Sortino | -0.009672 | -0.042768 |
-| CumulativeReturn | -0.050426 | -0.037600 | SpecificRisk | 0.097650 | 0.111551 |
-| DRatio | 0.990667 | 1.251775 | Sterling | -0.064269 | -0.426283 |
-| DownCapture | 0.041769 | -0.056174 | SystematicRisk | 0.006543 | -0.016591 |
-| DownNumber | 0.405660 | 0.339623 | TotalRisk | 0.097869 | 0.112778 |
-| DownPercent | 0.874214 | 0.981132 | TrackingError_Annualized | 0.195262 | 0.204876 |
-| DownsideDeviation | 0.005094 | 0.006501 | TrackingError_Daily | 0.012300 | 0.012906 |
-| DrawdownDeviation | 0.006125 | 0.006796 | Treynor_Annualized | -0.460079 | 0.689191 |
-| ES_Loss | 0.015537 | 0.016457 | Treynor_Daily | -0.001841 | 0.002841 |
-| FamaBeta | 0.557720 | 0.730614 | UlcerIndex | 0.110261 | 0.047260 |
-| GeometricReturn | -0.000069 | -0.000304 | UpCapture | 0.021561 | -0.109462 |
-| Hurst | 0.417854 | 0.513366 | UpNumber | 0.396789 | 0.328767 |
-| Information_Annualized | -1.258994 | -1.517972 | UpPercent | 0.135321 | 0.136986 |
-| Information_Daily | -0.072047 | -0.089041 | UpsidePotential | 0.304138 | 0.189048 |
-| JensenAlpha | -0.025666 | -0.048390 | UpsideRisk | 0.003474 | 0.002877 |
-| Kappa | -0.004701 | -0.020380 | VaR_Loss | 0.006380 | 0.004355 |
-| Kelly | -1.294455 | -5.465959 | Volatility | 0.006169 | 0.007132 |
-| Kurtosis | 48.615014 | 65.326639 | Volatility_Annualized | 0.097934 | 0.113219 |
-
-</details>
-
-<details markdown="1" class="portfolio-sensitivity">
-<summary>Portfolio sensitivity</summary>
-
-**Removing this share from curent_update_baltic**
-
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.762712</td><td>-0.050847</td></tr><tr><td>OUT</td><td>96</td><td>90</td><td>-6</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.207303</td><td>0.059529</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.181595</td><td>0.020102</td></tr></tbody></table>
-
-The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
-
-**Increasing this existing position in the current portfolio**
-
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>TKM1T shares</td><td>288</td><td>293</td><td>+5</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>7956.799965</td><td>44.499998</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.406780</td><td>-0.050847</td></tr><tr><td>OUT</td><td>62</td><td>60</td><td>-2</td></tr><tr><td>IN</td><td>8</td><td>12</td><td>+4</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.069018</td><td>-0.001155</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.090773</td><td>-0.000382</td></tr></tbody></table>
-
-The starting point is the unmodified current portfolio, which already contains 288 TKM1T shares. The scenario adds 5 shares from Table 3A, resulting in 293 shares; every other holding remains unchanged.
-
-<details markdown="1" class="dominance-components">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Choose S&P 500, Current or any model portfolio as the benchmark for the difference panels.
-
-<div class="dominance-explorer" data-asset="TKM1T"><p>Open this section to load the interactive curve explorer.</p></div>
-
-<details markdown="1" class="static-dominance">
-<summary>High-resolution static FSD, SSD and TSD figure</summary>
-
-![TKM1T high-resolution stochastic dominance](figures/stock_profiles/TKM1T_FSD_SSD_TSD.png?v=1792850993)
-
-The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
-
-</details>
-
-</details>
-
-</details>
-
-</details>
-
 <details markdown="1" class="stock-profile" id="share-dgr1r" data-signal="WAIT" data-netsd-effect="DECREASE">
-<summary><strong>DGR1R — DelfinGroup</strong> | current action: WAIT | allocation target 220 shares | priority 16</summary>
+<summary><strong>DGR1R — DelfinGroup</strong> | current action: WAIT | allocation target 220 shares | netSD diagnostic rank 13</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>220</td><td>+220</td><td>2.50%</td><td>EUR 1.7000</td><td>0.0508</td><td>28 / 22</td><td>60.14</td><td>Bearish</td><td>Inside bands</td><td>0.000 (Oversold)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>0.000626 (0.762% of portfolio HHI)</td><td>EUR 12,310</td><td>3.0%</td><td>2.4%</td><td>MEDIUM</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>Execution rationale</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>220</td><td>+220</td><td>2.50%</td><td>EUR 1.7000</td><td>0.0508</td><td>28 / 22</td><td>60.14</td><td>Bearish</td><td>Inside bands</td><td>0.000 (Oversold)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>Allocation target is higher, but technical timing does not support buying now.</td><td>0.000626 (0.762% of portfolio HHI)</td><td>EUR 12,310</td><td>3.0%</td><td>2.4%</td><td>MEDIUM</td></tr></tbody></table>
 
 ![DGR1R Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/DGR1R_technicals_6m.png)
 
@@ -3897,7 +3145,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 | --- | --- | --- | --- |
 | EUR 1.7000 | EUR 1.5696 (-7.67%) | EUR 1.7844 (+4.97%) | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires both a positive allocation change and a BUY technical timing signal; WAIT means the model wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires an economically material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -4172,9 +3420,9 @@ The static figure is collapsed because the interactive plots above provide the d
 </details>
 
 <details markdown="1" class="stock-profile" id="share-eft1t" data-signal="WAIT" data-netsd-effect="DECREASE">
-<summary><strong>EFT1T — EfTEN Real Estate Fund</strong> | current action: WAIT | allocation target 21 shares | priority 17</summary>
+<summary><strong>EFT1T — EfTEN Real Estate Fund</strong> | current action: WAIT | allocation target 21 shares | netSD diagnostic rank 14</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>21</td><td>+21</td><td>2.81%</td><td>EUR 19.3500</td><td>0.0932</td><td>34 / 23</td><td>41.29</td><td>Bearish</td><td>Below lower band</td><td>0.000 (Oversold)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>0.000791 (0.963% of portfolio HHI)</td><td>EUR 20,301</td><td>2.0%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>Execution rationale</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>21</td><td>+21</td><td>2.81%</td><td>EUR 19.3500</td><td>0.0932</td><td>34 / 23</td><td>41.29</td><td>Bearish</td><td>Below lower band</td><td>0.000 (Oversold)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>Allocation target is higher, but technical timing does not support buying now.</td><td>0.000791 (0.963% of portfolio HHI)</td><td>EUR 20,301</td><td>2.0%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
 ![EFT1T Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/EFT1T_technicals_6m.png)
 
@@ -4186,7 +3434,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 | --- | --- | --- | --- |
 | EUR 19.3500 | EUR 19.3537 (+0.02%) | EUR 19.6563 (+1.58%) | BUY |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires both a positive allocation change and a BUY technical timing signal; WAIT means the model wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires an economically material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -4433,10 +3681,1037 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-cpa1t" data-signal="WAIT" data-netsd-effect="DECREASE">
-<summary><strong>CPA1T — Coop Pank</strong> | current action: WAIT | allocation target 11 shares | priority 18</summary>
+<details markdown="1" class="stock-profile" id="share-saf1r" data-signal="HOLD" data-netsd-effect="UNCHANGED">
+<summary><strong>SAF1R — SAF Tehnika</strong> | current action: HOLD | allocation target 100 shares | netSD diagnostic rank 15</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>11</td><td>+11</td><td>0.18%</td><td>EUR 2.3850</td><td>0.0593</td><td>30 / 23</td><td>62.27</td><td>Bullish</td><td>Inside bands</td><td>0.669 (Neutral)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>0.000003 (0.004% of portfolio HHI)</td><td>EUR 81,735</td><td>0.0%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>Execution rationale</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>100</td><td>100</td><td>+0</td><td>10.80%</td><td>EUR 16.2000</td><td>-0.1356</td><td>10 / 26</td><td>42.00</td><td>Bearish</td><td>Inside bands</td><td>0.000 (Oversold)</td><td>HOLD</td><td>HOLD</td><td>HOLD</td><td>The optimiser does not require a position change.</td><td>0.011664 (14.207% of portfolio HHI)</td><td>EUR 7,987</td><td>0.0%</td><td>2.4%</td><td>MEDIUM</td></tr></tbody></table>
+
+![SAF1R Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/SAF1R_technicals_6m.png)
+
+Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
+
+**Current indicative buy and sell prices**
+
+| Current price | Buy below | Sell above | Bollinger price zone |
+| --- | --- | --- | --- |
+| EUR 16.2000 | EUR 16.0037 (-1.21%) | EUR 17.1263 (+5.72%) | HOLD |
+
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires an economically material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD.
+
+<details markdown="1">
+<summary>Complete technical history</summary>
+
+![SAF1R complete technical history](figures/technical_analysis/SAF1R_technical.png)
+
+</details>
+
+<details markdown="1">
+<summary>Return histogram</summary>
+
+![SAF1R return histogram](figures/stock_profiles/SAF1R_histogram.png?v=1792850133)
+
+</details>
+
+<details markdown="1" class="seasonality-section">
+<summary>Seasonality, drawdowns and upside periods</summary>
+
+The analysis covers 962 daily returns from 2023-01-02 to 2026-10-23. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
+
+| Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- |
+| Maximum drawdown | -68.54% (2024-09-02) | Average gain / average loss | 1.166 | Best 21-day period | 37.91% (ending 2026-02-12) |
+| Average underwater drawdown | 42.53% | Upside potential ratio | 1.172 | Worst 21-day period | -33.33% (ending 2023-11-13) |
+| Conditional drawdown 95% | 65.81% | Upside capture vs Baltic EW | 95.0% | Best 5-day period | 25.62% (ending 2026-02-12) |
+| Ulcer index | 46.43 | Downside capture vs Baltic EW | 62.7% | Best 63-day period | 64.24% (ending 2026-02-12) |
+| Longest underwater period | 1288 calendar days | Positive trading days | 36.8% | Repeated calendar pattern | Jan: 75% positive across 4 years |
+| Daily downside deviation | 1.370% | Best day | 20.83% (2026-02-12) |  |  |
+| Daily upside deviation | 1.561% | Worst day | -18.64% (2023-11-09) |  |  |
+
+**Calendar-effect tests and observed averages**
+
+| Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
+| --- | --- | --- | --- | --- |
+| Weekday | Best: Wednesday (0.174%); worst: Thursday (-0.173%) | 0.6453 | 0.6911 | Not detected |
+| Calendar month | Best: Jan (0.453% daily); worst: Nov (-0.364% daily) | 0.3172 | 0.5319 | Not detected |
+| Turn of month | First/last three days: -0.003%; other days: 0.058% | 0.9054 | 0.9307 | Not detected |
+
+![SAF1R seasonality, drawdowns and upside periods](figures/stock_profiles/SAF1R_seasonality.png?v=1792850803)
+
+**Five deepest drawdown episodes**
+
+| Rank | Peak | Trough | Recovery | Loss | Underwater days |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 2023-02-08 | 2024-09-02 | 2026-08-19 | -68.54% | 1288 |
+| 2 | 2026-09-08 | 2026-09-28 | Not recovered | -10.36% | 45 |
+| 3 | 2026-08-20 | 2026-08-24 | 2026-08-25 | -2.23% | 5 |
+| 4 | 2023-02-01 | 2023-02-02 | 2023-02-06 | -1.75% | 5 |
+| 5 | 2023-01-27 | 2023-01-30 | 2023-01-31 | -1.06% | 4 |
+
+**Five strongest non-overlapping 21-trading-day rises**
+
+| Rank | Start | End | 21-day return |
+| --- | --- | --- | --- |
+| 1 | 2026-01-14 | 2026-02-12 | 37.91% |
+| 2 | 2026-08-04 | 2026-09-02 | 36.47% |
+| 3 | 2024-09-02 | 2024-10-01 | 25.39% |
+| 4 | 2026-04-15 | 2026-05-18 | 24.44% |
+| 5 | 2025-12-01 | 2026-01-06 | 20.97% |
+
+The dated extremes identify where company announcements, dividends, corporate actions or data anomalies should be checked. A repeated calendar average is descriptive until it survives the adjusted test and a later out-of-sample period; it is not by itself a buy or sell signal.
+
+<details markdown="1" class="company-events">
+<summary>Official company-news calendar and price-direction analysis (20 events)</summary>
+
+Announcement times and links come from the official Nasdaq news service. The effective date is the first trading close strictly after publication. Abnormal return means the share return minus the equal-weight Baltic-market return over the same window.
+
+| Event type | N | Abnormal 1d | Abnormal 5d | Abnormal 21d | Positive 5d | Direction reversal | BH p(5d) | BH p(21d) | Interpretation |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Earnings | 20 | -0.67% | -1.00% | -0.57% | 35% | 50% | 0.6958 | 1.0000 | No adjusted statistical evidence |
+
+![SAF1R official announcements and abnormal returns](figures/stock_profiles/SAF1R_company_events.png?v=1792850845)
+
+A direction reversal requires opposite fitted price slopes during the ten trading days before and after the event and at least a 1% five-day move. This identifies temporal association, not proof that the announcement caused the change.
+
+<details markdown="1">
+<summary>Complete official event calendar (20 announcements)</summary>
+
+| Published | Type | Profit outcome | Official announcement | Headline fundamental cue | Pre 5d | Post 1d | Post 5d | Post 21d | Abnormal 5d | Reversal |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-08-12 19:40 | Earnings | In line / unchanged | [SAF Tehnika Consolidated Interim Report for Q4 and 12 months of financial year 2025/26](https://view.news.eu.nasdaq.com/view?id=b6dbfb705adc56a5a2d8212074bd9a9c4&lang=en&src=listed) | Open official announcement | 2.33% | 6.44% | 11.74% | 32.95% | 11.68% | No |
+| 2026-05-13 17:12 | Earnings | In line / unchanged | [SAF Tehnika Consolidated Interim Report for Q3 and 9 months of financial year 2025/2026](https://view.news.eu.nasdaq.com/view?id=bf23fdbdcd9a33ae254b37b9dab7f3fa5&lang=en&src=listed) | Open official announcement | 8.37% | 10.40% | 3.96% | 8.91% | 4.53% | Yes |
+| 2026-02-11 16:52 | Earnings | In line / unchanged | [SAF Tehnika Consolidated Interim Report for Q2 and 6 months of financial year 2025/26](https://view.news.eu.nasdaq.com/view?id=b02ed5558ff45d9e37e3a2570ce3084c4&lang=en&src=listed) | Open official announcement | 5.26% | 20.83% | 18.33% | 18.81% | 17.53% | Yes |
+| 2025-11-13 13:55 | Earnings | In line / unchanged | [CORRECTION: SAF Tehnika Consolidated Interim Report for Q1 of financial year 2025/2026](https://view.news.eu.nasdaq.com/view?id=b35a4318c79efa3a19972b4f3129552fb&lang=en&src=listed) | Open official announcement | 7.67% | 4.33% | -0.62% | 2.17% | -0.31% | No |
+| 2025-11-12 16:33 | Earnings | In line / unchanged | [SAF Tehnika Consolidated Interim Report for Q1 of financial year 2025/2026](https://view.news.eu.nasdaq.com/view?id=b540077f1991eacad050b6e33e4250b95&lang=en&src=listed) | Open official announcement | 7.38% | 0.94% | 3.12% | 3.12% | 2.85% | Yes |
+| 2025-10-31 16:24 | Earnings | Loss | [Audited statements and Corporate Governance report of „SAF Tehnika” for financial year 2024/2025](https://view.news.eu.nasdaq.com/view?id=b98de5f8c40da1022d780a90eb945a16c&lang=en&src=listed) | Open official announcement | 0.00% | -0.34% | 1.02% | 5.08% | 1.38% | No |
+| 2025-08-13 17:24 | Earnings | Loss | [SAF Tehnika Consolidated Interim Report for Q4 and 12 months of financial year 2024/2025](https://view.news.eu.nasdaq.com/view?id=bb1bdf4aecccec00ce5e71431676f8dab&lang=en&src=listed) | Open official announcement | -0.34% | -2.69% | -3.03% | -4.04% | -3.23% | No |
+| 2025-05-14 16:32 | Earnings | Loss | [SAF Tehnika Consolidated Interim Report for Q3 and 9 months of financial year 2024/2025](https://view.news.eu.nasdaq.com/view?id=bef9af568b7d0e6b2e4eab137fd651d80&lang=en&src=listed) | Open official announcement | 2.65% | -0.97% | -1.29% | -3.55% | -2.52% | Yes |
+| 2025-02-12 20:31 | Earnings | Unclassified earnings release | [SAF Tehnika Consolidated Interim Report for Q2 and 6 months of financial year 2024/2025](https://view.news.eu.nasdaq.com/view?id=b878f717c62e3ac66ead34aa7f7405e49&lang=en&src=listed) | Open official announcement | 14.38% | -11.70% | -9.36% | -4.68% | -9.29% | Yes |
+| 2024-11-13 16:12 | Earnings | In line / unchanged | [SAF Tehnika Consolidated Interim Report for Q1 of financial year 2024/2025](https://view.news.eu.nasdaq.com/view?id=b26ad79c70b2d7497662066f4c625dcd2&lang=en&src=listed) | Open official announcement | -2.60% | 9.16% | 8.40% | 3.05% | 9.02% | Yes |
+| 2024-10-31 17:07 | Earnings | Lower profit | [SAF Tehnika Annual report/ annual accounts](https://view.news.eu.nasdaq.com/view?id=b44739b9bbbc6603729654ab15873e65f&lang=en&src=listed) | Open official announcement | -3.65% | -2.65% | 2.27% | 6.06% | 2.21% | Yes |
+| 2024-08-15 08:17 | Earnings | Unclassified earnings release | [CORRECTION: SAF Tehnika Consolidated Interim Report for Q4 and 12 months of financial year 2023/24](https://view.news.eu.nasdaq.com/view?id=b9ab59f7e88006865d1f036d745bdfe49&lang=en&src=listed) | Open official announcement | -2.83% | 1.87% | -0.42% | 1.67% | -0.43% | No |
+| 2024-08-14 18:13 | Earnings | Unclassified earnings release | [SAF Tehnika Consolidated Interim Report for Q4 and 12 months of financial year 2023/24](https://view.news.eu.nasdaq.com/view?id=b832fb26e029dffebb49fcae36dcfef8d&lang=en&src=listed) | Open official announcement | 4.08% | -5.88% | -4.90% | -3.92% | -4.94% | Yes |
+| 2024-05-15 18:39 | Earnings | Unclassified earnings release | [SAF Tehnika Consolidated Interim Report for Q3 and 9 months of financial year 2023/24](https://view.news.eu.nasdaq.com/view?id=bccb21f99dda64f7127d52fdefd06fffb&lang=en&src=listed) | Open official announcement | -5.32% | -5.26% | -4.56% | -1.75% | -4.07% | Yes |
+| 2024-02-07 16:10 | Earnings | Unclassified earnings release | [SAF Tehnika Consolidated Interim Report for Q2 and 6 months of financial year 2023/2024](https://view.news.eu.nasdaq.com/view?id=b933e6fc3d29593875f2b783771aec234&lang=en&src=listed) | Open official announcement | 2.98% | 0.87% | -2.31% | -4.62% | -2.84% | Yes |
+| 2023-11-08 17:54 | Earnings | Unclassified earnings release | [SAF Tehnika Consolidated Interim Report for Q1 of financial year 2023/2024](https://view.news.eu.nasdaq.com/view?id=bd38500cc9d337eec761580c66addb075&lang=en&src=listed) | Open official announcement | 0.49% | -18.64% | -28.54% | -32.04% | -27.66% | No |
+| 2023-10-31 17:09 | Earnings | Unclassified earnings release | [SAF Tehnika Annual report/ annual accounts](https://view.news.eu.nasdaq.com/view?id=b879ddaf736be7655aab019ff280cc43e&lang=en&src=listed) | Open official announcement | -0.48% | -0.97% | -0.48% | -31.98% | -0.02% | No |
+| 2023-08-09 16:52 | Earnings | Unclassified earnings release | [SAF Tehnika Consolidated Interim Report for Q4 and 12 months of financial year 2022/23](https://view.news.eu.nasdaq.com/view?id=b8f1ba98f95dd8dc572a11bbfc92e0297&lang=en&src=listed) | Open official announcement | 3.85% | -5.09% | -2.31% | 1.85% | -2.20% | No |
+| 2023-05-10 17:28 | Earnings | Unclassified earnings release | [SAF Tehnika Consolidated Interim Report for Q3 and 9 months of financial year 2022/23](https://view.news.eu.nasdaq.com/view?id=b051cba22c4aa74b8913b2aded5d5490a&lang=en&src=listed) | Open official announcement | 1.12% | -12.59% | -9.63% | -12.22% | -7.58% | No |
+| 2023-02-08 17:58 | Earnings | Unclassified earnings release | [SAF Tehnika Consolidated Interim Report for Q2 and 6 months of financial year 2022/23](https://view.news.eu.nasdaq.com/view?id=b0b3584534020b3c13c60d9807bba6185&lang=en&src=listed) | Open official announcement | 0.70% | -5.90% | -4.51% | -6.25% | -4.19% | No |
+
+</details>
+
+</details>
+
+<details markdown="1" class="earnings-outcomes">
+<summary>Profit outcome and subsequent price analysis (10 classified of 20 earnings releases)</summary>
+
+Higher/lower profit refers to the issuer's explicit comparison with the earlier comparable period. ‘In line / unchanged’ is used only when the issuer explicitly says that profit met a plan, forecast or expectation, or was unchanged. ‘Loss’ requires an explicit realised net or operating loss. Releases without such wording remain unclassified and are excluded from the conditional estimates.
+
+Variance is reported in squared percentage points. Abnormal return is the share return minus the equal-weight Baltic-market return over the same horizon.
+
+| Profit outcome | Horizon | N | Conditional mean | Variance | Median | Positive share | Mean abnormal | Abnormal variance | Median abnormal |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Lower profit | 1d | 1 | -2.65% | — | -2.65% | 0% | -2.22% | — | -2.22% |
+| Lower profit | 5d | 1 | 2.27% | — | 2.27% | 100% | 2.21% | — | 2.21% |
+| Lower profit | 21d | 1 | 6.06% | — | 6.06% | 100% | 8.91% | — | 8.91% |
+| In line / unchanged | 1d | 6 | 8.68% | 46.946 | 7.80% | 100% | 8.63% | 45.242 | 8.27% |
+| In line / unchanged | 5d | 6 | 7.49% | 46.751 | 6.18% | 83% | 7.55% | 42.335 | 6.78% |
+| In line / unchanged | 21d | 6 | 11.50% | 149.803 | 6.02% | 100% | 11.30% | 169.355 | 6.06% |
+| Loss | 1d | 3 | -1.33% | 1.486 | -0.97% | 0% | -1.40% | 1.549 | -1.30% |
+| Loss | 5d | 3 | -1.10% | 4.122 | -1.29% | 33% | -1.46% | 6.146 | -2.52% |
+| Loss | 21d | 3 | -0.83% | 26.340 | -3.55% | 33% | -0.95% | 29.543 | -3.55% |
+
+**Kruskal–Wallis test across the available outcome groups**
+
+| Horizon | Groups | N | H | Raw p | BH-adjusted p | Conclusion |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1d | 2 | 9 | 5.400 | 0.0201 | 0.3681 | No adjusted evidence |
+| 5d | 2 | 9 | 4.267 | 0.0389 | 0.4294 | No adjusted evidence |
+| 21d | 2 | 9 | 2.400 | 0.1213 | 0.5008 | No adjusted evidence |
+
+**Pairwise result:** No pairwise difference survives BH adjustment.
+
+The test describes historical association. Small groups, overlapping horizons and repeated releases from the same company limit causal interpretation.
+
+</details>
+
+</details>
+
+<details markdown="1">
+<summary>All five model frontiers with this share highlighted</summary>
+
+![SAF1R Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/SAF1R_all_frontiers.png?v=1792850674)
+
+The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
+
+</details>
+
+<details markdown="1">
+<summary>All 72 PerformanceAnalytics measures: full period and last 126 observations</summary>
+
+| Measure | Full period | Last 126 | Measure | Full period | Last 126 |
+| --- | --- | --- | --- | --- | --- |
+| ActiveReturn | -0.082425 | 1.446929 | M2Sortino | 0.140441 | 1.657674 |
+| AdjustedSharpe | 0.386054 | -15.001570 | MSquaredExcess | -0.125601 | 0.324086 |
+| AnnualizedReturn_Arithmetic | 0.195831 | 1.066940 | Martin | 0.287115 | 34.088637 |
+| AnnualizedReturn_Geometric | 0.146264 | 1.684138 | MaximumDrawdown | 0.627796 | 0.115414 |
+| Appraisal | 0.341643 | 4.321455 | Modigliani | 0.000395 | 0.001604 |
+| ArithmeticReturn | 0.000777 | 0.004234 | NetSelectivity | -0.303530 | 1.058141 |
+| AverageDrawdown | 0.076798 | 0.044057 | Omega | 1.142415 | 1.890778 |
+| AverageDrawdownLength | 73.400000 | 19.333333 | OmegaExcessReturn | 0.064136 | 1.632952 |
+| AverageRecoveryTime | 42.700000 | 9.500000 | PainIndex | 0.419813 | 0.038057 |
+| BernardoLedoit | 1.142415 | 1.890778 | PainRatio | 0.348404 | 44.252719 |
+| BetaCoKurtosis | 0.371595 | -0.330253 | Prospect | -0.421323 | -0.161563 |
+| BetaCoSkewness | 0.994947 | -22.410485 | Rachev | 1.168506 | 1.812138 |
+| Burke | 0.278086 | 11.360339 | Selectivity | 0.117677 | 1.750357 |
+| CAPMAlpha | 0.000667 | 0.004483 | Sharpe_Annualized | 0.567017 | 2.608973 |
+| CAPMBeta | 0.125006 | -0.279156 | Sharpe_Daily | 0.035719 | 0.164350 |
+| CDD | 0.082432 | 0.097274 | Sharpe_ES | 0.016820 | 0.118580 |
+| Calmar | 0.232981 | 14.592157 | Sharpe_VaR | 0.030238 | 0.161472 |
+| CoKurtosis | 0.000000 | -0.000000 | Skewness | 0.769450 | 4.067258 |
+| CoSkewness | 0.000000 | -0.000000 | Sortino | 0.054174 | 0.400634 |
+| CumulativeReturn | 0.504471 | 0.638334 | SpecificRisk | 0.344443 | 0.405039 |
+| DRatio | 0.878368 | 0.424995 | Sterling | 0.200969 | 7.818149 |
+| DownCapture | 0.033519 | -0.625101 | SystematicRisk | 0.021951 | -0.043259 |
+| DownNumber | 0.408805 | 0.396226 | TotalRisk | 0.345142 | 0.407342 |
+| DownPercent | 0.738994 | 0.773585 | TrackingError_Annualized | 0.377367 | 0.452395 |
+| DownsideDeviation | 0.014345 | 0.010568 | TrackingError_Daily | 0.023772 | 0.028498 |
+| DrawdownDeviation | 0.023076 | 0.013387 | Treynor_Annualized | 1.170055 | -6.032975 |
+| ES_Loss | 0.046202 | 0.035705 | Treynor_Daily | 0.004335 | -0.014063 |
+| FamaBeta | 1.966838 | 2.639009 | UlcerIndex | 0.509428 | 0.049405 |
+| GeometricReturn | 0.000542 | 0.003926 | UpCapture | 0.209270 | 0.495207 |
+| Hurst | 0.437458 | 0.483017 | UpNumber | 0.389908 | 0.383562 |
+| Information_Annualized | -0.218421 | 3.198378 | UpPercent | 0.270642 | 0.287671 |
+| Information_Daily | -0.011599 | 0.108103 | UpsidePotential | 0.434572 | 0.850392 |
+| JensenAlpha | 0.117677 | 1.750357 | UpsideRisk | 0.016357 | 0.023762 |
+| Kappa | 0.029124 | 0.272776 | VaR_Loss | 0.025700 | 0.026221 |
+| Kelly | 1.641766 | 6.379684 | Volatility | 0.021756 | 0.025761 |
+| Kurtosis | 32.251943 | 33.035712 | Volatility_Annualized | 0.345370 | 0.408950 |
+
+</details>
+
+<details markdown="1" class="portfolio-sensitivity">
+<summary>Portfolio sensitivity</summary>
+
+**Removing this share from curent_update_baltic**
+
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.796610</td><td>-0.016949</td></tr><tr><td>OUT</td><td>96</td><td>94</td><td>-2</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.190075</td><td>0.042301</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.168744</td><td>0.007252</td></tr></tbody></table>
+
+The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
+
+**Increasing this existing position in the current portfolio**
+
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>SAF1R shares</td><td>100</td><td>100</td><td>+0</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>7912.299967</td><td>0.000000</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.457627</td><td>0.000000</td></tr><tr><td>OUT</td><td>62</td><td>62</td><td>+0</td></tr><tr><td>IN</td><td>8</td><td>8</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.070173</td><td>0.000000</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.091156</td><td>0.000000</td></tr></tbody></table>
+
+The starting point is the unmodified current portfolio, which already contains 100 SAF1R shares. The scenario adds 0 shares from Table 3A, resulting in 100 shares; every other holding remains unchanged.
+
+<details markdown="1" class="dominance-components">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Choose S&P 500, Current or any model portfolio as the benchmark for the difference panels.
+
+<div class="dominance-explorer" data-asset="SAF1R"><p>Open this section to load the interactive curve explorer.</p></div>
+
+<details markdown="1" class="static-dominance">
+<summary>High-resolution static FSD, SSD and TSD figure</summary>
+
+![SAF1R high-resolution stochastic dominance](figures/stock_profiles/SAF1R_FSD_SSD_TSD.png?v=1792850984)
+
+The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
+
+</details>
+
+</details>
+
+</details>
+
+</details>
+
+<details markdown="1" class="stock-profile" id="share-tsm1t" data-signal="HOLD" data-netsd-effect="UNCHANGED">
+<summary><strong>TSM1T — Tallinna Sadam</strong> | current action: HOLD | allocation target 330 shares | netSD diagnostic rank 16</summary>
+
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>Execution rationale</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>330</td><td>330</td><td>+0</td><td>2.64%</td><td>EUR 1.2000</td><td>-0.0254</td><td>28 / 31</td><td>40.77</td><td>Bearish</td><td>Inside bands</td><td>0.478 (Neutral)</td><td>HOLD</td><td>HOLD</td><td>HOLD</td><td>The optimiser does not require a position change.</td><td>0.000697 (0.849% of portfolio HHI)</td><td>EUR 45,487</td><td>0.0%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+
+![TSM1T Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/TSM1T_technicals_6m.png)
+
+Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
+
+**Current indicative buy and sell prices**
+
+| Current price | Buy below | Sell above | Bollinger price zone |
+| --- | --- | --- | --- |
+| EUR 1.2000 | EUR 1.1991 (-0.08%) | EUR 1.2177 (+1.48%) | HOLD |
+
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires an economically material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD.
+
+<details markdown="1">
+<summary>Complete technical history</summary>
+
+![TSM1T complete technical history](figures/technical_analysis/TSM1T_technical.png)
+
+</details>
+
+<details markdown="1">
+<summary>Return histogram</summary>
+
+![TSM1T return histogram](figures/stock_profiles/TSM1T_histogram.png?v=1792850135)
+
+</details>
+
+<details markdown="1" class="seasonality-section">
+<summary>Seasonality, drawdowns and upside periods</summary>
+
+The analysis covers 962 daily returns from 2023-01-02 to 2026-10-23. Statistically supported calendar effects: **calendar-month**. Adjusted p-values control the false-discovery rate across all analysed shares.
+
+| Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- |
+| Maximum drawdown | -29.81% (2024-12-11) | Average gain / average loss | 0.947 | Best 21-day period | 14.20% (ending 2026-01-30) |
+| Average underwater drawdown | 17.92% | Upside potential ratio | 0.937 | Worst 21-day period | -14.29% (ending 2026-05-29) |
+| Conditional drawdown 95% | 29.36% | Upside capture vs Baltic EW | 44.8% | Best 5-day period | 8.50% (ending 2026-01-30) |
+| Ulcer index | 19.57 | Downside capture vs Baltic EW | 58.4% | Best 63-day period | 24.37% (ending 2026-01-30) |
+| Longest underwater period | 1334 calendar days | Positive trading days | 39.2% | Repeated calendar pattern | May: 0% positive across 4 years |
+| Daily downside deviation | 0.555% | Best day | 2.77% (2024-04-08) |  |  |
+| Daily upside deviation | 0.449% | Worst day | -6.09% (2025-05-08) |  |  |
+
+**Calendar-effect tests and observed averages**
+
+| Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
+| --- | --- | --- | --- | --- |
+| Weekday | Best: Wednesday (0.047%); worst: Monday (-0.096%) | 0.0298 | 0.1259 | Not detected |
+| Calendar month | Best: Jan (0.293% daily); worst: May (-0.359% daily) | 0.0003 | 0.0062 | Detected |
+| Turn of month | First/last three days: 0.072%; other days: -0.035% | 0.1121 | 0.4483 | Not detected |
+
+![TSM1T seasonality, drawdowns and upside periods](figures/stock_profiles/TSM1T_seasonality.png?v=1792850850)
+
+**Five deepest drawdown episodes**
+
+| Rank | Peak | Trough | Recovery | Loss | Underwater days |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 2023-02-27 | 2024-12-11 | Not recovered | -29.81% | 1334 |
+| 2 | 2023-01-16 | 2023-01-18 | 2023-01-20 | -0.56% | 4 |
+| 3 | 2023-02-09 | 2023-02-10 | 2023-02-27 | -0.40% | 18 |
+| 4 | 2023-01-09 | 2023-01-10 | 2023-01-13 | -0.28% | 4 |
+| 5 | 2023-01-26 | 2023-01-27 | 2023-01-30 | -0.28% | 4 |
+
+**Five strongest non-overlapping 21-trading-day rises**
+
+| Rank | Start | End | 21-day return |
+| --- | --- | --- | --- |
+| 1 | 2025-12-30 | 2026-01-30 | 14.20% |
+| 2 | 2025-01-20 | 2025-02-18 | 9.82% |
+| 3 | 2024-04-03 | 2024-05-03 | 7.23% |
+| 4 | 2025-11-25 | 2025-12-29 | 6.83% |
+| 5 | 2025-03-04 | 2025-04-02 | 6.09% |
+
+The dated extremes identify where company announcements, dividends, corporate actions or data anomalies should be checked. A repeated calendar average is descriptive until it survives the adjusted test and a later out-of-sample period; it is not by itself a buy or sell signal.
+
+<details markdown="1" class="company-events">
+<summary>Official company-news calendar and price-direction analysis (30 events)</summary>
+
+Announcement times and links come from the official Nasdaq news service. The effective date is the first trading close strictly after publication. Abnormal return means the share return minus the equal-weight Baltic-market return over the same window.
+
+| Event type | N | Abnormal 1d | Abnormal 5d | Abnormal 21d | Positive 5d | Direction reversal | BH p(5d) | BH p(21d) | Interpretation |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Dividend announcement | 4 | -0.04% | 1.22% | 2.25% | 75% | 25% | 0.6958 | 0.3223 | No adjusted statistical evidence |
+| Dividend payment | 4 | -0.20% | -1.24% | -0.79% | 25% | 0% | 0.6958 | 1.0000 | No adjusted statistical evidence |
+| Earnings | 15 | -0.42% | -0.39% | -1.25% | 53% | 33% | 1.0000 | 1.0000 | No adjusted statistical evidence |
+| Ex-dividend | 7 | -3.46% | -5.57% | -7.33% | 0% | 43% | 0.0000 | 0.0002 | Different from ordinary periods; price drop may be mechanical |
+
+![TSM1T official announcements and abnormal returns](figures/stock_profiles/TSM1T_company_events.png?v=1792850872)
+
+A direction reversal requires opposite fitted price slopes during the ten trading days before and after the event and at least a 1% five-day move. This identifies temporal association, not proof that the announcement caused the change.
+
+<details markdown="1">
+<summary>Complete official event calendar (30 announcements)</summary>
+
+| Published | Type | Profit outcome | Official announcement | Headline fundamental cue | Pre 5d | Post 1d | Post 5d | Post 21d | Abnormal 5d | Reversal |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-08-10 08:00 | Earnings | Higher profit | [AS Tallinna Sadam financial results for 2026 Q2 and 6 months](https://view.news.eu.nasdaq.com/view?id=b004460ea6a7fe0426daaa1f06fd12455&lang=en&src=listed) | Open official announcement | 0.16% | -0.32% | -0.80% | -1.77% | -0.40% | No |
+| 2026-05-20 08:00 | Dividend payment | — | [Official dividend calendar: Dividend payment date, EUR 0.073 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.073  | -8.91% | 0.00% | -1.38% | -3.21% | -1.96% | No |
+| 2026-05-12 08:00 | Ex-dividend | — | [Official dividend calendar: Dividend ex-date, EUR 0.073 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.073  | -1.37% | -5.99% | -8.91% | -12.95% | -7.87% | No |
+| 2026-05-11 08:59 | Earnings | Unclassified earnings release | [Parandus pealkirjas: ASi Tallinna Sadam 2026 I kvartali majandustulemused](https://view.news.eu.nasdaq.com/view?id=b3110244296581c0066185611d5eece35&lang=et&src=listed) | Open official announcement | -1.37% | -5.99% | -8.91% | -12.95% | -7.87% | No |
+| 2026-05-08 08:00 | Ex-dividend | — | [Dividend Payment Ex-date of AS Tallinna Sadam](https://view.news.eu.nasdaq.com/view?id=b860e51934927975c9974924238c41731&lang=en&src=listed) | Open official announcement | -0.14% | -1.24% | -10.04% | -14.03% | -9.50% | Yes |
+| 2026-04-02 08:00 | Dividend announcement | — | [Tallinna Sadam audited Annual Report 2025 and dividend proposal ](https://view.news.eu.nasdaq.com/view?id=bda899d2e5f805868f71ab7cf8e5394f8&lang=en&src=listed) | Open official announcement | 0.29% | -0.29% | -0.29% | 3.99% | -1.98% | No |
+| 2026-02-26 08:00 | Earnings | Lower profit | [AS Tallinna Sadam unaudited financial results for the year 2025 and Q4](https://view.news.eu.nasdaq.com/view?id=bc0cf354374a243405cd3c38805b88f5c&lang=en&src=listed) | Open official announcement | -2.33% | 0.28% | 0.00% | -2.24% | 0.25% | No |
+| 2025-11-10 08:00 | Earnings | Higher profit | [AS Tallinna Sadam financial results for 2025 Q3 and 9 months](https://view.news.eu.nasdaq.com/view?id=b1b08441834547d95e1197680971ae7fa&lang=en&src=listed) | Open official announcement | 3.10% | 0.17% | -1.17% | 3.51% | -1.19% | Yes |
+| 2025-08-11 14:30 | Earnings | Higher profit | [Correction: AS Tallinna Sadam financial results for 2025 Q2 and 6 months](https://view.news.eu.nasdaq.com/view?id=bba9e5faad08541202778a34eb0efae9c&lang=en&src=listed) | Open official announcement | 0.68% | 0.00% | 1.34% | 0.50% | 0.29% | No |
+| 2025-05-16 08:00 | Dividend payment | — | [Official dividend calendar: Dividend payment date, EUR 0.073 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.073  | 0.68% | 0.85% | 0.85% | 0.68% | -0.00% | No |
+| 2025-05-12 08:00 | Earnings | Higher profit | [AS Tallinna Sadam financial results for 2025 Q1](https://view.news.eu.nasdaq.com/view?id=b15406ee82575437cf9e2952f01c01b2b&lang=en&src=listed) | Open official announcement | -4.07% | -0.17% | 1.70% | 2.21% | 1.28% | Yes |
+| 2025-05-08 08:00 | Ex-dividend | — | [Official dividend calendar: Dividend ex-date, EUR 0.073 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.073  | 2.30% | -6.09% | -5.45% | -4.17% | -4.95% | No |
+| 2025-05-06 08:00 | Ex-dividend | — | [Dividend Payments Ex-date of AS Tallinna Sadam](https://view.news.eu.nasdaq.com/view?id=bb5bfdae4fe3e829f5cdf7cd493af89e6&lang=en&src=listed) | Open official announcement | 2.46% | -0.16% | -5.92% | -4.32% | -5.97% | Yes |
+| 2025-04-03 08:00 | Dividend announcement | — | [Tallinna Sadam audited Annual Report 2024 and dividend proposal ](https://view.news.eu.nasdaq.com/view?id=bee211eb152fa721883c88316a35335c6&lang=en&src=listed) | Open official announcement | 3.04% | -1.80% | -1.15% | 2.30% | 0.64% | No |
+| 2025-02-28 08:00 | Earnings | Higher profit | [AS Tallinna Sadam unaudited financial results for Q4 and 2024](https://view.news.eu.nasdaq.com/view?id=b0887dc70da261877b0aa174b49193374&lang=en&src=listed) | Open official announcement | 0.00% | -0.67% | -1.17% | -1.34% | -1.17% | Yes |
+| 2024-11-11 08:00 | Earnings | Higher profit | [AS Tallinna Sadam financial results for 2024 9 months and Q3](https://view.news.eu.nasdaq.com/view?id=bdb3dc8fd61fde2f29a4b559bab9a4510&lang=en&src=listed) | Open official announcement | -0.75% | -0.19% | 0.19% | -0.19% | 1.64% | No |
+| 2024-08-12 08:00 | Earnings | Higher profit | [AS Tallinna Sadam financial results for 2024 Q2 and 6 months](https://view.news.eu.nasdaq.com/view?id=b2301b4b68af4553da7d02ab2252a1715&lang=en&src=listed) | Open official announcement | 1.69% | -0.56% | -1.48% | -2.04% | -0.79% | Yes |
+| 2024-05-17 08:00 | Dividend payment | — | [Official dividend calendar: Dividend payment date, EUR 0.073 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.073  | -3.50% | -1.04% | -3.63% | -3.28% | -3.57% | No |
+| 2024-05-10 08:00 | Earnings | Lower profit | [AS Tallinna Sadam financial results for 2024 Q1](https://view.news.eu.nasdaq.com/view?id=bb6d9b7691aa7c3575dc66f38d4a6dbad&lang=en&src=listed) | Open official announcement | -6.61% | 0.18% | 1.42% | -1.24% | 2.25% | No |
+| 2024-05-09 08:00 | Ex-dividend | — | [Official dividend calendar: Dividend ex-date, EUR 0.073 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.073  | -0.50% | -5.83% | -3.50% | -7.00% | -1.85% | No |
+| 2024-05-06 08:00 | Ex-dividend | — | [Dividend Payments Ex-date of AS Tallinna Sadam](https://view.news.eu.nasdaq.com/view?id=bd1db1c926ede4a2de532dc97bed18365&lang=en&src=listed) | Open official announcement | -0.49% | -0.50% | -5.12% | -8.91% | -4.15% | No |
+| 2024-04-04 08:00 | Dividend announcement | — | [Tallinna Sadam audited Annual Report 2023 and dividend proposal ](https://view.news.eu.nasdaq.com/view?id=b801005dc3c67e2a6540cdb741317ffc5&lang=en&src=listed) | Open official announcement | -0.52% | 0.87% | 5.42% | 5.94% | 5.28% | Yes |
+| 2024-02-28 08:00 | Earnings | Higher profit | [AS Tallinna Sadam unaudited financial results for Q4 and 2023](https://view.news.eu.nasdaq.com/view?id=bcee1274a19a3f1eaa0cf56d26464ca38&lang=en&src=listed) | Open official announcement | 3.25% | 0.35% | 1.23% | 0.35% | 1.54% | No |
+| 2023-11-10 08:00 | Earnings | Higher profit | [AS Tallinna Sadam financial results for 2023 Q3 and 9 months](https://view.news.eu.nasdaq.com/view?id=b1e73bdebe1c05764ce0f6d44b8337258&lang=en&src=listed) | Open official announcement | 0.70% | -0.17% | -1.22% | -3.83% | -0.96% | Yes |
+| 2023-08-10 09:33 | Earnings | Higher profit | [Correction: AS Tallinna Sadam financial results for 2023 Q2 and 6 months](https://view.news.eu.nasdaq.com/view?id=ba0a3f266bb3fdc2c504aed32e1a1d4a9&lang=en&src=listed) | Open official announcement | -2.90% | -0.15% | -0.45% | -9.12% | -1.87% | No |
+| 2023-05-12 08:00 | Dividend payment | — | [Official dividend calendar: Dividend payment date, EUR 0.073 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.073  | -5.32% | 0.14% | -0.86% | 0.86% | 0.56% | No |
+| 2023-05-10 08:00 | Earnings | Higher profit | [AS Tallinna Sadam financial results for 2023 Q1](https://view.news.eu.nasdaq.com/view?id=bdd9ab4079d3988d74cd1d95324b6db9e&lang=en&src=listed) | Open official announcement | -4.92% | -0.29% | -1.15% | 0.57% | 0.90% | No |
+| 2023-05-09 08:00 | Ex-dividend | — | [Official dividend calendar: Dividend ex-date, EUR 0.073 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.073  | 1.24% | -4.63% | -5.86% | -4.77% | -4.73% | Yes |
+| 2023-04-04 13:40 | Dividend announcement | — | [CORRECTION: Tallinna Sadam audited Annual Report 2022 and dividend proposal ](https://view.news.eu.nasdaq.com/view?id=be24cd8165447a892001ba6662975d0f2&lang=en&src=listed) | Open official announcement | 1.96% | 0.14% | 0.96% | 0.82% | 0.94% | No |
+| 2023-02-28 08:00 | Earnings | Higher profit | [AS Tallinna Sadam unaudited financial results for 2022 and Q4](https://view.news.eu.nasdaq.com/view?id=bf7751635da699ae3465424a43a2af554&lang=en&src=listed) | Open official announcement | -0.40% | 0.27% | 0.41% | -3.65% | 0.19% | No |
+
+</details>
+
+</details>
+
+<details markdown="1" class="earnings-outcomes">
+<summary>Profit outcome and subsequent price analysis (14 classified of 15 earnings releases)</summary>
+
+Higher/lower profit refers to the issuer's explicit comparison with the earlier comparable period. ‘In line / unchanged’ is used only when the issuer explicitly says that profit met a plan, forecast or expectation, or was unchanged. ‘Loss’ requires an explicit realised net or operating loss. Releases without such wording remain unclassified and are excluded from the conditional estimates.
+
+Variance is reported in squared percentage points. Abnormal return is the share return minus the equal-weight Baltic-market return over the same horizon.
+
+| Profit outcome | Horizon | N | Conditional mean | Variance | Median | Positive share | Mean abnormal | Abnormal variance | Median abnormal |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Higher profit | 1d | 12 | -0.14% | 0.094 | -0.17% | 25% | -0.07% | 0.118 | -0.04% |
+| Higher profit | 5d | 12 | -0.21% | 1.311 | -0.63% | 42% | -0.04% | 1.418 | -0.10% |
+| Higher profit | 21d | 12 | -1.23% | 10.906 | -0.76% | 42% | -0.53% | 13.666 | -0.47% |
+| Lower profit | 1d | 2 | 0.23% | 0.005 | 0.23% | 100% | 0.11% | 0.205 | 0.11% |
+| Lower profit | 5d | 2 | 0.71% | 1.002 | 0.71% | 50% | 1.25% | 1.996 | 1.25% |
+| Lower profit | 21d | 2 | -1.74% | 0.505 | -1.74% | 0% | -0.06% | 0.541 | -0.06% |
+
+**Kruskal–Wallis test across the available outcome groups**
+
+| Horizon | Groups | N | H | Raw p | BH-adjusted p | Conclusion |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1d | 2 | 14 | 0.300 | 0.5839 | 0.8451 | No adjusted evidence |
+| 5d | 2 | 14 | 1.633 | 0.2012 | 0.6718 | No adjusted evidence |
+| 21d | 2 | 14 | 0.033 | 0.8551 | 0.9707 | No adjusted evidence |
+
+**Pairwise result:** No pairwise difference survives BH adjustment.
+
+The test describes historical association. Small groups, overlapping horizons and repeated releases from the same company limit causal interpretation.
+
+</details>
+
+</details>
+
+<details markdown="1">
+<summary>All five model frontiers with this share highlighted</summary>
+
+![TSM1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TSM1T_all_frontiers.png?v=1792850683)
+
+The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
+
+</details>
+
+<details markdown="1">
+<summary>All 72 PerformanceAnalytics measures: full period and last 126 observations</summary>
+
+| Measure | Full period | Last 126 | Measure | Full period | Last 126 |
+| --- | --- | --- | --- | --- | --- |
+| ActiveReturn | -0.277334 | -0.411708 | M2Sortino | -0.049560 | -0.173362 |
+| AdjustedSharpe | -0.373373 | -0.408178 | MSquaredExcess | -0.245773 | -0.347629 |
+| AnnualizedReturn_Arithmetic | -0.043019 | -0.181818 | Martin | -0.225586 | -1.695576 |
+| AnnualizedReturn_Geometric | -0.048644 | -0.174499 | MaximumDrawdown | 0.291939 | 0.165097 |
+| Appraisal | -0.372776 | -1.203434 | Modigliani | -0.000257 | -0.000798 |
+| ArithmeticReturn | -0.000171 | -0.000721 | NetSelectivity | -0.200433 | -0.389102 |
+| AverageDrawdown | 0.051619 | 0.058457 | Omega | 0.926054 | 0.751272 |
+| AverageDrawdownLength | 124.000000 | 41.000000 | OmegaExcessReturn | -0.081057 | -0.208950 |
+| AverageRecoveryTime | 60.166667 | 2.000000 | PainIndex | 0.189048 | 0.082395 |
+| BernardoLedoit | 0.926054 | 0.751272 | PainRatio | -0.257313 | -2.117834 |
+| BetaCoKurtosis | -0.050505 | -0.013112 | Prospect | -0.539890 | -0.611214 |
+| BetaCoSkewness | -1.417573 | -0.248047 | Rachev | 0.936715 | 0.788970 |
+| Burke | -0.230283 | -1.441332 | Selectivity | -0.043392 | -0.167967 |
+| CAPMAlpha | -0.000151 | -0.000697 | Sharpe_Annualized | -0.369110 | -1.296887 |
+| CAPMBeta | -0.022969 | -0.027535 | Sharpe_Daily | -0.023252 | -0.081696 |
+| CDD | 0.134432 | 0.125293 | Sharpe_ES | -0.009351 | -0.033643 |
+| Calmar | -0.166626 | -1.056948 | Sharpe_VaR | -0.017565 | -0.057980 |
+| CoKurtosis | -0.000000 | -0.000000 | Skewness | -1.678367 | -1.928936 |
+| CoSkewness | -0.000000 | -0.000000 | Sortino | -0.030154 | -0.101437 |
+| CumulativeReturn | -0.138609 | -0.091429 | SpecificRisk | 0.116402 | 0.139573 |
+| DRatio | 1.138419 | 1.626871 | Sterling | -0.124113 | -0.658246 |
+| DownCapture | -0.005342 | 0.014807 | SystematicRisk | -0.004033 | -0.004267 |
+| DownNumber | 0.427673 | 0.528302 | TotalRisk | 0.116472 | 0.139639 |
+| DownPercent | 0.836478 | 0.830189 | TrackingError_Annualized | 0.214089 | 0.212111 |
+| DownsideDeviation | 0.005661 | 0.007113 | TrackingError_Daily | 0.013486 | 0.013362 |
+| DrawdownDeviation | 0.010637 | 0.014723 | Treynor_Annualized | 2.117847 | 6.337296 |
+| ES_Loss | 0.018256 | 0.021446 | Treynor_Daily | 0.008615 | 0.027626 |
+| FamaBeta | 0.663731 | 0.904701 | UlcerIndex | 0.215636 | 0.102914 |
+| GeometricReturn | -0.000198 | -0.000761 | UpCapture | -0.044368 | -0.156972 |
+| Hurst | 0.375954 | 0.473918 | UpNumber | 0.394495 | 0.383562 |
+| Information_Annualized | -1.295411 | -1.941006 | UpPercent | 0.176606 | 0.150685 |
+| Information_Daily | -0.075295 | -0.120173 | UpsidePotential | 0.377634 | 0.306385 |
+| JensenAlpha | -0.043392 | -0.167967 | UpsideRisk | 0.004670 | 0.005225 |
+| Kappa | -0.016878 | -0.057530 | VaR_Loss | 0.009719 | 0.012444 |
+| Kelly | -3.166994 | -9.250553 | Volatility | 0.007342 | 0.008831 |
+| Kurtosis | 19.153590 | 18.727756 | Volatility_Annualized | 0.116549 | 0.140196 |
+
+</details>
+
+<details markdown="1" class="portfolio-sensitivity">
+<summary>Portfolio sensitivity</summary>
+
+**Removing this share from curent_update_baltic**
+
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.813559</td><td>0.000000</td></tr><tr><td>OUT</td><td>96</td><td>96</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.155889</td><td>0.008116</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.165547</td><td>0.004054</td></tr></tbody></table>
+
+The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
+
+**Increasing this existing position in the current portfolio**
+
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>TSM1T shares</td><td>330</td><td>330</td><td>+0</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>7912.299967</td><td>0.000000</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.457627</td><td>0.000000</td></tr><tr><td>OUT</td><td>62</td><td>62</td><td>+0</td></tr><tr><td>IN</td><td>8</td><td>8</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.070173</td><td>0.000000</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.091156</td><td>0.000000</td></tr></tbody></table>
+
+The starting point is the unmodified current portfolio, which already contains 330 TSM1T shares. The scenario adds 0 shares from Table 3A, resulting in 330 shares; every other holding remains unchanged.
+
+<details markdown="1" class="dominance-components">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Choose S&P 500, Current or any model portfolio as the benchmark for the difference panels.
+
+<div class="dominance-explorer" data-asset="TSM1T"><p>Open this section to load the interactive curve explorer.</p></div>
+
+<details markdown="1" class="static-dominance">
+<summary>High-resolution static FSD, SSD and TSD figure</summary>
+
+![TSM1T high-resolution stochastic dominance](figures/stock_profiles/TSM1T_FSD_SSD_TSD.png?v=1792850996)
+
+The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
+
+</details>
+
+</details>
+
+</details>
+
+</details>
+
+<details markdown="1" class="stock-profile" id="share-tal1t" data-signal="SKIP" data-netsd-effect="DECREASE">
+<summary><strong>TAL1T — Tallink Grupp</strong> | current action: SKIP | allocation target 775 shares | netSD diagnostic rank 17</summary>
+
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>Execution rationale</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>700</td><td>775</td><td>+75</td><td>3.36%</td><td>EUR 0.6500</td><td>0.0763</td><td>28 / 19</td><td>66.63</td><td>Bearish</td><td>Above upper band</td><td>0.599 (Neutral)</td><td>HOLD</td><td>BUY</td><td>SKIP</td><td>Do not execute: proposed purchase is below EUR 100 or below 1% target weight.</td><td>0.001129 (1.375% of portfolio HHI)</td><td>EUR 77,090</td><td>0.1%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+
+![TAL1T Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/TAL1T_technicals_6m.png)
+
+Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
+
+**Current indicative buy and sell prices**
+
+| Current price | Buy below | Sell above | Bollinger price zone |
+| --- | --- | --- | --- |
+| EUR 0.6500 | EUR 0.6419 (-1.25%) | EUR 0.6498 (-0.03%) | SELL |
+
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires an economically material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD.
+
+<details markdown="1">
+<summary>Complete technical history</summary>
+
+![TAL1T complete technical history](figures/technical_analysis/TAL1T_technical.png)
+
+</details>
+
+<details markdown="1">
+<summary>Return histogram</summary>
+
+![TAL1T return histogram](figures/stock_profiles/TAL1T_histogram.png?v=1792850132)
+
+</details>
+
+<details markdown="1" class="seasonality-section">
+<summary>Seasonality, drawdowns and upside periods</summary>
+
+The analysis covers 962 daily returns from 2023-01-02 to 2026-10-23. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
+
+| Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- |
+| Maximum drawdown | -24.80% (2025-11-24) | Average gain / average loss | 1.214 | Best 21-day period | 16.31% (ending 2023-08-18) |
+| Average underwater drawdown | 13.02% | Upside potential ratio | 1.137 | Worst 21-day period | -17.67% (ending 2024-07-02) |
+| Conditional drawdown 95% | 23.76% | Upside capture vs Baltic EW | 65.3% | Best 5-day period | 8.16% (ending 2023-07-27) |
+| Ulcer index | 14.78 | Downside capture vs Baltic EW | 48.1% | Best 63-day period | 27.30% (ending 2023-08-22) |
+| Longest underwater period | 868 calendar days | Positive trading days | 39.0% | Repeated calendar pattern | Feb: 100% positive across 4 years |
+| Daily downside deviation | 0.674% | Best day | 5.37% (2024-02-22) |  |  |
+| Daily upside deviation | 0.677% | Worst day | -8.83% (2024-06-19) |  |  |
+
+**Calendar-effect tests and observed averages**
+
+| Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
+| --- | --- | --- | --- | --- |
+| Weekday | Best: Friday (0.101%); worst: Monday (-0.098%) | 0.1714 | 0.2574 | Not detected |
+| Calendar month | Best: Feb (0.195% daily); worst: Jun (-0.256% daily) | 0.6688 | 0.7770 | Not detected |
+| Turn of month | First/last three days: 0.107%; other days: 0.007% | 0.3026 | 0.8571 | Not detected |
+
+![TAL1T seasonality, drawdowns and upside periods](figures/stock_profiles/TAL1T_seasonality.png?v=1792850841)
+
+**Five deepest drawdown episodes**
+
+| Rank | Peak | Trough | Recovery | Loss | Underwater days |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 2024-06-07 | 2025-11-24 | Not recovered | -24.80% | 868 |
+| 2 | 2023-09-07 | 2023-10-17 | 2024-04-09 | -11.81% | 215 |
+| 3 | 2023-03-07 | 2023-03-13 | 2023-06-20 | -4.81% | 105 |
+| 4 | 2023-08-21 | 2023-08-24 | 2023-09-07 | -3.48% | 17 |
+| 5 | 2024-04-11 | 2024-05-20 | 2024-05-31 | -3.37% | 50 |
+
+**Five strongest non-overlapping 21-trading-day rises**
+
+| Rank | Start | End | 21-day return |
+| --- | --- | --- | --- |
+| 1 | 2023-07-20 | 2023-08-18 | 16.31% |
+| 2 | 2024-12-27 | 2025-01-29 | 11.65% |
+| 3 | 2024-09-23 | 2024-10-22 | 9.17% |
+| 4 | 2023-02-06 | 2023-03-07 | 8.18% |
+| 5 | 2026-01-21 | 2026-02-19 | 7.61% |
+
+The dated extremes identify where company announcements, dividends, corporate actions or data anomalies should be checked. A repeated calendar average is descriptive until it survives the adjusted test and a later out-of-sample period; it is not by itself a buy or sell signal.
+
+<details markdown="1" class="company-events">
+<summary>Official company-news calendar and price-direction analysis (38 events)</summary>
+
+Announcement times and links come from the official Nasdaq news service. The effective date is the first trading close strictly after publication. Abnormal return means the share return minus the equal-weight Baltic-market return over the same window.
+
+| Event type | N | Abnormal 1d | Abnormal 5d | Abnormal 21d | Positive 5d | Direction reversal | BH p(5d) | BH p(21d) | Interpretation |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Dividend payment | 4 | 0.40% | 0.59% | -0.98% | 25% | 0% | 1.0000 | 0.7934 | No adjusted statistical evidence |
+| Earnings | 27 | -0.01% | -0.24% | 1.02% | 41% | 33% | 0.3842 | 0.9508 | No adjusted statistical evidence |
+| Ex-dividend | 7 | -3.05% | -6.90% | -8.29% | 0% | 86% | 0.0000 | 0.0000 | Different from ordinary periods; price drop may be mechanical |
+
+![TAL1T official announcements and abnormal returns](figures/stock_profiles/TAL1T_company_events.png?v=1792850867)
+
+A direction reversal requires opposite fitted price slopes during the ten trading days before and after the event and at least a 1% five-day move. This identifies temporal association, not proof that the announcement caused the change.
+
+<details markdown="1">
+<summary>Complete official event calendar (38 announcements)</summary>
+
+| Published | Type | Profit outcome | Official announcement | Headline fundamental cue | Pre 5d | Post 1d | Post 5d | Post 21d | Abnormal 5d | Reversal |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-07-23 09:00 | Earnings | Loss | [AS Tallink Grupp Unaudited Consolidated Interim Report for the Q2 2026](https://view.news.eu.nasdaq.com/view?id=b810aadb2a6fa5c308db2c732663f163d&lang=en&src=listed) | Open official announcement | -0.16% | -0.16% | -0.16% | 1.47% | -0.17% | No |
+| 2026-07-03 09:00 | Earnings | Unclassified earnings release | [AS Tallink Grupp Statistics for June and the Second Quarter of 2026](https://view.news.eu.nasdaq.com/view?id=bd34c3946e1d448133fa85e5cc70b7720&lang=en&src=listed) | Open official announcement | 0.16% | 0.00% | -0.32% | -0.32% | -1.28% | No |
+| 2026-07-01 08:00 | Dividend payment | — | [Official dividend calendar: Dividend payment date, EUR 0.03 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.03  | 0.33% | 0.33% | 0.16% | -0.49% | -0.60% | No |
+| 2026-06-17 08:00 | Ex-dividend | — | [Official dividend calendar: Dividend ex-date, EUR 0.03 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.03  | 0.00% | -5.50% | -6.56% | -6.56% | -5.92% | Yes |
+| 2026-06-12 09:00 | Ex-dividend | — | [Dividend payment ex-date of AS Tallink Grupp ](https://view.news.eu.nasdaq.com/view?id=bbd5fd5003b998bb0ce4da7a2c5c5f4ec&lang=en&src=listed) | Open official announcement | 0.77% | 0.15% | -5.96% | -6.42% | -5.02% | Yes |
+| 2026-04-23 09:00 | Earnings | Higher profit | [AS-i Tallink Grupp 2026. majandusaasta auditeerimata konsolideeritud I kv tulemuste vahearuanne](https://view.news.eu.nasdaq.com/view?id=bbfa8c39196898346b9433e088d58bc59&lang=en&src=listed) | Open official announcement | -0.63% | 0.48% | 3.02% | 2.54% | 3.84% | No |
+| 2026-04-14 09:00 | Earnings | Lower profit | [AS Tallink Grupp Audited Annual Report for the Financial Year 2025](https://view.news.eu.nasdaq.com/view?id=b95719f5e702602be3809d7b9a43b6d1a&lang=en&src=listed) | Open official announcement | 1.96% | 0.64% | 0.48% | 4.33% | 0.31% | No |
+| 2026-04-06 09:00 | Earnings | Unclassified earnings release | [AS Tallink Grupp Statistics for March and the First Quarter of 2026](https://view.news.eu.nasdaq.com/view?id=bdc9367ae37cb63180e904e380783b03e&lang=en&src=listed) | Open official announcement | -0.49% | 0.33% | 2.13% | 6.57% | 0.44% | Yes |
+| 2026-02-19 09:00 | Earnings | Lower profit | [AS Tallink Grupp Unaudited Consolidated Interim Report for the Q4 and 12 months of 2025](https://view.news.eu.nasdaq.com/view?id=b7f20e74fd862485e23b933e9a05263fb&lang=en&src=listed) | Open official announcement | 5.65% | -0.79% | -3.93% | -2.36% | -2.55% | Yes |
+| 2026-01-05 09:00 | Earnings | Unclassified earnings release | [AS Tallink Grupp Statistics for December and the Fourth Quarter of 2025](https://view.news.eu.nasdaq.com/view?id=bbc67dbc633b570c22325435f47cf72f4&lang=en&src=listed) | Open official announcement | 0.86% | 0.17% | 1.88% | 2.74% | 0.42% | No |
+| 2025-11-25 07:00 | Dividend payment | — | [Official dividend calendar: Dividend payment date, EUR 0.03 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.03  | -0.70% | 0.53% | 0.53% | 2.65% | -0.13% | No |
+| 2025-11-13 07:00 | Ex-dividend | — | [Official dividend calendar: Dividend ex-date, EUR 0.03 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.03  | -0.33% | -3.17% | -5.17% | -3.67% | -5.44% | Yes |
+| 2025-11-10 09:00 | Ex-dividend | — | [Dividend payment ex-date of AS Tallink Grupp ](https://view.news.eu.nasdaq.com/view?id=b98b50c5921af80ef8ad9e0d84cc37db2&lang=en&src=listed) | Open official announcement | -1.15% | 0.17% | -4.83% | -4.17% | -4.85% | Yes |
+| 2025-10-23 16:30 | Earnings | Unclassified earnings release | [Correction: AS Tallink Grupp Unaudited Consolidated Interim Report for the Q3 2025](https://view.news.eu.nasdaq.com/view?id=b0b44d930e03f99fc4038db808bca56de&lang=en&src=listed) | Open official announcement | 0.17% | -0.17% | -1.84% | -5.18% | -1.70% | Yes |
+| 2025-10-03 09:00 | Earnings | Unclassified earnings release | [AS Tallink Grupp Statistics for September and the Third Quarter of 2025](https://view.news.eu.nasdaq.com/view?id=b7e9c8045dd261bdecb9bce6461c16162&lang=en&src=listed) | Open official announcement | -0.17% | 0.00% | 0.67% | 1.17% | 0.36% | No |
+| 2025-07-24 09:00 | Earnings | Lower profit | [AS Tallink Grupp Unaudited Consolidated Interim Report for the Q2 2025](https://view.news.eu.nasdaq.com/view?id=b7800d40a00468096638dfac917bf6186&lang=en&src=listed) | Open official announcement | -1.13% | 0.00% | -1.46% | 0.00% | -1.55% | No |
+| 2025-07-03 09:00 | Earnings | Unclassified earnings release | [AS Tallink Grupp Statistics for June and the Second Quarter of 2025](https://view.news.eu.nasdaq.com/view?id=b5f2d839432486cba1d713b19f7f84935&lang=en&src=listed) | Open official announcement | -0.16% | 0.00% | -0.32% | -1.13% | -0.93% | No |
+| 2025-07-02 08:00 | Dividend payment | — | [Official dividend calendar: Dividend payment date, EUR 0.03 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.03  | 0.32% | 0.48% | -0.16% | -1.45% | -0.05% | No |
+| 2025-06-18 08:00 | Ex-dividend | — | [Official dividend calendar: Dividend ex-date, EUR 0.03 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.03  | -0.76% | -4.87% | -5.63% | -5.33% | -5.87% | Yes |
+| 2025-04-24 09:00 | Earnings | Unclassified earnings release | [AS Tallink Grupp Unaudited Consolidated Interim Report for the Q1 2025](https://view.news.eu.nasdaq.com/view?id=be2094245113083aff4883b80f45ef684&lang=en&src=listed) | Open official announcement | -3.92% | -0.33% | 0.49% | 6.53% | -0.59% | No |
+| 2025-04-16 16:30 | Earnings | Unclassified earnings release | [AS Tallink Grupp Audited Annual Report for the Financial Year 2024](https://view.news.eu.nasdaq.com/view?id=bc2f19b7dc4b9743de1b697269b5c1b4b&lang=en&src=listed) | Open official announcement | 4.78% | -0.31% | -3.93% | 1.57% | -5.27% | Yes |
+| 2025-04-03 09:00 | Earnings | Unclassified earnings release | [AS Tallink Grupp Statistics for March and the First Quarter of 2025](https://view.news.eu.nasdaq.com/view?id=b3804420d07f31491a6435605987479c3&lang=en&src=listed) | Open official announcement | 0.31% | -1.09% | -2.97% | -2.03% | -1.18% | No |
+| 2025-02-20 09:00 | Earnings | Lower profit | [AS Tallink Grupp Unaudited Consolidated Interim Report for the Q4 and 12 months of 2024](https://view.news.eu.nasdaq.com/view?id=bf2e57d6894634da8edadc4bfdd454bdc&lang=en&src=listed) | Open official announcement | 6.19% | 0.00% | -2.39% | -4.78% | -2.07% | Yes |
+| 2025-01-03 09:00 | Earnings | Unclassified earnings release | [AS Tallink Grupp Statistics for December and the Fourth Quarter of 2024](https://view.news.eu.nasdaq.com/view?id=bf0ca12b705bf7ed63bcc923ff5ba3398&lang=en&src=listed) | Open official announcement | 2.78% | 1.86% | 2.36% | 7.77% | 0.80% | No |
+| 2024-10-24 09:00 | Earnings | Lower profit | [AS Tallink Grupp Unaudited Consolidated Interim Report Q3 2024](https://view.news.eu.nasdaq.com/view?id=b76b7368699b4240251aa0a4e7789d7f0&lang=en&src=listed) | Open official announcement | -1.76% | -0.16% | -2.12% | -5.22% | -1.99% | Yes |
+| 2024-07-25 09:00 | Earnings | Lower profit | [AS Tallink Grupp Unaudited Consolidated Interim Report Q2 2024](https://view.news.eu.nasdaq.com/view?id=b4e690d5d91c719bad60092852357f019&lang=en&src=listed) | Open official announcement | -2.65% | -0.51% | 4.08% | 3.06% | 4.16% | Yes |
+| 2024-07-03 08:00 | Dividend payment | — | [Official dividend calendar: Dividend payment date, EUR 0.06 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.06  | -5.38% | 0.98% | 3.25% | -1.79% | 3.13% | No |
+| 2024-06-19 08:00 | Ex-dividend | — | [Official dividend calendar: Dividend ex-date, EUR 0.06 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.06  | -6.65% | -8.83% | -7.41% | -13.96% | -6.94% | No |
+| 2024-06-12 09:00 | Ex-dividend | — | [Dividend payment ex-date of AS Tallink Grupp ](https://view.news.eu.nasdaq.com/view?id=b57d95610e8103e9b1b006511cd7925f3&lang=en&src=listed) | Open official announcement | 0.13% | -0.13% | -14.78% | -16.64% | -14.24% | Yes |
+| 2024-04-25 09:00 | Earnings | Loss | [AS Tallink Grupp Unaudited Consolidated Interim Report Q1 2024](https://view.news.eu.nasdaq.com/view?id=bd6e24c67ce2e6f0f2b4b03fa0f300cd7&lang=en&src=listed) | Open official announcement | 0.69% | -1.37% | -1.37% | 1.23% | -1.64% | Yes |
+| 2024-04-04 14:00 | Earnings | Higher profit | [AS Tallink Grupp Audited Annual Report for the Financial Year 2023](https://view.news.eu.nasdaq.com/view?id=bbcf084af2e6f9d10dc1e6bd92c495c43&lang=en&src=listed) | Open official announcement | 0.00% | 2.14% | 6.00% | 3.29% | 5.87% | Yes |
+| 2024-02-22 09:00 | Earnings | Higher profit | [AS Tallink Grupp unaudited consolidated Interim Report for the fourth quarter and 12 months of 2023](https://view.news.eu.nasdaq.com/view?id=b167c1880926388070032ab7eebca7d94&lang=en&src=listed) | Open official announcement | 6.16% | 1.13% | -0.99% | -1.13% | -2.03% | No |
+| 2023-10-26 09:00 | Earnings | Higher profit | [AS Tallink Grupp Unaudited Consolidated Interim Report Q3 2023](https://view.news.eu.nasdaq.com/view?id=b6f84f9b4b0043fa3f5333b70474f6037&lang=en&src=listed) | Open official announcement | 1.24% | -0.15% | 1.07% | 4.75% | 0.95% | No |
+| 2023-07-27 09:00 | Earnings | Loss | [AS Tallink Grupp Unaudited Consolidated Interim Report Q2 2023](https://view.news.eu.nasdaq.com/view?id=b2ba9fddc03237b5fc83ad55a33195b4d&lang=en&src=listed) | Open official announcement | 8.16% | -0.45% | -0.15% | 5.43% | -0.43% | No |
+| 2023-04-27 09:00 | Earnings | Loss | [AS Tallink Grupp Unaudited Consolidated Interim Report Q1 2023](https://view.news.eu.nasdaq.com/view?id=b4188886b41d24f27a29997d4c60ed5de&lang=en&src=listed) | Open official announcement | -0.87% | -0.35% | -0.53% | -0.35% | -0.24% | No |
+| 2023-04-17 18:00 | Earnings | Loss | [Correction: AS Tallink Grupp Audited Annual Report of the 2022 Financial Year](https://view.news.eu.nasdaq.com/view?id=bebc216ee317e886485b8718a2b6b207d&lang=en&src=listed) | Open official announcement | 0.52% | -0.17% | -0.35% | -1.04% | 0.28% | No |
+| 2023-04-03 09:00 | Earnings | Loss | [AS Tallink Grupp Audited Annual Report of the 2022 Financial Year](https://view.news.eu.nasdaq.com/view?id=bfc82fa1835156bd44da1382ba91479ed&lang=en&src=listed) | Open official announcement | 0.17% | 0.52% | -0.70% | -1.22% | -0.70% | No |
+| 2023-02-22 09:00 | Earnings | Loss | [AS Tallink Grupp Unaudited Consolidated Interim Report Q4 2022](https://view.news.eu.nasdaq.com/view?id=b6ec8e8b2c07fe9e6a83994224d099fd6&lang=en&src=listed) | Open official announcement | 3.49% | 0.00% | 0.53% | 0.89% | 0.46% | No |
+
+</details>
+
+</details>
+
+<details markdown="1" class="earnings-outcomes">
+<summary>Profit outcome and subsequent price analysis (17 classified of 27 earnings releases)</summary>
+
+Higher/lower profit refers to the issuer's explicit comparison with the earlier comparable period. ‘In line / unchanged’ is used only when the issuer explicitly says that profit met a plan, forecast or expectation, or was unchanged. ‘Loss’ requires an explicit realised net or operating loss. Releases without such wording remain unclassified and are excluded from the conditional estimates.
+
+Variance is reported in squared percentage points. Abnormal return is the share return minus the equal-weight Baltic-market return over the same horizon.
+
+| Profit outcome | Horizon | N | Conditional mean | Variance | Median | Positive share | Mean abnormal | Abnormal variance | Median abnormal |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Higher profit | 1d | 4 | 0.90% | 0.962 | 0.80% | 75% | 0.62% | 0.817 | 0.72% |
+| Higher profit | 5d | 4 | 2.28% | 8.847 | 2.05% | 75% | 2.16% | 11.860 | 2.40% |
+| Higher profit | 21d | 4 | 2.36% | 6.260 | 2.91% | 75% | 2.86% | 10.302 | 3.10% |
+| Lower profit | 1d | 6 | -0.14% | 0.241 | -0.08% | 17% | -0.08% | 0.266 | -0.22% |
+| Lower profit | 5d | 6 | -0.89% | 7.989 | -1.79% | 33% | -0.61% | 6.465 | -1.77% |
+| Lower profit | 21d | 6 | -0.83% | 15.947 | -1.18% | 33% | 0.38% | 12.008 | -0.40% |
+| Loss | 1d | 7 | -0.28% | 0.327 | -0.17% | 14% | -0.23% | 0.273 | -0.09% |
+| Loss | 5d | 7 | -0.39% | 0.338 | -0.35% | 14% | -0.35% | 0.483 | -0.24% |
+| Loss | 21d | 7 | 0.92% | 5.130 | 0.89% | 57% | 2.20% | 4.335 | 2.27% |
+
+**Kruskal–Wallis test across the available outcome groups**
+
+| Horizon | Groups | N | H | Raw p | BH-adjusted p | Conclusion |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1d | 3 | 17 | 1.850 | 0.3966 | 0.7778 | No adjusted evidence |
+| 5d | 3 | 17 | 2.761 | 0.2514 | 0.7542 | No adjusted evidence |
+| 21d | 3 | 17 | 1.786 | 0.4095 | 0.7778 | No adjusted evidence |
+
+**Pairwise result:** No pairwise difference survives BH adjustment.
+
+The test describes historical association. Small groups, overlapping horizons and repeated releases from the same company limit causal interpretation.
+
+</details>
+
+</details>
+
+<details markdown="1">
+<summary>All five model frontiers with this share highlighted</summary>
+
+![TAL1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TAL1T_all_frontiers.png?v=1792850682)
+
+The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
+
+</details>
+
+<details markdown="1">
+<summary>All 72 PerformanceAnalytics measures: full period and last 126 observations</summary>
+
+| Measure | Full period | Last 126 | Measure | Full period | Last 126 |
+| --- | --- | --- | --- | --- | --- |
+| ActiveReturn | -0.197670 | -0.183548 | M2Sortino | 0.031431 | 0.053917 |
+| AdjustedSharpe | 0.271995 | 0.314804 | MSquaredExcess | -0.156828 | -0.138950 |
+| AnnualizedReturn_Arithmetic | 0.041977 | 0.060392 | Martin | 0.329382 | 1.495957 |
+| AnnualizedReturn_Geometric | 0.031019 | 0.053661 | MaximumDrawdown | 0.175944 | 0.063721 |
+| Appraisal | 0.160896 | 0.337234 | Modigliani | 0.000193 | 0.000292 |
+| ArithmeticReturn | 0.000167 | 0.000240 | NetSelectivity | -0.166044 | -0.141273 |
+| AverageDrawdown | 0.025928 | 0.022571 | Omega | 1.058900 | 1.123630 |
+| AverageDrawdownLength | 33.590909 | 19.500000 | OmegaExcessReturn | -0.006498 | 0.024587 |
+| AverageRecoveryTime | 17.090909 | 10.666667 | PainIndex | 0.079540 | 0.029274 |
+| BernardoLedoit | 1.058900 | 1.123630 | PainRatio | 0.389979 | 1.833065 |
+| BetaCoKurtosis | -0.069578 | 0.055675 | Prospect | -0.514081 | -0.363752 |
+| BetaCoSkewness | -3.852091 | -4.067840 | Rachev | 1.055850 | 0.986435 |
+| Burke | 0.129772 | 0.703625 | Selectivity | 0.024315 | 0.042707 |
+| CAPMAlpha | 0.000141 | 0.000198 | Sharpe_Annualized | 0.277422 | 0.474239 |
+| CAPMBeta | 0.029312 | 0.046178 | Sharpe_Daily | 0.017476 | 0.029874 |
+| CDD | 0.046842 | 0.057087 | Sharpe_ES | 0.007079 | 0.013255 |
+| Calmar | 0.176299 | 0.842128 | Sharpe_VaR | 0.012543 | 0.032511 |
+| CoKurtosis | -0.000000 | 0.000000 | Skewness | 0.107627 | -1.573812 |
+| CoSkewness | -0.000001 | -0.000000 | Sortino | 0.025421 | 0.039925 |
+| CumulativeReturn | 0.095707 | 0.026480 | SpecificRisk | 0.151125 | 0.126639 |
+| DRatio | 1.039768 | 0.853647 | Sterling | 0.112409 | 0.327759 |
+| DownCapture | 0.007492 | 0.053809 | SystematicRisk | 0.005147 | 0.007156 |
+| DownNumber | 0.415094 | 0.339623 | TotalRisk | 0.151212 | 0.126841 |
+| DownPercent | 0.827044 | 0.905660 | TrackingError_Annualized | 0.227864 | 0.194969 |
+| DownsideDeviation | 0.006553 | 0.006002 | TrackingError_Daily | 0.014354 | 0.012282 |
+| DrawdownDeviation | 0.008712 | 0.007365 | Treynor_Annualized | 1.058222 | 1.162041 |
+| ES_Loss | 0.023531 | 0.018080 | Treynor_Daily | 0.004136 | 0.004492 |
+| FamaBeta | 0.861705 | 0.821779 | UlcerIndex | 0.094173 | 0.035871 |
+| GeometricReturn | 0.000121 | 0.000207 | UpCapture | 0.045102 | 0.098616 |
+| Hurst | 0.367248 | 0.516622 | UpNumber | 0.376147 | 0.342466 |
+| Information_Annualized | -0.867493 | -0.941423 | UpPercent | 0.174312 | 0.136986 |
+| Information_Daily | -0.048513 | -0.051913 | UpsidePotential | 0.457023 | 0.362867 |
+| JensenAlpha | 0.024315 | 0.042707 | UpsideRisk | 0.006916 | 0.005279 |
+| Kappa | 0.015929 | 0.020954 | VaR_Loss | 0.013280 | 0.007371 |
+| Kelly | 1.833434 | 3.724025 | Volatility | 0.009532 | 0.008022 |
+| Kurtosis | 10.651832 | 25.601587 | Volatility_Annualized | 0.151313 | 0.127346 |
+
+</details>
+
+<details markdown="1" class="portfolio-sensitivity">
+<summary>Portfolio sensitivity</summary>
+
+**Removing this share from curent_update_baltic**
+
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.805085</td><td>-0.008475</td></tr><tr><td>OUT</td><td>96</td><td>95</td><td>-1</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.157178</td><td>0.009405</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.161875</td><td>0.000383</td></tr></tbody></table>
+
+The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
+
+**Increasing this existing position in the current portfolio**
+
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>TAL1T shares</td><td>700</td><td>1116</td><td>+416</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>8181.035978</td><td>268.736012</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.423729</td><td>-0.033898</td></tr><tr><td>OUT</td><td>62</td><td>60</td><td>-2</td></tr><tr><td>IN</td><td>8</td><td>10</td><td>+2</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.061612</td><td>-0.008560</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.091827</td><td>0.000672</td></tr></tbody></table>
+
+The starting point is the unmodified current portfolio, which already contains 700 TAL1T shares. The scenario adds 416 shares from Table 3A, resulting in 1116 shares; every other holding remains unchanged.
+
+<details markdown="1" class="dominance-components">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Choose S&P 500, Current or any model portfolio as the benchmark for the difference panels.
+
+<div class="dominance-explorer" data-asset="TAL1T"><p>Open this section to load the interactive curve explorer.</p></div>
+
+<details markdown="1" class="static-dominance">
+<summary>High-resolution static FSD, SSD and TSD figure</summary>
+
+![TAL1T high-resolution stochastic dominance](figures/stock_profiles/TAL1T_FSD_SSD_TSD.png?v=1792850987)
+
+The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
+
+</details>
+
+</details>
+
+</details>
+
+</details>
+
+<details markdown="1" class="stock-profile" id="share-tkm1t" data-signal="SKIP" data-netsd-effect="DECREASE">
+<summary><strong>TKM1T — TKM Grupp</strong> | current action: SKIP | allocation target 294 shares | netSD diagnostic rank 18</summary>
+
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>Execution rationale</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>288</td><td>294</td><td>+6</td><td>17.50%</td><td>EUR 8.9000</td><td>0.0593</td><td>29 / 22</td><td>28.20</td><td>Bearish</td><td>Inside bands</td><td>0.254 (Neutral)</td><td>HOLD</td><td>BUY</td><td>SKIP</td><td>Do not execute: proposed purchase is below EUR 100 or below 1% target weight.</td><td>0.030624 (37.300% of portfolio HHI)</td><td>EUR 39,989</td><td>0.1%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+
+![TKM1T Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/TKM1T_technicals_6m.png)
+
+Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
+
+**Current indicative buy and sell prices**
+
+| Current price | Buy below | Sell above | Bollinger price zone |
+| --- | --- | --- | --- |
+| EUR 8.9000 | EUR 8.8594 (-0.46%) | EUR 9.0886 (+2.12%) | HOLD |
+
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires an economically material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD.
+
+<details markdown="1">
+<summary>Complete technical history</summary>
+
+![TKM1T complete technical history](figures/technical_analysis/TKM1T_technical.png)
+
+</details>
+
+<details markdown="1">
+<summary>Return histogram</summary>
+
+![TKM1T return histogram](figures/stock_profiles/TKM1T_histogram.png?v=1792850132)
+
+</details>
+
+<details markdown="1" class="seasonality-section">
+<summary>Seasonality, drawdowns and upside periods</summary>
+
+The analysis covers 962 daily returns from 2023-01-02 to 2026-10-23. Statistically supported calendar effects: **none after multiple-testing correction**. Adjusted p-values control the false-discovery rate across all analysed shares.
+
+| Measure | Value | Measure | Value | Measure | Value |
+| --- | --- | --- | --- | --- | --- |
+| Maximum drawdown | -16.67% (2026-10-15) | Average gain / average loss | 0.937 | Best 21-day period | 6.68% (ending 2025-01-16) |
+| Average underwater drawdown | 9.57% | Upside potential ratio | 0.799 | Worst 21-day period | -9.08% (ending 2024-04-29) |
+| Conditional drawdown 95% | 15.40% | Upside capture vs Baltic EW | 18.1% | Best 5-day period | 4.55% (ending 2025-01-07) |
+| Ulcer index | 10.20 | Downside capture vs Baltic EW | 23.1% | Best 63-day period | 11.52% (ending 2025-02-10) |
+| Longest underwater period | 939 calendar days | Positive trading days | 39.2% | Repeated calendar pattern | Feb: 100% positive across 4 years |
+| Daily downside deviation | 0.477% | Best day | 3.06% (2025-01-03) |  |  |
+| Daily upside deviation | 0.335% | Worst day | -6.77% (2026-03-31) |  |  |
+
+**Calendar-effect tests and observed averages**
+
+| Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
+| --- | --- | --- | --- | --- |
+| Weekday | Best: Wednesday (0.046%); worst: Tuesday (-0.059%) | 0.0438 | 0.1502 | Not detected |
+| Calendar month | Best: Jan (0.138% daily); worst: Apr (-0.154% daily) | 0.2077 | 0.4532 | Not detected |
+| Turn of month | First/last three days: -0.082%; other days: 0.012% | 0.6703 | 0.8571 | Not detected |
+
+![TKM1T seasonality, drawdowns and upside periods](figures/stock_profiles/TKM1T_seasonality.png?v=1792850798)
+
+**Five deepest drawdown episodes**
+
+| Rank | Peak | Trough | Recovery | Loss | Underwater days |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 2024-03-28 | 2026-10-15 | Not recovered | -16.67% | 939 |
+| 2 | 2023-03-27 | 2023-09-22 | 2024-02-21 | -9.33% | 331 |
+| 3 | 2023-02-09 | 2023-02-14 | 2023-03-01 | -1.36% | 20 |
+| 4 | 2024-02-21 | 2024-02-29 | 2024-03-15 | -1.33% | 23 |
+| 5 | 2023-03-01 | 2023-03-02 | 2023-03-03 | -1.17% | 2 |
+
+**Five strongest non-overlapping 21-trading-day rises**
+
+| Rank | Start | End | 21-day return |
+| --- | --- | --- | --- |
+| 1 | 2024-12-11 | 2025-01-16 | 6.68% |
+| 2 | 2023-01-02 | 2023-01-31 | 6.61% |
+| 3 | 2025-12-09 | 2026-01-14 | 6.39% |
+| 4 | 2024-01-09 | 2024-02-07 | 4.65% |
+| 5 | 2023-09-22 | 2023-10-23 | 4.31% |
+
+The dated extremes identify where company announcements, dividends, corporate actions or data anomalies should be checked. A repeated calendar average is descriptive until it survives the adjusted test and a later out-of-sample period; it is not by itself a buy or sell signal.
+
+<details markdown="1" class="company-events">
+<summary>Official company-news calendar and price-direction analysis (31 events)</summary>
+
+Announcement times and links come from the official Nasdaq news service. The effective date is the first trading close strictly after publication. Abnormal return means the share return minus the equal-weight Baltic-market return over the same window.
+
+| Event type | N | Abnormal 1d | Abnormal 5d | Abnormal 21d | Positive 5d | Direction reversal | BH p(5d) | BH p(21d) | Interpretation |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Dividend payment | 4 | 0.75% | 0.49% | -1.36% | 25% | 0% | 1.0000 | 0.5864 | No adjusted statistical evidence |
+| Earnings | 19 | -0.48% | -0.24% | 0.35% | 53% | 11% | 0.9407 | 0.7052 | No adjusted statistical evidence |
+| Ex-dividend | 8 | -1.86% | -6.03% | -7.55% | 0% | 88% | 0.0000 | 0.0000 | Different from ordinary periods; price drop may be mechanical |
+
+![TKM1T official announcements and abnormal returns](figures/stock_profiles/TKM1T_company_events.png?v=1792850843)
+
+A direction reversal requires opposite fitted price slopes during the ten trading days before and after the event and at least a 1% five-day move. This identifies temporal association, not proof that the announcement caused the change.
+
+<details markdown="1">
+<summary>Complete official event calendar (31 announcements)</summary>
+
+| Published | Type | Profit outcome | Official announcement | Headline fundamental cue | Pre 5d | Post 1d | Post 5d | Post 21d | Abnormal 5d | Reversal |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-07-10 16:30 | Earnings | Lower profit | [Unaudited consolidated interim accounts for the second quarter and first six months of 2026](https://view.news.eu.nasdaq.com/view?id=bc94e61ae93435ef732b90cb75dafb9e3&lang=en&src=listed) | Open official announcement | -0.22% | -0.44% | 0.22% | -0.11% | -0.43% | No |
+| 2026-04-10 16:30 | Earnings | Loss | [Unaudited consolidated interim accounts for the first quarter of 2026](https://view.news.eu.nasdaq.com/view?id=ba566a451cdc6edd9cf00d93b39abda9d&lang=en&src=listed) | Open official announcement | 0.87% | 0.00% | -0.11% | -0.86% | -0.66% | No |
+| 2026-04-07 08:00 | Dividend payment | — | [Official dividend calendar: Dividend payment date, EUR 0.6 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.6  | -6.59% | 0.98% | 0.98% | 0.11% | -0.72% | No |
+| 2026-03-30 08:00 | Ex-dividend | — | [Official dividend calendar: Dividend ex-date, EUR 0.6 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.6  | 0.41% | 0.00% | -6.06% | -6.67% | -5.98% | Yes |
+| 2026-03-25 16:30 | Ex-dividend | — | [Dividend payment ex-date of TKM Grupp AS](https://view.news.eu.nasdaq.com/view?id=b69e5ffb656e8ca2593ae9b5f7d224119&lang=en&src=listed) | Open official announcement | 0.20% | 0.00% | -6.49% | -6.09% | -5.45% | Yes |
+| 2026-02-19 16:30 | Earnings | Unclassified earnings release | [Audited annual report 2025](https://view.news.eu.nasdaq.com/view?id=b6ad8814c26e0bf4cedd01f2a21c90f10&lang=en&src=listed) | Open official announcement | -0.31% | 1.77% | 1.36% | 2.82% | 2.74% | No |
+| 2026-01-16 16:30 | Earnings | Lower profit | [Unaudited consolidated interim accounts for the fourth quarter and twelve months of 2025](https://view.news.eu.nasdaq.com/view?id=bdb594d68cdc426e73ee5b759a1019358&lang=en&src=listed) | Open official announcement | -1.33% | -2.60% | -1.77% | -0.31% | -2.05% | No |
+| 2025-10-09 16:30 | Earnings | Lower profit | [Unaudited consolidated interim accounts for the third quarter and first nine months of 2025](https://view.news.eu.nasdaq.com/view?id=b7f84bf1933a01e0dbcc2c57c37261dd4&lang=en&src=listed) | Open official announcement | -0.11% | -0.11% | 0.11% | -0.22% | 0.35% | No |
+| 2025-07-09 16:30 | Earnings | Lower profit | [Unaudited consolidated interim accounts for the second quarter and first six months of 2025](https://view.news.eu.nasdaq.com/view?id=b0e9b59515a30f24019b036c6848e2d9a&lang=en&src=listed) | Open official announcement | 0.53% | -1.06% | -1.17% | -1.17% | -1.68% | No |
+| 2025-04-09 16:30 | Earnings | Lower profit | [Unaudited consolidated interim accounts for the first quarter of 2025](https://view.news.eu.nasdaq.com/view?id=b196cedf60b04cbc56aaa52950cddbcb3&lang=en&src=listed) | Open official announcement | -0.53% | -1.39% | -1.18% | 0.21% | -3.18% | Yes |
+| 2025-04-03 08:00 | Dividend payment | — | [Official dividend calendar: Dividend payment date, EUR 0.65 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.65  | -5.05% | 0.11% | -0.53% | -0.74% | 2.92% | No |
+| 2025-03-28 07:00 | Ex-dividend | — | [Official dividend calendar: Dividend ex-date, EUR 0.65 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.65  | -0.60% | -3.42% | -5.23% | -6.44% | -5.51% | No |
+| 2025-03-25 09:00 | Ex-dividend | — | [Dividend payment ex-date of TKM Grupp AS](https://view.news.eu.nasdaq.com/view?id=bbbedb7de4849789c6e21914ac4d518e7&lang=en&src=listed) | Open official announcement | -0.20% | -0.40% | -4.52% | -6.43% | -4.92% | Yes |
+| 2025-02-20 16:30 | Earnings | Unclassified earnings release | [Audited annual report 2024](https://view.news.eu.nasdaq.com/view?id=b68e6e54cfea7c627a3ea83f736c7f7d8&lang=en&src=listed) | Open official announcement | 0.00% | 0.00% | 0.10% | 0.81% | 0.42% | No |
+| 2025-01-16 16:30 | Earnings | Higher profit | [Unaudited consolidated interim accounts for the fourth quarter and twelve months of 2024](https://view.news.eu.nasdaq.com/view?id=bf8954469635fd3d51ed94439160b8ab2&lang=en&src=listed) | Open official announcement | 0.30% | -1.62% | -1.01% | 0.20% | -2.08% | No |
+| 2024-10-10 16:30 | Earnings | Lower profit | [Unaudited consolidated interim accounts for the third quarter and first nine months of 2024](https://view.news.eu.nasdaq.com/view?id=bb6e49742b476dde8dc28f2c00488ea8c&lang=en&src=listed) | Open official announcement | -0.42% | -0.74% | 0.74% | -2.63% | 0.05% | No |
+| 2024-07-10 16:30 | Earnings | Lower profit | [Unaudited consolidated interim accounts for the second quarter and first six months of 2024](https://view.news.eu.nasdaq.com/view?id=b661d26e2a9d8c9fbf93d926ec1570a6c&lang=en&src=listed) | Open official announcement | 2.11% | -1.34% | -0.21% | -1.44% | 0.52% | No |
+| 2024-04-10 16:30 | Earnings | Lower profit | [Unaudited consolidated interim accounts for the first quarter of 2024](https://view.news.eu.nasdaq.com/view?id=b3c0810db4b364f06ae7e966c4cda6d5e&lang=en&src=listed) | Open official announcement | 0.10% | -1.11% | -0.81% | -1.82% | 0.26% | No |
+| 2024-04-08 08:00 | Dividend payment | — | [Official dividend calendar: Dividend payment date, EUR 0.72 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.72  | -7.68% | 0.20% | -0.41% | -1.52% | -0.22% | No |
+| 2024-04-02 08:00 | Ex-dividend | — | [Official dividend calendar: Dividend ex-date, EUR 0.72 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.72  | 0.00% | -6.55% | -7.49% | -8.90% | -7.76% | Yes |
+| 2024-03-26 09:35 | Ex-dividend | — | [Dividend payment ex-date of Tallinna Kaubamaja Grupp AS](https://view.news.eu.nasdaq.com/view?id=b9c6e1e0b4a2d4ac37f829075b1ff419f&lang=en&src=listed) | Open official announcement | 0.19% | 0.19% | -7.60% | -8.82% | -7.51% | Yes |
+| 2024-02-21 16:30 | Earnings | Unclassified earnings release | [Audited annual report 2023](https://view.news.eu.nasdaq.com/view?id=bf0619fbd95f5185f235f8d6bfe671702&lang=en&src=listed) | Open official announcement | 2.74% | -0.95% | -0.95% | 1.71% | -1.99% | No |
+| 2024-01-18 16:30 | Earnings | Higher profit | [Unaudited consolidated interim accounts for the fourth quarter and twelve months of 2023](https://view.news.eu.nasdaq.com/view?id=b3022f8ae832f1399b0dde16e33aa4209&lang=en&src=listed) | Open official announcement | 3.03% | -0.78% | -1.57% | 1.37% | -0.52% | Yes |
+| 2023-10-11 16:30 | Earnings | Higher profit | [Unaudited consolidated interim accounts for the third quarter and first nine months of 2023](https://view.news.eu.nasdaq.com/view?id=b718d45e41deba535cb9d6c27d0b2b480&lang=en&src=listed) | Open official announcement | 0.82% | -0.20% | 0.10% | 0.20% | -0.16% | No |
+| 2023-07-12 16:30 | Earnings | Higher profit | [Unaudited consolidated interim accounts for the second quarter and first six months of 2023](https://view.news.eu.nasdaq.com/view?id=b205cc4450fb96adffd3a1ca00370fbbe&lang=en&src=listed) | Open official announcement | 0.81% | 0.60% | 0.60% | 0.60% | 0.41% | No |
+| 2023-04-12 16:30 | Earnings | Higher profit | [Unaudited consolidated interim accounts for the first quarter of 2023](https://view.news.eu.nasdaq.com/view?id=baccba5617cf059530047886bf21fb7d5&lang=en&src=listed) | Open official announcement | 0.00% | 0.20% | 0.10% | -0.10% | 0.22% | No |
+| 2023-04-05 08:00 | Dividend payment | — | [Official dividend calendar: Dividend payment date, EUR 0.68 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.68  | -5.82% | 0.30% | 0.00% | -0.30% | -0.02% | No |
+| 2023-03-30 08:00 | Ex-dividend | — | [Official dividend calendar: Dividend ex-date, EUR 0.68 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.68  | 0.19% | -5.53% | -5.53% | -6.30% | -5.26% | Yes |
+| 2023-03-27 09:30 | Ex-dividend | — | [Dividend payment ex-date of Tallinna Kaubamaja Grupp AS](https://view.news.eu.nasdaq.com/view?id=b2cb85346da34ac7e9532ce6a0cd7aa87&lang=en&src=listed) | Open official announcement | 0.19% | -0.19% | -6.19% | -6.38% | -5.87% | Yes |
+| 2023-02-21 16:30 | Earnings | Unclassified earnings release | [Audited annual report 2022](https://view.news.eu.nasdaq.com/view?id=bd66c155ba40261254f10f6a8ef347428&lang=en&src=listed) | Open official announcement | 0.00% | 0.39% | 0.20% | 2.95% | 0.65% | No |
+| 2023-01-19 16:30 | Earnings | Lower profit | [Unaudited consolidated interim accounts for the fourth quarter and twelve months of 2022](https://view.news.eu.nasdaq.com/view?id=b6dcd5e262fb119a6ff1c63157465af7e&lang=en&src=listed) | Open official announcement | -0.10% | 0.10% | 3.38% | 4.40% | 2.52% | No |
+
+</details>
+
+</details>
+
+<details markdown="1" class="earnings-outcomes">
+<summary>Profit outcome and subsequent price analysis (15 classified of 19 earnings releases)</summary>
+
+Higher/lower profit refers to the issuer's explicit comparison with the earlier comparable period. ‘In line / unchanged’ is used only when the issuer explicitly says that profit met a plan, forecast or expectation, or was unchanged. ‘Loss’ requires an explicit realised net or operating loss. Releases without such wording remain unclassified and are excluded from the conditional estimates.
+
+Variance is reported in squared percentage points. Abnormal return is the share return minus the equal-weight Baltic-market return over the same horizon.
+
+| Profit outcome | Horizon | N | Conditional mean | Variance | Median | Positive share | Mean abnormal | Abnormal variance | Median abnormal |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Higher profit | 1d | 5 | -0.36% | 0.757 | -0.20% | 40% | -0.36% | 0.963 | -0.44% |
+| Higher profit | 5d | 5 | -0.35% | 0.809 | 0.10% | 60% | -0.43% | 0.983 | -0.16% |
+| Higher profit | 21d | 5 | 0.46% | 0.325 | 0.20% | 80% | 0.71% | 6.991 | 1.57% |
+| Lower profit | 1d | 9 | -0.96% | 0.652 | -1.06% | 11% | -0.97% | 0.727 | -0.85% |
+| Lower profit | 5d | 9 | -0.08% | 2.315 | -0.21% | 44% | -0.41% | 2.835 | 0.05% |
+| Lower profit | 21d | 9 | -0.34% | 4.022 | -0.31% | 22% | -0.85% | 4.628 | -0.82% |
+| Loss | 1d | 1 | 0.00% | — | 0.00% | 0% | -0.26% | — | -0.26% |
+| Loss | 5d | 1 | -0.11% | — | -0.11% | 0% | -0.66% | — | -0.66% |
+| Loss | 21d | 1 | -0.86% | — | -0.86% | 0% | -1.28% | — | -1.28% |
+
+**Kruskal–Wallis test across the available outcome groups**
+
+| Horizon | Groups | N | H | Raw p | BH-adjusted p | Conclusion |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1d | 2 | 14 | 1.604 | 0.2053 | 0.6718 | No adjusted evidence |
+| 5d | 2 | 14 | 0.111 | 0.7389 | 0.9048 | No adjusted evidence |
+| 21d | 2 | 14 | 2.351 | 0.1252 | 0.5008 | No adjusted evidence |
+
+**Pairwise result:** No pairwise difference survives BH adjustment.
+
+The test describes historical association. Small groups, overlapping horizons and repeated releases from the same company limit causal interpretation.
+
+</details>
+
+</details>
+
+<details markdown="1">
+<summary>All five model frontiers with this share highlighted</summary>
+
+![TKM1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TKM1T_all_frontiers.png?v=1792850673)
+
+The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
+
+</details>
+
+<details markdown="1">
+<summary>All 72 PerformanceAnalytics measures: full period and last 126 observations</summary>
+
+| Measure | Full period | Last 126 | Measure | Full period | Last 126 |
+| --- | --- | --- | --- | --- | --- |
+| ActiveReturn | -0.245834 | -0.310996 | M2Sortino | -0.017525 | -0.073722 |
+| AdjustedSharpe | -0.134226 | -0.432526 | MSquaredExcess | -0.211143 | -0.273358 |
+| AnnualizedReturn_Arithmetic | -0.012415 | -0.070065 | Martin | -0.155489 | -1.561295 |
+| AnnualizedReturn_Geometric | -0.017144 | -0.073786 | MaximumDrawdown | 0.166757 | 0.073093 |
+| Appraisal | -0.262838 | -0.433794 | Modigliani | -0.000088 | -0.000381 |
+| ArithmeticReturn | -0.000049 | -0.000278 | NetSelectivity | -0.144689 | -0.247095 |
+| AverageDrawdown | 0.023401 | 0.013726 | Omega | 0.969178 | 0.815509 |
+| AverageDrawdownLength | 82.555556 | 14.250000 | OmegaExcessReturn | -0.046307 | -0.105275 |
+| AverageRecoveryTime | 44.555556 | 3.750000 | PainIndex | 0.101675 | 0.038140 |
+| BernardoLedoit | 0.969178 | 0.815509 | PainRatio | -0.168618 | -1.934643 |
+| BetaCoKurtosis | 0.039924 | -0.085886 | Prospect | -0.401935 | -0.332539 |
+| BetaCoSkewness | -1.540809 | -4.864661 | Rachev | 0.880477 | 0.702365 |
+| Burke | -0.105762 | -1.008522 | Selectivity | -0.025666 | -0.048390 |
+| CAPMAlpha | -0.000082 | -0.000183 | Sharpe_Annualized | -0.126771 | -0.618848 |
+| CAPMBeta | 0.037264 | -0.107062 | Sharpe_Daily | -0.007986 | -0.038984 |
+| CDD | 0.039836 | 0.036170 | Sharpe_ES | -0.003171 | -0.016895 |
+| Calmar | -0.102810 | -1.009492 | Sharpe_VaR | -0.007722 | -0.063843 |
+| CoKurtosis | 0.000000 | -0.000000 | Skewness | -4.229134 | -6.723593 |
+| CoSkewness | -0.000000 | -0.000000 | Sortino | -0.009672 | -0.042768 |
+| CumulativeReturn | -0.050426 | -0.037600 | SpecificRisk | 0.097650 | 0.111551 |
+| DRatio | 0.990667 | 1.251775 | Sterling | -0.064269 | -0.426283 |
+| DownCapture | 0.041769 | -0.056174 | SystematicRisk | 0.006543 | -0.016591 |
+| DownNumber | 0.405660 | 0.339623 | TotalRisk | 0.097869 | 0.112778 |
+| DownPercent | 0.874214 | 0.981132 | TrackingError_Annualized | 0.195262 | 0.204876 |
+| DownsideDeviation | 0.005094 | 0.006501 | TrackingError_Daily | 0.012300 | 0.012906 |
+| DrawdownDeviation | 0.006125 | 0.006796 | Treynor_Annualized | -0.460079 | 0.689191 |
+| ES_Loss | 0.015537 | 0.016457 | Treynor_Daily | -0.001841 | 0.002841 |
+| FamaBeta | 0.557720 | 0.730614 | UlcerIndex | 0.110261 | 0.047260 |
+| GeometricReturn | -0.000069 | -0.000304 | UpCapture | 0.021561 | -0.109462 |
+| Hurst | 0.417854 | 0.513366 | UpNumber | 0.396789 | 0.328767 |
+| Information_Annualized | -1.258994 | -1.517972 | UpPercent | 0.135321 | 0.136986 |
+| Information_Daily | -0.072047 | -0.089041 | UpsidePotential | 0.304138 | 0.189048 |
+| JensenAlpha | -0.025666 | -0.048390 | UpsideRisk | 0.003474 | 0.002877 |
+| Kappa | -0.004701 | -0.020380 | VaR_Loss | 0.006380 | 0.004355 |
+| Kelly | -1.294455 | -5.465959 | Volatility | 0.006169 | 0.007132 |
+| Kurtosis | 48.615014 | 65.326639 | Volatility_Annualized | 0.097934 | 0.113219 |
+
+</details>
+
+<details markdown="1" class="portfolio-sensitivity">
+<summary>Portfolio sensitivity</summary>
+
+**Removing this share from curent_update_baltic**
+
+<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.762712</td><td>-0.050847</td></tr><tr><td>OUT</td><td>96</td><td>90</td><td>-6</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.207303</td><td>0.059529</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.181595</td><td>0.020102</td></tr></tbody></table>
+
+The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
+
+**Increasing this existing position in the current portfolio**
+
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>TKM1T shares</td><td>288</td><td>293</td><td>+5</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>7956.799965</td><td>44.499998</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.406780</td><td>-0.050847</td></tr><tr><td>OUT</td><td>62</td><td>60</td><td>-2</td></tr><tr><td>IN</td><td>8</td><td>12</td><td>+4</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.069018</td><td>-0.001155</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.090773</td><td>-0.000382</td></tr></tbody></table>
+
+The starting point is the unmodified current portfolio, which already contains 288 TKM1T shares. The scenario adds 5 shares from Table 3A, resulting in 293 shares; every other holding remains unchanged.
+
+<details markdown="1" class="dominance-components">
+<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
+
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Choose S&P 500, Current or any model portfolio as the benchmark for the difference panels.
+
+<div class="dominance-explorer" data-asset="TKM1T"><p>Open this section to load the interactive curve explorer.</p></div>
+
+<details markdown="1" class="static-dominance">
+<summary>High-resolution static FSD, SSD and TSD figure</summary>
+
+![TKM1T high-resolution stochastic dominance](figures/stock_profiles/TKM1T_FSD_SSD_TSD.png?v=1792850993)
+
+The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
+
+</details>
+
+</details>
+
+</details>
+
+</details>
+
+<details markdown="1" class="stock-profile" id="share-cpa1t" data-signal="SKIP" data-netsd-effect="DECREASE">
+<summary><strong>CPA1T — Coop Pank</strong> | current action: SKIP | allocation target 11 shares | netSD diagnostic rank 19</summary>
+
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>Execution rationale</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>11</td><td>+11</td><td>0.18%</td><td>EUR 2.3850</td><td>0.0593</td><td>30 / 23</td><td>62.27</td><td>Bullish</td><td>Inside bands</td><td>0.669 (Neutral)</td><td>HOLD</td><td>BUY</td><td>SKIP</td><td>Do not execute: proposed purchase is below EUR 100 or below 1% target weight.</td><td>0.000003 (0.004% of portfolio HHI)</td><td>EUR 81,735</td><td>0.0%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
 ![CPA1T Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/CPA1T_technicals_6m.png)
 
@@ -4448,7 +4723,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 | --- | --- | --- | --- |
 | EUR 2.3850 | EUR 2.2932 (-3.85%) | EUR 2.3948 (+0.41%) | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires both a positive allocation change and a BUY technical timing signal; WAIT means the model wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires an economically material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -4699,10 +4974,10 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-tel1l" data-signal="WAIT" data-netsd-effect="DECREASE">
-<summary><strong>TEL1L — Telia Lietuva</strong> | current action: WAIT | allocation target 46 shares | priority 19</summary>
+<details markdown="1" class="stock-profile" id="share-tel1l" data-signal="SKIP" data-netsd-effect="DECREASE">
+<summary><strong>TEL1L — Telia Lietuva</strong> | current action: SKIP | allocation target 46 shares | netSD diagnostic rank 20</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>46</td><td>+46</td><td>0.69%</td><td>EUR 2.2300</td><td>0.1356</td><td>40 / 24</td><td>44.08</td><td>Bearish</td><td>Inside bands</td><td>0.000 (Oversold)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>0.000047 (0.058% of portfolio HHI)</td><td>EUR 56,454</td><td>0.2%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>Execution rationale</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>46</td><td>+46</td><td>0.69%</td><td>EUR 2.2300</td><td>0.1356</td><td>40 / 24</td><td>44.08</td><td>Bearish</td><td>Inside bands</td><td>0.000 (Oversold)</td><td>HOLD</td><td>BUY</td><td>SKIP</td><td>Do not execute: proposed purchase is below EUR 100 or below 1% target weight.</td><td>0.000047 (0.058% of portfolio HHI)</td><td>EUR 56,454</td><td>0.2%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
 ![TEL1L Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/TEL1L_technicals_6m.png)
 
@@ -4714,7 +4989,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 | --- | --- | --- | --- |
 | EUR 2.2300 | EUR 2.2008 (-1.31%) | EUR 2.3022 (+3.24%) | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires both a positive allocation change and a BUY technical timing signal; WAIT means the model wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires an economically material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -4907,10 +5182,10 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-hae1t" data-signal="WAIT" data-netsd-effect="DECREASE">
-<summary><strong>HAE1T — Harju Elekter Group</strong> | current action: WAIT | allocation target 107 shares | priority 20</summary>
+<details markdown="1" class="stock-profile" id="share-hae1t" data-signal="SKIP" data-netsd-effect="DECREASE">
+<summary><strong>HAE1T — Harju Elekter Group</strong> | current action: SKIP | allocation target 107 shares | netSD diagnostic rank 21</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>100</td><td>107</td><td>+7</td><td>3.83%</td><td>EUR 5.3600</td><td>0.1102</td><td>37 / 24</td><td>54.56</td><td>Bullish</td><td>Inside bands</td><td>0.296 (Neutral)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>0.001464 (1.783% of portfolio HHI)</td><td>EUR 17,505</td><td>0.2%</td><td>1.2%</td><td>MEDIUM</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>Execution rationale</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>100</td><td>107</td><td>+7</td><td>3.83%</td><td>EUR 5.3600</td><td>0.1102</td><td>37 / 24</td><td>54.56</td><td>Bullish</td><td>Inside bands</td><td>0.296 (Neutral)</td><td>HOLD</td><td>BUY</td><td>SKIP</td><td>Do not execute: proposed purchase is below EUR 100 or below 1% target weight.</td><td>0.001464 (1.783% of portfolio HHI)</td><td>EUR 17,505</td><td>0.2%</td><td>1.2%</td><td>MEDIUM</td></tr></tbody></table>
 
 ![HAE1T Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/HAE1T_technicals_6m.png)
 
@@ -4922,7 +5197,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 | --- | --- | --- | --- |
 | EUR 5.3600 | EUR 5.0664 (-5.48%) | EUR 5.4716 (+2.08%) | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires both a positive allocation change and a BUY technical timing signal; WAIT means the model wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires an economically material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -5169,10 +5444,10 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-tve1t" data-signal="WAIT" data-netsd-effect="DECREASE">
-<summary><strong>TVE1T — Tallinna Vesi</strong> | current action: WAIT | allocation target 4 shares | priority 21</summary>
+<details markdown="1" class="stock-profile" id="share-tve1t" data-signal="SKIP" data-netsd-effect="DECREASE">
+<summary><strong>TVE1T — Tallinna Vesi</strong> | current action: SKIP | allocation target 4 shares | netSD diagnostic rank 22</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>4</td><td>+4</td><td>0.29%</td><td>EUR 10.9000</td><td>0.0763</td><td>33 / 24</td><td>52.60</td><td>Bullish</td><td>Inside bands</td><td>0.967 (Overbought)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>0.000008 (0.010% of portfolio HHI)</td><td>EUR 14,562</td><td>0.3%</td><td>1.2%</td><td>MEDIUM</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>Execution rationale</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>4</td><td>+4</td><td>0.29%</td><td>EUR 10.9000</td><td>0.0763</td><td>33 / 24</td><td>52.60</td><td>Bullish</td><td>Inside bands</td><td>0.967 (Overbought)</td><td>HOLD</td><td>BUY</td><td>SKIP</td><td>Do not execute: proposed purchase is below EUR 100 or below 1% target weight.</td><td>0.000008 (0.010% of portfolio HHI)</td><td>EUR 14,562</td><td>0.3%</td><td>1.2%</td><td>MEDIUM</td></tr></tbody></table>
 
 ![TVE1T Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/TVE1T_technicals_6m.png)
 
@@ -5184,7 +5459,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 | --- | --- | --- | --- |
 | EUR 10.9000 | EUR 10.8103 (-0.82%) | EUR 10.9247 (+0.23%) | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires both a positive allocation change and a BUY technical timing signal; WAIT means the model wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires an economically material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -5431,10 +5706,10 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-lhv1t" data-signal="WAIT" data-netsd-effect="DECREASE">
-<summary><strong>LHV1T — LHV Group</strong> | current action: WAIT | allocation target 39 shares | priority 22</summary>
+<details markdown="1" class="stock-profile" id="share-lhv1t" data-signal="SKIP" data-netsd-effect="DECREASE">
+<summary><strong>LHV1T — LHV Group</strong> | current action: SKIP | allocation target 39 shares | netSD diagnostic rank 23</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>39</td><td>+39</td><td>0.87%</td><td>EUR 3.2750</td><td>0.0678</td><td>32 / 24</td><td>46.95</td><td>Bullish</td><td>Inside bands</td><td>0.609 (Neutral)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>0.000075 (0.091% of portfolio HHI)</td><td>EUR 267,157</td><td>0.0%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>Execution rationale</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>39</td><td>+39</td><td>0.87%</td><td>EUR 3.2750</td><td>0.0678</td><td>32 / 24</td><td>46.95</td><td>Bullish</td><td>Inside bands</td><td>0.609 (Neutral)</td><td>HOLD</td><td>BUY</td><td>SKIP</td><td>Do not execute: proposed purchase is below EUR 100 or below 1% target weight.</td><td>0.000075 (0.091% of portfolio HHI)</td><td>EUR 267,157</td><td>0.0%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
 ![LHV1T Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/LHV1T_technicals_6m.png)
 
@@ -5446,7 +5721,7 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 | --- | --- | --- | --- |
 | EUR 3.2750 | EUR 3.2478 (-0.83%) | EUR 3.2977 (+0.69%) | HOLD |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires both a positive allocation change and a BUY technical timing signal; WAIT means the model wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires an economically material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -5699,12 +5974,12 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-saf1r" data-signal="HOLD" data-netsd-effect="UNCHANGED">
-<summary><strong>SAF1R — SAF Tehnika</strong> | current action: HOLD | allocation target 100 shares | priority 23</summary>
+<details markdown="1" class="stock-profile" id="share-ewa1l" data-signal="SKIP" data-netsd-effect="UNCHANGED">
+<summary><strong>EWA1L — East West Agro</strong> | current action: SKIP | allocation target 3 shares | netSD diagnostic rank 24</summary>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>100</td><td>100</td><td>+0</td><td>10.80%</td><td>EUR 16.2000</td><td>-0.1356</td><td>10 / 26</td><td>42.00</td><td>Bearish</td><td>Inside bands</td><td>0.000 (Oversold)</td><td>HOLD</td><td>HOLD</td><td>HOLD</td><td>0.011664 (14.207% of portfolio HHI)</td><td>EUR 7,987</td><td>0.0%</td><td>2.4%</td><td>MEDIUM</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>Execution rationale</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>3</td><td>+3</td><td>0.40%</td><td>EUR 15.6000</td><td>0.0085</td><td>30 / 29</td><td>49.97</td><td>Bullish</td><td>Below lower band</td><td>0.000 (Oversold)</td><td>BUY</td><td>BUY</td><td>SKIP</td><td>Do not execute: proposed purchase is below EUR 100 or below 1% target weight.</td><td>0.000016 (0.020% of portfolio HHI)</td><td>EUR 290</td><td>16.1%</td><td>16.3%</td><td>HIGH</td></tr></tbody></table>
 
-![SAF1R Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/SAF1R_technicals_6m.png)
+![EWA1L Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/EWA1L_technicals_6m.png)
 
 Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
 
@@ -5712,21 +5987,21 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 | Current price | Buy below | Sell above | Bollinger price zone |
 | --- | --- | --- | --- |
-| EUR 16.2000 | EUR 16.0037 (-1.21%) | EUR 17.1263 (+5.72%) | HOLD |
+| EUR 15.6000 | EUR 15.6000 (+0.00%) | EUR 15.6000 (+0.00%) | BUY |
 
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires both a positive allocation change and a BUY technical timing signal; WAIT means the model wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD.
+Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires an economically material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
 
-![SAF1R complete technical history](figures/technical_analysis/SAF1R_technical.png)
+![EWA1L complete technical history](figures/technical_analysis/EWA1L_technical.png)
 
 </details>
 
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![SAF1R return histogram](figures/stock_profiles/SAF1R_histogram.png?v=1792850133)
+![EWA1L return histogram](figures/stock_profiles/EWA1L_histogram.png?v=1792850133)
 
 </details>
 
@@ -5737,91 +6012,87 @@ The analysis covers 962 daily returns from 2023-01-02 to 2026-10-23. Statistical
 
 | Measure | Value | Measure | Value | Measure | Value |
 | --- | --- | --- | --- | --- | --- |
-| Maximum drawdown | -68.54% (2024-09-02) | Average gain / average loss | 1.166 | Best 21-day period | 37.91% (ending 2026-02-12) |
-| Average underwater drawdown | 42.53% | Upside potential ratio | 1.172 | Worst 21-day period | -33.33% (ending 2023-11-13) |
-| Conditional drawdown 95% | 65.81% | Upside capture vs Baltic EW | 95.0% | Best 5-day period | 25.62% (ending 2026-02-12) |
-| Ulcer index | 46.43 | Downside capture vs Baltic EW | 62.7% | Best 63-day period | 64.24% (ending 2026-02-12) |
-| Longest underwater period | 1288 calendar days | Positive trading days | 36.8% | Repeated calendar pattern | Jan: 75% positive across 4 years |
-| Daily downside deviation | 1.370% | Best day | 20.83% (2026-02-12) |  |  |
-| Daily upside deviation | 1.561% | Worst day | -18.64% (2023-11-09) |  |  |
+| Maximum drawdown | -28.16% (2024-11-21) | Average gain / average loss | 1.108 | Best 21-day period | 20.24% (ending 2023-04-06) |
+| Average underwater drawdown | 19.70% | Upside potential ratio | 2.346 | Worst 21-day period | -12.62% (ending 2023-06-05) |
+| Conditional drawdown 95% | 25.83% | Upside capture vs Baltic EW | 44.5% | Best 5-day period | 17.65% (ending 2023-03-30) |
+| Ulcer index | 20.59 | Downside capture vs Baltic EW | 44.0% | Best 63-day period | 27.85% (ending 2023-05-09) |
+| Longest underwater period | 1268 calendar days | Positive trading days | 13.3% | Repeated calendar pattern | May: 0% positive across 4 years |
+| Daily downside deviation | 0.775% | Best day | 9.41% (2023-10-11) |  |  |
+| Daily upside deviation | 0.908% | Worst day | -6.45% (2023-10-18) |  |  |
 
 **Calendar-effect tests and observed averages**
 
 | Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
 | --- | --- | --- | --- | --- |
-| Weekday | Best: Wednesday (0.174%); worst: Thursday (-0.173%) | 0.6453 | 0.6911 | Not detected |
-| Calendar month | Best: Jan (0.453% daily); worst: Nov (-0.364% daily) | 0.3172 | 0.5319 | Not detected |
-| Turn of month | First/last three days: -0.003%; other days: 0.058% | 0.9054 | 0.9307 | Not detected |
+| Weekday | Best: Tuesday (0.052%); worst: Monday (-0.052%) | 0.3855 | 0.5140 | Not detected |
+| Calendar month | Best: Mar (0.151% daily); worst: May (-0.142% daily) | 0.6798 | 0.7770 | Not detected |
+| Turn of month | First/last three days: 0.091%; other days: -0.017% | 0.9307 | 0.9307 | Not detected |
 
-![SAF1R seasonality, drawdowns and upside periods](figures/stock_profiles/SAF1R_seasonality.png?v=1792850803)
+![EWA1L seasonality, drawdowns and upside periods](figures/stock_profiles/EWA1L_seasonality.png?v=1792850891)
 
 **Five deepest drawdown episodes**
 
 | Rank | Peak | Trough | Recovery | Loss | Underwater days |
 | --- | --- | --- | --- | --- | --- |
-| 1 | 2023-02-08 | 2024-09-02 | 2026-08-19 | -68.54% | 1288 |
-| 2 | 2026-09-08 | 2026-09-28 | Not recovered | -10.36% | 45 |
-| 3 | 2026-08-20 | 2026-08-24 | 2026-08-25 | -2.23% | 5 |
-| 4 | 2023-02-01 | 2023-02-02 | 2023-02-06 | -1.75% | 5 |
-| 5 | 2023-01-27 | 2023-01-30 | 2023-01-31 | -1.06% | 4 |
+| 1 | 2023-05-04 | 2024-11-21 | Not recovered | -28.16% | 1268 |
+| 2 | 2023-03-30 | 2023-03-31 | 2023-04-04 | -5.50% | 5 |
+| 3 | 2023-02-02 | 2023-02-06 | 2023-02-23 | -4.24% | 21 |
+| 4 | 2023-04-19 | 2023-05-02 | 2023-05-04 | -3.92% | 15 |
+| 5 | 2023-03-15 | 2023-03-16 | 2023-03-29 | -2.86% | 14 |
 
 **Five strongest non-overlapping 21-trading-day rises**
 
 | Rank | Start | End | 21-day return |
 | --- | --- | --- | --- |
-| 1 | 2026-01-14 | 2026-02-12 | 37.91% |
-| 2 | 2026-08-04 | 2026-09-02 | 36.47% |
-| 3 | 2024-09-02 | 2024-10-01 | 25.39% |
-| 4 | 2026-04-15 | 2026-05-18 | 24.44% |
-| 5 | 2025-12-01 | 2026-01-06 | 20.97% |
+| 1 | 2023-03-09 | 2023-04-11 | 20.24% |
+| 2 | 2023-07-04 | 2023-08-02 | 9.88% |
+| 3 | 2023-09-13 | 2023-10-12 | 8.77% |
+| 4 | 2023-02-06 | 2023-03-07 | 7.59% |
+| 5 | 2023-11-22 | 2023-12-21 | 6.13% |
 
 The dated extremes identify where company announcements, dividends, corporate actions or data anomalies should be checked. A repeated calendar average is descriptive until it survives the adjusted test and a later out-of-sample period; it is not by itself a buy or sell signal.
 
 <details markdown="1" class="company-events">
-<summary>Official company-news calendar and price-direction analysis (20 events)</summary>
+<summary>Official company-news calendar and price-direction analysis (14 events)</summary>
 
 Announcement times and links come from the official Nasdaq news service. The effective date is the first trading close strictly after publication. Abnormal return means the share return minus the equal-weight Baltic-market return over the same window.
 
 | Event type | N | Abnormal 1d | Abnormal 5d | Abnormal 21d | Positive 5d | Direction reversal | BH p(5d) | BH p(21d) | Interpretation |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Earnings | 20 | -0.67% | -1.00% | -0.57% | 35% | 50% | 0.6958 | 1.0000 | No adjusted statistical evidence |
+| Dividend announcement | 3 | 0.51% | -0.25% | -2.10% | 33% | 33% | 1.0000 | 0.5608 | No adjusted statistical evidence |
+| Earnings | 8 | -0.07% | 0.24% | 0.47% | 62% | 12% | 1.0000 | 0.8133 | No adjusted statistical evidence |
+| Ex-dividend | 3 | -2.09% | -1.93% | -4.06% | 33% | 67% | 0.4288 | 0.3466 | No adjusted statistical evidence; price drop may be mechanical |
 
-![SAF1R official announcements and abnormal returns](figures/stock_profiles/SAF1R_company_events.png?v=1792850845)
+![EWA1L official announcements and abnormal returns](figures/stock_profiles/EWA1L_company_events.png?v=1792850897)
 
 A direction reversal requires opposite fitted price slopes during the ten trading days before and after the event and at least a 1% five-day move. This identifies temporal association, not proof that the announcement caused the change.
 
 <details markdown="1">
-<summary>Complete official event calendar (20 announcements)</summary>
+<summary>Complete official event calendar (14 announcements)</summary>
 
 | Published | Type | Profit outcome | Official announcement | Headline fundamental cue | Pre 5d | Post 1d | Post 5d | Post 21d | Abnormal 5d | Reversal |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2026-08-12 19:40 | Earnings | In line / unchanged | [SAF Tehnika Consolidated Interim Report for Q4 and 12 months of financial year 2025/26](https://view.news.eu.nasdaq.com/view?id=b6dbfb705adc56a5a2d8212074bd9a9c4&lang=en&src=listed) | Open official announcement | 2.33% | 6.44% | 11.74% | 32.95% | 11.68% | No |
-| 2026-05-13 17:12 | Earnings | In line / unchanged | [SAF Tehnika Consolidated Interim Report for Q3 and 9 months of financial year 2025/2026](https://view.news.eu.nasdaq.com/view?id=bf23fdbdcd9a33ae254b37b9dab7f3fa5&lang=en&src=listed) | Open official announcement | 8.37% | 10.40% | 3.96% | 8.91% | 4.53% | Yes |
-| 2026-02-11 16:52 | Earnings | In line / unchanged | [SAF Tehnika Consolidated Interim Report for Q2 and 6 months of financial year 2025/26](https://view.news.eu.nasdaq.com/view?id=b02ed5558ff45d9e37e3a2570ce3084c4&lang=en&src=listed) | Open official announcement | 5.26% | 20.83% | 18.33% | 18.81% | 17.53% | Yes |
-| 2025-11-13 13:55 | Earnings | In line / unchanged | [CORRECTION: SAF Tehnika Consolidated Interim Report for Q1 of financial year 2025/2026](https://view.news.eu.nasdaq.com/view?id=b35a4318c79efa3a19972b4f3129552fb&lang=en&src=listed) | Open official announcement | 7.67% | 4.33% | -0.62% | 2.17% | -0.31% | No |
-| 2025-11-12 16:33 | Earnings | In line / unchanged | [SAF Tehnika Consolidated Interim Report for Q1 of financial year 2025/2026](https://view.news.eu.nasdaq.com/view?id=b540077f1991eacad050b6e33e4250b95&lang=en&src=listed) | Open official announcement | 7.38% | 0.94% | 3.12% | 3.12% | 2.85% | Yes |
-| 2025-10-31 16:24 | Earnings | Loss | [Audited statements and Corporate Governance report of „SAF Tehnika” for financial year 2024/2025](https://view.news.eu.nasdaq.com/view?id=b98de5f8c40da1022d780a90eb945a16c&lang=en&src=listed) | Open official announcement | 0.00% | -0.34% | 1.02% | 5.08% | 1.38% | No |
-| 2025-08-13 17:24 | Earnings | Loss | [SAF Tehnika Consolidated Interim Report for Q4 and 12 months of financial year 2024/2025](https://view.news.eu.nasdaq.com/view?id=bb1bdf4aecccec00ce5e71431676f8dab&lang=en&src=listed) | Open official announcement | -0.34% | -2.69% | -3.03% | -4.04% | -3.23% | No |
-| 2025-05-14 16:32 | Earnings | Loss | [SAF Tehnika Consolidated Interim Report for Q3 and 9 months of financial year 2024/2025](https://view.news.eu.nasdaq.com/view?id=bef9af568b7d0e6b2e4eab137fd651d80&lang=en&src=listed) | Open official announcement | 2.65% | -0.97% | -1.29% | -3.55% | -2.52% | Yes |
-| 2025-02-12 20:31 | Earnings | Unclassified earnings release | [SAF Tehnika Consolidated Interim Report for Q2 and 6 months of financial year 2024/2025](https://view.news.eu.nasdaq.com/view?id=b878f717c62e3ac66ead34aa7f7405e49&lang=en&src=listed) | Open official announcement | 14.38% | -11.70% | -9.36% | -4.68% | -9.29% | Yes |
-| 2024-11-13 16:12 | Earnings | In line / unchanged | [SAF Tehnika Consolidated Interim Report for Q1 of financial year 2024/2025](https://view.news.eu.nasdaq.com/view?id=b26ad79c70b2d7497662066f4c625dcd2&lang=en&src=listed) | Open official announcement | -2.60% | 9.16% | 8.40% | 3.05% | 9.02% | Yes |
-| 2024-10-31 17:07 | Earnings | Lower profit | [SAF Tehnika Annual report/ annual accounts](https://view.news.eu.nasdaq.com/view?id=b44739b9bbbc6603729654ab15873e65f&lang=en&src=listed) | Open official announcement | -3.65% | -2.65% | 2.27% | 6.06% | 2.21% | Yes |
-| 2024-08-15 08:17 | Earnings | Unclassified earnings release | [CORRECTION: SAF Tehnika Consolidated Interim Report for Q4 and 12 months of financial year 2023/24](https://view.news.eu.nasdaq.com/view?id=b9ab59f7e88006865d1f036d745bdfe49&lang=en&src=listed) | Open official announcement | -2.83% | 1.87% | -0.42% | 1.67% | -0.43% | No |
-| 2024-08-14 18:13 | Earnings | Unclassified earnings release | [SAF Tehnika Consolidated Interim Report for Q4 and 12 months of financial year 2023/24](https://view.news.eu.nasdaq.com/view?id=b832fb26e029dffebb49fcae36dcfef8d&lang=en&src=listed) | Open official announcement | 4.08% | -5.88% | -4.90% | -3.92% | -4.94% | Yes |
-| 2024-05-15 18:39 | Earnings | Unclassified earnings release | [SAF Tehnika Consolidated Interim Report for Q3 and 9 months of financial year 2023/24](https://view.news.eu.nasdaq.com/view?id=bccb21f99dda64f7127d52fdefd06fffb&lang=en&src=listed) | Open official announcement | -5.32% | -5.26% | -4.56% | -1.75% | -4.07% | Yes |
-| 2024-02-07 16:10 | Earnings | Unclassified earnings release | [SAF Tehnika Consolidated Interim Report for Q2 and 6 months of financial year 2023/2024](https://view.news.eu.nasdaq.com/view?id=b933e6fc3d29593875f2b783771aec234&lang=en&src=listed) | Open official announcement | 2.98% | 0.87% | -2.31% | -4.62% | -2.84% | Yes |
-| 2023-11-08 17:54 | Earnings | Unclassified earnings release | [SAF Tehnika Consolidated Interim Report for Q1 of financial year 2023/2024](https://view.news.eu.nasdaq.com/view?id=bd38500cc9d337eec761580c66addb075&lang=en&src=listed) | Open official announcement | 0.49% | -18.64% | -28.54% | -32.04% | -27.66% | No |
-| 2023-10-31 17:09 | Earnings | Unclassified earnings release | [SAF Tehnika Annual report/ annual accounts](https://view.news.eu.nasdaq.com/view?id=b879ddaf736be7655aab019ff280cc43e&lang=en&src=listed) | Open official announcement | -0.48% | -0.97% | -0.48% | -31.98% | -0.02% | No |
-| 2023-08-09 16:52 | Earnings | Unclassified earnings release | [SAF Tehnika Consolidated Interim Report for Q4 and 12 months of financial year 2022/23](https://view.news.eu.nasdaq.com/view?id=b8f1ba98f95dd8dc572a11bbfc92e0297&lang=en&src=listed) | Open official announcement | 3.85% | -5.09% | -2.31% | 1.85% | -2.20% | No |
-| 2023-05-10 17:28 | Earnings | Unclassified earnings release | [SAF Tehnika Consolidated Interim Report for Q3 and 9 months of financial year 2022/23](https://view.news.eu.nasdaq.com/view?id=b051cba22c4aa74b8913b2aded5d5490a&lang=en&src=listed) | Open official announcement | 1.12% | -12.59% | -9.63% | -12.22% | -7.58% | No |
-| 2023-02-08 17:58 | Earnings | Unclassified earnings release | [SAF Tehnika Consolidated Interim Report for Q2 and 6 months of financial year 2022/23](https://view.news.eu.nasdaq.com/view?id=b0b3584534020b3c13c60d9807bba6185&lang=en&src=listed) | Open official announcement | 0.70% | -5.90% | -4.51% | -6.25% | -4.19% | No |
+| 2026-04-08 15:03 | Earnings | Unclassified earnings release | [AB East West Agro Notice on audited financial statements for 2025](https://view.news.eu.nasdaq.com/view?id=b9bf072d61fc052bbf06afce59617ece2&lang=en&src=listed) | Open official announcement | 0.00% | 0.00% | 0.00% | 0.00% | -1.25% | No |
+| 2026-02-27 16:31 | Earnings | Higher profit | [„East West Agro“ JSC 12-Month Activity Report and Unaudited Financial Statements for 2025](https://view.news.eu.nasdaq.com/view?id=b59c6063b34ed09677a36d4601b01f21c&lang=en&src=listed) | Open official announcement | 0.00% | 0.00% | 0.00% | 0.00% | 0.88% | No |
+| 2025-08-26 14:44 | Earnings | Unclassified earnings release | [Interim report for 6 months of 2025](https://view.news.eu.nasdaq.com/view?id=b933e737d302fa85413c328f86abb98c6&lang=en&src=listed) | Open official announcement | 0.00% | 0.00% | 0.00% | 0.00% | 0.00% | No |
+| 2025-05-09 08:00 | Ex-dividend | — | [Official dividend calendar: Dividend ex-date, EUR 0.8 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.8  | 0.00% | 0.00% | 0.00% | 0.00% | 0.23% | No |
+| 2025-04-28 09:24 | Dividend announcement | — | [Procedure for the payment of dividends for the year 2024](https://view.news.eu.nasdaq.com/view?id=bc4cc814ec86d2a4718103e79e4337f2d&lang=en&src=listed) | Open official announcement | 0.00% | 0.00% | 0.00% | 0.00% | -1.23% | No |
+| 2025-02-28 11:45 | Earnings | Lower profit | [AB East West Agro interim report for 12 months of 2024](https://view.news.eu.nasdaq.com/view?id=b03a9d268c95cf32861e04996b6bbd72c&lang=en&src=listed) | Open official announcement | -2.53% | 1.30% | 1.30% | 1.30% | 1.30% | No |
+| 2024-08-29 09:10 | Earnings | Unclassified earnings release | [Interim report for 6 months of 2024](https://view.news.eu.nasdaq.com/view?id=bf8d3bfa95ca753919b6378cdf88ac51c&lang=en&src=listed) | Open official announcement | -2.58% | -1.32% | 3.97% | 4.64% | 4.18% | Yes |
+| 2024-05-14 08:00 | Ex-dividend | — | [Official dividend calendar: Dividend ex-date, EUR 0.8 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.8  | -1.16% | -2.92% | -3.51% | -3.51% | -2.43% | Yes |
+| 2024-05-06 13:46 | Dividend announcement | — | [Procedure for the payment of dividends for the year 2023](https://view.news.eu.nasdaq.com/view?id=b1e22ae077381d95285ab7901460cbbfd&lang=en&src=listed) | Open official announcement | -0.58% | 0.00% | -3.49% | -2.33% | -2.53% | Yes |
+| 2024-02-27 16:30 | Earnings | Lower profit | [AB East West Agro interim report for 12 months of 2022](https://view.news.eu.nasdaq.com/view?id=bcc706af5503af1f9afb403a8ee031e61&lang=en&src=listed) | Open official announcement | 1.68% | 0.00% | -1.65% | -4.40% | -1.79% | No |
+| 2023-08-29 09:11 | Earnings | Unclassified earnings release | [Interim report for 6 months of 2023](https://view.news.eu.nasdaq.com/view?id=b1aca317cd481d2f2c68bd60544dbf802&lang=en&src=listed) | Open official announcement | -1.58% | 0.00% | -3.21% | -9.09% | -2.82% | No |
+| 2023-05-12 08:00 | Ex-dividend | — | [Official dividend calendar: Dividend ex-date, EUR 1.7 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 1.7  | -2.91% | -4.50% | -5.00% | -11.00% | -3.58% | Yes |
+| 2023-05-02 13:48 | Dividend announcement | — | [Procedure for the payment of dividends for the year 2022](https://view.news.eu.nasdaq.com/view?id=b58da8597730f5d97e40ce7c411608d7d&lang=en&src=listed) | Open official announcement | -1.51% | 2.04% | 3.06% | -5.10% | 2.99% | No |
+| 2023-02-23 13:07 | Earnings | Higher profit | [CORRECTION: AB East West Agro interim report for 12 months of 2022](https://view.news.eu.nasdaq.com/view?id=b04f119068db48df42f5bca9d0530005d&lang=en&src=listed) | Open official announcement | 3.70% | 0.00% | 1.19% | 3.57% | 1.39% | No |
 
 </details>
 
 </details>
 
 <details markdown="1" class="earnings-outcomes">
-<summary>Profit outcome and subsequent price analysis (10 classified of 20 earnings releases)</summary>
+<summary>Profit outcome and subsequent price analysis (4 classified of 8 earnings releases)</summary>
 
 Higher/lower profit refers to the issuer's explicit comparison with the earlier comparable period. ‘In line / unchanged’ is used only when the issuer explicitly says that profit met a plan, forecast or expectation, or was unchanged. ‘Loss’ requires an explicit realised net or operating loss. Releases without such wording remain unclassified and are excluded from the conditional estimates.
 
@@ -5829,23 +6100,20 @@ Variance is reported in squared percentage points. Abnormal return is the share 
 
 | Profit outcome | Horizon | N | Conditional mean | Variance | Median | Positive share | Mean abnormal | Abnormal variance | Median abnormal |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Lower profit | 1d | 1 | -2.65% | — | -2.65% | 0% | -2.22% | — | -2.22% |
-| Lower profit | 5d | 1 | 2.27% | — | 2.27% | 100% | 2.21% | — | 2.21% |
-| Lower profit | 21d | 1 | 6.06% | — | 6.06% | 100% | 8.91% | — | 8.91% |
-| In line / unchanged | 1d | 6 | 8.68% | 46.946 | 7.80% | 100% | 8.63% | 45.242 | 8.27% |
-| In line / unchanged | 5d | 6 | 7.49% | 46.751 | 6.18% | 83% | 7.55% | 42.335 | 6.78% |
-| In line / unchanged | 21d | 6 | 11.50% | 149.803 | 6.02% | 100% | 11.30% | 169.355 | 6.06% |
-| Loss | 1d | 3 | -1.33% | 1.486 | -0.97% | 0% | -1.40% | 1.549 | -1.30% |
-| Loss | 5d | 3 | -1.10% | 4.122 | -1.29% | 33% | -1.46% | 6.146 | -2.52% |
-| Loss | 21d | 3 | -0.83% | 26.340 | -3.55% | 33% | -0.95% | 29.543 | -3.55% |
+| Higher profit | 1d | 2 | 0.00% | 0.000 | 0.00% | 0% | 0.26% | 0.302 | 0.26% |
+| Higher profit | 5d | 2 | 0.60% | 0.709 | 0.60% | 50% | 1.14% | 0.129 | 1.14% |
+| Higher profit | 21d | 2 | 1.79% | 6.378 | 1.79% | 50% | 4.52% | 2.115 | 4.52% |
+| Lower profit | 1d | 2 | 0.65% | 0.843 | 0.65% | 50% | 0.46% | 1.592 | 0.46% |
+| Lower profit | 5d | 2 | -0.17% | 4.343 | -0.17% | 50% | -0.25% | 4.766 | -0.25% |
+| Lower profit | 21d | 2 | -1.55% | 16.213 | -1.55% | 50% | -1.04% | 9.852 | -1.04% |
 
 **Kruskal–Wallis test across the available outcome groups**
 
 | Horizon | Groups | N | H | Raw p | BH-adjusted p | Conclusion |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1d | 2 | 9 | 5.400 | 0.0201 | 0.3681 | No adjusted evidence |
-| 5d | 2 | 9 | 4.267 | 0.0389 | 0.4294 | No adjusted evidence |
-| 21d | 2 | 9 | 2.400 | 0.1213 | 0.5008 | No adjusted evidence |
+| 1d | 2 | 4 | 0.000 | 1.0000 | 1.0000 | No adjusted evidence |
+| 5d | 2 | 4 | 0.600 | 0.4386 | 0.7778 | No adjusted evidence |
+| 21d | 2 | 4 | 2.400 | 0.1213 | 0.5008 | No adjusted evidence |
 
 **Pairwise result:** No pairwise difference survives BH adjustment.
 
@@ -5858,7 +6126,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![SAF1R Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/SAF1R_all_frontiers.png?v=1792850674)
+![EWA1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/EWA1L_all_frontiers.png?v=1792850691)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -5869,327 +6137,59 @@ The highlighted circle is the selected share and pale circles are the remaining 
 
 | Measure | Full period | Last 126 | Measure | Full period | Last 126 |
 | --- | --- | --- | --- | --- | --- |
-| ActiveReturn | -0.082425 | 1.446929 | M2Sortino | 0.140441 | 1.657674 |
-| AdjustedSharpe | 0.386054 | -15.001570 | MSquaredExcess | -0.125601 | 0.324086 |
-| AnnualizedReturn_Arithmetic | 0.195831 | 1.066940 | Martin | 0.287115 | 34.088637 |
-| AnnualizedReturn_Geometric | 0.146264 | 1.684138 | MaximumDrawdown | 0.627796 | 0.115414 |
-| Appraisal | 0.341643 | 4.321455 | Modigliani | 0.000395 | 0.001604 |
-| ArithmeticReturn | 0.000777 | 0.004234 | NetSelectivity | -0.303530 | 1.058141 |
-| AverageDrawdown | 0.076798 | 0.044057 | Omega | 1.142415 | 1.890778 |
-| AverageDrawdownLength | 73.400000 | 19.333333 | OmegaExcessReturn | 0.064136 | 1.632952 |
-| AverageRecoveryTime | 42.700000 | 9.500000 | PainIndex | 0.419813 | 0.038057 |
-| BernardoLedoit | 1.142415 | 1.890778 | PainRatio | 0.348404 | 44.252719 |
-| BetaCoKurtosis | 0.371595 | -0.330253 | Prospect | -0.421323 | -0.161563 |
-| BetaCoSkewness | 0.994947 | -22.410485 | Rachev | 1.168506 | 1.812138 |
-| Burke | 0.278086 | 11.360339 | Selectivity | 0.117677 | 1.750357 |
-| CAPMAlpha | 0.000667 | 0.004483 | Sharpe_Annualized | 0.567017 | 2.608973 |
-| CAPMBeta | 0.125006 | -0.279156 | Sharpe_Daily | 0.035719 | 0.164350 |
-| CDD | 0.082432 | 0.097274 | Sharpe_ES | 0.016820 | 0.118580 |
-| Calmar | 0.232981 | 14.592157 | Sharpe_VaR | 0.030238 | 0.161472 |
-| CoKurtosis | 0.000000 | -0.000000 | Skewness | 0.769450 | 4.067258 |
-| CoSkewness | 0.000000 | -0.000000 | Sortino | 0.054174 | 0.400634 |
-| CumulativeReturn | 0.504471 | 0.638334 | SpecificRisk | 0.344443 | 0.405039 |
-| DRatio | 0.878368 | 0.424995 | Sterling | 0.200969 | 7.818149 |
-| DownCapture | 0.033519 | -0.625101 | SystematicRisk | 0.021951 | -0.043259 |
-| DownNumber | 0.408805 | 0.396226 | TotalRisk | 0.345142 | 0.407342 |
-| DownPercent | 0.738994 | 0.773585 | TrackingError_Annualized | 0.377367 | 0.452395 |
-| DownsideDeviation | 0.014345 | 0.010568 | TrackingError_Daily | 0.023772 | 0.028498 |
-| DrawdownDeviation | 0.023076 | 0.013387 | Treynor_Annualized | 1.170055 | -6.032975 |
-| ES_Loss | 0.046202 | 0.035705 | Treynor_Daily | 0.004335 | -0.014063 |
-| FamaBeta | 1.966838 | 2.639009 | UlcerIndex | 0.509428 | 0.049405 |
-| GeometricReturn | 0.000542 | 0.003926 | UpCapture | 0.209270 | 0.495207 |
-| Hurst | 0.437458 | 0.483017 | UpNumber | 0.389908 | 0.383562 |
-| Information_Annualized | -0.218421 | 3.198378 | UpPercent | 0.270642 | 0.287671 |
-| Information_Daily | -0.011599 | 0.108103 | UpsidePotential | 0.434572 | 0.850392 |
-| JensenAlpha | 0.117677 | 1.750357 | UpsideRisk | 0.016357 | 0.023762 |
-| Kappa | 0.029124 | 0.272776 | VaR_Loss | 0.025700 | 0.026221 |
-| Kelly | 1.641766 | 6.379684 | Volatility | 0.021756 | 0.025761 |
-| Kurtosis | 32.251943 | 33.035712 | Volatility_Annualized | 0.345370 | 0.408950 |
+| ActiveReturn | -0.244073 | -0.237209 | M2Sortino | -0.015387 | NA |
+| AdjustedSharpe | 0.014866 | NA | MSquaredExcess | -0.197526 | NA |
+| AnnualizedReturn_Arithmetic | 0.002856 | 0.000000 | Martin | -0.057131 | NA |
+| AnnualizedReturn_Geometric | -0.015384 | 0.000000 | MaximumDrawdown | 0.362375 | 0.000000 |
+| Appraisal | -0.167227 | NA | Modigliani | 0.000010 | NA |
+| ArithmeticReturn | 0.000011 | 0.000000 | NetSelectivity | -0.266516 | 0.000000 |
+| AverageDrawdown | 0.066346 | 0.000000 | Omega | 1.004493 | NA |
+| AverageDrawdownLength | 67.000000 | 0.000000 | OmegaExcessReturn | -0.059707 | 0.000000 |
+| AverageRecoveryTime | 43.090909 | 0.000000 | PainIndex | 0.231347 | 0.000000 |
+| BernardoLedoit | 1.004493 | NA | PainRatio | -0.066496 | NA |
+| BetaCoKurtosis | 0.087045 | 0.000000 | Prospect | -0.405820 | NA |
+| BetaCoSkewness | -2.667071 | 0.000000 | Rachev | 1.055640 | NA |
+| Burke | -0.063419 | NA | Selectivity | -0.032153 | 0.000000 |
+| CAPMAlpha | -0.000053 | 0.000000 | Sharpe_Annualized | 0.014812 | NA |
+| CAPMBeta | 0.073328 | 0.000000 | Sharpe_Daily | 0.000933 | NA |
+| CDD | 0.111440 | 0.000000 | Sharpe_ES | 0.000388 | NA |
+| Calmar | -0.042452 | NA | Sharpe_VaR | 0.000623 | NA |
+| CoKurtosis | 0.000000 | 0.000000 | Skewness | 1.542213 | NA |
+| CoSkewness | -0.000000 | 0.000000 | Sortino | 0.001464 | NA |
+| CumulativeReturn | -0.045327 | 0.000000 | SpecificRisk | 0.192271 | 0.000000 |
+| DRatio | 1.116479 | NA | Sterling | -0.033271 | 0.000000 |
+| DownCapture | 0.055448 | 0.000000 | SystematicRisk | 0.012876 | 0.000000 |
+| DownNumber | 0.157233 | 0.000000 | TotalRisk | 0.192702 | 0.000000 |
+| DownPercent | 0.874214 | 1.000000 | TrackingError_Annualized | 0.251983 | 0.154964 |
+| DownsideDeviation | 0.007742 | 0.000000 | TrackingError_Daily | 0.015873 | 0.009762 |
+| DrawdownDeviation | 0.014414 | 0.000000 | Treynor_Annualized | -0.209789 | NA |
+| ES_Loss | 0.029200 | 0.000000 | Treynor_Daily | -0.000839 | NA |
+| FamaBeta | 1.098138 | 0.000000 | UlcerIndex | 0.269269 | 0.000000 |
+| GeometricReturn | -0.000062 | 0.000000 | UpCapture | 0.046660 | 0.000000 |
+| Hurst | 0.387827 | NA | UpNumber | 0.142202 | 0.000000 |
+| Information_Annualized | -0.968609 | -1.530742 | UpPercent | 0.110092 | 0.000000 |
+| Information_Daily | -0.055382 | -0.086565 | UpsidePotential | 0.327291 | NA |
+| JensenAlpha | -0.032153 | 0.000000 | UpsideRisk | 0.009350 | 0.000000 |
+| Kappa | 0.000905 | NA | VaR_Loss | 0.018182 | 0.000000 |
+| Kelly | 0.076812 | NA | Volatility | 0.012147 | 0.000000 |
+| Kurtosis | 18.512640 | NA | Volatility_Annualized | 0.192829 | 0.000000 |
 
 </details>
 
 <details markdown="1" class="portfolio-sensitivity">
 <summary>Portfolio sensitivity</summary>
 
-**Removing this share from curent_update_baltic**
-
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.796610</td><td>-0.016949</td></tr><tr><td>OUT</td><td>96</td><td>94</td><td>-2</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.190075</td><td>0.042301</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.168744</td><td>0.007252</td></tr></tbody></table>
-
-The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
-
-**Increasing this existing position in the current portfolio**
-
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>SAF1R shares</td><td>100</td><td>100</td><td>+0</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>7912.299967</td><td>0.000000</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.457627</td><td>0.000000</td></tr><tr><td>OUT</td><td>62</td><td>62</td><td>+0</td></tr><tr><td>IN</td><td>8</td><td>8</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.070173</td><td>0.000000</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.091156</td><td>0.000000</td></tr></tbody></table>
-
-The starting point is the unmodified current portfolio, which already contains 100 SAF1R shares. The scenario adds 0 shares from Table 3A, resulting in 100 shares; every other holding remains unchanged.
-
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
 The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Choose S&P 500, Current or any model portfolio as the benchmark for the difference panels.
 
-<div class="dominance-explorer" data-asset="SAF1R"><p>Open this section to load the interactive curve explorer.</p></div>
+<div class="dominance-explorer" data-asset="EWA1L"><p>Open this section to load the interactive curve explorer.</p></div>
 
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![SAF1R high-resolution stochastic dominance](figures/stock_profiles/SAF1R_FSD_SSD_TSD.png?v=1792850984)
-
-The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
-
-</details>
-
-</details>
-
-</details>
-
-</details>
-
-<details markdown="1" class="stock-profile" id="share-tsm1t" data-signal="HOLD" data-netsd-effect="UNCHANGED">
-<summary><strong>TSM1T — Tallinna Sadam</strong> | current action: HOLD | allocation target 330 shares | priority 24</summary>
-
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>330</td><td>330</td><td>+0</td><td>2.64%</td><td>EUR 1.2000</td><td>-0.0254</td><td>28 / 31</td><td>40.77</td><td>Bearish</td><td>Inside bands</td><td>0.478 (Neutral)</td><td>HOLD</td><td>HOLD</td><td>HOLD</td><td>0.000697 (0.849% of portfolio HHI)</td><td>EUR 45,487</td><td>0.0%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
-
-![TSM1T Bollinger Bands, MACD, RSI and Stochastic RSI — last 126 observations](figures/stock_profiles/TSM1T_technicals_6m.png)
-
-Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. Vertical lines distinguish 4-of-4, 3-of-4 and 2-of-4 buy/sell agreement.
-
-**Current indicative buy and sell prices**
-
-| Current price | Buy below | Sell above | Bollinger price zone |
-| --- | --- | --- | --- |
-| EUR 1.2000 | EUR 1.1991 (-0.08%) | EUR 1.2177 (+1.48%) | HOLD |
-
-Buy below and Sell above are the current 20-observation Bollinger lower and upper bands. The Bollinger price zone is diagnostic, not a trade recommendation. Current execution decision is the only action label: BUY requires both a positive allocation change and a BUY technical timing signal; WAIT means the model wants more shares but timing does not support buying now; SELL follows a negative allocation change; zero change is HOLD.
-
-<details markdown="1">
-<summary>Complete technical history</summary>
-
-![TSM1T complete technical history](figures/technical_analysis/TSM1T_technical.png)
-
-</details>
-
-<details markdown="1">
-<summary>Return histogram</summary>
-
-![TSM1T return histogram](figures/stock_profiles/TSM1T_histogram.png?v=1792850135)
-
-</details>
-
-<details markdown="1" class="seasonality-section">
-<summary>Seasonality, drawdowns and upside periods</summary>
-
-The analysis covers 962 daily returns from 2023-01-02 to 2026-10-23. Statistically supported calendar effects: **calendar-month**. Adjusted p-values control the false-discovery rate across all analysed shares.
-
-| Measure | Value | Measure | Value | Measure | Value |
-| --- | --- | --- | --- | --- | --- |
-| Maximum drawdown | -29.81% (2024-12-11) | Average gain / average loss | 0.947 | Best 21-day period | 14.20% (ending 2026-01-30) |
-| Average underwater drawdown | 17.92% | Upside potential ratio | 0.937 | Worst 21-day period | -14.29% (ending 2026-05-29) |
-| Conditional drawdown 95% | 29.36% | Upside capture vs Baltic EW | 44.8% | Best 5-day period | 8.50% (ending 2026-01-30) |
-| Ulcer index | 19.57 | Downside capture vs Baltic EW | 58.4% | Best 63-day period | 24.37% (ending 2026-01-30) |
-| Longest underwater period | 1334 calendar days | Positive trading days | 39.2% | Repeated calendar pattern | May: 0% positive across 4 years |
-| Daily downside deviation | 0.555% | Best day | 2.77% (2024-04-08) |  |  |
-| Daily upside deviation | 0.449% | Worst day | -6.09% (2025-05-08) |  |  |
-
-**Calendar-effect tests and observed averages**
-
-| Effect | Observed result | Raw p | BH-adjusted p | Conclusion |
-| --- | --- | --- | --- | --- |
-| Weekday | Best: Wednesday (0.047%); worst: Monday (-0.096%) | 0.0298 | 0.1259 | Not detected |
-| Calendar month | Best: Jan (0.293% daily); worst: May (-0.359% daily) | 0.0003 | 0.0062 | Detected |
-| Turn of month | First/last three days: 0.072%; other days: -0.035% | 0.1121 | 0.4483 | Not detected |
-
-![TSM1T seasonality, drawdowns and upside periods](figures/stock_profiles/TSM1T_seasonality.png?v=1792850850)
-
-**Five deepest drawdown episodes**
-
-| Rank | Peak | Trough | Recovery | Loss | Underwater days |
-| --- | --- | --- | --- | --- | --- |
-| 1 | 2023-02-27 | 2024-12-11 | Not recovered | -29.81% | 1334 |
-| 2 | 2023-01-16 | 2023-01-18 | 2023-01-20 | -0.56% | 4 |
-| 3 | 2023-02-09 | 2023-02-10 | 2023-02-27 | -0.40% | 18 |
-| 4 | 2023-01-09 | 2023-01-10 | 2023-01-13 | -0.28% | 4 |
-| 5 | 2023-01-26 | 2023-01-27 | 2023-01-30 | -0.28% | 4 |
-
-**Five strongest non-overlapping 21-trading-day rises**
-
-| Rank | Start | End | 21-day return |
-| --- | --- | --- | --- |
-| 1 | 2025-12-30 | 2026-01-30 | 14.20% |
-| 2 | 2025-01-20 | 2025-02-18 | 9.82% |
-| 3 | 2024-04-03 | 2024-05-03 | 7.23% |
-| 4 | 2025-11-25 | 2025-12-29 | 6.83% |
-| 5 | 2025-03-04 | 2025-04-02 | 6.09% |
-
-The dated extremes identify where company announcements, dividends, corporate actions or data anomalies should be checked. A repeated calendar average is descriptive until it survives the adjusted test and a later out-of-sample period; it is not by itself a buy or sell signal.
-
-<details markdown="1" class="company-events">
-<summary>Official company-news calendar and price-direction analysis (30 events)</summary>
-
-Announcement times and links come from the official Nasdaq news service. The effective date is the first trading close strictly after publication. Abnormal return means the share return minus the equal-weight Baltic-market return over the same window.
-
-| Event type | N | Abnormal 1d | Abnormal 5d | Abnormal 21d | Positive 5d | Direction reversal | BH p(5d) | BH p(21d) | Interpretation |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Dividend announcement | 4 | -0.04% | 1.22% | 2.25% | 75% | 25% | 0.6958 | 0.3223 | No adjusted statistical evidence |
-| Dividend payment | 4 | -0.20% | -1.24% | -0.79% | 25% | 0% | 0.6958 | 1.0000 | No adjusted statistical evidence |
-| Earnings | 15 | -0.42% | -0.39% | -1.25% | 53% | 33% | 1.0000 | 1.0000 | No adjusted statistical evidence |
-| Ex-dividend | 7 | -3.46% | -5.57% | -7.33% | 0% | 43% | 0.0000 | 0.0002 | Different from ordinary periods; price drop may be mechanical |
-
-![TSM1T official announcements and abnormal returns](figures/stock_profiles/TSM1T_company_events.png?v=1792850872)
-
-A direction reversal requires opposite fitted price slopes during the ten trading days before and after the event and at least a 1% five-day move. This identifies temporal association, not proof that the announcement caused the change.
-
-<details markdown="1">
-<summary>Complete official event calendar (30 announcements)</summary>
-
-| Published | Type | Profit outcome | Official announcement | Headline fundamental cue | Pre 5d | Post 1d | Post 5d | Post 21d | Abnormal 5d | Reversal |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2026-08-10 08:00 | Earnings | Higher profit | [AS Tallinna Sadam financial results for 2026 Q2 and 6 months](https://view.news.eu.nasdaq.com/view?id=b004460ea6a7fe0426daaa1f06fd12455&lang=en&src=listed) | Open official announcement | 0.16% | -0.32% | -0.80% | -1.77% | -0.40% | No |
-| 2026-05-20 08:00 | Dividend payment | — | [Official dividend calendar: Dividend payment date, EUR 0.073 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.073  | -8.91% | 0.00% | -1.38% | -3.21% | -1.96% | No |
-| 2026-05-12 08:00 | Ex-dividend | — | [Official dividend calendar: Dividend ex-date, EUR 0.073 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.073  | -1.37% | -5.99% | -8.91% | -12.95% | -7.87% | No |
-| 2026-05-11 08:59 | Earnings | Unclassified earnings release | [Parandus pealkirjas: ASi Tallinna Sadam 2026 I kvartali majandustulemused](https://view.news.eu.nasdaq.com/view?id=b3110244296581c0066185611d5eece35&lang=et&src=listed) | Open official announcement | -1.37% | -5.99% | -8.91% | -12.95% | -7.87% | No |
-| 2026-05-08 08:00 | Ex-dividend | — | [Dividend Payment Ex-date of AS Tallinna Sadam](https://view.news.eu.nasdaq.com/view?id=b860e51934927975c9974924238c41731&lang=en&src=listed) | Open official announcement | -0.14% | -1.24% | -10.04% | -14.03% | -9.50% | Yes |
-| 2026-04-02 08:00 | Dividend announcement | — | [Tallinna Sadam audited Annual Report 2025 and dividend proposal ](https://view.news.eu.nasdaq.com/view?id=bda899d2e5f805868f71ab7cf8e5394f8&lang=en&src=listed) | Open official announcement | 0.29% | -0.29% | -0.29% | 3.99% | -1.98% | No |
-| 2026-02-26 08:00 | Earnings | Lower profit | [AS Tallinna Sadam unaudited financial results for the year 2025 and Q4](https://view.news.eu.nasdaq.com/view?id=bc0cf354374a243405cd3c38805b88f5c&lang=en&src=listed) | Open official announcement | -2.33% | 0.28% | 0.00% | -2.24% | 0.25% | No |
-| 2025-11-10 08:00 | Earnings | Higher profit | [AS Tallinna Sadam financial results for 2025 Q3 and 9 months](https://view.news.eu.nasdaq.com/view?id=b1b08441834547d95e1197680971ae7fa&lang=en&src=listed) | Open official announcement | 3.10% | 0.17% | -1.17% | 3.51% | -1.19% | Yes |
-| 2025-08-11 14:30 | Earnings | Higher profit | [Correction: AS Tallinna Sadam financial results for 2025 Q2 and 6 months](https://view.news.eu.nasdaq.com/view?id=bba9e5faad08541202778a34eb0efae9c&lang=en&src=listed) | Open official announcement | 0.68% | 0.00% | 1.34% | 0.50% | 0.29% | No |
-| 2025-05-16 08:00 | Dividend payment | — | [Official dividend calendar: Dividend payment date, EUR 0.073 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.073  | 0.68% | 0.85% | 0.85% | 0.68% | -0.00% | No |
-| 2025-05-12 08:00 | Earnings | Higher profit | [AS Tallinna Sadam financial results for 2025 Q1](https://view.news.eu.nasdaq.com/view?id=b15406ee82575437cf9e2952f01c01b2b&lang=en&src=listed) | Open official announcement | -4.07% | -0.17% | 1.70% | 2.21% | 1.28% | Yes |
-| 2025-05-08 08:00 | Ex-dividend | — | [Official dividend calendar: Dividend ex-date, EUR 0.073 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.073  | 2.30% | -6.09% | -5.45% | -4.17% | -4.95% | No |
-| 2025-05-06 08:00 | Ex-dividend | — | [Dividend Payments Ex-date of AS Tallinna Sadam](https://view.news.eu.nasdaq.com/view?id=bb5bfdae4fe3e829f5cdf7cd493af89e6&lang=en&src=listed) | Open official announcement | 2.46% | -0.16% | -5.92% | -4.32% | -5.97% | Yes |
-| 2025-04-03 08:00 | Dividend announcement | — | [Tallinna Sadam audited Annual Report 2024 and dividend proposal ](https://view.news.eu.nasdaq.com/view?id=bee211eb152fa721883c88316a35335c6&lang=en&src=listed) | Open official announcement | 3.04% | -1.80% | -1.15% | 2.30% | 0.64% | No |
-| 2025-02-28 08:00 | Earnings | Higher profit | [AS Tallinna Sadam unaudited financial results for Q4 and 2024](https://view.news.eu.nasdaq.com/view?id=b0887dc70da261877b0aa174b49193374&lang=en&src=listed) | Open official announcement | 0.00% | -0.67% | -1.17% | -1.34% | -1.17% | Yes |
-| 2024-11-11 08:00 | Earnings | Higher profit | [AS Tallinna Sadam financial results for 2024 9 months and Q3](https://view.news.eu.nasdaq.com/view?id=bdb3dc8fd61fde2f29a4b559bab9a4510&lang=en&src=listed) | Open official announcement | -0.75% | -0.19% | 0.19% | -0.19% | 1.64% | No |
-| 2024-08-12 08:00 | Earnings | Higher profit | [AS Tallinna Sadam financial results for 2024 Q2 and 6 months](https://view.news.eu.nasdaq.com/view?id=b2301b4b68af4553da7d02ab2252a1715&lang=en&src=listed) | Open official announcement | 1.69% | -0.56% | -1.48% | -2.04% | -0.79% | Yes |
-| 2024-05-17 08:00 | Dividend payment | — | [Official dividend calendar: Dividend payment date, EUR 0.073 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.073  | -3.50% | -1.04% | -3.63% | -3.28% | -3.57% | No |
-| 2024-05-10 08:00 | Earnings | Lower profit | [AS Tallinna Sadam financial results for 2024 Q1](https://view.news.eu.nasdaq.com/view?id=bb6d9b7691aa7c3575dc66f38d4a6dbad&lang=en&src=listed) | Open official announcement | -6.61% | 0.18% | 1.42% | -1.24% | 2.25% | No |
-| 2024-05-09 08:00 | Ex-dividend | — | [Official dividend calendar: Dividend ex-date, EUR 0.073 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.073  | -0.50% | -5.83% | -3.50% | -7.00% | -1.85% | No |
-| 2024-05-06 08:00 | Ex-dividend | — | [Dividend Payments Ex-date of AS Tallinna Sadam](https://view.news.eu.nasdaq.com/view?id=bd1db1c926ede4a2de532dc97bed18365&lang=en&src=listed) | Open official announcement | -0.49% | -0.50% | -5.12% | -8.91% | -4.15% | No |
-| 2024-04-04 08:00 | Dividend announcement | — | [Tallinna Sadam audited Annual Report 2023 and dividend proposal ](https://view.news.eu.nasdaq.com/view?id=b801005dc3c67e2a6540cdb741317ffc5&lang=en&src=listed) | Open official announcement | -0.52% | 0.87% | 5.42% | 5.94% | 5.28% | Yes |
-| 2024-02-28 08:00 | Earnings | Higher profit | [AS Tallinna Sadam unaudited financial results for Q4 and 2023](https://view.news.eu.nasdaq.com/view?id=bcee1274a19a3f1eaa0cf56d26464ca38&lang=en&src=listed) | Open official announcement | 3.25% | 0.35% | 1.23% | 0.35% | 1.54% | No |
-| 2023-11-10 08:00 | Earnings | Higher profit | [AS Tallinna Sadam financial results for 2023 Q3 and 9 months](https://view.news.eu.nasdaq.com/view?id=b1e73bdebe1c05764ce0f6d44b8337258&lang=en&src=listed) | Open official announcement | 0.70% | -0.17% | -1.22% | -3.83% | -0.96% | Yes |
-| 2023-08-10 09:33 | Earnings | Higher profit | [Correction: AS Tallinna Sadam financial results for 2023 Q2 and 6 months](https://view.news.eu.nasdaq.com/view?id=ba0a3f266bb3fdc2c504aed32e1a1d4a9&lang=en&src=listed) | Open official announcement | -2.90% | -0.15% | -0.45% | -9.12% | -1.87% | No |
-| 2023-05-12 08:00 | Dividend payment | — | [Official dividend calendar: Dividend payment date, EUR 0.073 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.073  | -5.32% | 0.14% | -0.86% | 0.86% | 0.56% | No |
-| 2023-05-10 08:00 | Earnings | Higher profit | [AS Tallinna Sadam financial results for 2023 Q1](https://view.news.eu.nasdaq.com/view?id=bdd9ab4079d3988d74cd1d95324b6db9e&lang=en&src=listed) | Open official announcement | -4.92% | -0.29% | -1.15% | 0.57% | 0.90% | No |
-| 2023-05-09 08:00 | Ex-dividend | — | [Official dividend calendar: Dividend ex-date, EUR 0.073 per share](https://nasdaqbaltic.com/statistics/en/dividends) | EUR 0.073  | 1.24% | -4.63% | -5.86% | -4.77% | -4.73% | Yes |
-| 2023-04-04 13:40 | Dividend announcement | — | [CORRECTION: Tallinna Sadam audited Annual Report 2022 and dividend proposal ](https://view.news.eu.nasdaq.com/view?id=be24cd8165447a892001ba6662975d0f2&lang=en&src=listed) | Open official announcement | 1.96% | 0.14% | 0.96% | 0.82% | 0.94% | No |
-| 2023-02-28 08:00 | Earnings | Higher profit | [AS Tallinna Sadam unaudited financial results for 2022 and Q4](https://view.news.eu.nasdaq.com/view?id=bf7751635da699ae3465424a43a2af554&lang=en&src=listed) | Open official announcement | -0.40% | 0.27% | 0.41% | -3.65% | 0.19% | No |
-
-</details>
-
-</details>
-
-<details markdown="1" class="earnings-outcomes">
-<summary>Profit outcome and subsequent price analysis (14 classified of 15 earnings releases)</summary>
-
-Higher/lower profit refers to the issuer's explicit comparison with the earlier comparable period. ‘In line / unchanged’ is used only when the issuer explicitly says that profit met a plan, forecast or expectation, or was unchanged. ‘Loss’ requires an explicit realised net or operating loss. Releases without such wording remain unclassified and are excluded from the conditional estimates.
-
-Variance is reported in squared percentage points. Abnormal return is the share return minus the equal-weight Baltic-market return over the same horizon.
-
-| Profit outcome | Horizon | N | Conditional mean | Variance | Median | Positive share | Mean abnormal | Abnormal variance | Median abnormal |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Higher profit | 1d | 12 | -0.14% | 0.094 | -0.17% | 25% | -0.07% | 0.118 | -0.04% |
-| Higher profit | 5d | 12 | -0.21% | 1.311 | -0.63% | 42% | -0.04% | 1.418 | -0.10% |
-| Higher profit | 21d | 12 | -1.23% | 10.906 | -0.76% | 42% | -0.53% | 13.666 | -0.47% |
-| Lower profit | 1d | 2 | 0.23% | 0.005 | 0.23% | 100% | 0.11% | 0.205 | 0.11% |
-| Lower profit | 5d | 2 | 0.71% | 1.002 | 0.71% | 50% | 1.25% | 1.996 | 1.25% |
-| Lower profit | 21d | 2 | -1.74% | 0.505 | -1.74% | 0% | -0.06% | 0.541 | -0.06% |
-
-**Kruskal–Wallis test across the available outcome groups**
-
-| Horizon | Groups | N | H | Raw p | BH-adjusted p | Conclusion |
-| --- | --- | --- | --- | --- | --- | --- |
-| 1d | 2 | 14 | 0.300 | 0.5839 | 0.8451 | No adjusted evidence |
-| 5d | 2 | 14 | 1.633 | 0.2012 | 0.6718 | No adjusted evidence |
-| 21d | 2 | 14 | 0.033 | 0.8551 | 0.9707 | No adjusted evidence |
-
-**Pairwise result:** No pairwise difference survives BH adjustment.
-
-The test describes historical association. Small groups, overlapping horizons and repeated releases from the same company limit causal interpretation.
-
-</details>
-
-</details>
-
-<details markdown="1">
-<summary>All five model frontiers with this share highlighted</summary>
-
-![TSM1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TSM1T_all_frontiers.png?v=1792850683)
-
-The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
-
-</details>
-
-<details markdown="1">
-<summary>All 72 PerformanceAnalytics measures: full period and last 126 observations</summary>
-
-| Measure | Full period | Last 126 | Measure | Full period | Last 126 |
-| --- | --- | --- | --- | --- | --- |
-| ActiveReturn | -0.277334 | -0.411708 | M2Sortino | -0.049560 | -0.173362 |
-| AdjustedSharpe | -0.373373 | -0.408178 | MSquaredExcess | -0.245773 | -0.347629 |
-| AnnualizedReturn_Arithmetic | -0.043019 | -0.181818 | Martin | -0.225586 | -1.695576 |
-| AnnualizedReturn_Geometric | -0.048644 | -0.174499 | MaximumDrawdown | 0.291939 | 0.165097 |
-| Appraisal | -0.372776 | -1.203434 | Modigliani | -0.000257 | -0.000798 |
-| ArithmeticReturn | -0.000171 | -0.000721 | NetSelectivity | -0.200433 | -0.389102 |
-| AverageDrawdown | 0.051619 | 0.058457 | Omega | 0.926054 | 0.751272 |
-| AverageDrawdownLength | 124.000000 | 41.000000 | OmegaExcessReturn | -0.081057 | -0.208950 |
-| AverageRecoveryTime | 60.166667 | 2.000000 | PainIndex | 0.189048 | 0.082395 |
-| BernardoLedoit | 0.926054 | 0.751272 | PainRatio | -0.257313 | -2.117834 |
-| BetaCoKurtosis | -0.050505 | -0.013112 | Prospect | -0.539890 | -0.611214 |
-| BetaCoSkewness | -1.417573 | -0.248047 | Rachev | 0.936715 | 0.788970 |
-| Burke | -0.230283 | -1.441332 | Selectivity | -0.043392 | -0.167967 |
-| CAPMAlpha | -0.000151 | -0.000697 | Sharpe_Annualized | -0.369110 | -1.296887 |
-| CAPMBeta | -0.022969 | -0.027535 | Sharpe_Daily | -0.023252 | -0.081696 |
-| CDD | 0.134432 | 0.125293 | Sharpe_ES | -0.009351 | -0.033643 |
-| Calmar | -0.166626 | -1.056948 | Sharpe_VaR | -0.017565 | -0.057980 |
-| CoKurtosis | -0.000000 | -0.000000 | Skewness | -1.678367 | -1.928936 |
-| CoSkewness | -0.000000 | -0.000000 | Sortino | -0.030154 | -0.101437 |
-| CumulativeReturn | -0.138609 | -0.091429 | SpecificRisk | 0.116402 | 0.139573 |
-| DRatio | 1.138419 | 1.626871 | Sterling | -0.124113 | -0.658246 |
-| DownCapture | -0.005342 | 0.014807 | SystematicRisk | -0.004033 | -0.004267 |
-| DownNumber | 0.427673 | 0.528302 | TotalRisk | 0.116472 | 0.139639 |
-| DownPercent | 0.836478 | 0.830189 | TrackingError_Annualized | 0.214089 | 0.212111 |
-| DownsideDeviation | 0.005661 | 0.007113 | TrackingError_Daily | 0.013486 | 0.013362 |
-| DrawdownDeviation | 0.010637 | 0.014723 | Treynor_Annualized | 2.117847 | 6.337296 |
-| ES_Loss | 0.018256 | 0.021446 | Treynor_Daily | 0.008615 | 0.027626 |
-| FamaBeta | 0.663731 | 0.904701 | UlcerIndex | 0.215636 | 0.102914 |
-| GeometricReturn | -0.000198 | -0.000761 | UpCapture | -0.044368 | -0.156972 |
-| Hurst | 0.375954 | 0.473918 | UpNumber | 0.394495 | 0.383562 |
-| Information_Annualized | -1.295411 | -1.941006 | UpPercent | 0.176606 | 0.150685 |
-| Information_Daily | -0.075295 | -0.120173 | UpsidePotential | 0.377634 | 0.306385 |
-| JensenAlpha | -0.043392 | -0.167967 | UpsideRisk | 0.004670 | 0.005225 |
-| Kappa | -0.016878 | -0.057530 | VaR_Loss | 0.009719 | 0.012444 |
-| Kelly | -3.166994 | -9.250553 | Volatility | 0.007342 | 0.008831 |
-| Kurtosis | 19.153590 | 18.727756 | Volatility_Annualized | 0.116549 | 0.140196 |
-
-</details>
-
-<details markdown="1" class="portfolio-sensitivity">
-<summary>Portfolio sensitivity</summary>
-
-**Removing this share from curent_update_baltic**
-
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.813559</td><td>0.000000</td></tr><tr><td>OUT</td><td>96</td><td>96</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.155889</td><td>0.008116</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.165547</td><td>0.004054</td></tr></tbody></table>
-
-The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
-
-**Increasing this existing position in the current portfolio**
-
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>TSM1T shares</td><td>330</td><td>330</td><td>+0</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>7912.299967</td><td>0.000000</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.457627</td><td>0.000000</td></tr><tr><td>OUT</td><td>62</td><td>62</td><td>+0</td></tr><tr><td>IN</td><td>8</td><td>8</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.070173</td><td>0.000000</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.091156</td><td>0.000000</td></tr></tbody></table>
-
-The starting point is the unmodified current portfolio, which already contains 330 TSM1T shares. The scenario adds 0 shares from Table 3A, resulting in 330 shares; every other holding remains unchanged.
-
-<details markdown="1" class="dominance-components">
-<summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
-
-The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Choose S&P 500, Current or any model portfolio as the benchmark for the difference panels.
-
-<div class="dominance-explorer" data-asset="TSM1T"><p>Open this section to load the interactive curve explorer.</p></div>
-
-<details markdown="1" class="static-dominance">
-<summary>High-resolution static FSD, SSD and TSD figure</summary>
-
-![TSM1T high-resolution stochastic dominance](figures/stock_profiles/TSM1T_FSD_SSD_TSD.png?v=1792850996)
+![EWA1L high-resolution stochastic dominance](figures/stock_profiles/EWA1L_FSD_SSD_TSD.png?v=1792850941)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -6278,7 +6278,7 @@ Each scenario removes one share from curent_update_baltic and proportionally res
 
 
 
-current_execution_decision is the only action recommendation. BUY requires both a positive allocation change and BUY technical timing; WAIT means the target quantity is higher but current timing does not support buying; HOLD means no allocation change; SELL means a negative allocation change. Diagnostic priority is not an execution order. Dividend columns use official 2025 and 2026 payments.
+current_execution_decision is the only action recommendation. BUY requires a material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the proposed purchase is below EUR 100 or below 1% target weight; HOLD means no allocation change; SELL means a negative allocation change. Diagnostic priority is not an execution order. Dividend columns use official 2025 and 2026 payments.
 
 curent_update_baltic keeps every currently held share, permits purchases only, and uses the EUR 15,000 ceiling. Its calculated netSD is 0.813559, with OUT=96 and IN=0; the remaining cash is EUR 94.95.
 
