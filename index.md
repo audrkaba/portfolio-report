@@ -62,13 +62,20 @@ img { display:block; max-width:100%; height:auto; margin:1rem auto; border:1px s
 .dominance-controls button { min-height:35px; border:1px solid #8aa6b2; border-radius:5px; color:#174d61; background:#eef7f8; cursor:pointer; }
 .dominance-canvas { width:100%; height:735px; border:1px solid var(--line); border-radius:5px; cursor:crosshair; }
 .dominance-status { margin:.45rem 0 0; color:#455f70; font-size:.84rem; font-variant-numeric:tabular-nums; }
+.frontier-explorer { margin:1rem 0; padding:12px; border:1px solid #bfd1d9; border-radius:8px; background:#fff; }
+.frontier-controls { display:grid; grid-template-columns:repeat(4,minmax(150px,1fr)); gap:10px 18px; align-items:end; margin-bottom:10px; }
+.frontier-controls label { display:grid; gap:3px; color:#29485a; font-size:.86rem; }
+.frontier-controls select,.frontier-controls input { width:100%; }
+.frontier-controls button { min-height:35px; border:1px solid #8aa6b2; border-radius:5px; color:#174d61; background:#eef7f8; cursor:pointer; }
+.frontier-canvas { width:100%; height:620px; border:1px solid var(--line); border-radius:5px; cursor:crosshair; }
+.frontier-status { margin:.45rem 0 0; color:#455f70; font-size:.84rem; font-variant-numeric:tabular-nums; }
 @media(max-width:900px) { .dominance-controls { grid-template-columns:1fr 1fr; } .dominance-canvas { height:675px; } }
 a { color:var(--accent); }
 @media(max-width:700px) { main { width:100%; margin:0; padding:22px 8px; border-radius:0; } h1 { font-size:1.7rem; } .add-one-comparison table { font-size:.62rem; } .add-one-comparison th { height:128px; } }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-26 17:54 (Europe/Vilnius); return analysis through 2026-10-23; valuation prices through 2026-10-23
+# Baltic investment plan - updated 2026-10-26 18:02 (Europe/Vilnius); return analysis through 2026-10-23; valuation prices through 2026-10-23
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -367,7 +374,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![KNE1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/KNE1L_all_frontiers.png?v=1793026512)
+![KNE1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/KNE1L_all_frontiers.png?v=1793030522)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -613,7 +620,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![VLP1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/VLP1L_all_frontiers.png?v=1793026511)
+![VLP1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/VLP1L_all_frontiers.png?v=1793030521)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -878,7 +885,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![MRK1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/MRK1T_all_frontiers.png?v=1793026510)
+![MRK1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/MRK1T_all_frontiers.png?v=1793030520)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -1111,7 +1118,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![MOLNR Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/MOLNR_all_frontiers.png?v=1793026514)
+![MOLNR Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/MOLNR_all_frontiers.png?v=1793030524)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -1404,7 +1411,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![APG1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/APG1L_all_frontiers.png?v=1793026510)
+![APG1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/APG1L_all_frontiers.png?v=1793030521)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -1614,7 +1621,7 @@ A direction reversal requires opposite fitted price slopes during the ten tradin
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![GRG1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/GRG1L_all_frontiers.png?v=1793026512)
+![GRG1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/GRG1L_all_frontiers.png?v=1793030522)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -1847,7 +1854,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![RSU1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/RSU1L_all_frontiers.png?v=1793026515)
+![RSU1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/RSU1L_all_frontiers.png?v=1793030525)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -2093,7 +2100,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![AKO1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/AKO1L_all_frontiers.png?v=1793026515)
+![AKO1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/AKO1L_all_frontiers.png?v=1793030525)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -2363,7 +2370,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![TAL1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TAL1T_all_frontiers.png?v=1793026513)
+![TAL1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TAL1T_all_frontiers.png?v=1793030523)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -2626,7 +2633,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![TKM1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TKM1T_all_frontiers.png?v=1793026509)
+![TKM1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TKM1T_all_frontiers.png?v=1793030519)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -2919,7 +2926,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![DGR1R Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/DGR1R_all_frontiers.png?v=1793026517)
+![DGR1R Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/DGR1R_all_frontiers.png?v=1793030527)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -3185,7 +3192,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![EFT1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/EFT1T_all_frontiers.png?v=1793026517)
+![EFT1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/EFT1T_all_frontiers.png?v=1793030527)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -3451,7 +3458,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![HAE1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/HAE1T_all_frontiers.png?v=1793026513)
+![HAE1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/HAE1T_all_frontiers.png?v=1793030523)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -3721,7 +3728,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![CPA1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/CPA1T_all_frontiers.png?v=1793026518)
+![CPA1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/CPA1T_all_frontiers.png?v=1793030528)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -3971,7 +3978,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![SAF1R Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/SAF1R_all_frontiers.png?v=1793026509)
+![SAF1R Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/SAF1R_all_frontiers.png?v=1793030520)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -4231,7 +4238,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![TSM1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TSM1T_all_frontiers.png?v=1793026516)
+![TSM1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TSM1T_all_frontiers.png?v=1793030526)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -4477,7 +4484,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![PZV1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/PZV1L_all_frontiers.png?v=1793026519)
+![PZV1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/PZV1L_all_frontiers.png?v=1793030528)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -4724,7 +4731,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![VIRSI Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/VIRSI_all_frontiers.png?v=1793026519)
+![VIRSI Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/VIRSI_all_frontiers.png?v=1793030529)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -4978,7 +4985,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![ROE1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/ROE1L_all_frontiers.png?v=1793026516)
+![ROE1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/ROE1L_all_frontiers.png?v=1793030526)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -5143,14 +5150,39 @@ Each scenario removes one share from curent_update_baltic and proportionally res
 </details>
 
 <details markdown="1" class="report-section" id="section-6">
-<summary><strong>6. Portfolio allocation comparison</strong></summary>
+<summary><strong>6. Interactive portfolio dominance and efficient frontiers</strong></summary>
+
+This section restores the portfolio-level comparison in one place. Current is the actual current portfolio. Baltic_NetSD and curent_update_baltic are the two Baltic optimisation scenarios; the training and full-data portfolios remain available for comparison.
+
+<details markdown="1" class="dominance-components portfolio-dominance" open>
+<summary><strong>Figure 6.a. Interactive portfolio FSD, SSD and TSD analysis</strong></summary>
+
+Select FSD, SSD or TSD and choose Current or another portfolio as the difference benchmark. The lower panels show Baltic_NetSD minus the selected benchmark. Sliders control the selected x interval and vertical magnification.
+
+<div class="dominance-explorer" data-asset="Portfolio" data-target="Baltic_NetSD"><p>Loading the interactive portfolio dominance analysis...</p></div>
+
+</details>
+
+<details markdown="1" class="frontier-components" open>
+<summary><strong>Figure 6.b. Interactive Markowitz, MAD, Minimax, robust mean–CVaR and netSD frontiers</strong></summary>
+
+Choose the model to change the risk measure. Every portfolio is shown as a point; Current is highlighted by default. Select another portfolio to compare it directly with Current, zoom with the horizontal controls or mouse wheel, and save the current view as PNG.
+
+<div class="frontier-explorer"><p>Loading the interactive frontier comparison...</p></div>
+
+</details>
+
+</details>
+
+<details markdown="1" class="report-section" id="section-7">
+<summary><strong>7. Portfolio allocation comparison</strong></summary>
 
 current_execution_decision is the only action recommendation. BUY requires a material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the proposed purchase is below EUR 100 or below 1% target weight; HOLD means no allocation change; SELL means a negative allocation change. Diagnostic priority is not an execution order. Dividend columns use official 2025 and 2026 payments.
 
 curent_update_baltic keeps every currently held share, permits purchases only, and uses the EUR 15,000 ceiling. Its calculated netSD is 0.822034, with OUT=97 and IN=0; the remaining cash is EUR 52.48.
 
 <details markdown="1">
-<summary><strong>Table 6.a. Current and optimised portfolios</strong></summary>
+<summary><strong>Table 7.a. Current and optimised portfolios</strong></summary>
 
 | Portfolio | netSD | OUT | IN | denominator | mean | SD | Historical dividends EUR | Portfolio value EUR |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -5162,7 +5194,7 @@ curent_update_baltic keeps every currently held share, permits purchases only, a
 
 
 <details markdown="1">
-<summary><strong>Figure 6.a. Optimiser target changes relative to current holdings: two adjacent portfolio bars for every share</strong></summary>
+<summary><strong>Figure 7.a. Optimiser target changes relative to current holdings: two adjacent portfolio bars for every share</strong></summary>
 
 ![Report figure 1](report/assets/figure-01.png)
 
@@ -5172,7 +5204,7 @@ curent_update_baltic keeps every currently held share, permits purchases only, a
 Each share has two adjacent bars. The blue bar is the change required for Baltic_NetSD, where negative values are sales. The orange bar is the additional purchase required for curent_update_baltic; it cannot be negative because every current position is retained. Both use the EUR 15,000 ceiling.
 
 <details markdown="1">
-<summary><strong>Figure 6.b. Capital allocation and historical gross dividend contribution</strong></summary>
+<summary><strong>Figure 7.b. Capital allocation and historical gross dividend contribution</strong></summary>
 
 ![Report figure 2](report/assets/figure-02.png)
 
@@ -5180,13 +5212,13 @@ Each share has two adjacent bars. The blue bar is the change required for Baltic
 
 </details>
 
-<details markdown="1" class="report-section" id="section-7">
-<summary><strong>7. Earnings outcomes and subsequent price changes</strong></summary>
+<details markdown="1" class="report-section" id="section-8">
+<summary><strong>8. Earnings outcomes and subsequent price changes</strong></summary>
 
 Official announcement text allowed 217 of 349 earnings releases to be classified. Higher or lower profit refers to the issuer's explicit comparison with the earlier comparable period. In line or unchanged is used only for an explicit plan, forecast, expectation or unchanged-profit statement. Loss requires an explicit realised net or operating loss.
 
 <details markdown="1">
-<summary><strong>Table 7.a. Conditional price statistics by reported profit outcome</strong></summary>
+<summary><strong>Table 8.a. Conditional price statistics by reported profit outcome</strong></summary>
 
 | profit_outcome | horizon | events | conditional_mean_return | conditional_variance_return | conditional_median_return | positive_return_share | conditional_mean_abnormal | conditional_variance_abnormal | conditional_median_abnormal |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -5209,7 +5241,7 @@ Official announcement text allowed 217 of 349 earnings releases to be classified
 Means, medians and positive shares are percentages; variances are squared percentage points. Abnormal return is the share return minus the equal-weight Baltic-market return over the same horizon.
 
 <details markdown="1">
-<summary><strong>Table 7.b. Kruskal-Wallis tests across profit-outcome groups</strong></summary>
+<summary><strong>Table 8.b. Kruskal-Wallis tests across profit-outcome groups</strong></summary>
 
 | horizon_days | groups | classified_events | kruskal_H | p_value | p_BH | conclusion |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -5224,11 +5256,11 @@ The BH adjustment covers the full family of share-level, pooled and pairwise tes
 
 </details>
 
-<details markdown="1" class="report-section" id="section-8">
-<summary><strong>8. Statistical and performance analysis</strong></summary>
+<details markdown="1" class="report-section" id="section-9">
+<summary><strong>9. Statistical and performance analysis</strong></summary>
 
 <details markdown="1">
-<summary><strong>Table 8.a. Empirical statistics of portfolio and S&P 500 daily returns</strong></summary>
+<summary><strong>Table 9.a. Empirical statistics of portfolio and S&P 500 daily returns</strong></summary>
 
 | entity | observations | mean | median | SD | minimum | maximum | skewness | kurtosis | VaR_95 | ES_95 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -5253,7 +5285,7 @@ The BH adjustment covers the full family of share-level, pooled and pairwise tes
 Baltic_NetSD has mean daily return 0.000450, median 0.000158 and daily standard deviation 0.004428. Its historical 95% VaR is 0.005250 and ES (CVaR) is 0.009381. VaR is the loss threshold exceeded on approximately 5% of days; ES is the average return in that adverse tail.
 
 <details markdown="1">
-<summary><strong>Figure 8.a. Pearson asset-return correlations with Ward.D2 hierarchical clustering</strong></summary>
+<summary><strong>Figure 9.a. Pearson asset-return correlations with Ward.D2 hierarchical clustering</strong></summary>
 
 ![Report figure 3](report/assets/figure-03.png)
 
@@ -5261,7 +5293,7 @@ Baltic_NetSD has mean daily return 0.000450, median 0.000158 and daily standard 
 
 
 <details markdown="1">
-<summary><strong>Figure 8.b. Spearman asset-return correlations with Ward.D2 hierarchical clustering</strong></summary>
+<summary><strong>Figure 9.b. Spearman asset-return correlations with Ward.D2 hierarchical clustering</strong></summary>
 
 ![Report figure 4](report/assets/figure-04.png)
 
@@ -5271,7 +5303,7 @@ Baltic_NetSD has mean daily return 0.000450, median 0.000158 and daily standard 
 Blue indicates negative correlation, white indicates correlation near zero and red indicates positive correlation. Ward.D2 clustering orders shares with similar dependence patterns next to each other; the dendrogram shows the resulting groups.
 
 <details markdown="1">
-<summary><strong>Figure 8.c. Histograms and kernel densities; every panel uses the same return-axis limits</strong></summary>
+<summary><strong>Figure 9.c. Histograms and kernel densities; every panel uses the same return-axis limits</strong></summary>
 
 ![Report figure 5](report/assets/figure-05.png)
 
@@ -5281,7 +5313,7 @@ Blue indicates negative correlation, white indicates correlation near zero and r
 The recalculated Baltic_NetSD maximum daily return is 0.034990. The earlier value 0.168092 on 2025-06-25 was traced to RKB1R, whose unadjusted close moved from EUR 0.107 to EUR 0.476 between common Baltic trading dates. RKB1R belongs to the Baltic Secondary List. After excluding every Secondary List share from the investable set, this observation no longer enters the portfolio return; RKB1R is now excluded from both the investable set and every netSD reference network, so the suspect observation cannot affect the objective or its denominator.
 
 <details markdown="1">
-<summary><strong>Figure 8.d. Portfolio and S&P 500 complete empirical CDF; right side truncated at return 0.05</strong></summary>
+<summary><strong>Figure 9.d. Portfolio and S&P 500 complete empirical CDF; right side truncated at return 0.05</strong></summary>
 
 <div class="cdf-with-key"><img src="report/assets/figure-06.png" alt="CDF graph"><img class="cdf-key" src="report/assets/figure-10.png" alt="CDF legend"></div>
 
@@ -5289,7 +5321,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.034990. The earlier valu
 
 
 <details markdown="1">
-<summary><strong>Figure 8.e. Portfolio and S&P 500 empirical CDF: enlarged left tail</strong></summary>
+<summary><strong>Figure 9.e. Portfolio and S&P 500 empirical CDF: enlarged left tail</strong></summary>
 
 <div class="cdf-with-key"><img src="report/assets/figure-07.png" alt="CDF graph"><img class="cdf-key" src="report/assets/figure-10.png" alt="CDF legend"></div>
 
@@ -5297,7 +5329,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.034990. The earlier valu
 
 
 <details markdown="1">
-<summary><strong>Figure 8.f. Portfolio and S&P 500 empirical CDF: enlarged centre</strong></summary>
+<summary><strong>Figure 9.f. Portfolio and S&P 500 empirical CDF: enlarged centre</strong></summary>
 
 <div class="cdf-with-key"><img src="report/assets/figure-08.png" alt="CDF graph"><img class="cdf-key" src="report/assets/figure-10.png" alt="CDF legend"></div>
 
@@ -5305,7 +5337,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.034990. The earlier valu
 
 
 <details markdown="1">
-<summary><strong>Figure 8.g. Portfolio and S&P 500 empirical CDF: enlarged right tail</strong></summary>
+<summary><strong>Figure 9.g. Portfolio and S&P 500 empirical CDF: enlarged right tail</strong></summary>
 
 <div class="cdf-with-key"><img src="report/assets/figure-09.png" alt="CDF graph"><img class="cdf-key" src="report/assets/figure-10.png" alt="CDF legend"></div>
 
@@ -5313,7 +5345,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.034990. The earlier valu
 
 
 <details markdown="1">
-<summary><strong>Figure 8.h. Individual-share complete empirical CDF restricted to returns from -0.30 to 0.30</strong></summary>
+<summary><strong>Figure 9.h. Individual-share complete empirical CDF restricted to returns from -0.30 to 0.30</strong></summary>
 
 ![Report figure 11](report/assets/figure-11.png)
 
@@ -5321,7 +5353,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.034990. The earlier valu
 
 
 <details markdown="1">
-<summary><strong>Figure 8.i. Individual-share empirical CDF: enlarged left tail</strong></summary>
+<summary><strong>Figure 9.i. Individual-share empirical CDF: enlarged left tail</strong></summary>
 
 ![Report figure 12](report/assets/figure-12.png)
 
@@ -5329,7 +5361,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.034990. The earlier valu
 
 
 <details markdown="1">
-<summary><strong>Figure 8.j. Individual-share empirical CDF: enlarged centre</strong></summary>
+<summary><strong>Figure 9.j. Individual-share empirical CDF: enlarged centre</strong></summary>
 
 ![Report figure 13](report/assets/figure-13.png)
 
@@ -5337,7 +5369,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.034990. The earlier valu
 
 
 <details markdown="1">
-<summary><strong>Figure 8.k. Individual-share empirical CDF: enlarged right tail</strong></summary>
+<summary><strong>Figure 9.k. Individual-share empirical CDF: enlarged right tail</strong></summary>
 
 ![Report figure 14](report/assets/figure-14.png)
 
@@ -5345,7 +5377,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.034990. The earlier valu
 
 
 <details markdown="1">
-<summary><strong>Figure 8.l. Separate colour and line-pattern key for the individual-share CDF and dominance figures</strong></summary>
+<summary><strong>Figure 9.l. Separate colour and line-pattern key for the individual-share CDF and dominance figures</strong></summary>
 
 ![Report figure 15](report/assets/figure-15.png)
 
@@ -5353,7 +5385,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.034990. The earlier valu
 
 
 <details markdown="1">
-<summary><strong>Figure 8.m. Portfolio and benchmark FSD component H1(x)</strong></summary>
+<summary><strong>Figure 9.m. Portfolio and benchmark FSD component H1(x)</strong></summary>
 
 ![Report figure 16](report/assets/figure-16.png)
 
@@ -5361,7 +5393,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.034990. The earlier valu
 
 
 <details markdown="1">
-<summary><strong>Figure 8.n. Portfolio and benchmark SSD component H2(x): enlarged right side with curve-end labels</strong></summary>
+<summary><strong>Figure 9.n. Portfolio and benchmark SSD component H2(x): enlarged right side with curve-end labels</strong></summary>
 
 ![Report figure 17](report/assets/figure-17.png)
 
@@ -5369,7 +5401,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.034990. The earlier valu
 
 
 <details markdown="1">
-<summary><strong>Figure 8.o. Portfolio and benchmark TSD component H3(x): enlarged right side with curve-end labels</strong></summary>
+<summary><strong>Figure 9.o. Portfolio and benchmark TSD component H3(x): enlarged right side with curve-end labels</strong></summary>
 
 ![Report figure 18](report/assets/figure-18.png)
 
@@ -5377,7 +5409,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.034990. The earlier valu
 
 
 <details markdown="1">
-<summary><strong>Figure 8.p. Individual-share FSD component H1(x)</strong></summary>
+<summary><strong>Figure 9.p. Individual-share FSD component H1(x)</strong></summary>
 
 ![Report figure 19](report/assets/figure-19.png)
 
@@ -5385,7 +5417,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.034990. The earlier valu
 
 
 <details markdown="1">
-<summary><strong>Figure 8.q. Individual-share SSD component H2(x): enlarged right side with curve-end labels</strong></summary>
+<summary><strong>Figure 9.q. Individual-share SSD component H2(x): enlarged right side with curve-end labels</strong></summary>
 
 ![Report figure 20](report/assets/figure-20.png)
 
@@ -5393,7 +5425,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.034990. The earlier valu
 
 
 <details markdown="1">
-<summary><strong>Figure 8.r. Individual-share TSD component H3(x): enlarged right side with curve-end labels</strong></summary>
+<summary><strong>Figure 9.r. Individual-share TSD component H3(x): enlarged right side with curve-end labels</strong></summary>
 
 ![Report figure 21](report/assets/figure-21.png)
 
@@ -5403,7 +5435,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.034990. The earlier valu
 For every entity, H1(x)=F(x) is the empirical CDF used for FSD. H2(x)=∫H1(u)du is the cumulative FSD component used for SSD, and H3(x)=∫H2(u)du is the cumulative SSD component used for TSD. The CSV files accompanying the report contain every displayed entity as a separate column on the same return-threshold grid.
 
 <details markdown="1">
-<summary><strong>Figure 8.s. Baltic_NetSD minus every other portfolio: FSD-component differences</strong></summary>
+<summary><strong>Figure 9.s. Baltic_NetSD minus every other portfolio: FSD-component differences</strong></summary>
 
 ![Report figure 22](report/assets/figure-22.png)
 
@@ -5411,7 +5443,7 @@ For every entity, H1(x)=F(x) is the empirical CDF used for FSD. H2(x)=∫H1(u)du
 
 
 <details markdown="1">
-<summary><strong>Figure 8.t. Baltic_NetSD minus every other portfolio: SSD-component differences</strong></summary>
+<summary><strong>Figure 9.t. Baltic_NetSD minus every other portfolio: SSD-component differences</strong></summary>
 
 ![Report figure 23](report/assets/figure-23.png)
 
@@ -5419,7 +5451,7 @@ For every entity, H1(x)=F(x) is the empirical CDF used for FSD. H2(x)=∫H1(u)du
 
 
 <details markdown="1">
-<summary><strong>Figure 8.u. Baltic_NetSD minus every other portfolio: TSD-component differences</strong></summary>
+<summary><strong>Figure 9.u. Baltic_NetSD minus every other portfolio: TSD-component differences</strong></summary>
 
 ![Report figure 24](report/assets/figure-24.png)
 
@@ -5427,7 +5459,7 @@ For every entity, H1(x)=F(x) is the empirical CDF used for FSD. H2(x)=∫H1(u)du
 
 
 <details markdown="1">
-<summary><strong>Figure 8.v. Baltic_NetSD minus every individual share: FSD-component differences</strong></summary>
+<summary><strong>Figure 9.v. Baltic_NetSD minus every individual share: FSD-component differences</strong></summary>
 
 ![Report figure 25](report/assets/figure-25.png)
 
@@ -5435,7 +5467,7 @@ For every entity, H1(x)=F(x) is the empirical CDF used for FSD. H2(x)=∫H1(u)du
 
 
 <details markdown="1">
-<summary><strong>Figure 8.w. Baltic_NetSD minus every individual share: SSD-component differences</strong></summary>
+<summary><strong>Figure 9.w. Baltic_NetSD minus every individual share: SSD-component differences</strong></summary>
 
 ![Report figure 26](report/assets/figure-26.png)
 
@@ -5443,7 +5475,7 @@ For every entity, H1(x)=F(x) is the empirical CDF used for FSD. H2(x)=∫H1(u)du
 
 
 <details markdown="1">
-<summary><strong>Figure 8.x. Baltic_NetSD minus every individual share: TSD-component differences</strong></summary>
+<summary><strong>Figure 9.x. Baltic_NetSD minus every individual share: TSD-component differences</strong></summary>
 
 ![Report figure 27](report/assets/figure-27.png)
 
@@ -5455,7 +5487,7 @@ Each difference is calculated pointwise as Hq_Baltic_NetSD(x) - Hq_comparator(x)
 ### Local SSD advantages at large return thresholds
 
 <details markdown="1">
-<summary><strong>Table 8.b. Local right-side SSD-component advantages over Baltic_NetSD</strong></summary>
+<summary><strong>Table 9.b. Local right-side SSD-component advantages over Baltic_NetSD</strong></summary>
 
 | comparator | type | local_advantage_from_x | display_upper_x | end_difference | maximum_difference |
 | --- | --- | --- | --- | --- | --- |
@@ -5483,7 +5515,7 @@ These are local, right-side comparisons and must not be interpreted as SSD over 
 The result that may appear surprising in the difference figures is therefore real but local. NetSD_training has a smaller H2 component than Baltic_NetSD from x=0.012089 to the displayed right endpoint, and NetSD_full does so from x=0.016037. Neither portfolio SSD-dominates Baltic_NetSD over the complete support because the required inequality fails at smaller x values. The listed shares deserve separate investment analysis because their upper-threshold SSD components are favourable. RKB1R is absent from these recalculated comparisons because its suspect unadjusted prices fail the data-quality screen. A local right-side advantage is evidence about one part of the distribution and is not full-domain SSD dominance.
 
 <details markdown="1">
-<summary><strong>Table 8.c. Weight concentration and diversification</strong></summary>
+<summary><strong>Table 9.c. Weight concentration and diversification</strong></summary>
 
 | portfolio | HHI_weights | effective_number | maximum_weight | number_positive | diversification_ratio |
 | --- | --- | --- | --- | --- | --- |
@@ -5507,7 +5539,7 @@ The result that may appear surprising in the difference figures is therefore rea
 For Baltic_NetSD, HHI=0.060139; lower is better because less capital is concentrated in a few shares. Its effective number of equally weighted positions is 16.63, the largest weight is 9.12%, and the diversification ratio is 2.619; a value above 1 means portfolio volatility is below the weighted average volatility of its components.
 
 <details markdown="1">
-<summary><strong>Figure 8.y. HHI concentration comparison</strong></summary>
+<summary><strong>Figure 9.y. HHI concentration comparison</strong></summary>
 
 ![Report figure 28](report/assets/figure-28.png)
 
@@ -5515,7 +5547,7 @@ For Baltic_NetSD, HHI=0.060139; lower is better because less capital is concentr
 
 
 <details markdown="1">
-<summary><strong>Table 8.d. Canonical comparable netSD results</strong></summary>
+<summary><strong>Table 9.d. Canonical comparable netSD results</strong></summary>
 
 | entity | OUT | IN | denominator | netSD | mean | SD |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -5541,7 +5573,7 @@ Baltic_NetSD has OUT=98 and IN=0. Dividing OUT-IN by the common network fixed de
 For curent_update_baltic, IN=0 because Baltic_NetSD dominates it by third-order stochastic dominance over the complete empirical support. There are no incoming FSD or SSD relations. Thus IN=1 is one directed TSD relation from Baltic_NetSD, rather than one adverse observation or one share.
 
 <details markdown="1">
-<summary><strong>Table 8.e. Systematic risk relative to S&P 500</strong></summary>
+<summary><strong>Table 9.e. Systematic risk relative to S&P 500</strong></summary>
 
 | entity | CAPMBeta | CAPMAlpha | JensenAlpha | SpecificRisk | SystematicRisk | TotalRisk | TrackingError_Annualized | Information_Annualized |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -5566,7 +5598,7 @@ For curent_update_baltic, IN=0 because Baltic_NetSD dominates it by third-order 
 CAPM beta measures sensitivity to S&P 500: beta below 1 means a smaller average response to market movements, while beta above 1 means greater sensitivity. SpecificRisk is the residual component not explained by the benchmark; SystematicRisk is the benchmark-related component; TotalRisk combines both.
 
 <details markdown="1">
-<summary><strong>Table 8.f. Individual-share netSD and admissibility for the new optimisation</strong></summary>
+<summary><strong>Table 9.f. Individual-share netSD and admissibility for the new optimisation</strong></summary>
 
 | asset | OUT | IN | denominator | netSD | segment | positive_netSD | secondary_list | admissible |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -5632,7 +5664,7 @@ CAPM beta measures sensitivity to S&P 500: beta below 1 means a smaller average 
 A share is investment-admissible only when its individual netSD is strictly positive and it does not belong to the Baltic Secondary List. Secondary List shares remain in the dominance reference network used to calculate netSD, but their portfolio weights are fixed at zero.
 
 <details markdown="1">
-<summary><strong>Figure 8.z. Classical mean-SD efficient frontier and observed portfolios</strong></summary>
+<summary><strong>Figure 9.z. Classical mean-SD efficient frontier and observed portfolios</strong></summary>
 
 ![Report figure 29](report/assets/figure-29.png)
 
@@ -5642,7 +5674,7 @@ A share is investment-admissible only when its individual netSD is strictly posi
 The curve is the single long-only Markowitz efficient frontier calculated from all 55 quality-approved shares. Shares and previously formed portfolios are points. Baltic_NetSD is highlighted in red because it maximises the stochastic-dominance objective rather than variance, so it need not lie on the Markowitz curve.
 
 <details markdown="1">
-<summary><strong>Figure 8.aa. Cumulative returns, daily returns and drawdowns</strong></summary>
+<summary><strong>Figure 9.aa. Cumulative returns, daily returns and drawdowns</strong></summary>
 
 ![Report figure 30](report/assets/figure-30.png)
 
@@ -5650,7 +5682,7 @@ The curve is the single long-only Markowitz efficient frontier calculated from a
 
 
 <details markdown="1">
-<summary><strong>Table 8.g. Complete PerformanceAnalytics comparison</strong></summary>
+<summary><strong>Table 9.g. Complete PerformanceAnalytics comparison</strong></summary>
 
 | Measure | Current | Markowitz_training | MAD_training | Minimax_training | Robust_training | NetSD_training | Markowitz_full | MAD_full | Minimax_full | Robust_full | NetSD_full | Baltic_NetSD | curent_update_baltic |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -5730,17 +5762,17 @@ The curve is the single long-only Markowitz efficient frontier calculated from a
 </details>
 
 
-Table 8.g contains all 72 measures calculated directly with PerformanceAnalytics: measures are rows and portfolios are columns. S&P 500 is the benchmark for CAPM, information, tracking-error, capture and systematic-risk measures. It remains in Table 8.a and the figures; it is omitted from Table 8.g because its information ratio relative to itself has a zero tracking-error denominator.
+Table 9.g contains all 72 measures calculated directly with PerformanceAnalytics: measures are rows and portfolios are columns. S&P 500 is the benchmark for CAPM, information, tracking-error, capture and systematic-risk measures. It remains in Table 9.a and the figures; it is omitted from Table 9.g because its information ratio relative to itself has a zero tracking-error denominator.
 
 </details>
 
-<details markdown="1" class="report-section" id="section-9">
-<summary><strong>9. Decision risks and implementability</strong></summary>
+<details markdown="1" class="report-section" id="section-10">
+<summary><strong>10. Decision risks and implementability</strong></summary>
 
 ### Liquidity and turnover
 
 <details markdown="1">
-<summary><strong>Table 9.a. Proposed trades and observed one-year market liquidity</strong></summary>
+<summary><strong>Table 10.a. Proposed trades and observed one-year market liquidity</strong></summary>
 
 | asset | trade_shares | trade_value_EUR | median_daily_turnover_EUR | zero_volume_fraction | trade_to_median_turnover | liquidity_flag |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -5774,7 +5806,7 @@ Table 8.g contains all 72 measures calculated directly with PerformanceAnalytics
 Median daily turnover and zero-volume frequency use official Nasdaq Baltic price-volume observations from the last 365 calendar days of the sample. Trade-to-turnover is the proposed absolute order value divided by median daily turnover. HIGH flags median turnover below EUR 5,000 or an order above 20% of median turnover; MEDIUM flags below EUR 20,000 or above 10%. These are transparent screening thresholds, not a guarantee of execution. HIGH trades should be split, limited or omitted after checking the live order book.
 
 <details markdown="1">
-<summary><strong>Table 9.b. Illustrative transaction-cost and turnover scenario</strong></summary>
+<summary><strong>Table 10.b. Illustrative transaction-cost and turnover scenario</strong></summary>
 
 | portfolio | turnover_EUR | number_of_trades | estimated_cost_EUR | high_liquidity_risk_trades | cost_percent_of_15000 |
 | --- | --- | --- | --- | --- | --- |
@@ -5789,7 +5821,7 @@ The cost scenario uses max(EUR 3, 0.25% of trade value) commission plus an assum
 ### Capital concentration
 
 <details markdown="1">
-<summary><strong>Table 9.c. Top-position and effective-position concentration</strong></summary>
+<summary><strong>Table 10.c. Top-position and effective-position concentration</strong></summary>
 
 | portfolio | positions | top5_share | top10_share | HHI | effective_positions |
 | --- | --- | --- | --- | --- | --- |
@@ -5800,7 +5832,7 @@ The cost scenario uses max(EUR 3, 0.25% of trade value) commission plus an assum
 
 
 <details markdown="1">
-<summary><strong>Table 9.d. Baltic_NetSD: country, list and industry concentration</strong></summary>
+<summary><strong>Table 10.d. Baltic_NetSD: country, list and industry concentration</strong></summary>
 
 | dimension | category | capital_percent |
 | --- | --- | --- |
@@ -5835,7 +5867,7 @@ The cost scenario uses max(EUR 3, 0.25% of trade value) commission plus an assum
 
 
 <details markdown="1">
-<summary><strong>Table 9.e. curent_update_baltic: country, list and industry concentration</strong></summary>
+<summary><strong>Table 10.e. curent_update_baltic: country, list and industry concentration</strong></summary>
 
 | dimension | category | capital_percent |
 | --- | --- | --- |
@@ -5872,7 +5904,7 @@ The number of holdings is not a diversification measure. Top-five and top-ten sh
 ### In-sample, out-of-sample and complete-period validation
 
 <details markdown="1">
-<summary><strong>Table 9.f. In-sample portfolio-return statistics for the 70% training window</strong></summary>
+<summary><strong>Table 10.f. In-sample portfolio-return statistics for the 70% training window</strong></summary>
 
 | period | portfolio | observations | mean | median | SD | minimum | maximum |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -5887,7 +5919,7 @@ The number of holdings is not a diversification measure. Top-five and top-ten sh
 
 
 <details markdown="1">
-<summary><strong>Table 9.g. Out-of-sample portfolio-return statistics for the 30% holdout window</strong></summary>
+<summary><strong>Table 10.g. Out-of-sample portfolio-return statistics for the 30% holdout window</strong></summary>
 
 | period | portfolio | observations | mean | median | SD | minimum | maximum |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -5901,10 +5933,10 @@ The number of holdings is not a diversification measure. Top-five and top-ten sh
 </details>
 
 
-The in-sample and out-of-sample tables use the same fixed 70/30 split. Portfolio weights are estimated from the training window and then left unchanged in the holdout window. Table 8.a remains the complete-period description; it must not be interpreted as an independent test.
+The in-sample and out-of-sample tables use the same fixed 70/30 split. Portfolio weights are estimated from the training window and then left unchanged in the holdout window. Table 9.a remains the complete-period description; it must not be interpreted as an independent test.
 
 <details markdown="1">
-<summary><strong>Table 9.h. Existing 70/30 holdout experiment: portfolio-only netSD on unseen test data</strong></summary>
+<summary><strong>Table 10.h. Existing 70/30 holdout experiment: portfolio-only netSD on unseen test data</strong></summary>
 
 | entity | out | in | network_denominator | netSD |
 | --- | --- | --- | --- | --- |
@@ -5929,8 +5961,8 @@ Dividend values are historical gross cash distributions. They are excluded from 
 
 </details>
 
-<details markdown="1" class="report-section" id="section-10">
-<summary><strong>10. Model</strong></summary>
+<details markdown="1" class="report-section" id="section-11">
+<summary><strong>11. Model</strong></summary>
 
 ### Exact mathematical formulation of the netSD portfolio
 
@@ -5950,8 +5982,8 @@ The objective is discrete and non-convex. ISRES evaluates candidate portfolios n
 
 </details>
 
-<details markdown="1" class="report-section" id="section-11">
-<summary><strong>11. Data coverage</strong></summary>
+<details markdown="1" class="report-section" id="section-12">
+<summary><strong>12. Data coverage</strong></summary>
 
 The official Nasdaq Baltic list contained 67 shares. 55 shares had Yahoo closing-price history covering the complete study window and entered the common-date return matrix. Shares with incomplete or unavailable histories are excluded from both the optimisation and Table 2.b. No price interpolation or zero-return replacement was used.
 
@@ -6002,10 +6034,10 @@ const palette = ['#888','#999','#aaa','#777','#5b8','#9467bd','#8c564b','#e377c2
 function initialiseDominanceExplorer(box) {
   if (box.dataset.loaded) return;
   box.dataset.loaded = 'loading';
-  const asset = box.dataset.asset;
-  fetch(`interactive/dominance/${asset}.json`).then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); }).then(data => {
+  const profile = box.dataset.asset, target = box.dataset.target || profile;
+  fetch(`interactive/dominance/${profile}.json`).then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); }).then(data => {
     const first=data.orders.FSD, seriesNames=Object.keys(first.series), preferred=['Current','SP500','curent_update_baltic','Baltic_NetSD'];
-    const benchmarks=[...preferred.filter(x=>seriesNames.includes(x)),...seriesNames.filter(x=>x!==asset&&!preferred.includes(x))];
+    const benchmarks=[...preferred.filter(x=>seriesNames.includes(x)&&x!==target),...seriesNames.filter(x=>x!==target&&!preferred.includes(x))];
     box.innerHTML = `<div class="dominance-controls">
       <label>Component<select class="dom-order"><option>FSD</option><option>SSD</option><option>TSD</option></select></label>
       <label>Difference benchmark<select class="dom-benchmark">${benchmarks.map(x=>`<option>${x}</option>`).join('')}</select></label>
@@ -6027,29 +6059,75 @@ function initialiseDominanceExplorer(box) {
       const main={l:L,r:L+leftW,t:T,b:T+panelH}, zoom={l:L+leftW+colGap,r:W-R,t:T,b:T+panelH};
       const diff={l:L,r:L+leftW,t:T+panelH+rowGap,b:T+2*panelH+rowGap}, diffZoom={l:L+leftW+colGap,r:W-R,t:T+panelH+rowGap,b:T+2*panelH+rowGap}; hit=[main,diff];
       const mid=Math.round(centre*(n-1)), count=Math.max(8,Math.round(n/Number(hz.value))), lo=Math.max(0,Math.min(n-count,mid-Math.floor(count/2))), hi=Math.min(n-1,lo+count-1);
-      const bench=benchmark.value, difference=d.series[asset].map((v,i)=>v-d.series[bench][i]);
+      const bench=benchmark.value, difference=d.series[target].map((v,i)=>v-d.series[bench][i]);
       function yrange(i0,i1,keys=names) { let mn=Infinity,mx=-Infinity; keys.forEach(k=>{for(let i=i0;i<=i1;i++){const v=d.series[k][i];if(v<mn)mn=v;if(v>mx)mx=v;}}); if(mx===mn){mx+=1;mn-=1} return [mn,mx]; }
       function arrayRange(a,i0,i1){let mn=Infinity,mx=-Infinity;for(let i=i0;i<=i1;i++){if(a[i]<mn)mn=a[i];if(a[i]>mx)mx=a[i];}if(mx===mn){mx+=1;mn-=1}return[mn,mx];}
       function magnify(y,m){const c=(y[0]+y[1])/2,h=(y[1]-y[0])/2/Number(m);return[c-h,c+h];}
       function axes(p,x0,x1,y0,y1,label) { ctx.strokeStyle='#9aabb5';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(p.l,p.t);ctx.lineTo(p.l,p.b);ctx.lineTo(p.r,p.b);ctx.stroke();ctx.fillStyle='#263d4b';ctx.fillText(label,p.l,p.t-9); for(let j=0;j<=6;j++){const xx=p.l+(p.r-p.l)*j/6,xv=x0+(x1-x0)*j/6;ctx.fillText(xv.toFixed(5),xx-22,p.b+17);} for(let j=0;j<=5;j++){const yy=p.b-(p.b-p.t)*j/5,yv=y0+(y1-y0)*j/5;ctx.fillText(yv.toExponential(2),Math.max(1,p.l-62),yy+4);} if(y0<=0&&y1>=0){const zy=p.b-(0-y0)/(y1-y0)*(p.b-p.t);ctx.strokeStyle='#17212b';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(p.l,zy);ctx.lineTo(p.r,zy);ctx.stroke();ctx.fillStyle='#17212b';ctx.font='bold 13px system-ui';ctx.fillText('0',p.l-15,zy+4);ctx.font='12px system-ui';} }
-      function plot(p,i0,i1,y0,y1) { names.forEach((k,ki)=>{const special=k===asset||k==='Current'||k==='Baltic_NetSD'||k==='curent_update_baltic'||k===bench;ctx.strokeStyle=k===asset?'#c2185b':k==='Current'?'#009e73':k==='Baltic_NetSD'?'#0072b2':k==='curent_update_baltic'?'#d55e00':k===bench?'#6a3d9a':palette[ki%palette.length];ctx.globalAlpha=special?1:.30;ctx.lineWidth=k===asset?3:special?2.1:1;ctx.beginPath();for(let i=i0;i<=i1;i++){const px=p.l+(x[i]-x[i0])/(x[i1]-x[i0]||1)*(p.r-p.l),py=p.b-(d.series[k][i]-y0)/(y1-y0||1)*(p.b-p.t);if(i===i0)ctx.moveTo(px,py);else ctx.lineTo(px,py);}ctx.stroke();});ctx.globalAlpha=1; }
+      function plot(p,i0,i1,y0,y1) { names.forEach((k,ki)=>{const special=k===target||k==='Current'||k==='Baltic_NetSD'||k==='curent_update_baltic'||k===bench;ctx.strokeStyle=k===target?'#c2185b':k==='Current'?'#009e73':k==='Baltic_NetSD'?'#0072b2':k==='curent_update_baltic'?'#d55e00':k===bench?'#6a3d9a':palette[ki%palette.length];ctx.globalAlpha=special?1:.30;ctx.lineWidth=k===target?3:special?2.1:1;ctx.beginPath();for(let i=i0;i<=i1;i++){const px=p.l+(x[i]-x[i0])/(x[i1]-x[i0]||1)*(p.r-p.l),py=p.b-(d.series[k][i]-y0)/(y1-y0||1)*(p.b-p.t);if(i===i0)ctx.moveTo(px,py);else ctx.lineTo(px,py);}ctx.stroke();});ctx.globalAlpha=1; }
       function plotDifference(p,i0,i1,y0,y1){ctx.strokeStyle='#c2185b';ctx.lineWidth=2.8;ctx.beginPath();for(let i=i0;i<=i1;i++){const px=p.l+(x[i]-x[i0])/(x[i1]-x[i0]||1)*(p.r-p.l),py=p.b-(difference[i]-y0)/(y1-y0||1)*(p.b-p.t);if(i===i0)ctx.moveTo(px,py);else ctx.lineTo(px,py);}ctx.stroke();}
-      const ym=yrange(0,n-1); axes(main,x[0],x[n-1],ym[0],ym[1],`${asset}: ${order.value} components - scroll or click to move`); plot(main,0,n-1,ym[0],ym[1]);
+      const ym=yrange(0,n-1); axes(main,x[0],x[n-1],ym[0],ym[1],`${target}: ${order.value} components - scroll or click to move`); plot(main,0,n-1,ym[0],ym[1]);
       const sx0=main.l+(x[lo]-x[0])/(x[n-1]-x[0])*(main.r-main.l), sx1=main.l+(x[hi]-x[0])/(x[n-1]-x[0])*(main.r-main.l);ctx.strokeStyle='#d7191c';ctx.lineWidth=2;ctx.strokeRect(sx0,main.t,Math.max(2,sx1-sx0),main.b-main.t);
       let yz=magnify(yrange(lo,hi),vz.value); axes(zoom,x[lo],x[hi],yz[0],yz[1],`Magnified components (${hz.value}x by ${vz.value}x)`); plot(zoom,lo,hi,yz[0],yz[1]);
-      let yd=arrayRange(difference,0,n-1);axes(diff,x[0],x[n-1],yd[0],yd[1],`${asset} minus ${bench}`);plotDifference(diff,0,n-1,yd[0],yd[1]);ctx.strokeStyle='#d7191c';ctx.lineWidth=2;ctx.strokeRect(sx0,diff.t,Math.max(2,sx1-sx0),diff.b-diff.t);
+      let yd=arrayRange(difference,0,n-1);axes(diff,x[0],x[n-1],yd[0],yd[1],`${target} minus ${bench}`);plotDifference(diff,0,n-1,yd[0],yd[1]);ctx.strokeStyle='#d7191c';ctx.lineWidth=2;ctx.strokeRect(sx0,diff.t,Math.max(2,sx1-sx0),diff.b-diff.t);
       let ydz=magnify(arrayRange(difference,lo,hi),dz.value);axes(diffZoom,x[lo],x[hi],ydz[0],ydz[1],`Magnified difference (${hz.value}x by ${dz.value}x)`);plotDifference(diffZoom,lo,hi,ydz[0],ydz[1]);
-      const legend=[asset,'Current','Baltic_NetSD','curent_update_baltic',bench].filter((k,i,a)=>d.series[k]&&a.indexOf(k)===i); legend.forEach((k,j)=>{ctx.fillStyle=k===asset?'#c2185b':k==='Current'?'#009e73':k==='Baltic_NetSD'?'#0072b2':k==='curent_update_baltic'?'#d55e00':'#6a3d9a';ctx.fillRect(L+(j%3)*190,18+Math.floor(j/3)*20,22,4);ctx.fillStyle='#263d4b';ctx.fillText(k,L+29+(j%3)*190,23+Math.floor(j/3)*20);});
-      const values=[asset,'Current',bench].filter((k,i,a)=>d.series[k]&&a.indexOf(k)===i).map(k=>`${k}=${d.series[k][mid].toExponential(5)}`).join(' | '); status.textContent=`x=${x[mid].toFixed(6)}; selected interval [${x[lo].toFixed(6)}, ${x[hi].toFixed(6)}]; difference=${difference[mid].toExponential(5)} | ${values}`;
+      const legend=[target,'Current','Baltic_NetSD','curent_update_baltic',bench].filter((k,i,a)=>d.series[k]&&a.indexOf(k)===i); legend.forEach((k,j)=>{ctx.fillStyle=k===target?'#c2185b':k==='Current'?'#009e73':k==='Baltic_NetSD'?'#0072b2':k==='curent_update_baltic'?'#d55e00':'#6a3d9a';ctx.fillRect(L+(j%3)*190,18+Math.floor(j/3)*20,22,4);ctx.fillStyle='#263d4b';ctx.fillText(k,L+29+(j%3)*190,23+Math.floor(j/3)*20);});
+      const values=[target,'Current',bench].filter((k,i,a)=>d.series[k]&&a.indexOf(k)===i).map(k=>`${k}=${d.series[k][mid].toExponential(5)}`).join(' | '); status.textContent=`x=${x[mid].toFixed(6)}; selected interval [${x[lo].toFixed(6)}, ${x[hi].toFixed(6)}]; difference=${difference[mid].toExponential(5)} | ${values}`;
       xpos.value=Math.round(centre*1000);box.querySelector('.dom-xout').value=`${(100*centre).toFixed(1)}%`;box.querySelector('.dom-hout').value=`${hz.value}x`;box.querySelector('.dom-vout').value=`${vz.value}x`;box.querySelector('.dom-dout').value=`${dz.value}x`;
     }
     [order,benchmark,hz,vz,dz].forEach(el=>el.addEventListener('input',render));xpos.addEventListener('input',()=>{centre=Number(xpos.value)/1000;render();});
     canvas.addEventListener('click',e=>{const r=canvas.getBoundingClientRect(),px=e.clientX-r.left,py=e.clientY-r.top;const p=hit.find(q=>px>=q.l&&px<=q.r&&py>=q.t&&py<=q.b);if(p){centre=Math.max(0,Math.min(1,(px-p.l)/(p.r-p.l)));render();}});
     canvas.addEventListener('wheel',e=>{const r=canvas.getBoundingClientRect(),px=e.clientX-r.left,py=e.clientY-r.top;if(hit.some(q=>px>=q.l&&px<=q.r&&py>=q.t&&py<=q.b)){e.preventDefault();centre=Math.max(0,Math.min(1,centre+Math.sign(e.deltaY)*.015));render();}},{passive:false});
-    box.querySelector('.dom-save').addEventListener('click',()=>{const a=document.createElement('a');a.download=`${asset}_${order.value}_interactive.png`;a.href=canvas.toDataURL('image/png');a.click();});
+    box.querySelector('.dom-save').addEventListener('click',()=>{const a=document.createElement('a');a.download=`${target}_${order.value}_interactive.png`;a.href=canvas.toDataURL('image/png');a.click();});
     window.addEventListener('resize',render); render(); box.dataset.loaded='yes';
   }).catch(err=>{box.innerHTML=`<p>Interactive graph could not be loaded: ${err.message}</p>`;box.dataset.loaded='';});
 }
 document.querySelectorAll('details.dominance-components').forEach(function(d) { d.addEventListener('toggle',function(){if(d.open){const box=d.querySelector('.dominance-explorer');if(box)initialiseDominanceExplorer(box);}}); });
+
+function initialiseFrontierExplorer(box) {
+  if (box.dataset.loaded) return;
+  box.dataset.loaded='loading';
+  fetch('interactive/frontiers.json').then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json();}).then(data=>{
+    const models=Object.keys(data.models), first=data.models[models[0]], names=first.portfolios.map(p=>p.name);
+    const preferred=['Baltic_NetSD','curent_update_baltic','NetSD_full','NetSD_training'];
+    box.innerHTML=`<div class="frontier-controls">
+      <label>Frontier model<select class="front-model">${models.map(x=>`<option>${x}</option>`).join('')}</select></label>
+      <label>Compare Current with<select class="front-compare">${[...preferred.filter(x=>names.includes(x)),...names.filter(x=>x!=='Current'&&!preferred.includes(x))].map(x=>`<option>${x}</option>`).join('')}</select></label>
+      <label>Horizontal view: <output class="front-xout">100%</output><input class="front-xzoom" type="range" min="20" max="100" value="100" step="1"></label>
+      <label>Vertical view: <output class="front-yout">100%</output><input class="front-yzoom" type="range" min="20" max="100" value="100" step="1"></label>
+      <button class="front-reset" type="button">Reset view</button><button class="front-save" type="button">Save high-resolution PNG</button>
+    </div><canvas class="frontier-canvas"></canvas><p class="frontier-status"></p>`;
+    const canvas=box.querySelector('canvas'), model=box.querySelector('.front-model'), compare=box.querySelector('.front-compare'), xzoom=box.querySelector('.front-xzoom'), yzoom=box.querySelector('.front-yzoom'), status=box.querySelector('.frontier-status');
+    function render(){
+      const d=data.models[model.value], frontier=d.frontier, points=d.portfolios;
+      const ratio=Math.min(Math.max(window.devicePixelRatio||1,2),3), rect=canvas.getBoundingClientRect();
+      canvas.width=Math.max(900,Math.round(rect.width*ratio));canvas.height=Math.round(rect.height*ratio);
+      const ctx=canvas.getContext('2d');ctx.setTransform(ratio,0,0,ratio,0,0);const W=canvas.width/ratio,H=canvas.height/ratio,L=82,R=28,T=45,B=68;
+      ctx.clearRect(0,0,W,H);ctx.font='12px system-ui';
+      const risks=[...frontier.map(p=>p.risk),...points.map(p=>p.risk)], means=[...frontier.map(p=>p.mean),...points.map(p=>p.mean)];
+      const fullX=[Math.min(...risks,0),Math.max(...risks)],fullY=[Math.min(...means,0),Math.max(...means)];
+      const xf=Number(xzoom.value)/100,yf=Number(yzoom.value)/100;
+      const x0=fullX[0],x1=x0+(fullX[1]-x0)*xf,y0=fullY[0],y1=y0+(fullY[1]-y0)*yf;
+      const sx=x=>L+(x-x0)/(x1-x0||1)*(W-L-R), sy=y=>H-B-(y-y0)/(y1-y0||1)*(H-T-B);
+      ctx.strokeStyle='#9aabb5';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(L,T);ctx.lineTo(L,H-B);ctx.lineTo(W-R,H-B);ctx.stroke();
+      for(let j=0;j<=6;j++){const v=x0+(x1-x0)*j/6,px=sx(v);ctx.fillStyle='#344c5a';ctx.fillText(v.toFixed(5),px-22,H-B+20);}
+      for(let j=0;j<=6;j++){const v=y0+(y1-y0)*j/6,py=sy(v);ctx.fillStyle='#344c5a';ctx.fillText(v.toFixed(5),8,py+4);}
+      ctx.font='bold 13px system-ui';ctx.fillStyle='#173246';ctx.fillText(d.risk_label,L,H-18);ctx.save();ctx.translate(18,(T+H-B)/2);ctx.rotate(-Math.PI/2);ctx.fillText('Mean daily return',0,0);ctx.restore();
+      ctx.strokeStyle='#007f8b';ctx.lineWidth=3;ctx.beginPath();frontier.forEach((p,i)=>{const px=sx(p.risk),py=sy(p.mean);if(i===0)ctx.moveTo(px,py);else ctx.lineTo(px,py);});ctx.stroke();
+      const selected=compare.value, labelled=new Set(['Current',selected,'Baltic_NetSD','curent_update_baltic']);
+      points.forEach(p=>{if(p.risk<x0||p.risk>x1||p.mean<y0||p.mean>y1)return;const isCurrent=p.name==='Current',isSelected=p.name===selected;ctx.beginPath();ctx.arc(sx(p.risk),sy(p.mean),isCurrent||isSelected?7:4,0,2*Math.PI);ctx.fillStyle=isCurrent?'#d7191c':isSelected?'#f28e2b':p.name==='Baltic_NetSD'?'#0072b2':p.name==='curent_update_baltic'?'#009e73':'#7b8790';ctx.fill();ctx.strokeStyle='#fff';ctx.lineWidth=1;ctx.stroke();if(labelled.has(p.name)){ctx.font='bold 12px system-ui';ctx.fillStyle='#17212b';ctx.fillText(p.name,sx(p.risk)+9,sy(p.mean)-7);}});
+      ctx.strokeStyle='#007f8b';ctx.lineWidth=3;ctx.beginPath();ctx.moveTo(L,T-20);ctx.lineTo(L+28,T-20);ctx.stroke();ctx.fillStyle='#17212b';ctx.font='12px system-ui';ctx.fillText(model.value==='NetSD'?'Observed nondominated candidate envelope':'Efficient frontier',L+36,T-16);
+      const cur=points.find(p=>p.name==='Current'),sel=points.find(p=>p.name===selected);status.textContent=cur&&sel?`Current: risk ${cur.risk.toFixed(6)}, mean ${cur.mean.toFixed(6)} | ${selected}: risk ${sel.risk.toFixed(6)}, mean ${sel.mean.toFixed(6)}`:'';
+      box.querySelector('.front-xout').value=`${xzoom.value}%`;box.querySelector('.front-yout').value=`${yzoom.value}%`;
+    }
+    [model,compare,xzoom,yzoom].forEach(x=>x.addEventListener('input',render));
+    canvas.addEventListener('wheel',e=>{e.preventDefault();const control=e.shiftKey?yzoom:xzoom;control.value=Math.max(20,Math.min(100,Number(control.value)+Math.sign(e.deltaY)*4));render();},{passive:false});
+    box.querySelector('.front-reset').addEventListener('click',()=>{xzoom.value=100;yzoom.value=100;render();});
+    box.querySelector('.front-save').addEventListener('click',()=>{const a=document.createElement('a');a.download=`${model.value}_interactive_frontier.png`;a.href=canvas.toDataURL('image/png');a.click();});
+    window.addEventListener('resize',render);render();box.dataset.loaded='yes';
+  }).catch(err=>{box.innerHTML=`<p>Interactive frontier could not be loaded: ${err.message}</p>`;box.dataset.loaded='';});
+}
+document.querySelectorAll('details.frontier-components').forEach(function(d){d.addEventListener('toggle',function(){if(d.open){const box=d.querySelector('.frontier-explorer');if(box)initialiseFrontierExplorer(box);}});if(d.open){const box=d.querySelector('.frontier-explorer');if(box)initialiseFrontierExplorer(box);}});
+document.querySelectorAll('details.report-section').forEach(function(section){section.addEventListener('toggle',function(){if(!section.open)return;section.querySelectorAll('details.dominance-components[open] .dominance-explorer').forEach(initialiseDominanceExplorer);section.querySelectorAll('details.frontier-components[open] .frontier-explorer').forEach(initialiseFrontierExplorer);});});
 </script>
 </body></html>
