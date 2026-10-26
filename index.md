@@ -68,7 +68,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-26 17:49 (Europe/Vilnius); return analysis through 2026-10-23; valuation prices through 2026-10-23
+# Baltic investment plan - updated 2026-10-26 17:54 (Europe/Vilnius); return analysis through 2026-10-23; valuation prices through 2026-10-23
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -93,18 +93,18 @@ Current-portfolio netSD is 0.618644; the optimised-portfolio value is 0.830508. 
 <details markdown="1" class="report-section" id="section-2">
 <summary><strong>2. Decision guide</strong></summary>
 
-Primary model scenario: Baltic_NetSD. Existing positions may be sold and the model reallocates up to EUR 15,000. Table 3 is the single canonical model trade list for this scenario. This is a model output rather than personalised investment advice.
+Primary model scenario: Baltic_NetSD. Existing positions may be sold and the model reallocates up to EUR 15,000. Table 2.c is the single canonical model trade list for this scenario. This is a model output rather than personalised investment advice.
 
-Alternative scenario: curent_update_baltic. Every existing position is retained and only additional purchases are allowed. Table 3A belongs only to this alternative and must not be combined with Table 3 quantities.
+Alternative scenario: curent_update_baltic. Every existing position is retained and only additional purchases are allowed. Table 3.a belongs only to this alternative and must not be combined with Table 2.c quantities.
 
-The Priority field in Table 3A and the single-share-addition experiments are diagnostics, not a trade execution sequence. Technical BUY/HOLD/SELL signals are timing diagnostics and do not override the portfolio optimiser.
+The Priority field in Table 3.a and the single-share-addition experiments are diagnostics, not a trade execution sequence. Technical BUY/HOLD/SELL signals are timing diagnostics and do not override the portfolio optimiser.
 
 Suggested execution process: (1) refresh prices, cash and order-book depth; (2) select one scenario; (3) review liquidity and transaction costs; (4) place limit orders, splitting illiquid trades; (5) recalculate quantities and residual cash after fills. In-sample results and the unstable holdout test require paper trading or walk-forward validation before relying on the allocation.
 
 Return and technical analysis uses common observations through 2026-10-23; valuation prices and trade quantities are refreshed through 2026-10-23. The 70/30 validation uses an earlier fixed split and is reported separately from the complete-period analysis.
 
 <details markdown="1">
-<summary><strong>Table 1. Optimisation objective and constraint checks</strong></summary>
+<summary><strong>Table 2.a. Optimisation objective and constraint checks</strong></summary>
 
 | Component | Restriction or objective | Obtained value | Result |
 | --- | --- | --- | --- |
@@ -121,7 +121,7 @@ Return and technical analysis uses common observations through 2026-10-23; valua
 
 
 <details markdown="1">
-<summary><strong>Table 2. Eligible Nasdaq Baltic shares and the optimised allocation</strong></summary>
+<summary><strong>Table 2.b. Eligible Nasdaq Baltic shares and the optimised allocation</strong></summary>
 
 | asset | name | market | last_price | optimal_weight_percent | current_shares | target_shares | trade_shares | allocation_change_direction | invested_EUR | historical_dividend_cash |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -184,10 +184,10 @@ Return and technical analysis uses common observations through 2026-10-23; valua
 </details>
 
 
-allocation_change_direction describes the optimiser's target relative to current holdings. It is not the current execution recommendation; use current_execution_decision in Tables 3 and 3A for that purpose.
+allocation_change_direction describes the optimiser's target relative to current holdings. It is not the current execution recommendation; use current_execution_decision in the canonical trade table and interactive share profiles for that purpose.
 
 <details markdown="1" class="trade-decision-section">
-<summary><strong>Table 3. Baltic_NetSD target allocation and current execution decisions</strong></summary>
+<summary><strong>Table 2.c. Baltic_NetSD target allocation and current execution decisions</strong></summary>
 
 <table class="trade-decision-table"><thead><tr><th><span>Phase</span></th><th><span>Share</span></th><th><span>Company</span></th><th><span>Last price</span></th><th><span>Indicative buy ≤</span></th><th><span>Indicative sell ≥</span></th><th><span>Bollinger zone</span></th><th><span>Technical timing</span></th><th><span>Target weight</span></th><th><span>Current shares</span></th><th><span>Allocation change</span></th><th><span>Trade EUR</span></th><th><span>Target shares</span></th><th><span>Final value EUR</span></th><th><span>Current execution decision</span></th><th><span>Historical dividends EUR</span></th></tr></thead><tbody><tr><td>1</td><td>ROE1L</td><td>Artea Bankas</td><td>0.8820</td><td>0.8688 (-1.49%)</td><td>0.9079 (+2.93%)</td><td>HOLD</td><td>HOLD</td><td>1.04%</td><td>416</td><td>-239</td><td>-210.80</td><td>177</td><td>156.11</td><td>SELL</td><td>24.07</td></tr><tr><td>1</td><td>TSM1T</td><td>Tallinna Sadam</td><td>1.2000</td><td>1.1991 (-0.08%)</td><td>1.2177 (+1.48%)</td><td>HOLD</td><td>HOLD</td><td>0.00%</td><td>330</td><td>-330</td><td>-396.00</td><td>0</td><td>0.00</td><td>SELL</td><td>0.00</td></tr><tr><td>1</td><td>SAF1R</td><td>SAF Tehnika</td><td>16.2000</td><td>16.0037 (-1.21%)</td><td>17.1263 (+5.72%)</td><td>HOLD</td><td>HOLD</td><td>0.00%</td><td>100</td><td>-100</td><td>-1620.00</td><td>0</td><td>0.00</td><td>SELL</td><td>0.00</td></tr><tr><td>1</td><td>TKM1T</td><td>TKM Grupp</td><td>8.9000</td><td>8.8594 (-0.46%)</td><td>9.0886 (+2.12%)</td><td>HOLD</td><td>HOLD</td><td>3.03%</td><td>288</td><td>-237</td><td>-2109.30</td><td>51</td><td>453.90</td><td>SELL</td><td>135.15</td></tr><tr><td>2</td><td>PZV1L</td><td>Pieno žvaigždės</td><td>1.7750</td><td>1.7470 (-1.58%)</td><td>1.8240 (+2.76%)</td><td>HOLD</td><td>HOLD</td><td>7.37%</td><td>0</td><td>+622</td><td>1104.05</td><td>622</td><td>1104.05</td><td>WAIT</td><td>261.24</td></tr><tr><td>2</td><td>MOLNR</td><td>J. Molner</td><td>20.6000</td><td>17.8599 (-13.30%)</td><td>23.7501 (+15.29%)</td><td>HOLD</td><td>HOLD</td><td>6.48%</td><td>0</td><td>+47</td><td>968.20</td><td>47</td><td>968.20</td><td>WAIT</td><td>0.00</td></tr><tr><td>2</td><td>VIRSI</td><td>VIRŠI-A</td><td>4.4100</td><td>4.4023 (-0.18%)</td><td>4.4447 (+0.79%)</td><td>HOLD</td><td>HOLD</td><td>5.12%</td><td>0</td><td>+174</td><td>767.34</td><td>174</td><td>767.34</td><td>WAIT</td><td>47.38</td></tr><tr><td>2</td><td>TVE1T</td><td>Tallinna Vesi</td><td>10.9000</td><td>nan (+nan%)</td><td>nan (+nan%)</td><td>HOLD</td><td>nan</td><td>4.94%</td><td>0</td><td>+67</td><td>730.30</td><td>67</td><td>730.30</td><td>WAIT</td><td>129.98</td></tr><tr><td>2</td><td>AKO1L</td><td>Akola Group</td><td>1.8500</td><td>1.7524 (-5.27%)</td><td>1.8706 (+1.11%)</td><td>HOLD</td><td>HOLD</td><td>4.48%</td><td>0</td><td>+363</td><td>671.55</td><td>363</td><td>671.55</td><td>WAIT</td><td>0.00</td></tr><tr><td>2</td><td>TAL1T</td><td>Tallink Grupp</td><td>0.6500</td><td>0.6419 (-1.25%)</td><td>0.6498 (-0.03%)</td><td>SELL</td><td>HOLD</td><td>7.50%</td><td>700</td><td>+1030</td><td>669.50</td><td>1730</td><td>1124.50</td><td>WAIT</td><td>259.50</td></tr><tr><td>2</td><td>EFT1T</td><td>EfTEN Real Estate Fund</td><td>19.3500</td><td>19.3537 (+0.02%)</td><td>19.6563 (+1.58%)</td><td>BUY</td><td>HOLD</td><td>4.21%</td><td>0</td><td>+32</td><td>619.20</td><td>32</td><td>619.20</td><td>WAIT</td><td>142.80</td></tr><tr><td>2</td><td>APG1L</td><td>Apranga</td><td>3.8200</td><td>3.7878 (-0.84%)</td><td>3.8642 (+1.16%)</td><td>HOLD</td><td>HOLD</td><td>9.12%</td><td>200</td><td>+158</td><td>603.56</td><td>358</td><td>1367.56</td><td>WAIT</td><td>368.74</td></tr><tr><td>2</td><td>MRK1T</td><td>Merko Ehitus</td><td>27.0000</td><td>26.9752 (-0.09%)</td><td>27.1698 (+0.63%)</td><td>HOLD</td><td>HOLD</td><td>7.53%</td><td>20</td><td>+21</td><td>567.00</td><td>41</td><td>1107.00</td><td>WAIT</td><td>223.45</td></tr><tr><td>2</td><td>KNE1L</td><td>KN Energies</td><td>0.4790</td><td>0.4764 (-0.55%)</td><td>0.4911 (+2.54%)</td><td>HOLD</td><td>HOLD</td><td>6.56%</td><td>928</td><td>+1126</td><td>539.35</td><td>2054</td><td>983.87</td><td>WAIT</td><td>132.28</td></tr><tr><td>2</td><td>GRG1L</td><td>Grigeo Group</td><td>1.0100</td><td>0.9963 (-1.35%)</td><td>1.0226 (+1.24%)</td><td>HOLD</td><td>HOLD</td><td>7.06%</td><td>543</td><td>+505</td><td>510.05</td><td>1048</td><td>1058.48</td><td>WAIT</td><td>178.16</td></tr><tr><td>2</td><td>LHV1T</td><td>LHV Group</td><td>3.2750</td><td>nan (+nan%)</td><td>nan (+nan%)</td><td>HOLD</td><td>nan</td><td>3.27%</td><td>0</td><td>+149</td><td>487.98</td><td>149</td><td>487.98</td><td>WAIT</td><td>64.07</td></tr><tr><td>2</td><td>VLP1L</td><td>Vilkyškių pieninė</td><td>15.7500</td><td>15.0987 (-4.14%)</td><td>15.8663 (+0.74%)</td><td>HOLD</td><td>HOLD</td><td>7.55%</td><td>42</td><td>+29</td><td>456.75</td><td>71</td><td>1118.25</td><td>WAIT</td><td>0.00</td></tr><tr><td>2</td><td>DGR1R</td><td>DelfinGroup</td><td>1.7000</td><td>1.5696 (-7.67%)</td><td>1.7844 (+4.97%)</td><td>HOLD</td><td>HOLD</td><td>2.89%</td><td>0</td><td>+254</td><td>431.80</td><td>254</td><td>431.80</td><td>WAIT</td><td>83.11</td></tr><tr><td>2</td><td>IGN1L</td><td>Ignitis grupė</td><td>21.7000</td><td>nan (+nan%)</td><td>nan (+nan%)</td><td>HOLD</td><td>nan</td><td>2.43%</td><td>0</td><td>+16</td><td>347.20</td><td>16</td><td>347.20</td><td>WAIT</td><td>62.70</td></tr><tr><td>2</td><td>CPA1T</td><td>Coop Pank</td><td>2.3850</td><td>2.2932 (-3.85%)</td><td>2.3948 (+0.41%)</td><td>HOLD</td><td>HOLD</td><td>2.03%</td><td>0</td><td>+127</td><td>302.89</td><td>127</td><td>302.89</td><td>WAIT</td><td>33.91</td></tr><tr><td>2</td><td>HAE1T</td><td>Harju Elekter Group</td><td>5.3600</td><td>5.0664 (-5.48%)</td><td>5.4716 (+2.08%)</td><td>HOLD</td><td>HOLD</td><td>5.40%</td><td>100</td><td>+51</td><td>273.36</td><td>151</td><td>809.36</td><td>WAIT</td><td>87.58</td></tr><tr><td>2</td><td>TEL1L</td><td>Telia Lietuva</td><td>2.2300</td><td>nan (+nan%)</td><td>nan (+nan%)</td><td>HOLD</td><td>nan</td><td>1.28%</td><td>0</td><td>+86</td><td>191.78</td><td>86</td><td>191.78</td><td>WAIT</td><td>26.66</td></tr><tr><td>2</td><td>RSU1L</td><td>Rokiškio sūris</td><td>4.4000</td><td>4.4100 (+0.23%)</td><td>4.5460 (+3.32%)</td><td>BUY</td><td>HOLD</td><td>0.70%</td><td>0</td><td>+23</td><td>101.20</td><td>23</td><td>101.20</td><td>SKIP</td><td>16.10</td></tr></tbody></table>
 
@@ -201,7 +201,7 @@ trade_shares is the optimiser's allocation change, not an instruction to trade i
 </details>
 
 <details markdown="1" class="report-section" id="section-3">
-<summary><strong>3. Table 3A. Interactive share profiles</strong></summary>
+<summary><strong>3. Table 3.a. Interactive share profiles</strong></summary>
 
 Select a share to display its allocation, technical indicators, all PerformanceAnalytics measures and portfolio sensitivity.
 
@@ -430,7 +430,7 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>KNE1L shares</td><td>928</td><td>1929</td><td>+1001</td></tr><tr><td>Portfolio value, EUR</td><td>8895.553974</td><td>9375.032977</td><td>479.479002</td></tr><tr><td>netSD</td><td>0.618644</td><td>0.635593</td><td>0.016949</td></tr><tr><td>OUT</td><td>73</td><td>75</td><td>+2</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.062407</td><td>1.072230</td><td>0.009823</td></tr><tr><td>Sortino ratio</td><td>0.104500</td><td>0.112869</td><td>0.008370</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 928 KNE1L shares. The scenario adds 1001 shares from Table 3A, resulting in 1929 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 928 KNE1L shares. The scenario adds 1001 shares from Table 3.a, resulting in 1929 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -676,7 +676,7 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>VLP1L shares</td><td>42</td><td>78</td><td>+36</td></tr><tr><td>Portfolio value, EUR</td><td>8895.553974</td><td>9462.553974</td><td>567.000000</td></tr><tr><td>netSD</td><td>0.618644</td><td>0.669492</td><td>0.050847</td></tr><tr><td>OUT</td><td>73</td><td>79</td><td>+6</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.062407</td><td>1.088515</td><td>0.026107</td></tr><tr><td>Sortino ratio</td><td>0.104500</td><td>0.123997</td><td>0.019497</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 42 VLP1L shares. The scenario adds 36 shares from Table 3A, resulting in 78 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 42 VLP1L shares. The scenario adds 36 shares from Table 3.a, resulting in 78 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -941,7 +941,7 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>MRK1T shares</td><td>20</td><td>46</td><td>+26</td></tr><tr><td>Portfolio value, EUR</td><td>8895.553974</td><td>9597.553974</td><td>702.000000</td></tr><tr><td>netSD</td><td>0.618644</td><td>0.644068</td><td>0.025424</td></tr><tr><td>OUT</td><td>73</td><td>76</td><td>+3</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.062407</td><td>1.092613</td><td>0.030205</td></tr><tr><td>Sortino ratio</td><td>0.104500</td><td>0.116306</td><td>0.011807</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 20 MRK1T shares. The scenario adds 26 shares from Table 3A, resulting in 46 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 20 MRK1T shares. The scenario adds 26 shares from Table 3.a, resulting in 46 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -1174,7 +1174,7 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>MOLNR shares</td><td>0</td><td>29</td><td>+29</td></tr><tr><td>Portfolio value, EUR</td><td>8895.553974</td><td>9492.953985</td><td>597.400011</td></tr><tr><td>netSD</td><td>0.618644</td><td>0.652542</td><td>0.033898</td></tr><tr><td>OUT</td><td>73</td><td>77</td><td>+4</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.062407</td><td>1.176039</td><td>0.113632</td></tr><tr><td>Sortino ratio</td><td>0.104500</td><td>0.130777</td><td>0.026277</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 0 MOLNR shares. The scenario adds 29 shares from Table 3A, resulting in 29 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 MOLNR shares. The scenario adds 29 shares from Table 3.a, resulting in 29 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -1467,7 +1467,7 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>APG1L shares</td><td>200</td><td>327</td><td>+127</td></tr><tr><td>Portfolio value, EUR</td><td>8895.553974</td><td>9380.693966</td><td>485.139992</td></tr><tr><td>netSD</td><td>0.618644</td><td>0.618644</td><td>0.000000</td></tr><tr><td>OUT</td><td>73</td><td>73</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.062407</td><td>1.051495</td><td>-0.010913</td></tr><tr><td>Sortino ratio</td><td>0.104500</td><td>0.110523</td><td>0.006024</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 200 APG1L shares. The scenario adds 127 shares from Table 3A, resulting in 327 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 200 APG1L shares. The scenario adds 127 shares from Table 3.a, resulting in 327 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -1677,7 +1677,7 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>GRG1L shares</td><td>543</td><td>1006</td><td>+463</td></tr><tr><td>Portfolio value, EUR</td><td>8895.553974</td><td>9363.183970</td><td>467.629996</td></tr><tr><td>netSD</td><td>0.618644</td><td>0.635593</td><td>0.016949</td></tr><tr><td>OUT</td><td>73</td><td>75</td><td>+2</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.062407</td><td>1.066323</td><td>0.003916</td></tr><tr><td>Sortino ratio</td><td>0.104500</td><td>0.108294</td><td>0.003794</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 543 GRG1L shares. The scenario adds 463 shares from Table 3A, resulting in 1006 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 543 GRG1L shares. The scenario adds 463 shares from Table 3.a, resulting in 1006 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -1910,7 +1910,7 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>RSU1L shares</td><td>0</td><td>105</td><td>+105</td></tr><tr><td>Portfolio value, EUR</td><td>8895.553974</td><td>9357.553984</td><td>462.000010</td></tr><tr><td>netSD</td><td>0.618644</td><td>0.635593</td><td>0.016949</td></tr><tr><td>OUT</td><td>73</td><td>75</td><td>+2</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.062407</td><td>1.059303</td><td>-0.003104</td></tr><tr><td>Sortino ratio</td><td>0.104500</td><td>0.109701</td><td>0.005202</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 0 RSU1L shares. The scenario adds 105 shares from Table 3A, resulting in 105 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 RSU1L shares. The scenario adds 105 shares from Table 3.a, resulting in 105 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -2156,7 +2156,7 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>AKO1L shares</td><td>0</td><td>272</td><td>+272</td></tr><tr><td>Portfolio value, EUR</td><td>8895.553974</td><td>9398.753981</td><td>503.200006</td></tr><tr><td>netSD</td><td>0.618644</td><td>0.635593</td><td>0.016949</td></tr><tr><td>OUT</td><td>73</td><td>75</td><td>+2</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.062407</td><td>1.047568</td><td>-0.014839</td></tr><tr><td>Sortino ratio</td><td>0.104500</td><td>0.108423</td><td>0.003923</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 0 AKO1L shares. The scenario adds 272 shares from Table 3A, resulting in 272 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 AKO1L shares. The scenario adds 272 shares from Table 3.a, resulting in 272 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -2426,7 +2426,7 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>TAL1T shares</td><td>700</td><td>1172</td><td>+472</td></tr><tr><td>Portfolio value, EUR</td><td>8895.553974</td><td>9202.353963</td><td>306.799989</td></tr><tr><td>netSD</td><td>0.618644</td><td>0.601695</td><td>-0.016949</td></tr><tr><td>OUT</td><td>73</td><td>71</td><td>-2</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.062407</td><td>1.056305</td><td>-0.006103</td></tr><tr><td>Sortino ratio</td><td>0.104500</td><td>0.104942</td><td>0.000442</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 700 TAL1T shares. The scenario adds 472 shares from Table 3A, resulting in 1172 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 700 TAL1T shares. The scenario adds 472 shares from Table 3.a, resulting in 1172 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -2689,7 +2689,7 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>TKM1T shares</td><td>288</td><td>330</td><td>+42</td></tr><tr><td>Portfolio value, EUR</td><td>8895.553974</td><td>9269.353958</td><td>373.799984</td></tr><tr><td>netSD</td><td>0.618644</td><td>0.601695</td><td>-0.016949</td></tr><tr><td>OUT</td><td>73</td><td>71</td><td>-2</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.062407</td><td>1.055137</td><td>-0.007271</td></tr><tr><td>Sortino ratio</td><td>0.104500</td><td>0.101101</td><td>-0.003399</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 288 TKM1T shares. The scenario adds 42 shares from Table 3A, resulting in 330 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 288 TKM1T shares. The scenario adds 42 shares from Table 3.a, resulting in 330 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -2982,7 +2982,7 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>DGR1R shares</td><td>0</td><td>181</td><td>+181</td></tr><tr><td>Portfolio value, EUR</td><td>8895.553974</td><td>9203.253983</td><td>307.700009</td></tr><tr><td>netSD</td><td>0.618644</td><td>0.601695</td><td>-0.016949</td></tr><tr><td>OUT</td><td>73</td><td>71</td><td>-2</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.062407</td><td>1.057824</td><td>-0.004583</td></tr><tr><td>Sortino ratio</td><td>0.104500</td><td>0.105253</td><td>0.000754</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 0 DGR1R shares. The scenario adds 181 shares from Table 3A, resulting in 181 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 DGR1R shares. The scenario adds 181 shares from Table 3.a, resulting in 181 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -3248,7 +3248,7 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>EFT1T shares</td><td>0</td><td>11</td><td>+11</td></tr><tr><td>Portfolio value, EUR</td><td>8895.553974</td><td>9108.403979</td><td>212.850004</td></tr><tr><td>netSD</td><td>0.618644</td><td>0.601695</td><td>-0.016949</td></tr><tr><td>OUT</td><td>73</td><td>71</td><td>-2</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.062407</td><td>1.061137</td><td>-0.001271</td></tr><tr><td>Sortino ratio</td><td>0.104500</td><td>0.104354</td><td>-0.000146</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 0 EFT1T shares. The scenario adds 11 shares from Table 3A, resulting in 11 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 EFT1T shares. The scenario adds 11 shares from Table 3.a, resulting in 11 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -3514,7 +3514,7 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>HAE1T shares</td><td>100</td><td>133</td><td>+33</td></tr><tr><td>Portfolio value, EUR</td><td>8895.553974</td><td>9072.433979</td><td>176.880004</td></tr><tr><td>netSD</td><td>0.618644</td><td>0.601695</td><td>-0.016949</td></tr><tr><td>OUT</td><td>73</td><td>71</td><td>-2</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.062407</td><td>1.063761</td><td>0.001354</td></tr><tr><td>Sortino ratio</td><td>0.104500</td><td>0.104262</td><td>-0.000237</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 100 HAE1T shares. The scenario adds 33 shares from Table 3A, resulting in 133 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 100 HAE1T shares. The scenario adds 33 shares from Table 3.a, resulting in 133 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -3784,7 +3784,7 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>CPA1T shares</td><td>0</td><td>64</td><td>+64</td></tr><tr><td>Portfolio value, EUR</td><td>8895.553974</td><td>9048.193974</td><td>152.639999</td></tr><tr><td>netSD</td><td>0.618644</td><td>0.601695</td><td>-0.016949</td></tr><tr><td>OUT</td><td>73</td><td>71</td><td>-2</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.062407</td><td>1.062540</td><td>0.000133</td></tr><tr><td>Sortino ratio</td><td>0.104500</td><td>0.103696</td><td>-0.000804</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 0 CPA1T shares. The scenario adds 64 shares from Table 3A, resulting in 64 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 CPA1T shares. The scenario adds 64 shares from Table 3.a, resulting in 64 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -4034,7 +4034,7 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>SAF1R shares</td><td>100</td><td>100</td><td>+0</td></tr><tr><td>Portfolio value, EUR</td><td>8895.553974</td><td>8895.553974</td><td>0.000000</td></tr><tr><td>netSD</td><td>0.618644</td><td>0.618644</td><td>0.000000</td></tr><tr><td>OUT</td><td>73</td><td>73</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.062407</td><td>1.062407</td><td>0.000000</td></tr><tr><td>Sortino ratio</td><td>0.104500</td><td>0.104500</td><td>0.000000</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 100 SAF1R shares. The scenario adds 0 shares from Table 3A, resulting in 100 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 100 SAF1R shares. The scenario adds 0 shares from Table 3.a, resulting in 100 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -4294,7 +4294,7 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>TSM1T shares</td><td>330</td><td>330</td><td>+0</td></tr><tr><td>Portfolio value, EUR</td><td>8895.553974</td><td>8895.553974</td><td>0.000000</td></tr><tr><td>netSD</td><td>0.618644</td><td>0.618644</td><td>0.000000</td></tr><tr><td>OUT</td><td>73</td><td>73</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.062407</td><td>1.062407</td><td>0.000000</td></tr><tr><td>Sortino ratio</td><td>0.104500</td><td>0.104500</td><td>0.000000</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 330 TSM1T shares. The scenario adds 0 shares from Table 3A, resulting in 330 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 330 TSM1T shares. The scenario adds 0 shares from Table 3.a, resulting in 330 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -4540,7 +4540,7 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>PZV1L shares</td><td>0</td><td>71</td><td>+71</td></tr><tr><td>Portfolio value, EUR</td><td>8895.553974</td><td>9021.578973</td><td>126.024998</td></tr><tr><td>netSD</td><td>0.618644</td><td>0.635593</td><td>0.016949</td></tr><tr><td>OUT</td><td>73</td><td>75</td><td>+2</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.062407</td><td>1.061290</td><td>-0.001118</td></tr><tr><td>Sortino ratio</td><td>0.104500</td><td>0.106309</td><td>0.001810</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 0 PZV1L shares. The scenario adds 71 shares from Table 3A, resulting in 71 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 PZV1L shares. The scenario adds 71 shares from Table 3.a, resulting in 71 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -4787,7 +4787,7 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>VIRSI shares</td><td>0</td><td>19</td><td>+19</td></tr><tr><td>Portfolio value, EUR</td><td>8895.553974</td><td>8979.343974</td><td>83.790000</td></tr><tr><td>netSD</td><td>0.618644</td><td>0.601695</td><td>-0.016949</td></tr><tr><td>OUT</td><td>73</td><td>71</td><td>-2</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.062407</td><td>1.062409</td><td>0.000001</td></tr><tr><td>Sortino ratio</td><td>0.104500</td><td>0.104443</td><td>-0.000057</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 0 VIRSI shares. The scenario adds 19 shares from Table 3A, resulting in 19 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 VIRSI shares. The scenario adds 19 shares from Table 3.a, resulting in 19 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -5041,7 +5041,7 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>ROE1L shares</td><td>416</td><td>470</td><td>+54</td></tr><tr><td>Portfolio value, EUR</td><td>8895.553974</td><td>8943.181976</td><td>47.628002</td></tr><tr><td>netSD</td><td>0.618644</td><td>0.618644</td><td>0.000000</td></tr><tr><td>OUT</td><td>73</td><td>73</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.062407</td><td>1.062567</td><td>0.000160</td></tr><tr><td>Sortino ratio</td><td>0.104500</td><td>0.104636</td><td>0.000136</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 416 ROE1L shares. The scenario adds 54 shares from Table 3A, resulting in 470 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 416 ROE1L shares. The scenario adds 54 shares from Table 3.a, resulting in 470 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -5070,10 +5070,10 @@ The static figure is collapsed because the interactive plots above provide the d
 <details markdown="1" class="report-section" id="section-4">
 <summary><strong>4. Single-share additions to the current portfolio</strong></summary>
 
-Each row starts from the same unmodified current portfolio and adds only the stated share quantity from Table 3A. Rows are ranked by the change in netSD; larger is better. OUT is the number of dominance relations won, while IN is the number lost; more OUT and fewer IN are preferable.
+Each row starts from the same unmodified current portfolio and adds only the stated share quantity from Table 3.a. Rows are ranked by the change in netSD; larger is better. OUT is the number of dominance relations won, while IN is the number lost; more OUT and fewer IN are preferable.
 
 <details markdown="1" class="add-one-comparison">
-<summary><strong>Open ranked comparison of all individual additions</strong></summary>
+<summary><strong>Table 4.a. Ranked comparison of all individual additions</strong></summary>
 
 | Rank | Share | Added shares | Updated value EUR | Current OUT / IN | Updated OUT / IN | Delta OUT / IN | Current netSD | Updated netSD | Delta netSD | Delta Rachev | Delta Sortino |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -5109,7 +5109,7 @@ Each scenario removes one share from curent_update_baltic and proportionally res
 **Main result.** Removing **AKO1L** produces the largest netSD change (+0.000000); removing **TKM1T** gives the largest Rachev improvement (+0.059529); removing **TKM1T** gives the largest Sortino improvement (+0.020102). These are sensitivity results, not automatically new trade recommendations, because the three criteria can move in opposite directions.
 
 <details markdown="1">
-<summary><strong>Open complete netSD, Rachev and Sortino sensitivity table</strong></summary>
+<summary><strong>Table 5.a. Complete netSD, Rachev and Sortino sensitivity</strong></summary>
 
 | Removed share | netSD | Δ netSD | Rachev | Δ Rachev | Sortino | Δ Sortino |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -5140,14 +5140,17 @@ Each scenario removes one share from curent_update_baltic and proportionally res
 
 </details>
 
+</details>
 
+<details markdown="1" class="report-section" id="section-6">
+<summary><strong>6. Portfolio allocation comparison</strong></summary>
 
 current_execution_decision is the only action recommendation. BUY requires a material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the proposed purchase is below EUR 100 or below 1% target weight; HOLD means no allocation change; SELL means a negative allocation change. Diagnostic priority is not an execution order. Dividend columns use official 2025 and 2026 payments.
 
 curent_update_baltic keeps every currently held share, permits purchases only, and uses the EUR 15,000 ceiling. Its calculated netSD is 0.822034, with OUT=97 and IN=0; the remaining cash is EUR 52.48.
 
 <details markdown="1">
-<summary><strong>Table 4. Current and optimised portfolios</strong></summary>
+<summary><strong>Table 6.a. Current and optimised portfolios</strong></summary>
 
 | Portfolio | netSD | OUT | IN | denominator | mean | SD | Historical dividends EUR | Portfolio value EUR |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -5159,7 +5162,7 @@ curent_update_baltic keeps every currently held share, permits purchases only, a
 
 
 <details markdown="1">
-<summary><strong>Figure 1. Optimiser target changes relative to current holdings: two adjacent portfolio bars for every share</strong></summary>
+<summary><strong>Figure 6.a. Optimiser target changes relative to current holdings: two adjacent portfolio bars for every share</strong></summary>
 
 ![Report figure 1](report/assets/figure-01.png)
 
@@ -5169,7 +5172,7 @@ curent_update_baltic keeps every currently held share, permits purchases only, a
 Each share has two adjacent bars. The blue bar is the change required for Baltic_NetSD, where negative values are sales. The orange bar is the additional purchase required for curent_update_baltic; it cannot be negative because every current position is retained. Both use the EUR 15,000 ceiling.
 
 <details markdown="1">
-<summary><strong>Figure 2. Capital allocation and historical gross dividend contribution</strong></summary>
+<summary><strong>Figure 6.b. Capital allocation and historical gross dividend contribution</strong></summary>
 
 ![Report figure 2](report/assets/figure-02.png)
 
@@ -5177,13 +5180,13 @@ Each share has two adjacent bars. The blue bar is the change required for Baltic
 
 </details>
 
-<details markdown="1" class="report-section" id="section-6">
-<summary><strong>6. Earnings outcomes and subsequent price changes</strong></summary>
+<details markdown="1" class="report-section" id="section-7">
+<summary><strong>7. Earnings outcomes and subsequent price changes</strong></summary>
 
 Official announcement text allowed 217 of 349 earnings releases to be classified. Higher or lower profit refers to the issuer's explicit comparison with the earlier comparable period. In line or unchanged is used only for an explicit plan, forecast, expectation or unchanged-profit statement. Loss requires an explicit realised net or operating loss.
 
 <details markdown="1">
-<summary><strong>Table 4A. Conditional price statistics by reported profit outcome</strong></summary>
+<summary><strong>Table 7.a. Conditional price statistics by reported profit outcome</strong></summary>
 
 | profit_outcome | horizon | events | conditional_mean_return | conditional_variance_return | conditional_median_return | positive_return_share | conditional_mean_abnormal | conditional_variance_abnormal | conditional_median_abnormal |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -5206,7 +5209,7 @@ Official announcement text allowed 217 of 349 earnings releases to be classified
 Means, medians and positive shares are percentages; variances are squared percentage points. Abnormal return is the share return minus the equal-weight Baltic-market return over the same horizon.
 
 <details markdown="1">
-<summary><strong>Table 4B. Kruskal-Wallis tests across profit-outcome groups</strong></summary>
+<summary><strong>Table 7.b. Kruskal-Wallis tests across profit-outcome groups</strong></summary>
 
 | horizon_days | groups | classified_events | kruskal_H | p_value | p_BH | conclusion |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -5221,11 +5224,11 @@ The BH adjustment covers the full family of share-level, pooled and pairwise tes
 
 </details>
 
-<details markdown="1" class="report-section" id="section-7">
-<summary><strong>7. Statistical and performance analysis</strong></summary>
+<details markdown="1" class="report-section" id="section-8">
+<summary><strong>8. Statistical and performance analysis</strong></summary>
 
 <details markdown="1">
-<summary><strong>Table 5. Empirical statistics of portfolio and S&P 500 daily returns</strong></summary>
+<summary><strong>Table 8.a. Empirical statistics of portfolio and S&P 500 daily returns</strong></summary>
 
 | entity | observations | mean | median | SD | minimum | maximum | skewness | kurtosis | VaR_95 | ES_95 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -5250,7 +5253,7 @@ The BH adjustment covers the full family of share-level, pooled and pairwise tes
 Baltic_NetSD has mean daily return 0.000450, median 0.000158 and daily standard deviation 0.004428. Its historical 95% VaR is 0.005250 and ES (CVaR) is 0.009381. VaR is the loss threshold exceeded on approximately 5% of days; ES is the average return in that adverse tail.
 
 <details markdown="1">
-<summary><strong>Figure 3a. Pearson asset-return correlations with Ward.D2 hierarchical clustering</strong></summary>
+<summary><strong>Figure 8.a. Pearson asset-return correlations with Ward.D2 hierarchical clustering</strong></summary>
 
 ![Report figure 3](report/assets/figure-03.png)
 
@@ -5258,7 +5261,7 @@ Baltic_NetSD has mean daily return 0.000450, median 0.000158 and daily standard 
 
 
 <details markdown="1">
-<summary><strong>Figure 3b. Spearman asset-return correlations with Ward.D2 hierarchical clustering</strong></summary>
+<summary><strong>Figure 8.b. Spearman asset-return correlations with Ward.D2 hierarchical clustering</strong></summary>
 
 ![Report figure 4](report/assets/figure-04.png)
 
@@ -5268,7 +5271,7 @@ Baltic_NetSD has mean daily return 0.000450, median 0.000158 and daily standard 
 Blue indicates negative correlation, white indicates correlation near zero and red indicates positive correlation. Ward.D2 clustering orders shares with similar dependence patterns next to each other; the dendrogram shows the resulting groups.
 
 <details markdown="1">
-<summary><strong>Figure 3c. Histograms and kernel densities; every panel uses the same return-axis limits</strong></summary>
+<summary><strong>Figure 8.c. Histograms and kernel densities; every panel uses the same return-axis limits</strong></summary>
 
 ![Report figure 5](report/assets/figure-05.png)
 
@@ -5278,7 +5281,7 @@ Blue indicates negative correlation, white indicates correlation near zero and r
 The recalculated Baltic_NetSD maximum daily return is 0.034990. The earlier value 0.168092 on 2025-06-25 was traced to RKB1R, whose unadjusted close moved from EUR 0.107 to EUR 0.476 between common Baltic trading dates. RKB1R belongs to the Baltic Secondary List. After excluding every Secondary List share from the investable set, this observation no longer enters the portfolio return; RKB1R is now excluded from both the investable set and every netSD reference network, so the suspect observation cannot affect the objective or its denominator.
 
 <details markdown="1">
-<summary><strong>Figure 4a. Portfolio and S&P 500 complete empirical CDF; right side truncated at return 0.05</strong></summary>
+<summary><strong>Figure 8.d. Portfolio and S&P 500 complete empirical CDF; right side truncated at return 0.05</strong></summary>
 
 <div class="cdf-with-key"><img src="report/assets/figure-06.png" alt="CDF graph"><img class="cdf-key" src="report/assets/figure-10.png" alt="CDF legend"></div>
 
@@ -5286,7 +5289,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.034990. The earlier valu
 
 
 <details markdown="1">
-<summary><strong>Figure 4b. Portfolio and S&P 500 empirical CDF: enlarged left tail</strong></summary>
+<summary><strong>Figure 8.e. Portfolio and S&P 500 empirical CDF: enlarged left tail</strong></summary>
 
 <div class="cdf-with-key"><img src="report/assets/figure-07.png" alt="CDF graph"><img class="cdf-key" src="report/assets/figure-10.png" alt="CDF legend"></div>
 
@@ -5294,7 +5297,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.034990. The earlier valu
 
 
 <details markdown="1">
-<summary><strong>Figure 4c. Portfolio and S&P 500 empirical CDF: enlarged centre</strong></summary>
+<summary><strong>Figure 8.f. Portfolio and S&P 500 empirical CDF: enlarged centre</strong></summary>
 
 <div class="cdf-with-key"><img src="report/assets/figure-08.png" alt="CDF graph"><img class="cdf-key" src="report/assets/figure-10.png" alt="CDF legend"></div>
 
@@ -5302,7 +5305,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.034990. The earlier valu
 
 
 <details markdown="1">
-<summary><strong>Figure 4d. Portfolio and S&P 500 empirical CDF: enlarged right tail</strong></summary>
+<summary><strong>Figure 8.g. Portfolio and S&P 500 empirical CDF: enlarged right tail</strong></summary>
 
 <div class="cdf-with-key"><img src="report/assets/figure-09.png" alt="CDF graph"><img class="cdf-key" src="report/assets/figure-10.png" alt="CDF legend"></div>
 
@@ -5310,7 +5313,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.034990. The earlier valu
 
 
 <details markdown="1">
-<summary><strong>Figure 5a. Individual-share complete empirical CDF restricted to returns from -0.30 to 0.30</strong></summary>
+<summary><strong>Figure 8.h. Individual-share complete empirical CDF restricted to returns from -0.30 to 0.30</strong></summary>
 
 ![Report figure 11](report/assets/figure-11.png)
 
@@ -5318,7 +5321,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.034990. The earlier valu
 
 
 <details markdown="1">
-<summary><strong>Figure 5b. Individual-share empirical CDF: enlarged left tail</strong></summary>
+<summary><strong>Figure 8.i. Individual-share empirical CDF: enlarged left tail</strong></summary>
 
 ![Report figure 12](report/assets/figure-12.png)
 
@@ -5326,7 +5329,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.034990. The earlier valu
 
 
 <details markdown="1">
-<summary><strong>Figure 5c. Individual-share empirical CDF: enlarged centre</strong></summary>
+<summary><strong>Figure 8.j. Individual-share empirical CDF: enlarged centre</strong></summary>
 
 ![Report figure 13](report/assets/figure-13.png)
 
@@ -5334,7 +5337,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.034990. The earlier valu
 
 
 <details markdown="1">
-<summary><strong>Figure 5d. Individual-share empirical CDF: enlarged right tail</strong></summary>
+<summary><strong>Figure 8.k. Individual-share empirical CDF: enlarged right tail</strong></summary>
 
 ![Report figure 14](report/assets/figure-14.png)
 
@@ -5342,7 +5345,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.034990. The earlier valu
 
 
 <details markdown="1">
-<summary><strong>Figure 5e. Separate colour and line-pattern key for Figures 5 and 7</strong></summary>
+<summary><strong>Figure 8.l. Separate colour and line-pattern key for the individual-share CDF and dominance figures</strong></summary>
 
 ![Report figure 15](report/assets/figure-15.png)
 
@@ -5350,7 +5353,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.034990. The earlier valu
 
 
 <details markdown="1">
-<summary><strong>Figure 6a. Portfolio and benchmark FSD component H1(x)</strong></summary>
+<summary><strong>Figure 8.m. Portfolio and benchmark FSD component H1(x)</strong></summary>
 
 ![Report figure 16](report/assets/figure-16.png)
 
@@ -5358,7 +5361,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.034990. The earlier valu
 
 
 <details markdown="1">
-<summary><strong>Figure 6b. Portfolio and benchmark SSD component H2(x): enlarged right side with curve-end labels</strong></summary>
+<summary><strong>Figure 8.n. Portfolio and benchmark SSD component H2(x): enlarged right side with curve-end labels</strong></summary>
 
 ![Report figure 17](report/assets/figure-17.png)
 
@@ -5366,7 +5369,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.034990. The earlier valu
 
 
 <details markdown="1">
-<summary><strong>Figure 6c. Portfolio and benchmark TSD component H3(x): enlarged right side with curve-end labels</strong></summary>
+<summary><strong>Figure 8.o. Portfolio and benchmark TSD component H3(x): enlarged right side with curve-end labels</strong></summary>
 
 ![Report figure 18](report/assets/figure-18.png)
 
@@ -5374,7 +5377,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.034990. The earlier valu
 
 
 <details markdown="1">
-<summary><strong>Figure 7a. Individual-share FSD component H1(x)</strong></summary>
+<summary><strong>Figure 8.p. Individual-share FSD component H1(x)</strong></summary>
 
 ![Report figure 19](report/assets/figure-19.png)
 
@@ -5382,7 +5385,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.034990. The earlier valu
 
 
 <details markdown="1">
-<summary><strong>Figure 7b. Individual-share SSD component H2(x): enlarged right side with curve-end labels</strong></summary>
+<summary><strong>Figure 8.q. Individual-share SSD component H2(x): enlarged right side with curve-end labels</strong></summary>
 
 ![Report figure 20](report/assets/figure-20.png)
 
@@ -5390,7 +5393,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.034990. The earlier valu
 
 
 <details markdown="1">
-<summary><strong>Figure 7c. Individual-share TSD component H3(x): enlarged right side with curve-end labels</strong></summary>
+<summary><strong>Figure 8.r. Individual-share TSD component H3(x): enlarged right side with curve-end labels</strong></summary>
 
 ![Report figure 21](report/assets/figure-21.png)
 
@@ -5400,7 +5403,7 @@ The recalculated Baltic_NetSD maximum daily return is 0.034990. The earlier valu
 For every entity, H1(x)=F(x) is the empirical CDF used for FSD. H2(x)=∫H1(u)du is the cumulative FSD component used for SSD, and H3(x)=∫H2(u)du is the cumulative SSD component used for TSD. The CSV files accompanying the report contain every displayed entity as a separate column on the same return-threshold grid.
 
 <details markdown="1">
-<summary><strong>Figure 7d. Baltic_NetSD minus every other portfolio: FSD-component differences</strong></summary>
+<summary><strong>Figure 8.s. Baltic_NetSD minus every other portfolio: FSD-component differences</strong></summary>
 
 ![Report figure 22](report/assets/figure-22.png)
 
@@ -5408,7 +5411,7 @@ For every entity, H1(x)=F(x) is the empirical CDF used for FSD. H2(x)=∫H1(u)du
 
 
 <details markdown="1">
-<summary><strong>Figure 7e. Baltic_NetSD minus every other portfolio: SSD-component differences</strong></summary>
+<summary><strong>Figure 8.t. Baltic_NetSD minus every other portfolio: SSD-component differences</strong></summary>
 
 ![Report figure 23](report/assets/figure-23.png)
 
@@ -5416,7 +5419,7 @@ For every entity, H1(x)=F(x) is the empirical CDF used for FSD. H2(x)=∫H1(u)du
 
 
 <details markdown="1">
-<summary><strong>Figure 7f. Baltic_NetSD minus every other portfolio: TSD-component differences</strong></summary>
+<summary><strong>Figure 8.u. Baltic_NetSD minus every other portfolio: TSD-component differences</strong></summary>
 
 ![Report figure 24](report/assets/figure-24.png)
 
@@ -5424,7 +5427,7 @@ For every entity, H1(x)=F(x) is the empirical CDF used for FSD. H2(x)=∫H1(u)du
 
 
 <details markdown="1">
-<summary><strong>Figure 7g. Baltic_NetSD minus every individual share: FSD-component differences</strong></summary>
+<summary><strong>Figure 8.v. Baltic_NetSD minus every individual share: FSD-component differences</strong></summary>
 
 ![Report figure 25](report/assets/figure-25.png)
 
@@ -5432,7 +5435,7 @@ For every entity, H1(x)=F(x) is the empirical CDF used for FSD. H2(x)=∫H1(u)du
 
 
 <details markdown="1">
-<summary><strong>Figure 7h. Baltic_NetSD minus every individual share: SSD-component differences</strong></summary>
+<summary><strong>Figure 8.w. Baltic_NetSD minus every individual share: SSD-component differences</strong></summary>
 
 ![Report figure 26](report/assets/figure-26.png)
 
@@ -5440,7 +5443,7 @@ For every entity, H1(x)=F(x) is the empirical CDF used for FSD. H2(x)=∫H1(u)du
 
 
 <details markdown="1">
-<summary><strong>Figure 7i. Baltic_NetSD minus every individual share: TSD-component differences</strong></summary>
+<summary><strong>Figure 8.x. Baltic_NetSD minus every individual share: TSD-component differences</strong></summary>
 
 ![Report figure 27](report/assets/figure-27.png)
 
@@ -5452,7 +5455,7 @@ Each difference is calculated pointwise as Hq_Baltic_NetSD(x) - Hq_comparator(x)
 ### Local SSD advantages at large return thresholds
 
 <details markdown="1">
-<summary><strong>Table 7A. Local right-side SSD-component advantages over Baltic_NetSD</strong></summary>
+<summary><strong>Table 8.b. Local right-side SSD-component advantages over Baltic_NetSD</strong></summary>
 
 | comparator | type | local_advantage_from_x | display_upper_x | end_difference | maximum_difference |
 | --- | --- | --- | --- | --- | --- |
@@ -5480,7 +5483,7 @@ These are local, right-side comparisons and must not be interpreted as SSD over 
 The result that may appear surprising in the difference figures is therefore real but local. NetSD_training has a smaller H2 component than Baltic_NetSD from x=0.012089 to the displayed right endpoint, and NetSD_full does so from x=0.016037. Neither portfolio SSD-dominates Baltic_NetSD over the complete support because the required inequality fails at smaller x values. The listed shares deserve separate investment analysis because their upper-threshold SSD components are favourable. RKB1R is absent from these recalculated comparisons because its suspect unadjusted prices fail the data-quality screen. A local right-side advantage is evidence about one part of the distribution and is not full-domain SSD dominance.
 
 <details markdown="1">
-<summary><strong>Table 6. Weight concentration and diversification</strong></summary>
+<summary><strong>Table 8.c. Weight concentration and diversification</strong></summary>
 
 | portfolio | HHI_weights | effective_number | maximum_weight | number_positive | diversification_ratio |
 | --- | --- | --- | --- | --- | --- |
@@ -5504,7 +5507,7 @@ The result that may appear surprising in the difference figures is therefore rea
 For Baltic_NetSD, HHI=0.060139; lower is better because less capital is concentrated in a few shares. Its effective number of equally weighted positions is 16.63, the largest weight is 9.12%, and the diversification ratio is 2.619; a value above 1 means portfolio volatility is below the weighted average volatility of its components.
 
 <details markdown="1">
-<summary><strong>Figure 8. HHI concentration comparison</strong></summary>
+<summary><strong>Figure 8.y. HHI concentration comparison</strong></summary>
 
 ![Report figure 28](report/assets/figure-28.png)
 
@@ -5512,7 +5515,7 @@ For Baltic_NetSD, HHI=0.060139; lower is better because less capital is concentr
 
 
 <details markdown="1">
-<summary><strong>Table 7. Canonical comparable netSD results</strong></summary>
+<summary><strong>Table 8.d. Canonical comparable netSD results</strong></summary>
 
 | entity | OUT | IN | denominator | netSD | mean | SD |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -5538,7 +5541,7 @@ Baltic_NetSD has OUT=98 and IN=0. Dividing OUT-IN by the common network fixed de
 For curent_update_baltic, IN=0 because Baltic_NetSD dominates it by third-order stochastic dominance over the complete empirical support. There are no incoming FSD or SSD relations. Thus IN=1 is one directed TSD relation from Baltic_NetSD, rather than one adverse observation or one share.
 
 <details markdown="1">
-<summary><strong>Table 8. Systematic risk relative to S&P 500</strong></summary>
+<summary><strong>Table 8.e. Systematic risk relative to S&P 500</strong></summary>
 
 | entity | CAPMBeta | CAPMAlpha | JensenAlpha | SpecificRisk | SystematicRisk | TotalRisk | TrackingError_Annualized | Information_Annualized |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -5563,7 +5566,7 @@ For curent_update_baltic, IN=0 because Baltic_NetSD dominates it by third-order 
 CAPM beta measures sensitivity to S&P 500: beta below 1 means a smaller average response to market movements, while beta above 1 means greater sensitivity. SpecificRisk is the residual component not explained by the benchmark; SystematicRisk is the benchmark-related component; TotalRisk combines both.
 
 <details markdown="1">
-<summary><strong>Table 8A. Individual-share netSD and admissibility for the new optimisation</strong></summary>
+<summary><strong>Table 8.f. Individual-share netSD and admissibility for the new optimisation</strong></summary>
 
 | asset | OUT | IN | denominator | netSD | segment | positive_netSD | secondary_list | admissible |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -5629,7 +5632,7 @@ CAPM beta measures sensitivity to S&P 500: beta below 1 means a smaller average 
 A share is investment-admissible only when its individual netSD is strictly positive and it does not belong to the Baltic Secondary List. Secondary List shares remain in the dominance reference network used to calculate netSD, but their portfolio weights are fixed at zero.
 
 <details markdown="1">
-<summary><strong>Figure 9. Classical mean-SD efficient frontier and observed portfolios</strong></summary>
+<summary><strong>Figure 8.z. Classical mean-SD efficient frontier and observed portfolios</strong></summary>
 
 ![Report figure 29](report/assets/figure-29.png)
 
@@ -5639,7 +5642,7 @@ A share is investment-admissible only when its individual netSD is strictly posi
 The curve is the single long-only Markowitz efficient frontier calculated from all 55 quality-approved shares. Shares and previously formed portfolios are points. Baltic_NetSD is highlighted in red because it maximises the stochastic-dominance objective rather than variance, so it need not lie on the Markowitz curve.
 
 <details markdown="1">
-<summary><strong>Figure 10. Cumulative returns, daily returns and drawdowns</strong></summary>
+<summary><strong>Figure 8.aa. Cumulative returns, daily returns and drawdowns</strong></summary>
 
 ![Report figure 30](report/assets/figure-30.png)
 
@@ -5647,7 +5650,7 @@ The curve is the single long-only Markowitz efficient frontier calculated from a
 
 
 <details markdown="1">
-<summary><strong>Table 9. Complete PerformanceAnalytics comparison</strong></summary>
+<summary><strong>Table 8.g. Complete PerformanceAnalytics comparison</strong></summary>
 
 | Measure | Current | Markowitz_training | MAD_training | Minimax_training | Robust_training | NetSD_training | Markowitz_full | MAD_full | Minimax_full | Robust_full | NetSD_full | Baltic_NetSD | curent_update_baltic |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -5727,17 +5730,17 @@ The curve is the single long-only Markowitz efficient frontier calculated from a
 </details>
 
 
-Table 9 contains all 72 measures calculated directly with PerformanceAnalytics: measures are rows and portfolios are columns. S&P 500 is the benchmark for CAPM, information, tracking-error, capture and systematic-risk measures. It remains in Table 5 and the figures; it is omitted from Table 9 because its information ratio relative to itself has a zero tracking-error denominator.
+Table 8.g contains all 72 measures calculated directly with PerformanceAnalytics: measures are rows and portfolios are columns. S&P 500 is the benchmark for CAPM, information, tracking-error, capture and systematic-risk measures. It remains in Table 8.a and the figures; it is omitted from Table 8.g because its information ratio relative to itself has a zero tracking-error denominator.
 
 </details>
 
-<details markdown="1" class="report-section" id="section-8">
-<summary><strong>8. Decision risks and implementability</strong></summary>
+<details markdown="1" class="report-section" id="section-9">
+<summary><strong>9. Decision risks and implementability</strong></summary>
 
 ### Liquidity and turnover
 
 <details markdown="1">
-<summary><strong>Table 10. Proposed trades and observed one-year market liquidity</strong></summary>
+<summary><strong>Table 9.a. Proposed trades and observed one-year market liquidity</strong></summary>
 
 | asset | trade_shares | trade_value_EUR | median_daily_turnover_EUR | zero_volume_fraction | trade_to_median_turnover | liquidity_flag |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -5771,7 +5774,7 @@ Table 9 contains all 72 measures calculated directly with PerformanceAnalytics: 
 Median daily turnover and zero-volume frequency use official Nasdaq Baltic price-volume observations from the last 365 calendar days of the sample. Trade-to-turnover is the proposed absolute order value divided by median daily turnover. HIGH flags median turnover below EUR 5,000 or an order above 20% of median turnover; MEDIUM flags below EUR 20,000 or above 10%. These are transparent screening thresholds, not a guarantee of execution. HIGH trades should be split, limited or omitted after checking the live order book.
 
 <details markdown="1">
-<summary><strong>Table 11. Illustrative transaction-cost and turnover scenario</strong></summary>
+<summary><strong>Table 9.b. Illustrative transaction-cost and turnover scenario</strong></summary>
 
 | portfolio | turnover_EUR | number_of_trades | estimated_cost_EUR | high_liquidity_risk_trades | cost_percent_of_15000 |
 | --- | --- | --- | --- | --- | --- |
@@ -5786,7 +5789,7 @@ The cost scenario uses max(EUR 3, 0.25% of trade value) commission plus an assum
 ### Capital concentration
 
 <details markdown="1">
-<summary><strong>Table 12. Top-position and effective-position concentration</strong></summary>
+<summary><strong>Table 9.c. Top-position and effective-position concentration</strong></summary>
 
 | portfolio | positions | top5_share | top10_share | HHI | effective_positions |
 | --- | --- | --- | --- | --- | --- |
@@ -5797,7 +5800,7 @@ The cost scenario uses max(EUR 3, 0.25% of trade value) commission plus an assum
 
 
 <details markdown="1">
-<summary><strong>Table 12A. Baltic_NetSD: country, list and industry concentration</strong></summary>
+<summary><strong>Table 9.d. Baltic_NetSD: country, list and industry concentration</strong></summary>
 
 | dimension | category | capital_percent |
 | --- | --- | --- |
@@ -5832,7 +5835,7 @@ The cost scenario uses max(EUR 3, 0.25% of trade value) commission plus an assum
 
 
 <details markdown="1">
-<summary><strong>Table 12B. curent_update_baltic: country, list and industry concentration</strong></summary>
+<summary><strong>Table 9.e. curent_update_baltic: country, list and industry concentration</strong></summary>
 
 | dimension | category | capital_percent |
 | --- | --- | --- |
@@ -5869,7 +5872,7 @@ The number of holdings is not a diversification measure. Top-five and top-ten sh
 ### In-sample, out-of-sample and complete-period validation
 
 <details markdown="1">
-<summary><strong>Table 13A. In-sample portfolio-return statistics for the 70% training window</strong></summary>
+<summary><strong>Table 9.f. In-sample portfolio-return statistics for the 70% training window</strong></summary>
 
 | period | portfolio | observations | mean | median | SD | minimum | maximum |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -5884,7 +5887,7 @@ The number of holdings is not a diversification measure. Top-five and top-ten sh
 
 
 <details markdown="1">
-<summary><strong>Table 13B. Out-of-sample portfolio-return statistics for the 30% holdout window</strong></summary>
+<summary><strong>Table 9.g. Out-of-sample portfolio-return statistics for the 30% holdout window</strong></summary>
 
 | period | portfolio | observations | mean | median | SD | minimum | maximum |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -5898,10 +5901,10 @@ The number of holdings is not a diversification measure. Top-five and top-ten sh
 </details>
 
 
-Tables 13A and 13B use the same fixed 70/30 split. Portfolio weights are estimated from the training window and then left unchanged in the holdout window. Table 5 remains the complete-period description; it must not be interpreted as an independent test.
+The in-sample and out-of-sample tables use the same fixed 70/30 split. Portfolio weights are estimated from the training window and then left unchanged in the holdout window. Table 8.a remains the complete-period description; it must not be interpreted as an independent test.
 
 <details markdown="1">
-<summary><strong>Table 13C. Existing 70/30 holdout experiment: portfolio-only netSD on unseen test data</strong></summary>
+<summary><strong>Table 9.h. Existing 70/30 holdout experiment: portfolio-only netSD on unseen test data</strong></summary>
 
 | entity | out | in | network_denominator | netSD |
 | --- | --- | --- | --- | --- |
@@ -5926,8 +5929,8 @@ Dividend values are historical gross cash distributions. They are excluded from 
 
 </details>
 
-<details markdown="1" class="report-section" id="section-9">
-<summary><strong>9. Model</strong></summary>
+<details markdown="1" class="report-section" id="section-10">
+<summary><strong>10. Model</strong></summary>
 
 ### Exact mathematical formulation of the netSD portfolio
 
@@ -5947,10 +5950,10 @@ The objective is discrete and non-convex. ISRES evaluates candidate portfolios n
 
 </details>
 
-<details markdown="1" class="report-section" id="section-10">
-<summary><strong>10. Data coverage</strong></summary>
+<details markdown="1" class="report-section" id="section-11">
+<summary><strong>11. Data coverage</strong></summary>
 
-The official Nasdaq Baltic list contained 67 shares. 55 shares had Yahoo closing-price history covering the complete study window and entered the common-date return matrix. Shares with incomplete or unavailable histories are excluded from both the optimisation and Table 2. No price interpolation or zero-return replacement was used.
+The official Nasdaq Baltic list contained 67 shares. 55 shares had Yahoo closing-price history covering the complete study window and entered the common-date return matrix. Shares with incomplete or unavailable histories are excluded from both the optimisation and Table 2.b. No price interpolation or zero-return replacement was used.
 
 Sources: official Nasdaq Baltic share-list and dividend/event workbooks; Yahoo Finance unadjusted closing prices downloaded through quantmod; official Nasdaq Baltic corrections for MODE and MOLNR in 2025 and the complete VIRSI history. Return analysis ends 2026-10-23; latest valuation prices run through 2026-10-23.
 
