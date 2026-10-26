@@ -75,7 +75,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-26 18:24 (Europe/Vilnius); return analysis through 2026-10-23; valuation prices through 2026-10-23
+# Baltic investment plan - updated 2026-10-26 18:29 (Europe/Vilnius); return analysis through 2026-10-23; valuation prices through 2026-10-23
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -5157,7 +5157,7 @@ This section restores the portfolio-level comparison in one place. Current is th
 <details markdown="1" class="dominance-components portfolio-dominance" open>
 <summary><strong>Figure 6.a. Interactive portfolio FSD, SSD and TSD analysis</strong></summary>
 
-Select FSD, SSD or TSD and choose Current or another portfolio as the difference benchmark. The lower panels show Baltic_NetSD minus the selected benchmark. Sliders control the selected x interval and vertical magnification.
+Select FSD, SSD or TSD and choose Current or another portfolio as the difference benchmark. The lower panels show Baltic_NetSD minus the selected benchmark. Use the x-position and horizontal-magnification sliders to select the interval; its vertical scale is fitted automatically.
 
 <div class="dominance-explorer" data-asset="Portfolio" data-target="Baltic_NetSD"><p>Loading the interactive portfolio dominance analysis...</p></div>
 
@@ -6044,11 +6044,9 @@ function initialiseDominanceExplorer(box) {
       <label>Difference benchmark<select class="dom-benchmark">${benchmarks.map(x=>`<option>${x}</option>`).join('')}</select></label>
       <label>X position: <output class="dom-xout">50.0%</output><input class="dom-xpos" type="range" min="0" max="1000" value="500" step="1"></label>
       <label>Horizontal magnification: <output class="dom-hout">8x</output><input class="dom-hzoom" type="range" min="1" max="100" value="8" step="1"></label>
-      <label>Curve vertical magnification: <output class="dom-vout">1x</output><input class="dom-vzoom" type="range" min="1" max="30" value="1" step="0.5"></label>
-      <label>Difference vertical magnification: <output class="dom-dout">1x</output><input class="dom-dzoom" type="range" min="1" max="40" value="1" step="0.5"></label>
       <button class="dom-save" type="button">Save high-resolution PNG</button>
     </div><canvas class="dominance-canvas"></canvas><p class="dominance-status">Move the x-position slider, click a left-hand graph, or use the mouse wheel over it. The right-hand panels magnify the selected interval.</p>`;
-    const canvas=box.querySelector('canvas'), order=box.querySelector('.dom-order'), benchmark=box.querySelector('.dom-benchmark'), xpos=box.querySelector('.dom-xpos'), hz=box.querySelector('.dom-hzoom'), vz=box.querySelector('.dom-vzoom'), dz=box.querySelector('.dom-dzoom'), status=box.querySelector('.dominance-status');
+    const canvas=box.querySelector('canvas'), order=box.querySelector('.dom-order'), benchmark=box.querySelector('.dom-benchmark'), xpos=box.querySelector('.dom-xpos'), hz=box.querySelector('.dom-hzoom'), status=box.querySelector('.dominance-status');
     let centre=.5, hit=[];
     function render() {
       const d=data.orders[order.value], x=d.x, names=Object.keys(d.series), n=x.length;
@@ -6063,7 +6061,6 @@ function initialiseDominanceExplorer(box) {
       const bench=benchmark.value, difference=d.series[target].map((v,i)=>v-d.series[bench][i]);
       function yrange(i0,i1,keys=names) { let mn=Infinity,mx=-Infinity; keys.forEach(k=>{for(let i=i0;i<=i1;i++){const v=d.series[k][i];if(v<mn)mn=v;if(v>mx)mx=v;}}); if(mx===mn){mx+=1;mn-=1} return [mn,mx]; }
       function arrayRange(a,i0,i1){let mn=Infinity,mx=-Infinity;for(let i=i0;i<=i1;i++){if(a[i]<mn)mn=a[i];if(a[i]>mx)mx=a[i];}if(mx===mn){mx+=1;mn-=1}return[mn,mx];}
-      function magnify(y,m){const c=(y[0]+y[1])/2,h=(y[1]-y[0])/2/Number(m);return[c-h,c+h];}
       function axes(p,x0,x1,y0,y1,label) { ctx.strokeStyle='#9aabb5';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(p.l,p.t);ctx.lineTo(p.l,p.b);ctx.lineTo(p.r,p.b);ctx.stroke();ctx.fillStyle='#263d4b';ctx.fillText(label,p.l,p.t-9); for(let j=0;j<=6;j++){const xx=p.l+(p.r-p.l)*j/6,xv=x0+(x1-x0)*j/6;ctx.fillText(xv.toFixed(5),xx-22,p.b+17);} for(let j=0;j<=5;j++){const yy=p.b-(p.b-p.t)*j/5,yv=y0+(y1-y0)*j/5;ctx.fillText(yv.toExponential(2),Math.max(1,p.l-62),yy+4);} if(y0<=0&&y1>=0){const zy=p.b-(0-y0)/(y1-y0)*(p.b-p.t);ctx.strokeStyle='#17212b';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(p.l,zy);ctx.lineTo(p.r,zy);ctx.stroke();ctx.fillStyle='#17212b';ctx.font='bold 13px system-ui';ctx.fillText('0',p.l-15,zy+4);ctx.font='12px system-ui';} }
       function seriesStyle(k,ki){
         if(k===target)return{colour:'#c2185b',dash:[],width:3.4,alpha:1};
@@ -6077,14 +6074,14 @@ function initialiseDominanceExplorer(box) {
       function plotDifference(p,i0,i1,y0,y1){ctx.strokeStyle='#c2185b';ctx.setLineDash([]);ctx.lineWidth=2.8;ctx.beginPath();for(let i=i0;i<=i1;i++){const px=p.l+(x[i]-x[i0])/(x[i1]-x[i0]||1)*(p.r-p.l),py=p.b-(difference[i]-y0)/(y1-y0||1)*(p.b-p.t);if(i===i0)ctx.moveTo(px,py);else ctx.lineTo(px,py);}ctx.stroke();}
       const ym=yrange(0,n-1); axes(main,x[0],x[n-1],ym[0],ym[1],`${target}: ${order.value} components - scroll or click to move`); plot(main,0,n-1,ym[0],ym[1]);
       const sx0=main.l+(x[lo]-x[0])/(x[n-1]-x[0])*(main.r-main.l), sx1=main.l+(x[hi]-x[0])/(x[n-1]-x[0])*(main.r-main.l);ctx.strokeStyle='#d7191c';ctx.lineWidth=2;ctx.strokeRect(sx0,main.t,Math.max(2,sx1-sx0),main.b-main.t);
-      let yz=magnify(yrange(lo,hi),vz.value); axes(zoom,x[lo],x[hi],yz[0],yz[1],`Magnified components (${hz.value}x by ${vz.value}x)`); plot(zoom,lo,hi,yz[0],yz[1]);
+      let yz=yrange(lo,hi); axes(zoom,x[lo],x[hi],yz[0],yz[1],`Selected component interval (${hz.value}x horizontal)`); plot(zoom,lo,hi,yz[0],yz[1]);
       let yd=arrayRange(difference,0,n-1);axes(diff,x[0],x[n-1],yd[0],yd[1],`${target} minus ${bench}`);plotDifference(diff,0,n-1,yd[0],yd[1]);ctx.strokeStyle='#d7191c';ctx.lineWidth=2;ctx.strokeRect(sx0,diff.t,Math.max(2,sx1-sx0),diff.b-diff.t);
-      let ydz=magnify(arrayRange(difference,lo,hi),dz.value);axes(diffZoom,x[lo],x[hi],ydz[0],ydz[1],`Magnified difference (${hz.value}x by ${dz.value}x)`);plotDifference(diffZoom,lo,hi,ydz[0],ydz[1]);
+      let ydz=arrayRange(difference,lo,hi);axes(diffZoom,x[lo],x[hi],ydz[0],ydz[1],`Selected difference interval (${hz.value}x horizontal)`);plotDifference(diffZoom,lo,hi,ydz[0],ydz[1]);
       const legend=[target,'Current','Baltic_NetSD','curent_update_baltic',bench,...names].filter((k,i,a)=>d.series[k]&&a.indexOf(k)===i); legend.forEach((k,j)=>{const style=seriesStyle(k,names.indexOf(k)),lx=L+(j%3)*Math.max(190,(W-L-R)/3),ly=20+Math.floor(j/3)*20;ctx.strokeStyle=style.colour;ctx.setLineDash(style.dash);ctx.lineWidth=style.width;ctx.beginPath();ctx.moveTo(lx,ly);ctx.lineTo(lx+24,ly);ctx.stroke();ctx.setLineDash([]);ctx.fillStyle='#263d4b';ctx.fillText(k,lx+31,ly+4);});
       const values=[target,'Current',bench].filter((k,i,a)=>d.series[k]&&a.indexOf(k)===i).map(k=>`${k}=${d.series[k][mid].toExponential(5)}`).join(' | '); status.textContent=`x=${x[mid].toFixed(6)}; selected interval [${x[lo].toFixed(6)}, ${x[hi].toFixed(6)}]; difference=${difference[mid].toExponential(5)} | ${values}`;
-      xpos.value=Math.round(centre*1000);box.querySelector('.dom-xout').value=`${(100*centre).toFixed(1)}%`;box.querySelector('.dom-hout').value=`${hz.value}x`;box.querySelector('.dom-vout').value=`${vz.value}x`;box.querySelector('.dom-dout').value=`${dz.value}x`;
+      xpos.value=Math.round(centre*1000);box.querySelector('.dom-xout').value=`${(100*centre).toFixed(1)}%`;box.querySelector('.dom-hout').value=`${hz.value}x`;
     }
-    [order,benchmark,hz,vz,dz].forEach(el=>el.addEventListener('input',render));xpos.addEventListener('input',()=>{centre=Number(xpos.value)/1000;render();});
+    [order,benchmark,hz].forEach(el=>el.addEventListener('input',render));xpos.addEventListener('input',()=>{centre=Number(xpos.value)/1000;render();});
     canvas.addEventListener('click',e=>{const r=canvas.getBoundingClientRect(),px=e.clientX-r.left,py=e.clientY-r.top;const p=hit.find(q=>px>=q.l&&px<=q.r&&py>=q.t&&py<=q.b);if(p){centre=Math.max(0,Math.min(1,(px-p.l)/(p.r-p.l)));render();}});
     canvas.addEventListener('wheel',e=>{const r=canvas.getBoundingClientRect(),px=e.clientX-r.left,py=e.clientY-r.top;if(hit.some(q=>px>=q.l&&px<=q.r&&py>=q.t&&py<=q.b)){e.preventDefault();centre=Math.max(0,Math.min(1,centre+Math.sign(e.deltaY)*.015));render();}},{passive:false});
     box.querySelector('.dom-save').addEventListener('click',()=>{const a=document.createElement('a');a.download=`${target}_${order.value}_interactive.png`;a.href=canvas.toDataURL('image/png');a.click();});
