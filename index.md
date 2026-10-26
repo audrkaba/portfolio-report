@@ -68,7 +68,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-26 16:57 (Europe/Vilnius); return analysis through 2026-10-23; valuation prices through 2026-10-23
+# Baltic investment plan - updated 2026-10-26 17:37 (Europe/Vilnius); return analysis through 2026-10-23; valuation prices through 2026-10-23
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -198,8 +198,10 @@ Allocation change is the optimiser's target quantity, not an instruction to trad
 
 trade_shares is the optimiser's allocation change, not an instruction to trade immediately. current_execution_decision is the only action recommendation: BUY requires a material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD. trade_EUR is the signed transaction amount before costs.
 
-<details markdown="1" class="profiles-section">
-<summary><strong>Table 3A. Interactive share profiles</strong></summary>
+</details>
+
+<details markdown="1" class="report-section" id="section-3">
+<summary><strong>3. Table 3A. Interactive share profiles</strong></summary>
 
 Select a share to display its allocation, technical indicators, all PerformanceAnalytics measures and portfolio sensitivity.
 
@@ -426,9 +428,9 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 **Increasing this existing position in the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>KNE1L shares</td><td>928</td><td>1856</td><td>+928</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>8357.739957</td><td>445.439990</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.559322</td><td>0.101695</td></tr><tr><td>OUT</td><td>62</td><td>70</td><td>+8</td></tr><tr><td>IN</td><td>8</td><td>4</td><td>-4</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.075434</td><td>0.005262</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.101209</td><td>0.010053</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>KNE1L shares</td><td>928</td><td>1929</td><td>+1001</td></tr><tr><td>Portfolio value, EUR</td><td>8895.553974</td><td>9375.032977</td><td>479.479002</td></tr><tr><td>netSD</td><td>0.618644</td><td>0.635593</td><td>0.016949</td></tr><tr><td>OUT</td><td>73</td><td>75</td><td>+2</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.062407</td><td>1.072230</td><td>0.009823</td></tr><tr><td>Sortino ratio</td><td>0.104500</td><td>0.112869</td><td>0.008370</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 928 KNE1L shares. The scenario adds 928 shares from Table 3A, resulting in 1856 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 928 KNE1L shares. The scenario adds 1001 shares from Table 3A, resulting in 1929 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -672,9 +674,9 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 **Increasing this existing position in the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>VLP1L shares</td><td>42</td><td>72</td><td>+30</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>8380.299978</td><td>468.000011</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.576271</td><td>0.118644</td></tr><tr><td>OUT</td><td>62</td><td>72</td><td>+10</td></tr><tr><td>IN</td><td>8</td><td>4</td><td>-4</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.085773</td><td>0.015600</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.109190</td><td>0.018034</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>VLP1L shares</td><td>42</td><td>78</td><td>+36</td></tr><tr><td>Portfolio value, EUR</td><td>8895.553974</td><td>9462.553974</td><td>567.000000</td></tr><tr><td>netSD</td><td>0.618644</td><td>0.669492</td><td>0.050847</td></tr><tr><td>OUT</td><td>73</td><td>79</td><td>+6</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.062407</td><td>1.088515</td><td>0.026107</td></tr><tr><td>Sortino ratio</td><td>0.104500</td><td>0.123997</td><td>0.019497</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 42 VLP1L shares. The scenario adds 30 shares from Table 3A, resulting in 72 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 42 VLP1L shares. The scenario adds 36 shares from Table 3A, resulting in 78 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -937,9 +939,9 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 **Increasing this existing position in the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>MRK1T shares</td><td>20</td><td>44</td><td>+24</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>8562.699976</td><td>650.400009</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.593220</td><td>0.135593</td></tr><tr><td>OUT</td><td>62</td><td>72</td><td>+10</td></tr><tr><td>IN</td><td>8</td><td>2</td><td>-6</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.092428</td><td>0.022255</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.103788</td><td>0.012632</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>MRK1T shares</td><td>20</td><td>46</td><td>+26</td></tr><tr><td>Portfolio value, EUR</td><td>8895.553974</td><td>9597.553974</td><td>702.000000</td></tr><tr><td>netSD</td><td>0.618644</td><td>0.644068</td><td>0.025424</td></tr><tr><td>OUT</td><td>73</td><td>76</td><td>+3</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.062407</td><td>1.092613</td><td>0.030205</td></tr><tr><td>Sortino ratio</td><td>0.104500</td><td>0.116306</td><td>0.011807</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 20 MRK1T shares. The scenario adds 24 shares from Table 3A, resulting in 44 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 20 MRK1T shares. The scenario adds 26 shares from Table 3A, resulting in 46 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -1170,9 +1172,9 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 **Adding this new share to the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>MOLNR shares</td><td>0</td><td>22</td><td>+22</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>8361.099958</td><td>448.799992</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.618644</td><td>0.161017</td></tr><tr><td>OUT</td><td>62</td><td>76</td><td>+14</td></tr><tr><td>IN</td><td>8</td><td>3</td><td>-5</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.173471</td><td>0.103299</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.115416</td><td>0.024261</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>MOLNR shares</td><td>0</td><td>29</td><td>+29</td></tr><tr><td>Portfolio value, EUR</td><td>8895.553974</td><td>9492.953985</td><td>597.400011</td></tr><tr><td>netSD</td><td>0.618644</td><td>0.652542</td><td>0.033898</td></tr><tr><td>OUT</td><td>73</td><td>77</td><td>+4</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.062407</td><td>1.176039</td><td>0.113632</td></tr><tr><td>Sortino ratio</td><td>0.104500</td><td>0.130777</td><td>0.026277</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 0 MOLNR shares. The scenario adds 22 shares from Table 3A, resulting in 22 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 MOLNR shares. The scenario adds 29 shares from Table 3A, resulting in 29 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -1196,7 +1198,7 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-apg1l" data-signal="WAIT" data-netsd-effect="INCREASE">
+<details markdown="1" class="stock-profile" id="share-apg1l" data-signal="WAIT" data-netsd-effect="UNCHANGED">
 <summary><strong>APG1L — Apranga</strong> | current action: WAIT | allocation target 327 shares | netSD diagnostic rank 5</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>Execution rationale</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>200</td><td>327</td><td>+127</td><td>8.33%</td><td>EUR 3.8200</td><td>0.3220</td><td>40 / 2</td><td>39.86</td><td>Bullish</td><td>Inside bands</td><td>1.000 (Overbought)</td><td>HOLD</td><td>BUY</td><td>WAIT</td><td>Allocation target is higher, but technical timing does not support buying now.</td><td>0.006942 (7.707% of portfolio HHI)</td><td>EUR 24,133</td><td>2.0%</td><td>1.6%</td><td>LOW</td></tr></tbody></table>
@@ -1463,9 +1465,9 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 **Increasing this existing position in the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>APG1L shares</td><td>200</td><td>302</td><td>+102</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>8300.919961</td><td>388.619994</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.525424</td><td>0.067797</td></tr><tr><td>OUT</td><td>62</td><td>66</td><td>+4</td></tr><tr><td>IN</td><td>8</td><td>4</td><td>-4</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.059608</td><td>-0.010565</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.096931</td><td>0.005776</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>APG1L shares</td><td>200</td><td>327</td><td>+127</td></tr><tr><td>Portfolio value, EUR</td><td>8895.553974</td><td>9380.693966</td><td>485.139992</td></tr><tr><td>netSD</td><td>0.618644</td><td>0.618644</td><td>0.000000</td></tr><tr><td>OUT</td><td>73</td><td>73</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.062407</td><td>1.051495</td><td>-0.010913</td></tr><tr><td>Sortino ratio</td><td>0.104500</td><td>0.110523</td><td>0.006024</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 200 APG1L shares. The scenario adds 102 shares from Table 3A, resulting in 302 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 200 APG1L shares. The scenario adds 127 shares from Table 3A, resulting in 327 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -1673,9 +1675,9 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 **Increasing this existing position in the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>GRG1L shares</td><td>543</td><td>1086</td><td>+543</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>8455.299967</td><td>543.000000</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.550847</td><td>0.093220</td></tr><tr><td>OUT</td><td>62</td><td>69</td><td>+7</td></tr><tr><td>IN</td><td>8</td><td>4</td><td>-4</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.071281</td><td>0.001109</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.097179</td><td>0.006023</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>GRG1L shares</td><td>543</td><td>1006</td><td>+463</td></tr><tr><td>Portfolio value, EUR</td><td>8895.553974</td><td>9363.183970</td><td>467.629996</td></tr><tr><td>netSD</td><td>0.618644</td><td>0.635593</td><td>0.016949</td></tr><tr><td>OUT</td><td>73</td><td>75</td><td>+2</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.062407</td><td>1.066323</td><td>0.003916</td></tr><tr><td>Sortino ratio</td><td>0.104500</td><td>0.108294</td><td>0.003794</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 543 GRG1L shares. The scenario adds 543 shares from Table 3A, resulting in 1086 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 543 GRG1L shares. The scenario adds 463 shares from Table 3A, resulting in 1006 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -1906,9 +1908,9 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 **Adding this new share to the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>RSU1L shares</td><td>0</td><td>126</td><td>+126</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>8476.779969</td><td>564.480002</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.559322</td><td>0.101695</td></tr><tr><td>OUT</td><td>62</td><td>70</td><td>+8</td></tr><tr><td>IN</td><td>8</td><td>4</td><td>-4</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.069275</td><td>-0.000898</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.098533</td><td>0.007377</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>RSU1L shares</td><td>0</td><td>105</td><td>+105</td></tr><tr><td>Portfolio value, EUR</td><td>8895.553974</td><td>9357.553984</td><td>462.000010</td></tr><tr><td>netSD</td><td>0.618644</td><td>0.635593</td><td>0.016949</td></tr><tr><td>OUT</td><td>73</td><td>75</td><td>+2</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.062407</td><td>1.059303</td><td>-0.003104</td></tr><tr><td>Sortino ratio</td><td>0.104500</td><td>0.109701</td><td>0.005202</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 0 RSU1L shares. The scenario adds 126 shares from Table 3A, resulting in 126 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 RSU1L shares. The scenario adds 105 shares from Table 3A, resulting in 105 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -2152,9 +2154,9 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 **Adding this new share to the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>AKO1L shares</td><td>0</td><td>167</td><td>+167</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>8218.744973</td><td>306.445006</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.491525</td><td>0.033898</td></tr><tr><td>OUT</td><td>62</td><td>64</td><td>+2</td></tr><tr><td>IN</td><td>8</td><td>6</td><td>-2</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.063328</td><td>-0.006844</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.094109</td><td>0.002953</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>AKO1L shares</td><td>0</td><td>272</td><td>+272</td></tr><tr><td>Portfolio value, EUR</td><td>8895.553974</td><td>9398.753981</td><td>503.200006</td></tr><tr><td>netSD</td><td>0.618644</td><td>0.635593</td><td>0.016949</td></tr><tr><td>OUT</td><td>73</td><td>75</td><td>+2</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.062407</td><td>1.047568</td><td>-0.014839</td></tr><tr><td>Sortino ratio</td><td>0.104500</td><td>0.108423</td><td>0.003923</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 0 AKO1L shares. The scenario adds 167 shares from Table 3A, resulting in 167 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 AKO1L shares. The scenario adds 272 shares from Table 3A, resulting in 272 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -2422,9 +2424,9 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 **Increasing this existing position in the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>TAL1T shares</td><td>700</td><td>1116</td><td>+416</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>8181.035978</td><td>268.736012</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.423729</td><td>-0.033898</td></tr><tr><td>OUT</td><td>62</td><td>60</td><td>-2</td></tr><tr><td>IN</td><td>8</td><td>10</td><td>+2</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.061612</td><td>-0.008560</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.091827</td><td>0.000672</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>TAL1T shares</td><td>700</td><td>1172</td><td>+472</td></tr><tr><td>Portfolio value, EUR</td><td>8895.553974</td><td>9202.353963</td><td>306.799989</td></tr><tr><td>netSD</td><td>0.618644</td><td>0.601695</td><td>-0.016949</td></tr><tr><td>OUT</td><td>73</td><td>71</td><td>-2</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.062407</td><td>1.056305</td><td>-0.006103</td></tr><tr><td>Sortino ratio</td><td>0.104500</td><td>0.104942</td><td>0.000442</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 700 TAL1T shares. The scenario adds 416 shares from Table 3A, resulting in 1116 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 700 TAL1T shares. The scenario adds 472 shares from Table 3A, resulting in 1172 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -2685,9 +2687,9 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 **Increasing this existing position in the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>TKM1T shares</td><td>288</td><td>293</td><td>+5</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>7956.799965</td><td>44.499998</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.406780</td><td>-0.050847</td></tr><tr><td>OUT</td><td>62</td><td>60</td><td>-2</td></tr><tr><td>IN</td><td>8</td><td>12</td><td>+4</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.069018</td><td>-0.001155</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.090773</td><td>-0.000382</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>TKM1T shares</td><td>288</td><td>330</td><td>+42</td></tr><tr><td>Portfolio value, EUR</td><td>8895.553974</td><td>9269.353958</td><td>373.799984</td></tr><tr><td>netSD</td><td>0.618644</td><td>0.601695</td><td>-0.016949</td></tr><tr><td>OUT</td><td>73</td><td>71</td><td>-2</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.062407</td><td>1.055137</td><td>-0.007271</td></tr><tr><td>Sortino ratio</td><td>0.104500</td><td>0.101101</td><td>-0.003399</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 288 TKM1T shares. The scenario adds 5 shares from Table 3A, resulting in 293 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 288 TKM1T shares. The scenario adds 42 shares from Table 3A, resulting in 330 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -2978,9 +2980,9 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 **Adding this new share to the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>DGR1R shares</td><td>0</td><td>36</td><td>+36</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>7974.219968</td><td>61.920001</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.423729</td><td>-0.033898</td></tr><tr><td>OUT</td><td>62</td><td>62</td><td>+0</td></tr><tr><td>IN</td><td>8</td><td>12</td><td>+4</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.069494</td><td>-0.000679</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.091417</td><td>0.000262</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>DGR1R shares</td><td>0</td><td>181</td><td>+181</td></tr><tr><td>Portfolio value, EUR</td><td>8895.553974</td><td>9203.253983</td><td>307.700009</td></tr><tr><td>netSD</td><td>0.618644</td><td>0.601695</td><td>-0.016949</td></tr><tr><td>OUT</td><td>73</td><td>71</td><td>-2</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.062407</td><td>1.057824</td><td>-0.004583</td></tr><tr><td>Sortino ratio</td><td>0.104500</td><td>0.105253</td><td>0.000754</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 0 DGR1R shares. The scenario adds 36 shares from Table 3A, resulting in 36 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 DGR1R shares. The scenario adds 181 shares from Table 3A, resulting in 181 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -3244,9 +3246,9 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 **Adding this new share to the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>EFT1T shares</td><td>0</td><td>3</td><td>+3</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>7971.099968</td><td>58.800001</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.406780</td><td>-0.050847</td></tr><tr><td>OUT</td><td>62</td><td>60</td><td>-2</td></tr><tr><td>IN</td><td>8</td><td>12</td><td>+4</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.070439</td><td>0.000267</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.091158</td><td>0.000002</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>EFT1T shares</td><td>0</td><td>11</td><td>+11</td></tr><tr><td>Portfolio value, EUR</td><td>8895.553974</td><td>9108.403979</td><td>212.850004</td></tr><tr><td>netSD</td><td>0.618644</td><td>0.601695</td><td>-0.016949</td></tr><tr><td>OUT</td><td>73</td><td>71</td><td>-2</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.062407</td><td>1.061137</td><td>-0.001271</td></tr><tr><td>Sortino ratio</td><td>0.104500</td><td>0.104354</td><td>-0.000146</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 0 EFT1T shares. The scenario adds 3 shares from Table 3A, resulting in 3 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 EFT1T shares. The scenario adds 11 shares from Table 3A, resulting in 11 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -3510,9 +3512,9 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 **Increasing this existing position in the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>HAE1T shares</td><td>100</td><td>173</td><td>+73</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>8303.579977</td><td>391.280010</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.440678</td><td>-0.016949</td></tr><tr><td>OUT</td><td>62</td><td>62</td><td>+0</td></tr><tr><td>IN</td><td>8</td><td>10</td><td>+2</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.070811</td><td>0.000639</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.090759</td><td>-0.000397</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>HAE1T shares</td><td>100</td><td>133</td><td>+33</td></tr><tr><td>Portfolio value, EUR</td><td>8895.553974</td><td>9072.433979</td><td>176.880004</td></tr><tr><td>netSD</td><td>0.618644</td><td>0.601695</td><td>-0.016949</td></tr><tr><td>OUT</td><td>73</td><td>71</td><td>-2</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.062407</td><td>1.063761</td><td>0.001354</td></tr><tr><td>Sortino ratio</td><td>0.104500</td><td>0.104262</td><td>-0.000237</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 100 HAE1T shares. The scenario adds 73 shares from Table 3A, resulting in 173 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 100 HAE1T shares. The scenario adds 33 shares from Table 3A, resulting in 133 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -3780,9 +3782,9 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 **Adding this new share to the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>CPA1T shares</td><td>0</td><td>67</td><td>+67</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>8069.749960</td><td>157.449994</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.406780</td><td>-0.050847</td></tr><tr><td>OUT</td><td>62</td><td>60</td><td>-2</td></tr><tr><td>IN</td><td>8</td><td>12</td><td>+4</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.073798</td><td>0.003626</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.090358</td><td>-0.000798</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>CPA1T shares</td><td>0</td><td>64</td><td>+64</td></tr><tr><td>Portfolio value, EUR</td><td>8895.553974</td><td>9048.193974</td><td>152.639999</td></tr><tr><td>netSD</td><td>0.618644</td><td>0.601695</td><td>-0.016949</td></tr><tr><td>OUT</td><td>73</td><td>71</td><td>-2</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.062407</td><td>1.062540</td><td>0.000133</td></tr><tr><td>Sortino ratio</td><td>0.104500</td><td>0.103696</td><td>-0.000804</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 0 CPA1T shares. The scenario adds 67 shares from Table 3A, resulting in 67 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 CPA1T shares. The scenario adds 64 shares from Table 3A, resulting in 64 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -4030,7 +4032,7 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 **Increasing this existing position in the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>SAF1R shares</td><td>100</td><td>100</td><td>+0</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>7912.299967</td><td>0.000000</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.457627</td><td>0.000000</td></tr><tr><td>OUT</td><td>62</td><td>62</td><td>+0</td></tr><tr><td>IN</td><td>8</td><td>8</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.070173</td><td>0.000000</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.091156</td><td>0.000000</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>SAF1R shares</td><td>100</td><td>100</td><td>+0</td></tr><tr><td>Portfolio value, EUR</td><td>8895.553974</td><td>8895.553974</td><td>0.000000</td></tr><tr><td>netSD</td><td>0.618644</td><td>0.618644</td><td>0.000000</td></tr><tr><td>OUT</td><td>73</td><td>73</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.062407</td><td>1.062407</td><td>0.000000</td></tr><tr><td>Sortino ratio</td><td>0.104500</td><td>0.104500</td><td>0.000000</td></tr></tbody></table>
 
 The starting point is the unmodified current portfolio, which already contains 100 SAF1R shares. The scenario adds 0 shares from Table 3A, resulting in 100 shares; every other holding remains unchanged.
 
@@ -4290,7 +4292,7 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 **Increasing this existing position in the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>TSM1T shares</td><td>330</td><td>330</td><td>+0</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>7912.299967</td><td>0.000000</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.457627</td><td>0.000000</td></tr><tr><td>OUT</td><td>62</td><td>62</td><td>+0</td></tr><tr><td>IN</td><td>8</td><td>8</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.070173</td><td>0.000000</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.091156</td><td>0.000000</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>TSM1T shares</td><td>330</td><td>330</td><td>+0</td></tr><tr><td>Portfolio value, EUR</td><td>8895.553974</td><td>8895.553974</td><td>0.000000</td></tr><tr><td>netSD</td><td>0.618644</td><td>0.618644</td><td>0.000000</td></tr><tr><td>OUT</td><td>73</td><td>73</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.062407</td><td>1.062407</td><td>0.000000</td></tr><tr><td>Sortino ratio</td><td>0.104500</td><td>0.104500</td><td>0.000000</td></tr></tbody></table>
 
 The starting point is the unmodified current portfolio, which already contains 330 TSM1T shares. The scenario adds 0 shares from Table 3A, resulting in 330 shares; every other holding remains unchanged.
 
@@ -4536,9 +4538,9 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 **Adding this new share to the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>PZV1L shares</td><td>0</td><td>56</td><td>+56</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>8012.819964</td><td>100.519998</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.483051</td><td>0.025424</td></tr><tr><td>OUT</td><td>62</td><td>64</td><td>+2</td></tr><tr><td>IN</td><td>8</td><td>7</td><td>-1</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.072849</td><td>0.002677</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.092878</td><td>0.001723</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>PZV1L shares</td><td>0</td><td>71</td><td>+71</td></tr><tr><td>Portfolio value, EUR</td><td>8895.553974</td><td>9021.578973</td><td>126.024998</td></tr><tr><td>netSD</td><td>0.618644</td><td>0.635593</td><td>0.016949</td></tr><tr><td>OUT</td><td>73</td><td>75</td><td>+2</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.062407</td><td>1.061290</td><td>-0.001118</td></tr><tr><td>Sortino ratio</td><td>0.104500</td><td>0.106309</td><td>0.001810</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 0 PZV1L shares. The scenario adds 56 shares from Table 3A, resulting in 56 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 PZV1L shares. The scenario adds 71 shares from Table 3A, resulting in 71 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -4562,7 +4564,7 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-virsi" data-signal="SKIP" data-netsd-effect="INCREASE">
+<details markdown="1" class="stock-profile" id="share-virsi" data-signal="SKIP" data-netsd-effect="DECREASE">
 <summary><strong>VIRSI — VIRŠI-A</strong> | current action: SKIP | allocation target 19 shares | netSD diagnostic rank 18</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>Execution rationale</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>19</td><td>+19</td><td>0.59%</td><td>EUR 4.4100</td><td>0.1695</td><td>37 / 17</td><td>49.23</td><td>Bearish</td><td>Inside bands</td><td>0.297 (Neutral)</td><td>HOLD</td><td>BUY</td><td>SKIP</td><td>Do not execute: proposed purchase is below EUR 100 or below 1% target weight.</td><td>0.000034 (0.038% of portfolio HHI)</td><td>EUR 2,717</td><td>3.1%</td><td>2.8%</td><td>HIGH</td></tr></tbody></table>
@@ -4783,9 +4785,9 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 **Adding this new share to the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>VIRSI shares</td><td>0</td><td>125</td><td>+125</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>8464.799967</td><td>552.500000</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.466102</td><td>0.008475</td></tr><tr><td>OUT</td><td>62</td><td>63</td><td>+1</td></tr><tr><td>IN</td><td>8</td><td>8</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.067717</td><td>-0.002456</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.090791</td><td>-0.000364</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>VIRSI shares</td><td>0</td><td>19</td><td>+19</td></tr><tr><td>Portfolio value, EUR</td><td>8895.553974</td><td>8979.343974</td><td>83.790000</td></tr><tr><td>netSD</td><td>0.618644</td><td>0.601695</td><td>-0.016949</td></tr><tr><td>OUT</td><td>73</td><td>71</td><td>-2</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.062407</td><td>1.062409</td><td>0.000001</td></tr><tr><td>Sortino ratio</td><td>0.104500</td><td>0.104443</td><td>-0.000057</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 0 VIRSI shares. The scenario adds 125 shares from Table 3A, resulting in 125 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 0 VIRSI shares. The scenario adds 19 shares from Table 3A, resulting in 19 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -4809,7 +4811,7 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-roe1l" data-signal="SKIP" data-netsd-effect="DECREASE">
+<details markdown="1" class="stock-profile" id="share-roe1l" data-signal="SKIP" data-netsd-effect="UNCHANGED">
 <summary><strong>ROE1L — Artea Bankas</strong> | current action: SKIP | allocation target 470 shares | netSD diagnostic rank 19</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>Current execution decision</span></th><th><span>Execution rationale</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>416</td><td>470</td><td>+54</td><td>2.77%</td><td>EUR 0.8820</td><td>0.1949</td><td>42 / 19</td><td>45.19</td><td>Bearish</td><td>Inside bands</td><td>0.453 (Neutral)</td><td>HOLD</td><td>BUY</td><td>SKIP</td><td>Do not execute: proposed purchase is below EUR 100 or below 1% target weight.</td><td>0.000767 (0.851% of portfolio HHI)</td><td>EUR 182,092</td><td>0.0%</td><td>1.6%</td><td>LOW</td></tr></tbody></table>
@@ -5037,9 +5039,9 @@ The removed weight is distributed proportionally across all remaining holdings, 
 
 **Increasing this existing position in the current portfolio**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>ROE1L shares</td><td>416</td><td>541</td><td>+125</td></tr><tr><td>Portfolio value, EUR</td><td>7912.299967</td><td>8022.299966</td><td>109.999999</td></tr><tr><td>netSD</td><td>0.457627</td><td>0.440678</td><td>-0.016949</td></tr><tr><td>OUT</td><td>62</td><td>62</td><td>+0</td></tr><tr><td>IN</td><td>8</td><td>10</td><td>+2</td></tr><tr><td>Rachev ratio</td><td>1.070173</td><td>1.070363</td><td>0.000191</td></tr><tr><td>Sortino ratio</td><td>0.091156</td><td>0.091677</td><td>0.000522</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>ROE1L shares</td><td>416</td><td>470</td><td>+54</td></tr><tr><td>Portfolio value, EUR</td><td>8895.553974</td><td>8943.181976</td><td>47.628002</td></tr><tr><td>netSD</td><td>0.618644</td><td>0.618644</td><td>0.000000</td></tr><tr><td>OUT</td><td>73</td><td>73</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.062407</td><td>1.062567</td><td>0.000160</td></tr><tr><td>Sortino ratio</td><td>0.104500</td><td>0.104636</td><td>0.000136</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 416 ROE1L shares. The scenario adds 125 shares from Table 3A, resulting in 541 shares; every other holding remains unchanged.
+The starting point is the unmodified current portfolio, which already contains 416 ROE1L shares. The scenario adds 54 shares from Table 3A, resulting in 470 shares; every other holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -5065,10 +5067,8 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-</details>
-
-<details markdown="1" class="report-section" id="section-3">
-<summary><strong>3. Single-share additions to the current portfolio</strong></summary>
+<details markdown="1" class="report-section" id="section-4">
+<summary><strong>4. Single-share additions to the current portfolio</strong></summary>
 
 Each row starts from the same unmodified current portfolio and adds only the stated share quantity from Table 3A. Rows are ranked by the change in netSD; larger is better. OUT is the number of dominance relations won, while IN is the number lost; more OUT and fewer IN are preferable.
 
@@ -5077,36 +5077,32 @@ Each row starts from the same unmodified current portfolio and adds only the sta
 
 | Rank | Share | Added shares | Updated value EUR | Current OUT / IN | Updated OUT / IN | Delta OUT / IN | Current netSD | Updated netSD | Delta netSD | Delta Rachev | Delta Sortino |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | MOLNR | 22 | 8361.099958 | 62 / 8 | 76 / 3 | +14 / -5 | 0.457627 | 0.618644 | 0.161017 | 0.103299 | 0.024261 |
-| 2 | MRK1T | 24 | 8562.699976 | 62 / 8 | 72 / 2 | +10 / -6 | 0.457627 | 0.593220 | 0.135593 | 0.022255 | 0.012632 |
-| 3 | VLP1L | 30 | 8380.299978 | 62 / 8 | 72 / 4 | +10 / -4 | 0.457627 | 0.576271 | 0.118644 | 0.015600 | 0.018034 |
-| 4 | KNE1L | 928 | 8357.739957 | 62 / 8 | 70 / 4 | +8 / -4 | 0.457627 | 0.559322 | 0.101695 | 0.005262 | 0.010053 |
-| 5 | RSU1L | 126 | 8476.779969 | 62 / 8 | 70 / 4 | +8 / -4 | 0.457627 | 0.559322 | 0.101695 | -0.000898 | 0.007377 |
-| 6 | GRG1L | 543 | 8455.299967 | 62 / 8 | 69 / 4 | +7 / -4 | 0.457627 | 0.550847 | 0.093220 | 0.001109 | 0.006023 |
-| 7 | APG1L | 102 | 8300.919961 | 62 / 8 | 66 / 4 | +4 / -4 | 0.457627 | 0.525424 | 0.067797 | -0.010565 | 0.005776 |
-| 8 | AKO1L | 167 | 8218.744973 | 62 / 8 | 64 / 6 | +2 / -2 | 0.457627 | 0.491525 | 0.033898 | -0.006844 | 0.002953 |
-| 9 | PZV1L | 56 | 8012.819964 | 62 / 8 | 64 / 7 | +2 / -1 | 0.457627 | 0.483051 | 0.025424 | 0.002677 | 0.001723 |
-| 10 | IGN1L | 27 | 8499.549967 | 62 / 8 | 63 / 8 | +1 / +0 | 0.457627 | 0.466102 | 0.008475 | 0.004655 | 0.001835 |
-| 11 | VIRSI | 125 | 8464.799967 | 62 / 8 | 63 / 8 | +1 / +0 | 0.457627 | 0.466102 | 0.008475 | -0.002456 | -0.000364 |
-| 12 | SAF1R | 0 | 7912.299967 | 62 / 8 | 62 / 8 | +0 / +0 | 0.457627 | 0.457627 | 0.000000 | 0.000000 | 0.000000 |
-| 13 | TSM1T | 0 | 7912.299967 | 62 / 8 | 62 / 8 | +0 / +0 | 0.457627 | 0.457627 | 0.000000 | 0.000000 | 0.000000 |
-| 14 | TVE1T | 43 | 8378.849983 | 62 / 8 | 62 / 9 | +0 / +1 | 0.457627 | 0.449153 | -0.008475 | 0.002998 | -0.002770 |
-| 15 | HAE1T | 73 | 8303.579977 | 62 / 8 | 62 / 10 | +0 / +2 | 0.457627 | 0.440678 | -0.016949 | 0.000639 | -0.000397 |
-| 16 | ROE1L | 125 | 8022.299966 | 62 / 8 | 62 / 10 | +0 / +2 | 0.457627 | 0.440678 | -0.016949 | 0.000191 | 0.000522 |
-| 17 | DGR1R | 36 | 7974.219968 | 62 / 8 | 62 / 12 | +0 / +4 | 0.457627 | 0.423729 | -0.033898 | -0.000679 | 0.000262 |
-| 18 | TEL1L | 78 | 8090.919964 | 62 / 8 | 60 / 10 | -2 / +2 | 0.457627 | 0.423729 | -0.033898 | -0.001226 | 0.000562 |
-| 19 | LHV1T | 65 | 8123.549967 | 62 / 8 | 60 / 10 | -2 / +2 | 0.457627 | 0.423729 | -0.033898 | -0.002417 | -0.000839 |
-| 20 | TAL1T | 416 | 8181.035978 | 62 / 8 | 60 / 10 | -2 / +2 | 0.457627 | 0.423729 | -0.033898 | -0.008560 | 0.000672 |
-| 21 | CPA1T | 67 | 8069.749960 | 62 / 8 | 60 / 12 | -2 / +4 | 0.457627 | 0.406780 | -0.050847 | 0.003626 | -0.000798 |
-| 22 | EFT1T | 3 | 7971.099968 | 62 / 8 | 60 / 12 | -2 / +4 | 0.457627 | 0.406780 | -0.050847 | 0.000267 | 0.000002 |
-| 23 | TKM1T | 5 | 7956.799965 | 62 / 8 | 60 / 12 | -2 / +4 | 0.457627 | 0.406780 | -0.050847 | -0.001155 | -0.000382 |
+| 1 | VLP1L | 36 | 9462.553974 | 73 / 0 | 79 / 0 | +6 / +0 | 0.618644 | 0.669492 | 0.050847 | 0.026107 | 0.019497 |
+| 2 | MOLNR | 29 | 9492.953985 | 73 / 0 | 77 / 0 | +4 / +0 | 0.618644 | 0.652542 | 0.033898 | 0.113632 | 0.026277 |
+| 3 | MRK1T | 26 | 9597.553974 | 73 / 0 | 76 / 0 | +3 / +0 | 0.618644 | 0.644068 | 0.025424 | 0.030205 | 0.011807 |
+| 4 | KNE1L | 1001 | 9375.032977 | 73 / 0 | 75 / 0 | +2 / +0 | 0.618644 | 0.635593 | 0.016949 | 0.009823 | 0.008370 |
+| 5 | GRG1L | 463 | 9363.183970 | 73 / 0 | 75 / 0 | +2 / +0 | 0.618644 | 0.635593 | 0.016949 | 0.003916 | 0.003794 |
+| 6 | PZV1L | 71 | 9021.578973 | 73 / 0 | 75 / 0 | +2 / +0 | 0.618644 | 0.635593 | 0.016949 | -0.001118 | 0.001810 |
+| 7 | RSU1L | 105 | 9357.553984 | 73 / 0 | 75 / 0 | +2 / +0 | 0.618644 | 0.635593 | 0.016949 | -0.003104 | 0.005202 |
+| 8 | AKO1L | 272 | 9398.753981 | 73 / 0 | 75 / 0 | +2 / +0 | 0.618644 | 0.635593 | 0.016949 | -0.014839 | 0.003923 |
+| 9 | ROE1L | 54 | 8943.181976 | 73 / 0 | 73 / 0 | +0 / +0 | 0.618644 | 0.618644 | 0.000000 | 0.000160 | 0.000136 |
+| 10 | SAF1R | 0 | 8895.553974 | 73 / 0 | 73 / 0 | +0 / +0 | 0.618644 | 0.618644 | 0.000000 | 0.000000 | 0.000000 |
+| 11 | TSM1T | 0 | 8895.553974 | 73 / 0 | 73 / 0 | +0 / +0 | 0.618644 | 0.618644 | 0.000000 | 0.000000 | 0.000000 |
+| 12 | APG1L | 127 | 9380.693966 | 73 / 0 | 73 / 0 | +0 / +0 | 0.618644 | 0.618644 | 0.000000 | -0.010913 | 0.006024 |
+| 13 | HAE1T | 33 | 9072.433979 | 73 / 0 | 71 / 0 | -2 / +0 | 0.618644 | 0.601695 | -0.016949 | 0.001354 | -0.000237 |
+| 14 | CPA1T | 64 | 9048.193974 | 73 / 0 | 71 / 0 | -2 / +0 | 0.618644 | 0.601695 | -0.016949 | 0.000133 | -0.000804 |
+| 15 | VIRSI | 19 | 8979.343974 | 73 / 0 | 71 / 0 | -2 / +0 | 0.618644 | 0.601695 | -0.016949 | 0.000001 | -0.000057 |
+| 16 | EFT1T | 11 | 9108.403979 | 73 / 0 | 71 / 0 | -2 / +0 | 0.618644 | 0.601695 | -0.016949 | -0.001271 | -0.000146 |
+| 17 | DGR1R | 181 | 9203.253983 | 73 / 0 | 71 / 0 | -2 / +0 | 0.618644 | 0.601695 | -0.016949 | -0.004583 | 0.000754 |
+| 18 | TAL1T | 472 | 9202.353963 | 73 / 0 | 71 / 0 | -2 / +0 | 0.618644 | 0.601695 | -0.016949 | -0.006103 | 0.000442 |
+| 19 | TKM1T | 42 | 9269.353958 | 73 / 0 | 71 / 0 | -2 / +0 | 0.618644 | 0.601695 | -0.016949 | -0.007271 | -0.003399 |
 
 </details>
 
 </details>
 
-<details markdown="1" class="report-section" id="section-4">
-<summary><strong>4. Leave-one-out portfolio sensitivity</strong></summary>
+<details markdown="1" class="report-section" id="section-5">
+<summary><strong>5. Leave-one-out portfolio sensitivity</strong></summary>
 
 Each scenario removes one share from curent_update_baltic and proportionally rescales the remaining weights. Positive delta means that the ratio improves after removal; negative delta means that the removed share was beneficial for that criterion.
 
@@ -5181,8 +5177,8 @@ Each share has two adjacent bars. The blue bar is the change required for Baltic
 
 </details>
 
-<details markdown="1" class="report-section" id="section-5">
-<summary><strong>5. Earnings outcomes and subsequent price changes</strong></summary>
+<details markdown="1" class="report-section" id="section-6">
+<summary><strong>6. Earnings outcomes and subsequent price changes</strong></summary>
 
 Official announcement text allowed 217 of 349 earnings releases to be classified. Higher or lower profit refers to the issuer's explicit comparison with the earlier comparable period. In line or unchanged is used only for an explicit plan, forecast, expectation or unchanged-profit statement. Loss requires an explicit realised net or operating loss.
 
@@ -5225,8 +5221,8 @@ The BH adjustment covers the full family of share-level, pooled and pairwise tes
 
 </details>
 
-<details markdown="1" class="report-section" id="section-6">
-<summary><strong>6. Statistical and performance analysis</strong></summary>
+<details markdown="1" class="report-section" id="section-7">
+<summary><strong>7. Statistical and performance analysis</strong></summary>
 
 <details markdown="1">
 <summary><strong>Table 5. Empirical statistics of portfolio and S&P 500 daily returns</strong></summary>
@@ -5735,8 +5731,8 @@ Table 9 contains all 72 measures calculated directly with PerformanceAnalytics: 
 
 </details>
 
-<details markdown="1" class="report-section" id="section-7">
-<summary><strong>7. Decision risks and implementability</strong></summary>
+<details markdown="1" class="report-section" id="section-8">
+<summary><strong>8. Decision risks and implementability</strong></summary>
 
 ### Liquidity and turnover
 
@@ -5930,8 +5926,8 @@ Dividend values are historical gross cash distributions. They are excluded from 
 
 </details>
 
-<details markdown="1" class="report-section" id="section-8">
-<summary><strong>8. Model</strong></summary>
+<details markdown="1" class="report-section" id="section-9">
+<summary><strong>9. Model</strong></summary>
 
 ### Exact mathematical formulation of the netSD portfolio
 
@@ -5951,8 +5947,8 @@ The objective is discrete and non-convex. ISRES evaluates candidate portfolios n
 
 </details>
 
-<details markdown="1" class="report-section" id="section-9">
-<summary><strong>9. Data coverage</strong></summary>
+<details markdown="1" class="report-section" id="section-10">
+<summary><strong>10. Data coverage</strong></summary>
 
 The official Nasdaq Baltic list contained 67 shares. 55 shares had Yahoo closing-price history covering the complete study window and entered the common-date return matrix. Shares with incomplete or unavailable histories are excluded from both the optimisation and Table 2. No price interpolation or zero-return replacement was used.
 
