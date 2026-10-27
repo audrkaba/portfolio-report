@@ -87,7 +87,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-27 15:45 (Europe/Vilnius); return analysis through 2026-10-23; valuation prices through 2026-10-23
+# Baltic investment plan - updated 2026-10-27 15:48 (Europe/Vilnius); return analysis through 2026-10-23; valuation prices through 2026-10-23
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -5437,7 +5437,7 @@ The first 70% and last 30% rows are chronological sample slices. OUT, IN and net
 <details markdown="1" open>
 <summary><strong>Figure 2.c. Pearson correlations for selected portfolio shares and the three portfolios</strong></summary>
 
-Only shares with a positive position in Current or at least one final update are included. Ward clustering groups similar dependence patterns; blue is negative, white is near zero and red is positive correlation.
+Only shares with a positive position in Current or at least one final update are included. Ward hierarchical clustering groups similar dependence patterns. The top and left dendrograms show the complete sequence of cluster mergers; shorter joining branches indicate more similar correlation profiles. Blue is negative, white is near zero and red is positive correlation.
 
 ![Selected-share Pearson correlations](figures/scenario_correlation_pearson_ward.png)
 
@@ -5445,6 +5445,8 @@ Only shares with a positive position in Current or at least one final update are
 
 <details markdown="1">
 <summary><strong>Figure 2.d. Spearman correlations for selected portfolio shares and the three portfolios</strong></summary>
+
+The top and left dendrograms show Ward hierarchical clustering of the Spearman dependence profiles.
 
 ![Selected-share Spearman correlations](figures/scenario_correlation_spearman_ward.png)
 
