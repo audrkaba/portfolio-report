@@ -87,7 +87,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-27 14:00 (Europe/Vilnius); return analysis through 2026-10-23; valuation prices through 2026-10-23
+# Baltic investment plan - updated 2026-10-27 15:45 (Europe/Vilnius); return analysis through 2026-10-23; valuation prices through 2026-10-23
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -5377,7 +5377,7 @@ Each scenario removes one share from curent_update_baltic and proportionally res
 <details markdown="1" open>
 <summary><strong>Box-and-whisker comparison of portfolio returns</strong></summary>
 
-The three panels compare Current, both final update portfolios and the S&P 500 over the complete period, the first 70% and the held-out final 30%. The box is the interquartile range, the central line is the median, the diamond is the mean, whiskers extend to 1.5 interquartile ranges and separate points are tail observations. All panels use the same vertical scale.
+The three panels compare Current, both final update portfolios and the S&P 500 over the complete period, the first 70% and the held-out final 30%. The box is the interquartile range, the central line is the median, the diamond is the mean, whiskers extend to 1.5 interquartile ranges and separate points are tail observations. All panels use the same vertical scale. Post-hoc letters use paired Wilcoxon signed-rank tests with Holm correction within each panel (α = 0.05): portfolios sharing at least one letter are not significantly different; portfolios without a common letter are significantly different.
 
 ![Portfolio return box-and-whisker comparison](figures/scenario_portfolio_boxplots.png)
 
