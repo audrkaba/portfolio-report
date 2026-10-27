@@ -6001,12 +6001,14 @@ document.querySelectorAll('details.stock-profile').forEach(function(profile) {
     });
   });
 });
-document.querySelectorAll('details.profiles-section').forEach(function(section) {
-    const signalFilters=[...section.querySelectorAll('.signal-filters input[type="checkbox"]')];
-    const netsdFilters=[...section.querySelectorAll('.netsd-filters input[type="checkbox"]')];
+document.querySelectorAll('.profile-filters').forEach(function(filterBlock) {
+  const section=filterBlock.closest('details.report-section');
+  if (!section) return;
+    const signalFilters=[...filterBlock.querySelectorAll('.signal-filters input[type="checkbox"]')];
+    const netsdFilters=[...filterBlock.querySelectorAll('.netsd-filters input[type="checkbox"]')];
     const filters=[...signalFilters,...netsdFilters];
-  const profiles=[...section.querySelectorAll(':scope > details.stock-profile')];
-  const counter=section.querySelector('.profile-filter-count');
+  const profiles=[...section.querySelectorAll('details.stock-profile')];
+  const counter=filterBlock.querySelector('.profile-filter-count');
   function applyProfileFilters() {
       const selectedSignals=new Set(signalFilters.filter(box=>box.checked).map(box=>box.value));
       const selectedNetsdEffects=new Set(netsdFilters.filter(box=>box.checked).map(box=>box.value));
