@@ -79,7 +79,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-27 08:28 (Europe/Vilnius); return analysis through 2026-10-23; valuation prices through 2026-10-23
+# Baltic investment plan - updated 2026-10-27 08:40 (Europe/Vilnius); return analysis through 2026-10-23; valuation prices through 2026-10-23
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -5126,9 +5126,9 @@ The static figure is collapsed because the interactive plots above provide the d
 </details>
 
 <details markdown="1" class="report-section" id="section-4">
-<summary><strong>4. Single-share additions to the current portfolio</strong></summary>
+<summary><strong>4. Portfolio sensitivity: adding or removing shares</strong></summary>
 
-Each row starts from the same unmodified current portfolio and adds only the stated share quantity from Table 3.a. Rows are ranked by the change in netSD; larger is better. OUT is the number of dominance relations won, while IN is the number lost; more OUT and fewer IN are preferable.
+The first experiment starts from the same unmodified current portfolio and adds only the stated share quantity from Table 3.a. Rows are ranked by the change in netSD; larger is better. OUT is the number of dominance relations won, while IN is the number lost; more OUT and fewer IN are preferable.
 
 <details markdown="1" class="add-one-comparison">
 <summary><strong>Table 4.a. Ranked comparison of all individual additions</strong></summary>
@@ -5157,17 +5157,14 @@ Each row starts from the same unmodified current portfolio and adds only the sta
 
 </details>
 
-</details>
-
-<details markdown="1" class="report-section" id="section-5">
-<summary><strong>5. Leave-one-out portfolio sensitivity</strong></summary>
+### Removing one share from the no-sales update
 
 Each scenario removes one share from curent_update_baltic and proportionally rescales the remaining weights. Positive delta means that the ratio improves after removal; negative delta means that the removed share was beneficial for that criterion.
 
 **Main result.** Removing **AKO1L** produces the largest netSD change (+0.000000); removing **TKM1T** gives the largest Rachev improvement (+0.059529); removing **TKM1T** gives the largest Sortino improvement (+0.020102). These are sensitivity results, not automatically new trade recommendations, because the three criteria can move in opposite directions.
 
 <details markdown="1">
-<summary><strong>Table 5.a. Complete netSD, Rachev and Sortino sensitivity</strong></summary>
+<summary><strong>Table 4.b. Complete netSD, Rachev and Sortino sensitivity</strong></summary>
 
 | Removed share | netSD | Δ netSD | Rachev | Δ Rachev | Sortino | Δ Sortino |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -5200,40 +5197,15 @@ Each scenario removes one share from curent_update_baltic and proportionally res
 
 </details>
 
-<details markdown="1" class="report-section" id="section-6">
-<summary><strong>6. Interactive portfolio dominance and efficient frontiers</strong></summary>
-
-This section restores the portfolio-level comparison in one place. Current is the actual current portfolio. Baltic_NetSD and curent_update_baltic are the two Baltic optimisation scenarios; the training and full-data portfolios remain available for comparison.
-
-<details markdown="1" class="dominance-components portfolio-dominance" open>
-<summary><strong>Figure 6.a. Interactive portfolio FSD, SSD and TSD analysis</strong></summary>
-
-Select FSD, SSD or TSD. The upper panels show the component curves, while the lower panels show Current minus every other portfolio simultaneously. Use the comparison selector to highlight one difference curve. The x-position and horizontal-magnification sliders select the interval; its vertical scale is fitted automatically.
-
-<div class="dominance-explorer" data-asset="Portfolio" data-target="Current"><p>Loading the interactive portfolio dominance analysis...</p></div>
-
-</details>
-
-<details markdown="1" class="frontier-components" open>
-<summary><strong>Figure 6.b. Interactive Markowitz, MAD, Minimax, robust mean–CVaR and netSD frontiers</strong></summary>
-
-Choose the model to change the risk measure. Every portfolio is shown as a point and Current is always highlighted. Use the checkbox list to select and label several comparison portfolios at the same time, zoom with the horizontal controls or mouse wheel, and save the current view as PNG.
-
-<div class="frontier-explorer"><p>Loading the interactive frontier comparison...</p></div>
-
-</details>
-
-</details>
-
-<details markdown="1" class="report-section" id="section-7">
-<summary><strong>7. Portfolio allocation comparison</strong></summary>
+<details markdown="1" class="report-section" id="section-5">
+<summary><strong>5. Portfolio allocation comparison</strong></summary>
 
 current_execution_decision is the only action recommendation. BUY requires a material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the proposed purchase is below EUR 100 or below 1% target weight; HOLD means no allocation change; SELL means a negative allocation change. Diagnostic priority is not an execution order. Dividend columns use official 2025 and 2026 payments.
 
 curent_update_baltic keeps every currently held share, permits purchases only, and uses the EUR 15,000 ceiling. Its calculated netSD is 0.822034, with OUT=97 and IN=0; the remaining cash is EUR 52.48.
 
 <details markdown="1">
-<summary><strong>Table 7.a. Current and optimised portfolios</strong></summary>
+<summary><strong>Table 5.a. Current and optimised portfolios</strong></summary>
 
 | Portfolio | netSD | OUT | IN | denominator | mean | SD | Historical dividends EUR | Portfolio value EUR |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -5245,7 +5217,7 @@ curent_update_baltic keeps every currently held share, permits purchases only, a
 
 
 <details markdown="1">
-<summary><strong>Figure 7.a. Optimiser target changes relative to current holdings: two adjacent portfolio bars for every share</strong></summary>
+<summary><strong>Figure 5.a. Optimiser target changes relative to current holdings: two adjacent portfolio bars for every share</strong></summary>
 
 ![Report figure 1](report/assets/figure-01.png)
 
@@ -5255,7 +5227,7 @@ curent_update_baltic keeps every currently held share, permits purchases only, a
 Each share has two adjacent bars. The blue bar is the change required for Baltic_NetSD, where negative values are sales. The orange bar is the additional purchase required for curent_update_baltic; it cannot be negative because every current position is retained. Both use the EUR 15,000 ceiling.
 
 <details markdown="1">
-<summary><strong>Figure 7.b. Capital allocation and historical gross dividend contribution</strong></summary>
+<summary><strong>Figure 5.b. Capital allocation and historical gross dividend contribution</strong></summary>
 
 ![Report figure 2](report/assets/figure-02.png)
 
@@ -5263,13 +5235,13 @@ Each share has two adjacent bars. The blue bar is the change required for Baltic
 
 </details>
 
-<details markdown="1" class="report-section" id="section-8">
-<summary><strong>8. Earnings outcomes and subsequent price changes</strong></summary>
+<details markdown="1" class="report-section" id="section-6">
+<summary><strong>6. Earnings outcomes and subsequent price changes</strong></summary>
 
 Official announcement text allowed 217 of 349 earnings releases to be classified. Higher or lower profit refers to the issuer's explicit comparison with the earlier comparable period. In line or unchanged is used only for an explicit plan, forecast, expectation or unchanged-profit statement. Loss requires an explicit realised net or operating loss.
 
 <details markdown="1">
-<summary><strong>Table 8.a. Conditional price statistics by reported profit outcome</strong></summary>
+<summary><strong>Table 6.a. Conditional price statistics by reported profit outcome</strong></summary>
 
 | profit_outcome | horizon | events | conditional_mean_return | conditional_variance_return | conditional_median_return | positive_return_share | conditional_mean_abnormal | conditional_variance_abnormal | conditional_median_abnormal |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -5292,7 +5264,7 @@ Official announcement text allowed 217 of 349 earnings releases to be classified
 Means, medians and positive shares are percentages; variances are squared percentage points. Abnormal return is the share return minus the equal-weight Baltic-market return over the same horizon.
 
 <details markdown="1">
-<summary><strong>Table 8.b. Kruskal-Wallis tests across profit-outcome groups</strong></summary>
+<summary><strong>Table 6.b. Kruskal-Wallis tests across profit-outcome groups</strong></summary>
 
 | horizon_days | groups | classified_events | kruskal_H | p_value | p_BH | conclusion |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -5307,523 +5279,110 @@ The BH adjustment covers the full family of share-level, pooled and pairwise tes
 
 </details>
 
-<details markdown="1" class="report-section" id="section-9">
-<summary><strong>9. Statistical and performance analysis</strong></summary>
+<details markdown="1" class="report-section" id="section-7">
+<summary><strong>7. Current portfolio and two update scenarios: diagnostics and validation</strong></summary>
 
-<details markdown="1">
-<summary><strong>Table 9.a. Empirical statistics of portfolio and S&P 500 daily returns</strong></summary>
+Every result in this section compares the same three portfolios: **Current**, **Update: sales allowed** (Baltic_NetSD), and **Update: no sales** (curent_update_baltic). The S&P 500 appears only as a market reference where needed.
 
-| entity | observations | mean | median | SD | minimum | maximum | skewness | kurtosis | VaR_95 | ES_95 |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Current | 754 | 0.000398 | 0.000422 | 0.005164 | -0.034345 | 0.040050 | -0.138326 | 16.309777 | 0.006145 | 0.011766 |
-| Markowitz_training | 754 | 0.000241 | 0.000273 | 0.004391 | -0.025519 | 0.027713 | -0.520195 | 10.981693 | 0.005870 | 0.010445 |
-| MAD_training | 754 | 0.000257 | 0.000312 | 0.004399 | -0.028989 | 0.026779 | -0.832805 | 12.978086 | 0.005528 | 0.010546 |
-| Minimax_training | 754 | 0.000550 | 0.000279 | 0.005514 | -0.021554 | 0.025382 | 0.223792 | 6.678445 | 0.007255 | 0.012166 |
-| Robust_training | 754 | 0.000304 | 0.000209 | 0.004492 | -0.026819 | 0.026893 | -0.405017 | 10.523807 | 0.005622 | 0.010451 |
-| NetSD_training | 754 | 0.000598 | 0.000187 | 0.005841 | -0.027866 | 0.047554 | 0.650172 | 11.973562 | 0.007314 | 0.012066 |
-| Markowitz_full | 754 | 0.000349 | 0.000327 | 0.004392 | -0.030086 | 0.026550 | -0.617330 | 11.268384 | 0.005750 | 0.010350 |
-| MAD_full | 754 | 0.000361 | 0.000371 | 0.004460 | -0.034511 | 0.026269 | -0.908080 | 13.474040 | 0.005471 | 0.010602 |
-| Minimax_full | 754 | 0.000428 | 0.000111 | 0.005185 | -0.021604 | 0.025497 | -0.023890 | 6.813094 | 0.007042 | 0.011904 |
-| Robust_full | 754 | 0.000359 | 0.000350 | 0.004525 | -0.034840 | 0.026102 | -1.003316 | 14.193867 | 0.005461 | 0.010813 |
-| NetSD_full | 754 | 0.000564 | 0.000368 | 0.005173 | -0.036431 | 0.032351 | -0.308413 | 11.580399 | 0.006450 | 0.011610 |
-| Baltic_NetSD | 754 | 0.000450 | 0.000158 | 0.004428 | -0.024418 | 0.034990 | 0.319144 | 13.020761 | 0.005250 | 0.009381 |
-| curent_update_baltic | 754 | 0.000472 | 0.000253 | 0.004406 | -0.021473 | 0.026408 | -0.129076 | 9.333357 | 0.005095 | 0.010077 |
-| SP500 | 754 | 0.000879 | 0.001368 | 0.011062 | -0.062006 | 0.097992 | 0.100965 | 14.865600 | 0.016061 | 0.025050 |
+The first 70% and last 30% rows are chronological sample slices. OUT, IN and netSD are recalculated separately in each slice against the same type of network: the selected shares plus Current and both updates. Because both final update weights were selected using the complete period, the last 30% is a held-out time segment for comparison, but not a fully independent out-of-sample validation of those final weights. A genuine out-of-sample claim requires weights estimated only from the first 70% or a walk-forward procedure.
+
+<details markdown="1" open>
+<summary><strong>Table 7.a. Full-period, in-sample and held-out statistics for Current and both updates</strong></summary>
+
+<table class="scenario-period-table"><thead><tr><th><span>Sample</span></th><th><span>Portfolio</span></th><th><span>Observations</span></th><th><span>Mean</span></th><th><span>Median</span></th><th><span>SD</span></th><th><span>Minimum</span></th><th><span>Maximum</span></th><th><span>VaR 95% loss</span></th><th><span>ES 95% loss</span></th><th><span>OUT</span></th><th><span>IN</span></th><th><span>netSD</span></th></tr></thead><tbody><tr><td>Full period</td><td>Current</td><td>754</td><td>0.000398</td><td>0.000422</td><td>0.005164</td><td>-0.034345</td><td>0.040050</td><td>0.006214</td><td>0.011766</td><td>25</td><td>4</td><td>0.617647</td></tr><tr><td>Full period</td><td>Update: sales allowed</td><td>754</td><td>0.000450</td><td>0.000158</td><td>0.004428</td><td>-0.024418</td><td>0.034990</td><td>0.005259</td><td>0.009381</td><td>32</td><td>0</td><td>0.941176</td></tr><tr><td>Full period</td><td>Update: no sales</td><td>754</td><td>0.000472</td><td>0.000253</td><td>0.004406</td><td>-0.021473</td><td>0.026408</td><td>0.005155</td><td>0.010077</td><td>34</td><td>0</td><td>1.000000</td></tr><tr><td>In-sample: first 70%</td><td>Current</td><td>527</td><td>0.000115</td><td>0.000406</td><td>0.005043</td><td>-0.034345</td><td>0.016103</td><td>0.006422</td><td>0.012908</td><td>21</td><td>4</td><td>0.354167</td></tr><tr><td>In-sample: first 70%</td><td>Update: sales allowed</td><td>527</td><td>0.000523</td><td>0.000426</td><td>0.004655</td><td>-0.024418</td><td>0.034990</td><td>0.005216</td><td>0.009586</td><td>34</td><td>0</td><td>0.708333</td></tr><tr><td>In-sample: first 70%</td><td>Update: no sales</td><td>527</td><td>0.000358</td><td>0.000225</td><td>0.004509</td><td>-0.021473</td><td>0.026408</td><td>0.005174</td><td>0.010809</td><td>28</td><td>0</td><td>0.583333</td></tr><tr><td>Held-out segment: last 30%</td><td>Current</td><td>227</td><td>0.001055</td><td>0.000549</td><td>0.005391</td><td>-0.018569</td><td>0.040050</td><td>0.005396</td><td>0.008584</td><td>32</td><td>0</td><td>0.640000</td></tr><tr><td>Held-out segment: last 30%</td><td>Update: sales allowed</td><td>227</td><td>0.000280</td><td>-0.000131</td><td>0.003855</td><td>-0.013287</td><td>0.012442</td><td>0.005515</td><td>0.008571</td><td>26</td><td>2</td><td>0.480000</td></tr><tr><td>Held-out segment: last 30%</td><td>Update: no sales</td><td>227</td><td>0.000738</td><td>0.000315</td><td>0.004156</td><td>-0.012264</td><td>0.024352</td><td>0.004565</td><td>0.007961</td><td>36</td><td>0</td><td>0.720000</td></tr></tbody></table>
 
 </details>
 
+<details markdown="1" open>
+<summary><strong>Figure 7.a. Pearson correlations for selected portfolio shares and the three portfolios</strong></summary>
 
-Baltic_NetSD has mean daily return 0.000450, median 0.000158 and daily standard deviation 0.004428. Its historical 95% VaR is 0.005250 and ES (CVaR) is 0.009381. VaR is the loss threshold exceeded on approximately 5% of days; ES is the average return in that adverse tail.
+Only shares with a positive position in Current or at least one final update are included. Ward clustering groups similar dependence patterns; blue is negative, white is near zero and red is positive correlation.
 
-<details markdown="1">
-<summary><strong>Figure 9.a. Pearson asset-return correlations with Ward.D2 hierarchical clustering</strong></summary>
-
-![Report figure 3](report/assets/figure-03.png)
-
-</details>
-
-
-<details markdown="1">
-<summary><strong>Figure 9.b. Spearman asset-return correlations with Ward.D2 hierarchical clustering</strong></summary>
-
-![Report figure 4](report/assets/figure-04.png)
+![Selected-share Pearson correlations](figures/scenario_correlation_pearson_ward.png)
 
 </details>
 
-
-Blue indicates negative correlation, white indicates correlation near zero and red indicates positive correlation. Ward.D2 clustering orders shares with similar dependence patterns next to each other; the dendrogram shows the resulting groups.
-
 <details markdown="1">
-<summary><strong>Figure 9.c. Histograms and kernel densities; every panel uses the same return-axis limits</strong></summary>
+<summary><strong>Figure 7.b. Spearman correlations for selected portfolio shares and the three portfolios</strong></summary>
 
-![Report figure 5](report/assets/figure-05.png)
+![Selected-share Spearman correlations](figures/scenario_correlation_spearman_ward.png)
 
 </details>
 
-
-The recalculated Baltic_NetSD maximum daily return is 0.034990. The earlier value 0.168092 on 2025-06-25 was traced to RKB1R, whose unadjusted close moved from EUR 0.107 to EUR 0.476 between common Baltic trading dates. RKB1R belongs to the Baltic Secondary List. After excluding every Secondary List share from the investable set, this observation no longer enters the portfolio return; RKB1R is now excluded from both the investable set and every netSD reference network, so the suspect observation cannot affect the objective or its denominator.
-
 <details markdown="1">
-<summary><strong>Figure 9.d. Portfolio and S&P 500 complete empirical CDF; right side truncated at return 0.05</strong></summary>
+<summary><strong>Figure 7.c. Return histograms for Current, both updates and S&P 500</strong></summary>
 
-<div class="cdf-with-key"><img src="report/assets/figure-06.png" alt="CDF graph"><img class="cdf-key" src="report/assets/figure-10.png" alt="CDF legend"></div>
+![Scenario return histograms](figures/scenario_histograms.png)
 
 </details>
 
+### Interactive distribution dominance and efficient frontiers
 
-<details markdown="1">
-<summary><strong>Figure 9.e. Portfolio and S&P 500 empirical CDF: enlarged left tail</strong></summary>
+This section restores the portfolio-level comparison in one place. Current is the actual current portfolio. Baltic_NetSD and curent_update_baltic are the two Baltic optimisation scenarios; the training and full-data portfolios remain available for comparison.
 
-<div class="cdf-with-key"><img src="report/assets/figure-07.png" alt="CDF graph"><img class="cdf-key" src="report/assets/figure-10.png" alt="CDF legend"></div>
+<details markdown="1" class="dominance-components portfolio-dominance" open>
+<summary><strong>Figure 7.d. Interactive portfolio FSD, SSD and TSD analysis</strong></summary>
 
-</details>
+Select FSD, SSD or TSD. The upper panels show the component curves, while the lower panels show Current minus every other portfolio simultaneously. Use the comparison selector to highlight one difference curve. The x-position and horizontal-magnification sliders select the interval; its vertical scale is fitted automatically.
 
-
-<details markdown="1">
-<summary><strong>Figure 9.f. Portfolio and S&P 500 empirical CDF: enlarged centre</strong></summary>
-
-<div class="cdf-with-key"><img src="report/assets/figure-08.png" alt="CDF graph"><img class="cdf-key" src="report/assets/figure-10.png" alt="CDF legend"></div>
+<div class="dominance-explorer" data-asset="Portfolio" data-target="Current"><p>Loading the interactive portfolio dominance analysis...</p></div>
 
 </details>
 
+<details markdown="1" class="frontier-components" open>
+<summary><strong>Figure 7.e. Interactive Markowitz, MAD, Minimax, robust mean–CVaR and netSD frontiers</strong></summary>
 
-<details markdown="1">
-<summary><strong>Figure 9.g. Portfolio and S&P 500 empirical CDF: enlarged right tail</strong></summary>
+Choose the model to change the risk measure. Every portfolio is shown as a point and Current is always highlighted. Use the checkbox list to select and label several comparison portfolios at the same time, zoom with the horizontal controls or mouse wheel, and save the current view as PNG.
 
-<div class="cdf-with-key"><img src="report/assets/figure-09.png" alt="CDF graph"><img class="cdf-key" src="report/assets/figure-10.png" alt="CDF legend"></div>
-
-</details>
-
-
-<details markdown="1">
-<summary><strong>Figure 9.h. Individual-share complete empirical CDF restricted to returns from -0.30 to 0.30</strong></summary>
-
-![Report figure 11](report/assets/figure-11.png)
+<div class="frontier-explorer"><p>Loading the interactive frontier comparison...</p></div>
 
 </details>
 
-
 <details markdown="1">
-<summary><strong>Figure 9.i. Individual-share empirical CDF: enlarged left tail</strong></summary>
+<summary><strong>Table 7.b. Concentration and diversification of Current and both updates</strong></summary>
 
-![Report figure 12](report/assets/figure-12.png)
-
-</details>
-
-
-<details markdown="1">
-<summary><strong>Figure 9.j. Individual-share empirical CDF: enlarged centre</strong></summary>
-
-![Report figure 13](report/assets/figure-13.png)
-
-</details>
-
-
-<details markdown="1">
-<summary><strong>Figure 9.k. Individual-share empirical CDF: enlarged right tail</strong></summary>
-
-![Report figure 14](report/assets/figure-14.png)
-
-</details>
-
-
-<details markdown="1">
-<summary><strong>Figure 9.l. Separate colour and line-pattern key for the individual-share CDF and dominance figures</strong></summary>
-
-![Report figure 15](report/assets/figure-15.png)
-
-</details>
-
-
-<details markdown="1">
-<summary><strong>Figure 9.m. Portfolio and benchmark FSD component H1(x)</strong></summary>
-
-![Report figure 16](report/assets/figure-16.png)
-
-</details>
-
-
-<details markdown="1">
-<summary><strong>Figure 9.n. Portfolio and benchmark SSD component H2(x): enlarged right side with curve-end labels</strong></summary>
-
-![Report figure 17](report/assets/figure-17.png)
-
-</details>
-
-
-<details markdown="1">
-<summary><strong>Figure 9.o. Portfolio and benchmark TSD component H3(x): enlarged right side with curve-end labels</strong></summary>
-
-![Report figure 18](report/assets/figure-18.png)
-
-</details>
-
-
-<details markdown="1">
-<summary><strong>Figure 9.p. Individual-share FSD component H1(x)</strong></summary>
-
-![Report figure 19](report/assets/figure-19.png)
-
-</details>
-
-
-<details markdown="1">
-<summary><strong>Figure 9.q. Individual-share SSD component H2(x): enlarged right side with curve-end labels</strong></summary>
-
-![Report figure 20](report/assets/figure-20.png)
-
-</details>
-
-
-<details markdown="1">
-<summary><strong>Figure 9.r. Individual-share TSD component H3(x): enlarged right side with curve-end labels</strong></summary>
-
-![Report figure 21](report/assets/figure-21.png)
-
-</details>
-
-
-For every entity, H1(x)=F(x) is the empirical CDF used for FSD. H2(x)=∫H1(u)du is the cumulative FSD component used for SSD, and H3(x)=∫H2(u)du is the cumulative SSD component used for TSD. The CSV files accompanying the report contain every displayed entity as a separate column on the same return-threshold grid.
-
-<details markdown="1">
-<summary><strong>Figure 9.s. Baltic_NetSD minus every other portfolio: FSD-component differences</strong></summary>
-
-![Report figure 22](report/assets/figure-22.png)
-
-</details>
-
-
-<details markdown="1">
-<summary><strong>Figure 9.t. Baltic_NetSD minus every other portfolio: SSD-component differences</strong></summary>
-
-![Report figure 23](report/assets/figure-23.png)
-
-</details>
-
-
-<details markdown="1">
-<summary><strong>Figure 9.u. Baltic_NetSD minus every other portfolio: TSD-component differences</strong></summary>
-
-![Report figure 24](report/assets/figure-24.png)
-
-</details>
-
-
-<details markdown="1">
-<summary><strong>Figure 9.v. Baltic_NetSD minus every individual share: FSD-component differences</strong></summary>
-
-![Report figure 25](report/assets/figure-25.png)
-
-</details>
-
-
-<details markdown="1">
-<summary><strong>Figure 9.w. Baltic_NetSD minus every individual share: SSD-component differences</strong></summary>
-
-![Report figure 26](report/assets/figure-26.png)
-
-</details>
-
-
-<details markdown="1">
-<summary><strong>Figure 9.x. Baltic_NetSD minus every individual share: TSD-component differences</strong></summary>
-
-![Report figure 27](report/assets/figure-27.png)
-
-</details>
-
-
-Each difference is calculated pointwise as Hq_Baltic_NetSD(x) - Hq_comparator(x). A negative value means that the Baltic_NetSD integrated-distribution component is smaller at that threshold; dominance requires the relevant difference to remain nonpositive over the complete support, with at least one strict inequality.
-
-### Local SSD advantages at large return thresholds
-
-<details markdown="1">
-<summary><strong>Table 9.b. Local right-side SSD-component advantages over Baltic_NetSD</strong></summary>
-
-| comparator | type | local_advantage_from_x | display_upper_x | end_difference | maximum_difference |
-| --- | --- | --- | --- | --- | --- |
-| NetSD_training | portfolio | 0.010500 | 0.026400 | 0.000132 | 0.000132 |
-| NetSD_full | portfolio | 0.009379 | 0.026400 | 0.000040 | 0.000040 |
-| Minimax_training | portfolio | 0.017785 | 0.026400 | 0.000014 | 0.000016 |
-| VLP1L | share | 0.019789 | 0.154871 | 0.000825 | 0.000825 |
-| MOLNR | share | 0.112162 | 0.154871 | 0.000648 | 0.000648 |
-| KNR1L | share | 0.077398 | 0.154871 | 0.000637 | 0.000637 |
-| INC1L | share | 0.030715 | 0.154871 | 0.000576 | 0.000576 |
-| IVL1L | share | 0.033695 | 0.154871 | 0.000450 | 0.000450 |
-| KNE1L | share | 0.032701 | 0.154871 | 0.000285 | 0.000285 |
-| MRK1T | share | 0.033695 | 0.154871 | 0.000217 | 0.000217 |
-| APG1L | share | 0.017803 | 0.154871 | 0.000140 | 0.000140 |
-| ZMP1L | share | 0.078391 | 0.154871 | 0.000094 | 0.000094 |
-| PZV1L | share | 0.077398 | 0.154871 | 0.000054 | 0.000054 |
-| LGD1L | share | 0.060512 | 0.154871 | 0.000032 | 0.000032 |
-| RSU1L | share | 0.124081 | 0.154871 | 0.000019 | 0.000019 |
-
-</details>
-
-
-These are local, right-side comparisons and must not be interpreted as SSD over the complete return domain. A positive difference H2_Baltic_NetSD(x)-H2_comparator(x) means that the comparator has the smaller, hence locally preferable, SSD component at that threshold. Among portfolios this occurs for NetSD_training, NetSD_full, Minimax_training. The five strongest share cases at the displayed endpoint are VLP1L, MOLNR, KNR1L, INC1L, IVL1L. Smaller positive endpoint differences also occur for KNE1L, MRK1T, APG1L, ZMP1L, PZV1L, LGD1L, RSU1L. The table reports the threshold from which the advantage remains positive to the displayed upper endpoint. The listed shares are therefore candidates for further investment analysis, while the absence of full-support dominance means this chart alone is insufficient for an investment decision.
-
-The result that may appear surprising in the difference figures is therefore real but local. NetSD_training has a smaller H2 component than Baltic_NetSD from x=0.012089 to the displayed right endpoint, and NetSD_full does so from x=0.016037. Neither portfolio SSD-dominates Baltic_NetSD over the complete support because the required inequality fails at smaller x values. The listed shares deserve separate investment analysis because their upper-threshold SSD components are favourable. RKB1R is absent from these recalculated comparisons because its suspect unadjusted prices fail the data-quality screen. A local right-side advantage is evidence about one part of the distribution and is not full-domain SSD dominance.
-
-<details markdown="1">
-<summary><strong>Table 9.c. Weight concentration and diversification</strong></summary>
-
-| portfolio | HHI_weights | effective_number | maximum_weight | number_positive | diversification_ratio |
+| Portfolio | HHI weights | Effective positions | Largest weight | Positive positions | Diversification ratio |
 | --- | --- | --- | --- | --- | --- |
 | Current | 0.149011 | 6.710898 | 0.288144 | 11 | 2.161935 |
-| Markowitz_training | 0.173946 | 5.748903 | 0.325443 | 10 | 2.239505 |
-| MAD_training | 0.202077 | 4.948602 | 0.379940 | 10 | 2.186633 |
-| Minimax_training | 0.169523 | 5.898915 | 0.279680 | 10 | 2.071445 |
-| Robust_training | 0.180150 | 5.550933 | 0.349431 | 10 | 2.248422 |
-| NetSD_training | 0.188413 | 5.307499 | 0.337844 | 10 | 1.956346 |
-| Markowitz_full | 0.152149 | 6.572488 | 0.295792 | 10 | 2.311799 |
-| MAD_full | 0.182270 | 5.486352 | 0.338655 | 10 | 2.240153 |
-| Minimax_full | 0.157248 | 6.359400 | 0.258417 | 10 | 2.106087 |
-| Robust_full | 0.215235 | 4.646077 | 0.386466 | 10 | 2.178503 |
-| NetSD_full | 0.132893 | 7.524846 | 0.188213 | 10 | 2.222264 |
 | Baltic_NetSD | 0.060139 | 16.628083 | 0.091186 | 21 | 2.618825 |
 | curent_update_baltic | 0.090073 | 11.102120 | 0.195913 | 19 | 2.747270 |
 
 </details>
 
-
-For Baltic_NetSD, HHI=0.060139; lower is better because less capital is concentrated in a few shares. Its effective number of equally weighted positions is 16.63, the largest weight is 9.12%, and the diversification ratio is 2.619; a value above 1 means portfolio volatility is below the weighted average volatility of its components.
-
 <details markdown="1">
-<summary><strong>Figure 9.y. HHI concentration comparison</strong></summary>
+<summary><strong>Table 7.c. Systematic risk relative to S&P 500</strong></summary>
 
-![Report figure 28](report/assets/figure-28.png)
-
-</details>
-
-
-<details markdown="1">
-<summary><strong>Table 9.d. Canonical comparable netSD results</strong></summary>
-
-| entity | OUT | IN | denominator | netSD | mean | SD |
-| --- | --- | --- | --- | --- | --- | --- |
-| Current | 73 | 0 | 118 | 0.618644 | 0.000357 | 0.004970 |
-| Markowitz_training | 65 | 0 | 118 | 0.550847 | 0.000236 | 0.004204 |
-| MAD_training | 64 | 1 | 118 | 0.533898 | 0.000232 | 0.004204 |
-| Minimax_training | 82 | 0 | 118 | 0.694915 | 0.000507 | 0.005307 |
-| Robust_training | 72 | 0 | 118 | 0.610169 | 0.000296 | 0.004320 |
-| NetSD_training | 89 | 0 | 118 | 0.754237 | 0.000652 | 0.005838 |
-| Markowitz_full | 74 | 0 | 118 | 0.627119 | 0.000331 | 0.004221 |
-| MAD_full | 72 | 1 | 118 | 0.601695 | 0.000328 | 0.004265 |
-| Minimax_full | 75 | 0 | 118 | 0.635593 | 0.000385 | 0.004964 |
-| Robust_full | 72 | 1 | 118 | 0.601695 | 0.000329 | 0.004334 |
-| NetSD_full | 86 | 0 | 118 | 0.728814 | 0.000540 | 0.005023 |
-| Baltic_NetSD | 98 | 0 | 118 | 0.830508 | 0.000503 | 0.004346 |
-| curent_update_baltic | 97 | 0 | 118 | 0.822034 | 0.000472 | 0.004276 |
-
-</details>
-
-
-Baltic_NetSD has OUT=98 and IN=0. Dividing OUT-IN by the common network fixed denominator 118 gives netSD=0.830508. A larger netSD is better within this exact fixed reference system.
-
-For curent_update_baltic, IN=0 because Baltic_NetSD dominates it by third-order stochastic dominance over the complete empirical support. There are no incoming FSD or SSD relations. Thus IN=1 is one directed TSD relation from Baltic_NetSD, rather than one adverse observation or one share.
-
-<details markdown="1">
-<summary><strong>Table 9.e. Systematic risk relative to S&P 500</strong></summary>
-
-| entity | CAPMBeta | CAPMAlpha | JensenAlpha | SpecificRisk | SystematicRisk | TotalRisk | TrackingError_Annualized | Information_Annualized |
+| Portfolio | CAPMBeta | CAPMAlpha | JensenAlpha | SpecificRisk | SystematicRisk | TotalRisk | TrackingError_Annualized | Information_Annualized |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Current | 0.055789 | 0.000349 | 0.089055 | 0.081340 | 0.009796 | 0.081927 | 0.184702 | -0.686924 |
-| Markowitz_training | 0.043206 | 0.000203 | 0.050076 | 0.069239 | 0.007587 | 0.069654 | 0.181735 | -0.928451 |
-| MAD_training | 0.044827 | 0.000217 | 0.053922 | 0.069341 | 0.007871 | 0.069787 | 0.181511 | -0.906364 |
-| Minimax_training | 0.060198 | 0.000497 | 0.130431 | 0.086840 | 0.010571 | 0.087481 | 0.186507 | -0.453022 |
-| Robust_training | 0.051135 | 0.000259 | 0.065265 | 0.070689 | 0.008979 | 0.071257 | 0.181011 | -0.838236 |
-| NetSD_training | 0.060448 | 0.000545 | 0.143918 | 0.092046 | 0.010615 | 0.092656 | 0.188952 | -0.375479 |
-| Markowitz_full | 0.048497 | 0.000306 | 0.078069 | 0.069156 | 0.008516 | 0.069678 | 0.180845 | -0.771540 |
-| MAD_full | 0.050756 | 0.000316 | 0.080840 | 0.070190 | 0.008913 | 0.070753 | 0.180878 | -0.753228 |
-| Minimax_full | 0.046378 | 0.000388 | 0.099591 | 0.081846 | 0.008144 | 0.082250 | 0.186408 | -0.635660 |
-| Robust_full | 0.053148 | 0.000312 | 0.079679 | 0.071181 | 0.009333 | 0.071790 | 0.180879 | -0.756616 |
-| NetSD_full | 0.061296 | 0.000510 | 0.134683 | 0.081350 | 0.010763 | 0.082059 | 0.183839 | -0.435101 |
 | Baltic_NetSD | 0.030649 | 0.000423 | 0.110296 | 0.070041 | 0.005382 | 0.070248 | 0.184080 | -0.605087 |
 | curent_update_baltic | 0.048982 | 0.000429 | 0.112447 | 0.069373 | 0.008601 | 0.069905 | 0.180850 | -0.580820 |
-| SP500 | 1.000000 | 0.000000 | 0.000000 | 0.000000 | 0.175597 | 0.175597 | 0.000000 | nan |
 
 </details>
-
-
-CAPM beta measures sensitivity to S&P 500: beta below 1 means a smaller average response to market movements, while beta above 1 means greater sensitivity. SpecificRisk is the residual component not explained by the benchmark; SystematicRisk is the benchmark-related component; TotalRisk combines both.
 
 <details markdown="1">
-<summary><strong>Table 9.f. Individual-share netSD and admissibility for the new optimisation</strong></summary>
+<summary><strong>Figure 7.f. Cumulative value and drawdowns</strong></summary>
 
-| asset | OUT | IN | denominator | netSD | segment | positive_netSD | secondary_list | admissible |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| AIR | 5 | 96 | 118 | -0.771186 | First North Baltic Share List | False | False | False |
-| AKO1L | 36 | 10 | 118 | 0.220339 | Baltic Main List | True | False | True |
-| AMG1L | 30 | 30 | 118 | 0.000000 | Baltic Secondary List | False | True | False |
-| APG1L | 40 | 2 | 118 | 0.322034 | Baltic Main List | True | False | True |
-| ARC1T | 17 | 40 | 118 | -0.194915 | Baltic Main List | False | False | False |
-| AUG1L | 1 | 113 | 118 | -0.949153 | Baltic Secondary List | False | True | False |
-| BAL1R | 0 | 118 | 118 | -1.000000 | Baltic Secondary List | False | True | False |
-| BERCM | 6 | 91 | 118 | -0.720339 | First North Baltic Share List | False | False | False |
-| CPA1T | 32 | 24 | 118 | 0.067797 | Baltic Main List | True | False | True |
-| CTS1L | 0 | 88 | 118 | -0.745763 | Baltic First North Foreign Shares trading list | False | False | False |
-| DGR1R | 30 | 22 | 118 | 0.067797 | Baltic Main List | True | False | True |
-| EFT1T | 36 | 23 | 118 | 0.110169 | Baltic Main List | True | False | True |
-| EWA1L | 16 | 80 | 118 | -0.542373 | First North Baltic Share List | False | False | False |
-| GRG1L | 54 | 6 | 118 | 0.406780 | Baltic Main List | True | False | True |
-| HAE1T | 38 | 24 | 118 | 0.118644 | Baltic Main List | True | False | True |
-| HPR1T | 15 | 62 | 118 | -0.398305 | Baltic Main List | False | False | False |
-| IDX1R | 19 | 64 | 118 | -0.381356 | Baltic Main List | False | False | False |
-| IGN1L | 54 | 10 | 118 | 0.372881 | Baltic Main List | True | False | True |
-| INC1L | 33 | 2 | 118 | 0.262712 | Baltic Secondary List | True | True | False |
-| INL1L | 12 | 60 | 118 | -0.406780 | Baltic Secondary List | False | True | False |
-| INR1L | 31 | 20 | 118 | 0.093220 | Baltic Secondary List | True | True | False |
-| IVL1L | 46 | 0 | 118 | 0.389831 | Baltic Secondary List | True | True | False |
-| KNE1L | 47 | 0 | 118 | 0.398305 | Baltic Main List | True | False | True |
-| KNR1L | 11 | 2 | 118 | 0.076271 | Baltic Secondary List | True | True | False |
-| LGD1L | 46 | 4 | 118 | 0.355932 | Baltic Secondary List | True | True | False |
-| LHV1T | 34 | 24 | 118 | 0.084746 | Baltic Main List | True | False | True |
-| LINDA | 5 | 91 | 118 | -0.728814 | First North Baltic Share List | False | False | False |
-| MAGIC | 3 | 104 | 118 | -0.855932 | First North Baltic Share List | False | False | False |
-| MDARA | 18 | 52 | 118 | -0.288136 | First North Baltic Share List | False | False | False |
-| MODE | 26 | 32 | 118 | -0.050847 | First North Baltic Share List | False | False | False |
-| MOLNR | 5 | 0 | 118 | 0.042373 | First North Baltic Share List | True | False | True |
-| MRK1T | 46 | 0 | 118 | 0.389831 | Baltic Main List | True | False | True |
-| NCN1T | 25 | 51 | 118 | -0.220339 | Baltic Main List | False | False | False |
-| NEOFI | 8 | 54 | 118 | -0.389831 | First North Baltic Share List | False | False | False |
-| PKG1T | 20 | 46 | 118 | -0.220339 | Baltic Main List | False | False | False |
-| PRF1T | 1 | 104 | 118 | -0.872881 | Baltic Secondary List | False | True | False |
-| PZV1L | 37 | 10 | 118 | 0.228814 | Baltic Main List | True | False | True |
-| ROE1L | 42 | 19 | 118 | 0.194915 | Baltic Main List | True | False | True |
-| RSU1L | 37 | 8 | 118 | 0.245763 | Baltic Main List | True | False | True |
-| SAF1R | 10 | 26 | 118 | -0.135593 | Baltic Main List | False | False | False |
-| SAUNA | 4 | 95 | 118 | -0.771186 | First North Baltic Share List | False | False | False |
-| SCM1R | 1 | 7 | 118 | -0.050847 | Baltic Secondary List | False | True | False |
-| SFG1T | 28 | 32 | 118 | -0.033898 | Baltic Main List | False | False | False |
-| SKN1T | 4 | 99 | 118 | -0.805085 | Baltic Secondary List | False | True | False |
-| TAL1T | 30 | 19 | 118 | 0.093220 | Baltic Main List | True | False | True |
-| TEL1L | 40 | 24 | 118 | 0.135593 | Baltic Main List | True | False | True |
-| TKM1T | 31 | 22 | 118 | 0.076271 | Baltic Main List | True | False | True |
-| TPD1T | 13 | 86 | 118 | -0.618644 | Baltic Secondary List | False | True | False |
-| TSM1T | 30 | 31 | 118 | -0.008475 | Baltic Main List | False | False | False |
-| TVE1T | 35 | 24 | 118 | 0.093220 | Baltic Main List | True | False | True |
-| UTR1L | 1 | 58 | 118 | -0.483051 | Baltic Secondary List | False | True | False |
-| VBL1L | 23 | 24 | 118 | -0.008475 | Baltic Secondary List | False | True | False |
-| VIRSI | 37 | 17 | 118 | 0.169492 | First North Baltic Share List | True | False | True |
-| VLP1L | 47 | 0 | 118 | 0.398305 | Baltic Main List | True | False | True |
-| ZMP1L | 37 | 4 | 118 | 0.279661 | Baltic Secondary List | True | True | False |
+![Scenario cumulative returns and drawdowns](figures/scenario_cumulative_drawdown.png)
 
 </details>
-
-
-A share is investment-admissible only when its individual netSD is strictly positive and it does not belong to the Baltic Secondary List. Secondary List shares remain in the dominance reference network used to calculate netSD, but their portfolio weights are fixed at zero.
 
 <details markdown="1">
-<summary><strong>Figure 9.z. Classical mean-SD efficient frontier and observed portfolios</strong></summary>
+<summary><strong>Table 7.d. Complete PerformanceAnalytics measures for Current and both updates</strong></summary>
 
-![Report figure 29](report/assets/figure-29.png)
-
-</details>
-
-
-The curve is the single long-only Markowitz efficient frontier calculated from all 55 quality-approved shares. Shares and previously formed portfolios are points. Baltic_NetSD is highlighted in red because it maximises the stochastic-dominance objective rather than variance, so it need not lie on the Markowitz curve.
-
-<details markdown="1">
-<summary><strong>Figure 9.aa. Cumulative returns, daily returns and drawdowns</strong></summary>
-
-![Report figure 30](report/assets/figure-30.png)
+<table class="performance-scenario-table"><thead><tr><th><span>Measure</span></th><th><span>Current</span></th><th><span>Update: sales allowed</span></th><th><span>Update: no sales</span></th></tr></thead><tbody><tr><td>ActiveReturn</td><td>-0.126876</td><td>-0.111384</td><td>-0.105041</td></tr><tr><td>AdjustedSharpe</td><td>0.172722</td><td>-0.001557</td><td>0.338696</td></tr><tr><td>AnnualizedReturn_Arithmetic</td><td>0.100333</td><td>0.113408</td><td>0.119051</td></tr><tr><td>AnnualizedReturn_Geometric</td><td>0.101813</td><td>0.117305</td><td>0.123648</td></tr><tr><td>Appraisal</td><td>1.094856</td><td>1.574728</td><td>1.620889</td></tr><tr><td>ArithmeticReturn</td><td>0.000398</td><td>0.000450</td><td>0.000472</td></tr><tr><td>AverageDrawdown</td><td>0.021532</td><td>0.010257</td><td>0.010895</td></tr><tr><td>AverageDrawdownLength</td><td>54.846154</td><td>19.885714</td><td>24.172414</td></tr><tr><td>AverageRecoveryTime</td><td>28.076923</td><td>11.514286</td><td>13.931034</td></tr><tr><td>BernardoLedoit</td><td>1.272186</td><td>1.356676</td><td>1.365941</td></tr><tr><td>BetaCoKurtosis</td><td>0.069828</td><td>-0.038693</td><td>0.022138</td></tr><tr><td>BetaCoSkewness</td><td>-1.003580</td><td>-1.979394</td><td>-1.538224</td></tr><tr><td>Burke</td><td>0.801714</td><td>1.078134</td><td>1.113545</td></tr><tr><td>CAPMAlpha</td><td>0.000349</td><td>0.000423</td><td>0.000429</td></tr><tr><td>CAPMBeta</td><td>0.055789</td><td>0.030649</td><td>0.048982</td></tr><tr><td>CDD</td><td>0.038023</td><td>0.038087</td><td>0.024871</td></tr><tr><td>Calmar</td><td>0.584374</td><td>2.071678</td><td>1.257919</td></tr><tr><td>CoKurtosis</td><td>0.000000</td><td>-0.000000</td><td>0.000000</td></tr><tr><td>CoSkewness</td><td>-0.000000</td><td>-0.000000</td><td>-0.000000</td></tr><tr><td>CumulativeReturn</td><td>0.336565</td><td>0.393583</td><td>0.417390</td></tr><tr><td>DRatio</td><td>0.649261</td><td>0.660972</td><td>0.612461</td></tr><tr><td>DownCapture</td><td>-0.004091</td><td>-0.040333</td><td>-0.018798</td></tr><tr><td>DownNumber</td><td>0.496855</td><td>0.487421</td><td>0.490566</td></tr><tr><td>DownPercent</td><td>0.902516</td><td>0.889937</td><td>0.893082</td></tr><tr><td>DownsideDeviation</td><td>0.003531</td><td>0.002836</td><td>0.002915</td></tr><tr><td>DrawdownDeviation</td><td>0.006635</td><td>0.004076</td><td>0.004530</td></tr><tr><td>ES_Loss</td><td>0.011766</td><td>0.009381</td><td>0.010077</td></tr><tr><td>FamaBeta</td><td>0.466871</td><td>0.400315</td><td>0.398357</td></tr><tr><td>GeometricReturn</td><td>0.000385</td><td>0.000440</td><td>0.000463</td></tr><tr><td>Hurst</td><td>0.402636</td><td>0.391895</td><td>0.360079</td></tr><tr><td>Information_Annualized</td><td>-0.686924</td><td>-0.605087</td><td>-0.580820</td></tr><tr><td>Information_Daily</td><td>-0.037195</td><td>-0.032540</td><td>-0.031149</td></tr><tr><td>JensenAlpha</td><td>0.089055</td><td>0.110296</td><td>0.112447</td></tr><tr><td>Kappa</td><td>0.066250</td><td>0.097454</td><td>0.101330</td></tr><tr><td>Kelly</td><td>14.928559</td><td>22.951337</td><td>24.330676</td></tr><tr><td>Kurtosis</td><td>16.309777</td><td>13.020761</td><td>9.333357</td></tr><tr><td>M2Sortino</td><td>0.109049</td><td>0.129238</td><td>0.135632</td></tr><tr><td>MSquaredExcess</td><td>-0.008638</td><td>0.052367</td><td>0.066498</td></tr><tr><td>Martin</td><td>1.161800</td><td>5.261455</td><td>2.970555</td></tr><tr><td>MaximumDrawdown</td><td>0.174226</td><td>0.056623</td><td>0.098296</td></tr><tr><td>Modigliani</td><td>0.000853</td><td>0.001124</td><td>0.001186</td></tr><tr><td>NetSelectivity</td><td>-0.004955</td><td>0.025757</td><td>0.032548</td></tr><tr><td>Omega</td><td>1.272186</td><td>1.356676</td><td>1.365941</td></tr><tr><td>OmegaExcessReturn</td><td>0.081597</td><td>0.101067</td><td>0.106958</td></tr><tr><td>PainIndex</td><td>0.065162</td><td>0.017216</td><td>0.031839</td></tr><tr><td>PainRatio</td><td>1.562462</td><td>6.813803</td><td>3.883599</td></tr><tr><td>Prospect</td><td>-0.405082</td><td>-0.397426</td><td>-0.391516</td></tr><tr><td>Rachev</td><td>1.085718</td><td>1.225325</td><td>1.123558</td></tr><tr><td>Selectivity</td><td>0.089055</td><td>0.110296</td><td>0.112447</td></tr><tr><td>Sharpe_Annualized</td><td>1.223857</td><td>1.613341</td><td>1.701937</td></tr><tr><td>Sharpe_Daily</td><td>0.077096</td><td>0.101631</td><td>0.107212</td></tr><tr><td>Sharpe_ES</td><td>0.033839</td><td>0.047975</td><td>0.046880</td></tr><tr><td>Sharpe_VaR</td><td>0.064795</td><td>0.085727</td><td>0.092718</td></tr><tr><td>Skewness</td><td>-0.138326</td><td>0.319144</td><td>-0.129076</td></tr><tr><td>Sortino</td><td>0.112759</td><td>0.158680</td><td>0.162061</td></tr><tr><td>SpecificRisk</td><td>0.081340</td><td>0.070041</td><td>0.069373</td></tr><tr><td>Sterling</td><td>0.371275</td><td>0.748963</td><td>0.623554</td></tr><tr><td>SystematicRisk</td><td>0.009796</td><td>0.005382</td><td>0.008601</td></tr><tr><td>TotalRisk</td><td>0.081927</td><td>0.070248</td><td>0.069905</td></tr><tr><td>TrackingError_Annualized</td><td>0.184702</td><td>0.184080</td><td>0.180850</td></tr><tr><td>TrackingError_Daily</td><td>0.011635</td><td>0.011596</td><td>0.011392</td></tr><tr><td>Treynor_Annualized</td><td>1.824982</td><td>3.827312</td><td>2.524370</td></tr><tr><td>Treynor_Daily</td><td>0.006898</td><td>0.014364</td><td>0.009447</td></tr><tr><td>UlcerIndex</td><td>0.087634</td><td>0.022295</td><td>0.041625</td></tr><tr><td>UpCapture</td><td>0.090346</td><td>0.073786</td><td>0.096137</td></tr><tr><td>UpNumber</td><td>0.575688</td><td>0.536697</td><td>0.568807</td></tr><tr><td>UpPercent</td><td>0.169725</td><td>0.142202</td><td>0.165138</td></tr><tr><td>UpsidePotential</td><td>0.527033</td><td>0.603565</td><td>0.604922</td></tr><tr><td>UpsideRisk</td><td>0.003785</td><td>0.003427</td><td>0.003334</td></tr><tr><td>VaR_Loss</td><td>0.006145</td><td>0.005250</td><td>0.005095</td></tr><tr><td>Volatility</td><td>0.005164</td><td>0.004428</td><td>0.004406</td></tr><tr><td>Volatility_Annualized</td><td>0.081981</td><td>0.070294</td><td>0.069950</td></tr></tbody></table>
 
 </details>
 
-
-<details markdown="1">
-<summary><strong>Table 9.g. Complete PerformanceAnalytics comparison</strong></summary>
-
-| Measure | Current | Markowitz_training | MAD_training | Minimax_training | Robust_training | NetSD_training | Markowitz_full | MAD_full | Minimax_full | Robust_full | NetSD_full | Baltic_NetSD | curent_update_baltic |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| ArithmeticReturn | 0.000398 | 0.000241 | 0.000257 | 0.000550 | 0.000304 | 0.000598 | 0.000349 | 0.000361 | 0.000428 | 0.000359 | 0.000564 | 0.000450 | 0.000472 |
-| GeometricReturn | 0.000385 | 0.000231 | 0.000247 | 0.000535 | 0.000294 | 0.000581 | 0.000339 | 0.000351 | 0.000415 | 0.000349 | 0.000550 | 0.000440 | 0.000463 |
-| AnnualizedReturn_Arithmetic | 0.100333 | 0.060664 | 0.064647 | 0.138561 | 0.076694 | 0.150794 | 0.087853 | 0.090945 | 0.107941 | 0.090458 | 0.142039 | 0.113408 | 0.119051 |
-| AnnualizedReturn_Geometric | 0.101813 | 0.059957 | 0.064174 | 0.144198 | 0.076960 | 0.157742 | 0.089160 | 0.092447 | 0.110197 | 0.091833 | 0.148701 | 0.117305 | 0.123648 |
-| CumulativeReturn | 0.336565 | 0.190320 | 0.204546 | 0.496369 | 0.248368 | 0.549995 | 0.291162 | 0.302856 | 0.367224 | 0.300668 | 0.514060 | 0.393583 | 0.417390 |
-| Volatility | 0.005164 | 0.004391 | 0.004399 | 0.005514 | 0.004492 | 0.005841 | 0.004392 | 0.004460 | 0.005185 | 0.004525 | 0.005173 | 0.004428 | 0.004406 |
-| Volatility_Annualized | 0.081981 | 0.069699 | 0.069833 | 0.087538 | 0.071303 | 0.092717 | 0.069724 | 0.070799 | 0.082304 | 0.071837 | 0.082113 | 0.070294 | 0.069950 |
-| MaximumDrawdown | 0.174226 | 0.170565 | 0.166458 | 0.145632 | 0.150634 | 0.110949 | 0.141632 | 0.136609 | 0.174744 | 0.131373 | 0.124629 | 0.056623 | 0.098296 |
-| AverageDrawdown | 0.021532 | 0.021181 | 0.024093 | 0.014172 | 0.017703 | 0.020492 | 0.019664 | 0.019764 | 0.014241 | 0.016581 | 0.017062 | 0.010257 | 0.010895 |
-| AverageDrawdownLength | 54.846154 | 56.076923 | 65.727273 | 20.911765 | 36.150000 | 31.636364 | 39.444444 | 44.062500 | 27.692308 | 42.000000 | 30.217391 | 19.885714 | 24.172414 |
-| AverageRecoveryTime | 28.076923 | 26.307692 | 36.181818 | 11.147059 | 15.850000 | 18.636364 | 16.277778 | 17.312500 | 17.153846 | 20.117647 | 18.173913 | 11.514286 | 13.931034 |
-| Sharpe_Daily | 0.077096 | 0.054828 | 0.058316 | 0.099711 | 0.067757 | 0.102453 | 0.079373 | 0.080919 | 0.082616 | 0.079323 | 0.108968 | 0.101631 | 0.107212 |
-| Sharpe_Annualized | 1.223857 | 0.870369 | 0.925745 | 1.582866 | 1.075601 | 1.626395 | 1.260008 | 1.284544 | 1.311488 | 1.259213 | 1.729806 | 1.613341 | 1.701937 |
-| Sharpe_VaR | 0.064795 | 0.041013 | 0.046411 | 0.075791 | 0.054129 | 0.081810 | 0.060634 | 0.065962 | 0.060826 | 0.065734 | 0.087386 | 0.085727 | 0.092718 |
-| Sharpe_ES | 0.033839 | 0.023047 | 0.024326 | 0.045194 | 0.029121 | 0.049594 | 0.033683 | 0.034039 | 0.035983 | 0.033196 | 0.048549 | 0.047975 | 0.046880 |
-| Sortino | 0.112759 | 0.077301 | 0.080958 | 0.156878 | 0.097848 | 0.164841 | 0.113279 | 0.113784 | 0.124671 | 0.111091 | 0.163729 | 0.158680 | 0.162061 |
-| Calmar | 0.584374 | 0.351519 | 0.385525 | 0.990151 | 0.510905 | 1.421754 | 0.629521 | 0.676730 | 0.630620 | 0.699027 | 1.193148 | 2.071678 | 1.257919 |
-| Omega | 1.272186 | 1.178571 | 1.196080 | 1.337834 | 1.225276 | 1.355174 | 1.267086 | 1.279779 | 1.270559 | 1.277048 | 1.381485 | 1.356676 | 1.365941 |
-| Sterling | 0.371275 | 0.221599 | 0.240840 | 0.587047 | 0.307060 | 0.747773 | 0.368992 | 0.390717 | 0.401090 | 0.396906 | 0.661984 | 0.748963 | 0.623554 |
-| Burke | 0.801714 | 0.534231 | 0.570253 | 1.132896 | 0.685965 | 1.183233 | 0.812841 | 0.840856 | 0.870767 | 0.824759 | 1.196132 | 1.078134 | 1.113545 |
-| Martin | 1.161800 | 0.627890 | 0.714898 | 2.028405 | 0.974642 | 3.204131 | 1.253345 | 1.411333 | 1.146605 | 1.531761 | 2.446004 | 5.261455 | 2.970555 |
-| UlcerIndex | 0.087634 | 0.095489 | 0.089766 | 0.071089 | 0.078962 | 0.049231 | 0.071138 | 0.065503 | 0.096107 | 0.059953 | 0.060793 | 0.022295 | 0.041625 |
-| PainIndex | 0.065162 | 0.079338 | 0.074146 | 0.053805 | 0.060851 | 0.039381 | 0.054254 | 0.049798 | 0.072031 | 0.045829 | 0.046268 | 0.017216 | 0.031839 |
-| PainRatio | 1.562462 | 0.755715 | 0.865501 | 2.680021 | 1.264729 | 4.005567 | 1.643371 | 1.856433 | 1.529861 | 2.003807 | 3.213890 | 6.813803 | 3.883599 |
-| VaR_Loss | 0.006145 | 0.005870 | 0.005528 | 0.007255 | 0.005622 | 0.007314 | 0.005750 | 0.005471 | 0.007042 | 0.005461 | 0.006450 | 0.005250 | 0.005095 |
-| ES_Loss | 0.011766 | 0.010445 | 0.010546 | 0.012166 | 0.010451 | 0.012066 | 0.010350 | 0.010602 | 0.011904 | 0.010813 | 0.011610 | 0.009381 | 0.010077 |
-| DownsideDeviation | 0.003531 | 0.003114 | 0.003169 | 0.003505 | 0.003110 | 0.003630 | 0.003078 | 0.003172 | 0.003436 | 0.003231 | 0.003443 | 0.002836 | 0.002915 |
-| DrawdownDeviation | 0.006635 | 0.006542 | 0.006336 | 0.006304 | 0.006181 | 0.005743 | 0.005891 | 0.005650 | 0.006854 | 0.005387 | 0.005592 | 0.004076 | 0.004530 |
-| Rachev | 1.085718 | 1.010456 | 0.999723 | 1.219854 | 1.074294 | 1.260973 | 1.034670 | 1.023239 | 1.132297 | 1.028083 | 1.139201 | 1.225325 | 1.123558 |
-| AdjustedSharpe | 0.172722 | 0.585413 | 0.476947 | 1.068482 | 0.607402 | 0.304491 | 0.407486 | 0.109796 | 0.946247 | 0.062817 | -0.274498 | -0.001557 | 0.338696 |
-| Skewness | -0.138326 | -0.520195 | -0.832805 | 0.223792 | -0.405017 | 0.650172 | -0.617330 | -0.908080 | -0.023890 | -1.003316 | -0.308413 | 0.319144 | -0.129076 |
-| Kurtosis | 16.309777 | 10.981693 | 12.978086 | 6.678445 | 10.523807 | 11.973562 | 11.268384 | 13.474040 | 6.813094 | 14.193867 | 11.580399 | 13.020761 | 9.333357 |
-| UpsidePotential | 0.527033 | 0.510189 | 0.493841 | 0.621242 | 0.532197 | 0.628954 | 0.537408 | 0.520477 | 0.585463 | 0.512073 | 0.592918 | 0.603565 | 0.604922 |
-| UpsideRisk | 0.003785 | 0.003100 | 0.003058 | 0.004288 | 0.003251 | 0.004610 | 0.003149 | 0.003152 | 0.003902 | 0.003184 | 0.003897 | 0.003427 | 0.003334 |
-| BernardoLedoit | 1.272186 | 1.178571 | 1.196080 | 1.337834 | 1.225276 | 1.355174 | 1.267086 | 1.279779 | 1.270559 | 1.277048 | 1.381485 | 1.356676 | 1.365941 |
-| DRatio | 0.649261 | 0.747781 | 0.690573 | 0.651694 | 0.707733 | 0.653847 | 0.637883 | 0.624730 | 0.735948 | 0.636352 | 0.620966 | 0.660972 | 0.612461 |
-| Hurst | 0.402636 | 0.376610 | 0.383345 | 0.323217 | 0.374531 | 0.386128 | 0.385912 | 0.394260 | 0.333053 | 0.392467 | 0.390552 | 0.391895 | 0.360079 |
-| Kappa | 0.066250 | 0.047414 | 0.047912 | 0.103580 | 0.059853 | 0.105585 | 0.068414 | 0.066397 | 0.081701 | 0.064004 | 0.098032 | 0.097454 | 0.101330 |
-| Kelly | 14.928559 | 12.487490 | 13.256645 | 18.082037 | 15.084864 | 17.541574 | 18.071419 | 18.143451 | 15.934698 | 17.528819 | 21.066282 | 22.951337 | 24.330676 |
-| Prospect | -0.405082 | -0.463809 | -0.435146 | -0.423577 | -0.445088 | -0.415301 | -0.416882 | -0.394582 | -0.451319 | -0.390135 | -0.372757 | -0.397426 | -0.391516 |
-| Information_Daily | -0.037195 | -0.051230 | -0.049915 | -0.024080 | -0.045896 | -0.019843 | -0.042013 | -0.040955 | -0.034291 | -0.041151 | -0.023082 | -0.032540 | -0.031149 |
-| Information_Annualized | -0.686924 | -0.928451 | -0.906364 | -0.453022 | -0.838236 | -0.375479 | -0.771540 | -0.753228 | -0.635660 | -0.756616 | -0.435101 | -0.605087 | -0.580820 |
-| CAPMAlpha | 0.000349 | 0.000203 | 0.000217 | 0.000497 | 0.000259 | 0.000545 | 0.000306 | 0.000316 | 0.000388 | 0.000312 | 0.000510 | 0.000423 | 0.000429 |
-| JensenAlpha | 0.089055 | 0.050076 | 0.053922 | 0.130431 | 0.065265 | 0.143918 | 0.078069 | 0.080840 | 0.099591 | 0.079679 | 0.134683 | 0.110296 | 0.112447 |
-| Treynor_Daily | 0.006898 | 0.005349 | 0.005507 | 0.008882 | 0.005754 | 0.009618 | 0.006990 | 0.006914 | 0.008946 | 0.006561 | 0.008977 | 0.014364 | 0.009447 |
-| Treynor_Annualized | 1.824982 | 1.387697 | 1.431596 | 2.395385 | 1.505013 | 2.609531 | 1.838477 | 1.821410 | 2.376057 | 1.727874 | 2.425929 | 3.827312 | 2.524370 |
-| Modigliani | 0.000853 | 0.000606 | 0.000645 | 0.001103 | 0.000749 | 0.001133 | 0.000878 | 0.000895 | 0.000914 | 0.000877 | 0.001205 | 0.001124 | 0.001186 |
-| TrackingError_Daily | 0.011635 | 0.011448 | 0.011434 | 0.011749 | 0.011403 | 0.011903 | 0.011392 | 0.011394 | 0.011743 | 0.011394 | 0.011581 | 0.011596 | 0.011392 |
-| TrackingError_Annualized | 0.184702 | 0.181735 | 0.181511 | 0.186507 | 0.181011 | 0.188952 | 0.180845 | 0.180878 | 0.186408 | 0.180879 | 0.183839 | 0.184080 | 0.180850 |
-| M2Sortino | 0.109049 | 0.065429 | 0.069834 | 0.154329 | 0.083892 | 0.168060 | 0.097245 | 0.100398 | 0.118385 | 0.099491 | 0.159437 | 0.129238 | 0.135632 |
-| Appraisal | 1.094856 | 0.723234 | 0.777636 | 1.501970 | 0.923278 | 1.563545 | 1.128890 | 1.151736 | 1.216810 | 1.119391 | 1.655600 | 1.574728 | 1.620889 |
-| CAPMBeta | 0.055789 | 0.043206 | 0.044827 | 0.060198 | 0.051135 | 0.060448 | 0.048497 | 0.050756 | 0.046378 | 0.053148 | 0.061296 | 0.030649 | 0.048982 |
-| ActiveReturn | -0.126876 | -0.168732 | -0.164515 | -0.084492 | -0.151730 | -0.070948 | -0.139529 | -0.136242 | -0.118492 | -0.136856 | -0.079988 | -0.111384 | -0.105041 |
-| OmegaExcessReturn | 0.081597 | 0.042127 | 0.046031 | 0.124130 | 0.059152 | 0.136958 | 0.071540 | 0.074288 | 0.090526 | 0.073333 | 0.128991 | 0.101067 | 0.106958 |
-| BetaCoSkewness | -1.003580 | -0.959772 | -1.065311 | -0.835962 | -0.927877 | -0.827654 | -1.030847 | -1.037174 | -1.000984 | -1.035570 | -0.874472 | -1.979394 | -1.538224 |
-| BetaCoKurtosis | 0.069828 | 0.049766 | 0.051962 | 0.027976 | 0.048447 | 0.040237 | 0.046366 | 0.052530 | 0.023982 | 0.057409 | 0.051165 | -0.038693 | 0.022138 |
-| CDD | 0.038023 | 0.042171 | 0.043671 | 0.028151 | 0.041756 | 0.058993 | 0.038028 | 0.041178 | 0.026091 | 0.043712 | 0.040211 | 0.038087 | 0.024871 |
-| CoSkewness | -0.000000 | -0.000000 | -0.000000 | -0.000000 | -0.000000 | -0.000000 | -0.000000 | -0.000000 | -0.000000 | -0.000000 | -0.000000 | -0.000000 | -0.000000 |
-| CoKurtosis | 0.000000 | 0.000000 | 0.000000 | 0.000000 | 0.000000 | 0.000000 | 0.000000 | 0.000000 | 0.000000 | 0.000000 | 0.000000 | -0.000000 | 0.000000 |
-| FamaBeta | 0.466871 | 0.396928 | 0.397687 | 0.498518 | 0.406063 | 0.528009 | 0.397068 | 0.403193 | 0.468710 | 0.409101 | 0.467620 | 0.400315 | 0.398357 |
-| MSquaredExcess | -0.008638 | -0.063187 | -0.054791 | 0.049291 | -0.031874 | 0.057019 | -0.003372 | 0.000487 | 0.005223 | -0.003429 | 0.072684 | 0.052367 | 0.066498 |
-| NetSelectivity | -0.004955 | -0.030816 | -0.026773 | 0.030192 | -0.015903 | 0.036992 | -0.001645 | 0.000241 | 0.003008 | -0.001723 | 0.041761 | 0.025757 | 0.032548 |
-| Selectivity | 0.089055 | 0.050076 | 0.053922 | 0.130431 | 0.065265 | 0.143918 | 0.078069 | 0.080840 | 0.099591 | 0.079679 | 0.134683 | 0.110296 | 0.112447 |
-| SpecificRisk | 0.081340 | 0.069239 | 0.069341 | 0.086840 | 0.070689 | 0.092046 | 0.069156 | 0.070190 | 0.081846 | 0.071181 | 0.081350 | 0.070041 | 0.069373 |
-| SystematicRisk | 0.009796 | 0.007587 | 0.007871 | 0.010571 | 0.008979 | 0.010615 | 0.008516 | 0.008913 | 0.008144 | 0.009333 | 0.010763 | 0.005382 | 0.008601 |
-| TotalRisk | 0.081927 | 0.069654 | 0.069787 | 0.087481 | 0.071257 | 0.092656 | 0.069678 | 0.070753 | 0.082250 | 0.071790 | 0.082059 | 0.070248 | 0.069905 |
-| UpCapture | 0.090346 | 0.059931 | 0.063277 | 0.118747 | 0.078970 | 0.122515 | 0.078371 | 0.080591 | 0.087404 | 0.083093 | 0.118425 | 0.073786 | 0.096137 |
-| UpNumber | 0.575688 | 0.550459 | 0.571101 | 0.548165 | 0.568807 | 0.548165 | 0.575688 | 0.580275 | 0.541284 | 0.582569 | 0.564220 | 0.536697 | 0.568807 |
-| UpPercent | 0.169725 | 0.142202 | 0.139908 | 0.167431 | 0.153670 | 0.199541 | 0.149083 | 0.139908 | 0.174312 | 0.142202 | 0.165138 | 0.142202 | 0.165138 |
-| DownCapture | -0.004091 | 0.004213 | 0.003748 | -0.013238 | 0.009362 | -0.022872 | -0.004510 | -0.005348 | -0.016742 | -0.001623 | -0.017733 | -0.040333 | -0.018798 |
-| DownNumber | 0.496855 | 0.500000 | 0.490566 | 0.490566 | 0.515723 | 0.500000 | 0.484277 | 0.484277 | 0.522013 | 0.496855 | 0.503145 | 0.487421 | 0.490566 |
-| DownPercent | 0.902516 | 0.893082 | 0.893082 | 0.861635 | 0.883648 | 0.874214 | 0.893082 | 0.889937 | 0.883648 | 0.883648 | 0.877358 | 0.889937 | 0.893082 |
-
 </details>
 
-
-Table 9.g contains all 72 measures calculated directly with PerformanceAnalytics: measures are rows and portfolios are columns. S&P 500 is the benchmark for CAPM, information, tracking-error, capture and systematic-risk measures. It remains in Table 9.a and the figures; it is omitted from Table 9.g because its information ratio relative to itself has a zero tracking-error denominator.
-
-</details>
-
-<details markdown="1" class="report-section" id="section-10">
-<summary><strong>10. Decision risks and implementability</strong></summary>
+<details markdown="1" class="report-section" id="section-8">
+<summary><strong>8. Decision risks and implementability</strong></summary>
 
 ### Liquidity and turnover
 
 <details markdown="1">
-<summary><strong>Table 10.a. Proposed trades and observed one-year market liquidity</strong></summary>
+<summary><strong>Table 8.a. Proposed trades and observed one-year market liquidity</strong></summary>
 
 | asset | trade_shares | trade_value_EUR | median_daily_turnover_EUR | zero_volume_fraction | trade_to_median_turnover | liquidity_flag |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -5857,7 +5416,7 @@ Table 9.g contains all 72 measures calculated directly with PerformanceAnalytics
 Median daily turnover and zero-volume frequency use official Nasdaq Baltic price-volume observations from the last 365 calendar days of the sample. Trade-to-turnover is the proposed absolute order value divided by median daily turnover. HIGH flags median turnover below EUR 5,000 or an order above 20% of median turnover; MEDIUM flags below EUR 20,000 or above 10%. These are transparent screening thresholds, not a guarantee of execution. HIGH trades should be split, limited or omitted after checking the live order book.
 
 <details markdown="1">
-<summary><strong>Table 10.b. Illustrative transaction-cost and turnover scenario</strong></summary>
+<summary><strong>Table 8.b. Illustrative transaction-cost and turnover scenario</strong></summary>
 
 | portfolio | turnover_EUR | number_of_trades | estimated_cost_EUR | high_liquidity_risk_trades | cost_percent_of_15000 |
 | --- | --- | --- | --- | --- | --- |
@@ -5872,7 +5431,7 @@ The cost scenario uses max(EUR 3, 0.25% of trade value) commission plus an assum
 ### Capital concentration
 
 <details markdown="1">
-<summary><strong>Table 10.c. Top-position and effective-position concentration</strong></summary>
+<summary><strong>Table 8.c. Top-position and effective-position concentration</strong></summary>
 
 | portfolio | positions | top5_share | top10_share | HHI | effective_positions |
 | --- | --- | --- | --- | --- | --- |
@@ -5883,7 +5442,7 @@ The cost scenario uses max(EUR 3, 0.25% of trade value) commission plus an assum
 
 
 <details markdown="1">
-<summary><strong>Table 10.d. Baltic_NetSD: country, list and industry concentration</strong></summary>
+<summary><strong>Table 8.d. Baltic_NetSD: country, list and industry concentration</strong></summary>
 
 | dimension | category | capital_percent |
 | --- | --- | --- |
@@ -5918,7 +5477,7 @@ The cost scenario uses max(EUR 3, 0.25% of trade value) commission plus an assum
 
 
 <details markdown="1">
-<summary><strong>Table 10.e. curent_update_baltic: country, list and industry concentration</strong></summary>
+<summary><strong>Table 8.e. curent_update_baltic: country, list and industry concentration</strong></summary>
 
 | dimension | category | capital_percent |
 | --- | --- | --- |
@@ -5954,55 +5513,13 @@ The number of holdings is not a diversification measure. Top-five and top-ten sh
 
 ### In-sample, out-of-sample and complete-period validation
 
-<details markdown="1">
-<summary><strong>Table 10.f. In-sample portfolio-return statistics for the 70% training window</strong></summary>
-
-| period | portfolio | observations | mean | median | SD | minimum | maximum |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| In-sample training | Markowitz | 527 | 0.000027 | 0.000176 | 0.004759 | -0.025519 | 0.017324 |
-| In-sample training | MAD | 527 | 0.000036 | 0.000107 | 0.004809 | -0.028989 | 0.017095 |
-| In-sample training | Minimax | 527 | 0.000366 | 0.000275 | 0.005969 | -0.021554 | 0.030058 |
-| In-sample training | Robust | 527 | 0.000156 | 0.000159 | 0.004914 | -0.026819 | 0.018079 |
-| In-sample training | NetSD | 527 | 0.000634 | 0.000275 | 0.006803 | -0.030548 | 0.047554 |
-| In-sample training | Current | 527 | 0.000027 | 0.000183 | 0.006017 | -0.040123 | 0.024829 |
-
-</details>
 
 
-<details markdown="1">
-<summary><strong>Table 10.g. Out-of-sample portfolio-return statistics for the 30% holdout window</strong></summary>
-
-| period | portfolio | observations | mean | median | SD | minimum | maximum |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| Out-of-sample test | Markowitz | 227 | 0.000967 | 0.000772 | 0.004877 | -0.022545 | 0.027713 |
-| Out-of-sample test | MAD | 227 | 0.000945 | 0.000731 | 0.004771 | -0.025817 | 0.026779 |
-| Out-of-sample test | Minimax | 227 | 0.001338 | 0.000600 | 0.006351 | -0.022953 | 0.029115 |
-| Out-of-sample test | Robust | 227 | 0.000917 | 0.000450 | 0.005004 | -0.023252 | 0.026893 |
-| Out-of-sample test | NetSD | 227 | 0.001277 | 0.000641 | 0.006417 | -0.027866 | 0.026494 |
-| Out-of-sample test | Current | 227 | 0.001373 | 0.000708 | 0.006532 | -0.022371 | 0.046525 |
-
-</details>
 
 
-The in-sample and out-of-sample tables use the same fixed 70/30 split. Portfolio weights are estimated from the training window and then left unchanged in the holdout window. Table 9.a remains the complete-period description; it must not be interpreted as an independent test.
-
-<details markdown="1">
-<summary><strong>Table 10.h. Existing 70/30 holdout experiment: portfolio-only netSD on unseen test data</strong></summary>
-
-| entity | out | in | network_denominator | netSD |
-| --- | --- | --- | --- | --- |
-| Markowitz | 3 | 0 | 6 | 0.500000 |
-| MAD | 0 | 0 | 6 | 0.000000 |
-| Minimax | 3 | 0 | 6 | 0.500000 |
-| Robust | 0 | 1 | 6 | -0.166667 |
-| NetSD | 0 | 2 | 6 | -0.333333 |
-| Current | 3 | 0 | 6 | 0.500000 |
-| SP500 | 0 | 6 | 6 | -1.000000 |
-
-</details>
 
 
-The final Baltic_NetSD weights were selected on the complete 2023–2026 sample. Their 11.73% annualised geometric return and 1.61 annualised Sharpe ratio are therefore in-sample descriptions, not forecasts. The earlier 70/30 experiment is the available independent check: weights were fixed from the first 70% and assessed on the last 30%. Its NetSD portfolio has a negative test-network netSD, which is direct evidence of model-selection instability. No trade should rely on the full-sample figures without a new walk-forward or future-paper-trading test.
+
 
 netSD counts outgoing minus incoming FSD, SSD and TSD relations relative to a fixed comparison network. It has no monetary unit and does not state expected profit, maximum loss or suitability for an investor. Use it as a distribution-ranking signal together with return, volatility, drawdown, VaR/ES, liquidity, concentration and cost results.
 
@@ -6012,8 +5529,8 @@ Dividend values are historical gross cash distributions. They are excluded from 
 
 </details>
 
-<details markdown="1" class="report-section" id="section-11">
-<summary><strong>11. Model</strong></summary>
+<details markdown="1" class="report-section" id="section-9">
+<summary><strong>9. Model</strong></summary>
 
 ### Exact mathematical formulation of the netSD portfolio
 
@@ -6033,8 +5550,8 @@ The objective is discrete and non-convex. ISRES evaluates candidate portfolios n
 
 </details>
 
-<details markdown="1" class="report-section" id="section-12">
-<summary><strong>12. Data coverage</strong></summary>
+<details markdown="1" class="report-section" id="section-10">
+<summary><strong>10. Data coverage</strong></summary>
 
 The official Nasdaq Baltic list contained 67 shares. 55 shares had Yahoo closing-price history covering the complete study window and entered the common-date return matrix. Shares with incomplete or unavailable histories are excluded from both the optimisation and Table 2.b. No price interpolation or zero-return replacement was used.
 
