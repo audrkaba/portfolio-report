@@ -67,10 +67,11 @@ img { display:block; max-width:100%; height:auto; margin:1rem auto; border:1px s
 .frontier-controls label { display:grid; gap:3px; color:#29485a; font-size:.86rem; }
 .frontier-controls select,.frontier-controls input { width:100%; }
 .frontier-controls button { min-height:35px; border:1px solid #8aa6b2; border-radius:5px; color:#174d61; background:#eef7f8; cursor:pointer; }
-.frontier-multiselect { grid-column:span 3; display:flex; flex-wrap:wrap; gap:.35rem .8rem; margin:0; padding:.45rem .7rem; border:1px solid #c6d8de; border-radius:6px; }
-.frontier-multiselect legend { padding:0 .3rem; color:#29485a; font-size:.86rem; }
-.frontier-multiselect label { display:inline-flex; grid-auto-flow:column; align-items:center; gap:.25rem; font-size:.78rem; white-space:nowrap; }
-.frontier-multiselect input { width:1rem; height:1rem; accent-color:var(--accent); }
+.frontier-multiselect-wrap { grid-column:span 3; display:grid; gap:.25rem; color:#29485a; font-size:.86rem; }
+.frontier-multiselect { width:100%; min-height:190px; padding:.35rem; border:1px solid #8aa6b2; border-radius:6px; background:white; }
+.frontier-multiselect optgroup { color:#173246; font-weight:700; }
+.frontier-multiselect option { color:#29485a; font-weight:400; padding:.18rem .35rem; }
+.frontier-select-help { color:#607080; font-size:.76rem; }
 .frontier-canvas { width:100%; height:620px; border:1px solid var(--line); border-radius:5px; cursor:crosshair; }
 .frontier-status { margin:.45rem 0 0; color:#455f70; font-size:.84rem; font-variant-numeric:tabular-nums; }
 @media(max-width:900px) { .dominance-controls { grid-template-columns:1fr 1fr; } .dominance-canvas { height:675px; } }
@@ -79,7 +80,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-27 08:40 (Europe/Vilnius); return analysis through 2026-10-23; valuation prices through 2026-10-23
+# Baltic investment plan - updated 2026-10-27 10:44 (Europe/Vilnius); return analysis through 2026-10-23; valuation prices through 2026-10-23
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -5332,7 +5333,7 @@ Select FSD, SSD or TSD. The upper panels show the component curves, while the lo
 <details markdown="1" class="frontier-components" open>
 <summary><strong>Figure 7.e. Interactive Markowitz, MAD, Minimax, robust mean–CVaR and netSD frontiers</strong></summary>
 
-Choose the model to change the risk measure. Every portfolio is shown as a point and Current is always highlighted. Use the checkbox list to select and label several comparison portfolios at the same time, zoom with the horizontal controls or mouse wheel, and save the current view as PNG.
+Choose the model to change the risk measure. All calculated portfolios and all eligible shares are shown as points, while Current is always highlighted. Use the grouped multiple-selection list to select and label several portfolios and shares at the same time, zoom with the horizontal controls or mouse wheel, and save the current view as PNG.
 
 <div class="frontier-explorer"><p>Loading the interactive frontier comparison...</p></div>
 
@@ -5668,15 +5669,21 @@ function initialiseFrontierExplorer(box) {
   box.dataset.loaded='loading';
   fetch('interactive/frontiers.json').then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json();}).then(data=>{
     const models=Object.keys(data.models), first=data.models[models[0]], names=first.portfolios.map(p=>p.name);
+    const portfolioNames=first.portfolios.filter(p=>p.type==='portfolio'&&p.name!=='Current').map(p=>p.name), shareNames=first.portfolios.filter(p=>p.type==='share').map(p=>p.name);
     const preferred=['Baltic_NetSD','curent_update_baltic','NetSD_full','NetSD_training'];
     box.innerHTML=`<div class="frontier-controls">
       <label>Frontier model<select class="front-model">${models.map(x=>`<option>${x}</option>`).join('')}</select></label>
-      <fieldset class="frontier-multiselect"><legend>Compare Current with one or more portfolios</legend>${[...preferred.filter(x=>names.includes(x)),...names.filter(x=>x!=='Current'&&!preferred.includes(x))].map(x=>`<label><input type="checkbox" value="${x}" ${['Baltic_NetSD','curent_update_baltic'].includes(x)?'checked':''}>${x}</label>`).join('')}</fieldset>
+      <label class="frontier-multiselect-wrap">Compare Current with portfolios and shares
+        <select class="frontier-multiselect" multiple size="10">
+          <optgroup label="Portfolios">${[...preferred.filter(x=>portfolioNames.includes(x)),...portfolioNames.filter(x=>!preferred.includes(x))].map(x=>`<option value="${x}" ${['Baltic_NetSD','curent_update_baltic'].includes(x)?'selected':''}>${x}</option>`).join('')}</optgroup>
+          <optgroup label="Shares">${shareNames.map(x=>`<option value="${x}">${x}</option>`).join('')}</optgroup>
+        </select><span class="frontier-select-help">Hold Ctrl (Windows) or Command (Mac) to select several entries.</span>
+      </label>
       <label>Horizontal view: <output class="front-xout">100%</output><input class="front-xzoom" type="range" min="20" max="100" value="100" step="1"></label>
       <label>Vertical view: <output class="front-yout">100%</output><input class="front-yzoom" type="range" min="20" max="100" value="100" step="1"></label>
       <button class="front-reset" type="button">Reset view</button><button class="front-save" type="button">Save high-resolution PNG</button>
     </div><canvas class="frontier-canvas"></canvas><p class="frontier-status"></p>`;
-    const canvas=box.querySelector('canvas'), model=box.querySelector('.front-model'), compareBoxes=[...box.querySelectorAll('.frontier-multiselect input')], xzoom=box.querySelector('.front-xzoom'), yzoom=box.querySelector('.front-yzoom'), status=box.querySelector('.frontier-status');
+    const canvas=box.querySelector('canvas'), model=box.querySelector('.front-model'), compareSelect=box.querySelector('.frontier-multiselect'), xzoom=box.querySelector('.front-xzoom'), yzoom=box.querySelector('.front-yzoom'), status=box.querySelector('.frontier-status');
     function render(){
       const d=data.models[model.value], frontier=d.frontier, points=d.portfolios;
       const ratio=Math.min(Math.max(window.devicePixelRatio||1,2),3), rect=canvas.getBoundingClientRect();
@@ -5693,13 +5700,13 @@ function initialiseFrontierExplorer(box) {
       for(let j=0;j<=6;j++){const v=y0+(y1-y0)*j/6,py=sy(v);ctx.fillStyle='#344c5a';ctx.fillText(v.toFixed(5),8,py+4);}
       ctx.font='bold 13px system-ui';ctx.fillStyle='#173246';ctx.fillText(d.risk_label,L,H-18);ctx.save();ctx.translate(18,(T+H-B)/2);ctx.rotate(-Math.PI/2);ctx.fillText('Mean daily return',0,0);ctx.restore();
       ctx.strokeStyle='#007f8b';ctx.lineWidth=3;ctx.beginPath();frontier.forEach((p,i)=>{const px=sx(p.risk),py=sy(p.mean);if(i===0)ctx.moveTo(px,py);else ctx.lineTo(px,py);});ctx.stroke();
-      const selected=new Set(compareBoxes.filter(x=>x.checked).map(x=>x.value)), labelled=new Set(['Current',...selected]);
-      points.forEach((p,pi)=>{if(p.risk<x0||p.risk>x1||p.mean<y0||p.mean>y1)return;const isCurrent=p.name==='Current',isSelected=selected.has(p.name);ctx.beginPath();ctx.arc(sx(p.risk),sy(p.mean),isCurrent||isSelected?7:4,0,2*Math.PI);ctx.fillStyle=isCurrent?'#d7191c':isSelected?(p.name==='Baltic_NetSD'?'#0072b2':p.name==='curent_update_baltic'?'#009e73':palette[pi%palette.length]):'#a6afb5';ctx.fill();ctx.strokeStyle='#fff';ctx.lineWidth=1;ctx.stroke();if(labelled.has(p.name)){ctx.font='bold 12px system-ui';ctx.fillStyle='#17212b';ctx.fillText(p.name,sx(p.risk)+9,sy(p.mean)-7);}});
+      const selected=new Set([...compareSelect.selectedOptions].map(x=>x.value)), labelled=new Set(['Current',...selected]);
+      points.forEach((p,pi)=>{if(p.risk<x0||p.risk>x1||p.mean<y0||p.mean>y1)return;const isCurrent=p.name==='Current',isSelected=selected.has(p.name),isShare=p.type==='share';ctx.beginPath();if(isShare&&isSelected){ctx.rect(sx(p.risk)-6,sy(p.mean)-6,12,12);}else{ctx.arc(sx(p.risk),sy(p.mean),isCurrent||isSelected?7:(isShare?3:4),0,2*Math.PI);}ctx.fillStyle=isCurrent?'#d7191c':isSelected?(p.name==='Baltic_NetSD'?'#0072b2':p.name==='curent_update_baltic'?'#009e73':palette[pi%palette.length]):(isShare?'#d5dadd':'#8f9ba2');ctx.fill();ctx.strokeStyle=isSelected?'#17212b':'#fff';ctx.lineWidth=isSelected?1.5:1;ctx.stroke();if(labelled.has(p.name)){ctx.font='bold 12px system-ui';ctx.fillStyle='#17212b';ctx.fillText(p.name,sx(p.risk)+9,sy(p.mean)-7);}});
       ctx.strokeStyle='#007f8b';ctx.lineWidth=3;ctx.beginPath();ctx.moveTo(L,T-20);ctx.lineTo(L+28,T-20);ctx.stroke();ctx.fillStyle='#17212b';ctx.font='12px system-ui';ctx.fillText(model.value==='NetSD'?'Observed nondominated candidate envelope':'Efficient frontier',L+36,T-16);
       const cur=points.find(p=>p.name==='Current'), selectedPoints=points.filter(p=>selected.has(p.name));status.textContent=cur?`Current: risk ${cur.risk.toFixed(6)}, mean ${cur.mean.toFixed(6)}${selectedPoints.map(p=>` | ${p.name}: risk ${p.risk.toFixed(6)}, mean ${p.mean.toFixed(6)}`).join('')}`:'';
       box.querySelector('.front-xout').value=`${xzoom.value}%`;box.querySelector('.front-yout').value=`${yzoom.value}%`;
     }
-    [model,xzoom,yzoom,...compareBoxes].forEach(x=>x.addEventListener('input',render));
+    [model,xzoom,yzoom,compareSelect].forEach(x=>x.addEventListener('input',render));
     canvas.addEventListener('wheel',e=>{e.preventDefault();const control=e.shiftKey?yzoom:xzoom;control.value=Math.max(20,Math.min(100,Number(control.value)+Math.sign(e.deltaY)*4));render();},{passive:false});
     box.querySelector('.front-reset').addEventListener('click',()=>{xzoom.value=100;yzoom.value=100;render();});
     box.querySelector('.front-save').addEventListener('click',()=>{const a=document.createElement('a');a.download=`${model.value}_interactive_frontier.png`;a.href=canvas.toDataURL('image/png');a.click();});
