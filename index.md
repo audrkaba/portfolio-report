@@ -83,7 +83,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-27 10:46 (Europe/Vilnius); return analysis through 2026-10-23; valuation prices through 2026-10-23
+# Baltic investment plan - updated 2026-10-27 10:50 (Europe/Vilnius); return analysis through 2026-10-23; valuation prices through 2026-10-23
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -104,9 +104,9 @@ Return statistics use complete common trading dates through 2026-10-23. Valuatio
 
 Select a share to display its allocation, technical indicators, all PerformanceAnalytics measures and portfolio sensitivity. Average annual dividend is the mean of the official annual dividend per share totals for 2022–2026; a year without a distribution contributes zero, and future ex-dividend dates after the report update date are excluded.
 
-<div class="profile-filters"><fieldset class="signal-filters"><legend>Current execution decision</legend><label><input type="checkbox" value="BUY" checked> BUY</label><label><input type="checkbox" value="WAIT" checked> WAIT</label><label><input type="checkbox" value="SELL" checked> SELL</label><label><input type="checkbox" value="HOLD" checked> HOLD</label><label><input type="checkbox" value="SKIP" checked> SKIP</label></fieldset><fieldset class="netsd-filters"><legend>netSD after adding this share</legend><label><input type="checkbox" value="INCREASE" checked> Increases</label><label><input type="checkbox" value="DECREASE" checked> Decreases</label><label><input type="checkbox" value="UNCHANGED" checked> Unchanged</label></fieldset><span class="profile-filter-count" aria-live="polite"></span></div>
+<div class="profile-filters"><fieldset class="signal-filters"><legend>Current execution decision</legend><label><input type="checkbox" value="BUY" checked> BUY</label><label><input type="checkbox" value="WAIT" checked> WAIT</label><label><input type="checkbox" value="SELL" checked> SELL</label><label><input type="checkbox" value="HOLD" checked> HOLD</label><label><input type="checkbox" value="SKIP" checked> SKIP</label></fieldset><fieldset class="netsd-filters"><legend>netSD after adding this share</legend><label><input type="checkbox" value="INCREASE" checked> Increases</label><label><input type="checkbox" value="DECREASE" checked> Decreases</label><label><input type="checkbox" value="UNCHANGED" checked> Unchanged</label></fieldset><fieldset class="dividend-filters"><legend>Dividends paid at least once in 2022–2026</legend><label><input type="checkbox" value="PAID" checked> Paid dividends</label><label><input type="checkbox" value="NONE" checked> No dividends paid</label></fieldset><span class="profile-filter-count" aria-live="polite"></span></div>
 
-<details markdown="1" class="stock-profile" id="share-kne1l" data-signal="WAIT" data-netsd-effect="INCREASE">
+<details markdown="1" class="stock-profile" id="share-kne1l" data-signal="WAIT" data-netsd-effect="INCREASE" data-dividend-status="PAID">
 <summary><strong>KNE1L — KN Energies</strong> | current action: WAIT | allocation target 1929 shares | netSD diagnostic rank 1</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>928</td><td>1929</td><td>+1001</td><td>6.16%</td><td>EUR 0.4790</td><td>0.3983</td><td>47 / 0</td><td>36.14</td><td>Bearish</td><td>Inside bands</td><td>0.422 (Neutral)</td><td>EUR 0.0129 / share</td><td>HOLD</td><td>BUY</td><td>0.003795 (4.213% of portfolio HHI)</td><td>EUR 14,161</td><td>3.4%</td><td>1.6%</td><td>MEDIUM</td></tr></tbody></table>
@@ -355,7 +355,7 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-vlp1l" data-signal="WAIT" data-netsd-effect="INCREASE">
+<details markdown="1" class="stock-profile" id="share-vlp1l" data-signal="WAIT" data-netsd-effect="INCREASE" data-dividend-status="PAID">
 <summary><strong>VLP1L — Vilkyškių pieninė</strong> | current action: WAIT | allocation target 78 shares | netSD diagnostic rank 2</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>42</td><td>78</td><td>+36</td><td>8.26%</td><td>EUR 15.7500</td><td>0.3983</td><td>47 / 0</td><td>61.54</td><td>Bullish</td><td>Inside bands</td><td>0.492 (Neutral)</td><td>EUR 0.3090 / share</td><td>HOLD</td><td>BUY</td><td>0.006816 (7.567% of portfolio HHI)</td><td>EUR 21,683</td><td>2.6%</td><td>1.6%</td><td>LOW</td></tr></tbody></table>
@@ -603,7 +603,7 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-mrk1t" data-signal="WAIT" data-netsd-effect="INCREASE">
+<details markdown="1" class="stock-profile" id="share-mrk1t" data-signal="WAIT" data-netsd-effect="INCREASE" data-dividend-status="PAID">
 <summary><strong>MRK1T — Merko Ehitus</strong> | current action: WAIT | allocation target 46 shares | netSD diagnostic rank 3</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>20</td><td>46</td><td>+26</td><td>8.36%</td><td>EUR 27.0000</td><td>0.3898</td><td>46 / 0</td><td>44.83</td><td>Bearish</td><td>Inside bands</td><td>0.000 (Oversold)</td><td>EUR 1.2900 / share</td><td>HOLD</td><td>BUY</td><td>0.006984 (7.754% of portfolio HHI)</td><td>EUR 58,779</td><td>1.2%</td><td>1.6%</td><td>LOW</td></tr></tbody></table>
@@ -870,7 +870,7 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-molnr" data-signal="WAIT" data-netsd-effect="INCREASE">
+<details markdown="1" class="stock-profile" id="share-molnr" data-signal="WAIT" data-netsd-effect="INCREASE" data-dividend-status="NONE">
 <summary><strong>MOLNR — J. Molner</strong> | current action: WAIT | allocation target 29 shares | netSD diagnostic rank 4</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>29</td><td>+29</td><td>4.08%</td><td>EUR 20.6000</td><td>0.0424</td><td>5 / 0</td><td>53.51</td><td>Bearish</td><td>Inside bands</td><td>0.000 (Oversold)</td><td>EUR 0.0000 / share</td><td>HOLD</td><td>BUY</td><td>0.001662 (1.845% of portfolio HHI)</td><td>EUR 90</td><td>660.8%</td><td>29.6%</td><td>HIGH</td></tr></tbody></table>
@@ -1105,7 +1105,7 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-apg1l" data-signal="WAIT" data-netsd-effect="UNCHANGED">
+<details markdown="1" class="stock-profile" id="share-apg1l" data-signal="WAIT" data-netsd-effect="UNCHANGED" data-dividend-status="PAID">
 <summary><strong>APG1L — Apranga</strong> | current action: WAIT | allocation target 327 shares | netSD diagnostic rank 5</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>200</td><td>327</td><td>+127</td><td>8.33%</td><td>EUR 3.8200</td><td>0.3220</td><td>40 / 2</td><td>39.86</td><td>Bullish</td><td>Inside bands</td><td>1.000 (Overbought)</td><td>EUR 0.3060 / share</td><td>HOLD</td><td>BUY</td><td>0.006942 (7.707% of portfolio HHI)</td><td>EUR 24,133</td><td>2.0%</td><td>1.6%</td><td>LOW</td></tr></tbody></table>
@@ -1400,7 +1400,7 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-grg1l" data-signal="WAIT" data-netsd-effect="INCREASE">
+<details markdown="1" class="stock-profile" id="share-grg1l" data-signal="WAIT" data-netsd-effect="INCREASE" data-dividend-status="PAID">
 <summary><strong>GRG1L — Grigeo Group</strong> | current action: WAIT | allocation target 1006 shares | netSD diagnostic rank 6</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>543</td><td>1006</td><td>+463</td><td>6.78%</td><td>EUR 1.0100</td><td>0.4068</td><td>54 / 6</td><td>50.37</td><td>Bullish</td><td>Inside bands</td><td>0.696 (Neutral)</td><td>EUR 0.0560 / share</td><td>HOLD</td><td>BUY</td><td>0.004592 (5.098% of portfolio HHI)</td><td>EUR 11,752</td><td>4.0%</td><td>1.6%</td><td>MEDIUM</td></tr></tbody></table>
@@ -1612,7 +1612,7 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-rsu1l" data-signal="WAIT" data-netsd-effect="INCREASE">
+<details markdown="1" class="stock-profile" id="share-rsu1l" data-signal="WAIT" data-netsd-effect="INCREASE" data-dividend-status="PAID">
 <summary><strong>RSU1L — Rokiškio sūris</strong> | current action: WAIT | allocation target 105 shares | netSD diagnostic rank 7</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>105</td><td>+105</td><td>3.08%</td><td>EUR 4.4000</td><td>0.2458</td><td>37 / 8</td><td>33.46</td><td>Bearish</td><td>Below lower band</td><td>0.000 (Oversold)</td><td>EUR 0.1600 / share</td><td>HOLD</td><td>BUY</td><td>0.000951 (1.056% of portfolio HHI)</td><td>EUR 1,122</td><td>41.2%</td><td>5.1%</td><td>HIGH</td></tr></tbody></table>
@@ -1847,7 +1847,7 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-ako1l" data-signal="WAIT" data-netsd-effect="INCREASE">
+<details markdown="1" class="stock-profile" id="share-ako1l" data-signal="WAIT" data-netsd-effect="INCREASE" data-dividend-status="PAID">
 <summary><strong>AKO1L — Akola Group</strong> | current action: WAIT | allocation target 272 shares | netSD diagnostic rank 8</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>272</td><td>+272</td><td>3.36%</td><td>EUR 1.8500</td><td>0.2203</td><td>36 / 10</td><td>78.10</td><td>Bullish</td><td>Inside bands</td><td>0.855 (Overbought)</td><td>EUR 0.0355 / share</td><td>HOLD</td><td>BUY</td><td>0.001127 (1.251% of portfolio HHI)</td><td>EUR 22,122</td><td>2.3%</td><td>1.6%</td><td>LOW</td></tr></tbody></table>
@@ -2095,7 +2095,7 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-tal1t" data-signal="WAIT" data-netsd-effect="DECREASE">
+<details markdown="1" class="stock-profile" id="share-tal1t" data-signal="WAIT" data-netsd-effect="DECREASE" data-dividend-status="PAID">
 <summary><strong>TAL1T — Tallink Grupp</strong> | current action: WAIT | allocation target 1172 shares | netSD diagnostic rank 9</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>700</td><td>1172</td><td>+472</td><td>5.08%</td><td>EUR 0.6500</td><td>0.0932</td><td>30 / 19</td><td>66.63</td><td>Bearish</td><td>Above upper band</td><td>0.599 (Neutral)</td><td>EUR 0.0300 / share</td><td>HOLD</td><td>BUY</td><td>0.002580 (2.864% of portfolio HHI)</td><td>EUR 77,165</td><td>0.4%</td><td>1.6%</td><td>LOW</td></tr></tbody></table>
@@ -2367,7 +2367,7 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-tkm1t" data-signal="WAIT" data-netsd-effect="DECREASE">
+<details markdown="1" class="stock-profile" id="share-tkm1t" data-signal="WAIT" data-netsd-effect="DECREASE" data-dividend-status="PAID">
 <summary><strong>TKM1T — TKM Grupp</strong> | current action: WAIT | allocation target 330 shares | netSD diagnostic rank 10</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>288</td><td>330</td><td>+42</td><td>19.59%</td><td>EUR 8.9000</td><td>0.0763</td><td>31 / 22</td><td>28.20</td><td>Bearish</td><td>Inside bands</td><td>0.254 (Neutral)</td><td>EUR 0.6660 / share</td><td>HOLD</td><td>BUY</td><td>0.038382 (42.612% of portfolio HHI)</td><td>EUR 39,910</td><td>0.9%</td><td>1.6%</td><td>LOW</td></tr></tbody></table>
@@ -2632,7 +2632,7 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-dgr1r" data-signal="WAIT" data-netsd-effect="DECREASE">
+<details markdown="1" class="stock-profile" id="share-dgr1r" data-signal="WAIT" data-netsd-effect="DECREASE" data-dividend-status="PAID">
 <summary><strong>DGR1R — DelfinGroup</strong> | current action: WAIT | allocation target 181 shares | netSD diagnostic rank 11</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>181</td><td>+181</td><td>2.06%</td><td>EUR 1.7000</td><td>0.0678</td><td>30 / 22</td><td>60.14</td><td>Bearish</td><td>Inside bands</td><td>0.000 (Oversold)</td><td>EUR 0.0957 / share</td><td>HOLD</td><td>BUY</td><td>0.000424 (0.471% of portfolio HHI)</td><td>EUR 12,376</td><td>2.5%</td><td>2.8%</td><td>MEDIUM</td></tr></tbody></table>
@@ -2927,7 +2927,7 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-eft1t" data-signal="WAIT" data-netsd-effect="DECREASE">
+<details markdown="1" class="stock-profile" id="share-eft1t" data-signal="WAIT" data-netsd-effect="DECREASE" data-dividend-status="PAID">
 <summary><strong>EFT1T — EfTEN Real Estate Fund</strong> | current action: WAIT | allocation target 11 shares | netSD diagnostic rank 12</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>11</td><td>+11</td><td>1.44%</td><td>EUR 19.3500</td><td>0.1102</td><td>36 / 23</td><td>41.29</td><td>Bearish</td><td>Below lower band</td><td>0.000 (Oversold)</td><td>EUR 1.0525 / share</td><td>HOLD</td><td>BUY</td><td>0.000209 (0.231% of portfolio HHI)</td><td>EUR 20,342</td><td>1.0%</td><td>1.6%</td><td>LOW</td></tr></tbody></table>
@@ -3195,7 +3195,7 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-hae1t" data-signal="WAIT" data-netsd-effect="DECREASE">
+<details markdown="1" class="stock-profile" id="share-hae1t" data-signal="WAIT" data-netsd-effect="DECREASE" data-dividend-status="PAID">
 <summary><strong>HAE1T — Harju Elekter Group</strong> | current action: WAIT | allocation target 133 shares | netSD diagnostic rank 13</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>100</td><td>133</td><td>+33</td><td>4.77%</td><td>EUR 5.3600</td><td>0.1186</td><td>38 / 24</td><td>54.56</td><td>Bullish</td><td>Inside bands</td><td>0.296 (Neutral)</td><td>EUR 0.1440 / share</td><td>HOLD</td><td>BUY</td><td>0.002272 (2.522% of portfolio HHI)</td><td>EUR 17,456</td><td>1.0%</td><td>1.6%</td><td>MEDIUM</td></tr></tbody></table>
@@ -3463,7 +3463,7 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-cpa1t" data-signal="WAIT" data-netsd-effect="DECREASE">
+<details markdown="1" class="stock-profile" id="share-cpa1t" data-signal="WAIT" data-netsd-effect="DECREASE" data-dividend-status="PAID">
 <summary><strong>CPA1T — Coop Pank</strong> | current action: WAIT | allocation target 64 shares | netSD diagnostic rank 14</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>64</td><td>+64</td><td>1.02%</td><td>EUR 2.3850</td><td>0.0678</td><td>32 / 24</td><td>62.27</td><td>Bullish</td><td>Inside bands</td><td>0.669 (Neutral)</td><td>EUR 0.0594 / share</td><td>HOLD</td><td>BUY</td><td>0.000104 (0.115% of portfolio HHI)</td><td>EUR 81,460</td><td>0.2%</td><td>1.6%</td><td>LOW</td></tr></tbody></table>
@@ -3735,7 +3735,7 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-saf1r" data-signal="HOLD" data-netsd-effect="UNCHANGED">
+<details markdown="1" class="stock-profile" id="share-saf1r" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID">
 <summary><strong>SAF1R — SAF Tehnika</strong> | current action: HOLD | allocation target 100 shares | netSD diagnostic rank 15</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>100</td><td>100</td><td>+0</td><td>10.80%</td><td>EUR 16.2000</td><td>-0.1356</td><td>10 / 26</td><td>42.00</td><td>Bearish</td><td>Inside bands</td><td>0.000 (Oversold)</td><td>EUR 0.1360 / share</td><td>HOLD</td><td>HOLD</td><td>0.011664 (12.950% of portfolio HHI)</td><td>EUR 8,096</td><td>0.0%</td><td>2.8%</td><td>MEDIUM</td></tr></tbody></table>
@@ -3987,7 +3987,7 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-tsm1t" data-signal="HOLD" data-netsd-effect="UNCHANGED">
+<details markdown="1" class="stock-profile" id="share-tsm1t" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID">
 <summary><strong>TSM1T — Tallinna Sadam</strong> | current action: HOLD | allocation target 330 shares | netSD diagnostic rank 16</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>330</td><td>330</td><td>+0</td><td>2.64%</td><td>EUR 1.2000</td><td>-0.0085</td><td>30 / 31</td><td>40.77</td><td>Bearish</td><td>Inside bands</td><td>0.478 (Neutral)</td><td>EUR 0.0778 / share</td><td>HOLD</td><td>HOLD</td><td>0.000697 (0.774% of portfolio HHI)</td><td>EUR 45,355</td><td>0.0%</td><td>1.6%</td><td>LOW</td></tr></tbody></table>
@@ -4249,7 +4249,7 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-pzv1l" data-signal="SKIP" data-netsd-effect="INCREASE">
+<details markdown="1" class="stock-profile" id="share-pzv1l" data-signal="SKIP" data-netsd-effect="INCREASE" data-dividend-status="PAID">
 <summary><strong>PZV1L — Pieno žvaigždės</strong> | current action: SKIP | allocation target 71 shares | netSD diagnostic rank 17</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>71</td><td>+71</td><td>0.85%</td><td>EUR 1.7750</td><td>0.2288</td><td>37 / 10</td><td>51.45</td><td>Bearish</td><td>Inside bands</td><td>0.135 (Oversold)</td><td>EUR 0.0840 / share</td><td>HOLD</td><td>BUY</td><td>0.000071 (0.079% of portfolio HHI)</td><td>EUR 4,317</td><td>2.9%</td><td>1.6%</td><td>HIGH</td></tr></tbody></table>
@@ -4497,7 +4497,7 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-virsi" data-signal="SKIP" data-netsd-effect="DECREASE">
+<details markdown="1" class="stock-profile" id="share-virsi" data-signal="SKIP" data-netsd-effect="DECREASE" data-dividend-status="PAID">
 <summary><strong>VIRSI — VIRŠI-A</strong> | current action: SKIP | allocation target 19 shares | netSD diagnostic rank 18</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>19</td><td>+19</td><td>0.59%</td><td>EUR 4.4100</td><td>0.1695</td><td>37 / 17</td><td>49.23</td><td>Bearish</td><td>Inside bands</td><td>0.297 (Neutral)</td><td>EUR 0.0685 / share</td><td>HOLD</td><td>BUY</td><td>0.000034 (0.038% of portfolio HHI)</td><td>EUR 2,717</td><td>3.1%</td><td>2.8%</td><td>HIGH</td></tr></tbody></table>
@@ -4746,7 +4746,7 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="stock-profile" id="share-roe1l" data-signal="SKIP" data-netsd-effect="UNCHANGED">
+<details markdown="1" class="stock-profile" id="share-roe1l" data-signal="SKIP" data-netsd-effect="UNCHANGED" data-dividend-status="PAID">
 <summary><strong>ROE1L — Artea Bankas</strong> | current action: SKIP | allocation target 470 shares | netSD diagnostic rank 19</summary>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>416</td><td>470</td><td>+54</td><td>2.77%</td><td>EUR 0.8820</td><td>0.1949</td><td>42 / 19</td><td>45.19</td><td>Bearish</td><td>Inside bands</td><td>0.453 (Neutral)</td><td>EUR 0.0434 / share</td><td>HOLD</td><td>BUY</td><td>0.000767 (0.851% of portfolio HHI)</td><td>EUR 182,092</td><td>0.0%</td><td>1.6%</td><td>LOW</td></tr></tbody></table>
@@ -5588,15 +5588,17 @@ document.querySelectorAll('.profile-filters').forEach(function(filterBlock) {
   if (!section) return;
     const signalFilters=[...filterBlock.querySelectorAll('.signal-filters input[type="checkbox"]')];
     const netsdFilters=[...filterBlock.querySelectorAll('.netsd-filters input[type="checkbox"]')];
-    const filters=[...signalFilters,...netsdFilters];
+    const dividendFilters=[...filterBlock.querySelectorAll('.dividend-filters input[type="checkbox"]')];
+    const filters=[...signalFilters,...netsdFilters,...dividendFilters];
   const profiles=[...section.querySelectorAll('details.stock-profile')];
   const counter=filterBlock.querySelector('.profile-filter-count');
   function applyProfileFilters() {
       const selectedSignals=new Set(signalFilters.filter(box=>box.checked).map(box=>box.value));
       const selectedNetsdEffects=new Set(netsdFilters.filter(box=>box.checked).map(box=>box.value));
+      const selectedDividendStatuses=new Set(dividendFilters.filter(box=>box.checked).map(box=>box.value));
     let visible=0;
     profiles.forEach(function(profile) {
-        const show=selectedSignals.has(profile.dataset.signal) && selectedNetsdEffects.has(profile.dataset.netsdEffect);
+        const show=selectedSignals.has(profile.dataset.signal) && selectedNetsdEffects.has(profile.dataset.netsdEffect) && selectedDividendStatuses.has(profile.dataset.dividendStatus);
       profile.hidden=!show;
       if (!show) profile.open=false;
       if (show) visible++;
