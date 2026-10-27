@@ -83,7 +83,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-27 10:50 (Europe/Vilnius); return analysis through 2026-10-23; valuation prices through 2026-10-23
+# Baltic investment plan - updated 2026-10-27 12:28 (Europe/Vilnius); return analysis through 2026-10-23; valuation prices through 2026-10-23
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -5255,6 +5255,17 @@ Each scenario removes one share from curent_update_baltic and proportionally res
 
 <details markdown="1" class="report-section" id="analytics-2-4">
 <summary><strong>2.4. Portfolio allocation comparison</strong></summary>
+
+<details markdown="1" open>
+<summary><strong>Box-and-whisker comparison of portfolio returns</strong></summary>
+
+The three panels compare Current, both final update portfolios and the S&P 500 over the complete period, the first 70% and the held-out final 30%. The box is the interquartile range, the central line is the median, the diamond is the mean, whiskers extend to 1.5 interquartile ranges and separate points are tail observations. All panels use the same vertical scale.
+
+![Portfolio return box-and-whisker comparison](figures/scenario_portfolio_boxplots.png)
+
+</details>
+
+
 
 current_execution_decision is the only action recommendation. BUY requires a material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the proposed purchase is below EUR 100 or below 1% target weight; HOLD means no allocation change; SELL means a negative allocation change. Diagnostic priority is not an execution order. Dividend columns use official 2025 and 2026 payments.
 
