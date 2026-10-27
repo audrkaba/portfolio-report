@@ -91,7 +91,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-27 15:53 (Europe/Vilnius); return analysis through 2026-10-23; valuation prices through 2026-10-23
+# Baltic investment plan - updated 2026-10-27 15:56 (Europe/Vilnius); return analysis through 2026-10-23; valuation prices through 2026-10-23
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -5479,7 +5479,7 @@ Select FSD, SSD or TSD, choose any combination of portfolios and individual shar
 <details markdown="1" class="frontier-components" open>
 <summary><strong>Figure 2.g. Interactive Markowitz, MAD, Minimax, robust mean–CVaR and netSD frontiers</strong></summary>
 
-Choose the model to change the risk measure. All calculated portfolios and all eligible shares are shown as points, while Current is always highlighted. Use the grouped multiple-selection list to select and label several portfolios and shares at the same time, zoom with the horizontal controls or mouse wheel, and save the current view as PNG.
+Choose the model to change the risk measure. Current is always highlighted, and every share already held in Current is selected and labelled automatically. Use the grouped multiple-selection list to add or remove any portfolio or share, zoom with the horizontal controls or mouse wheel, and save the current view as PNG.
 
 <div class="frontier-explorer"><p>Loading the interactive frontier comparison...</p></div>
 
@@ -5831,14 +5831,15 @@ function initialiseFrontierExplorer(box) {
   box.dataset.loaded='loading';
   fetch('interactive/frontiers.json').then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json();}).then(data=>{
     const models=Object.keys(data.models), first=data.models[models[0]], names=first.portfolios.map(p=>p.name);
-    const portfolioNames=first.portfolios.filter(p=>p.type==='portfolio'&&p.name!=='Current').map(p=>p.name), shareNames=first.portfolios.filter(p=>p.type==='share').map(p=>p.name);
+    const portfolioNames=first.portfolios.filter(p=>p.type==='portfolio'&&p.name!=='Current').map(p=>p.name), sharePoints=first.portfolios.filter(p=>p.type==='share'), shareNames=sharePoints.map(p=>p.name), heldShares=new Set(sharePoints.filter(p=>p.held).map(p=>p.name));
     const preferred=['Baltic_NetSD','curent_update_baltic','NetSD_full','NetSD_training'];
     box.innerHTML=`<div class="frontier-controls">
       <label>Frontier model<select class="front-model">${models.map(x=>`<option>${x}</option>`).join('')}</select></label>
       <label class="frontier-multiselect-wrap">Compare Current with portfolios and shares
         <select class="frontier-multiselect" multiple size="10">
           <optgroup label="Portfolios">${[...preferred.filter(x=>portfolioNames.includes(x)),...portfolioNames.filter(x=>!preferred.includes(x))].map(x=>`<option value="${x}" ${['Baltic_NetSD','curent_update_baltic'].includes(x)?'selected':''}>${x}</option>`).join('')}</optgroup>
-          <optgroup label="Shares">${shareNames.map(x=>`<option value="${x}">${x}</option>`).join('')}</optgroup>
+          <optgroup label="Shares currently held">${shareNames.filter(x=>heldShares.has(x)).map(x=>`<option value="${x}" selected>${x}</option>`).join('')}</optgroup>
+          <optgroup label="Other shares">${shareNames.filter(x=>!heldShares.has(x)).map(x=>`<option value="${x}">${x}</option>`).join('')}</optgroup>
         </select><span class="frontier-select-help">Hold Ctrl (Windows) or Command (Mac) to select several entries.</span>
       </label>
       <label>Horizontal view: <output class="front-xout">100%</output><input class="front-xzoom" type="range" min="20" max="100" value="100" step="1"></label>
