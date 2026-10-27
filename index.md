@@ -75,7 +75,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-26 18:31 (Europe/Vilnius); return analysis through 2026-10-23; valuation prices through 2026-10-23
+# Baltic investment plan - updated 2026-10-27 08:02 (Europe/Vilnius); return analysis through 2026-10-23; valuation prices through 2026-10-23
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -225,12 +225,12 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 **Current indicative prices and four-indicator signals**
 
-| Indicator | Current indicator value | Price required for BUY | Price required for SELL | Signal now |
+| Indicator | Current indicator value | BUY price | SELL price | Signal now |
 | --- | --- | --- | --- | --- |
-| Bollinger price | Close = EUR 0.4790 | BUY condition not met — close must fall to ≤ EUR 0.4764 (0.55% lower) | SELL condition not met — close must rise to ≥ EUR 0.4911 (2.54% higher) | HOLD |
-| RSI(14) | RSI = 36.14 | RSI ≤ 30: BUY condition not met — close must fall to ≤ EUR 0.4772 (0.38% lower) | RSI ≥ 70: SELL condition not met — close must rise to ≥ EUR 0.5026 (4.93% higher) | HOLD |
-| Stochastic RSI %K | %K = 0.422 | %K ≤ 0.20: BUY condition not met — close must fall to ≤ EUR 0.4779 (0.23% lower) | %K ≥ 0.80: SELL condition not met — close must rise to ≥ EUR 0.4812 (0.46% higher) | HOLD |
-| MACD crossover | MACD = -0.0030; signal = -0.0024; gap = -0.0005 | MACD > signal: BUY condition not met — close must rise to > EUR 0.4875 (1.77% higher) | MACD < signal: SELL condition met now — current close EUR 0.4790 < threshold EUR 0.4875 | SELL |
+| Bollinger price | Close = EUR 0.4790 | ≤ EUR 0.4764 | ≥ EUR 0.4911 | HOLD |
+| RSI(14) | RSI = 36.14 | ≤ EUR 0.4772 | ≥ EUR 0.5026 | HOLD |
+| Stochastic RSI %K | %K = 0.422 | ≤ EUR 0.4779 | ≥ EUR 0.4812 | HOLD |
+| MACD crossover | MACD = -0.0030<br>Signal = -0.0024<br>Gap = -0.0005 | > EUR 0.4875 | < EUR 0.4875 | SELL |
 | Consensus | BUY 0/4; SELL 1/4; neutral 3/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
 How to read MACD: a negative gap means MACD is below its signal line and therefore gives SELL now. The stated crossover price is the hypothetical latest close at which the gap becomes zero; above it MACD gives BUY, below it MACD gives SELL. RSI, Stochastic RSI and MACD price thresholds are indicative because all earlier closes are held fixed and only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
@@ -472,12 +472,12 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 **Current indicative prices and four-indicator signals**
 
-| Indicator | Current indicator value | Price required for BUY | Price required for SELL | Signal now |
+| Indicator | Current indicator value | BUY price | SELL price | Signal now |
 | --- | --- | --- | --- | --- |
-| Bollinger price | Close = EUR 15.7500 | BUY condition not met — close must fall to ≤ EUR 15.0987 (4.14% lower) | SELL condition not met — close must rise to ≥ EUR 15.8663 (0.74% higher) | HOLD |
-| RSI(14) | RSI = 61.54 | RSI ≤ 30: BUY condition not met — close must fall to ≤ EUR 14.5260 (7.77% lower) | RSI ≥ 70: SELL condition not met — close must rise to ≥ EUR 16.0117 (1.66% higher) | HOLD |
-| Stochastic RSI %K | %K = 0.492 | %K ≤ 0.20: BUY condition not met — close must fall to ≤ EUR 15.5507 (1.27% lower) | %K ≥ 0.80: SELL condition not met — close must rise to ≥ EUR 16.0577 (1.95% higher) | HOLD |
-| MACD crossover | MACD = 0.1149; signal = 0.0686; gap = +0.0463 | MACD > signal: BUY condition met now — current close EUR 15.7500 > threshold EUR 15.0240 | MACD < signal: SELL condition not met — close must fall to < EUR 15.0240 (4.61% lower) | BUY |
+| Bollinger price | Close = EUR 15.7500 | ≤ EUR 15.0987 | ≥ EUR 15.8663 | HOLD |
+| RSI(14) | RSI = 61.54 | ≤ EUR 14.5260 | ≥ EUR 16.0117 | HOLD |
+| Stochastic RSI %K | %K = 0.492 | ≤ EUR 15.5507 | ≥ EUR 16.0577 | HOLD |
+| MACD crossover | MACD = 0.1149<br>Signal = 0.0686<br>Gap = +0.0463 | > EUR 15.0240 | < EUR 15.0240 | BUY |
 | Consensus | BUY 1/4; SELL 0/4; neutral 3/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
 How to read MACD: a negative gap means MACD is below its signal line and therefore gives SELL now. The stated crossover price is the hypothetical latest close at which the gap becomes zero; above it MACD gives BUY, below it MACD gives SELL. RSI, Stochastic RSI and MACD price thresholds are indicative because all earlier closes are held fixed and only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
@@ -718,12 +718,12 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 **Current indicative prices and four-indicator signals**
 
-| Indicator | Current indicator value | Price required for BUY | Price required for SELL | Signal now |
+| Indicator | Current indicator value | BUY price | SELL price | Signal now |
 | --- | --- | --- | --- | --- |
-| Bollinger price | Close = EUR 27.0000 | BUY condition not met — close must fall to ≤ EUR 26.9752 (0.09% lower) | SELL condition not met — close must rise to ≥ EUR 27.1698 (0.63% higher) | HOLD |
-| RSI(14) | RSI = 44.83 | RSI ≤ 30: BUY condition not met — close must fall to ≤ EUR 26.6544 (1.28% lower) | RSI ≥ 70: SELL condition not met — close must rise to ≥ EUR 27.5865 (2.17% higher) | HOLD |
-| Stochastic RSI %K | %K = 0.000 | %K ≤ 0.20: BUY condition met now — current close EUR 27.0000 ≤ threshold EUR 27.0227 | %K ≥ 0.80: SELL condition not met — close must rise to ≥ EUR 27.1006 (0.37% higher) | BUY |
-| MACD crossover | MACD = -0.0162; signal = -0.0059; gap = -0.0103 | MACD > signal: BUY condition not met — close must rise to > EUR 27.1613 (0.60% higher) | MACD < signal: SELL condition met now — current close EUR 27.0000 < threshold EUR 27.1613 | SELL |
+| Bollinger price | Close = EUR 27.0000 | ≤ EUR 26.9752 | ≥ EUR 27.1698 | HOLD |
+| RSI(14) | RSI = 44.83 | ≤ EUR 26.6544 | ≥ EUR 27.5865 | HOLD |
+| Stochastic RSI %K | %K = 0.000 | ≤ EUR 27.0227 | ≥ EUR 27.1006 | BUY |
+| MACD crossover | MACD = -0.0162<br>Signal = -0.0059<br>Gap = -0.0103 | > EUR 27.1613 | < EUR 27.1613 | SELL |
 | Consensus | BUY 1/4; SELL 1/4; neutral 2/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
 How to read MACD: a negative gap means MACD is below its signal line and therefore gives SELL now. The stated crossover price is the hypothetical latest close at which the gap becomes zero; above it MACD gives BUY, below it MACD gives SELL. RSI, Stochastic RSI and MACD price thresholds are indicative because all earlier closes are held fixed and only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
@@ -983,12 +983,12 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 **Current indicative prices and four-indicator signals**
 
-| Indicator | Current indicator value | Price required for BUY | Price required for SELL | Signal now |
+| Indicator | Current indicator value | BUY price | SELL price | Signal now |
 | --- | --- | --- | --- | --- |
-| Bollinger price | Close = EUR 20.6000 | BUY condition not met — close must fall to ≤ EUR 17.8599 (13.30% lower) | SELL condition not met — close must rise to ≥ EUR 23.7501 (15.29% higher) | HOLD |
-| RSI(14) | RSI = 53.51 | RSI ≤ 30: BUY condition not met — close must fall to ≤ EUR 15.7955 (23.32% lower) | RSI ≥ 70: SELL condition not met — close must rise to ≥ EUR 23.1706 (12.48% higher) | HOLD |
-| Stochastic RSI %K | %K = 0.000 | %K ≤ 0.20: BUY condition met now — current close EUR 20.6000 ≤ threshold EUR 20.7905 | %K ≥ 0.80: SELL condition not met — close must rise to ≥ EUR 21.1030 (2.44% higher) | BUY |
-| MACD crossover | MACD = 0.5549; signal = 0.6204; gap = -0.0655 | MACD > signal: BUY condition not met — close must rise to > EUR 21.6263 (4.98% higher) | MACD < signal: SELL condition met now — current close EUR 20.6000 < threshold EUR 21.6263 | SELL |
+| Bollinger price | Close = EUR 20.6000 | ≤ EUR 17.8599 | ≥ EUR 23.7501 | HOLD |
+| RSI(14) | RSI = 53.51 | ≤ EUR 15.7955 | ≥ EUR 23.1706 | HOLD |
+| Stochastic RSI %K | %K = 0.000 | ≤ EUR 20.7905 | ≥ EUR 21.1030 | BUY |
+| MACD crossover | MACD = 0.5549<br>Signal = 0.6204<br>Gap = -0.0655 | > EUR 21.6263 | < EUR 21.6263 | SELL |
 | Consensus | BUY 1/4; SELL 1/4; neutral 2/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
 How to read MACD: a negative gap means MACD is below its signal line and therefore gives SELL now. The stated crossover price is the hypothetical latest close at which the gap becomes zero; above it MACD gives BUY, below it MACD gives SELL. RSI, Stochastic RSI and MACD price thresholds are indicative because all earlier closes are held fixed and only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
@@ -1216,12 +1216,12 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 **Current indicative prices and four-indicator signals**
 
-| Indicator | Current indicator value | Price required for BUY | Price required for SELL | Signal now |
+| Indicator | Current indicator value | BUY price | SELL price | Signal now |
 | --- | --- | --- | --- | --- |
-| Bollinger price | Close = EUR 3.8200 | BUY condition not met — close must fall to ≤ EUR 3.7878 (0.84% lower) | SELL condition not met — close must rise to ≥ EUR 3.8642 (1.16% higher) | HOLD |
-| RSI(14) | RSI = 39.86 | RSI ≤ 30: BUY condition not met — close must fall to ≤ EUR 3.7878 (0.84% lower) | RSI ≥ 70: SELL condition not met — close must rise to ≥ EUR 3.9590 (3.64% higher) | HOLD |
-| Stochastic RSI %K | %K = 1.000 | %K ≤ 0.20: BUY condition not met — close must fall to ≤ EUR 3.7906 (0.77% lower) | %K ≥ 0.80: SELL condition met now — current close EUR 3.8200 ≥ threshold EUR 3.8101 | SELL |
-| MACD crossover | MACD = -0.0251; signal = -0.0283; gap = +0.0032 | MACD > signal: BUY condition met now — current close EUR 3.8200 > threshold EUR 3.7693 | MACD < signal: SELL condition not met — close must fall to < EUR 3.7693 (1.33% lower) | BUY |
+| Bollinger price | Close = EUR 3.8200 | ≤ EUR 3.7878 | ≥ EUR 3.8642 | HOLD |
+| RSI(14) | RSI = 39.86 | ≤ EUR 3.7878 | ≥ EUR 3.9590 | HOLD |
+| Stochastic RSI %K | %K = 1.000 | ≤ EUR 3.7906 | ≥ EUR 3.8101 | SELL |
+| MACD crossover | MACD = -0.0251<br>Signal = -0.0283<br>Gap = +0.0032 | > EUR 3.7693 | < EUR 3.7693 | BUY |
 | Consensus | BUY 1/4; SELL 1/4; neutral 2/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
 How to read MACD: a negative gap means MACD is below its signal line and therefore gives SELL now. The stated crossover price is the hypothetical latest close at which the gap becomes zero; above it MACD gives BUY, below it MACD gives SELL. RSI, Stochastic RSI and MACD price thresholds are indicative because all earlier closes are held fixed and only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
@@ -1509,12 +1509,12 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 **Current indicative prices and four-indicator signals**
 
-| Indicator | Current indicator value | Price required for BUY | Price required for SELL | Signal now |
+| Indicator | Current indicator value | BUY price | SELL price | Signal now |
 | --- | --- | --- | --- | --- |
-| Bollinger price | Close = EUR 1.0100 | BUY condition not met — close must fall to ≤ EUR 0.9963 (1.35% lower) | SELL condition not met — close must rise to ≥ EUR 1.0226 (1.24% higher) | HOLD |
-| RSI(14) | RSI = 50.37 | RSI ≤ 30: BUY condition not met — close must fall to ≤ EUR 0.9704 (3.93% lower) | RSI ≥ 70: SELL condition not met — close must rise to ≥ EUR 1.0482 (3.78% higher) | HOLD |
-| Stochastic RSI %K | %K = 0.696 | %K ≤ 0.20: BUY condition not met — close must fall to ≤ EUR 0.9971 (1.27% lower) | %K ≥ 0.80: SELL condition not met — close must rise to ≥ EUR 1.0123 (0.23% higher) | HOLD |
-| MACD crossover | MACD = -0.0022; signal = -0.0027; gap = +0.0004 | MACD > signal: BUY condition met now — current close EUR 1.0100 > threshold EUR 1.0032 | MACD < signal: SELL condition not met — close must fall to < EUR 1.0032 (0.67% lower) | BUY |
+| Bollinger price | Close = EUR 1.0100 | ≤ EUR 0.9963 | ≥ EUR 1.0226 | HOLD |
+| RSI(14) | RSI = 50.37 | ≤ EUR 0.9704 | ≥ EUR 1.0482 | HOLD |
+| Stochastic RSI %K | %K = 0.696 | ≤ EUR 0.9971 | ≥ EUR 1.0123 | HOLD |
+| MACD crossover | MACD = -0.0022<br>Signal = -0.0027<br>Gap = +0.0004 | > EUR 1.0032 | < EUR 1.0032 | BUY |
 | Consensus | BUY 1/4; SELL 0/4; neutral 3/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
 How to read MACD: a negative gap means MACD is below its signal line and therefore gives SELL now. The stated crossover price is the hypothetical latest close at which the gap becomes zero; above it MACD gives BUY, below it MACD gives SELL. RSI, Stochastic RSI and MACD price thresholds are indicative because all earlier closes are held fixed and only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
@@ -1719,12 +1719,12 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 **Current indicative prices and four-indicator signals**
 
-| Indicator | Current indicator value | Price required for BUY | Price required for SELL | Signal now |
+| Indicator | Current indicator value | BUY price | SELL price | Signal now |
 | --- | --- | --- | --- | --- |
-| Bollinger price | Close = EUR 4.4000 | BUY condition met now — current close EUR 4.4000 ≤ threshold EUR 4.4100 | SELL condition not met — close must rise to ≥ EUR 4.5460 (3.32% higher) | BUY |
-| RSI(14) | RSI = 33.46 | RSI ≤ 30: BUY condition not met — close must fall to ≤ EUR 4.3728 (0.62% lower) | RSI ≥ 70: SELL condition not met — close must rise to ≥ EUR 4.6344 (5.33% higher) | HOLD |
-| Stochastic RSI %K | %K = 0.000 | %K ≤ 0.20: BUY condition met now — current close EUR 4.4000 ≤ threshold EUR 4.4404 | %K ≥ 0.80: SELL condition not met — close must rise to ≥ EUR 4.4591 (1.34% higher) | BUY |
-| MACD crossover | MACD = -0.0172; signal = -0.0100; gap = -0.0072 | MACD > signal: BUY condition not met — close must rise to > EUR 4.5127 (2.56% higher) | MACD < signal: SELL condition met now — current close EUR 4.4000 < threshold EUR 4.5127 | SELL |
+| Bollinger price | Close = EUR 4.4000 | ≤ EUR 4.4100 | ≥ EUR 4.5460 | BUY |
+| RSI(14) | RSI = 33.46 | ≤ EUR 4.3728 | ≥ EUR 4.6344 | HOLD |
+| Stochastic RSI %K | %K = 0.000 | ≤ EUR 4.4404 | ≥ EUR 4.4591 | BUY |
+| MACD crossover | MACD = -0.0172<br>Signal = -0.0100<br>Gap = -0.0072 | > EUR 4.5127 | < EUR 4.5127 | SELL |
 | Consensus | BUY 2/4; SELL 1/4; neutral 1/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
 How to read MACD: a negative gap means MACD is below its signal line and therefore gives SELL now. The stated crossover price is the hypothetical latest close at which the gap becomes zero; above it MACD gives BUY, below it MACD gives SELL. RSI, Stochastic RSI and MACD price thresholds are indicative because all earlier closes are held fixed and only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
@@ -1952,12 +1952,12 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 **Current indicative prices and four-indicator signals**
 
-| Indicator | Current indicator value | Price required for BUY | Price required for SELL | Signal now |
+| Indicator | Current indicator value | BUY price | SELL price | Signal now |
 | --- | --- | --- | --- | --- |
-| Bollinger price | Close = EUR 1.8500 | BUY condition not met — close must fall to ≤ EUR 1.7524 (5.27% lower) | SELL condition not met — close must rise to ≥ EUR 1.8706 (1.11% higher) | HOLD |
-| RSI(14) | RSI = 78.10 | RSI ≤ 30: BUY condition not met — close must fall to ≤ EUR 1.7210 (6.97% lower) | RSI ≥ 70: SELL condition met now — current close EUR 1.8500 ≥ threshold EUR 1.8407 | SELL |
-| Stochastic RSI %K | %K = 0.855 | %K ≤ 0.20: BUY condition not met — close must fall to ≤ EUR 1.8395 (0.57% lower) | %K ≥ 0.80: SELL condition met now — current close EUR 1.8500 ≥ threshold EUR 1.8492 | SELL |
-| MACD crossover | MACD = 0.0219; signal = 0.0184; gap = +0.0035 | MACD > signal: BUY condition met now — current close EUR 1.8500 > threshold EUR 1.7959 | MACD < signal: SELL condition not met — close must fall to < EUR 1.7959 (2.92% lower) | BUY |
+| Bollinger price | Close = EUR 1.8500 | ≤ EUR 1.7524 | ≥ EUR 1.8706 | HOLD |
+| RSI(14) | RSI = 78.10 | ≤ EUR 1.7210 | ≥ EUR 1.8407 | SELL |
+| Stochastic RSI %K | %K = 0.855 | ≤ EUR 1.8395 | ≥ EUR 1.8492 | SELL |
+| MACD crossover | MACD = 0.0219<br>Signal = 0.0184<br>Gap = +0.0035 | > EUR 1.7959 | < EUR 1.7959 | BUY |
 | Consensus | BUY 1/4; SELL 2/4; neutral 1/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
 How to read MACD: a negative gap means MACD is below its signal line and therefore gives SELL now. The stated crossover price is the hypothetical latest close at which the gap becomes zero; above it MACD gives BUY, below it MACD gives SELL. RSI, Stochastic RSI and MACD price thresholds are indicative because all earlier closes are held fixed and only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
@@ -2198,12 +2198,12 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 **Current indicative prices and four-indicator signals**
 
-| Indicator | Current indicator value | Price required for BUY | Price required for SELL | Signal now |
+| Indicator | Current indicator value | BUY price | SELL price | Signal now |
 | --- | --- | --- | --- | --- |
-| Bollinger price | Close = EUR 0.6500 | BUY condition not met — close must fall to ≤ EUR 0.6419 (1.25% lower) | SELL condition met now — current close EUR 0.6500 ≥ threshold EUR 0.6498 | SELL |
-| RSI(14) | RSI = 66.63 | RSI ≤ 30: BUY condition not met — close must fall to ≤ EUR 0.6248 (3.87% lower) | RSI ≥ 70: SELL condition not met — close must rise to ≥ EUR 0.6527 (0.41% higher) | HOLD |
-| Stochastic RSI %K | %K = 0.599 | %K ≤ 0.20: BUY condition not met — close must fall to ≤ EUR 0.6461 (0.60% lower) | %K ≥ 0.80: SELL condition not met — close must rise to ≥ EUR 0.6530 (0.46% higher) | HOLD |
-| MACD crossover | MACD = 0.0032; signal = 0.0037; gap = -0.0005 | MACD > signal: BUY condition not met — close must rise to > EUR 0.6580 (1.23% higher) | MACD < signal: SELL condition met now — current close EUR 0.6500 < threshold EUR 0.6580 | SELL |
+| Bollinger price | Close = EUR 0.6500 | ≤ EUR 0.6419 | ≥ EUR 0.6498 | SELL |
+| RSI(14) | RSI = 66.63 | ≤ EUR 0.6248 | ≥ EUR 0.6527 | HOLD |
+| Stochastic RSI %K | %K = 0.599 | ≤ EUR 0.6461 | ≥ EUR 0.6530 | HOLD |
+| MACD crossover | MACD = 0.0032<br>Signal = 0.0037<br>Gap = -0.0005 | > EUR 0.6580 | < EUR 0.6580 | SELL |
 | Consensus | BUY 0/4; SELL 2/4; neutral 2/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
 How to read MACD: a negative gap means MACD is below its signal line and therefore gives SELL now. The stated crossover price is the hypothetical latest close at which the gap becomes zero; above it MACD gives BUY, below it MACD gives SELL. RSI, Stochastic RSI and MACD price thresholds are indicative because all earlier closes are held fixed and only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
@@ -2468,12 +2468,12 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 **Current indicative prices and four-indicator signals**
 
-| Indicator | Current indicator value | Price required for BUY | Price required for SELL | Signal now |
+| Indicator | Current indicator value | BUY price | SELL price | Signal now |
 | --- | --- | --- | --- | --- |
-| Bollinger price | Close = EUR 8.9000 | BUY condition not met — close must fall to ≤ EUR 8.8594 (0.46% lower) | SELL condition not met — close must rise to ≥ EUR 9.0886 (2.12% higher) | HOLD |
-| RSI(14) | RSI = 28.20 | RSI ≤ 30: BUY condition met now — current close EUR 8.9000 ≤ threshold EUR 8.9050 | RSI ≥ 70: SELL condition not met — close must rise to ≥ EUR 9.1737 (3.08% higher) | BUY |
-| Stochastic RSI %K | %K = 0.254 | %K ≤ 0.20: BUY condition not met — close must fall to ≤ EUR 8.8938 (0.07% lower) | %K ≥ 0.80: SELL condition not met — close must rise to ≥ EUR 8.9272 (0.31% higher) | HOLD |
-| MACD crossover | MACD = -0.0432; signal = -0.0374; gap = -0.0058 | MACD > signal: BUY condition not met — close must rise to > EUR 8.9906 (1.02% higher) | MACD < signal: SELL condition met now — current close EUR 8.9000 < threshold EUR 8.9906 | SELL |
+| Bollinger price | Close = EUR 8.9000 | ≤ EUR 8.8594 | ≥ EUR 9.0886 | HOLD |
+| RSI(14) | RSI = 28.20 | ≤ EUR 8.9050 | ≥ EUR 9.1737 | BUY |
+| Stochastic RSI %K | %K = 0.254 | ≤ EUR 8.8938 | ≥ EUR 8.9272 | HOLD |
+| MACD crossover | MACD = -0.0432<br>Signal = -0.0374<br>Gap = -0.0058 | > EUR 8.9906 | < EUR 8.9906 | SELL |
 | Consensus | BUY 1/4; SELL 1/4; neutral 2/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
 How to read MACD: a negative gap means MACD is below its signal line and therefore gives SELL now. The stated crossover price is the hypothetical latest close at which the gap becomes zero; above it MACD gives BUY, below it MACD gives SELL. RSI, Stochastic RSI and MACD price thresholds are indicative because all earlier closes are held fixed and only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
@@ -2731,12 +2731,12 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 **Current indicative prices and four-indicator signals**
 
-| Indicator | Current indicator value | Price required for BUY | Price required for SELL | Signal now |
+| Indicator | Current indicator value | BUY price | SELL price | Signal now |
 | --- | --- | --- | --- | --- |
-| Bollinger price | Close = EUR 1.7000 | BUY condition not met — close must fall to ≤ EUR 1.5696 (7.67% lower) | SELL condition not met — close must rise to ≥ EUR 1.7844 (4.97% higher) | HOLD |
-| RSI(14) | RSI = 60.14 | RSI ≤ 30: BUY condition not met — close must fall to ≤ EUR 1.5087 (11.25% lower) | RSI ≥ 70: SELL condition not met — close must rise to ≥ EUR 1.7559 (3.29% higher) | HOLD |
-| Stochastic RSI %K | %K = 0.000 | %K ≤ 0.20: BUY condition met now — current close EUR 1.7000 ≤ threshold EUR 1.7266 | %K ≥ 0.80: SELL condition not met — close must rise to ≥ EUR 1.8383 (8.14% higher) | BUY |
-| MACD crossover | MACD = 0.0336; signal = 0.0370; gap = -0.0034 | MACD > signal: BUY condition not met — close must rise to > EUR 1.7528 (3.10% higher) | MACD < signal: SELL condition met now — current close EUR 1.7000 < threshold EUR 1.7528 | SELL |
+| Bollinger price | Close = EUR 1.7000 | ≤ EUR 1.5696 | ≥ EUR 1.7844 | HOLD |
+| RSI(14) | RSI = 60.14 | ≤ EUR 1.5087 | ≥ EUR 1.7559 | HOLD |
+| Stochastic RSI %K | %K = 0.000 | ≤ EUR 1.7266 | ≥ EUR 1.8383 | BUY |
+| MACD crossover | MACD = 0.0336<br>Signal = 0.0370<br>Gap = -0.0034 | > EUR 1.7528 | < EUR 1.7528 | SELL |
 | Consensus | BUY 1/4; SELL 1/4; neutral 2/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
 How to read MACD: a negative gap means MACD is below its signal line and therefore gives SELL now. The stated crossover price is the hypothetical latest close at which the gap becomes zero; above it MACD gives BUY, below it MACD gives SELL. RSI, Stochastic RSI and MACD price thresholds are indicative because all earlier closes are held fixed and only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
@@ -3024,12 +3024,12 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 **Current indicative prices and four-indicator signals**
 
-| Indicator | Current indicator value | Price required for BUY | Price required for SELL | Signal now |
+| Indicator | Current indicator value | BUY price | SELL price | Signal now |
 | --- | --- | --- | --- | --- |
-| Bollinger price | Close = EUR 19.3500 | BUY condition met now — current close EUR 19.3500 ≤ threshold EUR 19.3537 | SELL condition not met — close must rise to ≥ EUR 19.6563 (1.58% higher) | BUY |
-| RSI(14) | RSI = 41.29 | RSI ≤ 30: BUY condition not met — close must fall to ≤ EUR 18.9854 (1.88% lower) | RSI ≥ 70: SELL condition not met — close must rise to ≥ EUR 20.0771 (3.76% higher) | HOLD |
-| Stochastic RSI %K | %K = 0.000 | %K ≤ 0.20: BUY condition met now — current close EUR 19.3500 ≤ threshold EUR 19.4424 | %K ≥ 0.80: SELL condition not met — close must rise to ≥ EUR 19.5943 (1.26% higher) | BUY |
-| MACD crossover | MACD = -0.0241; signal = -0.0098; gap = -0.0143 | MACD > signal: BUY condition not met — close must rise to > EUR 19.5736 (1.16% higher) | MACD < signal: SELL condition met now — current close EUR 19.3500 < threshold EUR 19.5736 | SELL |
+| Bollinger price | Close = EUR 19.3500 | ≤ EUR 19.3537 | ≥ EUR 19.6563 | BUY |
+| RSI(14) | RSI = 41.29 | ≤ EUR 18.9854 | ≥ EUR 20.0771 | HOLD |
+| Stochastic RSI %K | %K = 0.000 | ≤ EUR 19.4424 | ≥ EUR 19.5943 | BUY |
+| MACD crossover | MACD = -0.0241<br>Signal = -0.0098<br>Gap = -0.0143 | > EUR 19.5736 | < EUR 19.5736 | SELL |
 | Consensus | BUY 2/4; SELL 1/4; neutral 1/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
 How to read MACD: a negative gap means MACD is below its signal line and therefore gives SELL now. The stated crossover price is the hypothetical latest close at which the gap becomes zero; above it MACD gives BUY, below it MACD gives SELL. RSI, Stochastic RSI and MACD price thresholds are indicative because all earlier closes are held fixed and only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
@@ -3290,12 +3290,12 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 **Current indicative prices and four-indicator signals**
 
-| Indicator | Current indicator value | Price required for BUY | Price required for SELL | Signal now |
+| Indicator | Current indicator value | BUY price | SELL price | Signal now |
 | --- | --- | --- | --- | --- |
-| Bollinger price | Close = EUR 5.3600 | BUY condition not met — close must fall to ≤ EUR 5.0664 (5.48% lower) | SELL condition not met — close must rise to ≥ EUR 5.4716 (2.08% higher) | HOLD |
-| RSI(14) | RSI = 54.56 | RSI ≤ 30: BUY condition not met — close must fall to ≤ EUR 4.6391 (13.45% lower) | RSI ≥ 70: SELL condition not met — close must rise to ≥ EUR 5.8969 (10.02% higher) | HOLD |
-| Stochastic RSI %K | %K = 0.296 | %K ≤ 0.20: BUY condition not met — close must fall to ≤ EUR 5.3000 (1.12% lower) | %K ≥ 0.80: SELL condition not met — close must rise to ≥ EUR 5.8561 (9.26% higher) | HOLD |
-| MACD crossover | MACD = 0.0430; signal = 0.0367; gap = +0.0063 | MACD > signal: BUY condition met now — current close EUR 5.3600 > threshold EUR 5.2620 | MACD < signal: SELL condition not met — close must fall to < EUR 5.2620 (1.83% lower) | BUY |
+| Bollinger price | Close = EUR 5.3600 | ≤ EUR 5.0664 | ≥ EUR 5.4716 | HOLD |
+| RSI(14) | RSI = 54.56 | ≤ EUR 4.6391 | ≥ EUR 5.8969 | HOLD |
+| Stochastic RSI %K | %K = 0.296 | ≤ EUR 5.3000 | ≥ EUR 5.8561 | HOLD |
+| MACD crossover | MACD = 0.0430<br>Signal = 0.0367<br>Gap = +0.0063 | > EUR 5.2620 | < EUR 5.2620 | BUY |
 | Consensus | BUY 1/4; SELL 0/4; neutral 3/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
 How to read MACD: a negative gap means MACD is below its signal line and therefore gives SELL now. The stated crossover price is the hypothetical latest close at which the gap becomes zero; above it MACD gives BUY, below it MACD gives SELL. RSI, Stochastic RSI and MACD price thresholds are indicative because all earlier closes are held fixed and only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
@@ -3556,12 +3556,12 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 **Current indicative prices and four-indicator signals**
 
-| Indicator | Current indicator value | Price required for BUY | Price required for SELL | Signal now |
+| Indicator | Current indicator value | BUY price | SELL price | Signal now |
 | --- | --- | --- | --- | --- |
-| Bollinger price | Close = EUR 2.3850 | BUY condition not met — close must fall to ≤ EUR 2.2932 (3.85% lower) | SELL condition not met — close must rise to ≥ EUR 2.3948 (0.41% higher) | HOLD |
-| RSI(14) | RSI = 62.27 | RSI ≤ 30: BUY condition not met — close must fall to ≤ EUR 2.2308 (6.47% lower) | RSI ≥ 70: SELL condition not met — close must rise to ≥ EUR 2.4251 (1.68% higher) | HOLD |
-| Stochastic RSI %K | %K = 0.669 | %K ≤ 0.20: BUY condition not met — close must fall to ≤ EUR 2.3584 (1.12% lower) | %K ≥ 0.80: SELL condition not met — close must rise to ≥ EUR 2.3957 (0.45% higher) | HOLD |
-| MACD crossover | MACD = 0.0115; signal = 0.0067; gap = +0.0049 | MACD > signal: BUY condition met now — current close EUR 2.3850 > threshold EUR 2.3088 | MACD < signal: SELL condition not met — close must fall to < EUR 2.3088 (3.19% lower) | BUY |
+| Bollinger price | Close = EUR 2.3850 | ≤ EUR 2.2932 | ≥ EUR 2.3948 | HOLD |
+| RSI(14) | RSI = 62.27 | ≤ EUR 2.2308 | ≥ EUR 2.4251 | HOLD |
+| Stochastic RSI %K | %K = 0.669 | ≤ EUR 2.3584 | ≥ EUR 2.3957 | HOLD |
+| MACD crossover | MACD = 0.0115<br>Signal = 0.0067<br>Gap = +0.0049 | > EUR 2.3088 | < EUR 2.3088 | BUY |
 | Consensus | BUY 1/4; SELL 0/4; neutral 3/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
 How to read MACD: a negative gap means MACD is below its signal line and therefore gives SELL now. The stated crossover price is the hypothetical latest close at which the gap becomes zero; above it MACD gives BUY, below it MACD gives SELL. RSI, Stochastic RSI and MACD price thresholds are indicative because all earlier closes are held fixed and only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
@@ -3826,12 +3826,12 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 **Current indicative prices and four-indicator signals**
 
-| Indicator | Current indicator value | Price required for BUY | Price required for SELL | Signal now |
+| Indicator | Current indicator value | BUY price | SELL price | Signal now |
 | --- | --- | --- | --- | --- |
-| Bollinger price | Close = EUR 16.2000 | BUY condition not met — close must fall to ≤ EUR 16.0037 (1.21% lower) | SELL condition not met — close must rise to ≥ EUR 17.1263 (5.72% higher) | HOLD |
-| RSI(14) | RSI = 42.00 | RSI ≤ 30: BUY condition not met — close must fall to ≤ EUR 15.4157 (4.84% lower) | RSI ≥ 70: SELL condition not met — close must rise to ≥ EUR 17.8304 (10.06% higher) | HOLD |
-| Stochastic RSI %K | %K = 0.000 | %K ≤ 0.20: BUY condition met now — current close EUR 16.2000 ≤ threshold EUR 16.4001 | %K ≥ 0.80: SELL condition not met — close must rise to ≥ EUR 16.5834 (2.37% higher) | BUY |
-| MACD crossover | MACD = -0.0618; signal = 0.0102; gap = -0.0719 | MACD > signal: BUY condition not met — close must rise to > EUR 17.3273 (6.96% higher) | MACD < signal: SELL condition met now — current close EUR 16.2000 < threshold EUR 17.3273 | SELL |
+| Bollinger price | Close = EUR 16.2000 | ≤ EUR 16.0037 | ≥ EUR 17.1263 | HOLD |
+| RSI(14) | RSI = 42.00 | ≤ EUR 15.4157 | ≥ EUR 17.8304 | HOLD |
+| Stochastic RSI %K | %K = 0.000 | ≤ EUR 16.4001 | ≥ EUR 16.5834 | BUY |
+| MACD crossover | MACD = -0.0618<br>Signal = 0.0102<br>Gap = -0.0719 | > EUR 17.3273 | < EUR 17.3273 | SELL |
 | Consensus | BUY 1/4; SELL 1/4; neutral 2/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
 How to read MACD: a negative gap means MACD is below its signal line and therefore gives SELL now. The stated crossover price is the hypothetical latest close at which the gap becomes zero; above it MACD gives BUY, below it MACD gives SELL. RSI, Stochastic RSI and MACD price thresholds are indicative because all earlier closes are held fixed and only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
@@ -4076,12 +4076,12 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 **Current indicative prices and four-indicator signals**
 
-| Indicator | Current indicator value | Price required for BUY | Price required for SELL | Signal now |
+| Indicator | Current indicator value | BUY price | SELL price | Signal now |
 | --- | --- | --- | --- | --- |
-| Bollinger price | Close = EUR 1.2000 | BUY condition not met — close must fall to ≤ EUR 1.1991 (0.08% lower) | SELL condition not met — close must rise to ≥ EUR 1.2177 (1.48% higher) | HOLD |
-| RSI(14) | RSI = 40.77 | RSI ≤ 30: BUY condition not met — close must fall to ≤ EUR 1.1773 (1.89% lower) | RSI ≥ 70: SELL condition not met — close must rise to ≥ EUR 1.2563 (4.69% higher) | HOLD |
-| Stochastic RSI %K | %K = 0.478 | %K ≤ 0.20: BUY condition not met — close must fall to ≤ EUR 1.1917 (0.69% lower) | %K ≥ 0.80: SELL condition not met — close must rise to ≥ EUR 1.2070 (0.58% higher) | HOLD |
-| MACD crossover | MACD = -0.0043; signal = -0.0042; gap = -0.0001 | MACD > signal: BUY condition not met — close must rise to > EUR 1.2014 (0.12% higher) | MACD < signal: SELL condition met now — current close EUR 1.2000 < threshold EUR 1.2014 | SELL |
+| Bollinger price | Close = EUR 1.2000 | ≤ EUR 1.1991 | ≥ EUR 1.2177 | HOLD |
+| RSI(14) | RSI = 40.77 | ≤ EUR 1.1773 | ≥ EUR 1.2563 | HOLD |
+| Stochastic RSI %K | %K = 0.478 | ≤ EUR 1.1917 | ≥ EUR 1.2070 | HOLD |
+| MACD crossover | MACD = -0.0043<br>Signal = -0.0042<br>Gap = -0.0001 | > EUR 1.2014 | < EUR 1.2014 | SELL |
 | Consensus | BUY 0/4; SELL 1/4; neutral 3/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
 How to read MACD: a negative gap means MACD is below its signal line and therefore gives SELL now. The stated crossover price is the hypothetical latest close at which the gap becomes zero; above it MACD gives BUY, below it MACD gives SELL. RSI, Stochastic RSI and MACD price thresholds are indicative because all earlier closes are held fixed and only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
@@ -4336,12 +4336,12 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 **Current indicative prices and four-indicator signals**
 
-| Indicator | Current indicator value | Price required for BUY | Price required for SELL | Signal now |
+| Indicator | Current indicator value | BUY price | SELL price | Signal now |
 | --- | --- | --- | --- | --- |
-| Bollinger price | Close = EUR 1.7750 | BUY condition not met — close must fall to ≤ EUR 1.7470 (1.58% lower) | SELL condition not met — close must rise to ≥ EUR 1.8240 (2.76% higher) | HOLD |
-| RSI(14) | RSI = 51.45 | RSI ≤ 30: BUY condition not met — close must fall to ≤ EUR 1.7149 (3.38% lower) | RSI ≥ 70: SELL condition not met — close must rise to ≥ EUR 1.8327 (3.25% higher) | HOLD |
-| Stochastic RSI %K | %K = 0.135 | %K ≤ 0.20: BUY condition met now — current close EUR 1.7750 ≤ threshold EUR 1.7776 | %K ≥ 0.80: SELL condition not met — close must rise to ≥ EUR 1.8112 (2.04% higher) | BUY |
-| MACD crossover | MACD = 0.0052; signal = 0.0093; gap = -0.0040 | MACD > signal: BUY condition not met — close must rise to > EUR 1.8381 (3.56% higher) | MACD < signal: SELL condition met now — current close EUR 1.7750 < threshold EUR 1.8381 | SELL |
+| Bollinger price | Close = EUR 1.7750 | ≤ EUR 1.7470 | ≥ EUR 1.8240 | HOLD |
+| RSI(14) | RSI = 51.45 | ≤ EUR 1.7149 | ≥ EUR 1.8327 | HOLD |
+| Stochastic RSI %K | %K = 0.135 | ≤ EUR 1.7776 | ≥ EUR 1.8112 | BUY |
+| MACD crossover | MACD = 0.0052<br>Signal = 0.0093<br>Gap = -0.0040 | > EUR 1.8381 | < EUR 1.8381 | SELL |
 | Consensus | BUY 1/4; SELL 1/4; neutral 2/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
 How to read MACD: a negative gap means MACD is below its signal line and therefore gives SELL now. The stated crossover price is the hypothetical latest close at which the gap becomes zero; above it MACD gives BUY, below it MACD gives SELL. RSI, Stochastic RSI and MACD price thresholds are indicative because all earlier closes are held fixed and only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
@@ -4582,12 +4582,12 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 **Current indicative prices and four-indicator signals**
 
-| Indicator | Current indicator value | Price required for BUY | Price required for SELL | Signal now |
+| Indicator | Current indicator value | BUY price | SELL price | Signal now |
 | --- | --- | --- | --- | --- |
-| Bollinger price | Close = EUR 4.4100 | BUY condition not met — close must fall to ≤ EUR 4.4023 (0.18% lower) | SELL condition not met — close must rise to ≥ EUR 4.4447 (0.79% higher) | HOLD |
-| RSI(14) | RSI = 49.23 | RSI ≤ 30: BUY condition not met — close must fall to ≤ EUR 4.3258 (1.91% lower) | RSI ≥ 70: SELL condition not met — close must rise to ≥ EUR 4.5009 (2.06% higher) | HOLD |
-| Stochastic RSI %K | %K = 0.297 | %K ≤ 0.20: BUY condition not met — close must fall to ≤ EUR 4.4068 (0.07% lower) | %K ≥ 0.80: SELL condition not met — close must rise to ≥ EUR 4.4278 (0.40% higher) | HOLD |
-| MACD crossover | MACD = 0.0043; signal = 0.0098; gap = -0.0055 | MACD > signal: BUY condition not met — close must rise to > EUR 4.4965 (1.96% higher) | MACD < signal: SELL condition met now — current close EUR 4.4100 < threshold EUR 4.4965 | SELL |
+| Bollinger price | Close = EUR 4.4100 | ≤ EUR 4.4023 | ≥ EUR 4.4447 | HOLD |
+| RSI(14) | RSI = 49.23 | ≤ EUR 4.3258 | ≥ EUR 4.5009 | HOLD |
+| Stochastic RSI %K | %K = 0.297 | ≤ EUR 4.4068 | ≥ EUR 4.4278 | HOLD |
+| MACD crossover | MACD = 0.0043<br>Signal = 0.0098<br>Gap = -0.0055 | > EUR 4.4965 | < EUR 4.4965 | SELL |
 | Consensus | BUY 0/4; SELL 1/4; neutral 3/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
 How to read MACD: a negative gap means MACD is below its signal line and therefore gives SELL now. The stated crossover price is the hypothetical latest close at which the gap becomes zero; above it MACD gives BUY, below it MACD gives SELL. RSI, Stochastic RSI and MACD price thresholds are indicative because all earlier closes are held fixed and only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
@@ -4829,12 +4829,12 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 
 **Current indicative prices and four-indicator signals**
 
-| Indicator | Current indicator value | Price required for BUY | Price required for SELL | Signal now |
+| Indicator | Current indicator value | BUY price | SELL price | Signal now |
 | --- | --- | --- | --- | --- |
-| Bollinger price | Close = EUR 0.8820 | BUY condition not met — close must fall to ≤ EUR 0.8688 (1.49% lower) | SELL condition not met — close must rise to ≥ EUR 0.9079 (2.93% higher) | HOLD |
-| RSI(14) | RSI = 45.19 | RSI ≤ 30: BUY condition not met — close must fall to ≤ EUR 0.8618 (2.29% lower) | RSI ≥ 70: SELL condition not met — close must rise to ≥ EUR 0.9137 (3.59% higher) | HOLD |
-| Stochastic RSI %K | %K = 0.453 | %K ≤ 0.20: BUY condition not met — close must fall to ≤ EUR 0.8790 (0.35% lower) | %K ≥ 0.80: SELL condition not met — close must rise to ≥ EUR 0.8855 (0.40% higher) | HOLD |
-| MACD crossover | MACD = -0.0021; signal = -0.0015; gap = -0.0006 | MACD > signal: BUY condition not met — close must rise to > EUR 0.8911 (1.03% higher) | MACD < signal: SELL condition met now — current close EUR 0.8820 < threshold EUR 0.8911 | SELL |
+| Bollinger price | Close = EUR 0.8820 | ≤ EUR 0.8688 | ≥ EUR 0.9079 | HOLD |
+| RSI(14) | RSI = 45.19 | ≤ EUR 0.8618 | ≥ EUR 0.9137 | HOLD |
+| Stochastic RSI %K | %K = 0.453 | ≤ EUR 0.8790 | ≥ EUR 0.8855 | HOLD |
+| MACD crossover | MACD = -0.0021<br>Signal = -0.0015<br>Gap = -0.0006 | > EUR 0.8911 | < EUR 0.8911 | SELL |
 | Consensus | BUY 0/4; SELL 1/4; neutral 3/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
 How to read MACD: a negative gap means MACD is below its signal line and therefore gives SELL now. The stated crossover price is the hypothetical latest close at which the gap becomes zero; above it MACD gives BUY, below it MACD gives SELL. RSI, Stochastic RSI and MACD price thresholds are indicative because all earlier closes are held fixed and only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
