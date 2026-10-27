@@ -85,13 +85,23 @@ img { display:block; max-width:100%; height:auto; margin:1rem auto; border:1px s
 .frontier-select-help { color:#607080; font-size:.76rem; }
 .frontier-canvas { width:100%; height:620px; border:1px solid var(--line); border-radius:5px; cursor:crosshair; }
 .frontier-status { margin:.45rem 0 0; color:#455f70; font-size:.84rem; font-variant-numeric:tabular-nums; }
+.cumulative-explorer { margin:1rem 0; padding:12px; border:1px solid #bfd1d9; border-radius:8px; background:#fff; }
+.cumulative-controls { display:grid; grid-template-columns:minmax(260px,1fr) auto auto; gap:12px; align-items:end; margin-bottom:10px; }
+.cumulative-multiselect-wrap { display:grid; gap:.25rem; color:#29485a; font-size:.86rem; }
+.cumulative-multiselect { width:100%; min-height:190px; padding:.35rem; border:1px solid #8aa6b2; border-radius:6px; background:white; }
+.cumulative-multiselect optgroup { color:#173246; font-weight:700; }
+.cumulative-multiselect option { color:#29485a; font-weight:400; padding:.18rem .35rem; }
+.cumulative-controls button { min-height:35px; border:1px solid #8aa6b2; border-radius:5px; color:#174d61; background:#eef7f8; cursor:pointer; }
+.cumulative-canvas { width:100%; height:690px; border:1px solid var(--line); border-radius:5px; }
+.cumulative-status { margin:.45rem 0 0; color:#455f70; font-size:.84rem; font-variant-numeric:tabular-nums; }
 @media(max-width:900px) { .dominance-controls { grid-template-columns:1fr 1fr; } .dominance-canvas { height:675px; } }
+@media(max-width:900px) { .cumulative-controls { grid-template-columns:1fr 1fr; } .cumulative-multiselect-wrap { grid-column:1/-1; } }
 a { color:var(--accent); }
 @media(max-width:700px) { main { width:100%; margin:0; padding:22px 8px; border-radius:0; } h1 { font-size:1.7rem; } .add-one-comparison table { font-size:.62rem; } .add-one-comparison th { height:128px; } }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-27 16:01 (Europe/Vilnius); return analysis through 2026-10-23; valuation prices through 2026-10-23
+# Baltic investment plan - updated 2026-10-27 16:03 (Europe/Vilnius); return analysis through 2026-10-23; valuation prices through 2026-10-23
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -5555,10 +5565,12 @@ The rolling index shows when cross-series connectedness rises or falls. Peaks in
 
 </details>
 
-<details markdown="1">
-<summary><strong>Figure 2.h. Cumulative value and drawdowns</strong></summary>
+<details markdown="1" class="cumulative-components" open>
+<summary><strong>Figure 2.j. Interactive cumulative value and drawdowns</strong></summary>
 
-![Scenario cumulative returns and drawdowns](figures/scenario_cumulative_drawdown.png)
+Select any combination of portfolios, S&P 500 and individual shares. The upper panel shows the value of one monetary unit invested at the common starting date; the lower panel shows drawdown from each series' previous peak. Current and both update scenarios are selected initially.
+
+<div class="cumulative-explorer"><p>Loading the interactive cumulative-value and drawdown comparison...</p></div>
 
 </details>
 
@@ -5925,6 +5937,56 @@ function initialiseFrontierExplorer(box) {
   }).catch(err=>{box.innerHTML=`<p>Interactive frontier could not be loaded: ${err.message}</p>`;box.dataset.loaded='';});
 }
 document.querySelectorAll('details.frontier-components').forEach(function(d){d.addEventListener('toggle',function(){if(d.open){const box=d.querySelector('.frontier-explorer');if(box)initialiseFrontierExplorer(box);}});if(d.open){const box=d.querySelector('.frontier-explorer');if(box)initialiseFrontierExplorer(box);}});
-document.querySelectorAll('details.report-section').forEach(function(section){section.addEventListener('toggle',function(){if(!section.open)return;section.querySelectorAll('details.dominance-components[open] .dominance-explorer').forEach(initialiseDominanceExplorer);section.querySelectorAll('details.frontier-components[open] .frontier-explorer').forEach(initialiseFrontierExplorer);});});
+
+function initialiseCumulativeExplorer(box) {
+  if(box.dataset.loaded)return;
+  box.dataset.loaded='loading';
+  fetch('interactive/cumulative_drawdown.json').then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json();}).then(data=>{
+    const names=Object.keys(data.series), types=data.series_types||{};
+    const portfolios=names.filter(x=>types[x]==='portfolio'), shares=names.filter(x=>types[x]==='share');
+    const preferred=['Current','Baltic_NetSD','curent_update_baltic','SP500'];
+    const orderedPortfolios=[...preferred.filter(x=>portfolios.includes(x)),...portfolios.filter(x=>!preferred.includes(x))];
+    const defaults=new Set(['Current','Baltic_NetSD','curent_update_baltic']);
+    box.innerHTML=`<div class="cumulative-controls">
+      <label class="cumulative-multiselect-wrap">Displayed portfolios, benchmark and shares
+        <select class="cumulative-multiselect" multiple size="10">
+          <optgroup label="Portfolios and benchmark">${orderedPortfolios.map(x=>`<option value="${x}"${defaults.has(x)?' selected':''}>${x}</option>`).join('')}</optgroup>
+          <optgroup label="Individual shares">${shares.map(x=>`<option value="${x}">${x}</option>`).join('')}</optgroup>
+        </select><small>Use Ctrl (Windows) or Cmd (Mac) to select several entries.</small>
+      </label><button class="cum-reset" type="button">Reset selection</button><button class="cum-save" type="button">Save high-resolution PNG</button>
+    </div><canvas class="cumulative-canvas"></canvas><p class="cumulative-status"></p>`;
+    const select=box.querySelector('.cumulative-multiselect'), canvas=box.querySelector('canvas'), status=box.querySelector('.cumulative-status');
+    function styleFor(name,index){
+      if(name==='Current')return{colour:'#d7191c',dash:[],width:3.4};
+      if(name==='Baltic_NetSD')return{colour:'#0072b2',dash:[10,4],width:3};
+      if(name==='curent_update_baltic')return{colour:'#009e73',dash:[2,4],width:3};
+      if(name==='SP500')return{colour:'#7b3294',dash:[12,4,2,4],width:2.8};
+      return{colour:palette[index%palette.length],dash:linePatterns[index%linePatterns.length],width:2};
+    }
+    function render(){
+      const selected=[...select.selectedOptions].map(o=>o.value);
+      if(!selected.length){status.textContent='Select at least one portfolio or share.';return;}
+      const ratio=Math.min(Math.max(window.devicePixelRatio||1,2),3), rect=canvas.getBoundingClientRect();
+      canvas.width=Math.max(900,Math.round(rect.width*ratio));canvas.height=Math.round(rect.height*ratio);
+      const ctx=canvas.getContext('2d');ctx.setTransform(ratio,0,0,ratio,0,0);const W=canvas.width/ratio,H=canvas.height/ratio;
+      ctx.clearRect(0,0,W,H);ctx.font='12px system-ui';
+      const L=72,R=24,T=Math.max(58,28+Math.ceil(selected.length/4)*19),B=48,G=56,panelH=(H-T-B-G)/2;
+      const upper={l:L,r:W-R,t:T,b:T+panelH},lower={l:L,r:W-R,t:T+panelH+G,b:H-B};
+      const n=data.dates.length, dates=data.dates.map(x=>new Date(x+'T00:00:00'));
+      function range(key){let mn=Infinity,mx=-Infinity;selected.forEach(name=>data.series[name][key].forEach(v=>{mn=Math.min(mn,v);mx=Math.max(mx,v);}));if(mx===mn){mx+=1;mn-=1}const pad=(mx-mn)*.06;return[mn-pad,mx+pad];}
+      function axes(p,yr,label,showDates){ctx.strokeStyle='#9aabb5';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(p.l,p.t);ctx.lineTo(p.l,p.b);ctx.lineTo(p.r,p.b);ctx.stroke();ctx.fillStyle='#263d4b';ctx.font='bold 12px system-ui';ctx.fillText(label,p.l,p.t-9);ctx.font='12px system-ui';for(let j=0;j<=5;j++){const v=yr[0]+(yr[1]-yr[0])*j/5,y=p.b-(v-yr[0])/(yr[1]-yr[0])*(p.b-p.t);ctx.fillText(v.toFixed(label.startsWith('Drawdown')?2:3),5,y+4);ctx.strokeStyle='#e1e8eb';ctx.beginPath();ctx.moveTo(p.l,y);ctx.lineTo(p.r,y);ctx.stroke();}if(showDates){for(let j=0;j<=6;j++){const i=Math.round((n-1)*j/6),x=p.l+(p.r-p.l)*j/6;ctx.fillStyle='#344c5a';ctx.fillText(data.dates[i].slice(0,7),x-23,p.b+18);}}}
+      function plot(p,key,yr){selected.forEach((name,index)=>{const values=data.series[name][key],s=styleFor(name,index);ctx.strokeStyle=s.colour;ctx.setLineDash(s.dash);ctx.lineWidth=s.width;ctx.beginPath();values.forEach((v,i)=>{const x=p.l+(p.r-p.l)*i/(n-1),y=p.b-(v-yr[0])/(yr[1]-yr[0])*(p.b-p.t);if(i===0)ctx.moveTo(x,y);else ctx.lineTo(x,y);});ctx.stroke();});ctx.setLineDash([]);}
+      const wealthRange=range('cumulative'),drawRange=range('drawdown');axes(upper,wealthRange,'Cumulative value of 1 monetary unit',false);plot(upper,'cumulative',wealthRange);axes(lower,drawRange,'Drawdown from previous peak',true);plot(lower,'drawdown',drawRange);
+      selected.forEach((name,j)=>{const s=styleFor(name,j),x=L+(j%4)*Math.max(150,(W-L-R)/4),y=18+Math.floor(j/4)*19;ctx.strokeStyle=s.colour;ctx.setLineDash(s.dash);ctx.lineWidth=s.width;ctx.beginPath();ctx.moveTo(x,y);ctx.lineTo(x+24,y);ctx.stroke();ctx.setLineDash([]);ctx.fillStyle='#263d4b';ctx.font='12px system-ui';ctx.fillText(name,x+30,y+4);});
+      status.textContent=selected.map(name=>{const s=data.series[name],last=s.cumulative.length-1;return`${name}: final value ${s.cumulative[last].toFixed(3)}, maximum drawdown ${(100*Math.min(...s.drawdown)).toFixed(2)}%`;}).join(' | ');
+    }
+    select.addEventListener('input',render);
+    box.querySelector('.cum-reset').addEventListener('click',()=>{[...select.options].forEach(o=>o.selected=defaults.has(o.value));render();});
+    box.querySelector('.cum-save').addEventListener('click',()=>{const a=document.createElement('a');a.download='interactive_cumulative_value_drawdowns.png';a.href=canvas.toDataURL('image/png');a.click();});
+    window.addEventListener('resize',render);render();box.dataset.loaded='yes';
+  }).catch(err=>{box.innerHTML=`<p>Interactive graph could not be loaded: ${err.message}</p>`;box.dataset.loaded='';});
+}
+document.querySelectorAll('details.cumulative-components').forEach(function(d){d.addEventListener('toggle',function(){if(d.open){const box=d.querySelector('.cumulative-explorer');if(box)initialiseCumulativeExplorer(box);}});if(d.open){const box=d.querySelector('.cumulative-explorer');if(box)initialiseCumulativeExplorer(box);}});
+document.querySelectorAll('details.report-section').forEach(function(section){section.addEventListener('toggle',function(){if(!section.open)return;section.querySelectorAll('details.dominance-components[open] .dominance-explorer').forEach(initialiseDominanceExplorer);section.querySelectorAll('details.frontier-components[open] .frontier-explorer').forEach(initialiseFrontierExplorer);section.querySelectorAll('details.cumulative-components[open] .cumulative-explorer').forEach(initialiseCumulativeExplorer);});});
 </script>
 </body></html>
