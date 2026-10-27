@@ -79,7 +79,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-27 08:07 (Europe/Vilnius); return analysis through 2026-10-23; valuation prices through 2026-10-23
+# Baltic investment plan - updated 2026-10-27 08:11 (Europe/Vilnius); return analysis through 2026-10-23; valuation prices through 2026-10-23
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -234,10 +234,10 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 | Bollinger price | Close = EUR 0.4790 | ≤ EUR 0.4764 | ≥ EUR 0.4911 | HOLD |
 | RSI(14) | RSI = 36.14 | ≤ EUR 0.4772 | ≥ EUR 0.5026 | HOLD |
 | Stochastic RSI %K | %K = 0.422 | ≤ EUR 0.4779 | ≥ EUR 0.4812 | HOLD |
-| MACD crossover | MACD = -0.0030<br>Signal = -0.0024<br>Gap = -0.0005 | > EUR 0.4875 | < EUR 0.4875 | SELL |
+| MACD crossover | MACD = -0.0030<br>Signal = -0.0024<br>Gap = -0.0005<br>Bullish crossover close ≈ EUR 0.4875 | — | — | SELL |
 | Consensus | BUY 0/4; SELL 1/4; neutral 3/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
-How to read MACD: a negative gap means MACD is below its signal line and therefore gives SELL now. The stated crossover price is the hypothetical latest close at which the gap becomes zero; above it MACD gives BUY, below it MACD gives SELL. RSI, Stochastic RSI and MACD price thresholds are indicative because all earlier closes are held fixed and only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
+MACD does not define an acceptable purchase or sale price. Its bullish crossover close is only the hypothetical latest close at which MACD would cross above its signal line if all earlier closes stayed unchanged. A crossover above the current price means that upward momentum still needs confirmation; it does not mean that the investor should wait and buy at that higher price. RSI and Stochastic RSI price thresholds are also indicative because only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -481,10 +481,10 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 | Bollinger price | Close = EUR 15.7500 | ≤ EUR 15.0987 | ≥ EUR 15.8663 | HOLD |
 | RSI(14) | RSI = 61.54 | ≤ EUR 14.5260 | ≥ EUR 16.0117 | HOLD |
 | Stochastic RSI %K | %K = 0.492 | ≤ EUR 15.5507 | ≥ EUR 16.0577 | HOLD |
-| MACD crossover | MACD = 0.1149<br>Signal = 0.0686<br>Gap = +0.0463 | > EUR 15.0240 | < EUR 15.0240 | BUY |
+| MACD crossover | MACD = 0.1149<br>Signal = 0.0686<br>Gap = +0.0463<br>Bullish crossover close ≈ EUR 15.0240 | — | — | BUY |
 | Consensus | BUY 1/4; SELL 0/4; neutral 3/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
-How to read MACD: a negative gap means MACD is below its signal line and therefore gives SELL now. The stated crossover price is the hypothetical latest close at which the gap becomes zero; above it MACD gives BUY, below it MACD gives SELL. RSI, Stochastic RSI and MACD price thresholds are indicative because all earlier closes are held fixed and only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
+MACD does not define an acceptable purchase or sale price. Its bullish crossover close is only the hypothetical latest close at which MACD would cross above its signal line if all earlier closes stayed unchanged. A crossover above the current price means that upward momentum still needs confirmation; it does not mean that the investor should wait and buy at that higher price. RSI and Stochastic RSI price thresholds are also indicative because only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -727,10 +727,10 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 | Bollinger price | Close = EUR 27.0000 | ≤ EUR 26.9752 | ≥ EUR 27.1698 | HOLD |
 | RSI(14) | RSI = 44.83 | ≤ EUR 26.6544 | ≥ EUR 27.5865 | HOLD |
 | Stochastic RSI %K | %K = 0.000 | ≤ EUR 27.0227 | ≥ EUR 27.1006 | BUY |
-| MACD crossover | MACD = -0.0162<br>Signal = -0.0059<br>Gap = -0.0103 | > EUR 27.1613 | < EUR 27.1613 | SELL |
+| MACD crossover | MACD = -0.0162<br>Signal = -0.0059<br>Gap = -0.0103<br>Bullish crossover close ≈ EUR 27.1613 | — | — | SELL |
 | Consensus | BUY 1/4; SELL 1/4; neutral 2/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
-How to read MACD: a negative gap means MACD is below its signal line and therefore gives SELL now. The stated crossover price is the hypothetical latest close at which the gap becomes zero; above it MACD gives BUY, below it MACD gives SELL. RSI, Stochastic RSI and MACD price thresholds are indicative because all earlier closes are held fixed and only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
+MACD does not define an acceptable purchase or sale price. Its bullish crossover close is only the hypothetical latest close at which MACD would cross above its signal line if all earlier closes stayed unchanged. A crossover above the current price means that upward momentum still needs confirmation; it does not mean that the investor should wait and buy at that higher price. RSI and Stochastic RSI price thresholds are also indicative because only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -992,10 +992,10 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 | Bollinger price | Close = EUR 20.6000 | ≤ EUR 17.8599 | ≥ EUR 23.7501 | HOLD |
 | RSI(14) | RSI = 53.51 | ≤ EUR 15.7955 | ≥ EUR 23.1706 | HOLD |
 | Stochastic RSI %K | %K = 0.000 | ≤ EUR 20.7905 | ≥ EUR 21.1030 | BUY |
-| MACD crossover | MACD = 0.5549<br>Signal = 0.6204<br>Gap = -0.0655 | > EUR 21.6263 | < EUR 21.6263 | SELL |
+| MACD crossover | MACD = 0.5549<br>Signal = 0.6204<br>Gap = -0.0655<br>Bullish crossover close ≈ EUR 21.6263 | — | — | SELL |
 | Consensus | BUY 1/4; SELL 1/4; neutral 2/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
-How to read MACD: a negative gap means MACD is below its signal line and therefore gives SELL now. The stated crossover price is the hypothetical latest close at which the gap becomes zero; above it MACD gives BUY, below it MACD gives SELL. RSI, Stochastic RSI and MACD price thresholds are indicative because all earlier closes are held fixed and only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
+MACD does not define an acceptable purchase or sale price. Its bullish crossover close is only the hypothetical latest close at which MACD would cross above its signal line if all earlier closes stayed unchanged. A crossover above the current price means that upward momentum still needs confirmation; it does not mean that the investor should wait and buy at that higher price. RSI and Stochastic RSI price thresholds are also indicative because only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -1225,10 +1225,10 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 | Bollinger price | Close = EUR 3.8200 | ≤ EUR 3.7878 | ≥ EUR 3.8642 | HOLD |
 | RSI(14) | RSI = 39.86 | ≤ EUR 3.7878 | ≥ EUR 3.9590 | HOLD |
 | Stochastic RSI %K | %K = 1.000 | ≤ EUR 3.7906 | ≥ EUR 3.8101 | SELL |
-| MACD crossover | MACD = -0.0251<br>Signal = -0.0283<br>Gap = +0.0032 | > EUR 3.7693 | < EUR 3.7693 | BUY |
+| MACD crossover | MACD = -0.0251<br>Signal = -0.0283<br>Gap = +0.0032<br>Bullish crossover close ≈ EUR 3.7693 | — | — | BUY |
 | Consensus | BUY 1/4; SELL 1/4; neutral 2/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
-How to read MACD: a negative gap means MACD is below its signal line and therefore gives SELL now. The stated crossover price is the hypothetical latest close at which the gap becomes zero; above it MACD gives BUY, below it MACD gives SELL. RSI, Stochastic RSI and MACD price thresholds are indicative because all earlier closes are held fixed and only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
+MACD does not define an acceptable purchase or sale price. Its bullish crossover close is only the hypothetical latest close at which MACD would cross above its signal line if all earlier closes stayed unchanged. A crossover above the current price means that upward momentum still needs confirmation; it does not mean that the investor should wait and buy at that higher price. RSI and Stochastic RSI price thresholds are also indicative because only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -1518,10 +1518,10 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 | Bollinger price | Close = EUR 1.0100 | ≤ EUR 0.9963 | ≥ EUR 1.0226 | HOLD |
 | RSI(14) | RSI = 50.37 | ≤ EUR 0.9704 | ≥ EUR 1.0482 | HOLD |
 | Stochastic RSI %K | %K = 0.696 | ≤ EUR 0.9971 | ≥ EUR 1.0123 | HOLD |
-| MACD crossover | MACD = -0.0022<br>Signal = -0.0027<br>Gap = +0.0004 | > EUR 1.0032 | < EUR 1.0032 | BUY |
+| MACD crossover | MACD = -0.0022<br>Signal = -0.0027<br>Gap = +0.0004<br>Bullish crossover close ≈ EUR 1.0032 | — | — | BUY |
 | Consensus | BUY 1/4; SELL 0/4; neutral 3/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
-How to read MACD: a negative gap means MACD is below its signal line and therefore gives SELL now. The stated crossover price is the hypothetical latest close at which the gap becomes zero; above it MACD gives BUY, below it MACD gives SELL. RSI, Stochastic RSI and MACD price thresholds are indicative because all earlier closes are held fixed and only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
+MACD does not define an acceptable purchase or sale price. Its bullish crossover close is only the hypothetical latest close at which MACD would cross above its signal line if all earlier closes stayed unchanged. A crossover above the current price means that upward momentum still needs confirmation; it does not mean that the investor should wait and buy at that higher price. RSI and Stochastic RSI price thresholds are also indicative because only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -1728,10 +1728,10 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 | Bollinger price | Close = EUR 4.4000 | ≤ EUR 4.4100 | ≥ EUR 4.5460 | BUY |
 | RSI(14) | RSI = 33.46 | ≤ EUR 4.3728 | ≥ EUR 4.6344 | HOLD |
 | Stochastic RSI %K | %K = 0.000 | ≤ EUR 4.4404 | ≥ EUR 4.4591 | BUY |
-| MACD crossover | MACD = -0.0172<br>Signal = -0.0100<br>Gap = -0.0072 | > EUR 4.5127 | < EUR 4.5127 | SELL |
+| MACD crossover | MACD = -0.0172<br>Signal = -0.0100<br>Gap = -0.0072<br>Bullish crossover close ≈ EUR 4.5127 | — | — | SELL |
 | Consensus | BUY 2/4; SELL 1/4; neutral 1/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
-How to read MACD: a negative gap means MACD is below its signal line and therefore gives SELL now. The stated crossover price is the hypothetical latest close at which the gap becomes zero; above it MACD gives BUY, below it MACD gives SELL. RSI, Stochastic RSI and MACD price thresholds are indicative because all earlier closes are held fixed and only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
+MACD does not define an acceptable purchase or sale price. Its bullish crossover close is only the hypothetical latest close at which MACD would cross above its signal line if all earlier closes stayed unchanged. A crossover above the current price means that upward momentum still needs confirmation; it does not mean that the investor should wait and buy at that higher price. RSI and Stochastic RSI price thresholds are also indicative because only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -1961,10 +1961,10 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 | Bollinger price | Close = EUR 1.8500 | ≤ EUR 1.7524 | ≥ EUR 1.8706 | HOLD |
 | RSI(14) | RSI = 78.10 | ≤ EUR 1.7210 | ≥ EUR 1.8407 | SELL |
 | Stochastic RSI %K | %K = 0.855 | ≤ EUR 1.8395 | ≥ EUR 1.8492 | SELL |
-| MACD crossover | MACD = 0.0219<br>Signal = 0.0184<br>Gap = +0.0035 | > EUR 1.7959 | < EUR 1.7959 | BUY |
+| MACD crossover | MACD = 0.0219<br>Signal = 0.0184<br>Gap = +0.0035<br>Bullish crossover close ≈ EUR 1.7959 | — | — | BUY |
 | Consensus | BUY 1/4; SELL 2/4; neutral 1/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
-How to read MACD: a negative gap means MACD is below its signal line and therefore gives SELL now. The stated crossover price is the hypothetical latest close at which the gap becomes zero; above it MACD gives BUY, below it MACD gives SELL. RSI, Stochastic RSI and MACD price thresholds are indicative because all earlier closes are held fixed and only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
+MACD does not define an acceptable purchase or sale price. Its bullish crossover close is only the hypothetical latest close at which MACD would cross above its signal line if all earlier closes stayed unchanged. A crossover above the current price means that upward momentum still needs confirmation; it does not mean that the investor should wait and buy at that higher price. RSI and Stochastic RSI price thresholds are also indicative because only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -2207,10 +2207,10 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 | Bollinger price | Close = EUR 0.6500 | ≤ EUR 0.6419 | ≥ EUR 0.6498 | SELL |
 | RSI(14) | RSI = 66.63 | ≤ EUR 0.6248 | ≥ EUR 0.6527 | HOLD |
 | Stochastic RSI %K | %K = 0.599 | ≤ EUR 0.6461 | ≥ EUR 0.6530 | HOLD |
-| MACD crossover | MACD = 0.0032<br>Signal = 0.0037<br>Gap = -0.0005 | > EUR 0.6580 | < EUR 0.6580 | SELL |
+| MACD crossover | MACD = 0.0032<br>Signal = 0.0037<br>Gap = -0.0005<br>Bullish crossover close ≈ EUR 0.6580 | — | — | SELL |
 | Consensus | BUY 0/4; SELL 2/4; neutral 2/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
-How to read MACD: a negative gap means MACD is below its signal line and therefore gives SELL now. The stated crossover price is the hypothetical latest close at which the gap becomes zero; above it MACD gives BUY, below it MACD gives SELL. RSI, Stochastic RSI and MACD price thresholds are indicative because all earlier closes are held fixed and only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
+MACD does not define an acceptable purchase or sale price. Its bullish crossover close is only the hypothetical latest close at which MACD would cross above its signal line if all earlier closes stayed unchanged. A crossover above the current price means that upward momentum still needs confirmation; it does not mean that the investor should wait and buy at that higher price. RSI and Stochastic RSI price thresholds are also indicative because only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -2477,10 +2477,10 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 | Bollinger price | Close = EUR 8.9000 | ≤ EUR 8.8594 | ≥ EUR 9.0886 | HOLD |
 | RSI(14) | RSI = 28.20 | ≤ EUR 8.9050 | ≥ EUR 9.1737 | BUY |
 | Stochastic RSI %K | %K = 0.254 | ≤ EUR 8.8938 | ≥ EUR 8.9272 | HOLD |
-| MACD crossover | MACD = -0.0432<br>Signal = -0.0374<br>Gap = -0.0058 | > EUR 8.9906 | < EUR 8.9906 | SELL |
+| MACD crossover | MACD = -0.0432<br>Signal = -0.0374<br>Gap = -0.0058<br>Bullish crossover close ≈ EUR 8.9906 | — | — | SELL |
 | Consensus | BUY 1/4; SELL 1/4; neutral 2/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
-How to read MACD: a negative gap means MACD is below its signal line and therefore gives SELL now. The stated crossover price is the hypothetical latest close at which the gap becomes zero; above it MACD gives BUY, below it MACD gives SELL. RSI, Stochastic RSI and MACD price thresholds are indicative because all earlier closes are held fixed and only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
+MACD does not define an acceptable purchase or sale price. Its bullish crossover close is only the hypothetical latest close at which MACD would cross above its signal line if all earlier closes stayed unchanged. A crossover above the current price means that upward momentum still needs confirmation; it does not mean that the investor should wait and buy at that higher price. RSI and Stochastic RSI price thresholds are also indicative because only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -2740,10 +2740,10 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 | Bollinger price | Close = EUR 1.7000 | ≤ EUR 1.5696 | ≥ EUR 1.7844 | HOLD |
 | RSI(14) | RSI = 60.14 | ≤ EUR 1.5087 | ≥ EUR 1.7559 | HOLD |
 | Stochastic RSI %K | %K = 0.000 | ≤ EUR 1.7266 | ≥ EUR 1.8383 | BUY |
-| MACD crossover | MACD = 0.0336<br>Signal = 0.0370<br>Gap = -0.0034 | > EUR 1.7528 | < EUR 1.7528 | SELL |
+| MACD crossover | MACD = 0.0336<br>Signal = 0.0370<br>Gap = -0.0034<br>Bullish crossover close ≈ EUR 1.7528 | — | — | SELL |
 | Consensus | BUY 1/4; SELL 1/4; neutral 2/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
-How to read MACD: a negative gap means MACD is below its signal line and therefore gives SELL now. The stated crossover price is the hypothetical latest close at which the gap becomes zero; above it MACD gives BUY, below it MACD gives SELL. RSI, Stochastic RSI and MACD price thresholds are indicative because all earlier closes are held fixed and only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
+MACD does not define an acceptable purchase or sale price. Its bullish crossover close is only the hypothetical latest close at which MACD would cross above its signal line if all earlier closes stayed unchanged. A crossover above the current price means that upward momentum still needs confirmation; it does not mean that the investor should wait and buy at that higher price. RSI and Stochastic RSI price thresholds are also indicative because only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -3033,10 +3033,10 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 | Bollinger price | Close = EUR 19.3500 | ≤ EUR 19.3537 | ≥ EUR 19.6563 | BUY |
 | RSI(14) | RSI = 41.29 | ≤ EUR 18.9854 | ≥ EUR 20.0771 | HOLD |
 | Stochastic RSI %K | %K = 0.000 | ≤ EUR 19.4424 | ≥ EUR 19.5943 | BUY |
-| MACD crossover | MACD = -0.0241<br>Signal = -0.0098<br>Gap = -0.0143 | > EUR 19.5736 | < EUR 19.5736 | SELL |
+| MACD crossover | MACD = -0.0241<br>Signal = -0.0098<br>Gap = -0.0143<br>Bullish crossover close ≈ EUR 19.5736 | — | — | SELL |
 | Consensus | BUY 2/4; SELL 1/4; neutral 1/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
-How to read MACD: a negative gap means MACD is below its signal line and therefore gives SELL now. The stated crossover price is the hypothetical latest close at which the gap becomes zero; above it MACD gives BUY, below it MACD gives SELL. RSI, Stochastic RSI and MACD price thresholds are indicative because all earlier closes are held fixed and only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
+MACD does not define an acceptable purchase or sale price. Its bullish crossover close is only the hypothetical latest close at which MACD would cross above its signal line if all earlier closes stayed unchanged. A crossover above the current price means that upward momentum still needs confirmation; it does not mean that the investor should wait and buy at that higher price. RSI and Stochastic RSI price thresholds are also indicative because only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -3299,10 +3299,10 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 | Bollinger price | Close = EUR 5.3600 | ≤ EUR 5.0664 | ≥ EUR 5.4716 | HOLD |
 | RSI(14) | RSI = 54.56 | ≤ EUR 4.6391 | ≥ EUR 5.8969 | HOLD |
 | Stochastic RSI %K | %K = 0.296 | ≤ EUR 5.3000 | ≥ EUR 5.8561 | HOLD |
-| MACD crossover | MACD = 0.0430<br>Signal = 0.0367<br>Gap = +0.0063 | > EUR 5.2620 | < EUR 5.2620 | BUY |
+| MACD crossover | MACD = 0.0430<br>Signal = 0.0367<br>Gap = +0.0063<br>Bullish crossover close ≈ EUR 5.2620 | — | — | BUY |
 | Consensus | BUY 1/4; SELL 0/4; neutral 3/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
-How to read MACD: a negative gap means MACD is below its signal line and therefore gives SELL now. The stated crossover price is the hypothetical latest close at which the gap becomes zero; above it MACD gives BUY, below it MACD gives SELL. RSI, Stochastic RSI and MACD price thresholds are indicative because all earlier closes are held fixed and only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
+MACD does not define an acceptable purchase or sale price. Its bullish crossover close is only the hypothetical latest close at which MACD would cross above its signal line if all earlier closes stayed unchanged. A crossover above the current price means that upward momentum still needs confirmation; it does not mean that the investor should wait and buy at that higher price. RSI and Stochastic RSI price thresholds are also indicative because only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -3565,10 +3565,10 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 | Bollinger price | Close = EUR 2.3850 | ≤ EUR 2.2932 | ≥ EUR 2.3948 | HOLD |
 | RSI(14) | RSI = 62.27 | ≤ EUR 2.2308 | ≥ EUR 2.4251 | HOLD |
 | Stochastic RSI %K | %K = 0.669 | ≤ EUR 2.3584 | ≥ EUR 2.3957 | HOLD |
-| MACD crossover | MACD = 0.0115<br>Signal = 0.0067<br>Gap = +0.0049 | > EUR 2.3088 | < EUR 2.3088 | BUY |
+| MACD crossover | MACD = 0.0115<br>Signal = 0.0067<br>Gap = +0.0049<br>Bullish crossover close ≈ EUR 2.3088 | — | — | BUY |
 | Consensus | BUY 1/4; SELL 0/4; neutral 3/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
-How to read MACD: a negative gap means MACD is below its signal line and therefore gives SELL now. The stated crossover price is the hypothetical latest close at which the gap becomes zero; above it MACD gives BUY, below it MACD gives SELL. RSI, Stochastic RSI and MACD price thresholds are indicative because all earlier closes are held fixed and only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
+MACD does not define an acceptable purchase or sale price. Its bullish crossover close is only the hypothetical latest close at which MACD would cross above its signal line if all earlier closes stayed unchanged. A crossover above the current price means that upward momentum still needs confirmation; it does not mean that the investor should wait and buy at that higher price. RSI and Stochastic RSI price thresholds are also indicative because only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -3835,10 +3835,10 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 | Bollinger price | Close = EUR 16.2000 | ≤ EUR 16.0037 | ≥ EUR 17.1263 | HOLD |
 | RSI(14) | RSI = 42.00 | ≤ EUR 15.4157 | ≥ EUR 17.8304 | HOLD |
 | Stochastic RSI %K | %K = 0.000 | ≤ EUR 16.4001 | ≥ EUR 16.5834 | BUY |
-| MACD crossover | MACD = -0.0618<br>Signal = 0.0102<br>Gap = -0.0719 | > EUR 17.3273 | < EUR 17.3273 | SELL |
+| MACD crossover | MACD = -0.0618<br>Signal = 0.0102<br>Gap = -0.0719<br>Bullish crossover close ≈ EUR 17.3273 | — | — | SELL |
 | Consensus | BUY 1/4; SELL 1/4; neutral 2/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
-How to read MACD: a negative gap means MACD is below its signal line and therefore gives SELL now. The stated crossover price is the hypothetical latest close at which the gap becomes zero; above it MACD gives BUY, below it MACD gives SELL. RSI, Stochastic RSI and MACD price thresholds are indicative because all earlier closes are held fixed and only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
+MACD does not define an acceptable purchase or sale price. Its bullish crossover close is only the hypothetical latest close at which MACD would cross above its signal line if all earlier closes stayed unchanged. A crossover above the current price means that upward momentum still needs confirmation; it does not mean that the investor should wait and buy at that higher price. RSI and Stochastic RSI price thresholds are also indicative because only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -4085,10 +4085,10 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 | Bollinger price | Close = EUR 1.2000 | ≤ EUR 1.1991 | ≥ EUR 1.2177 | HOLD |
 | RSI(14) | RSI = 40.77 | ≤ EUR 1.1773 | ≥ EUR 1.2563 | HOLD |
 | Stochastic RSI %K | %K = 0.478 | ≤ EUR 1.1917 | ≥ EUR 1.2070 | HOLD |
-| MACD crossover | MACD = -0.0043<br>Signal = -0.0042<br>Gap = -0.0001 | > EUR 1.2014 | < EUR 1.2014 | SELL |
+| MACD crossover | MACD = -0.0043<br>Signal = -0.0042<br>Gap = -0.0001<br>Bullish crossover close ≈ EUR 1.2014 | — | — | SELL |
 | Consensus | BUY 0/4; SELL 1/4; neutral 3/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
-How to read MACD: a negative gap means MACD is below its signal line and therefore gives SELL now. The stated crossover price is the hypothetical latest close at which the gap becomes zero; above it MACD gives BUY, below it MACD gives SELL. RSI, Stochastic RSI and MACD price thresholds are indicative because all earlier closes are held fixed and only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
+MACD does not define an acceptable purchase or sale price. Its bullish crossover close is only the hypothetical latest close at which MACD would cross above its signal line if all earlier closes stayed unchanged. A crossover above the current price means that upward momentum still needs confirmation; it does not mean that the investor should wait and buy at that higher price. RSI and Stochastic RSI price thresholds are also indicative because only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -4345,10 +4345,10 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 | Bollinger price | Close = EUR 1.7750 | ≤ EUR 1.7470 | ≥ EUR 1.8240 | HOLD |
 | RSI(14) | RSI = 51.45 | ≤ EUR 1.7149 | ≥ EUR 1.8327 | HOLD |
 | Stochastic RSI %K | %K = 0.135 | ≤ EUR 1.7776 | ≥ EUR 1.8112 | BUY |
-| MACD crossover | MACD = 0.0052<br>Signal = 0.0093<br>Gap = -0.0040 | > EUR 1.8381 | < EUR 1.8381 | SELL |
+| MACD crossover | MACD = 0.0052<br>Signal = 0.0093<br>Gap = -0.0040<br>Bullish crossover close ≈ EUR 1.8381 | — | — | SELL |
 | Consensus | BUY 1/4; SELL 1/4; neutral 2/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
-How to read MACD: a negative gap means MACD is below its signal line and therefore gives SELL now. The stated crossover price is the hypothetical latest close at which the gap becomes zero; above it MACD gives BUY, below it MACD gives SELL. RSI, Stochastic RSI and MACD price thresholds are indicative because all earlier closes are held fixed and only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
+MACD does not define an acceptable purchase or sale price. Its bullish crossover close is only the hypothetical latest close at which MACD would cross above its signal line if all earlier closes stayed unchanged. A crossover above the current price means that upward momentum still needs confirmation; it does not mean that the investor should wait and buy at that higher price. RSI and Stochastic RSI price thresholds are also indicative because only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -4591,10 +4591,10 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 | Bollinger price | Close = EUR 4.4100 | ≤ EUR 4.4023 | ≥ EUR 4.4447 | HOLD |
 | RSI(14) | RSI = 49.23 | ≤ EUR 4.3258 | ≥ EUR 4.5009 | HOLD |
 | Stochastic RSI %K | %K = 0.297 | ≤ EUR 4.4068 | ≥ EUR 4.4278 | HOLD |
-| MACD crossover | MACD = 0.0043<br>Signal = 0.0098<br>Gap = -0.0055 | > EUR 4.4965 | < EUR 4.4965 | SELL |
+| MACD crossover | MACD = 0.0043<br>Signal = 0.0098<br>Gap = -0.0055<br>Bullish crossover close ≈ EUR 4.4965 | — | — | SELL |
 | Consensus | BUY 0/4; SELL 1/4; neutral 3/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
-How to read MACD: a negative gap means MACD is below its signal line and therefore gives SELL now. The stated crossover price is the hypothetical latest close at which the gap becomes zero; above it MACD gives BUY, below it MACD gives SELL. RSI, Stochastic RSI and MACD price thresholds are indicative because all earlier closes are held fixed and only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
+MACD does not define an acceptable purchase or sale price. Its bullish crossover close is only the hypothetical latest close at which MACD would cross above its signal line if all earlier closes stayed unchanged. A crossover above the current price means that upward momentum still needs confirmation; it does not mean that the investor should wait and buy at that higher price. RSI and Stochastic RSI price thresholds are also indicative because only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
@@ -4838,10 +4838,10 @@ Signals combine four indicators: Bollinger bands, RSI, MACD and Stochastic RSI. 
 | Bollinger price | Close = EUR 0.8820 | ≤ EUR 0.8688 | ≥ EUR 0.9079 | HOLD |
 | RSI(14) | RSI = 45.19 | ≤ EUR 0.8618 | ≥ EUR 0.9137 | HOLD |
 | Stochastic RSI %K | %K = 0.453 | ≤ EUR 0.8790 | ≥ EUR 0.8855 | HOLD |
-| MACD crossover | MACD = -0.0021<br>Signal = -0.0015<br>Gap = -0.0006 | > EUR 0.8911 | < EUR 0.8911 | SELL |
+| MACD crossover | MACD = -0.0021<br>Signal = -0.0015<br>Gap = -0.0006<br>Bullish crossover close ≈ EUR 0.8911 | — | — | SELL |
 | Consensus | BUY 0/4; SELL 1/4; neutral 3/4 | At least 3 BUY votes | At least 3 SELL votes | HOLD |
 
-How to read MACD: a negative gap means MACD is below its signal line and therefore gives SELL now. The stated crossover price is the hypothetical latest close at which the gap becomes zero; above it MACD gives BUY, below it MACD gives SELL. RSI, Stochastic RSI and MACD price thresholds are indicative because all earlier closes are held fixed and only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
+MACD does not define an acceptable purchase or sale price. Its bullish crossover close is only the hypothetical latest close at which MACD would cross above its signal line if all earlier closes stayed unchanged. A crossover above the current price means that upward momentum still needs confirmation; it does not mean that the investor should wait and buy at that higher price. RSI and Stochastic RSI price thresholds are also indicative because only the latest close is varied. The four-indicator consensus is BUY or SELL only when at least three indicators agree; otherwise it is HOLD.
 
 <details markdown="1">
 <summary>Complete technical history</summary>
