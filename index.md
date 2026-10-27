@@ -91,7 +91,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-27 15:56 (Europe/Vilnius); return analysis through 2026-10-23; valuation prices through 2026-10-23
+# Baltic investment plan - updated 2026-10-27 15:57 (Europe/Vilnius); return analysis through 2026-10-23; valuation prices through 2026-10-23
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -5491,8 +5491,8 @@ Choose the model to change the risk measure. Current is always highlighted, and 
 | Portfolio | HHI weights | Effective positions | Largest weight | Positive positions | Diversification ratio |
 | --- | --- | --- | --- | --- | --- |
 | Current | 0.149011 | 6.710898 | 0.288144 | 11 | 2.161935 |
-| Baltic_NetSD | 0.060139 | 16.628083 | 0.091186 | 21 | 2.618825 |
-| curent_update_baltic | 0.090073 | 11.102120 | 0.195913 | 19 | 2.747270 |
+| Update: sales allowed | 0.060139 | 16.628083 | 0.091186 | 21 | 2.618825 |
+| Update: no sales | 0.090073 | 11.102120 | 0.195913 | 19 | 2.747270 |
 
 </details>
 
