@@ -67,6 +67,10 @@ img { display:block; max-width:100%; height:auto; margin:1rem auto; border:1px s
 .dominance-controls label { display:grid; gap:3px; color:#29485a; font-size:.86rem; }
 .dominance-controls select,.dominance-controls input { width:100%; }
 .dominance-controls button { min-height:35px; border:1px solid #8aa6b2; border-radius:5px; color:#174d61; background:#eef7f8; cursor:pointer; }
+.dominance-multiselect-wrap { grid-column:span 3; }
+.dominance-multiselect { width:100%; min-height:190px; padding:.35rem; border:1px solid #8aa6b2; border-radius:6px; background:white; }
+.dominance-multiselect optgroup { color:#173246; font-weight:700; }
+.dominance-multiselect option { color:#29485a; font-weight:400; padding:.18rem .35rem; }
 .dominance-canvas { width:100%; height:735px; border:1px solid var(--line); border-radius:5px; cursor:crosshair; }
 .dominance-status { margin:.45rem 0 0; color:#455f70; font-size:.84rem; font-variant-numeric:tabular-nums; }
 .frontier-explorer { margin:1rem 0; padding:12px; border:1px solid #bfd1d9; border-radius:8px; background:#fff; }
@@ -87,7 +91,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-27 15:48 (Europe/Vilnius); return analysis through 2026-10-23; valuation prices through 2026-10-23
+# Baltic investment plan - updated 2026-10-27 15:51 (Europe/Vilnius); return analysis through 2026-10-23; valuation prices through 2026-10-23
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -5466,7 +5470,7 @@ This section restores the portfolio-level comparison in one place. Current is th
 <details markdown="1" class="dominance-components portfolio-dominance" open>
 <summary><strong>Figure 2.f. Interactive portfolio FSD, SSD and TSD analysis</strong></summary>
 
-Select FSD, SSD or TSD. The upper panels show the component curves, while the lower panels show Current minus every other portfolio simultaneously. Use the comparison selector to highlight one difference curve. The x-position and horizontal-magnification sliders select the interval; its vertical scale is fitted automatically.
+Select FSD, SSD or TSD, choose any combination of portfolios and individual shares in the grouped multi-select list, and choose the comparison base. The upper panels show the selected component curves; the lower panels show the comparison base minus every other selected curve. The x-position and horizontal-magnification sliders select the interval, whose vertical scale is fitted automatically.
 
 <div class="dominance-explorer" data-asset="Portfolio" data-target="Current"><p>Loading the interactive portfolio dominance analysis...</p></div>
 
@@ -5754,19 +5758,30 @@ function initialiseDominanceExplorer(box) {
   box.dataset.loaded = 'loading';
   const profile = box.dataset.asset, target = box.dataset.target || profile;
   fetch(`interactive/dominance/${profile}.json`).then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); }).then(data => {
-    const first=data.orders.FSD, seriesNames=Object.keys(first.series), preferred=profile==='Portfolio'?['Baltic_NetSD','curent_update_baltic','SP500','Current']:['Current','SP500','curent_update_baltic','Baltic_NetSD'];
-    const benchmarks=[...preferred.filter(x=>seriesNames.includes(x)&&x!==target),...seriesNames.filter(x=>x!==target&&!preferred.includes(x))];
+    const first=data.orders.FSD, seriesNames=Object.keys(first.series), preferred=profile==='Portfolio'?['Current','Baltic_NetSD','curent_update_baltic','SP500']:['Current','SP500','curent_update_baltic','Baltic_NetSD'];
+    const benchmarkPool=profile==='Portfolio'?seriesNames:seriesNames.filter(x=>x!==target);
+    const benchmarks=[...preferred.filter(x=>benchmarkPool.includes(x)),...benchmarkPool.filter(x=>!preferred.includes(x))];
+    const portfolioNames=seriesNames.filter(x=>(data.series_types||{})[x]==='portfolio');
+    const shareNames=seriesNames.filter(x=>(data.series_types||{})[x]==='share');
+    const defaultSelected=new Set(preferred.filter(x=>seriesNames.includes(x)).slice(0,3));
     box.innerHTML = `<div class="dominance-controls">
       <label>Component<select class="dom-order"><option>FSD</option><option>SSD</option><option>TSD</option></select></label>
-      <label>${profile==='Portfolio'?'Highlight Current difference':'Difference benchmark'}<select class="dom-benchmark">${benchmarks.map(x=>`<option>${x}</option>`).join('')}</select></label>
+      <label>${profile==='Portfolio'?'Comparison base':'Difference benchmark'}<select class="dom-benchmark">${benchmarks.map(x=>`<option${x===target?' selected':''}>${x}</option>`).join('')}</select></label>
+      ${profile==='Portfolio'?`<label class="dominance-multiselect-wrap">Displayed portfolios and shares
+        <select class="dominance-multiselect" multiple size="10">
+          <optgroup label="Portfolios">${portfolioNames.map(x=>`<option value="${x}"${defaultSelected.has(x)?' selected':''}>${x}</option>`).join('')}</optgroup>
+          <optgroup label="Shares">${shareNames.map(x=>`<option value="${x}">${x}</option>`).join('')}</optgroup>
+        </select><small>Use Ctrl (Windows) or Cmd (Mac) to select several entries.</small></label>`:''}
       <label>X position: <output class="dom-xout">50.0%</output><input class="dom-xpos" type="range" min="0" max="1000" value="500" step="1"></label>
       <label>Horizontal magnification: <output class="dom-hout">8x</output><input class="dom-hzoom" type="range" min="1" max="100" value="8" step="1"></label>
       <button class="dom-save" type="button">Save high-resolution PNG</button>
     </div><canvas class="dominance-canvas"></canvas><p class="dominance-status">Move the x-position slider, click a left-hand graph, or use the mouse wheel over it. The right-hand panels magnify the selected interval.</p>`;
-    const canvas=box.querySelector('canvas'), order=box.querySelector('.dom-order'), benchmark=box.querySelector('.dom-benchmark'), xpos=box.querySelector('.dom-xpos'), hz=box.querySelector('.dom-hzoom'), status=box.querySelector('.dominance-status');
+    const canvas=box.querySelector('canvas'), order=box.querySelector('.dom-order'), benchmark=box.querySelector('.dom-benchmark'), multi=box.querySelector('.dominance-multiselect'), xpos=box.querySelector('.dom-xpos'), hz=box.querySelector('.dom-hzoom'), status=box.querySelector('.dominance-status');
     let centre=.5, hit=[];
     function render() {
-      const d=data.orders[order.value], x=d.x, names=Object.keys(d.series), n=x.length;
+      const d=data.orders[order.value], x=d.x, allNames=Object.keys(d.series), selected=multi?[...multi.selectedOptions].map(o=>o.value):allNames;
+      const target=benchmark.value;
+      const names=[target,...selected].filter((k,i,a)=>d.series[k]&&a.indexOf(k)===i), n=x.length;
       const rect=canvas.getBoundingClientRect(), ratio=Math.min(Math.max(window.devicePixelRatio||1,2),3);
       canvas.width=Math.max(900,Math.round(rect.width*ratio)); canvas.height=Math.round(rect.height*ratio);
       const ctx=canvas.getContext('2d'); ctx.setTransform(ratio,0,0,ratio,0,0); const W=canvas.width/ratio,H=canvas.height/ratio;
@@ -5776,8 +5791,9 @@ function initialiseDominanceExplorer(box) {
       const diff={l:L,r:L+leftW,t:T+panelH+rowGap,b:T+2*panelH+rowGap}, diffZoom={l:L+leftW+colGap,r:W-R,t:T+panelH+rowGap,b:T+2*panelH+rowGap}; hit=[main,diff];
       const mid=Math.round(centre*(n-1)), count=Math.max(8,Math.round(n/Number(hz.value))), lo=Math.max(0,Math.min(n-count,mid-Math.floor(count/2))), hi=Math.min(n-1,lo+count-1);
       const bench=benchmark.value, comparisonNames=profile==='Portfolio'?names.filter(k=>k!==target):[bench];
+      if(!comparisonNames.length){status.textContent='Select at least one portfolio or share in addition to the comparison base.';return;}
       const differences=Object.fromEntries(comparisonNames.map(k=>[k,d.series[target].map((v,i)=>v-d.series[k][i])]));
-      const difference=differences[bench];
+      const focus=profile==='Portfolio'?comparisonNames[0]:bench, difference=differences[focus];
       function yrange(i0,i1,keys=names) { let mn=Infinity,mx=-Infinity; keys.forEach(k=>{for(let i=i0;i<=i1;i++){const v=d.series[k][i];if(v<mn)mn=v;if(v>mx)mx=v;}}); if(mx===mn){mx+=1;mn-=1} return [mn,mx]; }
       function arrayRange(a,i0,i1){let mn=Infinity,mx=-Infinity;for(let i=i0;i<=i1;i++){if(a[i]<mn)mn=a[i];if(a[i]>mx)mx=a[i];}if(mx===mn){mx+=1;mn-=1}return[mn,mx];}
       function differenceRange(i0,i1){let mn=Infinity,mx=-Infinity;comparisonNames.forEach(k=>{const r=arrayRange(differences[k],i0,i1);mn=Math.min(mn,r[0]);mx=Math.max(mx,r[1]);});if(mx===mn){mx+=1;mn-=1}return[mn,mx];}
@@ -5795,16 +5811,16 @@ function initialiseDominanceExplorer(box) {
       const ym=yrange(0,n-1); axes(main,x[0],x[n-1],ym[0],ym[1],`${target}: ${order.value} components - scroll or click to move`); plot(main,0,n-1,ym[0],ym[1]);
       const sx0=main.l+(x[lo]-x[0])/(x[n-1]-x[0])*(main.r-main.l), sx1=main.l+(x[hi]-x[0])/(x[n-1]-x[0])*(main.r-main.l);ctx.strokeStyle='#d7191c';ctx.lineWidth=2;ctx.strokeRect(sx0,main.t,Math.max(2,sx1-sx0),main.b-main.t);
       let yz=yrange(lo,hi); axes(zoom,x[lo],x[hi],yz[0],yz[1],`Selected component interval (${hz.value}x horizontal)`); plot(zoom,lo,hi,yz[0],yz[1]);
-      let yd=differenceRange(0,n-1);axes(diff,x[0],x[n-1],yd[0],yd[1],profile==='Portfolio'?`${target} minus every other portfolio`:`${target} minus ${bench}`);plotDifference(diff,0,n-1,yd[0],yd[1]);ctx.strokeStyle='#d7191c';ctx.lineWidth=2;ctx.strokeRect(sx0,diff.t,Math.max(2,sx1-sx0),diff.b-diff.t);
+      let yd=differenceRange(0,n-1);axes(diff,x[0],x[n-1],yd[0],yd[1],profile==='Portfolio'?`${target} minus selected portfolios and shares`:`${target} minus ${bench}`);plotDifference(diff,0,n-1,yd[0],yd[1]);ctx.strokeStyle='#d7191c';ctx.lineWidth=2;ctx.strokeRect(sx0,diff.t,Math.max(2,sx1-sx0),diff.b-diff.t);
       let ydz=differenceRange(lo,hi);axes(diffZoom,x[lo],x[hi],ydz[0],ydz[1],`Selected difference interval (${hz.value}x horizontal)`);plotDifference(diffZoom,lo,hi,ydz[0],ydz[1]);
-      const legend=[target,'Current','Baltic_NetSD','curent_update_baltic',bench,...names].filter((k,i,a)=>d.series[k]&&a.indexOf(k)===i); legend.forEach((k,j)=>{const style=seriesStyle(k,names.indexOf(k)),lx=L+(j%3)*Math.max(190,(W-L-R)/3),ly=20+Math.floor(j/3)*20;ctx.strokeStyle=style.colour;ctx.setLineDash(style.dash);ctx.lineWidth=style.width;ctx.beginPath();ctx.moveTo(lx,ly);ctx.lineTo(lx+24,ly);ctx.stroke();ctx.setLineDash([]);ctx.fillStyle='#263d4b';ctx.fillText(k,lx+31,ly+4);});
-      const values=[target,'Current',bench].filter((k,i,a)=>d.series[k]&&a.indexOf(k)===i).map(k=>`${k}=${d.series[k][mid].toExponential(5)}`).join(' | '); status.textContent=`x=${x[mid].toFixed(6)}; selected interval [${x[lo].toFixed(6)}, ${x[hi].toFixed(6)}]; difference=${difference[mid].toExponential(5)} | ${values}`;
+      const legend=names; legend.forEach((k,j)=>{const style=seriesStyle(k,names.indexOf(k)),lx=L+(j%3)*Math.max(190,(W-L-R)/3),ly=20+Math.floor(j/3)*20;ctx.strokeStyle=style.colour;ctx.setLineDash(style.dash);ctx.lineWidth=style.width;ctx.beginPath();ctx.moveTo(lx,ly);ctx.lineTo(lx+24,ly);ctx.stroke();ctx.setLineDash([]);ctx.fillStyle='#263d4b';ctx.fillText(k,lx+31,ly+4);});
+      const values=names.map(k=>`${k}=${d.series[k][mid].toExponential(5)}`).join(' | '); status.textContent=`x=${x[mid].toFixed(6)}; selected interval [${x[lo].toFixed(6)}, ${x[hi].toFixed(6)}]; ${target}-${focus}=${difference[mid].toExponential(5)} | ${values}`;
       xpos.value=Math.round(centre*1000);box.querySelector('.dom-xout').value=`${(100*centre).toFixed(1)}%`;box.querySelector('.dom-hout').value=`${hz.value}x`;
     }
-    [order,benchmark,hz].forEach(el=>el.addEventListener('input',render));xpos.addEventListener('input',()=>{centre=Number(xpos.value)/1000;render();});
+    [order,benchmark,hz,multi].filter(Boolean).forEach(el=>el.addEventListener('input',render));xpos.addEventListener('input',()=>{centre=Number(xpos.value)/1000;render();});
     canvas.addEventListener('click',e=>{const r=canvas.getBoundingClientRect(),px=e.clientX-r.left,py=e.clientY-r.top;const p=hit.find(q=>px>=q.l&&px<=q.r&&py>=q.t&&py<=q.b);if(p){centre=Math.max(0,Math.min(1,(px-p.l)/(p.r-p.l)));render();}});
     canvas.addEventListener('wheel',e=>{const r=canvas.getBoundingClientRect(),px=e.clientX-r.left,py=e.clientY-r.top;if(hit.some(q=>px>=q.l&&px<=q.r&&py>=q.t&&py<=q.b)){e.preventDefault();centre=Math.max(0,Math.min(1,centre+Math.sign(e.deltaY)*.015));render();}},{passive:false});
-    box.querySelector('.dom-save').addEventListener('click',()=>{const a=document.createElement('a');a.download=`${target}_${order.value}_interactive.png`;a.href=canvas.toDataURL('image/png');a.click();});
+    box.querySelector('.dom-save').addEventListener('click',()=>{const a=document.createElement('a');a.download=`${benchmark.value}_${order.value}_interactive.png`;a.href=canvas.toDataURL('image/png');a.click();});
     window.addEventListener('resize',render); render(); box.dataset.loaded='yes';
   }).catch(err=>{box.innerHTML=`<p>Interactive graph could not be loaded: ${err.message}</p>`;box.dataset.loaded='';});
 }
