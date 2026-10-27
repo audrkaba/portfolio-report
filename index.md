@@ -91,7 +91,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-27 15:57 (Europe/Vilnius); return analysis through 2026-10-23; valuation prices through 2026-10-23
+# Baltic investment plan - updated 2026-10-27 16:01 (Europe/Vilnius); return analysis through 2026-10-23; valuation prices through 2026-10-23
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -5507,6 +5507,54 @@ Choose the model to change the risk measure. Current is always highlighted, and 
 
 </details>
 
+<details markdown="1" open>
+<summary><strong>Figure 2.h. Directional return-spillover network</strong></summary>
+
+A VAR(1) and a 10-observation generalized forecast-error variance decomposition are used, following the connectedness logic in [Kabašinskas (2024)](https://doi.org/10.1186/s13362-024-00144-x). An arrow from A to B is the percentage of B's forecast-error variance explained by shocks from A; only links of at least 2% are drawn. The result measures predictive connectedness, not a causal effect.
+
+![Directional spillover network](figures/scenario_spillover_network.png)
+
+The full-period **Total Spillover Index is 38.93%**. Thus, on average, 38.93% of the four series' 10-step forecast-error variance comes from shocks originating in another series. **Update: no sales** is the largest net transmitter (TO − FROM = 15.85 percentage points). Because both updates are constructed from overlapping Baltic shares, some strong links are mechanical and should not be interpreted as independent contagion.
+
+</details>
+
+<details markdown="1">
+<summary><strong>Table 2.k. Generalized FEVD spillover matrix</strong></summary>
+
+Rows are affected series; columns are shock sources. Diagonal cells are own shocks. Each row sums to 100%.
+
+| Affected series / shock source | Current | Update: sales allowed | Update: no sales | S&P 500 |
+| --- | --- | --- | --- | --- |
+| Current | 51.11 | 8.92 | 39.22 | 0.75 |
+| Update: sales allowed | 9.61 | 55.61 | 33.02 | 1.76 |
+| Update: no sales | 32.11 | 24.95 | 41.86 | 1.08 |
+| S&P 500 | 1.53 | 1.01 | 1.74 | 95.71 |
+
+</details>
+
+<details markdown="1">
+<summary><strong>Table 2.l. Directional FROM, TO and NET spillovers</strong></summary>
+
+FROM is the share received from all other series. TO is the share transmitted to all other series. Positive NET = TO − FROM identifies a net transmitter; negative NET identifies a net receiver.
+
+| Entity | FROM others (%) | TO others (%) | NET: TO − FROM (pp) |
+| --- | --- | --- | --- |
+| Current | 48.89 | 43.25 | -5.65 |
+| Update: sales allowed | 44.39 | 34.88 | -9.50 |
+| Update: no sales | 58.14 | 73.98 | 15.85 |
+| S&P 500 | 4.29 | 3.60 | -0.69 |
+
+</details>
+
+<details markdown="1">
+<summary><strong>Figure 2.i. Rolling 120-observation Total Spillover Index</strong></summary>
+
+The rolling index shows when cross-series connectedness rises or falls. Peaks indicate periods when forecast errors are explained more by shocks elsewhere in the system.
+
+![Rolling Total Spillover Index](figures/scenario_total_spillover_rolling.png)
+
+</details>
+
 <details markdown="1">
 <summary><strong>Figure 2.h. Cumulative value and drawdowns</strong></summary>
 
@@ -5529,7 +5577,7 @@ Choose the model to change the risk measure. Current is always highlighted, and 
 ### Liquidity and turnover
 
 <details markdown="1">
-<summary><strong>Table 2.l. Proposed trades and observed one-year market liquidity</strong></summary>
+<summary><strong>Table 2.m. Proposed trades and observed one-year market liquidity</strong></summary>
 
 | asset | trade_shares | trade_value_EUR | median_daily_turnover_EUR | zero_volume_fraction | trade_to_median_turnover | liquidity_flag |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -5563,7 +5611,7 @@ Choose the model to change the risk measure. Current is always highlighted, and 
 Median daily turnover and zero-volume frequency use official Nasdaq Baltic price-volume observations from the last 365 calendar days of the sample. Trade-to-turnover is the proposed absolute order value divided by median daily turnover. HIGH flags median turnover below EUR 5,000 or an order above 20% of median turnover; MEDIUM flags below EUR 20,000 or above 10%. These are transparent screening thresholds, not a guarantee of execution. HIGH trades should be split, limited or omitted after checking the live order book.
 
 <details markdown="1">
-<summary><strong>Table 2.m. Illustrative transaction-cost and turnover scenario</strong></summary>
+<summary><strong>Table 2.n. Illustrative transaction-cost and turnover scenario</strong></summary>
 
 | portfolio | turnover_EUR | number_of_trades | estimated_cost_EUR | high_liquidity_risk_trades | cost_percent_of_15000 |
 | --- | --- | --- | --- | --- | --- |
@@ -5578,7 +5626,7 @@ The cost scenario uses max(EUR 3, 0.25% of trade value) commission plus an assum
 ### Capital concentration
 
 <details markdown="1">
-<summary><strong>Table 2.n. Top-position and effective-position concentration</strong></summary>
+<summary><strong>Table 2.o. Top-position and effective-position concentration</strong></summary>
 
 | portfolio | positions | top5_share | top10_share | HHI | effective_positions |
 | --- | --- | --- | --- | --- | --- |
@@ -5589,7 +5637,7 @@ The cost scenario uses max(EUR 3, 0.25% of trade value) commission plus an assum
 
 
 <details markdown="1">
-<summary><strong>Table 2.o. Baltic_NetSD: country, list and industry concentration</strong></summary>
+<summary><strong>Table 2.p. Baltic_NetSD: country, list and industry concentration</strong></summary>
 
 | dimension | category | capital_percent |
 | --- | --- | --- |
@@ -5624,7 +5672,7 @@ The cost scenario uses max(EUR 3, 0.25% of trade value) commission plus an assum
 
 
 <details markdown="1">
-<summary><strong>Table 2.p. curent_update_baltic: country, list and industry concentration</strong></summary>
+<summary><strong>Table 2.q. curent_update_baltic: country, list and industry concentration</strong></summary>
 
 | dimension | category | capital_percent |
 | --- | --- | --- |
