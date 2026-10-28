@@ -75,6 +75,8 @@ img { display:block; max-width:100%; height:auto; margin:1rem auto; border:1px s
 .dominance-multiselect { width:100%; min-height:190px; padding:.35rem; border:1px solid #8aa6b2; border-radius:6px; background:white; }
 .dominance-multiselect optgroup { color:#173246; font-weight:700; }
 .dominance-multiselect option { color:#29485a; font-weight:400; padding:.18rem .35rem; }
+.dominance-compact-select { min-height:125px; height:125px; }
+.dominance-compact-wrap { min-width:0; }
 .dominance-canvas { width:100%; height:735px; border:1px solid var(--line); border-radius:5px; cursor:crosshair; }
 .dominance-status { margin:.45rem 0 0; color:#455f70; font-size:.84rem; font-variant-numeric:tabular-nums; }
 .frontier-explorer { margin:1rem 0; padding:12px; border:1px solid #bfd1d9; border-radius:8px; background:#fff; }
@@ -105,7 +107,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-28 08:34 (Europe/Vilnius); return analysis through 2026-10-27; valuation prices through 2026-10-27
+# Baltic investment plan - updated 2026-10-28 08:49 (Europe/Vilnius); return analysis through 2026-10-27; valuation prices through 2026-10-27
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -373,7 +375,7 @@ The starting point is the unmodified current portfolio, which already contains 9
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
-The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Select one or more portfolios simultaneously; every difference curve is the concrete share component minus the selected portfolio component. Current and both update variants are selected by default.
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Select one or more portfolios and, separately, any other Baltic shares. Every difference curve is the concrete analysed share component minus the selected portfolio or share component. Current and both update variants are selected by default.
 
 <div class="dominance-explorer" data-asset="KNE1L"><p>Open this section to load the interactive curve explorer.</p></div>
 
@@ -636,7 +638,7 @@ The starting point is the unmodified current portfolio, which already contains 4
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
-The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Select one or more portfolios simultaneously; every difference curve is the concrete share component minus the selected portfolio component. Current and both update variants are selected by default.
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Select one or more portfolios and, separately, any other Baltic shares. Every difference curve is the concrete analysed share component minus the selected portfolio or share component. Current and both update variants are selected by default.
 
 <div class="dominance-explorer" data-asset="VLP1L"><p>Open this section to load the interactive curve explorer.</p></div>
 
@@ -918,7 +920,7 @@ The starting point is the unmodified current portfolio, which already contains 2
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
-The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Select one or more portfolios simultaneously; every difference curve is the concrete share component minus the selected portfolio component. Current and both update variants are selected by default.
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Select one or more portfolios and, separately, any other Baltic shares. Every difference curve is the concrete analysed share component minus the selected portfolio or share component. Current and both update variants are selected by default.
 
 <div class="dominance-explorer" data-asset="MRK1T"><p>Open this section to load the interactive curve explorer.</p></div>
 
@@ -1168,7 +1170,7 @@ The starting point is the unmodified current portfolio, which already contains 0
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
-The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Select one or more portfolios simultaneously; every difference curve is the concrete share component minus the selected portfolio component. Current and both update variants are selected by default.
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Select one or more portfolios and, separately, any other Baltic shares. Every difference curve is the concrete analysed share component minus the selected portfolio or share component. Current and both update variants are selected by default.
 
 <div class="dominance-explorer" data-asset="MOLNR"><p>Open this section to load the interactive curve explorer.</p></div>
 
@@ -1418,7 +1420,7 @@ The starting point is the unmodified current portfolio, which already contains 5
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
-The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Select one or more portfolios simultaneously; every difference curve is the concrete share component minus the selected portfolio component. Current and both update variants are selected by default.
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Select one or more portfolios and, separately, any other Baltic shares. Every difference curve is the concrete analysed share component minus the selected portfolio or share component. Current and both update variants are selected by default.
 
 <div class="dominance-explorer" data-asset="RSU1L"><p>Open this section to load the interactive curve explorer.</p></div>
 
@@ -1728,7 +1730,7 @@ The starting point is the unmodified current portfolio, which already contains 2
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
-The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Select one or more portfolios simultaneously; every difference curve is the concrete share component minus the selected portfolio component. Current and both update variants are selected by default.
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Select one or more portfolios and, separately, any other Baltic shares. Every difference curve is the concrete analysed share component minus the selected portfolio or share component. Current and both update variants are selected by default.
 
 <div class="dominance-explorer" data-asset="APG1L"><p>Open this section to load the interactive curve explorer.</p></div>
 
@@ -2002,7 +2004,7 @@ The starting point is the unmodified current portfolio, which already contains 0
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
-The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Select one or more portfolios simultaneously; every difference curve is the concrete share component minus the selected portfolio component. Current and both update variants are selected by default.
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Select one or more portfolios and, separately, any other Baltic shares. Every difference curve is the concrete analysed share component minus the selected portfolio or share component. Current and both update variants are selected by default.
 
 <div class="dominance-explorer" data-asset="IGN1L"><p>Open this section to load the interactive curve explorer.</p></div>
 
@@ -2265,7 +2267,7 @@ The starting point is the unmodified current portfolio, which already contains 0
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
-The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Select one or more portfolios simultaneously; every difference curve is the concrete share component minus the selected portfolio component. Current and both update variants are selected by default.
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Select one or more portfolios and, separately, any other Baltic shares. Every difference curve is the concrete analysed share component minus the selected portfolio or share component. Current and both update variants are selected by default.
 
 <div class="dominance-explorer" data-asset="PZV1L"><p>Open this section to load the interactive curve explorer.</p></div>
 
@@ -2528,7 +2530,7 @@ The starting point is the unmodified current portfolio, which already contains 0
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
-The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Select one or more portfolios simultaneously; every difference curve is the concrete share component minus the selected portfolio component. Current and both update variants are selected by default.
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Select one or more portfolios and, separately, any other Baltic shares. Every difference curve is the concrete analysed share component minus the selected portfolio or share component. Current and both update variants are selected by default.
 
 <div class="dominance-explorer" data-asset="AKO1L"><p>Open this section to load the interactive curve explorer.</p></div>
 
@@ -2799,7 +2801,7 @@ The starting point is the unmodified current portfolio, which already contains 4
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
-The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Select one or more portfolios simultaneously; every difference curve is the concrete share component minus the selected portfolio component. Current and both update variants are selected by default.
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Select one or more portfolios and, separately, any other Baltic shares. Every difference curve is the concrete analysed share component minus the selected portfolio or share component. Current and both update variants are selected by default.
 
 <div class="dominance-explorer" data-asset="ROE1L"><p>Open this section to load the interactive curve explorer.</p></div>
 
@@ -3086,7 +3088,7 @@ The starting point is the unmodified current portfolio, which already contains 7
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
-The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Select one or more portfolios simultaneously; every difference curve is the concrete share component minus the selected portfolio component. Current and both update variants are selected by default.
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Select one or more portfolios and, separately, any other Baltic shares. Every difference curve is the concrete analysed share component minus the selected portfolio or share component. Current and both update variants are selected by default.
 
 <div class="dominance-explorer" data-asset="TAL1T"><p>Open this section to load the interactive curve explorer.</p></div>
 
@@ -3369,7 +3371,7 @@ The starting point is the unmodified current portfolio, which already contains 0
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
-The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Select one or more portfolios simultaneously; every difference curve is the concrete share component minus the selected portfolio component. Current and both update variants are selected by default.
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Select one or more portfolios and, separately, any other Baltic shares. Every difference curve is the concrete analysed share component minus the selected portfolio or share component. Current and both update variants are selected by default.
 
 <div class="dominance-explorer" data-asset="EFT1T"><p>Open this section to load the interactive curve explorer.</p></div>
 
@@ -3636,7 +3638,7 @@ The starting point is the unmodified current portfolio, which already contains 1
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
-The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Select one or more portfolios simultaneously; every difference curve is the concrete share component minus the selected portfolio component. Current and both update variants are selected by default.
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Select one or more portfolios and, separately, any other Baltic shares. Every difference curve is the concrete analysed share component minus the selected portfolio or share component. Current and both update variants are selected by default.
 
 <div class="dominance-explorer" data-asset="SAF1R"><p>Open this section to load the interactive curve explorer.</p></div>
 
@@ -3913,7 +3915,7 @@ The starting point is the unmodified current portfolio, which already contains 3
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
-The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Select one or more portfolios simultaneously; every difference curve is the concrete share component minus the selected portfolio component. Current and both update variants are selected by default.
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Select one or more portfolios and, separately, any other Baltic shares. Every difference curve is the concrete analysed share component minus the selected portfolio or share component. Current and both update variants are selected by default.
 
 <div class="dominance-explorer" data-asset="TSM1T"><p>Open this section to load the interactive curve explorer.</p></div>
 
@@ -4140,7 +4142,7 @@ The starting point is the unmodified current portfolio, which already contains 5
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
-The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Select one or more portfolios simultaneously; every difference curve is the concrete share component minus the selected portfolio component. Current and both update variants are selected by default.
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Select one or more portfolios and, separately, any other Baltic shares. Every difference curve is the concrete analysed share component minus the selected portfolio or share component. Current and both update variants are selected by default.
 
 <div class="dominance-explorer" data-asset="GRG1L"><p>Open this section to load the interactive curve explorer.</p></div>
 
@@ -4363,7 +4365,7 @@ The removed weight is distributed proportionally across all remaining holdings, 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
-The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Select one or more portfolios simultaneously; every difference curve is the concrete share component minus the selected portfolio component. Current and both update variants are selected by default.
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Select one or more portfolios and, separately, any other Baltic shares. Every difference curve is the concrete analysed share component minus the selected portfolio or share component. Current and both update variants are selected by default.
 
 <div class="dominance-explorer" data-asset="TEL1L"><p>Open this section to load the interactive curve explorer.</p></div>
 
@@ -4673,7 +4675,7 @@ The starting point is the unmodified current portfolio, which already contains 0
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
-The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Select one or more portfolios simultaneously; every difference curve is the concrete share component minus the selected portfolio component. Current and both update variants are selected by default.
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Select one or more portfolios and, separately, any other Baltic shares. Every difference curve is the concrete analysed share component minus the selected portfolio or share component. Current and both update variants are selected by default.
 
 <div class="dominance-explorer" data-asset="DGR1R"><p>Open this section to load the interactive curve explorer.</p></div>
 
@@ -4953,7 +4955,7 @@ The starting point is the unmodified current portfolio, which already contains 2
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
-The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Select one or more portfolios simultaneously; every difference curve is the concrete share component minus the selected portfolio component. Current and both update variants are selected by default.
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Select one or more portfolios and, separately, any other Baltic shares. Every difference curve is the concrete analysed share component minus the selected portfolio or share component. Current and both update variants are selected by default.
 
 <div class="dominance-explorer" data-asset="TKM1T"><p>Open this section to load the interactive curve explorer.</p></div>
 
@@ -5236,7 +5238,7 @@ The starting point is the unmodified current portfolio, which already contains 1
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
-The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Select one or more portfolios simultaneously; every difference curve is the concrete share component minus the selected portfolio component. Current and both update variants are selected by default.
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Select one or more portfolios and, separately, any other Baltic shares. Every difference curve is the concrete analysed share component minus the selected portfolio or share component. Current and both update variants are selected by default.
 
 <div class="dominance-explorer" data-asset="HAE1T"><p>Open this section to load the interactive curve explorer.</p></div>
 
@@ -5525,7 +5527,7 @@ The starting point is the unmodified current portfolio, which already contains 0
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
-The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Select one or more portfolios simultaneously; every difference curve is the concrete share component minus the selected portfolio component. Current and both update variants are selected by default.
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Select one or more portfolios and, separately, any other Baltic shares. Every difference curve is the concrete analysed share component minus the selected portfolio or share component. Current and both update variants are selected by default.
 
 <div class="dominance-explorer" data-asset="LHV1T"><p>Open this section to load the interactive curve explorer.</p></div>
 
@@ -5802,7 +5804,7 @@ The removed weight is distributed proportionally across all remaining holdings, 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
-The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Select one or more portfolios simultaneously; every difference curve is the concrete share component minus the selected portfolio component. Current and both update variants are selected by default.
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Select one or more portfolios and, separately, any other Baltic shares. Every difference curve is the concrete analysed share component minus the selected portfolio or share component. Current and both update variants are selected by default.
 
 <div class="dominance-explorer" data-asset="TVE1T"><p>Open this section to load the interactive curve explorer.</p></div>
 
@@ -6089,7 +6091,7 @@ The starting point is the unmodified current portfolio, which already contains 0
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
 
-The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Select one or more portfolios simultaneously; every difference curve is the concrete share component minus the selected portfolio component. Current and both update variants are selected by default.
+The interactive calculation starts from one common empirical FSD grid. SSD is its cumulative integral and TSD is the cumulative integral of that SSD; neither higher-order component is loaded independently. Use the x-position slider or the mouse wheel to move the selected interval. Select one or more portfolios and, separately, any other Baltic shares. Every difference curve is the concrete analysed share component minus the selected portfolio or share component. Current and both update variants are selected by default.
 
 <div class="dominance-explorer" data-asset="CPA1T"><p>Open this section to load the interactive curve explorer.</p></div>
 
@@ -6804,21 +6806,33 @@ function initialiseDominanceExplorer(box) {
   if (box.dataset.loaded) return;
   box.dataset.loaded = 'loading';
   const profile = box.dataset.asset, target = box.dataset.target || profile;
-  fetch(`interactive/dominance/${profile}.json`).then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); }).then(data => {
+  const loadJson=url=>fetch(url).then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json();});
+  Promise.all([loadJson(`interactive/dominance/${profile}.json`),profile==='Portfolio'?Promise.resolve(null):loadJson('interactive/dominance/Portfolio.json')]).then(([data,universe]) => {
+    // Individual files stay compact.  Other-share curves are interpolated from
+    // the one shared universe file only when a stock profile is opened.
+    if(universe){
+      data.series_types=universe.series_types||{};
+      const interpolate=(xs,ys,x)=>{if(x<=xs[0])return ys[0];if(x>=xs[xs.length-1])return ys[ys.length-1];let lo=0,hi=xs.length-1;while(hi-lo>1){const mid=(lo+hi)>>1;if(xs[mid]<=x)lo=mid;else hi=mid;}const w=(x-xs[lo])/(xs[hi]-xs[lo]||1);return ys[lo]+w*(ys[hi]-ys[lo]);};
+      Object.keys(data.orders).forEach(component=>{const destination=data.orders[component],source=universe.orders[component];Object.entries(source.series).forEach(([name,values])=>{if(!destination.series[name])destination.series[name]=destination.x.map(x=>interpolate(source.x,values,x));});});
+    }
     const displayName=name=>name==='Baltic_NetSD'?'Update: sales allowed':name==='curent_update_baltic'?'Update: no sales':name;
     const first=data.orders.FSD, seriesNames=Object.keys(first.series), preferred=profile==='Portfolio'?['Current','Baltic_NetSD','curent_update_baltic','SP500']:['Current','SP500','curent_update_baltic','Baltic_NetSD'];
-    const benchmarkPool=profile==='Portfolio'?seriesNames:seriesNames.filter(x=>x!==target);
-    const benchmarks=[...preferred.filter(x=>benchmarkPool.includes(x)),...benchmarkPool.filter(x=>!preferred.includes(x))];
     const portfolioNames=seriesNames.filter(x=>(data.series_types||{})[x]==='portfolio');
     const shareNames=seriesNames.filter(x=>(data.series_types||{})[x]==='share');
+    const benchmarkPool=profile==='Portfolio'?seriesNames:portfolioNames;
+    const benchmarks=[...preferred.filter(x=>benchmarkPool.includes(x)),...benchmarkPool.filter(x=>!preferred.includes(x))];
+    const otherShares=shareNames.filter(x=>x!==target);
     const defaultSelected=new Set(preferred.filter(x=>seriesNames.includes(x)).slice(0,3));
     const defaultComparators=new Set(['Current','Baltic_NetSD','curent_update_baltic'].filter(x=>benchmarks.includes(x)));
     box.innerHTML = `<div class="dominance-controls">
       <label>Component<select class="dom-order"><option>FSD</option><option>SSD</option><option>TSD</option></select></label>
       ${profile==='Portfolio'?`<label>Comparison base<select class="dom-benchmark">${benchmarks.map(x=>`<option value="${x}"${x===target?' selected':''}>${displayName(x)}</option>`).join('')}</select></label>`:
-      `<label class="dominance-multiselect-wrap">Comparison portfolios
-        <select class="dom-comparators dominance-multiselect" multiple size="7">${benchmarks.map(x=>`<option value="${x}"${defaultComparators.has(x)?' selected':''}>${displayName(x)}</option>`).join('')}</select>
-        <small>Use Ctrl (Windows) or Cmd (Mac) to select several portfolios. Every difference is ${target} minus the selected portfolio.</small></label>`}
+      `<label class="dominance-compact-wrap">Comparison portfolios
+        <select class="dom-comparators dominance-multiselect dominance-compact-select" multiple size="5">${benchmarks.map(x=>`<option value="${x}"${defaultComparators.has(x)?' selected':''}>${displayName(x)}</option>`).join('')}</select>
+        <small>Ctrl/Cmd selects several.</small></label>
+       <label class="dominance-compact-wrap">Other shares
+        <select class="dom-share-comparators dominance-multiselect dominance-compact-select" multiple size="5">${otherShares.map(x=>`<option value="${x}">${x}</option>`).join('')}</select>
+        <small>Optional share comparisons.</small></label>`}
       ${profile==='Portfolio'?`<label class="dominance-multiselect-wrap">Displayed portfolios and shares
         <select class="dominance-multiselect" multiple size="10">
           <optgroup label="Portfolios">${portfolioNames.map(x=>`<option value="${x}"${defaultSelected.has(x)?' selected':''}>${displayName(x)}</option>`).join('')}</optgroup>
@@ -6828,11 +6842,11 @@ function initialiseDominanceExplorer(box) {
       <label>Horizontal magnification: <output class="dom-hout">8x</output><input class="dom-hzoom" type="range" min="1" max="100" value="8" step="1"></label>
       <button class="dom-save" type="button">Save high-resolution PNG</button>
     </div><canvas class="dominance-canvas"></canvas><p class="dominance-status">Move the x-position slider, click a left-hand graph, or use the mouse wheel over it. The right-hand panels magnify the selected interval.</p>`;
-    const canvas=box.querySelector('canvas'), order=box.querySelector('.dom-order'), benchmark=box.querySelector('.dom-benchmark'), comparators=box.querySelector('.dom-comparators'), multi=profile==='Portfolio'?box.querySelector('.dominance-multiselect'):null, xpos=box.querySelector('.dom-xpos'), hz=box.querySelector('.dom-hzoom'), status=box.querySelector('.dominance-status');
+    const canvas=box.querySelector('canvas'), order=box.querySelector('.dom-order'), benchmark=box.querySelector('.dom-benchmark'), comparators=box.querySelector('.dom-comparators'), shareComparators=box.querySelector('.dom-share-comparators'), multi=profile==='Portfolio'?box.querySelector('.dominance-multiselect'):null, xpos=box.querySelector('.dom-xpos'), hz=box.querySelector('.dom-hzoom'), status=box.querySelector('.dominance-status');
     let centre=.5, hit=[];
     function render() {
       const d=data.orders[order.value], x=d.x, allNames=Object.keys(d.series), selected=multi?[...multi.selectedOptions].map(o=>o.value):[];
-      const selectedComparators=comparators?[...comparators.selectedOptions].map(o=>o.value):[];
+      const selectedComparators=[...(comparators?[...comparators.selectedOptions].map(o=>o.value):[]),...(shareComparators?[...shareComparators.selectedOptions].map(o=>o.value):[])];
       const bench=profile==='Portfolio'?benchmark.value:(selectedComparators[0]||'');
       // A share profile always compares that concrete share with the selected
       // portfolio.  The portfolio explorer instead uses the selected benchmark
@@ -6868,13 +6882,13 @@ function initialiseDominanceExplorer(box) {
       const ym=yrange(0,n-1); axes(main,x[0],x[n-1],ym[0],ym[1],`${displayName(baseName)}: ${order.value} components - scroll or click to move`); plot(main,0,n-1,ym[0],ym[1]);
       const sx0=main.l+(x[lo]-x[0])/(x[n-1]-x[0])*(main.r-main.l), sx1=main.l+(x[hi]-x[0])/(x[n-1]-x[0])*(main.r-main.l);ctx.strokeStyle='#d7191c';ctx.lineWidth=2;ctx.strokeRect(sx0,main.t,Math.max(2,sx1-sx0),main.b-main.t);
       let yz=yrange(lo,hi); axes(zoom,x[lo],x[hi],yz[0],yz[1],`Selected component interval (${hz.value}x horizontal)`); plot(zoom,lo,hi,yz[0],yz[1]);
-      let yd=differenceRange(0,n-1);axes(diff,x[0],x[n-1],yd[0],yd[1],profile==='Portfolio'?`${displayName(baseName)} minus selected portfolios and shares`:`${target} minus selected portfolios`);plotDifference(diff,0,n-1,yd[0],yd[1]);ctx.strokeStyle='#d7191c';ctx.lineWidth=2;ctx.strokeRect(sx0,diff.t,Math.max(2,sx1-sx0),diff.b-diff.t);
+      let yd=differenceRange(0,n-1);axes(diff,x[0],x[n-1],yd[0],yd[1],profile==='Portfolio'?`${displayName(baseName)} minus selected portfolios and shares`:`${target} minus selected portfolios and shares`);plotDifference(diff,0,n-1,yd[0],yd[1]);ctx.strokeStyle='#d7191c';ctx.lineWidth=2;ctx.strokeRect(sx0,diff.t,Math.max(2,sx1-sx0),diff.b-diff.t);
       let ydz=differenceRange(lo,hi);axes(diffZoom,x[lo],x[hi],ydz[0],ydz[1],`Selected difference interval (${hz.value}x horizontal)`);plotDifference(diffZoom,lo,hi,ydz[0],ydz[1]);
       const legend=names; legend.forEach((k,j)=>{const style=seriesStyle(k,names.indexOf(k)),lx=L+(j%3)*Math.max(190,(W-L-R)/3),ly=20+Math.floor(j/3)*20;ctx.strokeStyle=style.colour;ctx.setLineDash(style.dash);ctx.lineWidth=style.width;ctx.beginPath();ctx.moveTo(lx,ly);ctx.lineTo(lx+24,ly);ctx.stroke();ctx.setLineDash([]);ctx.fillStyle='#263d4b';ctx.fillText(displayName(k),lx+31,ly+4);});
       const values=names.map(k=>`${displayName(k)}=${d.series[k][mid].toExponential(5)}`).join(' | '); status.textContent=`x=${x[mid].toFixed(6)}; selected interval [${x[lo].toFixed(6)}, ${x[hi].toFixed(6)}]; ${displayName(baseName)}-${displayName(focus)}=${difference[mid].toExponential(5)} | ${values}`;
       xpos.value=Math.round(centre*1000);box.querySelector('.dom-xout').value=`${(100*centre).toFixed(1)}%`;box.querySelector('.dom-hout').value=`${hz.value}x`;
     }
-    [order,benchmark,comparators,hz,multi].filter(Boolean).forEach(el=>el.addEventListener('input',render));xpos.addEventListener('input',()=>{centre=Number(xpos.value)/1000;render();});
+    [order,benchmark,comparators,shareComparators,hz,multi].filter(Boolean).forEach(el=>el.addEventListener('input',render));xpos.addEventListener('input',()=>{centre=Number(xpos.value)/1000;render();});
     canvas.addEventListener('click',e=>{const r=canvas.getBoundingClientRect(),px=e.clientX-r.left,py=e.clientY-r.top;const p=hit.find(q=>px>=q.l&&px<=q.r&&py>=q.t&&py<=q.b);if(p){centre=Math.max(0,Math.min(1,(px-p.l)/(p.r-p.l)));render();}});
     canvas.addEventListener('wheel',e=>{const r=canvas.getBoundingClientRect(),px=e.clientX-r.left,py=e.clientY-r.top;if(hit.some(q=>px>=q.l&&px<=q.r&&py>=q.t&&py<=q.b)){e.preventDefault();centre=Math.max(0,Math.min(1,centre+Math.sign(e.deltaY)*.015));render();}},{passive:false});
     box.querySelector('.dom-save').addEventListener('click',()=>{const a=document.createElement('a');a.download=`${profile==='Portfolio'?benchmark.value:target}_${order.value}_interactive.png`;a.href=canvas.toDataURL('image/png');a.click();});
