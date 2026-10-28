@@ -107,7 +107,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-28 10:38 (Europe/Vilnius); return analysis through 2026-10-27; valuation prices through 2026-10-27
+# Baltic investment plan - updated 2026-10-28 11:21 (Europe/Vilnius); return analysis through 2026-10-27; valuation prices through 2026-10-27
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -163,7 +163,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![KNE1L return histogram](figures/stock_profiles/KNE1L_histogram.png?v=1793120614)
+![KNE1L return histogram](figures/stock_profiles/KNE1L_histogram.png?v=1793178668)
 
 </details>
 
@@ -292,7 +292,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![KNE1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/KNE1L_all_frontiers.png?v=1793176710)
+![KNE1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/KNE1L_all_frontiers.png?v=1793179200)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -301,7 +301,7 @@ The highlighted circle is the selected share and pale circles are the remaining 
 <details markdown="1">
 <summary>Mean return and five-year average dividends versus all portfolios</summary>
 
-![KNE1L mean return and average dividends with all portfolios](figures/stock_profiles/KNE1L_return_dividend.png?v=1793176710)
+![KNE1L mean return and average dividends with all portfolios](figures/stock_profiles/KNE1L_return_dividend.png?v=1793179200)
 
 The selected share is highlighted. The horizontal coordinate is the realised mean one-period return from the common Baltic return sample. A portfolio's vertical coordinate is the portfolio-weighted five-year average annual dividend per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. The dividend axis is descriptive and does not represent a forward dividend forecast.
 
@@ -382,7 +382,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![KNE1L high-resolution stochastic dominance](figures/stock_profiles/KNE1L_FSD_SSD_TSD.png?v=1793120908)
+![KNE1L high-resolution stochastic dominance](figures/stock_profiles/KNE1L_FSD_SSD_TSD.png?v=1793179045)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -427,7 +427,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![VLP1L return histogram](figures/stock_profiles/VLP1L_histogram.png?v=1793120613)
+![VLP1L return histogram](figures/stock_profiles/VLP1L_histogram.png?v=1793178668)
 
 </details>
 
@@ -555,7 +555,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![VLP1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/VLP1L_all_frontiers.png?v=1793176706)
+![VLP1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/VLP1L_all_frontiers.png?v=1793179197)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -564,7 +564,7 @@ The highlighted circle is the selected share and pale circles are the remaining 
 <details markdown="1">
 <summary>Mean return and five-year average dividends versus all portfolios</summary>
 
-![VLP1L mean return and average dividends with all portfolios](figures/stock_profiles/VLP1L_return_dividend.png?v=1793176706)
+![VLP1L mean return and average dividends with all portfolios](figures/stock_profiles/VLP1L_return_dividend.png?v=1793179197)
 
 The selected share is highlighted. The horizontal coordinate is the realised mean one-period return from the common Baltic return sample. A portfolio's vertical coordinate is the portfolio-weighted five-year average annual dividend per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. The dividend axis is descriptive and does not represent a forward dividend forecast.
 
@@ -645,7 +645,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![VLP1L high-resolution stochastic dominance](figures/stock_profiles/VLP1L_FSD_SSD_TSD.png?v=1793120911)
+![VLP1L high-resolution stochastic dominance](figures/stock_profiles/VLP1L_FSD_SSD_TSD.png?v=1793179048)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -690,7 +690,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![MRK1T return histogram](figures/stock_profiles/MRK1T_histogram.png?v=1793120636)
+![MRK1T return histogram](figures/stock_profiles/MRK1T_histogram.png?v=1793178695)
 
 </details>
 
@@ -837,7 +837,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![MRK1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/MRK1T_all_frontiers.png?v=1793176707)
+![MRK1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/MRK1T_all_frontiers.png?v=1793179198)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -846,7 +846,7 @@ The highlighted circle is the selected share and pale circles are the remaining 
 <details markdown="1">
 <summary>Mean return and five-year average dividends versus all portfolios</summary>
 
-![MRK1T mean return and average dividends with all portfolios](figures/stock_profiles/MRK1T_return_dividend.png?v=1793176707)
+![MRK1T mean return and average dividends with all portfolios](figures/stock_profiles/MRK1T_return_dividend.png?v=1793179198)
 
 The selected share is highlighted. The horizontal coordinate is the realised mean one-period return from the common Baltic return sample. A portfolio's vertical coordinate is the portfolio-weighted five-year average annual dividend per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. The dividend axis is descriptive and does not represent a forward dividend forecast.
 
@@ -927,7 +927,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![MRK1T high-resolution stochastic dominance](figures/stock_profiles/MRK1T_FSD_SSD_TSD.png?v=1793120919)
+![MRK1T high-resolution stochastic dominance](figures/stock_profiles/MRK1T_FSD_SSD_TSD.png?v=1793179056)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -972,7 +972,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![MOLNR return histogram](figures/stock_profiles/MOLNR_histogram.png?v=1793120591)
+![MOLNR return histogram](figures/stock_profiles/MOLNR_histogram.png?v=1793178637)
 
 </details>
 
@@ -1087,7 +1087,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![MOLNR Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/MOLNR_all_frontiers.png?v=1793176714)
+![MOLNR Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/MOLNR_all_frontiers.png?v=1793179204)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -1096,7 +1096,7 @@ The highlighted circle is the selected share and pale circles are the remaining 
 <details markdown="1">
 <summary>Mean return and five-year average dividends versus all portfolios</summary>
 
-![MOLNR mean return and average dividends with all portfolios](figures/stock_profiles/MOLNR_return_dividend.png?v=1793176714)
+![MOLNR mean return and average dividends with all portfolios](figures/stock_profiles/MOLNR_return_dividend.png?v=1793179204)
 
 The selected share is highlighted. The horizontal coordinate is the realised mean one-period return from the common Baltic return sample. A portfolio's vertical coordinate is the portfolio-weighted five-year average annual dividend per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. The dividend axis is descriptive and does not represent a forward dividend forecast.
 
@@ -1177,7 +1177,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![MOLNR high-resolution stochastic dominance](figures/stock_profiles/MOLNR_FSD_SSD_TSD.png?v=1793120833)
+![MOLNR high-resolution stochastic dominance](figures/stock_profiles/MOLNR_FSD_SSD_TSD.png?v=1793178943)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -1222,7 +1222,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![RSU1L return histogram](figures/stock_profiles/RSU1L_histogram.png?v=1793120591)
+![RSU1L return histogram](figures/stock_profiles/RSU1L_histogram.png?v=1793178637)
 
 </details>
 
@@ -1337,7 +1337,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![RSU1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/RSU1L_all_frontiers.png?v=1793176711)
+![RSU1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/RSU1L_all_frontiers.png?v=1793179201)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -1346,7 +1346,7 @@ The highlighted circle is the selected share and pale circles are the remaining 
 <details markdown="1">
 <summary>Mean return and five-year average dividends versus all portfolios</summary>
 
-![RSU1L mean return and average dividends with all portfolios](figures/stock_profiles/RSU1L_return_dividend.png?v=1793176711)
+![RSU1L mean return and average dividends with all portfolios](figures/stock_profiles/RSU1L_return_dividend.png?v=1793179202)
 
 The selected share is highlighted. The horizontal coordinate is the realised mean one-period return from the common Baltic return sample. A portfolio's vertical coordinate is the portfolio-weighted five-year average annual dividend per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. The dividend axis is descriptive and does not represent a forward dividend forecast.
 
@@ -1427,7 +1427,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![RSU1L high-resolution stochastic dominance](figures/stock_profiles/RSU1L_FSD_SSD_TSD.png?v=1793120816)
+![RSU1L high-resolution stochastic dominance](figures/stock_profiles/RSU1L_FSD_SSD_TSD.png?v=1793178921)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -1472,7 +1472,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![APG1L return histogram](figures/stock_profiles/APG1L_histogram.png?v=1793120569)
+![APG1L return histogram](figures/stock_profiles/APG1L_histogram.png?v=1793178609)
 
 </details>
 
@@ -1647,7 +1647,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![APG1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/APG1L_all_frontiers.png?v=1793176708)
+![APG1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/APG1L_all_frontiers.png?v=1793179198)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -1656,7 +1656,7 @@ The highlighted circle is the selected share and pale circles are the remaining 
 <details markdown="1">
 <summary>Mean return and five-year average dividends versus all portfolios</summary>
 
-![APG1L mean return and average dividends with all portfolios](figures/stock_profiles/APG1L_return_dividend.png?v=1793176708)
+![APG1L mean return and average dividends with all portfolios](figures/stock_profiles/APG1L_return_dividend.png?v=1793179199)
 
 The selected share is highlighted. The horizontal coordinate is the realised mean one-period return from the common Baltic return sample. A portfolio's vertical coordinate is the portfolio-weighted five-year average annual dividend per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. The dividend axis is descriptive and does not represent a forward dividend forecast.
 
@@ -1737,7 +1737,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![APG1L high-resolution stochastic dominance](figures/stock_profiles/APG1L_FSD_SSD_TSD.png?v=1793120730)
+![APG1L high-resolution stochastic dominance](figures/stock_profiles/APG1L_FSD_SSD_TSD.png?v=1793178818)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -1782,7 +1782,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![IGN1L return histogram](figures/stock_profiles/IGN1L_histogram.png?v=1793120614)
+![IGN1L return histogram](figures/stock_profiles/IGN1L_histogram.png?v=1793178668)
 
 </details>
 
@@ -1921,7 +1921,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![IGN1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/IGN1L_all_frontiers.png?v=1793176716)
+![IGN1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/IGN1L_all_frontiers.png?v=1793179207)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -1930,7 +1930,7 @@ The highlighted circle is the selected share and pale circles are the remaining 
 <details markdown="1">
 <summary>Mean return and five-year average dividends versus all portfolios</summary>
 
-![IGN1L mean return and average dividends with all portfolios](figures/stock_profiles/IGN1L_return_dividend.png?v=1793176717)
+![IGN1L mean return and average dividends with all portfolios](figures/stock_profiles/IGN1L_return_dividend.png?v=1793179207)
 
 The selected share is highlighted. The horizontal coordinate is the realised mean one-period return from the common Baltic return sample. A portfolio's vertical coordinate is the portfolio-weighted five-year average annual dividend per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. The dividend axis is descriptive and does not represent a forward dividend forecast.
 
@@ -2011,7 +2011,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![IGN1L high-resolution stochastic dominance](figures/stock_profiles/IGN1L_FSD_SSD_TSD.png?v=1793120911)
+![IGN1L high-resolution stochastic dominance](figures/stock_profiles/IGN1L_FSD_SSD_TSD.png?v=1793179048)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -2056,7 +2056,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![PZV1L return histogram](figures/stock_profiles/PZV1L_histogram.png?v=1793120569)
+![PZV1L return histogram](figures/stock_profiles/PZV1L_histogram.png?v=1793178609)
 
 </details>
 
@@ -2184,7 +2184,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![PZV1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/PZV1L_all_frontiers.png?v=1793176717)
+![PZV1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/PZV1L_all_frontiers.png?v=1793179208)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -2193,7 +2193,7 @@ The highlighted circle is the selected share and pale circles are the remaining 
 <details markdown="1">
 <summary>Mean return and five-year average dividends versus all portfolios</summary>
 
-![PZV1L mean return and average dividends with all portfolios](figures/stock_profiles/PZV1L_return_dividend.png?v=1793176717)
+![PZV1L mean return and average dividends with all portfolios](figures/stock_profiles/PZV1L_return_dividend.png?v=1793179208)
 
 The selected share is highlighted. The horizontal coordinate is the realised mean one-period return from the common Baltic return sample. A portfolio's vertical coordinate is the portfolio-weighted five-year average annual dividend per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. The dividend axis is descriptive and does not represent a forward dividend forecast.
 
@@ -2274,7 +2274,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![PZV1L high-resolution stochastic dominance](figures/stock_profiles/PZV1L_FSD_SSD_TSD.png?v=1793120736)
+![PZV1L high-resolution stochastic dominance](figures/stock_profiles/PZV1L_FSD_SSD_TSD.png?v=1793178828)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -2319,7 +2319,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![AKO1L return histogram](figures/stock_profiles/AKO1L_histogram.png?v=1793120569)
+![AKO1L return histogram](figures/stock_profiles/AKO1L_histogram.png?v=1793178609)
 
 </details>
 
@@ -2447,7 +2447,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![AKO1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/AKO1L_all_frontiers.png?v=1793176715)
+![AKO1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/AKO1L_all_frontiers.png?v=1793179205)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -2456,7 +2456,7 @@ The highlighted circle is the selected share and pale circles are the remaining 
 <details markdown="1">
 <summary>Mean return and five-year average dividends versus all portfolios</summary>
 
-![AKO1L mean return and average dividends with all portfolios](figures/stock_profiles/AKO1L_return_dividend.png?v=1793176715)
+![AKO1L mean return and average dividends with all portfolios](figures/stock_profiles/AKO1L_return_dividend.png?v=1793179205)
 
 The selected share is highlighted. The horizontal coordinate is the realised mean one-period return from the common Baltic return sample. A portfolio's vertical coordinate is the portfolio-weighted five-year average annual dividend per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. The dividend axis is descriptive and does not represent a forward dividend forecast.
 
@@ -2537,7 +2537,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![AKO1L high-resolution stochastic dominance](figures/stock_profiles/AKO1L_FSD_SSD_TSD.png?v=1793120743)
+![AKO1L high-resolution stochastic dominance](figures/stock_profiles/AKO1L_FSD_SSD_TSD.png?v=1793178835)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -2582,7 +2582,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![ROE1L return histogram](figures/stock_profiles/ROE1L_histogram.png?v=1793120569)
+![ROE1L return histogram](figures/stock_profiles/ROE1L_histogram.png?v=1793178609)
 
 </details>
 
@@ -2718,7 +2718,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![ROE1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/ROE1L_all_frontiers.png?v=1793176710)
+![ROE1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/ROE1L_all_frontiers.png?v=1793179201)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -2727,7 +2727,7 @@ The highlighted circle is the selected share and pale circles are the remaining 
 <details markdown="1">
 <summary>Mean return and five-year average dividends versus all portfolios</summary>
 
-![ROE1L mean return and average dividends with all portfolios](figures/stock_profiles/ROE1L_return_dividend.png?v=1793176711)
+![ROE1L mean return and average dividends with all portfolios](figures/stock_profiles/ROE1L_return_dividend.png?v=1793179201)
 
 The selected share is highlighted. The horizontal coordinate is the realised mean one-period return from the common Baltic return sample. A portfolio's vertical coordinate is the portfolio-weighted five-year average annual dividend per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. The dividend axis is descriptive and does not represent a forward dividend forecast.
 
@@ -2808,7 +2808,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![ROE1L high-resolution stochastic dominance](figures/stock_profiles/ROE1L_FSD_SSD_TSD.png?v=1793120739)
+![ROE1L high-resolution stochastic dominance](figures/stock_profiles/ROE1L_FSD_SSD_TSD.png?v=1793178829)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -2853,7 +2853,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![TAL1T return histogram](figures/stock_profiles/TAL1T_histogram.png?v=1793120590)
+![TAL1T return histogram](figures/stock_profiles/TAL1T_histogram.png?v=1793178637)
 
 </details>
 
@@ -3005,7 +3005,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![TAL1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TAL1T_all_frontiers.png?v=1793176709)
+![TAL1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TAL1T_all_frontiers.png?v=1793179199)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -3014,7 +3014,7 @@ The highlighted circle is the selected share and pale circles are the remaining 
 <details markdown="1">
 <summary>Mean return and five-year average dividends versus all portfolios</summary>
 
-![TAL1T mean return and average dividends with all portfolios](figures/stock_profiles/TAL1T_return_dividend.png?v=1793176709)
+![TAL1T mean return and average dividends with all portfolios](figures/stock_profiles/TAL1T_return_dividend.png?v=1793179199)
 
 The selected share is highlighted. The horizontal coordinate is the realised mean one-period return from the common Baltic return sample. A portfolio's vertical coordinate is the portfolio-weighted five-year average annual dividend per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. The dividend axis is descriptive and does not represent a forward dividend forecast.
 
@@ -3095,7 +3095,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![TAL1T high-resolution stochastic dominance](figures/stock_profiles/TAL1T_FSD_SSD_TSD.png?v=1793120822)
+![TAL1T high-resolution stochastic dominance](figures/stock_profiles/TAL1T_FSD_SSD_TSD.png?v=1793178931)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -3140,7 +3140,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![EFT1T return histogram](figures/stock_profiles/EFT1T_histogram.png?v=1793120614)
+![EFT1T return histogram](figures/stock_profiles/EFT1T_histogram.png?v=1793178668)
 
 </details>
 
@@ -3288,7 +3288,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![EFT1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/EFT1T_all_frontiers.png?v=1793176714)
+![EFT1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/EFT1T_all_frontiers.png?v=1793179205)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -3297,7 +3297,7 @@ The highlighted circle is the selected share and pale circles are the remaining 
 <details markdown="1">
 <summary>Mean return and five-year average dividends versus all portfolios</summary>
 
-![EFT1T mean return and average dividends with all portfolios](figures/stock_profiles/EFT1T_return_dividend.png?v=1793176715)
+![EFT1T mean return and average dividends with all portfolios](figures/stock_profiles/EFT1T_return_dividend.png?v=1793179205)
 
 The selected share is highlighted. The horizontal coordinate is the realised mean one-period return from the common Baltic return sample. A portfolio's vertical coordinate is the portfolio-weighted five-year average annual dividend per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. The dividend axis is descriptive and does not represent a forward dividend forecast.
 
@@ -3378,7 +3378,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![EFT1T high-resolution stochastic dominance](figures/stock_profiles/EFT1T_FSD_SSD_TSD.png?v=1793120903)
+![EFT1T high-resolution stochastic dominance](figures/stock_profiles/EFT1T_FSD_SSD_TSD.png?v=1793179037)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -3423,7 +3423,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![SAF1R return histogram](figures/stock_profiles/SAF1R_histogram.png?v=1793120590)
+![SAF1R return histogram](figures/stock_profiles/SAF1R_histogram.png?v=1793178637)
 
 </details>
 
@@ -3555,7 +3555,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![SAF1R Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/SAF1R_all_frontiers.png?v=1793176705)
+![SAF1R Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/SAF1R_all_frontiers.png?v=1793179196)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -3564,7 +3564,7 @@ The highlighted circle is the selected share and pale circles are the remaining 
 <details markdown="1">
 <summary>Mean return and five-year average dividends versus all portfolios</summary>
 
-![SAF1R mean return and average dividends with all portfolios](figures/stock_profiles/SAF1R_return_dividend.png?v=1793176705)
+![SAF1R mean return and average dividends with all portfolios](figures/stock_profiles/SAF1R_return_dividend.png?v=1793179196)
 
 The selected share is highlighted. The horizontal coordinate is the realised mean one-period return from the common Baltic return sample. A portfolio's vertical coordinate is the portfolio-weighted five-year average annual dividend per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. The dividend axis is descriptive and does not represent a forward dividend forecast.
 
@@ -3645,7 +3645,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![SAF1R high-resolution stochastic dominance](figures/stock_profiles/SAF1R_FSD_SSD_TSD.png?v=1793120830)
+![SAF1R high-resolution stochastic dominance](figures/stock_profiles/SAF1R_FSD_SSD_TSD.png?v=1793178938)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -3690,7 +3690,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![TSM1T return histogram](figures/stock_profiles/TSM1T_histogram.png?v=1793120591)
+![TSM1T return histogram](figures/stock_profiles/TSM1T_histogram.png?v=1793178637)
 
 </details>
 
@@ -3832,7 +3832,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![TSM1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TSM1T_all_frontiers.png?v=1793176716)
+![TSM1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TSM1T_all_frontiers.png?v=1793179206)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -3841,7 +3841,7 @@ The highlighted circle is the selected share and pale circles are the remaining 
 <details markdown="1">
 <summary>Mean return and five-year average dividends versus all portfolios</summary>
 
-![TSM1T mean return and average dividends with all portfolios](figures/stock_profiles/TSM1T_return_dividend.png?v=1793176716)
+![TSM1T mean return and average dividends with all portfolios](figures/stock_profiles/TSM1T_return_dividend.png?v=1793179206)
 
 The selected share is highlighted. The horizontal coordinate is the realised mean one-period return from the common Baltic return sample. A portfolio's vertical coordinate is the portfolio-weighted five-year average annual dividend per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. The dividend axis is descriptive and does not represent a forward dividend forecast.
 
@@ -3922,7 +3922,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![TSM1T high-resolution stochastic dominance](figures/stock_profiles/TSM1T_FSD_SSD_TSD.png?v=1793120836)
+![TSM1T high-resolution stochastic dominance](figures/stock_profiles/TSM1T_FSD_SSD_TSD.png?v=1793178947)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -3967,7 +3967,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![GRG1L return histogram](figures/stock_profiles/GRG1L_histogram.png?v=1793120614)
+![GRG1L return histogram](figures/stock_profiles/GRG1L_histogram.png?v=1793178668)
 
 </details>
 
@@ -4059,7 +4059,7 @@ A direction reversal requires opposite fitted price slopes during the ten tradin
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![GRG1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/GRG1L_all_frontiers.png?v=1793176712)
+![GRG1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/GRG1L_all_frontiers.png?v=1793179202)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -4068,7 +4068,7 @@ The highlighted circle is the selected share and pale circles are the remaining 
 <details markdown="1">
 <summary>Mean return and five-year average dividends versus all portfolios</summary>
 
-![GRG1L mean return and average dividends with all portfolios](figures/stock_profiles/GRG1L_return_dividend.png?v=1793176712)
+![GRG1L mean return and average dividends with all portfolios](figures/stock_profiles/GRG1L_return_dividend.png?v=1793179202)
 
 The selected share is highlighted. The horizontal coordinate is the realised mean one-period return from the common Baltic return sample. A portfolio's vertical coordinate is the portfolio-weighted five-year average annual dividend per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. The dividend axis is descriptive and does not represent a forward dividend forecast.
 
@@ -4149,7 +4149,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![GRG1L high-resolution stochastic dominance](figures/stock_profiles/GRG1L_FSD_SSD_TSD.png?v=1793120897)
+![GRG1L high-resolution stochastic dominance](figures/stock_profiles/GRG1L_FSD_SSD_TSD.png?v=1793179030)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -4194,7 +4194,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![TEL1L return histogram](figures/stock_profiles/TEL1L_histogram.png?v=1793120614)
+![TEL1L return histogram](figures/stock_profiles/TEL1L_histogram.png?v=1793178667)
 
 </details>
 
@@ -4288,7 +4288,7 @@ A direction reversal requires opposite fitted price slopes during the ten tradin
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![TEL1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TEL1L_all_frontiers.png?v=1793176721)
+![TEL1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TEL1L_all_frontiers.png?v=1793179211)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -4297,7 +4297,7 @@ The highlighted circle is the selected share and pale circles are the remaining 
 <details markdown="1">
 <summary>Mean return and five-year average dividends versus all portfolios</summary>
 
-![TEL1L mean return and average dividends with all portfolios](figures/stock_profiles/TEL1L_return_dividend.png?v=1793176721)
+![TEL1L mean return and average dividends with all portfolios](figures/stock_profiles/TEL1L_return_dividend.png?v=1793179212)
 
 The selected share is highlighted. The horizontal coordinate is the realised mean one-period return from the common Baltic return sample. A portfolio's vertical coordinate is the portfolio-weighted five-year average annual dividend per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. The dividend axis is descriptive and does not represent a forward dividend forecast.
 
@@ -4372,7 +4372,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![TEL1L high-resolution stochastic dominance](figures/stock_profiles/TEL1L_FSD_SSD_TSD.png?v=1793120893)
+![TEL1L high-resolution stochastic dominance](figures/stock_profiles/TEL1L_FSD_SSD_TSD.png?v=1793179019)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -4417,7 +4417,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![DGR1R return histogram](figures/stock_profiles/DGR1R_histogram.png?v=1793120610)
+![DGR1R return histogram](figures/stock_profiles/DGR1R_histogram.png?v=1793178664)
 
 </details>
 
@@ -4592,7 +4592,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![DGR1R Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/DGR1R_all_frontiers.png?v=1793176718)
+![DGR1R Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/DGR1R_all_frontiers.png?v=1793179209)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -4601,7 +4601,7 @@ The highlighted circle is the selected share and pale circles are the remaining 
 <details markdown="1">
 <summary>Mean return and five-year average dividends versus all portfolios</summary>
 
-![DGR1R mean return and average dividends with all portfolios](figures/stock_profiles/DGR1R_return_dividend.png?v=1793176719)
+![DGR1R mean return and average dividends with all portfolios](figures/stock_profiles/DGR1R_return_dividend.png?v=1793179209)
 
 The selected share is highlighted. The horizontal coordinate is the realised mean one-period return from the common Baltic return sample. A portfolio's vertical coordinate is the portfolio-weighted five-year average annual dividend per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. The dividend axis is descriptive and does not represent a forward dividend forecast.
 
@@ -4682,7 +4682,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![DGR1R high-resolution stochastic dominance](figures/stock_profiles/DGR1R_FSD_SSD_TSD.png?v=1793120910)
+![DGR1R high-resolution stochastic dominance](figures/stock_profiles/DGR1R_FSD_SSD_TSD.png?v=1793179048)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -4727,7 +4727,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![TKM1T return histogram](figures/stock_profiles/TKM1T_histogram.png?v=1793120569)
+![TKM1T return histogram](figures/stock_profiles/TKM1T_histogram.png?v=1793178609)
 
 </details>
 
@@ -4872,7 +4872,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![TKM1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TKM1T_all_frontiers.png?v=1793176704)
+![TKM1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TKM1T_all_frontiers.png?v=1793179195)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -4881,7 +4881,7 @@ The highlighted circle is the selected share and pale circles are the remaining 
 <details markdown="1">
 <summary>Mean return and five-year average dividends versus all portfolios</summary>
 
-![TKM1T mean return and average dividends with all portfolios](figures/stock_profiles/TKM1T_return_dividend.png?v=1793176704)
+![TKM1T mean return and average dividends with all portfolios](figures/stock_profiles/TKM1T_return_dividend.png?v=1793179196)
 
 The selected share is highlighted. The horizontal coordinate is the realised mean one-period return from the common Baltic return sample. A portfolio's vertical coordinate is the portfolio-weighted five-year average annual dividend per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. The dividend axis is descriptive and does not represent a forward dividend forecast.
 
@@ -4962,7 +4962,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![TKM1T high-resolution stochastic dominance](figures/stock_profiles/TKM1T_FSD_SSD_TSD.png?v=1793120734)
+![TKM1T high-resolution stochastic dominance](figures/stock_profiles/TKM1T_FSD_SSD_TSD.png?v=1793178820)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -5007,7 +5007,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![HAE1T return histogram](figures/stock_profiles/HAE1T_histogram.png?v=1793120569)
+![HAE1T return histogram](figures/stock_profiles/HAE1T_histogram.png?v=1793178609)
 
 </details>
 
@@ -5155,7 +5155,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![HAE1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/HAE1T_all_frontiers.png?v=1793176713)
+![HAE1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/HAE1T_all_frontiers.png?v=1793179203)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -5164,7 +5164,7 @@ The highlighted circle is the selected share and pale circles are the remaining 
 <details markdown="1">
 <summary>Mean return and five-year average dividends versus all portfolios</summary>
 
-![HAE1T mean return and average dividends with all portfolios](figures/stock_profiles/HAE1T_return_dividend.png?v=1793176713)
+![HAE1T mean return and average dividends with all portfolios](figures/stock_profiles/HAE1T_return_dividend.png?v=1793179203)
 
 The selected share is highlighted. The horizontal coordinate is the realised mean one-period return from the common Baltic return sample. A portfolio's vertical coordinate is the portfolio-weighted five-year average annual dividend per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. The dividend axis is descriptive and does not represent a forward dividend forecast.
 
@@ -5245,7 +5245,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![HAE1T high-resolution stochastic dominance](figures/stock_profiles/HAE1T_FSD_SSD_TSD.png?v=1793120743)
+![HAE1T high-resolution stochastic dominance](figures/stock_profiles/HAE1T_FSD_SSD_TSD.png?v=1793178833)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -5290,7 +5290,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![LHV1T return histogram](figures/stock_profiles/LHV1T_histogram.png?v=1793120588)
+![LHV1T return histogram](figures/stock_profiles/LHV1T_histogram.png?v=1793178635)
 
 </details>
 
@@ -5444,7 +5444,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![LHV1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/LHV1T_all_frontiers.png?v=1793176718)
+![LHV1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/LHV1T_all_frontiers.png?v=1793179208)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -5453,7 +5453,7 @@ The highlighted circle is the selected share and pale circles are the remaining 
 <details markdown="1">
 <summary>Mean return and five-year average dividends versus all portfolios</summary>
 
-![LHV1T mean return and average dividends with all portfolios](figures/stock_profiles/LHV1T_return_dividend.png?v=1793176718)
+![LHV1T mean return and average dividends with all portfolios](figures/stock_profiles/LHV1T_return_dividend.png?v=1793179208)
 
 The selected share is highlighted. The horizontal coordinate is the realised mean one-period return from the common Baltic return sample. A portfolio's vertical coordinate is the portfolio-weighted five-year average annual dividend per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. The dividend axis is descriptive and does not represent a forward dividend forecast.
 
@@ -5534,7 +5534,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![LHV1T high-resolution stochastic dominance](figures/stock_profiles/LHV1T_FSD_SSD_TSD.png?v=1793120831)
+![LHV1T high-resolution stochastic dominance](figures/stock_profiles/LHV1T_FSD_SSD_TSD.png?v=1793178945)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -5579,7 +5579,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![TVE1T return histogram](figures/stock_profiles/TVE1T_histogram.png?v=1793120569)
+![TVE1T return histogram](figures/stock_profiles/TVE1T_histogram.png?v=1793178609)
 
 </details>
 
@@ -5727,7 +5727,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![TVE1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TVE1T_all_frontiers.png?v=1793176719)
+![TVE1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TVE1T_all_frontiers.png?v=1793179210)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -5736,7 +5736,7 @@ The highlighted circle is the selected share and pale circles are the remaining 
 <details markdown="1">
 <summary>Mean return and five-year average dividends versus all portfolios</summary>
 
-![TVE1T mean return and average dividends with all portfolios](figures/stock_profiles/TVE1T_return_dividend.png?v=1793176719)
+![TVE1T mean return and average dividends with all portfolios](figures/stock_profiles/TVE1T_return_dividend.png?v=1793179210)
 
 The selected share is highlighted. The horizontal coordinate is the realised mean one-period return from the common Baltic return sample. A portfolio's vertical coordinate is the portfolio-weighted five-year average annual dividend per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. The dividend axis is descriptive and does not represent a forward dividend forecast.
 
@@ -5811,7 +5811,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![TVE1T high-resolution stochastic dominance](figures/stock_profiles/TVE1T_FSD_SSD_TSD.png?v=1793120726)
+![TVE1T high-resolution stochastic dominance](figures/stock_profiles/TVE1T_FSD_SSD_TSD.png?v=1793178805)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -5856,7 +5856,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![CPA1T return histogram](figures/stock_profiles/CPA1T_histogram.png?v=1793120591)
+![CPA1T return histogram](figures/stock_profiles/CPA1T_histogram.png?v=1793178637)
 
 </details>
 
@@ -6008,7 +6008,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![CPA1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/CPA1T_all_frontiers.png?v=1793176720)
+![CPA1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/CPA1T_all_frontiers.png?v=1793179210)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -6017,7 +6017,7 @@ The highlighted circle is the selected share and pale circles are the remaining 
 <details markdown="1">
 <summary>Mean return and five-year average dividends versus all portfolios</summary>
 
-![CPA1T mean return and average dividends with all portfolios](figures/stock_profiles/CPA1T_return_dividend.png?v=1793176720)
+![CPA1T mean return and average dividends with all portfolios](figures/stock_profiles/CPA1T_return_dividend.png?v=1793179211)
 
 The selected share is highlighted. The horizontal coordinate is the realised mean one-period return from the common Baltic return sample. A portfolio's vertical coordinate is the portfolio-weighted five-year average annual dividend per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. The dividend axis is descriptive and does not represent a forward dividend forecast.
 
@@ -6098,7 +6098,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![CPA1T high-resolution stochastic dominance](figures/stock_profiles/CPA1T_FSD_SSD_TSD.png?v=1793120822)
+![CPA1T high-resolution stochastic dominance](figures/stock_profiles/CPA1T_FSD_SSD_TSD.png?v=1793178924)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -6284,6 +6284,24 @@ This scenario retains every current holding and uses purchases only. Additional 
 
 </details>
 
+<details markdown="1" class="trade-decision-section">
+<summary><strong>Update2 penalty allocation: sales allowed</strong></summary>
+
+<table class="trade-decision-table"><thead><tr><th><span>Share</span></th><th><span>Company</span></th><th><span>Current shares</span></th><th><span>Change</span></th><th><span>Target shares</span></th><th><span>Weight</span></th><th><span>Final value EUR</span></th></tr></thead><tbody><tr><td>VLP1L</td><td>Vilkyškių pieninė</td><td>42</td><td>+64</td><td>106</td><td>11.13%</td><td>1669.50</td></tr><tr><td>KNE1L</td><td>KN Energies</td><td>928</td><td>+2519</td><td>3447</td><td>10.94%</td><td>1640.77</td></tr><tr><td>APG1L</td><td>Apranga</td><td>200</td><td>+232</td><td>432</td><td>10.92%</td><td>1637.28</td></tr><tr><td>GRG1L</td><td>Grigeo Group</td><td>543</td><td>+881</td><td>1424</td><td>9.54%</td><td>1431.12</td></tr><tr><td>HAE1T</td><td>Harju Elekter Group</td><td>100</td><td>+143</td><td>243</td><td>8.52%</td><td>1273.32</td></tr><tr><td>MRK1T</td><td>Merko Ehitus</td><td>20</td><td>+22</td><td>42</td><td>7.59%</td><td>1131.90</td></tr><tr><td>PZV1L</td><td>Pieno žvaigždės</td><td>0</td><td>+592</td><td>592</td><td>7.09%</td><td>1062.64</td></tr><tr><td>DGR1R</td><td>DelfinGroup</td><td>0</td><td>+559</td><td>559</td><td>6.43%</td><td>964.28</td></tr><tr><td>AKO1L</td><td>Akola Group</td><td>0</td><td>+406</td><td>406</td><td>5.03%</td><td>753.13</td></tr><tr><td>MOLNR</td><td>J. Molner</td><td>0</td><td>+36</td><td>36</td><td>5.08%</td><td>741.60</td></tr><tr><td>TEL1L</td><td>Telia Lietuva</td><td>0</td><td>+286</td><td>286</td><td>4.30%</td><td>643.50</td></tr><tr><td>TVE1T</td><td>Tallinna Vesi</td><td>0</td><td>+37</td><td>37</td><td>2.73%</td><td>401.45</td></tr><tr><td>VIRSI</td><td>VIRŠI-A</td><td>0</td><td>+78</td><td>78</td><td>2.32%</td><td>344.76</td></tr><tr><td>CPA1T</td><td>Coop Pank</td><td>0</td><td>+122</td><td>122</td><td>1.92%</td><td>286.70</td></tr><tr><td>LHV1T</td><td>LHV Group</td><td>0</td><td>+75</td><td>75</td><td>1.65%</td><td>245.25</td></tr><tr><td>IGN1L</td><td>Ignitis grupė</td><td>0</td><td>+11</td><td>11</td><td>1.59%</td><td>237.60</td></tr><tr><td>TKM1T</td><td>TKM Grupp</td><td>288</td><td>-263</td><td>25</td><td>1.50%</td><td>222.50</td></tr><tr><td>ROE1L</td><td>Artea Bankas</td><td>416</td><td>-299</td><td>117</td><td>0.68%</td><td>102.61</td></tr><tr><td>TAL1T</td><td>Tallink Grupp</td><td>700</td><td>-551</td><td>149</td><td>0.64%</td><td>96.10</td></tr><tr><td>RSU1L</td><td>Rokiškio sūris</td><td>50</td><td>-37</td><td>13</td><td>0.38%</td><td>56.68</td></tr><tr><td>SAF1R</td><td>SAF Tehnika</td><td>100</td><td>-100</td><td>0</td><td>0.00%</td><td>0.00</td></tr><tr><td>TSM1T</td><td>Tallinna Sadam</td><td>330</td><td>-330</td><td>0</td><td>0.00%</td><td>0.00</td></tr></tbody></table>
+
+This stage-2 portfolio has netSD 0.890756, OUT=106, IN=0 and 10 new positions. The position penalty is used only after maximum netSD is protected.
+
+</details>
+
+<details markdown="1" class="trade-decision-section">
+<summary><strong>Update2 penalty allocation: no sales</strong></summary>
+
+<table class="trade-decision-table"><thead><tr><th><span>Share</span></th><th><span>Company</span></th><th><span>Current shares</span></th><th><span>Change</span></th><th><span>Target shares</span></th><th><span>Weight</span></th><th><span>Final value EUR</span></th></tr></thead><tbody><tr><td>TKM1T</td><td>TKM Grupp</td><td>288</td><td>+2</td><td>290</td><td>17.23%</td><td>2581.00</td></tr><tr><td>SAF1R</td><td>SAF Tehnika</td><td>100</td><td>+0</td><td>100</td><td>10.77%</td><td>1615.00</td></tr><tr><td>VLP1L</td><td>Vilkyškių pieninė</td><td>42</td><td>+42</td><td>84</td><td>8.88%</td><td>1323.00</td></tr><tr><td>MRK1T</td><td>Merko Ehitus</td><td>20</td><td>+26</td><td>46</td><td>8.34%</td><td>1239.70</td></tr><tr><td>APG1L</td><td>Apranga</td><td>200</td><td>+62</td><td>262</td><td>6.64%</td><td>992.98</td></tr><tr><td>TAL1T</td><td>Tallink Grupp</td><td>700</td><td>+744</td><td>1444</td><td>6.21%</td><td>931.38</td></tr><tr><td>KNE1L</td><td>KN Energies</td><td>928</td><td>+867</td><td>1795</td><td>5.70%</td><td>854.42</td></tr><tr><td>ROE1L</td><td>Artea Bankas</td><td>416</td><td>+389</td><td>805</td><td>4.71%</td><td>705.98</td></tr><tr><td>RSU1L</td><td>Rokiškio sūris</td><td>50</td><td>+104</td><td>154</td><td>4.49%</td><td>671.44</td></tr><tr><td>GRG1L</td><td>Grigeo Group</td><td>543</td><td>+99</td><td>642</td><td>4.31%</td><td>645.21</td></tr><tr><td>HAE1T</td><td>Harju Elekter Group</td><td>100</td><td>+19</td><td>119</td><td>4.17%</td><td>623.56</td></tr><tr><td>MOLNR</td><td>J. Molner</td><td>0</td><td>+28</td><td>28</td><td>3.91%</td><td>576.80</td></tr><tr><td>EFT1T</td><td>EfTEN Real Estate Fund</td><td>0</td><td>+24</td><td>24</td><td>3.19%</td><td>465.60</td></tr><tr><td>AKO1L</td><td>Akola Group</td><td>0</td><td>+236</td><td>236</td><td>2.92%</td><td>437.78</td></tr><tr><td>TSM1T</td><td>Tallinna Sadam</td><td>330</td><td>+0</td><td>330</td><td>2.64%</td><td>395.34</td></tr><tr><td>IGN1L</td><td>Ignitis grupė</td><td>0</td><td>+11</td><td>11</td><td>1.64%</td><td>237.60</td></tr><tr><td>PZV1L</td><td>Pieno žvaigždės</td><td>0</td><td>+85</td><td>85</td><td>1.03%</td><td>152.57</td></tr><tr><td>LHV1T</td><td>LHV Group</td><td>0</td><td>+39</td><td>39</td><td>0.86%</td><td>127.53</td></tr><tr><td>DGR1R</td><td>DelfinGroup</td><td>0</td><td>+73</td><td>73</td><td>0.85%</td><td>125.93</td></tr><tr><td>TVE1T</td><td>Tallinna Vesi</td><td>0</td><td>+11</td><td>11</td><td>0.83%</td><td>119.35</td></tr><tr><td>CPA1T</td><td>Coop Pank</td><td>0</td><td>+23</td><td>23</td><td>0.37%</td><td>54.05</td></tr><tr><td>TEL1L</td><td>Telia Lietuva</td><td>0</td><td>+22</td><td>22</td><td>0.33%</td><td>49.50</td></tr></tbody></table>
+
+This stage-2 portfolio has netSD 0.815126, OUT=97, IN=0 and 10 new positions. The position penalty is used only after maximum netSD is protected.
+
+</details>
+
 
 trade_shares is the optimiser's allocation change, not an instruction to trade immediately. current_execution_decision is the only action recommendation: BUY requires a material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD. trade_EUR is the signed transaction amount before costs.
 
@@ -6389,6 +6407,8 @@ curent_update_baltic keeps every currently held share, permits purchases only, a
 | Current | 0.613445 | 73 | 0 | 119 | 0.000356 | 0.004884 | 1581.209200 | 9077.814812 |
 | Optimised | 0.840336 | 100 | 0 | 119 | 0.000515 | 0.004377 | 2232.899386 | 15000.000000 |
 | curent_update_baltic | 0.815126 | 97 | 0 | 119 | 0.000464 | 0.004257 | 2373.926000 | 14925.724832 |
+| update2_penalty_sell | 0.890756 | 106 | 0 | 119 | 0.000574 | 0.004428 | 2113.635438 | 14942.690992 |
+| update2_penalty_no_sell | 0.815126 | 97 | 0 | 119 | 0.000464 | 0.004257 | 2373.926000 | 14925.724832 |
 
 </details>
 
@@ -6413,16 +6433,16 @@ Each share has two adjacent bars. The blue bar is the change required for Baltic
 </details>
 
 <details markdown="1" class="report-section" id="analytics-2-5">
-<summary><strong>2.5. Current portfolio and two update scenarios: diagnostics and validation</strong></summary>
+<summary><strong>2.5. Current portfolio and four update scenarios: diagnostics and validation</strong></summary>
 
-Every result in this section compares the same three portfolios: **Current**, **Update: sales allowed** (Baltic_NetSD), and **Update: no sales** (curent_update_baltic). The S&P 500 appears only as a market reference where needed.
+Every result compares **Current**, both original updates and both stage-2 penalty updates. The penalty versions preserve maximum netSD first and then reduce new positions. The S&P 500 appears only as a market reference where needed.
 
 The first 70% and last 30% rows are chronological sample slices. OUT, IN and netSD are recalculated separately in each slice against the same type of network: the selected shares plus Current and both updates. Because both final update weights were selected using the complete period, the last 30% is a held-out time segment for comparison, but not a fully independent out-of-sample validation of those final weights. A genuine out-of-sample claim requires weights estimated only from the first 70% or a walk-forward procedure.
 
 <details markdown="1" open>
 <summary><strong>Table 2.h. Full-period, in-sample and held-out statistics for Current and both updates</strong></summary>
 
-<table class="scenario-period-table"><thead><tr><th><span>Sample</span></th><th><span>Portfolio</span></th><th><span>Observations</span></th><th><span>Mean</span></th><th><span>Median</span></th><th><span>SD</span></th><th><span>Minimum</span></th><th><span>Maximum</span></th><th><span>VaR 95% loss</span></th><th><span>ES 95% loss</span></th><th><span>OUT</span></th><th><span>IN</span></th><th><span>netSD</span></th></tr></thead><tbody><tr><td>Full period</td><td>Current</td><td>754</td><td>0.000399</td><td>0.000392</td><td>0.005085</td><td>-0.033705</td><td>0.038486</td><td>0.006023</td><td>0.011677</td><td>25</td><td>4</td><td>0.636364</td></tr><tr><td>Full period</td><td>Update: sales allowed</td><td>754</td><td>0.000473</td><td>0.000224</td><td>0.004426</td><td>-0.024707</td><td>0.037987</td><td>0.005229</td><td>0.009244</td><td>32</td><td>0</td><td>0.969697</td></tr><tr><td>Full period</td><td>Update: no sales</td><td>754</td><td>0.000456</td><td>0.000237</td><td>0.004392</td><td>-0.021702</td><td>0.026325</td><td>0.005276</td><td>0.010038</td><td>33</td><td>0</td><td>1.000000</td></tr><tr><td>In-sample: first 70%</td><td>Current</td><td>527</td><td>0.000124</td><td>0.000346</td><td>0.004986</td><td>-0.033705</td><td>0.015747</td><td>0.006833</td><td>0.012834</td><td>21</td><td>4</td><td>0.354167</td></tr><tr><td>In-sample: first 70%</td><td>Update: sales allowed</td><td>527</td><td>0.000556</td><td>0.000380</td><td>0.004660</td><td>-0.024707</td><td>0.037987</td><td>0.005260</td><td>0.009396</td><td>34</td><td>0</td><td>0.708333</td></tr><tr><td>In-sample: first 70%</td><td>Update: no sales</td><td>527</td><td>0.000353</td><td>0.000191</td><td>0.004521</td><td>-0.021702</td><td>0.026325</td><td>0.005359</td><td>0.010808</td><td>28</td><td>0</td><td>0.583333</td></tr><tr><td>Held-out segment: last 30%</td><td>Current</td><td>227</td><td>0.001035</td><td>0.000607</td><td>0.005264</td><td>-0.018615</td><td>0.038486</td><td>0.005837</td><td>0.008504</td><td>32</td><td>0</td><td>0.640000</td></tr><tr><td>Held-out segment: last 30%</td><td>Update: sales allowed</td><td>227</td><td>0.000279</td><td>0.000039</td><td>0.003832</td><td>-0.012572</td><td>0.011897</td><td>0.004940</td><td>0.008529</td><td>26</td><td>2</td><td>0.480000</td></tr><tr><td>Held-out segment: last 30%</td><td>Update: no sales</td><td>227</td><td>0.000697</td><td>0.000280</td><td>0.004077</td><td>-0.011093</td><td>0.023631</td><td>0.004959</td><td>0.007862</td><td>36</td><td>0</td><td>0.720000</td></tr></tbody></table>
+<table class="scenario-period-table"><thead><tr><th><span>Sample</span></th><th><span>Portfolio</span></th><th><span>Observations</span></th><th><span>Mean</span></th><th><span>Median</span></th><th><span>SD</span></th><th><span>Minimum</span></th><th><span>Maximum</span></th><th><span>VaR 95% loss</span></th><th><span>ES 95% loss</span></th><th><span>OUT</span></th><th><span>IN</span></th><th><span>netSD</span></th></tr></thead><tbody><tr><td>Full period</td><td>Current</td><td>754</td><td>0.000399</td><td>0.000392</td><td>0.005085</td><td>-0.033705</td><td>0.038486</td><td>0.006023</td><td>0.011677</td><td>25</td><td>8</td><td>0.515152</td></tr><tr><td>Full period</td><td>Update: sales allowed</td><td>754</td><td>0.000473</td><td>0.000224</td><td>0.004426</td><td>-0.024707</td><td>0.037987</td><td>0.005229</td><td>0.009244</td><td>32</td><td>0</td><td>0.969697</td></tr><tr><td>Full period</td><td>Update: no sales</td><td>754</td><td>0.000456</td><td>0.000237</td><td>0.004392</td><td>-0.021702</td><td>0.026325</td><td>0.005276</td><td>0.010038</td><td>33</td><td>0</td><td>1.000000</td></tr><tr><td>Full period</td><td>Update2 penalty: sales allowed</td><td>754</td><td>0.000543</td><td>0.000246</td><td>0.004512</td><td>-0.025450</td><td>0.030773</td><td>0.005483</td><td>0.009784</td><td>32</td><td>0</td><td>0.969697</td></tr><tr><td>Full period</td><td>Update2 penalty: no sales</td><td>754</td><td>0.000456</td><td>0.000237</td><td>0.004392</td><td>-0.021702</td><td>0.026325</td><td>0.005276</td><td>0.010038</td><td>33</td><td>0</td><td>1.000000</td></tr><tr><td>In-sample: first 70%</td><td>Current</td><td>527</td><td>0.000124</td><td>0.000346</td><td>0.004986</td><td>-0.033705</td><td>0.015747</td><td>0.006833</td><td>0.012834</td><td>21</td><td>8</td><td>0.250000</td></tr><tr><td>In-sample: first 70%</td><td>Update: sales allowed</td><td>527</td><td>0.000556</td><td>0.000380</td><td>0.004660</td><td>-0.024707</td><td>0.037987</td><td>0.005260</td><td>0.009396</td><td>34</td><td>0</td><td>0.653846</td></tr><tr><td>In-sample: first 70%</td><td>Update: no sales</td><td>527</td><td>0.000353</td><td>0.000191</td><td>0.004521</td><td>-0.021702</td><td>0.026325</td><td>0.005359</td><td>0.010808</td><td>28</td><td>0</td><td>0.538462</td></tr><tr><td>In-sample: first 70%</td><td>Update2 penalty: sales allowed</td><td>527</td><td>0.000554</td><td>0.000375</td><td>0.004626</td><td>-0.025450</td><td>0.030773</td><td>0.005346</td><td>0.009954</td><td>34</td><td>0</td><td>0.653846</td></tr><tr><td>In-sample: first 70%</td><td>Update2 penalty: no sales</td><td>527</td><td>0.000353</td><td>0.000191</td><td>0.004521</td><td>-0.021702</td><td>0.026325</td><td>0.005359</td><td>0.010808</td><td>28</td><td>0</td><td>0.538462</td></tr><tr><td>Held-out segment: last 30%</td><td>Current</td><td>227</td><td>0.001035</td><td>0.000607</td><td>0.005264</td><td>-0.018615</td><td>0.038486</td><td>0.005837</td><td>0.008504</td><td>32</td><td>0</td><td>0.592593</td></tr><tr><td>Held-out segment: last 30%</td><td>Update: sales allowed</td><td>227</td><td>0.000279</td><td>0.000039</td><td>0.003832</td><td>-0.012572</td><td>0.011897</td><td>0.004940</td><td>0.008529</td><td>26</td><td>4</td><td>0.407407</td></tr><tr><td>Held-out segment: last 30%</td><td>Update: no sales</td><td>227</td><td>0.000697</td><td>0.000280</td><td>0.004077</td><td>-0.011093</td><td>0.023631</td><td>0.004959</td><td>0.007862</td><td>38</td><td>0</td><td>0.703704</td></tr><tr><td>Held-out segment: last 30%</td><td>Update2 penalty: sales allowed</td><td>227</td><td>0.000518</td><td>0.000045</td><td>0.004245</td><td>-0.013927</td><td>0.013040</td><td>0.005615</td><td>0.009027</td><td>30</td><td>4</td><td>0.481481</td></tr><tr><td>Held-out segment: last 30%</td><td>Update2 penalty: no sales</td><td>227</td><td>0.000697</td><td>0.000280</td><td>0.004077</td><td>-0.011093</td><td>0.023631</td><td>0.004959</td><td>0.007862</td><td>38</td><td>0</td><td>0.703704</td></tr></tbody></table>
 
 </details>
 
@@ -6453,7 +6473,7 @@ The top and left dendrograms show Ward hierarchical clustering of the Spearman d
 
 ### Interactive distribution dominance and efficient frontiers
 
-This section restores the portfolio-level comparison in one place. Current is the actual current portfolio. Baltic_NetSD and curent_update_baltic are the two Baltic optimisation scenarios; the training and full-data portfolios remain available for comparison.
+This section compares Current, both original updates and the two stage-2 penalty portfolios. Training and full-data portfolios remain available for comparison.
 
 <details markdown="1" class="dominance-components portfolio-dominance" open>
 <summary><strong>Figure 2.f. Interactive portfolio FSD, SSD and TSD analysis</strong></summary>
@@ -6481,6 +6501,8 @@ Choose the model to change the risk measure. Current is always highlighted, and 
 | Current | 0.143061 | 6.990040 | 0.282359 | 12 | 2.222507 |
 | Update: sales allowed | 0.069844 | 14.317673 | 0.104506 | 21 | 2.539761 |
 | Update: no sales | 0.080158 | 12.475321 | 0.172263 | 22 | 2.770704 |
+| Update2 penalty: sales allowed | 0.077044 | 12.979573 | 0.111303 | 20 | 2.575752 |
+| Update2 penalty: no sales | 0.080158 | 12.475321 | 0.172263 | 22 | 2.770704 |
 
 </details>
 
@@ -6492,6 +6514,8 @@ Choose the model to change the risk measure. Current is always highlighted, and 
 | Current | 0.057286 | 0.000348 | 0.088945 | 0.080036 | 0.010059 | 0.080666 | 0.183894 | -0.688676 |
 | Baltic_NetSD | 0.029183 | 0.000447 | 0.117070 | 0.070033 | 0.005124 | 0.070221 | 0.184315 | -0.569379 |
 | curent_update_baltic | 0.049817 | 0.000413 | 0.107711 | 0.069124 | 0.008748 | 0.069676 | 0.180619 | -0.606725 |
+| update2_penalty_sell | 0.036768 | 0.000511 | 0.135399 | 0.071290 | 0.006456 | 0.071581 | 0.183569 | -0.462401 |
+| update2_penalty_no_sell | 0.049817 | 0.000413 | 0.107711 | 0.069124 | 0.008748 | 0.069676 | 0.180619 | -0.606725 |
 
 </details>
 
@@ -6502,7 +6526,7 @@ A VAR(1) and a 10-observation generalized forecast-error variance decomposition 
 
 ![Directional spillover network](figures/scenario_spillover_network.png)
 
-The full-period **Total Spillover Index is 38.39%**. Thus, on average, 38.39% of the four series' 10-step forecast-error variance comes from shocks originating in another series. **Update: no sales** is the largest net transmitter (TO − FROM = 16.20 percentage points). Because both updates are constructed from overlapping Baltic shares, some strong links are mechanical and should not be interpreted as independent contagion.
+The full-period **Total Spillover Index is 60.17%**. Thus, on average, 60.17% of the four series' 10-step forecast-error variance comes from shocks originating in another series. **Update: no sales** is the largest net transmitter (TO − FROM = 14.29 percentage points). Because both updates are constructed from overlapping Baltic shares, some strong links are mechanical and should not be interpreted as independent contagion.
 
 </details>
 
@@ -6511,12 +6535,14 @@ The full-period **Total Spillover Index is 38.39%**. Thus, on average, 38.39% of
 
 Rows are affected series; columns are shock sources. Diagonal cells are own shocks. Each row sums to 100%.
 
-| Affected series / shock source | Current | Update: sales allowed | Update: no sales | S&P 500 |
-| --- | --- | --- | --- | --- |
-| Current | 51.48 | 7.89 | 39.77 | 0.86 |
-| Update: sales allowed | 8.68 | 57.32 | 32.23 | 1.77 |
-| Update: no sales | 32.64 | 23.83 | 42.27 | 1.26 |
-| S&P 500 | 1.69 | 1.04 | 1.93 | 95.35 |
+| Affected series / shock source | Current | Update: sales allowed | Update: no sales | Update2 penalty: sales allowed | Update2 penalty: no sales | S&P 500 |
+| --- | --- | --- | --- | --- | --- | --- |
+| Current | 34.23 | 5.22 | 26.42 | 7.13 | 26.42 | 0.58 |
+| Update: sales allowed | 4.72 | 31.34 | 17.61 | 27.74 | 17.61 | 0.97 |
+| Update: no sales | 19.54 | 14.27 | 25.33 | 14.76 | 25.33 | 0.76 |
+| Update2 penalty: sales allowed | 6.31 | 26.97 | 17.70 | 30.41 | 17.70 | 0.90 |
+| Update2 penalty: no sales | 19.54 | 14.27 | 25.33 | 14.76 | 25.33 | 0.76 |
+| S&P 500 | 1.66 | 1.01 | 1.89 | 1.20 | 1.89 | 92.36 |
 
 </details>
 
@@ -6527,10 +6553,12 @@ FROM is the share received from all other series. TO is the share transmitted to
 
 | Entity | FROM others (%) | TO others (%) | NET: TO − FROM (pp) |
 | --- | --- | --- | --- |
-| Current | 48.52 | 43.01 | -5.51 |
-| Update: sales allowed | 42.68 | 32.75 | -9.93 |
-| Update: no sales | 57.73 | 73.93 | 16.20 |
-| S&P 500 | 4.65 | 3.89 | -0.76 |
+| Current | 65.77 | 51.77 | -14.00 |
+| Update: sales allowed | 68.66 | 61.75 | -6.92 |
+| Update: no sales | 74.67 | 88.96 | 14.29 |
+| Update2 penalty: sales allowed | 69.59 | 65.59 | -4.00 |
+| Update2 penalty: no sales | 74.67 | 88.96 | 14.29 |
+| S&P 500 | 7.64 | 3.98 | -3.66 |
 
 </details>
 
@@ -6555,7 +6583,7 @@ Select any combination of portfolios, S&P 500 and individual shares. The upper p
 <details markdown="1">
 <summary><strong>Table 2.k. Complete PerformanceAnalytics measures for Current and both updates</strong></summary>
 
-<table class="performance-scenario-table"><thead><tr><th>Measure</th><th>Current</th><th>Update: sales allowed</th><th>Update: no sales</th></tr></thead><tbody><tr><td><button type="button" class="metric-help-button" data-metric="ActiveReturn" data-meaning="Return above the benchmark." data-calculation="Rₚ − Rᵦ." data-interpretation="Higher is better.">ActiveReturn</button></td><td>-0.126643</td><td>-0.104945</td><td>-0.109586</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="AdjustedSharpe" data-meaning="Sharpe ratio adjusted for skewness and kurtosis." data-calculation="Sharpe corrected with the third and fourth moments." data-interpretation="Higher is better; negative is poor.">AdjustedSharpe</button></td><td>0.165830</td><td>-0.422847</td><td>0.411254</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="AnnualizedReturn_Arithmetic" data-meaning="Annual return obtained from the average daily return." data-calculation="252 × mean(R)." data-interpretation="Higher is better, but ignores compounding.">AnnualizedReturn_Arithmetic</button></td><td>0.100442</td><td>0.119153</td><td>0.114980</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="AnnualizedReturn_Geometric" data-meaning="Compounded annual return." data-calculation="[∏(1+Rₜ)]^(252/n) − 1." data-interpretation="Higher is better.">AnnualizedReturn_Geometric</button></td><td>0.102046</td><td>0.123744</td><td>0.119103</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Appraisal" data-meaning="Alpha per unit of asset-specific risk." data-calculation="CAPM alpha / specific risk." data-interpretation="Higher is better.">Appraisal</button></td><td>1.111312</td><td>1.671637</td><td>1.558215</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="ArithmeticReturn" data-meaning="Average one-period return." data-calculation="mean(Rₜ)." data-interpretation="Higher is better.">ArithmeticReturn</button></td><td>0.000399</td><td>0.000473</td><td>0.000456</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="AverageDrawdown" data-meaning="Average loss across drawdown episodes." data-calculation="Mean peak-to-trough drawdown." data-interpretation="Closer to zero is better.">AverageDrawdown</button></td><td>0.021560</td><td>0.009922</td><td>0.011071</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="AverageDrawdownLength" data-meaning="Average duration of drawdown episodes." data-calculation="Mean number of periods from peak to recovery/end." data-interpretation="Lower is better.">AverageDrawdownLength</button></td><td>47.400000</td><td>16.571429</td><td>24.241379</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="AverageRecoveryTime" data-meaning="Average time needed to recover from a trough." data-calculation="Mean periods from trough back to the prior peak." data-interpretation="Lower is better.">AverageRecoveryTime</button></td><td>23.333333</td><td>9.095238</td><td>14.931034</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="BernardoLedoit" data-meaning="Gain-loss ratio based on positive and negative returns." data-calculation="E[max(R,0)] / E[max(−R,0)]." data-interpretation="Higher is better; above 1 means gains dominate losses.">BernardoLedoit</button></td><td>1.276133</td><td>1.383384</td><td>1.352346</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="BetaCoKurtosis" data-meaning="Sensitivity to joint extreme movements with the benchmark." data-calculation="Fourth-order co-moment scaled by benchmark co-kurtosis." data-interpretation="Lower absolute exposure is usually safer.">BetaCoKurtosis</button></td><td>0.071232</td><td>-0.043043</td><td>0.017356</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="BetaCoSkewness" data-meaning="Sensitivity to asymmetric joint movements with the benchmark." data-calculation="Third-order co-moment scaled by benchmark co-skewness." data-interpretation="Positive is generally preferable.">BetaCoSkewness</button></td><td>-1.058347</td><td>-1.977261</td><td>-1.638768</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Burke" data-meaning="Return relative to several largest drawdowns." data-calculation="Excess return / root-sum-square of drawdowns." data-interpretation="Higher is better.">Burke</button></td><td>0.815057</td><td>1.187557</td><td>1.091475</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="CAPMAlpha" data-meaning="Return unexplained by market exposure." data-calculation="mean(Rₚ−R𝒻) − β mean(Rᵦ−R𝒻)." data-interpretation="Higher is better.">CAPMAlpha</button></td><td>0.000348</td><td>0.000447</td><td>0.000413</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="CAPMBeta" data-meaning="Sensitivity to benchmark movements." data-calculation="Cov(Rₚ,Rᵦ) / Var(Rᵦ)." data-interpretation="Above 1 means greater market sensitivity; below 1 means lower.">CAPMBeta</button></td><td>0.057286</td><td>0.029183</td><td>0.049817</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="CDD" data-meaning="Conditional drawdown at risk." data-calculation="Mean of drawdowns beyond the selected drawdown quantile." data-interpretation="Closer to zero is better.">CDD</button></td><td>0.043765</td><td>0.035795</td><td>0.027505</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Calmar" data-meaning="Annual return per unit of maximum drawdown." data-calculation="Annualised return / |maximum drawdown|." data-interpretation="Higher is better.">Calmar</button></td><td>0.601966</td><td>2.293399</td><td>1.159239</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="CoKurtosis" data-meaning="Joint fourth-order tail dependence with the benchmark." data-calculation="E[(Rₚ−μₚ)(Rᵦ−μᵦ)³]." data-interpretation="Large absolute values mean stronger joint tail exposure.">CoKurtosis</button></td><td>0.000000</td><td>-0.000000</td><td>0.000000</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="CoSkewness" data-meaning="Joint third-order asymmetry with the benchmark." data-calculation="E[(Rₚ−μₚ)(Rᵦ−μᵦ)²]." data-interpretation="More positive is generally preferable.">CoSkewness</button></td><td>-0.000000</td><td>-0.000000</td><td>-0.000000</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="CumulativeReturn" data-meaning="Total compounded return over the displayed period." data-calculation="∏(1+Rₜ) − 1." data-interpretation="Higher is better.">CumulativeReturn</button></td><td>0.337409</td><td>0.417752</td><td>0.400306</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="DRatio" data-meaning="Balance between cumulative losses and gains." data-calculation="Downside return contribution / upside return contribution." data-interpretation="Lower is better.">DRatio</button></td><td>0.636808</td><td>0.624455</td><td>0.638287</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="DownCapture" data-meaning="Performance when the benchmark declines." data-calculation="Portfolio compound return / benchmark compound return on down-market days." data-interpretation="Lower is normally better when both returns are negative.">DownCapture</button></td><td>-0.001871</td><td>-0.042302</td><td>-0.013631</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="DownNumber" data-meaning="Number of negative-return observations." data-calculation="Count(Rₜ &lt; 0)." data-interpretation="Lower is better, conditional on similar return.">DownNumber</button></td><td>0.481132</td><td>0.490566</td><td>0.496855</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="DownPercent" data-meaning="Fraction of observations with negative return." data-calculation="Count(Rₜ&lt;0)/n." data-interpretation="Lower is better.">DownPercent</button></td><td>0.896226</td><td>0.893082</td><td>0.889937</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="DownsideDeviation" data-meaning="Volatility below the minimum acceptable return." data-calculation="Root mean squared shortfall below MAR." data-interpretation="Lower is better.">DownsideDeviation</button></td><td>0.003490</td><td>0.002763</td><td>0.002911</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="DrawdownDeviation" data-meaning="Variability of drawdowns." data-calculation="Standard deviation of the drawdown series." data-interpretation="Lower is better.">DrawdownDeviation</button></td><td>0.006638</td><td>0.004195</td><td>0.004644</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="ES_Loss" data-meaning="Average loss in the worst 5% of observations." data-calculation="Mean loss conditional on loss ≥ 95% VaR." data-interpretation="Lower is better.">ES_Loss</button></td><td>0.011677</td><td>0.009244</td><td>0.010038</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="FamaBeta" data-meaning="Beta estimated using Fama decomposition." data-calculation="Systematic risk divided by benchmark risk under the decomposition." data-interpretation="Lower means less systematic exposure.">FamaBeta</button></td><td>0.459682</td><td>0.400161</td><td>0.397054</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="GeometricReturn" data-meaning="Average compounded one-period return." data-calculation="[∏(1+Rₜ)]^(1/n) − 1." data-interpretation="Higher is better.">GeometricReturn</button></td><td>0.000386</td><td>0.000463</td><td>0.000447</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Hurst" data-meaning="Persistence of the return process." data-calculation="Hurst exponent estimated from rescaled behaviour." data-interpretation="Near 0.5 suggests no persistence; above 0.5 persistence; below 0.5 mean reversion.">Hurst</button></td><td>0.400438</td><td>0.400078</td><td>0.361030</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Information_Annualized" data-meaning="Annualised active return per unit of tracking error." data-calculation="Annualised active return / annualised tracking error." data-interpretation="Higher is better.">Information_Annualized</button></td><td>-0.688676</td><td>-0.569379</td><td>-0.606725</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Information_Daily" data-meaning="Daily active return per unit of tracking error." data-calculation="mean(Rₚ−Rᵦ) / sd(Rₚ−Rᵦ)." data-interpretation="Higher is better.">Information_Daily</button></td><td>-0.037286</td><td>-0.030534</td><td>-0.032603</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="JensenAlpha" data-meaning="CAPM risk-adjusted excess return." data-calculation="Rₚ − [R𝒻 + β(Rᵦ−R𝒻)]." data-interpretation="Higher is better.">JensenAlpha</button></td><td>0.088945</td><td>0.117070</td><td>0.107711</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Kappa" data-meaning="Return above MAR per unit of lower partial moment risk." data-calculation="[mean(R)−MAR] / LPMₙ^(1/n)." data-interpretation="Higher is better.">Kappa</button></td><td>0.067166</td><td>0.105018</td><td>0.097986</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Kelly" data-meaning="Approximate growth-optimal risky allocation." data-calculation="Expected excess return / variance under the quadratic approximation." data-interpretation="Higher implies a larger theoretical allocation; unstable extreme values require caution.">Kelly</button></td><td>15.415893</td><td>24.132553</td><td>23.653360</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Kurtosis" data-meaning="Tail thickness relative to a normal distribution." data-calculation="Standardised fourth central moment." data-interpretation="Higher means more extreme-tail risk.">Kurtosis</button></td><td>15.721640</td><td>14.909178</td><td>9.278059</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="M2Sortino" data-meaning="Sortino ratio translated into return units." data-calculation="Risk-free return plus Sortino × benchmark downside deviation." data-interpretation="Higher is better.">M2Sortino</button></td><td>0.109449</td><td>0.136813</td><td>0.130706</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="MSquaredExcess" data-meaning="M² return advantage over the benchmark." data-calculation="Modigliani measure − benchmark return." data-interpretation="Higher is better.">MSquaredExcess</button></td><td>-0.005450</td><td>0.065555</td><td>0.058012</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Martin" data-meaning="Return per unit of ulcer-index risk." data-calculation="Excess return / Ulcer Index." data-interpretation="Higher is better.">Martin</button></td><td>1.203512</td><td>5.911479</td><td>2.686858</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="MaximumDrawdown" data-meaning="Largest historical peak-to-trough loss." data-calculation="min(wealth/running maximum − 1)." data-interpretation="Closer to zero is better.">MaximumDrawdown</button></td><td>0.169521</td><td>0.053957</td><td>0.102743</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Modigliani" data-meaning="Sharpe performance translated to benchmark volatility." data-calculation="R𝒻 + Sharpeₚ × volatilityᵦ." data-interpretation="Higher is better.">Modigliani</button></td><td>0.000867</td><td>0.001182</td><td>0.001149</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="NetSelectivity" data-meaning="Selection return after diversification adjustment." data-calculation="Selectivity minus diversification contribution." data-interpretation="Higher is better.">NetSelectivity</button></td><td>-0.003078</td><td>0.032232</td><td>0.028302</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Omega" data-meaning="Probability-weighted gains relative to losses at a threshold." data-calculation="Integral above threshold / integral below threshold." data-interpretation="Higher is better; above 1 is favourable.">Omega</button></td><td>1.276133</td><td>1.383384</td><td>1.352346</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="OmegaExcessReturn" data-meaning="Excess return adjusted by Omega downside structure." data-calculation="Excess return expressed through the Omega function." data-interpretation="Higher is better.">OmegaExcessReturn</button></td><td>0.082064</td><td>0.107926</td><td>0.102439</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="PainIndex" data-meaning="Average depth of all drawdowns." data-calculation="Mean absolute percentage drawdown." data-interpretation="Lower is better.">PainIndex</button></td><td>0.063120</td><td>0.016078</td><td>0.034100</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="PainRatio" data-meaning="Return earned per unit of average drawdown pain." data-calculation="Excess return / Pain Index." data-interpretation="Higher is better.">PainRatio</button></td><td>1.616693</td><td>7.696274</td><td>3.492737</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Prospect" data-meaning="Behavioural value of gains and losses." data-calculation="Probability-weighted prospect utility with losses penalised more strongly." data-interpretation="Higher is better.">Prospect</button></td><td>-0.402780</td><td>-0.386846</td><td>-0.399373</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Rachev" data-meaning="Extreme gains relative to extreme losses." data-calculation="Upper-tail expected return / lower-tail expected loss." data-interpretation="Higher is better; above 1 means the selected upper tail exceeds the lower tail.">Rachev</button></td><td>1.078982</td><td>1.271462</td><td>1.126462</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Selectivity" data-meaning="Return attributed to security selection." data-calculation="Portfolio return minus return implied by systematic risk." data-interpretation="Higher is better.">Selectivity</button></td><td>0.088945</td><td>0.117070</td><td>0.107711</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Sharpe_Annualized" data-meaning="Annual excess return per unit of annual volatility." data-calculation="Annualised excess return / annualised SD." data-interpretation="Higher is better.">Sharpe_Annualized</button></td><td>1.244350</td><td>1.695721</td><td>1.649143</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Sharpe_Daily" data-meaning="Daily excess return per unit of daily volatility." data-calculation="mean(R−R𝒻) / sd(R−R𝒻)." data-interpretation="Higher is better.">Sharpe_Daily</button></td><td>0.078387</td><td>0.106820</td><td>0.103886</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Sharpe_ES" data-meaning="Excess return per unit of expected shortfall." data-calculation="Mean excess return / ES loss." data-interpretation="Higher is better.">Sharpe_ES</button></td><td>0.034134</td><td>0.051150</td><td>0.045452</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Sharpe_VaR" data-meaning="Excess return per unit of value at risk." data-calculation="Mean excess return / VaR loss." data-interpretation="Higher is better.">Sharpe_VaR</button></td><td>0.066241</td><td>0.090438</td><td>0.087356</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Skewness" data-meaning="Asymmetry of returns." data-calculation="Standardised third central moment." data-interpretation="More positive is generally preferable.">Skewness</button></td><td>-0.221667</td><td>0.628025</td><td>-0.142612</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Sortino" data-meaning="Excess return per unit of downside risk." data-calculation="Mean(R−MAR) / downside deviation." data-interpretation="Higher is better.">Sortino</button></td><td>0.114205</td><td>0.171138</td><td>0.156761</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="SpecificRisk" data-meaning="Risk not explained by the benchmark." data-calculation="Residual volatility from the market regression." data-interpretation="Lower is safer, although it may reflect diversifiable opportunity.">SpecificRisk</button></td><td>0.080036</td><td>0.070033</td><td>0.069124</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Sterling" data-meaning="Return relative to drawdown risk." data-calculation="Annualised excess return / average or adjusted maximum drawdown." data-interpretation="Higher is better.">Sterling</button></td><td>0.378619</td><td>0.803760</td><td>0.587461</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="SystematicRisk" data-meaning="Risk explained by benchmark exposure." data-calculation="β² Var(Rᵦ), or its square-root form under the implementation." data-interpretation="Lower is safer; higher means more market-driven risk.">SystematicRisk</button></td><td>0.010059</td><td>0.005124</td><td>0.008748</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="TotalRisk" data-meaning="Total return variability." data-calculation="Standard deviation or variance-based total risk used by the decomposition." data-interpretation="Lower is safer.">TotalRisk</button></td><td>0.080666</td><td>0.070221</td><td>0.069676</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="TrackingError_Annualized" data-meaning="Annualised volatility of returns relative to the benchmark." data-calculation="sd(Rₚ−Rᵦ) × √252." data-interpretation="Lower means closer benchmark tracking.">TrackingError_Annualized</button></td><td>0.183894</td><td>0.184315</td><td>0.180619</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="TrackingError_Daily" data-meaning="Daily volatility of active returns." data-calculation="sd(Rₚ−Rᵦ)." data-interpretation="Lower means closer benchmark tracking.">TrackingError_Daily</button></td><td>0.011584</td><td>0.011611</td><td>0.011378</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Treynor_Annualized" data-meaning="Annual excess return per unit of beta." data-calculation="Annualised excess return / β." data-interpretation="Higher is better when beta is meaningful.">Treynor_Annualized</button></td><td>1.781352</td><td>4.240314</td><td>2.390811</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Treynor_Daily" data-meaning="Daily excess return per unit of beta." data-calculation="Mean daily excess return / β." data-interpretation="Higher is better.">Treynor_Daily</button></td><td>0.006732</td><td>0.015868</td><td>0.008966</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="UlcerIndex" data-meaning="Depth and duration of drawdowns." data-calculation="Root mean square percentage drawdown." data-interpretation="Lower is better.">UlcerIndex</button></td><td>0.084790</td><td>0.020933</td><td>0.044328</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="UpCapture" data-meaning="Performance when the benchmark rises." data-calculation="Portfolio compound return / benchmark compound return on up-market days." data-interpretation="Higher is better.">UpCapture</button></td><td>0.092210</td><td>0.077583</td><td>0.096440</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="UpNumber" data-meaning="Number of positive-return observations." data-calculation="Count(Rₜ &gt; 0)." data-interpretation="Higher is generally better.">UpNumber</button></td><td>0.571101</td><td>0.555046</td><td>0.559633</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="UpPercent" data-meaning="Fraction of observations with positive return." data-calculation="Count(Rₜ&gt;0)/n." data-interpretation="Higher is generally better.">UpPercent</button></td><td>0.174312</td><td>0.137615</td><td>0.165138</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="UpsidePotential" data-meaning="Average return above the minimum acceptable return." data-calculation="Mean[max(R−MAR,0)]." data-interpretation="Higher is better.">UpsidePotential</button></td><td>0.527794</td><td>0.617525</td><td>0.601668</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="UpsideRisk" data-meaning="Magnitude of returns above the target." data-calculation="Root upper partial moment relative to MAR." data-interpretation="Higher means more upside dispersion, not conventional risk.">UpsideRisk</button></td><td>0.003715</td><td>0.003487</td><td>0.003317</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="VaR_Loss" data-meaning="Loss threshold exceeded by the worst 5% of observations." data-calculation="95th percentile of loss −R." data-interpretation="Lower is better.">VaR_Loss</button></td><td>0.006017</td><td>0.005228</td><td>0.005223</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Volatility" data-meaning="Daily standard deviation of returns." data-calculation="sd(Rₜ)." data-interpretation="Lower means more stable returns.">Volatility</button></td><td>0.005085</td><td>0.004426</td><td>0.004392</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Volatility_Annualized" data-meaning="Annualised standard deviation." data-calculation="sd(Rₜ) × √252." data-interpretation="Lower means more stable returns.">Volatility_Annualized</button></td><td>0.080719</td><td>0.070267</td><td>0.069721</td></tr></tbody></table>
+<table class="performance-scenario-table"><thead><tr><th>Measure</th><th>Current</th><th>Update: sales allowed</th><th>Update: no sales</th><th>Update2 penalty: sales allowed</th><th>Update2 penalty: no sales</th></tr></thead><tbody><tr><td><button type="button" class="metric-help-button" data-metric="ActiveReturn" data-meaning="Return above the benchmark." data-calculation="Rₚ − Rᵦ." data-interpretation="Higher is better.">ActiveReturn</button></td><td>-0.126643</td><td>-0.104945</td><td>-0.109586</td><td>-0.084882</td><td>-0.109586</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="AdjustedSharpe" data-meaning="Sharpe ratio adjusted for skewness and kurtosis." data-calculation="Sharpe corrected with the third and fourth moments." data-interpretation="Higher is better; negative is poor.">AdjustedSharpe</button></td><td>0.165830</td><td>-0.422847</td><td>0.411254</td><td>-0.249858</td><td>0.411254</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="AnnualizedReturn_Arithmetic" data-meaning="Annual return obtained from the average daily return." data-calculation="252 × mean(R)." data-interpretation="Higher is better, but ignores compounding.">AnnualizedReturn_Arithmetic</button></td><td>0.100442</td><td>0.119153</td><td>0.114980</td><td>0.136959</td><td>0.114980</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="AnnualizedReturn_Geometric" data-meaning="Compounded annual return." data-calculation="[∏(1+Rₜ)]^(252/n) − 1." data-interpretation="Higher is better.">AnnualizedReturn_Geometric</button></td><td>0.102046</td><td>0.123744</td><td>0.119103</td><td>0.143807</td><td>0.119103</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Appraisal" data-meaning="Alpha per unit of asset-specific risk." data-calculation="CAPM alpha / specific risk." data-interpretation="Higher is better.">Appraisal</button></td><td>1.111312</td><td>1.671637</td><td>1.558215</td><td>1.899274</td><td>1.558215</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="ArithmeticReturn" data-meaning="Average one-period return." data-calculation="mean(Rₜ)." data-interpretation="Higher is better.">ArithmeticReturn</button></td><td>0.000399</td><td>0.000473</td><td>0.000456</td><td>0.000543</td><td>0.000456</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="AverageDrawdown" data-meaning="Average loss across drawdown episodes." data-calculation="Mean peak-to-trough drawdown." data-interpretation="Closer to zero is better.">AverageDrawdown</button></td><td>0.021560</td><td>0.009922</td><td>0.011071</td><td>0.010060</td><td>0.011071</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="AverageDrawdownLength" data-meaning="Average duration of drawdown episodes." data-calculation="Mean number of periods from peak to recovery/end." data-interpretation="Lower is better.">AverageDrawdownLength</button></td><td>47.400000</td><td>16.571429</td><td>24.241379</td><td>17.250000</td><td>24.241379</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="AverageRecoveryTime" data-meaning="Average time needed to recover from a trough." data-calculation="Mean periods from trough back to the prior peak." data-interpretation="Lower is better.">AverageRecoveryTime</button></td><td>23.333333</td><td>9.095238</td><td>14.931034</td><td>8.250000</td><td>14.931034</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="BernardoLedoit" data-meaning="Gain-loss ratio based on positive and negative returns." data-calculation="E[max(R,0)] / E[max(−R,0)]." data-interpretation="Higher is better; above 1 means gains dominate losses.">BernardoLedoit</button></td><td>1.276133</td><td>1.383384</td><td>1.352346</td><td>1.428811</td><td>1.352346</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="BetaCoKurtosis" data-meaning="Sensitivity to joint extreme movements with the benchmark." data-calculation="Fourth-order co-moment scaled by benchmark co-kurtosis." data-interpretation="Lower absolute exposure is usually safer.">BetaCoKurtosis</button></td><td>0.071232</td><td>-0.043043</td><td>0.017356</td><td>-0.027042</td><td>0.017356</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="BetaCoSkewness" data-meaning="Sensitivity to asymmetric joint movements with the benchmark." data-calculation="Third-order co-moment scaled by benchmark co-skewness." data-interpretation="Positive is generally preferable.">BetaCoSkewness</button></td><td>-1.058347</td><td>-1.977261</td><td>-1.638768</td><td>-1.648536</td><td>-1.638768</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Burke" data-meaning="Return relative to several largest drawdowns." data-calculation="Excess return / root-sum-square of drawdowns." data-interpretation="Higher is better.">Burke</button></td><td>0.815057</td><td>1.187557</td><td>1.091475</td><td>1.290118</td><td>1.091475</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="CAPMAlpha" data-meaning="Return unexplained by market exposure." data-calculation="mean(Rₚ−R𝒻) − β mean(Rᵦ−R𝒻)." data-interpretation="Higher is better.">CAPMAlpha</button></td><td>0.000348</td><td>0.000447</td><td>0.000413</td><td>0.000511</td><td>0.000413</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="CAPMBeta" data-meaning="Sensitivity to benchmark movements." data-calculation="Cov(Rₚ,Rᵦ) / Var(Rᵦ)." data-interpretation="Above 1 means greater market sensitivity; below 1 means lower.">CAPMBeta</button></td><td>0.057286</td><td>0.029183</td><td>0.049817</td><td>0.036768</td><td>0.049817</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="CDD" data-meaning="Conditional drawdown at risk." data-calculation="Mean of drawdowns beyond the selected drawdown quantile." data-interpretation="Closer to zero is better.">CDD</button></td><td>0.043765</td><td>0.035795</td><td>0.027505</td><td>0.025786</td><td>0.027505</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Calmar" data-meaning="Annual return per unit of maximum drawdown." data-calculation="Annualised return / |maximum drawdown|." data-interpretation="Higher is better.">Calmar</button></td><td>0.601966</td><td>2.293399</td><td>1.159239</td><td>2.467398</td><td>1.159239</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="CoKurtosis" data-meaning="Joint fourth-order tail dependence with the benchmark." data-calculation="E[(Rₚ−μₚ)(Rᵦ−μᵦ)³]." data-interpretation="Large absolute values mean stronger joint tail exposure.">CoKurtosis</button></td><td>0.000000</td><td>-0.000000</td><td>0.000000</td><td>-0.000000</td><td>0.000000</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="CoSkewness" data-meaning="Joint third-order asymmetry with the benchmark." data-calculation="E[(Rₚ−μₚ)(Rᵦ−μᵦ)²]." data-interpretation="More positive is generally preferable.">CoSkewness</button></td><td>-0.000000</td><td>-0.000000</td><td>-0.000000</td><td>-0.000000</td><td>-0.000000</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="CumulativeReturn" data-meaning="Total compounded return over the displayed period." data-calculation="∏(1+Rₜ) − 1." data-interpretation="Higher is better.">CumulativeReturn</button></td><td>0.337409</td><td>0.417752</td><td>0.400306</td><td>0.494841</td><td>0.400306</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="DRatio" data-meaning="Balance between cumulative losses and gains." data-calculation="Downside return contribution / upside return contribution." data-interpretation="Lower is better.">DRatio</button></td><td>0.636808</td><td>0.624455</td><td>0.638287</td><td>0.598176</td><td>0.638287</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="DownCapture" data-meaning="Performance when the benchmark declines." data-calculation="Portfolio compound return / benchmark compound return on down-market days." data-interpretation="Lower is normally better when both returns are negative.">DownCapture</button></td><td>-0.001871</td><td>-0.042302</td><td>-0.013631</td><td>-0.047231</td><td>-0.013631</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="DownNumber" data-meaning="Number of negative-return observations." data-calculation="Count(Rₜ &lt; 0)." data-interpretation="Lower is better, conditional on similar return.">DownNumber</button></td><td>0.481132</td><td>0.490566</td><td>0.496855</td><td>0.490566</td><td>0.496855</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="DownPercent" data-meaning="Fraction of observations with negative return." data-calculation="Count(Rₜ&lt;0)/n." data-interpretation="Lower is better.">DownPercent</button></td><td>0.896226</td><td>0.893082</td><td>0.889937</td><td>0.908805</td><td>0.889937</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="DownsideDeviation" data-meaning="Volatility below the minimum acceptable return." data-calculation="Root mean squared shortfall below MAR." data-interpretation="Lower is better.">DownsideDeviation</button></td><td>0.003490</td><td>0.002763</td><td>0.002911</td><td>0.002905</td><td>0.002911</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="DrawdownDeviation" data-meaning="Variability of drawdowns." data-calculation="Standard deviation of the drawdown series." data-interpretation="Lower is better.">DrawdownDeviation</button></td><td>0.006638</td><td>0.004195</td><td>0.004644</td><td>0.004124</td><td>0.004644</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="ES_Loss" data-meaning="Average loss in the worst 5% of observations." data-calculation="Mean loss conditional on loss ≥ 95% VaR." data-interpretation="Lower is better.">ES_Loss</button></td><td>0.011677</td><td>0.009244</td><td>0.010038</td><td>0.009784</td><td>0.010038</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="FamaBeta" data-meaning="Beta estimated using Fama decomposition." data-calculation="Systematic risk divided by benchmark risk under the decomposition." data-interpretation="Lower means less systematic exposure.">FamaBeta</button></td><td>0.459682</td><td>0.400161</td><td>0.397054</td><td>0.407915</td><td>0.397054</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="GeometricReturn" data-meaning="Average compounded one-period return." data-calculation="[∏(1+Rₜ)]^(1/n) − 1." data-interpretation="Higher is better.">GeometricReturn</button></td><td>0.000386</td><td>0.000463</td><td>0.000447</td><td>0.000533</td><td>0.000447</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Hurst" data-meaning="Persistence of the return process." data-calculation="Hurst exponent estimated from rescaled behaviour." data-interpretation="Near 0.5 suggests no persistence; above 0.5 persistence; below 0.5 mean reversion.">Hurst</button></td><td>0.400438</td><td>0.400078</td><td>0.361030</td><td>0.380739</td><td>0.361030</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Information_Annualized" data-meaning="Annualised active return per unit of tracking error." data-calculation="Annualised active return / annualised tracking error." data-interpretation="Higher is better.">Information_Annualized</button></td><td>-0.688676</td><td>-0.569379</td><td>-0.606725</td><td>-0.462401</td><td>-0.606725</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Information_Daily" data-meaning="Daily active return per unit of tracking error." data-calculation="mean(Rₚ−Rᵦ) / sd(Rₚ−Rᵦ)." data-interpretation="Higher is better.">Information_Daily</button></td><td>-0.037286</td><td>-0.030534</td><td>-0.032603</td><td>-0.024582</td><td>-0.032603</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="JensenAlpha" data-meaning="CAPM risk-adjusted excess return." data-calculation="Rₚ − [R𝒻 + β(Rᵦ−R𝒻)]." data-interpretation="Higher is better.">JensenAlpha</button></td><td>0.088945</td><td>0.117070</td><td>0.107711</td><td>0.135399</td><td>0.107711</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Kappa" data-meaning="Return above MAR per unit of lower partial moment risk." data-calculation="[mean(R)−MAR] / LPMₙ^(1/n)." data-interpretation="Higher is better.">Kappa</button></td><td>0.067166</td><td>0.105018</td><td>0.097986</td><td>0.114454</td><td>0.097986</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Kelly" data-meaning="Approximate growth-optimal risky allocation." data-calculation="Expected excess return / variance under the quadratic approximation." data-interpretation="Higher implies a larger theoretical allocation; unstable extreme values require caution.">Kelly</button></td><td>15.415893</td><td>24.132553</td><td>23.653360</td><td>26.694318</td><td>23.653360</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Kurtosis" data-meaning="Tail thickness relative to a normal distribution." data-calculation="Standardised fourth central moment." data-interpretation="Higher means more extreme-tail risk.">Kurtosis</button></td><td>15.721640</td><td>14.909178</td><td>9.278059</td><td>10.358069</td><td>9.278059</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="M2Sortino" data-meaning="Sortino ratio translated into return units." data-calculation="Risk-free return plus Sortino × benchmark downside deviation." data-interpretation="Higher is better.">M2Sortino</button></td><td>0.109449</td><td>0.136813</td><td>0.130706</td><td>0.157669</td><td>0.130706</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="MSquaredExcess" data-meaning="M² return advantage over the benchmark." data-calculation="Modigliani measure − benchmark return." data-interpretation="Higher is better.">MSquaredExcess</button></td><td>-0.005450</td><td>0.065555</td><td>0.058012</td><td>0.100800</td><td>0.058012</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Martin" data-meaning="Return per unit of ulcer-index risk." data-calculation="Excess return / Ulcer Index." data-interpretation="Higher is better.">Martin</button></td><td>1.203512</td><td>5.911479</td><td>2.686858</td><td>6.595118</td><td>2.686858</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="MaximumDrawdown" data-meaning="Largest historical peak-to-trough loss." data-calculation="min(wealth/running maximum − 1)." data-interpretation="Closer to zero is better.">MaximumDrawdown</button></td><td>0.169521</td><td>0.053957</td><td>0.102743</td><td>0.058283</td><td>0.102743</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Modigliani" data-meaning="Sharpe performance translated to benchmark volatility." data-calculation="R𝒻 + Sharpeₚ × volatilityᵦ." data-interpretation="Higher is better.">Modigliani</button></td><td>0.000867</td><td>0.001182</td><td>0.001149</td><td>0.001332</td><td>0.001149</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="NetSelectivity" data-meaning="Selection return after diversification adjustment." data-calculation="Selectivity minus diversification contribution." data-interpretation="Higher is better.">NetSelectivity</button></td><td>-0.003078</td><td>0.032232</td><td>0.028302</td><td>0.050521</td><td>0.028302</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Omega" data-meaning="Probability-weighted gains relative to losses at a threshold." data-calculation="Integral above threshold / integral below threshold." data-interpretation="Higher is better; above 1 is favourable.">Omega</button></td><td>1.276133</td><td>1.383384</td><td>1.352346</td><td>1.428811</td><td>1.352346</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="OmegaExcessReturn" data-meaning="Excess return adjusted by Omega downside structure." data-calculation="Excess return expressed through the Omega function." data-interpretation="Higher is better.">OmegaExcessReturn</button></td><td>0.082064</td><td>0.107926</td><td>0.102439</td><td>0.127173</td><td>0.102439</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="PainIndex" data-meaning="Average depth of all drawdowns." data-calculation="Mean absolute percentage drawdown." data-interpretation="Lower is better.">PainIndex</button></td><td>0.063120</td><td>0.016078</td><td>0.034100</td><td>0.016205</td><td>0.034100</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="PainRatio" data-meaning="Return earned per unit of average drawdown pain." data-calculation="Excess return / Pain Index." data-interpretation="Higher is better.">PainRatio</button></td><td>1.616693</td><td>7.696274</td><td>3.492737</td><td>8.874141</td><td>3.492737</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Prospect" data-meaning="Behavioural value of gains and losses." data-calculation="Probability-weighted prospect utility with losses penalised more strongly." data-interpretation="Higher is better.">Prospect</button></td><td>-0.402780</td><td>-0.386846</td><td>-0.399373</td><td>-0.358235</td><td>-0.399373</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Rachev" data-meaning="Extreme gains relative to extreme losses." data-calculation="Upper-tail expected return / lower-tail expected loss." data-interpretation="Higher is better; above 1 means the selected upper tail exceeds the lower tail.">Rachev</button></td><td>1.078982</td><td>1.271462</td><td>1.126462</td><td>1.223619</td><td>1.126462</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Selectivity" data-meaning="Return attributed to security selection." data-calculation="Portfolio return minus return implied by systematic risk." data-interpretation="Higher is better.">Selectivity</button></td><td>0.088945</td><td>0.117070</td><td>0.107711</td><td>0.135399</td><td>0.107711</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Sharpe_Annualized" data-meaning="Annual excess return per unit of annual volatility." data-calculation="Annualised excess return / annualised SD." data-interpretation="Higher is better.">Sharpe_Annualized</button></td><td>1.244350</td><td>1.695721</td><td>1.649143</td><td>1.912074</td><td>1.649143</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Sharpe_Daily" data-meaning="Daily excess return per unit of daily volatility." data-calculation="mean(R−R𝒻) / sd(R−R𝒻)." data-interpretation="Higher is better.">Sharpe_Daily</button></td><td>0.078387</td><td>0.106820</td><td>0.103886</td><td>0.120449</td><td>0.103886</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Sharpe_ES" data-meaning="Excess return per unit of expected shortfall." data-calculation="Mean excess return / ES loss." data-interpretation="Higher is better.">Sharpe_ES</button></td><td>0.034134</td><td>0.051150</td><td>0.045452</td><td>0.055551</td><td>0.045452</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Sharpe_VaR" data-meaning="Excess return per unit of value at risk." data-calculation="Mean excess return / VaR loss." data-interpretation="Higher is better.">Sharpe_VaR</button></td><td>0.066241</td><td>0.090438</td><td>0.087356</td><td>0.099662</td><td>0.087356</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Skewness" data-meaning="Asymmetry of returns." data-calculation="Standardised third central moment." data-interpretation="More positive is generally preferable.">Skewness</button></td><td>-0.221667</td><td>0.628025</td><td>-0.142612</td><td>-0.030710</td><td>-0.142612</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Sortino" data-meaning="Excess return per unit of downside risk." data-calculation="Mean(R−MAR) / downside deviation." data-interpretation="Higher is better.">Sortino</button></td><td>0.114205</td><td>0.171138</td><td>0.156761</td><td>0.187064</td><td>0.156761</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="SpecificRisk" data-meaning="Risk not explained by the benchmark." data-calculation="Residual volatility from the market regression." data-interpretation="Lower is safer, although it may reflect diversifiable opportunity.">SpecificRisk</button></td><td>0.080036</td><td>0.070033</td><td>0.069124</td><td>0.071290</td><td>0.069124</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Sterling" data-meaning="Return relative to drawdown risk." data-calculation="Annualised excess return / average or adjusted maximum drawdown." data-interpretation="Higher is better.">Sterling</button></td><td>0.378619</td><td>0.803760</td><td>0.587461</td><td>0.908544</td><td>0.587461</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="SystematicRisk" data-meaning="Risk explained by benchmark exposure." data-calculation="β² Var(Rᵦ), or its square-root form under the implementation." data-interpretation="Lower is safer; higher means more market-driven risk.">SystematicRisk</button></td><td>0.010059</td><td>0.005124</td><td>0.008748</td><td>0.006456</td><td>0.008748</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="TotalRisk" data-meaning="Total return variability." data-calculation="Standard deviation or variance-based total risk used by the decomposition." data-interpretation="Lower is safer.">TotalRisk</button></td><td>0.080666</td><td>0.070221</td><td>0.069676</td><td>0.071581</td><td>0.069676</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="TrackingError_Annualized" data-meaning="Annualised volatility of returns relative to the benchmark." data-calculation="sd(Rₚ−Rᵦ) × √252." data-interpretation="Lower means closer benchmark tracking.">TrackingError_Annualized</button></td><td>0.183894</td><td>0.184315</td><td>0.180619</td><td>0.183569</td><td>0.180619</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="TrackingError_Daily" data-meaning="Daily volatility of active returns." data-calculation="sd(Rₚ−Rᵦ)." data-interpretation="Lower means closer benchmark tracking.">TrackingError_Daily</button></td><td>0.011584</td><td>0.011611</td><td>0.011378</td><td>0.011564</td><td>0.011378</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Treynor_Annualized" data-meaning="Annual excess return per unit of beta." data-calculation="Annualised excess return / β." data-interpretation="Higher is better when beta is meaningful.">Treynor_Annualized</button></td><td>1.781352</td><td>4.240314</td><td>2.390811</td><td>3.911202</td><td>2.390811</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Treynor_Daily" data-meaning="Daily excess return per unit of beta." data-calculation="Mean daily excess return / β." data-interpretation="Higher is better.">Treynor_Daily</button></td><td>0.006732</td><td>0.015868</td><td>0.008966</td><td>0.014505</td><td>0.008966</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="UlcerIndex" data-meaning="Depth and duration of drawdowns." data-calculation="Root mean square percentage drawdown." data-interpretation="Lower is better.">UlcerIndex</button></td><td>0.084790</td><td>0.020933</td><td>0.044328</td><td>0.021805</td><td>0.044328</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="UpCapture" data-meaning="Performance when the benchmark rises." data-calculation="Portfolio compound return / benchmark compound return on up-market days." data-interpretation="Higher is better.">UpCapture</button></td><td>0.092210</td><td>0.077583</td><td>0.096440</td><td>0.090281</td><td>0.096440</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="UpNumber" data-meaning="Number of positive-return observations." data-calculation="Count(Rₜ &gt; 0)." data-interpretation="Higher is generally better.">UpNumber</button></td><td>0.571101</td><td>0.555046</td><td>0.559633</td><td>0.559633</td><td>0.559633</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="UpPercent" data-meaning="Fraction of observations with positive return." data-calculation="Count(Rₜ&gt;0)/n." data-interpretation="Higher is generally better.">UpPercent</button></td><td>0.174312</td><td>0.137615</td><td>0.165138</td><td>0.158257</td><td>0.165138</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="UpsidePotential" data-meaning="Average return above the minimum acceptable return." data-calculation="Mean[max(R−MAR,0)]." data-interpretation="Higher is better.">UpsidePotential</button></td><td>0.527794</td><td>0.617525</td><td>0.601668</td><td>0.623304</td><td>0.601668</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="UpsideRisk" data-meaning="Magnitude of returns above the target." data-calculation="Root upper partial moment relative to MAR." data-interpretation="Higher means more upside dispersion, not conventional risk.">UpsideRisk</button></td><td>0.003715</td><td>0.003487</td><td>0.003317</td><td>0.003491</td><td>0.003317</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="VaR_Loss" data-meaning="Loss threshold exceeded by the worst 5% of observations." data-calculation="95th percentile of loss −R." data-interpretation="Lower is better.">VaR_Loss</button></td><td>0.006017</td><td>0.005228</td><td>0.005223</td><td>0.005453</td><td>0.005223</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Volatility" data-meaning="Daily standard deviation of returns." data-calculation="sd(Rₜ)." data-interpretation="Lower means more stable returns.">Volatility</button></td><td>0.005085</td><td>0.004426</td><td>0.004392</td><td>0.004512</td><td>0.004392</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Volatility_Annualized" data-meaning="Annualised standard deviation." data-calculation="sd(Rₜ) × √252." data-interpretation="Lower means more stable returns.">Volatility_Annualized</button></td><td>0.080719</td><td>0.070267</td><td>0.069721</td><td>0.071628</td><td>0.069721</td></tr></tbody></table>
 
 </details>
 
@@ -6815,15 +6843,15 @@ function initialiseDominanceExplorer(box) {
       const interpolate=(xs,ys,x)=>{if(x<=xs[0])return ys[0];if(x>=xs[xs.length-1])return ys[ys.length-1];let lo=0,hi=xs.length-1;while(hi-lo>1){const mid=(lo+hi)>>1;if(xs[mid]<=x)lo=mid;else hi=mid;}const w=(x-xs[lo])/(xs[hi]-xs[lo]||1);return ys[lo]+w*(ys[hi]-ys[lo]);};
       Object.keys(data.orders).forEach(component=>{const destination=data.orders[component],source=universe.orders[component];Object.entries(source.series).forEach(([name,values])=>{if(!destination.series[name])destination.series[name]=destination.x.map(x=>interpolate(source.x,values,x));});});
     }
-    const displayName=name=>name==='Baltic_NetSD'?'Update: sales allowed':name==='curent_update_baltic'?'Update: no sales':name;
-    const first=data.orders.FSD, seriesNames=Object.keys(first.series), preferred=profile==='Portfolio'?['Current','Baltic_NetSD','curent_update_baltic','SP500']:['Current','SP500','curent_update_baltic','Baltic_NetSD'];
+    const displayName=name=>name==='Baltic_NetSD'?'Update: sales allowed':name==='curent_update_baltic'?'Update: no sales':name==='update2_penalty_sell'?'Update2 penalty: sales allowed':name==='update2_penalty_no_sell'?'Update2 penalty: no sales':name;
+    const first=data.orders.FSD, seriesNames=Object.keys(first.series), preferred=profile==='Portfolio'?['Current','Baltic_NetSD','curent_update_baltic','update2_penalty_sell','update2_penalty_no_sell','SP500']:['Current','SP500','curent_update_baltic','Baltic_NetSD','update2_penalty_sell','update2_penalty_no_sell'];
     const portfolioNames=seriesNames.filter(x=>(data.series_types||{})[x]==='portfolio');
     const shareNames=seriesNames.filter(x=>(data.series_types||{})[x]==='share');
     const benchmarkPool=profile==='Portfolio'?seriesNames:portfolioNames;
     const benchmarks=[...preferred.filter(x=>benchmarkPool.includes(x)),...benchmarkPool.filter(x=>!preferred.includes(x))];
     const otherShares=shareNames.filter(x=>x!==target);
     const defaultSelected=new Set(preferred.filter(x=>seriesNames.includes(x)).slice(0,3));
-    const defaultComparators=new Set(['Current','Baltic_NetSD','curent_update_baltic'].filter(x=>benchmarks.includes(x)));
+    const defaultComparators=new Set(['Current','Baltic_NetSD','curent_update_baltic','update2_penalty_sell','update2_penalty_no_sell'].filter(x=>benchmarks.includes(x)));
     box.innerHTML = `<div class="dominance-controls">
       <label>Component<select class="dom-order"><option>FSD</option><option>SSD</option><option>TSD</option></select></label>
       ${profile==='Portfolio'?`<label>Comparison base<select class="dom-benchmark">${benchmarks.map(x=>`<option value="${x}"${x===target?' selected':''}>${displayName(x)}</option>`).join('')}</select></label>`:
@@ -6903,12 +6931,12 @@ function initialiseFrontierExplorer(box) {
   fetch('interactive/frontiers.json').then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json();}).then(data=>{
     const models=Object.keys(data.models), first=data.models[models[0]], names=first.portfolios.map(p=>p.name);
     const portfolioNames=first.portfolios.filter(p=>p.type==='portfolio'&&p.name!=='Current').map(p=>p.name), sharePoints=first.portfolios.filter(p=>p.type==='share'), shareNames=sharePoints.map(p=>p.name), heldShares=new Set(sharePoints.filter(p=>p.held).map(p=>p.name));
-    const preferred=['Baltic_NetSD','curent_update_baltic','NetSD_full','NetSD_training'];
+    const preferred=['Baltic_NetSD','curent_update_baltic','update2_penalty_sell','update2_penalty_no_sell','NetSD_full','NetSD_training'];
     box.innerHTML=`<div class="frontier-controls">
       <label>Frontier model<select class="front-model">${models.map(x=>`<option>${x}</option>`).join('')}</select></label>
       <label class="frontier-multiselect-wrap">Compare Current with portfolios and shares
         <select class="frontier-multiselect" multiple size="10">
-          <optgroup label="Portfolios">${[...preferred.filter(x=>portfolioNames.includes(x)),...portfolioNames.filter(x=>!preferred.includes(x))].map(x=>`<option value="${x}" ${['Baltic_NetSD','curent_update_baltic'].includes(x)?'selected':''}>${x}</option>`).join('')}</optgroup>
+          <optgroup label="Portfolios">${[...preferred.filter(x=>portfolioNames.includes(x)),...portfolioNames.filter(x=>!preferred.includes(x))].map(x=>`<option value="${x}" ${['Baltic_NetSD','curent_update_baltic','update2_penalty_sell','update2_penalty_no_sell'].includes(x)?'selected':''}>${x}</option>`).join('')}</optgroup>
           <optgroup label="Shares currently held">${shareNames.filter(x=>heldShares.has(x)).map(x=>`<option value="${x}" selected>${x}</option>`).join('')}</optgroup>
           <optgroup label="Other shares">${shareNames.filter(x=>!heldShares.has(x)).map(x=>`<option value="${x}">${x}</option>`).join('')}</optgroup>
         </select><span class="frontier-select-help">Hold Ctrl (Windows) or Command (Mac) to select several entries.</span>
@@ -6955,9 +6983,9 @@ function initialiseCumulativeExplorer(box) {
   fetch('interactive/cumulative_drawdown.json').then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json();}).then(data=>{
     const names=Object.keys(data.series), types=data.series_types||{};
     const portfolios=names.filter(x=>types[x]==='portfolio'), shares=names.filter(x=>types[x]==='share');
-    const preferred=['Current','Baltic_NetSD','curent_update_baltic','SP500'];
+    const preferred=['Current','Baltic_NetSD','curent_update_baltic','update2_penalty_sell','update2_penalty_no_sell','SP500'];
     const orderedPortfolios=[...preferred.filter(x=>portfolios.includes(x)),...portfolios.filter(x=>!preferred.includes(x))];
-    const defaults=new Set(['Current','Baltic_NetSD','curent_update_baltic']);
+    const defaults=new Set(['Current','Baltic_NetSD','curent_update_baltic','update2_penalty_sell','update2_penalty_no_sell']);
     box.innerHTML=`<div class="cumulative-controls">
       <label class="cumulative-multiselect-wrap">Displayed portfolios, benchmark and shares
         <select class="cumulative-multiselect" multiple size="10">
