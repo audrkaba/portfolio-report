@@ -107,7 +107,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-28 08:49 (Europe/Vilnius); return analysis through 2026-10-27; valuation prices through 2026-10-27
+# Baltic investment plan - updated 2026-10-28 10:38 (Europe/Vilnius); return analysis through 2026-10-27; valuation prices through 2026-10-27
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -292,18 +292,18 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![KNE1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/KNE1L_all_frontiers.png?v=1793168751)
+![KNE1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/KNE1L_all_frontiers.png?v=1793176710)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
 </details>
 
 <details markdown="1">
-<summary>Share price and five-year average dividends versus all portfolios</summary>
+<summary>Mean return and five-year average dividends versus all portfolios</summary>
 
-![KNE1L price and average dividends with all portfolios](figures/stock_profiles/KNE1L_price_dividend.png?v=1793168751)
+![KNE1L mean return and average dividends with all portfolios](figures/stock_profiles/KNE1L_return_dividend.png?v=1793176710)
 
-The selected share is highlighted. Portfolio coordinates are weight-averaged nominal constituent prices and five-year average annual dividends per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. Because nominal share prices differ across issuers, this is a descriptive allocation chart rather than a dividend-yield or efficient-frontier measure.
+The selected share is highlighted. The horizontal coordinate is the realised mean one-period return from the common Baltic return sample. A portfolio's vertical coordinate is the portfolio-weighted five-year average annual dividend per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. The dividend axis is descriptive and does not represent a forward dividend forecast.
 
 </details>
 
@@ -555,18 +555,18 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![VLP1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/VLP1L_all_frontiers.png?v=1793168746)
+![VLP1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/VLP1L_all_frontiers.png?v=1793176706)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
 </details>
 
 <details markdown="1">
-<summary>Share price and five-year average dividends versus all portfolios</summary>
+<summary>Mean return and five-year average dividends versus all portfolios</summary>
 
-![VLP1L price and average dividends with all portfolios](figures/stock_profiles/VLP1L_price_dividend.png?v=1793168747)
+![VLP1L mean return and average dividends with all portfolios](figures/stock_profiles/VLP1L_return_dividend.png?v=1793176706)
 
-The selected share is highlighted. Portfolio coordinates are weight-averaged nominal constituent prices and five-year average annual dividends per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. Because nominal share prices differ across issuers, this is a descriptive allocation chart rather than a dividend-yield or efficient-frontier measure.
+The selected share is highlighted. The horizontal coordinate is the realised mean one-period return from the common Baltic return sample. A portfolio's vertical coordinate is the portfolio-weighted five-year average annual dividend per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. The dividend axis is descriptive and does not represent a forward dividend forecast.
 
 </details>
 
@@ -837,18 +837,18 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![MRK1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/MRK1T_all_frontiers.png?v=1793168747)
+![MRK1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/MRK1T_all_frontiers.png?v=1793176707)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
 </details>
 
 <details markdown="1">
-<summary>Share price and five-year average dividends versus all portfolios</summary>
+<summary>Mean return and five-year average dividends versus all portfolios</summary>
 
-![MRK1T price and average dividends with all portfolios](figures/stock_profiles/MRK1T_price_dividend.png?v=1793168748)
+![MRK1T mean return and average dividends with all portfolios](figures/stock_profiles/MRK1T_return_dividend.png?v=1793176707)
 
-The selected share is highlighted. Portfolio coordinates are weight-averaged nominal constituent prices and five-year average annual dividends per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. Because nominal share prices differ across issuers, this is a descriptive allocation chart rather than a dividend-yield or efficient-frontier measure.
+The selected share is highlighted. The horizontal coordinate is the realised mean one-period return from the common Baltic return sample. A portfolio's vertical coordinate is the portfolio-weighted five-year average annual dividend per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. The dividend axis is descriptive and does not represent a forward dividend forecast.
 
 </details>
 
@@ -1087,18 +1087,18 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![MOLNR Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/MOLNR_all_frontiers.png?v=1793168756)
+![MOLNR Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/MOLNR_all_frontiers.png?v=1793176714)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
 </details>
 
 <details markdown="1">
-<summary>Share price and five-year average dividends versus all portfolios</summary>
+<summary>Mean return and five-year average dividends versus all portfolios</summary>
 
-![MOLNR price and average dividends with all portfolios](figures/stock_profiles/MOLNR_price_dividend.png?v=1793168756)
+![MOLNR mean return and average dividends with all portfolios](figures/stock_profiles/MOLNR_return_dividend.png?v=1793176714)
 
-The selected share is highlighted. Portfolio coordinates are weight-averaged nominal constituent prices and five-year average annual dividends per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. Because nominal share prices differ across issuers, this is a descriptive allocation chart rather than a dividend-yield or efficient-frontier measure.
+The selected share is highlighted. The horizontal coordinate is the realised mean one-period return from the common Baltic return sample. A portfolio's vertical coordinate is the portfolio-weighted five-year average annual dividend per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. The dividend axis is descriptive and does not represent a forward dividend forecast.
 
 </details>
 
@@ -1337,18 +1337,18 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![RSU1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/RSU1L_all_frontiers.png?v=1793168752)
+![RSU1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/RSU1L_all_frontiers.png?v=1793176711)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
 </details>
 
 <details markdown="1">
-<summary>Share price and five-year average dividends versus all portfolios</summary>
+<summary>Mean return and five-year average dividends versus all portfolios</summary>
 
-![RSU1L price and average dividends with all portfolios](figures/stock_profiles/RSU1L_price_dividend.png?v=1793168753)
+![RSU1L mean return and average dividends with all portfolios](figures/stock_profiles/RSU1L_return_dividend.png?v=1793176711)
 
-The selected share is highlighted. Portfolio coordinates are weight-averaged nominal constituent prices and five-year average annual dividends per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. Because nominal share prices differ across issuers, this is a descriptive allocation chart rather than a dividend-yield or efficient-frontier measure.
+The selected share is highlighted. The horizontal coordinate is the realised mean one-period return from the common Baltic return sample. A portfolio's vertical coordinate is the portfolio-weighted five-year average annual dividend per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. The dividend axis is descriptive and does not represent a forward dividend forecast.
 
 </details>
 
@@ -1647,18 +1647,18 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![APG1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/APG1L_all_frontiers.png?v=1793168748)
+![APG1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/APG1L_all_frontiers.png?v=1793176708)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
 </details>
 
 <details markdown="1">
-<summary>Share price and five-year average dividends versus all portfolios</summary>
+<summary>Mean return and five-year average dividends versus all portfolios</summary>
 
-![APG1L price and average dividends with all portfolios](figures/stock_profiles/APG1L_price_dividend.png?v=1793168749)
+![APG1L mean return and average dividends with all portfolios](figures/stock_profiles/APG1L_return_dividend.png?v=1793176708)
 
-The selected share is highlighted. Portfolio coordinates are weight-averaged nominal constituent prices and five-year average annual dividends per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. Because nominal share prices differ across issuers, this is a descriptive allocation chart rather than a dividend-yield or efficient-frontier measure.
+The selected share is highlighted. The horizontal coordinate is the realised mean one-period return from the common Baltic return sample. A portfolio's vertical coordinate is the portfolio-weighted five-year average annual dividend per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. The dividend axis is descriptive and does not represent a forward dividend forecast.
 
 </details>
 
@@ -1921,18 +1921,18 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![IGN1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/IGN1L_all_frontiers.png?v=1793168760)
+![IGN1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/IGN1L_all_frontiers.png?v=1793176716)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
 </details>
 
 <details markdown="1">
-<summary>Share price and five-year average dividends versus all portfolios</summary>
+<summary>Mean return and five-year average dividends versus all portfolios</summary>
 
-![IGN1L price and average dividends with all portfolios](figures/stock_profiles/IGN1L_price_dividend.png?v=1793168760)
+![IGN1L mean return and average dividends with all portfolios](figures/stock_profiles/IGN1L_return_dividend.png?v=1793176717)
 
-The selected share is highlighted. Portfolio coordinates are weight-averaged nominal constituent prices and five-year average annual dividends per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. Because nominal share prices differ across issuers, this is a descriptive allocation chart rather than a dividend-yield or efficient-frontier measure.
+The selected share is highlighted. The horizontal coordinate is the realised mean one-period return from the common Baltic return sample. A portfolio's vertical coordinate is the portfolio-weighted five-year average annual dividend per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. The dividend axis is descriptive and does not represent a forward dividend forecast.
 
 </details>
 
@@ -2184,18 +2184,18 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![PZV1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/PZV1L_all_frontiers.png?v=1793168761)
+![PZV1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/PZV1L_all_frontiers.png?v=1793176717)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
 </details>
 
 <details markdown="1">
-<summary>Share price and five-year average dividends versus all portfolios</summary>
+<summary>Mean return and five-year average dividends versus all portfolios</summary>
 
-![PZV1L price and average dividends with all portfolios](figures/stock_profiles/PZV1L_price_dividend.png?v=1793168761)
+![PZV1L mean return and average dividends with all portfolios](figures/stock_profiles/PZV1L_return_dividend.png?v=1793176717)
 
-The selected share is highlighted. Portfolio coordinates are weight-averaged nominal constituent prices and five-year average annual dividends per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. Because nominal share prices differ across issuers, this is a descriptive allocation chart rather than a dividend-yield or efficient-frontier measure.
+The selected share is highlighted. The horizontal coordinate is the realised mean one-period return from the common Baltic return sample. A portfolio's vertical coordinate is the portfolio-weighted five-year average annual dividend per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. The dividend axis is descriptive and does not represent a forward dividend forecast.
 
 </details>
 
@@ -2447,18 +2447,18 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![AKO1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/AKO1L_all_frontiers.png?v=1793168758)
+![AKO1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/AKO1L_all_frontiers.png?v=1793176715)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
 </details>
 
 <details markdown="1">
-<summary>Share price and five-year average dividends versus all portfolios</summary>
+<summary>Mean return and five-year average dividends versus all portfolios</summary>
 
-![AKO1L price and average dividends with all portfolios](figures/stock_profiles/AKO1L_price_dividend.png?v=1793168758)
+![AKO1L mean return and average dividends with all portfolios](figures/stock_profiles/AKO1L_return_dividend.png?v=1793176715)
 
-The selected share is highlighted. Portfolio coordinates are weight-averaged nominal constituent prices and five-year average annual dividends per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. Because nominal share prices differ across issuers, this is a descriptive allocation chart rather than a dividend-yield or efficient-frontier measure.
+The selected share is highlighted. The horizontal coordinate is the realised mean one-period return from the common Baltic return sample. A portfolio's vertical coordinate is the portfolio-weighted five-year average annual dividend per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. The dividend axis is descriptive and does not represent a forward dividend forecast.
 
 </details>
 
@@ -2718,18 +2718,18 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![ROE1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/ROE1L_all_frontiers.png?v=1793168751)
+![ROE1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/ROE1L_all_frontiers.png?v=1793176710)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
 </details>
 
 <details markdown="1">
-<summary>Share price and five-year average dividends versus all portfolios</summary>
+<summary>Mean return and five-year average dividends versus all portfolios</summary>
 
-![ROE1L price and average dividends with all portfolios](figures/stock_profiles/ROE1L_price_dividend.png?v=1793168752)
+![ROE1L mean return and average dividends with all portfolios](figures/stock_profiles/ROE1L_return_dividend.png?v=1793176711)
 
-The selected share is highlighted. Portfolio coordinates are weight-averaged nominal constituent prices and five-year average annual dividends per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. Because nominal share prices differ across issuers, this is a descriptive allocation chart rather than a dividend-yield or efficient-frontier measure.
+The selected share is highlighted. The horizontal coordinate is the realised mean one-period return from the common Baltic return sample. A portfolio's vertical coordinate is the portfolio-weighted five-year average annual dividend per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. The dividend axis is descriptive and does not represent a forward dividend forecast.
 
 </details>
 
@@ -3005,18 +3005,18 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![TAL1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TAL1T_all_frontiers.png?v=1793168749)
+![TAL1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TAL1T_all_frontiers.png?v=1793176709)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
 </details>
 
 <details markdown="1">
-<summary>Share price and five-year average dividends versus all portfolios</summary>
+<summary>Mean return and five-year average dividends versus all portfolios</summary>
 
-![TAL1T price and average dividends with all portfolios](figures/stock_profiles/TAL1T_price_dividend.png?v=1793168750)
+![TAL1T mean return and average dividends with all portfolios](figures/stock_profiles/TAL1T_return_dividend.png?v=1793176709)
 
-The selected share is highlighted. Portfolio coordinates are weight-averaged nominal constituent prices and five-year average annual dividends per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. Because nominal share prices differ across issuers, this is a descriptive allocation chart rather than a dividend-yield or efficient-frontier measure.
+The selected share is highlighted. The horizontal coordinate is the realised mean one-period return from the common Baltic return sample. A portfolio's vertical coordinate is the portfolio-weighted five-year average annual dividend per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. The dividend axis is descriptive and does not represent a forward dividend forecast.
 
 </details>
 
@@ -3288,18 +3288,18 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![EFT1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/EFT1T_all_frontiers.png?v=1793168757)
+![EFT1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/EFT1T_all_frontiers.png?v=1793176714)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
 </details>
 
 <details markdown="1">
-<summary>Share price and five-year average dividends versus all portfolios</summary>
+<summary>Mean return and five-year average dividends versus all portfolios</summary>
 
-![EFT1T price and average dividends with all portfolios](figures/stock_profiles/EFT1T_price_dividend.png?v=1793168757)
+![EFT1T mean return and average dividends with all portfolios](figures/stock_profiles/EFT1T_return_dividend.png?v=1793176715)
 
-The selected share is highlighted. Portfolio coordinates are weight-averaged nominal constituent prices and five-year average annual dividends per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. Because nominal share prices differ across issuers, this is a descriptive allocation chart rather than a dividend-yield or efficient-frontier measure.
+The selected share is highlighted. The horizontal coordinate is the realised mean one-period return from the common Baltic return sample. A portfolio's vertical coordinate is the portfolio-weighted five-year average annual dividend per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. The dividend axis is descriptive and does not represent a forward dividend forecast.
 
 </details>
 
@@ -3555,18 +3555,18 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![SAF1R Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/SAF1R_all_frontiers.png?v=1793168745)
+![SAF1R Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/SAF1R_all_frontiers.png?v=1793176705)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
 </details>
 
 <details markdown="1">
-<summary>Share price and five-year average dividends versus all portfolios</summary>
+<summary>Mean return and five-year average dividends versus all portfolios</summary>
 
-![SAF1R price and average dividends with all portfolios](figures/stock_profiles/SAF1R_price_dividend.png?v=1793168746)
+![SAF1R mean return and average dividends with all portfolios](figures/stock_profiles/SAF1R_return_dividend.png?v=1793176705)
 
-The selected share is highlighted. Portfolio coordinates are weight-averaged nominal constituent prices and five-year average annual dividends per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. Because nominal share prices differ across issuers, this is a descriptive allocation chart rather than a dividend-yield or efficient-frontier measure.
+The selected share is highlighted. The horizontal coordinate is the realised mean one-period return from the common Baltic return sample. A portfolio's vertical coordinate is the portfolio-weighted five-year average annual dividend per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. The dividend axis is descriptive and does not represent a forward dividend forecast.
 
 </details>
 
@@ -3832,18 +3832,18 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![TSM1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TSM1T_all_frontiers.png?v=1793168759)
+![TSM1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TSM1T_all_frontiers.png?v=1793176716)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
 </details>
 
 <details markdown="1">
-<summary>Share price and five-year average dividends versus all portfolios</summary>
+<summary>Mean return and five-year average dividends versus all portfolios</summary>
 
-![TSM1T price and average dividends with all portfolios](figures/stock_profiles/TSM1T_price_dividend.png?v=1793168759)
+![TSM1T mean return and average dividends with all portfolios](figures/stock_profiles/TSM1T_return_dividend.png?v=1793176716)
 
-The selected share is highlighted. Portfolio coordinates are weight-averaged nominal constituent prices and five-year average annual dividends per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. Because nominal share prices differ across issuers, this is a descriptive allocation chart rather than a dividend-yield or efficient-frontier measure.
+The selected share is highlighted. The horizontal coordinate is the realised mean one-period return from the common Baltic return sample. A portfolio's vertical coordinate is the portfolio-weighted five-year average annual dividend per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. The dividend axis is descriptive and does not represent a forward dividend forecast.
 
 </details>
 
@@ -4059,18 +4059,18 @@ A direction reversal requires opposite fitted price slopes during the ten tradin
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![GRG1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/GRG1L_all_frontiers.png?v=1793168753)
+![GRG1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/GRG1L_all_frontiers.png?v=1793176712)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
 </details>
 
 <details markdown="1">
-<summary>Share price and five-year average dividends versus all portfolios</summary>
+<summary>Mean return and five-year average dividends versus all portfolios</summary>
 
-![GRG1L price and average dividends with all portfolios](figures/stock_profiles/GRG1L_price_dividend.png?v=1793168754)
+![GRG1L mean return and average dividends with all portfolios](figures/stock_profiles/GRG1L_return_dividend.png?v=1793176712)
 
-The selected share is highlighted. Portfolio coordinates are weight-averaged nominal constituent prices and five-year average annual dividends per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. Because nominal share prices differ across issuers, this is a descriptive allocation chart rather than a dividend-yield or efficient-frontier measure.
+The selected share is highlighted. The horizontal coordinate is the realised mean one-period return from the common Baltic return sample. A portfolio's vertical coordinate is the portfolio-weighted five-year average annual dividend per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. The dividend axis is descriptive and does not represent a forward dividend forecast.
 
 </details>
 
@@ -4288,18 +4288,18 @@ A direction reversal requires opposite fitted price slopes during the ten tradin
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![TEL1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TEL1L_all_frontiers.png?v=1793168766)
+![TEL1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TEL1L_all_frontiers.png?v=1793176721)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
 </details>
 
 <details markdown="1">
-<summary>Share price and five-year average dividends versus all portfolios</summary>
+<summary>Mean return and five-year average dividends versus all portfolios</summary>
 
-![TEL1L price and average dividends with all portfolios](figures/stock_profiles/TEL1L_price_dividend.png?v=1793168766)
+![TEL1L mean return and average dividends with all portfolios](figures/stock_profiles/TEL1L_return_dividend.png?v=1793176721)
 
-The selected share is highlighted. Portfolio coordinates are weight-averaged nominal constituent prices and five-year average annual dividends per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. Because nominal share prices differ across issuers, this is a descriptive allocation chart rather than a dividend-yield or efficient-frontier measure.
+The selected share is highlighted. The horizontal coordinate is the realised mean one-period return from the common Baltic return sample. A portfolio's vertical coordinate is the portfolio-weighted five-year average annual dividend per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. The dividend axis is descriptive and does not represent a forward dividend forecast.
 
 </details>
 
@@ -4592,18 +4592,18 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![DGR1R Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/DGR1R_all_frontiers.png?v=1793168763)
+![DGR1R Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/DGR1R_all_frontiers.png?v=1793176718)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
 </details>
 
 <details markdown="1">
-<summary>Share price and five-year average dividends versus all portfolios</summary>
+<summary>Mean return and five-year average dividends versus all portfolios</summary>
 
-![DGR1R price and average dividends with all portfolios](figures/stock_profiles/DGR1R_price_dividend.png?v=1793168763)
+![DGR1R mean return and average dividends with all portfolios](figures/stock_profiles/DGR1R_return_dividend.png?v=1793176719)
 
-The selected share is highlighted. Portfolio coordinates are weight-averaged nominal constituent prices and five-year average annual dividends per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. Because nominal share prices differ across issuers, this is a descriptive allocation chart rather than a dividend-yield or efficient-frontier measure.
+The selected share is highlighted. The horizontal coordinate is the realised mean one-period return from the common Baltic return sample. A portfolio's vertical coordinate is the portfolio-weighted five-year average annual dividend per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. The dividend axis is descriptive and does not represent a forward dividend forecast.
 
 </details>
 
@@ -4872,18 +4872,18 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![TKM1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TKM1T_all_frontiers.png?v=1793168744)
+![TKM1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TKM1T_all_frontiers.png?v=1793176704)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
 </details>
 
 <details markdown="1">
-<summary>Share price and five-year average dividends versus all portfolios</summary>
+<summary>Mean return and five-year average dividends versus all portfolios</summary>
 
-![TKM1T price and average dividends with all portfolios](figures/stock_profiles/TKM1T_price_dividend.png?v=1793168745)
+![TKM1T mean return and average dividends with all portfolios](figures/stock_profiles/TKM1T_return_dividend.png?v=1793176704)
 
-The selected share is highlighted. Portfolio coordinates are weight-averaged nominal constituent prices and five-year average annual dividends per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. Because nominal share prices differ across issuers, this is a descriptive allocation chart rather than a dividend-yield or efficient-frontier measure.
+The selected share is highlighted. The horizontal coordinate is the realised mean one-period return from the common Baltic return sample. A portfolio's vertical coordinate is the portfolio-weighted five-year average annual dividend per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. The dividend axis is descriptive and does not represent a forward dividend forecast.
 
 </details>
 
@@ -5155,18 +5155,18 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![HAE1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/HAE1T_all_frontiers.png?v=1793168755)
+![HAE1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/HAE1T_all_frontiers.png?v=1793176713)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
 </details>
 
 <details markdown="1">
-<summary>Share price and five-year average dividends versus all portfolios</summary>
+<summary>Mean return and five-year average dividends versus all portfolios</summary>
 
-![HAE1T price and average dividends with all portfolios](figures/stock_profiles/HAE1T_price_dividend.png?v=1793168755)
+![HAE1T mean return and average dividends with all portfolios](figures/stock_profiles/HAE1T_return_dividend.png?v=1793176713)
 
-The selected share is highlighted. Portfolio coordinates are weight-averaged nominal constituent prices and five-year average annual dividends per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. Because nominal share prices differ across issuers, this is a descriptive allocation chart rather than a dividend-yield or efficient-frontier measure.
+The selected share is highlighted. The horizontal coordinate is the realised mean one-period return from the common Baltic return sample. A portfolio's vertical coordinate is the portfolio-weighted five-year average annual dividend per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. The dividend axis is descriptive and does not represent a forward dividend forecast.
 
 </details>
 
@@ -5444,18 +5444,18 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![LHV1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/LHV1T_all_frontiers.png?v=1793168762)
+![LHV1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/LHV1T_all_frontiers.png?v=1793176718)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
 </details>
 
 <details markdown="1">
-<summary>Share price and five-year average dividends versus all portfolios</summary>
+<summary>Mean return and five-year average dividends versus all portfolios</summary>
 
-![LHV1T price and average dividends with all portfolios](figures/stock_profiles/LHV1T_price_dividend.png?v=1793168762)
+![LHV1T mean return and average dividends with all portfolios](figures/stock_profiles/LHV1T_return_dividend.png?v=1793176718)
 
-The selected share is highlighted. Portfolio coordinates are weight-averaged nominal constituent prices and five-year average annual dividends per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. Because nominal share prices differ across issuers, this is a descriptive allocation chart rather than a dividend-yield or efficient-frontier measure.
+The selected share is highlighted. The horizontal coordinate is the realised mean one-period return from the common Baltic return sample. A portfolio's vertical coordinate is the portfolio-weighted five-year average annual dividend per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. The dividend axis is descriptive and does not represent a forward dividend forecast.
 
 </details>
 
@@ -5727,18 +5727,18 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![TVE1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TVE1T_all_frontiers.png?v=1793168764)
+![TVE1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TVE1T_all_frontiers.png?v=1793176719)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
 </details>
 
 <details markdown="1">
-<summary>Share price and five-year average dividends versus all portfolios</summary>
+<summary>Mean return and five-year average dividends versus all portfolios</summary>
 
-![TVE1T price and average dividends with all portfolios](figures/stock_profiles/TVE1T_price_dividend.png?v=1793168764)
+![TVE1T mean return and average dividends with all portfolios](figures/stock_profiles/TVE1T_return_dividend.png?v=1793176719)
 
-The selected share is highlighted. Portfolio coordinates are weight-averaged nominal constituent prices and five-year average annual dividends per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. Because nominal share prices differ across issuers, this is a descriptive allocation chart rather than a dividend-yield or efficient-frontier measure.
+The selected share is highlighted. The horizontal coordinate is the realised mean one-period return from the common Baltic return sample. A portfolio's vertical coordinate is the portfolio-weighted five-year average annual dividend per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. The dividend axis is descriptive and does not represent a forward dividend forecast.
 
 </details>
 
@@ -6008,18 +6008,18 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![CPA1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/CPA1T_all_frontiers.png?v=1793168765)
+![CPA1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/CPA1T_all_frontiers.png?v=1793176720)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
 </details>
 
 <details markdown="1">
-<summary>Share price and five-year average dividends versus all portfolios</summary>
+<summary>Mean return and five-year average dividends versus all portfolios</summary>
 
-![CPA1T price and average dividends with all portfolios](figures/stock_profiles/CPA1T_price_dividend.png?v=1793168765)
+![CPA1T mean return and average dividends with all portfolios](figures/stock_profiles/CPA1T_return_dividend.png?v=1793176720)
 
-The selected share is highlighted. Portfolio coordinates are weight-averaged nominal constituent prices and five-year average annual dividends per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. Because nominal share prices differ across issuers, this is a descriptive allocation chart rather than a dividend-yield or efficient-frontier measure.
+The selected share is highlighted. The horizontal coordinate is the realised mean one-period return from the common Baltic return sample. A portfolio's vertical coordinate is the portfolio-weighted five-year average annual dividend per share. Both update variants are shown explicitly as Update: sales allowed and Update: no sales. The dividend axis is descriptive and does not represent a forward dividend forecast.
 
 </details>
 
