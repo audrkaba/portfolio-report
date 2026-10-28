@@ -6805,6 +6805,7 @@ function initialiseDominanceExplorer(box) {
   box.dataset.loaded = 'loading';
   const profile = box.dataset.asset, target = box.dataset.target || profile;
   fetch(`interactive/dominance/${profile}.json`).then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); }).then(data => {
+    const displayName=name=>name==='Baltic_NetSD'?'Update: sales allowed':name==='curent_update_baltic'?'Update: no sales':name;
     const first=data.orders.FSD, seriesNames=Object.keys(first.series), preferred=profile==='Portfolio'?['Current','Baltic_NetSD','curent_update_baltic','SP500']:['Current','SP500','curent_update_baltic','Baltic_NetSD'];
     const benchmarkPool=profile==='Portfolio'?seriesNames:seriesNames.filter(x=>x!==target);
     const benchmarks=[...preferred.filter(x=>benchmarkPool.includes(x)),...benchmarkPool.filter(x=>!preferred.includes(x))];
@@ -6814,13 +6815,13 @@ function initialiseDominanceExplorer(box) {
     const defaultComparators=new Set(['Current','Baltic_NetSD','curent_update_baltic'].filter(x=>benchmarks.includes(x)));
     box.innerHTML = `<div class="dominance-controls">
       <label>Component<select class="dom-order"><option>FSD</option><option>SSD</option><option>TSD</option></select></label>
-      ${profile==='Portfolio'?`<label>Comparison base<select class="dom-benchmark">${benchmarks.map(x=>`<option${x===target?' selected':''}>${x}</option>`).join('')}</select></label>`:
+      ${profile==='Portfolio'?`<label>Comparison base<select class="dom-benchmark">${benchmarks.map(x=>`<option value="${x}"${x===target?' selected':''}>${displayName(x)}</option>`).join('')}</select></label>`:
       `<label class="dominance-multiselect-wrap">Comparison portfolios
-        <select class="dom-comparators dominance-multiselect" multiple size="7">${benchmarks.map(x=>`<option value="${x}"${defaultComparators.has(x)?' selected':''}>${x}</option>`).join('')}</select>
+        <select class="dom-comparators dominance-multiselect" multiple size="7">${benchmarks.map(x=>`<option value="${x}"${defaultComparators.has(x)?' selected':''}>${displayName(x)}</option>`).join('')}</select>
         <small>Use Ctrl (Windows) or Cmd (Mac) to select several portfolios. Every difference is ${target} minus the selected portfolio.</small></label>`}
       ${profile==='Portfolio'?`<label class="dominance-multiselect-wrap">Displayed portfolios and shares
         <select class="dominance-multiselect" multiple size="10">
-          <optgroup label="Portfolios">${portfolioNames.map(x=>`<option value="${x}"${defaultSelected.has(x)?' selected':''}>${x}</option>`).join('')}</optgroup>
+          <optgroup label="Portfolios">${portfolioNames.map(x=>`<option value="${x}"${defaultSelected.has(x)?' selected':''}>${displayName(x)}</option>`).join('')}</optgroup>
           <optgroup label="Shares">${shareNames.map(x=>`<option value="${x}">${x}</option>`).join('')}</optgroup>
         </select><small>Use Ctrl (Windows) or Cmd (Mac) to select several entries.</small></label>`:''}
       <label>X position: <output class="dom-xout">50.0%</output><input class="dom-xpos" type="range" min="0" max="1000" value="500" step="1"></label>
@@ -6864,13 +6865,13 @@ function initialiseDominanceExplorer(box) {
       }
       function plot(p,i0,i1,y0,y1) { names.forEach((k,ki)=>{const style=seriesStyle(k,ki);ctx.strokeStyle=style.colour;ctx.setLineDash(style.dash);ctx.globalAlpha=style.alpha;ctx.lineWidth=style.width;ctx.beginPath();for(let i=i0;i<=i1;i++){const px=p.l+(x[i]-x[i0])/(x[i1]-x[i0]||1)*(p.r-p.l),py=p.b-(d.series[k][i]-y0)/(y1-y0||1)*(p.b-p.t);if(i===i0)ctx.moveTo(px,py);else ctx.lineTo(px,py);}ctx.stroke();});ctx.globalAlpha=1;ctx.setLineDash([]); }
       function plotDifference(p,i0,i1,y0,y1){comparisonNames.forEach(k=>{const a=differences[k],style=seriesStyle(k,names.indexOf(k));ctx.strokeStyle=style.colour;ctx.setLineDash(style.dash);ctx.lineWidth=k===bench?3.4:(profile==='Portfolio'?1.7:2.8);ctx.globalAlpha=k===bench?1:(profile==='Portfolio'?.68:1);ctx.beginPath();for(let i=i0;i<=i1;i++){const px=p.l+(x[i]-x[i0])/(x[i1]-x[i0]||1)*(p.r-p.l),py=p.b-(a[i]-y0)/(y1-y0||1)*(p.b-p.t);if(i===i0)ctx.moveTo(px,py);else ctx.lineTo(px,py);}ctx.stroke();});ctx.globalAlpha=1;ctx.setLineDash([]);}
-      const ym=yrange(0,n-1); axes(main,x[0],x[n-1],ym[0],ym[1],`${baseName}: ${order.value} components - scroll or click to move`); plot(main,0,n-1,ym[0],ym[1]);
+      const ym=yrange(0,n-1); axes(main,x[0],x[n-1],ym[0],ym[1],`${displayName(baseName)}: ${order.value} components - scroll or click to move`); plot(main,0,n-1,ym[0],ym[1]);
       const sx0=main.l+(x[lo]-x[0])/(x[n-1]-x[0])*(main.r-main.l), sx1=main.l+(x[hi]-x[0])/(x[n-1]-x[0])*(main.r-main.l);ctx.strokeStyle='#d7191c';ctx.lineWidth=2;ctx.strokeRect(sx0,main.t,Math.max(2,sx1-sx0),main.b-main.t);
       let yz=yrange(lo,hi); axes(zoom,x[lo],x[hi],yz[0],yz[1],`Selected component interval (${hz.value}x horizontal)`); plot(zoom,lo,hi,yz[0],yz[1]);
-      let yd=differenceRange(0,n-1);axes(diff,x[0],x[n-1],yd[0],yd[1],profile==='Portfolio'?`${baseName} minus selected portfolios and shares`:`${target} minus selected portfolios`);plotDifference(diff,0,n-1,yd[0],yd[1]);ctx.strokeStyle='#d7191c';ctx.lineWidth=2;ctx.strokeRect(sx0,diff.t,Math.max(2,sx1-sx0),diff.b-diff.t);
+      let yd=differenceRange(0,n-1);axes(diff,x[0],x[n-1],yd[0],yd[1],profile==='Portfolio'?`${displayName(baseName)} minus selected portfolios and shares`:`${target} minus selected portfolios`);plotDifference(diff,0,n-1,yd[0],yd[1]);ctx.strokeStyle='#d7191c';ctx.lineWidth=2;ctx.strokeRect(sx0,diff.t,Math.max(2,sx1-sx0),diff.b-diff.t);
       let ydz=differenceRange(lo,hi);axes(diffZoom,x[lo],x[hi],ydz[0],ydz[1],`Selected difference interval (${hz.value}x horizontal)`);plotDifference(diffZoom,lo,hi,ydz[0],ydz[1]);
-      const legend=names; legend.forEach((k,j)=>{const style=seriesStyle(k,names.indexOf(k)),lx=L+(j%3)*Math.max(190,(W-L-R)/3),ly=20+Math.floor(j/3)*20;ctx.strokeStyle=style.colour;ctx.setLineDash(style.dash);ctx.lineWidth=style.width;ctx.beginPath();ctx.moveTo(lx,ly);ctx.lineTo(lx+24,ly);ctx.stroke();ctx.setLineDash([]);ctx.fillStyle='#263d4b';ctx.fillText(k,lx+31,ly+4);});
-      const values=names.map(k=>`${k}=${d.series[k][mid].toExponential(5)}`).join(' | '); status.textContent=`x=${x[mid].toFixed(6)}; selected interval [${x[lo].toFixed(6)}, ${x[hi].toFixed(6)}]; ${baseName}-${focus}=${difference[mid].toExponential(5)} | ${values}`;
+      const legend=names; legend.forEach((k,j)=>{const style=seriesStyle(k,names.indexOf(k)),lx=L+(j%3)*Math.max(190,(W-L-R)/3),ly=20+Math.floor(j/3)*20;ctx.strokeStyle=style.colour;ctx.setLineDash(style.dash);ctx.lineWidth=style.width;ctx.beginPath();ctx.moveTo(lx,ly);ctx.lineTo(lx+24,ly);ctx.stroke();ctx.setLineDash([]);ctx.fillStyle='#263d4b';ctx.fillText(displayName(k),lx+31,ly+4);});
+      const values=names.map(k=>`${displayName(k)}=${d.series[k][mid].toExponential(5)}`).join(' | '); status.textContent=`x=${x[mid].toFixed(6)}; selected interval [${x[lo].toFixed(6)}, ${x[hi].toFixed(6)}]; ${displayName(baseName)}-${displayName(focus)}=${difference[mid].toExponential(5)} | ${values}`;
       xpos.value=Math.round(centre*1000);box.querySelector('.dom-xout').value=`${(100*centre).toFixed(1)}%`;box.querySelector('.dom-hout').value=`${hz.value}x`;
     }
     [order,benchmark,comparators,hz,multi].filter(Boolean).forEach(el=>el.addEventListener('input',render));xpos.addEventListener('input',()=>{centre=Number(xpos.value)/1000;render();});
