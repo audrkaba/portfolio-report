@@ -6613,9 +6613,13 @@ function initialiseDominanceExplorer(box) {
     const canvas=box.querySelector('canvas'), order=box.querySelector('.dom-order'), benchmark=box.querySelector('.dom-benchmark'), multi=box.querySelector('.dominance-multiselect'), xpos=box.querySelector('.dom-xpos'), hz=box.querySelector('.dom-hzoom'), status=box.querySelector('.dominance-status');
     let centre=.5, hit=[];
     function render() {
-      const d=data.orders[order.value], x=d.x, allNames=Object.keys(d.series), selected=multi?[...multi.selectedOptions].map(o=>o.value):allNames;
-      const target=benchmark.value;
-      const names=[target,...selected].filter((k,i,a)=>d.series[k]&&a.indexOf(k)===i), n=x.length;
+      const d=data.orders[order.value], x=d.x, allNames=Object.keys(d.series), selected=multi?[...multi.selectedOptions].map(o=>o.value):[];
+      const bench=benchmark.value;
+      // A share profile always compares that concrete share with the selected
+      // portfolio.  The portfolio explorer instead uses the selected benchmark
+      // as its base and may compare it with several selected entities.
+      const baseName=profile==='Portfolio'?bench:target;
+      const names=(profile==='Portfolio'?[baseName,...selected]:[target,bench]).filter((k,i,a)=>d.series[k]&&a.indexOf(k)===i), n=x.length;
       const rect=canvas.getBoundingClientRect(), ratio=Math.min(Math.max(window.devicePixelRatio||1,2),3);
       canvas.width=Math.max(900,Math.round(rect.width*ratio)); canvas.height=Math.round(rect.height*ratio);
       const ctx=canvas.getContext('2d'); ctx.setTransform(ratio,0,0,ratio,0,0); const W=canvas.width/ratio,H=canvas.height/ratio;
@@ -6624,16 +6628,16 @@ function initialiseDominanceExplorer(box) {
       const main={l:L,r:L+leftW,t:T,b:T+panelH}, zoom={l:L+leftW+colGap,r:W-R,t:T,b:T+panelH};
       const diff={l:L,r:L+leftW,t:T+panelH+rowGap,b:T+2*panelH+rowGap}, diffZoom={l:L+leftW+colGap,r:W-R,t:T+panelH+rowGap,b:T+2*panelH+rowGap}; hit=[main,diff];
       const mid=Math.round(centre*(n-1)), count=Math.max(8,Math.round(n/Number(hz.value))), lo=Math.max(0,Math.min(n-count,mid-Math.floor(count/2))), hi=Math.min(n-1,lo+count-1);
-      const bench=benchmark.value, comparisonNames=profile==='Portfolio'?names.filter(k=>k!==target):[bench];
+      const comparisonNames=profile==='Portfolio'?names.filter(k=>k!==baseName):[bench];
       if(!comparisonNames.length){status.textContent='Select at least one portfolio or share in addition to the comparison base.';return;}
-      const differences=Object.fromEntries(comparisonNames.map(k=>[k,d.series[target].map((v,i)=>v-d.series[k][i])]));
+      const differences=Object.fromEntries(comparisonNames.map(k=>[k,d.series[baseName].map((v,i)=>v-d.series[k][i])]));
       const focus=profile==='Portfolio'?comparisonNames[0]:bench, difference=differences[focus];
       function yrange(i0,i1,keys=names) { let mn=Infinity,mx=-Infinity; keys.forEach(k=>{for(let i=i0;i<=i1;i++){const v=d.series[k][i];if(v<mn)mn=v;if(v>mx)mx=v;}}); if(mx===mn){mx+=1;mn-=1} return [mn,mx]; }
       function arrayRange(a,i0,i1){let mn=Infinity,mx=-Infinity;for(let i=i0;i<=i1;i++){if(a[i]<mn)mn=a[i];if(a[i]>mx)mx=a[i];}if(mx===mn){mx+=1;mn-=1}return[mn,mx];}
       function differenceRange(i0,i1){let mn=Infinity,mx=-Infinity;comparisonNames.forEach(k=>{const r=arrayRange(differences[k],i0,i1);mn=Math.min(mn,r[0]);mx=Math.max(mx,r[1]);});if(mx===mn){mx+=1;mn-=1}return[mn,mx];}
       function axes(p,x0,x1,y0,y1,label) { ctx.strokeStyle='#9aabb5';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(p.l,p.t);ctx.lineTo(p.l,p.b);ctx.lineTo(p.r,p.b);ctx.stroke();ctx.fillStyle='#263d4b';ctx.fillText(label,p.l,p.t-9); for(let j=0;j<=6;j++){const xx=p.l+(p.r-p.l)*j/6,xv=x0+(x1-x0)*j/6;ctx.fillText(xv.toFixed(5),xx-22,p.b+17);} for(let j=0;j<=5;j++){const yy=p.b-(p.b-p.t)*j/5,yv=y0+(y1-y0)*j/5;ctx.fillText(yv.toExponential(2),Math.max(1,p.l-62),yy+4);} if(y0<=0&&y1>=0){const zy=p.b-(0-y0)/(y1-y0)*(p.b-p.t);ctx.strokeStyle='#17212b';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(p.l,zy);ctx.lineTo(p.r,zy);ctx.stroke();ctx.fillStyle='#17212b';ctx.font='bold 13px system-ui';ctx.fillText('0',p.l-15,zy+4);ctx.font='12px system-ui';} }
       function seriesStyle(k,ki){
-        if(k===target)return{colour:profile==='Portfolio'?'#111111':'#c2185b',dash:[],width:3.6,alpha:1};
+        if(k===baseName)return{colour:profile==='Portfolio'?'#111111':'#c2185b',dash:[],width:3.6,alpha:1};
         if(k==='Current')return{colour:'#009e73',dash:[12,5],width:3.0,alpha:1};
         if(k==='Baltic_NetSD')return{colour:'#0072b2',dash:[2,4],width:3.0,alpha:1};
         if(k==='curent_update_baltic')return{colour:'#d55e00',dash:[10,4,2,4],width:3.0,alpha:1};
@@ -6642,13 +6646,13 @@ function initialiseDominanceExplorer(box) {
       }
       function plot(p,i0,i1,y0,y1) { names.forEach((k,ki)=>{const style=seriesStyle(k,ki);ctx.strokeStyle=style.colour;ctx.setLineDash(style.dash);ctx.globalAlpha=style.alpha;ctx.lineWidth=style.width;ctx.beginPath();for(let i=i0;i<=i1;i++){const px=p.l+(x[i]-x[i0])/(x[i1]-x[i0]||1)*(p.r-p.l),py=p.b-(d.series[k][i]-y0)/(y1-y0||1)*(p.b-p.t);if(i===i0)ctx.moveTo(px,py);else ctx.lineTo(px,py);}ctx.stroke();});ctx.globalAlpha=1;ctx.setLineDash([]); }
       function plotDifference(p,i0,i1,y0,y1){comparisonNames.forEach(k=>{const a=differences[k],style=seriesStyle(k,names.indexOf(k));ctx.strokeStyle=profile==='Portfolio'?style.colour:'#c2185b';ctx.setLineDash(profile==='Portfolio'?style.dash:[]);ctx.lineWidth=k===bench?3.4:(profile==='Portfolio'?1.7:2.8);ctx.globalAlpha=k===bench?1:(profile==='Portfolio'?.68:1);ctx.beginPath();for(let i=i0;i<=i1;i++){const px=p.l+(x[i]-x[i0])/(x[i1]-x[i0]||1)*(p.r-p.l),py=p.b-(a[i]-y0)/(y1-y0||1)*(p.b-p.t);if(i===i0)ctx.moveTo(px,py);else ctx.lineTo(px,py);}ctx.stroke();});ctx.globalAlpha=1;ctx.setLineDash([]);}
-      const ym=yrange(0,n-1); axes(main,x[0],x[n-1],ym[0],ym[1],`${target}: ${order.value} components - scroll or click to move`); plot(main,0,n-1,ym[0],ym[1]);
+      const ym=yrange(0,n-1); axes(main,x[0],x[n-1],ym[0],ym[1],`${baseName}: ${order.value} components - scroll or click to move`); plot(main,0,n-1,ym[0],ym[1]);
       const sx0=main.l+(x[lo]-x[0])/(x[n-1]-x[0])*(main.r-main.l), sx1=main.l+(x[hi]-x[0])/(x[n-1]-x[0])*(main.r-main.l);ctx.strokeStyle='#d7191c';ctx.lineWidth=2;ctx.strokeRect(sx0,main.t,Math.max(2,sx1-sx0),main.b-main.t);
       let yz=yrange(lo,hi); axes(zoom,x[lo],x[hi],yz[0],yz[1],`Selected component interval (${hz.value}x horizontal)`); plot(zoom,lo,hi,yz[0],yz[1]);
-      let yd=differenceRange(0,n-1);axes(diff,x[0],x[n-1],yd[0],yd[1],profile==='Portfolio'?`${target} minus selected portfolios and shares`:`${target} minus ${bench}`);plotDifference(diff,0,n-1,yd[0],yd[1]);ctx.strokeStyle='#d7191c';ctx.lineWidth=2;ctx.strokeRect(sx0,diff.t,Math.max(2,sx1-sx0),diff.b-diff.t);
+      let yd=differenceRange(0,n-1);axes(diff,x[0],x[n-1],yd[0],yd[1],profile==='Portfolio'?`${baseName} minus selected portfolios and shares`:`${target} minus ${bench}`);plotDifference(diff,0,n-1,yd[0],yd[1]);ctx.strokeStyle='#d7191c';ctx.lineWidth=2;ctx.strokeRect(sx0,diff.t,Math.max(2,sx1-sx0),diff.b-diff.t);
       let ydz=differenceRange(lo,hi);axes(diffZoom,x[lo],x[hi],ydz[0],ydz[1],`Selected difference interval (${hz.value}x horizontal)`);plotDifference(diffZoom,lo,hi,ydz[0],ydz[1]);
       const legend=names; legend.forEach((k,j)=>{const style=seriesStyle(k,names.indexOf(k)),lx=L+(j%3)*Math.max(190,(W-L-R)/3),ly=20+Math.floor(j/3)*20;ctx.strokeStyle=style.colour;ctx.setLineDash(style.dash);ctx.lineWidth=style.width;ctx.beginPath();ctx.moveTo(lx,ly);ctx.lineTo(lx+24,ly);ctx.stroke();ctx.setLineDash([]);ctx.fillStyle='#263d4b';ctx.fillText(k,lx+31,ly+4);});
-      const values=names.map(k=>`${k}=${d.series[k][mid].toExponential(5)}`).join(' | '); status.textContent=`x=${x[mid].toFixed(6)}; selected interval [${x[lo].toFixed(6)}, ${x[hi].toFixed(6)}]; ${target}-${focus}=${difference[mid].toExponential(5)} | ${values}`;
+      const values=names.map(k=>`${k}=${d.series[k][mid].toExponential(5)}`).join(' | '); status.textContent=`x=${x[mid].toFixed(6)}; selected interval [${x[lo].toFixed(6)}, ${x[hi].toFixed(6)}]; ${baseName}-${focus}=${difference[mid].toExponential(5)} | ${values}`;
       xpos.value=Math.round(centre*1000);box.querySelector('.dom-xout').value=`${(100*centre).toFixed(1)}%`;box.querySelector('.dom-hout').value=`${hz.value}x`;
     }
     [order,benchmark,hz,multi].filter(Boolean).forEach(el=>el.addEventListener('input',render));xpos.addEventListener('input',()=>{centre=Number(xpos.value)/1000;render();});
