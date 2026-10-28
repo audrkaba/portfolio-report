@@ -9,6 +9,10 @@ description: Nasdaq Baltic portfolio report
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Baltic investment plan</title>
+<script>
+window.MathJax = {tex: {inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$'], ['\\[', '\\]']]}, svg: {fontCache: 'global'}};
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 <style>
 :root { --ink:#17212b; --muted:#607080; --accent:#007f8b; --line:#dce3e8; --paper:#fff; --bg:#f3f6f8; }
 * { box-sizing:border-box; }
@@ -107,7 +111,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-28 13:39 (Europe/Vilnius); return analysis through 2026-10-27; valuation prices through 2026-10-27
+# Baltic investment plan - updated 2026-10-28 13:48 (Europe/Vilnius); return analysis through 2026-10-27; valuation prices through 2026-10-27
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -6163,6 +6167,115 @@ The BH adjustment covers the full family of share-level, pooled and pairwise tes
 
 <details markdown="1" class="report-section" id="analytics-2-1">
 <summary><strong>2.1. Optimisation result</strong></summary>
+
+The report uses five portfolio objectives. The formulas below distinguish the theoretical continuous-weight model used for each frontier from the executable Baltic allocation, where whole shares and the EUR 15,000 budget are imposed.
+
+### Common notation
+
+- $n$ - number of shares; $T$ - number of return observations.
+- $w_j$ - portfolio weight of share $j$; $\mathbf{w}=(w_1,\ldots,w_n)^\top$.
+- $r_{tj}$ - return of share $j$ at time $t$; $r_{p,t}=\sum_{j=1}^{n}w_jr_{tj}$ - portfolio return.
+- $\boldsymbol{\mu}$ - vector of sample mean returns; $\boldsymbol{\Sigma}$ - sample covariance matrix.
+- $\mu_0$ - required minimum mean return; $\alpha=0.95$ - tail confidence level.
+- $p_j$ - latest share price; $q_j$ - final whole-share quantity; $q_j^{(0)}$ - current quantity; $B=15{,}000$ EUR.
+
+All five continuous-weight models use the same basic feasible set:
+
+$$\mathcal W(\mu_0)=\left\{\mathbf w:\sum_{j=1}^{n}w_j=1,\;w_j\ge0,\;\boldsymbol{\mu}^{\top}\mathbf w\ge\mu_0\right\}.$
+
+Thus the portfolio is fully invested, short selling is forbidden, and expected return must reach the selected frontier level.
+
+### Markowitz minimum-variance portfolio
+
+$$\boxed{\min_{\mathbf w\in\mathcal W(\mu_0)}\;\mathbf w^{\top}\boldsymbol{\Sigma}\mathbf w}$$
+
+The objective is portfolio variance. Repeating the optimisation for increasing $\mu_0$ produces the Markowitz efficient frontier. Standard deviation shown in the figures is $\sqrt{\mathbf w^{\top}\boldsymbol{\Sigma}\mathbf w}$.
+
+### Mean absolute deviation (MAD) portfolio
+
+Introduce $u_t\ge0$ for the absolute deviation on date $t$:
+
+$$\boxed{\min_{\mathbf w,\mathbf u}\;\frac1T\sum_{t=1}^{T}u_t}$$
+
+subject to
+
+$$u_t\ge r_{p,t}-\bar r_p,\qquad u_t\ge-(r_{p,t}-\bar r_p),\qquad t=1,\ldots,T,$$
+
+$$\bar r_p=\boldsymbol{\mu}^{\top}\mathbf w,\qquad \mathbf w\in\mathcal W(\mu_0).$$
+
+At the optimum, $u_t=|r_{p,t}-\bar r_p|$, so the objective is the mean absolute deviation of portfolio returns.
+
+### Minimax portfolio
+
+Introduce $L$ as the largest loss observed in any historical scenario:
+
+$$\boxed{\min_{\mathbf w,L}\;L}$$
+
+subject to
+
+$$L\ge-r_{p,t}=-\sum_{j=1}^{n}w_jr_{tj},\qquad t=1,\ldots,T,$$
+
+$$L\ge0,\qquad \mathbf w\in\mathcal W(\mu_0).$$
+
+The solution minimises the worst one-period loss present in the estimation sample.
+
+### Robust mean-CVaR portfolio
+
+For each market regime $k=1,\ldots,K$, let $\mathcal T_k$ contain its observations. With regime-specific VaR variable $z_k$ and excess-loss variables $\xi_{tk}$, solve
+
+$$\boxed{\min_{\mathbf w,\eta,\mathbf z,\boldsymbol\xi}\;\eta}$$
+
+subject to
+
+$$z_k+\frac{1}{(1-\alpha)|\mathcal T_k|}\sum_{t\in\mathcal T_k}\xi_{tk}\le\eta,\qquad k=1,\ldots,K,$$
+
+$$\xi_{tk}\ge-r_{p,t}-z_k,\qquad \xi_{tk}\ge0,$$
+
+$$\min_{k=1,\ldots,K}\left(\boldsymbol\mu_k^{\top}\mathbf w\right)\ge\mu_0,\qquad \mathbf w\in\mathcal W(-\infty).$$
+
+Here $\eta$ is the worst regime's empirical CVaR. The model therefore protects against the regime with the largest expected tail loss while requiring the mean-return floor in every regime.
+
+### netSD portfolio
+
+For dominance order $s\in\{1,2,3\}$, let $d_{pk}^{(s)}=1$ when candidate portfolio $p$ dominates reference entity $k$, and $0$ otherwise. Define
+
+$$\operatorname{OUT}(p)=\sum_{k}\sum_{s=1}^{3}d_{pk}^{(s)},\qquad\operatorname{IN}(p)=\sum_{k}\sum_{s=1}^{3}d_{kp}^{(s)},$$
+
+$$\operatorname{netSD}(p)=\frac{\operatorname{OUT}(p)-\operatorname{IN}(p)}{D},$$
+
+where $D$ is the fixed normalising denominator used for every candidate. The optimisation problem is
+
+$$\boxed{\max_{\mathbf w}\;\operatorname{netSD}(\mathbf w)}$$
+
+subject to
+
+$$\sum_{j=1}^{n}w_j=1,\qquad w_j\ge0,\qquad\boldsymbol\mu^{\top}\mathbf w\ge\mu_{\mathrm{Current}},$$
+
+$$w_j=0\quad\text{if share }j\text{ has individual }\operatorname{netSD}_j\le0\text{ or is outside the eligible primary-list universe}.$$
+
+OUT counts dominance relations won; IN counts dominance relations lost. A larger netSD is better. This objective is discrete and non-convex, so ISRES searches numerically and the report states the best solution found rather than a proof of the global optimum.
+
+### Executable whole-share allocations
+
+The continuous solution is converted to quantities using
+
+$$q_j\in\mathbb Z_{\ge0},\qquad\sum_{j=1}^{n}p_jq_j\le B,\qquad w_j=\frac{p_jq_j}{\sum_{i=1}^{n}p_iq_i}.$$
+
+For **sales allowed**, no current-position lower bound is imposed. For **no sales**, the additional restriction is
+
+$$q_j\ge q_j^{(0)},\qquad j=1,\ldots,n.$$
+
+For both **Update2 penalty** portfolios, netSD remains the primary criterion. Among solutions that preserve the maximum attainable netSD, the second stage minimises the number of newly opened positions:
+
+$$\boxed{\min_{\mathbf q}\;N_{\mathrm{new}}(\mathbf q)=\sum_{j:q_j^{(0)}=0}\mathbb{1}(q_j>0)}$$
+
+subject to the matching sales-allowed or no-sales constraints and
+
+$$\operatorname{netSD}(\mathbf q)=\operatorname{netSD}_{\max}.$$
+
+The implemented single numerical objective is $-\operatorname{netSD}(\mathbf q)+\lambda N_{\mathrm{new}}(\mathbf q)$, with $\lambda$ chosen smaller than one netSD step. Therefore, removing a small position cannot justify a worse primary netSD result.
+
+### Current numerical result
 
 The best numerical solution found has netSD 0.830508 (OUT=98, IN=0, denominator=118). It is evaluated against one fixed reference network containing 55 quality-approved shares, the current portfolio, and the ten earlier training/full-data portfolios.
 
