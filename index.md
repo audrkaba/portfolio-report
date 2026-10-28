@@ -111,7 +111,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-28 15:04 (Europe/Vilnius); return analysis through 2026-10-27; valuation prices through 2026-10-27
+# Baltic investment plan - updated 2026-10-28 15:25 (Europe/Vilnius); return analysis through 2026-10-27; valuation prices through 2026-10-27
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -138,6 +138,53 @@ Select a share to display its allocation, technical indicators, performance and 
 
 <details markdown="1" class="stock-profile" id="share-kne1l" data-signal="WAIT" data-netsd-effect="INCREASE" data-dividend-status="PAID">
 <summary><strong>KNE1L — KN Energies</strong> | current action: WAIT | allocation target 1442 shares | netSD diagnostic rank 1</summary>
+
+<a href="https://nasdaqbaltic.com/statistics/lt/instrument/<bound method Series.isin of asset                                                 KNE1L
+name                                            KN Energies
+last_price                                            0.476
+last_price_date                                  2026-10-27
+current_shares                                          928
+weight                                             0.045764
+exact_shares                                    1442.140214
+target_shares                                          1442
+trade_shares                                            514
+invested_EUR                                     686.392016
+total_dividend_per_share                             0.0644
+historical_dividend_cash                            92.8648
+action                                                  BUY
+date                                             2026-10-27
+last_price_technical                                  0.476
+BB_lower                                           0.475489
+BB_middle                                            0.4824
+BB_upper                                           0.489311
+BB_state                                       Inside bands
+RSI_14                                            31.280597
+RSI_state                                           Neutral
+MACD                                              -0.003141
+MACD_signal                                       -0.002633
+MACD_state                                          Bearish
+StochRSI_K                                         0.102312
+StochRSI_D                                         0.275732
+StochRSI_state                                     Oversold
+timing_assessment                                      HOLD
+rsi_buy_price                                      0.475099
+rsi_sell_price                                     0.500564
+stoch_buy_price                                    0.477003
+stoch_sell_price                                   0.480614
+macd_cross_price                                   0.483971
+netSD                                              0.394958
+OUT                                                      47
+IN                                                        0
+isin                                           LT0000111650
+average_annual_dividend_per_share_2022_2026         0.01288
+delta_netSD                                        0.016807
+netSD_effect                                       INCREASE
+dividend_status_5y                                     PAID
+has_in                                                False
+execution_decision                                     WAIT
+action_rank                                               1
+priority                                                  1
+Name: 0, dtype: object>/trading" target="_blank" rel="noopener noreferrer"><strong>Open KNE1L on Nasdaq Baltic ↗</strong></a>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>928</td><td>1442</td><td>+514</td><td>4.58%</td><td>EUR 0.4760</td><td>0.3950</td><td>47 / 0</td><td>31.28</td><td>Bearish</td><td>Inside bands</td><td>0.102 (Oversold)</td><td>EUR 0.0129 / share</td><td>HOLD</td><td>BUY</td><td>0.002094 (2.613% of portfolio HHI)</td><td>EUR 13,936</td><td>3.0%</td><td>1.2%</td><td>MEDIUM</td></tr></tbody></table>
 
@@ -403,6 +450,53 @@ The static figure is collapsed because the interactive plots above provide the d
 <details markdown="1" class="stock-profile" id="share-vlp1l" data-signal="WAIT" data-netsd-effect="INCREASE" data-dividend-status="PAID">
 <summary><strong>VLP1L — Vilkyškių pieninė</strong> | current action: WAIT | allocation target 72 shares | netSD diagnostic rank 2</summary>
 
+<a href="https://nasdaqbaltic.com/statistics/lt/instrument/<bound method Series.isin of asset                                                      VLP1L
+name                                           Vilkyškių pieninė
+last_price                                                 15.75
+last_price_date                                       2026-10-27
+current_shares                                                42
+weight                                                  0.076163
+exact_shares                                           72.536554
+target_shares                                                 72
+trade_shares                                                  30
+invested_EUR                                              1134.0
+total_dividend_per_share                                     0.0
+historical_dividend_cash                                     0.0
+action                                                       BUY
+date                                                  2026-10-27
+last_price_technical                                       15.75
+BB_lower                                               15.107287
+BB_middle                                                15.5175
+BB_upper                                               15.927713
+BB_state                                            Inside bands
+RSI_14                                                 61.334644
+RSI_state                                                Neutral
+MACD                                                    0.117413
+MACD_signal                                             0.086773
+MACD_state                                               Bullish
+StochRSI_K                                              0.488445
+StochRSI_D                                              0.488445
+StochRSI_state                                           Neutral
+timing_assessment                                           HOLD
+rsi_buy_price                                          14.678848
+rsi_sell_price                                         16.046219
+stoch_buy_price                                        15.583929
+stoch_sell_price                                       16.071711
+macd_cross_price                                       15.269886
+netSD                                                   0.394958
+OUT                                                           47
+IN                                                             0
+isin                                                LT0000127508
+average_annual_dividend_per_share_2022_2026                0.309
+delta_netSD                                             0.033613
+netSD_effect                                            INCREASE
+dividend_status_5y                                          PAID
+has_in                                                     False
+execution_decision                                          WAIT
+action_rank                                                    1
+priority                                                       2
+Name: 1, dtype: object>/trading" target="_blank" rel="noopener noreferrer"><strong>Open VLP1L on Nasdaq Baltic ↗</strong></a>
+
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>42</td><td>72</td><td>+30</td><td>7.62%</td><td>EUR 15.7500</td><td>0.3950</td><td>47 / 0</td><td>61.33</td><td>Bullish</td><td>Inside bands</td><td>0.488 (Neutral)</td><td>EUR 0.3090 / share</td><td>HOLD</td><td>BUY</td><td>0.005801 (7.237% of portfolio HHI)</td><td>EUR 21,569</td><td>3.1%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
 **Execution rationale:** Allocation target is higher, but technical timing does not support buying now.
@@ -665,6 +759,53 @@ The static figure is collapsed because the interactive plots above provide the d
 
 <details markdown="1" class="stock-profile" id="share-mrk1t" data-signal="WAIT" data-netsd-effect="INCREASE" data-dividend-status="PAID">
 <summary><strong>MRK1T — Merko Ehitus</strong> | current action: WAIT | allocation target 38 shares | netSD diagnostic rank 3</summary>
+
+<a href="https://nasdaqbaltic.com/statistics/lt/instrument/<bound method Series.isin of asset                                                     MRK1T
+name                                               Merko Ehitus
+last_price                                            26.950001
+last_price_date                                      2026-10-27
+current_shares                                               20
+weight                                                 0.069467
+exact_shares                                          38.664591
+target_shares                                                38
+trade_shares                                                 18
+invested_EUR                                        1024.100029
+total_dividend_per_share                                   5.45
+historical_dividend_cash                                  207.1
+action                                                      BUY
+date                                                 2026-10-27
+last_price_technical                                  26.950001
+BB_lower                                              26.950545
+BB_middle                                                27.065
+BB_upper                                              27.179455
+BB_state                                       Below lower band
+RSI_14                                                 41.34943
+RSI_state                                               Neutral
+MACD                                                  -0.025415
+MACD_signal                                           -0.012395
+MACD_state                                              Bearish
+StochRSI_K                                                  0.0
+StochRSI_D                                                 -0.0
+StochRSI_state                                         Oversold
+timing_assessment                                          HOLD
+rsi_buy_price                                         26.703242
+rsi_sell_price                                        27.506255
+stoch_buy_price                                       27.014079
+stoch_sell_price                                      27.060564
+macd_cross_price                                      27.154014
+netSD                                                  0.386555
+OUT                                                          46
+IN                                                            0
+isin                                               EE3100098328
+average_annual_dividend_per_share_2022_2026                1.29
+delta_netSD                                             0.02521
+netSD_effect                                           INCREASE
+dividend_status_5y                                         PAID
+has_in                                                    False
+execution_decision                                         WAIT
+action_rank                                                   1
+priority                                                      3
+Name: 2, dtype: object>/trading" target="_blank" rel="noopener noreferrer"><strong>Open MRK1T on Nasdaq Baltic ↗</strong></a>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>20</td><td>38</td><td>+18</td><td>6.95%</td><td>EUR 26.9500</td><td>0.3866</td><td>46 / 0</td><td>41.35</td><td>Bearish</td><td>Below lower band</td><td>0.000 (Oversold)</td><td>EUR 1.2900 / share</td><td>HOLD</td><td>BUY</td><td>0.004826 (6.020% of portfolio HHI)</td><td>EUR 58,829</td><td>1.2%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
@@ -948,6 +1089,53 @@ The static figure is collapsed because the interactive plots above provide the d
 <details markdown="1" class="stock-profile" id="share-molnr" data-signal="WAIT" data-netsd-effect="INCREASE" data-dividend-status="NONE">
 <summary><strong>MOLNR — J. Molner</strong> | current action: WAIT | allocation target 21 shares | netSD diagnostic rank 4</summary>
 
+<a href="https://nasdaqbaltic.com/statistics/lt/instrument/<bound method Series.isin of asset                                                 MOLNR
+name                                              J. Molner
+last_price                                             20.6
+last_price_date                                  2026-10-26
+current_shares                                            0
+weight                                             0.029708
+exact_shares                                      21.631831
+target_shares                                            21
+trade_shares                                             21
+invested_EUR                                     432.600008
+total_dividend_per_share                                0.0
+historical_dividend_cash                                0.0
+action                                                  BUY
+date                                             2026-10-27
+last_price_technical                                   20.6
+BB_lower                                           19.27409
+BB_middle                                             21.13
+BB_upper                                           22.98591
+BB_state                                       Inside bands
+RSI_14                                             53.50798
+RSI_state                                           Neutral
+MACD                                               0.449107
+MACD_signal                                        0.566661
+MACD_state                                          Bearish
+StochRSI_K                                              0.0
+StochRSI_D                                              0.0
+StochRSI_state                                     Oversold
+timing_assessment                                      HOLD
+rsi_buy_price                                     16.457353
+rsi_sell_price                                    23.506274
+stoch_buy_price                                   20.735382
+stoch_sell_price                                   21.18659
+macd_cross_price                                  22.442029
+netSD                                              0.042017
+OUT                                                       5
+IN                                                        0
+isin                                           EE3100109034
+average_annual_dividend_per_share_2022_2026             0.0
+delta_netSD                                        0.042017
+netSD_effect                                       INCREASE
+dividend_status_5y                                     NONE
+has_in                                                False
+execution_decision                                     WAIT
+action_rank                                               1
+priority                                                  4
+Name: 3, dtype: object>/trading" target="_blank" rel="noopener noreferrer"><strong>Open MOLNR on Nasdaq Baltic ↗</strong></a>
+
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>21</td><td>+21</td><td>2.97%</td><td>EUR 20.6000</td><td>0.0420</td><td>5 / 0</td><td>53.51</td><td>Bearish</td><td>Inside bands</td><td>0.000 (Oversold)</td><td>EUR 0.0000 / share</td><td>HOLD</td><td>BUY</td><td>0.000883 (1.101% of portfolio HHI)</td><td>EUR 94</td><td>614.3%</td><td>29.4%</td><td>HIGH</td></tr></tbody></table>
 
 **Execution rationale:** Allocation target is higher, but technical timing does not support buying now.
@@ -1198,6 +1386,53 @@ The static figure is collapsed because the interactive plots above provide the d
 <details markdown="1" class="stock-profile" id="share-rsu1l" data-signal="BUY" data-netsd-effect="INCREASE" data-dividend-status="PAID">
 <summary><strong>RSU1L — Rokiškio sūris</strong> | current action: BUY | allocation target 167 shares | netSD diagnostic rank 5</summary>
 
+<a href="https://nasdaqbaltic.com/statistics/lt/instrument/<bound method Series.isin of asset                                                     RSU1L
+name                                             Rokiškio sūris
+last_price                                                 4.36
+last_price_date                                      2026-10-27
+current_shares                                               50
+weight                                                 0.048583
+exact_shares                                         167.144222
+target_shares                                               167
+trade_shares                                                117
+invested_EUR                                         728.120022
+total_dividend_per_share                                    0.7
+historical_dividend_cash                                  116.9
+action                                                      BUY
+date                                                 2026-10-27
+last_price_technical                                       4.36
+BB_lower                                               4.374698
+BB_middle                                                 4.466
+BB_upper                                               4.557302
+BB_state                                       Below lower band
+RSI_14                                                28.449338
+RSI_state                                              Oversold
+MACD                                                  -0.026584
+MACD_signal                                           -0.014869
+MACD_state                                              Bearish
+StochRSI_K                                                  0.0
+StochRSI_D                                                 -0.0
+StochRSI_state                                         Oversold
+timing_assessment                                           BUY
+rsi_buy_price                                          4.372656
+rsi_sell_price                                         4.672456
+stoch_buy_price                                        4.391337
+stoch_sell_price                                        4.43343
+macd_cross_price                                       4.543565
+netSD                                                  0.243697
+OUT                                                          37
+IN                                                            8
+isin                                               LT0000100372
+average_annual_dividend_per_share_2022_2026                0.16
+delta_netSD                                            0.008403
+netSD_effect                                           INCREASE
+dividend_status_5y                                         PAID
+has_in                                                     True
+execution_decision                                          BUY
+action_rank                                                   0
+priority                                                      5
+Name: 4, dtype: object>/trading" target="_blank" rel="noopener noreferrer"><strong>Open RSU1L on Nasdaq Baltic ↗</strong></a>
+
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>50</td><td>167</td><td>+117</td><td>4.86%</td><td>EUR 4.3600</td><td>0.2437</td><td>37 / 8</td><td>28.45</td><td>Bearish</td><td>Below lower band</td><td>0.000 (Oversold)</td><td>EUR 0.1600 / share</td><td>BUY</td><td>BUY</td><td>0.002360 (2.945% of portfolio HHI)</td><td>EUR 1,134</td><td>40.0%</td><td>4.8%</td><td>HIGH</td></tr></tbody></table>
 
 **Execution rationale:** Allocation increase and technical BUY agree; trade is economically material.
@@ -1447,6 +1682,53 @@ The static figure is collapsed because the interactive plots above provide the d
 
 <details markdown="1" class="stock-profile" id="share-apg1l" data-signal="WAIT" data-netsd-effect="UNCHANGED" data-dividend-status="PAID">
 <summary><strong>APG1L — Apranga</strong> | current action: WAIT | allocation target 302 shares | netSD diagnostic rank 6</summary>
+
+<a href="https://nasdaqbaltic.com/statistics/lt/instrument/<bound method Series.isin of asset                                                 APG1L
+name                                                Apranga
+last_price                                             3.79
+last_price_date                                  2026-10-27
+current_shares                                          200
+weight                                             0.076503
+exact_shares                                     302.783317
+target_shares                                           302
+trade_shares                                            102
+invested_EUR                                    1144.579988
+total_dividend_per_share                               1.03
+historical_dividend_cash                             311.06
+action                                                  BUY
+date                                             2026-10-27
+last_price_technical                                   3.79
+BB_lower                                           3.782723
+BB_middle                                             3.819
+BB_upper                                           3.855277
+BB_state                                       Inside bands
+RSI_14                                            32.520954
+RSI_state                                           Neutral
+MACD                                              -0.025575
+MACD_signal                                       -0.027249
+MACD_state                                          Bullish
+StochRSI_K                                         0.290441
+StochRSI_D                                         0.526961
+StochRSI_state                                      Neutral
+timing_assessment                                      HOLD
+rsi_buy_price                                      3.777514
+rsi_sell_price                                     3.975633
+stoch_buy_price                                    3.785498
+stoch_sell_price                                   3.802896
+macd_cross_price                                   3.763759
+netSD                                              0.319328
+OUT                                                      40
+IN                                                        2
+isin                                           LT0000102337
+average_annual_dividend_per_share_2022_2026           0.306
+delta_netSD                                             0.0
+netSD_effect                                      UNCHANGED
+dividend_status_5y                                     PAID
+has_in                                                 True
+execution_decision                                     WAIT
+action_rank                                               1
+priority                                                  6
+Name: 5, dtype: object>/trading" target="_blank" rel="noopener noreferrer"><strong>Open APG1L on Nasdaq Baltic ↗</strong></a>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>200</td><td>302</td><td>+102</td><td>7.65%</td><td>EUR 3.7900</td><td>0.3193</td><td>40 / 2</td><td>32.52</td><td>Bullish</td><td>Inside bands</td><td>0.290 (Neutral)</td><td>EUR 0.3060 / share</td><td>HOLD</td><td>BUY</td><td>0.005853 (7.301% of portfolio HHI)</td><td>EUR 24,618</td><td>1.0%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
@@ -1758,6 +2040,53 @@ The static figure is collapsed because the interactive plots above provide the d
 <details markdown="1" class="stock-profile" id="share-grg1l" data-signal="WAIT" data-netsd-effect="INCREASE" data-dividend-status="PAID">
 <summary><strong>GRG1L — Grigeo Group</strong> | current action: WAIT | allocation target 1030 shares | netSD diagnostic rank 7</summary>
 
+<a href="https://nasdaqbaltic.com/statistics/lt/instrument/<bound method Series.isin of asset                                                 GRG1L
+name                                           Grigeo Group
+last_price                                            1.005
+last_price_date                                  2026-10-27
+current_shares                                          543
+weight                                             0.069033
+exact_shares                                    1030.342086
+target_shares                                          1030
+trade_shares                                            487
+invested_EUR                                    1035.149995
+total_dividend_per_share                               0.17
+historical_dividend_cash                              175.1
+action                                                  BUY
+date                                             2026-10-27
+last_price_technical                                  1.005
+BB_lower                                           0.995586
+BB_middle                                           1.00895
+BB_upper                                           1.022314
+BB_state                                       Inside bands
+RSI_14                                            46.139504
+RSI_state                                           Neutral
+MACD                                              -0.002209
+MACD_signal                                       -0.002493
+MACD_state                                          Bullish
+StochRSI_K                                         0.498321
+StochRSI_D                                         0.563384
+StochRSI_state                                      Neutral
+timing_assessment                                      HOLD
+rsi_buy_price                                       0.97543
+rsi_sell_price                                     1.048715
+stoch_buy_price                                    0.998175
+stoch_sell_price                                   1.010816
+macd_cross_price                                   1.000551
+netSD                                              0.403361
+OUT                                                      54
+IN                                                        6
+isin                                           LT0000102030
+average_annual_dividend_per_share_2022_2026           0.056
+delta_netSD                                         0.02521
+netSD_effect                                       INCREASE
+dividend_status_5y                                     PAID
+has_in                                                 True
+execution_decision                                     WAIT
+action_rank                                               1
+priority                                                  7
+Name: 6, dtype: object>/trading" target="_blank" rel="noopener noreferrer"><strong>Open GRG1L on Nasdaq Baltic ↗</strong></a>
+
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>543</td><td>1030</td><td>+487</td><td>6.90%</td><td>EUR 1.0050</td><td>0.4034</td><td>54 / 6</td><td>46.14</td><td>Bullish</td><td>Inside bands</td><td>0.498 (Neutral)</td><td>EUR 0.0560 / share</td><td>HOLD</td><td>BUY</td><td>0.004766 (5.945% of portfolio HHI)</td><td>EUR 11,740</td><td>0.8%</td><td>1.2%</td><td>MEDIUM</td></tr></tbody></table>
 
 **Execution rationale:** Allocation target is higher, but technical timing does not support buying now.
@@ -1984,6 +2313,53 @@ The static figure is collapsed because the interactive plots above provide the d
 
 <details markdown="1" class="stock-profile" id="share-roe1l" data-signal="WAIT" data-netsd-effect="UNCHANGED" data-dividend-status="PAID">
 <summary><strong>ROE1L — Artea Bankas</strong> | current action: WAIT | allocation target 765 shares | netSD diagnostic rank 8</summary>
+
+<a href="https://nasdaqbaltic.com/statistics/lt/instrument/<bound method Series.isin of asset                                                 ROE1L
+name                                           Artea Bankas
+last_price                                            0.877
+last_price_date                                  2026-10-27
+current_shares                                          416
+weight                                             0.044761
+exact_shares                                     765.578862
+target_shares                                           765
+trade_shares                                            349
+invested_EUR                                      670.90498
+total_dividend_per_share                              0.136
+historical_dividend_cash                             104.04
+action                                                  BUY
+date                                             2026-10-27
+last_price_technical                                  0.877
+BB_lower                                           0.870216
+BB_middle                                            0.8854
+BB_upper                                           0.900584
+BB_state                                       Inside bands
+RSI_14                                            39.625154
+RSI_state                                           Neutral
+MACD                                              -0.002524
+MACD_signal                                       -0.001836
+MACD_state                                          Bearish
+StochRSI_K                                         0.016459
+StochRSI_D                                          0.29758
+StochRSI_state                                     Oversold
+timing_assessment                                      HOLD
+rsi_buy_price                                      0.864404
+rsi_sell_price                                     0.912749
+stoch_buy_price                                    0.878407
+stoch_sell_price                                   0.882017
+macd_cross_price                                   0.887774
+netSD                                              0.193277
+OUT                                                      42
+IN                                                       19
+isin                                           LT0000102253
+average_annual_dividend_per_share_2022_2026          0.0434
+delta_netSD                                             0.0
+netSD_effect                                      UNCHANGED
+dividend_status_5y                                     PAID
+has_in                                                 True
+execution_decision                                     WAIT
+action_rank                                               1
+priority                                                  8
+Name: 7, dtype: object>/trading" target="_blank" rel="noopener noreferrer"><strong>Open ROE1L on Nasdaq Baltic ↗</strong></a>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>416</td><td>765</td><td>+349</td><td>4.48%</td><td>EUR 0.8770</td><td>0.1933</td><td>42 / 19</td><td>39.63</td><td>Bearish</td><td>Inside bands</td><td>0.016 (Oversold)</td><td>EUR 0.0434 / share</td><td>HOLD</td><td>BUY</td><td>0.002004 (2.499% of portfolio HHI)</td><td>EUR 180,274</td><td>0.2%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
@@ -2255,6 +2631,53 @@ The static figure is collapsed because the interactive plots above provide the d
 
 <details markdown="1" class="stock-profile" id="share-tal1t" data-signal="WAIT" data-netsd-effect="UNCHANGED" data-dividend-status="PAID">
 <summary><strong>TAL1T — Tallink Grupp</strong> | current action: WAIT | allocation target 1035 shares | netSD diagnostic rank 9</summary>
+
+<a href="https://nasdaqbaltic.com/statistics/lt/instrument/<bound method Series.isin of asset                                                  TAL1T
+name                                           Tallink Grupp
+last_price                                             0.645
+last_price_date                                   2026-10-27
+current_shares                                           700
+weight                                              0.044511
+exact_shares                                      1035.14182
+target_shares                                           1035
+trade_shares                                             335
+invested_EUR                                       667.57498
+total_dividend_per_share                                0.15
+historical_dividend_cash                              155.25
+action                                                   BUY
+date                                              2026-10-27
+last_price_technical                                   0.645
+BB_lower                                             0.64188
+BB_middle                                            0.64605
+BB_upper                                             0.65022
+BB_state                                        Inside bands
+RSI_14                                             53.702409
+RSI_state                                            Neutral
+MACD                                                 0.00282
+MACD_signal                                         0.003431
+MACD_state                                           Bearish
+StochRSI_K                                               0.0
+StochRSI_D                                          0.348641
+StochRSI_state                                      Oversold
+timing_assessment                                       HOLD
+rsi_buy_price                                        0.62486
+rsi_sell_price                                      0.653515
+stoch_buy_price                                     0.647365
+stoch_sell_price                                    0.653718
+macd_cross_price                                    0.654578
+netSD                                               0.109244
+OUT                                                       32
+IN                                                        19
+isin                                            EE3100004466
+average_annual_dividend_per_share_2022_2026             0.03
+delta_netSD                                              0.0
+netSD_effect                                       UNCHANGED
+dividend_status_5y                                      PAID
+has_in                                                  True
+execution_decision                                      WAIT
+action_rank                                                1
+priority                                                   9
+Name: 8, dtype: object>/trading" target="_blank" rel="noopener noreferrer"><strong>Open TAL1T on Nasdaq Baltic ↗</strong></a>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>700</td><td>1035</td><td>+335</td><td>4.45%</td><td>EUR 0.6450</td><td>0.1092</td><td>32 / 19</td><td>53.70</td><td>Bearish</td><td>Inside bands</td><td>0.000 (Oversold)</td><td>EUR 0.0300 / share</td><td>HOLD</td><td>BUY</td><td>0.001981 (2.472% of portfolio HHI)</td><td>EUR 77,229</td><td>0.6%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
@@ -2542,6 +2965,53 @@ The static figure is collapsed because the interactive plots above provide the d
 
 <details markdown="1" class="stock-profile" id="share-dgr1r" data-signal="WAIT" data-netsd-effect="INCREASE" data-dividend-status="PAID">
 <summary><strong>DGR1R — DelfinGroup</strong> | current action: WAIT | allocation target 250 shares | netSD diagnostic rank 10</summary>
+
+<a href="https://nasdaqbaltic.com/statistics/lt/instrument/<bound method Series.isin of asset                                                 DGR1R
+name                                            DelfinGroup
+last_price                                            1.725
+last_price_date                                  2026-10-27
+current_shares                                            0
+weight                                             0.028836
+exact_shares                                     250.750917
+target_shares                                           250
+trade_shares                                            250
+invested_EUR                                     431.250006
+total_dividend_per_share                             0.3272
+historical_dividend_cash                               81.8
+action                                                  BUY
+date                                             2026-10-27
+last_price_technical                                  1.725
+BB_lower                                           1.606119
+BB_middle                                           1.69175
+BB_upper                                           1.777382
+BB_state                                       Inside bands
+RSI_14                                            65.098936
+RSI_state                                           Neutral
+MACD                                               0.032074
+MACD_signal                                        0.035347
+MACD_state                                          Bearish
+StochRSI_K                                          0.32664
+StochRSI_D                                         0.171897
+StochRSI_state                                      Neutral
+timing_assessment                                      HOLD
+rsi_buy_price                                      1.511218
+rsi_sell_price                                     1.755782
+stoch_buy_price                                    1.717144
+stoch_sell_price                                   1.774248
+macd_cross_price                                   1.776283
+netSD                                              0.084034
+OUT                                                      32
+IN                                                       22
+isin                                           LV0000101806
+average_annual_dividend_per_share_2022_2026         0.09572
+delta_netSD                                        0.008403
+netSD_effect                                       INCREASE
+dividend_status_5y                                     PAID
+has_in                                                 True
+execution_decision                                     WAIT
+action_rank                                               1
+priority                                                 10
+Name: 9, dtype: object>/trading" target="_blank" rel="noopener noreferrer"><strong>Open DGR1R on Nasdaq Baltic ↗</strong></a>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>250</td><td>+250</td><td>2.88%</td><td>EUR 1.7250</td><td>0.0840</td><td>32 / 22</td><td>65.10</td><td>Bearish</td><td>Inside bands</td><td>0.327 (Neutral)</td><td>EUR 0.0957 / share</td><td>HOLD</td><td>BUY</td><td>0.000832 (1.037% of portfolio HHI)</td><td>EUR 12,310</td><td>1.0%</td><td>2.4%</td><td>MEDIUM</td></tr></tbody></table>
 
@@ -2853,6 +3323,53 @@ The static figure is collapsed because the interactive plots above provide the d
 <details markdown="1" class="stock-profile" id="share-tkm1t" data-signal="WAIT" data-netsd-effect="UNCHANGED" data-dividend-status="PAID">
 <summary><strong>TKM1T — TKM Grupp</strong> | current action: WAIT | allocation target 338 shares | netSD diagnostic rank 11</summary>
 
+<a href="https://nasdaqbaltic.com/statistics/lt/instrument/<bound method Series.isin of asset                                                 TKM1T
+name                                              TKM Grupp
+last_price                                              8.9
+last_price_date                                  2026-10-27
+current_shares                                          288
+weight                                             0.201032
+exact_shares                                     338.818177
+target_shares                                           338
+trade_shares                                             50
+invested_EUR                                    3008.199871
+total_dividend_per_share                               2.65
+historical_dividend_cash                              895.7
+action                                                  BUY
+date                                             2026-10-27
+last_price_technical                                    8.9
+BB_lower                                           8.853015
+BB_middle                                            8.9595
+BB_upper                                           9.065985
+BB_state                                       Inside bands
+RSI_14                                            31.901762
+RSI_state                                           Neutral
+MACD                                              -0.040562
+MACD_signal                                       -0.038603
+MACD_state                                          Bearish
+StochRSI_K                                         0.485521
+StochRSI_D                                         0.479165
+StochRSI_state                                      Neutral
+timing_assessment                                      HOLD
+rsi_buy_price                                      8.886818
+rsi_sell_price                                     9.137411
+stoch_buy_price                                     8.86526
+stoch_sell_price                                   8.924872
+macd_cross_price                                   8.930694
+netSD                                               0.07563
+OUT                                                      31
+IN                                                       22
+isin                                           EE0000001105
+average_annual_dividend_per_share_2022_2026           0.666
+delta_netSD                                             0.0
+netSD_effect                                      UNCHANGED
+dividend_status_5y                                     PAID
+has_in                                                 True
+execution_decision                                     WAIT
+action_rank                                               1
+priority                                                 11
+Name: 10, dtype: object>/trading" target="_blank" rel="noopener noreferrer"><strong>Open TKM1T on Nasdaq Baltic ↗</strong></a>
+
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>288</td><td>338</td><td>+50</td><td>20.10%</td><td>EUR 8.9000</td><td>0.0756</td><td>31 / 22</td><td>31.90</td><td>Bearish</td><td>Inside bands</td><td>0.486 (Neutral)</td><td>EUR 0.6660 / share</td><td>HOLD</td><td>BUY</td><td>0.040414 (50.418% of portfolio HHI)</td><td>EUR 40,663</td><td>0.0%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
 **Execution rationale:** Allocation target is higher, but technical timing does not support buying now.
@@ -3132,6 +3649,53 @@ The static figure is collapsed because the interactive plots above provide the d
 
 <details markdown="1" class="stock-profile" id="share-hae1t" data-signal="WAIT" data-netsd-effect="INCREASE" data-dividend-status="PAID">
 <summary><strong>HAE1T — Harju Elekter Group</strong> | current action: WAIT | allocation target 169 shares | netSD diagnostic rank 12</summary>
+
+<a href="https://nasdaqbaltic.com/statistics/lt/instrument/<bound method Series.isin of asset                                                        HAE1T
+name                                           Harju Elekter Group
+last_price                                                    5.24
+last_price_date                                         2026-10-27
+current_shares                                                 100
+weight                                                    0.059322
+exact_shares                                            169.813999
+target_shares                                                  169
+trade_shares                                                    69
+invested_EUR                                            885.559961
+total_dividend_per_share                                      0.58
+historical_dividend_cash                                     98.02
+action                                                         BUY
+date                                                    2026-10-27
+last_price_technical                                          5.24
+BB_lower                                                  5.074761
+BB_middle                                                    5.274
+BB_upper                                                  5.473239
+BB_state                                              Inside bands
+RSI_14                                                    48.41685
+RSI_state                                                  Neutral
+MACD                                                      0.028559
+MACD_signal                                               0.035201
+MACD_state                                                 Bearish
+StochRSI_K                                                0.082786
+StochRSI_D                                                0.176295
+StochRSI_state                                            Oversold
+timing_assessment                                             HOLD
+rsi_buy_price                                             4.617612
+rsi_sell_price                                            5.916057
+stoch_buy_price                                           5.308548
+stoch_sell_price                                          5.875677
+macd_cross_price                                          5.344072
+netSD                                                     0.117647
+OUT                                                             38
+IN                                                              24
+isin                                                  EE3100004250
+average_annual_dividend_per_share_2022_2026                  0.144
+delta_netSD                                               0.008403
+netSD_effect                                              INCREASE
+dividend_status_5y                                            PAID
+has_in                                                        True
+execution_decision                                            WAIT
+action_rank                                                      1
+priority                                                        12
+Name: 11, dtype: object>/trading" target="_blank" rel="noopener noreferrer"><strong>Open HAE1T on Nasdaq Baltic ↗</strong></a>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>100</td><td>169</td><td>+69</td><td>5.93%</td><td>EUR 5.2400</td><td>0.1176</td><td>38 / 24</td><td>48.42</td><td>Bearish</td><td>Inside bands</td><td>0.083 (Oversold)</td><td>EUR 0.1440 / share</td><td>HOLD</td><td>BUY</td><td>0.003519 (4.390% of portfolio HHI)</td><td>EUR 17,505</td><td>0.6%</td><td>1.2%</td><td>MEDIUM</td></tr></tbody></table>
 
@@ -3415,6 +3979,53 @@ The static figure is collapsed because the interactive plots above provide the d
 
 <details markdown="1" class="stock-profile" id="share-lhv1t" data-signal="WAIT" data-netsd-effect="UNCHANGED" data-dividend-status="PAID">
 <summary><strong>LHV1T — LHV Group</strong> | current action: WAIT | allocation target 112 shares | netSD diagnostic rank 13</summary>
+
+<a href="https://nasdaqbaltic.com/statistics/lt/instrument/<bound method Series.isin of asset                                                 LHV1T
+name                                              LHV Group
+last_price                                             3.27
+last_price_date                                  2026-10-27
+current_shares                                            0
+weight                                             0.024566
+exact_shares                                     112.687532
+target_shares                                           112
+trade_shares                                            112
+invested_EUR                                     366.239998
+total_dividend_per_share                               0.43
+historical_dividend_cash                              48.16
+action                                                  BUY
+date                                             2026-10-27
+last_price_technical                                   3.27
+BB_lower                                           3.246818
+BB_middle                                           3.27075
+BB_upper                                           3.294682
+BB_state                                       Inside bands
+RSI_14                                            46.131745
+RSI_state                                           Neutral
+MACD                                              -0.007279
+MACD_signal                                       -0.009493
+MACD_state                                          Bullish
+StochRSI_K                                         0.572784
+StochRSI_D                                         0.528429
+StochRSI_state                                      Neutral
+timing_assessment                                      HOLD
+rsi_buy_price                                      3.203157
+rsi_sell_price                                     3.388627
+stoch_buy_price                                    3.242795
+stoch_sell_price                                   3.285916
+macd_cross_price                                   3.235304
+netSD                                              0.084034
+OUT                                                      34
+IN                                                       24
+isin                                           EE3100102203
+average_annual_dividend_per_share_2022_2026           0.166
+delta_netSD                                             0.0
+netSD_effect                                      UNCHANGED
+dividend_status_5y                                     PAID
+has_in                                                 True
+execution_decision                                     WAIT
+action_rank                                               1
+priority                                                 13
+Name: 12, dtype: object>/trading" target="_blank" rel="noopener noreferrer"><strong>Open LHV1T on Nasdaq Baltic ↗</strong></a>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>112</td><td>+112</td><td>2.46%</td><td>EUR 3.2700</td><td>0.0840</td><td>34 / 24</td><td>46.13</td><td>Bullish</td><td>Inside bands</td><td>0.573 (Neutral)</td><td>EUR 0.1660 / share</td><td>HOLD</td><td>BUY</td><td>0.000603 (0.753% of portfolio HHI)</td><td>EUR 263,780</td><td>0.0%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
@@ -3705,6 +4316,53 @@ The static figure is collapsed because the interactive plots above provide the d
 <details markdown="1" class="stock-profile" id="share-tve1t" data-signal="WAIT" data-netsd-effect="INCREASE" data-dividend-status="PAID">
 <summary><strong>TVE1T — Tallinna Vesi</strong> | current action: WAIT | allocation target 34 shares | netSD diagnostic rank 14</summary>
 
+<a href="https://nasdaqbaltic.com/statistics/lt/instrument/<bound method Series.isin of asset                                                  TVE1T
+name                                           Tallinna Vesi
+last_price                                             10.85
+last_price_date                                   2026-10-27
+current_shares                                             0
+weight                                              0.025001
+exact_shares                                       34.564162
+target_shares                                             34
+trade_shares                                              34
+invested_EUR                                      368.900013
+total_dividend_per_share                                1.94
+historical_dividend_cash                               65.96
+action                                                   BUY
+date                                              2026-10-27
+last_price_technical                                   10.85
+BB_lower                                           10.810273
+BB_middle                                            10.8675
+BB_upper                                           10.924727
+BB_state                                        Inside bands
+RSI_14                                             46.861374
+RSI_state                                            Neutral
+MACD                                               -0.001189
+MACD_signal                                        -0.003777
+MACD_state                                           Bullish
+StochRSI_K                                               0.0
+StochRSI_D                                          0.643979
+StochRSI_state                                      Oversold
+timing_assessment                                       HOLD
+rsi_buy_price                                      10.593298
+rsi_sell_price                                     11.135603
+stoch_buy_price                                    10.862388
+stoch_sell_price                                     10.8924
+macd_cross_price                                   10.809446
+netSD                                                0.07563
+OUT                                                       33
+IN                                                        24
+isin                                            EE3100026436
+average_annual_dividend_per_share_2022_2026            0.518
+delta_netSD                                         0.008403
+netSD_effect                                        INCREASE
+dividend_status_5y                                      PAID
+has_in                                                  True
+execution_decision                                      WAIT
+action_rank                                                1
+priority                                                  14
+Name: 13, dtype: object>/trading" target="_blank" rel="noopener noreferrer"><strong>Open TVE1T on Nasdaq Baltic ↗</strong></a>
+
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>34</td><td>+34</td><td>2.50%</td><td>EUR 10.8500</td><td>0.0756</td><td>33 / 24</td><td>46.86</td><td>Bullish</td><td>Inside bands</td><td>0.000 (Oversold)</td><td>EUR 0.5180 / share</td><td>HOLD</td><td>BUY</td><td>0.000625 (0.780% of portfolio HHI)</td><td>EUR 14,525</td><td>0.8%</td><td>1.2%</td><td>MEDIUM</td></tr></tbody></table>
 
 **Execution rationale:** Allocation target is higher, but technical timing does not support buying now.
@@ -3987,6 +4645,53 @@ The static figure is collapsed because the interactive plots above provide the d
 
 <details markdown="1" class="stock-profile" id="share-cpa1t" data-signal="WAIT" data-netsd-effect="UNCHANGED" data-dividend-status="PAID">
 <summary><strong>CPA1T — Coop Pank</strong> | current action: WAIT | allocation target 116 shares | netSD diagnostic rank 15</summary>
+
+<a href="https://nasdaqbaltic.com/statistics/lt/instrument/<bound method Series.isin of asset                                                 CPA1T
+name                                              Coop Pank
+last_price                                             2.35
+last_price_date                                  2026-10-27
+current_shares                                            0
+weight                                             0.018207
+exact_shares                                     116.216456
+target_shares                                           116
+trade_shares                                            116
+invested_EUR                                     272.599989
+total_dividend_per_share                              0.267
+historical_dividend_cash                             30.972
+action                                                  BUY
+date                                             2026-10-27
+last_price_technical                                   2.35
+BB_lower                                           2.308061
+BB_middle                                             2.349
+BB_upper                                           2.389939
+BB_state                                       Inside bands
+RSI_14                                            50.152115
+RSI_state                                           Neutral
+MACD                                               0.008288
+MACD_signal                                        0.007528
+MACD_state                                          Bullish
+StochRSI_K                                              0.0
+StochRSI_D                                         0.223387
+StochRSI_state                                     Oversold
+timing_assessment                                      HOLD
+rsi_buy_price                                      2.236971
+rsi_sell_price                                     2.461322
+stoch_buy_price                                    2.363118
+stoch_sell_price                                   2.418494
+macd_cross_price                                   2.338096
+netSD                                              0.067227
+OUT                                                      32
+IN                                                       24
+isin                                           EE3100007857
+average_annual_dividend_per_share_2022_2026          0.0594
+delta_netSD                                             0.0
+netSD_effect                                      UNCHANGED
+dividend_status_5y                                     PAID
+has_in                                                 True
+execution_decision                                     WAIT
+action_rank                                               1
+priority                                                 15
+Name: 14, dtype: object>/trading" target="_blank" rel="noopener noreferrer"><strong>Open CPA1T on Nasdaq Baltic ↗</strong></a>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>116</td><td>+116</td><td>1.82%</td><td>EUR 2.3500</td><td>0.0672</td><td>32 / 24</td><td>50.15</td><td>Bullish</td><td>Inside bands</td><td>0.000 (Oversold)</td><td>EUR 0.0594 / share</td><td>HOLD</td><td>BUY</td><td>0.000332 (0.414% of portfolio HHI)</td><td>EUR 81,735</td><td>0.1%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
@@ -4275,6 +4980,53 @@ The static figure is collapsed because the interactive plots above provide the d
 <details markdown="1" class="stock-profile" id="share-saf1r" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID">
 <summary><strong>SAF1R — SAF Tehnika</strong> | current action: HOLD | allocation target 100 shares | netSD diagnostic rank 16</summary>
 
+<a href="https://nasdaqbaltic.com/statistics/lt/instrument/<bound method Series.isin of asset                                                 SAF1R
+name                                            SAF Tehnika
+last_price                                            16.15
+last_price_date                                  2026-10-27
+current_shares                                          100
+weight                                             0.107667
+exact_shares                                          100.0
+target_shares                                           100
+trade_shares                                              0
+invested_EUR                                    1614.999962
+total_dividend_per_share                                0.0
+historical_dividend_cash                                0.0
+action                                                 HOLD
+date                                             2026-10-27
+last_price_technical                                  16.15
+BB_lower                                          16.001893
+BB_middle                                           16.5375
+BB_upper                                          17.073107
+BB_state                                       Inside bands
+RSI_14                                            40.737873
+RSI_state                                           Neutral
+MACD                                              -0.091783
+MACD_signal                                       -0.025445
+MACD_state                                          Bearish
+StochRSI_K                                              0.0
+StochRSI_D                                             -0.0
+StochRSI_state                                     Oversold
+timing_assessment                                      HOLD
+rsi_buy_price                                      15.52746
+rsi_sell_price                                    17.779833
+stoch_buy_price                                   16.268318
+stoch_sell_price                                  16.511003
+macd_cross_price                                  17.189497
+netSD                                             -0.134454
+OUT                                                      10
+IN                                                       26
+isin                                           LV0000101129
+average_annual_dividend_per_share_2022_2026           0.136
+delta_netSD                                             0.0
+netSD_effect                                      UNCHANGED
+dividend_status_5y                                     PAID
+has_in                                                 True
+execution_decision                                     HOLD
+action_rank                                               2
+priority                                                 16
+Name: 15, dtype: object>/trading" target="_blank" rel="noopener noreferrer"><strong>Open SAF1R on Nasdaq Baltic ↗</strong></a>
+
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>100</td><td>100</td><td>+0</td><td>10.77%</td><td>EUR 16.1500</td><td>-0.1345</td><td>10 / 26</td><td>40.74</td><td>Bearish</td><td>Inside bands</td><td>0.000 (Oversold)</td><td>EUR 0.1360 / share</td><td>HOLD</td><td>HOLD</td><td>0.011592 (14.462% of portfolio HHI)</td><td>EUR 8,146</td><td>0.0%</td><td>2.4%</td><td>MEDIUM</td></tr></tbody></table>
 
 **Execution rationale:** The optimiser does not require a position change.
@@ -4541,6 +5293,53 @@ The static figure is collapsed because the interactive plots above provide the d
 
 <details markdown="1" class="stock-profile" id="share-tsm1t" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID">
 <summary><strong>TSM1T — Tallinna Sadam</strong> | current action: HOLD | allocation target 330 shares | netSD diagnostic rank 17</summary>
+
+<a href="https://nasdaqbaltic.com/statistics/lt/instrument/<bound method Series.isin of asset                                                   TSM1T
+name                                           Tallinna Sadam
+last_price                                              1.198
+last_price_date                                    2026-10-27
+current_shares                                            330
+weight                                               0.026356
+exact_shares                                            330.0
+target_shares                                             330
+trade_shares                                                0
+invested_EUR                                       395.339985
+total_dividend_per_share                                0.292
+historical_dividend_cash                                96.36
+action                                                   HOLD
+date                                               2026-10-27
+last_price_technical                                    1.198
+BB_lower                                             1.196822
+BB_middle                                              1.2069
+BB_upper                                             1.216978
+BB_state                                         Inside bands
+RSI_14                                              39.334051
+RSI_state                                             Neutral
+MACD                                                -0.004702
+MACD_signal                                         -0.004328
+MACD_state                                            Bearish
+StochRSI_K                                           0.392687
+StochRSI_D                                           0.449305
+StochRSI_state                                        Neutral
+timing_assessment                                        HOLD
+rsi_buy_price                                         1.18041
+rsi_sell_price                                       1.253124
+stoch_buy_price                                      1.192869
+stoch_sell_price                                     1.205556
+macd_cross_price                                     1.203871
+netSD                                               -0.008403
+OUT                                                        30
+IN                                                         31
+isin                                             EE3100021635
+average_annual_dividend_per_share_2022_2026            0.0778
+delta_netSD                                               0.0
+netSD_effect                                        UNCHANGED
+dividend_status_5y                                       PAID
+has_in                                                   True
+execution_decision                                       HOLD
+action_rank                                                 2
+priority                                                   17
+Name: 16, dtype: object>/trading" target="_blank" rel="noopener noreferrer"><strong>Open TSM1T on Nasdaq Baltic ↗</strong></a>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>330</td><td>330</td><td>+0</td><td>2.64%</td><td>EUR 1.1980</td><td>-0.0084</td><td>30 / 31</td><td>39.33</td><td>Bearish</td><td>Inside bands</td><td>0.393 (Neutral)</td><td>EUR 0.0778 / share</td><td>HOLD</td><td>HOLD</td><td>0.000695 (0.867% of portfolio HHI)</td><td>EUR 45,487</td><td>0.0%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
@@ -4818,6 +5617,53 @@ The static figure is collapsed because the interactive plots above provide the d
 
 <details markdown="1" class="stock-profile" id="share-tel1l" data-signal="SKIP" data-netsd-effect="UNCHANGED" data-dividend-status="PAID">
 <summary><strong>TEL1L — Telia Lietuva</strong> | current action: SKIP | allocation target 30 shares | netSD diagnostic rank 18</summary>
+
+<a href="https://nasdaqbaltic.com/statistics/lt/instrument/<bound method Series.isin of asset                                                  TEL1L
+name                                           Telia Lietuva
+last_price                                              2.25
+last_price_date                                   2026-10-27
+current_shares                                             0
+weight                                              0.004519
+exact_shares                                       30.125882
+target_shares                                             30
+trade_shares                                              30
+invested_EUR                                            67.5
+total_dividend_per_share                                0.31
+historical_dividend_cash                                 9.3
+action                                                   BUY
+date                                              2026-10-27
+last_price_technical                                    2.25
+BB_lower                                            2.204807
+BB_middle                                             2.2535
+BB_upper                                            2.302193
+BB_state                                        Inside bands
+RSI_14                                             51.784268
+RSI_state                                            Neutral
+MACD                                                0.011549
+MACD_signal                                         0.015132
+MACD_state                                           Bearish
+StochRSI_K                                          0.179854
+StochRSI_D                                          0.119903
+StochRSI_state                                      Oversold
+timing_assessment                                       HOLD
+rsi_buy_price                                       2.152131
+rsi_sell_price                                      2.331837
+stoch_buy_price                                     2.252457
+stoch_sell_price                                    2.415423
+macd_cross_price                                    2.306141
+netSD                                               0.168067
+OUT                                                       42
+IN                                                        22
+isin                                            LT0000123911
+average_annual_dividend_per_share_2022_2026              0.1
+delta_netSD                                              0.0
+netSD_effect                                       UNCHANGED
+dividend_status_5y                                      PAID
+has_in                                                  True
+execution_decision                                      SKIP
+action_rank                                                3
+priority                                                  18
+Name: 17, dtype: object>/trading" target="_blank" rel="noopener noreferrer"><strong>Open TEL1L on Nasdaq Baltic ↗</strong></a>
 
 <table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>30</td><td>+30</td><td>0.45%</td><td>EUR 2.2500</td><td>0.1681</td><td>42 / 22</td><td>51.78</td><td>Bearish</td><td>Inside bands</td><td>0.180 (Oversold)</td><td>EUR 0.1000 / share</td><td>HOLD</td><td>BUY</td><td>0.000020 (0.025% of portfolio HHI)</td><td>EUR 56,394</td><td>0.1%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
