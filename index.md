@@ -3,7 +3,6 @@ layout: null
 title: Baltic investment plan
 description: Nasdaq Baltic portfolio report
 ---
-<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
