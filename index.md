@@ -111,7 +111,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-28 15:25 (Europe/Vilnius); return analysis through 2026-10-27; valuation prices through 2026-10-27
+# Baltic investment plan - updated 2026-10-28 15:32 (Europe/Vilnius); return analysis through 2026-10-27; valuation prices through 2026-10-27
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -134,7 +134,7 @@ Return statistics use complete common trading dates through 2026-10-27. Valuatio
 
 Select a share to display its allocation, technical indicators, performance and liquidity measures, and portfolio sensitivity. Click any measure name to open its meaning, calculation and interpretation. Average annual dividend is the mean of the official annual dividend per share totals for 2022–2026; a year without a distribution contributes zero, and future ex-dividend dates after the report update date are excluded.
 
-<div class="profile-filters"><fieldset class="signal-filters"><legend>Current execution decision</legend><label><input type="checkbox" value="BUY" checked> BUY</label><label><input type="checkbox" value="WAIT" checked> WAIT</label><label><input type="checkbox" value="SELL" checked> SELL</label><label><input type="checkbox" value="HOLD" checked> HOLD</label><label><input type="checkbox" value="SKIP" checked> SKIP</label></fieldset><fieldset class="netsd-filters"><legend>netSD after adding this share</legend><label><input type="checkbox" value="INCREASE" checked> Increases</label><label><input type="checkbox" value="DECREASE" checked> Decreases</label><label><input type="checkbox" value="UNCHANGED" checked> Unchanged</label></fieldset><fieldset class="dividend-filters"><legend>Dividends paid at least once in 2022–2026</legend><label><input type="checkbox" value="PAID" checked> Paid dividends</label><label><input type="checkbox" value="NONE" checked> No dividends paid</label></fieldset><span class="profile-filter-count" aria-live="polite"></span></div>
+<div class="profile-filters"><fieldset class="signal-filters"><legend>Current execution decision</legend><label><input type="checkbox" value="BUY" checked> BUY</label>&nbsp;&nbsp;<label><input type="checkbox" value="WAIT" checked> WAIT</label>&nbsp;&nbsp;<label><input type="checkbox" value="SELL" checked> SELL</label>&nbsp;&nbsp;<label><input type="checkbox" value="HOLD" checked> HOLD</label>&nbsp;&nbsp;<label><input type="checkbox" value="SKIP" checked> SKIP</label><div class="decision-key"><strong>WAIT</strong> = the optimiser proposes a trade, but technical timing does not yet support execution. <strong>HOLD</strong> = the selected model proposes no quantity change. <strong>SKIP</strong> = the proposed purchase is below the minimum material-trade rule (EUR 100 or 1% portfolio weight).</div></fieldset><fieldset class="netsd-filters"><legend>netSD after adding this share</legend><label><input type="checkbox" value="INCREASE" checked> Increases</label>&nbsp;&nbsp;<label><input type="checkbox" value="DECREASE" checked> Decreases</label>&nbsp;&nbsp;<label><input type="checkbox" value="UNCHANGED" checked> Unchanged</label></fieldset><fieldset class="dividend-filters"><legend>Dividends paid at least once in 2022–2026</legend><label><input type="checkbox" value="PAID" checked> Paid dividends</label>&nbsp;&nbsp;<label><input type="checkbox" value="NONE" checked> No dividends paid</label></fieldset><span class="profile-filter-count" aria-live="polite"></span></div>
 
 <details markdown="1" class="stock-profile" id="share-kne1l" data-signal="WAIT" data-netsd-effect="INCREASE" data-dividend-status="PAID">
 <summary><strong>KNE1L — KN Energies</strong> | current action: WAIT | allocation target 1442 shares | netSD diagnostic rank 1</summary>
@@ -6156,6 +6156,40 @@ Return and technical analysis uses common observations through 2026-10-27; valua
 
 </details>
 
+<details markdown="1">
+<summary><strong>Figure 2.a. Correlations among all eligible shares</strong></summary>
+
+All eligible shares are shown; portfolios are excluded. Pearson measures linear co-movement, while Spearman measures monotonic rank co-movement. Both matrices use Ward hierarchical clustering. Blue denotes negative, white near-zero and red positive correlation.
+
+![All-share Pearson correlations](figures/asset_correlation_all_pearson_ward.png)
+
+![All-share Spearman correlations](figures/asset_correlation_all_spearman_ward.png)
+
+</details>
+
+<details markdown="1">
+<summary><strong>Figure 2.b. Correlations among shares held by at least one portfolio</strong></summary>
+
+The set is the union of shares with a positive target quantity in any reported allocation. Portfolio return series are excluded.
+
+![Any-portfolio-share Pearson correlations](figures/asset_correlation_any_portfolio_pearson_ward.png)
+
+![Any-portfolio-share Spearman correlations](figures/asset_correlation_any_portfolio_spearman_ward.png)
+
+</details>
+
+<details markdown="1">
+<summary><strong>Figure 2.c. Correlations among current holdings only</strong></summary>
+
+Only shares currently owned are included; portfolio return series are excluded.
+
+![Current-holding Pearson correlations](figures/asset_correlation_current_pearson_ward.png)
+
+![Current-holding Spearman correlations](figures/asset_correlation_current_spearman_ward.png)
+
+</details>
+
+
 
 The five-year average yield uses ex-dividend amounts divided by the latest available price on or before each ex-date. Current- and update-quantity dividend amounts use the five-year average annual dividend per share; they are historical gross scenarios, not forecasts.
 
@@ -6370,7 +6404,7 @@ netSD=0.806723, OUT=96, IN=0, active positions=18, new positions=6. Penalties: p
 
 
 <details markdown="1">
-<summary><strong>Figure 2.a. Optimiser target changes relative to current holdings: two adjacent portfolio bars for every share</strong></summary>
+<summary><strong>Figure 2.d. Optimiser target changes relative to current holdings: two adjacent portfolio bars for every share</strong></summary>
 
 ![Report figure 1](report/assets/figure-01.png)
 
@@ -6380,7 +6414,7 @@ netSD=0.806723, OUT=96, IN=0, active positions=18, new positions=6. Penalties: p
 Each share has four adjacent bars for both original and both direct penalised-netSD portfolios. Negative values are sales; both no-sales portfolios retain every current position. All scenarios use the EUR 15,000 ceiling.
 
 <details markdown="1">
-<summary><strong>Figure 2.b. Capital allocation and historical gross dividend contribution</strong></summary>
+<summary><strong>Figure 2.e. Capital allocation and historical gross dividend contribution</strong></summary>
 
 ![Report figure 2](report/assets/figure-02.png)
 
@@ -6403,7 +6437,7 @@ The first 70% and last 30% rows are chronological sample slices. OUT, IN and net
 </details>
 
 <details markdown="1" open>
-<summary><strong>Figure 2.c. Pearson correlations for selected portfolio shares and the three portfolios</strong></summary>
+<summary><strong>Figure 2.f. Pearson correlations for selected portfolio shares and the three portfolios</strong></summary>
 
 Only shares with a positive position in Current or at least one final update are included. Ward hierarchical clustering groups similar dependence patterns. The top and left dendrograms show the complete sequence of cluster mergers; shorter joining branches indicate more similar correlation profiles. Blue is negative, white is near zero and red is positive correlation.
 
@@ -6412,7 +6446,7 @@ Only shares with a positive position in Current or at least one final update are
 </details>
 
 <details markdown="1">
-<summary><strong>Figure 2.d. Spearman correlations for selected portfolio shares and the three portfolios</strong></summary>
+<summary><strong>Figure 2.g. Spearman correlations for selected portfolio shares and the three portfolios</strong></summary>
 
 The top and left dendrograms show Ward hierarchical clustering of the Spearman dependence profiles.
 
@@ -6421,7 +6455,7 @@ The top and left dendrograms show Ward hierarchical clustering of the Spearman d
 </details>
 
 <details markdown="1">
-<summary><strong>Figure 2.e. Return histograms for Current, both updates and S&P 500</strong></summary>
+<summary><strong>Figure 2.h. Return histograms for Current, both updates and S&P 500</strong></summary>
 
 ![Scenario return histograms](figures/scenario_histograms.png)
 
@@ -6432,7 +6466,7 @@ The top and left dendrograms show Ward hierarchical clustering of the Spearman d
 This section compares Current, both original updates and the two direct penalised-netSD portfolios. Training and full-data portfolios remain available for comparison.
 
 <details markdown="1" class="dominance-components portfolio-dominance" open>
-<summary><strong>Figure 2.f. Interactive portfolio FSD, SSD and TSD analysis</strong></summary>
+<summary><strong>Figure 2.i. Interactive portfolio FSD, SSD and TSD analysis</strong></summary>
 
 Select FSD, SSD or TSD, choose any combination of portfolios and individual shares in the grouped multi-select list, and choose the comparison base. The upper panels show the selected component curves; the lower panels show the comparison base minus every other selected curve. The x-position and horizontal-magnification sliders select the interval, whose vertical scale is fitted automatically.
 
@@ -6441,7 +6475,7 @@ Select FSD, SSD or TSD, choose any combination of portfolios and individual shar
 </details>
 
 <details markdown="1" class="frontier-components" open>
-<summary><strong>Figure 2.g. Interactive Markowitz, MAD, Minimax, robust mean–CVaR and netSD frontiers</strong></summary>
+<summary><strong>Figure 2.j. Interactive Markowitz, MAD, Minimax, robust mean–CVaR and netSD frontiers</strong></summary>
 
 Choose the model to change the risk measure. Current is always highlighted, and every share already held in Current is selected and labelled automatically. Use the grouped multiple-selection list to add or remove any portfolio or share, zoom with the horizontal controls or mouse wheel, and save the current view as PNG.
 
@@ -6476,7 +6510,7 @@ Choose the model to change the risk measure. Current is always highlighted, and 
 </details>
 
 <details markdown="1" open>
-<summary><strong>Figure 2.h. Directional return-spillover network</strong></summary>
+<summary><strong>Figure 2.k. Directional return-spillover network</strong></summary>
 
 A VAR(1) and a 10-observation generalized forecast-error variance decomposition are used, following the connectedness logic in [Kabašinskas (2024)](https://doi.org/10.1186/s13362-024-00144-x). An arrow from A to B is the percentage of B's forecast-error variance explained by shocks from A; only links of at least 2% are drawn. The result measures predictive connectedness, not a causal effect.
 
@@ -6519,7 +6553,7 @@ FROM is the share received from all other series. TO is the share transmitted to
 </details>
 
 <details markdown="1">
-<summary><strong>Figure 2.i. Rolling 120-observation Total Spillover Index</strong></summary>
+<summary><strong>Figure 2.l. Rolling 120-observation Total Spillover Index</strong></summary>
 
 The rolling index shows when cross-series connectedness rises or falls. Peaks indicate periods when forecast errors are explained more by shocks elsewhere in the system.
 
@@ -6528,7 +6562,7 @@ The rolling index shows when cross-series connectedness rises or falls. Peaks in
 </details>
 
 <details markdown="1" class="cumulative-components" open>
-<summary><strong>Figure 2.j. Interactive cumulative value and drawdowns</strong></summary>
+<summary><strong>Figure 2.m. Interactive cumulative value and drawdowns</strong></summary>
 
 Select any combination of portfolios, S&P 500 and individual shares. The upper panel shows the value of one monetary unit invested at the common starting date; the lower panel shows drawdown from each series' previous peak. Current and both update scenarios are selected initially.
 
