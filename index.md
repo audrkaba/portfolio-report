@@ -110,7 +110,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-28 15:35 (Europe/Vilnius); return analysis through 2026-10-27; valuation prices through 2026-10-27
+# Baltic investment plan - updated 2026-10-28 18:11 (Europe/Vilnius); return analysis through 2026-10-27; valuation prices through 2026-10-27
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -6002,17 +6002,153 @@ Dividend values are historical gross cash distributions. They are excluded from 
 
 ### Exact mathematical formulation of the netSD portfolio
 
-Direct penalty formulation: maximise J(q)=netSD(q)-0.00015*N(q)^2-0.001/[sum_j w_j^2]-0.006*P_D(q), where N(q) is the number of active positions and P_D(q)=sum_{j:q_j>0} max(10-a_j*q_j,0)/10. Here a_j is the five-year average annual dividend per share. The sales and no-sales versions use the same objective with their respective holding constraints. This objective may accept a slightly lower raw netSD when the portfolio becomes materially simpler or removes economically negligible positions.
+Let $R_{tj}$ denote the return of share $j$ on date $t$, and let $w_j$ be its final portfolio weight. The candidate portfolio return is
 
-Let R_tj be the return of share j on date t, w_j its final portfolio weight, and r_p,t = Σ_j w_j R_tj the candidate portfolio return. Let K denote the fixed reference set consisting of 55 quality-approved shares, the current portfolio, and ten earlier portfolios.
+$$
+r_{p,t}=\sum_{j=1}^{n}w_jR_{tj},
+\qquad
+\sum_{j=1}^{n}w_j=1,
+\qquad
+w_j\ge 0.
+$$
 
-For entity i, define H_i^(1)(x)=F_i(x) and H_i^(q)(x)=∫_{-∞}^x H_i^(q-1)(u)du for q=2,3. Entity i dominates entity k at order q when H_i^(q)(x) ≤ H_k^(q)(x) for every observed support point x, with a strict inequality for at least one x. The third-order comparison additionally requires E[R_i] ≥ E[R_k]. Let a_ik^(q)=1 when this condition holds and 0 otherwise.
+Let $\mathcal K$ be the fixed reference set containing 55 quality-approved shares, the current portfolio and ten previously estimated portfolios. For entity $i$, define the first three cumulative-distribution integrals by
 
-OUT(p)=Σ_{k∈K}Σ_{q=1}^3 a_pk^(q),   IN(p)=Σ_{k∈K}Σ_{q=1}^3 a_kp^(q),   D=max_i{OUT(i)+IN(i)},   netSD(p)=[OUT(p)-IN(p)]/D.
+$$
+H_i^{(1)}(x)=F_i(x),
+$$
 
-Primary optimisation problem: max_w netSD(w), subject to Σ_j w_j=1; w_j≥0; μᵀw≥μ_current; and w_j=0 for every share j whose individual netSD_j≤0 or which belongs to the Baltic Secondary List. Selling existing holdings is allowed, so current positions do not impose lower bounds. Historical dividends are reported separately and do not enter the objective.
+$$
+H_i^{(q)}(x)=\int_{-\infty}^{x}H_i^{(q-1)}(u)\,du,
+\qquad q\in\{2,3\}.
+$$
 
-The individual-share screening score is calculated before the new candidate enters the network: netSD_j=(OUT_j-IN_j)/D_ref in the fixed 67-entity reference system. This prevents the candidate from changing its own admissible investment universe.
+Entity $i$ dominates entity $k$ at order $q$ when
+
+$$
+H_i^{(q)}(x)\le H_k^{(q)}(x)
+\quad\text{for every observed support point }x,
+$$
+
+with strict inequality for at least one $x$. Third-order dominance additionally requires
+
+$$
+\mathbb E[R_i]\ge \mathbb E[R_k].
+$$
+
+Define the dominance indicator
+
+$$
+a_{ik}^{(q)}=
+\begin{cases}
+1, & \text{if entity }i\text{ dominates entity }k\text{ at order }q,\\
+0, & \text{otherwise.}
+\end{cases}
+$$
+
+The outgoing and incoming dominance counts are
+
+$$
+\operatorname{OUT}(p)
+=\sum_{k\in\mathcal K}\sum_{q=1}^{3}a_{pk}^{(q)},
+\qquad
+\operatorname{IN}(p)
+=\sum_{k\in\mathcal K}\sum_{q=1}^{3}a_{kp}^{(q)}.
+$$
+
+Using the fixed normalising denominator
+
+$$
+D=\max_i\left\{\operatorname{OUT}(i)+\operatorname{IN}(i)\right\},
+$$
+
+the portfolio score is
+
+$$
+\operatorname{netSD}(p)
+=\frac{\operatorname{OUT}(p)-\operatorname{IN}(p)}{D}.
+$$
+
+The unpenalised portfolio problem is
+
+$$
+\boxed{
+\max_{\mathbf w}\;\operatorname{netSD}(\mathbf w)
+}
+$$
+
+subject to
+
+$$
+\sum_{j=1}^{n}w_j=1,
+\qquad
+w_j\ge0,
+\qquad
+\boldsymbol\mu^{\mathsf T}\mathbf w\ge\mu_{\mathrm{Current}},
+$$
+
+and the eligibility restriction
+
+$$
+w_j=0
+\quad\text{if}\quad
+\operatorname{netSD}_j\le0
+\quad\text{or share }j\text{ is outside the eligible primary-list universe}.
+$$
+
+For executable whole-share quantities $q_j\in\mathbb Z_{\ge0}$, prices $p_j$ and budget $B$, the constraints become
+
+$$
+\sum_{j=1}^{n}p_jq_j\le B,
+\qquad
+w_j=\frac{p_jq_j}{\sum_{\ell=1}^{n}p_\ell q_\ell}.
+$$
+
+If sales are prohibited, the current holdings $q_j^{(0)}$ impose
+
+$$
+q_j\ge q_j^{(0)},
+\qquad j=1,\ldots,n.
+$$
+
+For the direct-penalty model, define the number of active positions and the effective number of positions as
+
+$$
+N(\mathbf q)=\sum_{j=1}^{n}\mathbb I(q_j>0),
+\qquad
+N_{\mathrm{eff}}(\mathbf w)=\frac{1}{\sum_{j=1}^{n}w_j^2}.
+$$
+
+Let $d_j$ be the five-year average annual dividend per share. The penalty for positions generating less than EUR 10 of average annual dividend cash is
+
+$$
+P_D(\mathbf q)
+=\sum_{j:q_j>0}\frac{\max\{10-d_jq_j,0\}}{10}.
+$$
+
+The penalised objective used for the two Update2 portfolios is
+
+$$
+\boxed{
+\max_{\mathbf q}\;
+J(\mathbf q)
+=\operatorname{netSD}(\mathbf q)
+-0.00015\,N(\mathbf q)^2
+-0.001\,N_{\mathrm{eff}}(\mathbf w)
+-0.006\,P_D(\mathbf q)
+}.
+$$
+
+The sales-allowed and no-sales versions use the same objective with their corresponding quantity constraints. The penalty permits a slightly smaller raw netSD when the resulting portfolio contains fewer active positions, avoids very small weights or removes positions with economically negligible dividend cash.
+
+The individual-share screening score is computed before a new candidate enters the comparison network:
+
+$$
+\operatorname{netSD}_j
+=\frac{\operatorname{OUT}_j-\operatorname{IN}_j}{D_{\mathrm{ref}}}.
+$$
+
+This fixed-reference construction prevents the candidate from changing its own admissible investment universe.
 
 The unchanged reference set contains 55 quality-approved shares, the current portfolio, and ten earlier portfolios: Markowitz, MAD, Minimax, Robust and NetSD estimated from the training sample and from the complete sample. The larger pairwise matrices are diagnostics only; their expanded-network ratios are not presented as the optimisation score.
 
