@@ -107,7 +107,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-28 12:40 (Europe/Vilnius); return analysis through 2026-10-27; valuation prices through 2026-10-27
+# Baltic investment plan - updated 2026-10-28 13:37 (Europe/Vilnius); return analysis through 2026-10-27; valuation prices through 2026-10-27
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -163,7 +163,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![KNE1L return histogram](figures/stock_profiles/KNE1L_histogram.png?v=1793178668)
+![KNE1L return histogram](figures/stock_profiles/KNE1L_histogram.png?v=1793184542)
 
 </details>
 
@@ -292,7 +292,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![KNE1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/KNE1L_all_frontiers.png?v=1793182750)
+![KNE1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/KNE1L_all_frontiers.png?v=1793185036)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -301,7 +301,7 @@ The highlighted circle is the selected share and pale circles are the remaining 
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-![KNE1L mean return and historical dividend yield with all portfolios](figures/stock_profiles/KNE1L_return_dividend.png?v=1793182750)
+![KNE1L mean return and historical dividend yield with all portfolios](figures/stock_profiles/KNE1L_return_dividend.png?v=1793185036)
 
 The selected share is highlighted. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -382,7 +382,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![KNE1L high-resolution stochastic dominance](figures/stock_profiles/KNE1L_FSD_SSD_TSD.png?v=1793179045)
+![KNE1L high-resolution stochastic dominance](figures/stock_profiles/KNE1L_FSD_SSD_TSD.png?v=1793184861)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -427,7 +427,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![VLP1L return histogram](figures/stock_profiles/VLP1L_histogram.png?v=1793178668)
+![VLP1L return histogram](figures/stock_profiles/VLP1L_histogram.png?v=1793184543)
 
 </details>
 
@@ -555,7 +555,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![VLP1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/VLP1L_all_frontiers.png?v=1793182746)
+![VLP1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/VLP1L_all_frontiers.png?v=1793185033)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -564,7 +564,7 @@ The highlighted circle is the selected share and pale circles are the remaining 
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-![VLP1L mean return and historical dividend yield with all portfolios](figures/stock_profiles/VLP1L_return_dividend.png?v=1793182747)
+![VLP1L mean return and historical dividend yield with all portfolios](figures/stock_profiles/VLP1L_return_dividend.png?v=1793185034)
 
 The selected share is highlighted. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -645,7 +645,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![VLP1L high-resolution stochastic dominance](figures/stock_profiles/VLP1L_FSD_SSD_TSD.png?v=1793179048)
+![VLP1L high-resolution stochastic dominance](figures/stock_profiles/VLP1L_FSD_SSD_TSD.png?v=1793184867)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -690,7 +690,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![MRK1T return histogram](figures/stock_profiles/MRK1T_histogram.png?v=1793178695)
+![MRK1T return histogram](figures/stock_profiles/MRK1T_histogram.png?v=1793184571)
 
 </details>
 
@@ -837,7 +837,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![MRK1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/MRK1T_all_frontiers.png?v=1793182747)
+![MRK1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/MRK1T_all_frontiers.png?v=1793185034)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -846,7 +846,7 @@ The highlighted circle is the selected share and pale circles are the remaining 
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-![MRK1T mean return and historical dividend yield with all portfolios](figures/stock_profiles/MRK1T_return_dividend.png?v=1793182747)
+![MRK1T mean return and historical dividend yield with all portfolios](figures/stock_profiles/MRK1T_return_dividend.png?v=1793185034)
 
 The selected share is highlighted. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -927,7 +927,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![MRK1T high-resolution stochastic dominance](figures/stock_profiles/MRK1T_FSD_SSD_TSD.png?v=1793179056)
+![MRK1T high-resolution stochastic dominance](figures/stock_profiles/MRK1T_FSD_SSD_TSD.png?v=1793184889)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -972,7 +972,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![MOLNR return histogram](figures/stock_profiles/MOLNR_histogram.png?v=1793178637)
+![MOLNR return histogram](figures/stock_profiles/MOLNR_histogram.png?v=1793184516)
 
 </details>
 
@@ -1087,7 +1087,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![MOLNR Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/MOLNR_all_frontiers.png?v=1793182753)
+![MOLNR Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/MOLNR_all_frontiers.png?v=1793185040)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -1096,7 +1096,7 @@ The highlighted circle is the selected share and pale circles are the remaining 
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-![MOLNR mean return and historical dividend yield with all portfolios](figures/stock_profiles/MOLNR_return_dividend.png?v=1793182754)
+![MOLNR mean return and historical dividend yield with all portfolios](figures/stock_profiles/MOLNR_return_dividend.png?v=1793185040)
 
 The selected share is highlighted. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -1177,7 +1177,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![MOLNR high-resolution stochastic dominance](figures/stock_profiles/MOLNR_FSD_SSD_TSD.png?v=1793178943)
+![MOLNR high-resolution stochastic dominance](figures/stock_profiles/MOLNR_FSD_SSD_TSD.png?v=1793184824)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -1222,7 +1222,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![RSU1L return histogram](figures/stock_profiles/RSU1L_histogram.png?v=1793178637)
+![RSU1L return histogram](figures/stock_profiles/RSU1L_histogram.png?v=1793184518)
 
 </details>
 
@@ -1337,7 +1337,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![RSU1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/RSU1L_all_frontiers.png?v=1793182751)
+![RSU1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/RSU1L_all_frontiers.png?v=1793185038)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -1346,7 +1346,7 @@ The highlighted circle is the selected share and pale circles are the remaining 
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-![RSU1L mean return and historical dividend yield with all portfolios](figures/stock_profiles/RSU1L_return_dividend.png?v=1793182751)
+![RSU1L mean return and historical dividend yield with all portfolios](figures/stock_profiles/RSU1L_return_dividend.png?v=1793185038)
 
 The selected share is highlighted. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -1427,7 +1427,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![RSU1L high-resolution stochastic dominance](figures/stock_profiles/RSU1L_FSD_SSD_TSD.png?v=1793178921)
+![RSU1L high-resolution stochastic dominance](figures/stock_profiles/RSU1L_FSD_SSD_TSD.png?v=1793184779)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -1472,7 +1472,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![APG1L return histogram](figures/stock_profiles/APG1L_histogram.png?v=1793178609)
+![APG1L return histogram](figures/stock_profiles/APG1L_histogram.png?v=1793184486)
 
 </details>
 
@@ -1647,7 +1647,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![APG1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/APG1L_all_frontiers.png?v=1793182748)
+![APG1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/APG1L_all_frontiers.png?v=1793185035)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -1656,7 +1656,7 @@ The highlighted circle is the selected share and pale circles are the remaining 
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-![APG1L mean return and historical dividend yield with all portfolios](figures/stock_profiles/APG1L_return_dividend.png?v=1793182748)
+![APG1L mean return and historical dividend yield with all portfolios](figures/stock_profiles/APG1L_return_dividend.png?v=1793185035)
 
 The selected share is highlighted. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -1737,7 +1737,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![APG1L high-resolution stochastic dominance](figures/stock_profiles/APG1L_FSD_SSD_TSD.png?v=1793178818)
+![APG1L high-resolution stochastic dominance](figures/stock_profiles/APG1L_FSD_SSD_TSD.png?v=1793184691)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -1782,7 +1782,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![IGN1L return histogram](figures/stock_profiles/IGN1L_histogram.png?v=1793178668)
+![IGN1L return histogram](figures/stock_profiles/IGN1L_histogram.png?v=1793184544)
 
 </details>
 
@@ -1921,7 +1921,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![IGN1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/IGN1L_all_frontiers.png?v=1793182757)
+![IGN1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/IGN1L_all_frontiers.png?v=1793185043)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -1930,7 +1930,7 @@ The highlighted circle is the selected share and pale circles are the remaining 
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-![IGN1L mean return and historical dividend yield with all portfolios](figures/stock_profiles/IGN1L_return_dividend.png?v=1793182757)
+![IGN1L mean return and historical dividend yield with all portfolios](figures/stock_profiles/IGN1L_return_dividend.png?v=1793185043)
 
 The selected share is highlighted. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -2011,7 +2011,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![IGN1L high-resolution stochastic dominance](figures/stock_profiles/IGN1L_FSD_SSD_TSD.png?v=1793179048)
+![IGN1L high-resolution stochastic dominance](figures/stock_profiles/IGN1L_FSD_SSD_TSD.png?v=1793184880)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -2056,7 +2056,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![PZV1L return histogram](figures/stock_profiles/PZV1L_histogram.png?v=1793178609)
+![PZV1L return histogram](figures/stock_profiles/PZV1L_histogram.png?v=1793184486)
 
 </details>
 
@@ -2184,7 +2184,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![PZV1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/PZV1L_all_frontiers.png?v=1793182757)
+![PZV1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/PZV1L_all_frontiers.png?v=1793185043)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -2193,7 +2193,7 @@ The highlighted circle is the selected share and pale circles are the remaining 
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-![PZV1L mean return and historical dividend yield with all portfolios](figures/stock_profiles/PZV1L_return_dividend.png?v=1793182758)
+![PZV1L mean return and historical dividend yield with all portfolios](figures/stock_profiles/PZV1L_return_dividend.png?v=1793185043)
 
 The selected share is highlighted. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -2274,7 +2274,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![PZV1L high-resolution stochastic dominance](figures/stock_profiles/PZV1L_FSD_SSD_TSD.png?v=1793178828)
+![PZV1L high-resolution stochastic dominance](figures/stock_profiles/PZV1L_FSD_SSD_TSD.png?v=1793184693)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -2319,7 +2319,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![AKO1L return histogram](figures/stock_profiles/AKO1L_histogram.png?v=1793178609)
+![AKO1L return histogram](figures/stock_profiles/AKO1L_histogram.png?v=1793184486)
 
 </details>
 
@@ -2447,7 +2447,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![AKO1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/AKO1L_all_frontiers.png?v=1793182755)
+![AKO1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/AKO1L_all_frontiers.png?v=1793185041)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -2456,7 +2456,7 @@ The highlighted circle is the selected share and pale circles are the remaining 
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-![AKO1L mean return and historical dividend yield with all portfolios](figures/stock_profiles/AKO1L_return_dividend.png?v=1793182755)
+![AKO1L mean return and historical dividend yield with all portfolios](figures/stock_profiles/AKO1L_return_dividend.png?v=1793185041)
 
 The selected share is highlighted. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -2537,7 +2537,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![AKO1L high-resolution stochastic dominance](figures/stock_profiles/AKO1L_FSD_SSD_TSD.png?v=1793178835)
+![AKO1L high-resolution stochastic dominance](figures/stock_profiles/AKO1L_FSD_SSD_TSD.png?v=1793184695)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -2582,7 +2582,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![ROE1L return histogram](figures/stock_profiles/ROE1L_histogram.png?v=1793178609)
+![ROE1L return histogram](figures/stock_profiles/ROE1L_histogram.png?v=1793184486)
 
 </details>
 
@@ -2718,7 +2718,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![ROE1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/ROE1L_all_frontiers.png?v=1793182750)
+![ROE1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/ROE1L_all_frontiers.png?v=1793185037)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -2727,7 +2727,7 @@ The highlighted circle is the selected share and pale circles are the remaining 
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-![ROE1L mean return and historical dividend yield with all portfolios](figures/stock_profiles/ROE1L_return_dividend.png?v=1793182751)
+![ROE1L mean return and historical dividend yield with all portfolios](figures/stock_profiles/ROE1L_return_dividend.png?v=1793185037)
 
 The selected share is highlighted. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -2808,7 +2808,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![ROE1L high-resolution stochastic dominance](figures/stock_profiles/ROE1L_FSD_SSD_TSD.png?v=1793178829)
+![ROE1L high-resolution stochastic dominance](figures/stock_profiles/ROE1L_FSD_SSD_TSD.png?v=1793184691)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -2853,7 +2853,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![TAL1T return histogram](figures/stock_profiles/TAL1T_histogram.png?v=1793178637)
+![TAL1T return histogram](figures/stock_profiles/TAL1T_histogram.png?v=1793184515)
 
 </details>
 
@@ -3005,7 +3005,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![TAL1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TAL1T_all_frontiers.png?v=1793182749)
+![TAL1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TAL1T_all_frontiers.png?v=1793185036)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -3014,7 +3014,7 @@ The highlighted circle is the selected share and pale circles are the remaining 
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-![TAL1T mean return and historical dividend yield with all portfolios](figures/stock_profiles/TAL1T_return_dividend.png?v=1793182749)
+![TAL1T mean return and historical dividend yield with all portfolios](figures/stock_profiles/TAL1T_return_dividend.png?v=1793185036)
 
 The selected share is highlighted. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -3095,7 +3095,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![TAL1T high-resolution stochastic dominance](figures/stock_profiles/TAL1T_FSD_SSD_TSD.png?v=1793178931)
+![TAL1T high-resolution stochastic dominance](figures/stock_profiles/TAL1T_FSD_SSD_TSD.png?v=1793184781)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -3140,7 +3140,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![EFT1T return histogram](figures/stock_profiles/EFT1T_histogram.png?v=1793178668)
+![EFT1T return histogram](figures/stock_profiles/EFT1T_histogram.png?v=1793184543)
 
 </details>
 
@@ -3288,7 +3288,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![EFT1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/EFT1T_all_frontiers.png?v=1793182754)
+![EFT1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/EFT1T_all_frontiers.png?v=1793185040)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -3297,7 +3297,7 @@ The highlighted circle is the selected share and pale circles are the remaining 
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-![EFT1T mean return and historical dividend yield with all portfolios](figures/stock_profiles/EFT1T_return_dividend.png?v=1793182754)
+![EFT1T mean return and historical dividend yield with all portfolios](figures/stock_profiles/EFT1T_return_dividend.png?v=1793185041)
 
 The selected share is highlighted. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -3378,7 +3378,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![EFT1T high-resolution stochastic dominance](figures/stock_profiles/EFT1T_FSD_SSD_TSD.png?v=1793179037)
+![EFT1T high-resolution stochastic dominance](figures/stock_profiles/EFT1T_FSD_SSD_TSD.png?v=1793184871)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -3423,7 +3423,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![SAF1R return histogram](figures/stock_profiles/SAF1R_histogram.png?v=1793178637)
+![SAF1R return histogram](figures/stock_profiles/SAF1R_histogram.png?v=1793184517)
 
 </details>
 
@@ -3555,7 +3555,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![SAF1R Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/SAF1R_all_frontiers.png?v=1793182746)
+![SAF1R Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/SAF1R_all_frontiers.png?v=1793185033)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -3564,7 +3564,7 @@ The highlighted circle is the selected share and pale circles are the remaining 
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-![SAF1R mean return and historical dividend yield with all portfolios](figures/stock_profiles/SAF1R_return_dividend.png?v=1793182746)
+![SAF1R mean return and historical dividend yield with all portfolios](figures/stock_profiles/SAF1R_return_dividend.png?v=1793185033)
 
 The selected share is highlighted. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -3645,7 +3645,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![SAF1R high-resolution stochastic dominance](figures/stock_profiles/SAF1R_FSD_SSD_TSD.png?v=1793178938)
+![SAF1R high-resolution stochastic dominance](figures/stock_profiles/SAF1R_FSD_SSD_TSD.png?v=1793184787)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -3690,7 +3690,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![TSM1T return histogram](figures/stock_profiles/TSM1T_histogram.png?v=1793178637)
+![TSM1T return histogram](figures/stock_profiles/TSM1T_histogram.png?v=1793184518)
 
 </details>
 
@@ -3832,7 +3832,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![TSM1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TSM1T_all_frontiers.png?v=1793182756)
+![TSM1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TSM1T_all_frontiers.png?v=1793185042)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -3841,7 +3841,7 @@ The highlighted circle is the selected share and pale circles are the remaining 
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-![TSM1T mean return and historical dividend yield with all portfolios](figures/stock_profiles/TSM1T_return_dividend.png?v=1793182756)
+![TSM1T mean return and historical dividend yield with all portfolios](figures/stock_profiles/TSM1T_return_dividend.png?v=1793185042)
 
 The selected share is highlighted. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -3922,7 +3922,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![TSM1T high-resolution stochastic dominance](figures/stock_profiles/TSM1T_FSD_SSD_TSD.png?v=1793178947)
+![TSM1T high-resolution stochastic dominance](figures/stock_profiles/TSM1T_FSD_SSD_TSD.png?v=1793184826)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -3967,7 +3967,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![GRG1L return histogram](figures/stock_profiles/GRG1L_histogram.png?v=1793178668)
+![GRG1L return histogram](figures/stock_profiles/GRG1L_histogram.png?v=1793184544)
 
 </details>
 
@@ -4059,7 +4059,7 @@ A direction reversal requires opposite fitted price slopes during the ten tradin
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![GRG1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/GRG1L_all_frontiers.png?v=1793182752)
+![GRG1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/GRG1L_all_frontiers.png?v=1793185038)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -4068,7 +4068,7 @@ The highlighted circle is the selected share and pale circles are the remaining 
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-![GRG1L mean return and historical dividend yield with all portfolios](figures/stock_profiles/GRG1L_return_dividend.png?v=1793182752)
+![GRG1L mean return and historical dividend yield with all portfolios](figures/stock_profiles/GRG1L_return_dividend.png?v=1793185039)
 
 The selected share is highlighted. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -4149,7 +4149,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![GRG1L high-resolution stochastic dominance](figures/stock_profiles/GRG1L_FSD_SSD_TSD.png?v=1793179030)
+![GRG1L high-resolution stochastic dominance](figures/stock_profiles/GRG1L_FSD_SSD_TSD.png?v=1793184855)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -4194,7 +4194,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![TEL1L return histogram](figures/stock_profiles/TEL1L_histogram.png?v=1793178667)
+![TEL1L return histogram](figures/stock_profiles/TEL1L_histogram.png?v=1793184544)
 
 </details>
 
@@ -4288,7 +4288,7 @@ A direction reversal requires opposite fitted price slopes during the ten tradin
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![TEL1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TEL1L_all_frontiers.png?v=1793182761)
+![TEL1L Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TEL1L_all_frontiers.png?v=1793185047)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -4297,7 +4297,7 @@ The highlighted circle is the selected share and pale circles are the remaining 
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-![TEL1L mean return and historical dividend yield with all portfolios](figures/stock_profiles/TEL1L_return_dividend.png?v=1793182761)
+![TEL1L mean return and historical dividend yield with all portfolios](figures/stock_profiles/TEL1L_return_dividend.png?v=1793185047)
 
 The selected share is highlighted. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -4372,7 +4372,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![TEL1L high-resolution stochastic dominance](figures/stock_profiles/TEL1L_FSD_SSD_TSD.png?v=1793179019)
+![TEL1L high-resolution stochastic dominance](figures/stock_profiles/TEL1L_FSD_SSD_TSD.png?v=1793184830)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -4417,7 +4417,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![DGR1R return histogram](figures/stock_profiles/DGR1R_histogram.png?v=1793178664)
+![DGR1R return histogram](figures/stock_profiles/DGR1R_histogram.png?v=1793184543)
 
 </details>
 
@@ -4592,7 +4592,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![DGR1R Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/DGR1R_all_frontiers.png?v=1793182759)
+![DGR1R Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/DGR1R_all_frontiers.png?v=1793185045)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -4601,7 +4601,7 @@ The highlighted circle is the selected share and pale circles are the remaining 
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-![DGR1R mean return and historical dividend yield with all portfolios](figures/stock_profiles/DGR1R_return_dividend.png?v=1793182759)
+![DGR1R mean return and historical dividend yield with all portfolios](figures/stock_profiles/DGR1R_return_dividend.png?v=1793185045)
 
 The selected share is highlighted. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -4682,7 +4682,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![DGR1R high-resolution stochastic dominance](figures/stock_profiles/DGR1R_FSD_SSD_TSD.png?v=1793179048)
+![DGR1R high-resolution stochastic dominance](figures/stock_profiles/DGR1R_FSD_SSD_TSD.png?v=1793184869)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -4727,7 +4727,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![TKM1T return histogram](figures/stock_profiles/TKM1T_histogram.png?v=1793178609)
+![TKM1T return histogram](figures/stock_profiles/TKM1T_histogram.png?v=1793184486)
 
 </details>
 
@@ -4872,7 +4872,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![TKM1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TKM1T_all_frontiers.png?v=1793182745)
+![TKM1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TKM1T_all_frontiers.png?v=1793185032)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -4881,7 +4881,7 @@ The highlighted circle is the selected share and pale circles are the remaining 
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-![TKM1T mean return and historical dividend yield with all portfolios](figures/stock_profiles/TKM1T_return_dividend.png?v=1793182745)
+![TKM1T mean return and historical dividend yield with all portfolios](figures/stock_profiles/TKM1T_return_dividend.png?v=1793185032)
 
 The selected share is highlighted. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -4962,7 +4962,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![TKM1T high-resolution stochastic dominance](figures/stock_profiles/TKM1T_FSD_SSD_TSD.png?v=1793178820)
+![TKM1T high-resolution stochastic dominance](figures/stock_profiles/TKM1T_FSD_SSD_TSD.png?v=1793184693)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -5007,7 +5007,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![HAE1T return histogram](figures/stock_profiles/HAE1T_histogram.png?v=1793178609)
+![HAE1T return histogram](figures/stock_profiles/HAE1T_histogram.png?v=1793184486)
 
 </details>
 
@@ -5155,7 +5155,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![HAE1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/HAE1T_all_frontiers.png?v=1793182753)
+![HAE1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/HAE1T_all_frontiers.png?v=1793185039)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -5164,7 +5164,7 @@ The highlighted circle is the selected share and pale circles are the remaining 
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-![HAE1T mean return and historical dividend yield with all portfolios](figures/stock_profiles/HAE1T_return_dividend.png?v=1793182753)
+![HAE1T mean return and historical dividend yield with all portfolios](figures/stock_profiles/HAE1T_return_dividend.png?v=1793185039)
 
 The selected share is highlighted. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -5245,7 +5245,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![HAE1T high-resolution stochastic dominance](figures/stock_profiles/HAE1T_FSD_SSD_TSD.png?v=1793178833)
+![HAE1T high-resolution stochastic dominance](figures/stock_profiles/HAE1T_FSD_SSD_TSD.png?v=1793184696)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -5290,7 +5290,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![LHV1T return histogram](figures/stock_profiles/LHV1T_histogram.png?v=1793178635)
+![LHV1T return histogram](figures/stock_profiles/LHV1T_histogram.png?v=1793184516)
 
 </details>
 
@@ -5444,7 +5444,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![LHV1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/LHV1T_all_frontiers.png?v=1793182758)
+![LHV1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/LHV1T_all_frontiers.png?v=1793185044)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -5453,7 +5453,7 @@ The highlighted circle is the selected share and pale circles are the remaining 
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-![LHV1T mean return and historical dividend yield with all portfolios](figures/stock_profiles/LHV1T_return_dividend.png?v=1793182758)
+![LHV1T mean return and historical dividend yield with all portfolios](figures/stock_profiles/LHV1T_return_dividend.png?v=1793185044)
 
 The selected share is highlighted. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -5534,7 +5534,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![LHV1T high-resolution stochastic dominance](figures/stock_profiles/LHV1T_FSD_SSD_TSD.png?v=1793178945)
+![LHV1T high-resolution stochastic dominance](figures/stock_profiles/LHV1T_FSD_SSD_TSD.png?v=1793184812)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -5579,7 +5579,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![TVE1T return histogram](figures/stock_profiles/TVE1T_histogram.png?v=1793178609)
+![TVE1T return histogram](figures/stock_profiles/TVE1T_histogram.png?v=1793184486)
 
 </details>
 
@@ -5727,7 +5727,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![TVE1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TVE1T_all_frontiers.png?v=1793182760)
+![TVE1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/TVE1T_all_frontiers.png?v=1793185045)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -5736,7 +5736,7 @@ The highlighted circle is the selected share and pale circles are the remaining 
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-![TVE1T mean return and historical dividend yield with all portfolios](figures/stock_profiles/TVE1T_return_dividend.png?v=1793182760)
+![TVE1T mean return and historical dividend yield with all portfolios](figures/stock_profiles/TVE1T_return_dividend.png?v=1793185045)
 
 The selected share is highlighted. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -5811,7 +5811,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![TVE1T high-resolution stochastic dominance](figures/stock_profiles/TVE1T_FSD_SSD_TSD.png?v=1793178805)
+![TVE1T high-resolution stochastic dominance](figures/stock_profiles/TVE1T_FSD_SSD_TSD.png?v=1793184672)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -5856,7 +5856,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1">
 <summary>Return histogram</summary>
 
-![CPA1T return histogram](figures/stock_profiles/CPA1T_histogram.png?v=1793178637)
+![CPA1T return histogram](figures/stock_profiles/CPA1T_histogram.png?v=1793184518)
 
 </details>
 
@@ -6008,7 +6008,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1">
 <summary>All five model frontiers with this share highlighted</summary>
 
-![CPA1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/CPA1T_all_frontiers.png?v=1793182761)
+![CPA1T Markowitz, MAD, Minimax, CVaR and netSD frontiers](figures/stock_profiles/CPA1T_all_frontiers.png?v=1793185046)
 
 The highlighted circle is the selected share and pale circles are the remaining shares. Every curve and point now uses the same 55-share Baltic universe, the same complete return sample and the same displayed risk definition. Markowitz, MAD, Minimax and empirical 95% CVaR curves are solved under long-only full-investment constraints. Consequently, a feasible portfolio point cannot lie above the corresponding curve at the same risk. The netSD criterion is discrete and non-convex, so its dashed line is explicitly an observed nondominated candidate envelope rather than a claimed smooth global frontier. Its horizontal axis is 1 - netSD, where lower is better.
 
@@ -6017,7 +6017,7 @@ The highlighted circle is the selected share and pale circles are the remaining 
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-![CPA1T mean return and historical dividend yield with all portfolios](figures/stock_profiles/CPA1T_return_dividend.png?v=1793182761)
+![CPA1T mean return and historical dividend yield with all portfolios](figures/stock_profiles/CPA1T_return_dividend.png?v=1793185046)
 
 The selected share is highlighted. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -6098,7 +6098,7 @@ The interactive calculation starts from one common empirical FSD grid. SSD is it
 <details markdown="1" class="static-dominance">
 <summary>High-resolution static FSD, SSD and TSD figure</summary>
 
-![CPA1T high-resolution stochastic dominance](figures/stock_profiles/CPA1T_FSD_SSD_TSD.png?v=1793178924)
+![CPA1T high-resolution stochastic dominance](figures/stock_profiles/CPA1T_FSD_SSD_TSD.png?v=1793184768)
 
 The static figure is collapsed because the interactive plots above provide the detailed comparison. Open it to view or save a high-resolution version.
 
@@ -6898,7 +6898,7 @@ function initialiseDominanceExplorer(box) {
       function yrange(i0,i1,keys=names) { let mn=Infinity,mx=-Infinity; keys.forEach(k=>{for(let i=i0;i<=i1;i++){const v=d.series[k][i];if(v<mn)mn=v;if(v>mx)mx=v;}}); if(mx===mn){mx+=1;mn-=1} return [mn,mx]; }
       function arrayRange(a,i0,i1){let mn=Infinity,mx=-Infinity;for(let i=i0;i<=i1;i++){if(a[i]<mn)mn=a[i];if(a[i]>mx)mx=a[i];}if(mx===mn){mx+=1;mn-=1}return[mn,mx];}
       function differenceRange(i0,i1){let mn=Infinity,mx=-Infinity;comparisonNames.forEach(k=>{const r=arrayRange(differences[k],i0,i1);mn=Math.min(mn,r[0]);mx=Math.max(mx,r[1]);});if(mx===mn){mx+=1;mn-=1}return[mn,mx];}
-      function axes(p,x0,x1,y0,y1,label) { ctx.strokeStyle='#9aabb5';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(p.l,p.t);ctx.lineTo(p.l,p.b);ctx.lineTo(p.r,p.b);ctx.stroke();ctx.fillStyle='#263d4b';ctx.fillText(label,p.l,p.t-9); for(let j=0;j<=6;j++){const xx=p.l+(p.r-p.l)*j/6,xv=x0+(x1-x0)*j/6;ctx.fillText(xv.toFixed(5),xx-22,p.b+17);} for(let j=0;j<=5;j++){const yy=p.b-(p.b-p.t)*j/5,yv=y0+(y1-y0)*j/5;ctx.fillText(yv.toExponential(2),Math.max(1,p.l-62),yy+4);} if(y0<=0&&y1>=0){const zy=p.b-(0-y0)/(y1-y0)*(p.b-p.t);ctx.strokeStyle='#17212b';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(p.l,zy);ctx.lineTo(p.r,zy);ctx.stroke();ctx.fillStyle='#17212b';ctx.font='bold 13px system-ui';ctx.fillText('0',p.l-15,zy+4);ctx.font='12px system-ui';} }
+      function axes(p,x0,x1,y0,y1,label) { ctx.strokeStyle='#9aabb5';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(p.l,p.t);ctx.lineTo(p.l,p.b);ctx.lineTo(p.r,p.b);ctx.stroke();ctx.fillStyle='#263d4b';ctx.fillText(label,p.l,p.t-9); for(let j=0;j<=6;j++){const xx=p.l+(p.r-p.l)*j/6,xv=x0+(x1-x0)*j/6;ctx.fillText(xv.toFixed(5),xx-22,p.b+17);} for(let j=0;j<=5;j++){const yy=p.b-(p.b-p.t)*j/5,yv=y0+(y1-y0)*j/5;ctx.fillText(yv.toExponential(2),Math.max(1,p.l-62),yy+4);} if(x0<=0&&x1>=0){const zx=p.l+(0-x0)/(x1-x0)*(p.r-p.l);ctx.strokeStyle='#17212b';ctx.lineWidth=2;ctx.setLineDash([6,4]);ctx.beginPath();ctx.moveTo(zx,p.t);ctx.lineTo(zx,p.b);ctx.stroke();ctx.setLineDash([]);ctx.fillStyle='#17212b';ctx.font='bold 13px system-ui';ctx.fillText('x = 0',zx+5,p.t+14);ctx.font='12px system-ui';} if(y0<=0&&y1>=0){const zy=p.b-(0-y0)/(y1-y0)*(p.b-p.t);ctx.strokeStyle='#17212b';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(p.l,zy);ctx.lineTo(p.r,zy);ctx.stroke();ctx.fillStyle='#17212b';ctx.font='bold 13px system-ui';ctx.fillText('0',p.l-15,zy+4);ctx.font='12px system-ui';} }
       function seriesStyle(k,ki){
         if(k===baseName)return{colour:profile==='Portfolio'?'#111111':'#c2185b',dash:[],width:3.6,alpha:1};
         if(k==='Current')return{colour:'#009e73',dash:[12,5],width:3.0,alpha:1};
