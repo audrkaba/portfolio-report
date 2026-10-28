@@ -110,7 +110,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-28 18:11 (Europe/Vilnius); return analysis through 2026-10-27; valuation prices through 2026-10-27
+# Baltic investment plan - updated 2026-10-28 18:29 (Europe/Vilnius); return analysis through 2026-10-27; valuation prices through 2026-10-27
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -5378,6 +5378,42 @@ Only shares currently owned are included; portfolio return series are excluded.
 
 </details>
 
+<details markdown="1">
+<summary><strong>Figure 2.d. FSD pairwise dominance matrix used by netSD</strong></summary>
+
+The fixed 66-entity reference network contains 55 quality-approved shares, Current and the ten earlier training/full-data portfolios. A blue cell equals 1 when the row entity FSD-dominates the column entity; white equals 0. Select the matrix to open the full-resolution image.
+
+<a href="figures/netsd_reference_FSD_matrix.png" target="_blank" rel="noopener noreferrer"><img src="figures/netsd_reference_FSD_matrix.png" alt="FSD pairwise dominance matrix used by netSD"></a>
+
+</details>
+
+<details markdown="1">
+<summary><strong>Figure 2.e. SSD pairwise dominance matrix used by netSD</strong></summary>
+
+A blue cell equals 1 when the row entity SSD-dominates the column entity. Row sums contribute to OUT; column sums contribute to IN.
+
+<a href="figures/netsd_reference_SSD_matrix.png" target="_blank" rel="noopener noreferrer"><img src="figures/netsd_reference_SSD_matrix.png" alt="SSD pairwise dominance matrix used by netSD"></a>
+
+</details>
+
+<details markdown="1">
+<summary><strong>Figure 2.f. TSD pairwise dominance matrix used by netSD</strong></summary>
+
+A blue cell equals 1 when the row entity TSD-dominates the column entity, including the required mean-return condition.
+
+<a href="figures/netsd_reference_TSD_matrix.png" target="_blank" rel="noopener noreferrer"><img src="figures/netsd_reference_TSD_matrix.png" alt="TSD pairwise dominance matrix used by netSD"></a>
+
+</details>
+
+<details markdown="1">
+<summary><strong>Figure 2.g. Combined FSD + SSD + TSD matrix used to calculate netSD</strong></summary>
+
+Each cell is the sum of the three order-specific indicators and therefore ranges from 0 to 3. For every entity, OUT is its combined row sum and IN is its combined column sum. The fixed denominator is 119, so netSD = (OUT − IN) / 119. This is the exact fixed comparison matrix underlying the reported optimisation scores.
+
+<a href="figures/netsd_reference_all_orders_matrix.png" target="_blank" rel="noopener noreferrer"><img src="figures/netsd_reference_all_orders_matrix.png" alt="Combined dominance matrix used to calculate netSD"></a>
+
+</details>
+
 
 
 The five-year average yield uses ex-dividend amounts divided by the latest available price on or before each ex-date. Current- and update-quantity dividend amounts use the five-year average annual dividend per share; they are historical gross scenarios, not forecasts.
@@ -5593,7 +5629,7 @@ netSD=0.806723, OUT=96, IN=0, active positions=18, new positions=6. Penalties: p
 
 
 <details markdown="1">
-<summary><strong>Figure 2.d. Optimiser target changes relative to current holdings: two adjacent portfolio bars for every share</strong></summary>
+<summary><strong>Figure 2.h. Optimiser target changes relative to current holdings: two adjacent portfolio bars for every share</strong></summary>
 
 ![Report figure 1](report/assets/figure-01.png)
 
@@ -5603,7 +5639,7 @@ netSD=0.806723, OUT=96, IN=0, active positions=18, new positions=6. Penalties: p
 Each share has four adjacent bars for both original and both direct penalised-netSD portfolios. Negative values are sales; both no-sales portfolios retain every current position. All scenarios use the EUR 15,000 ceiling.
 
 <details markdown="1">
-<summary><strong>Figure 2.e. Capital allocation and historical gross dividend contribution</strong></summary>
+<summary><strong>Figure 2.i. Capital allocation and historical gross dividend contribution</strong></summary>
 
 ![Report figure 2](report/assets/figure-02.png)
 
@@ -5626,7 +5662,7 @@ The first 70% and last 30% rows are chronological sample slices. OUT, IN and net
 </details>
 
 <details markdown="1" open>
-<summary><strong>Figure 2.f. Pearson correlations for selected portfolio shares and the three portfolios</strong></summary>
+<summary><strong>Figure 2.j. Pearson correlations for selected portfolio shares and the three portfolios</strong></summary>
 
 Only shares with a positive position in Current or at least one final update are included. Ward hierarchical clustering groups similar dependence patterns. The top and left dendrograms show the complete sequence of cluster mergers; shorter joining branches indicate more similar correlation profiles. Blue is negative, white is near zero and red is positive correlation.
 
@@ -5635,7 +5671,7 @@ Only shares with a positive position in Current or at least one final update are
 </details>
 
 <details markdown="1">
-<summary><strong>Figure 2.g. Spearman correlations for selected portfolio shares and the three portfolios</strong></summary>
+<summary><strong>Figure 2.k. Spearman correlations for selected portfolio shares and the three portfolios</strong></summary>
 
 The top and left dendrograms show Ward hierarchical clustering of the Spearman dependence profiles.
 
@@ -5644,7 +5680,7 @@ The top and left dendrograms show Ward hierarchical clustering of the Spearman d
 </details>
 
 <details markdown="1">
-<summary><strong>Figure 2.h. Return histograms for Current, both updates and S&P 500</strong></summary>
+<summary><strong>Figure 2.l. Return histograms for Current, both updates and S&P 500</strong></summary>
 
 ![Scenario return histograms](figures/scenario_histograms.png)
 
@@ -5655,7 +5691,7 @@ The top and left dendrograms show Ward hierarchical clustering of the Spearman d
 This section compares Current, both original updates and the two direct penalised-netSD portfolios. Training and full-data portfolios remain available for comparison.
 
 <details markdown="1" class="dominance-components portfolio-dominance" open>
-<summary><strong>Figure 2.i. Interactive portfolio FSD, SSD and TSD analysis</strong></summary>
+<summary><strong>Figure 2.m. Interactive portfolio FSD, SSD and TSD analysis</strong></summary>
 
 Select FSD, SSD or TSD, choose any combination of portfolios and individual shares in the grouped multi-select list, and choose the comparison base. The upper panels show the selected component curves; the lower panels show the comparison base minus every other selected curve. The x-position and horizontal-magnification sliders select the interval, whose vertical scale is fitted automatically.
 
@@ -5664,7 +5700,7 @@ Select FSD, SSD or TSD, choose any combination of portfolios and individual shar
 </details>
 
 <details markdown="1" class="frontier-components" open>
-<summary><strong>Figure 2.j. Interactive Markowitz, MAD, Minimax, robust mean–CVaR and netSD frontiers</strong></summary>
+<summary><strong>Figure 2.n. Interactive Markowitz, MAD, Minimax, robust mean–CVaR and netSD frontiers</strong></summary>
 
 Choose the model to change the risk measure. Current is always highlighted, and every share already held in Current is selected and labelled automatically. Use the grouped multiple-selection list to add or remove any portfolio or share, zoom with the horizontal controls or mouse wheel, and save the current view as PNG.
 
@@ -5699,7 +5735,7 @@ Choose the model to change the risk measure. Current is always highlighted, and 
 </details>
 
 <details markdown="1" open>
-<summary><strong>Figure 2.k. Directional return-spillover network</strong></summary>
+<summary><strong>Figure 2.o. Directional return-spillover network</strong></summary>
 
 A VAR(1) and a 10-observation generalized forecast-error variance decomposition are used, following the connectedness logic in [Kabašinskas (2024)](https://doi.org/10.1186/s13362-024-00144-x). An arrow from A to B is the percentage of B's forecast-error variance explained by shocks from A; only links of at least 2% are drawn. The result measures predictive connectedness, not a causal effect.
 
@@ -5742,7 +5778,7 @@ FROM is the share received from all other series. TO is the share transmitted to
 </details>
 
 <details markdown="1">
-<summary><strong>Figure 2.l. Rolling 120-observation Total Spillover Index</strong></summary>
+<summary><strong>Figure 2.p. Rolling 120-observation Total Spillover Index</strong></summary>
 
 The rolling index shows when cross-series connectedness rises or falls. Peaks indicate periods when forecast errors are explained more by shocks elsewhere in the system.
 
@@ -5751,7 +5787,7 @@ The rolling index shows when cross-series connectedness rises or falls. Peaks in
 </details>
 
 <details markdown="1" class="cumulative-components" open>
-<summary><strong>Figure 2.m. Interactive cumulative value and drawdowns</strong></summary>
+<summary><strong>Figure 2.q. Interactive cumulative value and drawdowns</strong></summary>
 
 Select any combination of portfolios, S&P 500 and individual shares. The upper panel shows the value of one monetary unit invested at the common starting date; the lower panel shows drawdown from each series' previous peak. Current and both update scenarios are selected initially.
 
