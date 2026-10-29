@@ -116,7 +116,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-29 11:10 (Europe/Vilnius); return analysis through 2026-10-28; valuation prices through 2026-10-28
+# Baltic investment plan - updated 2026-10-29 11:20 (Europe/Vilnius); return analysis through 2026-10-28; valuation prices through 2026-10-28
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -4071,7 +4071,7 @@ Choose the model to change the risk measure. Current is always highlighted, and 
 <details markdown="1" class="systemic-risk-section">
 <summary><strong>Systemic risk</strong></summary>
 
-The connectedness analysis follows the VAR/VECM and generalized forecast-error variance-decomposition logic used by [Kabašinskas (2024)](https://doi.org/10.1186/s13362-024-00144-x). The main network contains every investment-admissible share and the S&P 500; the portfolio network is retained as a secondary comparison. An arrow from A to B means that shocks in A explain part of B's forecast-error variance. An asterisk (*) after a value means that the A → B direction is significant in the corresponding Granger-causality test at 5%. Red nodes are net shock transmitters (TO − FROM > 0); blue nodes are net receivers.
+The connectedness analysis follows the VAR/VECM and generalized forecast-error variance-decomposition logic used by [Kabašinskas (2024)](https://doi.org/10.1186/s13362-024-00144-x). The main network contains every investment-admissible share and the S&P 500; the portfolio network is retained as a secondary comparison. The arrowhead identifies the direction: A → B means that shocks in A explain part of B's forecast-error variance. An asterisk (*) after a value means that this direction is significant in the corresponding Granger-causality test at 5%. Red nodes are net shock transmitters (TO − FROM > 0); blue nodes are net receivers. Node area increases with |TO − FROM|, so a larger node has a stronger net role.
 
 **Model-assumption checks are shown before the results.** ADF tests should reject a unit root for VAR returns. VECM requires non-stationary levels, stationary first differences and a cointegration rank strictly between zero and the number of variables. Stability is required for VAR. The residual-whiteness p-value should exceed 0.05. Multivariate normality fails in every case, which is common for financial returns but makes Gaussian small-sample inference less reliable. The 22-variable Johansen critical values are outside the tabulated range of the software, so the share VECM rank is exploratory. A failed row is displayed for comparison and must not be treated as a validated structural model.
 
@@ -4091,6 +4091,15 @@ The connectedness analysis follows the VAR/VECM and generalized forecast-error v
 <section><h4>VAR</h4><p>VAR is fitted to stationary daily returns with the BIC-selected lag. The shares VAR is stable but fails residual whiteness, so its network is descriptive. The portfolio VAR passes stability and whiteness.</p><p><strong>Shares and S&amp;P 500</strong></p><img src="figures/spillover_shares_var_network.png" alt="VAR spillover network for shares and S&amp;P 500"><p><strong>Portfolios and S&amp;P 500</strong></p><img src="figures/spillover_portfolios_var_network.png" alt="VAR spillover network for portfolios and S&amp;P 500"></section>
 <section><h4>VECM</h4><p>VECM is fitted to cumulative log-return levels. The share VECM has an exploratory positive rank but fails whiteness; the portfolio VECM rank is zero and therefore does not support a long-run equilibrium model.</p><p><strong>Shares and S&amp;P 500</strong></p><img src="figures/spillover_shares_vecm_network.png" alt="VECM spillover network for shares and S&amp;P 500"><p><strong>Portfolios and S&amp;P 500</strong></p><img src="figures/spillover_portfolios_vecm_network.png" alt="VECM spillover network for portfolios and S&amp;P 500"></section>
 </div>
+
+<details markdown="1" open>
+<summary><strong>Overall spillover for every model version</strong></summary>
+
+The Total Spillover Index is shown separately from the networks so the overall connectedness of every fitted VAR, VECM and corrected-volatility GARCH version can be compared directly. It is the average forecast-error variance share received from all other entities.
+
+![Overall spillover by model version](figures/spillover_overall_by_version.png)
+
+</details>
 
 <details markdown="1">
 <summary><strong>VAR directional and generalized-FEVD tables</strong></summary>
@@ -4241,7 +4250,7 @@ The filter excludes **RSU1L, TEL1L, TVE1T** from the GARCH/DCC system only. They
 
 #### Liquidity-corrected GARCH variance spillover
 
-Each retained series is fitted with a Student-t GARCH(1,1). A VAR is then fitted to the log conditional variances, and its 10-step generalized FEVD produces directional volatility spillovers. An arrow therefore describes predictive transmission between conditional variances. An asterisk marks variance Granger causality at 5%; red nodes are net volatility transmitters and blue nodes are net receivers.
+Each retained series is fitted with a Student-t GARCH(1,1). A VAR is then fitted to the log conditional variances, and its 10-step generalized FEVD produces directional volatility spillovers. The enlarged arrowhead shows the direction of predictive transmission between conditional variances. An asterisk marks variance Granger causality at 5%; red nodes are net volatility transmitters, blue nodes are net receivers, and node area increases with |TO − FROM|.
 
 ![Liquidity-corrected GARCH variance spillover](figures/garch_corrected_variance_spillover.png)
 
@@ -4274,13 +4283,16 @@ The corrected-volatility Total Spillover Index is **14.46%**. **17 of 19** univa
 
 </details>
 
-#### DCC-GARCH
+<details markdown="1">
+<summary><strong>DCC-GARCH</strong></summary>
 
 Following [Engle (2002)](https://doi.org/10.1198/073500102288618487), standardized residuals from the univariate GARCH models enter the two-step Dynamic Conditional Correlation recursion. DCC is an undirected conditional-dependence model: its links show changing co-movement and must not be read as Granger causality or directional shock transmission. The network displays the strongest 10% of absolute average DCC links; the time plot shows the mean absolute off-diagonal conditional correlation.
 
 ![DCC-GARCH network and dynamic mean correlation](figures/dcc_garch_network_and_dynamic_correlation.png)
 
 The estimated DCC parameters are α = **0.0070**, β = **0.0000**, and α + β = **0.0070**; optimiser convergence = **True**. The very small DCC persistence means that, after the stale-price correction, the estimated conditional-correlation system is close to a constant-correlation model with brief isolated spikes rather than a slowly evolving dependence process.
+
+</details>
 
 <details markdown="1">
 <summary><strong>Illiquidity filter audit and GARCH diagnostics</strong></summary>
