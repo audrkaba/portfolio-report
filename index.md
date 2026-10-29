@@ -121,7 +121,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-29 17:43 (Europe/Vilnius); return analysis through 2026-10-28; valuation prices through 2026-10-28
+# Baltic investment plan - updated 2026-10-29 17:46 (Europe/Vilnius); return analysis through 2026-10-28; valuation prices through 2026-10-28
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -4311,13 +4311,13 @@ The corrected-volatility Total Spillover Index is **14.46%**. **17 of 19** univa
 </details>
 
 <details markdown="1">
-<summary><strong>DCC-GARCH</strong></summary>
+<summary><strong>DCC-GARCH conditional correlations (not spillover)</strong></summary>
 
-Following [Engle (2002)](https://doi.org/10.1198/073500102288618487), standardized residuals from the univariate GARCH models enter the two-step Dynamic Conditional Correlation recursion. DCC is an undirected conditional-dependence model: its links show changing co-movement and must not be read as Granger causality or directional shock transmission. The network displays the strongest 10% of absolute average DCC links; the time plot shows the mean absolute off-diagonal conditional correlation.
+Following [Engle (2002)](https://doi.org/10.1198/073500102288618487), standardized residuals from the univariate GARCH models enter the two-step Dynamic Conditional Correlation recursion. DCC is an undirected conditional-dependence model and must not be read as Granger causality or directional shock transmission. The left panel is a hierarchically clustered heatmap of average conditional correlations. The upper-right panel shows their mean absolute strength through time; the lower-right panel shows the five pairs with the strongest average DCC. The parameters are estimated from six starting values to guard against a local boundary solution.
 
-![DCC-GARCH network and dynamic mean correlation](figures/dcc_garch_network_and_dynamic_correlation.png)
+![DCC-GARCH conditional-correlation heatmap and dynamics](figures/dcc_garch_network_and_dynamic_correlation.png)
 
-The estimated DCC parameters are α = **0.0070**, β = **0.0000**, and α + β = **0.0070**; optimiser convergence = **True**. The very small DCC persistence means that, after the stale-price correction, the estimated conditional-correlation system is close to a constant-correlation model with brief isolated spikes rather than a slowly evolving dependence process.
+The estimated DCC parameters are α = **0.0072**, β = **0.0000**, and α + β = **0.0072**; optimiser convergence = **True**. The very small DCC persistence means that, after the stale-price correction, the estimated conditional-correlation system is close to a constant-correlation model with brief isolated spikes rather than a slowly evolving dependence process.
 
 </details>
 
