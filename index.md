@@ -33,6 +33,8 @@ details details { background:white; }
 summary { cursor:pointer; padding:.65rem .1rem; color:#174d61; }
 summary:hover { color:var(--accent); }
 table { display:block; width:100%; overflow-x:auto; border-collapse:collapse; white-space:nowrap; font-size:.88rem; margin:.7rem 0 1rem; }
+table th { height:145px; padding:.28rem .18rem; text-align:center !important; vertical-align:bottom; writing-mode:vertical-rl; text-orientation:mixed; white-space:nowrap; }
+table th span { writing-mode:inherit !important; transform:none !important; white-space:nowrap; }
 .effect-table { display:table; table-layout:fixed; white-space:normal; font-size:.82rem; }
 .effect-table th:first-child,.effect-table td:first-child { width:22%; }
 .effect-table th,.effect-table td { overflow-wrap:anywhere; }
@@ -78,8 +80,8 @@ img { display:block; max-width:100%; height:auto; margin:1rem auto; border:1px s
 .dominance-controls label { display:grid; gap:3px; color:#29485a; font-size:.86rem; }
 .dominance-controls select,.dominance-controls input { width:100%; }
 .dominance-controls button { min-height:35px; border:1px solid #8aa6b2; border-radius:5px; color:#174d61; background:#eef7f8; cursor:pointer; }
-.dominance-multiselect-wrap { grid-column:span 3; }
-.dominance-multiselect { width:100%; min-height:190px; padding:.35rem; border:1px solid #8aa6b2; border-radius:6px; background:white; }
+.dominance-multiselect-wrap { grid-column:span 2; width:min(100%,520px); }
+.dominance-multiselect { width:100%; min-height:145px; padding:.35rem; border:1px solid #8aa6b2; border-radius:6px; background:white; }
 .dominance-multiselect optgroup { color:#173246; font-weight:700; }
 .dominance-multiselect option { color:#29485a; font-weight:400; padding:.18rem .35rem; }
 .dominance-compact-select { min-height:125px; height:125px; }
@@ -91,8 +93,8 @@ img { display:block; max-width:100%; height:auto; margin:1rem auto; border:1px s
 .frontier-controls label { display:grid; gap:3px; color:#29485a; font-size:.86rem; }
 .frontier-controls select,.frontier-controls input { width:100%; }
 .frontier-controls button { min-height:35px; border:1px solid #8aa6b2; border-radius:5px; color:#174d61; background:#eef7f8; cursor:pointer; }
-.frontier-multiselect-wrap { grid-column:span 3; display:grid; gap:.25rem; color:#29485a; font-size:.86rem; }
-.frontier-multiselect { width:100%; min-height:190px; padding:.35rem; border:1px solid #8aa6b2; border-radius:6px; background:white; }
+.frontier-multiselect-wrap { grid-column:span 2; display:grid; width:min(100%,520px); gap:.25rem; color:#29485a; font-size:.86rem; }
+.frontier-multiselect { width:100%; min-height:145px; padding:.35rem; border:1px solid #8aa6b2; border-radius:6px; background:white; }
 .frontier-multiselect optgroup { color:#173246; font-weight:700; }
 .frontier-multiselect option { color:#29485a; font-weight:400; padding:.18rem .35rem; }
 .frontier-select-help { color:#607080; font-size:.76rem; }
@@ -114,7 +116,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-29 10:58 (Europe/Vilnius); return analysis through 2026-10-28; valuation prices through 2026-10-28
+# Baltic investment plan - updated 2026-10-29 11:04 (Europe/Vilnius); return analysis through 2026-10-28; valuation prices through 2026-10-28
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -4066,7 +4068,8 @@ Choose the model to change the risk measure. Current is always highlighted, and 
 
 </details>
 
-### Systemic risk
+<details markdown="1" class="systemic-risk-section">
+<summary><strong>Systemic risk</strong></summary>
 
 The connectedness analysis follows the VAR/VECM and generalized forecast-error variance-decomposition logic used by [Kabašinskas (2024)](https://doi.org/10.1186/s13362-024-00144-x). The main network contains every investment-admissible share and the S&P 500; the portfolio network is retained as a secondary comparison. An arrow from A to B means that shocks in A explain part of B's forecast-error variance. An asterisk (*) after a value means that the A → B direction is significant in the corresponding Granger-causality test at 5%. Red nodes are net shock transmitters (TO − FROM > 0); blue nodes are net receivers.
 
@@ -4226,6 +4229,8 @@ The connectedness analysis follows the VAR/VECM and generalized forecast-error v
 | Update2: sales allowed | 68.41 | 69.51 | 1.09 | Transmitter |
 | Update2: no sales | 61.67 | 50.49 | -11.18 | Receiver |
 | S&P 500 | 5.57 | 2.43 | -3.14 | Receiver |
+
+</details>
 
 </details>
 
@@ -4537,6 +4542,17 @@ document.addEventListener('click',function(event){
   if(event.target===metricModal||event.target.closest('.metric-modal-close'))closeMetricModal();
 });
 document.addEventListener('keydown',function(event){if(event.key==='Escape')closeMetricModal();});
+document.querySelectorAll('table.scenario-period-table').forEach(function(table){
+  const directions={3:1,4:1,5:-1,6:1,7:1,8:-1,9:-1,10:1,11:-1,12:1};
+  const rows=[...table.tBodies[0].rows];
+  Object.entries(directions).forEach(([columnText,direction])=>{
+    const column=Number(columnText), cells=rows.map(row=>row.cells[column]);
+    const values=cells.map(cell=>Number.parseFloat(cell.textContent.replace(/[^0-9eE+.-]/g,'')));
+    const finite=values.filter(Number.isFinite); if(!finite.length)return;
+    const minimum=Math.min(...finite),maximum=Math.max(...finite),spread=maximum-minimum;
+    cells.forEach((cell,index)=>{if(!Number.isFinite(values[index]))return;let score=spread?((values[index]-minimum)/spread):.5;if(direction<0)score=1-score;const hue=120*score;cell.style.backgroundColor=`hsl(${hue} 68% 82%)`;cell.style.color='#17212b';cell.title=`Investor-benefit score within this column: ${(100*score).toFixed(0)}%`;} );
+  });
+});
 document.querySelectorAll('details.stock-profile').forEach(function(profile) {
   profile.addEventListener('toggle', function() {
     if (!profile.open) return;
@@ -4646,7 +4662,7 @@ function initialiseDominanceExplorer(box) {
       function yrange(i0,i1,keys=names) { let mn=Infinity,mx=-Infinity; keys.forEach(k=>{for(let i=i0;i<=i1;i++){const v=d.series[k][i];if(v<mn)mn=v;if(v>mx)mx=v;}}); if(mx===mn){mx+=1;mn-=1} return [mn,mx]; }
       function arrayRange(a,i0,i1){let mn=Infinity,mx=-Infinity;for(let i=i0;i<=i1;i++){if(a[i]<mn)mn=a[i];if(a[i]>mx)mx=a[i];}if(mx===mn){mx+=1;mn-=1}return[mn,mx];}
       function differenceRange(i0,i1){let mn=Infinity,mx=-Infinity;comparisonNames.forEach(k=>{const r=arrayRange(differences[k],i0,i1);mn=Math.min(mn,r[0]);mx=Math.max(mx,r[1]);});if(mx===mn){mx+=1;mn-=1}return[mn,mx];}
-      function axes(p,x0,x1,y0,y1,label) { ctx.strokeStyle='#9aabb5';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(p.l,p.t);ctx.lineTo(p.l,p.b);ctx.lineTo(p.r,p.b);ctx.stroke();ctx.fillStyle='#263d4b';ctx.fillText(label,p.l,p.t-9); for(let j=0;j<=6;j++){const xx=p.l+(p.r-p.l)*j/6,xv=x0+(x1-x0)*j/6;ctx.fillText(xv.toFixed(5),xx-22,p.b+17);} for(let j=0;j<=5;j++){const yy=p.b-(p.b-p.t)*j/5,yv=y0+(y1-y0)*j/5;ctx.fillText(yv.toExponential(2),Math.max(1,p.l-62),yy+4);} if(x0<=0&&x1>=0){const zx=p.l+(0-x0)/(x1-x0)*(p.r-p.l);ctx.strokeStyle='#17212b';ctx.lineWidth=2;ctx.setLineDash([6,4]);ctx.beginPath();ctx.moveTo(zx,p.t);ctx.lineTo(zx,p.b);ctx.stroke();ctx.setLineDash([]);ctx.fillStyle='#17212b';ctx.font='bold 13px system-ui';ctx.fillText('x = 0',zx+5,p.t+14);ctx.font='12px system-ui';} if(y0<=0&&y1>=0){const zy=p.b-(0-y0)/(y1-y0)*(p.b-p.t);ctx.strokeStyle='#17212b';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(p.l,zy);ctx.lineTo(p.r,zy);ctx.stroke();ctx.fillStyle='#17212b';ctx.font='bold 13px system-ui';ctx.fillText('0',p.l-15,zy+4);ctx.font='12px system-ui';} }
+      function axes(p,x0,x1,y0,y1,label) { ctx.strokeStyle='#9aabb5';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(p.l,p.t);ctx.lineTo(p.l,p.b);ctx.lineTo(p.r,p.b);ctx.stroke();ctx.fillStyle='#263d4b';ctx.fillText(label,p.l,p.t-9); for(let j=0;j<=6;j++){const xx=p.l+(p.r-p.l)*j/6,xv=x0+(x1-x0)*j/6;ctx.fillText(xv.toFixed(5),xx-22,p.b+17);} for(let j=0;j<=5;j++){const yy=p.b-(p.b-p.t)*j/5,yv=y0+(y1-y0)*j/5;ctx.fillText(yv.toExponential(2),Math.max(1,p.l-62),yy+4);} if(x0<=0&&x1>=0){const zx=p.l+(0-x0)/(x1-x0)*(p.r-p.l);ctx.strokeStyle='#17212b';ctx.lineWidth=2;ctx.setLineDash([6,4]);ctx.beginPath();ctx.moveTo(zx,p.t);ctx.lineTo(zx,p.b);ctx.stroke();ctx.setLineDash([]);} if(y0<=0&&y1>=0){const zy=p.b-(0-y0)/(y1-y0)*(p.b-p.t);ctx.strokeStyle='#17212b';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(p.l,zy);ctx.lineTo(p.r,zy);ctx.stroke();ctx.fillStyle='#17212b';ctx.font='bold 13px system-ui';ctx.fillText('0',p.l-15,zy+4);ctx.font='12px system-ui';} }
       function seriesStyle(k,ki){
         if(k===baseName)return{colour:profile==='Portfolio'?'#111111':'#c2185b',dash:[],width:3.6,alpha:1};
         if(k==='Current')return{colour:'#009e73',dash:[12,5],width:3.0,alpha:1};
