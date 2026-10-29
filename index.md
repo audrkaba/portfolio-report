@@ -121,7 +121,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-29 17:23 (Europe/Vilnius); return analysis through 2026-10-28; valuation prices through 2026-10-28
+# Baltic investment plan - updated 2026-10-29 17:32 (Europe/Vilnius); return analysis through 2026-10-28; valuation prices through 2026-10-28
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -377,17 +377,17 @@ Click a measure name to see what it means, how it is calculated, and whether a h
 <details markdown="1" class="portfolio-sensitivity">
 <summary>Portfolio sensitivity</summary>
 
-**Removing this share from curent_update_baltic**
+**Removing this share from Update2 penalty: no sales**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.703390</td><td>-0.110169</td></tr><tr><td>OUT</td><td>96</td><td>83</td><td>-13</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.141760</td><td>-0.006013</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.132985</td><td>-0.028508</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Update2 no-sales target</th><th>Target without share</th><th>Change</th></tr></thead><tbody><tr><td>VLP1L shares</td><td>418</td><td>0</td><td>-418</td></tr><tr><td>netSD</td><td>0.756303</td><td>0.462185</td><td>-0.294118</td></tr><tr><td>OUT</td><td>90</td><td>67</td><td>-23</td></tr><tr><td>IN</td><td>0</td><td>12</td><td>+12</td></tr><tr><td>Rachev ratio</td><td>1.310773</td><td>1.054503</td><td>-0.256269</td></tr><tr><td>Sortino ratio</td><td>0.184849</td><td>0.079194</td><td>-0.105655</td></tr></tbody></table>
 
-The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
+This diagnostic starts from the canonical Table 1.a target of 418 VLP1L shares, removes all 418, and distributes the removed weight proportionally across the remaining target holdings. It is a sensitivity test, not a recommendation to sell.
 
 **Increasing this existing position in the current portfolio**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>VLP1L shares</td><td>42</td><td>418</td><td>+376</td></tr><tr><td>Portfolio value, EUR</td><td>9077.814812</td><td>14999.814812</td><td>5922.000000</td></tr><tr><td>netSD</td><td>0.613445</td><td>0.756303</td><td>0.142857</td></tr><tr><td>OUT</td><td>73</td><td>90</td><td>+17</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.060654</td><td>1.310773</td><td>0.250119</td></tr><tr><td>Sortino ratio</td><td>0.105771</td><td>0.184849</td><td>0.079078</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 42 VLP1L shares. The scenario adds 376 shares from Table 1.a, resulting in 418 shares; every other holding remains unchanged.
+This is a different starting point from the removal diagnostic: it starts from the unmodified current portfolio with 42 VLP1L shares. Table 1.a changes that holding by +376, producing 418 shares. Thus the identity is 42 +376 = 418; every other current holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -643,17 +643,17 @@ Click a measure name to see what it means, how it is calculated, and whether a h
 <details markdown="1" class="portfolio-sensitivity">
 <summary>Portfolio sensitivity</summary>
 
-**Removing this share from curent_update_baltic**
+**Removing this share from Update2 penalty: no sales**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.771186</td><td>-0.042373</td></tr><tr><td>OUT</td><td>96</td><td>91</td><td>-5</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.151322</td><td>0.003548</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.152410</td><td>-0.009082</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Update2 no-sales target</th><th>Target without share</th><th>Change</th></tr></thead><tbody><tr><td>KNE1L shares</td><td>928</td><td>0</td><td>-928</td></tr><tr><td>netSD</td><td>0.756303</td><td>0.747899</td><td>-0.008403</td></tr><tr><td>OUT</td><td>90</td><td>89</td><td>-1</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.310773</td><td>1.307859</td><td>-0.002914</td></tr><tr><td>Sortino ratio</td><td>0.184849</td><td>0.180736</td><td>-0.004113</td></tr></tbody></table>
 
-The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
+This diagnostic starts from the canonical Table 1.a target of 928 KNE1L shares, removes all 928, and distributes the removed weight proportionally across the remaining target holdings. It is a sensitivity test, not a recommendation to sell.
 
-**Increasing this existing position in the current portfolio**
+**Keeping this existing position unchanged in the current portfolio**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>KNE1L shares</td><td>928</td><td>928</td><td>+0</td></tr><tr><td>Portfolio value, EUR</td><td>9077.814812</td><td>9077.814812</td><td>0.000000</td></tr><tr><td>netSD</td><td>0.613445</td><td>0.613445</td><td>0.000000</td></tr><tr><td>OUT</td><td>73</td><td>73</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.060654</td><td>1.060654</td><td>0.000000</td></tr><tr><td>Sortino ratio</td><td>0.105771</td><td>0.105771</td><td>0.000000</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 928 KNE1L shares. The scenario adds 0 shares from Table 1.a, resulting in 928 shares; every other holding remains unchanged.
+This is a different starting point from the removal diagnostic: it starts from the unmodified current portfolio with 928 KNE1L shares. Table 1.a changes that holding by +0, producing 928 shares. Thus the identity is 928 +0 = 928; every other current holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -928,17 +928,17 @@ Click a measure name to see what it means, how it is calculated, and whether a h
 <details markdown="1" class="portfolio-sensitivity">
 <summary>Portfolio sensitivity</summary>
 
-**Removing this share from curent_update_baltic**
+**Removing this share from Update2 penalty: no sales**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.779661</td><td>-0.033898</td></tr><tr><td>OUT</td><td>96</td><td>92</td><td>-4</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.128075</td><td>-0.019698</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.150343</td><td>-0.011150</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Update2 no-sales target</th><th>Target without share</th><th>Change</th></tr></thead><tbody><tr><td>MRK1T shares</td><td>20</td><td>0</td><td>-20</td></tr><tr><td>netSD</td><td>0.756303</td><td>0.747899</td><td>-0.008403</td></tr><tr><td>OUT</td><td>90</td><td>89</td><td>-1</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.310773</td><td>1.313148</td><td>0.002376</td></tr><tr><td>Sortino ratio</td><td>0.184849</td><td>0.180345</td><td>-0.004504</td></tr></tbody></table>
 
-The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
+This diagnostic starts from the canonical Table 1.a target of 20 MRK1T shares, removes all 20, and distributes the removed weight proportionally across the remaining target holdings. It is a sensitivity test, not a recommendation to sell.
 
-**Increasing this existing position in the current portfolio**
+**Keeping this existing position unchanged in the current portfolio**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>MRK1T shares</td><td>20</td><td>20</td><td>+0</td></tr><tr><td>Portfolio value, EUR</td><td>9077.814812</td><td>9077.814812</td><td>0.000000</td></tr><tr><td>netSD</td><td>0.613445</td><td>0.613445</td><td>0.000000</td></tr><tr><td>OUT</td><td>73</td><td>73</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.060654</td><td>1.060654</td><td>0.000000</td></tr><tr><td>Sortino ratio</td><td>0.105771</td><td>0.105771</td><td>0.000000</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 20 MRK1T shares. The scenario adds 0 shares from Table 1.a, resulting in 20 shares; every other holding remains unchanged.
+This is a different starting point from the removal diagnostic: it starts from the unmodified current portfolio with 20 MRK1T shares. Table 1.a changes that holding by +0, producing 20 shares. Thus the identity is 20 +0 = 20; every other current holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -1240,17 +1240,17 @@ Click a measure name to see what it means, how it is calculated, and whether a h
 <details markdown="1" class="portfolio-sensitivity">
 <summary>Portfolio sensitivity</summary>
 
-**Removing this share from curent_update_baltic**
+**Removing this share from Update2 penalty: no sales**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.745763</td><td>-0.067797</td></tr><tr><td>OUT</td><td>96</td><td>88</td><td>-8</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.171927</td><td>0.024153</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.150793</td><td>-0.010699</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Update2 no-sales target</th><th>Target without share</th><th>Change</th></tr></thead><tbody><tr><td>APG1L shares</td><td>200</td><td>0</td><td>-200</td></tr><tr><td>netSD</td><td>0.756303</td><td>0.747899</td><td>-0.008403</td></tr><tr><td>OUT</td><td>90</td><td>89</td><td>-1</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.310773</td><td>1.324048</td><td>0.013276</td></tr><tr><td>Sortino ratio</td><td>0.184849</td><td>0.179796</td><td>-0.005053</td></tr></tbody></table>
 
-The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
+This diagnostic starts from the canonical Table 1.a target of 200 APG1L shares, removes all 200, and distributes the removed weight proportionally across the remaining target holdings. It is a sensitivity test, not a recommendation to sell.
 
-**Increasing this existing position in the current portfolio**
+**Keeping this existing position unchanged in the current portfolio**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>APG1L shares</td><td>200</td><td>200</td><td>+0</td></tr><tr><td>Portfolio value, EUR</td><td>9077.814812</td><td>9077.814812</td><td>0.000000</td></tr><tr><td>netSD</td><td>0.613445</td><td>0.613445</td><td>0.000000</td></tr><tr><td>OUT</td><td>73</td><td>73</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.060654</td><td>1.060654</td><td>0.000000</td></tr><tr><td>Sortino ratio</td><td>0.105771</td><td>0.105771</td><td>0.000000</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 200 APG1L shares. The scenario adds 0 shares from Table 1.a, resulting in 200 shares; every other holding remains unchanged.
+This is a different starting point from the removal diagnostic: it starts from the unmodified current portfolio with 200 APG1L shares. Table 1.a changes that holding by +0, producing 200 shares. Thus the identity is 200 +0 = 200; every other current holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -1469,17 +1469,17 @@ Click a measure name to see what it means, how it is calculated, and whether a h
 <details markdown="1" class="portfolio-sensitivity">
 <summary>Portfolio sensitivity</summary>
 
-**Removing this share from curent_update_baltic**
+**Removing this share from Update2 penalty: no sales**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.788136</td><td>-0.025424</td></tr><tr><td>OUT</td><td>96</td><td>93</td><td>-3</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.148627</td><td>0.000853</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.157428</td><td>-0.004064</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Update2 no-sales target</th><th>Target without share</th><th>Change</th></tr></thead><tbody><tr><td>GRG1L shares</td><td>543</td><td>0</td><td>-543</td></tr><tr><td>netSD</td><td>0.756303</td><td>0.747899</td><td>-0.008403</td></tr><tr><td>OUT</td><td>90</td><td>89</td><td>-1</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.310773</td><td>1.310508</td><td>-0.000265</td></tr><tr><td>Sortino ratio</td><td>0.184849</td><td>0.182519</td><td>-0.002330</td></tr></tbody></table>
 
-The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
+This diagnostic starts from the canonical Table 1.a target of 543 GRG1L shares, removes all 543, and distributes the removed weight proportionally across the remaining target holdings. It is a sensitivity test, not a recommendation to sell.
 
-**Increasing this existing position in the current portfolio**
+**Keeping this existing position unchanged in the current portfolio**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>GRG1L shares</td><td>543</td><td>543</td><td>+0</td></tr><tr><td>Portfolio value, EUR</td><td>9077.814812</td><td>9077.814812</td><td>0.000000</td></tr><tr><td>netSD</td><td>0.613445</td><td>0.613445</td><td>0.000000</td></tr><tr><td>OUT</td><td>73</td><td>73</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.060654</td><td>1.060654</td><td>0.000000</td></tr><tr><td>Sortino ratio</td><td>0.105771</td><td>0.105771</td><td>0.000000</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 543 GRG1L shares. The scenario adds 0 shares from Table 1.a, resulting in 543 shares; every other holding remains unchanged.
+This is a different starting point from the removal diagnostic: it starts from the unmodified current portfolio with 543 GRG1L shares. Table 1.a changes that holding by +0, producing 543 shares. Thus the identity is 543 +0 = 543; every other current holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -1721,17 +1721,17 @@ Click a measure name to see what it means, how it is calculated, and whether a h
 <details markdown="1" class="portfolio-sensitivity">
 <summary>Portfolio sensitivity</summary>
 
-**Removing this share from curent_update_baltic**
+**Removing this share from Update2 penalty: no sales**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.796610</td><td>-0.016949</td></tr><tr><td>OUT</td><td>96</td><td>94</td><td>-2</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.162612</td><td>0.014839</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.158856</td><td>-0.002636</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Update2 no-sales target</th><th>Target without share</th><th>Change</th></tr></thead><tbody><tr><td>RSU1L shares</td><td>50</td><td>0</td><td>-50</td></tr><tr><td>netSD</td><td>0.756303</td><td>0.756303</td><td>0.000000</td></tr><tr><td>OUT</td><td>90</td><td>90</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.310773</td><td>1.314287</td><td>0.003514</td></tr><tr><td>Sortino ratio</td><td>0.184849</td><td>0.183824</td><td>-0.001025</td></tr></tbody></table>
 
-The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
+This diagnostic starts from the canonical Table 1.a target of 50 RSU1L shares, removes all 50, and distributes the removed weight proportionally across the remaining target holdings. It is a sensitivity test, not a recommendation to sell.
 
-**Increasing this existing position in the current portfolio**
+**Keeping this existing position unchanged in the current portfolio**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>RSU1L shares</td><td>50</td><td>50</td><td>+0</td></tr><tr><td>Portfolio value, EUR</td><td>9077.814812</td><td>9077.814812</td><td>0.000000</td></tr><tr><td>netSD</td><td>0.613445</td><td>0.613445</td><td>0.000000</td></tr><tr><td>OUT</td><td>73</td><td>73</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.060654</td><td>1.060654</td><td>0.000000</td></tr><tr><td>Sortino ratio</td><td>0.105771</td><td>0.105771</td><td>0.000000</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 50 RSU1L shares. The scenario adds 0 shares from Table 1.a, resulting in 50 shares; every other holding remains unchanged.
+This is a different starting point from the removal diagnostic: it starts from the unmodified current portfolio with 50 RSU1L shares. Table 1.a changes that holding by +0, producing 50 shares. Thus the identity is 50 +0 = 50; every other current holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -1994,17 +1994,17 @@ Click a measure name to see what it means, how it is calculated, and whether a h
 <details markdown="1" class="portfolio-sensitivity">
 <summary>Portfolio sensitivity</summary>
 
-**Removing this share from curent_update_baltic**
+**Removing this share from Update2 penalty: no sales**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.813559</td><td>0.000000</td></tr><tr><td>OUT</td><td>96</td><td>96</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.152716</td><td>0.004942</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.162213</td><td>0.000721</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Update2 no-sales target</th><th>Target without share</th><th>Change</th></tr></thead><tbody><tr><td>ROE1L shares</td><td>416</td><td>0</td><td>-416</td></tr><tr><td>netSD</td><td>0.756303</td><td>0.756303</td><td>0.000000</td></tr><tr><td>OUT</td><td>90</td><td>90</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.310773</td><td>1.309596</td><td>-0.001176</td></tr><tr><td>Sortino ratio</td><td>0.184849</td><td>0.184786</td><td>-0.000063</td></tr></tbody></table>
 
-The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
+This diagnostic starts from the canonical Table 1.a target of 416 ROE1L shares, removes all 416, and distributes the removed weight proportionally across the remaining target holdings. It is a sensitivity test, not a recommendation to sell.
 
-**Increasing this existing position in the current portfolio**
+**Keeping this existing position unchanged in the current portfolio**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>ROE1L shares</td><td>416</td><td>416</td><td>+0</td></tr><tr><td>Portfolio value, EUR</td><td>9077.814812</td><td>9077.814812</td><td>0.000000</td></tr><tr><td>netSD</td><td>0.613445</td><td>0.613445</td><td>0.000000</td></tr><tr><td>OUT</td><td>73</td><td>73</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.060654</td><td>1.060654</td><td>0.000000</td></tr><tr><td>Sortino ratio</td><td>0.105771</td><td>0.105771</td><td>0.000000</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 416 ROE1L shares. The scenario adds 0 shares from Table 1.a, resulting in 416 shares; every other holding remains unchanged.
+This is a different starting point from the removal diagnostic: it starts from the unmodified current portfolio with 416 ROE1L shares. Table 1.a changes that holding by +0, producing 416 shares. Thus the identity is 416 +0 = 416; every other current holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -2283,17 +2283,17 @@ Click a measure name to see what it means, how it is calculated, and whether a h
 <details markdown="1" class="portfolio-sensitivity">
 <summary>Portfolio sensitivity</summary>
 
-**Removing this share from curent_update_baltic**
+**Removing this share from Update2 penalty: no sales**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.805085</td><td>-0.008475</td></tr><tr><td>OUT</td><td>96</td><td>95</td><td>-1</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.157178</td><td>0.009405</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.161875</td><td>0.000383</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Update2 no-sales target</th><th>Target without share</th><th>Change</th></tr></thead><tbody><tr><td>TAL1T shares</td><td>700</td><td>0</td><td>-700</td></tr><tr><td>netSD</td><td>0.756303</td><td>0.756303</td><td>0.000000</td></tr><tr><td>OUT</td><td>90</td><td>90</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.310773</td><td>1.312019</td><td>0.001247</td></tr><tr><td>Sortino ratio</td><td>0.184849</td><td>0.184617</td><td>-0.000231</td></tr></tbody></table>
 
-The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
+This diagnostic starts from the canonical Table 1.a target of 700 TAL1T shares, removes all 700, and distributes the removed weight proportionally across the remaining target holdings. It is a sensitivity test, not a recommendation to sell.
 
-**Increasing this existing position in the current portfolio**
+**Keeping this existing position unchanged in the current portfolio**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>TAL1T shares</td><td>700</td><td>700</td><td>+0</td></tr><tr><td>Portfolio value, EUR</td><td>9077.814812</td><td>9077.814812</td><td>0.000000</td></tr><tr><td>netSD</td><td>0.613445</td><td>0.613445</td><td>0.000000</td></tr><tr><td>OUT</td><td>73</td><td>73</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.060654</td><td>1.060654</td><td>0.000000</td></tr><tr><td>Sortino ratio</td><td>0.105771</td><td>0.105771</td><td>0.000000</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 700 TAL1T shares. The scenario adds 0 shares from Table 1.a, resulting in 700 shares; every other holding remains unchanged.
+This is a different starting point from the removal diagnostic: it starts from the unmodified current portfolio with 700 TAL1T shares. Table 1.a changes that holding by +0, producing 700 shares. Thus the identity is 700 +0 = 700; every other current holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -2565,17 +2565,17 @@ Click a measure name to see what it means, how it is calculated, and whether a h
 <details markdown="1" class="portfolio-sensitivity">
 <summary>Portfolio sensitivity</summary>
 
-**Removing this share from curent_update_baltic**
+**Removing this share from Update2 penalty: no sales**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.762712</td><td>-0.050847</td></tr><tr><td>OUT</td><td>96</td><td>90</td><td>-6</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.207303</td><td>0.059529</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.181595</td><td>0.020102</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Update2 no-sales target</th><th>Target without share</th><th>Change</th></tr></thead><tbody><tr><td>TKM1T shares</td><td>288</td><td>0</td><td>-288</td></tr><tr><td>netSD</td><td>0.756303</td><td>0.672269</td><td>-0.084034</td></tr><tr><td>OUT</td><td>90</td><td>80</td><td>-10</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.310773</td><td>1.326216</td><td>0.015443</td></tr><tr><td>Sortino ratio</td><td>0.184849</td><td>0.191583</td><td>0.006734</td></tr></tbody></table>
 
-The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
+This diagnostic starts from the canonical Table 1.a target of 288 TKM1T shares, removes all 288, and distributes the removed weight proportionally across the remaining target holdings. It is a sensitivity test, not a recommendation to sell.
 
-**Increasing this existing position in the current portfolio**
+**Keeping this existing position unchanged in the current portfolio**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>TKM1T shares</td><td>288</td><td>288</td><td>+0</td></tr><tr><td>Portfolio value, EUR</td><td>9077.814812</td><td>9077.814812</td><td>0.000000</td></tr><tr><td>netSD</td><td>0.613445</td><td>0.613445</td><td>0.000000</td></tr><tr><td>OUT</td><td>73</td><td>73</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.060654</td><td>1.060654</td><td>0.000000</td></tr><tr><td>Sortino ratio</td><td>0.105771</td><td>0.105771</td><td>0.000000</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 288 TKM1T shares. The scenario adds 0 shares from Table 1.a, resulting in 288 shares; every other holding remains unchanged.
+This is a different starting point from the removal diagnostic: it starts from the unmodified current portfolio with 288 TKM1T shares. Table 1.a changes that holding by +0, producing 288 shares. Thus the identity is 288 +0 = 288; every other current holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -2850,17 +2850,17 @@ Click a measure name to see what it means, how it is calculated, and whether a h
 <details markdown="1" class="portfolio-sensitivity">
 <summary>Portfolio sensitivity</summary>
 
-**Removing this share from curent_update_baltic**
+**Removing this share from Update2 penalty: no sales**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.813559</td><td>0.000000</td></tr><tr><td>OUT</td><td>96</td><td>96</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.141945</td><td>-0.005829</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.161638</td><td>0.000145</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Update2 no-sales target</th><th>Target without share</th><th>Change</th></tr></thead><tbody><tr><td>HAE1T shares</td><td>100</td><td>0</td><td>-100</td></tr><tr><td>netSD</td><td>0.756303</td><td>0.747899</td><td>-0.008403</td></tr><tr><td>OUT</td><td>90</td><td>89</td><td>-1</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.310773</td><td>1.311389</td><td>0.000617</td></tr><tr><td>Sortino ratio</td><td>0.184849</td><td>0.185577</td><td>0.000728</td></tr></tbody></table>
 
-The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
+This diagnostic starts from the canonical Table 1.a target of 100 HAE1T shares, removes all 100, and distributes the removed weight proportionally across the remaining target holdings. It is a sensitivity test, not a recommendation to sell.
 
-**Increasing this existing position in the current portfolio**
+**Keeping this existing position unchanged in the current portfolio**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>HAE1T shares</td><td>100</td><td>100</td><td>+0</td></tr><tr><td>Portfolio value, EUR</td><td>9077.814812</td><td>9077.814812</td><td>0.000000</td></tr><tr><td>netSD</td><td>0.613445</td><td>0.613445</td><td>0.000000</td></tr><tr><td>OUT</td><td>73</td><td>73</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.060654</td><td>1.060654</td><td>0.000000</td></tr><tr><td>Sortino ratio</td><td>0.105771</td><td>0.105771</td><td>0.000000</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 100 HAE1T shares. The scenario adds 0 shares from Table 1.a, resulting in 100 shares; every other holding remains unchanged.
+This is a different starting point from the removal diagnostic: it starts from the unmodified current portfolio with 100 HAE1T shares. Table 1.a changes that holding by +0, producing 100 shares. Thus the identity is 100 +0 = 100; every other current holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -3119,17 +3119,17 @@ Click a measure name to see what it means, how it is calculated, and whether a h
 <details markdown="1" class="portfolio-sensitivity">
 <summary>Portfolio sensitivity</summary>
 
-**Removing this share from curent_update_baltic**
+**Removing this share from Update2 penalty: no sales**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.796610</td><td>-0.016949</td></tr><tr><td>OUT</td><td>96</td><td>94</td><td>-2</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.190075</td><td>0.042301</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.168744</td><td>0.007252</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Update2 no-sales target</th><th>Target without share</th><th>Change</th></tr></thead><tbody><tr><td>SAF1R shares</td><td>100</td><td>0</td><td>-100</td></tr><tr><td>netSD</td><td>0.756303</td><td>0.705882</td><td>-0.050420</td></tr><tr><td>OUT</td><td>90</td><td>84</td><td>-6</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.310773</td><td>1.337942</td><td>0.027170</td></tr><tr><td>Sortino ratio</td><td>0.184849</td><td>0.184889</td><td>0.000040</td></tr></tbody></table>
 
-The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
+This diagnostic starts from the canonical Table 1.a target of 100 SAF1R shares, removes all 100, and distributes the removed weight proportionally across the remaining target holdings. It is a sensitivity test, not a recommendation to sell.
 
-**Increasing this existing position in the current portfolio**
+**Keeping this existing position unchanged in the current portfolio**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>SAF1R shares</td><td>100</td><td>100</td><td>+0</td></tr><tr><td>Portfolio value, EUR</td><td>9077.814812</td><td>9077.814812</td><td>0.000000</td></tr><tr><td>netSD</td><td>0.613445</td><td>0.613445</td><td>0.000000</td></tr><tr><td>OUT</td><td>73</td><td>73</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.060654</td><td>1.060654</td><td>0.000000</td></tr><tr><td>Sortino ratio</td><td>0.105771</td><td>0.105771</td><td>0.000000</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 100 SAF1R shares. The scenario adds 0 shares from Table 1.a, resulting in 100 shares; every other holding remains unchanged.
+This is a different starting point from the removal diagnostic: it starts from the unmodified current portfolio with 100 SAF1R shares. Table 1.a changes that holding by +0, producing 100 shares. Thus the identity is 100 +0 = 100; every other current holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -3398,17 +3398,17 @@ Click a measure name to see what it means, how it is calculated, and whether a h
 <details markdown="1" class="portfolio-sensitivity">
 <summary>Portfolio sensitivity</summary>
 
-**Removing this share from curent_update_baltic**
+**Removing this share from Update2 penalty: no sales**
 
-<table class="effect-table"><thead><tr><th>Measure</th><th>Full portfolio</th><th>Portfolio without share</th><th>Change</th></tr></thead><tbody><tr><td>netSD</td><td>0.813559</td><td>0.813559</td><td>0.000000</td></tr><tr><td>OUT</td><td>96</td><td>96</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.147773</td><td>1.155889</td><td>0.008116</td></tr><tr><td>Sortino ratio</td><td>0.161492</td><td>0.165547</td><td>0.004054</td></tr></tbody></table>
+<table class="effect-table"><thead><tr><th>Measure</th><th>Update2 no-sales target</th><th>Target without share</th><th>Change</th></tr></thead><tbody><tr><td>TSM1T shares</td><td>330</td><td>0</td><td>-330</td></tr><tr><td>netSD</td><td>0.756303</td><td>0.756303</td><td>0.000000</td></tr><tr><td>OUT</td><td>90</td><td>90</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.310773</td><td>1.311335</td><td>0.000563</td></tr><tr><td>Sortino ratio</td><td>0.184849</td><td>0.187345</td><td>0.002497</td></tr></tbody></table>
 
-The removed weight is distributed proportionally across all remaining holdings, so their weights still sum to 1.
+This diagnostic starts from the canonical Table 1.a target of 330 TSM1T shares, removes all 330, and distributes the removed weight proportionally across the remaining target holdings. It is a sensitivity test, not a recommendation to sell.
 
-**Increasing this existing position in the current portfolio**
+**Keeping this existing position unchanged in the current portfolio**
 
 <table class="effect-table"><thead><tr><th>Measure</th><th>Current portfolio</th><th>After adding share</th><th>Change</th></tr></thead><tbody><tr><td>TSM1T shares</td><td>330</td><td>330</td><td>+0</td></tr><tr><td>Portfolio value, EUR</td><td>9077.814812</td><td>9077.814812</td><td>0.000000</td></tr><tr><td>netSD</td><td>0.613445</td><td>0.613445</td><td>0.000000</td></tr><tr><td>OUT</td><td>73</td><td>73</td><td>+0</td></tr><tr><td>IN</td><td>0</td><td>0</td><td>+0</td></tr><tr><td>Rachev ratio</td><td>1.060654</td><td>1.060654</td><td>0.000000</td></tr><tr><td>Sortino ratio</td><td>0.105771</td><td>0.105771</td><td>0.000000</td></tr></tbody></table>
 
-The starting point is the unmodified current portfolio, which already contains 330 TSM1T shares. The scenario adds 0 shares from Table 1.a, resulting in 330 shares; every other holding remains unchanged.
+This is a different starting point from the removal diagnostic: it starts from the unmodified current portfolio with 330 TSM1T shares. Table 1.a changes that holding by +0, producing 330 shares. Thus the identity is 330 +0 = 330; every other current holding remains unchanged.
 
 <details markdown="1" class="dominance-components">
 <summary>FSD, SSD and TSD components versus Baltic portfolios</summary>
@@ -3840,39 +3840,28 @@ The first experiment starts from the same unmodified current portfolio and adds 
 
 ### Removing one share from the no-sales update
 
-Each scenario removes one share from curent_update_baltic and proportionally rescales the remaining weights. Positive delta means that the ratio improves after removal; negative delta means that the removed share was beneficial for that criterion.
+Each scenario starts from the same canonical Update2 penalty no-sales target used in Table 1.a, removes the complete target position in one share, and proportionally rescales the remaining target weights. Positive delta means that the ratio improves after removal; negative delta means that the removed share was beneficial for that criterion.
 
-**Main result.** Removing **AKO1L** produces the largest netSD change (+0.000000); removing **TKM1T** gives the largest Rachev improvement (+0.059529); removing **TKM1T** gives the largest Sortino improvement (+0.020102). These are sensitivity results, not automatically new trade recommendations, because the three criteria can move in opposite directions.
+**Main result.** Removing **ROE1L** produces the largest netSD change (+0.000000); removing **SAF1R** gives the largest Rachev improvement (+0.027170); removing **TKM1T** gives the largest Sortino improvement (+0.006734). These are sensitivity results, not automatically new trade recommendations, because the three criteria can move in opposite directions.
 
 <details markdown="1">
 <summary><strong>Table 2.f. Complete netSD, Rachev and Sortino sensitivity</strong></summary>
 
 | Removed share | netSD | Δ netSD | Rachev | Δ Rachev | Sortino | Δ Sortino |
 | --- | --- | --- | --- | --- | --- | --- |
-| None (baseline) | 0.813559 | 0.000000 | 1.147773 | 0.000000 | 0.161492 | 0.000000 |
-| AKO1L | 0.813559 | 0.000000 | 1.154683 | 0.006910 | 0.160163 | -0.001329 |
-| APG1L | 0.745763 | -0.067797 | 1.171927 | 0.024153 | 0.150793 | -0.010699 |
-| CPA1T | 0.813559 | 0.000000 | 1.148909 | 0.001135 | 0.162574 | 0.001082 |
-| DGR1R | 0.813559 | 0.000000 | 1.148472 | 0.000698 | 0.161309 | -0.000183 |
-| EFT1T | 0.805085 | -0.008475 | 1.149893 | 0.002119 | 0.161921 | 0.000428 |
-| GRG1L | 0.788136 | -0.025424 | 1.148627 | 0.000853 | 0.157428 | -0.004064 |
-| HAE1T | 0.813559 | 0.000000 | 1.141945 | -0.005829 | 0.161638 | 0.000145 |
-| IGN1L | 0.813559 | 0.000000 | 1.146862 | -0.000911 | 0.161498 | 0.000006 |
-| KNE1L | 0.771186 | -0.042373 | 1.151322 | 0.003548 | 0.152410 | -0.009082 |
-| LHV1T | 0.813559 | 0.000000 | 1.148276 | 0.000503 | 0.162228 | 0.000736 |
-| MOLNR | 0.694915 | -0.118644 | 1.065071 | -0.082703 | 0.140183 | -0.021309 |
-| MRK1T | 0.779661 | -0.033898 | 1.128075 | -0.019698 | 0.150343 | -0.011150 |
-| PZV1L | 0.813559 | 0.000000 | 1.155041 | 0.007267 | 0.158891 | -0.002601 |
-| ROE1L | 0.813559 | 0.000000 | 1.152716 | 0.004942 | 0.162213 | 0.000721 |
-| RSU1L | 0.796610 | -0.016949 | 1.162612 | 0.014839 | 0.158856 | -0.002636 |
-| SAF1R | 0.796610 | -0.016949 | 1.190075 | 0.042301 | 0.168744 | 0.007252 |
-| TAL1T | 0.805085 | -0.008475 | 1.157178 | 0.009405 | 0.161875 | 0.000383 |
-| TEL1L | 0.813559 | 0.000000 | 1.147918 | 0.000144 | 0.161502 | 0.000010 |
-| TKM1T | 0.762712 | -0.050847 | 1.207303 | 0.059529 | 0.181595 | 0.020102 |
-| TSM1T | 0.813559 | 0.000000 | 1.155889 | 0.008116 | 0.165547 | 0.004054 |
-| TVE1T | 0.796610 | -0.016949 | 1.140537 | -0.007236 | 0.163699 | 0.002207 |
-| VIRSI | 0.813559 | 0.000000 | 1.147864 | 0.000091 | 0.161557 | 0.000065 |
-| VLP1L | 0.703390 | -0.110169 | 1.141760 | -0.006013 | 0.132985 | -0.028508 |
+| None (baseline) | 0.756303 | 0.000000 | 1.310773 | 0.000000 | 0.184849 | 0.000000 |
+| APG1L | 0.747899 | -0.008403 | 1.324048 | 0.013276 | 0.179796 | -0.005053 |
+| GRG1L | 0.747899 | -0.008403 | 1.310508 | -0.000265 | 0.182519 | -0.002330 |
+| HAE1T | 0.747899 | -0.008403 | 1.311389 | 0.000617 | 0.185577 | 0.000728 |
+| KNE1L | 0.747899 | -0.008403 | 1.307859 | -0.002914 | 0.180736 | -0.004113 |
+| MRK1T | 0.747899 | -0.008403 | 1.313148 | 0.002376 | 0.180345 | -0.004504 |
+| ROE1L | 0.756303 | 0.000000 | 1.309596 | -0.001176 | 0.184786 | -0.000063 |
+| RSU1L | 0.756303 | 0.000000 | 1.314287 | 0.003514 | 0.183824 | -0.001025 |
+| SAF1R | 0.705882 | -0.050420 | 1.337942 | 0.027170 | 0.184889 | 0.000040 |
+| TAL1T | 0.756303 | 0.000000 | 1.312019 | 0.001247 | 0.184617 | -0.000231 |
+| TKM1T | 0.672269 | -0.084034 | 1.326216 | 0.015443 | 0.191583 | 0.006734 |
+| TSM1T | 0.756303 | 0.000000 | 1.311335 | 0.000563 | 0.187345 | 0.002497 |
+| VLP1L | 0.462185 | -0.294118 | 1.054503 | -0.256269 | 0.079194 | -0.105655 |
 
 </details>
 
