@@ -116,7 +116,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-29 11:04 (Europe/Vilnius); return analysis through 2026-10-28; valuation prices through 2026-10-28
+# Baltic investment plan - updated 2026-10-29 11:10 (Europe/Vilnius); return analysis through 2026-10-28; valuation prices through 2026-10-28
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -4229,6 +4229,116 @@ The connectedness analysis follows the VAR/VECM and generalized forecast-error v
 | Update2: sales allowed | 68.41 | 69.51 | 1.09 | Transmitter |
 | Update2: no sales | 61.67 | 50.49 | -11.18 | Receiver |
 | S&P 500 | 5.57 | 2.43 | -3.14 | Receiver |
+
+</details>
+
+<details markdown="1" class="garch-systemic-risk" open>
+<summary><strong>GARCH volatility spillover and DCC-GARCH</strong></summary>
+
+The GARCH analysis uses a retrospective non-trading correction before model estimation. Consecutive zero returns are treated as stale-price days: the next observed non-zero log return is spread equally over that zero-return spell and its trade day. Corrected returns are then winsorised at the 0.5% and 99.5% quantiles. Shares with more than 40% zero-return observations are excluded from this subsection. This correction reduces stale-price distortion but is an explicit modelling assumption and must not be interpreted as observed daily price movement.
+
+The filter excludes **RSU1L, TEL1L, TVE1T** from the GARCH/DCC system only. They remain in the other portfolio analyses. After filtering, 19 series and 754 common observations remain.
+
+#### Liquidity-corrected GARCH variance spillover
+
+Each retained series is fitted with a Student-t GARCH(1,1). A VAR is then fitted to the log conditional variances, and its 10-step generalized FEVD produces directional volatility spillovers. An arrow therefore describes predictive transmission between conditional variances. An asterisk marks variance Granger causality at 5%; red nodes are net volatility transmitters and blue nodes are net receivers.
+
+![Liquidity-corrected GARCH variance spillover](figures/garch_corrected_variance_spillover.png)
+
+The corrected-volatility Total Spillover Index is **14.46%**. **17 of 19** univariate fits still have α + β ≥ 0.99, so volatility persistence remains close to the IGARCH boundary and the long-horizon interpretation requires caution.
+
+<details markdown="1">
+<summary><strong>GARCH directional FROM, TO and NET measures</strong></summary>
+
+| Entity | FROM (%) | TO (%) | NET (pp) | role |
+| --- | --- | --- | --- | --- |
+| AKO1L | 9.57 | 9.56 | -0.01 | Receiver |
+| APG1L | 13.95 | 19.58 | 5.63 | Transmitter |
+| CPA1T | 34.37 | 28.24 | -6.13 | Receiver |
+| DGR1R | 10.00 | 6.84 | -3.16 | Receiver |
+| EFT1T | 12.06 | 14.72 | 2.66 | Transmitter |
+| GRG1L | 6.67 | 9.60 | 2.93 | Transmitter |
+| HAE1T | 11.89 | 12.46 | 0.57 | Transmitter |
+| IGN1L | 9.83 | 14.69 | 4.85 | Transmitter |
+| KNE1L | 14.86 | 10.17 | -4.70 | Receiver |
+| LHV1T | 32.80 | 32.86 | 0.06 | Transmitter |
+| MOLNR | 13.80 | 13.06 | -0.74 | Receiver |
+| MRK1T | 17.70 | 19.07 | 1.37 | Transmitter |
+| PZV1L | 4.24 | 8.03 | 3.79 | Transmitter |
+| ROE1L | 18.55 | 13.28 | -5.27 | Receiver |
+| TAL1T | 9.82 | 14.70 | 4.89 | Transmitter |
+| TKM1T | 16.62 | 23.37 | 6.75 | Transmitter |
+| VIRSI | 10.36 | 4.56 | -5.79 | Receiver |
+| VLP1L | 7.08 | 6.35 | -0.73 | Receiver |
+| SP500 | 20.64 | 13.67 | -6.97 | Receiver |
+
+</details>
+
+#### DCC-GARCH
+
+Following [Engle (2002)](https://doi.org/10.1198/073500102288618487), standardized residuals from the univariate GARCH models enter the two-step Dynamic Conditional Correlation recursion. DCC is an undirected conditional-dependence model: its links show changing co-movement and must not be read as Granger causality or directional shock transmission. The network displays the strongest 10% of absolute average DCC links; the time plot shows the mean absolute off-diagonal conditional correlation.
+
+![DCC-GARCH network and dynamic mean correlation](figures/dcc_garch_network_and_dynamic_correlation.png)
+
+The estimated DCC parameters are α = **0.0070**, β = **0.0000**, and α + β = **0.0070**; optimiser convergence = **True**. The very small DCC persistence means that, after the stale-price correction, the estimated conditional-correlation system is close to a constant-correlation model with brief isolated spikes rather than a slowly evolving dependence process.
+
+<details markdown="1">
+<summary><strong>Illiquidity filter audit and GARCH diagnostics</strong></summary>
+
+##### Illiquidity filter
+
+| Entity | Zero returns (%) | Longest zero run | Status | Reason |
+| --- | --- | --- | --- | --- |
+| AKO1L | 24.8 | 8 | Included | Included |
+| APG1L | 28.8 | 8 | Included | Included |
+| CPA1T | 16.0 | 3 | Included | Included |
+| DGR1R | 28.8 | 8 | Included | Included |
+| EFT1T | 38.9 | 13 | Included | Included |
+| GRG1L | 28.5 | 6 | Included | Included |
+| HAE1T | 19.5 | 4 | Included | Included |
+| IGN1L | 25.5 | 11 | Included | Included |
+| KNE1L | 24.9 | 6 | Included | Included |
+| LHV1T | 15.8 | 4 | Included | Included |
+| MOLNR | 33.4 | 13 | Included | Included |
+| MRK1T | 16.7 | 3 | Included | Included |
+| PZV1L | 32.1 | 6 | Included | Included |
+| ROE1L | 15.0 | 6 | Included | Included |
+| RSU1L | 40.6 | 9 | Excluded | Excluded: zero-return fraction > 40% |
+| TAL1T | 17.2 | 5 | Included | Included |
+| TEL1L | 40.5 | 10 | Excluded | Excluded: zero-return fraction > 40% |
+| TKM1T | 21.8 | 7 | Included | Included |
+| TVE1T | 42.4 | 9 | Excluded | Excluded: zero-return fraction > 40% |
+| VIRSI | 34.1 | 7 | Included | Included |
+| VLP1L | 20.4 | 6 | Included | Included |
+| SP500 | 0.0 | 0 | Included | Benchmark |
+
+##### Univariate GARCH diagnostics
+
+A satisfactory row requires α + β < 0.99 and Ljung–Box p-values above 0.05 for standardized and squared standardized residuals.
+
+| Entity | α | β | α + β | LB residual p | LB squared residual p | Assessment |
+| --- | --- | --- | --- | --- | --- | --- |
+| AKO1L | 0.9652 | 0.0348 | 1.0000 | 0.0232 | 0.2002 | Caution |
+| APG1L | 0.8338 | 0.1662 | 1.0000 | 0.0464 | 0.6225 | Caution |
+| CPA1T | 0.3579 | 0.6421 | 1.0000 | 0.4858 | 0.5194 | Caution |
+| DGR1R | 0.6774 | 0.3226 | 1.0000 | 0.1805 | 0.2821 | Caution |
+| EFT1T | 0.9901 | 0.0099 | 1.0000 | 0.8919 | 0.6735 | Caution |
+| GRG1L | 0.6914 | 0.1870 | 0.8784 | 0.4212 | 0.6941 | Pass |
+| HAE1T | 0.1706 | 0.8294 | 1.0000 | 0.2690 | 0.2154 | Caution |
+| IGN1L | 0.8720 | 0.1280 | 1.0000 | 0.1716 | 0.9887 | Caution |
+| KNE1L | 0.8983 | 0.1017 | 1.0000 | 0.0083 | 0.1390 | Caution |
+| LHV1T | 0.2256 | 0.7744 | 1.0000 | 0.6154 | 0.8579 | Caution |
+| MOLNR | 0.7977 | 0.2023 | 1.0000 | 0.3622 | 0.8208 | Caution |
+| MRK1T | 0.5985 | 0.4015 | 1.0000 | 0.0114 | 0.9584 | Caution |
+| PZV1L | 0.9662 | 0.0338 | 1.0000 | 0.2599 | 0.4471 | Caution |
+| ROE1L | 0.7015 | 0.2985 | 1.0000 | 0.2829 | 0.4491 | Caution |
+| TAL1T | 0.7887 | 0.2113 | 1.0000 | 0.3425 | 0.8716 | Caution |
+| TKM1T | 0.5982 | 0.4018 | 1.0000 | 0.6558 | 0.9900 | Caution |
+| VIRSI | 0.9886 | 0.0114 | 1.0000 | 0.9330 | 0.2388 | Caution |
+| VLP1L | 0.8933 | 0.1067 | 1.0000 | 0.4535 | 0.8638 | Caution |
+| SP500 | 0.1296 | 0.7780 | 0.9076 | 0.1925 | 0.3079 | Pass |
+
+</details>
 
 </details>
 
