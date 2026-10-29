@@ -121,7 +121,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-29 17:50 (Europe/Vilnius); return analysis through 2026-10-28; valuation prices through 2026-10-28
+# Baltic investment plan - updated 2026-10-29 19:41 (Europe/Vilnius); return analysis through 2026-10-28; valuation prices through 2026-10-28
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -3783,63 +3783,63 @@ Each cell is the sum of the three order-specific indicators and therefore ranges
 
 This table reports netSD for all 55 Baltic shares in the common return-history network, including shares that receive zero portfolio weight or are excluded from optimisation. OUT counts FSD, SSD and TSD dominance relations won; IN counts relations lost; balance is OUT - IN. Larger netSD is better. Eligibility is a separate portfolio constraint and does not alter the reported share score.
 
-| Rank | Share | Company | List / segment | OUT | IN | OUT - IN | Denominator | netSD | Eligible for optimisation | Reason / status |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | GRG1L | Grigeo Group | Baltic Main List | 54 | 6 | +48 | 119 | 0.403361 | Yes | Eligible |
-| 2 | KNE1L | KN Energies | Baltic Main List | 47 | 0 | +47 | 119 | 0.394958 | Yes | Eligible |
-| 3 | VLP1L | Vilkyškių pieninė | Baltic Main List | 47 | 0 | +47 | 119 | 0.394958 | Yes | Eligible |
-| 4 | IVL1L | Invalda INVL | Baltic Secondary List | 46 | 0 | +46 | 119 | 0.386555 | No | Secondary List |
-| 5 | MRK1T | Merko Ehitus | Baltic Main List | 46 | 0 | +46 | 119 | 0.386555 | Yes | Eligible |
-| 6 | LGD1L | LITGRID | Baltic Secondary List | 46 | 2 | +44 | 119 | 0.369748 | No | Secondary List |
-| 7 | IGN1L | Ignitis grupė | Baltic Main List | 52 | 10 | +42 | 119 | 0.352941 | Yes | Eligible |
-| 8 | APG1L | Apranga | Baltic Main List | 40 | 2 | +38 | 119 | 0.319328 | Yes | Eligible |
-| 9 | ZMP1L | Žemaitijos pienas | Baltic Secondary List | 37 | 4 | +33 | 119 | 0.277311 | No | Secondary List |
-| 10 | INC1L | INVL Technology | Baltic Secondary List | 33 | 2 | +31 | 119 | 0.260504 | No | Secondary List |
-| 11 | RSU1L | Rokiškio sūris | Baltic Main List | 37 | 8 | +29 | 119 | 0.243697 | Yes | Eligible |
-| 12 | PZV1L | Pieno žvaigždės | Baltic Main List | 37 | 10 | +27 | 119 | 0.226891 | Yes | Eligible |
-| 13 | AKO1L | Akola Group | Baltic Main List | 36 | 10 | +26 | 119 | 0.218487 | Yes | Eligible |
-| 14 | ROE1L | Artea Bankas | Baltic Main List | 42 | 19 | +23 | 119 | 0.193277 | Yes | Eligible |
-| 15 | VIRSI | VIRŠI-A | First North Baltic Share List | 40 | 17 | +23 | 119 | 0.193277 | Yes | Eligible |
-| 16 | TEL1L | Telia Lietuva | Baltic Main List | 42 | 22 | +20 | 119 | 0.168067 | Yes | Eligible |
-| 17 | EFT1T | EfTEN Real Estate Fund | Baltic Main List | 38 | 23 | +15 | 119 | 0.126050 | Yes | Eligible |
-| 18 | HAE1T | Harju Elekter Group | Baltic Main List | 38 | 24 | +14 | 119 | 0.117647 | Yes | Eligible |
-| 19 | TAL1T | Tallink Grupp | Baltic Main List | 32 | 19 | +13 | 119 | 0.109244 | Yes | Eligible |
-| 20 | INR1L | INVL Baltic Real Estate | Baltic Secondary List | 31 | 20 | +11 | 119 | 0.092437 | No | Secondary List |
-| 21 | LHV1T | LHV Group | Baltic Main List | 34 | 24 | +10 | 119 | 0.084034 | Yes | Eligible |
-| 22 | DGR1R | DelfinGroup | Baltic Main List | 32 | 22 | +10 | 119 | 0.084034 | Yes | Eligible |
-| 23 | TVE1T | Tallinna Vesi | Baltic Main List | 33 | 24 | +9 | 119 | 0.075630 | Yes | Eligible |
-| 24 | KNR1L | Kauno energija | Baltic Secondary List | 11 | 2 | +9 | 119 | 0.075630 | No | Secondary List |
-| 25 | CPA1T | Coop Pank | Baltic Main List | 32 | 24 | +8 | 119 | 0.067227 | Yes | Eligible |
-| 26 | TKM1T | TKM Grupp | Baltic Main List | 31 | 23 | +8 | 119 | 0.067227 | Yes | Eligible |
-| 27 | MOLNR | J. Molner | First North Baltic Share List | 5 | 0 | +5 | 119 | 0.042017 | Yes | Eligible |
-| 28 | VBL1L | Vilniaus baldai | Baltic Secondary List | 25 | 24 | +1 | 119 | 0.008403 | No | Secondary List |
-| 29 | TSM1T | Tallinna Sadam | Baltic Main List | 30 | 31 | -1 | 119 | -0.008403 | No | netSD <= 0 |
-| 30 | AMG1L | Amber Grid | Baltic Secondary List | 30 | 34 | -4 | 119 | -0.033613 | No | netSD <= 0; Secondary List |
-| 31 | SFG1T | Silvano Fashion Group | Baltic Main List | 28 | 32 | -4 | 119 | -0.033613 | No | netSD <= 0 |
-| 32 | SCM1R | Siguldas ciltslietu un mākslīgās apsēklošanas stacija | Baltic Secondary List | 1 | 7 | -6 | 119 | -0.050420 | No | netSD <= 0; Secondary List |
-| 33 | MODE | Modera | First North Baltic Share List | 26 | 38 | -12 | 119 | -0.100840 | No | netSD <= 0 |
-| 34 | SAF1R | SAF Tehnika | Baltic Main List | 10 | 26 | -16 | 119 | -0.134454 | No | netSD <= 0 |
-| 35 | ARC1T | Arco Vara | Baltic Main List | 17 | 40 | -23 | 119 | -0.193277 | No | netSD <= 0 |
-| 36 | NCN1T | Nordecon | Baltic Main List | 25 | 49 | -24 | 119 | -0.201681 | No | netSD <= 0 |
-| 37 | MDARA | MADARA Cosmetics | First North Baltic Share List | 18 | 52 | -34 | 119 | -0.285714 | No | netSD <= 0 |
-| 38 | PKG1T | Pro Kapital Grupp | Baltic Main List | 15 | 56 | -41 | 119 | -0.344538 | No | netSD <= 0 |
-| 39 | IDX1R | INDEXO | Baltic Main List | 19 | 64 | -45 | 119 | -0.378151 | No | netSD <= 0 |
-| 40 | NEOFI | NEO Finance | First North Baltic Share List | 8 | 54 | -46 | 119 | -0.386555 | No | netSD <= 0 |
-| 41 | HPR1T | Hepsor | Baltic Main List | 15 | 62 | -47 | 119 | -0.394958 | No | netSD <= 0 |
-| 42 | INL1L | INVL Baltic Farmland | Baltic Secondary List | 12 | 61 | -49 | 119 | -0.411765 | No | netSD <= 0; Secondary List |
-| 43 | UTR1L | Utenos trikotažas | Baltic Secondary List | 1 | 56 | -55 | 119 | -0.462185 | No | netSD <= 0; Secondary List |
-| 44 | EWA1L | East West Agro | First North Baltic Share List | 16 | 80 | -64 | 119 | -0.537815 | No | netSD <= 0 |
-| 45 | TPD1T | Trigon Property Development | Baltic Secondary List | 13 | 85 | -72 | 119 | -0.605042 | No | netSD <= 0; Secondary List |
-| 46 | BERCM | Bercman Technologies | First North Baltic Share List | 6 | 90 | -84 | 119 | -0.705882 | No | netSD <= 0 |
-| 47 | LINDA | Linda Nektar | First North Baltic Share List | 5 | 91 | -86 | 119 | -0.722689 | No | netSD <= 0 |
-| 48 | CTS1L | City Service | Baltic First North Foreign Shares trading list | 0 | 88 | -88 | 119 | -0.739496 | No | netSD <= 0 |
-| 49 | AIR | Airobot Technologies | First North Baltic Share List | 6 | 96 | -90 | 119 | -0.756303 | No | netSD <= 0 |
-| 50 | SAUNA | Saunum Group | First North Baltic Share List | 4 | 95 | -91 | 119 | -0.764706 | No | netSD <= 0 |
-| 51 | SKN1T | Nordic Fibreboard | Baltic Secondary List | 5 | 99 | -94 | 119 | -0.789916 | No | netSD <= 0; Secondary List |
-| 52 | MAGIC | TextMagic | First North Baltic Share List | 3 | 105 | -102 | 119 | -0.857143 | No | netSD <= 0 |
-| 53 | PRF1T | PRFoods | Baltic Secondary List | 1 | 104 | -103 | 119 | -0.865546 | No | netSD <= 0; Secondary List |
-| 54 | AUG1L | AUGA group | Baltic Secondary List | 1 | 113 | -112 | 119 | -0.941176 | No | netSD <= 0; Secondary List |
-| 55 | BAL1R | Amber Latvijas balzams | Baltic Secondary List | 0 | 119 | -119 | 119 | -1.000000 | No | netSD <= 0; Secondary List |
+| Rank | Share | OUT | IN | OUT - IN | Denominator | netSD | 5y average annual dividend / share EUR | 5y average annual dividend yield at ex-date price | Dividend paid at least once in 2022-2026 | Eligible for optimisation | Reason / status |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | GRG1L | 54 | 6 | +48 | 119 | 0.403361 | 0.0560 | 4.45% | Yes | Yes | Eligible |
+| 2 | KNE1L | 47 | 0 | +47 | 119 | 0.394958 | 0.0129 | 4.01% | Yes | Yes | Eligible |
+| 3 | VLP1L | 47 | 0 | +47 | 119 | 0.394958 | 0.3090 | 3.57% | Yes | Yes | Eligible |
+| 4 | IVL1L | 46 | 0 | +46 | 119 | 0.386555 | 0.6000 | 2.16% | Yes | No | Secondary List |
+| 5 | MRK1T | 46 | 0 | +46 | 119 | 0.386555 | 1.2900 | 4.99% | Yes | Yes | Eligible |
+| 6 | LGD1L | 46 | 2 | +44 | 119 | 0.369748 | 0.0342 | 4.02% | Yes | No | Secondary List |
+| 7 | IGN1L | 52 | 10 | +42 | 119 | 0.352941 | 1.1694 | 3.98% | Yes | Yes | Eligible |
+| 8 | APG1L | 40 | 2 | +38 | 119 | 0.319328 | 0.3060 | 6.89% | Yes | Yes | Eligible |
+| 9 | ZMP1L | 37 | 4 | +33 | 119 | 0.277311 | 0.0240 | 1.14% | Yes | No | Secondary List |
+| 10 | INC1L | 33 | 2 | +31 | 119 | 0.260504 | 0.0000 | 0.00% | No | No | Secondary List |
+| 11 | RSU1L | 37 | 8 | +29 | 119 | 0.243697 | 0.1600 | 3.95% | Yes | Yes | Eligible |
+| 12 | PZV1L | 37 | 10 | +27 | 119 | 0.226891 | 0.0840 | 5.63% | Yes | Yes | Eligible |
+| 13 | AKO1L | 36 | 10 | +26 | 119 | 0.218487 | 0.0355 | 1.97% | Yes | Yes | Eligible |
+| 14 | ROE1L | 42 | 19 | +23 | 119 | 0.193277 | 0.0434 | 4.62% | Yes | Yes | Eligible |
+| 15 | VIRSI | 40 | 17 | +23 | 119 | 0.193277 | 0.0685 | 1.29% | Yes | Yes | Eligible |
+| 16 | TEL1L | 42 | 22 | +20 | 119 | 0.168067 | 0.1000 | 4.35% | Yes | Yes | Eligible |
+| 17 | EFT1T | 38 | 23 | +15 | 119 | 0.126050 | 1.0525 | 4.58% | Yes | Yes | Eligible |
+| 18 | HAE1T | 38 | 24 | +14 | 119 | 0.117647 | 0.1440 | 2.23% | Yes | Yes | Eligible |
+| 19 | TAL1T | 32 | 19 | +13 | 119 | 0.109244 | 0.0300 | 4.84% | Yes | Yes | Eligible |
+| 20 | INR1L | 31 | 20 | +11 | 119 | 0.092437 | 0.0960 | 2.91% | Yes | No | Secondary List |
+| 21 | LHV1T | 34 | 24 | +10 | 119 | 0.084034 | 0.1660 | 2.47% | Yes | Yes | Eligible |
+| 22 | DGR1R | 32 | 22 | +10 | 119 | 0.084034 | 0.0957 | 5.17% | Yes | Yes | Eligible |
+| 23 | TVE1T | 33 | 24 | +9 | 119 | 0.075630 | 0.5180 | 3.53% | Yes | Yes | Eligible |
+| 24 | KNR1L | 11 | 2 | +9 | 119 | 0.075630 | 0.0189 | 1.75% | Yes | No | Secondary List |
+| 25 | CPA1T | 32 | 24 | +8 | 119 | 0.067227 | 0.0594 | 2.26% | Yes | Yes | Eligible |
+| 26 | TKM1T | 31 | 23 | +8 | 119 | 0.067227 | 0.6660 | 5.38% | Yes | Yes | Eligible |
+| 27 | MOLNR | 5 | 0 | +5 | 119 | 0.042017 | 0.0000 | 0.00% | No | Yes | Eligible |
+| 28 | VBL1L | 25 | 24 | +1 | 119 | 0.008403 | 0.3120 | 2.90% | Yes | No | Secondary List |
+| 29 | TSM1T | 30 | 31 | -1 | 119 | -0.008403 | 0.0778 | 4.59% | Yes | No | netSD <= 0 |
+| 30 | AMG1L | 30 | 34 | -4 | 119 | -0.033613 | 0.0704 | 5.04% | Yes | No | netSD <= 0; Secondary List |
+| 31 | SFG1T | 28 | 32 | -4 | 119 | -0.033613 | 0.0000 | 0.00% | No | No | netSD <= 0 |
+| 32 | SCM1R | 1 | 7 | -6 | 119 | -0.050420 | 0.0420 | 0.41% | Yes | No | netSD <= 0; Secondary List |
+| 33 | MODE | 26 | 38 | -12 | 119 | -0.100840 | 0.0000 | 0.00% | No | No | netSD <= 0 |
+| 34 | SAF1R | 10 | 26 | -16 | 119 | -0.134454 | 0.1360 | 0.00% | Yes | No | netSD <= 0 |
+| 35 | ARC1T | 17 | 40 | -23 | 119 | -0.193277 | 0.0420 | 1.88% | Yes | No | netSD <= 0 |
+| 36 | NCN1T | 25 | 49 | -24 | 119 | -0.201681 | 0.0000 | 0.00% | No | No | netSD <= 0 |
+| 37 | MDARA | 18 | 52 | -34 | 119 | -0.285714 | 0.5500 | 3.98% | Yes | No | netSD <= 0 |
+| 38 | PKG1T | 15 | 56 | -41 | 119 | -0.344538 | 0.0000 | 0.00% | No | No | netSD <= 0 |
+| 39 | IDX1R | 19 | 64 | -45 | 119 | -0.378151 | 0.0000 | 0.00% | No | No | netSD <= 0 |
+| 40 | NEOFI | 8 | 54 | -46 | 119 | -0.386555 | 0.0120 | 0.55% | Yes | No | netSD <= 0 |
+| 41 | HPR1T | 15 | 62 | -47 | 119 | -0.394958 | 0.1060 | 1.75% | Yes | No | netSD <= 0 |
+| 42 | INL1L | 12 | 61 | -49 | 119 | -0.411765 | 0.1500 | 1.52% | Yes | No | netSD <= 0; Secondary List |
+| 43 | UTR1L | 1 | 56 | -55 | 119 | -0.462185 | 0.0000 | 0.00% | No | No | netSD <= 0; Secondary List |
+| 44 | EWA1L | 16 | 80 | -64 | 119 | -0.537815 | 0.7800 | 3.84% | Yes | No | netSD <= 0 |
+| 45 | TPD1T | 13 | 85 | -72 | 119 | -0.605042 | 0.0320 | 0.00% | Yes | No | netSD <= 0; Secondary List |
+| 46 | BERCM | 6 | 90 | -84 | 119 | -0.705882 | 0.0000 | 0.00% | No | No | netSD <= 0 |
+| 47 | LINDA | 5 | 91 | -86 | 119 | -0.722689 | 0.0680 | 0.70% | Yes | No | netSD <= 0 |
+| 48 | CTS1L | 0 | 88 | -88 | 119 | -0.739496 | 0.0000 | 0.00% | No | No | netSD <= 0 |
+| 49 | AIR | 6 | 96 | -90 | 119 | -0.756303 | 0.0000 | 0.00% | No | No | netSD <= 0 |
+| 50 | SAUNA | 4 | 95 | -91 | 119 | -0.764706 | 0.0000 | 0.00% | No | No | netSD <= 0 |
+| 51 | SKN1T | 5 | 99 | -94 | 119 | -0.789916 | 0.0000 | 0.00% | No | No | netSD <= 0; Secondary List |
+| 52 | MAGIC | 3 | 105 | -102 | 119 | -0.857143 | 0.0980 | 3.02% | Yes | No | netSD <= 0 |
+| 53 | PRF1T | 1 | 104 | -103 | 119 | -0.865546 | 0.0000 | 0.00% | No | No | netSD <= 0; Secondary List |
+| 54 | AUG1L | 1 | 113 | -112 | 119 | -0.941176 | 0.0000 | 0.00% | No | No | netSD <= 0; Secondary List |
+| 55 | BAL1R | 0 | 119 | -119 | 119 | -1.000000 | 0.3600 | 2.68% | Yes | No | netSD <= 0; Secondary List |
 
 Shares without a sufficiently long and aligned return history cannot be placed in the same empirical dominance network and are therefore outside this 55-share comparable sample; no artificial netSD value is assigned to them.
 
