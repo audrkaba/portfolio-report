@@ -98,7 +98,11 @@ img { display:block; max-width:100%; height:auto; margin:1rem auto; border:1px s
 .frontier-multiselect optgroup { color:#173246; font-weight:700; }
 .frontier-multiselect option { color:#29485a; font-weight:400; padding:.18rem .35rem; }
 .frontier-select-help { color:#607080; font-size:.76rem; }
-.frontier-canvas { width:100%; height:620px; border:1px solid var(--line); border-radius:5px; cursor:crosshair; }
+.frontier-canvas-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; align-items:start; }
+.frontier-panel { min-width:0; }
+.frontier-panel label { display:grid; gap:3px; margin-bottom:6px; color:#29485a; font-size:.86rem; }
+.frontier-canvas { width:100%; height:520px; border:1px solid var(--line); border-radius:5px; cursor:crosshair; }
+.frontier-dividend-copy { margin-top:14px; }
 .frontier-status { margin:.45rem 0 0; color:#455f70; font-size:.84rem; font-variant-numeric:tabular-nums; }
 .cumulative-explorer { margin:1rem 0; padding:12px; border:1px solid #bfd1d9; border-radius:8px; background:#fff; }
 .cumulative-controls { display:grid; grid-template-columns:minmax(260px,1fr) auto auto; gap:12px; align-items:end; margin-bottom:10px; }
@@ -110,13 +114,14 @@ img { display:block; max-width:100%; height:auto; margin:1rem auto; border:1px s
 .cumulative-canvas { width:100%; height:690px; border:1px solid var(--line); border-radius:5px; }
 .cumulative-status { margin:.45rem 0 0; color:#455f70; font-size:.84rem; font-variant-numeric:tabular-nums; }
 @media(max-width:900px) { .dominance-controls { grid-template-columns:1fr 1fr; } .dominance-canvas { height:675px; } }
+@media(max-width:900px) { .frontier-canvas-grid { grid-template-columns:1fr; } }
 @media(max-width:900px) { .cumulative-controls { grid-template-columns:1fr 1fr; } .cumulative-multiselect-wrap { grid-column:1/-1; } }
 a { color:var(--accent); }
 @media(max-width:700px) { main { width:100%; margin:0; padding:22px 8px; border-radius:0; } h1 { font-size:1.7rem; } .add-one-comparison table { font-size:.62rem; } .add-one-comparison th { height:128px; } }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-29 11:20 (Europe/Vilnius); return analysis through 2026-10-28; valuation prices through 2026-10-28
+# Baltic investment plan - updated 2026-10-29 17:23 (Europe/Vilnius); return analysis through 2026-10-28; valuation prices through 2026-10-28
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -4036,7 +4041,7 @@ Select FSD, SSD or TSD, choose any combination of portfolios and individual shar
 <details markdown="1" class="frontier-components" open>
 <summary><strong>Figure 2.n. Interactive Markowitz, MAD, Minimax, robust mean–CVaR and netSD frontiers</strong></summary>
 
-Choose the model to change the risk measure. Current is always highlighted, and every share already held in Current is selected and labelled automatically. Use the grouped multiple-selection list to add or remove any portfolio or share, zoom with the horizontal controls or mouse wheel, and save the current view as PNG.
+Two frontier panels are shown side by side: Markowitz is selected on the left and netSD on the right. Each panel has its own model selector, so either side can be changed to MAD, Minimax, robust mean–CVaR or another frontier. Current is always highlighted, and every share already held in Current is selected and labelled automatically. The historical mean-return/dividend-yield comparison is repeated below the interactive frontiers.
 
 <div class="frontier-explorer"><p>Loading the interactive frontier comparison...</p></div>
 
@@ -4071,7 +4076,7 @@ Choose the model to change the risk measure. Current is always highlighted, and 
 <details markdown="1" class="systemic-risk-section">
 <summary><strong>Systemic risk</strong></summary>
 
-The connectedness analysis follows the VAR/VECM and generalized forecast-error variance-decomposition logic used by [Kabašinskas (2024)](https://doi.org/10.1186/s13362-024-00144-x). The main network contains every investment-admissible share and the S&P 500; the portfolio network is retained as a secondary comparison. The arrowhead identifies the direction: A → B means that shocks in A explain part of B's forecast-error variance. An asterisk (*) after a value means that this direction is significant in the corresponding Granger-causality test at 5%. Red nodes are net shock transmitters (TO − FROM > 0); blue nodes are net receivers. Node area increases with |TO − FROM|, so a larger node has a stronger net role.
+The connectedness analysis follows the VAR/VECM and generalized forecast-error variance-decomposition logic used by [Kabašinskas (2024)](https://doi.org/10.1186/s13362-024-00144-x). The main network contains every investment-admissible share and the S&P 500; the portfolio network is retained as a secondary comparison. The arrowhead identifies the direction: A → B means that shocks in A explain part of B's forecast-error variance. An asterisk (*) after a value means that this direction is significant in the corresponding Granger-causality test at 5%. **Red nodes are net receivers (TO − FROM < 0); blue nodes are net transmitters (TO − FROM > 0).** Node area increases with |TO − FROM|, so a larger node has a stronger net role.
 
 **Model-assumption checks are shown before the results.** ADF tests should reject a unit root for VAR returns. VECM requires non-stationary levels, stationary first differences and a cointegration rank strictly between zero and the number of variables. Stability is required for VAR. The residual-whiteness p-value should exceed 0.05. Multivariate normality fails in every case, which is common for financial returns but makes Gaussian small-sample inference less reliable. The 22-variable Johansen critical values are outside the tabulated range of the software, so the share VECM rank is exploratory. A failed row is displayed for comparison and must not be treated as a validated structural model.
 
@@ -4093,11 +4098,11 @@ The connectedness analysis follows the VAR/VECM and generalized forecast-error v
 </div>
 
 <details markdown="1" open>
-<summary><strong>Overall spillover for every model version</strong></summary>
+<summary><strong>120-observation rolling overall spillover for every model version</strong></summary>
 
-The Total Spillover Index is shown separately from the networks so the overall connectedness of every fitted VAR, VECM and corrected-volatility GARCH version can be compared directly. It is the average forecast-error variance share received from all other entities.
+Following the rolling-window implementation used in the cited study, each point re-estimates the model from the latest 120 common observations and reports the generalized-FEVD Total Spillover Index. The plot contains the share VAR and VECM, portfolio VAR and VECM, and the VAR fitted to liquidity-corrected GARCH log variances. This shows how overall connectedness changes through time rather than reducing every model to one full-sample number.
 
-![Overall spillover by model version](figures/spillover_overall_by_version.png)
+![120-observation rolling total spillover](figures/spillover_total_rolling_120_all_versions.png)
 
 </details>
 
@@ -4250,7 +4255,7 @@ The filter excludes **RSU1L, TEL1L, TVE1T** from the GARCH/DCC system only. They
 
 #### Liquidity-corrected GARCH variance spillover
 
-Each retained series is fitted with a Student-t GARCH(1,1). A VAR is then fitted to the log conditional variances, and its 10-step generalized FEVD produces directional volatility spillovers. The enlarged arrowhead shows the direction of predictive transmission between conditional variances. An asterisk marks variance Granger causality at 5%; red nodes are net volatility transmitters, blue nodes are net receivers, and node area increases with |TO − FROM|.
+Each retained series is fitted with a Student-t GARCH(1,1). A VAR is then fitted to the log conditional variances, and its 10-step generalized FEVD produces directional volatility spillovers. The enlarged arrowhead shows the direction of predictive transmission between conditional variances. An asterisk marks variance Granger causality at 5%; red nodes are net volatility receivers, blue nodes are net transmitters, and node area increases with |TO − FROM|.
 
 ![Liquidity-corrected GARCH variance spillover](figures/garch_corrected_variance_spillover.png)
 
@@ -4821,7 +4826,6 @@ function initialiseFrontierExplorer(box) {
     const portfolioNames=first.portfolios.filter(p=>p.type==='portfolio'&&p.name!=='Current').map(p=>p.name), sharePoints=first.portfolios.filter(p=>p.type==='share'), shareNames=sharePoints.map(p=>p.name), heldShares=new Set(sharePoints.filter(p=>p.held).map(p=>p.name));
     const preferred=['Baltic_NetSD','curent_update_baltic','update2_penalty_sell','update2_penalty_no_sell','NetSD_full','NetSD_training'];
     box.innerHTML=`<div class="frontier-controls">
-      <label>Frontier model<select class="front-model">${models.map(x=>`<option>${x}</option>`).join('')}</select></label>
       <label class="frontier-multiselect-wrap">Compare Current with portfolios and shares
         <select class="frontier-multiselect" multiple size="10">
           <optgroup label="Portfolios">${[...preferred.filter(x=>portfolioNames.includes(x)),...portfolioNames.filter(x=>!preferred.includes(x))].map(x=>`<option value="${x}" ${['Baltic_NetSD','curent_update_baltic','update2_penalty_sell','update2_penalty_no_sell'].includes(x)?'selected':''}>${x}</option>`).join('')}</optgroup>
@@ -4832,10 +4836,14 @@ function initialiseFrontierExplorer(box) {
       <label>Horizontal view: <output class="front-xout">100%</output><input class="front-xzoom" type="range" min="20" max="100" value="100" step="1"></label>
       <label>Vertical view: <output class="front-yout">100%</output><input class="front-yzoom" type="range" min="20" max="100" value="100" step="1"></label>
       <button class="front-reset" type="button">Reset view</button><button class="front-save" type="button">Save high-resolution PNG</button>
-    </div><canvas class="frontier-canvas"></canvas><p class="frontier-status"></p>`;
-    const canvas=box.querySelector('canvas'), model=box.querySelector('.front-model'), compareSelect=box.querySelector('.frontier-multiselect'), xzoom=box.querySelector('.front-xzoom'), yzoom=box.querySelector('.front-yzoom'), status=box.querySelector('.frontier-status');
-    function render(){
-      const d=data.models[model.value], frontier=d.frontier, points=d.portfolios;
+    </div><div class="frontier-canvas-grid">
+      <div class="frontier-panel"><label>Left frontier model<select class="front-model-left">${models.map(x=>`<option${x==='Markowitz'?' selected':''}>${x}</option>`).join('')}</select></label><canvas class="frontier-canvas"></canvas></div>
+      <div class="frontier-panel"><label>Right frontier model<select class="front-model-right">${models.map(x=>`<option${x==='NetSD'?' selected':''}>${x}</option>`).join('')}</select></label><canvas class="frontier-canvas"></canvas></div>
+    </div><p class="frontier-status"></p>
+    <details class="frontier-dividend-copy" open><summary><strong>Mean return and five-year average dividend yield versus all portfolios</strong></summary><img src="figures/return_dividend_all_portfolios.png" alt="Mean return and five-year average dividend yield versus all portfolios"><p>The horizontal axis is realised mean one-period return. The vertical axis is the five-year average annual historical dividend yield measured using the share price at each ex-dividend date. Other eligible shares are transparent background points; portfolios are labelled. This is historical and is not a dividend forecast.</p></details>`;
+    const canvases=[...box.querySelectorAll('canvas')], leftModel=box.querySelector('.front-model-left'), rightModel=box.querySelector('.front-model-right'), compareSelect=box.querySelector('.frontier-multiselect'), xzoom=box.querySelector('.front-xzoom'), yzoom=box.querySelector('.front-yzoom'), status=box.querySelector('.frontier-status');
+    function draw(canvas,modelValue){
+      const d=data.models[modelValue], frontier=d.frontier, points=d.portfolios;
       const ratio=Math.min(Math.max(window.devicePixelRatio||1,2),3), rect=canvas.getBoundingClientRect();
       canvas.width=Math.max(900,Math.round(rect.width*ratio));canvas.height=Math.round(rect.height*ratio);
       const ctx=canvas.getContext('2d');ctx.setTransform(ratio,0,0,ratio,0,0);const W=canvas.width/ratio,H=canvas.height/ratio,L=82,R=28,T=45,B=68;
@@ -4852,14 +4860,14 @@ function initialiseFrontierExplorer(box) {
       ctx.strokeStyle='#007f8b';ctx.lineWidth=3;ctx.beginPath();frontier.forEach((p,i)=>{const px=sx(p.risk),py=sy(p.mean);if(i===0)ctx.moveTo(px,py);else ctx.lineTo(px,py);});ctx.stroke();
       const selected=new Set([...compareSelect.selectedOptions].map(x=>x.value)), labelled=new Set(['Current',...selected]);
       points.forEach((p,pi)=>{if(p.risk<x0||p.risk>x1||p.mean<y0||p.mean>y1)return;const isCurrent=p.name==='Current',isSelected=selected.has(p.name),isShare=p.type==='share';ctx.beginPath();if(isShare&&isSelected){ctx.rect(sx(p.risk)-6,sy(p.mean)-6,12,12);}else{ctx.arc(sx(p.risk),sy(p.mean),isCurrent||isSelected?7:(isShare?3:4),0,2*Math.PI);}ctx.fillStyle=isCurrent?'#d7191c':isSelected?(p.name==='Baltic_NetSD'?'#0072b2':p.name==='curent_update_baltic'?'#009e73':palette[pi%palette.length]):(isShare?'#d5dadd':'#8f9ba2');ctx.fill();ctx.strokeStyle=isSelected?'#17212b':'#fff';ctx.lineWidth=isSelected?1.5:1;ctx.stroke();if(labelled.has(p.name)){ctx.font='bold 12px system-ui';ctx.fillStyle='#17212b';ctx.fillText(p.name,sx(p.risk)+9,sy(p.mean)-7);}});
-      ctx.strokeStyle='#007f8b';ctx.lineWidth=3;ctx.beginPath();ctx.moveTo(L,T-20);ctx.lineTo(L+28,T-20);ctx.stroke();ctx.fillStyle='#17212b';ctx.font='12px system-ui';ctx.fillText(model.value==='NetSD'?'Observed nondominated candidate envelope':'Efficient frontier',L+36,T-16);
-      const cur=points.find(p=>p.name==='Current'), selectedPoints=points.filter(p=>selected.has(p.name));status.textContent=cur?`Current: risk ${cur.risk.toFixed(6)}, mean ${cur.mean.toFixed(6)}${selectedPoints.map(p=>` | ${p.name}: risk ${p.risk.toFixed(6)}, mean ${p.mean.toFixed(6)}`).join('')}`:'';
-      box.querySelector('.front-xout').value=`${xzoom.value}%`;box.querySelector('.front-yout').value=`${yzoom.value}%`;
+      ctx.strokeStyle='#007f8b';ctx.lineWidth=3;ctx.beginPath();ctx.moveTo(L,T-20);ctx.lineTo(L+28,T-20);ctx.stroke();ctx.fillStyle='#17212b';ctx.font='12px system-ui';ctx.fillText(modelValue==='NetSD'?'Observed nondominated candidate envelope':'Efficient frontier',L+36,T-16);
+      return points.find(p=>p.name==='Current');
     }
-    [model,xzoom,yzoom,compareSelect].forEach(x=>x.addEventListener('input',render));
-    canvas.addEventListener('wheel',e=>{e.preventDefault();const control=e.shiftKey?yzoom:xzoom;control.value=Math.max(20,Math.min(100,Number(control.value)+Math.sign(e.deltaY)*4));render();},{passive:false});
+    function render(){const left=draw(canvases[0],leftModel.value),right=draw(canvases[1],rightModel.value);status.textContent=`Left ${leftModel.value}: Current risk ${left.risk.toFixed(6)}, mean ${left.mean.toFixed(6)} | Right ${rightModel.value}: Current risk ${right.risk.toFixed(6)}, mean ${right.mean.toFixed(6)}`;box.querySelector('.front-xout').value=`${xzoom.value}%`;box.querySelector('.front-yout').value=`${yzoom.value}%`;}
+    [leftModel,rightModel,xzoom,yzoom,compareSelect].forEach(x=>x.addEventListener('input',render));
+    canvases.forEach(canvas=>canvas.addEventListener('wheel',e=>{e.preventDefault();const control=e.shiftKey?yzoom:xzoom;control.value=Math.max(20,Math.min(100,Number(control.value)+Math.sign(e.deltaY)*4));render();},{passive:false}));
     box.querySelector('.front-reset').addEventListener('click',()=>{xzoom.value=100;yzoom.value=100;render();});
-    box.querySelector('.front-save').addEventListener('click',()=>{const a=document.createElement('a');a.download=`${model.value}_interactive_frontier.png`;a.href=canvas.toDataURL('image/png');a.click();});
+    box.querySelector('.front-save').addEventListener('click',()=>{canvases.forEach((canvas,index)=>{const a=document.createElement('a');a.download=`${index?'right':'left'}_${index?rightModel.value:leftModel.value}_interactive_frontier.png`;a.href=canvas.toDataURL('image/png');a.click();});});
     window.addEventListener('resize',render);render();box.dataset.loaded='yes';
   }).catch(err=>{box.innerHTML=`<p>Interactive frontier could not be loaded: ${err.message}</p>`;box.dataset.loaded='';});
 }
