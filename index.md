@@ -26,6 +26,10 @@ details { margin:1rem 0; padding:.25rem .9rem .8rem; border:1px solid var(--line
 .analytics-group > summary { padding:.55rem .2rem; color:#173246; font-size:1.35rem; cursor:pointer; }
 .analytics-group > .report-section { margin-left:.4rem; background:#fff; }
 details details { background:white; }
+.systemic-model-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; align-items:start; }
+.systemic-model-grid section { min-width:0; padding:.6rem; border:1px solid var(--line); border-radius:8px; background:#fff; }
+.systemic-model-grid img { display:block; width:100%; height:auto; margin:.6rem 0 1rem; }
+@media (max-width:900px) { .systemic-model-grid { grid-template-columns:1fr; } }
 summary { cursor:pointer; padding:.65rem .1rem; color:#174d61; }
 summary:hover { color:var(--accent); }
 table { display:block; width:100%; overflow-x:auto; border-collapse:collapse; white-space:nowrap; font-size:.88rem; margin:.7rem 0 1rem; }
@@ -110,7 +114,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-29 10:44 (Europe/Vilnius); return analysis through 2026-10-28; valuation prices through 2026-10-28
+# Baltic investment plan - updated 2026-10-29 10:58 (Europe/Vilnius); return analysis through 2026-10-28; valuation prices through 2026-10-28
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -4062,60 +4066,171 @@ Choose the model to change the risk measure. Current is always highlighted, and 
 
 </details>
 
+### Systemic risk
+
+The connectedness analysis follows the VAR/VECM and generalized forecast-error variance-decomposition logic used by [Kabašinskas (2024)](https://doi.org/10.1186/s13362-024-00144-x). The main network contains every investment-admissible share and the S&P 500; the portfolio network is retained as a secondary comparison. An arrow from A to B means that shocks in A explain part of B's forecast-error variance. An asterisk (*) after a value means that the A → B direction is significant in the corresponding Granger-causality test at 5%. Red nodes are net shock transmitters (TO − FROM > 0); blue nodes are net receivers.
+
+**Model-assumption checks are shown before the results.** ADF tests should reject a unit root for VAR returns. VECM requires non-stationary levels, stationary first differences and a cointegration rank strictly between zero and the number of variables. Stability is required for VAR. The residual-whiteness p-value should exceed 0.05. Multivariate normality fails in every case, which is common for financial returns but makes Gaussian small-sample inference less reliable. The 22-variable Johansen critical values are outside the tabulated range of the software, so the share VECM rank is exploratory. A failed row is displayed for comparison and must not be treated as a validated structural model.
+
 <details markdown="1" open>
-<summary><strong>Figure 2.o. Directional return-spillover network</strong></summary>
+<summary><strong>Model assumptions and diagnostic tests</strong></summary>
 
-A VAR(1) and a 10-observation generalized forecast-error variance decomposition are used, following the connectedness logic in [Kabašinskas (2024)](https://doi.org/10.1186/s13362-024-00144-x). An arrow from A to B is the percentage of B's forecast-error variance explained by shocks from A; only links of at least 2% are drawn. The result measures predictive connectedness, not a causal effect.
+| Universe | Model | stationary levels | stationary returns | rank | stable | whiteness p | normality p | assessment |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Shares | VAR(1) | 2/22 | 22/22 | – | Yes | 0.0002 | 0.0000 | Fail / diagnostic only |
+| Shares | VECM(rank=10, diff_lags=0) | 2/22 | 22/22 | 10 | – | 0.0000 | 0.0000 | Fail / diagnostic only |
+| Portfolios | VAR(1) | 0/6 | 6/6 | – | Yes | 0.0601 | 0.0000 | Pass |
+| Portfolios | VECM(rank=0, diff_lags=0) | 0/6 | 6/6 | 0 | – | 0.0041 | 0.0000 | Fail / diagnostic only |
 
-![Directional spillover network](figures/scenario_spillover_network.png)
+</details>
 
-The full-period **Total Spillover Index is 56.37%**. Thus, on average, 56.37% of the four series' 10-step forecast-error variance comes from shocks originating in another series. **Update: no sales** is the largest net transmitter (TO − FROM = 13.55 percentage points). Because both updates are constructed from overlapping Baltic shares, some strong links are mechanical and should not be interpreted as independent contagion.
+<div class="systemic-model-grid">
+<section><h4>VAR</h4><p>VAR is fitted to stationary daily returns with the BIC-selected lag. The shares VAR is stable but fails residual whiteness, so its network is descriptive. The portfolio VAR passes stability and whiteness.</p><p><strong>Shares and S&amp;P 500</strong></p><img src="figures/spillover_shares_var_network.png" alt="VAR spillover network for shares and S&amp;P 500"><p><strong>Portfolios and S&amp;P 500</strong></p><img src="figures/spillover_portfolios_var_network.png" alt="VAR spillover network for portfolios and S&amp;P 500"></section>
+<section><h4>VECM</h4><p>VECM is fitted to cumulative log-return levels. The share VECM has an exploratory positive rank but fails whiteness; the portfolio VECM rank is zero and therefore does not support a long-run equilibrium model.</p><p><strong>Shares and S&amp;P 500</strong></p><img src="figures/spillover_shares_vecm_network.png" alt="VECM spillover network for shares and S&amp;P 500"><p><strong>Portfolios and S&amp;P 500</strong></p><img src="figures/spillover_portfolios_vecm_network.png" alt="VECM spillover network for portfolios and S&amp;P 500"></section>
+</div>
+
+<details markdown="1">
+<summary><strong>VAR directional and generalized-FEVD tables</strong></summary>
+
+#### Shares and S&P 500 — VAR directional measures
+
+| Entity | FROM (%) | TO (%) | NET (pp) | role |
+| --- | --- | --- | --- | --- |
+| AKO1L | 16.96 | 13.74 | -3.22 | Receiver |
+| APG1L | 26.99 | 28.08 | 1.08 | Transmitter |
+| CPA1T | 44.30 | 54.58 | 10.28 | Transmitter |
+| DGR1R | 14.32 | 12.76 | -1.56 | Receiver |
+| EFT1T | 16.66 | 15.66 | -1.01 | Receiver |
+| GRG1L | 15.17 | 12.89 | -2.28 | Receiver |
+| HAE1T | 18.45 | 17.91 | -0.54 | Receiver |
+| IGN1L | 31.85 | 31.65 | -0.19 | Receiver |
+| KNE1L | 22.44 | 21.59 | -0.85 | Receiver |
+| LHV1T | 41.68 | 47.46 | 5.78 | Transmitter |
+| MOLNR | 9.73 | 6.49 | -3.23 | Receiver |
+| MRK1T | 22.67 | 20.84 | -1.83 | Receiver |
+| PZV1L | 10.12 | 10.51 | 0.39 | Transmitter |
+| ROE1L | 38.75 | 44.97 | 6.23 | Transmitter |
+| RSU1L | 10.75 | 8.43 | -2.32 | Receiver |
+| TAL1T | 24.10 | 21.82 | -2.28 | Receiver |
+| TEL1L | 21.69 | 18.66 | -3.03 | Receiver |
+| TKM1T | 11.83 | 9.34 | -2.49 | Receiver |
+| TVE1T | 13.60 | 12.35 | -1.24 | Receiver |
+| VIRSI | 7.83 | 6.89 | -0.94 | Receiver |
+| VLP1L | 14.54 | 14.65 | 0.11 | Transmitter |
+| S&P 500 | 9.25 | 12.42 | 3.16 | Transmitter |
+
+#### Shares and S&P 500 — VAR generalized FEVD
+
+| Affected / shock source | AKO1L | APG1L | CPA1T | DGR1R | EFT1T | GRG1L | HAE1T | IGN1L | KNE1L | LHV1T | MOLNR | MRK1T | PZV1L | ROE1L | RSU1L | TAL1T | TEL1L | TKM1T | TVE1T | VIRSI | VLP1L | S&P 500 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| AKO1L | 83.04 | 1.78 | 2.10 | 0.98 | 0.82 | 0.21 | 0.13 | 1.01 | 0.72 | 0.83 | 0.53 | 0.98 | 0.78 | 1.40 | 0.79 | 0.72 | 0.15 | 0.24 | 0.19 | 0.96 | 0.73 | 0.93 |
+| APG1L | 1.48 | 73.01 | 2.66 | 0.17 | 2.91 | 0.64 | 0.37 | 2.33 | 3.08 | 1.65 | 0.09 | 1.17 | 1.39 | 3.49 | 0.64 | 1.09 | 1.77 | 0.04 | 0.31 | 0.30 | 0.68 | 0.73 |
+| CPA1T | 1.31 | 1.98 | 55.70 | 0.74 | 2.06 | 0.46 | 2.08 | 3.87 | 1.36 | 14.42 | 1.02 | 1.75 | 0.30 | 5.72 | 0.60 | 2.12 | 1.22 | 0.58 | 0.72 | 0.11 | 1.03 | 0.85 |
+| DGR1R | 0.93 | 0.26 | 1.07 | 85.68 | 0.05 | 0.25 | 0.88 | 0.62 | 1.17 | 0.66 | 0.10 | 0.97 | 0.42 | 1.96 | 0.87 | 1.16 | 0.41 | 0.01 | 0.24 | 0.80 | 0.89 | 0.62 |
+| EFT1T | 0.83 | 3.33 | 2.41 | 0.04 | 83.34 | 0.61 | 0.09 | 1.00 | 0.67 | 2.83 | 0.06 | 0.40 | 0.29 | 0.93 | 0.01 | 0.29 | 1.15 | 0.30 | 0.67 | 0.60 | 0.06 | 0.10 |
+| GRG1L | 0.30 | 0.70 | 0.70 | 0.14 | 0.63 | 84.83 | 0.63 | 1.22 | 1.17 | 0.13 | 0.35 | 1.38 | 1.52 | 2.25 | 0.32 | 1.12 | 0.93 | 0.43 | 0.12 | 0.91 | 0.21 | 0.02 |
+| HAE1T | 0.09 | 0.73 | 2.88 | 0.24 | 0.03 | 0.78 | 81.55 | 2.13 | 0.59 | 1.93 | 0.01 | 0.78 | 0.07 | 2.97 | 0.01 | 1.41 | 0.52 | 1.66 | 0.35 | 0.16 | 0.84 | 0.27 |
+| IGN1L | 0.83 | 2.20 | 4.67 | 0.65 | 0.81 | 0.92 | 2.25 | 68.15 | 0.56 | 5.63 | 0.77 | 0.84 | 0.22 | 4.70 | 0.43 | 1.92 | 1.81 | 0.36 | 0.78 | 0.54 | 0.35 | 0.62 |
+| KNE1L | 0.79 | 3.25 | 1.84 | 1.09 | 0.58 | 0.64 | 0.43 | 0.72 | 77.56 | 1.15 | 0.19 | 0.90 | 0.88 | 2.44 | 0.89 | 1.30 | 1.31 | 0.34 | 1.07 | 0.50 | 1.97 | 0.16 |
+| LHV1T | 0.55 | 1.43 | 14.76 | 0.54 | 2.09 | 0.09 | 1.49 | 4.97 | 0.88 | 58.32 | 0.57 | 1.77 | 0.26 | 5.85 | 0.07 | 2.24 | 1.26 | 0.80 | 0.44 | 0.10 | 0.63 | 0.89 |
+| MOLNR | 0.58 | 0.56 | 1.30 | 0.21 | 0.63 | 0.33 | 0.01 | 0.82 | 0.46 | 0.67 | 90.27 | 0.19 | 0.12 | 0.57 | 0.15 | 0.19 | 0.73 | 0.26 | 0.23 | 0.14 | 0.13 | 1.42 |
+| MRK1T | 0.91 | 1.22 | 2.47 | 0.98 | 0.37 | 0.69 | 1.01 | 1.19 | 0.77 | 2.15 | 0.26 | 77.33 | 0.47 | 2.39 | 0.08 | 2.18 | 0.40 | 0.75 | 2.32 | 0.32 | 0.83 | 0.92 |
+| PZV1L | 0.15 | 1.08 | 0.48 | 0.43 | 0.27 | 1.23 | 0.08 | 0.44 | 0.98 | 0.34 | 0.04 | 0.30 | 89.88 | 0.42 | 0.06 | 0.07 | 0.41 | 0.90 | 0.03 | 0.40 | 1.84 | 0.17 |
+| ROE1L | 1.20 | 2.91 | 6.32 | 1.34 | 0.67 | 1.55 | 2.64 | 4.21 | 1.98 | 6.01 | 0.38 | 1.90 | 0.40 | 61.25 | 0.34 | 1.61 | 2.85 | 0.25 | 0.35 | 0.04 | 0.76 | 1.02 |
+| RSU1L | 0.58 | 0.90 | 2.05 | 0.38 | 0.02 | 0.35 | 0.22 | 0.46 | 0.91 | 0.58 | 0.09 | 0.11 | 0.06 | 0.78 | 89.25 | 0.58 | 0.11 | 0.20 | 0.44 | 0.11 | 0.88 | 0.95 |
+| TAL1T | 0.65 | 1.31 | 2.84 | 1.15 | 0.07 | 1.00 | 1.31 | 2.05 | 1.27 | 3.00 | 0.29 | 2.04 | 0.08 | 2.61 | 0.54 | 75.90 | 0.73 | 0.24 | 0.76 | 0.38 | 1.39 | 0.37 |
+| TEL1L | 0.07 | 1.85 | 2.28 | 0.35 | 1.36 | 1.43 | 0.50 | 2.22 | 1.20 | 1.75 | 0.62 | 0.32 | 0.37 | 3.67 | 0.09 | 0.61 | 78.31 | 0.64 | 1.61 | 0.21 | 0.17 | 0.36 |
+| TKM1T | 0.24 | 0.40 | 0.77 | 0.02 | 0.53 | 0.45 | 2.10 | 0.46 | 0.19 | 1.44 | 0.38 | 1.06 | 0.65 | 0.35 | 0.09 | 0.43 | 0.48 | 88.17 | 0.82 | 0.08 | 0.08 | 0.81 |
+| TVE1T | 0.07 | 0.67 | 0.97 | 1.11 | 0.52 | 0.18 | 0.34 | 0.56 | 0.82 | 0.71 | 0.16 | 2.15 | 0.02 | 0.56 | 0.73 | 0.66 | 1.58 | 0.75 | 86.40 | 0.01 | 0.43 | 0.57 |
+| VIRSI | 1.05 | 0.31 | 0.14 | 0.87 | 0.20 | 0.49 | 0.19 | 0.58 | 0.66 | 0.26 | 0.10 | 0.37 | 0.41 | 0.18 | 0.26 | 0.39 | 0.54 | 0.30 | 0.30 | 92.17 | 0.19 | 0.05 |
+| VLP1L | 0.78 | 0.51 | 1.25 | 0.71 | 0.04 | 0.17 | 0.96 | 0.53 | 1.91 | 1.05 | 0.33 | 0.63 | 1.65 | 0.98 | 0.56 | 1.43 | 0.02 | 0.16 | 0.18 | 0.08 | 85.46 | 0.60 |
+| S&P 500 | 0.35 | 0.71 | 0.61 | 0.62 | 0.99 | 0.42 | 0.19 | 0.27 | 0.21 | 0.27 | 0.15 | 0.85 | 0.15 | 0.74 | 0.90 | 0.31 | 0.27 | 0.14 | 0.43 | 0.13 | 0.55 | 90.75 |
+
+#### Portfolios and S&P 500 — VAR directional measures
+
+| Entity | FROM (%) | TO (%) | NET (pp) | role |
+| --- | --- | --- | --- | --- |
+| Current | 62.81 | 55.78 | -7.02 | Receiver |
+| Update: sales allowed | 68.32 | 71.42 | 3.10 | Transmitter |
+| Update: no sales | 70.45 | 84.00 | 13.55 | Transmitter |
+| Update2: sales allowed | 68.25 | 71.12 | 2.88 | Transmitter |
+| Update2: no sales | 61.12 | 52.00 | -9.13 | Receiver |
+| S&P 500 | 7.28 | 3.90 | -3.38 | Receiver |
 
 </details>
 
 <details markdown="1">
-<summary><strong>Table 2.l. Generalized FEVD spillover matrix</strong></summary>
+<summary><strong>VECM directional and generalized-FEVD tables — diagnostic only where assumptions fail</strong></summary>
 
-Rows are affected series; columns are shock sources. Diagonal cells are own shocks. Each row sums to 100%.
+#### Shares and S&P 500 — VECM directional measures
 
-| Affected series / shock source | Current | Update: sales allowed | Update: no sales | Update2 penalty: sales allowed | Update2 penalty: no sales | S&P 500 |
-| --- | --- | --- | --- | --- | --- | --- |
-| Current | 37.19 | 8.18 | 30.24 | 8.07 | 15.72 | 0.60 |
-| Update: sales allowed | 6.92 | 31.68 | 17.68 | 31.56 | 11.15 | 1.00 |
-| Update: no sales | 24.01 | 16.52 | 29.55 | 16.35 | 12.79 | 0.78 |
-| Update2 penalty: sales allowed | 6.86 | 31.64 | 17.55 | 31.75 | 11.24 | 0.97 |
-| Update2 penalty: no sales | 16.41 | 13.64 | 16.81 | 13.71 | 38.88 | 0.56 |
-| S&P 500 | 1.59 | 1.45 | 1.72 | 1.43 | 1.10 | 92.72 |
+| Entity | FROM (%) | TO (%) | NET (pp) | role |
+| --- | --- | --- | --- | --- |
+| AKO1L | 21.04 | 14.16 | -6.89 | Receiver |
+| APG1L | 32.46 | 38.03 | 5.57 | Transmitter |
+| CPA1T | 52.81 | 49.34 | -3.46 | Receiver |
+| DGR1R | 15.19 | 8.62 | -6.58 | Receiver |
+| EFT1T | 31.42 | 20.59 | -10.83 | Receiver |
+| GRG1L | 21.53 | 27.12 | 5.58 | Transmitter |
+| HAE1T | 25.24 | 19.59 | -5.65 | Receiver |
+| IGN1L | 33.51 | 29.41 | -4.10 | Receiver |
+| KNE1L | 27.92 | 22.14 | -5.77 | Receiver |
+| LHV1T | 48.03 | 49.75 | 1.72 | Transmitter |
+| MOLNR | 14.73 | 24.65 | 9.92 | Transmitter |
+| MRK1T | 31.83 | 21.59 | -10.24 | Receiver |
+| PZV1L | 25.14 | 32.43 | 7.29 | Transmitter |
+| ROE1L | 42.44 | 52.85 | 10.42 | Transmitter |
+| RSU1L | 13.40 | 9.21 | -4.19 | Receiver |
+| TAL1T | 20.24 | 15.50 | -4.74 | Receiver |
+| TEL1L | 21.27 | 36.73 | 15.46 | Transmitter |
+| TKM1T | 21.88 | 15.97 | -5.91 | Receiver |
+| TVE1T | 27.89 | 37.89 | 10.01 | Transmitter |
+| VIRSI | 24.01 | 17.81 | -6.19 | Receiver |
+| VLP1L | 16.59 | 15.99 | -0.60 | Receiver |
+| S&P 500 | 7.51 | 16.69 | 9.18 | Transmitter |
 
-</details>
+#### Shares and S&P 500 — VECM generalized FEVD
 
-<details markdown="1">
-<summary><strong>Table 2.m. Directional FROM, TO and NET spillovers</strong></summary>
+| Affected / shock source | AKO1L | APG1L | CPA1T | DGR1R | EFT1T | GRG1L | HAE1T | IGN1L | KNE1L | LHV1T | MOLNR | MRK1T | PZV1L | ROE1L | RSU1L | TAL1T | TEL1L | TKM1T | TVE1T | VIRSI | VLP1L | S&P 500 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| AKO1L | 78.96 | 1.71 | 1.48 | 0.16 | 2.31 | 0.34 | 0.07 | 0.35 | 1.05 | 0.25 | 0.07 | 0.57 | 3.50 | 1.48 | 0.66 | 0.94 | 0.05 | 0.29 | 3.13 | 0.19 | 0.26 | 2.20 |
+| APG1L | 1.32 | 67.54 | 4.81 | 0.06 | 0.75 | 3.95 | 0.17 | 1.33 | 3.90 | 0.60 | 0.09 | 2.83 | 2.21 | 3.16 | 0.80 | 0.85 | 2.02 | 1.40 | 0.06 | 0.79 | 0.16 | 1.20 |
+| CPA1T | 0.91 | 3.04 | 47.19 | 0.31 | 1.61 | 0.42 | 3.95 | 3.98 | 3.91 | 13.63 | 0.95 | 0.98 | 0.72 | 7.77 | 0.47 | 0.87 | 0.59 | 1.30 | 6.32 | 0.11 | 0.37 | 0.61 |
+| DGR1R | 0.24 | 0.33 | 0.27 | 84.81 | 0.01 | 3.27 | 0.08 | 0.58 | 0.26 | 0.14 | 1.18 | 0.46 | 2.00 | 0.42 | 0.49 | 0.36 | 3.76 | 0.06 | 0.57 | 0.21 | 0.26 | 0.24 |
+| EFT1T | 3.23 | 4.64 | 0.99 | 0.26 | 68.58 | 4.42 | 0.02 | 0.76 | 0.05 | 4.96 | 0.57 | 0.12 | 0.83 | 1.60 | 0.61 | 1.62 | 3.58 | 0.31 | 2.32 | 0.19 | 0.30 | 0.03 |
+| GRG1L | 0.09 | 2.34 | 0.17 | 0.74 | 2.03 | 78.47 | 0.26 | 0.80 | 0.27 | 0.29 | 0.02 | 1.08 | 8.01 | 0.77 | 0.33 | 0.39 | 3.09 | 0.11 | 0.17 | 0.23 | 0.14 | 0.20 |
+| HAE1T | 0.21 | 0.55 | 3.45 | 0.11 | 0.24 | 0.49 | 74.76 | 0.45 | 0.67 | 3.50 | 1.30 | 1.68 | 0.91 | 1.10 | 1.03 | 0.61 | 0.15 | 1.26 | 0.01 | 6.01 | 0.97 | 0.56 |
+| IGN1L | 0.50 | 2.56 | 3.99 | 0.31 | 0.58 | 1.14 | 1.42 | 66.49 | 1.26 | 4.69 | 0.13 | 1.25 | 1.65 | 4.33 | 0.81 | 0.70 | 0.41 | 0.53 | 4.12 | 1.41 | 0.38 | 1.34 |
+| KNE1L | 0.84 | 2.92 | 3.55 | 0.39 | 0.25 | 0.24 | 0.10 | 1.81 | 72.08 | 0.34 | 5.92 | 0.16 | 0.28 | 3.22 | 0.23 | 0.37 | 4.28 | 0.29 | 0.60 | 0.18 | 1.87 | 0.07 |
+| LHV1T | 0.31 | 1.56 | 12.44 | 0.26 | 2.47 | 0.07 | 1.82 | 4.76 | 0.83 | 51.97 | 3.77 | 1.81 | 0.06 | 4.73 | 0.25 | 1.09 | 0.41 | 2.27 | 8.20 | 0.16 | 0.67 | 0.05 |
+| MOLNR | 0.19 | 0.76 | 0.73 | 0.16 | 0.93 | 0.03 | 0.80 | 0.44 | 0.09 | 3.31 | 85.27 | 0.34 | 1.49 | 1.27 | 0.05 | 0.33 | 0.27 | 0.01 | 0.05 | 0.77 | 0.05 | 2.65 |
+| MRK1T | 0.79 | 3.71 | 3.68 | 0.79 | 2.16 | 0.55 | 1.73 | 1.67 | 0.21 | 2.73 | 0.63 | 68.17 | 0.57 | 6.97 | 0.14 | 0.52 | 0.27 | 1.13 | 2.23 | 0.23 | 0.76 | 0.33 |
+| PZV1L | 0.07 | 3.28 | 0.70 | 1.09 | 1.11 | 2.42 | 1.29 | 1.92 | 0.39 | 0.15 | 3.36 | 0.13 | 74.86 | 1.24 | 0.07 | 1.27 | 1.13 | 0.22 | 0.79 | 0.25 | 3.86 | 0.37 |
+| ROE1L | 0.82 | 4.24 | 4.97 | 0.27 | 0.42 | 1.05 | 1.27 | 2.81 | 0.97 | 6.15 | 1.18 | 3.77 | 0.84 | 57.56 | 1.68 | 0.62 | 5.22 | 1.99 | 1.90 | 0.02 | 1.21 | 1.04 |
+| RSU1L | 0.23 | 0.78 | 0.55 | 0.29 | 0.08 | 0.06 | 0.01 | 0.12 | 0.56 | 0.94 | 0.27 | 0.33 | 0.23 | 0.67 | 86.60 | 0.44 | 4.41 | 0.90 | 0.82 | 0.05 | 0.39 | 1.27 |
+| TAL1T | 0.38 | 0.46 | 1.09 | 0.66 | 0.08 | 1.41 | 2.48 | 0.87 | 0.50 | 1.33 | 0.01 | 2.75 | 0.00 | 1.87 | 0.54 | 79.76 | 0.15 | 1.47 | 1.15 | 1.15 | 1.46 | 0.45 |
+| TEL1L | 0.02 | 1.13 | 0.48 | 0.45 | 0.61 | 1.87 | 0.10 | 0.88 | 3.85 | 0.58 | 0.40 | 0.24 | 1.68 | 5.45 | 0.17 | 0.26 | 78.73 | 0.24 | 1.43 | 0.95 | 0.39 | 0.11 |
+| TKM1T | 0.63 | 0.35 | 1.11 | 0.25 | 0.08 | 0.25 | 1.22 | 0.36 | 0.02 | 2.50 | 3.48 | 0.14 | 3.29 | 0.95 | 0.04 | 0.24 | 0.23 | 78.12 | 2.48 | 3.81 | 0.36 | 0.10 |
+| TVE1T | 0.09 | 1.18 | 3.65 | 0.07 | 2.80 | 1.58 | 0.24 | 0.91 | 0.35 | 3.12 | 0.61 | 2.11 | 0.14 | 1.36 | 0.25 | 1.34 | 4.42 | 0.70 | 72.11 | 0.14 | 0.17 | 2.66 |
+| VIRSI | 2.63 | 1.17 | 0.40 | 1.08 | 1.13 | 3.16 | 1.32 | 2.14 | 0.43 | 0.03 | 0.23 | 0.36 | 0.94 | 1.34 | 0.31 | 0.34 | 1.66 | 1.36 | 1.51 | 75.99 | 1.33 | 1.13 |
+| VLP1L | 0.46 | 0.44 | 0.53 | 0.53 | 0.55 | 0.30 | 0.82 | 1.19 | 2.52 | 0.42 | 0.05 | 0.29 | 3.03 | 2.15 | 0.14 | 2.23 | 0.05 | 0.06 | 0.00 | 0.73 | 83.41 | 0.08 |
+| S&P 500 | 0.17 | 0.89 | 0.27 | 0.37 | 0.42 | 0.09 | 0.40 | 1.25 | 0.06 | 0.09 | 0.44 | 0.19 | 0.06 | 1.01 | 0.15 | 0.09 | 0.56 | 0.10 | 0.02 | 0.25 | 0.63 | 92.49 |
 
-FROM is the share received from all other series. TO is the share transmitted to all other series. Positive NET = TO − FROM identifies a net transmitter; negative NET identifies a net receiver.
+#### Portfolios and S&P 500 — VECM directional measures
 
-| Entity | FROM others (%) | TO others (%) | NET: TO − FROM (pp) |
-| --- | --- | --- | --- |
-| Current | 62.81 | 55.78 | -7.02 |
-| Update: sales allowed | 68.32 | 71.42 | 3.10 |
-| Update: no sales | 70.45 | 84.00 | 13.55 |
-| Update2 penalty: sales allowed | 68.25 | 71.12 | 2.88 |
-| Update2 penalty: no sales | 61.12 | 52.00 | -9.13 |
-| S&P 500 | 7.28 | 3.90 | -3.38 |
-
-</details>
-
-<details markdown="1">
-<summary><strong>Figure 2.p. Rolling 120-observation Total Spillover Index</strong></summary>
-
-The rolling index shows when cross-series connectedness rises or falls. Peaks indicate periods when forecast errors are explained more by shocks elsewhere in the system.
-
-![Rolling Total Spillover Index](figures/scenario_total_spillover_rolling.png)
+| Entity | FROM (%) | TO (%) | NET (pp) | role |
+| --- | --- | --- | --- | --- |
+| Current | 62.23 | 57.03 | -5.20 | Receiver |
+| Update: sales allowed | 68.59 | 69.62 | 1.04 | Transmitter |
+| Update: no sales | 69.63 | 87.02 | 17.39 | Transmitter |
+| Update2: sales allowed | 68.41 | 69.51 | 1.09 | Transmitter |
+| Update2: no sales | 61.67 | 50.49 | -11.18 | Receiver |
+| S&P 500 | 5.57 | 2.43 | -3.14 | Receiver |
 
 </details>
 
 <details markdown="1" class="cumulative-components" open>
-<summary><strong>Figure 2.q. Interactive cumulative value and drawdowns</strong></summary>
+<summary><strong>Figure 2.o. Interactive cumulative value and drawdowns</strong></summary>
 
 Select any combination of portfolios, S&P 500 and individual shares. The upper panel shows the value of one monetary unit invested at the common starting date; the lower panel shows drawdown from each series' previous peak. Current and both update scenarios are selected initially.
 
@@ -4138,7 +4253,7 @@ Select any combination of portfolios, S&P 500 and individual shares. The upper p
 ### Liquidity and turnover
 
 <details markdown="1">
-<summary><strong>Table 2.n. Proposed trades and observed one-year market liquidity</strong></summary>
+<summary><strong>Table 2.m. Proposed trades and observed one-year market liquidity</strong></summary>
 
 | asset | trade_shares | trade_value_EUR | median_daily_turnover_EUR | zero_volume_fraction | trade_to_median_turnover | liquidity_flag |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -4172,7 +4287,7 @@ Select any combination of portfolios, S&P 500 and individual shares. The upper p
 Median daily turnover and zero-volume frequency use official Nasdaq Baltic price-volume observations from the last 365 calendar days of the sample. Trade-to-turnover is the proposed absolute order value divided by median daily turnover. HIGH flags median turnover below EUR 5,000 or an order above 20% of median turnover; MEDIUM flags below EUR 20,000 or above 10%. These are transparent screening thresholds, not a guarantee of execution. HIGH trades should be split, limited or omitted after checking the live order book.
 
 <details markdown="1">
-<summary><strong>Table 2.o. Illustrative transaction-cost and turnover scenario</strong></summary>
+<summary><strong>Table 2.n. Illustrative transaction-cost and turnover scenario</strong></summary>
 
 | portfolio | turnover_EUR | number_of_trades | estimated_cost_EUR | high_liquidity_risk_trades | cost_percent_of_15000 |
 | --- | --- | --- | --- | --- | --- |
@@ -4189,7 +4304,7 @@ The cost scenario uses max(EUR 3, 0.25% of trade value) commission plus an assum
 ### Capital concentration
 
 <details markdown="1">
-<summary><strong>Table 2.p. Top-position and effective-position concentration</strong></summary>
+<summary><strong>Table 2.o. Top-position and effective-position concentration</strong></summary>
 
 | portfolio | positions | top5_share | top10_share | HHI | effective_positions |
 | --- | --- | --- | --- | --- | --- |
@@ -4202,7 +4317,7 @@ The cost scenario uses max(EUR 3, 0.25% of trade value) commission plus an assum
 
 
 <details markdown="1">
-<summary><strong>Table 2.q. Baltic_NetSD: country, list and industry concentration</strong></summary>
+<summary><strong>Table 2.p. Baltic_NetSD: country, list and industry concentration</strong></summary>
 
 | dimension | category | capital_percent |
 | --- | --- | --- |
@@ -4237,7 +4352,7 @@ The cost scenario uses max(EUR 3, 0.25% of trade value) commission plus an assum
 
 
 <details markdown="1">
-<summary><strong>Table 2.r. curent_update_baltic: country, list and industry concentration</strong></summary>
+<summary><strong>Table 2.q. curent_update_baltic: country, list and industry concentration</strong></summary>
 
 | dimension | category | capital_percent |
 | --- | --- | --- |
@@ -4272,7 +4387,7 @@ The cost scenario uses max(EUR 3, 0.25% of trade value) commission plus an assum
 
 
 <details markdown="1">
-<summary><strong>Table 2.s. update2_penalty_sell: country, list and industry concentration</strong></summary>
+<summary><strong>Table 2.r. update2_penalty_sell: country, list and industry concentration</strong></summary>
 
 | dimension | category | capital_percent |
 | --- | --- | --- |
@@ -4307,7 +4422,7 @@ The cost scenario uses max(EUR 3, 0.25% of trade value) commission plus an assum
 
 
 <details markdown="1">
-<summary><strong>Table 2.t. update2_penalty_no_sell: country, list and industry concentration</strong></summary>
+<summary><strong>Table 2.s. update2_penalty_no_sell: country, list and industry concentration</strong></summary>
 
 | dimension | category | capital_percent |
 | --- | --- | --- |
