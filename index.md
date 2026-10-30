@@ -121,7 +121,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-30 09:59 (Europe/Vilnius); return analysis through 2026-10-29; valuation prices through 2026-10-29
+# Baltic investment plan - updated 2026-10-30 10:23 (Europe/Vilnius); return analysis through 2026-10-29; valuation prices through 2026-10-29
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -4839,8 +4839,8 @@ The static figure is collapsed because the interactive plots above provide the d
 
 </details>
 
-<details markdown="1" class="planned-portfolio-quick-summary" open>
-<summary><strong>Quick summary: planned portfolio — Update2 penalty, no sales</strong></summary>
+<details markdown="1" class="report-section planned-portfolio-quick-summary" id="analytics-1-2" open>
+<summary><strong>1.2. Quick summary: planned portfolio — Update2 penalty, no sales</strong></summary>
 
 The preferred no-sales plan contains **19 positions**, adds **7 new positions**, has a target value of **EUR 14,931.04** and leaves **EUR 68.96** uninvested. Its portfolio-level OUT / IN is **96 / 0** and netSD is **0.806723**. Using the 2022–2026 average dividend per share, the target quantities correspond to **EUR 689.85 average gross dividends per year** and a **3.99% weighted historical dividend yield**.
 
@@ -4871,8 +4871,8 @@ The PORTFOLIO row reports the portfolio's own OUT, IN and netSD against the fixe
 
 </details>
 
-<details markdown="1" class="report-section" id="analytics-1-2">
-<summary><strong>1.2. Earnings outcomes and subsequent price changes</strong></summary>
+<details markdown="1" class="report-section" id="analytics-1-3">
+<summary><strong>1.3. Earnings outcomes and subsequent price changes</strong></summary>
 
 Official announcement text allowed 213 of 341 earnings releases to be classified. Higher or lower profit refers to the issuer's explicit comparison with the earlier comparable period. In line or unchanged is used only for an explicit plan, forecast, expectation or unchanged-profit statement. Loss requires an explicit realised net or operating loss.
 
