@@ -66,6 +66,9 @@ th,td { padding:.5rem .65rem; border:1px solid var(--line); text-align:right; }
 th { background:#dceff1; color:#173246; }
 th:first-child,td:first-child { text-align:left; }
 tr:nth-child(even) td { background:#f7fafb; }
+.planned-portfolio-table tr.new-position td { background:rgba(76,175,80,.15) !important; }
+.planned-portfolio-table tr.new-position td.buy-now { color:#b2182b; background:rgba(76,175,80,.22) !important; font-weight:850; }
+.planned-portfolio-table tr.portfolio-total td { border-top:3px solid #4b6978; font-weight:800; }
 .metric-help-button { display:inline-block; padding:.2rem .15rem; border:0; border-bottom:1px dotted #16889a; background:transparent; color:#174d61; font:inherit; font-weight:700; text-align:left; cursor:pointer; }
 .metric-help-button:hover,.metric-help-button:focus { color:#087f91; background:#eef7f8; outline:2px solid #9bd1d8; outline-offset:2px; }
 .metric-modal[hidden] { display:none; }
@@ -121,7 +124,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-30 10:23 (Europe/Vilnius); return analysis through 2026-10-29; valuation prices through 2026-10-29
+# Baltic investment plan - updated 2026-10-30 10:26 (Europe/Vilnius); return analysis through 2026-10-29; valuation prices through 2026-10-29
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -4844,28 +4847,9 @@ The static figure is collapsed because the interactive plots above provide the d
 
 The preferred no-sales plan contains **19 positions**, adds **7 new positions**, has a target value of **EUR 14,931.04** and leaves **EUR 68.96** uninvested. Its portfolio-level OUT / IN is **96 / 0** and netSD is **0.806723**. Using the 2022–2026 average dividend per share, the target quantities correspond to **EUR 689.85 average gross dividends per year** and a **3.99% weighted historical dividend yield**.
 
-| Share | Current shares | Target shares | Change | Target weight | Individual OUT | Individual IN | Individual netSD | 5y avg annual dividend/share EUR | 5y avg dividend yield at ex-date price | Target quantity: avg annual dividends EUR |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| TKM1T | 288 | 337 | +49 | 20.05% | 31 | 23 | 0.067227 | 0.6660 | 5.38% | 224.44 |
-| SAF1R | 100 | 100 | +0 | 10.97% | 10 | 26 | -0.134454 | 0.1360 | 0.00% | 13.60 |
-| APG1L | 200 | 330 | +130 | 8.33% | 40 | 2 | 0.319328 | 0.3060 | 6.89% | 100.98 |
-| VLP1L | 42 | 69 | +27 | 7.33% | 47 | 0 | 0.394958 | 0.3090 | 3.57% | 21.32 |
-| KNE1L | 928 | 1876 | +948 | 5.97% | 47 | 0 | 0.394958 | 0.0129 | 4.01% | 24.16 |
-| TAL1T | 700 | 1239 | +539 | 5.34% | 32 | 19 | 0.109244 | 0.0300 | 4.84% | 37.17 |
-| MRK1T | 20 | 27 | +7 | 4.94% | 46 | 0 | 0.386555 | 1.2900 | 4.99% | 34.83 |
-| ROE1L | 416 | 831 | +415 | 4.90% | 42 | 17 | 0.210084 | 0.0434 | 4.62% | 36.07 |
-| GRG1L | 543 | 646 | +103 | 4.31% | 52 | 6 | 0.386555 | 0.0560 | 4.45% | 36.18 |
-| RSU1L | 50 | 140 | +90 | 4.04% | 37 | 10 | 0.226891 | 0.1600 | 3.95% | 22.40 |
-| MOLNR | 0 | 29 | +29 | 3.89% | 5 | 0 | 0.042017 | 0.0000 | 0.00% | 0.00 |
-| HAE1T | 100 | 102 | +2 | 3.56% | 38 | 24 | 0.117647 | 0.1440 | 2.23% | 14.69 |
-| DGR1R | 0 | 274 | +274 | 3.13% | 30 | 22 | 0.067227 | 0.0957 | 5.17% | 26.23 |
-| EFT1T | 0 | 20 | +20 | 2.69% | 38 | 23 | 0.126050 | 1.0525 | 4.58% | 21.05 |
-| TSM1T | 330 | 330 | +0 | 2.63% | 30 | 31 | -0.008403 | 0.0778 | 4.59% | 25.67 |
-| TVE1T | 0 | 35 | +35 | 2.59% | 35 | 24 | 0.092437 | 0.5180 | 3.53% | 18.13 |
-| TEL1L | 0 | 169 | +169 | 2.54% | 42 | 22 | 0.168067 | 0.1000 | 4.35% | 16.90 |
-| LHV1T | 0 | 78 | +78 | 1.70% | 36 | 24 | 0.100840 | 0.1660 | 2.47% | 12.95 |
-| AKO1L | 0 | 87 | +87 | 1.09% | 36 | 8 | 0.235294 | 0.0355 | 1.97% | 3.09 |
-| PORTFOLIO | 3717 | 6719 | +3002 | 100.00% | 96 | 0 | 0.806723 |  | 3.99% | 689.85 |
+<table class="planned-portfolio-table"><thead><tr><th>Share</th><th>Current shares</th><th>Target shares</th><th>Change</th><th>Execution signal</th><th>Target weight</th><th>Individual OUT</th><th>Individual IN</th><th>Individual netSD</th><th>5y avg annual dividend/share EUR</th><th>5y avg dividend yield at ex-date price</th><th>Target quantity: avg annual dividends EUR</th></tr></thead><tbody><tr><td>TKM1T</td><td>288</td><td>337</td><td>+49</td><td>WAIT</td><td>20.05%</td><td>31</td><td>23</td><td>0.067227</td><td>0.6660</td><td>5.38%</td><td>224.44</td></tr><tr><td>SAF1R</td><td>100</td><td>100</td><td>+0</td><td>HOLD</td><td>10.97%</td><td>10</td><td>26</td><td>-0.134454</td><td>0.1360</td><td>0.00%</td><td>13.60</td></tr><tr><td>APG1L</td><td>200</td><td>330</td><td>+130</td><td>WAIT</td><td>8.33%</td><td>40</td><td>2</td><td>0.319328</td><td>0.3060</td><td>6.89%</td><td>100.98</td></tr><tr><td>VLP1L</td><td>42</td><td>69</td><td>+27</td><td>WAIT</td><td>7.33%</td><td>47</td><td>0</td><td>0.394958</td><td>0.3090</td><td>3.57%</td><td>21.32</td></tr><tr><td>KNE1L</td><td>928</td><td>1876</td><td>+948</td><td>WAIT</td><td>5.97%</td><td>47</td><td>0</td><td>0.394958</td><td>0.0129</td><td>4.01%</td><td>24.16</td></tr><tr><td>TAL1T</td><td>700</td><td>1239</td><td>+539</td><td>WAIT</td><td>5.34%</td><td>32</td><td>19</td><td>0.109244</td><td>0.0300</td><td>4.84%</td><td>37.17</td></tr><tr><td>MRK1T</td><td>20</td><td>27</td><td>+7</td><td>WAIT</td><td>4.94%</td><td>46</td><td>0</td><td>0.386555</td><td>1.2900</td><td>4.99%</td><td>34.83</td></tr><tr><td>ROE1L</td><td>416</td><td>831</td><td>+415</td><td>WAIT</td><td>4.90%</td><td>42</td><td>17</td><td>0.210084</td><td>0.0434</td><td>4.62%</td><td>36.07</td></tr><tr><td>GRG1L</td><td>543</td><td>646</td><td>+103</td><td>WAIT</td><td>4.31%</td><td>52</td><td>6</td><td>0.386555</td><td>0.0560</td><td>4.45%</td><td>36.18</td></tr><tr><td>RSU1L</td><td>50</td><td>140</td><td>+90</td><td class="buy-now">BUY</td><td>4.04%</td><td>37</td><td>10</td><td>0.226891</td><td>0.1600</td><td>3.95%</td><td>22.40</td></tr><tr class="new-position"><td>MOLNR</td><td>0</td><td>29</td><td>+29</td><td>WAIT</td><td>3.89%</td><td>5</td><td>0</td><td>0.042017</td><td>0.0000</td><td>0.00%</td><td>0.00</td></tr><tr><td>HAE1T</td><td>100</td><td>102</td><td>+2</td><td>SKIP</td><td>3.56%</td><td>38</td><td>24</td><td>0.117647</td><td>0.1440</td><td>2.23%</td><td>14.69</td></tr><tr class="new-position"><td>DGR1R</td><td>0</td><td>274</td><td>+274</td><td>WAIT</td><td>3.13%</td><td>30</td><td>22</td><td>0.067227</td><td>0.0957</td><td>5.17%</td><td>26.23</td></tr><tr class="new-position"><td>EFT1T</td><td>0</td><td>20</td><td>+20</td><td>WAIT</td><td>2.69%</td><td>38</td><td>23</td><td>0.126050</td><td>1.0525</td><td>4.58%</td><td>21.05</td></tr><tr><td>TSM1T</td><td>330</td><td>330</td><td>+0</td><td>HOLD</td><td>2.63%</td><td>30</td><td>31</td><td>-0.008403</td><td>0.0778</td><td>4.59%</td><td>25.67</td></tr><tr class="new-position"><td>TVE1T</td><td>0</td><td>35</td><td>+35</td><td>WAIT</td><td>2.59%</td><td>35</td><td>24</td><td>0.092437</td><td>0.5180</td><td>3.53%</td><td>18.13</td></tr><tr class="new-position"><td>TEL1L</td><td>0</td><td>169</td><td>+169</td><td>WAIT</td><td>2.54%</td><td>42</td><td>22</td><td>0.168067</td><td>0.1000</td><td>4.35%</td><td>16.90</td></tr><tr class="new-position"><td>LHV1T</td><td>0</td><td>78</td><td>+78</td><td>WAIT</td><td>1.70%</td><td>36</td><td>24</td><td>0.100840</td><td>0.1660</td><td>2.47%</td><td>12.95</td></tr><tr class="new-position"><td>AKO1L</td><td>0</td><td>87</td><td>+87</td><td>WAIT</td><td>1.09%</td><td>36</td><td>8</td><td>0.235294</td><td>0.0355</td><td>1.97%</td><td>3.09</td></tr><tr class="portfolio-total"><td>PORTFOLIO</td><td>3717</td><td>6719</td><td>+3002</td><td></td><td>100.00%</td><td>96</td><td>0</td><td>0.806723</td><td></td><td>3.99%</td><td>689.85</td></tr></tbody></table>
+
+Rows with a transparent green background are positions newly introduced by the plan. A red **BUY** on a green signal background means the allocation and current technical BUY signal agree; WAIT is not a buy-now instruction.
 
 The PORTFOLIO row reports the portfolio's own OUT, IN and netSD against the fixed reference network; it is not the sum of individual-share scores. Dividend amounts are historical gross averages before tax and are not forecasts.
 
