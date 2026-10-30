@@ -121,7 +121,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-30 08:31 (Europe/Vilnius); return analysis through 2026-10-29; valuation prices through 2026-10-29
+# Baltic investment plan - updated 2026-10-30 09:12 (Europe/Vilnius); return analysis through 2026-10-29; valuation prices through 2026-10-29
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -3431,6 +3431,31 @@ The static figure is collapsed because the interactive plots above provide the d
 </details>
 
 </details>
+
+</details>
+
+<details markdown="1" class="planned-portfolio-quick-summary" open>
+<summary><strong>Quick summary: planned portfolio — Update2 penalty, no sales</strong></summary>
+
+The preferred no-sales plan contains **12 positions**, adds **0 new positions**, has a target value of **EUR 14,995.40** and leaves **EUR 4.60** uninvested. Its portfolio-level OUT / IN is **90 / 0** and netSD is **0.756303**. Using the 2022–2026 average dividend per share, the target quantities correspond to **EUR 550.44 average gross dividends per year** and a **3.80% weighted historical dividend yield**.
+
+| Share | Current shares | Target shares | Change | Target weight | Individual OUT | Individual IN | Individual netSD | 5y avg annual dividend/share EUR | 5y avg dividend yield at ex-date price | Target quantity: avg annual dividends EUR |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| VLP1L | 42 | 416 | +374 | 43.71% | 47 | 0 | 0.394958 | 0.3090 | 3.57% | 128.54 |
+| TKM1T | 288 | 288 | +0 | 17.09% | 31 | 23 | 0.067227 | 0.6660 | 5.38% | 191.81 |
+| SAF1R | 100 | 100 | +0 | 10.97% | 10 | 26 | -0.134454 | 0.1360 | 0.00% | 13.60 |
+| APG1L | 200 | 200 | +0 | 5.04% | 40 | 2 | 0.319328 | 0.3060 | 6.89% | 61.20 |
+| GRG1L | 543 | 543 | +0 | 3.62% | 52 | 6 | 0.386555 | 0.0560 | 4.45% | 30.41 |
+| MRK1T | 20 | 20 | +0 | 3.60% | 46 | 0 | 0.386555 | 1.2900 | 4.99% | 25.80 |
+| HAE1T | 100 | 100 | +0 | 3.49% | 38 | 24 | 0.117647 | 0.1440 | 2.23% | 14.40 |
+| TAL1T | 700 | 700 | +0 | 3.01% | 32 | 19 | 0.109244 | 0.0300 | 4.84% | 21.00 |
+| KNE1L | 928 | 928 | +0 | 2.95% | 47 | 0 | 0.394958 | 0.0129 | 4.01% | 11.95 |
+| TSM1T | 330 | 330 | +0 | 2.63% | 30 | 31 | -0.008403 | 0.0778 | 4.59% | 25.67 |
+| ROE1L | 416 | 416 | +0 | 2.45% | 42 | 17 | 0.210084 | 0.0434 | 4.62% | 18.05 |
+| RSU1L | 50 | 50 | +0 | 1.44% | 37 | 10 | 0.226891 | 0.1600 | 3.95% | 8.00 |
+| PORTFOLIO | 3717 | 4091 | +374 | 100.00% | 90 | 0 | 0.756303 |  | 3.80% | 550.44 |
+
+The PORTFOLIO row reports the portfolio's own OUT, IN and netSD against the fixed reference network; it is not the sum of individual-share scores. Dividend amounts are historical gross averages before tax and are not forecasts.
 
 </details>
 
