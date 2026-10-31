@@ -136,6 +136,15 @@ img { display:block; max-width:100%; height:auto; margin:1rem auto; border:1px s
 .frontier-dividend-copy { margin-top:14px; }
 .frontier-status { margin:.45rem 0 0; color:#455f70; font-size:.84rem; font-variant-numeric:tabular-nums; }
 .cumulative-explorer { margin:1rem 0; padding:12px; border:1px solid #bfd1d9; border-radius:8px; background:#fff; }
+.dividend-explorer { position:relative; margin:.6rem 0; }
+.dividend-toolbar { display:flex; flex-wrap:wrap; align-items:center; gap:.4rem; font-size:.78rem; color:var(--muted); }
+.dividend-toolbar span { margin-right:auto; }
+.dividend-toolbar button { padding:.3rem .6rem; border:1px solid #aac3ca; border-radius:5px; background:#eef7f8; color:#24536a; cursor:pointer; }
+.dividend-plot svg { display:block; width:100%; height:auto; min-width:0; border:1px solid var(--line); border-radius:6px; margin:.5rem 0; }
+.dividend-point:focus { outline:none; }
+.dividend-point:hover > :last-child,.dividend-point:focus > :last-child { fill-opacity:1; stroke-width:2.5; }
+.dividend-tooltip { position:absolute; z-index:15; max-width:min(340px,90%); padding:.55rem .75rem; border:1px solid #8daeb9; border-radius:6px; background:#fff; box-shadow:0 4px 16px #17212b25; color:#173246; font-size:.8rem; white-space:pre-line; pointer-events:none; }
+.dividend-selection { margin:.25rem 0; font-size:.75rem; color:var(--muted); }
 .cumulative-controls { display:grid; grid-template-columns:minmax(260px,1fr) auto auto; gap:12px; align-items:end; margin-bottom:10px; }
 .cumulative-multiselect-wrap { display:grid; gap:.25rem; color:#29485a; font-size:.86rem; }
 .cumulative-multiselect { width:100%; min-height:190px; padding:.35rem; border:1px solid #8aa6b2; border-radius:6px; background:white; }
@@ -1404,7 +1413,7 @@ The common explorer includes every eligible share, all funds and every portfolio
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-![KNE1L mean return and historical dividend yield with all portfolios](figures/return_dividend_all_portfolios.png?v=9b46f9677dcd)
+<div class="dividend-explorer" data-highlight="KNE1L" data-static="figures/return_dividend_all_portfolios.png?v=9b46f9677dcd"><noscript><img src="figures/return_dividend_all_portfolios.png?v=9b46f9677dcd" alt="KNE1L mean return and historical dividend yield with all portfolios"></noscript></div>
 
 The selected share is highlighted, while every other eligible Baltic share is shown as an unlabelled transparent background point. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -1724,7 +1733,7 @@ The common explorer includes every eligible share, all funds and every portfolio
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-![VLP1L mean return and historical dividend yield with all portfolios](figures/return_dividend_all_portfolios.png?v=9b46f9677dcd)
+<div class="dividend-explorer" data-highlight="VLP1L" data-static="figures/return_dividend_all_portfolios.png?v=9b46f9677dcd"><noscript><img src="figures/return_dividend_all_portfolios.png?v=9b46f9677dcd" alt="VLP1L mean return and historical dividend yield with all portfolios"></noscript></div>
 
 The selected share is highlighted, while every other eligible Baltic share is shown as an unlabelled transparent background point. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -2064,7 +2073,7 @@ The common explorer includes every eligible share, all funds and every portfolio
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-![MRK1T mean return and historical dividend yield with all portfolios](figures/return_dividend_all_portfolios.png?v=9b46f9677dcd)
+<div class="dividend-explorer" data-highlight="MRK1T" data-static="figures/return_dividend_all_portfolios.png?v=9b46f9677dcd"><noscript><img src="figures/return_dividend_all_portfolios.png?v=9b46f9677dcd" alt="MRK1T mean return and historical dividend yield with all portfolios"></noscript></div>
 
 The selected share is highlighted, while every other eligible Baltic share is shown as an unlabelled transparent background point. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -2372,7 +2381,7 @@ The common explorer includes every eligible share, all funds and every portfolio
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-![MOLNR mean return and historical dividend yield with all portfolios](figures/return_dividend_all_portfolios.png?v=9b46f9677dcd)
+<div class="dividend-explorer" data-highlight="MOLNR" data-static="figures/return_dividend_all_portfolios.png?v=9b46f9677dcd"><noscript><img src="figures/return_dividend_all_portfolios.png?v=9b46f9677dcd" alt="MOLNR mean return and historical dividend yield with all portfolios"></noscript></div>
 
 The selected share is highlighted, while every other eligible Baltic share is shown as an unlabelled transparent background point. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -2679,7 +2688,7 @@ The common explorer includes every eligible share, all funds and every portfolio
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-![RSU1L mean return and historical dividend yield with all portfolios](figures/return_dividend_all_portfolios.png?v=9b46f9677dcd)
+<div class="dividend-explorer" data-highlight="RSU1L" data-static="figures/return_dividend_all_portfolios.png?v=9b46f9677dcd"><noscript><img src="figures/return_dividend_all_portfolios.png?v=9b46f9677dcd" alt="RSU1L mean return and historical dividend yield with all portfolios"></noscript></div>
 
 The selected share is highlighted, while every other eligible Baltic share is shown as an unlabelled transparent background point. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -3046,7 +3055,7 @@ The common explorer includes every eligible share, all funds and every portfolio
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-![APG1L mean return and historical dividend yield with all portfolios](figures/return_dividend_all_portfolios.png?v=9b46f9677dcd)
+<div class="dividend-explorer" data-highlight="APG1L" data-static="figures/return_dividend_all_portfolios.png?v=9b46f9677dcd"><noscript><img src="figures/return_dividend_all_portfolios.png?v=9b46f9677dcd" alt="APG1L mean return and historical dividend yield with all portfolios"></noscript></div>
 
 The selected share is highlighted, while every other eligible Baltic share is shown as an unlabelled transparent background point. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -3330,7 +3339,7 @@ The common explorer includes every eligible share, all funds and every portfolio
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-![GRG1L mean return and historical dividend yield with all portfolios](figures/return_dividend_all_portfolios.png?v=9b46f9677dcd)
+<div class="dividend-explorer" data-highlight="GRG1L" data-static="figures/return_dividend_all_portfolios.png?v=9b46f9677dcd"><noscript><img src="figures/return_dividend_all_portfolios.png?v=9b46f9677dcd" alt="GRG1L mean return and historical dividend yield with all portfolios"></noscript></div>
 
 The selected share is highlighted, while every other eligible Baltic share is shown as an unlabelled transparent background point. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -3650,7 +3659,7 @@ The common explorer includes every eligible share, all funds and every portfolio
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-![AKO1L mean return and historical dividend yield with all portfolios](figures/return_dividend_all_portfolios.png?v=9b46f9677dcd)
+<div class="dividend-explorer" data-highlight="AKO1L" data-static="figures/return_dividend_all_portfolios.png?v=9b46f9677dcd"><noscript><img src="figures/return_dividend_all_portfolios.png?v=9b46f9677dcd" alt="AKO1L mean return and historical dividend yield with all portfolios"></noscript></div>
 
 The selected share is highlighted, while every other eligible Baltic share is shown as an unlabelled transparent background point. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -3971,7 +3980,7 @@ The common explorer includes every eligible share, all funds and every portfolio
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-![PZV1L mean return and historical dividend yield with all portfolios](figures/return_dividend_all_portfolios.png?v=9b46f9677dcd)
+<div class="dividend-explorer" data-highlight="PZV1L" data-static="figures/return_dividend_all_portfolios.png?v=9b46f9677dcd"><noscript><img src="figures/return_dividend_all_portfolios.png?v=9b46f9677dcd" alt="PZV1L mean return and historical dividend yield with all portfolios"></noscript></div>
 
 The selected share is highlighted, while every other eligible Baltic share is shown as an unlabelled transparent background point. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -4315,7 +4324,7 @@ The common explorer includes every eligible share, all funds and every portfolio
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-![TAL1T mean return and historical dividend yield with all portfolios](figures/return_dividend_all_portfolios.png?v=9b46f9677dcd)
+<div class="dividend-explorer" data-highlight="TAL1T" data-static="figures/return_dividend_all_portfolios.png?v=9b46f9677dcd"><noscript><img src="figures/return_dividend_all_portfolios.png?v=9b46f9677dcd" alt="TAL1T mean return and historical dividend yield with all portfolios"></noscript></div>
 
 The selected share is highlighted, while every other eligible Baltic share is shown as an unlabelled transparent background point. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -4601,7 +4610,7 @@ The common explorer includes every eligible share, all funds and every portfolio
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-![TEL1L mean return and historical dividend yield with all portfolios](figures/return_dividend_all_portfolios.png?v=9b46f9677dcd)
+<div class="dividend-explorer" data-highlight="TEL1L" data-static="figures/return_dividend_all_portfolios.png?v=9b46f9677dcd"><noscript><img src="figures/return_dividend_all_portfolios.png?v=9b46f9677dcd" alt="TEL1L mean return and historical dividend yield with all portfolios"></noscript></div>
 
 The selected share is highlighted, while every other eligible Baltic share is shown as an unlabelled transparent background point. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -4968,7 +4977,7 @@ The common explorer includes every eligible share, all funds and every portfolio
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-![DGR1R mean return and historical dividend yield with all portfolios](figures/return_dividend_all_portfolios.png?v=9b46f9677dcd)
+<div class="dividend-explorer" data-highlight="DGR1R" data-static="figures/return_dividend_all_portfolios.png?v=9b46f9677dcd"><noscript><img src="figures/return_dividend_all_portfolios.png?v=9b46f9677dcd" alt="DGR1R mean return and historical dividend yield with all portfolios"></noscript></div>
 
 The selected share is highlighted, while every other eligible Baltic share is shown as an unlabelled transparent background point. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -5308,7 +5317,7 @@ The common explorer includes every eligible share, all funds and every portfolio
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-![HAE1T mean return and historical dividend yield with all portfolios](figures/return_dividend_all_portfolios.png?v=9b46f9677dcd)
+<div class="dividend-explorer" data-highlight="HAE1T" data-static="figures/return_dividend_all_portfolios.png?v=9b46f9677dcd"><noscript><img src="figures/return_dividend_all_portfolios.png?v=9b46f9677dcd" alt="HAE1T mean return and historical dividend yield with all portfolios"></noscript></div>
 
 The selected share is highlighted, while every other eligible Baltic share is shown as an unlabelled transparent background point. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -5654,7 +5663,7 @@ The common explorer includes every eligible share, all funds and every portfolio
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-![LHV1T mean return and historical dividend yield with all portfolios](figures/return_dividend_all_portfolios.png?v=9b46f9677dcd)
+<div class="dividend-explorer" data-highlight="LHV1T" data-static="figures/return_dividend_all_portfolios.png?v=9b46f9677dcd"><noscript><img src="figures/return_dividend_all_portfolios.png?v=9b46f9677dcd" alt="LHV1T mean return and historical dividend yield with all portfolios"></noscript></div>
 
 The selected share is highlighted, while every other eligible Baltic share is shown as an unlabelled transparent background point. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -5998,7 +6007,7 @@ The common explorer includes every eligible share, all funds and every portfolio
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-![CPA1T mean return and historical dividend yield with all portfolios](figures/return_dividend_all_portfolios.png?v=9b46f9677dcd)
+<div class="dividend-explorer" data-highlight="CPA1T" data-static="figures/return_dividend_all_portfolios.png?v=9b46f9677dcd"><noscript><img src="figures/return_dividend_all_portfolios.png?v=9b46f9677dcd" alt="CPA1T mean return and historical dividend yield with all portfolios"></noscript></div>
 
 The selected share is highlighted, while every other eligible Baltic share is shown as an unlabelled transparent background point. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -6322,7 +6331,7 @@ The common explorer includes every eligible share, all funds and every portfolio
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-![SAF1R mean return and historical dividend yield with all portfolios](figures/return_dividend_all_portfolios.png?v=9b46f9677dcd)
+<div class="dividend-explorer" data-highlight="SAF1R" data-static="figures/return_dividend_all_portfolios.png?v=9b46f9677dcd"><noscript><img src="figures/return_dividend_all_portfolios.png?v=9b46f9677dcd" alt="SAF1R mean return and historical dividend yield with all portfolios"></noscript></div>
 
 The selected share is highlighted, while every other eligible Baltic share is shown as an unlabelled transparent background point. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -6656,7 +6665,7 @@ The common explorer includes every eligible share, all funds and every portfolio
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-![TSM1T mean return and historical dividend yield with all portfolios](figures/return_dividend_all_portfolios.png?v=9b46f9677dcd)
+<div class="dividend-explorer" data-highlight="TSM1T" data-static="figures/return_dividend_all_portfolios.png?v=9b46f9677dcd"><noscript><img src="figures/return_dividend_all_portfolios.png?v=9b46f9677dcd" alt="TSM1T mean return and historical dividend yield with all portfolios"></noscript></div>
 
 The selected share is highlighted, while every other eligible Baltic share is shown as an unlabelled transparent background point. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -6993,7 +7002,7 @@ The common explorer includes every eligible share, all funds and every portfolio
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-![TKM1T mean return and historical dividend yield with all portfolios](figures/return_dividend_all_portfolios.png?v=9b46f9677dcd)
+<div class="dividend-explorer" data-highlight="TKM1T" data-static="figures/return_dividend_all_portfolios.png?v=9b46f9677dcd"><noscript><img src="figures/return_dividend_all_portfolios.png?v=9b46f9677dcd" alt="TKM1T mean return and historical dividend yield with all portfolios"></noscript></div>
 
 The selected share is highlighted, while every other eligible Baltic share is shown as an unlabelled transparent background point. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -7321,7 +7330,7 @@ The common explorer includes every eligible share, all funds and every portfolio
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-![ROE1L mean return and historical dividend yield with all portfolios](figures/return_dividend_all_portfolios.png?v=9b46f9677dcd)
+<div class="dividend-explorer" data-highlight="ROE1L" data-static="figures/return_dividend_all_portfolios.png?v=9b46f9677dcd"><noscript><img src="figures/return_dividend_all_portfolios.png?v=9b46f9677dcd" alt="ROE1L mean return and historical dividend yield with all portfolios"></noscript></div>
 
 The selected share is highlighted, while every other eligible Baltic share is shown as an unlabelled transparent background point. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -35251,7 +35260,8 @@ function initialiseFrontierExplorer(box) {
       <div class="frontier-panel"><label>Left frontier model<select class="front-model-left">${models.map(x=>`<option${x==='Markowitz'?' selected':''}>${x}</option>`).join('')}</select></label><canvas class="frontier-canvas"></canvas></div>
       <div class="frontier-panel"><label>Right frontier model<select class="front-model-right">${models.map(x=>`<option${x==='NetSD'?' selected':''}>${x}</option>`).join('')}</select></label><canvas class="frontier-canvas"></canvas></div>
     </div><p class="frontier-status"></p>
-    <details class="frontier-dividend-copy" open><summary><strong>Mean return and five-year average dividend yield versus all portfolios</strong></summary><img src="figures/return_dividend_all_portfolios.png?v=${reportVersion}" alt="Mean return and five-year average dividend yield versus all portfolios"><p>The horizontal axis is realised mean one-period return. The vertical axis is the five-year average annual historical dividend yield measured using the share price at each ex-dividend date. Other eligible shares are transparent background points; portfolios are labelled. This is historical and is not a dividend forecast.</p></details>`;
+    <details class="frontier-dividend-copy" open><summary><strong>Mean return and five-year average dividend yield versus all portfolios</strong></summary><div class="dividend-explorer" data-highlight="${box.dataset.highlight||''}" data-static="figures/return_dividend_all_portfolios.png"></div><p>The horizontal axis is realised mean one-period return. The vertical axis is the five-year average annual historical dividend yield measured using the share price at each ex-dividend date. Other eligible shares are transparent background points; portfolios are labelled. This is historical and is not a dividend forecast.</p></details>`;
+    initialiseDividendExplorer(box.querySelector('.dividend-explorer'));
     const canvases=[...box.querySelectorAll('canvas')], leftModel=box.querySelector('.front-model-left'), rightModel=box.querySelector('.front-model-right'), compareSelect=box.querySelector('.frontier-multiselect'), xzoom=box.querySelector('.front-xzoom'), yzoom=box.querySelector('.front-yzoom'), status=box.querySelector('.frontier-status');
     function draw(canvas,modelValue){
       const d=data.models[modelValue], frontier=d.frontier, points=d.portfolios;
@@ -35335,5 +35345,91 @@ function initialiseCumulativeExplorer(box) {
 }
 document.querySelectorAll('details.cumulative-components').forEach(function(d){d.addEventListener('toggle',function(){if(d.open){const box=d.querySelector('.cumulative-explorer');if(box)initialiseCumulativeExplorer(box);}});if(d.open){const box=d.querySelector('.cumulative-explorer');if(box)initialiseCumulativeExplorer(box);}});
 document.querySelectorAll('details.report-section').forEach(function(section){section.addEventListener('toggle',function(){if(!section.open)return;section.querySelectorAll('details.dominance-components[open] .dominance-explorer').forEach(initialiseDominanceExplorer);section.querySelectorAll('details.frontier-components[open] .frontier-explorer').forEach(initialiseFrontierExplorer);section.querySelectorAll('details.cumulative-components[open] .cumulative-explorer').forEach(initialiseCumulativeExplorer);});});
+let dividendScatterData;
+function initialiseDividendExplorer(box) {
+  if(!box||box.dataset.loaded)return;
+  box.dataset.loaded='loading';
+  if(!dividendScatterData)dividendScatterData=fetch('interactive/return_dividend.json?v='+reportVersion).then(r=>{if(!r.ok)throw Error(`HTTP ${r.status}`);return r.json();});
+  dividendScatterData.then(data=>{
+    const highlight=box.dataset.highlight||'', points=data.points;
+    const ns='http://www.w3.org/2000/svg';
+    const make=(tag,attrs={},parent=null,text=null)=>{const e=document.createElementNS(ns,tag);Object.entries(attrs).forEach(([k,v])=>e.setAttribute(k,v));if(text!==null)e.textContent=text;if(parent)parent.appendChild(e);return e;};
+    box.innerHTML='<div class="dividend-toolbar"><span>Hover for details · click a point to pin/unpin its name.</span><button type="button" class="dividend-clear">Clear labels</button><button type="button" class="dividend-save">Save SVG</button></div><div class="dividend-plot"></div><div class="dividend-tooltip" role="tooltip" hidden></div><p class="dividend-selection" aria-live="polite"></p>';
+    const svg=make('svg',{viewBox:'0 0 1000 520',role:'group','aria-label':'Mean daily return and five-year average dividend yield','font-family':'system-ui, sans-serif','font-size':11},box.querySelector('.dividend-plot'));
+    make('title',{},svg,'Mean return and five-year average dividend yield versus all portfolios');
+    make('rect',{x:0,y:0,width:1000,height:520,fill:'white'},svg);
+    const L=78,R=975,T=45,B=452;
+    let xmin=Math.min(0,...points.map(p=>p.mean)), xmax=Math.max(0,...points.map(p=>p.mean));
+    const xp=Math.max((xmax-xmin)*.09,.0001);xmin-=xp;xmax+=xp;
+    const ymax=Math.max(1,...points.map(p=>p.yield_percent))*1.12,ymin=-ymax*.035;
+    const sx=x=>L+(x-xmin)/(xmax-xmin)*(R-L),sy=y=>B-(y-ymin)/(ymax-ymin)*(B-T);
+    for(let j=0;j<=6;j++){
+      const x=xmin+(xmax-xmin)*j/6, px=sx(x);
+      make('line',{x1:px,y1:T,x2:px,y2:B,stroke:'#e6edef'},svg);
+      make('text',{x:px,y:B+22,'text-anchor':'middle',fill:'#405968'},svg,x.toFixed(3));
+    }
+    for(let j=0;j<=5;j++){
+      const y=ymax*j/5,py=sy(y);
+      make('line',{x1:L,y1:py,x2:R,y2:py,stroke:j===0?'#6d818c':'#e6edef','stroke-width':j===0?1.4:1},svg);
+      make('text',{x:L-10,y:py+4,'text-anchor':'end',fill:'#405968'},svg,y.toFixed(1));
+    }
+    make('path',{d:`M ${L} ${T} V ${B} H ${R}`,fill:'none',stroke:'#8ea3ad'},svg);
+    if(xmin<0&&xmax>0)make('line',{x1:sx(0),y1:T,x2:sx(0),y2:B,stroke:'#7d919b','stroke-dasharray':'4 4'},svg);
+    make('text',{x:(L+R)/2,y:498,'text-anchor':'middle',fill:'#29485a','font-size':13},svg,'Mean daily return (%)');
+    make('text',{x:18,y:(T+B)/2,transform:`rotate(-90 18 ${(T+B)/2})`,'text-anchor':'middle',fill:'#29485a','font-size':13},svg,'Five-year average annual dividend yield (%)');
+    const legend=[['#788c97','Shares'],['#d28b00','Accumulating funds: no cash payout'],['#007f8b','Portfolios'],['#c2185b','Selected asset']];
+    legend.forEach(([colour,name],i)=>{const x=L+[0,135,460,610][i];if(i===1)make('path',{d:`M ${x} 13 L ${x+5} 22 L ${x-5} 22 Z`,fill:colour},svg);else if(i===2)make('path',{d:`M ${x} 13 L ${x+5} 18 L ${x} 23 L ${x-5} 18 Z`,fill:colour},svg);else make('circle',{cx:x,cy:18,r:4,fill:colour},svg);make('text',{x:x+10,y:22,fill:'#29485a'},svg,name);});
+    const pointLayer=make('g',{},svg), labelLayer=make('g',{'class':'dividend-labels','pointer-events':'none'},svg);
+    const pinned=new Set(points.filter(p=>p.type==='portfolio'||p.id===highlight).map(p=>p.id));
+    const nodes=new Map(), colours=new Map(), tip=box.querySelector('.dividend-tooltip');
+    const palette=['#111111','#0072b2','#d55e00','#009e73','#6a3d9a','#b2182b','#008080'];let pi=0;
+    points.forEach(p=>{
+      const x=sx(p.mean),y=sy(p.yield_percent),colour=p.id===highlight?'#c2185b':p.type==='portfolio'?palette[pi++%palette.length]:p.type==='fund'?'#d28b00':'#788c97';
+      colours.set(p.id,colour);
+      const node=make('g',{'class':'dividend-point','data-name':p.id,tabindex:0,role:'button','aria-label':`${p.label}: ${p.name}. Mean return ${p.mean.toFixed(5)}%, dividend yield ${p.yield_percent.toFixed(3)}%. Click to pin or unpin.`,style:'cursor:pointer'},pointLayer);
+      make('circle',{cx:x,cy:y,r:9,fill:'transparent'},node);
+      const attrs={fill:colour,'fill-opacity':p.id===highlight||p.type==='portfolio'?1:p.type==='fund'?.6:.33,stroke:colour,'stroke-width':p.id===highlight?2:1};
+      if(p.type==='portfolio')make('path',{...attrs,d:`M ${x} ${y-6} L ${x+6} ${y} L ${x} ${y+6} L ${x-6} ${y} Z`},node);
+      else if(p.type==='fund')make('path',{...attrs,d:`M ${x} ${y-6} L ${x+6} ${y+4} L ${x-6} ${y+4} Z`},node);
+      else make('circle',{...attrs,cx:x,cy:y,r:p.id===highlight?6:4.5},node);
+      nodes.set(p.id,node);
+      const showTip=e=>{
+        const label=p.type==='share'?`${p.id} — ${p.name}`:p.name;
+        tip.textContent=`${label}\nMean daily return: ${p.mean.toFixed(5)}%\n5-year average dividend yield: ${p.yield_percent.toFixed(3)}%`;
+        tip.hidden=false;
+        const rect=box.getBoundingClientRect(),nr=node.getBoundingClientRect();
+        const x=(Number.isFinite(e.clientX)?e.clientX:nr.x+nr.width/2)-rect.left;
+        const y=(Number.isFinite(e.clientY)?e.clientY:nr.y)-rect.top;
+        tip.style.left=Math.max(4,Math.min(x+14,rect.width-tip.offsetWidth-8))+'px';
+        tip.style.top=Math.max(4,Math.min(y+14,rect.height-tip.offsetHeight-4))+'px';
+      };
+      node.addEventListener('pointerenter',showTip);node.addEventListener('pointermove',showTip);
+      node.addEventListener('pointerleave',()=>tip.hidden=true);node.addEventListener('focus',showTip);node.addEventListener('blur',()=>tip.hidden=true);
+      const toggle=()=>{if(pinned.has(p.id))pinned.delete(p.id);else pinned.add(p.id);renderLabels();};
+      node.addEventListener('click',toggle);node.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle();}if(e.key==='Escape')tip.hidden=true;});
+    });
+    function renderLabels(){
+      labelLayer.replaceChildren();const occupied=[];
+      points.filter(p=>pinned.has(p.id)).forEach(p=>{
+        const x=sx(p.mean),y=sy(p.yield_percent),w=Math.min(225,p.label.length*6.5+6),h=17;
+        const offsets=[[10,-12],[10,19],[-w-10,-12],[-w-10,19],[10,-33],[10,40],[-w-10,-33],[-w-10,40]];
+        let best=null,score=Infinity;
+        offsets.forEach(([dx,dy])=>{const r={x:Math.max(L,Math.min(R-w,x+dx)),y:Math.max(T+13,Math.min(B-4,y+dy)),w,h};const overlap=occupied.reduce((s,o)=>s+(r.x<o.x+o.w&&r.x+r.w>o.x&&r.y-h<o.y&&r.y>o.y-o.h?1:0),0);if(overlap<score){score=overlap;best=r;}});
+        occupied.push(best);
+        make('line',{x1:x,y1:y,x2:best.x+w/2,y2:best.y-5,stroke:colours.get(p.id),'stroke-opacity':.45,'stroke-width':.8},labelLayer);
+        make('text',{'class':'dividend-pinned-label','data-name':p.id,x:best.x,y:best.y,fill:p.type==='share'?'#29485a':colours.get(p.id),'font-size':11,'font-weight':600,stroke:'white','stroke-width':3,'paint-order':'stroke'},labelLayer,p.label);
+      });
+      nodes.forEach((node,name)=>node.setAttribute('aria-pressed',String(pinned.has(name))));
+      box.querySelector('.dividend-selection').textContent=`${pinned.size} names pinned · ${data.observations} observations (${data.sample_start}–${data.sample_end}). Click again to remove a name.`;
+    }
+    box.querySelector('.dividend-clear').addEventListener('click',()=>{pinned.clear();renderLabels();});
+    box.querySelector('.dividend-save').addEventListener('click',()=>{const blob=new Blob([new XMLSerializer().serializeToString(svg)],{type:'image/svg+xml;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='return_dividend_'+(highlight||'all')+'.svg';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);});
+    if(box.dataset.static){const fallback=document.createElement('details');fallback.className='dividend-static';const summary=document.createElement('summary');summary.textContent='Static PNG';fallback.appendChild(summary);const img=document.createElement('img');img.src=box.dataset.static+(box.dataset.static.includes('?')?'&':'?')+'report='+reportVersion;img.alt='Static mean-return and dividend-yield comparison';fallback.appendChild(img);box.appendChild(fallback);}
+    renderLabels();box.dataset.loaded='yes';
+  }).catch(err=>{box.dataset.loaded='';box.textContent='Interactive return/dividend graph could not be loaded: '+err.message;});
+}
+const dividendObserver=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){initialiseDividendExplorer(e.target);dividendObserver.unobserve(e.target);}}),{rootMargin:'200px'});
+document.querySelectorAll('.dividend-explorer').forEach(box=>dividendObserver.observe(box));
+
 </script>
 </body></html>
