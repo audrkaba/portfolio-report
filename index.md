@@ -150,7 +150,7 @@ Integrated share-and-fund comparisons use 857 common observations through 2026-1
 <details markdown="1" class="report-section" id="analytics-1-1">
 <summary><strong>1.1. Shares and funds: profiles and trade signals</strong></summary>
 
-<div class="profile-filters"><fieldset class="signal-filters"><legend>Current execution decision</legend><label><input type="checkbox" value="BUY" checked> BUY</label>&nbsp;&nbsp;<label><input type="checkbox" value="WAIT" checked> WAIT</label>&nbsp;&nbsp;<label><input type="checkbox" value="SELL" checked> SELL</label>&nbsp;&nbsp;<label><input type="checkbox" value="HOLD" checked> HOLD</label>&nbsp;&nbsp;<label><input type="checkbox" value="SKIP" checked> SKIP</label><div class="decision-key"><strong>WAIT</strong> = the optimiser proposes a trade, but technical timing does not yet support execution. <strong>HOLD</strong> = the selected model proposes no quantity change. <strong>SKIP</strong> = the proposed purchase is below the minimum material-trade rule (EUR 100 or 1% portfolio weight).</div></fieldset><fieldset class="netsd-filters"><legend>netSD after adding this share</legend><label><input type="checkbox" value="INCREASE" checked> Increases</label>&nbsp;&nbsp;<label><input type="checkbox" value="DECREASE" checked> Decreases</label>&nbsp;&nbsp;<label><input type="checkbox" value="UNCHANGED" checked> Unchanged</label></fieldset><fieldset class="dividend-filters"><legend>Dividends paid at least once in 2022–2026</legend><label><input type="checkbox" value="PAID" checked> Paid dividends</label>&nbsp;&nbsp;<label><input type="checkbox" value="NONE" checked> No dividends paid</label></fieldset><span class="profile-filter-count" aria-live="polite"></span></div>
+<div class="profile-filters"><fieldset class="instrument-type-filters"><legend>Instrument type</legend><label><input type="radio" name="profile-instrument-type" value="ALL" checked> All</label><label><input type="radio" name="profile-instrument-type" value="SHARE"> Shares</label><label><input type="radio" name="profile-instrument-type" value="FUND"> Funds</label></fieldset><fieldset class="signal-filters"><legend>Current execution decision</legend><label><input type="checkbox" value="BUY" checked> BUY</label>&nbsp;&nbsp;<label><input type="checkbox" value="WAIT" checked> WAIT</label>&nbsp;&nbsp;<label><input type="checkbox" value="SELL" checked> SELL</label>&nbsp;&nbsp;<label><input type="checkbox" value="HOLD" checked> HOLD</label>&nbsp;&nbsp;<label><input type="checkbox" value="SKIP" checked> SKIP</label><div class="decision-key"><strong>WAIT</strong> = the optimiser proposes a trade, but technical timing does not yet support execution. <strong>HOLD</strong> = the selected model proposes no quantity change. <strong>SKIP</strong> = the proposed purchase is below the minimum material-trade rule (EUR 100 or 1% portfolio weight).</div></fieldset><fieldset class="netsd-filters"><legend>netSD after adding this share</legend><label><input type="checkbox" value="INCREASE" checked> Increases</label>&nbsp;&nbsp;<label><input type="checkbox" value="DECREASE" checked> Decreases</label>&nbsp;&nbsp;<label><input type="checkbox" value="UNCHANGED" checked> Unchanged</label></fieldset><fieldset class="dividend-filters"><legend>Dividends paid at least once in 2022–2026</legend><label><input type="checkbox" value="PAID" checked> Paid dividends</label>&nbsp;&nbsp;<label><input type="checkbox" value="NONE" checked> No dividends paid</label></fieldset><span class="profile-filter-count" aria-live="polite"></span></div>
 <!-- UPDATE3_PROFILES_START -->
 <h4>Funds</h4>
 <details markdown="1" class="stock-profile fund-profile" id="fund-SE0015192323" data-signal="WAIT" data-netsd-effect="INCREASE" data-dividend-status="NONE">
@@ -38943,16 +38943,19 @@ document.querySelectorAll('.profile-filters').forEach(function(filterBlock) {
     const signalFilters=[...filterBlock.querySelectorAll('.signal-filters input[type="checkbox"]')];
     const netsdFilters=[...filterBlock.querySelectorAll('.netsd-filters input[type="checkbox"]')];
     const dividendFilters=[...filterBlock.querySelectorAll('.dividend-filters input[type="checkbox"]')];
-    const filters=[...signalFilters,...netsdFilters,...dividendFilters];
+    const instrumentFilters=[...filterBlock.querySelectorAll('.instrument-type-filters input[type="radio"]')];
+    const filters=[...signalFilters,...netsdFilters,...dividendFilters,...instrumentFilters];
   const profiles=[...section.querySelectorAll('details.stock-profile')];
   const counter=filterBlock.querySelector('.profile-filter-count');
   function applyProfileFilters() {
       const selectedSignals=new Set(signalFilters.filter(box=>box.checked).map(box=>box.value));
       const selectedNetsdEffects=new Set(netsdFilters.filter(box=>box.checked).map(box=>box.value));
       const selectedDividendStatuses=new Set(dividendFilters.filter(box=>box.checked).map(box=>box.value));
+    const selectedType=instrumentFilters.find(box=>box.checked)?.value || 'ALL';
     let visible=0;
     profiles.forEach(function(profile) {
-        const show=selectedSignals.has(profile.dataset.signal) && selectedNetsdEffects.has(profile.dataset.netsdEffect) && selectedDividendStatuses.has(profile.dataset.dividendStatus);
+        const type=profile.classList.contains('fund-profile')?'FUND':'SHARE';
+        const show=(selectedType==='ALL'||selectedType===type) && selectedSignals.has(profile.dataset.signal) && selectedNetsdEffects.has(profile.dataset.netsdEffect) && selectedDividendStatuses.has(profile.dataset.dividendStatus);
       profile.hidden=!show;
       if (!show) profile.open=false;
       if (show) visible++;
@@ -38970,7 +38973,7 @@ document.querySelectorAll('details.portfolio-sensitivity').forEach(function(sens
   });
 });
 
-const reportVersion='08b56cd02f87';
+const reportVersion='23730c9c63e1';
 const palette = ['#1b1b1b','#e41a1c','#377eb8','#4daf4a','#984ea3','#ff7f00','#a65628','#f781bf','#008080','#6a3d9a','#b2182b','#2166ac','#1b9e77','#d95f02'];
 const linePatterns = [[],[10,5],[2,4],[10,4,2,4],[14,5],[6,3],[2,3,8,3],[12,3,3,3]];
 function initialiseDominanceExplorer(box) {
