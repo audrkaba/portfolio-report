@@ -128,6 +128,12 @@ a { color:var(--accent); }
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
+<aside style="margin:1rem 0 1.5rem;padding:1rem 1.2rem;border:2px solid #007f8b;border-radius:8px;background:#eef8f8">
+<strong>New: Update3 with Swedbank Robur funds.</strong> The extension compares sales-allowed and no-sales portfolios, limits the allocation to two or three funds, and requires Emerging Europe C under the Russia/China exposure screen. Shares and funds are shown separately in Section 1.1 of the new report.<br>
+<a href="./report/update3.html"><strong>Open the interactive HTML report</strong></a> &nbsp;|&nbsp;
+<a href="./report/Update3_Swedbank_Robur_funds_report.docx"><strong>Download the DOCX report</strong></a>
+</aside>
+
 
 ---
 
