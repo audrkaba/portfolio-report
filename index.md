@@ -53,12 +53,17 @@ table th span { writing-mode:inherit !important; transform:none !important; whit
 .trade-decision-table th span { display:inline-block; writing-mode:inherit; transform:none; white-space:nowrap; }
 .trade-decision-table td { padding:.3rem .08rem; text-align:center; overflow-wrap:anywhere; font-variant-numeric:tabular-nums; }
 .trade-decision-table th:nth-child(3),.trade-decision-table td:nth-child(3) { width:10%; text-align:left; }
-.profile-filters { position:sticky; top:0; z-index:8; display:flex; flex-wrap:wrap; align-items:center; gap:.55rem 1rem; margin:.75rem 0 1rem; padding:.7rem .9rem; border:1px solid #b9d1d8; border-radius:7px; background:#eef7f8f2; box-shadow:0 2px 7px #20304016; }
-  .profile-filters fieldset { display:flex; flex-wrap:wrap; align-items:center; gap:.45rem .8rem; margin:0; padding:.35rem .65rem; border:1px solid #c6d8de; border-radius:6px; }
-  .profile-filters legend { padding:0 .3rem; color:#29485a; font-size:.78rem; font-weight:750; }
-  .profile-filters label { display:inline-flex; align-items:center; gap:.35rem; cursor:pointer; font-weight:650; }
-.profile-filters input { width:1.05rem; height:1.05rem; accent-color:var(--accent); }
-.profile-filter-count { margin-left:auto; color:var(--muted); font-size:.88rem; }
+.profile-filters { position:static; display:flex; flex-wrap:wrap; align-items:center; gap:.3rem .5rem; margin:.5rem 0 .7rem; padding:.3rem .5rem; border:1px solid #b9d1d8; border-radius:7px; background:#eef7f8; }
+.profile-filters fieldset { display:flex; flex-wrap:nowrap; align-items:center; gap:.45rem; min-width:0; margin:0; padding:.18rem .4rem .25rem; border:1px solid #c6d8de; border-radius:5px; font-size:.75rem; }
+.profile-filters legend { padding:0 .2rem; color:#29485a; font-size:.68rem; font-weight:650; }
+.profile-filters label { display:inline-flex; align-items:center; gap:.22rem; cursor:pointer; font-weight:600; white-space:nowrap; }
+.profile-filters input { width:.85rem; height:.85rem; margin:0; accent-color:var(--accent); }
+.profile-filter-count { margin-left:auto; color:var(--muted); font-size:.72rem; white-space:nowrap; }
+.profile-filter-help { position:relative; margin:0; padding:0; border:0; background:transparent; }
+.profile-filter-help > summary { display:block; list-style:none; width:1.15rem; height:1.15rem; padding:0; border:1px solid #83aeb7; border-radius:50%; color:#24536a; text-align:center; font-size:.75rem; line-height:1.05rem; }
+.profile-filter-help > summary::-webkit-details-marker { display:none; }
+.profile-filter-help .decision-key { position:absolute; z-index:20; top:1.5rem; left:0; width:min(360px,75vw); padding:.65rem .8rem; border:1px solid #9abfc7; border-radius:6px; background:white; color:#29485a; box-shadow:0 4px 18px #20304025; font-size:.8rem; line-height:1.45; }
+@media(max-width:650px) { .profile-filters { gap:.25rem; } .profile-filters fieldset { flex-wrap:wrap; max-width:100%; } .profile-filter-help .decision-key { left:auto; right:0; } }
 .cdf-with-key { display:grid; grid-template-columns:minmax(0,4fr) minmax(170px,1fr); gap:12px; align-items:center; }
 .cdf-with-key img { width:100%; margin:.5rem 0; }
 .cdf-with-key .cdf-key { max-height:520px; object-fit:contain; }
@@ -167,7 +172,7 @@ Integrated share-and-fund comparisons use 857 common observations through 2026-1
 <details markdown="1" class="report-section" id="analytics-1-1">
 <summary><strong>1.1. Shares and funds: profiles and trade signals</strong></summary>
 
-<div class="profile-filters"><fieldset class="instrument-type-filters"><legend>Instrument type</legend><label><input type="radio" name="profile-instrument-type" value="ALL" checked> All</label><label><input type="radio" name="profile-instrument-type" value="SHARE"> Shares</label><label><input type="radio" name="profile-instrument-type" value="FUND"> Funds</label></fieldset><fieldset class="signal-filters"><legend>Current execution decision</legend><label><input type="checkbox" value="BUY" checked> BUY</label>&nbsp;&nbsp;<label><input type="checkbox" value="WAIT" checked> WAIT</label>&nbsp;&nbsp;<label><input type="checkbox" value="SELL" checked> SELL</label>&nbsp;&nbsp;<label><input type="checkbox" value="HOLD" checked> HOLD</label>&nbsp;&nbsp;<label><input type="checkbox" value="SKIP" checked> SKIP</label><div class="decision-key"><strong>WAIT</strong> = the optimiser proposes a trade, but technical timing does not yet support execution. <strong>HOLD</strong> = the selected model proposes no quantity change. <strong>SKIP</strong> = the proposed purchase is below the minimum material-trade rule (EUR 100 or 1% portfolio weight).</div></fieldset><fieldset class="netsd-filters"><legend>netSD after adding this share</legend><label><input type="checkbox" value="INCREASE" checked> Increases</label>&nbsp;&nbsp;<label><input type="checkbox" value="DECREASE" checked> Decreases</label>&nbsp;&nbsp;<label><input type="checkbox" value="UNCHANGED" checked> Unchanged</label></fieldset><fieldset class="dividend-filters"><legend>Dividends paid at least once in 2022–2026</legend><label><input type="checkbox" value="PAID" checked> Paid dividends</label>&nbsp;&nbsp;<label><input type="checkbox" value="NONE" checked> No dividends paid</label></fieldset><span class="profile-filter-count" aria-live="polite"></span></div>
+<div class="profile-filters"><fieldset class="instrument-type-filters"><legend>Type</legend><label><input type="radio" name="profile-instrument-type" value="ALL" checked> All</label><label><input type="radio" name="profile-instrument-type" value="SHARE"> Shares</label><label><input type="radio" name="profile-instrument-type" value="FUND"> Funds</label></fieldset><fieldset class="signal-filters"><legend>Decision</legend><label><input type="checkbox" value="BUY" checked> BUY</label><label><input type="checkbox" value="WAIT" checked> WAIT</label><label><input type="checkbox" value="SELL" checked> SELL</label><label><input type="checkbox" value="HOLD" checked> HOLD</label><label><input type="checkbox" value="SKIP" checked> SKIP</label><details markdown="1" class="profile-filter-help"><summary aria-label="Explain WAIT, HOLD and SKIP" title="Decision definitions">?</summary><div class="decision-key"><strong>WAIT</strong> = the optimiser proposes a trade, but technical timing does not yet support execution. <strong>HOLD</strong> = the selected model proposes no quantity change. <strong>SKIP</strong> = the proposed purchase is below the minimum material-trade rule (EUR 100 or 1% portfolio weight).</div></details></fieldset><fieldset class="netsd-filters"><legend>netSD after addition</legend><label><input type="checkbox" value="INCREASE" checked> Increases</label><label><input type="checkbox" value="DECREASE" checked> Decreases</label><label><input type="checkbox" value="UNCHANGED" checked> Unchanged</label></fieldset><fieldset class="dividend-filters"><legend title="Dividends paid at least once in 2022-2026">Dividends (5 years)</legend><label><input type="checkbox" value="PAID" checked> Paid</label><label><input type="checkbox" value="NONE" checked> None</label></fieldset><span class="profile-filter-count" aria-live="polite"></span></div>
 <!-- UPDATE3_PROFILES_START -->
 <h4>Funds selected for Update3, no sales</h4>
 <details markdown="1" class="stock-profile fund-profile" id="fund-SE0015192323" data-signal="WAIT" data-netsd-effect="INCREASE" data-dividend-status="NONE">
@@ -35110,7 +35115,7 @@ document.querySelectorAll('.profile-filters').forEach(function(filterBlock) {
       if (!show) profile.open=false;
       if (show) visible++;
     });
-    if (counter) counter.textContent=`${visible} of ${profiles.length} shares and funds shown`;
+    if (counter) counter.textContent=`${visible} / ${profiles.length} shown`;
   }
   filters.forEach(box=>box.addEventListener('change',applyProfileFilters));
   applyProfileFilters();
@@ -35123,7 +35128,7 @@ document.querySelectorAll('details.portfolio-sensitivity').forEach(function(sens
   });
 });
 
-const reportVersion='00484718436c';
+const reportVersion='9bc556202740';
 const palette = ['#1b1b1b','#e41a1c','#377eb8','#4daf4a','#984ea3','#ff7f00','#a65628','#f781bf','#008080','#6a3d9a','#b2182b','#2166ac','#1b9e77','#d95f02'];
 const linePatterns = [[],[10,5],[2,4],[10,4,2,4],[14,5],[6,3],[2,3,8,3],[12,3,3,3]];
 function initialiseDominanceExplorer(box) {
