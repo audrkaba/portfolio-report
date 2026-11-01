@@ -161,7 +161,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - updated 2026-10-31 22:20 (Europe/Vilnius); return analysis through 2026-10-30; valuation prices through 2026-10-30
+# Baltic investment plan - updated 2026-11-01 16:43 (Europe/Vilnius); return analysis through 2026-10-30; valuation prices through 2026-10-30
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -178,7 +178,7 @@ Integrated share-and-fund comparisons use 857 common observations through 2026-1
 <summary><strong>1. Share analytics</strong></summary>
 
 <details markdown="1" class="report-section" id="analytics-1-1">
-<summary><strong>1.1. Shares and funds: profiles and trade signals</strong></summary>
+<summary><strong>1.1. Shares and funds: profiles and trade signals</strong></summary><!-- STOCHASTIC_PROFILE_NOTE --><p>Instruments shown here are exactly the positive first-stage holdings of the stochastic Update3 no-sales plan in section 1.4. Conditional recourse trades are listed separately there.</p>
 
 <div class="profile-filters"><fieldset class="instrument-type-filters"><legend>Type</legend><label><input type="radio" name="profile-instrument-type" value="ALL" checked> All</label><label><input type="radio" name="profile-instrument-type" value="SHARE"> Shares</label><label><input type="radio" name="profile-instrument-type" value="FUND"> Funds</label></fieldset><fieldset class="signal-filters"><legend>Decision</legend><label><input type="checkbox" value="BUY" checked> BUY</label><label><input type="checkbox" value="WAIT" checked> WAIT</label><label><input type="checkbox" value="SELL" checked> SELL</label><label><input type="checkbox" value="HOLD" checked> HOLD</label><label><input type="checkbox" value="SKIP" checked> SKIP</label><details markdown="1" class="profile-filter-help"><summary aria-label="Explain WAIT, HOLD and SKIP" title="Decision definitions">?</summary><div class="decision-key"><strong>WAIT</strong> = the optimiser proposes a trade, but technical timing does not yet support execution. <strong>HOLD</strong> = the selected model proposes no quantity change. <strong>SKIP</strong> = the proposed purchase is below the minimum material-trade rule (EUR 100 or 1% portfolio weight).</div></details></fieldset><fieldset class="netsd-filters"><legend>netSD after addition</legend><label><input type="checkbox" value="INCREASE" checked> Increases</label><label><input type="checkbox" value="DECREASE" checked> Decreases</label><label><input type="checkbox" value="UNCHANGED" checked> Unchanged</label></fieldset><fieldset class="dividend-filters"><legend title="Dividends paid at least once in 2022-2026">Dividends (5 years)</legend><label><input type="checkbox" value="PAID" checked> Paid</label><label><input type="checkbox" value="NONE" checked> None</label></fieldset><span class="profile-filter-count" aria-live="polite"></span></div>
 <!-- UPDATE3_PROFILES_START -->
@@ -191,7 +191,7 @@ Integrated share-and-fund comparisons use 857 common observations through 2026-1
 <details markdown="1" class="stock-profile fund-profile" id="fund-SE0015192349" data-signal="WAIT" data-netsd-effect="INCREASE" data-dividend-status="NONE">
 <summary><strong>Access Edge Global C</strong> | current action: WAIT | allocation target EUR 583.78</summary>
 <p><a href="https://swedbankrobur.fondlista.se/en/details/SE0015192349" target="_blank" rel="noopener">Open Access Edge Global C on Swedbank Robur ↗</a></p>
-<table class="stock-summary-table"><thead><tr><th><span>Current units</span></th><th><span>Target units</span></th><th><span>Change</span></th><th><span>Target amount</span></th><th><span>Weight</span></th><th><span>Last NAV</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Stochastic RSI</span></th><th><span>Cash dividends</span></th><th><span>Annual fund expenses</span></th><th><span>Estimated annual expense</span></th><th><span>HHI contribution</span></th><th><span>Execution decision</span></th></tr></thead><tbody><tr><td>0</td><td>30</td><td>+30</td><td>EUR 583.78</td><td>3.91%</td><td>EUR 19.4592</td><td>0.556391</td><td>74 / 0</td><td>55.99</td><td>Bearish</td><td>0.546</td><td>Accumulating: no cash payout</td><td>0.28%</td><td>EUR 1.63</td><td>0.001525 (1.92% of HHI)</td><td>WAIT</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current units</span></th><th><span>Target units</span></th><th><span>Change</span></th><th><span>Target amount</span></th><th><span>Weight</span></th><th><span>Last NAV</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Stochastic RSI</span></th><th><span>Cash dividends</span></th><th><span>Annual fund expenses</span></th><th><span>Estimated annual expense</span></th><th><span>HHI contribution</span></th><th><span>Execution decision</span></th></tr></thead><tbody><tr><td>0</td><td>30</td><td>+30</td><td>EUR 583.78</td><td>3.89%</td><td>EUR 19.4592</td><td>0.556391</td><td>74 / 0</td><td>55.99</td><td>Bearish</td><td>0.546</td><td>Accumulating: no cash payout</td><td>0.28%</td><td>EUR 1.63</td><td>0.001525 (1.92% of HHI)</td><td>WAIT</td></tr></tbody></table>
 
 
 
@@ -533,13 +533,13 @@ Integrated share-and-fund comparisons use 857 common observations through 2026-1
   </tbody>
 </table><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
 <div class="dominance-explorer" data-asset="Access Edge Global C"></div><details markdown="1" class=""><summary><strong>Static FSD, SSD and TSD comparison</strong></summary>
-<img src="figures/stock_profiles/SE0015192349_FSD_SSD_TSD.png?v=795d226573ac" alt="Access Edge Global C: static components">
+<img src="figures/stock_profiles/SE0015192349_FSD_SSD_TSD.png?v=af283db73e79" alt="Access Edge Global C: static components">
 </details>
 </details>
 </details>
 <details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this fund highlighted</strong></summary>
 <div class="frontier-explorer" data-highlight="Access Edge Global C"></div><details markdown="1" class=""><summary><strong>Static five-model comparison</strong></summary>
-<img src="figures/stock_profiles/SE0015192349_all_frontiers.png?v=0614539ab380" alt="Access Edge Global C: five models">
+<img src="figures/stock_profiles/SE0015192349_all_frontiers.png?v=3bc946487d09" alt="Access Edge Global C: five models">
 </details>
 </details>
 
@@ -602,7 +602,7 @@ Integrated share-and-fund comparisons use 857 common observations through 2026-1
 <details markdown="1" class="stock-profile fund-profile" id="fund-SE0019354200" data-signal="WAIT" data-netsd-effect="INCREASE" data-dividend-status="NONE">
 <summary><strong>Emerging Europe C</strong> | current action: WAIT | allocation target EUR 511.19</summary>
 <p><a href="https://swedbankrobur.fondlista.se/en/details/SE0019354200" target="_blank" rel="noopener">Open Emerging Europe C on Swedbank Robur ↗</a></p>
-<table class="stock-summary-table"><thead><tr><th><span>Current units</span></th><th><span>Target units</span></th><th><span>Change</span></th><th><span>Target amount</span></th><th><span>Weight</span></th><th><span>Last NAV</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Stochastic RSI</span></th><th><span>Cash dividends</span></th><th><span>Annual fund expenses</span></th><th><span>Estimated annual expense</span></th><th><span>HHI contribution</span></th><th><span>Execution decision</span></th></tr></thead><tbody><tr><td>0</td><td>22</td><td>+22</td><td>EUR 511.19</td><td>3.42%</td><td>EUR 23.2358</td><td>0.511278</td><td>68 / 0</td><td>52.50</td><td>Bullish</td><td>0.879</td><td>Accumulating: no cash payout</td><td>1.60%</td><td>EUR 8.18</td><td>0.001170 (1.47% of HHI)</td><td>WAIT</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current units</span></th><th><span>Target units</span></th><th><span>Change</span></th><th><span>Target amount</span></th><th><span>Weight</span></th><th><span>Last NAV</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Stochastic RSI</span></th><th><span>Cash dividends</span></th><th><span>Annual fund expenses</span></th><th><span>Estimated annual expense</span></th><th><span>HHI contribution</span></th><th><span>Execution decision</span></th></tr></thead><tbody><tr><td>0</td><td>22</td><td>+22</td><td>EUR 511.19</td><td>3.41%</td><td>EUR 23.2358</td><td>0.511278</td><td>68 / 0</td><td>52.50</td><td>Bullish</td><td>0.879</td><td>Accumulating: no cash payout</td><td>1.60%</td><td>EUR 8.18</td><td>0.001170 (1.47% of HHI)</td><td>WAIT</td></tr></tbody></table>
 
 
 
@@ -944,13 +944,13 @@ Integrated share-and-fund comparisons use 857 common observations through 2026-1
   </tbody>
 </table><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
 <div class="dominance-explorer" data-asset="Emerging Europe C"></div><details markdown="1" class=""><summary><strong>Static FSD, SSD and TSD comparison</strong></summary>
-<img src="figures/stock_profiles/SE0019354200_FSD_SSD_TSD.png?v=9562b81b6e7e" alt="Emerging Europe C: static components">
+<img src="figures/stock_profiles/SE0019354200_FSD_SSD_TSD.png?v=ca98cc7c90ad" alt="Emerging Europe C: static components">
 </details>
 </details>
 </details>
 <details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this fund highlighted</strong></summary>
 <div class="frontier-explorer" data-highlight="Emerging Europe C"></div><details markdown="1" class=""><summary><strong>Static five-model comparison</strong></summary>
-<img src="figures/stock_profiles/SE0019354200_all_frontiers.png?v=8d7ba97ee15c" alt="Emerging Europe C: five models">
+<img src="figures/stock_profiles/SE0019354200_all_frontiers.png?v=98c699491baf" alt="Emerging Europe C: five models">
 </details>
 </details>
 
@@ -1013,7 +1013,7 @@ Integrated share-and-fund comparisons use 857 common observations through 2026-1
 <details markdown="1" class="stock-profile fund-profile" id="fund-SE0013876927" data-signal="WAIT" data-netsd-effect="INCREASE" data-dividend-status="NONE">
 <summary><strong>Access Edge Japan C</strong> | current action: WAIT | allocation target EUR 327.33</summary>
 <p><a href="https://swedbankrobur.fondlista.se/en/details/SE0013876927" target="_blank" rel="noopener">Open Access Edge Japan C on Swedbank Robur ↗</a></p>
-<table class="stock-summary-table"><thead><tr><th><span>Current units</span></th><th><span>Target units</span></th><th><span>Change</span></th><th><span>Target amount</span></th><th><span>Weight</span></th><th><span>Last NAV</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Stochastic RSI</span></th><th><span>Cash dividends</span></th><th><span>Annual fund expenses</span></th><th><span>Estimated annual expense</span></th><th><span>HHI contribution</span></th><th><span>Execution decision</span></th></tr></thead><tbody><tr><td>0</td><td>21</td><td>+21</td><td>EUR 327.33</td><td>2.19%</td><td>EUR 15.5872</td><td>0.150376</td><td>34 / 14</td><td>49.32</td><td>Bearish</td><td>0.269</td><td>Accumulating: no cash payout</td><td>0.25%</td><td>EUR 0.82</td><td>0.000480 (0.60% of HHI)</td><td>WAIT</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current units</span></th><th><span>Target units</span></th><th><span>Change</span></th><th><span>Target amount</span></th><th><span>Weight</span></th><th><span>Last NAV</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Stochastic RSI</span></th><th><span>Cash dividends</span></th><th><span>Annual fund expenses</span></th><th><span>Estimated annual expense</span></th><th><span>HHI contribution</span></th><th><span>Execution decision</span></th></tr></thead><tbody><tr><td>0</td><td>21</td><td>+21</td><td>EUR 327.33</td><td>2.18%</td><td>EUR 15.5872</td><td>0.150376</td><td>34 / 14</td><td>49.32</td><td>Bearish</td><td>0.269</td><td>Accumulating: no cash payout</td><td>0.25%</td><td>EUR 0.82</td><td>0.000480 (0.60% of HHI)</td><td>WAIT</td></tr></tbody></table>
 
 
 
@@ -1355,13 +1355,13 @@ Integrated share-and-fund comparisons use 857 common observations through 2026-1
   </tbody>
 </table><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
 <div class="dominance-explorer" data-asset="Access Edge Japan C"></div><details markdown="1" class=""><summary><strong>Static FSD, SSD and TSD comparison</strong></summary>
-<img src="figures/stock_profiles/SE0013876927_FSD_SSD_TSD.png?v=2ebacfbcc228" alt="Access Edge Japan C: static components">
+<img src="figures/stock_profiles/SE0013876927_FSD_SSD_TSD.png?v=e3173e59425d" alt="Access Edge Japan C: static components">
 </details>
 </details>
 </details>
 <details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this fund highlighted</strong></summary>
 <div class="frontier-explorer" data-highlight="Access Edge Japan C"></div><details markdown="1" class=""><summary><strong>Static five-model comparison</strong></summary>
-<img src="figures/stock_profiles/SE0013876927_all_frontiers.png?v=94b4a0a90eaf" alt="Access Edge Japan C: five models">
+<img src="figures/stock_profiles/SE0013876927_all_frontiers.png?v=c80e5cf2f686" alt="Access Edge Japan C: five models">
 </details>
 </details>
 
@@ -1435,7 +1435,7 @@ Select a share to display its allocation, technical indicators, performance and 
 
 <a href="https://nasdaqbaltic.com/statistics/lt/instrument/LT0000111650/trading" target="_blank" rel="noopener noreferrer"><strong>Open KNE1L on Nasdaq Baltic ↗</strong></a>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>928</td><td>2182</td><td>+1254</td><td>6.96%</td><td>EUR 0.4770</td><td>0.383459</td><td>52 / 1</td><td>37.69</td><td>Bearish</td><td>Inside bands</td><td>0.784 (Neutral)</td><td>EUR 0.0129 / share</td><td>HOLD</td><td>BUY</td><td>0.004849 (6.265% of portfolio HHI)</td><td>EUR 14,059</td><td>4.0%</td><td>1.2%</td><td>MEDIUM</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>928</td><td>2182</td><td>+1254</td><td>6.15%</td><td>EUR 0.4770</td><td>0.383459</td><td>52 / 1</td><td>37.69</td><td>Bearish</td><td>Inside bands</td><td>0.784 (Neutral)</td><td>EUR 0.0129 / share</td><td>HOLD</td><td>BUY</td><td>0.004849 (6.265% of portfolio HHI)</td><td>EUR 14,059</td><td>4.0%</td><td>1.2%</td><td>MEDIUM</td></tr></tbody></table>
 
 
 
@@ -1750,7 +1750,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
 <div class="dominance-explorer" data-asset="KNE1L"></div><details markdown="1" class=""><summary><strong>Static FSD, SSD and TSD comparison</strong></summary>
-<img src="figures/stock_profiles/KNE1L_FSD_SSD_TSD.png?v=fd943d5ac265" alt="KNE1L: updated components">
+<img src="figures/stock_profiles/KNE1L_FSD_SSD_TSD.png?v=959c3d222ceb" alt="KNE1L: updated components">
 </details>
 </details>
 </details>
@@ -1818,7 +1818,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <a href="https://nasdaqbaltic.com/statistics/lt/instrument/LT0000127508/trading" target="_blank" rel="noopener noreferrer"><strong>Open VLP1L on Nasdaq Baltic ↗</strong></a>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>42</td><td>59</td><td>+17</td><td>6.22%</td><td>EUR 15.7500</td><td>0.375940</td><td>50 / 0</td><td>58.83</td><td>Bullish</td><td>Inside bands</td><td>0.097 (Oversold)</td><td>EUR 0.3090 / share</td><td>HOLD</td><td>BUY</td><td>0.003865 (4.994% of portfolio HHI)</td><td>EUR 21,336</td><td>2.1%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>42</td><td>59</td><td>+17</td><td>8.61%</td><td>EUR 15.7500</td><td>0.375940</td><td>50 / 0</td><td>58.83</td><td>Bullish</td><td>Inside bands</td><td>0.097 (Oversold)</td><td>EUR 0.3090 / share</td><td>HOLD</td><td>BUY</td><td>0.003865 (4.994% of portfolio HHI)</td><td>EUR 21,336</td><td>2.1%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
 
 
@@ -2132,7 +2132,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
 <div class="dominance-explorer" data-asset="VLP1L"></div><details markdown="1" class=""><summary><strong>Static FSD, SSD and TSD comparison</strong></summary>
-<img src="figures/stock_profiles/VLP1L_FSD_SSD_TSD.png?v=d740b813ddf1" alt="VLP1L: updated components">
+<img src="figures/stock_profiles/VLP1L_FSD_SSD_TSD.png?v=a99ae053f995" alt="VLP1L: updated components">
 </details>
 </details>
 </details>
@@ -2200,7 +2200,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <a href="https://nasdaqbaltic.com/statistics/lt/instrument/EE3100098328/trading" target="_blank" rel="noopener noreferrer"><strong>Open MRK1T on Nasdaq Baltic ↗</strong></a>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>20</td><td>34</td><td>+14</td><td>6.12%</td><td>EUR 26.9000</td><td>0.248120</td><td>38 / 5</td><td>40.95</td><td>Bearish</td><td>Inside bands</td><td>0.292 (Neutral)</td><td>EUR 1.2900 / share</td><td>HOLD</td><td>BUY</td><td>0.003744 (4.838% of portfolio HHI)</td><td>EUR 58,829</td><td>0.6%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>20</td><td>34</td><td>+14</td><td>5.20%</td><td>EUR 26.9000</td><td>0.248120</td><td>38 / 5</td><td>40.95</td><td>Bearish</td><td>Inside bands</td><td>0.292 (Neutral)</td><td>EUR 1.2900 / share</td><td>HOLD</td><td>BUY</td><td>0.003744 (4.838% of portfolio HHI)</td><td>EUR 58,829</td><td>0.6%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
 
 
@@ -2534,7 +2534,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
 <div class="dominance-explorer" data-asset="MRK1T"></div><details markdown="1" class=""><summary><strong>Static FSD, SSD and TSD comparison</strong></summary>
-<img src="figures/stock_profiles/MRK1T_FSD_SSD_TSD.png?v=11cf86884634" alt="MRK1T: updated components">
+<img src="figures/stock_profiles/MRK1T_FSD_SSD_TSD.png?v=92cd069cb75e" alt="MRK1T: updated components">
 </details>
 </details>
 </details>
@@ -2602,7 +2602,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <a href="https://nasdaqbaltic.com/statistics/lt/instrument/EE3100109034/trading" target="_blank" rel="noopener noreferrer"><strong>Open MOLNR on Nasdaq Baltic ↗</strong></a>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>29</td><td>+29</td><td>3.84%</td><td>EUR 19.8000</td><td>0.037594</td><td>5 / 0</td><td>46.23</td><td>Bearish</td><td>Inside bands</td><td>0.000 (Oversold)</td><td>EUR 0.0000 / share</td><td>HOLD</td><td>BUY</td><td>0.001476 (1.907% of portfolio HHI)</td><td>EUR 98</td><td>565.7%</td><td>29.8%</td><td>HIGH</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>29</td><td>+29</td><td>3.96%</td><td>EUR 19.8000</td><td>0.037594</td><td>5 / 0</td><td>46.23</td><td>Bearish</td><td>Inside bands</td><td>0.000 (Oversold)</td><td>EUR 0.0000 / share</td><td>HOLD</td><td>BUY</td><td>0.001476 (1.907% of portfolio HHI)</td><td>EUR 98</td><td>565.7%</td><td>29.8%</td><td>HIGH</td></tr></tbody></table>
 
 
 
@@ -2904,7 +2904,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
 <div class="dominance-explorer" data-asset="MOLNR"></div><details markdown="1" class=""><summary><strong>Static FSD, SSD and TSD comparison</strong></summary>
-<img src="figures/stock_profiles/MOLNR_FSD_SSD_TSD.png?v=14ba28d6b83b" alt="MOLNR: updated components">
+<img src="figures/stock_profiles/MOLNR_FSD_SSD_TSD.png?v=d45aecd4317f" alt="MOLNR: updated components">
 </details>
 </details>
 </details>
@@ -2972,7 +2972,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <a href="https://nasdaqbaltic.com/statistics/lt/instrument/LT0000100372/trading" target="_blank" rel="noopener noreferrer"><strong>Open RSU1L on Nasdaq Baltic ↗</strong></a>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>91</td><td>216</td><td>+125</td><td>6.16%</td><td>EUR 4.2600</td><td>0.022556</td><td>29 / 26</td><td>22.59</td><td>Bearish</td><td>Below lower band</td><td>0.000 (Oversold)</td><td>EUR 0.1600 / share</td><td>BUY</td><td>BUY</td><td>0.003790 (4.897% of portfolio HHI)</td><td>EUR 1,134</td><td>32.3%</td><td>4.8%</td><td>HIGH</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>91</td><td>216</td><td>+125</td><td>5.00%</td><td>EUR 4.2600</td><td>0.022556</td><td>29 / 26</td><td>22.59</td><td>Bearish</td><td>Below lower band</td><td>0.000 (Oversold)</td><td>EUR 0.1600 / share</td><td>BUY</td><td>BUY</td><td>0.003790 (4.897% of portfolio HHI)</td><td>EUR 1,134</td><td>32.3%</td><td>4.8%</td><td>HIGH</td></tr></tbody></table>
 
 
 
@@ -3273,7 +3273,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
 <div class="dominance-explorer" data-asset="RSU1L"></div><details markdown="1" class=""><summary><strong>Static FSD, SSD and TSD comparison</strong></summary>
-<img src="figures/stock_profiles/RSU1L_FSD_SSD_TSD.png?v=713cb40d3e9f" alt="RSU1L: updated components">
+<img src="figures/stock_profiles/RSU1L_FSD_SSD_TSD.png?v=36a3d6781025" alt="RSU1L: updated components">
 </details>
 </details>
 </details>
@@ -3341,7 +3341,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <a href="https://nasdaqbaltic.com/statistics/lt/instrument/LT0000102337/trading" target="_blank" rel="noopener noreferrer"><strong>Open APG1L on Nasdaq Baltic ↗</strong></a>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>200</td><td>295</td><td>+95</td><td>7.50%</td><td>EUR 3.8000</td><td>0.142857</td><td>30 / 11</td><td>39.77</td><td>Bullish</td><td>Inside bands</td><td>0.973 (Overbought)</td><td>EUR 0.3060 / share</td><td>HOLD</td><td>BUY</td><td>0.005625 (7.267% of portfolio HHI)</td><td>EUR 24,722</td><td>2.1%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>200</td><td>295</td><td>+95</td><td>8.56%</td><td>EUR 3.8000</td><td>0.142857</td><td>30 / 11</td><td>39.77</td><td>Bullish</td><td>Inside bands</td><td>0.973 (Overbought)</td><td>EUR 0.3060 / share</td><td>HOLD</td><td>BUY</td><td>0.005625 (7.267% of portfolio HHI)</td><td>EUR 24,722</td><td>2.1%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
 
 
@@ -3702,7 +3702,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
 <div class="dominance-explorer" data-asset="APG1L"></div><details markdown="1" class=""><summary><strong>Static FSD, SSD and TSD comparison</strong></summary>
-<img src="figures/stock_profiles/APG1L_FSD_SSD_TSD.png?v=82038ca23a34" alt="APG1L: updated components">
+<img src="figures/stock_profiles/APG1L_FSD_SSD_TSD.png?v=44136ebbbdbf" alt="APG1L: updated components">
 </details>
 </details>
 </details>
@@ -3770,7 +3770,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <a href="https://nasdaqbaltic.com/statistics/lt/instrument/LT0000102030/trading" target="_blank" rel="noopener noreferrer"><strong>Open GRG1L on Nasdaq Baltic ↗</strong></a>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>543</td><td>828</td><td>+285</td><td>5.59%</td><td>EUR 1.0100</td><td>0.255639</td><td>44 / 10</td><td>51.67</td><td>Bullish</td><td>Inside bands</td><td>1.000 (Overbought)</td><td>EUR 0.0560 / share</td><td>HOLD</td><td>BUY</td><td>0.003130 (4.045% of portfolio HHI)</td><td>EUR 11,217</td><td>1.5%</td><td>1.2%</td><td>MEDIUM</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>543</td><td>828</td><td>+285</td><td>3.91%</td><td>EUR 1.0100</td><td>0.255639</td><td>44 / 10</td><td>51.67</td><td>Bullish</td><td>Inside bands</td><td>1.000 (Overbought)</td><td>EUR 0.0560 / share</td><td>HOLD</td><td>BUY</td><td>0.003130 (4.045% of portfolio HHI)</td><td>EUR 11,217</td><td>1.5%</td><td>1.2%</td><td>MEDIUM</td></tr></tbody></table>
 
 
 
@@ -4048,7 +4048,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
 <div class="dominance-explorer" data-asset="GRG1L"></div><details markdown="1" class=""><summary><strong>Static FSD, SSD and TSD comparison</strong></summary>
-<img src="figures/stock_profiles/GRG1L_FSD_SSD_TSD.png?v=8afd9923afca" alt="GRG1L: updated components">
+<img src="figures/stock_profiles/GRG1L_FSD_SSD_TSD.png?v=008553509356" alt="GRG1L: updated components">
 </details>
 </details>
 </details>
@@ -4116,7 +4116,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <a href="https://nasdaqbaltic.com/statistics/lt/instrument/LT0000128092/trading" target="_blank" rel="noopener noreferrer"><strong>Open AKO1L on Nasdaq Baltic ↗</strong></a>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>93</td><td>+93</td><td>1.17%</td><td>EUR 1.8750</td><td>0.030075</td><td>31 / 27</td><td>77.76</td><td>Bullish</td><td>Inside bands</td><td>0.559 (Neutral)</td><td>EUR 0.0355 / share</td><td>HOLD</td><td>BUY</td><td>0.000136 (0.176% of portfolio HHI)</td><td>EUR 22,415</td><td>0.8%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>93</td><td>+93</td><td>0.35%</td><td>EUR 1.8750</td><td>0.030075</td><td>31 / 27</td><td>77.76</td><td>Bullish</td><td>Inside bands</td><td>0.559 (Neutral)</td><td>EUR 0.0355 / share</td><td>HOLD</td><td>BUY</td><td>0.000136 (0.176% of portfolio HHI)</td><td>EUR 22,415</td><td>0.8%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
 
 
@@ -4430,7 +4430,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
 <div class="dominance-explorer" data-asset="AKO1L"></div><details markdown="1" class=""><summary><strong>Static FSD, SSD and TSD comparison</strong></summary>
-<img src="figures/stock_profiles/AKO1L_FSD_SSD_TSD.png?v=296c30a45e5d" alt="AKO1L: updated components">
+<img src="figures/stock_profiles/AKO1L_FSD_SSD_TSD.png?v=9ce343ab43e8" alt="AKO1L: updated components">
 </details>
 </details>
 </details>
@@ -4498,7 +4498,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <a href="https://nasdaqbaltic.com/statistics/lt/instrument/LT0000111676/trading" target="_blank" rel="noopener noreferrer"><strong>Open PZV1L on Nasdaq Baltic ↗</strong></a>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>112</td><td>+112</td><td>1.34%</td><td>EUR 1.7900</td><td>0.127820</td><td>33 / 16</td><td>56.97</td><td>Bearish</td><td>Inside bands</td><td>0.618 (Neutral)</td><td>EUR 0.0840 / share</td><td>HOLD</td><td>BUY</td><td>0.000180 (0.232% of portfolio HHI)</td><td>EUR 4,147</td><td>1.9%</td><td>1.2%</td><td>HIGH</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>112</td><td>+112</td><td>2.45%</td><td>EUR 1.7900</td><td>0.127820</td><td>33 / 16</td><td>56.97</td><td>Bearish</td><td>Inside bands</td><td>0.618 (Neutral)</td><td>EUR 0.0840 / share</td><td>HOLD</td><td>BUY</td><td>0.000180 (0.232% of portfolio HHI)</td><td>EUR 4,147</td><td>1.9%</td><td>1.2%</td><td>HIGH</td></tr></tbody></table>
 
 
 
@@ -4813,7 +4813,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
 <div class="dominance-explorer" data-asset="PZV1L"></div><details markdown="1" class=""><summary><strong>Static FSD, SSD and TSD comparison</strong></summary>
-<img src="figures/stock_profiles/PZV1L_FSD_SSD_TSD.png?v=3366185a7d44" alt="PZV1L: updated components">
+<img src="figures/stock_profiles/PZV1L_FSD_SSD_TSD.png?v=d6e5fd326107" alt="PZV1L: updated components">
 </details>
 </details>
 </details>
@@ -4881,7 +4881,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <a href="https://nasdaqbaltic.com/statistics/lt/instrument/EE3100004466/trading" target="_blank" rel="noopener noreferrer"><strong>Open TAL1T on Nasdaq Baltic ↗</strong></a>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>700</td><td>907</td><td>+207</td><td>3.93%</td><td>EUR 0.6470</td><td>0.203008</td><td>43 / 16</td><td>57.44</td><td>Bearish</td><td>Inside bands</td><td>0.290 (Neutral)</td><td>EUR 0.0300 / share</td><td>HOLD</td><td>BUY</td><td>0.001541 (1.992% of portfolio HHI)</td><td>EUR 77,090</td><td>0.3%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>700</td><td>907</td><td>+207</td><td>4.46%</td><td>EUR 0.6470</td><td>0.203008</td><td>43 / 16</td><td>57.44</td><td>Bearish</td><td>Inside bands</td><td>0.290 (Neutral)</td><td>EUR 0.0300 / share</td><td>HOLD</td><td>BUY</td><td>0.001541 (1.992% of portfolio HHI)</td><td>EUR 77,090</td><td>0.3%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
 
 
@@ -5219,7 +5219,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
 <div class="dominance-explorer" data-asset="TAL1T"></div><details markdown="1" class=""><summary><strong>Static FSD, SSD and TSD comparison</strong></summary>
-<img src="figures/stock_profiles/TAL1T_FSD_SSD_TSD.png?v=784364fc0a3d" alt="TAL1T: updated components">
+<img src="figures/stock_profiles/TAL1T_FSD_SSD_TSD.png?v=2136effdaa2c" alt="TAL1T: updated components">
 </details>
 </details>
 </details>
@@ -5287,7 +5287,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <a href="https://nasdaqbaltic.com/statistics/lt/instrument/LT0000123911/trading" target="_blank" rel="noopener noreferrer"><strong>Open TEL1L on Nasdaq Baltic ↗</strong></a>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>111</td><td>+111</td><td>1.67%</td><td>EUR 2.2500</td><td>0.233083</td><td>42 / 11</td><td>51.23</td><td>Bearish</td><td>Inside bands</td><td>0.167 (Oversold)</td><td>EUR 0.1000 / share</td><td>HOLD</td><td>BUY</td><td>0.000279 (0.361% of portfolio HHI)</td><td>EUR 56,053</td><td>0.3%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>111</td><td>+111</td><td>0.19%</td><td>EUR 2.2500</td><td>0.233083</td><td>42 / 11</td><td>51.23</td><td>Bearish</td><td>Inside bands</td><td>0.167 (Oversold)</td><td>EUR 0.1000 / share</td><td>HOLD</td><td>BUY</td><td>0.000279 (0.361% of portfolio HHI)</td><td>EUR 56,053</td><td>0.3%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
 
 
@@ -5567,7 +5567,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
 <div class="dominance-explorer" data-asset="TEL1L"></div><details markdown="1" class=""><summary><strong>Static FSD, SSD and TSD comparison</strong></summary>
-<img src="figures/stock_profiles/TEL1L_FSD_SSD_TSD.png?v=e8f527a4e74e" alt="TEL1L: updated components">
+<img src="figures/stock_profiles/TEL1L_FSD_SSD_TSD.png?v=8caab89244b7" alt="TEL1L: updated components">
 </details>
 </details>
 </details>
@@ -5635,7 +5635,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <a href="https://nasdaqbaltic.com/statistics/lt/instrument/LV0000101806/trading" target="_blank" rel="noopener noreferrer"><strong>Open DGR1R on Nasdaq Baltic ↗</strong></a>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>317</td><td>+317</td><td>3.64%</td><td>EUR 1.7150</td><td>0.165414</td><td>34 / 12</td><td>60.81</td><td>Bearish</td><td>Inside bands</td><td>0.073 (Oversold)</td><td>EUR 0.0957 / share</td><td>HOLD</td><td>BUY</td><td>0.001323 (1.709% of portfolio HHI)</td><td>EUR 12,133</td><td>1.7%</td><td>2.4%</td><td>MEDIUM</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>317</td><td>+317</td><td>3.06%</td><td>EUR 1.7150</td><td>0.165414</td><td>34 / 12</td><td>60.81</td><td>Bearish</td><td>Inside bands</td><td>0.073 (Oversold)</td><td>EUR 0.0957 / share</td><td>HOLD</td><td>BUY</td><td>0.001323 (1.709% of portfolio HHI)</td><td>EUR 12,133</td><td>1.7%</td><td>2.4%</td><td>MEDIUM</td></tr></tbody></table>
 
 
 
@@ -5996,7 +5996,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
 <div class="dominance-explorer" data-asset="DGR1R"></div><details markdown="1" class=""><summary><strong>Static FSD, SSD and TSD comparison</strong></summary>
-<img src="figures/stock_profiles/DGR1R_FSD_SSD_TSD.png?v=a28d4fb840bb" alt="DGR1R: updated components">
+<img src="figures/stock_profiles/DGR1R_FSD_SSD_TSD.png?v=c2fed3f850f8" alt="DGR1R: updated components">
 </details>
 </details>
 </details>
@@ -6064,7 +6064,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <a href="https://nasdaqbaltic.com/statistics/lt/instrument/EE3100004250/trading" target="_blank" rel="noopener noreferrer"><strong>Open HAE1T on Nasdaq Baltic ↗</strong></a>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>100</td><td>138</td><td>+38</td><td>4.80%</td><td>EUR 5.2000</td><td>0.180451</td><td>39 / 15</td><td>46.22</td><td>Bearish</td><td>Inside bands</td><td>0.000 (Oversold)</td><td>EUR 0.1440 / share</td><td>HOLD</td><td>BUY</td><td>0.002305 (2.978% of portfolio HHI)</td><td>EUR 17,025</td><td>1.9%</td><td>1.2%</td><td>MEDIUM</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>100</td><td>138</td><td>+38</td><td>3.57%</td><td>EUR 5.2000</td><td>0.180451</td><td>39 / 15</td><td>46.22</td><td>Bearish</td><td>Inside bands</td><td>0.000 (Oversold)</td><td>EUR 0.1440 / share</td><td>HOLD</td><td>BUY</td><td>0.002305 (2.978% of portfolio HHI)</td><td>EUR 17,025</td><td>1.9%</td><td>1.2%</td><td>MEDIUM</td></tr></tbody></table>
 
 
 
@@ -6398,7 +6398,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
 <div class="dominance-explorer" data-asset="HAE1T"></div><details markdown="1" class=""><summary><strong>Static FSD, SSD and TSD comparison</strong></summary>
-<img src="figures/stock_profiles/HAE1T_FSD_SSD_TSD.png?v=306cd6a1f4ae" alt="HAE1T: updated components">
+<img src="figures/stock_profiles/HAE1T_FSD_SSD_TSD.png?v=7ca5ec66524d" alt="HAE1T: updated components">
 </details>
 </details>
 </details>
@@ -6466,7 +6466,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <a href="https://nasdaqbaltic.com/statistics/lt/instrument/EE3100102203/trading" target="_blank" rel="noopener noreferrer"><strong>Open LHV1T on Nasdaq Baltic ↗</strong></a>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>150</td><td>+150</td><td>3.26%</td><td>EUR 3.2500</td><td>0.127820</td><td>29 / 12</td><td>39.71</td><td>Bullish</td><td>Inside bands</td><td>0.255 (Neutral)</td><td>EUR 0.1660 / share</td><td>HOLD</td><td>BUY</td><td>0.001064 (1.374% of portfolio HHI)</td><td>EUR 258,259</td><td>0.1%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>150</td><td>+150</td><td>1.10%</td><td>EUR 3.2500</td><td>0.127820</td><td>29 / 12</td><td>39.71</td><td>Bullish</td><td>Inside bands</td><td>0.255 (Neutral)</td><td>EUR 0.1660 / share</td><td>HOLD</td><td>BUY</td><td>0.001064 (1.374% of portfolio HHI)</td><td>EUR 258,259</td><td>0.1%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
 
 
@@ -6806,7 +6806,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
 <div class="dominance-explorer" data-asset="LHV1T"></div><details markdown="1" class=""><summary><strong>Static FSD, SSD and TSD comparison</strong></summary>
-<img src="figures/stock_profiles/LHV1T_FSD_SSD_TSD.png?v=a067cc7b6b2c" alt="LHV1T: updated components">
+<img src="figures/stock_profiles/LHV1T_FSD_SSD_TSD.png?v=1e1913aaaa7b" alt="LHV1T: updated components">
 </details>
 </details>
 </details>
@@ -6874,7 +6874,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <a href="https://nasdaqbaltic.com/statistics/lt/instrument/EE3100007857/trading" target="_blank" rel="noopener noreferrer"><strong>Open CPA1T on Nasdaq Baltic ↗</strong></a>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>92</td><td>+92</td><td>1.46%</td><td>EUR 2.3750</td><td>0.150376</td><td>30 / 10</td><td>56.11</td><td>Bullish</td><td>Inside bands</td><td>0.331 (Neutral)</td><td>EUR 0.0594 / share</td><td>HOLD</td><td>BUY</td><td>0.000214 (0.276% of portfolio HHI)</td><td>EUR 80,431</td><td>0.1%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>0</td><td>92</td><td>+92</td><td>0.19%</td><td>EUR 2.3750</td><td>0.150376</td><td>30 / 10</td><td>56.11</td><td>Bullish</td><td>Inside bands</td><td>0.331 (Neutral)</td><td>EUR 0.0594 / share</td><td>HOLD</td><td>BUY</td><td>0.000214 (0.276% of portfolio HHI)</td><td>EUR 80,431</td><td>0.1%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
 
 
@@ -7212,7 +7212,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
 <div class="dominance-explorer" data-asset="CPA1T"></div><details markdown="1" class=""><summary><strong>Static FSD, SSD and TSD comparison</strong></summary>
-<img src="figures/stock_profiles/CPA1T_FSD_SSD_TSD.png?v=35b7d6f350d6" alt="CPA1T: updated components">
+<img src="figures/stock_profiles/CPA1T_FSD_SSD_TSD.png?v=0072c6c150ea" alt="CPA1T: updated components">
 </details>
 </details>
 </details>
@@ -7280,7 +7280,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <a href="https://nasdaqbaltic.com/statistics/lt/instrument/LV0000101129/trading" target="_blank" rel="noopener noreferrer"><strong>Open SAF1R on Nasdaq Baltic ↗</strong></a>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>100</td><td>100</td><td>+0</td><td>11.04%</td><td>EUR 16.5000</td><td>-0.075188</td><td>10 / 20</td><td>51.39</td><td>Bearish</td><td>Inside bands</td><td>1.000 (Overbought)</td><td>EUR 0.1360 / share</td><td>HOLD</td><td>HOLD</td><td>0.012185 (15.745% of portfolio HHI)</td><td>EUR 8,265</td><td>0.0%</td><td>2.4%</td><td>MEDIUM</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>100</td><td>100</td><td>+0</td><td>11.00%</td><td>EUR 16.5000</td><td>-0.075188</td><td>10 / 20</td><td>51.39</td><td>Bearish</td><td>Inside bands</td><td>1.000 (Overbought)</td><td>EUR 0.1360 / share</td><td>HOLD</td><td>HOLD</td><td>0.012185 (15.745% of portfolio HHI)</td><td>EUR 8,265</td><td>0.0%</td><td>2.4%</td><td>MEDIUM</td></tr></tbody></table>
 
 
 
@@ -7598,7 +7598,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
 <div class="dominance-explorer" data-asset="SAF1R"></div><details markdown="1" class=""><summary><strong>Static FSD, SSD and TSD comparison</strong></summary>
-<img src="figures/stock_profiles/SAF1R_FSD_SSD_TSD.png?v=104ce7ac257a" alt="SAF1R: updated components">
+<img src="figures/stock_profiles/SAF1R_FSD_SSD_TSD.png?v=cdc509702796" alt="SAF1R: updated components">
 </details>
 </details>
 </details>
@@ -7666,7 +7666,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <a href="https://nasdaqbaltic.com/statistics/lt/instrument/EE3100021635/trading" target="_blank" rel="noopener noreferrer"><strong>Open TSM1T on Nasdaq Baltic ↗</strong></a>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>330</td><td>330</td><td>+0</td><td>2.63%</td><td>EUR 1.1920</td><td>0.037594</td><td>28 / 23</td><td>35.11</td><td>Bearish</td><td>Inside bands</td><td>0.144 (Oversold)</td><td>EUR 0.0778 / share</td><td>HOLD</td><td>HOLD</td><td>0.000693 (0.895% of portfolio HHI)</td><td>EUR 45,261</td><td>0.0%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>330</td><td>330</td><td>+0</td><td>2.62%</td><td>EUR 1.1920</td><td>0.037594</td><td>28 / 23</td><td>35.11</td><td>Bearish</td><td>Inside bands</td><td>0.144 (Oversold)</td><td>EUR 0.0778 / share</td><td>HOLD</td><td>HOLD</td><td>0.000693 (0.895% of portfolio HHI)</td><td>EUR 45,261</td><td>0.0%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
 
 
@@ -7994,7 +7994,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
 <div class="dominance-explorer" data-asset="TSM1T"></div><details markdown="1" class=""><summary><strong>Static FSD, SSD and TSD comparison</strong></summary>
-<img src="figures/stock_profiles/TSM1T_FSD_SSD_TSD.png?v=4e2863afcfff" alt="TSM1T: updated components">
+<img src="figures/stock_profiles/TSM1T_FSD_SSD_TSD.png?v=75220dbcd615" alt="TSM1T: updated components">
 </details>
 </details>
 </details>
@@ -8062,7 +8062,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <a href="https://nasdaqbaltic.com/statistics/lt/instrument/EE0000001105/trading" target="_blank" rel="noopener noreferrer"><strong>Open TKM1T on Nasdaq Baltic ↗</strong></a>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>288</td><td>289</td><td>+1</td><td>17.17%</td><td>EUR 8.8800</td><td>0.135338</td><td>29 / 11</td><td>28.70</td><td>Bearish</td><td>Inside bands</td><td>0.409 (Neutral)</td><td>EUR 0.6660 / share</td><td>HOLD</td><td>BUY</td><td>0.029478 (38.088% of portfolio HHI)</td><td>EUR 40,942</td><td>0.8%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>288</td><td>289</td><td>+1</td><td>17.46%</td><td>EUR 8.8800</td><td>0.135338</td><td>29 / 11</td><td>28.70</td><td>Bearish</td><td>Inside bands</td><td>0.409 (Neutral)</td><td>EUR 0.6660 / share</td><td>HOLD</td><td>BUY</td><td>0.029478 (38.088% of portfolio HHI)</td><td>EUR 40,942</td><td>0.8%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
 
 
@@ -8393,7 +8393,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
 <div class="dominance-explorer" data-asset="TKM1T"></div><details markdown="1" class=""><summary><strong>Static FSD, SSD and TSD comparison</strong></summary>
-<img src="figures/stock_profiles/TKM1T_FSD_SSD_TSD.png?v=1f08d24ff192" alt="TKM1T: updated components">
+<img src="figures/stock_profiles/TKM1T_FSD_SSD_TSD.png?v=a1b93aa05ab1" alt="TKM1T: updated components">
 </details>
 </details>
 </details>
@@ -8461,7 +8461,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <a href="https://nasdaqbaltic.com/statistics/lt/instrument/LT0000102253/trading" target="_blank" rel="noopener noreferrer"><strong>Open ROE1L on Nasdaq Baltic ↗</strong></a>
 
-<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>416</td><td>527</td><td>+111</td><td>2.89%</td><td>EUR 0.8190</td><td>0.187970</td><td>42 / 17</td><td>18.07</td><td>Bearish</td><td>Below lower band</td><td>0.000 (Oversold)</td><td>EUR 0.0434 / share</td><td>BUY</td><td>BUY</td><td>0.000834 (1.077% of portfolio HHI)</td><td>EUR 182,895</td><td>0.2%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
+<table class="stock-summary-table"><thead><tr><th><span>Current shares</span></th><th><span>Target shares</span></th><th><span>Change</span></th><th><span>Weight</span></th><th><span>Last price</span></th><th><span>Individual netSD</span></th><th><span>OUT / IN</span></th><th><span>RSI(14)</span></th><th><span>MACD state</span></th><th><span>Bollinger state</span></th><th><span>Stochastic RSI</span></th><th><span>Average annual dividend (2022–2026)</span></th><th><span>Technical timing signal</span></th><th><span>Portfolio allocation change</span></th><th><span>HHI contribution</span></th><th><span>Median daily turnover</span></th><th><span>Trade / median turnover</span></th><th><span>Zero-volume days</span></th><th><span>Liquidity risk</span></th></tr></thead><tbody><tr><td>416</td><td>527</td><td>+111</td><td>2.31%</td><td>EUR 0.8190</td><td>0.187970</td><td>42 / 17</td><td>18.07</td><td>Bearish</td><td>Below lower band</td><td>0.000 (Oversold)</td><td>EUR 0.0434 / share</td><td>BUY</td><td>BUY</td><td>0.000834 (1.077% of portfolio HHI)</td><td>EUR 182,895</td><td>0.2%</td><td>1.2%</td><td>LOW</td></tr></tbody></table>
 
 
 
@@ -8783,7 +8783,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
 <div class="dominance-explorer" data-asset="ROE1L"></div><details markdown="1" class=""><summary><strong>Static FSD, SSD and TSD comparison</strong></summary>
-<img src="figures/stock_profiles/ROE1L_FSD_SSD_TSD.png?v=6456ab68fbe3" alt="ROE1L: updated components">
+<img src="figures/stock_profiles/ROE1L_FSD_SSD_TSD.png?v=82ac93e827b3" alt="ROE1L: updated components">
 </details>
 </details>
 </details>
@@ -9742,8 +9742,690 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <!-- UPDATE3_QUICK_END -->
 
 
+
+
+<!-- STOCHASTIC_UPDATE3_START --><details markdown="1" id="stochastic-update3" class="report-section stochastic-portfolio-quick-summary" open><summary><strong>1.4. Stochastic netSD portfolio — Update3, no sales</strong></summary><p><strong>Two-stage experimental policy.</strong> Today’s first-stage holdings are shown below. Expected scenario netSD after recourse: <strong>0.707924</strong>; expected penalty 0.068228; objective 0.639696. The historical first-stage netSD shown in the allocation summary is 0.706767; it is a different calculation and is not the expected scenario score.</p><p>13 equally weighted forecast versions; each scenario combines 857 historical daily returns with all five forecast dates, 2–6 November 2026. Recourse follows 3 November close: Current return below −0.1% = down, within ±0.1% = flat, above +0.1% = up. Scenarios in the same observed node share the same trades. Historical charts and performance tables describe the first-stage allocation with cash, not a realised recourse backtest.</p>
+<p>Target invested EUR 14,947.41; cash EUR 52.59; OUT / IN 94 / 0; netSD 0.706767. Average annual historical cash dividends EUR 441.21; embedded annual fund costs approximately EUR 10.63. Accumulating funds make no cash dividend payment.</p><h4>Table 1.4.a. First-stage holdings and purchases</h4><table class="dataframe research-table planned-portfolio-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Instrument</th>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Current price / NAV</th>
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Buy EUR</th>
+      <th>Weight %</th>
+      <th>Individual OUT / IN</th>
+      <th>Portfolio OUT / IN after addition</th>
+      <th>netSD change</th>
+      <th>Rachev change</th>
+      <th>Sortino change</th>
+      <th>Average annual cash dividends EUR</th>
+      <th>Embedded annual fee EUR</th>
+      <th>Execution signal</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SE0015192349</td>
+      <td>Fund</td>
+      <td>Access Edge Global C</td>
+      <td>19.459200</td>
+      <td>0</td>
+      <td>30</td>
+      <td>30</td>
+      <td>583.776000</td>
+      <td>3.891840</td>
+      <td>74 / 0</td>
+      <td>81 / 8</td>
+      <td>0.037594</td>
+      <td>0.014716</td>
+      <td>0.010636</td>
+      <td>0.000000</td>
+      <td>1.634573</td>
+      <td>WAIT</td>
+    </tr>
+    <tr>
+      <td>SE0019354200</td>
+      <td>Fund</td>
+      <td>Emerging Europe C</td>
+      <td>23.235800</td>
+      <td>0</td>
+      <td>22</td>
+      <td>22</td>
+      <td>511.187600</td>
+      <td>3.407917</td>
+      <td>68 / 0</td>
+      <td>82 / 8</td>
+      <td>0.045113</td>
+      <td>0.028161</td>
+      <td>0.013846</td>
+      <td>0.000000</td>
+      <td>8.179002</td>
+      <td>WAIT</td>
+    </tr>
+    <tr>
+      <td>SE0013876927</td>
+      <td>Fund</td>
+      <td>Access Edge Japan C</td>
+      <td>15.587200</td>
+      <td>0</td>
+      <td>21</td>
+      <td>21</td>
+      <td>327.331200</td>
+      <td>2.182208</td>
+      <td>34 / 14</td>
+      <td>78 / 8</td>
+      <td>0.015038</td>
+      <td>-0.006682</td>
+      <td>0.004606</td>
+      <td>0.000000</td>
+      <td>0.818328</td>
+      <td>WAIT</td>
+    </tr>
+    <tr>
+      <td>TKM1T</td>
+      <td>Share</td>
+      <td>TKM1T</td>
+      <td>8.880000</td>
+      <td>288</td>
+      <td>295</td>
+      <td>7</td>
+      <td>62.160001</td>
+      <td>17.464000</td>
+      <td>29 / 11</td>
+      <td>76 / 8</td>
+      <td>0.000000</td>
+      <td>-0.001093</td>
+      <td>-0.000516</td>
+      <td>156.350000</td>
+      <td>0.000000</td>
+      <td>SKIP</td>
+    </tr>
+    <tr>
+      <td>SAF1R</td>
+      <td>Share</td>
+      <td>SAF1R</td>
+      <td>16.500000</td>
+      <td>100</td>
+      <td>100</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>11.000000</td>
+      <td>10 / 20</td>
+      <td>76 / 8</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>HOLD</td>
+    </tr>
+    <tr>
+      <td>VLP1L</td>
+      <td>Share</td>
+      <td>VLP1L</td>
+      <td>15.750000</td>
+      <td>42</td>
+      <td>82</td>
+      <td>40</td>
+      <td>630.000000</td>
+      <td>8.610000</td>
+      <td>50 / 0</td>
+      <td>82 / 8</td>
+      <td>0.045113</td>
+      <td>0.023835</td>
+      <td>0.021391</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>WAIT</td>
+    </tr>
+    <tr>
+      <td>APG1L</td>
+      <td>Share</td>
+      <td>APG1L</td>
+      <td>3.800000</td>
+      <td>200</td>
+      <td>338</td>
+      <td>138</td>
+      <td>524.399993</td>
+      <td>8.562667</td>
+      <td>30 / 11</td>
+      <td>74 / 8</td>
+      <td>-0.015038</td>
+      <td>-0.022299</td>
+      <td>0.001701</td>
+      <td>69.628000</td>
+      <td>0.000000</td>
+      <td>WAIT</td>
+    </tr>
+    <tr>
+      <td>KNE1L</td>
+      <td>Share</td>
+      <td>KNE1L</td>
+      <td>0.477000</td>
+      <td>928</td>
+      <td>1935</td>
+      <td>1007</td>
+      <td>480.338998</td>
+      <td>6.153300</td>
+      <td>52 / 1</td>
+      <td>82 / 8</td>
+      <td>0.045113</td>
+      <td>0.007323</td>
+      <td>0.010580</td>
+      <td>24.922800</td>
+      <td>0.000000</td>
+      <td>WAIT</td>
+    </tr>
+    <tr>
+      <td>MRK1T</td>
+      <td>Share</td>
+      <td>MRK1T</td>
+      <td>26.900000</td>
+      <td>20</td>
+      <td>29</td>
+      <td>9</td>
+      <td>242.099997</td>
+      <td>5.200667</td>
+      <td>38 / 5</td>
+      <td>78 / 8</td>
+      <td>0.015038</td>
+      <td>0.008404</td>
+      <td>0.003275</td>
+      <td>31.610000</td>
+      <td>0.000000</td>
+      <td>WAIT</td>
+    </tr>
+    <tr>
+      <td>RSU1L</td>
+      <td>Share</td>
+      <td>RSU1L</td>
+      <td>4.260000</td>
+      <td>91</td>
+      <td>176</td>
+      <td>85</td>
+      <td>362.100019</td>
+      <td>4.998400</td>
+      <td>29 / 26</td>
+      <td>77 / 8</td>
+      <td>0.007519</td>
+      <td>-0.000918</td>
+      <td>0.001122</td>
+      <td>24.640000</td>
+      <td>0.000000</td>
+      <td class="buy-now">BUY</td>
+    </tr>
+    <tr>
+      <td>TAL1T</td>
+      <td>Share</td>
+      <td>TAL1T</td>
+      <td>0.647000</td>
+      <td>700</td>
+      <td>1034</td>
+      <td>334</td>
+      <td>216.098005</td>
+      <td>4.459987</td>
+      <td>43 / 16</td>
+      <td>76 / 8</td>
+      <td>0.000000</td>
+      <td>-0.002450</td>
+      <td>0.000116</td>
+      <td>31.020000</td>
+      <td>0.000000</td>
+      <td>WAIT</td>
+    </tr>
+    <tr>
+      <td>MOLNR</td>
+      <td>Share</td>
+      <td>MOLNR</td>
+      <td>19.799999</td>
+      <td>0</td>
+      <td>30</td>
+      <td>30</td>
+      <td>593.999977</td>
+      <td>3.960000</td>
+      <td>5 / 0</td>
+      <td>81 / 0</td>
+      <td>0.097744</td>
+      <td>0.113446</td>
+      <td>0.032208</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>WAIT</td>
+    </tr>
+    <tr>
+      <td>GRG1L</td>
+      <td>Share</td>
+      <td>GRG1L</td>
+      <td>1.010000</td>
+      <td>543</td>
+      <td>580</td>
+      <td>37</td>
+      <td>37.370000</td>
+      <td>3.905333</td>
+      <td>44 / 10</td>
+      <td>76 / 8</td>
+      <td>0.000000</td>
+      <td>-0.000685</td>
+      <td>0.000085</td>
+      <td>19.720000</td>
+      <td>0.000000</td>
+      <td>SKIP</td>
+    </tr>
+    <tr>
+      <td>HAE1T</td>
+      <td>Share</td>
+      <td>HAE1T</td>
+      <td>5.200000</td>
+      <td>100</td>
+      <td>103</td>
+      <td>3</td>
+      <td>15.599999</td>
+      <td>3.570667</td>
+      <td>39 / 15</td>
+      <td>76 / 8</td>
+      <td>0.000000</td>
+      <td>0.000104</td>
+      <td>-0.000009</td>
+      <td>11.948000</td>
+      <td>0.000000</td>
+      <td>SKIP</td>
+    </tr>
+    <tr>
+      <td>DGR1R</td>
+      <td>Share</td>
+      <td>DGR1R</td>
+      <td>1.715000</td>
+      <td>0</td>
+      <td>268</td>
+      <td>268</td>
+      <td>459.620009</td>
+      <td>3.064133</td>
+      <td>34 / 12</td>
+      <td>76 / 8</td>
+      <td>0.000000</td>
+      <td>-0.009807</td>
+      <td>0.001457</td>
+      <td>17.537920</td>
+      <td>0.000000</td>
+      <td>WAIT</td>
+    </tr>
+    <tr>
+      <td>TSM1T</td>
+      <td>Share</td>
+      <td>TSM1T</td>
+      <td>1.192000</td>
+      <td>330</td>
+      <td>330</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>2.622400</td>
+      <td>28 / 23</td>
+      <td>76 / 8</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>19.272000</td>
+      <td>0.000000</td>
+      <td>HOLD</td>
+    </tr>
+    <tr>
+      <td>PZV1L</td>
+      <td>Share</td>
+      <td>PZV1L</td>
+      <td>1.790000</td>
+      <td>0</td>
+      <td>205</td>
+      <td>205</td>
+      <td>366.949992</td>
+      <td>2.446333</td>
+      <td>33 / 16</td>
+      <td>78 / 8</td>
+      <td>0.015038</td>
+      <td>-0.003874</td>
+      <td>0.004968</td>
+      <td>17.220000</td>
+      <td>0.000000</td>
+      <td>WAIT</td>
+    </tr>
+    <tr>
+      <td>ROE1L</td>
+      <td>Share</td>
+      <td>ROE1L</td>
+      <td>0.819000</td>
+      <td>416</td>
+      <td>423</td>
+      <td>7</td>
+      <td>5.733000</td>
+      <td>2.309580</td>
+      <td>42 / 17</td>
+      <td>76 / 8</td>
+      <td>0.000000</td>
+      <td>-0.000021</td>
+      <td>0.000027</td>
+      <td>11.505600</td>
+      <td>0.000000</td>
+      <td>SKIP</td>
+    </tr>
+    <tr>
+      <td>LHV1T</td>
+      <td>Share</td>
+      <td>LHV1T</td>
+      <td>3.250000</td>
+      <td>0</td>
+      <td>51</td>
+      <td>51</td>
+      <td>165.750000</td>
+      <td>1.105000</td>
+      <td>29 / 12</td>
+      <td>76 / 8</td>
+      <td>0.000000</td>
+      <td>-0.002521</td>
+      <td>-0.001655</td>
+      <td>4.386000</td>
+      <td>0.000000</td>
+      <td>WAIT</td>
+    </tr>
+    <tr>
+      <td>AKO1L</td>
+      <td>Share</td>
+      <td>AKO1L</td>
+      <td>1.875000</td>
+      <td>0</td>
+      <td>28</td>
+      <td>28</td>
+      <td>52.500000</td>
+      <td>0.350000</td>
+      <td>31 / 27</td>
+      <td>76 / 8</td>
+      <td>0.000000</td>
+      <td>-0.000930</td>
+      <td>0.000262</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>SKIP</td>
+    </tr>
+    <tr>
+      <td>TEL1L</td>
+      <td>Share</td>
+      <td>TEL1L</td>
+      <td>2.250000</td>
+      <td>0</td>
+      <td>13</td>
+      <td>13</td>
+      <td>29.250000</td>
+      <td>0.195000</td>
+      <td>42 / 11</td>
+      <td>76 / 8</td>
+      <td>0.000000</td>
+      <td>-0.000030</td>
+      <td>0.000040</td>
+      <td>0.806000</td>
+      <td>0.000000</td>
+      <td>SKIP</td>
+    </tr>
+    <tr>
+      <td>CPA1T</td>
+      <td>Share</td>
+      <td>CPA1T</td>
+      <td>2.375000</td>
+      <td>0</td>
+      <td>12</td>
+      <td>12</td>
+      <td>28.500000</td>
+      <td>0.190000</td>
+      <td>30 / 10</td>
+      <td>76 / 8</td>
+      <td>0.000000</td>
+      <td>-0.000263</td>
+      <td>-0.000282</td>
+      <td>0.640800</td>
+      <td>0.000000</td>
+      <td>SKIP</td>
+    </tr>
+    <tr class="portfolio-total">
+      <td>PORTFOLIO</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>5694.764791</td>
+      <td>99.649432</td>
+      <td></td>
+      <td>94 / 0</td>
+      <td>0.195489</td>
+      <td>0.072480</td>
+      <td>0.076496</td>
+      <td>441.207120</td>
+      <td>10.631902</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table><p>Each sensitivity column starts from the same Current portfolio and adds only that row's positive change at the displayed price. The PORTFOLIO row is the complete plan, not the sum of individual sensitivities. Signal BUY requires both a planned purchase and technical agreement. Fund NAV prices are indicative; orders execute at a future NAV.</p>
+<details markdown="1" class=""><summary><strong>Table 1.4.b. Scenario outcomes: historical sample plus the complete forecast week</strong></summary>
+<table class="dataframe research-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>scenario</th>
+      <th>node</th>
+      <th>probability</th>
+      <th>OUT</th>
+      <th>IN</th>
+      <th>netSD</th>
+      <th>penalty</th>
+      <th>objective</th>
+      <th>weekly_return</th>
+      <th>cash_EUR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dependency Ridge</td>
+      <td>down</td>
+      <td>0.076923</td>
+      <td>96</td>
+      <td>0</td>
+      <td>0.721805</td>
+      <td>0.068850</td>
+      <td>0.652955</td>
+      <td>-0.001402</td>
+      <td>5.357027</td>
+    </tr>
+    <tr>
+      <td>AR(1)-GARCH-t</td>
+      <td>flat</td>
+      <td>0.076923</td>
+      <td>94</td>
+      <td>0</td>
+      <td>0.706767</td>
+      <td>0.068104</td>
+      <td>0.638663</td>
+      <td>0.000665</td>
+      <td>43.094598</td>
+    </tr>
+    <tr>
+      <td>Damped ETS</td>
+      <td>flat</td>
+      <td>0.076923</td>
+      <td>94</td>
+      <td>0</td>
+      <td>0.706767</td>
+      <td>0.068099</td>
+      <td>0.638667</td>
+      <td>0.000673</td>
+      <td>43.083732</td>
+    </tr>
+    <tr>
+      <td>Dependency Extra Trees</td>
+      <td>flat</td>
+      <td>0.076923</td>
+      <td>94</td>
+      <td>0</td>
+      <td>0.706767</td>
+      <td>0.068107</td>
+      <td>0.638660</td>
+      <td>0.001063</td>
+      <td>43.097211</td>
+    </tr>
+    <tr>
+      <td>Dependency Gradient boosting</td>
+      <td>flat</td>
+      <td>0.076923</td>
+      <td>92</td>
+      <td>0</td>
+      <td>0.691729</td>
+      <td>0.068121</td>
+      <td>0.623608</td>
+      <td>-0.000641</td>
+      <td>43.107225</td>
+    </tr>
+    <tr>
+      <td>Extra Trees</td>
+      <td>flat</td>
+      <td>0.076923</td>
+      <td>94</td>
+      <td>0</td>
+      <td>0.706767</td>
+      <td>0.068114</td>
+      <td>0.638653</td>
+      <td>0.003197</td>
+      <td>43.087959</td>
+    </tr>
+    <tr>
+      <td>Gradient boosting</td>
+      <td>flat</td>
+      <td>0.076923</td>
+      <td>96</td>
+      <td>0</td>
+      <td>0.721805</td>
+      <td>0.068120</td>
+      <td>0.653685</td>
+      <td>0.005602</td>
+      <td>43.107548</td>
+    </tr>
+    <tr>
+      <td>No change</td>
+      <td>flat</td>
+      <td>0.076923</td>
+      <td>94</td>
+      <td>0</td>
+      <td>0.706767</td>
+      <td>0.068097</td>
+      <td>0.638670</td>
+      <td>0.000000</td>
+      <td>43.085176</td>
+    </tr>
+    <tr>
+      <td>ARIMA(1,1,1)</td>
+      <td>up</td>
+      <td>0.076923</td>
+      <td>94</td>
+      <td>0</td>
+      <td>0.706767</td>
+      <td>0.068283</td>
+      <td>0.638484</td>
+      <td>0.003507</td>
+      <td>45.460135</td>
+    </tr>
+    <tr>
+      <td>Historical drift</td>
+      <td>up</td>
+      <td>0.076923</td>
+      <td>94</td>
+      <td>0</td>
+      <td>0.706767</td>
+      <td>0.068269</td>
+      <td>0.638498</td>
+      <td>0.003937</td>
+      <td>45.447903</td>
+    </tr>
+    <tr>
+      <td>Neural network MLP</td>
+      <td>up</td>
+      <td>0.076923</td>
+      <td>94</td>
+      <td>0</td>
+      <td>0.706767</td>
+      <td>0.068240</td>
+      <td>0.638527</td>
+      <td>0.007335</td>
+      <td>45.475251</td>
+    </tr>
+    <tr>
+      <td>Ridge regression</td>
+      <td>up</td>
+      <td>0.076923</td>
+      <td>94</td>
+      <td>0</td>
+      <td>0.706767</td>
+      <td>0.068286</td>
+      <td>0.638480</td>
+      <td>0.007731</td>
+      <td>45.486981</td>
+    </tr>
+    <tr>
+      <td>Validation ensemble</td>
+      <td>up</td>
+      <td>0.076923</td>
+      <td>94</td>
+      <td>0</td>
+      <td>0.706767</td>
+      <td>0.068275</td>
+      <td>0.638492</td>
+      <td>0.002374</td>
+      <td>45.462542</td>
+    </tr>
+  </tbody>
+</table>
+</details><details markdown="1" class=""><summary><strong>Table 1.4.c. Conditional second-stage purchases — not orders for today</strong></summary>
+<table class="dataframe research-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>node</th>
+      <th>asset</th>
+      <th>stage1_units</th>
+      <th>recourse_trade</th>
+      <th>stage2_units</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>down</td>
+      <td>VLP1L</td>
+      <td>82</td>
+      <td>3</td>
+      <td>85</td>
+    </tr>
+    <tr>
+      <td>flat</td>
+      <td>CPA1T</td>
+      <td>12</td>
+      <td>4</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>up</td>
+      <td>CPA1T</td>
+      <td>12</td>
+      <td>3</td>
+      <td>15</td>
+    </tr>
+  </tbody>
+</table>
+</details><details markdown="1"><summary>Two-stage mathematical model and implementation limits</summary>
+<p>First-stage q has no scenario index. Holdings y and cash c in the second stage are scenario-dependent; nonanticipativity ties y for scenarios in the same observed node.</p>
+$$\max_{q,c_0,\{y_s,c_s\}}\frac1{13}\sum_{s=1}^{13}\left[\frac{OUT_s(q,y_s)-IN_s(q,y_s)}{133}-P_s(y_s)\right].$$
+$$\sum_i p_{i0}q_i+c_0=15000,\qquad c_s=c_0+\sum_i p_{is\tau}(q_i-y_{is})\ge0\quad\forall s.$$
+$$q_i\ge q_i^{Current},\qquad y_{is}\ge q_i,\qquad q_i,y_{is}\in\mathbb Z_{\ge0}\quad\forall i,s.$$
+$$\mathcal X_s=\{R^{hist}_{1s},\ldots,R^{hist}_{857,s},R_{s1},\ldots,R_{s5}\},\qquad g(s)=g(s')\Rightarrow y_{is}=y_{is'}.$$
+<p>Five first-stage policies and 69 feasible node-recourse policies; HiGHS MILP gap 0 within that finite menu, not a global integer-holdings optimum. The week has 5/862 of the empirical mass. The CTS1L GARCH path failed its existing stability guard and explicitly uses No change. Common historical cutoff is 29 October; equity price origin is 30 October, fund NAV origin is 29 October. No invented NAVs. Fund execution delays, transaction costs and the production individual-netSD purchase filter are not implemented in this pilot. These constraints must be resolved before treating the conditional trades as executable orders.</p></details></details><!-- STOCHASTIC_UPDATE3_END -->
 <details markdown="1" class="report-section" id="analytics-1-3">
-<summary><strong>1.4. Earnings outcomes and subsequent price changes</strong></summary>
+<summary><strong>1.5. Earnings outcomes and subsequent price changes</strong></summary>
 
 Official announcement text allowed 197 of 326 earnings releases to be classified. Higher or lower profit refers to the issuer's explicit comparison with the earlier comparable period. In line or unchanged is used only for an explicit plan, forecast, expectation or unchanged-profit statement. Loss requires an explicit realised net or operating loss.
 
@@ -10197,9 +10879,9 @@ The BH adjustment covers the full family of share-level, pooled and pairwise tes
 </details>
 <details markdown="1" class=""><summary><strong>All shares, all funds and all five decision portfolios</strong></summary>
 <details markdown="1" class=""><summary><strong>Pearson correlations with Ward dendrograms</strong></summary>
-<img src="figures/update3/correlation_all_with_portfolios_pearson_ward.png?v=45c26d972d59" alt="All shares, all funds and all five decision portfolios: pearson">
+<img src="figures/update3/correlation_all_with_portfolios_pearson_ward.png?v=a200134518b2" alt="All shares, all funds and all five decision portfolios: pearson">
 </details><details markdown="1" class=""><summary><strong>Spearman correlations with Ward dendrograms</strong></summary>
-<img src="figures/update3/correlation_all_with_portfolios_spearman_ward.png?v=fc2407442082" alt="All shares, all funds and all five decision portfolios: spearman">
+<img src="figures/update3/correlation_all_with_portfolios_spearman_ward.png?v=1434c45a5b60" alt="All shares, all funds and all five decision portfolios: spearman">
 </details>
 </details>
 </details>
@@ -34629,7 +35311,7 @@ trade_shares is the optimiser's allocation change, not an instruction to trade i
 <details markdown="1" class="report-section" id="analytics-2-7">
 <summary><strong>2.7. Portfolio allocation comparison</strong></summary>
 <details markdown="1" class=""><summary><strong>Figure 2.c. Box-and-whisker comparison: Current, Update2 and Update3</strong></summary>
-<p>Exactly five portfolios are compared. Shared compact letters mean the Holm-adjusted paired Wilcoxon test does not reject equality; significantly different pairs never share a letter. The letter assignment is validated against all ten pairwise tests in each panel.</p><img src="figures/update3/integrated_boxplots.png?v=5bdafec2a2dc" alt="Five portfolio return distributions with compact post-hoc letters">
+<p>Exactly five portfolios are compared. Shared compact letters mean the Holm-adjusted paired Wilcoxon test does not reject equality; significantly different pairs never share a letter. The letter assignment is validated against all ten pairwise tests in each panel.</p><img src="figures/update3/integrated_boxplots.png?v=83b189f4941b" alt="Five portfolio return distributions with compact post-hoc letters">
 </details><details markdown="1" class=""><summary><strong>Pairwise tests behind the letters</strong></summary>
 <table class="dataframe research-table">
   <thead>
@@ -35189,7 +35871,7 @@ trade_shares is the optimiser's allocation change, not an instruction to trade i
 <details markdown="1" class="report-section" id="analytics-2-8">
 <summary><strong>2.8. Portfolio statistics and return distributions</strong></summary>
 <details markdown="1" class=""><summary><strong>Table 2.i. Full-period, in-sample and held-out statistics: Current and all updates</strong></summary>
-<table class="dataframe research-table">
+<table class="dataframe research-table scenario-period-table">
   <thead>
     <tr style="text-align: right;">
       <th>Sample</th>
@@ -35282,6 +35964,17 @@ trade_shares is the optimiser's allocation change, not an instruction to trade i
       <td>-0.069434</td>
     </tr>
     <tr>
+      <td>Full period</td>
+      <td>update3_stochastic_no_sell</td>
+      <td>857</td>
+      <td>0.000519</td>
+      <td>0.000318</td>
+      <td>0.004373</td>
+      <td>0.005153</td>
+      <td>0.009928</td>
+      <td>-0.069195</td>
+    </tr>
+    <tr>
       <td>First 70%: descriptive in-sample segment</td>
       <td>Current</td>
       <td>599</td>
@@ -35357,6 +36050,17 @@ trade_shares is the optimiser's allocation change, not an instruction to trade i
       <td>0.005169</td>
       <td>0.011026</td>
       <td>-0.069434</td>
+    </tr>
+    <tr>
+      <td>First 70%: descriptive in-sample segment</td>
+      <td>update3_stochastic_no_sell</td>
+      <td>599</td>
+      <td>0.000335</td>
+      <td>0.000252</td>
+      <td>0.004458</td>
+      <td>0.005151</td>
+      <td>0.010987</td>
+      <td>-0.069195</td>
     </tr>
     <tr>
       <td>Last 30%: descriptive held-out segment</td>
@@ -35435,10 +36139,21 @@ trade_shares is the optimiser's allocation change, not an instruction to trade i
       <td>0.007512</td>
       <td>-0.055765</td>
     </tr>
+    <tr>
+      <td>Last 30%: descriptive held-out segment</td>
+      <td>update3_stochastic_no_sell</td>
+      <td>258</td>
+      <td>0.000945</td>
+      <td>0.000480</td>
+      <td>0.004146</td>
+      <td>0.004915</td>
+      <td>0.007485</td>
+      <td>-0.055574</td>
+    </tr>
   </tbody>
-</table>
+</table><p>All time segments are retrospective diagnostics of fixed first-stage weights. They are not independent held-out tests of the stochastic policy selected using the full historical sample.</p>
 </details><p>Time segments describe fixed full-sample weights and are not independent out-of-sample forecasts.</p><details markdown="1" class=""><summary><strong>Figure 2.d. Return histograms with kernel density: Current, updates and S&P 500</strong></summary>
-<img src="figures/update3/integrated_histograms.png?v=e973b090223c" alt="Current and updated return histograms">
+<img src="figures/update3/integrated_histograms.png?v=73a16086d9a6" alt="Current and updated return histograms">
 </details>
 </details>
 
@@ -35556,8 +36271,11 @@ Two frontier panels are shown side by side: Markowitz is selected on the left an
       <td>0.095153</td>
       <td>2.768287</td>
     </tr>
-  </tbody>
+  <tr><td>update3_stochastic_no_sell</td><td>0.078756</td><td>12.697468</td><td>0.174640</td><td>0.517900</td><td>22.000000</td><td>0.094820</td><td>2.768287</td></tr></tbody>
 </table>
+
+
+
 </details><details markdown="1" class=""><summary><strong>Table 2.l. Systematic risk relative to S&P 500</strong></summary>
 <table class="dataframe research-table">
   <thead>
@@ -35627,8 +36345,11 @@ Two frontier panels are shown side by side: Markowitz is selected on the left an
       <td>0.069137</td>
       <td>0.153820</td>
     </tr>
-  </tbody>
+  <tr><td>update3_stochastic_no_sell</td><td>0.056278</td><td>0.000477</td><td>0.008195</td><td>0.068894</td><td>0.153736</td></tr></tbody>
 </table>
+
+
+
 </details><p>Lower HHI and lower largest-position weight mean less capital concentration. A diversification ratio above 1 means the portfolio SD is below the weighted average constituent SD. Fund units receive their actual economic weights; cash dividends and embedded fund expenses are reported separately.</p>
 </details>
 
@@ -36095,8 +36816,7 @@ Select any combination of portfolios, S&P 500 and individual shares. The upper p
 
 <details markdown="1">
 <summary><strong>Table 2.m. Complete PerformanceAnalytics measures for Current and all updates</strong></summary>
-
-<p class="performance-table-note">72 measures · full common period · click a measure for its definition. Values shown to four decimals; hover over a value for more precision.</p><div class="performance-table-scroll" tabindex="0" role="region" aria-label="Complete portfolio performance measures"><table class="compact-performance-table"><thead><tr><th scope="col">Measure</th><th scope="col" title="Current">Current</th><th scope="col" title="Baltic_NetSD">Update: sales</th><th scope="col" title="curent_update_baltic">Update: no sales</th><th scope="col" title="update2_penalty_sell">Update2: sales</th><th scope="col" title="update2_penalty_no_sell">Update2: no sales</th><th scope="col" title="update3_funds_sell">Update3: sales</th><th scope="col" title="update3_funds_no_sell">Update3: no sales</th></tr></thead><tbody><tr><td><button type="button" class="metric-help-button" data-metric="ActiveReturn" data-meaning="Return above the benchmark." data-calculation="Rₚ − Rᵦ." data-interpretation="Higher is better.">ActiveReturn</button></td><td title="-0.105282199183045">-0.1053</td><td title="-0.0774252322835665">-0.0774</td><td title="-0.0821758198812741">-0.0822</td><td title="-0.0756249701623239">-0.0756</td><td title="-0.085979879642242">-0.0860</td><td title="-0.0081567829930895">-0.0082</td><td title="-0.0571806395610999">-0.0572</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="AdjustedSharpe" data-meaning="Sharpe ratio adjusted for skewness and kurtosis." data-calculation="Sharpe corrected with the third and fourth moments." data-interpretation="Higher is better; negative is poor.">AdjustedSharpe</button></td><td title="0.329596833559372">0.3296</td><td title="0.868134207163105">0.8681</td><td title="0.437734442600745">0.4377</td><td title="0.860664927787725">0.8607</td><td title="0.555091582761707">0.5551</td><td title="-1.76140073119637">-1.7614</td><td title="-0.155954052879206">-0.1560</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="AnnualizedReturn_Arithmetic" data-meaning="Annual return obtained from the average daily return." data-calculation="252 × mean(R)." data-interpretation="Higher is better, but ignores compounding.">AnnualizedReturn_Arithmetic</button></td><td title="0.0886059510568366">0.0886</td><td title="0.113162804866179">0.1132</td><td title="0.108809368261965">0.1088</td><td title="0.114782649812865">0.1148</td><td title="0.105410253094284">0.1054</td><td title="0.174529995505543">0.1745</td><td title="0.131204087622438">0.1312</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="AnnualizedReturn_Geometric" data-meaning="Compounded annual return." data-calculation="[∏(1+Rₜ)]^(252/n) − 1." data-interpretation="Higher is better.">AnnualizedReturn_Geometric</button></td><td title="0.0893010463259909">0.0893</td><td title="0.11715801322547">0.1172</td><td title="0.112407425627762">0.1124</td><td title="0.118958275346712">0.1190</td><td title="0.108603365866794">0.1086</td><td title="0.186426462515947">0.1864</td><td title="0.137402605947936">0.1374</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Appraisal" data-meaning="Alpha per unit of asset-specific risk." data-calculation="CAPM alpha / specific risk." data-interpretation="Higher is better.">Appraisal</button></td><td title="1.05625416655652">1.0563</td><td title="1.61807231137551">1.6181</td><td title="1.58617164428365">1.5862</td><td title="1.64199422364495">1.6420</td><td title="1.515866654092">1.5159</td><td title="1.98755754762557">1.9876</td><td title="1.82845769740189">1.8285</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="ArithmeticReturn" data-meaning="Average one-period return." data-calculation="mean(Rₜ)." data-interpretation="Higher is better.">ArithmeticReturn</button></td><td title="0.0003516109168922">0.0004</td><td title="0.0004490587494689">0.0004</td><td title="0.0004317832073887">0.0004</td><td title="0.0004554867056066">0.0005</td><td title="0.000418294655136">0.0004</td><td title="0.0006925793472442">0.0007</td><td title="0.0005206511413588">0.0005</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="AverageDrawdown" data-meaning="Average loss across drawdown episodes." data-calculation="Mean peak-to-trough drawdown." data-interpretation="Closer to zero is better.">AverageDrawdown</button></td><td title="0.0191031187065568">0.0191</td><td title="0.0116196266479784">0.0116</td><td title="0.0110723610746221">0.0111</td><td title="0.0116063354188975">0.0116</td><td title="0.0119290540204326">0.0119</td><td title="0.0115352280810811">0.0115</td><td title="0.0113342288612428">0.0113</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="AverageDrawdownLength" data-meaning="Average duration of drawdown episodes." data-calculation="Mean number of periods from peak to recovery/end." data-interpretation="Lower is better.">AverageDrawdownLength</button></td><td title="35.7826086956522">35.7826</td><td title="19.2142857142857">19.2143</td><td title="20.2">20.2000</td><td title="19.2142857142857">19.2143</td><td title="22.3333333333333">22.3333</td><td title="12.327868852459">12.3279</td><td title="17.6222222222222">17.6222</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="AverageRecoveryTime" data-meaning="Average time needed to recover from a trough." data-calculation="Mean periods from trough back to the prior peak." data-interpretation="Lower is better.">AverageRecoveryTime</button></td><td title="13.7826086956522">13.7826</td><td title="11.3095238095238">11.3095</td><td title="7.6">7.6000</td><td title="11.3095238095238">11.3095</td><td title="9.22222222222222">9.2222</td><td title="6.11475409836066">6.1148</td><td title="8.4">8.4000</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="BernardoLedoit" data-meaning="Gain-loss ratio based on positive and negative returns." data-calculation="E[max(R,0)] / E[max(−R,0)]." data-interpretation="Higher is better; above 1 means gains dominate losses.">BernardoLedoit</button></td><td title="1.24511210505014">1.2451</td><td title="1.35148769209955">1.3515</td><td title="1.34446861387979">1.3445</td><td title="1.3567505683194">1.3568</td><td title="1.33012562117071">1.3301</td><td title="1.47021581228192">1.4702</td><td title="1.41724654796116">1.4172</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="BetaCoKurtosis" data-meaning="Sensitivity to joint extreme movements with the benchmark." data-calculation="Fourth-order co-moment scaled by benchmark co-kurtosis." data-interpretation="Lower absolute exposure is usually safer.">BetaCoKurtosis</button></td><td title="0.046842879279396">0.0468</td><td title="-0.0367506235555896">-0.0368</td><td title="-0.0075943710036894">-0.0076</td><td title="-0.0371100653154771">-0.0371</td><td title="-0.0062499323969708">-0.0062</td><td title="-0.101648764280533">-0.1016</td><td title="-0.0124809712026418">-0.0125</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="BetaCoSkewness" data-meaning="Sensitivity to asymmetric joint movements with the benchmark." data-calculation="Third-order co-moment scaled by benchmark co-skewness." data-interpretation="Positive is generally preferable.">BetaCoSkewness</button></td><td title="-0.154019331008821">-0.1540</td><td title="-0.269954981963087">-0.2700</td><td title="-0.308187826229186">-0.3082</td><td title="-0.26865624438238">-0.2687</td><td title="-0.314592053314813">-0.3146</td><td title="-0.811895672944091">-0.8119</td><td title="-0.402122285852069">-0.4021</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Burke" data-meaning="Return relative to several largest drawdowns." data-calculation="Excess return / root-sum-square of drawdowns." data-interpretation="Higher is better.">Burke</button></td><td title="0.672668989790442">0.6727</td><td title="1.01935133219537">1.0194</td><td title="1.01040875052269">1.0104</td><td title="1.03592463381542">1.0359</td><td title="0.956721581660808">0.9567</td><td title="1.38276312731447">1.3828</td><td title="1.15694111302844">1.1569</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="CAPMAlpha" data-meaning="Return unexplained by market exposure." data-calculation="mean(Rₚ−R𝒻) − β mean(Rᵦ−R𝒻)." data-interpretation="Higher is better.">CAPMAlpha</button></td><td title="0.0003249634317239">0.0003</td><td title="0.0004241650951466">0.0004</td><td title="0.0004087400446935">0.0004</td><td title="0.0004308149280274">0.0004</td><td title="0.0003940867872474">0.0004</td><td title="0.0006048092219366">0.0006</td><td title="0.0004784261277588">0.0005</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="CAPMBeta" data-meaning="Sensitivity to benchmark movements." data-calculation="Cov(Rₚ,Rᵦ) / Var(Rᵦ)." data-interpretation="Above 1 means greater market sensitivity; below 1 means lower.">CAPMBeta</button></td><td title="0.0356408830951262">0.0356</td><td title="0.0332951427840404">0.0333</td><td title="0.0308201191435902">0.0308</td><td title="0.0329983837085357">0.0330</td><td title="0.0323779067313294">0.0324</td><td title="0.117392119953716">0.1174</td><td title="0.0564757523611436">0.0565</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="CDD" data-meaning="Conditional drawdown at risk." data-calculation="Mean of drawdowns beyond the selected drawdown quantile." data-interpretation="Closer to zero is better.">CDD</button></td><td title="0.0477560030162478">0.0478</td><td title="0.0298110889876322">0.0298</td><td title="0.0340640931444539">0.0341</td><td title="0.0289803827104053">0.0290</td><td title="0.0377776331156702">0.0378</td><td title="0.0233675714182462">0.0234</td><td title="0.0365178414967585">0.0365</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Calmar" data-meaning="Annual return per unit of maximum drawdown." data-calculation="Annualised return / |maximum drawdown|." data-interpretation="Higher is better.">Calmar</button></td><td title="0.585917947778662">0.5859</td><td title="1.98915623772965">1.9892</td><td title="1.63187648013448">1.6319</td><td title="2.05346711389317">2.0535</td><td title="1.4889255988137">1.4889</td><td title="1.87389466042447">1.8739</td><td title="1.97890411540502">1.9789</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="CoKurtosis" data-meaning="Joint fourth-order tail dependence with the benchmark." data-calculation="E[(Rₚ−μₚ)(Rᵦ−μᵦ)³]." data-interpretation="Large absolute values mean stronger joint tail exposure.">CoKurtosis</button></td><td title="6.30574706476944e-09">0.0000</td><td title="-4.94717959653768e-09">0.0000</td><td title="-1.02231509680808e-09">0.0000</td><td title="-4.99556579433836e-09">0.0000</td><td title="-8.41333698386501e-10">0.0000</td><td title="-1.36834329328118e-08">0.0000</td><td title="-1.68012403885573e-09">0.0000</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="CoSkewness" data-meaning="Joint third-order asymmetry with the benchmark." data-calculation="E[(Rₚ−μₚ)(Rᵦ−μᵦ)²]." data-interpretation="More positive is generally preferable.">CoSkewness</button></td><td title="-6.78239859258945e-08">0.0000</td><td title="-1.18877434263371e-07">0.0000</td><td title="-1.35713657836257e-07">0.0000</td><td title="-1.18305521901343e-07">0.0000</td><td title="-1.3853382466127e-07">0.0000</td><td title="-3.57526554195336e-07">0.0000</td><td title="-1.77078656798978e-07">0.0000</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="CumulativeReturn" data-meaning="Total compounded return over the displayed period." data-calculation="∏(1+Rₜ) − 1." data-interpretation="Higher is better.">CumulativeReturn</button></td><td title="0.337618951237068">0.3376</td><td title="0.457564704701746">0.4576</td><td title="0.436593532009443">0.4366</td><td title="0.465568006262758">0.4656</td><td title="0.419955035916635">0.4200</td><td title="0.78845379933453">0.7885</td><td title="0.549361360072621">0.5494</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="DRatio" data-meaning="Balance between cumulative losses and gains." data-calculation="Downside return contribution / upside return contribution." data-interpretation="Lower is better.">DRatio</button></td><td title="0.687150871988768">0.6872</td><td title="0.642779787512577">0.6428</td><td title="0.63730232372464">0.6373</td><td title="0.64028642540366">0.6403</td><td title="0.625698844732889">0.6257</td><td title="0.495044723750801">0.4950</td><td title="0.594822935995803">0.5948</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="DownCapture" data-meaning="Performance when the benchmark declines." data-calculation="Portfolio compound return / benchmark compound return on down-market days." data-interpretation="Lower is normally better when both returns are negative.">DownCapture</button></td><td title="0.0025932804287679">0.0026</td><td title="-0.023257603514588">-0.0233</td><td title="-0.0144330160422461">-0.0144</td><td title="-0.024299509609209">-0.0243</td><td title="-0.0085395433013766">-0.0085</td><td title="0.0679879919766533">0.0680</td><td title="0.0069340437012022">0.0069</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="DownNumber" data-meaning="Number of negative-return observations." data-calculation="Count(Rₜ &lt; 0)." data-interpretation="Lower is better, conditional on similar return.">DownNumber</button></td><td title="0.496042216358839">0.4960</td><td title="0.453825857519789">0.4538</td><td title="0.485488126649077">0.4855</td><td title="0.45646437994723">0.4565</td><td title="0.485488126649077">0.4855</td><td title="0.551451187335092">0.5515</td><td title="0.522427440633245">0.5224</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="DownPercent" data-meaning="Fraction of observations with negative return." data-calculation="Count(Rₜ&lt;0)/n." data-interpretation="Lower is better.">DownPercent</button></td><td title="0.846965699208443">0.8470</td><td title="0.87598944591029">0.8760</td><td title="0.865435356200528">0.8654</td><td title="0.87335092348285">0.8734</td><td title="0.865435356200528">0.8654</td><td title="0.849604221635884">0.8496</td><td title="0.878627968337731">0.8786</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="DownsideDeviation" data-meaning="Volatility below the minimum acceptable return." data-calculation="Root mean squared shortfall below MAR." data-interpretation="Lower is better.">DownsideDeviation</button></td><td title="0.0033663859088289">0.0034</td><td title="0.0027917243807527">0.0028</td><td title="0.0028014382550483">0.0028</td><td title="0.0027929695079015">0.0028</td><td title="0.0028212807607693">0.0028</td><td title="0.0033487150918559">0.0033</td><td title="0.0028774171886953">0.0029</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="DrawdownDeviation" data-meaning="Variability of drawdowns." data-calculation="Standard deviation of the drawdown series." data-interpretation="Lower is better.">DrawdownDeviation</button></td><td title="0.0061123215578234">0.0061</td><td title="0.0040538082192585">0.0041</td><td title="0.0043698592930966">0.0044</td><td title="0.0040295505972156">0.0040</td><td title="0.0044258428470859">0.0044</td><td title="0.0053254491245771">0.0053</td><td title="0.0046665913309102">0.0047</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="ES_Loss" data-meaning="Average loss in the worst 5% of observations." data-calculation="Mean loss conditional on loss ≥ 95% VaR." data-interpretation="Lower is better.">ES_Loss</button></td><td title="0.0112579301995676">0.0113</td><td title="0.0095285168757871">0.0095</td><td title="0.0096357859743548">0.0096</td><td title="0.0095450750799919">0.0095</td><td title="0.0097321301296878">0.0097</td><td title="0.0109685759440668">0.0110</td><td title="0.0099632552476486">0.0100</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="FamaBeta" data-meaning="Beta estimated using Fama decomposition." data-calculation="Systematic risk divided by benchmark risk under the decomposition." data-interpretation="Lower means less systematic exposure.">FamaBeta</button></td><td title="0.537033015206029">0.5370</td><td title="0.471214614343664">0.4712</td><td title="0.46202490038692">0.4620</td><td title="0.472119273880257">0.4721</td><td title="0.46488683809811">0.4649</td><td title="0.577621974397169">0.5776</td><td title="0.478430078231088">0.4784</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="GeometricReturn" data-meaning="Average compounded one-period return." data-calculation="[∏(1+Rₜ)]^(1/n) − 1." data-interpretation="Higher is better.">GeometricReturn</button></td><td title="0.0003394871708846">0.0003</td><td title="0.0004397314640061">0.0004</td><td title="0.000422813640964">0.0004</td><td title="0.0004461238534509">0.0004</td><td title="0.0004092146346037">0.0004</td><td title="0.0006785865503435">0.0007</td><td title="0.0005110323064789">0.0005</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Hurst" data-meaning="Persistence of the return process." data-calculation="Hurst exponent estimated from rescaled behaviour." data-interpretation="Near 0.5 suggests no persistence; above 0.5 persistence; below 0.5 mean reversion.">Hurst</button></td><td title="0.397039892869073">0.3970</td><td title="0.337686964337022">0.3377</td><td title="0.357485233211581">0.3575</td><td title="0.338758226175675">0.3388</td><td title="0.358400158561754">0.3584</td><td title="0.390016086331771">0.3900</td><td title="0.368861697558386">0.3689</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Information_Annualized" data-meaning="Annualised active return per unit of tracking error." data-calculation="Annualised active return / annualised tracking error." data-interpretation="Higher is better.">Information_Annualized</button></td><td title="-0.655386562284093">-0.6554</td><td title="-0.494670660731162">-0.4947</td><td title="-0.525847999705467">-0.5258</td><td title="-0.482866526393909">-0.4829</td><td title="-0.550300974624731">-0.5503</td><td title="-0.0534388269424264">-0.0534</td><td title="-0.371738553235222">-0.3717</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Information_Daily" data-meaning="Daily active return per unit of tracking error." data-calculation="mean(Rₚ−Rᵦ) / sd(Rₚ−Rᵦ)." data-interpretation="Higher is better.">Information_Daily</button></td><td title="-0.0361982843291925">-0.0362</td><td title="-0.0269847123703299">-0.0270</td><td title="-0.0287457004251709">-0.0287</td><td title="-0.0263199064814291">-0.0263</td><td title="-0.0301331681684625">-0.0301</td><td title="-0.0028296171869122">-0.0028</td><td title="-0.0200998412815889">-0.0201</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="JensenAlpha" data-meaning="CAPM risk-adjusted excess return." data-calculation="Rₚ − [R𝒻 + β(Rᵦ−R𝒻)]." data-interpretation="Higher is better.">JensenAlpha</button></td><td title="0.0823659276205331">0.0824</td><td title="0.110679336282864">0.1107</td><td title="0.106410346817827">0.1064</td><td title="0.112537342748153">0.1125</td><td title="0.102303167692223">0.1023</td><td title="0.163583922818166">0.1636</td><td title="0.12641337076094">0.1264</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Kappa" data-meaning="Return above MAR per unit of lower partial moment risk." data-calculation="[mean(R)−MAR] / LPMₙ^(1/n)." data-interpretation="Higher is better.">Kappa</button></td><td title="0.061547456751636">0.0615</td><td title="0.102995851793417">0.1030</td><td title="0.0962304971408314">0.0962</td><td title="0.104410871339644">0.1044</td><td title="0.0934192416145878">0.0934</td><td title="0.126697773904605">0.1267</td><td title="0.110856221854968">0.1109</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Kelly" data-meaning="Approximate growth-optimal risky allocation." data-calculation="Expected excess return / variance under the quadratic approximation." data-interpretation="Higher implies a larger theoretical allocation; unstable extreme values require caution.">Kelly</button></td><td title="14.4904024985349">14.4904</td><td title="24.0373025420873">24.0373</td><td title="24.0411397811679">24.0411</td><td title="24.2880313212447">24.2880</td><td title="23.0042396766551">23.0042</td><td title="24.671877100295">24.6719</td><td title="27.0352222258854">27.0352</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Kurtosis" data-meaning="Tail thickness relative to a normal distribution." data-calculation="Standardised fourth central moment." data-interpretation="Higher means more extreme-tail risk.">Kurtosis</button></td><td title="15.5978569646883">15.5979</td><td title="7.09526716434416">7.0953</td><td title="9.38749476471588">9.3875</td><td title="7.1087666393861">7.1088</td><td title="9.16737908536127">9.1674</td><td title="14.0676960889986">14.0677</td><td title="9.94259305136273">9.9426</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="M2Sortino" data-meaning="Sortino ratio translated into return units." data-calculation="Risk-free return plus Sortino × benchmark downside deviation." data-interpretation="Higher is better.">M2Sortino</button></td><td title="0.0939427558812515">0.0939</td><td title="0.125773815860032">0.1258</td><td title="0.120639280689355">0.1206</td><td title="0.127690287618425">0.1277</td><td title="0.116475275541734">0.1165</td><td title="0.195675649633514">0.1957</td><td title="0.146848366433958">0.1468</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="MSquaredExcess" data-meaning="M² return advantage over the benchmark." data-calculation="Modigliani measure − benchmark return." data-interpretation="Higher is better.">MSquaredExcess</button></td><td title="-0.0236880044653769">-0.0237</td><td title="0.0452430524953746">0.0452</td><td title="0.040775524018734">0.0408</td><td title="0.048036273244122">0.0480</td><td title="0.0326718391873357">0.0327</td><td title="0.107288439113055">0.1073</td><td title="0.0775262027541137">0.0775</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Martin" data-meaning="Return per unit of ulcer-index risk." data-calculation="Excess return / Ulcer Index." data-interpretation="Higher is better.">Martin</button></td><td title="1.29710328693306">1.2971</td><td title="4.71514977876964">4.7151</td><td title="4.45700707625186">4.4570</td><td title="4.86588161741765">4.8659</td><td title="4.02143207965571">4.0214</td><td title="10.8583435640642">10.8583</td><td title="6.20733901508103">6.2073</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="MaximumDrawdown" data-meaning="Largest historical peak-to-trough loss." data-calculation="min(wealth/running maximum − 1)." data-interpretation="Closer to zero is better.">MaximumDrawdown</button></td><td title="0.152412204924853">0.1524</td><td title="0.0588983464462245">0.0589</td><td title="0.068882312476554">0.0689</td><td title="0.057930450671391">0.0579</td><td title="0.0729407607427287">0.0729</td><td title="0.0994860951648785">0.0995</td><td title="0.0694336854819335">0.0694</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Modigliani" data-meaning="Sharpe performance translated to benchmark volatility." data-calculation="R𝒻 + Sharpeₚ × volatilityᵦ." data-interpretation="Higher is better.">Modigliani</button></td><td title="0.0006547286794971">0.0007</td><td title="0.0009529813715443">0.0010</td><td title="0.0009345453178544">0.0009</td><td title="0.0009647704103733">0.0010</td><td title="0.0008997773669982">0.0009</td><td title="0.001199018351002">0.0012</td><td title="0.0010882491821666">0.0011</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="NetSelectivity" data-meaning="Selection return after diversification adjustment." data-calculation="Selectivity minus diversification contribution." data-interpretation="Higher is better.">NetSelectivity</button></td><td title="-0.0151965807183018">-0.0152</td><td title="0.0254675442351908">0.0255</td><td title="0.0225051210044859">0.0225</td><td title="0.0270917747677222">0.0271</td><td title="0.0181441761152302">0.0181</td><td title="0.0740309040604082">0.0740</td><td title="0.0443081285765891">0.0443</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Omega" data-meaning="Probability-weighted gains relative to losses at a threshold." data-calculation="Integral above threshold / integral below threshold." data-interpretation="Higher is better; above 1 is favourable.">Omega</button></td><td title="1.24511210505014">1.2451</td><td title="1.35148769209955">1.3515</td><td title="1.34446861387979">1.3445</td><td title="1.3567505683194">1.3568</td><td title="1.33012562117071">1.3301</td><td title="1.47021581228192">1.4702</td><td title="1.41724654796116">1.4172</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="OmegaExcessReturn" data-meaning="Excess return adjusted by Omega downside structure." data-calculation="Excess return expressed through the Omega function." data-interpretation="Higher is better.">OmegaExcessReturn</button></td><td title="0.073608962428026">0.0736</td><td title="0.104144658729221">0.1041</td><td title="0.0993487908414489">0.0993</td><td title="0.105939116810104">0.1059</td><td title="0.0954522371499123">0.0955</td><td title="0.170816749430478">0.1708</td><td title="0.123989802675432">0.1240</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="PainIndex" data-meaning="Average depth of all drawdowns." data-calculation="Mean absolute percentage drawdown." data-interpretation="Lower is better.">PainIndex</button></td><td title="0.0521287627362786">0.0521</td><td title="0.018420262719115">0.0184</td><td title="0.0192341869110125">0.0192</td><td title="0.0181025725690249">0.0181</td><td title="0.0202401914172006">0.0202</td><td title="0.0109254783972145">0.0109</td><td title="0.0159365699222435">0.0159</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="PainRatio" data-meaning="Return earned per unit of average drawdown pain." data-calculation="Excess return / Pain Index." data-interpretation="Higher is better.">PainRatio</button></td><td title="1.71308585967728">1.7131</td><td title="6.36027916713116">6.3603</td><td title="5.84414751441368">5.8441</td><td title="6.57134641461184">6.5713</td><td title="5.36572820030253">5.3657</td><td title="17.0634598997035">17.0635</td><td title="8.62184313301677">8.6218</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Prospect" data-meaning="Behavioural value of gains and losses." data-calculation="Probability-weighted prospect utility with losses penalised more strongly." data-interpretation="Higher is better.">Prospect</button></td><td title="-0.42820457727015">-0.4282</td><td title="-0.411191881669741">-0.4112</td><td title="-0.405171177409193">-0.4052</td><td title="-0.408335921063191">-0.4083</td><td title="-0.413128636166583">-0.4131</td><td title="-0.342979791790751">-0.3430</td><td title="-0.361133419832753">-0.3611</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Rachev" data-meaning="Extreme gains relative to extreme losses." data-calculation="Upper-tail expected return / lower-tail expected loss." data-interpretation="Higher is better; above 1 means the selected upper tail exceeds the lower tail.">Rachev</button></td><td title="1.08865476372951">1.0887</td><td title="1.24012290014226">1.2401</td><td title="1.14667064153344">1.1467</td><td title="1.24138479873456">1.2414</td><td title="1.13541830110591">1.1354</td><td title="1.23398510925372">1.2340</td><td title="1.16113457246801">1.1611</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Selectivity" data-meaning="Return attributed to security selection." data-calculation="Portfolio return minus return implied by systematic risk." data-interpretation="Higher is better.">Selectivity</button></td><td title="0.0823659276205331">0.0824</td><td title="0.110679336282864">0.1107</td><td title="0.106410346817827">0.1064</td><td title="0.112537342748153">0.1125</td><td title="0.102303167692223">0.1023</td><td title="0.163583922818166">0.1636</td><td title="0.12641337076094">0.1264</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Sharpe_Annualized" data-meaning="Annual excess return per unit of annual volatility." data-calculation="Annualised excess return / annualised SD." data-interpretation="Higher is better.">Sharpe_Annualized</button></td><td title="1.13310895088647">1.1331</td><td title="1.64928123043935">1.6493</td><td title="1.61737479635565">1.6174</td><td title="1.66968398021611">1.6697</td><td title="1.55720349555149">1.5572</td><td title="2.07508616674773">2.0751</td><td title="1.88338303746666">1.8834</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Sharpe_Daily" data-meaning="Daily excess return per unit of daily volatility." data-calculation="mean(R−R𝒻) / sd(R−R𝒻)." data-interpretation="Higher is better.">Sharpe_Daily</button></td><td title="0.0713791545806407">0.0714</td><td title="0.10389495185117">0.1039</td><td title="0.101885035427161">0.1019</td><td title="0.105180204279055">0.1052</td><td title="0.0980945997607076">0.0981</td><td title="0.130718141577257">0.1307</td><td title="0.118641979538434">0.1186</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Sharpe_ES" data-meaning="Excess return per unit of expected shortfall." data-calculation="Mean excess return / ES loss." data-interpretation="Higher is better.">Sharpe_ES</button></td><td title="0.0312322878770127">0.0312</td><td title="0.04712787470735">0.0471</td><td title="0.0448103775382642">0.0448</td><td title="0.0477195518934556">0.0477</td><td title="0.0429807914158524">0.0430</td><td title="0.0631421390320825">0.0631</td><td title="0.0522571316720765">0.0523</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Sharpe_VaR" data-meaning="Excess return per unit of value at risk." data-calculation="Mean excess return / VaR loss." data-interpretation="Higher is better.">Sharpe_VaR</button></td><td title="0.0594544243992797">0.0595</td><td title="0.0861992430935366">0.0862</td><td title="0.0876922203391581">0.0877</td><td title="0.0874871356447572">0.0875</td><td title="0.0818412742706713">0.0818</td><td title="0.109251447613842">0.1093</td><td title="0.100689071856719">0.1007</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Skewness" data-meaning="Asymmetry of returns." data-calculation="Standardised third central moment." data-interpretation="More positive is generally preferable.">Skewness</button></td><td title="-0.186230867314591">-0.1862</td><td title="-0.0344751670951065">-0.0345</td><td title="-0.12295603530931">-0.1230</td><td title="-0.0260855966688043">-0.0261</td><td title="-0.0786060003846116">-0.0786</td><td title="0.395805854131159">0.3958</td><td title="-0.18066359176704">-0.1807</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Sortino" data-meaning="Excess return per unit of downside risk." data-calculation="Mean(R−MAR) / downside deviation." data-interpretation="Higher is better.">Sortino</button></td><td title="0.104447596447588">0.1044</td><td title="0.160853540043193">0.1609</td><td title="0.154129118002386">0.1541</td><td title="0.163083307683095">0.1631</td><td title="0.148264100812847">0.1483</td><td title="0.206819430213268">0.2068</td><td title="0.180943918526795">0.1809</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="SpecificRisk" data-meaning="Risk not explained by the benchmark." data-calculation="Residual volatility from the market regression." data-interpretation="Lower is safer, although it may reflect diversifiable opportunity.">SpecificRisk</button></td><td title="0.0779792688430789">0.0780</td><td title="0.0684019715959275">0.0684</td><td title="0.0670862748059556">0.0671</td><td title="0.0685369906468606">0.0685</td><td title="0.0674882367892067">0.0675</td><td title="0.0823039931666841">0.0823</td><td title="0.0691366122063229">0.0691</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Sterling" data-meaning="Return relative to drawdown risk." data-calculation="Annualised excess return / average or adjusted maximum drawdown." data-interpretation="Higher is better.">Sterling</button></td><td title="0.353790524323406">0.3538</td><td title="0.7373142379749">0.7373</td><td title="0.66559620116149">0.6656</td><td title="0.753232038793019">0.7532</td><td title="0.6279801557503">0.6280</td><td title="0.934533619307462">0.9345</td><td title="0.810952117090007">0.8110</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="SystematicRisk" data-meaning="Risk explained by benchmark exposure." data-calculation="β² Var(Rᵦ), or its square-root form under the implementation." data-interpretation="Lower is safer; higher means more market-driven risk.">SystematicRisk</button></td><td title="0.0051896574405271">0.0052</td><td title="0.0048480949538042">0.0048</td><td title="0.0044877075633779">0.0045</td><td title="0.0048048839609642">0.0048</td><td title="0.0047145365093357">0.0047</td><td title="0.0170934285536929">0.0171</td><td title="0.0082234160042588">0.0082</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="TotalRisk" data-meaning="Total return variability." data-calculation="Standard deviation or variance-based total risk used by the decomposition." data-interpretation="Lower is safer.">TotalRisk</button></td><td title="0.0781517684614443">0.0782</td><td title="0.068573564461031">0.0686</td><td title="0.0672362088945725">0.0672</td><td title="0.0687052108417272">0.0687</td><td title="0.0676527084410808">0.0677</td><td title="0.0840602914038596">0.0841</td><td title="0.0696239593685002">0.0696</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="TrackingError_Annualized" data-meaning="Annualised volatility of returns relative to the benchmark." data-calculation="sd(Rₚ−Rᵦ) × √252." data-interpretation="Lower means closer benchmark tracking.">TrackingError_Annualized</button></td><td title="0.160641376008879">0.1606</td><td title="0.156518747582737">0.1565</td><td title="0.156272953262733">0.1563</td><td title="0.156616717102132">0.1566</td><td title="0.15624155436191">0.1562</td><td title="0.152637762836326">0.1526</td><td title="0.153819503152039">0.1538</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="TrackingError_Daily" data-meaning="Daily volatility of active returns." data-calculation="sd(Rₚ−Rᵦ)." data-interpretation="Lower means closer benchmark tracking.">TrackingError_Daily</button></td><td title="0.0101194555044455">0.0101</td><td title="0.0098597543243622">0.0099</td><td title="0.0098442707375907">0.0098</td><td title="0.0098659258239904">0.0099</td><td title="0.0098422927927569">0.0098</td><td title="0.0096152752652898">0.0096</td><td title="0.0096897179079003">0.0097</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Treynor_Annualized" data-meaning="Annual excess return per unit of beta." data-calculation="Annualised excess return / β." data-interpretation="Higher is better when beta is meaningful.">Treynor_Annualized</button></td><td title="2.50557894672937">2.5056</td><td title="3.51877191172845">3.5188</td><td title="3.64720931493024">3.6472</td><td title="3.60497278889273">3.6050</td><td title="3.35424296474694">3.3542</td><td title="1.58806623979061">1.5881</td><td title="2.43294865855514">2.4329</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Treynor_Daily" data-meaning="Daily excess return per unit of beta." data-calculation="Mean daily excess return / β." data-interpretation="Higher is better.">Treynor_Daily</button></td><td title="0.009525217710754">0.0095</td><td title="0.0132070754842021">0.0132</td><td title="0.0137187542654914">0.0137</td><td title="0.0135195668185287">0.0135</td><td title="0.0126386995304977">0.0126</td><td title="0.0057805119339452">0.0058</td><td title="0.009048702940885">0.0090</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="UlcerIndex" data-meaning="Depth and duration of drawdowns." data-calculation="Root mean square percentage drawdown." data-interpretation="Lower is better.">UlcerIndex</button></td><td title="0.0688465191828625">0.0688</td><td title="0.0248471456310855">0.0248</td><td title="0.0252203830293874">0.0252</td><td title="0.0244474248861492">0.0244</td><td title="0.0270061420199572">0.0270</td><td title="0.0171689596498795">0.0172</td><td title="0.0221355085672154">0.0221</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="UpCapture" data-meaning="Performance when the benchmark rises." data-calculation="Portfolio compound return / benchmark compound return on up-market days." data-interpretation="Higher is better.">UpCapture</button></td><td title="0.100482265995862">0.1005</td><td title="0.107322164233505">0.1073</td><td title="0.109463512271888">0.1095</td><td title="0.108297810055018">0.1083</td><td title="0.110347393607049">0.1103</td><td title="0.247641962817508">0.2476</td><td title="0.151236475725849">0.1512</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="UpNumber" data-meaning="Number of positive-return observations." data-calculation="Count(Rₜ &gt; 0)." data-interpretation="Higher is generally better.">UpNumber</button></td><td title="0.562761506276151">0.5628</td><td title="0.52510460251046">0.5251</td><td title="0.558577405857741">0.5586</td><td title="0.527196652719665">0.5272</td><td title="0.569037656903766">0.5690</td><td title="0.682008368200837">0.6820</td><td title="0.594142259414226">0.5941</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="UpPercent" data-meaning="Fraction of observations with positive return." data-calculation="Count(Rₜ&gt;0)/n." data-interpretation="Higher is generally better.">UpPercent</button></td><td title="0.184100418410042">0.1841</td><td title="0.146443514644351">0.1464</td><td title="0.169456066945607">0.1695</td><td title="0.144351464435146">0.1444</td><td title="0.163179916317992">0.1632</td><td title="0.223849372384937">0.2238</td><td title="0.184100418410042">0.1841</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="UpsidePotential" data-meaning="Average return above the minimum acceptable return." data-calculation="Mean[max(R−MAR,0)]." data-interpretation="Higher is better.">UpsidePotential</button></td><td title="0.530569335421779">0.5306</td><td title="0.618489877413541">0.6185</td><td title="0.601569354331649">0.6016</td><td title="0.620218690680124">0.6202</td><td title="0.597378290396391">0.5974</td><td title="0.646658807816484">0.6467</td><td title="0.614605789214434">0.6146</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="UpsideRisk" data-meaning="Magnitude of returns above the target." data-calculation="Root upper partial moment relative to MAR." data-interpretation="Higher means more upside dispersion, not conventional risk.">UpsideRisk</button></td><td title="0.0036094115714646">0.0036</td><td title="0.0033268415117946">0.0033</td><td title="0.0032058702095422">0.0032</td><td title="0.0033374320058772">0.0033</td><td title="0.0032214127558608">0.0032</td><td title="0.0041598833090184">0.0042</td><td title="0.0033507206573995">0.0034</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="VaR_Loss" data-meaning="Loss threshold exceeded by the worst 5% of observations." data-calculation="95th percentile of loss −R." data-interpretation="Lower is better.">VaR_Loss</button></td><td title="0.0059139571267377">0.0059</td><td title="0.0052095439977551">0.0052</td><td title="0.0049238484978346">0.0049</td><td title="0.0052063277903635">0.0052</td><td title="0.0051110476817923">0.0051</td><td title="0.0063393150605399">0.0063</td><td title="0.0051708803324731">0.0052</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Volatility" data-meaning="Daily standard deviation of returns." data-calculation="sd(Rₜ)." data-interpretation="Lower means more stable returns.">Volatility</button></td><td title="0.0049259607928667">0.0049</td><td title="0.0043222383904873">0.0043</td><td title="0.0042379453035321">0.0042</td><td title="0.0043305364229769">0.0043</td><td title="0.0042641965628733">0.0043</td><td title="0.0052982649453816">0.0053</td><td title="0.004388422575082">0.0044</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Volatility_Annualized" data-meaning="Annualised standard deviation." data-calculation="sd(Rₜ) × √252." data-interpretation="Lower means more stable returns.">Volatility_Annualized</button></td><td title="0.0781972033558794">0.0782</td><td title="0.0686134073301944">0.0686</td><td title="0.0672752960582419">0.0673</td><td title="0.0687451345122257">0.0687</td><td title="0.0676920218811559">0.0677</td><td title="0.0841073485536665">0.0841</td><td title="0.069664048689172">0.0697</td></tr></tbody></table></div>
+<p class="performance-table-note">72 measures · full common period · click a measure for its definition. Values shown to four decimals; hover over a value for more precision.</p><div class="performance-table-scroll" tabindex="0" role="region" aria-label="Complete portfolio performance measures"><table class="compact-performance-table"><thead><tr><th scope="col">Measure</th><th scope="col" title="Current">Current</th><th scope="col" title="Baltic_NetSD">Update: sales</th><th scope="col" title="curent_update_baltic">Update: no sales</th><th scope="col" title="update2_penalty_sell">Update2: sales</th><th scope="col" title="update2_penalty_no_sell">Update2: no sales</th><th scope="col" title="update3_funds_sell">Update3: sales</th><th scope="col" title="update3_funds_no_sell">Update3: no sales</th><th scope="col" title="update3_stochastic_no_sell">Update3 stochastic: no sales</th></tr></thead><tbody><tr><td><button type="button" class="metric-help-button" data-metric="ActiveReturn" data-meaning="Return above the benchmark." data-calculation="Rₚ − Rᵦ." data-interpretation="Higher is better.">ActiveReturn</button></td><td title="-0.105282199183045">-0.1053</td><td title="-0.0774252322835665">-0.0774</td><td title="-0.0821758198812741">-0.0822</td><td title="-0.0756249701623239">-0.0756</td><td title="-0.085979879642242">-0.0860</td><td title="-0.0081567829930895">-0.0082</td><td title="-0.0571806395610999">-0.0572</td><td title="-0.0576841318593679">-0.0577</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="AdjustedSharpe" data-meaning="Sharpe ratio adjusted for skewness and kurtosis." data-calculation="Sharpe corrected with the third and fourth moments." data-interpretation="Higher is better; negative is poor.">AdjustedSharpe</button></td><td title="0.329596833559372">0.3296</td><td title="0.868134207163105">0.8681</td><td title="0.437734442600745">0.4377</td><td title="0.860664927787725">0.8607</td><td title="0.555091582761707">0.5551</td><td title="-1.76140073119637">-1.7614</td><td title="-0.155954052879206">-0.1560</td><td title="-0.155954052879202">-0.1560</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="AnnualizedReturn_Arithmetic" data-meaning="Annual return obtained from the average daily return." data-calculation="252 × mean(R)." data-interpretation="Higher is better, but ignores compounding.">AnnualizedReturn_Arithmetic</button></td><td title="0.0886059510568366">0.0886</td><td title="0.113162804866179">0.1132</td><td title="0.108809368261965">0.1088</td><td title="0.114782649812865">0.1148</td><td title="0.105410253094284">0.1054</td><td title="0.174529995505543">0.1745</td><td title="0.131204087622438">0.1312</td><td title="0.130744128289298">0.1307</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="AnnualizedReturn_Geometric" data-meaning="Compounded annual return." data-calculation="[∏(1+Rₜ)]^(252/n) − 1." data-interpretation="Higher is better.">AnnualizedReturn_Geometric</button></td><td title="0.0893010463259909">0.0893</td><td title="0.11715801322547">0.1172</td><td title="0.112407425627762">0.1124</td><td title="0.118958275346712">0.1190</td><td title="0.108603365866794">0.1086</td><td title="0.186426462515947">0.1864</td><td title="0.137402605947936">0.1374</td><td title="0.136899113649668">0.1369</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Appraisal" data-meaning="Alpha per unit of asset-specific risk." data-calculation="CAPM alpha / specific risk." data-interpretation="Higher is better.">Appraisal</button></td><td title="1.05625416655652">1.0563</td><td title="1.61807231137551">1.6181</td><td title="1.58617164428365">1.5862</td><td title="1.64199422364495">1.6420</td><td title="1.515866654092">1.5159</td><td title="1.98755754762557">1.9876</td><td title="1.82845769740189">1.8285</td><td title="1.82814122750561">1.8281</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="ArithmeticReturn" data-meaning="Average one-period return." data-calculation="mean(Rₜ)." data-interpretation="Higher is better.">ArithmeticReturn</button></td><td title="0.0003516109168922">0.0004</td><td title="0.0004490587494689">0.0004</td><td title="0.0004317832073887">0.0004</td><td title="0.0004554867056066">0.0005</td><td title="0.000418294655136">0.0004</td><td title="0.0006925793472442">0.0007</td><td title="0.0005206511413588">0.0005</td><td title="0.0005188259059099">0.0005</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="AverageDrawdown" data-meaning="Average loss across drawdown episodes." data-calculation="Mean peak-to-trough drawdown." data-interpretation="Closer to zero is better.">AverageDrawdown</button></td><td title="0.0191031187065568">0.0191</td><td title="0.0116196266479784">0.0116</td><td title="0.0110723610746221">0.0111</td><td title="0.0116063354188975">0.0116</td><td title="0.0119290540204326">0.0119</td><td title="0.0115352280810811">0.0115</td><td title="0.0113342288612428">0.0113</td><td title="0.0112949370478051">0.0113</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="AverageDrawdownLength" data-meaning="Average duration of drawdown episodes." data-calculation="Mean number of periods from peak to recovery/end." data-interpretation="Lower is better.">AverageDrawdownLength</button></td><td title="35.7826086956522">35.7826</td><td title="19.2142857142857">19.2143</td><td title="20.2">20.2000</td><td title="19.2142857142857">19.2143</td><td title="22.3333333333333">22.3333</td><td title="12.327868852459">12.3279</td><td title="17.6222222222222">17.6222</td><td title="17.6222222222222">17.6222</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="AverageRecoveryTime" data-meaning="Average time needed to recover from a trough." data-calculation="Mean periods from trough back to the prior peak." data-interpretation="Lower is better.">AverageRecoveryTime</button></td><td title="13.7826086956522">13.7826</td><td title="11.3095238095238">11.3095</td><td title="7.6">7.6000</td><td title="11.3095238095238">11.3095</td><td title="9.22222222222222">9.2222</td><td title="6.11475409836066">6.1148</td><td title="8.4">8.4000</td><td title="8.4">8.4000</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="BernardoLedoit" data-meaning="Gain-loss ratio based on positive and negative returns." data-calculation="E[max(R,0)] / E[max(−R,0)]." data-interpretation="Higher is better; above 1 means gains dominate losses.">BernardoLedoit</button></td><td title="1.24511210505014">1.2451</td><td title="1.35148769209955">1.3515</td><td title="1.34446861387979">1.3445</td><td title="1.3567505683194">1.3568</td><td title="1.33012562117071">1.3301</td><td title="1.47021581228192">1.4702</td><td title="1.41724654796116">1.4172</td><td title="1.41724654796116">1.4172</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="BetaCoKurtosis" data-meaning="Sensitivity to joint extreme movements with the benchmark." data-calculation="Fourth-order co-moment scaled by benchmark co-kurtosis." data-interpretation="Lower absolute exposure is usually safer.">BetaCoKurtosis</button></td><td title="0.046842879279396">0.0468</td><td title="-0.0367506235555896">-0.0368</td><td title="-0.0075943710036894">-0.0076</td><td title="-0.0371100653154771">-0.0371</td><td title="-0.0062499323969708">-0.0062</td><td title="-0.101648764280533">-0.1016</td><td title="-0.0124809712026418">-0.0125</td><td title="-0.0124372169317548">-0.0124</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="BetaCoSkewness" data-meaning="Sensitivity to asymmetric joint movements with the benchmark." data-calculation="Third-order co-moment scaled by benchmark co-skewness." data-interpretation="Positive is generally preferable.">BetaCoSkewness</button></td><td title="-0.154019331008821">-0.1540</td><td title="-0.269954981963087">-0.2700</td><td title="-0.308187826229186">-0.3082</td><td title="-0.26865624438238">-0.2687</td><td title="-0.314592053314813">-0.3146</td><td title="-0.811895672944091">-0.8119</td><td title="-0.402122285852069">-0.4021</td><td title="-0.40071257444907">-0.4007</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Burke" data-meaning="Return relative to several largest drawdowns." data-calculation="Excess return / root-sum-square of drawdowns." data-interpretation="Higher is better.">Burke</button></td><td title="0.672668989790442">0.6727</td><td title="1.01935133219537">1.0194</td><td title="1.01040875052269">1.0104</td><td title="1.03592463381542">1.0359</td><td title="0.956721581660808">0.9567</td><td title="1.38276312731447">1.3828</td><td title="1.15694111302844">1.1569</td><td title="1.15675659271991">1.1568</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="CAPMAlpha" data-meaning="Return unexplained by market exposure." data-calculation="mean(Rₚ−R𝒻) − β mean(Rᵦ−R𝒻)." data-interpretation="Higher is better.">CAPMAlpha</button></td><td title="0.0003249634317239">0.0003</td><td title="0.0004241650951466">0.0004</td><td title="0.0004087400446935">0.0004</td><td title="0.0004308149280274">0.0004</td><td title="0.0003940867872474">0.0004</td><td title="0.0006048092219366">0.0006</td><td title="0.0004784261277588">0.0005</td><td title="0.0004767489196271">0.0005</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="CAPMBeta" data-meaning="Sensitivity to benchmark movements." data-calculation="Cov(Rₚ,Rᵦ) / Var(Rᵦ)." data-interpretation="Above 1 means greater market sensitivity; below 1 means lower.">CAPMBeta</button></td><td title="0.0356408830951262">0.0356</td><td title="0.0332951427840404">0.0333</td><td title="0.0308201191435902">0.0308</td><td title="0.0329983837085357">0.0330</td><td title="0.0323779067313294">0.0324</td><td title="0.117392119953716">0.1174</td><td title="0.0564757523611436">0.0565</td><td title="0.056277766537185">0.0563</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="CDD" data-meaning="Conditional drawdown at risk." data-calculation="Mean of drawdowns beyond the selected drawdown quantile." data-interpretation="Closer to zero is better.">CDD</button></td><td title="0.0477560030162478">0.0478</td><td title="0.0298110889876322">0.0298</td><td title="0.0340640931444539">0.0341</td><td title="0.0289803827104053">0.0290</td><td title="0.0377776331156702">0.0378</td><td title="0.0233675714182462">0.0234</td><td title="0.0365178414967585">0.0365</td><td title="0.0363913877269885">0.0364</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Calmar" data-meaning="Annual return per unit of maximum drawdown." data-calculation="Annualised return / |maximum drawdown|." data-interpretation="Higher is better.">Calmar</button></td><td title="0.585917947778662">0.5859</td><td title="1.98915623772965">1.9892</td><td title="1.63187648013448">1.6319</td><td title="2.05346711389317">2.0535</td><td title="1.4889255988137">1.4889</td><td title="1.87389466042447">1.8739</td><td title="1.97890411540502">1.9789</td><td title="1.97844202995303">1.9784</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="CoKurtosis" data-meaning="Joint fourth-order tail dependence with the benchmark." data-calculation="E[(Rₚ−μₚ)(Rᵦ−μᵦ)³]." data-interpretation="Large absolute values mean stronger joint tail exposure.">CoKurtosis</button></td><td title="6.30574706476944e-09">0.0000</td><td title="-4.94717959653768e-09">0.0000</td><td title="-1.02231509680808e-09">0.0000</td><td title="-4.99556579433836e-09">0.0000</td><td title="-8.41333698386501e-10">0.0000</td><td title="-1.36834329328118e-08">0.0000</td><td title="-1.68012403885573e-09">0.0000</td><td title="-1.67423406433962e-09">0.0000</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="CoSkewness" data-meaning="Joint third-order asymmetry with the benchmark." data-calculation="E[(Rₚ−μₚ)(Rᵦ−μᵦ)²]." data-interpretation="More positive is generally preferable.">CoSkewness</button></td><td title="-6.78239859258945e-08">0.0000</td><td title="-1.18877434263371e-07">0.0000</td><td title="-1.35713657836257e-07">0.0000</td><td title="-1.18305521901343e-07">0.0000</td><td title="-1.3853382466127e-07">0.0000</td><td title="-3.57526554195336e-07">0.0000</td><td title="-1.77078656798978e-07">0.0000</td><td title="-1.76457875980556e-07">0.0000</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="CumulativeReturn" data-meaning="Total compounded return over the displayed period." data-calculation="∏(1+Rₜ) − 1." data-interpretation="Higher is better.">CumulativeReturn</button></td><td title="0.337618951237068">0.3376</td><td title="0.457564704701746">0.4576</td><td title="0.436593532009443">0.4366</td><td title="0.465568006262758">0.4656</td><td title="0.419955035916635">0.4200</td><td title="0.78845379933453">0.7885</td><td title="0.549361360072621">0.5494</td><td title="0.547030153136517">0.5470</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="DRatio" data-meaning="Balance between cumulative losses and gains." data-calculation="Downside return contribution / upside return contribution." data-interpretation="Lower is better.">DRatio</button></td><td title="0.687150871988768">0.6872</td><td title="0.642779787512577">0.6428</td><td title="0.63730232372464">0.6373</td><td title="0.64028642540366">0.6403</td><td title="0.625698844732889">0.6257</td><td title="0.495044723750801">0.4950</td><td title="0.594822935995803">0.5948</td><td title="0.594822935995803">0.5948</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="DownCapture" data-meaning="Performance when the benchmark declines." data-calculation="Portfolio compound return / benchmark compound return on down-market days." data-interpretation="Lower is normally better when both returns are negative.">DownCapture</button></td><td title="0.0025932804287679">0.0026</td><td title="-0.023257603514588">-0.0233</td><td title="-0.0144330160422461">-0.0144</td><td title="-0.024299509609209">-0.0243</td><td title="-0.0085395433013766">-0.0085</td><td title="0.0679879919766533">0.0680</td><td title="0.0069340437012022">0.0069</td><td title="0.0069097351741237">0.0069</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="DownNumber" data-meaning="Number of negative-return observations." data-calculation="Count(Rₜ &lt; 0)." data-interpretation="Lower is better, conditional on similar return.">DownNumber</button></td><td title="0.496042216358839">0.4960</td><td title="0.453825857519789">0.4538</td><td title="0.485488126649077">0.4855</td><td title="0.45646437994723">0.4565</td><td title="0.485488126649077">0.4855</td><td title="0.551451187335092">0.5515</td><td title="0.522427440633245">0.5224</td><td title="0.522427440633245">0.5224</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="DownPercent" data-meaning="Fraction of observations with negative return." data-calculation="Count(Rₜ&lt;0)/n." data-interpretation="Lower is better.">DownPercent</button></td><td title="0.846965699208443">0.8470</td><td title="0.87598944591029">0.8760</td><td title="0.865435356200528">0.8654</td><td title="0.87335092348285">0.8734</td><td title="0.865435356200528">0.8654</td><td title="0.849604221635884">0.8496</td><td title="0.878627968337731">0.8786</td><td title="0.878627968337731">0.8786</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="DownsideDeviation" data-meaning="Volatility below the minimum acceptable return." data-calculation="Root mean squared shortfall below MAR." data-interpretation="Lower is better.">DownsideDeviation</button></td><td title="0.0033663859088289">0.0034</td><td title="0.0027917243807527">0.0028</td><td title="0.0028014382550483">0.0028</td><td title="0.0027929695079015">0.0028</td><td title="0.0028212807607693">0.0028</td><td title="0.0033487150918559">0.0033</td><td title="0.0028774171886953">0.0029</td><td title="0.0028673298894711">0.0029</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="DrawdownDeviation" data-meaning="Variability of drawdowns." data-calculation="Standard deviation of the drawdown series." data-interpretation="Lower is better.">DrawdownDeviation</button></td><td title="0.0061123215578234">0.0061</td><td title="0.0040538082192585">0.0041</td><td title="0.0043698592930966">0.0044</td><td title="0.0040295505972156">0.0040</td><td title="0.0044258428470859">0.0044</td><td title="0.0053254491245771">0.0053</td><td title="0.0046665913309102">0.0047</td><td title="0.0046505039465968">0.0047</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="ES_Loss" data-meaning="Average loss in the worst 5% of observations." data-calculation="Mean loss conditional on loss ≥ 95% VaR." data-interpretation="Lower is better.">ES_Loss</button></td><td title="0.0112579301995676">0.0113</td><td title="0.0095285168757871">0.0095</td><td title="0.0096357859743548">0.0096</td><td title="0.0095450750799919">0.0095</td><td title="0.0097321301296878">0.0097</td><td title="0.0109685759440668">0.0110</td><td title="0.0099632552476486">0.0100</td><td title="0.0099283272791481">0.0099</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="FamaBeta" data-meaning="Beta estimated using Fama decomposition." data-calculation="Systematic risk divided by benchmark risk under the decomposition." data-interpretation="Lower means less systematic exposure.">FamaBeta</button></td><td title="0.537033015206029">0.5370</td><td title="0.471214614343664">0.4712</td><td title="0.46202490038692">0.4620</td><td title="0.472119273880257">0.4721</td><td title="0.46488683809811">0.4649</td><td title="0.577621974397169">0.5776</td><td title="0.478430078231088">0.4784</td><td title="0.47675285625024">0.4768</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="GeometricReturn" data-meaning="Average compounded one-period return." data-calculation="[∏(1+Rₜ)]^(1/n) − 1." data-interpretation="Higher is better.">GeometricReturn</button></td><td title="0.0003394871708846">0.0003</td><td title="0.0004397314640061">0.0004</td><td title="0.000422813640964">0.0004</td><td title="0.0004461238534509">0.0004</td><td title="0.0004092146346037">0.0004</td><td title="0.0006785865503435">0.0007</td><td title="0.0005110323064789">0.0005</td><td title="0.0005092744002126">0.0005</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Hurst" data-meaning="Persistence of the return process." data-calculation="Hurst exponent estimated from rescaled behaviour." data-interpretation="Near 0.5 suggests no persistence; above 0.5 persistence; below 0.5 mean reversion.">Hurst</button></td><td title="0.397039892869073">0.3970</td><td title="0.337686964337022">0.3377</td><td title="0.357485233211581">0.3575</td><td title="0.338758226175675">0.3388</td><td title="0.358400158561754">0.3584</td><td title="0.390016086331771">0.3900</td><td title="0.368861697558386">0.3689</td><td title="0.368861697558386">0.3689</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Information_Annualized" data-meaning="Annualised active return per unit of tracking error." data-calculation="Annualised active return / annualised tracking error." data-interpretation="Higher is better.">Information_Annualized</button></td><td title="-0.655386562284093">-0.6554</td><td title="-0.494670660731162">-0.4947</td><td title="-0.525847999705467">-0.5258</td><td title="-0.482866526393909">-0.4829</td><td title="-0.550300974624731">-0.5503</td><td title="-0.0534388269424264">-0.0534</td><td title="-0.371738553235222">-0.3717</td><td title="-0.375214635972033">-0.3752</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Information_Daily" data-meaning="Daily active return per unit of tracking error." data-calculation="mean(Rₚ−Rᵦ) / sd(Rₚ−Rᵦ)." data-interpretation="Higher is better.">Information_Daily</button></td><td title="-0.0361982843291925">-0.0362</td><td title="-0.0269847123703299">-0.0270</td><td title="-0.0287457004251709">-0.0287</td><td title="-0.0263199064814291">-0.0263</td><td title="-0.0301331681684625">-0.0301</td><td title="-0.0028296171869122">-0.0028</td><td title="-0.0200998412815889">-0.0201</td><td title="-0.0202922296516067">-0.0203</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="JensenAlpha" data-meaning="CAPM risk-adjusted excess return." data-calculation="Rₚ − [R𝒻 + β(Rᵦ−R𝒻)]." data-interpretation="Higher is better.">JensenAlpha</button></td><td title="0.0823659276205331">0.0824</td><td title="0.110679336282864">0.1107</td><td title="0.106410346817827">0.1064</td><td title="0.112537342748153">0.1125</td><td title="0.102303167692223">0.1023</td><td title="0.163583922818166">0.1636</td><td title="0.12641337076094">0.1264</td><td title="0.125948403186863">0.1259</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Kappa" data-meaning="Return above MAR per unit of lower partial moment risk." data-calculation="[mean(R)−MAR] / LPMₙ^(1/n)." data-interpretation="Higher is better.">Kappa</button></td><td title="0.061547456751636">0.0615</td><td title="0.102995851793417">0.1030</td><td title="0.0962304971408314">0.0962</td><td title="0.104410871339644">0.1044</td><td title="0.0934192416145878">0.0934</td><td title="0.126697773904605">0.1267</td><td title="0.110856221854968">0.1109</td><td title="0.110856221854968">0.1109</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Kelly" data-meaning="Approximate growth-optimal risky allocation." data-calculation="Expected excess return / variance under the quadratic approximation." data-interpretation="Higher implies a larger theoretical allocation; unstable extreme values require caution.">Kelly</button></td><td title="14.4904024985349">14.4904</td><td title="24.0373025420873">24.0373</td><td title="24.0411397811679">24.0411</td><td title="24.2880313212447">24.2880</td><td title="23.0042396766551">23.0042</td><td title="24.671877100295">24.6719</td><td title="27.0352222258854">27.0352</td><td title="27.1303324457401">27.1303</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Kurtosis" data-meaning="Tail thickness relative to a normal distribution." data-calculation="Standardised fourth central moment." data-interpretation="Higher means more extreme-tail risk.">Kurtosis</button></td><td title="15.5978569646883">15.5979</td><td title="7.09526716434416">7.0953</td><td title="9.38749476471588">9.3875</td><td title="7.1087666393861">7.1088</td><td title="9.16737908536127">9.1674</td><td title="14.0676960889986">14.0677</td><td title="9.94259305136273">9.9426</td><td title="9.94259305136273">9.9426</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="M2Sortino" data-meaning="Sortino ratio translated into return units." data-calculation="Risk-free return plus Sortino × benchmark downside deviation." data-interpretation="Higher is better.">M2Sortino</button></td><td title="0.0939427558812515">0.0939</td><td title="0.125773815860032">0.1258</td><td title="0.120639280689355">0.1206</td><td title="0.127690287618425">0.1277</td><td title="0.116475275541734">0.1165</td><td title="0.195675649633514">0.1957</td><td title="0.146848366433958">0.1468</td><td title="0.146373848850182">0.1464</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="MSquaredExcess" data-meaning="M² return advantage over the benchmark." data-calculation="Modigliani measure − benchmark return." data-interpretation="Higher is better.">MSquaredExcess</button></td><td title="-0.0236880044653769">-0.0237</td><td title="0.0452430524953746">0.0452</td><td title="0.040775524018734">0.0408</td><td title="0.048036273244122">0.0480</td><td title="0.0326718391873357">0.0327</td><td title="0.107288439113055">0.1073</td><td title="0.0775262027541137">0.0775</td><td title="0.077487919785727">0.0775</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Martin" data-meaning="Return per unit of ulcer-index risk." data-calculation="Excess return / Ulcer Index." data-interpretation="Higher is better.">Martin</button></td><td title="1.29710328693306">1.2971</td><td title="4.71514977876964">4.7151</td><td title="4.45700707625186">4.4570</td><td title="4.86588161741765">4.8659</td><td title="4.02143207965571">4.0214</td><td title="10.8583435640642">10.8583</td><td title="6.20733901508103">6.2073</td><td title="6.20634995405947">6.2063</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="MaximumDrawdown" data-meaning="Largest historical peak-to-trough loss." data-calculation="min(wealth/running maximum − 1)." data-interpretation="Closer to zero is better.">MaximumDrawdown</button></td><td title="0.152412204924853">0.1524</td><td title="0.0588983464462245">0.0589</td><td title="0.068882312476554">0.0689</td><td title="0.057930450671391">0.0579</td><td title="0.0729407607427287">0.0729</td><td title="0.0994860951648785">0.0995</td><td title="0.0694336854819335">0.0694</td><td title="0.0691954131468377">0.0692</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Modigliani" data-meaning="Sharpe performance translated to benchmark volatility." data-calculation="R𝒻 + Sharpeₚ × volatilityᵦ." data-interpretation="Higher is better.">Modigliani</button></td><td title="0.0006547286794971">0.0007</td><td title="0.0009529813715443">0.0010</td><td title="0.0009345453178544">0.0009</td><td title="0.0009647704103733">0.0010</td><td title="0.0008997773669982">0.0009</td><td title="0.001199018351002">0.0012</td><td title="0.0010882491821666">0.0011</td><td title="0.0010882491821666">0.0011</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="NetSelectivity" data-meaning="Selection return after diversification adjustment." data-calculation="Selectivity minus diversification contribution." data-interpretation="Higher is better.">NetSelectivity</button></td><td title="-0.0151965807183018">-0.0152</td><td title="0.0254675442351908">0.0255</td><td title="0.0225051210044859">0.0225</td><td title="0.0270917747677222">0.0271</td><td title="0.0181441761152302">0.0181</td><td title="0.0740309040604082">0.0740</td><td title="0.0443081285765891">0.0443</td><td title="0.0441309955747936">0.0441</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Omega" data-meaning="Probability-weighted gains relative to losses at a threshold." data-calculation="Integral above threshold / integral below threshold." data-interpretation="Higher is better; above 1 is favourable.">Omega</button></td><td title="1.24511210505014">1.2451</td><td title="1.35148769209955">1.3515</td><td title="1.34446861387979">1.3445</td><td title="1.3567505683194">1.3568</td><td title="1.33012562117071">1.3301</td><td title="1.47021581228192">1.4702</td><td title="1.41724654796116">1.4172</td><td title="1.41724654796116">1.4172</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="OmegaExcessReturn" data-meaning="Excess return adjusted by Omega downside structure." data-calculation="Excess return expressed through the Omega function." data-interpretation="Higher is better.">OmegaExcessReturn</button></td><td title="0.073608962428026">0.0736</td><td title="0.104144658729221">0.1041</td><td title="0.0993487908414489">0.0993</td><td title="0.105939116810104">0.1059</td><td title="0.0954522371499123">0.0955</td><td title="0.170816749430478">0.1708</td><td title="0.123989802675432">0.1240</td><td title="0.12353333135159">0.1235</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="PainIndex" data-meaning="Average depth of all drawdowns." data-calculation="Mean absolute percentage drawdown." data-interpretation="Lower is better.">PainIndex</button></td><td title="0.0521287627362786">0.0521</td><td title="0.018420262719115">0.0184</td><td title="0.0192341869110125">0.0192</td><td title="0.0181025725690249">0.0181</td><td title="0.0202401914172006">0.0202</td><td title="0.0109254783972145">0.0109</td><td title="0.0159365699222435">0.0159</td><td title="0.015880699511168">0.0159</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="PainRatio" data-meaning="Return earned per unit of average drawdown pain." data-calculation="Excess return / Pain Index." data-interpretation="Higher is better.">PainRatio</button></td><td title="1.71308585967728">1.7131</td><td title="6.36027916713116">6.3603</td><td title="5.84414751441368">5.8441</td><td title="6.57134641461184">6.5713</td><td title="5.36572820030253">5.3657</td><td title="17.0634598997035">17.0635</td><td title="8.62184313301677">8.6218</td><td title="8.62047125527404">8.6205</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Prospect" data-meaning="Behavioural value of gains and losses." data-calculation="Probability-weighted prospect utility with losses penalised more strongly." data-interpretation="Higher is better.">Prospect</button></td><td title="-0.42820457727015">-0.4282</td><td title="-0.411191881669741">-0.4112</td><td title="-0.405171177409193">-0.4052</td><td title="-0.408335921063191">-0.4083</td><td title="-0.413128636166583">-0.4131</td><td title="-0.342979791790751">-0.3430</td><td title="-0.361133419832753">-0.3611</td><td title="-0.361133419832753">-0.3611</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Rachev" data-meaning="Extreme gains relative to extreme losses." data-calculation="Upper-tail expected return / lower-tail expected loss." data-interpretation="Higher is better; above 1 means the selected upper tail exceeds the lower tail.">Rachev</button></td><td title="1.08865476372951">1.0887</td><td title="1.24012290014226">1.2401</td><td title="1.14667064153344">1.1467</td><td title="1.24138479873456">1.2414</td><td title="1.13541830110591">1.1354</td><td title="1.23398510925372">1.2340</td><td title="1.16113457246801">1.1611</td><td title="1.16113457246801">1.1611</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Selectivity" data-meaning="Return attributed to security selection." data-calculation="Portfolio return minus return implied by systematic risk." data-interpretation="Higher is better.">Selectivity</button></td><td title="0.0823659276205331">0.0824</td><td title="0.110679336282864">0.1107</td><td title="0.106410346817827">0.1064</td><td title="0.112537342748153">0.1125</td><td title="0.102303167692223">0.1023</td><td title="0.163583922818166">0.1636</td><td title="0.12641337076094">0.1264</td><td title="0.125948403186863">0.1259</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Sharpe_Annualized" data-meaning="Annual excess return per unit of annual volatility." data-calculation="Annualised excess return / annualised SD." data-interpretation="Higher is better.">Sharpe_Annualized</button></td><td title="1.13310895088647">1.1331</td><td title="1.64928123043935">1.6493</td><td title="1.61737479635565">1.6174</td><td title="1.66968398021611">1.6697</td><td title="1.55720349555149">1.5572</td><td title="2.07508616674773">2.0751</td><td title="1.88338303746666">1.8834</td><td title="1.88338303746666">1.8834</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Sharpe_Daily" data-meaning="Daily excess return per unit of daily volatility." data-calculation="mean(R−R𝒻) / sd(R−R𝒻)." data-interpretation="Higher is better.">Sharpe_Daily</button></td><td title="0.0713791545806407">0.0714</td><td title="0.10389495185117">0.1039</td><td title="0.101885035427161">0.1019</td><td title="0.105180204279055">0.1052</td><td title="0.0980945997607076">0.0981</td><td title="0.130718141577257">0.1307</td><td title="0.118641979538434">0.1186</td><td title="0.118641979538434">0.1186</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Sharpe_ES" data-meaning="Excess return per unit of expected shortfall." data-calculation="Mean excess return / ES loss." data-interpretation="Higher is better.">Sharpe_ES</button></td><td title="0.0312322878770127">0.0312</td><td title="0.04712787470735">0.0471</td><td title="0.0448103775382642">0.0448</td><td title="0.0477195518934556">0.0477</td><td title="0.0429807914158524">0.0430</td><td title="0.0631421390320825">0.0631</td><td title="0.0522571316720765">0.0523</td><td title="0.0522571316720765">0.0523</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Sharpe_VaR" data-meaning="Excess return per unit of value at risk." data-calculation="Mean excess return / VaR loss." data-interpretation="Higher is better.">Sharpe_VaR</button></td><td title="0.0594544243992797">0.0595</td><td title="0.0861992430935366">0.0862</td><td title="0.0876922203391581">0.0877</td><td title="0.0874871356447572">0.0875</td><td title="0.0818412742706713">0.0818</td><td title="0.109251447613842">0.1093</td><td title="0.100689071856719">0.1007</td><td title="0.100689071856719">0.1007</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Skewness" data-meaning="Asymmetry of returns." data-calculation="Standardised third central moment." data-interpretation="More positive is generally preferable.">Skewness</button></td><td title="-0.186230867314591">-0.1862</td><td title="-0.0344751670951065">-0.0345</td><td title="-0.12295603530931">-0.1230</td><td title="-0.0260855966688043">-0.0261</td><td title="-0.0786060003846116">-0.0786</td><td title="0.395805854131159">0.3958</td><td title="-0.18066359176704">-0.1807</td><td title="-0.180663591767041">-0.1807</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Sortino" data-meaning="Excess return per unit of downside risk." data-calculation="Mean(R−MAR) / downside deviation." data-interpretation="Higher is better.">Sortino</button></td><td title="0.104447596447588">0.1044</td><td title="0.160853540043193">0.1609</td><td title="0.154129118002386">0.1541</td><td title="0.163083307683095">0.1631</td><td title="0.148264100812847">0.1483</td><td title="0.206819430213268">0.2068</td><td title="0.180943918526795">0.1809</td><td title="0.180943918526795">0.1809</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="SpecificRisk" data-meaning="Risk not explained by the benchmark." data-calculation="Residual volatility from the market regression." data-interpretation="Lower is safer, although it may reflect diversifiable opportunity.">SpecificRisk</button></td><td title="0.0779792688430789">0.0780</td><td title="0.0684019715959275">0.0684</td><td title="0.0670862748059556">0.0671</td><td title="0.0685369906468606">0.0685</td><td title="0.0674882367892067">0.0675</td><td title="0.0823039931666841">0.0823</td><td title="0.0691366122063229">0.0691</td><td title="0.0688942414797529">0.0689</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Sterling" data-meaning="Return relative to drawdown risk." data-calculation="Annualised excess return / average or adjusted maximum drawdown." data-interpretation="Higher is better.">Sterling</button></td><td title="0.353790524323406">0.3538</td><td title="0.7373142379749">0.7373</td><td title="0.66559620116149">0.6656</td><td title="0.753232038793019">0.7532</td><td title="0.6279801557503">0.6280</td><td title="0.934533619307462">0.9345</td><td title="0.810952117090007">0.8110</td><td title="0.809118350808122">0.8091</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="SystematicRisk" data-meaning="Risk explained by benchmark exposure." data-calculation="β² Var(Rᵦ), or its square-root form under the implementation." data-interpretation="Lower is safer; higher means more market-driven risk.">SystematicRisk</button></td><td title="0.0051896574405271">0.0052</td><td title="0.0048480949538042">0.0048</td><td title="0.0044877075633779">0.0045</td><td title="0.0048048839609642">0.0048</td><td title="0.0047145365093357">0.0047</td><td title="0.0170934285536929">0.0171</td><td title="0.0082234160042588">0.0082</td><td title="0.0081945873525757">0.0082</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="TotalRisk" data-meaning="Total return variability." data-calculation="Standard deviation or variance-based total risk used by the decomposition." data-interpretation="Lower is safer.">TotalRisk</button></td><td title="0.0781517684614443">0.0782</td><td title="0.068573564461031">0.0686</td><td title="0.0672362088945725">0.0672</td><td title="0.0687052108417272">0.0687</td><td title="0.0676527084410808">0.0677</td><td title="0.0840602914038596">0.0841</td><td title="0.0696239593685002">0.0696</td><td title="0.069379880159521">0.0694</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="TrackingError_Annualized" data-meaning="Annualised volatility of returns relative to the benchmark." data-calculation="sd(Rₚ−Rᵦ) × √252." data-interpretation="Lower means closer benchmark tracking.">TrackingError_Annualized</button></td><td title="0.160641376008879">0.1606</td><td title="0.156518747582737">0.1565</td><td title="0.156272953262733">0.1563</td><td title="0.156616717102132">0.1566</td><td title="0.15624155436191">0.1562</td><td title="0.152637762836326">0.1526</td><td title="0.153819503152039">0.1538</td><td title="0.153736358684226">0.1537</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="TrackingError_Daily" data-meaning="Daily volatility of active returns." data-calculation="sd(Rₚ−Rᵦ)." data-interpretation="Lower means closer benchmark tracking.">TrackingError_Daily</button></td><td title="0.0101194555044455">0.0101</td><td title="0.0098597543243622">0.0099</td><td title="0.0098442707375907">0.0098</td><td title="0.0098659258239904">0.0099</td><td title="0.0098422927927569">0.0098</td><td title="0.0096152752652898">0.0096</td><td title="0.0096897179079003">0.0097</td><td title="0.0096844802987402">0.0097</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Treynor_Annualized" data-meaning="Annual excess return per unit of beta." data-calculation="Annualised excess return / β." data-interpretation="Higher is better when beta is meaningful.">Treynor_Annualized</button></td><td title="2.50557894672937">2.5056</td><td title="3.51877191172845">3.5188</td><td title="3.64720931493024">3.6472</td><td title="3.60497278889273">3.6050</td><td title="3.35424296474694">3.3542</td><td title="1.58806623979061">1.5881</td><td title="2.43294865855514">2.4329</td><td title="2.43256124173324">2.4326</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Treynor_Daily" data-meaning="Daily excess return per unit of beta." data-calculation="Mean daily excess return / β." data-interpretation="Higher is better.">Treynor_Daily</button></td><td title="0.009525217710754">0.0095</td><td title="0.0132070754842021">0.0132</td><td title="0.0137187542654914">0.0137</td><td title="0.0135195668185287">0.0135</td><td title="0.0126386995304977">0.0126</td><td title="0.0057805119339452">0.0058</td><td title="0.009048702940885">0.0090</td><td title="0.0090493001330489">0.0090</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="UlcerIndex" data-meaning="Depth and duration of drawdowns." data-calculation="Root mean square percentage drawdown." data-interpretation="Lower is better.">UlcerIndex</button></td><td title="0.0688465191828625">0.0688</td><td title="0.0248471456310855">0.0248</td><td title="0.0252203830293874">0.0252</td><td title="0.0244474248861492">0.0244</td><td title="0.0270061420199572">0.0270</td><td title="0.0171689596498795">0.0172</td><td title="0.0221355085672154">0.0221</td><td title="0.0220579107950761">0.0221</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="UpCapture" data-meaning="Performance when the benchmark rises." data-calculation="Portfolio compound return / benchmark compound return on up-market days." data-interpretation="Higher is better.">UpCapture</button></td><td title="0.100482265995862">0.1005</td><td title="0.107322164233505">0.1073</td><td title="0.109463512271888">0.1095</td><td title="0.108297810055018">0.1083</td><td title="0.110347393607049">0.1103</td><td title="0.247641962817508">0.2476</td><td title="0.151236475725849">0.1512</td><td title="0.150706289282865">0.1507</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="UpNumber" data-meaning="Number of positive-return observations." data-calculation="Count(Rₜ &gt; 0)." data-interpretation="Higher is generally better.">UpNumber</button></td><td title="0.562761506276151">0.5628</td><td title="0.52510460251046">0.5251</td><td title="0.558577405857741">0.5586</td><td title="0.527196652719665">0.5272</td><td title="0.569037656903766">0.5690</td><td title="0.682008368200837">0.6820</td><td title="0.594142259414226">0.5941</td><td title="0.594142259414226">0.5941</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="UpPercent" data-meaning="Fraction of observations with positive return." data-calculation="Count(Rₜ&gt;0)/n." data-interpretation="Higher is generally better.">UpPercent</button></td><td title="0.184100418410042">0.1841</td><td title="0.146443514644351">0.1464</td><td title="0.169456066945607">0.1695</td><td title="0.144351464435146">0.1444</td><td title="0.163179916317992">0.1632</td><td title="0.223849372384937">0.2238</td><td title="0.184100418410042">0.1841</td><td title="0.184100418410042">0.1841</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="UpsidePotential" data-meaning="Average return above the minimum acceptable return." data-calculation="Mean[max(R−MAR,0)]." data-interpretation="Higher is better.">UpsidePotential</button></td><td title="0.530569335421779">0.5306</td><td title="0.618489877413541">0.6185</td><td title="0.601569354331649">0.6016</td><td title="0.620218690680124">0.6202</td><td title="0.597378290396391">0.5974</td><td title="0.646658807816484">0.6467</td><td title="0.614605789214434">0.6146</td><td title="0.614605789214434">0.6146</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="UpsideRisk" data-meaning="Magnitude of returns above the target." data-calculation="Root upper partial moment relative to MAR." data-interpretation="Higher means more upside dispersion, not conventional risk.">UpsideRisk</button></td><td title="0.0036094115714646">0.0036</td><td title="0.0033268415117946">0.0033</td><td title="0.0032058702095422">0.0032</td><td title="0.0033374320058772">0.0033</td><td title="0.0032214127558608">0.0032</td><td title="0.0041598833090184">0.0042</td><td title="0.0033507206573995">0.0034</td><td title="0.0033389741084386">0.0033</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="VaR_Loss" data-meaning="Loss threshold exceeded by the worst 5% of observations." data-calculation="95th percentile of loss −R." data-interpretation="Lower is better.">VaR_Loss</button></td><td title="0.0059139571267377">0.0059</td><td title="0.0052095439977551">0.0052</td><td title="0.0049238484978346">0.0049</td><td title="0.0052063277903635">0.0052</td><td title="0.0051110476817923">0.0051</td><td title="0.0063393150605399">0.0063</td><td title="0.0051708803324731">0.0052</td><td title="0.0051527528890941">0.0052</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Volatility" data-meaning="Daily standard deviation of returns." data-calculation="sd(Rₜ)." data-interpretation="Lower means more stable returns.">Volatility</button></td><td title="0.0049259607928667">0.0049</td><td title="0.0043222383904873">0.0043</td><td title="0.0042379453035321">0.0042</td><td title="0.0043305364229769">0.0043</td><td title="0.0042641965628733">0.0043</td><td title="0.0052982649453816">0.0053</td><td title="0.004388422575082">0.0044</td><td title="0.0043730381769451">0.0044</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Volatility_Annualized" data-meaning="Annualised standard deviation." data-calculation="sd(Rₜ) × √252." data-interpretation="Lower means more stable returns.">Volatility_Annualized</button></td><td title="0.0781972033558794">0.0782</td><td title="0.0686134073301944">0.0686</td><td title="0.0672752960582419">0.0673</td><td title="0.0687451345122257">0.0687</td><td title="0.0676920218811559">0.0677</td><td title="0.0841073485536665">0.0841</td><td title="0.069664048689172">0.0697</td><td title="0.0694198289399281">0.0694</td></tr></tbody></table></div>
 </details>
 
 </details>
@@ -36531,7 +37251,9 @@ document.addEventListener('click',function(event){
 });
 document.addEventListener('keydown',function(event){if(event.key==='Escape')closeMetricModal();});
 document.querySelectorAll('table.scenario-period-table').forEach(function(table){
-  const directions={3:1,4:1,5:-1,6:1,7:1,8:-1,9:-1,10:1,11:-1,12:1};
+  const headerDirections={'Mean':1,'Median':1,'SD':-1,'VaR 95% loss':-1,'CVaR 95% loss':-1,'Maximum drawdown':1};
+  const directions={};
+  [...table.tHead.rows[0].cells].forEach((cell,i)=>{const key=cell.textContent.trim();if(key in headerDirections)directions[i]=headerDirections[key];});
   const rows=[...table.tBodies[0].rows];
   Object.entries(directions).forEach(([columnText,direction])=>{
     const column=Number(columnText), cells=rows.map(row=>row.cells[column]);
@@ -36585,7 +37307,7 @@ document.querySelectorAll('details.portfolio-sensitivity').forEach(function(sens
   });
 });
 
-const reportVersion='9c1e6e526e5b';
+const reportVersion='cd626efb27fe';
 const palette = ['#1b1b1b','#e41a1c','#377eb8','#4daf4a','#984ea3','#ff7f00','#a65628','#f781bf','#008080','#6a3d9a','#b2182b','#2166ac','#1b9e77','#d95f02'];
 const linePatterns = [[],[10,5],[2,4],[10,4,2,4],[14,5],[6,3],[2,3,8,3],[12,3,3,3]];
 function initialiseDominanceExplorer(box) {
@@ -36610,7 +37332,7 @@ function initialiseDominanceExplorer(box) {
     const benchmarks=[...preferred.filter(x=>benchmarkPool.includes(x)),...benchmarkPool.filter(x=>!preferred.includes(x))];
     const otherShares=shareNames.filter(x=>x!==target);
     const defaultSelected=new Set(preferred.filter(x=>seriesNames.includes(x)).slice(0,3));
-    const defaultComparators=new Set(['Current','Baltic_NetSD','curent_update_baltic','update2_penalty_sell','update2_penalty_no_sell','update3_funds_sell','update3_funds_no_sell'].filter(x=>benchmarks.includes(x)));
+    const defaultComparators=new Set(['Current','Baltic_NetSD','curent_update_baltic','update2_penalty_sell','update2_penalty_no_sell','update3_funds_sell','update3_funds_no_sell','update3_stochastic_no_sell'].filter(x=>benchmarks.includes(x)));
     box.innerHTML = `<div class="dominance-controls">
       <label>Component<select class="dom-order"><option>FSD</option><option>SSD</option><option>TSD</option></select></label>
       ${profile==='Portfolio'?`<label>Comparison base<select class="dom-benchmark">${benchmarks.map(x=>`<option value="${x}"${x===target?' selected':''}>${displayName(x)}</option>`).join('')}</select></label>`:
@@ -36691,11 +37413,11 @@ function initialiseFrontierExplorer(box) {
   fetch('interactive/frontiers.json?v='+reportVersion).then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json();}).then(data=>{
     const models=Object.keys(data.models), first=data.models[models[0]], names=first.portfolios.map(p=>p.name);
     const portfolioNames=first.portfolios.filter(p=>p.type==='portfolio'&&p.name!=='Current').map(p=>p.name), sharePoints=first.portfolios.filter(p=>['share','fund'].includes(p.type)), shareNames=sharePoints.map(p=>p.name), fundNames=sharePoints.filter(p=>p.type==='fund').map(p=>p.name), heldShares=new Set(sharePoints.filter(p=>p.held).map(p=>p.name));
-    const preferred=['update3_funds_sell','update3_funds_no_sell','Baltic_NetSD','curent_update_baltic','update2_penalty_sell','update2_penalty_no_sell','NetSD_full','NetSD_training'];
+    const preferred=['update3_funds_sell','update3_funds_no_sell','update3_stochastic_no_sell','Baltic_NetSD','curent_update_baltic','update2_penalty_sell','update2_penalty_no_sell','NetSD_full','NetSD_training'];
     box.innerHTML=`<div class="frontier-controls">
       <label class="frontier-multiselect-wrap">Compare Current with portfolios and shares
         <select class="frontier-multiselect" multiple size="10">
-          <optgroup label="Portfolios">${[...preferred.filter(x=>portfolioNames.includes(x)),...portfolioNames.filter(x=>!preferred.includes(x))].map(x=>`<option value="${x}" ${['Baltic_NetSD','curent_update_baltic','update2_penalty_sell','update2_penalty_no_sell','update3_funds_sell','update3_funds_no_sell'].includes(x)?'selected':''}>${x}</option>`).join('')}</optgroup>
+          <optgroup label="Portfolios">${[...preferred.filter(x=>portfolioNames.includes(x)),...portfolioNames.filter(x=>!preferred.includes(x))].map(x=>`<option value="${x}" ${['Baltic_NetSD','curent_update_baltic','update2_penalty_sell','update2_penalty_no_sell','update3_funds_sell','update3_funds_no_sell','update3_stochastic_no_sell'].includes(x)?'selected':''}>${x}</option>`).join('')}</optgroup>
           <optgroup label="Shares currently held">${shareNames.filter(x=>heldShares.has(x)).map(x=>`<option value="${x}" selected>${x}</option>`).join('')}</optgroup>
           <optgroup label="Other shares">${shareNames.filter(x=>!heldShares.has(x)&&!fundNames.includes(x)).map(x=>`<option value="${x}"${x===box.dataset.highlight?' selected':''}>${x}</option>`).join('')}</optgroup>
           <optgroup label="Funds">${fundNames.map(x=>`<option value="${x}"${x===box.dataset.highlight?' selected':''}>${x}</option>`).join('')}</optgroup>
@@ -36750,7 +37472,7 @@ function initialiseCumulativeExplorer(box) {
     const portfolios=names.filter(x=>types[x]==='portfolio'), shares=names.filter(x=>types[x]==='share'),funds=names.filter(x=>types[x]==='fund');
     const preferred=['Current','Baltic_NetSD','curent_update_baltic','update2_penalty_sell','update2_penalty_no_sell','SP500'];
     const orderedPortfolios=[...preferred.filter(x=>portfolios.includes(x)),...portfolios.filter(x=>!preferred.includes(x))];
-    const defaults=new Set(['Current','Baltic_NetSD','curent_update_baltic','update2_penalty_sell','update2_penalty_no_sell','update3_funds_sell','update3_funds_no_sell']);
+    const defaults=new Set(['Current','Baltic_NetSD','curent_update_baltic','update2_penalty_sell','update2_penalty_no_sell','update3_funds_sell','update3_funds_no_sell','update3_stochastic_no_sell']);
     box.innerHTML=`<div class="cumulative-controls">
       <label class="cumulative-multiselect-wrap">Displayed portfolios, benchmark and shares
         <select class="cumulative-multiselect" multiple size="10">
