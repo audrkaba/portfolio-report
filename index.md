@@ -26285,7 +26285,36 @@ $$\sum_i p_{i0}q_i+c_0=15000,\quad c_s=c_0+\sum_i p_{is\tau}(q_i-y_{is})\ge0.$$
 $$q_i\ge q_i^{Current},\quad y_{is}\ge q_i,\quad q_i,y_{is}\in\mathbb Z_{\ge0},\quad g(s)=g(s')\Rightarrow y_{is}=y_{is'}.$$
 $$\mathcal X_s=\{R^{hist}_{1s},\ldots,R^{hist}_{272,s},R_{s1},\ldots,R_{s5}\}.$$
 <p>Asset index i runs across the complete forecast-eligible catalogue, not a preselected fund trio. Historical portfolio weights freeze the final allocation including cash; forecast returns follow the two-stage wealth path. Exact empirical dominance checks include TSD interior extrema and its mean condition. The original position-count, effective-count, small-stock-position and dividend penalties remain, plus the 0.002 squared liquidity-utilisation penalty. Recurring fund expenses already enter NAV returns. Execution delays, bid–ask spreads and taxes remain unmodelled.</p>
-</details></details><!-- STOCHASTIC_UPDATE3_END -->
+</details><!-- INFORMATION_VALUE_START --><details markdown="1" id="information-value" class="information-value"><summary><strong>1.4.f. VSS, EVPI and scenario-dependence audit</strong></summary><p><strong>Table 1.4.f. Value of the stochastic solution and perfect information</strong></p><div class="table-wrap"><table><thead><tr><th>Quantity</th><th>Penalised objective value</th><th>Expected netSD</th><th>Expected penalty</th><th>Meaning</th></tr></thead><tbody><tr><td>Existing saved policy</td><td>0.830230356</td><td>0.862857143</td><td>0.032626787</td><td>Active allocation; unchanged</td></tr><tr><td>EV</td><td>0.836173716</td><td>0.868571429</td><td>0.032397713</td><td>Optimise the elementwise mean price path; not comparable directly with RP</td></tr><tr><td>EEV</td><td>0.833737800</td><td>0.868571429</td><td>0.034833629</td><td>Fix EV first-stage units; optimise recourse on the original 13 scenarios</td></tr><tr><td>RP: diagnostic re-solve</td><td>0.834681751</td><td>0.868571429</td><td>0.033889677</td><td>Optimise the joint scenario problem, with common first-stage units</td></tr><tr><td>WS</td><td>0.838319376</td><td>0.868571429</td><td>0.030252053</td><td>Average of 13 separate perfect-information scenario optimisations</td></tr><tr><td>VSS = RP - EEV</td><td>0.000943952</td><td>—</td><td>—</td><td>Estimated value of modelling scenario uncertainty</td></tr><tr><td>EVPI = WS - RP</td><td>0.003637625</td><td>—</td><td>—</td><td>Estimated value of knowing the scenario before the first trade</td></tr></tbody></table></div><p>All values use the same EUR 15,000 budget, current holdings, no-sales rule, whole units,
+liquidity caps, mean-return floor, two-to-four-fund requirement, reference universe, denominator 175 and existing penalty.
+The 13 scenarios have equal probability. The deterministic EV problem uses the arithmetic mean of the joint price
+paths; all comparison-asset forecast returns are rebuilt from that mean path. EV is not section 1.3.</p>
+<div class="math-display">$$
+\widehat{\mathrm{VSS}}=\widehat z_{RP}-\widehat z_{EEV},\qquad
+\widehat{\mathrm{EVPI}}=\widehat z_{WS}-\widehat z_{RP}.
+$$</div>
+<p><strong>Objective-score units, not euros or expected-return percentages.</strong> The objective is netSD minus
+the portfolio penalty. EEV fixes only the EV first-stage units; its second-stage decisions obey the original
+information-node partition. WS lets the first-stage decision depend on the full future scenario, which is not
+possible in actual trading.</p><p><strong>Solver limitation:</strong> these are heuristic estimates, not certified optimal VSS/EVPI. The same seven-thread integer neighbourhood search is used throughout. The existing saved policy scores 0.830230356; the diagnostic RP re-solve scores 0.834681751. The saved-policy gap against EEV is -0.003507444. A negative saved-policy gap reveals unfinished optimisation, not negative true VSS. The diagnostic re-solve is not substituted into the active trade tables.</p><p>The per-search iteration limit is 12. The following searches still improved at that limit: EEV, RP_refined, WS_02, WS_06, WS_08, WS_09, WS_12. The uncertainty from incomplete optimisation has not been quantified; differences must not be treated as precise economic values.</p><p><strong>What drives these estimates:</strong> EEV, RP and WS all average netSD 0.868571429. Their penalised-objective differences therefore come from the portfolio penalty, not an increase in average netSD. This is a comparison of these particular heuristic policies; it is not the VSS of a separately optimised unpenalised model.</p><p>Diagnostics computed: 2026-11-02T07:42:22.741451+00:00. Market prices and the active allocation were not refreshed by this calculation.</p><h4>How cross-asset dependence enters the scenarios</h4>
+<p><strong>No mixing of forecasting methods between assets:</strong> scenario Gradient boosting uses the Gradient
+boosting path for every eligible asset; the same applies to each of the 13 method labels. Validation ensemble is
+an exception only in the sense that its asset-specific internal model weights can differ. Current inputs contain
+no missing-method fallback paths.</p>
+<p><strong>Historical dependence is retained:</strong> portfolio historical returns are calculated from aligned
+same-date asset returns. The model does not shuffle individual asset observations. An explicit covariance matrix
+is not a separate constraint or objective term in this netSD model.</p>
+<p><strong>Forecast dependence is partial:</strong> Dependency Ridge, Dependency Extra Trees and Dependency Gradient
+boosting include lagged market/fund factors, S&amp;P 500, five training-selected peers, trailing correlations and beta.
+The selection uses up to 252 observations; inputs are lagged by two business days. However, the 13 joint scenarios
+are model-output paths, not draws from a fitted joint return distribution. No correlated residual simulation,
+copula, multivariate bootstrap or covariance-matching step is applied. Choosing the same method for all assets
+does not by itself preserve their forecast correlation. These VSS/EVPI values therefore describe uncertainty
+across forecasting methods, not all market uncertainty.</p>
+<p>Definitions follow the maximisation convention in
+<a href="https://mpi-sppy.readthedocs.io/en/latest/vss.html" target="_blank" rel="noopener">mpi-sppy documentation</a>
+and the <a href="https://ndcbe.github.io/optimization/notebooks/4/battery-forecasts-mpc/" target="_blank" rel="noopener">Notre Dame stochastic-optimisation example</a>.
+At exact optimality WS ≥ RP ≥ EEV; this ordering alone does not certify a heuristic result.</p></details><!-- INFORMATION_VALUE_END --></details><!-- STOCHASTIC_UPDATE3_END -->
 <details markdown="1" class="report-section" id="analytics-1-3">
 <summary><strong>1.5. Earnings outcomes and subsequent price changes</strong></summary>
 
@@ -64921,7 +64950,7 @@ document.querySelectorAll('details.portfolio-sensitivity').forEach(function(sens
   });
 });
 
-const reportVersion='7ab346dc115c';
+const reportVersion='6f44bd8dcc48';
 const palette = ['#1b1b1b','#e41a1c','#377eb8','#4daf4a','#984ea3','#ff7f00','#a65628','#f781bf','#008080','#6a3d9a','#b2182b','#2166ac','#1b9e77','#d95f02'];
 const linePatterns = [[],[10,5],[2,4],[10,4,2,4],[14,5],[6,3],[2,3,8,3],[12,3,3,3]];
 function initialiseDominanceExplorer(box) {
