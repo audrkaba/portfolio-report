@@ -34,6 +34,8 @@ summary { cursor:pointer; padding:.65rem .1rem; color:#174d61; }
 summary:hover { color:var(--accent); }
 .instrument-chart-links { display:flex; flex-wrap:wrap; gap:.35rem .65rem; align-items:center; margin:.4rem 0; font-size:.9rem; }
 .chart-link-help { font-size:.8rem; color:#52626c; margin:.25rem 0 .65rem; }
+.report-chapter-nav { display:flex; flex-wrap:wrap; gap:.5rem 1rem; margin:.7rem 0 1rem; font-size:.9rem; }
+.report-chapter-nav a { color:#174d61; font-weight:650; }
 table { display:block; width:100%; overflow-x:auto; border-collapse:collapse; white-space:nowrap; font-size:.88rem; margin:.7rem 0 1rem; }
 table th { height:145px; padding:.28rem .18rem; text-align:center !important; vertical-align:bottom; writing-mode:vertical-rl; text-orientation:mixed; white-space:nowrap; transform:rotate(180deg); }
 table th span { writing-mode:inherit !important; transform:none !important; white-space:nowrap; }
@@ -169,7 +171,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - model updated 2026-11-03 09:00 (Europe/Vilnius); return analysis through 2026-10-30; valuation prices through 2026-10-30
+# Baltic investment plan - analysis updated 2026-11-03 10:57 (Europe/Vilnius); return analysis through 2026-10-30; valuation prices through 2026-10-30
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -182,7 +184,7 @@ Study period: 2023-01-01 to 2026-10-30 | Portfolio ceiling: EUR 15,000 | Existin
 
 Integrated share-and-fund comparisons use 857 common observations through 2026-10-29. Share-only technical charts retain their own latest closing dates. The benchmark has been refreshed; recurring fund expenses are embedded in NAV.
 
-<details markdown="1" class="analytics-group" id="analytics-1" open>
+<nav class="report-chapter-nav" aria-label="Report chapters"><a href="#analytics-1">1. Shares and funds</a><a href="#analytics-2">2. Market analysis</a><a href="#analytics-3">3. Portfolio analysis</a></nav><details markdown="1" class="analytics-group" id="analytics-1" open>
 <summary><strong>1. Share analytics</strong></summary>
 
 <details markdown="1" class="report-section" id="analytics-1-1">
@@ -69567,13 +69569,5419 @@ The BH adjustment covers the full family of share-level, pooled and pairwise tes
 
 </details>
 
-<details markdown="1" class="analytics-group" id="analytics-2" open>
-<summary><strong>2. Portfolio analytics</strong></summary>
+<!-- MARKET_ANALYSIS_START --><details markdown="1" id="analytics-2" class="analytics-group market-analysis"><summary><strong>2. Market analysis — Baltic and global HMM regimes</strong></summary><p><strong>External market regimes:</strong> five Baltic indices define local conditions and MSCI World defines global conditions. 4,817 common observations, 2007-01-04–2026-10-30. At the last common date the estimated regime is <strong>R1: both calm</strong>. This is a statistical volatility state, not a guarantee that prices will rise.</p><p>Market analysis is section 2; portfolio analysis follows in section 3. All market-model estimation uses R: <code>depmixS4</code> and <code>markovchain</code>. The resulting external regimes are ready for a subsequent market-conditioned scenario design; existing allocation quantities are not reoptimised in this market-identification step.</p><p><strong>Matrix stability check:</strong> first-order bootstrap p = 0.174; time-homogeneity bootstrap p = 0.002. The full-history matrix varies over time in the data and is presented as a historical summary. Recent-window comparisons and the implications for forecasting are in 2.7.</p><details markdown="1" id="market-analysis-1"><summary><strong>2.1. Data, index identities and observation calendar</strong></summary>
+
+<p>Exact indices are used, not ETF proxies. MSCI World is the official index code 990100, EUR, gross total return (GRTR). OMXB10 is the requested price index; the other local indices are gross-return indices. This variant difference is disclosed rather than silently replacing OMX Baltic 10 with OMXB10GI.</p><details markdown="1"><summary><strong>Table 2.a. Official index identities, variants and source coverage</strong></summary>
+
+<table class="dataframe research-table market-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Index code</th>
+      <th>Index</th>
+      <th>Source</th>
+      <th>Currency</th>
+      <th>Return variant</th>
+      <th>First observation</th>
+      <th>Latest available</th>
+      <th>Source observations</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>OMXBBGI</td>
+      <td>OMX Baltic Benchmark GI</td>
+      <td>Nasdaq Baltic</td>
+      <td>EUR</td>
+      <td>Gross total return</td>
+      <td>2007-01-02</td>
+      <td>2026-11-02</td>
+      <td>5014</td>
+      <td><a href="https://indexes.nasdaq.com/Index/Overview/OMXBBGI" target="_blank" rel="noopener noreferrer">Official index</a></td>
+    </tr>
+    <tr>
+      <td>OMXB10</td>
+      <td>OMX Baltic 10</td>
+      <td>Nasdaq Baltic</td>
+      <td>EUR</td>
+      <td>Price</td>
+      <td>2007-01-02</td>
+      <td>2026-11-02</td>
+      <td>5014</td>
+      <td><a href="https://indexes.nasdaq.com/Index/Overview/OMXB10" target="_blank" rel="noopener noreferrer">Official index</a></td>
+    </tr>
+    <tr>
+      <td>OMXTGI</td>
+      <td>OMX Tallinn GI</td>
+      <td>Nasdaq Baltic</td>
+      <td>EUR</td>
+      <td>Gross total return</td>
+      <td>2007-01-02</td>
+      <td>2026-11-02</td>
+      <td>4972</td>
+      <td><a href="https://indexes.nasdaq.com/Index/Overview/OMXTGI" target="_blank" rel="noopener noreferrer">Official index</a></td>
+    </tr>
+    <tr>
+      <td>OMXRGI</td>
+      <td>OMX Riga GI</td>
+      <td>Nasdaq Baltic</td>
+      <td>EUR</td>
+      <td>Gross total return</td>
+      <td>2007-01-02</td>
+      <td>2026-11-02</td>
+      <td>4937</td>
+      <td><a href="https://indexes.nasdaq.com/Index/Overview/OMXRGI" target="_blank" rel="noopener noreferrer">Official index</a></td>
+    </tr>
+    <tr>
+      <td>OMXVGI</td>
+      <td>OMX Vilnius GI</td>
+      <td>Nasdaq Baltic</td>
+      <td>EUR</td>
+      <td>Gross total return</td>
+      <td>2007-01-02</td>
+      <td>2026-10-30</td>
+      <td>4920</td>
+      <td><a href="https://indexes.nasdaq.com/Index/Overview/OMXVGI" target="_blank" rel="noopener noreferrer">Official index</a></td>
+    </tr>
+    <tr>
+      <td>MSCI_WORLD</td>
+      <td>MSCI World EUR gross return</td>
+      <td>MSCI</td>
+      <td>EUR</td>
+      <td>Gross total return</td>
+      <td>2007-01-01</td>
+      <td>2026-11-02</td>
+      <td>5176</td>
+      <td><a href="https://www.msci.com/indexes/index/990100" target="_blank" rel="noopener noreferrer">Official index</a></td>
+    </tr>
+  </tbody>
+</table>
+
+</details><p>Identical duplicate Nasdaq endpoint rows and its non-observation previous-close chart anchor are removed. Conflicting duplicate closes cause a validation failure. No missing close is forward-filled. Log returns are calculated after taking the intersection of observed closing dates, so all indices cover the same intervals. One initial return is then removed for lagged regressors. A step is one common observation interval, which can span more than one calendar or exchange trading day.</p><p>Some individual series reach 2026-11-02, but Vilnius closes make 2026-10-30 the latest complete joint observation. The headline regime is dated accordingly. Local and global closes occur at different times; lagged market regressors avoid using the later same-day global close as a Baltic predictor.</p><details markdown="1"><summary><strong>Figure 2.a. Official index histories on a common EUR observation calendar</strong></summary>
+
+<img loading="lazy" src="figures/market_analysis/index_histories.png?v=95274b055fa2" alt="Official index histories on a common EUR observation calendar">
+
+</details><details markdown="1"><summary><strong>Table 2.b. Common-panel data and training/held-out boundary</strong></summary>
+
+<table class="dataframe research-table market-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Model observations</th>
+      <th>Start</th>
+      <th>End</th>
+      <th>Training observations</th>
+      <th>Train end</th>
+      <th>Held-out observations</th>
+      <th>Held-out start</th>
+      <th>R workers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>4817</td>
+      <td>2007-01-04</td>
+      <td>2026-10-30</td>
+      <td>3853</td>
+      <td>2022-11-16</td>
+      <td>964</td>
+      <td>2022-11-17</td>
+      <td>7</td>
+    </tr>
+  </tbody>
+</table>
+
+</details>
+
+</details><details markdown="1" id="market-analysis-2"><summary><strong>2.2. Two-state HMM specification and estimation</strong></summary>
+
+<p>Two Gaussian HMMs with two hidden states are fitted for each index. The first uses that index's returns; the second additionally uses the previous common-observation returns of the other five indices. Means/regression coefficients and residual SD depend on the hidden state; transition probabilities are constant within each fitted model.</p>
+<div class="math-display">$$x_{it}=100\log\frac{I_{it}}{I_{i,t-1}},\quad S_{it}^{(m)}\in\{0,1\},\quad \Pr(S_{it}^{(m)}=b\mid S_{i,t-1}^{(m)}=a)=A_{iab}^{(m)}.$$</div>
+<div class="math-display">$$m=1:\quad x_{it}\mid S_{it}^{(1)}=s\sim\mathcal N(\mu_{is},\sigma_{is}^{2}),\\m=2:\quad x_{it}\mid S_{it}^{(2)}=s,\mathbf x_{-i,t-1}\sim\mathcal N\left(\beta_{is0}+\sum_{j\ne i}\beta_{isj}x_{j,t-1},\sigma_{is}^{2}\right).$$</div>
+<p>I is the index close; x is the log return in percent; i and j identify indices; t identifies a common observation; m is the method; s is the latent state; A is a two-state transition matrix; μ is the state mean; β are state-specific regression coefficients; σ is residual SD. The state with larger σ is labelled stress. Stress can include large positive returns and does not mean every observation is a loss.</p>
+<p>Six seeded initialisations are tried for each two-state full-history and training-only fit. Selection uses the highest finite likelihood among valid converged starts, not a desired regime frequency. Degenerate SD or a state with fewer than 20 posterior-weighted observations is rejected. The competing one-state model is fitted to the identical response and predictors. All twelve selected full-history fits converged.</p>
+<div class="math-display">$$q_{it}^{(m)}=\Pr(S_{it}^{(m)}=1\mid x_{1:T}),\quad d_{it}^{(m)}=\mathbf1\{q_{it}^{(m)}>0.5\},\quad L_{it}=1+\frac{d_{it}^{(1)}+d_{it}^{(2)}}2.$$</div>
+<p>These retrospective q values come from <code>depmixS4::forwardbackward()</code> smoothing. Thresholding posterior probabilities is not Viterbi path decoding. Filtered probabilities condition only on observations up to t; full-fit filtering still uses parameters estimated on the complete sample. Genuine held-out filtering below instead freezes all parameters at the training boundary.</p><details markdown="1"><summary><strong>Table 2.c. HMM convergence, two-state model selection and held-out log scores</strong></summary>
+
+<table class="dataframe research-table market-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Index</th>
+      <th>method</th>
+      <th>observations</th>
+      <th>train_observations</th>
+      <th>heldout_observations</th>
+      <th>logLik</th>
+      <th>AIC</th>
+      <th>BIC</th>
+      <th>one_state_AIC</th>
+      <th>one_state_BIC</th>
+      <th>BIC_improvement</th>
+      <th>selected_start</th>
+      <th>converged</th>
+      <th>sigma_ratio</th>
+      <th>stress_share</th>
+      <th>ambiguous_smoothed_share</th>
+      <th>heldout_mean_log_score</th>
+      <th>heldout_one_state_log_score</th>
+      <th>heldout_log_score_gain</th>
+      <th>train_end</th>
+      <th>heldout_start</th>
+      <th>formula</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>OMXBBGI</td>
+      <td>Own history</td>
+      <td>4817</td>
+      <td>3853</td>
+      <td>964</td>
+      <td>-4,675.1458</td>
+      <td>9,364.2916</td>
+      <td>9,409.6509</td>
+      <td>12,907.3016</td>
+      <td>12,920.2614</td>
+      <td>3,510.6105</td>
+      <td>1</td>
+      <td>True</td>
+      <td>4.2735</td>
+      <td>0.1976</td>
+      <td>0.0243</td>
+      <td>-0.5997</td>
+      <td>-1.0322</td>
+      <td>0.4325</td>
+      <td>2022-11-16</td>
+      <td>2022-11-17</td>
+      <td>OMXBBGI ~ 1</td>
+    </tr>
+    <tr>
+      <td>OMXB10</td>
+      <td>Own history</td>
+      <td>4817</td>
+      <td>3853</td>
+      <td>964</td>
+      <td>-5,073.3132</td>
+      <td>10,160.6264</td>
+      <td>10,205.9858</td>
+      <td>13,963.7355</td>
+      <td>13,976.6953</td>
+      <td>3,770.7095</td>
+      <td>4</td>
+      <td>True</td>
+      <td>4.3896</td>
+      <td>0.2178</td>
+      <td>0.0212</td>
+      <td>-0.6307</td>
+      <td>-1.1293</td>
+      <td>0.4985</td>
+      <td>2022-11-16</td>
+      <td>2022-11-17</td>
+      <td>OMXB10 ~ 1</td>
+    </tr>
+    <tr>
+      <td>OMXTGI</td>
+      <td>Own history</td>
+      <td>4817</td>
+      <td>3853</td>
+      <td>964</td>
+      <td>-5,305.8555</td>
+      <td>10,625.7111</td>
+      <td>10,671.0704</td>
+      <td>13,742.4542</td>
+      <td>13,755.4140</td>
+      <td>3,084.3436</td>
+      <td>1</td>
+      <td>True</td>
+      <td>3.9706</td>
+      <td>0.2228</td>
+      <td>0.0330</td>
+      <td>-0.6993</td>
+      <td>-1.1200</td>
+      <td>0.4207</td>
+      <td>2022-11-16</td>
+      <td>2022-11-17</td>
+      <td>OMXTGI ~ 1</td>
+    </tr>
+    <tr>
+      <td>OMXRGI</td>
+      <td>Own history</td>
+      <td>4817</td>
+      <td>3853</td>
+      <td>964</td>
+      <td>-6,473.4958</td>
+      <td>12,960.9916</td>
+      <td>13,006.3510</td>
+      <td>15,839.5928</td>
+      <td>15,852.5526</td>
+      <td>2,846.2016</td>
+      <td>2</td>
+      <td>True</td>
+      <td>3.8793</td>
+      <td>0.1868</td>
+      <td>0.0297</td>
+      <td>-1.0726</td>
+      <td>-1.5444</td>
+      <td>0.4717</td>
+      <td>2022-11-16</td>
+      <td>2022-11-17</td>
+      <td>OMXRGI ~ 1</td>
+    </tr>
+    <tr>
+      <td>OMXVGI</td>
+      <td>Own history</td>
+      <td>4817</td>
+      <td>3853</td>
+      <td>964</td>
+      <td>-4,159.3487</td>
+      <td>8,332.6974</td>
+      <td>8,378.0568</td>
+      <td>12,543.5800</td>
+      <td>12,556.5398</td>
+      <td>4,178.4830</td>
+      <td>4</td>
+      <td>True</td>
+      <td>4.8251</td>
+      <td>0.1933</td>
+      <td>0.0228</td>
+      <td>-0.4580</td>
+      <td>-0.9798</td>
+      <td>0.5219</td>
+      <td>2022-11-16</td>
+      <td>2022-11-17</td>
+      <td>OMXVGI ~ 1</td>
+    </tr>
+    <tr>
+      <td>MSCI_WORLD</td>
+      <td>Own history</td>
+      <td>4817</td>
+      <td>3853</td>
+      <td>964</td>
+      <td>-6,139.8724</td>
+      <td>12,293.7448</td>
+      <td>12,339.1042</td>
+      <td>14,135.0318</td>
+      <td>14,147.9916</td>
+      <td>1,808.8874</td>
+      <td>5</td>
+      <td>True</td>
+      <td>2.8632</td>
+      <td>0.2240</td>
+      <td>0.0399</td>
+      <td>-1.1167</td>
+      <td>-1.2827</td>
+      <td>0.1659</td>
+      <td>2022-11-16</td>
+      <td>2022-11-17</td>
+      <td>MSCI_WORLD ~ 1</td>
+    </tr>
+    <tr>
+      <td>OMXBBGI</td>
+      <td>Lagged market regressors</td>
+      <td>4817</td>
+      <td>3853</td>
+      <td>964</td>
+      <td>-4,533.1625</td>
+      <td>9,100.3249</td>
+      <td>9,210.4834</td>
+      <td>12,580.3564</td>
+      <td>12,625.7158</td>
+      <td>3,415.2324</td>
+      <td>2</td>
+      <td>True</td>
+      <td>4.1835</td>
+      <td>0.1966</td>
+      <td>0.0220</td>
+      <td>-0.5804</td>
+      <td>-1.0002</td>
+      <td>0.4198</td>
+      <td>2022-11-16</td>
+      <td>2022-11-17</td>
+      <td>OMXBBGI ~ lag_OMXB10 + lag_OMXTGI + lag_OMXRGI + lag_OMXVGI +&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lag_MSCI_WORLD</td>
+    </tr>
+    <tr>
+      <td>OMXB10</td>
+      <td>Lagged market regressors</td>
+      <td>4817</td>
+      <td>3853</td>
+      <td>964</td>
+      <td>-4,940.5870</td>
+      <td>9,915.1739</td>
+      <td>10,025.3323</td>
+      <td>13,649.6810</td>
+      <td>13,695.0404</td>
+      <td>3,669.7081</td>
+      <td>2</td>
+      <td>True</td>
+      <td>4.3192</td>
+      <td>0.2230</td>
+      <td>0.0212</td>
+      <td>-0.6061</td>
+      <td>-1.0997</td>
+      <td>0.4935</td>
+      <td>2022-11-16</td>
+      <td>2022-11-17</td>
+      <td>OMXB10 ~ lag_OMXBBGI + lag_OMXTGI + lag_OMXRGI + lag_OMXVGI +&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lag_MSCI_WORLD</td>
+    </tr>
+    <tr>
+      <td>OMXTGI</td>
+      <td>Lagged market regressors</td>
+      <td>4817</td>
+      <td>3853</td>
+      <td>964</td>
+      <td>-5,204.6393</td>
+      <td>10,443.2787</td>
+      <td>10,553.4371</td>
+      <td>13,505.6736</td>
+      <td>13,551.0329</td>
+      <td>2,997.5959</td>
+      <td>4</td>
+      <td>True</td>
+      <td>3.9078</td>
+      <td>0.2178</td>
+      <td>0.0351</td>
+      <td>-0.6855</td>
+      <td>-1.0984</td>
+      <td>0.4129</td>
+      <td>2022-11-16</td>
+      <td>2022-11-17</td>
+      <td>OMXTGI ~ lag_OMXBBGI + lag_OMXB10 + lag_OMXRGI + lag_OMXVGI +&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lag_MSCI_WORLD</td>
+    </tr>
+    <tr>
+      <td>OMXRGI</td>
+      <td>Lagged market regressors</td>
+      <td>4817</td>
+      <td>3853</td>
+      <td>964</td>
+      <td>-6,437.1766</td>
+      <td>12,908.3533</td>
+      <td>13,018.5117</td>
+      <td>15,773.1793</td>
+      <td>15,818.5386</td>
+      <td>2,800.0269</td>
+      <td>3</td>
+      <td>True</td>
+      <td>3.8792</td>
+      <td>0.1879</td>
+      <td>0.0330</td>
+      <td>-1.0722</td>
+      <td>-1.5424</td>
+      <td>0.4703</td>
+      <td>2022-11-16</td>
+      <td>2022-11-17</td>
+      <td>OMXRGI ~ lag_OMXBBGI + lag_OMXB10 + lag_OMXTGI + lag_OMXVGI +&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lag_MSCI_WORLD</td>
+    </tr>
+    <tr>
+      <td>OMXVGI</td>
+      <td>Lagged market regressors</td>
+      <td>4817</td>
+      <td>3853</td>
+      <td>964</td>
+      <td>-4,059.5470</td>
+      <td>8,153.0939</td>
+      <td>8,263.2523</td>
+      <td>12,258.8037</td>
+      <td>12,304.1630</td>
+      <td>4,040.9107</td>
+      <td>4</td>
+      <td>True</td>
+      <td>4.6681</td>
+      <td>0.1962</td>
+      <td>0.0264</td>
+      <td>-0.4387</td>
+      <td>-0.9508</td>
+      <td>0.5121</td>
+      <td>2022-11-16</td>
+      <td>2022-11-17</td>
+      <td>OMXVGI ~ lag_OMXBBGI + lag_OMXB10 + lag_OMXTGI + lag_OMXRGI +&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lag_MSCI_WORLD</td>
+    </tr>
+    <tr>
+      <td>MSCI_WORLD</td>
+      <td>Lagged market regressors</td>
+      <td>4817</td>
+      <td>3853</td>
+      <td>964</td>
+      <td>-6,127.6131</td>
+      <td>12,289.2263</td>
+      <td>12,399.3847</td>
+      <td>14,121.3547</td>
+      <td>14,166.7140</td>
+      <td>1,767.3293</td>
+      <td>4</td>
+      <td>True</td>
+      <td>2.8564</td>
+      <td>0.2250</td>
+      <td>0.0384</td>
+      <td>-1.1188</td>
+      <td>-1.2836</td>
+      <td>0.1648</td>
+      <td>2022-11-16</td>
+      <td>2022-11-17</td>
+      <td>MSCI_WORLD ~ lag_OMXBBGI + lag_OMXB10 + lag_OMXTGI + lag_OMXRGI +&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lag_OMXVGI</td>
+    </tr>
+  </tbody>
+</table>
+
+</details><details markdown="1"><summary><strong>Table 2.d. State-specific volatility, observed returns and two-state persistence</strong></summary>
+
+<table class="dataframe research-table market-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Index</th>
+      <th>method</th>
+      <th>state</th>
+      <th>original_state</th>
+      <th>conditional_sigma_percent</th>
+      <th>weighted_observed_mean_percent</th>
+      <th>weighted_observed_sd_percent</th>
+      <th>posterior_observations</th>
+      <th>persistence</th>
+      <th>expected_duration</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>OMXBBGI</td>
+      <td>Own history</td>
+      <td>No stress</td>
+      <td>1</td>
+      <td>0.4300</td>
+      <td>0.0447</td>
+      <td>0.4301</td>
+      <td>3,813.3996</td>
+      <td>0.9718</td>
+      <td>35.4695</td>
+    </tr>
+    <tr>
+      <td>OMXBBGI</td>
+      <td>Own history</td>
+      <td>Stress</td>
+      <td>2</td>
+      <td>1.8378</td>
+      <td>-0.0812</td>
+      <td>1.8379</td>
+      <td>1,003.6004</td>
+      <td>0.8929</td>
+      <td>9.3408</td>
+    </tr>
+    <tr>
+      <td>OMXB10</td>
+      <td>Own history</td>
+      <td>No stress</td>
+      <td>2</td>
+      <td>0.4565</td>
+      <td>0.0242</td>
+      <td>0.4566</td>
+      <td>3,740.8483</td>
+      <td>0.9752</td>
+      <td>40.2712</td>
+    </tr>
+    <tr>
+      <td>OMXB10</td>
+      <td>Own history</td>
+      <td>Stress</td>
+      <td>1</td>
+      <td>2.0041</td>
+      <td>-0.1014</td>
+      <td>2.0042</td>
+      <td>1,076.1517</td>
+      <td>0.9137</td>
+      <td>11.5921</td>
+    </tr>
+    <tr>
+      <td>OMXTGI</td>
+      <td>Own history</td>
+      <td>No stress</td>
+      <td>2</td>
+      <td>0.4745</td>
+      <td>0.0322</td>
+      <td>0.4746</td>
+      <td>3,674.7177</td>
+      <td>0.9657</td>
+      <td>29.1725</td>
+    </tr>
+    <tr>
+      <td>OMXTGI</td>
+      <td>Own history</td>
+      <td>Stress</td>
+      <td>1</td>
+      <td>1.8842</td>
+      <td>-0.0198</td>
+      <td>1.8843</td>
+      <td>1,142.2823</td>
+      <td>0.8898</td>
+      <td>9.0740</td>
+    </tr>
+    <tr>
+      <td>OMXRGI</td>
+      <td>Own history</td>
+      <td>No stress</td>
+      <td>2</td>
+      <td>0.6350</td>
+      <td>0.0238</td>
+      <td>0.6351</td>
+      <td>3,827.9441</td>
+      <td>0.9659</td>
+      <td>29.3495</td>
+    </tr>
+    <tr>
+      <td>OMXRGI</td>
+      <td>Own history</td>
+      <td>Stress</td>
+      <td>1</td>
+      <td>2.4634</td>
+      <td>-0.0534</td>
+      <td>2.4636</td>
+      <td>989.0559</td>
+      <td>0.8682</td>
+      <td>7.5879</td>
+    </tr>
+    <tr>
+      <td>OMXVGI</td>
+      <td>Own history</td>
+      <td>No stress</td>
+      <td>1</td>
+      <td>0.3790</td>
+      <td>0.0497</td>
+      <td>0.3791</td>
+      <td>3,847.5041</td>
+      <td>0.9721</td>
+      <td>35.8374</td>
+    </tr>
+    <tr>
+      <td>OMXVGI</td>
+      <td>Own history</td>
+      <td>Stress</td>
+      <td>2</td>
+      <td>1.8289</td>
+      <td>-0.0839</td>
+      <td>1.8289</td>
+      <td>969.4959</td>
+      <td>0.8893</td>
+      <td>9.0333</td>
+    </tr>
+    <tr>
+      <td>MSCI_WORLD</td>
+      <td>Own history</td>
+      <td>No stress</td>
+      <td>1</td>
+      <td>0.6342</td>
+      <td>0.0991</td>
+      <td>0.6342</td>
+      <td>3,675.3034</td>
+      <td>0.9793</td>
+      <td>48.4147</td>
+    </tr>
+    <tr>
+      <td>MSCI_WORLD</td>
+      <td>Own history</td>
+      <td>Stress</td>
+      <td>2</td>
+      <td>1.8158</td>
+      <td>-0.1594</td>
+      <td>1.8158</td>
+      <td>1,141.6966</td>
+      <td>0.9337</td>
+      <td>15.0771</td>
+    </tr>
+    <tr>
+      <td>OMXBBGI</td>
+      <td>Lagged market regressors</td>
+      <td>No stress</td>
+      <td>1</td>
+      <td>0.4220</td>
+      <td>0.0434</td>
+      <td>0.4350</td>
+      <td>3,827.7545</td>
+      <td>0.9727</td>
+      <td>36.6283</td>
+    </tr>
+    <tr>
+      <td>OMXBBGI</td>
+      <td>Lagged market regressors</td>
+      <td>Stress</td>
+      <td>2</td>
+      <td>1.7656</td>
+      <td>-0.0780</td>
+      <td>1.8463</td>
+      <td>989.2455</td>
+      <td>0.8944</td>
+      <td>9.4721</td>
+    </tr>
+    <tr>
+      <td>OMXB10</td>
+      <td>Lagged market regressors</td>
+      <td>No stress</td>
+      <td>2</td>
+      <td>0.4397</td>
+      <td>0.0243</td>
+      <td>0.4520</td>
+      <td>3,709.3902</td>
+      <td>0.9733</td>
+      <td>37.4248</td>
+    </tr>
+    <tr>
+      <td>OMXB10</td>
+      <td>Lagged market regressors</td>
+      <td>Stress</td>
+      <td>1</td>
+      <td>1.8990</td>
+      <td>-0.0982</td>
+      <td>1.9806</td>
+      <td>1,107.6098</td>
+      <td>0.9106</td>
+      <td>11.1814</td>
+    </tr>
+    <tr>
+      <td>OMXTGI</td>
+      <td>Lagged market regressors</td>
+      <td>No stress</td>
+      <td>2</td>
+      <td>0.4690</td>
+      <td>0.0293</td>
+      <td>0.4795</td>
+      <td>3,688.8745</td>
+      <td>0.9663</td>
+      <td>29.6619</td>
+    </tr>
+    <tr>
+      <td>OMXTGI</td>
+      <td>Lagged market regressors</td>
+      <td>Stress</td>
+      <td>1</td>
+      <td>1.8329</td>
+      <td>-0.0109</td>
+      <td>1.8916</td>
+      <td>1,128.1255</td>
+      <td>0.8898</td>
+      <td>9.0772</td>
+    </tr>
+    <tr>
+      <td>OMXRGI</td>
+      <td>Lagged market regressors</td>
+      <td>No stress</td>
+      <td>1</td>
+      <td>0.6313</td>
+      <td>0.0228</td>
+      <td>0.6366</td>
+      <td>3,836.5203</td>
+      <td>0.9658</td>
+      <td>29.2822</td>
+    </tr>
+    <tr>
+      <td>OMXRGI</td>
+      <td>Lagged market regressors</td>
+      <td>Stress</td>
+      <td>2</td>
+      <td>2.4489</td>
+      <td>-0.0501</td>
+      <td>2.4721</td>
+      <td>980.4797</td>
+      <td>0.8664</td>
+      <td>7.4874</td>
+    </tr>
+    <tr>
+      <td>OMXVGI</td>
+      <td>Lagged market regressors</td>
+      <td>No stress</td>
+      <td>1</td>
+      <td>0.3713</td>
+      <td>0.0476</td>
+      <td>0.3780</td>
+      <td>3,822.7102</td>
+      <td>0.9724</td>
+      <td>36.1917</td>
+    </tr>
+    <tr>
+      <td>OMXVGI</td>
+      <td>Lagged market regressors</td>
+      <td>Stress</td>
+      <td>2</td>
+      <td>1.7332</td>
+      <td>-0.0728</td>
+      <td>1.8085</td>
+      <td>994.2898</td>
+      <td>0.8938</td>
+      <td>9.4162</td>
+    </tr>
+    <tr>
+      <td>MSCI_WORLD</td>
+      <td>Lagged market regressors</td>
+      <td>No stress</td>
+      <td>1</td>
+      <td>0.6327</td>
+      <td>0.1001</td>
+      <td>0.6339</td>
+      <td>3,677.7336</td>
+      <td>0.9789</td>
+      <td>47.3829</td>
+    </tr>
+    <tr>
+      <td>MSCI_WORLD</td>
+      <td>Lagged market regressors</td>
+      <td>Stress</td>
+      <td>2</td>
+      <td>1.8073</td>
+      <td>-0.1633</td>
+      <td>1.8173</td>
+      <td>1,139.2664</td>
+      <td>0.9320</td>
+      <td>14.7156</td>
+    </tr>
+  </tbody>
+</table>
+
+</details><details markdown="1"><summary><strong>State regression coefficients and full reproducibility information</strong></summary>
+
+<table class="dataframe research-table market-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>index</th>
+      <th>method</th>
+      <th>state</th>
+      <th>term</th>
+      <th>coefficient</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>OMXBBGI</td>
+      <td>Own history</td>
+      <td>No stress</td>
+      <td>(Intercept)</td>
+      <td>0.0447</td>
+    </tr>
+    <tr>
+      <td>OMXBBGI</td>
+      <td>Own history</td>
+      <td>Stress</td>
+      <td>(Intercept)</td>
+      <td>-0.0812</td>
+    </tr>
+    <tr>
+      <td>OMXB10</td>
+      <td>Own history</td>
+      <td>No stress</td>
+      <td>(Intercept)</td>
+      <td>0.0242</td>
+    </tr>
+    <tr>
+      <td>OMXB10</td>
+      <td>Own history</td>
+      <td>Stress</td>
+      <td>(Intercept)</td>
+      <td>-0.1014</td>
+    </tr>
+    <tr>
+      <td>OMXTGI</td>
+      <td>Own history</td>
+      <td>No stress</td>
+      <td>(Intercept)</td>
+      <td>0.0322</td>
+    </tr>
+    <tr>
+      <td>OMXTGI</td>
+      <td>Own history</td>
+      <td>Stress</td>
+      <td>(Intercept)</td>
+      <td>-0.0198</td>
+    </tr>
+    <tr>
+      <td>OMXRGI</td>
+      <td>Own history</td>
+      <td>No stress</td>
+      <td>(Intercept)</td>
+      <td>0.0238</td>
+    </tr>
+    <tr>
+      <td>OMXRGI</td>
+      <td>Own history</td>
+      <td>Stress</td>
+      <td>(Intercept)</td>
+      <td>-0.0534</td>
+    </tr>
+    <tr>
+      <td>OMXVGI</td>
+      <td>Own history</td>
+      <td>No stress</td>
+      <td>(Intercept)</td>
+      <td>0.0496</td>
+    </tr>
+    <tr>
+      <td>OMXVGI</td>
+      <td>Own history</td>
+      <td>Stress</td>
+      <td>(Intercept)</td>
+      <td>-0.0839</td>
+    </tr>
+    <tr>
+      <td>MSCI_WORLD</td>
+      <td>Own history</td>
+      <td>No stress</td>
+      <td>(Intercept)</td>
+      <td>0.0991</td>
+    </tr>
+    <tr>
+      <td>MSCI_WORLD</td>
+      <td>Own history</td>
+      <td>Stress</td>
+      <td>(Intercept)</td>
+      <td>-0.1595</td>
+    </tr>
+    <tr>
+      <td>OMXBBGI</td>
+      <td>Lagged market regressors</td>
+      <td>No stress</td>
+      <td>(Intercept)</td>
+      <td>0.0338</td>
+    </tr>
+    <tr>
+      <td>OMXBBGI</td>
+      <td>Lagged market regressors</td>
+      <td>No stress</td>
+      <td>lag_OMXB10</td>
+      <td>0.0892</td>
+    </tr>
+    <tr>
+      <td>OMXBBGI</td>
+      <td>Lagged market regressors</td>
+      <td>No stress</td>
+      <td>lag_OMXTGI</td>
+      <td>-0.0272</td>
+    </tr>
+    <tr>
+      <td>OMXBBGI</td>
+      <td>Lagged market regressors</td>
+      <td>No stress</td>
+      <td>lag_OMXRGI</td>
+      <td>0.0160</td>
+    </tr>
+    <tr>
+      <td>OMXBBGI</td>
+      <td>Lagged market regressors</td>
+      <td>No stress</td>
+      <td>lag_OMXVGI</td>
+      <td>-0.0217</td>
+    </tr>
+    <tr>
+      <td>OMXBBGI</td>
+      <td>Lagged market regressors</td>
+      <td>No stress</td>
+      <td>lag_MSCI_WORLD</td>
+      <td>0.1165</td>
+    </tr>
+    <tr>
+      <td>OMXBBGI</td>
+      <td>Lagged market regressors</td>
+      <td>Stress</td>
+      <td>(Intercept)</td>
+      <td>-0.0499</td>
+    </tr>
+    <tr>
+      <td>OMXBBGI</td>
+      <td>Lagged market regressors</td>
+      <td>Stress</td>
+      <td>lag_OMXB10</td>
+      <td>0.0575</td>
+    </tr>
+    <tr>
+      <td>OMXBBGI</td>
+      <td>Lagged market regressors</td>
+      <td>Stress</td>
+      <td>lag_OMXTGI</td>
+      <td>0.0446</td>
+    </tr>
+    <tr>
+      <td>OMXBBGI</td>
+      <td>Lagged market regressors</td>
+      <td>Stress</td>
+      <td>lag_OMXRGI</td>
+      <td>-0.1169</td>
+    </tr>
+    <tr>
+      <td>OMXBBGI</td>
+      <td>Lagged market regressors</td>
+      <td>Stress</td>
+      <td>lag_OMXVGI</td>
+      <td>0.0147</td>
+    </tr>
+    <tr>
+      <td>OMXBBGI</td>
+      <td>Lagged market regressors</td>
+      <td>Stress</td>
+      <td>lag_MSCI_WORLD</td>
+      <td>0.2776</td>
+    </tr>
+    <tr>
+      <td>OMXB10</td>
+      <td>Lagged market regressors</td>
+      <td>No stress</td>
+      <td>(Intercept)</td>
+      <td>0.0129</td>
+    </tr>
+    <tr>
+      <td>OMXB10</td>
+      <td>Lagged market regressors</td>
+      <td>No stress</td>
+      <td>lag_OMXBBGI</td>
+      <td>0.0618</td>
+    </tr>
+    <tr>
+      <td>OMXB10</td>
+      <td>Lagged market regressors</td>
+      <td>No stress</td>
+      <td>lag_OMXTGI</td>
+      <td>0.0074</td>
+    </tr>
+    <tr>
+      <td>OMXB10</td>
+      <td>Lagged market regressors</td>
+      <td>No stress</td>
+      <td>lag_OMXRGI</td>
+      <td>0.0119</td>
+    </tr>
+    <tr>
+      <td>OMXB10</td>
+      <td>Lagged market regressors</td>
+      <td>No stress</td>
+      <td>lag_OMXVGI</td>
+      <td>-0.0183</td>
+    </tr>
+    <tr>
+      <td>OMXB10</td>
+      <td>Lagged market regressors</td>
+      <td>No stress</td>
+      <td>lag_MSCI_WORLD</td>
+      <td>0.1187</td>
+    </tr>
+    <tr>
+      <td>OMXB10</td>
+      <td>Lagged market regressors</td>
+      <td>Stress</td>
+      <td>(Intercept)</td>
+      <td>-0.0763</td>
+    </tr>
+    <tr>
+      <td>OMXB10</td>
+      <td>Lagged market regressors</td>
+      <td>Stress</td>
+      <td>lag_OMXBBGI</td>
+      <td>-0.0680</td>
+    </tr>
+    <tr>
+      <td>OMXB10</td>
+      <td>Lagged market regressors</td>
+      <td>Stress</td>
+      <td>lag_OMXTGI</td>
+      <td>0.1185</td>
+    </tr>
+    <tr>
+      <td>OMXB10</td>
+      <td>Lagged market regressors</td>
+      <td>Stress</td>
+      <td>lag_OMXRGI</td>
+      <td>-0.0775</td>
+    </tr>
+    <tr>
+      <td>OMXB10</td>
+      <td>Lagged market regressors</td>
+      <td>Stress</td>
+      <td>lag_OMXVGI</td>
+      <td>0.0348</td>
+    </tr>
+    <tr>
+      <td>OMXB10</td>
+      <td>Lagged market regressors</td>
+      <td>Stress</td>
+      <td>lag_MSCI_WORLD</td>
+      <td>0.3212</td>
+    </tr>
+    <tr>
+      <td>OMXTGI</td>
+      <td>Lagged market regressors</td>
+      <td>No stress</td>
+      <td>(Intercept)</td>
+      <td>0.0202</td>
+    </tr>
+    <tr>
+      <td>OMXTGI</td>
+      <td>Lagged market regressors</td>
+      <td>No stress</td>
+      <td>lag_OMXBBGI</td>
+      <td>-0.0165</td>
+    </tr>
+    <tr>
+      <td>OMXTGI</td>
+      <td>Lagged market regressors</td>
+      <td>No stress</td>
+      <td>lag_OMXB10</td>
+      <td>0.0551</td>
+    </tr>
+    <tr>
+      <td>OMXTGI</td>
+      <td>Lagged market regressors</td>
+      <td>No stress</td>
+      <td>lag_OMXRGI</td>
+      <td>0.0132</td>
+    </tr>
+    <tr>
+      <td>OMXTGI</td>
+      <td>Lagged market regressors</td>
+      <td>No stress</td>
+      <td>lag_OMXVGI</td>
+      <td>-0.0007</td>
+    </tr>
+    <tr>
+      <td>OMXTGI</td>
+      <td>Lagged market regressors</td>
+      <td>No stress</td>
+      <td>lag_MSCI_WORLD</td>
+      <td>0.1125</td>
+    </tr>
+    <tr>
+      <td>OMXTGI</td>
+      <td>Lagged market regressors</td>
+      <td>Stress</td>
+      <td>(Intercept)</td>
+      <td>0.0069</td>
+    </tr>
+    <tr>
+      <td>OMXTGI</td>
+      <td>Lagged market regressors</td>
+      <td>Stress</td>
+      <td>lag_OMXBBGI</td>
+      <td>0.0015</td>
+    </tr>
+    <tr>
+      <td>OMXTGI</td>
+      <td>Lagged market regressors</td>
+      <td>Stress</td>
+      <td>lag_OMXB10</td>
+      <td>0.1003</td>
+    </tr>
+    <tr>
+      <td>OMXTGI</td>
+      <td>Lagged market regressors</td>
+      <td>Stress</td>
+      <td>lag_OMXRGI</td>
+      <td>-0.0775</td>
+    </tr>
+    <tr>
+      <td>OMXTGI</td>
+      <td>Lagged market regressors</td>
+      <td>Stress</td>
+      <td>lag_OMXVGI</td>
+      <td>-0.0213</td>
+    </tr>
+    <tr>
+      <td>OMXTGI</td>
+      <td>Lagged market regressors</td>
+      <td>Stress</td>
+      <td>lag_MSCI_WORLD</td>
+      <td>0.2585</td>
+    </tr>
+    <tr>
+      <td>OMXRGI</td>
+      <td>Lagged market regressors</td>
+      <td>No stress</td>
+      <td>(Intercept)</td>
+      <td>0.0182</td>
+    </tr>
+    <tr>
+      <td>OMXRGI</td>
+      <td>Lagged market regressors</td>
+      <td>No stress</td>
+      <td>lag_OMXBBGI</td>
+      <td>-0.0571</td>
+    </tr>
+    <tr>
+      <td>OMXRGI</td>
+      <td>Lagged market regressors</td>
+      <td>No stress</td>
+      <td>lag_OMXB10</td>
+      <td>0.1046</td>
+    </tr>
+    <tr>
+      <td>OMXRGI</td>
+      <td>Lagged market regressors</td>
+      <td>No stress</td>
+      <td>lag_OMXTGI</td>
+      <td>0.0122</td>
+    </tr>
+    <tr>
+      <td>OMXRGI</td>
+      <td>Lagged market regressors</td>
+      <td>No stress</td>
+      <td>lag_OMXVGI</td>
+      <td>-0.0248</td>
+    </tr>
+    <tr>
+      <td>OMXRGI</td>
+      <td>Lagged market regressors</td>
+      <td>No stress</td>
+      <td>lag_MSCI_WORLD</td>
+      <td>0.0720</td>
+    </tr>
+    <tr>
+      <td>OMXRGI</td>
+      <td>Lagged market regressors</td>
+      <td>Stress</td>
+      <td>(Intercept)</td>
+      <td>-0.0306</td>
+    </tr>
+    <tr>
+      <td>OMXRGI</td>
+      <td>Lagged market regressors</td>
+      <td>Stress</td>
+      <td>lag_OMXBBGI</td>
+      <td>-0.2806</td>
+    </tr>
+    <tr>
+      <td>OMXRGI</td>
+      <td>Lagged market regressors</td>
+      <td>Stress</td>
+      <td>lag_OMXB10</td>
+      <td>0.1869</td>
+    </tr>
+    <tr>
+      <td>OMXRGI</td>
+      <td>Lagged market regressors</td>
+      <td>Stress</td>
+      <td>lag_OMXTGI</td>
+      <td>0.0333</td>
+    </tr>
+    <tr>
+      <td>OMXRGI</td>
+      <td>Lagged market regressors</td>
+      <td>Stress</td>
+      <td>lag_OMXVGI</td>
+      <td>0.0841</td>
+    </tr>
+    <tr>
+      <td>OMXRGI</td>
+      <td>Lagged market regressors</td>
+      <td>Stress</td>
+      <td>lag_MSCI_WORLD</td>
+      <td>0.1813</td>
+    </tr>
+    <tr>
+      <td>OMXVGI</td>
+      <td>Lagged market regressors</td>
+      <td>No stress</td>
+      <td>(Intercept)</td>
+      <td>0.0393</td>
+    </tr>
+    <tr>
+      <td>OMXVGI</td>
+      <td>Lagged market regressors</td>
+      <td>No stress</td>
+      <td>lag_OMXBBGI</td>
+      <td>-0.0032</td>
+    </tr>
+    <tr>
+      <td>OMXVGI</td>
+      <td>Lagged market regressors</td>
+      <td>No stress</td>
+      <td>lag_OMXB10</td>
+      <td>0.0500</td>
+    </tr>
+    <tr>
+      <td>OMXVGI</td>
+      <td>Lagged market regressors</td>
+      <td>No stress</td>
+      <td>lag_OMXTGI</td>
+      <td>-0.0021</td>
+    </tr>
+    <tr>
+      <td>OMXVGI</td>
+      <td>Lagged market regressors</td>
+      <td>No stress</td>
+      <td>lag_OMXRGI</td>
+      <td>0.0071</td>
+    </tr>
+    <tr>
+      <td>OMXVGI</td>
+      <td>Lagged market regressors</td>
+      <td>No stress</td>
+      <td>lag_MSCI_WORLD</td>
+      <td>0.0737</td>
+    </tr>
+    <tr>
+      <td>OMXVGI</td>
+      <td>Lagged market regressors</td>
+      <td>Stress</td>
+      <td>(Intercept)</td>
+      <td>-0.0306</td>
+    </tr>
+    <tr>
+      <td>OMXVGI</td>
+      <td>Lagged market regressors</td>
+      <td>Stress</td>
+      <td>lag_OMXBBGI</td>
+      <td>-0.2103</td>
+    </tr>
+    <tr>
+      <td>OMXVGI</td>
+      <td>Lagged market regressors</td>
+      <td>Stress</td>
+      <td>lag_OMXB10</td>
+      <td>0.1642</td>
+    </tr>
+    <tr>
+      <td>OMXVGI</td>
+      <td>Lagged market regressors</td>
+      <td>Stress</td>
+      <td>lag_OMXTGI</td>
+      <td>0.0939</td>
+    </tr>
+    <tr>
+      <td>OMXVGI</td>
+      <td>Lagged market regressors</td>
+      <td>Stress</td>
+      <td>lag_OMXRGI</td>
+      <td>-0.0478</td>
+    </tr>
+    <tr>
+      <td>OMXVGI</td>
+      <td>Lagged market regressors</td>
+      <td>Stress</td>
+      <td>lag_MSCI_WORLD</td>
+      <td>0.2834</td>
+    </tr>
+    <tr>
+      <td>MSCI_WORLD</td>
+      <td>Lagged market regressors</td>
+      <td>No stress</td>
+      <td>(Intercept)</td>
+      <td>0.1026</td>
+    </tr>
+    <tr>
+      <td>MSCI_WORLD</td>
+      <td>Lagged market regressors</td>
+      <td>No stress</td>
+      <td>lag_OMXBBGI</td>
+      <td>-0.0104</td>
+    </tr>
+    <tr>
+      <td>MSCI_WORLD</td>
+      <td>Lagged market regressors</td>
+      <td>No stress</td>
+      <td>lag_OMXB10</td>
+      <td>0.0032</td>
+    </tr>
+    <tr>
+      <td>MSCI_WORLD</td>
+      <td>Lagged market regressors</td>
+      <td>No stress</td>
+      <td>lag_OMXTGI</td>
+      <td>-0.0162</td>
+    </tr>
+    <tr>
+      <td>MSCI_WORLD</td>
+      <td>Lagged market regressors</td>
+      <td>No stress</td>
+      <td>lag_OMXRGI</td>
+      <td>-0.0302</td>
+    </tr>
+    <tr>
+      <td>MSCI_WORLD</td>
+      <td>Lagged market regressors</td>
+      <td>No stress</td>
+      <td>lag_OMXVGI</td>
+      <td>0.0131</td>
+    </tr>
+    <tr>
+      <td>MSCI_WORLD</td>
+      <td>Lagged market regressors</td>
+      <td>Stress</td>
+      <td>(Intercept)</td>
+      <td>-0.1821</td>
+    </tr>
+    <tr>
+      <td>MSCI_WORLD</td>
+      <td>Lagged market regressors</td>
+      <td>Stress</td>
+      <td>lag_OMXBBGI</td>
+      <td>-0.3395</td>
+    </tr>
+    <tr>
+      <td>MSCI_WORLD</td>
+      <td>Lagged market regressors</td>
+      <td>Stress</td>
+      <td>lag_OMXB10</td>
+      <td>-0.0432</td>
+    </tr>
+    <tr>
+      <td>MSCI_WORLD</td>
+      <td>Lagged market regressors</td>
+      <td>Stress</td>
+      <td>lag_OMXTGI</td>
+      <td>0.1740</td>
+    </tr>
+    <tr>
+      <td>MSCI_WORLD</td>
+      <td>Lagged market regressors</td>
+      <td>Stress</td>
+      <td>lag_OMXRGI</td>
+      <td>-0.0222</td>
+    </tr>
+    <tr>
+      <td>MSCI_WORLD</td>
+      <td>Lagged market regressors</td>
+      <td>Stress</td>
+      <td>lag_OMXVGI</td>
+      <td>0.1624</td>
+    </tr>
+  </tbody>
+</table><p>R R version 4.4.0 (2024-04-24 ucrt); depmixS4 1.5.0; markovchain 0.9.5.</p>
+
+</details>
+
+</details><details markdown="1" id="market-analysis-3"><summary><strong>2.3. Baltic local-market state</strong></summary>
+
+<div class="math-display">$$L_t^B=\frac15\sum_{i\in\mathcal B}L_{it},\qquad b_t=\mathbf1\{L_t^B\ge1.3\}.$$</div><p>𝓑 contains the five requested Baltic indices. Each index receives weight 1/5 and each HMM method weight 1/2: at least three of the ten method–index stress votes trigger the local stress state. This is a weighted voting level, not a calibrated probability. Because the regional indices overlap in constituents, ten votes are not ten independent observations.</p><details markdown="1"><summary><strong>Figure 2.b. Baltic-index stress probabilities: own history and lagged market information</strong></summary>
+
+<img loading="lazy" src="figures/market_analysis/baltic_hmm_probabilities.png?v=7940ff0a7d3f" alt="Baltic-index stress probabilities: own history and lagged market information">
+
+</details><details markdown="1"><summary><strong>Figure 2.c. Aggregated local and global stress levels with the equity threshold</strong></summary>
+
+<img loading="lazy" src="figures/market_analysis/market_aggregated_levels.png?v=e93e3686085d" alt="Aggregated local and global stress levels with the equity threshold">
+
+</details>
+
+</details><details markdown="1" id="market-analysis-4"><summary><strong>2.4. Global MSCI World state</strong></summary>
+
+<div class="math-display">$$L_t^G=L_{\mathrm{MSCI},t},\qquad g_t=\mathbf1\{L_t^G\ge1.3\}.$$</div><p>The global signal uses MSCI World with the same two-method aggregation. Since its possible levels are 1, 1.5 and 2, either method voting stress is sufficient at threshold 1.3. Both regions are equity markets: the bond-specific threshold 1.5 from the systemic-risk paper is not mechanically relabelled as a global-equity rule. Threshold sensitivity is reported below.</p><details markdown="1"><summary><strong>Figure 2.d. MSCI World returns, inferred global stress and model probabilities</strong></summary>
+
+<img loading="lazy" src="figures/market_analysis/global_hmm_probabilities.png?v=6afd527a7b5f" alt="MSCI World returns, inferred global stress and model probabilities">
+
+</details>
+
+</details><details markdown="1" id="market-analysis-5"><summary><strong>2.5. Four combined market regimes</strong></summary>
+
+<div class="math-display">$$R_t=1+b_t+2g_t\in\{1,2,3,4\}.$$</div><p>The four states combine a local Baltic condition with a global MSCI World condition. This changes the economic interpretation of the original stock/bond split; it is not a claim that global equities behave like bonds.</p><details markdown="1" open><summary><strong>Table 2.e. Meaning of the four Baltic/global regimes</strong></summary>
+
+<table class="dataframe research-table market-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Regime</th>
+      <th>Baltic market</th>
+      <th>Global market</th>
+      <th>Meaning</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>No stress</td>
+      <td>No stress</td>
+      <td>R1: both calm</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Stress</td>
+      <td>No stress</td>
+      <td>R2: Baltic stress only</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>No stress</td>
+      <td>Stress</td>
+      <td>R3: global stress only</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Stress</td>
+      <td>Stress</td>
+      <td>R4: both stressed</td>
+    </tr>
+  </tbody>
+</table>
+
+</details><details markdown="1"><summary><strong>Figure 2.e. Combined regimes over the full history and latest 252 observations</strong></summary>
+
+<img loading="lazy" src="figures/market_analysis/four_market_regimes.png?v=b08fed7d2861" alt="Combined regimes over the full history and latest 252 observations">
+
+</details><details markdown="1"><summary><strong>Table 2.f. Regime frequency, spells and model-implied long-run characteristics</strong></summary>
+
+<table class="dataframe research-table market-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>regime</th>
+      <th>label</th>
+      <th>observations</th>
+      <th>empirical_share</th>
+      <th>stationary_probability</th>
+      <th>persistence</th>
+      <th>expected_sojourn</th>
+      <th>mean_recurrence</th>
+      <th>episodes</th>
+      <th>observed_mean_run</th>
+      <th>longest_run</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Both calm</td>
+      <td>3076</td>
+      <td>0.6386</td>
+      <td>0.6385</td>
+      <td>0.9629</td>
+      <td>26.9737</td>
+      <td>1.5662</td>
+      <td>115</td>
+      <td>26.7478</td>
+      <td>270</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Baltic stress only</td>
+      <td>645</td>
+      <td>0.1339</td>
+      <td>0.1339</td>
+      <td>0.8682</td>
+      <td>7.5882</td>
+      <td>7.4667</td>
+      <td>85</td>
+      <td>7.5882</td>
+      <td>111</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Global stress only</td>
+      <td>560</td>
+      <td>0.1163</td>
+      <td>0.1163</td>
+      <td>0.8732</td>
+      <td>7.8873</td>
+      <td>8.6000</td>
+      <td>71</td>
+      <td>7.8873</td>
+      <td>58</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Both stressed</td>
+      <td>536</td>
+      <td>0.1113</td>
+      <td>0.1113</td>
+      <td>0.9160</td>
+      <td>11.9111</td>
+      <td>8.9851</td>
+      <td>45</td>
+      <td>11.9111</td>
+      <td>139</td>
+    </tr>
+  </tbody>
+</table>
+
+</details><details markdown="1"><summary><strong>Dated regime episodes: start, end and length</strong></summary>
+
+<table class="dataframe research-table market-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>regime</th>
+      <th>start</th>
+      <th>end</th>
+      <th>observations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>2007-01-04</td>
+      <td>2007-01-11</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2007-01-12</td>
+      <td>2007-01-18</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2007-01-19</td>
+      <td>2007-01-30</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2007-01-31</td>
+      <td>2007-02-26</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2007-02-27</td>
+      <td>2007-03-07</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2007-03-08</td>
+      <td>2007-03-09</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2007-03-13</td>
+      <td>2007-03-13</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2007-03-14</td>
+      <td>2007-03-22</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2007-03-23</td>
+      <td>2007-04-05</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2007-04-11</td>
+      <td>2007-04-23</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2007-04-24</td>
+      <td>2007-04-24</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2007-04-25</td>
+      <td>2007-05-09</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2007-05-10</td>
+      <td>2007-06-18</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2007-06-19</td>
+      <td>2007-07-11</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2007-07-12</td>
+      <td>2007-07-23</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2007-07-24</td>
+      <td>2007-07-26</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2007-07-27</td>
+      <td>2007-08-02</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2007-08-03</td>
+      <td>2007-08-09</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2007-08-10</td>
+      <td>2007-08-21</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2007-08-22</td>
+      <td>2007-09-10</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2007-09-11</td>
+      <td>2007-10-09</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2007-10-10</td>
+      <td>2007-10-15</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2007-10-16</td>
+      <td>2007-10-29</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2007-10-30</td>
+      <td>2007-10-30</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2007-10-31</td>
+      <td>2007-12-06</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2007-12-07</td>
+      <td>2007-12-18</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2007-12-19</td>
+      <td>2007-12-27</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2007-12-28</td>
+      <td>2008-01-09</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2008-01-10</td>
+      <td>2008-02-06</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2008-02-07</td>
+      <td>2008-02-19</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2008-02-20</td>
+      <td>2008-02-25</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2008-02-26</td>
+      <td>2008-02-26</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2008-02-27</td>
+      <td>2008-03-26</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2008-03-27</td>
+      <td>2008-03-28</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2008-03-31</td>
+      <td>2008-04-01</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2008-04-02</td>
+      <td>2008-04-02</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2008-04-03</td>
+      <td>2008-04-03</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2008-04-04</td>
+      <td>2008-04-08</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2008-04-09</td>
+      <td>2008-04-10</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2008-04-11</td>
+      <td>2008-04-18</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2008-04-21</td>
+      <td>2008-04-21</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2008-04-22</td>
+      <td>2008-04-25</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2008-04-28</td>
+      <td>2008-05-08</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2008-05-09</td>
+      <td>2008-05-16</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2008-05-19</td>
+      <td>2008-05-19</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2008-05-20</td>
+      <td>2008-05-23</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2008-05-26</td>
+      <td>2008-05-30</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2008-06-02</td>
+      <td>2008-06-05</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2008-06-06</td>
+      <td>2008-07-02</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2008-07-03</td>
+      <td>2008-08-01</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2008-08-04</td>
+      <td>2008-08-08</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2008-08-11</td>
+      <td>2008-08-11</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2008-08-12</td>
+      <td>2008-09-03</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2008-09-04</td>
+      <td>2009-04-02</td>
+      <td>139</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2009-04-03</td>
+      <td>2009-04-06</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2009-04-07</td>
+      <td>2009-04-21</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2009-04-22</td>
+      <td>2009-04-27</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2009-04-28</td>
+      <td>2009-06-01</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2009-06-02</td>
+      <td>2009-09-30</td>
+      <td>82</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2009-10-01</td>
+      <td>2009-10-02</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2009-10-05</td>
+      <td>2010-03-22</td>
+      <td>111</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2010-03-23</td>
+      <td>2010-04-01</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2010-04-06</td>
+      <td>2010-04-26</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2010-04-27</td>
+      <td>2010-06-10</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2010-06-11</td>
+      <td>2010-06-21</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2010-06-22</td>
+      <td>2010-07-15</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2010-07-16</td>
+      <td>2010-07-19</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2010-07-20</td>
+      <td>2010-07-28</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2010-07-29</td>
+      <td>2010-08-09</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2010-08-10</td>
+      <td>2010-08-18</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2010-08-19</td>
+      <td>2010-09-02</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2010-09-03</td>
+      <td>2010-09-21</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2010-09-22</td>
+      <td>2010-09-22</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2010-09-23</td>
+      <td>2010-09-24</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2010-09-27</td>
+      <td>2010-09-27</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2010-09-28</td>
+      <td>2010-10-07</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2010-10-08</td>
+      <td>2010-10-13</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2010-10-14</td>
+      <td>2010-10-18</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2010-10-19</td>
+      <td>2010-10-19</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2010-10-20</td>
+      <td>2010-10-26</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2010-10-27</td>
+      <td>2010-10-28</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2010-10-29</td>
+      <td>2010-10-29</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2010-11-02</td>
+      <td>2010-12-09</td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2010-12-10</td>
+      <td>2010-12-29</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2010-12-30</td>
+      <td>2011-01-06</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2011-01-07</td>
+      <td>2011-01-18</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2011-01-19</td>
+      <td>2011-01-26</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2011-01-27</td>
+      <td>2011-02-25</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2011-02-28</td>
+      <td>2011-03-02</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2011-03-03</td>
+      <td>2011-03-08</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2011-03-09</td>
+      <td>2011-03-16</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2011-03-17</td>
+      <td>2011-03-30</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2011-03-31</td>
+      <td>2011-04-15</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2011-04-18</td>
+      <td>2011-04-19</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2011-04-20</td>
+      <td>2011-05-06</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2011-05-09</td>
+      <td>2011-05-09</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2011-05-10</td>
+      <td>2011-05-20</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2011-05-23</td>
+      <td>2011-05-24</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2011-05-25</td>
+      <td>2011-05-31</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2011-06-01</td>
+      <td>2011-06-06</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2011-06-07</td>
+      <td>2011-06-27</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2011-06-28</td>
+      <td>2011-07-12</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2011-07-13</td>
+      <td>2011-07-21</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2011-07-22</td>
+      <td>2011-07-22</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2011-07-25</td>
+      <td>2011-07-28</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2011-07-29</td>
+      <td>2011-08-01</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2011-08-02</td>
+      <td>2011-09-09</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2011-09-12</td>
+      <td>2011-09-16</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2011-09-19</td>
+      <td>2011-10-10</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2011-10-11</td>
+      <td>2011-10-20</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2011-10-21</td>
+      <td>2011-11-30</td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2011-12-01</td>
+      <td>2011-12-01</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2011-12-02</td>
+      <td>2011-12-29</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2011-12-30</td>
+      <td>2012-01-04</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2012-01-05</td>
+      <td>2012-01-13</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2012-01-16</td>
+      <td>2012-01-17</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2012-01-18</td>
+      <td>2012-02-03</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2012-02-06</td>
+      <td>2012-02-13</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2012-02-14</td>
+      <td>2012-04-05</td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2012-04-10</td>
+      <td>2012-04-10</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2012-04-11</td>
+      <td>2012-04-27</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2012-05-02</td>
+      <td>2012-05-21</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2012-05-22</td>
+      <td>2012-05-22</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2012-05-23</td>
+      <td>2012-05-23</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2012-05-24</td>
+      <td>2012-05-31</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2012-06-01</td>
+      <td>2012-06-06</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2012-06-07</td>
+      <td>2012-07-20</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2012-07-23</td>
+      <td>2012-07-24</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2012-07-25</td>
+      <td>2012-12-07</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2012-12-10</td>
+      <td>2012-12-17</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2012-12-18</td>
+      <td>2012-12-27</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2012-12-28</td>
+      <td>2013-01-03</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2013-01-04</td>
+      <td>2013-01-07</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2013-01-08</td>
+      <td>2013-02-04</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2013-02-05</td>
+      <td>2013-02-05</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2013-02-06</td>
+      <td>2013-03-07</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2013-03-08</td>
+      <td>2013-03-14</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2013-03-15</td>
+      <td>2013-04-17</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2013-04-18</td>
+      <td>2013-04-23</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2013-04-24</td>
+      <td>2013-04-24</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2013-04-25</td>
+      <td>2013-05-02</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2013-05-03</td>
+      <td>2013-05-31</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2013-06-03</td>
+      <td>2013-06-03</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2013-06-04</td>
+      <td>2013-12-10</td>
+      <td>131</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2013-12-11</td>
+      <td>2013-12-16</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2013-12-17</td>
+      <td>2013-12-20</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2013-12-27</td>
+      <td>2014-01-02</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2014-01-03</td>
+      <td>2014-01-22</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2014-01-23</td>
+      <td>2014-01-27</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2014-01-28</td>
+      <td>2014-02-28</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2014-03-03</td>
+      <td>2014-03-24</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2014-03-25</td>
+      <td>2014-05-27</td>
+      <td>41</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2014-05-28</td>
+      <td>2014-06-03</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2014-06-04</td>
+      <td>2014-08-06</td>
+      <td>44</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2014-08-07</td>
+      <td>2014-08-12</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2014-08-13</td>
+      <td>2014-10-01</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2014-10-02</td>
+      <td>2014-10-13</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2014-10-14</td>
+      <td>2014-10-17</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2014-10-20</td>
+      <td>2014-10-21</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2014-10-22</td>
+      <td>2014-12-03</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2014-12-04</td>
+      <td>2014-12-11</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2014-12-12</td>
+      <td>2014-12-16</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2014-12-17</td>
+      <td>2015-01-19</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2015-01-20</td>
+      <td>2015-01-22</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2015-01-23</td>
+      <td>2015-01-27</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2015-01-28</td>
+      <td>2015-04-27</td>
+      <td>59</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2015-04-28</td>
+      <td>2015-05-06</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2015-05-07</td>
+      <td>2015-05-08</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2015-05-11</td>
+      <td>2015-05-11</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2015-05-12</td>
+      <td>2015-06-19</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2015-06-25</td>
+      <td>2015-07-01</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2015-07-02</td>
+      <td>2015-07-15</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2015-07-16</td>
+      <td>2015-07-22</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2015-07-23</td>
+      <td>2015-07-29</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2015-07-30</td>
+      <td>2015-08-06</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2015-08-07</td>
+      <td>2015-08-19</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2015-08-21</td>
+      <td>2015-08-27</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2015-08-28</td>
+      <td>2015-10-06</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2015-10-07</td>
+      <td>2015-10-14</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2015-10-15</td>
+      <td>2015-10-23</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2015-10-26</td>
+      <td>2015-12-02</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2015-12-03</td>
+      <td>2016-03-01</td>
+      <td>58</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2016-03-02</td>
+      <td>2016-03-03</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2016-03-04</td>
+      <td>2016-03-14</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2016-03-15</td>
+      <td>2016-04-04</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2016-04-05</td>
+      <td>2016-04-05</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2016-04-06</td>
+      <td>2016-04-25</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2016-04-26</td>
+      <td>2016-04-26</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2016-04-27</td>
+      <td>2016-06-15</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2016-06-16</td>
+      <td>2016-06-22</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2016-06-27</td>
+      <td>2016-06-29</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2016-06-30</td>
+      <td>2016-06-30</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2016-07-01</td>
+      <td>2016-08-10</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2016-08-11</td>
+      <td>2016-08-12</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2016-08-16</td>
+      <td>2016-10-31</td>
+      <td>55</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2016-11-02</td>
+      <td>2016-11-07</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2016-11-08</td>
+      <td>2017-12-11</td>
+      <td>270</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2017-12-12</td>
+      <td>2017-12-13</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2017-12-14</td>
+      <td>2018-01-30</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2018-01-31</td>
+      <td>2018-02-02</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2018-02-05</td>
+      <td>2018-02-08</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2018-02-09</td>
+      <td>2018-02-09</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2018-02-12</td>
+      <td>2018-03-16</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2018-03-19</td>
+      <td>2018-03-23</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2018-03-26</td>
+      <td>2018-03-26</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2018-03-27</td>
+      <td>2018-03-27</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2018-03-28</td>
+      <td>2018-10-08</td>
+      <td>128</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2018-10-09</td>
+      <td>2018-10-09</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2018-10-10</td>
+      <td>2018-10-15</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2018-10-16</td>
+      <td>2018-10-22</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2018-10-23</td>
+      <td>2018-10-25</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2018-10-26</td>
+      <td>2018-10-29</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2018-10-30</td>
+      <td>2018-11-15</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2018-11-16</td>
+      <td>2019-01-04</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2019-01-07</td>
+      <td>2019-08-01</td>
+      <td>142</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2019-08-02</td>
+      <td>2019-08-23</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2019-08-26</td>
+      <td>2020-02-20</td>
+      <td>122</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2020-02-21</td>
+      <td>2020-02-21</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2020-02-25</td>
+      <td>2020-04-22</td>
+      <td>39</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2020-04-23</td>
+      <td>2020-05-20</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2020-05-22</td>
+      <td>2020-06-02</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2020-06-03</td>
+      <td>2020-06-17</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2020-06-18</td>
+      <td>2020-06-18</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2020-06-19</td>
+      <td>2020-06-25</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2020-06-26</td>
+      <td>2020-09-01</td>
+      <td>46</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2020-09-02</td>
+      <td>2020-09-10</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2020-09-11</td>
+      <td>2020-10-23</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2020-10-26</td>
+      <td>2020-11-06</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2020-11-09</td>
+      <td>2020-11-10</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2020-11-11</td>
+      <td>2020-11-12</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2020-11-13</td>
+      <td>2020-11-24</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2020-11-25</td>
+      <td>2020-12-03</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2020-12-04</td>
+      <td>2020-12-18</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2020-12-21</td>
+      <td>2021-01-07</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2021-01-08</td>
+      <td>2021-01-26</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2021-01-27</td>
+      <td>2021-02-02</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2021-02-03</td>
+      <td>2021-02-08</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2021-02-09</td>
+      <td>2021-02-10</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2021-02-11</td>
+      <td>2021-02-23</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2021-02-25</td>
+      <td>2021-03-05</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2021-03-08</td>
+      <td>2021-04-01</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2021-04-06</td>
+      <td>2021-04-15</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2021-04-16</td>
+      <td>2021-05-18</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2021-05-19</td>
+      <td>2021-05-24</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2021-05-25</td>
+      <td>2021-07-30</td>
+      <td>45</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2021-08-02</td>
+      <td>2021-08-11</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2021-08-12</td>
+      <td>2021-08-23</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2021-08-24</td>
+      <td>2021-10-22</td>
+      <td>44</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2021-10-25</td>
+      <td>2021-11-25</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2021-11-26</td>
+      <td>2021-12-01</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2021-12-02</td>
+      <td>2021-12-08</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2021-12-09</td>
+      <td>2021-12-17</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2021-12-20</td>
+      <td>2021-12-21</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2021-12-22</td>
+      <td>2022-01-03</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2022-01-04</td>
+      <td>2022-01-04</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2022-01-05</td>
+      <td>2022-01-17</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2022-01-18</td>
+      <td>2022-01-20</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2022-01-21</td>
+      <td>2022-02-01</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2022-02-02</td>
+      <td>2022-02-11</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2022-02-14</td>
+      <td>2022-03-17</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2022-03-18</td>
+      <td>2022-03-18</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2022-03-21</td>
+      <td>2022-04-20</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2022-04-21</td>
+      <td>2022-05-05</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2022-05-06</td>
+      <td>2022-05-12</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2022-05-13</td>
+      <td>2022-07-20</td>
+      <td>45</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2022-07-21</td>
+      <td>2022-08-05</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2022-08-08</td>
+      <td>2022-08-22</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2022-08-23</td>
+      <td>2022-08-23</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2022-08-24</td>
+      <td>2022-09-05</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2022-09-06</td>
+      <td>2022-09-08</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2022-09-09</td>
+      <td>2022-10-31</td>
+      <td>37</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2022-11-03</td>
+      <td>2022-11-04</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2022-11-07</td>
+      <td>2022-11-11</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2022-11-14</td>
+      <td>2022-11-25</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2022-11-28</td>
+      <td>2022-12-07</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2022-12-08</td>
+      <td>2022-12-12</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2022-12-13</td>
+      <td>2022-12-19</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2022-12-20</td>
+      <td>2023-03-07</td>
+      <td>53</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2023-03-08</td>
+      <td>2023-03-09</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2023-03-10</td>
+      <td>2023-03-14</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2023-03-15</td>
+      <td>2023-03-15</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2023-03-16</td>
+      <td>2023-09-26</td>
+      <td>130</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2023-09-27</td>
+      <td>2023-09-27</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2023-09-28</td>
+      <td>2023-10-31</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2023-11-03</td>
+      <td>2023-11-03</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2023-11-06</td>
+      <td>2024-01-02</td>
+      <td>38</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2024-01-03</td>
+      <td>2024-01-04</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2024-01-05</td>
+      <td>2024-07-23</td>
+      <td>135</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2024-07-24</td>
+      <td>2024-08-02</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2024-08-05</td>
+      <td>2024-08-06</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2024-08-07</td>
+      <td>2024-08-16</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2024-08-19</td>
+      <td>2024-10-30</td>
+      <td>52</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2024-10-31</td>
+      <td>2024-11-06</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2024-11-07</td>
+      <td>2024-12-27</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2025-01-02</td>
+      <td>2025-01-06</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2025-01-07</td>
+      <td>2025-02-06</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2025-02-07</td>
+      <td>2025-02-07</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2025-02-10</td>
+      <td>2025-02-26</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2025-02-27</td>
+      <td>2025-02-28</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2025-03-03</td>
+      <td>2025-03-05</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2025-03-06</td>
+      <td>2025-03-18</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2025-03-19</td>
+      <td>2025-03-25</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2025-03-26</td>
+      <td>2025-03-26</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2025-03-27</td>
+      <td>2025-04-10</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2025-04-11</td>
+      <td>2025-05-12</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2025-05-13</td>
+      <td>2025-07-31</td>
+      <td>55</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2025-08-01</td>
+      <td>2025-08-01</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2025-08-04</td>
+      <td>2025-10-09</td>
+      <td>47</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2025-10-10</td>
+      <td>2025-10-13</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2025-10-14</td>
+      <td>2025-12-30</td>
+      <td>51</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2026-01-02</td>
+      <td>2026-01-05</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2026-01-06</td>
+      <td>2026-01-19</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2026-01-20</td>
+      <td>2026-01-20</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2026-01-21</td>
+      <td>2026-03-12</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2026-03-13</td>
+      <td>2026-03-13</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2026-03-16</td>
+      <td>2026-10-30</td>
+      <td>156</td>
+    </tr>
+  </tbody>
+</table>
+
+</details>
+
+</details><details markdown="1" id="market-analysis-6"><summary><strong>2.6. Markov transition matrix and regime characteristics</strong></summary>
+
+<div class="math-display">$$\pi=\pi\widehat P,\quad\sum_i\pi_i=1,\quad\mathbb E[D_i]=\frac1{1-\widehat P_{ii}},\quad\mathbb E[T_i^+]=\frac1{\pi_i},\\m_{jj}=0,\quad m_{ij}=1+\sum_{k\ne j}\widehat P_{ik}m_{kj}\quad(i\ne j).$$</div><div class="math-display">$$N_{ij}=\sum_{t=1}^{T-1}\mathbf1\{R_t=i,R_{t+1}=j\},\qquad\widehat P_{ij}=\frac{N_{ij}}{\sum_kN_{ik}},\quad\sum_j\widehat P_{ij}=1.$$</div><p>Rows are the current regime and columns the next regime. All four states are represented; no transition row is fabricated. This joint matrix is estimated from the combined observed regime sequence, not from a Kronecker product assuming independent Baltic/global chains.</p><details markdown="1"><summary><strong>Table 2.g. Observed regime-to-regime transition counts</strong></summary>
+
+<table class="dataframe research-table market-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>From regime</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>2961</td>
+      <td>68</td>
+      <td>42</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>70</td>
+      <td>560</td>
+      <td>1</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>44</td>
+      <td>0</td>
+      <td>489</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>0</td>
+      <td>17</td>
+      <td>28</td>
+      <td>491</td>
+    </tr>
+  </tbody>
+</table>
+
+</details><details markdown="1" open><summary><strong>Table 2.h. Transition probabilities and marginal 95% intervals</strong></summary>
+
+<table class="dataframe research-table market-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>From regime</th>
+      <th>To R1</th>
+      <th>To R2</th>
+      <th>To R3</th>
+      <th>To R4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>R1</td>
+      <td>96.2927% [95.5631%, 96.9324%]</td>
+      <td>2.2114% [1.7212%, 2.7951%]</td>
+      <td>1.3659% [0.9861%, 1.8418%]</td>
+      <td>0.1301% [0.0355%, 0.3327%]</td>
+    </tr>
+    <tr>
+      <td>R2</td>
+      <td>10.8527% [8.5584%, 13.5123%]</td>
+      <td>86.8217% [83.9647%, 89.3363%]</td>
+      <td>0.1550% [0.0039%, 0.8608%]</td>
+      <td>2.1705% [1.1916%, 3.6150%]</td>
+    </tr>
+    <tr>
+      <td>R3</td>
+      <td>7.8571% [5.7668%, 10.4045%]</td>
+      <td>0.0000% [0.0000%, 0.6566%]</td>
+      <td>87.3214% [84.2782%, 89.9636%]</td>
+      <td>4.8214% [3.2011%, 6.9377%]</td>
+    </tr>
+    <tr>
+      <td>R4</td>
+      <td>0.0000% [0.0000%, 0.6859%]</td>
+      <td>3.1716% [1.8582%, 5.0296%]</td>
+      <td>5.2239% [3.4989%, 7.4617%]</td>
+      <td>91.6045% [88.9273%, 93.8105%]</td>
+    </tr>
+  </tbody>
+</table>
+
+</details><p>Intervals use native R <code>binom.test()</code>, conditional on decoded state labels. They are marginal intervals, not simultaneous confidence bands, and exclude HMM-estimation uncertainty. An unobserved transition has estimate zero but a positive upper confidence bound; zero is not proof that the switch is impossible.</p><details markdown="1"><summary><strong>Figure 2.f. Transition matrix and directed four-regime network</strong></summary>
+
+<img loading="lazy" src="figures/market_analysis/transition_matrix_and_network.png?v=6662f931559b" alt="Transition matrix and directed four-regime network">
+
+</details><details markdown="1"><summary><strong>Table 2.i. Persistence, mean sojourn, stationary share and recurrence</strong></summary>
+
+<table class="dataframe research-table market-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>regime</th>
+      <th>stationary_probability</th>
+      <th>persistence</th>
+      <th>expected_sojourn</th>
+      <th>mean_recurrence</th>
+      <th>observed_mean_run</th>
+      <th>longest_run</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>0.6385</td>
+      <td>0.9629</td>
+      <td>26.9737</td>
+      <td>1.5662</td>
+      <td>26.7478</td>
+      <td>270</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>0.1339</td>
+      <td>0.8682</td>
+      <td>7.5882</td>
+      <td>7.4667</td>
+      <td>7.5882</td>
+      <td>111</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>0.1163</td>
+      <td>0.8732</td>
+      <td>7.8873</td>
+      <td>8.6000</td>
+      <td>7.8873</td>
+      <td>58</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>0.1113</td>
+      <td>0.9160</td>
+      <td>11.9111</td>
+      <td>8.9851</td>
+      <td>11.9111</td>
+      <td>139</td>
+    </tr>
+  </tbody>
+</table>
+
+</details><details markdown="1"><summary><strong>Table 2.j. Mean first-passage times between regimes</strong></summary>
+
+<table class="dataframe research-table market-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>From regime</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>0.00</td>
+      <td>49.39</td>
+      <td>72.33</td>
+      <td>124.81</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>12.45</td>
+      <td>0.00</td>
+      <td>73.70</td>
+      <td>111.38</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>18.61</td>
+      <td>56.36</td>
+      <td>0.00</td>
+      <td>85.24</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>28.19</td>
+      <td>46.98</td>
+      <td>39.75</td>
+      <td>0.00</td>
+    </tr>
+  </tbody>
+</table>
+
+</details><p><strong>Examples:</strong> R1 persistence is 96.29% per common observation; its model-implied mean spell is 26.97 steps. The fixed-matrix mean first passage R1→R4 is 124.81 steps; R4→R1 is 28.19. These are historical homogeneous-chain characteristics, not dates when a crisis or recovery must occur. Recurrence 1/π includes a return at the very next step when the state does not change; it is not the waiting time after leaving that state. The first-passage diagonal is zero, while recurrence is a separate quantity.</p><p>Higher persistence is useful when the regime is calm, but means longer stress when the regime is stressed. A higher model-implied R4 share means more frequent joint stress; a longer R1→R4 first-passage time means a longer model-implied wait for joint stress; a shorter R4→R1 time means faster return to calm. All such comparisons remain conditional on the fixed-matrix approximation.</p><details markdown="1"><summary><strong>Figure 2.g. Fixed-matrix regime probabilities at several horizons</strong></summary>
+
+<img loading="lazy" src="figures/market_analysis/regime_horizon_probabilities.png?v=c129e1fa67ea" alt="Fixed-matrix regime probabilities at several horizons">
+
+</details>
+
+</details><details markdown="1" id="market-analysis-7"><summary><strong>2.7. Diagnostics, time variation and held-out validation</strong></summary>
+
+<p><strong>First-order Markov check:</strong> conditional-on-label bootstrap p = 0.174. The first-order approximation is not rejected, which is not proof that aggregation of hidden chains is itself Markov.</p><p><strong>Time homogeneity is rejected:</strong> bootstrap p = 0.002. Transition patterns changed across the historical sample. The full-period matrix, stationary probabilities, first-passage times and fixed-P horizon curves are descriptive model characteristics, not validated invariant future probabilities. Recent-window estimates and historical blocks are provided to expose that change.</p><details markdown="1"><summary><strong>Table 2.k. Markov-property and time-homogeneity diagnostics</strong></summary>
+
+<table class="dataframe research-table market-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>test</th>
+      <th>statistic</th>
+      <th>p_value</th>
+      <th>bootstrap_replications</th>
+      <th>interpretation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>First-order Markov: native package chi-square</td>
+      <td>23.9857</td>
+      <td>0.5202</td>
+      <td>0</td>
+      <td>Approximate decoded-state diagnostic</td>
+    </tr>
+    <tr>
+      <td>First-order vs second-order: parametric bootstrap</td>
+      <td>26.6856</td>
+      <td>0.1740</td>
+      <td>499</td>
+      <td>Small p rejects the first-order approximation</td>
+    </tr>
+    <tr>
+      <td>Time-homogeneous transitions: four-block parametric bootstrap</td>
+      <td>144.1349</td>
+      <td>0.0020</td>
+      <td>499</td>
+      <td>Small p rejects constant transition probabilities across time</td>
+    </tr>
+  </tbody>
+</table>
+
+</details><details markdown="1"><summary><strong>Figure 2.h. Full-period, recent-window and historical-block transition matrices</strong></summary>
+
+<img loading="lazy" src="figures/market_analysis/transition_time_variation.png?v=eb811bd96e32" alt="Full-period, recent-window and historical-block transition matrices">
+
+</details><details markdown="1"><summary><strong>Table 2.l. All recent-window and historical-block transition estimates</strong></summary>
+
+<table class="dataframe research-table market-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>window</th>
+      <th>start</th>
+      <th>end</th>
+      <th>from</th>
+      <th>to</th>
+      <th>count</th>
+      <th>origin_transitions</th>
+      <th>probability</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Full history</td>
+      <td>2007-01-04</td>
+      <td>2026-10-30</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2961</td>
+      <td>3075</td>
+      <td>0.9629</td>
+    </tr>
+    <tr>
+      <td>Full history</td>
+      <td>2007-01-04</td>
+      <td>2026-10-30</td>
+      <td>1</td>
+      <td>2</td>
+      <td>68</td>
+      <td>3075</td>
+      <td>0.0221</td>
+    </tr>
+    <tr>
+      <td>Full history</td>
+      <td>2007-01-04</td>
+      <td>2026-10-30</td>
+      <td>1</td>
+      <td>3</td>
+      <td>42</td>
+      <td>3075</td>
+      <td>0.0137</td>
+    </tr>
+    <tr>
+      <td>Full history</td>
+      <td>2007-01-04</td>
+      <td>2026-10-30</td>
+      <td>1</td>
+      <td>4</td>
+      <td>4</td>
+      <td>3075</td>
+      <td>0.0013</td>
+    </tr>
+    <tr>
+      <td>Full history</td>
+      <td>2007-01-04</td>
+      <td>2026-10-30</td>
+      <td>2</td>
+      <td>1</td>
+      <td>70</td>
+      <td>645</td>
+      <td>0.1085</td>
+    </tr>
+    <tr>
+      <td>Full history</td>
+      <td>2007-01-04</td>
+      <td>2026-10-30</td>
+      <td>2</td>
+      <td>2</td>
+      <td>560</td>
+      <td>645</td>
+      <td>0.8682</td>
+    </tr>
+    <tr>
+      <td>Full history</td>
+      <td>2007-01-04</td>
+      <td>2026-10-30</td>
+      <td>2</td>
+      <td>3</td>
+      <td>1</td>
+      <td>645</td>
+      <td>0.0016</td>
+    </tr>
+    <tr>
+      <td>Full history</td>
+      <td>2007-01-04</td>
+      <td>2026-10-30</td>
+      <td>2</td>
+      <td>4</td>
+      <td>14</td>
+      <td>645</td>
+      <td>0.0217</td>
+    </tr>
+    <tr>
+      <td>Full history</td>
+      <td>2007-01-04</td>
+      <td>2026-10-30</td>
+      <td>3</td>
+      <td>1</td>
+      <td>44</td>
+      <td>560</td>
+      <td>0.0786</td>
+    </tr>
+    <tr>
+      <td>Full history</td>
+      <td>2007-01-04</td>
+      <td>2026-10-30</td>
+      <td>3</td>
+      <td>2</td>
+      <td>0</td>
+      <td>560</td>
+      <td>0.0000</td>
+    </tr>
+    <tr>
+      <td>Full history</td>
+      <td>2007-01-04</td>
+      <td>2026-10-30</td>
+      <td>3</td>
+      <td>3</td>
+      <td>489</td>
+      <td>560</td>
+      <td>0.8732</td>
+    </tr>
+    <tr>
+      <td>Full history</td>
+      <td>2007-01-04</td>
+      <td>2026-10-30</td>
+      <td>3</td>
+      <td>4</td>
+      <td>27</td>
+      <td>560</td>
+      <td>0.0482</td>
+    </tr>
+    <tr>
+      <td>Full history</td>
+      <td>2007-01-04</td>
+      <td>2026-10-30</td>
+      <td>4</td>
+      <td>1</td>
+      <td>0</td>
+      <td>536</td>
+      <td>0.0000</td>
+    </tr>
+    <tr>
+      <td>Full history</td>
+      <td>2007-01-04</td>
+      <td>2026-10-30</td>
+      <td>4</td>
+      <td>2</td>
+      <td>17</td>
+      <td>536</td>
+      <td>0.0317</td>
+    </tr>
+    <tr>
+      <td>Full history</td>
+      <td>2007-01-04</td>
+      <td>2026-10-30</td>
+      <td>4</td>
+      <td>3</td>
+      <td>28</td>
+      <td>536</td>
+      <td>0.0522</td>
+    </tr>
+    <tr>
+      <td>Full history</td>
+      <td>2007-01-04</td>
+      <td>2026-10-30</td>
+      <td>4</td>
+      <td>4</td>
+      <td>491</td>
+      <td>536</td>
+      <td>0.9160</td>
+    </tr>
+    <tr>
+      <td>Last 504 observations</td>
+      <td>2024-10-02</td>
+      <td>2026-10-30</td>
+      <td>1</td>
+      <td>1</td>
+      <td>435</td>
+      <td>445</td>
+      <td>0.9775</td>
+    </tr>
+    <tr>
+      <td>Last 504 observations</td>
+      <td>2024-10-02</td>
+      <td>2026-10-30</td>
+      <td>1</td>
+      <td>2</td>
+      <td>4</td>
+      <td>445</td>
+      <td>0.0090</td>
+    </tr>
+    <tr>
+      <td>Last 504 observations</td>
+      <td>2024-10-02</td>
+      <td>2026-10-30</td>
+      <td>1</td>
+      <td>3</td>
+      <td>6</td>
+      <td>445</td>
+      <td>0.0135</td>
+    </tr>
+    <tr>
+      <td>Last 504 observations</td>
+      <td>2024-10-02</td>
+      <td>2026-10-30</td>
+      <td>1</td>
+      <td>4</td>
+      <td>0</td>
+      <td>445</td>
+      <td>0.0000</td>
+    </tr>
+    <tr>
+      <td>Last 504 observations</td>
+      <td>2024-10-02</td>
+      <td>2026-10-30</td>
+      <td>2</td>
+      <td>1</td>
+      <td>4</td>
+      <td>7</td>
+      <td>0.5714</td>
+    </tr>
+    <tr>
+      <td>Last 504 observations</td>
+      <td>2024-10-02</td>
+      <td>2026-10-30</td>
+      <td>2</td>
+      <td>2</td>
+      <td>3</td>
+      <td>7</td>
+      <td>0.4286</td>
+    </tr>
+    <tr>
+      <td>Last 504 observations</td>
+      <td>2024-10-02</td>
+      <td>2026-10-30</td>
+      <td>2</td>
+      <td>3</td>
+      <td>0</td>
+      <td>7</td>
+      <td>0.0000</td>
+    </tr>
+    <tr>
+      <td>Last 504 observations</td>
+      <td>2024-10-02</td>
+      <td>2026-10-30</td>
+      <td>2</td>
+      <td>4</td>
+      <td>0</td>
+      <td>7</td>
+      <td>0.0000</td>
+    </tr>
+    <tr>
+      <td>Last 504 observations</td>
+      <td>2024-10-02</td>
+      <td>2026-10-30</td>
+      <td>3</td>
+      <td>1</td>
+      <td>6</td>
+      <td>37</td>
+      <td>0.1622</td>
+    </tr>
+    <tr>
+      <td>Last 504 observations</td>
+      <td>2024-10-02</td>
+      <td>2026-10-30</td>
+      <td>3</td>
+      <td>2</td>
+      <td>0</td>
+      <td>37</td>
+      <td>0.0000</td>
+    </tr>
+    <tr>
+      <td>Last 504 observations</td>
+      <td>2024-10-02</td>
+      <td>2026-10-30</td>
+      <td>3</td>
+      <td>3</td>
+      <td>29</td>
+      <td>37</td>
+      <td>0.7838</td>
+    </tr>
+    <tr>
+      <td>Last 504 observations</td>
+      <td>2024-10-02</td>
+      <td>2026-10-30</td>
+      <td>3</td>
+      <td>4</td>
+      <td>2</td>
+      <td>37</td>
+      <td>0.0541</td>
+    </tr>
+    <tr>
+      <td>Last 504 observations</td>
+      <td>2024-10-02</td>
+      <td>2026-10-30</td>
+      <td>4</td>
+      <td>1</td>
+      <td>0</td>
+      <td>14</td>
+      <td>0.0000</td>
+    </tr>
+    <tr>
+      <td>Last 504 observations</td>
+      <td>2024-10-02</td>
+      <td>2026-10-30</td>
+      <td>4</td>
+      <td>2</td>
+      <td>0</td>
+      <td>14</td>
+      <td>0.0000</td>
+    </tr>
+    <tr>
+      <td>Last 504 observations</td>
+      <td>2024-10-02</td>
+      <td>2026-10-30</td>
+      <td>4</td>
+      <td>3</td>
+      <td>2</td>
+      <td>14</td>
+      <td>0.1429</td>
+    </tr>
+    <tr>
+      <td>Last 504 observations</td>
+      <td>2024-10-02</td>
+      <td>2026-10-30</td>
+      <td>4</td>
+      <td>4</td>
+      <td>12</td>
+      <td>14</td>
+      <td>0.8571</td>
+    </tr>
+    <tr>
+      <td>Last 1260 observations</td>
+      <td>2021-09-03</td>
+      <td>2026-10-30</td>
+      <td>1</td>
+      <td>1</td>
+      <td>924</td>
+      <td>949</td>
+      <td>0.9737</td>
+    </tr>
+    <tr>
+      <td>Last 1260 observations</td>
+      <td>2021-09-03</td>
+      <td>2026-10-30</td>
+      <td>1</td>
+      <td>2</td>
+      <td>9</td>
+      <td>949</td>
+      <td>0.0095</td>
+    </tr>
+    <tr>
+      <td>Last 1260 observations</td>
+      <td>2021-09-03</td>
+      <td>2026-10-30</td>
+      <td>1</td>
+      <td>3</td>
+      <td>15</td>
+      <td>949</td>
+      <td>0.0158</td>
+    </tr>
+    <tr>
+      <td>Last 1260 observations</td>
+      <td>2021-09-03</td>
+      <td>2026-10-30</td>
+      <td>1</td>
+      <td>4</td>
+      <td>1</td>
+      <td>949</td>
+      <td>0.0011</td>
+    </tr>
+    <tr>
+      <td>Last 1260 observations</td>
+      <td>2021-09-03</td>
+      <td>2026-10-30</td>
+      <td>2</td>
+      <td>1</td>
+      <td>10</td>
+      <td>61</td>
+      <td>0.1639</td>
+    </tr>
+    <tr>
+      <td>Last 1260 observations</td>
+      <td>2021-09-03</td>
+      <td>2026-10-30</td>
+      <td>2</td>
+      <td>2</td>
+      <td>50</td>
+      <td>61</td>
+      <td>0.8197</td>
+    </tr>
+    <tr>
+      <td>Last 1260 observations</td>
+      <td>2021-09-03</td>
+      <td>2026-10-30</td>
+      <td>2</td>
+      <td>3</td>
+      <td>0</td>
+      <td>61</td>
+      <td>0.0000</td>
+    </tr>
+    <tr>
+      <td>Last 1260 observations</td>
+      <td>2021-09-03</td>
+      <td>2026-10-30</td>
+      <td>2</td>
+      <td>4</td>
+      <td>1</td>
+      <td>61</td>
+      <td>0.0164</td>
+    </tr>
+    <tr>
+      <td>Last 1260 observations</td>
+      <td>2021-09-03</td>
+      <td>2026-10-30</td>
+      <td>3</td>
+      <td>1</td>
+      <td>16</td>
+      <td>190</td>
+      <td>0.0842</td>
+    </tr>
+    <tr>
+      <td>Last 1260 observations</td>
+      <td>2021-09-03</td>
+      <td>2026-10-30</td>
+      <td>3</td>
+      <td>2</td>
+      <td>0</td>
+      <td>190</td>
+      <td>0.0000</td>
+    </tr>
+    <tr>
+      <td>Last 1260 observations</td>
+      <td>2021-09-03</td>
+      <td>2026-10-30</td>
+      <td>3</td>
+      <td>3</td>
+      <td>167</td>
+      <td>190</td>
+      <td>0.8789</td>
+    </tr>
+    <tr>
+      <td>Last 1260 observations</td>
+      <td>2021-09-03</td>
+      <td>2026-10-30</td>
+      <td>3</td>
+      <td>4</td>
+      <td>7</td>
+      <td>190</td>
+      <td>0.0368</td>
+    </tr>
+    <tr>
+      <td>Last 1260 observations</td>
+      <td>2021-09-03</td>
+      <td>2026-10-30</td>
+      <td>4</td>
+      <td>1</td>
+      <td>0</td>
+      <td>59</td>
+      <td>0.0000</td>
+    </tr>
+    <tr>
+      <td>Last 1260 observations</td>
+      <td>2021-09-03</td>
+      <td>2026-10-30</td>
+      <td>4</td>
+      <td>2</td>
+      <td>1</td>
+      <td>59</td>
+      <td>0.0169</td>
+    </tr>
+    <tr>
+      <td>Last 1260 observations</td>
+      <td>2021-09-03</td>
+      <td>2026-10-30</td>
+      <td>4</td>
+      <td>3</td>
+      <td>8</td>
+      <td>59</td>
+      <td>0.1356</td>
+    </tr>
+    <tr>
+      <td>Last 1260 observations</td>
+      <td>2021-09-03</td>
+      <td>2026-10-30</td>
+      <td>4</td>
+      <td>4</td>
+      <td>50</td>
+      <td>59</td>
+      <td>0.8475</td>
+    </tr>
+    <tr>
+      <td>Historical block 1</td>
+      <td>2007-01-04</td>
+      <td>2012-01-02</td>
+      <td>1</td>
+      <td>1</td>
+      <td>256</td>
+      <td>292</td>
+      <td>0.8767</td>
+    </tr>
+    <tr>
+      <td>Historical block 1</td>
+      <td>2007-01-04</td>
+      <td>2012-01-02</td>
+      <td>1</td>
+      <td>2</td>
+      <td>29</td>
+      <td>292</td>
+      <td>0.0993</td>
+    </tr>
+    <tr>
+      <td>Historical block 1</td>
+      <td>2007-01-04</td>
+      <td>2012-01-02</td>
+      <td>1</td>
+      <td>3</td>
+      <td>6</td>
+      <td>292</td>
+      <td>0.0205</td>
+    </tr>
+    <tr>
+      <td>Historical block 1</td>
+      <td>2007-01-04</td>
+      <td>2012-01-02</td>
+      <td>1</td>
+      <td>4</td>
+      <td>1</td>
+      <td>292</td>
+      <td>0.0034</td>
+    </tr>
+    <tr>
+      <td>Historical block 1</td>
+      <td>2007-01-04</td>
+      <td>2012-01-02</td>
+      <td>2</td>
+      <td>1</td>
+      <td>30</td>
+      <td>444</td>
+      <td>0.0676</td>
+    </tr>
+    <tr>
+      <td>Historical block 1</td>
+      <td>2007-01-04</td>
+      <td>2012-01-02</td>
+      <td>2</td>
+      <td>2</td>
+      <td>402</td>
+      <td>444</td>
+      <td>0.9054</td>
+    </tr>
+    <tr>
+      <td>Historical block 1</td>
+      <td>2007-01-04</td>
+      <td>2012-01-02</td>
+      <td>2</td>
+      <td>3</td>
+      <td>1</td>
+      <td>444</td>
+      <td>0.0023</td>
+    </tr>
+    <tr>
+      <td>Historical block 1</td>
+      <td>2007-01-04</td>
+      <td>2012-01-02</td>
+      <td>2</td>
+      <td>4</td>
+      <td>11</td>
+      <td>444</td>
+      <td>0.0248</td>
+    </tr>
+    <tr>
+      <td>Historical block 1</td>
+      <td>2007-01-04</td>
+      <td>2012-01-02</td>
+      <td>3</td>
+      <td>1</td>
+      <td>5</td>
+      <td>73</td>
+      <td>0.0685</td>
+    </tr>
+    <tr>
+      <td>Historical block 1</td>
+      <td>2007-01-04</td>
+      <td>2012-01-02</td>
+      <td>3</td>
+      <td>2</td>
+      <td>0</td>
+      <td>73</td>
+      <td>0.0000</td>
+    </tr>
+    <tr>
+      <td>Historical block 1</td>
+      <td>2007-01-04</td>
+      <td>2012-01-02</td>
+      <td>3</td>
+      <td>3</td>
+      <td>59</td>
+      <td>73</td>
+      <td>0.8082</td>
+    </tr>
+    <tr>
+      <td>Historical block 1</td>
+      <td>2007-01-04</td>
+      <td>2012-01-02</td>
+      <td>3</td>
+      <td>4</td>
+      <td>9</td>
+      <td>73</td>
+      <td>0.1233</td>
+    </tr>
+    <tr>
+      <td>Historical block 1</td>
+      <td>2007-01-04</td>
+      <td>2012-01-02</td>
+      <td>4</td>
+      <td>1</td>
+      <td>0</td>
+      <td>394</td>
+      <td>0.0000</td>
+    </tr>
+    <tr>
+      <td>Historical block 1</td>
+      <td>2007-01-04</td>
+      <td>2012-01-02</td>
+      <td>4</td>
+      <td>2</td>
+      <td>14</td>
+      <td>394</td>
+      <td>0.0355</td>
+    </tr>
+    <tr>
+      <td>Historical block 1</td>
+      <td>2007-01-04</td>
+      <td>2012-01-02</td>
+      <td>4</td>
+      <td>3</td>
+      <td>7</td>
+      <td>394</td>
+      <td>0.0178</td>
+    </tr>
+    <tr>
+      <td>Historical block 1</td>
+      <td>2007-01-04</td>
+      <td>2012-01-02</td>
+      <td>4</td>
+      <td>4</td>
+      <td>373</td>
+      <td>394</td>
+      <td>0.9467</td>
+    </tr>
+    <tr>
+      <td>Historical block 2</td>
+      <td>2012-01-03</td>
+      <td>2016-12-14</td>
+      <td>1</td>
+      <td>1</td>
+      <td>877</td>
+      <td>910</td>
+      <td>0.9637</td>
+    </tr>
+    <tr>
+      <td>Historical block 2</td>
+      <td>2012-01-03</td>
+      <td>2016-12-14</td>
+      <td>1</td>
+      <td>2</td>
+      <td>20</td>
+      <td>910</td>
+      <td>0.0220</td>
+    </tr>
+    <tr>
+      <td>Historical block 2</td>
+      <td>2012-01-03</td>
+      <td>2016-12-14</td>
+      <td>1</td>
+      <td>3</td>
+      <td>11</td>
+      <td>910</td>
+      <td>0.0121</td>
+    </tr>
+    <tr>
+      <td>Historical block 2</td>
+      <td>2012-01-03</td>
+      <td>2016-12-14</td>
+      <td>1</td>
+      <td>4</td>
+      <td>2</td>
+      <td>910</td>
+      <td>0.0022</td>
+    </tr>
+    <tr>
+      <td>Historical block 2</td>
+      <td>2012-01-03</td>
+      <td>2016-12-14</td>
+      <td>2</td>
+      <td>1</td>
+      <td>21</td>
+      <td>86</td>
+      <td>0.2442</td>
+    </tr>
+    <tr>
+      <td>Historical block 2</td>
+      <td>2012-01-03</td>
+      <td>2016-12-14</td>
+      <td>2</td>
+      <td>2</td>
+      <td>64</td>
+      <td>86</td>
+      <td>0.7442</td>
+    </tr>
+    <tr>
+      <td>Historical block 2</td>
+      <td>2012-01-03</td>
+      <td>2016-12-14</td>
+      <td>2</td>
+      <td>3</td>
+      <td>0</td>
+      <td>86</td>
+      <td>0.0000</td>
+    </tr>
+    <tr>
+      <td>Historical block 2</td>
+      <td>2012-01-03</td>
+      <td>2016-12-14</td>
+      <td>2</td>
+      <td>4</td>
+      <td>1</td>
+      <td>86</td>
+      <td>0.0116</td>
+    </tr>
+    <tr>
+      <td>Historical block 2</td>
+      <td>2012-01-03</td>
+      <td>2016-12-14</td>
+      <td>3</td>
+      <td>1</td>
+      <td>13</td>
+      <td>177</td>
+      <td>0.0734</td>
+    </tr>
+    <tr>
+      <td>Historical block 2</td>
+      <td>2012-01-03</td>
+      <td>2016-12-14</td>
+      <td>3</td>
+      <td>2</td>
+      <td>0</td>
+      <td>177</td>
+      <td>0.0000</td>
+    </tr>
+    <tr>
+      <td>Historical block 2</td>
+      <td>2012-01-03</td>
+      <td>2016-12-14</td>
+      <td>3</td>
+      <td>3</td>
+      <td>158</td>
+      <td>177</td>
+      <td>0.8927</td>
+    </tr>
+    <tr>
+      <td>Historical block 2</td>
+      <td>2012-01-03</td>
+      <td>2016-12-14</td>
+      <td>3</td>
+      <td>4</td>
+      <td>6</td>
+      <td>177</td>
+      <td>0.0339</td>
+    </tr>
+    <tr>
+      <td>Historical block 2</td>
+      <td>2012-01-03</td>
+      <td>2016-12-14</td>
+      <td>4</td>
+      <td>1</td>
+      <td>0</td>
+      <td>30</td>
+      <td>0.0000</td>
+    </tr>
+    <tr>
+      <td>Historical block 2</td>
+      <td>2012-01-03</td>
+      <td>2016-12-14</td>
+      <td>4</td>
+      <td>2</td>
+      <td>1</td>
+      <td>30</td>
+      <td>0.0333</td>
+    </tr>
+    <tr>
+      <td>Historical block 2</td>
+      <td>2012-01-03</td>
+      <td>2016-12-14</td>
+      <td>4</td>
+      <td>3</td>
+      <td>8</td>
+      <td>30</td>
+      <td>0.2667</td>
+    </tr>
+    <tr>
+      <td>Historical block 2</td>
+      <td>2012-01-03</td>
+      <td>2016-12-14</td>
+      <td>4</td>
+      <td>4</td>
+      <td>21</td>
+      <td>30</td>
+      <td>0.7000</td>
+    </tr>
+    <tr>
+      <td>Historical block 3</td>
+      <td>2016-12-15</td>
+      <td>2021-11-23</td>
+      <td>1</td>
+      <td>1</td>
+      <td>921</td>
+      <td>941</td>
+      <td>0.9787</td>
+    </tr>
+    <tr>
+      <td>Historical block 3</td>
+      <td>2016-12-15</td>
+      <td>2021-11-23</td>
+      <td>1</td>
+      <td>2</td>
+      <td>10</td>
+      <td>941</td>
+      <td>0.0106</td>
+    </tr>
+    <tr>
+      <td>Historical block 3</td>
+      <td>2016-12-15</td>
+      <td>2021-11-23</td>
+      <td>1</td>
+      <td>3</td>
+      <td>10</td>
+      <td>941</td>
+      <td>0.0106</td>
+    </tr>
+    <tr>
+      <td>Historical block 3</td>
+      <td>2016-12-15</td>
+      <td>2021-11-23</td>
+      <td>1</td>
+      <td>4</td>
+      <td>0</td>
+      <td>941</td>
+      <td>0.0000</td>
+    </tr>
+    <tr>
+      <td>Historical block 3</td>
+      <td>2016-12-15</td>
+      <td>2021-11-23</td>
+      <td>2</td>
+      <td>1</td>
+      <td>10</td>
+      <td>89</td>
+      <td>0.1124</td>
+    </tr>
+    <tr>
+      <td>Historical block 3</td>
+      <td>2016-12-15</td>
+      <td>2021-11-23</td>
+      <td>2</td>
+      <td>2</td>
+      <td>78</td>
+      <td>89</td>
+      <td>0.8764</td>
+    </tr>
+    <tr>
+      <td>Historical block 3</td>
+      <td>2016-12-15</td>
+      <td>2021-11-23</td>
+      <td>2</td>
+      <td>3</td>
+      <td>0</td>
+      <td>89</td>
+      <td>0.0000</td>
+    </tr>
+    <tr>
+      <td>Historical block 3</td>
+      <td>2016-12-15</td>
+      <td>2021-11-23</td>
+      <td>2</td>
+      <td>4</td>
+      <td>1</td>
+      <td>89</td>
+      <td>0.0112</td>
+    </tr>
+    <tr>
+      <td>Historical block 3</td>
+      <td>2016-12-15</td>
+      <td>2021-11-23</td>
+      <td>3</td>
+      <td>1</td>
+      <td>10</td>
+      <td>120</td>
+      <td>0.0833</td>
+    </tr>
+    <tr>
+      <td>Historical block 3</td>
+      <td>2016-12-15</td>
+      <td>2021-11-23</td>
+      <td>3</td>
+      <td>2</td>
+      <td>0</td>
+      <td>120</td>
+      <td>0.0000</td>
+    </tr>
+    <tr>
+      <td>Historical block 3</td>
+      <td>2016-12-15</td>
+      <td>2021-11-23</td>
+      <td>3</td>
+      <td>3</td>
+      <td>105</td>
+      <td>120</td>
+      <td>0.8750</td>
+    </tr>
+    <tr>
+      <td>Historical block 3</td>
+      <td>2016-12-15</td>
+      <td>2021-11-23</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>120</td>
+      <td>0.0417</td>
+    </tr>
+    <tr>
+      <td>Historical block 3</td>
+      <td>2016-12-15</td>
+      <td>2021-11-23</td>
+      <td>4</td>
+      <td>1</td>
+      <td>0</td>
+      <td>53</td>
+      <td>0.0000</td>
+    </tr>
+    <tr>
+      <td>Historical block 3</td>
+      <td>2016-12-15</td>
+      <td>2021-11-23</td>
+      <td>4</td>
+      <td>2</td>
+      <td>1</td>
+      <td>53</td>
+      <td>0.0189</td>
+    </tr>
+    <tr>
+      <td>Historical block 3</td>
+      <td>2016-12-15</td>
+      <td>2021-11-23</td>
+      <td>4</td>
+      <td>3</td>
+      <td>5</td>
+      <td>53</td>
+      <td>0.0943</td>
+    </tr>
+    <tr>
+      <td>Historical block 3</td>
+      <td>2016-12-15</td>
+      <td>2021-11-23</td>
+      <td>4</td>
+      <td>4</td>
+      <td>47</td>
+      <td>53</td>
+      <td>0.8868</td>
+    </tr>
+    <tr>
+      <td>Historical block 4</td>
+      <td>2021-11-24</td>
+      <td>2026-10-30</td>
+      <td>1</td>
+      <td>1</td>
+      <td>905</td>
+      <td>930</td>
+      <td>0.9731</td>
+    </tr>
+    <tr>
+      <td>Historical block 4</td>
+      <td>2021-11-24</td>
+      <td>2026-10-30</td>
+      <td>1</td>
+      <td>2</td>
+      <td>9</td>
+      <td>930</td>
+      <td>0.0097</td>
+    </tr>
+    <tr>
+      <td>Historical block 4</td>
+      <td>2021-11-24</td>
+      <td>2026-10-30</td>
+      <td>1</td>
+      <td>3</td>
+      <td>15</td>
+      <td>930</td>
+      <td>0.0161</td>
+    </tr>
+    <tr>
+      <td>Historical block 4</td>
+      <td>2021-11-24</td>
+      <td>2026-10-30</td>
+      <td>1</td>
+      <td>4</td>
+      <td>1</td>
+      <td>930</td>
+      <td>0.0011</td>
+    </tr>
+    <tr>
+      <td>Historical block 4</td>
+      <td>2021-11-24</td>
+      <td>2026-10-30</td>
+      <td>2</td>
+      <td>1</td>
+      <td>9</td>
+      <td>25</td>
+      <td>0.3600</td>
+    </tr>
+    <tr>
+      <td>Historical block 4</td>
+      <td>2021-11-24</td>
+      <td>2026-10-30</td>
+      <td>2</td>
+      <td>2</td>
+      <td>15</td>
+      <td>25</td>
+      <td>0.6000</td>
+    </tr>
+    <tr>
+      <td>Historical block 4</td>
+      <td>2021-11-24</td>
+      <td>2026-10-30</td>
+      <td>2</td>
+      <td>3</td>
+      <td>0</td>
+      <td>25</td>
+      <td>0.0000</td>
+    </tr>
+    <tr>
+      <td>Historical block 4</td>
+      <td>2021-11-24</td>
+      <td>2026-10-30</td>
+      <td>2</td>
+      <td>4</td>
+      <td>1</td>
+      <td>25</td>
+      <td>0.0400</td>
+    </tr>
+    <tr>
+      <td>Historical block 4</td>
+      <td>2021-11-24</td>
+      <td>2026-10-30</td>
+      <td>3</td>
+      <td>1</td>
+      <td>16</td>
+      <td>190</td>
+      <td>0.0842</td>
+    </tr>
+    <tr>
+      <td>Historical block 4</td>
+      <td>2021-11-24</td>
+      <td>2026-10-30</td>
+      <td>3</td>
+      <td>2</td>
+      <td>0</td>
+      <td>190</td>
+      <td>0.0000</td>
+    </tr>
+    <tr>
+      <td>Historical block 4</td>
+      <td>2021-11-24</td>
+      <td>2026-10-30</td>
+      <td>3</td>
+      <td>3</td>
+      <td>167</td>
+      <td>190</td>
+      <td>0.8789</td>
+    </tr>
+    <tr>
+      <td>Historical block 4</td>
+      <td>2021-11-24</td>
+      <td>2026-10-30</td>
+      <td>3</td>
+      <td>4</td>
+      <td>7</td>
+      <td>190</td>
+      <td>0.0368</td>
+    </tr>
+    <tr>
+      <td>Historical block 4</td>
+      <td>2021-11-24</td>
+      <td>2026-10-30</td>
+      <td>4</td>
+      <td>1</td>
+      <td>0</td>
+      <td>59</td>
+      <td>0.0000</td>
+    </tr>
+    <tr>
+      <td>Historical block 4</td>
+      <td>2021-11-24</td>
+      <td>2026-10-30</td>
+      <td>4</td>
+      <td>2</td>
+      <td>1</td>
+      <td>59</td>
+      <td>0.0169</td>
+    </tr>
+    <tr>
+      <td>Historical block 4</td>
+      <td>2021-11-24</td>
+      <td>2026-10-30</td>
+      <td>4</td>
+      <td>3</td>
+      <td>8</td>
+      <td>59</td>
+      <td>0.1356</td>
+    </tr>
+    <tr>
+      <td>Historical block 4</td>
+      <td>2021-11-24</td>
+      <td>2026-10-30</td>
+      <td>4</td>
+      <td>4</td>
+      <td>50</td>
+      <td>59</td>
+      <td>0.8475</td>
+    </tr>
+  </tbody>
+</table>
+
+</details><details markdown="1"><summary><strong>Table 2.m. Does market information improve held-out density prediction?</strong></summary>
+
+<table class="dataframe research-table market-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Index</th>
+      <th>Own-only held-out mean log score</th>
+      <th>Market-regressor held-out mean log score</th>
+      <th>Market-regressor minus own-only</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Baltic Benchmark GI</td>
+      <td>-0.5997</td>
+      <td>-0.5804</td>
+      <td>0.0193</td>
+    </tr>
+    <tr>
+      <td>Baltic 10 (price)</td>
+      <td>-0.6307</td>
+      <td>-0.6061</td>
+      <td>0.0246</td>
+    </tr>
+    <tr>
+      <td>Tallinn GI</td>
+      <td>-0.6993</td>
+      <td>-0.6855</td>
+      <td>0.0138</td>
+    </tr>
+    <tr>
+      <td>Riga GI</td>
+      <td>-1.0726</td>
+      <td>-1.0722</td>
+      <td>0.0005</td>
+    </tr>
+    <tr>
+      <td>Vilnius GI</td>
+      <td>-0.4580</td>
+      <td>-0.4387</td>
+      <td>0.0193</td>
+    </tr>
+    <tr>
+      <td>MSCI World EUR GI</td>
+      <td>-1.1167</td>
+      <td>-1.1188</td>
+      <td>-0.0021</td>
+    </tr>
+  </tbody>
+</table>
+
+</details><p>All twelve two-state models improve held-out log score over their corresponding one-state model. Adding lagged other-market returns does not improve held-out log score over the own-only HMM for any of the six indices in this run. Market conditioning is therefore included transparently as the requested methodological comparison, not presented as demonstrated predictive improvement.</p><details markdown="1"><summary><strong>Figure 2.i. Retrospective states, filtered states and frozen-parameter held-out filtering</strong></summary>
+
+<img loading="lazy" src="figures/market_analysis/regime_filtering_validation.png?v=ebc97c984135" alt="Retrospective states, filtered states and frozen-parameter held-out filtering">
+
+</details><details markdown="1"><summary><strong>Table 2.n. Threshold sensitivity, without selecting thresholds for a desired result</strong></summary>
+
+<table class="dataframe research-table market-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>threshold</th>
+      <th>regime</th>
+      <th>observations</th>
+      <th>share</th>
+      <th>agreement_with_primary</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1.3000</td>
+      <td>1</td>
+      <td>3076</td>
+      <td>0.6386</td>
+      <td>1.0000</td>
+    </tr>
+    <tr>
+      <td>1.3000</td>
+      <td>2</td>
+      <td>645</td>
+      <td>0.1339</td>
+      <td>1.0000</td>
+    </tr>
+    <tr>
+      <td>1.3000</td>
+      <td>3</td>
+      <td>560</td>
+      <td>0.1163</td>
+      <td>1.0000</td>
+    </tr>
+    <tr>
+      <td>1.3000</td>
+      <td>4</td>
+      <td>536</td>
+      <td>0.1113</td>
+      <td>1.0000</td>
+    </tr>
+    <tr>
+      <td>1.5000</td>
+      <td>1</td>
+      <td>3242</td>
+      <td>0.6730</td>
+      <td>0.9558</td>
+    </tr>
+    <tr>
+      <td>1.5000</td>
+      <td>2</td>
+      <td>479</td>
+      <td>0.0994</td>
+      <td>0.9558</td>
+    </tr>
+    <tr>
+      <td>1.5000</td>
+      <td>3</td>
+      <td>607</td>
+      <td>0.1260</td>
+      <td>0.9558</td>
+    </tr>
+    <tr>
+      <td>1.5000</td>
+      <td>4</td>
+      <td>489</td>
+      <td>0.1015</td>
+      <td>0.9558</td>
+    </tr>
+    <tr>
+      <td>1.7000</td>
+      <td>1</td>
+      <td>3430</td>
+      <td>0.7121</td>
+      <td>0.8997</td>
+    </tr>
+    <tr>
+      <td>1.7000</td>
+      <td>2</td>
+      <td>320</td>
+      <td>0.0664</td>
+      <td>0.8997</td>
+    </tr>
+    <tr>
+      <td>1.7000</td>
+      <td>3</td>
+      <td>664</td>
+      <td>0.1378</td>
+      <td>0.8997</td>
+    </tr>
+    <tr>
+      <td>1.7000</td>
+      <td>4</td>
+      <td>403</td>
+      <td>0.0837</td>
+      <td>0.8997</td>
+    </tr>
+  </tbody>
+</table>
+
+</details>
+
+</details><details markdown="1" id="market-analysis-8"><summary><strong>2.8. Regime-conditional index behaviour and correlations</strong></summary>
+
+<details markdown="1"><summary><strong>Figure 2.j. Odd-bin histograms and regime-specific return densities for all six indices</strong></summary>
+
+<img loading="lazy" src="figures/market_analysis/regime_return_distributions.png?v=6b40d89ab77f" alt="Odd-bin histograms and regime-specific return densities for all six indices">
+
+</details><details markdown="1"><summary><strong>Table 2.o. Index return and tail-risk statistics conditional on regime</strong></summary>
+
+<table class="dataframe research-table market-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>index</th>
+      <th>regime</th>
+      <th>observations</th>
+      <th>mean</th>
+      <th>median</th>
+      <th>SD</th>
+      <th>minimum</th>
+      <th>maximum</th>
+      <th>skewness</th>
+      <th>kurtosis</th>
+      <th>VaR95</th>
+      <th>CVaR95</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>OMXBBGI</td>
+      <td>1</td>
+      <td>3076</td>
+      <td>0.000572</td>
+      <td>0.000538</td>
+      <td>0.003946</td>
+      <td>-0.012891</td>
+      <td>0.016705</td>
+      <td>0.165497</td>
+      <td>3.884258</td>
+      <td>0.005798</td>
+      <td>0.007799</td>
+    </tr>
+    <tr>
+      <td>OMXBBGI</td>
+      <td>2</td>
+      <td>645</td>
+      <td>0.002301</td>
+      <td>0.001973</td>
+      <td>0.013661</td>
+      <td>-0.045377</td>
+      <td>0.093785</td>
+      <td>0.501205</td>
+      <td>6.568687</td>
+      <td>0.017480</td>
+      <td>0.025726</td>
+    </tr>
+    <tr>
+      <td>OMXBBGI</td>
+      <td>3</td>
+      <td>560</td>
+      <td>-0.000136</td>
+      <td>0.000005</td>
+      <td>0.004867</td>
+      <td>-0.013827</td>
+      <td>0.014932</td>
+      <td>0.020257</td>
+      <td>3.061895</td>
+      <td>0.008359</td>
+      <td>0.010365</td>
+    </tr>
+    <tr>
+      <td>OMXBBGI</td>
+      <td>4</td>
+      <td>536</td>
+      <td>-0.003868</td>
+      <td>-0.002559</td>
+      <td>0.019956</td>
+      <td>-0.121929</td>
+      <td>0.082685</td>
+      <td>-0.622252</td>
+      <td>7.126913</td>
+      <td>0.036547</td>
+      <td>0.053061</td>
+    </tr>
+    <tr>
+      <td>OMXB10</td>
+      <td>1</td>
+      <td>3076</td>
+      <td>0.000378</td>
+      <td>0.000425</td>
+      <td>0.004338</td>
+      <td>-0.019835</td>
+      <td>0.018307</td>
+      <td>-0.057712</td>
+      <td>4.037410</td>
+      <td>0.006708</td>
+      <td>0.009317</td>
+    </tr>
+    <tr>
+      <td>OMXB10</td>
+      <td>2</td>
+      <td>645</td>
+      <td>0.002235</td>
+      <td>0.001727</td>
+      <td>0.015687</td>
+      <td>-0.062559</td>
+      <td>0.113586</td>
+      <td>0.681553</td>
+      <td>7.745338</td>
+      <td>0.019977</td>
+      <td>0.028876</td>
+    </tr>
+    <tr>
+      <td>OMXB10</td>
+      <td>3</td>
+      <td>560</td>
+      <td>-0.000390</td>
+      <td>-0.000479</td>
+      <td>0.004941</td>
+      <td>-0.019634</td>
+      <td>0.012424</td>
+      <td>-0.112503</td>
+      <td>3.297210</td>
+      <td>0.008508</td>
+      <td>0.011080</td>
+    </tr>
+    <tr>
+      <td>OMXB10</td>
+      <td>4</td>
+      <td>536</td>
+      <td>-0.004322</td>
+      <td>-0.003366</td>
+      <td>0.022209</td>
+      <td>-0.117051</td>
+      <td>0.102543</td>
+      <td>-0.365886</td>
+      <td>6.298353</td>
+      <td>0.042504</td>
+      <td>0.058523</td>
+    </tr>
+    <tr>
+      <td>OMXTGI</td>
+      <td>1</td>
+      <td>3076</td>
+      <td>0.000517</td>
+      <td>0.000365</td>
+      <td>0.004687</td>
+      <td>-0.017455</td>
+      <td>0.023159</td>
+      <td>0.208045</td>
+      <td>4.173875</td>
+      <td>0.006904</td>
+      <td>0.009552</td>
+    </tr>
+    <tr>
+      <td>OMXTGI</td>
+      <td>2</td>
+      <td>645</td>
+      <td>0.002475</td>
+      <td>0.001590</td>
+      <td>0.015950</td>
+      <td>-0.056992</td>
+      <td>0.128563</td>
+      <td>0.924359</td>
+      <td>9.617520</td>
+      <td>0.020914</td>
+      <td>0.028422</td>
+    </tr>
+    <tr>
+      <td>OMXTGI</td>
+      <td>3</td>
+      <td>560</td>
+      <td>-0.000179</td>
+      <td>-0.000334</td>
+      <td>0.005447</td>
+      <td>-0.014380</td>
+      <td>0.015398</td>
+      <td>0.045470</td>
+      <td>3.127369</td>
+      <td>0.009513</td>
+      <td>0.011866</td>
+    </tr>
+    <tr>
+      <td>OMXTGI</td>
+      <td>4</td>
+      <td>536</td>
+      <td>-0.003518</td>
+      <td>-0.003353</td>
+      <td>0.020624</td>
+      <td>-0.117683</td>
+      <td>0.078994</td>
+      <td>-0.465479</td>
+      <td>6.159757</td>
+      <td>0.035278</td>
+      <td>0.053281</td>
+    </tr>
+    <tr>
+      <td>OMXRGI</td>
+      <td>1</td>
+      <td>3076</td>
+      <td>0.000436</td>
+      <td>0.000318</td>
+      <td>0.009416</td>
+      <td>-0.201997</td>
+      <td>0.083695</td>
+      <td>-2.869467</td>
+      <td>84.943072</td>
+      <td>0.011745</td>
+      <td>0.019335</td>
+    </tr>
+    <tr>
+      <td>OMXRGI</td>
+      <td>2</td>
+      <td>645</td>
+      <td>0.000805</td>
+      <td>0.000446</td>
+      <td>0.015328</td>
+      <td>-0.075284</td>
+      <td>0.107160</td>
+      <td>0.805853</td>
+      <td>9.844692</td>
+      <td>0.021961</td>
+      <td>0.031782</td>
+    </tr>
+    <tr>
+      <td>OMXRGI</td>
+      <td>3</td>
+      <td>560</td>
+      <td>0.000702</td>
+      <td>-0.000052</td>
+      <td>0.011133</td>
+      <td>-0.044633</td>
+      <td>0.122954</td>
+      <td>3.345094</td>
+      <td>35.022113</td>
+      <td>0.013526</td>
+      <td>0.019798</td>
+    </tr>
+    <tr>
+      <td>OMXRGI</td>
+      <td>4</td>
+      <td>536</td>
+      <td>-0.002787</td>
+      <td>-0.002084</td>
+      <td>0.021477</td>
+      <td>-0.165229</td>
+      <td>0.128473</td>
+      <td>-0.265307</td>
+      <td>12.485017</td>
+      <td>0.034731</td>
+      <td>0.051877</td>
+    </tr>
+    <tr>
+      <td>OMXVGI</td>
+      <td>1</td>
+      <td>3076</td>
+      <td>0.000644</td>
+      <td>0.000422</td>
+      <td>0.004093</td>
+      <td>-0.016678</td>
+      <td>0.037092</td>
+      <td>0.514652</td>
+      <td>6.393548</td>
+      <td>0.005646</td>
+      <td>0.007860</td>
+    </tr>
+    <tr>
+      <td>OMXVGI</td>
+      <td>2</td>
+      <td>645</td>
+      <td>0.001930</td>
+      <td>0.001324</td>
+      <td>0.012932</td>
+      <td>-0.054921</td>
+      <td>0.115459</td>
+      <td>1.580542</td>
+      <td>15.680064</td>
+      <td>0.015888</td>
+      <td>0.024292</td>
+    </tr>
+    <tr>
+      <td>OMXVGI</td>
+      <td>3</td>
+      <td>560</td>
+      <td>0.000070</td>
+      <td>0.000054</td>
+      <td>0.004782</td>
+      <td>-0.037402</td>
+      <td>0.021038</td>
+      <td>-0.528838</td>
+      <td>10.536626</td>
+      <td>0.007067</td>
+      <td>0.010523</td>
+    </tr>
+    <tr>
+      <td>OMXVGI</td>
+      <td>4</td>
+      <td>536</td>
+      <td>-0.003689</td>
+      <td>-0.001694</td>
+      <td>0.019145</td>
+      <td>-0.112527</td>
+      <td>0.116294</td>
+      <td>-0.509510</td>
+      <td>10.467922</td>
+      <td>0.033726</td>
+      <td>0.053409</td>
+    </tr>
+    <tr>
+      <td>MSCI_WORLD</td>
+      <td>1</td>
+      <td>3076</td>
+      <td>0.000998</td>
+      <td>0.001043</td>
+      <td>0.006194</td>
+      <td>-0.021516</td>
+      <td>0.021748</td>
+      <td>-0.121798</td>
+      <td>3.365499</td>
+      <td>0.009358</td>
+      <td>0.012760</td>
+    </tr>
+    <tr>
+      <td>MSCI_WORLD</td>
+      <td>2</td>
+      <td>645</td>
+      <td>0.001094</td>
+      <td>0.001248</td>
+      <td>0.006803</td>
+      <td>-0.019874</td>
+      <td>0.022666</td>
+      <td>-0.193138</td>
+      <td>3.560146</td>
+      <td>0.010802</td>
+      <td>0.014556</td>
+    </tr>
+    <tr>
+      <td>MSCI_WORLD</td>
+      <td>3</td>
+      <td>560</td>
+      <td>-0.000996</td>
+      <td>-0.001196</td>
+      <td>0.014001</td>
+      <td>-0.052100</td>
+      <td>0.036707</td>
+      <td>0.055768</td>
+      <td>2.803824</td>
+      <td>0.023184</td>
+      <td>0.028601</td>
+    </tr>
+    <tr>
+      <td>MSCI_WORLD</td>
+      <td>4</td>
+      <td>536</td>
+      <td>-0.002105</td>
+      <td>-0.002093</td>
+      <td>0.022171</td>
+      <td>-0.113438</td>
+      <td>0.088752</td>
+      <td>-0.210809</td>
+      <td>6.010833</td>
+      <td>0.035109</td>
+      <td>0.053812</td>
+    </tr>
+  </tbody>
+</table>
+
+</details><p>Statistics are calculated in native R, using PerformanceAnalytics for moment skewness, moment kurtosis (normal distribution = 3) and historical VaR/CVaR. Returns, SD and tail risks in this table are decimal simple returns; the HMM uses percent log returns. The KDE curves use percent log returns. Nonconsecutive observations in a regime are not treated as a continuous investment path for drawdown calculations.</p><details markdown="1"><summary><strong>Figure 2.k. Ward-ordered index correlations in the full sample and four regimes</strong></summary>
+
+<img loading="lazy" src="figures/market_analysis/regime_correlations.png?v=f4c922be664b" alt="Ward-ordered index correlations in the full sample and four regimes">
+
+</details>
+
+</details><details markdown="1" id="market-analysis-9"><summary><strong>2.9. Transition-matrix stress sensitivity</strong></summary>
+
+<p>The stress-test adaptation multiplies worsening transitions 1→2, 1→3, 1→4, 2→4 and 3→4 by k, leaves other off-diagonal transitions unchanged, and adjusts each diagonal to preserve its row sum. Regimes 2 and 3 are not intrinsically ordered as better/worse than one another.</p><div class="math-display">$$P^{(k)}_{ij}=k\widehat P_{ij}\quad((i,j)\in\{(1,2),(1,3),(1,4),(2,4),(3,4)\}),\qquad P^{(k)}_{ii}=1-\sum_{j\ne i}P^{(k)}_{ij}.$$</div><details markdown="1"><summary><strong>Table 2.p. Artificial transition stress: admissibility, stationary shares and time to joint stress</strong></summary>
+
+<table class="dataframe research-table market-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>multiplier</th>
+      <th>admissible</th>
+      <th>stationary_regime1</th>
+      <th>stationary_regime4</th>
+      <th>mean_passage_1_to_4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>True</td>
+      <td>0.6385</td>
+      <td>0.1113</td>
+      <td>124.8116</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>True</td>
+      <td>0.4094</td>
+      <td>0.2705</td>
+      <td>47.5782</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>True</td>
+      <td>0.2758</td>
+      <td>0.4013</td>
+      <td>28.1995</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>True</td>
+      <td>0.1955</td>
+      <td>0.4997</td>
+      <td>19.7925</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>True</td>
+      <td>0.0489</td>
+      <td>0.7611</td>
+      <td>6.9097</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>False</td>
+      <td>Not estimable / not admissible</td>
+      <td>Not estimable / not admissible</td>
+      <td>Not estimable / not admissible</td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td>False</td>
+      <td>Not estimable / not admissible</td>
+      <td>Not estimable / not admissible</td>
+      <td>Not estimable / not admissible</td>
+    </tr>
+  </tbody>
+</table>
+
+</details><details markdown="1"><summary><strong>Figure 2.l. Sensitivity of the Markov characteristics to worsening-transition multipliers</strong></summary>
+
+<img loading="lazy" src="figures/market_analysis/transition_stress_sensitivity.png?v=171bff924d9a" alt="Sensitivity of the Markov characteristics to worsening-transition multipliers">
+
+</details><p>Multipliers producing a negative diagonal are rejected, not clipped or renormalised into a different model. For these data k = 20 and 50 are inadmissible. This experiment perturbs a historical matrix; it is not an estimated probability of an actual future crisis and does not generate new portfolio trades.</p>
+
+</details><details markdown="1" id="market-analysis-10"><summary><strong>2.10. Methodology sources and adaptation</strong></summary>
+
+<p>The first paper motivates separate binary hidden states, a four-regime combination, transition estimates, stationary and first-passage characteristics, and worsening-transition stress tests. The second adds per-index own-history/market-conditioned estimation and weighted aggregation. Here stocks/bonds are replaced by Baltic/global equities, predictors are lagged, both equity thresholds are 1.3, and probabilities are explicitly posterior-threshold decoded. This implementation uses EM-fitted Gaussian HMMs in depmixS4; it does not implement the separate Lavielle–Lebarbier MCMC change-point procedure discussed in the first paper.</p><p><a href="https://link.springer.com/article/10.1007/s10479-024-06041-1" target="_blank" rel="noopener">Stress testing for IInd pillar life-cycle pension funds using hidden Markov model</a>; <a href="https://link.springer.com/article/10.1186/s13362-024-00144-x" target="_blank" rel="noopener">Systemic risk assessment through connectedness and spillover</a>; <a href="https://www.jstatsoft.org/article/view/v036i07" target="_blank" rel="noopener">depmixS4 methods</a>; <a href="https://cran.r-project.org/web/packages/markovchain/vignettes/an_introduction_to_markovchain_package.pdf" target="_blank" rel="noopener">markovchain methods</a>.</p>
+
+</details></details><!-- MARKET_ANALYSIS_END -->
+
+<details markdown="1" class="analytics-group" id="analytics-3" open>
+<summary><strong>3. Portfolio analytics</strong></summary>
 
 
 
-<details markdown="1" class="report-section" id="analytics-2-1">
-<summary><strong>2.1. Optimisation result</strong></summary>
+<details markdown="1" class="report-section" id="analytics-3-1">
+<summary><strong>3.1. Optimisation result</strong></summary>
 <p>The active model is the full-universe two-stage no-sales quantity search in section 1.4: expected scenario netSD 0.862857, expected penalised objective 0.830230. The table below contains historical diagnostics on one common sample and reference system, not scenario scores. Earlier allocations are frozen comparisons, not competing current execution instructions.</p>
 
 <table markdown="0" class="dataframe research-table">
@@ -69695,8 +75103,8 @@ The BH adjustment covers the full family of share-level, pooled and pairwise tes
 
 </details>
 
-<details markdown="1" class="report-section" id="analytics-2-2">
-<summary><strong>2.2. Portfolio scenarios and optimisation checks</strong></summary>
+<details markdown="1" class="report-section" id="analytics-3-2">
+<summary><strong>3.2. Portfolio scenarios and optimisation checks</strong></summary>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -69812,8 +75220,8 @@ The BH adjustment covers the full family of share-level, pooled and pairwise tes
 <p>Choose exactly one sales regime and one model before using its trade quantities. The two no-sales summaries appear consecutively in Sections 1.2 and 1.3. Fund expenses are embedded in NAV; displayed annual EUR costs are disclosures, not a second deduction.</p>
 </details>
 
-<details markdown="1" class="report-section" id="analytics-2-3">
-<summary><strong>2.3. Correlation structure of the investment universe</strong></summary>
+<details markdown="1" class="report-section" id="analytics-3-3">
+<summary><strong>3.3. Correlation structure of the investment universe</strong></summary>
 <p>Each universe is explicitly defined. Every panel shows the Ward dendrograms and a blue–white–red correlation legend.</p><details markdown="1" class=""><summary><strong>All shares and all 12 funds</strong></summary>
 <details markdown="1" class=""><summary><strong>Pearson correlations with Ward dendrograms</strong></summary>
 <img loading="lazy" src="figures/update3/correlation_all_pearson_ward.png?v=772ab637f048" alt="All shares and all 12 funds: pearson">
@@ -69845,7 +75253,7 @@ The BH adjustment covers the full family of share-level, pooled and pairwise tes
 </details>
 
 <details markdown="1">
-<summary><strong>Figure 2.b. Correlations among shares held by at least one portfolio</strong></summary>
+<summary><strong>Figure 3.b. Correlations among shares held by at least one portfolio</strong></summary>
 
 The set is the union of shares with a positive target quantity in any reported allocation. Portfolio return series are excluded.
 
@@ -69856,7 +75264,7 @@ The set is the union of shares with a positive target quantity in any reported a
 </details>
 
 <details markdown="1">
-<summary><strong>Figure 2.c. Correlations among current holdings only</strong></summary>
+<summary><strong>Figure 3.c. Correlations among current holdings only</strong></summary>
 
 Only shares currently owned are included; portfolio return series are excluded.
 
@@ -69870,8 +75278,8 @@ Only shares currently owned are included; portfolio return series are excluded.
 
 </details>
 
-<details markdown="1" class="report-section" id="analytics-2-4">
-<summary><strong>2.4. Stochastic-dominance matrices used by netSD</strong></summary>
+<details markdown="1" class="report-section" id="analytics-3-4">
+<summary><strong>3.4. Stochastic-dominance matrices used by netSD</strong></summary>
 <p>63 shares and all 23 forecast-eligible funds, plus five frozen reference portfolios. Fixed denominator 175. Insufficient-history instruments remain documented in section 1.4.d.</p><details markdown="1" class=""><summary><strong>FSD dominance matrix — complete eligible universe and frozen reference portfolios</strong></summary>
 
 <table markdown="0" border="1" class="dataframe">
@@ -104880,7 +110288,7 @@ Only shares currently owned are included; portfolio return series are excluded.
 </details>
 
 <details markdown="1">
-<summary><strong>Figure 2.e. SSD pairwise dominance matrix used by netSD</strong></summary>
+<summary><strong>Figure 3.e. SSD pairwise dominance matrix used by netSD</strong></summary>
 
 A blue cell equals 1 when the row entity SSD-dominates the column entity. Row sums contribute to OUT; column sums contribute to IN.
 
@@ -104889,7 +110297,7 @@ A blue cell equals 1 when the row entity SSD-dominates the column entity. Row su
 </details>
 
 <details markdown="1">
-<summary><strong>Figure 2.f. TSD pairwise dominance matrix used by netSD</strong></summary>
+<summary><strong>Figure 3.f. TSD pairwise dominance matrix used by netSD</strong></summary>
 
 A blue cell equals 1 when the row entity TSD-dominates the column entity, including the required mean-return condition.
 
@@ -104898,7 +110306,7 @@ A blue cell equals 1 when the row entity TSD-dominates the column entity, includ
 </details>
 
 <details markdown="1">
-<summary><strong>Figure 2.g. Combined FSD + SSD + TSD matrix used to calculate netSD</strong></summary>
+<summary><strong>Figure 3.g. Combined FSD + SSD + TSD matrix used to calculate netSD</strong></summary>
 
 Each cell is the sum of the three order-specific indicators and therefore ranges from 0 to 3. For every entity, OUT is its combined row sum and IN is its combined column sum. The frozen full-universe denominator is 175; netSD = (OUT − IN) / 175. The same reference matrix is used for all historical diagnostics; scenario outcomes additionally append the scenario week.
 
@@ -104907,7 +110315,7 @@ Each cell is the sum of the three order-specific indicators and therefore ranges
 </details>
 
 <details markdown="1" class="all-share-netsd">
-<summary><strong>Table 2.c. netSD for every comparable Nasdaq Baltic share</strong></summary>
+<summary><strong>Table 3.c. netSD for every comparable Nasdaq Baltic share</strong></summary>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -105505,8 +110913,8 @@ allocation_change_direction describes the optimiser's target relative to current
 
 </details>
 
-<details markdown="1" class="report-section" id="analytics-2-5">
-<summary><strong>2.5. Portfolio trade plans and executable quantities</strong></summary>
+<details markdown="1" class="report-section" id="analytics-3-5">
+<summary><strong>3.5. Portfolio trade plans and executable quantities</strong></summary>
 <details markdown="1" open><summary><strong>update3_funds_sell: quantities, purchases, sales and dividends</strong></summary>
 
 <table markdown="0" class="dataframe update3-table">
@@ -106212,7 +111620,7 @@ allocation_change_direction describes the optimiser's target relative to current
 
 </details>
 
-<summary><strong>Table 2.d. Alternative unpenalised Baltic_NetSD allocation — sales allowed</strong></summary>
+<summary><strong>Table 3.d. Alternative unpenalised Baltic_NetSD allocation — sales allowed</strong></summary>
 
 <table markdown="0" class="trade-decision-table"><thead><tr><th><span>Phase</span></th><th><span>Share</span></th><th><span>Company</span></th><th><span>Last price</span></th><th><span>Indicative buy ≤</span></th><th><span>Indicative sell ≥</span></th><th><span>Bollinger zone</span></th><th><span>Technical timing</span></th><th><span>Target weight</span></th><th><span>Current shares</span></th><th><span>Allocation change</span></th><th><span>Trade EUR</span></th><th><span>Target shares</span></th><th><span>Final value EUR</span></th><th><span>5y avg dividend/share EUR</span></th><th><span>5y avg dividend yield at ex-date price</span></th><th><span>Current quantity: avg annual dividends EUR</span></th><th><span>Update quantity: avg annual dividends EUR</span></th><th><span>Current execution decision</span></th><th><span>Historical dividends EUR</span></th></tr></thead><tbody><tr><td>1</td><td>ROE1L</td><td>Artea Bankas</td><td>0.8190</td><td>0.8433 (+2.96%)</td><td>0.9122 (+11.38%)</td><td>BUY</td><td>BUY</td><td>1.18%</td><td>416</td><td>-201</td><td>-164.62</td><td>215</td><td>176.09</td><td>0.0434</td><td>4.62%</td><td>18.05</td><td>9.33</td><td>SELL</td><td>29.24</td></tr><tr><td>1</td><td>TSM1T</td><td>Tallinna Sadam</td><td>1.1920</td><td>1.1914 (-0.05%)</td><td>1.2168 (+2.08%)</td><td>HOLD</td><td>HOLD</td><td>0.00%</td><td>330</td><td>-330</td><td>-393.36</td><td>0</td><td>0.00</td><td>0.0778</td><td>4.59%</td><td>25.67</td><td>0.00</td><td>SELL</td><td>0.00</td></tr><tr><td>1</td><td>APG1L</td><td>Apranga</td><td>3.8000</td><td>3.7732 (-0.70%)</td><td>3.8508 (+1.34%)</td><td>HOLD</td><td>HOLD</td><td>1.71%</td><td>200</td><td>-133</td><td>-505.40</td><td>67</td><td>254.60</td><td>0.3060</td><td>6.89%</td><td>61.20</td><td>20.50</td><td>SELL</td><td>69.01</td></tr><tr><td>1</td><td>SAF1R</td><td>SAF Tehnika</td><td>16.5000</td><td>16.1200 (-2.30%)</td><td>16.8000 (+1.82%)</td><td>HOLD</td><td>HOLD</td><td>0.00%</td><td>100</td><td>-100</td><td>-1650.00</td><td>0</td><td>0.00</td><td>0.1360</td><td>0.00%</td><td>13.60</td><td>0.00</td><td>SELL</td><td>0.00</td></tr><tr><td>1</td><td>TKM1T</td><td>TKM Grupp</td><td>8.8800</td><td>8.8359 (-0.50%)</td><td>9.0431 (+1.84%)</td><td>HOLD</td><td>HOLD</td><td>5.36%</td><td>288</td><td>-198</td><td>-1758.24</td><td>90</td><td>799.20</td><td>0.6660</td><td>5.38%</td><td>191.81</td><td>59.94</td><td>SELL</td><td>238.50</td></tr><tr><td>2</td><td>GRG1L</td><td>Grigeo Group</td><td>1.0100</td><td>0.9944 (-1.54%)</td><td>1.0210 (+1.09%)</td><td>HOLD</td><td>HOLD</td><td>14.27%</td><td>543</td><td>+1576</td><td>1591.76</td><td>2119</td><td>2140.19</td><td>0.0560</td><td>4.45%</td><td>30.41</td><td>118.66</td><td>WAIT</td><td>360.23</td></tr><tr><td>2</td><td>VLP1L</td><td>Vilkyškių pieninė</td><td>15.7500</td><td>15.1457 (-3.84%)</td><td>16.0093 (+1.65%)</td><td>HOLD</td><td>HOLD</td><td>14.81%</td><td>42</td><td>+99</td><td>1559.25</td><td>141</td><td>2220.75</td><td>0.3090</td><td>3.57%</td><td>12.98</td><td>43.57</td><td>WAIT</td><td>0.00</td></tr><tr><td>2</td><td>MRK1T</td><td>Merko Ehitus</td><td>26.9000</td><td>26.8866 (-0.05%)</td><td>27.1784 (+1.03%)</td><td>HOLD</td><td>HOLD</td><td>11.58%</td><td>20</td><td>+44</td><td>1183.60</td><td>64</td><td>1721.60</td><td>1.2900</td><td>4.99%</td><td>25.80</td><td>82.56</td><td>WAIT</td><td>348.80</td></tr><tr><td>2</td><td>KNE1L</td><td>KN Energies</td><td>0.4770</td><td>0.4739 (-0.66%)</td><td>0.4878 (+2.27%)</td><td>HOLD</td><td>HOLD</td><td>10.18%</td><td>928</td><td>+2272</td><td>1083.74</td><td>3200</td><td>1526.40</td><td>0.0129</td><td>4.01%</td><td>11.95</td><td>41.22</td><td>WAIT</td><td>206.08</td></tr><tr><td>2</td><td>LHV1T</td><td>LHV Group</td><td>3.2500</td><td>3.2443 (-0.18%)</td><td>3.2917 (+1.28%)</td><td>HOLD</td><td>HOLD</td><td>5.64%</td><td>0</td><td>+260</td><td>845.00</td><td>260</td><td>845.00</td><td>0.1660</td><td>2.47%</td><td>0.00</td><td>43.16</td><td>WAIT</td><td>111.80</td></tr><tr><td>2</td><td>EFT1T</td><td>EfTEN Real Estate Fund</td><td>19.5500</td><td>nan (+nan%)</td><td>nan (+nan%)</td><td>HOLD</td><td>nan</td><td>4.94%</td><td>0</td><td>+37</td><td>723.35</td><td>37</td><td>723.35</td><td>1.0525</td><td>4.58%</td><td>0.00</td><td>38.94</td><td>WAIT</td><td>165.12</td></tr><tr><td>2</td><td>PZV1L</td><td>Pieno žvaigždės</td><td>1.7900</td><td>1.7621 (-1.56%)</td><td>1.8089 (+1.06%)</td><td>HOLD</td><td>HOLD</td><td>4.74%</td><td>0</td><td>+397</td><td>710.63</td><td>397</td><td>710.63</td><td>0.0840</td><td>5.63%</td><td>0.00</td><td>33.35</td><td>WAIT</td><td>166.74</td></tr><tr><td>2</td><td>HAE1T</td><td>Harju Elekter Group</td><td>5.2000</td><td>5.0878 (-2.16%)</td><td>5.4702 (+5.20%)</td><td>HOLD</td><td>HOLD</td><td>7.59%</td><td>100</td><td>+118</td><td>613.60</td><td>218</td><td>1133.60</td><td>0.1440</td><td>2.23%</td><td>14.40</td><td>31.39</td><td>WAIT</td><td>126.44</td></tr><tr><td>2</td><td>TVE1T</td><td>Tallinna Vesi</td><td>10.8000</td><td>nan (+nan%)</td><td>nan (+nan%)</td><td>HOLD</td><td>nan</td><td>3.01%</td><td>0</td><td>+41</td><td>442.80</td><td>41</td><td>442.80</td><td>0.5180</td><td>3.53%</td><td>0.00</td><td>21.24</td><td>WAIT</td><td>79.54</td></tr><tr><td>2</td><td>TAL1T</td><td>Tallink Grupp</td><td>0.6470</td><td>0.6432 (-0.59%)</td><td>0.6499 (+0.45%)</td><td>HOLD</td><td>HOLD</td><td>5.75%</td><td>700</td><td>+632</td><td>408.90</td><td>1332</td><td>861.80</td><td>0.0300</td><td>4.84%</td><td>21.00</td><td>39.96</td><td>WAIT</td><td>199.80</td></tr><tr><td>2</td><td>VIRSI</td><td>VIRŠI-A</td><td>4.4000</td><td>4.4001 (+0.00%)</td><td>4.4419 (+0.95%)</td><td>BUY</td><td>HOLD</td><td>1.73%</td><td>0</td><td>+59</td><td>259.60</td><td>59</td><td>259.60</td><td>0.0685</td><td>1.29%</td><td>0.00</td><td>4.04</td><td>WAIT</td><td>16.07</td></tr><tr><td>2</td><td>AKO1L</td><td>Akola Group</td><td>1.8750</td><td>1.7805 (-5.04%)</td><td>1.8885 (+0.72%)</td><td>HOLD</td><td>HOLD</td><td>1.45%</td><td>0</td><td>+115</td><td>215.62</td><td>115</td><td>215.62</td><td>0.0355</td><td>1.97%</td><td>0.00</td><td>4.08</td><td>WAIT</td><td>0.00</td></tr><tr><td>2</td><td>RSU1L</td><td>Rokiškio sūris</td><td>4.2600</td><td>4.3021 (+0.99%)</td><td>4.5619 (+7.09%)</td><td>BUY</td><td>BUY</td><td>4.02%</td><td>91</td><td>+50</td><td>213.00</td><td>141</td><td>600.66</td><td>0.1600</td><td>3.95%</td><td>14.56</td><td>22.56</td><td>BUY</td><td>98.70</td></tr><tr><td>2</td><td>CPA1T</td><td>Coop Pank</td><td>2.3750</td><td>2.3222 (-2.22%)</td><td>2.3933 (+0.77%)</td><td>HOLD</td><td>HOLD</td><td>1.28%</td><td>0</td><td>+80</td><td>190.00</td><td>80</td><td>190.00</td><td>0.0594</td><td>2.26%</td><td>0.00</td><td>4.75</td><td>WAIT</td><td>21.36</td></tr><tr><td>2</td><td>DGR1R</td><td>DelfinGroup</td><td>1.7150</td><td>1.6663 (-2.84%)</td><td>1.7512 (+2.11%)</td><td>HOLD</td><td>HOLD</td><td>0.40%</td><td>0</td><td>+34</td><td>58.31</td><td>34</td><td>58.31</td><td>0.0957</td><td>5.17%</td><td>0.00</td><td>3.25</td><td>SKIP</td><td>11.12</td></tr><tr><td>2</td><td>TEL1L</td><td>Telia Lietuva</td><td>2.2500</td><td>2.2122 (-1.68%)</td><td>2.3018 (+2.30%)</td><td>HOLD</td><td>HOLD</td><td>0.37%</td><td>0</td><td>+24</td><td>54.00</td><td>24</td><td>54.00</td><td>0.1000</td><td>4.35%</td><td>0.00</td><td>2.40</td><td>SKIP</td><td>7.44</td></tr><tr><td></td><td>TOTAL</td><td></td><td></td><td></td><td></td><td></td><td></td><td>100.00%</td><td>3758</td><td>+4876</td><td>5681.55</td><td>8634</td><td>14934.20</td><td></td><td>4.07%</td><td>441.44</td><td>624.91</td><td></td><td>2255.99</td></tr></tbody></table>
 
@@ -106221,7 +111629,7 @@ Allocation change is the optimiser's target quantity, not an instruction to trad
 </details>
 
 <details markdown="1" class="trade-decision-section">
-<summary><strong>Table 2.e. Previous execution plan — before the liquidity filter — Update2 penalty, no sales</strong></summary>
+<summary><strong>Table 3.e. Previous execution plan — before the liquidity filter — Update2 penalty, no sales</strong></summary>
 
 <table markdown="0" class="trade-decision-table retained-improvement-table"><thead><tr><th><span>Share</span></th><th><span>Company</span></th><th><span>Last price</span></th><th><span>Current shares</span></th><th><span>Add shares</span></th><th><span>Target shares</span></th><th><span>Additional investment EUR</span></th><th><span>Final value EUR</span></th><th><span>Target weight</span></th><th><span>2025 dividend/share</span></th><th><span>Theoretical 2025 dividends EUR</span></th><th><span>2026 dividend/share</span></th><th><span>Theoretical 2026 dividends EUR</span></th><th><span>Historical theoretical dividends EUR</span></th><th><span>Technical timing</span></th><th><span>Current execution decision</span></th><th><span>5y avg dividend/share EUR</span></th><th><span>5y avg dividend yield at ex-date price</span></th><th><span>Current quantity: avg annual dividends EUR</span></th><th><span>Update quantity: avg annual dividends EUR</span></th></tr></thead><tbody><tr><td>KNE1L</td><td>KN Energies</td><td>0.4770</td><td>928</td><td>+1254</td><td>2182</td><td>598.16</td><td>1040.81</td><td>6.94%</td><td>0.0227</td><td>49.53</td><td>0.0286</td><td>62.41</td><td>140.52</td><td>HOLD</td><td>WAIT</td><td>0.0129</td><td>4.01%</td><td>11.95</td><td>28.10</td></tr><tr><td>MOLNR</td><td>J. Molner</td><td>19.8000</td><td>0</td><td>+29</td><td>29</td><td>574.20</td><td>574.20</td><td>3.88%</td><td>0.0000</td><td>0.00</td><td>0.0000</td><td>0.00</td><td>0.00</td><td>HOLD</td><td>WAIT</td><td>0.0000</td><td>0.00%</td><td>0.00</td><td>0.00</td></tr><tr><td>DGR1R</td><td>DelfinGroup</td><td>1.7150</td><td>0</td><td>+317</td><td>317</td><td>543.66</td><td>543.66</td><td>3.63%</td><td>0.0981</td><td>31.10</td><td>0.0699</td><td>22.16</td><td>103.72</td><td>HOLD</td><td>WAIT</td><td>0.0957</td><td>5.17%</td><td>0.00</td><td>30.34</td></tr><tr><td>RSU1L</td><td>Rokiškio sūris</td><td>4.2600</td><td>91</td><td>+125</td><td>216</td><td>532.50</td><td>920.16</td><td>6.16%</td><td>0.2000</td><td>43.20</td><td>0.2000</td><td>43.20</td><td>151.20</td><td>BUY</td><td>BUY</td><td>0.1600</td><td>3.95%</td><td>14.56</td><td>34.56</td></tr><tr><td>LHV1T</td><td>LHV Group</td><td>3.2500</td><td>0</td><td>+150</td><td>150</td><td>487.50</td><td>487.50</td><td>3.27%</td><td>0.0900</td><td>13.50</td><td>0.1700</td><td>25.50</td><td>64.50</td><td>HOLD</td><td>WAIT</td><td>0.1660</td><td>2.47%</td><td>0.00</td><td>24.90</td></tr><tr><td>EFT1T</td><td>EfTEN Real Estate Fund</td><td>19.5500</td><td>0</td><td>+20</td><td>20</td><td>391.00</td><td>391.00</td><td>2.65%</td><td>1.1100</td><td>22.20</td><td>1.2000</td><td>24.00</td><td>89.25</td><td>nan</td><td>WAIT</td><td>1.0525</td><td>4.58%</td><td>0.00</td><td>21.05</td></tr><tr><td>MRK1T</td><td>Merko Ehitus</td><td>26.9000</td><td>20</td><td>+14</td><td>34</td><td>376.60</td><td>914.60</td><td>6.14%</td><td>1.9000</td><td>64.60</td><td>1.2500</td><td>42.50</td><td>185.30</td><td>HOLD</td><td>WAIT</td><td>1.2900</td><td>4.99%</td><td>25.80</td><td>43.86</td></tr><tr><td>APG1L</td><td>Apranga</td><td>3.8000</td><td>200</td><td>+95</td><td>295</td><td>361.00</td><td>1121.00</td><td>7.49%</td><td>0.2400</td><td>70.80</td><td>0.2700</td><td>79.65</td><td>303.85</td><td>HOLD</td><td>WAIT</td><td>0.3060</td><td>6.89%</td><td>61.20</td><td>90.27</td></tr><tr><td>GRG1L</td><td>Grigeo Group</td><td>1.0100</td><td>543</td><td>+285</td><td>828</td><td>287.85</td><td>836.28</td><td>5.58%</td><td>0.0000</td><td>0.00</td><td>0.0500</td><td>41.40</td><td>140.76</td><td>HOLD</td><td>WAIT</td><td>0.0560</td><td>4.45%</td><td>30.41</td><td>46.37</td></tr><tr><td>VLP1L</td><td>Vilkyškių pieninė</td><td>15.7500</td><td>42</td><td>+17</td><td>59</td><td>267.75</td><td>929.25</td><td>6.24%</td><td>0.0000</td><td>0.00</td><td>0.0000</td><td>0.00</td><td>0.00</td><td>HOLD</td><td>WAIT</td><td>0.3090</td><td>3.57%</td><td>12.98</td><td>18.23</td></tr><tr><td>TEL1L</td><td>Telia Lietuva</td><td>2.2500</td><td>0</td><td>+111</td><td>111</td><td>249.75</td><td>249.75</td><td>1.67%</td><td>0.1100</td><td>12.21</td><td>0.1400</td><td>15.54</td><td>34.41</td><td>HOLD</td><td>WAIT</td><td>0.1000</td><td>4.35%</td><td>0.00</td><td>11.10</td></tr><tr><td>CPA1T</td><td>Coop Pank</td><td>2.3750</td><td>0</td><td>+92</td><td>92</td><td>218.50</td><td>218.50</td><td>1.47%</td><td>0.0700</td><td>6.44</td><td>0.0650</td><td>5.98</td><td>24.56</td><td>HOLD</td><td>WAIT</td><td>0.0594</td><td>2.26%</td><td>0.00</td><td>5.46</td></tr><tr><td>PZV1L</td><td>Pieno žvaigždės</td><td>1.7900</td><td>0</td><td>+112</td><td>112</td><td>200.48</td><td>200.48</td><td>1.35%</td><td>0.1400</td><td>15.68</td><td>0.1400</td><td>15.68</td><td>47.04</td><td>HOLD</td><td>WAIT</td><td>0.0840</td><td>5.63%</td><td>0.00</td><td>9.41</td></tr><tr><td>HAE1T</td><td>Harju Elekter Group</td><td>5.2000</td><td>100</td><td>+38</td><td>138</td><td>197.60</td><td>717.60</td><td>4.79%</td><td>0.1500</td><td>20.70</td><td>0.2500</td><td>34.50</td><td>80.04</td><td>HOLD</td><td>WAIT</td><td>0.1440</td><td>2.23%</td><td>14.40</td><td>19.87</td></tr><tr><td>AKO1L</td><td>Akola Group</td><td>1.8750</td><td>0</td><td>+93</td><td>93</td><td>174.38</td><td>174.38</td><td>1.17%</td><td>0.0000</td><td>0.00</td><td>0.0000</td><td>0.00</td><td>0.00</td><td>HOLD</td><td>WAIT</td><td>0.0355</td><td>1.97%</td><td>0.00</td><td>3.30</td></tr><tr><td>TAL1T</td><td>Tallink Grupp</td><td>0.6470</td><td>700</td><td>+207</td><td>907</td><td>133.93</td><td>586.83</td><td>3.91%</td><td>0.0600</td><td>54.42</td><td>0.0300</td><td>27.21</td><td>136.05</td><td>HOLD</td><td>WAIT</td><td>0.0300</td><td>4.84%</td><td>21.00</td><td>27.21</td></tr><tr><td>ROE1L</td><td>Artea Bankas</td><td>0.8190</td><td>416</td><td>+111</td><td>527</td><td>90.91</td><td>431.61</td><td>2.88%</td><td>0.0610</td><td>32.15</td><td>0.0000</td><td>0.00</td><td>71.67</td><td>BUY</td><td>SKIP</td><td>0.0434</td><td>4.62%</td><td>18.05</td><td>22.87</td></tr><tr><td>TKM1T</td><td>TKM Grupp</td><td>8.8800</td><td>288</td><td>+1</td><td>289</td><td>8.88</td><td>2566.32</td><td>17.17%</td><td>0.6500</td><td>187.85</td><td>0.6000</td><td>173.40</td><td>765.85</td><td>HOLD</td><td>SKIP</td><td>0.6660</td><td>5.38%</td><td>191.81</td><td>192.47</td></tr><tr><td>SAF1R</td><td>SAF Tehnika</td><td>16.5000</td><td>100</td><td>+0</td><td>100</td><td>0.00</td><td>1650.00</td><td>11.00%</td><td>0.0000</td><td>0.00</td><td>0.0000</td><td>0.00</td><td>0.00</td><td>HOLD</td><td>HOLD</td><td>0.1360</td><td>0.00%</td><td>13.60</td><td>13.60</td></tr><tr><td>TSM1T</td><td>Tallinna Sadam</td><td>1.1920</td><td>330</td><td>+0</td><td>330</td><td>0.00</td><td>393.36</td><td>2.62%</td><td>0.0730</td><td>24.09</td><td>0.0730</td><td>24.09</td><td>96.36</td><td>HOLD</td><td>HOLD</td><td>0.0778</td><td>4.59%</td><td>25.67</td><td>25.67</td></tr><tr><td>TOTAL</td><td></td><td></td><td>3758</td><td>+3071</td><td>6829</td><td>5694.64</td><td>14947.29</td><td>100.00%</td><td></td><td>648.47</td><td></td><td>637.21</td><td>2435.09</td><td></td><td></td><td></td><td>3.88%</td><td>441.44</td><td>668.66</td></tr></tbody></table>
 
@@ -106250,8 +111658,8 @@ update2_penalty_no_sell: common-sample netSD 0.646617, OUT=86, IN=0, fixed denom
 
 trade_shares is the optimiser's allocation change, not an instruction to trade immediately. current_execution_decision is the only action recommendation: BUY requires a material allocation increase and BUY technical timing; WAIT means timing does not support the planned increase; SKIP means the purchase is below EUR 100 or below 1% target weight; SELL follows a negative allocation change; zero change is HOLD. trade_EUR is the signed transaction amount before costs.
 
-<details markdown="1" class="report-section" id="analytics-2-6">
-<summary><strong>2.6. Portfolio sensitivity: adding or removing shares</strong></summary>
+<details markdown="1" class="report-section" id="analytics-3-6">
+<summary><strong>3.6. Portfolio sensitivity: adding or removing shares</strong></summary>
 <p>Each row adds only that instrument’s proposed extra quantity to Current. Existing units are retained. These individual changes do not sum to the complete portfolio change. Detailed removal experiments and interactive dominance differences are inside each instrument’s Portfolio sensitivity block.</p>
 
 <table markdown="0" class="dataframe research-table">
@@ -106473,14 +111881,14 @@ trade_shares is the optimiser's allocation change, not an instruction to trade i
 
 </details>
 
-<details markdown="1" class="report-section" id="analytics-2-7">
-<summary><strong>2.7. Portfolio allocation comparison</strong></summary>
+<details markdown="1" class="report-section" id="analytics-3-7">
+<summary><strong>3.7. Portfolio allocation comparison</strong></summary>
 <p>Main plan: no initial sales and signal-gated recourse. The two-stage no-sale benchmark and signal-gated sales-at-both-stages comparison are retained.</p><img loading="lazy" src="figures/update3/full_universe_allocation.png?v=9d2ed4ea6b30">
 </details>
 
-<details markdown="1" class="report-section" id="analytics-2-8">
-<summary><strong>2.8. Portfolio statistics and return distributions</strong></summary>
-<details markdown="1" class=""><summary><strong>Table 2.i. Full-period, in-sample and held-out statistics: Current and all updates</strong></summary>
+<details markdown="1" class="report-section" id="analytics-3-8">
+<summary><strong>3.8. Portfolio statistics and return distributions</strong></summary>
+<details markdown="1" class=""><summary><strong>Table 3.i. Full-period, in-sample and held-out statistics: Current and all updates</strong></summary>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -106831,20 +112239,20 @@ trade_shares is the optimiser's allocation change, not an instruction to trade i
 </table>
 
 <p>Common expanded-universe sample. Full-history-selected allocations are not independently tested by these descriptive time slices.</p>
-</details><p>Time segments describe fixed full-sample weights and are not independent out-of-sample forecasts.</p><details markdown="1" class=""><summary><strong>Figure 2.d. Return histograms with kernel density: Current, updates and S&P 500</strong></summary>
+</details><p>Time segments describe fixed full-sample weights and are not independent out-of-sample forecasts.</p><details markdown="1" class=""><summary><strong>Figure 3.d. Return histograms with kernel density: Current, updates and S&P 500</strong></summary>
 <img loading="lazy" src="figures/update3/integrated_histograms.png?v=890c54efc187" alt="Current and updated return histograms">
 </details>
 </details>
 
-<details markdown="1" class="report-section" id="analytics-2-9">
-<summary><strong>2.9. Stochastic dominance and efficient frontiers</strong></summary>
+<details markdown="1" class="report-section" id="analytics-3-9">
+<summary><strong>3.9. Stochastic dominance and efficient frontiers</strong></summary>
 
 ### Interactive distribution dominance and efficient frontiers
 
 This section compares Current, both original updates and the two direct penalised-netSD portfolios. Training and full-data portfolios remain available for comparison.
 
 <details markdown="1" class="dominance-components portfolio-dominance" open>
-<summary><strong>Figure 2.m. Interactive portfolio FSD, SSD and TSD analysis</strong></summary>
+<summary><strong>Figure 3.m. Interactive portfolio FSD, SSD and TSD analysis</strong></summary>
 
 Select FSD, SSD or TSD, choose any combination of portfolios and individual shares in the grouped multi-select list, and choose the comparison base. The upper panels show the selected component curves; the lower panels show the comparison base minus every other selected curve. The x-position and horizontal-magnification sliders select the interval, whose vertical scale is fitted automatically.
 
@@ -106853,7 +112261,7 @@ Select FSD, SSD or TSD, choose any combination of portfolios and individual shar
 </details>
 
 <details markdown="1" class="frontier-components" open>
-<summary><strong>Figure 2.n. Interactive Markowitz, MAD, Minimax, robust mean–CVaR and netSD frontiers</strong></summary>
+<summary><strong>Figure 3.n. Interactive Markowitz, MAD, Minimax, robust mean–CVaR and netSD frontiers</strong></summary>
 
 Two frontier panels are shown side by side: Markowitz is selected on the left and netSD on the right. Each panel has its own model selector, so either side can be changed to MAD, Minimax, robust mean–CVaR or another frontier. Current is always highlighted, and every share already held in Current is selected and labelled automatically. The historical mean-return/dividend-yield comparison is repeated below the interactive frontiers.
 
@@ -106863,9 +112271,9 @@ Two frontier panels are shown side by side: Markowitz is selected on the left an
 
 </details>
 
-<details markdown="1" class="report-section" id="analytics-2-10">
-<summary><strong>2.10. Concentration, diversification and benchmark risk</strong></summary>
-<details markdown="1" class=""><summary><strong>Table 2.k. Concentration and diversification: Current and every update</strong></summary>
+<details markdown="1" class="report-section" id="analytics-3-10">
+<summary><strong>3.10. Concentration, diversification and benchmark risk</strong></summary>
+<details markdown="1" class=""><summary><strong>Table 3.k. Concentration and diversification: Current and every update</strong></summary>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -106984,7 +112392,7 @@ Two frontier panels are shown side by side: Markowitz is selected on the left an
   </tbody>
 </table>
 
-</details><details markdown="1" class=""><summary><strong>Table 2.l. Systematic risk relative to S&P 500</strong></summary>
+</details><details markdown="1" class=""><summary><strong>Table 3.l. Systematic risk relative to S&P 500</strong></summary>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -107084,8 +112492,8 @@ Two frontier panels are shown side by side: Markowitz is selected on the left an
 </details><p>Lower HHI and lower largest-position weight mean less capital concentration. A diversification ratio above 1 means the portfolio SD is below the weighted average constituent SD. Fund units receive their actual economic weights; cash dividends and embedded fund expenses are reported separately.</p>
 </details>
 
-<details markdown="1" class="report-section" id="analytics-2-11">
-<summary><strong>2.11. Systemic risk and spillover dynamics</strong></summary>
+<details markdown="1" class="report-section" id="analytics-3-11">
+<summary><strong>3.11. Systemic risk and spillover dynamics</strong></summary>
 <details markdown="1" class=""><summary><strong>Fund and Update3 labels used in the network diagrams</strong></summary>
 
 <table markdown="0" class="dataframe research-table">
@@ -107535,11 +112943,11 @@ A satisfactory row requires α + β < 0.99 and Ljung–Box p-values above 0.05 f
 
 </details>
 
-<details markdown="1" class="report-section" id="analytics-2-12">
-<summary><strong>2.12. Cumulative performance, drawdowns and performance measures</strong></summary>
+<details markdown="1" class="report-section" id="analytics-3-12">
+<summary><strong>3.12. Cumulative performance, drawdowns and performance measures</strong></summary>
 
 <details markdown="1" class="cumulative-components" open>
-<summary><strong>Figure 2.o. Interactive cumulative value and drawdowns</strong></summary>
+<summary><strong>Figure 3.o. Interactive cumulative value and drawdowns</strong></summary>
 
 Select any combination of portfolios, S&P 500 and individual shares. The upper panel shows the value of one monetary unit invested at the common starting date; the lower panel shows drawdown from each series' previous peak. Current and both update scenarios are selected initially.
 
@@ -107548,7 +112956,7 @@ Select any combination of portfolios, S&P 500 and individual shares. The upper p
 </details>
 
 <details markdown="1">
-<summary><strong>Table 2.m. Complete PerformanceAnalytics measures for Current and all updates</strong></summary>
+<summary><strong>Table 3.m. Complete PerformanceAnalytics measures for Current and all updates</strong></summary>
 <p class="performance-table-note">72 measures · full common period · click a measure for its definition. Values shown to four decimals; hover over a value for more precision.</p><div class="performance-table-scroll" tabindex="0" role="region" aria-label="Complete portfolio performance measures">
 
 <table markdown="0" class="compact-performance-table"><thead><tr><th scope="col">Measure</th><th scope="col" title="Current">Current</th><th scope="col" title="Baltic_NetSD">Update: sales</th><th scope="col" title="curent_update_baltic">Update: no sales</th><th scope="col" title="update2_penalty_sell">Update2: sales</th><th scope="col" title="update2_penalty_no_sell">Update2: no sales</th><th scope="col" title="update3_funds_sell">Update3: sales</th><th scope="col" title="update3_funds_no_sell">Update3: no sales</th><th scope="col" title="update3_stochastic_no_sell">update3_stochastic_no_sell</th><th scope="col" title="update3_stochastic_sell">update3_stochastic_sell</th><th scope="col" title="update3_stochastic_recourse_sell">update3_stochastic_recourse_sell</th></tr></thead><tbody><tr><td><button type="button" class="metric-help-button" data-metric="ActiveReturn" data-meaning="Return above the benchmark." data-calculation="Rₚ − Rᵦ." data-interpretation="Higher is better.">ActiveReturn</button></td><td title="0.144880225784093">0.1449</td><td title="-0.0124272007211057">-0.0124</td><td title="0.0872358945822793">0.0872</td><td title="-0.0138485860952136">-0.0138</td><td title="0.08506836115427">0.0851</td><td title="0.0277687907360258">0.0278</td><td title="0.111945513721344">0.1119</td><td title="0.189666688293437">0.1897</td><td title="0.247415601161378">0.2474</td><td title="0.247415601161378">0.2474</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="AdjustedSharpe" data-meaning="Sharpe ratio adjusted for skewness and kurtosis." data-calculation="Sharpe corrected with the third and fourth moments." data-interpretation="Higher is better; negative is poor.">AdjustedSharpe</button></td><td title="-10.8852357746962">-10.8852</td><td title="1.2106586275913">1.2107</td><td title="-2.28770340390742">-2.2877</td><td title="1.20973888793597">1.2097</td><td title="-1.75233231848738">-1.7523</td><td title="1.73403901409401">1.7340</td><td title="-2.05844469785817">-2.0584</td><td title="-21.027558436551">-21.0276</td><td title="-32.5039856350852">-32.5040</td><td title="-32.5039856350852">-32.5040</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="AnnualizedReturn_Arithmetic" data-meaning="Annual return obtained from the average daily return." data-calculation="252 × mean(R)." data-interpretation="Higher is better, but ignores compounding.">AnnualizedReturn_Arithmetic</button></td><td title="0.255629064691144">0.2556</td><td title="0.124417236676795">0.1244</td><td title="0.208678592238891">0.2087</td><td title="0.123171808782275">0.1232</td><td title="0.206871289405844">0.2069</td><td title="0.159788788800435">0.1598</td><td title="0.22867813815963">0.2287</td><td title="0.289375492098496">0.2894</td><td title="0.331988385917295">0.3320</td><td title="0.331988385917295">0.3320</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="AnnualizedReturn_Geometric" data-meaning="Compounded annual return." data-calculation="[∏(1+Rₜ)]^(252/n) − 1." data-interpretation="Higher is better.">AnnualizedReturn_Geometric</button></td><td title="0.287051593336354">0.2871</td><td title="0.129744166831155">0.1297</td><td title="0.22940726213454">0.2294</td><td title="0.128322781457047">0.1283</td><td title="0.227239728706531">0.2272</td><td title="0.169940158288286">0.1699</td><td title="0.254116881273604">0.2541</td><td title="0.331838055845698">0.3318</td><td title="0.389586968713639">0.3896</td><td title="0.389586968713639">0.3896</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Appraisal" data-meaning="Alpha per unit of asset-specific risk." data-calculation="CAPM alpha / specific risk." data-interpretation="Higher is better.">Appraisal</button></td><td title="3.63140790914448">3.6314</td><td title="1.82020256303151">1.8202</td><td title="3.54008652491673">3.5401</td><td title="1.79596457394149">1.7960</td><td title="3.53297836508039">3.5330</td><td title="1.98529483227455">1.9853</td><td title="3.76392955023612">3.7639</td><td title="4.51698498997131">4.5170</td><td title="5.2460662628419">5.2461</td><td title="5.2460662628419">5.2461</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="ArithmeticReturn" data-meaning="Average one-period return." data-calculation="mean(Rₜ)." data-interpretation="Higher is better.">ArithmeticReturn</button></td><td title="0.0010144010503616">0.0010</td><td title="0.0004937191931618">0.0005</td><td title="0.0008280896517416">0.0008</td><td title="0.0004887770189772">0.0005</td><td title="0.0008209178151025">0.0008</td><td title="0.0006340824952398">0.0006</td><td title="0.0009074529292048">0.0009</td><td title="0.0011483154448353">0.0011</td><td title="0.0013174142298305">0.0013</td><td title="0.0013174142298305">0.0013</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="AverageDrawdown" data-meaning="Average loss across drawdown episodes." data-calculation="Mean peak-to-trough drawdown." data-interpretation="Closer to zero is better.">AverageDrawdown</button></td><td title="0.0078147714889112">0.0078</td><td title="0.0140915393966865">0.0141</td><td title="0.0073046897617528">0.0073</td><td title="0.0132850001079739">0.0133</td><td title="0.0071933904370443">0.0072</td><td title="0.0108223533220683">0.0108</td><td title="0.0067314886197704">0.0067</td><td title="0.0067602061779072">0.0068</td><td title="0.0066142207143137">0.0066</td><td title="0.0066142207143137">0.0066</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="AverageDrawdownLength" data-meaning="Average duration of drawdown episodes." data-calculation="Mean number of periods from peak to recovery/end." data-interpretation="Lower is better.">AverageDrawdownLength</button></td><td title="9.75">9.7500</td><td title="23.0909090909091">23.0909</td><td title="10">10.0000</td><td title="21.1666666666667">21.1667</td><td title="10.0869565217391">10.0870</td><td title="10.6086956521739">10.6087</td><td title="7.89655172413793">7.8966</td><td title="7.89285714285714">7.8929</td><td title="8.07407407407407">8.0741</td><td title="8.07407407407407">8.0741</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="AverageRecoveryTime" data-meaning="Average time needed to recover from a trough." data-calculation="Mean periods from trough back to the prior peak." data-interpretation="Lower is better.">AverageRecoveryTime</button></td><td title="4.95833333333333">4.9583</td><td title="13.5454545454545">13.5455</td><td title="5.04347826086957">5.0435</td><td title="12.6666666666667">12.6667</td><td title="5.1304347826087">5.1304</td><td title="4.69565217391304">4.6957</td><td title="3.68965517241379">3.6897</td><td title="3.82142857142857">3.8214</td><td title="4.37037037037037">4.3704</td><td title="4.37037037037037">4.3704</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="BernardoLedoit" data-meaning="Gain-loss ratio based on positive and negative returns." data-calculation="E[max(R,0)] / E[max(−R,0)]." data-interpretation="Higher is better; above 1 means gains dominate losses.">BernardoLedoit</button></td><td title="1.84797931067758">1.8480</td><td title="1.3712821437889">1.3713</td><td title="1.77474597426246">1.7747</td><td title="1.36498815303383">1.3650</td><td title="1.77129534361254">1.7713</td><td title="1.43017769823244">1.4302</td><td title="1.84287616787556">1.8429</td><td title="2.12944458555822">2.1294</td><td title="2.37930882894821">2.3793</td><td title="2.37930882894821">2.3793</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="BetaCoKurtosis" data-meaning="Sensitivity to joint extreme movements with the benchmark." data-calculation="Fourth-order co-moment scaled by benchmark co-kurtosis." data-interpretation="Lower absolute exposure is usually safer.">BetaCoKurtosis</button></td><td title="-0.0219995988138123">-0.0220</td><td title="0.0518990160047511">0.0519</td><td title="0.0002162755486326">0.0002</td><td title="0.051958832747851">0.0520</td><td title="0.0063511503027758">0.0064</td><td title="0.235537395733758">0.2355</td><td title="0.0481546016035187">0.0482</td><td title="0.0044899396166563">0.0045</td><td title="-0.03097248903045">-0.0310</td><td title="-0.03097248903045">-0.0310</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="BetaCoSkewness" data-meaning="Sensitivity to asymmetric joint movements with the benchmark." data-calculation="Third-order co-moment scaled by benchmark co-skewness." data-interpretation="Positive is generally preferable.">BetaCoSkewness</button></td><td title="-0.038898227107292">-0.0389</td><td title="-0.063330422933084">-0.0633</td><td title="0.0495048630395843">0.0495</td><td title="-0.0729003101787366">-0.0729</td><td title="0.0750872269053378">0.0751</td><td title="0.412217847901686">0.4122</td><td title="0.002512372567842">0.0025</td><td title="-0.104955371755414">-0.1050</td><td title="0.0710800110008065">0.0711</td><td title="0.0710800110008065">0.0711</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Burke" data-meaning="Return relative to several largest drawdowns." data-calculation="Excess return / root-sum-square of drawdowns." data-interpretation="Higher is better.">Burke</button></td><td title="4.62652044119542">4.6265</td><td title="1.8785023815072">1.8785</td><td title="4.35909110696271">4.3591</td><td title="1.84245198797398">1.8425</td><td title="4.36665144773462">4.3667</td><td title="2.42981531669479">2.4298</td><td title="4.26424570049835">4.2642</td><td title="5.80852234342821">5.8085</td><td title="7.80106008116538">7.8011</td><td title="7.80106008116538">7.8011</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="CAPMAlpha" data-meaning="Return unexplained by market exposure." data-calculation="mean(Rₚ−R𝒻) − β mean(Rᵦ−R𝒻)." data-interpretation="Higher is better.">CAPMAlpha</button></td><td title="0.0010216517218069">0.0010</td><td title="0.0004786135750123">0.0005</td><td title="0.0008205389016527">0.0008</td><td title="0.0004741464481931">0.0005</td><td title="0.0008109885609875">0.0008</td><td title="0.0004933077065444">0.0005</td><td title="0.0008708963162443">0.0009</td><td title="0.0011406478337632">0.0011</td><td title="0.0013251194489645">0.0013</td><td title="0.0013251194489645">0.0013</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="CAPMBeta" data-meaning="Sensitivity to benchmark movements." data-calculation="Cov(Rₚ,Rᵦ) / Var(Rᵦ)." data-interpretation="Above 1 means greater market sensitivity; below 1 means lower.">CAPMBeta</button></td><td title="-0.0129606797442043">-0.0130</td><td title="0.0270015102259342">0.0270</td><td title="0.0134970746460423">0.0135</td><td title="0.0261523562113202">0.0262</td><td title="0.0177486848846268">0.0177</td><td title="0.251636964398839">0.2516</td><td title="0.0653454727180123">0.0653</td><td title="0.0137059653382822">0.0137</td><td title="-0.0137731902912887">-0.0138</td><td title="-0.0137731902912887">-0.0138</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="CDD" data-meaning="Conditional drawdown at risk." data-calculation="Mean of drawdowns beyond the selected drawdown quantile." data-interpretation="Closer to zero is better.">CDD</button></td><td title="0.0204078354672419">0.0204</td><td title="0.022711265792388">0.0227</td><td title="0.0163745573159407">0.0164</td><td title="0.0224288555633883">0.0224</td><td title="0.0151935744758185">0.0152</td><td title="0.0213840429958172">0.0214</td><td title="0.0116502683444081">0.0117</td><td title="0.0146707242250353">0.0147</td><td title="0.0117910545085306">0.0118</td><td title="0.0117910545085306">0.0118</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Calmar" data-meaning="Annual return per unit of maximum drawdown." data-calculation="Annualised return / |maximum drawdown|." data-interpretation="Higher is better.">Calmar</button></td><td title="5.57558286939087">5.5756</td><td title="2.28962013225424">2.2896</td><td title="4.25183383438933">4.2518</td><td title="2.24368779090454">2.2437</td><td title="4.39197449681473">4.3920</td><td title="2.5267416417075">2.5267</td><td title="4.37218661427548">4.3722</td><td title="7.39146260459971">7.3915</td><td title="11.6219227548351">11.6219</td><td title="11.6219227548351">11.6219</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="CoKurtosis" data-meaning="Joint fourth-order tail dependence with the benchmark." data-calculation="E[(Rₚ−μₚ)(Rᵦ−μᵦ)³]." data-interpretation="Large absolute values mean stronger joint tail exposure.">CoKurtosis</button></td><td title="-3.6525399570256e-10">0.0000</td><td title="8.61666757162172e-10">0.0000</td><td title="3.59077040355975e-12">0.0000</td><td title="8.62659880019187e-10">0.0000</td><td title="1.0544660586901e-10">0.0000</td><td title="3.91057017253952e-09">0.0000</td><td title="7.99499154325812e-10">0.0000</td><td title="7.45453769101141e-11">0.0000</td><td title="-5.14228712576471e-10">0.0000</td><td title="-5.14228712576471e-10">0.0000</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="CoSkewness" data-meaning="Joint third-order asymmetry with the benchmark." data-calculation="E[(Rₚ−μₚ)(Rᵦ−μᵦ)²]." data-interpretation="More positive is generally preferable.">CoSkewness</button></td><td title="2.977916409609e-09">0.0000</td><td title="4.84836250145074e-09">0.0000</td><td title="-3.78992450207038e-09">0.0000</td><td title="5.5810006288474e-09">0.0000</td><td title="-5.74842356019672e-09">0.0000</td><td title="-3.15580010938343e-08">0.0000</td><td title="-1.92338727320194e-10">0.0000</td><td title="8.03502748248569e-09">0.0000</td><td title="-5.44164469425933e-09">0.0000</td><td title="-5.44164469425933e-09">0.0000</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="CumulativeReturn" data-meaning="Total compounded return over the displayed period." data-calculation="∏(1+Rₜ) − 1." data-interpretation="Higher is better.">CumulativeReturn</button></td><td title="0.313088652879553">0.3131</td><td title="0.140735292385093">0.1407</td><td title="0.249725082601205">0.2497</td><td title="0.139186250060204">0.1392</td><td title="0.247347024411738">0.2473</td><td title="0.184604728332036">0.1846</td><td title="0.276858047657527">0.2769</td><td title="0.362474921280508">0.3625</td><td title="0.426349224216784">0.4263</td><td title="0.426349224216784">0.4263</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="DRatio" data-meaning="Balance between cumulative losses and gains." data-calculation="Downside return contribution / upside return contribution." data-interpretation="Lower is better.">DRatio</button></td><td title="0.414633303417678">0.4146</td><td title="0.648217358415286">0.6482</td><td title="0.412726151829995">0.4127</td><td title="0.660883319824349">0.6609</td><td title="0.452394630969314">0.4524</td><td title="0.543832964770067">0.5438</td><td title="0.434822760899347">0.4348</td><td title="0.349194221175198">0.3492</td><td title="0.248241534544676">0.2482</td><td title="0.248241534544676">0.2482</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="DownCapture" data-meaning="Performance when the benchmark declines." data-calculation="Portfolio compound return / benchmark compound return on down-market days." data-interpretation="Lower is normally better when both returns are negative.">DownCapture</button></td><td title="-0.177985907923285">-0.1780</td><td title="-0.0777459368472735">-0.0777</td><td title="-0.108152272155187">-0.1082</td><td title="-0.0784267969018618">-0.0784</td><td title="-0.1008100321474">-0.1008</td><td title="0.189817464183741">0.1898</td><td title="-0.0673739519173686">-0.0674</td><td title="-0.177538427814773">-0.1775</td><td title="-0.228637687762689">-0.2286</td><td title="-0.228637687762689">-0.2286</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="DownNumber" data-meaning="Number of negative-return observations." data-calculation="Count(Rₜ &lt; 0)." data-interpretation="Lower is better, conditional on similar return.">DownNumber</button></td><td title="0.435483870967742">0.4355</td><td title="0.443548387096774">0.4435</td><td title="0.451612903225806">0.4516</td><td title="0.443548387096774">0.4435</td><td title="0.475806451612903">0.4758</td><td title="0.629032258064516">0.6290</td><td title="0.532258064516129">0.5323</td><td title="0.443548387096774">0.4435</td><td title="0.395161290322581">0.3952</td><td title="0.395161290322581">0.3952</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="DownPercent" data-meaning="Fraction of observations with negative return." data-calculation="Count(Rₜ&lt;0)/n." data-interpretation="Lower is better.">DownPercent</button></td><td title="0.887096774193548">0.8871</td><td title="0.895161290322581">0.8952</td><td title="0.903225806451613">0.9032</td><td title="0.895161290322581">0.8952</td><td title="0.895161290322581">0.8952</td><td title="0.82258064516129">0.8226</td><td title="0.895161290322581">0.8952</td><td title="0.903225806451613">0.9032</td><td title="0.895161290322581">0.8952</td><td title="0.895161290322581">0.8952</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="DownsideDeviation" data-meaning="Volatility below the minimum acceptable return." data-calculation="Root mean squared shortfall below MAR." data-interpretation="Lower is better.">DownsideDeviation</button></td><td title="0.0026875500112751">0.0027</td><td title="0.0027704949385595">0.0028</td><td title="0.0023129608098747">0.0023</td><td title="0.0027803223853068">0.0028</td><td title="0.002245970562631">0.0022</td><td title="0.0029296454942933">0.0029</td><td title="0.0023102596508674">0.0023</td><td title="0.0022718932982708">0.0023</td><td title="0.0021593237872376">0.0022</td><td title="0.0021593237872376">0.0022</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="DrawdownDeviation" data-meaning="Variability of drawdowns." data-calculation="Standard deviation of the drawdown series." data-interpretation="Lower is better.">DrawdownDeviation</button></td><td title="0.0042285341447016">0.0042</td><td title="0.0041011778371077">0.0041</td><td title="0.0039541826957022">0.0040</td><td title="0.0041478401356415">0.0041</td><td title="0.0038076345913606">0.0038</td><td title="0.0051706666030752">0.0052</td><td title="0.004209746212648">0.0042</td><td title="0.0037075594366131">0.0037</td><td title="0.0032044967119566">0.0032</td><td title="0.0032044967119566">0.0032</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="ES_Loss" data-meaning="Average loss in the worst 5% of observations." data-calculation="Mean loss conditional on loss ≥ 95% VaR." data-interpretation="Lower is better.">ES_Loss</button></td><td title="0.0090486307834449">0.0090</td><td title="0.0091994862051318">0.0092</td><td title="0.0080402492916961">0.0080</td><td title="0.0092320094627196">0.0092</td><td title="0.0078358332900947">0.0078</td><td title="0.0095278351929512">0.0095</td><td title="0.0081003432525853">0.0081</td><td title="0.0076886267411207">0.0077</td><td title="0.0072809172957616">0.0073</td><td title="0.0072809172957616">0.0073</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="FamaBeta" data-meaning="Beta estimated using Fama decomposition." data-calculation="Systematic risk divided by benchmark risk under the decomposition." data-interpretation="Lower means less systematic exposure.">FamaBeta</button></td><td title="0.628720467830078">0.6287</td><td title="0.547211484144522">0.5472</td><td title="0.507925674351587">0.5079</td><td title="0.548822161741205">0.5488</td><td title="0.502881743340375">0.5029</td><td title="0.590289619426267">0.5903</td><td title="0.518084845715988">0.5181</td><td title="0.57722312887644">0.5772</td><td title="0.589885782190913">0.5899</td><td title="0.589885782190913">0.5899</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="GeometricReturn" data-meaning="Average compounded one-period return." data-calculation="[∏(1+Rₜ)]^(1/n) − 1." data-interpretation="Higher is better.">GeometricReturn</button></td><td title="0.0010019063981161">0.0010</td><td title="0.0004842092790131">0.0005</td><td title="0.0008199079747752">0.0008</td><td title="0.0004792110782756">0.0005</td><td title="0.0008128997659877">0.0008</td><td title="0.0006230217782079">0.0006</td><td title="0.000898942078769">0.0009</td><td title="0.0011377895897564">0.0011</td><td title="0.0013064342227191">0.0013</td><td title="0.0013064342227191">0.0013</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Hurst" data-meaning="Persistence of the return process." data-calculation="Hurst exponent estimated from rescaled behaviour." data-interpretation="Near 0.5 suggests no persistence; above 0.5 persistence; below 0.5 mean reversion.">Hurst</button></td><td title="0.434306163940536">0.4343</td><td title="0.368999411509349">0.3690</td><td title="0.399311262327761">0.3993</td><td title="0.368606885607525">0.3686</td><td title="0.393210496230545">0.3932</td><td title="0.348170651000503">0.3482</td><td title="0.39010730653846">0.3901</td><td title="0.421392280286642">0.4214</td><td title="0.41544641982216">0.4154</td><td title="0.41544641982216">0.4154</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Information_Annualized" data-meaning="Annualised active return per unit of tracking error." data-calculation="Annualised active return / annualised tracking error." data-interpretation="Higher is better.">Information_Annualized</button></td><td title="0.95847662967751">0.9585</td><td title="-0.0878241640820502">-0.0878</td><td title="0.62011016729407">0.6201</td><td title="-0.0977334165015834">-0.0977</td><td title="0.608071130535267">0.6081</td><td title="0.23822488750322">0.2382</td><td title="0.827733391005846">0.8277</td><td title="1.30905716680956">1.3091</td><td title="1.66378272742905">1.6638</td><td title="1.66378272742905">1.6638</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Information_Daily" data-meaning="Daily active return per unit of tracking error." data-calculation="mean(Rₚ−Rᵦ) / sd(Rₚ−Rᵦ)." data-interpretation="Higher is better.">Information_Daily</button></td><td title="0.04980713968789">0.0498</td><td title="-0.0048727661091941">-0.0049</td><td title="0.0329799166933673">0.0330</td><td title="-0.0054259574701367">-0.0054</td><td title="0.0323684120635094">0.0324</td><td title="0.0129890907631879">0.0130</td><td title="0.0435819883982909">0.0436</td><td title="0.0668500094405964">0.0669</td><td title="0.0831362493865731">0.0831</td><td title="0.0831362493865731">0.0831</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="JensenAlpha" data-meaning="CAPM risk-adjusted excess return." data-calculation="Rₚ − [R𝒻 + β(Rᵦ−R𝒻)]." data-interpretation="Higher is better.">JensenAlpha</button></td><td title="0.288894230899994">0.2889</td><td title="0.125905325196358">0.1259</td><td title="0.227488364574157">0.2275</td><td title="0.12460466520977">0.1246</td><td title="0.224716373904229">0.2247</td><td title="0.134164586933004">0.1342</td><td title="0.244826626053936">0.2448</td><td title="0.32988946000993">0.3299</td><td title="0.391545122012909">0.3915</td><td title="0.391545122012909">0.3915</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Kappa" data-meaning="Return above MAR per unit of lower partial moment risk." data-calculation="[mean(R)−MAR] / LPMₙ^(1/n)." data-interpretation="Higher is better.">Kappa</button></td><td title="0.237360195328702">0.2374</td><td title="0.119274803821039">0.1193</td><td title="0.237379537884671">0.2374</td><td title="0.117671013669706">0.1177</td><td title="0.24546431131662">0.2455</td><td title="0.154105207462518">0.1541</td><td title="0.265492999284582">0.2655</td><td title="0.334940512931611">0.3349</td><td title="0.406972000424037">0.4070</td><td title="0.406972000424037">0.4070</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Kelly" data-meaning="Approximate growth-optimal risky allocation." data-calculation="Expected excess return / variance under the quadratic approximation." data-interpretation="Higher implies a larger theoretical allocation; unstable extreme values require caution.">Kelly</button></td><td title="40.225213316969">40.2252</td><td title="25.8448173740547">25.8448</td><td title="50.3130782674854">50.3131</td><td title="25.4361490743361">25.4361</td><td title="50.8828941687606">50.8829</td><td title="28.5245850600047">28.5246</td><td title="52.9939378572172">52.9939</td><td title="54.0228659888045">54.0229</td><td title="59.3458502374517">59.3459</td><td title="59.3458502374517">59.3459</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Kurtosis" data-meaning="Tail thickness relative to a normal distribution." data-calculation="Standardised fourth central moment." data-interpretation="Higher means more extreme-tail risk.">Kurtosis</button></td><td title="14.9692880464127">14.9693</td><td title="5.61385844025188">5.6139</td><td title="7.52088190520761">7.5209</td><td title="5.62325275042082">5.6233</td><td title="7.25128142131854">7.2513</td><td title="4.34180282904105">4.3418</td><td title="6.75149949352748">6.7515</td><td title="14.3382627959785">14.3383</td><td title="14.8534236854166">14.8534</td><td title="14.8534236854166">14.8534</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="M2Sortino" data-meaning="Sortino ratio translated into return units." data-calculation="Risk-free return plus Sortino × benchmark downside deviation." data-interpretation="Higher is better.">M2Sortino</button></td><td title="0.303734323437629">0.3037</td><td title="0.137386081991691">0.1374</td><td title="0.247360455602591">0.2474</td><td title="0.135834033666607">0.1358</td><td title="0.245956978286431">0.2460</td><td title="0.178674675794568">0.1787</td><td title="0.273830536131363">0.2738</td><td title="0.357513362530892">0.3575</td><td title="0.421669027860956">0.4217</td><td title="0.421669027860956">0.4217</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="MSquaredExcess" data-meaning="M² return advantage over the benchmark." data-calculation="Modigliani measure − benchmark return." data-interpretation="Higher is better.">MSquaredExcess</button></td><td title="0.275259366210205">0.2753</td><td title="0.083112943581541">0.0831</td><td title="0.270960927360851">0.2710</td><td title="0.0802362091468229">0.0802</td><td title="0.271153456167879">0.2712</td><td title="0.127582849848416">0.1276</td><td title="0.304964239200433">0.3050</td><td title="0.378853484872676">0.3789</td><td title="0.453761491900288">0.4538</td><td title="0.453761491900288">0.4538</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Martin" data-meaning="Return per unit of ulcer-index risk." data-calculation="Excess return / Ulcer Index." data-interpretation="Higher is better.">Martin</button></td><td title="16.8533303881088">16.8533</td><td title="7.24042396176984">7.2404</td><td title="14.7861760174072">14.7862</td><td title="7.06116494797626">7.0612</td><td title="15.8152823381677">15.8153</td><td title="10.5112316211984">10.5112</td><td title="17.3624082330357">17.3624</td><td title="26.5978446342525">26.5978</td><td title="37.1079052300117">37.1079</td><td title="37.1079052300117">37.1079</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="MaximumDrawdown" data-meaning="Largest historical peak-to-trough loss." data-calculation="min(wealth/running maximum − 1)." data-interpretation="Closer to zero is better.">MaximumDrawdown</button></td><td title="0.0514836923888666">0.0515</td><td title="0.0566662412700817">0.0567</td><td title="0.0539548983027199">0.0540</td><td title="0.0571927974904718">0.0572</td><td title="0.0517397650809074">0.0517</td><td title="0.0672566421050652">0.0673</td><td title="0.0581212339939691">0.0581</td><td title="0.0448947757158638">0.0449</td><td title="0.0335217310364205">0.0335</td><td title="0.0335217310364205">0.0335</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Modigliani" data-meaning="Sharpe performance translated to benchmark volatility." data-calculation="R𝒻 + Sharpeₚ × volatilityᵦ." data-interpretation="Higher is better.">Modigliani</button></td><td title="0.001613437294101">0.0016</td><td title="0.0009022456718607">0.0009</td><td title="0.0016303362746897">0.0016</td><td title="0.0008905927148178">0.0009</td><td title="0.0016324271580225">0.0016</td><td title="0.0010741887954189">0.0011</td><td title="0.001751552736407">0.0018</td><td title="0.0019893787815995">0.0020</td><td title="0.0022333378250574">0.0022</td><td title="0.0022333378250574">0.0022</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="NetSelectivity" data-meaning="Selection return after diversification adjustment." data-calculation="Selectivity minus diversification contribution." data-interpretation="Higher is better.">NetSelectivity</button></td><td title="0.197665544616855">0.1977</td><td title="0.0519463617900261">0.0519</td><td title="0.157194774397071">0.1572</td><td title="0.0502959841793119">0.0503</td><td title="0.155744343538765">0.1557</td><td title="0.0860178758425506">0.0860</td><td title="0.18046005025006">0.1805</td><td title="0.24977345423054">0.2498</td><td title="0.305722100359921">0.3057</td><td title="0.305722100359921">0.3057</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Omega" data-meaning="Probability-weighted gains relative to losses at a threshold." data-calculation="Integral above threshold / integral below threshold." data-interpretation="Higher is better; above 1 is favourable.">Omega</button></td><td title="1.84797931067758">1.8480</td><td title="1.3712821437889">1.3713</td><td title="1.77474597426246">1.7747</td><td title="1.36498815303383">1.3650</td><td title="1.77129534361254">1.7713</td><td title="1.43017769823244">1.4302</td><td title="1.84287616787556">1.8429</td><td title="2.12944458555822">2.1294</td><td title="2.37930882894821">2.3793</td><td title="2.37930882894821">2.3793</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="OmegaExcessReturn" data-meaning="Excess return adjusted by Omega downside structure." data-calculation="Excess return expressed through the Omega function." data-interpretation="Higher is better.">OmegaExcessReturn</button></td><td title="0.275933985280013">0.2759</td><td title="0.118283439879188">0.1183</td><td title="0.219839220004726">0.2198</td><td title="0.116821401233263">0.1168</td><td title="0.217948805629135">0.2179</td><td title="0.157821072052521">0.1578</td><td title="0.244560013048281">0.2446</td><td title="0.322439897995598">0.3224</td><td title="0.380654477994387">0.3807</td><td title="0.380654477994387">0.3807</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="PainIndex" data-meaning="Average depth of all drawdowns." data-calculation="Mean absolute percentage drawdown." data-interpretation="Lower is better.">PainIndex</button></td><td title="0.0115604316840437">0.0116</td><td title="0.0126286929894511">0.0126</td><td title="0.0099906445802018">0.0100</td><td title="0.0128585808581491">0.0129</td><td title="0.0092656691980582">0.0093</td><td title="0.0104502139623737">0.0105</td><td title="0.008799624001189">0.0088</td><td title="0.0077155567463367">0.0077</td><td title="0.0066579867413249">0.0067</td><td title="0.0066579867413249">0.0067</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="PainRatio" data-meaning="Return earned per unit of average drawdown pain." data-calculation="Excess return / Pain Index." data-interpretation="Higher is better.">PainRatio</button></td><td title="24.8305254666706">24.8305</td><td title="10.2737604706625">10.2738</td><td title="22.9622083232897">22.9622</td><td title="9.97954462258736">9.9795</td><td title="24.5249127558051">24.5249</td><td title="16.2618831442266">16.2619</td><td title="28.8781522073293">28.8782</td><td title="43.0089579735449">43.0090</td><td title="58.514230179454">58.5142</td><td title="58.514230179454">58.5142</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Prospect" data-meaning="Behavioural value of gains and losses." data-calculation="Probability-weighted prospect utility with losses penalised more strongly." data-interpretation="Higher is better.">Prospect</button></td><td title="-0.178943646556895">-0.1789</td><td title="-0.421762573114561">-0.4218</td><td title="-0.219621856971772">-0.2196</td><td title="-0.426271147536733">-0.4263</td><td title="-0.226851974264795">-0.2269</td><td title="-0.412479652478821">-0.4125</td><td title="-0.189725656834752">-0.1897</td><td title="-0.0539504496015732">-0.0540</td><td title="0.057196735689551">0.0572</td><td title="0.057196735689551">0.0572</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Rachev" data-meaning="Extreme gains relative to extreme losses." data-calculation="Upper-tail expected return / lower-tail expected loss." data-interpretation="Higher is better; above 1 means the selected upper tail exceeds the lower tail.">Rachev</button></td><td title="1.55549546683158">1.5555</td><td title="1.2647941341892">1.2648</td><td title="1.39647943184752">1.3965</td><td title="1.2638286920496">1.2638</td><td title="1.42762964133493">1.4276</td><td title="1.24013074304007">1.2401</td><td title="1.39069777673319">1.3907</td><td title="1.68389717046664">1.6839</td><td title="1.87233382494722">1.8723</td><td title="1.87233382494722">1.8723</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Selectivity" data-meaning="Return attributed to security selection." data-calculation="Portfolio return minus return implied by systematic risk." data-interpretation="Higher is better.">Selectivity</button></td><td title="0.288894230899994">0.2889</td><td title="0.125905325196358">0.1259</td><td title="0.227488364574157">0.2275</td><td title="0.12460466520977">0.1246</td><td title="0.224716373904229">0.2247</td><td title="0.134164586933004">0.1342</td><td title="0.244826626053936">0.2448</td><td title="0.32988946000993">0.3299</td><td title="0.391545122012909">0.3915</td><td title="0.391545122012909">0.3915</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Sharpe_Annualized" data-meaning="Annual excess return per unit of annual volatility." data-calculation="Annualised excess return / annualised SD." data-interpretation="Higher is better.">Sharpe_Annualized</button></td><td title="3.20667018217006">3.2067</td><td title="1.79319289539534">1.7932</td><td title="3.24025652442272">3.2403</td><td title="1.77003290645727">1.7700</td><td title="3.24441210782363">3.2444</td><td title="2.13492597009197">2.1349</td><td title="3.48117150438406">3.4812</td><td title="3.9538453978477">3.9538</td><td title="4.43870848684853">4.4387</td><td title="4.43870848684853">4.4387</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Sharpe_Daily" data-meaning="Daily excess return per unit of daily volatility." data-calculation="mean(R−R𝒻) / sd(R−R𝒻)." data-interpretation="Higher is better.">Sharpe_Daily</button></td><td title="0.202001234253051">0.2020</td><td title="0.112960534618665">0.1130</td><td title="0.20411697494469">0.2041</td><td title="0.111501592449686">0.1115</td><td title="0.204378752093053">0.2044</td><td title="0.134487694866587">0.1345</td><td title="0.219293192184877">0.2193</td><td title="0.249068848692911">0.2491</td><td title="0.279612352345548">0.2796</td><td title="0.279612352345548">0.2796</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Sharpe_ES" data-meaning="Excess return per unit of expected shortfall." data-calculation="Mean excess return / ES loss." data-interpretation="Higher is better.">Sharpe_ES</button></td><td title="0.112105474810354">0.1121</td><td title="0.0536681269097908">0.0537</td><td title="0.102993031894778">0.1030</td><td title="0.0529437302844028">0.0529</td><td title="0.104764584022005">0.1048</td><td title="0.0665505314060131">0.0666</td><td title="0.1120264784971">0.1120</td><td title="0.149352476521434">0.1494</td><td title="0.180940694189375">0.1809</td><td title="0.180940694189375">0.1809</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Sharpe_VaR" data-meaning="Excess return per unit of value at risk." data-calculation="Mean excess return / VaR loss." data-interpretation="Higher is better.">Sharpe_VaR</button></td><td title="0.19230082828221">0.1923</td><td title="0.0952367589705136">0.0952</td><td title="0.177468362039557">0.1775</td><td title="0.0943779822115719">0.0944</td><td title="0.177120576149746">0.1771</td><td title="0.0997422397212253">0.0997</td><td title="0.178324736737047">0.1783</td><td title="0.237808567905147">0.2378</td><td title="0.293878122634668">0.2939</td><td title="0.293878122634668">0.2939</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Skewness" data-meaning="Asymmetry of returns." data-calculation="Standardised third central moment." data-interpretation="More positive is generally preferable.">Skewness</button></td><td title="1.37272850509065">1.3727</td><td title="0.0848152142710626">0.0848</td><td title="0.503148094609338">0.5031</td><td title="0.0877989796122407">0.0878</td><td title="0.600054261950278">0.6001</td><td title="0.188437588332265">0.1884</td><td title="0.522192036910828">0.5222</td><td title="1.61941914052693">1.6194</td><td title="1.90310925257541">1.9031</td><td title="1.90310925257541">1.9031</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Sortino" data-meaning="Excess return per unit of downside risk." data-calculation="Mean(R−MAR) / downside deviation." data-interpretation="Higher is better.">Sortino</button></td><td title="0.377444529815603">0.3774</td><td title="0.178206134322909">0.1782</td><td title="0.358021479744169">0.3580</td><td title="0.175798684915218">0.1758</td><td title="0.365506934401173">0.3655</td><td title="0.216436594965141">0.2164</td><td title="0.392792614831916">0.3928</td><td title="0.505444267875289">0.5054</td><td title="0.610104995655094">0.6101</td><td title="0.610104995655094">0.6101</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="SpecificRisk" data-meaning="Risk not explained by the benchmark." data-calculation="Residual volatility from the market regression." data-interpretation="Lower is safer, although it may reflect diversifiable opportunity.">SpecificRisk</button></td><td title="0.0795543321290103">0.0796</td><td title="0.0691710514826796">0.0692</td><td title="0.0642606792158867">0.0643</td><td title="0.069380358063694">0.0694</td><td title="0.0636053637138862">0.0636</td><td title="0.0675791750181971">0.0676</td><td title="0.0650454857845512">0.0650</td><td title="0.07303310963892">0.0730</td><td title="0.0746359467066283">0.0746</td><td title="0.0746359467066283">0.0746</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Sterling" data-meaning="Return relative to drawdown risk." data-calculation="Annualised excess return / average or adjusted maximum drawdown." data-interpretation="Higher is better.">Sterling</button></td><td title="1.89493396160081">1.8949</td><td title="0.828156505060239">0.8282</td><td title="1.49009394740698">1.4901</td><td title="0.816340083678614">0.8163</td><td title="1.49756214915297">1.4976</td><td title="1.01604430263245">1.0160</td><td title="1.60710155653918">1.6071</td><td title="2.29020027952165">2.2902</td><td title="2.91777949319255">2.9178</td><td title="2.91777949319255">2.9178</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="SystematicRisk" data-meaning="Risk explained by benchmark exposure." data-calculation="β² Var(Rᵦ), or its square-root form under the implementation." data-interpretation="Lower is safer; higher means more market-driven risk.">SystematicRisk</button></td><td title="-0.00164333504938">-0.0016</td><td title="0.0034236266165217">0.0034</td><td title="0.0017113466475289">0.0017</td><td title="0.0033159590726832">0.0033</td><td title="0.0022504248640471">0.0023</td><td title="0.0319060305074771">0.0319</td><td title="0.0082854069196362">0.0083</td><td title="0.0017378327117495">0.0017</td><td title="-0.001746356425293">-0.0017</td><td title="-0.001746356425293">-0.0017</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="TotalRisk" data-meaning="Total return variability." data-calculation="Standard deviation or variance-based total risk used by the decomposition." data-interpretation="Lower is safer.">TotalRisk</button></td><td title="0.0795713033107878">0.0796</td><td title="0.0692557259901942">0.0693</td><td title="0.0642834628861506">0.0643</td><td title="0.0694595541996786">0.0695</td><td title="0.0636451624653788">0.0636</td><td title="0.0747324539867665">0.0747</td><td title="0.0655710545040432">0.0656</td><td title="0.0730537826951112">0.0731</td><td title="0.0746563748219723">0.0747</td><td title="0.0746563748219723">0.0747</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="TrackingError_Annualized" data-meaning="Annualised volatility of returns relative to the benchmark." data-calculation="sd(Rₚ−Rᵦ) × √252." data-interpretation="Lower means closer benchmark tracking.">TrackingError_Annualized</button></td><td title="0.151156764075552">0.1512</td><td title="0.141500928030417">0.1415</td><td title="0.140678058808396">0.1407</td><td title="0.141697554336384">0.1417</td><td title="0.139898700797367">0.1399</td><td title="0.116565447997747">0.1166</td><td title="0.135243443043067">0.1352</td><td title="0.144888010319438">0.1449</td><td title="0.148706677309781">0.1487</td><td title="0.148706677309781">0.1487</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="TrackingError_Daily" data-meaning="Daily volatility of active returns." data-calculation="sd(Rₚ−Rᵦ)." data-interpretation="Lower means closer benchmark tracking.">TrackingError_Daily</button></td><td title="0.0095219811125993">0.0095</td><td title="0.0089137206155555">0.0089</td><td title="0.0088618847269127">0.0089</td><td title="0.0089261069085746">0.0089</td><td title="0.0088127897869253">0.0088</td><td title="0.0073429330205921">0.0073</td><td title="0.0085195361129543">0.0085</td><td title="0.0091270867442902">0.0091</td><td title="0.009367640153724">0.0094</td><td title="0.009367640153724">0.0094</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Treynor_Annualized" data-meaning="Annual excess return per unit of beta." data-calculation="Annualised excess return / β." data-interpretation="Higher is better when beta is meaningful.">Treynor_Annualized</button></td><td title="-22.1478810526676">-22.1479</td><td title="4.80507074402599">4.8051</td><td title="16.9968136170758">16.9968</td><td title="4.90673882001889">4.9067</td><td title="12.8031868379925">12.8032</td><td title="0.675338612092517">0.6753</td><td title="3.88882153122075">3.8888</td><td title="24.2112137055272">24.2112</td><td title="-28.2858916833557">-28.2859</td><td title="-28.2858916833557">-28.2859</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Treynor_Daily" data-meaning="Daily excess return per unit of beta." data-calculation="Mean daily excess return / β." data-interpretation="Higher is better.">Treynor_Daily</button></td><td title="-0.0773035379231695">-0.0773</td><td title="0.017932673949033">0.0179</td><td title="0.0607470875191231">0.0607</td><td title="0.0183238204008637">0.0183</td><td title="0.045800563324658">0.0458</td><td title="0.0024758754330721">0.0025</td><td title="0.0137567614308691">0.0138</td><td title="0.0830141884700707">0.0830</td><td title="-0.0948534213997929">-0.0949</td><td title="-0.0948534213997929">-0.0949</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="UlcerIndex" data-meaning="Depth and duration of drawdowns." data-calculation="Root mean square percentage drawdown." data-interpretation="Lower is better.">UlcerIndex</button></td><td title="0.0170323364418755">0.0170</td><td title="0.0179194157022043">0.0179</td><td title="0.0155149824988196">0.0155</td><td title="0.0181730326939643">0.0182</td><td title="0.014368363703386">0.0144</td><td title="0.0161674829755975">0.0162</td><td title="0.0146360388410919">0.0146</td><td title="0.012476125806764">0.0125</td><td title="0.010498759396382">0.0105</td><td title="0.010498759396382">0.0105</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="UpCapture" data-meaning="Performance when the benchmark rises." data-calculation="Portfolio compound return / benchmark compound return on up-market days." data-interpretation="Higher is better.">UpCapture</button></td><td title="0.15975147785908">0.1598</td><td title="0.0851278259107077">0.0851</td><td title="0.161254122636157">0.1613</td><td title="0.0830640652742126">0.0831</td><td title="0.16517665763517">0.1652</td><td title="0.349865166280846">0.3499</td><td title="0.219177556000494">0.2192</td><td title="0.200723601114069">0.2007</td><td title="0.209559200334802">0.2096</td><td title="0.209559200334802">0.2096</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="UpNumber" data-meaning="Number of positive-return observations." data-calculation="Count(Rₜ &gt; 0)." data-interpretation="Higher is generally better.">UpNumber</button></td><td title="0.567375886524823">0.5674</td><td title="0.50354609929078">0.5035</td><td title="0.602836879432624">0.6028</td><td title="0.50354609929078">0.5035</td><td title="0.581560283687943">0.5816</td><td title="0.730496453900709">0.7305</td><td title="0.631205673758865">0.6312</td><td title="0.588652482269504">0.5887</td><td title="0.638297872340426">0.6383</td><td title="0.638297872340426">0.6383</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="UpPercent" data-meaning="Fraction of observations with positive return." data-calculation="Count(Rₜ&gt;0)/n." data-interpretation="Higher is generally better.">UpPercent</button></td><td title="0.170212765957447">0.1702</td><td title="0.170212765957447">0.1702</td><td title="0.184397163120567">0.1844</td><td title="0.163120567375887">0.1631</td><td title="0.177304964539007">0.1773</td><td title="0.24822695035461">0.2482</td><td title="0.184397163120567">0.1844</td><td title="0.198581560283688">0.1986</td><td title="0.191489361702128">0.1915</td><td title="0.191489361702128">0.1915</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="UpsidePotential" data-meaning="Average return above the minimum acceptable return." data-calculation="Mean[max(R−MAR,0)]." data-interpretation="Higher is better.">UpsidePotential</button></td><td title="0.822555070913601">0.8226</td><td title="0.658181100272886">0.6582</td><td title="0.820136149116922">0.8201</td><td title="0.65745455087678">0.6575</td><td title="0.839394061333947">0.8394</td><td title="0.71956959292031">0.7196</td><td title="0.85880723216525">0.8588</td><td title="0.952960041856779">0.9530</td><td title="1.05243160362753">1.0524</td><td title="1.05243160362753">1.0524</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="UpsideRisk" data-meaning="Magnitude of returns above the target." data-calculation="Root upper partial moment relative to MAR." data-interpretation="Higher means more upside dispersion, not conventional risk.">UpsideRisk</button></td><td title="0.0043510241714914">0.0044</td><td title="0.0034060391229982">0.0034</td><td title="0.0034255175218333">0.0034</td><td title="0.0034137817480645">0.0034</td><td title="0.0034210643610875">0.0034</td><td title="0.0037372242685982">0.0037</td><td title="0.0035421643571545">0.0035</td><td title="0.0041635419816123">0.0042</td><td title="0.0043806637488939">0.0044</td><td title="0.0043806637488939">0.0044</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="VaR_Loss" data-meaning="Loss threshold exceeded by the worst 5% of observations." data-calculation="95th percentile of loss −R." data-interpretation="Lower is better.">VaR_Loss</button></td><td title="0.0052750737447319">0.0053</td><td title="0.0051841242656603">0.0052</td><td title="0.0046661255123155">0.0047</td><td title="0.005178930588721">0.0052</td><td title="0.004634796436121">0.0046</td><td title="0.0063572113180138">0.0064</td><td title="0.0050887664034126">0.0051</td><td title="0.0048287387412102">0.0048</td><td title="0.0044828591458925">0.0045</td><td title="0.0044828591458925">0.0045</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Volatility" data-meaning="Daily standard deviation of returns." data-calculation="sd(Rₜ)." data-interpretation="Lower means more stable returns.">Volatility</button></td><td title="0.005021756694273">0.0050</td><td title="0.0043707228797083">0.0044</td><td title="0.0040569367244738">0.0041</td><td title="0.0043835877877514">0.0044</td><td title="0.0040166495131979">0.0040</td><td title="0.0047147993418196">0.0047</td><td title="0.0041380807136039">0.0041</td><td title="0.0046104338252718">0.0046</td><td title="0.0047115737869922">0.0047</td><td title="0.0047115737869922">0.0047</td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Volatility_Annualized" data-meaning="Annualised standard deviation." data-calculation="sd(Rₜ) × √252." data-interpretation="Lower means more stable returns.">Volatility_Annualized</button></td><td title="0.0797179161463222">0.0797</td><td title="0.0693830747357301">0.0694</td><td title="0.0644018739460972">0.0644</td><td title="0.069587298819661">0.0696</td><td title="0.0637623342937818">0.0638</td><td title="0.074845119240154">0.0748</td><td title="0.0656899948398524">0.0657</td><td title="0.0731883680267366">0.0732</td><td title="0.0747939151446745">0.0748</td><td title="0.0747939151446745">0.0748</td></tr></tbody></table>
@@ -107558,13 +112966,13 @@ Select any combination of portfolios, S&P 500 and individual shares. The upper p
 
 </details>
 
-<details markdown="1" class="report-section" id="analytics-2-13">
-<summary><strong>2.13. Decision risks and implementability</strong></summary>
+<details markdown="1" class="report-section" id="analytics-3-13">
+<summary><strong>3.13. Decision risks and implementability</strong></summary>
 
 ### Liquidity and turnover
 
 <details markdown="1">
-<summary><strong>Table 2.n. Proposed trades and observed one-year market liquidity</strong></summary>
+<summary><strong>Table 3.n. Proposed trades and observed one-year market liquidity</strong></summary>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -107831,7 +113239,7 @@ Select any combination of portfolios, S&P 500 and individual shares. The upper p
 Median daily turnover and zero-volume frequency use official Nasdaq Baltic price-volume observations from the last 365 calendar days of the sample. Trade-to-turnover is the proposed absolute order value divided by median daily turnover. HIGH flags median turnover below EUR 5,000 or an order above 20% of median turnover; MEDIUM flags below EUR 20,000 or above 10%. These are transparent screening thresholds, not a guarantee of execution. HIGH trades should be split, limited or omitted after checking the live order book.
 
 <details markdown="1">
-<summary><strong>Table 2.o. Illustrative transaction-cost and turnover scenario</strong></summary>
+<summary><strong>Table 3.o. Illustrative transaction-cost and turnover scenario</strong></summary>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -107867,7 +113275,7 @@ The cost scenario uses max(EUR 3, 0.25% of trade value) commission plus an assum
 ### Capital concentration
 
 <details markdown="1">
-<summary><strong>Table 2.p. Top-position and effective-position concentration</strong></summary>
+<summary><strong>Table 3.p. Top-position and effective-position concentration</strong></summary>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -107990,7 +113398,7 @@ The cost scenario uses max(EUR 3, 0.25% of trade value) commission plus an assum
 
 
 <details markdown="1">
-<summary><strong>Table 2.q. Baltic_NetSD: country, list and industry concentration</strong></summary>
+<summary><strong>Table 3.q. Baltic_NetSD: country, list and industry concentration</strong></summary>
 
 | dimension | category | capital_percent |
 | --- | --- | --- |
@@ -108023,7 +113431,7 @@ The cost scenario uses max(EUR 3, 0.25% of trade value) commission plus an assum
 
 
 <details markdown="1">
-<summary><strong>Table 2.r. curent_update_baltic: country, list and industry concentration</strong></summary>
+<summary><strong>Table 3.r. curent_update_baltic: country, list and industry concentration</strong></summary>
 
 | dimension | category | capital_percent |
 | --- | --- | --- |
@@ -108056,7 +113464,7 @@ The cost scenario uses max(EUR 3, 0.25% of trade value) commission plus an assum
 
 
 <details markdown="1">
-<summary><strong>Table 2.s. update2_penalty_sell: country, list and industry concentration</strong></summary>
+<summary><strong>Table 3.s. update2_penalty_sell: country, list and industry concentration</strong></summary>
 
 | dimension | category | capital_percent |
 | --- | --- | --- |
@@ -108089,7 +113497,7 @@ The cost scenario uses max(EUR 3, 0.25% of trade value) commission plus an assum
 
 
 <details markdown="1">
-<summary><strong>Table 2.t. update2_penalty_no_sell: country, list and industry concentration</strong></summary>
+<summary><strong>Table 3.t. update2_penalty_no_sell: country, list and industry concentration</strong></summary>
 
 | dimension | category | capital_percent |
 | --- | --- | --- |
@@ -108141,8 +113549,8 @@ Share returns are close-to-close price returns, excluding cash dividends; accumu
 
 </details>
 
-<details markdown="1" class="report-section" id="analytics-2-14">
-<summary><strong>2.14. Model</strong></summary>
+<details markdown="1" class="report-section" id="analytics-3-14">
+<summary><strong>3.14. Model</strong></summary>
 <h3>Active full-universe, two-stage no-sales model</h3><details markdown="1" class=""><summary><strong>Mathematical model</strong></summary>
 $$\max_{q,c_0,\{y_s,c_s\}}\frac1{13}\sum_s\left[\frac{OUT_s(q,y_s)-IN_s(q,y_s)}{175}-P_s(y_s)\right].$$
 $$\sum_i p_{i0}q_i+c_0=15000,\quad c_s=c_0+\sum_i p_{is\tau}(q_i-y_{is})\ge0.$$
@@ -108209,15 +113617,15 @@ $$\sum_jw_j=1,\qquad w_j\ge0,\qquad \boldsymbol\mu^\top\mathbf w\ge\mu_{\mathrm{
 
 $$w_j=0\quad\text{if individual }\operatorname{netSD}_j\le0\text{ or the share is outside the admissible universe}.$$
 
-The common-network scores in Section 2.1 supersede numerical score quotes from the previous share-only reference universe. NetSD is discrete and the numerical search does not certify a global optimum.
+The common-network scores in Section 3.1 supersede numerical score quotes from the previous share-only reference universe. NetSD is discrete and the numerical search does not certify a global optimum.
 
 
 
 </details>
 </details>
 
-<details markdown="1" class="report-section" id="analytics-2-15">
-<summary><strong>2.15. Data coverage</strong></summary>
+<details markdown="1" class="report-section" id="analytics-3-15">
+<summary><strong>3.15. Data coverage</strong></summary>
 <p>The official catalogue contains 91 instruments: 67 Nasdaq Baltic shares and 24 Swedbank-managed mutual funds offered by Swedbank Lithuania. Forecasts cover 86 instruments. Share closes are through 30 October 2026; the newest available EUR fund NAVs are dated 29 October. Comparable portfolio diagnostics use 272 returns from 2025-10-01 through 2026-10-29, because younger funds lack earlier histories. Longer individual histories still enter their forecast fits.</p><p>Sources: <a href="https://nasdaqbaltic.com/statistics/en/shares?pg=mainlist" target="_blank" rel="noopener">official Nasdaq Baltic share catalogue and daily charts</a>; <a href="https://www.swedbank.lt/private/investor/stock/allFunds" target="_blank" rel="noopener">Swedbank Lithuania offered funds</a>; official Robur EUR NAV histories for the exact offered share classes. Third-party funds and non-offered classes are outside this Swedbank-managed-fund catalogue.</p>
 
 <table markdown="0" class="dataframe research-table">
@@ -108298,6 +113706,12 @@ document.querySelectorAll('table.scenario-period-table').forEach(function(table)
     cells.forEach((cell,index)=>{if(!Number.isFinite(values[index]))return;let score=spread?((values[index]-minimum)/spread):.5;if(direction<0)score=1-score;const hue=120*score;cell.style.backgroundColor=`hsl(${hue} 68% 82%)`;cell.style.color='#17212b';cell.title=`Investor-benefit score within this column: ${(100*score).toFixed(0)}%`;} );
   });
 });
+document.querySelectorAll('.report-chapter-nav a').forEach(function(link) {
+  link.addEventListener('click',function(){
+    const target=document.getElementById(link.hash.slice(1));
+    if(target&&target.tagName==='DETAILS')target.open=true;
+  });
+});
 document.querySelectorAll('details.stock-profile').forEach(function(profile) {
   profile.addEventListener('toggle', function() {
     if (!profile.open) return;
@@ -108349,7 +113763,7 @@ document.querySelectorAll('details.portfolio-sensitivity').forEach(function(sens
   });
 });
 
-const reportVersion='dfc5064c899b';
+const reportVersion='1b9e1443b561';
 const palette = ['#1b1b1b','#e41a1c','#377eb8','#4daf4a','#984ea3','#ff7f00','#a65628','#f781bf','#008080','#6a3d9a','#b2182b','#2166ac','#1b9e77','#d95f02'];
 const linePatterns = [[],[10,5],[2,4],[10,4,2,4],[14,5],[6,3],[2,3,8,3],[12,3,3,3]];
 function initialiseDominanceExplorer(box) {
