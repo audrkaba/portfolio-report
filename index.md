@@ -171,7 +171,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - analysis updated 2026-11-03 14:37 (Europe/Vilnius); return analysis through 2026-10-30; valuation prices through 2026-10-30
+# Baltic investment plan - analysis updated 2026-11-03 17:07 (Europe/Vilnius); return analysis through 2026-10-30; valuation prices through 2026-10-30
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -69467,7 +69467,31 @@ $$\sum_i p_{i0}q_i+c_0=15000,\quad c_s=c_0+\sum_i p_{is\tau}(q_i-y_{is})\ge0.$$
 $$q_i\ge q_i^{Current},\quad y_{is}\ge q_i,\quad q_i,y_{is}\in\mathbb Z_{\ge0},\quad g(s)=g(s')\Rightarrow y_{is}=y_{is'}.$$
 $$\mathcal X_s=\{R^{hist}_{1s},\ldots,R^{hist}_{272,s},R_{s1},\ldots,R_{s5}\}.$$
 <p>Asset index i runs across the complete forecast-eligible catalogue, not a preselected fund trio. Historical portfolio weights freeze the final allocation including cash; forecast returns follow the two-stage wealth path. Exact empirical dominance checks include TSD interior extrema and its mean condition. The original position-count, effective-count, small-stock-position and dividend penalties remain, plus the 0.002 squared liquidity-utilisation penalty. Recurring fund expenses already enter NAV returns. Execution delays, bid–ask spreads and taxes remain unmodelled.</p>
-</details></details><!-- NO_SALE_BASELINE_END --></details><!-- STOCHASTIC_UPDATE3_END -->
+</details></details><!-- NO_SALE_BASELINE_END --><details markdown="1" id="stochastic-regime-model" class="report-section"><summary><strong>1.4.j. Regime-conditioned two-stage netSD portfolio</strong></summary><div markdown="0" class="regime-model-math"><p><strong>New comparison model:</strong> regime-conditioned scenarios are added alongside the frozen main plan; its quantities are not silently overwritten.</p>
+<p>Initially, all M = 13 forecast methods have equal probability. At recourse, n is an observed two-day price-prefix node. The future forecast method and hidden regime remain uncertain.</p>
+\[\pi_{nrm}=p_n\,\eta_{m\mid n}\left[\boldsymbol{\alpha}_{n,m}P^{5-\tau}\right]_r,\qquad \sum_{n,r}\pi_{nrm}=\frac1M,\quad\tau=2.\]
+<p>Here p_n is the observed-node probability, eta is the conditional forecast-method probability, alpha is the conditional regime mixture at recourse, P is the published Markov transition matrix, and r is the final regime.</p>
+\[\max_{q^0,\{q^n\}}\;\sum_{s=1}^{208}\pi_s\left[\frac{\operatorname{OUT}_s(q^0,q^{n(s)})-\operatorname{IN}_s(q^0,q^{n(s)})}{175}-\operatorname{Penalty}(q^{n(s)},p_{\tau,n(s)})\right].\]
+<p>Before tree compression, every asset's daily log return combines its forecast method with a common market draw and a jointly sampled residual vector:</p>
+\[\ell_{i,t,s}=\widehat\ell_{i,t,m(s)}+\boldsymbol\beta_i^\top(\boldsymbol f_{t,s}-\overline{\boldsymbol f})+\varepsilon_{i,t,s}.\]
+<p>Each forecast method supplies a centre, not the entire final stochastic path: even the No change centre receives market/residual uncertainty. The two components of f are Baltic and World log returns sampled together from the appropriate regime. Beta comes from a native R regression with explicit short-history shrinkage. Residuals use the same historical row across assets. All five dates are generated jointly; the first two price dates are then represented by four conditional-mean observed-prefix nodes. Closed local markets have zero return.</p>
+<p>The vectors q0 and qn contain integer share/fund quantities. OUT and IN count exact empirical FSD, SSD and TSD comparisons against the same frozen 86 assets and five legacy portfolios. Every distribution includes all 272 historical observations and all five sequential forecast returns. Historical observations are evaluated counterfactually at the node's portfolio weights; they are not realised returns of the future strategy.</p>
+\[p_0^\top q^0+c_0=15000,\quad q^0\ge q^{\rm Current},\quad c_0\ge0;\qquad p_{\tau,n}^\top q^n+c_n=p_{\tau,n}^\top q^0+c_0,\quad c_n\ge0.\]
+\[q_i^n\ge(1-g_{i,n})q_i^0,\qquad g_{i,n}=\mathbf1\!\left\{\mathbb E\!\left[\frac{p_{i,5}}{p_{i,\tau}}-1\mid n\right]&lt;0\;\text{ and }\;\mathrm{SELLvotes}_{i,n}\ge3\right\}.\]
+<p>Initial sales are prohibited. Recourse sales require a negative conditional remaining-return forecast and at least three of four SELL votes (Bollinger, RSI, MACD, Stochastic RSI). Indicators use only history and the shared observed prefix. The sale gate cannot read the realised future leaf.</p>
+\[q_i^0,q_i^n\in\mathbb Z_{\ge0},\quad q_i^0,q_i^n\le U_i,\qquad 2\le\sum_{i\in\mathcal F}\mathbf1\{q_i&gt;0\}\le4.\]
+\[\sum_i\mu_i\frac{p_{i,\tau,n}q_i^n}{\sum_j p_{j,\tau,n}q_j^n}\ge\boldsymbol\mu^\top\boldsymbol w^{\rm Current}\quad\text{at every recourse node}.\]
+<p>Here mu is the historical vector of asset mean returns and wCurrent is the existing invested portfolio's weight vector.</p>
+<p>The inherited upper bounds U enforce the five-times-weekly-volume rule and trading activity while preserving existing positions. RKB1R and shares with nonpositive individual historical netSD cannot be purchased. New share positions contain zero or at least ten shares; selected funds have at least EUR 300 at the relevant stage. The minimum historical mean-return constraint applies at each recourse node.</p>
+\[\begin{aligned}\operatorname{Penalty}={}&amp;0.00015N_{\rm new}^2+\frac{0.001}{\sum_iw_i^2}\\ &amp;+0.006\sum_{i\in\mathcal N}\left(\frac{(0.01-w_i)_+}{0.01}\right)^2\\ &amp;+0.006\sum_{i\in\mathcal S:q_i&gt;0}\frac{(10-q_id_i)_+}{10}+0.002\sum_{i\in\mathcal S}\left(\frac{5q_i}{V_i}\right)^2.\end{aligned}\]
+<p>Weights w are position values divided by invested value; Nnew counts new share positions, N is their set, S is the share set, d is historical average annual dividend per share, V is conservative weekly volume, and (x)+ means max(x,0). Penalty terms are unchanged. Recurring fund expenses are already embedded in NAV.</p>
+<p>VSS and EVPI in section 1.4.f still refer to the original no-sale benchmark. They have not been recomputed for this new regime-scenario model.</p>
+</div><details markdown="1" class="regime-stochastic-results">
+<summary>Orders, scenario results and historical performance</summary>
+
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/regime-stochastic-results.html?v=d146f7824086" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+
+</details></details></details><!-- STOCHASTIC_UPDATE3_END -->
 <details markdown="1" class="report-section" id="analytics-1-3">
 <summary><strong>1.5. Earnings outcomes and subsequent price changes</strong></summary>
 
@@ -74933,7 +74957,12 @@ The BH adjustment covers the full family of share-level, pooled and pairwise tes
 
 <p>The first paper motivates separate binary hidden states, a four-regime combination, transition estimates, stationary and first-passage characteristics, and worsening-transition stress tests. The second adds per-index own-history/market-conditioned estimation and weighted aggregation. Here stocks/bonds are replaced by Baltic/global equities, predictors are lagged, both equity thresholds are 1.3, and probabilities are explicitly posterior-threshold decoded. This implementation uses EM-fitted Gaussian HMMs in depmixS4; it does not implement the separate Lavielle–Lebarbier MCMC change-point procedure discussed in the first paper.</p><p><a href="https://link.springer.com/article/10.1007/s10479-024-06041-1" target="_blank" rel="noopener">Stress testing for IInd pillar life-cycle pension funds using hidden Markov model</a>; <a href="https://link.springer.com/article/10.1186/s13362-024-00144-x" target="_blank" rel="noopener">Systemic risk assessment through connectedness and spillover</a>; <a href="https://www.jstatsoft.org/article/view/v036i07" target="_blank" rel="noopener">depmixS4 methods</a>; <a href="https://cran.r-project.org/web/packages/markovchain/vignettes/an_introduction_to_markovchain_package.pdf" target="_blank" rel="noopener">markovchain methods</a>.</p>
 
-</details></details><!-- MARKET_ANALYSIS_END -->
+</details><details markdown="1" id="market-scenario-regimes" class="report-section"><summary><strong>2.11. Applying market regimes to portfolio scenarios</strong></summary><details markdown="1" class="regime-stochastic-market">
+<summary>Regime probabilities and scenario information nodes</summary>
+
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/regime-stochastic-market.html?v=1b6ea8cb3492" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+
+</details></details></details><!-- MARKET_ANALYSIS_END -->
 
 <details markdown="1" class="analytics-group" id="analytics-3" open>
 <summary><strong>3. Portfolio analytics</strong></summary>
@@ -113738,7 +113767,7 @@ document.querySelectorAll('details.portfolio-sensitivity').forEach(function(sens
   });
 });
 
-const reportVersion='e63bc57fa6a9';
+const reportVersion='612a8d27741b';
 const palette = ['#1b1b1b','#e41a1c','#377eb8','#4daf4a','#984ea3','#ff7f00','#a65628','#f781bf','#008080','#6a3d9a','#b2182b','#2166ac','#1b9e77','#d95f02'];
 const linePatterns = [[],[10,5],[2,4],[10,4,2,4],[14,5],[6,3],[2,3,8,3],[12,3,3,3]];
 function isExplorerVisible(box) {
@@ -114066,6 +114095,17 @@ document.addEventListener('toggle',function(event){
   if(event.target.tagName==='DETAILS'&&event.target.open)event.target.querySelectorAll('.native-report-fragment').forEach(initialiseReportFragment);
 },true);
 document.querySelectorAll('.native-report-fragment').forEach(initialiseReportFragment);
+
+// A report cross-reference must reveal its collapsed ancestor sections.
+function revealReportAnchor() {
+  let id;try{id=decodeURIComponent(location.hash.slice(1));}catch(_){return;}
+  if(!id)return;
+  const target=document.getElementById(id);if(!target)return;
+  for(let node=target;node;node=node.parentElement)if(node.tagName==='DETAILS')node.open=true;
+  requestAnimationFrame(()=>target.scrollIntoView({block:'start'}));
+}
+window.addEventListener('hashchange',revealReportAnchor);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',revealReportAnchor);else revealReportAnchor();
 
 </script>
 </body></html>
