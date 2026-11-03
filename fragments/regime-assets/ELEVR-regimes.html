@@ -1,0 +1,1242 @@
+<details class=""><summary>Histograms: full history and four market regimes</summary><img loading="lazy" src="figures/regime_assets/ELEVR.png?v=5bb4a393a248" alt="ELEVR full and regime histograms"></details><table class="dataframe research-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Sample</th>
+      <th>Observations</th>
+      <th>Benchmark pairs</th>
+      <th>Start</th>
+      <th>End</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Full</td>
+      <td>512</td>
+      <td>497</td>
+      <td>2024-10-17</td>
+      <td>2026-10-30</td>
+    </tr>
+    <tr>
+      <td>Last126</td>
+      <td>126</td>
+      <td>122</td>
+      <td>2026-05-06</td>
+      <td>2026-10-30</td>
+    </tr>
+    <tr>
+      <td>R1</td>
+      <td>435</td>
+      <td>421</td>
+      <td>2024-10-17</td>
+      <td>2026-10-30</td>
+    </tr>
+    <tr>
+      <td>R2</td>
+      <td>7</td>
+      <td>7</td>
+      <td>2025-01-02</td>
+      <td>2026-03-13</td>
+    </tr>
+    <tr>
+      <td>R3</td>
+      <td>37</td>
+      <td>37</td>
+      <td>2024-10-31</td>
+      <td>2026-01-20</td>
+    </tr>
+    <tr>
+      <td>R4</td>
+      <td>14</td>
+      <td>14</td>
+      <td>2025-03-03</td>
+      <td>2025-04-10</td>
+    </tr>
+  </tbody>
+</table><details class=""><summary>All 72 PerformanceAnalytics measures: full history, last 126 and four regimes</summary><p>Reuses the existing cleaned price/NAV histories. HMM regimes are assigned only on exactly matching dates. Full and Last 126 retain all available return dates; regime columns omit dates without a common market label. Regime definitions use the full-history HMM fit and are descriptive, not an independent investment backtest.</p><p><strong>Path measures:</strong> drawdown, recovery and cumulative-return measures in regime columns use a synthetic sequence of the selected regime observations in chronological order, with other days omitted. They are not the actual drawdown or realised investment return across the omitted days. Annualisation uses 252 selected observations, not elapsed calendar time. Benchmark measures use exact-date pairs with S&amp;P 500 USD price returns; currency and dividend bases differ.</p><p>— means the native R function is undefined for this sample, insufficient observations, or a missing benchmark; hover the cell for the specific reason. Sparse regimes are labelled with their actual sample size.</p><table class="regime-performance"><thead><tr><th>Measure</th><th>Full history</th><th>Last 126</th><th>R1</th><th>R2</th><th>R3</th><th>R4</th></tr></thead><tbody><tr><td><button type="button" class="metric-help-button" data-metric="ActiveReturn" data-meaning="Return above the benchmark." data-calculation="Rₚ − Rᵦ." data-interpretation="Higher is better.">ActiveReturn</button></td><td><span title="">-0.152576</span></td><td><span title="">-0.108631</span></td><td><span title="">-0.235237</span></td><td><span title="">-0.452213</span></td><td><span title="">-0.375473</span></td><td><span title="">0.946473</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="AdjustedSharpe" data-meaning="Sharpe ratio adjusted for skewness and kurtosis." data-calculation="Sharpe corrected with the third and fourth moments." data-interpretation="Higher is better; negative is poor.">AdjustedSharpe</button></td><td><span title="">-0.044546</span></td><td><span title="">-0.358022</span></td><td><span title="">0.013597</span></td><td><span title="">-1.592440</span></td><td><span title="">0.730182</span></td><td><span title="">1.670163</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="AnnualizedReturn_Arithmetic" data-meaning="Annual return obtained from the average daily return." data-calculation="252 × mean(R)." data-interpretation="Higher is better, but ignores compounding.">AnnualizedReturn_Arithmetic</button></td><td><span title="">-0.003223</span></td><td><span title="">-0.021955</span></td><td><span title="">0.001027</span></td><td><span title="">-0.100037</span></td><td><span title="">0.037341</span></td><td><span title="">0.108516</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="AnnualizedReturn_Geometric" data-meaning="Compounded annual return." data-calculation="[∏(1+Rₜ)]^(252/n) − 1." data-interpretation="Higher is better.">AnnualizedReturn_Geometric</button></td><td><span title="">-0.005825</span></td><td><span title="">-0.023460</span></td><td><span title="">-0.001818</span></td><td><span title="">-0.096511</span></td><td><span title="">0.036661</span></td><td><span title="">0.112039</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Appraisal" data-meaning="Alpha per unit of asset-specific risk." data-calculation="CAPM alpha / specific risk." data-interpretation="Higher is better.">Appraisal</button></td><td><span title="">-0.236478</span></td><td><span title="">-0.447433</span></td><td><span title="">-0.157699</span></td><td><span title="">-1.073836</span></td><td><span title="">0.268686</span></td><td><span title="">1.325059</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="ArithmeticReturn" data-meaning="Average one-period return." data-calculation="mean(Rₜ)." data-interpretation="Higher is better.">ArithmeticReturn</button></td><td><span title="">-0.000013</span></td><td><span title="">-0.000087</span></td><td><span title="">0.000004</span></td><td><span title="">-0.000397</span></td><td><span title="">0.000148</span></td><td><span title="">0.000431</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="AverageDrawdown" data-meaning="Average loss across drawdown episodes." data-calculation="Mean peak-to-trough drawdown." data-interpretation="Closer to zero is better.">AverageDrawdown</button></td><td><span title="">0.024727</span></td><td><span title="">0.014671</span></td><td><span title="">0.019308</span></td><td><span title="">0.004460</span></td><td><span title="">0.012315</span></td><td><span title="">0.008824</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="AverageDrawdownLength" data-meaning="Average duration of drawdown episodes." data-calculation="Mean number of periods from peak to recovery/end." data-interpretation="Lower is better.">AverageDrawdownLength</button></td><td><span title="">71.285714</span></td><td><span title="">59.500000</span></td><td><span title="">53.500000</span></td><td><span title="">2.000000</span></td><td><span title="">13.500000</span></td><td><span title="">4.000000</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="AverageRecoveryTime" data-meaning="Average time needed to recover from a trough." data-calculation="Mean periods from trough back to the prior peak." data-interpretation="Lower is better.">AverageRecoveryTime</button></td><td><span title="">43.285714</span></td><td><span title="">42.500000</span></td><td><span title="">33.625000</span></td><td><span title="">1.000000</span></td><td><span title="">11.000000</span></td><td><span title="">2.500000</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="BernardoLedoit" data-meaning="Gain-loss ratio based on positive and negative returns." data-calculation="E[max(R,0)] / E[max(−R,0)]." data-interpretation="Higher is better; above 1 means gains dominate losses.">BernardoLedoit</button></td><td><span title="">0.990322</span></td><td><span title="">0.930116</span></td><td><span title="">1.002994</span></td><td><span title="">0.688493</span></td><td><span title="">1.146618</span></td><td><span title="">1.292031</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="BetaCoKurtosis" data-meaning="Sensitivity to joint extreme movements with the benchmark." data-calculation="Fourth-order co-moment scaled by benchmark co-kurtosis." data-interpretation="Lower absolute exposure is usually safer.">BetaCoKurtosis</button></td><td><span title="">-0.018526</span></td><td><span title="">-0.013762</span></td><td><span title="">0.003501</span></td><td><span title="">0.303481</span></td><td><span title="">0.002145</span></td><td><span title="">-0.026273</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="BetaCoSkewness" data-meaning="Sensitivity to asymmetric joint movements with the benchmark." data-calculation="Third-order co-moment scaled by benchmark co-skewness." data-interpretation="Positive is generally preferable.">BetaCoSkewness</button></td><td><span title="">-0.047527</span></td><td><span title="">0.124833</span></td><td><span title="">0.047945</span></td><td><span title="skewness is close to zero. The classical definition of the coskewness statistic is not applicable and one should normalize using the comoment without standardization.">25.148322</span></td><td><span title="">-0.219477</span></td><td><span title="">-0.049683</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Burke" data-meaning="Return relative to several largest drawdowns." data-calculation="Excess return / root-sum-square of drawdowns." data-interpretation="Higher is better.">Burke</button></td><td><span title="">-0.072201</span></td><td><span title="">-0.646858</span></td><td><span title="">-0.022965</span></td><td><span title="">-1.644051</span></td><td><span title="">0.354300</span></td><td><span title="">8.291289</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="CAPMAlpha" data-meaning="Return unexplained by market exposure." data-calculation="mean(Rₚ−R𝒻) − β mean(Rᵦ−R𝒻)." data-interpretation="Higher is better.">CAPMAlpha</button></td><td><span title="">-0.000057</span></td><td><span title="">-0.000100</span></td><td><span title="">-0.000038</span></td><td><span title="">-0.000784</span></td><td><span title="">0.000125</span></td><td><span title="">0.000236</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="CAPMBeta" data-meaning="Sensitivity to benchmark movements." data-calculation="Cov(Rₚ,Rᵦ) / Var(Rᵦ)." data-interpretation="Above 1 means greater market sensitivity; below 1 means lower.">CAPMBeta</button></td><td><span title="">-0.016119</span></td><td><span title="">-0.043013</span></td><td><span title="">-0.027077</span></td><td><span title="">0.314060</span></td><td><span title="">0.015864</span></td><td><span title="">-0.029811</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="CDD" data-meaning="Conditional drawdown at risk." data-calculation="Mean of drawdowns beyond the selected drawdown quantile." data-interpretation="Closer to zero is better.">CDD</button></td><td><span title="">0.038103</span></td><td><span title="">0.024049</span></td><td><span title="">0.034996</span></td><td><span title="">0.005682</span></td><td><span title="">0.016818</span></td><td><span title="">0.010882</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Calmar" data-meaning="Annual return per unit of maximum drawdown." data-calculation="Annualised return / |maximum drawdown|." data-interpretation="Higher is better.">Calmar</button></td><td><span title="">-0.135680</span></td><td><span title="">-0.888858</span></td><td><span title="">-0.042342</span></td><td><span title="">-16.117346</span></td><td><span title="">1.955548</span></td><td><span title="">9.523290</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="CoKurtosis" data-meaning="Joint fourth-order tail dependence with the benchmark." data-calculation="E[(Rₚ−μₚ)(Rᵦ−μᵦ)³]." data-interpretation="Large absolute values mean stronger joint tail exposure.">CoKurtosis</button></td><td><span title="">-0.000000</span></td><td><span title="">-0.000000</span></td><td><span title="">0.000000</span></td><td><span title="">0.000000</span></td><td><span title="">0.000000</span></td><td><span title="">-0.000000</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="CoSkewness" data-meaning="Joint third-order asymmetry with the benchmark." data-calculation="E[(Rₚ−μₚ)(Rᵦ−μᵦ)²]." data-interpretation="More positive is generally preferable.">CoSkewness</button></td><td><span title="">-0.000000</span></td><td><span title="">-0.000000</span></td><td><span title="">-0.000000</span></td><td><span title="">0.000000</span></td><td><span title="">0.000000</span></td><td><span title="">-0.000003</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="CumulativeReturn" data-meaning="Total compounded return over the displayed period." data-calculation="∏(1+Rₜ) − 1." data-interpretation="Higher is better.">CumulativeReturn</button></td><td><span title="">-0.011799</span></td><td><span title="">-0.011799</span></td><td><span title="">-0.003136</span></td><td><span title="">-0.002815</span></td><td><span title="">0.005301</span></td><td><span title="">0.005917</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="DRatio" data-meaning="Balance between cumulative losses and gains." data-calculation="Downside return contribution / upside return contribution." data-interpretation="Lower is better.">DRatio</button></td><td><span title="">1.076685</span></td><td><span title="">1.138378</span></td><td><span title="">1.044171</span></td><td><span title="">1.452447</span></td><td><span title="">0.959343</span></td><td><span title="">0.619180</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="DownCapture" data-meaning="Performance when the benchmark declines." data-calculation="Portfolio compound return / benchmark compound return on down-market days." data-interpretation="Lower is normally better when both returns are negative.">DownCapture</button></td><td><span title="">-0.032229</span></td><td><span title="">-0.069722</span></td><td><span title="">-0.065164</span></td><td><span title="">0.502631</span></td><td><span title="">0.013201</span></td><td><span title="">-0.041917</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="DownNumber" data-meaning="Number of negative-return observations." data-calculation="Count(Rₜ &lt; 0)." data-interpretation="Lower is better, conditional on similar return.">DownNumber</button></td><td><span title="">0.333333</span></td><td><span title="">0.245902</span></td><td><span title="">0.327957</span></td><td><span title="">0.666667</span></td><td><span title="">0.466667</span></td><td><span title="">0.222222</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="DownPercent" data-meaning="Fraction of observations with negative return." data-calculation="Count(Rₜ&lt;0)/n." data-interpretation="Lower is better.">DownPercent</button></td><td><span title="">0.884444</span></td><td><span title="">0.885246</span></td><td><span title="">0.870968</span></td><td><span title="">0.666667</span></td><td><span title="">1.000000</span></td><td><span title="">0.888889</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="DownsideDeviation" data-meaning="Volatility below the minimum acceptable return." data-calculation="Root mean squared shortfall below MAR." data-interpretation="Lower is better.">DownsideDeviation</button></td><td><span title="">0.003265</span></td><td><span title="">0.002701</span></td><td><span title="">0.003407</span></td><td><span title="">0.002520</span></td><td><span title="">0.002151</span></td><td><span title="">0.002841</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="DrawdownDeviation" data-meaning="Variability of drawdowns." data-calculation="Standard deviation of the drawdown series." data-interpretation="Lower is better.">DrawdownDeviation</button></td><td><span title="">0.003223</span></td><td><span title="">0.002366</span></td><td><span title="">0.003307</span></td><td><span title="">0.002520</span></td><td><span title="">0.003230</span></td><td><span title="">0.003515</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="ES_Loss" data-meaning="Average loss in the worst 5% of observations." data-calculation="Mean loss conditional on loss ≥ 95% VaR." data-interpretation="Lower is better.">ES_Loss</button></td><td><span title="">0.010822</span></td><td><span title="">0.008034</span></td><td><span title="">0.011973</span></td><td><span title="">0.005988</span></td><td><span title=" No values less than VaR observed.  Setting ES equal to VaR.">0.005882</span></td><td><span title="">0.005917</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="FamaBeta" data-meaning="Beta estimated using Fama decomposition." data-calculation="Systematic risk divided by benchmark risk under the decomposition." data-interpretation="Lower means less systematic exposure.">FamaBeta</button></td><td><span title="">0.446086</span></td><td><span title="">0.489854</span></td><td><span title="">0.636846</span></td><td><span title="">0.474440</span></td><td><span title="">0.209279</span></td><td><span title="">0.122952</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="GeometricReturn" data-meaning="Average compounded one-period return." data-calculation="[∏(1+Rₜ)]^(1/n) − 1." data-interpretation="Higher is better.">GeometricReturn</button></td><td><span title="">-0.000023</span></td><td><span title="">-0.000094</span></td><td><span title="">-0.000007</span></td><td><span title="">-0.000403</span></td><td><span title="">0.000143</span></td><td><span title="">0.000421</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Hurst" data-meaning="Persistence of the return process." data-calculation="Hurst exponent estimated from rescaled behaviour." data-interpretation="Near 0.5 suggests no persistence; above 0.5 persistence; below 0.5 mean reversion.">Hurst</button></td><td><span title="">0.419738</span></td><td><span title="">0.426245</span></td><td><span title="">0.424111</span></td><td><span title="">0.613046</span></td><td><span title="">0.353946</span></td><td><span title="">0.372120</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Information_Annualized" data-meaning="Annualised active return per unit of tracking error." data-calculation="Annualised active return / annualised tracking error." data-interpretation="Higher is better.">Information_Annualized</button></td><td><span title="">-0.853948</span></td><td><span title="">-0.768076</span></td><td><span title="">-1.656185</span></td><td><span title="">-4.800770</span></td><td><span title="">-1.491549</span></td><td><span title="">1.595312</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Information_Daily" data-meaning="Daily active return per unit of tracking error." data-calculation="mean(Rₚ−Rᵦ) / sd(Rₚ−Rᵦ)." data-interpretation="Higher is better.">Information_Daily</button></td><td><span title="">-0.050983</span></td><td><span title="">-0.047288</span></td><td><span title="">-0.095248</span></td><td><span title="">-0.271498</span></td><td><span title="">-0.077407</span></td><td><span title="">0.201548</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="JensenAlpha" data-meaning="CAPM risk-adjusted excess return." data-calculation="Rₚ − [R𝒻 + β(Rᵦ−R𝒻)]." data-interpretation="Higher is better.">JensenAlpha</button></td><td><span title="">-0.016958</span></td><td><span title="">-0.026706</span></td><td><span title="">-0.011782</span></td><td><span title="">-0.009406</span></td><td><span title="">0.006286</span></td><td><span title="">0.087163</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Kappa" data-meaning="Return above MAR per unit of lower partial moment risk." data-calculation="[mean(R)−MAR] / LPMₙ^(1/n)." data-interpretation="Higher is better.">Kappa</button></td><td><span title="">-0.002399</span></td><td><span title="">-0.022267</span></td><td><span title="">0.000731</span></td><td><span title="">-0.122208</span></td><td><span title="">0.052008</span></td><td><span title="">0.120417</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Kelly" data-meaning="Approximate growth-optimal risky allocation." data-calculation="Expected excess return / variance under the quadratic approximation." data-interpretation="Higher implies a larger theoretical allocation; unstable extreme values require caution.">Kelly</button></td><td><span title="">-0.614649</span></td><td><span title="">-6.108146</span></td><td><span title="">0.180183</span></td><td><span title="">-29.901345</span></td><td><span title="">13.616629</span></td><td><span title="">21.918066</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Kurtosis" data-meaning="Tail thickness relative to a normal distribution." data-calculation="Standardised fourth central moment." data-interpretation="Higher means more extreme-tail risk.">Kurtosis</button></td><td><span title="">13.216588</span></td><td><span title="">6.476702</span></td><td><span title="">13.058991</span></td><td><span title="">2.999129</span></td><td><span title="">2.742729</span></td><td><span title="">1.759096</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="M2Sortino" data-meaning="Sortino ratio translated into return units." data-calculation="Risk-free return plus Sortino × benchmark downside deviation." data-interpretation="Higher is better.">M2Sortino</button></td><td><span title="">-0.020250</span></td><td><span title="">-0.031858</span></td><td><span title="">-0.018090</span></td><td><span title="">-0.005809</span></td><td><span title="">0.011594</span></td><td><span title="">0.163514</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="MSquaredExcess" data-meaning="M² return advantage over the benchmark." data-calculation="Modigliani measure − benchmark return." data-interpretation="Higher is better.">MSquaredExcess</button></td><td><span title="">-0.155545</span></td><td><span title="">-0.129769</span></td><td><span title="">-0.201480</span></td><td><span title="">-0.024403</span></td><td><span title="">-0.035551</span></td><td><span title="">10.543666</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Martin" data-meaning="Return per unit of ulcer-index risk." data-calculation="Excess return / Ulcer Index." data-interpretation="Higher is better.">Martin</button></td><td><span title="">-0.284362</span></td><td><span title="">-1.578563</span></td><td><span title="">-0.095125</span></td><td><span title="">-1.913125</span></td><td><span title="">0.852689</span></td><td><span title="">21.171565</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="MaximumDrawdown" data-meaning="Largest historical peak-to-trough loss." data-calculation="min(wealth/running maximum − 1)." data-interpretation="Closer to zero is better.">MaximumDrawdown</button></td><td><span title="">0.042932</span></td><td><span title="">0.026393</span></td><td><span title="">0.042932</span></td><td><span title="">0.005988</span></td><td><span title="">0.018747</span></td><td><span title="">0.011765</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Modigliani" data-meaning="Sharpe performance translated to benchmark volatility." data-calculation="R𝒻 + Sharpeₚ × volatilityᵦ." data-interpretation="Higher is better.">Modigliani</button></td><td><span title="">-0.000149</span></td><td><span title="">-0.000233</span></td><td><span title="">-0.000094</span></td><td><span title="">-0.000837</span></td><td><span title="">0.000708</span></td><td><span title="">0.003502</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="NetSelectivity" data-meaning="Selection return after diversification adjustment." data-calculation="Selectivity minus diversification contribution." data-interpretation="Higher is better.">NetSelectivity</button></td><td><span title="">-0.078647</span></td><td><span title="">-0.068561</span></td><td><span title="">-0.156228</span></td><td><span title="">-0.011747</span></td><td><span title="">-0.007989</span></td><td><span title="">0.214634</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Omega" data-meaning="Probability-weighted gains relative to losses at a threshold." data-calculation="Integral above threshold / integral below threshold." data-interpretation="Higher is better; above 1 is favourable.">Omega</button></td><td><span title="">0.990322</span></td><td><span title="">0.930116</span></td><td><span title="">1.002994</span></td><td><span title="">0.688493</span></td><td><span title="">1.146618</span></td><td><span title="">1.292031</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="OmegaExcessReturn" data-meaning="Excess return adjusted by Omega downside structure." data-calculation="Excess return expressed through the Omega function." data-interpretation="Higher is better.">OmegaExcessReturn</button></td><td><span title="">-0.036265</span></td><td><span title="">-0.041245</span></td><td><span title="">-0.030610</span></td><td><span title="">-0.005214</span></td><td><span title="">0.003941</span></td><td><span title="">0.059992</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="PainIndex" data-meaning="Average depth of all drawdowns." data-calculation="Mean absolute percentage drawdown." data-interpretation="Lower is better.">PainIndex</button></td><td><span title="">0.018035</span></td><td><span title="">0.013240</span></td><td><span title="">0.016410</span></td><td><span title="">0.001274</span></td><td><span title="">0.006596</span></td><td><span title="">0.003317</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="PainRatio" data-meaning="Return earned per unit of average drawdown pain." data-calculation="Excess return / Pain Index." data-interpretation="Higher is better.">PainRatio</button></td><td><span title="">-0.322989</span></td><td><span title="">-1.771878</span></td><td><span title="">-0.110775</span></td><td><span title="">-3.783259</span></td><td><span title="">1.130601</span></td><td><span title="">33.774016</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Prospect" data-meaning="Behavioural value of gains and losses." data-calculation="Probability-weighted prospect utility with losses penalised more strongly." data-interpretation="Higher is better.">Prospect</button></td><td><span title="">-0.509789</span></td><td><span title="">-0.609280</span></td><td><span title="">-0.498480</span></td><td><span title="">-0.789625</span></td><td><span title="">-0.518411</span></td><td><span title="">-0.497231</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Rachev" data-meaning="Extreme gains relative to extreme losses." data-calculation="Upper-tail expected return / lower-tail expected loss." data-interpretation="Higher is better; above 1 means the selected upper tail exceeds the lower tail.">Rachev</button></td><td><span title="">0.965126</span></td><td><span title="">0.875125</span></td><td><span title="">0.959246</span></td><td><span title="">0.512837</span></td><td><span title="">1.073273</span></td><td><span title="">1.003937</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Selectivity" data-meaning="Return attributed to security selection." data-calculation="Portfolio return minus return implied by systematic risk." data-interpretation="Higher is better.">Selectivity</button></td><td><span title="">-0.016958</span></td><td><span title="">-0.026706</span></td><td><span title="">-0.011782</span></td><td><span title="">-0.009406</span></td><td><span title="">0.006286</span></td><td><span title="">0.087163</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Sharpe_Annualized" data-meaning="Annual excess return per unit of annual volatility." data-calculation="Annualised excess return / annualised SD." data-interpretation="Higher is better.">Sharpe_Annualized</button></td><td><span title="">-0.044509</span></td><td><span title="">-0.366203</span></td><td><span title="">0.013605</span></td><td><span title="">-1.729524</span></td><td><span title="">0.713067</span></td><td><span title="">1.542227</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Sharpe_Daily" data-meaning="Daily excess return per unit of daily volatility." data-calculation="mean(R−R𝒻) / sd(R−R𝒻)." data-interpretation="Higher is better.">Sharpe_Daily</button></td><td><span title="">-0.002804</span></td><td><span title="">-0.023069</span></td><td><span title="">0.000857</span></td><td><span title="">-0.108950</span></td><td><span title="">0.044919</span></td><td><span title="">0.097151</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Sharpe_ES" data-meaning="Excess return per unit of expected shortfall." data-calculation="Mean excess return / ES loss." data-interpretation="Higher is better.">Sharpe_ES</button></td><td><span title="">-0.001182</span></td><td><span title="">-0.010844</span></td><td><span title="">0.000340</span></td><td><span title="">-0.066295</span></td><td><span title=" No values less than VaR observed.  Setting ES equal to VaR.">0.025191</span></td><td><span title="">0.072775</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Sharpe_VaR" data-meaning="Excess return per unit of value at risk." data-calculation="Mean excess return / VaR loss." data-interpretation="Higher is better.">Sharpe_VaR</button></td><td><span title="">-0.002146</span></td><td><span title="">-0.014691</span></td><td><span title="">0.000681</span></td><td><span title="">-0.078277</span></td><td><span title="">0.025191</span></td><td><span title="">0.073054</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Skewness" data-meaning="Asymmetry of returns." data-calculation="Standardised third central moment." data-interpretation="More positive is generally preferable.">Skewness</button></td><td><span title="">-0.225654</span></td><td><span title="">0.047745</span></td><td><span title="">-0.247205</span></td><td><span title="">0.275347</span></td><td><span title="">0.156096</span></td><td><span title="">-0.155703</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Sortino" data-meaning="Excess return per unit of downside risk." data-calculation="Mean(R−MAR) / downside deviation." data-interpretation="Higher is better.">Sortino</button></td><td><span title="">-0.003917</span></td><td><span title="">-0.032260</span></td><td><span title="">0.001197</span></td><td><span title="">-0.157523</span></td><td><span title="">0.068887</span></td><td><span title="">0.151578</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="SpecificRisk" data-meaning="Risk not explained by the benchmark." data-calculation="Residual volatility from the market regression." data-interpretation="Lower is safer, although it may reflect diversifiable opportunity.">SpecificRisk</button></td><td><span title="">0.071711</span></td><td><span title="">0.059687</span></td><td><span title="">0.074711</span></td><td><span title="">0.008759</span></td><td><span title="">0.023397</span></td><td><span title="">0.065781</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Sterling" data-meaning="Return relative to drawdown risk." data-calculation="Annualised excess return / average or adjusted maximum drawdown." data-interpretation="Higher is better.">Sterling</button></td><td><span title="">-0.040754</span></td><td><span title="">-0.185608</span></td><td><span title="">-0.012718</span></td><td><span title="">-0.910585</span></td><td><span title="">0.308735</span></td><td><span title="">1.002452</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="SystematicRisk" data-meaning="Risk explained by benchmark exposure." data-calculation="β² Var(Rᵦ), or its square-root form under the implementation." data-interpretation="Lower is safer; higher means more market-driven risk.">SystematicRisk</button></td><td><span title="">-0.002596</span></td><td><span title="">-0.005283</span></td><td><span title="">-0.003183</span></td><td><span title="">0.038288</span></td><td><span title="">0.003970</span></td><td><span title="">-0.017061</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="TotalRisk" data-meaning="Total return variability." data-calculation="Standard deviation or variance-based total risk used by the decomposition." data-interpretation="Lower is safer.">TotalRisk</button></td><td><span title="">0.071757</span></td><td><span title="">0.059920</span></td><td><span title="">0.074779</span></td><td><span title="">0.012105</span></td><td><span title="">0.023466</span></td><td><span title="">0.067957</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="TrackingError_Annualized" data-meaning="Annualised volatility of returns relative to the benchmark." data-calculation="sd(Rₚ−Rᵦ) × √252." data-interpretation="Lower means closer benchmark tracking.">TrackingError_Annualized</button></td><td><span title="">0.178672</span></td><td><span title="">0.141433</span></td><td><span title="">0.142036</span></td><td><span title="">0.094196</span></td><td><span title="">0.251733</span></td><td><span title="">0.593284</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="TrackingError_Daily" data-meaning="Daily volatility of active returns." data-calculation="sd(Rₚ−Rᵦ)." data-interpretation="Lower means closer benchmark tracking.">TrackingError_Daily</button></td><td><span title="">0.011255</span></td><td><span title="">0.008909</span></td><td><span title="">0.008947</span></td><td><span title="">0.005934</span></td><td><span title="">0.015858</span></td><td><span title="">0.037373</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Treynor_Annualized" data-meaning="Annual excess return per unit of beta." data-calculation="Annualised excess return / β." data-interpretation="Higher is better when beta is meaningful.">Treynor_Annualized</button></td><td><span title="">1.185520</span></td><td><span title="">0.699429</span></td><td><span title="">0.652692</span></td><td><span title="">-0.307301</span></td><td><span title="">2.310969</span></td><td><span title="">-3.758248</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Treynor_Daily" data-meaning="Daily excess return per unit of beta." data-calculation="Mean daily excess return / β." data-interpretation="Higher is better.">Treynor_Daily</button></td><td><span title="">0.004750</span></td><td><span title="">0.002818</span></td><td><span title="">0.002613</span></td><td><span title="">-0.001282</span></td><td><span title="">0.009007</span></td><td><span title="">-0.014139</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="UlcerIndex" data-meaning="Depth and duration of drawdowns." data-calculation="Root mean square percentage drawdown." data-interpretation="Lower is better.">UlcerIndex</button></td><td><span title="">0.020485</span></td><td><span title="">0.014861</span></td><td><span title="">0.019110</span></td><td><span title="">0.002520</span></td><td><span title="">0.008746</span></td><td><span title="">0.005292</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="UpCapture" data-meaning="Performance when the benchmark rises." data-calculation="Portfolio compound return / benchmark compound return on up-market days." data-interpretation="Higher is better.">UpCapture</button></td><td><span title="">-0.045595</span></td><td><span title="">-0.098575</span></td><td><span title="">-0.067325</span></td><td><span title="">0.232793</span></td><td><span title="">0.030860</span></td><td><span title="">-0.023923</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="UpNumber" data-meaning="Number of positive-return observations." data-calculation="Count(Rₜ &gt; 0)." data-interpretation="Higher is generally better.">UpNumber</button></td><td><span title="">0.301471</span></td><td><span title="">0.180328</span></td><td><span title="">0.310638</span></td><td><span title="">0.500000</span></td><td><span title="">0.272727</span></td><td><span title="">0.200000</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="UpPercent" data-meaning="Fraction of observations with positive return." data-calculation="Count(Rₜ&gt;0)/n." data-interpretation="Higher is generally better.">UpPercent</button></td><td><span title="">0.113971</span></td><td><span title="">0.065574</span></td><td><span title="">0.119149</span></td><td><span title="">0.000000</span></td><td><span title="">0.090909</span></td><td><span title="">0.200000</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="UpsidePotential" data-meaning="Average return above the minimum acceptable return." data-calculation="Mean[max(R−MAR,0)]." data-interpretation="Higher is better.">UpsidePotential</button></td><td><span title="">0.400781</span></td><td><span title="">0.429357</span></td><td><span title="">0.400938</span></td><td><span title="">0.348159</span></td><td><span title="">0.538725</span></td><td><span title="">0.670625</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="UpsideRisk" data-meaning="Magnitude of returns above the target." data-calculation="Root upper partial moment relative to MAR." data-interpretation="Higher means more upside dispersion, not conventional risk.">UpsideRisk</button></td><td><span title="">0.003179</span></td><td><span title="">0.002620</span></td><td><span title="">0.003312</span></td><td><span title="">0.002277</span></td><td><span title="">0.002446</span></td><td><span title="">0.003218</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="VaR_Loss" data-meaning="Loss threshold exceeded by the worst 5% of observations." data-calculation="95th percentile of loss −R." data-interpretation="Lower is better.">VaR_Loss</button></td><td><span title="">0.005960</span></td><td><span title="">0.005930</span></td><td><span title="">0.005988</span></td><td><span title="">0.005071</span></td><td><span title="">0.005882</span></td><td><span title="">0.005895</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Volatility" data-meaning="Daily standard deviation of returns." data-calculation="sd(Rₜ)." data-interpretation="Lower means more stable returns.">Volatility</button></td><td><span title="">0.004562</span></td><td><span title="">0.003777</span></td><td><span title="">0.004757</span></td><td><span title="">0.003644</span></td><td><span title="">0.003299</span></td><td><span title="">0.004432</span></td></tr><tr><td><button type="button" class="metric-help-button" data-metric="Volatility_Annualized" data-meaning="Annualised standard deviation." data-calculation="sd(Rₜ) × √252." data-interpretation="Lower means more stable returns.">Volatility_Annualized</button></td><td><span title="">0.072414</span></td><td><span title="">0.059953</span></td><td><span title="">0.075508</span></td><td><span title="">0.057841</span></td><td><span title="">0.052367</span></td><td><span title="">0.070363</span></td></tr></tbody></table></details><details class=""><summary>Undefined values and native R diagnostics</summary><table class="dataframe research-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>period</th>
+      <th>metric</th>
+      <th>reason</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>R2</td>
+      <td>BetaCoSkewness</td>
+      <td>skewness is close to zero. The classical definition of the coskewness statistic is not applicable and one should normalize using the comoment without standardization.</td>
+    </tr>
+    <tr>
+      <td>R3</td>
+      <td>Sharpe_ES</td>
+      <td>No values less than VaR observed.&nbsp;&nbsp;Setting ES equal to VaR.</td>
+    </tr>
+    <tr>
+      <td>R3</td>
+      <td>ES_Loss</td>
+      <td>No values less than VaR observed.&nbsp;&nbsp;Setting ES equal to VaR.</td>
+    </tr>
+  </tbody>
+</table></details><details class=""><summary>Correlations with all other assets: full history and regimes</summary><table class="dataframe research-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Other asset</th>
+      <th>Pearson Full</th>
+      <th>Spearman Full</th>
+      <th>Pearson R1</th>
+      <th>Spearman R1</th>
+      <th>Pearson R2</th>
+      <th>Spearman R2</th>
+      <th>Pearson R3</th>
+      <th>Spearman R3</th>
+      <th>Pearson R4</th>
+      <th>Spearman R4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AIR</td>
+      <td><span title="n=512 exact-date pairs">0.033638</span></td>
+      <td><span title="n=512 exact-date pairs">0.023303</span></td>
+      <td><span title="n=435 exact-date pairs">0.017696</span></td>
+      <td><span title="n=435 exact-date pairs">-0.009325</span></td>
+      <td><span title="n=7 exact-date pairs">-0.645788</span></td>
+      <td><span title="n=7 exact-date pairs">-0.542269</span></td>
+      <td><span title="n=37 exact-date pairs">0.142638</span></td>
+      <td><span title="n=37 exact-date pairs">0.187078</span></td>
+      <td><span title="n=14 exact-date pairs">0.461609</span></td>
+      <td><span title="n=14 exact-date pairs">0.375704</span></td>
+    </tr>
+    <tr>
+      <td>AKO1L</td>
+      <td><span title="n=512 exact-date pairs">0.051818</span></td>
+      <td><span title="n=512 exact-date pairs">0.085409</span></td>
+      <td><span title="n=435 exact-date pairs">0.054854</span></td>
+      <td><span title="n=435 exact-date pairs">0.087649</span></td>
+      <td><span title="n=7 exact-date pairs">-0.577130</span></td>
+      <td><span title="n=7 exact-date pairs">-0.730769</span></td>
+      <td><span title="n=37 exact-date pairs">-0.122136</span></td>
+      <td><span title="n=37 exact-date pairs">-0.033686</span></td>
+      <td><span title="n=14 exact-date pairs">0.217822</span></td>
+      <td><span title="n=14 exact-date pairs">0.262252</span></td>
+    </tr>
+    <tr>
+      <td>AMG1L</td>
+      <td><span title="n=512 exact-date pairs">-0.020191</span></td>
+      <td><span title="n=512 exact-date pairs">-0.010782</span></td>
+      <td><span title="n=435 exact-date pairs">-0.021878</span></td>
+      <td><span title="n=435 exact-date pairs">-0.007180</span></td>
+      <td><span title="n=7 exact-date pairs">-0.187378</span></td>
+      <td><span title="n=7 exact-date pairs">-0.392678</span></td>
+      <td><span title="n=37 exact-date pairs">-0.159135</span></td>
+      <td><span title="n=37 exact-date pairs">-0.091812</span></td>
+      <td><span title="n=14 exact-date pairs">0.371353</span></td>
+      <td><span title="n=14 exact-date pairs">0.259131</span></td>
+    </tr>
+    <tr>
+      <td>APG1L</td>
+      <td><span title="n=512 exact-date pairs">0.044843</span></td>
+      <td><span title="n=512 exact-date pairs">0.036080</span></td>
+      <td><span title="n=435 exact-date pairs">0.016862</span></td>
+      <td><span title="n=435 exact-date pairs">0.019673</span></td>
+      <td><span title="n=7 exact-date pairs">0.035442</span></td>
+      <td><span title="n=7 exact-date pairs">0.037062</span></td>
+      <td><span title="n=37 exact-date pairs">-0.027216</span></td>
+      <td><span title="n=37 exact-date pairs">-0.059773</span></td>
+      <td><span title="n=14 exact-date pairs">0.523436</span></td>
+      <td><span title="n=14 exact-date pairs">0.483809</span></td>
+    </tr>
+    <tr>
+      <td>ARC1T</td>
+      <td><span title="n=512 exact-date pairs">-0.035448</span></td>
+      <td><span title="n=512 exact-date pairs">-0.034214</span></td>
+      <td><span title="n=435 exact-date pairs">-0.029056</span></td>
+      <td><span title="n=435 exact-date pairs">-0.026996</span></td>
+      <td><span title="n=7 exact-date pairs">0.026741</span></td>
+      <td><span title="n=7 exact-date pairs">-0.148250</span></td>
+      <td><span title="n=37 exact-date pairs">-0.263474</span></td>
+      <td><span title="n=37 exact-date pairs">-0.222207</span></td>
+      <td><span title="n=14 exact-date pairs">0.513039</span></td>
+      <td><span title="n=14 exact-date pairs">0.490591</span></td>
+    </tr>
+    <tr>
+      <td>AUG1L</td>
+      <td><span title="n=512 exact-date pairs">-0.038353</span></td>
+      <td><span title="n=512 exact-date pairs">0.089300</span></td>
+      <td><span title="n=435 exact-date pairs">-0.048745</span></td>
+      <td><span title="n=435 exact-date pairs">0.083573</span></td>
+      <td><span title="n=7 exact-date pairs">0.009459</span></td>
+      <td><span title="n=7 exact-date pairs">-0.185312</span></td>
+      <td><span title="n=37 exact-date pairs">0.347624</span></td>
+      <td><span title="n=37 exact-date pairs">0.284865</span></td>
+      <td><span title="n=14 exact-date pairs">-0.033045</span></td>
+      <td><span title="n=14 exact-date pairs">-0.065563</span></td>
+    </tr>
+    <tr>
+      <td>BAL1R</td>
+      <td><span title="n=512 exact-date pairs">-0.031782</span></td>
+      <td><span title="n=512 exact-date pairs">-0.111351</span></td>
+      <td><span title="n=435 exact-date pairs">-0.032991</span></td>
+      <td><span title="n=435 exact-date pairs">-0.126411</span></td>
+      <td><span title="n=7 exact-date pairs">-0.256294</span></td>
+      <td><span title="n=7 exact-date pairs">-0.461538</span></td>
+      <td><span title="n=37 exact-date pairs">0.272632</span></td>
+      <td><span title="n=37 exact-date pairs">0.200710</span></td>
+      <td><span title="n=14 exact-date pairs">-0.407364</span></td>
+      <td><span title="n=14 exact-date pairs">-0.257730</span></td>
+    </tr>
+    <tr>
+      <td>BERCM</td>
+      <td><span title="n=512 exact-date pairs">0.055919</span></td>
+      <td><span title="n=512 exact-date pairs">0.046573</span></td>
+      <td><span title="n=435 exact-date pairs">0.058414</span></td>
+      <td><span title="n=435 exact-date pairs">0.018584</span></td>
+      <td><span title="n=7 exact-date pairs">-0.104742</span></td>
+      <td><span title="n=7 exact-date pairs">0.056097</span></td>
+      <td><span title="n=37 exact-date pairs">0.049309</span></td>
+      <td><span title="n=37 exact-date pairs">0.220049</span></td>
+      <td><span title="n=14 exact-date pairs">0.051510</span></td>
+      <td><span title="n=14 exact-date pairs">0.076867</span></td>
+    </tr>
+    <tr>
+      <td>CPA1T</td>
+      <td><span title="n=512 exact-date pairs">0.003996</span></td>
+      <td><span title="n=512 exact-date pairs">-0.010392</span></td>
+      <td><span title="n=435 exact-date pairs">0.008193</span></td>
+      <td><span title="n=435 exact-date pairs">-0.002267</span></td>
+      <td><span title="n=7 exact-date pairs">-0.549619</span></td>
+      <td><span title="n=7 exact-date pairs">-0.704187</span></td>
+      <td><span title="n=37 exact-date pairs">-0.241998</span></td>
+      <td><span title="n=37 exact-date pairs">-0.210001</span></td>
+      <td><span title="n=14 exact-date pairs">0.366444</span></td>
+      <td><span title="n=14 exact-date pairs">0.361726</span></td>
+    </tr>
+    <tr>
+      <td>CTS1L</td>
+      <td><span title="n=512 exact-date pairs">-0.016308</span></td>
+      <td><span title="n=512 exact-date pairs">0.016543</span></td>
+      <td><span title="n=435 exact-date pairs">-0.017593</span></td>
+      <td><span title="n=435 exact-date pairs">0.001985</span></td>
+      <td><span title="n=7 exact-date pairs">—</span></td>
+      <td><span title="n=7 exact-date pairs">—</span></td>
+      <td><span title="n=37 exact-date pairs">0.265017</span></td>
+      <td><span title="n=37 exact-date pairs">0.211690</span></td>
+      <td><span title="n=14 exact-date pairs">—</span></td>
+      <td><span title="n=14 exact-date pairs">—</span></td>
+    </tr>
+    <tr>
+      <td>DGR1R</td>
+      <td><span title="n=512 exact-date pairs">0.019892</span></td>
+      <td><span title="n=512 exact-date pairs">0.036746</span></td>
+      <td><span title="n=435 exact-date pairs">-0.008197</span></td>
+      <td><span title="n=435 exact-date pairs">-0.003182</span></td>
+      <td><span title="n=7 exact-date pairs">-0.176296</span></td>
+      <td><span title="n=7 exact-date pairs">-0.148250</span></td>
+      <td><span title="n=37 exact-date pairs">0.390917</span></td>
+      <td><span title="n=37 exact-date pairs">0.468667</span></td>
+      <td><span title="n=14 exact-date pairs">0.366221</span></td>
+      <td><span title="n=14 exact-date pairs">0.281578</span></td>
+    </tr>
+    <tr>
+      <td>EFT1T</td>
+      <td><span title="n=512 exact-date pairs">0.002641</span></td>
+      <td><span title="n=512 exact-date pairs">0.009730</span></td>
+      <td><span title="n=435 exact-date pairs">-0.031099</span></td>
+      <td><span title="n=435 exact-date pairs">-0.012321</span></td>
+      <td><span title="n=7 exact-date pairs">-0.056891</span></td>
+      <td><span title="n=7 exact-date pairs">-0.259437</span></td>
+      <td><span title="n=37 exact-date pairs">0.197120</span></td>
+      <td><span title="n=37 exact-date pairs">0.200409</span></td>
+      <td><span title="n=14 exact-date pairs">0.196298</span></td>
+      <td><span title="n=14 exact-date pairs">0.165402</span></td>
+    </tr>
+    <tr>
+      <td>EGG</td>
+      <td><span title="n=512 exact-date pairs">0.070192</span></td>
+      <td><span title="n=512 exact-date pairs">0.086794</span></td>
+      <td><span title="n=435 exact-date pairs">0.075077</span></td>
+      <td><span title="n=435 exact-date pairs">0.074452</span></td>
+      <td><span title="n=7 exact-date pairs">0.776816</span></td>
+      <td><span title="n=7 exact-date pairs">0.747958</span></td>
+      <td><span title="n=37 exact-date pairs">0.090032</span></td>
+      <td><span title="n=37 exact-date pairs">-0.064668</span></td>
+      <td><span title="n=14 exact-date pairs">-0.176642</span></td>
+      <td><span title="n=14 exact-date pairs">0.225176</span></td>
+    </tr>
+    <tr>
+      <td>EWA1L</td>
+      <td><span title="n=512 exact-date pairs">-0.063940</span></td>
+      <td><span title="n=512 exact-date pairs">-0.036124</span></td>
+      <td><span title="n=435 exact-date pairs">-0.071785</span></td>
+      <td><span title="n=435 exact-date pairs">-0.049796</span></td>
+      <td><span title="n=7 exact-date pairs">-0.120097</span></td>
+      <td><span title="n=7 exact-date pairs">0.076923</span></td>
+      <td><span title="n=37 exact-date pairs">-0.068670</span></td>
+      <td><span title="n=37 exact-date pairs">-0.105555</span></td>
+      <td><span title="n=14 exact-date pairs">0.543641</span></td>
+      <td><span title="n=14 exact-date pairs">0.523023</span></td>
+    </tr>
+    <tr>
+      <td>GRB2G</td>
+      <td><span title="n=512 exact-date pairs">-0.008668</span></td>
+      <td><span title="n=512 exact-date pairs">-0.030004</span></td>
+      <td><span title="n=435 exact-date pairs">-0.030504</span></td>
+      <td><span title="n=435 exact-date pairs">-0.059708</span></td>
+      <td><span title="n=7 exact-date pairs">0.597122</span></td>
+      <td><span title="n=7 exact-date pairs">0.444750</span></td>
+      <td><span title="n=37 exact-date pairs">0.227445</span></td>
+      <td><span title="n=37 exact-date pairs">0.139229</span></td>
+      <td><span title="n=14 exact-date pairs">0.170787</span></td>
+      <td><span title="n=14 exact-date pairs">0.187646</span></td>
+    </tr>
+    <tr>
+      <td>GRG1L</td>
+      <td><span title="n=512 exact-date pairs">0.058249</span></td>
+      <td><span title="n=512 exact-date pairs">0.016450</span></td>
+      <td><span title="n=435 exact-date pairs">0.055907</span></td>
+      <td><span title="n=435 exact-date pairs">0.013438</span></td>
+      <td><span title="n=7 exact-date pairs">-0.001425</span></td>
+      <td><span title="n=7 exact-date pairs">-0.186989</span></td>
+      <td><span title="n=37 exact-date pairs">-0.084135</span></td>
+      <td><span title="n=37 exact-date pairs">-0.081778</span></td>
+      <td><span title="n=14 exact-date pairs">0.360555</span></td>
+      <td><span title="n=14 exact-date pairs">0.279212</span></td>
+    </tr>
+    <tr>
+      <td>HAE1T</td>
+      <td><span title="n=512 exact-date pairs">0.083955</span></td>
+      <td><span title="n=512 exact-date pairs">0.119552</span></td>
+      <td><span title="n=435 exact-date pairs">0.085007</span></td>
+      <td><span title="n=435 exact-date pairs">0.124709</span></td>
+      <td><span title="n=7 exact-date pairs">-0.362627</span></td>
+      <td><span title="n=7 exact-date pairs">-0.407687</span></td>
+      <td><span title="n=37 exact-date pairs">0.084564</span></td>
+      <td><span title="n=37 exact-date pairs">0.176638</span></td>
+      <td><span title="n=14 exact-date pairs">0.416986</span></td>
+      <td><span title="n=14 exact-date pairs">0.325554</span></td>
+    </tr>
+    <tr>
+      <td>HPR1T</td>
+      <td><span title="n=512 exact-date pairs">0.017437</span></td>
+      <td><span title="n=512 exact-date pairs">0.069234</span></td>
+      <td><span title="n=435 exact-date pairs">0.020517</span></td>
+      <td><span title="n=435 exact-date pairs">0.065151</span></td>
+      <td><span title="n=7 exact-date pairs">-0.183870</span></td>
+      <td><span title="n=7 exact-date pairs">-0.481812</span></td>
+      <td><span title="n=37 exact-date pairs">-0.107158</span></td>
+      <td><span title="n=37 exact-date pairs">-0.029865</span></td>
+      <td><span title="n=14 exact-date pairs">0.233236</span></td>
+      <td><span title="n=14 exact-date pairs">0.282910</span></td>
+    </tr>
+    <tr>
+      <td>IDX1R</td>
+      <td><span title="n=512 exact-date pairs">0.027364</span></td>
+      <td><span title="n=512 exact-date pairs">0.030920</span></td>
+      <td><span title="n=435 exact-date pairs">0.034380</span></td>
+      <td><span title="n=435 exact-date pairs">0.029738</span></td>
+      <td><span title="n=7 exact-date pairs">-0.808355</span></td>
+      <td><span title="n=7 exact-date pairs">-0.518875</span></td>
+      <td><span title="n=37 exact-date pairs">-0.028310</span></td>
+      <td><span title="n=37 exact-date pairs">0.109139</span></td>
+      <td><span title="n=14 exact-date pairs">0.078417</span></td>
+      <td><span title="n=14 exact-date pairs">0.270525</span></td>
+    </tr>
+    <tr>
+      <td>IGN1L</td>
+      <td><span title="n=512 exact-date pairs">-0.025864</span></td>
+      <td><span title="n=512 exact-date pairs">-0.019414</span></td>
+      <td><span title="n=435 exact-date pairs">-0.041333</span></td>
+      <td><span title="n=435 exact-date pairs">-0.027249</span></td>
+      <td><span title="n=7 exact-date pairs">0.245326</span></td>
+      <td><span title="n=7 exact-date pairs">0.259437</span></td>
+      <td><span title="n=37 exact-date pairs">-0.012048</span></td>
+      <td><span title="n=37 exact-date pairs">0.046021</span></td>
+      <td><span title="n=14 exact-date pairs">0.097762</span></td>
+      <td><span title="n=14 exact-date pairs">0.051998</span></td>
+    </tr>
+    <tr>
+      <td>IGR1R</td>
+      <td><span title="n=85 exact-date pairs">-0.034958</span></td>
+      <td><span title="n=85 exact-date pairs">-0.117862</span></td>
+      <td><span title="n=83 exact-date pairs">-0.028335</span></td>
+      <td><span title="n=83 exact-date pairs">-0.108851</span></td>
+      <td><span title="n=0 exact-date pairs">—</span></td>
+      <td><span title="n=0 exact-date pairs">—</span></td>
+      <td><span title="n=0 exact-date pairs">—</span></td>
+      <td><span title="n=0 exact-date pairs">—</span></td>
+      <td><span title="n=0 exact-date pairs">—</span></td>
+      <td><span title="n=0 exact-date pairs">—</span></td>
+    </tr>
+    <tr>
+      <td>INC1L</td>
+      <td><span title="n=512 exact-date pairs">0.005859</span></td>
+      <td><span title="n=512 exact-date pairs">0.023666</span></td>
+      <td><span title="n=435 exact-date pairs">-0.039368</span></td>
+      <td><span title="n=435 exact-date pairs">-0.014705</span></td>
+      <td><span title="n=7 exact-date pairs">0.318512</span></td>
+      <td><span title="n=7 exact-date pairs">0.630062</span></td>
+      <td><span title="n=37 exact-date pairs">0.178363</span></td>
+      <td><span title="n=37 exact-date pairs">0.128706</span></td>
+      <td><span title="n=14 exact-date pairs">0.364481</span></td>
+      <td><span title="n=14 exact-date pairs">0.580357</span></td>
+    </tr>
+    <tr>
+      <td>INF1T</td>
+      <td><span title="n=512 exact-date pairs">-0.023461</span></td>
+      <td><span title="n=512 exact-date pairs">0.030149</span></td>
+      <td><span title="n=435 exact-date pairs">-0.030154</span></td>
+      <td><span title="n=435 exact-date pairs">0.010281</span></td>
+      <td><span title="n=7 exact-date pairs">0.391998</span></td>
+      <td><span title="n=7 exact-date pairs">0.037398</span></td>
+      <td><span title="n=37 exact-date pairs">-0.046479</span></td>
+      <td><span title="n=37 exact-date pairs">-0.013949</span></td>
+      <td><span title="n=14 exact-date pairs">0.467273</span></td>
+      <td><span title="n=14 exact-date pairs">0.517159</span></td>
+    </tr>
+    <tr>
+      <td>INL1L</td>
+      <td><span title="n=512 exact-date pairs">-0.078234</span></td>
+      <td><span title="n=512 exact-date pairs">-0.099000</span></td>
+      <td><span title="n=435 exact-date pairs">-0.069931</span></td>
+      <td><span title="n=435 exact-date pairs">-0.087288</span></td>
+      <td><span title="n=7 exact-date pairs">-0.138687</span></td>
+      <td><span title="n=7 exact-date pairs">-0.204465</span></td>
+      <td><span title="n=37 exact-date pairs">-0.275114</span></td>
+      <td><span title="n=37 exact-date pairs">-0.294880</span></td>
+      <td><span title="n=14 exact-date pairs">0.074278</span></td>
+      <td><span title="n=14 exact-date pairs">0.118297</span></td>
+    </tr>
+    <tr>
+      <td>INR1L</td>
+      <td><span title="n=512 exact-date pairs">0.056344</span></td>
+      <td><span title="n=512 exact-date pairs">0.014314</span></td>
+      <td><span title="n=435 exact-date pairs">0.072804</span></td>
+      <td><span title="n=435 exact-date pairs">0.030276</span></td>
+      <td><span title="n=7 exact-date pairs">-0.363496</span></td>
+      <td><span title="n=7 exact-date pairs">-0.653846</span></td>
+      <td><span title="n=37 exact-date pairs">-0.067554</span></td>
+      <td><span title="n=37 exact-date pairs">-0.037968</span></td>
+      <td><span title="n=14 exact-date pairs">0.101680</span></td>
+      <td><span title="n=14 exact-date pairs">0.021717</span></td>
+    </tr>
+    <tr>
+      <td>IVL1L</td>
+      <td><span title="n=512 exact-date pairs">0.096890</span></td>
+      <td><span title="n=512 exact-date pairs">0.050890</span></td>
+      <td><span title="n=435 exact-date pairs">0.095051</span></td>
+      <td><span title="n=435 exact-date pairs">0.034501</span></td>
+      <td><span title="n=7 exact-date pairs">-0.043279</span></td>
+      <td><span title="n=7 exact-date pairs">-0.230769</span></td>
+      <td><span title="n=37 exact-date pairs">-0.154790</span></td>
+      <td><span title="n=37 exact-date pairs">-0.005739</span></td>
+      <td><span title="n=14 exact-date pairs">0.577862</span></td>
+      <td><span title="n=14 exact-date pairs">0.581323</span></td>
+    </tr>
+    <tr>
+      <td>KALVE</td>
+      <td><span title="n=475 exact-date pairs">0.003623</span></td>
+      <td><span title="n=475 exact-date pairs">-0.003341</span></td>
+      <td><span title="n=404 exact-date pairs">0.020360</span></td>
+      <td><span title="n=404 exact-date pairs">-0.014435</span></td>
+      <td><span title="n=7 exact-date pairs">-0.279013</span></td>
+      <td><span title="n=7 exact-date pairs">-0.370625</span></td>
+      <td><span title="n=33 exact-date pairs">-0.114103</span></td>
+      <td><span title="n=33 exact-date pairs">0.183342</span></td>
+      <td><span title="n=14 exact-date pairs">-0.243067</span></td>
+      <td><span title="n=14 exact-date pairs">-0.057804</span></td>
+    </tr>
+    <tr>
+      <td>KNE1L</td>
+      <td><span title="n=512 exact-date pairs">-0.026942</span></td>
+      <td><span title="n=512 exact-date pairs">-0.004027</span></td>
+      <td><span title="n=435 exact-date pairs">-0.037364</span></td>
+      <td><span title="n=435 exact-date pairs">-0.025322</span></td>
+      <td><span title="n=7 exact-date pairs">0.057617</span></td>
+      <td><span title="n=7 exact-date pairs">0.333562</span></td>
+      <td><span title="n=37 exact-date pairs">0.068757</span></td>
+      <td><span title="n=37 exact-date pairs">0.136813</span></td>
+      <td><span title="n=14 exact-date pairs">0.205310</span></td>
+      <td><span title="n=14 exact-date pairs">0.129162</span></td>
+    </tr>
+    <tr>
+      <td>KNR1L</td>
+      <td><span title="n=512 exact-date pairs">0.075856</span></td>
+      <td><span title="n=512 exact-date pairs">0.074495</span></td>
+      <td><span title="n=435 exact-date pairs">0.071195</span></td>
+      <td><span title="n=435 exact-date pairs">0.084665</span></td>
+      <td><span title="n=7 exact-date pairs">-0.085800</span></td>
+      <td><span title="n=7 exact-date pairs">-0.369800</span></td>
+      <td><span title="n=37 exact-date pairs">0.177467</span></td>
+      <td><span title="n=37 exact-date pairs">0.017734</span></td>
+      <td><span title="n=14 exact-date pairs">0.131675</span></td>
+      <td><span title="n=14 exact-date pairs">0.210408</span></td>
+    </tr>
+    <tr>
+      <td>LGD1L</td>
+      <td><span title="n=512 exact-date pairs">-0.098506</span></td>
+      <td><span title="n=512 exact-date pairs">-0.035346</span></td>
+      <td><span title="n=435 exact-date pairs">-0.115531</span></td>
+      <td><span title="n=435 exact-date pairs">-0.053775</span></td>
+      <td><span title="n=7 exact-date pairs">0.042793</span></td>
+      <td><span title="n=7 exact-date pairs">-0.037062</span></td>
+      <td><span title="n=37 exact-date pairs">-0.039281</span></td>
+      <td><span title="n=37 exact-date pairs">0.052217</span></td>
+      <td><span title="n=14 exact-date pairs">0.091852</span></td>
+      <td><span title="n=14 exact-date pairs">0.354892</span></td>
+    </tr>
+    <tr>
+      <td>LHV1T</td>
+      <td><span title="n=512 exact-date pairs">-0.003456</span></td>
+      <td><span title="n=512 exact-date pairs">-0.021520</span></td>
+      <td><span title="n=435 exact-date pairs">-0.009999</span></td>
+      <td><span title="n=435 exact-date pairs">-0.021660</span></td>
+      <td><span title="n=7 exact-date pairs">-0.309817</span></td>
+      <td><span title="n=7 exact-date pairs">-0.481812</span></td>
+      <td><span title="n=37 exact-date pairs">-0.192780</span></td>
+      <td><span title="n=37 exact-date pairs">-0.186785</span></td>
+      <td><span title="n=14 exact-date pairs">0.383294</span></td>
+      <td><span title="n=14 exact-date pairs">0.327814</span></td>
+    </tr>
+    <tr>
+      <td>LINDA</td>
+      <td><span title="n=512 exact-date pairs">0.041696</span></td>
+      <td><span title="n=512 exact-date pairs">0.003664</span></td>
+      <td><span title="n=435 exact-date pairs">0.011234</span></td>
+      <td><span title="n=435 exact-date pairs">-0.057053</span></td>
+      <td><span title="n=7 exact-date pairs">0.848100</span></td>
+      <td><span title="n=7 exact-date pairs">0.923077</span></td>
+      <td><span title="n=37 exact-date pairs">0.137395</span></td>
+      <td><span title="n=37 exact-date pairs">0.152129</span></td>
+      <td><span title="n=14 exact-date pairs">0.242828</span></td>
+      <td><span title="n=14 exact-date pairs">0.366234</span></td>
+    </tr>
+    <tr>
+      <td>LVN1T</td>
+      <td><span title="n=119 exact-date pairs">0.160922</span></td>
+      <td><span title="n=119 exact-date pairs">0.103670</span></td>
+      <td><span title="n=116 exact-date pairs">0.164193</span></td>
+      <td><span title="n=116 exact-date pairs">0.108513</span></td>
+      <td><span title="n=0 exact-date pairs">—</span></td>
+      <td><span title="n=0 exact-date pairs">—</span></td>
+      <td><span title="n=0 exact-date pairs">—</span></td>
+      <td><span title="n=0 exact-date pairs">—</span></td>
+      <td><span title="n=0 exact-date pairs">—</span></td>
+      <td><span title="n=0 exact-date pairs">—</span></td>
+    </tr>
+    <tr>
+      <td>MAGIC</td>
+      <td><span title="n=512 exact-date pairs">0.026200</span></td>
+      <td><span title="n=512 exact-date pairs">-0.005995</span></td>
+      <td><span title="n=435 exact-date pairs">0.013998</span></td>
+      <td><span title="n=435 exact-date pairs">-0.055855</span></td>
+      <td><span title="n=7 exact-date pairs">0.288854</span></td>
+      <td><span title="n=7 exact-date pairs">0.148250</span></td>
+      <td><span title="n=37 exact-date pairs">-0.013552</span></td>
+      <td><span title="n=37 exact-date pairs">0.127025</span></td>
+      <td><span title="n=14 exact-date pairs">0.685868</span></td>
+      <td><span title="n=14 exact-date pairs">0.682758</span></td>
+    </tr>
+    <tr>
+      <td>MDARA</td>
+      <td><span title="n=512 exact-date pairs">-0.001925</span></td>
+      <td><span title="n=512 exact-date pairs">-0.025658</span></td>
+      <td><span title="n=435 exact-date pairs">-0.008131</span></td>
+      <td><span title="n=435 exact-date pairs">-0.027702</span></td>
+      <td><span title="n=7 exact-date pairs">-0.291886</span></td>
+      <td><span title="n=7 exact-date pairs">-0.307692</span></td>
+      <td><span title="n=37 exact-date pairs">0.049236</span></td>
+      <td><span title="n=37 exact-date pairs">0.009058</span></td>
+      <td><span title="n=14 exact-date pairs">0.131085</span></td>
+      <td><span title="n=14 exact-date pairs">0.113039</span></td>
+    </tr>
+    <tr>
+      <td>MODE</td>
+      <td><span title="n=512 exact-date pairs">-0.022260</span></td>
+      <td><span title="n=512 exact-date pairs">-0.043746</span></td>
+      <td><span title="n=435 exact-date pairs">0.003333</span></td>
+      <td><span title="n=435 exact-date pairs">-0.005397</span></td>
+      <td><span title="n=7 exact-date pairs">-0.176606</span></td>
+      <td><span title="n=7 exact-date pairs">-0.542269</span></td>
+      <td><span title="n=37 exact-date pairs">-0.361207</span></td>
+      <td><span title="n=37 exact-date pairs">-0.412624</span></td>
+      <td><span title="n=14 exact-date pairs">0.049000</span></td>
+      <td><span title="n=14 exact-date pairs">0.023531</span></td>
+    </tr>
+    <tr>
+      <td>MOLNR</td>
+      <td><span title="n=512 exact-date pairs">-0.018674</span></td>
+      <td><span title="n=512 exact-date pairs">-0.005479</span></td>
+      <td><span title="n=435 exact-date pairs">-0.036871</span></td>
+      <td><span title="n=435 exact-date pairs">-0.008015</span></td>
+      <td><span title="n=7 exact-date pairs">-0.490786</span></td>
+      <td><span title="n=7 exact-date pairs">-0.230769</span></td>
+      <td><span title="n=37 exact-date pairs">-0.101994</span></td>
+      <td><span title="n=37 exact-date pairs">-0.145853</span></td>
+      <td><span title="n=14 exact-date pairs">0.144966</span></td>
+      <td><span title="n=14 exact-date pairs">0.124343</span></td>
+    </tr>
+    <tr>
+      <td>MRK1T</td>
+      <td><span title="n=512 exact-date pairs">-0.029892</span></td>
+      <td><span title="n=512 exact-date pairs">-0.017137</span></td>
+      <td><span title="n=435 exact-date pairs">-0.053358</span></td>
+      <td><span title="n=435 exact-date pairs">-0.047179</span></td>
+      <td><span title="n=7 exact-date pairs">0.064511</span></td>
+      <td><span title="n=7 exact-date pairs">-0.185312</span></td>
+      <td><span title="n=37 exact-date pairs">0.025355</span></td>
+      <td><span title="n=37 exact-date pairs">0.082096</span></td>
+      <td><span title="n=14 exact-date pairs">0.455362</span></td>
+      <td><span title="n=14 exact-date pairs">0.437944</span></td>
+    </tr>
+    <tr>
+      <td>NCN1T</td>
+      <td><span title="n=512 exact-date pairs">0.038976</span></td>
+      <td><span title="n=512 exact-date pairs">0.079750</span></td>
+      <td><span title="n=435 exact-date pairs">0.023708</span></td>
+      <td><span title="n=435 exact-date pairs">0.049827</span></td>
+      <td><span title="n=7 exact-date pairs">-0.058029</span></td>
+      <td><span title="n=7 exact-date pairs">-0.185312</span></td>
+      <td><span title="n=37 exact-date pairs">0.187362</span></td>
+      <td><span title="n=37 exact-date pairs">0.253470</span></td>
+      <td><span title="n=14 exact-date pairs">0.175217</span></td>
+      <td><span title="n=14 exact-date pairs">0.203471</span></td>
+    </tr>
+    <tr>
+      <td>NEOFI</td>
+      <td><span title="n=512 exact-date pairs">0.075149</span></td>
+      <td><span title="n=512 exact-date pairs">0.033503</span></td>
+      <td><span title="n=435 exact-date pairs">0.080130</span></td>
+      <td><span title="n=435 exact-date pairs">0.033873</span></td>
+      <td><span title="n=7 exact-date pairs">-0.343132</span></td>
+      <td><span title="n=7 exact-date pairs">-0.429377</span></td>
+      <td><span title="n=37 exact-date pairs">0.051325</span></td>
+      <td><span title="n=37 exact-date pairs">0.093871</span></td>
+      <td><span title="n=14 exact-date pairs">0.309376</span></td>
+      <td><span title="n=14 exact-date pairs">0.306276</span></td>
+    </tr>
+    <tr>
+      <td>NTU1L</td>
+      <td><span title="n=512 exact-date pairs">-0.018893</span></td>
+      <td><span title="n=512 exact-date pairs">0.007533</span></td>
+      <td><span title="n=435 exact-date pairs">-0.058042</span></td>
+      <td><span title="n=435 exact-date pairs">-0.020589</span></td>
+      <td><span title="n=7 exact-date pairs">-0.130921</span></td>
+      <td><span title="n=7 exact-date pairs">-0.112194</span></td>
+      <td><span title="n=37 exact-date pairs">0.205300</span></td>
+      <td><span title="n=37 exact-date pairs">0.261312</span></td>
+      <td><span title="n=14 exact-date pairs">0.290276</span></td>
+      <td><span title="n=14 exact-date pairs">0.226079</span></td>
+    </tr>
+    <tr>
+      <td>PKG1T</td>
+      <td><span title="n=512 exact-date pairs">-0.024595</span></td>
+      <td><span title="n=512 exact-date pairs">0.034683</span></td>
+      <td><span title="n=435 exact-date pairs">-0.044268</span></td>
+      <td><span title="n=435 exact-date pairs">0.018369</span></td>
+      <td><span title="n=7 exact-date pairs">-0.145083</span></td>
+      <td><span title="n=7 exact-date pairs">-0.407687</span></td>
+      <td><span title="n=37 exact-date pairs">0.137043</span></td>
+      <td><span title="n=37 exact-date pairs">0.055715</span></td>
+      <td><span title="n=14 exact-date pairs">0.528116</span></td>
+      <td><span title="n=14 exact-date pairs">0.461782</span></td>
+    </tr>
+    <tr>
+      <td>PRF1T</td>
+      <td><span title="n=512 exact-date pairs">-0.090363</span></td>
+      <td><span title="n=512 exact-date pairs">0.010639</span></td>
+      <td><span title="n=435 exact-date pairs">-0.106009</span></td>
+      <td><span title="n=435 exact-date pairs">0.000507</span></td>
+      <td><span title="n=7 exact-date pairs">0.605909</span></td>
+      <td><span title="n=7 exact-date pairs">0.411377</span></td>
+      <td><span title="n=37 exact-date pairs">-0.085650</span></td>
+      <td><span title="n=37 exact-date pairs">-0.107212</span></td>
+      <td><span title="n=14 exact-date pairs">0.033250</span></td>
+      <td><span title="n=14 exact-date pairs">0.110901</span></td>
+    </tr>
+    <tr>
+      <td>PRIMO</td>
+      <td><span title="n=355 exact-date pairs">0.015727</span></td>
+      <td><span title="n=355 exact-date pairs">0.068388</span></td>
+      <td><span title="n=336 exact-date pairs">0.012789</span></td>
+      <td><span title="n=336 exact-date pairs">0.063693</span></td>
+      <td><span title="n=3 exact-date pairs">—</span></td>
+      <td><span title="n=3 exact-date pairs">—</span></td>
+      <td><span title="n=4 exact-date pairs">0.906081</span></td>
+      <td><span title="n=4 exact-date pairs">0.632456</span></td>
+      <td><span title="n=0 exact-date pairs">—</span></td>
+      <td><span title="n=0 exact-date pairs">—</span></td>
+    </tr>
+    <tr>
+      <td>PZV1L</td>
+      <td><span title="n=512 exact-date pairs">0.033215</span></td>
+      <td><span title="n=512 exact-date pairs">0.047877</span></td>
+      <td><span title="n=435 exact-date pairs">0.035607</span></td>
+      <td><span title="n=435 exact-date pairs">0.028851</span></td>
+      <td><span title="n=7 exact-date pairs">0.039127</span></td>
+      <td><span title="n=7 exact-date pairs">-0.407687</span></td>
+      <td><span title="n=37 exact-date pairs">0.065895</span></td>
+      <td><span title="n=37 exact-date pairs">0.229069</span></td>
+      <td><span title="n=14 exact-date pairs">-0.006026</span></td>
+      <td><span title="n=14 exact-date pairs">0.312046</span></td>
+    </tr>
+    <tr>
+      <td>RKB1R</td>
+      <td><span title="n=512 exact-date pairs">-0.004421</span></td>
+      <td><span title="n=512 exact-date pairs">0.029045</span></td>
+      <td><span title="n=435 exact-date pairs">-0.000183</span></td>
+      <td><span title="n=435 exact-date pairs">0.063587</span></td>
+      <td><span title="n=7 exact-date pairs">0.033758</span></td>
+      <td><span title="n=7 exact-date pairs">0.355280</span></td>
+      <td><span title="n=37 exact-date pairs">-0.050259</span></td>
+      <td><span title="n=37 exact-date pairs">-0.098519</span></td>
+      <td><span title="n=14 exact-date pairs">-0.520203</span></td>
+      <td><span title="n=14 exact-date pairs">-0.469015</span></td>
+    </tr>
+    <tr>
+      <td>ROE1L</td>
+      <td><span title="n=512 exact-date pairs">0.043485</span></td>
+      <td><span title="n=512 exact-date pairs">0.070954</span></td>
+      <td><span title="n=435 exact-date pairs">0.030931</span></td>
+      <td><span title="n=435 exact-date pairs">0.066046</span></td>
+      <td><span title="n=7 exact-date pairs">-0.255557</span></td>
+      <td><span title="n=7 exact-date pairs">-0.333562</span></td>
+      <td><span title="n=37 exact-date pairs">0.034196</span></td>
+      <td><span title="n=37 exact-date pairs">0.060345</span></td>
+      <td><span title="n=14 exact-date pairs">0.538443</span></td>
+      <td><span title="n=14 exact-date pairs">0.458940</span></td>
+    </tr>
+    <tr>
+      <td>RSU1L</td>
+      <td><span title="n=512 exact-date pairs">0.002142</span></td>
+      <td><span title="n=512 exact-date pairs">-0.004489</span></td>
+      <td><span title="n=435 exact-date pairs">0.034276</span></td>
+      <td><span title="n=435 exact-date pairs">0.022074</span></td>
+      <td><span title="n=7 exact-date pairs">-0.816566</span></td>
+      <td><span title="n=7 exact-date pairs">-0.897549</span></td>
+      <td><span title="n=37 exact-date pairs">0.061533</span></td>
+      <td><span title="n=37 exact-date pairs">-0.043071</span></td>
+      <td><span title="n=14 exact-date pairs">-0.295171</span></td>
+      <td><span title="n=14 exact-date pairs">-0.200743</span></td>
+    </tr>
+    <tr>
+      <td>SAF1R</td>
+      <td><span title="n=512 exact-date pairs">0.076218</span></td>
+      <td><span title="n=512 exact-date pairs">0.034323</span></td>
+      <td><span title="n=435 exact-date pairs">0.093142</span></td>
+      <td><span title="n=435 exact-date pairs">0.049425</span></td>
+      <td><span title="n=7 exact-date pairs">-0.153334</span></td>
+      <td><span title="n=7 exact-date pairs">0.038462</span></td>
+      <td><span title="n=37 exact-date pairs">-0.181882</span></td>
+      <td><span title="n=37 exact-date pairs">-0.101363</span></td>
+      <td><span title="n=14 exact-date pairs">0.052574</span></td>
+      <td><span title="n=14 exact-date pairs">0.144691</span></td>
+    </tr>
+    <tr>
+      <td>SAUNA</td>
+      <td><span title="n=512 exact-date pairs">0.011853</span></td>
+      <td><span title="n=512 exact-date pairs">0.014006</span></td>
+      <td><span title="n=435 exact-date pairs">-0.026193</span></td>
+      <td><span title="n=435 exact-date pairs">-0.020288</span></td>
+      <td><span title="n=7 exact-date pairs">0.630116</span></td>
+      <td><span title="n=7 exact-date pairs">0.448775</span></td>
+      <td><span title="n=37 exact-date pairs">0.008980</span></td>
+      <td><span title="n=37 exact-date pairs">-0.032532</span></td>
+      <td><span title="n=14 exact-date pairs">0.632700</span></td>
+      <td><span title="n=14 exact-date pairs">0.735565</span></td>
+    </tr>
+    <tr>
+      <td>SCM1R</td>
+      <td><span title="n=512 exact-date pairs">-0.020632</span></td>
+      <td><span title="n=512 exact-date pairs">0.057428</span></td>
+      <td><span title="n=435 exact-date pairs">-0.047583</span></td>
+      <td><span title="n=435 exact-date pairs">0.030321</span></td>
+      <td><span title="n=7 exact-date pairs">0.076944</span></td>
+      <td><span title="n=7 exact-date pairs">0.269231</span></td>
+      <td><span title="n=37 exact-date pairs">0.382386</span></td>
+      <td><span title="n=37 exact-date pairs">0.106382</span></td>
+      <td><span title="n=14 exact-date pairs">0.154749</span></td>
+      <td><span title="n=14 exact-date pairs">0.335578</span></td>
+    </tr>
+    <tr>
+      <td>SE0013876927</td>
+      <td><span title="n=444 exact-date pairs">0.096884</span></td>
+      <td><span title="n=444 exact-date pairs">0.081763</span></td>
+      <td><span title="n=383 exact-date pairs">0.047745</span></td>
+      <td><span title="n=383 exact-date pairs">0.038101</span></td>
+      <td><span title="n=2 exact-date pairs">—</span></td>
+      <td><span title="n=2 exact-date pairs">—</span></td>
+      <td><span title="n=30 exact-date pairs">0.177510</span></td>
+      <td><span title="n=30 exact-date pairs">0.174615</span></td>
+      <td><span title="n=14 exact-date pairs">0.584158</span></td>
+      <td><span title="n=14 exact-date pairs">0.519982</span></td>
+    </tr>
+    <tr>
+      <td>SE0013876950</td>
+      <td><span title="n=479 exact-date pairs">0.010959</span></td>
+      <td><span title="n=479 exact-date pairs">0.048143</span></td>
+      <td><span title="n=409 exact-date pairs">0.009837</span></td>
+      <td><span title="n=409 exact-date pairs">0.039889</span></td>
+      <td><span title="n=6 exact-date pairs">0.254025</span></td>
+      <td><span title="n=6 exact-date pairs">0.579771</span></td>
+      <td><span title="n=36 exact-date pairs">-0.006257</span></td>
+      <td><span title="n=36 exact-date pairs">0.130167</span></td>
+      <td><span title="n=12 exact-date pairs">0.215838</span></td>
+      <td><span title="n=12 exact-date pairs">0.182657</span></td>
+    </tr>
+    <tr>
+      <td>SE0013876968</td>
+      <td><span title="n=475 exact-date pairs">0.004806</span></td>
+      <td><span title="n=475 exact-date pairs">0.042504</span></td>
+      <td><span title="n=405 exact-date pairs">0.003796</span></td>
+      <td><span title="n=405 exact-date pairs">0.031422</span></td>
+      <td><span title="n=6 exact-date pairs">0.282786</span></td>
+      <td><span title="n=6 exact-date pairs">0.492805</span></td>
+      <td><span title="n=36 exact-date pairs">0.018410</span></td>
+      <td><span title="n=36 exact-date pairs">0.130702</span></td>
+      <td><span title="n=12 exact-date pairs">0.149922</span></td>
+      <td><span title="n=12 exact-date pairs">0.138819</span></td>
+    </tr>
+    <tr>
+      <td>SE0014261756</td>
+      <td><span title="n=478 exact-date pairs">0.061992</span></td>
+      <td><span title="n=478 exact-date pairs">0.065025</span></td>
+      <td><span title="n=406 exact-date pairs">0.014501</span></td>
+      <td><span title="n=406 exact-date pairs">0.033675</span></td>
+      <td><span title="n=6 exact-date pairs">-0.691463</span></td>
+      <td><span title="n=6 exact-date pairs">-0.637748</span></td>
+      <td><span title="n=36 exact-date pairs">0.002466</span></td>
+      <td><span title="n=36 exact-date pairs">0.138542</span></td>
+      <td><span title="n=14 exact-date pairs">0.590540</span></td>
+      <td><span title="n=14 exact-date pairs">0.553893</span></td>
+    </tr>
+    <tr>
+      <td>SE0014261764</td>
+      <td><span title="n=478 exact-date pairs">0.000698</span></td>
+      <td><span title="n=478 exact-date pairs">0.043400</span></td>
+      <td><span title="n=406 exact-date pairs">-0.014127</span></td>
+      <td><span title="n=406 exact-date pairs">0.032041</span></td>
+      <td><span title="n=6 exact-date pairs">-0.613705</span></td>
+      <td><span title="n=6 exact-date pairs">-0.347863</span></td>
+      <td><span title="n=36 exact-date pairs">-0.084344</span></td>
+      <td><span title="n=36 exact-date pairs">0.076279</span></td>
+      <td><span title="n=14 exact-date pairs">0.393213</span></td>
+      <td><span title="n=14 exact-date pairs">0.314250</span></td>
+    </tr>
+    <tr>
+      <td>SE0014261871</td>
+      <td><span title="n=478 exact-date pairs">0.019958</span></td>
+      <td><span title="n=478 exact-date pairs">0.012639</span></td>
+      <td><span title="n=406 exact-date pairs">-0.040160</span></td>
+      <td><span title="n=406 exact-date pairs">-0.040446</span></td>
+      <td><span title="n=6 exact-date pairs">-0.783266</span></td>
+      <td><span title="n=6 exact-date pairs">-0.637748</span></td>
+      <td><span title="n=36 exact-date pairs">0.072272</span></td>
+      <td><span title="n=36 exact-date pairs">0.293661</span></td>
+      <td><span title="n=14 exact-date pairs">0.703725</span></td>
+      <td><span title="n=14 exact-date pairs">0.748321</span></td>
+    </tr>
+    <tr>
+      <td>SE0014261889</td>
+      <td><span title="n=478 exact-date pairs">0.024056</span></td>
+      <td><span title="n=478 exact-date pairs">0.018750</span></td>
+      <td><span title="n=406 exact-date pairs">-0.021463</span></td>
+      <td><span title="n=406 exact-date pairs">-0.019485</span></td>
+      <td><span title="n=6 exact-date pairs">-0.697800</span></td>
+      <td><span title="n=6 exact-date pairs">-0.492805</span></td>
+      <td><span title="n=36 exact-date pairs">0.042863</span></td>
+      <td><span title="n=36 exact-date pairs">0.224255</span></td>
+      <td><span title="n=14 exact-date pairs">0.534529</span></td>
+      <td><span title="n=14 exact-date pairs">0.533546</span></td>
+    </tr>
+    <tr>
+      <td>SE0014261897</td>
+      <td><span title="n=478 exact-date pairs">0.025181</span></td>
+      <td><span title="n=478 exact-date pairs">-0.000580</span></td>
+      <td><span title="n=406 exact-date pairs">-0.029107</span></td>
+      <td><span title="n=406 exact-date pairs">-0.035768</span></td>
+      <td><span title="n=6 exact-date pairs">-0.684348</span></td>
+      <td><span title="n=6 exact-date pairs">-0.492805</span></td>
+      <td><span title="n=36 exact-date pairs">0.044464</span></td>
+      <td><span title="n=36 exact-date pairs">0.151480</span></td>
+      <td><span title="n=14 exact-date pairs">0.563367</span></td>
+      <td><span title="n=14 exact-date pairs">0.533546</span></td>
+    </tr>
+    <tr>
+      <td>SE0014263273</td>
+      <td><span title="n=506 exact-date pairs">0.024512</span></td>
+      <td><span title="n=506 exact-date pairs">0.045706</span></td>
+      <td><span title="n=430 exact-date pairs">-0.010548</span></td>
+      <td><span title="n=430 exact-date pairs">0.021989</span></td>
+      <td><span title="n=6 exact-date pairs">-0.620835</span></td>
+      <td><span title="n=6 exact-date pairs">-0.463817</span></td>
+      <td><span title="n=37 exact-date pairs">-0.003801</span></td>
+      <td><span title="n=37 exact-date pairs">0.138003</span></td>
+      <td><span title="n=14 exact-date pairs">0.511981</span></td>
+      <td><span title="n=14 exact-date pairs">0.492852</span></td>
+    </tr>
+    <tr>
+      <td>SE0014263281</td>
+      <td><span title="n=494 exact-date pairs">0.028754</span></td>
+      <td><span title="n=494 exact-date pairs">0.046147</span></td>
+      <td><span title="n=421 exact-date pairs">-0.008707</span></td>
+      <td><span title="n=421 exact-date pairs">0.019878</span></td>
+      <td><span title="n=6 exact-date pairs">-0.625504</span></td>
+      <td><span title="n=6 exact-date pairs">-0.463817</span></td>
+      <td><span title="n=36 exact-date pairs">-0.045697</span></td>
+      <td><span title="n=36 exact-date pairs">0.136521</span></td>
+      <td><span title="n=14 exact-date pairs">0.525331</span></td>
+      <td><span title="n=14 exact-date pairs">0.492852</span></td>
+    </tr>
+    <tr>
+      <td>SE0014263299</td>
+      <td><span title="n=494 exact-date pairs">0.026986</span></td>
+      <td><span title="n=494 exact-date pairs">0.047851</span></td>
+      <td><span title="n=421 exact-date pairs">-0.008302</span></td>
+      <td><span title="n=421 exact-date pairs">0.025252</span></td>
+      <td><span title="n=6 exact-date pairs">-0.633500</span></td>
+      <td><span title="n=6 exact-date pairs">-0.463817</span></td>
+      <td><span title="n=36 exact-date pairs">-0.045864</span></td>
+      <td><span title="n=36 exact-date pairs">0.137060</span></td>
+      <td><span title="n=14 exact-date pairs">0.523735</span></td>
+      <td><span title="n=14 exact-date pairs">0.492852</span></td>
+    </tr>
+    <tr>
+      <td>SE0015192315</td>
+      <td><span title="n=506 exact-date pairs">0.077968</span></td>
+      <td><span title="n=506 exact-date pairs">0.062215</span></td>
+      <td><span title="n=430 exact-date pairs">0.044018</span></td>
+      <td><span title="n=430 exact-date pairs">0.021017</span></td>
+      <td><span title="n=6 exact-date pairs">-0.219670</span></td>
+      <td><span title="n=6 exact-date pairs">0.057977</span></td>
+      <td><span title="n=37 exact-date pairs">0.049305</span></td>
+      <td><span title="n=37 exact-date pairs">0.199462</span></td>
+      <td><span title="n=14 exact-date pairs">0.657908</span></td>
+      <td><span title="n=14 exact-date pairs">0.562937</span></td>
+    </tr>
+    <tr>
+      <td>SE0015192323</td>
+      <td><span title="n=478 exact-date pairs">0.012161</span></td>
+      <td><span title="n=478 exact-date pairs">0.018335</span></td>
+      <td><span title="n=406 exact-date pairs">-0.030442</span></td>
+      <td><span title="n=406 exact-date pairs">-0.015227</span></td>
+      <td><span title="n=6 exact-date pairs">-0.640094</span></td>
+      <td><span title="n=6 exact-date pairs">-0.405840</span></td>
+      <td><span title="n=36 exact-date pairs">-0.060711</span></td>
+      <td><span title="n=36 exact-date pairs">0.121157</span></td>
+      <td><span title="n=14 exact-date pairs">0.474063</span></td>
+      <td><span title="n=14 exact-date pairs">0.443115</span></td>
+    </tr>
+    <tr>
+      <td>SE0015192331</td>
+      <td><span title="n=504 exact-date pairs">0.073972</span></td>
+      <td><span title="n=504 exact-date pairs">0.038226</span></td>
+      <td><span title="n=428 exact-date pairs">0.037346</span></td>
+      <td><span title="n=428 exact-date pairs">0.003867</span></td>
+      <td><span title="n=6 exact-date pairs">-0.422611</span></td>
+      <td><span title="n=6 exact-date pairs">-0.231908</span></td>
+      <td><span title="n=37 exact-date pairs">-0.012016</span></td>
+      <td><span title="n=37 exact-date pairs">0.139858</span></td>
+      <td><span title="n=14 exact-date pairs">0.699789</span></td>
+      <td><span title="n=14 exact-date pairs">0.594588</span></td>
+    </tr>
+    <tr>
+      <td>SE0015192349</td>
+      <td><span title="n=478 exact-date pairs">0.030559</span></td>
+      <td><span title="n=478 exact-date pairs">0.038352</span></td>
+      <td><span title="n=406 exact-date pairs">-0.015388</span></td>
+      <td><span title="n=406 exact-date pairs">0.005631</span></td>
+      <td><span title="n=6 exact-date pairs">-0.619208</span></td>
+      <td><span title="n=6 exact-date pairs">-0.405840</span></td>
+      <td><span title="n=36 exact-date pairs">-0.041927</span></td>
+      <td><span title="n=36 exact-date pairs">0.129513</span></td>
+      <td><span title="n=14 exact-date pairs">0.534421</span></td>
+      <td><span title="n=14 exact-date pairs">0.544850</span></td>
+    </tr>
+    <tr>
+      <td>SE0015948609</td>
+      <td><span title="n=506 exact-date pairs">0.075172</span></td>
+      <td><span title="n=506 exact-date pairs">0.030556</span></td>
+      <td><span title="n=430 exact-date pairs">0.035349</span></td>
+      <td><span title="n=430 exact-date pairs">0.009758</span></td>
+      <td><span title="n=6 exact-date pairs">0.047088</span></td>
+      <td><span title="n=6 exact-date pairs">0.000000</span></td>
+      <td><span title="n=37 exact-date pairs">-0.037143</span></td>
+      <td><span title="n=37 exact-date pairs">-0.019538</span></td>
+      <td><span title="n=14 exact-date pairs">0.668658</span></td>
+      <td><span title="n=14 exact-date pairs">0.648847</span></td>
+    </tr>
+    <tr>
+      <td>SE0015948617</td>
+      <td><span title="n=506 exact-date pairs">-0.007358</span></td>
+      <td><span title="n=506 exact-date pairs">-0.012914</span></td>
+      <td><span title="n=430 exact-date pairs">-0.019811</span></td>
+      <td><span title="n=430 exact-date pairs">-0.020029</span></td>
+      <td><span title="n=6 exact-date pairs">-0.692920</span></td>
+      <td><span title="n=6 exact-date pairs">-0.463817</span></td>
+      <td><span title="n=37 exact-date pairs">-0.064930</span></td>
+      <td><span title="n=37 exact-date pairs">-0.092249</span></td>
+      <td><span title="n=14 exact-date pairs">0.329575</span></td>
+      <td><span title="n=14 exact-date pairs">0.336858</span></td>
+    </tr>
+    <tr>
+      <td>SE0017072416</td>
+      <td><span title="n=506 exact-date pairs">0.085552</span></td>
+      <td><span title="n=506 exact-date pairs">0.089112</span></td>
+      <td><span title="n=430 exact-date pairs">0.055547</span></td>
+      <td><span title="n=430 exact-date pairs">0.087716</span></td>
+      <td><span title="n=6 exact-date pairs">-0.535562</span></td>
+      <td><span title="n=6 exact-date pairs">-0.347863</span></td>
+      <td><span title="n=37 exact-date pairs">0.130794</span></td>
+      <td><span title="n=37 exact-date pairs">0.183510</span></td>
+      <td><span title="n=14 exact-date pairs">0.537132</span></td>
+      <td><span title="n=14 exact-date pairs">0.275816</span></td>
+    </tr>
+    <tr>
+      <td>SE0019354200</td>
+      <td><span title="n=492 exact-date pairs">0.057811</span></td>
+      <td><span title="n=492 exact-date pairs">0.038800</span></td>
+      <td><span title="n=420 exact-date pairs">0.036531</span></td>
+      <td><span title="n=420 exact-date pairs">0.008642</span></td>
+      <td><span title="n=6 exact-date pairs">0.302128</span></td>
+      <td><span title="n=6 exact-date pairs">0.405840</span></td>
+      <td><span title="n=36 exact-date pairs">-0.142074</span></td>
+      <td><span title="n=36 exact-date pairs">-0.029401</span></td>
+      <td><span title="n=14 exact-date pairs">0.536401</span></td>
+      <td><span title="n=14 exact-date pairs">0.477027</span></td>
+    </tr>
+    <tr>
+      <td>SE0025667199</td>
+      <td><span title="n=270 exact-date pairs">0.066629</span></td>
+      <td><span title="n=270 exact-date pairs">0.123019</span></td>
+      <td><span title="n=255 exact-date pairs">0.075078</span></td>
+      <td><span title="n=255 exact-date pairs">0.128267</span></td>
+      <td><span title="n=3 exact-date pairs">0.974422</span></td>
+      <td><span title="n=3 exact-date pairs">1.000000</span></td>
+      <td><span title="n=3 exact-date pairs">-0.380186</span></td>
+      <td><span title="n=3 exact-date pairs">0.500000</span></td>
+      <td><span title="n=0 exact-date pairs">—</span></td>
+      <td><span title="n=0 exact-date pairs">—</span></td>
+    </tr>
+    <tr>
+      <td>SE0025667215</td>
+      <td><span title="n=261 exact-date pairs">-0.031284</span></td>
+      <td><span title="n=261 exact-date pairs">-0.046592</span></td>
+      <td><span title="n=249 exact-date pairs">-0.039791</span></td>
+      <td><span title="n=249 exact-date pairs">-0.065271</span></td>
+      <td><span title="n=3 exact-date pairs">0.585624</span></td>
+      <td><span title="n=3 exact-date pairs">1.000000</span></td>
+      <td><span title="n=2 exact-date pairs">—</span></td>
+      <td><span title="n=2 exact-date pairs">—</span></td>
+      <td><span title="n=0 exact-date pairs">—</span></td>
+      <td><span title="n=0 exact-date pairs">—</span></td>
+    </tr>
+    <tr>
+      <td>SE0026821472</td>
+      <td><span title="n=496 exact-date pairs">0.005553</span></td>
+      <td><span title="n=496 exact-date pairs">0.020714</span></td>
+      <td><span title="n=423 exact-date pairs">-0.014053</span></td>
+      <td><span title="n=423 exact-date pairs">-0.019561</span></td>
+      <td><span title="n=6 exact-date pairs">-0.069305</span></td>
+      <td><span title="n=6 exact-date pairs">0.144943</span></td>
+      <td><span title="n=36 exact-date pairs">-0.001767</span></td>
+      <td><span title="n=36 exact-date pairs">0.078581</span></td>
+      <td><span title="n=14 exact-date pairs">0.654699</span></td>
+      <td><span title="n=14 exact-date pairs">0.608152</span></td>
+    </tr>
+    <tr>
+      <td>SE0027397514</td>
+      <td><span title="n=480 exact-date pairs">-0.001736</span></td>
+      <td><span title="n=480 exact-date pairs">-0.000268</span></td>
+      <td><span title="n=407 exact-date pairs">-0.007897</span></td>
+      <td><span title="n=407 exact-date pairs">-0.026968</span></td>
+      <td><span title="n=6 exact-date pairs">-0.494056</span></td>
+      <td><span title="n=6 exact-date pairs">-0.550782</span></td>
+      <td><span title="n=36 exact-date pairs">0.023156</span></td>
+      <td><span title="n=36 exact-date pairs">0.132612</span></td>
+      <td><span title="n=14 exact-date pairs">0.523916</span></td>
+      <td><span title="n=14 exact-date pairs">0.547111</span></td>
+    </tr>
+    <tr>
+      <td>SE0029504588</td>
+      <td><span title="n=32 exact-date pairs">0.366290</span></td>
+      <td><span title="n=32 exact-date pairs">0.208587</span></td>
+      <td><span title="n=32 exact-date pairs">0.366290</span></td>
+      <td><span title="n=32 exact-date pairs">0.208587</span></td>
+      <td><span title="n=0 exact-date pairs">—</span></td>
+      <td><span title="n=0 exact-date pairs">—</span></td>
+      <td><span title="n=0 exact-date pairs">—</span></td>
+      <td><span title="n=0 exact-date pairs">—</span></td>
+      <td><span title="n=0 exact-date pairs">—</span></td>
+      <td><span title="n=0 exact-date pairs">—</span></td>
+    </tr>
+    <tr>
+      <td>SFG1T</td>
+      <td><span title="n=512 exact-date pairs">-0.021279</span></td>
+      <td><span title="n=512 exact-date pairs">-0.046188</span></td>
+      <td><span title="n=435 exact-date pairs">-0.040997</span></td>
+      <td><span title="n=435 exact-date pairs">-0.054858</span></td>
+      <td><span title="n=7 exact-date pairs">0.032950</span></td>
+      <td><span title="n=7 exact-date pairs">-0.111187</span></td>
+      <td><span title="n=37 exact-date pairs">-0.003254</span></td>
+      <td><span title="n=37 exact-date pairs">0.023193</span></td>
+      <td><span title="n=14 exact-date pairs">0.129842</span></td>
+      <td><span title="n=14 exact-date pairs">0.067063</span></td>
+    </tr>
+    <tr>
+      <td>SKN1T</td>
+      <td><span title="n=512 exact-date pairs">-0.154572</span></td>
+      <td><span title="n=512 exact-date pairs">-0.125800</span></td>
+      <td><span title="n=435 exact-date pairs">-0.175872</span></td>
+      <td><span title="n=435 exact-date pairs">-0.151988</span></td>
+      <td><span title="n=7 exact-date pairs">-0.248088</span></td>
+      <td><span title="n=7 exact-date pairs">-0.692308</span></td>
+      <td><span title="n=37 exact-date pairs">-0.075754</span></td>
+      <td><span title="n=37 exact-date pairs">-0.022639</span></td>
+      <td><span title="n=14 exact-date pairs">0.382658</span></td>
+      <td><span title="n=14 exact-date pairs">0.598386</span></td>
+    </tr>
+    <tr>
+      <td>TAL1T</td>
+      <td><span title="n=512 exact-date pairs">0.085404</span></td>
+      <td><span title="n=512 exact-date pairs">0.067638</span></td>
+      <td><span title="n=435 exact-date pairs">0.078643</span></td>
+      <td><span title="n=435 exact-date pairs">0.060054</span></td>
+      <td><span title="n=7 exact-date pairs">-0.269750</span></td>
+      <td><span title="n=7 exact-date pairs">-0.407687</span></td>
+      <td><span title="n=37 exact-date pairs">0.206293</span></td>
+      <td><span title="n=37 exact-date pairs">0.101960</span></td>
+      <td><span title="n=14 exact-date pairs">0.248970</span></td>
+      <td><span title="n=14 exact-date pairs">0.237383</span></td>
+    </tr>
+    <tr>
+      <td>TEL1L</td>
+      <td><span title="n=512 exact-date pairs">0.025038</span></td>
+      <td><span title="n=512 exact-date pairs">0.026058</span></td>
+      <td><span title="n=435 exact-date pairs">0.030801</span></td>
+      <td><span title="n=435 exact-date pairs">0.025526</span></td>
+      <td><span title="n=7 exact-date pairs">-0.270333</span></td>
+      <td><span title="n=7 exact-date pairs">-0.037398</span></td>
+      <td><span title="n=37 exact-date pairs">-0.096709</span></td>
+      <td><span title="n=37 exact-date pairs">-0.101595</span></td>
+      <td><span title="n=14 exact-date pairs">0.304672</span></td>
+      <td><span title="n=14 exact-date pairs">0.284398</span></td>
+    </tr>
+    <tr>
+      <td>TKM1T</td>
+      <td><span title="n=512 exact-date pairs">0.026220</span></td>
+      <td><span title="n=512 exact-date pairs">0.022154</span></td>
+      <td><span title="n=435 exact-date pairs">0.030066</span></td>
+      <td><span title="n=435 exact-date pairs">0.034563</span></td>
+      <td><span title="n=7 exact-date pairs">0.418648</span></td>
+      <td><span title="n=7 exact-date pairs">0.148250</span></td>
+      <td><span title="n=37 exact-date pairs">-0.135596</span></td>
+      <td><span title="n=37 exact-date pairs">-0.230862</span></td>
+      <td><span title="n=14 exact-date pairs">0.082494</span></td>
+      <td><span title="n=14 exact-date pairs">0.314250</span></td>
+    </tr>
+    <tr>
+      <td>TPD1T</td>
+      <td><span title="n=512 exact-date pairs">-0.033952</span></td>
+      <td><span title="n=512 exact-date pairs">-0.039336</span></td>
+      <td><span title="n=435 exact-date pairs">-0.031698</span></td>
+      <td><span title="n=435 exact-date pairs">-0.053652</span></td>
+      <td><span title="n=7 exact-date pairs">-0.479289</span></td>
+      <td><span title="n=7 exact-date pairs">-0.336581</span></td>
+      <td><span title="n=37 exact-date pairs">-0.092800</span></td>
+      <td><span title="n=37 exact-date pairs">-0.090087</span></td>
+      <td><span title="n=14 exact-date pairs">0.318253</span></td>
+      <td><span title="n=14 exact-date pairs">0.455499</span></td>
+    </tr>
+    <tr>
+      <td>TSM1T</td>
+      <td><span title="n=512 exact-date pairs">0.055966</span></td>
+      <td><span title="n=512 exact-date pairs">0.093411</span></td>
+      <td><span title="n=435 exact-date pairs">0.035890</span></td>
+      <td><span title="n=435 exact-date pairs">0.067100</span></td>
+      <td><span title="n=7 exact-date pairs">0.555251</span></td>
+      <td><span title="n=7 exact-date pairs">0.630062</span></td>
+      <td><span title="n=37 exact-date pairs">0.026017</span></td>
+      <td><span title="n=37 exact-date pairs">0.122857</span></td>
+      <td><span title="n=14 exact-date pairs">0.358726</span></td>
+      <td><span title="n=14 exact-date pairs">0.348162</span></td>
+    </tr>
+    <tr>
+      <td>TVE1T</td>
+      <td><span title="n=512 exact-date pairs">-0.059765</span></td>
+      <td><span title="n=512 exact-date pairs">-0.085032</span></td>
+      <td><span title="n=435 exact-date pairs">-0.084319</span></td>
+      <td><span title="n=435 exact-date pairs">-0.134561</span></td>
+      <td><span title="n=7 exact-date pairs">0.481261</span></td>
+      <td><span title="n=7 exact-date pairs">0.486172</span></td>
+      <td><span title="n=37 exact-date pairs">0.064377</span></td>
+      <td><span title="n=37 exact-date pairs">0.156205</span></td>
+      <td><span title="n=14 exact-date pairs">0.336743</span></td>
+      <td><span title="n=14 exact-date pairs">0.210603</span></td>
+    </tr>
+    <tr>
+      <td>UTR1L</td>
+      <td><span title="n=512 exact-date pairs">0.043009</span></td>
+      <td><span title="n=512 exact-date pairs">0.092460</span></td>
+      <td><span title="n=435 exact-date pairs">0.046972</span></td>
+      <td><span title="n=435 exact-date pairs">0.118648</span></td>
+      <td><span title="n=7 exact-date pairs">0.157433</span></td>
+      <td><span title="n=7 exact-date pairs">0.115385</span></td>
+      <td><span title="n=37 exact-date pairs">-0.009434</span></td>
+      <td><span title="n=37 exact-date pairs">-0.102692</span></td>
+      <td><span title="n=14 exact-date pairs">0.074115</span></td>
+      <td><span title="n=14 exact-date pairs">-0.164374</span></td>
+    </tr>
+    <tr>
+      <td>VBL1L</td>
+      <td><span title="n=512 exact-date pairs">-0.009625</span></td>
+      <td><span title="n=512 exact-date pairs">-0.027820</span></td>
+      <td><span title="n=435 exact-date pairs">-0.007003</span></td>
+      <td><span title="n=435 exact-date pairs">-0.022126</span></td>
+      <td><span title="n=7 exact-date pairs">0.319536</span></td>
+      <td><span title="n=7 exact-date pairs">0.168290</span></td>
+      <td><span title="n=37 exact-date pairs">-0.268058</span></td>
+      <td><span title="n=37 exact-date pairs">-0.245860</span></td>
+      <td><span title="n=14 exact-date pairs">0.059381</span></td>
+      <td><span title="n=14 exact-date pairs">0.212748</span></td>
+    </tr>
+    <tr>
+      <td>VIRSI</td>
+      <td><span title="n=512 exact-date pairs">0.010456</span></td>
+      <td><span title="n=512 exact-date pairs">-0.024815</span></td>
+      <td><span title="n=435 exact-date pairs">-0.009691</span></td>
+      <td><span title="n=435 exact-date pairs">-0.057979</span></td>
+      <td><span title="n=7 exact-date pairs">-0.000069</span></td>
+      <td><span title="n=7 exact-date pairs">0.056614</span></td>
+      <td><span title="n=37 exact-date pairs">0.092135</span></td>
+      <td><span title="n=37 exact-date pairs">0.163040</span></td>
+      <td><span title="n=14 exact-date pairs">0.164460</span></td>
+      <td><span title="n=14 exact-date pairs">0.121185</span></td>
+    </tr>
+    <tr>
+      <td>VLP1L</td>
+      <td><span title="n=512 exact-date pairs">0.012070</span></td>
+      <td><span title="n=512 exact-date pairs">0.045251</span></td>
+      <td><span title="n=435 exact-date pairs">-0.011904</span></td>
+      <td><span title="n=435 exact-date pairs">0.014513</span></td>
+      <td><span title="n=7 exact-date pairs">-0.115268</span></td>
+      <td><span title="n=7 exact-date pairs">-0.185312</span></td>
+      <td><span title="n=37 exact-date pairs">0.172051</span></td>
+      <td><span title="n=37 exact-date pairs">0.258336</span></td>
+      <td><span title="n=14 exact-date pairs">0.400078</span></td>
+      <td><span title="n=14 exact-date pairs">0.418246</span></td>
+    </tr>
+    <tr>
+      <td>ZMP1L</td>
+      <td><span title="n=512 exact-date pairs">0.016598</span></td>
+      <td><span title="n=512 exact-date pairs">-0.029369</span></td>
+      <td><span title="n=435 exact-date pairs">0.023392</span></td>
+      <td><span title="n=435 exact-date pairs">-0.028123</span></td>
+      <td><span title="n=7 exact-date pairs">0.021193</span></td>
+      <td><span title="n=7 exact-date pairs">-0.020447</span></td>
+      <td><span title="n=37 exact-date pairs">0.007888</span></td>
+      <td><span title="n=37 exact-date pairs">-0.035750</span></td>
+      <td><span title="n=14 exact-date pairs">0.084813</span></td>
+      <td><span title="n=14 exact-date pairs">-0.011304</span></td>
+    </tr>
+  </tbody>
+</table></details>
