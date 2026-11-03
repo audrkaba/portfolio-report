@@ -171,7 +171,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - analysis updated 2026-11-03 18:32 (Europe/Vilnius); return analysis through 2026-10-30; valuation prices through 2026-10-30
+# Baltic investment plan - analysis updated 2026-11-03 18:36 (Europe/Vilnius); return analysis through 2026-10-30; valuation prices through 2026-10-30
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -69499,7 +69499,7 @@ $$\mathcal X_s=\{R^{hist}_{1s},\ldots,R^{hist}_{272,s},R_{s1},\ldots,R_{s5}\}.$$
 </div><details markdown="1" class="regime-stochastic-results">
 <summary>Orders, scenario results, scenario reduction and historical performance</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/regime-stochastic-results.html?v=6c099c295846" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/regime-stochastic-results.html?v=d38d582dd8de" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details></details></details><!-- STOCHASTIC_UPDATE3_END -->
 <details markdown="1" class="report-section" id="analytics-1-3">
@@ -113777,7 +113777,7 @@ document.querySelectorAll('details.portfolio-sensitivity').forEach(function(sens
   });
 });
 
-const reportVersion='ae05463de66b';
+const reportVersion='a3f03044352d';
 const palette = ['#1b1b1b','#e41a1c','#377eb8','#4daf4a','#984ea3','#ff7f00','#a65628','#f781bf','#008080','#6a3d9a','#b2182b','#2166ac','#1b9e77','#d95f02'];
 const linePatterns = [[],[10,5],[2,4],[10,4,2,4],[14,5],[6,3],[2,3,8,3],[12,3,3,3]];
 function isExplorerVisible(box) {
