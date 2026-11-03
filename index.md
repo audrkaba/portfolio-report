@@ -171,7 +171,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - analysis updated 2026-11-03 14:28 (Europe/Vilnius); return analysis through 2026-10-30; valuation prices through 2026-10-30
+# Baltic investment plan - analysis updated 2026-11-03 14:37 (Europe/Vilnius); return analysis through 2026-10-30; valuation prices through 2026-10-30
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -322,7 +322,7 @@ Portfolio comparisons use 272 common observations through 2026-10-29. Individual
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0019354200-regimes.html?v=9f4a80ccc1b8" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0019354200-regimes.html?v=f35bbcbd3d6d" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -752,7 +752,7 @@ Portfolio comparisons use 272 common observations through 2026-10-29. Individual
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0013876927-regimes.html?v=2495edf423e2" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0013876927-regimes.html?v=ab9374ada8f5" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -1192,7 +1192,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/DGR1R-regimes.html?v=a81d6f0f5590" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/DGR1R-regimes.html?v=8b49aaff7cf4" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -1692,7 +1692,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SAF1R-regimes.html?v=a0a23ca02cbc" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SAF1R-regimes.html?v=66f8c3ff0b47" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -2149,7 +2149,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/TEL1L-regimes.html?v=09c4eff7444c" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/TEL1L-regimes.html?v=4b19f2f51d34" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -2542,7 +2542,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/EGG-regimes.html?v=3126a67dfb03" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/EGG-regimes.html?v=33e2a0eb98e7" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -2877,7 +2877,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/KNE1L-regimes.html?v=d8a4daf5bd9a" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/KNE1L-regimes.html?v=75c5c493f9af" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -3331,7 +3331,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/VLP1L-regimes.html?v=2b89e005d033" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/VLP1L-regimes.html?v=915ead0ec482" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -3784,7 +3784,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/CPA1T-regimes.html?v=22c0b4467669" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/CPA1T-regimes.html?v=47f0a561aacc" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -4261,7 +4261,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/TAL1T-regimes.html?v=1a547d9ce79f" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/TAL1T-regimes.html?v=759b2c91f86c" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -4738,7 +4738,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/AKO1L-regimes.html?v=1eef51c3613d" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/AKO1L-regimes.html?v=70d5431dbdde" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -5191,7 +5191,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/LHV1T-regimes.html?v=421b361f61bb" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/LHV1T-regimes.html?v=9ea2fbd69fc9" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -5670,7 +5670,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/HAE1T-regimes.html?v=7e0adb50b966" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/HAE1T-regimes.html?v=dca4ac256e20" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -6143,7 +6143,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/ROE1L-regimes.html?v=c61d07a84006" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/ROE1L-regimes.html?v=a673bba6d935" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -6604,7 +6604,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/APG1L-regimes.html?v=5c89b2d4754a" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/APG1L-regimes.html?v=d1c65b8fce9b" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -7104,7 +7104,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/TKM1T-regimes.html?v=7f96a49bd578" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/TKM1T-regimes.html?v=851c15e6a0ff" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -7574,7 +7574,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/TSM1T-regimes.html?v=da442ee1fce7" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/TSM1T-regimes.html?v=89907e6e095c" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -8041,7 +8041,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/GRG1L-regimes.html?v=87bb6ab9d4db" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/GRG1L-regimes.html?v=a211be45815d" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -8458,7 +8458,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/RSU1L-regimes.html?v=725dbb8648dc" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/RSU1L-regimes.html?v=5613a7b77d1a" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -8898,7 +8898,7 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/MRK1T-regimes.html?v=91ae90a81108" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/MRK1T-regimes.html?v=d12168725c27" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -9360,7 +9360,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/AIR-regimes.html?v=28a590cf9b2b" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/AIR-regimes.html?v=ba5322c29111" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -9684,7 +9684,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/AMG1L-regimes.html?v=270b5253c245" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/AMG1L-regimes.html?v=0b2bbc4fdffb" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -10008,7 +10008,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/ARC1T-regimes.html?v=975a6c2e92c7" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/ARC1T-regimes.html?v=2bd632b6dd05" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -10332,7 +10332,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/AUG1L-regimes.html?v=6f7a42794743" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/AUG1L-regimes.html?v=f65a2dcbbd14" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -10656,7 +10656,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/BAL1R-regimes.html?v=e5a5f3c50a37" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/BAL1R-regimes.html?v=8c5958d831bf" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -10980,7 +10980,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/BERCM-regimes.html?v=dc7ce094b4fd" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/BERCM-regimes.html?v=abc3e64f9471" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -11304,7 +11304,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/CTS1L-regimes.html?v=2e9a09199632" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/CTS1L-regimes.html?v=9bc8c9757d9b" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -11628,7 +11628,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/EFT1T-regimes.html?v=7da34dffef37" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/EFT1T-regimes.html?v=c0880b29d207" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -11956,7 +11956,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/ELEVR-regimes.html?v=a336e52d7fce" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/ELEVR-regimes.html?v=2ed636d379e3" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -12280,7 +12280,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/EWA1L-regimes.html?v=62ffc10054d7" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/EWA1L-regimes.html?v=37486e0383d7" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -12608,7 +12608,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/GRB2G-regimes.html?v=b03430f48508" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/GRB2G-regimes.html?v=919f20e076f7" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -12932,7 +12932,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/HPR1T-regimes.html?v=ba6918ef64b7" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/HPR1T-regimes.html?v=716b8c1ae6e5" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -13256,7 +13256,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/IDX1R-regimes.html?v=d19a4329b297" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/IDX1R-regimes.html?v=f353b403886c" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -13580,7 +13580,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/IGN1L-regimes.html?v=ee4953d9cb81" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/IGN1L-regimes.html?v=7ce5c0b257de" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -13792,7 +13792,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/IGR1R-regimes.html?v=8c519a4b0415" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/IGR1R-regimes.html?v=b0da51c8a5ab" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -13921,7 +13921,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/INC1L-regimes.html?v=6a75e8f90561" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/INC1L-regimes.html?v=0ae827997a86" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -14245,7 +14245,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/INF1T-regimes.html?v=8ee86ee2b453" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/INF1T-regimes.html?v=6bca3d090f72" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -14569,7 +14569,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/INL1L-regimes.html?v=537e5576ebc0" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/INL1L-regimes.html?v=03f681ed3b69" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -14893,7 +14893,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/INR1L-regimes.html?v=91ccab88fa82" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/INR1L-regimes.html?v=49c0ca438505" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -15217,7 +15217,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/IVL1L-regimes.html?v=6e9024be1bf2" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/IVL1L-regimes.html?v=4ae4b41f9bf0" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -15541,7 +15541,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/KALVE-regimes.html?v=debc97edc1f8" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/KALVE-regimes.html?v=4f3379de738f" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -15865,7 +15865,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/KNR1L-regimes.html?v=2f2d306ed76b" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/KNR1L-regimes.html?v=32140b6268ec" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -16189,7 +16189,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/LGD1L-regimes.html?v=6ab8af63e71d" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/LGD1L-regimes.html?v=f4aa77c5974e" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -16513,7 +16513,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/LINDA-regimes.html?v=e5a2ed6e47ca" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/LINDA-regimes.html?v=b081a71203a3" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -16725,7 +16725,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/LVN1T-regimes.html?v=c9b748a444d6" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/LVN1T-regimes.html?v=f598f1e4a3e5" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -16854,7 +16854,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/MAGIC-regimes.html?v=882d3e3973c4" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/MAGIC-regimes.html?v=1430ac928de6" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -17178,7 +17178,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/MDARA-regimes.html?v=19372e24e9c4" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/MDARA-regimes.html?v=bc788147a898" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -17502,7 +17502,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/MODE-regimes.html?v=1f7a13f580d8" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/MODE-regimes.html?v=091da39a8a25" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -17826,7 +17826,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/MOLNR-regimes.html?v=dc91b1a06584" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/MOLNR-regimes.html?v=70359e765410" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -18150,7 +18150,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/NCN1T-regimes.html?v=256f8fe06827" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/NCN1T-regimes.html?v=2ffe10f19863" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -18474,7 +18474,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/NEOFI-regimes.html?v=e5c79204914a" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/NEOFI-regimes.html?v=1ceced2f4f04" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -18798,7 +18798,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/NTU1L-regimes.html?v=61c5fbd5e838" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/NTU1L-regimes.html?v=b627da0caf9d" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -19122,7 +19122,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/PKG1T-regimes.html?v=4910aba6ebb3" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/PKG1T-regimes.html?v=77a310b22917" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -19446,7 +19446,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/PRF1T-regimes.html?v=4fc3713b8fba" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/PRF1T-regimes.html?v=67955aeeace4" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -19770,7 +19770,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/PRIMO-regimes.html?v=5cc97c0feef3" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/PRIMO-regimes.html?v=dbf0e5e41b3d" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -20094,7 +20094,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/PZV1L-regimes.html?v=df0776603933" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/PZV1L-regimes.html?v=0f06e3cf233a" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -20418,7 +20418,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/RKB1R-regimes.html?v=3abb1c0d76b8" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/RKB1R-regimes.html?v=aa53dad8785c" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -20742,7 +20742,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SAUNA-regimes.html?v=cc6a69e519bd" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SAUNA-regimes.html?v=72cc746e8066" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -21066,7 +21066,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SCM1R-regimes.html?v=fc28df946c6d" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SCM1R-regimes.html?v=b8bfc525b0b0" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -21390,7 +21390,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SFG1T-regimes.html?v=9c7429a2b6fe" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SFG1T-regimes.html?v=e8fc965ae6ff" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -21714,7 +21714,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SKN1T-regimes.html?v=eeb02fde3de4" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SKN1T-regimes.html?v=1ebe76cb0da8" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -22038,7 +22038,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/TPD1T-regimes.html?v=763c4eaed544" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/TPD1T-regimes.html?v=43722ffcf8be" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -22362,7 +22362,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/TVE1T-regimes.html?v=515a35758ee6" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/TVE1T-regimes.html?v=c71f990be142" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -22686,7 +22686,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/UTR1L-regimes.html?v=ee498014b1d3" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/UTR1L-regimes.html?v=f51f7159814b" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -23010,7 +23010,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/VBL1L-regimes.html?v=9b45233e3745" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/VBL1L-regimes.html?v=03475f080a82" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -23334,7 +23334,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/VIRSI-regimes.html?v=701bb18d071f" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/VIRSI-regimes.html?v=34597e676454" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -23658,7 +23658,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/ZMP1L-regimes.html?v=23729451c69a" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/ZMP1L-regimes.html?v=c84dd95b69dc" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -23982,7 +23982,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0013876950-regimes.html?v=fb8dc2938a58" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0013876950-regimes.html?v=2bd477578b42" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -24306,7 +24306,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0013876968-regimes.html?v=9870d8f670bc" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0013876968-regimes.html?v=fa7011fd7d8b" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -24630,7 +24630,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0014261756-regimes.html?v=c6044a720ff1" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0014261756-regimes.html?v=f9a8e5ea6ec1" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -24954,7 +24954,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0014261764-regimes.html?v=ac5bd789cf22" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0014261764-regimes.html?v=11c89fe8a07b" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -25278,7 +25278,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0014261871-regimes.html?v=0b01596de986" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0014261871-regimes.html?v=899dde29b9e4" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -25602,7 +25602,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0014261889-regimes.html?v=8e24378c63e5" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0014261889-regimes.html?v=545910e53f66" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -25926,7 +25926,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0014261897-regimes.html?v=4954af9d450e" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0014261897-regimes.html?v=20ebdf6010ca" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -26250,7 +26250,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0014263273-regimes.html?v=ffc73cb18a00" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0014263273-regimes.html?v=bd9962e93138" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -26574,7 +26574,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0014263281-regimes.html?v=e7ce7086842e" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0014263281-regimes.html?v=a76f154dbce6" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -26898,7 +26898,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0014263299-regimes.html?v=184a1cda9018" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0014263299-regimes.html?v=2c2557c37ec3" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -27222,7 +27222,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0015192315-regimes.html?v=5071fe5b68cc" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0015192315-regimes.html?v=c9957b42cdac" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -27546,7 +27546,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0015192323-regimes.html?v=b80987685c90" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0015192323-regimes.html?v=76b2f7bc6d7e" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -27870,7 +27870,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0015192331-regimes.html?v=09556d5d3a9a" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0015192331-regimes.html?v=7271b375cce4" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -28194,7 +28194,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0015192349-regimes.html?v=356dd6b2f134" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0015192349-regimes.html?v=951bf2f6cfe9" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -28518,7 +28518,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0015948609-regimes.html?v=1ddaacf3a12c" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0015948609-regimes.html?v=98376532970f" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -28842,7 +28842,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0015948617-regimes.html?v=9450f8786473" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0015948617-regimes.html?v=1146dd7720d2" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -29166,7 +29166,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0017072416-regimes.html?v=8eb2b470301e" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0017072416-regimes.html?v=1994d758cf79" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -29490,7 +29490,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0025667199-regimes.html?v=d11754864b38" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0025667199-regimes.html?v=a2f8138dc8c1" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -29814,7 +29814,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0025667215-regimes.html?v=33975bfc8d67" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0025667215-regimes.html?v=90568512b14c" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -30138,7 +30138,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0026821472-regimes.html?v=a4760f07e352" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0026821472-regimes.html?v=192c72eb7c2c" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -30462,7 +30462,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0027397514-regimes.html?v=03f1ab47349f" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0027397514-regimes.html?v=7da9f0c467f5" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -30674,7 +30674,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 <details markdown="1" class="regime-asset-analysis">
 <summary>Return histogram: full history and all four regimes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0029504588-regimes.html?v=31bd559895a3" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0029504588-regimes.html?v=02e926257a55" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -113738,7 +113738,7 @@ document.querySelectorAll('details.portfolio-sensitivity').forEach(function(sens
   });
 });
 
-const reportVersion='8d1f8692d320';
+const reportVersion='e63bc57fa6a9';
 const palette = ['#1b1b1b','#e41a1c','#377eb8','#4daf4a','#984ea3','#ff7f00','#a65628','#f781bf','#008080','#6a3d9a','#b2182b','#2166ac','#1b9e77','#d95f02'];
 const linePatterns = [[],[10,5],[2,4],[10,4,2,4],[14,5],[6,3],[2,3,8,3],[12,3,3,3]];
 function isExplorerVisible(box) {
