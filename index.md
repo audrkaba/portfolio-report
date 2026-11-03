@@ -171,7 +171,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - analysis updated 2026-11-03 17:07 (Europe/Vilnius); return analysis through 2026-10-30; valuation prices through 2026-10-30
+# Baltic investment plan - analysis updated 2026-11-03 18:32 (Europe/Vilnius); return analysis through 2026-10-30; valuation prices through 2026-10-30
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -69486,10 +69486,20 @@ $$\mathcal X_s=\{R^{hist}_{1s},\ldots,R^{hist}_{272,s},R_{s1},\ldots,R_{s5}\}.$$
 \[\begin{aligned}\operatorname{Penalty}={}&amp;0.00015N_{\rm new}^2+\frac{0.001}{\sum_iw_i^2}\\ &amp;+0.006\sum_{i\in\mathcal N}\left(\frac{(0.01-w_i)_+}{0.01}\right)^2\\ &amp;+0.006\sum_{i\in\mathcal S:q_i&gt;0}\frac{(10-q_id_i)_+}{10}+0.002\sum_{i\in\mathcal S}\left(\frac{5q_i}{V_i}\right)^2.\end{aligned}\]
 <p>Weights w are position values divided by invested value; Nnew counts new share positions, N is their set, S is the share set, d is historical average annual dividend per share, V is conservative weekly volume, and (x)+ means max(x,0). Penalty terms are unchanged. Recurring fund expenses are already embedded in NAV.</p>
 <p>VSS and EVPI in section 1.4.f still refer to the original no-sale benchmark. They have not been recomputed for this new regime-scenario model.</p>
+<h4>Decision-based reduction of forecast scenarios</h4>
+<p>Let s=(n,r,m) identify an observed node n, terminal regime r and forecast method m. Let x be the initial quantities, y the recourse quantities, and J the netSD criterion minus the unchanged penalties. Single-leaf WS candidates may know their future leaf; the operational reduced model cannot.</p>
+\[(\widehat x_s^{\rm WS},\widehat y_s^{\rm WS})\ \approx\ \operatorname*{arg\,max}_{(x,y)\in\mathcal X_s}J_s(x,y).\]
+<p>The approximation sign denotes the integer neighbourhood heuristic, not a certified optimum. For method group G with representative method mG, probability is transferred within the same observed node and terminal regime:</p>
+\[\widetilde\pi_{n,r,G}=\sum_{m\in G}\pi_{n,r,m},\qquad \widetilde p_{n,r,G,t}=p_{n,r,m_G,t}.\]
+\[\max_{x,\{y_n\}}\sum_{n=1}^4\sum_{r=1}^4\sum_{G=1}^5\widetilde\pi_{n,r,G}\,J_{n,r,m_G}(x,y_n).\]
+<p>The same x applies to all leaves, and the same yn applies to every continuation of node n. Initial sales remain prohibited; original conditional sale gates and all other constraints remain in force. Validate the resulting initial decision on the original tree:</p>
+\[V_{208}(\widetilde x)=\max_{\{y_n\}}\sum_{s=1}^{208}\pi_s J_s(\widetilde x,y_{n(s)}).\]
+<p>This formula defines the ideal validation problem. Reported values use feasible heuristic recourse candidates, not a certified evaluation of its global maximum.</p>
+<p>Five forecast groups mean 4 observed nodes × 4 terminal regimes × 5 representatives = 80 leaves, rather than five leaves for the entire market tree.</p>
 </div><details markdown="1" class="regime-stochastic-results">
-<summary>Orders, scenario results and historical performance</summary>
+<summary>Orders, scenario results, scenario reduction and historical performance</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/regime-stochastic-results.html?v=d146f7824086" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/regime-stochastic-results.html?v=6c099c295846" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details></details></details><!-- STOCHASTIC_UPDATE3_END -->
 <details markdown="1" class="report-section" id="analytics-1-3">
@@ -74960,7 +74970,7 @@ The BH adjustment covers the full family of share-level, pooled and pairwise tes
 </details><details markdown="1" id="market-scenario-regimes" class="report-section"><summary><strong>2.11. Applying market regimes to portfolio scenarios</strong></summary><details markdown="1" class="regime-stochastic-market">
 <summary>Regime probabilities and scenario information nodes</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/regime-stochastic-market.html?v=1b6ea8cb3492" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/regime-stochastic-market.html?v=c28f202194b6" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details></details></details><!-- MARKET_ANALYSIS_END -->
 
@@ -113767,7 +113777,7 @@ document.querySelectorAll('details.portfolio-sensitivity').forEach(function(sens
   });
 });
 
-const reportVersion='612a8d27741b';
+const reportVersion='ae05463de66b';
 const palette = ['#1b1b1b','#e41a1c','#377eb8','#4daf4a','#984ea3','#ff7f00','#a65628','#f781bf','#008080','#6a3d9a','#b2182b','#2166ac','#1b9e77','#d95f02'];
 const linePatterns = [[],[10,5],[2,4],[10,4,2,4],[14,5],[6,3],[2,3,8,3],[12,3,3,3]];
 function isExplorerVisible(box) {

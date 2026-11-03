@@ -6020,4 +6020,5248 @@
     0.050505126277676796,
     0.014221113372266902
   ]
-}</pre></details><p><strong>Frozen forecast origin:</strong> 2026-10-30; forecast dates 2026-11-02, 2026-11-03, 2026-11-04, 2026-11-05, 2026-11-06. This comparison is not refreshed executable advice after the origin. Four-node quantisation retains 82.8% of simulated two-day Current-portfolio variance. Within-node variation is compressed: the tree is a finite approximation.</p>
+}</pre></details><p><strong>Frozen forecast origin:</strong> 2026-10-30; forecast dates 2026-11-02, 2026-11-03, 2026-11-04, 2026-11-05, 2026-11-06. This comparison is not refreshed executable advice after the origin. Four-node quantisation retains 82.8% of simulated two-day Current-portfolio variance. Within-node variation is compressed: the tree is a finite approximation.</p><details id="regime-scenario-reduction"><summary><strong>Scenario reduction: WS decisions and five forecast groups</strong></summary><p><strong>208 to 80 leaves; 13 forecast methods to 5 groups.</strong> All four observable information nodes and all four terminal regimes remain. Reduction does not merge calm and stress regimes, change an observed prefix or reveal a future method to recourse.</p><p>This removes 61.5% of leaf evaluations per candidate policy. It is a one-off WS grouping cost followed by a smaller optimisation problem; actual wall-clock speed-up is not guaranteed to equal the 2.6-fold leaf-count ratio.</p><p>The single-scenario perfect-information search found <strong>64</strong> distinct initial allocations and <strong>98</strong> distinct initial/recourse pairs across 208 leaves. These are <strong>heuristic WS candidates</strong>, not certified optimal WS solutions. Equality here describes the candidates found; it is not a proof that the underlying optimisation problems are equivalent.</p><p><strong>How grouping works:</strong> compare each pair of forecast methods across matching node/regime cells, using the probability-weighted monetary distance between their WS initial and recourse allocations. Exhaustively examine all 1,287 choices of five representative methods. Forecast-path distance only breaks ties. The resulting groups can contain similar rather than identical decisions; this is approximate decision-based reduction.</p><p><strong>Representative:</strong> retain an actual original method path in each node/regime cell and add the probabilities of its group members. Do not average prices: netSD dominance and technical sale gates are nonlinear. The four-by-four node/regime probability masses are preserved exactly. Original conditional sale permissions, liquidity limits, budget, integer lots and nonanticipativity remain unchanged.</p><details><summary><strong>Table 1.4.j.e. Forecast-method groups and representative paths</strong></summary><table class="dataframe research-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Group</th>
+      <th>Representative</th>
+      <th>Members</th>
+      <th>Method count</th>
+      <th>Unconditional probability</th>
+      <th>Max WS monetary distance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>ARIMA(1,1,1)</td>
+      <td>ARIMA(1,1,1); Damped ETS; Dependency Extra Trees; Dependency Gradient boosting; Validation ensemble</td>
+      <td>5</td>
+      <td>0.384615</td>
+      <td>0.028070</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Dependency Ridge</td>
+      <td>Dependency Ridge; Neural network MLP</td>
+      <td>2</td>
+      <td>0.153846</td>
+      <td>0.029787</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Extra Trees</td>
+      <td>Extra Trees</td>
+      <td>1</td>
+      <td>0.076923</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Gradient boosting</td>
+      <td>Gradient boosting</td>
+      <td>1</td>
+      <td>0.076923</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>No change</td>
+      <td>AR(1)-GARCH-t; Historical drift; No change; Ridge regression</td>
+      <td>4</td>
+      <td>0.307692</td>
+      <td>0.024644</td>
+    </tr>
+  </tbody>
+</table></details><p>WS monetary distance is the average half-L1 turnover in the initial and recourse allocations, expressed as a fraction of EUR 15,000 and weighted over node/regime cells. A zero value means identical candidate quantities in every matched cell.</p><details><summary><strong>Table 1.4.j.f. Original-tree validation of the reduced solution</strong></summary><table class="dataframe research-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Comparison</th>
+      <th>Objective</th>
+      <th>Expected netSD</th>
+      <th>Penalty</th>
+      <th>Expected weekly return</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Original policy / original 208</td>
+      <td>0.878754</td>
+      <td>0.897649</td>
+      <td>0.018894</td>
+      <td>0.006002</td>
+    </tr>
+    <tr>
+      <td>Original policy / reduced 80</td>
+      <td>0.881822</td>
+      <td>0.900717</td>
+      <td>0.018894</td>
+      <td>0.005078</td>
+    </tr>
+    <tr>
+      <td>Reduced solution / reduced 80</td>
+      <td>0.881904</td>
+      <td>0.900736</td>
+      <td>0.018832</td>
+      <td>0.005082</td>
+    </tr>
+    <tr>
+      <td>Reduced solution / original 208</td>
+      <td>0.878683</td>
+      <td>0.897516</td>
+      <td>0.018832</td>
+      <td>0.006006</td>
+    </tr>
+    <tr>
+      <td>Reduced initial + reoptimised recourse / original 208</td>
+      <td>0.878754</td>
+      <td>0.897649</td>
+      <td>0.018894</td>
+      <td>0.006002</td>
+    </tr>
+  </tbody>
+</table></details><p><strong>Before any original-tree recourse retuning:</strong> objective change -0.00007087, expected netSD change -0.00013305. This is the direct approximation error of the reduced policy, distinct from the reoptimised-recourse comparison below.</p><p>The reduced 80-leaf optimisation starts from the original feasible policy. Its initial decision is then frozen and evaluated on all 208 original leaves. Recourse is reoptimised against those original leaves, with one common action per observed node; the original recourse vectors are also tested as warm starts. This last step tests the first-stage allocation without discarding the omitted outcomes. Matching results after this validation do not mean that all original and reduced-tree recourse vectors were identical.</p><p><strong>Full-tree objective change:</strong> +0.00000000; <strong>expected netSD change:</strong> +0.00000000. The reduction passes the declared maximum loss of 0.001 in each criterion. This tolerance is an approximation check, not statistical significance.</p><details><summary><strong>Table 1.4.j.g. Initial quantities before and after scenario reduction</strong></summary><table class="dataframe research-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Asset</th>
+      <th>Current units</th>
+      <th>Original regime-model units</th>
+      <th>Reduced-model initial units</th>
+      <th>Change</th>
+      <th>Price / NAV EUR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AMG1L</td>
+      <td>0</td>
+      <td>141</td>
+      <td>141</td>
+      <td>0</td>
+      <td>1.190000</td>
+    </tr>
+    <tr>
+      <td>APG1L</td>
+      <td>200</td>
+      <td>200</td>
+      <td>200</td>
+      <td>0</td>
+      <td>3.800000</td>
+    </tr>
+    <tr>
+      <td>DGR1R</td>
+      <td>0</td>
+      <td>175</td>
+      <td>175</td>
+      <td>0</td>
+      <td>1.715000</td>
+    </tr>
+    <tr>
+      <td>EGG</td>
+      <td>0</td>
+      <td>136</td>
+      <td>136</td>
+      <td>0</td>
+      <td>7.400000</td>
+    </tr>
+    <tr>
+      <td>GRG1L</td>
+      <td>543</td>
+      <td>543</td>
+      <td>543</td>
+      <td>0</td>
+      <td>1.010000</td>
+    </tr>
+    <tr>
+      <td>HAE1T</td>
+      <td>100</td>
+      <td>103</td>
+      <td>103</td>
+      <td>0</td>
+      <td>5.200000</td>
+    </tr>
+    <tr>
+      <td>INF1T</td>
+      <td>0</td>
+      <td>36</td>
+      <td>36</td>
+      <td>0</td>
+      <td>67.600000</td>
+    </tr>
+    <tr>
+      <td>KNE1L</td>
+      <td>928</td>
+      <td>1354</td>
+      <td>1354</td>
+      <td>0</td>
+      <td>0.477000</td>
+    </tr>
+    <tr>
+      <td>MRK1T</td>
+      <td>20</td>
+      <td>20</td>
+      <td>20</td>
+      <td>0</td>
+      <td>26.900000</td>
+    </tr>
+    <tr>
+      <td>ROE1L</td>
+      <td>416</td>
+      <td>423</td>
+      <td>423</td>
+      <td>0</td>
+      <td>0.819000</td>
+    </tr>
+    <tr>
+      <td>RSU1L</td>
+      <td>91</td>
+      <td>91</td>
+      <td>91</td>
+      <td>0</td>
+      <td>4.260000</td>
+    </tr>
+    <tr>
+      <td>SAF1R</td>
+      <td>100</td>
+      <td>148</td>
+      <td>148</td>
+      <td>0</td>
+      <td>16.500000</td>
+    </tr>
+    <tr>
+      <td>TAL1T</td>
+      <td>700</td>
+      <td>700</td>
+      <td>700</td>
+      <td>0</td>
+      <td>0.647000</td>
+    </tr>
+    <tr>
+      <td>TKM1T</td>
+      <td>288</td>
+      <td>288</td>
+      <td>288</td>
+      <td>0</td>
+      <td>8.880000</td>
+    </tr>
+    <tr>
+      <td>TSM1T</td>
+      <td>330</td>
+      <td>330</td>
+      <td>330</td>
+      <td>0</td>
+      <td>1.192000</td>
+    </tr>
+    <tr>
+      <td>VLP1L</td>
+      <td>42</td>
+      <td>42</td>
+      <td>42</td>
+      <td>0</td>
+      <td>15.750000</td>
+    </tr>
+    <tr>
+      <td>SE0014261871</td>
+      <td>0</td>
+      <td>21</td>
+      <td>21</td>
+      <td>0</td>
+      <td>14.790900</td>
+    </tr>
+    <tr>
+      <td>SE0014263281</td>
+      <td>0</td>
+      <td>20</td>
+      <td>20</td>
+      <td>0</td>
+      <td>15.305300</td>
+    </tr>
+  </tbody>
+</table></details><details><summary><strong>Table 1.4.j.h. Validation within each regime and observed node</strong></summary><table class="dataframe research-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Condition</th>
+      <th>State</th>
+      <th>Probability</th>
+      <th>Original netSD</th>
+      <th>Reduced initial netSD</th>
+      <th>NetSD change</th>
+      <th>Original objective</th>
+      <th>Reduced initial objective</th>
+      <th>Original minimum scenario weekly return</th>
+      <th>Reduced initial minimum scenario weekly return</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Terminal regime</td>
+      <td>1</td>
+      <td>0.855015</td>
+      <td>0.898043</td>
+      <td>0.898043</td>
+      <td>0.000000</td>
+      <td>0.879152</td>
+      <td>0.879152</td>
+      <td>-0.015108</td>
+      <td>-0.015108</td>
+    </tr>
+    <tr>
+      <td>Terminal regime</td>
+      <td>2</td>
+      <td>0.080259</td>
+      <td>0.895935</td>
+      <td>0.895935</td>
+      <td>0.000000</td>
+      <td>0.877017</td>
+      <td>0.877017</td>
+      <td>-0.017558</td>
+      <td>-0.017558</td>
+    </tr>
+    <tr>
+      <td>Terminal regime</td>
+      <td>3</td>
+      <td>0.050505</td>
+      <td>0.895787</td>
+      <td>0.895787</td>
+      <td>0.000000</td>
+      <td>0.876884</td>
+      <td>0.876884</td>
+      <td>-0.014882</td>
+      <td>-0.014882</td>
+    </tr>
+    <tr>
+      <td>Terminal regime</td>
+      <td>4</td>
+      <td>0.014221</td>
+      <td>0.890215</td>
+      <td>0.890215</td>
+      <td>0.000000</td>
+      <td>0.871263</td>
+      <td>0.871263</td>
+      <td>-0.042696</td>
+      <td>-0.042696</td>
+    </tr>
+    <tr>
+      <td>Observed node</td>
+      <td>0</td>
+      <td>0.100000</td>
+      <td>0.893390</td>
+      <td>0.893390</td>
+      <td>0.000000</td>
+      <td>0.873693</td>
+      <td>0.873693</td>
+      <td>-0.027691</td>
+      <td>-0.027691</td>
+    </tr>
+    <tr>
+      <td>Observed node</td>
+      <td>1</td>
+      <td>0.400000</td>
+      <td>0.896452</td>
+      <td>0.896452</td>
+      <td>0.000000</td>
+      <td>0.877659</td>
+      <td>0.877659</td>
+      <td>-0.042696</td>
+      <td>-0.042696</td>
+    </tr>
+    <tr>
+      <td>Observed node</td>
+      <td>2</td>
+      <td>0.400000</td>
+      <td>0.899783</td>
+      <td>0.899783</td>
+      <td>0.000000</td>
+      <td>0.881107</td>
+      <td>0.881107</td>
+      <td>-0.022362</td>
+      <td>-0.022362</td>
+    </tr>
+    <tr>
+      <td>Observed node</td>
+      <td>3</td>
+      <td>0.100000</td>
+      <td>0.898157</td>
+      <td>0.898157</td>
+      <td>0.000000</td>
+      <td>0.878787</td>
+      <td>0.878787</td>
+      <td>-0.029716</td>
+      <td>-0.029716</td>
+    </tr>
+  </tbody>
+</table></details><p>These are conditional comparisons on the original 208 leaves, using the reduced initial decision and reoptimised shared recourse. Preserving a regime probability does not guarantee preserving every outcome within that regime. Minimum scenario returns describe this finite tree, not a bound on actual market losses.</p><p>The original published plan is retained. This appendix is a separately labelled reduction comparison; its quantities do not silently replace profile targets or other portfolio tables. A reduced-tree objective must not be compared directly with an original-tree objective as evidence of improvement.</p><details><summary>WS search diagnostics and exact candidate matches</summary><p>Equal X identifiers mean exactly equal first-stage quantities across all 86 assets. Equal P identifiers mean both quantity vectors are exactly equal. Different identifiers mean at least one integer quantity differs; approximate method groups need not share an identifier.</p><table class="dataframe research-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Check</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Distinct first-stage candidates</td>
+      <td>64</td>
+    </tr>
+    <tr>
+      <td>Distinct first/second-stage candidate pairs</td>
+      <td>98</td>
+    </tr>
+    <tr>
+      <td>Repeated identical candidate pairs</td>
+      <td>110</td>
+    </tr>
+    <tr>
+      <td>Leaves matching their representative in first stage</td>
+      <td>103</td>
+    </tr>
+    <tr>
+      <td>Leaves matching their representative in both stages</td>
+      <td>97</td>
+    </tr>
+    <tr>
+      <td>WS searches stationary in tested neighbourhood</td>
+      <td>137</td>
+    </tr>
+    <tr>
+      <td>WS searches reaching iteration cap while still improving</td>
+      <td>71</td>
+    </tr>
+  </tbody>
+</table><table class="dataframe research-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Scenario</th>
+      <th>Initial allocation ID</th>
+      <th>Two-stage allocation ID</th>
+      <th>Initial objective</th>
+      <th>Objective</th>
+      <th>Iterations</th>
+      <th>Evaluations</th>
+      <th>Last improvement</th>
+      <th>Tested neighbourhood stationary</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>N1|R1|AR(1)-GARCH-t</td>
+      <td>X1</td>
+      <td>P1</td>
+      <td>0.854589</td>
+      <td>0.861285</td>
+      <td>5</td>
+      <td>4053</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R1|ARIMA(1,1,1)</td>
+      <td>X2</td>
+      <td>P2</td>
+      <td>0.883160</td>
+      <td>0.884162</td>
+      <td>7</td>
+      <td>5673</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R1|Damped ETS</td>
+      <td>X2</td>
+      <td>P2</td>
+      <td>0.883160</td>
+      <td>0.884162</td>
+      <td>7</td>
+      <td>5673</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R1|Dependency Extra Trees</td>
+      <td>X3</td>
+      <td>P3</td>
+      <td>0.871731</td>
+      <td>0.884010</td>
+      <td>6</td>
+      <td>4727</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R1|Dependency Gradient boosting</td>
+      <td>X4</td>
+      <td>P4</td>
+      <td>0.871731</td>
+      <td>0.872737</td>
+      <td>8</td>
+      <td>6474</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R1|Dependency Ridge</td>
+      <td>X5</td>
+      <td>P5</td>
+      <td>0.883160</td>
+      <td>0.884144</td>
+      <td>5</td>
+      <td>4053</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R1|Extra Trees</td>
+      <td>X4</td>
+      <td>P4</td>
+      <td>0.871731</td>
+      <td>0.872737</td>
+      <td>7</td>
+      <td>5664</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R1|Gradient boosting</td>
+      <td>X6</td>
+      <td>P6</td>
+      <td>0.871731</td>
+      <td>0.871765</td>
+      <td>3</td>
+      <td>2433</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R1|Historical drift</td>
+      <td>X2</td>
+      <td>P7</td>
+      <td>0.877446</td>
+      <td>0.884151</td>
+      <td>6</td>
+      <td>4862</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R1|Neural network MLP</td>
+      <td>X4</td>
+      <td>P4</td>
+      <td>0.883160</td>
+      <td>0.884165</td>
+      <td>7</td>
+      <td>5664</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R1|No change</td>
+      <td>X4</td>
+      <td>P4</td>
+      <td>0.871731</td>
+      <td>0.872737</td>
+      <td>8</td>
+      <td>6474</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R1|Ridge regression</td>
+      <td>X7</td>
+      <td>P8</td>
+      <td>0.871731</td>
+      <td>0.877643</td>
+      <td>4</td>
+      <td>3247</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R1|Validation ensemble</td>
+      <td>X1</td>
+      <td>P9</td>
+      <td>0.883160</td>
+      <td>0.883356</td>
+      <td>5</td>
+      <td>4055</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R2|AR(1)-GARCH-t</td>
+      <td>X8</td>
+      <td>P10</td>
+      <td>0.871731</td>
+      <td>0.884974</td>
+      <td>4</td>
+      <td>3139</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R2|ARIMA(1,1,1)</td>
+      <td>X4</td>
+      <td>P4</td>
+      <td>0.871731</td>
+      <td>0.872737</td>
+      <td>8</td>
+      <td>6474</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R2|Damped ETS</td>
+      <td>X6</td>
+      <td>P6</td>
+      <td>0.883160</td>
+      <td>0.883194</td>
+      <td>3</td>
+      <td>2433</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R2|Dependency Extra Trees</td>
+      <td>X4</td>
+      <td>P11</td>
+      <td>0.871731</td>
+      <td>0.872731</td>
+      <td>8</td>
+      <td>6480</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R2|Dependency Gradient boosting</td>
+      <td>X9</td>
+      <td>P12</td>
+      <td>0.860303</td>
+      <td>0.861307</td>
+      <td>7</td>
+      <td>5671</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R2|Dependency Ridge</td>
+      <td>X10</td>
+      <td>P13</td>
+      <td>0.883160</td>
+      <td>0.884140</td>
+      <td>7</td>
+      <td>5677</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R2|Extra Trees</td>
+      <td>X4</td>
+      <td>P4</td>
+      <td>0.871731</td>
+      <td>0.872737</td>
+      <td>7</td>
+      <td>5670</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R2|Gradient boosting</td>
+      <td>X2</td>
+      <td>P2</td>
+      <td>0.871731</td>
+      <td>0.872734</td>
+      <td>7</td>
+      <td>5672</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R2|Historical drift</td>
+      <td>X4</td>
+      <td>P4</td>
+      <td>0.883160</td>
+      <td>0.884165</td>
+      <td>7</td>
+      <td>5664</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R2|Neural network MLP</td>
+      <td>X4</td>
+      <td>P4</td>
+      <td>0.883160</td>
+      <td>0.884165</td>
+      <td>7</td>
+      <td>5664</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R2|No change</td>
+      <td>X5</td>
+      <td>P14</td>
+      <td>0.854589</td>
+      <td>0.860834</td>
+      <td>4</td>
+      <td>3245</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R2|Ridge regression</td>
+      <td>X4</td>
+      <td>P4</td>
+      <td>0.883160</td>
+      <td>0.884165</td>
+      <td>8</td>
+      <td>6474</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R2|Validation ensemble</td>
+      <td>X11</td>
+      <td>P15</td>
+      <td>0.871731</td>
+      <td>0.872736</td>
+      <td>7</td>
+      <td>5660</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R3|AR(1)-GARCH-t</td>
+      <td>X7</td>
+      <td>P16</td>
+      <td>0.837446</td>
+      <td>0.843658</td>
+      <td>4</td>
+      <td>3246</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R3|ARIMA(1,1,1)</td>
+      <td>X4</td>
+      <td>P4</td>
+      <td>0.883160</td>
+      <td>0.884165</td>
+      <td>8</td>
+      <td>6474</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R3|Damped ETS</td>
+      <td>X4</td>
+      <td>P4</td>
+      <td>0.883160</td>
+      <td>0.884165</td>
+      <td>7</td>
+      <td>5664</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R3|Dependency Extra Trees</td>
+      <td>X4</td>
+      <td>P4</td>
+      <td>0.871731</td>
+      <td>0.872737</td>
+      <td>8</td>
+      <td>6474</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R3|Dependency Gradient boosting</td>
+      <td>X4</td>
+      <td>P4</td>
+      <td>0.883160</td>
+      <td>0.884165</td>
+      <td>7</td>
+      <td>5664</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R3|Dependency Ridge</td>
+      <td>X12</td>
+      <td>P17</td>
+      <td>0.883160</td>
+      <td>0.901353</td>
+      <td>8</td>
+      <td>5740</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R3|Extra Trees</td>
+      <td>X1</td>
+      <td>P9</td>
+      <td>0.871731</td>
+      <td>0.883356</td>
+      <td>4</td>
+      <td>3244</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R3|Gradient boosting</td>
+      <td>X2</td>
+      <td>P2</td>
+      <td>0.894589</td>
+      <td>0.895591</td>
+      <td>7</td>
+      <td>5672</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R3|Historical drift</td>
+      <td>X1</td>
+      <td>P18</td>
+      <td>0.871731</td>
+      <td>0.883501</td>
+      <td>4</td>
+      <td>3244</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R3|Neural network MLP</td>
+      <td>X4</td>
+      <td>P4</td>
+      <td>0.871731</td>
+      <td>0.872737</td>
+      <td>8</td>
+      <td>6474</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R3|No change</td>
+      <td>X2</td>
+      <td>P2</td>
+      <td>0.871731</td>
+      <td>0.872734</td>
+      <td>7</td>
+      <td>5672</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R3|Ridge regression</td>
+      <td>X2</td>
+      <td>P2</td>
+      <td>0.871731</td>
+      <td>0.872734</td>
+      <td>7</td>
+      <td>5673</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R3|Validation ensemble</td>
+      <td>X4</td>
+      <td>P4</td>
+      <td>0.883160</td>
+      <td>0.884165</td>
+      <td>8</td>
+      <td>6474</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R4|AR(1)-GARCH-t</td>
+      <td>X13</td>
+      <td>P19</td>
+      <td>0.854589</td>
+      <td>0.872016</td>
+      <td>7</td>
+      <td>5266</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R4|ARIMA(1,1,1)</td>
+      <td>X7</td>
+      <td>P20</td>
+      <td>0.871731</td>
+      <td>0.878415</td>
+      <td>6</td>
+      <td>4871</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R4|Damped ETS</td>
+      <td>X1</td>
+      <td>P21</td>
+      <td>0.877446</td>
+      <td>0.884113</td>
+      <td>5</td>
+      <td>4055</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R4|Dependency Extra Trees</td>
+      <td>X4</td>
+      <td>P4</td>
+      <td>0.883160</td>
+      <td>0.884165</td>
+      <td>8</td>
+      <td>6474</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R4|Dependency Gradient boosting</td>
+      <td>X2</td>
+      <td>P2</td>
+      <td>0.883160</td>
+      <td>0.884162</td>
+      <td>7</td>
+      <td>5672</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R4|Dependency Ridge</td>
+      <td>X2</td>
+      <td>P2</td>
+      <td>0.871731</td>
+      <td>0.872734</td>
+      <td>7</td>
+      <td>5673</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R4|Extra Trees</td>
+      <td>X14</td>
+      <td>P22</td>
+      <td>0.768874</td>
+      <td>0.882694</td>
+      <td>7</td>
+      <td>5653</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R4|Gradient boosting</td>
+      <td>X15</td>
+      <td>P23</td>
+      <td>0.843160</td>
+      <td>0.862434</td>
+      <td>7</td>
+      <td>4906</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R4|Historical drift</td>
+      <td>X4</td>
+      <td>P4</td>
+      <td>0.877446</td>
+      <td>0.884165</td>
+      <td>8</td>
+      <td>6478</td>
+      <td>0.000002</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N1|R4|Neural network MLP</td>
+      <td>X16</td>
+      <td>P24</td>
+      <td>0.871731</td>
+      <td>0.872739</td>
+      <td>7</td>
+      <td>5271</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R4|No change</td>
+      <td>X5</td>
+      <td>P25</td>
+      <td>0.866017</td>
+      <td>0.877821</td>
+      <td>4</td>
+      <td>3247</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R4|Ridge regression</td>
+      <td>X4</td>
+      <td>P4</td>
+      <td>0.883160</td>
+      <td>0.884165</td>
+      <td>7</td>
+      <td>5664</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N1|R4|Validation ensemble</td>
+      <td>X4</td>
+      <td>P4</td>
+      <td>0.871731</td>
+      <td>0.872737</td>
+      <td>7</td>
+      <td>5664</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N2|R1|AR(1)-GARCH-t</td>
+      <td>X11</td>
+      <td>P26</td>
+      <td>0.884063</td>
+      <td>0.884268</td>
+      <td>8</td>
+      <td>6486</td>
+      <td>0.000012</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N2|R1|ARIMA(1,1,1)</td>
+      <td>X1</td>
+      <td>P27</td>
+      <td>0.884063</td>
+      <td>0.884235</td>
+      <td>7</td>
+      <td>5677</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N2|R1|Damped ETS</td>
+      <td>X17</td>
+      <td>P28</td>
+      <td>0.849778</td>
+      <td>0.875053</td>
+      <td>8</td>
+      <td>5622</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N2|R1|Dependency Extra Trees</td>
+      <td>X18</td>
+      <td>P29</td>
+      <td>0.872635</td>
+      <td>0.878512</td>
+      <td>7</td>
+      <td>5198</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N2|R1|Dependency Gradient boosting</td>
+      <td>X19</td>
+      <td>P30</td>
+      <td>0.872635</td>
+      <td>0.878526</td>
+      <td>8</td>
+      <td>6107</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N2|R1|Dependency Ridge</td>
+      <td>X20</td>
+      <td>P31</td>
+      <td>0.884063</td>
+      <td>0.887430</td>
+      <td>8</td>
+      <td>6382</td>
+      <td>0.000127</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N2|R1|Extra Trees</td>
+      <td>X11</td>
+      <td>P26</td>
+      <td>0.884063</td>
+      <td>0.884268</td>
+      <td>8</td>
+      <td>6486</td>
+      <td>0.000012</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N2|R1|Gradient boosting</td>
+      <td>X11</td>
+      <td>P26</td>
+      <td>0.884063</td>
+      <td>0.884268</td>
+      <td>8</td>
+      <td>6486</td>
+      <td>0.000012</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N2|R1|Historical drift</td>
+      <td>X11</td>
+      <td>P26</td>
+      <td>0.884063</td>
+      <td>0.884268</td>
+      <td>8</td>
+      <td>6486</td>
+      <td>0.000012</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N2|R1|Neural network MLP</td>
+      <td>X21</td>
+      <td>P32</td>
+      <td>0.895492</td>
+      <td>0.898793</td>
+      <td>8</td>
+      <td>6423</td>
+      <td>0.000186</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N2|R1|No change</td>
+      <td>X11</td>
+      <td>P33</td>
+      <td>0.872635</td>
+      <td>0.872828</td>
+      <td>8</td>
+      <td>6486</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N2|R1|Ridge regression</td>
+      <td>X11</td>
+      <td>P26</td>
+      <td>0.884063</td>
+      <td>0.884268</td>
+      <td>8</td>
+      <td>6486</td>
+      <td>0.000012</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N2|R1|Validation ensemble</td>
+      <td>X18</td>
+      <td>P29</td>
+      <td>0.872635</td>
+      <td>0.878512</td>
+      <td>8</td>
+      <td>6106</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N2|R2|AR(1)-GARCH-t</td>
+      <td>X4</td>
+      <td>P34</td>
+      <td>0.872635</td>
+      <td>0.872786</td>
+      <td>7</td>
+      <td>5677</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N2|R2|ARIMA(1,1,1)</td>
+      <td>X22</td>
+      <td>P35</td>
+      <td>0.884063</td>
+      <td>0.884252</td>
+      <td>8</td>
+      <td>6488</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N2|R2|Damped ETS</td>
+      <td>X1</td>
+      <td>P27</td>
+      <td>0.872635</td>
+      <td>0.872806</td>
+      <td>7</td>
+      <td>5677</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N2|R2|Dependency Extra Trees</td>
+      <td>X11</td>
+      <td>P26</td>
+      <td>0.861206</td>
+      <td>0.861411</td>
+      <td>8</td>
+      <td>6486</td>
+      <td>0.000012</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N2|R2|Dependency Gradient boosting</td>
+      <td>X1</td>
+      <td>P27</td>
+      <td>0.884063</td>
+      <td>0.884235</td>
+      <td>7</td>
+      <td>5677</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N2|R2|Dependency Ridge</td>
+      <td>X1</td>
+      <td>P27</td>
+      <td>0.884063</td>
+      <td>0.884235</td>
+      <td>7</td>
+      <td>5677</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N2|R2|Extra Trees</td>
+      <td>X1</td>
+      <td>P27</td>
+      <td>0.884063</td>
+      <td>0.895663</td>
+      <td>7</td>
+      <td>5677</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N2|R2|Gradient boosting</td>
+      <td>X1</td>
+      <td>P27</td>
+      <td>0.872635</td>
+      <td>0.872806</td>
+      <td>7</td>
+      <td>5677</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N2|R2|Historical drift</td>
+      <td>X11</td>
+      <td>P26</td>
+      <td>0.884063</td>
+      <td>0.884268</td>
+      <td>8</td>
+      <td>6486</td>
+      <td>0.000012</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N2|R2|Neural network MLP</td>
+      <td>X1</td>
+      <td>P27</td>
+      <td>0.884063</td>
+      <td>0.884235</td>
+      <td>7</td>
+      <td>5677</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N2|R2|No change</td>
+      <td>X11</td>
+      <td>P26</td>
+      <td>0.866920</td>
+      <td>0.867125</td>
+      <td>8</td>
+      <td>6485</td>
+      <td>0.000012</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N2|R2|Ridge regression</td>
+      <td>X11</td>
+      <td>P26</td>
+      <td>0.884063</td>
+      <td>0.884268</td>
+      <td>8</td>
+      <td>6486</td>
+      <td>0.000012</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N2|R2|Validation ensemble</td>
+      <td>X11</td>
+      <td>P36</td>
+      <td>0.884063</td>
+      <td>0.884258</td>
+      <td>8</td>
+      <td>6486</td>
+      <td>0.000002</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N2|R3|AR(1)-GARCH-t</td>
+      <td>X11</td>
+      <td>P26</td>
+      <td>0.884063</td>
+      <td>0.884268</td>
+      <td>8</td>
+      <td>6486</td>
+      <td>0.000012</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N2|R3|ARIMA(1,1,1)</td>
+      <td>X1</td>
+      <td>P27</td>
+      <td>0.884063</td>
+      <td>0.884235</td>
+      <td>7</td>
+      <td>5677</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N2|R3|Damped ETS</td>
+      <td>X11</td>
+      <td>P36</td>
+      <td>0.884063</td>
+      <td>0.884258</td>
+      <td>8</td>
+      <td>6486</td>
+      <td>0.000002</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N2|R3|Dependency Extra Trees</td>
+      <td>X23</td>
+      <td>P37</td>
+      <td>0.861206</td>
+      <td>0.875726</td>
+      <td>8</td>
+      <td>5551</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N2|R3|Dependency Gradient boosting</td>
+      <td>X11</td>
+      <td>P26</td>
+      <td>0.872635</td>
+      <td>0.872839</td>
+      <td>8</td>
+      <td>6486</td>
+      <td>0.000012</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N2|R3|Dependency Ridge</td>
+      <td>X11</td>
+      <td>P26</td>
+      <td>0.884063</td>
+      <td>0.884268</td>
+      <td>8</td>
+      <td>6486</td>
+      <td>0.000012</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N2|R3|Extra Trees</td>
+      <td>X11</td>
+      <td>P26</td>
+      <td>0.872635</td>
+      <td>0.872839</td>
+      <td>8</td>
+      <td>6486</td>
+      <td>0.000012</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N2|R3|Gradient boosting</td>
+      <td>X24</td>
+      <td>P38</td>
+      <td>0.861206</td>
+      <td>0.866909</td>
+      <td>7</td>
+      <td>4713</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N2|R3|Historical drift</td>
+      <td>X25</td>
+      <td>P39</td>
+      <td>0.832635</td>
+      <td>0.852987</td>
+      <td>8</td>
+      <td>5477</td>
+      <td>0.000002</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N2|R3|Neural network MLP</td>
+      <td>X1</td>
+      <td>P27</td>
+      <td>0.884063</td>
+      <td>0.884235</td>
+      <td>7</td>
+      <td>5677</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N2|R3|No change</td>
+      <td>X11</td>
+      <td>P40</td>
+      <td>0.895492</td>
+      <td>0.895690</td>
+      <td>8</td>
+      <td>6485</td>
+      <td>0.000005</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N2|R3|Ridge regression</td>
+      <td>X11</td>
+      <td>P26</td>
+      <td>0.884063</td>
+      <td>0.884268</td>
+      <td>8</td>
+      <td>6486</td>
+      <td>0.000012</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N2|R3|Validation ensemble</td>
+      <td>X26</td>
+      <td>P41</td>
+      <td>0.872635</td>
+      <td>0.884121</td>
+      <td>3</td>
+      <td>2433</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N2|R4|AR(1)-GARCH-t</td>
+      <td>X27</td>
+      <td>P42</td>
+      <td>0.792635</td>
+      <td>0.868170</td>
+      <td>8</td>
+      <td>5462</td>
+      <td>0.000054</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N2|R4|ARIMA(1,1,1)</td>
+      <td>X11</td>
+      <td>P26</td>
+      <td>0.861206</td>
+      <td>0.861411</td>
+      <td>8</td>
+      <td>6486</td>
+      <td>0.000012</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N2|R4|Damped ETS</td>
+      <td>X28</td>
+      <td>P43</td>
+      <td>0.878349</td>
+      <td>0.878540</td>
+      <td>8</td>
+      <td>6486</td>
+      <td>0.000023</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N2|R4|Dependency Extra Trees</td>
+      <td>X1</td>
+      <td>P27</td>
+      <td>0.861206</td>
+      <td>0.861377</td>
+      <td>7</td>
+      <td>5677</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N2|R4|Dependency Gradient boosting</td>
+      <td>X7</td>
+      <td>P44</td>
+      <td>0.861206</td>
+      <td>0.861364</td>
+      <td>6</td>
+      <td>4867</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N2|R4|Dependency Ridge</td>
+      <td>X29</td>
+      <td>P45</td>
+      <td>0.838349</td>
+      <td>0.887549</td>
+      <td>8</td>
+      <td>4875</td>
+      <td>0.000004</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N2|R4|Extra Trees</td>
+      <td>X11</td>
+      <td>P26</td>
+      <td>0.884063</td>
+      <td>0.884268</td>
+      <td>8</td>
+      <td>6486</td>
+      <td>0.000012</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N2|R4|Gradient boosting</td>
+      <td>X30</td>
+      <td>P46</td>
+      <td>0.884063</td>
+      <td>0.887172</td>
+      <td>8</td>
+      <td>5309</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N2|R4|Historical drift</td>
+      <td>X22</td>
+      <td>P35</td>
+      <td>0.884063</td>
+      <td>0.884252</td>
+      <td>8</td>
+      <td>6488</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N2|R4|Neural network MLP</td>
+      <td>X11</td>
+      <td>P26</td>
+      <td>0.872635</td>
+      <td>0.872839</td>
+      <td>8</td>
+      <td>6486</td>
+      <td>0.000012</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N2|R4|No change</td>
+      <td>X31</td>
+      <td>P47</td>
+      <td>0.884063</td>
+      <td>0.884255</td>
+      <td>8</td>
+      <td>6486</td>
+      <td>0.000006</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N2|R4|Ridge regression</td>
+      <td>X11</td>
+      <td>P26</td>
+      <td>0.884063</td>
+      <td>0.884268</td>
+      <td>8</td>
+      <td>6486</td>
+      <td>0.000012</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N2|R4|Validation ensemble</td>
+      <td>X31</td>
+      <td>P48</td>
+      <td>0.872635</td>
+      <td>0.872820</td>
+      <td>8</td>
+      <td>6486</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N3|R1|AR(1)-GARCH-t</td>
+      <td>X32</td>
+      <td>P49</td>
+      <td>0.884182</td>
+      <td>0.884198</td>
+      <td>4</td>
+      <td>3245</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N3|R1|ARIMA(1,1,1)</td>
+      <td>X28</td>
+      <td>P50</td>
+      <td>0.884182</td>
+      <td>0.884194</td>
+      <td>3</td>
+      <td>2432</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N3|R1|Damped ETS</td>
+      <td>X28</td>
+      <td>P50</td>
+      <td>0.872753</td>
+      <td>0.872766</td>
+      <td>3</td>
+      <td>2432</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N3|R1|Dependency Extra Trees</td>
+      <td>X28</td>
+      <td>P50</td>
+      <td>0.884182</td>
+      <td>0.884194</td>
+      <td>3</td>
+      <td>2432</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N3|R1|Dependency Gradient boosting</td>
+      <td>X28</td>
+      <td>P50</td>
+      <td>0.884182</td>
+      <td>0.884194</td>
+      <td>3</td>
+      <td>2432</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N3|R1|Dependency Ridge</td>
+      <td>X28</td>
+      <td>P50</td>
+      <td>0.884182</td>
+      <td>0.884194</td>
+      <td>3</td>
+      <td>2432</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N3|R1|Extra Trees</td>
+      <td>X33</td>
+      <td>P51</td>
+      <td>0.861324</td>
+      <td>0.864184</td>
+      <td>5</td>
+      <td>3936</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N3|R1|Gradient boosting</td>
+      <td>X34</td>
+      <td>P52</td>
+      <td>0.884182</td>
+      <td>0.887635</td>
+      <td>8</td>
+      <td>5658</td>
+      <td>0.000007</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N3|R1|Historical drift</td>
+      <td>X11</td>
+      <td>P53</td>
+      <td>0.884182</td>
+      <td>0.884197</td>
+      <td>3</td>
+      <td>2432</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N3|R1|Neural network MLP</td>
+      <td>X35</td>
+      <td>P54</td>
+      <td>0.884182</td>
+      <td>0.884188</td>
+      <td>3</td>
+      <td>2434</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N3|R1|No change</td>
+      <td>X11</td>
+      <td>P53</td>
+      <td>0.895610</td>
+      <td>0.895625</td>
+      <td>3</td>
+      <td>2432</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N3|R1|Ridge regression</td>
+      <td>X11</td>
+      <td>P53</td>
+      <td>0.884182</td>
+      <td>0.884197</td>
+      <td>3</td>
+      <td>2432</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N3|R1|Validation ensemble</td>
+      <td>X36</td>
+      <td>P55</td>
+      <td>0.872753</td>
+      <td>0.872762</td>
+      <td>3</td>
+      <td>2428</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N3|R2|AR(1)-GARCH-t</td>
+      <td>X37</td>
+      <td>P56</td>
+      <td>0.889896</td>
+      <td>0.895616</td>
+      <td>2</td>
+      <td>1622</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N3|R2|ARIMA(1,1,1)</td>
+      <td>X28</td>
+      <td>P50</td>
+      <td>0.884182</td>
+      <td>0.884194</td>
+      <td>3</td>
+      <td>2432</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N3|R2|Damped ETS</td>
+      <td>X36</td>
+      <td>P55</td>
+      <td>0.861324</td>
+      <td>0.861333</td>
+      <td>3</td>
+      <td>2428</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N3|R2|Dependency Extra Trees</td>
+      <td>X38</td>
+      <td>P57</td>
+      <td>0.895610</td>
+      <td>0.895617</td>
+      <td>3</td>
+      <td>2434</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N3|R2|Dependency Gradient boosting</td>
+      <td>X39</td>
+      <td>P58</td>
+      <td>0.867039</td>
+      <td>0.887299</td>
+      <td>8</td>
+      <td>5485</td>
+      <td>0.000002</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N3|R2|Dependency Ridge</td>
+      <td>X40</td>
+      <td>P59</td>
+      <td>0.872753</td>
+      <td>0.878163</td>
+      <td>5</td>
+      <td>3670</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N3|R2|Extra Trees</td>
+      <td>X31</td>
+      <td>P60</td>
+      <td>0.861324</td>
+      <td>0.861332</td>
+      <td>3</td>
+      <td>2432</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N3|R2|Gradient boosting</td>
+      <td>X32</td>
+      <td>P49</td>
+      <td>0.884182</td>
+      <td>0.884198</td>
+      <td>4</td>
+      <td>3245</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N3|R2|Historical drift</td>
+      <td>X28</td>
+      <td>P50</td>
+      <td>0.872753</td>
+      <td>0.872766</td>
+      <td>3</td>
+      <td>2432</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N3|R2|Neural network MLP</td>
+      <td>X41</td>
+      <td>P61</td>
+      <td>0.872753</td>
+      <td>0.884243</td>
+      <td>6</td>
+      <td>4811</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N3|R2|No change</td>
+      <td>X5</td>
+      <td>P62</td>
+      <td>0.872753</td>
+      <td>0.884185</td>
+      <td>2</td>
+      <td>1624</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N3|R2|Ridge regression</td>
+      <td>X42</td>
+      <td>P63</td>
+      <td>0.884182</td>
+      <td>0.886849</td>
+      <td>8</td>
+      <td>6006</td>
+      <td>0.000120</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N3|R2|Validation ensemble</td>
+      <td>X11</td>
+      <td>P53</td>
+      <td>0.884182</td>
+      <td>0.884197</td>
+      <td>3</td>
+      <td>2432</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N3|R3|AR(1)-GARCH-t</td>
+      <td>X35</td>
+      <td>P54</td>
+      <td>0.884182</td>
+      <td>0.884188</td>
+      <td>3</td>
+      <td>2434</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N3|R3|ARIMA(1,1,1)</td>
+      <td>X28</td>
+      <td>P50</td>
+      <td>0.884182</td>
+      <td>0.884194</td>
+      <td>3</td>
+      <td>2432</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N3|R3|Damped ETS</td>
+      <td>X35</td>
+      <td>P54</td>
+      <td>0.872753</td>
+      <td>0.872760</td>
+      <td>3</td>
+      <td>2434</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N3|R3|Dependency Extra Trees</td>
+      <td>X28</td>
+      <td>P50</td>
+      <td>0.884182</td>
+      <td>0.884194</td>
+      <td>3</td>
+      <td>2432</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N3|R3|Dependency Gradient boosting</td>
+      <td>X1</td>
+      <td>P64</td>
+      <td>0.872753</td>
+      <td>0.884226</td>
+      <td>6</td>
+      <td>4872</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N3|R3|Dependency Ridge</td>
+      <td>X43</td>
+      <td>P65</td>
+      <td>0.878467</td>
+      <td>0.887564</td>
+      <td>8</td>
+      <td>5686</td>
+      <td>0.000003</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N3|R3|Extra Trees</td>
+      <td>X28</td>
+      <td>P50</td>
+      <td>0.884182</td>
+      <td>0.884194</td>
+      <td>3</td>
+      <td>2432</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N3|R3|Gradient boosting</td>
+      <td>X28</td>
+      <td>P50</td>
+      <td>0.884182</td>
+      <td>0.884194</td>
+      <td>3</td>
+      <td>2432</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N3|R3|Historical drift</td>
+      <td>X11</td>
+      <td>P53</td>
+      <td>0.884182</td>
+      <td>0.884197</td>
+      <td>3</td>
+      <td>2432</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N3|R3|Neural network MLP</td>
+      <td>X31</td>
+      <td>P60</td>
+      <td>0.884182</td>
+      <td>0.884189</td>
+      <td>3</td>
+      <td>2432</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N3|R3|No change</td>
+      <td>X32</td>
+      <td>P49</td>
+      <td>0.872753</td>
+      <td>0.872770</td>
+      <td>4</td>
+      <td>3245</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N3|R3|Ridge regression</td>
+      <td>X35</td>
+      <td>P54</td>
+      <td>0.884182</td>
+      <td>0.884188</td>
+      <td>3</td>
+      <td>2434</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N3|R3|Validation ensemble</td>
+      <td>X28</td>
+      <td>P50</td>
+      <td>0.872753</td>
+      <td>0.872766</td>
+      <td>3</td>
+      <td>2432</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N3|R4|AR(1)-GARCH-t</td>
+      <td>X44</td>
+      <td>P66</td>
+      <td>0.884182</td>
+      <td>0.895117</td>
+      <td>5</td>
+      <td>3284</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N3|R4|ARIMA(1,1,1)</td>
+      <td>X28</td>
+      <td>P50</td>
+      <td>0.884182</td>
+      <td>0.884194</td>
+      <td>3</td>
+      <td>2432</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N3|R4|Damped ETS</td>
+      <td>X45</td>
+      <td>P67</td>
+      <td>0.872753</td>
+      <td>0.884189</td>
+      <td>3</td>
+      <td>2436</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N3|R4|Dependency Extra Trees</td>
+      <td>X4</td>
+      <td>P68</td>
+      <td>0.884182</td>
+      <td>0.884196</td>
+      <td>4</td>
+      <td>3244</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N3|R4|Dependency Gradient boosting</td>
+      <td>X4</td>
+      <td>P68</td>
+      <td>0.884182</td>
+      <td>0.884196</td>
+      <td>4</td>
+      <td>3244</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N3|R4|Dependency Ridge</td>
+      <td>X4</td>
+      <td>P68</td>
+      <td>0.884182</td>
+      <td>0.884196</td>
+      <td>4</td>
+      <td>3244</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N3|R4|Extra Trees</td>
+      <td>X28</td>
+      <td>P50</td>
+      <td>0.884182</td>
+      <td>0.884194</td>
+      <td>3</td>
+      <td>2432</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N3|R4|Gradient boosting</td>
+      <td>X46</td>
+      <td>P69</td>
+      <td>0.895610</td>
+      <td>0.899063</td>
+      <td>8</td>
+      <td>5658</td>
+      <td>0.000006</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N3|R4|Historical drift</td>
+      <td>X35</td>
+      <td>P54</td>
+      <td>0.878467</td>
+      <td>0.878474</td>
+      <td>3</td>
+      <td>2434</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N3|R4|Neural network MLP</td>
+      <td>X35</td>
+      <td>P54</td>
+      <td>0.884182</td>
+      <td>0.884188</td>
+      <td>3</td>
+      <td>2434</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N3|R4|No change</td>
+      <td>X47</td>
+      <td>P70</td>
+      <td>0.849896</td>
+      <td>0.873229</td>
+      <td>4</td>
+      <td>3245</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N3|R4|Ridge regression</td>
+      <td>X48</td>
+      <td>P71</td>
+      <td>0.884182</td>
+      <td>0.887365</td>
+      <td>8</td>
+      <td>6194</td>
+      <td>0.000125</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N3|R4|Validation ensemble</td>
+      <td>X36</td>
+      <td>P55</td>
+      <td>0.867039</td>
+      <td>0.872762</td>
+      <td>3</td>
+      <td>2428</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N4|R1|AR(1)-GARCH-t</td>
+      <td>X49</td>
+      <td>P72</td>
+      <td>0.877773</td>
+      <td>0.884441</td>
+      <td>8</td>
+      <td>5853</td>
+      <td>0.000012</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N4|R1|ARIMA(1,1,1)</td>
+      <td>X50</td>
+      <td>P73</td>
+      <td>0.877773</td>
+      <td>0.884381</td>
+      <td>8</td>
+      <td>6173</td>
+      <td>0.000005</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N4|R1|Damped ETS</td>
+      <td>X11</td>
+      <td>P74</td>
+      <td>0.877773</td>
+      <td>0.878594</td>
+      <td>8</td>
+      <td>6108</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N4|R1|Dependency Extra Trees</td>
+      <td>X51</td>
+      <td>P75</td>
+      <td>0.877773</td>
+      <td>0.883967</td>
+      <td>8</td>
+      <td>6202</td>
+      <td>0.000005</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N4|R1|Dependency Gradient boosting</td>
+      <td>X11</td>
+      <td>P76</td>
+      <td>0.877773</td>
+      <td>0.878600</td>
+      <td>8</td>
+      <td>6108</td>
+      <td>0.000006</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N4|R1|Dependency Ridge</td>
+      <td>X52</td>
+      <td>P77</td>
+      <td>0.889202</td>
+      <td>0.890020</td>
+      <td>7</td>
+      <td>5005</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N4|R1|Extra Trees</td>
+      <td>X19</td>
+      <td>P78</td>
+      <td>0.877773</td>
+      <td>0.884380</td>
+      <td>4</td>
+      <td>2858</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N4|R1|Gradient boosting</td>
+      <td>X31</td>
+      <td>P79</td>
+      <td>0.900630</td>
+      <td>0.901471</td>
+      <td>8</td>
+      <td>6108</td>
+      <td>0.000001</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N4|R1|Historical drift</td>
+      <td>X50</td>
+      <td>P80</td>
+      <td>0.877773</td>
+      <td>0.884363</td>
+      <td>8</td>
+      <td>6170</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N4|R1|Neural network MLP</td>
+      <td>X11</td>
+      <td>P81</td>
+      <td>0.877773</td>
+      <td>0.878594</td>
+      <td>7</td>
+      <td>5296</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N4|R1|No change</td>
+      <td>X11</td>
+      <td>P76</td>
+      <td>0.877773</td>
+      <td>0.878600</td>
+      <td>8</td>
+      <td>6108</td>
+      <td>0.000006</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N4|R1|Ridge regression</td>
+      <td>X22</td>
+      <td>P82</td>
+      <td>0.866344</td>
+      <td>0.867162</td>
+      <td>8</td>
+      <td>6108</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N4|R1|Validation ensemble</td>
+      <td>X49</td>
+      <td>P72</td>
+      <td>0.877773</td>
+      <td>0.884441</td>
+      <td>8</td>
+      <td>5853</td>
+      <td>0.000012</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N4|R2|AR(1)-GARCH-t</td>
+      <td>X11</td>
+      <td>P76</td>
+      <td>0.877773</td>
+      <td>0.878600</td>
+      <td>8</td>
+      <td>6108</td>
+      <td>0.000006</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N4|R2|ARIMA(1,1,1)</td>
+      <td>X53</td>
+      <td>P83</td>
+      <td>0.877773</td>
+      <td>0.883716</td>
+      <td>8</td>
+      <td>5846</td>
+      <td>0.000038</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N4|R2|Damped ETS</td>
+      <td>X11</td>
+      <td>P76</td>
+      <td>0.877773</td>
+      <td>0.878600</td>
+      <td>8</td>
+      <td>6108</td>
+      <td>0.000006</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N4|R2|Dependency Extra Trees</td>
+      <td>X11</td>
+      <td>P76</td>
+      <td>0.877773</td>
+      <td>0.878600</td>
+      <td>8</td>
+      <td>6108</td>
+      <td>0.000006</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N4|R2|Dependency Gradient boosting</td>
+      <td>X54</td>
+      <td>P84</td>
+      <td>0.889202</td>
+      <td>0.906606</td>
+      <td>4</td>
+      <td>2858</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N4|R2|Dependency Ridge</td>
+      <td>X37</td>
+      <td>P85</td>
+      <td>0.877773</td>
+      <td>0.884313</td>
+      <td>6</td>
+      <td>4581</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N4|R2|Extra Trees</td>
+      <td>X55</td>
+      <td>P86</td>
+      <td>0.866344</td>
+      <td>0.875460</td>
+      <td>8</td>
+      <td>6053</td>
+      <td>0.000128</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N4|R2|Gradient boosting</td>
+      <td>X50</td>
+      <td>P73</td>
+      <td>0.877773</td>
+      <td>0.884381</td>
+      <td>8</td>
+      <td>6173</td>
+      <td>0.000005</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N4|R2|Historical drift</td>
+      <td>X56</td>
+      <td>P87</td>
+      <td>0.889202</td>
+      <td>0.895871</td>
+      <td>8</td>
+      <td>5853</td>
+      <td>0.000014</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N4|R2|Neural network MLP</td>
+      <td>X56</td>
+      <td>P87</td>
+      <td>0.877773</td>
+      <td>0.884442</td>
+      <td>8</td>
+      <td>5853</td>
+      <td>0.000014</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N4|R2|No change</td>
+      <td>X50</td>
+      <td>P73</td>
+      <td>0.877773</td>
+      <td>0.884381</td>
+      <td>8</td>
+      <td>6173</td>
+      <td>0.000005</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N4|R2|Ridge regression</td>
+      <td>X11</td>
+      <td>P76</td>
+      <td>0.877773</td>
+      <td>0.878600</td>
+      <td>8</td>
+      <td>6108</td>
+      <td>0.000006</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N4|R2|Validation ensemble</td>
+      <td>X22</td>
+      <td>P82</td>
+      <td>0.877773</td>
+      <td>0.878591</td>
+      <td>8</td>
+      <td>6108</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N4|R3|AR(1)-GARCH-t</td>
+      <td>X57</td>
+      <td>P88</td>
+      <td>0.866344</td>
+      <td>0.884276</td>
+      <td>8</td>
+      <td>5693</td>
+      <td>0.000000</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N4|R3|ARIMA(1,1,1)</td>
+      <td>X58</td>
+      <td>P89</td>
+      <td>0.843487</td>
+      <td>0.881254</td>
+      <td>8</td>
+      <td>6137</td>
+      <td>0.006491</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N4|R3|Damped ETS</td>
+      <td>X56</td>
+      <td>P87</td>
+      <td>0.877773</td>
+      <td>0.884442</td>
+      <td>8</td>
+      <td>5853</td>
+      <td>0.000014</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N4|R3|Dependency Extra Trees</td>
+      <td>X11</td>
+      <td>P76</td>
+      <td>0.877773</td>
+      <td>0.878600</td>
+      <td>8</td>
+      <td>6108</td>
+      <td>0.000006</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N4|R3|Dependency Gradient boosting</td>
+      <td>X50</td>
+      <td>P90</td>
+      <td>0.877773</td>
+      <td>0.884377</td>
+      <td>8</td>
+      <td>6180</td>
+      <td>0.000006</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N4|R3|Dependency Ridge</td>
+      <td>X52</td>
+      <td>P77</td>
+      <td>0.900630</td>
+      <td>0.901448</td>
+      <td>7</td>
+      <td>5005</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N4|R3|Extra Trees</td>
+      <td>X59</td>
+      <td>P91</td>
+      <td>0.900630</td>
+      <td>0.901134</td>
+      <td>8</td>
+      <td>5720</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N4|R3|Gradient boosting</td>
+      <td>X60</td>
+      <td>P92</td>
+      <td>0.854916</td>
+      <td>0.875066</td>
+      <td>8</td>
+      <td>6192</td>
+      <td>0.000436</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N4|R3|Historical drift</td>
+      <td>X28</td>
+      <td>P93</td>
+      <td>0.877773</td>
+      <td>0.878598</td>
+      <td>8</td>
+      <td>6108</td>
+      <td>0.000006</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N4|R3|Neural network MLP</td>
+      <td>X56</td>
+      <td>P87</td>
+      <td>0.877773</td>
+      <td>0.884442</td>
+      <td>8</td>
+      <td>5853</td>
+      <td>0.000014</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N4|R3|No change</td>
+      <td>X56</td>
+      <td>P87</td>
+      <td>0.877773</td>
+      <td>0.884442</td>
+      <td>8</td>
+      <td>5853</td>
+      <td>0.000014</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N4|R3|Ridge regression</td>
+      <td>X61</td>
+      <td>P94</td>
+      <td>0.860630</td>
+      <td>0.884379</td>
+      <td>8</td>
+      <td>6173</td>
+      <td>0.000002</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N4|R3|Validation ensemble</td>
+      <td>X56</td>
+      <td>P87</td>
+      <td>0.877773</td>
+      <td>0.884442</td>
+      <td>8</td>
+      <td>5853</td>
+      <td>0.000014</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N4|R4|AR(1)-GARCH-t</td>
+      <td>X28</td>
+      <td>P93</td>
+      <td>0.877773</td>
+      <td>0.878598</td>
+      <td>8</td>
+      <td>6108</td>
+      <td>0.000006</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N4|R4|ARIMA(1,1,1)</td>
+      <td>X61</td>
+      <td>P94</td>
+      <td>0.860630</td>
+      <td>0.884379</td>
+      <td>8</td>
+      <td>6173</td>
+      <td>0.000002</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N4|R4|Damped ETS</td>
+      <td>X62</td>
+      <td>P95</td>
+      <td>0.889202</td>
+      <td>0.895334</td>
+      <td>8</td>
+      <td>6171</td>
+      <td>0.000009</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N4|R4|Dependency Extra Trees</td>
+      <td>X22</td>
+      <td>P82</td>
+      <td>0.889202</td>
+      <td>0.890020</td>
+      <td>8</td>
+      <td>6108</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N4|R4|Dependency Gradient boosting</td>
+      <td>X50</td>
+      <td>P73</td>
+      <td>0.877773</td>
+      <td>0.884381</td>
+      <td>8</td>
+      <td>6173</td>
+      <td>0.000005</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N4|R4|Dependency Ridge</td>
+      <td>X11</td>
+      <td>P96</td>
+      <td>0.860630</td>
+      <td>0.861491</td>
+      <td>8</td>
+      <td>6302</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N4|R4|Extra Trees</td>
+      <td>X63</td>
+      <td>P97</td>
+      <td>0.826344</td>
+      <td>0.849721</td>
+      <td>8</td>
+      <td>5718</td>
+      <td>0.000671</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N4|R4|Gradient boosting</td>
+      <td>X22</td>
+      <td>P82</td>
+      <td>0.889202</td>
+      <td>0.890020</td>
+      <td>8</td>
+      <td>6108</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N4|R4|Historical drift</td>
+      <td>X50</td>
+      <td>P73</td>
+      <td>0.877773</td>
+      <td>0.884381</td>
+      <td>8</td>
+      <td>6173</td>
+      <td>0.000005</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N4|R4|Neural network MLP</td>
+      <td>X22</td>
+      <td>P82</td>
+      <td>0.877773</td>
+      <td>0.878591</td>
+      <td>8</td>
+      <td>6108</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>N4|R4|No change</td>
+      <td>X50</td>
+      <td>P73</td>
+      <td>0.866344</td>
+      <td>0.884381</td>
+      <td>8</td>
+      <td>6173</td>
+      <td>0.000005</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N4|R4|Ridge regression</td>
+      <td>X51</td>
+      <td>P75</td>
+      <td>0.877773</td>
+      <td>0.883967</td>
+      <td>8</td>
+      <td>6202</td>
+      <td>0.000005</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>N4|R4|Validation ensemble</td>
+      <td>X64</td>
+      <td>P98</td>
+      <td>0.877773</td>
+      <td>0.884378</td>
+      <td>4</td>
+      <td>2858</td>
+      <td>0.000000</td>
+      <td>True</td>
+    </tr>
+  </tbody>
+</table></details><details><summary>Scenario membership, summed probabilities and recourse validation</summary><table class="dataframe research-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Original index</th>
+      <th>Original scenario</th>
+      <th>Representative index</th>
+      <th>Representative scenario</th>
+      <th>Group</th>
+      <th>Node</th>
+      <th>Terminal regime</th>
+      <th>Probability</th>
+      <th>Same first stage</th>
+      <th>Same both stages</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>N1|R1|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>N1|R1|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0.006511</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>N1|R1|Damped ETS</td>
+      <td>1</td>
+      <td>N1|R1|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0.007722</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>N1|R1|Dependency Extra Trees</td>
+      <td>1</td>
+      <td>N1|R1|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0.007312</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>N1|R1|Dependency Gradient boosting</td>
+      <td>1</td>
+      <td>N1|R1|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0.008346</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>N1|R1|Validation ensemble</td>
+      <td>1</td>
+      <td>N1|R1|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0.006376</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>N1|R2|ARIMA(1,1,1)</td>
+      <td>14</td>
+      <td>N1|R2|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0.000763</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>N1|R2|Damped ETS</td>
+      <td>14</td>
+      <td>N1|R2|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0.000871</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>N1|R2|Dependency Extra Trees</td>
+      <td>14</td>
+      <td>N1|R2|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0.000700</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>N1|R2|Dependency Gradient boosting</td>
+      <td>14</td>
+      <td>N1|R2|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0.000986</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>N1|R2|Validation ensemble</td>
+      <td>14</td>
+      <td>N1|R2|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0.000709</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>N1|R3|ARIMA(1,1,1)</td>
+      <td>27</td>
+      <td>N1|R3|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0.000415</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>N1|R3|Damped ETS</td>
+      <td>27</td>
+      <td>N1|R3|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0.000506</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>N1|R3|Dependency Extra Trees</td>
+      <td>27</td>
+      <td>N1|R3|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0.000527</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>N1|R3|Dependency Gradient boosting</td>
+      <td>27</td>
+      <td>N1|R3|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0.000599</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>N1|R3|Validation ensemble</td>
+      <td>27</td>
+      <td>N1|R3|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0.000408</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>N1|R4|ARIMA(1,1,1)</td>
+      <td>40</td>
+      <td>N1|R4|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>0</td>
+      <td>4</td>
+      <td>0.000234</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td>N1|R4|Damped ETS</td>
+      <td>40</td>
+      <td>N1|R4|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>0</td>
+      <td>4</td>
+      <td>0.000209</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td>N1|R4|Dependency Extra Trees</td>
+      <td>40</td>
+      <td>N1|R4|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>0</td>
+      <td>4</td>
+      <td>0.000115</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td>N1|R4|Dependency Gradient boosting</td>
+      <td>40</td>
+      <td>N1|R4|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>0</td>
+      <td>4</td>
+      <td>0.000261</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>51</td>
+      <td>N1|R4|Validation ensemble</td>
+      <td>40</td>
+      <td>N1|R4|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>0</td>
+      <td>4</td>
+      <td>0.000142</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>53</td>
+      <td>N2|R1|ARIMA(1,1,1)</td>
+      <td>53</td>
+      <td>N2|R1|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.027656</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>54</td>
+      <td>N2|R1|Damped ETS</td>
+      <td>53</td>
+      <td>N2|R1|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.028933</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>55</td>
+      <td>N2|R1|Dependency Extra Trees</td>
+      <td>53</td>
+      <td>N2|R1|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.029482</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>56</td>
+      <td>N2|R1|Dependency Gradient boosting</td>
+      <td>53</td>
+      <td>N2|R1|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.030313</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>64</td>
+      <td>N2|R1|Validation ensemble</td>
+      <td>53</td>
+      <td>N2|R1|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.027135</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>66</td>
+      <td>N2|R2|ARIMA(1,1,1)</td>
+      <td>66</td>
+      <td>N2|R2|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0.002288</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>67</td>
+      <td>N2|R2|Damped ETS</td>
+      <td>66</td>
+      <td>N2|R2|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0.002390</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>68</td>
+      <td>N2|R2|Dependency Extra Trees</td>
+      <td>66</td>
+      <td>N2|R2|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0.002412</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>69</td>
+      <td>N2|R2|Dependency Gradient boosting</td>
+      <td>66</td>
+      <td>N2|R2|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0.002544</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>77</td>
+      <td>N2|R2|Validation ensemble</td>
+      <td>66</td>
+      <td>N2|R2|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0.002317</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>79</td>
+      <td>N2|R3|ARIMA(1,1,1)</td>
+      <td>79</td>
+      <td>N2|R3|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>1</td>
+      <td>3</td>
+      <td>0.001622</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>80</td>
+      <td>N2|R3|Damped ETS</td>
+      <td>79</td>
+      <td>N2|R3|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>1</td>
+      <td>3</td>
+      <td>0.001551</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>81</td>
+      <td>N2|R3|Dependency Extra Trees</td>
+      <td>79</td>
+      <td>N2|R3|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>1</td>
+      <td>3</td>
+      <td>0.001626</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>82</td>
+      <td>N2|R3|Dependency Gradient boosting</td>
+      <td>79</td>
+      <td>N2|R3|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>1</td>
+      <td>3</td>
+      <td>0.001816</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>90</td>
+      <td>N2|R3|Validation ensemble</td>
+      <td>79</td>
+      <td>N2|R3|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>1</td>
+      <td>3</td>
+      <td>0.001510</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>92</td>
+      <td>N2|R4|ARIMA(1,1,1)</td>
+      <td>92</td>
+      <td>N2|R4|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>1</td>
+      <td>4</td>
+      <td>0.000414</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>93</td>
+      <td>N2|R4|Damped ETS</td>
+      <td>92</td>
+      <td>N2|R4|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>1</td>
+      <td>4</td>
+      <td>0.000376</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>94</td>
+      <td>N2|R4|Dependency Extra Trees</td>
+      <td>92</td>
+      <td>N2|R4|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>1</td>
+      <td>4</td>
+      <td>0.000402</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>95</td>
+      <td>N2|R4|Dependency Gradient boosting</td>
+      <td>92</td>
+      <td>N2|R4|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>1</td>
+      <td>4</td>
+      <td>0.000384</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>103</td>
+      <td>N2|R4|Validation ensemble</td>
+      <td>92</td>
+      <td>N2|R4|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>1</td>
+      <td>4</td>
+      <td>0.000385</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>105</td>
+      <td>N3|R1|ARIMA(1,1,1)</td>
+      <td>105</td>
+      <td>N3|R1|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0.025250</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>106</td>
+      <td>N3|R1|Damped ETS</td>
+      <td>105</td>
+      <td>N3|R1|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0.023690</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>107</td>
+      <td>N3|R1|Dependency Extra Trees</td>
+      <td>105</td>
+      <td>N3|R1|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0.024008</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>108</td>
+      <td>N3|R1|Dependency Gradient boosting</td>
+      <td>105</td>
+      <td>N3|R1|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0.022559</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>116</td>
+      <td>N3|R1|Validation ensemble</td>
+      <td>105</td>
+      <td>N3|R1|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0.026594</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>118</td>
+      <td>N3|R2|ARIMA(1,1,1)</td>
+      <td>118</td>
+      <td>N3|R2|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0.002512</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>119</td>
+      <td>N3|R2|Damped ETS</td>
+      <td>118</td>
+      <td>N3|R2|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0.002130</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>120</td>
+      <td>N3|R2|Dependency Extra Trees</td>
+      <td>118</td>
+      <td>N3|R2|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0.002249</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>121</td>
+      <td>N3|R2|Dependency Gradient boosting</td>
+      <td>118</td>
+      <td>N3|R2|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0.002144</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>129</td>
+      <td>N3|R2|Validation ensemble</td>
+      <td>118</td>
+      <td>N3|R2|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0.002431</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>131</td>
+      <td>N3|R3|ARIMA(1,1,1)</td>
+      <td>131</td>
+      <td>N3|R3|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>0.001426</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>132</td>
+      <td>N3|R3|Damped ETS</td>
+      <td>131</td>
+      <td>N3|R3|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>0.001430</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>133</td>
+      <td>N3|R3|Dependency Extra Trees</td>
+      <td>131</td>
+      <td>N3|R3|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>0.001378</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>134</td>
+      <td>N3|R3|Dependency Gradient boosting</td>
+      <td>131</td>
+      <td>N3|R3|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>0.001369</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>142</td>
+      <td>N3|R3|Validation ensemble</td>
+      <td>131</td>
+      <td>N3|R3|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>0.001499</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>144</td>
+      <td>N3|R4|ARIMA(1,1,1)</td>
+      <td>144</td>
+      <td>N3|R4|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>2</td>
+      <td>4</td>
+      <td>0.000408</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>145</td>
+      <td>N3|R4|Damped ETS</td>
+      <td>144</td>
+      <td>N3|R4|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>2</td>
+      <td>4</td>
+      <td>0.000385</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>146</td>
+      <td>N3|R4|Dependency Extra Trees</td>
+      <td>144</td>
+      <td>N3|R4|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>2</td>
+      <td>4</td>
+      <td>0.000384</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>147</td>
+      <td>N3|R4|Dependency Gradient boosting</td>
+      <td>144</td>
+      <td>N3|R4|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>2</td>
+      <td>4</td>
+      <td>0.000352</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>155</td>
+      <td>N3|R4|Validation ensemble</td>
+      <td>144</td>
+      <td>N3|R4|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>2</td>
+      <td>4</td>
+      <td>0.000380</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>157</td>
+      <td>N4|R1|ARIMA(1,1,1)</td>
+      <td>157</td>
+      <td>N4|R1|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>3</td>
+      <td>1</td>
+      <td>0.006231</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>158</td>
+      <td>N4|R1|Damped ETS</td>
+      <td>157</td>
+      <td>N4|R1|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>3</td>
+      <td>1</td>
+      <td>0.005625</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>159</td>
+      <td>N4|R1|Dependency Extra Trees</td>
+      <td>157</td>
+      <td>N4|R1|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>3</td>
+      <td>1</td>
+      <td>0.005248</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>160</td>
+      <td>N4|R1|Dependency Gradient boosting</td>
+      <td>157</td>
+      <td>N4|R1|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>3</td>
+      <td>1</td>
+      <td>0.004387</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>168</td>
+      <td>N4|R1|Validation ensemble</td>
+      <td>157</td>
+      <td>N4|R1|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>3</td>
+      <td>1</td>
+      <td>0.005829</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>170</td>
+      <td>N4|R2|ARIMA(1,1,1)</td>
+      <td>170</td>
+      <td>N4|R2|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>3</td>
+      <td>2</td>
+      <td>0.000770</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>171</td>
+      <td>N4|R2|Damped ETS</td>
+      <td>170</td>
+      <td>N4|R2|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>3</td>
+      <td>2</td>
+      <td>0.000697</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>172</td>
+      <td>N4|R2|Dependency Extra Trees</td>
+      <td>170</td>
+      <td>N4|R2|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>3</td>
+      <td>2</td>
+      <td>0.000686</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>173</td>
+      <td>N4|R2|Dependency Gradient boosting</td>
+      <td>170</td>
+      <td>N4|R2|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>3</td>
+      <td>2</td>
+      <td>0.000507</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>181</td>
+      <td>N4|R2|Validation ensemble</td>
+      <td>170</td>
+      <td>N4|R2|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>3</td>
+      <td>2</td>
+      <td>0.000772</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>183</td>
+      <td>N4|R3|ARIMA(1,1,1)</td>
+      <td>183</td>
+      <td>N4|R3|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>3</td>
+      <td>3</td>
+      <td>0.000331</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>184</td>
+      <td>N4|R3|Damped ETS</td>
+      <td>183</td>
+      <td>N4|R3|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>3</td>
+      <td>3</td>
+      <td>0.000310</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>185</td>
+      <td>N4|R3|Dependency Extra Trees</td>
+      <td>183</td>
+      <td>N4|R3|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>3</td>
+      <td>3</td>
+      <td>0.000296</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>186</td>
+      <td>N4|R3|Dependency Gradient boosting</td>
+      <td>183</td>
+      <td>N4|R3|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>3</td>
+      <td>3</td>
+      <td>0.000285</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>194</td>
+      <td>N4|R3|Validation ensemble</td>
+      <td>183</td>
+      <td>N4|R3|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>3</td>
+      <td>3</td>
+      <td>0.000331</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>196</td>
+      <td>N4|R4|ARIMA(1,1,1)</td>
+      <td>196</td>
+      <td>N4|R4|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>3</td>
+      <td>4</td>
+      <td>0.000091</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>197</td>
+      <td>N4|R4|Damped ETS</td>
+      <td>196</td>
+      <td>N4|R4|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>3</td>
+      <td>4</td>
+      <td>0.000099</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>198</td>
+      <td>N4|R4|Dependency Extra Trees</td>
+      <td>196</td>
+      <td>N4|R4|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>3</td>
+      <td>4</td>
+      <td>0.000097</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>199</td>
+      <td>N4|R4|Dependency Gradient boosting</td>
+      <td>196</td>
+      <td>N4|R4|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>3</td>
+      <td>4</td>
+      <td>0.000070</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>207</td>
+      <td>N4|R4|Validation ensemble</td>
+      <td>196</td>
+      <td>N4|R4|ARIMA(1,1,1)</td>
+      <td>1</td>
+      <td>3</td>
+      <td>4</td>
+      <td>0.000107</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>N1|R1|Dependency Ridge</td>
+      <td>5</td>
+      <td>N1|R1|Dependency Ridge</td>
+      <td>2</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0.003821</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>N1|R1|Neural network MLP</td>
+      <td>5</td>
+      <td>N1|R1|Dependency Ridge</td>
+      <td>2</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0.003787</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>N1|R2|Dependency Ridge</td>
+      <td>18</td>
+      <td>N1|R2|Dependency Ridge</td>
+      <td>2</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0.000445</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>N1|R2|Neural network MLP</td>
+      <td>18</td>
+      <td>N1|R2|Dependency Ridge</td>
+      <td>2</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0.000434</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>N1|R3|Dependency Ridge</td>
+      <td>31</td>
+      <td>N1|R3|Dependency Ridge</td>
+      <td>2</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0.000229</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>N1|R3|Neural network MLP</td>
+      <td>31</td>
+      <td>N1|R3|Dependency Ridge</td>
+      <td>2</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0.000226</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td>N1|R4|Dependency Ridge</td>
+      <td>44</td>
+      <td>N1|R4|Dependency Ridge</td>
+      <td>2</td>
+      <td>0</td>
+      <td>4</td>
+      <td>0.000159</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>48</td>
+      <td>N1|R4|Neural network MLP</td>
+      <td>44</td>
+      <td>N1|R4|Dependency Ridge</td>
+      <td>2</td>
+      <td>0</td>
+      <td>4</td>
+      <td>0.000071</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>57</td>
+      <td>N2|R1|Dependency Ridge</td>
+      <td>57</td>
+      <td>N2|R1|Dependency Ridge</td>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.021257</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>61</td>
+      <td>N2|R1|Neural network MLP</td>
+      <td>57</td>
+      <td>N2|R1|Dependency Ridge</td>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.021090</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>70</td>
+      <td>N2|R2|Dependency Ridge</td>
+      <td>70</td>
+      <td>N2|R2|Dependency Ridge</td>
+      <td>2</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0.001741</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>74</td>
+      <td>N2|R2|Neural network MLP</td>
+      <td>70</td>
+      <td>N2|R2|Dependency Ridge</td>
+      <td>2</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0.001883</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>83</td>
+      <td>N2|R3|Dependency Ridge</td>
+      <td>83</td>
+      <td>N2|R3|Dependency Ridge</td>
+      <td>2</td>
+      <td>1</td>
+      <td>3</td>
+      <td>0.001372</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>87</td>
+      <td>N2|R3|Neural network MLP</td>
+      <td>83</td>
+      <td>N2|R3|Dependency Ridge</td>
+      <td>2</td>
+      <td>1</td>
+      <td>3</td>
+      <td>0.001293</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>96</td>
+      <td>N2|R4|Dependency Ridge</td>
+      <td>96</td>
+      <td>N2|R4|Dependency Ridge</td>
+      <td>2</td>
+      <td>1</td>
+      <td>4</td>
+      <td>0.000341</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>100</td>
+      <td>N2|R4|Neural network MLP</td>
+      <td>96</td>
+      <td>N2|R4|Dependency Ridge</td>
+      <td>2</td>
+      <td>1</td>
+      <td>4</td>
+      <td>0.000368</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>109</td>
+      <td>N3|R1|Dependency Ridge</td>
+      <td>109</td>
+      <td>N3|R1|Dependency Ridge</td>
+      <td>2</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0.032259</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>113</td>
+      <td>N3|R1|Neural network MLP</td>
+      <td>109</td>
+      <td>N3|R1|Dependency Ridge</td>
+      <td>2</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0.031836</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>122</td>
+      <td>N3|R2|Dependency Ridge</td>
+      <td>122</td>
+      <td>N3|R2|Dependency Ridge</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0.002879</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>126</td>
+      <td>N3|R2|Neural network MLP</td>
+      <td>122</td>
+      <td>N3|R2|Dependency Ridge</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0.002930</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>135</td>
+      <td>N3|R3|Dependency Ridge</td>
+      <td>135</td>
+      <td>N3|R3|Dependency Ridge</td>
+      <td>2</td>
+      <td>2</td>
+      <td>3</td>
+      <td>0.001832</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>139</td>
+      <td>N3|R3|Neural network MLP</td>
+      <td>135</td>
+      <td>N3|R3|Dependency Ridge</td>
+      <td>2</td>
+      <td>2</td>
+      <td>3</td>
+      <td>0.001923</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>148</td>
+      <td>N3|R4|Dependency Ridge</td>
+      <td>148</td>
+      <td>N3|R4|Dependency Ridge</td>
+      <td>2</td>
+      <td>2</td>
+      <td>4</td>
+      <td>0.000434</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>152</td>
+      <td>N3|R4|Neural network MLP</td>
+      <td>148</td>
+      <td>N3|R4|Dependency Ridge</td>
+      <td>2</td>
+      <td>2</td>
+      <td>4</td>
+      <td>0.000484</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>161</td>
+      <td>N4|R1|Dependency Ridge</td>
+      <td>161</td>
+      <td>N4|R1|Dependency Ridge</td>
+      <td>2</td>
+      <td>3</td>
+      <td>1</td>
+      <td>0.008475</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>165</td>
+      <td>N4|R1|Neural network MLP</td>
+      <td>161</td>
+      <td>N4|R1|Dependency Ridge</td>
+      <td>2</td>
+      <td>3</td>
+      <td>1</td>
+      <td>0.008960</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>174</td>
+      <td>N4|R2|Dependency Ridge</td>
+      <td>174</td>
+      <td>N4|R2|Dependency Ridge</td>
+      <td>2</td>
+      <td>3</td>
+      <td>2</td>
+      <td>0.001028</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>178</td>
+      <td>N4|R2|Neural network MLP</td>
+      <td>174</td>
+      <td>N4|R2|Dependency Ridge</td>
+      <td>2</td>
+      <td>3</td>
+      <td>2</td>
+      <td>0.000957</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>187</td>
+      <td>N4|R3|Dependency Ridge</td>
+      <td>187</td>
+      <td>N4|R3|Dependency Ridge</td>
+      <td>2</td>
+      <td>3</td>
+      <td>3</td>
+      <td>0.000456</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>191</td>
+      <td>N4|R3|Neural network MLP</td>
+      <td>187</td>
+      <td>N4|R3|Dependency Ridge</td>
+      <td>2</td>
+      <td>3</td>
+      <td>3</td>
+      <td>0.000498</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>200</td>
+      <td>N4|R4|Dependency Ridge</td>
+      <td>200</td>
+      <td>N4|R4|Dependency Ridge</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>0.000195</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>204</td>
+      <td>N4|R4|Neural network MLP</td>
+      <td>200</td>
+      <td>N4|R4|Dependency Ridge</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>0.000181</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>N1|R1|Extra Trees</td>
+      <td>6</td>
+      <td>N1|R1|Extra Trees</td>
+      <td>3</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0.006396</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>N1|R2|Extra Trees</td>
+      <td>19</td>
+      <td>N1|R2|Extra Trees</td>
+      <td>3</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0.000715</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>N1|R3|Extra Trees</td>
+      <td>32</td>
+      <td>N1|R3|Extra Trees</td>
+      <td>3</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0.000483</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>N1|R4|Extra Trees</td>
+      <td>45</td>
+      <td>N1|R4|Extra Trees</td>
+      <td>3</td>
+      <td>0</td>
+      <td>4</td>
+      <td>0.000213</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>58</td>
+      <td>N2|R1|Extra Trees</td>
+      <td>58</td>
+      <td>N2|R1|Extra Trees</td>
+      <td>3</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.027856</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>71</td>
+      <td>N2|R2|Extra Trees</td>
+      <td>71</td>
+      <td>N2|R2|Extra Trees</td>
+      <td>3</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0.002411</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>84</td>
+      <td>N2|R3|Extra Trees</td>
+      <td>84</td>
+      <td>N2|R3|Extra Trees</td>
+      <td>3</td>
+      <td>1</td>
+      <td>3</td>
+      <td>0.001615</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>97</td>
+      <td>N2|R4|Extra Trees</td>
+      <td>97</td>
+      <td>N2|R4|Extra Trees</td>
+      <td>3</td>
+      <td>1</td>
+      <td>4</td>
+      <td>0.000407</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>110</td>
+      <td>N3|R1|Extra Trees</td>
+      <td>110</td>
+      <td>N3|R1|Extra Trees</td>
+      <td>3</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0.025477</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>123</td>
+      <td>N3|R2|Extra Trees</td>
+      <td>123</td>
+      <td>N3|R2|Extra Trees</td>
+      <td>3</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0.002503</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>136</td>
+      <td>N3|R3|Extra Trees</td>
+      <td>136</td>
+      <td>N3|R3|Extra Trees</td>
+      <td>3</td>
+      <td>2</td>
+      <td>3</td>
+      <td>0.001476</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>149</td>
+      <td>N3|R4|Extra Trees</td>
+      <td>149</td>
+      <td>N3|R4|Extra Trees</td>
+      <td>3</td>
+      <td>2</td>
+      <td>4</td>
+      <td>0.000429</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>162</td>
+      <td>N4|R1|Extra Trees</td>
+      <td>162</td>
+      <td>N4|R1|Extra Trees</td>
+      <td>3</td>
+      <td>3</td>
+      <td>1</td>
+      <td>0.005852</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>175</td>
+      <td>N4|R2|Extra Trees</td>
+      <td>175</td>
+      <td>N4|R2|Extra Trees</td>
+      <td>3</td>
+      <td>3</td>
+      <td>2</td>
+      <td>0.000674</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>188</td>
+      <td>N4|R3|Extra Trees</td>
+      <td>188</td>
+      <td>N4|R3|Extra Trees</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>0.000319</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>201</td>
+      <td>N4|R4|Extra Trees</td>
+      <td>201</td>
+      <td>N4|R4|Extra Trees</td>
+      <td>3</td>
+      <td>3</td>
+      <td>4</td>
+      <td>0.000097</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>N1|R1|Gradient boosting</td>
+      <td>7</td>
+      <td>N1|R1|Gradient boosting</td>
+      <td>4</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0.007057</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>N1|R2|Gradient boosting</td>
+      <td>20</td>
+      <td>N1|R2|Gradient boosting</td>
+      <td>4</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0.000754</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>N1|R3|Gradient boosting</td>
+      <td>33</td>
+      <td>N1|R3|Gradient boosting</td>
+      <td>4</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0.000452</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>46</td>
+      <td>N1|R4|Gradient boosting</td>
+      <td>46</td>
+      <td>N1|R4|Gradient boosting</td>
+      <td>4</td>
+      <td>0</td>
+      <td>4</td>
+      <td>0.000179</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>59</td>
+      <td>N2|R1|Gradient boosting</td>
+      <td>59</td>
+      <td>N2|R1|Gradient boosting</td>
+      <td>4</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.028248</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>72</td>
+      <td>N2|R2|Gradient boosting</td>
+      <td>72</td>
+      <td>N2|R2|Gradient boosting</td>
+      <td>4</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0.002581</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>85</td>
+      <td>N2|R3|Gradient boosting</td>
+      <td>85</td>
+      <td>N2|R3|Gradient boosting</td>
+      <td>4</td>
+      <td>1</td>
+      <td>3</td>
+      <td>0.001741</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>98</td>
+      <td>N2|R4|Gradient boosting</td>
+      <td>98</td>
+      <td>N2|R4|Gradient boosting</td>
+      <td>4</td>
+      <td>1</td>
+      <td>4</td>
+      <td>0.000412</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>111</td>
+      <td>N3|R1|Gradient boosting</td>
+      <td>111</td>
+      <td>N3|R1|Gradient boosting</td>
+      <td>4</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0.024568</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>124</td>
+      <td>N3|R2|Gradient boosting</td>
+      <td>124</td>
+      <td>N3|R2|Gradient boosting</td>
+      <td>4</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0.002332</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>137</td>
+      <td>N3|R3|Gradient boosting</td>
+      <td>137</td>
+      <td>N3|R3|Gradient boosting</td>
+      <td>4</td>
+      <td>2</td>
+      <td>3</td>
+      <td>0.001346</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>150</td>
+      <td>N3|R4|Gradient boosting</td>
+      <td>150</td>
+      <td>N3|R4|Gradient boosting</td>
+      <td>4</td>
+      <td>2</td>
+      <td>4</td>
+      <td>0.000369</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>163</td>
+      <td>N4|R1|Gradient boosting</td>
+      <td>163</td>
+      <td>N4|R1|Gradient boosting</td>
+      <td>4</td>
+      <td>3</td>
+      <td>1</td>
+      <td>0.005750</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>176</td>
+      <td>N4|R2|Gradient boosting</td>
+      <td>176</td>
+      <td>N4|R2|Gradient boosting</td>
+      <td>4</td>
+      <td>3</td>
+      <td>2</td>
+      <td>0.000619</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>189</td>
+      <td>N4|R3|Gradient boosting</td>
+      <td>189</td>
+      <td>N4|R3|Gradient boosting</td>
+      <td>4</td>
+      <td>3</td>
+      <td>3</td>
+      <td>0.000394</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>202</td>
+      <td>N4|R4|Gradient boosting</td>
+      <td>202</td>
+      <td>N4|R4|Gradient boosting</td>
+      <td>4</td>
+      <td>3</td>
+      <td>4</td>
+      <td>0.000121</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>N1|R1|AR(1)-GARCH-t</td>
+      <td>10</td>
+      <td>N1|R1|No change</td>
+      <td>5</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0.008911</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>N1|R1|Historical drift</td>
+      <td>10</td>
+      <td>N1|R1|No change</td>
+      <td>5</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0.005697</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>N1|R1|No change</td>
+      <td>10</td>
+      <td>N1|R1|No change</td>
+      <td>5</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0.008157</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>N1|R1|Ridge regression</td>
+      <td>10</td>
+      <td>N1|R1|No change</td>
+      <td>5</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0.003163</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>N1|R2|AR(1)-GARCH-t</td>
+      <td>23</td>
+      <td>N1|R2|No change</td>
+      <td>5</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0.000828</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>N1|R2|Historical drift</td>
+      <td>23</td>
+      <td>N1|R2|No change</td>
+      <td>5</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0.000495</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>N1|R2|No change</td>
+      <td>23</td>
+      <td>N1|R2|No change</td>
+      <td>5</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0.000845</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>N1|R2|Ridge regression</td>
+      <td>23</td>
+      <td>N1|R2|No change</td>
+      <td>5</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0.000361</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>N1|R3|AR(1)-GARCH-t</td>
+      <td>36</td>
+      <td>N1|R3|No change</td>
+      <td>5</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0.000622</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>N1|R3|Historical drift</td>
+      <td>36</td>
+      <td>N1|R3|No change</td>
+      <td>5</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0.000333</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>N1|R3|No change</td>
+      <td>36</td>
+      <td>N1|R3|No change</td>
+      <td>5</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0.000595</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>N1|R3|Ridge regression</td>
+      <td>36</td>
+      <td>N1|R3|No change</td>
+      <td>5</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0.000258</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>N1|R4|AR(1)-GARCH-t</td>
+      <td>49</td>
+      <td>N1|R4|No change</td>
+      <td>5</td>
+      <td>0</td>
+      <td>4</td>
+      <td>0.000178</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>47</td>
+      <td>N1|R4|Historical drift</td>
+      <td>49</td>
+      <td>N1|R4|No change</td>
+      <td>5</td>
+      <td>0</td>
+      <td>4</td>
+      <td>0.000130</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>49</td>
+      <td>N1|R4|No change</td>
+      <td>49</td>
+      <td>N1|R4|No change</td>
+      <td>5</td>
+      <td>0</td>
+      <td>4</td>
+      <td>0.000192</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td>N1|R4|Ridge regression</td>
+      <td>49</td>
+      <td>N1|R4|No change</td>
+      <td>5</td>
+      <td>0</td>
+      <td>4</td>
+      <td>0.000103</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>52</td>
+      <td>N2|R1|AR(1)-GARCH-t</td>
+      <td>62</td>
+      <td>N2|R1|No change</td>
+      <td>5</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.030067</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>60</td>
+      <td>N2|R1|Historical drift</td>
+      <td>62</td>
+      <td>N2|R1|No change</td>
+      <td>5</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.025014</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>62</td>
+      <td>N2|R1|No change</td>
+      <td>62</td>
+      <td>N2|R1|No change</td>
+      <td>5</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.030725</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>63</td>
+      <td>N2|R1|Ridge regression</td>
+      <td>62</td>
+      <td>N2|R1|No change</td>
+      <td>5</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.017518</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>65</td>
+      <td>N2|R2|AR(1)-GARCH-t</td>
+      <td>75</td>
+      <td>N2|R2|No change</td>
+      <td>5</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0.002522</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>73</td>
+      <td>N2|R2|Historical drift</td>
+      <td>75</td>
+      <td>N2|R2|No change</td>
+      <td>5</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0.002173</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>75</td>
+      <td>N2|R2|No change</td>
+      <td>75</td>
+      <td>N2|R2|No change</td>
+      <td>5</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0.002457</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>76</td>
+      <td>N2|R2|Ridge regression</td>
+      <td>75</td>
+      <td>N2|R2|No change</td>
+      <td>5</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0.001545</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>78</td>
+      <td>N2|R3|AR(1)-GARCH-t</td>
+      <td>88</td>
+      <td>N2|R3|No change</td>
+      <td>5</td>
+      <td>1</td>
+      <td>3</td>
+      <td>0.001816</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>86</td>
+      <td>N2|R3|Historical drift</td>
+      <td>88</td>
+      <td>N2|R3|No change</td>
+      <td>5</td>
+      <td>1</td>
+      <td>3</td>
+      <td>0.001492</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>88</td>
+      <td>N2|R3|No change</td>
+      <td>88</td>
+      <td>N2|R3|No change</td>
+      <td>5</td>
+      <td>1</td>
+      <td>3</td>
+      <td>0.001825</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>89</td>
+      <td>N2|R3|Ridge regression</td>
+      <td>88</td>
+      <td>N2|R3|No change</td>
+      <td>5</td>
+      <td>1</td>
+      <td>3</td>
+      <td>0.000998</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>91</td>
+      <td>N2|R4|AR(1)-GARCH-t</td>
+      <td>101</td>
+      <td>N2|R4|No change</td>
+      <td>5</td>
+      <td>1</td>
+      <td>4</td>
+      <td>0.000441</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>99</td>
+      <td>N2|R4|Historical drift</td>
+      <td>101</td>
+      <td>N2|R4|No change</td>
+      <td>5</td>
+      <td>1</td>
+      <td>4</td>
+      <td>0.000379</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>101</td>
+      <td>N2|R4|No change</td>
+      <td>101</td>
+      <td>N2|R4|No change</td>
+      <td>5</td>
+      <td>1</td>
+      <td>4</td>
+      <td>0.000493</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>102</td>
+      <td>N2|R4|Ridge regression</td>
+      <td>101</td>
+      <td>N2|R4|No change</td>
+      <td>5</td>
+      <td>1</td>
+      <td>4</td>
+      <td>0.000363</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>104</td>
+      <td>N3|R1|AR(1)-GARCH-t</td>
+      <td>114</td>
+      <td>N3|R1|No change</td>
+      <td>5</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0.021798</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>112</td>
+      <td>N3|R1|Historical drift</td>
+      <td>114</td>
+      <td>N3|R1|No change</td>
+      <td>5</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0.027833</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>114</td>
+      <td>N3|R1|No change</td>
+      <td>114</td>
+      <td>N3|R1|No change</td>
+      <td>5</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0.021670</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>115</td>
+      <td>N3|R1|Ridge regression</td>
+      <td>114</td>
+      <td>N3|R1|No change</td>
+      <td>5</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0.035194</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>117</td>
+      <td>N3|R2|AR(1)-GARCH-t</td>
+      <td>127</td>
+      <td>N3|R2|No change</td>
+      <td>5</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0.002137</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>125</td>
+      <td>N3|R2|Historical drift</td>
+      <td>127</td>
+      <td>N3|R2|No change</td>
+      <td>5</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0.002599</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>127</td>
+      <td>N3|R2|No change</td>
+      <td>127</td>
+      <td>N3|R2|No change</td>
+      <td>5</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0.002176</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>128</td>
+      <td>N3|R2|Ridge regression</td>
+      <td>127</td>
+      <td>N3|R2|No change</td>
+      <td>5</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0.003117</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>130</td>
+      <td>N3|R3|AR(1)-GARCH-t</td>
+      <td>140</td>
+      <td>N3|R3|No change</td>
+      <td>5</td>
+      <td>2</td>
+      <td>3</td>
+      <td>0.001241</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>138</td>
+      <td>N3|R3|Historical drift</td>
+      <td>140</td>
+      <td>N3|R3|No change</td>
+      <td>5</td>
+      <td>2</td>
+      <td>3</td>
+      <td>0.001567</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>140</td>
+      <td>N3|R3|No change</td>
+      <td>140</td>
+      <td>N3|R3|No change</td>
+      <td>5</td>
+      <td>2</td>
+      <td>3</td>
+      <td>0.001257</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>141</td>
+      <td>N3|R3|Ridge regression</td>
+      <td>140</td>
+      <td>N3|R3|No change</td>
+      <td>5</td>
+      <td>2</td>
+      <td>3</td>
+      <td>0.002060</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>143</td>
+      <td>N3|R4|AR(1)-GARCH-t</td>
+      <td>153</td>
+      <td>N3|R4|No change</td>
+      <td>5</td>
+      <td>2</td>
+      <td>4</td>
+      <td>0.000361</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>151</td>
+      <td>N3|R4|Historical drift</td>
+      <td>153</td>
+      <td>N3|R4|No change</td>
+      <td>5</td>
+      <td>2</td>
+      <td>4</td>
+      <td>0.000443</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>153</td>
+      <td>N3|R4|No change</td>
+      <td>153</td>
+      <td>N3|R4|No change</td>
+      <td>5</td>
+      <td>2</td>
+      <td>4</td>
+      <td>0.000339</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>154</td>
+      <td>N3|R4|Ridge regression</td>
+      <td>153</td>
+      <td>N3|R4|No change</td>
+      <td>5</td>
+      <td>2</td>
+      <td>4</td>
+      <td>0.000552</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>156</td>
+      <td>N4|R1|AR(1)-GARCH-t</td>
+      <td>166</td>
+      <td>N4|R1|No change</td>
+      <td>5</td>
+      <td>3</td>
+      <td>1</td>
+      <td>0.005033</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>164</td>
+      <td>N4|R1|Historical drift</td>
+      <td>166</td>
+      <td>N4|R1|No change</td>
+      <td>5</td>
+      <td>3</td>
+      <td>1</td>
+      <td>0.007400</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>166</td>
+      <td>N4|R1|No change</td>
+      <td>166</td>
+      <td>N4|R1|No change</td>
+      <td>5</td>
+      <td>3</td>
+      <td>1</td>
+      <td>0.005169</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>167</td>
+      <td>N4|R1|Ridge regression</td>
+      <td>166</td>
+      <td>N4|R1|No change</td>
+      <td>5</td>
+      <td>3</td>
+      <td>1</td>
+      <td>0.009769</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>169</td>
+      <td>N4|R2|AR(1)-GARCH-t</td>
+      <td>179</td>
+      <td>N4|R2|No change</td>
+      <td>5</td>
+      <td>3</td>
+      <td>2</td>
+      <td>0.000575</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>177</td>
+      <td>N4|R2|Historical drift</td>
+      <td>179</td>
+      <td>N4|R2|No change</td>
+      <td>5</td>
+      <td>3</td>
+      <td>2</td>
+      <td>0.000832</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>179</td>
+      <td>N4|R2|No change</td>
+      <td>179</td>
+      <td>N4|R2|No change</td>
+      <td>5</td>
+      <td>3</td>
+      <td>2</td>
+      <td>0.000667</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>180</td>
+      <td>N4|R2|Ridge regression</td>
+      <td>179</td>
+      <td>N4|R2|No change</td>
+      <td>5</td>
+      <td>3</td>
+      <td>2</td>
+      <td>0.001167</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>182</td>
+      <td>N4|R3|AR(1)-GARCH-t</td>
+      <td>192</td>
+      <td>N4|R3|No change</td>
+      <td>5</td>
+      <td>3</td>
+      <td>3</td>
+      <td>0.000290</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>190</td>
+      <td>N4|R3|Historical drift</td>
+      <td>192</td>
+      <td>N4|R3|No change</td>
+      <td>5</td>
+      <td>3</td>
+      <td>3</td>
+      <td>0.000417</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>192</td>
+      <td>N4|R3|No change</td>
+      <td>192</td>
+      <td>N4|R3|No change</td>
+      <td>5</td>
+      <td>3</td>
+      <td>3</td>
+      <td>0.000277</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>193</td>
+      <td>N4|R3|Ridge regression</td>
+      <td>192</td>
+      <td>N4|R3|No change</td>
+      <td>5</td>
+      <td>3</td>
+      <td>3</td>
+      <td>0.000565</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>195</td>
+      <td>N4|R4|AR(1)-GARCH-t</td>
+      <td>205</td>
+      <td>N4|R4|No change</td>
+      <td>5</td>
+      <td>3</td>
+      <td>4</td>
+      <td>0.000103</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>203</td>
+      <td>N4|R4|Historical drift</td>
+      <td>205</td>
+      <td>N4|R4|No change</td>
+      <td>5</td>
+      <td>3</td>
+      <td>4</td>
+      <td>0.000120</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>205</td>
+      <td>N4|R4|No change</td>
+      <td>205</td>
+      <td>N4|R4|No change</td>
+      <td>5</td>
+      <td>3</td>
+      <td>4</td>
+      <td>0.000078</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>206</td>
+      <td>N4|R4|Ridge regression</td>
+      <td>205</td>
+      <td>N4|R4|No change</td>
+      <td>5</td>
+      <td>3</td>
+      <td>4</td>
+      <td>0.000191</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+  </tbody>
+</table><table class="dataframe research-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Iteration</th>
+      <th>Objective</th>
+      <th>Improvement</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>0.878754</td>
+      <td>0.000071</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>0.878754</td>
+      <td>0.000000</td>
+    </tr>
+  </tbody>
+</table></details><p><strong>Scope:</strong> same frozen origin 2026-10-30 and original 272-return common history. The separately downloaded longer histories are not mixed into this comparison. No new market out-of-sample test, certified WS bound, VSS or EVPI is claimed.</p></details>
