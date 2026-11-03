@@ -171,7 +171,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - analysis updated 2026-11-03 19:07 (Europe/Vilnius); return analysis through 2026-10-30; valuation prices through 2026-10-30
+# Baltic investment plan - analysis updated 2026-11-03 19:23 (Europe/Vilnius); return analysis through 2026-10-30; valuation prices through 2026-10-30
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -110204,6 +110204,13 @@ trade_shares is the optimiser's allocation change, not an instruction to trade i
 
 This section compares Current, both original updates and the two direct penalised-netSD portfolios. Training and full-data portfolios remain available for comparison.
 
+<details markdown="1" id="portfolio-pairwise-dominance" class="">
+<summary><strong>Figure 3.m.1. All portfolios versus all portfolios: dominance matrices</strong></summary>
+
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/portfolio-pairwise-dominance.html?v=ba1d59441691" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+
+</details>
+
 <details markdown="1" class="dominance-components portfolio-dominance" open>
 <summary><strong>Figure 3.m. Interactive portfolio FSD, SSD and TSD analysis</strong></summary>
 
@@ -111718,7 +111725,7 @@ document.querySelectorAll('details.portfolio-sensitivity').forEach(function(sens
   });
 });
 
-const reportVersion='06f219d59df3';
+const reportVersion='c5f1390e8202';
 const palette = ['#1b1b1b','#e41a1c','#377eb8','#4daf4a','#984ea3','#ff7f00','#a65628','#f781bf','#008080','#6a3d9a','#b2182b','#2166ac','#1b9e77','#d95f02'];
 const linePatterns = [[],[10,5],[2,4],[10,4,2,4],[14,5],[6,3],[2,3,8,3],[12,3,3,3]];
 function isExplorerVisible(box) {
