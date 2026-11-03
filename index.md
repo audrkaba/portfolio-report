@@ -127,6 +127,10 @@ img { display:block; max-width:100%; height:auto; margin:1rem auto; border:1px s
 .dominance-multiselect option { color:#29485a; font-weight:400; padding:.18rem .35rem; }
 .dominance-compact-select { min-height:125px; height:125px; }
 .dominance-compact-wrap { min-width:0; }
+.dom-matrix-pair { display:flex; flex-wrap:wrap; gap:12px; align-items:end; margin:.6rem 0; }
+.dom-matrix-pair label { flex:1 1 240px; min-width:0; }
+.dom-matrix-pair select { display:block; width:100%; max-width:100%; padding:.4rem; }
+.dom-pair-result { color:#173246; font-weight:600; }
 .dominance-canvas { width:100%; height:735px; border:1px solid var(--line); border-radius:5px; cursor:crosshair; }
 .dominance-status { margin:.45rem 0 0; color:#455f70; font-size:.84rem; font-variant-numeric:tabular-nums; }
 .frontier-explorer { margin:1rem 0; padding:12px; border:1px solid #bfd1d9; border-radius:8px; background:#fff; }
@@ -171,7 +175,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - analysis updated 2026-11-03 19:23 (Europe/Vilnius); return analysis through 2026-10-30; valuation prices through 2026-10-30
+# Baltic investment plan - analysis updated 2026-11-03 19:52 (Europe/Vilnius); return analysis through 2026-10-30; valuation prices through 2026-10-30
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -111725,7 +111729,7 @@ document.querySelectorAll('details.portfolio-sensitivity').forEach(function(sens
   });
 });
 
-const reportVersion='c5f1390e8202';
+const reportVersion='43abadc61e4c';
 const palette = ['#1b1b1b','#e41a1c','#377eb8','#4daf4a','#984ea3','#ff7f00','#a65628','#f781bf','#008080','#6a3d9a','#b2182b','#2166ac','#1b9e77','#d95f02'];
 const linePatterns = [[],[10,5],[2,4],[10,4,2,4],[14,5],[6,3],[2,3,8,3],[12,3,3,3]];
 function isExplorerVisible(box) {
@@ -111745,10 +111749,13 @@ function initialiseDominanceExplorer(box) {
     // the one shared universe file only when a stock profile is opened.
     if(universe){
       data.series_types=universe.series_types||{};
+      data.portfolio_codes=universe.portfolio_codes||{};
+      data.sorted_returns=universe.sorted_returns;
       const interpolate=(xs,ys,x)=>{if(x<=xs[0])return ys[0];if(x>=xs[xs.length-1])return ys[ys.length-1];let lo=0,hi=xs.length-1;while(hi-lo>1){const mid=(lo+hi)>>1;if(xs[mid]<=x)lo=mid;else hi=mid;}const w=(x-xs[lo])/(xs[hi]-xs[lo]||1);return ys[lo]+w*(ys[hi]-ys[lo]);};
       Object.keys(data.orders).forEach(component=>{const destination=data.orders[component],source=universe.orders[component];Object.entries(source.series).forEach(([name,values])=>{if(!destination.series[name])destination.series[name]=destination.x.map(x=>interpolate(source.x,values,x));});});
     }
-    const displayName=name=>name==='update3_stochastic_recourse_sell'?'Main: gated recourse':name==='update3_stochastic_sell'?'Stochastic: gated sales both stages':name==='update3_stochastic_no_sell'?'Stochastic: no sales':name==='Baltic_NetSD'?'Update: sales allowed':name==='curent_update_baltic'?'Update: no sales':name==='update2_penalty_sell'?'Update2 penalty: sales allowed':name==='update2_penalty_no_sell'?'Update2 penalty: no sales':name;
+    const displayLabel=name=>name==='update3_stochastic_recourse_sell'?'Main: gated recourse':name==='update3_stochastic_sell'?'Stochastic: gated sales both stages':name==='update3_stochastic_no_sell'?'Stochastic: no sales':name==='Baltic_NetSD'?'Update: sales allowed':name==='curent_update_baltic'?'Update: no sales':name==='update2_penalty_sell'?'Update2 penalty: sales allowed':name==='update2_penalty_no_sell'?'Update2 penalty: no sales':name;
+    const displayName=name=>`${(data.portfolio_codes||{})[name]?data.portfolio_codes[name]+' — ':''}${displayLabel(name)}`;
     const first=data.orders.FSD, seriesNames=Object.keys(first.series), preferred=profile==='Portfolio'?['Current','update3_stochastic_recourse_sell','update3_stochastic_no_sell','update3_stochastic_sell','Baltic_NetSD','curent_update_baltic','update2_penalty_sell','update2_penalty_no_sell','SP500']:[ 'Current','update3_stochastic_recourse_sell','update3_stochastic_no_sell','update3_stochastic_sell','SP500','curent_update_baltic','Baltic_NetSD','update2_penalty_sell','update2_penalty_no_sell'];
     const portfolioNames=seriesNames.filter(x=>(data.series_types||{})[x]==='portfolio');
     const shareNames=seriesNames.filter(x=>['share','fund'].includes((data.series_types||{})[x]));
@@ -111758,7 +111765,7 @@ function initialiseDominanceExplorer(box) {
     const otherShares=shareNames.filter(x=>x!==target);
     const defaultSelected=new Set(preferred.filter(x=>seriesNames.includes(x)).slice(0,3));
     const defaultComparators=new Set(['Current','Baltic_NetSD','curent_update_baltic','update2_penalty_sell','update2_penalty_no_sell','update3_funds_sell','update3_funds_no_sell','update3_stochastic_recourse_sell','update3_stochastic_no_sell','update3_stochastic_sell'].filter(x=>benchmarks.includes(x)));
-    box.innerHTML = `<div class="dominance-controls">
+    box.innerHTML = `${profile==='Portfolio'?`<p class="dom-exact-note">Same portfolio codes and ${data.sample?.observations||''} historical observations as Figure 3.m.1. FSD is an exact right-continuous empirical step function. Row A dominates column B when F(A) ≤ F(B) everywhere, with strict inequality somewhere; other selected curves may still cross. In the lower panels, B minus A is then nonnegative.</p><div class="dom-matrix-pair"><label>Matrix row (candidate dominator)<select class="dom-pair-row">${portfolioNames.filter(x=>data.portfolio_codes?.[x]).map(x=>`<option value="${x}"${x==='update3_stochastic_no_sell'?' selected':''}>${displayName(x)}</option>`).join('')}</select></label><label>Matrix column<select class="dom-pair-column">${portfolioNames.filter(x=>data.portfolio_codes?.[x]).map(x=>`<option value="${x}"${x==='Baltic_NetSD'?' selected':''}>${displayName(x)}</option>`).join('')}</select></label><button type="button" class="dom-pair-check">Show this matrix pair only</button></div><p class="dom-pair-result" role="status"></p>`:''}<div class="dominance-controls">
       <label>Component<select class="dom-order"><option>FSD</option><option>SSD</option><option>TSD</option></select></label>
       ${profile==='Portfolio'?`<label>Comparison base<select class="dom-benchmark">${benchmarks.map(x=>`<option value="${x}"${x===target?' selected':''}>${displayName(x)}</option>`).join('')}</select></label>`:
       `<label class="dominance-compact-wrap">Comparison portfolios
@@ -111779,20 +111786,27 @@ function initialiseDominanceExplorer(box) {
     </div><canvas class="dominance-canvas"></canvas><p class="dominance-status">Move the x-position slider, click a left-hand graph, or use the mouse wheel over it. The right-hand panels magnify the selected interval.</p>`;
     const canvas=box.querySelector('canvas'), order=box.querySelector('.dom-order'), benchmark=box.querySelector('.dom-benchmark'), comparators=box.querySelector('.dom-comparators'), shareComparators=box.querySelector('.dom-share-comparators'), multi=profile==='Portfolio'?box.querySelector('.dominance-multiselect'):null, xpos=box.querySelector('.dom-xpos'), hz=box.querySelector('.dom-hzoom'), status=box.querySelector('.dominance-status');
     let centre=.5, hit=[];
+    const upperBound=(a,x)=>{let l=0,r=a.length;while(l<r){const m=(l+r)>>1;if(a[m]<=x)l=m+1;else r=m;}return l;};
     function render() {
-      const d=data.orders[order.value], x=d.x, allNames=Object.keys(d.series), selected=multi?[...multi.selectedOptions].map(o=>o.value):[];
+      let d=data.orders[order.value]; const selected=multi?[...multi.selectedOptions].map(o=>o.value):[];
       const selectedComparators=[...(comparators?[...comparators.selectedOptions].map(o=>o.value):[]),...(shareComparators?[...shareComparators.selectedOptions].map(o=>o.value):[])];
       const bench=profile==='Portfolio'?benchmark.value:(selectedComparators[0]||'');
       // A share profile always compares that concrete share with the selected
       // portfolio.  The portfolio explorer instead uses the selected benchmark
       // as its base and may compare it with several selected entities.
       const baseName=profile==='Portfolio'?bench:target;
-      const names=(profile==='Portfolio'?[baseName,...selected]:[target,...selectedComparators]).filter((k,i,a)=>d.series[k]&&a.indexOf(k)===i), n=x.length;
+      const names=(profile==='Portfolio'?[baseName,...selected]:[target,...selectedComparators]).filter((k,i,a)=>d.series[k]&&a.indexOf(k)===i);
+      if(order.value==='FSD'&&data.sorted_returns&&names.every(k=>data.sorted_returns[k])){
+        const support=[...new Set(names.flatMap(k=>data.sorted_returns[k]))].sort((a,b)=>a-b),padding=Math.max((support.at(-1)-support[0])*.01,1e-8);
+        const exactX=[support[0]-padding,...support,support.at(-1)+padding];
+        d={x:exactX,series:Object.fromEntries(names.map(k=>{const a=data.sorted_returns[k];return[k,exactX.map(v=>upperBound(a,v)/a.length)];}))};
+      }
+      const x=d.x,n=x.length;
       const rect=canvas.getBoundingClientRect(), ratio=Math.min(Math.max(window.devicePixelRatio||1,2),3);
       canvas.width=Math.max(900,Math.round(rect.width*ratio)); canvas.height=Math.round(rect.height*ratio);
       const ctx=canvas.getContext('2d'); ctx.setTransform(ratio,0,0,ratio,0,0); const W=canvas.width/ratio,H=canvas.height/ratio;
       ctx.clearRect(0,0,W,H); ctx.font='12px system-ui';
-      const L=67,R=18,T=128,rowGap=64,colGap=48,leftW=(W-L-R-colGap)*.64,rightW=(W-L-R-colGap)*.36,panelH=(H-T-rowGap-48)/2;
+      const L=67,R=18,T=Math.max(128,48+Math.ceil(names.length/3)*23),rowGap=64,colGap=48,leftW=(W-L-R-colGap)*.64,rightW=(W-L-R-colGap)*.36,panelH=(H-T-rowGap-48)/2;
       const main={l:L,r:L+leftW,t:T,b:T+panelH}, zoom={l:L+leftW+colGap,r:W-R,t:T,b:T+panelH};
       const diff={l:L,r:L+leftW,t:T+panelH+rowGap,b:T+2*panelH+rowGap}, diffZoom={l:L+leftW+colGap,r:W-R,t:T+panelH+rowGap,b:T+2*panelH+rowGap}; hit=[main,diff];
       const mid=Math.round(centre*(n-1)), count=Math.max(8,Math.round(n/Number(hz.value))), lo=Math.max(0,Math.min(n-count,mid-Math.floor(count/2))), hi=Math.min(n-1,lo+count-1);
@@ -111812,8 +111826,8 @@ function initialiseDominanceExplorer(box) {
         if(k===bench)return{colour:'#6a3d9a',dash:[14,5],width:3.0,alpha:1};
         return{colour:palette[ki%palette.length],dash:linePatterns[ki%linePatterns.length],width:1.6,alpha:.62};
       }
-      function plot(p,i0,i1,y0,y1) { names.forEach((k,ki)=>{const style=seriesStyle(k,ki);ctx.strokeStyle=style.colour;ctx.setLineDash(style.dash);ctx.globalAlpha=style.alpha;ctx.lineWidth=style.width;ctx.beginPath();for(let i=i0;i<=i1;i++){const px=p.l+(x[i]-x[i0])/(x[i1]-x[i0]||1)*(p.r-p.l),py=p.b-(d.series[k][i]-y0)/(y1-y0||1)*(p.b-p.t);if(i===i0)ctx.moveTo(px,py);else ctx.lineTo(px,py);}ctx.stroke();});ctx.globalAlpha=1;ctx.setLineDash([]); }
-      function plotDifference(p,i0,i1,y0,y1){comparisonNames.forEach(k=>{const a=differences[k],style=seriesStyle(k,names.indexOf(k));ctx.strokeStyle=style.colour;ctx.setLineDash(style.dash);ctx.lineWidth=k===bench?3.4:(profile==='Portfolio'?1.7:2.8);ctx.globalAlpha=k===bench?1:(profile==='Portfolio'?.68:1);ctx.beginPath();for(let i=i0;i<=i1;i++){const px=p.l+(x[i]-x[i0])/(x[i1]-x[i0]||1)*(p.r-p.l),py=p.b-(a[i]-y0)/(y1-y0||1)*(p.b-p.t);if(i===i0)ctx.moveTo(px,py);else ctx.lineTo(px,py);}ctx.stroke();});ctx.globalAlpha=1;ctx.setLineDash([]);}
+      function plot(p,i0,i1,y0,y1) { names.forEach((k,ki)=>{const style=seriesStyle(k,ki);ctx.strokeStyle=style.colour;ctx.setLineDash(style.dash);ctx.globalAlpha=style.alpha;ctx.lineWidth=style.width;ctx.beginPath();for(let i=i0;i<=i1;i++){const px=p.l+(x[i]-x[i0])/(x[i1]-x[i0]||1)*(p.r-p.l),py=p.b-(d.series[k][i]-y0)/(y1-y0||1)*(p.b-p.t);if(i===i0)ctx.moveTo(px,py);else {if(order.value==='FSD')ctx.lineTo(px,p.b-(d.series[k][i-1]-y0)/(y1-y0||1)*(p.b-p.t));ctx.lineTo(px,py);}}ctx.stroke();});ctx.globalAlpha=1;ctx.setLineDash([]); }
+      function plotDifference(p,i0,i1,y0,y1){comparisonNames.forEach(k=>{const a=differences[k],style=seriesStyle(k,names.indexOf(k));ctx.strokeStyle=style.colour;ctx.setLineDash(style.dash);ctx.lineWidth=k===bench?3.4:(profile==='Portfolio'?1.7:2.8);ctx.globalAlpha=k===bench?1:(profile==='Portfolio'?.68:1);ctx.beginPath();for(let i=i0;i<=i1;i++){const px=p.l+(x[i]-x[i0])/(x[i1]-x[i0]||1)*(p.r-p.l),py=p.b-(a[i]-y0)/(y1-y0||1)*(p.b-p.t);if(i===i0)ctx.moveTo(px,py);else {if(order.value==='FSD')ctx.lineTo(px,p.b-(a[i-1]-y0)/(y1-y0||1)*(p.b-p.t));ctx.lineTo(px,py);}}ctx.stroke();});ctx.globalAlpha=1;ctx.setLineDash([]);}
       const ym=yrange(0,n-1); axes(main,x[0],x[n-1],ym[0],ym[1],`${displayName(baseName)}: ${order.value} components - scroll or click to move`); plot(main,0,n-1,ym[0],ym[1]);
       const sx0=main.l+(x[lo]-x[0])/(x[n-1]-x[0])*(main.r-main.l), sx1=main.l+(x[hi]-x[0])/(x[n-1]-x[0])*(main.r-main.l);ctx.strokeStyle='#d7191c';ctx.lineWidth=2;ctx.strokeRect(sx0,main.t,Math.max(2,sx1-sx0),main.b-main.t);
       let yz=yrange(lo,hi); axes(zoom,x[lo],x[hi],yz[0],yz[1],`Selected component interval (${hz.value}x horizontal)`); plot(zoom,lo,hi,yz[0],yz[1]);
@@ -111824,6 +111838,12 @@ function initialiseDominanceExplorer(box) {
       xpos.value=Math.round(centre*1000);box.querySelector('.dom-xout').value=`${(100*centre).toFixed(1)}%`;box.querySelector('.dom-hout').value=`${hz.value}x`;
     }
     [order,benchmark,comparators,shareComparators,hz,multi].filter(Boolean).forEach(el=>el.addEventListener('input',render));xpos.addEventListener('input',()=>{centre=Number(xpos.value)/1000;render();});
+    if(profile==='Portfolio')box.querySelector('.dom-pair-check').addEventListener('click',()=>{
+      const row=box.querySelector('.dom-pair-row').value,column=box.querySelector('.dom-pair-column').value;
+      benchmark.value=column;[...multi.options].forEach(o=>o.selected=o.value===row);order.value='FSD';centre=.5;render();
+      const a=(data.fsd_pair_audit||[]).find(a=>a.row===row&&a.column===column);
+      box.querySelector('.dom-pair-result').textContent=a?`${displayName(row)} ${a.dominates?'FSD dominates':'does not FSD dominate'} ${displayName(column)}. Exact F(row) − F(column): minimum ${a.minimum.toFixed(8)}, maximum ${a.maximum.toFixed(8)} over the entire empirical support.`:'Pair audit unavailable.';
+    });
     canvas.addEventListener('click',e=>{const r=canvas.getBoundingClientRect(),px=e.clientX-r.left,py=e.clientY-r.top;const p=hit.find(q=>px>=q.l&&px<=q.r&&py>=q.t&&py<=q.b);if(p){centre=Math.max(0,Math.min(1,(px-p.l)/(p.r-p.l)));render();}});
     canvas.addEventListener('wheel',e=>{const r=canvas.getBoundingClientRect(),px=e.clientX-r.left,py=e.clientY-r.top;if(hit.some(q=>px>=q.l&&px<=q.r&&py>=q.t&&py<=q.b)){e.preventDefault();centre=Math.max(0,Math.min(1,centre+Math.sign(e.deltaY)*.015));render();}},{passive:false});
     box.querySelector('.dom-save').addEventListener('click',()=>{const a=document.createElement('a');a.download=`${profile==='Portfolio'?benchmark.value:target}_${order.value}_interactive.png`;a.href=canvas.toDataURL('image/png');a.click();});
