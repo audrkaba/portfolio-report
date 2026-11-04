@@ -131,6 +131,8 @@ img { display:block; max-width:100%; height:auto; margin:1rem auto; border:1px s
 .dom-matrix-pair label { flex:1 1 240px; min-width:0; }
 .dom-matrix-pair select { display:block; width:100%; max-width:100%; padding:.4rem; }
 .dom-pair-result { color:#173246; font-weight:600; }
+.long-history-table { width:100%; table-layout:fixed; font-size:.78rem; }
+.long-history-table td { overflow-wrap:anywhere; }
 .dominance-canvas { width:100%; height:735px; border:1px solid var(--line); border-radius:5px; cursor:crosshair; }
 .dominance-status { margin:.45rem 0 0; color:#455f70; font-size:.84rem; font-variant-numeric:tabular-nums; }
 .frontier-explorer { margin:1rem 0; padding:12px; border:1px solid #bfd1d9; border-radius:8px; background:#fff; }
@@ -175,7 +177,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - analysis updated 2026-11-03 19:52 (Europe/Vilnius); return analysis through 2026-10-30; valuation prices through 2026-10-30
+# Baltic investment plan - analysis updated 2026-11-04 08:33 (Europe/Vilnius); return analysis through 2026-10-30; valuation prices through 2026-10-30
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -188,7 +190,7 @@ Study period: 2023-01-01 to 2026-10-30 | Portfolio ceiling: EUR 15,000 | Existin
 
 Portfolio comparisons use 272 common observations through 2026-10-29. Individual-asset regime analyses use their longer available histories. Share-only technical charts retain their own latest closing dates. The benchmark has been refreshed; recurring fund expenses are embedded in NAV.
 
-<nav class="report-chapter-nav" aria-label="Report chapters"><a href="#analytics-1">1. Shares and funds</a><a href="#analytics-2">2. Market analysis</a><a href="#analytics-3">3. Portfolio analysis</a></nav><details markdown="1" class="analytics-group" id="analytics-1" open>
+<p class="long-history-banner"><strong>Active model updated:</strong> 1000 training + 126 diagnostic observations; 72 eligible assets. <a href="#stochastic-update3">Current orders</a> · <a href="#long-history-portfolios">Updated portfolio analysis</a>. Previous short-history results are archived.</p><nav class="report-chapter-nav" aria-label="Report chapters"><a href="#analytics-1">1. Shares and funds</a><a href="#analytics-2">2. Market analysis</a><a href="#analytics-3">3. Portfolio analysis</a></nav><details markdown="1" class="analytics-group" id="analytics-1" open>
 <summary><strong>1. Share analytics</strong></summary>
 
 <details markdown="1" class="report-section" id="analytics-1-1">
@@ -207,10 +209,35 @@ Portfolio comparisons use 272 common observations through 2026-10-29. Individual
 
 <div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/fund-history-policy.html?v=7d56b69e5dc2" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
-</details><details markdown="1" class="stock-profile fund-profile" id="fund-SE0013876927" data-signal="WAIT" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" data-portfolio-scopes="ANY STOCHASTIC UPDATE3" data-sale-membership='{"ANY":["NO_SALE","SALE"],"STOCHASTIC":["NO_SALE","SALE"],"UPDATE2":[],"UPDATE3":["NO_SALE"],"ALL":["NO_SALE","SALE"]}'>
-<summary><strong>Access Edge Japan C — SE0013876927</strong> | current action: WAIT | allocation target 20 units | netSD diagnostic rank 23</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://swedbankrobur.fondlista.se/en/details/SE0013876927" target="_blank" rel="noopener noreferrer">Official fund page ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/0P0001JFN6.F/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Fund NAV charts may have no exchange-trading volume. An exact TradingView listing for this share class has not been verified.</p><!-- EXTERNAL_CHART_LINKS_END -->
+</details><details markdown="1" class="stock-profile fund-profile" id="fund-SE0013876927" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'>
+<summary><strong>SE0013876927 — Swedbank Robur Access Edge Japan C | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://swedbankrobur.fondlista.se/en/details/SE0013876927" target="_blank" rel="noopener noreferrer">Official fund page ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/0P0001JFN6.F/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Fund NAV charts may have no exchange-trading volume. An exact TradingView listing for this share class has not been verified.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>20</td><td>+20</td><td>2.08%</td><td>EUR 15.5872</td><td>0.297143</td><td>62 / 10</td><td>49.32</td><td>SELL</td><td>HOLD</td><td>0.269</td><td>—</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>15.587200</td>
+      <td>0.162393</td>
+      <td>33</td>
+      <td>14</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -328,10 +355,10 @@ Portfolio comparisons use 272 common observations through 2026-10-29. Individual
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0013876927-regimes.html?v=ab9374ada8f5" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0013876927-long-history.html?v=f2c6cd043bce" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -539,7 +566,7 @@ Portfolio comparisons use 272 common observations through 2026-10-29. Individual
 <p>This is a mutual fund, so company earnings and exchange-volume tests are not applicable. Review its official monthly manager commentary, regional allocation and holdings before execution. Latest NAV date: 2026-10-29. Costs of 0.25% are embedded in NAV and are not deducted twice.</p><a href="https://swedbankrobur.fondlista.se/en/details/SE0013876927" target="_blank" rel="noopener">Official fund commentary, holdings and documents ↗</a>
 </details>
 
-<details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+<details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -630,17 +657,42 @@ Portfolio comparisons use 272 common observations through 2026-10-29. Individual
 </table>
 
 <p>Addition uses 20 extra units at EUR 15.5872, on top of 0 existing units. Removal excludes all 20 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="Access Edge Japan C"></div>
+<div class="dominance-explorer" data-asset="SE0013876927" data-target="SE0013876927" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details>
 <details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this fund highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="Access Edge Japan C"></div><details markdown="1" class=""><summary><strong>Static five-model comparison</strong></summary>
+<div class="frontier-explorer" data-highlight="SE0013876927" data-source="interactive/dominance/LongFrontiers.json"></div><details markdown="1" class=""><summary><strong>Static five-model comparison</strong></summary>
 <img loading="lazy" src="figures/stock_profiles/SE0013876927_all_frontiers.png?v=c642a85df88d" alt="Access Edge Japan C: five models">
 </details>
 </details>
-</details><details markdown="1" class="stock-profile" id="share-dgr1r" data-signal="WAIT" data-netsd-effect="INCREASE" data-dividend-status="PAID" data-portfolio-scopes="ANY STOCHASTIC UPDATE2 UPDATE3" data-sale-membership='{"ANY":["NO_SALE","SALE"],"STOCHASTIC":["NO_SALE","SALE"],"UPDATE2":["NO_SALE","SALE"],"UPDATE3":["NO_SALE","SALE"],"ALL":["NO_SALE","SALE"]}'>
-<summary><strong>DGR1R — DelfinGroup</strong> | current action: WAIT | allocation target 175 shares | netSD diagnostic rank 2</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LV0000101806/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXRSE%3ADGR1R" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/DGR1R.RG/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
+</details><details markdown="1" class="stock-profile" id="share-dgr1r" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'>
+<summary><strong>DGR1R — DelfinGroup | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LV0000101806/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXRSE%3ADGR1R" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/DGR1R.RG/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>175</td><td>+175</td><td>2.00%</td><td>EUR 1.7150</td><td>0.651429</td><td>114 / 0</td><td>60.96</td><td>SELL</td><td>HOLD</td><td>0.135</td><td>EUR 0.0654</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>1.715000</td>
+      <td>0.119658</td>
+      <td>28</td>
+      <td>14</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -768,10 +820,10 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/DGR1R-regimes.html?v=8b49aaff7cf4" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/DGR1R-long-history.html?v=4d494ce5733c" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -950,7 +1002,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1" class="frontier-components">
 <summary>All five model frontiers with this share highlighted</summary>
 
-<div class="frontier-explorer" data-highlight="DGR1R"></div>
+<div class="frontier-explorer" data-highlight="DGR1R" data-source="interactive/dominance/LongFrontiers.json"></div>
 
 The common explorer includes every eligible share, all funds and every portfolio. The selected share is highlighted automatically. NetSD is discrete; candidate comparisons are not a certificate of a global continuous optimum.
 
@@ -1010,7 +1062,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 | <button type="button" class="metric-help-button" data-metric="MSquaredExcess" data-meaning="M² return advantage over the benchmark." data-calculation="Modigliani measure − benchmark return." data-interpretation="Higher is better.">MSquaredExcess</button> | -0.119360 | 0.189822 | <button type="button" class="metric-help-button" data-metric="ZeroVolumeFraction" data-meaning="Share of observations with no recorded trading volume." data-calculation="Count(volume=0)/n." data-interpretation="Lower is better.">ZeroVolumeFraction</button> | 0.000000 | 0.000000 |
 </details>
 
-<details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+<details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -1101,7 +1153,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 175 extra units at EUR 1.7150, on top of 0 existing units. Removal excludes all 175 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="DGR1R"></div>
+<div class="dominance-explorer" data-asset="DGR1R" data-target="DGR1R" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details>
 
 
@@ -1137,10 +1189,35 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 
 
-</details><details markdown="1" class="stock-profile" id="share-saf1r" data-signal="WAIT" data-netsd-effect="INCREASE" data-dividend-status="PAID" data-portfolio-scopes="ANY STOCHASTIC UPDATE2 UPDATE3" data-sale-membership='{"ANY":["NO_SALE","SALE"],"STOCHASTIC":["NO_SALE","SALE"],"UPDATE2":["NO_SALE"],"UPDATE3":["NO_SALE"],"ALL":["NO_SALE","SALE"]}'>
-<summary><strong>SAF1R — SAF Tehnika</strong> | current action: WAIT | allocation target 148 shares | netSD diagnostic rank 22</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LV0000101129/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXRSE%3ASAF1R" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/SAF1R.RG/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
+</details><details markdown="1" class="stock-profile" id="share-saf1r" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" data-portfolio-scopes="ALL ANY STOCHASTIC UPDATE3" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":["NO_SALE","SALE"],"STOCHASTIC":["NO_SALE","SALE"],"UPDATE3":["NO_SALE","SALE"],"UPDATE2":[]}'>
+<summary><strong>SAF1R — SAF Tehnika | current action: HOLD | allocation target 100 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LV0000101129/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXRSE%3ASAF1R" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/SAF1R.RG/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>100</td><td>148</td><td>+48</td><td>16.28%</td><td>EUR 16.5000</td><td>0.314286</td><td>55 / 0</td><td>51.35</td><td>SELL</td><td>HOLD</td><td>1.000</td><td>EUR 0.0000</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>100</td>
+      <td>100</td>
+      <td>0</td>
+      <td>0.110000</td>
+      <td>16.500000</td>
+      <td>-0.675214</td>
+      <td>9</td>
+      <td>88</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -1268,10 +1345,10 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SAF1R-regimes.html?v=66f8c3ff0b47" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SAF1R-long-history.html?v=d98cdc7123ca" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -1407,7 +1484,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1" class="frontier-components">
 <summary>All five model frontiers with this share highlighted</summary>
 
-<div class="frontier-explorer" data-highlight="SAF1R"></div>
+<div class="frontier-explorer" data-highlight="SAF1R" data-source="interactive/dominance/LongFrontiers.json"></div>
 
 The common explorer includes every eligible share, all funds and every portfolio. The selected share is highlighted automatically. NetSD is discrete; candidate comparisons are not a certificate of a global continuous optimum.
 
@@ -1467,7 +1544,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 | <button type="button" class="metric-help-button" data-metric="MSquaredExcess" data-meaning="M² return advantage over the benchmark." data-calculation="Modigliani measure − benchmark return." data-interpretation="Higher is better.">MSquaredExcess</button> | -0.121754 | 0.496295 | <button type="button" class="metric-help-button" data-metric="ZeroVolumeFraction" data-meaning="Share of observations with no recorded trading volume." data-calculation="Count(volume=0)/n." data-interpretation="Lower is better.">ZeroVolumeFraction</button> | 0.001326 | 0.000000 |
 </details>
 
-<details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+<details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -1558,7 +1635,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 48 extra units at EUR 16.5000, on top of 100 existing units. Removal excludes all 148 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="SAF1R"></div>
+<div class="dominance-explorer" data-asset="SAF1R" data-target="SAF1R" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details>
 
 
@@ -1594,10 +1671,35 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 
 
-</details><details markdown="1" class="stock-profile" id="share-tel1l" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" data-portfolio-scopes="ANY STOCHASTIC UPDATE2 UPDATE3" data-sale-membership='{"ANY":["NO_SALE","SALE"],"STOCHASTIC":["NO_SALE"],"UPDATE2":["NO_SALE","SALE"],"UPDATE3":["NO_SALE","SALE"],"ALL":["NO_SALE","SALE"]}'>
-<summary><strong>TEL1L — Telia Lietuva</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank 19</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LT0000123911/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3ATEL1L" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/TEL1L.VS/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
+</details><details markdown="1" class="stock-profile" id="share-tel1l" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'>
+<summary><strong>TEL1L — Telia Lietuva | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LT0000123911/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3ATEL1L" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/TEL1L.VS/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 2.2500</td><td>0.360000</td><td>64 / 1</td><td>51.23</td><td>SELL</td><td>HOLD</td><td>0.205</td><td>EUR 0.0800</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>2.250000</td>
+      <td>0.367521</td>
+      <td>50</td>
+      <td>7</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -1725,10 +1827,10 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/TEL1L-regimes.html?v=4b19f2f51d34" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/TEL1L-long-history.html?v=13e9828f2867" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -1826,7 +1928,7 @@ A direction reversal requires opposite fitted price slopes during the ten tradin
 <details markdown="1" class="frontier-components">
 <summary>All five model frontiers with this share highlighted</summary>
 
-<div class="frontier-explorer" data-highlight="TEL1L"></div>
+<div class="frontier-explorer" data-highlight="TEL1L" data-source="interactive/dominance/LongFrontiers.json"></div>
 
 The common explorer includes every eligible share, all funds and every portfolio. The selected share is highlighted automatically. NetSD is discrete; candidate comparisons are not a certificate of a global continuous optimum.
 
@@ -1886,7 +1988,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 | <button type="button" class="metric-help-button" data-metric="MSquaredExcess" data-meaning="M² return advantage over the benchmark." data-calculation="Modigliani measure − benchmark return." data-interpretation="Higher is better.">MSquaredExcess</button> | -0.130407 | -0.169309 | <button type="button" class="metric-help-button" data-metric="ZeroVolumeFraction" data-meaning="Share of observations with no recorded trading volume." data-calculation="Count(volume=0)/n." data-interpretation="Lower is better.">ZeroVolumeFraction</button> | 0.000000 | 0.000000 |
 </details>
 
-<details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+<details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -1977,7 +2079,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 2.2500, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="TEL1L"></div>
+<div class="dominance-explorer" data-asset="TEL1L" data-target="TEL1L" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details>
 
 
@@ -2013,319 +2115,35 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 
 
-</details><details markdown="1" class="stock-profile" id="share-egg" data-signal="WAIT" data-netsd-effect="INCREASE" data-dividend-status="PAID" data-portfolio-scopes="ANY STOCHASTIC" data-sale-membership='{"ANY":["NO_SALE","SALE"],"STOCHASTIC":["NO_SALE","SALE"],"UPDATE2":[],"UPDATE3":[],"ALL":["NO_SALE","SALE"]}'><summary><strong>EGG — Agrova Baltics</strong> | current action: WAIT | allocation target 136 shares | netSD diagnostic rank 12</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LV0000101921/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXRSE%3AEGG" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/EGG.RG/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
+</details><details markdown="1" class="stock-profile" id="share-kne1l" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" data-portfolio-scopes="ALL ANY STOCHASTIC UPDATE3" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":["NO_SALE","SALE"],"STOCHASTIC":["NO_SALE","SALE"],"UPDATE3":["NO_SALE","SALE"],"UPDATE2":[]}'>
+<summary><strong>KNE1L — KN Energies | current action: HOLD | allocation target 928 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LT0000111650/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3AKNE1L" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/KNE1L.VS/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>136</td><td>+136</td><td>6.71%</td><td>EUR 7.4000</td><td>0.440000</td><td>79 / 2</td><td>85.98</td><td>BUY</td><td>SELL</td><td>1.000</td><td>EUR 0.0698</td></tr></tbody></table>
-
-<details markdown="1" open><summary>Bollinger bands, MACD, RSI and Stochastic RSI — last 126 observations</summary><img loading="lazy" src="figures/stock_profiles/EGG_technicals_6m.png?v=4b3a18de61d7">
-
-<table markdown="0" class="dataframe research-table">
+<table markdown="0" class="dataframe research-table long-history-table">
   <thead>
     <tr style="text-align: right;">
-      <th>Indicator</th>
-      <th>Current value</th>
-      <th>BUY price</th>
-      <th>SELL price</th>
-      <th>Current signal</th>
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Bollinger price</td>
-      <td>EUR 7.4000</td>
-      <td>≤ EUR 6.4006 (-13.51%)</td>
-      <td>≥ EUR 7.3544 (-0.62%)</td>
-      <td>SELL</td>
-    </tr>
-    <tr>
-      <td>RSI(14)</td>
-      <td>85.98</td>
-      <td>≤ EUR 5.5708 (-24.72%)</td>
-      <td>≥ EUR 7.1394 (-3.52%)</td>
-      <td>SELL</td>
-    </tr>
-    <tr>
-      <td>Stochastic RSI %K</td>
-      <td>1.000</td>
-      <td>—</td>
-      <td>≥ EUR 7.2230 (-2.39%)</td>
-      <td>SELL</td>
-    </tr>
-    <tr>
-      <td>MACD</td>
-      <td>MACD = 0.3045<br>Signal = 0.2729<br>Gap = +0.0316</td>
-      <td>—</td>
-      <td>—</td>
-      <td>BUY</td>
-    </tr>
-    <tr>
-      <td>Consensus</td>
-      <td>BUY 1/4; SELL 3/4</td>
-      <td>At least 3 BUY votes</td>
-      <td>At least 3 SELL votes</td>
-      <td>SELL</td>
-    </tr>
-  </tbody>
-</table>
-
-</details>
-
-<!-- WEEKLY_FORECAST_EGG_START -->
-<details markdown="0" open class="weekly-forecast" id="forecast-EGG" data-forecast-asset="EGG">
-<summary><strong>One-week price forecast - all methods in one graph</strong></summary>
-<img loading="lazy" src="figures/weekly_forecasts/EGG.png?v=2b09997ae1ad" alt="Agrova Baltics: all forecasting methods on one graph">
-<p>Colours, line patterns and markers distinguish the methods; the selected method has a thicker line. Coincident paths indicate similar forecasts. Prediction ranges are listed below. E-codes mark scheduled events listed under Seven-day performance inputs and upcoming events.</p>
-<p><strong>Central forecast for 2026-11-06: EUR 7.3848 (-0.21%)</strong>; 90% empirical range EUR 6.9111–7.8909. Last observed close / NAV: EUR 7.4000, 2026-10-30. <strong>LOW CONFIDENCE.</strong></p>
-<p><strong>Models with cross-asset dependencies:</strong> Dependency Ridge, Dependency Extra Trees and Dependency Gradient boosting. Held-out MAE before adding these candidates: 3.617 pp; selected forecast now: 3.501 pp; error improvement +3.2% (positive = lower error; negative = worse). Selection uses validation data only; the held-out result does not influence selection.</p><div class="weekly-table-scroll">
-
-<table markdown="0" class="weekly-table "><thead><tr><th>Peer used by dependency models</th><th>Lagged correlation</th><th>Training pairs</th></tr></thead><tbody><tr><td>INF1T</td><td>+0.186</td><td>252</td></tr><tr><td>SE0015948617</td><td>-0.164</td><td>252</td></tr><tr><td>SE0017072416</td><td>-0.162</td><td>252</td></tr><tr><td>IDX1R</td><td>+0.160</td><td>252</td></tr><tr><td>IGN1L</td><td>-0.143</td><td>252</td></tr></tbody></table>
-
-</div>
-<p>Forecast prepared 2026-11-01; window 2026-11-02–2026-11-06. Model: <strong>Dependency Extra Trees</strong>. Horizon from the last observed price: 5 observations. This includes any unpublished days before the displayed week. Fund dates are indicative NAV valuation days; publication and market holidays may delay availability.</p>
-<ul class="forecast-cautions"><li>Held-out forecast did not improve on the unchanged-price benchmark by 2%</li><li>No demonstrated directional advantage in the small held-out sample</li></ul><div class="weekly-table-scroll">
-
-<table markdown="0" class="weekly-table "><thead><tr><th>Valuation / trading date</th><th>Central EUR</th><th>Lower 90% EUR</th><th>Upper 90% EUR</th></tr></thead><tbody><tr><td>2026-11-02</td><td>7.3725</td><td>7.2450</td><td>7.5022</td></tr><tr><td>2026-11-03</td><td>7.3768</td><td>7.0663</td><td>7.7009</td></tr><tr><td>2026-11-04</td><td>7.3632</td><td>6.9171</td><td>7.8381</td></tr><tr><td>2026-11-05</td><td>7.3759</td><td>6.9437</td><td>7.8350</td></tr><tr><td>2026-11-06</td><td>7.3848</td><td>6.9111</td><td>7.8909</td></tr></tbody></table>
-
-</div><p><strong>Held-out evidence:</strong> average absolute return-forecast error 3.501 percentage points; unchanged-price benchmark 3.225 pp; improvement -8.5%. Coverage of the validation-calibrated 90% interval: 83.3% across 12 held-out windows. Unchanged returns in the last 126 observations: 41.3%.</p><p>Direction test: BH-adjusted p=1.0000 across all 67 instruments; 11 nonzero-direction comparisons. A flat central forecast means no detected predictable drift, not zero risk.</p>
-<details markdown="1"><summary>Seven-day performance inputs and upcoming events</summary><div class="weekly-table-scroll">
-
-<table markdown="0" class="weekly-table "><thead><tr><th>7-observation input (ratios not annualised)</th><th>Current value</th></tr></thead><tbody><tr><td>Compounded 7-day return</td><td>8.029%</td></tr><tr><td>Mean daily return</td><td>1.120%</td></tr><tr><td>Daily SD</td><td>1.605%</td></tr><tr><td>Downside deviation</td><td>0.000%</td></tr><tr><td>Sharpe ratio</td><td>0.6980</td></tr><tr><td>Sortino ratio</td><td>Undefined; separate model flag</td></tr><tr><td>Omega ratio</td><td>Undefined; separate model flag</td></tr><tr><td>7-day return / maximum drawdown</td><td>Undefined; separate model flag</td></tr><tr><td>Empirical 95% VaR</td><td>-0.000%</td></tr><tr><td>Empirical 95% CVaR (worst of 7)</td><td>-0.000%</td></tr><tr><td>Maximum drawdown</td><td>0.000%</td></tr><tr><td>Skewness</td><td>1.7020</td></tr><tr><td>Excess kurtosis</td><td>2.6296</td></tr><tr><td>Unchanged-return fraction</td><td>42.857%</td></tr></tbody></table>
-
-</div><p>Return and risk entries are percentages; ratios are not annualised. VaR/CVaR use the loss sign: a negative value corresponds to a gain.</p><div class="weekly-table-scroll">
-
-<table markdown="0" class="weekly-table "><thead><tr><th>Chart code</th><th>Date</th><th>Event</th><th>Model knowledge date</th><th>Official source</th></tr></thead><tbody><tr><td>E1</td><td>2026-11-03</td><td>US Job Openings and Labor Turnover Survey</td><td>2026-10-31</td><td><a href="https://www.bls.gov/schedule/2026/11_sched.htm" target="_blank" rel="noopener">Open</a></td></tr><tr><td>E2</td><td>2026-11-05</td><td>US Productivity and Costs</td><td>2026-10-31</td><td><a href="https://www.bls.gov/schedule/2026/11_sched.htm" target="_blank" rel="noopener">Open</a></td></tr><tr><td>E3</td><td>2026-11-06</td><td>US Employment Situation</td><td>2026-10-31</td><td><a href="https://www.bls.gov/schedule/2026/11_sched.htm" target="_blank" rel="noopener">Open</a></td></tr></tbody></table>
-
-</div><p>Upcoming event categories without historical training examples: macro. Their specific price or volatility effect is not established.</p><p>Neural safeguard: historically constant inputs held at their training value: calendar macro next7. The event calendar remains visible for context.</p><p>Conditional one-week realised-variation proxy: 3.699%. Forecast ranges use rolling residuals normalised by a training-only Ridge volatility proxy; this is not a guarantee of interval coverage.</p></details>
-<details markdown="1"><summary>Compare all forecast methods and backtest errors</summary>
-<div class="weekly-table-scroll">
-
-<table markdown="0" class="weekly-table "><thead><tr><th>Method</th><th>Week-end EUR</th><th>Change</th><th>90% range EUR</th><th>Validation MAE, pp</th><th>Held-out MAE, pp</th><th>Fit</th></tr></thead><tbody><tr><td>Dependency Extra Trees <strong>SELECTED</strong></td><td>7.3848</td><td>-0.21%</td><td>6.9111–7.8909</td><td>1.866</td><td>3.501</td><td>OK</td></tr><tr><td>Extra Trees</td><td>7.3204</td><td>-1.08%</td><td>6.7389–7.9520</td><td>1.911</td><td>3.617</td><td>OK</td></tr><tr><td>Validation ensemble</td><td>7.3739</td><td>-0.35%</td><td>6.7878–8.0106</td><td>1.992</td><td>3.593</td><td>OK</td></tr><tr><td>Dependency Gradient boosting</td><td>7.2983</td><td>-1.37%</td><td>6.8364–7.7913</td><td>2.002</td><td>3.798</td><td>OK</td></tr><tr><td>Ridge regression</td><td>7.4051</td><td>+0.07%</td><td>6.8063–8.0565</td><td>2.024</td><td>4.314</td><td>OK</td></tr><tr><td>Historical drift</td><td>7.4584</td><td>+0.79%</td><td>6.9288–8.0284</td><td>2.043</td><td>3.230</td><td>OK</td></tr><tr><td>No change</td><td>7.4000</td><td>+0.00%</td><td>6.8218–8.0272</td><td>2.045</td><td>3.225</td><td>OK</td></tr><tr><td>ARIMA(1,1,1)</td><td>7.4248</td><td>+0.34%</td><td>6.8797–8.0131</td><td>2.053</td><td>3.299</td><td>OK</td></tr><tr><td>Neural network MLP</td><td>7.4299</td><td>+0.40%</td><td>6.8314–8.0808</td><td>2.112</td><td>4.785</td><td>OK</td></tr><tr><td>Damped ETS</td><td>7.3707</td><td>-0.40%</td><td>6.7831–8.0092</td><td>2.149</td><td>3.361</td><td>OK</td></tr><tr><td>AR(1)-GARCH-t</td><td>7.3920</td><td>-0.11%</td><td>6.8128–8.0203</td><td>2.188</td><td>3.294</td><td>OK</td></tr><tr><td>Gradient boosting</td><td>7.3466</td><td>-0.72%</td><td>6.8209–7.9127</td><td>2.208</td><td>3.688</td><td>OK</td></tr><tr><td>Dependency Ridge</td><td>7.2553</td><td>-1.96%</td><td>6.6823–7.8774</td><td>2.613</td><td>4.076</td><td>OK</td></tr></tbody></table>
-
-</div>
-</details>
-<details markdown="1"><summary>How these forecasts were built and tested</summary>
-<p>24 non-overlapping rolling-origin windows: the first 12 select the model and ensemble weights; the final 12 assess that frozen choice. Every fit uses only prices and matured training targets available at its origin. The unchanged-price forecast is retained unless validation MAE improves by at least 2%. Hyperparameters are fixed before testing. A current fit failure is explicitly labelled and falls back to no change.</p>
-<p>ARIMA and damped exponential smoothing model log prices. AR(1)–GARCH with Student-t errors estimates the conditional return mean and volatility jointly: GARCH alone does not predict price direction. AI methods are Ridge, Extra Trees, gradient boosting and a small neural network; inputs are past returns, momentum and volatility, not an LLM or future news.</p>
-<p>Each fit uses up to 630 past price observations or matured ML training examples. Fixed ML settings: Ridge penalty 50; 60 Extra Trees (depth 5); gradient boosting with 55 iterations; neural network with 24 and 12 hidden units. Feature and target scaling are fitted only on the training set. Unstable model forecasts implying more than a 100-fold weekly price change are rejected with a diagnostic, never clipped.</p>
-<p>The central price is a back-transformed log-price estimate, not a guaranteed arithmetic mean. The displayed 90% range is calibrated from absolute rolling log-forecast errors; its coverage is approximate, not guaranteed. Illiquid unchanged quotes can make measured errors and ranges artificially small. Scheduled event dates are predictors; exact dividend/corporate-action price adjustments are not mechanically imposed. Unannounced earnings/news, spreads and execution prices remain outside these forecasts. NAV expenses are already embedded. Forecasts do not override the existing BUY / WAIT / HOLD / SELL rules.</p><p><strong>Cross-asset models:</strong> the three dependency models add lagged S&amp;P 500 USD returns, leave-one-out Baltic and fund return factors, and five peers selected by absolute correlation inside each trailing 252-observation training window. All external return series are delayed by two business days. Inputs include lagged returns, 5/7/20-observation averages, 7/20-observation volatility, 7-observation beta and trailing 7/60-observation correlations with the target. Correlation is a predictor, not a claim of causation. The same conservative lag is used in validation and live forecasts.</p><p>Dependency Ridge uses penalty 100; the tree models use the fixed settings above. Missing predictors are replaced by zero within the fitted pipeline; scaling and mature-target training use training data only. The current instrument universe is fixed, so survivorship bias remains possible. Historical fund NAV publication timestamps are unavailable; the two-day buffer is an assumption, not proof of historical execution availability. The original independent-model ensemble remains frozen; the added models compete individually using the first 12 windows. The final 12 windows evaluate the frozen choice.</p><p><strong>Seven-observation inputs:</strong> compounded and average return, SD, downside/upside deviation, Sharpe, Sortino, Omega, Calmar-style return/drawdown, empirical VaR/CVaR, drawdown, ulcer index, skewness, kurtosis, positive/unchanged-return fractions and autocorrelation. Ratios use zero risk-free return and zero minimum acceptable return; they are not annualised. With seven observations, empirical 95% CVaR reduces to the worst observation, so it is a noisy short-window feature, not a reliable tail-risk estimate. Undefined performance ratios have an explicit indicator and a neutral model placeholder.</p><p><strong>Calendar inputs:</strong> upcoming 1/7-business-day and recent 7-calendar-day counts by event type, plus weekday/month seasonality. Historical schedule dates are used only when the exact date is verified in a timestamped publication. Unverified schedules and the BLS macro calendar are available only from the current snapshot date; they are never backdated. The schedule is not exhaustive and uses event dates, not intraday release times; after-close announcements may affect the next trading session. An event date does not reveal an earnings surprise or guarantee a price direction. Event categories absent from training have no demonstrated learned effect. Predictors that were constant in every past usable feature row are held at their training value for the live neural forecast, preventing random neural responses to first-ever calendar inputs; this changes no historical validation/test input. The volatility proxy is shrunk halfway toward the training RMS baseline and bounded by the range of its training targets to prevent numerical extrapolation. Models also forecast realised variation using matured targets; conditional-scale-normalised residuals calibrate prediction ranges, with held-out coverage assessed separately.</p><p>Methods: <a href="https://arch.readthedocs.io/en/latest/univariate/forecasting.html" target="_blank" rel="noopener">arch forecasting</a>; <a href="https://scikit-learn.org/stable/auto_examples/applications/plot_time_series_lagged_features.html" target="_blank" rel="noopener">time-series ML validation</a>.</p>
-</details>
-</details>
-<!-- WEEKLY_FORECAST_EGG_END -->
-
-<details markdown="1" class=""><summary><strong>Complete technical history</strong></summary>
-<img loading="lazy" src="figures/stock_profiles/EGG_technicals_full.png?v=8733bc6357c1">
-</details>
-
-<!-- REGIME_ASSET_START -->
-
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
-
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/EGG-regimes.html?v=33e2a0eb98e7" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
-
-</details>
-
-<!-- REGIME_ASSET_END -->
-
-<details markdown="1" class=""><summary><strong>Seasonals, drawdowns and upside periods</strong></summary>
-
-<table markdown="0" class="dataframe research-table">
-  <thead>
-    <tr style="text-align: right;">
-      <th>date</th>
-      <th>count</th>
-      <th>mean</th>
-      <th>std</th>
-      <th>median</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>21</td>
-      <td>0.001296</td>
-      <td>0.010574</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
+      <td>928</td>
+      <td>928</td>
+      <td>0</td>
+      <td>0.029510</td>
+      <td>0.477000</td>
+      <td>0.367521</td>
+      <td>45</td>
       <td>2</td>
-      <td>20</td>
-      <td>-0.000475</td>
-      <td>0.006914</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>22</td>
-      <td>-0.000340</td>
-      <td>0.007250</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>20</td>
-      <td>-0.000377</td>
-      <td>0.007663</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>19</td>
-      <td>-0.001285</td>
-      <td>0.005442</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>21</td>
-      <td>0.002465</td>
-      <td>0.009673</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>23</td>
-      <td>0.004659</td>
-      <td>0.018040</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>21</td>
-      <td>0.000121</td>
-      <td>0.015948</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td>22</td>
-      <td>0.007801</td>
-      <td>0.026041</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td>44</td>
-      <td>0.002512</td>
-      <td>0.011465</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>11</td>
-      <td>20</td>
-      <td>0.000012</td>
-      <td>0.005069</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>12</td>
-      <td>19</td>
-      <td>-0.000410</td>
-      <td>0.005851</td>
-      <td>0.000000</td>
     </tr>
   </tbody>
 </table>
-
-<p>Maximum drawdown -6.78% on 2026-08-19; best daily return 11.30% on 2026-09-29; worst -4.24% on 2026-08-06. These are descriptive, not validated timing rules.</p>
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
-
-<table markdown="0" class="dataframe research-table">
-  <thead>
-    <tr style="text-align: right;">
-      <th>Measure</th>
-      <th>Full baseline</th>
-      <th>After change</th>
-      <th>Change</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>netSD</td>
-      <td>0.702857</td>
-      <td>0.760000</td>
-      <td>0.057143</td>
-    </tr>
-    <tr>
-      <td>OUT</td>
-      <td>123.000000</td>
-      <td>133.000000</td>
-      <td>10.000000</td>
-    </tr>
-    <tr>
-      <td>IN</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Rachev</td>
-      <td>1.555495</td>
-      <td>1.557123</td>
-      <td>0.001627</td>
-    </tr>
-    <tr>
-      <td>Sortino</td>
-      <td>0.377445</td>
-      <td>0.428867</td>
-      <td>0.051423</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4>Removing this holding from the corrected main plan</h4>
-
-<table markdown="0" class="dataframe research-table">
-  <thead>
-    <tr style="text-align: right;">
-      <th>Measure</th>
-      <th>Full baseline</th>
-      <th>After change</th>
-      <th>Change</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>netSD</td>
-      <td>0.885714</td>
-      <td>0.868571</td>
-      <td>-0.017143</td>
-    </tr>
-    <tr>
-      <td>OUT</td>
-      <td>155.000000</td>
-      <td>152.000000</td>
-      <td>-3.000000</td>
-    </tr>
-    <tr>
-      <td>IN</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Rachev</td>
-      <td>1.872334</td>
-      <td>1.845698</td>
-      <td>-0.026635</td>
-    </tr>
-    <tr>
-      <td>Sortino</td>
-      <td>0.610105</td>
-      <td>0.571412</td>
-      <td>-0.038693</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>Addition uses 136 extra units at EUR 7.4000, on top of 0 existing units. Removal excludes all 136 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="EGG"></div>
-</details></details><details markdown="1" class=""><summary><strong>All five model frontiers with this share highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="EGG"></div>
-</details></details><details markdown="1" class="stock-profile" id="share-kne1l" data-signal="WAIT" data-netsd-effect="INCREASE" data-dividend-status="PAID" data-portfolio-scopes="ANY STOCHASTIC UPDATE2 UPDATE3" data-sale-membership='{"ANY":["NO_SALE","SALE"],"STOCHASTIC":["NO_SALE","SALE"],"UPDATE2":["NO_SALE","SALE"],"UPDATE3":["NO_SALE","SALE"],"ALL":["NO_SALE","SALE"]}'>
-<summary><strong>KNE1L — KN Energies</strong> | current action: WAIT | allocation target 1354 shares | netSD diagnostic rank 23</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LT0000111650/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3AKNE1L" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/KNE1L.VS/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
-
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>928</td><td>1354</td><td>+426</td><td>4.31%</td><td>EUR 0.4770</td><td>0.297143</td><td>54 / 2</td><td>39.43</td><td>SELL</td><td>HOLD</td><td>0.331</td><td>EUR 0.0129</td></tr></tbody></table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -2453,10 +2271,10 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/KNE1L-regimes.html?v=75c5c493f9af" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/KNE1L-long-history.html?v=4e7f3e5ac831" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -2589,7 +2407,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1" class="frontier-components">
 <summary>All five model frontiers with this share highlighted</summary>
 
-<div class="frontier-explorer" data-highlight="KNE1L"></div>
+<div class="frontier-explorer" data-highlight="KNE1L" data-source="interactive/dominance/LongFrontiers.json"></div>
 
 The common explorer includes every eligible share, all funds and every portfolio. The selected share is highlighted automatically. NetSD is discrete; candidate comparisons are not a certificate of a global continuous optimum.
 
@@ -2649,7 +2467,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 | <button type="button" class="metric-help-button" data-metric="MSquaredExcess" data-meaning="M² return advantage over the benchmark." data-calculation="Modigliani measure − benchmark return." data-interpretation="Higher is better.">MSquaredExcess</button> | -0.002014 | 0.012928 | <button type="button" class="metric-help-button" data-metric="ZeroVolumeFraction" data-meaning="Share of observations with no recorded trading volume." data-calculation="Count(volume=0)/n." data-interpretation="Lower is better.">ZeroVolumeFraction</button> | 0.000000 | 0.000000 |
 </details>
 
-<details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+<details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -2740,7 +2558,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 426 extra units at EUR 0.4770, on top of 928 existing units. Removal excludes all 1354 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="KNE1L"></div>
+<div class="dominance-explorer" data-asset="KNE1L" data-target="KNE1L" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details>
 
 
@@ -2776,10 +2594,35 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 
 
-</details><details markdown="1" class="stock-profile" id="share-vlp1l" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" data-portfolio-scopes="ANY STOCHASTIC UPDATE2 UPDATE3" data-sale-membership='{"ANY":["NO_SALE","SALE"],"STOCHASTIC":["NO_SALE","SALE"],"UPDATE2":["NO_SALE","SALE"],"UPDATE3":["NO_SALE","SALE"],"ALL":["NO_SALE","SALE"]}'>
-<summary><strong>VLP1L — Vilkyškių pieninė</strong> | current action: HOLD | allocation target 42 shares | netSD diagnostic rank 31</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LT0000127508/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3AVLP1L" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/VLP1L.VS/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
+</details><details markdown="1" class="stock-profile" id="share-vlp1l" data-signal="WAIT" data-netsd-effect="INCREASE" data-dividend-status="PAID" data-portfolio-scopes="ALL ANY STOCHASTIC UPDATE3" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":["NO_SALE","SALE"],"STOCHASTIC":["NO_SALE","SALE"],"UPDATE3":["NO_SALE","SALE"],"UPDATE2":[]}'>
+<summary><strong>VLP1L — Vilkyškių pieninė | current action: WAIT | allocation target 265 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LT0000127508/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3AVLP1L" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/VLP1L.VS/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>42</td><td>42</td><td>+0</td><td>4.41%</td><td>EUR 15.7500</td><td>0.245714</td><td>48 / 5</td><td>58.60</td><td>BUY</td><td>HOLD</td><td>0.349</td><td>EUR 0.2690</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>42</td>
+      <td>265</td>
+      <td>223</td>
+      <td>0.278250</td>
+      <td>15.750000</td>
+      <td>0.461538</td>
+      <td>54</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -2907,10 +2750,10 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/VLP1L-regimes.html?v=915ead0ec482" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/VLP1L-long-history.html?v=9fc1e53ae38c" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -3042,7 +2885,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1" class="frontier-components">
 <summary>All five model frontiers with this share highlighted</summary>
 
-<div class="frontier-explorer" data-highlight="VLP1L"></div>
+<div class="frontier-explorer" data-highlight="VLP1L" data-source="interactive/dominance/LongFrontiers.json"></div>
 
 The common explorer includes every eligible share, all funds and every portfolio. The selected share is highlighted automatically. NetSD is discrete; candidate comparisons are not a certificate of a global continuous optimum.
 
@@ -3102,7 +2945,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 | <button type="button" class="metric-help-button" data-metric="MSquaredExcess" data-meaning="M² return advantage over the benchmark." data-calculation="Modigliani measure − benchmark return." data-interpretation="Higher is better.">MSquaredExcess</button> | 0.057225 | 0.433075 | <button type="button" class="metric-help-button" data-metric="ZeroVolumeFraction" data-meaning="Share of observations with no recorded trading volume." data-calculation="Count(volume=0)/n." data-interpretation="Lower is better.">ZeroVolumeFraction</button> | 0.001326 | 0.000000 |
 </details>
 
-<details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+<details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -3193,7 +3036,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 15.7500, on top of 42 existing units. Removal excludes all 42 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="VLP1L"></div>
+<div class="dominance-explorer" data-asset="VLP1L" data-target="VLP1L" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details>
 
 
@@ -3229,10 +3072,35 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 
 
-</details><details markdown="1" class="stock-profile" id="share-cpa1t" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" data-portfolio-scopes="ANY STOCHASTIC UPDATE2 UPDATE3" data-sale-membership='{"ANY":["NO_SALE","SALE"],"STOCHASTIC":["NO_SALE"],"UPDATE2":["NO_SALE"],"UPDATE3":["NO_SALE","SALE"],"ALL":["NO_SALE","SALE"]}'>
-<summary><strong>CPA1T — Coop Pank</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank 5</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100007857/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3ACPA1T" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/CPA1T.TL/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
+</details><details markdown="1" class="stock-profile" id="share-cpa1t" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'>
+<summary><strong>CPA1T — Coop Pank | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100007857/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3ACPA1T" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/CPA1T.TL/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 2.3750</td><td>0.474286</td><td>91 / 8</td><td>56.12</td><td>BUY</td><td>HOLD</td><td>0.390</td><td>EUR 0.0534</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>2.375000</td>
+      <td>-0.008547</td>
+      <td>27</td>
+      <td>28</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -3360,10 +3228,10 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/CPA1T-regimes.html?v=47f0a561aacc" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/CPA1T-long-history.html?v=5af2543f22a5" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -3519,7 +3387,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1" class="frontier-components">
 <summary>All five model frontiers with this share highlighted</summary>
 
-<div class="frontier-explorer" data-highlight="CPA1T"></div>
+<div class="frontier-explorer" data-highlight="CPA1T" data-source="interactive/dominance/LongFrontiers.json"></div>
 
 The common explorer includes every eligible share, all funds and every portfolio. The selected share is highlighted automatically. NetSD is discrete; candidate comparisons are not a certificate of a global continuous optimum.
 
@@ -3579,7 +3447,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 | <button type="button" class="metric-help-button" data-metric="MSquaredExcess" data-meaning="M² return advantage over the benchmark." data-calculation="Modigliani measure − benchmark return." data-interpretation="Higher is better.">MSquaredExcess</button> | -0.203191 | -0.083974 | <button type="button" class="metric-help-button" data-metric="ZeroVolumeFraction" data-meaning="Share of observations with no recorded trading volume." data-calculation="Count(volume=0)/n." data-interpretation="Lower is better.">ZeroVolumeFraction</button> | 0.000000 | 0.000000 |
 </details>
 
-<details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+<details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -3670,7 +3538,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 2.3750, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="CPA1T"></div>
+<div class="dominance-explorer" data-asset="CPA1T" data-target="CPA1T" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details>
 
 
@@ -3706,10 +3574,35 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 
 
-</details><details markdown="1" class="stock-profile" id="share-tal1t" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" data-portfolio-scopes="ANY STOCHASTIC UPDATE2 UPDATE3" data-sale-membership='{"ANY":["NO_SALE","SALE"],"STOCHASTIC":["NO_SALE","SALE"],"UPDATE2":["NO_SALE","SALE"],"UPDATE3":["NO_SALE","SALE"],"ALL":["NO_SALE","SALE"]}'>
-<summary><strong>TAL1T — Tallink Grupp</strong> | current action: HOLD | allocation target 700 shares | netSD diagnostic rank 37</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100004466/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3ATAL1T" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/TAL1T.TL/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
+</details><details markdown="1" class="stock-profile" id="share-tal1t" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" data-portfolio-scopes="ALL ANY STOCHASTIC UPDATE3" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":["NO_SALE","SALE"],"STOCHASTIC":["NO_SALE","SALE"],"UPDATE3":["NO_SALE","SALE"],"UPDATE2":[]}'>
+<summary><strong>TAL1T — Tallink Grupp | current action: HOLD | allocation target 700 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100004466/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3ATAL1T" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/TAL1T.TL/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>700</td><td>700</td><td>+0</td><td>3.02%</td><td>EUR 0.6470</td><td>0.142857</td><td>44 / 19</td><td>57.37</td><td>SELL</td><td>HOLD</td><td>0.226</td><td>EUR 0.0300</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>700</td>
+      <td>700</td>
+      <td>0</td>
+      <td>0.030193</td>
+      <td>0.647000</td>
+      <td>0.179487</td>
+      <td>34</td>
+      <td>13</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -3837,10 +3730,10 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/TAL1T-regimes.html?v=759b2c91f86c" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/TAL1T-long-history.html?v=6ba3d0387e65" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -3996,7 +3889,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1" class="frontier-components">
 <summary>All five model frontiers with this share highlighted</summary>
 
-<div class="frontier-explorer" data-highlight="TAL1T"></div>
+<div class="frontier-explorer" data-highlight="TAL1T" data-source="interactive/dominance/LongFrontiers.json"></div>
 
 The common explorer includes every eligible share, all funds and every portfolio. The selected share is highlighted automatically. NetSD is discrete; candidate comparisons are not a certificate of a global continuous optimum.
 
@@ -4056,7 +3949,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 | <button type="button" class="metric-help-button" data-metric="MSquaredExcess" data-meaning="M² return advantage over the benchmark." data-calculation="Modigliani measure − benchmark return." data-interpretation="Higher is better.">MSquaredExcess</button> | -0.130201 | -0.092436 | <button type="button" class="metric-help-button" data-metric="ZeroVolumeFraction" data-meaning="Share of observations with no recorded trading volume." data-calculation="Count(volume=0)/n." data-interpretation="Lower is better.">ZeroVolumeFraction</button> | 0.000000 | 0.000000 |
 </details>
 
-<details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+<details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -4147,7 +4040,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 0.6470, on top of 700 existing units. Removal excludes all 700 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="TAL1T"></div>
+<div class="dominance-explorer" data-asset="TAL1T" data-target="TAL1T" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details>
 
 
@@ -4183,10 +4076,35 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 
 
-</details><details markdown="1" class="stock-profile" id="share-ako1l" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" data-portfolio-scopes="ANY STOCHASTIC UPDATE2 UPDATE3" data-sale-membership='{"ANY":["NO_SALE","SALE"],"STOCHASTIC":["NO_SALE"],"UPDATE2":["NO_SALE","SALE"],"UPDATE3":["NO_SALE","SALE"],"ALL":["NO_SALE","SALE"]}'>
-<summary><strong>AKO1L — Akola Group</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank 36</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LT0000128092/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3AAKO1L" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/AKO1L.VS/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
+</details><details markdown="1" class="stock-profile" id="share-ako1l" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'>
+<summary><strong>AKO1L — Akola Group | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LT0000128092/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3AAKO1L" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/AKO1L.VS/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 1.8750</td><td>0.154286</td><td>53 / 26</td><td>77.76</td><td>BUY</td><td>HOLD</td><td>0.853</td><td>EUR 0.0292</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>1.875000</td>
+      <td>0.358974</td>
+      <td>46</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -4314,10 +4232,10 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/AKO1L-regimes.html?v=70d5431dbdde" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/AKO1L-long-history.html?v=1b519830ab6f" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -4449,7 +4367,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1" class="frontier-components">
 <summary>All five model frontiers with this share highlighted</summary>
 
-<div class="frontier-explorer" data-highlight="AKO1L"></div>
+<div class="frontier-explorer" data-highlight="AKO1L" data-source="interactive/dominance/LongFrontiers.json"></div>
 
 The common explorer includes every eligible share, all funds and every portfolio. The selected share is highlighted automatically. NetSD is discrete; candidate comparisons are not a certificate of a global continuous optimum.
 
@@ -4509,7 +4427,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 | <button type="button" class="metric-help-button" data-metric="MSquaredExcess" data-meaning="M² return advantage over the benchmark." data-calculation="Modigliani measure − benchmark return." data-interpretation="Higher is better.">MSquaredExcess</button> | -0.128412 | 0.061796 | <button type="button" class="metric-help-button" data-metric="ZeroVolumeFraction" data-meaning="Share of observations with no recorded trading volume." data-calculation="Count(volume=0)/n." data-interpretation="Lower is better.">ZeroVolumeFraction</button> | 0.000000 | 0.000000 |
 </details>
 
-<details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+<details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -4600,7 +4518,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 1.8750, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="AKO1L"></div>
+<div class="dominance-explorer" data-asset="AKO1L" data-target="AKO1L" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details>
 
 
@@ -4636,10 +4554,35 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 
 
-</details><details markdown="1" class="stock-profile" id="share-lhv1t" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" data-portfolio-scopes="ANY STOCHASTIC UPDATE2 UPDATE3" data-sale-membership='{"ANY":["NO_SALE","SALE"],"STOCHASTIC":["NO_SALE"],"UPDATE2":["NO_SALE","SALE"],"UPDATE3":["NO_SALE","SALE"],"ALL":["NO_SALE","SALE"]}'>
-<summary><strong>LHV1T — LHV Group</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank 45</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100102203/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3ALHV1T" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/LHV1T.TL/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
+</details><details markdown="1" class="stock-profile" id="share-lhv1t" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'>
+<summary><strong>LHV1T — LHV Group | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100102203/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3ALHV1T" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/LHV1T.TL/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 3.2500</td><td>0.011429</td><td>36 / 34</td><td>39.81</td><td>BUY</td><td>HOLD</td><td>0.411</td><td>EUR 0.0860</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>3.250000</td>
+      <td>0.196581</td>
+      <td>35</td>
+      <td>12</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -4767,10 +4710,10 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/LHV1T-regimes.html?v=9ea2fbd69fc9" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/LHV1T-long-history.html?v=b345a793f4d7" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -4928,7 +4871,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1" class="frontier-components">
 <summary>All five model frontiers with this share highlighted</summary>
 
-<div class="frontier-explorer" data-highlight="LHV1T"></div>
+<div class="frontier-explorer" data-highlight="LHV1T" data-source="interactive/dominance/LongFrontiers.json"></div>
 
 The common explorer includes every eligible share, all funds and every portfolio. The selected share is highlighted automatically. NetSD is discrete; candidate comparisons are not a certificate of a global continuous optimum.
 
@@ -4988,7 +4931,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 | <button type="button" class="metric-help-button" data-metric="MSquaredExcess" data-meaning="M² return advantage over the benchmark." data-calculation="Modigliani measure − benchmark return." data-interpretation="Higher is better.">MSquaredExcess</button> | -0.216123 | -0.383752 | <button type="button" class="metric-help-button" data-metric="ZeroVolumeFraction" data-meaning="Share of observations with no recorded trading volume." data-calculation="Count(volume=0)/n." data-interpretation="Lower is better.">ZeroVolumeFraction</button> | 0.000000 | 0.000000 |
 </details>
 
-<details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+<details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -5079,7 +5022,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 3.2500, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="LHV1T"></div>
+<div class="dominance-explorer" data-asset="LHV1T" data-target="LHV1T" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details>
 
 
@@ -5115,10 +5058,35 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 
 
-</details><details markdown="1" class="stock-profile" id="share-hae1t" data-signal="SKIP" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" data-portfolio-scopes="ANY STOCHASTIC UPDATE2 UPDATE3" data-sale-membership='{"ANY":["NO_SALE","SALE"],"STOCHASTIC":["NO_SALE","SALE"],"UPDATE2":["NO_SALE","SALE"],"UPDATE3":["NO_SALE","SALE"],"ALL":["NO_SALE","SALE"]}'>
-<summary><strong>HAE1T — Harju Elekter Group</strong> | current action: SKIP | allocation target 103 shares | netSD diagnostic rank 37</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100004250/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3AHAE1T" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/HAE1T.TL/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
+</details><details markdown="1" class="stock-profile" id="share-hae1t" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" data-portfolio-scopes="ALL ANY STOCHASTIC UPDATE3" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":["NO_SALE","SALE"],"STOCHASTIC":["NO_SALE","SALE"],"UPDATE3":["NO_SALE","SALE"],"UPDATE2":[]}'>
+<summary><strong>HAE1T — Harju Elekter Group | current action: HOLD | allocation target 100 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100004250/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3AHAE1T" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/HAE1T.TL/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>100</td><td>103</td><td>+3</td><td>3.57%</td><td>EUR 5.2000</td><td>0.142857</td><td>53 / 28</td><td>46.22</td><td>SELL</td><td>HOLD</td><td>0.027</td><td>EUR 0.1160</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>100</td>
+      <td>100</td>
+      <td>0</td>
+      <td>0.034667</td>
+      <td>5.200000</td>
+      <td>0.025641</td>
+      <td>32</td>
+      <td>29</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -5246,10 +5214,10 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/HAE1T-regimes.html?v=dca4ac256e20" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/HAE1T-long-history.html?v=51a875953a09" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -5401,7 +5369,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1" class="frontier-components">
 <summary>All five model frontiers with this share highlighted</summary>
 
-<div class="frontier-explorer" data-highlight="HAE1T"></div>
+<div class="frontier-explorer" data-highlight="HAE1T" data-source="interactive/dominance/LongFrontiers.json"></div>
 
 The common explorer includes every eligible share, all funds and every portfolio. The selected share is highlighted automatically. NetSD is discrete; candidate comparisons are not a certificate of a global continuous optimum.
 
@@ -5461,7 +5429,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 | <button type="button" class="metric-help-button" data-metric="MSquaredExcess" data-meaning="M² return advantage over the benchmark." data-calculation="Modigliani measure − benchmark return." data-interpretation="Higher is better.">MSquaredExcess</button> | -0.145250 | -0.208916 | <button type="button" class="metric-help-button" data-metric="ZeroVolumeFraction" data-meaning="Share of observations with no recorded trading volume." data-calculation="Count(volume=0)/n." data-interpretation="Lower is better.">ZeroVolumeFraction</button> | 0.000000 | 0.000000 |
 </details>
 
-<details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+<details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -5552,7 +5520,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 3 extra units at EUR 5.2000, on top of 100 existing units. Removal excludes all 103 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="HAE1T"></div>
+<div class="dominance-explorer" data-asset="HAE1T" data-target="HAE1T" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details>
 
 
@@ -5588,10 +5556,35 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 
 
-</details><details markdown="1" class="stock-profile" id="share-roe1l" data-signal="SKIP" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" data-portfolio-scopes="ANY STOCHASTIC UPDATE2 UPDATE3" data-sale-membership='{"ANY":["NO_SALE","SALE"],"STOCHASTIC":["NO_SALE","SALE"],"UPDATE2":["NO_SALE","SALE"],"UPDATE3":["NO_SALE","SALE"],"ALL":["NO_SALE","SALE"]}'>
-<summary><strong>ROE1L — Artea Bankas</strong> | current action: SKIP | allocation target 423 shares | netSD diagnostic rank 46</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LT0000102253/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3AROE1L" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/ROE1L.VS/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
+</details><details markdown="1" class="stock-profile" id="share-roe1l" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" data-portfolio-scopes="ALL ANY STOCHASTIC UPDATE3" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":["NO_SALE","SALE"],"STOCHASTIC":["NO_SALE","SALE"],"UPDATE3":["NO_SALE","SALE"],"UPDATE2":[]}'>
+<summary><strong>ROE1L — Artea Bankas | current action: HOLD | allocation target 416 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LT0000102253/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3AROE1L" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/ROE1L.VS/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>416</td><td>423</td><td>+7</td><td>2.31%</td><td>EUR 0.8190</td><td>0.005714</td><td>39 / 38</td><td>18.33</td><td>SELL</td><td>BUY</td><td>0.333</td><td>EUR 0.0366</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>416</td>
+      <td>416</td>
+      <td>0</td>
+      <td>0.022714</td>
+      <td>0.819000</td>
+      <td>0.350427</td>
+      <td>45</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -5719,10 +5712,10 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/ROE1L-regimes.html?v=a673bba6d935" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/ROE1L-long-history.html?v=7353e63aa147" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -5862,7 +5855,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1" class="frontier-components">
 <summary>All five model frontiers with this share highlighted</summary>
 
-<div class="frontier-explorer" data-highlight="ROE1L"></div>
+<div class="frontier-explorer" data-highlight="ROE1L" data-source="interactive/dominance/LongFrontiers.json"></div>
 
 The common explorer includes every eligible share, all funds and every portfolio. The selected share is highlighted automatically. NetSD is discrete; candidate comparisons are not a certificate of a global continuous optimum.
 
@@ -5922,7 +5915,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 | <button type="button" class="metric-help-button" data-metric="MSquaredExcess" data-meaning="M² return advantage over the benchmark." data-calculation="Modigliani measure − benchmark return." data-interpretation="Higher is better.">MSquaredExcess</button> | -0.110616 | -0.274850 | <button type="button" class="metric-help-button" data-metric="ZeroVolumeFraction" data-meaning="Share of observations with no recorded trading volume." data-calculation="Count(volume=0)/n." data-interpretation="Lower is better.">ZeroVolumeFraction</button> | 0.000000 | 0.000000 |
 </details>
 
-<details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+<details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -6013,7 +6006,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 7 extra units at EUR 0.8190, on top of 416 existing units. Removal excludes all 423 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="ROE1L"></div>
+<div class="dominance-explorer" data-asset="ROE1L" data-target="ROE1L" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details>
 
 
@@ -6049,10 +6042,35 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 
 
-</details><details markdown="1" class="stock-profile" id="share-apg1l" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" data-portfolio-scopes="ANY STOCHASTIC UPDATE2 UPDATE3" data-sale-membership='{"ANY":["NO_SALE","SALE"],"STOCHASTIC":["NO_SALE","SALE"],"UPDATE2":["NO_SALE","SALE"],"UPDATE3":["NO_SALE","SALE"],"ALL":["NO_SALE","SALE"]}'>
-<summary><strong>APG1L — Apranga</strong> | current action: HOLD | allocation target 200 shares | netSD diagnostic rank 29</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LT0000102337/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3AAPG1L" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/APG1L.VS/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
+</details><details markdown="1" class="stock-profile" id="share-apg1l" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" data-portfolio-scopes="ALL ANY STOCHASTIC UPDATE3" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":["NO_SALE","SALE"],"STOCHASTIC":["NO_SALE","SALE"],"UPDATE3":["NO_SALE","SALE"],"UPDATE2":[]}'>
+<summary><strong>APG1L — Apranga | current action: HOLD | allocation target 200 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LT0000102337/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3AAPG1L" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/APG1L.VS/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>200</td><td>200</td><td>+0</td><td>5.07%</td><td>EUR 3.8000</td><td>0.274286</td><td>54 / 6</td><td>39.65</td><td>BUY</td><td>HOLD</td><td>0.350</td><td>EUR 0.2060</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>200</td>
+      <td>200</td>
+      <td>0</td>
+      <td>0.050667</td>
+      <td>3.800000</td>
+      <td>0.401709</td>
+      <td>47</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -6180,10 +6198,10 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/APG1L-regimes.html?v=d1c65b8fce9b" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/APG1L-long-history.html?v=8d552e5c0ae3" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -6362,7 +6380,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1" class="frontier-components">
 <summary>All five model frontiers with this share highlighted</summary>
 
-<div class="frontier-explorer" data-highlight="APG1L"></div>
+<div class="frontier-explorer" data-highlight="APG1L" data-source="interactive/dominance/LongFrontiers.json"></div>
 
 The common explorer includes every eligible share, all funds and every portfolio. The selected share is highlighted automatically. NetSD is discrete; candidate comparisons are not a certificate of a global continuous optimum.
 
@@ -6422,7 +6440,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 | <button type="button" class="metric-help-button" data-metric="MSquaredExcess" data-meaning="M² return advantage over the benchmark." data-calculation="Modigliani measure − benchmark return." data-interpretation="Higher is better.">MSquaredExcess</button> | -0.078612 | -0.151410 | <button type="button" class="metric-help-button" data-metric="ZeroVolumeFraction" data-meaning="Share of observations with no recorded trading volume." data-calculation="Count(volume=0)/n." data-interpretation="Lower is better.">ZeroVolumeFraction</button> | 0.000000 | 0.000000 |
 </details>
 
-<details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+<details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -6513,7 +6531,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 3.8000, on top of 200 existing units. Removal excludes all 200 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="APG1L"></div>
+<div class="dominance-explorer" data-asset="APG1L" data-target="APG1L" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details>
 
 
@@ -6549,10 +6567,35 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 
 
-</details><details markdown="1" class="stock-profile" id="share-tkm1t" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" data-portfolio-scopes="ANY STOCHASTIC UPDATE2 UPDATE3" data-sale-membership='{"ANY":["NO_SALE","SALE"],"STOCHASTIC":["NO_SALE","SALE"],"UPDATE2":["NO_SALE","SALE"],"UPDATE3":["NO_SALE","SALE"],"ALL":["NO_SALE","SALE"]}'>
-<summary><strong>TKM1T — TKM Grupp</strong> | current action: HOLD | allocation target 288 shares | netSD diagnostic rank 49</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE0000001105/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3ATKM1T" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/TKM1T.TL/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
+</details><details markdown="1" class="stock-profile" id="share-tkm1t" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" data-portfolio-scopes="ALL ANY STOCHASTIC UPDATE3" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":["NO_SALE","SALE"],"STOCHASTIC":["NO_SALE","SALE"],"UPDATE3":["NO_SALE","SALE"],"UPDATE2":[]}'>
+<summary><strong>TKM1T — TKM Grupp | current action: HOLD | allocation target 288 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE0000001105/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3ATKM1T" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/TKM1T.TL/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>288</td><td>288</td><td>+0</td><td>17.05%</td><td>EUR 8.8800</td><td>0.000000</td><td>28 / 28</td><td>28.71</td><td>SELL</td><td>HOLD</td><td>0.480</td><td>EUR 0.5300</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>288</td>
+      <td>288</td>
+      <td>0</td>
+      <td>0.170496</td>
+      <td>8.880000</td>
+      <td>0.136752</td>
+      <td>28</td>
+      <td>12</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -6680,10 +6723,10 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/TKM1T-regimes.html?v=851c15e6a0ff" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/TKM1T-long-history.html?v=2cac3b59710d" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -6832,7 +6875,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1" class="frontier-components">
 <summary>All five model frontiers with this share highlighted</summary>
 
-<div class="frontier-explorer" data-highlight="TKM1T"></div>
+<div class="frontier-explorer" data-highlight="TKM1T" data-source="interactive/dominance/LongFrontiers.json"></div>
 
 The common explorer includes every eligible share, all funds and every portfolio. The selected share is highlighted automatically. NetSD is discrete; candidate comparisons are not a certificate of a global continuous optimum.
 
@@ -6892,7 +6935,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 | <button type="button" class="metric-help-button" data-metric="MSquaredExcess" data-meaning="M² return advantage over the benchmark." data-calculation="Modigliani measure − benchmark return." data-interpretation="Higher is better.">MSquaredExcess</button> | -0.195378 | -0.369648 | <button type="button" class="metric-help-button" data-metric="ZeroVolumeFraction" data-meaning="Share of observations with no recorded trading volume." data-calculation="Count(volume=0)/n." data-interpretation="Lower is better.">ZeroVolumeFraction</button> | 0.000000 | 0.000000 |
 </details>
 
-<details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+<details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -6983,7 +7026,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 8.8800, on top of 288 existing units. Removal excludes all 288 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="TKM1T"></div>
+<div class="dominance-explorer" data-asset="TKM1T" data-target="TKM1T" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details>
 
 
@@ -7019,10 +7062,35 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 
 
-</details><details markdown="1" class="stock-profile" id="share-tsm1t" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" data-portfolio-scopes="ANY STOCHASTIC UPDATE2 UPDATE3" data-sale-membership='{"ANY":["NO_SALE","SALE"],"STOCHASTIC":["NO_SALE","SALE"],"UPDATE2":["NO_SALE"],"UPDATE3":["NO_SALE"],"ALL":["NO_SALE","SALE"]}'>
-<summary><strong>TSM1T — Tallinna Sadam</strong> | current action: HOLD | allocation target 330 shares | netSD diagnostic rank 46</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100021635/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3ATSM1T" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/TSM1T.TL/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
+</details><details markdown="1" class="stock-profile" id="share-tsm1t" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" data-portfolio-scopes="ALL ANY STOCHASTIC UPDATE3" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":["NO_SALE","SALE"],"STOCHASTIC":["NO_SALE","SALE"],"UPDATE3":["NO_SALE","SALE"],"UPDATE2":[]}'>
+<summary><strong>TSM1T — Tallinna Sadam | current action: HOLD | allocation target 330 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100021635/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3ATSM1T" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/TSM1T.TL/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>330</td><td>330</td><td>+0</td><td>2.62%</td><td>EUR 1.1920</td><td>0.005714</td><td>38 / 37</td><td>35.11</td><td>SELL</td><td>HOLD</td><td>0.200</td><td>EUR 0.0584</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>330</td>
+      <td>330</td>
+      <td>0</td>
+      <td>0.026224</td>
+      <td>1.192000</td>
+      <td>0.179487</td>
+      <td>35</td>
+      <td>14</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -7150,10 +7218,10 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/TSM1T-regimes.html?v=89907e6e095c" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/TSM1T-long-history.html?v=186960821fba" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -7299,7 +7367,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1" class="frontier-components">
 <summary>All five model frontiers with this share highlighted</summary>
 
-<div class="frontier-explorer" data-highlight="TSM1T"></div>
+<div class="frontier-explorer" data-highlight="TSM1T" data-source="interactive/dominance/LongFrontiers.json"></div>
 
 The common explorer includes every eligible share, all funds and every portfolio. The selected share is highlighted automatically. NetSD is discrete; candidate comparisons are not a certificate of a global continuous optimum.
 
@@ -7359,7 +7427,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 | <button type="button" class="metric-help-button" data-metric="MSquaredExcess" data-meaning="M² return advantage over the benchmark." data-calculation="Modigliani measure − benchmark return." data-interpretation="Higher is better.">MSquaredExcess</button> | -0.236349 | -0.435593 | <button type="button" class="metric-help-button" data-metric="ZeroVolumeFraction" data-meaning="Share of observations with no recorded trading volume." data-calculation="Count(volume=0)/n." data-interpretation="Lower is better.">ZeroVolumeFraction</button> | 0.000000 | 0.000000 |
 </details>
 
-<details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+<details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -7450,7 +7518,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 1.1920, on top of 330 existing units. Removal excludes all 330 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="TSM1T"></div>
+<div class="dominance-explorer" data-asset="TSM1T" data-target="TSM1T" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details>
 
 
@@ -7486,10 +7554,35 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 
 
-</details><details markdown="1" class="stock-profile" id="share-grg1l" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" data-portfolio-scopes="ANY STOCHASTIC UPDATE2 UPDATE3" data-sale-membership='{"ANY":["NO_SALE","SALE"],"STOCHASTIC":["NO_SALE","SALE"],"UPDATE2":["NO_SALE","SALE"],"UPDATE3":["NO_SALE","SALE"],"ALL":["NO_SALE","SALE"]}'>
-<summary><strong>GRG1L — Grigeo Group</strong> | current action: HOLD | allocation target 543 shares | netSD diagnostic rank 51</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LT0000102030/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3AGRG1L" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/GRG1L.VS/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
+</details><details markdown="1" class="stock-profile" id="share-grg1l" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" data-portfolio-scopes="ALL ANY STOCHASTIC UPDATE3" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":["NO_SALE","SALE"],"STOCHASTIC":["NO_SALE","SALE"],"UPDATE3":["NO_SALE","SALE"],"UPDATE2":[]}'>
+<summary><strong>GRG1L — Grigeo Group | current action: HOLD | allocation target 543 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LT0000102030/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3AGRG1L" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/GRG1L.VS/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>543</td><td>543</td><td>+0</td><td>3.66%</td><td>EUR 1.0100</td><td>-0.057143</td><td>42 / 52</td><td>51.55</td><td>BUY</td><td>HOLD</td><td>0.699</td><td>EUR 0.0460</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>543</td>
+      <td>543</td>
+      <td>0</td>
+      <td>0.036562</td>
+      <td>1.010000</td>
+      <td>0.401709</td>
+      <td>47</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -7617,10 +7710,10 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/GRG1L-regimes.html?v=a211be45815d" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/GRG1L-long-history.html?v=c9df2171a5e1" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -7716,7 +7809,7 @@ A direction reversal requires opposite fitted price slopes during the ten tradin
 <details markdown="1" class="frontier-components">
 <summary>All five model frontiers with this share highlighted</summary>
 
-<div class="frontier-explorer" data-highlight="GRG1L"></div>
+<div class="frontier-explorer" data-highlight="GRG1L" data-source="interactive/dominance/LongFrontiers.json"></div>
 
 The common explorer includes every eligible share, all funds and every portfolio. The selected share is highlighted automatically. NetSD is discrete; candidate comparisons are not a certificate of a global continuous optimum.
 
@@ -7776,7 +7869,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 | <button type="button" class="metric-help-button" data-metric="MSquaredExcess" data-meaning="M² return advantage over the benchmark." data-calculation="Modigliani measure − benchmark return." data-interpretation="Higher is better.">MSquaredExcess</button> | -0.129998 | -0.348346 | <button type="button" class="metric-help-button" data-metric="ZeroVolumeFraction" data-meaning="Share of observations with no recorded trading volume." data-calculation="Count(volume=0)/n." data-interpretation="Lower is better.">ZeroVolumeFraction</button> | 0.000000 | 0.000000 |
 </details>
 
-<details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+<details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -7867,7 +7960,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 1.0100, on top of 543 existing units. Removal excludes all 543 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="GRG1L"></div>
+<div class="dominance-explorer" data-asset="GRG1L" data-target="GRG1L" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details>
 
 
@@ -7903,10 +7996,35 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 
 
-</details><details markdown="1" class="stock-profile" id="share-rsu1l" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" data-portfolio-scopes="ANY STOCHASTIC UPDATE2 UPDATE3" data-sale-membership='{"ANY":["NO_SALE","SALE"],"STOCHASTIC":["NO_SALE","SALE"],"UPDATE2":["NO_SALE","SALE"],"UPDATE3":["NO_SALE","SALE"],"ALL":["NO_SALE","SALE"]}'>
-<summary><strong>RSU1L — Rokiškio sūris</strong> | current action: HOLD | allocation target 91 shares | netSD diagnostic rank 54</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LT0000100372/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3ARSU1L" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/RSU1L.VS/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
+</details><details markdown="1" class="stock-profile" id="share-rsu1l" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" data-portfolio-scopes="ALL ANY STOCHASTIC UPDATE3" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":["NO_SALE","SALE"],"STOCHASTIC":["NO_SALE","SALE"],"UPDATE3":["NO_SALE","SALE"],"UPDATE2":[]}'>
+<summary><strong>RSU1L — Rokiškio sūris | current action: HOLD | allocation target 91 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LT0000100372/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3ARSU1L" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/RSU1L.VS/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>91</td><td>91</td><td>+0</td><td>2.58%</td><td>EUR 4.2600</td><td>-0.120000</td><td>40 / 61</td><td>22.63</td><td>SELL</td><td>BUY</td><td>0.080</td><td>EUR 0.1400</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>91</td>
+      <td>91</td>
+      <td>0</td>
+      <td>0.025844</td>
+      <td>4.260000</td>
+      <td>0.299145</td>
+      <td>38</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -8034,10 +8152,10 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/RSU1L-regimes.html?v=5613a7b77d1a" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/RSU1L-long-history.html?v=6dd13678ad44" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -8156,7 +8274,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1" class="frontier-components">
 <summary>All five model frontiers with this share highlighted</summary>
 
-<div class="frontier-explorer" data-highlight="RSU1L"></div>
+<div class="frontier-explorer" data-highlight="RSU1L" data-source="interactive/dominance/LongFrontiers.json"></div>
 
 The common explorer includes every eligible share, all funds and every portfolio. The selected share is highlighted automatically. NetSD is discrete; candidate comparisons are not a certificate of a global continuous optimum.
 
@@ -8216,7 +8334,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 | <button type="button" class="metric-help-button" data-metric="MSquaredExcess" data-meaning="M² return advantage over the benchmark." data-calculation="Modigliani measure − benchmark return." data-interpretation="Higher is better.">MSquaredExcess</button> | -0.127392 | -0.137595 | <button type="button" class="metric-help-button" data-metric="ZeroVolumeFraction" data-meaning="Share of observations with no recorded trading volume." data-calculation="Count(volume=0)/n." data-interpretation="Lower is better.">ZeroVolumeFraction</button> | 0.063660 | 0.031746 |
 </details>
 
-<details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+<details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -8307,7 +8425,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 4.2600, on top of 91 existing units. Removal excludes all 91 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="RSU1L"></div>
+<div class="dominance-explorer" data-asset="RSU1L" data-target="RSU1L" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details>
 
 
@@ -8343,10 +8461,35 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 
 
-</details><details markdown="1" class="stock-profile" id="share-mrk1t" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" data-portfolio-scopes="ANY STOCHASTIC UPDATE2 UPDATE3" data-sale-membership='{"ANY":["NO_SALE","SALE"],"STOCHASTIC":["NO_SALE","SALE"],"UPDATE2":["NO_SALE","SALE"],"UPDATE3":["NO_SALE","SALE"],"ALL":["NO_SALE","SALE"]}'>
-<summary><strong>MRK1T — Merko Ehitus</strong> | current action: HOLD | allocation target 20 shares | netSD diagnostic rank 59</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100098328/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3AMRK1T" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/MRK1T.TL/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
+</details><details markdown="1" class="stock-profile" id="share-mrk1t" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" data-portfolio-scopes="ALL ANY STOCHASTIC UPDATE3" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":["NO_SALE","SALE"],"STOCHASTIC":["NO_SALE","SALE"],"UPDATE3":["NO_SALE","SALE"],"UPDATE2":[]}'>
+<summary><strong>MRK1T — Merko Ehitus | current action: HOLD | allocation target 20 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100098328/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3AMRK1T" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/MRK1T.TL/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>20</td><td>20</td><td>+0</td><td>3.59%</td><td>EUR 26.9000</td><td>-0.154286</td><td>36 / 63</td><td>41.09</td><td>SELL</td><td>HOLD</td><td>0.250</td><td>EUR 1.0900</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>20</td>
+      <td>20</td>
+      <td>0</td>
+      <td>0.035867</td>
+      <td>26.900000</td>
+      <td>0.401709</td>
+      <td>47</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -8474,10 +8617,10 @@ MACD does not define an acceptable purchase or sale price. Its bullish crossover
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/MRK1T-regimes.html?v=d12168725c27" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/MRK1T-long-history.html?v=d8afe9c1c749" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -8629,7 +8772,7 @@ The test describes historical association. Small groups, overlapping horizons an
 <details markdown="1" class="frontier-components">
 <summary>All five model frontiers with this share highlighted</summary>
 
-<div class="frontier-explorer" data-highlight="MRK1T"></div>
+<div class="frontier-explorer" data-highlight="MRK1T" data-source="interactive/dominance/LongFrontiers.json"></div>
 
 The common explorer includes every eligible share, all funds and every portfolio. The selected share is highlighted automatically. NetSD is discrete; candidate comparisons are not a certificate of a global continuous optimum.
 
@@ -8689,7 +8832,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 | <button type="button" class="metric-help-button" data-metric="MSquaredExcess" data-meaning="M² return advantage over the benchmark." data-calculation="Modigliani measure − benchmark return." data-interpretation="Higher is better.">MSquaredExcess</button> | -0.065128 | -0.311435 | <button type="button" class="metric-help-button" data-metric="ZeroVolumeFraction" data-meaning="Share of observations with no recorded trading volume." data-calculation="Count(volume=0)/n." data-interpretation="Lower is better.">ZeroVolumeFraction</button> | 0.000000 | 0.000000 |
 </details>
 
-<details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+<details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -8780,7 +8923,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 26.9000, on top of 20 existing units. Removal excludes all 20 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="MRK1T"></div>
+<div class="dominance-explorer" data-asset="MRK1T" data-target="MRK1T" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details>
 
 
@@ -8816,9 +8959,34 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 
 
-</details><details markdown="1" class="stock-profile" id="share-air" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>AIR — Airobot Technologies</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank 61</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100092792/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3AAIR" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/lookup/?s=EE3100092792" target="_blank" rel="noopener noreferrer">Yahoo Finance: ISIN search ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Yahoo lookup is a search link, not a confirmed chart.</p><!-- EXTERNAL_CHART_LINKS_END -->
+</details><details markdown="1" class="stock-profile" id="share-air" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>AIR — Airobot Technologies | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100092792/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3AAIR" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/lookup/?s=EE3100092792" target="_blank" rel="noopener noreferrer">Yahoo Finance: ISIN search ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Yahoo lookup is a search link, not a confirmed chart.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 1.8200</td><td>-0.325714</td><td>19 / 76</td><td>47.73</td><td>BUY</td><td>HOLD</td><td>0.785</td><td>EUR 0.0000</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>1.820000</td>
+      <td>-0.940171</td>
+      <td>0</td>
+      <td>110</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -8936,10 +9104,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/AIR-regimes.html?v=ba5322c29111" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/AIR-long-history.html?v=27bcbbb17a9d" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -9046,7 +9214,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -9137,12 +9305,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 1.8200, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="AIR"></div>
+<div class="dominance-explorer" data-asset="AIR" data-target="AIR" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="AIR"></div>
-</details></details><details markdown="1" class="stock-profile" id="share-amg1l" data-signal="WAIT" data-netsd-effect="DECREASE" data-dividend-status="PAID" data-portfolio-scopes="ANY STOCHASTIC" data-sale-membership='{"ANY":["SALE"],"STOCHASTIC":["SALE"],"UPDATE2":[],"UPDATE3":[],"ALL":["SALE"]}'><summary><strong>AMG1L — Amber Grid</strong> | current action: WAIT | allocation target 141 shares | netSD diagnostic rank 42</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LT0000128696/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3AAMG1L" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/AMG1L.VS/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="AIR" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile" id="share-amg1l" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>AMG1L — Amber Grid | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LT0000128696/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3AAMG1L" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/AMG1L.VS/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>141</td><td>+141</td><td>1.12%</td><td>EUR 1.1900</td><td>0.062857</td><td>51 / 40</td><td>44.35</td><td>SELL</td><td>HOLD</td><td>0.517</td><td>EUR 0.0593</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>1.190000</td>
+      <td>0.025641</td>
+      <td>32</td>
+      <td>29</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -9260,10 +9453,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/AMG1L-regimes.html?v=0b2bbc4fdffb" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/AMG1L-long-history.html?v=1fa73264df25" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -9370,7 +9563,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -9461,12 +9654,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 141 extra units at EUR 1.1900, on top of 0 existing units. Removal excludes all 141 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="AMG1L"></div>
+<div class="dominance-explorer" data-asset="AMG1L" data-target="AMG1L" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="AMG1L"></div>
-</details></details><details markdown="1" class="stock-profile" id="share-arc1t" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>ARC1T — Arco Vara</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank 65</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100034653/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3AARC1T" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/ARC1T.TL/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="AMG1L" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile" id="share-arc1t" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" hidden data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>ARC1T — Arco Vara | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100034653/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3AARC1T" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/ARC1T.TL/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 1.0150</td><td>-0.388571</td><td>10 / 78</td><td>32.05</td><td>BUY</td><td>HOLD</td><td>0.195</td><td>EUR 0.0300</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>1.015000</td>
+      <td>-0.136752</td>
+      <td>23</td>
+      <td>39</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -9584,10 +9802,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/ARC1T-regimes.html?v=2bd632b6dd05" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/ARC1T-long-history.html?v=411472b8f622" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -9694,7 +9912,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -9785,12 +10003,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 1.0150, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="ARC1T"></div>
+<div class="dominance-explorer" data-asset="ARC1T" data-target="ARC1T" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="ARC1T"></div>
-</details></details><details markdown="1" class="stock-profile" id="share-aug1l" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>AUG1L — AUGA group</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank 69</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LT0000127466/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3AAUG1L" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/AUG1L.VS/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="ARC1T" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile" id="share-aug1l" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>AUG1L — AUGA group | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LT0000127466/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3AAUG1L" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/AUG1L.VS/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 0.0748</td><td>-0.582857</td><td>12 / 114</td><td>44.25</td><td>BUY</td><td>HOLD</td><td>0.716</td><td>EUR 0.0000</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>0.074800</td>
+      <td>-1.000000</td>
+      <td>0</td>
+      <td>117</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -9908,10 +10151,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/AUG1L-regimes.html?v=f65a2dcbbd14" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/AUG1L-long-history.html?v=49c77cc2dca8" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -10018,7 +10261,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -10109,12 +10352,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 0.0748, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="AUG1L"></div>
+<div class="dominance-explorer" data-asset="AUG1L" data-target="AUG1L" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="AUG1L"></div>
-</details></details><details markdown="1" class="stock-profile" id="share-bal1r" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>BAL1R — Amber Latvijas balzams</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank 86</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LV0000100808/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXRSE%3ABAL1R" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/BAL1R.RG/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="AUG1L" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile" id="share-bal1r" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" hidden data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>BAL1R — Amber Latvijas balzams | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LV0000100808/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXRSE%3ABAL1R" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/BAL1R.RG/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 0.9000</td><td>-1.000000</td><td>0 / 175</td><td>44.00</td><td>BUY</td><td>HOLD</td><td>0.902</td><td>EUR 0.2400</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>0.900000</td>
+      <td>-0.940171</td>
+      <td>1</td>
+      <td>111</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -10232,10 +10500,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/BAL1R-regimes.html?v=8c5958d831bf" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/BAL1R-long-history.html?v=da5f783bdce9" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -10342,7 +10610,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -10433,12 +10701,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 0.9000, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="BAL1R"></div>
+<div class="dominance-explorer" data-asset="BAL1R" data-target="BAL1R" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="BAL1R"></div>
-</details></details><details markdown="1" class="stock-profile" id="share-bercm" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>BERCM — Bercman Technologies</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank 68</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100076407/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3ABERCM" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/lookup/?s=EE3100076407" target="_blank" rel="noopener noreferrer">Yahoo Finance: ISIN search ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Yahoo lookup is a search link, not a confirmed chart.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="BAL1R" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile" id="share-bercm" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>BERCM — Bercman Technologies | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100076407/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3ABERCM" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/lookup/?s=EE3100076407" target="_blank" rel="noopener noreferrer">Yahoo Finance: ISIN search ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Yahoo lookup is a search link, not a confirmed chart.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 1.0300</td><td>-0.497143</td><td>7 / 94</td><td>43.38</td><td>BUY</td><td>HOLD</td><td>0.690</td><td>EUR 0.0000</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>1.030000</td>
+      <td>-0.863248</td>
+      <td>3</td>
+      <td>104</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -10556,10 +10849,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/BERCM-regimes.html?v=abc3e64f9471" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/BERCM-long-history.html?v=343dc69d1389" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -10666,7 +10959,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -10757,12 +11050,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 1.0300, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="BERCM"></div>
+<div class="dominance-explorer" data-asset="BERCM" data-target="BERCM" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="BERCM"></div>
-</details></details><details markdown="1" class="stock-profile" id="share-cts1l" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>CTS1L — City Service</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank 44</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100126368/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3ACTS1L" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/lookup/?s=EE3100126368" target="_blank" rel="noopener noreferrer">Yahoo Finance: ISIN search ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Yahoo lookup is a search link, not a confirmed chart.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="BERCM" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile" id="share-cts1l" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>CTS1L — City Service | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100126368/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3ACTS1L" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/lookup/?s=EE3100126368" target="_blank" rel="noopener noreferrer">Yahoo Finance: ISIN search ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Yahoo lookup is a search link, not a confirmed chart.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 1.3000</td><td>0.040000</td><td>7 / 0</td><td>85.05</td><td>SELL</td><td>HOLD</td><td>1.000</td><td>EUR 0.0000</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>1.300000</td>
+      <td>-0.794872</td>
+      <td>0</td>
+      <td>93</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -10880,10 +11198,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/CTS1L-regimes.html?v=9bc8c9757d9b" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/CTS1L-long-history.html?v=1cf8807d8fb6" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -10990,7 +11308,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -11081,12 +11399,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 1.3000, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="CTS1L"></div>
+<div class="dominance-explorer" data-asset="CTS1L" data-target="CTS1L" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="CTS1L"></div>
-</details></details><details markdown="1" class="stock-profile" id="share-eft1t" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" hidden data-portfolio-scopes="ANY UPDATE2" data-sale-membership='{"ANY":["NO_SALE","SALE"],"STOCHASTIC":[],"UPDATE2":["NO_SALE","SALE"],"UPDATE3":[],"ALL":["NO_SALE","SALE"]}'><summary><strong>EFT1T — EfTEN Real Estate Fund</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank 34</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100127242/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3AEFT1T" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/EFT1T.TL/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="CTS1L" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile" id="share-eft1t" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" hidden data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>EFT1T — EfTEN Real Estate Fund | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100127242/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3AEFT1T" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/EFT1T.TL/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 19.5500</td><td>0.211429</td><td>53 / 16</td><td>53.88</td><td>BUY</td><td>HOLD</td><td>0.611</td><td>EUR 0.8925</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>19.550000</td>
+      <td>0.162393</td>
+      <td>30</td>
+      <td>11</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -11204,10 +11547,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/EFT1T-regimes.html?v=c0880b29d207" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/EFT1T-long-history.html?v=b9f184aaea64" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -11314,7 +11657,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -11405,340 +11748,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 19.5500, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="EFT1T"></div>
+<div class="dominance-explorer" data-asset="EFT1T" data-target="EFT1T" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="EFT1T"></div>
-</details></details><details markdown="1" class="stock-profile" id="share-ejtc" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>EJTC — Estonian Japan Trading Company</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank unavailable</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100008996/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3AEJTC" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/lookup/?s=EE3100008996" target="_blank" rel="noopener noreferrer">Yahoo Finance: ISIN search ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Yahoo lookup is a search link, not a confirmed chart.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="EFT1T" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile" id="share-ewa1l" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" hidden data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>EWA1L — East West Agro | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LT0000132060/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3AEWA1L" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/lookup/?s=LT0000132060" target="_blank" rel="noopener noreferrer">Yahoo Finance: ISIN search ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Yahoo lookup is a search link, not a confirmed chart.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>EUR 0.0000</td></tr></tbody></table>
-
-<p><strong>Insufficient data:</strong> Official source returned no usable price history. Available observations: 0. No forecast or performance measures are fabricated.</p></details><details markdown="1" class="stock-profile" id="share-elevr" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>ELEVR — Eleving Group</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank 23</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LU2818110020/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXRSE%3AELEVR" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/ELEVR.RG/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
-
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 1.6750</td><td>0.297143</td><td>60 / 8</td><td>46.43</td><td>SELL</td><td>HOLD</td><td>0.403</td><td>EUR 0.0411</td></tr></tbody></table>
-
-<details markdown="1" class="instrument-extra-details">
-<summary>Additional instrument details</summary>
-
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/ELEVR-additional.html?v=76620d1b3b18" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
-
-</details>
-
-
-
-<p>Research profile, not an additional purchase instruction. Portfolio filters describe membership; technical indicator signals are separate from allocation decisions.</p>
-
-
-
-<details markdown="1" class=""><summary><strong>Bollinger bands, MACD, RSI and Stochastic RSI — last 126 observations</strong></summary>
-<img loading="lazy" src="figures/stock_profiles/ELEVR_technicals_6m.png?v=b68c16ecf789">
-
-<table markdown="0" class="dataframe research-table">
+<table markdown="0" class="dataframe research-table long-history-table">
   <thead>
     <tr style="text-align: right;">
-      <th>Indicator</th>
-      <th>Current value</th>
-      <th>BUY price</th>
-      <th>SELL price</th>
-      <th>Current signal</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Bollinger price</td>
-      <td>EUR 1.6750</td>
-      <td>≤ EUR 1.6688 (-0.37%)</td>
-      <td>≥ EUR 1.6887 (+0.82%)</td>
-      <td>HOLD</td>
-    </tr>
-    <tr>
-      <td>RSI(14)</td>
-      <td>46.43</td>
-      <td>≤ EUR 1.6535 (-1.28%)</td>
-      <td>≥ EUR 1.7154 (+2.41%)</td>
-      <td>HOLD</td>
-    </tr>
-    <tr>
-      <td>Stochastic RSI %K</td>
-      <td>0.403</td>
-      <td>—</td>
-      <td>—</td>
-      <td>HOLD</td>
-    </tr>
-    <tr>
-      <td>MACD</td>
-      <td>MACD = -0.0027<br>Signal = -0.0021<br>Gap = -0.0006</td>
-      <td>—</td>
-      <td>—</td>
-      <td>SELL</td>
-    </tr>
-    <tr>
-      <td>Consensus</td>
-      <td>BUY 0/4; SELL 1/4</td>
-      <td>At least 3 BUY votes</td>
-      <td>At least 3 SELL votes</td>
-      <td>HOLD</td>
-    </tr>
-  </tbody>
-</table>
-
-</details>
-
-<!-- WEEKLY_FORECAST_ELEVR_START -->
-<details markdown="0" open class="weekly-forecast" id="forecast-ELEVR" data-forecast-asset="ELEVR">
-<summary><strong>One-week price forecast - all methods in one graph</strong></summary>
-<img loading="lazy" src="figures/weekly_forecasts/ELEVR.png?v=81fd833f2fa1" alt="Eleving Group: all forecasting methods on one graph">
-<p>Colours, line patterns and markers distinguish the methods; the selected method has a thicker line. Coincident paths indicate similar forecasts. Prediction ranges are listed below. E-codes mark scheduled events listed under Seven-day performance inputs and upcoming events.</p>
-<p><strong>Central forecast for 2026-11-06: EUR 1.6750 (+0.00%)</strong>; 90% empirical range EUR 1.6546–1.6957. Last observed close / NAV: EUR 1.6750, 2026-10-30. <strong>LOW CONFIDENCE.</strong></p>
-<p><strong>Models with cross-asset dependencies:</strong> Dependency Ridge, Dependency Extra Trees and Dependency Gradient boosting. Held-out MAE before adding these candidates: 0.273 pp; selected forecast now: 0.273 pp; error improvement +0.0% (positive = lower error; negative = worse). Selection uses validation data only; the held-out result does not influence selection.</p><div class="weekly-table-scroll">
-
-<table markdown="0" class="weekly-table "><thead><tr><th>Peer used by dependency models</th><th>Lagged correlation</th><th>Training pairs</th></tr></thead><tbody><tr><td>SE0026821472</td><td>+0.377</td><td>252</td></tr><tr><td>GRG1L</td><td>+0.192</td><td>252</td></tr><tr><td>DGR1R</td><td>-0.154</td><td>252</td></tr><tr><td>EWA1L</td><td>+0.142</td><td>252</td></tr><tr><td>PRIMO</td><td>+0.135</td><td>252</td></tr></tbody></table>
-
-</div>
-<p>Forecast prepared 2026-11-01; window 2026-11-02–2026-11-06. Model: <strong>No change</strong>. Horizon from the last observed price: 5 observations. This includes any unpublished days before the displayed week. Fund dates are indicative NAV valuation days; publication and market holidays may delay availability.</p>
-<ul class="forecast-cautions"><li>Held-out forecast did not improve on the unchanged-price benchmark by 2%</li><li>No demonstrated directional advantage in the small held-out sample</li></ul><div class="weekly-table-scroll">
-
-<table markdown="0" class="weekly-table "><thead><tr><th>Valuation / trading date</th><th>Central EUR</th><th>Lower 90% EUR</th><th>Upper 90% EUR</th></tr></thead><tbody><tr><td>2026-11-02</td><td>1.6750</td><td>1.6636</td><td>1.6865</td></tr><tr><td>2026-11-03</td><td>1.6750</td><td>1.6579</td><td>1.6923</td></tr><tr><td>2026-11-04</td><td>1.6750</td><td>1.6590</td><td>1.6912</td></tr><tr><td>2026-11-05</td><td>1.6750</td><td>1.6561</td><td>1.6941</td></tr><tr><td>2026-11-06</td><td>1.6750</td><td>1.6546</td><td>1.6957</td></tr></tbody></table>
-
-</div><p><strong>Held-out evidence:</strong> average absolute return-forecast error 0.273 percentage points; unchanged-price benchmark 0.273 pp; improvement +0.0%. Coverage of the validation-calibrated 90% interval: 100.0% across 12 held-out windows. Unchanged returns in the last 126 observations: 44.4%.</p><p>Direction test: BH-adjusted p=1.0000 across all 67 instruments; 0 nonzero-direction comparisons. A flat central forecast means no detected predictable drift, not zero risk.</p>
-<details markdown="1"><summary>Seven-day performance inputs and upcoming events</summary><div class="weekly-table-scroll">
-
-<table markdown="0" class="weekly-table "><thead><tr><th>7-observation input (ratios not annualised)</th><th>Current value</th></tr></thead><tbody><tr><td>Compounded 7-day return</td><td>0.000%</td></tr><tr><td>Mean daily return</td><td>0.000%</td></tr><tr><td>Daily SD</td><td>0.244%</td></tr><tr><td>Downside deviation</td><td>0.160%</td></tr><tr><td>Sharpe ratio</td><td>0.0010</td></tr><tr><td>Sortino ratio</td><td>0.0016</td></tr><tr><td>Omega ratio</td><td>1.0030</td></tr><tr><td>7-day return / maximum drawdown</td><td>0.0000</td></tr><tr><td>Empirical 95% VaR</td><td>0.299%</td></tr><tr><td>Empirical 95% CVaR (worst of 7)</td><td>0.299%</td></tr><tr><td>Maximum drawdown</td><td>0.299%</td></tr><tr><td>Skewness</td><td>0.0033</td></tr><tr><td>Excess kurtosis</td><td>-1.2000</td></tr><tr><td>Unchanged-return fraction</td><td>42.857%</td></tr></tbody></table>
-
-</div><p>Return and risk entries are percentages; ratios are not annualised. VaR/CVaR use the loss sign: a negative value corresponds to a gain.</p><div class="weekly-table-scroll">
-
-<table markdown="0" class="weekly-table "><thead><tr><th>Chart code</th><th>Date</th><th>Event</th><th>Model knowledge date</th><th>Official source</th></tr></thead><tbody><tr><td>E1</td><td>2026-11-03</td><td>US Job Openings and Labor Turnover Survey</td><td>2026-10-31</td><td><a href="https://www.bls.gov/schedule/2026/11_sched.htm" target="_blank" rel="noopener">Open</a></td></tr><tr><td>E2</td><td>2026-11-05</td><td>US Productivity and Costs</td><td>2026-10-31</td><td><a href="https://www.bls.gov/schedule/2026/11_sched.htm" target="_blank" rel="noopener">Open</a></td></tr><tr><td>E3</td><td>2026-11-06</td><td>US Employment Situation</td><td>2026-10-31</td><td><a href="https://www.bls.gov/schedule/2026/11_sched.htm" target="_blank" rel="noopener">Open</a></td></tr></tbody></table>
-
-</div><p>Upcoming event categories without historical training examples: macro. Their specific price or volatility effect is not established.</p><p>Neural safeguard: historically constant inputs held at their training value: calendar macro next7. The event calendar remains visible for context.</p><p>Conditional one-week realised-variation proxy: 0.783%. Forecast ranges use rolling residuals normalised by a training-only Ridge volatility proxy; this is not a guarantee of interval coverage.</p></details>
-<details markdown="1"><summary>Compare all forecast methods and backtest errors</summary>
-<div class="weekly-table-scroll">
-
-<table markdown="0" class="weekly-table "><thead><tr><th>Method</th><th>Week-end EUR</th><th>Change</th><th>90% range EUR</th><th>Validation MAE, pp</th><th>Held-out MAE, pp</th><th>Fit</th></tr></thead><tbody><tr><td>No change <strong>SELECTED</strong></td><td>1.6750</td><td>+0.00%</td><td>1.6546–1.6957</td><td>0.297</td><td>0.273</td><td>OK</td></tr><tr><td>Validation ensemble</td><td>1.6746</td><td>-0.03%</td><td>1.6540–1.6954</td><td>0.298</td><td>0.271</td><td>OK</td></tr><tr><td>AR(1)-GARCH-t</td><td>1.6738</td><td>-0.07%</td><td>1.6530–1.6949</td><td>0.301</td><td>0.260</td><td>OK</td></tr><tr><td>Historical drift</td><td>1.6749</td><td>-0.01%</td><td>1.6545–1.6955</td><td>0.306</td><td>0.284</td><td>OK</td></tr><tr><td>Damped ETS</td><td>1.6737</td><td>-0.08%</td><td>1.6520–1.6957</td><td>0.318</td><td>0.284</td><td>OK</td></tr><tr><td>ARIMA(1,1,1)</td><td>1.6737</td><td>-0.08%</td><td>1.6520–1.6956</td><td>0.320</td><td>0.283</td><td>OK</td></tr><tr><td>Ridge regression</td><td>1.6749</td><td>-0.00%</td><td>1.6569–1.6932</td><td>0.351</td><td>0.343</td><td>OK</td></tr><tr><td>Dependency Extra Trees</td><td>1.6734</td><td>-0.10%</td><td>1.6545–1.6924</td><td>0.357</td><td>0.313</td><td>OK</td></tr><tr><td>Extra Trees</td><td>1.6758</td><td>+0.05%</td><td>1.6567–1.6950</td><td>0.376</td><td>0.339</td><td>OK</td></tr><tr><td>Dependency Gradient boosting</td><td>1.6745</td><td>-0.03%</td><td>1.6580–1.6911</td><td>0.389</td><td>0.304</td><td>OK</td></tr><tr><td>Gradient boosting</td><td>1.6737</td><td>-0.07%</td><td>1.6529–1.6949</td><td>0.391</td><td>0.452</td><td>OK</td></tr><tr><td>Dependency Ridge</td><td>1.6725</td><td>-0.15%</td><td>1.6528–1.6925</td><td>0.413</td><td>0.441</td><td>OK</td></tr><tr><td>Neural network MLP</td><td>1.6722</td><td>-0.17%</td><td>1.6486–1.6961</td><td>0.554</td><td>0.539</td><td>OK</td></tr></tbody></table>
-
-</div>
-</details>
-<details markdown="1"><summary>How these forecasts were built and tested</summary>
-<p>24 non-overlapping rolling-origin windows: the first 12 select the model and ensemble weights; the final 12 assess that frozen choice. Every fit uses only prices and matured training targets available at its origin. The unchanged-price forecast is retained unless validation MAE improves by at least 2%. Hyperparameters are fixed before testing. A current fit failure is explicitly labelled and falls back to no change.</p>
-<p>ARIMA and damped exponential smoothing model log prices. AR(1)–GARCH with Student-t errors estimates the conditional return mean and volatility jointly: GARCH alone does not predict price direction. AI methods are Ridge, Extra Trees, gradient boosting and a small neural network; inputs are past returns, momentum and volatility, not an LLM or future news.</p>
-<p>Each fit uses up to 630 past price observations or matured ML training examples. Fixed ML settings: Ridge penalty 50; 60 Extra Trees (depth 5); gradient boosting with 55 iterations; neural network with 24 and 12 hidden units. Feature and target scaling are fitted only on the training set. Unstable model forecasts implying more than a 100-fold weekly price change are rejected with a diagnostic, never clipped.</p>
-<p>The central price is a back-transformed log-price estimate, not a guaranteed arithmetic mean. The displayed 90% range is calibrated from absolute rolling log-forecast errors; its coverage is approximate, not guaranteed. Illiquid unchanged quotes can make measured errors and ranges artificially small. Scheduled event dates are predictors; exact dividend/corporate-action price adjustments are not mechanically imposed. Unannounced earnings/news, spreads and execution prices remain outside these forecasts. NAV expenses are already embedded. Forecasts do not override the existing BUY / WAIT / HOLD / SELL rules.</p><p><strong>Cross-asset models:</strong> the three dependency models add lagged S&amp;P 500 USD returns, leave-one-out Baltic and fund return factors, and five peers selected by absolute correlation inside each trailing 252-observation training window. All external return series are delayed by two business days. Inputs include lagged returns, 5/7/20-observation averages, 7/20-observation volatility, 7-observation beta and trailing 7/60-observation correlations with the target. Correlation is a predictor, not a claim of causation. The same conservative lag is used in validation and live forecasts.</p><p>Dependency Ridge uses penalty 100; the tree models use the fixed settings above. Missing predictors are replaced by zero within the fitted pipeline; scaling and mature-target training use training data only. The current instrument universe is fixed, so survivorship bias remains possible. Historical fund NAV publication timestamps are unavailable; the two-day buffer is an assumption, not proof of historical execution availability. The original independent-model ensemble remains frozen; the added models compete individually using the first 12 windows. The final 12 windows evaluate the frozen choice.</p><p><strong>Seven-observation inputs:</strong> compounded and average return, SD, downside/upside deviation, Sharpe, Sortino, Omega, Calmar-style return/drawdown, empirical VaR/CVaR, drawdown, ulcer index, skewness, kurtosis, positive/unchanged-return fractions and autocorrelation. Ratios use zero risk-free return and zero minimum acceptable return; they are not annualised. With seven observations, empirical 95% CVaR reduces to the worst observation, so it is a noisy short-window feature, not a reliable tail-risk estimate. Undefined performance ratios have an explicit indicator and a neutral model placeholder.</p><p><strong>Calendar inputs:</strong> upcoming 1/7-business-day and recent 7-calendar-day counts by event type, plus weekday/month seasonality. Historical schedule dates are used only when the exact date is verified in a timestamped publication. Unverified schedules and the BLS macro calendar are available only from the current snapshot date; they are never backdated. The schedule is not exhaustive and uses event dates, not intraday release times; after-close announcements may affect the next trading session. An event date does not reveal an earnings surprise or guarantee a price direction. Event categories absent from training have no demonstrated learned effect. Predictors that were constant in every past usable feature row are held at their training value for the live neural forecast, preventing random neural responses to first-ever calendar inputs; this changes no historical validation/test input. The volatility proxy is shrunk halfway toward the training RMS baseline and bounded by the range of its training targets to prevent numerical extrapolation. Models also forecast realised variation using matured targets; conditional-scale-normalised residuals calibrate prediction ranges, with held-out coverage assessed separately.</p><p>Methods: <a href="https://arch.readthedocs.io/en/latest/univariate/forecasting.html" target="_blank" rel="noopener">arch forecasting</a>; <a href="https://scikit-learn.org/stable/auto_examples/applications/plot_time_series_lagged_features.html" target="_blank" rel="noopener">time-series ML validation</a>.</p>
-</details>
-</details>
-<!-- WEEKLY_FORECAST_ELEVR_END -->
-
-
-<details markdown="1" class=""><summary><strong>Complete technical history</strong></summary>
-<img loading="lazy" src="figures/stock_profiles/ELEVR_technicals_full.png?v=23a8818d86c1">
-</details>
-
-<!-- REGIME_ASSET_START -->
-
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
-
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/ELEVR-regimes.html?v=2ed636d379e3" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
-
-</details>
-
-<!-- REGIME_ASSET_END -->
-
-<details markdown="1" class=""><summary><strong>Seasonals, drawdowns and upside periods</strong></summary>
-<p>Maximum drawdown -3.49% on 2026-07-07; best daily return 1.49% on 2026-08-31; worst -2.04% on 2025-11-20. Exploratory historical statistics, not validated timing rules.</p>
-
-<table markdown="0" class="dataframe research-table">
-  <thead>
-    <tr style="text-align: right;">
-      <th>date</th>
-      <th>count</th>
-      <th>mean</th>
-      <th>median</th>
-      <th>std</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>21</td>
-      <td>0.000007</td>
-      <td>0.000000</td>
-      <td>0.001655</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>20</td>
-      <td>0.000285</td>
-      <td>0.000000</td>
-      <td>0.002491</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>22</td>
-      <td>-0.000603</td>
-      <td>-0.000356</td>
-      <td>0.002007</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>20</td>
-      <td>0.000094</td>
-      <td>0.000000</td>
-      <td>0.003422</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>19</td>
-      <td>0.000313</td>
-      <td>0.000000</td>
-      <td>0.002176</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>21</td>
-      <td>-0.000558</td>
-      <td>0.000000</td>
-      <td>0.003327</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>23</td>
-      <td>0.000008</td>
-      <td>0.000000</td>
-      <td>0.004037</td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>21</td>
-      <td>0.000574</td>
-      <td>0.000000</td>
-      <td>0.004577</td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td>22</td>
-      <td>-0.000257</td>
-      <td>0.000000</td>
-      <td>0.004909</td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td>44</td>
-      <td>-0.000242</td>
-      <td>0.000000</td>
-      <td>0.003064</td>
-    </tr>
-    <tr>
-      <td>11</td>
-      <td>20</td>
-      <td>-0.000340</td>
-      <td>0.000294</td>
-      <td>0.004974</td>
-    </tr>
-    <tr>
-      <td>12</td>
-      <td>19</td>
-      <td>0.000942</td>
-      <td>0.000000</td>
-      <td>0.003149</td>
-    </tr>
-  </tbody>
-</table>
-
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
-
-<table markdown="0" class="dataframe research-table">
-  <thead>
-    <tr style="text-align: right;">
-      <th>Measure</th>
-      <th>Full baseline</th>
-      <th>After change</th>
+      <th>Current units</th>
+      <th>Target units</th>
       <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>netSD</td>
-      <td>0.702857</td>
-      <td>0.702857</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
       <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>OUT</td>
-      <td>123.000000</td>
-      <td>123.000000</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>IN</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Rachev</td>
-      <td>1.555495</td>
-      <td>1.555495</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Sortino</td>
-      <td>0.377445</td>
-      <td>0.377445</td>
-      <td>0.000000</td>
+      <td>10.900000</td>
+      <td>-0.273504</td>
+      <td>21</td>
+      <td>53</td>
     </tr>
   </tbody>
 </table>
-
-<h4>Removing this holding from the corrected main plan</h4>
-
-<table markdown="0" class="dataframe research-table">
-  <thead>
-    <tr style="text-align: right;">
-      <th>Measure</th>
-      <th>Full baseline</th>
-      <th>After change</th>
-      <th>Change</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>netSD</td>
-      <td>0.885714</td>
-      <td>0.885714</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>OUT</td>
-      <td>155.000000</td>
-      <td>155.000000</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>IN</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Rachev</td>
-      <td>1.872334</td>
-      <td>1.872334</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Sortino</td>
-      <td>0.610105</td>
-      <td>0.610105</td>
-      <td>0.000000</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>Addition uses 0 extra units at EUR 1.6750, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="ELEVR"></div>
-</details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="ELEVR"></div>
-</details></details><details markdown="1" class="stock-profile" id="share-ewa1l" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>EWA1L — East West Agro</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank 80</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LT0000132060/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3AEWA1L" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/lookup/?s=LT0000132060" target="_blank" rel="noopener noreferrer">Yahoo Finance: ISIN search ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Yahoo lookup is a search link, not a confirmed chart.</p><!-- EXTERNAL_CHART_LINKS_END -->
-
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 10.9000</td><td>-0.720000</td><td>6 / 132</td><td>41.68</td><td>BUY</td><td>HOLD</td><td>0.797</td><td>EUR 0.6600</td></tr></tbody></table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -11856,10 +11896,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/EWA1L-regimes.html?v=37486e0383d7" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/EWA1L-long-history.html?v=e19a619e8df7" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -11966,7 +12006,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -12057,340 +12097,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 10.9000, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="EWA1L"></div>
+<div class="dominance-explorer" data-asset="EWA1L" data-target="EWA1L" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="EWA1L"></div>
-</details></details><details markdown="1" class="stock-profile" id="share-frgte" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>FRGTE — Frigate</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank unavailable</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LV0000101665/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXRSE%3AFRGTE" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/FRGTE.RG/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="EWA1L" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile" id="share-hpr1t" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" hidden data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>HPR1T — Hepsor | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100082306/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3AHPR1T" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/HPR1T.TL/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>EUR 0.0000</td></tr></tbody></table>
-
-<p><strong>Insufficient data:</strong> Official source returned no usable price history. Available observations: 0. No forecast or performance measures are fabricated.</p></details><details markdown="1" class="stock-profile" id="share-grb2g" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>GRB2G — Grab2Go</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank 85</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100107194/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3AGRB2G" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/lookup/?s=EE3100107194" target="_blank" rel="noopener noreferrer">Yahoo Finance: ISIN search ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Yahoo lookup is a search link, not a confirmed chart.</p><!-- EXTERNAL_CHART_LINKS_END -->
-
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 0.0320</td><td>-0.954286</td><td>1 / 168</td><td>41.91</td><td>BUY</td><td>HOLD</td><td>0.656</td><td>EUR 0.0000</td></tr></tbody></table>
-
-<details markdown="1" class="instrument-extra-details">
-<summary>Additional instrument details</summary>
-
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/GRB2G-additional.html?v=9b9ceea8bbeb" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
-
-</details>
-
-
-
-<p>Research profile, not an additional purchase instruction. Portfolio filters describe membership; technical indicator signals are separate from allocation decisions.</p>
-
-
-
-<details markdown="1" class=""><summary><strong>Bollinger bands, MACD, RSI and Stochastic RSI — last 126 observations</strong></summary>
-<img loading="lazy" src="figures/stock_profiles/GRB2G_technicals_6m.png?v=6171acb645ba">
-
-<table markdown="0" class="dataframe research-table">
+<table markdown="0" class="dataframe research-table long-history-table">
   <thead>
     <tr style="text-align: right;">
-      <th>Indicator</th>
-      <th>Current value</th>
-      <th>BUY price</th>
-      <th>SELL price</th>
-      <th>Current signal</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Bollinger price</td>
-      <td>EUR 0.0320</td>
-      <td>≤ EUR 0.0297 (-7.17%)</td>
-      <td>≥ EUR 0.0398 (+24.36%)</td>
-      <td>HOLD</td>
-    </tr>
-    <tr>
-      <td>RSI(14)</td>
-      <td>41.91</td>
-      <td>≤ EUR 0.0205 (-35.91%)</td>
-      <td>≥ EUR 0.0518 (+61.74%)</td>
-      <td>HOLD</td>
-    </tr>
-    <tr>
-      <td>Stochastic RSI %K</td>
-      <td>0.656</td>
-      <td>—</td>
-      <td>≥ EUR 0.0379 (+18.51%)</td>
-      <td>HOLD</td>
-    </tr>
-    <tr>
-      <td>MACD</td>
-      <td>MACD = -0.0010<br>Signal = -0.0014<br>Gap = +0.0004</td>
-      <td>—</td>
-      <td>—</td>
-      <td>BUY</td>
-    </tr>
-    <tr>
-      <td>Consensus</td>
-      <td>BUY 1/4; SELL 0/4</td>
-      <td>At least 3 BUY votes</td>
-      <td>At least 3 SELL votes</td>
-      <td>HOLD</td>
-    </tr>
-  </tbody>
-</table>
-
-</details>
-
-<!-- WEEKLY_FORECAST_GRB2G_START -->
-<details markdown="0" open class="weekly-forecast" id="forecast-GRB2G" data-forecast-asset="GRB2G">
-<summary><strong>One-week price forecast - all methods in one graph</strong></summary>
-<img loading="lazy" src="figures/weekly_forecasts/GRB2G.png?v=5122b59d656b" alt="Grab2Go: all forecasting methods on one graph">
-<p>Colours, line patterns and markers distinguish the methods; the selected method has a thicker line. Coincident paths indicate similar forecasts. Prediction ranges are listed below. E-codes mark scheduled events listed under Seven-day performance inputs and upcoming events.</p>
-<p><strong>Central forecast for 2026-11-06: EUR 0.0336 (+4.97%)</strong>; 90% empirical range EUR 0.0273–0.0413. Last observed close / NAV: EUR 0.0320, 2026-10-30. <strong>LOW CONFIDENCE.</strong></p>
-<p><strong>Models with cross-asset dependencies:</strong> Dependency Ridge, Dependency Extra Trees and Dependency Gradient boosting. Held-out MAE before adding these candidates: 5.298 pp; selected forecast now: 5.298 pp; error improvement +0.0% (positive = lower error; negative = worse). Selection uses validation data only; the held-out result does not influence selection.</p><div class="weekly-table-scroll">
-
-<table markdown="0" class="weekly-table "><thead><tr><th>Peer used by dependency models</th><th>Lagged correlation</th><th>Training pairs</th></tr></thead><tbody><tr><td>MOLNR</td><td>-0.184</td><td>252</td></tr><tr><td>TPD1T</td><td>-0.172</td><td>252</td></tr><tr><td>ROE1L</td><td>-0.170</td><td>252</td></tr><tr><td>LHV1T</td><td>-0.149</td><td>252</td></tr><tr><td>ELEVR</td><td>-0.131</td><td>252</td></tr></tbody></table>
-
-</div>
-<p>Forecast prepared 2026-11-01; window 2026-11-02–2026-11-06. Model: <strong>Damped ETS</strong>. Horizon from the last observed price: 5 observations. This includes any unpublished days before the displayed week. Fund dates are indicative NAV valuation days; publication and market holidays may delay availability.</p>
-<ul class="forecast-cautions"><li>Thin trading / unchanged quotes: intervals can understate executable-price risk</li><li>No demonstrated directional advantage in the small held-out sample</li></ul><div class="weekly-table-scroll">
-
-<table markdown="0" class="weekly-table "><thead><tr><th>Valuation / trading date</th><th>Central EUR</th><th>Lower 90% EUR</th><th>Upper 90% EUR</th></tr></thead><tbody><tr><td>2026-11-02</td><td>0.0339</td><td>0.0293</td><td>0.0391</td></tr><tr><td>2026-11-03</td><td>0.0338</td><td>0.0280</td><td>0.0408</td></tr><tr><td>2026-11-04</td><td>0.0337</td><td>0.0300</td><td>0.0380</td></tr><tr><td>2026-11-05</td><td>0.0337</td><td>0.0295</td><td>0.0385</td></tr><tr><td>2026-11-06</td><td>0.0336</td><td>0.0273</td><td>0.0413</td></tr></tbody></table>
-
-</div><p><strong>Held-out evidence:</strong> average absolute return-forecast error 5.298 percentage points; unchanged-price benchmark 5.907 pp; improvement +10.3%. Coverage of the validation-calibrated 90% interval: 91.7% across 12 held-out windows. Unchanged returns in the last 126 observations: 55.6%.</p><p>Direction test: BH-adjusted p=1.0000 across all 67 instruments; 10 nonzero-direction comparisons. A flat central forecast means no detected predictable drift, not zero risk.</p>
-<details markdown="1"><summary>Seven-day performance inputs and upcoming events</summary><div class="weekly-table-scroll">
-
-<table markdown="0" class="weekly-table "><thead><tr><th>7-observation input (ratios not annualised)</th><th>Current value</th></tr></thead><tbody><tr><td>Compounded 7-day return</td><td>-5.882%</td></tr><tr><td>Mean daily return</td><td>-0.467%</td></tr><tr><td>Daily SD</td><td>9.696%</td></tr><tr><td>Downside deviation</td><td>6.026%</td></tr><tr><td>Sharpe ratio</td><td>-0.0482</td></tr><tr><td>Sortino ratio</td><td>-0.0775</td></tr><tr><td>Omega ratio</td><td>0.8437</td></tr><tr><td>7-day return / maximum drawdown</td><td>-0.2941</td></tr><tr><td>Empirical 95% VaR</td><td>12.142%</td></tr><tr><td>Empirical 95% CVaR (worst of 7)</td><td>14.667%</td></tr><tr><td>Maximum drawdown</td><td>20.000%</td></tr><tr><td>Skewness</td><td>0.7392</td></tr><tr><td>Excess kurtosis</td><td>2.4906</td></tr><tr><td>Unchanged-return fraction</td><td>57.143%</td></tr></tbody></table>
-
-</div><p>Return and risk entries are percentages; ratios are not annualised. VaR/CVaR use the loss sign: a negative value corresponds to a gain.</p><div class="weekly-table-scroll">
-
-<table markdown="0" class="weekly-table "><thead><tr><th>Chart code</th><th>Date</th><th>Event</th><th>Model knowledge date</th><th>Official source</th></tr></thead><tbody><tr><td>E1</td><td>2026-11-03</td><td>US Job Openings and Labor Turnover Survey</td><td>2026-10-31</td><td><a href="https://www.bls.gov/schedule/2026/11_sched.htm" target="_blank" rel="noopener">Open</a></td></tr><tr><td>E2</td><td>2026-11-05</td><td>US Productivity and Costs</td><td>2026-10-31</td><td><a href="https://www.bls.gov/schedule/2026/11_sched.htm" target="_blank" rel="noopener">Open</a></td></tr><tr><td>E3</td><td>2026-11-06</td><td>US Employment Situation</td><td>2026-10-31</td><td><a href="https://www.bls.gov/schedule/2026/11_sched.htm" target="_blank" rel="noopener">Open</a></td></tr></tbody></table>
-
-</div><p>Upcoming event categories without historical training examples: macro. Their specific price or volatility effect is not established.</p><p>Neural safeguard: historically constant inputs held at their training value: calendar macro next7. The event calendar remains visible for context.</p><p>Conditional one-week realised-variation proxy: 10.511%. Forecast ranges use rolling residuals normalised by a training-only Ridge volatility proxy; this is not a guarantee of interval coverage.</p></details>
-<details markdown="1"><summary>Compare all forecast methods and backtest errors</summary>
-<div class="weekly-table-scroll">
-
-<table markdown="0" class="weekly-table "><thead><tr><th>Method</th><th>Week-end EUR</th><th>Change</th><th>90% range EUR</th><th>Validation MAE, pp</th><th>Held-out MAE, pp</th><th>Fit</th></tr></thead><tbody><tr><td>Damped ETS <strong>SELECTED</strong></td><td>0.0336</td><td>+4.97%</td><td>0.0273–0.0413</td><td>5.125</td><td>5.298</td><td>OK</td></tr><tr><td>ARIMA(1,1,1)</td><td>0.0334</td><td>+4.43%</td><td>0.0276–0.0404</td><td>5.233</td><td>5.210</td><td>OK</td></tr><tr><td>Dependency Ridge</td><td>0.0330</td><td>+3.13%</td><td>0.0272–0.0400</td><td>5.315</td><td>6.182</td><td>OK</td></tr><tr><td>Validation ensemble</td><td>0.0330</td><td>+3.23%</td><td>0.0269–0.0405</td><td>5.351</td><td>5.363</td><td>OK</td></tr><tr><td>Dependency Gradient boosting</td><td>0.0336</td><td>+4.93%</td><td>0.0292–0.0386</td><td>5.469</td><td>5.391</td><td>OK</td></tr><tr><td>Dependency Extra Trees</td><td>0.0323</td><td>+0.81%</td><td>0.0280–0.0372</td><td>5.507</td><td>5.321</td><td>OK</td></tr><tr><td>AR(1)-GARCH-t</td><td>0.0326</td><td>+1.91%</td><td>0.0265–0.0401</td><td>5.530</td><td>5.468</td><td>OK</td></tr><tr><td>No change</td><td>0.0320</td><td>+0.00%</td><td>0.0262–0.0391</td><td>5.819</td><td>5.907</td><td>OK</td></tr><tr><td>Extra Trees</td><td>0.0327</td><td>+2.26%</td><td>0.0268–0.0399</td><td>6.016</td><td>5.380</td><td>OK</td></tr><tr><td>Historical drift</td><td>0.0315</td><td>-1.46%</td><td>0.0265–0.0376</td><td>6.331</td><td>5.458</td><td>OK</td></tr><tr><td>Ridge regression</td><td>0.0332</td><td>+3.90%</td><td>0.0274–0.0404</td><td>6.342</td><td>5.852</td><td>OK</td></tr><tr><td>Neural network MLP</td><td>0.0353</td><td>+10.45%</td><td>0.0302–0.0414</td><td>6.522</td><td>5.335</td><td>OK</td></tr><tr><td>Gradient boosting</td><td>0.0330</td><td>+3.17%</td><td>0.0272–0.0400</td><td>7.240</td><td>5.766</td><td>OK</td></tr></tbody></table>
-
-</div>
-</details>
-<details markdown="1"><summary>How these forecasts were built and tested</summary>
-<p>24 non-overlapping rolling-origin windows: the first 12 select the model and ensemble weights; the final 12 assess that frozen choice. Every fit uses only prices and matured training targets available at its origin. The unchanged-price forecast is retained unless validation MAE improves by at least 2%. Hyperparameters are fixed before testing. A current fit failure is explicitly labelled and falls back to no change.</p>
-<p>ARIMA and damped exponential smoothing model log prices. AR(1)–GARCH with Student-t errors estimates the conditional return mean and volatility jointly: GARCH alone does not predict price direction. AI methods are Ridge, Extra Trees, gradient boosting and a small neural network; inputs are past returns, momentum and volatility, not an LLM or future news.</p>
-<p>Each fit uses up to 630 past price observations or matured ML training examples. Fixed ML settings: Ridge penalty 50; 60 Extra Trees (depth 5); gradient boosting with 55 iterations; neural network with 24 and 12 hidden units. Feature and target scaling are fitted only on the training set. Unstable model forecasts implying more than a 100-fold weekly price change are rejected with a diagnostic, never clipped.</p>
-<p>The central price is a back-transformed log-price estimate, not a guaranteed arithmetic mean. The displayed 90% range is calibrated from absolute rolling log-forecast errors; its coverage is approximate, not guaranteed. Illiquid unchanged quotes can make measured errors and ranges artificially small. Scheduled event dates are predictors; exact dividend/corporate-action price adjustments are not mechanically imposed. Unannounced earnings/news, spreads and execution prices remain outside these forecasts. NAV expenses are already embedded. Forecasts do not override the existing BUY / WAIT / HOLD / SELL rules.</p><p><strong>Cross-asset models:</strong> the three dependency models add lagged S&amp;P 500 USD returns, leave-one-out Baltic and fund return factors, and five peers selected by absolute correlation inside each trailing 252-observation training window. All external return series are delayed by two business days. Inputs include lagged returns, 5/7/20-observation averages, 7/20-observation volatility, 7-observation beta and trailing 7/60-observation correlations with the target. Correlation is a predictor, not a claim of causation. The same conservative lag is used in validation and live forecasts.</p><p>Dependency Ridge uses penalty 100; the tree models use the fixed settings above. Missing predictors are replaced by zero within the fitted pipeline; scaling and mature-target training use training data only. The current instrument universe is fixed, so survivorship bias remains possible. Historical fund NAV publication timestamps are unavailable; the two-day buffer is an assumption, not proof of historical execution availability. The original independent-model ensemble remains frozen; the added models compete individually using the first 12 windows. The final 12 windows evaluate the frozen choice.</p><p><strong>Seven-observation inputs:</strong> compounded and average return, SD, downside/upside deviation, Sharpe, Sortino, Omega, Calmar-style return/drawdown, empirical VaR/CVaR, drawdown, ulcer index, skewness, kurtosis, positive/unchanged-return fractions and autocorrelation. Ratios use zero risk-free return and zero minimum acceptable return; they are not annualised. With seven observations, empirical 95% CVaR reduces to the worst observation, so it is a noisy short-window feature, not a reliable tail-risk estimate. Undefined performance ratios have an explicit indicator and a neutral model placeholder.</p><p><strong>Calendar inputs:</strong> upcoming 1/7-business-day and recent 7-calendar-day counts by event type, plus weekday/month seasonality. Historical schedule dates are used only when the exact date is verified in a timestamped publication. Unverified schedules and the BLS macro calendar are available only from the current snapshot date; they are never backdated. The schedule is not exhaustive and uses event dates, not intraday release times; after-close announcements may affect the next trading session. An event date does not reveal an earnings surprise or guarantee a price direction. Event categories absent from training have no demonstrated learned effect. Predictors that were constant in every past usable feature row are held at their training value for the live neural forecast, preventing random neural responses to first-ever calendar inputs; this changes no historical validation/test input. The volatility proxy is shrunk halfway toward the training RMS baseline and bounded by the range of its training targets to prevent numerical extrapolation. Models also forecast realised variation using matured targets; conditional-scale-normalised residuals calibrate prediction ranges, with held-out coverage assessed separately.</p><p>Methods: <a href="https://arch.readthedocs.io/en/latest/univariate/forecasting.html" target="_blank" rel="noopener">arch forecasting</a>; <a href="https://scikit-learn.org/stable/auto_examples/applications/plot_time_series_lagged_features.html" target="_blank" rel="noopener">time-series ML validation</a>.</p>
-</details>
-</details>
-<!-- WEEKLY_FORECAST_GRB2G_END -->
-
-
-<details markdown="1" class=""><summary><strong>Complete technical history</strong></summary>
-<img loading="lazy" src="figures/stock_profiles/GRB2G_technicals_full.png?v=3153289b171f">
-</details>
-
-<!-- REGIME_ASSET_START -->
-
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
-
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/GRB2G-regimes.html?v=919f20e076f7" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
-
-</details>
-
-<!-- REGIME_ASSET_END -->
-
-<details markdown="1" class=""><summary><strong>Seasonals, drawdowns and upside periods</strong></summary>
-<p>Maximum drawdown -73.39% on 2026-10-20; best daily return 30.00% on 2026-10-06; worst -26.61% on 2025-10-03. Exploratory historical statistics, not validated timing rules.</p>
-
-<table markdown="0" class="dataframe research-table">
-  <thead>
-    <tr style="text-align: right;">
-      <th>date</th>
-      <th>count</th>
-      <th>mean</th>
-      <th>median</th>
-      <th>std</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>21</td>
-      <td>-0.002034</td>
-      <td>0.000000</td>
-      <td>0.036461</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>20</td>
-      <td>-0.012109</td>
-      <td>0.000000</td>
-      <td>0.032106</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>22</td>
-      <td>-0.001122</td>
-      <td>0.000000</td>
-      <td>0.076554</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>20</td>
-      <td>0.010861</td>
-      <td>0.000000</td>
-      <td>0.093592</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>19</td>
-      <td>-0.002826</td>
-      <td>0.000000</td>
-      <td>0.050669</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>21</td>
-      <td>0.005857</td>
-      <td>0.000000</td>
-      <td>0.030910</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>23</td>
-      <td>-0.003295</td>
-      <td>0.000000</td>
-      <td>0.072004</td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>21</td>
-      <td>-0.008809</td>
-      <td>0.000000</td>
-      <td>0.040247</td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td>22</td>
-      <td>0.001276</td>
-      <td>0.000000</td>
-      <td>0.051853</td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td>44</td>
-      <td>-0.006638</td>
-      <td>0.000000</td>
-      <td>0.096318</td>
-    </tr>
-    <tr>
-      <td>11</td>
-      <td>20</td>
-      <td>-0.008060</td>
-      <td>0.000000</td>
-      <td>0.045421</td>
-    </tr>
-    <tr>
-      <td>12</td>
-      <td>19</td>
-      <td>0.004792</td>
-      <td>0.000000</td>
-      <td>0.048068</td>
-    </tr>
-  </tbody>
-</table>
-
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
-
-<table markdown="0" class="dataframe research-table">
-  <thead>
-    <tr style="text-align: right;">
-      <th>Measure</th>
-      <th>Full baseline</th>
-      <th>After change</th>
+      <th>Current units</th>
+      <th>Target units</th>
       <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>netSD</td>
-      <td>0.702857</td>
-      <td>0.702857</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
       <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>OUT</td>
-      <td>123.000000</td>
-      <td>123.000000</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>IN</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Rachev</td>
-      <td>1.555495</td>
-      <td>1.555495</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Sortino</td>
-      <td>0.377445</td>
-      <td>0.377445</td>
-      <td>0.000000</td>
+      <td>4.370000</td>
+      <td>-0.367521</td>
+      <td>17</td>
+      <td>60</td>
     </tr>
   </tbody>
 </table>
-
-<h4>Removing this holding from the corrected main plan</h4>
-
-<table markdown="0" class="dataframe research-table">
-  <thead>
-    <tr style="text-align: right;">
-      <th>Measure</th>
-      <th>Full baseline</th>
-      <th>After change</th>
-      <th>Change</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>netSD</td>
-      <td>0.885714</td>
-      <td>0.885714</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>OUT</td>
-      <td>155.000000</td>
-      <td>155.000000</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>IN</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Rachev</td>
-      <td>1.872334</td>
-      <td>1.872334</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Sortino</td>
-      <td>0.610105</td>
-      <td>0.610105</td>
-      <td>0.000000</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>Addition uses 0 extra units at EUR 0.0320, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="GRB2G"></div>
-</details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="GRB2G"></div>
-</details></details><details markdown="1" class="stock-profile" id="share-hpr1t" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>HPR1T — Hepsor</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank 66</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100082306/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3AHPR1T" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/HPR1T.TL/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
-
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 4.3700</td><td>-0.445714</td><td>12 / 90</td><td>42.44</td><td>SELL</td><td>HOLD</td><td>0.270</td><td>EUR 0.1060</td></tr></tbody></table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -12508,10 +12245,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/HPR1T-regimes.html?v=716b8c1ae6e5" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/HPR1T-long-history.html?v=7867086eb084" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -12618,7 +12355,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -12709,336 +12446,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 4.3700, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="HPR1T"></div>
+<div class="dominance-explorer" data-asset="HPR1T" data-target="HPR1T" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="HPR1T"></div>
-</details></details><details markdown="1" class="stock-profile" id="share-idx1r" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>IDX1R — INDEXO</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank 35</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LV0000113751/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXRSE%3AIDX1R" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/IDX1R.RG/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="HPR1T" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile" id="share-ign1l" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" hidden data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>IGN1L — Ignitis grupė | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LT0000115768/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3AIGN1L" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/IGN1L.VS/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 2.6450</td><td>0.188571</td><td>64 / 31</td><td>62.79</td><td>BUY</td><td>HOLD</td><td>0.719</td><td>EUR 0.0000</td></tr></tbody></table>
-
-<details markdown="1" class="instrument-extra-details">
-<summary>Additional instrument details</summary>
-
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/IDX1R-additional.html?v=9b9ceea8bbeb" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
-
-</details>
-
-
-
-<p>Research profile, not an additional purchase instruction. Portfolio filters describe membership; technical indicator signals are separate from allocation decisions.</p>
-
-
-
-<details markdown="1" class=""><summary><strong>Bollinger bands, MACD, RSI and Stochastic RSI — last 126 observations</strong></summary>
-<img loading="lazy" src="figures/stock_profiles/IDX1R_technicals_6m.png?v=8bb1461be0ec">
-
-<table markdown="0" class="dataframe research-table">
+<table markdown="0" class="dataframe research-table long-history-table">
   <thead>
     <tr style="text-align: right;">
-      <th>Indicator</th>
-      <th>Current value</th>
-      <th>BUY price</th>
-      <th>SELL price</th>
-      <th>Current signal</th>
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Bollinger price</td>
-      <td>EUR 2.6450</td>
-      <td>≤ EUR 2.3068 (-12.79%)</td>
-      <td>≥ EUR 2.7258 (+3.05%)</td>
-      <td>HOLD</td>
-    </tr>
-    <tr>
-      <td>RSI(14)</td>
-      <td>62.79</td>
-      <td>≤ EUR 2.0022 (-24.30%)</td>
-      <td>≥ EUR 2.7396 (+3.58%)</td>
-      <td>HOLD</td>
-    </tr>
-    <tr>
-      <td>Stochastic RSI %K</td>
-      <td>0.719</td>
-      <td>—</td>
-      <td>≥ EUR 2.7654 (+4.55%)</td>
-      <td>HOLD</td>
-    </tr>
-    <tr>
-      <td>MACD</td>
-      <td>MACD = 0.0737<br>Signal = 0.0525<br>Gap = +0.0212</td>
-      <td>—</td>
-      <td>—</td>
-      <td>BUY</td>
-    </tr>
-    <tr>
-      <td>Consensus</td>
-      <td>BUY 1/4; SELL 0/4</td>
-      <td>At least 3 BUY votes</td>
-      <td>At least 3 SELL votes</td>
-      <td>HOLD</td>
-    </tr>
-  </tbody>
-</table>
-
-</details>
-
-<!-- WEEKLY_FORECAST_IDX1R_START -->
-<details markdown="0" open class="weekly-forecast" id="forecast-IDX1R" data-forecast-asset="IDX1R">
-<summary><strong>One-week price forecast - all methods in one graph</strong></summary>
-<img loading="lazy" src="figures/weekly_forecasts/IDX1R.png?v=aa5586498535" alt="INDEXO: all forecasting methods on one graph">
-<p>Colours, line patterns and markers distinguish the methods; the selected method has a thicker line. Coincident paths indicate similar forecasts. Prediction ranges are listed below. E-codes mark scheduled events listed under Seven-day performance inputs and upcoming events.</p>
-<p><strong>Central forecast for 2026-11-06: EUR 2.6450 (+0.00%)</strong>; 90% empirical range EUR 2.5532–2.7401. Last observed close / NAV: EUR 2.6450, 2026-10-30. <strong>LOW CONFIDENCE.</strong></p>
-<p><strong>Models with cross-asset dependencies:</strong> Dependency Ridge, Dependency Extra Trees and Dependency Gradient boosting. Held-out MAE before adding these candidates: 1.894 pp; selected forecast now: 1.894 pp; error improvement +0.0% (positive = lower error; negative = worse). Selection uses validation data only; the held-out result does not influence selection.</p><div class="weekly-table-scroll">
-
-<table markdown="0" class="weekly-table "><thead><tr><th>Peer used by dependency models</th><th>Lagged correlation</th><th>Training pairs</th></tr></thead><tbody><tr><td>INF1T</td><td>+0.179</td><td>252</td></tr><tr><td>AUG1L</td><td>-0.174</td><td>252</td></tr><tr><td>INR1L</td><td>-0.144</td><td>252</td></tr><tr><td>EFT1T</td><td>+0.142</td><td>252</td></tr><tr><td>INC1L</td><td>+0.114</td><td>252</td></tr></tbody></table>
-
-</div>
-<p>Forecast prepared 2026-11-01; window 2026-11-02–2026-11-06. Model: <strong>No change</strong>. Horizon from the last observed price: 5 observations. This includes any unpublished days before the displayed week. Fund dates are indicative NAV valuation days; publication and market holidays may delay availability.</p>
-<ul class="forecast-cautions"><li>Held-out forecast did not improve on the unchanged-price benchmark by 2%</li><li>No demonstrated directional advantage in the small held-out sample</li></ul><div class="weekly-table-scroll">
-
-<table markdown="0" class="weekly-table "><thead><tr><th>Valuation / trading date</th><th>Central EUR</th><th>Lower 90% EUR</th><th>Upper 90% EUR</th></tr></thead><tbody><tr><td>2026-11-02</td><td>2.6450</td><td>2.5808</td><td>2.7107</td></tr><tr><td>2026-11-03</td><td>2.6450</td><td>2.5317</td><td>2.7633</td></tr><tr><td>2026-11-04</td><td>2.6450</td><td>2.5500</td><td>2.7436</td></tr><tr><td>2026-11-05</td><td>2.6450</td><td>2.5571</td><td>2.7360</td></tr><tr><td>2026-11-06</td><td>2.6450</td><td>2.5532</td><td>2.7401</td></tr></tbody></table>
-
-</div><p><strong>Held-out evidence:</strong> average absolute return-forecast error 1.894 percentage points; unchanged-price benchmark 1.894 pp; improvement +0.0%. Coverage of the validation-calibrated 90% interval: 75.0% across 12 held-out windows. Unchanged returns in the last 126 observations: 13.5%.</p><p>Direction test: BH-adjusted p=1.0000 across all 67 instruments; 0 nonzero-direction comparisons. A flat central forecast means no detected predictable drift, not zero risk.</p>
-<details markdown="1"><summary>Seven-day performance inputs and upcoming events</summary><div class="weekly-table-scroll">
-
-<table markdown="0" class="weekly-table "><thead><tr><th>7-observation input (ratios not annualised)</th><th>Current value</th></tr></thead><tbody><tr><td>Compounded 7-day return</td><td>10.208%</td></tr><tr><td>Mean daily return</td><td>1.446%</td></tr><tr><td>Daily SD</td><td>3.356%</td></tr><tr><td>Downside deviation</td><td>1.394%</td></tr><tr><td>Sharpe ratio</td><td>0.4308</td></tr><tr><td>Sortino ratio</td><td>1.0374</td></tr><tr><td>Omega ratio</td><td>2.9669</td></tr><tr><td>7-day return / maximum drawdown</td><td>2.1791</td></tr><tr><td>Empirical 95% VaR</td><td>2.788%</td></tr><tr><td>Empirical 95% CVaR (worst of 7)</td><td>3.423%</td></tr><tr><td>Maximum drawdown</td><td>4.685%</td></tr><tr><td>Skewness</td><td>-0.0422</td></tr><tr><td>Excess kurtosis</td><td>-0.8483</td></tr><tr><td>Unchanged-return fraction</td><td>0.000%</td></tr></tbody></table>
-
-</div><p>Return and risk entries are percentages; ratios are not annualised. VaR/CVaR use the loss sign: a negative value corresponds to a gain.</p><div class="weekly-table-scroll">
-
-<table markdown="0" class="weekly-table "><thead><tr><th>Chart code</th><th>Date</th><th>Event</th><th>Model knowledge date</th><th>Official source</th></tr></thead><tbody><tr><td>E1</td><td>2026-11-03</td><td>US Job Openings and Labor Turnover Survey</td><td>2026-10-31</td><td><a href="https://www.bls.gov/schedule/2026/11_sched.htm" target="_blank" rel="noopener">Open</a></td></tr><tr><td>E2</td><td>2026-11-05</td><td>US Productivity and Costs</td><td>2026-10-31</td><td><a href="https://www.bls.gov/schedule/2026/11_sched.htm" target="_blank" rel="noopener">Open</a></td></tr><tr><td>E3</td><td>2026-11-06</td><td>US Employment Situation</td><td>2026-10-31</td><td><a href="https://www.bls.gov/schedule/2026/11_sched.htm" target="_blank" rel="noopener">Open</a></td></tr></tbody></table>
-
-</div><p>Upcoming event categories without historical training examples: macro. Their specific price or volatility effect is not established.</p><p>Neural safeguard: historically constant inputs held at their training value: calendar macro next7. The event calendar remains visible for context.</p><p>Conditional one-week realised-variation proxy: 2.457%. Forecast ranges use rolling residuals normalised by a training-only Ridge volatility proxy; this is not a guarantee of interval coverage.</p></details>
-<details markdown="1"><summary>Compare all forecast methods and backtest errors</summary>
-<div class="weekly-table-scroll">
-
-<table markdown="0" class="weekly-table "><thead><tr><th>Method</th><th>Week-end EUR</th><th>Change</th><th>90% range EUR</th><th>Validation MAE, pp</th><th>Held-out MAE, pp</th><th>Fit</th></tr></thead><tbody><tr><td>No change <strong>SELECTED</strong></td><td>2.6450</td><td>+0.00%</td><td>2.5532–2.7401</td><td>0.879</td><td>1.894</td><td>OK</td></tr><tr><td>Historical drift</td><td>2.6490</td><td>+0.15%</td><td>2.5567–2.7447</td><td>0.876</td><td>1.946</td><td>OK</td></tr><tr><td>Validation ensemble</td><td>2.6470</td><td>+0.08%</td><td>2.5557–2.7416</td><td>0.877</td><td>1.920</td><td>OK</td></tr><tr><td>Dependency Extra Trees</td><td>2.6758</td><td>+1.16%</td><td>2.5782–2.7770</td><td>0.915</td><td>1.884</td><td>OK</td></tr><tr><td>ARIMA(1,1,1)</td><td>2.6441</td><td>-0.04%</td><td>2.5442–2.7478</td><td>0.956</td><td>2.159</td><td>OK</td></tr><tr><td>Extra Trees</td><td>2.6637</td><td>+0.71%</td><td>2.5564–2.7754</td><td>0.969</td><td>2.172</td><td>OK</td></tr><tr><td>Damped ETS</td><td>2.6524</td><td>+0.28%</td><td>2.5585–2.7497</td><td>0.972</td><td>2.084</td><td>OK</td></tr><tr><td>Gradient boosting</td><td>2.6569</td><td>+0.45%</td><td>2.5429–2.7761</td><td>1.009</td><td>2.382</td><td>OK</td></tr><tr><td>AR(1)-GARCH-t</td><td>2.6367</td><td>-0.31%</td><td>2.5307–2.7472</td><td>1.023</td><td>2.303</td><td>OK</td></tr><tr><td>Ridge regression</td><td>2.6494</td><td>+0.17%</td><td>2.5338–2.7703</td><td>1.130</td><td>2.160</td><td>OK</td></tr><tr><td>Dependency Gradient boosting</td><td>2.6705</td><td>+0.97%</td><td>2.5615–2.7842</td><td>1.221</td><td>1.933</td><td>OK</td></tr><tr><td>Neural network MLP</td><td>2.7039</td><td>+2.23%</td><td>2.5860–2.8272</td><td>1.405</td><td>1.993</td><td>OK</td></tr><tr><td>Dependency Ridge</td><td>2.7019</td><td>+2.15%</td><td>2.5548–2.8575</td><td>1.944</td><td>2.563</td><td>OK</td></tr></tbody></table>
-
-</div>
-</details>
-<details markdown="1"><summary>How these forecasts were built and tested</summary>
-<p>24 non-overlapping rolling-origin windows: the first 12 select the model and ensemble weights; the final 12 assess that frozen choice. Every fit uses only prices and matured training targets available at its origin. The unchanged-price forecast is retained unless validation MAE improves by at least 2%. Hyperparameters are fixed before testing. A current fit failure is explicitly labelled and falls back to no change.</p>
-<p>ARIMA and damped exponential smoothing model log prices. AR(1)–GARCH with Student-t errors estimates the conditional return mean and volatility jointly: GARCH alone does not predict price direction. AI methods are Ridge, Extra Trees, gradient boosting and a small neural network; inputs are past returns, momentum and volatility, not an LLM or future news.</p>
-<p>Each fit uses up to 630 past price observations or matured ML training examples. Fixed ML settings: Ridge penalty 50; 60 Extra Trees (depth 5); gradient boosting with 55 iterations; neural network with 24 and 12 hidden units. Feature and target scaling are fitted only on the training set. Unstable model forecasts implying more than a 100-fold weekly price change are rejected with a diagnostic, never clipped.</p>
-<p>The central price is a back-transformed log-price estimate, not a guaranteed arithmetic mean. The displayed 90% range is calibrated from absolute rolling log-forecast errors; its coverage is approximate, not guaranteed. Illiquid unchanged quotes can make measured errors and ranges artificially small. Scheduled event dates are predictors; exact dividend/corporate-action price adjustments are not mechanically imposed. Unannounced earnings/news, spreads and execution prices remain outside these forecasts. NAV expenses are already embedded. Forecasts do not override the existing BUY / WAIT / HOLD / SELL rules.</p><p><strong>Cross-asset models:</strong> the three dependency models add lagged S&amp;P 500 USD returns, leave-one-out Baltic and fund return factors, and five peers selected by absolute correlation inside each trailing 252-observation training window. All external return series are delayed by two business days. Inputs include lagged returns, 5/7/20-observation averages, 7/20-observation volatility, 7-observation beta and trailing 7/60-observation correlations with the target. Correlation is a predictor, not a claim of causation. The same conservative lag is used in validation and live forecasts.</p><p>Dependency Ridge uses penalty 100; the tree models use the fixed settings above. Missing predictors are replaced by zero within the fitted pipeline; scaling and mature-target training use training data only. The current instrument universe is fixed, so survivorship bias remains possible. Historical fund NAV publication timestamps are unavailable; the two-day buffer is an assumption, not proof of historical execution availability. The original independent-model ensemble remains frozen; the added models compete individually using the first 12 windows. The final 12 windows evaluate the frozen choice.</p><p><strong>Seven-observation inputs:</strong> compounded and average return, SD, downside/upside deviation, Sharpe, Sortino, Omega, Calmar-style return/drawdown, empirical VaR/CVaR, drawdown, ulcer index, skewness, kurtosis, positive/unchanged-return fractions and autocorrelation. Ratios use zero risk-free return and zero minimum acceptable return; they are not annualised. With seven observations, empirical 95% CVaR reduces to the worst observation, so it is a noisy short-window feature, not a reliable tail-risk estimate. Undefined performance ratios have an explicit indicator and a neutral model placeholder.</p><p><strong>Calendar inputs:</strong> upcoming 1/7-business-day and recent 7-calendar-day counts by event type, plus weekday/month seasonality. Historical schedule dates are used only when the exact date is verified in a timestamped publication. Unverified schedules and the BLS macro calendar are available only from the current snapshot date; they are never backdated. The schedule is not exhaustive and uses event dates, not intraday release times; after-close announcements may affect the next trading session. An event date does not reveal an earnings surprise or guarantee a price direction. Event categories absent from training have no demonstrated learned effect. Predictors that were constant in every past usable feature row are held at their training value for the live neural forecast, preventing random neural responses to first-ever calendar inputs; this changes no historical validation/test input. The volatility proxy is shrunk halfway toward the training RMS baseline and bounded by the range of its training targets to prevent numerical extrapolation. Models also forecast realised variation using matured targets; conditional-scale-normalised residuals calibrate prediction ranges, with held-out coverage assessed separately.</p><p>Methods: <a href="https://arch.readthedocs.io/en/latest/univariate/forecasting.html" target="_blank" rel="noopener">arch forecasting</a>; <a href="https://scikit-learn.org/stable/auto_examples/applications/plot_time_series_lagged_features.html" target="_blank" rel="noopener">time-series ML validation</a>.</p>
-</details>
-</details>
-<!-- WEEKLY_FORECAST_IDX1R_END -->
-
-
-<details markdown="1" class=""><summary><strong>Complete technical history</strong></summary>
-<img loading="lazy" src="figures/stock_profiles/IDX1R_technicals_full.png?v=356bd55bb42d">
-</details>
-
-<!-- REGIME_ASSET_START -->
-
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
-
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/IDX1R-regimes.html?v=f353b403886c" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
-
-</details>
-
-<!-- REGIME_ASSET_END -->
-
-<details markdown="1" class=""><summary><strong>Seasonals, drawdowns and upside periods</strong></summary>
-<p>Maximum drawdown -15.22% on 2026-06-19; best daily return 6.28% on 2026-10-23; worst -3.42% on 2026-10-29. Exploratory historical statistics, not validated timing rules.</p>
-
-<table markdown="0" class="dataframe research-table">
-  <thead>
-    <tr style="text-align: right;">
-      <th>date</th>
-      <th>count</th>
-      <th>mean</th>
-      <th>median</th>
-      <th>std</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>21</td>
-      <td>0.000119</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
       <td>0.000000</td>
-      <td>0.006206</td>
-    </tr>
-    <tr>
+      <td>21.550000</td>
+      <td>0.495726</td>
+      <td>60</td>
       <td>2</td>
-      <td>20</td>
-      <td>0.000112</td>
-      <td>0.000000</td>
-      <td>0.003818</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>22</td>
-      <td>-0.003044</td>
-      <td>-0.002130</td>
-      <td>0.006327</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>20</td>
-      <td>-0.001196</td>
-      <td>0.000000</td>
-      <td>0.011018</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>19</td>
-      <td>0.000139</td>
-      <td>0.000000</td>
-      <td>0.006137</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>21</td>
-      <td>0.000119</td>
-      <td>-0.002299</td>
-      <td>0.004373</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>23</td>
-      <td>0.001413</td>
-      <td>0.000000</td>
-      <td>0.008590</td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>21</td>
-      <td>0.001645</td>
-      <td>0.000000</td>
-      <td>0.012877</td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td>22</td>
-      <td>0.001914</td>
-      <td>0.000000</td>
-      <td>0.013671</td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td>44</td>
-      <td>0.002631</td>
-      <td>0.000000</td>
-      <td>0.015869</td>
-    </tr>
-    <tr>
-      <td>11</td>
-      <td>20</td>
-      <td>-0.000073</td>
-      <td>-0.001031</td>
-      <td>0.008056</td>
-    </tr>
-    <tr>
-      <td>12</td>
-      <td>19</td>
-      <td>-0.001144</td>
-      <td>0.000000</td>
-      <td>0.011695</td>
     </tr>
   </tbody>
 </table>
-
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
-
-<table markdown="0" class="dataframe research-table">
-  <thead>
-    <tr style="text-align: right;">
-      <th>Measure</th>
-      <th>Full baseline</th>
-      <th>After change</th>
-      <th>Change</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>netSD</td>
-      <td>0.702857</td>
-      <td>0.702857</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>OUT</td>
-      <td>123.000000</td>
-      <td>123.000000</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>IN</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Rachev</td>
-      <td>1.555495</td>
-      <td>1.555495</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Sortino</td>
-      <td>0.377445</td>
-      <td>0.377445</td>
-      <td>0.000000</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4>Removing this holding from the corrected main plan</h4>
-
-<table markdown="0" class="dataframe research-table">
-  <thead>
-    <tr style="text-align: right;">
-      <th>Measure</th>
-      <th>Full baseline</th>
-      <th>After change</th>
-      <th>Change</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>netSD</td>
-      <td>0.885714</td>
-      <td>0.885714</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>OUT</td>
-      <td>155.000000</td>
-      <td>155.000000</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>IN</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Rachev</td>
-      <td>1.872334</td>
-      <td>1.872334</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Sortino</td>
-      <td>0.610105</td>
-      <td>0.610105</td>
-      <td>0.000000</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>Addition uses 0 extra units at EUR 2.6450, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="IDX1R"></div>
-</details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="IDX1R"></div>
-</details></details><details markdown="1" class="stock-profile" id="share-ign1l" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>IGN1L — Ignitis grupė</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank 23</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LT0000115768/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3AIGN1L" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/IGN1L.VS/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
-
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 21.5500</td><td>0.297143</td><td>68 / 16</td><td>39.65</td><td>SELL</td><td>HOLD</td><td>0.183</td><td>EUR 0.7838</td></tr></tbody></table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -13156,10 +12594,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/IGN1L-regimes.html?v=7ce5c0b257de" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/IGN1L-long-history.html?v=4add8a8e395b" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -13266,7 +12704,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -13357,29 +12795,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 21.5500, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="IGN1L"></div>
+<div class="dominance-explorer" data-asset="IGN1L" data-target="IGN1L" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="IGN1L"></div>
-</details></details><details markdown="1" class="stock-profile" id="share-igr1r" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>IGR1R — LAU Infra Grupa</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank unavailable</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LV0000110906/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXRSE%3AIGR1R" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/IGR1R.RG/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="IGN1L" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile" id="share-inc1l" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>INC1L — INVL Technology | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LT0000128860/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3AINC1L" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/INC1L.VS/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 1.5400</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>EUR 0.0000</td></tr></tbody></table>
-
-<p><strong>Insufficient data:</strong> Only 86 prices: cannot support &gt;120 finite training pairs plus disjoint rolling validation/test windows. Available observations: 86. No forecast or performance measures are fabricated.</p>
-
-<!-- REGIME_ASSET_START -->
-
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
-
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/IGR1R-regimes.html?v=b0da51c8a5ab" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
-
-</details>
-
-<!-- REGIME_ASSET_END -->
-
-</details><details markdown="1" class="stock-profile" id="share-inc1l" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>INC1L — INVL Technology</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank 15</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LT0000128860/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3AINC1L" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/INC1L.VS/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
-
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 5.3500</td><td>0.417143</td><td>75 / 2</td><td>61.62</td><td>SELL</td><td>HOLD</td><td>0.197</td><td>EUR 0.0000</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>5.350000</td>
+      <td>0.222222</td>
+      <td>32</td>
+      <td>6</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -13497,10 +12943,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/INC1L-regimes.html?v=0ae827997a86" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/INC1L-long-history.html?v=77ee69a6d31b" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -13607,7 +13053,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -13698,336 +13144,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 5.3500, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="INC1L"></div>
+<div class="dominance-explorer" data-asset="INC1L" data-target="INC1L" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="INC1L"></div>
-</details></details><details markdown="1" class="stock-profile" id="share-inf1t" data-signal="WAIT" data-netsd-effect="INCREASE" data-dividend-status="PAID" data-portfolio-scopes="ANY STOCHASTIC" data-sale-membership='{"ANY":["SALE"],"STOCHASTIC":["SALE"],"UPDATE2":[],"UPDATE3":[],"ALL":["SALE"]}'><summary><strong>INF1T — Infortar</strong> | current action: WAIT | allocation target 35 shares | netSD diagnostic rank 1</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100149394/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3AINF1T" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/INF1T.TL/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="INC1L" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile" id="share-inl1l" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" hidden data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>INL1L — INVL Baltic Farmland | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LT0000128753/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3AINL1L" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/INL1L.VS/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>35</td><td>+35</td><td>15.77%</td><td>EUR 67.6000</td><td>0.742857</td><td>130 / 0</td><td>72.05</td><td>SELL</td><td>HOLD</td><td>0.092</td><td>EUR 1.5020</td></tr></tbody></table>
-
-<details markdown="1" class="instrument-extra-details">
-<summary>Additional instrument details</summary>
-
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/INF1T-additional.html?v=41c2fb85981c" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
-
-</details>
-
-
-
-<p>Research profile, not an additional purchase instruction. Portfolio filters describe membership; technical indicator signals are separate from allocation decisions.</p>
-
-
-
-<details markdown="1" class=""><summary><strong>Bollinger bands, MACD, RSI and Stochastic RSI — last 126 observations</strong></summary>
-<img loading="lazy" src="figures/stock_profiles/INF1T_technicals_6m.png?v=28f483e7d097">
-
-<table markdown="0" class="dataframe research-table">
+<table markdown="0" class="dataframe research-table long-history-table">
   <thead>
     <tr style="text-align: right;">
-      <th>Indicator</th>
-      <th>Current value</th>
-      <th>BUY price</th>
-      <th>SELL price</th>
-      <th>Current signal</th>
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Bollinger price</td>
-      <td>EUR 67.6000</td>
-      <td>≤ EUR 61.7137 (-8.71%)</td>
-      <td>≥ EUR 69.6263 (+3.00%)</td>
-      <td>HOLD</td>
-    </tr>
-    <tr>
-      <td>RSI(14)</td>
-      <td>72.05</td>
-      <td>≤ EUR 58.3852 (-13.63%)</td>
-      <td>≥ EUR 67.4072 (-0.29%)</td>
-      <td>SELL</td>
-    </tr>
-    <tr>
-      <td>Stochastic RSI %K</td>
-      <td>0.092</td>
-      <td>≤ EUR 69.1441 (+2.28%)</td>
-      <td>—</td>
-      <td>BUY</td>
-    </tr>
-    <tr>
-      <td>MACD</td>
-      <td>MACD = 1.8386<br>Signal = 1.8832<br>Gap = -0.0445</td>
-      <td>—</td>
-      <td>—</td>
-      <td>SELL</td>
-    </tr>
-    <tr>
-      <td>Consensus</td>
-      <td>BUY 1/4; SELL 2/4</td>
-      <td>At least 3 BUY votes</td>
-      <td>At least 3 SELL votes</td>
-      <td>HOLD</td>
-    </tr>
-  </tbody>
-</table>
-
-</details>
-
-<!-- WEEKLY_FORECAST_INF1T_START -->
-<details markdown="0" open class="weekly-forecast" id="forecast-INF1T" data-forecast-asset="INF1T">
-<summary><strong>One-week price forecast - all methods in one graph</strong></summary>
-<img loading="lazy" src="figures/weekly_forecasts/INF1T.png?v=10cee0d9f3df" alt="Infortar: all forecasting methods on one graph">
-<p>Colours, line patterns and markers distinguish the methods; the selected method has a thicker line. Coincident paths indicate similar forecasts. Prediction ranges are listed below. E-codes mark scheduled events listed under Seven-day performance inputs and upcoming events.</p>
-<p><strong>Central forecast for 2026-11-06: EUR 68.2935 (+1.03%)</strong>; 90% empirical range EUR 64.5822–72.2181. Last observed close / NAV: EUR 67.6000, 2026-10-30. <strong>LOW CONFIDENCE.</strong></p>
-<p><strong>Models with cross-asset dependencies:</strong> Dependency Ridge, Dependency Extra Trees and Dependency Gradient boosting. Held-out MAE before adding these candidates: 2.122 pp; selected forecast now: 1.986 pp; error improvement +6.4% (positive = lower error; negative = worse). Selection uses validation data only; the held-out result does not influence selection.</p><div class="weekly-table-scroll">
-
-<table markdown="0" class="weekly-table "><thead><tr><th>Peer used by dependency models</th><th>Lagged correlation</th><th>Training pairs</th></tr></thead><tbody><tr><td>VBL1L</td><td>-0.179</td><td>252</td></tr><tr><td>NTU1L</td><td>+0.148</td><td>252</td></tr><tr><td>LINDA</td><td>-0.133</td><td>252</td></tr><tr><td>MODE</td><td>-0.130</td><td>252</td></tr><tr><td>TSM1T</td><td>-0.127</td><td>252</td></tr></tbody></table>
-
-</div>
-<p>Forecast prepared 2026-11-01; window 2026-11-02–2026-11-06. Model: <strong>Dependency Extra Trees</strong>. Horizon from the last observed price: 5 observations. This includes any unpublished days before the displayed week. Fund dates are indicative NAV valuation days; publication and market holidays may delay availability.</p>
-<ul class="forecast-cautions"><li>No demonstrated directional advantage in the small held-out sample</li></ul><div class="weekly-table-scroll">
-
-<table markdown="0" class="weekly-table "><thead><tr><th>Valuation / trading date</th><th>Central EUR</th><th>Lower 90% EUR</th><th>Upper 90% EUR</th></tr></thead><tbody><tr><td>2026-11-02</td><td>67.7441</td><td>66.3176</td><td>69.2013</td></tr><tr><td>2026-11-03</td><td>67.8887</td><td>65.4871</td><td>70.3785</td></tr><tr><td>2026-11-04</td><td>68.0407</td><td>64.8347</td><td>71.4053</td></tr><tr><td>2026-11-05</td><td>68.1589</td><td>64.1501</td><td>72.4181</td></tr><tr><td>2026-11-06</td><td>68.2935</td><td>64.5822</td><td>72.2181</td></tr></tbody></table>
-
-</div><p><strong>Held-out evidence:</strong> average absolute return-forecast error 1.986 percentage points; unchanged-price benchmark 2.134 pp; improvement +6.9%. Coverage of the validation-calibrated 90% interval: 100.0% across 12 held-out windows. Unchanged returns in the last 126 observations: 39.7%.</p><p>Direction test: BH-adjusted p=1.0000 across all 67 instruments; 9 nonzero-direction comparisons. A flat central forecast means no detected predictable drift, not zero risk.</p>
-<details markdown="1"><summary>Seven-day performance inputs and upcoming events</summary><div class="weekly-table-scroll">
-
-<table markdown="0" class="weekly-table "><thead><tr><th>7-observation input (ratios not annualised)</th><th>Current value</th></tr></thead><tbody><tr><td>Compounded 7-day return</td><td>-1.170%</td></tr><tr><td>Mean daily return</td><td>-0.166%</td></tr><tr><td>Daily SD</td><td>0.730%</td></tr><tr><td>Downside deviation</td><td>0.602%</td></tr><tr><td>Sharpe ratio</td><td>-0.2269</td></tr><tr><td>Sortino ratio</td><td>-0.2753</td></tr><tr><td>Omega ratio</td><td>0.5029</td></tr><tr><td>7-day return / maximum drawdown</td><td>-0.5764</td></tr><tr><td>Empirical 95% VaR</td><td>1.191%</td></tr><tr><td>Empirical 95% CVaR (worst of 7)</td><td>1.449%</td></tr><tr><td>Maximum drawdown</td><td>2.029%</td></tr><tr><td>Skewness</td><td>-0.5703</td></tr><tr><td>Excess kurtosis</td><td>1.1308</td></tr><tr><td>Unchanged-return fraction</td><td>28.571%</td></tr></tbody></table>
-
-</div><p>Return and risk entries are percentages; ratios are not annualised. VaR/CVaR use the loss sign: a negative value corresponds to a gain.</p><div class="weekly-table-scroll">
-
-<table markdown="0" class="weekly-table "><thead><tr><th>Chart code</th><th>Date</th><th>Event</th><th>Model knowledge date</th><th>Official source</th></tr></thead><tbody><tr><td>E1</td><td>2026-11-03</td><td>US Job Openings and Labor Turnover Survey</td><td>2026-10-31</td><td><a href="https://www.bls.gov/schedule/2026/11_sched.htm" target="_blank" rel="noopener">Open</a></td></tr><tr><td>E2</td><td>2026-11-05</td><td>US Productivity and Costs</td><td>2026-10-31</td><td><a href="https://www.bls.gov/schedule/2026/11_sched.htm" target="_blank" rel="noopener">Open</a></td></tr><tr><td>E3</td><td>2026-11-06</td><td>US Employment Situation</td><td>2026-10-31</td><td><a href="https://www.bls.gov/schedule/2026/11_sched.htm" target="_blank" rel="noopener">Open</a></td></tr></tbody></table>
-
-</div><p>Upcoming event categories without historical training examples: macro. Their specific price or volatility effect is not established.</p><p>Neural safeguard: historically constant inputs held at their training value: calendar macro next7. The event calendar remains visible for context.</p><p>Conditional one-week realised-variation proxy: 1.665%. Forecast ranges use rolling residuals normalised by a training-only Ridge volatility proxy; this is not a guarantee of interval coverage.</p></details>
-<details markdown="1"><summary>Compare all forecast methods and backtest errors</summary>
-<div class="weekly-table-scroll">
-
-<table markdown="0" class="weekly-table "><thead><tr><th>Method</th><th>Week-end EUR</th><th>Change</th><th>90% range EUR</th><th>Validation MAE, pp</th><th>Held-out MAE, pp</th><th>Fit</th></tr></thead><tbody><tr><td>Dependency Extra Trees <strong>SELECTED</strong></td><td>68.2935</td><td>+1.03%</td><td>64.5822–72.2181</td><td>1.071</td><td>1.986</td><td>OK</td></tr><tr><td>ARIMA(1,1,1)</td><td>67.9158</td><td>+0.47%</td><td>64.4169–71.6047</td><td>1.145</td><td>2.122</td><td>OK</td></tr><tr><td>Validation ensemble</td><td>67.7567</td><td>+0.23%</td><td>64.3265–71.3699</td><td>1.174</td><td>2.030</td><td>OK</td></tr><tr><td>Extra Trees</td><td>67.7358</td><td>+0.20%</td><td>64.6863–70.9290</td><td>1.218</td><td>1.873</td><td>OK</td></tr><tr><td>AR(1)-GARCH-t</td><td>67.6572</td><td>+0.08%</td><td>63.9559–71.5727</td><td>1.272</td><td>2.158</td><td>OK</td></tr><tr><td>Historical drift</td><td>68.2806</td><td>+1.01%</td><td>65.0219–71.7027</td><td>1.273</td><td>2.104</td><td>OK</td></tr><tr><td>Dependency Gradient boosting</td><td>68.5997</td><td>+1.48%</td><td>64.8959–72.5150</td><td>1.287</td><td>2.294</td><td>OK</td></tr><tr><td>No change</td><td>67.6000</td><td>+0.00%</td><td>63.8458–71.5750</td><td>1.292</td><td>2.134</td><td>OK</td></tr><tr><td>Damped ETS</td><td>67.6042</td><td>+0.01%</td><td>63.8488–71.5804</td><td>1.309</td><td>2.256</td><td>OK</td></tr><tr><td>Gradient boosting</td><td>67.7427</td><td>+0.21%</td><td>64.9402–70.6660</td><td>1.382</td><td>1.890</td><td>OK</td></tr><tr><td>Ridge regression</td><td>68.0647</td><td>+0.69%</td><td>64.7428–71.5569</td><td>1.443</td><td>2.107</td><td>OK</td></tr><tr><td>Dependency Ridge</td><td>68.7105</td><td>+1.64%</td><td>65.0295–72.5999</td><td>1.692</td><td>2.735</td><td>OK</td></tr><tr><td>Neural network MLP</td><td>68.0163</td><td>+0.62%</td><td>65.1594–70.9983</td><td>1.821</td><td>2.183</td><td>OK</td></tr></tbody></table>
-
-</div>
-</details>
-<details markdown="1"><summary>How these forecasts were built and tested</summary>
-<p>24 non-overlapping rolling-origin windows: the first 12 select the model and ensemble weights; the final 12 assess that frozen choice. Every fit uses only prices and matured training targets available at its origin. The unchanged-price forecast is retained unless validation MAE improves by at least 2%. Hyperparameters are fixed before testing. A current fit failure is explicitly labelled and falls back to no change.</p>
-<p>ARIMA and damped exponential smoothing model log prices. AR(1)–GARCH with Student-t errors estimates the conditional return mean and volatility jointly: GARCH alone does not predict price direction. AI methods are Ridge, Extra Trees, gradient boosting and a small neural network; inputs are past returns, momentum and volatility, not an LLM or future news.</p>
-<p>Each fit uses up to 630 past price observations or matured ML training examples. Fixed ML settings: Ridge penalty 50; 60 Extra Trees (depth 5); gradient boosting with 55 iterations; neural network with 24 and 12 hidden units. Feature and target scaling are fitted only on the training set. Unstable model forecasts implying more than a 100-fold weekly price change are rejected with a diagnostic, never clipped.</p>
-<p>The central price is a back-transformed log-price estimate, not a guaranteed arithmetic mean. The displayed 90% range is calibrated from absolute rolling log-forecast errors; its coverage is approximate, not guaranteed. Illiquid unchanged quotes can make measured errors and ranges artificially small. Scheduled event dates are predictors; exact dividend/corporate-action price adjustments are not mechanically imposed. Unannounced earnings/news, spreads and execution prices remain outside these forecasts. NAV expenses are already embedded. Forecasts do not override the existing BUY / WAIT / HOLD / SELL rules.</p><p><strong>Cross-asset models:</strong> the three dependency models add lagged S&amp;P 500 USD returns, leave-one-out Baltic and fund return factors, and five peers selected by absolute correlation inside each trailing 252-observation training window. All external return series are delayed by two business days. Inputs include lagged returns, 5/7/20-observation averages, 7/20-observation volatility, 7-observation beta and trailing 7/60-observation correlations with the target. Correlation is a predictor, not a claim of causation. The same conservative lag is used in validation and live forecasts.</p><p>Dependency Ridge uses penalty 100; the tree models use the fixed settings above. Missing predictors are replaced by zero within the fitted pipeline; scaling and mature-target training use training data only. The current instrument universe is fixed, so survivorship bias remains possible. Historical fund NAV publication timestamps are unavailable; the two-day buffer is an assumption, not proof of historical execution availability. The original independent-model ensemble remains frozen; the added models compete individually using the first 12 windows. The final 12 windows evaluate the frozen choice.</p><p><strong>Seven-observation inputs:</strong> compounded and average return, SD, downside/upside deviation, Sharpe, Sortino, Omega, Calmar-style return/drawdown, empirical VaR/CVaR, drawdown, ulcer index, skewness, kurtosis, positive/unchanged-return fractions and autocorrelation. Ratios use zero risk-free return and zero minimum acceptable return; they are not annualised. With seven observations, empirical 95% CVaR reduces to the worst observation, so it is a noisy short-window feature, not a reliable tail-risk estimate. Undefined performance ratios have an explicit indicator and a neutral model placeholder.</p><p><strong>Calendar inputs:</strong> upcoming 1/7-business-day and recent 7-calendar-day counts by event type, plus weekday/month seasonality. Historical schedule dates are used only when the exact date is verified in a timestamped publication. Unverified schedules and the BLS macro calendar are available only from the current snapshot date; they are never backdated. The schedule is not exhaustive and uses event dates, not intraday release times; after-close announcements may affect the next trading session. An event date does not reveal an earnings surprise or guarantee a price direction. Event categories absent from training have no demonstrated learned effect. Predictors that were constant in every past usable feature row are held at their training value for the live neural forecast, preventing random neural responses to first-ever calendar inputs; this changes no historical validation/test input. The volatility proxy is shrunk halfway toward the training RMS baseline and bounded by the range of its training targets to prevent numerical extrapolation. Models also forecast realised variation using matured targets; conditional-scale-normalised residuals calibrate prediction ranges, with held-out coverage assessed separately.</p><p>Methods: <a href="https://arch.readthedocs.io/en/latest/univariate/forecasting.html" target="_blank" rel="noopener">arch forecasting</a>; <a href="https://scikit-learn.org/stable/auto_examples/applications/plot_time_series_lagged_features.html" target="_blank" rel="noopener">time-series ML validation</a>.</p>
-</details>
-</details>
-<!-- WEEKLY_FORECAST_INF1T_END -->
-
-
-<details markdown="1" class=""><summary><strong>Complete technical history</strong></summary>
-<img loading="lazy" src="figures/stock_profiles/INF1T_technicals_full.png?v=9899433dca4e">
-</details>
-
-<!-- REGIME_ASSET_START -->
-
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
-
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/INF1T-regimes.html?v=6bca3d090f72" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
-
-</details>
-
-<!-- REGIME_ASSET_END -->
-
-<details markdown="1" class=""><summary><strong>Seasonals, drawdowns and upside periods</strong></summary>
-<p>Maximum drawdown -6.68% on 2025-10-17; best daily return 5.85% on 2025-11-03; worst -2.44% on 2026-09-30. Exploratory historical statistics, not validated timing rules.</p>
-
-<table markdown="0" class="dataframe research-table">
-  <thead>
-    <tr style="text-align: right;">
-      <th>date</th>
-      <th>count</th>
-      <th>mean</th>
-      <th>median</th>
-      <th>std</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>21</td>
-      <td>-0.000410</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
       <td>0.000000</td>
-      <td>0.004267</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>20</td>
-      <td>0.000898</td>
-      <td>0.000000</td>
-      <td>0.006871</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>22</td>
-      <td>0.000006</td>
-      <td>0.000000</td>
-      <td>0.003595</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>20</td>
-      <td>0.000978</td>
-      <td>0.000000</td>
-      <td>0.004863</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>19</td>
-      <td>0.001114</td>
-      <td>0.000000</td>
-      <td>0.003260</td>
-    </tr>
-    <tr>
+      <td>7.100000</td>
+      <td>-0.512821</td>
       <td>6</td>
-      <td>21</td>
-      <td>0.002345</td>
-      <td>0.002008</td>
-      <td>0.006376</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>23</td>
-      <td>0.003072</td>
-      <td>0.000000</td>
-      <td>0.012006</td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>21</td>
-      <td>0.000364</td>
-      <td>0.000000</td>
-      <td>0.005055</td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td>22</td>
-      <td>0.007560</td>
-      <td>0.000000</td>
-      <td>0.017587</td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td>44</td>
-      <td>0.000800</td>
-      <td>0.000000</td>
-      <td>0.010100</td>
-    </tr>
-    <tr>
-      <td>11</td>
-      <td>20</td>
-      <td>0.005880</td>
-      <td>0.000000</td>
-      <td>0.015451</td>
-    </tr>
-    <tr>
-      <td>12</td>
-      <td>19</td>
-      <td>-0.000327</td>
-      <td>0.000000</td>
-      <td>0.006051</td>
+      <td>66</td>
     </tr>
   </tbody>
 </table>
-
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
-
-<table markdown="0" class="dataframe research-table">
-  <thead>
-    <tr style="text-align: right;">
-      <th>Measure</th>
-      <th>Full baseline</th>
-      <th>After change</th>
-      <th>Change</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>netSD</td>
-      <td>0.702857</td>
-      <td>0.845714</td>
-      <td>0.142857</td>
-    </tr>
-    <tr>
-      <td>OUT</td>
-      <td>123.000000</td>
-      <td>148.000000</td>
-      <td>25.000000</td>
-    </tr>
-    <tr>
-      <td>IN</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Rachev</td>
-      <td>1.555495</td>
-      <td>1.744070</td>
-      <td>0.188575</td>
-    </tr>
-    <tr>
-      <td>Sortino</td>
-      <td>0.377445</td>
-      <td>0.524482</td>
-      <td>0.147037</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4>Removing this holding from the corrected main plan</h4>
-
-<table markdown="0" class="dataframe research-table">
-  <thead>
-    <tr style="text-align: right;">
-      <th>Measure</th>
-      <th>Full baseline</th>
-      <th>After change</th>
-      <th>Change</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>netSD</td>
-      <td>0.885714</td>
-      <td>0.834286</td>
-      <td>-0.051429</td>
-    </tr>
-    <tr>
-      <td>OUT</td>
-      <td>155.000000</td>
-      <td>146.000000</td>
-      <td>-9.000000</td>
-    </tr>
-    <tr>
-      <td>IN</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Rachev</td>
-      <td>1.872334</td>
-      <td>1.739558</td>
-      <td>-0.132776</td>
-    </tr>
-    <tr>
-      <td>Sortino</td>
-      <td>0.610105</td>
-      <td>0.489114</td>
-      <td>-0.120991</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>Addition uses 35 extra units at EUR 67.6000, on top of 0 existing units. Removal excludes all 35 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="INF1T"></div>
-</details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="INF1T"></div>
-</details></details><details markdown="1" class="stock-profile" id="share-inl1l" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>INL1L — INVL Baltic Farmland</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank 58</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LT0000128753/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3AINL1L" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/INL1L.VS/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
-
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 7.1000</td><td>-0.148571</td><td>27 / 53</td><td>56.20</td><td>BUY</td><td>HOLD</td><td>1.000</td><td>EUR 0.1020</td></tr></tbody></table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -14145,10 +13292,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/INL1L-regimes.html?v=03f681ed3b69" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/INL1L-long-history.html?v=3dc22412813d" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -14255,7 +13402,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -14346,12 +13493,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 7.1000, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="INL1L"></div>
+<div class="dominance-explorer" data-asset="INL1L" data-target="INL1L" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="INL1L"></div>
-</details></details><details markdown="1" class="stock-profile" id="share-inr1l" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>INR1L — INVL Baltic Real Estate</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank 54</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LT0000127151/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3AINR1L" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/INR1L.VS/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="INL1L" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile" id="share-inr1l" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" hidden data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>INR1L — INVL Baltic Real Estate | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LT0000127151/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3AINR1L" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/INR1L.VS/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 2.7000</td><td>-0.120000</td><td>36 / 57</td><td>32.29</td><td>SELL</td><td>HOLD</td><td>0.556</td><td>EUR 0.0720</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>2.700000</td>
+      <td>0.205128</td>
+      <td>36</td>
+      <td>12</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -14469,10 +13641,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/INR1L-regimes.html?v=49c0ca438505" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/INR1L-long-history.html?v=5392cb2163e9" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -14579,7 +13751,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -14670,12 +13842,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 2.7000, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="INR1L"></div>
+<div class="dominance-explorer" data-asset="INR1L" data-target="INR1L" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="INR1L"></div>
-</details></details><details markdown="1" class="stock-profile" id="share-ivl1l" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>IVL1L — Invalda INVL</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank 50</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LT0000102279/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3AIVL1L" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/IVL1L.VS/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="INR1L" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile" id="share-ivl1l" data-signal="WAIT" data-netsd-effect="INCREASE" data-dividend-status="PAID" hidden data-portfolio-scopes="ALL ANY STOCHASTIC UPDATE3" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":["NO_SALE","SALE"],"STOCHASTIC":["NO_SALE","SALE"],"UPDATE3":["NO_SALE","SALE"],"UPDATE2":[]}'><summary><strong>IVL1L — Invalda INVL | current action: WAIT | allocation target 21 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LT0000102279/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3AIVL1L" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/IVL1L.VS/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 25.6000</td><td>-0.022857</td><td>42 / 46</td><td>36.74</td><td>BUY</td><td>HOLD</td><td>0.490</td><td>EUR 0.4700</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>21</td>
+      <td>21</td>
+      <td>0.035840</td>
+      <td>25.600000</td>
+      <td>0.393162</td>
+      <td>46</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -14793,10 +13990,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/IVL1L-regimes.html?v=4ae4b41f9bf0" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/IVL1L-long-history.html?v=c06c348b069c" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -14903,7 +14100,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -14994,336 +14191,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 25.6000, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="IVL1L"></div>
+<div class="dominance-explorer" data-asset="IVL1L" data-target="IVL1L" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="IVL1L"></div>
-</details></details><details markdown="1" class="stock-profile" id="share-kalve" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>KALVE — Kalve Coffee</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank 79</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LV0000102234/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXRSE%3AKALVE" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/KALVE.RG/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="IVL1L" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile" id="share-knr1l" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" hidden data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>KNR1L — Kauno energija | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LT0000123010/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3AKNR1L" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/KNR1L.VS/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 12.1000</td><td>-0.714286</td><td>7 / 132</td><td>49.42</td><td>BUY</td><td>HOLD</td><td>0.785</td><td>EUR 0.0000</td></tr></tbody></table>
-
-<details markdown="1" class="instrument-extra-details">
-<summary>Additional instrument details</summary>
-
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/KALVE-additional.html?v=9b9ceea8bbeb" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
-
-</details>
-
-
-
-<p>Research profile, not an additional purchase instruction. Portfolio filters describe membership; technical indicator signals are separate from allocation decisions.</p>
-
-
-
-<details markdown="1" class=""><summary><strong>Bollinger bands, MACD, RSI and Stochastic RSI — last 126 observations</strong></summary>
-<img loading="lazy" src="figures/stock_profiles/KALVE_technicals_6m.png?v=e8e1ab1d5668">
-
-<table markdown="0" class="dataframe research-table">
+<table markdown="0" class="dataframe research-table long-history-table">
   <thead>
     <tr style="text-align: right;">
-      <th>Indicator</th>
-      <th>Current value</th>
-      <th>BUY price</th>
-      <th>SELL price</th>
-      <th>Current signal</th>
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Bollinger price</td>
-      <td>EUR 12.1000</td>
-      <td>≤ EUR 11.4959 (-4.99%)</td>
-      <td>≥ EUR 12.4641 (+3.01%)</td>
-      <td>HOLD</td>
-    </tr>
-    <tr>
-      <td>RSI(14)</td>
-      <td>49.42</td>
-      <td>≤ EUR 11.0853 (-8.39%)</td>
-      <td>≥ EUR 13.1755 (+8.89%)</td>
-      <td>HOLD</td>
-    </tr>
-    <tr>
-      <td>Stochastic RSI %K</td>
-      <td>0.785</td>
-      <td>—</td>
-      <td>≥ EUR 12.1606 (+0.50%)</td>
-      <td>HOLD</td>
-    </tr>
-    <tr>
-      <td>MACD</td>
-      <td>MACD = -0.0577<br>Signal = -0.1259<br>Gap = +0.0682</td>
-      <td>—</td>
-      <td>—</td>
-      <td>BUY</td>
-    </tr>
-    <tr>
-      <td>Consensus</td>
-      <td>BUY 1/4; SELL 0/4</td>
-      <td>At least 3 BUY votes</td>
-      <td>At least 3 SELL votes</td>
-      <td>HOLD</td>
-    </tr>
-  </tbody>
-</table>
-
-</details>
-
-<!-- WEEKLY_FORECAST_KALVE_START -->
-<details markdown="0" open class="weekly-forecast" id="forecast-KALVE" data-forecast-asset="KALVE">
-<summary><strong>One-week price forecast - all methods in one graph</strong></summary>
-<img loading="lazy" src="figures/weekly_forecasts/KALVE.png?v=56169fd4bddb" alt="Kalve Coffee: all forecasting methods on one graph">
-<p>Colours, line patterns and markers distinguish the methods; the selected method has a thicker line. Coincident paths indicate similar forecasts. Prediction ranges are listed below. E-codes mark scheduled events listed under Seven-day performance inputs and upcoming events.</p>
-<p><strong>Central forecast for 2026-11-06: EUR 12.0563 (-0.36%)</strong>; 90% empirical range EUR 11.2232–12.9513. Last observed close / NAV: EUR 12.1000, 2026-10-30. <strong>LOW CONFIDENCE.</strong></p>
-<p><strong>Models with cross-asset dependencies:</strong> Dependency Ridge, Dependency Extra Trees and Dependency Gradient boosting. Held-out MAE before adding these candidates: 2.801 pp; selected forecast now: 2.801 pp; error improvement +0.0% (positive = lower error; negative = worse). Selection uses validation data only; the held-out result does not influence selection.</p><div class="weekly-table-scroll">
-
-<table markdown="0" class="weekly-table "><thead><tr><th>Peer used by dependency models</th><th>Lagged correlation</th><th>Training pairs</th></tr></thead><tbody><tr><td>LVN1T</td><td>+0.222</td><td>117</td></tr><tr><td>AKO1L</td><td>+0.186</td><td>252</td></tr><tr><td>SE0013876927</td><td>+0.182</td><td>250</td></tr><tr><td>CPA1T</td><td>+0.173</td><td>252</td></tr><tr><td>HAE1T</td><td>+0.159</td><td>252</td></tr></tbody></table>
-
-</div>
-<p>Forecast prepared 2026-11-01; window 2026-11-02–2026-11-06. Model: <strong>Validation ensemble</strong>. Horizon from the last observed price: 5 observations. This includes any unpublished days before the displayed week. Fund dates are indicative NAV valuation days; publication and market holidays may delay availability.</p>
-<ul class="forecast-cautions"><li>Held-out forecast did not improve on the unchanged-price benchmark by 2%</li></ul><div class="weekly-table-scroll">
-
-<table markdown="0" class="weekly-table "><thead><tr><th>Valuation / trading date</th><th>Central EUR</th><th>Lower 90% EUR</th><th>Upper 90% EUR</th></tr></thead><tbody><tr><td>2026-11-02</td><td>12.1145</td><td>11.7574</td><td>12.4824</td></tr><tr><td>2026-11-03</td><td>12.1556</td><td>11.6270</td><td>12.7082</td></tr><tr><td>2026-11-04</td><td>12.1417</td><td>11.1781</td><td>13.1883</td></tr><tr><td>2026-11-05</td><td>12.1540</td><td>11.0221</td><td>13.4020</td></tr><tr><td>2026-11-06</td><td>12.0563</td><td>11.2232</td><td>12.9513</td></tr></tbody></table>
-
-</div><p><strong>Held-out evidence:</strong> average absolute return-forecast error 2.801 percentage points; unchanged-price benchmark 1.692 pp; improvement -65.5%. Coverage of the validation-calibrated 90% interval: 100.0% across 12 held-out windows. Unchanged returns in the last 126 observations: 31.7%.</p><p>Direction test: BH-adjusted p=1.0000 across all 67 instruments; 8 nonzero-direction comparisons. A flat central forecast means no detected predictable drift, not zero risk.</p>
-<details markdown="1"><summary>Seven-day performance inputs and upcoming events</summary><div class="weekly-table-scroll">
-
-<table markdown="0" class="weekly-table "><thead><tr><th>7-observation input (ratios not annualised)</th><th>Current value</th></tr></thead><tbody><tr><td>Compounded 7-day return</td><td>0.833%</td></tr><tr><td>Mean daily return</td><td>0.130%</td></tr><tr><td>Daily SD</td><td>1.615%</td></tr><tr><td>Downside deviation</td><td>0.752%</td></tr><tr><td>Sharpe ratio</td><td>0.0803</td></tr><tr><td>Sortino ratio</td><td>0.1725</td></tr><tr><td>Omega ratio</td><td>1.2785</td></tr><tr><td>7-day return / maximum drawdown</td><td>0.3444</td></tr><tr><td>Empirical 95% VaR</td><td>1.377%</td></tr><tr><td>Empirical 95% CVaR (worst of 7)</td><td>1.613%</td></tr><tr><td>Maximum drawdown</td><td>2.419%</td></tr><tr><td>Skewness</td><td>1.4522</td></tr><tr><td>Excess kurtosis</td><td>2.5938</td></tr><tr><td>Unchanged-return fraction</td><td>28.571%</td></tr></tbody></table>
-
-</div><p>Return and risk entries are percentages; ratios are not annualised. VaR/CVaR use the loss sign: a negative value corresponds to a gain.</p><div class="weekly-table-scroll">
-
-<table markdown="0" class="weekly-table "><thead><tr><th>Chart code</th><th>Date</th><th>Event</th><th>Model knowledge date</th><th>Official source</th></tr></thead><tbody><tr><td>E1</td><td>2026-11-03</td><td>US Job Openings and Labor Turnover Survey</td><td>2026-10-31</td><td><a href="https://www.bls.gov/schedule/2026/11_sched.htm" target="_blank" rel="noopener">Open</a></td></tr><tr><td>E2</td><td>2026-11-05</td><td>US Productivity and Costs</td><td>2026-10-31</td><td><a href="https://www.bls.gov/schedule/2026/11_sched.htm" target="_blank" rel="noopener">Open</a></td></tr><tr><td>E3</td><td>2026-11-06</td><td>US Employment Situation</td><td>2026-10-31</td><td><a href="https://www.bls.gov/schedule/2026/11_sched.htm" target="_blank" rel="noopener">Open</a></td></tr></tbody></table>
-
-</div><p>Upcoming event categories without historical training examples: macro. Their specific price or volatility effect is not established.</p><p>Neural safeguard: historically constant inputs held at their training value: calendar macro next7. The event calendar remains visible for context.</p><p>Conditional one-week realised-variation proxy: 5.581%. Forecast ranges use rolling residuals normalised by a training-only Ridge volatility proxy; this is not a guarantee of interval coverage.</p></details>
-<details markdown="1"><summary>Compare all forecast methods and backtest errors</summary>
-<div class="weekly-table-scroll">
-
-<table markdown="0" class="weekly-table "><thead><tr><th>Method</th><th>Week-end EUR</th><th>Change</th><th>90% range EUR</th><th>Validation MAE, pp</th><th>Held-out MAE, pp</th><th>Fit</th></tr></thead><tbody><tr><td>Validation ensemble <strong>SELECTED</strong></td><td>12.0563</td><td>-0.36%</td><td>11.2232–12.9513</td><td>4.729</td><td>2.801</td><td>OK</td></tr><tr><td>Neural network MLP</td><td>11.9767</td><td>-1.02%</td><td>10.9634–13.0837</td><td>4.891</td><td>4.750</td><td>OK</td></tr><tr><td>Dependency Gradient boosting</td><td>12.2143</td><td>+0.94%</td><td>10.5884–14.0900</td><td>4.906</td><td>3.042</td><td>OK</td></tr><tr><td>Dependency Ridge</td><td>12.0875</td><td>-0.10%</td><td>10.5435–13.8576</td><td>5.026</td><td>3.041</td><td>OK</td></tr><tr><td>No change</td><td>12.1000</td><td>+0.00%</td><td>11.1161–13.1710</td><td>5.415</td><td>1.692</td><td>OK</td></tr><tr><td>AR(1)-GARCH-t</td><td>12.1017</td><td>+0.01%</td><td>11.0790–13.2188</td><td>5.475</td><td>1.800</td><td>OK</td></tr><tr><td>Damped ETS</td><td>12.1024</td><td>+0.02%</td><td>11.1738–13.1082</td><td>5.517</td><td>1.721</td><td>OK</td></tr><tr><td>Dependency Extra Trees</td><td>12.3676</td><td>+2.21%</td><td>10.8927–14.0421</td><td>5.572</td><td>2.413</td><td>OK</td></tr><tr><td>Historical drift</td><td>12.0407</td><td>-0.49%</td><td>11.0801–13.0846</td><td>5.631</td><td>1.732</td><td>OK</td></tr><tr><td>ARIMA(1,1,1)</td><td>12.1851</td><td>+0.70%</td><td>11.2154–13.2386</td><td>5.660</td><td>2.333</td><td>OK</td></tr><tr><td>Ridge regression</td><td>12.4163</td><td>+2.61%</td><td>11.2420–13.7133</td><td>5.707</td><td>5.846</td><td>OK</td></tr><tr><td>Extra Trees</td><td>12.5323</td><td>+3.57%</td><td>11.3932–13.7854</td><td>6.008</td><td>3.471</td><td>OK</td></tr><tr><td>Gradient boosting</td><td>12.9647</td><td>+7.15%</td><td>11.6260–14.4577</td><td>6.369</td><td>3.708</td><td>OK</td></tr></tbody></table>
-
-</div>
-</details>
-<details markdown="1"><summary>How these forecasts were built and tested</summary>
-<p>24 non-overlapping rolling-origin windows: the first 12 select the model and ensemble weights; the final 12 assess that frozen choice. Every fit uses only prices and matured training targets available at its origin. The unchanged-price forecast is retained unless validation MAE improves by at least 2%. Hyperparameters are fixed before testing. A current fit failure is explicitly labelled and falls back to no change.</p>
-<p>ARIMA and damped exponential smoothing model log prices. AR(1)–GARCH with Student-t errors estimates the conditional return mean and volatility jointly: GARCH alone does not predict price direction. AI methods are Ridge, Extra Trees, gradient boosting and a small neural network; inputs are past returns, momentum and volatility, not an LLM or future news.</p>
-<p>Each fit uses up to 630 past price observations or matured ML training examples. Fixed ML settings: Ridge penalty 50; 60 Extra Trees (depth 5); gradient boosting with 55 iterations; neural network with 24 and 12 hidden units. Feature and target scaling are fitted only on the training set. Unstable model forecasts implying more than a 100-fold weekly price change are rejected with a diagnostic, never clipped.</p>
-<p>The central price is a back-transformed log-price estimate, not a guaranteed arithmetic mean. The displayed 90% range is calibrated from absolute rolling log-forecast errors; its coverage is approximate, not guaranteed. Illiquid unchanged quotes can make measured errors and ranges artificially small. Scheduled event dates are predictors; exact dividend/corporate-action price adjustments are not mechanically imposed. Unannounced earnings/news, spreads and execution prices remain outside these forecasts. NAV expenses are already embedded. Forecasts do not override the existing BUY / WAIT / HOLD / SELL rules.</p><p><strong>Cross-asset models:</strong> the three dependency models add lagged S&amp;P 500 USD returns, leave-one-out Baltic and fund return factors, and five peers selected by absolute correlation inside each trailing 252-observation training window. All external return series are delayed by two business days. Inputs include lagged returns, 5/7/20-observation averages, 7/20-observation volatility, 7-observation beta and trailing 7/60-observation correlations with the target. Correlation is a predictor, not a claim of causation. The same conservative lag is used in validation and live forecasts.</p><p>Dependency Ridge uses penalty 100; the tree models use the fixed settings above. Missing predictors are replaced by zero within the fitted pipeline; scaling and mature-target training use training data only. The current instrument universe is fixed, so survivorship bias remains possible. Historical fund NAV publication timestamps are unavailable; the two-day buffer is an assumption, not proof of historical execution availability. The original independent-model ensemble remains frozen; the added models compete individually using the first 12 windows. The final 12 windows evaluate the frozen choice.</p><p><strong>Seven-observation inputs:</strong> compounded and average return, SD, downside/upside deviation, Sharpe, Sortino, Omega, Calmar-style return/drawdown, empirical VaR/CVaR, drawdown, ulcer index, skewness, kurtosis, positive/unchanged-return fractions and autocorrelation. Ratios use zero risk-free return and zero minimum acceptable return; they are not annualised. With seven observations, empirical 95% CVaR reduces to the worst observation, so it is a noisy short-window feature, not a reliable tail-risk estimate. Undefined performance ratios have an explicit indicator and a neutral model placeholder.</p><p><strong>Calendar inputs:</strong> upcoming 1/7-business-day and recent 7-calendar-day counts by event type, plus weekday/month seasonality. Historical schedule dates are used only when the exact date is verified in a timestamped publication. Unverified schedules and the BLS macro calendar are available only from the current snapshot date; they are never backdated. The schedule is not exhaustive and uses event dates, not intraday release times; after-close announcements may affect the next trading session. An event date does not reveal an earnings surprise or guarantee a price direction. Event categories absent from training have no demonstrated learned effect. Predictors that were constant in every past usable feature row are held at their training value for the live neural forecast, preventing random neural responses to first-ever calendar inputs; this changes no historical validation/test input. The volatility proxy is shrunk halfway toward the training RMS baseline and bounded by the range of its training targets to prevent numerical extrapolation. Models also forecast realised variation using matured targets; conditional-scale-normalised residuals calibrate prediction ranges, with held-out coverage assessed separately.</p><p>Methods: <a href="https://arch.readthedocs.io/en/latest/univariate/forecasting.html" target="_blank" rel="noopener">arch forecasting</a>; <a href="https://scikit-learn.org/stable/auto_examples/applications/plot_time_series_lagged_features.html" target="_blank" rel="noopener">time-series ML validation</a>.</p>
-</details>
-</details>
-<!-- WEEKLY_FORECAST_KALVE_END -->
-
-
-<details markdown="1" class=""><summary><strong>Complete technical history</strong></summary>
-<img loading="lazy" src="figures/stock_profiles/KALVE_technicals_full.png?v=bf8c7bd2d1be">
-</details>
-
-<!-- REGIME_ASSET_START -->
-
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
-
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/KALVE-regimes.html?v=4f3379de738f" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
-
-</details>
-
-<!-- REGIME_ASSET_END -->
-
-<details markdown="1" class=""><summary><strong>Seasonals, drawdowns and upside periods</strong></summary>
-<p>Maximum drawdown -57.01% on 2026-04-02; best daily return 13.31% on 2026-03-10; worst -12.00% on 2026-03-09. Exploratory historical statistics, not validated timing rules.</p>
-
-<table markdown="0" class="dataframe research-table">
-  <thead>
-    <tr style="text-align: right;">
-      <th>date</th>
-      <th>count</th>
-      <th>mean</th>
-      <th>median</th>
-      <th>std</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>21</td>
-      <td>0.008279</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
       <td>0.000000</td>
-      <td>0.048417</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>20</td>
-      <td>-0.002233</td>
-      <td>-0.002392</td>
-      <td>0.017486</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>22</td>
-      <td>-0.020649</td>
-      <td>-0.022989</td>
-      <td>0.054401</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>20</td>
-      <td>0.015109</td>
-      <td>0.018305</td>
-      <td>0.053275</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>19</td>
-      <td>-0.010806</td>
-      <td>-0.007407</td>
-      <td>0.013495</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>21</td>
-      <td>0.002477</td>
-      <td>0.000000</td>
-      <td>0.028679</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>23</td>
-      <td>-0.002004</td>
-      <td>0.000000</td>
-      <td>0.021638</td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>21</td>
-      <td>-0.001402</td>
-      <td>0.000000</td>
-      <td>0.010348</td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td>22</td>
-      <td>-0.002878</td>
-      <td>0.000000</td>
-      <td>0.007570</td>
-    </tr>
-    <tr>
+      <td>2.040000</td>
+      <td>0.085470</td>
       <td>10</td>
-      <td>44</td>
-      <td>-0.000049</td>
-      <td>0.000000</td>
-      <td>0.013981</td>
-    </tr>
-    <tr>
-      <td>11</td>
-      <td>20</td>
-      <td>0.001300</td>
-      <td>0.000000</td>
-      <td>0.009271</td>
-    </tr>
-    <tr>
-      <td>12</td>
-      <td>19</td>
-      <td>0.007550</td>
-      <td>0.002967</td>
-      <td>0.021333</td>
+      <td>0</td>
     </tr>
   </tbody>
 </table>
-
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
-
-<table markdown="0" class="dataframe research-table">
-  <thead>
-    <tr style="text-align: right;">
-      <th>Measure</th>
-      <th>Full baseline</th>
-      <th>After change</th>
-      <th>Change</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>netSD</td>
-      <td>0.702857</td>
-      <td>0.702857</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>OUT</td>
-      <td>123.000000</td>
-      <td>123.000000</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>IN</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Rachev</td>
-      <td>1.555495</td>
-      <td>1.555495</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Sortino</td>
-      <td>0.377445</td>
-      <td>0.377445</td>
-      <td>0.000000</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4>Removing this holding from the corrected main plan</h4>
-
-<table markdown="0" class="dataframe research-table">
-  <thead>
-    <tr style="text-align: right;">
-      <th>Measure</th>
-      <th>Full baseline</th>
-      <th>After change</th>
-      <th>Change</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>netSD</td>
-      <td>0.885714</td>
-      <td>0.885714</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>OUT</td>
-      <td>155.000000</td>
-      <td>155.000000</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>IN</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Rachev</td>
-      <td>1.872334</td>
-      <td>1.872334</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Sortino</td>
-      <td>0.610105</td>
-      <td>0.610105</td>
-      <td>0.000000</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>Addition uses 0 extra units at EUR 12.1000, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="KALVE"></div>
-</details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="KALVE"></div>
-</details></details><details markdown="1" class="stock-profile" id="share-knr1l" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>KNR1L — Kauno energija</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank 53</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LT0000123010/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3AKNR1L" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/KNR1L.VS/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
-
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 2.0400</td><td>-0.108571</td><td>31 / 50</td><td>45.71</td><td>SELL</td><td>HOLD</td><td>0.425</td><td>EUR 0.0189</td></tr></tbody></table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -15441,10 +14339,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/KNR1L-regimes.html?v=32140b6268ec" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/KNR1L-long-history.html?v=e35a7250ff51" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -15551,7 +14449,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -15642,12 +14540,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 2.0400, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="KNR1L"></div>
+<div class="dominance-explorer" data-asset="KNR1L" data-target="KNR1L" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="KNR1L"></div>
-</details></details><details markdown="1" class="stock-profile" id="share-lgd1l" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>LGD1L — LITGRID</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank 18</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LT0000128415/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3ALGD1L" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/LGD1L.VS/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="KNR1L" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile" id="share-lgd1l" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" hidden data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>LGD1L — LITGRID | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LT0000128415/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3ALGD1L" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/LGD1L.VS/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 1.1500</td><td>0.365714</td><td>67 / 3</td><td>60.83</td><td>BUY</td><td>SELL</td><td>0.898</td><td>EUR 0.0322</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>1.150000</td>
+      <td>0.111111</td>
+      <td>35</td>
+      <td>22</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -15765,10 +14688,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/LGD1L-regimes.html?v=f4aa77c5974e" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/LGD1L-long-history.html?v=b3a36056f7e1" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -15875,7 +14798,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -15966,12 +14889,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 1.1500, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="LGD1L"></div>
+<div class="dominance-explorer" data-asset="LGD1L" data-target="LGD1L" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="LGD1L"></div>
-</details></details><details markdown="1" class="stock-profile" id="share-linda" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>LINDA — Linda Nektar</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank 75</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100060344/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3ALINDA" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/lookup/?s=EE3100060344" target="_blank" rel="noopener noreferrer">Yahoo Finance: ISIN search ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Yahoo lookup is a search link, not a confirmed chart.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="LGD1L" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile" id="share-linda" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" hidden data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>LINDA — Linda Nektar | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100060344/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3ALINDA" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/lookup/?s=EE3100060344" target="_blank" rel="noopener noreferrer">Yahoo Finance: ISIN search ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Yahoo lookup is a search link, not a confirmed chart.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 4.0000</td><td>-0.657143</td><td>9 / 124</td><td>32.05</td><td>BUY</td><td>HOLD</td><td>0.000</td><td>EUR 0.0480</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>4.000000</td>
+      <td>-0.735043</td>
+      <td>2</td>
+      <td>88</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -16089,10 +15037,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/LINDA-regimes.html?v=b081a71203a3" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/LINDA-long-history.html?v=0a7eb62a46b5" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -16199,7 +15147,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -16290,29 +15238,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 4.0000, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="LINDA"></div>
+<div class="dominance-explorer" data-asset="LINDA" data-target="LINDA" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="LINDA"></div>
-</details></details><details markdown="1" class="stock-profile" id="share-lvn1t" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>LVN1T — Liven</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank unavailable</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100003112/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3ALVN1T" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/LVN1T.TL/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="LINDA" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile" id="share-magic" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" hidden data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>MAGIC — TextMagic | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100073438/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3AMAGIC" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/lookup/?s=EE3100073438" target="_blank" rel="noopener noreferrer">Yahoo Finance: ISIN search ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Yahoo lookup is a search link, not a confirmed chart.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 3.3000</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>EUR 0.0000</td></tr></tbody></table>
-
-<p><strong>Insufficient data:</strong> Only 120 prices: cannot support &gt;120 finite training pairs plus disjoint rolling validation/test windows. Available observations: 120. No forecast or performance measures are fabricated.</p>
-
-<!-- REGIME_ASSET_START -->
-
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
-
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/LVN1T-regimes.html?v=f598f1e4a3e5" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
-
-</details>
-
-<!-- REGIME_ASSET_END -->
-
-</details><details markdown="1" class="stock-profile" id="share-magic" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>MAGIC — TextMagic</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank 74</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100073438/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3AMAGIC" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/lookup/?s=EE3100073438" target="_blank" rel="noopener noreferrer">Yahoo Finance: ISIN search ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Yahoo lookup is a search link, not a confirmed chart.</p><!-- EXTERNAL_CHART_LINKS_END -->
-
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 1.7550</td><td>-0.628571</td><td>7 / 117</td><td>40.29</td><td>SELL</td><td>HOLD</td><td>0.000</td><td>EUR 0.0580</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>1.755000</td>
+      <td>-1.000000</td>
+      <td>0</td>
+      <td>117</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -16430,10 +15386,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/MAGIC-regimes.html?v=1430ac928de6" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/MAGIC-long-history.html?v=54219b83f0c3" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -16540,7 +15496,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -16631,12 +15587,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 1.7550, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="MAGIC"></div>
+<div class="dominance-explorer" data-asset="MAGIC" data-target="MAGIC" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="MAGIC"></div>
-</details></details><details markdown="1" class="stock-profile" id="share-mdara" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>MDARA — MADARA Cosmetics</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank 60</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LV0000101624/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXRSE%3AMDARA" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/MDARA.RG/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="MAGIC" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile" id="share-mdara" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" hidden data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>MDARA — MADARA Cosmetics | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LV0000101624/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXRSE%3AMDARA" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/MDARA.RG/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 10.5500</td><td>-0.291429</td><td>34 / 85</td><td>48.60</td><td>SELL</td><td>HOLD</td><td>0.199</td><td>EUR 0.4500</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>10.550000</td>
+      <td>-0.666667</td>
+      <td>16</td>
+      <td>94</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -16754,10 +15735,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/MDARA-regimes.html?v=bc788147a898" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/MDARA-long-history.html?v=4c3ff955ee56" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -16864,7 +15845,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -16955,12 +15936,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 10.5500, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="MDARA"></div>
+<div class="dominance-explorer" data-asset="MDARA" data-target="MDARA" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="MDARA"></div>
-</details></details><details markdown="1" class="stock-profile" id="share-mode" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>MODE — Modera</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank 57</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100084203/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3AMODE" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/lookup/?s=EE3100084203" target="_blank" rel="noopener noreferrer">Yahoo Finance: ISIN search ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Yahoo lookup is a search link, not a confirmed chart.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="MDARA" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile" id="share-mode" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>MODE — Modera | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100084203/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3AMODE" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/lookup/?s=EE3100084203" target="_blank" rel="noopener noreferrer">Yahoo Finance: ISIN search ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Yahoo lookup is a search link, not a confirmed chart.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 5.0000</td><td>-0.142857</td><td>27 / 52</td><td>44.18</td><td>BUY</td><td>HOLD</td><td>0.749</td><td>EUR 0.0000</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>5.000000</td>
+      <td>-0.179487</td>
+      <td>21</td>
+      <td>42</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -17078,10 +16084,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/MODE-regimes.html?v=091da39a8a25" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/MODE-long-history.html?v=55cd4af9cfa0" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -17188,7 +16194,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -17279,336 +16285,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 5.0000, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="MODE"></div>
+<div class="dominance-explorer" data-asset="MODE" data-target="MODE" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="MODE"></div>
-</details></details><details markdown="1" class="stock-profile" id="share-molnr" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="ANY UPDATE2 UPDATE3" data-sale-membership='{"ANY":["NO_SALE","SALE"],"STOCHASTIC":[],"UPDATE2":["NO_SALE"],"UPDATE3":["NO_SALE","SALE"],"ALL":["NO_SALE","SALE"]}'><summary><strong>MOLNR — J. Molner</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank 78</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100109034/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3AMOLNR" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/lookup/?s=EE3100109034" target="_blank" rel="noopener noreferrer">Yahoo Finance: ISIN search ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Yahoo lookup is a search link, not a confirmed chart.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="MODE" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile" id="share-ncn1t" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>NCN1T — Nordecon | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100039496/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3ANCN1T" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/NCN1T.TL/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 19.5000</td><td>-0.691429</td><td>6 / 127</td><td>43.57</td><td>SELL</td><td>HOLD</td><td>-0.000</td><td>EUR 0.0000</td></tr></tbody></table>
-
-<details markdown="1" class="instrument-extra-details">
-<summary>Additional instrument details</summary>
-
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/MOLNR-additional.html?v=9b9ceea8bbeb" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
-
-</details>
-
-
-
-<p>Research profile, not an additional purchase instruction. Portfolio filters describe membership; technical indicator signals are separate from allocation decisions.</p>
-
-
-
-<details markdown="1" class=""><summary><strong>Bollinger bands, MACD, RSI and Stochastic RSI — last 126 observations</strong></summary>
-<img loading="lazy" src="figures/stock_profiles/MOLNR_technicals_6m.png?v=0dbf408c185d">
-
-<table markdown="0" class="dataframe research-table">
+<table markdown="0" class="dataframe research-table long-history-table">
   <thead>
     <tr style="text-align: right;">
-      <th>Indicator</th>
-      <th>Current value</th>
-      <th>BUY price</th>
-      <th>SELL price</th>
-      <th>Current signal</th>
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Bollinger price</td>
-      <td>EUR 19.5000</td>
-      <td>≤ EUR 19.3993 (-0.52%)</td>
-      <td>≥ EUR 21.9707 (+12.67%)</td>
-      <td>HOLD</td>
-    </tr>
-    <tr>
-      <td>RSI(14)</td>
-      <td>43.57</td>
-      <td>≤ EUR 17.1484 (-12.06%)</td>
-      <td>≥ EUR 23.6816 (+21.44%)</td>
-      <td>HOLD</td>
-    </tr>
-    <tr>
-      <td>Stochastic RSI %K</td>
-      <td>-0.000</td>
-      <td>≤ EUR 20.6372 (+5.83%)</td>
-      <td>—</td>
-      <td>BUY</td>
-    </tr>
-    <tr>
-      <td>MACD</td>
-      <td>MACD = 0.1456<br>Signal = 0.3934<br>Gap = -0.2478</td>
-      <td>—</td>
-      <td>—</td>
-      <td>SELL</td>
-    </tr>
-    <tr>
-      <td>Consensus</td>
-      <td>BUY 1/4; SELL 1/4</td>
-      <td>At least 3 BUY votes</td>
-      <td>At least 3 SELL votes</td>
-      <td>HOLD</td>
-    </tr>
-  </tbody>
-</table>
-
-</details>
-
-<!-- WEEKLY_FORECAST_MOLNR_START -->
-<details markdown="0" open class="weekly-forecast" id="forecast-MOLNR" data-forecast-asset="MOLNR">
-<summary><strong>One-week price forecast - all methods in one graph</strong></summary>
-<img loading="lazy" src="figures/weekly_forecasts/MOLNR.png?v=7bb8ba454876" alt="J. Molner: all forecasting methods on one graph">
-<p>Colours, line patterns and markers distinguish the methods; the selected method has a thicker line. Coincident paths indicate similar forecasts. Prediction ranges are listed below. E-codes mark scheduled events listed under Seven-day performance inputs and upcoming events.</p>
-<p><strong>Central forecast for 2026-11-06: EUR 19.5384 (+0.20%)</strong>; 90% empirical range EUR 17.5097–21.8023. Last observed close / NAV: EUR 19.5000, 2026-10-30. <strong>LOW CONFIDENCE.</strong></p>
-<p><strong>Models with cross-asset dependencies:</strong> Dependency Ridge, Dependency Extra Trees and Dependency Gradient boosting. Held-out MAE before adding these candidates: 6.814 pp; selected forecast now: 6.814 pp; error improvement +0.0% (positive = lower error; negative = worse). Selection uses validation data only; the held-out result does not influence selection.</p><div class="weekly-table-scroll">
-
-<table markdown="0" class="weekly-table "><thead><tr><th>Peer used by dependency models</th><th>Lagged correlation</th><th>Training pairs</th></tr></thead><tbody><tr><td>RSU1L</td><td>+0.166</td><td>252</td></tr><tr><td>INF1T</td><td>+0.152</td><td>252</td></tr><tr><td>AMG1L</td><td>+0.132</td><td>252</td></tr><tr><td>RKB1R</td><td>-0.118</td><td>252</td></tr><tr><td>ZMP1L</td><td>+0.118</td><td>252</td></tr></tbody></table>
-
-</div>
-<p>Forecast prepared 2026-11-01; window 2026-11-02–2026-11-06. Model: <strong>Ridge regression</strong>. Horizon from the last observed price: 5 observations. This includes any unpublished days before the displayed week. Fund dates are indicative NAV valuation days; publication and market holidays may delay availability.</p>
-<ul class="forecast-cautions"><li>Held-out forecast did not improve on the unchanged-price benchmark by 2%</li><li>No demonstrated directional advantage in the small held-out sample</li></ul><div class="weekly-table-scroll">
-
-<table markdown="0" class="weekly-table "><thead><tr><th>Valuation / trading date</th><th>Central EUR</th><th>Lower 90% EUR</th><th>Upper 90% EUR</th></tr></thead><tbody><tr><td>2026-11-02</td><td>19.5141</td><td>18.3858</td><td>20.7117</td></tr><tr><td>2026-11-03</td><td>19.4713</td><td>18.1899</td><td>20.8430</td></tr><tr><td>2026-11-04</td><td>19.3803</td><td>17.7314</td><td>21.1824</td></tr><tr><td>2026-11-05</td><td>19.5678</td><td>17.8850</td><td>21.4089</td></tr><tr><td>2026-11-06</td><td>19.5384</td><td>17.5097</td><td>21.8023</td></tr></tbody></table>
-
-</div><p><strong>Held-out evidence:</strong> average absolute return-forecast error 6.814 percentage points; unchanged-price benchmark 4.830 pp; improvement -41.1%. Coverage of the validation-calibrated 90% interval: 50.0% across 12 held-out windows. Unchanged returns in the last 126 observations: 50.0%.</p><p>Direction test: BH-adjusted p=1.0000 across all 67 instruments; 12 nonzero-direction comparisons. A flat central forecast means no detected predictable drift, not zero risk.</p>
-<details markdown="1"><summary>Seven-day performance inputs and upcoming events</summary><div class="weekly-table-scroll">
-
-<table markdown="0" class="weekly-table "><thead><tr><th>7-observation input (ratios not annualised)</th><th>Current value</th></tr></thead><tbody><tr><td>Compounded 7-day return</td><td>-8.019%</td></tr><tr><td>Mean daily return</td><td>-1.180%</td></tr><tr><td>Daily SD</td><td>1.294%</td></tr><tr><td>Downside deviation</td><td>1.681%</td></tr><tr><td>Sharpe ratio</td><td>-0.9117</td></tr><tr><td>Sortino ratio</td><td>-0.7016</td></tr><tr><td>Omega ratio</td><td>0.0000</td></tr><tr><td>7-day return / maximum drawdown</td><td>-1.0000</td></tr><tr><td>Empirical 95% VaR</td><td>2.888%</td></tr><tr><td>Empirical 95% CVaR (worst of 7)</td><td>2.913%</td></tr><tr><td>Maximum drawdown</td><td>8.019%</td></tr><tr><td>Skewness</td><td>-0.5176</td></tr><tr><td>Excess kurtosis</td><td>-1.6948</td></tr><tr><td>Unchanged-return fraction</td><td>42.857%</td></tr></tbody></table>
-
-</div><p>Return and risk entries are percentages; ratios are not annualised. VaR/CVaR use the loss sign: a negative value corresponds to a gain.</p><div class="weekly-table-scroll">
-
-<table markdown="0" class="weekly-table "><thead><tr><th>Chart code</th><th>Date</th><th>Event</th><th>Model knowledge date</th><th>Official source</th></tr></thead><tbody><tr><td>E1</td><td>2026-11-03</td><td>US Job Openings and Labor Turnover Survey</td><td>2026-10-31</td><td><a href="https://www.bls.gov/schedule/2026/11_sched.htm" target="_blank" rel="noopener">Open</a></td></tr><tr><td>E2</td><td>2026-11-05</td><td>US Productivity and Costs</td><td>2026-10-31</td><td><a href="https://www.bls.gov/schedule/2026/11_sched.htm" target="_blank" rel="noopener">Open</a></td></tr><tr><td>E3</td><td>2026-11-06</td><td>US Employment Situation</td><td>2026-10-31</td><td><a href="https://www.bls.gov/schedule/2026/11_sched.htm" target="_blank" rel="noopener">Open</a></td></tr></tbody></table>
-
-</div><p>Upcoming event categories without historical training examples: macro. Their specific price or volatility effect is not established.</p><p>Neural safeguard: historically constant inputs held at their training value: calendar macro next7. The event calendar remains visible for context.</p><p>Conditional one-week realised-variation proxy: 5.884%. Forecast ranges use rolling residuals normalised by a training-only Ridge volatility proxy; this is not a guarantee of interval coverage.</p></details>
-<details markdown="1"><summary>Compare all forecast methods and backtest errors</summary>
-<div class="weekly-table-scroll">
-
-<table markdown="0" class="weekly-table "><thead><tr><th>Method</th><th>Week-end EUR</th><th>Change</th><th>90% range EUR</th><th>Validation MAE, pp</th><th>Held-out MAE, pp</th><th>Fit</th></tr></thead><tbody><tr><td>Ridge regression <strong>SELECTED</strong></td><td>19.5384</td><td>+0.20%</td><td>17.5097–21.8023</td><td>2.419</td><td>6.814</td><td>OK</td></tr><tr><td>Dependency Ridge</td><td>19.1808</td><td>-1.64%</td><td>18.3557–20.0430</td><td>2.610</td><td>4.980</td><td>OK</td></tr><tr><td>Validation ensemble</td><td>19.5734</td><td>+0.38%</td><td>17.6541–21.7015</td><td>2.640</td><td>6.373</td><td>OK</td></tr><tr><td>Neural network MLP</td><td>19.6705</td><td>+0.87%</td><td>17.2343–22.4511</td><td>2.762</td><td>7.381</td><td>OK</td></tr><tr><td>Damped ETS</td><td>19.5568</td><td>+0.29%</td><td>17.7583–21.5375</td><td>3.215</td><td>4.931</td><td>OK</td></tr><tr><td>Extra Trees</td><td>19.6491</td><td>+0.76%</td><td>17.7480–21.7538</td><td>3.247</td><td>5.215</td><td>OK</td></tr><tr><td>ARIMA(1,1,1)</td><td>19.7585</td><td>+1.33%</td><td>17.8722–21.8438</td><td>3.298</td><td>4.718</td><td>OK</td></tr><tr><td>AR(1)-GARCH-t</td><td>19.3992</td><td>-0.52%</td><td>17.6542–21.3166</td><td>3.330</td><td>4.740</td><td>OK</td></tr><tr><td>Dependency Extra Trees</td><td>19.4471</td><td>-0.27%</td><td>17.7567–21.2985</td><td>3.426</td><td>4.712</td><td>OK</td></tr><tr><td>Historical drift</td><td>19.3688</td><td>-0.67%</td><td>17.5160–21.4177</td><td>3.484</td><td>4.696</td><td>OK</td></tr><tr><td>No change</td><td>19.5000</td><td>+0.00%</td><td>17.5743–21.6368</td><td>3.576</td><td>4.830</td><td>OK</td></tr><tr><td>Gradient boosting</td><td>19.0129</td><td>-2.50%</td><td>17.0856–21.1577</td><td>3.725</td><td>5.990</td><td>OK</td></tr><tr><td>Dependency Gradient boosting</td><td>19.1481</td><td>-1.80%</td><td>17.2283–21.2819</td><td>3.992</td><td>5.174</td><td>OK</td></tr></tbody></table>
-
-</div>
-</details>
-<details markdown="1"><summary>How these forecasts were built and tested</summary>
-<p>24 non-overlapping rolling-origin windows: the first 12 select the model and ensemble weights; the final 12 assess that frozen choice. Every fit uses only prices and matured training targets available at its origin. The unchanged-price forecast is retained unless validation MAE improves by at least 2%. Hyperparameters are fixed before testing. A current fit failure is explicitly labelled and falls back to no change.</p>
-<p>ARIMA and damped exponential smoothing model log prices. AR(1)–GARCH with Student-t errors estimates the conditional return mean and volatility jointly: GARCH alone does not predict price direction. AI methods are Ridge, Extra Trees, gradient boosting and a small neural network; inputs are past returns, momentum and volatility, not an LLM or future news.</p>
-<p>Each fit uses up to 630 past price observations or matured ML training examples. Fixed ML settings: Ridge penalty 50; 60 Extra Trees (depth 5); gradient boosting with 55 iterations; neural network with 24 and 12 hidden units. Feature and target scaling are fitted only on the training set. Unstable model forecasts implying more than a 100-fold weekly price change are rejected with a diagnostic, never clipped.</p>
-<p>The central price is a back-transformed log-price estimate, not a guaranteed arithmetic mean. The displayed 90% range is calibrated from absolute rolling log-forecast errors; its coverage is approximate, not guaranteed. Illiquid unchanged quotes can make measured errors and ranges artificially small. Scheduled event dates are predictors; exact dividend/corporate-action price adjustments are not mechanically imposed. Unannounced earnings/news, spreads and execution prices remain outside these forecasts. NAV expenses are already embedded. Forecasts do not override the existing BUY / WAIT / HOLD / SELL rules.</p><p><strong>Cross-asset models:</strong> the three dependency models add lagged S&amp;P 500 USD returns, leave-one-out Baltic and fund return factors, and five peers selected by absolute correlation inside each trailing 252-observation training window. All external return series are delayed by two business days. Inputs include lagged returns, 5/7/20-observation averages, 7/20-observation volatility, 7-observation beta and trailing 7/60-observation correlations with the target. Correlation is a predictor, not a claim of causation. The same conservative lag is used in validation and live forecasts.</p><p>Dependency Ridge uses penalty 100; the tree models use the fixed settings above. Missing predictors are replaced by zero within the fitted pipeline; scaling and mature-target training use training data only. The current instrument universe is fixed, so survivorship bias remains possible. Historical fund NAV publication timestamps are unavailable; the two-day buffer is an assumption, not proof of historical execution availability. The original independent-model ensemble remains frozen; the added models compete individually using the first 12 windows. The final 12 windows evaluate the frozen choice.</p><p><strong>Seven-observation inputs:</strong> compounded and average return, SD, downside/upside deviation, Sharpe, Sortino, Omega, Calmar-style return/drawdown, empirical VaR/CVaR, drawdown, ulcer index, skewness, kurtosis, positive/unchanged-return fractions and autocorrelation. Ratios use zero risk-free return and zero minimum acceptable return; they are not annualised. With seven observations, empirical 95% CVaR reduces to the worst observation, so it is a noisy short-window feature, not a reliable tail-risk estimate. Undefined performance ratios have an explicit indicator and a neutral model placeholder.</p><p><strong>Calendar inputs:</strong> upcoming 1/7-business-day and recent 7-calendar-day counts by event type, plus weekday/month seasonality. Historical schedule dates are used only when the exact date is verified in a timestamped publication. Unverified schedules and the BLS macro calendar are available only from the current snapshot date; they are never backdated. The schedule is not exhaustive and uses event dates, not intraday release times; after-close announcements may affect the next trading session. An event date does not reveal an earnings surprise or guarantee a price direction. Event categories absent from training have no demonstrated learned effect. Predictors that were constant in every past usable feature row are held at their training value for the live neural forecast, preventing random neural responses to first-ever calendar inputs; this changes no historical validation/test input. The volatility proxy is shrunk halfway toward the training RMS baseline and bounded by the range of its training targets to prevent numerical extrapolation. Models also forecast realised variation using matured targets; conditional-scale-normalised residuals calibrate prediction ranges, with held-out coverage assessed separately.</p><p>Methods: <a href="https://arch.readthedocs.io/en/latest/univariate/forecasting.html" target="_blank" rel="noopener">arch forecasting</a>; <a href="https://scikit-learn.org/stable/auto_examples/applications/plot_time_series_lagged_features.html" target="_blank" rel="noopener">time-series ML validation</a>.</p>
-</details>
-</details>
-<!-- WEEKLY_FORECAST_MOLNR_END -->
-
-
-<details markdown="1" class=""><summary><strong>Complete technical history</strong></summary>
-<img loading="lazy" src="figures/stock_profiles/MOLNR_technicals_full.png?v=c0f8f09d36a4">
-</details>
-
-<!-- REGIME_ASSET_START -->
-
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
-
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/MOLNR-regimes.html?v=70359e765410" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
-
-</details>
-
-<!-- REGIME_ASSET_END -->
-
-<details markdown="1" class=""><summary><strong>Seasonals, drawdowns and upside periods</strong></summary>
-<p>Maximum drawdown -44.81% on 2026-09-29; best daily return 22.35% on 2026-09-30; worst -11.76% on 2026-03-24. Exploratory historical statistics, not validated timing rules.</p>
-
-<table markdown="0" class="dataframe research-table">
-  <thead>
-    <tr style="text-align: right;">
-      <th>date</th>
-      <th>count</th>
-      <th>mean</th>
-      <th>median</th>
-      <th>std</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>21</td>
-      <td>-0.002030</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
       <td>0.000000</td>
-      <td>0.010595</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>20</td>
-      <td>-0.002542</td>
-      <td>0.000000</td>
-      <td>0.016940</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>22</td>
-      <td>-0.007389</td>
-      <td>0.000000</td>
-      <td>0.040088</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>20</td>
-      <td>0.001970</td>
-      <td>0.004386</td>
-      <td>0.056612</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>19</td>
-      <td>0.003485</td>
-      <td>0.000000</td>
-      <td>0.048376</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>21</td>
-      <td>-0.005299</td>
-      <td>0.000000</td>
-      <td>0.026055</td>
-    </tr>
-    <tr>
-      <td>7</td>
+      <td>0.530000</td>
+      <td>-0.247863</td>
       <td>23</td>
-      <td>-0.001184</td>
-      <td>0.000000</td>
-      <td>0.028329</td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>21</td>
-      <td>-0.000607</td>
-      <td>0.000000</td>
-      <td>0.017287</td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td>22</td>
-      <td>0.005479</td>
-      <td>0.000000</td>
-      <td>0.051224</td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td>44</td>
-      <td>0.001892</td>
-      <td>0.000000</td>
-      <td>0.038830</td>
-    </tr>
-    <tr>
-      <td>11</td>
-      <td>20</td>
-      <td>0.007173</td>
-      <td>0.000000</td>
-      <td>0.036188</td>
-    </tr>
-    <tr>
-      <td>12</td>
-      <td>19</td>
-      <td>-0.004642</td>
-      <td>0.000000</td>
-      <td>0.027010</td>
+      <td>52</td>
     </tr>
   </tbody>
 </table>
-
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
-
-<table markdown="0" class="dataframe research-table">
-  <thead>
-    <tr style="text-align: right;">
-      <th>Measure</th>
-      <th>Full baseline</th>
-      <th>After change</th>
-      <th>Change</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>netSD</td>
-      <td>0.702857</td>
-      <td>0.702857</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>OUT</td>
-      <td>123.000000</td>
-      <td>123.000000</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>IN</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Rachev</td>
-      <td>1.555495</td>
-      <td>1.555495</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Sortino</td>
-      <td>0.377445</td>
-      <td>0.377445</td>
-      <td>0.000000</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4>Removing this holding from the corrected main plan</h4>
-
-<table markdown="0" class="dataframe research-table">
-  <thead>
-    <tr style="text-align: right;">
-      <th>Measure</th>
-      <th>Full baseline</th>
-      <th>After change</th>
-      <th>Change</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>netSD</td>
-      <td>0.885714</td>
-      <td>0.885714</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>OUT</td>
-      <td>155.000000</td>
-      <td>155.000000</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>IN</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Rachev</td>
-      <td>1.872334</td>
-      <td>1.872334</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Sortino</td>
-      <td>0.610105</td>
-      <td>0.610105</td>
-      <td>0.000000</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>Addition uses 0 extra units at EUR 19.5000, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="MOLNR"></div>
-</details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="MOLNR"></div>
-</details></details><details markdown="1" class="stock-profile" id="share-ncn1t" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>NCN1T — Nordecon</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank 61</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100039496/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3ANCN1T" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/NCN1T.TL/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
-
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 0.5300</td><td>-0.325714</td><td>21 / 78</td><td>37.37</td><td>BUY</td><td>HOLD</td><td>0.866</td><td>EUR 0.0000</td></tr></tbody></table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -17726,10 +16433,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/NCN1T-regimes.html?v=2ffe10f19863" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/NCN1T-long-history.html?v=e74d86332b22" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -17836,7 +16543,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -17927,12 +16634,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 0.5300, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="NCN1T"></div>
+<div class="dominance-explorer" data-asset="NCN1T" data-target="NCN1T" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="NCN1T"></div>
-</details></details><details markdown="1" class="stock-profile" id="share-neofi" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>NEOFI — NEO Finance</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank 63</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LT0000132953/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3ANEOFI" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/lookup/?s=LT0000132953" target="_blank" rel="noopener noreferrer">Yahoo Finance: ISIN search ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Yahoo lookup is a search link, not a confirmed chart.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="NCN1T" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile" id="share-neofi" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" hidden data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>NEOFI — NEO Finance | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LT0000132953/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3ANEOFI" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/lookup/?s=LT0000132953" target="_blank" rel="noopener noreferrer">Yahoo Finance: ISIN search ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Yahoo lookup is a search link, not a confirmed chart.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 2.9400</td><td>-0.331429</td><td>10 / 68</td><td>57.43</td><td>BUY</td><td>HOLD</td><td>1.000</td><td>EUR 0.0120</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>2.940000</td>
+      <td>-0.059829</td>
+      <td>3</td>
+      <td>10</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -18050,10 +16782,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/NEOFI-regimes.html?v=1ceced2f4f04" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/NEOFI-long-history.html?v=8f97699684ca" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -18160,7 +16892,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -18251,12 +16983,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 2.9400, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="NEOFI"></div>
+<div class="dominance-explorer" data-asset="NEOFI" data-target="NEOFI" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="NEOFI"></div>
-</details></details><details markdown="1" class="stock-profile" id="share-ntu1l" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>NTU1L — Novaturas</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank 76</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LT0000131872/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3ANTU1L" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/NTU1L.VS/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="NEOFI" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile" id="share-ntu1l" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>NTU1L — Novaturas | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LT0000131872/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3ANTU1L" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/NTU1L.VS/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 0.7380</td><td>-0.662857</td><td>7 / 123</td><td>39.60</td><td>BUY</td><td>HOLD</td><td>0.607</td><td>EUR 0.0000</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>0.738000</td>
+      <td>-0.846154</td>
+      <td>3</td>
+      <td>102</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -18374,10 +17131,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/NTU1L-regimes.html?v=b627da0caf9d" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/NTU1L-long-history.html?v=cf8c432bacfe" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -18484,7 +17241,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -18575,12 +17332,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 0.7380, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="NTU1L"></div>
+<div class="dominance-explorer" data-asset="NTU1L" data-target="NTU1L" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="NTU1L"></div>
-</details></details><details markdown="1" class="stock-profile" id="share-pkg1t" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>PKG1T — Pro Kapital Grupp</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank 81</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100006040/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3APKG1T" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/PKG1T.TL/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="NTU1L" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile" id="share-pkg1t" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>PKG1T — Pro Kapital Grupp | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100006040/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3APKG1T" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/PKG1T.TL/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 0.5400</td><td>-0.771429</td><td>3 / 138</td><td>23.19</td><td>SELL</td><td>HOLD</td><td>0.227</td><td>EUR 0.0000</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>0.540000</td>
+      <td>-0.401709</td>
+      <td>17</td>
+      <td>64</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -18698,10 +17480,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/PKG1T-regimes.html?v=77a310b22917" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/PKG1T-long-history.html?v=3f7f803f8d08" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -18808,7 +17590,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -18899,12 +17681,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 0.5400, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="PKG1T"></div>
+<div class="dominance-explorer" data-asset="PKG1T" data-target="PKG1T" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="PKG1T"></div>
-</details></details><details markdown="1" class="stock-profile" id="share-prf1t" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>PRF1T — PRFoods</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank 70</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100101031/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3APRF1T" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/PRF1T.TL/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="PKG1T" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile" id="share-prf1t" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>PRF1T — PRFoods | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100101031/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3APRF1T" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/PRF1T.TL/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 0.0502</td><td>-0.588571</td><td>11 / 114</td><td>39.72</td><td>SELL</td><td>HOLD</td><td>0.720</td><td>EUR 0.0000</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>0.050200</td>
+      <td>-0.948718</td>
+      <td>0</td>
+      <td>111</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -19022,10 +17829,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/PRF1T-regimes.html?v=67955aeeace4" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/PRF1T-long-history.html?v=807ee7c8bee4" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -19132,7 +17939,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -19223,336 +18030,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 0.0502, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="PRF1T"></div>
+<div class="dominance-explorer" data-asset="PRF1T" data-target="PRF1T" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="PRF1T"></div>
-</details></details><details markdown="1" class="stock-profile" id="share-primo" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>PRIMO — Primostar Group</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank 77</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100152224/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3APRIMO" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/lookup/?s=EE3100152224" target="_blank" rel="noopener noreferrer">Yahoo Finance: ISIN search ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Yahoo lookup is a search link, not a confirmed chart.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="PRF1T" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile" id="share-pzv1l" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" hidden data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>PZV1L — Pieno žvaigždės | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LT0000111676/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3APZV1L" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/PZV1L.VS/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 3.0000</td><td>-0.680000</td><td>6 / 125</td><td>49.27</td><td>BUY</td><td>HOLD</td><td>0.874</td><td>EUR 0.0000</td></tr></tbody></table>
-
-<details markdown="1" class="instrument-extra-details">
-<summary>Additional instrument details</summary>
-
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/PRIMO-additional.html?v=9b9ceea8bbeb" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
-
-</details>
-
-
-
-<p>Research profile, not an additional purchase instruction. Portfolio filters describe membership; technical indicator signals are separate from allocation decisions.</p>
-
-
-
-<details markdown="1" class=""><summary><strong>Bollinger bands, MACD, RSI and Stochastic RSI — last 126 observations</strong></summary>
-<img loading="lazy" src="figures/stock_profiles/PRIMO_technicals_6m.png?v=59dd28c7b175">
-
-<table markdown="0" class="dataframe research-table">
+<table markdown="0" class="dataframe research-table long-history-table">
   <thead>
     <tr style="text-align: right;">
-      <th>Indicator</th>
-      <th>Current value</th>
-      <th>BUY price</th>
-      <th>SELL price</th>
-      <th>Current signal</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Bollinger price</td>
-      <td>EUR 3.0000</td>
-      <td>≤ EUR 2.7243 (-9.19%)</td>
-      <td>≥ EUR 3.2437 (+8.12%)</td>
-      <td>HOLD</td>
-    </tr>
-    <tr>
-      <td>RSI(14)</td>
-      <td>49.27</td>
-      <td>≤ EUR 2.4959 (-16.80%)</td>
-      <td>≥ EUR 3.5425 (+18.08%)</td>
-      <td>HOLD</td>
-    </tr>
-    <tr>
-      <td>Stochastic RSI %K</td>
-      <td>0.874</td>
-      <td>—</td>
-      <td>≥ EUR 2.9392 (-2.03%)</td>
-      <td>SELL</td>
-    </tr>
-    <tr>
-      <td>MACD</td>
-      <td>MACD = -0.0196<br>Signal = -0.0299<br>Gap = +0.0103</td>
-      <td>—</td>
-      <td>—</td>
-      <td>BUY</td>
-    </tr>
-    <tr>
-      <td>Consensus</td>
-      <td>BUY 1/4; SELL 1/4</td>
-      <td>At least 3 BUY votes</td>
-      <td>At least 3 SELL votes</td>
-      <td>HOLD</td>
-    </tr>
-  </tbody>
-</table>
-
-</details>
-
-<!-- WEEKLY_FORECAST_PRIMO_START -->
-<details markdown="0" open class="weekly-forecast" id="forecast-PRIMO" data-forecast-asset="PRIMO">
-<summary><strong>One-week price forecast - all methods in one graph</strong></summary>
-<img loading="lazy" src="figures/weekly_forecasts/PRIMO.png?v=a6ed5dbc7f3e" alt="Primostar Group: all forecasting methods on one graph">
-<p>Colours, line patterns and markers distinguish the methods; the selected method has a thicker line. Coincident paths indicate similar forecasts. Prediction ranges are listed below. E-codes mark scheduled events listed under Seven-day performance inputs and upcoming events.</p>
-<p><strong>Central forecast for 2026-11-06: EUR 3.0000 (+0.00%)</strong>; 90% empirical range EUR 2.5779–3.4912. Last observed close / NAV: EUR 3.0000, 2026-10-30. <strong>LOW CONFIDENCE.</strong></p>
-<p><strong>Models with cross-asset dependencies:</strong> Dependency Ridge, Dependency Extra Trees and Dependency Gradient boosting. Held-out MAE before adding these candidates: 4.254 pp; selected forecast now: 4.254 pp; error improvement +0.0% (positive = lower error; negative = worse). Selection uses validation data only; the held-out result does not influence selection.</p><div class="weekly-table-scroll">
-
-<table markdown="0" class="weekly-table "><thead><tr><th>Peer used by dependency models</th><th>Lagged correlation</th><th>Training pairs</th></tr></thead><tbody><tr><td>UTR1L</td><td>+0.166</td><td>252</td></tr><tr><td>LVN1T</td><td>+0.161</td><td>117</td></tr><tr><td>MODE</td><td>-0.153</td><td>252</td></tr><tr><td>RKB1R</td><td>-0.152</td><td>252</td></tr><tr><td>BERCM</td><td>+0.147</td><td>252</td></tr></tbody></table>
-
-</div>
-<p>Forecast prepared 2026-11-01; window 2026-11-02–2026-11-06. Model: <strong>No change</strong>. Horizon from the last observed price: 5 observations. This includes any unpublished days before the displayed week. Fund dates are indicative NAV valuation days; publication and market holidays may delay availability.</p>
-<ul class="forecast-cautions"><li>Thin trading / unchanged quotes: intervals can understate executable-price risk</li><li>Held-out forecast did not improve on the unchanged-price benchmark by 2%</li><li>No demonstrated directional advantage in the small held-out sample</li><li>Shorter history: adaptive rolling validation; fewer independent training/test observations than older instruments.</li></ul><div class="weekly-table-scroll">
-
-<table markdown="0" class="weekly-table "><thead><tr><th>Valuation / trading date</th><th>Central EUR</th><th>Lower 90% EUR</th><th>Upper 90% EUR</th></tr></thead><tbody><tr><td>2026-11-02</td><td>3.0000</td><td>2.8303</td><td>3.1799</td></tr><tr><td>2026-11-03</td><td>3.0000</td><td>2.7547</td><td>3.2671</td></tr><tr><td>2026-11-04</td><td>3.0000</td><td>2.5779</td><td>3.4912</td></tr><tr><td>2026-11-05</td><td>3.0000</td><td>2.7547</td><td>3.2671</td></tr><tr><td>2026-11-06</td><td>3.0000</td><td>2.5779</td><td>3.4912</td></tr></tbody></table>
-
-</div><p><strong>Held-out evidence:</strong> average absolute return-forecast error 4.254 percentage points; unchanged-price benchmark 4.254 pp; improvement +0.0%. Coverage of the validation-calibrated 90% interval: 100.0% across 12 held-out windows. Unchanged returns in the last 126 observations: 67.5%.</p><p>Direction test: BH-adjusted p=1.0000 across all 67 instruments; 0 nonzero-direction comparisons. A flat central forecast means no detected predictable drift, not zero risk.</p>
-<details markdown="1"><summary>Seven-day performance inputs and upcoming events</summary><div class="weekly-table-scroll">
-
-<table markdown="0" class="weekly-table "><thead><tr><th>7-observation input (ratios not annualised)</th><th>Current value</th></tr></thead><tbody><tr><td>Compounded 7-day return</td><td>0.000%</td></tr><tr><td>Mean daily return</td><td>0.000%</td></tr><tr><td>Daily SD</td><td>0.000%</td></tr><tr><td>Downside deviation</td><td>0.000%</td></tr><tr><td>Sharpe ratio</td><td>Undefined; separate model flag</td></tr><tr><td>Sortino ratio</td><td>Undefined; separate model flag</td></tr><tr><td>Omega ratio</td><td>Undefined; separate model flag</td></tr><tr><td>7-day return / maximum drawdown</td><td>Undefined; separate model flag</td></tr><tr><td>Empirical 95% VaR</td><td>-0.000%</td></tr><tr><td>Empirical 95% CVaR (worst of 7)</td><td>-0.000%</td></tr><tr><td>Maximum drawdown</td><td>0.000%</td></tr><tr><td>Skewness</td><td>0.0000</td></tr><tr><td>Excess kurtosis</td><td>-3.0000</td></tr><tr><td>Unchanged-return fraction</td><td>100.000%</td></tr></tbody></table>
-
-</div><p>Return and risk entries are percentages; ratios are not annualised. VaR/CVaR use the loss sign: a negative value corresponds to a gain.</p><div class="weekly-table-scroll">
-
-<table markdown="0" class="weekly-table "><thead><tr><th>Chart code</th><th>Date</th><th>Event</th><th>Model knowledge date</th><th>Official source</th></tr></thead><tbody><tr><td>E1</td><td>2026-11-03</td><td>US Job Openings and Labor Turnover Survey</td><td>2026-10-31</td><td><a href="https://www.bls.gov/schedule/2026/11_sched.htm" target="_blank" rel="noopener">Open</a></td></tr><tr><td>E2</td><td>2026-11-05</td><td>US Productivity and Costs</td><td>2026-10-31</td><td><a href="https://www.bls.gov/schedule/2026/11_sched.htm" target="_blank" rel="noopener">Open</a></td></tr><tr><td>E3</td><td>2026-11-06</td><td>US Employment Situation</td><td>2026-10-31</td><td><a href="https://www.bls.gov/schedule/2026/11_sched.htm" target="_blank" rel="noopener">Open</a></td></tr></tbody></table>
-
-</div><p>Upcoming event categories without historical training examples: macro. Their specific price or volatility effect is not established.</p><p>Neural safeguard: historically constant inputs held at their training value: calendar macro next7. The event calendar remains visible for context.</p><p>Conditional one-week realised-variation proxy: 5.254%. Forecast ranges use rolling residuals normalised by a training-only Ridge volatility proxy; this is not a guarantee of interval coverage.</p></details>
-<details markdown="1"><summary>Compare all forecast methods and backtest errors</summary>
-<div class="weekly-table-scroll">
-
-<table markdown="0" class="weekly-table "><thead><tr><th>Method</th><th>Week-end EUR</th><th>Change</th><th>90% range EUR</th><th>Validation MAE, pp</th><th>Held-out MAE, pp</th><th>Fit</th></tr></thead><tbody><tr><td>No change <strong>SELECTED</strong></td><td>3.0000</td><td>+0.00%</td><td>2.5779–3.4912</td><td>6.501</td><td>4.254</td><td>OK</td></tr><tr><td>AR(1)-GARCH-t</td><td>3.0012</td><td>+0.04%</td><td>2.5739–3.4994</td><td>6.473</td><td>4.258</td><td>OK</td></tr><tr><td>Validation ensemble</td><td>2.9963</td><td>-0.12%</td><td>2.5779–3.4827</td><td>6.497</td><td>4.367</td><td>OK</td></tr><tr><td>Historical drift</td><td>2.9875</td><td>-0.42%</td><td>2.5692–3.4739</td><td>6.677</td><td>4.612</td><td>OK</td></tr><tr><td>Gradient boosting</td><td>2.9396</td><td>-2.01%</td><td>2.4539–3.5215</td><td>6.908</td><td>5.298</td><td>OK</td></tr><tr><td>ARIMA(1,1,1)</td><td>2.9710</td><td>-0.97%</td><td>2.5220–3.4999</td><td>6.978</td><td>4.799</td><td>OK</td></tr><tr><td>Extra Trees</td><td>2.9409</td><td>-1.97%</td><td>2.4875–3.4771</td><td>7.046</td><td>4.909</td><td>OK</td></tr><tr><td>Dependency Extra Trees</td><td>2.9355</td><td>-2.15%</td><td>2.4680–3.4916</td><td>7.086</td><td>5.015</td><td>OK</td></tr><tr><td>Damped ETS</td><td>3.0026</td><td>+0.09%</td><td>2.5453–3.5421</td><td>7.240</td><td>4.113</td><td>OK</td></tr><tr><td>Dependency Gradient boosting</td><td>2.9021</td><td>-3.26%</td><td>2.4595–3.4242</td><td>7.724</td><td>5.189</td><td>OK</td></tr><tr><td>Neural network MLP</td><td>3.0382</td><td>+1.27%</td><td>2.5534–3.6150</td><td>7.741</td><td>7.036</td><td>OK</td></tr><tr><td>Dependency Ridge</td><td>3.0200</td><td>+0.67%</td><td>2.5254–3.6115</td><td>7.990</td><td>6.295</td><td>OK</td></tr><tr><td>Ridge regression</td><td>3.0451</td><td>+1.50%</td><td>2.5435–3.6456</td><td>8.830</td><td>5.506</td><td>OK</td></tr></tbody></table>
-
-</div>
-</details>
-<details markdown="1"><summary>How these forecasts were built and tested</summary>
-<p>24 non-overlapping rolling-origin windows: the first 12 select the model and ensemble weights; the final 12 assess that frozen choice. Every fit uses only prices and matured training targets available at its origin. The unchanged-price forecast is retained unless validation MAE improves by at least 2%. Hyperparameters are fixed before testing. A current fit failure is explicitly labelled and falls back to no change.</p>
-<p>ARIMA and damped exponential smoothing model log prices. AR(1)–GARCH with Student-t errors estimates the conditional return mean and volatility jointly: GARCH alone does not predict price direction. AI methods are Ridge, Extra Trees, gradient boosting and a small neural network; inputs are past returns, momentum and volatility, not an LLM or future news.</p>
-<p>Each fit uses up to 630 past price observations or matured ML training examples. Fixed ML settings: Ridge penalty 50; 60 Extra Trees (depth 5); gradient boosting with 55 iterations; neural network with 24 and 12 hidden units. Feature and target scaling are fitted only on the training set. Unstable model forecasts implying more than a 100-fold weekly price change are rejected with a diagnostic, never clipped.</p>
-<p>The central price is a back-transformed log-price estimate, not a guaranteed arithmetic mean. The displayed 90% range is calibrated from absolute rolling log-forecast errors; its coverage is approximate, not guaranteed. Illiquid unchanged quotes can make measured errors and ranges artificially small. Scheduled event dates are predictors; exact dividend/corporate-action price adjustments are not mechanically imposed. Unannounced earnings/news, spreads and execution prices remain outside these forecasts. NAV expenses are already embedded. Forecasts do not override the existing BUY / WAIT / HOLD / SELL rules.</p><p><strong>Cross-asset models:</strong> the three dependency models add lagged S&amp;P 500 USD returns, leave-one-out Baltic and fund return factors, and five peers selected by absolute correlation inside each trailing 252-observation training window. All external return series are delayed by two business days. Inputs include lagged returns, 5/7/20-observation averages, 7/20-observation volatility, 7-observation beta and trailing 7/60-observation correlations with the target. Correlation is a predictor, not a claim of causation. The same conservative lag is used in validation and live forecasts.</p><p>Dependency Ridge uses penalty 100; the tree models use the fixed settings above. Missing predictors are replaced by zero within the fitted pipeline; scaling and mature-target training use training data only. The current instrument universe is fixed, so survivorship bias remains possible. Historical fund NAV publication timestamps are unavailable; the two-day buffer is an assumption, not proof of historical execution availability. The original independent-model ensemble remains frozen; the added models compete individually using the first 12 windows. The final 12 windows evaluate the frozen choice.</p><p><strong>Seven-observation inputs:</strong> compounded and average return, SD, downside/upside deviation, Sharpe, Sortino, Omega, Calmar-style return/drawdown, empirical VaR/CVaR, drawdown, ulcer index, skewness, kurtosis, positive/unchanged-return fractions and autocorrelation. Ratios use zero risk-free return and zero minimum acceptable return; they are not annualised. With seven observations, empirical 95% CVaR reduces to the worst observation, so it is a noisy short-window feature, not a reliable tail-risk estimate. Undefined performance ratios have an explicit indicator and a neutral model placeholder.</p><p><strong>Calendar inputs:</strong> upcoming 1/7-business-day and recent 7-calendar-day counts by event type, plus weekday/month seasonality. Historical schedule dates are used only when the exact date is verified in a timestamped publication. Unverified schedules and the BLS macro calendar are available only from the current snapshot date; they are never backdated. The schedule is not exhaustive and uses event dates, not intraday release times; after-close announcements may affect the next trading session. An event date does not reveal an earnings surprise or guarantee a price direction. Event categories absent from training have no demonstrated learned effect. Predictors that were constant in every past usable feature row are held at their training value for the live neural forecast, preventing random neural responses to first-ever calendar inputs; this changes no historical validation/test input. The volatility proxy is shrunk halfway toward the training RMS baseline and bounded by the range of its training targets to prevent numerical extrapolation. Models also forecast realised variation using matured targets; conditional-scale-normalised residuals calibrate prediction ranges, with held-out coverage assessed separately.</p><p>Methods: <a href="https://arch.readthedocs.io/en/latest/univariate/forecasting.html" target="_blank" rel="noopener">arch forecasting</a>; <a href="https://scikit-learn.org/stable/auto_examples/applications/plot_time_series_lagged_features.html" target="_blank" rel="noopener">time-series ML validation</a>.</p>
-</details>
-</details>
-<!-- WEEKLY_FORECAST_PRIMO_END -->
-
-
-<details markdown="1" class=""><summary><strong>Complete technical history</strong></summary>
-<img loading="lazy" src="figures/stock_profiles/PRIMO_technicals_full.png?v=f1c4b4c2f044">
-</details>
-
-<!-- REGIME_ASSET_START -->
-
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
-
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/PRIMO-regimes.html?v=dbf0e5e41b3d" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
-
-</details>
-
-<!-- REGIME_ASSET_END -->
-
-<details markdown="1" class=""><summary><strong>Seasonals, drawdowns and upside periods</strong></summary>
-<p>Maximum drawdown -48.40% on 2026-07-15; best daily return 19.55% on 2026-09-10; worst -24.67% on 2026-07-15. Exploratory historical statistics, not validated timing rules.</p>
-
-<table markdown="0" class="dataframe research-table">
-  <thead>
-    <tr style="text-align: right;">
-      <th>date</th>
-      <th>count</th>
-      <th>mean</th>
-      <th>median</th>
-      <th>std</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>21</td>
-      <td>-0.000098</td>
-      <td>0.000000</td>
-      <td>0.016037</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>20</td>
-      <td>-0.002339</td>
-      <td>0.000000</td>
-      <td>0.033253</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>22</td>
-      <td>-0.003732</td>
-      <td>0.000000</td>
-      <td>0.031480</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>20</td>
-      <td>0.002799</td>
-      <td>0.000000</td>
-      <td>0.018983</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>19</td>
-      <td>-0.000903</td>
-      <td>0.000000</td>
-      <td>0.019811</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>21</td>
-      <td>-0.001252</td>
-      <td>0.000000</td>
-      <td>0.004678</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>23</td>
-      <td>-0.013262</td>
-      <td>0.000000</td>
-      <td>0.091169</td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>21</td>
-      <td>0.013859</td>
-      <td>0.000000</td>
-      <td>0.032078</td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td>22</td>
-      <td>-0.000789</td>
-      <td>0.000000</td>
-      <td>0.060628</td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td>44</td>
-      <td>-0.001306</td>
-      <td>0.000000</td>
-      <td>0.044770</td>
-    </tr>
-    <tr>
-      <td>11</td>
-      <td>20</td>
-      <td>0.008486</td>
-      <td>0.000000</td>
-      <td>0.049979</td>
-    </tr>
-    <tr>
-      <td>12</td>
-      <td>19</td>
-      <td>0.000768</td>
-      <td>0.000000</td>
-      <td>0.024281</td>
-    </tr>
-  </tbody>
-</table>
-
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
-
-<table markdown="0" class="dataframe research-table">
-  <thead>
-    <tr style="text-align: right;">
-      <th>Measure</th>
-      <th>Full baseline</th>
-      <th>After change</th>
+      <th>Current units</th>
+      <th>Target units</th>
       <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>netSD</td>
-      <td>0.702857</td>
-      <td>0.702857</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
       <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>OUT</td>
-      <td>123.000000</td>
-      <td>123.000000</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>IN</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Rachev</td>
-      <td>1.555495</td>
-      <td>1.555495</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Sortino</td>
-      <td>0.377445</td>
-      <td>0.377445</td>
-      <td>0.000000</td>
+      <td>1.790000</td>
+      <td>-0.017094</td>
+      <td>31</td>
+      <td>33</td>
     </tr>
   </tbody>
 </table>
-
-<h4>Removing this holding from the corrected main plan</h4>
-
-<table markdown="0" class="dataframe research-table">
-  <thead>
-    <tr style="text-align: right;">
-      <th>Measure</th>
-      <th>Full baseline</th>
-      <th>After change</th>
-      <th>Change</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>netSD</td>
-      <td>0.885714</td>
-      <td>0.885714</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>OUT</td>
-      <td>155.000000</td>
-      <td>155.000000</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>IN</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Rachev</td>
-      <td>1.872334</td>
-      <td>1.872334</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Sortino</td>
-      <td>0.610105</td>
-      <td>0.610105</td>
-      <td>0.000000</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>Addition uses 0 extra units at EUR 3.0000, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="PRIMO"></div>
-</details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="PRIMO"></div>
-</details></details><details markdown="1" class="stock-profile" id="share-pzv1l" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" hidden data-portfolio-scopes="ANY UPDATE2 UPDATE3" data-sale-membership='{"ANY":["NO_SALE","SALE"],"STOCHASTIC":[],"UPDATE2":["NO_SALE","SALE"],"UPDATE3":["NO_SALE","SALE"],"ALL":["NO_SALE","SALE"]}'><summary><strong>PZV1L — Pieno žvaigždės</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank 52</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LT0000111676/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3APZV1L" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/PZV1L.VS/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
-
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 1.7900</td><td>-0.074286</td><td>42 / 55</td><td>56.61</td><td>SELL</td><td>HOLD</td><td>0.593</td><td>EUR 0.0840</td></tr></tbody></table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -19670,10 +18178,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/PZV1L-regimes.html?v=0f06e3cf233a" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/PZV1L-long-history.html?v=873f83a65a87" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -19780,7 +18288,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -19871,12 +18379,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 1.7900, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="PZV1L"></div>
+<div class="dominance-explorer" data-asset="PZV1L" data-target="PZV1L" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="PZV1L"></div>
-</details></details><details markdown="1" class="stock-profile" id="share-rkb1r" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>RKB1R — Rīgas kuģu būvētava</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank 72</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LV0000100378/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXRSE%3ARKB1R" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/RKB1R.RG/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="PZV1L" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile" id="share-rkb1r" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>RKB1R — Rīgas kuģu būvētava | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LV0000100378/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXRSE%3ARKB1R" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/RKB1R.RG/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 0.3180</td><td>-0.611429</td><td>7 / 114</td><td>50.51</td><td>BUY</td><td>HOLD</td><td>0.624</td><td>EUR 0.0000</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>0.318000</td>
+      <td>0.008547</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -19994,10 +18527,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/RKB1R-regimes.html?v=aa53dad8785c" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/RKB1R-long-history.html?v=d13db0da7972" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -20104,7 +18637,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -20195,12 +18728,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 0.3180, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="RKB1R"></div>
+<div class="dominance-explorer" data-asset="RKB1R" data-target="RKB1R" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="RKB1R"></div>
-</details></details><details markdown="1" class="stock-profile" id="share-sauna" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>SAUNA — Saunum Group</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank 64</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100019753/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3ASAUNA" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/lookup/?s=EE3100019753" target="_blank" rel="noopener noreferrer">Yahoo Finance: ISIN search ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Yahoo lookup is a search link, not a confirmed chart.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="RKB1R" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile" id="share-sauna" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>SAUNA — Saunum Group | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100019753/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3ASAUNA" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/lookup/?s=EE3100019753" target="_blank" rel="noopener noreferrer">Yahoo Finance: ISIN search ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Yahoo lookup is a search link, not a confirmed chart.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 2.5300</td><td>-0.337143</td><td>19 / 78</td><td>53.39</td><td>BUY</td><td>HOLD</td><td>0.518</td><td>EUR 0.0000</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>2.530000</td>
+      <td>-0.982906</td>
+      <td>0</td>
+      <td>115</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -20318,10 +18876,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SAUNA-regimes.html?v=72cc746e8066" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SAUNA-long-history.html?v=15547ff0d619" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -20428,7 +18986,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -20519,12 +19077,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 2.5300, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="SAUNA"></div>
+<div class="dominance-explorer" data-asset="SAUNA" data-target="SAUNA" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="SAUNA"></div>
-</details></details><details markdown="1" class="stock-profile" id="share-scm1r" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>SCM1R — Siguldas ciltslietu un mākslīgās apsēklošanas stacija</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank 46</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LV0000100600/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXRSE%3ASCM1R" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/SCM1R.RG/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="SAUNA" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile" id="share-scm1r" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" hidden data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>SCM1R — Siguldas ciltslietu un mākslīgās apsēklošanas stacija | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LV0000100600/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXRSE%3ASCM1R" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/SCM1R.RG/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 7.0000</td><td>0.005714</td><td>4 / 3</td><td>64.17</td><td>BUY</td><td>HOLD</td><td>1.000</td><td>EUR 0.0260</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>7.000000</td>
+      <td>-0.059829</td>
+      <td>1</td>
+      <td>8</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -20642,10 +19225,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SCM1R-regimes.html?v=b8bfc525b0b0" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SCM1R-long-history.html?v=4586590cc372" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -20752,7 +19335,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -20843,12 +19426,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 7.0000, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="SCM1R"></div>
+<div class="dominance-explorer" data-asset="SCM1R" data-target="SCM1R" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="SCM1R"></div>
-</details></details><details markdown="1" class="stock-profile" id="share-sfg1t" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>SFG1T — Silvano Fashion Group</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank 56</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100001751/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3ASFG1T" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/SFG1T.TL/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="SCM1R" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile" id="share-sfg1t" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>SFG1T — Silvano Fashion Group | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100001751/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3ASFG1T" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/SFG1T.TL/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 1.0600</td><td>-0.137143</td><td>30 / 54</td><td>44.99</td><td>BUY</td><td>HOLD</td><td>0.465</td><td>EUR 0.0000</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>1.060000</td>
+      <td>0.350427</td>
+      <td>41</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -20966,10 +19574,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SFG1T-regimes.html?v=e8fc965ae6ff" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SFG1T-long-history.html?v=799c5c0f034e" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -21076,7 +19684,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -21167,12 +19775,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 1.0600, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="SFG1T"></div>
+<div class="dominance-explorer" data-asset="SFG1T" data-target="SFG1T" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="SFG1T"></div>
-</details></details><details markdown="1" class="stock-profile" id="share-skn1t" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>SKN1T — Nordic Fibreboard</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank 82</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100092503/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3ASKN1T" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/SKN1T.TL/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="SFG1T" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile" id="share-skn1t" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>SKN1T — Nordic Fibreboard | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100092503/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3ASKN1T" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/SKN1T.TL/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 0.4100</td><td>-0.777143</td><td>6 / 142</td><td>21.95</td><td>SELL</td><td>HOLD</td><td>0.302</td><td>EUR 0.0000</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>0.410000</td>
+      <td>-0.871795</td>
+      <td>5</td>
+      <td>107</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -21290,10 +19923,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SKN1T-regimes.html?v=1ebe76cb0da8" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SKN1T-long-history.html?v=c4680316ffc6" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -21400,7 +20033,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -21491,12 +20124,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 0.4100, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="SKN1T"></div>
+<div class="dominance-explorer" data-asset="SKN1T" data-target="SKN1T" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="SKN1T"></div>
-</details></details><details markdown="1" class="stock-profile" id="share-tpd1t" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>TPD1T — Trigon Property Development</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank 71</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100003443/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3ATPD1T" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/TPD1T.TL/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="SKN1T" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile" id="share-tpd1t" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>TPD1T — Trigon Property Development | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100003443/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3ATPD1T" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/TPD1T.TL/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 0.5300</td><td>-0.594286</td><td>16 / 120</td><td>43.24</td><td>SELL</td><td>HOLD</td><td>0.327</td><td>EUR 0.0000</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>0.530000</td>
+      <td>-0.717949</td>
+      <td>11</td>
+      <td>95</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -21614,10 +20272,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/TPD1T-regimes.html?v=43722ffcf8be" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/TPD1T-long-history.html?v=1bb8b25e0c86" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -21724,7 +20382,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -21815,12 +20473,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 0.5300, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="TPD1T"></div>
+<div class="dominance-explorer" data-asset="TPD1T" data-target="TPD1T" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="TPD1T"></div>
-</details></details><details markdown="1" class="stock-profile" id="share-tve1t" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" hidden data-portfolio-scopes="ANY UPDATE2 UPDATE3" data-sale-membership='{"ANY":["SALE"],"STOCHASTIC":[],"UPDATE2":["SALE"],"UPDATE3":["SALE"],"ALL":["SALE"]}'><summary><strong>TVE1T — Tallinna Vesi</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank 37</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100026436/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3ATVE1T" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/TVE1T.TL/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="TPD1T" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile" id="share-tve1t" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" hidden data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>TVE1T — Tallinna Vesi | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/EE3100026436/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXTSE%3ATVE1T" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/TVE1T.TL/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 10.8000</td><td>0.142857</td><td>49 / 24</td><td>42.55</td><td>SELL</td><td>BUY</td><td>0.333</td><td>EUR 0.3880</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>10.800000</td>
+      <td>0.153846</td>
+      <td>30</td>
+      <td>12</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -21938,10 +20621,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/TVE1T-regimes.html?v=c71f990be142" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/TVE1T-long-history.html?v=da51aa5ee392" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -22048,7 +20731,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -22139,12 +20822,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 10.8000, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="TVE1T"></div>
+<div class="dominance-explorer" data-asset="TVE1T" data-target="TVE1T" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="TVE1T"></div>
-</details></details><details markdown="1" class="stock-profile" id="share-utr1l" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>UTR1L — Utenos trikotažas</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank 66</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LT0000109324/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3AUTR1L" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/UTR1L.VS/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="TVE1T" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile" id="share-utr1l" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>UTR1L — Utenos trikotažas | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LT0000109324/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3AUTR1L" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/UTR1L.VS/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 0.3780</td><td>-0.445714</td><td>6 / 84</td><td>64.00</td><td>BUY</td><td>SELL</td><td>0.406</td><td>EUR 0.0000</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>0.378000</td>
+      <td>-0.316239</td>
+      <td>1</td>
+      <td>38</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -22262,10 +20970,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/UTR1L-regimes.html?v=f51f7159814b" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/UTR1L-long-history.html?v=83e7e759222f" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -22372,7 +21080,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -22463,12 +21171,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 0.3780, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="UTR1L"></div>
+<div class="dominance-explorer" data-asset="UTR1L" data-target="UTR1L" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="UTR1L"></div>
-</details></details><details markdown="1" class="stock-profile" id="share-vbl1l" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>VBL1L — Vilniaus baldai</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank 73</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LT0000104267/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3AVBL1L" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/VBL1L.VS/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="UTR1L" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile" id="share-vbl1l" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" hidden data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>VBL1L — Vilniaus baldai | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LT0000104267/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3AVBL1L" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/VBL1L.VS/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 9.5500</td><td>-0.622857</td><td>12 / 121</td><td>42.18</td><td>SELL</td><td>HOLD</td><td>-0.000</td><td>EUR 0.3120</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>9.550000</td>
+      <td>-0.076923</td>
+      <td>17</td>
+      <td>26</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -22586,10 +21319,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/VBL1L-regimes.html?v=03475f080a82" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/VBL1L-long-history.html?v=4c86809bdda6" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -22696,7 +21429,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -22787,12 +21520,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 9.5500, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="VBL1L"></div>
+<div class="dominance-explorer" data-asset="VBL1L" data-target="VBL1L" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="VBL1L"></div>
-</details></details><details markdown="1" class="stock-profile" id="share-virsi" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" hidden data-portfolio-scopes="ANY UPDATE2 UPDATE3" data-sale-membership='{"ANY":["SALE"],"STOCHASTIC":[],"UPDATE2":["SALE"],"UPDATE3":["SALE"],"ALL":["SALE"]}'><summary><strong>VIRSI — VIRŠI-A</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank 5</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LV0000101848/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXRSE%3AVIRSI" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/VIRSI.RG/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="VBL1L" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile" id="share-virsi" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" hidden data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>VIRSI — VIRŠI-A | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LV0000101848/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXRSE%3AVIRSI" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/VIRSI.RG/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 4.4000</td><td>0.474286</td><td>88 / 5</td><td>44.62</td><td>SELL</td><td>BUY</td><td>0.666</td><td>EUR 0.0545</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>4.400000</td>
+      <td>0.222222</td>
+      <td>33</td>
+      <td>7</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -22910,10 +21668,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/VIRSI-regimes.html?v=34597e676454" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/VIRSI-long-history.html?v=77222087b2a6" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -23020,7 +21778,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -23111,12 +21869,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 4.4000, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="VIRSI"></div>
+<div class="dominance-explorer" data-asset="VIRSI" data-target="VIRSI" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="VIRSI"></div>
-</details></details><details markdown="1" class="stock-profile" id="share-zmp1l" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>ZMP1L — Žemaitijos pienas</strong> | current action: HOLD | allocation target 0 shares | netSD diagnostic rank 43</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LT0000121865/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3AZMP1L" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/ZMP1L.VS/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="VIRSI" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile" id="share-zmp1l" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="PAID" hidden data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>ZMP1L — Žemaitijos pienas | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://nasdaqbaltic.com/statistics/en/instrument/LT0000121865/trading" target="_blank" rel="noopener noreferrer">Nasdaq Baltic ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3AZMP1L" target="_blank" rel="noopener noreferrer">TradingView chart ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/ZMP1L.VS/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 2.8800</td><td>0.051429</td><td>48 / 39</td><td>56.52</td><td>SELL</td><td>HOLD</td><td>0.365</td><td>EUR 0.0240</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>2.880000</td>
+      <td>0.290598</td>
+      <td>37</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -23234,10 +22017,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/ZMP1L-regimes.html?v=c84dd95b69dc" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/ZMP1L-long-history.html?v=306f55d4ef0f" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -23344,7 +22127,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -23435,12 +22218,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 2.8800, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="ZMP1L"></div>
+<div class="dominance-explorer" data-asset="ZMP1L" data-target="ZMP1L" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="ZMP1L"></div>
-</details></details><details markdown="1" class="stock-profile fund-profile" id="fund-SE0013876950" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>Access Edge Em Mkt C — SE0013876950</strong> | current action: HOLD | allocation target 0 units | netSD diagnostic rank 21</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://swedbankrobur.fondlista.se/en/details/SE0013876950" target="_blank" rel="noopener noreferrer">Official fund page ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/0P0001JFN4.F/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Fund NAV charts may have no exchange-trading volume. An exact TradingView listing for this share class has not been verified.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="ZMP1L" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile fund-profile" id="fund-SE0013876950" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>SE0013876950 — Swedbank Robur Access Edge Em Mkt C | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://swedbankrobur.fondlista.se/en/details/SE0013876950" target="_blank" rel="noopener noreferrer">Official fund page ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/0P0001JFN4.F/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Fund NAV charts may have no exchange-trading volume. An exact TradingView listing for this share class has not been verified.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 13.7966</td><td>0.325714</td><td>61 / 4</td><td>42.99</td><td>SELL</td><td>HOLD</td><td>0.346</td><td>—</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>13.796600</td>
+      <td>0.418803</td>
+      <td>49</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -23558,10 +22366,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0013876950-regimes.html?v=2bd477578b42" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0013876950-long-history.html?v=a1b94300066e" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -23668,7 +22476,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -23759,12 +22567,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 13.7966, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="Access Edge Em Mkt C"></div>
+<div class="dominance-explorer" data-asset="SE0013876950" data-target="SE0013876950" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="Access Edge Em Mkt C"></div>
-</details></details><details markdown="1" class="stock-profile fund-profile" id="fund-SE0013876968" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>Access Asien C — SE0013876968</strong> | current action: HOLD | allocation target 0 units | netSD diagnostic rank 32</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://swedbankrobur.fondlista.se/en/details/SE0013876968" target="_blank" rel="noopener noreferrer">Official fund page ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/0P0001JFN9.F/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Fund NAV charts may have no exchange-trading volume. An exact TradingView listing for this share class has not been verified.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="SE0013876950" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile fund-profile" id="fund-SE0013876968" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>SE0013876968 — Swedbank Robur Access Asien C | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://swedbankrobur.fondlista.se/en/details/SE0013876968" target="_blank" rel="noopener noreferrer">Official fund page ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/0P0001JFN9.F/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Fund NAV charts may have no exchange-trading volume. An exact TradingView listing for this share class has not been verified.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 13.4857</td><td>0.234286</td><td>53 / 12</td><td>44.38</td><td>SELL</td><td>HOLD</td><td>0.559</td><td>—</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>13.485700</td>
+      <td>0.384615</td>
+      <td>46</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -23882,10 +22715,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0013876968-regimes.html?v=fa7011fd7d8b" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0013876968-long-history.html?v=a2a785389d4c" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -23992,7 +22825,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -24083,12 +22916,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 13.4857, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="Access Asien C"></div>
+<div class="dominance-explorer" data-asset="SE0013876968" data-target="SE0013876968" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="Access Asien C"></div>
-</details></details><details markdown="1" class="stock-profile fund-profile" id="fund-SE0014261756" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="ANY UPDATE3" data-sale-membership='{"ANY":["SALE"],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":["SALE"],"ALL":["SALE"]}'><summary><strong>Global High Dividend C — SE0014261756</strong> | current action: HOLD | allocation target 0 units | netSD diagnostic rank 3</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://swedbankrobur.fondlista.se/en/details/SE0014261756" target="_blank" rel="noopener noreferrer">Official fund page ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/0P0001JOFO.F/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Fund NAV charts may have no exchange-trading volume. An exact TradingView listing for this share class has not been verified.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="SE0013876968" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile fund-profile" id="fund-SE0014261756" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>SE0014261756 — Swedbank Robur Global High Dividend C | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://swedbankrobur.fondlista.se/en/details/SE0014261756" target="_blank" rel="noopener noreferrer">Official fund page ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/0P0001JOFO.F/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Fund NAV charts may have no exchange-trading volume. An exact TradingView listing for this share class has not been verified.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 19.2520</td><td>0.628571</td><td>114 / 4</td><td>68.46</td><td>BUY</td><td>HOLD</td><td>0.946</td><td>—</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>19.252000</td>
+      <td>0.512821</td>
+      <td>60</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -24206,10 +23064,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0014261756-regimes.html?v=f9a8e5ea6ec1" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0014261756-long-history.html?v=e9e4360a47e2" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -24316,7 +23174,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -24407,12 +23265,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 19.2520, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="Global High Dividend C"></div>
+<div class="dominance-explorer" data-asset="SE0014261756" data-target="SE0014261756" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="Global High Dividend C"></div>
-</details></details><details markdown="1" class="stock-profile fund-profile" id="fund-SE0014261764" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="ANY UPDATE3" data-sale-membership='{"ANY":["SALE"],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":["SALE"],"ALL":["SALE"]}'><summary><strong>Technology C — SE0014261764</strong> | current action: HOLD | allocation target 0 units | netSD diagnostic rank 33</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://swedbankrobur.fondlista.se/en/details/SE0014261764" target="_blank" rel="noopener noreferrer">Official fund page ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/0P0001JOFN.F/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Fund NAV charts may have no exchange-trading volume. An exact TradingView listing for this share class has not been verified.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="SE0014261756" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile fund-profile" id="fund-SE0014261764" data-signal="WAIT" data-netsd-effect="INCREASE" data-dividend-status="NONE" hidden data-portfolio-scopes="ALL ANY STOCHASTIC UPDATE3" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":["NO_SALE","SALE"],"STOCHASTIC":["NO_SALE","SALE"],"UPDATE3":["NO_SALE","SALE"],"UPDATE2":[]}'><summary><strong>SE0014261764 — Swedbank Robur Technology C | current action: WAIT | allocation target 50 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://swedbankrobur.fondlista.se/en/details/SE0014261764" target="_blank" rel="noopener noreferrer">Official fund page ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/0P0001JOFN.F/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Fund NAV charts may have no exchange-trading volume. An exact TradingView listing for this share class has not been verified.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 27.2496</td><td>0.217143</td><td>44 / 6</td><td>46.65</td><td>SELL</td><td>HOLD</td><td>0.489</td><td>—</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>50</td>
+      <td>50</td>
+      <td>0.090832</td>
+      <td>27.249600</td>
+      <td>0.341880</td>
+      <td>40</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -24530,10 +23413,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0014261764-regimes.html?v=11c89fe8a07b" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0014261764-long-history.html?v=6739ab9860e6" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -24640,7 +23523,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -24731,12 +23614,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 27.2496, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="Technology C"></div>
+<div class="dominance-explorer" data-asset="SE0014261764" data-target="SE0014261764" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="Technology C"></div>
-</details></details><details markdown="1" class="stock-profile fund-profile" id="fund-SE0014261871" data-signal="WAIT" data-netsd-effect="INCREASE" data-dividend-status="NONE" data-portfolio-scopes="ANY STOCHASTIC" data-sale-membership='{"ANY":["SALE"],"STOCHASTIC":["SALE"],"UPDATE2":[],"UPDATE3":[],"ALL":["SALE"]}'><summary><strong>Healthcare C — SE0014261871</strong> | current action: WAIT | allocation target 21 units | netSD diagnostic rank 8</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://swedbankrobur.fondlista.se/en/details/SE0014261871" target="_blank" rel="noopener noreferrer">Official fund page ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/0P0001JOFL.F/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Fund NAV charts may have no exchange-trading volume. An exact TradingView listing for this share class has not been verified.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="SE0014261764" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile fund-profile" id="fund-SE0014261871" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>SE0014261871 — Swedbank Robur Healthcare C | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://swedbankrobur.fondlista.se/en/details/SE0014261871" target="_blank" rel="noopener noreferrer">Official fund page ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/0P0001JOFL.F/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Fund NAV charts may have no exchange-trading volume. An exact TradingView listing for this share class has not been verified.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>21</td><td>+21</td><td>2.07%</td><td>EUR 14.7909</td><td>0.457143</td><td>84 / 4</td><td>75.19</td><td>BUY</td><td>HOLD</td><td>0.931</td><td>—</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>14.790900</td>
+      <td>0.222222</td>
+      <td>43</td>
+      <td>17</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -24854,10 +23762,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0014261871-regimes.html?v=899dde29b9e4" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0014261871-long-history.html?v=d04297994cc7" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -24964,7 +23872,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -25055,12 +23963,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 21 extra units at EUR 14.7909, on top of 0 existing units. Removal excludes all 21 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="Healthcare C"></div>
+<div class="dominance-explorer" data-asset="SE0014261871" data-target="SE0014261871" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="Healthcare C"></div>
-</details></details><details markdown="1" class="stock-profile fund-profile" id="fund-SE0014261889" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>Global Impact C — SE0014261889</strong> | current action: HOLD | allocation target 0 units | netSD diagnostic rank 4</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://swedbankrobur.fondlista.se/en/details/SE0014261889" target="_blank" rel="noopener noreferrer">Official fund page ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/0P0001JOFK.F/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Fund NAV charts may have no exchange-trading volume. An exact TradingView listing for this share class has not been verified.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="SE0014261871" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile fund-profile" id="fund-SE0014261889" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>SE0014261889 — Swedbank Robur Global Impact C | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://swedbankrobur.fondlista.se/en/details/SE0014261889" target="_blank" rel="noopener noreferrer">Official fund page ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/0P0001JOFK.F/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Fund NAV charts may have no exchange-trading volume. An exact TradingView listing for this share class has not been verified.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 15.9689</td><td>0.485714</td><td>95 / 10</td><td>52.78</td><td>SELL</td><td>HOLD</td><td>0.604</td><td>—</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>15.968900</td>
+      <td>0.427350</td>
+      <td>52</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -25178,10 +24111,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0014261889-regimes.html?v=545910e53f66" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0014261889-long-history.html?v=7f4d9e495fc4" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -25288,7 +24221,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -25379,12 +24312,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 15.9689, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="Global Impact C"></div>
+<div class="dominance-explorer" data-asset="SE0014261889" data-target="SE0014261889" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="Global Impact C"></div>
-</details></details><details markdown="1" class="stock-profile fund-profile" id="fund-SE0014261897" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>Fastighet C — SE0014261897</strong> | current action: HOLD | allocation target 0 units | netSD diagnostic rank 41</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://swedbankrobur.fondlista.se/en/details/SE0014261897" target="_blank" rel="noopener noreferrer">Official fund page ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/0P0001JOFM.F/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Fund NAV charts may have no exchange-trading volume. An exact TradingView listing for this share class has not been verified.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="SE0014261889" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile fund-profile" id="fund-SE0014261897" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>SE0014261897 — Swedbank Robur Fastighet C | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://swedbankrobur.fondlista.se/en/details/SE0014261897" target="_blank" rel="noopener noreferrer">Official fund page ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/0P0001JOFM.F/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Fund NAV charts may have no exchange-trading volume. An exact TradingView listing for this share class has not been verified.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 10.4090</td><td>0.074286</td><td>52 / 39</td><td>63.20</td><td>BUY</td><td>HOLD</td><td>0.878</td><td>—</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>10.409000</td>
+      <td>0.051282</td>
+      <td>32</td>
+      <td>26</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -25502,10 +24460,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0014261897-regimes.html?v=20ebdf6010ca" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0014261897-long-history.html?v=382bfe3e9024" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -25612,7 +24570,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -25703,12 +24661,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 10.4090, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="Fastighet C"></div>
+<div class="dominance-explorer" data-asset="SE0014261897" data-target="SE0014261897" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="Fastighet C"></div>
-</details></details><details markdown="1" class="stock-profile fund-profile" id="fund-SE0014263273" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>Swedbank Savings Fund 30 N — SE0014263273</strong> | current action: HOLD | allocation target 0 units | netSD diagnostic rank 13</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://swedbankrobur.fondlista.se/en/details/SE0014263273" target="_blank" rel="noopener noreferrer">Official fund page ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/0P0001LPRD.F/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Fund NAV charts may have no exchange-trading volume. An exact TradingView listing for this share class has not been verified.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="SE0014261897" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile fund-profile" id="fund-SE0014263273" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>SE0014263273 — Swedbank Savings Fund 30 N | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://swedbankrobur.fondlista.se/en/details/SE0014263273" target="_blank" rel="noopener noreferrer">Official fund page ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/0P0001LPRD.F/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Fund NAV charts may have no exchange-trading volume. An exact TradingView listing for this share class has not been verified.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 11.2904</td><td>0.434286</td><td>76 / 0</td><td>52.36</td><td>SELL</td><td>HOLD</td><td>0.716</td><td>—</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>11.290400</td>
+      <td>0.529915</td>
+      <td>64</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -25826,10 +24809,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0014263273-regimes.html?v=bd9962e93138" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0014263273-long-history.html?v=26c966e9e72e" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -25936,7 +24919,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -26027,12 +25010,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 11.2904, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="Swedbank Savings Fund 30 N"></div>
+<div class="dominance-explorer" data-asset="SE0014263273" data-target="SE0014263273" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="Swedbank Savings Fund 30 N"></div>
-</details></details><details markdown="1" class="stock-profile fund-profile" id="fund-SE0014263281" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>Swedbank Savings Fund 100 N — SE0014263281</strong> | current action: HOLD | allocation target 0 units | netSD diagnostic rank 10</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://swedbankrobur.fondlista.se/en/details/SE0014263281" target="_blank" rel="noopener noreferrer">Official fund page ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/0P0001LPRF.F/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Fund NAV charts may have no exchange-trading volume. An exact TradingView listing for this share class has not been verified.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="SE0014263273" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile fund-profile" id="fund-SE0014263281" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>SE0014263281 — Swedbank Savings Fund 100 N | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://swedbankrobur.fondlista.se/en/details/SE0014263281" target="_blank" rel="noopener noreferrer">Official fund page ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/0P0001LPRF.F/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Fund NAV charts may have no exchange-trading volume. An exact TradingView listing for this share class has not been verified.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 15.3053</td><td>0.445714</td><td>89 / 11</td><td>51.32</td><td>SELL</td><td>HOLD</td><td>0.490</td><td>—</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>15.305300</td>
+      <td>0.418803</td>
+      <td>53</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -26150,10 +25158,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0014263281-regimes.html?v=a76f154dbce6" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0014263281-long-history.html?v=51690bcb0e30" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -26260,7 +25268,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -26351,12 +25359,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 15.3053, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="Swedbank Savings Fund 100 N"></div>
+<div class="dominance-explorer" data-asset="SE0014263281" data-target="SE0014263281" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="Swedbank Savings Fund 100 N"></div>
-</details></details><details markdown="1" class="stock-profile fund-profile" id="fund-SE0014263299" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>Swedbank Savings Fund 60 N — SE0014263299</strong> | current action: HOLD | allocation target 0 units | netSD diagnostic rank 10</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://swedbankrobur.fondlista.se/en/details/SE0014263299" target="_blank" rel="noopener noreferrer">Official fund page ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/0P0001LPRE.F/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Fund NAV charts may have no exchange-trading volume. An exact TradingView listing for this share class has not been verified.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="SE0014263281" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile fund-profile" id="fund-SE0014263299" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>SE0014263299 — Swedbank Savings Fund 60 N | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://swedbankrobur.fondlista.se/en/details/SE0014263299" target="_blank" rel="noopener noreferrer">Official fund page ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/0P0001LPRE.F/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Fund NAV charts may have no exchange-trading volume. An exact TradingView listing for this share class has not been verified.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 12.9380</td><td>0.445714</td><td>82 / 4</td><td>51.62</td><td>SELL</td><td>HOLD</td><td>0.558</td><td>—</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>12.938000</td>
+      <td>0.512821</td>
+      <td>60</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -26474,10 +25507,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0014263299-regimes.html?v=2c2557c37ec3" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0014263299-long-history.html?v=daf132c2e5dd" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -26584,7 +25617,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -26675,12 +25708,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 12.9380, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="Swedbank Savings Fund 60 N"></div>
+<div class="dominance-explorer" data-asset="SE0014263299" data-target="SE0014263299" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="Swedbank Savings Fund 60 N"></div>
-</details></details><details markdown="1" class="stock-profile fund-profile" id="fund-SE0015192315" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>Access Edge Sweden C — SE0015192315</strong> | current action: HOLD | allocation target 0 units | netSD diagnostic rank 20</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://swedbankrobur.fondlista.se/en/details/SE0015192315" target="_blank" rel="noopener noreferrer">Official fund page ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/0P0001LMDT.F/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Fund NAV charts may have no exchange-trading volume. An exact TradingView listing for this share class has not been verified.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="SE0014263299" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile fund-profile" id="fund-SE0015192315" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>SE0015192315 — Swedbank Robur Access Edge Sweden C | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://swedbankrobur.fondlista.se/en/details/SE0015192315" target="_blank" rel="noopener noreferrer">Official fund page ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/0P0001LMDT.F/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Fund NAV charts may have no exchange-trading volume. An exact TradingView listing for this share class has not been verified.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 14.0974</td><td>0.331429</td><td>70 / 12</td><td>59.80</td><td>BUY</td><td>SELL</td><td>0.951</td><td>—</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>14.097400</td>
+      <td>0.273504</td>
+      <td>39</td>
+      <td>7</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -26798,10 +25856,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0015192315-regimes.html?v=c9957b42cdac" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0015192315-long-history.html?v=a0b8e98b0642" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -26908,7 +25966,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -26999,12 +26057,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 14.0974, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="Access Edge Sweden C"></div>
+<div class="dominance-explorer" data-asset="SE0015192315" data-target="SE0015192315" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="Access Edge Sweden C"></div>
-</details></details><details markdown="1" class="stock-profile fund-profile" id="fund-SE0015192323" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>Access Edge USA C — SE0015192323</strong> | current action: HOLD | allocation target 0 units | netSD diagnostic rank 16</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://swedbankrobur.fondlista.se/en/details/SE0015192323" target="_blank" rel="noopener noreferrer">Official fund page ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/0P0001LMDQ.F/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Fund NAV charts may have no exchange-trading volume. An exact TradingView listing for this share class has not been verified.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="SE0015192315" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile fund-profile" id="fund-SE0015192323" data-signal="WAIT" data-netsd-effect="INCREASE" data-dividend-status="NONE" hidden data-portfolio-scopes="ALL ANY STOCHASTIC UPDATE3" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":["NO_SALE","SALE"],"STOCHASTIC":["NO_SALE","SALE"],"UPDATE3":["NO_SALE","SALE"],"UPDATE2":[]}'><summary><strong>SE0015192323 — Swedbank Robur Access Edge USA C | current action: WAIT | allocation target 16 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://swedbankrobur.fondlista.se/en/details/SE0015192323" target="_blank" rel="noopener noreferrer">Official fund page ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/0P0001LMDQ.F/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Fund NAV charts may have no exchange-trading volume. An exact TradingView listing for this share class has not been verified.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 20.4308</td><td>0.411429</td><td>85 / 13</td><td>53.27</td><td>SELL</td><td>HOLD</td><td>0.413</td><td>—</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>16</td>
+      <td>16</td>
+      <td>0.021793</td>
+      <td>20.430800</td>
+      <td>0.529915</td>
+      <td>62</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -27122,10 +26205,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0015192323-regimes.html?v=76b2f7bc6d7e" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0015192323-long-history.html?v=aa3d6fbe10a9" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -27232,7 +26315,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -27323,12 +26406,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 20.4308, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="Access Edge USA C"></div>
+<div class="dominance-explorer" data-asset="SE0015192323" data-target="SE0015192323" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="Access Edge USA C"></div>
-</details></details><details markdown="1" class="stock-profile fund-profile" id="fund-SE0015192331" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>Access Edge Europe C — SE0015192331</strong> | current action: HOLD | allocation target 0 units | netSD diagnostic rank 17</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://swedbankrobur.fondlista.se/en/details/SE0015192331" target="_blank" rel="noopener noreferrer">Official fund page ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/0P0001LMDS.F/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Fund NAV charts may have no exchange-trading volume. An exact TradingView listing for this share class has not been verified.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="SE0015192323" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile fund-profile" id="fund-SE0015192331" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>SE0015192331 — Swedbank Robur Access Edge Europe C | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://swedbankrobur.fondlista.se/en/details/SE0015192331" target="_blank" rel="noopener noreferrer">Official fund page ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/0P0001LMDS.F/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Fund NAV charts may have no exchange-trading volume. An exact TradingView listing for this share class has not been verified.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 17.6268</td><td>0.382857</td><td>85 / 18</td><td>59.91</td><td>BUY</td><td>SELL</td><td>1.000</td><td>—</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>17.626800</td>
+      <td>0.581197</td>
+      <td>68</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -27446,10 +26554,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0015192331-regimes.html?v=7271b375cce4" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0015192331-long-history.html?v=045cad0b4e08" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -27556,7 +26664,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -27647,12 +26755,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 17.6268, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="Access Edge Europe C"></div>
+<div class="dominance-explorer" data-asset="SE0015192331" data-target="SE0015192331" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="Access Edge Europe C"></div>
-</details></details><details markdown="1" class="stock-profile fund-profile" id="fund-SE0015192349" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="ANY UPDATE3" data-sale-membership='{"ANY":["NO_SALE"],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":["NO_SALE"],"ALL":["NO_SALE"]}'><summary><strong>Access Edge Global C — SE0015192349</strong> | current action: HOLD | allocation target 0 units | netSD diagnostic rank 5</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://swedbankrobur.fondlista.se/en/details/SE0015192349" target="_blank" rel="noopener noreferrer">Official fund page ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/0P0001LMDR.F/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Fund NAV charts may have no exchange-trading volume. An exact TradingView listing for this share class has not been verified.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="SE0015192331" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile fund-profile" id="fund-SE0015192349" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>SE0015192349 — Swedbank Robur Access Edge Global C | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://swedbankrobur.fondlista.se/en/details/SE0015192349" target="_blank" rel="noopener noreferrer">Official fund page ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/0P0001LMDR.F/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Fund NAV charts may have no exchange-trading volume. An exact TradingView listing for this share class has not been verified.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 19.4592</td><td>0.474286</td><td>94 / 11</td><td>55.99</td><td>SELL</td><td>HOLD</td><td>0.546</td><td>—</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>19.459200</td>
+      <td>0.598291</td>
+      <td>70</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -27770,10 +26903,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0015192349-regimes.html?v=951bf2f6cfe9" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0015192349-long-history.html?v=0e824b1de7df" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -27880,7 +27013,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -27971,12 +27104,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 19.4592, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="Access Edge Global C"></div>
+<div class="dominance-explorer" data-asset="SE0015192349" data-target="SE0015192349" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="Access Edge Global C"></div>
-</details></details><details markdown="1" class="stock-profile fund-profile" id="fund-SE0015948609" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>Corp Bond Europe HY C — SE0015948609</strong> | current action: HOLD | allocation target 0 units | netSD diagnostic rank 23</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://swedbankrobur.fondlista.se/en/details/SE0015948609" target="_blank" rel="noopener noreferrer">Official fund page ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/0P0001MGC9.F/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Fund NAV charts may have no exchange-trading volume. An exact TradingView listing for this share class has not been verified.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="SE0015192349" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile fund-profile" id="fund-SE0015948609" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>SE0015948609 — Swedbank Robur Corp Bond Europe HY C | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://swedbankrobur.fondlista.se/en/details/SE0015948609" target="_blank" rel="noopener noreferrer">Official fund page ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/0P0001MGC9.F/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Fund NAV charts may have no exchange-trading volume. An exact TradingView listing for this share class has not been verified.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 11.3943</td><td>0.297143</td><td>56 / 4</td><td>42.72</td><td>BUY</td><td>HOLD</td><td>0.866</td><td>—</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>11.394300</td>
+      <td>0.615385</td>
+      <td>72</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -28094,10 +27252,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0015948609-regimes.html?v=98376532970f" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0015948609-long-history.html?v=13239475dfe3" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -28204,7 +27362,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -28295,12 +27453,37 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 11.3943, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="Corp Bond Europe HY C"></div>
+<div class="dominance-explorer" data-asset="SE0015948609" data-target="SE0015948609" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="Corp Bond Europe HY C"></div>
-</details></details><details markdown="1" class="stock-profile fund-profile" id="fund-SE0015948617" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="" data-sale-membership='{"ANY":[],"STOCHASTIC":[],"UPDATE2":[],"UPDATE3":[],"ALL":[]}'><summary><strong>Corp Bond Europe C — SE0015948617</strong> | current action: HOLD | allocation target 0 units | netSD diagnostic rank 29</summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://swedbankrobur.fondlista.se/en/details/SE0015948617" target="_blank" rel="noopener noreferrer">Official fund page ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/0P0001MGCA.F/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Fund NAV charts may have no exchange-trading volume. An exact TradingView listing for this share class has not been verified.</p><!-- EXTERNAL_CHART_LINKS_END -->
+<div class="frontier-explorer" data-highlight="SE0015948609" data-source="interactive/dominance/LongFrontiers.json"></div>
+</details></details><details markdown="1" class="stock-profile fund-profile" id="fund-SE0015948617" data-signal="HOLD" data-netsd-effect="UNCHANGED" data-dividend-status="NONE" hidden data-portfolio-scopes="ALL" data-sale-membership='{"ALL":["NO_SALE","SALE"],"ANY":[],"STOCHASTIC":[],"UPDATE3":[],"UPDATE2":[]}'><summary><strong>SE0015948617 — Swedbank Robur Corp Bond Europe C | current action: HOLD | allocation target 0 units</strong></summary><!-- EXTERNAL_CHART_LINKS_START --><nav class="instrument-chart-links" aria-label="External instrument charts"><a href="https://swedbankrobur.fondlista.se/en/details/SE0015948617" target="_blank" rel="noopener noreferrer">Official fund page ↗</a> <span aria-hidden="true">·</span> <a href="https://finance.yahoo.com/quote/0P0001MGCA.F/chart/" target="_blank" rel="noopener noreferrer">Yahoo Finance chart ↗</a></nav><p class="chart-link-help">In external charts, open <strong>Indicators</strong> to add Bollinger Bands, RSI and MACD. Fund NAV charts may have no exchange-trading volume. An exact TradingView listing for this share class has not been verified.</p><!-- EXTERNAL_CHART_LINKS_END -->
 
-<table markdown="0" class="stock-summary-table"><thead><tr><th>Current units</th><th>Target units</th><th>Change</th><th>Weight</th><th>Last price / NAV</th><th>Individual netSD</th><th>OUT / IN</th><th>RSI(14)</th><th>MACD state</th><th>Bollinger state</th><th>Stochastic RSI</th><th>Average annual dividend / unit</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>+0</td><td>0.00%</td><td>EUR 9.9364</td><td>0.274286</td><td>52 / 4</td><td>51.01</td><td>BUY</td><td>HOLD</td><td>0.458</td><td>—</td></tr></tbody></table>
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Weight</th>
+      <th>Last price</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>9.936400</td>
+      <td>0.512821</td>
+      <td>60</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
 
 <details markdown="1" class="instrument-extra-details">
 <summary>Additional instrument details</summary>
@@ -28418,10 +27601,10 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 
 <!-- REGIME_ASSET_START -->
 
-<details markdown="1" class="regime-asset-analysis">
-<summary>Return histogram: full history and all four regimes</summary>
+<details markdown="1" class="">
+<summary>Return histograms and 72 native measures — long history</summary>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0015948617-regimes.html?v=1146dd7720d2" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/SE0015948617-long-history.html?v=98662776ec38" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
 </details>
 
@@ -28528,7 +27711,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
   </tbody>
 </table>
 
-</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
+</details><details markdown="1" class="portfolio-sensitivity"><summary><strong>Archived short-history portfolio sensitivity</strong></summary><h4>Adding the main-plan purchase to Current</h4>
 
 <table markdown="0" class="dataframe research-table">
   <thead>
@@ -28619,9 +27802,9 @@ The selected share is highlighted, while every other eligible Baltic share is sh
 </table>
 
 <p>Addition uses 0 extra units at EUR 9.9364, on top of 0 existing units. Removal excludes all 0 main-plan units and renormalises the other positions including cash. Both diagnostics use the same historical sample and frozen references; they do not execute scenario recourse.</p><details markdown="1" class="dominance-components" open><summary><strong>FSD, SSD and TSD components versus selected portfolios and assets</strong></summary>
-<div class="dominance-explorer" data-asset="Corp Bond Europe C"></div>
+<div class="dominance-explorer" data-asset="SE0015948617" data-target="SE0015948617" data-source="interactive/dominance/LongPortfolio.json" data-universe="interactive/dominance/LongPortfolio.json"></div>
 </details></details><details markdown="1" class="frontier-components"><summary><strong>All five model frontiers with this instrument highlighted</strong></summary>
-<div class="frontier-explorer" data-highlight="Corp Bond Europe C"></div>
+<div class="frontier-explorer" data-highlight="SE0015948617" data-source="interactive/dominance/LongFrontiers.json"></div>
 </details></details>
 
 
@@ -28674,904 +27857,522 @@ Select a share to display its allocation, technical indicators, performance and 
 
 </details>
 
-<details markdown="1" class="report-section planned-portfolio-quick-summary" open><summary><strong>1.2. Quick summary: previous portfolio — Update2 penalty, no sales</strong></summary><p><strong>Comparison only:</strong> this earlier allocation predates the full-universe liquidity-screened model. Use section 1.4 for the active plan. Scores below are recalculated on the new common sample and reference set.</p>
-<p>Target invested EUR 14,947.29; cash EUR 52.71; OUT / IN 129 / 0; netSD 0.737143. Average annual historical cash dividends EUR 522.49; embedded annual fund costs approximately EUR 0.00. Accumulating funds make no cash dividend payment.</p>
+<details markdown="1" class="report-section" id="long-history-summary-2"><summary><strong>1.2. Quick summary: archived short-history comparison — Main plan — no initial sales, gated recourse</strong></summary><p><strong>Active history rule:</strong> 72 eligible assets; 1000 training observations (2022-05-20–2026-05-04) and 126 separate diagnostic observations (2026-05-05–2026-10-29). Short-history instruments are excluded from decisions and the dominance reference set. All 12 current holdings remain available. Fund NAV already includes ongoing fees.</p><p>126-day segment is a descriptive fixed-allocation diagnostic, not an independent strategy backtest: current forecast centres use data through their current origin. Frozen forecasts and prices retain their October 2026 origins; this change does not claim a new market-data download. The new canonical netSD reference network contains the 72 eligible assets and Current, with one training-derived denominator. Old comparison policies containing excluded holdings are not silently projected or backfilled. The S&amp;P 500 benchmark uses USD price returns; currency and dividend bases differ from EUR assets, and benchmark measures use only matching US trading dates.</p><p>Historical portfolio series apply constant origin-price weights to daily asset returns: they are hypothetical daily-rebalanced diagnostics, not realised account histories or buy-and-hold share-quantity backtests. The future scenario policy instead tracks integer holdings and cash through its two decision stages. — denotes a native R function that is undefined for the selected sample; no replacement ratio is invented.</p>
 
-<table markdown="0" class="dataframe research-table planned-portfolio-table">
+<table markdown="0" class="dataframe research-table long-history-table">
   <thead>
     <tr style="text-align: right;">
-      <th>Instrument</th>
-      <th>Type</th>
+      <th>asset</th>
       <th>Name</th>
-      <th>Current price / NAV</th>
-      <th>Current units</th>
-      <th>Target units</th>
-      <th>Change</th>
-      <th>Buy EUR</th>
+      <th>last price</th>
+      <th>current units</th>
+      <th>target units</th>
+      <th>change</th>
       <th>Weight %</th>
-      <th>Individual OUT / IN</th>
-      <th>Portfolio OUT / IN after addition</th>
-      <th>netSD change</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+      <th>Average annual dividends EUR</th>
+      <th>Average annual dividend yield at payout %</th>
+      <th>netSD change after individual addition</th>
       <th>Rachev change</th>
       <th>Sortino change</th>
-      <th>Average annual cash dividends EUR</th>
-      <th>Embedded annual fee EUR</th>
-      <th>Execution signal</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>TKM1T</td>
-      <td>Share</td>
-      <td>TKM Grupp</td>
-      <td>8.880000</td>
-      <td>288</td>
-      <td>289</td>
-      <td>1</td>
-      <td>8.880000</td>
-      <td>17.167398</td>
-      <td>28 / 28</td>
-      <td>123 / 0</td>
+      <td>APG1L</td>
+      <td>Apranga</td>
+      <td>3.800000</td>
+      <td>200</td>
+      <td>200</td>
+      <td>0</td>
+      <td>5.066667</td>
+      <td>0.401709</td>
+      <td>47</td>
+      <td>0</td>
+      <td>41.200000</td>
+      <td>6.893057</td>
       <td>0.000000</td>
-      <td>-0.000634</td>
-      <td>-0.000422</td>
-      <td>153.170000</td>
       <td>0.000000</td>
-      <td>SKIP</td>
+      <td>-0.000000</td>
+    </tr>
+    <tr>
+      <td>GRG1L</td>
+      <td>Grigeo Group</td>
+      <td>1.010000</td>
+      <td>543</td>
+      <td>543</td>
+      <td>0</td>
+      <td>3.656200</td>
+      <td>0.401709</td>
+      <td>47</td>
+      <td>0</td>
+      <td>24.978000</td>
+      <td>4.453062</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>-0.000000</td>
+    </tr>
+    <tr>
+      <td>HAE1T</td>
+      <td>Harju Elekter Group</td>
+      <td>5.200000</td>
+      <td>100</td>
+      <td>100</td>
+      <td>0</td>
+      <td>3.466667</td>
+      <td>0.025641</td>
+      <td>32</td>
+      <td>29</td>
+      <td>11.600000</td>
+      <td>2.250449</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>-0.000000</td>
+    </tr>
+    <tr>
+      <td>IVL1L</td>
+      <td>Invalda INVL</td>
+      <td>25.600000</td>
+      <td>0</td>
+      <td>21</td>
+      <td>21</td>
+      <td>3.584000</td>
+      <td>0.393162</td>
+      <td>46</td>
+      <td>0</td>
+      <td>9.870000</td>
+      <td>2.159846</td>
+      <td>0.017094</td>
+      <td>0.005385</td>
+      <td>0.012792</td>
+    </tr>
+    <tr>
+      <td>KNE1L</td>
+      <td>KN Energies</td>
+      <td>0.477000</td>
+      <td>928</td>
+      <td>928</td>
+      <td>0</td>
+      <td>2.951040</td>
+      <td>0.367521</td>
+      <td>45</td>
+      <td>2</td>
+      <td>11.952640</td>
+      <td>4.010752</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>-0.000000</td>
+    </tr>
+    <tr>
+      <td>MRK1T</td>
+      <td>Merko Ehitus</td>
+      <td>26.900000</td>
+      <td>20</td>
+      <td>20</td>
+      <td>0</td>
+      <td>3.586667</td>
+      <td>0.401709</td>
+      <td>47</td>
+      <td>0</td>
+      <td>21.800000</td>
+      <td>4.987763</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>-0.000000</td>
+    </tr>
+    <tr>
+      <td>ROE1L</td>
+      <td>Artea Bankas</td>
+      <td>0.819000</td>
+      <td>416</td>
+      <td>416</td>
+      <td>0</td>
+      <td>2.271360</td>
+      <td>0.350427</td>
+      <td>45</td>
+      <td>4</td>
+      <td>15.225600</td>
+      <td>4.618709</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>-0.000000</td>
+    </tr>
+    <tr>
+      <td>RSU1L</td>
+      <td>Rokiškio sūris</td>
+      <td>4.260000</td>
+      <td>91</td>
+      <td>91</td>
+      <td>0</td>
+      <td>2.584400</td>
+      <td>0.299145</td>
+      <td>38</td>
+      <td>3</td>
+      <td>12.740000</td>
+      <td>3.950109</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>-0.000000</td>
     </tr>
     <tr>
       <td>SAF1R</td>
-      <td>Share</td>
       <td>SAF Tehnika</td>
       <td>16.500000</td>
       <td>100</td>
       <td>100</td>
       <td>0</td>
-      <td>0.000000</td>
       <td>11.000000</td>
-      <td>55 / 0</td>
-      <td>123 / 0</td>
+      <td>-0.675214</td>
+      <td>9</td>
+      <td>88</td>
       <td>0.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
-      <td>0.000000</td>
-      <td>HOLD</td>
-    </tr>
-    <tr>
-      <td>APG1L</td>
-      <td>Share</td>
-      <td>Apranga</td>
-      <td>3.800000</td>
-      <td>200</td>
-      <td>295</td>
-      <td>95</td>
-      <td>360.999995</td>
-      <td>7.488815</td>
-      <td>54 / 6</td>
-      <td>124 / 0</td>
-      <td>0.005714</td>
-      <td>-0.013817</td>
-      <td>0.008260</td>
-      <td>60.770000</td>
-      <td>0.000000</td>
-      <td>WAIT</td>
-    </tr>
-    <tr>
-      <td>KNE1L</td>
-      <td>Share</td>
-      <td>KN Energies</td>
-      <td>0.477000</td>
-      <td>928</td>
-      <td>2182</td>
-      <td>1254</td>
-      <td>598.157998</td>
-      <td>6.938845</td>
-      <td>54 / 2</td>
-      <td>125 / 0</td>
-      <td>0.011429</td>
-      <td>-0.014784</td>
-      <td>0.018247</td>
-      <td>28.104160</td>
-      <td>0.000000</td>
-      <td>WAIT</td>
-    </tr>
-    <tr>
-      <td>VLP1L</td>
-      <td>Share</td>
-      <td>Vilkyškių pieninė</td>
-      <td>15.750000</td>
-      <td>42</td>
-      <td>59</td>
-      <td>17</td>
-      <td>267.750000</td>
-      <td>6.240793</td>
-      <td>48 / 5</td>
-      <td>125 / 0</td>
-      <td>0.011429</td>
-      <td>-0.015267</td>
-      <td>0.006754</td>
-      <td>15.871000</td>
-      <td>0.000000</td>
-      <td>WAIT</td>
-    </tr>
-    <tr>
-      <td>RSU1L</td>
-      <td>Share</td>
-      <td>Rokiškio sūris</td>
-      <td>4.260000</td>
-      <td>91</td>
-      <td>216</td>
-      <td>125</td>
-      <td>532.500029</td>
-      <td>6.160985</td>
-      <td>40 / 61</td>
-      <td>122 / 0</td>
-      <td>-0.005714</td>
-      <td>-0.025728</td>
-      <td>-0.011936</td>
-      <td>30.240000</td>
-      <td>0.000000</td>
-      <td class="buy-now">BUY</td>
-    </tr>
-    <tr>
-      <td>MRK1T</td>
-      <td>Share</td>
-      <td>Merko Ehitus</td>
-      <td>26.900000</td>
-      <td>20</td>
-      <td>34</td>
-      <td>14</td>
-      <td>376.599995</td>
-      <td>6.139981</td>
-      <td>36 / 63</td>
-      <td>122 / 0</td>
-      <td>-0.005714</td>
-      <td>-0.039086</td>
-      <td>-0.014899</td>
-      <td>37.060000</td>
-      <td>0.000000</td>
-      <td>WAIT</td>
-    </tr>
-    <tr>
-      <td>GRG1L</td>
-      <td>Share</td>
-      <td>Grigeo Group</td>
-      <td>1.010000</td>
-      <td>543</td>
-      <td>828</td>
-      <td>285</td>
-      <td>287.849997</td>
-      <td>5.577334</td>
-      <td>42 / 52</td>
-      <td>122 / 0</td>
-      <td>-0.005714</td>
-      <td>-0.019329</td>
-      <td>-0.008048</td>
-      <td>38.088000</td>
-      <td>0.000000</td>
-      <td>WAIT</td>
-    </tr>
-    <tr>
-      <td>HAE1T</td>
-      <td>Share</td>
-      <td>Harju Elekter Group</td>
-      <td>5.200000</td>
-      <td>100</td>
-      <td>138</td>
-      <td>38</td>
-      <td>197.599993</td>
-      <td>4.787370</td>
-      <td>53 / 28</td>
-      <td>123 / 0</td>
-      <td>0.000000</td>
-      <td>-0.003660</td>
-      <td>-0.002725</td>
-      <td>16.008000</td>
-      <td>0.000000</td>
-      <td>WAIT</td>
+      <td>-0.000000</td>
     </tr>
     <tr>
       <td>TAL1T</td>
-      <td>Share</td>
       <td>Tallink Grupp</td>
       <td>0.647000</td>
       <td>700</td>
-      <td>907</td>
-      <td>207</td>
-      <td>133.929003</td>
-      <td>3.912614</td>
-      <td>44 / 19</td>
-      <td>123 / 0</td>
-      <td>0.000000</td>
-      <td>-0.005281</td>
-      <td>-0.000231</td>
-      <td>27.210000</td>
-      <td>0.000000</td>
-      <td>WAIT</td>
-    </tr>
-    <tr>
-      <td>MOLNR</td>
-      <td>Share</td>
-      <td>J. Molner</td>
-      <td>19.799999</td>
+      <td>700</td>
       <td>0</td>
-      <td>29</td>
-      <td>29</td>
-      <td>574.199978</td>
-      <td>3.877363</td>
-      <td>6 / 127</td>
-      <td>118 / 0</td>
-      <td>-0.028571</td>
-      <td>-0.033551</td>
-      <td>-0.040191</td>
+      <td>3.019333</td>
+      <td>0.179487</td>
+      <td>34</td>
+      <td>13</td>
+      <td>21.000000</td>
+      <td>4.837008</td>
       <td>0.000000</td>
       <td>0.000000</td>
-      <td>WAIT</td>
+      <td>-0.000000</td>
     </tr>
     <tr>
-      <td>DGR1R</td>
-      <td>Share</td>
-      <td>DelfinGroup</td>
-      <td>1.715000</td>
+      <td>TKM1T</td>
+      <td>TKM Grupp</td>
+      <td>8.880000</td>
+      <td>288</td>
+      <td>288</td>
       <td>0</td>
-      <td>317</td>
-      <td>317</td>
-      <td>543.655011</td>
-      <td>3.631473</td>
-      <td>114 / 0</td>
-      <td>127 / 0</td>
-      <td>0.022857</td>
-      <td>0.011075</td>
-      <td>0.022979</td>
-      <td>20.744480</td>
+      <td>17.049600</td>
+      <td>0.136752</td>
+      <td>28</td>
+      <td>12</td>
+      <td>152.640000</td>
+      <td>5.468087</td>
       <td>0.000000</td>
-      <td>WAIT</td>
-    </tr>
-    <tr>
-      <td>LHV1T</td>
-      <td>Share</td>
-      <td>LHV Group</td>
-      <td>3.250000</td>
-      <td>0</td>
-      <td>150</td>
-      <td>150</td>
-      <td>487.500000</td>
-      <td>3.268226</td>
-      <td>36 / 34</td>
-      <td>120 / 0</td>
-      <td>-0.017143</td>
-      <td>-0.003961</td>
-      <td>-0.008915</td>
-      <td>12.900000</td>
       <td>0.000000</td>
-      <td>WAIT</td>
-    </tr>
-    <tr>
-      <td>ROE1L</td>
-      <td>Share</td>
-      <td>Artea Bankas</td>
-      <td>0.819000</td>
-      <td>416</td>
-      <td>527</td>
-      <td>111</td>
-      <td>90.909001</td>
-      <td>2.881831</td>
-      <td>39 / 38</td>
-      <td>123 / 0</td>
-      <td>0.000000</td>
-      <td>-0.007874</td>
-      <td>-0.001762</td>
-      <td>19.288200</td>
-      <td>0.000000</td>
-      <td>SKIP</td>
+      <td>-0.000000</td>
     </tr>
     <tr>
       <td>TSM1T</td>
-      <td>Share</td>
       <td>Tallinna Sadam</td>
       <td>1.192000</td>
       <td>330</td>
       <td>330</td>
       <td>0</td>
-      <td>0.000000</td>
       <td>2.622400</td>
-      <td>38 / 37</td>
-      <td>123 / 0</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
+      <td>0.179487</td>
+      <td>35</td>
+      <td>14</td>
       <td>19.272000</td>
+      <td>4.586739</td>
       <td>0.000000</td>
-      <td>HOLD</td>
+      <td>0.000000</td>
+      <td>-0.000000</td>
     </tr>
     <tr>
-      <td>EFT1T</td>
-      <td>Share</td>
-      <td>EfTEN Real Estate Fund</td>
-      <td>19.549999</td>
+      <td>VLP1L</td>
+      <td>Vilkyškių pieninė</td>
+      <td>15.750000</td>
+      <td>42</td>
+      <td>265</td>
+      <td>223</td>
+      <td>27.825000</td>
+      <td>0.461538</td>
+      <td>54</td>
       <td>0</td>
-      <td>20</td>
-      <td>20</td>
-      <td>390.999985</td>
-      <td>2.650902</td>
-      <td>53 / 16</td>
-      <td>123 / 0</td>
-      <td>0.000000</td>
-      <td>0.013616</td>
-      <td>0.002961</td>
-      <td>17.850400</td>
-      <td>0.000000</td>
-      <td>WAIT</td>
+      <td>71.285000</td>
+      <td>3.574945</td>
+      <td>0.205128</td>
+      <td>0.181459</td>
+      <td>0.061516</td>
     </tr>
     <tr>
-      <td>TEL1L</td>
-      <td>Share</td>
-      <td>Telia Lietuva</td>
-      <td>2.250000</td>
+      <td>SE0014261764</td>
+      <td>Swedbank Robur Technology C</td>
+      <td>27.249600</td>
       <td>0</td>
-      <td>111</td>
-      <td>111</td>
-      <td>249.750000</td>
-      <td>1.666234</td>
-      <td>64 / 1</td>
-      <td>126 / 0</td>
-      <td>0.017143</td>
-      <td>0.007593</td>
-      <td>0.009431</td>
-      <td>8.880000</td>
+      <td>50</td>
+      <td>50</td>
+      <td>9.083200</td>
+      <td>0.341880</td>
+      <td>40</td>
+      <td>0</td>
       <td>0.000000</td>
-      <td>WAIT</td>
+      <td>0.000000</td>
+      <td>0.025641</td>
+      <td>0.006917</td>
+      <td>0.027817</td>
     </tr>
     <tr>
-      <td>CPA1T</td>
-      <td>Share</td>
-      <td>Coop Pank</td>
-      <td>2.375000</td>
+      <td>SE0015192323</td>
+      <td>Swedbank Robur Access Edge USA C</td>
+      <td>20.430800</td>
       <td>0</td>
-      <td>92</td>
-      <td>92</td>
-      <td>218.500000</td>
-      <td>1.469534</td>
-      <td>91 / 8</td>
-      <td>124 / 0</td>
-      <td>0.005714</td>
-      <td>0.010558</td>
-      <td>0.005076</td>
-      <td>4.912800</td>
-      <td>0.000000</td>
-      <td>WAIT</td>
-    </tr>
-    <tr>
-      <td>PZV1L</td>
-      <td>Share</td>
-      <td>Pieno žvaigždės</td>
-      <td>1.790000</td>
+      <td>16</td>
+      <td>16</td>
+      <td>2.179285</td>
+      <td>0.529915</td>
+      <td>62</td>
       <td>0</td>
-      <td>112</td>
-      <td>112</td>
-      <td>200.479996</td>
-      <td>1.348326</td>
-      <td>42 / 55</td>
-      <td>124 / 0</td>
-      <td>0.005714</td>
-      <td>-0.004670</td>
-      <td>0.000614</td>
-      <td>9.408000</td>
       <td>0.000000</td>
-      <td>WAIT</td>
-    </tr>
-    <tr>
-      <td>AKO1L</td>
-      <td>Share</td>
-      <td>Akola Group</td>
-      <td>1.875000</td>
-      <td>0</td>
-      <td>93</td>
-      <td>93</td>
-      <td>174.375000</td>
-      <td>1.169576</td>
-      <td>53 / 26</td>
-      <td>123 / 0</td>
       <td>0.000000</td>
-      <td>-0.001593</td>
-      <td>0.001317</td>
-      <td>2.715600</td>
-      <td>0.000000</td>
-      <td>WAIT</td>
-    </tr>
-    <tr class="portfolio-total">
-      <td>PORTFOLIO</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>5694.635979</td>
-      <td>100.000000</td>
-      <td></td>
-      <td>129 / 0</td>
-      <td>0.034286</td>
-      <td>-0.127866</td>
-      <td>-0.011938</td>
-      <td>522.492640</td>
-      <td>0.000000</td>
-      <td></td>
+      <td>0.017094</td>
+      <td>0.005085</td>
+      <td>0.004674</td>
     </tr>
   </tbody>
 </table>
 
-<p>Each sensitivity column starts from the same Current portfolio and adds only that row's positive change at the displayed price. The PORTFOLIO row is the complete plan, not the sum of individual sensitivities. Signal BUY requires both a planned purchase and technical agreement. Fund NAV prices are indicative; orders execute at a future NAV.</p>
 </details>
 <!-- UPDATE3_QUICK_START -->
-<details markdown="1" class="report-section update3-quick-summary" open><summary><strong>1.3. Quick summary: previous portfolio — Update3, no sales</strong></summary><p class="fund-history-archive"><strong>ARCHIVED COMPARISON — NOT A CURRENT ORDER PLAN.</strong> This pre-rule calculation contains a fund with less than five years of verified class history. It is retained only as a historical comparator. Use the main signal-gated plan or the regime-conditioned plan for the current admissible fund universe.</p><p><strong>Comparison only:</strong> this earlier allocation predates the full-universe liquidity-screened model. Use section 1.4 for the active plan. Scores below are recalculated on the new common sample and reference set.</p>
-<p>Target invested EUR 14,947.41; cash EUR 52.59; OUT / IN 132 / 0; netSD 0.754286. Average annual historical cash dividends EUR 475.25; embedded annual fund costs approximately EUR 10.63. Accumulating funds make no cash dividend payment.</p>
+<details markdown="1" class="report-section" id="long-history-summary-3"><summary><strong>1.3. Quick summary: archived short-history comparison — No sales at either stage</strong></summary><p><strong>Active history rule:</strong> 72 eligible assets; 1000 training observations (2022-05-20–2026-05-04) and 126 separate diagnostic observations (2026-05-05–2026-10-29). Short-history instruments are excluded from decisions and the dominance reference set. All 12 current holdings remain available. Fund NAV already includes ongoing fees.</p><p>126-day segment is a descriptive fixed-allocation diagnostic, not an independent strategy backtest: current forecast centres use data through their current origin. Frozen forecasts and prices retain their October 2026 origins; this change does not claim a new market-data download. The new canonical netSD reference network contains the 72 eligible assets and Current, with one training-derived denominator. Old comparison policies containing excluded holdings are not silently projected or backfilled. The S&amp;P 500 benchmark uses USD price returns; currency and dividend bases differ from EUR assets, and benchmark measures use only matching US trading dates.</p><p>Historical portfolio series apply constant origin-price weights to daily asset returns: they are hypothetical daily-rebalanced diagnostics, not realised account histories or buy-and-hold share-quantity backtests. The future scenario policy instead tracks integer holdings and cash through its two decision stages. — denotes a native R function that is undefined for the selected sample; no replacement ratio is invented.</p>
 
-<table markdown="0" class="dataframe research-table planned-portfolio-table">
+<table markdown="0" class="dataframe research-table long-history-table">
   <thead>
     <tr style="text-align: right;">
-      <th>Instrument</th>
-      <th>Type</th>
+      <th>asset</th>
       <th>Name</th>
-      <th>Current price / NAV</th>
-      <th>Current units</th>
-      <th>Target units</th>
-      <th>Change</th>
-      <th>Buy EUR</th>
+      <th>last price</th>
+      <th>current units</th>
+      <th>target units</th>
+      <th>change</th>
       <th>Weight %</th>
-      <th>Individual OUT / IN</th>
-      <th>Portfolio OUT / IN after addition</th>
-      <th>netSD change</th>
-      <th>Rachev change</th>
-      <th>Sortino change</th>
-      <th>Average annual cash dividends EUR</th>
-      <th>Embedded annual fee EUR</th>
-      <th>Execution signal</th>
+      <th>Individual netSD</th>
+      <th>OUT</th>
+      <th>IN</th>
+      <th>Average annual dividends EUR</th>
+      <th>Average annual dividend yield at payout %</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>SE0015192349</td>
-      <td>Fund</td>
-      <td>Swedbank Robur Access Edge Global C</td>
-      <td>19.459200</td>
+      <td>APG1L</td>
+      <td>Apranga</td>
+      <td>3.800000</td>
+      <td>200</td>
+      <td>200</td>
       <td>0</td>
-      <td>30</td>
-      <td>30</td>
-      <td>583.776000</td>
-      <td>3.905532</td>
-      <td>94 / 11</td>
-      <td>124 / 0</td>
-      <td>0.005714</td>
-      <td>0.020344</td>
-      <td>0.015600</td>
-      <td>0.000000</td>
-      <td>1.634573</td>
-      <td>WAIT</td>
+      <td>5.066667</td>
+      <td>0.401709</td>
+      <td>47</td>
+      <td>0</td>
+      <td>41.200000</td>
+      <td>6.893057</td>
     </tr>
     <tr>
-      <td>SE0019354200</td>
-      <td>Fund</td>
-      <td>Swedbank Robur Emerging Europe C</td>
-      <td>23.235800</td>
+      <td>GRG1L</td>
+      <td>Grigeo Group</td>
+      <td>1.010000</td>
+      <td>543</td>
+      <td>543</td>
       <td>0</td>
-      <td>22</td>
-      <td>22</td>
-      <td>511.187600</td>
-      <td>3.419906</td>
-      <td>57 / 5</td>
-      <td>126 / 0</td>
-      <td>0.017143</td>
-      <td>-0.004092</td>
-      <td>0.012649</td>
-      <td>0.000000</td>
-      <td>8.179002</td>
-      <td>WAIT</td>
+      <td>3.656200</td>
+      <td>0.401709</td>
+      <td>47</td>
+      <td>0</td>
+      <td>24.978000</td>
+      <td>4.453062</td>
     </tr>
     <tr>
-      <td>SE0013876927</td>
-      <td>Fund</td>
-      <td>Swedbank Robur Access Edge Japan C</td>
-      <td>15.587200</td>
+      <td>HAE1T</td>
+      <td>Harju Elekter Group</td>
+      <td>5.200000</td>
+      <td>100</td>
+      <td>100</td>
+      <td>0</td>
+      <td>3.466667</td>
+      <td>0.025641</td>
+      <td>32</td>
+      <td>29</td>
+      <td>11.600000</td>
+      <td>2.250449</td>
+    </tr>
+    <tr>
+      <td>IVL1L</td>
+      <td>Invalda INVL</td>
+      <td>25.600000</td>
       <td>0</td>
       <td>21</td>
       <td>21</td>
-      <td>327.331200</td>
-      <td>2.189885</td>
-      <td>62 / 10</td>
-      <td>123 / 0</td>
-      <td>0.000000</td>
-      <td>-0.031657</td>
-      <td>0.003873</td>
-      <td>0.000000</td>
-      <td>0.818328</td>
-      <td>WAIT</td>
+      <td>3.584000</td>
+      <td>0.393162</td>
+      <td>46</td>
+      <td>0</td>
+      <td>9.870000</td>
+      <td>2.159846</td>
     </tr>
     <tr>
-      <td>TKM1T</td>
-      <td>Share</td>
-      <td>TKM Grupp</td>
-      <td>8.880000</td>
-      <td>288</td>
-      <td>295</td>
-      <td>7</td>
-      <td>62.160001</td>
-      <td>17.525439</td>
-      <td>28 / 28</td>
-      <td>123 / 0</td>
-      <td>0.000000</td>
-      <td>-0.004421</td>
-      <td>-0.002951</td>
-      <td>156.350000</td>
-      <td>0.000000</td>
-      <td>SKIP</td>
+      <td>KNE1L</td>
+      <td>KN Energies</td>
+      <td>0.477000</td>
+      <td>928</td>
+      <td>928</td>
+      <td>0</td>
+      <td>2.951040</td>
+      <td>0.367521</td>
+      <td>45</td>
+      <td>2</td>
+      <td>11.952640</td>
+      <td>4.010752</td>
+    </tr>
+    <tr>
+      <td>MRK1T</td>
+      <td>Merko Ehitus</td>
+      <td>26.900000</td>
+      <td>20</td>
+      <td>20</td>
+      <td>0</td>
+      <td>3.586667</td>
+      <td>0.401709</td>
+      <td>47</td>
+      <td>0</td>
+      <td>21.800000</td>
+      <td>4.987763</td>
+    </tr>
+    <tr>
+      <td>ROE1L</td>
+      <td>Artea Bankas</td>
+      <td>0.819000</td>
+      <td>416</td>
+      <td>416</td>
+      <td>0</td>
+      <td>2.271360</td>
+      <td>0.350427</td>
+      <td>45</td>
+      <td>4</td>
+      <td>15.225600</td>
+      <td>4.618709</td>
+    </tr>
+    <tr>
+      <td>RSU1L</td>
+      <td>Rokiškio sūris</td>
+      <td>4.260000</td>
+      <td>91</td>
+      <td>91</td>
+      <td>0</td>
+      <td>2.584400</td>
+      <td>0.299145</td>
+      <td>38</td>
+      <td>3</td>
+      <td>12.740000</td>
+      <td>3.950109</td>
     </tr>
     <tr>
       <td>SAF1R</td>
-      <td>Share</td>
       <td>SAF Tehnika</td>
       <td>16.500000</td>
       <td>100</td>
       <td>100</td>
       <td>0</td>
-      <td>0.000000</td>
-      <td>11.038698</td>
-      <td>55 / 0</td>
-      <td>123 / 0</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>HOLD</td>
-    </tr>
-    <tr>
-      <td>VLP1L</td>
-      <td>Share</td>
-      <td>Vilkyškių pieninė</td>
-      <td>15.750000</td>
-      <td>42</td>
-      <td>82</td>
-      <td>40</td>
-      <td>630.000000</td>
-      <td>8.640290</td>
-      <td>48 / 5</td>
-      <td>125 / 0</td>
-      <td>0.011429</td>
-      <td>-0.046780</td>
-      <td>0.011424</td>
-      <td>22.058000</td>
-      <td>0.000000</td>
-      <td>WAIT</td>
-    </tr>
-    <tr>
-      <td>APG1L</td>
-      <td>Share</td>
-      <td>Apranga</td>
-      <td>3.800000</td>
-      <td>200</td>
-      <td>338</td>
-      <td>138</td>
-      <td>524.399993</td>
-      <td>8.592790</td>
-      <td>54 / 6</td>
-      <td>126 / 0</td>
-      <td>0.017143</td>
-      <td>-0.015341</td>
-      <td>0.011489</td>
-      <td>69.628000</td>
-      <td>0.000000</td>
-      <td>WAIT</td>
-    </tr>
-    <tr>
-      <td>KNE1L</td>
-      <td>Share</td>
-      <td>KN Energies</td>
-      <td>0.477000</td>
-      <td>928</td>
-      <td>1935</td>
-      <td>1007</td>
-      <td>480.338998</td>
-      <td>6.174947</td>
-      <td>54 / 2</td>
-      <td>125 / 0</td>
-      <td>0.011429</td>
-      <td>-0.016743</td>
-      <td>0.015335</td>
-      <td>24.922800</td>
-      <td>0.000000</td>
-      <td>WAIT</td>
-    </tr>
-    <tr>
-      <td>MRK1T</td>
-      <td>Share</td>
-      <td>Merko Ehitus</td>
-      <td>26.900000</td>
-      <td>20</td>
-      <td>29</td>
+      <td>11.000000</td>
+      <td>-0.675214</td>
       <td>9</td>
-      <td>242.099997</td>
-      <td>5.218963</td>
-      <td>36 / 63</td>
-      <td>122 / 0</td>
-      <td>-0.005714</td>
-      <td>-0.024367</td>
-      <td>-0.009382</td>
-      <td>31.610000</td>
+      <td>88</td>
       <td>0.000000</td>
-      <td>WAIT</td>
-    </tr>
-    <tr>
-      <td>RSU1L</td>
-      <td>Share</td>
-      <td>Rokiškio sūris</td>
-      <td>4.260000</td>
-      <td>91</td>
-      <td>176</td>
-      <td>85</td>
-      <td>362.100019</td>
-      <td>5.015985</td>
-      <td>40 / 61</td>
-      <td>122 / 0</td>
-      <td>-0.005714</td>
-      <td>-0.007366</td>
-      <td>-0.007117</td>
-      <td>24.640000</td>
       <td>0.000000</td>
-      <td class="buy-now">BUY</td>
     </tr>
     <tr>
       <td>TAL1T</td>
-      <td>Share</td>
       <td>Tallink Grupp</td>
       <td>0.647000</td>
       <td>700</td>
-      <td>1034</td>
-      <td>334</td>
-      <td>216.098005</td>
-      <td>4.475677</td>
-      <td>44 / 19</td>
-      <td>123 / 0</td>
-      <td>0.000000</td>
-      <td>-0.008968</td>
-      <td>-0.000475</td>
-      <td>31.020000</td>
-      <td>0.000000</td>
-      <td>WAIT</td>
-    </tr>
-    <tr>
-      <td>MOLNR</td>
-      <td>Share</td>
-      <td>J. Molner</td>
-      <td>19.799999</td>
+      <td>700</td>
       <td>0</td>
-      <td>30</td>
-      <td>30</td>
-      <td>593.999977</td>
-      <td>3.973931</td>
-      <td>6 / 127</td>
-      <td>118 / 0</td>
-      <td>-0.028571</td>
-      <td>-0.035087</td>
-      <td>-0.042428</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>WAIT</td>
+      <td>3.019333</td>
+      <td>0.179487</td>
+      <td>34</td>
+      <td>13</td>
+      <td>21.000000</td>
+      <td>4.837008</td>
     </tr>
     <tr>
-      <td>GRG1L</td>
-      <td>Share</td>
-      <td>Grigeo Group</td>
-      <td>1.010000</td>
-      <td>543</td>
-      <td>580</td>
-      <td>37</td>
-      <td>37.370000</td>
-      <td>3.919072</td>
-      <td>42 / 52</td>
-      <td>123 / 0</td>
-      <td>0.000000</td>
-      <td>-0.002439</td>
-      <td>-0.000972</td>
-      <td>26.680000</td>
-      <td>0.000000</td>
-      <td>SKIP</td>
-    </tr>
-    <tr>
-      <td>HAE1T</td>
-      <td>Share</td>
-      <td>Harju Elekter Group</td>
-      <td>5.200000</td>
-      <td>100</td>
-      <td>103</td>
-      <td>3</td>
-      <td>15.599999</td>
-      <td>3.583228</td>
-      <td>53 / 28</td>
-      <td>123 / 0</td>
-      <td>0.000000</td>
-      <td>-0.000117</td>
-      <td>-0.000183</td>
-      <td>11.948000</td>
-      <td>0.000000</td>
-      <td>SKIP</td>
-    </tr>
-    <tr>
-      <td>DGR1R</td>
-      <td>Share</td>
-      <td>DelfinGroup</td>
-      <td>1.715000</td>
+      <td>TKM1T</td>
+      <td>TKM Grupp</td>
+      <td>8.880000</td>
+      <td>288</td>
+      <td>288</td>
       <td>0</td>
-      <td>268</td>
-      <td>268</td>
-      <td>459.620009</td>
-      <td>3.074913</td>
-      <td>114 / 0</td>
-      <td>127 / 0</td>
-      <td>0.022857</td>
-      <td>0.009830</td>
-      <td>0.019658</td>
-      <td>17.537920</td>
-      <td>0.000000</td>
-      <td>WAIT</td>
+      <td>17.049600</td>
+      <td>0.136752</td>
+      <td>28</td>
+      <td>12</td>
+      <td>152.640000</td>
+      <td>5.468087</td>
     </tr>
     <tr>
       <td>TSM1T</td>
-      <td>Share</td>
       <td>Tallinna Sadam</td>
       <td>1.192000</td>
       <td>330</td>
       <td>330</td>
       <td>0</td>
-      <td>0.000000</td>
-      <td>2.631626</td>
-      <td>38 / 37</td>
-      <td>123 / 0</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
+      <td>2.622400</td>
+      <td>0.179487</td>
+      <td>35</td>
+      <td>14</td>
       <td>19.272000</td>
-      <td>0.000000</td>
-      <td>HOLD</td>
+      <td>4.586739</td>
     </tr>
     <tr>
-      <td>PZV1L</td>
-      <td>Share</td>
-      <td>Pieno žvaigždės</td>
-      <td>1.790000</td>
+      <td>VLP1L</td>
+      <td>Vilkyškių pieninė</td>
+      <td>15.750000</td>
+      <td>42</td>
+      <td>265</td>
+      <td>223</td>
+      <td>27.825000</td>
+      <td>0.461538</td>
+      <td>54</td>
       <td>0</td>
-      <td>205</td>
-      <td>205</td>
-      <td>366.949992</td>
-      <td>2.454940</td>
-      <td>42 / 55</td>
-      <td>122 / 0</td>
-      <td>-0.005714</td>
-      <td>-0.011940</td>
-      <td>-0.000455</td>
-      <td>17.220000</td>
-      <td>0.000000</td>
-      <td>WAIT</td>
+      <td>71.285000</td>
+      <td>3.574945</td>
     </tr>
     <tr>
-      <td>ROE1L</td>
-      <td>Share</td>
-      <td>Artea Bankas</td>
-      <td>0.819000</td>
-      <td>416</td>
-      <td>423</td>
-      <td>7</td>
-      <td>5.733000</td>
-      <td>2.317705</td>
-      <td>39 / 38</td>
-      <td>123 / 0</td>
-      <td>0.000000</td>
-      <td>-0.000464</td>
-      <td>-0.000106</td>
-      <td>15.481800</td>
-      <td>0.000000</td>
-      <td>SKIP</td>
-    </tr>
-    <tr>
-      <td>LHV1T</td>
-      <td>Share</td>
-      <td>LHV Group</td>
-      <td>3.250000</td>
+      <td>SE0014261764</td>
+      <td>Swedbank Robur Technology C</td>
+      <td>27.249600</td>
       <td>0</td>
-      <td>51</td>
-      <td>51</td>
-      <td>165.750000</td>
-      <td>1.108887</td>
-      <td>36 / 34</td>
-      <td>121 / 0</td>
-      <td>-0.011429</td>
-      <td>-0.001019</td>
-      <td>-0.002766</td>
-      <td>4.386000</td>
+      <td>50</td>
+      <td>50</td>
+      <td>9.083200</td>
+      <td>0.341880</td>
+      <td>40</td>
+      <td>0</td>
       <td>0.000000</td>
-      <td>WAIT</td>
+      <td>0.000000</td>
     </tr>
     <tr>
-      <td>AKO1L</td>
-      <td>Share</td>
-      <td>Akola Group</td>
-      <td>1.875000</td>
+      <td>SE0015192323</td>
+      <td>Swedbank Robur Access Edge USA C</td>
+      <td>20.430800</td>
       <td>0</td>
-      <td>28</td>
-      <td>28</td>
-      <td>52.500000</td>
-      <td>0.351231</td>
-      <td>53 / 26</td>
-      <td>123 / 0</td>
-      <td>0.000000</td>
-      <td>-0.000480</td>
-      <td>0.000460</td>
-      <td>0.817600</td>
-      <td>0.000000</td>
-      <td>SKIP</td>
-    </tr>
-    <tr>
-      <td>TEL1L</td>
-      <td>Share</td>
-      <td>Telia Lietuva</td>
-      <td>2.250000</td>
+      <td>16</td>
+      <td>16</td>
+      <td>2.179285</td>
+      <td>0.529915</td>
+      <td>62</td>
       <td>0</td>
-      <td>13</td>
-      <td>13</td>
-      <td>29.250000</td>
-      <td>0.195686</td>
-      <td>64 / 1</td>
-      <td>125 / 0</td>
-      <td>0.011429</td>
-      <td>0.000771</td>
-      <td>0.001147</td>
-      <td>1.040000</td>
       <td>0.000000</td>
-      <td>SKIP</td>
-    </tr>
-    <tr>
-      <td>CPA1T</td>
-      <td>Share</td>
-      <td>Coop Pank</td>
-      <td>2.375000</td>
-      <td>0</td>
-      <td>12</td>
-      <td>12</td>
-      <td>28.500000</td>
-      <td>0.190668</td>
-      <td>91 / 8</td>
-      <td>123 / 0</td>
       <td>0.000000</td>
-      <td>0.001382</td>
-      <td>0.000698</td>
-      <td>0.640800</td>
-      <td>0.000000</td>
-      <td>SKIP</td>
-    </tr>
-    <tr class="portfolio-total">
-      <td>PORTFOLIO</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>5694.764791</td>
-      <td>100.000000</td>
-      <td></td>
-      <td>132 / 0</td>
-      <td>0.051429</td>
-      <td>-0.164798</td>
-      <td>0.015348</td>
-      <td>475.252920</td>
-      <td>10.631902</td>
-      <td></td>
     </tr>
   </tbody>
 </table>
 
-<p>Each sensitivity column starts from the same Current portfolio and adds only that row's positive change at the displayed price. The PORTFOLIO row is the complete plan, not the sum of individual sensitivities. Signal BUY requires both a planned purchase and technical agreement. Fund NAV prices are indicative; orders execute at a future NAV.</p>
 </details>
 <!-- UPDATE3_QUICK_END -->
 
@@ -29580,7 +28381,2095 @@ Select a share to display its allocation, technical indicators, performance and 
 
 
 
-<!-- STOCHASTIC_UPDATE3_START --><details markdown="1" id="stochastic-update3" class="report-section stochastic-portfolio-quick-summary" open><summary><strong>1.4. Stochastic netSD portfolio — no initial sales; signal-gated recourse</strong></summary><!-- FULL_UNIVERSE_START --><p class="stochastic-model-guide"><strong>Main plan:</strong> 1.4.a–e prohibit initial sales and allow only signal-gated recourse sales. Comparison with gated sales at both stages: 1.4.h. Frozen no-sale benchmark: 1.4.i.</p><p class="gated-execution-summary"><strong>Selected policy:</strong> 0 initial sales; 0 node–asset reductions in recourse. Sale permission is a constraint, not a mandatory instruction. The best candidate found currently makes no recourse sales.</p><p><strong>Two distinct diagnostics:</strong> fixed first-stage historical netSD <strong>0.885714</strong> (OUT 155, IN 0, D 175); expected complete-scenario netSD <strong>0.902857</strong> includes the conditional policy and all five forecast returns. These are different return series; the historical value is used in portfolio comparison tables.</p><p><strong>Main policy:</strong> no sale is permitted in the initial decision. In recourse, a sale is feasible only if that scenario forecasts a price decline from the recourse date to the week end AND at least three of Bollinger, RSI, Stochastic RSI and MACD vote SELL.</p><p>Model specification amended 2026-11-03 (Europe/Vilnius). The existing frozen historical data and 2–6 November forecast scenarios are retained; this amendment does not claim a new market-data download.</p><p>Expected scenario netSD <strong>0.902857</strong>; expected penalty 0.019051; objective <strong>0.883806</strong>. First-stage cash EUR 268.15. The frozen reference set and denominator 175 are unchanged. Historical statistics describe fixed first-stage holdings, not realised execution of the contingent plan.</p><p>The search reached its 30-iteration limit while the objective was still improving. The reported allocation is the best feasible candidate found, not a certified or converged global optimum.</p><h4>Table 1.4.a. Main first-stage holdings, purchases and dividend summary</h4>
+<!-- STOCHASTIC_UPDATE3_START --><details markdown="1" id="stochastic-update3" class="report-section"><summary><strong>1.4. Active stochastic netSD portfolios — 1000 training observations</strong></summary><p><strong>Active history rule:</strong> 72 eligible assets; 1000 training observations (2022-05-20–2026-05-04) and 126 separate diagnostic observations (2026-05-05–2026-10-29). Short-history instruments are excluded from decisions and the dominance reference set. All 12 current holdings remain available. Fund NAV already includes ongoing fees.</p><p>126-day segment is a descriptive fixed-allocation diagnostic, not an independent strategy backtest: current forecast centres use data through their current origin. Frozen forecasts and prices retain their October 2026 origins; this change does not claim a new market-data download. The new canonical netSD reference network contains the 72 eligible assets and Current, with one training-derived denominator. Old comparison policies containing excluded holdings are not silently projected or backfilled. The S&amp;P 500 benchmark uses USD price returns; currency and dividend bases differ from EUR assets, and benchmark measures use only matching US trading dates.</p><p>Historical portfolio series apply constant origin-price weights to daily asset returns: they are hypothetical daily-rebalanced diagnostics, not realised account histories or buy-and-hold share-quantity backtests. The future scenario policy instead tracks integer holdings and cash through its two decision stages. — denotes a native R function that is undefined for the selected sample; no replacement ratio is invented.</p><details markdown="1" open><summary><strong>Table 1.4.a. Gated recourse — main plan</strong></summary>
+
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>asset</th>
+      <th>current units</th>
+      <th>target units</th>
+      <th>change</th>
+      <th>last price</th>
+      <th>invested EUR</th>
+      <th>weight</th>
+      <th>Name</th>
+      <th>Average annual dividends EUR</th>
+      <th>Average annual dividend yield at payout %</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>APG1L</td>
+      <td>200</td>
+      <td>200</td>
+      <td>0</td>
+      <td>3.800000</td>
+      <td>760.000000</td>
+      <td>0.050667</td>
+      <td>Apranga</td>
+      <td>41.200000</td>
+      <td>6.893057</td>
+    </tr>
+    <tr>
+      <td>GRG1L</td>
+      <td>543</td>
+      <td>543</td>
+      <td>0</td>
+      <td>1.010000</td>
+      <td>548.430000</td>
+      <td>0.036562</td>
+      <td>Grigeo Group</td>
+      <td>24.978000</td>
+      <td>4.453062</td>
+    </tr>
+    <tr>
+      <td>HAE1T</td>
+      <td>100</td>
+      <td>100</td>
+      <td>0</td>
+      <td>5.200000</td>
+      <td>520.000000</td>
+      <td>0.034667</td>
+      <td>Harju Elekter Group</td>
+      <td>11.600000</td>
+      <td>2.250449</td>
+    </tr>
+    <tr>
+      <td>IVL1L</td>
+      <td>0</td>
+      <td>21</td>
+      <td>21</td>
+      <td>25.600000</td>
+      <td>537.600000</td>
+      <td>0.035840</td>
+      <td>Invalda INVL</td>
+      <td>9.870000</td>
+      <td>2.159846</td>
+    </tr>
+    <tr>
+      <td>KNE1L</td>
+      <td>928</td>
+      <td>928</td>
+      <td>0</td>
+      <td>0.477000</td>
+      <td>442.656000</td>
+      <td>0.029510</td>
+      <td>KN Energies</td>
+      <td>11.952640</td>
+      <td>4.010752</td>
+    </tr>
+    <tr>
+      <td>MRK1T</td>
+      <td>20</td>
+      <td>20</td>
+      <td>0</td>
+      <td>26.900000</td>
+      <td>538.000000</td>
+      <td>0.035867</td>
+      <td>Merko Ehitus</td>
+      <td>21.800000</td>
+      <td>4.987763</td>
+    </tr>
+    <tr>
+      <td>ROE1L</td>
+      <td>416</td>
+      <td>416</td>
+      <td>0</td>
+      <td>0.819000</td>
+      <td>340.704000</td>
+      <td>0.022714</td>
+      <td>Artea Bankas</td>
+      <td>15.225600</td>
+      <td>4.618709</td>
+    </tr>
+    <tr>
+      <td>RSU1L</td>
+      <td>91</td>
+      <td>91</td>
+      <td>0</td>
+      <td>4.260000</td>
+      <td>387.660000</td>
+      <td>0.025844</td>
+      <td>Rokiškio sūris</td>
+      <td>12.740000</td>
+      <td>3.950109</td>
+    </tr>
+    <tr>
+      <td>SAF1R</td>
+      <td>100</td>
+      <td>100</td>
+      <td>0</td>
+      <td>16.500000</td>
+      <td>1650.000000</td>
+      <td>0.110000</td>
+      <td>SAF Tehnika</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>TAL1T</td>
+      <td>700</td>
+      <td>700</td>
+      <td>0</td>
+      <td>0.647000</td>
+      <td>452.900000</td>
+      <td>0.030193</td>
+      <td>Tallink Grupp</td>
+      <td>21.000000</td>
+      <td>4.837008</td>
+    </tr>
+    <tr>
+      <td>TKM1T</td>
+      <td>288</td>
+      <td>288</td>
+      <td>0</td>
+      <td>8.880000</td>
+      <td>2557.440000</td>
+      <td>0.170496</td>
+      <td>TKM Grupp</td>
+      <td>152.640000</td>
+      <td>5.468087</td>
+    </tr>
+    <tr>
+      <td>TSM1T</td>
+      <td>330</td>
+      <td>330</td>
+      <td>0</td>
+      <td>1.192000</td>
+      <td>393.360000</td>
+      <td>0.026224</td>
+      <td>Tallinna Sadam</td>
+      <td>19.272000</td>
+      <td>4.586739</td>
+    </tr>
+    <tr>
+      <td>VLP1L</td>
+      <td>42</td>
+      <td>265</td>
+      <td>223</td>
+      <td>15.750000</td>
+      <td>4173.750000</td>
+      <td>0.278250</td>
+      <td>Vilkyškių pieninė</td>
+      <td>71.285000</td>
+      <td>3.574945</td>
+    </tr>
+    <tr>
+      <td>SE0014261764</td>
+      <td>0</td>
+      <td>50</td>
+      <td>50</td>
+      <td>27.249600</td>
+      <td>1362.480000</td>
+      <td>0.090832</td>
+      <td>Swedbank Robur Technology C</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>SE0015192323</td>
+      <td>0</td>
+      <td>16</td>
+      <td>16</td>
+      <td>20.430800</td>
+      <td>326.892800</td>
+      <td>0.021793</td>
+      <td>Swedbank Robur Access Edge USA C</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+  </tbody>
+</table>
+
+</details><details markdown="1"><summary><strong>Table 1.4.b. No sales at either stage</strong></summary>
+
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>asset</th>
+      <th>current units</th>
+      <th>target units</th>
+      <th>change</th>
+      <th>last price</th>
+      <th>invested EUR</th>
+      <th>weight</th>
+      <th>Name</th>
+      <th>Average annual dividends EUR</th>
+      <th>Average annual dividend yield at payout %</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>APG1L</td>
+      <td>200</td>
+      <td>200</td>
+      <td>0</td>
+      <td>3.800000</td>
+      <td>760.000000</td>
+      <td>0.050667</td>
+      <td>Apranga</td>
+      <td>41.200000</td>
+      <td>6.893057</td>
+    </tr>
+    <tr>
+      <td>GRG1L</td>
+      <td>543</td>
+      <td>543</td>
+      <td>0</td>
+      <td>1.010000</td>
+      <td>548.430000</td>
+      <td>0.036562</td>
+      <td>Grigeo Group</td>
+      <td>24.978000</td>
+      <td>4.453062</td>
+    </tr>
+    <tr>
+      <td>HAE1T</td>
+      <td>100</td>
+      <td>100</td>
+      <td>0</td>
+      <td>5.200000</td>
+      <td>520.000000</td>
+      <td>0.034667</td>
+      <td>Harju Elekter Group</td>
+      <td>11.600000</td>
+      <td>2.250449</td>
+    </tr>
+    <tr>
+      <td>IVL1L</td>
+      <td>0</td>
+      <td>21</td>
+      <td>21</td>
+      <td>25.600000</td>
+      <td>537.600000</td>
+      <td>0.035840</td>
+      <td>Invalda INVL</td>
+      <td>9.870000</td>
+      <td>2.159846</td>
+    </tr>
+    <tr>
+      <td>KNE1L</td>
+      <td>928</td>
+      <td>928</td>
+      <td>0</td>
+      <td>0.477000</td>
+      <td>442.656000</td>
+      <td>0.029510</td>
+      <td>KN Energies</td>
+      <td>11.952640</td>
+      <td>4.010752</td>
+    </tr>
+    <tr>
+      <td>MRK1T</td>
+      <td>20</td>
+      <td>20</td>
+      <td>0</td>
+      <td>26.900000</td>
+      <td>538.000000</td>
+      <td>0.035867</td>
+      <td>Merko Ehitus</td>
+      <td>21.800000</td>
+      <td>4.987763</td>
+    </tr>
+    <tr>
+      <td>ROE1L</td>
+      <td>416</td>
+      <td>416</td>
+      <td>0</td>
+      <td>0.819000</td>
+      <td>340.704000</td>
+      <td>0.022714</td>
+      <td>Artea Bankas</td>
+      <td>15.225600</td>
+      <td>4.618709</td>
+    </tr>
+    <tr>
+      <td>RSU1L</td>
+      <td>91</td>
+      <td>91</td>
+      <td>0</td>
+      <td>4.260000</td>
+      <td>387.660000</td>
+      <td>0.025844</td>
+      <td>Rokiškio sūris</td>
+      <td>12.740000</td>
+      <td>3.950109</td>
+    </tr>
+    <tr>
+      <td>SAF1R</td>
+      <td>100</td>
+      <td>100</td>
+      <td>0</td>
+      <td>16.500000</td>
+      <td>1650.000000</td>
+      <td>0.110000</td>
+      <td>SAF Tehnika</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>TAL1T</td>
+      <td>700</td>
+      <td>700</td>
+      <td>0</td>
+      <td>0.647000</td>
+      <td>452.900000</td>
+      <td>0.030193</td>
+      <td>Tallink Grupp</td>
+      <td>21.000000</td>
+      <td>4.837008</td>
+    </tr>
+    <tr>
+      <td>TKM1T</td>
+      <td>288</td>
+      <td>288</td>
+      <td>0</td>
+      <td>8.880000</td>
+      <td>2557.440000</td>
+      <td>0.170496</td>
+      <td>TKM Grupp</td>
+      <td>152.640000</td>
+      <td>5.468087</td>
+    </tr>
+    <tr>
+      <td>TSM1T</td>
+      <td>330</td>
+      <td>330</td>
+      <td>0</td>
+      <td>1.192000</td>
+      <td>393.360000</td>
+      <td>0.026224</td>
+      <td>Tallinna Sadam</td>
+      <td>19.272000</td>
+      <td>4.586739</td>
+    </tr>
+    <tr>
+      <td>VLP1L</td>
+      <td>42</td>
+      <td>265</td>
+      <td>223</td>
+      <td>15.750000</td>
+      <td>4173.750000</td>
+      <td>0.278250</td>
+      <td>Vilkyškių pieninė</td>
+      <td>71.285000</td>
+      <td>3.574945</td>
+    </tr>
+    <tr>
+      <td>SE0014261764</td>
+      <td>0</td>
+      <td>50</td>
+      <td>50</td>
+      <td>27.249600</td>
+      <td>1362.480000</td>
+      <td>0.090832</td>
+      <td>Swedbank Robur Technology C</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>SE0015192323</td>
+      <td>0</td>
+      <td>16</td>
+      <td>16</td>
+      <td>20.430800</td>
+      <td>326.892800</td>
+      <td>0.021793</td>
+      <td>Swedbank Robur Access Edge USA C</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+  </tbody>
+</table>
+
+</details><details markdown="1"><summary><strong>Table 1.4.c. Scenario objective and constraints</strong></summary>
+
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>portfolio</th>
+      <th>training observations</th>
+      <th>diagnostic observations</th>
+      <th>assets</th>
+      <th>reference count</th>
+      <th>denominator</th>
+      <th>objective</th>
+      <th>expected netSD</th>
+      <th>penalty</th>
+      <th>expected week return</th>
+      <th>cash</th>
+      <th>positions</th>
+      <th>funds</th>
+      <th>iterations</th>
+      <th>last improvement</th>
+      <th>scenarios</th>
+      <th>seed objective</th>
+      <th>global optimum certified</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Update long: gated recourse</td>
+      <td>1000</td>
+      <td>126</td>
+      <td>72</td>
+      <td>73</td>
+      <td>117</td>
+      <td>0.893435</td>
+      <td>0.908969</td>
+      <td>0.015534</td>
+      <td>0.003419</td>
+      <td>8.127200</td>
+      <td>15</td>
+      <td>2</td>
+      <td>14</td>
+      <td>0.000000</td>
+      <td>208</td>
+      <td>0.514639</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>Update long: no sales</td>
+      <td>1000</td>
+      <td>126</td>
+      <td>72</td>
+      <td>73</td>
+      <td>117</td>
+      <td>0.893435</td>
+      <td>0.908969</td>
+      <td>0.015534</td>
+      <td>0.003419</td>
+      <td>8.127200</td>
+      <td>15</td>
+      <td>2</td>
+      <td>5</td>
+      <td>0.000000</td>
+      <td>208</td>
+      <td>0.892055</td>
+      <td>False</td>
+    </tr>
+  </tbody>
+</table>
+
+</details><p>Gated initial and recourse sales have the same feasible initial holdings in this run: no current holding has the required initial-sale gate. Their first-stage solution is therefore identical to the main gated-recourse case.</p><div>\[\max_{q^0,\{q^n\}}\sum_s\pi_s\left[\frac{\mathrm{OUT}_s-\mathrm{IN}_s}{D}-\operatorname{Penalty}(q^{n(s)},p_{\tau,s})\right],\quad q_i^0,q_i^n\in\mathbb Z_+,\quad q^0\ge q^{current},\quad p_0^\top q^0\le15000.\]</div><p>Every scenario compares the 1000 historical returns plus all five forecast returns. The 126 diagnostic observations are excluded from historical netSD scoring and factor regression. D is recomputed from the training-only reference network. Two to four whole-unit funds, minimum new-share lots of ten, the existing liquidity limits and the original penalty remain. A recourse sale additionally requires a negative conditional forecast and at least three of four native TTR SELL signals. The no-sales comparison imposes qⁿ ≥ q⁰.</p><details markdown="1"><summary><strong>Table 1.4.d. Main — shared-node recourse quantities</strong></summary>
+
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>node</th>
+      <th>asset</th>
+      <th>units</th>
+      <th>change</th>
+      <th>sale allowed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>APG1L</td>
+      <td>202</td>
+      <td>2</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>GRG1L</td>
+      <td>543</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>HAE1T</td>
+      <td>100</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>IVL1L</td>
+      <td>21</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>KNE1L</td>
+      <td>928</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>MRK1T</td>
+      <td>20</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>ROE1L</td>
+      <td>416</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>RSU1L</td>
+      <td>91</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>SAF1R</td>
+      <td>100</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>TAL1T</td>
+      <td>700</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>TKM1T</td>
+      <td>288</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>TSM1T</td>
+      <td>330</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>VLP1L</td>
+      <td>265</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>SE0014261764</td>
+      <td>50</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>SE0015192323</td>
+      <td>16</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>APG1L</td>
+      <td>202</td>
+      <td>2</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>GRG1L</td>
+      <td>543</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>HAE1T</td>
+      <td>100</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>IVL1L</td>
+      <td>21</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>KNE1L</td>
+      <td>928</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>MRK1T</td>
+      <td>20</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>ROE1L</td>
+      <td>416</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>RSU1L</td>
+      <td>91</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>SAF1R</td>
+      <td>100</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>TAL1T</td>
+      <td>700</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>TKM1T</td>
+      <td>288</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>TSM1T</td>
+      <td>330</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>VLP1L</td>
+      <td>265</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>SE0014261764</td>
+      <td>50</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>SE0015192323</td>
+      <td>16</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>APG1L</td>
+      <td>202</td>
+      <td>2</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>GRG1L</td>
+      <td>543</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>HAE1T</td>
+      <td>100</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>IVL1L</td>
+      <td>21</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>KNE1L</td>
+      <td>928</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>MRK1T</td>
+      <td>20</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>ROE1L</td>
+      <td>416</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>RSU1L</td>
+      <td>91</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>SAF1R</td>
+      <td>100</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>TAL1T</td>
+      <td>700</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>TKM1T</td>
+      <td>288</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>TSM1T</td>
+      <td>330</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>VLP1L</td>
+      <td>265</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>SE0014261764</td>
+      <td>50</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>SE0015192323</td>
+      <td>16</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>APG1L</td>
+      <td>202</td>
+      <td>2</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>GRG1L</td>
+      <td>543</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>HAE1T</td>
+      <td>100</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>IVL1L</td>
+      <td>21</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>KNE1L</td>
+      <td>928</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>MRK1T</td>
+      <td>20</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>ROE1L</td>
+      <td>416</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>RSU1L</td>
+      <td>91</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>SAF1R</td>
+      <td>100</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>TAL1T</td>
+      <td>700</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>TKM1T</td>
+      <td>288</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>TSM1T</td>
+      <td>330</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>VLP1L</td>
+      <td>265</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>SE0014261764</td>
+      <td>50</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>SE0015192323</td>
+      <td>16</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+  </tbody>
+</table>
+
+</details><details markdown="1"><summary><strong>Table 1.4.e. No sales — shared-node recourse quantities</strong></summary>
+
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>node</th>
+      <th>asset</th>
+      <th>units</th>
+      <th>change</th>
+      <th>sale allowed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>APG1L</td>
+      <td>202</td>
+      <td>2</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>GRG1L</td>
+      <td>543</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>HAE1T</td>
+      <td>100</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>IVL1L</td>
+      <td>21</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>KNE1L</td>
+      <td>928</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>MRK1T</td>
+      <td>20</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>ROE1L</td>
+      <td>416</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>RSU1L</td>
+      <td>91</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>SAF1R</td>
+      <td>100</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>TAL1T</td>
+      <td>700</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>TKM1T</td>
+      <td>288</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>TSM1T</td>
+      <td>330</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>VLP1L</td>
+      <td>265</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>SE0014261764</td>
+      <td>50</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>SE0015192323</td>
+      <td>16</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>APG1L</td>
+      <td>202</td>
+      <td>2</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>GRG1L</td>
+      <td>543</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>HAE1T</td>
+      <td>100</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>IVL1L</td>
+      <td>21</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>KNE1L</td>
+      <td>928</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>MRK1T</td>
+      <td>20</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>ROE1L</td>
+      <td>416</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>RSU1L</td>
+      <td>91</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>SAF1R</td>
+      <td>100</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>TAL1T</td>
+      <td>700</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>TKM1T</td>
+      <td>288</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>TSM1T</td>
+      <td>330</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>VLP1L</td>
+      <td>265</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>SE0014261764</td>
+      <td>50</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>SE0015192323</td>
+      <td>16</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>APG1L</td>
+      <td>202</td>
+      <td>2</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>GRG1L</td>
+      <td>543</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>HAE1T</td>
+      <td>100</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>IVL1L</td>
+      <td>21</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>KNE1L</td>
+      <td>928</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>MRK1T</td>
+      <td>20</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>ROE1L</td>
+      <td>416</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>RSU1L</td>
+      <td>91</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>SAF1R</td>
+      <td>100</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>TAL1T</td>
+      <td>700</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>TKM1T</td>
+      <td>288</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>TSM1T</td>
+      <td>330</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>VLP1L</td>
+      <td>265</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>SE0014261764</td>
+      <td>50</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>SE0015192323</td>
+      <td>16</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>APG1L</td>
+      <td>202</td>
+      <td>2</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>GRG1L</td>
+      <td>543</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>HAE1T</td>
+      <td>100</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>IVL1L</td>
+      <td>21</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>KNE1L</td>
+      <td>928</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>MRK1T</td>
+      <td>20</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>ROE1L</td>
+      <td>416</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>RSU1L</td>
+      <td>91</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>SAF1R</td>
+      <td>100</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>TAL1T</td>
+      <td>700</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>TKM1T</td>
+      <td>288</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>TSM1T</td>
+      <td>330</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>VLP1L</td>
+      <td>265</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>SE0014261764</td>
+      <td>50</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>SE0015192323</td>
+      <td>16</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+  </tbody>
+</table>
+
+</details><details markdown="1"><summary><strong>Table 1.4.f. History eligibility audit</strong></summary>
+
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>asset</th>
+      <th>name</th>
+      <th>type</th>
+      <th>observations</th>
+      <th>eligible</th>
+      <th>reason</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AIR</td>
+      <td>Airobot Technologies</td>
+      <td>Share</td>
+      <td>1194</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>AKO1L</td>
+      <td>Akola Group</td>
+      <td>Share</td>
+      <td>4225</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>AMG1L</td>
+      <td>Amber Grid</td>
+      <td>Share</td>
+      <td>3349</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>APG1L</td>
+      <td>Apranga</td>
+      <td>Share</td>
+      <td>6828</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>ARC1T</td>
+      <td>Arco Vara</td>
+      <td>Share</td>
+      <td>4895</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>AUG1L</td>
+      <td>AUGA group</td>
+      <td>Share</td>
+      <td>4698</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>BAL1R</td>
+      <td>Amber Latvijas balzams</td>
+      <td>Share</td>
+      <td>6829</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>BERCM</td>
+      <td>Bercman Technologies</td>
+      <td>Share</td>
+      <td>1349</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>CPA1T</td>
+      <td>Coop Pank</td>
+      <td>Share</td>
+      <td>1741</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>CTS1L</td>
+      <td>City Service</td>
+      <td>Share</td>
+      <td>4904</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>DGR1R</td>
+      <td>DelfinGroup</td>
+      <td>Share</td>
+      <td>1273</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>EFT1T</td>
+      <td>EfTEN Real Estate Fund</td>
+      <td>Share</td>
+      <td>2251</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>EGG</td>
+      <td>Agrova Baltics</td>
+      <td>Share</td>
+      <td>747</td>
+      <td>False</td>
+      <td>Fewer than 1000 training + 126 diagnostic observations</td>
+    </tr>
+    <tr>
+      <td>EJTC</td>
+      <td>Estonian Japan Trading Company</td>
+      <td>Share</td>
+      <td>0</td>
+      <td>False</td>
+      <td>Fewer than 1000 training + 126 diagnostic observations; No validated forecast coverage</td>
+    </tr>
+    <tr>
+      <td>ELEVR</td>
+      <td>Eleving Group</td>
+      <td>Share</td>
+      <td>511</td>
+      <td>False</td>
+      <td>Fewer than 1000 training + 126 diagnostic observations</td>
+    </tr>
+    <tr>
+      <td>EWA1L</td>
+      <td>East West Agro</td>
+      <td>Share</td>
+      <td>2389</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>FRGTE</td>
+      <td>Frigate</td>
+      <td>Share</td>
+      <td>0</td>
+      <td>False</td>
+      <td>Fewer than 1000 training + 126 diagnostic observations; No validated forecast coverage</td>
+    </tr>
+    <tr>
+      <td>GRB2G</td>
+      <td>Grab2Go</td>
+      <td>Share</td>
+      <td>854</td>
+      <td>False</td>
+      <td>Fewer than 1000 training + 126 diagnostic observations</td>
+    </tr>
+    <tr>
+      <td>GRG1L</td>
+      <td>Grigeo Group</td>
+      <td>Share</td>
+      <td>6828</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>HAE1T</td>
+      <td>Harju Elekter Group</td>
+      <td>Share</td>
+      <td>6829</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>HPR1T</td>
+      <td>Hepsor</td>
+      <td>Share</td>
+      <td>1246</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>IDX1R</td>
+      <td>INDEXO</td>
+      <td>Share</td>
+      <td>1086</td>
+      <td>False</td>
+      <td>Fewer than 1000 training + 126 diagnostic observations</td>
+    </tr>
+    <tr>
+      <td>IGN1L</td>
+      <td>Ignitis grup<U+0117></td>
+      <td>Share</td>
+      <td>1535</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>IGR1R</td>
+      <td>LAU Infra Grupa</td>
+      <td>Share</td>
+      <td>84</td>
+      <td>False</td>
+      <td>Fewer than 1000 training + 126 diagnostic observations; No validated forecast coverage</td>
+    </tr>
+    <tr>
+      <td>INC1L</td>
+      <td>INVL Technology</td>
+      <td>Share</td>
+      <td>3139</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>INF1T</td>
+      <td>Infortar</td>
+      <td>Share</td>
+      <td>722</td>
+      <td>False</td>
+      <td>Fewer than 1000 training + 126 diagnostic observations</td>
+    </tr>
+    <tr>
+      <td>INL1L</td>
+      <td>INVL Baltic Farmland</td>
+      <td>Share</td>
+      <td>3138</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>INR1L</td>
+      <td>INVL Baltic Real Estate</td>
+      <td>Share</td>
+      <td>3137</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>IVL1L</td>
+      <td>Invalda INVL</td>
+      <td>Share</td>
+      <td>6828</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>KALVE</td>
+      <td>Kalve Coffee</td>
+      <td>Share</td>
+      <td>474</td>
+      <td>False</td>
+      <td>Fewer than 1000 training + 126 diagnostic observations</td>
+    </tr>
+    <tr>
+      <td>KNE1L</td>
+      <td>KN Energies</td>
+      <td>Share</td>
+      <td>6789</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>KNR1L</td>
+      <td>Kauno energija</td>
+      <td>Share</td>
+      <td>6805</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>LGD1L</td>
+      <td>LITGRID</td>
+      <td>Share</td>
+      <td>4009</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>LHV1T</td>
+      <td>LHV Group</td>
+      <td>Share</td>
+      <td>2644</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>LINDA</td>
+      <td>Linda Nektar</td>
+      <td>Share</td>
+      <td>2891</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>LVN1T</td>
+      <td>Liven</td>
+      <td>Share</td>
+      <td>118</td>
+      <td>False</td>
+      <td>Fewer than 1000 training + 126 diagnostic observations; No validated forecast coverage</td>
+    </tr>
+    <tr>
+      <td>MAGIC</td>
+      <td>TextMagic</td>
+      <td>Share</td>
+      <td>1233</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>MDARA</td>
+      <td>MADARA Cosmetics</td>
+      <td>Share</td>
+      <td>2266</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>MODE</td>
+      <td>Modera</td>
+      <td>Share</td>
+      <td>1276</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>MOLNR</td>
+      <td>J. Molner</td>
+      <td>Share</td>
+      <td>1002</td>
+      <td>False</td>
+      <td>Fewer than 1000 training + 126 diagnostic observations</td>
+    </tr>
+    <tr>
+      <td>MRK1T</td>
+      <td>Merko Ehitus</td>
+      <td>Share</td>
+      <td>4608</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>NCN1T</td>
+      <td>Nordecon</td>
+      <td>Share</td>
+      <td>5175</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>NEOFI</td>
+      <td>NEO Finance</td>
+      <td>Share</td>
+      <td>1832</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>NTU1L</td>
+      <td>Novaturas</td>
+      <td>Share</td>
+      <td>2176</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>PKG1T</td>
+      <td>Pro Kapital Grupp</td>
+      <td>Share</td>
+      <td>3518</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>PRF1T</td>
+      <td>PRFoods</td>
+      <td>Share</td>
+      <td>4172</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>PRIMO</td>
+      <td>Primostar Group</td>
+      <td>Share</td>
+      <td>354</td>
+      <td>False</td>
+      <td>Fewer than 1000 training + 126 diagnostic observations</td>
+    </tr>
+    <tr>
+      <td>PZV1L</td>
+      <td>Pieno <U+017E>vaig<U+017E>d<U+0117>s</td>
+      <td>Share</td>
+      <td>6828</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>RKB1R</td>
+      <td>R<U+012B>gas ku<U+0123>u b<U+016B>v<U+0113>tava</td>
+      <td>Share</td>
+      <td>6829</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>ROE1L</td>
+      <td>Artea Bankas</td>
+      <td>Share</td>
+      <td>6828</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>RSU1L</td>
+      <td>Roki<U+0161>kio s<U+016B>ris</td>
+      <td>Share</td>
+      <td>6828</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>SAF1R</td>
+      <td>SAF Tehnika</td>
+      <td>Share</td>
+      <td>5686</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>SAUNA</td>
+      <td>Saunum Group</td>
+      <td>Share</td>
+      <td>1483</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>SCM1R</td>
+      <td>Siguldas ciltslietu un m<U+0101>ksl<U+012B>g<U+0101>s aps<U+0113>klo<U+0161>anas stacija</td>
+      <td>Share</td>
+      <td>6829</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>SFG1T</td>
+      <td>Silvano Fashion Group</td>
+      <td>Share</td>
+      <td>6829</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>SKN1T</td>
+      <td>Nordic Fibreboard</td>
+      <td>Share</td>
+      <td>4827</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>TAL1T</td>
+      <td>Tallink Grupp</td>
+      <td>Share</td>
+      <td>5285</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>TEL1L</td>
+      <td>Telia Lietuva</td>
+      <td>Share</td>
+      <td>6714</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>TKM1T</td>
+      <td>TKM Grupp</td>
+      <td>Share</td>
+      <td>6829</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>TPD1T</td>
+      <td>Trigon Property Development</td>
+      <td>Share</td>
+      <td>6829</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>TSM1T</td>
+      <td>Tallinna Sadam</td>
+      <td>Share</td>
+      <td>2120</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>TVE1T</td>
+      <td>Tallinna Vesi</td>
+      <td>Share</td>
+      <td>5421</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>UTR1L</td>
+      <td>Utenos trikota<U+017E>as</td>
+      <td>Share</td>
+      <td>6828</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>VBL1L</td>
+      <td>Vilniaus baldai</td>
+      <td>Share</td>
+      <td>6717</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>VIRSI</td>
+      <td>VIR<U+0160>I-A</td>
+      <td>Share</td>
+      <td>1257</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>VLP1L</td>
+      <td>Vilky<U+0161>ki<U+0173> pienin<U+0117></td>
+      <td>Share</td>
+      <td>5176</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>ZMP1L</td>
+      <td><U+017D>emaitijos pienas</td>
+      <td>Share</td>
+      <td>6828</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>SE0013876927</td>
+      <td>Swedbank Robur Access Edge Japan C</td>
+      <td>Fund</td>
+      <td>1445</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>SE0013876950</td>
+      <td>Swedbank Robur Access Edge Em Mkt C</td>
+      <td>Fund</td>
+      <td>1445</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>SE0013876968</td>
+      <td>Swedbank Robur Access Asien C</td>
+      <td>Fund</td>
+      <td>1445</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>SE0014261756</td>
+      <td>Swedbank Robur Global High Dividend C</td>
+      <td>Fund</td>
+      <td>1452</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>SE0014261764</td>
+      <td>Swedbank Robur Technology C</td>
+      <td>Fund</td>
+      <td>1452</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>SE0014261871</td>
+      <td>Swedbank Robur Healthcare C</td>
+      <td>Fund</td>
+      <td>1452</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>SE0014261889</td>
+      <td>Swedbank Robur Global Impact C</td>
+      <td>Fund</td>
+      <td>1452</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>SE0014261897</td>
+      <td>Swedbank Robur Fastighet C</td>
+      <td>Fund</td>
+      <td>1452</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>SE0014263273</td>
+      <td>Swedbank Savings Fund 30 N</td>
+      <td>Fund</td>
+      <td>1439</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>SE0014263281</td>
+      <td>Swedbank Savings Fund 100 N</td>
+      <td>Fund</td>
+      <td>1439</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>SE0014263299</td>
+      <td>Swedbank Savings Fund 60 N</td>
+      <td>Fund</td>
+      <td>1439</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>SE0015192315</td>
+      <td>Swedbank Robur Access Edge Sweden C</td>
+      <td>Fund</td>
+      <td>1445</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>SE0015192323</td>
+      <td>Swedbank Robur Access Edge USA C</td>
+      <td>Fund</td>
+      <td>1445</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>SE0015192331</td>
+      <td>Swedbank Robur Access Edge Europe C</td>
+      <td>Fund</td>
+      <td>1445</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>SE0015192349</td>
+      <td>Swedbank Robur Access Edge Global C</td>
+      <td>Fund</td>
+      <td>1445</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>SE0015948609</td>
+      <td>Swedbank Robur Corp Bond Europe HY C</td>
+      <td>Fund</td>
+      <td>1377</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>SE0015948617</td>
+      <td>Swedbank Robur Corp Bond Europe C</td>
+      <td>Fund</td>
+      <td>1377</td>
+      <td>True</td>
+      <td>Eligible</td>
+    </tr>
+    <tr>
+      <td>SE0017072416</td>
+      <td>Swedbank Robur Corp Bond Nordic C</td>
+      <td>Fund</td>
+      <td>1245</td>
+      <td>False</td>
+      <td>Exact fund class has less than five calendar years</td>
+    </tr>
+    <tr>
+      <td>SE0019354200</td>
+      <td>Swedbank Robur Emerging Europe C</td>
+      <td>Fund</td>
+      <td>883</td>
+      <td>False</td>
+      <td>Fewer than 1000 training + 126 diagnostic observations; Exact fund class has less than five calendar years</td>
+    </tr>
+    <tr>
+      <td>SE0025667199</td>
+      <td>Swedbank Robur Corp Bond Nordic HY C</td>
+      <td>Fund</td>
+      <td>272</td>
+      <td>False</td>
+      <td>Fewer than 1000 training + 126 diagnostic observations; Exact fund class has less than five calendar years</td>
+    </tr>
+    <tr>
+      <td>SE0025667215</td>
+      <td>Swedbank Robur Security and Defence C</td>
+      <td>Fund</td>
+      <td>275</td>
+      <td>False</td>
+      <td>Fewer than 1000 training + 126 diagnostic observations; Exact fund class has less than five calendar years</td>
+    </tr>
+    <tr>
+      <td>SE0026821472</td>
+      <td>Swedbank Robur Small Cap Europe C</td>
+      <td>Fund</td>
+      <td>237</td>
+      <td>False</td>
+      <td>Fewer than 1000 training + 126 diagnostic observations; Exact fund class has less than five calendar years</td>
+    </tr>
+    <tr>
+      <td>SE0027397514</td>
+      <td>Swedbank Robur New Energy C</td>
+      <td>Fund</td>
+      <td>119</td>
+      <td>False</td>
+      <td>Fewer than 1000 training + 126 diagnostic observations; Exact fund class has less than five calendar years</td>
+    </tr>
+    <tr>
+      <td>SE0029504588</td>
+      <td>Swedbank Robur Food and Water C</td>
+      <td>Fund</td>
+      <td>32</td>
+      <td>False</td>
+      <td>Fewer than 1000 training + 126 diagnostic observations; Exact fund class has less than five calendar years; No validated forecast coverage</td>
+    </tr>
+  </tbody>
+</table>
+
+</details><details markdown="1" id="archived-stochastic-update3" class="report-section stochastic-portfolio-quick-summary" open><summary><strong>Archived short-history 1.4. Stochastic netSD portfolio — no initial sales; signal-gated recourse</strong></summary><!-- FULL_UNIVERSE_START --><p class="stochastic-model-guide"><strong>Main plan:</strong> 1.4.a–e prohibit initial sales and allow only signal-gated recourse sales. Comparison with gated sales at both stages: 1.4.h. Frozen no-sale benchmark: 1.4.i.</p><p class="gated-execution-summary"><strong>Selected policy:</strong> 0 initial sales; 0 node–asset reductions in recourse. Sale permission is a constraint, not a mandatory instruction. The best candidate found currently makes no recourse sales.</p><p><strong>Two distinct diagnostics:</strong> fixed first-stage historical netSD <strong>0.885714</strong> (OUT 155, IN 0, D 175); expected complete-scenario netSD <strong>0.902857</strong> includes the conditional policy and all five forecast returns. These are different return series; the historical value is used in portfolio comparison tables.</p><p><strong>Main policy:</strong> no sale is permitted in the initial decision. In recourse, a sale is feasible only if that scenario forecasts a price decline from the recourse date to the week end AND at least three of Bollinger, RSI, Stochastic RSI and MACD vote SELL.</p><p>Model specification amended 2026-11-03 (Europe/Vilnius). The existing frozen historical data and 2–6 November forecast scenarios are retained; this amendment does not claim a new market-data download.</p><p>Expected scenario netSD <strong>0.902857</strong>; expected penalty 0.019051; objective <strong>0.883806</strong>. First-stage cash EUR 268.15. The frozen reference set and denominator 175 are unchanged. Historical statistics describe fixed first-stage holdings, not realised execution of the contingent plan.</p><p>The search reached its 30-iteration limit while the objective was still improving. The reported allocation is the best feasible candidate found, not a certified or converged global optimum.</p><h4>Table 1.4.a. Main first-stage holdings, purchases and dividend summary</h4>
 <p>Target invested EUR 14,731.85; cash EUR 268.15; OUT / IN 155 / 0; netSD 0.885714. Average annual historical cash dividends EUR 431.68; embedded annual fund costs approximately EUR 4.79. Accumulating funds make no cash dividend payment.</p>
 
 <table markdown="0" class="dataframe research-table planned-portfolio-table">
@@ -67446,6 +68335,902 @@ $$\mathcal X_s=\{R^{hist}_{1s},\ldots,R^{hist}_{272,s},R_{s1},\ldots,R_{s5}\}.$$
 
 <div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/regime-stochastic-results.html?v=8fd1a567e009" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
+</details></details></details><details markdown="1"><summary><strong>Archived short-history quick summaries</strong></summary><details markdown="1" class="report-section planned-portfolio-quick-summary" open><summary><strong>1.2. Archived short-history quick summary: previous portfolio — Update2 penalty, no sales</strong></summary><p><strong>Comparison only:</strong> this earlier allocation predates the full-universe liquidity-screened model. Use section 1.4 for the active plan. Scores below are recalculated on the new common sample and reference set.</p>
+<p>Target invested EUR 14,947.29; cash EUR 52.71; OUT / IN 129 / 0; netSD 0.737143. Average annual historical cash dividends EUR 522.49; embedded annual fund costs approximately EUR 0.00. Accumulating funds make no cash dividend payment.</p>
+
+<table markdown="0" class="dataframe research-table planned-portfolio-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Instrument</th>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Current price / NAV</th>
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Buy EUR</th>
+      <th>Weight %</th>
+      <th>Individual OUT / IN</th>
+      <th>Portfolio OUT / IN after addition</th>
+      <th>netSD change</th>
+      <th>Rachev change</th>
+      <th>Sortino change</th>
+      <th>Average annual cash dividends EUR</th>
+      <th>Embedded annual fee EUR</th>
+      <th>Execution signal</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TKM1T</td>
+      <td>Share</td>
+      <td>TKM Grupp</td>
+      <td>8.880000</td>
+      <td>288</td>
+      <td>289</td>
+      <td>1</td>
+      <td>8.880000</td>
+      <td>17.167398</td>
+      <td>28 / 28</td>
+      <td>123 / 0</td>
+      <td>0.000000</td>
+      <td>-0.000634</td>
+      <td>-0.000422</td>
+      <td>153.170000</td>
+      <td>0.000000</td>
+      <td>SKIP</td>
+    </tr>
+    <tr>
+      <td>SAF1R</td>
+      <td>Share</td>
+      <td>SAF Tehnika</td>
+      <td>16.500000</td>
+      <td>100</td>
+      <td>100</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>11.000000</td>
+      <td>55 / 0</td>
+      <td>123 / 0</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>HOLD</td>
+    </tr>
+    <tr>
+      <td>APG1L</td>
+      <td>Share</td>
+      <td>Apranga</td>
+      <td>3.800000</td>
+      <td>200</td>
+      <td>295</td>
+      <td>95</td>
+      <td>360.999995</td>
+      <td>7.488815</td>
+      <td>54 / 6</td>
+      <td>124 / 0</td>
+      <td>0.005714</td>
+      <td>-0.013817</td>
+      <td>0.008260</td>
+      <td>60.770000</td>
+      <td>0.000000</td>
+      <td>WAIT</td>
+    </tr>
+    <tr>
+      <td>KNE1L</td>
+      <td>Share</td>
+      <td>KN Energies</td>
+      <td>0.477000</td>
+      <td>928</td>
+      <td>2182</td>
+      <td>1254</td>
+      <td>598.157998</td>
+      <td>6.938845</td>
+      <td>54 / 2</td>
+      <td>125 / 0</td>
+      <td>0.011429</td>
+      <td>-0.014784</td>
+      <td>0.018247</td>
+      <td>28.104160</td>
+      <td>0.000000</td>
+      <td>WAIT</td>
+    </tr>
+    <tr>
+      <td>VLP1L</td>
+      <td>Share</td>
+      <td>Vilkyškių pieninė</td>
+      <td>15.750000</td>
+      <td>42</td>
+      <td>59</td>
+      <td>17</td>
+      <td>267.750000</td>
+      <td>6.240793</td>
+      <td>48 / 5</td>
+      <td>125 / 0</td>
+      <td>0.011429</td>
+      <td>-0.015267</td>
+      <td>0.006754</td>
+      <td>15.871000</td>
+      <td>0.000000</td>
+      <td>WAIT</td>
+    </tr>
+    <tr>
+      <td>RSU1L</td>
+      <td>Share</td>
+      <td>Rokiškio sūris</td>
+      <td>4.260000</td>
+      <td>91</td>
+      <td>216</td>
+      <td>125</td>
+      <td>532.500029</td>
+      <td>6.160985</td>
+      <td>40 / 61</td>
+      <td>122 / 0</td>
+      <td>-0.005714</td>
+      <td>-0.025728</td>
+      <td>-0.011936</td>
+      <td>30.240000</td>
+      <td>0.000000</td>
+      <td class="buy-now">BUY</td>
+    </tr>
+    <tr>
+      <td>MRK1T</td>
+      <td>Share</td>
+      <td>Merko Ehitus</td>
+      <td>26.900000</td>
+      <td>20</td>
+      <td>34</td>
+      <td>14</td>
+      <td>376.599995</td>
+      <td>6.139981</td>
+      <td>36 / 63</td>
+      <td>122 / 0</td>
+      <td>-0.005714</td>
+      <td>-0.039086</td>
+      <td>-0.014899</td>
+      <td>37.060000</td>
+      <td>0.000000</td>
+      <td>WAIT</td>
+    </tr>
+    <tr>
+      <td>GRG1L</td>
+      <td>Share</td>
+      <td>Grigeo Group</td>
+      <td>1.010000</td>
+      <td>543</td>
+      <td>828</td>
+      <td>285</td>
+      <td>287.849997</td>
+      <td>5.577334</td>
+      <td>42 / 52</td>
+      <td>122 / 0</td>
+      <td>-0.005714</td>
+      <td>-0.019329</td>
+      <td>-0.008048</td>
+      <td>38.088000</td>
+      <td>0.000000</td>
+      <td>WAIT</td>
+    </tr>
+    <tr>
+      <td>HAE1T</td>
+      <td>Share</td>
+      <td>Harju Elekter Group</td>
+      <td>5.200000</td>
+      <td>100</td>
+      <td>138</td>
+      <td>38</td>
+      <td>197.599993</td>
+      <td>4.787370</td>
+      <td>53 / 28</td>
+      <td>123 / 0</td>
+      <td>0.000000</td>
+      <td>-0.003660</td>
+      <td>-0.002725</td>
+      <td>16.008000</td>
+      <td>0.000000</td>
+      <td>WAIT</td>
+    </tr>
+    <tr>
+      <td>TAL1T</td>
+      <td>Share</td>
+      <td>Tallink Grupp</td>
+      <td>0.647000</td>
+      <td>700</td>
+      <td>907</td>
+      <td>207</td>
+      <td>133.929003</td>
+      <td>3.912614</td>
+      <td>44 / 19</td>
+      <td>123 / 0</td>
+      <td>0.000000</td>
+      <td>-0.005281</td>
+      <td>-0.000231</td>
+      <td>27.210000</td>
+      <td>0.000000</td>
+      <td>WAIT</td>
+    </tr>
+    <tr>
+      <td>MOLNR</td>
+      <td>Share</td>
+      <td>J. Molner</td>
+      <td>19.799999</td>
+      <td>0</td>
+      <td>29</td>
+      <td>29</td>
+      <td>574.199978</td>
+      <td>3.877363</td>
+      <td>6 / 127</td>
+      <td>118 / 0</td>
+      <td>-0.028571</td>
+      <td>-0.033551</td>
+      <td>-0.040191</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>WAIT</td>
+    </tr>
+    <tr>
+      <td>DGR1R</td>
+      <td>Share</td>
+      <td>DelfinGroup</td>
+      <td>1.715000</td>
+      <td>0</td>
+      <td>317</td>
+      <td>317</td>
+      <td>543.655011</td>
+      <td>3.631473</td>
+      <td>114 / 0</td>
+      <td>127 / 0</td>
+      <td>0.022857</td>
+      <td>0.011075</td>
+      <td>0.022979</td>
+      <td>20.744480</td>
+      <td>0.000000</td>
+      <td>WAIT</td>
+    </tr>
+    <tr>
+      <td>LHV1T</td>
+      <td>Share</td>
+      <td>LHV Group</td>
+      <td>3.250000</td>
+      <td>0</td>
+      <td>150</td>
+      <td>150</td>
+      <td>487.500000</td>
+      <td>3.268226</td>
+      <td>36 / 34</td>
+      <td>120 / 0</td>
+      <td>-0.017143</td>
+      <td>-0.003961</td>
+      <td>-0.008915</td>
+      <td>12.900000</td>
+      <td>0.000000</td>
+      <td>WAIT</td>
+    </tr>
+    <tr>
+      <td>ROE1L</td>
+      <td>Share</td>
+      <td>Artea Bankas</td>
+      <td>0.819000</td>
+      <td>416</td>
+      <td>527</td>
+      <td>111</td>
+      <td>90.909001</td>
+      <td>2.881831</td>
+      <td>39 / 38</td>
+      <td>123 / 0</td>
+      <td>0.000000</td>
+      <td>-0.007874</td>
+      <td>-0.001762</td>
+      <td>19.288200</td>
+      <td>0.000000</td>
+      <td>SKIP</td>
+    </tr>
+    <tr>
+      <td>TSM1T</td>
+      <td>Share</td>
+      <td>Tallinna Sadam</td>
+      <td>1.192000</td>
+      <td>330</td>
+      <td>330</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>2.622400</td>
+      <td>38 / 37</td>
+      <td>123 / 0</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>19.272000</td>
+      <td>0.000000</td>
+      <td>HOLD</td>
+    </tr>
+    <tr>
+      <td>EFT1T</td>
+      <td>Share</td>
+      <td>EfTEN Real Estate Fund</td>
+      <td>19.549999</td>
+      <td>0</td>
+      <td>20</td>
+      <td>20</td>
+      <td>390.999985</td>
+      <td>2.650902</td>
+      <td>53 / 16</td>
+      <td>123 / 0</td>
+      <td>0.000000</td>
+      <td>0.013616</td>
+      <td>0.002961</td>
+      <td>17.850400</td>
+      <td>0.000000</td>
+      <td>WAIT</td>
+    </tr>
+    <tr>
+      <td>TEL1L</td>
+      <td>Share</td>
+      <td>Telia Lietuva</td>
+      <td>2.250000</td>
+      <td>0</td>
+      <td>111</td>
+      <td>111</td>
+      <td>249.750000</td>
+      <td>1.666234</td>
+      <td>64 / 1</td>
+      <td>126 / 0</td>
+      <td>0.017143</td>
+      <td>0.007593</td>
+      <td>0.009431</td>
+      <td>8.880000</td>
+      <td>0.000000</td>
+      <td>WAIT</td>
+    </tr>
+    <tr>
+      <td>CPA1T</td>
+      <td>Share</td>
+      <td>Coop Pank</td>
+      <td>2.375000</td>
+      <td>0</td>
+      <td>92</td>
+      <td>92</td>
+      <td>218.500000</td>
+      <td>1.469534</td>
+      <td>91 / 8</td>
+      <td>124 / 0</td>
+      <td>0.005714</td>
+      <td>0.010558</td>
+      <td>0.005076</td>
+      <td>4.912800</td>
+      <td>0.000000</td>
+      <td>WAIT</td>
+    </tr>
+    <tr>
+      <td>PZV1L</td>
+      <td>Share</td>
+      <td>Pieno žvaigždės</td>
+      <td>1.790000</td>
+      <td>0</td>
+      <td>112</td>
+      <td>112</td>
+      <td>200.479996</td>
+      <td>1.348326</td>
+      <td>42 / 55</td>
+      <td>124 / 0</td>
+      <td>0.005714</td>
+      <td>-0.004670</td>
+      <td>0.000614</td>
+      <td>9.408000</td>
+      <td>0.000000</td>
+      <td>WAIT</td>
+    </tr>
+    <tr>
+      <td>AKO1L</td>
+      <td>Share</td>
+      <td>Akola Group</td>
+      <td>1.875000</td>
+      <td>0</td>
+      <td>93</td>
+      <td>93</td>
+      <td>174.375000</td>
+      <td>1.169576</td>
+      <td>53 / 26</td>
+      <td>123 / 0</td>
+      <td>0.000000</td>
+      <td>-0.001593</td>
+      <td>0.001317</td>
+      <td>2.715600</td>
+      <td>0.000000</td>
+      <td>WAIT</td>
+    </tr>
+    <tr class="portfolio-total">
+      <td>PORTFOLIO</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>5694.635979</td>
+      <td>100.000000</td>
+      <td></td>
+      <td>129 / 0</td>
+      <td>0.034286</td>
+      <td>-0.127866</td>
+      <td>-0.011938</td>
+      <td>522.492640</td>
+      <td>0.000000</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Each sensitivity column starts from the same Current portfolio and adds only that row's positive change at the displayed price. The PORTFOLIO row is the complete plan, not the sum of individual sensitivities. Signal BUY requires both a planned purchase and technical agreement. Fund NAV prices are indicative; orders execute at a future NAV.</p>
+</details><details markdown="1" class="report-section update3-quick-summary" open><summary><strong>1.3. Archived short-history quick summary: previous portfolio — Update3, no sales</strong></summary><p class="fund-history-archive"><strong>ARCHIVED COMPARISON — NOT A CURRENT ORDER PLAN.</strong> This pre-rule calculation contains a fund with less than five years of verified class history. It is retained only as a historical comparator. Use the main signal-gated plan or the regime-conditioned plan for the current admissible fund universe.</p><p><strong>Comparison only:</strong> this earlier allocation predates the full-universe liquidity-screened model. Use section 1.4 for the active plan. Scores below are recalculated on the new common sample and reference set.</p>
+<p>Target invested EUR 14,947.41; cash EUR 52.59; OUT / IN 132 / 0; netSD 0.754286. Average annual historical cash dividends EUR 475.25; embedded annual fund costs approximately EUR 10.63. Accumulating funds make no cash dividend payment.</p>
+
+<table markdown="0" class="dataframe research-table planned-portfolio-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Instrument</th>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Current price / NAV</th>
+      <th>Current units</th>
+      <th>Target units</th>
+      <th>Change</th>
+      <th>Buy EUR</th>
+      <th>Weight %</th>
+      <th>Individual OUT / IN</th>
+      <th>Portfolio OUT / IN after addition</th>
+      <th>netSD change</th>
+      <th>Rachev change</th>
+      <th>Sortino change</th>
+      <th>Average annual cash dividends EUR</th>
+      <th>Embedded annual fee EUR</th>
+      <th>Execution signal</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SE0015192349</td>
+      <td>Fund</td>
+      <td>Swedbank Robur Access Edge Global C</td>
+      <td>19.459200</td>
+      <td>0</td>
+      <td>30</td>
+      <td>30</td>
+      <td>583.776000</td>
+      <td>3.905532</td>
+      <td>94 / 11</td>
+      <td>124 / 0</td>
+      <td>0.005714</td>
+      <td>0.020344</td>
+      <td>0.015600</td>
+      <td>0.000000</td>
+      <td>1.634573</td>
+      <td>WAIT</td>
+    </tr>
+    <tr>
+      <td>SE0019354200</td>
+      <td>Fund</td>
+      <td>Swedbank Robur Emerging Europe C</td>
+      <td>23.235800</td>
+      <td>0</td>
+      <td>22</td>
+      <td>22</td>
+      <td>511.187600</td>
+      <td>3.419906</td>
+      <td>57 / 5</td>
+      <td>126 / 0</td>
+      <td>0.017143</td>
+      <td>-0.004092</td>
+      <td>0.012649</td>
+      <td>0.000000</td>
+      <td>8.179002</td>
+      <td>WAIT</td>
+    </tr>
+    <tr>
+      <td>SE0013876927</td>
+      <td>Fund</td>
+      <td>Swedbank Robur Access Edge Japan C</td>
+      <td>15.587200</td>
+      <td>0</td>
+      <td>21</td>
+      <td>21</td>
+      <td>327.331200</td>
+      <td>2.189885</td>
+      <td>62 / 10</td>
+      <td>123 / 0</td>
+      <td>0.000000</td>
+      <td>-0.031657</td>
+      <td>0.003873</td>
+      <td>0.000000</td>
+      <td>0.818328</td>
+      <td>WAIT</td>
+    </tr>
+    <tr>
+      <td>TKM1T</td>
+      <td>Share</td>
+      <td>TKM Grupp</td>
+      <td>8.880000</td>
+      <td>288</td>
+      <td>295</td>
+      <td>7</td>
+      <td>62.160001</td>
+      <td>17.525439</td>
+      <td>28 / 28</td>
+      <td>123 / 0</td>
+      <td>0.000000</td>
+      <td>-0.004421</td>
+      <td>-0.002951</td>
+      <td>156.350000</td>
+      <td>0.000000</td>
+      <td>SKIP</td>
+    </tr>
+    <tr>
+      <td>SAF1R</td>
+      <td>Share</td>
+      <td>SAF Tehnika</td>
+      <td>16.500000</td>
+      <td>100</td>
+      <td>100</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>11.038698</td>
+      <td>55 / 0</td>
+      <td>123 / 0</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>HOLD</td>
+    </tr>
+    <tr>
+      <td>VLP1L</td>
+      <td>Share</td>
+      <td>Vilkyškių pieninė</td>
+      <td>15.750000</td>
+      <td>42</td>
+      <td>82</td>
+      <td>40</td>
+      <td>630.000000</td>
+      <td>8.640290</td>
+      <td>48 / 5</td>
+      <td>125 / 0</td>
+      <td>0.011429</td>
+      <td>-0.046780</td>
+      <td>0.011424</td>
+      <td>22.058000</td>
+      <td>0.000000</td>
+      <td>WAIT</td>
+    </tr>
+    <tr>
+      <td>APG1L</td>
+      <td>Share</td>
+      <td>Apranga</td>
+      <td>3.800000</td>
+      <td>200</td>
+      <td>338</td>
+      <td>138</td>
+      <td>524.399993</td>
+      <td>8.592790</td>
+      <td>54 / 6</td>
+      <td>126 / 0</td>
+      <td>0.017143</td>
+      <td>-0.015341</td>
+      <td>0.011489</td>
+      <td>69.628000</td>
+      <td>0.000000</td>
+      <td>WAIT</td>
+    </tr>
+    <tr>
+      <td>KNE1L</td>
+      <td>Share</td>
+      <td>KN Energies</td>
+      <td>0.477000</td>
+      <td>928</td>
+      <td>1935</td>
+      <td>1007</td>
+      <td>480.338998</td>
+      <td>6.174947</td>
+      <td>54 / 2</td>
+      <td>125 / 0</td>
+      <td>0.011429</td>
+      <td>-0.016743</td>
+      <td>0.015335</td>
+      <td>24.922800</td>
+      <td>0.000000</td>
+      <td>WAIT</td>
+    </tr>
+    <tr>
+      <td>MRK1T</td>
+      <td>Share</td>
+      <td>Merko Ehitus</td>
+      <td>26.900000</td>
+      <td>20</td>
+      <td>29</td>
+      <td>9</td>
+      <td>242.099997</td>
+      <td>5.218963</td>
+      <td>36 / 63</td>
+      <td>122 / 0</td>
+      <td>-0.005714</td>
+      <td>-0.024367</td>
+      <td>-0.009382</td>
+      <td>31.610000</td>
+      <td>0.000000</td>
+      <td>WAIT</td>
+    </tr>
+    <tr>
+      <td>RSU1L</td>
+      <td>Share</td>
+      <td>Rokiškio sūris</td>
+      <td>4.260000</td>
+      <td>91</td>
+      <td>176</td>
+      <td>85</td>
+      <td>362.100019</td>
+      <td>5.015985</td>
+      <td>40 / 61</td>
+      <td>122 / 0</td>
+      <td>-0.005714</td>
+      <td>-0.007366</td>
+      <td>-0.007117</td>
+      <td>24.640000</td>
+      <td>0.000000</td>
+      <td class="buy-now">BUY</td>
+    </tr>
+    <tr>
+      <td>TAL1T</td>
+      <td>Share</td>
+      <td>Tallink Grupp</td>
+      <td>0.647000</td>
+      <td>700</td>
+      <td>1034</td>
+      <td>334</td>
+      <td>216.098005</td>
+      <td>4.475677</td>
+      <td>44 / 19</td>
+      <td>123 / 0</td>
+      <td>0.000000</td>
+      <td>-0.008968</td>
+      <td>-0.000475</td>
+      <td>31.020000</td>
+      <td>0.000000</td>
+      <td>WAIT</td>
+    </tr>
+    <tr>
+      <td>MOLNR</td>
+      <td>Share</td>
+      <td>J. Molner</td>
+      <td>19.799999</td>
+      <td>0</td>
+      <td>30</td>
+      <td>30</td>
+      <td>593.999977</td>
+      <td>3.973931</td>
+      <td>6 / 127</td>
+      <td>118 / 0</td>
+      <td>-0.028571</td>
+      <td>-0.035087</td>
+      <td>-0.042428</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>WAIT</td>
+    </tr>
+    <tr>
+      <td>GRG1L</td>
+      <td>Share</td>
+      <td>Grigeo Group</td>
+      <td>1.010000</td>
+      <td>543</td>
+      <td>580</td>
+      <td>37</td>
+      <td>37.370000</td>
+      <td>3.919072</td>
+      <td>42 / 52</td>
+      <td>123 / 0</td>
+      <td>0.000000</td>
+      <td>-0.002439</td>
+      <td>-0.000972</td>
+      <td>26.680000</td>
+      <td>0.000000</td>
+      <td>SKIP</td>
+    </tr>
+    <tr>
+      <td>HAE1T</td>
+      <td>Share</td>
+      <td>Harju Elekter Group</td>
+      <td>5.200000</td>
+      <td>100</td>
+      <td>103</td>
+      <td>3</td>
+      <td>15.599999</td>
+      <td>3.583228</td>
+      <td>53 / 28</td>
+      <td>123 / 0</td>
+      <td>0.000000</td>
+      <td>-0.000117</td>
+      <td>-0.000183</td>
+      <td>11.948000</td>
+      <td>0.000000</td>
+      <td>SKIP</td>
+    </tr>
+    <tr>
+      <td>DGR1R</td>
+      <td>Share</td>
+      <td>DelfinGroup</td>
+      <td>1.715000</td>
+      <td>0</td>
+      <td>268</td>
+      <td>268</td>
+      <td>459.620009</td>
+      <td>3.074913</td>
+      <td>114 / 0</td>
+      <td>127 / 0</td>
+      <td>0.022857</td>
+      <td>0.009830</td>
+      <td>0.019658</td>
+      <td>17.537920</td>
+      <td>0.000000</td>
+      <td>WAIT</td>
+    </tr>
+    <tr>
+      <td>TSM1T</td>
+      <td>Share</td>
+      <td>Tallinna Sadam</td>
+      <td>1.192000</td>
+      <td>330</td>
+      <td>330</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>2.631626</td>
+      <td>38 / 37</td>
+      <td>123 / 0</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>19.272000</td>
+      <td>0.000000</td>
+      <td>HOLD</td>
+    </tr>
+    <tr>
+      <td>PZV1L</td>
+      <td>Share</td>
+      <td>Pieno žvaigždės</td>
+      <td>1.790000</td>
+      <td>0</td>
+      <td>205</td>
+      <td>205</td>
+      <td>366.949992</td>
+      <td>2.454940</td>
+      <td>42 / 55</td>
+      <td>122 / 0</td>
+      <td>-0.005714</td>
+      <td>-0.011940</td>
+      <td>-0.000455</td>
+      <td>17.220000</td>
+      <td>0.000000</td>
+      <td>WAIT</td>
+    </tr>
+    <tr>
+      <td>ROE1L</td>
+      <td>Share</td>
+      <td>Artea Bankas</td>
+      <td>0.819000</td>
+      <td>416</td>
+      <td>423</td>
+      <td>7</td>
+      <td>5.733000</td>
+      <td>2.317705</td>
+      <td>39 / 38</td>
+      <td>123 / 0</td>
+      <td>0.000000</td>
+      <td>-0.000464</td>
+      <td>-0.000106</td>
+      <td>15.481800</td>
+      <td>0.000000</td>
+      <td>SKIP</td>
+    </tr>
+    <tr>
+      <td>LHV1T</td>
+      <td>Share</td>
+      <td>LHV Group</td>
+      <td>3.250000</td>
+      <td>0</td>
+      <td>51</td>
+      <td>51</td>
+      <td>165.750000</td>
+      <td>1.108887</td>
+      <td>36 / 34</td>
+      <td>121 / 0</td>
+      <td>-0.011429</td>
+      <td>-0.001019</td>
+      <td>-0.002766</td>
+      <td>4.386000</td>
+      <td>0.000000</td>
+      <td>WAIT</td>
+    </tr>
+    <tr>
+      <td>AKO1L</td>
+      <td>Share</td>
+      <td>Akola Group</td>
+      <td>1.875000</td>
+      <td>0</td>
+      <td>28</td>
+      <td>28</td>
+      <td>52.500000</td>
+      <td>0.351231</td>
+      <td>53 / 26</td>
+      <td>123 / 0</td>
+      <td>0.000000</td>
+      <td>-0.000480</td>
+      <td>0.000460</td>
+      <td>0.817600</td>
+      <td>0.000000</td>
+      <td>SKIP</td>
+    </tr>
+    <tr>
+      <td>TEL1L</td>
+      <td>Share</td>
+      <td>Telia Lietuva</td>
+      <td>2.250000</td>
+      <td>0</td>
+      <td>13</td>
+      <td>13</td>
+      <td>29.250000</td>
+      <td>0.195686</td>
+      <td>64 / 1</td>
+      <td>125 / 0</td>
+      <td>0.011429</td>
+      <td>0.000771</td>
+      <td>0.001147</td>
+      <td>1.040000</td>
+      <td>0.000000</td>
+      <td>SKIP</td>
+    </tr>
+    <tr>
+      <td>CPA1T</td>
+      <td>Share</td>
+      <td>Coop Pank</td>
+      <td>2.375000</td>
+      <td>0</td>
+      <td>12</td>
+      <td>12</td>
+      <td>28.500000</td>
+      <td>0.190668</td>
+      <td>91 / 8</td>
+      <td>123 / 0</td>
+      <td>0.000000</td>
+      <td>0.001382</td>
+      <td>0.000698</td>
+      <td>0.640800</td>
+      <td>0.000000</td>
+      <td>SKIP</td>
+    </tr>
+    <tr class="portfolio-total">
+      <td>PORTFOLIO</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>5694.764791</td>
+      <td>100.000000</td>
+      <td></td>
+      <td>132 / 0</td>
+      <td>0.051429</td>
+      <td>-0.164798</td>
+      <td>0.015348</td>
+      <td>475.252920</td>
+      <td>10.631902</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Each sensitivity column starts from the same Current portfolio and adds only that row's positive change at the displayed price. The PORTFOLIO row is the complete plan, not the sum of individual sensitivities. Signal BUY requires both a planned purchase and technical agreement. Fund NAV prices are indicative; orders execute at a future NAV.</p>
 </details></details></details><!-- STOCHASTIC_UPDATE3_END -->
 <details markdown="1" class="report-section" id="analytics-1-3">
 <summary><strong>1.5. Earnings outcomes and subsequent price changes</strong></summary>
@@ -72824,16 +74609,12 @@ The BH adjustment covers the full family of share-level, pooled and pairwise tes
 
 
 
-<!-- REGIME_CORRELATIONS_START -->
+<!-- REGIME_CORRELATIONS_START --><details markdown="1" class="regime-correlations">
+<summary>Eligible-asset and active-portfolio correlations by regime — 1000-day training window</summary>
 
-<details markdown="1" class="regime-correlations">
-<summary>Asset and in-sample portfolio correlations by regime</summary>
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/long-history-regime-correlations.html?v=49059b71fe6b" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
 
-<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/all-regime-correlations.html?v=ba0df0efb4ec" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
-
-</details>
-
-<!-- REGIME_CORRELATIONS_END -->
+</details><!-- REGIME_CORRELATIONS_END -->
 
 </details><details markdown="1" id="market-analysis-9"><summary><strong>2.9. Transition-matrix stress sensitivity</strong></summary>
 
@@ -72912,7 +74693,7 @@ The BH adjustment covers the full family of share-level, pooled and pairwise tes
 
 <p>The first paper motivates separate binary hidden states, a four-regime combination, transition estimates, stationary and first-passage characteristics, and worsening-transition stress tests. The second adds per-index own-history/market-conditioned estimation and weighted aggregation. Here stocks/bonds are replaced by Baltic/global equities, predictors are lagged, both equity thresholds are 1.3, and probabilities are explicitly posterior-threshold decoded. This implementation uses EM-fitted Gaussian HMMs in depmixS4; it does not implement the separate Lavielle–Lebarbier MCMC change-point procedure discussed in the first paper.</p><p><a href="https://link.springer.com/article/10.1007/s10479-024-06041-1" target="_blank" rel="noopener">Stress testing for IInd pillar life-cycle pension funds using hidden Markov model</a>; <a href="https://link.springer.com/article/10.1186/s13362-024-00144-x" target="_blank" rel="noopener">Systemic risk assessment through connectedness and spillover</a>; <a href="https://www.jstatsoft.org/article/view/v036i07" target="_blank" rel="noopener">depmixS4 methods</a>; <a href="https://cran.r-project.org/web/packages/markovchain/vignettes/an_introduction_to_markovchain_package.pdf" target="_blank" rel="noopener">markovchain methods</a>.</p>
 
-</details><details markdown="1" id="market-scenario-regimes" class="report-section"><summary><strong>2.11. Applying market regimes to portfolio scenarios</strong></summary><details markdown="1" class="regime-stochastic-market">
+</details><details markdown="1" id="market-scenario-regimes" class="report-section"><summary><strong>Archived regime-scenario diagnostics — former short-history universe</strong></summary><details markdown="1" class="regime-stochastic-market">
 <summary>Regime probabilities and scenario information nodes</summary>
 
 <div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/regime-stochastic-market.html?v=69ef0c188c65" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
@@ -72920,7 +74701,12 @@ The BH adjustment covers the full family of share-level, pooled and pairwise tes
 </details></details></details><!-- MARKET_ANALYSIS_END -->
 
 <details markdown="1" class="analytics-group" id="analytics-3" open>
-<summary><strong>3. Portfolio analytics</strong></summary>
+<summary><strong>3. Portfolio analytics</strong></summary><details markdown="1" id="long-history-portfolios" class="">
+<summary>3.1. Active portfolio analysis — long history</summary>
+
+<div markdown="0" class="native-report-fragment" data-fragment-src="fragments/regime-assets/active-long-history-portfolios.html?v=613c3a96258b" data-loaded="no"><p>Open this section to load its tables and figures.</p></div>
+
+</details><details markdown="1" id="archived-short-history-portfolios"><summary><strong>Archived short-history research — superseded by the active analysis above</strong></summary><p>All quantities, matrices, frontiers, VSS/EVPI and 190/272-observation statistics below belong to the former universe. They are not current orders and are not comparable to the new reference network.</p>
 
 
 
@@ -111643,7 +113429,7 @@ The common-network scores in Section 3.1 supersede numerical score quotes from t
 
 </details>
 
-</details>
+</details></details>
 </main>
 <script>
 const metricModal=document.createElement('div');
@@ -111729,7 +113515,7 @@ document.querySelectorAll('details.portfolio-sensitivity').forEach(function(sens
   });
 });
 
-const reportVersion='43abadc61e4c';
+const reportVersion='aac9fef6bc91';
 const palette = ['#1b1b1b','#e41a1c','#377eb8','#4daf4a','#984ea3','#ff7f00','#a65628','#f781bf','#008080','#6a3d9a','#b2182b','#2166ac','#1b9e77','#d95f02'];
 const linePatterns = [[],[10,5],[2,4],[10,4,2,4],[14,5],[6,3],[2,3,8,3],[12,3,3,3]];
 function isExplorerVisible(box) {
@@ -111739,12 +113525,13 @@ function isExplorerVisible(box) {
   }
   return true;
 }
+const dominanceJsonPromises=new Map();
 function initialiseDominanceExplorer(box) {
   if (!isExplorerVisible(box) || box.dataset.loaded) return;
   box.dataset.loaded = 'loading';
   const profile = box.dataset.asset, target = box.dataset.target || profile;
-  const loadJson=url=>fetch(url+(url.includes('?')?'&':'?')+'v='+reportVersion).then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json();});
-  Promise.all([loadJson(`interactive/dominance/${profile}.json`),profile==='Portfolio'?Promise.resolve(null):loadJson('interactive/dominance/Portfolio.json')]).then(([data,universe]) => {
+  const loadJson=url=>{if(!dominanceJsonPromises.has(url))dominanceJsonPromises.set(url,fetch(url+(url.includes('?')?'&':'?')+'v='+reportVersion).then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json();}).catch(error=>{dominanceJsonPromises.delete(url);throw error;}));return dominanceJsonPromises.get(url);};
+  Promise.all([loadJson(box.dataset.source||`interactive/dominance/${profile}.json`),profile==='Portfolio'?Promise.resolve(null):loadJson(box.dataset.universe||'interactive/dominance/Portfolio.json')]).then(([data,universe]) => {
     // Individual files stay compact.  Other-share curves are interpolated from
     // the one shared universe file only when a stock profile is opened.
     if(universe){
@@ -111756,7 +113543,7 @@ function initialiseDominanceExplorer(box) {
     }
     const displayLabel=name=>name==='update3_stochastic_recourse_sell'?'Main: gated recourse':name==='update3_stochastic_sell'?'Stochastic: gated sales both stages':name==='update3_stochastic_no_sell'?'Stochastic: no sales':name==='Baltic_NetSD'?'Update: sales allowed':name==='curent_update_baltic'?'Update: no sales':name==='update2_penalty_sell'?'Update2 penalty: sales allowed':name==='update2_penalty_no_sell'?'Update2 penalty: no sales':name;
     const displayName=name=>`${(data.portfolio_codes||{})[name]?data.portfolio_codes[name]+' — ':''}${displayLabel(name)}`;
-    const first=data.orders.FSD, seriesNames=Object.keys(first.series), preferred=profile==='Portfolio'?['Current','update3_stochastic_recourse_sell','update3_stochastic_no_sell','update3_stochastic_sell','Baltic_NetSD','curent_update_baltic','update2_penalty_sell','update2_penalty_no_sell','SP500']:[ 'Current','update3_stochastic_recourse_sell','update3_stochastic_no_sell','update3_stochastic_sell','SP500','curent_update_baltic','Baltic_NetSD','update2_penalty_sell','update2_penalty_no_sell'];
+    const first=data.orders.FSD, seriesNames=Object.keys(first.series), preferred=profile==='Portfolio'?['Current','Update long: gated recourse','Update long: no sales','Update long: gated sales both stages','update3_stochastic_recourse_sell','update3_stochastic_no_sell','update3_stochastic_sell','Baltic_NetSD','curent_update_baltic','update2_penalty_sell','update2_penalty_no_sell','SP500']:[ 'Current','update3_stochastic_recourse_sell','update3_stochastic_no_sell','update3_stochastic_sell','SP500','curent_update_baltic','Baltic_NetSD','update2_penalty_sell','update2_penalty_no_sell'];
     const portfolioNames=seriesNames.filter(x=>(data.series_types||{})[x]==='portfolio');
     const shareNames=seriesNames.filter(x=>['share','fund'].includes((data.series_types||{})[x]));
     const fundNames=shareNames.filter(x=>(data.series_types||{})[x]==='fund');
@@ -111764,8 +113551,8 @@ function initialiseDominanceExplorer(box) {
     const benchmarks=[...preferred.filter(x=>benchmarkPool.includes(x)),...benchmarkPool.filter(x=>!preferred.includes(x))];
     const otherShares=shareNames.filter(x=>x!==target);
     const defaultSelected=new Set(preferred.filter(x=>seriesNames.includes(x)).slice(0,3));
-    const defaultComparators=new Set(['Current','Baltic_NetSD','curent_update_baltic','update2_penalty_sell','update2_penalty_no_sell','update3_funds_sell','update3_funds_no_sell','update3_stochastic_recourse_sell','update3_stochastic_no_sell','update3_stochastic_sell'].filter(x=>benchmarks.includes(x)));
-    box.innerHTML = `${profile==='Portfolio'?`<p class="dom-exact-note">Same portfolio codes and ${data.sample?.observations||''} historical observations as Figure 3.m.1. FSD is an exact right-continuous empirical step function. Row A dominates column B when F(A) ≤ F(B) everywhere, with strict inequality somewhere; other selected curves may still cross. In the lower panels, B minus A is then nonnegative.</p><div class="dom-matrix-pair"><label>Matrix row (candidate dominator)<select class="dom-pair-row">${portfolioNames.filter(x=>data.portfolio_codes?.[x]).map(x=>`<option value="${x}"${x==='update3_stochastic_no_sell'?' selected':''}>${displayName(x)}</option>`).join('')}</select></label><label>Matrix column<select class="dom-pair-column">${portfolioNames.filter(x=>data.portfolio_codes?.[x]).map(x=>`<option value="${x}"${x==='Baltic_NetSD'?' selected':''}>${displayName(x)}</option>`).join('')}</select></label><button type="button" class="dom-pair-check">Show this matrix pair only</button></div><p class="dom-pair-result" role="status"></p>`:''}<div class="dominance-controls">
+    const defaultComparators=new Set(['Current','Update long: gated recourse','Update long: no sales','Update long: gated sales both stages','Baltic_NetSD','curent_update_baltic','update2_penalty_sell','update2_penalty_no_sell','update3_funds_sell','update3_funds_no_sell','update3_stochastic_recourse_sell','update3_stochastic_no_sell','update3_stochastic_sell'].filter(x=>benchmarks.includes(x)));
+    box.innerHTML = `${profile==='Portfolio'?`<p class="dom-exact-note">Same portfolio codes and ${data.sample?.observations||''} historical observations as the portfolio-only dominance matrices. FSD is an exact right-continuous empirical step function. Row A dominates column B when F(A) ≤ F(B) everywhere, with strict inequality somewhere; other selected curves may still cross. In the lower panels, B minus A is then nonnegative.</p><div class="dom-matrix-pair"><label>Matrix row (candidate dominator)<select class="dom-pair-row">${portfolioNames.filter(x=>data.portfolio_codes?.[x]).map(x=>`<option value="${x}"${x==='update3_stochastic_no_sell'?' selected':''}>${displayName(x)}</option>`).join('')}</select></label><label>Matrix column<select class="dom-pair-column">${portfolioNames.filter(x=>data.portfolio_codes?.[x]).map(x=>`<option value="${x}"${x==='Baltic_NetSD'?' selected':''}>${displayName(x)}</option>`).join('')}</select></label><button type="button" class="dom-pair-check">Show this matrix pair only</button></div><p class="dom-pair-result" role="status"></p>`:''}<div class="dominance-controls">
       <label>Component<select class="dom-order"><option>FSD</option><option>SSD</option><option>TSD</option></select></label>
       ${profile==='Portfolio'?`<label>Comparison base<select class="dom-benchmark">${benchmarks.map(x=>`<option value="${x}"${x===target?' selected':''}>${displayName(x)}</option>`).join('')}</select></label>`:
       `<label class="dominance-compact-wrap">Comparison portfolios
@@ -111800,6 +113587,10 @@ function initialiseDominanceExplorer(box) {
         const support=[...new Set(names.flatMap(k=>data.sorted_returns[k]))].sort((a,b)=>a-b),padding=Math.max((support.at(-1)-support[0])*.01,1e-8);
         const exactX=[support[0]-padding,...support,support.at(-1)+padding];
         d={x:exactX,series:Object.fromEntries(names.map(k=>{const a=data.sorted_returns[k];return[k,exactX.map(v=>upperBound(a,v)/a.length)];}))};
+      } else if(box.dataset.source&&data.sorted_returns&&names.every(k=>data.sorted_returns[k])) {
+        const low=Math.min(...names.map(k=>data.sorted_returns[k][0])),high=Math.max(...names.map(k=>data.sorted_returns[k].at(-1))),padding=Math.max((high-low)*.01,1e-8);
+        const indices=d.x.map((v,i)=>i).filter(i=>d.x[i]>=low-padding&&d.x[i]<=high+padding);
+        if(indices.length>2)d={x:indices.map(i=>d.x[i]),series:Object.fromEntries(names.map(k=>[k,indices.map(i=>d.series[k][i])]))};
       }
       const x=d.x,n=x.length;
       const rect=canvas.getBoundingClientRect(), ratio=Math.min(Math.max(window.devicePixelRatio||1,2),3);
@@ -111855,7 +113646,7 @@ document.querySelectorAll('details.dominance-components').forEach(function(d) { 
 function initialiseFrontierExplorer(box) {
   if (!isExplorerVisible(box) || box.dataset.loaded) return;
   box.dataset.loaded='loading';
-  fetch('interactive/frontiers.json?v='+reportVersion).then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json();}).then(data=>{
+  fetch((box.dataset.source||'interactive/frontiers.json')+'?v='+reportVersion).then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json();}).then(data=>{
     const models=Object.keys(data.models), first=data.models[models[0]], names=first.portfolios.map(p=>p.name);
     const portfolioNames=first.portfolios.filter(p=>p.type==='portfolio'&&p.name!=='Current').map(p=>p.name), sharePoints=first.portfolios.filter(p=>['share','fund'].includes(p.type)), shareNames=sharePoints.map(p=>p.name), fundNames=sharePoints.filter(p=>p.type==='fund').map(p=>p.name), heldShares=new Set(sharePoints.filter(p=>p.held).map(p=>p.name));
     const preferred=['update3_funds_sell','update3_funds_no_sell','update3_stochastic_recourse_sell','update3_stochastic_no_sell','update3_stochastic_sell','Baltic_NetSD','curent_update_baltic','update2_penalty_sell','update2_penalty_no_sell','NetSD_full','NetSD_training'];
@@ -111875,7 +113666,7 @@ function initialiseFrontierExplorer(box) {
       <div class="frontier-panel"><label>Left frontier model<select class="front-model-left">${models.map(x=>`<option${x==='Markowitz'?' selected':''}>${x}</option>`).join('')}</select></label><canvas class="frontier-canvas"></canvas></div>
       <div class="frontier-panel"><label>Right frontier model<select class="front-model-right">${models.map(x=>`<option${x==='NetSD'?' selected':''}>${x}</option>`).join('')}</select></label><canvas class="frontier-canvas"></canvas></div>
     </div><p class="frontier-status"></p>
-    <details class="frontier-dividend-copy" open><summary><strong>Mean return and five-year average dividend yield versus all portfolios</strong></summary><div class="dividend-explorer" data-highlight="${box.dataset.highlight||''}" data-static="figures/return_dividend_all_portfolios.png"></div><p>The horizontal axis is realised mean one-period return. The vertical axis is the five-year average annual historical dividend yield measured using the share price at each ex-dividend date. Other eligible shares are transparent background points; portfolios are labelled. This is historical and is not a dividend forecast.</p></details>`;
+    <details class="frontier-dividend-copy" open><summary><strong>Mean return and five-year average dividend yield versus all portfolios</strong></summary><div class="dividend-explorer" data-source="${box.dataset.source?'interactive/dominance/LongDividends.json':''}" data-highlight="${box.dataset.highlight||''}" data-static="figures/return_dividend_all_portfolios.png"></div><p>The horizontal axis is realised mean one-period return. The vertical axis is the five-year average annual historical dividend yield measured using the share price at each ex-dividend date. Other eligible shares are transparent background points; portfolios are labelled. This is historical and is not a dividend forecast.</p></details>`;
     initialiseDividendExplorer(box.querySelector('.dividend-explorer'));
     const canvases=[...box.querySelectorAll('canvas')], leftModel=box.querySelector('.front-model-left'), rightModel=box.querySelector('.front-model-right'), compareSelect=box.querySelector('.frontier-multiselect'), xzoom=box.querySelector('.front-xzoom'), yzoom=box.querySelector('.front-yzoom'), status=box.querySelector('.frontier-status');
     function draw(canvas,modelValue){
@@ -111961,11 +113752,13 @@ function initialiseCumulativeExplorer(box) {
 document.querySelectorAll('details.cumulative-components').forEach(function(d){d.addEventListener('toggle',function(){if(d.open){const box=d.querySelector('.cumulative-explorer');if(box)initialiseCumulativeExplorer(box);}});if(d.open){const box=d.querySelector('.cumulative-explorer');if(box)initialiseCumulativeExplorer(box);}});
 document.querySelectorAll('details.report-section').forEach(function(section){section.addEventListener('toggle',function(){if(!section.open)return;section.querySelectorAll('details.dominance-components[open] .dominance-explorer').forEach(initialiseDominanceExplorer);section.querySelectorAll('details.frontier-components[open] .frontier-explorer').forEach(initialiseFrontierExplorer);section.querySelectorAll('details.cumulative-components[open] .cumulative-explorer').forEach(initialiseCumulativeExplorer);});});
 let dividendScatterData;
+const dividendScatterVariants={};
 function initialiseDividendExplorer(box) {
   if(!box||box.dataset.loaded)return;
   box.dataset.loaded='loading';
-  if(!dividendScatterData)dividendScatterData=fetch('interactive/return_dividend.json?v='+reportVersion).then(r=>{if(!r.ok)throw Error(`HTTP ${r.status}`);return r.json();});
-  dividendScatterData.then(data=>{
+  const source=box.dataset.source||'interactive/return_dividend.json';
+  if(!dividendScatterVariants[source])dividendScatterVariants[source]=fetch(source+'?v='+reportVersion).then(r=>{if(!r.ok)throw Error(`HTTP ${r.status}`);return r.json();});
+  dividendScatterVariants[source].then(data=>{
     const highlight=box.dataset.highlight||'', points=data.points;
     const ns='http://www.w3.org/2000/svg';
     const make=(tag,attrs={},parent=null,text=null)=>{const e=document.createElementNS(ns,tag);Object.entries(attrs).forEach(([k,v])=>e.setAttribute(k,v));if(text!==null)e.textContent=text;if(parent)parent.appendChild(e);return e;};
@@ -112067,10 +113860,13 @@ function initialiseReportFragment(box) {
   if(url.origin!==location.origin){box.dataset.loaded='no';box.textContent='Invalid report fragment location.';return;}
   fetch(url.href).then(response=>{if(!response.ok)throw new Error(`HTTP ${response.status}`);return response.text();}).then(content=>{
     box.innerHTML=content;box.dataset.loaded='yes';
+    box.querySelectorAll('.dominance-explorer').forEach(initialiseDominanceExplorer);
+    box.querySelectorAll('.frontier-explorer').forEach(initialiseFrontierExplorer);
+    box.querySelectorAll('.dividend-explorer').forEach(initialiseDividendExplorer);
   }).catch(error=>{box.dataset.loaded='no';box.textContent='Tables could not be loaded: '+error.message+'. Close and reopen this section to retry.';});
 }
 document.addEventListener('toggle',function(event){
-  if(event.target.tagName==='DETAILS'&&event.target.open)event.target.querySelectorAll('.native-report-fragment').forEach(initialiseReportFragment);
+  if(event.target.tagName==='DETAILS'&&event.target.open){event.target.querySelectorAll('.native-report-fragment').forEach(initialiseReportFragment);event.target.querySelectorAll('.dominance-explorer').forEach(initialiseDominanceExplorer);event.target.querySelectorAll('.frontier-explorer').forEach(initialiseFrontierExplorer);}
 },true);
 document.querySelectorAll('.native-report-fragment').forEach(initialiseReportFragment);
 
