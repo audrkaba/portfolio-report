@@ -173,7 +173,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-<h1>Baltic investment plan — updated 2026-11-04 11:57 (Europe/Vilnius); share closes 2026-11-03; fund NAV 2026-11-02–2026-11-03</h1>
+<h1>Baltic investment plan — updated 2026-11-04 12:20 (Europe/Vilnius); share closes 2026-11-03; fund NAV 2026-11-02–2026-11-03</h1>
 <p>Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.</p>
 <hr>
 <h1>Nasdaq Baltic universe: maximum-netSD portfolio</h1>
@@ -184,7 +184,46 @@ a { color:var(--accent); }
 <details markdown="1" class="analytics-group" id="analytics-1" open>
 <summary><strong>1. Share analytics</strong></summary>
 
-<details markdown="1" class="report-section" id="analytics-1-1">
+<details markdown="1" open class="report-section" id="profile-portfolio-overview"><summary><strong>Portfolio behind the profiles in 1.1 - Current versus the main stochastic plan</strong></summary>
+
+<table markdown="0" class="dataframe research-table long-history-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Portfolio</th>
+      <th>OUT</th>
+      <th>IN</th>
+      <th>netSD</th>
+      <th>netSD change vs Current</th>
+      <th>2025 annual cash dividends EUR</th>
+      <th>2026 cash dividends to date EUR</th>
+      <th>Five-year average annual cash dividends EUR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Current</td>
+      <td>65</td>
+      <td>0</td>
+      <td>0.555556</td>
+      <td>0.000000</td>
+      <td>474.191600</td>
+      <td>422.992800</td>
+      <td>343.706240</td>
+    </tr>
+    <tr>
+      <td>Main stochastic plan: no initial sales; gated recourse</td>
+      <td>110</td>
+      <td>0</td>
+      <td>0.940171</td>
+      <td>0.384615</td>
+      <td>625.181600</td>
+      <td>497.122800</td>
+      <td>415.715240</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The default stochastic profiles in 1.1 refer to the main plan above; quantities are first-stage targets, with no initial sales and signal-gated sales in recourse. OUT, IN and netSD use the same 1000 training observations, fixed reference set and denominator 117. The change is plan netSD minus Current netSD. These are historical portfolio diagnostics, distinct from the scenario-expected optimisation objective. Dividend amounts apply the displayed Current/target units to historical per-unit cash payments: 2025 is a complete calendar year; 2026 is incomplete through the report data cutoff. They are hypothetical gross cash amounts, not a forecast or actual account receipts. The five-year annual average covers 2022-2026. Accumulating funds pay no cash dividends.</p></details><details markdown="1" class="report-section" id="analytics-1-1">
 <summary><strong>1.1. Shares and funds: profiles and trade signals</strong></summary><!-- STOCHASTIC_PROFILE_NOTE --><p>All 72 history-eligible shares and funds are available here. Stochastic is selected by default. Update 2 and Update 3 include both sales-allowed and no-sales allocations. At least one portfolio also includes Current and the earlier comparison portfolios. Conditional stochastic holdings count as membership. Instruments without sufficient history show the reason instead of invented analytics.</p>
 
 <div class="profile-filters"><fieldset class="portfolio-scope-filters"><legend>Portfolio membership</legend><label><input type="radio" name="portfolio-scope" value="ANY"> At least one portfolio</label><label><input type="radio" name="portfolio-scope" value="STOCHASTIC" checked> Stochastic</label><label><input type="radio" name="portfolio-scope" value="ALL"> All</label><label><input type="radio" name="portfolio-scope" value="UPDATE3"> Update 3</label><label><input type="radio" name="portfolio-scope" value="UPDATE2"> Update 2</label></fieldset><fieldset class="sale-policy-filters"><legend title="Portfolio membership by permission to sell; not a technical SELL signal">Sale / no-sale</legend><label><input type="radio" name="sale-policy" value="ALL" checked> All</label><label><input type="radio" name="sale-policy" value="SALE"> Sale</label><label><input type="radio" name="sale-policy" value="NO_SALE"> No-sale</label></fieldset><fieldset class="instrument-type-filters"><legend>Type</legend><label><input type="radio" name="profile-instrument-type" value="ALL" checked> All</label><label><input type="radio" name="profile-instrument-type" value="SHARE"> Shares</label><label><input type="radio" name="profile-instrument-type" value="FUND"> Funds</label></fieldset><fieldset class="signal-filters"><legend>Decision</legend><label><input type="checkbox" value="BUY" checked> BUY</label><label><input type="checkbox" value="WAIT" checked> WAIT</label><label><input type="checkbox" value="SELL" checked> SELL</label><label><input type="checkbox" value="HOLD" checked> HOLD</label><label><input type="checkbox" value="SKIP" checked> SKIP</label><details markdown="1" class="profile-filter-help"><summary aria-label="Explain WAIT, HOLD and SKIP" title="Decision definitions">?</summary><div class="decision-key"><strong>WAIT</strong> = the optimiser proposes a trade, but technical timing does not yet support execution. <strong>HOLD</strong> = the selected model proposes no quantity change. <strong>SKIP</strong> = the proposed purchase is below the minimum material-trade rule (EUR 100 or 1% portfolio weight).</div></details></fieldset><fieldset class="netsd-filters"><legend>netSD after addition</legend><label><input type="checkbox" value="INCREASE" checked> Increases</label><label><input type="checkbox" value="DECREASE" checked> Decreases</label><label><input type="checkbox" value="UNCHANGED" checked> Unchanged</label></fieldset><fieldset class="dividend-filters"><legend title="Dividends paid at least once in 2022-2026">Dividends (5 years)</legend><label><input type="checkbox" value="PAID" checked> Paid</label><label><input type="checkbox" value="NONE" checked> None</label></fieldset><span class="profile-filter-count" aria-live="polite"></span></div>
@@ -9291,7 +9330,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
       <td>HOLD</td>
       <td>0.0200</td>
       <td>2025-11-04</td>
-      <td>1.9901</td>
+      <td>1.9900</td>
       <td>0.0000</td>
       <td>0.0000</td>
     </tr>
@@ -12575,7 +12614,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
       <td>0.0000</td>
       <td>0.0000</td>
       <td>1.1343</td>
-      <td>0.0664</td>
+      <td>0.0663</td>
       <td>64.5174</td>
       <td>0.4203</td>
       <td>0.1003</td>
@@ -17705,7 +17744,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
       <td>-0.0005</td>
       <td>-0.0008</td>
       <td>0.0495</td>
-      <td>0.0542</td>
+      <td>0.0543</td>
       <td>HOLD</td>
       <td>0.0000</td>
       <td>No recorded payout</td>
@@ -27583,7 +27622,7 @@ The selected share is highlighted, while every other eligible Baltic share is sh
       <td>1.0203</td>
       <td>0.1519</td>
       <td>45.0305</td>
-      <td>0.9789</td>
+      <td>0.9790</td>
       <td>-0.0473</td>
       <td>-0.0573</td>
       <td>11.2909</td>
@@ -113993,5 +114032,5 @@ The common-network scores in Section 3.1 supersede numerical score quotes from t
 
 </details></details>
 </main>
-<script src="report-ui.js?v=41650de8d2c1" defer></script>
+<script src="report-ui.js?v=7bb601ca53e4" defer></script>
 </body></html>
