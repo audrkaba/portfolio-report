@@ -177,7 +177,7 @@ a { color:var(--accent); }
 </style>
 </head>
 <body><main markdown="1">
-# Baltic investment plan - analysis updated 2026-11-04 08:33 (Europe/Vilnius); return analysis through 2026-10-30; valuation prices through 2026-10-30
+# Baltic investment plan - analysis updated 2026-11-04 08:41 (Europe/Vilnius); return analysis through 2026-10-30; valuation prices through 2026-10-30
 
 Private Nasdaq Baltic portfolio analysis. Tables, figures and individual-share information are collapsed; select a title to expand it.
 
@@ -1011,7 +1011,7 @@ The common explorer includes every eligible share, all funds and every portfolio
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-<div class="dividend-explorer" data-highlight="DGR1R" data-static="figures/return_dividend_all_portfolios.png?v=22987dcd1283"><noscript><img src="figures/return_dividend_all_portfolios.png?v=22987dcd1283" alt="DGR1R mean return and historical dividend yield with all portfolios"></noscript></div>
+<div class="dividend-explorer" data-source="interactive/dominance/LongDividends.json" data-highlight="DGR1R" data-static="figures/return_dividend_all_portfolios.png?v=22987dcd1283"><noscript><img src="figures/return_dividend_all_portfolios.png?v=22987dcd1283" alt="DGR1R mean return and historical dividend yield with all portfolios"></noscript></div>
 
 The selected share is highlighted, while every other eligible Baltic share is shown as an unlabelled transparent background point. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -1493,7 +1493,7 @@ The common explorer includes every eligible share, all funds and every portfolio
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-<div class="dividend-explorer" data-highlight="SAF1R" data-static="figures/return_dividend_all_portfolios.png?v=22987dcd1283"><noscript><img src="figures/return_dividend_all_portfolios.png?v=22987dcd1283" alt="SAF1R mean return and historical dividend yield with all portfolios"></noscript></div>
+<div class="dividend-explorer" data-source="interactive/dominance/LongDividends.json" data-highlight="SAF1R" data-static="figures/return_dividend_all_portfolios.png?v=22987dcd1283"><noscript><img src="figures/return_dividend_all_portfolios.png?v=22987dcd1283" alt="SAF1R mean return and historical dividend yield with all portfolios"></noscript></div>
 
 The selected share is highlighted, while every other eligible Baltic share is shown as an unlabelled transparent background point. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -1937,7 +1937,7 @@ The common explorer includes every eligible share, all funds and every portfolio
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-<div class="dividend-explorer" data-highlight="TEL1L" data-static="figures/return_dividend_all_portfolios.png?v=22987dcd1283"><noscript><img src="figures/return_dividend_all_portfolios.png?v=22987dcd1283" alt="TEL1L mean return and historical dividend yield with all portfolios"></noscript></div>
+<div class="dividend-explorer" data-source="interactive/dominance/LongDividends.json" data-highlight="TEL1L" data-static="figures/return_dividend_all_portfolios.png?v=22987dcd1283"><noscript><img src="figures/return_dividend_all_portfolios.png?v=22987dcd1283" alt="TEL1L mean return and historical dividend yield with all portfolios"></noscript></div>
 
 The selected share is highlighted, while every other eligible Baltic share is shown as an unlabelled transparent background point. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -2416,7 +2416,7 @@ The common explorer includes every eligible share, all funds and every portfolio
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-<div class="dividend-explorer" data-highlight="KNE1L" data-static="figures/return_dividend_all_portfolios.png?v=22987dcd1283"><noscript><img src="figures/return_dividend_all_portfolios.png?v=22987dcd1283" alt="KNE1L mean return and historical dividend yield with all portfolios"></noscript></div>
+<div class="dividend-explorer" data-source="interactive/dominance/LongDividends.json" data-highlight="KNE1L" data-static="figures/return_dividend_all_portfolios.png?v=22987dcd1283"><noscript><img src="figures/return_dividend_all_portfolios.png?v=22987dcd1283" alt="KNE1L mean return and historical dividend yield with all portfolios"></noscript></div>
 
 The selected share is highlighted, while every other eligible Baltic share is shown as an unlabelled transparent background point. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -2894,7 +2894,7 @@ The common explorer includes every eligible share, all funds and every portfolio
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-<div class="dividend-explorer" data-highlight="VLP1L" data-static="figures/return_dividend_all_portfolios.png?v=22987dcd1283"><noscript><img src="figures/return_dividend_all_portfolios.png?v=22987dcd1283" alt="VLP1L mean return and historical dividend yield with all portfolios"></noscript></div>
+<div class="dividend-explorer" data-source="interactive/dominance/LongDividends.json" data-highlight="VLP1L" data-static="figures/return_dividend_all_portfolios.png?v=22987dcd1283"><noscript><img src="figures/return_dividend_all_portfolios.png?v=22987dcd1283" alt="VLP1L mean return and historical dividend yield with all portfolios"></noscript></div>
 
 The selected share is highlighted, while every other eligible Baltic share is shown as an unlabelled transparent background point. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -3396,7 +3396,7 @@ The common explorer includes every eligible share, all funds and every portfolio
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-<div class="dividend-explorer" data-highlight="CPA1T" data-static="figures/return_dividend_all_portfolios.png?v=22987dcd1283"><noscript><img src="figures/return_dividend_all_portfolios.png?v=22987dcd1283" alt="CPA1T mean return and historical dividend yield with all portfolios"></noscript></div>
+<div class="dividend-explorer" data-source="interactive/dominance/LongDividends.json" data-highlight="CPA1T" data-static="figures/return_dividend_all_portfolios.png?v=22987dcd1283"><noscript><img src="figures/return_dividend_all_portfolios.png?v=22987dcd1283" alt="CPA1T mean return and historical dividend yield with all portfolios"></noscript></div>
 
 The selected share is highlighted, while every other eligible Baltic share is shown as an unlabelled transparent background point. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -3898,7 +3898,7 @@ The common explorer includes every eligible share, all funds and every portfolio
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-<div class="dividend-explorer" data-highlight="TAL1T" data-static="figures/return_dividend_all_portfolios.png?v=22987dcd1283"><noscript><img src="figures/return_dividend_all_portfolios.png?v=22987dcd1283" alt="TAL1T mean return and historical dividend yield with all portfolios"></noscript></div>
+<div class="dividend-explorer" data-source="interactive/dominance/LongDividends.json" data-highlight="TAL1T" data-static="figures/return_dividend_all_portfolios.png?v=22987dcd1283"><noscript><img src="figures/return_dividend_all_portfolios.png?v=22987dcd1283" alt="TAL1T mean return and historical dividend yield with all portfolios"></noscript></div>
 
 The selected share is highlighted, while every other eligible Baltic share is shown as an unlabelled transparent background point. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -4376,7 +4376,7 @@ The common explorer includes every eligible share, all funds and every portfolio
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-<div class="dividend-explorer" data-highlight="AKO1L" data-static="figures/return_dividend_all_portfolios.png?v=22987dcd1283"><noscript><img src="figures/return_dividend_all_portfolios.png?v=22987dcd1283" alt="AKO1L mean return and historical dividend yield with all portfolios"></noscript></div>
+<div class="dividend-explorer" data-source="interactive/dominance/LongDividends.json" data-highlight="AKO1L" data-static="figures/return_dividend_all_portfolios.png?v=22987dcd1283"><noscript><img src="figures/return_dividend_all_portfolios.png?v=22987dcd1283" alt="AKO1L mean return and historical dividend yield with all portfolios"></noscript></div>
 
 The selected share is highlighted, while every other eligible Baltic share is shown as an unlabelled transparent background point. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -4880,7 +4880,7 @@ The common explorer includes every eligible share, all funds and every portfolio
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-<div class="dividend-explorer" data-highlight="LHV1T" data-static="figures/return_dividend_all_portfolios.png?v=22987dcd1283"><noscript><img src="figures/return_dividend_all_portfolios.png?v=22987dcd1283" alt="LHV1T mean return and historical dividend yield with all portfolios"></noscript></div>
+<div class="dividend-explorer" data-source="interactive/dominance/LongDividends.json" data-highlight="LHV1T" data-static="figures/return_dividend_all_portfolios.png?v=22987dcd1283"><noscript><img src="figures/return_dividend_all_portfolios.png?v=22987dcd1283" alt="LHV1T mean return and historical dividend yield with all portfolios"></noscript></div>
 
 The selected share is highlighted, while every other eligible Baltic share is shown as an unlabelled transparent background point. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -5378,7 +5378,7 @@ The common explorer includes every eligible share, all funds and every portfolio
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-<div class="dividend-explorer" data-highlight="HAE1T" data-static="figures/return_dividend_all_portfolios.png?v=22987dcd1283"><noscript><img src="figures/return_dividend_all_portfolios.png?v=22987dcd1283" alt="HAE1T mean return and historical dividend yield with all portfolios"></noscript></div>
+<div class="dividend-explorer" data-source="interactive/dominance/LongDividends.json" data-highlight="HAE1T" data-static="figures/return_dividend_all_portfolios.png?v=22987dcd1283"><noscript><img src="figures/return_dividend_all_portfolios.png?v=22987dcd1283" alt="HAE1T mean return and historical dividend yield with all portfolios"></noscript></div>
 
 The selected share is highlighted, while every other eligible Baltic share is shown as an unlabelled transparent background point. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -5864,7 +5864,7 @@ The common explorer includes every eligible share, all funds and every portfolio
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-<div class="dividend-explorer" data-highlight="ROE1L" data-static="figures/return_dividend_all_portfolios.png?v=22987dcd1283"><noscript><img src="figures/return_dividend_all_portfolios.png?v=22987dcd1283" alt="ROE1L mean return and historical dividend yield with all portfolios"></noscript></div>
+<div class="dividend-explorer" data-source="interactive/dominance/LongDividends.json" data-highlight="ROE1L" data-static="figures/return_dividend_all_portfolios.png?v=22987dcd1283"><noscript><img src="figures/return_dividend_all_portfolios.png?v=22987dcd1283" alt="ROE1L mean return and historical dividend yield with all portfolios"></noscript></div>
 
 The selected share is highlighted, while every other eligible Baltic share is shown as an unlabelled transparent background point. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -6389,7 +6389,7 @@ The common explorer includes every eligible share, all funds and every portfolio
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-<div class="dividend-explorer" data-highlight="APG1L" data-static="figures/return_dividend_all_portfolios.png?v=22987dcd1283"><noscript><img src="figures/return_dividend_all_portfolios.png?v=22987dcd1283" alt="APG1L mean return and historical dividend yield with all portfolios"></noscript></div>
+<div class="dividend-explorer" data-source="interactive/dominance/LongDividends.json" data-highlight="APG1L" data-static="figures/return_dividend_all_portfolios.png?v=22987dcd1283"><noscript><img src="figures/return_dividend_all_portfolios.png?v=22987dcd1283" alt="APG1L mean return and historical dividend yield with all portfolios"></noscript></div>
 
 The selected share is highlighted, while every other eligible Baltic share is shown as an unlabelled transparent background point. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -6884,7 +6884,7 @@ The common explorer includes every eligible share, all funds and every portfolio
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-<div class="dividend-explorer" data-highlight="TKM1T" data-static="figures/return_dividend_all_portfolios.png?v=22987dcd1283"><noscript><img src="figures/return_dividend_all_portfolios.png?v=22987dcd1283" alt="TKM1T mean return and historical dividend yield with all portfolios"></noscript></div>
+<div class="dividend-explorer" data-source="interactive/dominance/LongDividends.json" data-highlight="TKM1T" data-static="figures/return_dividend_all_portfolios.png?v=22987dcd1283"><noscript><img src="figures/return_dividend_all_portfolios.png?v=22987dcd1283" alt="TKM1T mean return and historical dividend yield with all portfolios"></noscript></div>
 
 The selected share is highlighted, while every other eligible Baltic share is shown as an unlabelled transparent background point. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -7376,7 +7376,7 @@ The common explorer includes every eligible share, all funds and every portfolio
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-<div class="dividend-explorer" data-highlight="TSM1T" data-static="figures/return_dividend_all_portfolios.png?v=22987dcd1283"><noscript><img src="figures/return_dividend_all_portfolios.png?v=22987dcd1283" alt="TSM1T mean return and historical dividend yield with all portfolios"></noscript></div>
+<div class="dividend-explorer" data-source="interactive/dominance/LongDividends.json" data-highlight="TSM1T" data-static="figures/return_dividend_all_portfolios.png?v=22987dcd1283"><noscript><img src="figures/return_dividend_all_portfolios.png?v=22987dcd1283" alt="TSM1T mean return and historical dividend yield with all portfolios"></noscript></div>
 
 The selected share is highlighted, while every other eligible Baltic share is shown as an unlabelled transparent background point. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -7818,7 +7818,7 @@ The common explorer includes every eligible share, all funds and every portfolio
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-<div class="dividend-explorer" data-highlight="GRG1L" data-static="figures/return_dividend_all_portfolios.png?v=22987dcd1283"><noscript><img src="figures/return_dividend_all_portfolios.png?v=22987dcd1283" alt="GRG1L mean return and historical dividend yield with all portfolios"></noscript></div>
+<div class="dividend-explorer" data-source="interactive/dominance/LongDividends.json" data-highlight="GRG1L" data-static="figures/return_dividend_all_portfolios.png?v=22987dcd1283"><noscript><img src="figures/return_dividend_all_portfolios.png?v=22987dcd1283" alt="GRG1L mean return and historical dividend yield with all portfolios"></noscript></div>
 
 The selected share is highlighted, while every other eligible Baltic share is shown as an unlabelled transparent background point. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -8283,7 +8283,7 @@ The common explorer includes every eligible share, all funds and every portfolio
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-<div class="dividend-explorer" data-highlight="RSU1L" data-static="figures/return_dividend_all_portfolios.png?v=22987dcd1283"><noscript><img src="figures/return_dividend_all_portfolios.png?v=22987dcd1283" alt="RSU1L mean return and historical dividend yield with all portfolios"></noscript></div>
+<div class="dividend-explorer" data-source="interactive/dominance/LongDividends.json" data-highlight="RSU1L" data-static="figures/return_dividend_all_portfolios.png?v=22987dcd1283"><noscript><img src="figures/return_dividend_all_portfolios.png?v=22987dcd1283" alt="RSU1L mean return and historical dividend yield with all portfolios"></noscript></div>
 
 The selected share is highlighted, while every other eligible Baltic share is shown as an unlabelled transparent background point. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -8781,7 +8781,7 @@ The common explorer includes every eligible share, all funds and every portfolio
 <details markdown="1">
 <summary>Mean return and five-year average dividend yield versus all portfolios</summary>
 
-<div class="dividend-explorer" data-highlight="MRK1T" data-static="figures/return_dividend_all_portfolios.png?v=22987dcd1283"><noscript><img src="figures/return_dividend_all_portfolios.png?v=22987dcd1283" alt="MRK1T mean return and historical dividend yield with all portfolios"></noscript></div>
+<div class="dividend-explorer" data-source="interactive/dominance/LongDividends.json" data-highlight="MRK1T" data-static="figures/return_dividend_all_portfolios.png?v=22987dcd1283"><noscript><img src="figures/return_dividend_all_portfolios.png?v=22987dcd1283" alt="MRK1T mean return and historical dividend yield with all portfolios"></noscript></div>
 
 The selected share is highlighted, while every other eligible Baltic share is shown as an unlabelled transparent background point. The horizontal coordinate is the realised mean one-period return. The vertical coordinate is the five-year average annual historical dividend yield: each ex-dividend amount is divided by the latest available share price on or before that ex-dividend date, annual event yields are summed, and the five calendar years 2022–2026 are averaged including zero-payment years. Portfolio values are weight-averaged constituent yields. This is descriptive and is not a dividend forecast.
 
@@ -113515,7 +113515,7 @@ document.querySelectorAll('details.portfolio-sensitivity').forEach(function(sens
   });
 });
 
-const reportVersion='aac9fef6bc91';
+const reportVersion='986b3adb053b';
 const palette = ['#1b1b1b','#e41a1c','#377eb8','#4daf4a','#984ea3','#ff7f00','#a65628','#f781bf','#008080','#6a3d9a','#b2182b','#2166ac','#1b9e77','#d95f02'];
 const linePatterns = [[],[10,5],[2,4],[10,4,2,4],[14,5],[6,3],[2,3,8,3],[12,3,3,3]];
 function isExplorerVisible(box) {
@@ -113653,7 +113653,7 @@ function initialiseFrontierExplorer(box) {
     box.innerHTML=`<div class="frontier-controls">
       <label class="frontier-multiselect-wrap">Compare Current with portfolios and shares
         <select class="frontier-multiselect" multiple size="10">
-          <optgroup label="Portfolios">${[...preferred.filter(x=>portfolioNames.includes(x)),...portfolioNames.filter(x=>!preferred.includes(x))].map(x=>`<option value="${x}" ${['Current','Baltic_NetSD','curent_update_baltic','update2_penalty_sell','update2_penalty_no_sell','update3_funds_sell','update3_funds_no_sell','update3_stochastic_recourse_sell','update3_stochastic_no_sell','update3_stochastic_sell'].includes(x)?'selected':''}>${x}</option>`).join('')}</optgroup>
+          <optgroup label="Portfolios">${[...preferred.filter(x=>portfolioNames.includes(x)),...portfolioNames.filter(x=>!preferred.includes(x))].map(x=>`<option value="${x}" ${['Update long: gated recourse','Update long: no sales','Update long: gated sales both stages','Current','Baltic_NetSD','curent_update_baltic','update2_penalty_sell','update2_penalty_no_sell','update3_funds_sell','update3_funds_no_sell','update3_stochastic_recourse_sell','update3_stochastic_no_sell','update3_stochastic_sell'].includes(x)?'selected':''}>${x}</option>`).join('')}</optgroup>
           <optgroup label="Shares currently held">${shareNames.filter(x=>heldShares.has(x)).map(x=>`<option value="${x}" selected>${x}</option>`).join('')}</optgroup>
           <optgroup label="Other shares">${shareNames.filter(x=>!heldShares.has(x)&&!fundNames.includes(x)).map(x=>`<option value="${x}"${x===box.dataset.highlight?' selected':''}>${x}</option>`).join('')}</optgroup>
           <optgroup label="Funds">${fundNames.map(x=>`<option value="${x}"${x===box.dataset.highlight?' selected':''}>${x}</option>`).join('')}</optgroup>
