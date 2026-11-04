@@ -1,4 +1,4 @@
-<p><strong>Active history rule:</strong> 72 eligible assets; 1000 training observations (2022-05-20–2026-05-04) and 126 separate diagnostic observations (2026-05-05–2026-10-29). Short-history instruments are excluded from decisions and the dominance reference set. All 12 current holdings remain available. Fund NAV already includes ongoing fees.</p><p>126-day segment is a descriptive fixed-allocation diagnostic, not an independent strategy backtest: current forecast centres use data through their current origin. Frozen forecasts and prices retain their October 2026 origins; this change does not claim a new market-data download. The new canonical netSD reference network contains the 72 eligible assets and Current, with one training-derived denominator. Old comparison policies containing excluded holdings are not silently projected or backfilled. The S&amp;P 500 benchmark uses USD price returns; currency and dividend bases differ from EUR assets, and benchmark measures use only matching US trading dates.</p><p>Historical portfolio series apply constant origin-price weights to daily asset returns: they are hypothetical daily-rebalanced diagnostics, not realised account histories or buy-and-hold share-quantity backtests. The future scenario policy instead tracks integer holdings and cash through its two decision stages. — denotes a native R function that is undefined for the selected sample; no replacement ratio is invented.</p><a href="figures/long_history/asset_ROE1L.png" target="_blank" rel="noopener"><img loading="lazy" src="figures/long_history/asset_ROE1L.png?v=3219cb70c67d" alt="ROE1L full, training and four regime histograms" style="width:100%;height:auto"></a><p>Regime columns use training observations selected by retrospective market labels. Path-dependent measures describe the synthetic sequence of selected days, not actual performance through omitted dates.</p><table class="dataframe research-table long-history-table">
+<p><strong>Active history rule:</strong> 72 eligible assets; 1000 training observations (2022-05-24–2026-05-06) and 126 separate diagnostic observations (2026-05-07–2026-11-02). Short-history instruments are excluded from decisions and the dominance reference set. All 12 current holdings remain available. Fund NAV already includes ongoing fees.</p><p>126-day segment is a descriptive fixed-allocation diagnostic, not an independent strategy backtest: current forecast centres use data through their current origin. Official data refreshed 2026-11-04T10:23:25.172051+02:00: share closes through 2026-11-03; latest available EUR fund NAV dates 2026-11-02–2026-11-03. Each profile states its own observation date. Weekly models, joint scenarios, technical signals and allocations are refitted from this snapshot. The new canonical netSD reference network contains the 72 eligible assets and Current, with one training-derived denominator. Old comparison policies containing excluded holdings are not silently projected or backfilled. The S&amp;P 500 benchmark uses USD price returns; currency and dividend bases differ from EUR assets, and benchmark measures use only matching US trading dates.</p><p>Historical portfolio series apply constant origin-price weights to daily asset returns: they are hypothetical daily-rebalanced diagnostics, not realised account histories or buy-and-hold share-quantity backtests. The future scenario policy instead tracks integer holdings and cash through its two decision stages. — denotes a native R function that is undefined for the selected sample; no replacement ratio is invented.</p><p>Regime columns use training observations selected by retrospective market labels. Path-dependent measures describe the synthetic sequence of selected days, not actual performance through omitted dates. The 72 performance expressions use native PerformanceAnalytics. Eight share-liquidity statistics use native R mean, median and SD; turnover is estimated as close × reported volume, and unknown volumes are omitted rather than treated as zero.</p><table class="dataframe research-table long-history-table">
   <thead>
     <tr style="text-align: right;">
       <th>period</th>
@@ -16,98 +16,120 @@
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="ActiveReturn" data-meaning="Return above the benchmark." data-calculation="Rₚ − Rᵦ." data-interpretation="Higher is better.">ActiveReturn</button></td>
-      <td>-0.059993</td>
-      <td>-0.310672</td>
-      <td>-0.091975</td>
-      <td>-0.180630</td>
+      <td>-0.064307</td>
+      <td>-0.253135</td>
+      <td>-0.090200</td>
+      <td>-0.188837</td>
       <td>5.302214</td>
-      <td>-0.098794</td>
+      <td>-0.091629</td>
       <td>0.262995</td>
     </tr>
     <tr>
       <th></th>
+      <td><button type="button" class="metric-help-button" data-metric="ActiveTradingDayFraction" data-meaning="Share of observations with positive trading volume." data-calculation="Count(volume&gt;0)/n." data-interpretation="Higher is better.">ActiveTradingDayFraction</button></td>
+      <td>0.982000</td>
+      <td>0.984127</td>
+      <td>0.982238</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th></th>
       <td><button type="button" class="metric-help-button" data-metric="AdjustedSharpe" data-meaning="Sharpe ratio adjusted for skewness and kurtosis." data-calculation="Sharpe corrected with the third and fourth moments." data-interpretation="Higher is better; negative is poor.">AdjustedSharpe</button></td>
-      <td>0.558857</td>
-      <td>-0.289088</td>
-      <td>0.466490</td>
-      <td>0.652179</td>
+      <td>0.552349</td>
+      <td>0.335636</td>
+      <td>0.430561</td>
+      <td>0.641368</td>
       <td>-6.214296</td>
-      <td>-0.965669</td>
+      <td>-0.925934</td>
       <td>-1.310890</td>
     </tr>
     <tr>
       <th></th>
+      <td><button type="button" class="metric-help-button" data-metric="AmihudIlliquidityPerEUR1m" data-meaning="Absolute return generated per EUR 1 million of turnover." data-calculation="10⁶ × mean(|Rₜ| / turnoverₜ) on traded days." data-interpretation="Lower is better; high values indicate stronger price impact and poorer liquidity.">AmihudIlliquidityPerEUR1m</button></td>
+      <td>0.029714</td>
+      <td>0.023976</td>
+      <td>0.029071</td>
+      <td>0.026244</td>
+      <td>0.033651</td>
+      <td>0.043427</td>
+      <td>0.048199</td>
+    </tr>
+    <tr>
+      <th></th>
       <td><button type="button" class="metric-help-button" data-metric="AnnualizedReturn_Arithmetic" data-meaning="Annual return obtained from the average daily return." data-calculation="252 × mean(R)." data-interpretation="Higher is better, but ignores compounding.">AnnualizedReturn_Arithmetic</button></td>
-      <td>0.115610</td>
-      <td>-0.151326</td>
-      <td>0.085740</td>
-      <td>0.151641</td>
+      <td>0.112868</td>
+      <td>-0.205724</td>
+      <td>0.077217</td>
+      <td>0.154242</td>
       <td>1.918703</td>
-      <td>-0.288701</td>
+      <td>-0.327487</td>
       <td>-0.569027</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="AnnualizedReturn_Geometric" data-meaning="Compounded annual return." data-calculation="[∏(1+Rₜ)]^(252/n) − 1." data-interpretation="Higher is better.">AnnualizedReturn_Geometric</button></td>
-      <td>0.105745</td>
-      <td>-0.146053</td>
-      <td>0.074229</td>
-      <td>0.152602</td>
+      <td>0.102731</td>
+      <td>-0.191777</td>
+      <td>0.065050</td>
+      <td>0.155636</td>
       <td>5.132431</td>
-      <td>-0.265531</td>
+      <td>-0.293650</td>
       <td>-0.491111</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="Appraisal" data-meaning="Alpha per unit of asset-specific risk." data-calculation="CAPM alpha / specific risk." data-interpretation="Higher is better.">Appraisal</button></td>
-      <td>0.481751</td>
-      <td>-1.677060</td>
-      <td>0.295234</td>
-      <td>0.655941</td>
+      <td>0.463641</td>
+      <td>-1.931715</td>
+      <td>0.243000</td>
+      <td>0.667180</td>
       <td>2.333594</td>
-      <td>-1.156563</td>
+      <td>-1.281471</td>
       <td>-1.066157</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="ArithmeticReturn" data-meaning="Average one-period return." data-calculation="mean(Rₜ)." data-interpretation="Higher is better.">ArithmeticReturn</button></td>
-      <td>0.000459</td>
-      <td>-0.000601</td>
-      <td>0.000340</td>
-      <td>0.000602</td>
+      <td>0.000448</td>
+      <td>-0.000816</td>
+      <td>0.000306</td>
+      <td>0.000612</td>
       <td>0.007614</td>
-      <td>-0.001146</td>
+      <td>-0.001300</td>
       <td>-0.002258</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="AverageDrawdown" data-meaning="Average loss across drawdown episodes." data-calculation="Mean peak-to-trough drawdown." data-interpretation="Closer to zero is better.">AverageDrawdown</button></td>
       <td>0.043521</td>
-      <td>0.077936</td>
+      <td>0.100988</td>
       <td>0.043521</td>
       <td>0.028066</td>
       <td>0.055759</td>
-      <td>0.205081</td>
+      <td>0.210991</td>
       <td>0.136730</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="AverageDrawdownLength" data-meaning="Average duration of drawdown episodes." data-calculation="Mean number of periods from peak to recovery/end." data-interpretation="Lower is better.">AverageDrawdownLength</button></td>
-      <td>53.777778</td>
-      <td>123.000000</td>
-      <td>60.777778</td>
-      <td>26.703704</td>
+      <td>53.888889</td>
+      <td>125.000000</td>
+      <td>60.888889</td>
+      <td>26.777778</td>
       <td>8.500000</td>
-      <td>158.000000</td>
+      <td>157.000000</td>
       <td>20.000000</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="AverageRecoveryTime" data-meaning="Average time needed to recover from a trough." data-calculation="Mean periods from trough back to the prior peak." data-interpretation="Lower is better.">AverageRecoveryTime</button></td>
-      <td>30.555556</td>
-      <td>1.000000</td>
-      <td>37.555556</td>
-      <td>9.407407</td>
+      <td>30.666667</td>
+      <td>2.000000</td>
+      <td>37.666667</td>
+      <td>9.481481</td>
       <td>4.000000</td>
       <td>11.000000</td>
       <td>4.000000</td>
@@ -115,89 +137,89 @@
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="BernardoLedoit" data-meaning="Gain-loss ratio based on positive and negative returns." data-calculation="E[max(R,0)] / E[max(−R,0)]." data-interpretation="Higher is better; above 1 means gains dominate losses.">BernardoLedoit</button></td>
-      <td>1.149259</td>
-      <td>0.763636</td>
-      <td>1.112886</td>
-      <td>1.249607</td>
+      <td>1.145718</td>
+      <td>0.701947</td>
+      <td>1.100921</td>
+      <td>1.254889</td>
       <td>2.381142</td>
-      <td>0.776376</td>
+      <td>0.751119</td>
       <td>0.830533</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="BetaCoKurtosis" data-meaning="Sensitivity to joint extreme movements with the benchmark." data-calculation="Fourth-order co-moment scaled by benchmark co-kurtosis." data-interpretation="Lower absolute exposure is usually safer.">BetaCoKurtosis</button></td>
-      <td>-0.097717</td>
-      <td>0.034033</td>
-      <td>-0.096000</td>
-      <td>0.153347</td>
+      <td>-0.097792</td>
+      <td>0.125694</td>
+      <td>-0.095119</td>
+      <td>0.153166</td>
       <td>0.596013</td>
-      <td>0.134400</td>
+      <td>0.134996</td>
       <td>-0.213619</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="BetaCoSkewness" data-meaning="Sensitivity to asymmetric joint movements with the benchmark." data-calculation="Third-order co-moment scaled by benchmark co-skewness." data-interpretation="Positive is generally preferable.">BetaCoSkewness</button></td>
-      <td>-0.882124</td>
-      <td>0.022079</td>
-      <td>-0.886307</td>
-      <td>0.771446</td>
+      <td>-0.889175</td>
+      <td>0.497436</td>
+      <td>-0.896056</td>
+      <td>0.748364</td>
       <td>-2.438738</td>
-      <td>0.418882</td>
+      <td>0.418757</td>
       <td>-0.417602</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="Burke" data-meaning="Return relative to several largest drawdowns." data-calculation="Excess return / root-sum-square of drawdowns." data-interpretation="Higher is better.">Burke</button></td>
-      <td>0.331373</td>
-      <td>-1.757292</td>
-      <td>0.225103</td>
-      <td>0.754142</td>
+      <td>0.322294</td>
+      <td>-1.921061</td>
+      <td>0.194750</td>
+      <td>0.769135</td>
       <td>4.286321</td>
-      <td>-1.461496</td>
+      <td>-1.621967</td>
       <td>-3.635864</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="CAPMAlpha" data-meaning="Return unexplained by market exposure." data-calculation="mean(Rₚ−R𝒻) − β mean(Rᵦ−R𝒻)." data-interpretation="Higher is better.">CAPMAlpha</button></td>
-      <td>0.000374</td>
-      <td>-0.000780</td>
-      <td>0.000245</td>
-      <td>0.000382</td>
+      <td>0.000362</td>
+      <td>-0.000972</td>
+      <td>0.000212</td>
+      <td>0.000388</td>
       <td>0.007974</td>
-      <td>-0.000981</td>
+      <td>-0.001122</td>
       <td>-0.002244</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="CAPMBeta" data-meaning="Sensitivity to benchmark movements." data-calculation="Cov(Rₚ,Rᵦ) / Var(Rᵦ)." data-interpretation="Above 1 means greater market sensitivity; below 1 means lower.">CAPMBeta</button></td>
-      <td>0.107474</td>
-      <td>0.107665</td>
-      <td>0.107598</td>
-      <td>0.151034</td>
+      <td>0.107255</td>
+      <td>0.162703</td>
+      <td>0.111248</td>
+      <td>0.151171</td>
       <td>0.520863</td>
-      <td>0.094996</td>
+      <td>0.092265</td>
       <td>0.002817</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="CDD" data-meaning="Conditional drawdown at risk." data-calculation="Mean of drawdowns beyond the selected drawdown quantile." data-interpretation="Closer to zero is better.">CDD</button></td>
-      <td>0.172667</td>
-      <td>0.074040</td>
-      <td>0.172667</td>
+      <td>0.173867</td>
+      <td>0.095939</td>
+      <td>0.173867</td>
       <td>0.086492</td>
       <td>0.083010</td>
-      <td>0.194827</td>
+      <td>0.210991</td>
       <td>0.129894</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="Calmar" data-meaning="Annual return per unit of maximum drawdown." data-calculation="Annualised return / |maximum drawdown|." data-interpretation="Higher is better.">Calmar</button></td>
-      <td>0.505957</td>
-      <td>-1.874007</td>
-      <td>0.355165</td>
-      <td>1.020746</td>
+      <td>0.491535</td>
+      <td>-1.899012</td>
+      <td>0.311242</td>
+      <td>1.041040</td>
       <td>50.726912</td>
-      <td>-1.294759</td>
+      <td>-1.391764</td>
       <td>-3.591825</td>
     </tr>
     <tr>
@@ -225,31 +247,31 @@
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="CumulativeReturn" data-meaning="Total compounded return over the displayed period." data-calculation="∏(1+Rₜ) − 1." data-interpretation="Higher is better.">CumulativeReturn</button></td>
-      <td>0.490164</td>
-      <td>-0.075908</td>
-      <td>0.377049</td>
-      <td>0.535544</td>
+      <td>0.474110</td>
+      <td>-0.100988</td>
+      <td>0.325243</td>
+      <td>0.550450</td>
       <td>0.163151</td>
-      <td>-0.176932</td>
+      <td>-0.193627</td>
       <td>-0.054739</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="DRatio" data-meaning="Balance between cumulative losses and gains." data-calculation="Downside return contribution / upside return contribution." data-interpretation="Lower is better.">DRatio</button></td>
-      <td>0.947516</td>
-      <td>1.656948</td>
-      <td>0.995185</td>
-      <td>0.868627</td>
+      <td>0.950445</td>
+      <td>1.909583</td>
+      <td>1.012308</td>
+      <td>0.856837</td>
       <td>0.314975</td>
-      <td>1.619802</td>
+      <td>1.753996</td>
       <td>1.094588</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="DownCapture" data-meaning="Performance when the benchmark declines." data-calculation="Portfolio compound return / benchmark compound return on down-market days." data-interpretation="Lower is normally better when both returns are negative.">DownCapture</button></td>
       <td>0.106775</td>
-      <td>0.263669</td>
-      <td>0.120926</td>
+      <td>0.317559</td>
+      <td>0.127010</td>
       <td>0.094182</td>
       <td>-1.010662</td>
       <td>0.159815</td>
@@ -259,8 +281,8 @@
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="DownNumber" data-meaning="Number of negative-return observations." data-calculation="Count(Rₜ &lt; 0)." data-interpretation="Lower is better, conditional on similar return.">DownNumber</button></td>
       <td>0.513453</td>
-      <td>0.566667</td>
-      <td>0.519763</td>
+      <td>0.564516</td>
+      <td>0.519685</td>
       <td>0.520505</td>
       <td>0.333333</td>
       <td>0.554217</td>
@@ -270,8 +292,8 @@
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="DownPercent" data-meaning="Fraction of observations with negative return." data-calculation="Count(Rₜ&lt;0)/n." data-interpretation="Lower is better.">DownPercent</button></td>
       <td>0.764574</td>
-      <td>0.683333</td>
-      <td>0.754941</td>
+      <td>0.677419</td>
+      <td>0.753937</td>
       <td>0.753943</td>
       <td>0.666667</td>
       <td>0.795181</td>
@@ -281,30 +303,30 @@
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="DownsideDeviation" data-meaning="Volatility below the minimum acceptable return." data-calculation="Root mean squared shortfall below MAR." data-interpretation="Lower is better.">DownsideDeviation</button></td>
       <td>0.006926</td>
-      <td>0.005657</td>
-      <td>0.006796</td>
-      <td>0.005243</td>
+      <td>0.006080</td>
+      <td>0.006837</td>
+      <td>0.005232</td>
       <td>0.011019</td>
-      <td>0.009432</td>
+      <td>0.009523</td>
       <td>0.022065</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="DrawdownDeviation" data-meaning="Variability of drawdowns." data-calculation="Standard deviation of the drawdown series." data-interpretation="Lower is better.">DrawdownDeviation</button></td>
       <td>0.010724</td>
-      <td>0.006943</td>
+      <td>0.008997</td>
       <td>0.010106</td>
-      <td>0.009197</td>
+      <td>0.009179</td>
       <td>0.022194</td>
-      <td>0.016264</td>
+      <td>0.016893</td>
       <td>0.029837</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="ES_Loss" data-meaning="Average loss in the worst 5% of observations." data-calculation="Mean loss conditional on loss ≥ 95% VaR." data-interpretation="Lower is better.">ES_Loss</button></td>
       <td>0.023896</td>
-      <td>0.015423</td>
-      <td>0.023132</td>
+      <td>0.017713</td>
+      <td>0.023355</td>
       <td>0.016628</td>
       <td>0.028885</td>
       <td>0.029817</td>
@@ -313,229 +335,273 @@
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="FamaBeta" data-meaning="Beta estimated using Fama decomposition." data-calculation="Systematic risk divided by benchmark risk under the decomposition." data-interpretation="Lower means less systematic exposure.">FamaBeta</button></td>
-      <td>1.044438</td>
-      <td>0.934367</td>
-      <td>1.038748</td>
-      <td>1.145156</td>
+      <td>1.044358</td>
+      <td>0.970097</td>
+      <td>1.040709</td>
+      <td>1.142302</td>
       <td>2.974862</td>
-      <td>0.785417</td>
+      <td>0.786052</td>
       <td>0.967487</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="GeometricReturn" data-meaning="Average compounded one-period return." data-calculation="[∏(1+Rₜ)]^(1/n) − 1." data-interpretation="Higher is better.">GeometricReturn</button></td>
-      <td>0.000399</td>
-      <td>-0.000626</td>
-      <td>0.000284</td>
-      <td>0.000564</td>
+      <td>0.000388</td>
+      <td>-0.000845</td>
+      <td>0.000250</td>
+      <td>0.000574</td>
       <td>0.007223</td>
-      <td>-0.001224</td>
+      <td>-0.001379</td>
       <td>-0.002677</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="Hurst" data-meaning="Persistence of the return process." data-calculation="Hurst exponent estimated from rescaled behaviour." data-interpretation="Near 0.5 suggests no persistence; above 0.5 persistence; below 0.5 mean reversion.">Hurst</button></td>
-      <td>0.396234</td>
-      <td>0.481948</td>
-      <td>0.394217</td>
-      <td>0.406580</td>
+      <td>0.396291</td>
+      <td>0.472988</td>
+      <td>0.393914</td>
+      <td>0.406574</td>
       <td>0.520920</td>
-      <td>0.431300</td>
+      <td>0.431902</td>
       <td>0.383167</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="Information_Annualized" data-meaning="Annualised active return per unit of tracking error." data-calculation="Annualised active return / annualised tracking error." data-interpretation="Higher is better.">Information_Annualized</button></td>
-      <td>-0.260701</td>
-      <td>-2.004743</td>
-      <td>-0.412460</td>
-      <td>-1.050602</td>
+      <td>-0.279520</td>
+      <td>-1.641595</td>
+      <td>-0.404738</td>
+      <td>-1.099219</td>
       <td>11.432430</td>
-      <td>-0.323494</td>
+      <td>-0.297951</td>
       <td>0.389669</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="Information_Daily" data-meaning="Daily active return per unit of tracking error." data-calculation="mean(Rₚ−Rᵦ) / sd(Rₚ−Rᵦ)." data-interpretation="Higher is better.">Information_Daily</button></td>
-      <td>-0.014526</td>
-      <td>-0.129444</td>
-      <td>-0.023370</td>
-      <td>-0.054002</td>
+      <td>-0.015588</td>
+      <td>-0.114435</td>
+      <td>-0.023146</td>
+      <td>-0.056178</td>
       <td>0.272484</td>
-      <td>-0.025298</td>
+      <td>-0.024285</td>
       <td>0.067607</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="JensenAlpha" data-meaning="CAPM risk-adjusted excess return." data-calculation="Rₚ − [R𝒻 + β(Rᵦ−R𝒻)]." data-interpretation="Higher is better.">JensenAlpha</button></td>
-      <td>0.084047</td>
-      <td>-0.186580</td>
-      <td>0.049800</td>
-      <td>0.090251</td>
+      <td>0.080856</td>
+      <td>-0.223195</td>
+      <td>0.041063</td>
+      <td>0.091645</td>
       <td>0.473496</td>
-      <td>-0.229792</td>
+      <td>-0.256109</td>
       <td>-0.488987</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="Kappa" data-meaning="Return above MAR per unit of lower partial moment risk." data-calculation="[mean(R)−MAR] / LPMₙ^(1/n)." data-interpretation="Higher is better.">Kappa</button></td>
-      <td>0.041309</td>
-      <td>-0.059781</td>
-      <td>0.030939</td>
-      <td>0.069827</td>
+      <td>0.040329</td>
+      <td>-0.078203</td>
+      <td>0.027767</td>
+      <td>0.071118</td>
       <td>0.522116</td>
-      <td>-0.083996</td>
+      <td>-0.094678</td>
       <td>-0.083632</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="Kelly" data-meaning="Approximate growth-optimal risky allocation." data-calculation="Expected excess return / variance under the quadratic approximation." data-interpretation="Higher implies a larger theoretical allocation; unstable extreme values require caution.">Kelly</button></td>
-      <td>3.800076</td>
-      <td>-11.635539</td>
-      <td>3.009587</td>
-      <td>7.857359</td>
+      <td>3.712848</td>
+      <td>-14.505036</td>
+      <td>2.698911</td>
+      <td>8.017065</td>
       <td>8.878054</td>
-      <td>-7.291332</td>
+      <td>-8.185792</td>
       <td>-2.576248</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="Kurtosis" data-meaning="Tail thickness relative to a normal distribution." data-calculation="Standardised fourth central moment." data-interpretation="Higher means more extreme-tail risk.">Kurtosis</button></td>
-      <td>18.870010</td>
-      <td>18.807324</td>
-      <td>19.616050</td>
-      <td>14.858543</td>
+      <td>18.904045</td>
+      <td>16.516332</td>
+      <td>19.492070</td>
+      <td>14.888281</td>
       <td>8.472379</td>
-      <td>7.004514</td>
+      <td>6.986635</td>
       <td>1.839199</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="M2Sortino" data-meaning="Sortino ratio translated into return units." data-calculation="Risk-free return plus Sortino × benchmark downside deviation." data-interpretation="Higher is better.">M2Sortino</button></td>
-      <td>0.101539</td>
-      <td>-0.170452</td>
-      <td>0.066954</td>
-      <td>0.137743</td>
+      <td>0.098441</td>
+      <td>-0.215593</td>
+      <td>0.057535</td>
+      <td>0.140884</td>
       <td>0.432533</td>
-      <td>-0.246737</td>
+      <td>-0.276505</td>
       <td>-0.489716</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="MSquaredExcess" data-meaning="M² return advantage over the benchmark." data-calculation="Modigliani measure − benchmark return." data-interpretation="Higher is better.">MSquaredExcess</button></td>
-      <td>-0.055371</td>
-      <td>-0.283325</td>
-      <td>-0.081520</td>
-      <td>-0.150241</td>
+      <td>-0.058904</td>
+      <td>-0.250865</td>
+      <td>-0.080552</td>
+      <td>-0.155195</td>
       <td>0.197684</td>
-      <td>-0.193314</td>
+      <td>-0.202597</td>
       <td>1.002425</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="Martin" data-meaning="Return per unit of ulcer-index risk." data-calculation="Excess return / Ulcer Index." data-interpretation="Higher is better.">Martin</button></td>
-      <td>1.009719</td>
-      <td>-5.106988</td>
-      <td>0.717205</td>
-      <td>2.394730</td>
+      <td>0.980531</td>
+      <td>-6.108129</td>
+      <td>0.627013</td>
+      <td>2.430005</td>
       <td>8.318604</td>
-      <td>-2.040238</td>
+      <td>-2.144410</td>
       <td>-5.579555</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="MaximumDrawdown" data-meaning="Largest historical peak-to-trough loss." data-calculation="min(wealth/running maximum − 1)." data-interpretation="Closer to zero is better.">MaximumDrawdown</button></td>
       <td>0.209000</td>
-      <td>0.077936</td>
+      <td>0.100988</td>
       <td>0.209000</td>
       <td>0.149501</td>
       <td>0.101178</td>
-      <td>0.205081</td>
+      <td>0.210991</td>
       <td>0.136730</td>
     </tr>
     <tr>
       <th></th>
+      <td><button type="button" class="metric-help-button" data-metric="MeanDailyTurnoverEUR" data-meaning="Average daily traded value." data-calculation="Mean(price × volume) in EUR." data-interpretation="Higher is better, but is sensitive to exceptional days.">MeanDailyTurnoverEUR</button></td>
+      <td>256936.932080</td>
+      <td>205489.213952</td>
+      <td>251179.905007</td>
+      <td>246169.152757</td>
+      <td>502491.501667</td>
+      <td>248780.889231</td>
+      <td>513572.827429</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><button type="button" class="metric-help-button" data-metric="MeanDailyVolume" data-meaning="Average number of shares traded per day." data-calculation="Mean daily official volume." data-interpretation="Higher is better, but can be inflated by a few large trades.">MeanDailyVolume</button></td>
+      <td>344673.253000</td>
+      <td>232174.666667</td>
+      <td>332084.601243</td>
+      <td>324638.812827</td>
+      <td>684067.857143</td>
+      <td>373083.051282</td>
+      <td>620691.142857</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><button type="button" class="metric-help-button" data-metric="MedianDailyTurnoverEUR" data-meaning="Typical daily traded value." data-calculation="Median(price × volume) in EUR." data-interpretation="Higher is better for execution liquidity.">MedianDailyTurnoverEUR</button></td>
+      <td>186382.146000</td>
+      <td>158340.708000</td>
+      <td>182998.873000</td>
+      <td>179625.076000</td>
+      <td>401856.580000</td>
+      <td>195036.489000</td>
+      <td>464221.881000</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><button type="button" class="metric-help-button" data-metric="MedianDailyVolume" data-meaning="Typical number of shares traded per day." data-calculation="Median daily official volume." data-interpretation="Higher is better for execution liquidity.">MedianDailyVolume</button></td>
+      <td>259233.000000</td>
+      <td>179219.000000</td>
+      <td>247272.500000</td>
+      <td>237782.500000</td>
+      <td>508915.000000</td>
+      <td>308817.000000</td>
+      <td>534851.000000</td>
+    </tr>
+    <tr>
+      <th></th>
       <td><button type="button" class="metric-help-button" data-metric="Modigliani" data-meaning="Sharpe performance translated to benchmark volatility." data-calculation="R𝒻 + Sharpeₚ × volatilityᵦ." data-interpretation="Higher is better.">Modigliani</button></td>
-      <td>0.000425</td>
-      <td>-0.000772</td>
-      <td>0.000302</td>
-      <td>0.000483</td>
+      <td>0.000414</td>
+      <td>-0.000974</td>
+      <td>0.000268</td>
+      <td>0.000493</td>
       <td>0.002559</td>
-      <td>-0.001308</td>
+      <td>-0.001505</td>
       <td>-0.002334</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="NetSelectivity" data-meaning="Selection return after diversification adjustment." data-calculation="Selectivity minus diversification contribution." data-interpretation="Higher is better.">NetSelectivity</button></td>
-      <td>-0.067165</td>
-      <td>-0.301544</td>
-      <td>-0.098131</td>
-      <td>-0.226945</td>
+      <td>-0.071520</td>
+      <td>-0.252066</td>
+      <td>-0.096213</td>
+      <td>-0.235859</td>
       <td>0.565931</td>
-      <td>-0.129855</td>
+      <td>-0.130396</td>
       <td>0.238476</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="Omega" data-meaning="Probability-weighted gains relative to losses at a threshold." data-calculation="Integral above threshold / integral below threshold." data-interpretation="Higher is better; above 1 is favourable.">Omega</button></td>
-      <td>1.149259</td>
-      <td>0.763636</td>
-      <td>1.112886</td>
-      <td>1.249607</td>
+      <td>1.145718</td>
+      <td>0.701947</td>
+      <td>1.100921</td>
+      <td>1.254889</td>
       <td>2.381142</td>
-      <td>0.776376</td>
+      <td>0.751119</td>
       <td>0.830533</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="OmegaExcessReturn" data-meaning="Excess return adjusted by Omega downside structure." data-calculation="Excess return expressed through the Omega function." data-interpretation="Higher is better.">OmegaExcessReturn</button></td>
-      <td>0.063627</td>
-      <td>-0.193897</td>
-      <td>0.030839</td>
-      <td>0.118944</td>
+      <td>0.060532</td>
+      <td>-0.242630</td>
+      <td>0.021099</td>
+      <td>0.122178</td>
       <td>0.442297</td>
-      <td>-0.324731</td>
+      <td>-0.355619</td>
       <td>-0.844853</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="PainIndex" data-meaning="Average depth of all drawdowns." data-calculation="Mean absolute percentage drawdown." data-interpretation="Lower is better.">PainIndex</button></td>
-      <td>0.084000</td>
-      <td>0.025206</td>
-      <td>0.084917</td>
-      <td>0.046301</td>
+      <td>0.084135</td>
+      <td>0.026838</td>
+      <td>0.085218</td>
+      <td>0.046506</td>
       <td>0.037239</td>
-      <td>0.119397</td>
+      <td>0.126585</td>
       <td>0.079901</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="PainRatio" data-meaning="Return earned per unit of average drawdown pain." data-calculation="Excess return / Pain Index." data-interpretation="Higher is better.">PainRatio</button></td>
-      <td>1.258863</td>
-      <td>-5.794457</td>
-      <td>0.874142</td>
-      <td>3.295902</td>
+      <td>1.221018</td>
+      <td>-7.145701</td>
+      <td>0.763328</td>
+      <td>3.346582</td>
       <td>12.188090</td>
-      <td>-2.223931</td>
+      <td>-2.319795</td>
       <td>-6.146529</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="Prospect" data-meaning="Behavioural value of gains and losses." data-calculation="Probability-weighted prospect utility with losses penalised more strongly." data-interpretation="Higher is better.">Prospect</button></td>
-      <td>-0.488456</td>
-      <td>-0.667533</td>
-      <td>-0.504288</td>
-      <td>-0.460021</td>
+      <td>-0.490027</td>
+      <td>-0.697430</td>
+      <td>-0.510291</td>
+      <td>-0.456693</td>
       <td>0.065607</td>
-      <td>-0.800376</td>
+      <td>-0.821885</td>
       <td>-0.857173</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="Rachev" data-meaning="Extreme gains relative to extreme losses." data-calculation="Upper-tail expected return / lower-tail expected loss." data-interpretation="Higher is better; above 1 means the selected upper tail exceeds the lower tail.">Rachev</button></td>
       <td>1.246583</td>
-      <td>0.988098</td>
-      <td>1.229590</td>
+      <td>0.856365</td>
+      <td>1.219219</td>
       <td>1.420436</td>
       <td>1.900113</td>
       <td>0.891489</td>
@@ -544,266 +610,288 @@
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="Selectivity" data-meaning="Return attributed to security selection." data-calculation="Portfolio return minus return implied by systematic risk." data-interpretation="Higher is better.">Selectivity</button></td>
-      <td>0.084047</td>
-      <td>-0.186580</td>
-      <td>0.049800</td>
-      <td>0.090251</td>
+      <td>0.080856</td>
+      <td>-0.223195</td>
+      <td>0.041063</td>
+      <td>0.091645</td>
       <td>0.473496</td>
-      <td>-0.229792</td>
+      <td>-0.256109</td>
       <td>-0.488987</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="Sharpe_Annualized" data-meaning="Annual excess return per unit of annual volatility." data-calculation="Annualised excess return / annualised SD." data-interpretation="Higher is better.">Sharpe_Annualized</button></td>
-      <td>0.662818</td>
-      <td>-1.326937</td>
-      <td>0.507978</td>
-      <td>1.091558</td>
+      <td>0.647349</td>
+      <td>-1.727437</td>
+      <td>0.456510</td>
+      <td>1.112010</td>
       <td>4.127268</td>
-      <td>-1.450868</td>
+      <td>-1.637297</td>
       <td>-1.210766</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="Sharpe_Daily" data-meaning="Daily excess return per unit of daily volatility." data-calculation="mean(R−R𝒻) / sd(R−R𝒻)." data-interpretation="Higher is better.">Sharpe_Daily</button></td>
-      <td>0.041754</td>
-      <td>-0.083589</td>
-      <td>0.032000</td>
-      <td>0.068762</td>
+      <td>0.040779</td>
+      <td>-0.108818</td>
+      <td>0.028757</td>
+      <td>0.070050</td>
       <td>0.259993</td>
-      <td>-0.091396</td>
+      <td>-0.103140</td>
       <td>-0.076271</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="Sharpe_ES" data-meaning="Excess return per unit of expected shortfall." data-calculation="Mean excess return / ES loss." data-interpretation="Higher is better.">Sharpe_ES</button></td>
-      <td>0.019198</td>
-      <td>-0.038936</td>
-      <td>0.014709</td>
-      <td>0.036189</td>
+      <td>0.018743</td>
+      <td>-0.046089</td>
+      <td>0.013120</td>
+      <td>0.036810</td>
       <td>0.263592</td>
-      <td>-0.038422</td>
+      <td>-0.043584</td>
       <td>-0.046310</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="Sharpe_VaR" data-meaning="Excess return per unit of value at risk." data-calculation="Mean excess return / VaR loss." data-interpretation="Higher is better.">Sharpe_VaR</button></td>
-      <td>0.035936</td>
-      <td>-0.067012</td>
-      <td>0.027705</td>
-      <td>0.059831</td>
+      <td>0.035084</td>
+      <td>-0.090411</td>
+      <td>0.024842</td>
+      <td>0.061012</td>
       <td>0.298972</td>
-      <td>-0.057380</td>
+      <td>-0.064911</td>
       <td>-0.048651</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="Skewness" data-meaning="Asymmetry of returns." data-calculation="Standardised third central moment." data-interpretation="More positive is generally preferable.">Skewness</button></td>
-      <td>1.209914</td>
-      <td>-1.707241</td>
-      <td>1.145471</td>
-      <td>1.023500</td>
+      <td>1.213680</td>
+      <td>-1.688933</td>
+      <td>1.135101</td>
+      <td>1.021349</td>
       <td>2.003889</td>
-      <td>-0.069527</td>
+      <td>-0.039663</td>
       <td>-0.058432</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="Sortino" data-meaning="Excess return per unit of downside risk." data-calculation="Mean(R−MAR) / downside deviation." data-interpretation="Higher is better.">Sortino</button></td>
-      <td>0.066234</td>
-      <td>-0.106152</td>
-      <td>0.050063</td>
-      <td>0.114779</td>
+      <td>0.064663</td>
+      <td>-0.134279</td>
+      <td>0.044818</td>
+      <td>0.116978</td>
       <td>0.690952</td>
-      <td>-0.121458</td>
+      <td>-0.136469</td>
       <td>-0.102336</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="SpecificRisk" data-meaning="Risk not explained by the benchmark." data-calculation="Residual volatility from the market regression." data-interpretation="Lower is safer, although it may reflect diversifiable opportunity.">SpecificRisk</button></td>
-      <td>0.174461</td>
-      <td>0.111254</td>
-      <td>0.168678</td>
-      <td>0.137590</td>
+      <td>0.174394</td>
+      <td>0.115542</td>
+      <td>0.168984</td>
+      <td>0.137362</td>
       <td>0.202904</td>
-      <td>0.198685</td>
+      <td>0.199856</td>
       <td>0.458644</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="Sterling" data-meaning="Return relative to drawdown risk." data-calculation="Annualised excess return / average or adjusted maximum drawdown." data-interpretation="Higher is better.">Sterling</button></td>
-      <td>0.342217</td>
-      <td>-0.820817</td>
-      <td>0.240225</td>
-      <td>0.611630</td>
+      <td>0.332462</td>
+      <td>-0.954173</td>
+      <td>0.210517</td>
+      <td>0.623790</td>
       <td>25.511931</td>
-      <td>-0.870361</td>
+      <td>-0.944239</td>
       <td>-2.074561</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="SystematicRisk" data-meaning="Risk explained by benchmark exposure." data-calculation="β² Var(Rᵦ), or its square-root form under the implementation." data-interpretation="Lower is safer; higher means more market-driven risk.">SystematicRisk</button></td>
-      <td>0.018057</td>
-      <td>0.012959</td>
-      <td>0.017575</td>
-      <td>0.018319</td>
+      <td>0.018015</td>
+      <td>0.019738</td>
+      <td>0.018176</td>
+      <td>0.018352</td>
       <td>0.081396</td>
-      <td>0.024287</td>
+      <td>0.023700</td>
       <td>0.001369</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="TotalRisk" data-meaning="Total return variability." data-calculation="Standard deviation or variance-based total risk used by the decomposition." data-interpretation="Lower is safer.">TotalRisk</button></td>
-      <td>0.175393</td>
-      <td>0.112006</td>
-      <td>0.169591</td>
-      <td>0.138804</td>
+      <td>0.175322</td>
+      <td>0.117216</td>
+      <td>0.169959</td>
+      <td>0.138582</td>
       <td>0.206245</td>
-      <td>0.200164</td>
+      <td>0.201256</td>
       <td>0.458646</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="TrackingError_Annualized" data-meaning="Annualised volatility of returns relative to the benchmark." data-calculation="sd(Rₚ−Rᵦ) × √252." data-interpretation="Lower means closer benchmark tracking.">TrackingError_Annualized</button></td>
-      <td>0.230121</td>
-      <td>0.154968</td>
-      <td>0.222992</td>
-      <td>0.171930</td>
+      <td>0.230063</td>
+      <td>0.154201</td>
+      <td>0.222861</td>
+      <td>0.171792</td>
       <td>0.463787</td>
-      <td>0.305398</td>
+      <td>0.307530</td>
       <td>0.674917</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="TrackingError_Daily" data-meaning="Daily volatility of active returns." data-calculation="sd(Rₚ−Rᵦ)." data-interpretation="Lower means closer benchmark tracking.">TrackingError_Daily</button></td>
-      <td>0.014496</td>
-      <td>0.009762</td>
-      <td>0.014047</td>
-      <td>0.010831</td>
+      <td>0.014493</td>
+      <td>0.009714</td>
+      <td>0.014039</td>
+      <td>0.010822</td>
       <td>0.029216</td>
-      <td>0.019238</td>
+      <td>0.019373</td>
       <td>0.042516</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="Treynor_Annualized" data-meaning="Annual excess return per unit of beta." data-calculation="Annualised excess return / β." data-interpretation="Higher is better when beta is meaningful.">Treynor_Annualized</button></td>
-      <td>0.943405</td>
-      <td>-1.593900</td>
-      <td>0.621697</td>
-      <td>0.916627</td>
+      <td>0.916476</td>
+      <td>-1.336033</td>
+      <td>0.516807</td>
+      <td>0.936667</td>
       <td>9.853713</td>
-      <td>-2.563703</td>
+      <td>-2.957005</td>
       <td>-174.310364</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="Treynor_Daily" data-meaning="Daily excess return per unit of beta." data-calculation="Mean daily excess return / β." data-interpretation="Higher is better.">Treynor_Daily</button></td>
-      <td>0.003566</td>
-      <td>-0.006936</td>
-      <td>0.002388</td>
-      <td>0.003408</td>
+      <td>0.003470</td>
+      <td>-0.005975</td>
+      <td>0.001994</td>
+      <td>0.003477</td>
       <td>0.013867</td>
-      <td>-0.011653</td>
+      <td>-0.013694</td>
       <td>-0.950173</td>
     </tr>
     <tr>
       <th></th>
+      <td><button type="button" class="metric-help-button" data-metric="TurnoverCoefficientVariation" data-meaning="Instability of daily traded value." data-calculation="SD(turnover) / mean(turnover)." data-interpretation="Lower is more stable; high values mean liquidity is episodic.">TurnoverCoefficientVariation</button></td>
+      <td>0.990113</td>
+      <td>0.681120</td>
+      <td>0.974455</td>
+      <td>0.968313</td>
+      <td>0.827444</td>
+      <td>0.651000</td>
+      <td>0.622987</td>
+    </tr>
+    <tr>
+      <th></th>
       <td><button type="button" class="metric-help-button" data-metric="UlcerIndex" data-meaning="Depth and duration of drawdowns." data-calculation="Root mean square percentage drawdown." data-interpretation="Lower is better.">UlcerIndex</button></td>
-      <td>0.104727</td>
-      <td>0.028599</td>
-      <td>0.103498</td>
-      <td>0.063724</td>
+      <td>0.104771</td>
+      <td>0.031397</td>
+      <td>0.103745</td>
+      <td>0.064048</td>
       <td>0.054562</td>
-      <td>0.130147</td>
+      <td>0.136938</td>
       <td>0.088020</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="UpCapture" data-meaning="Performance when the benchmark rises." data-calculation="Portfolio compound return / benchmark compound return on up-market days." data-interpretation="Higher is better.">UpCapture</button></td>
-      <td>0.199289</td>
-      <td>-0.004811</td>
-      <td>0.180707</td>
-      <td>0.221047</td>
+      <td>0.196317</td>
+      <td>-0.011040</td>
+      <td>0.178451</td>
+      <td>0.222333</td>
       <td>1.082512</td>
-      <td>0.005669</td>
+      <td>-0.016318</td>
       <td>0.587967</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="UpNumber" data-meaning="Number of positive-return observations." data-calculation="Count(Rₜ &gt; 0)." data-interpretation="Higher is generally better.">UpNumber</button></td>
       <td>0.471374</td>
-      <td>0.451613</td>
-      <td>0.469283</td>
-      <td>0.463007</td>
+      <td>0.433333</td>
+      <td>0.467466</td>
+      <td>0.466825</td>
       <td>0.444444</td>
-      <td>0.500000</td>
+      <td>0.478261</td>
       <td>0.875000</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="UpPercent" data-meaning="Fraction of observations with positive return." data-calculation="Count(Rₜ&gt;0)/n." data-interpretation="Higher is generally better.">UpPercent</button></td>
-      <td>0.221374</td>
-      <td>0.161290</td>
-      <td>0.215017</td>
-      <td>0.219570</td>
-      <td>0.333333</td>
+      <td>0.219466</td>
       <td>0.166667</td>
+      <td>0.214041</td>
+      <td>0.220379</td>
+      <td>0.333333</td>
+      <td>0.144928</td>
       <td>0.625000</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="UpsidePotential" data-meaning="Average return above the minimum acceptable return." data-calculation="Mean[max(R−MAR,0)]." data-interpretation="Higher is better.">UpsidePotential</button></td>
-      <td>0.509986</td>
-      <td>0.342953</td>
-      <td>0.493543</td>
-      <td>0.574620</td>
+      <td>0.508415</td>
+      <td>0.316241</td>
+      <td>0.488905</td>
+      <td>0.575915</td>
       <td>1.191228</td>
-      <td>0.421677</td>
+      <td>0.411863</td>
       <td>0.501534</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="UpsideRisk" data-meaning="Magnitude of returns above the target." data-calculation="Root upper partial moment relative to MAR." data-interpretation="Higher means more upside dispersion, not conventional risk.">UpsideRisk</button></td>
-      <td>0.008535</td>
-      <td>0.004423</td>
-      <td>0.008178</td>
-      <td>0.007026</td>
+      <td>0.008528</td>
+      <td>0.004420</td>
+      <td>0.008172</td>
+      <td>0.007017</td>
       <td>0.027447</td>
-      <td>0.008275</td>
+      <td>0.008291</td>
       <td>0.018788</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="VaR_Loss" data-meaning="Loss threshold exceeded by the worst 5% of observations." data-calculation="95th percentile of loss −R." data-interpretation="Lower is better.">VaR_Loss</button></td>
       <td>0.012766</td>
-      <td>0.008961</td>
-      <td>0.012281</td>
-      <td>0.010057</td>
+      <td>0.009029</td>
+      <td>0.012335</td>
+      <td>0.010032</td>
       <td>0.025467</td>
-      <td>0.019966</td>
+      <td>0.020021</td>
       <td>0.046414</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="Volatility" data-meaning="Daily standard deviation of returns." data-calculation="sd(Rₜ)." data-interpretation="Lower means more stable returns.">Volatility</button></td>
-      <td>0.010988</td>
-      <td>0.007184</td>
-      <td>0.010633</td>
-      <td>0.008751</td>
+      <td>0.010983</td>
+      <td>0.007502</td>
+      <td>0.010655</td>
+      <td>0.008738</td>
       <td>0.029285</td>
-      <td>0.012535</td>
+      <td>0.012600</td>
       <td>0.029605</td>
     </tr>
     <tr>
       <th></th>
       <td><button type="button" class="metric-help-button" data-metric="Volatility_Annualized" data-meaning="Annualised standard deviation." data-calculation="sd(Rₜ) × √252." data-interpretation="Lower means more stable returns.">Volatility_Annualized</button></td>
-      <td>0.174422</td>
-      <td>0.114042</td>
-      <td>0.168787</td>
-      <td>0.138922</td>
+      <td>0.174354</td>
+      <td>0.119092</td>
+      <td>0.169146</td>
+      <td>0.138705</td>
       <td>0.464884</td>
-      <td>0.198985</td>
+      <td>0.200017</td>
       <td>0.469973</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><button type="button" class="metric-help-button" data-metric="ZeroVolumeFraction" data-meaning="Share of observations with no recorded trading volume." data-calculation="Count(volume=0)/n." data-interpretation="Lower is better.">ZeroVolumeFraction</button></td>
+      <td>0.018000</td>
+      <td>0.015873</td>
+      <td>0.017762</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
     </tr>
   </tbody>
 </table>
