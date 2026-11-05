@@ -48,7 +48,8 @@ document.querySelectorAll('.profile-filters').forEach(function(filterBlock) {
     const instrumentFilters=[...filterBlock.querySelectorAll('.instrument-type-filters input[type="radio"]')];
     const portfolioFilters=[...filterBlock.querySelectorAll('.portfolio-scope-filters input[type="radio"]')];
     const saleFilters=[...filterBlock.querySelectorAll('.sale-policy-filters input[type="radio"]')];
-    const filters=[...signalFilters,...netsdFilters,...dividendFilters,...instrumentFilters,...portfolioFilters,...saleFilters];
+    const updateFilters=[...filterBlock.querySelectorAll('.update-filters input[type="radio"]')];
+    const filters=[...signalFilters,...netsdFilters,...dividendFilters,...instrumentFilters,...portfolioFilters,...saleFilters,...updateFilters];
   const profiles=[...section.querySelectorAll('details.stock-profile')];
   const counter=filterBlock.querySelector('.profile-filter-count');
   function applyProfileFilters() {
@@ -58,13 +59,15 @@ document.querySelectorAll('.profile-filters').forEach(function(filterBlock) {
     const selectedType=instrumentFilters.find(box=>box.checked)?.value || 'ALL';
     const selectedScope=portfolioFilters.find(box=>box.checked)?.value || 'STOCHASTIC';
     const selectedSale=saleFilters.find(box=>box.checked)?.value || 'ALL';
+    const selectedUpdate=updateFilters.find(box=>box.checked)?.value || 'ALL';
     let visible=0;
     profiles.forEach(function(profile) {
         const type=profile.classList.contains('fund-profile')?'FUND':'SHARE';
         const scopes=(profile.dataset.portfolioScopes??'STOCHASTIC ANY').split(' ');
         const saleMembership=JSON.parse(profile.dataset.saleMembership||'{}');
         const saleMatch=selectedSale==='ALL'||(saleMembership[selectedScope]||[]).includes(selectedSale);
-        const show=saleMatch && (selectedScope==='ALL'||scopes.includes(selectedScope)) && (selectedType==='ALL'||selectedType===type) && selectedSignals.has(profile.dataset.signal) && selectedNetsdEffects.has(profile.dataset.netsdEffect) && selectedDividendStatuses.has(profile.dataset.dividendStatus);
+        const updateMatch=selectedUpdate==='ALL'||profile.dataset.hasUpdate==='true';
+        const show=updateMatch && saleMatch && (selectedScope==='ALL'||scopes.includes(selectedScope)) && (selectedType==='ALL'||selectedType===type) && selectedSignals.has(profile.dataset.signal) && selectedNetsdEffects.has(profile.dataset.netsdEffect) && selectedDividendStatuses.has(profile.dataset.dividendStatus);
       profile.hidden=!show;
       if (!show) profile.open=false;
       if (show) visible++;
@@ -82,7 +85,7 @@ document.querySelectorAll('details.portfolio-sensitivity').forEach(function(sens
   });
 });
 
-const reportVersion='cc8911621cd1';
+const reportVersion='570950032073';
 const palette = ['#1b1b1b','#e41a1c','#377eb8','#4daf4a','#984ea3','#ff7f00','#a65628','#f781bf','#008080','#6a3d9a','#b2182b','#2166ac','#1b9e77','#d95f02'];
 const linePatterns = [[],[10,5],[2,4],[10,4,2,4],[14,5],[6,3],[2,3,8,3],[12,3,3,3]];
 function isExplorerVisible(box) {
