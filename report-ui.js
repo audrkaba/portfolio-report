@@ -32,6 +32,7 @@ document.querySelectorAll('.report-chapter-nav a').forEach(function(link) {
 document.querySelectorAll('details.stock-profile').forEach(function(profile) {
   profile.addEventListener('toggle', function() {
     if (!profile.open) return;
+    profile.querySelectorAll('details.technical-indicators').forEach(function(section){section.open=true;});
     document.querySelectorAll('details.stock-profile[open]').forEach(function(other) {
       if (other !== profile) other.open = false;
     });
@@ -85,7 +86,7 @@ document.querySelectorAll('details.portfolio-sensitivity').forEach(function(sens
   });
 });
 
-const reportVersion='570950032073';
+const reportVersion='0cd2cec6295b';
 const palette = ['#1b1b1b','#e41a1c','#377eb8','#4daf4a','#984ea3','#ff7f00','#a65628','#f781bf','#008080','#6a3d9a','#b2182b','#2166ac','#1b9e77','#d95f02'];
 const linePatterns = [[],[10,5],[2,4],[10,4,2,4],[14,5],[6,3],[2,3,8,3],[12,3,3,3]];
 function isExplorerVisible(box) {
