@@ -86,7 +86,7 @@ document.querySelectorAll('details.portfolio-sensitivity').forEach(function(sens
   });
 });
 
-const reportVersion='0ae5dbed338e';
+const reportVersion='c575288e8dd2';
 const palette = ['#1b1b1b','#e41a1c','#377eb8','#4daf4a','#984ea3','#ff7f00','#a65628','#f781bf','#008080','#6a3d9a','#b2182b','#2166ac','#1b9e77','#d95f02'];
 const linePatterns = [[],[10,5],[2,4],[10,4,2,4],[14,5],[6,3],[2,3,8,3],[12,3,3,3]];
 function isExplorerVisible(box) {
@@ -451,4 +451,54 @@ function revealReportAnchor() {
 }
 window.addEventListener('hashchange',revealReportAnchor);
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',revealReportAnchor);else revealReportAnchor();
+
+// The portfolio analysis is a lazy fragment, so initialise when it enters the DOM.
+(()=>{
+const observer=new IntersectionObserver(entries=>{for(const entry of entries){entry.target._tvNear=entry.isIntersecting;refresh(entry.target);}},{rootMargin:'100px',threshold:0.01});
+function visible(card){
+ if(card.hidden||!card._tvNear)return false;
+ for(let p=card.parentElement;p;p=p.parentElement)if(p.hidden||(p.tagName==='DETAILS'&&!p.open))return false;
+ return true;
+}
+function refresh(card){
+ const host=card.querySelector('.portfolio-tv-host');if(!host)return;
+ if(!visible(card)){host.querySelectorAll('iframe').forEach(frame=>{if(!card._tvFrame&&frame.src.includes('advanced-chart')){card._tvFrame=frame;card._tvParent=frame.parentElement;card._tvNext=frame.nextSibling;}frame.remove();});return;}
+ if(card._tvFrame){if(!card._tvFrame.isConnected){const parent=card._tvParent?.isConnected?card._tvParent:host;parent.insertBefore(card._tvFrame,card._tvNext?.parentNode===parent?card._tvNext:null);}return;}
+ if(card._tvLoading)return;card._tvLoading=true;
+ const period=card.closest('.portfolio-tv-period');
+ const status=card.querySelector('.portfolio-tv-status');status.textContent='Loading TradingView…';
+ const watch=new MutationObserver(()=>{
+  const frame=host.querySelector('iframe');if(!frame)return;
+  card._tvFrame=frame;card._tvParent=frame.parentElement;card._tvNext=frame.nextSibling;frame.title=card.dataset.asset+' '+period.dataset.period+' candlesticks and Bollinger Bands';
+  if(!frame.dataset.statusHook){frame.dataset.statusHook='true';frame.addEventListener('load',()=>{status.hidden=true;});}
+  if(!visible(card))frame.remove();
+ });watch.observe(host,{childList:true,subtree:true});
+ const script=document.createElement('script');script.async=true;
+ script.src='https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js';
+ script.textContent=JSON.stringify({autosize:true,symbol:card.dataset.symbol,interval:period.dataset.interval,range:period.dataset.range,timezone:'Europe/Vilnius',theme:'light',style:'1',locale:'en',allow_symbol_change:false,save_image:false,hide_side_toolbar:true,hide_top_toolbar:false,withdateranges:true,studies:['STD;Bollinger_Bands'],support_host:'https://www.tradingview.com'});
+ script.onerror=()=>{watch.disconnect();card._tvLoading=false;status.hidden=false;status.textContent='TradingView could not load. Use the TradingView chart link.';};
+ host.appendChild(script);
+}
+function initialise(group){
+ if(group.dataset.ready)return;group.dataset.ready='true';
+ const select=group.querySelector('.portfolio-tv-select select');
+ const cards=[...group.querySelectorAll('.portfolio-tv-card')];
+ function update(){
+  group.querySelectorAll('[data-units]').forEach(item=>{const units=JSON.parse(item.dataset.units)[select.value]||0;item.hidden=units===0;item.querySelector('.portfolio-tv-units').textContent=units;});
+  cards.forEach(refresh);
+ }
+ select.addEventListener('change',update);
+ group.querySelectorAll('.portfolio-tv-period').forEach(period=>{
+  period.querySelector(':scope > summary').addEventListener('click',event=>{
+   event.preventDefault();const open=!period.open;
+   if(!open)period.querySelectorAll('iframe').forEach(frame=>frame.remove());
+   period.open=open;cards.forEach(refresh);
+  });
+  period.addEventListener('toggle',()=>{cards.forEach(refresh);if(!period.open)period.querySelectorAll('iframe').forEach(frame=>frame.remove());});
+ });
+ cards.filter(card=>card.dataset.symbol).forEach(card=>observer.observe(card));update();
+}
+document.querySelectorAll('.portfolio-tv').forEach(initialise);
+new MutationObserver(records=>{for(const record of records)for(const node of record.addedNodes){if(node.nodeType!==1)continue;if(node.matches('.portfolio-tv'))initialise(node);node.querySelectorAll('.portfolio-tv').forEach(initialise);}document.querySelectorAll('.portfolio-tv-period:not([open]) iframe').forEach(frame=>{const card=frame.closest('.portfolio-tv-card');if(card&&frame.src.includes('advanced-chart')){card._tvFrame=frame;card._tvParent=frame.parentElement;card._tvNext=frame.nextSibling;}frame.remove();});}).observe(document.body,{childList:true,subtree:true});
+})();
 
