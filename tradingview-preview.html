@@ -1,0 +1,39 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TradingView mini charts — portfolio preview</title>
+<style>
+:root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#173140;background:#f3f7f8}*{box-sizing:border-box}body{margin:0}main{max-width:1100px;margin:36px auto;padding:0 18px}a{color:#176877}header{margin-bottom:24px}h1{font-size:clamp(1.6rem,4vw,2.2rem);margin:12px 0}.intro{max-width:800px;line-height:1.6;color:#46606d}.badge{display:inline-block;background:#dfeff0;border-radius:30px;padding:5px 12px;font-size:.8rem;font-weight:650}.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;align-items:start}.asset-preview{background:white;border:1px solid #c7dadd;border-radius:12px;overflow:hidden}.asset-preview>summary{cursor:pointer;padding:17px 18px;background:#eef6f7;font-weight:650;line-height:1.7}.ticker{display:inline-block;margin-right:12px;color:#125f6c}.mini-panel{padding:12px 12px 0;position:relative}.tradingview-widget-container{height:300px;width:100%}.tradingview-widget-container__widget{height:calc(100% - 28px);width:100%}.tradingview-widget-copyright{font-size:12px;line-height:28px;text-align:center}.chart-note{padding:0 18px 14px;color:#506975;font-size:.8rem;line-height:1.6}.load-status{font-size:.8rem;color:#506975;margin:0 6px}.load-status[hidden]{display:none}.explanation{margin-top:24px;background:#fff;padding:16px 20px;border:1px solid #d9e4e6;border-radius:10px;font-size:.9rem;line-height:1.6}.explanation p{margin:6px 0}@media(max-width:700px){main{margin-top:20px}.cards{grid-template-columns:1fr}}
+</style></head><body><main><header><a href="./#analytics-1-1">← Portfolio report</a><h1>TradingView mini charts</h1><span class="badge">Preview · IVL &amp; VLP</span><p class="intro">A small, automatically updating chart inside each asset. Open an asset to load its chart; click the same heading to collapse it.</p></header><div class="cards"><details class="asset-preview" id="IVL1L" open>
+<summary><span class="ticker">IVL1L</span><span>Invalda INVL</span></summary>
+<div class="mini-panel" data-symbol="OMXVSE:IVL1L" data-chart-url="https://www.tradingview.com/chart/?symbol=OMXVSE%3AIVL1L">
+<div class="tradingview-widget-container"><div class="tradingview-widget-container__widget"></div>
+<div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3AIVL1L" rel="noopener nofollow" target="_blank"><span class="blue-text">IVL1L on TradingView</span></a></div></div>
+<p class="load-status" role="status">Loading TradingView…</p></div>
+<p class="chart-note">Automatically updated provider quotes; check the widget's delay/market status. <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3AIVL1L" target="_blank" rel="noopener">Open full chart ↗</a></p>
+</details><details class="asset-preview" id="VLP1L" >
+<summary><span class="ticker">VLP1L</span><span>Vilkyškių pieninė</span></summary>
+<div class="mini-panel" data-symbol="OMXVSE:VLP1L" data-chart-url="https://www.tradingview.com/chart/?symbol=OMXVSE%3AVLP1L">
+<div class="tradingview-widget-container"><div class="tradingview-widget-container__widget"></div>
+<div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3AVLP1L" rel="noopener nofollow" target="_blank"><span class="blue-text">VLP1L on TradingView</span></a></div></div>
+<p class="load-status" role="status">Loading TradingView…</p></div>
+<p class="chart-note">Automatically updated provider quotes; check the widget's delay/market status. <a href="https://www.tradingview.com/chart/?symbol=OMXVSE%3AVLP1L" target="_blank" rel="noopener">Open full chart ↗</a></p>
+</details></div>
+<aside class="explanation"><p><strong>Data timing:</strong> external quotes come from TradingView and can be delayed. The D label in a widget indicates delayed data; a paid TradingView account does not automatically make embedded website data real-time. <a href="https://www.tradingview.com/widget-docs/faq/data/" target="_blank" rel="noopener">TradingView data FAQ</a>.</p>
+<p><strong>Report calculations:</strong> this preview does not refresh the portfolio model, technical signals or forecast snapshot. Fund charts will only be added if the exact fund share class has a verified TradingView symbol; no substitute ETF is used.</p></aside>
+</main><script>
+function loadMiniChart(details){
+ if(!details.open)return;
+ const panel=details.querySelector('.mini-panel');if(panel.dataset.loaded)return;
+ panel.dataset.loaded='true';
+ const container=panel.querySelector('.tradingview-widget-container');
+ const status=panel.querySelector('.load-status');
+ const observer=new MutationObserver(()=>{const frame=container.querySelector('iframe');if(frame){frame.title=panel.dataset.symbol+' TradingView mini chart';frame.addEventListener('load',()=>status.hidden=true,{once:true});observer.disconnect();}});
+ observer.observe(container,{childList:true,subtree:true});
+ const script=document.createElement('script');script.async=true;
+ script.src='https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js';
+ script.textContent=JSON.stringify({symbol:panel.dataset.symbol,width:'100%',height:280,locale:'en',dateRange:'12M',colorTheme:'light',isTransparent:false,autosize:true,largeChartUrl:panel.dataset.chartUrl});
+ script.onerror=()=>{status.textContent='TradingView could not load. Use the full-chart link below.';status.hidden=false;observer.disconnect();};
+ container.appendChild(script);
+ setTimeout(()=>{if(!container.querySelector('iframe')){status.hidden=false;status.textContent='TradingView is taking longer to load. You can open the full chart below.';}},15000);
+}
+document.querySelectorAll('.asset-preview').forEach(details=>{details.addEventListener('toggle',()=>loadMiniChart(details));loadMiniChart(details);});
+</script></body></html>
