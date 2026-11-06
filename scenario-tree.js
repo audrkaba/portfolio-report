@@ -1,3 +1,70 @@
+/* Native scenario diagnostics are fetched only when an asset is opened. */
+function createScenarioAssetPopup(){
+ const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ const num=(v,d=4)=>Number.isFinite(v)?new Intl.NumberFormat('lt-LT',{minimumFractionDigits:d,maximumFractionDigits:d}).format(v):'—';
+ const eur=v=>new Intl.NumberFormat('lt-LT',{style:'currency',currency:'EUR',maximumFractionDigits:4}).format(v);
+ const labels={BUY:'PIRKTI',SELL:'PARDUOTI',WAIT:'LAUKTI',CLOSED:'RINKA UŽDARYTA'};
+ const colors={BUY:'#087954',SELL:'#b3433b',WAIT:'#7e929e',CLOSED:'#a4afb6'};
+ const dialog=document.createElement('dialog');dialog.id='asset-dialog';dialog.setAttribute('aria-labelledby','asset-popup-title');
+ dialog.innerHTML='<header class="popup-header"><div><h2 id="asset-popup-title"></h2><p id="asset-popup-context" class="muted"></p></div><button id="asset-popup-close" type="button">Uždaryti ×</button></header><div class="popup-body" id="asset-popup-body"></div>';
+ document.body.appendChild(dialog);let context,doc,step=0,token=0;const cache=new Map();
+ const body=()=>document.getElementById('asset-popup-body');
+ document.getElementById('asset-popup-close').addEventListener('click',()=>dialog.close());dialog.addEventListener('close',()=>{token++;});
+ dialog.addEventListener('click',e=>{if(e.target===dialog){const b=dialog.getBoundingClientRect();if(e.clientX<b.left||e.clientX>b.right||e.clientY<b.top||e.clientY>b.bottom)dialog.close();}});
+ function metrics(){
+  const m=doc.metrics[context.plan],a=m.augmented.values,n=m.augmented.n;
+  const card=(label,value)=>`<div class="stat"><span>${esc(label)}</span><strong>${esc(num(value,6))}</strong></div>`;
+  return `<h3>Viso šio scenarijaus portfelio rodikliai</h3><p class="popup-help">Tai viso portfelio, o ne pasirinkto aktyvo rodikliai. Naudojama ta pati ${n} grąžų imtis kaip optimizavimo netSD: ${context.data.training_observations} istorinių grąžų ir ${doc.dates.length-1} modeliuotų scenarijaus dienų.</p><div class="popup-metrics">${card('Scenarijaus netSD',m.netSD)}${card('Rachev · α = β = 5 %',a.Rachev)}${card('Sortino · MAR = 0',a.Sortino)}${card('Sharpe · dieninis, Rf = 0',a.Sharpe_daily)}</div><details><summary>Rodiklių apibrėžimai ir tik prognozės laikotarpio diagnostika</summary><p class="popup-help">Istorinė dalis yra hipotetinės pastovių svorių grąžos pagal portfelį po II etapo ir mazgo kainas, įskaitant grynųjų dalį. Prognozės dalis naudoja faktinę modeliuotą turto trajektoriją: pradinius kiekius iki rekursijos ir scenarijaus kiekius po jos. Tai nėra realizuotos sąskaitos istorija.</p><div class="popup-table-scroll"><table><thead><tr><th>Imtis</th><th>N</th><th>netSD</th><th>Rachev</th><th>Sortino</th><th>Sharpe dieninis</th><th>Sharpe metinis (252)</th></tr></thead><tbody>${['augmented','forecast'].map(key=>{const r=m[key],v=r.values;return `<tr data-metric-sample="${key}"><td>${key==='augmented'?'Istorija + scenarijus':'Tik prognozės dienos'}</td><td>${r.n}</td><td>${key==='augmented'?num(m.netSD,6):'Netaikoma'}</td>${['Rachev','Sortino','Sharpe_daily','Sharpe_annualized'].map(k=>`<td title="${esc(r.warnings[k]||'')}">${num(v[k],6)}</td>`).join('')}</tr>`;}).join('')}</tbody></table></div><p class="popup-help">20 prognozės grąžų yra maža imtis, ypač Rachev uodegų rizikai. Metinis Sharpe yra skalės 252 perskaičiavimas, o ne vieno mėnesio rezultatas per metus. „—“ reiškia neapibrėžtą rodiklį, pavyzdžiui, kai nėra neigiamų grąžų ar dispersijos. Skaičiuota su R PerformanceAnalytics; Rf = MAR = 0. netSD tik prognozės imčiai atskirai nepervertinamas, kad nebūtų pakeistas jo etalonas.</p></details>`;
+ }
+ function charts(points){
+  const W=940,L=62,R=20,x=i=>L+i/(points.length-1)*(W-L-R),out=[];
+  function pane(title,height,series,options={}){
+   const T=23,B=options.bottom?30:10,values=series.flatMap(s=>s.values).filter(Number.isFinite);if(options.hist)values.push(0,...points.map(p=>p.MACD_histogram).filter(Number.isFinite));
+   let lo=options.lo??Math.min(...values),hi=options.hi??Math.max(...values);if(options.lo===undefined){const pad=Math.max((hi-lo)*.12,Math.abs(hi)*.003,1e-6);lo-=pad;hi+=pad;}
+   const y=v=>height-B-(v-lo)/(hi-lo)*(height-T-B);let content=`<text x="${L}" y="15" font-size="12" fill="#526b78">${esc(title)}</text>`;
+   for(let k=0;k<3;k++){const v=lo+(hi-lo)*k/2;content+=`<line x1="${L}" x2="${W-R}" y1="${y(v)}" y2="${y(v)}" stroke="#e6edf0"/><text x="${L-6}" y="${y(v)+4}" text-anchor="end" font-size="10" fill="#617986">${esc(num(v,options.lo===0?0:3))}</text>`;}
+   if(options.hist)points.forEach((p,i)=>{const v=p.MACD_histogram;if(!Number.isFinite(v))return;content+=`<rect x="${x(i)-7}" y="${Math.min(y(v),y(0))}" width="14" height="${Math.max(1,Math.abs(y(v)-y(0)))}" fill="${v>=0?'#99c9b5':'#e3aea9'}"/>`;});
+   for(const s of series){let started=false,path='';s.values.forEach((v,i)=>{if(!Number.isFinite(v)){started=false;return;}path+=(started?'L':'M')+x(i)+','+y(v);started=true;});content+=`<path d="${path}" fill="none" stroke="${s.color}" stroke-width="${s.width||1.8}" ${s.dash?'stroke-dasharray="4 3"':''}/>`;}
+   if(options.price)points.forEach((p,i)=>{content+=`<circle cx="${x(i)}" cy="${y(p.price)}" r="${i===step?5:3}" fill="${colors[p.signal]}"/>`;});
+   content+=`<line x1="${x(step)}" x2="${x(step)}" y1="${T}" y2="${height-B}" stroke="#4e6a7b" stroke-dasharray="3 3"/>`;
+   if(options.bottom)for(const i of [0,context.data.recourse_step,points.length-1])content+=`<text x="${x(i)}" y="${height-6}" text-anchor="${i===0?'start':i===points.length-1?'end':'middle'}" font-size="10" fill="#617986">${esc(doc.dates[i])}</text>`;
+   out.push(`<svg class="popup-chart" viewBox="0 0 ${W} ${height}" role="img" aria-label="${esc(title)}">${content}</svg>`);
+  }
+  pane('Scenarijaus kaina ir Bollinger juostos (20; 2σ) · taškų spalvos: techninis signalas',240,[{values:points.map(p=>p.BB_lower),color:'#9aabb5',dash:true},{values:points.map(p=>p.BB_upper),color:'#9aabb5',dash:true},{values:points.map(p=>p.price),color:'#087c92',width:2.5}],{price:true});
+  pane('Stochastic RSI · %K mėlyna / %D oranžinė',105,[{values:points.map(p=>p.StochRSI_K===null?null:p.StochRSI_K*100),color:'#247ac0'},{values:points.map(p=>p.StochRSI_D===null?null:p.StochRSI_D*100),color:'#d88b38'}],{lo:0,hi:100});
+  pane('MACD (12, 26, 9) · MACD mėlyna / signalinė oranžinė / histograma',130,[{values:points.map(p=>p.MACD),color:'#247ac0'},{values:points.map(p=>p.MACD_signal),color:'#d88b38'}],{hist:true,bottom:true});
+  return out.join('');
+ }
+ function action(){
+  const d=context.data,p=d.policies[context.plan],i=d.assets.findIndex(a=>a.id===context.asset),node=d.leaves[context.leafIndex].node;
+  if(step===0){const change=p.units[i]-d.assets[i].current;return 'I etapo modelio sandoris: '+(change>0?'+':'')+change+' vnt.';}
+  if(step===d.recourse_step){const change=p.decisions[node].units[i]-p.units[i];return 'II etapo modelio sandoris: '+(change>0?'+':'')+change+' vnt. · po sandorio '+p.decisions[node].units[i]+' vnt.';}
+  return 'Šią dieną modelis papildomo portfelio perbalansavimo nenumato.';
+ }
+ function update(){
+  const a=doc.assets[context.asset],points=a.points,p=points[step];
+  document.getElementById('popup-signal').innerHTML=`<strong>${esc(doc.dates[step])} · ${esc(eur(p.price))} · <span style="color:${colors[p.signal]}">${labels[p.signal]}</span></strong><br>Techniniai balsai: PIRKTI ${p.buy_votes}/4 · PARDUOTI ${p.sell_votes}/4.<br>${esc(action())}<div class="popup-indicators"><span>RSI(14): ${num(p.RSI,2)}</span><span>Stoch RSI K/D: ${num(p.StochRSI_K===null?null:p.StochRSI_K*100,2)} / ${num(p.StochRSI_D===null?null:p.StochRSI_D*100,2)}</span><span>MACD / signalinė: ${num(p.MACD)} / ${num(p.MACD_signal)}</span></div>`;
+  document.getElementById('popup-charts').innerHTML=charts(points);
+ }
+ function render(){
+  const d=context.data,asset=d.assets.find(a=>a.id===context.asset),l=d.leaves[context.leafIndex];
+  document.getElementById('asset-popup-title').textContent=asset.id+' · '+asset.name;
+  document.getElementById('asset-popup-context').textContent=l.id+' · '+d.policies[context.plan].label;
+  const a=doc.assets[context.asset];
+  body().innerHTML=`${metrics()}<div class="popup-controls"><label>Aktyvas<select id="popup-asset" class="popup-asset-picker">${d.assets.map(a=>`<option value="${esc(a.id)}"${a.id===context.asset?' selected':''}>${esc(a.id+' · '+a.name)}</option>`).join('')}</select></label><label>Scenarijaus diena<select id="popup-step">${doc.dates.map((date,i)=>`<option value="${i}"${i===step?' selected':''}>${esc(date)}${i===0?' · žinoma pradinė kaina':i===d.recourse_step?' · II etapas':''}</option>`).join('')}</select></label></div><div class="popup-signal" id="popup-signal" role="status"></div><div class="popup-charts" id="popup-charts"></div><p class="popup-help">Pradinės žinomos kainos / NAV data: ${esc(a.origin)}. Juostos ir indikatoriai skaičiuojami iš istorijos ir tik iki pasirinktos dienos esančių scenarijaus kainų. Grafikai turi bendrą laiko ašį. Techniniai signalai yra diagnostika: modelio pirkimams BUY nereikia, o sandoriai numatyti tik I ir II etapuose.</p><details><summary>Visų scenarijaus dienų kainos ir signalai</summary><div class="popup-table-scroll"><table class="popup-day-table"><thead><tr><th>Data</th><th>Kaina EUR</th><th>Indikacija</th><th>BUY balsai</th><th>SELL balsai</th><th>RSI</th><th>Stoch K %</th><th>Stoch D %</th><th>MACD</th><th>Signalinė</th><th>Bollinger apačia</th><th>Bollinger viršus</th></tr></thead><tbody>${a.points.map((p,i)=>`<tr data-step="${i}"><td>${esc(doc.dates[i])}</td><td>${num(p.price)}</td><td style="color:${colors[p.signal]}">${labels[p.signal]}</td><td>${p.buy_votes}</td><td>${p.sell_votes}</td><td>${num(p.RSI,2)}</td><td>${num(p.StochRSI_K===null?null:p.StochRSI_K*100,2)}</td><td>${num(p.StochRSI_D===null?null:p.StochRSI_D*100,2)}</td><td>${num(p.MACD)}</td><td>${num(p.MACD_signal)}</td><td>${num(p.BB_lower)}</td><td>${num(p.BB_upper)}</td></tr>`).join('')}</tbody></table></div></details>`;
+  document.getElementById('popup-step').addEventListener('change',e=>{step=Number(e.target.value);update();});
+  document.getElementById('popup-asset').addEventListener('change',e=>{context.asset=e.target.value;render();});update();
+ }
+ async function open(c){
+  context={...c};step=c.initial?0:c.valuation==='end'?c.data.dates.length-1:c.data.recourse_step;
+  const own=++token;document.getElementById('asset-popup-title').textContent=c.asset;document.getElementById('asset-popup-context').textContent='Kraunamos scenarijaus detalės…';body().innerHTML='<p class="popup-loading">Kraunami patikrinti kainų, signalų ir portfelio rodiklių duomenys…</p>';
+  if(!dialog.open)dialog.showModal();
+  try{const url=c.data.leaves[c.leafIndex].details_url;if(!url)throw new Error('Scenarijaus detalių duomenys neparuošti');if(!cache.has(url))cache.set(url,fetch(url).then(r=>{if(!r.ok)throw new Error('HTTP '+r.status);return r.json();}).catch(e=>{cache.delete(url);throw e;}));const loaded=await cache.get(url);if(own!==token||!dialog.open)return;doc=loaded;render();}
+  catch(error){if(own===token&&dialog.open)body().innerHTML='<p role="alert">Nepavyko įkelti detalių: '+esc(error.message)+'. Uždarykite langą ir bandykite dar kartą.</p>';}
+ }
+ return {open};
+}
+
 ﻿/* Standalone viewer of saved model outputs. No optimisation or order execution. */
 (()=>{'use strict';
 const $=id=>document.getElementById(id),esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -7,6 +74,7 @@ const pct=n=>number(n*100,3)+' %';
 const date=s=>new Intl.DateTimeFormat('lt-LT',{year:'numeric',month:'2-digit',day:'2-digit',timeZone:'UTC'}).format(new Date(s+'T12:00:00Z'));
 const regimes=['','R1 · Abu ramūs','R2 · Baltijos stresas','R3 · Pasaulio stresas','R4 · Abu įtempti'];
 let data,state,manualZoom=false;
+const assetPopup=createScenarioAssetPopup();
 const selected=()=>data.policies[state.plan],leaf=()=>data.leaves[state.leaf],decision=()=>selected().decisions[state.node];
 function stat(label,value){return `<div class="stat"><span>${esc(label)}</span><strong>${esc(value)}</strong></div>`;}
 function bestLeaf(node,regime){let index=-1;data.leaves.forEach((l,i)=>{if(l.node===node&&(!regime||l.regime===regime)&&(index<0||l.probability>data.leaves[index].probability))index=i;});return index;}
@@ -96,7 +164,7 @@ function composition(){
  for(const v of ['node','end']){const button=$('valuation-'+v);button.disabled=initial;button.setAttribute('aria-pressed',String(!initial&&state.valuation===v));}
  const rows=data.assets.map((a,i)=>({a,q:units[i],value:units[i]*prices[i]})).filter(r=>r.q>0).sort((a,b)=>b.value-a.value);
  $('portfolio-date').textContent=initial?'Pradinis planas pagal '+date(data.as_of)+' kainas.':end?'Kiekiai po '+data.nodes[state.node].label+' rekursijos; vertės pagal pasirinktos šakos pabaigos kainas ('+date(data.dates.at(-1))+').':'Portfelis iškart po '+data.nodes[state.node].label+' rekursijos ('+date(data.dates[data.recourse_step])+'), pagal mazgo kainas.';
- $('portfolio-preview').querySelector('tbody').innerHTML=rows.map(r=>`<tr data-asset="${esc(r.a.id)}" data-units="${r.q}" data-value="${r.value}"><td><strong>${esc(r.a.id)}</strong><small>${esc(r.a.name)}</small></td><td>${r.q}</td><td>${esc(euro(r.value))}</td><td>${esc(pct(r.value/total))}</td></tr>`).join('')+`<tr data-cash="true"><td><strong>Grynieji</strong></td><td>—</td><td>${esc(euro(cash))}</td><td>${esc(pct(cash/total))}</td></tr>`;
+ $('portfolio-preview').querySelector('tbody').innerHTML=rows.map(r=>`<tr data-asset="${esc(r.a.id)}" data-units="${r.q}" data-value="${r.value}"><td><button type="button" class="asset-trigger" data-asset-popup="${esc(r.a.id)}"><strong>${esc(r.a.id)}</strong><small>${esc(r.a.name)}</small></button></td><td>${r.q}</td><td>${esc(euro(r.value))}</td><td>${esc(pct(r.value/total))}</td></tr>`).join('')+`<tr data-cash="true"><td><strong>Grynieji</strong></td><td>—</td><td>${esc(euro(cash))}</td><td>${esc(pct(cash/total))}</td></tr>`;
  $('portfolio-total').textContent=rows.length+' aktyvų · bendra vertė '+euro(total)+'.';
 }
 function orders(){
@@ -111,7 +179,7 @@ function orders(){
   const change=changes[i];if($('only-trades').checked?change===0:!(a.current||p.units[i]||units[i]))return '';count++;
   const action=change>0?'PIRKTI':change<0?'PARDUOTI':'LAIKYTI',cls=change>0?'buy':change<0?'sell':'hold';
   const final=initial?'—':euro(units[i]*l.terminal_prices[i]);
-  return `<tr data-asset="${esc(a.id)}" data-change="${change}"><td><strong>${esc(a.id)}</strong><small>${esc(a.name)}</small></td><td>${a.current}</td><td>${p.units[i]}</td><td>${initial?'—':units[i]}</td><td class="${cls}">${change>0?'+':''}${change}</td><td class="${cls}">${action}</td><td>${esc(number(prices[i],4))}</td><td>${change?esc(euro(Math.abs(change)*prices[i])):'—'}</td><td>${final}</td></tr>`;
+  return `<tr data-asset="${esc(a.id)}" data-change="${change}"><td><button type="button" class="asset-trigger" data-asset-popup="${esc(a.id)}"><strong>${esc(a.id)}</strong><small>${esc(a.name)}</small></button></td><td>${a.current}</td><td>${p.units[i]}</td><td>${initial?'—':units[i]}</td><td class="${cls}">${change>0?'+':''}${change}</td><td class="${cls}">${action}</td><td>${esc(number(prices[i],4))}</td><td>${change?esc(euro(Math.abs(change)*prices[i])):'—'}</td><td>${final}</td></tr>`;
  }).join('');
  if(!count)$('orders-table').querySelector('tbody').innerHTML='<tr><td colspan="9">Šiame etape sandorių nėra. Nuimkite filtrą, kad matytumėte laikomas pozicijas.</td></tr>';
  const cash=initial?p.cash:d.cash;let info=`<span>Pirkimai: <strong>${esc(euro(buys))}</strong></span><span>Pardavimai: <strong>${esc(euro(sells))}</strong></span><span>Grynieji po etapo: <strong>${esc(euro(cash))}</strong></span>`;
@@ -125,6 +193,7 @@ function render(){
  document.title=(state.stage==='initial'?'Pradinis planas':leaf().id)+' · Scenarijų medis';
 }
 function attach(){
+ document.addEventListener('click',event=>{const target=event.target.closest('[data-asset-popup]');if(target)assetPopup.open({data,plan:state.plan,leafIndex:state.leaf,asset:target.dataset.assetPopup,initial:state.stage==='initial',valuation:state.valuation});});
  for(const valuation of ['node','end'])$('valuation-'+valuation).addEventListener('click',()=>{state.valuation=valuation;composition();writeURL();});
  $('show-portfolio').addEventListener('click',()=>showPanel('portfolio'));$('show-outcomes').addEventListener('click',()=>showPanel('outcomes'));
  $('plan').addEventListener('change',()=>{state.plan=$('plan').value;render();});$('node').addEventListener('change',()=>chooseNode(Number($('node').value)));
