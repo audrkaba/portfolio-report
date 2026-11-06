@@ -157,14 +157,15 @@ function showPanel(panel){
  $('portfolio-preview').hidden=panel!=='portfolio';$('outcome-panel').hidden=panel!=='outcomes';
  $('show-portfolio').setAttribute('aria-pressed',String(panel==='portfolio'));$('show-outcomes').setAttribute('aria-pressed',String(panel==='outcomes'));
 }
+function quantityWithChange(quantity,before){const delta=quantity-before;return `${quantity} (${delta>0?'+':''}${delta})`;}
 function composition(){
  const p=selected(),initial=state.stage==='initial',end=!initial&&state.valuation==='end',d=decision();
  const units=initial?p.units:d.units,prices=initial?data.assets.map(a=>a.price):end?leaf().terminal_prices:data.nodes[state.node].prices,cash=initial?p.cash:d.cash;
  const total=units.reduce((s,q,i)=>s+q*prices[i],cash);
  for(const v of ['node','end']){const button=$('valuation-'+v);button.disabled=initial;button.setAttribute('aria-pressed',String(!initial&&state.valuation===v));}
- const rows=data.assets.map((a,i)=>({a,q:units[i],value:units[i]*prices[i]})).filter(r=>r.q>0).sort((a,b)=>b.value-a.value);
+ const rows=data.assets.map((a,i)=>({a,q:units[i],before:initial?a.current:p.units[i],value:units[i]*prices[i]})).filter(r=>r.q>0).sort((a,b)=>b.value-a.value);
  $('portfolio-date').textContent=initial?'Pradinis planas pagal '+date(data.as_of)+' kainas.':end?'Kiekiai po '+data.nodes[state.node].label+' rekursijos; vertės pagal pasirinktos šakos pabaigos kainas ('+date(data.dates.at(-1))+').':'Portfelis iškart po '+data.nodes[state.node].label+' rekursijos ('+date(data.dates[data.recourse_step])+'), pagal mazgo kainas.';
- $('portfolio-preview').querySelector('tbody').innerHTML=rows.map(r=>`<tr data-asset="${esc(r.a.id)}" data-units="${r.q}" data-value="${r.value}"><td><button type="button" class="asset-trigger" data-asset-popup="${esc(r.a.id)}"><strong>${esc(r.a.id)}</strong><small>${esc(r.a.name)}</small></button></td><td>${r.q}</td><td>${esc(euro(r.value))}</td><td>${esc(pct(r.value/total))}</td></tr>`).join('')+`<tr data-cash="true"><td><strong>Grynieji</strong></td><td>—</td><td>${esc(euro(cash))}</td><td>${esc(pct(cash/total))}</td></tr>`;
+ $('portfolio-preview').querySelector('tbody').innerHTML=rows.map(r=>`<tr data-asset="${esc(r.a.id)}" data-units="${r.q}" data-value="${r.value}"><td><button type="button" class="asset-trigger" data-asset-popup="${esc(r.a.id)}"><strong>${esc(r.a.id)}</strong><small>${esc(r.a.name)}</small></button></td><td>${quantityWithChange(r.q,r.before)}</td><td>${esc(euro(r.value))}</td><td>${esc(pct(r.value/total))}</td></tr>`).join('')+`<tr data-cash="true"><td><strong>Grynieji</strong></td><td>—</td><td>${esc(euro(cash))}</td><td>${esc(pct(cash/total))}</td></tr>`;
  $('portfolio-total').textContent=rows.length+' aktyvų · bendra vertė '+euro(total)+'.';
 }
 function orders(){
@@ -179,7 +180,7 @@ function orders(){
   const change=changes[i];if($('only-trades').checked?change===0:!(a.current||p.units[i]||units[i]))return '';count++;
   const action=change>0?'PIRKTI':change<0?'PARDUOTI':'LAIKYTI',cls=change>0?'buy':change<0?'sell':'hold';
   const final=initial?'—':euro(units[i]*l.terminal_prices[i]);
-  return `<tr data-asset="${esc(a.id)}" data-change="${change}"><td><button type="button" class="asset-trigger" data-asset-popup="${esc(a.id)}"><strong>${esc(a.id)}</strong><small>${esc(a.name)}</small></button></td><td>${a.current}</td><td>${p.units[i]}</td><td>${initial?'—':units[i]}</td><td class="${cls}">${change>0?'+':''}${change}</td><td class="${cls}">${action}</td><td>${esc(number(prices[i],4))}</td><td>${change?esc(euro(Math.abs(change)*prices[i])):'—'}</td><td>${final}</td></tr>`;
+  return `<tr data-asset="${esc(a.id)}" data-change="${change}"><td><button type="button" class="asset-trigger" data-asset-popup="${esc(a.id)}"><strong>${esc(a.id)}</strong><small>${esc(a.name)}</small></button></td><td>${a.current}</td><td>${quantityWithChange(p.units[i],a.current)}</td><td>${initial?'—':quantityWithChange(units[i],p.units[i])}</td><td class="${cls}">${change>0?'+':''}${change}</td><td class="${cls}">${action}</td><td>${esc(number(prices[i],4))}</td><td>${change?esc(euro(Math.abs(change)*prices[i])):'—'}</td><td>${final}</td></tr>`;
  }).join('');
  if(!count)$('orders-table').querySelector('tbody').innerHTML='<tr><td colspan="9">Šiame etape sandorių nėra. Nuimkite filtrą, kad matytumėte laikomas pozicijas.</td></tr>';
  const cash=initial?p.cash:d.cash;let info=`<span>Pirkimai: <strong>${esc(euro(buys))}</strong></span><span>Pardavimai: <strong>${esc(euro(sells))}</strong></span><span>Grynieji po etapo: <strong>${esc(euro(cash))}</strong></span>`;
