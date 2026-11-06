@@ -163,7 +163,7 @@ function composition(){
  const units=initial?p.units:d.units,prices=initial?data.assets.map(a=>a.price):end?leaf().terminal_prices:data.nodes[state.node].prices,cash=initial?p.cash:d.cash;
  const total=units.reduce((s,q,i)=>s+q*prices[i],cash);
  for(const v of ['node','end']){const button=$('valuation-'+v);button.disabled=initial;button.setAttribute('aria-pressed',String(!initial&&state.valuation===v));}
- const rows=data.assets.map((a,i)=>({a,q:units[i],before:initial?a.current:p.units[i],value:units[i]*prices[i]})).filter(r=>r.q>0).sort((a,b)=>b.value-a.value);
+ const rows=data.assets.map((a,i)=>({a,q:units[i],before:initial?a.current:p.units[i],value:units[i]*prices[i]})).filter(r=>$('preview-filter').value==='UPDATES'?r.q!==r.before:r.q>0).sort((a,b)=>b.value-a.value);
  $('portfolio-date').textContent=initial?'Pradinis planas pagal '+date(data.as_of)+' kainas.':end?'Kiekiai po '+data.nodes[state.node].label+' rekursijos; vertės pagal pasirinktos šakos pabaigos kainas ('+date(data.dates.at(-1))+').':'Portfelis iškart po '+data.nodes[state.node].label+' rekursijos ('+date(data.dates[data.recourse_step])+'), pagal mazgo kainas.';
  $('portfolio-preview').querySelector('tbody').innerHTML=rows.map(r=>`<tr data-asset="${esc(r.a.id)}" data-units="${r.q}" data-value="${r.value}"><td><button type="button" class="asset-trigger" data-asset-popup="${esc(r.a.id)}"><strong>${esc(r.a.id)}</strong><small>${esc(r.a.name)}</small></button></td><td>${quantityWithChange(r.q,r.before)}</td><td>${esc(euro(r.value))}</td><td>${esc(pct(r.value/total))}</td></tr>`).join('')+`<tr data-cash="true"><td><strong>Grynieji</strong></td><td>—</td><td>${esc(euro(cash))}</td><td>${esc(pct(cash/total))}</td></tr>`;
  $('portfolio-total').textContent=rows.length+' aktyvų · bendra vertė '+euro(total)+'.';
@@ -194,6 +194,7 @@ function render(){
  document.title=(state.stage==='initial'?'Pradinis planas':leaf().id)+' · Scenarijų medis';
 }
 function attach(){
+ $('preview-filter').addEventListener('change',composition);
  document.addEventListener('click',event=>{const target=event.target.closest('[data-asset-popup]');if(target)assetPopup.open({data,plan:state.plan,leafIndex:state.leaf,asset:target.dataset.assetPopup,initial:state.stage==='initial',valuation:state.valuation});});
  for(const valuation of ['node','end'])$('valuation-'+valuation).addEventListener('click',()=>{state.valuation=valuation;composition();writeURL();});
  $('show-portfolio').addEventListener('click',()=>showPanel('portfolio'));$('show-outcomes').addEventListener('click',()=>showPanel('outcomes'));
