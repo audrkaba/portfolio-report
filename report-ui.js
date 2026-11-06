@@ -86,7 +86,7 @@ document.querySelectorAll('details.portfolio-sensitivity').forEach(function(sens
   });
 });
 
-const reportVersion='de63ae9c2941';
+const reportVersion='c35e2edd9115';
 const palette = ['#1b1b1b','#e41a1c','#377eb8','#4daf4a','#984ea3','#ff7f00','#a65628','#f781bf','#008080','#6a3d9a','#b2182b','#2166ac','#1b9e77','#d95f02'];
 const linePatterns = [[],[10,5],[2,4],[10,4,2,4],[14,5],[6,3],[2,3,8,3],[12,3,3,3]];
 function isExplorerVisible(box) {
@@ -466,16 +466,18 @@ function refresh(card){
  if(card._tvFrame){if(!card._tvFrame.isConnected){const parent=card._tvParent?.isConnected?card._tvParent:host;parent.insertBefore(card._tvFrame,card._tvNext?.parentNode===parent?card._tvNext:null);}return;}
  if(card._tvLoading)return;card._tvLoading=true;
  const period=card.closest('.portfolio-tv-period');
+ const assetStudies=Boolean(card.closest('.asset-tv'));
+ const studies=assetStudies?['STD;Bollinger_Bands','StochasticRSI@tv-basicstudies','MACD@tv-basicstudies']:['STD;Bollinger_Bands'];
  const status=card.querySelector('.portfolio-tv-status');status.textContent='Loading TradingView…';
  const watch=new MutationObserver(()=>{
   const frame=host.querySelector('iframe');if(!frame)return;
-  card._tvFrame=frame;card._tvParent=frame.parentElement;card._tvNext=frame.nextSibling;frame.title=card.dataset.asset+' '+period.dataset.period+' candlesticks and Bollinger Bands';
+  card._tvFrame=frame;card._tvParent=frame.parentElement;card._tvNext=frame.nextSibling;frame.title=card.dataset.asset+' '+period.dataset.period+' candlesticks and Bollinger Bands'+(assetStudies?', Stochastic RSI and MACD on a shared time axis':'');
   if(!frame.dataset.statusHook){frame.dataset.statusHook='true';frame.addEventListener('load',()=>{status.hidden=true;});}
   if(!visible(card))frame.remove();
  });watch.observe(host,{childList:true,subtree:true});
  const script=document.createElement('script');script.async=true;
  script.src='https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js';
- script.textContent=JSON.stringify({autosize:true,symbol:card.dataset.symbol,interval:period.dataset.interval,range:period.dataset.range,timezone:'Europe/Vilnius',theme:'light',style:'1',locale:'en',allow_symbol_change:false,save_image:false,hide_side_toolbar:true,hide_top_toolbar:false,withdateranges:true,studies:['STD;Bollinger_Bands'],support_host:'https://www.tradingview.com'});
+ script.textContent=JSON.stringify({autosize:true,symbol:card.dataset.symbol,interval:period.dataset.interval,range:period.dataset.range,timezone:'Europe/Vilnius',theme:'light',style:'1',locale:'en',allow_symbol_change:false,save_image:false,hide_side_toolbar:true,hide_top_toolbar:false,withdateranges:true,studies:studies,support_host:'https://www.tradingview.com'});
  script.onerror=()=>{watch.disconnect();card._tvLoading=false;status.hidden=false;status.textContent='TradingView could not load. Use the TradingView chart link.';};
  host.appendChild(script);
 }
@@ -500,5 +502,26 @@ function initialise(group){
 }
 document.querySelectorAll('.portfolio-tv').forEach(initialise);
 new MutationObserver(records=>{for(const record of records)for(const node of record.addedNodes){if(node.nodeType!==1)continue;if(node.matches('.portfolio-tv'))initialise(node);node.querySelectorAll('.portfolio-tv').forEach(initialise);}document.querySelectorAll('.portfolio-tv-period:not([open]) iframe').forEach(frame=>{const card=frame.closest('.portfolio-tv-card');if(card&&frame.src.includes('advanced-chart')){card._tvFrame=frame;card._tvParent=frame.parentElement;card._tvNext=frame.nextSibling;}frame.remove();});}).observe(document.body,{childList:true,subtree:true});
+})();
+
+// TradingView range presets select their own resolution (5D -> 5m, 1D -> 1m).
+// Set the requested candle interval after the embedded chart has initialised.
+(()=>{
+window.addEventListener('message',event=>{
+ if(!/^https:\/\/(www\.)?tradingview(-widget)?\.com$/.test(event.origin))return;
+ let message=event.data;
+ if(typeof message==='string'){try{message=JSON.parse(message);}catch{return;}}
+ if(message?.name!=='tv-widget-load')return;
+ for(const frame of document.querySelectorAll('.portfolio-tv-host iframe,.mini-panel iframe')){
+  if(frame.contentWindow!==event.source||new URL(frame.src).origin!==event.origin)continue;
+  const interval=frame.closest('.portfolio-tv-period,.mini-panel')?.dataset.interval;
+  if(!interval)return;
+  clearTimeout(frame._tvIntervalTimer);
+  frame._tvIntervalTimer=setTimeout(()=>{
+   if(frame.isConnected)frame.contentWindow.postMessage({name:'set-interval',data:{interval}},event.origin);
+  },500);
+  break;
+ }
+});
 })();
 
