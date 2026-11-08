@@ -78,6 +78,18 @@ let data,state,manualZoom=false;
 const assetPopup=createScenarioAssetPopup();
 const selected=()=>data.policies[state.plan],leaf=()=>data.leaves[state.leaf],decision=()=>selected().decisions[state.node];
 function stat(label,value){return `<div class="stat"><span>${esc(label)}</span><strong>${esc(value)}</strong></div>`;}
+function marketState(){
+ const s=data.market_state;if(!s)return;
+ const m=s.market,l=s.model,p=n=>number(n*100,2)+' %',pp=n=>(n>0?'+':'')+number(n*100,2)+' p. p.';
+ const current=m.dominant-1,growth=m.largest_increase-1;
+ $('market-state-summary').innerHTML=stat('Labiausiai tikėtinas režimas pagal naujausius duomenis',regimes[m.dominant]+' · '+p(m.probabilities[current]))+stat('Labiausiai per savaitę padidėjusi tikimybė',m.change[growth]>1e-12?regimes[m.largest_increase]+' · '+pp(m.change[growth]):'Nė vieno režimo tikimybė nepadidėjo');
+ $('market-state-dates').textContent='Rinkos duomenys: '+date(m.source_date)+'; palyginimas su '+date(m.previous_source_date)+'. Dabartinio režimo tikimybė: '+p(m.previous[current])+' → '+p(m.probabilities[current])+' ('+pp(m.change[current])+').';
+ function rows(v){return v.probabilities.map((value,i)=>`<tr data-regime="${i+1}"${i+1===v.dominant?' class="dominant-regime"':''}><td>${esc(regimes[i+1])}</td><td>${esc(p(v.previous[i]))}</td><td>${esc(p(value))}</td><td class="${v.change[i]>0?'probability-rise':'muted'}">${esc(pp(v.change[i]))}</td></tr>`).join('');}
+ $('market-state-table').querySelector('tbody').innerHTML=rows(m);$('model-state-table').querySelector('tbody').innerHTML=rows(l);
+ $('market-state-model').textContent='Medžio pradinis vertinimas: '+regimes[l.dominant]+' · '+p(l.probabilities[l.dominant-1])+'. Taikant '+s.lag_business_days+' darbo dienų informacijos vėlavimą, naudoti '+date(l.source_date)+' rinkos duomenys. Šio režimo savaitės pokytis: '+pp(l.change[l.dominant-1])+'. Naujausių duomenų rodymas nekeičia išsaugotų scenarijų tikimybių.';
+ $('model-state-dates').textContent='Medžio vertinimo datos: '+date(l.previous_date)+' → '+date(l.date)+'. Joms naudoti rinkos stebėjimai: '+date(l.previous_source_date)+' → '+date(l.source_date)+'.';
+ $('market-state').hidden=false;
+}
 function bestLeaf(node,regime){let index=-1;data.leaves.forEach((l,i)=>{if(l.node===node&&(!regime||l.regime===regime)&&(index<0||l.probability>data.leaves[index].probability))index=i;});return index;}
 function chooseNode(node){state.node=node;state.leaf=bestLeaf(node);state.stage='recourse';state.valuation='node';render();}
 function chooseLeaf(index){if(index<0)return;state.leaf=index;state.node=leaf().node;state.stage='recourse';state.valuation=data.full_revelation?'node':'end';render();}
@@ -222,7 +234,7 @@ async function start(){
   $('method-information').innerHTML='<summary>Kaip skaityti medį ir tikimybes</summary><p>Modelyje yra vienas bendras pirmojo etapo kiekių vektorius ir 20 atskirų antrojo etapo vektorių, po vieną kiekvienam režimo ir klasterio deriniui. Tarp šių 20 vektorių nėra privalomų lygybės apribojimų.</p><p><strong>Pasirinkta informacijos prielaida:</strong> antrojo etapo dieną visas scenarijus, įskaitant likusią mėnesio trajektoriją, laikomas paaiškėjusiu. Tai stipresnė informacija nei vien pirmųjų dviejų dienų kainos. Rezultatai nereiškia, kad realiame pasaulyje tuo metu bus žinomos būsimos kainos.</p><p>20 scenarijų gauti iš 12 000 modeliuotų trajektorijų, sugrupavus pagal 4 galutinius režimus ir 5 klasterius. Iš kiekvieno derinio išsaugota viena reprezentatyvi trajektorija, o tikimybės sumuotos. P(s) = P(R) × P(K | R). Visų 20 scenarijų tikimybės sudaro 100 %.</p><p>Paspaudus scenarijų matomi jo antrojo etapo kiekiai, grynieji ir svoriai. Paspaudus pirmojo etapo planą — bendras pradinis portfelis. Vertės pagal antrojo etapo kainas ir prognozės pabaigos kainas aiškiai pažymėtos. Optimizuojamas tikėtinas netSD atėmus baudas, todėl rekursija neprivalo padidinti turto vertės kiekvienoje šakoje.</p><p>Rodomi modelio planai, ne įvykdyti pavedimai. Pirkimams BUY signalo nereikia; pardavimams taikomos pasirinktos strategijos sąlygos. Paieška heuristinė, globalus optimalumas neįrodytas. <a href="index.html#multifrequency-forecasts">Metodika ir modelio rezultatai →</a></p>';
  }
  $('snapshot').textContent='Duomenų pjūvis: '+date(data.as_of)+' · Rekursija po '+data.recourse_step+' žingsnių: '+date(data.dates[data.recourse_step])+' · Prognozės pabaiga: '+date(data.dates.at(-1))+'.';
- $('app').hidden=false;attach();render();fit();document.documentElement.dataset.ready='true';
+ marketState();$('app').hidden=false;attach();render();fit();document.documentElement.dataset.ready='true';
 }
 start().catch(error=>{$('load-error').hidden=false;$('load-error').textContent='Nepavyko įkelti scenarijų medžio. Atnaujinkite puslapį arba grįžkite į pagrindinę ataskaitą. '+error.message;});
 })();
