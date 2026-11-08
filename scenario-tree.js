@@ -89,6 +89,15 @@ function marketState(){
  $('market-state-table').querySelector('tbody').innerHTML=rows(m);$('model-state-table').querySelector('tbody').innerHTML=rows(l);
  $('market-state-model').textContent='Medžio pradinis vertinimas: '+regimes[l.dominant]+' · '+p(l.probabilities[l.dominant-1])+'. Taikant '+s.lag_business_days+' darbo dienų informacijos vėlavimą, naudoti '+date(l.source_date)+' rinkos duomenys. Šio režimo savaitės pokytis: '+pp(l.change[l.dominant-1])+'. Naujausių duomenų rodymas nekeičia išsaugotų scenarijų tikimybių.';
  $('model-state-dates').textContent='Medžio vertinimo datos: '+date(l.previous_date)+' → '+date(l.date)+'. Joms naudoti rinkos stebėjimai: '+date(l.previous_source_date)+' → '+date(l.source_date)+'.';
+ if(s.initial_condition){
+  const r=s.initial_condition.regime,risk=s.conditional_regime_risk;
+  $('market-state-model').textContent='Šio perskaičiavimo prielaida: pradinis '+regimes[r]+' laikomas žinomu (100 %). Tai naudotojo pasirinkta sąlyga, o ne HMM tikimybės padidinimas iki 100 %. Prognozėje leidžiami perėjimai į visus keturis režimus; produkcijai naudojama naujausia stebėta rinkos informacija.';
+  $('model-state-details').querySelector(':scope > summary').textContent='Informacinis HMM vertinimas su 2 darbo dienų vėlavimu (šio medžio pradžiai nenaudojamas)';
+  $('model-state-table').querySelectorAll('thead th')[2].textContent='Su 2 d. vėlavimu';
+  $('model-state-dates').textContent='Informacinio HMM palyginimo datos: '+date(l.previous_date)+' → '+date(l.date)+'. Rinkos stebėjimai: '+date(l.previous_source_date)+' → '+date(l.source_date)+'.';
+  const notice=$('initial-condition-risk');notice.hidden=false;
+  notice.textContent='Pradedant iš R'+r+': P(R4 kitame modelio žingsnyje) = '+p(risk.next_step_R4)+'; P(R4 po '+risk.horizon_steps+' žingsnių, keturių savaičių pabaigoje) = '+p(risk.terminal_R4)+'; P(bent kartą patekti į R4 per šį laikotarpį) = '+p(risk.ever_R4)+'. Tai trys skirtingi įvykiai. Reprezentatyvių scenarijų galutinių režimų tikimybės suderintos su Markovo matricos prognoze.';
+ }
  $('market-state').hidden=false;
 }
 function bestLeaf(node,regime){let index=-1;data.leaves.forEach((l,i)=>{if(l.node===node&&(!regime||l.regime===regime)&&(index<0||l.probability>data.leaves[index].probability))index=i;});return index;}
