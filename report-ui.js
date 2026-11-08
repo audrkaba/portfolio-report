@@ -86,7 +86,7 @@ document.querySelectorAll('details.portfolio-sensitivity').forEach(function(sens
   });
 });
 
-const reportVersion='b88f069b81cd';
+const reportVersion='add51d605d95';
 const palette = ['#1b1b1b','#e41a1c','#377eb8','#4daf4a','#984ea3','#ff7f00','#a65628','#f781bf','#008080','#6a3d9a','#b2182b','#2166ac','#1b9e77','#d95f02'];
 const linePatterns = [[],[10,5],[2,4],[10,4,2,4],[14,5],[6,3],[2,3,8,3],[12,3,3,3]];
 function isExplorerVisible(box) {
@@ -462,10 +462,18 @@ function visible(card){
 }
 function refresh(card){
  const host=card.querySelector('.portfolio-tv-host');if(!host)return;
- if(!visible(card)){host.querySelectorAll('iframe').forEach(frame=>{if(!card._tvFrame&&frame.src.includes('advanced-chart')){card._tvFrame=frame;card._tvParent=frame.parentElement;card._tvNext=frame.nextSibling;}frame.remove();});return;}
+ if(!visible(card)){host.querySelectorAll('iframe').forEach(frame=>{if(!card._tvFrame&&(frame.src.includes('advanced-chart')||frame.src.includes('fund-chart.html'))){card._tvFrame=frame;card._tvParent=frame.parentElement;card._tvNext=frame.nextSibling;}frame.remove();});return;}
  if(card._tvFrame){if(!card._tvFrame.isConnected){const parent=card._tvParent?.isConnected?card._tvParent:host;parent.insertBefore(card._tvFrame,card._tvNext?.parentNode===parent?card._tvNext:null);}return;}
  if(card._tvLoading)return;card._tvLoading=true;
  const period=card.closest('.portfolio-tv-period');
+ if(card.dataset.yahoo){
+  const status=card.querySelector('.portfolio-tv-status'),frame=document.createElement('iframe');
+  frame.src='fund-chart.html?asset='+encodeURIComponent(card.dataset.yahoo)+'&period='+period.dataset.period+'&v='+card.dataset.yahooVersion;
+  frame.title=card.dataset.asset+' Yahoo daily NAV, Bollinger Bands, Stoch RSI and MACD';frame.loading='lazy';
+  frame.addEventListener('load',()=>{status.hidden=true;});
+  card._tvFrame=frame;card._tvParent=host;card._tvNext=null;host.appendChild(frame);return;
+ }
+
  const assetStudies=Boolean(card.closest('.asset-tv'));
  const studies=assetStudies?['STD;Bollinger_Bands','StochasticRSI@tv-basicstudies','MACD@tv-basicstudies']:['STD;Bollinger_Bands'];
  const status=card.querySelector('.portfolio-tv-status');status.textContent='Loading TradingView…';
@@ -498,10 +506,10 @@ function initialise(group){
   });
   period.addEventListener('toggle',()=>{cards.forEach(refresh);if(!period.open)period.querySelectorAll('iframe').forEach(frame=>frame.remove());});
  });
- cards.filter(card=>card.dataset.symbol).forEach(card=>observer.observe(card));update();
+ cards.filter(card=>card.dataset.symbol||card.dataset.yahoo).forEach(card=>observer.observe(card));update();
 }
 document.querySelectorAll('.portfolio-tv').forEach(initialise);
-new MutationObserver(records=>{for(const record of records)for(const node of record.addedNodes){if(node.nodeType!==1)continue;if(node.matches('.portfolio-tv'))initialise(node);node.querySelectorAll('.portfolio-tv').forEach(initialise);}document.querySelectorAll('.portfolio-tv-period:not([open]) iframe').forEach(frame=>{const card=frame.closest('.portfolio-tv-card');if(card&&frame.src.includes('advanced-chart')){card._tvFrame=frame;card._tvParent=frame.parentElement;card._tvNext=frame.nextSibling;}frame.remove();});}).observe(document.body,{childList:true,subtree:true});
+new MutationObserver(records=>{for(const record of records)for(const node of record.addedNodes){if(node.nodeType!==1)continue;if(node.matches('.portfolio-tv'))initialise(node);node.querySelectorAll('.portfolio-tv').forEach(initialise);}document.querySelectorAll('.portfolio-tv-period:not([open]) iframe').forEach(frame=>{const card=frame.closest('.portfolio-tv-card');if(card&&(frame.src.includes('advanced-chart')||frame.src.includes('fund-chart.html'))){card._tvFrame=frame;card._tvParent=frame.parentElement;card._tvNext=frame.nextSibling;}frame.remove();});}).observe(document.body,{childList:true,subtree:true});
 })();
 
 // TradingView range presets select their own resolution (5D -> 5m, 1D -> 1m).
