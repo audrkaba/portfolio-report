@@ -86,7 +86,7 @@ document.querySelectorAll('details.portfolio-sensitivity').forEach(function(sens
   });
 });
 
-const reportVersion='da3397c1e8cc';
+const reportVersion='1d0d10effd67';
 const palette = ['#1b1b1b','#e41a1c','#377eb8','#4daf4a','#984ea3','#ff7f00','#a65628','#f781bf','#008080','#6a3d9a','#b2182b','#2166ac','#1b9e77','#d95f02'];
 const linePatterns = [[],[10,5],[2,4],[10,4,2,4],[14,5],[6,3],[2,3,8,3],[12,3,3,3]];
 function isExplorerVisible(box) {
@@ -531,5 +531,31 @@ window.addEventListener('message',event=>{
   break;
  }
 });
+})();
+
+// Official gauges load only for open profiles near the viewport.
+(()=>{'use strict';
+let pending=false;
+const visible=box=>{if(!box._taNear)return false;for(let p=box;p;p=p.parentElement)if(p.hidden||(p.tagName==='DETAILS'&&!p.open))return false;return true;};
+function refresh(box){
+ const host=box.querySelector('.tv-technicals-host'),status=box.querySelector('.tv-technicals-status');
+ if(!visible(box)){if(box._taFrame?.isConnected)box._taFrame.remove();return;}
+ if(box._taFrame){if(!box._taFrame.isConnected)box._taParent.appendChild(box._taFrame);return;}
+ if(box._taLoading||box._taFailed)return;box._taLoading=true;status.textContent='Loading TradingView Technicals…';
+ const watch=new MutationObserver(()=>{
+  const frame=host.querySelector('iframe');if(!frame)return;
+  box._taFrame=frame;box._taParent=frame.parentElement;frame.title=box.dataset.taSymbol+' TradingView Technicals: summary, oscillators and moving averages';
+  frame.addEventListener('load',()=>{status.hidden=true;});watch.disconnect();if(!visible(box))frame.remove();
+ });watch.observe(host,{childList:true,subtree:true});
+ const script=document.createElement('script');script.async=true;script.src='https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js';
+ script.textContent=JSON.stringify({interval:box.dataset.taInterval,width:'100%',height:440,symbol:box.dataset.taSymbol,showIntervalTabs:true,displayMode:'multiple',locale:'en',colorTheme:'light',isTransparent:false,disableInterval:false});
+ script.onerror=()=>{watch.disconnect();box._taLoading=false;box._taFailed=true;status.hidden=false;status.textContent='TradingView could not load. Open the technical-analysis link above.';};host.appendChild(script);
+}
+function schedule(){if(pending)return;pending=true;requestAnimationFrame(()=>{pending=false;document.querySelectorAll('.tv-technicals').forEach(refresh);});}
+const observer=new IntersectionObserver(entries=>{for(const entry of entries){entry.target._taNear=entry.isIntersecting;refresh(entry.target);}},{rootMargin:'120px',threshold:.01});
+function initialise(){document.querySelectorAll('.tv-technicals:not([data-ta-ready])').forEach(box=>{box.dataset.taReady='true';observer.observe(box);});}
+document.addEventListener('toggle',schedule,true);
+new MutationObserver(records=>{if(records.some(r=>r.type==='childList'))initialise();schedule();}).observe(document.body,{childList:true,subtree:true,attributes:true,attributeFilter:['open','hidden']});
+initialise();
 })();
 
