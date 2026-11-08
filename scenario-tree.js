@@ -73,8 +73,8 @@ const number=(n,d=2)=>new Intl.NumberFormat('lt-LT',{minimumFractionDigits:d,max
 const euro=n=>new Intl.NumberFormat('lt-LT',{style:'currency',currency:'EUR',maximumFractionDigits:2}).format(n);
 const pct=n=>number(n*100,3)+' %';
 const date=s=>new Intl.DateTimeFormat('lt-LT',{year:'numeric',month:'2-digit',day:'2-digit',timeZone:'UTC'}).format(new Date(s+'T12:00:00Z'));
-const regimes=['','R1 · Baltijos ir pasaulio biržos ramios','R2 · Baltijos biržų stresas (pasaulio ramios)','R3 · Pasaulio biržų stresas (Baltijos ramios)','R4 · Baltijos ir pasaulio biržų stresas'];
-const treeRegimes=['','R1 · Abi rinkų grupės ramios','R2 · Baltijos biržų stresas','R3 · Pasaulio biržų stresas','R4 · Abiejų rinkų grupių stresas'];
+const regimes=['','R1 · Baltijos ir pasaulio biržos ramios','R2 · Baltijos biržų stresas (pasaulio ramios)','R3 · Pasaulio biržų stresas (Baltijos ramios)','R4 · Globalus biržų stresas'];
+const treeRegimes=['','R1 · Abi rinkų grupės ramios','R2 · Baltijos biržų stresas','R3 · Pasaulio biržų stresas','R4 · Globalus biržų stresas'];
 let data,state,manualZoom=false;
 const assetPopup=createScenarioAssetPopup();
 const selected=()=>data.policies[state.plan],leaf=()=>data.leaves[state.leaf],decision=()=>selected().decisions[state.node];
