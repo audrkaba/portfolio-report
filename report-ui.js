@@ -86,7 +86,7 @@ document.querySelectorAll('details.portfolio-sensitivity').forEach(function(sens
   });
 });
 
-const reportVersion='00c2c333381b';
+const reportVersion='c0250f2cc59c';
 const palette = ['#1b1b1b','#e41a1c','#377eb8','#4daf4a','#984ea3','#ff7f00','#a65628','#f781bf','#008080','#6a3d9a','#b2182b','#2166ac','#1b9e77','#d95f02'];
 const linePatterns = [[],[10,5],[2,4],[10,4,2,4],[14,5],[6,3],[2,3,8,3],[12,3,3,3]];
 function isExplorerVisible(box) {
@@ -546,16 +546,17 @@ function refresh(box){
  if(box._taLoading||box._taFailed)return;box._taLoading=true;status.textContent='Loading TradingView Technicals…';
  const watch=new MutationObserver(()=>{
   const frame=host.querySelector('iframe');if(!frame)return;
-  box._taFrame=frame;box._taParent=frame.parentElement;frame.title=box.dataset.taSymbol+' TradingView Technicals: summary, oscillators and moving averages';
+  box._taFrame=frame;box._taParent=frame.parentElement;frame.setAttribute('scrolling','no');frame.title=box.dataset.taSymbol+' TradingView Technicals: summary, oscillators and moving averages';
   frame.addEventListener('load',()=>{status.hidden=true;});watch.disconnect();if(!visible(box))frame.remove();
  });watch.observe(host,{childList:true,subtree:true});
  const script=document.createElement('script');script.async=true;script.src='https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js';
- script.textContent=JSON.stringify({interval:box.dataset.taInterval,width:'100%',height:440,symbol:box.dataset.taSymbol,showIntervalTabs:true,displayMode:'multiple',locale:'en',colorTheme:'light',isTransparent:false,disableInterval:false});
+ script.textContent=JSON.stringify({interval:box.dataset.taInterval,width:1080,height:440,symbol:box.dataset.taSymbol,showIntervalTabs:true,displayMode:'multiple',locale:'en',colorTheme:'light',isTransparent:false,disableInterval:false});
  script.onerror=()=>{watch.disconnect();box._taLoading=false;box._taFailed=true;status.hidden=false;status.textContent='TradingView could not load. Open the technical-analysis link above.';};host.appendChild(script);
 }
 function schedule(){if(pending)return;pending=true;requestAnimationFrame(()=>{pending=false;document.querySelectorAll('.tv-technicals').forEach(refresh);});}
 const observer=new IntersectionObserver(entries=>{for(const entry of entries){entry.target._taNear=entry.isIntersecting;refresh(entry.target);}},{rootMargin:'120px',threshold:.01});
-function initialise(){document.querySelectorAll('.tv-technicals:not([data-ta-ready])').forEach(box=>{box.dataset.taReady='true';observer.observe(box);});}
+const sizes=new ResizeObserver(entries=>{for(const {target,contentRect} of entries){const scale=Math.min(1/3,contentRect.width/1080);target.style.setProperty('--ta-scale',scale);target.style.height=(465*scale)+'px';}});
+function initialise(){document.querySelectorAll('.tv-technicals:not([data-ta-ready])').forEach(box=>{box.dataset.taReady='true';sizes.observe(box.querySelector('.tv-technicals-scroll'));observer.observe(box);});}
 document.addEventListener('toggle',schedule,true);
 new MutationObserver(records=>{if(records.some(r=>r.type==='childList'))initialise();schedule();}).observe(document.body,{childList:true,subtree:true,attributes:true,attributeFilter:['open','hidden']});
 initialise();
