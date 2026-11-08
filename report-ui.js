@@ -86,7 +86,7 @@ document.querySelectorAll('details.portfolio-sensitivity').forEach(function(sens
   });
 });
 
-const reportVersion='3bcad762a50e';
+const reportVersion='65e4fef788a0';
 const palette = ['#1b1b1b','#e41a1c','#377eb8','#4daf4a','#984ea3','#ff7f00','#a65628','#f781bf','#008080','#6a3d9a','#b2182b','#2166ac','#1b9e77','#d95f02'];
 const linePatterns = [[],[10,5],[2,4],[10,4,2,4],[14,5],[6,3],[2,3,8,3],[12,3,3,3]];
 function isExplorerVisible(box) {
@@ -550,12 +550,12 @@ function refresh(box){
   frame.addEventListener('load',()=>{status.hidden=true;});watch.disconnect();if(!visible(box))frame.remove();
  });watch.observe(host,{childList:true,subtree:true});
  const script=document.createElement('script');script.async=true;script.src='https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js';
- script.textContent=JSON.stringify({interval:box.dataset.taInterval,width:780,height:720,symbol:box.dataset.taSymbol,showIntervalTabs:true,displayMode:'multiple',locale:'en',colorTheme:'light',isTransparent:false,disableInterval:false});
+ script.textContent=JSON.stringify({interval:box.dataset.taInterval,width:800,height:720,symbol:box.dataset.taSymbol,showIntervalTabs:true,displayMode:'multiple',locale:'en',colorTheme:'light',isTransparent:false,disableInterval:false});
  script.onerror=()=>{watch.disconnect();box._taLoading=false;box._taFailed=true;status.hidden=false;status.textContent='TradingView could not load. Open the technical-analysis link above.';};host.appendChild(script);
 }
 function schedule(){if(pending)return;pending=true;requestAnimationFrame(()=>{pending=false;document.querySelectorAll('.tv-technicals').forEach(refresh);});}
 const observer=new IntersectionObserver(entries=>{for(const entry of entries){entry.target._taNear=entry.isIntersecting;refresh(entry.target);}},{rootMargin:'120px',threshold:.01});
-const sizes=new ResizeObserver(entries=>{for(const {target,contentRect} of entries){const width=Math.min(360,contentRect.width),height=294*width/360;target.style.setProperty('--ta-scale-x',width/780);target.style.setProperty('--ta-scale-y',height/744);target.style.height=height+'px';}});
+const sizes=new ResizeObserver(entries=>{for(const {target,contentRect} of entries){const width=Math.min(416.7,contentRect.width),height=294*Math.min(1,width/416.7);target.style.setProperty('--ta-scale-x',width/800);target.style.setProperty('--ta-scale-y',height/744);target.style.height=height+'px';}});
 function initialise(){document.querySelectorAll('.tv-technicals:not([data-ta-ready])').forEach(box=>{box.dataset.taReady='true';sizes.observe(box.querySelector('.tv-technicals-scroll'));observer.observe(box);});}
 document.addEventListener('toggle',schedule,true);
 new MutationObserver(records=>{if(records.some(r=>r.type==='childList'))initialise();schedule();}).observe(document.body,{childList:true,subtree:true,attributes:true,attributeFilter:['open','hidden']});
