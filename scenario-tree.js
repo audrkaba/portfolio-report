@@ -73,7 +73,8 @@ const number=(n,d=2)=>new Intl.NumberFormat('lt-LT',{minimumFractionDigits:d,max
 const euro=n=>new Intl.NumberFormat('lt-LT',{style:'currency',currency:'EUR',maximumFractionDigits:2}).format(n);
 const pct=n=>number(n*100,3)+' %';
 const date=s=>new Intl.DateTimeFormat('lt-LT',{year:'numeric',month:'2-digit',day:'2-digit',timeZone:'UTC'}).format(new Date(s+'T12:00:00Z'));
-const regimes=['','R1 · Abu ramūs','R2 · Baltijos stresas','R3 · Pasaulio stresas','R4 · Abu įtempti'];
+const regimes=['','R1 · Baltijos ir pasaulio biržos ramios','R2 · Baltijos biržų stresas (pasaulio ramios)','R3 · Pasaulio biržų stresas (Baltijos ramios)','R4 · Baltijos ir pasaulio biržų stresas'];
+const treeRegimes=['','R1 · Abi rinkų grupės ramios','R2 · Baltijos biržų stresas','R3 · Pasaulio biržų stresas','R4 · Abiejų rinkų grupių stresas'];
 let data,state,manualZoom=false;
 const assetPopup=createScenarioAssetPopup();
 const selected=()=>data.policies[state.plan],leaf=()=>data.leaves[state.leaf],decision=()=>selected().decisions[state.node];
@@ -103,7 +104,7 @@ function fullTree(){
   const members=data.leaves.map((l,i)=>({l,i})).filter(v=>v.l.regime===r),total=members.reduce((s,v)=>s+v.l.probability,0),center=142+(r-1)*245;
   const activeR=state.stage==='recourse'&&active.regime===r;
   edges+=curved(206,490,300,center,activeR?'active':'',1+8*total);
-  boxes+=box(300,center-39,245,78,'regime',r,[regimes[r],'P(R) = '+pct(total),members.length+' atskiri II etapo sprendiniai'],activeR);
+  boxes+=box(300,center-39,245,78,'regime',r,[treeRegimes[r],'P(R) = '+pct(total),members.length+' atskiri II etapo sprendiniai'],activeR);
   members.sort((a,b)=>a.l.cluster-b.l.cluster).forEach(({l,i},j)=>{
    const yy=center-106+j*48,p=selected(),changes=p.decisions[l.node].units.filter((q,k)=>q!==p.units[k]).length,chosen=state.stage==='recourse'&&state.leaf===i;
    edges+=curved(545,center,650,yy+22,chosen?'active':'',1+5*l.probability/total);
@@ -123,7 +124,7 @@ function tree(){
   const members=data.leaves.map((l,i)=>({l,i})).filter(v=>v.l.node===n&&v.l.regime===r);if(!members.length)continue;
   const total=members.reduce((s,v)=>s+v.l.probability,0),center=142+(r-1)*245;
   edges+=curved(469,342+n*114,548,center,'future-edge'+(state.stage==='recourse'&&active.regime===r?' active':''),1+7*total/node.probability);
-  boxes+=box(548,center-39,214,78,'regime',r,[regimes[r],'P(R | '+node.label+') = '+pct(total/node.probability),'P(N ir R) = '+pct(total)],state.stage==='recourse'&&active.regime===r,true);
+  boxes+=box(548,center-39,214,78,'regime',r,[treeRegimes[r],'P(R | '+node.label+') = '+pct(total/node.probability),'P(N ir R) = '+pct(total)],state.stage==='recourse'&&active.regime===r,true);
   members.sort((a,b)=>a.l.cluster-b.l.cluster).forEach(({l,i},j)=>{const yy=center-106+j*48;edges+=curved(762,center,844,yy+21,'future-edge'+(state.stage==='recourse'&&state.leaf===i?' active':''),1+5*l.probability/total);boxes+=box(844,yy,304,42,'leaf',i,['K'+l.cluster+' · P(visa šaka) = '+pct(l.probability)],state.stage==='recourse'&&state.leaf===i,true);});
  }
  $('graph').innerHTML=`<svg viewBox="0 0 1170 1020" xmlns="http://www.w3.org/2000/svg" role="group" aria-label="Scenarijų medžio šakos"><rect x="520" y="8" width="640" height="1000" rx="12" fill="#f5f8fc"/><text class="tree-heading" x="20" y="35">I etapas</text><text class="tree-heading" x="264" y="35">II etapas · ${esc(date(data.dates[data.recourse_step]))}</text><text class="tree-heading" x="548" y="35">Ateitis: rekursijos momentu nežinoma</text>${edges}${boxes}</svg>`;
