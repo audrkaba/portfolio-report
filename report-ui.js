@@ -86,7 +86,7 @@ document.querySelectorAll('details.portfolio-sensitivity').forEach(function(sens
   });
 });
 
-const reportVersion='1d0d10effd67';
+const reportVersion='00c2c333381b';
 const palette = ['#1b1b1b','#e41a1c','#377eb8','#4daf4a','#984ea3','#ff7f00','#a65628','#f781bf','#008080','#6a3d9a','#b2182b','#2166ac','#1b9e77','#d95f02'];
 const linePatterns = [[],[10,5],[2,4],[10,4,2,4],[14,5],[6,3],[2,3,8,3],[12,3,3,3]];
 function isExplorerVisible(box) {
@@ -536,10 +536,12 @@ window.addEventListener('message',event=>{
 // Official gauges load only for open profiles near the viewport.
 (()=>{'use strict';
 let pending=false;
-const visible=box=>{if(!box._taNear)return false;for(let p=box;p;p=p.parentElement)if(p.hidden||(p.tagName==='DETAILS'&&!p.open))return false;return true;};
+const profileOpen=box=>{for(let p=box;p;p=p.parentElement)if(p.hidden||(p.tagName==='DETAILS'&&!p.open))return false;return true;};
+const visible=box=>box._taNear&&profileOpen(box);
 function refresh(box){
  const host=box.querySelector('.tv-technicals-host'),status=box.querySelector('.tv-technicals-status');
- if(!visible(box)){if(box._taFrame?.isConnected)box._taFrame.remove();return;}
+ if(!profileOpen(box)){if(box._taFrame?.isConnected)box._taFrame.remove();return;}
+ if(!box._taNear)return;
  if(box._taFrame){if(!box._taFrame.isConnected)box._taParent.appendChild(box._taFrame);return;}
  if(box._taLoading||box._taFailed)return;box._taLoading=true;status.textContent='Loading TradingView Technicals…';
  const watch=new MutationObserver(()=>{
