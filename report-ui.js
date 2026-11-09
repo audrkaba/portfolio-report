@@ -581,7 +581,7 @@ if(basketDataElement){
  const originals=new WeakMap();
   window.updateSelectedPortfolioProfile=function(profile,scope,policy){
   const table=profile.querySelector('table'),summary=profile.querySelector(':scope > summary');if(!table||!summary)return;
-  if(!originals.has(profile))originals.set(profile,{table:table.innerHTML,summary:summary.innerHTML});
+  if(!originals.has(profile))originals.set(profile,{table:table.innerHTML,summary:summary.innerHTML,name:summary.textContent.split('|')[0].trim().replace(/^.*?\u2014\s*/,'')});
   const saved=originals.get(profile),asset=profile.id.replace(/^(share-|fund-)/,'').toUpperCase();
   const context=regimeData?.contexts[historyKey()],diagnostic=context?.diagnostics[asset];
   table.innerHTML=saved.table;table.classList.add('selected-portfolio-allocation');
@@ -629,7 +629,7 @@ if(basketDataElement){
   const metricNote=document.createElement('p');metricNote.className='profile-metric-scope-note';metricNote.textContent='Individual netSD, OUT and IN use the selected history. Rachev and Sortino in the table use the full training sample; technical indicators use the latest price history. The original sensitivity section describes the stochastic reference portfolio.';notes.append(metricNote);
   if(plans.length){profile.dataset.signal=[...new Set(plans.map(z=>z.decision))].join(' ');profile.dataset.hasUpdate=String(plans.some(z=>z.change!==0));profile.dataset.netsdEffect=[...new Set(plans.map(z=>effect(z.impact?.delta??diagnostic?.add_delta??0)))].join(' ');}
   else{const changes=Object.values(data).flatMap(cases=>Object.values(cases).map(b=>(b.rows.find(z=>z.asset===asset)?.units??0)-currentHolding(asset,b)));profile.dataset.signal=[...new Set(changes.map(v=>v>0?'BUY':v<0?'SELL':'HOLD'))].join(' ');profile.dataset.hasUpdate=String(changes.some(v=>v!==0));if(diagnostic)profile.dataset.netsdEffect=effect(diagnostic.add_delta);}
-  summary.textContent=asset+' \u2014 '+(assetInfo[asset]?.name??asset)+(plans.length?' | current action: '+[...new Set(plans.map(z=>z.decision))].join(' / ')+' | allocation target '+(target??'\u2014')+' units':'');
+  summary.textContent=asset+' \u2014 '+(assetInfo[asset]?.name??saved.name??asset)+(plans.length?' | current action: '+[...new Set(plans.map(z=>z.decision))].join(' / ')+' | allocation target '+(target??'\u2014')+' units':'');
  };
 
  function currentHolding(asset,basket){return assetInfo[asset]?.current_units??basket.rows.find(z=>z.asset===asset)?.current_units??0;}
