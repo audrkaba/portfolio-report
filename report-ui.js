@@ -89,7 +89,7 @@ document.querySelectorAll('details.portfolio-sensitivity').forEach(function(sens
   });
 });
 
-const reportVersion='3b1fb1d57ce1';
+const reportVersion='ac94b9a9b469';
 const palette = ['#1b1b1b','#e41a1c','#377eb8','#4daf4a','#984ea3','#ff7f00','#a65628','#f781bf','#008080','#6a3d9a','#b2182b','#2166ac','#1b9e77','#d95f02'];
 const linePatterns = [[],[10,5],[2,4],[10,4,2,4],[14,5],[6,3],[2,3,8,3],[12,3,3,3]];
 function isExplorerVisible(box) {
@@ -563,6 +563,37 @@ function initialise(){document.querySelectorAll('.tv-technicals:not([data-ta-rea
 document.addEventListener('toggle',schedule,true);
 new MutationObserver(records=>{if(records.some(r=>r.type==='childList'))initialise();schedule();}).observe(document.body,{childList:true,subtree:true,attributes:true,attributeFilter:['open','hidden']});
 initialise();
+})();
+
+(function () {
+  function initEnergy() {
+    const section = document.getElementById('compute-energy');
+    if (!section || section.dataset.energyReady) return;
+    section.dataset.energyReady = 'yes';
+    const controls = Array.from(section.querySelectorAll('[data-energy-control]'));
+    const rows = Array.from(section.querySelectorAll('#compute-energy-scenarios tbody tr'));
+    function update() {
+      if (controls.some(input => !input.value.trim() || !input.validity.valid)) {
+        section.querySelector('[data-energy-status]').textContent = 'Enter valid assumptions within the displayed input limits.';
+        rows.forEach(row => ['kwh','cost','co2'].forEach(key => row.querySelector('[data-energy-'+key+']').textContent = '—'));
+        return;
+      }
+      const value = Object.fromEntries(controls.map(input => [input.dataset.energyControl, Number(input.value)]));
+      const energy = rows.map(row => (Number(row.dataset.energyComponentJ) + value.other * Number(row.dataset.energySeconds)) / (value.efficiency / 100) / 3600000 * value.evaluations / 512);
+      const largest = Math.max(...energy);
+      rows.forEach((row,index) => {
+        row.querySelector('[data-energy-kwh]').textContent = energy[index].toFixed(6);
+        row.querySelector('[data-energy-cost]').textContent = (energy[index] * value.price).toFixed(6);
+        row.querySelector('[data-energy-co2]').textContent = (energy[index] * value.carbon).toFixed(4);
+        row.querySelector('[data-energy-bar]').style.width = (largest ? energy[index] / largest * 100 : 0) + '%';
+      });
+      section.querySelector('[data-energy-status]').textContent = 'Illustrative scenario recalculated for ' + value.evaluations.toLocaleString('en') + ' candidate evaluations; startup excluded.';
+    }
+    controls.forEach(input => input.addEventListener('input', update));
+    update();
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initEnergy);
+  else initEnergy();
 })();
 
 
