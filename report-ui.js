@@ -89,7 +89,7 @@ document.querySelectorAll('details.portfolio-sensitivity').forEach(function(sens
   });
 });
 
-const reportVersion='bd2879ac4e4f';
+const reportVersion='49f36ab5557c';
 const palette = ['#1b1b1b','#e41a1c','#377eb8','#4daf4a','#984ea3','#ff7f00','#a65628','#f781bf','#008080','#6a3d9a','#b2182b','#2166ac','#1b9e77','#d95f02'];
 const linePatterns = [[],[10,5],[2,4],[10,4,2,4],[14,5],[6,3],[2,3,8,3],[12,3,3,3]];
 function isExplorerVisible(box) {
@@ -655,6 +655,7 @@ if(basketDataElement){
    const evaluated=evaluation(scope,key);
    const title=document.createElement('summary');title.textContent=scope+' · '+(key==='SALE'?'Sales allowed':'No sales')+' · '+(context?.label||'Full history')+' · invested EUR '+basket.total.toFixed(2)+' · cash EUR '+basket.cash.toFixed(2)+(evaluated?' · netSD '+evaluated.netSD.toFixed(6):'');box.append(title);
    const note=document.createElement('p');note.textContent=(scope!=='NETSD'&&historyKey()!=='FULL'?'Full-history allocation, evaluated in '+context.label+'. Its quantities were not reoptimised for this regime. ':'')+basket.status+' Profile quantities and execution decisions follow this portfolio; technical indicators describe the instrument.';box.append(note);
+   if(basket.sector_exposure){const p=document.createElement('p'),top=basket.sector_exposure.reduce((a,b)=>a.maximum_weight>b.maximum_weight?a:b);p.className='sector-limit-note';p.textContent='Sector limit '+(100*basket.sector_limit).toFixed(0)+'% of total portfolio wealth including cash. Largest sector exposure upper bound: '+top.sector+' '+(100*top.maximum_weight).toFixed(2)+'%. Fund exposure uses the latest reported sector weights with conservative look-through; ambiguous or unreported allocations count toward every compatible sector. The limit applies to initial allocations and scenario recourse decisions; future price movements can change concentrations.';box.append(p);}
    const m=evaluated?.metrics??basket.metrics,stats=document.createElement('p');stats.textContent='Training fixed-allocation statistics ('+m.training_observations+' observations; cash at zero interest): mean/day '+m.mean_daily_percent.toFixed(4)+'%; '+(m.annualised_SD_percent==null?'conditional daily SD '+m.daily_SD_percent.toFixed(2)+'%':'annualised SD '+m.annualised_SD_percent.toFixed(2)+'%')+'; daily CVaR95 loss '+m.daily_CVaR95_loss_percent.toFixed(2)+'%; '+(m.maximum_drawdown_percent==null?'drawdown not computed from nonconsecutive regime days':'maximum drawdown '+m.maximum_drawdown_percent.toFixed(2)+'%')+'. Descriptive comparison, not a strategy backtest.';box.append(stats);
    const table=document.createElement('table');table.className='research-table';
    const head=table.createTHead().insertRow();['Instrument','Name','Current units','Target units','Change','Latest price (EUR)','Price date','Value (EUR)','Weight'].forEach(t=>{const c=document.createElement('th');c.textContent=t;head.append(c)});

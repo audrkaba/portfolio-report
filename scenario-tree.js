@@ -208,6 +208,8 @@ function orders(){
  if(!count)$('orders-table').querySelector('tbody').innerHTML='<tr><td colspan="9">Šiame etape sandorių nėra. Nuimkite filtrą, kad matytumėte laikomas pozicijas.</td></tr>';
  const cash=initial?p.cash:d.cash;let info=`<span>Pirkimai: <strong>${esc(euro(buys))}</strong></span><span>Pardavimai: <strong>${esc(euro(sells))}</strong></span><span>Grynieji po etapo: <strong>${esc(euro(cash))}</strong></span>`;
  if(!initial)info+=`<span>Turto vertė mazge: <strong>${esc(euro(d.wealth_before))}</strong></span><span>Rekursijos poveikis galutinei vertei: <strong>${esc(euro(p.results[state.leaf].final_wealth-p.results[state.leaf].no_recourse_wealth.at(-1)))}</strong></span>`;
+ const sectors=initial?p.sector_exposure:d.sector_exposure;
+ if(sectors?.length){const top=sectors.reduce((a,b)=>a.maximum_weight>b.maximum_weight?a:b);info+=`<span>Sektoriaus riba sprendimo metu: <strong>${esc(pct(data.sector_limit))}</strong>; didžiausia ekspozicijos viršutinė riba: <strong>${esc(top.sector)} ${esc(pct(top.maximum_weight))}</strong>. Įtraukiama fondų sudėtis ir grynieji bendroje turto vertėje.</span>`;}
  $('cashline').innerHTML=info;
 }
 function render(){
