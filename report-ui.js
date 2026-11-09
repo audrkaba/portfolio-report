@@ -63,12 +63,14 @@ document.querySelectorAll('.profile-filters').forEach(function(filterBlock) {
     const selectedUpdate=updateFilters.find(box=>box.checked)?.value || 'ALL';
     let visible=0;
     profiles.forEach(function(profile) {
+        if(window.updateSelectedPortfolioProfile)window.updateSelectedPortfolioProfile(profile,selectedScope,selectedSale);
         const type=profile.classList.contains('fund-profile')?'FUND':'SHARE';
         const scopes=(profile.dataset.portfolioScopes??'STOCHASTIC ANY').split(' ');
         const saleMembership=JSON.parse(profile.dataset.saleMembership||'{}');
         const saleMatch=selectedSale==='ALL'||(saleMembership[selectedScope]||[]).includes(selectedSale);
         const updateMatch=selectedUpdate==='ALL'||profile.dataset.hasUpdate==='true';
-        const show=updateMatch && saleMatch && (selectedScope==='ALL'||scopes.includes(selectedScope)) && (selectedType==='ALL'||selectedType===type) && selectedSignals.has(profile.dataset.signal) && selectedNetsdEffects.has(profile.dataset.netsdEffect) && selectedDividendStatuses.has(profile.dataset.dividendStatus);
+        const signalMatch=(profile.dataset.signal||'').split(' ').some(signal=>selectedSignals.has(signal));
+        const show=updateMatch && saleMatch && (selectedScope==='ALL'||scopes.includes(selectedScope)) && (selectedType==='ALL'||selectedType===type) && signalMatch && selectedNetsdEffects.has(profile.dataset.netsdEffect) && selectedDividendStatuses.has(profile.dataset.dividendStatus);
       profile.hidden=!show;
       if (!show) profile.open=false;
       if (show) visible++;
@@ -86,7 +88,7 @@ document.querySelectorAll('details.portfolio-sensitivity').forEach(function(sens
   });
 });
 
-const reportVersion='e6b7b2a4aa29';
+const reportVersion='d8962904c978';
 const palette = ['#1b1b1b','#e41a1c','#377eb8','#4daf4a','#984ea3','#ff7f00','#a65628','#f781bf','#008080','#6a3d9a','#b2182b','#2166ac','#1b9e77','#d95f02'];
 const linePatterns = [[],[10,5],[2,4],[10,4,2,4],[14,5],[6,3],[2,3,8,3],[12,3,3,3]];
 function isExplorerVisible(box) {
@@ -567,6 +569,38 @@ initialise();
 const basketDataElement=document.getElementById('current-portfolio-baskets');
 if(basketDataElement){
  const data=JSON.parse(basketDataElement.textContent), host=document.querySelector('.current-portfolio-composition');
+ const assetInfo={};Object.values(data).forEach(cases=>Object.values(cases).forEach(b=>b.rows.forEach(z=>assetInfo[z.asset]=z)));
+ const originals=new WeakMap();
+ window.updateSelectedPortfolioProfile=function(profile,scope,policy){
+  const table=profile.querySelector('table'),summary=profile.querySelector(':scope > summary');if(!table||!summary)return;
+  if(!originals.has(profile))originals.set(profile,{table:table.innerHTML,summary:summary.innerHTML,signal:profile.dataset.signal,update:profile.dataset.hasUpdate});
+  const saved=originals.get(profile),asset=profile.id.replace(/^(share-|fund-)/,'').toUpperCase();
+  if(!data[scope]){table.innerHTML=saved.table;summary.innerHTML=saved.summary;profile.dataset.signal=saved.signal;profile.dataset.hasUpdate=saved.update;return;}
+  const template=document.createElement('table');template.innerHTML=saved.table;
+  const labels=[...template.querySelectorAll('thead th')].map(x=>x.textContent.trim().replace(/\s+/g,' ').toLowerCase());
+  const originalRow=template.querySelector('tbody tr');if(!originalRow)return;
+  const current=assetInfo[asset]?.current_units??Number(originalRow.cells[labels.indexOf('current units')]?.textContent||0);
+  const cases=Object.entries(data[scope]).filter(([key])=>policy==='ALL'||policy===key);
+  table.innerHTML=saved.table;table.tBodies[0].replaceChildren();
+  const policyHead=document.createElement('th');policyHead.textContent='Portfolio / policy';table.tHead.rows[0].prepend(policyHead);
+  const decisionHead=document.createElement('th');decisionHead.textContent='Execution decision';table.tHead.rows[0].append(decisionHead);
+  const signals=[],titles=[];let changed=false;
+  for(const [key,basket] of cases){
+   const selected=basket.rows.find(z=>z.asset===asset),target=selected?.units??0,change=target-current;
+   const decision=change>0?'BUY':change<0?'SELL':'HOLD';signals.push(decision);changed ||= change!==0;
+   const row=originalRow.cloneNode(true);
+   for(const [label,value] of Object.entries({'current units':current,'target units':target,'change':change,'weight':(selected?.weight??0).toFixed(6)})){
+    const index=labels.indexOf(label);if(index>=0)row.cells[index].textContent=value;
+   }
+   const dividendUnit=Number(originalRow.cells[labels.indexOf('avg dividend / unit eur')]?.textContent||0);
+   const dividendIndex=labels.indexOf('avg annual dividends: target units eur');if(dividendIndex>=0)row.cells[dividendIndex].textContent=(dividendUnit*target).toFixed(4);
+   const context=row.insertCell(0);context.textContent=scope+' / '+(key==='SALE'?'Sale':'No-sale');
+   row.insertCell().textContent=decision;table.tBodies[0].append(row);
+   titles.push((key==='SALE'?'Sale':'No-sale')+': '+decision+'; target '+target+' units');
+  }
+  table.classList.add('selected-portfolio-allocation');profile.dataset.signal=[...new Set(signals)].join(' ');profile.dataset.hasUpdate=String(changed);
+  summary.textContent=asset+' — '+(assetInfo[asset]?.name??saved.summary.replace(/<[^>]*>/g,'').split('|')[0])+' | '+scope+' | '+titles.join(' | ');
+ };
  function drawBasket(){
   const scope=document.querySelector('input[name="portfolio-scope"]:checked')?.value||'STOCHASTIC';
   const policy=document.querySelector('input[name="sale-policy"]:checked')?.value||'ALL';
@@ -576,7 +610,7 @@ if(basketDataElement){
    if(policy!=='ALL'&&policy!==key)continue;
    const box=document.createElement('details');box.open=true;
    const title=document.createElement('summary');title.textContent=scope+' · '+(key==='SALE'?'Sales allowed':'No sales')+' · invested EUR '+basket.total.toFixed(2)+' · cash EUR '+basket.cash.toFixed(2);box.append(title);
-   const note=document.createElement('p');note.textContent=basket.status+' Technical decisions in the profiles refer to the main stochastic plan; this table shows the selected basket.';box.append(note);
+   const note=document.createElement('p');note.textContent=basket.status+' Profile quantities and execution decisions follow this portfolio; technical indicators describe the instrument.';box.append(note);
    const m=basket.metrics,stats=document.createElement('p');stats.textContent='Training fixed-allocation statistics ('+m.training_observations+' observations; cash at zero interest): mean/day '+m.mean_daily_percent.toFixed(4)+'%; annualised SD '+m.annualised_SD_percent.toFixed(2)+'%; daily CVaR95 loss '+m.daily_CVaR95_loss_percent.toFixed(2)+'%; maximum drawdown '+m.maximum_drawdown_percent.toFixed(2)+'%. Descriptive comparison, not a strategy backtest.';box.append(stats);
    const table=document.createElement('table');table.className='research-table';
    const head=table.createTHead().insertRow();['Instrument','Name','Current units','Target units','Change','Latest price (EUR)','Price date','Value (EUR)','Weight'].forEach(t=>{const c=document.createElement('th');c.textContent=t;head.append(c)});
@@ -584,4 +618,5 @@ if(basketDataElement){
   }
  }
  document.querySelectorAll('input[name="portfolio-scope"],input[name="sale-policy"]').forEach(x=>x.addEventListener('change',drawBasket));drawBasket();
+ document.querySelector('input[name="portfolio-scope"]:checked')?.dispatchEvent(new Event('change'));
 }
