@@ -89,7 +89,7 @@ document.querySelectorAll('details.portfolio-sensitivity').forEach(function(sens
   });
 });
 
-const reportVersion='95cb595816bd';
+const reportVersion='bd2879ac4e4f';
 const palette = ['#1b1b1b','#e41a1c','#377eb8','#4daf4a','#984ea3','#ff7f00','#a65628','#f781bf','#008080','#6a3d9a','#b2182b','#2166ac','#1b9e77','#d95f02'];
 const linePatterns = [[],[10,5],[2,4],[10,4,2,4],[14,5],[6,3],[2,3,8,3],[12,3,3,3]];
 function isExplorerVisible(box) {
@@ -573,7 +573,8 @@ if(basketDataElement){
  let data=fullData;
  const regimeDataElement=document.getElementById('regime-netsd-data'),regimeData=regimeDataElement?JSON.parse(regimeDataElement.textContent):null;
  const historyFilter=document.querySelector('select[name="profile-history-regime"]');
- let activeHistory='FULL',fullHistoryScope=document.querySelector('input[name="portfolio-scope"]:checked')?.value||'STOCHASTIC';
+ let activeHistory=historyFilter?.value||'FULL',fullHistoryScope=document.querySelector('input[name="portfolio-scope"]:checked')?.value||'STOCHASTIC';
+ if(regimeData)data={...fullData,NETSD:regimeData.portfolios[activeHistory]};
  function historyKey(){return historyFilter?.value||'FULL';}
  function evaluation(scope,policy){return regimeData?.evaluations[historyKey()]?.[scope]?.[policy];}
  const assetInfo={};Object.values(data).forEach(cases=>Object.values(cases).forEach(b=>b.rows.forEach(z=>assetInfo[z.asset]=z)));
