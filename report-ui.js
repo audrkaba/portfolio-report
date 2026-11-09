@@ -89,7 +89,7 @@ document.querySelectorAll('details.portfolio-sensitivity').forEach(function(sens
   });
 });
 
-const reportVersion='9b482d2d8bb8';
+const reportVersion='725c1ff31911';
 const palette = ['#1b1b1b','#e41a1c','#377eb8','#4daf4a','#984ea3','#ff7f00','#a65628','#f781bf','#008080','#6a3d9a','#b2182b','#2166ac','#1b9e77','#d95f02'];
 const linePatterns = [[],[10,5],[2,4],[10,4,2,4],[14,5],[6,3],[2,3,8,3],[12,3,3,3]];
 function isExplorerVisible(box) {
@@ -570,6 +570,7 @@ initialise();
     const section = document.getElementById('compute-energy');
     if (!section || section.dataset.energyReady) return;
     section.dataset.energyReady = 'yes';
+    const workload = Number(section.dataset.energyWorkload) || 512;
     const controls = Array.from(section.querySelectorAll('[data-energy-control]'));
     const rows = Array.from(section.querySelectorAll('#compute-energy-scenarios tbody tr'));
     function update() {
@@ -579,7 +580,7 @@ initialise();
         return;
       }
       const value = Object.fromEntries(controls.map(input => [input.dataset.energyControl, Number(input.value)]));
-      const energy = rows.map(row => (Number(row.dataset.energyComponentJ) + value.other * Number(row.dataset.energySeconds)) / (value.efficiency / 100) / 3600000 * value.evaluations / 512);
+      const energy = rows.map(row => (Number(row.dataset.energyComponentJ) + value.other * Number(row.dataset.energySeconds)) / (value.efficiency / 100) / 3600000 * value.evaluations / workload);
       const largest = Math.max(...energy);
       rows.forEach((row,index) => {
         row.querySelector('[data-energy-kwh]').textContent = energy[index].toFixed(6);
