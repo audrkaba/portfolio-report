@@ -89,7 +89,7 @@ document.querySelectorAll('details.portfolio-sensitivity').forEach(function(sens
   });
 });
 
-const reportVersion='4778aaf925ab';
+const reportVersion='7c97fb4c47dc';
 const palette = ['#1b1b1b','#e41a1c','#377eb8','#4daf4a','#984ea3','#ff7f00','#a65628','#f781bf','#008080','#6a3d9a','#b2182b','#2166ac','#1b9e77','#d95f02'];
 const linePatterns = [[],[10,5],[2,4],[10,4,2,4],[14,5],[6,3],[2,3,8,3],[12,3,3,3]];
 function isExplorerVisible(box) {
@@ -807,7 +807,7 @@ if(basketDataElement){
     notes.append(p);
     if((plan.future?.total_maximum??0)>0){
      const future=document.createElement('p');future.className='profile-future-purchases';future.dataset.policy=plan.key;future.dataset.commonFutureUnits=plan.future.total_minimum;
-     future.textContent=(plan.key==='SALE'?'Sale':'No-sale')+' — vėlesni pirkimai: '+plan.future.stages.map(s=>`${s.stage} etapas (${s.date}): ${s.minimum}–${s.maximum} vnt. (visiems ${s.nodes} etapo scenarijams bendra ${s.minimum} vnt.)`).join('; ')+`. Vėliau iš viso ${plan.future.total_minimum}–${plan.future.total_maximum} vnt. (visiems pilniems scenarijų keliams bendra ${plan.future.total_minimum} vnt.).`;
+     future.textContent=(plan.key==='SALE'?'Sale':'No-sale')+' — later purchases: '+plan.future.stages.map(s=>`Stage ${s.stage} (${s.date}): ${s.minimum}–${s.maximum} units (common to all ${s.nodes} stage scenarios: ${s.minimum} units)`).join('; ')+`. Total later purchases: ${plan.future.total_minimum}–${plan.future.total_maximum} units (common to all complete scenario paths: ${plan.future.total_minimum} units).`;
      notes.append(future);
     }
    }

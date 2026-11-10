@@ -1,6 +1,6 @@
 (()=>{'use strict';
 const $=id=>document.getElementById(id),query=new URLSearchParams(location.search),allowed=new Set(['SE0014261764']);
-const asset=query.get('asset'),num=(v,n=4)=>Number.isFinite(v)?new Intl.NumberFormat('lt-LT',{maximumFractionDigits:n}).format(v):'—';
+const asset=query.get('asset'),num=(v,n=4)=>Number.isFinite(v)?new Intl.NumberFormat('en-GB',{maximumFractionDigits:n}).format(v):'—';
 let doc,points=[],at=0;
 function draw(){
  const W=940,L=65,R=18,x=i=>L+i/Math.max(1,points.length-1)*(W-L-R),out=[];
@@ -35,7 +35,7 @@ async function start(){
  const version=document.querySelector('script[data-version]').dataset.version;
  const r=await fetch('interactive/yahoo-funds/'+asset+'.json?v='+version);if(!r.ok)throw new Error('HTTP '+r.status);doc=await r.json();
  $('title').textContent=doc.name+' · Yahoo Finance · EUR';$('source').href=doc.source_url;
- const checked=new Intl.DateTimeFormat('lt-LT',{dateStyle:'short',timeStyle:'short',timeZone:'Europe/Vilnius'}).format(new Date(doc.retrieved_at));
+ const checked=new Intl.DateTimeFormat('en-GB',{dateStyle:'short',timeStyle:'short',timeZone:'Europe/Vilnius'}).format(new Date(doc.retrieved_at));
  $('availability').textContent=`Latest NAV: ${doc.last_date}. Snapshot checked: ${checked} (Europe/Vilnius). Daily observations; no intraday series.`;
  if(doc.official_last_date)$('availability').textContent+=` Official EUR NAV used for portfolio valuation: ${doc.official_last_date}.`;
  if(doc.provider_behind_official)$('availability').textContent+=' Yahoo is behind the official source; this older display chart is not used to value or optimise portfolios.';
