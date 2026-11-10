@@ -89,7 +89,7 @@ document.querySelectorAll('details.portfolio-sensitivity').forEach(function(sens
   });
 });
 
-const reportVersion='d071b90dabde';
+const reportVersion='7b7f29b11481';
 const palette = ['#1b1b1b','#e41a1c','#377eb8','#4daf4a','#984ea3','#ff7f00','#a65628','#f781bf','#008080','#6a3d9a','#b2182b','#2166ac','#1b9e77','#d95f02'];
 const linePatterns = [[],[10,5],[2,4],[10,4,2,4],[14,5],[6,3],[2,3,8,3],[12,3,3,3]];
 function isExplorerVisible(box) {
@@ -764,7 +764,7 @@ if(basketDataElement){
   const context=regimeData?.contexts[historyKey()],noteHost=document.querySelector('.regime-analysis-note'),comparison=document.querySelector('.regime-portfolio-comparison');
   if(context&&noteHost){noteHost.textContent=context.label+': '+context.observations+' training observations; reference denominator D='+context.denominator+'. '+(context.small_sample?'Small sample: results are exploratory and can be unstable. ':'')+'Retrospective historical regime labels; '+context.unclassified_training_observations+' training sessions have no common-market regime label and are excluded only from R1–R4. Full history retains all training observations; the 126 diagnostic observations are not used to fit portfolios. netSD compares invested holdings, excluding cash, consistently with the existing reference network. Only the netSD model is independently optimised for each regime; other model allocations remain their full-history results and are evaluated in the selected regime.';}
   if(context&&comparison){
-   comparison.replaceChildren();const box=document.createElement('details'),title=document.createElement('summary');title.textContent='Portfolio netSD comparison — '+context.label;box.append(title);const table=document.createElement('table');table.className='research-table';const head=table.createTHead().insertRow();['Portfolio','Policy','netSD','Change vs Current','OUT','IN'].forEach(t=>{const c=document.createElement('th');c.textContent=t;head.append(c)});const body=table.createTBody();
+   comparison.replaceChildren();const box=document.createElement('details'),title=document.createElement('summary');title.textContent='Initial allocation historical netSD comparison — '+context.label;box.append(title);const table=document.createElement('table');table.className='research-table';const head=table.createTHead().insertRow();['Portfolio','Policy','Historical netSD at initial allocation','Change vs Current','OUT','IN'].forEach(t=>{const c=document.createElement('th');c.textContent=t;head.append(c)});const body=table.createTBody();
    const baseline=body.insertRow();['Current','Existing holdings',context.current_netSD.toFixed(6),'0.000000','—','—'].forEach(v=>baseline.insertCell().textContent=v);
    for(const [model,policies] of Object.entries(regimeData.evaluations[historyKey()]))for(const [key,e] of Object.entries(policies)){const row=body.insertRow();[model,key,e.netSD.toFixed(6),(e.netSD-context.current_netSD).toFixed(6),e.OUT,e.IN].forEach(v=>row.insertCell().textContent=v);}
    box.append(table);comparison.append(box);
