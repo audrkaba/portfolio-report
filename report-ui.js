@@ -89,7 +89,7 @@ document.querySelectorAll('details.portfolio-sensitivity').forEach(function(sens
   });
 });
 
-const reportVersion='1c4ec34128e4';
+const reportVersion='4cd678601392';
 const palette = ['#1b1b1b','#e41a1c','#377eb8','#4daf4a','#984ea3','#ff7f00','#a65628','#f781bf','#008080','#6a3d9a','#b2182b','#2166ac','#1b9e77','#d95f02'];
 const linePatterns = [[],[10,5],[2,4],[10,4,2,4],[14,5],[6,3],[2,3,8,3],[12,3,3,3]];
 function isExplorerVisible(box) {
@@ -596,6 +596,78 @@ initialise();
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initEnergy);
   else initEnergy();
 })();
+
+// Each baseline retains its fitted path. Only the explicit regime models react
+// to a changed initial state; no arbitrary drift adjustment is applied.
+function initialiseForecastComparison(box) {
+ if(box.dataset.ready)return;
+ box.dataset.ready='yes';
+ const data=JSON.parse(box.querySelector('.forecast-comparison-data').textContent);
+ const context=box.querySelector('.forecast-context'),family=box.querySelector('.forecast-family');
+ const canvas=box.querySelector('canvas'),note=box.querySelector('.forecast-context-note');
+ const table=box.querySelector('tbody'),options=box.querySelector('.forecast-method-options');
+ const global=document.querySelector('select[name="profile-history-regime"]');
+ const chosen=new Set(data.models.map(m=>m.label));
+ const colours=data.models.map((m,i)=>m.label==='Regime-weighted central'?'#111111':`hsl(${i*137.508%360} 65% 36%)`);
+ Object.entries(data.contexts).forEach(([key,label])=>{const option=document.createElement('option');option.value=key;option.textContent=label;context.append(option);});
+ context.value=global?.value||'CURRENT';
+ data.models.forEach((model,i)=>{
+  const label=document.createElement('label'),check=document.createElement('input');check.type='checkbox';check.checked=true;
+  label.style.color=colours[i];label.style.fontSize='.8rem';label.append(check,document.createTextNode(model.label));options.append(label);
+  check.addEventListener('change',()=>{if(check.checked)chosen.add(model.label);else chosen.delete(model.label);render();});
+ });
+ function values(model){return model.group==='Regime'?data.scenarios[context.value][model.label]:model.values;}
+ function visible(model){return chosen.has(model.label)&&(family.value==='ALL'||family.value===model.group);}
+ function draw(){
+  if(!canvas.getBoundingClientRect().width)return;
+  const width=Math.max(240,canvas.getBoundingClientRect().width),height=360,scale=devicePixelRatio||1;
+  canvas.width=width*scale;canvas.height=height*scale;const ctx=canvas.getContext('2d');ctx.scale(scale,scale);
+  const left=width<500?58:78,right=14,top=22,bottom=48;
+  const shown=data.models.filter(m=>visible(m)&&values(m));
+  const all=[data.last_price,...shown.flatMap(values)],lo=Math.min(...all),hi=Math.max(...all);
+  const pad=Math.max((hi-lo)*.12,data.last_price*.001),low=lo-pad,high=hi+pad;
+  const times=[data.origin,...data.dates].map(d=>Date.parse(d+'T12:00:00Z'));
+  const x=j=>left+(times[j]-times[0])/(times.at(-1)-times[0])*(width-left-right);
+  const y=v=>top+(high-v)/(high-low)*(height-top-bottom);
+  ctx.font='11px sans-serif';ctx.lineWidth=1;
+  for(let k=0;k<=5;k++){
+   const value=low+(high-low)*k/5,yy=y(value);ctx.strokeStyle='#e2e7eb';ctx.beginPath();ctx.moveTo(left,yy);ctx.lineTo(width-right,yy);ctx.stroke();
+   ctx.fillStyle='#40515e';ctx.textAlign='right';ctx.fillText(value.toFixed(value<1?4:2),left-6,yy+4);
+  }
+  for(const j of [0,5,10,15,20].filter(j=>j<times.length)){
+   ctx.fillStyle='#40515e';ctx.textAlign=j===0?'left':j===20?'right':'center';ctx.fillText(j===0?'Origin':`W${j/5}`,x(j),height-bottom+18);
+   if(width>600)ctx.fillText((j===0?data.origin:data.dates[j-1]).slice(5),x(j),height-bottom+34);
+  }
+  data.models.forEach((model,i)=>{
+   if(!visible(model)||!values(model))return;
+   const path=[data.last_price,...values(model)];ctx.strokeStyle=colours[i];ctx.lineWidth=model.label==='Regime-weighted central'?3:1.5;
+   ctx.setLineDash(model.group==='Regime'?[]:model.group==='Weekly'?[3,3]:[7,3]);ctx.beginPath();path.forEach((v,j)=>{if(j)ctx.lineTo(x(j),y(v));else ctx.moveTo(x(j),y(v));});ctx.stroke();
+  });ctx.setLineDash([]);
+  ctx.textAlign='left';ctx.fillStyle='#40515e';ctx.fillText('EUR per unit',left,13);
+  canvas.dataset.context=context.value;canvas.dataset.methodCount=shown.length;
+ }
+ function render(){
+  canvas.dataset.context=context.value;
+  const central=data.scenarios[context.value]['Regime-weighted central'].at(-1);
+  note.textContent=`${data.contexts[context.value]}. Central EUR ${central.toFixed(4)} (${(100*(central/data.last_price-1)).toFixed(2)}%) on ${data.dates.at(-1)}. Information cutoff ${data.as_of}; last quote ${data.origin}. Baseline methods use full history; they do not change with this selector.`;
+  table.replaceChildren();
+  data.models.forEach((model,i)=>{
+   if(!visible(model))return;
+   const path=values(model),row=table.insertRow();row.dataset.method=model.label;row.dataset.context=context.value;
+   const number=v=>v==null?'—':Number(v).toFixed(4);
+   const cells=[model.label+(model.selected?' [production selected]':''),model.group==='Regime'?(context.value==='FULL'?'Pooled':context.value):'Full history',
+    ...[4,9,14,19].map(j=>path?number(path[j]):'Unavailable'),path?number(100*(path.at(-1)/data.last_price-1)):'—',
+    number(model.validation_MAE_pp),number(model.test_MAE_pp),model.status];
+   cells.forEach((value,j)=>{const cell=row.insertCell();cell.textContent=value;if(j===0){cell.style.borderLeft=`4px solid ${colours[i]}`;cell.style.whiteSpace='normal';}});
+  });canvas.dataset.methodCount=data.models.filter(m=>visible(m)&&values(m)).length;draw();
+ }
+ context.addEventListener('change',render);family.addEventListener('change',render);
+ global?.addEventListener('change',()=>{context.value=global.value;render();});
+ new ResizeObserver(draw).observe(canvas);
+ box.closest('.weekly-forecast')?.addEventListener('toggle',()=>{if(box.closest('.weekly-forecast').open)draw();});
+ render();
+}
+document.querySelectorAll('.forecast-comparison').forEach(initialiseForecastComparison);
 
 
 
