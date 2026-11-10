@@ -89,7 +89,7 @@ document.querySelectorAll('details.portfolio-sensitivity').forEach(function(sens
   });
 });
 
-const reportVersion='bab11b15935d';
+const reportVersion='481d94fc9ec8';
 const palette = ['#1b1b1b','#e41a1c','#377eb8','#4daf4a','#984ea3','#ff7f00','#a65628','#f781bf','#008080','#6a3d9a','#b2182b','#2166ac','#1b9e77','#d95f02'];
 const linePatterns = [[],[10,5],[2,4],[10,4,2,4],[14,5],[6,3],[2,3,8,3],[12,3,3,3]];
 function isExplorerVisible(box) {
@@ -604,6 +604,7 @@ function initialiseForecastComparison(box) {
  box.dataset.ready='yes';
  const data=JSON.parse(box.querySelector('.forecast-comparison-data').textContent);
  const context=box.querySelector('.forecast-context'),family=box.querySelector('.forecast-family');
+ const historyToggle=box.querySelector('.forecast-show-history');
  const canvas=box.querySelector('canvas'),note=box.querySelector('.forecast-context-note');
  const table=box.querySelector('tbody'),options=box.querySelector('.forecast-method-options');
  const global=document.querySelector('select[name="profile-history-regime"]');
@@ -624,18 +625,28 @@ function initialiseForecastComparison(box) {
   canvas.width=width*scale;canvas.height=height*scale;const ctx=canvas.getContext('2d');ctx.scale(scale,scale);
   const left=width<500?58:78,right=14,top=22,bottom=48;
   const shown=data.models.filter(m=>visible(m)&&values(m));
-  const all=[data.last_price,...shown.flatMap(values)],lo=Math.min(...all),hi=Math.max(...all);
+  const history=historyToggle.checked?data.history:[];
+  canvas.dataset.historyPoints=history.length;
+  const all=[data.last_price,...history.map(p=>p.price),...shown.flatMap(values)],lo=Math.min(...all),hi=Math.max(...all);
   const pad=Math.max((hi-lo)*.12,data.last_price*.001),low=lo-pad,high=hi+pad;
   const times=[data.origin,...data.dates].map(d=>Date.parse(d+'T12:00:00Z'));
-  const x=j=>left+(times[j]-times[0])/(times.at(-1)-times[0])*(width-left-right);
+  const start=history.length?Date.parse(history[0].date+'T12:00:00Z'):times[0];
+  const xTime=t=>left+(t-start)/(times.at(-1)-start)*(width-left-right),x=j=>xTime(times[j]);
   const y=v=>top+(high-v)/(high-low)*(height-top-bottom);
+  ctx.fillStyle='#f0f7fb';ctx.fillRect(x(0),top,width-right-x(0),height-top-bottom);
   ctx.font='11px sans-serif';ctx.lineWidth=1;
   for(let k=0;k<=5;k++){
    const value=low+(high-low)*k/5,yy=y(value);ctx.strokeStyle='#e2e7eb';ctx.beginPath();ctx.moveTo(left,yy);ctx.lineTo(width-right,yy);ctx.stroke();
    ctx.fillStyle='#40515e';ctx.textAlign='right';ctx.fillText(value.toFixed(value<1?4:2),left-6,yy+4);
   }
-  for(const j of [0,5,10,15,20].filter(j=>j<times.length)){
-   ctx.fillStyle='#40515e';ctx.textAlign=j===0?'left':j===20?'right':'center';ctx.fillText(j===0?'Origin':`W${j/5}`,x(j),height-bottom+18);
+  if(history.length){
+   const labels=[history[0],history[Math.floor(history.length/3)],history[Math.floor(2*history.length/3)]];
+   for(const [i,p] of labels.entries()){ctx.fillStyle='#40515e';ctx.textAlign=i===0?'left':'center';ctx.fillText(p.date.slice(5),xTime(Date.parse(p.date+'T12:00:00Z')),height-bottom+18);}
+   ctx.strokeStyle='#65717c';ctx.lineWidth=2;ctx.beginPath();history.forEach((p,i)=>{const xx=xTime(Date.parse(p.date+'T12:00:00Z'));if(i)ctx.lineTo(xx,y(p.price));else ctx.moveTo(xx,y(p.price));});ctx.stroke();
+   ctx.setLineDash([4,3]);ctx.strokeStyle='#738692';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(x(0),top);ctx.lineTo(x(0),height-bottom);ctx.stroke();ctx.setLineDash([]);
+  }
+  for(const j of (history.length?[0,20]:[0,5,10,15,20]).filter(j=>j<times.length)){
+   ctx.fillStyle='#40515e';ctx.textAlign=j===0?'left':j===20?'right':'center';ctx.fillText(j===0?'Origin':`W${j/5}`,x(j),height-bottom+(history.length&&width<=600&&j===0?34:18));
    if(width>600)ctx.fillText((j===0?data.origin:data.dates[j-1]).slice(5),x(j),height-bottom+34);
   }
   data.models.forEach((model,i)=>{
@@ -662,6 +673,7 @@ function initialiseForecastComparison(box) {
   });canvas.dataset.methodCount=data.models.filter(m=>visible(m)&&values(m)).length;draw();
  }
  context.addEventListener('change',render);family.addEventListener('change',render);
+ historyToggle.addEventListener('change',draw);
  global?.addEventListener('change',()=>{context.value=global.value;render();});
  new ResizeObserver(draw).observe(canvas);
  box.closest('.weekly-forecast')?.addEventListener('toggle',()=>{if(box.closest('.weekly-forecast').open)draw();});
