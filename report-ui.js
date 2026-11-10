@@ -89,7 +89,7 @@ document.querySelectorAll('details.portfolio-sensitivity').forEach(function(sens
   });
 });
 
-const reportVersion='481d94fc9ec8';
+const reportVersion='d071b90dabde';
 const palette = ['#1b1b1b','#e41a1c','#377eb8','#4daf4a','#984ea3','#ff7f00','#a65628','#f781bf','#008080','#6a3d9a','#b2182b','#2166ac','#1b9e77','#d95f02'];
 const linePatterns = [[],[10,5],[2,4],[10,4,2,4],[14,5],[6,3],[2,3,8,3],[12,3,3,3]];
 function isExplorerVisible(box) {
@@ -710,7 +710,7 @@ if(basketDataElement){
   const signed=value=>(value>0?'+':'')+fmt(value);
   const modes={},scopes=new Set(['ALL']),allModes=new Set();
   for(const [model,cases] of Object.entries(data)){
-   modes[model]=Object.entries(cases).filter(([key,b])=>currentHolding(asset,b)>0||b.rows.some(z=>z.asset===asset)).map(([key])=>key);
+   modes[model]=Object.entries(cases).filter(([key,b])=>currentHolding(asset,b)>0||b.rows.some(z=>z.asset===asset)||b.future_assets?.includes(asset)).map(([key])=>key);
    if(modes[model].length)scopes.add(model);modes[model].forEach(key=>allModes.add(key));
   }
   modes.ANY=modes.ALL=[...allModes];if(allModes.size)scopes.add('ANY');
@@ -718,7 +718,7 @@ if(basketDataElement){
   const cases=data[scope]?Object.entries(data[scope]).filter(([key])=>policy==='ALL'||policy===key):[];
   const plans=cases.map(([key,basket])=>{
    const selected=basket.rows.find(z=>z.asset===asset),target=selected?.units??0,change=target-current;
-   return {key,target,change,weight:selected?.weight??0,decision:change>0?'BUY':change<0?'SELL':'HOLD',impact:evaluation(scope,key)?.changes[asset]};
+   return {key,target,change,weight:selected?.weight??0,decision:change>0?'BUY':change<0?'SELL':'HOLD',impact:evaluation(scope,key)?.changes[asset],future:basket.future_purchases?.[asset]};
   });
   const consensus=field=>plans.length&&plans.every(z=>z[field]===plans[0][field])?plans[0][field]:null;
   const target=consensus('target'),change=consensus('change'),weight=consensus('weight');
@@ -739,13 +739,18 @@ if(basketDataElement){
     if(plan.impact){const e=plan.impact;p.dataset.tradeNetsdDelta=e.delta;p.dataset.portfolioNetsd=e.portfolio_netSD;
      p.textContent+=' Current netSD before this trade '+fmt(e.before_netSD)+'; after this trade '+fmt(e.after_netSD)+'; change '+signed(e.delta)+'. Portfolio netSD '+fmt(e.portfolio_netSD)+'; without this asset '+fmt(e.without_asset_netSD)+'; change on removal '+signed(e.removal_delta)+'.';}
     notes.append(p);
+    if((plan.future?.total_maximum??0)>0){
+     const future=document.createElement('p');future.className='profile-future-purchases';future.dataset.policy=plan.key;future.dataset.commonFutureUnits=plan.future.total_minimum;
+     future.textContent=(plan.key==='SALE'?'Sale':'No-sale')+' — vėlesni pirkimai: '+plan.future.stages.map(s=>`${s.stage} etapas (${s.date}): ${s.minimum}–${s.maximum} vnt. (visiems ${s.nodes} etapo scenarijams bendra ${s.minimum} vnt.)`).join('; ')+`. Vėliau iš viso ${plan.future.total_minimum}–${plan.future.total_maximum} vnt. (visiems pilniems scenarijų keliams bendra ${plan.future.total_minimum} vnt.).`;
+     notes.append(future);
+    }
    }
    if(target==null||weight==null){const p=document.createElement('p');p.className='profile-policy-help';p.textContent='Sale and No-sale differ. The table shows a dash where one value cannot represent both policies; both results are listed above. Select one policy to show its values in the table.';notes.append(p);}
   }else{const p=document.createElement('p');p.textContent='Select a portfolio and policy to display its target quantities. The table retains the common instrument fields.';notes.append(p);}
   if(diagnostic){const p=document.createElement('p');p.className='regime-asset-impact';p.textContent='Standardised addition: Current netSD '+fmt(diagnostic.current_netSD)+'; after adding '+diagnostic.add_units+' units (EUR '+diagnostic.add_value_EUR.toFixed(2)+') '+fmt(diagnostic.after_add_netSD)+'; change '+signed(diagnostic.add_delta)+'. Hypothetical diagnostic, not an executable order.';notes.append(p);}
   const metricNote=document.createElement('p');metricNote.className='profile-metric-scope-note';metricNote.textContent='Individual netSD, OUT and IN use the selected history. Rachev and Sortino in the table use the full training sample; technical indicators use the latest price history. The original sensitivity section describes the stochastic reference portfolio.';notes.append(metricNote);
-  if(plans.length){profile.dataset.signal=[...new Set(plans.map(z=>z.decision))].join(' ');profile.dataset.hasUpdate=String(plans.some(z=>z.change!==0));profile.dataset.netsdEffect=[...new Set(plans.map(z=>effect(z.impact?.delta??diagnostic?.add_delta??0)))].join(' ');}
-  else{const changes=Object.values(data).flatMap(cases=>Object.values(cases).map(b=>(b.rows.find(z=>z.asset===asset)?.units??0)-currentHolding(asset,b)));profile.dataset.signal=[...new Set(changes.map(v=>v>0?'BUY':v<0?'SELL':'HOLD'))].join(' ');profile.dataset.hasUpdate=String(changes.some(v=>v!==0));if(diagnostic)profile.dataset.netsdEffect=effect(diagnostic.add_delta);}
+  if(plans.length){profile.dataset.signal=[...new Set(plans.map(z=>z.decision))].join(' ');profile.dataset.hasUpdate=String(plans.some(z=>z.change!==0||(z.future?.total_maximum??0)>0));profile.dataset.netsdEffect=[...new Set(plans.map(z=>effect(z.impact?.delta??diagnostic?.add_delta??0)))].join(' ');}
+  else{const changes=Object.values(data).flatMap(cases=>Object.values(cases).map(b=>(b.rows.find(z=>z.asset===asset)?.units??0)-currentHolding(asset,b)));const future=Object.values(data).some(cases=>Object.values(cases).some(b=>b.future_assets?.includes(asset)));profile.dataset.signal=[...new Set(changes.map(v=>v>0?'BUY':v<0?'SELL':'HOLD'))].join(' ');profile.dataset.hasUpdate=String(changes.some(v=>v!==0)||future);if(diagnostic)profile.dataset.netsdEffect=effect(diagnostic.add_delta);}
   summary.textContent=asset+' \u2014 '+(assetInfo[asset]?.name??saved.name??asset)+(plans.length?' | current action: '+[...new Set(plans.map(z=>z.decision))].join(' / ')+' | allocation target '+(target??'\u2014')+' units':'');
  };
 
