@@ -35,7 +35,10 @@ async function start(){
  const version=document.querySelector('script[data-version]').dataset.version;
  const r=await fetch('interactive/yahoo-funds/'+asset+'.json?v='+version);if(!r.ok)throw new Error('HTTP '+r.status);doc=await r.json();
  $('title').textContent=doc.name+' · Yahoo Finance · EUR';$('source').href=doc.source_url;
- $('availability').textContent=`Latest NAV: ${doc.last_date}. Snapshot retrieved: ${doc.retrieved_at.slice(0,16).replace('T',' ')} UTC. Daily observations; no intraday series.`;
+ const checked=new Intl.DateTimeFormat('lt-LT',{dateStyle:'short',timeStyle:'short',timeZone:'Europe/Vilnius'}).format(new Date(doc.retrieved_at));
+ $('availability').textContent=`Latest NAV: ${doc.last_date}. Snapshot checked: ${checked} (Europe/Vilnius). Daily observations; no intraday series.`;
+ if(doc.official_last_date)$('availability').textContent+=` Official EUR NAV used for portfolio valuation: ${doc.official_last_date}.`;
+ if(doc.provider_behind_official)$('availability').textContent+=' Yahoo is behind the official source; this older display chart is not used to value or optimise portfolios.';
  $('period').value=['week','year','day'].includes(query.get('period'))?query.get('period'):'week';
  $('period').addEventListener('change',period);$('cursor').addEventListener('input',e=>{at=Number(e.target.value);draw();});
  $('charts').addEventListener('pointermove',e=>{const svg=e.target.closest('svg');if(!svg)return;const box=svg.getBoundingClientRect(),x=(e.clientX-box.left)/box.width*940;const i=Math.max(0,Math.min(points.length-1,Math.round((x-65)/(940-65-18)*(points.length-1))));if(i!==at){at=i;draw();}});period();
