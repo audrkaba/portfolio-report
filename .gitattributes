@@ -1,0 +1,4 @@
+# Preserve vendored upstream bytes and recorded SHA-256 checksums.
+vendor/mathjax/tex-svg-full.js -text
+vendor/mathjax/LICENSE -text
+vendor/mathjax/provenance.json text eol=lf

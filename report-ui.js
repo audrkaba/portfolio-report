@@ -6,7 +6,7 @@ document.body.appendChild(metricModal);
 function closeMetricModal(){metricModal.hidden=true;}
 document.addEventListener('click',function(event){
   const button=event.target.closest('.metric-help-button');
-  if(button){metricModal.querySelector('h3').textContent=button.dataset.metric;metricModal.querySelector('.metric-modal-meaning').textContent=button.dataset.meaning;metricModal.querySelector('.metric-modal-calculation').textContent=button.dataset.calculation;metricModal.querySelector('.metric-modal-interpretation').textContent=button.dataset.interpretation;metricModal.hidden=false;metricModal.querySelector('.metric-modal-close').focus();return;}
+  if(button){metricModal.querySelector('h3').textContent=button.dataset.metric;metricModal.querySelector('.metric-modal-meaning').textContent=button.dataset.meaning;const calc=metricModal.querySelector('.metric-modal-calculation');window.MathJax?.typesetClear?.([calc]);calc.textContent=window.metricFormulaTex?.(button.dataset.metric,button.dataset.calculation)??button.dataset.calculation;metricModal.querySelector('.metric-modal-interpretation').textContent=button.dataset.interpretation;metricModal.hidden=false;window.renderReportMath?.([calc]);metricModal.querySelector('.metric-modal-close').focus();return;}
   if(event.target===metricModal||event.target.closest('.metric-modal-close'))closeMetricModal();
 });
 document.addEventListener('keydown',function(event){if(event.key==='Escape')closeMetricModal();});
@@ -89,7 +89,7 @@ document.querySelectorAll('details.portfolio-sensitivity').forEach(function(sens
   });
 });
 
-const reportVersion='2be97bd5d324';
+const reportVersion='4778aaf925ab';
 const palette = ['#1b1b1b','#e41a1c','#377eb8','#4daf4a','#984ea3','#ff7f00','#a65628','#f781bf','#008080','#6a3d9a','#b2182b','#2166ac','#1b9e77','#d95f02'];
 const linePatterns = [[],[10,5],[2,4],[10,4,2,4],[14,5],[6,3],[2,3,8,3],[12,3,3,3]];
 function isExplorerVisible(box) {
@@ -595,6 +595,72 @@ initialise();
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initEnergy);
   else initEnergy();
+})();
+
+(()=>{'use strict';
+ const metric={
+ ActiveReturn:String.raw`R_p-R_b`,AnnualizedReturn_Arithmetic:String.raw`252\,\operatorname{mean}(R)`,AnnualizedReturn_Geometric:String.raw`\left[\prod_{t=1}^{n}(1+R_t)\right]^{252/n}-1`,
+ ArithmeticReturn:String.raw`\operatorname{mean}(R_t)`,BernardoLedoit:String.raw`\frac{\mathbb E[\max(R,0)]}{\mathbb E[\max(-R,0)]}`,
+ Appraisal:String.raw`\frac{\alpha_{\mathrm{CAPM}}}{\text{specific risk}}`,Burke:String.raw`\frac{\text{excess return}}{\sqrt{\sum_j\mathrm{DD}_j^2}}`,Calmar:String.raw`\frac{\text{annualised return}}{|\mathrm{MDD}|}`,
+ CAPMAlpha:String.raw`\operatorname{mean}(R_p-R_f)-\beta\operatorname{mean}(R_b-R_f)`,CAPMBeta:String.raw`\frac{\operatorname{Cov}(R_p,R_b)}{\operatorname{Var}(R_b)}`,
+ CoKurtosis:String.raw`\mathbb E[(R_p-\mu_p)(R_b-\mu_b)^3]`,CoSkewness:String.raw`\mathbb E[(R_p-\mu_p)(R_b-\mu_b)^2]`,
+ CumulativeReturn:String.raw`\prod_{t=1}^{n}(1+R_t)-1`,GeometricReturn:String.raw`\left[\prod_{t=1}^{n}(1+R_t)\right]^{1/n}-1`,
+ DownNumber:String.raw`\#\{t:R_t<0\}`,DownPercent:String.raw`\frac{\#\{t:R_t<0\}}{n}`,UpNumber:String.raw`\#\{t:R_t>0\}`,UpPercent:String.raw`\frac{\#\{t:R_t>0\}}{n}`,
+ Information_Daily:String.raw`\frac{\operatorname{mean}(R_p-R_b)}{\operatorname{sd}(R_p-R_b)}`,Information_Annualized:String.raw`\frac{\text{annualised active return}}{\text{annualised tracking error}}`,
+ JensenAlpha:String.raw`R_p-[R_f+\beta(R_b-R_f)]`,Kappa:String.raw`\frac{\operatorname{mean}(R)-\mathrm{MAR}}{\mathrm{LPM}_n^{1/n}}`,
+ M2Sortino:String.raw`R_f+\operatorname{Sortino}\,\mathrm{DD}_b`,Martin:String.raw`\frac{\text{excess return}}{\text{Ulcer Index}}`,
+ MaximumDrawdown:String.raw`\min_t\left(\frac{W_t}{\max_{u\le t}W_u}-1\right)`,Modigliani:String.raw`R_f+\operatorname{Sharpe}_p\,\sigma_b`,
+ PainRatio:String.raw`\frac{\text{excess return}}{\text{Pain Index}}`,Rachev:String.raw`\frac{\text{upper-tail expected return}}{\text{lower-tail expected loss}}`,
+ Sharpe_Annualized:String.raw`\frac{\text{annualised excess return}}{\text{annualised SD}}`,Sharpe_Daily:String.raw`\frac{\operatorname{mean}(R-R_f)}{\operatorname{sd}(R-R_f)}`,
+ Sharpe_ES:String.raw`\frac{\text{mean excess return}}{\text{ES loss}}`,Sharpe_VaR:String.raw`\frac{\text{mean excess return}}{\text{VaR loss}}`,
+ Sortino:String.raw`\frac{\operatorname{mean}(R-\mathrm{MAR})}{\text{downside deviation}}`,
+ TrackingError_Daily:String.raw`\operatorname{sd}(R_p-R_b)`,TrackingError_Annualized:String.raw`\operatorname{sd}(R_p-R_b)\sqrt{252}`,
+ Treynor_Daily:String.raw`\frac{\text{mean daily excess return}}{\beta}`,Treynor_Annualized:String.raw`\frac{\text{annualised excess return}}{\beta}`,
+ UpsidePotential:String.raw`\operatorname{mean}[\max(R-\mathrm{MAR},0)]`,Volatility:String.raw`\operatorname{sd}(R_t)`,Volatility_Annualized:String.raw`\operatorname{sd}(R_t)\sqrt{252}`,
+ ZeroVolumeFraction:String.raw`\frac{\#\{t:V_t=0\}}{n}`,ActiveTradingDayFraction:String.raw`\frac{\#\{t:V_t>0\}}{n}`,TurnoverCoefficientVariation:String.raw`\frac{\operatorname{sd}(\mathrm{turnover})}{\operatorname{mean}(\mathrm{turnover})}`,
+ AmihudIlliquidityPerEUR1m:String.raw`10^6\operatorname{mean}_{V_t>0}\!\left(\frac{|R_t|}{\mathrm{turnover}_t}\right)`
+ };
+ Object.assign(metric,{VaR_Loss:String.raw`Q_{0.95}(-R)`,ES_Loss:String.raw`\mathbb E[-R\mid -R\ge Q_{0.95}(-R)]`,MSquaredExcess:String.raw`\mathrm M^2-R_b`,MedianDailyVolume:String.raw`\operatorname{median}(V_t)`,MeanDailyVolume:String.raw`\operatorname{mean}(V_t)`,MedianDailyTurnoverEUR:String.raw`\operatorname{median}(P_tV_t)\;\mathrm{EUR}`,MeanDailyTurnoverEUR:String.raw`\operatorname{mean}(P_tV_t)\;\mathrm{EUR}`});
+ function words(value){
+  const lines=[];let line='';for(const word of value.replace(/\.$/,'').split(' ')){if((line+' '+word).length>27&&line){lines.push(line);line='';}line+=(line?' ':'')+word;}if(line)lines.push(line);
+  const escape=s=>s.replace(/([#%&_{}$])/g,'\\$1');return String.raw`\substack{${lines.map(s=>String.raw`\text{${escape(s)}}`).join(String.raw`\\`)}}`;
+ }
+ window.metricFormulaTex=(name,calculation='')=>{
+  if(name==='SystematicRisk')return String.raw`\[\beta^2\operatorname{Var}(R_b)\] Or its square-root form under the implementation.`;
+  if(metric[name])return String.raw`\[${metric[name]}\]`;
+  const ratio=calculation.split(' / ');if(ratio.length===2)return String.raw`\[\frac{${words(ratio[0])}}{${words(ratio[1])}}\]`;
+  return undefined;
+ };
+ let chain=Promise.resolve();const pending=new Set();let timer;
+ const inMath=node=>node.nodeType===1&&node.closest('mjx-container,svg,math,script,style,code,pre');
+ function hasRaw(node){return /\\\(|\\\[|\$\$|\$[^$\n]+\$/.test(node.textContent||'');}
+ function fit(root){
+  for(const m of root.querySelectorAll('mjx-container')){
+   const svg=m.querySelector(':scope > svg');if(!svg)continue;
+   const available=Math.max(1,(m.closest('.report-equation')||m.parentElement).clientWidth);
+   svg.style.maxWidth='100%';svg.style.height='auto';m.style.maxWidth='100%';
+   if(m.getBoundingClientRect().width>available+1)m.style.width='100%';
+  }
+ }
+ window.renderReportMath=(nodes=[document.body])=>{
+  chain=chain.then(()=>window.MathJax?.startup?.promise).then(()=>{
+   if(!window.MathJax?.typesetPromise)throw new Error('MathJax unavailable');
+   return MathJax.typesetPromise(nodes.filter(n=>n.isConnected));
+  }).then(()=>{nodes.forEach(n=>n.isConnected&&fit(n));document.documentElement.dataset.mathReady='true';}).catch(e=>{document.documentElement.dataset.mathError=e.message;console.error('Formula rendering:',e);});
+  window.reportMathIdle=chain;return chain;
+ };
+ function schedule(node){
+  const element=node.nodeType===1?node:node.parentElement;
+  if(!element||inMath(element)||!hasRaw(element))return;
+  pending.add(element);clearTimeout(timer);timer=setTimeout(()=>{const nodes=[...pending].filter(n=>n.isConnected);pending.clear();if(nodes.length)window.renderReportMath(nodes);},35);
+ }
+ function start(){
+  window.renderReportMath();
+  new MutationObserver(records=>{for(const r of records){if(r.type==='characterData')schedule(r.target);else r.addedNodes.forEach(schedule);}}).observe(document.body,{childList:true,subtree:true,characterData:true});
+  new ResizeObserver(()=>fit(document.body)).observe(document.body);
+  document.addEventListener('toggle',e=>{if(e.target.tagName==='DETAILS'&&e.target.open){fit(e.target);if(hasRaw(e.target))schedule(e.target);}},true);
+ }
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start();
 })();
 
 // Each baseline retains its fitted path. Only the explicit regime models react
