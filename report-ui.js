@@ -762,7 +762,10 @@ if(basketDataElement){
  const assetInfo={};Object.values(data).forEach(cases=>Object.values(cases).forEach(b=>b.rows.forEach(z=>assetInfo[z.asset]=z)));
  if(regimeData)Object.values(regimeData.portfolios).forEach(cases=>Object.values(cases).forEach(b=>b.rows.forEach(z=>assetInfo[z.asset]=z)));
  const originals=new WeakMap();
-  window.updateSelectedPortfolioProfile=function(profile,scope,policy){
+  const profileRenderKeys=new WeakMap();
+ window.updateSelectedPortfolioProfile=function(profile,scope,policy){
+  const renderKey=JSON.stringify([scope,policy,historyKey()]);
+  if(profileRenderKeys.get(profile)===renderKey)return;
   const table=profile.querySelector('table'),summary=profile.querySelector(':scope > summary');if(!table||!summary)return;
   if(!originals.has(profile))originals.set(profile,{table:table.innerHTML,summary:summary.innerHTML,name:summary.textContent.split('|')[0].trim().replace(/^.*?\u2014\s*/,'')});
   const saved=originals.get(profile),asset=profile.id.replace(/^(share-|fund-)/,'').toUpperCase();
@@ -815,9 +818,12 @@ if(basketDataElement){
   }else{const p=document.createElement('p');p.textContent='Select a portfolio and policy to display its target quantities. The table retains the common instrument fields.';notes.append(p);}
   if(diagnostic){const p=document.createElement('p');p.className='regime-asset-impact';p.textContent='Standardised addition: Current netSD '+fmt(diagnostic.current_netSD)+'; after adding '+diagnostic.add_units+' units (EUR '+diagnostic.add_value_EUR.toFixed(2)+') '+fmt(diagnostic.after_add_netSD)+'; change '+signed(diagnostic.add_delta)+'. Hypothetical diagnostic, not an executable order.';notes.append(p);}
   const metricNote=document.createElement('p');metricNote.className='profile-metric-scope-note';metricNote.textContent='Individual netSD, OUT and IN use the selected history. Rachev and Sortino in the table use the full training sample; technical indicators use the latest price history. The original sensitivity section describes the stochastic reference portfolio.';notes.append(metricNote);
-  if(plans.length){profile.dataset.signal=[...new Set(plans.map(z=>z.decision))].join(' ');profile.dataset.hasUpdate=String(plans.some(z=>z.change!==0||(z.future?.total_maximum??0)>0));profile.dataset.netsdEffect=[...new Set(plans.map(z=>effect(z.impact?.delta??diagnostic?.add_delta??0)))].join(' ');}
-  else{const changes=Object.values(data).flatMap(cases=>Object.values(cases).map(b=>(b.rows.find(z=>z.asset===asset)?.units??0)-currentHolding(asset,b)));const future=Object.values(data).some(cases=>Object.values(cases).some(b=>b.future_assets?.includes(asset)));profile.dataset.signal=[...new Set(changes.map(v=>v>0?'BUY':v<0?'SELL':'HOLD'))].join(' ');profile.dataset.hasUpdate=String(changes.some(v=>v!==0)||future);if(diagnostic)profile.dataset.netsdEffect=effect(diagnostic.add_delta);}
+  // Section 1.1 displays the initial allocation. Possible later purchases are
+  // explanatory notes, not an initial update and must not admit HOLD rows.
+  if(plans.length){profile.dataset.signal=[...new Set(plans.map(z=>z.decision))].join(' ');profile.dataset.hasUpdate=String(plans.some(z=>z.change!==0));profile.dataset.netsdEffect=[...new Set(plans.map(z=>effect(z.impact?.delta??diagnostic?.add_delta??0)))].join(' ');}
+  else{const changes=Object.values(data).flatMap(cases=>Object.entries(cases).filter(([key])=>policy==='ALL'||policy===key).map(([,b])=>(b.rows.find(z=>z.asset===asset)?.units??0)-currentHolding(asset,b)));profile.dataset.signal=[...new Set(changes.map(v=>v>0?'BUY':v<0?'SELL':'HOLD'))].join(' ');profile.dataset.hasUpdate=String(changes.some(v=>v!==0));if(diagnostic)profile.dataset.netsdEffect=effect(diagnostic.add_delta);}
   summary.textContent=asset+' \u2014 '+(assetInfo[asset]?.name??saved.name??asset)+(plans.length?' | current action: '+[...new Set(plans.map(z=>z.decision))].join(' / ')+' | allocation target '+(target??'\u2014')+' units':'');
+  profileRenderKeys.set(profile,renderKey);
  };
 
  function currentHolding(asset,basket){return assetInfo[asset]?.current_units??basket.rows.find(z=>z.asset===asset)?.current_units??0;}
