@@ -791,9 +791,7 @@ if(basketDataElement){
   });
   const consensus=field=>plans.length&&plans.every(z=>z[field]===plans[0][field])?plans[0][field]:null;
   const target=consensus('target'),change=consensus('change'),weight=consensus('weight');
-  setCell('current units',current);setCell('target units',target??'\u2014');setCell('change',change??'\u2014');setCell('weight',weight==null?'\u2014':weight.toFixed(6));
-  const unitDividend=Number(row.cells[labels.indexOf('avg dividend / unit eur')]?.textContent||0);
-  setCell('avg annual dividends: target units eur',target==null?'\u2014':(unitDividend*target).toFixed(4));
+  setCell('current units',current);setCell('target units',target??'\u2014');setCell('change',change??'\u2014');setCell('weight %',weight==null?'\u2014':(100*weight).toFixed(2)+'%');
   if(diagnostic){setCell('individual netsd',fmt(diagnostic.individual_netSD));setCell('out',diagnostic.individual_OUT);setCell('in',diagnostic.individual_IN);}
   profile.querySelector(':scope > .regime-asset-impact')?.remove();
   let notes=profile.querySelector(':scope > .profile-allocation-notes');
