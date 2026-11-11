@@ -1,4 +1,67 @@
-<p><strong>Active history rule:</strong> 70 eligible assets; 1126 training observations (2021-11-29–2026-05-12) and 126 separate diagnostic observations (2026-05-13–2026-11-06). Short-history instruments are excluded from decisions and the dominance reference set. All 12 current holdings remain available. Fund NAV already includes ongoing fees.</p><p>126-day segment is a descriptive fixed-allocation diagnostic, not an independent strategy backtest: current forecast centres use data through their current origin. Official data refreshed 2026-11-10T08:24:03.557499+02:00: share closes through 2026-11-09; latest available EUR fund NAV dates 2026-11-06. Each profile states its own observation date. Weekly models, joint scenarios, technical signals and allocations are refitted from this snapshot. The new canonical netSD reference network contains the 70 eligible assets and Current, with one training-derived denominator. Old comparison policies containing excluded holdings are not silently projected or backfilled. The S&amp;P 500 benchmark uses USD price returns; currency and dividend bases differ from EUR assets, and benchmark measures use only matching US trading dates.</p><p><strong>Maximum common history:</strong> 1252 aligned daily returns; the earliest 1126 form the training sample and the latest 126 form the diagnostic segment. No earlier common observations were discarded. Investor exclusions: AIR, EJTC, FRGTE, MAGIC, SE0029504588. Ineligible shorter histories are retained in the private archive.</p><p>Historical portfolio series apply constant origin-price weights to daily asset returns: they are hypothetical daily-rebalanced diagnostics, not realised account histories or buy-and-hold share-quantity backtests. The future scenario policy instead tracks integer holdings and cash through its two decision stages. — denotes a native R function that is undefined for the selected sample; no replacement ratio is invented.</p><p><strong>Purchase signal restrictions removed (5 November 2026):</strong> both stages may purchase without technical BUY votes and without a positive conditional remaining forecast. Purchases are chosen by the scenario-expected netSD minus penalties objective. The EUR 750 initial additional purchase limit per asset, EUR 15,000 total budget, integer lots, zero to four funds, history and liquidity restrictions, and zero-interest cash remain. Technical indicators remain diagnostics. Recourse sales still require a negative conditional forecast and at least 3 SELL votes; the no-sales policy prohibits all sales. There are twenty independent scenario-specific recourse vectors. The initial plan is common, and the complete representative scenario is assumed revealed at the second-stage date.</p><p><strong>Confirmed actual holdings:</strong> last confirmed 2026-11-06T15:39:56.245050+02:00. Current quantities are actual holdings; unexecuted model purchases are shown separately as targets. Valuations use the report market snapshot. Actual execution prices were not supplied, so portfolio values are not presented as transaction costs or realised account profit.</p><p>Regime columns use training observations selected by retrospective market labels. Path-dependent measures describe the synthetic sequence of selected days, not actual performance through omitted dates. The 72 performance expressions use native PerformanceAnalytics. Eight share-liquidity statistics use native R mean, median and SD; turnover is estimated as close × reported volume, and unknown volumes are omitted rather than treated as zero.</p><table class="dataframe research-table long-history-table">
+<div class="report-fit-fragment"><!-- SHARED_TABLE_FIT_START --><style>/* Every report table, including dynamically loaded fragments and scenario views. */
+html body table.report-fit-table{display:table!important;table-layout:fixed!important;width:100%!important;max-width:100%!important;min-width:0!important;overflow:visible!important;white-space:normal!important;border-collapse:collapse;box-sizing:border-box}
+html body table.report-fit-table :is(th,td){min-width:0!important;max-width:none!important;width:auto;white-space:normal!important;overflow-wrap:anywhere!important;word-break:normal!important;box-sizing:border-box;vertical-align:top;padding:.45rem!important}
+html body table.report-fit-table th,html body table.report-fit-table th span{writing-mode:horizontal-tb!important;transform:none!important;white-space:normal!important;height:auto!important;text-align:left!important}
+html body table.report-fit-table :is(td,th) *{max-width:100%;min-width:0;white-space:normal!important;overflow-wrap:anywhere}
+html body table.report-fit-table :is(img,svg,input,select,button){max-width:100%!important;box-sizing:border-box}
+html body table.report-fit-table.fit-stacked,html body table.report-fit-table.fit-stacked :is(tbody,tfoot){display:block!important;width:100%!important}
+html body table.report-fit-table.fit-stacked thead{position:absolute!important;width:1px!important;height:1px!important;clip-path:inset(50%);overflow:hidden!important}
+html body table.report-fit-table.fit-stacked :is(tbody,tfoot)>tr{display:block!important;width:100%!important;margin:.65rem 0!important;border:1px solid #c6d8de;border-radius:5px;background:#fff}
+html body table.report-fit-table.fit-stacked :is(tbody,tfoot)>tr>:is(td,th){display:grid!important;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:.55rem;width:100%!important;height:auto!important;text-align:left!important;position:static!important;transform:none!important}
+html body table.report-fit-table.fit-stacked :is(tbody,tfoot)>tr>:is(td,th)::before{content:attr(data-label);font-weight:600;color:#24536a;overflow-wrap:anywhere;white-space:normal}
+html body .report-fit-wrapper{min-width:0!important;max-width:100%!important;width:100%!important;overflow:visible!important;max-height:none!important}
+html body table.report-fit-table[hidden],html body table.report-fit-table.fit-stacked [hidden]{display:none!important}
+</style><script>/* Table layout is shared by all pages; observers cover future branch/fragment loads. */
+(()=>{
+  if(window.reportTableFit)return;
+  let pending=false;
+  function labels(table){
+    const grid=[];
+    for(const [r,row] of [...(table.tHead?.rows||[])].entries()){
+      grid[r] ||= [];let col=0;
+      for(const cell of row.cells){
+        while(grid[r][col])col++;
+        for(let y=r;y<r+cell.rowSpan;y++){
+          grid[y] ||= [];
+          for(let x=col;x<col+cell.colSpan;x++)grid[y][x]=cell.textContent.trim();
+        }
+        col+=cell.colSpan;
+      }
+    }
+    return Array.from({length:Math.max(0,...grid.map(r=>r.length))},(_,i)=>[...new Set(grid.map(r=>r[i]).filter(Boolean))].join(' / '));
+  }
+  function fit(){
+    pending=false;
+    for(const table of document.querySelectorAll('table')){
+      if(!table.getClientRects().length)continue;
+      if(!table.classList.contains('report-fit-table'))table.classList.add('report-fit-table');
+      const headings=labels(table);
+      for(const section of [...table.tBodies,...(table.tFoot?[table.tFoot]:[])]){
+        for(const row of section.rows){let col=0;
+          for(const cell of row.cells){
+            const label=headings.slice(col,col+cell.colSpan).join(' / ')||cell.dataset.label||`Column ${col+1}`;
+            if(cell.dataset.label!==label)cell.dataset.label=label;
+            col+=cell.colSpan;
+          }
+        }
+      }
+      for(let parent=table.parentElement;parent&&parent!==document.body;parent=parent.parentElement){
+        const style=getComputedStyle(parent);
+        if(['auto','scroll'].includes(style.overflowX)||/table-scroll|performance-table-scroll|fund-case-wrap/.test(parent.className))parent.classList.add('report-fit-wrapper');
+      }
+      const width=table.parentElement?.getBoundingClientRect().width||innerWidth;
+      const cols=Math.max(headings.length,...[...table.rows].map(r=>[...r.cells].reduce((s,c)=>s+c.colSpan,0)));
+      table.classList.toggle('fit-stacked',width<700||cols*105>width);
+    }
+    document.documentElement.dataset.tablesReady='true';
+  }
+  function schedule(){if(window.reportTableFitPaused)return;if(!pending){pending=true;requestAnimationFrame(fit)}}
+  window.reportTableFit=fit;
+  new MutationObserver(schedule).observe(document.documentElement,{childList:true,subtree:true,attributes:true,attributeFilter:['hidden','open']});
+  addEventListener('resize',schedule);document.addEventListener('toggle',schedule,true);
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',schedule);else schedule();
+})();
+</script><!-- SHARED_TABLE_FIT_END --><p><strong>Active history rule:</strong> 70 eligible assets; 1126 training observations (2021-11-29–2026-05-12) and 126 separate diagnostic observations (2026-05-13–2026-11-06). Short-history instruments are excluded from decisions and the dominance reference set. All 12 current holdings remain available. Fund NAV already includes ongoing fees.</p><p>126-day segment is a descriptive fixed-allocation diagnostic, not an independent strategy backtest: current forecast centres use data through their current origin. Official data refreshed 2026-11-10T08:24:03.557499+02:00: share closes through 2026-11-09; latest available EUR fund NAV dates 2026-11-06. Each profile states its own observation date. Weekly models, joint scenarios, technical signals and allocations are refitted from this snapshot. The new canonical netSD reference network contains the 70 eligible assets and Current, with one training-derived denominator. Old comparison policies containing excluded holdings are not silently projected or backfilled. The S&amp;P 500 benchmark uses USD price returns; currency and dividend bases differ from EUR assets, and benchmark measures use only matching US trading dates.</p><p><strong>Maximum common history:</strong> 1252 aligned daily returns; the earliest 1126 form the training sample and the latest 126 form the diagnostic segment. No earlier common observations were discarded. Investor exclusions: AIR, EJTC, FRGTE, MAGIC, SE0029504588. Ineligible shorter histories are retained in the private archive.</p><p>Historical portfolio series apply constant origin-price weights to daily asset returns: they are hypothetical daily-rebalanced diagnostics, not realised account histories or buy-and-hold share-quantity backtests. The future scenario policy instead tracks integer holdings and cash through its two decision stages. — denotes a native R function that is undefined for the selected sample; no replacement ratio is invented.</p><p><strong>Purchase signal restrictions removed (5 November 2026):</strong> both stages may purchase without technical BUY votes and without a positive conditional remaining forecast. Purchases are chosen by the scenario-expected netSD minus penalties objective. The EUR 750 initial additional purchase limit per asset, EUR 15,000 total budget, integer lots, zero to four funds, history and liquidity restrictions, and zero-interest cash remain. Technical indicators remain diagnostics. Recourse sales still require a negative conditional forecast and at least 3 SELL votes; the no-sales policy prohibits all sales. There are twenty independent scenario-specific recourse vectors. The initial plan is common, and the complete representative scenario is assumed revealed at the second-stage date.</p><p><strong>Confirmed actual holdings:</strong> last confirmed 2026-11-06T15:39:56.245050+02:00. Current quantities are actual holdings; unexecuted model purchases are shown separately as targets. Valuations use the report market snapshot. Actual execution prices were not supplied, so portfolio values are not presented as transaction costs or realised account profit.</p><p>Regime columns use training observations selected by retrospective market labels. Path-dependent measures describe the synthetic sequence of selected days, not actual performance through omitted dates. The 72 performance expressions use native PerformanceAnalytics. Eight share-liquidity statistics use native R mean, median and SD; turnover is estimated as close × reported volume, and unknown volumes are omitted rather than treated as zero.</p><table class="dataframe research-table long-history-table">
   <thead>
     <tr style="text-align: right;">
       <th>period</th>
@@ -894,4 +957,4 @@
       <td>0.067797</td>
     </tr>
   </tbody>
-</table>
+</table></div>
