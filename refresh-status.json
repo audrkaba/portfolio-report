@@ -1,17 +1,56 @@
 {
-  "run": "20261112_vlp87_cpu48",
-  "revision": "b728ca0998f1",
-  "prepared_at": "2026-11-12T19:12:07.583567+02:00",
-  "complete": true,
-  "parts": [],
+  "run": "20261112_zclose_cpu48",
+  "revision": "ab639a2e1582",
+  "prepared_at": "2026-11-12T22:07:02.784751+02:00",
+  "complete": false,
+  "parts": [
+    {
+      "label": "Completed portfolio allocations and actual holdings",
+      "status": "published",
+      "url": "partial-progress.html#completed-portfolios"
+    },
+    {
+      "label": "Fixed-position market-regime correlations (Figure 2.k)",
+      "status": "published",
+      "url": "partial-progress.html#completed-correlations"
+    },
+    {
+      "label": "CPU48/CUDA balance and exact CPU packet trial (section 4.12)",
+      "status": "published",
+      "url": "partial-progress.html#completed-compute"
+    },
+    {
+      "label": "Stochastic 2: Sale at every stage",
+      "status": "pending",
+      "url": "partial-progress.html#completed-portfolios"
+    },
+    {
+      "label": "Regime-specific portfolios",
+      "status": "pending",
+      "url": null
+    },
+    {
+      "label": "All-stage portfolio sensitivity",
+      "status": "pending",
+      "url": null
+    },
+    {
+      "label": "Final-horizon netSD, time and energy comparison",
+      "status": "pending",
+      "url": null
+    },
+    {
+      "label": "Full report: section 1.1 schema, layouts, numbering and interactive frontier labels",
+      "status": "integration pending",
+      "url": null
+    }
+  ],
   "holdings": {
     "VLP1L": 87,
     "SE0014261764": 7.108
   },
   "prices": {
-    "shares": "2026-11-11",
-    "funds": "2026-11-10"
-  },
-  "public_commit": "9a52e7ad7a5f71a9037191e9cd569723414f8a47",
-  "main_report_verified_at": "2026-11-12T20:39:28.940948+02:00"
+    "shares": "2026-11-12",
+    "funds": "2026-11-11"
+  }
 }
