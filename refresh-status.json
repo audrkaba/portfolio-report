@@ -1,7 +1,7 @@
 {
   "run": "20261112_vlp87_cpu48",
-  "revision": "3fc2ac757e37",
-  "prepared_at": "2026-11-12T18:55:43.628503+02:00",
+  "revision": "b728ca0998f1",
+  "prepared_at": "2026-11-12T19:12:07.583567+02:00",
   "complete": false,
   "parts": [
     {
@@ -31,13 +31,13 @@
     },
     {
       "label": "All-stage portfolio sensitivity",
-      "status": "pending",
-      "url": null
+      "status": "published",
+      "url": "partial-progress.html#completed-sensitivity"
     },
     {
       "label": "Final-horizon netSD, time and energy comparison",
-      "status": "pending",
-      "url": null
+      "status": "published",
+      "url": "partial-progress.html#completed-compute"
     },
     {
       "label": "Full report: section 1.1 schema, layouts, numbering and interactive frontier labels",
@@ -48,6 +48,11 @@
       "label": "Both updated scenario trees",
       "status": "published",
       "url": "partial-progress.html#completed-trees"
+    },
+    {
+      "label": "Attractiveness, liquidity and MarketScreener research scores",
+      "status": "published",
+      "url": "stock_attractiveness.html"
     }
   ],
   "holdings": {
