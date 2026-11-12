@@ -1,21 +1,51 @@
 {
-  "run": "20261112_zclose_cpu48",
-  "revision": "ab639a2e1582",
-  "prepared_at": "2026-11-12T22:07:02.784751+02:00",
+  "run": "20261112_zzclose_cpu48",
+  "revision": "5cb4c8091abd",
+  "prepared_at": "2026-11-12T22:34:02.369052+02:00",
   "complete": false,
   "parts": [
     {
-      "label": "Verified November 12 Baltic closes and November 11 fund NAVs",
-      "status": "downloaded",
+      "label": "Completed portfolio allocations and actual holdings",
+      "status": "published",
+      "url": "partial-progress.html#completed-portfolios"
+    },
+    {
+      "label": "Fixed-position market-regime correlations (Figure 2.k)",
+      "status": "published",
+      "url": "partial-progress.html#completed-correlations"
+    },
+    {
+      "label": "CPU48/CUDA balance and exact CPU packet trial (section 4.12)",
+      "status": "published",
+      "url": "partial-progress.html#completed-compute"
+    },
+    {
+      "label": "Stochastic 2: Sale at every stage",
+      "status": "pending",
+      "url": "partial-progress.html#completed-portfolios"
+    },
+    {
+      "label": "Regime-specific portfolios",
+      "status": "pending",
       "url": null
     },
     {
-      "label": "All portfolio models: correcting historical cutoff and recomputing",
-      "status": "calculating",
+      "label": "All-stage portfolio sensitivity",
+      "status": "pending",
       "url": null
     },
     {
-      "label": "Optional zero to three US stocks, EUR 1000 total",
+      "label": "Final-horizon netSD, time and energy comparison",
+      "status": "pending",
+      "url": null
+    },
+    {
+      "label": "Full report: section 1.1 schema, layouts, numbering and interactive frontier labels",
+      "status": "integration pending",
+      "url": null
+    },
+    {
+      "label": "Optional US equity trial: 0 to 3 stocks, EUR 1000 total",
       "status": "pending",
       "url": null
     }
@@ -27,6 +57,5 @@
   "prices": {
     "shares": "2026-11-12",
     "funds": "2026-11-11"
-  },
-  "notice": "The previous partial model results below are superseded: an outdated historical cutoff was detected. Closing prices are verified, and all models are being recomputed with the advanced cutoff. Do not use the superseded allocation tables as new recommendations."
+  }
 }
