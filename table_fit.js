@@ -42,9 +42,26 @@
       // The single-row asset summary has compact numeric values and historically
       // used vertical headings. It needs less width than general text tables.
       const profile=table.classList.contains('stock-summary-table');
-      const compactProfile=profile&&width>=cols*60*textScale;
+      const compactProfile=profile&&width>=cols*48*textScale;
+      const groupedProfile=profile&&!compactProfile;
+      const profileCols=width>=9*60*textScale?9:width>=6*60*textScale?6:width>=3*60*textScale?3:2;
       table.classList.toggle('fit-profile-compact',compactProfile);
-      table.classList.toggle('fit-stacked',!compactProfile&&cols*105*textScale>width);
+      table.classList.toggle('fit-profile-grid',groupedProfile);
+      table.classList.toggle('fit-profile-vertical',groupedProfile&&profileCols>=6);
+      if(groupedProfile){
+        table.style.setProperty('--profile-columns',profileCols);
+        for(const [i,cell] of [...(table.tHead?.rows[0]?.cells||[])].entries()){
+          cell.style.setProperty('--profile-column',i%profileCols+1);
+          cell.style.setProperty('--profile-row',Math.floor(i/profileCols)*2+1);
+        }
+        for(const row of table.tBodies[0]?.rows||[]){
+          for(const [i,cell] of [...row.cells].entries()){
+            cell.style.setProperty('--profile-column',i%profileCols+1);
+            cell.style.setProperty('--profile-row',Math.floor(i/profileCols)*2+2);
+          }
+        }
+      }
+      table.classList.toggle('fit-stacked',!profile&&cols*105*textScale>width);
     }
     document.documentElement.dataset.tablesReady='true';
   }

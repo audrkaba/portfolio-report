@@ -8,13 +8,19 @@ html body table.report-fit-table :is(img,svg,input,select,button){max-width:100%
 html body table.report-fit-table.stock-summary-table.fit-profile-compact th{writing-mode:vertical-rl!important;text-orientation:mixed;transform:rotate(180deg)!important;height:15rem!important;white-space:normal!important;vertical-align:middle!important;text-align:left!important;padding:.35rem .2rem!important}
 html body table.report-fit-table.stock-summary-table.fit-profile-compact th span{writing-mode:inherit!important;transform:none!important;height:auto!important}
 html body table.report-fit-table.stock-summary-table.fit-profile-compact td{text-align:center!important;padding:.4rem .2rem!important;font-variant-numeric:tabular-nums}
+/* Keep all 18 fields in compact column groups on smaller laptop/mobile windows. */
+html body table.report-fit-table.stock-summary-table.fit-profile-grid{display:grid!important;grid-template-columns:repeat(var(--profile-columns),minmax(0,1fr));gap:.25rem 0}
+html body table.report-fit-table.stock-summary-table.fit-profile-grid :is(thead,tbody,tr){display:contents!important}
+html body table.report-fit-table.stock-summary-table.fit-profile-grid :is(th,td){grid-column:var(--profile-column);grid-row:var(--profile-row);padding:.35rem .25rem!important;text-align:center!important}
+html body table.report-fit-table.stock-summary-table.fit-profile-grid.fit-profile-vertical th{writing-mode:vertical-rl!important;text-orientation:mixed;transform:rotate(180deg)!important;height:10rem!important;vertical-align:middle!important;text-align:left!important}
+html body table.report-fit-table.stock-summary-table.fit-profile-grid.fit-profile-vertical th span{writing-mode:inherit!important;transform:none!important;height:auto!important}
 html body table.report-fit-table.fit-stacked,html body table.report-fit-table.fit-stacked :is(tbody,tfoot){display:block!important;width:100%!important}
 html body table.report-fit-table.fit-stacked thead{position:absolute!important;width:1px!important;height:1px!important;clip-path:inset(50%);overflow:hidden!important}
 html body table.report-fit-table.fit-stacked :is(tbody,tfoot)>tr{display:block!important;width:100%!important;margin:.65rem 0!important;border:1px solid #c6d8de;border-radius:5px;background:#fff}
 html body table.report-fit-table.fit-stacked :is(tbody,tfoot)>tr>:is(td,th){display:grid!important;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:.55rem;width:100%!important;height:auto!important;text-align:left!important;position:static!important;transform:none!important}
 html body table.report-fit-table.fit-stacked :is(tbody,tfoot)>tr>:is(td,th)::before{content:attr(data-label);font-weight:600;color:#24536a;overflow-wrap:anywhere;white-space:normal}
 html body .report-fit-wrapper{min-width:0!important;max-width:100%!important;width:100%!important;overflow:visible!important;max-height:none!important}
-html body table.report-fit-table[hidden],html body table.report-fit-table.fit-stacked [hidden]{display:none!important}
+html body table.report-fit-table[hidden],html body table.report-fit-table.fit-stacked [hidden],html body table.report-fit-table.stock-summary-table.fit-profile-grid [hidden]{display:none!important}
 </style><script>/* Table layout is shared by all pages; observers cover future branch/fragment loads. */
 (()=>{
   if(window.reportTableFit)return;
@@ -59,9 +65,26 @@ html body table.report-fit-table[hidden],html body table.report-fit-table.fit-st
       // The single-row asset summary has compact numeric values and historically
       // used vertical headings. It needs less width than general text tables.
       const profile=table.classList.contains('stock-summary-table');
-      const compactProfile=profile&&width>=cols*60*textScale;
+      const compactProfile=profile&&width>=cols*48*textScale;
+      const groupedProfile=profile&&!compactProfile;
+      const profileCols=width>=9*60*textScale?9:width>=6*60*textScale?6:width>=3*60*textScale?3:2;
       table.classList.toggle('fit-profile-compact',compactProfile);
-      table.classList.toggle('fit-stacked',!compactProfile&&cols*105*textScale>width);
+      table.classList.toggle('fit-profile-grid',groupedProfile);
+      table.classList.toggle('fit-profile-vertical',groupedProfile&&profileCols>=6);
+      if(groupedProfile){
+        table.style.setProperty('--profile-columns',profileCols);
+        for(const [i,cell] of [...(table.tHead?.rows[0]?.cells||[])].entries()){
+          cell.style.setProperty('--profile-column',i%profileCols+1);
+          cell.style.setProperty('--profile-row',Math.floor(i/profileCols)*2+1);
+        }
+        for(const row of table.tBodies[0]?.rows||[]){
+          for(const [i,cell] of [...row.cells].entries()){
+            cell.style.setProperty('--profile-column',i%profileCols+1);
+            cell.style.setProperty('--profile-row',Math.floor(i/profileCols)*2+2);
+          }
+        }
+      }
+      table.classList.toggle('fit-stacked',!profile&&cols*105*textScale>width);
     }
     document.documentElement.dataset.tablesReady='true';
   }

@@ -8,10 +8,16 @@ html body table.report-fit-table :is(img,svg,input,select,button){max-width:100%
 html body table.report-fit-table.stock-summary-table.fit-profile-compact th{writing-mode:vertical-rl!important;text-orientation:mixed;transform:rotate(180deg)!important;height:15rem!important;white-space:normal!important;vertical-align:middle!important;text-align:left!important;padding:.35rem .2rem!important}
 html body table.report-fit-table.stock-summary-table.fit-profile-compact th span{writing-mode:inherit!important;transform:none!important;height:auto!important}
 html body table.report-fit-table.stock-summary-table.fit-profile-compact td{text-align:center!important;padding:.4rem .2rem!important;font-variant-numeric:tabular-nums}
+/* Keep all 18 fields in compact column groups on smaller laptop/mobile windows. */
+html body table.report-fit-table.stock-summary-table.fit-profile-grid{display:grid!important;grid-template-columns:repeat(var(--profile-columns),minmax(0,1fr));gap:.25rem 0}
+html body table.report-fit-table.stock-summary-table.fit-profile-grid :is(thead,tbody,tr){display:contents!important}
+html body table.report-fit-table.stock-summary-table.fit-profile-grid :is(th,td){grid-column:var(--profile-column);grid-row:var(--profile-row);padding:.35rem .25rem!important;text-align:center!important}
+html body table.report-fit-table.stock-summary-table.fit-profile-grid.fit-profile-vertical th{writing-mode:vertical-rl!important;text-orientation:mixed;transform:rotate(180deg)!important;height:10rem!important;vertical-align:middle!important;text-align:left!important}
+html body table.report-fit-table.stock-summary-table.fit-profile-grid.fit-profile-vertical th span{writing-mode:inherit!important;transform:none!important;height:auto!important}
 html body table.report-fit-table.fit-stacked,html body table.report-fit-table.fit-stacked :is(tbody,tfoot){display:block!important;width:100%!important}
 html body table.report-fit-table.fit-stacked thead{position:absolute!important;width:1px!important;height:1px!important;clip-path:inset(50%);overflow:hidden!important}
 html body table.report-fit-table.fit-stacked :is(tbody,tfoot)>tr{display:block!important;width:100%!important;margin:.65rem 0!important;border:1px solid #c6d8de;border-radius:5px;background:#fff}
 html body table.report-fit-table.fit-stacked :is(tbody,tfoot)>tr>:is(td,th){display:grid!important;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:.55rem;width:100%!important;height:auto!important;text-align:left!important;position:static!important;transform:none!important}
 html body table.report-fit-table.fit-stacked :is(tbody,tfoot)>tr>:is(td,th)::before{content:attr(data-label);font-weight:600;color:#24536a;overflow-wrap:anywhere;white-space:normal}
 html body .report-fit-wrapper{min-width:0!important;max-width:100%!important;width:100%!important;overflow:visible!important;max-height:none!important}
-html body table.report-fit-table[hidden],html body table.report-fit-table.fit-stacked [hidden]{display:none!important}
+html body table.report-fit-table[hidden],html body table.report-fit-table.fit-stacked [hidden],html body table.report-fit-table.stock-summary-table.fit-profile-grid [hidden]{display:none!important}
