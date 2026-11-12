@@ -89,7 +89,7 @@ document.querySelectorAll('details.portfolio-sensitivity').forEach(function(sens
   });
 });
 
-const reportVersion='a07c7f5819f6';
+const reportVersion='46c31890f0a0';
 const palette = ['#1b1b1b','#e41a1c','#377eb8','#4daf4a','#984ea3','#ff7f00','#a65628','#f781bf','#008080','#6a3d9a','#b2182b','#2166ac','#1b9e77','#d95f02'];
 const linePatterns = [[],[10,5],[2,4],[10,4,2,4],[14,5],[6,3],[2,3,8,3],[12,3,3,3]];
 function isExplorerVisible(box) {
@@ -228,9 +228,9 @@ function initialiseFrontierExplorer(box) {
       <label class="frontier-multiselect-wrap">Compare Current with portfolios and shares
         <select class="frontier-multiselect" multiple size="10">
           <optgroup label="Portfolios">${[...preferred.filter(x=>portfolioNames.includes(x)),...portfolioNames.filter(x=>!preferred.includes(x))].map(x=>`<option value="${x}" ${['Update long: gated recourse','Update long: no sales','Update long: gated sales both stages','Current','Baltic_NetSD','curent_update_baltic','update2_penalty_sell','update2_penalty_no_sell','update3_funds_sell','update3_funds_no_sell','update3_stochastic_recourse_sell','update3_stochastic_no_sell','update3_stochastic_sell'].includes(x)?'selected':''}>${x}</option>`).join('')}</optgroup>
-          <optgroup label="Shares currently held">${shareNames.filter(x=>heldShares.has(x)).map(x=>`<option value="${x}" selected>${x}</option>`).join('')}</optgroup>
+          <optgroup label="Shares currently held">${shareNames.filter(x=>heldShares.has(x)&&!fundNames.includes(x)).map(x=>`<option value="${x}" selected>${x}</option>`).join('')}</optgroup>
           <optgroup label="Other shares">${shareNames.filter(x=>!heldShares.has(x)&&!fundNames.includes(x)).map(x=>`<option value="${x}"${x===box.dataset.highlight?' selected':''}>${x}</option>`).join('')}</optgroup>
-          <optgroup label="Funds">${fundNames.map(x=>`<option value="${x}"${x===box.dataset.highlight?' selected':''}>${x}</option>`).join('')}</optgroup>
+          <optgroup label="Funds">${fundNames.map(x=>`<option value="${x}"${(x===box.dataset.highlight||heldShares.has(x))?' selected':''}>${x}</option>`).join('')}</optgroup>
         </select><span class="frontier-select-help">Hold Ctrl (Windows) or Command (Mac) to select several entries.</span>
       </label>
       <label>Horizontal view: <output class="front-xout">100%</output><input class="front-xzoom" type="range" min="20" max="100" value="100" step="1"></label>
@@ -259,8 +259,8 @@ function initialiseFrontierExplorer(box) {
       for(let j=0;j<=6;j++){const v=y0+(y1-y0)*j/6,py=sy(v);ctx.fillStyle='#344c5a';ctx.fillText(v.toFixed(5),8,py+4);}
       ctx.font='bold 13px system-ui';ctx.fillStyle='#173246';ctx.fillText(d.risk_label,L,H-18);ctx.save();ctx.translate(18,(T+H-B)/2);ctx.rotate(-Math.PI/2);ctx.fillText('Mean daily return',0,0);ctx.restore();
       ctx.strokeStyle='#007f8b';ctx.lineWidth=3;ctx.beginPath();frontier.forEach((p,i)=>{const px=sx(p.risk),py=sy(p.mean);if(i===0)ctx.moveTo(px,py);else ctx.lineTo(px,py);});ctx.stroke();
-      const selected=new Set([...compareSelect.selectedOptions].map(x=>x.value)), labelled=new Set(['Current',...selected]);
-      points.forEach((p,pi)=>{if(p.risk<x0||p.risk>x1||p.mean<y0||p.mean>y1)return;const isCurrent=p.name==='Current',isSelected=selected.has(p.name),isShare=p.type==='share';ctx.beginPath();if(isShare&&isSelected){ctx.rect(sx(p.risk)-6,sy(p.mean)-6,12,12);}else{ctx.arc(sx(p.risk),sy(p.mean),isCurrent||isSelected?7:(isShare?3:4),0,2*Math.PI);}ctx.fillStyle=isCurrent?'#d7191c':isSelected?(p.name==='Baltic_NetSD'?'#0072b2':p.name==='curent_update_baltic'?'#009e73':palette[pi%palette.length]):(isShare?'#d5dadd':'#8f9ba2');ctx.fill();ctx.strokeStyle=isSelected?'#17212b':'#fff';ctx.lineWidth=isSelected?1.5:1;ctx.stroke();if(labelled.has(p.name)){ctx.font='bold 12px system-ui';ctx.fillStyle='#17212b';ctx.fillText(p.name,sx(p.risk)+9,sy(p.mean)-7);}});
+      const selected=new Set([...compareSelect.selectedOptions].map(x=>x.value)), labelled=new Set(['Current',...selected,...(box.frontierPinnedNames||[])]);canvas.frontierHitPoints=[];canvas.frontierViewWidth=W;canvas.frontierViewHeight=H;
+      points.forEach((p,pi)=>{if(p.risk<x0||p.risk>x1||p.mean<y0||p.mean>y1)return;canvas.frontierHitPoints.push({name:p.name,label:p.label||p.name,x:sx(p.risk),y:sy(p.mean)});const isCurrent=p.name==='Current',isSelected=selected.has(p.name),isShare=p.type==='share';ctx.beginPath();if(isShare&&isSelected){ctx.rect(sx(p.risk)-6,sy(p.mean)-6,12,12);}else{ctx.arc(sx(p.risk),sy(p.mean),isCurrent||isSelected?7:(isShare?3:4),0,2*Math.PI);}ctx.fillStyle=isCurrent?'#d7191c':isSelected?(p.name==='Baltic_NetSD'?'#0072b2':p.name==='curent_update_baltic'?'#009e73':palette[pi%palette.length]):(isShare?'#d5dadd':'#8f9ba2');ctx.fill();ctx.strokeStyle=isSelected?'#17212b':'#fff';ctx.lineWidth=isSelected?1.5:1;ctx.stroke();if(labelled.has(p.name)){ctx.font='bold 12px system-ui';ctx.fillStyle='#17212b';const label=p.label||p.name,tw=ctx.measureText(label).width;ctx.fillText(label,Math.max(2,Math.min(W-tw-4,sx(p.risk)+9)),Math.max(14,sy(p.mean)-7));}});
       ctx.strokeStyle='#007f8b';ctx.lineWidth=3;ctx.beginPath();ctx.moveTo(L,T-20);ctx.lineTo(L+28,T-20);ctx.stroke();ctx.fillStyle='#17212b';ctx.font='12px system-ui';ctx.fillText(modelValue==='NetSD'?(frontier.length?'Observed nondominated envelope':'Discrete netSD candidate points'):modelValue==='Robust'?'Empirical mean-CVaR relaxation':'Efficient frontier',L+36,T-16);
       return points.find(p=>p.name==='Current');
     }
@@ -269,7 +269,7 @@ function initialiseFrontierExplorer(box) {
     canvases.forEach(canvas=>canvas.addEventListener('wheel',e=>{e.preventDefault();const control=e.shiftKey?yzoom:xzoom;control.value=Math.max(20,Math.min(100,Number(control.value)+Math.sign(e.deltaY)*4));render();},{passive:false}));
     box.querySelector('.front-reset').addEventListener('click',()=>{xzoom.value=100;yzoom.value=100;render();});
     box.querySelector('.front-save').addEventListener('click',()=>{canvases.forEach((canvas,index)=>{const a=document.createElement('a');a.download=`${index?'right':'left'}_${index?rightModel.value:leftModel.value}_interactive_frontier.png`;a.href=canvas.toDataURL('image/png');a.click();});});
-    window.addEventListener('resize',render);render();box.dataset.loaded='yes';
+    installFrontierPointLabels(box,canvases,render);window.addEventListener('resize',render);render();box.dataset.loaded='yes';
   }).catch(err=>{box.innerHTML=`<p>Interactive frontier could not be loaded: ${err.message}</p>`;box.dataset.loaded='';});
 }
 document.querySelectorAll('details.frontier-components').forEach(function(d){d.addEventListener('toggle',function(){if(d.open){const box=d.querySelector('.frontier-explorer');if(box)initialiseFrontierExplorer(box);}});if(d.open){const box=d.querySelector('.frontier-explorer');if(box)initialiseFrontierExplorer(box);}});
@@ -325,6 +325,44 @@ function initialiseCumulativeExplorer(box) {
 }
 document.querySelectorAll('details.cumulative-components').forEach(function(d){d.addEventListener('toggle',function(){if(d.open){const box=d.querySelector('.cumulative-explorer');if(box)initialiseCumulativeExplorer(box);}});if(d.open){const box=d.querySelector('.cumulative-explorer');if(box)initialiseCumulativeExplorer(box);}});
 document.querySelectorAll('details.report-section').forEach(function(section){section.addEventListener('toggle',function(){if(!section.open)return;section.querySelectorAll('details.dominance-components[open] .dominance-explorer').forEach(initialiseDominanceExplorer);section.querySelectorAll('details.frontier-components[open] .frontier-explorer').forEach(initialiseFrontierExplorer);section.querySelectorAll('details.cumulative-components[open] .cumulative-explorer').forEach(initialiseCumulativeExplorer);});});
+// Independent label selection for each asset's pair of frontier charts.
+function installFrontierPointLabels(box, canvases, render) {
+  const pinned = new Set();
+  box.frontierPinnedNames = pinned;
+  const controls = box.querySelector('.frontier-controls');
+  const clear = document.createElement('button');
+  clear.type = 'button'; clear.textContent = 'Clear pinned labels';
+  controls.append(clear);
+  const note = document.createElement('p');
+  note.textContent = 'Click a point to pin its name on both charts. Click it again to unpin. Labels remain when changing models or zooming.';
+  controls.after(note);
+  const output = document.createElement('p');
+  output.className = 'frontier-pinned-labels';
+  output.setAttribute('aria-live', 'polite'); note.after(output);
+  function nearest(canvas, event) {
+    const rect = canvas.getBoundingClientRect();
+    const x = (event.clientX - rect.left) * canvas.frontierViewWidth / rect.width;
+    const y = (event.clientY - rect.top) * canvas.frontierViewHeight / rect.height;
+    return (canvas.frontierHitPoints || []).map(p => ({...p, distance: Math.hypot(x-p.x, y-p.y)}))
+      .filter(p => p.distance <= 12).sort((a,b) => a.distance-b.distance)[0];
+  }
+  function announce() { output.textContent = pinned.size ? 'Pinned: ' + [...pinned].join('; ') : 'No pinned labels.'; }
+  canvases.forEach(canvas => {
+    canvas.addEventListener('mousemove', event => {
+      const p = nearest(canvas, event);
+      canvas.style.cursor = p ? 'pointer' : 'default';
+      canvas.title = p ? p.label : '';
+    });
+    canvas.addEventListener('click', event => {
+      const p = nearest(canvas, event); if (!p) return;
+      if (pinned.has(p.name)) pinned.delete(p.name); else pinned.add(p.name);
+      announce(); render();
+    });
+  });
+  clear.addEventListener('click', () => { pinned.clear(); announce(); render(); });
+  announce();
+}
+
 let dividendScatterData;
 const dividendScatterVariants={};
 function initialiseDividendExplorer(box) {
@@ -762,8 +800,52 @@ if(basketDataElement){
  const assetInfo={};Object.values(data).forEach(cases=>Object.values(cases).forEach(b=>b.rows.forEach(z=>assetInfo[z.asset]=z)));
  if(regimeData)Object.values(regimeData.portfolios).forEach(cases=>Object.values(cases).forEach(b=>b.rows.forEach(z=>assetInfo[z.asset]=z)));
  const originals=new WeakMap();
-  const profileRenderKeys=new WeakMap();
+ const sensitivityElement=document.getElementById('portfolio-sensitivity-data');
+const sensitivityData=sensitivityElement?JSON.parse(sensitivityElement.textContent):null;
+const sensitivityKeys=new WeakMap();
+window.renderSelectedPortfolioSensitivity=function(profile,scope,policy){
+ const host=profile.querySelector('.selected-portfolio-sensitivity');if(!host||!sensitivityData)return;
+ const renderKey=JSON.stringify([scope,policy,historyKey()]);if(sensitivityKeys.get(host)===renderKey)return;
+ const asset=profile.id.replace(/^(share-|fund-)/,'').toUpperCase(),context=sensitivityData.contexts[historyKey()];
+ host.replaceChildren();
+ const paragraph=text=>{const p=document.createElement('p');p.textContent=text;host.append(p);};
+ const fmt=value=>value==null?'—':Number(value).toFixed(6),units=value=>value==null?'—':String(Number(Number(value).toFixed(3)));
+ const labels={maximum:'Maximum',median:'Probability-weighted median',minimum_positive:'Smallest positive'};
+ const cases=context?.portfolios[scope];
+ if(!cases){paragraph('Select a portfolio and sale policy to view decision-specific portfolio sensitivity.');return;}
+ paragraph('Historical sensitivity: '+(regimeData?.contexts[historyKey()]?.label||historyKey())+'. Only this asset is changed in Current; the invested-holdings return distribution and reference denominator are recomputed consistently. These are hypothetical marginal changes.');
+ const gross=sensitivityData.quantity_basis==='gross_purchases';
+ function table(headers){const t=document.createElement('table');t.className='research-table selected-sensitivity-table';const r=t.createTHead().insertRow();headers.forEach(text=>{const h=document.createElement('th');h.textContent=text;r.append(h);});host.append(t);return t.createTBody();}
+ for(const [key,rows] of Object.entries(cases)){
+  if(policy!=='ALL'&&policy!==key)continue;
+  const item=rows[asset];if(!item)continue;
+  const title=document.createElement('h5');title.textContent=scope+' · '+(key==='SALE'?'Sale':'No-sale');host.append(title);
+  const body=table(['Decision / quantity case',gross?'Units added / sold':'Target units',...(gross?[]:['Change from Current']),'Current netSD','After change netSD','netSD change']);
+  function row(label,quantity,change,after,delta,kind){const r=body.insertRow();r.dataset.case=kind;r.dataset.policy=key;r.dataset.targetUnits=quantity??'';r.dataset.changeUnits=change??'';r.dataset.afterNetsd=after??'';
+   [label,units(quantity),...(gross?[]:[units(change)]),fmt(context.baseline.netSD),fmt(after),fmt(delta)].forEach(v=>r.insertCell().textContent=v);
+  }
+  row(item.initial_change>0?'Initial decision: buy':item.initial_change<0?'Initial decision: sell':'Initial decision: no change',gross?item.initial_change:item.initial_target,item.initial_change,item.initial.netSD,item.initial_delta,'initial');
+  for(const stat of item.all_stages){
+   if(stat.units==null){row(labels[stat.case]+': no nonzero quantity exists',null,null,null,null,stat.case);continue;}
+   row((gross?'Cumulative gross buys: ':'Final target: ')+labels[stat.case],stat.units,stat.change,stat.historical.netSD,stat.delta,stat.case);
+  }
+  if(!item.all_stages.length){paragraph('This is a single-decision model; it has no later-stage scenario quantities.');continue;}
+  paragraph(gross?'All-stage quantity is cumulative gross units purchased along one complete scenario path, including the initial decision. Sales do not reduce that purchase total. The historical diagnostic adds that quantity to Current.':'All-stage quantity is the final holding after every decision, including purchases and sales. The historical diagnostic replaces this asset’s Current holding with that final quantity.');
+  paragraph('The smallest positive quantity excludes zero-purchase scenarios; the median includes them. Complete-portfolio horizon comparison: these scenario subsets are selected by this asset’s quantity; the following netSD changes include every asset’s trades, sales and cash. Each probability belongs to its own quantity condition; identical quantities share the same scenario subset.');
+  const terminal=table(['All-stage quantity case','Scenario probability, %','No-trade terminal netSD','Initial-only terminal netSD','All-stage terminal netSD','Change vs initial-only']);
+  for(const stat of sensitivityData.native[scope]?.[key]?.[asset]||[]){
+   if(!stat.terminal)continue;
+   const r=terminal.insertRow(),t=stat.terminal;r.dataset.case=stat.case;r.dataset.policy=key;r.dataset.denominator=t.denominator;r.dataset.terminalDelta=t.change_vs_initial;
+   [labels[stat.case],(100*t.probability).toFixed(4),fmt(t.no_trades.netSD),fmt(t.initial_only.netSD),fmt(t.all_stages.netSD),fmt(t.change_vs_initial)].forEach(v=>r.insertCell().textContent=v);
+  }
+  paragraph('Terminal netSD compares true probability-weighted four-week return distributions on the actual scenarios with that asset quantity. Initial-only keeps the first allocation without later trades; All-stage executes the complete portfolio policy, including other assets, stage prices, sales and cash. The same scenario subset and references are used within each row. Quantities from incompatible scenarios are never combined. The terminal model retains its native training sample and scenario law.');
+ }
+ sensitivityKeys.set(host,renderKey);
+};
+
+ const profileRenderKeys=new WeakMap();
  window.updateSelectedPortfolioProfile=function(profile,scope,policy){
+  window.renderSelectedPortfolioSensitivity?.(profile,scope,policy);
   const renderKey=JSON.stringify([scope,policy,historyKey()]);
   if(profileRenderKeys.get(profile)===renderKey)return;
   const table=profile.querySelector('table'),summary=profile.querySelector(':scope > summary');if(!table||!summary)return;
@@ -786,12 +868,13 @@ if(basketDataElement){
   profile.dataset.saleMembership=JSON.stringify(modes);profile.dataset.portfolioScopes=[...scopes].join(' ');
   const cases=data[scope]?Object.entries(data[scope]).filter(([key])=>policy==='ALL'||policy===key):[];
   const plans=cases.map(([key,basket])=>{
-   const selected=basket.rows.find(z=>z.asset===asset),target=selected?.units??0,change=target-current;
-   return {key,target,change,weight:selected?.weight??0,decision:change>0?'BUY':change<0?'SELL':'HOLD',impact:evaluation(scope,key)?.changes[asset],future:basket.future_purchases?.[asset]};
+   const selected=basket.rows.find(z=>z.asset===asset),target=selected?.units??0,change=Number((target-current).toFixed(3));
+   return {key,target,change,weight:selected?.weight??0,value:selected?.value??0,decision:change>0?'BUY':change<0?'SELL':'HOLD',impact:evaluation(scope,key)?.changes[asset],future:basket.future_purchases?.[asset]};
   });
   const consensus=field=>plans.length&&plans.every(z=>z[field]===plans[0][field])?plans[0][field]:null;
   const target=consensus('target'),change=consensus('change'),weight=consensus('weight');
   setCell('current units',current);setCell('target units',target??'\u2014');setCell('change',change??'\u2014');setCell('weight %',weight==null?'\u2014':(100*weight).toFixed(2)+'%');
+  const targetValue=consensus('value');setCell('target value eur',targetValue==null?'\u2014':targetValue.toFixed(2));
   if(diagnostic){setCell('individual netsd',fmt(diagnostic.individual_netSD));setCell('out',diagnostic.individual_OUT);setCell('in',diagnostic.individual_IN);}
   profile.querySelector(':scope > .regime-asset-impact')?.remove();
   let notes=profile.querySelector(':scope > .profile-allocation-notes');
@@ -815,7 +898,7 @@ if(basketDataElement){
    if(target==null||weight==null){const p=document.createElement('p');p.className='profile-policy-help';p.textContent='Sale and No-sale differ. The table shows a dash where one value cannot represent both policies; both results are listed above. Select one policy to show its values in the table.';notes.append(p);}
   }else{const p=document.createElement('p');p.textContent='Select a portfolio and policy to display its target quantities. The table retains the common instrument fields.';notes.append(p);}
   if(diagnostic){const p=document.createElement('p');p.className='regime-asset-impact';p.textContent='Standardised addition: Current netSD '+fmt(diagnostic.current_netSD)+'; after adding '+diagnostic.add_units+' units (EUR '+diagnostic.add_value_EUR.toFixed(2)+') '+fmt(diagnostic.after_add_netSD)+'; change '+signed(diagnostic.add_delta)+'. Hypothetical diagnostic, not an executable order.';notes.append(p);}
-  const metricNote=document.createElement('p');metricNote.className='profile-metric-scope-note';metricNote.textContent='Individual netSD, OUT and IN use the selected history. Rachev and Sortino in the table use the full training sample; technical indicators use the latest price history. The original sensitivity section describes the stochastic reference portfolio.';notes.append(metricNote);
+  const metricNote=document.createElement('p');metricNote.className='profile-metric-scope-note';metricNote.textContent='Individual netSD, OUT and IN use the selected history. Rachev and Sortino in the table use the full training sample; technical indicators use the latest price history. A red attractiveness score fails your EUR 1,000 weekly market-turnover minimum; open the score for its liquidity breakdown. Portfolio sensitivity follows the selected portfolio, policy and history; the original Stochastic reference diagnostics are separately labelled.';notes.append(metricNote);
   // Section 1.1 displays the initial allocation. Possible later purchases are
   // explanatory notes, not an initial update and must not admit HOLD rows.
   if(plans.length){profile.dataset.signal=[...new Set(plans.map(z=>z.decision))].join(' ');profile.dataset.hasUpdate=String(plans.some(z=>z.change!==0));profile.dataset.netsdEffect=[...new Set(plans.map(z=>effect(z.impact?.delta??diagnostic?.add_delta??0)))].join(' ');}
