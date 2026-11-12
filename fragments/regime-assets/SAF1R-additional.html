@@ -4,6 +4,10 @@ html body table.report-fit-table :is(th,td){min-width:0!important;max-width:none
 html body table.report-fit-table th,html body table.report-fit-table th span{writing-mode:horizontal-tb!important;transform:none!important;white-space:normal!important;height:auto!important;text-align:left!important}
 html body table.report-fit-table :is(td,th) *{max-width:100%;min-width:0;white-space:normal!important;overflow-wrap:anywhere}
 html body table.report-fit-table :is(img,svg,input,select,button){max-width:100%!important;box-sizing:border-box}
+/* Preserve the compact section 1.1 summary when its numeric columns fit. */
+html body table.report-fit-table.stock-summary-table.fit-profile-compact th{writing-mode:vertical-rl!important;text-orientation:mixed;transform:rotate(180deg)!important;height:15rem!important;white-space:normal!important;vertical-align:middle!important;text-align:left!important;padding:.35rem .2rem!important}
+html body table.report-fit-table.stock-summary-table.fit-profile-compact th span{writing-mode:inherit!important;transform:none!important;height:auto!important}
+html body table.report-fit-table.stock-summary-table.fit-profile-compact td{text-align:center!important;padding:.4rem .2rem!important;font-variant-numeric:tabular-nums}
 html body table.report-fit-table.fit-stacked,html body table.report-fit-table.fit-stacked :is(tbody,tfoot){display:block!important;width:100%!important}
 html body table.report-fit-table.fit-stacked thead{position:absolute!important;width:1px!important;height:1px!important;clip-path:inset(50%);overflow:hidden!important}
 html body table.report-fit-table.fit-stacked :is(tbody,tfoot)>tr{display:block!important;width:100%!important;margin:.65rem 0!important;border:1px solid #c6d8de;border-radius:5px;background:#fff}
@@ -51,7 +55,13 @@ html body table.report-fit-table[hidden],html body table.report-fit-table.fit-st
       }
       const width=table.parentElement?.getBoundingClientRect().width||innerWidth;
       const cols=Math.max(headings.length,...[...table.rows].map(r=>[...r.cells].reduce((s,c)=>s+c.colSpan,0)));
-      table.classList.toggle('fit-stacked',width<700||cols*105>width);
+      const textScale=parseFloat(getComputedStyle(document.documentElement).fontSize)/16;
+      // The single-row asset summary has compact numeric values and historically
+      // used vertical headings. It needs less width than general text tables.
+      const profile=table.classList.contains('stock-summary-table');
+      const compactProfile=profile&&width>=cols*60*textScale;
+      table.classList.toggle('fit-profile-compact',compactProfile);
+      table.classList.toggle('fit-stacked',!compactProfile&&cols*105*textScale>width);
     }
     document.documentElement.dataset.tablesReady='true';
   }

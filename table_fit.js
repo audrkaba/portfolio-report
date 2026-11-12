@@ -38,7 +38,13 @@
       }
       const width=table.parentElement?.getBoundingClientRect().width||innerWidth;
       const cols=Math.max(headings.length,...[...table.rows].map(r=>[...r.cells].reduce((s,c)=>s+c.colSpan,0)));
-      table.classList.toggle('fit-stacked',width<700||cols*105>width);
+      const textScale=parseFloat(getComputedStyle(document.documentElement).fontSize)/16;
+      // The single-row asset summary has compact numeric values and historically
+      // used vertical headings. It needs less width than general text tables.
+      const profile=table.classList.contains('stock-summary-table');
+      const compactProfile=profile&&width>=cols*60*textScale;
+      table.classList.toggle('fit-profile-compact',compactProfile);
+      table.classList.toggle('fit-stacked',!compactProfile&&cols*105*textScale>width);
     }
     document.documentElement.dataset.tablesReady='true';
   }
