@@ -180,7 +180,7 @@ function showPanel(panel){
  $('portfolio-preview').hidden=panel!=='portfolio';$('outcome-panel').hidden=panel!=='outcomes';
  $('show-portfolio').setAttribute('aria-pressed',String(panel==='portfolio'));$('show-outcomes').setAttribute('aria-pressed',String(panel==='outcomes'));
 }
-function quantityWithChange(quantity,before){const delta=quantity-before;return `${quantity} (${delta>0?'+':''}${delta})`;}
+function quantityWithChange(quantity,before){const delta=Number((quantity-before).toFixed(3));return `${quantity} (${delta>0?'+':''}${delta})`;}
 function composition(){
  const p=selected(),initial=state.stage==='initial',end=!initial&&state.valuation==='end',d=decision();
  const units=initial?p.units:d.units,prices=initial?data.assets.map(a=>a.price):end?leaf().terminal_prices:data.nodes[state.node].prices,cash=initial?p.cash:d.cash;
@@ -193,7 +193,7 @@ function composition(){
 }
 function orders(){
  const p=selected(),l=leaf(),d=decision(),initial=state.stage==='initial',units=initial?p.units:d.units,before=initial?data.assets.map(a=>a.current):p.units,prices=initial?data.assets.map(a=>a.price):data.nodes[state.node].prices;
- const changes=units.map((q,i)=>q-before[i]);const buys=changes.reduce((s,q,i)=>s+Math.max(q,0)*prices[i],0),sells=changes.reduce((s,q,i)=>s+Math.max(-q,0)*prices[i],0);
+ const changes=units.map((q,i)=>Number((q-before[i]).toFixed(3)));const buys=changes.reduce((s,q,i)=>s+Math.max(q,0)*prices[i],0),sells=changes.reduce((s,q,i)=>s+Math.max(-q,0)*prices[i],0);
  $('orders-title').textContent=initial?'Initial portfolio holdings and trades':data.nodes[state.node].label+' · Portfolio holdings after recourse';
  $('orders-subtitle').textContent=initial?'Confirmed current holdings → proposed initial allocation.':'Initial allocation → conditional portfolio at this model node. Trades use modelled node prices.';
  const headers=['Asset','Now','After stage 1','After stage 2','Stage change','Action','Stage price, EUR','Trade value, EUR','Scenario-end value, EUR'];

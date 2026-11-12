@@ -34,7 +34,7 @@ function renderHoldings(){
  statistic(stats,'Purchase limit per asset',terminal?'No trades':'750 Eur');
  const body=$('holdings');body.replaceChildren();
  data.assets.forEach((asset,i)=>{
-  const change=terminal?0:units[i]-previous[i];if($('updates').checked&&!change&&!terminal)return;if(terminal&&!units[i])return;
+  const change=terminal?0:Number((units[i]-previous[i]).toFixed(3));if($('updates').checked&&!change&&!terminal)return;if(terminal&&!units[i])return;
   const row=body.insertRow();row.dataset.asset=asset.id;row.dataset.change=change;
   const permitted=terminal?'—':state.policy==='no_sales'?'No':initial?(state.policy==='sale'&&data.initial_sale_allowed[i]?'Yes':'No'):(data.sale_allowed[node][i]?'Yes':'No');
   [asset.id,asset.name,terminal?units[i]:previous[i],units[i],change>0?'+'+change:change,fmt(prices[i],4),fmt(Math.max(change,0)*prices[i]),fmt(Math.max(-change,0)*prices[i]),permitted].forEach(v=>{row.insertCell().textContent=v});

@@ -40,10 +40,10 @@ function holdings(path){
  const previous=initial?data.assets.map(a=>a.current):units(parent),q=units(id),prices=terminal?path[20]:initial?data.assets.map(a=>a.price):n.prices;
  const cash=initial?p.cash0:bp.cash[positionMap.get(id)],wealth=prices.reduce((v,price,i)=>v+price*q[i],cash),host=$('decision-stats');host.replaceChildren();
  $('decision-title').textContent=terminal?'Terminal valuation — no trades':initial?'Stage 1 — shared initial decision':`Stage ${n.stage+1} · ${data.dates[n.step]} · R${n.regime}/K${n.cluster}`;
- statistic(host,'Value',fmt(wealth)+' Eur');statistic(host,'Cash balance',fmt(cash)+' Eur');statistic(host,'Purchase limit per asset',terminal?'No trades':'750 Eur');
+ statistic(host,'Value',fmt(wealth)+' Eur');statistic(host,'Cash balance',fmt(cash)+' Eur');statistic(host,'Purchase limit per asset',terminal?'No trades':'750 Eur');statistic(host,'Total purchase limit',terminal?'No trades':'1,000 Eur');statistic(host,'Gross purchases this stage',terminal?'No trades':fmt(q.reduce((v,x,i)=>v+Math.max(x-previous[i],0)*prices[i],0))+' Eur');
  const body=$('holdings');body.replaceChildren();
  data.assets.forEach((asset,i)=>{
-  const change=terminal?0:q[i]-previous[i];if($('updates').checked&&!change&&!terminal)return;if(terminal&&!q[i])return;
+  const change=terminal?0:Number((q[i]-previous[i]).toFixed(3));if($('updates').checked&&!change&&!terminal)return;if(terminal&&!q[i])return;
   const common=terminal?0:initial?p.common.initial[i]:p.common.stages[n.stage-1].minimum[i];const row=body.insertRow();row.dataset.asset=asset.id;row.dataset.change=change;row.dataset.commonBuyUnits=common;
   const permission=terminal?'—':state.policy==='no_sales'?'No':initial?(state.policy==='sale'&&data.initial_sale_allowed[i]?'Yes':'No'):(branch.sale_allowed[positionMap.get(id)][i]?'Yes':'No');
   [asset.id,asset.name,terminal?q[i]:previous[i],q[i],change>0?'+'+change:String(change),fmt(prices[i],4),fmt(Math.max(change,0)*prices[i]),fmt(Math.max(-change,0)*prices[i]),permission].forEach(v=>{row.insertCell().textContent=v});

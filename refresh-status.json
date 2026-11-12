@@ -1,7 +1,7 @@
 {
   "run": "20261112_vlp87_cpu48",
-  "revision": "d70260e57469",
-  "prepared_at": "2026-11-12T18:42:30.856670+02:00",
+  "revision": "3fc2ac757e37",
+  "prepared_at": "2026-11-12T18:55:43.628503+02:00",
   "complete": false,
   "parts": [
     {
@@ -26,8 +26,8 @@
     },
     {
       "label": "Regime-specific portfolios",
-      "status": "pending",
-      "url": null
+      "status": "published",
+      "url": "partial-progress.html#completed-portfolios"
     },
     {
       "label": "All-stage portfolio sensitivity",
@@ -43,6 +43,11 @@
       "label": "Full report: section 1.1 schema, layouts, numbering and interactive frontier labels",
       "status": "integration pending",
       "url": null
+    },
+    {
+      "label": "Both updated scenario trees",
+      "status": "published",
+      "url": "partial-progress.html#completed-trees"
     }
   ],
   "holdings": {
