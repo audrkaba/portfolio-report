@@ -1,7 +1,7 @@
 {
   "run": "20261112_vlp87_cpu48",
-  "revision": "8771a73fe95d",
-  "prepared_at": "2026-11-12T18:06:23.686643+02:00",
+  "revision": "d70260e57469",
+  "prepared_at": "2026-11-12T18:42:30.856670+02:00",
   "complete": false,
   "parts": [
     {
@@ -21,7 +21,7 @@
     },
     {
       "label": "Stochastic 2: Sale at every stage",
-      "status": "calculating",
+      "status": "published",
       "url": "partial-progress.html#completed-portfolios"
     },
     {
