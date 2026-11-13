@@ -15,3 +15,6 @@ UPDATE3,Sale,107,155,48,736.8
 stochA,No-sale,107,165,58,890.3
 stochA,No initial sales,107,163,56,859.6
 stochA,Sale,107,163,56,859.6
+stoch2,No-sale,107,126,19,291.65
+stoch2,No initial sales,107,126,19,291.65
+stoch2,Sale,107,135,28,429.8
