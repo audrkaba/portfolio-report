@@ -3,12 +3,17 @@
   "revision": "4f1059060216",
   "prepared_at": "2026-11-13T13:23:02.723820+02:00",
   "complete": false,
-  "notice": "VLP holdings were corrected to 107. The previous 87-unit calculation was superseded. Only the linked verified portfolios use the new holdings and November 12 prices.",
+  "notice": "New whole-tree sensitivity is available from every asset. Main portfolio-table integration and remaining four-stage model policies are pending; the previous 87-unit sensitivity has been superseded.",
   "holdings": {
     "VLP1L": 107,
     "SE0014261764": 7.108
   },
   "parts": [
+    {
+      "label": "Whole-tree asset sensitivity with 107 VLP: Stochastic 2 No-sale, original Stochastic and stochA; all other model trades fixed",
+      "status": "published",
+      "url": "current-sensitivity.html"
+    },
     {
       "label": "Verified Stochastic, Update2, Update3, Markowitz, Minimax and Robust initial allocations: VLP107",
       "status": "published",
