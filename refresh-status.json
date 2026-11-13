@@ -1,20 +1,9 @@
 {
   "run": "20261112_zzclose_cpu48",
-  "revision": "3e02121ab759",
+  "revision": "us-cab2a62be80d",
   "prepared_at": "2026-11-13T07:28:22.868329+02:00",
-  "complete": false,
-  "parts": [
-    {
-      "label": "Completed daily models, forecasts, sensitivity, scenario trees and technical appendix",
-      "status": "published",
-      "url": "index.html?v=6f479c07ba7ee020a8ece68a4a0ffbae2fb46809"
-    },
-    {
-      "label": "Optional US equity trial: 0 to 3 stocks, EUR 1000 total",
-      "status": "calculating",
-      "url": null
-    }
-  ],
+  "complete": true,
+  "parts": [],
   "holdings": {
     "VLP1L": 87,
     "SE0014261764": 7.108
@@ -25,5 +14,6 @@
   },
   "main_report_complete": true,
   "main_report_commit": "6f479c07ba7ee020a8ece68a4a0ffbae2fb46809",
-  "main_report_verified_at": "2026-11-13T08:33:29.511644+02:00"
+  "main_report_verified_at": "2026-11-13T08:33:29.511644+02:00",
+  "US_trial_complete": true
 }
