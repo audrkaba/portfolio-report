@@ -1,7 +1,7 @@
 {
   "run": "20261112_zzclose_cpu48",
-  "revision": "78c1a2003fba",
-  "prepared_at": "2026-11-13T06:57:23.685868+02:00",
+  "revision": "6cd9149a8da1",
+  "prepared_at": "2026-11-13T07:11:15.249099+02:00",
   "complete": false,
   "parts": [
     {
@@ -26,8 +26,8 @@
     },
     {
       "label": "Regime-specific portfolios",
-      "status": "pending",
-      "url": null
+      "status": "published",
+      "url": "partial-progress.html#completed-portfolios"
     },
     {
       "label": "All-stage portfolio sensitivity",
