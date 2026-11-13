@@ -1,9 +1,55 @@
 {
-  "run": "20261112_zzclose_cpu48",
-  "revision": "us-cab2a62be80d",
-  "prepared_at": "2026-11-13T07:28:22.868329+02:00",
-  "complete": true,
-  "parts": [],
+  "run": "20261113_stoch_variants_cpu48",
+  "revision": "2f9540b4c88a",
+  "prepared_at": "2026-11-13T09:49:24.708332+02:00",
+  "complete": false,
+  "parts": [
+    {
+      "label": "Completed portfolio allocations and actual holdings",
+      "status": "published",
+      "url": "partial-progress.html#completed-portfolios"
+    },
+    {
+      "label": "Fixed-position market-regime correlations (Figure 2.k)",
+      "status": "published",
+      "url": "partial-progress.html#completed-correlations"
+    },
+    {
+      "label": "CPU48/CUDA balance and exact CPU packet trial (section 4.12)",
+      "status": "published",
+      "url": "partial-progress.html#completed-compute"
+    },
+    {
+      "label": "Stochastic 2: Sale at every stage",
+      "status": "pending",
+      "url": "partial-progress.html#completed-portfolios"
+    },
+    {
+      "label": "Regime-specific portfolios",
+      "status": "pending",
+      "url": null
+    },
+    {
+      "label": "All-stage portfolio sensitivity",
+      "status": "pending",
+      "url": null
+    },
+    {
+      "label": "Final-horizon netSD, time and energy comparison",
+      "status": "pending",
+      "url": null
+    },
+    {
+      "label": "Full report: section 1.1 schema, layouts, numbering and interactive frontier labels",
+      "status": "integration pending",
+      "url": null
+    },
+    {
+      "label": "Matched stochA and stoch2A comparison without the aggregate stage purchase cap",
+      "status": "pending",
+      "url": null
+    }
+  ],
   "holdings": {
     "VLP1L": 87,
     "SE0014261764": 7.108
@@ -11,9 +57,5 @@
   "prices": {
     "shares": "2026-11-12",
     "funds": "2026-11-11"
-  },
-  "main_report_complete": true,
-  "main_report_commit": "6f479c07ba7ee020a8ece68a4a0ffbae2fb46809",
-  "main_report_verified_at": "2026-11-13T08:33:29.511644+02:00",
-  "US_trial_complete": true
+  }
 }
