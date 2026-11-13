@@ -5,12 +5,14 @@
  const caseNames={minimum_positive:'Smallest positive later total',median:'Probability-weighted median later total',maximum:'Maximum later total'};
  const fmt=x=>x==null?'—':Number(x).toFixed(6),qty=x=>x==null?'—':String(Number(Number(x).toFixed(3)));
  const params=new URLSearchParams(location.search);
- for(const m of Object.keys(data.models))model.add(new Option(labels[m]||m,m));model.value=params.get('model')||'STOCHASTIC2';if(!model.value)model.value='STOCHASTIC2';
+ for(const m of Object.keys(labels))model.add(new Option(labels[m]+(data.models[m]?'':' — pending'),m));model.value=params.get('model')||'STOCHASTIC2';if(!model.value)model.value='STOCHASTIC2';
+ const capLabel=document.createElement('label'),caps=document.createElement('select');caps.id='purchase-caps';capLabel.textContent='Purchase value limits';caps.add(new Option('With purchase caps: EUR 1,000 total / EUR 750 per asset / stage','CAPPED'));caps.add(new Option('No purchase caps (A); 30% sector cap retained','A'));capLabel.append(caps);model.closest('label').after(capLabel);
  for(const a of data.assets)asset.add(new Option(a+' — '+data.names[a],a));asset.value=params.get('asset')||'VLP1L';if(!asset.value)asset.value='VLP1L';
  document.getElementById('snapshot').textContent='Share closes '+data.snapshot.share_last+'; fund NAV '+data.snapshot.fund_last+'. The prices are the frozen calculation snapshot, not live quotes.';
  function paragraph(text,parent=host){const p=document.createElement('p');p.textContent=text;parent.append(p)}
  function table(caption,headers){const t=document.createElement('table');t.className='research-table';t.createCaption().textContent=caption;const h=t.createTHead().insertRow();for(const label of headers){const th=document.createElement('th');th.textContent=label;h.append(th)}host.append(t);return t.createTBody()}
  function draw(){
+  if(!data.models[model.value]){host.replaceChildren();paragraph((labels[model.value]||model.value)+' is still being calculated. No standard-model results are substituted.');document.documentElement.dataset.sensitivityReady='true';return}
   const tree=data.models[model.value][policy.value],row=tree.assets[asset.value];host.replaceChildren();
   const title=document.createElement('h2');title.textContent=data.names[asset.value]+' — '+(policy.value==='NO_SALE'?'No-sale':'Sale');host.append(title);
   paragraph('Current holding '+qty(row.current_units)+' units. Exact first-stage signed trade '+(row.initial_change>0?'+':'')+qty(row.initial_change)+' units; first-stage target '+qty(row.initial.initial_target_units)+' units. Price EUR '+Number(data.prices_EUR[asset.value]).toFixed(4)+'.');
@@ -36,7 +38,8 @@
   const url=new URL(location.href);url.searchParams.set('model',model.value);url.searchParams.set('policy',policy.value);url.searchParams.set('asset',asset.value);history.replaceState(null,'',url);
   window.reportTableFit?.();document.documentElement.dataset.sensitivityReady='true';
  }
- function policies(){const chosen=policy.value||params.get('policy')||'NO_SALE';policy.replaceChildren();for(const p of Object.keys(data.models[model.value]))policy.add(new Option(p==='NO_SALE'?'No-sale':'Sale',p));policy.value=chosen;if(!policy.value)policy.value='NO_SALE';draw()}
+ function policies(){caps.value=model.value==='stochA'||model.value==='stoch2A'?'A':'CAPPED';const chosen=policy.value||params.get('policy')||'NO_SALE';policy.replaceChildren();for(const p of Object.keys(data.models[model.value]||{}))policy.add(new Option(p==='NO_SALE'?'No-sale':'Sale',p));policy.value=chosen;if(!policy.value)policy.value='NO_SALE';draw()}
+ caps.addEventListener('change',()=>{const weekly=model.value==='STOCHASTIC2'||model.value==='stoch2A';model.value=caps.value==='A'?(weekly?'stoch2A':'stochA'):(weekly?'STOCHASTIC2':'STOCHASTIC');policies()});
  model.addEventListener('change',policies);policy.addEventListener('change',draw);asset.addEventListener('change',draw);policies();
 })();
 </script></body></html>
