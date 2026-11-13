@@ -1,0 +1,497 @@
+{
+  "observed_at": "2026-11-13T09:03:18.643790+02:00",
+  "scope": "Review of recorded website and model requirements, focused on 12 November and the subsequent 13 November clarifications. Verification is requirement-specific; a successful daily pipeline alone is not a full conversation audit.",
+  "all_requests_fully_verified": false,
+  "blanket_completion_claim_withdrawn": true,
+  "report_sha256": "887193d9108ef876eb6c75eb48b1d7ded5b67a6569396feb1451626081fe961d",
+  "requirements": [
+    {
+      "requirement": "Actual holdings: VLP1L 87; Technology C 7.108",
+      "status": "Verified",
+      "detail": "The confirmed holding file and published daily completion proof agree. Proposed US buys remain experiments, not actual transactions.",
+      "evidence": [
+        {
+          "path": "data/current_holdings.json",
+          "sha256": "81fcbb2daa68f99c554f5bf27adab3cce0e596a99ce8960e561681d68d0d8a1b"
+        },
+        {
+          "path": "data/instruction_audit/20261112/completion.json",
+          "sha256": "0038838aab1174660e0fee8442d6f7f79669672638318646c5756eaf4f52b4bc"
+        }
+      ]
+    },
+    {
+      "requirement": "Closing prices, forecasts and model refresh",
+      "status": "Verified snapshot; NAV lag disclosed",
+      "detail": "Baltic share snapshot: 12 November 2026. Fund NAV snapshot: 11 November. Common historical returns end on 11 November because fund observations lag. This is the frozen evening snapshot, not a claim that every provider still has no newer observation on 13 November.",
+      "evidence": [
+        {
+          "path": "data/long_history/market_refresh_validation.json",
+          "sha256": "637ba0b475e30928b9df7debf98295c4793179e8e1675c7079c4d8c5ee387937"
+        },
+        {
+          "path": "data/market_refresh/20261112_zzclose_cpu48/run_inputs.json",
+          "sha256": "0ec1884b3d2e0eec0f74d6d33f1af530617e81176ec507de358b44ac44f237ad"
+        }
+      ]
+    },
+    {
+      "requirement": "Stochastic 2: four weekly decisions; valuation after four weeks",
+      "status": "Verified",
+      "detail": "Decisions at sessions 0, 5, 10 and 15; final valuation at session 20. Only past information is available at each decision.",
+      "evidence": [
+        {
+          "path": "data/weekly_multistage/run_manifest.json",
+          "sha256": "10b315cbaf27e910f39c1c58ba9a08a425bf486cb2851c05e82a2eae3a78011e"
+        },
+        {
+          "path": "data/weekly_multistage/browser20_live.json",
+          "sha256": "c4760b067695acb82306e7c78ed9e7c5db844774d228b10fb41c8dbd04f85aed"
+        }
+      ]
+    },
+    {
+      "requirement": "Twenty continuations per decision node",
+      "status": "Verified",
+      "detail": "Decision-node counts: 1, 20, 400, 8000; 160000 terminal outcomes. Both native scenario explorer tables and all 20 root branches passed live checks.",
+      "evidence": [
+        {
+          "path": "data/weekly_multistage/browser20_live.json",
+          "sha256": "c4760b067695acb82306e7c78ed9e7c5db844774d228b10fb41c8dbd04f85aed"
+        },
+        {
+          "path": "data/scenario_table_restore/live.json",
+          "sha256": "c79953d3735c2e292e0793b926aea17f7c3ad57efb49e40ed1086efea843bd32"
+        }
+      ]
+    },
+    {
+      "requirement": "EUR 1000 aggregate gross buys per stage; EUR 750 per asset",
+      "status": "Verified",
+      "detail": "The global EUR 1000 limit applies to all assets together at each decision; sales do not offset purchases.",
+      "evidence": [
+        {
+          "path": "data/stage_purchase_checks/latest.json",
+          "sha256": "f28eab08686794d19d07f59713b5adf2d585780d59711791b8f4ba3bac484cd1"
+        }
+      ]
+    },
+    {
+      "requirement": "Maximum 30% sector exposure",
+      "status": "Verified in the daily model gates",
+      "detail": "The shared configured sector cap and whole-policy feasibility checks were retained.",
+      "evidence": [
+        {
+          "path": "data/investor_preferences.json",
+          "sha256": "4fcfaa4cbd3251218167dde582351581268c7153d227b00dcb2a698f83439722"
+        },
+        {
+          "path": "data/sector_limits/manifest.json",
+          "sha256": "64a041660c37fff842f0618b6ad7277509d7b430d1b496f45e17702a4eeef373"
+        },
+        {
+          "path": "data/stage_purchase_checks/latest.json",
+          "sha256": "f28eab08686794d19d07f59713b5adf2d585780d59711791b8f4ba3bac484cd1"
+        }
+      ]
+    },
+    {
+      "requirement": "Sale without technical/negative-forecast gates; No-sale forbids sales",
+      "status": "Verified",
+      "detail": "Sale permissions are unrestricted by those former signal gates at every stage. Other budget, mean-return, sector and execution constraints still apply; identical trades alone do not establish a permission bug.",
+      "evidence": [
+        {
+          "path": "data/investor_preferences.json",
+          "sha256": "4fcfaa4cbd3251218167dde582351581268c7153d227b00dcb2a698f83439722"
+        },
+        {
+          "path": "R/sale_permissions.py",
+          "sha256": "bd5e7df51530ce527c50c142b449c85f51c782eb61acc76aa724fdbe979b89c3"
+        },
+        {
+          "path": "data/weekly_multistage/run_manifest.json",
+          "sha256": "10b315cbaf27e910f39c1c58ba9a08a425bf486cb2851c05e82a2eae3a78011e"
+        }
+      ]
+    },
+    {
+      "requirement": "1.1 compact, uniform 19-column summaries",
+      "status": "Verified",
+      "detail": "All 70 active profiles use the common schema. Compact vertical headings and grouped layouts were checked across laptop, tablet and phone sizes.",
+      "evidence": [
+        {
+          "path": "data/profile_summary_checks/layout_live.json",
+          "sha256": "104b68dfd2718b6a6e4d4cd5dd4c0dd4d4242d310e15fa152e6fbd9882663dde"
+        }
+      ]
+    },
+    {
+      "requirement": "1.1 target value, Bollinger order, percentage weights and final attractiveness column",
+      "status": "Verified",
+      "detail": "Target value uses unrounded units times price. The provider TradingView recommendation is exact-class verified or unavailable.",
+      "evidence": [
+        {
+          "path": "data/profile_summary_checks/live.json",
+          "sha256": "d80df3195a4412a757e432e3b7759c035562a96118af6ab6b2a43c6e9e967e77"
+        }
+      ]
+    },
+    {
+      "requirement": "1.1 model/policy/regime selection and strict Updates only",
+      "status": "Verified",
+      "detail": "120 live combinations passed. Updates only requires a nonzero initial quantity change; a future-only buy cannot admit an initial HOLD.",
+      "evidence": [
+        {
+          "path": "data/profile_update_filter_checks/live.json",
+          "sha256": "d343f678f74ffb201d3d82221b662a7de04790d2118c17407787a2b656808631"
+        }
+      ]
+    },
+    {
+      "requirement": "Tables 1.2, 1.3, 1.4a/b/c and all other tables fit",
+      "status": "Verified",
+      "detail": "The sitewide gate covers all table documents and lazy fragments. Only the two scenario explorers retain their explicitly requested native scroll panels.",
+      "evidence": [
+        {
+          "path": "data/report_width_checks/all_tables_live.json",
+          "sha256": "065ec322ac4bbd8b99ec100c0871a5977c8b9c7a94ced3f56ff11ed2d947abbe"
+        }
+      ]
+    },
+    {
+      "requirement": "All five frontiers: click to pin asset labels",
+      "status": "Verified",
+      "detail": "The live canvas selection and persistent label checks passed for all five model families.",
+      "evidence": [
+        {
+          "path": "data/frontier_labels/validation_live.json",
+          "sha256": "129cca131b46b24d94dc2fb8252744ed0b09e3c8b202dc2d0e607a0e1b6bc37f"
+        }
+      ]
+    },
+    {
+      "requirement": "Figure 2.k: fixed asset positions across regimes",
+      "status": "Verified",
+      "detail": "All regime panels use the same row and column order, so correlation changes are visible without moving assets.",
+      "evidence": [
+        {
+          "path": "data/market_analysis/correlation_plot_layout.json",
+          "sha256": "ab406eb5c7f57a5806ee0a0f904db6dee6a0a132e394d9b9ddc67b8d9ac2d251"
+        }
+      ]
+    },
+    {
+      "requirement": "Figure 3.c: explain zero dominance entries",
+      "status": "Verified",
+      "detail": "Zero means that strict dominance was not detected in that pair/window; it does not mean equal return distributions.",
+      "evidence": [
+        {
+          "path": "data/long_history/portfolio_dominance_audit.json",
+          "sha256": "118ad9fead0e0b7c1eac40aa5e682996718113e3bb29acd74b4d3a0b661259d5"
+        }
+      ]
+    },
+    {
+      "requirement": "Asset sensitivity: removal, exact initial trade, later positive minimum/weighted median/maximum",
+      "status": "Verified",
+      "detail": "48 live selection cases passed. Later gross purchases exclude the initial purchase; the median includes zero and the positive minimum excludes zero. All other Current holdings stay fixed in historical marginal cases.",
+      "evidence": [
+        {
+          "path": "data/portfolio_sensitivity/validation_live.json",
+          "sha256": "3db2fa346d8098fc741be3a878b9f6f06a9c484ecbc48f92fd31e58bb2a750b7"
+        }
+      ]
+    },
+    {
+      "requirement": "True terminal portfolio NETSD, including all stages, trades and cash",
+      "status": "Verified",
+      "detail": "Terminal whole-policy distribution scores are separate from historical initial-allocation diagnostics. Constituent NETSD values are never averaged as the portfolio objective.",
+      "evidence": [
+        {
+          "path": "data/model_compute_study/validation.json",
+          "sha256": "3d8ee692a3a20a8e0058ed523814fe78cbe4beb871873c9550e76988e086f222"
+        }
+      ]
+    },
+    {
+      "requirement": "Section 4: both models, terminal NETSD, time, energy and complexity",
+      "status": "Verified",
+      "detail": "The six policy rows, definitions, complexity charts and fitted curves were checked live. Saved-policy replay seconds are distinguished from full search and whole-refresh time.",
+      "evidence": [
+        {
+          "path": "data/model_compute_study/browser_live.json",
+          "sha256": "687eb3b8c9e482c32b3c8fc6868e004650c89d1a8f7bf7c4a659b988628d164a"
+        }
+      ]
+    },
+    {
+      "requirement": "CPU48/CUDA workload-balance experiments",
+      "status": "Verified",
+      "detail": "144 matched configurations and 432 raw timing/energy windows were preserved. Kernel speed-up is not labelled as whole-refresh speed-up.",
+      "evidence": [
+        {
+          "path": "data/hybrid_balance/validation_live.json",
+          "sha256": "fa4ccee8493376ac782f7e8f63dbc3d9955210738fdb0fe00c436ed52247481b"
+        }
+      ]
+    },
+    {
+      "requirement": "English presentation and rendered equations",
+      "status": "Verified",
+      "detail": "The local/live math and language gates passed. No LaTeX renderer errors were detected.",
+      "evidence": [
+        {
+          "path": "data/report_math_checks/live.json",
+          "sha256": "7abc715829cd5cb0d49812253bcbcd1b8227ada73af3386b28fa48885609745c"
+        }
+      ]
+    },
+    {
+      "requirement": "Liquidity in attractiveness",
+      "status": "Verified",
+      "detail": "Liquidity weight is 5%; weekly turnover threshold EUR 1000. Missing facts remain unavailable, not zero.",
+      "evidence": [
+        {
+          "path": "data/stock_attractiveness/validation_live.json",
+          "sha256": "548459f1876da97ad77ca978636c93af83799c2513e96b952e330f190c34282c"
+        }
+      ]
+    },
+    {
+      "requirement": "MarketScreener annual-fact supplementation",
+      "status": "Verified",
+      "detail": "Only compatible missing annual facts were supplemented after identity/period/currency checks. The current matched-input supplement affects TSM1T; no proprietary graphic rating was inferred.",
+      "evidence": [
+        {
+          "path": "data/stock_attractiveness/marketscreener_validation_live.json",
+          "sha256": "3bba86a395b86c2bcd013b30193297c893302afbe5f9cf451590d664ff5b46ed"
+        }
+      ]
+    },
+    {
+      "requirement": "Unique section, table and figure numbering",
+      "status": "Verified",
+      "detail": "The published report numbering gate passed, and the current source has no duplicate labels.",
+      "evidence": [
+        {
+          "path": "R/report_numbering.py",
+          "sha256": "fda4b1c28d27ed2be9e78c90f81c3a273b98086e1a374c81381f5af394425207"
+        }
+      ]
+    },
+    {
+      "requirement": "A common full-support histogram x-axis for each asset",
+      "status": "Verified by histogram gate",
+      "detail": "Daily, training and regime views use the same per-asset limits, ticks and bin edges. Re-run R/check_histogram_axes.py as part of this review.",
+      "evidence": [
+        {
+          "path": "R/histogram_axes.py",
+          "sha256": "83c4b89d5308233f6a5ed5f3a0837a8977a74ec3b5d91f4a9e73dab48e068407"
+        },
+        {
+          "path": "R/check_histogram_axes.py",
+          "sha256": "9a5cab335ad2cf32dc4e6893f8cec1f718043f0e7807c2eb98f70bb06136c8ea"
+        }
+      ]
+    },
+    {
+      "requirement": "Dense CPU/GPU points, fitted time/energy curves and R-squared",
+      "status": "Verified",
+      "detail": "Matched CPU/GPU settings: 1, 2, 4, 8, 16, 32, 48, 60 (the requested fallback for CPU64). Additional GPU settings: 64, 128, 256, 512, 1024. These historical benchmarks do not change the production CPU48 limit.",
+      "evidence": [
+        {
+          "path": "data/compute/dense_scaling.json",
+          "sha256": "eeb69e899bb3b8fb5e522ccec771f050c64a7a353a005d57bf2661133f6e260e"
+        },
+        {
+          "path": "data/compute/validation.json",
+          "sha256": "58252f89d694dbad1b1b2da32f0a0ac3d0f03916b98945127a723d76eeeea663"
+        }
+      ]
+    },
+    {
+      "requirement": "48 production CPU workers; CUDA; RAM below 90%",
+      "status": "Verified observed runs",
+      "detail": "Configured CPU workers: 48; observed maximum RAM in the measured model phases: 9.93%. Browser audit work and per-phase utilisation are distinct.",
+      "evidence": [
+        {
+          "path": "data/compute_resources.json",
+          "sha256": "14a13b6e753681cd23c43a1713078375b436a25d1ebd46ce86732e58c8b4c9ac"
+        },
+        {
+          "path": "data/market_refresh/20261112_zzclose_cpu48/resource_validation.json",
+          "sha256": "bdf533d311611efd7f7f0c2905e27d091c71d24cc899e550be19dd878d0e33a7"
+        }
+      ]
+    },
+    {
+      "requirement": "Reboot/crash investigation",
+      "status": "Unresolved cause",
+      "detail": "The Windows MEMORY_MANAGEMENT / corrupted page-table finding was investigated. The exact hardware or driver cause remains unconfirmed; CPU48 is a mitigation, not proof that the fault is repaired.",
+      "evidence": [
+        {
+          "path": "data/market_refresh/20261112_stage1000_technology7108_cpu48/crash_investigation.json",
+          "sha256": "f432af4f6fb8b3a3bfbf3b23815a712de992341cd53ef92a4d410fe513fc4620"
+        }
+      ]
+    },
+    {
+      "requirement": "Continuous request-to-publication timing and daily history",
+      "status": "Verified with measurement gap",
+      "detail": "Wall time retains downloads, superseded attempts, idle time, retries, checks and deployment. Full Stochastic 2 energy was not continuously covered because the monitor failed before the solver ended; partial raw counters and a separately validated completed policy were preserved. Full energy remains explicitly unavailable.",
+      "evidence": [
+        {
+          "path": "data/market_refresh/20261112_zzclose_cpu48/lifecycle.json",
+          "sha256": "49b5c90ec935e779c992618a2865b2917ec82d77d1792c8a5e318675c9f4519a"
+        },
+        {
+          "path": "data/market_refresh/20261112_zzclose_cpu48/stochastic2.recovered.measurement.json",
+          "sha256": "b25295b83e9978ddf7a93bdfce6976d807af60530710989f812b7fa2787c271b"
+        },
+        {
+          "path": "data/compute_runs/validation.json",
+          "sha256": "f856d2ef7fceadf0e8adad79b26ff252b9226b0c9431958b67b41b57c4b7a7f1"
+        }
+      ]
+    },
+    {
+      "requirement": "MarketScreener links at every asset",
+      "status": "Partial external coverage; omission corrected",
+      "detail": "53 stock profiles have verified direct links. All 17 active Robur fund classes now have an explicitly labelled provider-restricted exact-ISIN web-search link and an unverified-class notice. These are not claimed to be direct MarketScreener fund pages. No C/N class is replaced by class A or Swedbank AB stock.",
+      "evidence": [
+        {
+          "path": "data/instruction_audit/20261113/provider_links.json",
+          "sha256": "e6ee42ee5c39379147ed9ad3b4180d27948ea1f61a33e73b50c7171860947065"
+        },
+        {
+          "path": "data/marketscreener_research/20261112/audit.json",
+          "sha256": "f819322dad2d40c24c1f3881b6d635e9625feae0635cfec2ff8585c9355b67b4"
+        }
+      ]
+    },
+    {
+      "requirement": "Optional US positions; fractional units; EUR 1000 cumulative US budget",
+      "status": "Limited scope: initial decision only",
+      "detail": "The published paired trial screens 44 valid US listings, permits 0-3 companies and 0.001-share units, and respects the shared initial-stage/sector limits. It makes only an initial US decision and holds afterward. It is not a four-stage Stochastic 2 reoptimisation with US trades at later nodes. R3 / No-sale selected zero US additions.",
+      "evidence": [
+        {
+          "path": "data/us_extension/20261112/trial.json",
+          "sha256": "cab2a62be80d0eab686edf712a9e3a32f560585749ff88628bfc767127994f81"
+        },
+        {
+          "path": "data/us_extension/20261112/validation.json",
+          "sha256": "1779b6866bc24b34fcf96ad84546fe4fea158a905a094ab576f856a15b6369e7"
+        },
+        {
+          "path": "data/us_extension/20261112/layout_live.json",
+          "sha256": "65ea9982a17e5c82e00485df0db54e6ea661262b160b4b4a00469816ed37d9c7"
+        }
+      ]
+    },
+    {
+      "requirement": "Four-week forecasts: methods, regimes and half-year history",
+      "status": "Verified",
+      "detail": "All 70 active assets have at least ten raw forecast-method paths. Regime-conditioned charts show the four regimes and five forecast clusters, with 126 observed historical sessions before the forecast. Raw methods and clustered display series are distinct.",
+      "evidence": [
+        {
+          "path": "data/long_history/live_browser.json",
+          "sha256": "08616c6bf7fd57c27ed5992c66640d46571fe914e469043684db27e2eb9682cb"
+        },
+        {
+          "path": "R/check_long_history_report.py",
+          "sha256": "18b04f8c2b125134a8f3c4c0105f6a02de19ed1a5807321daac3366a26e87c4e"
+        }
+      ]
+    },
+    {
+      "requirement": "Separate portfolios for every market regime",
+      "status": "Limited scope: historical NETSD model only",
+      "detail": "Only the historical NETSD model is independently optimised for each regime. Other model allocations retain their full-history solutions and are evaluated in the selected regime. They are not five separately reoptimised versions of every model.",
+      "evidence": [
+        {
+          "path": "data/regime_netsd/portfolio_payload.json",
+          "sha256": "12a8c1166da2d07bd0828466186c347392a8fff430ce44ba330a8783f49ba51c"
+        },
+        {
+          "path": "R/current_portfolio_selector.py",
+          "sha256": "ec6359b626de752cc8838a1d554f6cde3165603b8c2787d3a1dd20bba6f6b76e"
+        }
+      ]
+    },
+    {
+      "requirement": "Default 1.1 view: Stochastic, No-sale, Updates only, current regime",
+      "status": "Verified",
+      "detail": "The source defaults match the requested model/policy/update settings. Current-regime behaviour is covered by the profile selection tests.",
+      "evidence": [
+        {
+          "path": "data/profile_summary_checks/live.json",
+          "sha256": "d80df3195a4412a757e432e3b7759c035562a96118af6ab6b2a43c6e9e967e77"
+        },
+        {
+          "path": "data/profile_update_filter_checks/live.json",
+          "sha256": "d343f678f74ffb201d3d82221b662a7de04790d2118c17407787a2b656808631"
+        }
+      ]
+    },
+    {
+      "requirement": "Publish completed portions during long jobs; remove temporary notices afterward",
+      "status": "Verified for the completed refresh",
+      "detail": "Dated progressive release records were retained. The final report has no temporary refresh banner, and the public completion status is true.",
+      "evidence": [
+        {
+          "path": "data/progressive_publication/20261112_zzclose_cpu48/completion.json",
+          "sha256": "40d7f6e07637fdaca47a56667d706b3e393fb38c790d95a1d10c03f3c4432430"
+        },
+        {
+          "path": "public_site/refresh-status.json",
+          "sha256": "d2cee1865e1ae4aaa3d95a336beed84ceeac452a14fb496fc35aecff510ac567"
+        }
+      ]
+    },
+    {
+      "requirement": "External Yahoo chart: restore Bollinger, Stochastic RSI and MACD presets",
+      "status": "Not verified; external session dependent",
+      "detail": "Exact instrument chart links and the report?s own technical graphs are available. The external Yahoo URL does not demonstrate that these indicator selections persist in the user?s Yahoo session. The current help text asks the user to select indicators; this is not proof that the original external-session issue was fixed.",
+      "evidence": [
+        {
+          "path": "data/full_universe/external_chart_links.json",
+          "sha256": "c7fdd73899bdd964639ab3352c039d8587a10549959c981c3b9974c9fa5b3931"
+        },
+        {
+          "path": "R/external_instrument_links.py",
+          "sha256": "78a29574a3df6aea607e4a8e1e7318c60a43941115e1254d91905942328d3ecd"
+        }
+      ]
+    },
+    {
+      "requirement": "No printed Unicode escapes, leaked table markup or broken text encoding",
+      "status": "Verified by text-integrity gate",
+      "detail": "The sitewide text-integrity gate rejects printed Unicode escape tokens, leaked markup and common mojibake patterns. It passed for this audit build.",
+      "evidence": [
+        {
+          "path": "R/report_text_integrity.py",
+          "sha256": "e97f58f5be49d0ca5dfb16072dc21b1e7fdd33a2e52ed3c77a2ff925a084bf7c"
+        },
+        {
+          "path": "R/display_unicode.py",
+          "sha256": "8794b3c26937655728f3e4c66960d28a6947dc9ffef663e33ac320e6038653da"
+        }
+      ]
+    },
+    {
+      "requirement": "Experimental per-stock attractiveness indicator",
+      "status": "Verified with unavailable cases shown",
+      "detail": "64 of 67 research stocks have a score; EJTC, FRGTE and PRIMO remain unavailable. Financial, technical, disclosure/sentiment and liquidity inputs follow the published evidence and weights. Fund classes have no fabricated stock-attractiveness score.",
+      "evidence": [
+        {
+          "path": "data/stock_attractiveness/scores.json",
+          "sha256": "4d871048d073b12148a26b48bdaa3415b0ed4aad90905808965b10822b0bba12"
+        },
+        {
+          "path": "data/stock_attractiveness/validation_live.json",
+          "sha256": "548459f1876da97ad77ca978636c93af83799c2513e96b952e330f190c34282c"
+        }
+      ]
+    }
+  ]
+}
