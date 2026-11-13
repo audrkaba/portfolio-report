@@ -5,64 +5,14 @@
   "complete": false,
   "parts": [
     {
-      "label": "Updated full daily report, including section 1.1; final verification running",
-      "status": "published; final verification running",
-      "url": "index.html?daily=20261112"
-    },
-    {
-      "label": "Completed portfolio allocations and actual holdings",
+      "label": "Completed daily models, forecasts, sensitivity, scenario trees and technical appendix",
       "status": "published",
-      "url": "partial-progress.html#completed-portfolios"
-    },
-    {
-      "label": "Fixed-position market-regime correlations (Figure 2.k)",
-      "status": "published",
-      "url": "partial-progress.html#completed-correlations"
-    },
-    {
-      "label": "CPU48/CUDA balance and exact CPU packet trial (section 4.12)",
-      "status": "published",
-      "url": "partial-progress.html#completed-compute"
-    },
-    {
-      "label": "Stochastic 2: Sale at every stage",
-      "status": "published",
-      "url": "partial-progress.html#completed-portfolios"
-    },
-    {
-      "label": "Regime-specific portfolios",
-      "status": "published",
-      "url": "partial-progress.html#completed-portfolios"
-    },
-    {
-      "label": "All-stage portfolio sensitivity",
-      "status": "published",
-      "url": "partial-progress.html#completed-sensitivity"
-    },
-    {
-      "label": "Final-horizon netSD, time and energy comparison",
-      "status": "published",
-      "url": "partial-progress.html#completed-compute"
-    },
-    {
-      "label": "Full report: section 1.1 schema, layouts, numbering and interactive frontier labels",
-      "status": "integration pending",
-      "url": null
-    },
-    {
-      "label": "Both updated scenario trees",
-      "status": "published",
-      "url": "partial-progress.html#completed-trees"
+      "url": "index.html?v=6f479c07ba7ee020a8ece68a4a0ffbae2fb46809"
     },
     {
       "label": "Optional US equity trial: 0 to 3 stocks, EUR 1000 total",
-      "status": "pending",
+      "status": "calculating",
       "url": null
-    },
-    {
-      "label": "Attractiveness, liquidity and MarketScreener research scores",
-      "status": "published",
-      "url": "stock_attractiveness.html"
     }
   ],
   "holdings": {
@@ -73,6 +23,7 @@
     "shares": "2026-11-12",
     "funds": "2026-11-11"
   },
-  "main_report_available": true,
-  "notice": "The updated November 12 daily report is now published, including section 1.1. Additional end-to-end interactive and live checks are still running. The separate optional US equity experiment remains pending."
+  "main_report_complete": true,
+  "main_report_commit": "6f479c07ba7ee020a8ece68a4a0ffbae2fb46809",
+  "main_report_verified_at": "2026-11-13T08:33:29.511644+02:00"
 }
