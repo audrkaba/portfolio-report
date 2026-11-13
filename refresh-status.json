@@ -5,6 +5,11 @@
   "complete": false,
   "parts": [
     {
+      "label": "Updated full daily report, including section 1.1; final verification running",
+      "status": "published; final verification running",
+      "url": "index.html?daily=20261112"
+    },
+    {
       "label": "Completed portfolio allocations and actual holdings",
       "status": "published",
       "url": "partial-progress.html#completed-portfolios"
@@ -67,5 +72,7 @@
   "prices": {
     "shares": "2026-11-12",
     "funds": "2026-11-11"
-  }
+  },
+  "main_report_available": true,
+  "notice": "The updated November 12 daily report is now published, including section 1.1. Additional end-to-end interactive and live checks are still running. The separate optional US equity experiment remains pending."
 }
