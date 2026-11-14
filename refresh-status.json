@@ -1,56 +1,33 @@
 {
   "run": "20261113_zzclose_vlp107",
-  "revision": "590236afaba3",
-  "prepared_at": "2026-11-14T13:24:27.119018+02:00",
+  "revision": "f1f19e235707",
+  "prepared_at": "2026-11-14T13:38:42.794821+02:00",
   "complete": false,
-  "parts": [
-    {
-      "label": "Completed portfolio allocations and actual holdings",
-      "status": "published",
-      "url": "partial-progress.html#completed-portfolios"
-    },
-    {
-      "label": "Fixed-position market-regime correlations (Figure 2.k)",
-      "status": "published",
-      "url": "partial-progress.html#completed-correlations"
-    },
-    {
-      "label": "CPU48/CUDA balance and exact CPU packet trial (section 4.12)",
-      "status": "published",
-      "url": "partial-progress.html#completed-compute"
-    },
-    {
-      "label": "Stochastic 2: Sale at every stage",
-      "status": "pending",
-      "url": "partial-progress.html#completed-portfolios"
-    },
-    {
-      "label": "Regime-specific portfolios",
-      "status": "pending",
-      "url": null
-    },
-    {
-      "label": "All-stage portfolio sensitivity",
-      "status": "pending",
-      "url": null
-    },
-    {
-      "label": "Final-horizon netSD, time and energy comparison",
-      "status": "pending",
-      "url": null
-    },
-    {
-      "label": "Full report: section 1.1 schema, layouts, numbering and interactive frontier labels",
-      "status": "integration pending",
-      "url": null
-    }
-  ],
+  "notice": "VLP holdings were corrected to 107. The previous 87-unit calculation was superseded. Only the linked verified portfolios use the new holdings and 2026-11-13 prices.",
   "holdings": {
     "VLP1L": 107,
     "SE0014261764": 7.108
   },
-  "prices": {
-    "shares": "2026-11-13",
-    "funds": "2026-11-12"
-  }
+  "parts": [
+    {
+      "label": "Verified Stochastic, Update2, Update3, Markowitz, Minimax and Robust initial allocations: VLP107",
+      "status": "published",
+      "url": "vlp-current.html"
+    },
+    {
+      "label": "Stochastic 2 with VLP107",
+      "status": "pending",
+      "url": null
+    },
+    {
+      "label": "A variants without both purchase-value caps: pending",
+      "status": "pending",
+      "url": null
+    },
+    {
+      "label": "Time, energy and performance studies",
+      "status": "deferred by user",
+      "url": null
+    }
+  ]
 }
