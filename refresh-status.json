@@ -1,7 +1,7 @@
 {
   "run": "20261113_zzclose_vlp107",
-  "revision": "dbacb90b0ef7",
-  "prepared_at": "2026-11-14T18:04:07.600728+02:00",
+  "revision": "55d243490d1b",
+  "prepared_at": "2026-11-14T18:27:16.127690+02:00",
   "complete": false,
   "notice": "VLP holdings were corrected to 107. The previous 87-unit calculation was superseded. Only the linked verified portfolios use the new holdings and 2026-11-13 prices.",
   "holdings": {
@@ -20,9 +20,9 @@
       "url": "vlp-current.html"
     },
     {
-      "label": "A variants without both purchase-value caps: pending",
-      "status": "pending",
-      "url": null
+      "label": "A variants without both purchase-value caps: stochA published",
+      "status": "partially published",
+      "url": "vlp-current.html"
     },
     {
       "label": "Time, energy and performance studies",
