@@ -1,12 +1,12 @@
 {
-  "observed_at": "2026-11-14T11:12:01.974529+02:00",
+  "observed_at": "2026-11-14T11:23:37.649026+02:00",
   "scope": "Current delivery audit plus every previously catalogued requirement. Historical evidence is not silently upgraded to a current-run completion claim.",
   "all_requests_fully_verified": false,
-  "current_financial_delivery_complete": false,
+  "current_financial_delivery_complete": true,
   "reviewed_requirements": 46,
   "pending_complete_models": [],
   "live_delivery": {
-    "observed_at": "2026-11-14T11:07:53.838558+02:00",
+    "observed_at": "2026-11-14T11:23:27.445685+02:00",
     "main": {
       "default_model": "STOCHASTIC2",
       "default_sale": "NO_SALE",
@@ -48,17 +48,17 @@
       ],
       "recourse_step": null
     },
-    "all_current_financial_requests_visible": false
+    "all_current_financial_requests_visible": true
   },
   "requirements": [
     {
       "requirement": "Time and energy work resumed after financial verification",
-      "status": "Authorised; waiting for financial live verification",
+      "status": "Authorised to resume",
       "detail": "48 production CPU workers, one CUDA owner, RAM ceiling 90%. Existing raw measurements and failed attempts remain archived. Financial runs performed during the user-requested energy pause remain unmeasured; no retrospective energy fabrication."
     },
     {
       "requirement": "Current dated price snapshot",
-      "status": "Verified frozen snapshot; main integration pending",
+      "status": "Verified frozen snapshot; main integration complete",
       "detail": "Shares 2026-11-12; fund NAV 2026-11-12; downloaded 2026-11-13T12:24:28.807585+02:00. These are frozen completed-session observations, not live prices."
     },
     {
@@ -68,7 +68,7 @@
     },
     {
       "requirement": "Current holdings: VLP1L 107 and Technology C 7.108",
-      "status": "Partial deployment",
+      "status": "Verified in main",
       "detail": "Live main values: {'share-vlp1l': 107, 'fund-SE0014261764': 7.108}. Fresh whole-tree sensitivity VLP holding: 107. Do not substitute the partial page for a completed main-table refresh."
     },
     {
@@ -94,7 +94,7 @@
     {
       "requirement": "Published financial payload reconciliation",
       "status": "Verified for dated snapshot",
-      "detail": "Checked 2026-11-14T11:09:51.384787+02:00; all 20 baskets, both scenario-tree initial allocations, embedded and separate whole-tree sensitivity, first trades and snapshot provenance compared with computed files. This is consistency verification, not confirmation that the newer closing request has been recalculated."
+      "detail": "Checked 2026-11-14T11:16:28.386208+02:00; all 20 baskets, both scenario-tree initial allocations, embedded and separate whole-tree sensitivity, first trades and snapshot provenance compared with computed files. This is consistency verification, not confirmation that the newer closing request has been recalculated."
     },
     {
       "requirement": "Latest requested closing snapshot",
@@ -284,8 +284,8 @@
         {
           "path": "data/profile_update_filter_checks/live.json",
           "present": true,
-          "current_sha256": "d343f678f74ffb201d3d82221b662a7de04790d2118c17407787a2b656808631",
-          "matches_historical_evidence": true
+          "current_sha256": "687436e043dfe32f85fec9afacebb25f52ca4edcb978573868a2afa1ddaebaeb",
+          "matches_historical_evidence": false
         }
       ]
     },
@@ -298,7 +298,7 @@
         {
           "path": "data/report_width_checks/all_tables_live.json",
           "present": true,
-          "current_sha256": "ca85cbbfcb97aae8add3cb48ccc22ead8abc198a637226e1bf4b49b9fa505c71",
+          "current_sha256": "705ab7754a2b3895dee6ff0779bd42cb8e3bb29e582423e4b39104204942f575",
           "matches_historical_evidence": false
         }
       ]
@@ -354,8 +354,8 @@
         {
           "path": "data/portfolio_sensitivity/validation_live.json",
           "present": true,
-          "current_sha256": "3db2fa346d8098fc741be3a878b9f6f06a9c484ecbc48f92fd31e58bb2a750b7",
-          "matches_historical_evidence": true
+          "current_sha256": "dc7a76885ccbc1582a7e2561095f2136401c93b24fda2b520225d75de05566df",
+          "matches_historical_evidence": false
         }
       ]
     },
@@ -658,8 +658,8 @@
         {
           "path": "data/profile_update_filter_checks/live.json",
           "present": true,
-          "current_sha256": "d343f678f74ffb201d3d82221b662a7de04790d2118c17407787a2b656808631",
-          "matches_historical_evidence": true
+          "current_sha256": "687436e043dfe32f85fec9afacebb25f52ca4edcb978573868a2afa1ddaebaeb",
+          "matches_historical_evidence": false
         }
       ]
     },
@@ -751,7 +751,7 @@
     "Independent historical regime optimisation is implemented for NETSD; other model allocations are evaluated by regime.",
     "The crash component remains unresolved. Historical gaps in full-search energy cannot be reconstructed."
   ],
-  "this_run_financial_delivery_complete": false,
+  "this_run_financial_delivery_complete": true,
   "latest_requested_financial_delivery_complete": false,
   "model_snapshot_end": "2026-11-12",
   "latest_requested_end": "2026-11-13"
