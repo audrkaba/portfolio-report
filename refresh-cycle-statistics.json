@@ -1,0 +1,3100 @@
+{
+  "scope": "Completed identical-phase invocations, separated by CPU setting. Complete-cycle wall time includes waiting and retries. Nested model blocks overlap their parent command; never sum them with that parent. Missing energy stays missing; sample standard deviation is unavailable for n < 2.",
+  "workflow_parts": [
+    {
+      "part": "Data update",
+      "time_seconds": {
+        "n": 9,
+        "mean": 112.51418375968933,
+        "minimum": 1.2131450176239014,
+        "maximum": 780.6450750827789,
+        "std": 252.96642080378194
+      },
+      "component_Wh": {
+        "n": 9,
+        "mean": 2.889627309876395,
+        "minimum": 0.022567797221555552,
+        "maximum": 20.362722713888225,
+        "std": 6.607166636446525
+      },
+      "observations": [
+        {
+          "run": "20261111",
+          "seconds": 2.195272207260132,
+          "component_Wh": 0.04516394027777777,
+          "attempts": 1,
+          "failed_attempts": 0,
+          "overlapping_windows": false
+        },
+        {
+          "run": "20261111_vlp62",
+          "seconds": 5.252943992614746,
+          "component_Wh": 0.11070090138822222,
+          "attempts": 2,
+          "failed_attempts": 1,
+          "overlapping_windows": false
+        },
+        {
+          "run": "20261112",
+          "seconds": 18.444923162460327,
+          "component_Wh": 0.40326669027811113,
+          "attempts": 2,
+          "failed_attempts": 0,
+          "overlapping_windows": false
+        },
+        {
+          "run": "20261112_stage1000_technology7108",
+          "seconds": 1.2131450176239014,
+          "component_Wh": 0.022567797221555552,
+          "attempts": 1,
+          "failed_attempts": 0,
+          "overlapping_windows": false
+        },
+        {
+          "run": "20261112_vlp87_cpu48",
+          "seconds": 780.6450750827789,
+          "component_Wh": 20.362722713888225,
+          "attempts": 5,
+          "failed_attempts": 0,
+          "overlapping_windows": false
+        },
+        {
+          "run": "20261112_zclose_cpu48",
+          "seconds": 19.99356985092163,
+          "component_Wh": 0.48358222500000003,
+          "attempts": 3,
+          "failed_attempts": 0,
+          "overlapping_windows": false
+        },
+        {
+          "run": "20261112_zzclose_cpu48",
+          "seconds": 110.93169832229614,
+          "component_Wh": 2.6129208625013334,
+          "attempts": 5,
+          "failed_attempts": 0,
+          "overlapping_windows": false
+        },
+        {
+          "run": "20261113_stoch_variants_cpu48",
+          "seconds": 18.94415307044983,
+          "component_Wh": 0.4463990416663334,
+          "attempts": 3,
+          "failed_attempts": 1,
+          "overlapping_windows": false
+        },
+        {
+          "run": "20261113_zzclose_vlp107",
+          "seconds": 55.00687313079834,
+          "component_Wh": 1.519321616666,
+          "attempts": 4,
+          "failed_attempts": 0,
+          "overlapping_windows": false
+        }
+      ]
+    },
+    {
+      "part": "Model reruns",
+      "time_seconds": {
+        "n": 11,
+        "mean": 6492.946382197467,
+        "minimum": 287.61772537231445,
+        "maximum": 16368.342203378677,
+        "std": 6930.139012949929
+      },
+      "component_Wh": {
+        "n": 9,
+        "mean": 336.0862512350307,
+        "minimum": 8.226496591665,
+        "maximum": 948.4397483180562,
+        "std": 386.9200748888394
+      },
+      "observations": [
+        {
+          "run": "20261111",
+          "seconds": 1020.3534917831421,
+          "component_Wh": null,
+          "attempts": 8,
+          "failed_attempts": 1,
+          "overlapping_windows": false
+        },
+        {
+          "run": "20261111_unrestricted_sales",
+          "seconds": 586.1710059642792,
+          "component_Wh": 24.575509069444443,
+          "attempts": 3,
+          "failed_attempts": 1,
+          "overlapping_windows": false
+        },
+        {
+          "run": "20261111_vlp62",
+          "seconds": 16368.342203378677,
+          "component_Wh": 948.4397483180562,
+          "attempts": 3,
+          "failed_attempts": 0,
+          "overlapping_windows": false
+        },
+        {
+          "run": "20261112",
+          "seconds": 508.89729285240173,
+          "component_Wh": 27.149420631943777,
+          "attempts": 4,
+          "failed_attempts": 0,
+          "overlapping_windows": false
+        },
+        {
+          "run": "20261112_stage1000_technology7108",
+          "seconds": 287.61772537231445,
+          "component_Wh": 8.226496591665,
+          "attempts": 5,
+          "failed_attempts": 1,
+          "overlapping_windows": false
+        },
+        {
+          "run": "20261112_stage1000_technology7108_cpu48",
+          "seconds": 13413.662849187851,
+          "component_Wh": 697.7267333000008,
+          "attempts": 2,
+          "failed_attempts": 2,
+          "overlapping_windows": false
+        },
+        {
+          "run": "20261112_vlp87_cpu48",
+          "seconds": 14635.691721200943,
+          "component_Wh": 787.656141045834,
+          "attempts": 3,
+          "failed_attempts": 0,
+          "overlapping_windows": false
+        },
+        {
+          "run": "20261112_zclose_cpu48",
+          "seconds": 899.6178572177887,
+          "component_Wh": 44.20587535555556,
+          "attempts": 8,
+          "failed_attempts": 2,
+          "overlapping_windows": false
+        },
+        {
+          "run": "20261112_zzclose_cpu48",
+          "seconds": 14223.009029865265,
+          "component_Wh": null,
+          "attempts": 8,
+          "failed_attempts": 1,
+          "overlapping_windows": true
+        },
+        {
+          "run": "20261113_stoch_variants_cpu48",
+          "seconds": 8752.11713385582,
+          "component_Wh": 450.3183269763883,
+          "attempts": 7,
+          "failed_attempts": 1,
+          "overlapping_windows": false
+        },
+        {
+          "run": "20261113_zzclose_vlp107",
+          "seconds": 726.9298934936523,
+          "component_Wh": 36.47800982638856,
+          "attempts": 6,
+          "failed_attempts": 0,
+          "overlapping_windows": false
+        }
+      ]
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "time_seconds": {
+        "n": 14,
+        "mean": 746.6068916661399,
+        "minimum": 4.20653510093689,
+        "maximum": 3936.3736448287964,
+        "std": 1161.6668469932022
+      },
+      "component_Wh": {
+        "n": 14,
+        "mean": 20.031065938392047,
+        "minimum": 0.0898031819451111,
+        "maximum": 105.40851752499833,
+        "std": 30.830549564420842
+      },
+      "observations": [
+        {
+          "run": "20261111",
+          "seconds": 394.2273015975952,
+          "component_Wh": 10.938444576385889,
+          "attempts": 12,
+          "failed_attempts": 0,
+          "overlapping_windows": false
+        },
+        {
+          "run": "20261111_unrestricted_sales",
+          "seconds": 93.85633063316345,
+          "component_Wh": 2.322275315277111,
+          "attempts": 11,
+          "failed_attempts": 1,
+          "overlapping_windows": false
+        },
+        {
+          "run": "20261111_vlp62",
+          "seconds": 1825.6441478729248,
+          "component_Wh": 46.0988432375,
+          "attempts": 23,
+          "failed_attempts": 4,
+          "overlapping_windows": false
+        },
+        {
+          "run": "weighted_component_comparison_20261111",
+          "seconds": 4.20653510093689,
+          "component_Wh": 0.0898031819451111,
+          "attempts": 1,
+          "failed_attempts": 0,
+          "overlapping_windows": false
+        },
+        {
+          "run": "20261112",
+          "seconds": 251.45277976989746,
+          "component_Wh": 6.149218547220555,
+          "attempts": 6,
+          "failed_attempts": 0,
+          "overlapping_windows": false
+        },
+        {
+          "run": "20261112_stage1000_technology7108",
+          "seconds": 95.86016082763672,
+          "component_Wh": 2.238948574998333,
+          "attempts": 9,
+          "failed_attempts": 0,
+          "overlapping_windows": false
+        },
+        {
+          "run": "20261112_vlp87_cpu48",
+          "seconds": 3936.3736448287964,
+          "component_Wh": 105.40851752499833,
+          "attempts": 36,
+          "failed_attempts": 7,
+          "overlapping_windows": false
+        },
+        {
+          "run": "20261112_sensitivity_cases",
+          "seconds": 8.353152990341187,
+          "component_Wh": 0.23674330138855554,
+          "attempts": 1,
+          "failed_attempts": 0,
+          "overlapping_windows": false
+        },
+        {
+          "run": "20261112_zclose_cpu48",
+          "seconds": 339.35977482795715,
+          "component_Wh": 9.281264988889555,
+          "attempts": 12,
+          "failed_attempts": 0,
+          "overlapping_windows": false
+        },
+        {
+          "run": "20261112_zzclose_cpu48",
+          "seconds": 2404.043293237686,
+          "component_Wh": 64.03886434444178,
+          "attempts": 30,
+          "failed_attempts": 0,
+          "overlapping_windows": false
+        },
+        {
+          "run": "20261112_zus_trial_cpu48",
+          "seconds": 28.693891048431396,
+          "component_Wh": 0.8261605402777779,
+          "attempts": 2,
+          "failed_attempts": 0,
+          "overlapping_windows": false
+        },
+        {
+          "run": "20261113_stoch_variants_cpu48",
+          "seconds": 321.38313698768616,
+          "component_Wh": 8.589721541667332,
+          "attempts": 12,
+          "failed_attempts": 0,
+          "overlapping_windows": false
+        },
+        {
+          "run": "20261113_compute_resume_vlp107",
+          "seconds": 413.5013470649719,
+          "component_Wh": 14.884861376389555,
+          "attempts": 2,
+          "failed_attempts": 0,
+          "overlapping_windows": false
+        },
+        {
+          "run": "20261113_zzclose_vlp107",
+          "seconds": 335.54098653793335,
+          "component_Wh": 9.331256086108779,
+          "attempts": 12,
+          "failed_attempts": 0,
+          "overlapping_windows": false
+        }
+      ]
+    },
+    {
+      "part": "Publication and deployment verification",
+      "time_seconds": {
+        "n": 4,
+        "mean": 1391.5722762942314,
+        "minimum": 640.146322965622,
+        "maximum": 2787.358711004257,
+        "std": 1011.0917218936415
+      },
+      "component_Wh": {
+        "n": 4,
+        "mean": 36.20447654201397,
+        "minimum": 17.057233759722557,
+        "maximum": 72.05382131944444,
+        "std": 25.955195872562843
+      },
+      "observations": [
+        {
+          "run": "20261112_zclose_cpu48",
+          "seconds": 640.146322965622,
+          "component_Wh": 17.057233759722557,
+          "attempts": 1,
+          "failed_attempts": 0,
+          "overlapping_windows": false
+        },
+        {
+          "run": "20261112_zzclose_cpu48",
+          "seconds": 2787.358711004257,
+          "component_Wh": 72.05382131944444,
+          "attempts": 4,
+          "failed_attempts": 0,
+          "overlapping_windows": false
+        },
+        {
+          "run": "20261113_stoch_variants_cpu48",
+          "seconds": 653.1838781833649,
+          "component_Wh": 17.135588876389555,
+          "attempts": 1,
+          "failed_attempts": 0,
+          "overlapping_windows": false
+        },
+        {
+          "run": "20261113_zzclose_vlp107",
+          "seconds": 1485.6001930236816,
+          "component_Wh": 38.571262212499335,
+          "attempts": 5,
+          "failed_attempts": 3,
+          "overlapping_windows": false
+        }
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "part": "Daily forecasts",
+      "phase": "daily",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 4,
+        "mean": 306.1961365999996,
+        "minimum": 154.43997990000207,
+        "maximum": 407.7507592999973,
+        "std": 118.95802486890949
+      },
+      "component_Wh": {
+        "n": 4,
+        "mean": 18.602058936458253,
+        "minimum": 9.38334586111111,
+        "maximum": 24.87958723472256,
+        "std": 7.6118071756116725
+      },
+      "measurement_ids": [
+        "6da67f76479f4aba92d432f15539f499",
+        "e5793c1e1de441a882e3fcd54e85fb26",
+        "38123a81f2db413999af620b43963c5d",
+        "97e394f3d5994754b4b137c73a1041af"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Daily forecasts",
+      "phase": "daily",
+      "cpu_workers": 60,
+      "time_seconds": {
+        "n": 2,
+        "mean": 445.2851720000035,
+        "minimum": 439.70253340000636,
+        "maximum": 450.86781060000067,
+        "std": 7.8950432219435225
+      },
+      "component_Wh": {
+        "n": 2,
+        "mean": 25.344298199305722,
+        "minimum": 23.994674712499666,
+        "maximum": 26.69392168611178,
+        "std": 1.9086558391383905
+      },
+      "measurement_ids": [
+        "1e9c278e4eaf475d98ff519392ec8875",
+        "ffb2969ca7fb4df8bb0235dde0ba4551"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Data update",
+      "phase": "benchmark",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 6,
+        "mean": 1.723093149998931,
+        "minimum": 1.041791399999056,
+        "maximum": 2.069985499998438,
+        "std": 0.5277382329289247
+      },
+      "component_Wh": {
+        "n": 6,
+        "mean": 0.04396261250005556,
+        "minimum": 0.02570103888888889,
+        "maximum": 0.057741143055555555,
+        "std": 0.014115517883198599
+      },
+      "measurement_ids": [
+        "1c125e1cd18d4f6a97b3b98f2973764e",
+        "d23efd75bbb24047886dc19af1a98718",
+        "d24234f3828b4f60943a35f849a772d8",
+        "a3804ce62ef746cba8f68c0db3ffb928",
+        "f2cc441d5cfe4fe585abb90026ce39e2",
+        "59a0c481190941c98968575ebb93a17a"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Data update",
+      "phase": "benchmark",
+      "cpu_workers": 50,
+      "time_seconds": {
+        "n": 1,
+        "mean": 2.0127407999825664,
+        "minimum": 2.0127407999825664,
+        "maximum": 2.0127407999825664,
+        "std": null
+      },
+      "component_Wh": {
+        "n": 1,
+        "mean": 0.04516394027777777,
+        "minimum": 0.04516394027777777,
+        "maximum": 0.04516394027777777,
+        "std": null
+      },
+      "measurement_ids": [
+        "58e35a027c65411f9b08579c77664de4"
+      ],
+      "scope": "Whole command including startup, JIT, loading and child processes; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Data update",
+      "phase": "benchmark",
+      "cpu_workers": 60,
+      "time_seconds": {
+        "n": 2,
+        "mean": 1.51760880000802,
+        "minimum": 1.0203543000097852,
+        "maximum": 2.0148633000062546,
+        "std": 0.7032240578485557
+      },
+      "component_Wh": {
+        "n": 2,
+        "mean": 0.03191590069444444,
+        "minimum": 0.022567797221555552,
+        "maximum": 0.041264004167333335,
+        "std": 0.0132202147138265
+      },
+      "measurement_ids": [
+        "50bf0f412bc74eb99efbcafa804cc1b6",
+        "2ad69f04a9e2470086e2951f947d37d5"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Data update",
+      "phase": "display_sources",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 2,
+        "mean": 3.072959549997904,
+        "minimum": 3.068190999998478,
+        "maximum": 3.07772809999733,
+        "std": 0.006743748082042303
+      },
+      "component_Wh": {
+        "n": 2,
+        "mean": 0.07719186666649999,
+        "minimum": 0.07346430416699999,
+        "maximum": 0.080919429166,
+        "std": 0.005271569441386264
+      },
+      "measurement_ids": [
+        "e27a34ef473644dcb70e3a2be42d91a6",
+        "cc324cb399ea48c98dd3f7f56ff6677c"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Data update",
+      "phase": "display_sources",
+      "cpu_workers": 60,
+      "time_seconds": {
+        "n": 1,
+        "mean": 4.016791999994894,
+        "minimum": 4.016791999994894,
+        "maximum": 4.016791999994894,
+        "std": null
+      },
+      "component_Wh": {
+        "n": 1,
+        "mean": 0.08771180555555556,
+        "minimum": 0.08771180555555556,
+        "maximum": 0.08771180555555556,
+        "std": null
+      },
+      "measurement_ids": [
+        "fb1f0ef88e2b4abf8910e55f691c1de1"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Data update",
+      "phase": "download",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 2,
+        "mean": 15.781106750000617,
+        "minimum": 15.268822700003511,
+        "maximum": 16.293390799997724,
+        "std": 0.7244790512933242
+      },
+      "component_Wh": {
+        "n": 2,
+        "mean": 0.3871246944444445,
+        "minimum": 0.3780497888888889,
+        "maximum": 0.39619960000000004,
+        "std": 0.012833854513921631
+      },
+      "measurement_ids": [
+        "300de74953f94578876f249623198eab",
+        "6f41fdbeecfa4221b04ba721a33f2444"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Data update",
+      "phase": "download",
+      "cpu_workers": 60,
+      "time_seconds": {
+        "n": 1,
+        "mean": 16.05704319999495,
+        "minimum": 16.05704319999495,
+        "maximum": 16.05704319999495,
+        "std": null
+      },
+      "component_Wh": {
+        "n": 1,
+        "mean": 0.3620026861107778,
+        "minimum": 0.3620026861107778,
+        "maximum": 0.3620026861107778,
+        "std": null
+      },
+      "measurement_ids": [
+        "b71a87326d2043bb84d6fa3d93d76d1f"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Data update",
+      "phase": "download_staging",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 3,
+        "mean": 17.322411733325378,
+        "minimum": 14.246317700002692,
+        "maximum": 19.378239099984057,
+        "std": 2.713827991458916
+      },
+      "component_Wh": {
+        "n": 3,
+        "mean": 0.4905084907405185,
+        "minimum": 0.4675112249993333,
+        "maximum": 0.5218887736111111,
+        "std": 0.028141351787014733
+      },
+      "measurement_ids": [
+        "668929a4395c4bbf9b57432230ed3aee",
+        "879235bb636e41fc838f23b299b0e167",
+        "b01b263d45534ad28ef68d495cd03389"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Data update",
+      "phase": "stock_evidence",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 2,
+        "mean": 13.2127746999995,
+        "minimum": 13.186322599998675,
+        "maximum": 13.239226800000324,
+        "std": 0.037408918574415265
+      },
+      "component_Wh": {
+        "n": 2,
+        "mean": 0.32448784305555556,
+        "minimum": 0.31669305555555555,
+        "maximum": 0.33228263055555557,
+        "std": 0.011023494198316287
+      },
+      "measurement_ids": [
+        "02e1fa45f2ee405cadc8e24e0a581d52",
+        "bb43dd7ae368444ea7cfef047c37c201"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Data update",
+      "phase": "stock_fundamentals",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 2,
+        "mean": 420.0224304000003,
+        "minimum": 86.23181589999876,
+        "maximum": 753.8130449000018,
+        "std": 472.05121401875164
+      },
+      "component_Wh": {
+        "n": 2,
+        "mean": 10.85584914305539,
+        "minimum": 2.0185797444444447,
+        "maximum": 19.693118541666337,
+        "std": 12.497786237860325
+      },
+      "measurement_ids": [
+        "9c5ab4425bc6411a8afe010b77d165d5",
+        "ed8331083e7948fbb2fe601865f0bd26"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Data update",
+      "phase": "stock_liquidity",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 2,
+        "mean": 7.6431716499955655,
+        "minimum": 7.14208229999349,
+        "maximum": 8.144260999997641,
+        "std": 0.708647354733654
+      },
+      "component_Wh": {
+        "n": 2,
+        "mean": 0.1879199076393889,
+        "minimum": 0.177178845834,
+        "maximum": 0.1986609694447778,
+        "std": 0.01519015527946861
+      },
+      "measurement_ids": [
+        "b2872fc23e9945f086309b16ca368ab8",
+        "237ad4747c404346b14ad0e522164452"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Deterministic alternatives (combined command)",
+      "phase": "alternatives",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 5,
+        "mean": 14.004996740004936,
+        "minimum": 13.184221400000752,
+        "maximum": 16.22793720001937,
+        "std": 1.3167416238923595
+      },
+      "component_Wh": {
+        "n": 5,
+        "mean": 0.37087459916666665,
+        "minimum": 0.34401701666633333,
+        "maximum": 0.4321274402781111,
+        "std": 0.03581711811308929
+      },
+      "measurement_ids": [
+        "2fc78486804f46829397ce1b8093c836",
+        "9b605753901f4dfb8260781b22cfe1e9",
+        "6ccb6e2cfba046b38498806852703497",
+        "be0e7e3aba5147dc8d6174e051a6f744",
+        "f9ad7678c0e04205ad8be793818eac12"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Deterministic alternatives (combined command)",
+      "phase": "alternatives",
+      "cpu_workers": 60,
+      "time_seconds": {
+        "n": 4,
+        "mean": 43.55902900000433,
+        "minimum": 15.025078200007556,
+        "maximum": 54.079349900000125,
+        "std": 19.075676325601506
+      },
+      "component_Wh": {
+        "n": 4,
+        "mean": 1.046931524305639,
+        "minimum": 0.33118686388855556,
+        "maximum": 1.3889365097228887,
+        "std": 0.48352388239019295
+      },
+      "measurement_ids": [
+        "a64546c837a04fa2b5108821a9bbbba4",
+        "fb2ed77dd42b44cfa87ff41cc63a5729",
+        "a15a9b61aebd486dac075ca8678f1f3f",
+        "28ef1271bc584b068930f117489ac85c"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Market regime model",
+      "phase": "hmm",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 4,
+        "mean": 14.972546075001446,
+        "minimum": 14.211719300001278,
+        "maximum": 15.263045900006546,
+        "std": 0.5080136506899988
+      },
+      "component_Wh": {
+        "n": 4,
+        "mean": 0.45381216145799996,
+        "minimum": 0.4325950513888889,
+        "maximum": 0.46565773472188887,
+        "std": 0.01454224784402121
+      },
+      "measurement_ids": [
+        "ab08ddd6350f46349e51cb5d0f1853ca",
+        "8343951b00c9451ea18a5f15c73238e6",
+        "157f9fdea2f74201b2c46b1b2e427dcf",
+        "78d10d2957004d79b2202a3687319601"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Market regime model",
+      "phase": "hmm",
+      "cpu_workers": 60,
+      "time_seconds": {
+        "n": 3,
+        "mean": 14.691949100005635,
+        "minimum": 14.023777600014,
+        "maximum": 15.028299300000072,
+        "std": 0.5786579238069752
+      },
+      "component_Wh": {
+        "n": 3,
+        "mean": 0.40687157916655553,
+        "minimum": 0.3819974069441111,
+        "maximum": 0.4296837097228889,
+        "std": 0.023909932665147782
+      },
+      "measurement_ids": [
+        "5eaf6ad808c74e1f94806648f7dc2765",
+        "6f8cffeebfc7427daa3d8579c43672dd",
+        "4859980484f14dc891384f8dc57d56a7"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "archive_study",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 2,
+        "mean": 1.0368321500045568,
+        "minimum": 1.0323807000095258,
+        "maximum": 1.0412835999995878,
+        "std": 0.006295300955198484
+      },
+      "component_Wh": {
+        "n": 2,
+        "mean": 0.025033901388555557,
+        "minimum": 0.023765768055555556,
+        "maximum": 0.026302034721555557,
+        "std": 0.0017934113584259967
+      },
+      "measurement_ids": [
+        "6e0c59714878460a927df1de7a057ca3",
+        "197aa40061fb4511bf9df0aa849087e3"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "archive_study",
+      "cpu_workers": 60,
+      "time_seconds": {
+        "n": 1,
+        "mean": 1.0118063999980222,
+        "minimum": 1.0118063999980222,
+        "maximum": 1.0118063999980222,
+        "std": null
+      },
+      "component_Wh": {
+        "n": 1,
+        "mean": 0.02148459444411111,
+        "minimum": 0.02148459444411111,
+        "maximum": 0.02148459444411111,
+        "std": null
+      },
+      "measurement_ids": [
+        "2b94affae8a34fd391e5ab481b452db8"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "asset_sensitivity_revision",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 1,
+        "mean": 8.166715899998962,
+        "minimum": 8.166715899998962,
+        "maximum": 8.166715899998962,
+        "std": null
+      },
+      "component_Wh": {
+        "n": 1,
+        "mean": 0.23674330138855554,
+        "minimum": 0.23674330138855554,
+        "maximum": 0.23674330138855554,
+        "std": null
+      },
+      "measurement_ids": [
+        "31fc604a7e484e53b7710b5346127710"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "build",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 1,
+        "mean": 1141.649133400002,
+        "minimum": 1141.649133400002,
+        "maximum": 1141.649133400002,
+        "std": null
+      },
+      "component_Wh": {
+        "n": 1,
+        "mean": 29.361721833333334,
+        "minimum": 29.361721833333334,
+        "maximum": 29.361721833333334,
+        "std": null
+      },
+      "measurement_ids": [
+        "077e7b39a87448ffa74f8e6e91ad43c9"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "build",
+      "cpu_workers": 60,
+      "time_seconds": {
+        "n": 1,
+        "mean": 664.7099889000019,
+        "minimum": 664.7099889000019,
+        "maximum": 664.7099889000019,
+        "std": null
+      },
+      "component_Wh": {
+        "n": 1,
+        "mean": 16.440605177777776,
+        "minimum": 16.440605177777776,
+        "maximum": 16.440605177777776,
+        "std": null
+      },
+      "measurement_ids": [
+        "ef94436c13d34f869657b5a9540b2d6b"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "build_layout_repair",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 1,
+        "mean": 232.54529219999677,
+        "minimum": 232.54529219999677,
+        "maximum": 232.54529219999677,
+        "std": null
+      },
+      "component_Wh": {
+        "n": 1,
+        "mean": 6.131115177777112,
+        "minimum": 6.131115177777112,
+        "maximum": 6.131115177777112,
+        "std": null
+      },
+      "measurement_ids": [
+        "af80131c7df34370a7fc64271aa5e045"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "comparison",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 5,
+        "mean": 33.728962460002364,
+        "minimum": 18.30278470000121,
+        "maximum": 46.6734964999996,
+        "std": 10.838852093195229
+      },
+      "component_Wh": {
+        "n": 5,
+        "mean": 0.9734798705556222,
+        "minimum": 0.5386404611111112,
+        "maximum": 1.3267145222228889,
+        "std": 0.3039527981632578
+      },
+      "measurement_ids": [
+        "8e387598c1e244a482807bc5d360c282",
+        "3349d99d52fd447d94e434e8d1b76b30",
+        "289d152cf00c4154be40417a299cc61c",
+        "b0cef2792d70485287c0cb7841de67a2",
+        "0aa1bd54a31c4b0883007eae86981a5d"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "comparison",
+      "cpu_workers": 60,
+      "time_seconds": {
+        "n": 4,
+        "mean": 18.04686929999889,
+        "minimum": 8.018871199999921,
+        "maximum": 37.0443016999925,
+        "std": 13.238142155070832
+      },
+      "component_Wh": {
+        "n": 4,
+        "mean": 0.47005649270816663,
+        "minimum": 0.21449861250000002,
+        "maximum": 0.9411031361111111,
+        "std": 0.32850898745537505
+      },
+      "measurement_ids": [
+        "4d28d3328afb46109fadcfca02767e74",
+        "fd123daddff54c7486f51283d13b7479",
+        "5bb1e863d514412ba328f04367a42650",
+        "1e93ba75cea843c29ee32e7b0c4cc422"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "comparison_final",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 2,
+        "mean": 10.208736599999611,
+        "minimum": 10.201546299998881,
+        "maximum": 10.21592690000034,
+        "std": 0.010168619778563107
+      },
+      "component_Wh": {
+        "n": 2,
+        "mean": 0.28334994236144445,
+        "minimum": 0.2820608000006667,
+        "maximum": 0.2846390847222222,
+        "std": 0.0018231226104415805
+      },
+      "measurement_ids": [
+        "95876fc7c42c48019c59587a4e65776d",
+        "46c2c6dffd304f17803cc864fe0bb01e"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "fetch",
+      "cpu_workers": 50,
+      "time_seconds": {
+        "n": 1,
+        "mean": 20.035396999999648,
+        "minimum": 20.035396999999648,
+        "maximum": 20.035396999999648,
+        "std": null
+      },
+      "component_Wh": {
+        "n": 1,
+        "mean": 0.4451407055555555,
+        "minimum": 0.4451407055555555,
+        "maximum": 0.4451407055555555,
+        "std": null
+      },
+      "measurement_ids": [
+        "dff85a699eec4fa3a146f9f9bb2f775e"
+      ],
+      "scope": "Whole command including startup, JIT, loading and child processes; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "frontiers",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 5,
+        "mean": 29.27177101999805,
+        "minimum": 28.44338169999537,
+        "maximum": 30.49329189999844,
+        "std": 0.8447740434330911
+      },
+      "component_Wh": {
+        "n": 5,
+        "mean": 0.7730978088889555,
+        "minimum": 0.7385046791673334,
+        "maximum": 0.8089258402774444,
+        "std": 0.030595615109582832
+      },
+      "measurement_ids": [
+        "2c747637de60491eba080b14ba1b69ce",
+        "d23fa410b36b4ae4a20e612b6973831f",
+        "bfb0da280ed843479e4f78c3738a0ffc",
+        "f29033ecc22d49c2b35bbecc66cbe4c5",
+        "d2820e92cf67458c8f99a64c844c641c"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "frontiers",
+      "cpu_workers": 60,
+      "time_seconds": {
+        "n": 4,
+        "mean": 30.044795000006616,
+        "minimum": 30.036556999999448,
+        "maximum": 30.05564280002727,
+        "std": 0.008538589371832973
+      },
+      "component_Wh": {
+        "n": 4,
+        "mean": 0.7152578361107778,
+        "minimum": 0.6646074916663333,
+        "maximum": 0.7910243291663334,
+        "std": 0.05377371254667888
+      },
+      "measurement_ids": [
+        "60a5a9bdd8cd47dabecc92f1b300d3a0",
+        "befc5f1652704897b1805928011127ee",
+        "c238b3029241479992680e5e276f57e4",
+        "8c6512e854544ad5a8524bcf5771a51c"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "guard",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 4,
+        "mean": 14.074244725001336,
+        "minimum": 13.315802700002678,
+        "maximum": 14.336330600002839,
+        "std": 0.5056921794968914
+      },
+      "component_Wh": {
+        "n": 4,
+        "mean": 0.6302676013889722,
+        "minimum": 0.6138266055558889,
+        "maximum": 0.6446492305562221,
+        "std": 0.0126587022558614
+      },
+      "measurement_ids": [
+        "5c9a4e01e9844f5c9b743f17b6af8a62",
+        "28ebc856e99e467a9d4636f13ac99833",
+        "9329875ce67a45f9a6e126af1e4a1a9c",
+        "23c9add24e584aae91eea462dd4b78f2"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "guard",
+      "cpu_workers": 60,
+      "time_seconds": {
+        "n": 2,
+        "mean": 17.033246250008233,
+        "minimum": 16.028879299992695,
+        "maximum": 18.03761320002377,
+        "std": 1.4203893623112736
+      },
+      "component_Wh": {
+        "n": 2,
+        "mean": 0.7485323756941111,
+        "minimum": 0.676709429166,
+        "maximum": 0.8203553222222222,
+        "std": 0.10157298506965233
+      },
+      "measurement_ids": [
+        "1cc7c06f235546d18fd2d7b19e2b4247",
+        "368a4dcc3aa54d23ae822e1bb665b923"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "histogram_axes",
+      "cpu_workers": 60,
+      "time_seconds": {
+        "n": 1,
+        "mean": 62.07469540002057,
+        "minimum": 62.07469540002057,
+        "maximum": 62.07469540002057,
+        "std": null
+      },
+      "component_Wh": {
+        "n": 1,
+        "mean": 2.5544566124999997,
+        "minimum": 2.5544566124999997,
+        "maximum": 2.5544566124999997,
+        "std": null
+      },
+      "measurement_ids": [
+        "5d5b1e9067074c2cb2b93e29422d98db"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "hybrid_balance",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 5,
+        "mean": 3.0786222200022166,
+        "minimum": 3.0498029999998835,
+        "maximum": 3.097390099996119,
+        "std": 0.018578749758112738
+      },
+      "component_Wh": {
+        "n": 5,
+        "mean": 0.08025442388895555,
+        "minimum": 0.07846342361111111,
+        "maximum": 0.08459460833333333,
+        "std": 0.0025887445629564666
+      },
+      "measurement_ids": [
+        "dba4886400c54db2b4096f5c43833e8c",
+        "eda3a185f61b416aa5b550215b365be5",
+        "20c9c51543514596a41e75fa768fe882",
+        "99611085f4e444ee97b930119c6b68be",
+        "2e7a83559b204cd09f44c4df16cff07a"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "inference",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 4,
+        "mean": 3.0651340249951318,
+        "minimum": 3.0578315000020666,
+        "maximum": 3.071018299990101,
+        "std": 0.0057343492265232825
+      },
+      "component_Wh": {
+        "n": 4,
+        "mean": 0.08101606493055555,
+        "minimum": 0.07959303194444443,
+        "maximum": 0.08208306805555556,
+        "std": 0.001058519571200338
+      },
+      "measurement_ids": [
+        "a99291babac4480a80af8c2ce2407a93",
+        "58c6e04002234a48b0043f1cbd6c15e6",
+        "ef02068d16774a61a4893e396dba468f",
+        "be0c9cf3f6914ab686dee3e1aba78a59"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "inference",
+      "cpu_workers": 60,
+      "time_seconds": {
+        "n": 3,
+        "mean": 3.0142797000007704,
+        "minimum": 3.013243199995486,
+        "maximum": 3.015028399997391,
+        "std": 0.0009267450541763796
+      },
+      "component_Wh": {
+        "n": 3,
+        "mean": 0.06767343796251851,
+        "minimum": 0.0667287402771111,
+        "maximum": 0.06940097777744444,
+        "std": 0.0014982805693056149
+      },
+      "measurement_ids": [
+        "b3ed3f1cae444bf5907dc756ec1e6f87",
+        "55412764402041a6b0487b54a14755f2",
+        "ef3c3e1a34164559a1d334e7c09ff5e1"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "market_inputs",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 4,
+        "mean": 3.0797426749977603,
+        "minimum": 3.0668443999893498,
+        "maximum": 3.100607200001832,
+        "std": 0.014945759855095348
+      },
+      "component_Wh": {
+        "n": 4,
+        "mean": 0.07678862187508334,
+        "minimum": 0.07396588611177778,
+        "maximum": 0.07966788194444445,
+        "std": 0.0023359080146903096
+      },
+      "measurement_ids": [
+        "0d710110e38c424899d3f9f8f6cee34e",
+        "925fd7cb89b140209fb2ed3c71ff901d",
+        "45802987ee2a4b1aa2264a0ee0f72f5e",
+        "6b773badebf1482ba0e38b887891eb40"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "market_inputs",
+      "cpu_workers": 60,
+      "time_seconds": {
+        "n": 3,
+        "mean": 3.348482133335589,
+        "minimum": 3.0141112999990582,
+        "maximum": 4.014745499996934,
+        "std": 0.577002331718789
+      },
+      "component_Wh": {
+        "n": 3,
+        "mean": 0.07522180324085184,
+        "minimum": 0.06749413472255555,
+        "maximum": 0.09040791388922222,
+        "std": 0.013152246506982742
+      },
+      "measurement_ids": [
+        "a1b22063dad94694a19fdbe8c2413ff8",
+        "4f7fb8ad67704f3e9bbeecebda895154",
+        "89b86fc2e8f2454b85b170f6e1b41fde"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "market_report",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 4,
+        "mean": 9.152841450000778,
+        "minimum": 9.13212499999645,
+        "maximum": 9.164622899988899,
+        "std": 0.01453864312744011
+      },
+      "component_Wh": {
+        "n": 4,
+        "mean": 0.24591019583316667,
+        "minimum": 0.23084314999933334,
+        "maximum": 0.27333792083366665,
+        "std": 0.018807811726372737
+      },
+      "measurement_ids": [
+        "ae6111ae01c147f0a5ebfeeab298f466",
+        "5eaecc7874634d6ea1ef876fe2059942",
+        "d6688fe687964e34bab59f0c755072d7",
+        "2008f2b1cb954100b1c6ee1d48ec5729"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "market_report",
+      "cpu_workers": 60,
+      "time_seconds": {
+        "n": 3,
+        "mean": 9.020465166666932,
+        "minimum": 9.018326999997953,
+        "maximum": 9.02210470000864,
+        "std": 0.0019375837372838582
+      },
+      "component_Wh": {
+        "n": 3,
+        "mean": 0.2084135509257037,
+        "minimum": 0.2028356194437778,
+        "maximum": 0.2156747486111111,
+        "std": 0.006582996907010099
+      },
+      "measurement_ids": [
+        "a46044c6d9ed4578afe1a24c8a695661",
+        "15a812da5e7f46b489255f5b864407a5",
+        "8fcfba2f54d24b708f5eac3065ff3951"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "portfolio_sensitivity",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 2,
+        "mean": 9.173718849999204,
+        "minimum": 9.16937279999911,
+        "maximum": 9.178064899999299,
+        "std": 0.006146242852885505
+      },
+      "component_Wh": {
+        "n": 2,
+        "mean": 0.2675616979165,
+        "minimum": 0.26535803055555557,
+        "maximum": 0.26976536527744444,
+        "std": 0.0031164562688065444
+      },
+      "measurement_ids": [
+        "399d0bcbfa73454abdd0c19173e9a195",
+        "a6b71b54da63469289e02f3f9ec4d8a5"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "recover_completed_stochastic2",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 1,
+        "mean": 19.319585599994753,
+        "minimum": 19.319585599994753,
+        "maximum": 19.319585599994753,
+        "std": null
+      },
+      "component_Wh": {
+        "n": 1,
+        "mean": 0.49577346666600003,
+        "minimum": 0.49577346666600003,
+        "maximum": 0.49577346666600003,
+        "std": null
+      },
+      "measurement_ids": [
+        "3913017c176b40499ccd0d17f2b59dab"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "regime_export_repair",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 1,
+        "mean": 130.91629209999883,
+        "minimum": 130.91629209999883,
+        "maximum": 130.91629209999883,
+        "std": null
+      },
+      "component_Wh": {
+        "n": 1,
+        "mean": 3.387417801388889,
+        "minimum": 3.387417801388889,
+        "maximum": 3.387417801388889,
+        "std": null
+      },
+      "measurement_ids": [
+        "2d53c9d94150499c87bff3936e404c2e"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "regime_portfolios",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 2,
+        "mean": 445.2408809000008,
+        "minimum": 126.85280290000082,
+        "maximum": 763.6289589000007,
+        "std": 450.26873800550277
+      },
+      "component_Wh": {
+        "n": 2,
+        "mean": 12.073686443055388,
+        "minimum": 3.1661375180555553,
+        "maximum": 20.98123536805522,
+        "std": 12.597176497236646
+      },
+      "measurement_ids": [
+        "ff18a7134bcb4884883e6bb65f63987e",
+        "eb27da2246324d969b2c93891699eb62"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "regime_portfolios",
+      "cpu_workers": 60,
+      "time_seconds": {
+        "n": 1,
+        "mean": 120.13067600000068,
+        "minimum": 120.13067600000068,
+        "maximum": 120.13067600000068,
+        "std": null
+      },
+      "component_Wh": {
+        "n": 1,
+        "mean": 2.892825831944444,
+        "minimum": 2.892825831944444,
+        "maximum": 2.892825831944444,
+        "std": null
+      },
+      "measurement_ids": [
+        "51c35a39ce9a4b2f836b1302f1d0e6de"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "regime_profiles_repair",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 1,
+        "mean": 4.118370000000141,
+        "minimum": 4.118370000000141,
+        "maximum": 4.118370000000141,
+        "std": null
+      },
+      "component_Wh": {
+        "n": 1,
+        "mean": 0.10315898333300001,
+        "minimum": 0.10315898333300001,
+        "maximum": 0.10315898333300001,
+        "std": null
+      },
+      "measurement_ids": [
+        "ea0e661b0d1f4b008525aef0007006b2"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "regime_resource_repair",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 1,
+        "mean": 1.0411311000025307,
+        "minimum": 1.0411311000025307,
+        "maximum": 1.0411311000025307,
+        "std": null
+      },
+      "component_Wh": {
+        "n": 1,
+        "mean": 0.027128770833666667,
+        "minimum": 0.027128770833666667,
+        "maximum": 0.027128770833666667,
+        "std": null
+      },
+      "measurement_ids": [
+        "776e324001864cfab9e1666d8435a5c7"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "regime_sensitivity_repair",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 1,
+        "mean": 8.158890899998369,
+        "minimum": 8.158890899998369,
+        "maximum": 8.158890899998369,
+        "std": null
+      },
+      "component_Wh": {
+        "n": 1,
+        "mean": 0.24307929444444445,
+        "minimum": 0.24307929444444445,
+        "maximum": 0.24307929444444445,
+        "std": null
+      },
+      "measurement_ids": [
+        "21aa6d54660445d1a266b114edac2775"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "render",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 2,
+        "mean": 449.67497394999737,
+        "minimum": 91.18254169999273,
+        "maximum": 808.167406200002,
+        "std": 506.98485969607447
+      },
+      "component_Wh": {
+        "n": 2,
+        "mean": 11.64007754444428,
+        "minimum": 2.3016280999996668,
+        "maximum": 20.97852698888889,
+        "std": 13.206561855869065
+      },
+      "measurement_ids": [
+        "ead87ba974404845a6e1c0c43dd3df50",
+        "27907d8b6c2d45488545407c80c84571"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "render",
+      "cpu_workers": 60,
+      "time_seconds": {
+        "n": 1,
+        "mean": 91.1048060999965,
+        "minimum": 91.1048060999965,
+        "maximum": 91.1048060999965,
+        "std": null
+      },
+      "component_Wh": {
+        "n": 1,
+        "mean": 2.080464548610778,
+        "minimum": 2.080464548610778,
+        "maximum": 2.080464548610778,
+        "std": null
+      },
+      "measurement_ids": [
+        "e2fd717e665d4bb2814a6c9910453b84"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "report",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 2,
+        "mean": 50.864200650001294,
+        "minimum": 50.85830839999835,
+        "maximum": 50.87009290000424,
+        "std": 0.008332899867056189
+      },
+      "component_Wh": {
+        "n": 2,
+        "mean": 1.3209510493057222,
+        "minimum": 1.3188997430558889,
+        "maximum": 1.3230023555555555,
+        "std": 0.0029009851190949392
+      },
+      "measurement_ids": [
+        "4855108a7742421cbb2e3b1cc521ec8f",
+        "ba557becea044636be4edd961117b144"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "report",
+      "cpu_workers": 60,
+      "time_seconds": {
+        "n": 1,
+        "mean": 49.068522000001394,
+        "minimum": 49.068522000001394,
+        "maximum": 49.068522000001394,
+        "std": null
+      },
+      "component_Wh": {
+        "n": 1,
+        "mean": 1.1881211763885555,
+        "minimum": 1.1881211763885555,
+        "maximum": 1.1881211763885555,
+        "std": null
+      },
+      "measurement_ids": [
+        "28e451b5afc54f20afae62979bb85ff7"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "resource_summary",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 2,
+        "mean": 1.0316159000012703,
+        "minimum": 1.0314969000028213,
+        "maximum": 1.0317348999997193,
+        "std": 0.0001682914117289512
+      },
+      "component_Wh": {
+        "n": 2,
+        "mean": 0.026543601388555556,
+        "minimum": 0.026458318055222224,
+        "maximum": 0.026628884721888887,
+        "std": 0.00012060884664438308
+      },
+      "measurement_ids": [
+        "f8225eeb1e5f43e18b1fb53ef4876e30",
+        "ebb65acdd3aa4ab1a0c098ce80588847"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "resource_summary",
+      "cpu_workers": 60,
+      "time_seconds": {
+        "n": 1,
+        "mean": 1.012463499995647,
+        "minimum": 1.012463499995647,
+        "maximum": 1.012463499995647,
+        "std": null
+      },
+      "component_Wh": {
+        "n": 1,
+        "mean": 0.021055636111111112,
+        "minimum": 0.021055636111111112,
+        "maximum": 0.021055636111111112,
+        "std": null
+      },
+      "measurement_ids": [
+        "d5cea31bf99c4dfa8db8678d4dd526fe"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "saf_counterfactual",
+      "cpu_workers": 60,
+      "time_seconds": {
+        "n": 4,
+        "mean": 6.7719529000000875,
+        "minimum": 6.02024849999998,
+        "maximum": 9.024269900000036,
+        "std": 1.5015448117119192
+      },
+      "component_Wh": {
+        "n": 4,
+        "mean": 0.1603292208333333,
+        "minimum": 0.14083246249999998,
+        "maximum": 0.2175620277781111,
+        "std": 0.03815642261257205
+      },
+      "measurement_ids": [
+        "45983a6e976040e68609997611691f80",
+        "088625eae71d4369afeef620fb873f5e",
+        "92020c36c491474d8bffa70a5af93889",
+        "df4096c99939401e8ee41aa983818feb"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "sector_exposure",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 5,
+        "mean": 1.0436302999969485,
+        "minimum": 1.040610399999423,
+        "maximum": 1.0541775999881793,
+        "std": 0.005903523069494879
+      },
+      "component_Wh": {
+        "n": 5,
+        "mean": 0.02771715777771111,
+        "minimum": 0.026411088888555555,
+        "maximum": 0.02966106944477778,
+        "std": 0.0012658230155370741
+      },
+      "measurement_ids": [
+        "a368ba6cc00f459eb5a0e6959afe2551",
+        "9f614b8bbc3b4643b89c1ad08592edc5",
+        "83c1cf5f012745479af3230801f67410",
+        "9b01c20c3e4f4954845b6359c4eb9015",
+        "b57c852eb6d1431987828717e7d527eb"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "sector_exposure",
+      "cpu_workers": 60,
+      "time_seconds": {
+        "n": 4,
+        "mean": 1.0129731250008263,
+        "minimum": 1.0123185999982525,
+        "maximum": 1.0146700000004785,
+        "std": 0.0011341902583072159
+      },
+      "component_Wh": {
+        "n": 4,
+        "mean": 0.02359429687483333,
+        "minimum": 0.022017790277444445,
+        "maximum": 0.02546384027811111,
+        "std": 0.0014207512189024208
+      },
+      "measurement_ids": [
+        "c11fa25c3bd34bd68d88c0ac9503899d",
+        "8e53737e55f445e2b140bacdeb40f816",
+        "b66b5a11adae40ae8c2cae95e0cc7e95",
+        "81a9ab70a4054cbabec743066fb77e88"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "selector",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 2,
+        "mean": 398.5465150499949,
+        "minimum": 396.17446019999625,
+        "maximum": 400.9185698999936,
+        "std": 3.3545921395610057
+      },
+      "component_Wh": {
+        "n": 2,
+        "mean": 10.069569100694444,
+        "minimum": 9.937376129166667,
+        "maximum": 10.201762072222223,
+        "std": 0.18694909318498418
+      },
+      "measurement_ids": [
+        "528ed6df1a8a41c6acdaf711fd13f4a0",
+        "bd10043225064c6893642ec862af309e"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "selector",
+      "cpu_workers": 60,
+      "time_seconds": {
+        "n": 1,
+        "mean": 357.38092000000324,
+        "minimum": 357.38092000000324,
+        "maximum": 357.38092000000324,
+        "std": null
+      },
+      "component_Wh": {
+        "n": 1,
+        "mean": 8.372071861111444,
+        "minimum": 8.372071861111444,
+        "maximum": 8.372071861111444,
+        "std": null
+      },
+      "measurement_ids": [
+        "3191fd3c35c946f094e01a38d80f6fe8"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "stochastic2_profiles",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 2,
+        "mean": 4.099686100002145,
+        "minimum": 4.09949370000686,
+        "maximum": 4.0998784999974305,
+        "std": 0.00027209468273268865
+      },
+      "component_Wh": {
+        "n": 2,
+        "mean": 0.10237768888855556,
+        "minimum": 0.09875690277744446,
+        "maximum": 0.10599847499966666,
+        "std": 0.0051205648247854545
+      },
+      "measurement_ids": [
+        "be643f94186c40e0be56aae76fa42f64",
+        "40bb54175c5d4ff4ba3b0ec7623570c7"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "stochastic2_profiles",
+      "cpu_workers": 60,
+      "time_seconds": {
+        "n": 1,
+        "mean": 6.0251941999958945,
+        "minimum": 6.0251941999958945,
+        "maximum": 6.0251941999958945,
+        "std": null
+      },
+      "component_Wh": {
+        "n": 1,
+        "mean": 0.1324903347218889,
+        "minimum": 0.1324903347218889,
+        "maximum": 0.1324903347218889,
+        "std": null
+      },
+      "measurement_ids": [
+        "d46a0604917a4ba0bff64497eadadfac"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "stock_attractiveness",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 2,
+        "mean": 3.065145950002261,
+        "minimum": 3.062053500005277,
+        "maximum": 3.0682383999992453,
+        "std": 0.004373384726695713
+      },
+      "component_Wh": {
+        "n": 2,
+        "mean": 0.07525123194427777,
+        "minimum": 0.07492426666633334,
+        "maximum": 0.07557819722222221,
+        "std": 0.00046239873049411115
+      },
+      "measurement_ids": [
+        "16ccf1b83b9343508a115b77f606fe6d",
+        "ca6b82f96f624ba88cb2a0f460ce3761"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "study",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 2,
+        "mean": 192.86412474999997,
+        "minimum": 191.91224860000148,
+        "maximum": 193.81600089999847,
+        "std": 1.3461561610273618
+      },
+      "component_Wh": {
+        "n": 2,
+        "mean": 6.82362821875,
+        "minimum": 6.775737315278111,
+        "maximum": 6.871519122221889,
+        "std": 0.06772796520424626
+      },
+      "measurement_ids": [
+        "10dc754cc1ac4c309cd0c060a19f63aa",
+        "54ebe509e1eb47c38ca0a324c788e536"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "study",
+      "cpu_workers": 60,
+      "time_seconds": {
+        "n": 1,
+        "mean": 377.40900059999694,
+        "minimum": 377.40900059999694,
+        "maximum": 377.40900059999694,
+        "std": null
+      },
+      "component_Wh": {
+        "n": 1,
+        "mean": 11.21851002222189,
+        "minimum": 11.21851002222189,
+        "maximum": 11.21851002222189,
+        "std": null
+      },
+      "measurement_ids": [
+        "b24fdb2a9c0c4537ab38f49ae6e3327f"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "study_capped",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 1,
+        "mean": 204.96044379999512,
+        "minimum": 204.96044379999512,
+        "maximum": 204.96044379999512,
+        "std": null
+      },
+      "component_Wh": {
+        "n": 1,
+        "mean": 7.340799816667,
+        "minimum": 7.340799816667,
+        "maximum": 7.340799816667,
+        "std": null
+      },
+      "measurement_ids": [
+        "e677608c47f5497a977db6a9c0cd1642"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "study_uncapped",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 1,
+        "mean": 207.90532230000827,
+        "minimum": 207.90532230000827,
+        "maximum": 207.90532230000827,
+        "std": null
+      },
+      "component_Wh": {
+        "n": 1,
+        "mean": 7.544061559722555,
+        "minimum": 7.544061559722555,
+        "maximum": 7.544061559722555,
+        "std": null
+      },
+      "measurement_ids": [
+        "c8ece992c0794123a44d327ed85611dd"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "technicals",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 4,
+        "mean": 217.9955110500032,
+        "minimum": 216.9753015000024,
+        "maximum": 219.0617482000016,
+        "std": 1.1720709801464668
+      },
+      "component_Wh": {
+        "n": 4,
+        "mean": 5.764388580555555,
+        "minimum": 5.5631303166666655,
+        "maximum": 5.890687308332667,
+        "std": 0.15478009736832543
+      },
+      "measurement_ids": [
+        "3e4b59641f7d4884925883354b96f3ab",
+        "3fc35148fac44048b3daef773b059b16",
+        "c9f9064e3e554e158e82b7d5f2e0f8e6",
+        "a487cde207fd41bb95a40ee6b21efc1c"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "technicals",
+      "cpu_workers": 60,
+      "time_seconds": {
+        "n": 2,
+        "mean": 218.7402059500091,
+        "minimum": 218.21672390001186,
+        "maximum": 219.26368800000637,
+        "std": 0.7403154147649896
+      },
+      "component_Wh": {
+        "n": 2,
+        "mean": 5.216663040277444,
+        "minimum": 5.085159236110444,
+        "maximum": 5.348166844444444,
+        "std": 0.18597446335662696
+      },
+      "measurement_ids": [
+        "bbb6169aa7e44beea2a9fb86fc90f4ba",
+        "dee1d814c5a2443393194836582d5d40"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "us_download",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 1,
+        "mean": 6.107834299997194,
+        "minimum": 6.107834299997194,
+        "maximum": 6.107834299997194,
+        "std": null
+      },
+      "component_Wh": {
+        "n": 1,
+        "mean": 0.14949344999966668,
+        "minimum": 0.14949344999966668,
+        "maximum": 0.14949344999966668,
+        "std": null
+      },
+      "measurement_ids": [
+        "e4c6e709c5db4b79b9e386927bc53fe7"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "us_search",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 1,
+        "mean": 22.372170300004655,
+        "minimum": 22.372170300004655,
+        "maximum": 22.372170300004655,
+        "std": null
+      },
+      "component_Wh": {
+        "n": 1,
+        "mean": 0.6766670902781111,
+        "minimum": 0.6766670902781111,
+        "maximum": 0.6766670902781111,
+        "std": null
+      },
+      "measurement_ids": [
+        "82a4231a8c8642b2be9fa0c83c37cb8c"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "us_source_precheck",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 1,
+        "mean": 6.100924900005339,
+        "minimum": 6.100924900005339,
+        "maximum": 6.100924900005339,
+        "std": null
+      },
+      "component_Wh": {
+        "n": 1,
+        "mean": 0.1524299,
+        "minimum": 0.1524299,
+        "maximum": 0.1524299,
+        "std": null
+      },
+      "measurement_ids": [
+        "ca38596d6e7f4c54b764edcb6096d5fc"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "validate_frequency",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 5,
+        "mean": 5.3056957799992235,
+        "minimum": 5.099898000000394,
+        "maximum": 6.098988900001132,
+        "std": 0.4435046215802228
+      },
+      "component_Wh": {
+        "n": 5,
+        "mean": 0.14093087111097777,
+        "minimum": 0.13200748472255555,
+        "maximum": 0.16805280694411112,
+        "std": 0.015216840920741102
+      },
+      "measurement_ids": [
+        "5db29cf6937144c49ac6852703aca13f",
+        "aecb50d71ba640e58ea3b09962e06cb5",
+        "36510c1fadf14aca96236350c3776d25",
+        "e00421573b4342199acc04ff9bb33f05",
+        "765f8ecf863c4899ad33d814f63d485b"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "validate_frequency",
+      "cpu_workers": 60,
+      "time_seconds": {
+        "n": 4,
+        "mean": 5.267602825000722,
+        "minimum": 5.0152009000012185,
+        "maximum": 6.021686199999749,
+        "std": 0.5027228303385844
+      },
+      "component_Wh": {
+        "n": 4,
+        "mean": 0.12376611145825,
+        "minimum": 0.11418291944444445,
+        "maximum": 0.1441780861111111,
+        "std": 0.013780916039634118
+      },
+      "measurement_ids": [
+        "ed155d7b3eb74ce3920af6560cc0e297",
+        "46df862e10234b7daceb1bebdccb92e5",
+        "5ca1510eead343af8d0cb3d532994418",
+        "4c371766bbbe45a6be4148282b29f5d4"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "validate_measurements",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 2,
+        "mean": 1.0380159499982256,
+        "minimum": 1.0340532999980496,
+        "maximum": 1.0419785999984015,
+        "std": 0.005604033373186543
+      },
+      "component_Wh": {
+        "n": 2,
+        "mean": 0.025038833333,
+        "minimum": 0.024514237499666663,
+        "maximum": 0.02556342916633333,
+        "std": 0.0007418905422644166
+      },
+      "measurement_ids": [
+        "879cc5d2001749be9b6a002f3edd5b54",
+        "3e79b2418a8f4069a8a1b54f696cd00d"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "validate_measurements",
+      "cpu_workers": 60,
+      "time_seconds": {
+        "n": 1,
+        "mean": 1.012780400000338,
+        "minimum": 1.012780400000338,
+        "maximum": 1.012780400000338,
+        "std": null
+      },
+      "component_Wh": {
+        "n": 1,
+        "mean": 0.023435083334,
+        "minimum": 0.023435083334,
+        "maximum": 0.023435083334,
+        "std": null
+      },
+      "measurement_ids": [
+        "53951acf52d44191b4b3fd85cb8cafb7"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "validate_policy",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 5,
+        "mean": 6.125009139996837,
+        "minimum": 6.114413600007538,
+        "maximum": 6.152359899999283,
+        "std": 0.015637517139191755
+      },
+      "component_Wh": {
+        "n": 5,
+        "mean": 0.1631554536109111,
+        "minimum": 0.15671125972188887,
+        "maximum": 0.174961958333,
+        "std": 0.007094831380416818
+      },
+      "measurement_ids": [
+        "1bb0d4298f07491681529056f4316b6f",
+        "99cefe8915554044a433114e0d986979",
+        "94a6e30e27a14b6cbd4858e3ec25cfa3",
+        "f0db44ad97bb45d0a20e579f7e1c74b0",
+        "5d2b1ff8a850472682ace9bc5aca683a"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "validate_policy",
+      "cpu_workers": 60,
+      "time_seconds": {
+        "n": 4,
+        "mean": 6.0181164249981975,
+        "minimum": 6.016285599995172,
+        "maximum": 6.021590299999843,
+        "std": 0.002390452005086252
+      },
+      "component_Wh": {
+        "n": 4,
+        "mean": 0.1384939979165,
+        "minimum": 0.13405379027777778,
+        "maximum": 0.14556272361144446,
+        "std": 0.005066615417206981
+      },
+      "measurement_ids": [
+        "673905102b2349e5a5e595adb865ba1b",
+        "f0856ad49e7048458de032d10dd1ee9f",
+        "0e347f53e92e42b3967a35b9eb1957bf",
+        "c5e1dab791e94a3f805e7d531f34296a"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "validate_refresh",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 5,
+        "mean": 1.0329403800013097,
+        "minimum": 1.0316855999990366,
+        "maximum": 1.035037999999986,
+        "std": 0.0012501309656213625
+      },
+      "component_Wh": {
+        "n": 5,
+        "mean": 0.027510647222022223,
+        "minimum": 0.026757451388222223,
+        "maximum": 0.029055252777444442,
+        "std": 0.0009478526875950395
+      },
+      "measurement_ids": [
+        "3c48beec6abb4ff4837c116ee6d84772",
+        "be51df7aa9a442f697c582659f368ca2",
+        "57fd0fbea50a47f8943d7996f20a326a",
+        "b2f283ceda6948869ad5af3eea6bea14",
+        "4f4144e07b504fb68e40bdf3ade3fcbc"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "validate_refresh",
+      "cpu_workers": 60,
+      "time_seconds": {
+        "n": 4,
+        "mean": 1.0125057249938436,
+        "minimum": 1.0113558000011835,
+        "maximum": 1.0151213999997708,
+        "std": 0.0017551059207423275
+      },
+      "component_Wh": {
+        "n": 4,
+        "mean": 0.024528455208166666,
+        "minimum": 0.022971277777444444,
+        "maximum": 0.025924952777777777,
+        "std": 0.001209946805423501
+      },
+      "measurement_ids": [
+        "83e514ac216c4a47921b3e0ae18313c1",
+        "6d98277d646a44549c2ab8de1ce7fee5",
+        "2deca4a8efd94c9ab95f33202233ea27",
+        "bb92bd360897462a836a8e2b06e459cd"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "validate_regimes",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 2,
+        "mean": 5.104644350005401,
+        "minimum": 5.0907182000082685,
+        "maximum": 5.118570500002534,
+        "std": 0.01969455019758696
+      },
+      "component_Wh": {
+        "n": 2,
+        "mean": 0.1258888493057222,
+        "minimum": 0.12554175694477776,
+        "maximum": 0.12623594166666666,
+        "std": 0.0004908627242437362
+      },
+      "measurement_ids": [
+        "8b9ed9f535ad44e0be41fdc60ffd8924",
+        "63bf26159d7a4381a662940119311549"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "validate_regimes",
+      "cpu_workers": 60,
+      "time_seconds": {
+        "n": 1,
+        "mean": 5.016797600001155,
+        "minimum": 5.016797600001155,
+        "maximum": 5.016797600001155,
+        "std": null
+      },
+      "component_Wh": {
+        "n": 1,
+        "mean": 0.11512940000033332,
+        "minimum": 0.11512940000033332,
+        "maximum": 0.11512940000033332,
+        "std": null
+      },
+      "measurement_ids": [
+        "cfdedfdcad3b44b492771bbf7ea0b469"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "validate_stage_limits",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 2,
+        "mean": 1.0410027999969316,
+        "minimum": 1.0400688999943668,
+        "maximum": 1.0419366999994963,
+        "std": 0.001320734049527365
+      },
+      "component_Wh": {
+        "n": 2,
+        "mean": 0.026299852083333332,
+        "minimum": 0.025783902777777774,
+        "maximum": 0.02681580138888889,
+        "std": 0.0007296625054136504
+      },
+      "measurement_ids": [
+        "c8f43ca3b1d945029c3bf1625b8e64d3",
+        "854117bb4345410dba4885820b45dbf4"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "validate_stochastic2",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 2,
+        "mean": 18.33890225000141,
+        "minimum": 14.260645300004398,
+        "maximum": 22.417159199998423,
+        "std": 5.767526289528108
+      },
+      "component_Wh": {
+        "n": 2,
+        "mean": 0.5052950708331666,
+        "minimum": 0.3625276152781111,
+        "maximum": 0.6480625263882221,
+        "std": 0.20190367191145758
+      },
+      "measurement_ids": [
+        "312c8e0578f8442b89fd4a8cf7afe2f0",
+        "2a2320ecdfc6406fb823a917fa8978a2"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "validate_stochastic2",
+      "cpu_workers": 60,
+      "time_seconds": {
+        "n": 1,
+        "mean": 15.023929499999213,
+        "minimum": 15.023929499999213,
+        "maximum": 15.023929499999213,
+        "std": null
+      },
+      "component_Wh": {
+        "n": 1,
+        "mean": 0.37031145277777777,
+        "minimum": 0.37031145277777777,
+        "maximum": 0.37031145277777777,
+        "std": null
+      },
+      "measurement_ids": [
+        "3aeae5cc471b4276afecec17dfd805c8"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "validate_study",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 2,
+        "mean": 5.111197299998821,
+        "minimum": 5.108816399995703,
+        "maximum": 5.113578200001939,
+        "std": 0.00336710107506342
+      },
+      "component_Wh": {
+        "n": 2,
+        "mean": 0.13191852777827778,
+        "minimum": 0.13158391388922222,
+        "maximum": 0.13225314166733335,
+        "std": 0.000473215500060783
+      },
+      "measurement_ids": [
+        "627539a41bae47cab49207c60b268592",
+        "25122fce9bf343ca90ef3ceb83a53fd8"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "validate_study",
+      "cpu_workers": 60,
+      "time_seconds": {
+        "n": 1,
+        "mean": 5.029054800004815,
+        "minimum": 5.029054800004815,
+        "maximum": 5.029054800004815,
+        "std": null
+      },
+      "component_Wh": {
+        "n": 1,
+        "mean": 0.11429110972255556,
+        "minimum": 0.11429110972255556,
+        "maximum": 0.11429110972255556,
+        "std": null
+      },
+      "measurement_ids": [
+        "495498ff54644783950d89077d025adf"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Other information, rendering and validation",
+      "phase": "weighted_component_comparison",
+      "cpu_workers": 60,
+      "time_seconds": {
+        "n": 1,
+        "mean": 4.014510799999698,
+        "minimum": 4.014510799999698,
+        "maximum": 4.014510799999698,
+        "std": null
+      },
+      "component_Wh": {
+        "n": 1,
+        "mean": 0.0898031819451111,
+        "minimum": 0.0898031819451111,
+        "maximum": 0.0898031819451111,
+        "std": null
+      },
+      "measurement_ids": [
+        "8925e6f335a846f9b3f752efce3c3f26"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Publication and deployment verification",
+      "phase": "publish_completed_regime_portfolios",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 1,
+        "mean": 693.8851664999966,
+        "minimum": 693.8851664999966,
+        "maximum": 693.8851664999966,
+        "std": null
+      },
+      "component_Wh": {
+        "n": 1,
+        "mean": 17.76596426111111,
+        "minimum": 17.76596426111111,
+        "maximum": 17.76596426111111,
+        "std": null
+      },
+      "measurement_ids": [
+        "3ff811ac39ad4dfba9e6bb02fc7ab1e3"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Publication and deployment verification",
+      "phase": "publish_completed_validate_refresh",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 4,
+        "mean": 651.2300340999991,
+        "minimum": 640.1198540000041,
+        "maximum": 669.3709897999943,
+        "std": 13.372212046719499
+      },
+      "component_Wh": {
+        "n": 4,
+        "mean": 17.072126584027945,
+        "minimum": 16.713997091666666,
+        "maximum": 17.381686608333002,
+        "std": 0.2758824633270941
+      },
+      "measurement_ids": [
+        "7a9e2c40e52b455c84a201c153d29d0b",
+        "5362b10fe3b642efa5107540df758f65",
+        "5e6dddaacb73429caeae394dbe013971",
+        "bf8d8b8a8d9e4eeab2ba6f7890471fac"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Publication and deployment verification",
+      "phase": "publish_completed_validate_stochastic2",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 1,
+        "mean": 716.7313978999882,
+        "minimum": 716.7313978999882,
+        "maximum": 716.7313978999882,
+        "std": null
+      },
+      "component_Wh": {
+        "n": 1,
+        "mean": 18.433373066666665,
+        "minimum": 18.433373066666665,
+        "maximum": 18.433373066666665,
+        "std": null
+      },
+      "measurement_ids": [
+        "a854c3c0c8e24a469a2d632b8837364c"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Publication and deployment verification",
+      "phase": "publish_completed_validate_study",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 1,
+        "mean": 734.3441961999924,
+        "minimum": 734.3441961999924,
+        "maximum": 734.3441961999924,
+        "std": null
+      },
+      "component_Wh": {
+        "n": 1,
+        "mean": 19.1404869,
+        "minimum": 19.1404869,
+        "maximum": 19.1404869,
+        "std": null
+      },
+      "measurement_ids": [
+        "2100755057874f97ad871a7da01b47f2"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Publication and deployment verification",
+      "phase": "publish_initial",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 1,
+        "mean": 690.6982596000016,
+        "minimum": 690.6982596000016,
+        "maximum": 690.6982596000016,
+        "std": null
+      },
+      "component_Wh": {
+        "n": 1,
+        "mean": 17.931586275,
+        "minimum": 17.931586275,
+        "maximum": 17.931586275,
+        "std": null
+      },
+      "measurement_ids": [
+        "458dc350a74c431e9a59344d6f859d59"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Regime forecasts",
+      "phase": "regime_forecasts",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 4,
+        "mean": 14.80925854999623,
+        "minimum": 14.296528699996998,
+        "maximum": 15.322134799993364,
+        "std": 0.56627068447775
+      },
+      "component_Wh": {
+        "n": 4,
+        "mean": 0.6894642559024444,
+        "minimum": 0.6599138763888889,
+        "maximum": 0.7122411666663333,
+        "std": 0.025681968361898965
+      },
+      "measurement_ids": [
+        "23e2ebc08a7c40aa8b984a9283759be9",
+        "dbd83df422804c4cb66b025a15f6d82d",
+        "94313f6402fc412aa93f19f74cd3d8a6",
+        "9330a22f63714888b20a629de52c4678"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Regime forecasts",
+      "phase": "regime_forecasts",
+      "cpu_workers": 60,
+      "time_seconds": {
+        "n": 3,
+        "mean": 17.031348366658978,
+        "minimum": 16.02893819999008,
+        "maximum": 19.035690399992745,
+        "std": 1.7358111352143484
+      },
+      "component_Wh": {
+        "n": 3,
+        "mean": 0.7483699074075185,
+        "minimum": 0.6790030583333333,
+        "maximum": 0.8571479833333333,
+        "std": 0.09538782509983582
+      },
+      "measurement_ids": [
+        "b59e1e8e6b184b19af43952e53f4f3bc",
+        "9fe977676c7248908abefd982b5e6b15",
+        "241c4bfc2a2949b6a27fa2a7ad89e918"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Stochastic 2",
+      "phase": "stochastic2",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 2,
+        "mean": 14123.710515799998,
+        "minimum": 13804.598762399997,
+        "maximum": 14442.8222692,
+        "std": 451.29216957094053
+      },
+      "component_Wh": {
+        "n": 1,
+        "mean": 781.1905253569448,
+        "minimum": 781.1905253569448,
+        "maximum": 781.1905253569448,
+        "std": null
+      },
+      "measurement_ids": [
+        "2737d8582efa440fa879cd8f13ebb1cb",
+        "d43e52a25fe64385a48020832ff0119a"
+      ],
+      "scope": "Solver-reported completed search elapsed time, independently validated saved output. Timestamp boundaries derived from manifest modification time and solver elapsed time; not an uninterrupted monitored command.",
+      "nested": false
+    },
+    {
+      "part": "Stochastic 2",
+      "phase": "stochastic2",
+      "cpu_workers": 60,
+      "time_seconds": {
+        "n": 1,
+        "mean": 16191.072811900001,
+        "minimum": 16191.072811900001,
+        "maximum": 16191.072811900001,
+        "std": null
+      },
+      "component_Wh": {
+        "n": 1,
+        "mean": 943.2300412763889,
+        "minimum": 943.2300412763889,
+        "maximum": 943.2300412763889,
+        "std": null
+      },
+      "measurement_ids": [
+        "192778f5c6834010b3749f4dd5d25806"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Stochastic",
+      "phase": "stochastic",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 5,
+        "mean": 211.5753263199993,
+        "minimum": 177.56563569999707,
+        "maximum": 267.7398342000088,
+        "std": 43.83453790316735
+      },
+      "component_Wh": {
+        "n": 5,
+        "mean": 6.785290256111245,
+        "minimum": 5.80267267777811,
+        "maximum": 8.157680669444446,
+        "std": 1.1443520515140562
+      },
+      "measurement_ids": [
+        "80d5cd9fe6604af48388b6716029413e",
+        "dbf1318e400e4a93be7264b455e39e2a",
+        "3e0de6a4dfe846849bcdd14778c07952",
+        "67b05167138f4ec7bc81afd1b7762396",
+        "36061e4a948840b2b11b99d3e0db23ab"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Stochastic",
+      "phase": "stochastic",
+      "cpu_workers": 60,
+      "time_seconds": {
+        "n": 4,
+        "mean": 163.70166207499574,
+        "minimum": 103.14442959998269,
+        "maximum": 237.22600070000044,
+        "std": 60.79878053466858
+      },
+      "component_Wh": {
+        "n": 4,
+        "mean": 5.047383890277778,
+        "minimum": 3.429472323611444,
+        "maximum": 6.722677622221889,
+        "std": 1.5771201762321956
+      },
+      "measurement_ids": [
+        "1e71125edf2e4527be33bdc887351117",
+        "654059916adf4495a9eacfd8cf7137e7",
+        "f86a1471b3344a239d292f0654d80d45",
+        "a645911ce6d84f50bbe36cee50a7edc5"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Weekly forecasts",
+      "phase": "weekly",
+      "cpu_workers": 48,
+      "time_seconds": {
+        "n": 4,
+        "mean": 35.96795684999597,
+        "minimum": 35.693854899989674,
+        "maximum": 36.691131999999925,
+        "std": 0.48301618218647835
+      },
+      "component_Wh": {
+        "n": 4,
+        "mean": 2.073417609722389,
+        "minimum": 1.9781968847225557,
+        "maximum": 2.147555459722222,
+        "std": 0.07025314436570876
+      },
+      "measurement_ids": [
+        "583baae09c564777bda3031abca3fb39",
+        "ef800dafcaf54fb2857e3d46eb98278d",
+        "850ead833c324ea38c2dd8192b078498",
+        "5cd07aa3b3614cd8a10603348b54e26a"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    },
+    {
+      "part": "Weekly forecasts",
+      "phase": "weekly",
+      "cpu_workers": 60,
+      "time_seconds": {
+        "n": 2,
+        "mean": 39.05755145000148,
+        "minimum": 38.0512044000061,
+        "maximum": 40.06389849999687,
+        "std": 1.4231896465576268
+      },
+      "component_Wh": {
+        "n": 2,
+        "mean": 2.1594050368052224,
+        "minimum": 2.0368536180555554,
+        "maximum": 2.281956455554889,
+        "std": 0.1733138784838432
+      },
+      "measurement_ids": [
+        "7c0d62a37201476c8ca3b113b9c1b60b",
+        "8609d3e649e1417ebe1221766df1515a"
+      ],
+      "scope": "Whole command including startup, JIT, loading, child processes and monitoring overhead; gross CPU-package and GPU-board counters include background and idle energy. Not isolated process or measured wall electricity.",
+      "nested": false
+    }
+  ],
+  "cycles": [
+    {
+      "run": "20261111",
+      "status": "superseded",
+      "seconds": 12996.076716,
+      "timing_origin": "first_recorded_action_lower_bound",
+      "start": "2026-11-11T08:17:35.946403+02:00",
+      "end": null,
+      "observed_at": "2026-11-11T09:54:12.023119+00:00",
+      "energy": null
+    },
+    {
+      "run": "20261111_unrestricted_sales",
+      "status": "superseded",
+      "seconds": 14092.324943,
+      "timing_origin": "first_recorded_action_lower_bound",
+      "start": "2026-11-11T08:17:35.946403+02:00",
+      "end": null,
+      "observed_at": "2026-11-11T10:12:28.271346+00:00",
+      "energy": null
+    },
+    {
+      "run": "20261111_vlp62",
+      "status": "financial milestone only",
+      "seconds": 50200.903402,
+      "timing_origin": "first_recorded_action_lower_bound",
+      "start": "2026-11-11T08:17:35.946403+02:00",
+      "end": null,
+      "observed_at": "2026-11-11T22:14:16.849805+02:00",
+      "energy": null
+    },
+    {
+      "run": "20261112",
+      "status": "superseded",
+      "seconds": 1367.520815,
+      "timing_origin": "first_recorded_action_lower_bound",
+      "start": "2026-11-12T08:13:10.190086+02:00",
+      "end": null,
+      "observed_at": "2026-11-12T06:35:57.710901+00:00",
+      "energy": null
+    },
+    {
+      "run": "20261112_sensitivity_cases",
+      "status": "financial milestone only",
+      "seconds": 1468.60825,
+      "timing_origin": "first_recorded_action_lower_bound",
+      "start": "2026-11-12T21:13:10.714149+02:00",
+      "end": null,
+      "observed_at": "2026-11-12T21:37:39.322399+02:00",
+      "energy": null
+    },
+    {
+      "run": "20261112_stage1000_technology7108",
+      "status": "superseded",
+      "seconds": 9310.19852,
+      "timing_origin": "first_recorded_action_lower_bound",
+      "start": "2026-11-12T08:13:10.190086+02:00",
+      "end": null,
+      "observed_at": "2026-11-12T10:48:20.388606+02:00",
+      "energy": null
+    },
+    {
+      "run": "20261112_stage1000_technology7108_cpu48",
+      "status": "superseded",
+      "seconds": 23000.917656,
+      "timing_origin": "first_recorded_action_lower_bound",
+      "start": "2026-11-12T08:13:10.190086+02:00",
+      "end": null,
+      "observed_at": "2026-11-12T12:36:31.107742+00:00",
+      "energy": null
+    },
+    {
+      "run": "20261112_vlp87_cpu48",
+      "status": "financial milestone only",
+      "seconds": 44870.357531,
+      "timing_origin": "first_recorded_action_lower_bound",
+      "start": "2026-11-12T08:13:10.190086+02:00",
+      "end": null,
+      "observed_at": "2026-11-12T20:41:00.547617+02:00",
+      "energy": null
+    },
+    {
+      "run": "20261112_zclose_cpu48",
+      "status": "superseded",
+      "seconds": 2228.689555,
+      "timing_origin": "first_recorded_action_lower_bound",
+      "start": "2026-11-12T21:44:26.907521+02:00",
+      "end": null,
+      "observed_at": "2026-11-12T22:21:35.597076+02:00",
+      "energy": null
+    },
+    {
+      "run": "20261112_zus_trial_cpu48",
+      "status": "financial milestone only",
+      "seconds": 39685.032253,
+      "timing_origin": "first_recorded_action_lower_bound",
+      "start": "2026-11-12T21:44:26.907521+02:00",
+      "end": null,
+      "observed_at": "2026-11-13T08:45:51.939774+02:00",
+      "energy": null
+    },
+    {
+      "run": "20261112_zzclose_cpu48",
+      "status": "financial milestone only",
+      "seconds": 39011.778749,
+      "timing_origin": "first_recorded_action_lower_bound",
+      "start": "2026-11-12T21:44:26.907521+02:00",
+      "end": null,
+      "observed_at": "2026-11-13T08:34:38.686270+02:00",
+      "energy": null
+    },
+    {
+      "run": "20261113_compute_resume_vlp107",
+      "status": "financial milestone only",
+      "seconds": 72556.87667,
+      "timing_origin": "first_recorded_action_lower_bound",
+      "start": "2026-11-13T15:41:11.008936+02:00",
+      "end": null,
+      "observed_at": "2026-11-14T11:50:27.885606+02:00",
+      "energy": null
+    },
+    {
+      "run": "20261113_stoch_variants_cpu48",
+      "status": "superseded",
+      "seconds": 10683.290304,
+      "timing_origin": "first_recorded_action_lower_bound",
+      "start": "2026-11-13T09:24:58.541774+02:00",
+      "end": null,
+      "observed_at": "2026-11-13T10:23:01.832078+00:00",
+      "energy": null
+    },
+    {
+      "run": "20261113_vlp107_priority",
+      "status": "financial milestone only",
+      "seconds": 82749.536059,
+      "timing_origin": "first_recorded_action_lower_bound",
+      "start": "2026-11-13T12:24:28.144624+02:00",
+      "end": null,
+      "observed_at": "2026-11-14T11:23:37.680683+02:00",
+      "energy": null
+    },
+    {
+      "run": "20261113_zzclose_vlp107",
+      "status": "in_progress",
+      "seconds": 58569.595904,
+      "timing_origin": "first_recorded_action_lower_bound",
+      "start": "2026-11-13T21:34:02.098958+02:00",
+      "end": null,
+      "observed_at": "2026-11-14T13:50:11.694862+02:00",
+      "energy": {
+        "pid": 47776,
+        "process_created": 1794655712.255554,
+        "run": "20261113_zzclose_vlp107",
+        "started_at": "2026-11-14T13:28:32.569517+02:00",
+        "ended_at": "2026-11-14T13:49:59.231816+02:00",
+        "status": "monitoring",
+        "counter_start": {
+          "time": 183490.0474114,
+          "cpu_pWh": 4222584627787500,
+          "gpu_mJ": 10079393640
+        },
+        "counter_end": {
+          "time": 184776.7088167,
+          "cpu_pWh": 4241558792766666,
+          "gpu_mJ": 10130349925
+        },
+        "measurement": {
+          "seconds": 1286.661405299994,
+          "cpu_J": 68306.9939249976,
+          "gpu_J": 50956.285,
+          "cpu_W": 53.088554334208354,
+          "gpu_W": 39.603492255306435
+        },
+        "observed_component_Wh": 33.128688590277115,
+        "full_cycle_energy_measured": false,
+        "uncovered_before_monitor_seconds": 57270.470559,
+        "scope": "Continuous observed segment of gross hardware CPU-package and GPU-board energy, including idle, waiting and unrelated system work. Not isolated process energy or measured socket electricity. Earlier uncovered intervals are unknown and are never extrapolated."
+      }
+    }
+  ],
+  "complete_run_wall_seconds": {
+    "n": 0,
+    "mean": null,
+    "minimum": null,
+    "maximum": null,
+    "std": null
+  },
+  "complete_run_component_Wh": {
+    "n": 0,
+    "mean": null,
+    "minimum": null,
+    "maximum": null,
+    "std": null
+  },
+  "required_parts": [
+    "Data update",
+    "Each model separately",
+    "Other information, rendering and validation",
+    "Publication and deployment verification"
+  ]
+}
