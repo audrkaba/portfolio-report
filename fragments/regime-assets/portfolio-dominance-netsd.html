@@ -145,110 +145,110 @@ html body table.report-fit-table[hidden],html body table.report-fit-table.fit-st
     <tr>
       <td>Full</td>
       <td>Current</td>
-      <td>1255</td>
-      <td>79</td>
+      <td>1256</td>
+      <td>82</td>
       <td>0</td>
       <td>114</td>
-      <td>0.692982</td>
+      <td>0.719298</td>
     </tr>
     <tr>
       <td>Full</td>
       <td>Update long: gated recourse</td>
-      <td>1255</td>
-      <td>80</td>
+      <td>1256</td>
+      <td>82</td>
       <td>0</td>
       <td>114</td>
-      <td>0.701754</td>
+      <td>0.719298</td>
     </tr>
     <tr>
       <td>Full</td>
       <td>Update long: no sales</td>
-      <td>1255</td>
-      <td>80</td>
+      <td>1256</td>
+      <td>82</td>
       <td>0</td>
       <td>114</td>
-      <td>0.701754</td>
+      <td>0.719298</td>
     </tr>
     <tr>
       <td>Full</td>
       <td>Update long: gated sales both stages</td>
-      <td>1255</td>
-      <td>80</td>
+      <td>1256</td>
+      <td>88</td>
       <td>0</td>
       <td>114</td>
-      <td>0.701754</td>
+      <td>0.771930</td>
     </tr>
     <tr>
       <td>Training</td>
       <td>Current</td>
-      <td>1129</td>
-      <td>79</td>
+      <td>1130</td>
+      <td>81</td>
       <td>0</td>
       <td>114</td>
-      <td>0.692982</td>
+      <td>0.710526</td>
     </tr>
     <tr>
       <td>Training</td>
       <td>Update long: gated recourse</td>
-      <td>1129</td>
-      <td>78</td>
+      <td>1130</td>
+      <td>80</td>
       <td>0</td>
       <td>114</td>
-      <td>0.684211</td>
+      <td>0.701754</td>
     </tr>
     <tr>
       <td>Training</td>
       <td>Update long: no sales</td>
-      <td>1129</td>
-      <td>78</td>
+      <td>1130</td>
+      <td>80</td>
       <td>0</td>
       <td>114</td>
-      <td>0.684211</td>
+      <td>0.701754</td>
     </tr>
     <tr>
       <td>Training</td>
       <td>Update long: gated sales both stages</td>
-      <td>1129</td>
-      <td>78</td>
+      <td>1130</td>
+      <td>86</td>
       <td>0</td>
       <td>114</td>
-      <td>0.684211</td>
+      <td>0.754386</td>
     </tr>
     <tr>
       <td>Diagnostic</td>
       <td>Current</td>
       <td>126</td>
-      <td>96</td>
+      <td>108</td>
       <td>0</td>
       <td>114</td>
-      <td>0.842105</td>
+      <td>0.947368</td>
     </tr>
     <tr>
       <td>Diagnostic</td>
       <td>Update long: gated recourse</td>
       <td>126</td>
-      <td>96</td>
+      <td>110</td>
       <td>0</td>
       <td>114</td>
-      <td>0.842105</td>
+      <td>0.964912</td>
     </tr>
     <tr>
       <td>Diagnostic</td>
       <td>Update long: no sales</td>
       <td>126</td>
-      <td>96</td>
+      <td>110</td>
       <td>0</td>
       <td>114</td>
-      <td>0.842105</td>
+      <td>0.964912</td>
     </tr>
     <tr>
       <td>Diagnostic</td>
       <td>Update long: gated sales both stages</td>
       <td>126</td>
-      <td>96</td>
+      <td>110</td>
       <td>0</td>
       <td>114</td>
-      <td>0.842105</td>
+      <td>0.964912</td>
     </tr>
   </tbody>
-</table></details><p>These matrices compare the displayed portfolios with one another using historical daily returns, not four-week scenario outcomes. An off-diagonal 1 means the row strictly dominates the column under that order; 0 means dominance was not detected, not that the returns are equal. The diagonal is not a comparison. Combined sums FSD, SSD and TSD and ranges from 0 to 3. All-zero panels can occur when no displayed portfolio dominates another. Portfolio netSD elsewhere also compares against the asset reference network, so it can differ even when this portfolio-only matrix has no links.</p><details><summary><strong>Figure 3.c. Portfolio-only dominance matrices — Full period: 1255</strong></summary><a href="figures/long_history/dominance_Full.png" target="_blank" rel="noopener"><img loading="lazy" src="figures/long_history/dominance_Full.png?v=ccd91a56c433" alt="Full period: 1255" style="width:100%;height:auto"></a></details><details><summary><strong>Figure 3.c. Portfolio-only dominance matrices — Training: 1129</strong></summary><a href="figures/long_history/dominance_Training.png" target="_blank" rel="noopener"><img loading="lazy" src="figures/long_history/dominance_Training.png?v=ffeeabd67420" alt="Training: 1129" style="width:100%;height:auto"></a></details><details><summary><strong>Figure 3.c. Portfolio-only dominance matrices — Diagnostic: 126</strong></summary><a href="figures/long_history/dominance_Diagnostic.png" target="_blank" rel="noopener"><img loading="lazy" src="figures/long_history/dominance_Diagnostic.png?v=1ce95363e38e" alt="Diagnostic: 126" style="width:100%;height:auto"></a></details><details><summary><strong>Figure 3.d. Interactive FSD, SSD and TSD — long-history portfolios</strong></summary><div class="dominance-explorer" data-asset="Portfolio" data-target="Current" data-source="interactive/dominance/LongPortfolio.json"></div></details><details><summary><strong>Figure 3.g. netSD sampled frontier — not a global optimality certificate</strong></summary><p>The curve is the nondominated envelope of feasible sampled first-stage allocations and every displayed portfolio. All use the same training-only reference network and denominator. It is not a certified efficient frontier of the discontinuous integer problem.</p><a href="figures/long_history/netSD_frontier.png" target="_blank" rel="noopener"><img loading="lazy" src="figures/long_history/netSD_frontier.png?v=2d73a438c072" alt="netSD sampled feasible envelope" style="width:100%;height:auto"></a></details></div>
+</table></details><p>These matrices compare the displayed portfolios with one another using historical daily returns, not four-week scenario outcomes. An off-diagonal 1 means the row strictly dominates the column under that order; 0 means dominance was not detected, not that the returns are equal. The diagonal is not a comparison. Combined sums FSD, SSD and TSD and ranges from 0 to 3. All-zero panels can occur when no displayed portfolio dominates another. Portfolio netSD elsewhere also compares against the asset reference network, so it can differ even when this portfolio-only matrix has no links.</p><details><summary><strong>Figure 3.c. Portfolio-only dominance matrices — Full period: 1256</strong></summary><a href="figures/long_history/dominance_Full.png" target="_blank" rel="noopener"><img loading="lazy" src="figures/long_history/dominance_Full.png?v=fbc38873bea3" alt="Full period: 1256" style="width:100%;height:auto"></a></details><details><summary><strong>Figure 3.c. Portfolio-only dominance matrices — Training: 1130</strong></summary><a href="figures/long_history/dominance_Training.png" target="_blank" rel="noopener"><img loading="lazy" src="figures/long_history/dominance_Training.png?v=6565357599ca" alt="Training: 1130" style="width:100%;height:auto"></a></details><details><summary><strong>Figure 3.c. Portfolio-only dominance matrices — Diagnostic: 126</strong></summary><a href="figures/long_history/dominance_Diagnostic.png" target="_blank" rel="noopener"><img loading="lazy" src="figures/long_history/dominance_Diagnostic.png?v=1ce95363e38e" alt="Diagnostic: 126" style="width:100%;height:auto"></a></details><details><summary><strong>Figure 3.d. Interactive FSD, SSD and TSD — long-history portfolios</strong></summary><div class="dominance-explorer" data-asset="Portfolio" data-target="Current" data-source="interactive/dominance/LongPortfolio.json"></div></details><details><summary><strong>Figure 3.g. netSD sampled frontier — not a global optimality certificate</strong></summary><p>The curve is the nondominated envelope of feasible sampled first-stage allocations and every displayed portfolio. All use the same training-only reference network and denominator. It is not a certified efficient frontier of the discontinuous integer problem.</p><a href="figures/long_history/netSD_frontier.png" target="_blank" rel="noopener"><img loading="lazy" src="figures/long_history/netSD_frontier.png?v=d335054b3d54" alt="netSD sampled feasible envelope" style="width:100%;height:auto"></a></details></div><script defer src="../../disclosure_defaults.js?v=128f4d63bebf064a"></script>

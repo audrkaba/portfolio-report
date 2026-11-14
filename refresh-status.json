@@ -1,9 +1,9 @@
 {
   "run": "20261113_vlp107_priority",
-  "revision": "9042bc4c9c83",
+  "revision": "VLP107-financial-complete",
   "prepared_at": "2026-11-14T03:43:34.128322+02:00",
-  "complete": false,
-  "notice": "VLP holdings were corrected to 107. The previous 87-unit calculation was superseded. Only the linked verified portfolios use the new holdings and November 12 prices.",
+  "complete": true,
+  "notice": null,
   "holdings": {
     "VLP1L": 107,
     "SE0014261764": 7.108
@@ -29,5 +29,6 @@
       "status": "deferred by user",
       "url": null
     }
-  ]
+  ],
+  "main_report_complete": true
 }

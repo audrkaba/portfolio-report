@@ -32,7 +32,6 @@ document.querySelectorAll('.report-chapter-nav a').forEach(function(link) {
 document.querySelectorAll('details.stock-profile').forEach(function(profile) {
   profile.addEventListener('toggle', function() {
     if (!profile.open) return;
-    profile.querySelectorAll('details.technical-indicators').forEach(function(section){section.open=true;});
     document.querySelectorAll('details.stock-profile[open]').forEach(function(other) {
       if (other !== profile) other.open = false;
     });
@@ -58,7 +57,7 @@ document.querySelectorAll('.profile-filters').forEach(function(filterBlock) {
       const selectedNetsdEffects=new Set(netsdFilters.filter(box=>box.checked).map(box=>box.value));
       const selectedDividendStatuses=new Set(dividendFilters.filter(box=>box.checked).map(box=>box.value));
     const selectedType=instrumentFilters.find(box=>box.checked)?.value || 'ALL';
-    const selectedScope=portfolioFilters.find(box=>box.checked)?.value || 'STOCHASTIC';
+    const selectedScope=portfolioFilters.find(box=>box.checked)?.value || 'STOCHASTIC2';
     const selectedSale=saleFilters.find(box=>box.checked)?.value || 'ALL';
     const selectedUpdate=updateFilters.find(box=>box.checked)?.value || 'ALL';
     let visible=0;
@@ -85,11 +84,11 @@ document.querySelectorAll('details.portfolio-sensitivity').forEach(function(sens
   sensitivity.addEventListener('toggle', function() {
     if (!sensitivity.open) return;
     const components = sensitivity.querySelector('details.dominance-components');
-    if (components) { components.open=true; const box=components.querySelector('.dominance-explorer'); if(box)initialiseDominanceExplorer(box); }
+    if (components && components.open) { const box=components.querySelector('.dominance-explorer'); if(box)initialiseDominanceExplorer(box); }
   });
 });
 
-const reportVersion='d537bfc91b8c';
+const reportVersion='5e6ccf2ae9b4';
 const palette = ['#1b1b1b','#e41a1c','#377eb8','#4daf4a','#984ea3','#ff7f00','#a65628','#f781bf','#008080','#6a3d9a','#b2182b','#2166ac','#1b9e77','#d95f02'];
 const linePatterns = [[],[10,5],[2,4],[10,4,2,4],[14,5],[6,3],[2,3,8,3],[12,3,3,3]];
 function isExplorerVisible(box) {
@@ -793,7 +792,7 @@ if(basketDataElement){
  let data=fullData;
  const regimeDataElement=document.getElementById('regime-netsd-data'),regimeData=regimeDataElement?JSON.parse(regimeDataElement.textContent):null;
  const historyFilter=document.querySelector('select[name="profile-history-regime"]');
- let activeHistory=historyFilter?.value||'FULL',fullHistoryScope=document.querySelector('input[name="portfolio-scope"]:checked')?.value||'STOCHASTIC';
+ let activeHistory=historyFilter?.value||'FULL',fullHistoryScope=document.querySelector('input[name="portfolio-scope"]:checked')?.value||'STOCHASTIC2';
  if(regimeData)data={...fullData,NETSD:regimeData.portfolios[activeHistory]};
  function historyKey(){return historyFilter?.value||'FULL';}
  function evaluation(scope,policy){return regimeData?.evaluations[historyKey()]?.[scope]?.[policy];}
@@ -814,13 +813,37 @@ window.renderSelectedPortfolioSensitivity=function(profile,scope,policy){
  const caseOrder=['minimum_positive','median','maximum'];
  const cases=context?.portfolios[scope];
  if(!cases){paragraph('Select a portfolio and sale policy to view decision-specific portfolio sensitivity.');return;}
- paragraph('Historical marginal sensitivity: '+(regimeData?.contexts[historyKey()]?.label||historyKey())+'. Only this asset changes in Current; all other holdings stay fixed. Historical netSD uses invested holdings, excluding uninvested cash, with the same selected history/regime, reference network and denominator for every row.');
  const gross=sensitivityData.quantity_basis==='gross_purchases';
- function table(headers){const t=document.createElement('table');t.className='research-table selected-sensitivity-table';const r=t.createTHead().insertRow();headers.forEach(text=>{const h=document.createElement('th');h.textContent=text;r.append(h);});host.append(t);return t.createTBody();}
+ function table(headers,kind='selected-sensitivity-table',parent=host){const t=document.createElement('table');t.className='research-table '+kind;const r=t.createTHead().insertRow();headers.forEach(text=>{const h=document.createElement('th');h.textContent=text;r.append(h);});parent.append(t);return t.createTBody();}
  for(const [key,rows] of Object.entries(cases)){
   if(policy!=='ALL'&&policy!==key)continue;
   const item=rows[asset];if(!item)continue;
   const title=document.createElement('h5');title.textContent=scope+' \u00b7 '+(key==='SALE'?'Sale':'No-sale');host.append(title);
+  const tree=sensitivityData.full_tree?.[scope]?.[key],treeAsset=tree?.assets[asset];
+  if(tree&&treeAsset){
+   paragraph('ENTIRE SCENARIO TREE: '+tree.scenarios.toLocaleString('en-US')+' positive-probability outcomes; total probability 100%; four-week terminal return distributions, including cash. No scenario subset is selected for the following tables. Denominator D='+tree.denominator+'.');
+   const total=table(['Complete policy','Terminal netSD','Change vs Current','Change vs initial only'],'whole-tree-sensitivity-table');
+   for(const [label,score,delta,versus] of [['No trades: Current plus cash',tree.no_trades,0,null],['Execute stage 1 only',tree.initial_only,tree.initial_only.netSD-tree.no_trades.netSD,0],['Execute ALL decision stages',tree.all_stages,tree.change_vs_current,tree.change_vs_initial]]){
+    const r=total.insertRow();r.dataset.wholeTreePolicy=label;r.dataset.scenarios=tree.scenarios;r.dataset.probability=tree.probability;r.dataset.afterNetsd=score.netSD;
+    [label,fmt(score.netSD),fmt(delta),fmt(versus)].forEach(v=>r.insertCell().textContent=v);
+   }
+   paragraph('Asset sensitivity over the SAME ENTIRE TREE: every OTHER asset keeps its selected-model trades at every node. Only this asset changes; the portfolio is not reoptimised. Prices and cash are replayed at each actual decision stage. Changes below are relative to the complete selected-model policy, not to Current. Removal sells the entire current holding at stage 1 and cancels this asset’s proposed purchases and sales; it is a diagnostic even when No-sale is selected.');
+   const marginal=table(['Asset quantity case','First trade, units','Later gross buys, units','Total gross buys, units','Final asset units','Terminal netSD','Change vs full model'],'whole-tree-sensitivity-table');
+   function treeRow(label,kind,row,immediate,later){
+    const r=marginal.insertRow();r.dataset.wholeTreeCase=kind;r.dataset.policy=key;r.dataset.afterNetsd=row.terminal?.netSD??'';r.dataset.scenarios=tree.scenarios;r.dataset.probability=1;r.dataset.targetUnits=row.final_units??'';r.dataset.deltaVsModel=row.delta_vs_model??'';
+    const note=row.terminal?'':row.status,total=row.total_gross_purchase_units??(later==null?null:Math.max(immediate,0)+later),retained=row.original_asset_trades_retained;
+    const final=row.final_units==null&&row.final_units_min!=null?units(row.final_units_min)+'–'+units(row.final_units_max):units(row.final_units);
+    [label+(note?' — '+note:''),units(immediate),retained?'As model':units(later),retained?'As model':units(total),final,fmt(row.terminal?.netSD),fmt(row.delta_vs_model)].forEach(v=>r.insertCell().textContent=v);
+   }
+   treeRow(treeAsset.current_units>0?'Remove entire current holding; no re-entry':'Removal: no existing holding (model unchanged)','remove',treeAsset.removal,treeAsset.removal.initial_target_units-treeAsset.current_units,0);
+   treeRow('Stage 1: exact signed proposed trade','initial',treeAsset.initial,treeAsset.initial_change,0);
+   for(const row of [...treeAsset.all_stages].sort((a,b)=>caseOrder.indexOf(a.case)-caseOrder.indexOf(b.case)))treeRow('Stage 1 + later: '+labels[row.case],row.case,row,treeAsset.initial_change,row.later_units);
+   paragraph('Later quantities sum GROSS purchases after stage 1 on each complete path. The minimum excludes zero; the probability-weighted median includes zero; the maximum occurs on at least one positive-probability path. Later sales do not subtract from gross purchases, but they remain in terminal holdings and cash. For a quantity attained by several schedules, the most probable actual complete signed schedule is applied at the same stages across the entire tree; ties are deterministic, without choosing by return. Other assets retain their original branch-dependent trades.');
+   const schedules=document.createElement('details'),scheduleTitle=document.createElement('summary');scheduleTitle.textContent='Actual stage schedules and feasibility used in these counterfactuals';schedules.append(scheduleTitle);host.append(schedules);
+   for(const [kind,row] of [['Removal',treeAsset.removal],['Stage 1 only for this asset',treeAsset.initial],...treeAsset.all_stages.map(r=>[labels[r.case],r])]){const p=document.createElement('p');p.textContent=kind+': '+(row.future_signed_trades?(tree.future_steps||[]).map((step,i)=>'week '+step/5+': '+units(row.future_signed_trades[i])+' signed units').join('; ')+'. Minimum cash across all paths/stages EUR '+Number(row.minimum_cash_EUR).toFixed(2)+'. Infeasible-path probability '+(100*row.infeasible_probability).toFixed(6)+'%.':row.status);schedules.append(p)}
+   paragraph('Each asset case is separate. A counterfactual requiring borrowing or negative holdings on any positive-probability path has no terminal netSD value; violating paths are not discarded. These are sensitivity diagnostics, not reoptimised executable orders. Historical regime filters below do not discard branches from the whole-tree forecast law.');
+  }
+  paragraph('Supplementary HISTORICAL marginal sensitivity: '+(regimeData?.contexts[historyKey()]?.label||historyKey())+'. Only this asset changes in Current; other Current holdings remain fixed. These daily-return diagnostics exclude uninvested cash and use the selected historical network. They are separate from the whole-tree terminal results above.');
   paragraph('Current holding: '+units(item.current_units)+' units. Quantities below are units of this asset. Removal and each purchase case are separate counterfactuals.');
   const body=table(['Quantity case','Immediate change, units','Later gross purchases, units','Total gross purchases, units','Current netSD','After change netSD','netSD change']);
   function row(label,immediate,later,total,target,after,delta,kind){const r=body.insertRow();r.dataset.case=kind;r.dataset.policy=key;r.dataset.targetUnits=target??'';r.dataset.changeUnits=target==null?'':Number((target-item.current_units).toFixed(3));r.dataset.laterUnits=later??'';r.dataset.totalPurchaseUnits=total??'';r.dataset.afterNetsd=after??'';
@@ -836,8 +859,9 @@ window.renderSelectedPortfolioSensitivity=function(profile,scope,policy){
   if(!item.all_stages.length){paragraph('This is a single-decision model; it has no later-stage scenario quantities.');continue;}
   paragraph('Later gross purchases sum all positive purchases after stage 1 along each complete scenario path. Their smallest positive total excludes paths with zero later purchases; the probability-weighted median includes zero and the maximum is attained on at least one positive-probability path. Total gross purchases include the stage-1 buy; sales do not subtract from this purchase total.');
   paragraph('Each later historical row applies the exact stage-1 buy or sale, then adds that later purchase quantity to this asset. It leaves every other current holding fixed and does not subtract later sales. These rows are marginal diagnostics, not complete executable policies. A sale can therefore make the net holding change differ from total gross purchases.');
-  paragraph('The separate complete-policy horizon comparison below includes all assets, all stages, sales and cash. Each row conditions on scenarios with the stated later purchase quantity; probabilities for different rows can overlap.');
-  const terminal=table(['Later purchase quantity case','Scenario probability, %','No-trade terminal netSD','Initial-only terminal netSD','All-stage terminal netSD','Change vs initial-only']);
+  const conditional=document.createElement('details'),conditionalTitle=document.createElement('summary');conditionalTitle.textContent='Supplementary: conditional scenario subsets (not the whole tree)';conditional.append(conditionalTitle);host.append(conditional);
+  const conditionalNote=document.createElement('p');conditionalNote.textContent='Each row below selects ONLY paths with this later purchase quantity; rows can overlap. These conditional diagnostics are not the unconditional whole-tree result above.';conditional.append(conditionalNote);
+  const terminal=table(['Later purchase quantity case','Scenario probability, %','No-trade terminal netSD','Initial-only terminal netSD','All-stage terminal netSD','Change vs initial-only'],'selected-sensitivity-table',conditional);
   for(const stat of [...(sensitivityData.native[scope]?.[key]?.[asset]||[])].sort((a,b)=>caseOrder.indexOf(a.case)-caseOrder.indexOf(b.case))){
    if(!stat.terminal)continue;
    const r=terminal.insertRow(),t=stat.terminal;r.dataset.case=stat.case;r.dataset.policy=key;r.dataset.denominator=t.denominator;r.dataset.terminalDelta=t.change_vs_initial;
@@ -915,7 +939,7 @@ window.renderSelectedPortfolioSensitivity=function(profile,scope,policy){
  function currentHolding(asset,basket){return assetInfo[asset]?.current_units??basket.rows.find(z=>z.asset===asset)?.current_units??0;}
  function effect(delta){return delta>1e-10?'INCREASE':delta< -1e-10?'DECREASE':'UNCHANGED';}
  function drawBasket(){
-  const scope=document.querySelector('input[name="portfolio-scope"]:checked')?.value||'STOCHASTIC';
+  const scope=document.querySelector('input[name="portfolio-scope"]:checked')?.value||'STOCHASTIC2';
   const policy=document.querySelector('input[name="sale-policy"]:checked')?.value||'ALL';
   host.replaceChildren();
   const cases=data[scope];
@@ -930,7 +954,7 @@ window.renderSelectedPortfolioSensitivity=function(profile,scope,policy){
   if(!cases)return;
   for(const [key,basket] of Object.entries(cases)){
    if(policy!=='ALL'&&policy!==key)continue;
-   const box=document.createElement('details');box.open=true;
+   const box=document.createElement('details');box.open=false;
    const evaluated=evaluation(scope,key);
    const title=document.createElement('summary');title.textContent=scope+' · '+(key==='SALE'?'Sales allowed':'No sales')+' · '+(context?.label||'Full history')+' · invested EUR '+basket.total.toFixed(2)+' · cash EUR '+basket.cash.toFixed(2)+(evaluated?' · netSD '+evaluated.netSD.toFixed(6):'');box.append(title);
    const note=document.createElement('p');note.textContent=(scope!=='NETSD'&&historyKey()!=='FULL'?'Full-history allocation, evaluated in '+context.label+'. Its quantities were not reoptimised for this regime. ':'')+basket.status+' Profile quantities and execution decisions follow this portfolio; technical indicators describe the instrument.';box.append(note);
@@ -943,7 +967,7 @@ window.renderSelectedPortfolioSensitivity=function(profile,scope,policy){
  }
  document.querySelectorAll('input[name="portfolio-scope"],input[name="sale-policy"]').forEach(x=>x.addEventListener('change',drawBasket));drawBasket();
  if(historyFilter&&regimeData)historyFilter.addEventListener('change',()=>{
-  if(activeHistory==='FULL')fullHistoryScope=document.querySelector('input[name="portfolio-scope"]:checked')?.value||'STOCHASTIC';
+  if(activeHistory==='FULL')fullHistoryScope=document.querySelector('input[name="portfolio-scope"]:checked')?.value||'STOCHASTIC2';
   data={...fullData,NETSD:regimeData.portfolios[historyKey()]};
   document.querySelector('input[name="portfolio-scope"][value="'+(historyKey()==='FULL'?fullHistoryScope:'NETSD')+'"]').checked=true;
   activeHistory=historyKey();
@@ -951,3 +975,60 @@ window.renderSelectedPortfolioSensitivity=function(profile,scope,policy){
  });
  document.querySelector('input[name="portfolio-scope"]:checked')?.dispatchEvent(new Event('change'));
 }
+
+(()=>{
+ const panel=document.getElementById('purchase-cap-filter');if(!panel)return;
+ const message=panel.querySelector('.purchase-cap-status'),inputs=[...panel.querySelectorAll('input')];
+ const pairs={STOCHASTIC:['STOCHASTIC','stochA'],stochA:['STOCHASTIC','stochA'],STOCHASTIC2:['STOCHASTIC2','stoch2A'],stoch2A:['STOCHASTIC2','stoch2A']};
+ const baskets=JSON.parse(document.getElementById('current-portfolio-baskets')?.textContent||'{}');
+ function sync(){
+  const scope=document.querySelector('input[name="portfolio-scope"]:checked')?.value,pair=pairs[scope];
+  inputs.forEach(input=>{input.disabled=!pair;input.checked=!!pair&&(input.value==='A')===(scope===pair[1])});message.replaceChildren();
+  if(!pair){message.textContent='Select Stochastic or Stochastic 2 to compare purchase-limit alternatives.';return}
+  const uncapped=scope===pair[1];
+  message.textContent=(uncapped?scope+' selected: both purchase-value caps removed.':'Standard '+scope+' selected: EUR 1,000 total and EUR 750 per asset per decision.')+' The 30% sector cap remains.';
+  if(uncapped&&!baskets[scope]){
+   message.textContent+=' This variant is not yet integrated into the main snapshot. No standard-model allocation is substituted. ';
+   const a=document.createElement('a');a.href='current-sensitivity.html?model='+scope+'&policy=NO_SALE&asset=VLP1L';a.textContent='Open current variant results / calculation status';message.append(a);
+  }
+ }
+ panel.addEventListener('change',e=>{
+  if(e.target.name!=='purchase-cap-mode')return;
+  const current=document.querySelector('input[name="portfolio-scope"]:checked')?.value,pair=pairs[current];if(!pair)return;
+  const target=document.querySelector('input[name="portfolio-scope"][value="'+pair[e.target.value==='A'?1:0]+'"]');
+  if(target){target.checked=true;target.dispatchEvent(new Event('change',{bubbles:true}))}sync();
+ });
+ document.addEventListener('change',e=>{if(e.target.name==='portfolio-scope')sync()});sync();
+})();
+
+(()=>{
+ const host=document.querySelector('#selected-model-conditions .selected-model-contract'),settings=document.getElementById('selected-model-contracts');if(!host||!settings)return;
+ const c=JSON.parse(settings.textContent),baskets=JSON.parse(document.getElementById('current-portfolio-baskets').textContent);
+ const regimeElement=document.getElementById('regime-netsd-data'),regimes=regimeElement?JSON.parse(regimeElement.textContent):null;
+ const euro=x=>'EUR '+Number(x).toLocaleString('en-US',{maximumFractionDigits:2});
+ const names={STOCHASTIC:'Stochastic',STOCHASTIC2:'Stochastic 2',UPDATE2:'Update 2',UPDATE3:'Update 3',MARKOWITZ:'Markowitz',MINIMAX:'Minimax',ROBUST:'Robust',NETSD:'Historical netSD by regime',stochA:'stochA',stoch2A:'stoch2A'};
+ const objectives={STOCHASTIC:'Penalised scenario-expected stochastic dominance score; integer neighbourhood search.',STOCHASTIC2:'Penalised scenario-expected stochastic dominance score; integer neighbourhood search over the four-stage policy.',UPDATE2:'Penalised historical netSD; new purchases are limited to shares, while confirmed fund holdings may remain.',UPDATE3:'Penalised historical netSD; share and fund purchases are permitted.',MARKOWITZ:'Minimum historical portfolio variance, with a historical mean no lower than Current on equal account wealth.',MINIMAX:'Minimise the largest historical one-session portfolio loss, with the Current historical-mean floor.',ROBUST:'Minimise worst stressed CVaR95 minus 0.20 times stressed mean, with entropy and turnover penalties. Probability radius 0.12; nominal CVaR cap 4%; Current historical-mean floor.',NETSD:'Optimise the actual portfolio return distribution against the fixed historical reference network for the selected history or regime.'};
+ function paragraph(text){const p=document.createElement('p');p.textContent=text;host.append(p)}
+ function render(){
+  const scope=document.querySelector('input[name="portfolio-scope"]:checked')?.value||'STOCHASTIC2',policy=document.querySelector('input[name="sale-policy"]:checked')?.value||'NO_SALE';
+  const history=document.querySelector('select[name="profile-history-regime"]'),label=history?.selectedOptions[0]?.textContent||'Full history';
+  const summary=document.querySelector('#selected-model-conditions summary strong');
+  summary.textContent='Model conditions: '+(names[scope]||scope)+' / '+(policy==='NO_SALE'?'No-sale':policy==='SALE'?'Sale':'Both policies')+' · '+(scope==='STOCHASTIC2'||scope==='stoch2A'?'4 decisions at weeks 0, 1, 2, 3; valuation week 4':scope==='STOCHASTIC'||scope==='stochA'?'2 decisions at weeks 0 and 2; valuation week 4':scope==='ALL'||scope==='ANY'?'multiple models':'one initial decision');
+  host.replaceChildren();paragraph((names[scope]||scope)+' · '+(policy==='NO_SALE'?'No-sale':policy==='SALE'?'Sale':'Both sale policies')+' · '+label+'.');
+  if(scope==='ALL'||scope==='ANY'){paragraph('This filter combines models; it does not define one joint investment policy. Select a single portfolio to see its schedule and conditions.');return}
+  const weekly=scope==='STOCHASTIC2'||scope==='stoch2A',twoStage=scope==='STOCHASTIC'||scope==='stochA',uncapped=scope==='stochA'||scope==='stoch2A';
+  paragraph(objectives[scope]||(weekly?objectives.STOCHASTIC2:objectives.STOCHASTIC));
+  if(weekly||twoStage)paragraph('The search diagnostic combines training returns and forecast daily returns; terminal-wealth netSD is a separate full-policy measure. Penalties cover new-position count, effective position count, small new share positions, historical-dividend shortfalls and liquidity utilisation. The integer search has no global-optimality certificate.');
+  if(weekly)paragraph('Four decision stages: '+c.weekly_steps.map(s=>'week '+(s/5)+' ('+s+' trading sessions)').join(', ')+'. Final valuation at week '+(c.valuation_step/5)+' ('+c.valuation_step+' sessions), with no trade at valuation. Decisions are one trading week apart; the final decision is one week before valuation. Only the observed market prefix is known at each decision. Branching: 20 continuations per parent (4 regimes × 5 price clusters); 1 / 20 / 400 / 8,000 decision nodes and 160,000 terminal outcomes.');
+  else if(twoStage)paragraph('Two decision stages: week 0 and week '+(c.original_recourse_step/5)+' ('+c.original_recourse_step+' trading sessions after the initial decision). Final valuation at week '+(c.valuation_step/5)+' ('+c.valuation_step+' sessions), without a new trade. The original two-stage model assumes the complete representative scenario becomes known at its second decision; Stochastic 2 uses only observed prefixes.');
+  else paragraph('One initial allocation decision; no optimised later-stage purchases or sales. Historical daily-return diagnostics are not a multi-stage forecast policy.');
+  if(weekly||twoStage)paragraph('Week labels use five model business-date steps per week; a closed exchange retains its carried-forward price. '+(weekly?'Each decision':'Second-stage recourse')+' must satisfy the model historical-mean floor relative to holding Current plus cash on equal node wealth.');
+  paragraph(uncapped?'Experimental alternative: neither the aggregate nor the per-asset purchase-value cap applies. Wealth, sector, cash and physical holding constraints remain.':'Purchase limits: at most '+euro(c.aggregate_cap_EUR)+' of aggregate GROSS purchases across all assets and '+euro(c.asset_cap_EUR)+' per asset at '+(weekly||twoStage?'EACH decision stage.':'the initial allocation.')+' Sales do not offset gross purchases or enlarge either limit.');
+  paragraph('Total account wealth: '+euro(c.wealth_EUR)+', including cash. No borrowing or new cash contributions; unused cash is retained. Sector concentration: at most '+(100*c.sector_cap)+'% of account wealth at each model decision, with conservative fund-sector look-through. At most '+c.maximum_funds+' funds; shares use whole units and funds 0.001 units. New share positions require at least 10 shares; new fund entries require at least EUR 300. Asset eligibility and physical liquidity bounds remain binding.');
+  paragraph(policy==='NO_SALE'?'No-sale: no existing or subsequently acquired units may be sold at any model decision.':policy==='SALE'?'Sale: sales are permitted at every model decision; neither technical SELL votes nor a negative price forecast is required.':'Sale and No-sale are separate alternatives, not one combined allocation.');
+  paragraph('Purchases are selected by the optimisation objective; technical BUY votes and a positive conditional price forecast are not prerequisites.');
+  paragraph(scope==='NETSD'?'The selected regime changes the historical sample used to optimise this netSD allocation. Diagnostic observations are excluded from fitting.':'The history/regime selector changes the historical evaluation context; it does not refit this model independently for each historical regime. Stochastic forecasts retain their fitted regime-conditioned scenario tree.');
+  const description=(scope==='NETSD'?regimes?.portfolios[history?.value]?.[policy]:baskets[scope]?.[policy])?.status;if(description)paragraph('Implementation: '+description);
+ }
+ document.addEventListener('change',e=>{if(e.target.matches('input[name="portfolio-scope"],input[name="sale-policy"],select[name="profile-history-regime"]'))queueMicrotask(render)});render();
+})();
