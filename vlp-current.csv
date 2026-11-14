@@ -18,3 +18,6 @@ stochA,Sale,107,163,56,859.6
 stoch2,No-sale,107,126,19,291.65
 stoch2,No initial sales,107,126,19,291.65
 stoch2,Sale,107,135,28,429.8
+stoch2A,No-sale,107,126,19,291.65
+stoch2A,No initial sales,107,225,118,1811.3
+stoch2A,Sale,107,156,49,752.15
