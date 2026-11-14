@@ -1,28 +1,29 @@
 {
-  "observed_at": "2026-11-13T15:27:38.087320+02:00",
+  "observed_at": "2026-11-14T11:12:01.974529+02:00",
   "scope": "Current delivery audit plus every previously catalogued requirement. Historical evidence is not silently upgraded to a current-run completion claim.",
   "all_requests_fully_verified": false,
   "current_financial_delivery_complete": false,
-  "reviewed_requirements": 43,
-  "pending_complete_models": [
-    "stoch2",
-    "stoch2A"
-  ],
+  "reviewed_requirements": 46,
+  "pending_complete_models": [],
   "live_delivery": {
-    "observed_at": "2026-11-13T15:16:48.760202+02:00",
+    "observed_at": "2026-11-14T11:07:53.838558+02:00",
     "main": {
-      "default_model": "STOCHASTIC",
+      "default_model": "STOCHASTIC2",
       "default_sale": "NO_SALE",
       "default_updates": "UPDATES",
       "default_regime": "R3",
-      "model_conditions": false,
-      "open_details": 87,
+      "model_conditions": true,
+      "open_details": 0,
       "quantities": {
-        "share-vlp1l": 87,
+        "share-vlp1l": 107,
         "fund-SE0014261764": 7.108
       },
-      "fresh_sensitivity_links": 70,
-      "stale_sensitivity_data": false
+      "fresh_sensitivity_links": 0,
+      "stale_sensitivity_data": false,
+      "embedded_sensitivity": {
+        "schema": 2,
+        "current_VLP": 107
+      }
     },
     "sensitivity": {
       "model": "STOCHASTIC2",
@@ -38,7 +39,7 @@
       "recourse_step": 10
     },
     "weekly_tree": {
-      "current_VLP": 87.0,
+      "current_VLP": 107.0,
       "decision_steps": [
         0,
         5,
@@ -63,27 +64,42 @@
     {
       "requirement": "Entire-tree sensitivity; other model trades fixed",
       "status": "Verified published completed-policy scope",
-      "detail": "160000 terminal scenarios; VLP107; all other model trades retained; 70 asset links. Stale sensitivity embedded in main: False. Other policies are added only when computed."
+      "detail": "160000 terminal scenarios; VLP107; all other model trades retained; 0 asset links. Stale sensitivity embedded in main: False. Other policies are added only when computed."
     },
     {
       "requirement": "Current holdings: VLP1L 107 and Technology C 7.108",
       "status": "Partial deployment",
-      "detail": "Live main values: {'share-vlp1l': 87, 'fund-SE0014261764': 7.108}. Fresh whole-tree sensitivity VLP holding: 107. Do not substitute the partial page for a completed main-table refresh."
+      "detail": "Live main values: {'share-vlp1l': 107, 'fund-SE0014261764': 7.108}. Fresh whole-tree sensitivity VLP holding: 107. Do not substitute the partial page for a completed main-table refresh."
     },
     {
       "requirement": "1.1 default Stochastic 2, model conditions and collapsed disclosures",
-      "status": "Implemented in source; publication pending",
-      "detail": "Live default: STOCHASTIC; model conditions present: False; open disclosures: 87."
+      "status": "Verified",
+      "detail": "Live default: STOCHASTIC2; model conditions present: True; open disclosures: 0."
     },
     {
       "requirement": "Published original and Stochastic 2 tree holdings",
-      "status": "Partially published",
-      "detail": "Original tree VLP: 107.0; weekly tree VLP: 87.0. Both must show 107 before final financial completion."
+      "status": "Verified",
+      "detail": "Original tree VLP: 107.0; weekly tree VLP: 107.0. Both must show 107 before final financial completion."
     },
     {
       "requirement": "Current financial model completion",
-      "status": "In progress",
-      "detail": "Pending complete-model markers: stoch2, stoch2A. No-sale Stochastic 2 already has a separately verified completed policy; this does not certify unfinished Sale policies."
+      "status": "Complete",
+      "detail": "Pending complete-model markers: none. No-sale Stochastic 2 already has a separately verified completed policy; this does not certify unfinished Sale policies."
+    },
+    {
+      "requirement": "Supplementary section 1.1 explanations collapsed by default",
+      "status": "Verified live",
+      "detail": "Purchase-limit help, asset coverage and regime methodology remain accessible in closed disclosures; model data and dynamic regime updates are preserved. Refresh notices are removed only when the work is actually complete."
+    },
+    {
+      "requirement": "Published financial payload reconciliation",
+      "status": "Verified for dated snapshot",
+      "detail": "Checked 2026-11-14T11:09:51.384787+02:00; all 20 baskets, both scenario-tree initial allocations, embedded and separate whole-tree sensitivity, first trades and snapshot provenance compared with computed files. This is consistency verification, not confirmation that the newer closing request has been recalculated."
+    },
+    {
+      "requirement": "Latest requested closing snapshot",
+      "status": "Pending newer financial refresh",
+      "detail": "Requested close 2026-11-13; this audited model run uses 2026-11-12. A completed older run, a new download or a layout publication is not completion of the newer financial request."
     },
     {
       "requirement": "Archived previous holding snapshot: VLP1L 87",
@@ -134,8 +150,8 @@
         {
           "path": "data/weekly_multistage/run_manifest.json",
           "present": true,
-          "current_sha256": "10b315cbaf27e910f39c1c58ba9a08a425bf486cb2851c05e82a2eae3a78011e",
-          "matches_historical_evidence": true
+          "current_sha256": "e6ea57a873c3bda71686ece1ebc4dd767b464a4b6afdf0d806cedbcc18300d22",
+          "matches_historical_evidence": false
         },
         {
           "path": "data/weekly_multistage/browser20_live.json",
@@ -174,8 +190,8 @@
         {
           "path": "data/stage_purchase_checks/latest.json",
           "present": true,
-          "current_sha256": "f28eab08686794d19d07f59713b5adf2d585780d59711791b8f4ba3bac484cd1",
-          "matches_historical_evidence": true
+          "current_sha256": "1f59956ea07217a0599cd9173843d444af109b50958c30df2aea68e4ee99a763",
+          "matches_historical_evidence": false
         }
       ]
     },
@@ -200,8 +216,8 @@
         {
           "path": "data/stage_purchase_checks/latest.json",
           "present": true,
-          "current_sha256": "f28eab08686794d19d07f59713b5adf2d585780d59711791b8f4ba3bac484cd1",
-          "matches_historical_evidence": true
+          "current_sha256": "1f59956ea07217a0599cd9173843d444af109b50958c30df2aea68e4ee99a763",
+          "matches_historical_evidence": false
         }
       ]
     },
@@ -226,8 +242,8 @@
         {
           "path": "data/weekly_multistage/run_manifest.json",
           "present": true,
-          "current_sha256": "10b315cbaf27e910f39c1c58ba9a08a425bf486cb2851c05e82a2eae3a78011e",
-          "matches_historical_evidence": true
+          "current_sha256": "e6ea57a873c3bda71686ece1ebc4dd767b464a4b6afdf0d806cedbcc18300d22",
+          "matches_historical_evidence": false
         }
       ]
     },
@@ -254,8 +270,8 @@
         {
           "path": "data/profile_summary_checks/live.json",
           "present": true,
-          "current_sha256": "d80df3195a4412a757e432e3b7759c035562a96118af6ab6b2a43c6e9e967e77",
-          "matches_historical_evidence": true
+          "current_sha256": "85696ca443fe1f7464c927b3194ada595a7bd33a2c9452830f83301b5f4608ee",
+          "matches_historical_evidence": false
         }
       ]
     },
@@ -282,7 +298,7 @@
         {
           "path": "data/report_width_checks/all_tables_live.json",
           "present": true,
-          "current_sha256": "3f559f446015bb3d5640f86a77c2d819c6385d5b2f4afd28285e485f1d941386",
+          "current_sha256": "ca85cbbfcb97aae8add3cb48ccc22ead8abc198a637226e1bf4b49b9fa505c71",
           "matches_historical_evidence": false
         }
       ]
@@ -324,8 +340,8 @@
         {
           "path": "data/long_history/portfolio_dominance_audit.json",
           "present": true,
-          "current_sha256": "118ad9fead0e0b7c1eac40aa5e682996718113e3bb29acd74b4d3a0b661259d5",
-          "matches_historical_evidence": true
+          "current_sha256": "2d2114bcb01867aefe78085ef4b03033012410f8132b708fc0279302234f0910",
+          "matches_historical_evidence": false
         }
       ]
     },
@@ -596,14 +612,14 @@
         {
           "path": "data/long_history/live_browser.json",
           "present": true,
-          "current_sha256": "08616c6bf7fd57c27ed5992c66640d46571fe914e469043684db27e2eb9682cb",
-          "matches_historical_evidence": true
+          "current_sha256": "eb8336fd9084c92c1b01cdfe6595b12ab7d0ad0db70251d00d76a4f8a10238c4",
+          "matches_historical_evidence": false
         },
         {
           "path": "R/check_long_history_report.py",
           "present": true,
-          "current_sha256": "18b04f8c2b125134a8f3c4c0105f6a02de19ed1a5807321daac3366a26e87c4e",
-          "matches_historical_evidence": true
+          "current_sha256": "30a6c85d0ca10051f4754a50b572df398fa73b71edc922d8392ccf69aba07091",
+          "matches_historical_evidence": false
         }
       ]
     },
@@ -616,13 +632,13 @@
         {
           "path": "data/regime_netsd/portfolio_payload.json",
           "present": true,
-          "current_sha256": "12a8c1166da2d07bd0828466186c347392a8fff430ce44ba330a8783f49ba51c",
-          "matches_historical_evidence": true
+          "current_sha256": "de8b3ff79f957a97b2a4e545346c2efed5e9ea3ef1bfd5c40e6b1a2ca1b85fd1",
+          "matches_historical_evidence": false
         },
         {
           "path": "R/current_portfolio_selector.py",
           "present": true,
-          "current_sha256": "f317552eeda72cbef499a7cd160976f56824ed373d3cfc6da290488354186bab",
+          "current_sha256": "43929d8f4a50e58577c90a14d979c3b1aee17c7be4e1985c5fb158aa03b225e9",
           "matches_historical_evidence": false
         }
       ]
@@ -636,8 +652,8 @@
         {
           "path": "data/profile_summary_checks/live.json",
           "present": true,
-          "current_sha256": "d80df3195a4412a757e432e3b7759c035562a96118af6ab6b2a43c6e9e967e77",
-          "matches_historical_evidence": true
+          "current_sha256": "85696ca443fe1f7464c927b3194ada595a7bd33a2c9452830f83301b5f4608ee",
+          "matches_historical_evidence": false
         },
         {
           "path": "data/profile_update_filter_checks/live.json",
@@ -662,7 +678,7 @@
         {
           "path": "public_site/refresh-status.json",
           "present": true,
-          "current_sha256": "45000b6e5ad196f46f5e844dede7c2cde35752740d98ac497c0af462c61c6bf4",
+          "current_sha256": "d45371dca6c30392a3f80097916555a472941bd5277cfa2bbf6d2978186324b8",
           "matches_historical_evidence": false
         }
       ]
@@ -716,8 +732,8 @@
         {
           "path": "data/stock_attractiveness/scores.json",
           "present": true,
-          "current_sha256": "4d871048d073b12148a26b48bdaa3415b0ed4aad90905808965b10822b0bba12",
-          "matches_historical_evidence": true
+          "current_sha256": "1ab9a1be72f57e7d01bc825ada51a98710a9fa0438f97b23deebe2929748d4b6",
+          "matches_historical_evidence": false
         },
         {
           "path": "data/stock_attractiveness/validation_live.json",
@@ -734,5 +750,9 @@
     "The optional US trial is initial-decision only; no completed all-stage US experiment is claimed.",
     "Independent historical regime optimisation is implemented for NETSD; other model allocations are evaluated by regime.",
     "The crash component remains unresolved. Historical gaps in full-search energy cannot be reconstructed."
-  ]
+  ],
+  "this_run_financial_delivery_complete": false,
+  "latest_requested_financial_delivery_complete": false,
+  "model_snapshot_end": "2026-11-12",
+  "latest_requested_end": "2026-11-13"
 }
