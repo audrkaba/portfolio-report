@@ -1,0 +1,27 @@
+{
+  "confirmed_at": "2026-11-15T09:08:42.663378+02:00",
+  "units": {
+    "TKM1T": 288,
+    "SAF1R": 100,
+    "APG1L": 200,
+    "KNE1L": 928,
+    "VLP1L": 107,
+    "RSU1L": 150,
+    "MRK1T": 26,
+    "GRG1L": 543,
+    "HAE1T": 100,
+    "TAL1T": 700,
+    "ROE1L": 516,
+    "TSM1T": 330,
+    "SE0014261764": 7.108,
+    "US:PFE": 1.719526
+  },
+  "quantity_precision_overrides": {
+    "US:PFE": 6
+  },
+  "pending_model_updates": [
+    "US:PFE"
+  ],
+  "public_disclosure_authorized": true,
+  "scope": "User-confirmed actual holdings. PFE is not yet included in the displayed financial model results."
+}
