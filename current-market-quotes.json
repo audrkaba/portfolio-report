@@ -812,5 +812,5 @@
       "bollinger_upper": 2.9084380808516737
     }
   },
-  "scope": "Verified latest quotes for Current holdings monitoring only. Existing model targets, forecasts and their analytics retain their earlier snapshots; they have not been recalculated. US intraday prices are excluded."
+  "scope": "Latest completed-session EUR observations, also used by the corrected financial models. Baltic2026-11-16; published fund NAV2026-11-13; completed US close2026-11-13. Asset-specific dates retained; no US intraday quote."
 }

@@ -1,5 +1,5 @@
 {
-  "computed_at_UTC": "2026-11-16T17:57:08.271998+00:00",
+  "computed_at_UTC": "2026-11-16T19:39:14.795802+00:00",
   "holdings": {
     "TKM1T": 288,
     "SAF1R": 100,
@@ -76,14 +76,14 @@
   },
   "invested_EUR": 11222.509933451882,
   "cash_with_EUR15000_account": 3777.490066548118,
-  "training_observations": 1130,
+  "training_observations": 1131,
   "excluded_diagnostic_observations": 126,
   "unlabelled_training_observations": 42,
   "contexts": {
     "FULL": {
-      "observations": 1130,
+      "observations": 1131,
       "first_return_date": "2021-11-29",
-      "last_return_date": "2026-05-19",
+      "last_return_date": "2026-05-20",
       "network_nodes": 72,
       "D": 115,
       "assets": {
@@ -217,9 +217,9 @@
         },
         "CTS1L": {
           "OUT": 0,
-          "IN": 5,
+          "IN": 6,
           "D": 115,
-          "netSD": -0.043478260869565216,
+          "netSD": -0.05217391304347826,
           "OUT_by_order": [
             0,
             0,
@@ -228,7 +228,7 @@
           "IN_by_order": [
             0,
             1,
-            4
+            5
           ]
         },
         "DGR1R": {
@@ -265,9 +265,9 @@
         },
         "EWA1L": {
           "OUT": 20,
-          "IN": 44,
+          "IN": 43,
           "D": 115,
-          "netSD": -0.20869565217391303,
+          "netSD": -0.2,
           "OUT_by_order": [
             0,
             10,
@@ -275,18 +275,18 @@
           ],
           "IN_by_order": [
             0,
-            19,
+            18,
             25
           ]
         },
         "GRG1L": {
-          "OUT": 37,
+          "OUT": 36,
           "IN": 12,
           "D": 115,
-          "netSD": 0.21739130434782608,
+          "netSD": 0.20869565217391303,
           "OUT_by_order": [
             0,
-            18,
+            17,
             19
           ],
           "IN_by_order": [
@@ -296,13 +296,13 @@
           ]
         },
         "HAE1T": {
-          "OUT": 22,
+          "OUT": 21,
           "IN": 31,
           "D": 115,
-          "netSD": -0.0782608695652174,
+          "netSD": -0.08695652173913043,
           "OUT_by_order": [
             0,
-            11,
+            10,
             11
           ],
           "IN_by_order": [
@@ -361,9 +361,9 @@
         },
         "INL1L": {
           "OUT": 2,
-          "IN": 38,
+          "IN": 40,
           "D": 115,
-          "netSD": -0.3130434782608696,
+          "netSD": -0.33043478260869563,
           "OUT_by_order": [
             0,
             1,
@@ -371,8 +371,8 @@
           ],
           "IN_by_order": [
             0,
-            19,
-            19
+            20,
+            20
           ]
         },
         "INR1L": {
@@ -392,13 +392,13 @@
           ]
         },
         "IVL1L": {
-          "OUT": 38,
+          "OUT": 37,
           "IN": 1,
           "D": 115,
-          "netSD": 0.3217391304347826,
+          "netSD": 0.3130434782608696,
           "OUT_by_order": [
             0,
-            19,
+            18,
             19
           ],
           "IN_by_order": [
@@ -408,14 +408,14 @@
           ]
         },
         "KNE1L": {
-          "OUT": 50,
+          "OUT": 51,
           "IN": 6,
           "D": 115,
-          "netSD": 0.3826086956521739,
+          "netSD": 0.391304347826087,
           "OUT_by_order": [
             0,
             23,
-            27
+            28
           ],
           "IN_by_order": [
             0,
@@ -440,14 +440,14 @@
           ]
         },
         "LGD1L": {
-          "OUT": 34,
+          "OUT": 36,
           "IN": 18,
           "D": 115,
-          "netSD": 0.1391304347826087,
+          "netSD": 0.1565217391304348,
           "OUT_by_order": [
             0,
-            17,
-            17
+            18,
+            18
           ],
           "IN_by_order": [
             0,
@@ -617,9 +617,9 @@
         },
         "PZV1L": {
           "OUT": 26,
-          "IN": 34,
+          "IN": 33,
           "D": 115,
-          "netSD": -0.06956521739130435,
+          "netSD": -0.06086956521739131,
           "OUT_by_order": [
             0,
             13,
@@ -627,7 +627,7 @@
           ],
           "IN_by_order": [
             0,
-            16,
+            15,
             18
           ]
         },
@@ -649,9 +649,9 @@
         },
         "ROE1L": {
           "OUT": 31,
-          "IN": 18,
+          "IN": 20,
           "D": 115,
-          "netSD": 0.11304347826086956,
+          "netSD": 0.09565217391304348,
           "OUT_by_order": [
             0,
             15,
@@ -659,8 +659,8 @@
           ],
           "IN_by_order": [
             0,
-            6,
-            12
+            7,
+            13
           ]
         },
         "RSU1L": {
@@ -729,9 +729,9 @@
         },
         "SFG1T": {
           "OUT": 3,
-          "IN": 92,
+          "IN": 91,
           "D": 115,
-          "netSD": -0.7739130434782608,
+          "netSD": -0.7652173913043478,
           "OUT_by_order": [
             0,
             1,
@@ -739,7 +739,7 @@
           ],
           "IN_by_order": [
             0,
-            45,
+            44,
             47
           ]
         },
@@ -937,9 +937,9 @@
         },
         "SE0013876927": {
           "OUT": 33,
-          "IN": 15,
+          "IN": 16,
           "D": 115,
-          "netSD": 0.1565217391304348,
+          "netSD": 0.14782608695652175,
           "OUT_by_order": [
             0,
             16,
@@ -948,7 +948,7 @@
           "IN_by_order": [
             0,
             6,
-            9
+            10
           ]
         },
         "SE0013876950": {
@@ -969,9 +969,9 @@
         },
         "SE0013876968": {
           "OUT": 46,
-          "IN": 1,
+          "IN": 3,
           "D": 115,
-          "netSD": 0.391304347826087,
+          "netSD": 0.3739130434782609,
           "OUT_by_order": [
             0,
             21,
@@ -979,8 +979,8 @@
           ],
           "IN_by_order": [
             0,
-            0,
-            1
+            1,
+            2
           ]
         },
         "SE0014261756": {
@@ -1000,14 +1000,14 @@
           ]
         },
         "SE0014261764": {
-          "OUT": 35,
+          "OUT": 36,
           "IN": 0,
           "D": 115,
-          "netSD": 0.30434782608695654,
+          "netSD": 0.3130434782608696,
           "OUT_by_order": [
             0,
             16,
-            19
+            20
           ],
           "IN_by_order": [
             0,
@@ -1033,9 +1033,9 @@
         },
         "SE0014261889": {
           "OUT": 67,
-          "IN": 1,
+          "IN": 0,
           "D": 115,
-          "netSD": 0.5739130434782609,
+          "netSD": 0.5826086956521739,
           "OUT_by_order": [
             0,
             33,
@@ -1044,7 +1044,7 @@
           "IN_by_order": [
             0,
             0,
-            1
+            0
           ]
         },
         "SE0014261897": {
@@ -1080,14 +1080,14 @@
           ]
         },
         "SE0014263281": {
-          "OUT": 49,
+          "OUT": 51,
           "IN": 8,
           "D": 115,
-          "netSD": 0.3565217391304348,
+          "netSD": 0.3739130434782609,
           "OUT_by_order": [
             0,
-            23,
-            26
+            24,
+            27
           ],
           "IN_by_order": [
             0,
@@ -1160,14 +1160,14 @@
           ]
         },
         "SE0015192349": {
-          "OUT": 76,
+          "OUT": 78,
           "IN": 0,
           "D": 115,
-          "netSD": 0.6608695652173913,
+          "netSD": 0.6782608695652174,
           "OUT_by_order": [
             0,
-            38,
-            38
+            39,
+            39
           ],
           "IN_by_order": [
             0,
@@ -1224,14 +1224,14 @@
           ]
         },
         "Current": {
-          "OUT": 84,
+          "OUT": 83,
           "IN": 0,
           "D": 115,
-          "netSD": 0.7304347826086957,
+          "netSD": 0.7217391304347827,
           "OUT_by_order": [
             0,
             41,
-            43
+            42
           ],
           "IN_by_order": [
             0,
@@ -1244,9 +1244,9 @@
       "augmented_denominator_check": 115
     },
     "R1": {
-      "observations": 815,
+      "observations": 816,
       "first_return_date": "2021-12-09",
-      "last_return_date": "2026-05-19",
+      "last_return_date": "2026-05-20",
       "network_nodes": 72,
       "D": 122,
       "assets": {
@@ -1459,14 +1459,14 @@
           ]
         },
         "HAE1T": {
-          "OUT": 31,
+          "OUT": 27,
           "IN": 32,
           "D": 122,
-          "netSD": -0.00819672131147541,
+          "netSD": -0.040983606557377046,
           "OUT_by_order": [
             0,
-            15,
-            16
+            13,
+            14
           ],
           "IN_by_order": [
             0,
@@ -1572,9 +1572,9 @@
         },
         "KNE1L": {
           "OUT": 40,
-          "IN": 18,
+          "IN": 20,
           "D": 122,
-          "netSD": 0.18032786885245902,
+          "netSD": 0.16393442622950818,
           "OUT_by_order": [
             0,
             20,
@@ -1582,15 +1582,15 @@
           ],
           "IN_by_order": [
             0,
-            8,
-            10
+            9,
+            11
           ]
         },
         "KNR1L": {
           "OUT": 9,
-          "IN": 42,
+          "IN": 44,
           "D": 122,
-          "netSD": -0.27049180327868855,
+          "netSD": -0.28688524590163933,
           "OUT_by_order": [
             0,
             4,
@@ -1598,8 +1598,8 @@
           ],
           "IN_by_order": [
             0,
-            21,
-            21
+            22,
+            22
           ]
         },
         "LGD1L": {
@@ -1636,9 +1636,9 @@
         },
         "LINDA": {
           "OUT": 2,
-          "IN": 93,
+          "IN": 91,
           "D": 122,
-          "netSD": -0.7459016393442623,
+          "netSD": -0.7295081967213115,
           "OUT_by_order": [
             0,
             0,
@@ -1646,8 +1646,8 @@
           ],
           "IN_by_order": [
             0,
-            44,
-            49
+            43,
+            48
           ]
         },
         "MDARA": {
@@ -1668,9 +1668,9 @@
         },
         "MODE": {
           "OUT": 13,
-          "IN": 88,
+          "IN": 86,
           "D": 122,
-          "netSD": -0.6147540983606558,
+          "netSD": -0.5983606557377049,
           "OUT_by_order": [
             0,
             5,
@@ -1678,8 +1678,8 @@
           ],
           "IN_by_order": [
             0,
-            44,
-            44
+            43,
+            43
           ]
         },
         "MRK1T": {
@@ -1716,9 +1716,9 @@
         },
         "NEOFI": {
           "OUT": 3,
-          "IN": 17,
+          "IN": 19,
           "D": 122,
-          "netSD": -0.11475409836065574,
+          "netSD": -0.13114754098360656,
           "OUT_by_order": [
             0,
             1,
@@ -1726,8 +1726,8 @@
           ],
           "IN_by_order": [
             0,
-            8,
-            9
+            9,
+            10
           ]
         },
         "NTU1L": {
@@ -1811,14 +1811,14 @@
           ]
         },
         "ROE1L": {
-          "OUT": 50,
+          "OUT": 49,
           "IN": 13,
           "D": 122,
-          "netSD": 0.30327868852459017,
+          "netSD": 0.29508196721311475,
           "OUT_by_order": [
             0,
             24,
-            26
+            25
           ],
           "IN_by_order": [
             0,
@@ -1876,9 +1876,9 @@
         },
         "SCM1R": {
           "OUT": 0,
-          "IN": 65,
+          "IN": 61,
           "D": 122,
-          "netSD": -0.5327868852459017,
+          "netSD": -0.5,
           "OUT_by_order": [
             0,
             0,
@@ -1886,8 +1886,8 @@
           ],
           "IN_by_order": [
             0,
-            32,
-            33
+            30,
+            31
           ]
         },
         "SFG1T": {
@@ -1924,9 +1924,9 @@
         },
         "TAL1T": {
           "OUT": 36,
-          "IN": 16,
+          "IN": 15,
           "D": 122,
-          "netSD": 0.16393442622950818,
+          "netSD": 0.1721311475409836,
           "OUT_by_order": [
             0,
             18,
@@ -1935,7 +1935,7 @@
           "IN_by_order": [
             0,
             7,
-            9
+            8
           ]
         },
         "TEL1L": {
@@ -2020,9 +2020,9 @@
         },
         "UTR1L": {
           "OUT": 0,
-          "IN": 66,
+          "IN": 68,
           "D": 122,
-          "netSD": -0.5409836065573771,
+          "netSD": -0.5573770491803278,
           "OUT_by_order": [
             0,
             0,
@@ -2030,15 +2030,15 @@
           ],
           "IN_by_order": [
             0,
-            33,
-            33
+            34,
+            34
           ]
         },
         "VBL1L": {
           "OUT": 15,
-          "IN": 26,
+          "IN": 28,
           "D": 122,
-          "netSD": -0.09016393442622951,
+          "netSD": -0.10655737704918032,
           "OUT_by_order": [
             0,
             7,
@@ -2046,8 +2046,8 @@
           ],
           "IN_by_order": [
             0,
-            13,
-            13
+            14,
+            14
           ]
         },
         "VIRSI": {
@@ -2084,9 +2084,9 @@
         },
         "ZMP1L": {
           "OUT": 41,
-          "IN": 10,
+          "IN": 12,
           "D": 122,
-          "netSD": 0.2540983606557377,
+          "netSD": 0.23770491803278687,
           "OUT_by_order": [
             0,
             19,
@@ -2094,8 +2094,8 @@
           ],
           "IN_by_order": [
             0,
-            5,
-            5
+            6,
+            6
           ]
         },
         "SE0013876927": {
@@ -2116,9 +2116,9 @@
         },
         "SE0013876950": {
           "OUT": 69,
-          "IN": 10,
+          "IN": 12,
           "D": 122,
-          "netSD": 0.48360655737704916,
+          "netSD": 0.4672131147540984,
           "OUT_by_order": [
             0,
             33,
@@ -2126,8 +2126,8 @@
           ],
           "IN_by_order": [
             0,
-            5,
-            5
+            6,
+            6
           ]
         },
         "SE0013876968": {
@@ -2195,14 +2195,14 @@
           ]
         },
         "SE0014261889": {
-          "OUT": 85,
+          "OUT": 89,
           "IN": 4,
           "D": 122,
-          "netSD": 0.6639344262295082,
+          "netSD": 0.6967213114754098,
           "OUT_by_order": [
             0,
-            40,
-            45
+            42,
+            47
           ],
           "IN_by_order": [
             0,
@@ -2211,14 +2211,14 @@
           ]
         },
         "SE0014261897": {
-          "OUT": 43,
+          "OUT": 45,
           "IN": 16,
           "D": 122,
-          "netSD": 0.22131147540983606,
+          "netSD": 0.23770491803278687,
           "OUT_by_order": [
             0,
-            21,
-            22
+            22,
+            23
           ],
           "IN_by_order": [
             0,
@@ -2227,14 +2227,14 @@
           ]
         },
         "SE0014263273": {
-          "OUT": 72,
+          "OUT": 70,
           "IN": 0,
           "D": 122,
-          "netSD": 0.5901639344262295,
+          "netSD": 0.5737704918032787,
           "OUT_by_order": [
             0,
-            36,
-            36
+            35,
+            35
           ],
           "IN_by_order": [
             0,
@@ -2243,14 +2243,14 @@
           ]
         },
         "SE0014263281": {
-          "OUT": 94,
+          "OUT": 96,
           "IN": 2,
           "D": 122,
-          "netSD": 0.7540983606557377,
+          "netSD": 0.7704918032786885,
           "OUT_by_order": [
             0,
-            45,
-            49
+            46,
+            50
           ],
           "IN_by_order": [
             0,
@@ -2259,14 +2259,14 @@
           ]
         },
         "SE0014263299": {
-          "OUT": 82,
+          "OUT": 86,
           "IN": 0,
           "D": 122,
-          "netSD": 0.6721311475409836,
+          "netSD": 0.7049180327868853,
           "OUT_by_order": [
             0,
-            41,
-            41
+            43,
+            43
           ],
           "IN_by_order": [
             0,
@@ -2275,14 +2275,14 @@
           ]
         },
         "SE0015192315": {
-          "OUT": 60,
+          "OUT": 62,
           "IN": 6,
           "D": 122,
-          "netSD": 0.4426229508196721,
+          "netSD": 0.45901639344262296,
           "OUT_by_order": [
             0,
-            28,
-            32
+            29,
+            33
           ],
           "IN_by_order": [
             0,
@@ -2339,14 +2339,14 @@
           ]
         },
         "SE0015948609": {
-          "OUT": 72,
+          "OUT": 70,
           "IN": 0,
           "D": 122,
-          "netSD": 0.5901639344262295,
+          "netSD": 0.5737704918032787,
           "OUT_by_order": [
             0,
-            36,
-            36
+            35,
+            35
           ],
           "IN_by_order": [
             0,
@@ -5897,10 +5897,10 @@
     }
   },
   "protected_input_sha256": {
-    "data\\current_holdings.json": "892d6bbb12f53abfb725426d392a293eef721c49633215224d7dd2bafc0ba0af",
-    "data\\long_history\\asset_returns.csv": "b180d3f4f910cd1332070174cdc6843cbd8f51f0e3f0de433042a16fc31e976d",
-    "data\\full_universe\\share_prices.csv": "f1919cc6fb69124c3eff7751a2cab6a8ef11d77a937e0ec03af9264af8a98e8c",
-    "data\\full_universe\\fund_nav_eur.csv": "563a1eb54f9199770ef08b58ddef580597fbd4845d70a00dcae465c44d309b9c"
+    "data\\current_holdings.json": "4d20d84b119b7a0f7b7ffee9431ac11f25409d5ca07cbedb74238eec032b3893",
+    "data\\long_history\\asset_returns.csv": "c7e97dffb0f5779e6a3399a4427feb06ad9865dccf9166a83f0c5bd9120dbba3",
+    "data\\full_universe\\share_prices.csv": "7855c43d520c8c28e163fbdfcbfc09b007bab046edf6e67d9f93d4e1c5c637d8",
+    "data\\full_universe\\fund_nav_eur.csv": "eccfe6f47096709ac0ed57a21511003638b3529d36fe90b5d6c88902f2ea5d1e"
   },
   "method": "Historical price-return stochastic dominance of orders 1-3. Network: all 71 eligible asset nodes, including PFE once, plus Current once. Current uses the 14 approved holdings and latest verified EUR valuation weights; invested-holdings returns exclude cash. D=max(OUT+IN) is recomputed on each complete network including this Current portfolio, with all incident reference degrees updated. No fixed archived D and no duplicate PFE candidate. FULL uses the existing training sample; R1-R4 use exact-date retrospective labels without filling. The 126 diagnostic observations are excluded. This is a historical evaluation, not terminal scenario-tree netSD, a new forecast, or reoptimisation of trading policies."
 }

@@ -1,9 +1,9 @@
 {
-  "revision": "delivery-status-20261116",
-  "prepared_at": "2026-11-16T20:10:50.874356+02:00",
-  "complete": false,
-  "state": "incomplete_not_running",
-  "notice": "Confirmed holdings: VLP1L 117; PFE 5.491688 units. Current holdings and historical netSD updated 2026-11-16. Trading-model recalculation is incomplete; model prices remain share closes 2026-11-13 / fund NAV 2026-11-12.",
+  "state": "financial_integrated_pending_live_verification",
+  "main_report_complete": false,
+  "financial_calculations_complete": true,
+  "technical_studies_complete": false,
+  "model_input_hash": "53d75ac613725957ac737cfe4b2d3f1fe52b488dc129da031f73ce40ece5d2ac",
   "holdings": {
     "TKM1T": 288,
     "SAF1R": 100,
@@ -18,34 +18,19 @@
     "ROE1L": 516,
     "TSM1T": 330,
     "SE0014261764": 7.108,
-    "US:PFE": 5.491688
+    "US_PFE": 5.491688
   },
-  "main_report_complete": false,
-  "parts": [
-    {
-      "label": "Confirmed Current holdings and historical netSD, including PFE",
-      "status": "published",
-      "url": "index.html#analytics-1-1"
-    },
-    {
-      "label": "Trading policies recalculated for117 VLP and5.491688 PFE with corrected objective",
-      "status": "not_completed",
-      "url": null
-    },
-    {
-      "label": "Previous Stochastic / classical-model snapshots; old model inputs",
-      "status": "archived_snapshot",
-      "url": "vlp-current.html"
-    },
-    {
-      "label": "Previous Stochastic2 No-sale snapshot; old model inputs",
-      "status": "archived_snapshot",
-      "url": "stochastic2-no-sale-current.html"
-    },
-    {
-      "label": "A variants recalculated with latest holdings and corrected objective",
-      "status": "not_completed",
-      "url": null
-    }
-  ]
+  "market": {
+    "as_of": "2026-11-16T20:18:02.042171+02:00",
+    "requested_end": "2026-11-16",
+    "assets": 92,
+    "new_observations": 89,
+    "share_last": "2026-11-16",
+    "fund_last": "2026-11-13",
+    "historical_repairs_preserved": true,
+    "intraday": false,
+    "price_status": "Latest available official observations; source dates retained",
+    "updated_current_session": 0
+  },
+  "updated_at": "2026-11-16T19:38:40.590706+00:00"
 }

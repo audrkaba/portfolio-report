@@ -37,7 +37,7 @@
    }
    const context=historical?.contexts[selectedHistory()],score=context?.assets[asset.replace('US:','US_')];
    if(score){f.set('individual netsd',score.netSD.toFixed(6));f.set('out',score.OUT);f.set('in',score.IN)}
-   note.textContent='Confirmed holding: '+units+' units. '+(quote?'Latest verified EUR price '+quote.price.toFixed(4)+' dated '+quote.date+'. ':'')+'Current monitoring proposes no trades. '+(score?'Historical netSD: '+selectedHistory()+', '+context.observations+' training observations ('+context.first_return_date+' to '+context.last_return_date+'); D='+score.D+' on the complete 72-node network including PFE and confirmed Current. Excludes cash and the 126 diagnostic observations. Other analytics retain their stated earlier sample.':'Historical analytics pending.');
+   note.textContent='Confirmed holding: '+units+' units. '+(quote?'Latest verified EUR price '+quote.price.toFixed(4)+' dated '+quote.date+'. ':'')+'Current monitoring proposes no trades. '+(score?'Historical netSD: '+selectedHistory()+', '+context.observations+' training observations ('+context.first_return_date+' to '+context.last_return_date+'); D='+score.D+' on the complete 72-node network including PFE and confirmed Current. Excludes cash and the 126 diagnostic observations. The native historical metrics use the refreshed common training/diagnostic split.':'Historical analytics pending.');
    if(profile.dataset.currentPending==='true'){
     const text=profile.querySelector(':scope > p:not(.confirmed-holding-scope)');if(text)text.textContent='Confirmed PFE holding, latest completed-session quote and regime-dependent historical netSD are shown. Reoptimised trading allocations and full scenario-tree evaluation remain pending.';
     let p=profile.querySelector('.pfe-portfolio-impact');if(!p){p=document.createElement('p');p.className='pfe-portfolio-impact';table.after(p)}
@@ -46,9 +46,10 @@
    }
   }else{
    const old=snapshot?.current_units;
-   note.textContent='Confirmed holding: '+units+' units. '+(old!=null?'Recorded model input: '+old+' units. ':'')+'Target and analytics are an earlier model snapshot, not recalculated current orders.';
+   const validated=baskets[scope]?.[policy]?.validated===true;
+   note.textContent='Confirmed holding: '+units+' units. '+(old!=null?'Model input: '+old+' units. ':'')+(validated?'Recalculated allocation using the latest completed-session quotes.':'Target and analytics are an earlier model snapshot, not recalculated current orders.');
    if(old!=null&&Math.abs(old-units)>1e-9)f.set('change','Pending recalculation');
-   const summary=profile.querySelector(':scope > summary');if(summary){summary.textContent=summary.textContent.replace('current action:','recorded action:');summary.textContent=summary.textContent.replace(/ \| held now:.*$/,'');summary.textContent+=' | held now: '+units+' units'}
+   const summary=profile.querySelector(':scope > summary');if(summary){summary.textContent=summary.textContent.replace(validated?'recorded action:':'current action:',validated?'current action:':'recorded action:');summary.textContent=summary.textContent.replace(/ \| held now:.*$/,'');summary.textContent+=' | held now: '+units+' units'}
   }
   return result;
  };
