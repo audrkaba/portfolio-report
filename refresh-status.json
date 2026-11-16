@@ -1,9 +1,9 @@
 {
-  "run": "20261113_zzclose_vlp107",
-  "revision": "VLP107-financial-complete",
-  "prepared_at": "2026-11-16T08:59:47.920221+02:00",
-  "complete": true,
-  "notice": null,
+  "run": "20261115_pfe_close13",
+  "revision": "c656ae00b7e1",
+  "prepared_at": "2026-11-16T14:39:57.445843+02:00",
+  "complete": false,
+  "notice": "VLP holdings were corrected to 107. The previous 87-unit calculation was superseded. Only the linked verified portfolios use the new holdings and 2026-11-13 prices.",
   "holdings": {
     "VLP1L": 107,
     "SE0014261764": 7.108
@@ -16,23 +16,18 @@
     },
     {
       "label": "Stochastic 2 with VLP107",
-      "status": "published",
-      "url": "vlp-current.html"
+      "status": "pending",
+      "url": null
     },
     {
-      "label": "A variants without both purchase-value caps: stochA, stoch2A published",
-      "status": "published",
-      "url": "vlp-current.html"
+      "label": "A variants without both purchase-value caps: pending",
+      "status": "pending",
+      "url": null
     },
     {
       "label": "Time, energy and performance studies",
       "status": "full-command counters being collected; controlled studies follow financial verification",
       "url": null
     }
-  ],
-  "completion_scope": "Only the model snapshot named below; not a newer requested refresh",
-  "model_snapshot_end": "2026-11-13",
-  "latest_requested_end": "2026-11-13",
-  "latest_requested_financial_complete": false,
-  "main_report_complete": true
+  ]
 }
