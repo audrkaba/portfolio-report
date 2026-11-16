@@ -1,0 +1,50 @@
+{
+  "completed": true,
+  "holdings": {
+    "VLP1L": 117,
+    "US_PFE": 5.491688
+  },
+  "market": {
+    "Baltic_close": "2026-11-16",
+    "fund_NAV": "2026-11-13",
+    "PFE_completed_US_close": "2026-11-13"
+  },
+  "model_input_hash": "53d75ac613725957ac737cfe4b2d3f1fe52b488dc129da031f73ce40ece5d2ac",
+  "stochastic_policies_validated": 12,
+  "displayed_model_policy_allocations": 20,
+  "whole_tree_asset_policy_cases": 568,
+  "responsive_audit": {
+    "pages": 340,
+    "tables": 1755,
+    "widths": [
+      1920,
+      1440,
+      1024,
+      768,
+      600,
+      390,
+      320
+    ]
+  },
+  "full_publication_files_verified": 674,
+  "prior_complete_live_verification_UTC": "2026-11-16T20:13:10.074660+00:00",
+  "closed_cycle_minutes": 116.6338014,
+  "timing_origin": "First captured bootstrap; user-request timestamp unavailable. Later accounting-summary publication recorded separately.",
+  "energy": {
+    "started_at": "2026-11-16T20:19:58.316635+02:00",
+    "ended_at": "2026-11-16T22:13:11.051671+02:00",
+    "seconds": 6792.553746900012,
+    "observed_component_Wh": 181.0256274361111,
+    "CPU_package_Wh": 121.87078132500001,
+    "GPU_board_Wh": 59.15484611111111,
+    "uncovered_before_monitor_seconds": 206.270059,
+    "full_cycle_energy_measured": false,
+    "measured_continuous_counter_interval": true,
+    "counter_source_measurement_ids": [
+      "5ae8e7dfbf4446dcaa81ebaa988f9435",
+      "800cc634e01040c2b2a616b0171e33f8"
+    ],
+    "same_boot_verified": true,
+    "scope": "Gross host CPU-package and GPU-board cumulative counter difference across one verified boot. Intermediate waiting and gaps inside these monotonic endpoints are included by the hardware counters; no power interpolation or sum of overlapping jobs. Bootstrap/download interval before the first counter boundary remains unmeasured. Not wall-socket electricity. Later accounting-summary publication is a separately recorded bookkeeping operation; raw counters remain private."
+  }
+}
