@@ -1,0 +1,1903 @@
+{
+  "created_UTC": "2026-11-16T19:54:12.316918+00:00",
+  "scope": "Identical controlled terminal-wealth arithmetic for1024 candidate portfolios \u00d71024 sampled native terminal price vectors \u00d771 assets. Not optimisation, full160000-leaf scoring, a feasibility-tested policy or a forecast sample used in models. Transfers of fixed inputs and CUDA/CPU startup excluded from steady-state rows; output transfer included. CPU settings are threads, GPU settings are batch sizes, not processes. Production process cap remains48. Trials use same double-precision values; every replay is checked against CPU reference.",
+  "energy_scope": "Gross CPU package plus GPU board energy, including background and idle; no wall socket measurement. Modelled wall multiplier1.7 and emissions200gCO2e/kWh are sensitivity assumptions, not measured electricity or local grid data. No missing counters replaced with zero.",
+  "rows": [
+    {
+      "backend": "CPU",
+      "setting": 1,
+      "setting_unit": "CPU threads; BLAS one thread per task",
+      "time_seconds": {
+        "n": 3,
+        "mean": 0.010837082828264543,
+        "minimum": 0.010750196969390592,
+        "maximum": 0.010883993939690603,
+        "std": 7.532524570492547e-05
+      },
+      "component_Wh": {
+        "n": 3,
+        "mean": 0.00035971684905274976,
+        "minimum": 0.00031972979797979795,
+        "maximum": 0.0003941825757575758,
+        "std": 3.7532223445864986e-05
+      },
+      "samples": [
+        {
+          "repeat": 0,
+          "runs": 33,
+          "seconds_per_replay": 0.010877057575712432,
+          "component_Wh_per_replay": 0.0003941825757575758,
+          "seconds": 0.35894289999851026,
+          "cpu_J": 20.60289,
+          "gpu_J": 26.226,
+          "cpu_W": 57.398795184653345,
+          "gpu_W": 73.06454592111683
+        },
+        {
+          "repeat": 1,
+          "runs": 33,
+          "seconds_per_replay": 0.010750196969390592,
+          "component_Wh_per_replay": 0.00036523817342087547,
+          "seconds": 0.35475649998988956,
+          "cpu_J": 19.1302950024,
+          "gpu_J": 24.26,
+          "cpu_W": 53.925143028937335,
+          "gpu_W": 68.38493445699065
+        },
+        {
+          "repeat": 2,
+          "runs": 33,
+          "seconds_per_replay": 0.010883993939690603,
+          "component_Wh_per_replay": 0.00031972979797979795,
+          "seconds": 0.3591718000097899,
+          "cpu_J": 18.5229,
+          "gpu_J": 19.461,
+          "cpu_W": 51.571142276468045,
+          "gpu_W": 54.18298429740184
+        }
+      ],
+      "speedup_vs_CPU1": 1.0,
+      "modelled_wall_Wh": 0.0006115186433896746,
+      "modelled_CO2e_g": 0.00012230372867793492
+    },
+    {
+      "backend": "CPU",
+      "setting": 2,
+      "setting_unit": "CPU threads; BLAS one thread per task",
+      "time_seconds": {
+        "n": 3,
+        "mean": 0.006856505233635499,
+        "minimum": 0.006576777777809184,
+        "maximum": 0.007089635999873281,
+        "std": 0.0002595849140361285
+      },
+      "component_Wh": {
+        "n": 3,
+        "mean": 0.00024210281743515245,
+        "minimum": 0.0002277816944377778,
+        "maximum": 0.0002500980452736625,
+        "std": 1.2430510481403535e-05
+      },
+      "samples": [
+        {
+          "repeat": 0,
+          "runs": 50,
+          "seconds_per_replay": 0.007089635999873281,
+          "component_Wh_per_replay": 0.0002277816944377778,
+          "seconds": 0.354481799993664,
+          "cpu_J": 21.6097049988,
+          "gpu_J": 19.391,
+          "cpu_W": 60.96139491276069,
+          "gpu_W": 54.702385285638336
+        },
+        {
+          "repeat": 1,
+          "runs": 52,
+          "seconds_per_replay": 0.006903101923224033,
+          "component_Wh_per_replay": 0.0002484287125940171,
+          "seconds": 0.3589613000076497,
+          "cpu_J": 21.4358549976,
+          "gpu_J": 25.07,
+          "cpu_W": 59.716339887177774,
+          "gpu_W": 69.84039783527011
+        },
+        {
+          "repeat": 2,
+          "runs": 54,
+          "seconds_per_replay": 0.006576777777809184,
+          "component_Wh_per_replay": 0.0002500980452736625,
+          "seconds": 0.35514600000169594,
+          "cpu_J": 22.4370600012,
+          "gpu_J": 26.182,
+          "cpu_W": 63.17700326370804,
+          "gpu_W": 73.72179329029461
+        }
+      ],
+      "speedup_vs_CPU1": 1.5805548831351854,
+      "modelled_wall_Wh": 0.0004115747896397592,
+      "modelled_CO2e_g": 8.231495792795184e-05
+    },
+    {
+      "backend": "CPU",
+      "setting": 4,
+      "setting_unit": "CPU threads; BLAS one thread per task",
+      "time_seconds": {
+        "n": 3,
+        "mean": 0.006021740586401582,
+        "minimum": 0.005942629999966206,
+        "maximum": 0.006114513793175414,
+        "std": 8.67525791425305e-05
+      },
+      "component_Wh": {
+        "n": 3,
+        "mean": 0.00020479534487308194,
+        "minimum": 0.00018753574075185185,
+        "maximum": 0.00022745205939846743,
+        "std": 2.04981639204715e-05
+      },
+      "samples": [
+        {
+          "repeat": 0,
+          "runs": 58,
+          "seconds_per_replay": 0.006114513793175414,
+          "component_Wh_per_replay": 0.00022745205939846743,
+          "seconds": 0.354641800004174,
+          "cpu_J": 23.5929900024,
+          "gpu_J": 23.899,
+          "cpu_W": 66.52625269249795,
+          "gpu_W": 67.38912333435799
+        },
+        {
+          "repeat": 1,
+          "runs": 60,
+          "seconds_per_replay": 0.005942629999966206,
+          "component_Wh_per_replay": 0.00018753574075185185,
+          "seconds": 0.3565577999979723,
+          "cpu_J": 21.5857200024,
+          "gpu_J": 18.922,
+          "cpu_W": 60.53918888472711,
+          "gpu_W": 53.068534751189304
+        },
+        {
+          "repeat": 2,
+          "runs": 59,
+          "seconds_per_replay": 0.006008077966063126,
+          "component_Wh_per_replay": 0.00019939823446892655,
+          "seconds": 0.3544765999977244,
+          "cpu_J": 22.4471850012,
+          "gpu_J": 19.905,
+          "cpu_W": 63.324871095423795,
+          "gpu_W": 56.1532129345852
+        }
+      ],
+      "speedup_vs_CPU1": 1.7996595291296782,
+      "modelled_wall_Wh": 0.00034815208628423926,
+      "modelled_CO2e_g": 6.963041725684786e-05
+    },
+    {
+      "backend": "CPU",
+      "setting": 8,
+      "setting_unit": "CPU threads; BLAS one thread per task",
+      "time_seconds": {
+        "n": 3,
+        "mean": 0.0051240529017008065,
+        "minimum": 0.004956849295691863,
+        "maximum": 0.005309274626909686,
+        "std": 0.000176902213060282
+      },
+      "component_Wh": {
+        "n": 3,
+        "mean": 0.00018853523215262913,
+        "minimum": 0.00017002097423510467,
+        "maximum": 0.0002070805555655058,
+        "std": 1.8529810195868303e-05
+      },
+      "samples": [
+        {
+          "repeat": 0,
+          "runs": 67,
+          "seconds_per_replay": 0.005309274626909686,
+          "component_Wh_per_replay": 0.0002070805555655058,
+          "seconds": 0.35572140000294894,
+          "cpu_J": 24.4098300024,
+          "gpu_J": 25.538,
+          "cpu_W": 68.62063964157805,
+          "gpu_W": 71.7921384538245
+        },
+        {
+          "repeat": 1,
+          "runs": 71,
+          "seconds_per_replay": 0.004956849295691863,
+          "component_Wh_per_replay": 0.00018850416665727696,
+          "seconds": 0.35193629999412224,
+          "cpu_J": 23.6416649976,
+          "gpu_J": 24.54,
+          "cpu_W": 67.17597757888244,
+          "gpu_W": 69.72852757845624
+        },
+        {
+          "repeat": 2,
+          "runs": 69,
+          "seconds_per_replay": 0.00510603478250087,
+          "component_Wh_per_replay": 0.00017002097423510467,
+          "seconds": 0.35231639999256004,
+          "cpu_J": 24.38721,
+          "gpu_J": 17.846,
+          "cpu_W": 69.21962758621225,
+          "gpu_W": 50.65333319816182
+        }
+      ],
+      "speedup_vs_CPU1": 2.114943587851607,
+      "modelled_wall_Wh": 0.0003205098946594695,
+      "modelled_CO2e_g": 6.41019789318939e-05
+    },
+    {
+      "backend": "CPU",
+      "setting": 16,
+      "setting_unit": "CPU threads; BLAS one thread per task",
+      "time_seconds": {
+        "n": 3,
+        "mean": 0.005027259558357335,
+        "minimum": 0.004901486111015806,
+        "maximum": 0.005191357352861601,
+        "std": 0.0001486872587056241
+      },
+      "component_Wh": {
+        "n": 3,
+        "mean": 0.00019334261073209008,
+        "minimum": 0.00017594730046478874,
+        "maximum": 0.00020888498774999998,
+        "std": 1.654683752699037e-05
+      },
+      "samples": [
+        {
+          "repeat": 0,
+          "runs": 68,
+          "seconds_per_replay": 0.005191357352861601,
+          "component_Wh_per_replay": 0.00020888498774999998,
+          "seconds": 0.35301229999458883,
+          "cpu_J": 25.3320450012,
+          "gpu_J": 25.803,
+          "cpu_W": 71.75966673565851,
+          "gpu_W": 73.09377038815794
+        },
+        {
+          "repeat": 1,
+          "runs": 72,
+          "seconds_per_replay": 0.004901486111015806,
+          "component_Wh_per_replay": 0.00019519554398148147,
+          "seconds": 0.352906999993138,
+          "cpu_J": 25.487685,
+          "gpu_J": 25.107,
+          "cpu_W": 72.22210100818512,
+          "gpu_W": 71.14338905288982
+        },
+        {
+          "repeat": 2,
+          "runs": 71,
+          "seconds_per_replay": 0.004988935211194601,
+          "component_Wh_per_replay": 0.00017594730046478874,
+          "seconds": 0.35421439999481663,
+          "cpu_J": 26.1441299988,
+          "gpu_J": 18.828,
+          "cpu_W": 73.80877231186135,
+          "gpu_W": 53.154247823565385
+        }
+      ],
+      "speedup_vs_CPU1": 2.15566407551982,
+      "modelled_wall_Wh": 0.0003286824382445531,
+      "modelled_CO2e_g": 6.573648764891063e-05
+    },
+    {
+      "backend": "CPU",
+      "setting": 32,
+      "setting_unit": "CPU threads; BLAS one thread per task",
+      "time_seconds": {
+        "n": 3,
+        "mean": 0.0050092987979091915,
+        "minimum": 0.004570855844316871,
+        "maximum": 0.005433087692318412,
+        "std": 0.00043130267332227895
+      },
+      "component_Wh": {
+        "n": 3,
+        "mean": 0.00015193666477700818,
+        "minimum": 0.00011972288961038962,
+        "maximum": 0.00018629002137777776,
+        "std": 3.3335103336711385e-05
+      },
+      "samples": [
+        {
+          "repeat": 0,
+          "runs": 65,
+          "seconds_per_replay": 0.005433087692318412,
+          "component_Wh_per_replay": 0.00018629002137777776,
+          "seconds": 0.3531507000006968,
+          "cpu_J": 26.9578650024,
+          "gpu_J": 16.634,
+          "cpu_W": 76.33530105517788,
+          "gpu_W": 47.10170473955504
+        },
+        {
+          "repeat": 1,
+          "runs": 70,
+          "seconds_per_replay": 0.005023952857092289,
+          "component_Wh_per_replay": 0.00014979708334285715,
+          "seconds": 0.35167669999646023,
+          "cpu_J": 26.9938650024,
+          "gpu_J": 10.755,
+          "cpu_W": 76.75761573818141,
+          "gpu_W": 30.58206585795492
+        },
+        {
+          "repeat": 2,
+          "runs": 77,
+          "seconds_per_replay": 0.004570855844316871,
+          "component_Wh_per_replay": 0.00011972288961038962,
+          "seconds": 0.35195590001239907,
+          "cpu_J": 26.365185,
+          "gpu_J": 6.822,
+          "cpu_W": 74.91047883860216,
+          "gpu_W": 19.38311021284106
+        }
+      ],
+      "speedup_vs_CPU1": 2.1633931744674095,
+      "modelled_wall_Wh": 0.0002582923301209139,
+      "modelled_CO2e_g": 5.165846602418278e-05
+    },
+    {
+      "backend": "CPU",
+      "setting": 48,
+      "setting_unit": "CPU threads; BLAS one thread per task",
+      "time_seconds": {
+        "n": 3,
+        "mean": 0.004480871005991657,
+        "minimum": 0.004326529268327271,
+        "maximum": 0.004609332467556338,
+        "std": 0.00014316687428241395
+      },
+      "component_Wh": {
+        "n": 3,
+        "mean": 0.00012916862355699224,
+        "minimum": 0.0001245950396911977,
+        "maximum": 0.00013417168802991452,
+        "std": 4.802748020122025e-06
+      },
+      "samples": [
+        {
+          "repeat": 0,
+          "runs": 78,
+          "seconds_per_replay": 0.00450675128209136,
+          "component_Wh_per_replay": 0.00013417168802991452,
+          "seconds": 0.3515266000031261,
+          "cpu_J": 28.456409998799998,
+          "gpu_J": 9.219,
+          "cpu_W": 80.95094367978679,
+          "gpu_W": 26.225611375975575
+        },
+        {
+          "repeat": 1,
+          "runs": 77,
+          "seconds_per_replay": 0.004609332467556338,
+          "component_Wh_per_replay": 0.0001245950396911977,
+          "seconds": 0.35491860000183806,
+          "cpu_J": 28.5357450024,
+          "gpu_J": 6.002,
+          "cpu_W": 80.4008158553883,
+          "gpu_W": 16.910919855901934
+        },
+        {
+          "repeat": 2,
+          "runs": 82,
+          "seconds_per_replay": 0.004326529268327271,
+          "component_Wh_per_replay": 0.0001287391429498645,
+          "seconds": 0.35477540000283625,
+          "cpu_J": 27.7567949988,
+          "gpu_J": 10.247,
+          "cpu_W": 78.23765401597207,
+          "gpu_W": 28.883062354148795
+        }
+      ],
+      "speedup_vs_CPU1": 2.41852149141843,
+      "modelled_wall_Wh": 0.0002195866600468868,
+      "modelled_CO2e_g": 4.391733200937736e-05
+    },
+    {
+      "backend": "CUDA",
+      "setting": 1,
+      "setting_unit": "candidate batch size; one CUDA owner process",
+      "time_seconds": {
+        "n": 3,
+        "mean": 0.08617621999971259,
+        "minimum": 0.08382553999836091,
+        "maximum": 0.09053752000036183,
+        "std": 0.0037808217986301114
+      },
+      "component_Wh": {
+        "n": 3,
+        "mean": 0.002141992592614815,
+        "minimum": 0.0020905905556222225,
+        "maximum": 0.0021781572222888887,
+        "std": 4.572870230085899e-05
+      },
+      "samples": [
+        {
+          "repeat": 0,
+          "runs": 5,
+          "seconds_per_replay": 0.08382553999836091,
+          "component_Wh_per_replay": 0.0021572299999333333,
+          "seconds": 0.41912769999180455,
+          "cpu_J": 24.1721399988,
+          "gpu_J": 14.658,
+          "cpu_W": 57.67249456257043,
+          "gpu_W": 34.9726348325024
+        },
+        {
+          "repeat": 1,
+          "runs": 5,
+          "seconds_per_replay": 0.09053752000036183,
+          "component_Wh_per_replay": 0.0021781572222888887,
+          "seconds": 0.4526876000018092,
+          "cpu_J": 22.873830001199998,
+          "gpu_J": 16.333,
+          "cpu_W": 50.52895197727656,
+          "gpu_W": 36.08006934569165
+        },
+        {
+          "repeat": 2,
+          "runs": 5,
+          "seconds_per_replay": 0.084165600000415,
+          "component_Wh_per_replay": 0.0020905905556222225,
+          "seconds": 0.420828000002075,
+          "cpu_J": 22.6506300012,
+          "gpu_J": 14.98,
+          "cpu_W": 53.823961335957485,
+          "gpu_W": 35.59649072762777
+        }
+      ],
+      "speedup_vs_CPU1": 0.12575491044165882,
+      "modelled_wall_Wh": 0.0036413874074451855,
+      "modelled_CO2e_g": 0.0007282774814890371
+    },
+    {
+      "backend": "CUDA",
+      "setting": 2,
+      "setting_unit": "candidate batch size; one CUDA owner process",
+      "time_seconds": {
+        "n": 3,
+        "mean": 0.04391893148156804,
+        "minimum": 0.04281854444383902,
+        "maximum": 0.04459822500029986,
+        "std": 0.000961668100005021
+      },
+      "component_Wh": {
+        "n": 3,
+        "mean": 0.0011799472543323043,
+        "minimum": 0.0011061421874166667,
+        "maximum": 0.0012295684027777776,
+        "std": 6.517019329433137e-05
+      },
+      "samples": [
+        {
+          "repeat": 0,
+          "runs": 8,
+          "seconds_per_replay": 0.04459822500029986,
+          "component_Wh_per_replay": 0.0012295684027777776,
+          "seconds": 0.3567858000023989,
+          "cpu_J": 19.75257,
+          "gpu_J": 15.659,
+          "cpu_W": 55.36254525787514,
+          "gpu_W": 43.889078544871225
+        },
+        {
+          "repeat": 1,
+          "runs": 9,
+          "seconds_per_replay": 0.04281854444383902,
+          "component_Wh_per_replay": 0.0012041311728024692,
+          "seconds": 0.3853668999945512,
+          "cpu_J": 21.365849998799998,
+          "gpu_J": 17.648,
+          "cpu_W": 55.442877940741916,
+          "gpu_W": 45.795318695636624
+        },
+        {
+          "repeat": 2,
+          "runs": 8,
+          "seconds_per_replay": 0.04434002500056522,
+          "component_Wh_per_replay": 0.0011061421874166667,
+          "seconds": 0.35472020000452176,
+          "cpu_J": 19.7488949976,
+          "gpu_J": 12.108,
+          "cpu_W": 55.67457110519292,
+          "gpu_W": 34.13394557131411
+        }
+      ],
+      "speedup_vs_CPU1": 0.246751969200632,
+      "modelled_wall_Wh": 0.0020059103323649173,
+      "modelled_CO2e_g": 0.00040118206647298346
+    },
+    {
+      "backend": "CUDA",
+      "setting": 4,
+      "setting_unit": "candidate batch size; one CUDA owner process",
+      "time_seconds": {
+        "n": 3,
+        "mean": 0.022630068750004284,
+        "minimum": 0.02244997500019963,
+        "maximum": 0.022746050000023388,
+        "std": 0.00015810727640347215
+      },
+      "component_Wh": {
+        "n": 3,
+        "mean": 0.0006274094618125,
+        "minimum": 0.0005990019097222222,
+        "maximum": 0.0006556363715277779,
+        "std": 2.8317663034791028e-05
+      },
+      "samples": [
+        {
+          "repeat": 0,
+          "runs": 16,
+          "seconds_per_replay": 0.022694181249789835,
+          "component_Wh_per_replay": 0.0006275901041874999,
+          "seconds": 0.36310689999663737,
+          "cpu_J": 22.3161900012,
+          "gpu_J": 13.833,
+          "cpu_W": 61.45900835651061,
+          "gpu_W": 38.0962190476912
+        },
+        {
+          "repeat": 1,
+          "runs": 16,
+          "seconds_per_replay": 0.02244997500019963,
+          "component_Wh_per_replay": 0.0005990019097222222,
+          "seconds": 0.35919960000319406,
+          "cpu_J": 19.98351,
+          "gpu_J": 14.519,
+          "cpu_W": 55.633441684852386,
+          "gpu_W": 40.42042363040186
+        },
+        {
+          "repeat": 2,
+          "runs": 16,
+          "seconds_per_replay": 0.022746050000023388,
+          "component_Wh_per_replay": 0.0006556363715277779,
+          "seconds": 0.3639368000003742,
+          "cpu_J": 19.946655,
+          "gpu_J": 17.818,
+          "cpu_W": 54.808018864757535,
+          "gpu_W": 48.95905003281251
+        }
+      ],
+      "speedup_vs_CPU1": 0.4788798013820657,
+      "modelled_wall_Wh": 0.00106659608508125,
+      "modelled_CO2e_g": 0.00021331921701624998
+    },
+    {
+      "backend": "CUDA",
+      "setting": 8,
+      "setting_unit": "candidate batch size; one CUDA owner process",
+      "time_seconds": {
+        "n": 3,
+        "mean": 0.01221406819912497,
+        "minimum": 0.012029266666407542,
+        "maximum": 0.012405665517094192,
+        "std": 0.00018829142498385062
+      },
+      "component_Wh": {
+        "n": 3,
+        "mean": 0.0003904568140470839,
+        "minimum": 0.00037807112066666666,
+        "maximum": 0.0004055963122375479,
+        "std": 1.3967699289872543e-05
+      },
+      "samples": [
+        {
+          "repeat": 0,
+          "runs": 29,
+          "seconds_per_replay": 0.012405665517094192,
+          "component_Wh_per_replay": 0.00037807112066666666,
+          "seconds": 0.35976429999573156,
+          "cpu_J": 19.7936249976,
+          "gpu_J": 19.677,
+          "cpu_W": 55.01831337304686,
+          "gpu_W": 54.694142804701464
+        },
+        {
+          "repeat": 1,
+          "runs": 30,
+          "seconds_per_replay": 0.012029266666407542,
+          "component_Wh_per_replay": 0.00038770300923703706,
+          "seconds": 0.36087799999222625,
+          "cpu_J": 19.9619249976,
+          "gpu_J": 21.91,
+          "cpu_W": 55.31488480325763,
+          "gpu_W": 60.713038756787526
+        },
+        {
+          "repeat": 2,
+          "runs": 29,
+          "seconds_per_replay": 0.012207272413873179,
+          "component_Wh_per_replay": 0.0004055963122375479,
+          "seconds": 0.35401090000232216,
+          "cpu_J": 19.8392549976,
+          "gpu_J": 22.505,
+          "cpu_W": 56.041367645656855,
+          "gpu_W": 63.571488900066
+        }
+      ],
+      "speedup_vs_CPU1": 0.8872623479407888,
+      "modelled_wall_Wh": 0.0006637765838800426,
+      "modelled_CO2e_g": 0.0001327553167760085
+    },
+    {
+      "backend": "CUDA",
+      "setting": 16,
+      "setting_unit": "candidate batch size; one CUDA owner process",
+      "time_seconds": {
+        "n": 3,
+        "mean": 0.00787159667949429,
+        "minimum": 0.007505389361424332,
+        "maximum": 0.00853347727256319,
+        "std": 0.0005742893020237401
+      },
+      "component_Wh": {
+        "n": 3,
+        "mean": 0.00034708395277410634,
+        "minimum": 0.00030872177894562645,
+        "maximum": 0.00038150189125295514,
+        "std": 3.655001957915759e-05
+      },
+      "samples": [
+        {
+          "repeat": 0,
+          "runs": 44,
+          "seconds_per_replay": 0.00853347727256319,
+          "component_Wh_per_replay": 0.0003510281881237374,
+          "seconds": 0.3754729999927804,
+          "cpu_J": 19.6228649988,
+          "gpu_J": 35.98,
+          "cpu_W": 52.26172054762209,
+          "gpu_W": 95.82579839480287
+        },
+        {
+          "repeat": 1,
+          "runs": 47,
+          "seconds_per_replay": 0.0075759234044953504,
+          "component_Wh_per_replay": 0.00038150189125295514,
+          "seconds": 0.3560684000112815,
+          "cpu_J": 20.10312,
+          "gpu_J": 44.447,
+          "cpu_W": 56.45859053868039,
+          "gpu_W": 124.82713995005389
+        },
+        {
+          "repeat": 2,
+          "runs": 47,
+          "seconds_per_replay": 0.007505389361424332,
+          "component_Wh_per_replay": 0.00030872177894562645,
+          "seconds": 0.3527532999869436,
+          "cpu_J": 19.4957249976,
+          "gpu_J": 32.74,
+          "cpu_W": 55.26730720399098,
+          "gpu_W": 92.81273910467118
+        }
+      ],
+      "speedup_vs_CPU1": 1.3767324812887607,
+      "modelled_wall_Wh": 0.0005900427197159808,
+      "modelled_CO2e_g": 0.00011800854394319616
+    },
+    {
+      "backend": "CUDA",
+      "setting": 32,
+      "setting_unit": "candidate batch size; one CUDA owner process",
+      "time_seconds": {
+        "n": 3,
+        "mean": 0.004782099901287758,
+        "minimum": 0.0047551959460425015,
+        "maximum": 0.004830278082246803,
+        "std": 4.181837280480011e-05
+      },
+      "component_Wh": {
+        "n": 3,
+        "mean": 0.00022195463348924954,
+        "minimum": 0.00019767306682132133,
+        "maximum": 0.0002424939117245053,
+        "std": 2.264355485549483e-05
+      },
+      "samples": [
+        {
+          "repeat": 0,
+          "runs": 74,
+          "seconds_per_replay": 0.004760825675573968,
+          "component_Wh_per_replay": 0.00019767306682132133,
+          "seconds": 0.3523010999924736,
+          "cpu_J": 20.0791050012,
+          "gpu_J": 32.581,
+          "cpu_W": 56.994159262145246,
+          "gpu_W": 92.48055143936834
+        },
+        {
+          "repeat": 1,
+          "runs": 73,
+          "seconds_per_replay": 0.004830278082246803,
+          "component_Wh_per_replay": 0.0002424939117245053,
+          "seconds": 0.3526103000040166,
+          "cpu_J": 19.5954000012,
+          "gpu_J": 44.132,
+          "cpu_W": 55.57239819987331,
+          "gpu_W": 125.15800020446733
+        },
+        {
+          "repeat": 2,
+          "runs": 74,
+          "seconds_per_replay": 0.0047551959460425015,
+          "component_Wh_per_replay": 0.00022569692192192192,
+          "seconds": 0.3518845000071451,
+          "cpu_J": 18.80766,
+          "gpu_J": 41.318,
+          "cpu_W": 53.44839002461917,
+          "gpu_W": 117.41920999407768
+        }
+      ],
+      "speedup_vs_CPU1": 2.266176586011149,
+      "modelled_wall_Wh": 0.0003773228769317242,
+      "modelled_CO2e_g": 7.546457538634485e-05
+    },
+    {
+      "backend": "CUDA",
+      "setting": 48,
+      "setting_unit": "candidate batch size; one CUDA owner process",
+      "time_seconds": {
+        "n": 3,
+        "mean": 0.0041103968093774874,
+        "minimum": 0.004020864772676511,
+        "maximum": 0.004242916666650369,
+        "std": 0.00011710134688587513
+      },
+      "component_Wh": {
+        "n": 3,
+        "mean": 0.0001993003400238307,
+        "minimum": 0.00019199180711610488,
+        "maximum": 0.00020359671296296295,
+        "std": 6.3618622026815675e-06
+      },
+      "samples": [
+        {
+          "repeat": 0,
+          "runs": 88,
+          "seconds_per_replay": 0.004020864772676511,
+          "component_Wh_per_replay": 0.00020231249999242426,
+          "seconds": 0.353836099995533,
+          "cpu_J": 19.9715999976,
+          "gpu_J": 44.121,
+          "cpu_W": 56.443081974541684,
+          "gpu_W": 124.69332552714945
+        },
+        {
+          "repeat": 1,
+          "runs": 89,
+          "seconds_per_replay": 0.004067408988805582,
+          "component_Wh_per_replay": 0.00019199180711610488,
+          "seconds": 0.3619994000036968,
+          "cpu_J": 19.877175,
+          "gpu_J": 41.637,
+          "cpu_W": 54.90941421393796,
+          "gpu_W": 115.01952765550108
+        },
+        {
+          "repeat": 2,
+          "runs": 90,
+          "seconds_per_replay": 0.004242916666650369,
+          "component_Wh_per_replay": 0.00020359671296296295,
+          "seconds": 0.38186249999853317,
+          "cpu_J": 21.949335,
+          "gpu_J": 44.016,
+          "cpu_W": 57.47968182286638,
+          "gpu_W": 115.26662083909542
+        }
+      ],
+      "speedup_vs_CPU1": 2.6365052647814315,
+      "modelled_wall_Wh": 0.0003388105780405122,
+      "modelled_CO2e_g": 6.776211560810244e-05
+    },
+    {
+      "backend": "CUDA",
+      "setting": 64,
+      "setting_unit": "candidate batch size; one CUDA owner process",
+      "time_seconds": {
+        "n": 3,
+        "mean": 0.003375632002806122,
+        "minimum": 0.0033389056603345176,
+        "maximum": 0.0034130865385052925,
+        "std": 3.709579990483209e-05
+      },
+      "component_Wh": {
+        "n": 3,
+        "mean": 0.00015492217089868346,
+        "minimum": 0.00014320424679807692,
+        "maximum": 0.00016205235849056605,
+        "std": 1.0227332169155616e-05
+      },
+      "samples": [
+        {
+          "repeat": 0,
+          "runs": 104,
+          "seconds_per_replay": 0.0034130865385052925,
+          "component_Wh_per_replay": 0.00014320424679807692,
+          "seconds": 0.35496100000455044,
+          "cpu_J": 21.0626700012,
+          "gpu_J": 32.553,
+          "cpu_W": 59.33798361208692,
+          "gpu_W": 91.70866658473095
+        },
+        {
+          "repeat": 1,
+          "runs": 105,
+          "seconds_per_replay": 0.0033749038095785572,
+          "component_Wh_per_replay": 0.0001595099074074074,
+          "seconds": 0.3543649000057485,
+          "cpu_J": 19.370745,
+          "gpu_J": 40.924,
+          "cpu_W": 54.66327223629024,
+          "gpu_W": 115.48547838495328
+        },
+        {
+          "repeat": 2,
+          "runs": 106,
+          "seconds_per_replay": 0.0033389056603345176,
+          "component_Wh_per_replay": 0.00016205235849056605,
+          "seconds": 0.35392399999545887,
+          "cpu_J": 19.17018,
+          "gpu_J": 42.669,
+          "cpu_W": 54.16467942339589,
+          "gpu_W": 120.55978119750985
+        }
+      ],
+      "speedup_vs_CPU1": 3.210386327436109,
+      "modelled_wall_Wh": 0.0002633676905277619,
+      "modelled_CO2e_g": 5.267353810555239e-05
+    },
+    {
+      "backend": "CUDA",
+      "setting": 128,
+      "setting_unit": "candidate batch size; one CUDA owner process",
+      "time_seconds": {
+        "n": 3,
+        "mean": 0.002768482621501729,
+        "minimum": 0.0026725545454114167,
+        "maximum": 0.002935012403150024,
+        "std": 0.00014477390093852146
+      },
+      "component_Wh": {
+        "n": 3,
+        "mean": 0.00012504182055963836,
+        "minimum": 0.00010773310184680134,
+        "maximum": 0.00013373029049533504,
+        "std": 1.4989828923029907e-05
+      },
+      "samples": [
+        {
+          "repeat": 0,
+          "runs": 129,
+          "seconds_per_replay": 0.002935012403150024,
+          "component_Wh_per_replay": 0.00013366206933677864,
+          "seconds": 0.3786166000063531,
+          "cpu_J": 20.530665,
+          "gpu_J": 41.542,
+          "cpu_W": 54.22547505750012,
+          "gpu_W": 109.72049297178977
+        },
+        {
+          "repeat": 1,
+          "runs": 132,
+          "seconds_per_replay": 0.0026725545454114167,
+          "component_Wh_per_replay": 0.00010773310184680134,
+          "seconds": 0.352777199994307,
+          "cpu_J": 19.2617699976,
+          "gpu_J": 31.933,
+          "cpu_W": 54.60038233171202,
+          "gpu_W": 90.51888841034886
+        },
+        {
+          "repeat": 2,
+          "runs": 131,
+          "seconds_per_replay": 0.0026978809159437464,
+          "component_Wh_per_replay": 0.00013373029049533504,
+          "seconds": 0.3534223999886308,
+          "cpu_J": 21.1672049976,
+          "gpu_J": 41.9,
+          "cpu_W": 59.892086631410244,
+          "gpu_W": 118.5550208513888
+        }
+      ],
+      "speedup_vs_CPU1": 3.9144485661918664,
+      "modelled_wall_Wh": 0.0002125710949513852,
+      "modelled_CO2e_g": 4.251421899027704e-05
+    },
+    {
+      "backend": "CUDA",
+      "setting": 256,
+      "setting_unit": "candidate batch size; one CUDA owner process",
+      "time_seconds": {
+        "n": 3,
+        "mean": 0.00230977265984191,
+        "minimum": 0.002277889032190996,
+        "maximum": 0.0023350124999859346,
+        "std": 2.9135503729254172e-05
+      },
+      "component_Wh": {
+        "n": 3,
+        "mean": 0.00010444732786195057,
+        "minimum": 9.470199820573477e-05,
+        "maximum": 0.00012194056103801169,
+        "std": 1.518246794847919e-05
+      },
+      "samples": [
+        {
+          "repeat": 0,
+          "runs": 152,
+          "seconds_per_replay": 0.0023350124999859346,
+          "component_Wh_per_replay": 0.00012194056103801169,
+          "seconds": 0.35492189999786206,
+          "cpu_J": 26.737875,
+          "gpu_J": 39.988,
+          "cpu_W": 75.3345313438282,
+          "gpu_W": 112.66704027066483
+        },
+        {
+          "repeat": 1,
+          "runs": 155,
+          "seconds_per_replay": 0.002277889032190996,
+          "component_Wh_per_replay": 9.470199820573477e-05,
+          "seconds": 0.3530727999896044,
+          "cpu_J": 20.7627149988,
+          "gpu_J": 32.081,
+          "cpu_W": 58.80576186953886,
+          "gpu_W": 90.86228109597955
+        },
+        {
+          "repeat": 2,
+          "runs": 152,
+          "seconds_per_replay": 0.0023164164473488008,
+          "component_Wh_per_replay": 9.669942434210527e-05,
+          "seconds": 0.3520952999970177,
+          "cpu_J": 20.414925,
+          "gpu_J": 32.499,
+          "cpu_W": 57.981248259130176,
+          "gpu_W": 92.30171490580895
+        }
+      ],
+      "speedup_vs_CPU1": 4.691839598190705,
+      "modelled_wall_Wh": 0.00017756045736531598,
+      "modelled_CO2e_g": 3.5512091473063195e-05
+    },
+    {
+      "backend": "CUDA",
+      "setting": 512,
+      "setting_unit": "candidate batch size; one CUDA owner process",
+      "time_seconds": {
+        "n": 3,
+        "mean": 0.0022910246723204055,
+        "minimum": 0.002259813461513169,
+        "maximum": 0.0023327715231748667,
+        "std": 3.7602785452164725e-05
+      },
+      "component_Wh": {
+        "n": 3,
+        "mean": 9.913016092498732e-05,
+        "minimum": 9.148377848575499e-05,
+        "maximum": 0.00010879205197132618,
+        "std": 8.828408065547379e-06
+      },
+      "samples": [
+        {
+          "repeat": 0,
+          "runs": 155,
+          "seconds_per_replay": 0.0022804890322731808,
+          "component_Wh_per_replay": 0.00010879205197132618,
+          "seconds": 0.353475800002343,
+          "cpu_J": 20.239965,
+          "gpu_J": 40.466,
+          "cpu_W": 57.25983221444252,
+          "gpu_W": 114.48025579044385
+        },
+        {
+          "repeat": 1,
+          "runs": 156,
+          "seconds_per_replay": 0.002259813461513169,
+          "component_Wh_per_replay": 9.148377848575499e-05,
+          "seconds": 0.35253089999605436,
+          "cpu_J": 19.2282899976,
+          "gpu_J": 32.149,
+          "cpu_W": 54.543559154148504,
+          "gpu_W": 91.19484277934168
+        },
+        {
+          "repeat": 2,
+          "runs": 151,
+          "seconds_per_replay": 0.0023327715231748667,
+          "component_Wh_per_replay": 9.71146523178808e-05,
+          "seconds": 0.3522484999994049,
+          "cpu_J": 20.391525,
+          "gpu_J": 32.4,
+          "cpu_W": 57.889600665537124,
+          "gpu_W": 91.98051943458876
+        }
+      ],
+      "speedup_vs_CPU1": 4.730234012403054,
+      "modelled_wall_Wh": 0.00016852127357247843,
+      "modelled_CO2e_g": 3.3704254714495685e-05
+    },
+    {
+      "backend": "CUDA",
+      "setting": 1024,
+      "setting_unit": "candidate batch size; one CUDA owner process",
+      "time_seconds": {
+        "n": 3,
+        "mean": 0.002284928550149099,
+        "minimum": 0.0022760709677259587,
+        "maximum": 0.002297637908543716,
+        "std": 1.1287620106116045e-05
+      },
+      "component_Wh": {
+        "n": 3,
+        "mean": 9.918393574155132e-05,
+        "minimum": 9.289025985663083e-05,
+        "maximum": 0.00010919787634623656,
+        "std": 8.767261036484552e-06
+      },
+      "samples": [
+        {
+          "repeat": 0,
+          "runs": 155,
+          "seconds_per_replay": 0.0022760709677259587,
+          "component_Wh_per_replay": 0.00010919787634623656,
+          "seconds": 0.3527909999975236,
+          "cpu_J": 20.4804150012,
+          "gpu_J": 40.452,
+          "cpu_W": 58.05254386122027,
+          "gpu_W": 114.66278901753148
+        },
+        {
+          "repeat": 1,
+          "runs": 155,
+          "seconds_per_replay": 0.002281076774177622,
+          "component_Wh_per_replay": 9.289025985663083e-05,
+          "seconds": 0.35356689999753144,
+          "cpu_J": 19.620765,
+          "gpu_J": 32.212,
+          "cpu_W": 55.49378349652354,
+          "gpu_W": 91.1058133559021
+        },
+        {
+          "repeat": 2,
+          "runs": 153,
+          "seconds_per_replay": 0.002297637908543716,
+          "component_Wh_per_replay": 9.546367102178651e-05,
+          "seconds": 0.3515386000071885,
+          "cpu_J": 20.2953899988,
+          "gpu_J": 32.286,
+          "cpu_W": 57.733034148696575,
+          "gpu_W": 91.84197695314197
+        }
+      ],
+      "speedup_vs_CPU1": 4.742854137630426,
+      "modelled_wall_Wh": 0.00016861269076063723,
+      "modelled_CO2e_g": 3.372253815212744e-05
+    }
+  ],
+  "hybrid": [
+    {
+      "CPU_threads": 48,
+      "GPU_fraction": 0,
+      "GPU_batch": 256,
+      "time_seconds": {
+        "n": 3,
+        "mean": 0.004812110529946953,
+        "minimum": 0.0045968285713015224,
+        "maximum": 0.005194591176405083,
+        "std": 0.000332109295142074
+      },
+      "component_Wh": {
+        "n": 3,
+        "mean": 0.0002261615384631312,
+        "minimum": 0.00019520950291959064,
+        "maximum": 0.0002559742647107843,
+        "std": 3.0398397789010173e-05
+      },
+      "samples": [
+        {
+          "repeat": 0,
+          "runs": 68,
+          "seconds_per_replay": 0.005194591176405083,
+          "component_Wh_per_replay": 0.0002559742647107843,
+          "seconds": 0.35323219999554567,
+          "cpu_J": 25.6965000012,
+          "gpu_J": 36.966,
+          "cpu_W": 72.74676544642317,
+          "gpu_W": 104.65070851543588
+        },
+        {
+          "repeat": 1,
+          "runs": 77,
+          "seconds_per_replay": 0.0045968285713015224,
+          "component_Wh_per_replay": 0.00022730084775901877,
+          "seconds": 0.3539557999902172,
+          "cpu_J": 27.0727949988,
+          "gpu_J": 35.935,
+          "cpu_W": 76.48637202596554,
+          "gpu_W": 101.5239755952387
+        },
+        {
+          "repeat": 2,
+          "runs": 76,
+          "seconds_per_replay": 0.0046449118421342545,
+          "component_Wh_per_replay": 0.00019520950291959064,
+          "seconds": 0.3530133000022033,
+          "cpu_J": 26.9443199988,
+          "gpu_J": 26.465,
+          "cpu_W": 76.32664264669866,
+          "gpu_W": 74.96884678235868
+        }
+      ]
+    },
+    {
+      "CPU_threads": 48,
+      "GPU_fraction": 0.25,
+      "GPU_batch": 256,
+      "time_seconds": {
+        "n": 3,
+        "mean": 0.003933064284149505,
+        "minimum": 0.0038164075268732923,
+        "maximum": 0.004057193103369497,
+        "std": 0.00012056656768947655
+      },
+      "component_Wh": {
+        "n": 3,
+        "mean": 0.00016152269186969976,
+        "minimum": 0.00011857503086419753,
+        "maximum": 0.00018941242532855435,
+        "std": 3.774307883738143e-05
+      },
+      "samples": [
+        {
+          "repeat": 0,
+          "runs": 93,
+          "seconds_per_replay": 0.0038164075268732923,
+          "component_Wh_per_replay": 0.00018941242532855435,
+          "seconds": 0.3549258999992162,
+          "cpu_J": 26.29728,
+          "gpu_J": 37.118,
+          "cpu_W": 74.09231053596842,
+          "gpu_W": 104.57957562432601
+        },
+        {
+          "repeat": 1,
+          "runs": 87,
+          "seconds_per_replay": 0.004057193103369497,
+          "component_Wh_per_replay": 0.0001765806194163474,
+          "seconds": 0.3529757999931462,
+          "cpu_J": 26.6950500012,
+          "gpu_J": 28.61,
+          "cpu_W": 75.62855584354038,
+          "gpu_W": 81.05371529876984
+        },
+        {
+          "repeat": 2,
+          "runs": 90,
+          "seconds_per_replay": 0.0039255922222057255,
+          "component_Wh_per_replay": 0.00011857503086419753,
+          "seconds": 0.3533032999985153,
+          "cpu_J": 26.17731,
+          "gpu_J": 12.241,
+          "cpu_W": 74.09302432247308,
+          "gpu_W": 34.64728464198166
+        }
+      ]
+    },
+    {
+      "CPU_threads": 48,
+      "GPU_fraction": 0.5,
+      "GPU_batch": 256,
+      "time_seconds": {
+        "n": 3,
+        "mean": 0.004555806118631769,
+        "minimum": 0.0044020123457835045,
+        "maximum": 0.00485499726017548,
+        "std": 0.0002591411377692586
+      },
+      "component_Wh": {
+        "n": 3,
+        "mean": 0.00013467398940286468,
+        "minimum": 0.00013045842846270929,
+        "maximum": 0.00013685432099588477,
+        "std": 3.6515036896548634e-06
+      },
+      "samples": [
+        {
+          "repeat": 0,
+          "runs": 81,
+          "seconds_per_replay": 0.0044020123457835045,
+          "component_Wh_per_replay": 0.00013685432099588477,
+          "seconds": 0.35656300000846386,
+          "cpu_J": 24.1777200024,
+          "gpu_J": 15.729,
+          "cpu_W": 67.8077086007973,
+          "gpu_W": 44.11282157606548
+        },
+        {
+          "repeat": 1,
+          "runs": 80,
+          "seconds_per_replay": 0.004410408749936323,
+          "component_Wh_per_replay": 0.00013670921875,
+          "seconds": 0.35283269999490585,
+          "cpu_J": 24.450255,
+          "gpu_J": 14.922,
+          "cpu_W": 69.29702094038622,
+          "gpu_W": 42.2919984463329
+        },
+        {
+          "repeat": 2,
+          "runs": 73,
+          "seconds_per_replay": 0.00485499726017548,
+          "component_Wh_per_replay": 0.00013045842846270929,
+          "seconds": 0.35441479999281,
+          "cpu_J": 23.213475,
+          "gpu_J": 11.071,
+          "cpu_W": 65.49804071520413,
+          "gpu_W": 31.23740882216148
+        }
+      ]
+    },
+    {
+      "CPU_threads": 48,
+      "GPU_fraction": 0.75,
+      "GPU_batch": 256,
+      "time_seconds": {
+        "n": 3,
+        "mean": 0.004532653770910524,
+        "minimum": 0.0042869891567753225,
+        "maximum": 0.0047202280000783504,
+        "std": 0.0002223844496719134
+      },
+      "component_Wh": {
+        "n": 3,
+        "mean": 0.0001326478486489295,
+        "minimum": 0.0001175760709544846,
+        "maximum": 0.00014146375925925923,
+        "std": 1.3115156036704405e-05
+      },
+      "samples": [
+        {
+          "repeat": 0,
+          "runs": 75,
+          "seconds_per_replay": 0.0047202280000783504,
+          "component_Wh_per_replay": 0.00014146375925925923,
+          "seconds": 0.3540171000058763,
+          "cpu_J": 21.673215,
+          "gpu_J": 16.522,
+          "cpu_W": 61.22081390882036,
+          "gpu_W": 46.670061982106944
+        },
+        {
+          "repeat": 1,
+          "runs": 77,
+          "seconds_per_replay": 0.004590744155877899,
+          "component_Wh_per_replay": 0.00013890371573304475,
+          "seconds": 0.3534873000025982,
+          "cpu_J": 21.2081100012,
+          "gpu_J": 17.296,
+          "cpu_W": 59.99680894064403,
+          "gpu_W": 48.92962208224417
+        },
+        {
+          "repeat": 2,
+          "runs": 83,
+          "seconds_per_replay": 0.0042869891567753225,
+          "component_Wh_per_replay": 0.0001175760709544846,
+          "seconds": 0.35582010001235176,
+          "cpu_J": 21.2457300012,
+          "gpu_J": 13.886,
+          "cpu_W": 59.70919012293708,
+          "gpu_W": 39.0253389269408
+        }
+      ]
+    },
+    {
+      "CPU_threads": 48,
+      "GPU_fraction": 1.0,
+      "GPU_batch": 256,
+      "time_seconds": {
+        "n": 3,
+        "mean": 0.00403130879363997,
+        "minimum": 0.003951750561795093,
+        "maximum": 0.004107236046429322,
+        "std": 7.780631073159533e-05
+      },
+      "component_Wh": {
+        "n": 3,
+        "mean": 0.00014010384706207094,
+        "minimum": 0.00012029096441947565,
+        "maximum": 0.00015156926679198968,
+        "std": 1.7229136735062696e-05
+      },
+      "samples": [
+        {
+          "repeat": 0,
+          "runs": 86,
+          "seconds_per_replay": 0.004107236046429322,
+          "component_Wh_per_replay": 0.00015156926679198968,
+          "seconds": 0.35322229999292176,
+          "cpu_J": 21.2448449988,
+          "gpu_J": 25.681,
+          "cpu_W": 60.14582034946754,
+          "gpu_W": 72.70492265215029
+        },
+        {
+          "repeat": 1,
+          "runs": 88,
+          "seconds_per_replay": 0.004034939772695493,
+          "component_Wh_per_replay": 0.00014845130997474747,
+          "seconds": 0.3550746999972034,
+          "cpu_J": 19.920375,
+          "gpu_J": 27.109,
+          "cpu_W": 56.10192728503859,
+          "gpu_W": 76.34731508669446
+        },
+        {
+          "repeat": 2,
+          "runs": 89,
+          "seconds_per_replay": 0.003951750561795093,
+          "component_Wh_per_replay": 0.00012029096441947565,
+          "seconds": 0.35170579999976326,
+          "cpu_J": 19.287225,
+          "gpu_J": 19.254,
+          "cpu_W": 54.83908710067614,
+          "gpu_W": 54.74461894007139
+        }
+      ]
+    }
+  ],
+  "fits": {
+    "CPU": {
+      "time_seconds": [
+        {
+          "function": "Amdahl runtime",
+          "parameters": [
+            0.004471991645280055,
+            0.006057986711727328
+          ],
+          "parameter_standard_errors": [
+            0.0001847543191933876,
+            0.0004233081022366376
+          ],
+          "R2": 0.9761685029719408,
+          "adjusted_R2": 0.9642527544579111,
+          "RMSE": 0.0003135155438541568,
+          "maximum_absolute_error": 0.0006444797675082201,
+          "residuals": [
+            0.0003071044712571608,
+            -0.0006444797675082201,
+            3.525226318969524e-05,
+            -0.00010518708254516479,
+            0.00017664374359432217,
+            0.00034799506788765755,
+            -0.00011732869578271778
+          ],
+          "fitted_at_measured_points": [
+            0.010529978357007383,
+            0.007500985001143719,
+            0.005986488323211887,
+            0.005229239984245971,
+            0.004850615814763013,
+            0.004661303730021534,
+            0.004598199701774375
+          ]
+        },
+        {
+          "function": "USL runtime",
+          "parameters": [
+            0.010577456509009125,
+            0.40939106485847604,
+            0.0005594163043493797
+          ],
+          "parameter_standard_errors": [
+            0.0003750419523497708,
+            0.040709314649650774,
+            0.0011306465875431898
+          ],
+          "R2": 0.9775303148573452,
+          "adjusted_R2": 0.9550606297146904,
+          "RMSE": 0.0003044261175023622,
+          "maximum_absolute_error": 0.0006032983143574823,
+          "residuals": [
+            0.0002596263192554179,
+            -0.0006032983143574823,
+            0.00011188771647214352,
+            -2.8576234085918827e-05,
+            0.0002177390798638497,
+            0.00030032622850609085,
+            -0.0002577024110979676
+          ],
+          "fitted_at_measured_points": [
+            0.010577456509009125,
+            0.007459803547992981,
+            0.0059098528699294385,
+            0.005152629135786725,
+            0.004809520478493486,
+            0.004708972569403101,
+            0.004738573417089624
+          ]
+        },
+        {
+          "function": "Power plus overhead",
+          "parameters": [
+            0.004799213237389834,
+            0.005986852429976628,
+            1.3697709490951553
+          ],
+          "parameter_standard_errors": [
+            0.00018103297799740205,
+            0.00032418502408076624,
+            0.19232453430786756
+          ],
+          "R2": 0.9885108536586668,
+          "adjusted_R2": 0.9770217073173335,
+          "RMSE": 0.00021768439447012906,
+          "maximum_absolute_error": 0.0003481468211259803,
+          "residuals": [
+            5.101716089808174e-05,
+            -0.0002593365869205909,
+            0.000326101713819694,
+            -2.2034636243147346e-05,
+            9.382238128829816e-05,
+            0.0001581472475505781,
+            -0.0003481468211259803
+          ],
+          "fitted_at_measured_points": [
+            0.010786065667366462,
+            0.00711584182055609,
+            0.005695638872581888,
+            0.005146087537943954,
+            0.004933437177069037,
+            0.0048511515503586134,
+            0.004829017827117637
+          ]
+        }
+      ],
+      "component_Wh": [
+        {
+          "function": "Amdahl runtime",
+          "parameters": [
+            0.0001517025439360481,
+            0.00020490739352165582
+          ],
+          "parameter_standard_errors": [
+            9.637215676572617e-06,
+            2.2080736714055987e-05
+          ],
+          "R2": 0.945125408080239,
+          "adjusted_R2": 0.9176881121203586,
+          "RMSE": 1.6353701105608178e-05,
+          "maximum_absolute_error": 2.8833354700938515e-05,
+          "residuals": [
+            3.1069115950458216e-06,
+            -1.2053423261723564e-05,
+            1.8659525566198823e-06,
+            1.1219264026374062e-05,
+            2.8833354700938515e-05,
+            -6.169235206591659e-06,
+            -2.6802824410757006e-05
+          ],
+          "fitted_at_measured_points": [
+            0.00035660993745770394,
+            0.000254156240696876,
+            0.00020292939231646205,
+            0.00017731596812625507,
+            0.00016450925603115157,
+            0.00015810589998359984,
+            0.00015597144796774924
+          ]
+        },
+        {
+          "function": "USL runtime",
+          "parameters": [
+            0.0003566099374787164,
+            0.42540190893830665,
+            5.52144720163061e-15
+          ],
+          "parameter_standard_errors": [
+            2.0147167496681742e-05,
+            0.06545806948984136,
+            0.0018094235844968488
+          ],
+          "R2": 0.9451254080801275,
+          "adjusted_R2": 0.8902508161602549,
+          "RMSE": 1.63537011056248e-05,
+          "maximum_absolute_error": 2.8833350749188157e-05,
+          "residuals": [
+            3.106911574033387e-06,
+            -1.2053425379115817e-05,
+            1.8659493910348464e-06,
+            1.12192603366867e-05,
+            2.8833350749188157e-05,
+            -6.169239289397096e-06,
+            -2.680282853726853e-05
+          ],
+          "fitted_at_measured_points": [
+            0.0003566099374787164,
+            0.00025415624281426827,
+            0.0002029293954820471,
+            0.00017731597181594244,
+            0.00016450925998290193,
+            0.00015810590406640528,
+            0.00015597145209426077
+          ]
+        },
+        {
+          "function": "Power plus overhead",
+          "parameters": [
+            3.627576322296765e-05,
+            0.0002896909841391165,
+            0.2827466565844259
+          ],
+          "parameter_standard_errors": [
+            0.00020248195518444758,
+            0.00019071101315548924,
+            0.3296394031484638
+          ],
+          "R2": 0.8921803703258904,
+          "adjusted_R2": 0.7843607406517807,
+          "RMSE": 2.2923415276141756e-05,
+          "maximum_absolute_error": 3.3750101690665634e-05,
+          "residuals": [
+            3.3750101690665634e-05,
+            -3.23060396073858e-05,
+            -2.723166183645623e-05,
+            -8.652854141116394e-06,
+            2.4792971466997736e-05,
+            6.9285313457531075e-06,
+            -4.062012343396314e-06
+          ],
+          "fitted_at_measured_points": [
+            0.00032596674736208413,
+            0.00027440885704253825,
+            0.00023202700670953816,
+            0.00019718808629374553,
+            0.00016854963926509235,
+            0.00014500813343125508,
+            0.00013323063590038855
+          ]
+        }
+      ]
+    },
+    "CUDA": {
+      "time_seconds": [
+        {
+          "function": "Amdahl runtime",
+          "parameters": [
+            0.002108815024650401,
+            0.0838809205850236
+          ],
+          "parameter_standard_errors": [
+            9.236115052964729e-05,
+            0.0002770383973931205
+          ],
+          "R2": 0.999890929782514,
+          "adjusted_R2": 0.9998666919564061,
+          "RMSE": 0.00025211279710018303,
+          "maximum_absolute_error": 0.0005202241182799151,
+          "residuals": [
+            0.0001864843900385854,
+            -0.00013034383559416135,
+            -0.00044897642090201487,
+            -0.0003798618986533813,
+            0.0005202241182799151,
+            5.200610835536922e-05,
+            0.00025406260587242796,
+            -4.382240598527253e-05,
+            4.3479047808310176e-06,
+            -0.0001267022108437394,
+            1.8379724652380428e-05,
+            9.419856398988581e-05
+          ],
+          "fitted_at_measured_points": [
+            0.085989735609674,
+            0.0440492753171622,
+            0.0230790451709063,
+            0.012593930097778351,
+            0.0073513725612143754,
+            0.0047300937929323885,
+            0.0038563342035050595,
+            0.0034194544087913946,
+            0.002764134716720898,
+            0.0024364748706856496,
+            0.002272644947668025,
+            0.002190729986159213
+          ]
+        },
+        {
+          "function": "USL runtime",
+          "parameters": [
+            0.08600174101696739,
+            0.024230700207066202,
+            1.2535374298043847e-06
+          ],
+          "parameter_standard_errors": [
+            0.0002577893294581074,
+            0.0014071376682890336,
+            3.5131252573282205e-06
+          ],
+          "R2": 0.9998921317259476,
+          "adjusted_R2": 0.9998516811231779,
+          "RMSE": 0.0002507198193133642,
+          "maximum_absolute_error": 0.0005412310162867893,
+          "residuals": [
+            0.00017447898274519646,
+            -0.000123988035251002,
+            -0.00043360172634265837,
+            -0.000360301176190108,
+            0.0005412310162867893,
+            7.244241731732548e-05,
+            0.00027315878353788596,
+            -2.625874517920906e-05,
+            1.5300534242078303e-05,
+            -0.00012940451158863914,
+            -1.1848870263070008e-05,
+            8.809163854205191e-06
+          ],
+          "fitted_at_measured_points": [
+            0.08600174101696739,
+            0.04404291951681904,
+            0.023063670476346942,
+            0.012574369375315078,
+            0.007330365663207501,
+            0.004709657483970432,
+            0.0038372380258396015,
+            0.003401890747985331,
+            0.0027531820872596507,
+            0.0024391771714305493,
+            0.0023028735425834755,
+            0.0022761193862948937
+          ]
+        },
+        {
+          "function": "Power plus overhead",
+          "parameters": [
+            0.0022240223211900823,
+            0.08394940945079776,
+            1.0125524264649106
+          ],
+          "parameter_standard_errors": [
+            0.00010559335366109915,
+            0.00025483917858182416,
+            0.007119420953482568
+          ],
+          "R2": 0.9999189642347407,
+          "adjusted_R2": 0.9998885758227685,
+          "RMSE": 0.00021731022930957512,
+          "maximum_absolute_error": 0.000580199466611345,
+          "residuals": [
+            2.788227724745407e-06,
+            8.38286846205627e-05,
+            -0.0002192567113439084,
+            -0.0002332678346531787,
+            0.000580199466611345,
+            4.6339310602792894e-05,
+            0.00022038310423217345,
+            -9.337993712865743e-05,
+            -7.264187534369122e-05,
+            -0.00022012779034214858,
+            -8.46118117876684e-05,
+            -1.4244140480362648e-05
+          ],
+          "fitted_at_measured_points": [
+            0.08617343177198784,
+            0.043835102796947474,
+            0.022849325461348192,
+            0.012447336033778148,
+            0.0072913972128829455,
+            0.004735760590684965,
+            0.003890013705145314,
+            0.0034690119399347795,
+            0.0028411244968454203,
+            0.0025299004501840587,
+            0.002375636484108074,
+            0.0022991726906294615
+          ]
+        }
+      ],
+      "component_Wh": [
+        {
+          "function": "Amdahl runtime",
+          "parameters": [
+            0.00013284966172769067,
+            0.0020289640160110105
+          ],
+          "parameter_standard_errors": [
+            1.3031744166510975e-05,
+            3.908887555452591e-05
+          ],
+          "R2": 0.9963031028986432,
+          "adjusted_R2": 0.9954815702094528,
+          "RMSE": 3.5571985126448585e-05,
+          "maximum_absolute_error": 8.742404004572748e-05,
+          "residuals": [
+            -1.98210851238864e-05,
+            3.261558459910843e-05,
+            -1.268120391794325e-05,
+            3.9866503180169244e-06,
+            8.742404004572748e-05,
+            2.569984626121479e-05,
+            2.4180594629243985e-05,
+            -9.630053579179262e-06,
+            -2.3659122543138328e-05,
+            -3.632797455328312e-05,
+            -3.768232114647485e-05,
+            -3.5647136158025114e-05
+          ],
+          "fitted_at_measured_points": [
+            0.0021618136777387014,
+            0.001147331669733196,
+            0.0006400906657304433,
+            0.00038647016372906696,
+            0.00025965991272837885,
+            0.00019625478722803475,
+            0.0001751197453945867,
+            0.00016455222447786272,
+            0.00014870094310277668,
+            0.0001407753024152337,
+            0.00013681248207146217,
+            0.00013483107189957643
+          ]
+        },
+        {
+          "function": "USL runtime",
+          "parameters": [
+            0.0021619021500417913,
+            0.06137058429675157,
+            9.801929042699557e-13
+          ],
+          "parameter_standard_errors": [
+            3.657468316469313e-05,
+            0.00814120554808018,
+            1.9830831936558842e-05
+          ],
+          "R2": 0.9963031675932953,
+          "adjusted_R2": 0.994916855440781,
+          "RMSE": 3.5571673875255295e-05,
+          "maximum_absolute_error": 8.758019510801923e-05,
+          "residuals": [
+            -1.990955742697635e-05,
+            3.2657580239055326e-05,
+            -1.2573974309656273e-05,
+            4.1264969041167245e-06,
+            8.758019510801923e-05,
+            2.586415553617344e-05,
+            2.434762195248813e-05,
+            -9.46166724874505e-06,
+            -2.3488697786682225e-05,
+            -3.615653078724785e-05,
+            -3.751036828251363e-05,
+            -3.547492955882803e-05
+          ],
+          "fitted_at_measured_points": [
+            0.0021619021500417913,
+            0.001147289674093249,
+            0.0006399834361221563,
+            0.00038633031714296716,
+            0.0002595037576660871,
+            0.0001960904779530761,
+            0.00017495271807134257,
+            0.0001643838381474285,
+            0.00014853051834632058,
+            0.00014060385864919842,
+            0.00013664052920750095,
+            0.00013465886530037935
+          ]
+        },
+        {
+          "function": "Power plus overhead",
+          "parameters": [
+            0.00012301030393987235,
+            0.002016154254613275,
+            0.9421456603284015
+          ],
+          "parameter_standard_errors": [
+            1.590704531497938e-05,
+            3.6564896740458776e-05,
+            0.03977222054195984
+          ],
+          "R2": 0.9971254064383875,
+          "adjusted_R2": 0.9960474338527828,
+          "RMSE": 3.136733664705913e-05,
+          "maximum_absolute_error": 7.613987361076763e-05,
+          "residuals": [
+            2.828034061667841e-06,
+            7.6128380912064e-06,
+            -4.173023184907154e-05,
+            -1.6791035586559682e-05,
+            7.613987361076763e-05,
+            2.1950975985015074e-05,
+            2.3742831068427364e-05,
+            -8.159958992579427e-06,
+            -1.882419573384929e-05,
+            -2.941750360318039e-05,
+            -2.9529471400264914e-05,
+            -2.676660775564794e-05
+          ],
+          "fitted_at_measured_points": [
+            0.002139164558553147,
+            0.001172334416241098,
+            0.0006691396936615716,
+            0.00040724784963364356,
+            0.0002709440791633387,
+            0.00020000365750423446,
+            0.00017555750895540333,
+            0.0001630821298912629,
+            0.00014386601629348764,
+            0.00013386483146513096,
+            0.00012865963232525223,
+            0.00012595054349719926
+          ]
+        }
+      ]
+    }
+  },
+  "best_hybrid": {
+    "CPU_threads": 48,
+    "GPU_fraction": 0.25,
+    "GPU_batch": 256,
+    "time_seconds": {
+      "n": 3,
+      "mean": 0.003933064284149505,
+      "minimum": 0.0038164075268732923,
+      "maximum": 0.004057193103369497,
+      "std": 0.00012056656768947655
+    },
+    "component_Wh": {
+      "n": 3,
+      "mean": 0.00016152269186969976,
+      "minimum": 0.00011857503086419753,
+      "maximum": 0.00018941242532855435,
+      "std": 3.774307883738143e-05
+    },
+    "samples": [
+      {
+        "repeat": 0,
+        "runs": 93,
+        "seconds_per_replay": 0.0038164075268732923,
+        "component_Wh_per_replay": 0.00018941242532855435,
+        "seconds": 0.3549258999992162,
+        "cpu_J": 26.29728,
+        "gpu_J": 37.118,
+        "cpu_W": 74.09231053596842,
+        "gpu_W": 104.57957562432601
+      },
+      {
+        "repeat": 1,
+        "runs": 87,
+        "seconds_per_replay": 0.004057193103369497,
+        "component_Wh_per_replay": 0.0001765806194163474,
+        "seconds": 0.3529757999931462,
+        "cpu_J": 26.6950500012,
+        "gpu_J": 28.61,
+        "cpu_W": 75.62855584354038,
+        "gpu_W": 81.05371529876984
+      },
+      {
+        "repeat": 2,
+        "runs": 90,
+        "seconds_per_replay": 0.0039255922222057255,
+        "component_Wh_per_replay": 0.00011857503086419753,
+        "seconds": 0.3533032999985153,
+        "cpu_J": 26.17731,
+        "gpu_J": 12.241,
+        "cpu_W": 74.09302432247308,
+        "gpu_W": 34.64728464198166
+      }
+    ]
+  },
+  "input_hash": "53d75ac613725957ac737cfe4b2d3f1fe52b488dc129da031f73ce40ece5d2ac"
+}
