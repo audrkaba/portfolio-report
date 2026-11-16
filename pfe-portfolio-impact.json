@@ -1,0 +1,3095 @@
+{
+  "computed_at_UTC": "2026-11-16T18:10:09.289617+00:00",
+  "PFE_units": 5.491688,
+  "PFE_quote": {
+    "latest_price_EUR": 26.140064594325406,
+    "latest_date": "2026-11-13",
+    "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/PFE?period1=1451606400&period2=1794700800&interval=1d&events=splits"
+  },
+  "current_holdings": {
+    "TKM1T": 288,
+    "SAF1R": 100,
+    "APG1L": 200,
+    "KNE1L": 928,
+    "VLP1L": 117,
+    "RSU1L": 150,
+    "MRK1T": 26,
+    "GRG1L": 543,
+    "HAE1T": 100,
+    "TAL1T": 700,
+    "ROE1L": 516,
+    "TSM1T": 330,
+    "SE0014261764": 7.108,
+    "US:PFE": 5.491688
+  },
+  "published_model_coverage": [
+    {
+      "model": "STOCHASTIC",
+      "policy": "SALE",
+      "PFE_row_present": false,
+      "recorded_PFE_target": 0.0
+    },
+    {
+      "model": "STOCHASTIC",
+      "policy": "NO_SALE",
+      "PFE_row_present": false,
+      "recorded_PFE_target": 0.0
+    },
+    {
+      "model": "STOCHASTIC2",
+      "policy": "SALE",
+      "PFE_row_present": false,
+      "recorded_PFE_target": 0.0
+    },
+    {
+      "model": "STOCHASTIC2",
+      "policy": "NO_SALE",
+      "PFE_row_present": false,
+      "recorded_PFE_target": 0.0
+    },
+    {
+      "model": "stochA",
+      "policy": "SALE",
+      "PFE_row_present": false,
+      "recorded_PFE_target": 0.0
+    },
+    {
+      "model": "stochA",
+      "policy": "NO_SALE",
+      "PFE_row_present": false,
+      "recorded_PFE_target": 0.0
+    },
+    {
+      "model": "stoch2A",
+      "policy": "SALE",
+      "PFE_row_present": false,
+      "recorded_PFE_target": 0.0
+    },
+    {
+      "model": "stoch2A",
+      "policy": "NO_SALE",
+      "PFE_row_present": false,
+      "recorded_PFE_target": 0.0
+    },
+    {
+      "model": "MARKOWITZ",
+      "policy": "NO_SALE",
+      "PFE_row_present": false,
+      "recorded_PFE_target": 0.0
+    },
+    {
+      "model": "MARKOWITZ",
+      "policy": "SALE",
+      "PFE_row_present": false,
+      "recorded_PFE_target": 0.0
+    },
+    {
+      "model": "MINIMAX",
+      "policy": "NO_SALE",
+      "PFE_row_present": false,
+      "recorded_PFE_target": 0.0
+    },
+    {
+      "model": "MINIMAX",
+      "policy": "SALE",
+      "PFE_row_present": false,
+      "recorded_PFE_target": 0.0
+    },
+    {
+      "model": "ROBUST",
+      "policy": "NO_SALE",
+      "PFE_row_present": false,
+      "recorded_PFE_target": 0.0
+    },
+    {
+      "model": "ROBUST",
+      "policy": "SALE",
+      "PFE_row_present": false,
+      "recorded_PFE_target": 0.0
+    },
+    {
+      "model": "UPDATE2",
+      "policy": "NO_SALE",
+      "PFE_row_present": false,
+      "recorded_PFE_target": 0.0
+    },
+    {
+      "model": "UPDATE2",
+      "policy": "SALE",
+      "PFE_row_present": false,
+      "recorded_PFE_target": 0.0
+    },
+    {
+      "model": "UPDATE3",
+      "policy": "NO_SALE",
+      "PFE_row_present": false,
+      "recorded_PFE_target": 0.0
+    },
+    {
+      "model": "UPDATE3",
+      "policy": "SALE",
+      "PFE_row_present": false,
+      "recorded_PFE_target": 0.0
+    },
+    {
+      "model": "NETSD",
+      "policy": "SALE",
+      "PFE_row_present": false,
+      "recorded_PFE_target": 0.0
+    },
+    {
+      "model": "NETSD",
+      "policy": "NO_SALE",
+      "PFE_row_present": false,
+      "recorded_PFE_target": 0.0
+    }
+  ],
+  "contexts": {
+    "FULL": {
+      "observations": 1130,
+      "first_return_date": "2021-11-29",
+      "last_return_date": "2026-05-19",
+      "rows": [
+        {
+          "model": "CURRENT",
+          "policy": "HELD",
+          "recorded_PFE_units": 5.491688,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 84,
+            "IN": 0,
+            "D": 115,
+            "netSD": 0.7304347826086957,
+            "invested_EUR": 11222.509933451882,
+            "cash_EUR": 3777.490066548118,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 84,
+            "IN": 0,
+            "D": 115,
+            "netSD": 0.7304347826086957,
+            "invested_EUR": 11078.9568544,
+            "cash_EUR": 3921.0431456000006,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.0,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "STOCHASTIC",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 93,
+            "IN": 0,
+            "D": 115,
+            "netSD": 0.808695652173913,
+            "invested_EUR": 12055.681879051881,
+            "cash_EUR": 2944.318120948119,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 96,
+            "IN": 0,
+            "D": 115,
+            "netSD": 0.8347826086956521,
+            "invested_EUR": 11912.128799999999,
+            "cash_EUR": 3087.8712000000014,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": -0.02608695652173909,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "STOCHASTIC",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 94,
+            "IN": 0,
+            "D": 115,
+            "netSD": 0.8173913043478261,
+            "invested_EUR": 12055.039879051881,
+            "cash_EUR": 2944.960120948119,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 96,
+            "IN": 0,
+            "D": 115,
+            "netSD": 0.8347826086956521,
+            "invested_EUR": 11911.486799999999,
+            "cash_EUR": 3088.5132000000012,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": -0.017391304347825987,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "STOCHASTIC2",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 98,
+            "IN": 0,
+            "D": 115,
+            "netSD": 0.8521739130434782,
+            "invested_EUR": 10769.869593451882,
+            "cash_EUR": 4230.130406548118,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 99,
+            "IN": 0,
+            "D": 115,
+            "netSD": 0.8608695652173913,
+            "invested_EUR": 10626.3165144,
+            "cash_EUR": 4373.6834856000005,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": -0.008695652173913104,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "STOCHASTIC2",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 84,
+            "IN": 0,
+            "D": 115,
+            "netSD": 0.7304347826086957,
+            "invested_EUR": 11360.659933451883,
+            "cash_EUR": 3639.3400665481167,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 87,
+            "IN": 0,
+            "D": 115,
+            "netSD": 0.7565217391304347,
+            "invested_EUR": 11217.1068544,
+            "cash_EUR": 3782.893145599999,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": -0.02608695652173909,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "stochA",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 104,
+            "IN": 0,
+            "D": 115,
+            "netSD": 0.9043478260869565,
+            "invested_EUR": 12066.149879051884,
+            "cash_EUR": 2933.8501209481165,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 102,
+            "IN": 0,
+            "D": 115,
+            "netSD": 0.8869565217391304,
+            "invested_EUR": 11922.596800000001,
+            "cash_EUR": 3077.403199999999,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.017391304347826098,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "stochA",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 94,
+            "IN": 0,
+            "D": 115,
+            "netSD": 0.8173913043478261,
+            "invested_EUR": 12045.209879051883,
+            "cash_EUR": 2954.790120948117,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 96,
+            "IN": 0,
+            "D": 115,
+            "netSD": 0.8347826086956521,
+            "invested_EUR": 11901.6568,
+            "cash_EUR": 3098.3431999999993,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": -0.017391304347825987,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "stoch2A",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 101,
+            "IN": 0,
+            "D": 115,
+            "netSD": 0.8782608695652174,
+            "invested_EUR": 10751.729593451882,
+            "cash_EUR": 4248.2704065481175,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 100,
+            "IN": 0,
+            "D": 115,
+            "netSD": 0.8695652173913043,
+            "invested_EUR": 10608.1765144,
+            "cash_EUR": 4391.8234856,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.008695652173913104,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "stoch2A",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 84,
+            "IN": 0,
+            "D": 115,
+            "netSD": 0.7304347826086957,
+            "invested_EUR": 11360.659933451883,
+            "cash_EUR": 3639.3400665481167,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 87,
+            "IN": 0,
+            "D": 115,
+            "netSD": 0.7565217391304347,
+            "invested_EUR": 11217.1068544,
+            "cash_EUR": 3782.893145599999,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": -0.02608695652173909,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "MARKOWITZ",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 81,
+            "IN": 0,
+            "D": 115,
+            "netSD": 0.7043478260869566,
+            "invested_EUR": 11069.009933451882,
+            "cash_EUR": 3930.990066548118,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 83,
+            "IN": 0,
+            "D": 115,
+            "netSD": 0.7217391304347827,
+            "invested_EUR": 10925.4568544,
+            "cash_EUR": 4074.5431456000006,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": -0.017391304347826098,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "MARKOWITZ",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 120,
+            "IN": 0,
+            "D": 120,
+            "netSD": 1.0,
+            "invested_EUR": 4175.895842251882,
+            "cash_EUR": 10824.10415774812,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 120,
+            "IN": 0,
+            "D": 120,
+            "netSD": 1.0,
+            "invested_EUR": 4032.3427632,
+            "cash_EUR": 10967.6572368,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.0,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "MINIMAX",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 80,
+            "IN": 0,
+            "D": 115,
+            "netSD": 0.6956521739130435,
+            "invested_EUR": 11817.791628651881,
+            "cash_EUR": 3182.208371348119,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 82,
+            "IN": 0,
+            "D": 115,
+            "netSD": 0.7130434782608696,
+            "invested_EUR": 11674.238549599999,
+            "cash_EUR": 3325.761450400001,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": -0.017391304347826098,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "MINIMAX",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 117,
+            "IN": 0,
+            "D": 117,
+            "netSD": 1.0,
+            "invested_EUR": 4031.198458751881,
+            "cash_EUR": 10968.801541248118,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 116,
+            "IN": 0,
+            "D": 116,
+            "netSD": 1.0,
+            "invested_EUR": 3887.6453796999995,
+            "cash_EUR": 11112.3546203,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.0,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "ROBUST",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 81,
+            "IN": 0,
+            "D": 115,
+            "netSD": 0.7043478260869566,
+            "invested_EUR": 11069.009933451882,
+            "cash_EUR": 3930.990066548118,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 83,
+            "IN": 0,
+            "D": 115,
+            "netSD": 0.7217391304347827,
+            "invested_EUR": 10925.4568544,
+            "cash_EUR": 4074.5431456000006,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": -0.017391304347826098,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "ROBUST",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 106,
+            "IN": 0,
+            "D": 115,
+            "netSD": 0.9217391304347826,
+            "invested_EUR": 3592.1726342518814,
+            "cash_EUR": 11407.827365748119,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 105,
+            "IN": 0,
+            "D": 115,
+            "netSD": 0.9130434782608695,
+            "invested_EUR": 3448.6195552,
+            "cash_EUR": 11551.380444800001,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.008695652173913104,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "UPDATE2",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 90,
+            "IN": 0,
+            "D": 115,
+            "netSD": 0.782608695652174,
+            "invested_EUR": 12062.62993345188,
+            "cash_EUR": 2937.370066548119,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 93,
+            "IN": 0,
+            "D": 115,
+            "netSD": 0.808695652173913,
+            "invested_EUR": 11919.076854399998,
+            "cash_EUR": 3080.9231456000016,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": -0.02608695652173909,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "UPDATE2",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 120,
+            "IN": 0,
+            "D": 120,
+            "netSD": 1.0,
+            "invested_EUR": 5987.143933451881,
+            "cash_EUR": 9012.85606654812,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 123,
+            "IN": 0,
+            "D": 123,
+            "netSD": 1.0,
+            "invested_EUR": 5843.590854399999,
+            "cash_EUR": 9156.4091456,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.0,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "UPDATE3",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 93,
+            "IN": 0,
+            "D": 115,
+            "netSD": 0.808695652173913,
+            "invested_EUR": 12029.85987905188,
+            "cash_EUR": 2970.140120948119,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 96,
+            "IN": 0,
+            "D": 115,
+            "netSD": 0.8347826086956521,
+            "invested_EUR": 11886.306799999998,
+            "cash_EUR": 3113.6932000000015,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": -0.02608695652173909,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "UPDATE3",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 119,
+            "IN": 0,
+            "D": 119,
+            "netSD": 1.0,
+            "invested_EUR": 6369.893879051881,
+            "cash_EUR": 8630.10612094812,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 122,
+            "IN": 0,
+            "D": 122,
+            "netSD": 1.0,
+            "invested_EUR": 6226.3408,
+            "cash_EUR": 8773.6592,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.0,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "NETSD",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 96,
+            "IN": 0,
+            "D": 115,
+            "netSD": 0.8347826086956521,
+            "invested_EUR": 9888.68556445188,
+            "cash_EUR": 5111.31443554812,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 104,
+            "IN": 0,
+            "D": 115,
+            "netSD": 0.9043478260869565,
+            "invested_EUR": 9745.132485399998,
+            "cash_EUR": 5254.867514600002,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": -0.06956521739130439,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "NETSD",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 94,
+            "IN": 0,
+            "D": 115,
+            "netSD": 0.8173913043478261,
+            "invested_EUR": 12064.33274305188,
+            "cash_EUR": 2935.6672569481198,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 96,
+            "IN": 0,
+            "D": 115,
+            "netSD": 0.8347826086956521,
+            "invested_EUR": 11920.779663999998,
+            "cash_EUR": 3079.220336000002,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": -0.017391304347825987,
+          "other_quantities_unchanged": true
+        }
+      ]
+    },
+    "R1": {
+      "observations": 815,
+      "first_return_date": "2021-12-09",
+      "last_return_date": "2026-05-19",
+      "rows": [
+        {
+          "model": "CURRENT",
+          "policy": "HELD",
+          "recorded_PFE_units": 5.491688,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 68,
+            "IN": 0,
+            "D": 122,
+            "netSD": 0.5573770491803278,
+            "invested_EUR": 11222.509933451882,
+            "cash_EUR": 3777.490066548118,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 68,
+            "IN": 0,
+            "D": 122,
+            "netSD": 0.5573770491803278,
+            "invested_EUR": 11078.9568544,
+            "cash_EUR": 3921.0431456000006,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.0,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "STOCHASTIC",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 70,
+            "IN": 0,
+            "D": 122,
+            "netSD": 0.5737704918032787,
+            "invested_EUR": 12055.681879051881,
+            "cash_EUR": 2944.318120948119,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 70,
+            "IN": 0,
+            "D": 122,
+            "netSD": 0.5737704918032787,
+            "invested_EUR": 11912.128799999999,
+            "cash_EUR": 3087.8712000000014,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.0,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "STOCHASTIC",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 70,
+            "IN": 0,
+            "D": 122,
+            "netSD": 0.5737704918032787,
+            "invested_EUR": 12055.039879051881,
+            "cash_EUR": 2944.960120948119,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 70,
+            "IN": 0,
+            "D": 122,
+            "netSD": 0.5737704918032787,
+            "invested_EUR": 11911.486799999999,
+            "cash_EUR": 3088.5132000000012,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.0,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "STOCHASTIC2",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 70,
+            "IN": 0,
+            "D": 122,
+            "netSD": 0.5737704918032787,
+            "invested_EUR": 10769.869593451882,
+            "cash_EUR": 4230.130406548118,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 74,
+            "IN": 0,
+            "D": 122,
+            "netSD": 0.6065573770491803,
+            "invested_EUR": 10626.3165144,
+            "cash_EUR": 4373.6834856000005,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": -0.032786885245901676,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "STOCHASTIC2",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 68,
+            "IN": 0,
+            "D": 122,
+            "netSD": 0.5573770491803278,
+            "invested_EUR": 11360.659933451883,
+            "cash_EUR": 3639.3400665481167,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 68,
+            "IN": 0,
+            "D": 122,
+            "netSD": 0.5573770491803278,
+            "invested_EUR": 11217.1068544,
+            "cash_EUR": 3782.893145599999,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.0,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "stochA",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 100,
+            "IN": 0,
+            "D": 122,
+            "netSD": 0.819672131147541,
+            "invested_EUR": 12066.149879051884,
+            "cash_EUR": 2933.8501209481165,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 100,
+            "IN": 0,
+            "D": 122,
+            "netSD": 0.819672131147541,
+            "invested_EUR": 11922.596800000001,
+            "cash_EUR": 3077.403199999999,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.0,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "stochA",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 70,
+            "IN": 0,
+            "D": 122,
+            "netSD": 0.5737704918032787,
+            "invested_EUR": 12045.209879051883,
+            "cash_EUR": 2954.790120948117,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 70,
+            "IN": 0,
+            "D": 122,
+            "netSD": 0.5737704918032787,
+            "invested_EUR": 11901.6568,
+            "cash_EUR": 3098.3431999999993,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.0,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "stoch2A",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 78,
+            "IN": 1,
+            "D": 122,
+            "netSD": 0.6311475409836066,
+            "invested_EUR": 10751.729593451882,
+            "cash_EUR": 4248.2704065481175,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 82,
+            "IN": 1,
+            "D": 122,
+            "netSD": 0.6639344262295082,
+            "invested_EUR": 10608.1765144,
+            "cash_EUR": 4391.8234856,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": -0.032786885245901565,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "stoch2A",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 68,
+            "IN": 0,
+            "D": 122,
+            "netSD": 0.5573770491803278,
+            "invested_EUR": 11360.659933451883,
+            "cash_EUR": 3639.3400665481167,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 68,
+            "IN": 0,
+            "D": 122,
+            "netSD": 0.5573770491803278,
+            "invested_EUR": 11217.1068544,
+            "cash_EUR": 3782.893145599999,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.0,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "MARKOWITZ",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 68,
+            "IN": 0,
+            "D": 122,
+            "netSD": 0.5573770491803278,
+            "invested_EUR": 11069.009933451882,
+            "cash_EUR": 3930.990066548118,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 68,
+            "IN": 0,
+            "D": 122,
+            "netSD": 0.5573770491803278,
+            "invested_EUR": 10925.4568544,
+            "cash_EUR": 4074.5431456000006,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.0,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "MARKOWITZ",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 104,
+            "IN": 0,
+            "D": 122,
+            "netSD": 0.8524590163934426,
+            "invested_EUR": 4175.895842251882,
+            "cash_EUR": 10824.10415774812,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 104,
+            "IN": 0,
+            "D": 122,
+            "netSD": 0.8524590163934426,
+            "invested_EUR": 4032.3427632,
+            "cash_EUR": 10967.6572368,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.0,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "MINIMAX",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 70,
+            "IN": 0,
+            "D": 122,
+            "netSD": 0.5737704918032787,
+            "invested_EUR": 11817.791628651881,
+            "cash_EUR": 3182.208371348119,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 70,
+            "IN": 0,
+            "D": 122,
+            "netSD": 0.5737704918032787,
+            "invested_EUR": 11674.238549599999,
+            "cash_EUR": 3325.761450400001,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.0,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "MINIMAX",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 100,
+            "IN": 0,
+            "D": 122,
+            "netSD": 0.819672131147541,
+            "invested_EUR": 4031.198458751881,
+            "cash_EUR": 10968.801541248118,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 95,
+            "IN": 0,
+            "D": 122,
+            "netSD": 0.7786885245901639,
+            "invested_EUR": 3887.6453796999995,
+            "cash_EUR": 11112.3546203,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.040983606557377095,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "ROBUST",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 68,
+            "IN": 0,
+            "D": 122,
+            "netSD": 0.5573770491803278,
+            "invested_EUR": 11069.009933451882,
+            "cash_EUR": 3930.990066548118,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 68,
+            "IN": 0,
+            "D": 122,
+            "netSD": 0.5573770491803278,
+            "invested_EUR": 10925.4568544,
+            "cash_EUR": 4074.5431456000006,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.0,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "ROBUST",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 86,
+            "IN": 1,
+            "D": 122,
+            "netSD": 0.6967213114754098,
+            "invested_EUR": 3592.1726342518814,
+            "cash_EUR": 11407.827365748119,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 80,
+            "IN": 0,
+            "D": 122,
+            "netSD": 0.6557377049180327,
+            "invested_EUR": 3448.6195552,
+            "cash_EUR": 11551.380444800001,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.040983606557377095,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "UPDATE2",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 70,
+            "IN": 0,
+            "D": 122,
+            "netSD": 0.5737704918032787,
+            "invested_EUR": 12062.62993345188,
+            "cash_EUR": 2937.370066548119,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 70,
+            "IN": 0,
+            "D": 122,
+            "netSD": 0.5737704918032787,
+            "invested_EUR": 11919.076854399998,
+            "cash_EUR": 3080.9231456000016,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.0,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "UPDATE2",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 94,
+            "IN": 0,
+            "D": 122,
+            "netSD": 0.7704918032786885,
+            "invested_EUR": 5987.143933451881,
+            "cash_EUR": 9012.85606654812,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 94,
+            "IN": 0,
+            "D": 122,
+            "netSD": 0.7704918032786885,
+            "invested_EUR": 5843.590854399999,
+            "cash_EUR": 9156.4091456,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.0,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "UPDATE3",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 70,
+            "IN": 0,
+            "D": 122,
+            "netSD": 0.5737704918032787,
+            "invested_EUR": 12029.85987905188,
+            "cash_EUR": 2970.140120948119,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 70,
+            "IN": 0,
+            "D": 122,
+            "netSD": 0.5737704918032787,
+            "invested_EUR": 11886.306799999998,
+            "cash_EUR": 3113.6932000000015,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.0,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "UPDATE3",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 94,
+            "IN": 1,
+            "D": 122,
+            "netSD": 0.7622950819672131,
+            "invested_EUR": 6369.893879051881,
+            "cash_EUR": 8630.10612094812,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 92,
+            "IN": 0,
+            "D": 122,
+            "netSD": 0.7540983606557377,
+            "invested_EUR": 6226.3408,
+            "cash_EUR": 8773.6592,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.008196721311475419,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "NETSD",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 82,
+            "IN": 0,
+            "D": 122,
+            "netSD": 0.6721311475409836,
+            "invested_EUR": 9888.68556445188,
+            "cash_EUR": 5111.31443554812,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 84,
+            "IN": 0,
+            "D": 122,
+            "netSD": 0.6885245901639344,
+            "invested_EUR": 9745.132485399998,
+            "cash_EUR": 5254.867514600002,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": -0.016393442622950838,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "NETSD",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 70,
+            "IN": 0,
+            "D": 122,
+            "netSD": 0.5737704918032787,
+            "invested_EUR": 12064.33274305188,
+            "cash_EUR": 2935.6672569481198,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 70,
+            "IN": 0,
+            "D": 122,
+            "netSD": 0.5737704918032787,
+            "invested_EUR": 11920.779663999998,
+            "cash_EUR": 3079.220336000002,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.0,
+          "other_quantities_unchanged": true
+        }
+      ]
+    },
+    "R2": {
+      "observations": 24,
+      "first_return_date": "2022-01-04",
+      "last_return_date": "2026-03-13",
+      "rows": [
+        {
+          "model": "CURRENT",
+          "policy": "HELD",
+          "recorded_PFE_units": 5.491688,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 74,
+            "IN": 2,
+            "D": 142,
+            "netSD": 0.5070422535211268,
+            "invested_EUR": 11222.509933451882,
+            "cash_EUR": 3777.490066548118,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 75,
+            "IN": 2,
+            "D": 142,
+            "netSD": 0.5140845070422535,
+            "invested_EUR": 11078.9568544,
+            "cash_EUR": 3921.0431456000006,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": -0.007042253521126751,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "STOCHASTIC",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 75,
+            "IN": 2,
+            "D": 142,
+            "netSD": 0.5140845070422535,
+            "invested_EUR": 12055.681879051881,
+            "cash_EUR": 2944.318120948119,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 76,
+            "IN": 2,
+            "D": 142,
+            "netSD": 0.5211267605633803,
+            "invested_EUR": 11912.128799999999,
+            "cash_EUR": 3087.8712000000014,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": -0.007042253521126751,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "STOCHASTIC",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 75,
+            "IN": 2,
+            "D": 142,
+            "netSD": 0.5140845070422535,
+            "invested_EUR": 12055.039879051881,
+            "cash_EUR": 2944.960120948119,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 76,
+            "IN": 2,
+            "D": 142,
+            "netSD": 0.5211267605633803,
+            "invested_EUR": 11911.486799999999,
+            "cash_EUR": 3088.5132000000012,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": -0.007042253521126751,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "STOCHASTIC2",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 72,
+            "IN": 2,
+            "D": 142,
+            "netSD": 0.49295774647887325,
+            "invested_EUR": 10769.869593451882,
+            "cash_EUR": 4230.130406548118,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 73,
+            "IN": 2,
+            "D": 142,
+            "netSD": 0.5,
+            "invested_EUR": 10626.3165144,
+            "cash_EUR": 4373.6834856000005,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": -0.007042253521126751,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "STOCHASTIC2",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 75,
+            "IN": 2,
+            "D": 142,
+            "netSD": 0.5140845070422535,
+            "invested_EUR": 11360.659933451883,
+            "cash_EUR": 3639.3400665481167,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 75,
+            "IN": 2,
+            "D": 142,
+            "netSD": 0.5140845070422535,
+            "invested_EUR": 11217.1068544,
+            "cash_EUR": 3782.893145599999,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.0,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "stochA",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 38,
+            "IN": 11,
+            "D": 142,
+            "netSD": 0.19014084507042253,
+            "invested_EUR": 12066.149879051884,
+            "cash_EUR": 2933.8501209481165,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 40,
+            "IN": 11,
+            "D": 142,
+            "netSD": 0.20422535211267606,
+            "invested_EUR": 11922.596800000001,
+            "cash_EUR": 3077.403199999999,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": -0.01408450704225353,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "stochA",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 75,
+            "IN": 2,
+            "D": 142,
+            "netSD": 0.5140845070422535,
+            "invested_EUR": 12045.209879051883,
+            "cash_EUR": 2954.790120948117,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 76,
+            "IN": 2,
+            "D": 142,
+            "netSD": 0.5211267605633803,
+            "invested_EUR": 11901.6568,
+            "cash_EUR": 3098.3431999999993,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": -0.007042253521126751,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "stoch2A",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 64,
+            "IN": 2,
+            "D": 142,
+            "netSD": 0.43661971830985913,
+            "invested_EUR": 10751.729593451882,
+            "cash_EUR": 4248.2704065481175,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 65,
+            "IN": 2,
+            "D": 142,
+            "netSD": 0.44366197183098594,
+            "invested_EUR": 10608.1765144,
+            "cash_EUR": 4391.8234856,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": -0.007042253521126807,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "stoch2A",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 75,
+            "IN": 2,
+            "D": 142,
+            "netSD": 0.5140845070422535,
+            "invested_EUR": 11360.659933451883,
+            "cash_EUR": 3639.3400665481167,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 75,
+            "IN": 2,
+            "D": 142,
+            "netSD": 0.5140845070422535,
+            "invested_EUR": 11217.1068544,
+            "cash_EUR": 3782.893145599999,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.0,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "MARKOWITZ",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 74,
+            "IN": 2,
+            "D": 142,
+            "netSD": 0.5070422535211268,
+            "invested_EUR": 11069.009933451882,
+            "cash_EUR": 3930.990066548118,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 75,
+            "IN": 2,
+            "D": 142,
+            "netSD": 0.5140845070422535,
+            "invested_EUR": 10925.4568544,
+            "cash_EUR": 4074.5431456000006,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": -0.007042253521126751,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "MARKOWITZ",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 58,
+            "IN": 4,
+            "D": 142,
+            "netSD": 0.38028169014084506,
+            "invested_EUR": 4175.895842251882,
+            "cash_EUR": 10824.10415774812,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 58,
+            "IN": 4,
+            "D": 142,
+            "netSD": 0.38028169014084506,
+            "invested_EUR": 4032.3427632,
+            "cash_EUR": 10967.6572368,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.0,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "MINIMAX",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 72,
+            "IN": 2,
+            "D": 142,
+            "netSD": 0.49295774647887325,
+            "invested_EUR": 11817.791628651881,
+            "cash_EUR": 3182.208371348119,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 73,
+            "IN": 2,
+            "D": 142,
+            "netSD": 0.5,
+            "invested_EUR": 11674.238549599999,
+            "cash_EUR": 3325.761450400001,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": -0.007042253521126751,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "MINIMAX",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 58,
+            "IN": 5,
+            "D": 142,
+            "netSD": 0.3732394366197183,
+            "invested_EUR": 4031.198458751881,
+            "cash_EUR": 10968.801541248118,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 58,
+            "IN": 5,
+            "D": 142,
+            "netSD": 0.3732394366197183,
+            "invested_EUR": 3887.6453796999995,
+            "cash_EUR": 11112.3546203,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.0,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "ROBUST",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 74,
+            "IN": 2,
+            "D": 142,
+            "netSD": 0.5070422535211268,
+            "invested_EUR": 11069.009933451882,
+            "cash_EUR": 3930.990066548118,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 75,
+            "IN": 2,
+            "D": 142,
+            "netSD": 0.5140845070422535,
+            "invested_EUR": 10925.4568544,
+            "cash_EUR": 4074.5431456000006,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": -0.007042253521126751,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "ROBUST",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 55,
+            "IN": 5,
+            "D": 142,
+            "netSD": 0.352112676056338,
+            "invested_EUR": 3592.1726342518814,
+            "cash_EUR": 11407.827365748119,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 52,
+            "IN": 6,
+            "D": 142,
+            "netSD": 0.323943661971831,
+            "invested_EUR": 3448.6195552,
+            "cash_EUR": 11551.380444800001,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.028169014084507005,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "UPDATE2",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 75,
+            "IN": 2,
+            "D": 142,
+            "netSD": 0.5140845070422535,
+            "invested_EUR": 12062.62993345188,
+            "cash_EUR": 2937.370066548119,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 76,
+            "IN": 2,
+            "D": 142,
+            "netSD": 0.5211267605633803,
+            "invested_EUR": 11919.076854399998,
+            "cash_EUR": 3080.9231456000016,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": -0.007042253521126751,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "UPDATE2",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 65,
+            "IN": 2,
+            "D": 142,
+            "netSD": 0.44366197183098594,
+            "invested_EUR": 5987.143933451881,
+            "cash_EUR": 9012.85606654812,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 67,
+            "IN": 2,
+            "D": 142,
+            "netSD": 0.45774647887323944,
+            "invested_EUR": 5843.590854399999,
+            "cash_EUR": 9156.4091456,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": -0.014084507042253502,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "UPDATE3",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 75,
+            "IN": 2,
+            "D": 142,
+            "netSD": 0.5140845070422535,
+            "invested_EUR": 12029.85987905188,
+            "cash_EUR": 2970.140120948119,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 76,
+            "IN": 2,
+            "D": 142,
+            "netSD": 0.5211267605633803,
+            "invested_EUR": 11886.306799999998,
+            "cash_EUR": 3113.6932000000015,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": -0.007042253521126751,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "UPDATE3",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 63,
+            "IN": 2,
+            "D": 142,
+            "netSD": 0.4295774647887324,
+            "invested_EUR": 6369.893879051881,
+            "cash_EUR": 8630.10612094812,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 65,
+            "IN": 4,
+            "D": 142,
+            "netSD": 0.4295774647887324,
+            "invested_EUR": 6226.3408,
+            "cash_EUR": 8773.6592,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.0,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "NETSD",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 74,
+            "IN": 1,
+            "D": 142,
+            "netSD": 0.5140845070422535,
+            "invested_EUR": 9888.68556445188,
+            "cash_EUR": 5111.31443554812,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 75,
+            "IN": 1,
+            "D": 142,
+            "netSD": 0.5211267605633803,
+            "invested_EUR": 9745.132485399998,
+            "cash_EUR": 5254.867514600002,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": -0.007042253521126751,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "NETSD",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 75,
+            "IN": 2,
+            "D": 142,
+            "netSD": 0.5140845070422535,
+            "invested_EUR": 12064.33274305188,
+            "cash_EUR": 2935.6672569481198,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 76,
+            "IN": 2,
+            "D": 142,
+            "netSD": 0.5211267605633803,
+            "invested_EUR": 11920.779663999998,
+            "cash_EUR": 3079.220336000002,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": -0.007042253521126751,
+          "other_quantities_unchanged": true
+        }
+      ]
+    },
+    "R3": {
+      "observations": 190,
+      "first_return_date": "2021-12-02",
+      "last_return_date": "2026-01-20",
+      "rows": [
+        {
+          "model": "CURRENT",
+          "policy": "HELD",
+          "recorded_PFE_units": 5.491688,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 103,
+            "IN": 0,
+            "D": 124,
+            "netSD": 0.8306451612903226,
+            "invested_EUR": 11222.509933451882,
+            "cash_EUR": 3777.490066548118,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 103,
+            "IN": 0,
+            "D": 124,
+            "netSD": 0.8306451612903226,
+            "invested_EUR": 11078.9568544,
+            "cash_EUR": 3921.0431456000006,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.0,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "STOCHASTIC",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 107,
+            "IN": 0,
+            "D": 124,
+            "netSD": 0.8629032258064516,
+            "invested_EUR": 12055.681879051881,
+            "cash_EUR": 2944.318120948119,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 107,
+            "IN": 0,
+            "D": 124,
+            "netSD": 0.8629032258064516,
+            "invested_EUR": 11912.128799999999,
+            "cash_EUR": 3087.8712000000014,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.0,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "STOCHASTIC",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 107,
+            "IN": 0,
+            "D": 124,
+            "netSD": 0.8629032258064516,
+            "invested_EUR": 12055.039879051881,
+            "cash_EUR": 2944.960120948119,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 107,
+            "IN": 0,
+            "D": 124,
+            "netSD": 0.8629032258064516,
+            "invested_EUR": 11911.486799999999,
+            "cash_EUR": 3088.5132000000012,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.0,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "STOCHASTIC2",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 105,
+            "IN": 0,
+            "D": 124,
+            "netSD": 0.8467741935483871,
+            "invested_EUR": 10769.869593451882,
+            "cash_EUR": 4230.130406548118,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 107,
+            "IN": 0,
+            "D": 124,
+            "netSD": 0.8629032258064516,
+            "invested_EUR": 10626.3165144,
+            "cash_EUR": 4373.6834856000005,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": -0.016129032258064502,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "STOCHASTIC2",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 105,
+            "IN": 0,
+            "D": 124,
+            "netSD": 0.8467741935483871,
+            "invested_EUR": 11360.659933451883,
+            "cash_EUR": 3639.3400665481167,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 105,
+            "IN": 0,
+            "D": 124,
+            "netSD": 0.8467741935483871,
+            "invested_EUR": 11217.1068544,
+            "cash_EUR": 3782.893145599999,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.0,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "stochA",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 101,
+            "IN": 0,
+            "D": 124,
+            "netSD": 0.8145161290322581,
+            "invested_EUR": 12066.149879051884,
+            "cash_EUR": 2933.8501209481165,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 100,
+            "IN": 0,
+            "D": 124,
+            "netSD": 0.8064516129032258,
+            "invested_EUR": 11922.596800000001,
+            "cash_EUR": 3077.403199999999,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.008064516129032362,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "stochA",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 107,
+            "IN": 0,
+            "D": 124,
+            "netSD": 0.8629032258064516,
+            "invested_EUR": 12045.209879051883,
+            "cash_EUR": 2954.790120948117,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 107,
+            "IN": 0,
+            "D": 124,
+            "netSD": 0.8629032258064516,
+            "invested_EUR": 11901.6568,
+            "cash_EUR": 3098.3431999999993,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.0,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "stoch2A",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 118,
+            "IN": 0,
+            "D": 124,
+            "netSD": 0.9516129032258065,
+            "invested_EUR": 10751.729593451882,
+            "cash_EUR": 4248.2704065481175,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 120,
+            "IN": 0,
+            "D": 124,
+            "netSD": 0.967741935483871,
+            "invested_EUR": 10608.1765144,
+            "cash_EUR": 4391.8234856,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": -0.016129032258064502,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "stoch2A",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 105,
+            "IN": 0,
+            "D": 124,
+            "netSD": 0.8467741935483871,
+            "invested_EUR": 11360.659933451883,
+            "cash_EUR": 3639.3400665481167,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 105,
+            "IN": 0,
+            "D": 124,
+            "netSD": 0.8467741935483871,
+            "invested_EUR": 11217.1068544,
+            "cash_EUR": 3782.893145599999,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.0,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "MARKOWITZ",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 100,
+            "IN": 0,
+            "D": 124,
+            "netSD": 0.8064516129032258,
+            "invested_EUR": 11069.009933451882,
+            "cash_EUR": 3930.990066548118,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 102,
+            "IN": 0,
+            "D": 124,
+            "netSD": 0.8225806451612904,
+            "invested_EUR": 10925.4568544,
+            "cash_EUR": 4074.5431456000006,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": -0.016129032258064613,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "MARKOWITZ",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 123,
+            "IN": 0,
+            "D": 124,
+            "netSD": 0.9919354838709677,
+            "invested_EUR": 4175.895842251882,
+            "cash_EUR": 10824.10415774812,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 122,
+            "IN": 0,
+            "D": 124,
+            "netSD": 0.9838709677419355,
+            "invested_EUR": 4032.3427632,
+            "cash_EUR": 10967.6572368,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.008064516129032251,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "MINIMAX",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 94,
+            "IN": 0,
+            "D": 124,
+            "netSD": 0.7580645161290323,
+            "invested_EUR": 11817.791628651881,
+            "cash_EUR": 3182.208371348119,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 94,
+            "IN": 0,
+            "D": 124,
+            "netSD": 0.7580645161290323,
+            "invested_EUR": 11674.238549599999,
+            "cash_EUR": 3325.761450400001,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.0,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "MINIMAX",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 114,
+            "IN": 0,
+            "D": 124,
+            "netSD": 0.9193548387096774,
+            "invested_EUR": 4031.198458751881,
+            "cash_EUR": 10968.801541248118,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 114,
+            "IN": 0,
+            "D": 124,
+            "netSD": 0.9193548387096774,
+            "invested_EUR": 3887.6453796999995,
+            "cash_EUR": 11112.3546203,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.0,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "ROBUST",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 100,
+            "IN": 0,
+            "D": 124,
+            "netSD": 0.8064516129032258,
+            "invested_EUR": 11069.009933451882,
+            "cash_EUR": 3930.990066548118,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 102,
+            "IN": 0,
+            "D": 124,
+            "netSD": 0.8225806451612904,
+            "invested_EUR": 10925.4568544,
+            "cash_EUR": 4074.5431456000006,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": -0.016129032258064613,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "ROBUST",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 122,
+            "IN": 0,
+            "D": 124,
+            "netSD": 0.9838709677419355,
+            "invested_EUR": 3592.1726342518814,
+            "cash_EUR": 11407.827365748119,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 122,
+            "IN": 0,
+            "D": 124,
+            "netSD": 0.9838709677419355,
+            "invested_EUR": 3448.6195552,
+            "cash_EUR": 11551.380444800001,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.0,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "UPDATE2",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 107,
+            "IN": 0,
+            "D": 124,
+            "netSD": 0.8629032258064516,
+            "invested_EUR": 12062.62993345188,
+            "cash_EUR": 2937.370066548119,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 107,
+            "IN": 0,
+            "D": 124,
+            "netSD": 0.8629032258064516,
+            "invested_EUR": 11919.076854399998,
+            "cash_EUR": 3080.9231456000016,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.0,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "UPDATE2",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 125,
+            "IN": 0,
+            "D": 125,
+            "netSD": 1.0,
+            "invested_EUR": 5987.143933451881,
+            "cash_EUR": 9012.85606654812,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 125,
+            "IN": 0,
+            "D": 125,
+            "netSD": 1.0,
+            "invested_EUR": 5843.590854399999,
+            "cash_EUR": 9156.4091456,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.0,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "UPDATE3",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 107,
+            "IN": 0,
+            "D": 124,
+            "netSD": 0.8629032258064516,
+            "invested_EUR": 12029.85987905188,
+            "cash_EUR": 2970.140120948119,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 107,
+            "IN": 0,
+            "D": 124,
+            "netSD": 0.8629032258064516,
+            "invested_EUR": 11886.306799999998,
+            "cash_EUR": 3113.6932000000015,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.0,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "UPDATE3",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 125,
+            "IN": 0,
+            "D": 125,
+            "netSD": 1.0,
+            "invested_EUR": 6369.893879051881,
+            "cash_EUR": 8630.10612094812,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 125,
+            "IN": 0,
+            "D": 125,
+            "netSD": 1.0,
+            "invested_EUR": 6226.3408,
+            "cash_EUR": 8773.6592,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.0,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "NETSD",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 94,
+            "IN": 0,
+            "D": 124,
+            "netSD": 0.7580645161290323,
+            "invested_EUR": 9888.68556445188,
+            "cash_EUR": 5111.31443554812,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 96,
+            "IN": 0,
+            "D": 124,
+            "netSD": 0.7741935483870968,
+            "invested_EUR": 9745.132485399998,
+            "cash_EUR": 5254.867514600002,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": -0.016129032258064502,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "NETSD",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 107,
+            "IN": 0,
+            "D": 124,
+            "netSD": 0.8629032258064516,
+            "invested_EUR": 12064.33274305188,
+            "cash_EUR": 2935.6672569481198,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 107,
+            "IN": 0,
+            "D": 124,
+            "netSD": 0.8629032258064516,
+            "invested_EUR": 11920.779663999998,
+            "cash_EUR": 3079.220336000002,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.0,
+          "other_quantities_unchanged": true
+        }
+      ]
+    },
+    "R4": {
+      "observations": 59,
+      "first_return_date": "2021-11-29",
+      "last_return_date": "2025-04-10",
+      "rows": [
+        {
+          "model": "CURRENT",
+          "policy": "HELD",
+          "recorded_PFE_units": 5.491688,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 83,
+            "IN": 6,
+            "D": 140,
+            "netSD": 0.55,
+            "invested_EUR": 11222.509933451882,
+            "cash_EUR": 3777.490066548118,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 81,
+            "IN": 7,
+            "D": 140,
+            "netSD": 0.5285714285714286,
+            "invested_EUR": 11078.9568544,
+            "cash_EUR": 3921.0431456000006,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.021428571428571463,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "STOCHASTIC",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 81,
+            "IN": 6,
+            "D": 140,
+            "netSD": 0.5357142857142857,
+            "invested_EUR": 12055.681879051881,
+            "cash_EUR": 2944.318120948119,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 80,
+            "IN": 7,
+            "D": 140,
+            "netSD": 0.5214285714285715,
+            "invested_EUR": 11912.128799999999,
+            "cash_EUR": 3087.8712000000014,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.014285714285714235,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "STOCHASTIC",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 81,
+            "IN": 6,
+            "D": 140,
+            "netSD": 0.5357142857142857,
+            "invested_EUR": 12055.039879051881,
+            "cash_EUR": 2944.960120948119,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 80,
+            "IN": 7,
+            "D": 140,
+            "netSD": 0.5214285714285715,
+            "invested_EUR": 11911.486799999999,
+            "cash_EUR": 3088.5132000000012,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.014285714285714235,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "STOCHASTIC2",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 83,
+            "IN": 6,
+            "D": 140,
+            "netSD": 0.55,
+            "invested_EUR": 10769.869593451882,
+            "cash_EUR": 4230.130406548118,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 81,
+            "IN": 6,
+            "D": 140,
+            "netSD": 0.5357142857142857,
+            "invested_EUR": 10626.3165144,
+            "cash_EUR": 4373.6834856000005,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.014285714285714346,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "STOCHASTIC2",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 83,
+            "IN": 6,
+            "D": 140,
+            "netSD": 0.55,
+            "invested_EUR": 11360.659933451883,
+            "cash_EUR": 3639.3400665481167,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 81,
+            "IN": 9,
+            "D": 140,
+            "netSD": 0.5142857142857142,
+            "invested_EUR": 11217.1068544,
+            "cash_EUR": 3782.893145599999,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.03571428571428581,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "stochA",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 60,
+            "IN": 11,
+            "D": 140,
+            "netSD": 0.35,
+            "invested_EUR": 12066.149879051884,
+            "cash_EUR": 2933.8501209481165,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 59,
+            "IN": 13,
+            "D": 140,
+            "netSD": 0.32857142857142857,
+            "invested_EUR": 11922.596800000001,
+            "cash_EUR": 3077.403199999999,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.021428571428571408,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "stochA",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 81,
+            "IN": 6,
+            "D": 140,
+            "netSD": 0.5357142857142857,
+            "invested_EUR": 12045.209879051883,
+            "cash_EUR": 2954.790120948117,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 80,
+            "IN": 7,
+            "D": 140,
+            "netSD": 0.5214285714285715,
+            "invested_EUR": 11901.6568,
+            "cash_EUR": 3098.3431999999993,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.014285714285714235,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "stoch2A",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 80,
+            "IN": 7,
+            "D": 140,
+            "netSD": 0.5214285714285715,
+            "invested_EUR": 10751.729593451882,
+            "cash_EUR": 4248.2704065481175,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 78,
+            "IN": 7,
+            "D": 140,
+            "netSD": 0.5071428571428571,
+            "invested_EUR": 10608.1765144,
+            "cash_EUR": 4391.8234856,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.014285714285714346,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "stoch2A",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 83,
+            "IN": 6,
+            "D": 140,
+            "netSD": 0.55,
+            "invested_EUR": 11360.659933451883,
+            "cash_EUR": 3639.3400665481167,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 81,
+            "IN": 9,
+            "D": 140,
+            "netSD": 0.5142857142857142,
+            "invested_EUR": 11217.1068544,
+            "cash_EUR": 3782.893145599999,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.03571428571428581,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "MARKOWITZ",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 83,
+            "IN": 6,
+            "D": 140,
+            "netSD": 0.55,
+            "invested_EUR": 11069.009933451882,
+            "cash_EUR": 3930.990066548118,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 81,
+            "IN": 7,
+            "D": 140,
+            "netSD": 0.5285714285714286,
+            "invested_EUR": 10925.4568544,
+            "cash_EUR": 4074.5431456000006,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.021428571428571463,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "MARKOWITZ",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 77,
+            "IN": 7,
+            "D": 140,
+            "netSD": 0.5,
+            "invested_EUR": 4175.895842251882,
+            "cash_EUR": 10824.10415774812,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 72,
+            "IN": 10,
+            "D": 140,
+            "netSD": 0.44285714285714284,
+            "invested_EUR": 4032.3427632,
+            "cash_EUR": 10967.6572368,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.05714285714285716,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "MINIMAX",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 88,
+            "IN": 5,
+            "D": 140,
+            "netSD": 0.5928571428571429,
+            "invested_EUR": 11817.791628651881,
+            "cash_EUR": 3182.208371348119,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 88,
+            "IN": 5,
+            "D": 140,
+            "netSD": 0.5928571428571429,
+            "invested_EUR": 11674.238549599999,
+            "cash_EUR": 3325.761450400001,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.0,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "MINIMAX",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 59,
+            "IN": 8,
+            "D": 140,
+            "netSD": 0.36428571428571427,
+            "invested_EUR": 4031.198458751881,
+            "cash_EUR": 10968.801541248118,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 57,
+            "IN": 8,
+            "D": 140,
+            "netSD": 0.35,
+            "invested_EUR": 3887.6453796999995,
+            "cash_EUR": 11112.3546203,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.01428571428571429,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "ROBUST",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 83,
+            "IN": 6,
+            "D": 140,
+            "netSD": 0.55,
+            "invested_EUR": 11069.009933451882,
+            "cash_EUR": 3930.990066548118,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 81,
+            "IN": 7,
+            "D": 140,
+            "netSD": 0.5285714285714286,
+            "invested_EUR": 10925.4568544,
+            "cash_EUR": 4074.5431456000006,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.021428571428571463,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "ROBUST",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 68,
+            "IN": 7,
+            "D": 140,
+            "netSD": 0.4357142857142857,
+            "invested_EUR": 3592.1726342518814,
+            "cash_EUR": 11407.827365748119,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 58,
+            "IN": 14,
+            "D": 140,
+            "netSD": 0.3142857142857143,
+            "invested_EUR": 3448.6195552,
+            "cash_EUR": 11551.380444800001,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.12142857142857144,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "UPDATE2",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 85,
+            "IN": 6,
+            "D": 140,
+            "netSD": 0.5642857142857143,
+            "invested_EUR": 12062.62993345188,
+            "cash_EUR": 2937.370066548119,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 82,
+            "IN": 8,
+            "D": 140,
+            "netSD": 0.5285714285714286,
+            "invested_EUR": 11919.076854399998,
+            "cash_EUR": 3080.9231456000016,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.0357142857142857,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "UPDATE2",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 84,
+            "IN": 6,
+            "D": 140,
+            "netSD": 0.5571428571428572,
+            "invested_EUR": 5987.143933451881,
+            "cash_EUR": 9012.85606654812,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 84,
+            "IN": 6,
+            "D": 140,
+            "netSD": 0.5571428571428572,
+            "invested_EUR": 5843.590854399999,
+            "cash_EUR": 9156.4091456,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.0,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "UPDATE3",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 81,
+            "IN": 6,
+            "D": 140,
+            "netSD": 0.5357142857142857,
+            "invested_EUR": 12029.85987905188,
+            "cash_EUR": 2970.140120948119,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 80,
+            "IN": 7,
+            "D": 140,
+            "netSD": 0.5214285714285715,
+            "invested_EUR": 11886.306799999998,
+            "cash_EUR": 3113.6932000000015,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.014285714285714235,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "UPDATE3",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 77,
+            "IN": 7,
+            "D": 140,
+            "netSD": 0.5,
+            "invested_EUR": 6369.893879051881,
+            "cash_EUR": 8630.10612094812,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 76,
+            "IN": 7,
+            "D": 140,
+            "netSD": 0.4928571428571429,
+            "invested_EUR": 6226.3408,
+            "cash_EUR": 8773.6592,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.0071428571428571175,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "NETSD",
+          "policy": "SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 73,
+            "IN": 6,
+            "D": 140,
+            "netSD": 0.4785714285714286,
+            "invested_EUR": 9888.68556445188,
+            "cash_EUR": 5111.31443554812,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 73,
+            "IN": 6,
+            "D": 140,
+            "netSD": 0.4785714285714286,
+            "invested_EUR": 9745.132485399998,
+            "cash_EUR": 5254.867514600002,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.0,
+          "other_quantities_unchanged": true
+        },
+        {
+          "model": "NETSD",
+          "policy": "NO_SALE",
+          "recorded_PFE_units": 0.0,
+          "with_PFE": {
+            "PFE_units": 5.491688,
+            "OUT": 81,
+            "IN": 6,
+            "D": 140,
+            "netSD": 0.5357142857142857,
+            "invested_EUR": 12064.33274305188,
+            "cash_EUR": 2935.6672569481198,
+            "passes_EUR15000_wealth": true
+          },
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 81,
+            "IN": 7,
+            "D": 140,
+            "netSD": 0.5285714285714286,
+            "invested_EUR": 11920.779663999998,
+            "cash_EUR": 3079.220336000002,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.0071428571428571175,
+          "other_quantities_unchanged": true
+        }
+      ]
+    }
+  },
+  "reference_assets": [
+    "AKO1L",
+    "AMG1L",
+    "APG1L",
+    "ARC1T",
+    "AUG1L",
+    "BAL1R",
+    "BERCM",
+    "CPA1T",
+    "CTS1L",
+    "DGR1R",
+    "EFT1T",
+    "EWA1L",
+    "GRG1L",
+    "HAE1T",
+    "HPR1T",
+    "IGN1L",
+    "INC1L",
+    "INL1L",
+    "INR1L",
+    "IVL1L",
+    "KNE1L",
+    "KNR1L",
+    "LGD1L",
+    "LHV1T",
+    "LINDA",
+    "MDARA",
+    "MODE",
+    "MRK1T",
+    "NCN1T",
+    "NEOFI",
+    "NTU1L",
+    "PKG1T",
+    "PRF1T",
+    "PZV1L",
+    "RKB1R",
+    "ROE1L",
+    "RSU1L",
+    "SAF1R",
+    "SAUNA",
+    "SCM1R",
+    "SFG1T",
+    "SKN1T",
+    "TAL1T",
+    "TEL1L",
+    "TKM1T",
+    "TPD1T",
+    "TSM1T",
+    "TVE1T",
+    "UTR1L",
+    "VBL1L",
+    "VIRSI",
+    "VLP1L",
+    "ZMP1L",
+    "SE0013876927",
+    "SE0013876950",
+    "SE0013876968",
+    "SE0014261756",
+    "SE0014261764",
+    "SE0014261871",
+    "SE0014261889",
+    "SE0014261897",
+    "SE0014263273",
+    "SE0014263281",
+    "SE0014263299",
+    "SE0015192315",
+    "SE0015192323",
+    "SE0015192331",
+    "SE0015192349",
+    "SE0015948609",
+    "SE0015948617",
+    "US_PFE"
+  ],
+  "source_returns_sha256": "b180d3f4f910cd1332070174cdc6843cbd8f51f0e3f0de433042a16fc31e976d",
+  "recorded_allocations_sha256": "1635c1e22e299a0ff337c12f7877e5f3004bc112d538ffd4b52809660270be87",
+  "scope": "Historical initial-allocation sensitivity, not reoptimisation or whole-tree terminal netSD. Each case retains every non-PFE recorded target quantity and values it at the latest verified EUR quotes. Replace the PFE holding by the confirmed quantity versus zero; sale proceeds stay as cash. Historical invested-holdings returns exclude cash, so remaining invested weights renormalise. Identical 71 reference asset distributions (PFE included as reference in both cases), plus exactly one portfolio candidate; D is recomputed on each augmented network, including changed incident degrees. The 126 diagnostic observations are excluded. FULL uses the full training sample; R1-R4 exact-date retrospective labels. Wealth feasibility is reported separately: these counterfactuals are not executable or freshly feasible model trade plans."
+}

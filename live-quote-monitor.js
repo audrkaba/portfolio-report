@@ -3,6 +3,7 @@
  const market=JSON.parse(input.textContent),holdings=JSON.parse(held.textContent),baskets=JSON.parse(document.getElementById('current-portfolio-baskets').textContent),previous=window.updateSelectedPortfolioProfile,cache=new WeakMap();
  const canonical=a=>a==='US_PFE'?'US:PFE':a;
  const historicalElement=document.getElementById('current-holdings-netsd-data'),historical=historicalElement?JSON.parse(historicalElement.textContent):null;
+ const impactElement=document.getElementById('pfe-portfolio-impact-data'),impact=impactElement?JSON.parse(impactElement.textContent):null;
  const selectedHistory=()=>document.querySelector('select[name="profile-history-regime"]')?.value||'FULL';
  const assetOf=p=>canonical((p.dataset.currentAsset||p.id.replace(/^(share-|fund-)/,'')).toUpperCase());
  const tableOf=p=>p.querySelector('table.stock-summary-table')||p.querySelector('table');
@@ -39,6 +40,9 @@
    note.textContent='Confirmed holding: '+units+' units. '+(quote?'Latest verified EUR price '+quote.price.toFixed(4)+' dated '+quote.date+'. ':'')+'Current monitoring proposes no trades. '+(score?'Historical netSD: '+selectedHistory()+', '+context.observations+' training observations ('+context.first_return_date+' to '+context.last_return_date+'); D='+score.D+' on the complete 72-node network including PFE and confirmed Current. Excludes cash and the 126 diagnostic observations. Other analytics retain their stated earlier sample.':'Historical analytics pending.');
    if(profile.dataset.currentPending==='true'){
     const text=profile.querySelector(':scope > p:not(.confirmed-holding-scope)');if(text)text.textContent='Confirmed PFE holding, latest completed-session quote and regime-dependent historical netSD are shown. Reoptimised trading allocations and full scenario-tree evaluation remain pending.';
+    let p=profile.querySelector('.pfe-portfolio-impact');if(!p){p=document.createElement('p');p.className='pfe-portfolio-impact';table.after(p)}
+    const row=impact?.contexts[selectedHistory()]?.rows.find(r=>r.model==='CURRENT');
+    if(row){p.textContent='Effect of the complete PFE holding on Current historical netSD: with PFE '+row.with_PFE.netSD.toFixed(6)+', without PFE '+row.without_PFE.netSD.toFixed(6)+', difference '+row.effect_of_PFE.toFixed(6)+'. Other asset quantities unchanged. ';const a=document.createElement('a');a.href='pfe-portfolio-impact.html';a.textContent='Compare PFE impact for Current and all 20 published model/policy allocations (historical sensitivity; not reoptimised plans)';p.append(a)}
    }
   }else{
    const old=snapshot?.current_units;

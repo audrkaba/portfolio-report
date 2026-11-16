@@ -1,6 +1,6 @@
 {
   "revision": "delivery-status-20261116",
-  "prepared_at": "2026-11-16T20:03:03.424873+02:00",
+  "prepared_at": "2026-11-16T20:10:50.874356+02:00",
   "complete": false,
   "state": "incomplete_not_running",
   "notice": "Confirmed holdings: VLP1L 117; PFE 5.491688 units. Current holdings and historical netSD updated 2026-11-16. Trading-model recalculation is incomplete; model prices remain share closes 2026-11-13 / fund NAV 2026-11-12.",
