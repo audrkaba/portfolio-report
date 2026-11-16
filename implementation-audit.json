@@ -1,17 +1,17 @@
 {
-  "observed_at": "2026-11-14T11:23:37.649026+02:00",
+  "observed_at": "2026-11-16T11:07:51.147280+02:00",
   "scope": "Current delivery audit plus every previously catalogued requirement. Historical evidence is not silently upgraded to a current-run completion claim.",
   "all_requests_fully_verified": false,
   "current_financial_delivery_complete": true,
   "reviewed_requirements": 46,
   "pending_complete_models": [],
   "live_delivery": {
-    "observed_at": "2026-11-14T11:23:27.445685+02:00",
+    "observed_at": "2026-11-16T11:07:40.056325+02:00",
     "main": {
       "default_model": "STOCHASTIC2",
       "default_sale": "NO_SALE",
       "default_updates": "UPDATES",
-      "default_regime": "R3",
+      "default_regime": "R1",
       "model_conditions": true,
       "open_details": 0,
       "quantities": {
@@ -59,7 +59,7 @@
     {
       "requirement": "Current dated price snapshot",
       "status": "Verified frozen snapshot; main integration complete",
-      "detail": "Shares 2026-11-12; fund NAV 2026-11-12; downloaded 2026-11-13T12:24:28.807585+02:00. These are frozen completed-session observations, not live prices."
+      "detail": "Shares 2026-11-13; fund NAV 2026-11-12; downloaded 2026-11-14T11:50:37.496914+02:00. These are frozen completed-session observations, not live prices."
     },
     {
       "requirement": "Entire-tree sensitivity; other model trades fixed",
@@ -98,8 +98,8 @@
     },
     {
       "requirement": "Latest requested closing snapshot",
-      "status": "Pending newer financial refresh",
-      "detail": "Requested close 2026-11-13; this audited model run uses 2026-11-12. A completed older run, a new download or a layout publication is not completion of the newer financial request."
+      "status": "Verified live",
+      "detail": "Requested close 2026-11-13; this audited model run uses 2026-11-13. A completed older run, a new download or a layout publication is not completion of the newer financial request."
     },
     {
       "requirement": "Archived previous holding snapshot: VLP1L 87",
@@ -130,7 +130,7 @@
         {
           "path": "data/long_history/market_refresh_validation.json",
           "present": true,
-          "current_sha256": "37b5ec43816175caec75d4a1c1ec9e0844771a8146c95004a3a68fe90a75cb8b",
+          "current_sha256": "14c7710eda5ad74da8c41748457d01a433f28b82486a03546d6f3d13da0c2b23",
           "matches_historical_evidence": false
         },
         {
@@ -150,7 +150,7 @@
         {
           "path": "data/weekly_multistage/run_manifest.json",
           "present": true,
-          "current_sha256": "e6ea57a873c3bda71686ece1ebc4dd767b464a4b6afdf0d806cedbcc18300d22",
+          "current_sha256": "70a739e7de4ed699c12266363f2aec133cbcb1ea248db52ae1a5540f7e3ee709",
           "matches_historical_evidence": false
         },
         {
@@ -190,7 +190,7 @@
         {
           "path": "data/stage_purchase_checks/latest.json",
           "present": true,
-          "current_sha256": "1f59956ea07217a0599cd9173843d444af109b50958c30df2aea68e4ee99a763",
+          "current_sha256": "edac7cf55a5c58cd955f2f0bfaeeaf98cd558b5aa16bf6706b176e5c6d3f604c",
           "matches_historical_evidence": false
         }
       ]
@@ -204,19 +204,19 @@
         {
           "path": "data/investor_preferences.json",
           "present": true,
-          "current_sha256": "4fcfaa4cbd3251218167dde582351581268c7153d227b00dcb2a698f83439722",
-          "matches_historical_evidence": true
+          "current_sha256": "39ca6b0b9036f799a259b4f4433d7a236f9af3d4f44e99c8e4615feccd397461",
+          "matches_historical_evidence": false
         },
         {
           "path": "data/sector_limits/manifest.json",
           "present": true,
-          "current_sha256": "64a041660c37fff842f0618b6ad7277509d7b430d1b496f45e17702a4eeef373",
-          "matches_historical_evidence": true
+          "current_sha256": "a6565028eaef741cce33e310b50db4ed2fcd2ff24892d08ec6e39b1870c67423",
+          "matches_historical_evidence": false
         },
         {
           "path": "data/stage_purchase_checks/latest.json",
           "present": true,
-          "current_sha256": "1f59956ea07217a0599cd9173843d444af109b50958c30df2aea68e4ee99a763",
+          "current_sha256": "edac7cf55a5c58cd955f2f0bfaeeaf98cd558b5aa16bf6706b176e5c6d3f604c",
           "matches_historical_evidence": false
         }
       ]
@@ -230,8 +230,8 @@
         {
           "path": "data/investor_preferences.json",
           "present": true,
-          "current_sha256": "4fcfaa4cbd3251218167dde582351581268c7153d227b00dcb2a698f83439722",
-          "matches_historical_evidence": true
+          "current_sha256": "39ca6b0b9036f799a259b4f4433d7a236f9af3d4f44e99c8e4615feccd397461",
+          "matches_historical_evidence": false
         },
         {
           "path": "R/sale_permissions.py",
@@ -242,7 +242,7 @@
         {
           "path": "data/weekly_multistage/run_manifest.json",
           "present": true,
-          "current_sha256": "e6ea57a873c3bda71686ece1ebc4dd767b464a4b6afdf0d806cedbcc18300d22",
+          "current_sha256": "70a739e7de4ed699c12266363f2aec133cbcb1ea248db52ae1a5540f7e3ee709",
           "matches_historical_evidence": false
         }
       ]
@@ -284,7 +284,7 @@
         {
           "path": "data/profile_update_filter_checks/live.json",
           "present": true,
-          "current_sha256": "687436e043dfe32f85fec9afacebb25f52ca4edcb978573868a2afa1ddaebaeb",
+          "current_sha256": "cfa16a188314ac3815178faf099a4b2b4f00a6b62781385102444c651796635c",
           "matches_historical_evidence": false
         }
       ]
@@ -298,7 +298,7 @@
         {
           "path": "data/report_width_checks/all_tables_live.json",
           "present": true,
-          "current_sha256": "705ab7754a2b3895dee6ff0779bd42cb8e3bb29e582423e4b39104204942f575",
+          "current_sha256": "d72e720c72cbed5959e4aad4ffbf8b9eb618c53c5e458c59d69084b522c5feef",
           "matches_historical_evidence": false
         }
       ]
@@ -326,7 +326,7 @@
         {
           "path": "data/market_analysis/correlation_plot_layout.json",
           "present": true,
-          "current_sha256": "5dd270f21f6f0c1ba03b6bf796c9e37caf65ed798981ae57fae4c64278b54405",
+          "current_sha256": "19ec92fbed04e0069bb5491e27f0540083c80fa1f1ab4fad1dd51bac895b7934",
           "matches_historical_evidence": false
         }
       ]
@@ -340,7 +340,7 @@
         {
           "path": "data/long_history/portfolio_dominance_audit.json",
           "present": true,
-          "current_sha256": "2d2114bcb01867aefe78085ef4b03033012410f8132b708fc0279302234f0910",
+          "current_sha256": "2ff9d03518a47c1db154f7ceecc6557bf4b215881983442d9cc73324060a5dd1",
           "matches_historical_evidence": false
         }
       ]
@@ -410,7 +410,7 @@
         {
           "path": "data/report_math_checks/live.json",
           "present": true,
-          "current_sha256": "64f4949c328030357c5d3ae34fb5f982c36dec8691cd8b38e4be3434eea82da3",
+          "current_sha256": "18a8f81fc6e6c4475a6f9a0bdde5e4fad150853abbca1f32667e760db446efda",
           "matches_historical_evidence": false
         }
       ]
@@ -552,8 +552,8 @@
         {
           "path": "data/compute_runs/validation.json",
           "present": true,
-          "current_sha256": "f856d2ef7fceadf0e8adad79b26ff252b9226b0c9431958b67b41b57c4b7a7f1",
-          "matches_historical_evidence": true
+          "current_sha256": "aa0ab7df647464a4092c031d795ab9e4d6ea93b1d6815f5f2c5e3b3030a9d3d3",
+          "matches_historical_evidence": false
         }
       ]
     },
@@ -632,7 +632,7 @@
         {
           "path": "data/regime_netsd/portfolio_payload.json",
           "present": true,
-          "current_sha256": "de8b3ff79f957a97b2a4e545346c2efed5e9ea3ef1bfd5c40e6b1a2ca1b85fd1",
+          "current_sha256": "7523fcc022977b1d69fc442b9fcb5580e21338be13918db12d9d28e85d6fcc0e",
           "matches_historical_evidence": false
         },
         {
@@ -658,7 +658,7 @@
         {
           "path": "data/profile_update_filter_checks/live.json",
           "present": true,
-          "current_sha256": "687436e043dfe32f85fec9afacebb25f52ca4edcb978573868a2afa1ddaebaeb",
+          "current_sha256": "cfa16a188314ac3815178faf099a4b2b4f00a6b62781385102444c651796635c",
           "matches_historical_evidence": false
         }
       ]
@@ -678,7 +678,7 @@
         {
           "path": "public_site/refresh-status.json",
           "present": true,
-          "current_sha256": "d45371dca6c30392a3f80097916555a472941bd5277cfa2bbf6d2978186324b8",
+          "current_sha256": "0e5e6a5913c964a7eb81d769752e9511ba037d85501e7feb7d5561d784b70770",
           "matches_historical_evidence": false
         }
       ]
@@ -732,7 +732,7 @@
         {
           "path": "data/stock_attractiveness/scores.json",
           "present": true,
-          "current_sha256": "1ab9a1be72f57e7d01bc825ada51a98710a9fa0438f97b23deebe2929748d4b6",
+          "current_sha256": "ca3c3eb5f0cf553e3a8f133b1e612ae908103547531bf6d1eddb2755be0b7a9a",
           "matches_historical_evidence": false
         },
         {
@@ -752,7 +752,7 @@
     "The crash component remains unresolved. Historical gaps in full-search energy cannot be reconstructed."
   ],
   "this_run_financial_delivery_complete": true,
-  "latest_requested_financial_delivery_complete": false,
-  "model_snapshot_end": "2026-11-12",
+  "latest_requested_financial_delivery_complete": true,
+  "model_snapshot_end": "2026-11-13",
   "latest_requested_end": "2026-11-13"
 }
