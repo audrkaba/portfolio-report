@@ -1,0 +1,853 @@
+{
+  "market": {
+    "as_of": "2026-11-16T20:18:02.042171+02:00",
+    "requested_end": "2026-11-16",
+    "assets": 92,
+    "new_observations": 89,
+    "share_last": "2026-11-16",
+    "fund_last": "2026-11-13",
+    "historical_repairs_preserved": true,
+    "intraday": false,
+    "price_status": "Latest available official observations; source dates retained",
+    "updated_current_session": 0
+  },
+  "cases": [
+    {
+      "model": "STOCHASTIC2",
+      "policy": "NO_SALE",
+      "summary": {
+        "completed": true,
+        "model": "STOCHASTIC2",
+        "policy": "NO_SALE",
+        "input_hash": "53d75ac613725957ac737cfe4b2d3f1fe52b488dc129da031f73ce40ece5d2ac",
+        "objective": 0.28698006763157674,
+        "terminal": {
+          "netSD": 0.3026315789473684,
+          "OUT": 53,
+          "IN": 7,
+          "D": 152,
+          "expected_return": 0.00437460056023773,
+          "scenarios": 160000,
+          "probability_mass": 1.0,
+          "OUT_by_order": [
+            5,
+            23,
+            25
+          ],
+          "IN_by_order": [
+            0,
+            3,
+            4
+          ]
+        },
+        "expected_penalty": 0.015651511315791684,
+        "current_terminal": {
+          "netSD": 0.2894736842105263,
+          "OUT": 51,
+          "IN": 7,
+          "D": 152,
+          "expected_return": 0.003972929379670358,
+          "scenarios": 160000,
+          "probability_mass": 1.0,
+          "OUT_by_order": [
+            4,
+            22,
+            25
+          ],
+          "IN_by_order": [
+            0,
+            3,
+            4
+          ]
+        },
+        "initial_only_terminal": {
+          "netSD": 0.3026315789473684,
+          "OUT": 53,
+          "IN": 7,
+          "D": 152,
+          "expected_return": 0.004374600560237731,
+          "scenarios": 160000,
+          "probability_mass": 1.0,
+          "OUT_by_order": [
+            5,
+            23,
+            25
+          ],
+          "IN_by_order": [
+            0,
+            3,
+            4
+          ]
+        },
+        "decision_nodes": 8421,
+        "scenarios": 160000,
+        "stages": [
+          0,
+          5,
+          10,
+          15
+        ],
+        "valuation_step": 20,
+        "root_cash_EUR": 2777.492959122623,
+        "minimum_node_cash_EUR": 2777.492959122623,
+        "maximum_US_cumulative_gross_purchase_EUR": 299.99998022549585,
+        "stage_cap_EUR": 1000,
+        "asset_cap_EUR": 750,
+        "sector_cap": 0.3,
+        "evaluated_complete_policies": 3787,
+        "search_rounds": 2,
+        "attained_solution_not_global_certificate": true,
+        "recourse_rule": {
+          "mode": 0,
+          "signal": 0,
+          "fraction": 1.0
+        },
+        "calibration": {
+          "selected_backend": "CPU",
+          "workers": 48,
+          "CPU_seconds": 0.016899099995498545,
+          "GPU_seconds": 0.29010669999115635,
+          "GPU_error": null
+        },
+        "seconds_including_reference_preparation": 108.29472130000067,
+        "computed_at_UTC": "2026-11-16T18:42:24.880845+00:00",
+        "objective_definition": "Weighted FSD/SSD/TSD of the complete four-week self-financing policy cumulative-return distribution against all71 buy-and-hold asset references and actual Current with cash, normalised by the actual augmented-network maximum degree. Subtract probability-weighted existing final-decision penalties; historical rows calibrate forecasts and feasibility, never become terminal outcomes.",
+        "search_definition": "Feasible structured joint-policy proposals and coordinate neighbourhood search; all node variables and all terminal outcomes explicit; no global-optimality certificate.",
+        "current_VLP": 117.0,
+        "current_PFE": 5.491688,
+        "artifact_sha256": {
+          "policy.npz": "105e0a38d708129076ef5f512de660efbcc2e7f5fe358fea2390cf28d46691a9",
+          "outcomes.npz": "0582eb779c3f48260cd156f0dbd73c5f8db0259b30dd367866091575726daf89",
+          "allocation.csv": "3944d17f4f0303a069704eeaae495c80c6b73b1eed35fa39118bddf6444b7ed7",
+          "search_trace.csv": "231930eb5e20e8f608fd6de3bc5710b52cbcbd46c994069ade297d3d41bee2de"
+        }
+      },
+      "rows": [
+        {
+          "asset": "AKO1L",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 1.78,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "Akola Group"
+        },
+        {
+          "asset": "AMG1L",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 1.21,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "Amber Grid"
+        },
+        {
+          "asset": "APG1L",
+          "current_units": 200.0,
+          "target_units": 200.0,
+          "change": 0.0,
+          "last_price": 3.85,
+          "invested_EUR": 770.0,
+          "weight": 0.0513333333333333,
+          "name": "Apranga"
+        },
+        {
+          "asset": "ARC1T",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 0.944,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "Arco Vara"
+        },
+        {
+          "asset": "AUG1L",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 0.0848,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "AUGA group"
+        },
+        {
+          "asset": "BAL1R",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 0.71,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "Amber Latvijas balzams"
+        },
+        {
+          "asset": "BERCM",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 0.96,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "Bercman Technologies"
+        },
+        {
+          "asset": "CPA1T",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 2.39,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "Coop Pank"
+        },
+        {
+          "asset": "CTS1L",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 1.3,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "City Service"
+        },
+        {
+          "asset": "DGR1R",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 1.885,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "DelfinGroup"
+        },
+        {
+          "asset": "EFT1T",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 19.5,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "EfTEN Real Estate Fund"
+        },
+        {
+          "asset": "EWA1L",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 10.7,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "East West Agro"
+        },
+        {
+          "asset": "GRG1L",
+          "current_units": 543.0,
+          "target_units": 543.0,
+          "change": 0.0,
+          "last_price": 0.92,
+          "invested_EUR": 499.56,
+          "weight": 0.033304,
+          "name": "Grigeo Group"
+        },
+        {
+          "asset": "HAE1T",
+          "current_units": 100.0,
+          "target_units": 100.0,
+          "change": 0.0,
+          "last_price": 5.18,
+          "invested_EUR": 518.0,
+          "weight": 0.0345333333333333,
+          "name": "Harju Elekter Group"
+        },
+        {
+          "asset": "HPR1T",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 4.33,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "Hepsor"
+        },
+        {
+          "asset": "IGN1L",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 22.1,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "Ignitis grup<U+0117>"
+        },
+        {
+          "asset": "INC1L",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 5.55,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "INVL Technology"
+        },
+        {
+          "asset": "INL1L",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 7.0,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "INVL Baltic Farmland"
+        },
+        {
+          "asset": "INR1L",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 2.7,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "INVL Baltic Real Estate"
+        },
+        {
+          "asset": "IVL1L",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 27.0,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "Invalda INVL"
+        },
+        {
+          "asset": "KNE1L",
+          "current_units": 928.0,
+          "target_units": 928.0,
+          "change": 0.0,
+          "last_price": 0.489,
+          "invested_EUR": 453.792,
+          "weight": 0.0302528,
+          "name": "KN Energies"
+        },
+        {
+          "asset": "KNR1L",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 2.1,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "Kauno energija"
+        },
+        {
+          "asset": "LGD1L",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 1.185,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "LITGRID"
+        },
+        {
+          "asset": "LHV1T",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 3.24,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "LHV Group"
+        },
+        {
+          "asset": "LINDA",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 4.04,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "Linda Nektar"
+        },
+        {
+          "asset": "MDARA",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 10.45,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "MADARA Cosmetics"
+        },
+        {
+          "asset": "MODE",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 5.0,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "Modera"
+        },
+        {
+          "asset": "MRK1T",
+          "current_units": 26.0,
+          "target_units": 26.0,
+          "change": 0.0,
+          "last_price": 26.85,
+          "invested_EUR": 698.1,
+          "weight": 0.04654,
+          "name": "Merko Ehitus"
+        },
+        {
+          "asset": "NCN1T",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 0.54,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "Nordecon"
+        },
+        {
+          "asset": "NEOFI",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 2.9,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "NEO Finance"
+        },
+        {
+          "asset": "NTU1L",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 0.728,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "Novaturas"
+        },
+        {
+          "asset": "PKG1T",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 0.53,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "Pro Kapital Grupp"
+        },
+        {
+          "asset": "PRF1T",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 0.0516,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "PRFoods"
+        },
+        {
+          "asset": "PZV1L",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 1.8,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "Pieno <U+017E>vaig<U+017E>d<U+0117>s"
+        },
+        {
+          "asset": "RKB1R",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 0.308,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "R<U+012B>gas ku<U+0123>u b<U+016B>v<U+0113>tava"
+        },
+        {
+          "asset": "ROE1L",
+          "current_units": 516.0,
+          "target_units": 516.0,
+          "change": 0.0,
+          "last_price": 0.826,
+          "invested_EUR": 426.216,
+          "weight": 0.0284143999999999,
+          "name": "Artea Bankas"
+        },
+        {
+          "asset": "RSU1L",
+          "current_units": 150.0,
+          "target_units": 150.0,
+          "change": 0.0,
+          "last_price": 4.26,
+          "invested_EUR": 639.0,
+          "weight": 0.0426,
+          "name": "Roki<U+0161>kio s<U+016B>ris"
+        },
+        {
+          "asset": "SAF1R",
+          "current_units": 100.0,
+          "target_units": 100.0,
+          "change": 0.0,
+          "last_price": 16.65,
+          "invested_EUR": 1664.9999999999998,
+          "weight": 0.1109999999999999,
+          "name": "SAF Tehnika"
+        },
+        {
+          "asset": "SAUNA",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 2.29,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "Saunum Group"
+        },
+        {
+          "asset": "SCM1R",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 7.25,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "Siguldas ciltslietu un m<U+0101>ksl<U+012B>g<U+0101>s aps<U+0113>klo<U+0161>anas stacija"
+        },
+        {
+          "asset": "SFG1T",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 1.05,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "Silvano Fashion Group"
+        },
+        {
+          "asset": "SKN1T",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 0.372,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "Nordic Fibreboard"
+        },
+        {
+          "asset": "TAL1T",
+          "current_units": 700.0,
+          "target_units": 700.0,
+          "change": 0.0,
+          "last_price": 0.617,
+          "invested_EUR": 431.9,
+          "weight": 0.0287933333333333,
+          "name": "Tallink Grupp"
+        },
+        {
+          "asset": "TEL1L",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 2.22,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "Telia Lietuva"
+        },
+        {
+          "asset": "TKM1T",
+          "current_units": 288.0,
+          "target_units": 288.0,
+          "change": 0.0,
+          "last_price": 9.02,
+          "invested_EUR": 2597.76,
+          "weight": 0.1731839999999999,
+          "name": "TKM Grupp"
+        },
+        {
+          "asset": "TPD1T",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 0.57,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "Trigon Property Development"
+        },
+        {
+          "asset": "TSM1T",
+          "current_units": 330.0,
+          "target_units": 330.0,
+          "change": 0.0,
+          "last_price": 1.226,
+          "invested_EUR": 404.58,
+          "weight": 0.026972,
+          "name": "Tallinna Sadam"
+        },
+        {
+          "asset": "TVE1T",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 10.85,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "Tallinna Vesi"
+        },
+        {
+          "asset": "UTR1L",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 0.332,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "Utenos trikota<U+017E>as"
+        },
+        {
+          "asset": "VBL1L",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 9.55,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "Vilniaus baldai"
+        },
+        {
+          "asset": "VIRSI",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 4.43,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "VIR<U+0160>I-A"
+        },
+        {
+          "asset": "VLP1L",
+          "current_units": 117.0,
+          "target_units": 117.0,
+          "change": 0.0,
+          "last_price": 15.35,
+          "invested_EUR": 1795.95,
+          "weight": 0.11973,
+          "name": "Vilky<U+0161>ki<U+0173> pienin<U+0117>"
+        },
+        {
+          "asset": "ZMP1L",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 2.86,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "<U+017D>emaitijos pienas"
+        },
+        {
+          "asset": "SE0013876927",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 15.3075,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "Swedbank Robur Access Edge Japan C"
+        },
+        {
+          "asset": "SE0013876950",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 13.5741,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "Swedbank Robur Access Edge Em Mkt C"
+        },
+        {
+          "asset": "SE0013876968",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 13.2535,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "Swedbank Robur Access Asien C"
+        },
+        {
+          "asset": "SE0014261756",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 19.7326,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "Swedbank Robur Global High Dividend C"
+        },
+        {
+          "asset": "SE0014261764",
+          "current_units": 7.108,
+          "target_units": 7.108,
+          "change": 0.0,
+          "last_price": 25.1968,
+          "invested_EUR": 179.0988544,
+          "weight": 0.0119399236266666,
+          "name": "Swedbank Robur Technology C"
+        },
+        {
+          "asset": "SE0014261871",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 15.2742,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "Swedbank Robur Healthcare C"
+        },
+        {
+          "asset": "SE0014261889",
+          "current_units": 0.0,
+          "target_units": 43.588,
+          "change": 43.588,
+          "last_price": 16.0594,
+          "invested_EUR": 699.9971272,
+          "weight": 0.0466664751466666,
+          "name": "Swedbank Robur Global Impact C"
+        },
+        {
+          "asset": "SE0014261897",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 10.9266,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "Swedbank Robur Fastighet C"
+        },
+        {
+          "asset": "SE0014263273",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 11.3021,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "Swedbank Savings Fund 30 N"
+        },
+        {
+          "asset": "SE0014263281",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 15.2228,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "Swedbank Savings Fund 100 N"
+        },
+        {
+          "asset": "SE0014263299",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 12.9159,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "Swedbank Savings Fund 60 N"
+        },
+        {
+          "asset": "SE0015192315",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 14.3404,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "Swedbank Robur Access Edge Sweden C"
+        },
+        {
+          "asset": "SE0015192323",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 20.2999,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "Swedbank Robur Access Edge USA C"
+        },
+        {
+          "asset": "SE0015192331",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 18.1351,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "Swedbank Robur Access Edge Europe C"
+        },
+        {
+          "asset": "SE0015192349",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 19.421,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "Swedbank Robur Access Edge Global C"
+        },
+        {
+          "asset": "SE0015948609",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 11.4876,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "Swedbank Robur Corp Bond Europe HY C"
+        },
+        {
+          "asset": "SE0015948617",
+          "current_units": 0.0,
+          "target_units": 0.0,
+          "change": 0.0,
+          "last_price": 9.9694,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
+          "name": "Swedbank Robur Corp Bond Europe C"
+        },
+        {
+          "asset": "US_PFE",
+          "current_units": 5.491688,
+          "target_units": 16.968323,
+          "change": 11.476635000000002,
+          "last_price": 26.14006459432541,
+          "invested_EUR": 443.5530592773776,
+          "weight": 0.0295702039518251,
+          "name": "Pfizer Inc."
+        }
+      ]
+    }
+  ],
+  "pending_policies": [
+    "STOCHASTIC2 / SALE",
+    "STOCHASTIC2 / NO_INITIAL_SALES",
+    "STOCHASTIC / NO_SALE",
+    "STOCHASTIC / SALE",
+    "STOCHASTIC / NO_INITIAL_SALES",
+    "stoch2A / NO_SALE",
+    "stoch2A / SALE",
+    "stoch2A / NO_INITIAL_SALES",
+    "stochA / NO_SALE",
+    "stochA / SALE",
+    "stochA / NO_INITIAL_SALES"
+  ],
+  "scope": "Corrected complete-policy terminal-return netSD; latest exact holdings; heuristic attained policies, not global-optimality certificates. Main-report integration, full-tree sensitivity, information-value calculations and technical comparisons remain separate completion requirements."
+}
