@@ -1,38 +1,51 @@
 {
-  "run": "20261115_pfe_close13",
-  "revision": "c656ae00b7e1",
-  "prepared_at": "2026-11-16T14:39:57.445843+02:00",
+  "revision": "delivery-status-20261116",
+  "prepared_at": "2026-11-16T20:03:03.424873+02:00",
   "complete": false,
-  "notice": "VLP holdings were corrected to 107. The previous 87-unit calculation was superseded. Only the linked verified portfolios use the new holdings and 2026-11-13 prices.",
+  "state": "incomplete_not_running",
+  "notice": "Confirmed holdings: VLP1L 117; PFE 5.491688 units. Current holdings and historical netSD updated 2026-11-16. Trading-model recalculation is incomplete; model prices remain share closes 2026-11-13 / fund NAV 2026-11-12.",
   "holdings": {
-    "VLP1L": 107,
-    "SE0014261764": 7.108
+    "TKM1T": 288,
+    "SAF1R": 100,
+    "APG1L": 200,
+    "KNE1L": 928,
+    "VLP1L": 117,
+    "RSU1L": 150,
+    "MRK1T": 26,
+    "GRG1L": 543,
+    "HAE1T": 100,
+    "TAL1T": 700,
+    "ROE1L": 516,
+    "TSM1T": 330,
+    "SE0014261764": 7.108,
+    "US:PFE": 5.491688
   },
+  "main_report_complete": false,
   "parts": [
     {
-      "label": "Verified Stochastic, Update2, Update3, Markowitz, Minimax and Robust initial allocations: VLP107",
+      "label": "Confirmed Current holdings and historical netSD, including PFE",
       "status": "published",
+      "url": "index.html#analytics-1-1"
+    },
+    {
+      "label": "Trading policies recalculated for117 VLP and5.491688 PFE with corrected objective",
+      "status": "not_completed",
+      "url": null
+    },
+    {
+      "label": "Previous Stochastic / classical-model snapshots; old model inputs",
+      "status": "archived_snapshot",
       "url": "vlp-current.html"
     },
     {
-      "label": "Stochastic 2 with VLP107",
-      "status": "pending",
-      "url": null
-    },
-    {
-      "label": "A variants without both purchase-value caps: pending",
-      "status": "pending",
-      "url": null
-    },
-    {
-      "label": "Time, energy and performance studies",
-      "status": "full-command counters being collected; controlled studies follow financial verification",
-      "url": null
-    },
-    {
-      "label": "Stochastic 2 / No-sale \u2014 completed 160000-path policy",
-      "status": "published",
+      "label": "Previous Stochastic2 No-sale snapshot; old model inputs",
+      "status": "archived_snapshot",
       "url": "stochastic2-no-sale-current.html"
+    },
+    {
+      "label": "A variants recalculated with latest holdings and corrected objective",
+      "status": "not_completed",
+      "url": null
     }
   ]
 }
