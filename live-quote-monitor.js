@@ -2,6 +2,8 @@
  const input=document.getElementById('current-market-quotes-data'),held=document.getElementById('current-holdings-monitor-data');if(!input||!held)return;
  const market=JSON.parse(input.textContent),holdings=JSON.parse(held.textContent),baskets=JSON.parse(document.getElementById('current-portfolio-baskets').textContent),previous=window.updateSelectedPortfolioProfile,cache=new WeakMap();
  const canonical=a=>a==='US_PFE'?'US:PFE':a;
+ const historicalElement=document.getElementById('current-holdings-netsd-data'),historical=historicalElement?JSON.parse(historicalElement.textContent):null;
+ const selectedHistory=()=>document.querySelector('select[name="profile-history-regime"]')?.value||'FULL';
  const assetOf=p=>canonical((p.dataset.currentAsset||p.id.replace(/^(share-|fund-)/,'')).toUpperCase());
  const tableOf=p=>p.querySelector('table.stock-summary-table')||p.querySelector('table');
  const infoFor=(asset,scope,policy)=>(baskets[scope]?.[policy]?.rows||[]).find(r=>canonical(r.asset)===asset)||Object.values(baskets).flatMap(m=>Object.values(m)).flatMap(b=>b.rows||[]).find(r=>canonical(r.asset)===asset);
@@ -32,9 +34,11 @@
     f.set('last price',quote.price.toFixed(4));f.set('bollinger lower eur',quote.bollinger_lower.toFixed(4));f.set('bollinger upper eur',quote.bollinger_upper.toFixed(4));
     f.set('target units',units);f.set('change',0);f.set('target value eur',(units*quote.price).toFixed(2));f.set('weight %',(100*units*quote.price/15000).toFixed(2)+'%');
    }
-   note.textContent='Confirmed holding: '+units+' units. '+(quote?'Latest verified EUR price '+quote.price.toFixed(4)+' dated '+quote.date+'. ':'')+'Current monitoring proposes no trades. Historical netSD and other model analytics retain their stated earlier sample.';
+   const context=historical?.contexts[selectedHistory()],score=context?.assets[asset.replace('US:','US_')];
+   if(score){f.set('individual netsd',score.netSD.toFixed(6));f.set('out',score.OUT);f.set('in',score.IN)}
+   note.textContent='Confirmed holding: '+units+' units. '+(quote?'Latest verified EUR price '+quote.price.toFixed(4)+' dated '+quote.date+'. ':'')+'Current monitoring proposes no trades. '+(score?'Historical netSD: '+selectedHistory()+', '+context.observations+' training observations ('+context.first_return_date+' to '+context.last_return_date+'); D='+score.D+' on the complete 72-node network including PFE and confirmed Current. Excludes cash and the 126 diagnostic observations. Other analytics retain their stated earlier sample.':'Historical analytics pending.');
    if(profile.dataset.currentPending==='true'){
-    const text=profile.querySelector(':scope > p:not(.confirmed-holding-scope)');if(text)text.textContent='Confirmed PFE holding and completed-session quote are shown. A complete model profile and corrected allocation remain pending.';
+    const text=profile.querySelector(':scope > p:not(.confirmed-holding-scope)');if(text)text.textContent='Confirmed PFE holding, latest completed-session quote and regime-dependent historical netSD are shown. Reoptimised trading allocations and full scenario-tree evaluation remain pending.';
    }
   }else{
    const old=snapshot?.current_units;
@@ -49,6 +53,13 @@
   const current=document.querySelector('input[name="portfolio-scope"][value="CURRENT"]');current.checked=true;current.dispatchEvent(new Event('change',{bubbles:true}));
   if(asset)queueMicrotask(()=>{const p=[...document.querySelectorAll('details.stock-profile')].find(p=>assetOf(p)===asset);if(p){p.hidden=false;p.open=true;p.scrollIntoView({block:'start',behavior:'smooth'})}});
  }
+ function currentNetSD(){
+  document.querySelectorAll('.actual-current-netsd').forEach(e=>e.remove());
+  if(document.querySelector('input[name="portfolio-scope"]:checked')?.value!=='CURRENT'||!historical)return;
+  const context=historical.contexts[selectedHistory()],score=context.assets.Current,host=document.querySelector('.current-portfolio-composition');if(!host)return;
+  const p=document.createElement('p');p.className='actual-current-netsd';p.textContent='Confirmed Current portfolio historical netSD: '+score.netSD.toFixed(6)+' ('+selectedHistory()+', OUT '+score.OUT+', IN '+score.IN+', D '+score.D+'). Uses all 14 confirmed holdings, including 117 VLP and 5.491688 PFE, valued at the latest verified quotes. Invested-holdings returns exclude cash; '+context.observations+' training observations. This is not terminal scenario-tree netSD and does not represent reoptimised orders.';host.append(p);
+ }
+ document.addEventListener('change',e=>{if(e.target.matches('input[name="portfolio-scope"],input[name="sale-policy"],select[name="profile-history-regime"]'))queueMicrotask(currentNetSD)});
  function initialise(){
   const filters=document.querySelector('.profile-filters');if(filters&&!document.getElementById('confirmed-holdings-shortcut')){
    const box=document.createElement('aside');box.id='confirmed-holdings-shortcut';box.style.cssText='border:1px solid #bfd1d9;border-radius:5px;padding:.65rem;margin:.6rem 0;overflow-wrap:anywhere';
