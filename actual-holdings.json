@@ -14,7 +14,7 @@
     "ROE1L": 516,
     "TSM1T": 330,
     "SE0014261764": 7.108,
-    "US:PFE": 1.719526
+    "US:PFE": 5.491688
   },
   "quantity_precision_overrides": {
     "US:PFE": 6
@@ -24,11 +24,16 @@
     "VLP1L"
   ],
   "public_disclosure_authorized": true,
-  "scope": "User-confirmed public holdings. Current monitoring uses VLP117; displayed model calculations retain their frozen VLP107 and PFE1.719526 inputs.",
+  "scope": "Publicly authorized current holdings: VLP117 and PFE5.491688. Current monitoring uses these quantities; model analyses retain their frozen VLP107 and PFE1.719526 inputs until recalculated.",
   "pending_quantity_updates": {
     "VLP1L": {
       "model_units": 107,
       "actual_units": 117
+    },
+    "US:PFE": {
+      "model_units": 1.719526,
+      "actual_units": 5.491688
     }
-  }
+  },
+  "public_disclosure_recorded_at": "2026-11-16T14:37:12.691646+00:00"
 }

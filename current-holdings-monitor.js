@@ -34,6 +34,8 @@
   const active=isCurrent();
   const conditions=document.querySelector('#selected-model-conditions');if(conditions)conditions.hidden=active;
   if(!active)return;
+  const baseline=document.querySelector('.regime-portfolio-comparison tbody tr:first-child td:first-child');
+  if(baseline)baseline.textContent='Model Current (input snapshot)';
   const host=document.querySelector('.current-portfolio-composition');if(host){
    host.replaceChildren();const details=document.createElement('details'),summary=document.createElement('summary'),p=document.createElement('p');
    summary.textContent='Current — confirmed holdings';
