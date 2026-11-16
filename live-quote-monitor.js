@@ -56,6 +56,17 @@
    for(const [label,asset] of [['View all Current holdings',null],['View PFE holding','US:PFE']]){const b=document.createElement('button');b.type='button';b.textContent=label;b.style.marginRight='.5rem';b.addEventListener('click',()=>showCurrent(asset));box.append(b)}
    filters.after(box);
   }
+  if(filters&&!document.getElementById('profile-supporting-information')){
+   const section=document.getElementById('analytics-1-1'),zone=document.createElement('details');zone.id='profile-supporting-information';
+   const summary=document.createElement('summary');summary.textContent='Additional information: model conditions, methodology and data notes';zone.append(summary);
+   const children=[...section.children],firstAsset=children.findIndex(e=>e.matches('.stock-profile:not([data-current-pending="true"])'));
+   const extras=children.filter((e,i)=>i<firstAsset&&!e.matches('.stock-profile')&&e.matches('details,nav,.profile-summary-note'));
+   filters.before(zone);for(const e of extras){zone.append(e);if(e.tagName==='DETAILS')e.open=false}zone.open=false;
+   const heading=document.createElement('div');heading.setAttribute('role','heading');heading.setAttribute('aria-level','4');heading.id='profile-assets-heading';heading.textContent='My holdings and selected model asset profiles';
+   document.getElementById('confirmed-holdings-shortcut').after(heading);
+   for(const e of [...section.children]){if(e.matches('.stock-profile')&&e.compareDocumentPosition(filters)&Node.DOCUMENT_POSITION_FOLLOWING)heading.after(e)}
+   const style=document.createElement('style');style.textContent='#profile-supporting-information{margin:.45rem 0;font-size:.88rem}#profile-supporting-information>summary{font-weight:400}#selected-model-conditions{font-size:.82rem;padding:.2rem;margin:.25rem 0}#selected-model-conditions summary,#selected-model-conditions summary strong{font-weight:400!important;font-size:.82rem}#selected-model-conditions p{margin:.3rem 0;line-height:1.4}#profile-assets-heading{font-size:1rem;margin:.9rem 0 .4rem}#confirmed-holdings-shortcut p{margin:.2rem 0 .4rem}';document.head.append(style);
+  }
   const selected=document.querySelector('input[name="portfolio-scope"]:checked');selected?.dispatchEvent(new Event('change',{bubbles:true}));
  }
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',initialise);else initialise();
