@@ -18,6 +18,13 @@
    host.append(table);const a=document.createElement('a');a.href='current-sensitivity.html?'+new URLSearchParams({model,policy,asset});a.textContent='Full quantities, case-specific denominator, cash feasibility and signed schedules';host.append(a);window.reportTableFit?.();
   }).catch(e=>{const p=document.createElement('p');p.textContent=e.message;host.append(p)});
  };
- const refresh=()=>{const model=document.querySelector('input[name="portfolio-scope"]:checked')?.value,policy=document.querySelector('input[name="sale-policy"]:checked')?.value;document.querySelectorAll('details.stock-profile').forEach(p=>window.renderSelectedPortfolioSensitivity(p,model,policy))};
+ function terminalFooter(){
+  const section=document.getElementById('analytics-1-1'),input=document.getElementById('current-portfolio-baskets');if(!section||!input)return;
+  const model=document.querySelector('input[name="portfolio-scope"]:checked')?.value,policy=document.querySelector('input[name="sale-policy"]:checked')?.value,basket=JSON.parse(input.textContent)[model]?.[policy];let footer=document.getElementById('selected-terminal-policy-score');
+  if(!footer){footer=document.createElement('p');footer.id='selected-terminal-policy-score';section.append(footer)}section.append(footer);footer.hidden=!basket?.terminal;
+  if(basket?.terminal)footer.textContent=model+' / '+policy+' — complete four-week policy terminal netSD '+format(basket.terminal.netSD)+'; D='+basket.terminal.D+'; first decision only '+format(basket.initial_only_terminal.netSD)+'. Includes every later model decision and residual cash. The selected history/regime affects the separate initial-allocation historical comparison, not this fitted full-tree probability law.';
+ }
+ const refresh=()=>{const model=document.querySelector('input[name="portfolio-scope"]:checked')?.value,policy=document.querySelector('input[name="sale-policy"]:checked')?.value;document.querySelectorAll('details.stock-profile').forEach(p=>window.renderSelectedPortfolioSensitivity(p,model,policy));terminalFooter()};
+ document.addEventListener('change',e=>{if(e.target.matches('input[name="portfolio-scope"],input[name="sale-policy"],select[name="profile-history-regime"]'))queueMicrotask(terminalFooter)});
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',refresh);else refresh();
 })();
