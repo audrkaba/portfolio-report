@@ -1,0 +1,274 @@
+{
+  "as_of": "2026-11-16",
+  "official_quote": {
+    "price_EUR": 67.0,
+    "date": "2026-11-16",
+    "volume": 391.0,
+    "url": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100149394/trading/chart_price_json?start=2023-12-14&end=2026-11-16&historical=1"
+  },
+  "holdings": {
+    "TKM1T": 288,
+    "SAF1R": 100,
+    "APG1L": 200,
+    "KNE1L": 928,
+    "VLP1L": 117,
+    "RSU1L": 150,
+    "MRK1T": 26,
+    "GRG1L": 543,
+    "HAE1T": 100,
+    "TAL1T": 700,
+    "ROE1L": 516,
+    "TSM1T": 330,
+    "SE0014261764": 7.108,
+    "US:PFE": 5.491688
+  },
+  "valuation_inputs": {
+    "TKM1T": {
+      "price_EUR": 9.03,
+      "date": "2026-11-13"
+    },
+    "SAF1R": {
+      "price_EUR": 16.8,
+      "date": "2026-11-13"
+    },
+    "APG1L": {
+      "price_EUR": 3.86,
+      "date": "2026-11-13"
+    },
+    "KNE1L": {
+      "price_EUR": 0.489,
+      "date": "2026-11-13"
+    },
+    "VLP1L": {
+      "price_EUR": 15.35,
+      "date": "2026-11-13"
+    },
+    "RSU1L": {
+      "price_EUR": 4.22,
+      "date": "2026-11-13"
+    },
+    "MRK1T": {
+      "price_EUR": 26.85,
+      "date": "2026-11-13"
+    },
+    "GRG1L": {
+      "price_EUR": 0.9,
+      "date": "2026-11-13"
+    },
+    "HAE1T": {
+      "price_EUR": 5.14,
+      "date": "2026-11-13"
+    },
+    "TAL1T": {
+      "price_EUR": 0.62,
+      "date": "2026-11-13"
+    },
+    "ROE1L": {
+      "price_EUR": 0.832,
+      "date": "2026-11-13"
+    },
+    "TSM1T": {
+      "price_EUR": 1.242,
+      "date": "2026-11-13"
+    },
+    "US_PFE": {
+      "price_EUR": 26.14006459432541,
+      "date": "2026-11-13"
+    },
+    "SE0014261764": {
+      "price_EUR": 25.668,
+      "date": "2026-11-12"
+    }
+  },
+  "invested_mark_value_EUR": 11235.355223051884,
+  "hypothetical_remaining_cash_with_EUR15000_wealth": 3764.6447769481165,
+  "technical": {
+    "rsi14_Wilder_recursive": 59.61597294986516,
+    "sma20": 67.13000000000001,
+    "bollinger_lower_20_2sd": 65.32655884487463,
+    "bollinger_upper_20_2sd": 68.9334411551254,
+    "sma50": 64.132,
+    "sma200": 52.76649999999999
+  },
+  "historical_purchase_sensitivity": {
+    "Common available history": {
+      "observations": 732,
+      "first": "2023-12-15",
+      "last": "2026-11-12",
+      "references": 73,
+      "D": 137,
+      "asset_netSD": {
+        "OUT": 69,
+        "IN": 0,
+        "D": 137,
+        "netSD": 0.5036496350364964
+      },
+      "cases": [
+        {
+          "OUT": 96,
+          "IN": 0,
+          "D": 137,
+          "netSD": 0.7007299270072993,
+          "units": 0,
+          "cost_EUR": 0.0,
+          "delta_netSD": 0.0,
+          "passes_EUR750_asset_cap": true,
+          "passes_EUR1000_stage_cap": true
+        },
+        {
+          "OUT": 96,
+          "IN": 0,
+          "D": 137,
+          "netSD": 0.7007299270072993,
+          "units": 5,
+          "cost_EUR": 335.0,
+          "delta_netSD": 0.0,
+          "passes_EUR750_asset_cap": true,
+          "passes_EUR1000_stage_cap": true
+        },
+        {
+          "OUT": 100,
+          "IN": 0,
+          "D": 137,
+          "netSD": 0.7299270072992701,
+          "units": 10,
+          "cost_EUR": 670.0,
+          "delta_netSD": 0.029197080291970767,
+          "passes_EUR750_asset_cap": true,
+          "passes_EUR1000_stage_cap": true
+        },
+        {
+          "OUT": 100,
+          "IN": 0,
+          "D": 137,
+          "netSD": 0.7299270072992701,
+          "units": 11,
+          "cost_EUR": 737.0,
+          "delta_netSD": 0.029197080291970767,
+          "passes_EUR750_asset_cap": true,
+          "passes_EUR1000_stage_cap": true
+        },
+        {
+          "OUT": 102,
+          "IN": 0,
+          "D": 137,
+          "netSD": 0.7445255474452555,
+          "units": 14,
+          "cost_EUR": 938.0,
+          "delta_netSD": 0.04379562043795615,
+          "passes_EUR750_asset_cap": false,
+          "passes_EUR1000_stage_cap": true
+        }
+      ],
+      "correlation_INF1T_TAL1T": 0.147383744735304
+    },
+    "Latest126 observations": {
+      "observations": 126,
+      "first": "2026-05-20",
+      "last": "2026-11-12",
+      "references": 73,
+      "D": 144,
+      "asset_netSD": {
+        "OUT": 75,
+        "IN": 0,
+        "D": 144,
+        "netSD": 0.5208333333333334
+      },
+      "cases": [
+        {
+          "OUT": 108,
+          "IN": 0,
+          "D": 144,
+          "netSD": 0.75,
+          "units": 0,
+          "cost_EUR": 0.0,
+          "delta_netSD": 0.0,
+          "passes_EUR750_asset_cap": true,
+          "passes_EUR1000_stage_cap": true
+        },
+        {
+          "OUT": 110,
+          "IN": 0,
+          "D": 144,
+          "netSD": 0.7638888888888888,
+          "units": 5,
+          "cost_EUR": 335.0,
+          "delta_netSD": 0.01388888888888884,
+          "passes_EUR750_asset_cap": true,
+          "passes_EUR1000_stage_cap": true
+        },
+        {
+          "OUT": 112,
+          "IN": 0,
+          "D": 144,
+          "netSD": 0.7777777777777778,
+          "units": 10,
+          "cost_EUR": 670.0,
+          "delta_netSD": 0.02777777777777779,
+          "passes_EUR750_asset_cap": true,
+          "passes_EUR1000_stage_cap": true
+        },
+        {
+          "OUT": 114,
+          "IN": 0,
+          "D": 144,
+          "netSD": 0.7916666666666666,
+          "units": 11,
+          "cost_EUR": 737.0,
+          "delta_netSD": 0.04166666666666663,
+          "passes_EUR750_asset_cap": true,
+          "passes_EUR1000_stage_cap": true
+        },
+        {
+          "OUT": 114,
+          "IN": 0,
+          "D": 144,
+          "netSD": 0.7916666666666666,
+          "units": 14,
+          "cost_EUR": 938.0,
+          "delta_netSD": 0.04166666666666663,
+          "passes_EUR750_asset_cap": false,
+          "passes_EUR1000_stage_cap": true
+        }
+      ],
+      "correlation_INF1T_TAL1T": 0.09590699638301235
+    }
+  },
+  "sector_checks": [
+    {
+      "units": 0,
+      "financial_sector_pct_of_EUR15000": 4.072296038327196,
+      "maximum_conservative_sector_pct": 26.59392091134716,
+      "passes_sector_cap": true
+    },
+    {
+      "units": 5,
+      "financial_sector_pct_of_EUR15000": 6.30562937166053,
+      "maximum_conservative_sector_pct": 26.59392091134716,
+      "passes_sector_cap": true
+    },
+    {
+      "units": 10,
+      "financial_sector_pct_of_EUR15000": 8.538962704993864,
+      "maximum_conservative_sector_pct": 26.59392091134716,
+      "passes_sector_cap": true
+    },
+    {
+      "units": 11,
+      "financial_sector_pct_of_EUR15000": 8.98562937166053,
+      "maximum_conservative_sector_pct": 26.59392091134716,
+      "passes_sector_cap": true
+    },
+    {
+      "units": 14,
+      "financial_sector_pct_of_EUR15000": 10.32562937166053,
+      "maximum_conservative_sector_pct": 26.59392091134716,
+      "passes_sector_cap": true
+    }
+  ],
+  "approximate_PE_TTM": 19.03409090909091,
+  "approved_2026_annual_dividend_EUR": 3.02,
+  "approved_dividend_yield_pct": 4.507462686567164,
+  "upcoming_december_dividend_EUR": 1.51,
+  "method": "Isolated static Current portfolio additions funded from hypothetical cash. Latest user quantities; other holdings valued at frozen Nov13 share closes / Nov12 NAV. All72 assets plus fixed Current baseline form73 references on identical dates; D=max(OUT+IN) recomputed once per window and fixed across quantities. Invested-holdings price returns exclude cash. Full common-history and trailing126 are descriptive, not independent forecasts or full scenario-tree netSD. No model reoptimisation; no purchase recommendation inferred from historical netSD alone. INF1T history eligibility waived only for this diagnostic. Formal INF1T sector=Financials; underlying Tallink business overlap is not captured by that label. No taxes, spreads, fees or dividends added to historical price-return diagnostics."
+}
