@@ -9969,5 +9969,5 @@
     }
   ],
   "pending_policies": [],
-  "scope": "Corrected complete-policy terminal-return netSD; latest exact holdings; heuristic attained policies, not global-optimality certificates. Main-report integration, full-tree sensitivity, information-value calculations and technical comparisons remain separate completion requirements."
+  "scope": "Complete corrected four-week policies; independently validated exact holdings and constraints; all12 policies and downstream analyses completed. Heuristic attained solutions, not global-optimality certificates."
 }
