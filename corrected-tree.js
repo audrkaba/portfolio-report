@@ -1,11 +1,13 @@
 (async()=>{
- const base='interactive/corrected-tree/',get=url=>fetch(base+url).then(r=>{if(!r.ok)throw Error(url);return r.json()}),meta=await get('manifest.json'),family=document.body.dataset.family,weekly=family==='weekly',params=new URLSearchParams(location.search),model=document.getElementById('model'),policy=document.getElementById('policy'),asset=document.getElementById('asset'),selectors=[];
+ const base='interactive/corrected-tree/',cache=new Map();
+ function get(url){if(cache.has(url))return cache.get(url);const promise=(async()=>{for(let attempt=0;attempt<3;attempt++){try{const r=await fetch(base+url,{signal:AbortSignal.timeout(15000)});if(!r.ok)throw Error(url+' HTTP'+r.status);return await r.json()}catch(e){if(attempt===2){cache.delete(url);throw e}await new Promise(resolve=>setTimeout(resolve,300*(attempt+1)))}}})();cache.set(url,promise);if(cache.size>16)cache.delete(cache.keys().next().value);return promise}
+ const meta=await get('manifest.json'),family=document.body.dataset.family,weekly=family==='weekly',params=new URLSearchParams(location.search),model=document.getElementById('model'),policy=document.getElementById('policy'),asset=document.getElementById('asset'),selectors=[];
  for(const m of meta.families[family].models)model.add(new Option(m,m));model.value=params.get('model')||meta.families[family].models[0];if(!model.value)model.selectedIndex=0;policy.value=params.get('policy')||'NO_SALE';
  for(const a of meta.assets)asset.add(new Option(a,a));asset.value=params.get('asset')||'VLP1L';
  for(let i=0;i<(weekly?4:1);i++){const label=document.createElement('label');label.textContent=weekly?'Observed continuation '+(i+1)+' (4 regimes × 5 price clusters)':'Representative scenario at week2';const select=document.createElement('select');for(let k=0;k<20;k++)select.add(new Option('R'+(Math.floor(k/5)+1)+' / price cluster '+(k%5+1),k));label.append(select);document.getElementById('branches').append(label);selectors.push(select)}
  document.getElementById('snapshot').textContent='Baltic close '+meta.market.share_last+'; fund NAV '+meta.market.fund_last+'; PFE completed US close 2026-11-13. Initial holdings: VLP117; PFE5.491688.';
  let serial=0;
- async function draw(){const token=++serial;try{
+ async function draw(){const token=++serial;document.documentElement.dataset.correctedTreeReady='false';try{
   const [a,b=0,c=0,d=0]=selectors.map(s=>Number(s.value)),[root,prices,decisions]=await Promise.all([get(model.value+'/'+policy.value+'/root.json'),get(family+'/prices-'+a+'.json'),get(model.value+'/'+policy.value+'/branch-'+a+'.json')]);if(token!==serial)return;
   const s=root.summary;document.getElementById('score').textContent='Whole policy terminal netSD '+s.terminal.netSD.toFixed(6)+'; candidate-dependent D '+s.terminal.D+'; '+s.scenarios.toLocaleString('en-US')+' outcomes; '+s.decision_nodes.toLocaleString('en-US')+' decision nodes. Heuristic attained solution.';
   document.getElementById('conditions').textContent='Decisions at sessions '+s.stages.join(', ')+', valuation at20. '+(s.stage_cap_EUR==null?'Both purchase-value caps removed.':'Gross purchase caps: EUR1000 total / EUR750 per asset at each decision.')+' Sector30%, no borrowing, cumulative future US buys EUR1000; held US inventory excluded from this allowance.';
@@ -13,6 +15,6 @@
   const row=(label,price,q,delta,cash)=>{const r=body.insertRow();for(const v of [label,price.toFixed(4),qty(q)+' ('+(delta>=0?'+':'')+qty(delta)+')',cash.toFixed(2)])r.insertCell().textContent=v};row('Initial decision',meta.p0[j],previous,previous-meta.current[j],s.root_cash_EUR);
   for(const index of weekly?[0,1+b,21+b*20+c]:[0]){const q=decisions.q[index][j];row('Session '+prices.steps[index],prices.prices[index][j],q,q-previous,decisions.cash[index]);previous=q}
   const leaf=weekly?b*400+c*20+d:0,last=weekly?21+b*20+c:0;row('Session20: valuation only',prices.terminal_prices[leaf][j],previous,0,decisions.cash[last]);host.append(table);const p=document.createElement('p');p.textContent='Selected complete path probability '+(100*prices.probabilities[leaf]).toFixed(8)+'%; terminal portfolio wealth EUR '+((1+decisions.terminal_returns[leaf])*15000).toFixed(2)+'. Each weekly decision node has20 continuations; the final continuation determines valuation only.';host.append(p);document.documentElement.dataset.correctedTreeReady='true';
- }catch(e){document.getElementById('path').textContent='Unable to load verified tree: '+e.message;throw e}}
+ }catch(e){if(token!==serial)return;document.getElementById('path').textContent='Unable to load verified tree: '+e.message;throw e}}
  for(const s of [model,policy,asset,...selectors])s.addEventListener('change',draw);await draw();
 })();
