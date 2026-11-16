@@ -1,61 +1,33 @@
 {
   "run": "20261113_zzclose_vlp107",
-  "revision": "3c1d0182d8bf",
-  "prepared_at": "2026-11-16T08:51:37.948444+02:00",
+  "revision": "ef8c7859b945",
+  "prepared_at": "2026-11-16T08:59:47.920221+02:00",
   "complete": false,
-  "parts": [
-    {
-      "label": "Completed portfolio allocations and actual holdings",
-      "status": "published",
-      "url": "partial-progress.html#completed-portfolios"
-    },
-    {
-      "label": "Fixed-position market-regime correlations (Figure 2.k)",
-      "status": "published",
-      "url": "partial-progress.html#completed-correlations"
-    },
-    {
-      "label": "CPU48/CUDA balance and exact CPU packet trial (section 4.12)",
-      "status": "published",
-      "url": "partial-progress.html#completed-compute"
-    },
-    {
-      "label": "Stochastic 2: Sale at every stage",
-      "status": "published",
-      "url": "partial-progress.html#completed-portfolios"
-    },
-    {
-      "label": "Regime-specific portfolios",
-      "status": "pending",
-      "url": null
-    },
-    {
-      "label": "All-stage portfolio sensitivity",
-      "status": "pending",
-      "url": null
-    },
-    {
-      "label": "Final-horizon netSD, time and energy comparison",
-      "status": "pending",
-      "url": null
-    },
-    {
-      "label": "Full report: section 1.1 schema, layouts, numbering and interactive frontier labels",
-      "status": "integration pending",
-      "url": null
-    },
-    {
-      "label": "Both updated scenario trees",
-      "status": "published",
-      "url": "partial-progress.html#completed-trees"
-    }
-  ],
+  "notice": "VLP holdings were corrected to 107. The previous 87-unit calculation was superseded. Only the linked verified portfolios use the new holdings and 2026-11-13 prices.",
   "holdings": {
     "VLP1L": 107,
     "SE0014261764": 7.108
   },
-  "prices": {
-    "shares": "2026-11-13",
-    "funds": "2026-11-12"
-  }
+  "parts": [
+    {
+      "label": "Verified Stochastic, Update2, Update3, Markowitz, Minimax and Robust initial allocations: VLP107",
+      "status": "published",
+      "url": "vlp-current.html"
+    },
+    {
+      "label": "Stochastic 2 with VLP107",
+      "status": "published",
+      "url": "vlp-current.html"
+    },
+    {
+      "label": "A variants without both purchase-value caps: stochA, stoch2A published",
+      "status": "published",
+      "url": "vlp-current.html"
+    },
+    {
+      "label": "Time, energy and performance studies",
+      "status": "full-command counters being collected; controlled studies follow financial verification",
+      "url": null
+    }
+  ]
 }
