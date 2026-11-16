@@ -1,0 +1,110 @@
+{
+  "basis": {
+    "units": {
+      "TKM1T": 288,
+      "SAF1R": 100,
+      "APG1L": 200,
+      "KNE1L": 928,
+      "VLP1L": 117,
+      "RSU1L": 150,
+      "MRK1T": 26,
+      "GRG1L": 543,
+      "HAE1T": 100,
+      "TAL1T": 700,
+      "ROE1L": 516,
+      "TSM1T": 330,
+      "SE0014261764": 7.108,
+      "US_PFE": 5.491688
+    },
+    "returns_sha256": "b180d3f4f910cd1332070174cdc6843cbd8f51f0e3f0de433042a16fc31e976d",
+    "training_observations": 1130
+  },
+  "holdings": [
+    {
+      "asset": "TKM1T",
+      "name": "TKM Grupp",
+      "units": 288
+    },
+    {
+      "asset": "SAF1R",
+      "name": "SAF Tehnika",
+      "units": 100
+    },
+    {
+      "asset": "APG1L",
+      "name": "Apranga",
+      "units": 200
+    },
+    {
+      "asset": "KNE1L",
+      "name": "KN Energies",
+      "units": 928
+    },
+    {
+      "asset": "VLP1L",
+      "name": "Vilky<U+0161>ki<U+0173> pienin<U+0117>",
+      "units": 117
+    },
+    {
+      "asset": "RSU1L",
+      "name": "Roki<U+0161>kio s<U+016B>ris",
+      "units": 150
+    },
+    {
+      "asset": "MRK1T",
+      "name": "Merko Ehitus",
+      "units": 26
+    },
+    {
+      "asset": "GRG1L",
+      "name": "Grigeo Group",
+      "units": 543
+    },
+    {
+      "asset": "HAE1T",
+      "name": "Harju Elekter Group",
+      "units": 100
+    },
+    {
+      "asset": "TAL1T",
+      "name": "Tallink Grupp",
+      "units": 700
+    },
+    {
+      "asset": "ROE1L",
+      "name": "Artea Bankas",
+      "units": 516
+    },
+    {
+      "asset": "TSM1T",
+      "name": "Tallinna Sadam",
+      "units": 330
+    },
+    {
+      "asset": "SE0014261764",
+      "name": "Swedbank Robur Technology C",
+      "units": 7.108
+    },
+    {
+      "asset": "US:PFE",
+      "name": "Pfizer",
+      "units": 5.491688
+    }
+  ],
+  "observations": 1130,
+  "first_return_date": "2021-11-29",
+  "last_return_date": "2026-05-19",
+  "artifacts": {
+    "pearson": {
+      "figure": "figures/current_holdings/correlation_pearson.png",
+      "sha256": "8218bf5c75f8f44d08f4e960b7b6b3e4afed393fc5a03089f42024444c25b9ee",
+      "csv": "figures/current_holdings/correlation_pearson.csv"
+    },
+    "spearman": {
+      "figure": "figures/current_holdings/correlation_spearman.png",
+      "sha256": "ac0e4bfb94aeac3fc2b8e0a925241744d954b8845b87cac8ecdd525978d19e41",
+      "csv": "figures/current_holdings/correlation_spearman.csv"
+    }
+  },
+  "scope": "Asset-return correlations, not quantity-weighted portfolio returns. All approved positive Current holdings are included. Original archived panels are retained separately."
+}
