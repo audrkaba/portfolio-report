@@ -37,7 +37,7 @@
   const host=document.querySelector('.current-portfolio-composition');if(host){
    host.replaceChildren();const details=document.createElement('details'),summary=document.createElement('summary'),p=document.createElement('p');
    summary.textContent='Current — confirmed holdings';
-   p.textContent='Monitoring view: quantities are the user-confirmed holdings; values use the report’s latest available prices and weights use EUR 15,000 account wealth. No optimisation trades are proposed. '+(holdings.pending_model_updates?.length?'PFE is included as a confirmed holding; its model analytics and valuation are pending.':'');
+   p.textContent='Monitoring view: quantities are the user-confirmed public holdings; values use the report’s latest available prices and weights use EUR 15,000 account wealth. No optimisation trades are proposed. '+(document.querySelector('details.stock-profile[data-current-pending="true"]')?'PFE is included as a confirmed holding; its integrated profile is pending. ':'')+Object.entries(holdings.pending_quantity_updates||{}).map(([asset,item])=>asset+': Current '+item.actual_units+' units; model input '+item.model_units+' units.').join(' ');
    details.append(summary,p);host.append(details);
   }
  }

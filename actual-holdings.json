@@ -1,11 +1,11 @@
 {
-  "confirmed_at": "2026-11-15T09:08:42.663378+02:00",
+  "confirmed_at": "2026-11-16T14:08:10.462041+00:00",
   "units": {
     "TKM1T": 288,
     "SAF1R": 100,
     "APG1L": 200,
     "KNE1L": 928,
-    "VLP1L": 107,
+    "VLP1L": 117,
     "RSU1L": 150,
     "MRK1T": 26,
     "GRG1L": 543,
@@ -20,8 +20,15 @@
     "US:PFE": 6
   },
   "pending_model_updates": [
-    "US:PFE"
+    "US:PFE",
+    "VLP1L"
   ],
   "public_disclosure_authorized": true,
-  "scope": "User-confirmed actual holdings. PFE is not yet included in the displayed financial model results."
+  "scope": "User-confirmed public holdings. Current monitoring uses VLP117; displayed model calculations retain their frozen VLP107 and PFE1.719526 inputs.",
+  "pending_quantity_updates": {
+    "VLP1L": {
+      "model_units": 107,
+      "actual_units": 117
+    }
+  }
 }
