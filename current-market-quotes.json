@@ -184,7 +184,7 @@
     "IGN1L": {
       "price": 22.1,
       "date": "2026-11-16",
-      "name": "Ignitis grup<U+0117>",
+      "name": "Ignitis grupė",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000115768/trading/chart_price_json?start=2026-11-01&end=2026-11-16&historical=1",
       "bollinger_lower": 21.22720118401195,
@@ -409,7 +409,7 @@
     "PZV1L": {
       "price": 1.8,
       "date": "2026-11-16",
-      "name": "Pieno <U+017E>vaig<U+017E>d<U+0117>s",
+      "name": "Pieno žvaigždės",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000111676/trading/chart_price_json?start=2026-11-01&end=2026-11-16&historical=1",
       "bollinger_lower": 1.7666609032910365,
@@ -418,7 +418,7 @@
     "RKB1R": {
       "price": 0.308,
       "date": "2026-11-16",
-      "name": "R<U+012B>gas ku<U+0123>u b<U+016B>v<U+0113>tava",
+      "name": "Rīgas kuģu būvētava",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/LV0000100378/trading/chart_price_json?start=2026-11-01&end=2026-11-16&historical=1",
       "bollinger_lower": 0.2895955561041169,
@@ -436,7 +436,7 @@
     "RSU1L": {
       "price": 4.26,
       "date": "2026-11-16",
-      "name": "Roki<U+0161>kio s<U+016B>ris",
+      "name": "Rokiškio sūris",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000100372/trading/chart_price_json?start=2026-11-01&end=2026-11-16&historical=1",
       "bollinger_lower": 4.082514108801487,
@@ -463,7 +463,7 @@
     "SCM1R": {
       "price": 7.25,
       "date": "2026-11-16",
-      "name": "Siguldas ciltslietu un m<U+0101>ksl<U+012B>g<U+0101>s aps<U+0113>klo<U+0161>anas stacija",
+      "name": "Siguldas ciltslietu un mākslīgās apsēklošanas stacija",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/LV0000100600/trading/chart_price_json?start=2026-11-01&end=2026-11-16&historical=1",
       "bollinger_lower": 5.833806565675833,
@@ -769,7 +769,7 @@
     "UTR1L": {
       "price": 0.332,
       "date": "2026-11-16",
-      "name": "Utenos trikota<U+017E>as",
+      "name": "Utenos trikotažas",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000109324/trading/chart_price_json?start=2026-11-01&end=2026-11-16&historical=1",
       "bollinger_lower": 0.316478713771349,
@@ -787,7 +787,7 @@
     "VIRSI": {
       "price": 4.43,
       "date": "2026-11-16",
-      "name": "VIR<U+0160>I-A",
+      "name": "VIRŠI-A",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/LV0000101848/trading/chart_price_json?start=2026-11-01&end=2026-11-16&historical=1",
       "bollinger_lower": 4.390620289390752,
@@ -796,7 +796,7 @@
     "VLP1L": {
       "price": 15.35,
       "date": "2026-11-16",
-      "name": "Vilky<U+0161>ki<U+0173> pienin<U+0117>",
+      "name": "Vilkyškių pieninė",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000127508/trading/chart_price_json?start=2026-11-01&end=2026-11-16&historical=1",
       "bollinger_lower": 15.301634305732216,
@@ -805,7 +805,7 @@
     "ZMP1L": {
       "price": 2.86,
       "date": "2026-11-16",
-      "name": "<U+017D>emaitijos pienas",
+      "name": "Žemaitijos pienas",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000121865/trading/chart_price_json?start=2026-11-01&end=2026-11-16&historical=1",
       "bollinger_lower": 2.8075619191483256,

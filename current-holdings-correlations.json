@@ -16,8 +16,8 @@
       "SE0014261764": 7.108,
       "US_PFE": 5.491688
     },
-    "returns_sha256": "b180d3f4f910cd1332070174cdc6843cbd8f51f0e3f0de433042a16fc31e976d",
-    "training_observations": 1130
+    "returns_sha256": "c7e97dffb0f5779e6a3399a4427feb06ad9865dccf9166a83f0c5bd9120dbba3",
+    "training_observations": 1131
   },
   "holdings": [
     {
@@ -42,12 +42,12 @@
     },
     {
       "asset": "VLP1L",
-      "name": "Vilky<U+0161>ki<U+0173> pienin<U+0117>",
+      "name": "Vilkyškių pieninė",
       "units": 117
     },
     {
       "asset": "RSU1L",
-      "name": "Roki<U+0161>kio s<U+016B>ris",
+      "name": "Rokiškio sūris",
       "units": 150
     },
     {
@@ -91,18 +91,18 @@
       "units": 5.491688
     }
   ],
-  "observations": 1130,
+  "observations": 1131,
   "first_return_date": "2021-11-29",
-  "last_return_date": "2026-05-19",
+  "last_return_date": "2026-05-20",
   "artifacts": {
     "pearson": {
       "figure": "figures/current_holdings/correlation_pearson.png",
-      "sha256": "8218bf5c75f8f44d08f4e960b7b6b3e4afed393fc5a03089f42024444c25b9ee",
+      "sha256": "8b63f417b8d9236a3a8b3272f958b4c48210afd2f34fb0c051472eb549abc906",
       "csv": "figures/current_holdings/correlation_pearson.csv"
     },
     "spearman": {
       "figure": "figures/current_holdings/correlation_spearman.png",
-      "sha256": "ac0e4bfb94aeac3fc2b8e0a925241744d954b8845b87cac8ecdd525978d19e41",
+      "sha256": "925bac4cac8079a81cac64e08c44da927aa47772b44271375fa107b8d11ce569",
       "csv": "figures/current_holdings/correlation_spearman.csv"
     }
   },

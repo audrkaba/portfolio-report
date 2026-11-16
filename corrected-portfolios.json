@@ -281,7 +281,7 @@
           "last_price": 22.1,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "Ignitis grup<U+0117>"
+          "name": "Ignitis grupė"
         },
         {
           "asset": "INC1L",
@@ -461,7 +461,7 @@
           "last_price": 1.8,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "Pieno <U+017E>vaig<U+017E>d<U+0117>s"
+          "name": "Pieno žvaigždės"
         },
         {
           "asset": "RKB1R",
@@ -471,7 +471,7 @@
           "last_price": 0.308,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "R<U+012B>gas ku<U+0123>u b<U+016B>v<U+0113>tava"
+          "name": "Rīgas kuģu būvētava"
         },
         {
           "asset": "ROE1L",
@@ -491,7 +491,7 @@
           "last_price": 4.26,
           "invested_EUR": 639.0,
           "weight": 0.0426,
-          "name": "Roki<U+0161>kio s<U+016B>ris"
+          "name": "Rokiškio sūris"
         },
         {
           "asset": "SAF1R",
@@ -521,7 +521,7 @@
           "last_price": 7.25,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "Siguldas ciltslietu un m<U+0101>ksl<U+012B>g<U+0101>s aps<U+0113>klo<U+0161>anas stacija"
+          "name": "Siguldas ciltslietu un mākslīgās apsēklošanas stacija"
         },
         {
           "asset": "SFG1T",
@@ -611,7 +611,7 @@
           "last_price": 0.332,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "Utenos trikota<U+017E>as"
+          "name": "Utenos trikotažas"
         },
         {
           "asset": "VBL1L",
@@ -631,7 +631,7 @@
           "last_price": 4.43,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "VIR<U+0160>I-A"
+          "name": "VIRŠI-A"
         },
         {
           "asset": "VLP1L",
@@ -641,7 +641,7 @@
           "last_price": 15.35,
           "invested_EUR": 1795.95,
           "weight": 0.11973,
-          "name": "Vilky<U+0161>ki<U+0173> pienin<U+0117>"
+          "name": "Vilkyškių pieninė"
         },
         {
           "asset": "ZMP1L",
@@ -651,7 +651,7 @@
           "last_price": 2.86,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "<U+017D>emaitijos pienas"
+          "name": "Žemaitijos pienas"
         },
         {
           "asset": "SE0013876927",
@@ -1104,7 +1104,7 @@
           "last_price": 22.1,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "Ignitis grup<U+0117>"
+          "name": "Ignitis grupė"
         },
         {
           "asset": "INC1L",
@@ -1284,7 +1284,7 @@
           "last_price": 1.8,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "Pieno <U+017E>vaig<U+017E>d<U+0117>s"
+          "name": "Pieno žvaigždės"
         },
         {
           "asset": "RKB1R",
@@ -1294,7 +1294,7 @@
           "last_price": 0.308,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "R<U+012B>gas ku<U+0123>u b<U+016B>v<U+0113>tava"
+          "name": "Rīgas kuģu būvētava"
         },
         {
           "asset": "ROE1L",
@@ -1314,7 +1314,7 @@
           "last_price": 4.26,
           "invested_EUR": 639.0,
           "weight": 0.0426,
-          "name": "Roki<U+0161>kio s<U+016B>ris"
+          "name": "Rokiškio sūris"
         },
         {
           "asset": "SAF1R",
@@ -1344,7 +1344,7 @@
           "last_price": 7.25,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "Siguldas ciltslietu un m<U+0101>ksl<U+012B>g<U+0101>s aps<U+0113>klo<U+0161>anas stacija"
+          "name": "Siguldas ciltslietu un mākslīgās apsēklošanas stacija"
         },
         {
           "asset": "SFG1T",
@@ -1434,7 +1434,7 @@
           "last_price": 0.332,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "Utenos trikota<U+017E>as"
+          "name": "Utenos trikotažas"
         },
         {
           "asset": "VBL1L",
@@ -1454,7 +1454,7 @@
           "last_price": 4.43,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "VIR<U+0160>I-A"
+          "name": "VIRŠI-A"
         },
         {
           "asset": "VLP1L",
@@ -1464,7 +1464,7 @@
           "last_price": 15.35,
           "invested_EUR": 2287.15,
           "weight": 0.1524766666666666,
-          "name": "Vilky<U+0161>ki<U+0173> pienin<U+0117>"
+          "name": "Vilkyškių pieninė"
         },
         {
           "asset": "ZMP1L",
@@ -1474,7 +1474,7 @@
           "last_price": 2.86,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "<U+017D>emaitijos pienas"
+          "name": "Žemaitijos pienas"
         },
         {
           "asset": "SE0013876927",
@@ -1962,7 +1962,7 @@
           "last_price": 22.1,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "Ignitis grup<U+0117>"
+          "name": "Ignitis grupė"
         },
         {
           "asset": "INC1L",
@@ -2142,7 +2142,7 @@
           "last_price": 1.8,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "Pieno <U+017E>vaig<U+017E>d<U+0117>s"
+          "name": "Pieno žvaigždės"
         },
         {
           "asset": "RKB1R",
@@ -2152,7 +2152,7 @@
           "last_price": 0.308,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "R<U+012B>gas ku<U+0123>u b<U+016B>v<U+0113>tava"
+          "name": "Rīgas kuģu būvētava"
         },
         {
           "asset": "ROE1L",
@@ -2172,7 +2172,7 @@
           "last_price": 4.26,
           "invested_EUR": 639.0,
           "weight": 0.0426,
-          "name": "Roki<U+0161>kio s<U+016B>ris"
+          "name": "Rokiškio sūris"
         },
         {
           "asset": "SAF1R",
@@ -2202,7 +2202,7 @@
           "last_price": 7.25,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "Siguldas ciltslietu un m<U+0101>ksl<U+012B>g<U+0101>s aps<U+0113>klo<U+0161>anas stacija"
+          "name": "Siguldas ciltslietu un mākslīgās apsēklošanas stacija"
         },
         {
           "asset": "SFG1T",
@@ -2292,7 +2292,7 @@
           "last_price": 0.332,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "Utenos trikota<U+017E>as"
+          "name": "Utenos trikotažas"
         },
         {
           "asset": "VBL1L",
@@ -2312,7 +2312,7 @@
           "last_price": 4.43,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "VIR<U+0160>I-A"
+          "name": "VIRŠI-A"
         },
         {
           "asset": "VLP1L",
@@ -2322,7 +2322,7 @@
           "last_price": 15.35,
           "invested_EUR": 1795.95,
           "weight": 0.11973,
-          "name": "Vilky<U+0161>ki<U+0173> pienin<U+0117>"
+          "name": "Vilkyškių pieninė"
         },
         {
           "asset": "ZMP1L",
@@ -2332,7 +2332,7 @@
           "last_price": 2.86,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "<U+017D>emaitijos pienas"
+          "name": "Žemaitijos pienas"
         },
         {
           "asset": "SE0013876927",
@@ -2783,7 +2783,7 @@
           "last_price": 22.1,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "Ignitis grup<U+0117>"
+          "name": "Ignitis grupė"
         },
         {
           "asset": "INC1L",
@@ -2963,7 +2963,7 @@
           "last_price": 1.8,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "Pieno <U+017E>vaig<U+017E>d<U+0117>s"
+          "name": "Pieno žvaigždės"
         },
         {
           "asset": "RKB1R",
@@ -2973,7 +2973,7 @@
           "last_price": 0.308,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "R<U+012B>gas ku<U+0123>u b<U+016B>v<U+0113>tava"
+          "name": "Rīgas kuģu būvētava"
         },
         {
           "asset": "ROE1L",
@@ -2993,7 +2993,7 @@
           "last_price": 4.26,
           "invested_EUR": 639.0,
           "weight": 0.0426,
-          "name": "Roki<U+0161>kio s<U+016B>ris"
+          "name": "Rokiškio sūris"
         },
         {
           "asset": "SAF1R",
@@ -3023,7 +3023,7 @@
           "last_price": 7.25,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "Siguldas ciltslietu un m<U+0101>ksl<U+012B>g<U+0101>s aps<U+0113>klo<U+0161>anas stacija"
+          "name": "Siguldas ciltslietu un mākslīgās apsēklošanas stacija"
         },
         {
           "asset": "SFG1T",
@@ -3113,7 +3113,7 @@
           "last_price": 0.332,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "Utenos trikota<U+017E>as"
+          "name": "Utenos trikotažas"
         },
         {
           "asset": "VBL1L",
@@ -3133,7 +3133,7 @@
           "last_price": 4.43,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "VIR<U+0160>I-A"
+          "name": "VIRŠI-A"
         },
         {
           "asset": "VLP1L",
@@ -3143,7 +3143,7 @@
           "last_price": 15.35,
           "invested_EUR": 2287.15,
           "weight": 0.1524766666666666,
-          "name": "Vilky<U+0161>ki<U+0173> pienin<U+0117>"
+          "name": "Vilkyškių pieninė"
         },
         {
           "asset": "ZMP1L",
@@ -3153,7 +3153,7 @@
           "last_price": 2.86,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "<U+017D>emaitijos pienas"
+          "name": "Žemaitijos pienas"
         },
         {
           "asset": "SE0013876927",
@@ -3604,7 +3604,7 @@
           "last_price": 22.1,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "Ignitis grup<U+0117>"
+          "name": "Ignitis grupė"
         },
         {
           "asset": "INC1L",
@@ -3784,7 +3784,7 @@
           "last_price": 1.8,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "Pieno <U+017E>vaig<U+017E>d<U+0117>s"
+          "name": "Pieno žvaigždės"
         },
         {
           "asset": "RKB1R",
@@ -3794,7 +3794,7 @@
           "last_price": 0.308,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "R<U+012B>gas ku<U+0123>u b<U+016B>v<U+0113>tava"
+          "name": "Rīgas kuģu būvētava"
         },
         {
           "asset": "ROE1L",
@@ -3814,7 +3814,7 @@
           "last_price": 4.26,
           "invested_EUR": 639.0,
           "weight": 0.0426,
-          "name": "Roki<U+0161>kio s<U+016B>ris"
+          "name": "Rokiškio sūris"
         },
         {
           "asset": "SAF1R",
@@ -3844,7 +3844,7 @@
           "last_price": 7.25,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "Siguldas ciltslietu un m<U+0101>ksl<U+012B>g<U+0101>s aps<U+0113>klo<U+0161>anas stacija"
+          "name": "Siguldas ciltslietu un mākslīgās apsēklošanas stacija"
         },
         {
           "asset": "SFG1T",
@@ -3934,7 +3934,7 @@
           "last_price": 0.332,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "Utenos trikota<U+017E>as"
+          "name": "Utenos trikotažas"
         },
         {
           "asset": "VBL1L",
@@ -3954,7 +3954,7 @@
           "last_price": 4.43,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "VIR<U+0160>I-A"
+          "name": "VIRŠI-A"
         },
         {
           "asset": "VLP1L",
@@ -3964,7 +3964,7 @@
           "last_price": 15.35,
           "invested_EUR": 1795.95,
           "weight": 0.11973,
-          "name": "Vilky<U+0161>ki<U+0173> pienin<U+0117>"
+          "name": "Vilkyškių pieninė"
         },
         {
           "asset": "ZMP1L",
@@ -3974,7 +3974,7 @@
           "last_price": 2.86,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "<U+017D>emaitijos pienas"
+          "name": "Žemaitijos pienas"
         },
         {
           "asset": "SE0013876927",
@@ -4425,7 +4425,7 @@
           "last_price": 22.1,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "Ignitis grup<U+0117>"
+          "name": "Ignitis grupė"
         },
         {
           "asset": "INC1L",
@@ -4605,7 +4605,7 @@
           "last_price": 1.8,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "Pieno <U+017E>vaig<U+017E>d<U+0117>s"
+          "name": "Pieno žvaigždės"
         },
         {
           "asset": "RKB1R",
@@ -4615,7 +4615,7 @@
           "last_price": 0.308,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "R<U+012B>gas ku<U+0123>u b<U+016B>v<U+0113>tava"
+          "name": "Rīgas kuģu būvētava"
         },
         {
           "asset": "ROE1L",
@@ -4635,7 +4635,7 @@
           "last_price": 4.26,
           "invested_EUR": 639.0,
           "weight": 0.0426,
-          "name": "Roki<U+0161>kio s<U+016B>ris"
+          "name": "Rokiškio sūris"
         },
         {
           "asset": "SAF1R",
@@ -4665,7 +4665,7 @@
           "last_price": 7.25,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "Siguldas ciltslietu un m<U+0101>ksl<U+012B>g<U+0101>s aps<U+0113>klo<U+0161>anas stacija"
+          "name": "Siguldas ciltslietu un mākslīgās apsēklošanas stacija"
         },
         {
           "asset": "SFG1T",
@@ -4755,7 +4755,7 @@
           "last_price": 0.332,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "Utenos trikota<U+017E>as"
+          "name": "Utenos trikotažas"
         },
         {
           "asset": "VBL1L",
@@ -4775,7 +4775,7 @@
           "last_price": 4.43,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "VIR<U+0160>I-A"
+          "name": "VIRŠI-A"
         },
         {
           "asset": "VLP1L",
@@ -4785,7 +4785,7 @@
           "last_price": 15.35,
           "invested_EUR": 1795.95,
           "weight": 0.11973,
-          "name": "Vilky<U+0161>ki<U+0173> pienin<U+0117>"
+          "name": "Vilkyškių pieninė"
         },
         {
           "asset": "ZMP1L",
@@ -4795,7 +4795,7 @@
           "last_price": 2.86,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "<U+017D>emaitijos pienas"
+          "name": "Žemaitijos pienas"
         },
         {
           "asset": "SE0013876927",
@@ -5255,7 +5255,7 @@
           "last_price": 22.1,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "Ignitis grup<U+0117>"
+          "name": "Ignitis grupė"
         },
         {
           "asset": "INC1L",
@@ -5435,7 +5435,7 @@
           "last_price": 1.8,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "Pieno <U+017E>vaig<U+017E>d<U+0117>s"
+          "name": "Pieno žvaigždės"
         },
         {
           "asset": "RKB1R",
@@ -5445,7 +5445,7 @@
           "last_price": 0.308,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "R<U+012B>gas ku<U+0123>u b<U+016B>v<U+0113>tava"
+          "name": "Rīgas kuģu būvētava"
         },
         {
           "asset": "ROE1L",
@@ -5465,7 +5465,7 @@
           "last_price": 4.26,
           "invested_EUR": 639.0,
           "weight": 0.0426,
-          "name": "Roki<U+0161>kio s<U+016B>ris"
+          "name": "Rokiškio sūris"
         },
         {
           "asset": "SAF1R",
@@ -5495,7 +5495,7 @@
           "last_price": 7.25,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "Siguldas ciltslietu un m<U+0101>ksl<U+012B>g<U+0101>s aps<U+0113>klo<U+0161>anas stacija"
+          "name": "Siguldas ciltslietu un mākslīgās apsēklošanas stacija"
         },
         {
           "asset": "SFG1T",
@@ -5585,7 +5585,7 @@
           "last_price": 0.332,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "Utenos trikota<U+017E>as"
+          "name": "Utenos trikotažas"
         },
         {
           "asset": "VBL1L",
@@ -5605,7 +5605,7 @@
           "last_price": 4.43,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "VIR<U+0160>I-A"
+          "name": "VIRŠI-A"
         },
         {
           "asset": "VLP1L",
@@ -5615,7 +5615,7 @@
           "last_price": 15.35,
           "invested_EUR": 1795.95,
           "weight": 0.11973,
-          "name": "Vilky<U+0161>ki<U+0173> pienin<U+0117>"
+          "name": "Vilkyškių pieninė"
         },
         {
           "asset": "ZMP1L",
@@ -5625,7 +5625,7 @@
           "last_price": 2.86,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "<U+017D>emaitijos pienas"
+          "name": "Žemaitijos pienas"
         },
         {
           "asset": "SE0013876927",
@@ -6085,7 +6085,7 @@
           "last_price": 22.1,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "Ignitis grup<U+0117>"
+          "name": "Ignitis grupė"
         },
         {
           "asset": "INC1L",
@@ -6265,7 +6265,7 @@
           "last_price": 1.8,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "Pieno <U+017E>vaig<U+017E>d<U+0117>s"
+          "name": "Pieno žvaigždės"
         },
         {
           "asset": "RKB1R",
@@ -6275,7 +6275,7 @@
           "last_price": 0.308,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "R<U+012B>gas ku<U+0123>u b<U+016B>v<U+0113>tava"
+          "name": "Rīgas kuģu būvētava"
         },
         {
           "asset": "ROE1L",
@@ -6295,7 +6295,7 @@
           "last_price": 4.26,
           "invested_EUR": 639.0,
           "weight": 0.0426,
-          "name": "Roki<U+0161>kio s<U+016B>ris"
+          "name": "Rokiškio sūris"
         },
         {
           "asset": "SAF1R",
@@ -6325,7 +6325,7 @@
           "last_price": 7.25,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "Siguldas ciltslietu un m<U+0101>ksl<U+012B>g<U+0101>s aps<U+0113>klo<U+0161>anas stacija"
+          "name": "Siguldas ciltslietu un mākslīgās apsēklošanas stacija"
         },
         {
           "asset": "SFG1T",
@@ -6415,7 +6415,7 @@
           "last_price": 0.332,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "Utenos trikota<U+017E>as"
+          "name": "Utenos trikotažas"
         },
         {
           "asset": "VBL1L",
@@ -6435,7 +6435,7 @@
           "last_price": 4.43,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "VIR<U+0160>I-A"
+          "name": "VIRŠI-A"
         },
         {
           "asset": "VLP1L",
@@ -6445,7 +6445,7 @@
           "last_price": 15.35,
           "invested_EUR": 2287.15,
           "weight": 0.1524766666666666,
-          "name": "Vilky<U+0161>ki<U+0173> pienin<U+0117>"
+          "name": "Vilkyškių pieninė"
         },
         {
           "asset": "ZMP1L",
@@ -6455,7 +6455,7 @@
           "last_price": 2.86,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "<U+017D>emaitijos pienas"
+          "name": "Žemaitijos pienas"
         },
         {
           "asset": "SE0013876927",
@@ -6950,7 +6950,7 @@
           "last_price": 22.1,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "Ignitis grup<U+0117>"
+          "name": "Ignitis grupė"
         },
         {
           "asset": "INC1L",
@@ -7130,7 +7130,7 @@
           "last_price": 1.8,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "Pieno <U+017E>vaig<U+017E>d<U+0117>s"
+          "name": "Pieno žvaigždės"
         },
         {
           "asset": "RKB1R",
@@ -7140,7 +7140,7 @@
           "last_price": 0.308,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "R<U+012B>gas ku<U+0123>u b<U+016B>v<U+0113>tava"
+          "name": "Rīgas kuģu būvētava"
         },
         {
           "asset": "ROE1L",
@@ -7160,7 +7160,7 @@
           "last_price": 4.26,
           "invested_EUR": 639.0,
           "weight": 0.0426,
-          "name": "Roki<U+0161>kio s<U+016B>ris"
+          "name": "Rokiškio sūris"
         },
         {
           "asset": "SAF1R",
@@ -7190,7 +7190,7 @@
           "last_price": 7.25,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "Siguldas ciltslietu un m<U+0101>ksl<U+012B>g<U+0101>s aps<U+0113>klo<U+0161>anas stacija"
+          "name": "Siguldas ciltslietu un mākslīgās apsēklošanas stacija"
         },
         {
           "asset": "SFG1T",
@@ -7280,7 +7280,7 @@
           "last_price": 0.332,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "Utenos trikota<U+017E>as"
+          "name": "Utenos trikotažas"
         },
         {
           "asset": "VBL1L",
@@ -7300,7 +7300,7 @@
           "last_price": 4.43,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "VIR<U+0160>I-A"
+          "name": "VIRŠI-A"
         },
         {
           "asset": "VLP1L",
@@ -7310,7 +7310,7 @@
           "last_price": 15.35,
           "invested_EUR": 1795.95,
           "weight": 0.11973,
-          "name": "Vilky<U+0161>ki<U+0173> pienin<U+0117>"
+          "name": "Vilkyškių pieninė"
         },
         {
           "asset": "ZMP1L",
@@ -7320,7 +7320,7 @@
           "last_price": 2.86,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "<U+017D>emaitijos pienas"
+          "name": "Žemaitijos pienas"
         },
         {
           "asset": "SE0013876927",
@@ -7771,7 +7771,7 @@
           "last_price": 22.1,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "Ignitis grup<U+0117>"
+          "name": "Ignitis grupė"
         },
         {
           "asset": "INC1L",
@@ -7951,7 +7951,7 @@
           "last_price": 1.8,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "Pieno <U+017E>vaig<U+017E>d<U+0117>s"
+          "name": "Pieno žvaigždės"
         },
         {
           "asset": "RKB1R",
@@ -7961,7 +7961,7 @@
           "last_price": 0.308,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "R<U+012B>gas ku<U+0123>u b<U+016B>v<U+0113>tava"
+          "name": "Rīgas kuģu būvētava"
         },
         {
           "asset": "ROE1L",
@@ -7981,7 +7981,7 @@
           "last_price": 4.26,
           "invested_EUR": 639.0,
           "weight": 0.0426,
-          "name": "Roki<U+0161>kio s<U+016B>ris"
+          "name": "Rokiškio sūris"
         },
         {
           "asset": "SAF1R",
@@ -8011,7 +8011,7 @@
           "last_price": 7.25,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "Siguldas ciltslietu un m<U+0101>ksl<U+012B>g<U+0101>s aps<U+0113>klo<U+0161>anas stacija"
+          "name": "Siguldas ciltslietu un mākslīgās apsēklošanas stacija"
         },
         {
           "asset": "SFG1T",
@@ -8101,7 +8101,7 @@
           "last_price": 0.332,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "Utenos trikota<U+017E>as"
+          "name": "Utenos trikotažas"
         },
         {
           "asset": "VBL1L",
@@ -8121,7 +8121,7 @@
           "last_price": 4.43,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "VIR<U+0160>I-A"
+          "name": "VIRŠI-A"
         },
         {
           "asset": "VLP1L",
@@ -8131,7 +8131,7 @@
           "last_price": 15.35,
           "invested_EUR": 2087.6,
           "weight": 0.1391733333333333,
-          "name": "Vilky<U+0161>ki<U+0173> pienin<U+0117>"
+          "name": "Vilkyškių pieninė"
         },
         {
           "asset": "ZMP1L",
@@ -8141,7 +8141,7 @@
           "last_price": 2.86,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "<U+017D>emaitijos pienas"
+          "name": "Žemaitijos pienas"
         },
         {
           "asset": "SE0013876927",
@@ -8592,7 +8592,7 @@
           "last_price": 22.1,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "Ignitis grup<U+0117>"
+          "name": "Ignitis grupė"
         },
         {
           "asset": "INC1L",
@@ -8772,7 +8772,7 @@
           "last_price": 1.8,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "Pieno <U+017E>vaig<U+017E>d<U+0117>s"
+          "name": "Pieno žvaigždės"
         },
         {
           "asset": "RKB1R",
@@ -8782,7 +8782,7 @@
           "last_price": 0.308,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "R<U+012B>gas ku<U+0123>u b<U+016B>v<U+0113>tava"
+          "name": "Rīgas kuģu būvētava"
         },
         {
           "asset": "ROE1L",
@@ -8802,7 +8802,7 @@
           "last_price": 4.26,
           "invested_EUR": 639.0,
           "weight": 0.0426,
-          "name": "Roki<U+0161>kio s<U+016B>ris"
+          "name": "Rokiškio sūris"
         },
         {
           "asset": "SAF1R",
@@ -8832,7 +8832,7 @@
           "last_price": 7.25,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "Siguldas ciltslietu un m<U+0101>ksl<U+012B>g<U+0101>s aps<U+0113>klo<U+0161>anas stacija"
+          "name": "Siguldas ciltslietu un mākslīgās apsēklošanas stacija"
         },
         {
           "asset": "SFG1T",
@@ -8922,7 +8922,7 @@
           "last_price": 0.332,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "Utenos trikota<U+017E>as"
+          "name": "Utenos trikotažas"
         },
         {
           "asset": "VBL1L",
@@ -8942,7 +8942,7 @@
           "last_price": 4.43,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "VIR<U+0160>I-A"
+          "name": "VIRŠI-A"
         },
         {
           "asset": "VLP1L",
@@ -8952,7 +8952,7 @@
           "last_price": 15.35,
           "invested_EUR": 1795.95,
           "weight": 0.11973,
-          "name": "Vilky<U+0161>ki<U+0173> pienin<U+0117>"
+          "name": "Vilkyškių pieninė"
         },
         {
           "asset": "ZMP1L",
@@ -8962,7 +8962,7 @@
           "last_price": 2.86,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "<U+017D>emaitijos pienas"
+          "name": "Žemaitijos pienas"
         },
         {
           "asset": "SE0013876927",
@@ -9413,7 +9413,7 @@
           "last_price": 22.1,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "Ignitis grup<U+0117>"
+          "name": "Ignitis grupė"
         },
         {
           "asset": "INC1L",
@@ -9593,7 +9593,7 @@
           "last_price": 1.8,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "Pieno <U+017E>vaig<U+017E>d<U+0117>s"
+          "name": "Pieno žvaigždės"
         },
         {
           "asset": "RKB1R",
@@ -9603,7 +9603,7 @@
           "last_price": 0.308,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "R<U+012B>gas ku<U+0123>u b<U+016B>v<U+0113>tava"
+          "name": "Rīgas kuģu būvētava"
         },
         {
           "asset": "ROE1L",
@@ -9623,7 +9623,7 @@
           "last_price": 4.26,
           "invested_EUR": 639.0,
           "weight": 0.0426,
-          "name": "Roki<U+0161>kio s<U+016B>ris"
+          "name": "Rokiškio sūris"
         },
         {
           "asset": "SAF1R",
@@ -9653,7 +9653,7 @@
           "last_price": 7.25,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "Siguldas ciltslietu un m<U+0101>ksl<U+012B>g<U+0101>s aps<U+0113>klo<U+0161>anas stacija"
+          "name": "Siguldas ciltslietu un mākslīgās apsēklošanas stacija"
         },
         {
           "asset": "SFG1T",
@@ -9743,7 +9743,7 @@
           "last_price": 0.332,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "Utenos trikota<U+017E>as"
+          "name": "Utenos trikotažas"
         },
         {
           "asset": "VBL1L",
@@ -9763,7 +9763,7 @@
           "last_price": 4.43,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "VIR<U+0160>I-A"
+          "name": "VIRŠI-A"
         },
         {
           "asset": "VLP1L",
@@ -9773,7 +9773,7 @@
           "last_price": 15.35,
           "invested_EUR": 1795.95,
           "weight": 0.11973,
-          "name": "Vilky<U+0161>ki<U+0173> pienin<U+0117>"
+          "name": "Vilkyškių pieninė"
         },
         {
           "asset": "ZMP1L",
@@ -9783,7 +9783,7 @@
           "last_price": 2.86,
           "invested_EUR": 0.0,
           "weight": 0.0,
-          "name": "<U+017D>emaitijos pienas"
+          "name": "Žemaitijos pienas"
         },
         {
           "asset": "SE0013876927",
