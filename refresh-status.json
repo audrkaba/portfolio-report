@@ -1,9 +1,9 @@
 {
   "run": "20261113_zzclose_vlp107",
-  "revision": "ef8c7859b945",
+  "revision": "VLP107-financial-complete",
   "prepared_at": "2026-11-16T08:59:47.920221+02:00",
-  "complete": false,
-  "notice": "VLP holdings were corrected to 107. The previous 87-unit calculation was superseded. Only the linked verified portfolios use the new holdings and 2026-11-13 prices.",
+  "complete": true,
+  "notice": null,
   "holdings": {
     "VLP1L": 107,
     "SE0014261764": 7.108
@@ -29,5 +29,10 @@
       "status": "full-command counters being collected; controlled studies follow financial verification",
       "url": null
     }
-  ]
+  ],
+  "completion_scope": "Only the model snapshot named below; not a newer requested refresh",
+  "model_snapshot_end": "2026-11-13",
+  "latest_requested_end": "2026-11-13",
+  "latest_requested_financial_complete": false,
+  "main_report_complete": true
 }
