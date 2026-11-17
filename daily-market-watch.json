@@ -1,0 +1,5167 @@
+{
+  "checked_at_UTC": "2026-11-17T08:07:03.990530+00:00",
+  "completed_session_cutoff": "2026-11-16",
+  "default_near_pct": 2,
+  "rows": [
+    {
+      "values": {
+        "price": 1.78,
+        "lower": 1.766852718881913,
+        "upper": 1.917647281118089,
+        "rsi": 36.3648469207329,
+        "k": 0.05197464484109116,
+        "d": 0.0500263474347065,
+        "macd": -0.007128520593104204,
+        "macd_signal": 0.007077169072163591
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "asset": "AKO1L",
+      "date": "2026-11-16",
+      "observations": 1246,
+      "previous": {
+        "price": 1.77,
+        "lower": 1.774644722024658,
+        "upper": 1.914855277975343,
+        "rsi": 32.36364908366371,
+        "k": 0.01310085079615022,
+        "d": 0.0610359813766355,
+        "macd": -0.004036456282535239,
+        "macd_signal": 0.01062859148848054
+      },
+      "buy_trigger": {
+        "price": 1.757469312358948,
+        "move_pct": -1.265768968598424,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "sell_trigger": {
+        "price": 1.96952336055078,
+        "move_pct": 10.647379806223611,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": false,
+          "MACD": true
+        },
+        "active": false
+      },
+      "name": "Akola Group",
+      "type": "Share",
+      "isin": "LT0000128092",
+      "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000128092/trading/chart_price_json?start=2026-11-09&end=2026-11-16&historical=1",
+      "checked_at_UTC": "2026-11-17T08:06:58.915784+00:00",
+      "model_eligible": true,
+      "initial_models": [
+        {
+          "model": "MARKOWITZ / SALE",
+          "units": 134.0
+        }
+      ],
+      "future_models": [
+        {
+          "model": "STOCHASTIC / SALE",
+          "maximum_gross_units": 418.0
+        },
+        {
+          "model": "STOCHASTIC / NO_SALE",
+          "maximum_gross_units": 418.0
+        },
+        {
+          "model": "stochA / SALE",
+          "maximum_gross_units": 1330.0
+        },
+        {
+          "model": "stochA / NO_SALE",
+          "maximum_gross_units": 919.0
+        },
+        {
+          "model": "STOCHASTIC / NO_INITIAL_SALES",
+          "maximum_gross_units": 418.0
+        },
+        {
+          "model": "stochA / NO_INITIAL_SALES",
+          "maximum_gross_units": 1169.0
+        }
+      ],
+      "held_units": 0.0
+    },
+    {
+      "values": {
+        "price": 3.85,
+        "lower": 3.766132761962945,
+        "upper": 3.880867238037053,
+        "rsi": 53.9211971768712,
+        "k": 0.8747836786756978,
+        "d": 0.9440664167677336,
+        "macd": 0.004827106356766642,
+        "macd_signal": -0.003547536903213753
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "asset": "APG1L",
+      "date": "2026-11-16",
+      "observations": 1246,
+      "previous": {
+        "price": 3.86,
+        "lower": 3.764114149386688,
+        "upper": 3.877885850613311,
+        "rsi": 57.714250214105355,
+        "k": 0.9574155716275053,
+        "d": 0.9858051905425013,
+        "macd": 0.004536272377225536,
+        "macd_signal": -0.005641197718208851
+      },
+      "buy_trigger": {
+        "price": 3.728673090985791,
+        "move_pct": -3.151348286083344,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": false,
+          "MACD": true
+        },
+        "active": false
+      },
+      "sell_trigger": {
+        "price": 3.91821755270047,
+        "move_pct": 1.771884485726494,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "Apranga",
+      "type": "Share",
+      "isin": "LT0000102337",
+      "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000102337/trading/chart_price_json?start=2026-11-09&end=2026-11-16&historical=1",
+      "checked_at_UTC": "2026-11-17T08:06:58.957137+00:00",
+      "model_eligible": true,
+      "initial_models": [],
+      "future_models": [
+        {
+          "model": "STOCHASTIC / SALE",
+          "maximum_gross_units": 190.0
+        },
+        {
+          "model": "STOCHASTIC / NO_SALE",
+          "maximum_gross_units": 2.0
+        },
+        {
+          "model": "STOCHASTIC2 / SALE",
+          "maximum_gross_units": 98.0
+        },
+        {
+          "model": "stochA / SALE",
+          "maximum_gross_units": 991.0
+        },
+        {
+          "model": "stochA / NO_SALE",
+          "maximum_gross_units": 158.0
+        },
+        {
+          "model": "stoch2A / SALE",
+          "maximum_gross_units": 98.0
+        },
+        {
+          "model": "STOCHASTIC / NO_INITIAL_SALES",
+          "maximum_gross_units": 64.0
+        },
+        {
+          "model": "STOCHASTIC2 / NO_INITIAL_SALES",
+          "maximum_gross_units": 7.0
+        },
+        {
+          "model": "stochA / NO_INITIAL_SALES",
+          "maximum_gross_units": 995.0
+        },
+        {
+          "model": "stoch2A / NO_INITIAL_SALES",
+          "maximum_gross_units": 7.0
+        }
+      ],
+      "held_units": 200.0
+    },
+    {
+      "values": {
+        "price": 0.944,
+        "lower": 0.9162541746529751,
+        "upper": 1.074945825347018,
+        "rsi": 25.913642430892562,
+        "k": 0.4468697437504954,
+        "d": 0.3869624471753592,
+        "macd": -0.03675674884879476,
+        "macd_signal": -0.03414754102393438
+      },
+      "buy": {
+        "BB": false,
+        "RSI": true,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "asset": "ARC1T",
+      "date": "2026-11-16",
+      "observations": 1246,
+      "previous": {
+        "price": 0.94,
+        "lower": 0.9214900351493891,
+        "upper": 1.080809964850604,
+        "rsi": 23.745886484224652,
+        "k": 0.3691347655120027,
+        "d": 0.3074641805779617,
+        "macd": -0.03727960492291083,
+        "macd_signal": -0.03349523906771928
+      },
+      "buy_trigger": null,
+      "sell_trigger": null,
+      "name": "Arco Vara",
+      "type": "Share",
+      "isin": "EE3100034653",
+      "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100034653/trading/chart_price_json?start=2026-11-09&end=2026-11-16&historical=1",
+      "checked_at_UTC": "2026-11-17T08:06:58.947427+00:00",
+      "model_eligible": true,
+      "initial_models": [],
+      "future_models": [
+        {
+          "model": "STOCHASTIC / NO_SALE",
+          "maximum_gross_units": 776.0
+        },
+        {
+          "model": "stochA / SALE",
+          "maximum_gross_units": 946.0
+        },
+        {
+          "model": "stochA / NO_SALE",
+          "maximum_gross_units": 946.0
+        },
+        {
+          "model": "stochA / NO_INITIAL_SALES",
+          "maximum_gross_units": 946.0
+        }
+      ],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 0.96,
+        "lower": 0.9934921435625629,
+        "upper": 1.081007856437452,
+        "rsi": 28.964675112268978,
+        "k": -2.590520390792032e-16,
+        "d": 0.1840422047851363,
+        "macd": -0.01234042988664341,
+        "macd_signal": -0.006164414444327125
+      },
+      "buy": {
+        "BB": true,
+        "RSI": true,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 3,
+      "sell_votes": 1,
+      "asset": "BERCM",
+      "date": "2026-11-16",
+      "observations": 1246,
+      "previous": {
+        "price": 1,
+        "lower": 1.015193024198879,
+        "upper": 1.066806975801135,
+        "rsi": 36.31132986476746,
+        "k": 0.2220653118772593,
+        "d": 0.3662505366010355,
+        "macd": -0.00679156082092125,
+        "macd_signal": -0.004620410583748054
+      },
+      "buy_trigger": {
+        "price": 0.96,
+        "move_pct": 0,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": true
+      },
+      "sell_trigger": null,
+      "name": "Bercman Technologies",
+      "type": "Share",
+      "isin": "EE3100076407",
+      "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100076407/trading/chart_price_json?start=2026-11-09&end=2026-11-16&historical=1",
+      "checked_at_UTC": "2026-11-17T08:06:59.035143+00:00",
+      "model_eligible": true,
+      "initial_models": [],
+      "future_models": [
+        {
+          "model": "STOCHASTIC / SALE",
+          "maximum_gross_units": 225.0
+        },
+        {
+          "model": "stochA / SALE",
+          "maximum_gross_units": 225.0
+        },
+        {
+          "model": "stochA / NO_SALE",
+          "maximum_gross_units": 225.0
+        },
+        {
+          "model": "stochA / NO_INITIAL_SALES",
+          "maximum_gross_units": 113.0
+        }
+      ],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 2.39,
+        "lower": 2.348392092391761,
+        "upper": 2.415107907608245,
+        "rsi": 54.81185016160253,
+        "k": 0.8117015362360936,
+        "d": 0.8692654807788731,
+        "macd": 0.01289130947944361,
+        "macd_signal": 0.01166997103368976
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "asset": "CPA1T",
+      "date": "2026-11-16",
+      "observations": 1246,
+      "previous": {
+        "price": 2.41,
+        "lower": 2.343906590563958,
+        "upper": 2.415593409436048,
+        "rsi": 62.24719827243306,
+        "k": 0.9737329063952703,
+        "d": 0.7874160978172289,
+        "macd": 0.01379003211325713,
+        "macd_signal": 0.0113646364222513
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 2.448101613237386,
+        "move_pct": 2.431029842568444,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "Coop Pank",
+      "type": "Share",
+      "isin": "EE3100007857",
+      "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100007857/trading/chart_price_json?start=2026-11-09&end=2026-11-16&historical=1",
+      "checked_at_UTC": "2026-11-17T08:06:59.193830+00:00",
+      "model_eligible": true,
+      "initial_models": [],
+      "future_models": [
+        {
+          "model": "STOCHASTIC / NO_SALE",
+          "maximum_gross_units": 51.0
+        },
+        {
+          "model": "stochA / SALE",
+          "maximum_gross_units": 1809.0
+        },
+        {
+          "model": "stochA / NO_SALE",
+          "maximum_gross_units": 99.0
+        },
+        {
+          "model": "stochA / NO_INITIAL_SALES",
+          "maximum_gross_units": 1827.0
+        }
+      ],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 1.3,
+        "lower": 1.299999999999991,
+        "upper": 1.299999999999994,
+        "rsi": 85.04855380516231,
+        "k": 0.666666666666667,
+        "d": 0.6666666666666674,
+        "macd": 0.008121142014435367,
+        "macd_signal": 0.01084077927750939
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "sell": {
+        "BB": true,
+        "RSI": true,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 0,
+      "sell_votes": 3,
+      "asset": "CTS1L",
+      "date": "2026-11-16",
+      "observations": 1244,
+      "previous": {
+        "price": 1.3,
+        "lower": 1.299999999999991,
+        "upper": 1.299999999999994,
+        "rsi": 85.0485538051623,
+        "k": 0.666666666666667,
+        "d": 0.5555555555555564,
+        "macd": 0.008701395875506446,
+        "macd_signal": 0.0115206885932779
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 1.3,
+        "move_pct": 0,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": false,
+          "MACD": true
+        },
+        "active": true
+      },
+      "name": "City Service",
+      "type": "Share",
+      "isin": "EE3100126368",
+      "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100126368/trading/chart_price_json?start=2026-11-09&end=2026-11-16&historical=1",
+      "checked_at_UTC": "2026-11-17T08:06:59.177811+00:00",
+      "model_eligible": true,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 1.885,
+        "lower": 1.627166382869234,
+        "upper": 1.896333617130762,
+        "rsi": 79.635865832456,
+        "k": 0.9999999999999979,
+        "d": 0.9999999999999977,
+        "macd": 0.0543601040256414,
+        "macd_signal": 0.04092405718483286
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": true,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 2,
+      "asset": "DGR1R",
+      "date": "2026-11-16",
+      "observations": 1246,
+      "previous": {
+        "price": 1.885,
+        "lower": 1.631378631552244,
+        "upper": 1.876621368447753,
+        "rsi": 79.63586583245602,
+        "k": 0.9999999999999982,
+        "d": 0.9518467201247486,
+        "macd": 0.05135762691897106,
+        "macd_signal": 0.03756504547463071
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 1.899945634258135,
+        "move_pct": 0.7928718439328852,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "DelfinGroup",
+      "type": "Share",
+      "isin": "LV0000101806",
+      "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/LV0000101806/trading/chart_price_json?start=2026-11-09&end=2026-11-16&historical=1",
+      "checked_at_UTC": "2026-11-17T08:06:59.193830+00:00",
+      "model_eligible": true,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 19.5,
+        "lower": 19.35458405421208,
+        "upper": 19.595415945787924,
+        "rsi": 50.30949372183027,
+        "k": 0.4987855461038657,
+        "d": 0.5729482874902759,
+        "macd": -0.00161366002769725,
+        "macd_signal": -0.003103846354515753
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 0,
+      "asset": "EFT1T",
+      "date": "2026-11-16",
+      "observations": 1246,
+      "previous": {
+        "price": 19.45,
+        "lower": 19.34590326354009,
+        "upper": 19.594096736459907,
+        "rsi": 46.41624386975381,
+        "k": 0.526027749280916,
+        "d": 0.6678484924186373,
+        "macd": -0.002340345720053705,
+        "macd_signal": -0.003476392936220378
+      },
+      "buy_trigger": null,
+      "sell_trigger": null,
+      "name": "EfTEN Real Estate Fund",
+      "type": "Share",
+      "isin": "EE3100127242",
+      "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100127242/trading/chart_price_json?start=2026-11-09&end=2026-11-16&historical=1",
+      "checked_at_UTC": "2026-11-17T08:06:59.272897+00:00",
+      "model_eligible": true,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 7.25,
+        "lower": 6.788908730652563,
+        "upper": 7.586091269347434,
+        "rsi": 65.67063342807842,
+        "k": 0.06476788683465448,
+        "d": 0.0215892956115507,
+        "macd": 0.1745354161906825,
+        "macd_signal": 0.2272847563397722
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "asset": "EGG",
+      "date": "2026-11-16",
+      "observations": 760,
+      "previous": {
+        "price": 7.15,
+        "lower": 6.722187610894264,
+        "upper": 7.602812389105734,
+        "rsi": 60.60158092210189,
+        "k": 5.938633904693919e-16,
+        "d": -5.03648049191933e-16,
+        "macd": 0.1847690143965526,
+        "macd_signal": 0.2404720913770447
+      },
+      "buy_trigger": {
+        "price": 6.459184592732041,
+        "move_pct": -10.907798720937368,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "sell_trigger": {
+        "price": 7.655197761755425,
+        "move_pct": 5.588934644902421,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": false,
+          "MACD": true
+        },
+        "active": false
+      },
+      "name": "Agrova Baltics",
+      "type": "Share",
+      "isin": "LV0000101921",
+      "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/LV0000101921/trading/chart_price_json?start=2026-11-09&end=2026-11-16&historical=1",
+      "checked_at_UTC": "2026-11-17T08:06:59.383508+00:00",
+      "model_eligible": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 1.715,
+        "lower": 1.661186002453485,
+        "upper": 1.700313997546513,
+        "rsi": 79.00204251918805,
+        "k": 1,
+        "d": 1,
+        "macd": 0.004385309490719802,
+        "macd_signal": 0.0009650507949699299
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": true,
+        "RSI": true,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 3,
+      "asset": "ELEVR",
+      "date": "2026-11-16",
+      "observations": 524,
+      "previous": {
+        "price": 1.695,
+        "lower": 1.667338096210309,
+        "upper": 1.69066190378969,
+        "rsi": 67.96871552488645,
+        "k": 0.9999999999999999,
+        "d": 1,
+        "macd": 0.00201073893838366,
+        "macd_signal": 0.0001099861210324619
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 1.715,
+        "move_pct": 0,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": true
+      },
+      "name": "Eleving Group",
+      "type": "Share",
+      "isin": "LU2818110020",
+      "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/LU2818110020/trading/chart_price_json?start=2026-11-09&end=2026-11-16&historical=1",
+      "checked_at_UTC": "2026-11-17T08:06:59.414757+00:00",
+      "model_eligible": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 10.7,
+        "lower": 10.519033012149597,
+        "upper": 11.7609669878504,
+        "rsi": 41.497949308097425,
+        "k": 0.3291122361084597,
+        "d": 0.5461854897592605,
+        "macd": -0.1263777641661754,
+        "macd_signal": -0.1291455975754046
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 0,
+      "asset": "EWA1L",
+      "date": "2026-11-16",
+      "observations": 1246,
+      "previous": {
+        "price": 10.9,
+        "lower": 10.579745817465051,
+        "upper": 11.760254182534949,
+        "rsi": 45.050334611112326,
+        "k": 0.5588131849992345,
+        "d": 0.6813703428984629,
+        "macd": -0.1097982550530112,
+        "macd_signal": -0.1298375559277118
+      },
+      "buy_trigger": null,
+      "sell_trigger": null,
+      "name": "East West Agro",
+      "type": "Share",
+      "isin": "LT0000132060",
+      "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000132060/trading/chart_price_json?start=2026-11-09&end=2026-11-16&historical=1",
+      "checked_at_UTC": "2026-11-17T08:06:59.446007+00:00",
+      "model_eligible": true,
+      "initial_models": [],
+      "future_models": [
+        {
+          "model": "STOCHASTIC / SALE",
+          "maximum_gross_units": 11.0
+        },
+        {
+          "model": "STOCHASTIC / NO_SALE",
+          "maximum_gross_units": 42.0
+        },
+        {
+          "model": "stochA / SALE",
+          "maximum_gross_units": 64.0
+        },
+        {
+          "model": "stochA / NO_SALE",
+          "maximum_gross_units": 64.0
+        },
+        {
+          "model": "STOCHASTIC / NO_INITIAL_SALES",
+          "maximum_gross_units": 11.0
+        },
+        {
+          "model": "stochA / NO_INITIAL_SALES",
+          "maximum_gross_units": 64.0
+        }
+      ],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 0.059,
+        "lower": 0.02270326895993956,
+        "upper": 0.05424673104006006,
+        "rsi": 63.29677577184199,
+        "k": 0.6341088193634805,
+        "d": 0.7515831106597566,
+        "macd": 0.003471793282202165,
+        "macd_signal": 0.001173884152891664
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": true,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "asset": "GRB2G",
+      "date": "2026-11-16",
+      "observations": 867,
+      "previous": {
+        "price": 0.04,
+        "lower": 0.02458061147593139,
+        "upper": 0.04996938852406824,
+        "rsi": 51.05834981442934,
+        "k": 0.688701720562224,
+        "d": 0.8442307110571826,
+        "macd": 0.002201990570955513,
+        "macd_signal": 0.0005994068705640387
+      },
+      "buy_trigger": null,
+      "sell_trigger": null,
+      "name": "Grab2Go",
+      "type": "Share",
+      "isin": "EE3100107194",
+      "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100107194/trading/chart_price_json?start=2026-11-09&end=2026-11-16&historical=1",
+      "checked_at_UTC": "2026-11-17T08:06:59.477257+00:00",
+      "model_eligible": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 0.92,
+        "lower": 0.9041676994294082,
+        "upper": 1.056132300570595,
+        "rsi": 29.10807854664339,
+        "k": 0.1787200312865597,
+        "d": 0.1604737342623445,
+        "macd": -0.02378855184433626,
+        "macd_signal": -0.01443424414783223
+      },
+      "buy": {
+        "BB": false,
+        "RSI": true,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 2,
+      "sell_votes": 1,
+      "asset": "GRG1L",
+      "date": "2026-11-16",
+      "observations": 1246,
+      "previous": {
+        "price": 0.9,
+        "lower": 0.9129416202128243,
+        "upper": 1.054958379787179,
+        "rsi": 17.736628265182766,
+        "k": 0.1180950242431224,
+        "d": 0.1472357393649242,
+        "macd": -0.02250441017066107,
+        "macd_signal": -0.01209566722370622
+      },
+      "buy_trigger": {
+        "price": 0.8994476239044167,
+        "move_pct": -2.233953923432974,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "sell_trigger": null,
+      "name": "Grigeo Group",
+      "type": "Share",
+      "isin": "LT0000102030",
+      "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000102030/trading/chart_price_json?start=2026-11-09&end=2026-11-16&historical=1",
+      "checked_at_UTC": "2026-11-17T08:06:59.553649+00:00",
+      "model_eligible": true,
+      "initial_models": [],
+      "future_models": [
+        {
+          "model": "STOCHASTIC / SALE",
+          "maximum_gross_units": 11.0
+        },
+        {
+          "model": "STOCHASTIC / NO_SALE",
+          "maximum_gross_units": 806.0
+        },
+        {
+          "model": "stochA / SALE",
+          "maximum_gross_units": 4277.0
+        },
+        {
+          "model": "stochA / NO_SALE",
+          "maximum_gross_units": 1211.0
+        },
+        {
+          "model": "stochA / NO_INITIAL_SALES",
+          "maximum_gross_units": 4294.0
+        }
+      ],
+      "held_units": 543.0
+    },
+    {
+      "values": {
+        "price": 5.18,
+        "lower": 5.042547107881614,
+        "upper": 5.387452892118411,
+        "rsi": 48.118873690967185,
+        "k": 0.4574567591793172,
+        "d": 0.2372501989090932,
+        "macd": -0.02960507493146292,
+        "macd_signal": -0.02273967095517417
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 0,
+      "sell_votes": 1,
+      "asset": "HAE1T",
+      "date": "2026-11-16",
+      "observations": 1246,
+      "previous": {
+        "price": 5.14,
+        "lower": 5.046000000000012,
+        "upper": 5.390000000000013,
+        "rsi": 44.1506434843539,
+        "k": 0.1884577785661877,
+        "d": 0.1117319405741932,
+        "macd": -0.03309745641643325,
+        "macd_signal": -0.02102331996110198
+      },
+      "buy_trigger": {
+        "price": 4.893323189405709,
+        "move_pct": -5.534301362824157,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "sell_trigger": null,
+      "name": "Harju Elekter Group",
+      "type": "Share",
+      "isin": "EE3100004250",
+      "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100004250/trading/chart_price_json?start=2026-11-09&end=2026-11-16&historical=1",
+      "checked_at_UTC": "2026-11-17T08:06:59.567196+00:00",
+      "model_eligible": true,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 100.0
+    },
+    {
+      "values": {
+        "price": 4.33,
+        "lower": 4.140494535600671,
+        "upper": 4.506505464399251,
+        "rsi": 47.07984511462944,
+        "k": 0.9043810592147584,
+        "d": 0.8850221935429586,
+        "macd": -0.06622843882333562,
+        "macd_signal": -0.08368597995197354
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "asset": "HPR1T",
+      "date": "2026-11-16",
+      "observations": 1246,
+      "previous": {
+        "price": 4.29,
+        "lower": 4.096105713771102,
+        "upper": 4.587894286228821,
+        "rsi": 44.676325904489076,
+        "k": 0.88378713650553,
+        "d": 0.886586093294992,
+        "macd": -0.07378341545280431,
+        "macd_signal": -0.08805036523413301
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 5.033428584270753,
+        "move_pct": 16.245463839971208,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "Hepsor",
+      "type": "Share",
+      "isin": "EE3100082306",
+      "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100082306/trading/chart_price_json?start=2026-11-09&end=2026-11-16&historical=1",
+      "checked_at_UTC": "2026-11-17T08:06:59.598883+00:00",
+      "model_eligible": true,
+      "initial_models": [],
+      "future_models": [
+        {
+          "model": "STOCHASTIC / SALE",
+          "maximum_gross_units": 157.0
+        },
+        {
+          "model": "STOCHASTIC / NO_SALE",
+          "maximum_gross_units": 157.0
+        },
+        {
+          "model": "stochA / SALE",
+          "maximum_gross_units": 157.0
+        },
+        {
+          "model": "STOCHASTIC / NO_INITIAL_SALES",
+          "maximum_gross_units": 157.0
+        },
+        {
+          "model": "stochA / NO_INITIAL_SALES",
+          "maximum_gross_units": 157.0
+        }
+      ],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 2.66,
+        "lower": 2.42787293047389,
+        "upper": 2.843127069526109,
+        "rsi": 58.540511895679415,
+        "k": 0.02178071047450969,
+        "d": 0.09632855836431119,
+        "macd": 0.05765245581841238,
+        "macd_signal": 0.06597097488106228
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "asset": "IDX1R",
+      "date": "2026-11-16",
+      "observations": 1099,
+      "previous": {
+        "price": 2.68,
+        "lower": 2.406669199609357,
+        "upper": 2.845330800390643,
+        "rsi": 62.08500590945674,
+        "k": 0.04356142094901819,
+        "d": 0.2212420338489507,
+        "macd": 0.06289076017776996,
+        "macd_signal": 0.06805060464672474
+      },
+      "buy_trigger": {
+        "price": 2.326724581868095,
+        "move_pct": -12.529151057590404,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "sell_trigger": null,
+      "name": "INDEXO",
+      "type": "Share",
+      "isin": "LV0000113751",
+      "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/LV0000113751/trading/chart_price_json?start=2026-11-09&end=2026-11-16&historical=1",
+      "checked_at_UTC": "2026-11-17T08:06:59.630522+00:00",
+      "model_eligible": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 22.1,
+        "lower": 21.22720118401194,
+        "upper": 22.14779881598804,
+        "rsi": 62.135345502853035,
+        "k": 0.9149312663647833,
+        "d": 0.8919544013734498,
+        "macd": 0.05357704230869587,
+        "macd_signal": -0.03105160214938602
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "asset": "IGN1L",
+      "date": "2026-11-16",
+      "observations": 1246,
+      "previous": {
+        "price": 22.1,
+        "lower": 21.247648835895372,
+        "upper": 22.0873511641046,
+        "rsi": 62.135345502853035,
+        "k": 0.9574656331823919,
+        "d": 0.8050785524923293,
+        "macd": 0.02993438892359279,
+        "macd_signal": -0.05220876326390649
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 22.480002128291257,
+        "move_pct": 1.71946664385183,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "Ignitis grupė",
+      "type": "Share",
+      "isin": "LT0000115768",
+      "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000115768/trading/chart_price_json?start=2026-11-09&end=2026-11-16&historical=1",
+      "checked_at_UTC": "2026-11-17T08:06:59.693821+00:00",
+      "model_eligible": true,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 1.55,
+        "lower": 1.513143727663141,
+        "upper": 1.56735627233686,
+        "rsi": 54.91028873933539,
+        "k": 0.7539881991031961,
+        "d": 0.7292092501110408,
+        "macd": 0.005019170858290956,
+        "macd_signal": 0.003376988113056871
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 0,
+      "asset": "IGR1R",
+      "date": "2026-11-16",
+      "observations": 97,
+      "previous": {
+        "price": 1.555,
+        "lower": 1.508538890966509,
+        "upper": 1.567961109033492,
+        "rsi": 57.579087604334546,
+        "k": 0.7523217887857484,
+        "d": 0.7177275471239626,
+        "macd": 0.004950563693185694,
+        "macd_signal": 0.002966442426748349
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 1.597593346217139,
+        "move_pct": 3.070538465621864,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "LAU Infra Grupa",
+      "type": "Share",
+      "isin": "LV0000110906",
+      "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/LV0000110906/trading/chart_price_json?start=2026-11-09&end=2026-11-16&historical=1",
+      "checked_at_UTC": "2026-11-17T08:06:59.784298+00:00",
+      "model_eligible": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 67,
+        "lower": 65.32655884487463,
+        "upper": 68.9334411551254,
+        "rsi": 59.61597294986515,
+        "k": 0.2129075948432758,
+        "d": 0.1845453867515658,
+        "macd": 0.8253521048411017,
+        "macd_signal": 1.067523593855248
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 0,
+      "sell_votes": 1,
+      "asset": "INF1T",
+      "date": "2026-11-16",
+      "observations": 735,
+      "previous": {
+        "price": 67,
+        "lower": 65.09500639387237,
+        "upper": 69.00499360612766,
+        "rsi": 59.61597294986515,
+        "k": 0.1836756030700153,
+        "d": 0.1784476450330899,
+        "macd": 0.874758833468988,
+        "macd_signal": 1.128066466108784
+      },
+      "buy_trigger": {
+        "price": 61.082905666742626,
+        "move_pct": -8.831484079488616,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "sell_trigger": {
+        "price": 69.27221279384784,
+        "move_pct": 3.391362378877383,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": false,
+          "MACD": true
+        },
+        "active": false
+      },
+      "name": "Infortar",
+      "type": "Share",
+      "isin": "EE3100149394",
+      "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100149394/trading/chart_price_json?start=2026-11-09&end=2026-11-16&historical=1",
+      "checked_at_UTC": "2026-11-17T08:06:59.757143+00:00",
+      "model_eligible": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 11.3,
+        "lower": 11.327837785876127,
+        "upper": 12.382162214123902,
+        "rsi": 34.59187283563675,
+        "k": 0.1948886249791661,
+        "d": 0.2930037660914979,
+        "macd": -0.1477472075680684,
+        "macd_signal": -0.1219218971986675
+      },
+      "buy": {
+        "BB": true,
+        "RSI": false,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 2,
+      "sell_votes": 1,
+      "asset": "KALVE",
+      "date": "2026-11-16",
+      "observations": 487,
+      "previous": {
+        "price": 11.7,
+        "lower": 11.392087874186073,
+        "upper": 12.347912125813954,
+        "rsi": 43.29089727450314,
+        "k": 0.3310551642334625,
+        "d": 0.3804211217185345,
+        "macd": -0.1176605968142876,
+        "macd_signal": -0.1154655696063173
+      },
+      "buy_trigger": {
+        "price": 10.995311408789458,
+        "move_pct": -2.696359214252586,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "sell_trigger": null,
+      "name": "Kalve Coffee",
+      "type": "Share",
+      "isin": "LV0000102234",
+      "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/LV0000102234/trading/chart_price_json?start=2026-11-09&end=2026-11-16&historical=1",
+      "checked_at_UTC": "2026-11-17T08:06:59.804431+00:00",
+      "model_eligible": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 0.489,
+        "lower": 0.4705902401396943,
+        "upper": 0.4939097598603061,
+        "rsi": 57.96106152242472,
+        "k": 0.6798631352095961,
+        "d": 0.6426150691857869,
+        "macd": 0.00141299426616126,
+        "macd_signal": 0.0001948193824535533
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 0,
+      "asset": "KNE1L",
+      "date": "2026-11-16",
+      "observations": 1246,
+      "previous": {
+        "price": 0.489,
+        "lower": 0.4705287977571158,
+        "upper": 0.4930712022428844,
+        "rsi": 57.96106152242472,
+        "k": 0.642210153542878,
+        "d": 0.6154871862233467,
+        "macd": 0.001219881446802129,
+        "macd_signal": -0.0001097243384733735
+      },
+      "buy_trigger": null,
+      "sell_trigger": null,
+      "name": "KN Energies",
+      "type": "Share",
+      "isin": "LT0000111650",
+      "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000111650/trading/chart_price_json?start=2026-11-09&end=2026-11-16&historical=1",
+      "checked_at_UTC": "2026-11-17T08:06:59.867707+00:00",
+      "model_eligible": true,
+      "initial_models": [
+        {
+          "model": "NETSD R1 / NO_SALE",
+          "units": 2.0
+        }
+      ],
+      "future_models": [
+        {
+          "model": "STOCHASTIC / SALE",
+          "maximum_gross_units": 521.0
+        },
+        {
+          "model": "STOCHASTIC / NO_SALE",
+          "maximum_gross_units": 1560.0
+        },
+        {
+          "model": "STOCHASTIC2 / SALE",
+          "maximum_gross_units": 8.0
+        },
+        {
+          "model": "stochA / SALE",
+          "maximum_gross_units": 5714.0
+        },
+        {
+          "model": "stochA / NO_SALE",
+          "maximum_gross_units": 4782.0
+        },
+        {
+          "model": "stoch2A / SALE",
+          "maximum_gross_units": 8.0
+        },
+        {
+          "model": "STOCHASTIC / NO_INITIAL_SALES",
+          "maximum_gross_units": 1560.0
+        },
+        {
+          "model": "STOCHASTIC2 / NO_INITIAL_SALES",
+          "maximum_gross_units": 7.0
+        },
+        {
+          "model": "stochA / NO_INITIAL_SALES",
+          "maximum_gross_units": 7297.0
+        },
+        {
+          "model": "stoch2A / NO_INITIAL_SALES",
+          "maximum_gross_units": 7.0
+        }
+      ],
+      "held_units": 928.0
+    },
+    {
+      "values": {
+        "price": 3.24,
+        "lower": 3.218056414151063,
+        "upper": 3.294443585848933,
+        "rsi": 42.942123555485686,
+        "k": 0.3679775279384468,
+        "d": 0.3761219996435237,
+        "macd": -0.01121098324516812,
+        "macd_signal": -0.01076717756450071
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 0,
+      "sell_votes": 1,
+      "asset": "LHV1T",
+      "date": "2026-11-16",
+      "observations": 1246,
+      "previous": {
+        "price": 3.235,
+        "lower": 3.21973774706058,
+        "upper": 3.296262252939416,
+        "rsi": 40.71335153306773,
+        "k": 0.3516108916549945,
+        "d": 0.3882121606320443,
+        "macd": -0.01155287267090843,
+        "macd_signal": -0.01065622614433385
+      },
+      "buy_trigger": null,
+      "sell_trigger": null,
+      "name": "LHV Group",
+      "type": "Share",
+      "isin": "EE3100102203",
+      "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100102203/trading/chart_price_json?start=2026-11-09&end=2026-11-16&historical=1",
+      "checked_at_UTC": "2026-11-17T08:07:00.003046+00:00",
+      "model_eligible": true,
+      "initial_models": [],
+      "future_models": [
+        {
+          "model": "stochA / NO_INITIAL_SALES",
+          "maximum_gross_units": 145.0
+        }
+      ],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 4.04,
+        "lower": 3.98971378621581,
+        "upper": 4.112286213784166,
+        "rsi": 37.94390165543065,
+        "k": 0.5190026865905037,
+        "d": 0.5811560359662016,
+        "macd": -0.05082347461595838,
+        "macd_signal": -0.06366588747653339
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 0,
+      "asset": "LINDA",
+      "date": "2026-11-16",
+      "observations": 1246,
+      "previous": {
+        "price": 4.04,
+        "lower": 3.990811765836874,
+        "upper": 4.113188234163101,
+        "rsi": 37.94390165543065,
+        "k": 0.5811560359661992,
+        "d": 0.6433093853418969,
+        "macd": -0.05315240597539095,
+        "macd_signal": -0.06687649069167713
+      },
+      "buy_trigger": {
+        "price": 3.953663210842683,
+        "move_pct": -2.137049236567268,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": false,
+          "MACD": true
+        },
+        "active": false
+      },
+      "sell_trigger": null,
+      "name": "Linda Nektar",
+      "type": "Share",
+      "isin": "EE3100060344",
+      "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100060344/trading/chart_price_json?start=2026-11-09&end=2026-11-16&historical=1",
+      "checked_at_UTC": "2026-11-17T08:06:59.994032+00:00",
+      "model_eligible": true,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 3.16,
+        "lower": 3.11913241740577,
+        "upper": 3.39086758259423,
+        "rsi": 31.35459344732978,
+        "k": 0.2777169356944943,
+        "d": 0.368509815987561,
+        "macd": -0.06450018904508825,
+        "macd_signal": -0.06049341784047313
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 0,
+      "sell_votes": 1,
+      "asset": "LVN1T",
+      "date": "2026-11-16",
+      "observations": 131,
+      "previous": {
+        "price": 3.15,
+        "lower": 3.129132417405769,
+        "upper": 3.40086758259423,
+        "rsi": 29.284328985409893,
+        "k": 0.342034197053757,
+        "d": 0.4029284605239656,
+        "macd": -0.06459665656445424,
+        "macd_signal": -0.05949172503931935
+      },
+      "buy_trigger": {
+        "price": 3.107546072485517,
+        "move_pct": -1.659934415015296,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "sell_trigger": null,
+      "name": "Liven",
+      "type": "Share",
+      "isin": "EE3100003112",
+      "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100003112/trading/chart_price_json?start=2026-11-09&end=2026-11-16&historical=1",
+      "checked_at_UTC": "2026-11-17T08:07:00.043863+00:00",
+      "model_eligible": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 10.45,
+        "lower": 10.331930241988742,
+        "upper": 10.8480697580113,
+        "rsi": 45.22554589386139,
+        "k": 0.6603786834510418,
+        "d": 0.7122737457946253,
+        "macd": -0.006374337716204437,
+        "macd_signal": -0.005245202958827943
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 0,
+      "sell_votes": 1,
+      "asset": "MDARA",
+      "date": "2026-11-16",
+      "observations": 1246,
+      "previous": {
+        "price": 10.65,
+        "lower": 10.3490019920398,
+        "upper": 10.850998007960245,
+        "rsi": 53.18440410050148,
+        "k": 0.8645977255144658,
+        "d": 0.6426521670724111,
+        "macd": 0.0044058356094272,
+        "macd_signal": -0.004962919269483819
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 11.287022574358788,
+        "move_pct": 8.009785400562585,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "MADARA Cosmetics",
+      "type": "Share",
+      "isin": "LV0000101624",
+      "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/LV0000101624/trading/chart_price_json?start=2026-11-09&end=2026-11-16&historical=1",
+      "checked_at_UTC": "2026-11-17T08:07:00.010060+00:00",
+      "model_eligible": true,
+      "initial_models": [],
+      "future_models": [
+        {
+          "model": "STOCHASTIC / NO_SALE",
+          "maximum_gross_units": 27.0
+        }
+      ],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 5,
+        "lower": 4.832125742489317,
+        "upper": 5.189874257510694,
+        "rsi": 44.9595172045154,
+        "k": 0.2578221610014809,
+        "d": 0.257623809476452,
+        "macd": -0.05069812579473076,
+        "macd_signal": -0.06355166675071616
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 0,
+      "asset": "MODE",
+      "date": "2026-11-16",
+      "observations": 1246,
+      "previous": {
+        "price": 5,
+        "lower": 4.832125742489317,
+        "upper": 5.189874257510694,
+        "rsi": 44.9595172045154,
+        "k": 0.2766652846610194,
+        "d": 0.2869596005851378,
+        "macd": -0.05409117437741173,
+        "macd_signal": -0.06676505198971251
+      },
+      "buy_trigger": null,
+      "sell_trigger": null,
+      "name": "Modera",
+      "type": "Share",
+      "isin": "EE3100084203",
+      "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100084203/trading/chart_price_json?start=2026-11-09&end=2026-11-16&historical=1",
+      "checked_at_UTC": "2026-11-17T08:07:00.145635+00:00",
+      "model_eligible": true,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 24,
+        "lower": 18.057156448086804,
+        "upper": 25.752843551913205,
+        "rsi": 66.86434664733407,
+        "k": 0.6898877491460613,
+        "d": 0.6898877491460621,
+        "macd": 1.100029707479298,
+        "macd_signal": 0.8720563083371657
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 0,
+      "asset": "MOLNR",
+      "date": "2026-11-16",
+      "observations": 1015,
+      "previous": {
+        "price": 24,
+        "lower": 18.030150605446057,
+        "upper": 25.49984939455395,
+        "rsi": 66.86434664733407,
+        "k": 0.6898877491460613,
+        "d": 0.6898877491460621,
+        "macd": 1.094568508755493,
+        "macd_signal": 0.8150629585516328
+      },
+      "buy_trigger": null,
+      "sell_trigger": null,
+      "name": "J. Molner",
+      "type": "Share",
+      "isin": "EE3100109034",
+      "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100109034/trading/chart_price_json?start=2026-11-09&end=2026-11-16&historical=1",
+      "checked_at_UTC": "2026-11-17T08:07:00.145635+00:00",
+      "model_eligible": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 26.85,
+        "lower": 26.6846279540812,
+        "upper": 27.155372045918796,
+        "rsi": 45.63889670179341,
+        "k": 0.8060434297252802,
+        "d": 0.8850202525996532,
+        "macd": -0.05062151994022912,
+        "macd_signal": -0.05253483129974456
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "asset": "MRK1T",
+      "date": "2026-11-16",
+      "observations": 1246,
+      "previous": {
+        "price": 26.85,
+        "lower": 26.690417028985777,
+        "upper": 27.169582971014215,
+        "rsi": 45.63889670179342,
+        "k": 0.885020252599653,
+        "d": 0.826560356738124,
+        "macd": -0.0511407092511682,
+        "macd_signal": -0.05301315913962341
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 27.735431288481795,
+        "move_pct": 3.297695674047652,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "Merko Ehitus",
+      "type": "Share",
+      "isin": "EE3100098328",
+      "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100098328/trading/chart_price_json?start=2026-11-09&end=2026-11-16&historical=1",
+      "checked_at_UTC": "2026-11-17T08:07:00.159149+00:00",
+      "model_eligible": true,
+      "initial_models": [
+        {
+          "model": "STOCHASTIC / NO_INITIAL_SALES",
+          "units": 11.0
+        }
+      ],
+      "future_models": [
+        {
+          "model": "STOCHASTIC / SALE",
+          "maximum_gross_units": 28.0
+        },
+        {
+          "model": "STOCHASTIC / NO_SALE",
+          "maximum_gross_units": 28.0
+        },
+        {
+          "model": "stochA / SALE",
+          "maximum_gross_units": 84.0
+        },
+        {
+          "model": "stochA / NO_SALE",
+          "maximum_gross_units": 85.0
+        },
+        {
+          "model": "STOCHASTIC / NO_INITIAL_SALES",
+          "maximum_gross_units": 28.0
+        },
+        {
+          "model": "stochA / NO_INITIAL_SALES",
+          "maximum_gross_units": 105.0
+        }
+      ],
+      "held_units": 26.0
+    },
+    {
+      "values": {
+        "price": 0.54,
+        "lower": 0.5197559263007008,
+        "upper": 0.5640440736992993,
+        "rsi": 46.17699855367797,
+        "k": 0.3730193561011526,
+        "d": 0.4485151515649923,
+        "macd": -0.000440432376450639,
+        "macd_signal": -0.001757161188865567
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 0,
+      "asset": "NCN1T",
+      "date": "2026-11-16",
+      "observations": 1246,
+      "previous": {
+        "price": 0.55,
+        "lower": 0.5176232029441834,
+        "upper": 0.5645767970558166,
+        "rsi": 51.31379706985843,
+        "k": 0.4453502262594211,
+        "d": 0.5454960795139089,
+        "macd": 0.000178862181800632,
+        "macd_signal": -0.0020863433919693
+      },
+      "buy_trigger": null,
+      "sell_trigger": null,
+      "name": "Nordecon",
+      "type": "Share",
+      "isin": "EE3100039496",
+      "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100039496/trading/chart_price_json?start=2026-11-09&end=2026-11-16&historical=1",
+      "checked_at_UTC": "2026-11-17T08:07:00.177538+00:00",
+      "model_eligible": true,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 2.9,
+        "lower": 2.822174883036602,
+        "upper": 2.987825116963392,
+        "rsi": 48.169276870809334,
+        "k": 0.8201603828968967,
+        "d": 0.8326411459408464,
+        "macd": -0.002730259906840615,
+        "macd_signal": -0.00443517012277146
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "asset": "NEOFI",
+      "date": "2026-11-16",
+      "observations": 1246,
+      "previous": {
+        "price": 2.92,
+        "lower": 2.822174883036602,
+        "upper": 2.987825116963392,
+        "rsi": 51.86789302213031,
+        "k": 0.8527882407382772,
+        "d": 0.8249748141873666,
+        "macd": -0.002279602817226056,
+        "macd_signal": -0.004861397676754172
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 3.077430446572316,
+        "move_pct": 6.118291261114361,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "NEO Finance",
+      "type": "Share",
+      "isin": "LT0000132953",
+      "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000132953/trading/chart_price_json?start=2026-11-09&end=2026-11-16&historical=1",
+      "checked_at_UTC": "2026-11-17T08:07:00.304115+00:00",
+      "model_eligible": true,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 0.728,
+        "lower": 0.7276939421740296,
+        "upper": 0.7409060578259605,
+        "rsi": 36.40783191575335,
+        "k": 0.3097420754138797,
+        "d": 0.4854503101250828,
+        "macd": -0.008238123363015992,
+        "macd_signal": -0.009689138759216046
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 0,
+      "asset": "NTU1L",
+      "date": "2026-11-16",
+      "observations": 1246,
+      "previous": {
+        "price": 0.73,
+        "lower": 0.7286535725010677,
+        "upper": 0.7405464274989224,
+        "rsi": 37.69882296754815,
+        "k": 0.4673110744393032,
+        "d": 0.6189915802206261,
+        "macd": -0.00829865809826802,
+        "macd_signal": -0.01005189260826606
+      },
+      "buy_trigger": {
+        "price": 0.7155253921516321,
+        "move_pct": -1.713545034116459,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": false,
+          "MACD": true
+        },
+        "active": false
+      },
+      "sell_trigger": null,
+      "name": "Novaturas",
+      "type": "Share",
+      "isin": "LT0000131872",
+      "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000131872/trading/chart_price_json?start=2026-11-09&end=2026-11-16&historical=1",
+      "checked_at_UTC": "2026-11-17T08:07:00.335762+00:00",
+      "model_eligible": true,
+      "initial_models": [],
+      "future_models": [
+        {
+          "model": "STOCHASTIC / SALE",
+          "maximum_gross_units": 313.0
+        },
+        {
+          "model": "STOCHASTIC / NO_SALE",
+          "maximum_gross_units": 368.0
+        },
+        {
+          "model": "stochA / SALE",
+          "maximum_gross_units": 1538.0
+        },
+        {
+          "model": "stochA / NO_INITIAL_SALES",
+          "maximum_gross_units": 746.0
+        }
+      ],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 0.53,
+        "lower": 0.4904765667899638,
+        "upper": 0.6185234332100367,
+        "rsi": 34.853745167849155,
+        "k": 0.8549729242829156,
+        "d": 0.8646219569461966,
+        "macd": -0.02213933728532713,
+        "macd_signal": -0.02396619235701044
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "asset": "PKG1T",
+      "date": "2026-11-16",
+      "observations": 1246,
+      "previous": {
+        "price": 0.54,
+        "lower": 0.4893733229181584,
+        "upper": 0.629126677081842,
+        "rsi": 37.5753433780322,
+        "k": 0.8672243466151582,
+        "d": 0.8429191138914397,
+        "macd": -0.02235720311341916,
+        "macd_signal": -0.02442290612493126
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 0.6784139251634861,
+        "move_pct": 28.002627389336986,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "Pro Kapital Grupp",
+      "type": "Share",
+      "isin": "EE3100006040",
+      "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100006040/trading/chart_price_json?start=2026-11-09&end=2026-11-16&historical=1",
+      "checked_at_UTC": "2026-11-17T08:07:00.304115+00:00",
+      "model_eligible": true,
+      "initial_models": [],
+      "future_models": [
+        {
+          "model": "STOCHASTIC / SALE",
+          "maximum_gross_units": 1505.0
+        },
+        {
+          "model": "stochA / SALE",
+          "maximum_gross_units": 1953.0
+        },
+        {
+          "model": "stochA / NO_SALE",
+          "maximum_gross_units": 10.0
+        },
+        {
+          "model": "STOCHASTIC / NO_INITIAL_SALES",
+          "maximum_gross_units": 27.0
+        },
+        {
+          "model": "stochA / NO_INITIAL_SALES",
+          "maximum_gross_units": 1953.0
+        }
+      ],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 3,
+        "lower": 2.945975414790434,
+        "upper": 3.068024585209573,
+        "rsi": 48.81814861372292,
+        "k": -4.440892098500626e-16,
+        "d": 0.2592592592592585,
+        "macd": -0.000768362298443126,
+        "macd_signal": -0.005744317357325371
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": true,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "buy_votes": 2,
+      "sell_votes": 0,
+      "asset": "PRIMO",
+      "date": "2026-11-16",
+      "observations": 367,
+      "previous": {
+        "price": 3,
+        "lower": 2.844813044056211,
+        "upper": 3.139186955943796,
+        "rsi": 48.81814861372292,
+        "k": 0.3333333333333329,
+        "d": 0.4444444444444436,
+        "macd": 0.000327931276609128,
+        "macd_signal": -0.006988306122045932
+      },
+      "buy_trigger": {
+        "price": 2.935172640379628,
+        "move_pct": -2.160911987345726,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": false,
+          "StochRSI": true,
+          "MACD": true
+        },
+        "active": false
+      },
+      "sell_trigger": null,
+      "name": "Primostar Group",
+      "type": "Share",
+      "isin": "EE3100152224",
+      "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100152224/trading/chart_price_json?start=2026-11-09&end=2026-11-16&historical=1",
+      "checked_at_UTC": "2026-11-17T08:07:00.335762+00:00",
+      "model_eligible": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 1.8,
+        "lower": 1.766660903291036,
+        "upper": 1.808839096708962,
+        "rsi": 60.99116234803682,
+        "k": 0.8450974881725828,
+        "d": 0.8363698538199099,
+        "macd": 0.006631729070577075,
+        "macd_signal": 0.006316163458853564
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "asset": "PZV1L",
+      "date": "2026-11-16",
+      "observations": 1246,
+      "previous": {
+        "price": 1.8,
+        "lower": 1.766189114805047,
+        "upper": 1.807310885194951,
+        "rsi": 60.991162348036816,
+        "k": 0.8017638977802455,
+        "d": 0.8521708359277723,
+        "macd": 0.00660022661769144,
+        "macd_signal": 0.006237272055922685
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 1.81859879171801,
+        "move_pct": 1.033266206556127,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "Pieno žvaigždės",
+      "type": "Share",
+      "isin": "LT0000111676",
+      "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000111676/trading/chart_price_json?start=2026-11-09&end=2026-11-16&historical=1",
+      "checked_at_UTC": "2026-11-17T08:07:00.557934+00:00",
+      "model_eligible": true,
+      "initial_models": [],
+      "future_models": [
+        {
+          "model": "STOCHASTIC / SALE",
+          "maximum_gross_units": 146.0
+        },
+        {
+          "model": "STOCHASTIC / NO_SALE",
+          "maximum_gross_units": 436.0
+        },
+        {
+          "model": "stochA / SALE",
+          "maximum_gross_units": 700.0
+        },
+        {
+          "model": "stochA / NO_SALE",
+          "maximum_gross_units": 439.0
+        },
+        {
+          "model": "STOCHASTIC / NO_INITIAL_SALES",
+          "maximum_gross_units": 146.0
+        },
+        {
+          "model": "stochA / NO_INITIAL_SALES",
+          "maximum_gross_units": 710.0
+        }
+      ],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 0.826,
+        "lower": 0.7992829988769032,
+        "upper": 0.8981170011230939,
+        "rsi": 31.386542890590018,
+        "k": 0.5034257673330523,
+        "d": 0.5282132005719234,
+        "macd": -0.01357202370066746,
+        "macd_signal": -0.01315526879823764
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 0,
+      "sell_votes": 1,
+      "asset": "ROE1L",
+      "date": "2026-11-16",
+      "observations": 1246,
+      "previous": {
+        "price": 0.832,
+        "lower": 0.8013424331394328,
+        "upper": 0.9014575668605642,
+        "rsi": 34.14394089154142,
+        "k": 0.5444120932292994,
+        "d": 0.5442290255050866,
+        "macd": -0.01350284528725687,
+        "macd_signal": -0.01305108007263019
+      },
+      "buy_trigger": null,
+      "sell_trigger": null,
+      "name": "Artea Bankas",
+      "type": "Share",
+      "isin": "LT0000102253",
+      "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000102253/trading/chart_price_json?start=2026-11-09&end=2026-11-16&historical=1",
+      "checked_at_UTC": "2026-11-17T08:07:00.446713+00:00",
+      "model_eligible": true,
+      "initial_models": [
+        {
+          "model": "NETSD R1 / NO_SALE",
+          "units": 353.0
+        }
+      ],
+      "future_models": [
+        {
+          "model": "STOCHASTIC / SALE",
+          "maximum_gross_units": 302.0
+        },
+        {
+          "model": "STOCHASTIC / NO_SALE",
+          "maximum_gross_units": 672.0
+        },
+        {
+          "model": "stochA / SALE",
+          "maximum_gross_units": 2355.0
+        },
+        {
+          "model": "stochA / NO_SALE",
+          "maximum_gross_units": 3037.0
+        },
+        {
+          "model": "STOCHASTIC / NO_INITIAL_SALES",
+          "maximum_gross_units": 886.0
+        },
+        {
+          "model": "stochA / NO_INITIAL_SALES",
+          "maximum_gross_units": 4407.0
+        }
+      ],
+      "held_units": 516.0
+    },
+    {
+      "values": {
+        "price": 4.26,
+        "lower": 4.08251410880148,
+        "upper": 4.525485891198509,
+        "rsi": 44.119500348137855,
+        "k": 0.7856819040114963,
+        "d": 0.8879588101186463,
+        "macd": -0.04239744623308184,
+        "macd_signal": -0.0526811253246811
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 0,
+      "asset": "RSU1L",
+      "date": "2026-11-16",
+      "observations": 1246,
+      "previous": {
+        "price": 4.22,
+        "lower": 4.084868458997878,
+        "upper": 4.541131541002111,
+        "rsi": 40.48181123743176,
+        "k": 0.8781945263444474,
+        "d": 0.9593981754481485,
+        "macd": -0.04312451708363874,
+        "macd_signal": -0.05525204509758091
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 4.824593521857374,
+        "move_pct": 13.25336905768484,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "Rokiškio sūris",
+      "type": "Share",
+      "isin": "LT0000100372",
+      "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000100372/trading/chart_price_json?start=2026-11-09&end=2026-11-16&historical=1",
+      "checked_at_UTC": "2026-11-17T08:07:00.661122+00:00",
+      "model_eligible": true,
+      "initial_models": [],
+      "future_models": [
+        {
+          "model": "STOCHASTIC / SALE",
+          "maximum_gross_units": 179.0
+        },
+        {
+          "model": "STOCHASTIC / NO_SALE",
+          "maximum_gross_units": 59.0
+        },
+        {
+          "model": "stochA / SALE",
+          "maximum_gross_units": 214.0
+        },
+        {
+          "model": "stochA / NO_SALE",
+          "maximum_gross_units": 214.0
+        },
+        {
+          "model": "STOCHASTIC / NO_INITIAL_SALES",
+          "maximum_gross_units": 177.0
+        },
+        {
+          "model": "STOCHASTIC2 / NO_INITIAL_SALES",
+          "maximum_gross_units": 3.0
+        },
+        {
+          "model": "stochA / NO_INITIAL_SALES",
+          "maximum_gross_units": 214.0
+        },
+        {
+          "model": "stoch2A / NO_INITIAL_SALES",
+          "maximum_gross_units": 3.0
+        }
+      ],
+      "held_units": 150.0
+    },
+    {
+      "values": {
+        "price": 16.65,
+        "lower": 15.808417941152818,
+        "upper": 17.121582058847174,
+        "rsi": 51.66364519581276,
+        "k": 0.7239847459107139,
+        "d": 0.8326261069779903,
+        "macd": 0.07278804276092288,
+        "macd_signal": 0.01384629829509635
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 0,
+      "asset": "SAF1R",
+      "date": "2026-11-16",
+      "observations": 1246,
+      "previous": {
+        "price": 16.8,
+        "lower": 15.800982540525576,
+        "upper": 17.104017459474413,
+        "rsi": 53.95591115801995,
+        "k": 0.8581534777237687,
+        "d": 0.8179842484807706,
+        "macd": 0.07539885786401967,
+        "macd_signal": -0.0008891378213602766
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 18.608029653151164,
+        "move_pct": 11.759937856763747,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "SAF Tehnika",
+      "type": "Share",
+      "isin": "LV0000101129",
+      "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/LV0000101129/trading/chart_price_json?start=2026-11-09&end=2026-11-16&historical=1",
+      "checked_at_UTC": "2026-11-17T08:07:00.576582+00:00",
+      "model_eligible": true,
+      "initial_models": [],
+      "future_models": [
+        {
+          "model": "STOCHASTIC / SALE",
+          "maximum_gross_units": 45.0
+        },
+        {
+          "model": "STOCHASTIC / NO_SALE",
+          "maximum_gross_units": 45.0
+        },
+        {
+          "model": "stochA / SALE",
+          "maximum_gross_units": 276.0
+        },
+        {
+          "model": "stochA / NO_SALE",
+          "maximum_gross_units": 170.0
+        },
+        {
+          "model": "STOCHASTIC / NO_INITIAL_SALES",
+          "maximum_gross_units": 45.0
+        },
+        {
+          "model": "stochA / NO_INITIAL_SALES",
+          "maximum_gross_units": 175.0
+        }
+      ],
+      "held_units": 100.0
+    },
+    {
+      "values": {
+        "price": 2.29,
+        "lower": 2.226073203938572,
+        "upper": 2.570926796061374,
+        "rsi": 36.410313089625255,
+        "k": 0.1049641068970396,
+        "d": 0.08501398807090053,
+        "macd": -0.06129212791070637,
+        "macd_signal": -0.05051561911192769
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "asset": "SAUNA",
+      "date": "2026-11-16",
+      "observations": 1246,
+      "previous": {
+        "price": 2.28,
+        "lower": 2.238717881150107,
+        "upper": 2.579282118849839,
+        "rsi": 34.976909255256224,
+        "k": 0.08408451068182782,
+        "d": 0.0572744834900553,
+        "macd": -0.06112789334336677,
+        "macd_signal": -0.04782149191223301
+      },
+      "buy_trigger": {
+        "price": 2.206403375765443,
+        "move_pct": -3.650507608495956,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "sell_trigger": null,
+      "name": "Saunum Group",
+      "type": "Share",
+      "isin": "EE3100019753",
+      "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100019753/trading/chart_price_json?start=2026-11-09&end=2026-11-16&historical=1",
+      "checked_at_UTC": "2026-11-17T08:07:00.618909+00:00",
+      "model_eligible": true,
+      "initial_models": [],
+      "future_models": [
+        {
+          "model": "STOCHASTIC / SALE",
+          "maximum_gross_units": 65.0
+        },
+        {
+          "model": "STOCHASTIC / NO_SALE",
+          "maximum_gross_units": 65.0
+        },
+        {
+          "model": "stochA / SALE",
+          "maximum_gross_units": 65.0
+        },
+        {
+          "model": "stochA / NO_SALE",
+          "maximum_gross_units": 65.0
+        },
+        {
+          "model": "STOCHASTIC / NO_INITIAL_SALES",
+          "maximum_gross_units": 65.0
+        },
+        {
+          "model": "stochA / NO_INITIAL_SALES",
+          "maximum_gross_units": 65.0
+        }
+      ],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 15.3075,
+        "lower": 14.681510688614106,
+        "upper": 15.925639311385885,
+        "rsi": 49.508923161449445,
+        "k": 0.9276110968790526,
+        "d": 0.8212521618878528,
+        "macd": -0.1414364783620776,
+        "macd_signal": -0.1390897993586746
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": true,
+        "MACD": true
+      },
+      "buy_votes": 0,
+      "sell_votes": 2,
+      "asset": "SE0013876927",
+      "date": "2026-11-13",
+      "observations": 1156,
+      "previous": {
+        "price": 15.2139,
+        "lower": 14.685341793086156,
+        "upper": 15.93569820691383,
+        "rsi": 47.641363666925336,
+        "k": 0.840385690706882,
+        "d": 0.6475270352771386,
+        "macd": -0.1653221143523496,
+        "macd_signal": -0.1385031296078238
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 17.099894783106784,
+        "move_pct": 11.709258749676854,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "Swedbank Robur Access Edge Japan C",
+      "type": "Fund",
+      "isin": "SE0013876927",
+      "source_url": "https://tmsapi.auxality.systems/dataaccess/RoburMorningstarConnection/timeseriesPrice?isin=SE0013876927&currencyId=EUR&startDate=2026-11-09&endDate=2026-11-17",
+      "checked_at_UTC": "2026-11-17T08:07:01.253258+00:00",
+      "model_eligible": true,
+      "initial_models": [
+        {
+          "model": "MINIMAX / NO_SALE",
+          "units": 19.599
+        },
+        {
+          "model": "MINIMAX / SALE",
+          "units": 19.6
+        },
+        {
+          "model": "NETSD R1 / NO_SALE",
+          "units": 19.6
+        }
+      ],
+      "future_models": [],
+      "held_units": 0.0
+    },
+    {
+      "values": {
+        "price": 13.5741,
+        "lower": 13.096964106194543,
+        "upper": 14.07343589380543,
+        "rsi": 46.22974371066113,
+        "k": 0.8823171178370472,
+        "d": 0.8061859942529223,
+        "macd": -0.1885888000445703,
+        "macd_signal": -0.2187021707871439
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "asset": "SE0013876950",
+      "date": "2026-11-13",
+      "observations": 1187,
+      "previous": {
+        "price": 13.5602,
+        "lower": 13.097192453142963,
+        "upper": 14.10117754685701,
+        "rsi": 45.896519261950736,
+        "k": 0.8548788804257196,
+        "d": 0.6280898386947961,
+        "macd": -0.2079265322920563,
+        "macd_signal": -0.2262305134727873
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 15.362300166802022,
+        "move_pct": 13.173618632557748,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "Swedbank Robur Access Edge Em Mkt C",
+      "type": "Fund",
+      "isin": "SE0013876950",
+      "source_url": "https://tmsapi.auxality.systems/dataaccess/RoburMorningstarConnection/timeseriesPrice?isin=SE0013876950&currencyId=EUR&startDate=2026-11-09&endDate=2026-11-17",
+      "checked_at_UTC": "2026-11-17T08:07:01.206398+00:00",
+      "model_eligible": true,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 13.2535,
+        "lower": 12.81994512901882,
+        "upper": 13.646374870981195,
+        "rsi": 46.29905688764527,
+        "k": 0.8811283405526034,
+        "d": 0.7822120466983922,
+        "macd": -0.1725723970009625,
+        "macd_signal": -0.2095269390538979
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "asset": "SE0013876968",
+      "date": "2026-11-13",
+      "observations": 1178,
+      "previous": {
+        "price": 13.2704,
+        "lower": 12.818757287264017,
+        "upper": 13.667902712736002,
+        "rsi": 46.665224109753055,
+        "k": 0.8425135078138563,
+        "d": 0.5850562526459838,
+        "macd": -0.1900350891307134,
+        "macd_signal": -0.2187655745671317
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 14.93251915105381,
+        "move_pct": 12.668496254225747,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "Swedbank Robur Access Asien C",
+      "type": "Fund",
+      "isin": "SE0013876968",
+      "source_url": "https://tmsapi.auxality.systems/dataaccess/RoburMorningstarConnection/timeseriesPrice?isin=SE0013876968&currencyId=EUR&startDate=2026-11-09&endDate=2026-11-17",
+      "checked_at_UTC": "2026-11-17T08:07:01.754754+00:00",
+      "model_eligible": true,
+      "initial_models": [],
+      "future_models": [
+        {
+          "model": "stochA / SALE",
+          "maximum_gross_units": 616.885
+        },
+        {
+          "model": "stochA / NO_SALE",
+          "maximum_gross_units": 126.313
+        },
+        {
+          "model": "stochA / NO_INITIAL_SALES",
+          "maximum_gross_units": 846.5020000000001
+        }
+      ],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 19.7326,
+        "lower": 18.836802317969468,
+        "upper": 19.672067682030498,
+        "rsi": 70.28848960022901,
+        "k": 0.9088393412188996,
+        "d": 0.7488979533614862,
+        "macd": 0.1828036968881648,
+        "macd_signal": 0.1427163981109026
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": true,
+        "RSI": true,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 3,
+      "asset": "SE0014261756",
+      "date": "2026-11-13",
+      "observations": 1200,
+      "previous": {
+        "price": 19.6543,
+        "lower": 18.85834658951496,
+        "upper": 19.583613410485007,
+        "rsi": 68.49799642895441,
+        "k": 0.7554765786303955,
+        "d": 0.5525160038848672,
+        "macd": 0.1642238149067765,
+        "macd_signal": 0.132694573416587
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 19.7326,
+        "move_pct": 0,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": true
+      },
+      "name": "Swedbank Robur Global High Dividend C",
+      "type": "Fund",
+      "isin": "SE0014261756",
+      "source_url": "https://tmsapi.auxality.systems/dataaccess/RoburMorningstarConnection/timeseriesPrice?isin=SE0014261756&currencyId=EUR&startDate=2026-11-09&endDate=2026-11-17",
+      "checked_at_UTC": "2026-11-17T08:07:01.332514+00:00",
+      "model_eligible": true,
+      "initial_models": [
+        {
+          "model": "stochA / SALE",
+          "units": 76.016
+        },
+        {
+          "model": "MARKOWITZ / SALE",
+          "units": 24.884
+        },
+        {
+          "model": "NETSD / SALE",
+          "units": 15.204
+        },
+        {
+          "model": "NETSD R1 / SALE",
+          "units": 15.204
+        }
+      ],
+      "future_models": [
+        {
+          "model": "stochA / SALE",
+          "maximum_gross_units": 495.052
+        },
+        {
+          "model": "stochA / NO_SALE",
+          "maximum_gross_units": 90.379
+        },
+        {
+          "model": "stochA / NO_INITIAL_SALES",
+          "maximum_gross_units": 591.312
+        }
+      ],
+      "held_units": 0.0
+    },
+    {
+      "values": {
+        "price": 25.1968,
+        "lower": 23.211018220171717,
+        "upper": 28.45887177982827,
+        "rsi": 44.1164528510003,
+        "k": 0.7514930755815602,
+        "d": 0.6798197320485458,
+        "macd": -0.7353711344442111,
+        "macd_signal": -0.7544026601834546
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 0,
+      "asset": "SE0014261764",
+      "date": "2026-11-13",
+      "observations": 1200,
+      "previous": {
+        "price": 25.668,
+        "lower": 23.27820249904888,
+        "upper": 28.528647500951102,
+        "rsi": 46.80071876162998,
+        "k": 0.6937267005180011,
+        "d": 0.5613728103663949,
+        "macd": -0.7815273100897571,
+        "macd_signal": -0.7591605416182654
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 31.656717630006042,
+        "move_pct": 25.637849369785215,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "Swedbank Robur Technology C",
+      "type": "Fund",
+      "isin": "SE0014261764",
+      "source_url": "https://tmsapi.auxality.systems/dataaccess/RoburMorningstarConnection/timeseriesPrice?isin=SE0014261764&currencyId=EUR&startDate=2026-11-09&endDate=2026-11-17",
+      "checked_at_UTC": "2026-11-17T08:07:01.522128+00:00",
+      "model_eligible": true,
+      "initial_models": [
+        {
+          "model": "STOCHASTIC / SALE",
+          "units": 27.781
+        },
+        {
+          "model": "MARKOWITZ / SALE",
+          "units": 6.223
+        },
+        {
+          "model": "MINIMAX / SALE",
+          "units": 27.78
+        },
+        {
+          "model": "ROBUST / SALE",
+          "units": 18.392
+        },
+        {
+          "model": "NETSD / NO_SALE",
+          "units": 10.445
+        },
+        {
+          "model": "NETSD R1 / NO_SALE",
+          "units": 14.932
+        }
+      ],
+      "future_models": [
+        {
+          "model": "STOCHASTIC / SALE",
+          "maximum_gross_units": 28.633
+        },
+        {
+          "model": "STOCHASTIC / NO_SALE",
+          "maximum_gross_units": 9.362
+        },
+        {
+          "model": "STOCHASTIC2 / SALE",
+          "maximum_gross_units": 1.887
+        },
+        {
+          "model": "stochA / SALE",
+          "maximum_gross_units": 58.228
+        },
+        {
+          "model": "stochA / NO_SALE",
+          "maximum_gross_units": 19.905
+        },
+        {
+          "model": "stoch2A / SALE",
+          "maximum_gross_units": 1.887
+        },
+        {
+          "model": "STOCHASTIC / NO_INITIAL_SALES",
+          "maximum_gross_units": 28.633
+        },
+        {
+          "model": "STOCHASTIC2 / NO_INITIAL_SALES",
+          "maximum_gross_units": 22.679
+        },
+        {
+          "model": "stochA / NO_INITIAL_SALES",
+          "maximum_gross_units": 71.671
+        },
+        {
+          "model": "stoch2A / NO_INITIAL_SALES",
+          "maximum_gross_units": 22.679
+        }
+      ],
+      "held_units": 7.108
+    },
+    {
+      "values": {
+        "price": 15.2437,
+        "lower": 14.069520234783143,
+        "upper": 15.512979765216885,
+        "rsi": 70.77970558271156,
+        "k": 0.3855180438269114,
+        "d": 0.4389943940053749,
+        "macd": 0.3702101928749144,
+        "macd_signal": 0.3599518176043019
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": true,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "asset": "SE0014261871",
+      "date": "2026-11-16",
+      "observations": 1201,
+      "previous": {
+        "price": 15.2742,
+        "lower": 13.948754945550174,
+        "upper": 15.504315054449858,
+        "rsi": 72.14702463249381,
+        "k": 0.4665574541410029,
+        "d": 0.4767495141835582,
+        "macd": 0.3765831049282102,
+        "macd_signal": 0.3573872237866488
+      },
+      "buy_trigger": null,
+      "sell_trigger": null,
+      "name": "Swedbank Robur Healthcare C",
+      "type": "Fund",
+      "isin": "SE0014261871",
+      "source_url": "https://tmsapi.auxality.systems/dataaccess/RoburMorningstarConnection/timeseriesPrice?isin=SE0014261871&currencyId=EUR&startDate=2026-11-09&endDate=2026-11-17",
+      "checked_at_UTC": "2026-11-17T08:07:01.584628+00:00",
+      "model_eligible": true,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 16.0594,
+        "lower": 15.654677263674571,
+        "upper": 16.13111273632538,
+        "rsi": 55.80553442835166,
+        "k": 0.8700467850301439,
+        "d": 0.7566054690977936,
+        "macd": 0.01735313782384296,
+        "macd_signal": -0.005140994178506036
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "asset": "SE0014261889",
+      "date": "2026-11-13",
+      "observations": 1200,
+      "previous": {
+        "price": 16.0291,
+        "lower": 15.657736947652532,
+        "upper": 16.10916305234742,
+        "rsi": 54.78479964235613,
+        "k": 0.7514223945674333,
+        "d": 0.5715945055419022,
+        "macd": 0.005847485131697638,
+        "macd_signal": -0.01076452717909328
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 16.69445758184638,
+        "move_pct": 3.9544290686226,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "Swedbank Robur Global Impact C",
+      "type": "Fund",
+      "isin": "SE0014261889",
+      "source_url": "https://tmsapi.auxality.systems/dataaccess/RoburMorningstarConnection/timeseriesPrice?isin=SE0014261889&currencyId=EUR&startDate=2026-11-09&endDate=2026-11-17",
+      "checked_at_UTC": "2026-11-17T08:07:01.647098+00:00",
+      "model_eligible": true,
+      "initial_models": [
+        {
+          "model": "STOCHASTIC2 / NO_SALE",
+          "units": 43.588
+        },
+        {
+          "model": "stoch2A / NO_SALE",
+          "units": 43.588
+        }
+      ],
+      "future_models": [],
+      "held_units": 0.0
+    },
+    {
+      "values": {
+        "price": 10.916,
+        "lower": 10.00656602418076,
+        "upper": 11.165173975819275,
+        "rsi": 74.41769673783415,
+        "k": 0.8631931628202981,
+        "d": 0.8959130862236048,
+        "macd": 0.1975028470447366,
+        "macd_signal": 0.1641711021703847
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": true,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 2,
+      "asset": "SE0014261897",
+      "date": "2026-11-16",
+      "observations": 1201,
+      "previous": {
+        "price": 10.9266,
+        "lower": 9.9427876033658,
+        "upper": 11.143922396634233,
+        "rsi": 75.4720086232897,
+        "k": 0.8938247014564533,
+        "d": 0.9337439171339105,
+        "macd": 0.1992777281552733,
+        "macd_signal": 0.1558381659517967
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 11.23091960081578,
+        "move_pct": 2.884935881419737,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "Swedbank Robur Fastighet C",
+      "type": "Fund",
+      "isin": "SE0014261897",
+      "source_url": "https://tmsapi.auxality.systems/dataaccess/RoburMorningstarConnection/timeseriesPrice?isin=SE0014261897&currencyId=EUR&startDate=2026-11-09&endDate=2026-11-17",
+      "checked_at_UTC": "2026-11-17T08:07:01.849742+00:00",
+      "model_eligible": true,
+      "initial_models": [],
+      "future_models": [
+        {
+          "model": "STOCHASTIC / SALE",
+          "maximum_gross_units": 31.909
+        },
+        {
+          "model": "STOCHASTIC / NO_SALE",
+          "maximum_gross_units": 31.909
+        },
+        {
+          "model": "STOCHASTIC / NO_INITIAL_SALES",
+          "maximum_gross_units": 31.909
+        },
+        {
+          "model": "stochA / NO_INITIAL_SALES",
+          "maximum_gross_units": 341.618
+        }
+      ],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 11.2345,
+        "lower": 11.172292240002609,
+        "upper": 11.332077759997379,
+        "rsi": 46.105831744839705,
+        "k": 0.7010292099357858,
+        "d": 0.8597952067162039,
+        "macd": -0.0003613760999368054,
+        "macd_signal": -0.005731513293344747
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 0,
+      "asset": "SE0014263273",
+      "date": "2026-11-16",
+      "observations": 1233,
+      "previous": {
+        "price": 11.3021,
+        "lower": 11.173988966547705,
+        "upper": 11.333141033452284,
+        "rsi": 54.55475686895599,
+        "k": 0.9176620816718196,
+        "d": 0.9406242816754778,
+        "macd": 0.002755923781256442,
+        "macd_signal": -0.007074047591696732
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 11.492022849691576,
+        "move_pct": 2.292250208657043,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "Swedbank Savings Fund 30 N",
+      "type": "Fund",
+      "isin": "SE0014263273",
+      "source_url": "https://tmsapi.auxality.systems/dataaccess/RoburMorningstarConnection/timeseriesPrice?isin=SE0014263273&currencyId=EUR&startDate=2026-11-09&endDate=2026-11-17",
+      "checked_at_UTC": "2026-11-17T08:07:02.940467+00:00",
+      "model_eligible": true,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 14.9647,
+        "lower": 14.68270759544831,
+        "upper": 15.47587240455169,
+        "rsi": 45.42712333697187,
+        "k": 0.8266713635319496,
+        "d": 0.8902740476358355,
+        "macd": -0.04860791280334276,
+        "macd_signal": -0.06427140096867107
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "asset": "SE0014263281",
+      "date": "2026-11-16",
+      "observations": 1230,
+      "previous": {
+        "price": 15.2228,
+        "lower": 14.694649615033853,
+        "upper": 15.489200384966146,
+        "rsi": 52.84900920705062,
+        "k": 0.9681080199578299,
+        "d": 0.8618670997445742,
+        "macd": -0.04180764112413371,
+        "macd_signal": -0.06818727301000313
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 16.12594546064962,
+        "move_pct": 7.759898031030499,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "Swedbank Savings Fund 100 N",
+      "type": "Fund",
+      "isin": "SE0014263281",
+      "source_url": "https://tmsapi.auxality.systems/dataaccess/RoburMorningstarConnection/timeseriesPrice?isin=SE0014263281&currencyId=EUR&startDate=2026-11-09&endDate=2026-11-17",
+      "checked_at_UTC": "2026-11-17T08:07:01.991906+00:00",
+      "model_eligible": true,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 12.7786,
+        "lower": 12.644125834002125,
+        "upper": 13.018974165997879,
+        "rsi": 45.636859826733506,
+        "k": 0.7938981523355254,
+        "d": 0.8806967400258058,
+        "macd": -0.01786614877683768,
+        "macd_signal": -0.02701606321225869
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 0,
+      "asset": "SE0014263299",
+      "date": "2026-11-16",
+      "observations": 1230,
+      "previous": {
+        "price": 12.9159,
+        "lower": 12.649711725581897,
+        "upper": 13.02430827441811,
+        "rsi": 53.34666349999989,
+        "k": 0.9546600337164594,
+        "d": 0.8770434901298007,
+        "macd": -0.0133879360475575,
+        "macd_signal": -0.02930354182111394
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 13.367053428093428,
+        "move_pct": 4.604991376938217,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "Swedbank Savings Fund 60 N",
+      "type": "Fund",
+      "isin": "SE0014263299",
+      "source_url": "https://tmsapi.auxality.systems/dataaccess/RoburMorningstarConnection/timeseriesPrice?isin=SE0014263299&currencyId=EUR&startDate=2026-11-09&endDate=2026-11-17",
+      "checked_at_UTC": "2026-11-17T08:07:02.071283+00:00",
+      "model_eligible": true,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 14.27,
+        "lower": 13.565710665313372,
+        "upper": 14.591279334686615,
+        "rsi": 58.03831852593533,
+        "k": 0.6143868066920678,
+        "d": 0.8144015031489569,
+        "macd": 0.1402979700572633,
+        "macd_signal": 0.1216458117151872
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 0,
+      "asset": "SE0015192315",
+      "date": "2026-11-16",
+      "observations": 1236,
+      "previous": {
+        "price": 14.3404,
+        "lower": 13.548967148497072,
+        "upper": 14.570562851502915,
+        "rsi": 61.518621767358184,
+        "k": 0.8758532608054338,
+        "d": 0.9152774718093735,
+        "macd": 0.1475877790084112,
+        "macd_signal": 0.1169827721296681
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 14.672307824876443,
+        "move_pct": 2.819255955686351,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "Swedbank Robur Access Edge Sweden C",
+      "type": "Fund",
+      "isin": "SE0015192315",
+      "source_url": "https://tmsapi.auxality.systems/dataaccess/RoburMorningstarConnection/timeseriesPrice?isin=SE0015192315&currencyId=EUR&startDate=2026-11-09&endDate=2026-11-17",
+      "checked_at_UTC": "2026-11-17T08:07:02.238391+00:00",
+      "model_eligible": true,
+      "initial_models": [
+        {
+          "model": "STOCHASTIC / NO_SALE",
+          "units": 34.866
+        },
+        {
+          "model": "stochA / SALE",
+          "units": 104.599
+        },
+        {
+          "model": "STOCHASTIC / NO_INITIAL_SALES",
+          "units": 48.813
+        },
+        {
+          "model": "STOCHASTIC2 / NO_INITIAL_SALES",
+          "units": 48.813
+        },
+        {
+          "model": "stochA / NO_INITIAL_SALES",
+          "units": 52.299
+        },
+        {
+          "model": "stoch2A / NO_INITIAL_SALES",
+          "units": 48.813
+        }
+      ],
+      "future_models": [
+        {
+          "model": "STOCHASTIC / SALE",
+          "maximum_gross_units": 51.339
+        },
+        {
+          "model": "STOCHASTIC / NO_SALE",
+          "maximum_gross_units": 35.653
+        },
+        {
+          "model": "stochA / SALE",
+          "maximum_gross_units": 188.439
+        },
+        {
+          "model": "stochA / NO_SALE",
+          "maximum_gross_units": 69.149
+        },
+        {
+          "model": "STOCHASTIC / NO_INITIAL_SALES",
+          "maximum_gross_units": 18.256
+        },
+        {
+          "model": "STOCHASTIC2 / NO_INITIAL_SALES",
+          "maximum_gross_units": 0.0029999999999930083
+        },
+        {
+          "model": "stochA / NO_INITIAL_SALES",
+          "maximum_gross_units": 14.550000000000004
+        },
+        {
+          "model": "stoch2A / NO_INITIAL_SALES",
+          "maximum_gross_units": 0.0029999999999930083
+        }
+      ],
+      "held_units": 0.0
+    },
+    {
+      "values": {
+        "price": 19.9701,
+        "lower": 19.59836420179061,
+        "upper": 20.729615798209373,
+        "rsi": 46.22955756389537,
+        "k": 0.6986068114953999,
+        "d": 0.7434548245681261,
+        "macd": -0.04108309862512272,
+        "macd_signal": -0.0440473447992855
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 0,
+      "asset": "SE0015192323",
+      "date": "2026-11-16",
+      "observations": 1201,
+      "previous": {
+        "price": 20.2999,
+        "lower": 19.619230032866017,
+        "upper": 20.741969967133965,
+        "rsi": 52.654255109900326,
+        "k": 0.8086585023628193,
+        "d": 0.7233084133792941,
+        "macd": -0.02932645449343596,
+        "macd_signal": -0.0447884063428262
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 21.67201365730697,
+        "move_pct": 8.522309138697203,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "Swedbank Robur Access Edge USA C",
+      "type": "Fund",
+      "isin": "SE0015192323",
+      "source_url": "https://tmsapi.auxality.systems/dataaccess/RoburMorningstarConnection/timeseriesPrice?isin=SE0015192323&currencyId=EUR&startDate=2026-11-09&endDate=2026-11-17",
+      "checked_at_UTC": "2026-11-17T08:07:02.301717+00:00",
+      "model_eligible": true,
+      "initial_models": [
+        {
+          "model": "stochA / SALE",
+          "units": 98.522
+        }
+      ],
+      "future_models": [
+        {
+          "model": "stochA / SALE",
+          "maximum_gross_units": 0.001
+        }
+      ],
+      "held_units": 0.0
+    },
+    {
+      "values": {
+        "price": 18.1351,
+        "lower": 17.110788520797275,
+        "upper": 18.223061479202723,
+        "rsi": 67.37334612853859,
+        "k": 0.9999999999999999,
+        "d": 0.9482458773369643,
+        "macd": 0.1896433189467785,
+        "macd_signal": 0.133567832854374
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "asset": "SE0015192331",
+      "date": "2026-11-13",
+      "observations": 1232,
+      "previous": {
+        "price": 18.126,
+        "lower": 17.115193636058574,
+        "upper": 18.15211636394142,
+        "rsi": 67.16306144333963,
+        "k": 0.9544228369005573,
+        "d": 0.8556903481348604,
+        "macd": 0.1782607416255821,
+        "macd_signal": 0.1195489613312728
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 18.259518331805637,
+        "move_pct": 0.686063665519554,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "Swedbank Robur Access Edge Europe C",
+      "type": "Fund",
+      "isin": "SE0015192331",
+      "source_url": "https://tmsapi.auxality.systems/dataaccess/RoburMorningstarConnection/timeseriesPrice?isin=SE0015192331&currencyId=EUR&startDate=2026-11-09&endDate=2026-11-17",
+      "checked_at_UTC": "2026-11-17T08:07:02.396709+00:00",
+      "model_eligible": true,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 19.1557,
+        "lower": 18.827076097602447,
+        "upper": 19.664923902397565,
+        "rsi": 47.8262181711174,
+        "k": 0.711416208462194,
+        "d": 0.765146130465803,
+        "macd": 0.002238269140132587,
+        "macd_signal": -0.007024391639351839
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 0,
+      "asset": "SE0015192349",
+      "date": "2026-11-16",
+      "observations": 1201,
+      "previous": {
+        "price": 19.421,
+        "lower": 18.83512063483882,
+        "upper": 19.66922936516119,
+        "rsi": 54.89421948383274,
+        "k": 0.8399592346552933,
+        "d": 0.741064510097985,
+        "macd": 0.01124282040701985,
+        "macd_signal": -0.009340056834222945
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 20.324919095691033,
+        "move_pct": 6.103765958388552,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "Swedbank Robur Access Edge Global C",
+      "type": "Fund",
+      "isin": "SE0015192349",
+      "source_url": "https://tmsapi.auxality.systems/dataaccess/RoburMorningstarConnection/timeseriesPrice?isin=SE0015192349&currencyId=EUR&startDate=2026-11-09&endDate=2026-11-17",
+      "checked_at_UTC": "2026-11-17T08:07:02.633156+00:00",
+      "model_eligible": true,
+      "initial_models": [
+        {
+          "model": "STOCHASTIC2 / SALE",
+          "units": 25.745
+        },
+        {
+          "model": "stoch2A / SALE",
+          "units": 25.745
+        },
+        {
+          "model": "NETSD / SALE",
+          "units": 36.042
+        },
+        {
+          "model": "NETSD R1 / SALE",
+          "units": 36.042
+        }
+      ],
+      "future_models": [
+        {
+          "model": "STOCHASTIC2 / SALE",
+          "maximum_gross_units": 0.023
+        },
+        {
+          "model": "stoch2A / SALE",
+          "maximum_gross_units": 0.023
+        }
+      ],
+      "held_units": 0.0
+    },
+    {
+      "values": {
+        "price": 11.4695,
+        "lower": 11.280425407938864,
+        "upper": 11.552524592061125,
+        "rsi": 52.36801103440051,
+        "k": 0.7975284594727708,
+        "d": 0.894030260620969,
+        "macd": 0.00733767996023893,
+        "macd_signal": -0.00811028646294078
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 0,
+      "asset": "SE0015948609",
+      "date": "2026-11-16",
+      "observations": 1236,
+      "previous": {
+        "price": 11.4876,
+        "lower": 11.27987289559384,
+        "upper": 11.547587104406148,
+        "rsi": 55.91788131668579,
+        "k": 0.9159273113470568,
+        "d": 0.9594993424960233,
+        "macd": 0.007298704695111624,
+        "macd_signal": -0.01197227806873571
+      },
+      "buy_trigger": {
+        "price": 11.255103579016508,
+        "move_pct": -1.86927434485803,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": false,
+          "MACD": true
+        },
+        "active": false
+      },
+      "sell_trigger": {
+        "price": 11.612938051864974,
+        "move_pct": 1.250604227429042,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "Swedbank Robur Corp Bond Europe HY C",
+      "type": "Fund",
+      "isin": "SE0015948609",
+      "source_url": "https://tmsapi.auxality.systems/dataaccess/RoburMorningstarConnection/timeseriesPrice?isin=SE0015948609&currencyId=EUR&startDate=2026-11-09&endDate=2026-11-17",
+      "checked_at_UTC": "2026-11-17T08:07:03.227954+00:00",
+      "model_eligible": true,
+      "initial_models": [],
+      "future_models": [
+        {
+          "model": "STOCHASTIC / NO_SALE",
+          "maximum_gross_units": 38.582
+        }
+      ],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 9.9648,
+        "lower": 9.886287395766756,
+        "upper": 10.019102604233256,
+        "rsi": 52.04792637397841,
+        "k": 0.5711989066685764,
+        "d": 0.7066419594603631,
+        "macd": 0.01127861446067691,
+        "macd_signal": 0.008744247317975492
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 0,
+      "asset": "SE0015948617",
+      "date": "2026-11-16",
+      "observations": 1236,
+      "previous": {
+        "price": 9.9694,
+        "lower": 9.88488793563243,
+        "upper": 10.017812064367584,
+        "rsi": 53.648646900509505,
+        "k": 0.7026007877840604,
+        "d": 0.8183859936013781,
+        "macd": 0.01275104012714401,
+        "macd_signal": 0.008110655532300138
+      },
+      "buy_trigger": null,
+      "sell_trigger": null,
+      "name": "Swedbank Robur Corp Bond Europe C",
+      "type": "Fund",
+      "isin": "SE0015948617",
+      "source_url": "https://tmsapi.auxality.systems/dataaccess/RoburMorningstarConnection/timeseriesPrice?isin=SE0015948617&currencyId=EUR&startDate=2026-11-09&endDate=2026-11-17",
+      "checked_at_UTC": "2026-11-17T08:07:02.712700+00:00",
+      "model_eligible": true,
+      "initial_models": [
+        {
+          "model": "MINIMAX / NO_SALE",
+          "units": 65.213
+        }
+      ],
+      "future_models": [],
+      "held_units": 0.0
+    },
+    {
+      "values": {
+        "price": 11.9878,
+        "lower": 11.944439684348506,
+        "upper": 11.989030315651505,
+        "rsi": 80.77695051282599,
+        "k": 0.9999999999999979,
+        "d": 0.9999999999999983,
+        "macd": 0.007024677519890332,
+        "macd_signal": 0.004355187311146688
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": true,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 2,
+      "asset": "SE0017072416",
+      "date": "2026-11-16",
+      "observations": 1236,
+      "previous": {
+        "price": 11.9856,
+        "lower": 11.945407257770267,
+        "upper": 11.985632742229747,
+        "rsi": 79.45591502374243,
+        "k": 0.9999999999999979,
+        "d": 0.9999999999999983,
+        "macd": 0.006346138038921367,
+        "macd_signal": 0.003687814758960777
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 11.989429722161653,
+        "move_pct": 0.01359483943386142,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "Swedbank Robur Corp Bond Nordic C",
+      "type": "Fund",
+      "isin": "SE0017072416",
+      "source_url": "https://tmsapi.auxality.systems/dataaccess/RoburMorningstarConnection/timeseriesPrice?isin=SE0017072416&currencyId=EUR&startDate=2026-11-09&endDate=2026-11-17",
+      "checked_at_UTC": "2026-11-17T08:07:02.975645+00:00",
+      "model_eligible": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 23.9649,
+        "lower": 22.232920456934238,
+        "upper": 23.93031954306572,
+        "rsi": 62.76899098411612,
+        "k": 1.000000000000002,
+        "d": 1,
+        "macd": 0.1507135555535797,
+        "macd_signal": 0.01240781664593446
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": true,
+        "RSI": false,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 2,
+      "asset": "SE0019354200",
+      "date": "2026-11-16",
+      "observations": 871,
+      "previous": {
+        "price": 23.7983,
+        "lower": 22.29249151802793,
+        "upper": 23.785298481972028,
+        "rsi": 60.6523703331852,
+        "k": 1.000000000000002,
+        "d": 0.969671868000549,
+        "macd": 0.1036176038726317,
+        "macd_signal": -0.02216861808097685
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 24.711399685732342,
+        "move_pct": 3.114971002308975,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "Swedbank Robur Emerging Europe C",
+      "type": "Fund",
+      "isin": "SE0019354200",
+      "source_url": "https://tmsapi.auxality.systems/dataaccess/RoburMorningstarConnection/timeseriesPrice?isin=SE0019354200&currencyId=EUR&startDate=2026-11-09&endDate=2026-11-17",
+      "checked_at_UTC": "2026-11-17T08:07:03.007310+00:00",
+      "model_eligible": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 10.5493,
+        "lower": 10.489797301486005,
+        "upper": 10.54719269851399,
+        "rsi": 67.67251684062752,
+        "k": 1,
+        "d": 0.9936278352243074,
+        "macd": 0.001954861523005391,
+        "macd_signal": -0.00337073230947328
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": true,
+        "RSI": false,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 2,
+      "asset": "SE0025667199",
+      "date": "2026-11-13",
+      "observations": 283,
+      "previous": {
+        "price": 10.5452,
+        "lower": 10.491987901029985,
+        "upper": 10.542872098970014,
+        "rsi": 65.45978814735805,
+        "k": 0.9904417528364619,
+        "d": 0.987108448199162,
+        "macd": 0.0001650128613270851,
+        "macd_signal": -0.004702130767592948
+      },
+      "buy_trigger": {
+        "price": 10.474397451508699,
+        "move_pct": -0.7100238735395004,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": false,
+          "MACD": true
+        },
+        "active": false
+      },
+      "sell_trigger": {
+        "price": 10.554266360978394,
+        "move_pct": 0.04707763527811437,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "Swedbank Robur Corp Bond Nordic HY C",
+      "type": "Fund",
+      "isin": "SE0025667199",
+      "source_url": "https://tmsapi.auxality.systems/dataaccess/RoburMorningstarConnection/timeseriesPrice?isin=SE0025667199&currencyId=EUR&startDate=2026-11-09&endDate=2026-11-17",
+      "checked_at_UTC": "2026-11-17T08:07:03.332734+00:00",
+      "model_eligible": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 10.86,
+        "lower": 10.600848773253457,
+        "upper": 11.58679122674656,
+        "rsi": 44.22544697579514,
+        "k": 0.5780869680567887,
+        "d": 0.6428585593633134,
+        "macd": -0.07960992991404403,
+        "macd_signal": -0.0711477700140126
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 0,
+      "sell_votes": 1,
+      "asset": "SE0025667215",
+      "date": "2026-11-13",
+      "observations": 280,
+      "previous": {
+        "price": 10.9505,
+        "lower": 10.624460265521979,
+        "upper": 11.586809734478035,
+        "rsi": 45.96682520814552,
+        "k": 0.6597543256582658,
+        "d": 0.6201264684030267,
+        "macd": -0.06843737118040316,
+        "macd_signal": -0.06903223003900474
+      },
+      "buy_trigger": null,
+      "sell_trigger": null,
+      "name": "Swedbank Robur Security and Defence C",
+      "type": "Fund",
+      "isin": "SE0025667215",
+      "source_url": "https://tmsapi.auxality.systems/dataaccess/RoburMorningstarConnection/timeseriesPrice?isin=SE0025667215&currencyId=EUR&startDate=2026-11-09&endDate=2026-11-17",
+      "checked_at_UTC": "2026-11-17T08:07:03.300880+00:00",
+      "model_eligible": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 11.1364,
+        "lower": 10.421651614092388,
+        "upper": 11.305428385907534,
+        "rsi": 63.52595486407253,
+        "k": 0.8825166186126271,
+        "d": 0.9101790133093823,
+        "macd": 0.132433587896065,
+        "macd_signal": 0.0966769762232966
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "asset": "SE0026821472",
+      "date": "2026-11-13",
+      "observations": 959,
+      "previous": {
+        "price": 11.1744,
+        "lower": 10.414932894832749,
+        "upper": 11.270247105167172,
+        "rsi": 65.97797085920524,
+        "k": 0.9420479603826041,
+        "d": 0.8793128589532926,
+        "macd": 0.1309021514845323,
+        "macd_signal": 0.0877378233051045
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 11.351233575574668,
+        "move_pct": 1.929111522347138,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "Swedbank Robur Small Cap Europe C",
+      "type": "Fund",
+      "isin": "SE0026821472",
+      "source_url": "https://tmsapi.auxality.systems/dataaccess/RoburMorningstarConnection/timeseriesPrice?isin=SE0026821472&currencyId=EUR&startDate=2026-11-09&endDate=2026-11-17",
+      "checked_at_UTC": "2026-11-17T08:07:03.863901+00:00",
+      "model_eligible": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 8.9077,
+        "lower": 8.378136462425303,
+        "upper": 9.041553537574867,
+        "rsi": 54.152798241961364,
+        "k": 0.9142711156031704,
+        "d": 0.9262839478088627,
+        "macd": 0.01277936084385622,
+        "macd_signal": -0.02553151356497602
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "asset": "SE0027397514",
+      "date": "2026-11-13",
+      "observations": 947,
+      "previous": {
+        "price": 8.9177,
+        "lower": 8.380869463645446,
+        "upper": 9.019020536354724,
+        "rsi": 54.56786307143899,
+        "k": 0.9285542760524111,
+        "d": 0.901060861014059,
+        "macd": 0.00441719861055212,
+        "macd_signal": -0.03510923216718408
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 9.588835793902074,
+        "move_pct": 7.64659557351588,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "Swedbank Robur New Energy C",
+      "type": "Fund",
+      "isin": "SE0027397514",
+      "source_url": "https://tmsapi.auxality.systems/dataaccess/RoburMorningstarConnection/timeseriesPrice?isin=SE0027397514&currencyId=EUR&startDate=2026-11-09&endDate=2026-11-17",
+      "checked_at_UTC": "2026-11-17T08:07:03.602077+00:00",
+      "model_eligible": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 1.05,
+        "lower": 1.04396060798583,
+        "upper": 1.063039392014169,
+        "rsi": 43.598949388222984,
+        "k": 0.7664983487416336,
+        "d": 0.7986857316254201,
+        "macd": -0.005442024351011598,
+        "macd_signal": -0.00649984445626939
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 0,
+      "asset": "SFG1T",
+      "date": "2026-11-16",
+      "observations": 1246,
+      "previous": {
+        "price": 1.055,
+        "lower": 1.043631619709202,
+        "upper": 1.064868380290797,
+        "rsi": 46.74990329605858,
+        "k": 0.879748028974873,
+        "d": 0.8332072114398369,
+        "macd": -0.005575842469529579,
+        "macd_signal": -0.006764299482583836
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 1.108617725246823,
+        "move_pct": 5.582640499697411,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "Silvano Fashion Group",
+      "type": "Share",
+      "isin": "EE3100001751",
+      "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100001751/trading/chart_price_json?start=2026-11-09&end=2026-11-16&historical=1",
+      "checked_at_UTC": "2026-11-17T08:07:00.724451+00:00",
+      "model_eligible": true,
+      "initial_models": [],
+      "future_models": [
+        {
+          "model": "STOCHASTIC / SALE",
+          "maximum_gross_units": 760.0
+        },
+        {
+          "model": "STOCHASTIC / NO_SALE",
+          "maximum_gross_units": 219.0
+        },
+        {
+          "model": "stochA / SALE",
+          "maximum_gross_units": 2434.0
+        },
+        {
+          "model": "stochA / NO_SALE",
+          "maximum_gross_units": 517.0
+        },
+        {
+          "model": "STOCHASTIC / NO_INITIAL_SALES",
+          "maximum_gross_units": 697.0
+        },
+        {
+          "model": "stochA / NO_INITIAL_SALES",
+          "maximum_gross_units": 671.0
+        }
+      ],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 0.617,
+        "lower": 0.6223510776112343,
+        "upper": 0.6687489223887669,
+        "rsi": 24.994011522041216,
+        "k": -1.27675647831893e-15,
+        "d": 0.1001006457972445,
+        "macd": -0.003492826207280975,
+        "macd_signal": 0.0008413488559552452
+      },
+      "buy": {
+        "BB": true,
+        "RSI": true,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 3,
+      "sell_votes": 1,
+      "asset": "TAL1T",
+      "date": "2026-11-16",
+      "observations": 1246,
+      "previous": {
+        "price": 0.62,
+        "lower": 0.627847976608202,
+        "upper": 0.6661520233917991,
+        "rsi": 26.428392132859056,
+        "k": 0.1170230556408969,
+        "d": 0.2216752154144196,
+        "macd": -0.001514866718152152,
+        "macd_signal": 0.0019248926217643
+      },
+      "buy_trigger": {
+        "price": 0.617,
+        "move_pct": 0,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": true
+      },
+      "sell_trigger": null,
+      "name": "Tallink Grupp",
+      "type": "Share",
+      "isin": "EE3100004466",
+      "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100004466/trading/chart_price_json?start=2026-11-09&end=2026-11-16&historical=1",
+      "checked_at_UTC": "2026-11-17T08:07:00.724451+00:00",
+      "model_eligible": true,
+      "initial_models": [],
+      "future_models": [
+        {
+          "model": "STOCHASTIC / SALE",
+          "maximum_gross_units": 9.0
+        },
+        {
+          "model": "STOCHASTIC / NO_SALE",
+          "maximum_gross_units": 1.0
+        },
+        {
+          "model": "stochA / SALE",
+          "maximum_gross_units": 6070.0
+        },
+        {
+          "model": "stochA / NO_SALE",
+          "maximum_gross_units": 15.0
+        },
+        {
+          "model": "STOCHASTIC / NO_INITIAL_SALES",
+          "maximum_gross_units": 9.0
+        },
+        {
+          "model": "stochA / NO_INITIAL_SALES",
+          "maximum_gross_units": 5339.0
+        }
+      ],
+      "held_units": 700.0
+    },
+    {
+      "values": {
+        "price": 2.22,
+        "lower": 2.204334666688001,
+        "upper": 2.287665333311999,
+        "rsi": 40.79668464395575,
+        "k": 0.1444372700343083,
+        "d": 0.1510576549509685,
+        "macd": -0.004469929421163421,
+        "macd_signal": -0.000182637716849133
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "asset": "TEL1L",
+      "date": "2026-11-16",
+      "observations": 1246,
+      "previous": {
+        "price": 2.23,
+        "lower": 2.203956542267115,
+        "upper": 2.296043457732885,
+        "rsi": 44.808924852045635,
+        "k": 0.1403808047424176,
+        "d": 0.1590301949649268,
+        "macd": -0.003334479026503079,
+        "macd_signal": 0.000889185209229439
+      },
+      "buy_trigger": {
+        "price": 2.179807121080806,
+        "move_pct": -1.810490041405144,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "sell_trigger": null,
+      "name": "Telia Lietuva",
+      "type": "Share",
+      "isin": "LT0000123911",
+      "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000123911/trading/chart_price_json?start=2026-11-09&end=2026-11-16&historical=1",
+      "checked_at_UTC": "2026-11-17T08:07:00.771741+00:00",
+      "model_eligible": true,
+      "initial_models": [],
+      "future_models": [
+        {
+          "model": "STOCHASTIC / SALE",
+          "maximum_gross_units": 111.0
+        },
+        {
+          "model": "STOCHASTIC / NO_SALE",
+          "maximum_gross_units": 335.0
+        },
+        {
+          "model": "stochA / SALE",
+          "maximum_gross_units": 1069.0
+        },
+        {
+          "model": "stochA / NO_SALE",
+          "maximum_gross_units": 979.0
+        },
+        {
+          "model": "stochA / NO_INITIAL_SALES",
+          "maximum_gross_units": 1092.0
+        }
+      ],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 9.02,
+        "lower": 8.81104738023623,
+        "upper": 9.000952619763739,
+        "rsi": 66.62573136911234,
+        "k": 0.9810531402758632,
+        "d": 0.9739894271654096,
+        "macd": -0.0004606923500301008,
+        "macd_signal": -0.0227299929215333
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": true,
+        "RSI": false,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 2,
+      "asset": "TKM1T",
+      "date": "2026-11-16",
+      "observations": 1246,
+      "previous": {
+        "price": 9.03,
+        "lower": 8.820753548975349,
+        "upper": 8.97924645102462,
+        "rsi": 69.18418996167212,
+        "k": 1,
+        "d": 0.9409151412203588,
+        "macd": -0.00916850291944371,
+        "macd_signal": -0.0282973180644091
+      },
+      "buy_trigger": {
+        "price": 8.689862649110747,
+        "move_pct": -3.660059322497256,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": false,
+          "MACD": true
+        },
+        "active": false
+      },
+      "sell_trigger": {
+        "price": 9.037082503624081,
+        "move_pct": 0.1893847408434679,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "TKM Grupp",
+      "type": "Share",
+      "isin": "EE0000001105",
+      "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/EE0000001105/trading/chart_price_json?start=2026-11-09&end=2026-11-16&historical=1",
+      "checked_at_UTC": "2026-11-17T08:07:00.819416+00:00",
+      "model_eligible": true,
+      "initial_models": [],
+      "future_models": [
+        {
+          "model": "STOCHASTIC / NO_SALE",
+          "maximum_gross_units": 29.0
+        }
+      ],
+      "held_units": 288.0
+    },
+    {
+      "values": {
+        "price": 1.226,
+        "lower": 1.177546858581744,
+        "upper": 1.234053141418257,
+        "rsi": 60.006468801745854,
+        "k": 0.8765529099112862,
+        "d": 0.9588509699704275,
+        "macd": 0.004962282276863572,
+        "macd_signal": 8.920652398308e-05
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "asset": "TSM1T",
+      "date": "2026-11-16",
+      "observations": 1246,
+      "previous": {
+        "price": 1.242,
+        "lower": 1.17773061450089,
+        "upper": 1.231269385499111,
+        "rsi": 74.64959480757018,
+        "k": 0.9999999999999994,
+        "d": 0.9999999999999987,
+        "macd": 0.00432434127172443,
+        "macd_signal": -0.001129062414237043
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 1.237644991778629,
+        "move_pct": 0.94983619727802,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "Tallinna Sadam",
+      "type": "Share",
+      "isin": "EE3100021635",
+      "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100021635/trading/chart_price_json?start=2026-11-09&end=2026-11-16&historical=1",
+      "checked_at_UTC": "2026-11-17T08:07:00.882711+00:00",
+      "model_eligible": true,
+      "initial_models": [],
+      "future_models": [
+        {
+          "model": "STOCHASTIC / NO_SALE",
+          "maximum_gross_units": 1.0
+        }
+      ],
+      "held_units": 330.0
+    },
+    {
+      "values": {
+        "price": 10.85,
+        "lower": 10.784870804768344,
+        "upper": 10.930129195231684,
+        "rsi": 48.93561685352765,
+        "k": 0.689719885223644,
+        "d": 0.8093404916913508,
+        "macd": -0.003037825061673161,
+        "macd_signal": -0.006596949864192707
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 0,
+      "asset": "TVE1T",
+      "date": "2026-11-16",
+      "observations": 1246,
+      "previous": {
+        "price": 10.85,
+        "lower": 10.784870804768344,
+        "upper": 10.930129195231684,
+        "rsi": 48.935616853527655,
+        "k": 0.8448599426118207,
+        "d": 0.8417282947758643,
+        "macd": -0.002725994301622237,
+        "macd_signal": -0.007486731064822593
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 11.16947830351345,
+        "move_pct": 2.944500493211533,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "Tallinna Vesi",
+      "type": "Share",
+      "isin": "EE3100026436",
+      "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100026436/trading/chart_price_json?start=2026-11-09&end=2026-11-16&historical=1",
+      "checked_at_UTC": "2026-11-17T08:07:00.882711+00:00",
+      "model_eligible": true,
+      "initial_models": [],
+      "future_models": [
+        {
+          "model": "STOCHASTIC / SALE",
+          "maximum_gross_units": 23.0
+        },
+        {
+          "model": "STOCHASTIC / NO_SALE",
+          "maximum_gross_units": 69.0
+        },
+        {
+          "model": "stochA / SALE",
+          "maximum_gross_units": 14.0
+        },
+        {
+          "model": "stochA / NO_SALE",
+          "maximum_gross_units": 93.0
+        },
+        {
+          "model": "stochA / NO_INITIAL_SALES",
+          "maximum_gross_units": 79.0
+        }
+      ],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 26.203014899538374,
+        "lower": 25.82956155027922,
+        "upper": 27.47121648585693,
+        "rsi": 50.01309992487333,
+        "k": 0.06048534650219408,
+        "d": 0.07823636818105621,
+        "macd": 0.154338180749118,
+        "macd_signal": 0.3179380493463244
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "asset": "US_PFE",
+      "date": "2026-11-16",
+      "observations": 2770,
+      "previous": {
+        "price": 26.140064594325406,
+        "lower": 25.833339143052413,
+        "upper": 27.469854599927906,
+        "rsi": 49.18952175649913,
+        "k": 0.09378474552499827,
+        "d": 0.08488759018565128,
+        "macd": 0.1845179053951718,
+        "macd_signal": 0.358838016495626
+      },
+      "buy_trigger": {
+        "price": 23.696113353688233,
+        "move_pct": -9.567225586298111,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "sell_trigger": null,
+      "name": "Pfizer Inc.",
+      "type": "Share",
+      "isin": "US7170811035",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/PFE?period1=1451606400&period2=1794960000&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-17T08:07:03.727719+00:00",
+      "model_eligible": true,
+      "initial_models": [
+        {
+          "model": "STOCHASTIC / SALE",
+          "units": 11.476635
+        },
+        {
+          "model": "STOCHASTIC2 / NO_SALE",
+          "units": 11.476635
+        },
+        {
+          "model": "stoch2A / NO_SALE",
+          "units": 11.476635
+        },
+        {
+          "model": "STOCHASTIC2 / NO_INITIAL_SALES",
+          "units": 11.476635000000002
+        },
+        {
+          "model": "stochA / NO_INITIAL_SALES",
+          "units": 11.476635000000002
+        },
+        {
+          "model": "stoch2A / NO_INITIAL_SALES",
+          "units": 11.476635000000002
+        }
+      ],
+      "future_models": [
+        {
+          "model": "STOCHASTIC / SALE",
+          "maximum_gross_units": 0.016929
+        },
+        {
+          "model": "STOCHASTIC / NO_SALE",
+          "maximum_gross_units": 30.655632
+        },
+        {
+          "model": "stochA / SALE",
+          "maximum_gross_units": 40.874177
+        },
+        {
+          "model": "stochA / NO_SALE",
+          "maximum_gross_units": 40.874177
+        },
+        {
+          "model": "STOCHASTIC / NO_INITIAL_SALES",
+          "maximum_gross_units": 0.01191099999999956
+        },
+        {
+          "model": "STOCHASTIC2 / NO_INITIAL_SALES",
+          "maximum_gross_units": 0.6456909999999993
+        },
+        {
+          "model": "stochA / NO_INITIAL_SALES",
+          "maximum_gross_units": 28.611924
+        },
+        {
+          "model": "stoch2A / NO_INITIAL_SALES",
+          "maximum_gross_units": 0.6456909999999993
+        }
+      ],
+      "held_units": 5.491688
+    },
+    {
+      "values": {
+        "price": 4.43,
+        "lower": 4.390620289390751,
+        "upper": 4.440379710609249,
+        "rsi": 55.377570825445794,
+        "k": 0.8129948026303077,
+        "d": 0.5599927039589251,
+        "macd": 0.002242457683593102,
+        "macd_signal": 0.001436928144648916
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "asset": "VIRSI",
+      "date": "2026-11-16",
+      "observations": 1246,
+      "previous": {
+        "price": 4.43,
+        "lower": 4.390916810842415,
+        "upper": 4.439083189157583,
+        "rsi": 55.3775708254458,
+        "k": 0.5599927039589246,
+        "d": 0.3069906052875421,
+        "macd": 0.001258038920643578,
+        "macd_signal": 0.001235545759912869
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 4.498644851836067,
+        "move_pct": 1.549545188173074,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "VIRŠI-A",
+      "type": "Share",
+      "isin": "LV0000101848",
+      "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/LV0000101848/trading/chart_price_json?start=2026-11-09&end=2026-11-16&historical=1",
+      "checked_at_UTC": "2026-11-17T08:07:00.930017+00:00",
+      "model_eligible": true,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 15.35,
+        "lower": 15.301634305732204,
+        "upper": 15.988365694267781,
+        "rsi": 39.05236550643577,
+        "k": -1.268661102097705e-15,
+        "d": 0.03711103465387682,
+        "macd": -0.03249183646993004,
+        "macd_signal": 0.01894072629047417
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "asset": "VLP1L",
+      "date": "2026-11-16",
+      "observations": 1246,
+      "previous": {
+        "price": 15.35,
+        "lower": 15.335782206009744,
+        "upper": 15.97421779399024,
+        "rsi": 39.05236550643577,
+        "k": 0.009774518413783425,
+        "d": 0.1002267527119555,
+        "macd": -0.0189416441295478,
+        "macd_signal": 0.03179886698057522
+      },
+      "buy_trigger": {
+        "price": 15.067885681853447,
+        "move_pct": -1.837878294114348,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "sell_trigger": null,
+      "name": "Vilkyškių pieninė",
+      "type": "Share",
+      "isin": "LT0000127508",
+      "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000127508/trading/chart_price_json?start=2026-11-09&end=2026-11-16&historical=1",
+      "checked_at_UTC": "2026-11-17T08:07:00.977710+00:00",
+      "model_eligible": true,
+      "initial_models": [
+        {
+          "model": "STOCHASTIC / NO_SALE",
+          "units": 32.0
+        },
+        {
+          "model": "STOCHASTIC2 / SALE",
+          "units": 32.0
+        },
+        {
+          "model": "stochA / NO_SALE",
+          "units": 19.0
+        },
+        {
+          "model": "stoch2A / SALE",
+          "units": 32.0
+        },
+        {
+          "model": "ROBUST / SALE",
+          "units": 24.0
+        },
+        {
+          "model": "UPDATE2 / NO_SALE",
+          "units": 48.0
+        },
+        {
+          "model": "UPDATE2 / SALE",
+          "units": 48.0
+        },
+        {
+          "model": "UPDATE3 / NO_SALE",
+          "units": 48.0
+        },
+        {
+          "model": "UPDATE3 / SALE",
+          "units": 48.0
+        },
+        {
+          "model": "NETSD / NO_SALE",
+          "units": 48.0
+        },
+        {
+          "model": "NETSD R1 / NO_SALE",
+          "units": 2.0
+        }
+      ],
+      "future_models": [
+        {
+          "model": "STOCHASTIC / SALE",
+          "maximum_gross_units": 46.0
+        },
+        {
+          "model": "STOCHASTIC2 / SALE",
+          "maximum_gross_units": 116.0
+        },
+        {
+          "model": "stochA / SALE",
+          "maximum_gross_units": 131.0
+        },
+        {
+          "model": "stochA / NO_SALE",
+          "maximum_gross_units": 101.0
+        },
+        {
+          "model": "stoch2A / SALE",
+          "maximum_gross_units": 116.0
+        },
+        {
+          "model": "STOCHASTIC / NO_INITIAL_SALES",
+          "maximum_gross_units": 48.0
+        },
+        {
+          "model": "STOCHASTIC2 / NO_INITIAL_SALES",
+          "maximum_gross_units": 116.0
+        },
+        {
+          "model": "stochA / NO_INITIAL_SALES",
+          "maximum_gross_units": 130.0
+        },
+        {
+          "model": "stoch2A / NO_INITIAL_SALES",
+          "maximum_gross_units": 116.0
+        }
+      ],
+      "held_units": 117.0
+    }
+  ],
+  "unavailable": [],
+  "model_snapshot": "2026-11-16 financial models; fund NAV and PFE model inputs retain their published dates",
+  "us_universe": {
+    "active_model_companies": 1,
+    "active_symbols": [
+      "PFE"
+    ],
+    "experimental_companies": 46,
+    "experimental_prepared_histories": 45
+  },
+  "model_input_sha256": "7adaf51d1260d9c3703528b477e0cf1034e621158b7c10f859307fe314e2b46e"
+}
