@@ -11,6 +11,9 @@
   }
   const summary=root.querySelector(':scope > summary');if(summary){summary.style.display='list-item';summary.style.cursor='pointer'}
   const data=JSON.parse(dataNode.textContent),number=(x,d=2)=>Number.isFinite(x)?x.toLocaleString('en-GB',{minimumFractionDigits:d,maximumFractionDigits:d}):'—';
+  const holdingsNode=document.getElementById('current-holdings-monitor-data');
+  const actualHoldings=holdingsNode?JSON.parse(holdingsNode.textContent).units:null;
+  const isHeld=r=>actualHoldings?Number(actualHoldings[r.asset.replace(/^US_/,'US:')]??actualHoldings[r.asset]??0)>0:Number(r.held_units||0)>0;
   const el=(tag,text,cls)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;};
   const stamp=new Date(data.checked_at_UTC).toLocaleString('en-GB',{timeZone:'Europe/Vilnius',dateStyle:'medium',timeStyle:'short'});
   root.querySelector('#watch-dates').textContent=`Checked ${stamp} (Europe/Vilnius) · completed sessions through ${data.completed_session_cutoff}; each asset's actual quote date is shown. Model targets retain their published snapshot.`;
@@ -54,10 +57,10 @@
    const near=Number(root.querySelector('#watch-near-pct').value),counts={};
    for(const side of ['buy','sell']){
     const host=root.querySelector('#watch-'+side);host.replaceChildren();
-    const matches=data.rows.filter(r=>r[side+'_trigger']&&(r[side+'_trigger'].active||Math.abs(r[side+'_trigger'].move_pct)<=near+1e-7)).sort((a,b)=>Number(b[side+'_trigger'].active)-Number(a[side+'_trigger'].active)||Math.abs(a[side+'_trigger'].move_pct)-Math.abs(b[side+'_trigger'].move_pct)||a.asset.localeCompare(b.asset));
+    const matches=data.rows.filter(r=>(side!=='sell'||isHeld(r))&&r[side+'_trigger']&&(r[side+'_trigger'].active||Math.abs(r[side+'_trigger'].move_pct)<=near+1e-7)).sort((a,b)=>Number(b[side+'_trigger'].active)-Number(a[side+'_trigger'].active)||Math.abs(a[side+'_trigger'].move_pct)-Math.abs(b[side+'_trigger'].move_pct)||a.asset.localeCompare(b.asset));
     counts[side]=matches.length;host.append(el('div',`${side.toUpperCase()} watch · ${matches.length}`,'watch-side-title'));
     for(const supported of [true,false]){
-     const group=matches.filter(r=>Boolean(r.initial_models.length||r.future_models.length)===supported);host.append(el('div',`${supported?'Model proposes addition':'Other permitted assets / reference candidates'} (${group.length})`,'watch-group-title'));
+     const group=matches.filter(r=>Boolean(r.initial_models.length||r.future_models.length)===supported);host.append(el('div',`${supported?'Model proposes addition':side==='sell'?'Other held assets':'Other permitted assets / reference candidates'} (${group.length})`,'watch-group-title'));
      const list=el('ul');list.dataset.group=supported?'models':'other';group.forEach(r=>list.append(card(r,side)));host.append(list);if(!group.length)host.append(el('p','No matching signals within this distance.','watch-empty'));
     }
    }
