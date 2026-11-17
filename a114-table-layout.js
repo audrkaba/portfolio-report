@@ -1,5 +1,5 @@
 (()=>{
- const signature=/A\.?1\.?1\.?4/i,states=[];
+ const signature=/A\.?1\.?1\.?4|^1\.5\.\s/i,states=[];
  const el=(tag,text)=>{const n=document.createElement(tag);if(text!=null)n.textContent=text;return n};
  function sourceTitle(table){for(let d=table.parentElement;d;d=d.parentElement){if(d.tagName==='DETAILS'){const s=d.querySelector(':scope>summary');if(s&&signature.test(s.textContent))return s.textContent.trim()}}return null}
  function cell(source,tag='td'){const n=source.cloneNode(true);if(n.tagName.toLowerCase()!==tag){const c=el(tag);while(n.firstChild)c.append(n.firstChild);return c}n.removeAttribute('id');n.querySelectorAll('[id]').forEach(e=>e.removeAttribute('id'));for(const k of ['width','min-width','white-space'])n.style.removeProperty(k);return n}
@@ -7,9 +7,15 @@
   if(table.dataset.a114Source||table.closest('.a114-table-view'))return;const title=sourceTitle(table);if(!title)return;
   const heads=[...(table.tHead?.rows[0]?.cells||[])],rows=[...(table.tBodies[0]?.rows||[])];if(!heads.length||!rows.length||rows.some(r=>r.cells.length!==heads.length))return;
   const names=heads.map(h=>h.textContent.trim()),low=names.map(s=>s.toLowerCase()),comparison=low[0]==='policy',keys=comparison?[0,...(low[1]?.startsWith('scenario')?[1]:[])]:low[0]==='asset'&&low.includes('scenario')?[0,low.indexOf('scenario'),...(low.includes('stage')?[low.indexOf('stage')]:[])]:[0];
+  if(low[0]==='profit_outcome'&&low.includes('horizon'))keys.push(low.indexOf('horizon'));
   const families=[];const used=new Set(keys);
   function family(label,fields){const indices=fields.map(f=>typeof f==='number'?f:low.indexOf(f.toLowerCase())).filter(i=>i>=0&&!keys.includes(i));if(indices.length){families.push({label,indices});indices.forEach(i=>used.add(i))}}
-  if(low.includes('bollinger_sell')){
+  if(low.includes('conditional_mean_return')){
+   family('Returns and event counts',['events','conditional_mean_return','conditional_variance_return','conditional_median_return','positive_return_share']);
+   family('Abnormal returns',['events','conditional_mean_abnormal','conditional_variance_abnormal','conditional_median_abnormal']);
+  }else if(low.includes('kruskal_h')){
+   family('Sample and test statistic',['groups','classified_events','kruskal_H']);family('Significance and conclusion',['p_value','p_BH','conclusion']);
+  }else if(low.includes('bollinger_sell')){
    family('Forecast prices and returns',['information_date','decision_price','forecast_terminal_price','forecast_remaining_return']);
    family('Four-indicator sale votes',['Bollinger_sell','RSI_sell','StochRSI_sell','MACD_sell','sell_votes']);
    family('Indicator values',['RSI','StochRSI_K','MACD','MACD_signal','BB_upper']);
