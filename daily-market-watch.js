@@ -1,7 +1,15 @@
 (() => {
  'use strict';
  const init=()=>{
-  const root=document.getElementById('daily-market-watch'),dataNode=document.getElementById('daily-market-watch-data');if(!root||!dataNode)return;
+  let root=document.getElementById('daily-market-watch');const dataNode=document.getElementById('daily-market-watch-data');if(!root||!dataNode)return;
+  // Upgrade previously published expanded markup without changing its data.
+  if(root.tagName!=='DETAILS'){
+   const disclosure=document.createElement('details');for(const a of root.attributes)disclosure.setAttribute(a.name,a.value);
+   const heading=root.querySelector('.watch-heading'),summary=document.createElement('summary');summary.className='watch-heading';
+   while(heading?.firstChild)summary.append(heading.firstChild);heading?.remove();disclosure.append(summary);
+   while(root.firstChild)disclosure.append(root.firstChild);root.replaceWith(disclosure);root=disclosure;
+  }
+  const summary=root.querySelector(':scope > summary');if(summary){summary.style.display='list-item';summary.style.cursor='pointer'}
   const data=JSON.parse(dataNode.textContent),number=(x,d=2)=>Number.isFinite(x)?x.toLocaleString('en-GB',{minimumFractionDigits:d,maximumFractionDigits:d}):'—';
   const el=(tag,text,cls)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;};
   const stamp=new Date(data.checked_at_UTC).toLocaleString('en-GB',{timeZone:'Europe/Vilnius',dateStyle:'medium',timeStyle:'short'});
