@@ -890,14 +890,14 @@ window.renderSelectedPortfolioSensitivity=function(profile,scope,policy){
   const signed=value=>(value>0?'+':'')+fmt(value);
   const modes={},scopes=new Set(['ALL']),allModes=new Set();
   for(const [model,cases] of Object.entries(data)){
-   modes[model]=Object.entries(cases).filter(([key,b])=>currentHolding(asset,b)>0||b.rows.some(z=>z.asset===asset)||b.future_assets?.includes(asset)).map(([key])=>key);
+   modes[model]=Object.entries(cases).filter(([key,b])=>currentHolding(asset,b)>0||b.rows.some(z=>z.asset===asset&&Number(z.units)>1e-8)||Number(b.future_purchases?.[asset]?.total_maximum)>1e-8||(!b.future_purchases&&b.future_assets?.includes(asset))).map(([key])=>key);
    if(modes[model].length)scopes.add(model);modes[model].forEach(key=>allModes.add(key));
   }
   modes.ANY=modes.ALL=[...allModes];if(allModes.size)scopes.add('ANY');
   profile.dataset.saleMembership=JSON.stringify(modes);profile.dataset.portfolioScopes=[...scopes].join(' ');
   const cases=data[scope]?Object.entries(data[scope]).filter(([key])=>policy==='ALL'||policy===key):[];
   const plans=cases.map(([key,basket])=>{
-   const selected=basket.rows.find(z=>z.asset===asset),target=selected?.units??0,change=Number((target-current).toFixed(3));
+   const selected=basket.rows.find(z=>z.asset===asset),target=selected?.units??0,change=Number((target-current).toFixed(6));
    return {key,target,change,weight:selected?.weight??0,value:selected?.value??0,decision:change>0?'BUY':change<0?'SELL':'HOLD',impact:evaluation(scope,key)?.changes[asset],future:basket.future_purchases?.[asset]};
   });
   const consensus=field=>plans.length&&plans.every(z=>z[field]===plans[0][field])?plans[0][field]:null;
@@ -933,6 +933,12 @@ window.renderSelectedPortfolioSensitivity=function(profile,scope,policy){
   if(plans.length){profile.dataset.signal=[...new Set(plans.map(z=>z.decision))].join(' ');profile.dataset.hasUpdate=String(plans.some(z=>z.change!==0));profile.dataset.netsdEffect=[...new Set(plans.map(z=>effect(z.impact?.delta??diagnostic?.add_delta??0)))].join(' ');}
   else{const changes=Object.values(data).flatMap(cases=>Object.entries(cases).filter(([key])=>policy==='ALL'||policy===key).map(([,b])=>(b.rows.find(z=>z.asset===asset)?.units??0)-currentHolding(asset,b)));profile.dataset.signal=[...new Set(changes.map(v=>v>0?'BUY':v<0?'SELL':'HOLD'))].join(' ');profile.dataset.hasUpdate=String(changes.some(v=>v!==0));if(diagnostic)profile.dataset.netsdEffect=effect(diagnostic.add_delta);}
   summary.textContent=asset+' \u2014 '+(assetInfo[asset]?.name??saved.name??asset)+(plans.length?' | current action: '+[...new Set(plans.map(z=>z.decision))].join(' / ')+' | allocation target '+(target??'\u2014')+' units':'');
+  const laterPlans=plans.filter(p=>Number(p.future?.total_maximum)>1e-8);
+  if(laterPlans.length){
+   const laterText=laterPlans.map(p=>(policy==='ALL'?(p.key==='SALE'?'Sale: ':'No-sale: '):'')+(p.future.stages||[]).filter(s=>Number(s.maximum)>1e-8).map(s=>'stage '+s.stage+' ('+s.date+'): up to '+s.maximum+' units; common '+s.minimum).join('; ')).join(' / ');
+   summary.textContent+=' | Conditional later BUY: '+laterText;
+  }
+  profile.dataset.futurePurchase=String(laterPlans.length>0);
   profileRenderKeys.set(profile,renderKey);
  };
 
