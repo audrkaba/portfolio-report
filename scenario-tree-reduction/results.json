@@ -1,0 +1,2747 @@
+{
+  "experiment": "Scenario tree reduction",
+  "complete": false,
+  "completed_trials": 21,
+  "expected_trials": 78,
+  "scope": {
+    "experiment": "Scenario tree reduction",
+    "context_sha256": "551cbcce7ec391a4c5e299c242b8b64cc3709e55565619a54b985ab460e6ec0d",
+    "manifest_sha256": "7adaf51d1260d9c3703528b477e0cf1034e621158b7c10f859307fe314e2b46e",
+    "baseline_model": "STOCHASTIC2",
+    "policies": [
+      "NO_SALE",
+      "SALE"
+    ],
+    "rounds": 2,
+    "repeats": 3,
+    "branching": [
+      [
+        20,
+        20,
+        20,
+        20
+      ],
+      [
+        20,
+        20,
+        20,
+        10
+      ],
+      [
+        20,
+        20,
+        20,
+        5
+      ],
+      [
+        20,
+        20,
+        20,
+        4
+      ],
+      [
+        20,
+        20,
+        10,
+        4
+      ],
+      [
+        20,
+        20,
+        5,
+        4
+      ],
+      [
+        20,
+        20,
+        4,
+        4
+      ],
+      [
+        20,
+        10,
+        4,
+        4
+      ],
+      [
+        20,
+        5,
+        4,
+        4
+      ],
+      [
+        20,
+        4,
+        4,
+        4
+      ],
+      [
+        10,
+        4,
+        4,
+        4
+      ],
+      [
+        5,
+        4,
+        4,
+        4
+      ],
+      [
+        4,
+        4,
+        4,
+        4
+      ]
+    ],
+    "include_terminal": true,
+    "kind": "experiment",
+    "not_routine_daily_refresh": true,
+    "production_models_unchanged": true,
+    "holdings_scope": "Frozen November16 public model input, not newly reported inventory",
+    "energy_scope": "Gross cumulative CPU-package and GPU-board counters; no socket electricity measurement"
+  },
+  "common_warm_start": "Same previously published policy root/rule for all tree sizes, followed by the same rule family and two coordinate rounds; preliminary unseeded pilot excluded.",
+  "rows": [
+    {
+      "configuration": "20x20x20x20",
+      "branches": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "policy": "NO_SALE",
+      "decision_nodes": 8421,
+      "leaves": 160000,
+      "conceptual_holding_variables": 597891,
+      "time": {
+        "n": 3,
+        "mean": 4.814704099999896,
+        "minimum": 4.803712299995823,
+        "maximum": 4.832194100017659,
+        "std": 0.015312517287644626
+      },
+      "energy": {
+        "n": 0,
+        "mean": null,
+        "minimum": null,
+        "maximum": null,
+        "std": null
+      },
+      "command_intervals": [
+        {
+          "repeat": 0,
+          "includes_full_law_validation": true,
+          "seconds": 9.348149299999932,
+          "component_Wh": 0.2712996763895556
+        },
+        {
+          "repeat": 1,
+          "includes_full_law_validation": false,
+          "seconds": 9.315730300004361,
+          "component_Wh": 0.2710722124996667
+        },
+        {
+          "repeat": 2,
+          "includes_full_law_validation": false,
+          "seconds": 9.294174500013469,
+          "component_Wh": 0.2790402861117778
+        }
+      ],
+      "startup_loading_supervision_overhead_seconds": {
+        "n": 3,
+        "mean": 4.428706400009105,
+        "minimum": 4.31661440001335,
+        "maximum": 4.485968600027263,
+        "std": 0.09708213785128339
+      },
+      "startup_loading_supervision_overhead_Wh": {
+        "n": 0,
+        "mean": null,
+        "minimum": null,
+        "maximum": null,
+        "std": null
+      },
+      "phases": {
+        "tree_reduction": {
+          "time": {
+            "n": 3,
+            "mean": 0.002121866670980429,
+            "minimum": 0.0019813000108115375,
+            "maximum": 0.0024018000112846494,
+            "std": 0.0002424301265280972
+          },
+          "energy": {
+            "n": 0,
+            "mean": null,
+            "minimum": null,
+            "maximum": null,
+            "std": null
+          }
+        },
+        "reduced_reference_preparation": {
+          "time": {
+            "n": 3,
+            "mean": 2.599899799999548,
+            "minimum": 2.5590299000032246,
+            "maximum": 2.644114199996693,
+            "std": 0.04264063539085991
+          },
+          "energy": {
+            "n": 3,
+            "mean": 0.08110840324096297,
+            "minimum": 0.07993503888922222,
+            "maximum": 0.08209559583333333,
+            "std": 0.001092243800704299
+          }
+        },
+        "solver_initialisation": {
+          "time": {
+            "n": 3,
+            "mean": 0.06649343333750342,
+            "minimum": 0.06292369999573566,
+            "maximum": 0.06860130000859499,
+            "std": 0.003108307593953741
+          },
+          "energy": {
+            "n": 1,
+            "mean": 0.002998533333,
+            "minimum": 0.002998533333,
+            "maximum": 0.002998533333,
+            "std": null
+          }
+        },
+        "optimisation": {
+          "time": {
+            "n": 3,
+            "mean": 2.146188999991864,
+            "minimum": 2.0946930999925826,
+            "maximum": 2.1792381999839563,
+            "std": 0.045190475091597196
+          },
+          "energy": {
+            "n": 3,
+            "mean": 0.07782695601807406,
+            "minimum": 0.07578843749966667,
+            "maximum": 0.07966892361044443,
+            "std": 0.0019476953852898293
+          }
+        },
+        "common_full_policy_evaluation": {
+          "time": {
+            "n": 1,
+            "mean": 0.22782259999075904,
+            "minimum": 0.22782259999075904,
+            "maximum": 0.22782259999075904,
+            "std": null
+          },
+          "energy": {
+            "n": 1,
+            "mean": 0.00913424027711111,
+            "minimum": 0.00913424027711111,
+            "maximum": 0.00913424027711111,
+            "std": null
+          }
+        }
+      },
+      "reduced_metrics": {
+        "mean_return": 0.00437460056023773,
+        "SD": 0.019112172282016622,
+        "Sharpe": 0.22889080820781213,
+        "Sortino": 0.349767554189715,
+        "Rachev": 1.0557498628064526,
+        "CVaR95": 0.05068871996286063,
+        "VaR95": 0.03742647212058248,
+        "worst_return": -0.19600385966039013,
+        "loss_probability": 0.2705167753278369,
+        "upper_tail_mean": 0.0535146091466248,
+        "expected_terminal_wealth_EUR": 15065.619008403564,
+        "risk_free_horizon_return": 0.0,
+        "ratios_are_unannualised_four_week": true,
+        "netSD": 0.3026315789473684,
+        "OUT": 53,
+        "IN": 7,
+        "D": 152,
+        "expected_return": 0.00437460056023773,
+        "scenarios": 160000,
+        "probability_mass": 1.0,
+        "OUT_by_order": [
+          5,
+          23,
+          25
+        ],
+        "IN_by_order": [
+          0,
+          3,
+          4
+        ],
+        "penalised_objective": 0.28698006763157674
+      },
+      "full_tree_metrics": {
+        "mean_return": 0.004374600560237729,
+        "SD": 0.019112172282016626,
+        "Sharpe": 0.22889080820781205,
+        "Sortino": 0.34976755418971495,
+        "Rachev": 1.0557498628064528,
+        "CVaR95": 0.05068871996286062,
+        "VaR95": 0.03742647212058248,
+        "worst_return": -0.19600385966039013,
+        "loss_probability": 0.2705167753278369,
+        "upper_tail_mean": 0.0535146091466248,
+        "expected_terminal_wealth_EUR": 15065.619008403564,
+        "risk_free_horizon_return": 0.0,
+        "ratios_are_unannualised_four_week": true,
+        "netSD": 0.3026315789473684,
+        "OUT": 53,
+        "IN": 7,
+        "D": 152,
+        "expected_return": 0.004374600560237729,
+        "scenarios": 160000,
+        "probability_mass": 1.0,
+        "OUT_by_order": [
+          5,
+          23,
+          25
+        ],
+        "IN_by_order": [
+          0,
+          3,
+          4
+        ],
+        "penalised_objective": 0.28698006763157674,
+        "expected_penalty": 0.015651511315791684,
+        "expected_weekly_endpoint_max_drawdown": 0.00624581146708141,
+        "worst_weekly_endpoint_max_drawdown": 0.19600385966039013,
+        "expected_gross_turnover_EUR": 999.9971074254938,
+        "maximum_US_purchase_EUR": 299.99998022549585,
+        "all_full_tree_nodes_feasible": true,
+        "deployment": "Fixed learned root and recourse rule applied to original observed prefixes; no full-tree reoptimisation"
+      },
+      "root_units": [
+        0.0,
+        0.0,
+        200.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        543.0,
+        100.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        928.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        26.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        516.0,
+        150.0,
+        100.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        700.0,
+        0.0,
+        288.0,
+        0.0,
+        330.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        117.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        7.108,
+        0.0,
+        43.588,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        16.968323
+      ],
+      "rule": {
+        "mode": 0,
+        "fraction": 1.0,
+        "signal": 0
+      },
+      "candidate_policy_count": {
+        "n": 3,
+        "mean": 123.0,
+        "minimum": 123.0,
+        "maximum": 123.0,
+        "std": 0.0
+      },
+      "backend": {
+        "selected_backend": "CPU",
+        "workers": 48,
+        "CPU_seconds": 0.016468999994685873,
+        "GPU_seconds": 0.2755718000116758,
+        "GPU_error": null
+      },
+      "gpu_wealth_enabled": true,
+      "deterministic_root_across_repeats": true,
+      "maximum_regime_mass_error": 0.0,
+      "speedup": 1.0,
+      "energy_ratio": null,
+      "initial_half_L1_trade_difference_EUR": 0.0,
+      "initial_changed_assets": 0,
+      "full_tree_netSD_difference": 0.0,
+      "dominated_cost_quality": false
+    },
+    {
+      "configuration": "20x20x20x20",
+      "branches": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "policy": "SALE",
+      "decision_nodes": 8421,
+      "leaves": 160000,
+      "conceptual_holding_variables": 597891,
+      "time": {
+        "n": 3,
+        "mean": 9.604634833318414,
+        "minimum": 9.57243789997301,
+        "maximum": 9.631103499996243,
+        "std": 0.02974933504773857
+      },
+      "energy": {
+        "n": 0,
+        "mean": null,
+        "minimum": null,
+        "maximum": null,
+        "std": null
+      },
+      "command_intervals": [
+        {
+          "repeat": 0,
+          "includes_full_law_validation": true,
+          "seconds": 14.383968300011475,
+          "component_Wh": 0.41994748055588893
+        },
+        {
+          "repeat": 1,
+          "includes_full_law_validation": false,
+          "seconds": 14.402324299997417,
+          "component_Wh": 0.4233031486114444
+        },
+        {
+          "repeat": 2,
+          "includes_full_law_validation": false,
+          "seconds": 14.427200399979483,
+          "component_Wh": 0.419467804166
+        }
+      ],
+      "startup_loading_supervision_overhead_seconds": {
+        "n": 3,
+        "mean": 4.6964937666780315,
+        "minimum": 4.4427576000161935,
+        "maximum": 4.829886400024407,
+        "std": 0.21983880789589275
+      },
+      "startup_loading_supervision_overhead_Wh": {
+        "n": 0,
+        "mean": null,
+        "minimum": null,
+        "maximum": null,
+        "std": null
+      },
+      "phases": {
+        "tree_reduction": {
+          "time": {
+            "n": 3,
+            "mean": 0.0020701333317750445,
+            "minimum": 0.001979699998628348,
+            "maximum": 0.0022369000071194023,
+            "std": 0.00014459614600759096
+          },
+          "energy": {
+            "n": 0,
+            "mean": null,
+            "minimum": null,
+            "maximum": null,
+            "std": null
+          }
+        },
+        "reduced_reference_preparation": {
+          "time": {
+            "n": 3,
+            "mean": 2.5803115333352857,
+            "minimum": 2.5451279999979306,
+            "maximum": 2.606698299990967,
+            "std": 0.03171376338984357
+          },
+          "energy": {
+            "n": 3,
+            "mean": 0.08010500324062962,
+            "minimum": 0.07858884444411111,
+            "maximum": 0.08190521944477777,
+            "std": 0.0016763359580894408
+          }
+        },
+        "solver_initialisation": {
+          "time": {
+            "n": 3,
+            "mean": 0.06476069999431881,
+            "minimum": 0.06436709998524748,
+            "maximum": 0.06497209999361075,
+            "std": 0.00034118013600237175
+          },
+          "energy": {
+            "n": 2,
+            "mean": 0.0025943541668333333,
+            "minimum": 0.0025422125003333336,
+            "maximum": 0.002646495833333333,
+            "std": 7.373945192903435e-05
+          }
+        },
+        "optimisation": {
+          "time": {
+            "n": 3,
+            "mean": 6.957492466657034,
+            "minimum": 6.937060800002655,
+            "maximum": 6.975043399987044,
+            "std": 0.019154462763495222
+          },
+          "energy": {
+            "n": 3,
+            "mean": 0.22882468611077778,
+            "minimum": 0.2258771972218889,
+            "maximum": 0.23259091666666665,
+            "std": 0.0034309270807987395
+          }
+        },
+        "common_full_policy_evaluation": {
+          "time": {
+            "n": 1,
+            "mean": 0.31010719999903813,
+            "minimum": 0.31010719999903813,
+            "maximum": 0.31010719999903813,
+            "std": null
+          },
+          "energy": {
+            "n": 1,
+            "mean": 0.0076584319437777775,
+            "minimum": 0.0076584319437777775,
+            "maximum": 0.0076584319437777775,
+            "std": null
+          }
+        }
+      },
+      "reduced_metrics": {
+        "mean_return": 0.007203857519724046,
+        "SD": 0.01433538001259365,
+        "Sharpe": 0.5025229546336022,
+        "Sortino": 0.8744218544504607,
+        "Rachev": 1.2971960059256202,
+        "CVaR95": 0.033825010400562856,
+        "VaR95": 0.022997619472409858,
+        "worst_return": -0.14480560748320181,
+        "loss_probability": 0.13369243422827815,
+        "upper_tail_mean": 0.0438776683920027,
+        "expected_terminal_wealth_EUR": 15108.05786279586,
+        "risk_free_horizon_return": 0.0,
+        "ratios_are_unannualised_four_week": true,
+        "netSD": 0.4934210526315789,
+        "OUT": 79,
+        "IN": 4,
+        "D": 152,
+        "expected_return": 0.007203857519724046,
+        "scenarios": 160000,
+        "probability_mass": 1.0,
+        "OUT_by_order": [
+          10,
+          33,
+          36
+        ],
+        "IN_by_order": [
+          0,
+          2,
+          2
+        ],
+        "penalised_objective": 0.48271491981406484
+      },
+      "full_tree_metrics": {
+        "mean_return": 0.007203857519724052,
+        "SD": 0.01433538001259365,
+        "Sharpe": 0.5025229546336026,
+        "Sortino": 0.8744218544504614,
+        "Rachev": 1.2971960059256198,
+        "CVaR95": 0.03382501040056286,
+        "VaR95": 0.022997619472409858,
+        "worst_return": -0.14480560748320181,
+        "loss_probability": 0.13369243422827815,
+        "upper_tail_mean": 0.043877668392002696,
+        "expected_terminal_wealth_EUR": 15108.05786279586,
+        "risk_free_horizon_return": 0.0,
+        "ratios_are_unannualised_four_week": true,
+        "netSD": 0.4934210526315789,
+        "OUT": 79,
+        "IN": 4,
+        "D": 152,
+        "expected_return": 0.007203857519724052,
+        "scenarios": 160000,
+        "probability_mass": 1.0,
+        "OUT_by_order": [
+          10,
+          33,
+          36
+        ],
+        "IN_by_order": [
+          0,
+          2,
+          2
+        ],
+        "penalised_objective": 0.48271491981406484,
+        "expected_penalty": 0.010706132817514076,
+        "expected_weekly_endpoint_max_drawdown": 0.0038778304437986216,
+        "worst_weekly_endpoint_max_drawdown": 0.14480560748320181,
+        "expected_gross_turnover_EUR": 7511.658624926627,
+        "maximum_US_purchase_EUR": 0.0,
+        "all_full_tree_nodes_feasible": true,
+        "deployment": "Fixed learned root and recourse rule applied to original observed prefixes; no full-tree reoptimisation"
+      },
+      "root_units": [
+        0.0,
+        0.0,
+        200.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        100.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        928.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        26.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        150.0,
+        100.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        149.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        7.108,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        25.745,
+        0.0,
+        0.0,
+        5.491688
+      ],
+      "rule": {
+        "mode": 3,
+        "fraction": 0.5,
+        "signal": 3
+      },
+      "candidate_policy_count": {
+        "n": 3,
+        "mean": 327.0,
+        "minimum": 327.0,
+        "maximum": 327.0,
+        "std": 0.0
+      },
+      "backend": {
+        "selected_backend": "CPU",
+        "workers": 48,
+        "CPU_seconds": 0.016828699997859076,
+        "GPU_seconds": 0.29674079999676906,
+        "GPU_error": null
+      },
+      "gpu_wealth_enabled": true,
+      "deterministic_root_across_repeats": true,
+      "maximum_regime_mass_error": 0.0,
+      "speedup": 1.0,
+      "energy_ratio": null,
+      "initial_half_L1_trade_difference_EUR": 0.0,
+      "initial_changed_assets": 0,
+      "full_tree_netSD_difference": 0.0,
+      "dominated_cost_quality": false
+    },
+    {
+      "configuration": "20x20x20x10",
+      "branches": [
+        20,
+        20,
+        20,
+        10
+      ],
+      "policy": "NO_SALE",
+      "decision_nodes": 8421,
+      "leaves": 80000,
+      "conceptual_holding_variables": 597891,
+      "time": {
+        "n": 3,
+        "mean": 4.967391466663685,
+        "minimum": 4.837645399995381,
+        "maximum": 5.19405769999139,
+        "std": 0.19698368187765186
+      },
+      "energy": {
+        "n": 1,
+        "mean": 0.14982296388922223,
+        "minimum": 0.14982296388922223,
+        "maximum": 0.14982296388922223,
+        "std": null
+      },
+      "command_intervals": [
+        {
+          "repeat": 0,
+          "includes_full_law_validation": true,
+          "seconds": 11.38096380000934,
+          "component_Wh": 0.3405183652781111
+        },
+        {
+          "repeat": 1,
+          "includes_full_law_validation": false,
+          "seconds": 9.300571600004332,
+          "component_Wh": 0.27224286111144447
+        },
+        {
+          "repeat": 2,
+          "includes_full_law_validation": false,
+          "seconds": 9.326528200006578,
+          "component_Wh": 0.2646792583336667
+        }
+      ],
+      "startup_loading_supervision_overhead_seconds": {
+        "n": 3,
+        "mean": 4.410653133343051,
+        "minimum": 4.132470500015188,
+        "maximum": 4.636562700005015,
+        "std": 0.2560792682874567
+      },
+      "startup_loading_supervision_overhead_Wh": {
+        "n": 1,
+        "mean": 0.11575391805488885,
+        "minimum": 0.11575391805488885,
+        "maximum": 0.11575391805488885,
+        "std": null
+      },
+      "phases": {
+        "tree_reduction": {
+          "time": {
+            "n": 3,
+            "mean": 0.8274938333294509,
+            "minimum": 0.8237070000031963,
+            "maximum": 0.830045999988215,
+            "std": 0.0033450009771861244
+          },
+          "energy": {
+            "n": 3,
+            "mean": 0.018730942129740743,
+            "minimum": 0.018303395833000002,
+            "maximum": 0.01898433750033333,
+            "std": 0.00037237991001981644
+          }
+        },
+        "reduced_reference_preparation": {
+          "time": {
+            "n": 3,
+            "mean": 2.0440588666727613,
+            "minimum": 2.0074900000181515,
+            "maximum": 2.0663861999928486,
+            "std": 0.03192658056625556
+          },
+          "energy": {
+            "n": 3,
+            "mean": 0.06232859398148149,
+            "minimum": 0.06094670000033334,
+            "maximum": 0.063347283333,
+            "std": 0.001240821617521048
+          }
+        },
+        "solver_initialisation": {
+          "time": {
+            "n": 3,
+            "mean": 0.0568810999878527,
+            "minimum": 0.05456789999152534,
+            "maximum": 0.05820319999475032,
+            "std": 0.0020101146534831317
+          },
+          "energy": {
+            "n": 1,
+            "mean": 0.0026359763892222225,
+            "minimum": 0.0026359763892222225,
+            "maximum": 0.0026359763892222225,
+            "std": null
+          }
+        },
+        "optimisation": {
+          "time": {
+            "n": 3,
+            "mean": 2.0389576666736198,
+            "minimum": 1.9239217000140343,
+            "maximum": 2.246092300018063,
+            "std": 0.17975009646891782
+          },
+          "energy": {
+            "n": 3,
+            "mean": 0.07052718888877778,
+            "minimum": 0.06619179305588889,
+            "maximum": 0.07753340138855555,
+            "std": 0.006124374755352753
+          }
+        },
+        "common_full_reference_preparation": {
+          "time": {
+            "n": 1,
+            "mean": 1.7210813999990933,
+            "minimum": 1.7210813999990933,
+            "maximum": 1.7210813999990933,
+            "std": null
+          },
+          "energy": {
+            "n": 1,
+            "mean": 0.06888946805622223,
+            "minimum": 0.06888946805622223,
+            "maximum": 0.06888946805622223,
+            "std": null
+          }
+        },
+        "common_full_policy_evaluation": {
+          "time": {
+            "n": 1,
+            "mean": 0.15284840000094846,
+            "minimum": 0.15284840000094846,
+            "maximum": 0.15284840000094846,
+            "std": null
+          },
+          "energy": {
+            "n": 1,
+            "mean": 0.006052015277777778,
+            "minimum": 0.006052015277777778,
+            "maximum": 0.006052015277777778,
+            "std": null
+          }
+        }
+      },
+      "reduced_metrics": {
+        "mean_return": 0.0043184263833790665,
+        "SD": 0.017861678023358262,
+        "Sharpe": 0.24177047518893402,
+        "Sortino": 0.3633598100202061,
+        "Rachev": 0.9500156780699723,
+        "CVaR95": 0.04938850047547292,
+        "VaR95": 0.03460492997745901,
+        "worst_return": -0.19600385966039013,
+        "loss_probability": 0.2552659159751206,
+        "upper_tail_mean": 0.046919849768065555,
+        "expected_terminal_wealth_EUR": 15064.776395750687,
+        "risk_free_horizon_return": 0.0,
+        "ratios_are_unannualised_four_week": true,
+        "netSD": 0.30128205128205127,
+        "OUT": 54,
+        "IN": 7,
+        "D": 156,
+        "expected_return": 0.0043184263833790665,
+        "scenarios": 80000,
+        "probability_mass": 1.0,
+        "OUT_by_order": [
+          5,
+          24,
+          25
+        ],
+        "IN_by_order": [
+          0,
+          3,
+          4
+        ],
+        "penalised_objective": 0.2856305399662596
+      },
+      "full_tree_metrics": {
+        "mean_return": 0.004374600560237729,
+        "SD": 0.019112172282016626,
+        "Sharpe": 0.22889080820781205,
+        "Sortino": 0.34976755418971495,
+        "Rachev": 1.0557498628064528,
+        "CVaR95": 0.05068871996286062,
+        "VaR95": 0.03742647212058248,
+        "worst_return": -0.19600385966039013,
+        "loss_probability": 0.2705167753278369,
+        "upper_tail_mean": 0.0535146091466248,
+        "expected_terminal_wealth_EUR": 15065.619008403564,
+        "risk_free_horizon_return": 0.0,
+        "ratios_are_unannualised_four_week": true,
+        "netSD": 0.3026315789473684,
+        "OUT": 53,
+        "IN": 7,
+        "D": 152,
+        "expected_return": 0.004374600560237729,
+        "scenarios": 160000,
+        "probability_mass": 1.0,
+        "OUT_by_order": [
+          5,
+          23,
+          25
+        ],
+        "IN_by_order": [
+          0,
+          3,
+          4
+        ],
+        "penalised_objective": 0.28698006763157674,
+        "expected_penalty": 0.015651511315791684,
+        "expected_weekly_endpoint_max_drawdown": 0.00624581146708141,
+        "worst_weekly_endpoint_max_drawdown": 0.19600385966039013,
+        "expected_gross_turnover_EUR": 999.9971074254938,
+        "maximum_US_purchase_EUR": 299.99998022549585,
+        "all_full_tree_nodes_feasible": true,
+        "deployment": "Fixed learned root and recourse rule applied to original observed prefixes; no full-tree reoptimisation"
+      },
+      "root_units": [
+        0.0,
+        0.0,
+        200.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        543.0,
+        100.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        928.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        26.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        516.0,
+        150.0,
+        100.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        700.0,
+        0.0,
+        288.0,
+        0.0,
+        330.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        117.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        7.108,
+        0.0,
+        43.588,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        16.968323
+      ],
+      "rule": {
+        "mode": 0,
+        "fraction": 1.0,
+        "signal": 0
+      },
+      "candidate_policy_count": {
+        "n": 3,
+        "mean": 123.0,
+        "minimum": 123.0,
+        "maximum": 123.0,
+        "std": 0.0
+      },
+      "backend": {
+        "selected_backend": "CPU",
+        "workers": 48,
+        "CPU_seconds": 0.008812799991574138,
+        "GPU_seconds": 0.2990371999912895,
+        "GPU_error": null
+      },
+      "gpu_wealth_enabled": true,
+      "deterministic_root_across_repeats": true,
+      "maximum_regime_mass_error": 4.440892098500626e-16,
+      "speedup": 0.969262062857643,
+      "energy_ratio": null,
+      "initial_half_L1_trade_difference_EUR": 0.0,
+      "initial_changed_assets": 0,
+      "full_tree_netSD_difference": 0.0,
+      "dominated_cost_quality": true
+    },
+    {
+      "configuration": "20x20x20x10",
+      "branches": [
+        20,
+        20,
+        20,
+        10
+      ],
+      "policy": "SALE",
+      "decision_nodes": 8421,
+      "leaves": 80000,
+      "conceptual_holding_variables": 597891,
+      "time": {
+        "n": 3,
+        "mean": 17.558195466680143,
+        "minimum": 17.508124200016027,
+        "maximum": 17.62891640001908,
+        "std": 0.06298805796125416
+      },
+      "energy": {
+        "n": 2,
+        "mean": 0.48870167499916667,
+        "minimum": 0.4879209430542222,
+        "maximum": 0.48948240694411116,
+        "std": 0.001104121705118423
+      },
+      "command_intervals": [
+        {
+          "repeat": 0,
+          "includes_full_law_validation": true,
+          "seconds": 24.55577030000859,
+          "component_Wh": 0.6919645708333333
+        },
+        {
+          "repeat": 1,
+          "includes_full_law_validation": false,
+          "seconds": 22.48544150000089,
+          "component_Wh": 0.6086059138885556
+        },
+        {
+          "repeat": 2,
+          "includes_full_law_validation": false,
+          "seconds": 22.523957400000654,
+          "component_Wh": 0.6006236124996667
+        }
+      ],
+      "startup_loading_supervision_overhead_seconds": {
+        "n": 3,
+        "mean": 4.917101399992437,
+        "minimum": 4.895040999981575,
+        "maximum": 4.94789569999557,
+        "std": 0.027488462765287235
+      },
+      "startup_loading_supervision_overhead_Wh": {
+        "n": 2,
+        "mean": 0.12269431805605552,
+        "minimum": 0.11114120555555551,
+        "maximum": 0.13424743055655552,
+        "std": 0.01633856838582925
+      },
+      "phases": {
+        "tree_reduction": {
+          "time": {
+            "n": 3,
+            "mean": 0.8283391333340356,
+            "minimum": 0.8249956999788992,
+            "maximum": 0.8304683000023942,
+            "std": 0.0029314109988627293
+          },
+          "energy": {
+            "n": 3,
+            "mean": 0.018395401388777776,
+            "minimum": 0.017833797221888888,
+            "maximum": 0.018919365277777777,
+            "std": 0.0005437619827472864
+          }
+        },
+        "reduced_reference_preparation": {
+          "time": {
+            "n": 3,
+            "mean": 2.0900974000008623,
+            "minimum": 2.0464928000001237,
+            "maximum": 2.1740452999947593,
+            "std": 0.0727192990510351
+          },
+          "energy": {
+            "n": 3,
+            "mean": 0.06316257037003704,
+            "minimum": 0.061440079166,
+            "maximum": 0.0651558055558889,
+            "std": 0.0018726004322588167
+          }
+        },
+        "solver_initialisation": {
+          "time": {
+            "n": 3,
+            "mean": 0.05736613333768522,
+            "minimum": 0.05403570001362823,
+            "maximum": 0.06046559999231249,
+            "std": 0.003221166347111176
+          },
+          "energy": {
+            "n": 2,
+            "mean": 0.0025528694437777777,
+            "minimum": 0.0025292236104444443,
+            "maximum": 0.002576515277111111,
+            "std": 3.344025819361393e-05
+          }
+        },
+        "optimisation": {
+          "time": {
+            "n": 3,
+            "mean": 14.58239280000756,
+            "minimum": 14.570367100008298,
+            "maximum": 14.601033999992069,
+            "std": 0.01636882154263949
+          },
+          "energy": {
+            "n": 3,
+            "mean": 0.40423499398137036,
+            "minimum": 0.40287801250000005,
+            "maximum": 0.4054713069444444,
+            "std": 0.0013008515239554973
+          }
+        },
+        "common_full_reference_preparation": {
+          "time": {
+            "n": 1,
+            "mean": 1.8434280999936163,
+            "minimum": 1.8434280999936163,
+            "maximum": 1.8434280999936163,
+            "std": null
+          },
+          "energy": {
+            "n": 1,
+            "mean": 0.05982090277777778,
+            "minimum": 0.05982090277777778,
+            "maximum": 0.05982090277777778,
+            "std": null
+          }
+        },
+        "common_full_policy_evaluation": {
+          "time": {
+            "n": 1,
+            "mean": 0.2958504999987781,
+            "minimum": 0.2958504999987781,
+            "maximum": 0.2958504999987781,
+            "std": null
+          },
+          "energy": {
+            "n": 1,
+            "mean": 0.009975294444777778,
+            "minimum": 0.009975294444777778,
+            "maximum": 0.009975294444777778,
+            "std": null
+          }
+        }
+      },
+      "reduced_metrics": {
+        "mean_return": 0.0077132816740069984,
+        "SD": 0.013757490376696404,
+        "Sharpe": 0.560660517493249,
+        "Sortino": 0.9813529070874624,
+        "Rachev": 1.2286201778907666,
+        "CVaR95": 0.032472409478989016,
+        "VaR95": 0.018569648035598907,
+        "worst_return": -0.14908805612183573,
+        "loss_probability": 0.13442072236447622,
+        "upper_tail_mean": 0.0398962575106173,
+        "expected_terminal_wealth_EUR": 15115.699225110106,
+        "risk_free_horizon_return": 0.0,
+        "ratios_are_unannualised_four_week": true,
+        "netSD": 0.4935897435897436,
+        "OUT": 81,
+        "IN": 4,
+        "D": 156,
+        "expected_return": 0.0077132816740069984,
+        "scenarios": 80000,
+        "probability_mass": 1.0,
+        "OUT_by_order": [
+          11,
+          34,
+          36
+        ],
+        "IN_by_order": [
+          0,
+          2,
+          2
+        ],
+        "penalised_objective": 0.48235229329144785
+      },
+      "full_tree_metrics": {
+        "mean_return": 0.007782616353810251,
+        "SD": 0.015017131305138747,
+        "Sharpe": 0.5182492045699234,
+        "Sortino": 0.9245693968610637,
+        "Rachev": 1.3367007869398144,
+        "CVaR95": 0.03449084411414087,
+        "VaR95": 0.02188443830947695,
+        "worst_return": -0.14908805612183573,
+        "loss_probability": 0.14806338021844576,
+        "upper_tail_mean": 0.046103938469590565,
+        "expected_terminal_wealth_EUR": 15116.739245307153,
+        "risk_free_horizon_return": 0.0,
+        "ratios_are_unannualised_four_week": true,
+        "netSD": 0.506578947368421,
+        "OUT": 79,
+        "IN": 2,
+        "D": 152,
+        "expected_return": 0.007782616353810251,
+        "scenarios": 160000,
+        "probability_mass": 1.0,
+        "OUT_by_order": [
+          11,
+          33,
+          35
+        ],
+        "IN_by_order": [
+          0,
+          1,
+          1
+        ],
+        "penalised_objective": 0.49534149707012526,
+        "expected_penalty": 0.011237450298295738,
+        "expected_weekly_endpoint_max_drawdown": 0.004279025849145684,
+        "worst_weekly_endpoint_max_drawdown": 0.14908805612183573,
+        "expected_gross_turnover_EUR": 9676.946844814425,
+        "maximum_US_purchase_EUR": 169.10881741341578,
+        "all_full_tree_nodes_feasible": true,
+        "deployment": "Fixed learned root and recourse rule applied to original observed prefixes; no full-tree reoptimisation"
+      },
+      "root_units": [
+        0.0,
+        0.0,
+        200.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        928.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        26.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        100.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        149.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        7.108,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        25.745,
+        0.0,
+        0.0,
+        5.491688
+      ],
+      "rule": {
+        "mode": 3,
+        "fraction": 1.0,
+        "signal": 2
+      },
+      "candidate_policy_count": {
+        "n": 3,
+        "mean": 639.0,
+        "minimum": 639.0,
+        "maximum": 639.0,
+        "std": 0.0
+      },
+      "backend": {
+        "selected_backend": "CPU",
+        "workers": 48,
+        "CPU_seconds": 0.00881550001213327,
+        "GPU_seconds": 0.3029620999877807,
+        "GPU_error": null
+      },
+      "gpu_wealth_enabled": true,
+      "deterministic_root_across_repeats": true,
+      "maximum_regime_mass_error": 4.440892098500626e-16,
+      "speedup": 0.5470171949927854,
+      "energy_ratio": null,
+      "initial_half_L1_trade_difference_EUR": 449.0,
+      "initial_changed_assets": 2,
+      "full_tree_netSD_difference": 0.01315789473684209,
+      "dominated_cost_quality": false
+    },
+    {
+      "configuration": "20x20x20x5",
+      "branches": [
+        20,
+        20,
+        20,
+        5
+      ],
+      "policy": "NO_SALE",
+      "decision_nodes": 8421,
+      "leaves": 40000,
+      "conceptual_holding_variables": 597891,
+      "time": {
+        "n": 3,
+        "mean": 4.7546653666649945,
+        "minimum": 4.63070459998562,
+        "maximum": 4.9858299999905284,
+        "std": 0.20036969381639833
+      },
+      "energy": {
+        "n": 1,
+        "mean": 0.13893335277644445,
+        "minimum": 0.13893335277644445,
+        "maximum": 0.13893335277644445,
+        "std": null
+      },
+      "command_intervals": [
+        {
+          "repeat": 0,
+          "includes_full_law_validation": true,
+          "seconds": 11.447486199991545,
+          "component_Wh": 0.34778896944444443
+        },
+        {
+          "repeat": 1,
+          "includes_full_law_validation": false,
+          "seconds": 9.331267100002151,
+          "component_Wh": 0.27123046527844447
+        },
+        {
+          "repeat": 2,
+          "includes_full_law_validation": false,
+          "seconds": 9.316354700014926,
+          "component_Wh": 0.2652197625
+        }
+      ],
+      "startup_loading_supervision_overhead_seconds": {
+        "n": 3,
+        "mean": 4.6126931666707,
+        "minimum": 4.330524700024398,
+        "maximum": 4.823749200004386,
+        "std": 0.25418563191860033
+      },
+      "startup_loading_supervision_overhead_Wh": {
+        "n": 1,
+        "mean": 0.12940347083466666,
+        "minimum": 0.12940347083466666,
+        "maximum": 0.12940347083466666,
+        "std": null
+      },
+      "phases": {
+        "tree_reduction": {
+          "time": {
+            "n": 3,
+            "mean": 0.7808005999928961,
+            "minimum": 0.7768004999961704,
+            "maximum": 0.7833672999986447,
+            "std": 0.0035102268044563873
+          },
+          "energy": {
+            "n": 3,
+            "mean": 0.01755465972244444,
+            "minimum": 0.016999368055555554,
+            "maximum": 0.01797130694477778,
+            "std": 0.0005005826730922899
+          }
+        },
+        "reduced_reference_preparation": {
+          "time": {
+            "n": 3,
+            "mean": 1.9318603666712686,
+            "minimum": 1.8634521000203677,
+            "maximum": 1.9751238000171725,
+            "std": 0.05993195413547064
+          },
+          "energy": {
+            "n": 3,
+            "mean": 0.058279029629185186,
+            "minimum": 0.057795177777111115,
+            "maximum": 0.058704822221555555,
+            "std": 0.0004575930638188971
+          }
+        },
+        "solver_initialisation": {
+          "time": {
+            "n": 3,
+            "mean": 0.05146409999967242,
+            "minimum": 0.04880530000082217,
+            "maximum": 0.05582519999006763,
+            "std": 0.003806982783079347
+          },
+          "energy": {
+            "n": 1,
+            "mean": 0.002408161111111111,
+            "minimum": 0.002408161111111111,
+            "maximum": 0.002408161111111111,
+            "std": null
+          }
+        },
+        "optimisation": {
+          "time": {
+            "n": 3,
+            "mean": 1.9905403000011574,
+            "minimum": 1.8412984000169672,
+            "maximum": 2.2831853999814484,
+            "std": 0.2534549042951105
+          },
+          "energy": {
+            "n": 3,
+            "mean": 0.06701975648137037,
+            "minimum": 0.06073270972222222,
+            "maximum": 0.07859591388922223,
+            "std": 0.01003765582039227
+          }
+        },
+        "common_full_reference_preparation": {
+          "time": {
+            "n": 1,
+            "mean": 1.8387822000076994,
+            "minimum": 1.8387822000076994,
+            "maximum": 1.8387822000076994,
+            "std": null
+          },
+          "energy": {
+            "n": 1,
+            "mean": 0.07506219166666667,
+            "minimum": 0.07506219166666667,
+            "maximum": 0.07506219166666667,
+            "std": null
+          }
+        },
+        "common_full_policy_evaluation": {
+          "time": {
+            "n": 1,
+            "mean": 0.1542501999938395,
+            "minimum": 0.1542501999938395,
+            "maximum": 0.1542501999938395,
+            "std": null
+          },
+          "energy": {
+            "n": 1,
+            "mean": 0.004389954166666666,
+            "minimum": 0.004389954166666666,
+            "maximum": 0.004389954166666666,
+            "std": null
+          }
+        }
+      },
+      "reduced_metrics": {
+        "mean_return": 0.005244209743565974,
+        "SD": 0.01669985874446594,
+        "Sharpe": 0.3140271917152484,
+        "Sortino": 0.5009376106655105,
+        "Rachev": 1.0397634227888615,
+        "CVaR95": 0.04481671038082058,
+        "VaR95": 0.02716670483027861,
+        "worst_return": -0.14994476274468793,
+        "loss_probability": 0.21175345304544618,
+        "upper_tail_mean": 0.046598776183699106,
+        "expected_terminal_wealth_EUR": 15078.663146153489,
+        "risk_free_horizon_return": 0.0,
+        "ratios_are_unannualised_four_week": true,
+        "netSD": 0.31125827814569534,
+        "OUT": 55,
+        "IN": 8,
+        "D": 151,
+        "expected_return": 0.005244209743565974,
+        "scenarios": 40000,
+        "probability_mass": 1.0,
+        "OUT_by_order": [
+          4,
+          25,
+          26
+        ],
+        "IN_by_order": [
+          0,
+          4,
+          4
+        ],
+        "penalised_objective": 0.29560676682990367
+      },
+      "full_tree_metrics": {
+        "mean_return": 0.004374600560237729,
+        "SD": 0.019112172282016626,
+        "Sharpe": 0.22889080820781205,
+        "Sortino": 0.34976755418971495,
+        "Rachev": 1.0557498628064528,
+        "CVaR95": 0.05068871996286062,
+        "VaR95": 0.03742647212058248,
+        "worst_return": -0.19600385966039013,
+        "loss_probability": 0.2705167753278369,
+        "upper_tail_mean": 0.0535146091466248,
+        "expected_terminal_wealth_EUR": 15065.619008403564,
+        "risk_free_horizon_return": 0.0,
+        "ratios_are_unannualised_four_week": true,
+        "netSD": 0.3026315789473684,
+        "OUT": 53,
+        "IN": 7,
+        "D": 152,
+        "expected_return": 0.004374600560237729,
+        "scenarios": 160000,
+        "probability_mass": 1.0,
+        "OUT_by_order": [
+          5,
+          23,
+          25
+        ],
+        "IN_by_order": [
+          0,
+          3,
+          4
+        ],
+        "penalised_objective": 0.28698006763157674,
+        "expected_penalty": 0.015651511315791684,
+        "expected_weekly_endpoint_max_drawdown": 0.00624581146708141,
+        "worst_weekly_endpoint_max_drawdown": 0.19600385966039013,
+        "expected_gross_turnover_EUR": 999.9971074254938,
+        "maximum_US_purchase_EUR": 299.99998022549585,
+        "all_full_tree_nodes_feasible": true,
+        "deployment": "Fixed learned root and recourse rule applied to original observed prefixes; no full-tree reoptimisation"
+      },
+      "root_units": [
+        0.0,
+        0.0,
+        200.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        543.0,
+        100.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        928.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        26.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        516.0,
+        150.0,
+        100.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        700.0,
+        0.0,
+        288.0,
+        0.0,
+        330.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        117.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        7.108,
+        0.0,
+        43.588,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        16.968323
+      ],
+      "rule": {
+        "mode": 0,
+        "fraction": 1.0,
+        "signal": 0
+      },
+      "candidate_policy_count": {
+        "n": 3,
+        "mean": 123.0,
+        "minimum": 123.0,
+        "maximum": 123.0,
+        "std": 0.0
+      },
+      "backend": {
+        "selected_backend": "CPU",
+        "workers": 48,
+        "CPU_seconds": 0.005269099987344816,
+        "GPU_seconds": 0.34465660000569187,
+        "GPU_error": null
+      },
+      "gpu_wealth_enabled": true,
+      "deterministic_root_across_repeats": true,
+      "maximum_regime_mass_error": 4.440892098500626e-16,
+      "speedup": 1.012627330990701,
+      "energy_ratio": null,
+      "initial_half_L1_trade_difference_EUR": 0.0,
+      "initial_changed_assets": 0,
+      "full_tree_netSD_difference": 0.0,
+      "dominated_cost_quality": true
+    },
+    {
+      "configuration": "20x20x20x5",
+      "branches": [
+        20,
+        20,
+        20,
+        5
+      ],
+      "policy": "SALE",
+      "decision_nodes": 8421,
+      "leaves": 40000,
+      "conceptual_holding_variables": 597891,
+      "time": {
+        "n": 3,
+        "mean": 15.347596966651812,
+        "minimum": 15.04613539998536,
+        "maximum": 15.812638699979289,
+        "std": 0.4085959867877219
+      },
+      "energy": {
+        "n": 2,
+        "mean": 0.4194011326388889,
+        "minimum": 0.41811015416666664,
+        "maximum": 0.42069211111111116,
+        "std": 0.0018257192641484173
+      },
+      "command_intervals": [
+        {
+          "repeat": 0,
+          "includes_full_law_validation": true,
+          "seconds": 21.49939209999866,
+          "component_Wh": 0.6003125236107778
+        },
+        {
+          "repeat": 1,
+          "includes_full_law_validation": false,
+          "seconds": 20.45856269999058,
+          "component_Wh": 0.5566463152777777
+        },
+        {
+          "repeat": 2,
+          "includes_full_law_validation": false,
+          "seconds": 19.42974220000906,
+          "component_Wh": 0.5154577166669999
+        }
+      ],
+      "startup_loading_supervision_overhead_seconds": {
+        "n": 3,
+        "mean": 4.424952800017006,
+        "minimum": 4.245725400018273,
+        "maximum": 4.645924000011291,
+        "std": 0.20333872844995507
+      },
+      "startup_loading_supervision_overhead_Wh": {
+        "n": 2,
+        "mean": 0.1032711215279444,
+        "minimum": 0.09476560555588875,
+        "maximum": 0.11177663750000005,
+        "std": 0.01202861604266208
+      },
+      "phases": {
+        "tree_reduction": {
+          "time": {
+            "n": 3,
+            "mean": 0.7747751999995671,
+            "minimum": 0.7740457000036258,
+            "maximum": 0.7759336000017356,
+            "std": 0.0010144003214816132
+          },
+          "energy": {
+            "n": 3,
+            "mean": 0.016607051851518517,
+            "minimum": 0.016519245833,
+            "maximum": 0.016743516665999998,
+            "std": 0.0001197919465241807
+          }
+        },
+        "reduced_reference_preparation": {
+          "time": {
+            "n": 3,
+            "mean": 1.9156987000023946,
+            "minimum": 1.8824716999952216,
+            "maximum": 1.9793691000086255,
+            "std": 0.055157746373164875
+          },
+          "energy": {
+            "n": 3,
+            "mean": 0.05625027314825926,
+            "minimum": 0.05490023194444445,
+            "maximum": 0.05821840416633333,
+            "std": 0.001743299454309854
+          }
+        },
+        "solver_initialisation": {
+          "time": {
+            "n": 3,
+            "mean": 0.05458796665576907,
+            "minimum": 0.05229009999311529,
+            "maximum": 0.05774729998665862,
+            "std": 0.0028287544180687083
+          },
+          "energy": {
+            "n": 2,
+            "mean": 0.002482905555555555,
+            "minimum": 0.0023954041666666664,
+            "maximum": 0.0025704069444444444,
+            "std": 0.00012374565089314928
+          }
+        },
+        "optimisation": {
+          "time": {
+            "n": 3,
+            "mean": 12.60253509999408,
+            "minimum": 12.33280730000115,
+            "maximum": 13.098373999993782,
+            "std": 0.4299625160337891
+          },
+          "energy": {
+            "n": 3,
+            "mean": 0.3524359615742963,
+            "minimum": 0.3433449069447778,
+            "maximum": 0.3696677055555555,
+            "std": 0.014930691511683209
+          }
+        },
+        "common_full_reference_preparation": {
+          "time": {
+            "n": 1,
+            "mean": 1.7779507999948692,
+            "minimum": 1.7779507999948692,
+            "maximum": 1.7779507999948692,
+            "std": null
+          },
+          "energy": {
+            "n": 1,
+            "mean": 0.06019863194411111,
+            "minimum": 0.06019863194411111,
+            "maximum": 0.06019863194411111,
+            "std": null
+          }
+        },
+        "common_full_policy_evaluation": {
+          "time": {
+            "n": 1,
+            "mean": 0.2920968999969773,
+            "minimum": 0.2920968999969773,
+            "maximum": 0.2920968999969773,
+            "std": null
+          },
+          "energy": {
+            "n": 1,
+            "mean": 0.0102271,
+            "minimum": 0.0102271,
+            "maximum": 0.0102271,
+            "std": null
+          }
+        }
+      },
+      "reduced_metrics": {
+        "mean_return": 0.007884155283581974,
+        "SD": 0.013550860073481776,
+        "Sharpe": 0.5818195480455736,
+        "Sortino": 1.0468862108106614,
+        "Rachev": 1.2883500035863427,
+        "CVaR95": 0.032213728572269826,
+        "VaR95": 0.017549574226096598,
+        "worst_return": -0.11815425605054797,
+        "loss_probability": 0.09657230457094135,
+        "upper_tail_mean": 0.0415025573216133,
+        "expected_terminal_wealth_EUR": 15118.26232925373,
+        "risk_free_horizon_return": 0.0,
+        "ratios_are_unannualised_four_week": true,
+        "netSD": 0.4966887417218543,
+        "OUT": 79,
+        "IN": 4,
+        "D": 151,
+        "expected_return": 0.007884155283581974,
+        "scenarios": 40000,
+        "probability_mass": 1.0,
+        "OUT_by_order": [
+          11,
+          34,
+          34
+        ],
+        "IN_by_order": [
+          0,
+          2,
+          2
+        ],
+        "penalised_objective": 0.4841665452153903
+      },
+      "full_tree_metrics": {
+        "mean_return": 0.007114850865074896,
+        "SD": 0.01597486568585069,
+        "Sharpe": 0.4453778206959627,
+        "Sortino": 0.7536659460400532,
+        "Rachev": 1.2454935843971588,
+        "CVaR95": 0.0387271658659712,
+        "VaR95": 0.02644176405834564,
+        "worst_return": -0.16114798590265755,
+        "loss_probability": 0.15079974903120189,
+        "upper_tail_mean": 0.048234436627951766,
+        "expected_terminal_wealth_EUR": 15106.722762976124,
+        "risk_free_horizon_return": 0.0,
+        "ratios_are_unannualised_four_week": true,
+        "netSD": 0.46710526315789475,
+        "OUT": 75,
+        "IN": 4,
+        "D": 152,
+        "expected_return": 0.007114850865074896,
+        "scenarios": 160000,
+        "probability_mass": 1.0,
+        "OUT_by_order": [
+          10,
+          31,
+          34
+        ],
+        "IN_by_order": [
+          0,
+          2,
+          2
+        ],
+        "penalised_objective": 0.45458306665143083,
+        "expected_penalty": 0.012522196506463934,
+        "expected_weekly_endpoint_max_drawdown": 0.004506650817819982,
+        "worst_weekly_endpoint_max_drawdown": 0.16114798590265755,
+        "expected_gross_turnover_EUR": 6551.282203562853,
+        "maximum_US_purchase_EUR": 420.3552395443055,
+        "all_full_tree_nodes_feasible": true,
+        "deployment": "Fixed learned root and recourse rule applied to original observed prefixes; no full-tree reoptimisation"
+      },
+      "root_units": [
+        0.0,
+        0.0,
+        200.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        100.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        928.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        26.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        363.0,
+        150.0,
+        100.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        149.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        7.108,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        25.745,
+        0.0,
+        0.0,
+        5.491688
+      ],
+      "rule": {
+        "mode": 1,
+        "fraction": 0.5,
+        "signal": 0
+      },
+      "candidate_policy_count": {
+        "n": 3,
+        "mean": 646.0,
+        "minimum": 646.0,
+        "maximum": 646.0,
+        "std": 0.0
+      },
+      "backend": {
+        "selected_backend": "CPU",
+        "workers": 48,
+        "CPU_seconds": 0.004965300002368167,
+        "GPU_seconds": 0.2984495999990031,
+        "GPU_error": null
+      },
+      "gpu_wealth_enabled": true,
+      "deterministic_root_across_repeats": true,
+      "maximum_regime_mass_error": 4.440892098500626e-16,
+      "speedup": 0.6258070793876036,
+      "energy_ratio": null,
+      "initial_half_L1_trade_difference_EUR": 149.91899999999998,
+      "initial_changed_assets": 1,
+      "full_tree_netSD_difference": -0.02631578947368418,
+      "dominated_cost_quality": false
+    },
+    {
+      "configuration": "20x20x20x4",
+      "branches": [
+        20,
+        20,
+        20,
+        4
+      ],
+      "policy": "NO_SALE",
+      "decision_nodes": 8421,
+      "leaves": 32000,
+      "conceptual_holding_variables": 597891,
+      "time": {
+        "n": 3,
+        "mean": 4.736925133339052,
+        "minimum": 4.478808800020488,
+        "maximum": 4.9216477000154555,
+        "std": 0.23036179495226872
+      },
+      "energy": {
+        "n": 1,
+        "mean": 0.13485285416466666,
+        "minimum": 0.13485285416466666,
+        "maximum": 0.13485285416466666,
+        "std": null
+      },
+      "command_intervals": [
+        {
+          "repeat": 0,
+          "includes_full_law_validation": true,
+          "seconds": 11.335811800003285,
+          "component_Wh": 0.3424979444447778
+        },
+        {
+          "repeat": 1,
+          "includes_full_law_validation": false,
+          "seconds": 9.32701249999809,
+          "component_Wh": 0.27566716250066664
+        },
+        {
+          "repeat": 2,
+          "includes_full_law_validation": false,
+          "seconds": 9.353973999997834,
+          "component_Wh": 0.2651791861107778
+        }
+      ],
+      "startup_loading_supervision_overhead_seconds": {
+        "n": 3,
+        "mean": 4.616213999989365,
+        "minimum": 4.45678319997387,
+        "maximum": 4.848203699977603,
+        "std": 0.20555071741478778
+      },
+      "startup_loading_supervision_overhead_Wh": {
+        "n": 1,
+        "mean": 0.14081430833599998,
+        "minimum": 0.14081430833599998,
+        "maximum": 0.14081430833599998,
+        "std": null
+      },
+      "phases": {
+        "tree_reduction": {
+          "time": {
+            "n": 3,
+            "mean": 0.7672823999989001,
+            "minimum": 0.7658258000155911,
+            "maximum": 0.7687889999942854,
+            "std": 0.0014822326164739513
+          },
+          "energy": {
+            "n": 3,
+            "mean": 0.01719262824085185,
+            "minimum": 0.016932706945111113,
+            "maximum": 0.017547591666,
+            "std": 0.0003182696337500202
+          }
+        },
+        "reduced_reference_preparation": {
+          "time": {
+            "n": 3,
+            "mean": 1.8291001000034157,
+            "minimum": 1.8226827000034973,
+            "maximum": 1.8333852000068873,
+            "std": 0.005660910177416361
+          },
+          "energy": {
+            "n": 3,
+            "mean": 0.053843709722,
+            "minimum": 0.05310986805488888,
+            "maximum": 0.05435424166633333,
+            "std": 0.000651549572503997
+          }
+        },
+        "solver_initialisation": {
+          "time": {
+            "n": 3,
+            "mean": 0.0517861999978777,
+            "minimum": 0.04867519999970682,
+            "maximum": 0.05354769999394193,
+            "std": 0.0027020689739937587
+          },
+          "energy": {
+            "n": 1,
+            "mean": 0.0025002027774444447,
+            "minimum": 0.0025002027774444447,
+            "maximum": 0.0025002027774444447,
+            "std": null
+          }
+        },
+        "optimisation": {
+          "time": {
+            "n": 3,
+            "mean": 2.088756433338858,
+            "minimum": 1.8367526000074577,
+            "maximum": 2.2663378000142984,
+            "std": 0.22425407169903847
+          },
+          "energy": {
+            "n": 3,
+            "mean": 0.071913145833,
+            "minimum": 0.061695191666333325,
+            "maximum": 0.07765902361111111,
+            "std": 0.00887189850083307
+          }
+        },
+        "common_full_reference_preparation": {
+          "time": {
+            "n": 1,
+            "mean": 1.7785230000154115,
+            "minimum": 1.7785230000154115,
+            "maximum": 1.7785230000154115,
+            "std": null
+          },
+          "energy": {
+            "n": 1,
+            "mean": 0.07455971527711111,
+            "minimum": 0.07455971527711111,
+            "maximum": 0.07455971527711111,
+            "std": null
+          }
+        },
+        "common_full_policy_evaluation": {
+          "time": {
+            "n": 1,
+            "mean": 0.1788578999985475,
+            "minimum": 0.1788578999985475,
+            "maximum": 0.1788578999985475,
+            "std": null
+          },
+          "energy": {
+            "n": 1,
+            "mean": 0.004525734721888889,
+            "minimum": 0.004525734721888889,
+            "maximum": 0.004525734721888889,
+            "std": null
+          }
+        }
+      },
+      "reduced_metrics": {
+        "mean_return": 0.004547429533391927,
+        "SD": 0.01662022632494233,
+        "Sharpe": 0.2736081593887505,
+        "Sortino": 0.4281099688285207,
+        "Rachev": 1.005363676913466,
+        "CVaR95": 0.04548214989430213,
+        "VaR95": 0.028332875566515647,
+        "worst_return": -0.14994476274468793,
+        "loss_probability": 0.23716666547077847,
+        "upper_tail_mean": 0.045726101451665,
+        "expected_terminal_wealth_EUR": 15068.211443000877,
+        "risk_free_horizon_return": 0.0,
+        "ratios_are_unannualised_four_week": true,
+        "netSD": 0.2913907284768212,
+        "OUT": 54,
+        "IN": 10,
+        "D": 151,
+        "expected_return": 0.004547429533391927,
+        "scenarios": 32000,
+        "probability_mass": 1.0,
+        "OUT_by_order": [
+          4,
+          24,
+          26
+        ],
+        "IN_by_order": [
+          0,
+          5,
+          5
+        ],
+        "penalised_objective": 0.2757392171610295
+      },
+      "full_tree_metrics": {
+        "mean_return": 0.004374600560237729,
+        "SD": 0.019112172282016626,
+        "Sharpe": 0.22889080820781205,
+        "Sortino": 0.34976755418971495,
+        "Rachev": 1.0557498628064528,
+        "CVaR95": 0.05068871996286062,
+        "VaR95": 0.03742647212058248,
+        "worst_return": -0.19600385966039013,
+        "loss_probability": 0.2705167753278369,
+        "upper_tail_mean": 0.0535146091466248,
+        "expected_terminal_wealth_EUR": 15065.619008403564,
+        "risk_free_horizon_return": 0.0,
+        "ratios_are_unannualised_four_week": true,
+        "netSD": 0.3026315789473684,
+        "OUT": 53,
+        "IN": 7,
+        "D": 152,
+        "expected_return": 0.004374600560237729,
+        "scenarios": 160000,
+        "probability_mass": 1.0,
+        "OUT_by_order": [
+          5,
+          23,
+          25
+        ],
+        "IN_by_order": [
+          0,
+          3,
+          4
+        ],
+        "penalised_objective": 0.28698006763157674,
+        "expected_penalty": 0.015651511315791684,
+        "expected_weekly_endpoint_max_drawdown": 0.00624581146708141,
+        "worst_weekly_endpoint_max_drawdown": 0.19600385966039013,
+        "expected_gross_turnover_EUR": 999.9971074254938,
+        "maximum_US_purchase_EUR": 299.99998022549585,
+        "all_full_tree_nodes_feasible": true,
+        "deployment": "Fixed learned root and recourse rule applied to original observed prefixes; no full-tree reoptimisation"
+      },
+      "root_units": [
+        0.0,
+        0.0,
+        200.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        543.0,
+        100.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        928.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        26.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        516.0,
+        150.0,
+        100.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        700.0,
+        0.0,
+        288.0,
+        0.0,
+        330.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        117.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        7.108,
+        0.0,
+        43.588,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        16.968323
+      ],
+      "rule": {
+        "mode": 0,
+        "fraction": 1.0,
+        "signal": 0
+      },
+      "candidate_policy_count": {
+        "n": 3,
+        "mean": 123.0,
+        "minimum": 123.0,
+        "maximum": 123.0,
+        "std": 0.0
+      },
+      "backend": {
+        "selected_backend": "CPU",
+        "workers": 48,
+        "CPU_seconds": 0.004437499999767169,
+        "GPU_seconds": 0.29868760000681505,
+        "GPU_error": null
+      },
+      "gpu_wealth_enabled": true,
+      "deterministic_root_across_repeats": true,
+      "maximum_regime_mass_error": 4.440892098500626e-16,
+      "speedup": 1.016419716265606,
+      "energy_ratio": null,
+      "initial_half_L1_trade_difference_EUR": 0.0,
+      "initial_changed_assets": 0,
+      "full_tree_netSD_difference": 0.0,
+      "dominated_cost_quality": false
+    }
+  ],
+  "fits": {
+    "NO_SALE": {
+      "time": [],
+      "energy": []
+    },
+    "SALE": {
+      "time": [],
+      "energy": []
+    }
+  },
+  "comparison_scope": "Fixed learned rule deployed without reoptimisation on original160000-outcome law; same72 reference distributions and candidate-dependent denominator",
+  "baseline_audit": {
+    "experiment": "Scenario tree reduction",
+    "historical_full_tree": [
+      1,
+      20,
+      400,
+      8000
+    ],
+    "terminal_scenarios": 160000,
+    "records": [
+      {
+        "phase": "corrected_stoch2_no_sale",
+        "status": "complete",
+        "seconds": 35.68312220000371,
+        "component_Wh": 0.980281513888889,
+        "CPU_package_Wh": 0.583005125,
+        "GPU_board_Wh": 0.3972763888888889,
+        "started_at": "2026-11-16T20:34:23.552550+02:00",
+        "ended_at": "2026-11-16T20:34:59.422014+02:00",
+        "measurement_sha256": "824617a72a28a89d669eb39a3c5c526e8e2be972fb455b8067b8ee94d040a240",
+        "kind": "initial solve"
+      },
+      {
+        "phase": "corrected_stoch2a_no_initial_sales",
+        "status": "complete",
+        "seconds": 9.3199358000129,
+        "component_Wh": 0.3125909000006667,
+        "CPU_package_Wh": 0.183676733334,
+        "GPU_board_Wh": 0.12891416666666666,
+        "started_at": "2026-11-16T20:38:37.172300+02:00",
+        "ended_at": "2026-11-16T20:38:46.522733+02:00",
+        "measurement_sha256": "861b54e5c8870b8bcc6fd87e847d52b33351c9bf37070df266dddabe6da25f4b",
+        "kind": "initial solve"
+      },
+      {
+        "phase": "corrected_stoch2a_no_sale",
+        "status": "complete",
+        "seconds": 10.350388599996222,
+        "component_Wh": 0.3400313652777778,
+        "CPU_package_Wh": 0.2011135875,
+        "GPU_board_Wh": 0.13891777777777778,
+        "started_at": "2026-11-16T20:37:35.176755+02:00",
+        "ended_at": "2026-11-16T20:37:45.566248+02:00",
+        "measurement_sha256": "083ecf8d9b8599bb682a60ba19647cf6bf3223f69114acbcc5bd26a59a676b13",
+        "kind": "initial solve"
+      },
+      {
+        "phase": "corrected_stoch2a_sale",
+        "status": "complete",
+        "seconds": 40.8660147000046,
+        "component_Wh": 1.2281104249993333,
+        "CPU_package_Wh": 0.765052091666,
+        "GPU_board_Wh": 0.46305833333333335,
+        "started_at": "2026-11-16T20:37:50.917335+02:00",
+        "ended_at": "2026-11-16T20:38:31.810051+02:00",
+        "measurement_sha256": "08f10c228739abf62988b0d4fa6d8f22541676f443718bcbe06cc1d32a88f9d4",
+        "kind": "initial solve"
+      },
+      {
+        "phase": "corrected_stochastic2_no_initial_sales",
+        "status": "complete",
+        "seconds": 19.464260099994135,
+        "component_Wh": 0.5728840500003334,
+        "CPU_package_Wh": 0.341330716667,
+        "GPU_board_Wh": 0.23155333333333333,
+        "started_at": "2026-11-16T20:36:40.628068+02:00",
+        "ended_at": "2026-11-16T20:37:00.112465+02:00",
+        "measurement_sha256": "0f5137f49c5608d115dfffcfc135d970fe832df18bd5246415f7a0dc55c34b96",
+        "kind": "initial solve"
+      },
+      {
+        "phase": "corrected_stochastic2_sale",
+        "status": "complete",
+        "seconds": 61.06646159999946,
+        "component_Wh": 1.6374313874996667,
+        "CPU_package_Wh": 1.0339397208330001,
+        "GPU_board_Wh": 0.6034916666666668,
+        "started_at": "2026-11-16T20:35:34.205844+02:00",
+        "ended_at": "2026-11-16T20:36:35.296943+02:00",
+        "measurement_sha256": "ed193950dbbf387baa9ff381fe9935858d89cd5107749191d91922f671823f05",
+        "kind": "initial solve"
+      },
+      {
+        "phase": "finish_stochastic2_sale",
+        "status": "complete",
+        "seconds": 23.546810900006676,
+        "component_Wh": 0.6547381416663334,
+        "CPU_package_Wh": 0.388822308333,
+        "GPU_board_Wh": 0.26591583333333335,
+        "started_at": "2026-11-16T21:01:32.697025+02:00",
+        "ended_at": "2026-11-16T21:01:56.415846+02:00",
+        "measurement_sha256": "edd0ccb009ca9a31b2fb96f564807445c1fc12546acd0d29b364356e3073d09c",
+        "kind": "refinement or recovery"
+      },
+      {
+        "phase": "parallel_stoch2a_no_initial_sales",
+        "status": "complete",
+        "seconds": 28.714530899989768,
+        "component_Wh": 1.3364276347222221,
+        "CPU_package_Wh": 1.0947029125,
+        "GPU_board_Wh": 0.24172472222222222,
+        "started_at": "2026-11-16T20:56:35.926230+02:00",
+        "ended_at": "2026-11-16T20:57:04.678188+02:00",
+        "measurement_sha256": "d56e5d750e0a0e3000428932f078975dcee745e1c0f9ea6d94eeb8e53c13a9e6",
+        "kind": "refinement or recovery"
+      },
+      {
+        "phase": "parallel_stoch2a_no_sale",
+        "status": "complete",
+        "seconds": 28.94129509999766,
+        "component_Wh": 1.3322662805552221,
+        "CPU_package_Wh": 1.083269058333,
+        "GPU_board_Wh": 0.24899722222222223,
+        "started_at": "2026-11-16T20:55:56.357147+02:00",
+        "ended_at": "2026-11-16T20:56:25.493087+02:00",
+        "measurement_sha256": "ed4fba647f7118383445360a31587a1b2a9504ba933d03c05ef31f95093b5c39",
+        "kind": "refinement or recovery"
+      },
+      {
+        "phase": "parallel_stoch2a_sale",
+        "status": "complete",
+        "seconds": 70.63603030001104,
+        "component_Wh": 3.6107499013885556,
+        "CPU_package_Wh": 3.006161845833,
+        "GPU_board_Wh": 0.6045880555555555,
+        "started_at": "2026-11-16T20:53:42.295093+02:00",
+        "ended_at": "2026-11-16T20:54:53.131304+02:00",
+        "measurement_sha256": "f22f1e02b729f3c97f638648d4d311c4ad6bc33b0a30887df764f38ea358248a",
+        "kind": "refinement or recovery"
+      },
+      {
+        "phase": "parallel_stochastic2_no_initial_sales",
+        "status": "complete",
+        "seconds": 32.71899220001069,
+        "component_Wh": 1.567500766667,
+        "CPU_package_Wh": 1.304128266667,
+        "GPU_board_Wh": 0.2633725,
+        "started_at": "2026-11-16T21:08:13.559884+02:00",
+        "ended_at": "2026-11-16T21:08:46.308951+02:00",
+        "measurement_sha256": "15bec0ea081d8cd8066ee95d35a43d287f339a08ada65fd0c11708734148a1fa",
+        "kind": "refinement or recovery"
+      },
+      {
+        "phase": "promote_parallel_stoch2a_no_initial_sales",
+        "status": "complete",
+        "seconds": 10.298628200005624,
+        "component_Wh": 0.3073505500003333,
+        "CPU_package_Wh": 0.22617471666699998,
+        "GPU_board_Wh": 0.08117583333333334,
+        "started_at": "2026-11-16T20:57:04.690188+02:00",
+        "ended_at": "2026-11-16T20:57:15.048915+02:00",
+        "measurement_sha256": "f751651037ec83c1f4d89f7830accfa8ec30462c4f1ad79448d10a51d0e6ecd1",
+        "kind": "refinement or recovery"
+      },
+      {
+        "phase": "promote_parallel_stoch2a_no_sale",
+        "status": "complete",
+        "seconds": 10.374779900012072,
+        "component_Wh": 0.30178876249933334,
+        "CPU_package_Wh": 0.21128542916600002,
+        "GPU_board_Wh": 0.09050333333333334,
+        "started_at": "2026-11-16T20:56:25.508712+02:00",
+        "ended_at": "2026-11-16T20:56:35.910605+02:00",
+        "measurement_sha256": "29eb53149edc3d7069be8f96902e9d15bc61a865ed0481eebb0ffaa27d38081a",
+        "kind": "refinement or recovery"
+      },
+      {
+        "phase": "promote_parallel_stochastic2_no_initial_sales",
+        "status": "complete",
+        "seconds": 10.325177399994573,
+        "component_Wh": 0.2640283236111111,
+        "CPU_package_Wh": 0.1804247125,
+        "GPU_board_Wh": 0.08360361111111111,
+        "started_at": "2026-11-16T21:08:46.324570+02:00",
+        "ended_at": "2026-11-16T21:08:56.672262+02:00",
+        "measurement_sha256": "57c395980df61dbef6d8db3b89299c70f41ff8240fef532c52cd192fc24fbfa1",
+        "kind": "refinement or recovery"
+      },
+      {
+        "phase": "refine_stochastic2_no_sale",
+        "status": "complete",
+        "seconds": 112.75729280000087,
+        "component_Wh": 3.293138805555889,
+        "CPU_package_Wh": 2.142044916667,
+        "GPU_board_Wh": 1.1510938888888889,
+        "started_at": "2026-11-16T20:40:33.133427+02:00",
+        "ended_at": "2026-11-16T20:42:26.069341+02:00",
+        "measurement_sha256": "dae09f2e5f6c042521e341460b2a16b25eac9d21f9bbbfc950215d75d2e59b9b",
+        "kind": "refinement or recovery"
+      },
+      {
+        "phase": "refine_stochastic2_sale",
+        "status": "failed",
+        "seconds": 926.6454446000134,
+        "component_Wh": 26.004997300000667,
+        "CPU_package_Wh": 17.908020633334,
+        "GPU_board_Wh": 8.096976666666666,
+        "started_at": "2026-11-16T20:42:31.406619+02:00",
+        "ended_at": "2026-11-16T20:57:58.060330+02:00",
+        "measurement_sha256": "b7919c4dfa1a95f2d1252f6b1291fd8afe86880b87254fa1445f93764368fc31",
+        "kind": "refinement or recovery"
+      },
+      {
+        "phase": "validate_recovered_stochastic2_sale",
+        "status": "complete",
+        "seconds": 5.275950199997169,
+        "component_Wh": 0.133647275,
+        "CPU_package_Wh": 0.091859775,
+        "GPU_board_Wh": 0.0417875,
+        "started_at": "2026-11-16T21:08:08.098907+02:00",
+        "ended_at": "2026-11-16T21:08:13.544259+02:00",
+        "measurement_sha256": "f8195ad2497544058431742c60a6c077b8f2d1cc420d826c5ed99b9621b6e211",
+        "kind": "validation"
+      },
+      {
+        "phase": "validate_refined_stochastic2_no_sale",
+        "status": "complete",
+        "seconds": 5.271768599995994,
+        "component_Wh": 0.1350613847218889,
+        "CPU_package_Wh": 0.09366499583299999,
+        "GPU_board_Wh": 0.041396388888888885,
+        "started_at": "2026-11-16T20:42:26.084965+02:00",
+        "ended_at": "2026-11-16T20:42:31.390994+02:00",
+        "measurement_sha256": "571ef1a5687f7b173884bcdb69f2e2848a870e6d5a42cfef30c88a6f43ddec75",
+        "kind": "validation"
+      },
+      {
+        "phase": "validate_stoch2a_no_initial_sales",
+        "status": "complete",
+        "seconds": 5.2415157000068575,
+        "component_Wh": 0.13874835416700002,
+        "CPU_package_Wh": 0.091998354167,
+        "GPU_board_Wh": 0.04675,
+        "started_at": "2026-11-16T20:38:46.538358+02:00",
+        "ended_at": "2026-11-16T20:38:51.809452+02:00",
+        "measurement_sha256": "faf6a31f4a2e47ad56f31caed1461f2272978c24b0cc50cabce1ee4aa3527c62",
+        "kind": "validation"
+      },
+      {
+        "phase": "validate_stoch2a_no_sale",
+        "status": "complete",
+        "seconds": 5.270233100003679,
+        "component_Wh": 0.14316727777744445,
+        "CPU_package_Wh": 0.098062833333,
+        "GPU_board_Wh": 0.04510444444444445,
+        "started_at": "2026-11-16T20:37:45.577257+02:00",
+        "ended_at": "2026-11-16T20:37:50.917335+02:00",
+        "measurement_sha256": "7ce13bd54cce80775a54677814b9e52043ea6d04eba9d767a2f61fe6d78474cf",
+        "kind": "validation"
+      },
+      {
+        "phase": "validate_stoch2a_sale",
+        "status": "complete",
+        "seconds": 5.296619200002169,
+        "component_Wh": 0.13699067777777776,
+        "CPU_package_Wh": 0.0942454,
+        "GPU_board_Wh": 0.04274527777777778,
+        "started_at": "2026-11-16T20:38:31.825676+02:00",
+        "ended_at": "2026-11-16T20:38:37.161291+02:00",
+        "measurement_sha256": "3c6393700970a362c34391eb5e9a3dba4b2875544a97a97d38d41b4b2c4292e3",
+        "kind": "validation"
+      },
+      {
+        "phase": "validate_stochastic2_no_initial_sales",
+        "status": "complete",
+        "seconds": 5.267548199990415,
+        "component_Wh": 0.13280188333366666,
+        "CPU_package_Wh": 0.091332716667,
+        "GPU_board_Wh": 0.04146916666666666,
+        "started_at": "2026-11-16T20:37:00.112465+02:00",
+        "ended_at": "2026-11-16T20:37:05.413708+02:00",
+        "measurement_sha256": "da9bd425567c69df109e393f25977087180c3eda7840e9bbfd3463519c8407e9",
+        "kind": "validation"
+      },
+      {
+        "phase": "validate_stochastic2_no_sale",
+        "status": "complete",
+        "seconds": 5.270741800006363,
+        "component_Wh": 0.13453508333266667,
+        "CPU_package_Wh": 0.091188416666,
+        "GPU_board_Wh": 0.043346666666666665,
+        "started_at": "2026-11-16T20:35:28.748094+02:00",
+        "ended_at": "2026-11-16T20:35:34.205844+02:00",
+        "measurement_sha256": "f29f17e617b67babc84e4ed00fbdc33f3796aa9f3fe02abc098f7d5c9bfb3810",
+        "kind": "validation"
+      },
+      {
+        "phase": "validate_stochastic2_sale",
+        "status": "complete",
+        "seconds": 5.2650843000010354,
+        "component_Wh": 0.13346470416666667,
+        "CPU_package_Wh": 0.0912680375,
+        "GPU_board_Wh": 0.04219666666666666,
+        "started_at": "2026-11-16T20:36:35.312569+02:00",
+        "ended_at": "2026-11-16T20:36:40.612442+02:00",
+        "measurement_sha256": "157872800f40ad6711023547c54e7b3cfb46eb955acd7b40a232873434aa2a19",
+        "kind": "validation"
+      }
+    ],
+    "final_summaries": [
+      {
+        "policy": "NO_SALE",
+        "input_hash": "53d75ac613725957ac737cfe4b2d3f1fe52b488dc129da031f73ce40ece5d2ac",
+        "decision_nodes": 8421,
+        "scenarios": 160000,
+        "terminal_netSD": 0.3026315789473684,
+        "summary_sha256": "8a90a13ef98d91bd1909041e177573077118c8f3ca716f1f28b4a36ed1392d3a"
+      },
+      {
+        "policy": "SALE",
+        "input_hash": "53d75ac613725957ac737cfe4b2d3f1fe52b488dc129da031f73ce40ece5d2ac",
+        "decision_nodes": 8421,
+        "scenarios": 160000,
+        "terminal_netSD": 0.4934210526315789,
+        "summary_sha256": "cb882b2ce8a035e0a3b0dba6e007e0b66e08b67d5c84692e018115587573c81d"
+      },
+      {
+        "policy": "NO_INITIAL_SALES",
+        "input_hash": "53d75ac613725957ac737cfe4b2d3f1fe52b488dc129da031f73ce40ece5d2ac",
+        "decision_nodes": 8421,
+        "scenarios": 160000,
+        "terminal_netSD": 0.45394736842105265,
+        "summary_sha256": "1fac7671cfd911252016856e5541f6cc6f4f23ae93fe2bb171075695c8e7a232"
+      }
+    ],
+    "records_must_not_be_summed": true,
+    "reason": "Final policies include later refinement/recovery; some jobs overlap and one refinement failed. Individual cumulative hardware-counter intervals are measured, but summing these records would double-count overlap. No single clean total for the final best complete solve is asserted.",
+    "energy_scope": "Gross CPU package and GPU board; includes idle/background and excludes other components. Not measured wall-socket electricity.",
+    "new_matched_baseline_required": true
+  }
+}
