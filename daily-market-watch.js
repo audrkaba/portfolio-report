@@ -22,16 +22,16 @@
   }
   function card(r,side){
    const t=r[side+'_trigger'],v=r.values,c=el('li',undefined,'watch-card');c.dataset.asset=r.asset;c.dataset.active=String(t.active);
-   const name=el('div');const link=el('a',r.asset==='US_PFE'?'PFE':r.asset,'watch-asset');const profileId=r.asset.startsWith('SE')?'fund-'+r.asset:'share-'+r.asset.toLowerCase();link.href=document.getElementById(profileId)?'#'+profileId:r.source_url;
+   const name=el('div');const link=el('a',r.ticker||(r.asset==='US_PFE'?'PFE':r.asset),'watch-asset');const profileId=r.asset.startsWith('SE')?'fund-'+r.asset:'share-'+r.asset.toLowerCase();link.href=document.getElementById(profileId)?'#'+profileId:r.analysis_only?'extended-reference.html?scope='+(r.short_history?'short':'long')+'&asset='+encodeURIComponent(r.asset)+'#extended-reference-assets':r.quote_url||(r.type==='Share'&&r.isin?'https://nasdaqbaltic.com/statistics/en/instrument/'+r.isin+'/trading':r.source_url);
    link.addEventListener('click',e=>{if(document.getElementById(link.hash.slice(1))){e.preventDefault();reveal(r.asset);}});name.append(link,el('span',r.name,'watch-name'));
    const source=el('a',`€${number(v.price,4)} · ${r.date}`,'watch-quote');source.href=r.source_url;source.target='_blank';source.rel='noopener';source.title='Verified market-data source';name.append(source);
-   if(!r.model_eligible)name.append(el('span','Short history — observation only','watch-name'));
+   if(!r.model_eligible)name.append(el('span',r.model_status_text||'Short history — observation only','watch-name'));
    const signal=el('div');signal.append(el('span',`${t.active?'● ACTIVE':'◇ NEAR'} ${side.toUpperCase()} · ${r[side+'_votes']}/4`,'watch-signal'));
    signal.append(el('span',t.active?'Threshold already reached':`Trigger €${number(t.price,4)} (${t.move_pct>=0?'+':''}${number(t.move_pct,2)}%)`,'watch-quote'));
    if(!t.active)signal.append(el('span','At trigger: '+Object.keys(t.components).filter(k=>t.components[k]).join(' + '),'watch-quote'));
    if(side==='sell')signal.append(el('span',r.held_units>0?`Held: ${number(r.held_units,6)} units`:'Not held — observation only','watch-quote'));
    const indicators=el('div',undefined,'watch-indicators');
-   const entries=[['BB',`BB €${number(v.lower,4)}–${number(v.upper,4)}`],['RSI',`RSI ${number(v.rsi,1)}`],['StochRSI',`Stoch RSI K/D ${number(Math.max(0,Math.min(1,v.k))*100,1)}/${number(Math.max(0,Math.min(1,v.d))*100,1)}`],['MACD',`MACD ${number(v.macd,4)} / signal ${number(v.macd_signal,4)}`]];
+   const entries=[['BB',`BB €${number(v.lower,4)}–${number(v.upper,4)}`],['RSI',`RSI ${number(v.rsi,1)}`],['StochRSI',`Stoch RSI K/D % ${number(Math.max(0,Math.min(1,v.k))*100,1)}/${number(Math.max(0,Math.min(1,v.d))*100,1)}`],['MACD',`MACD ${number(v.macd,4)} / signal ${number(v.macd_signal,4)}`]];
    entries.forEach(([key,text])=>{const n=el('span',`${r[side][key]?'✓ ':''}${text}`,r[side][key]?'watch-vote':'');n.title=`${key}: ${r[side][key]?'currently votes '+side.toUpperCase():'no '+side.toUpperCase()+' vote'}`;indicators.append(n);});
    c.append(name,signal,indicators);
    if(r.initial_models.length||r.future_models.length){
@@ -49,7 +49,7 @@
     const matches=data.rows.filter(r=>r[side+'_trigger']&&(r[side+'_trigger'].active||Math.abs(r[side+'_trigger'].move_pct)<=near+1e-7)).sort((a,b)=>Number(b[side+'_trigger'].active)-Number(a[side+'_trigger'].active)||Math.abs(a[side+'_trigger'].move_pct)-Math.abs(b[side+'_trigger'].move_pct)||a.asset.localeCompare(b.asset));
     counts[side]=matches.length;host.append(el('div',`${side.toUpperCase()} watch · ${matches.length}`,'watch-side-title'));
     for(const supported of [true,false]){
-     const group=matches.filter(r=>Boolean(r.initial_models.length||r.future_models.length)===supported);host.append(el('div',`${supported?'Model proposes addition':'Other permitted assets'} (${group.length})`,'watch-group-title'));
+     const group=matches.filter(r=>Boolean(r.initial_models.length||r.future_models.length)===supported);host.append(el('div',`${supported?'Model proposes addition':'Other permitted assets / reference candidates'} (${group.length})`,'watch-group-title'));
      const list=el('ul');list.dataset.group=supported?'models':'other';group.forEach(r=>list.append(card(r,side)));host.append(list);if(!group.length)host.append(el('p','No matching signals within this distance.','watch-empty'));
     }
    }

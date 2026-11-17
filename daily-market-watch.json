@@ -1,5 +1,5 @@
 {
-  "checked_at_UTC": "2026-11-17T08:07:03.990530+00:00",
+  "checked_at_UTC": "2026-11-17T08:28:52.907936+00:00",
   "completed_session_cutoff": "2026-11-16",
   "default_near_pct": 2,
   "rows": [
@@ -8,11 +8,11 @@
         "price": 1.78,
         "lower": 1.766852718881913,
         "upper": 1.917647281118089,
-        "rsi": 36.3648469207329,
-        "k": 0.05197464484109116,
-        "d": 0.0500263474347065,
-        "macd": -0.007128520593104204,
-        "macd_signal": 0.007077169072163591
+        "rsi": 36.36484692073294,
+        "k": 0.05197464484109204,
+        "d": 0.05002634743470696,
+        "macd": -0.007128520593103982,
+        "macd_signal": 0.007077169072163751
       },
       "buy": {
         "BB": false,
@@ -35,15 +35,15 @@
         "price": 1.77,
         "lower": 1.774644722024658,
         "upper": 1.914855277975343,
-        "rsi": 32.36364908366371,
-        "k": 0.01310085079615022,
-        "d": 0.0610359813766355,
-        "macd": -0.004036456282535239,
-        "macd_signal": 0.01062859148848054
+        "rsi": 32.36364908366375,
+        "k": 0.01310085079615068,
+        "d": 0.06103598137663566,
+        "macd": -0.004036456282535017,
+        "macd_signal": 0.01062859148848068
       },
       "buy_trigger": {
         "price": 1.757469312358948,
-        "move_pct": -1.265768968598424,
+        "move_pct": -1.265768968598457,
         "votes": 3,
         "components": {
           "BB": true,
@@ -54,8 +54,8 @@
         "active": false
       },
       "sell_trigger": {
-        "price": 1.96952336055078,
-        "move_pct": 10.647379806223611,
+        "price": 1.969523360550781,
+        "move_pct": 10.647379806223633,
         "votes": 3,
         "components": {
           "BB": true,
@@ -369,8 +369,8 @@
         "lower": 2.348392092391761,
         "upper": 2.415107907608245,
         "rsi": 54.81185016160253,
-        "k": 0.8117015362360936,
-        "d": 0.8692654807788731,
+        "k": 0.8117015362360934,
+        "d": 0.8692654807788714,
         "macd": 0.01289130947944361,
         "macd_signal": 0.01166997103368976
       },
@@ -395,9 +395,9 @@
         "price": 2.41,
         "lower": 2.343906590563958,
         "upper": 2.415593409436048,
-        "rsi": 62.24719827243306,
-        "k": 0.9737329063952703,
-        "d": 0.7874160978172289,
+        "rsi": 62.247198272433074,
+        "k": 0.9737329063952679,
+        "d": 0.7874160978172265,
         "macd": 0.01379003211325713,
         "macd_signal": 0.0113646364222513
       },
@@ -507,9 +507,9 @@
         "price": 1.885,
         "lower": 1.627166382869234,
         "upper": 1.896333617130762,
-        "rsi": 79.635865832456,
-        "k": 0.9999999999999979,
-        "d": 0.9999999999999977,
+        "rsi": 79.63586583245603,
+        "k": 0.9999999999999982,
+        "d": 0.9999999999999978,
         "macd": 0.0543601040256414,
         "macd_signal": 0.04092405718483286
       },
@@ -688,9 +688,9 @@
     {
       "values": {
         "price": 1.715,
-        "lower": 1.661186002453485,
-        "upper": 1.700313997546513,
-        "rsi": 79.00204251918805,
+        "lower": 1.661186002453486,
+        "upper": 1.700313997546514,
+        "rsi": 79.00204251918814,
         "k": 1,
         "d": 1,
         "macd": 0.004385309490719802,
@@ -2625,11 +2625,11 @@
         "price": 2.29,
         "lower": 2.226073203938572,
         "upper": 2.570926796061374,
-        "rsi": 36.410313089625255,
-        "k": 0.1049641068970396,
-        "d": 0.08501398807090053,
-        "macd": -0.06129212791070637,
-        "macd_signal": -0.05051561911192769
+        "rsi": 36.41031308962531,
+        "k": 0.1049641068970418,
+        "d": 0.08501398807090242,
+        "macd": -0.06129212791070549,
+        "macd_signal": -0.05051561911192722
       },
       "buy": {
         "BB": false,
@@ -2653,14 +2653,14 @@
         "lower": 2.238717881150107,
         "upper": 2.579282118849839,
         "rsi": 34.976909255256224,
-        "k": 0.08408451068182782,
-        "d": 0.0572744834900553,
-        "macd": -0.06112789334336677,
-        "macd_signal": -0.04782149191223301
+        "k": 0.08408451068182966,
+        "d": 0.0572744834900567,
+        "macd": -0.06112789334336588,
+        "macd_signal": -0.04782149191223266
       },
       "buy_trigger": {
-        "price": 2.206403375765443,
-        "move_pct": -3.650507608495956,
+        "price": 2.206403375765442,
+        "move_pct": -3.650507608495979,
         "votes": 3,
         "components": {
           "BB": true,
@@ -4831,14 +4831,14 @@
     },
     {
       "values": {
-        "price": 26.203014899538374,
-        "lower": 25.82956155027922,
-        "upper": 27.47121648585693,
-        "rsi": 50.01309992487333,
-        "k": 0.06048534650219408,
-        "d": 0.07823636818105621,
-        "macd": 0.154338180749118,
-        "macd_signal": 0.3179380493463244
+        "price": 26.20301489953837,
+        "lower": 25.82956155027923,
+        "upper": 27.471216485856942,
+        "rsi": 50.03218498164938,
+        "k": 0.06051754123855296,
+        "d": 0.07827986229268187,
+        "macd": 0.1555238319518075,
+        "macd_signal": 0.3196684133331525
       },
       "buy": {
         "BB": false,
@@ -4856,20 +4856,20 @@
       "sell_votes": 1,
       "asset": "US_PFE",
       "date": "2026-11-16",
-      "observations": 2770,
+      "observations": 2734,
       "previous": {
-        "price": 26.140064594325406,
-        "lower": 25.833339143052413,
-        "upper": 27.469854599927906,
-        "rsi": 49.18952175649913,
-        "k": 0.09378474552499827,
-        "d": 0.08488759018565128,
-        "macd": 0.1845179053951718,
-        "macd_signal": 0.358838016495626
+        "price": 26.14006459432541,
+        "lower": 25.833339143052424,
+        "upper": 27.469854599927917,
+        "rsi": 49.210492947726586,
+        "k": 0.09382938465077957,
+        "d": 0.08493823554273498,
+        "macd": 0.1857977861203075,
+        "macd_signal": 0.3607045586784887
       },
       "buy_trigger": {
-        "price": 23.696113353688233,
-        "move_pct": -9.567225586298111,
+        "price": 23.688762723170566,
+        "move_pct": -9.595278199884161,
         "votes": 3,
         "components": {
           "BB": true,
@@ -4886,6 +4886,8 @@
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/PFE?period1=1451606400&period2=1794960000&interval=1d&events=splits",
       "checked_at_UTC": "2026-11-17T08:07:03.727719+00:00",
       "model_eligible": true,
+      "ticker": "PFE",
+      "quote_url": "https://finance.yahoo.com/quote/PFE/",
       "initial_models": [
         {
           "model": "STOCHASTIC / SALE",
@@ -5151,6 +5153,2811 @@
         }
       ],
       "held_units": 117.0
+    },
+    {
+      "values": {
+        "price": 320.3014334295414,
+        "lower": 297.6082527982775,
+        "upper": 323.24232281795673,
+        "rsi": 62.3020404712662,
+        "k": 0.887939257424749,
+        "d": 0.8302926869945443,
+        "macd": 5.17675866627809,
+        "macd_signal": 4.239607271057514
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "asset": "US_AAPL",
+      "date": "2026-11-16",
+      "observations": 2734,
+      "previous": {
+        "price": 322.35793432290257,
+        "lower": 297.54487732427805,
+        "upper": 321.82700282796924,
+        "rsi": 64.91445599381088,
+        "k": 0.874103882098826,
+        "d": 0.7488748550276857,
+        "macd": 4.963431534574909,
+        "macd_signal": 4.005319422252369
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 330.6718728074178,
+        "move_pct": 3.237712446940266,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "Apple Inc.",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/AAPL?period1=1451606400&period2=1794960000&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-17T08:28:48.618213+00:00",
+      "model_eligible": false,
+      "ticker": "AAPL",
+      "quote_url": "https://finance.yahoo.com/quote/AAPL/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 267.43234773285707,
+        "lower": 251.44619109131813,
+        "upper": 268.3860827429258,
+        "rsi": 67.96937794165167,
+        "k": 0.5559129318556625,
+        "d": 0.4966759257508951,
+        "macd": 5.772542295580422,
+        "macd_signal": 5.83621396626426
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 0,
+      "sell_votes": 1,
+      "asset": "US_ABBV",
+      "date": "2026-11-16",
+      "observations": 2734,
+      "previous": {
+        "price": 266.94715778076085,
+        "lower": 250.70504426447764,
+        "upper": 267.5670676406482,
+        "rsi": 67.49425805949,
+        "k": 0.5124741700811405,
+        "d": 0.4290187962711125,
+        "macd": 5.735871599029025,
+        "macd_signal": 5.85213188393522
+      },
+      "buy_trigger": null,
+      "sell_trigger": null,
+      "name": "AbbVie Inc.",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/ABBV?period1=1451606400&period2=1794960000&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-17T08:28:50.174810+00:00",
+      "model_eligible": false,
+      "ticker": "ABBV",
+      "quote_url": "https://finance.yahoo.com/quote/ABBV/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 457.8536397124541,
+        "lower": 382.878119651582,
+        "upper": 543.809773669756,
+        "rsi": 47.78260635971291,
+        "k": 0.7941659665244926,
+        "d": 0.869048067611012,
+        "macd": -5.927831585502588,
+        "macd_signal": -11.137402072971271
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 0,
+      "asset": "US_AMD",
+      "date": "2026-11-16",
+      "observations": 2734,
+      "previous": {
+        "price": 483.22475349130815,
+        "lower": 383.7008817386631,
+        "upper": 545.1348313791773,
+        "rsi": 51.27321188053495,
+        "k": 0.9071796788068937,
+        "d": 0.8748421107428829,
+        "macd": -5.479007982529765,
+        "macd_signal": -12.439794694838442
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 700.0205109784796,
+        "move_pct": 52.891765023013384,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "ADVANCED MICRO DEVICES INC",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/AMD?period1=1451606400&period2=1794960000&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-17T08:28:49.659952+00:00",
+      "model_eligible": false,
+      "ticker": "AMD",
+      "quote_url": "https://finance.yahoo.com/quote/AMD/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 173.17959460065742,
+        "lower": 160.44097358234865,
+        "upper": 175.92970028301568,
+        "rsi": 66.08163890051021,
+        "k": 0.5762360598134442,
+        "d": 0.4443307718776923,
+        "macd": 3.946060957651326,
+        "macd_signal": 4.025734513196838
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 0,
+      "sell_votes": 1,
+      "asset": "US_AMT",
+      "date": "2026-11-16",
+      "observations": 2734,
+      "previous": {
+        "price": 173.3984793608835,
+        "lower": 159.98340302709062,
+        "upper": 175.3748791981899,
+        "rsi": 66.68746417492886,
+        "k": 0.472707716879922,
+        "d": 0.3440407598203849,
+        "macd": 3.956815502961604,
+        "macd_signal": 4.045652902083216
+      },
+      "buy_trigger": null,
+      "sell_trigger": null,
+      "name": "AMERICAN TOWER CORP /MA/",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/AMT?period1=1451606400&period2=1794960000&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-17T08:28:52.742778+00:00",
+      "model_eligible": false,
+      "ticker": "AMT",
+      "quote_url": "https://finance.yahoo.com/quote/AMT/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 234.02033775195207,
+        "lower": 214.03589247890892,
+        "upper": 246.42159262103672,
+        "rsi": 53.15277653064896,
+        "k": 0.8304868946697931,
+        "d": 0.9025416037661643,
+        "macd": 3.709610568166454,
+        "macd_signal": 2.693435253592878
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "asset": "US_AMZN",
+      "date": "2026-11-16",
+      "observations": 2734,
+      "previous": {
+        "price": 241.2776001285825,
+        "lower": 214.03496051857388,
+        "upper": 246.40133821882966,
+        "rsi": 61.22185103266155,
+        "k": 0.9304710620197265,
+        "d": 0.94623113792165,
+        "macd": 4.07418609633271,
+        "macd_signal": 2.439391424949484
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 255.26566183393555,
+        "move_pct": 9.078409289581613,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "AMAZON COM INC",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/AMZN?period1=1451606400&period2=1794960000&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-17T08:28:48.618213+00:00",
+      "model_eligible": false,
+      "ticker": "AMZN",
+      "quote_url": "https://finance.yahoo.com/quote/AMZN/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 302.7056418163105,
+        "lower": 264.1653946400199,
+        "upper": 328.54319251920475,
+        "rsi": 50.52499105949754,
+        "k": 0.8119165884764551,
+        "d": 0.8881266271169742,
+        "macd": -0.4425666203738388,
+        "macd_signal": -3.858818719152467
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "asset": "US_AVGO",
+      "date": "2026-11-16",
+      "observations": 2734,
+      "previous": {
+        "price": 313.97937908579894,
+        "lower": 264.05356630524733,
+        "upper": 328.19202872917396,
+        "rsi": 54.56988864417113,
+        "k": 0.9296268001708171,
+        "d": 0.8780575888540469,
+        "macd": -0.6929974048816234,
+        "macd_signal": -4.712881743847124
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 386.4087415044631,
+        "move_pct": 27.651648375601056,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "Broadcom Inc.",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/AVGO?period1=1451606400&period2=1794960000&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-17T08:28:48.977343+00:00",
+      "model_eligible": false,
+      "ticker": "AVGO",
+      "quote_url": "https://finance.yahoo.com/quote/AVGO/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 538.2694530469744,
+        "lower": 464.74769570214596,
+        "upper": 542.0547574632055,
+        "rsi": 85.87312195089036,
+        "k": 1,
+        "d": 0.9865059432285815,
+        "macd": 18.51925559516343,
+        "macd_signal": 15.785012971031325
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": true,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 2,
+      "asset": "US_BRK_B",
+      "date": "2026-11-16",
+      "observations": 2734,
+      "previous": {
+        "price": 536.5001831717393,
+        "lower": 463.0335349198532,
+        "upper": 537.3566705326716,
+        "rsi": 85.44430424751599,
+        "k": 1,
+        "d": 0.940534015436869,
+        "macd": 17.91874477042046,
+        "macd_signal": 15.101452314998298
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 543.2523069301499,
+        "move_pct": 0.9257173809453789,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "BERKSHIRE HATHAWAY INC",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/BRK-B?period1=1451606400&period2=1794960000&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-17T08:28:49.366551+00:00",
+      "model_eligible": false,
+      "ticker": "BRK-B",
+      "quote_url": "https://finance.yahoo.com/quote/BRK-B/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 517.9680318089478,
+        "lower": 467.226706698905,
+        "upper": 674.1575171547843,
+        "rsi": 33.89552831723854,
+        "k": 0.8873071126456598,
+        "d": 0.8879940944170767,
+        "macd": -39.41906788374797,
+        "macd_signal": -40.740894238202685
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "asset": "US_CAT",
+      "date": "2026-11-16",
+      "observations": 2734,
+      "previous": {
+        "price": 543.0691388047695,
+        "lower": 471.59750680977703,
+        "upper": 682.648263798638,
+        "rsi": 38.00236255371261,
+        "k": 0.9452777108969309,
+        "d": 0.8394534250602282,
+        "macd": -39.758966065106165,
+        "macd_signal": -41.071350826816364
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 764.0348657205753,
+        "move_pct": 47.50618161747657,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "CATERPILLAR INC",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/CAT?period1=1451606400&period2=1794960000&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-17T08:28:50.971901+00:00",
+      "model_eligible": false,
+      "ticker": "CAT",
+      "quote_url": "https://finance.yahoo.com/quote/CAT/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 252.24260697677389,
+        "lower": 212.63018003085944,
+        "upper": 257.5440279692087,
+        "rsi": 57.229873366056026,
+        "k": 0.9645669910022902,
+        "d": 0.9544397576643915,
+        "macd": 2.751924704760768,
+        "macd_signal": -0.3201589033924607
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "asset": "US_CEG",
+      "date": "2026-11-16",
+      "observations": 1212,
+      "previous": {
+        "price": 253.52878411783504,
+        "lower": 213.16580244841637,
+        "upper": 255.23091567280798,
+        "rsi": 58.00163514135508,
+        "k": 0.9796905112241068,
+        "d": 0.9392713509192211,
+        "macd": 1.937141377322916,
+        "macd_signal": -1.088179805430768
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 291.6741204726794,
+        "move_pct": 15.632376293802075,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "Constellation Energy Corp",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/CEG?period1=1451606400&period2=1794960000&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-17T08:28:52.410976+00:00",
+      "model_eligible": false,
+      "ticker": "CEG",
+      "quote_url": "https://finance.yahoo.com/quote/CEG/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 127.58307996410107,
+        "lower": 117.81509429087617,
+        "upper": 139.29405903007552,
+        "rsi": 53.94705397363067,
+        "k": 0.3592260009970533,
+        "d": 0.2789013964038725,
+        "macd": 0.6783823429885985,
+        "macd_signal": 1.314725659149751
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 0,
+      "sell_votes": 1,
+      "asset": "US_COP",
+      "date": "2026-11-16",
+      "observations": 2734,
+      "previous": {
+        "price": 128.73687909816945,
+        "lower": 117.90924180610943,
+        "upper": 139.38057950891448,
+        "rsi": 56.08387204015755,
+        "k": 0.3020825574056294,
+        "d": 0.1844916303763967,
+        "macd": 0.5874997878730994,
+        "macd_signal": 1.473811488190039
+      },
+      "buy_trigger": null,
+      "sell_trigger": null,
+      "name": "CONOCOPHILLIPS",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/COP?period1=1451606400&period2=1794960000&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-17T08:28:52.085402+00:00",
+      "model_eligible": false,
+      "ticker": "COP",
+      "quote_url": "https://finance.yahoo.com/quote/COP/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 1011.2039134141776,
+        "lower": 851.3747147998569,
+        "upper": 1007.8635448100741,
+        "rsi": 81.3214189485917,
+        "k": 1.000000000000002,
+        "d": 0.9495700403454536,
+        "macd": 37.172379478804146,
+        "macd_signal": 30.710071573004686
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": true,
+        "RSI": true,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 3,
+      "asset": "US_COST",
+      "date": "2026-11-16",
+      "observations": 2734,
+      "previous": {
+        "price": 1000.9138264001992,
+        "lower": 852.6809732090912,
+        "upper": 994.1255390947781,
+        "rsi": 80.00574590345127,
+        "k": 1.000000000000002,
+        "d": 0.8546673422524677,
+        "macd": 34.878353602117386,
+        "macd_signal": 29.094494596554817
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 1011.2039134141776,
+        "move_pct": 0,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": true
+      },
+      "name": "COSTCO WHOLESALE CORP /NEW",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/COST?period1=1451606400&period2=1794960000&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-17T08:28:50.301186+00:00",
+      "model_eligible": false,
+      "ticker": "COST",
+      "quote_url": "https://finance.yahoo.com/quote/COST/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 197.1490824311317,
+        "lower": 185.22190166795696,
+        "upper": 213.52593331389232,
+        "rsi": 52.881452354110955,
+        "k": 0.3578865758002248,
+        "d": 0.2621121463700151,
+        "macd": 0.4969777292823778,
+        "macd_signal": 1.479134169406854
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 0,
+      "sell_votes": 1,
+      "asset": "US_CVX",
+      "date": "2026-11-16",
+      "observations": 2734,
+      "previous": {
+        "price": 198.95946379808944,
+        "lower": 185.39448180057659,
+        "upper": 213.62686321140566,
+        "rsi": 55.59764416880878,
+        "k": 0.2856002206169051,
+        "d": 0.1584239186750942,
+        "macd": 0.3996373719842836,
+        "macd_signal": 1.724673279437973
+      },
+      "buy_trigger": null,
+      "sell_trigger": null,
+      "name": "CHEVRON CORP",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/CVX?period1=1451606400&period2=1794960000&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-17T08:28:50.443841+00:00",
+      "model_eligible": false,
+      "ticker": "CVX",
+      "quote_url": "https://finance.yahoo.com/quote/CVX/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 107.77192386802452,
+        "lower": 95.86867047090857,
+        "upper": 109.62916752638509,
+        "rsi": 72.85135347608018,
+        "k": 0.8439346780372419,
+        "d": 0.8706111390149452,
+        "macd": 3.101900327726995,
+        "macd_signal": 2.775292710925283
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": true,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 2,
+      "asset": "US_DIS",
+      "date": "2026-11-16",
+      "observations": 2734,
+      "previous": {
+        "price": 107.64567609546069,
+        "lower": 95.4225075116098,
+        "upper": 109.06116672586496,
+        "rsi": 72.60382136531754,
+        "k": 0.8815335011604334,
+        "d": 0.9013168429965072,
+        "macd": 3.080648910263477,
+        "macd_signal": 2.693640806724856
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 110.16466725710968,
+        "move_pct": 2.220191774636304,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "Walt Disney Co",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/DIS?period1=1451606400&period2=1794960000&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-17T08:28:51.628441+00:00",
+      "model_eligible": false,
+      "ticker": "DIS",
+      "quote_url": "https://finance.yahoo.com/quote/DIS/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 118.56727468484712,
+        "lower": 108.08185913180333,
+        "upper": 118.92696060635885,
+        "rsi": 74.98499126616476,
+        "k": 0.7615029370684536,
+        "d": 0.5647232644217446,
+        "macd": 2.834760323056344,
+        "macd_signal": 2.682890176499738
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": true,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "asset": "US_DUK",
+      "date": "2026-11-16",
+      "observations": 2734,
+      "previous": {
+        "price": 116.86572897404034,
+        "lower": 107.1202629336274,
+        "upper": 118.65721879200251,
+        "rsi": 71.48958990641098,
+        "k": 0.5657442426914107,
+        "d": 0.4138771305275217,
+        "macd": 2.711038811264899,
+        "macd_signal": 2.644922639860587
+      },
+      "buy_trigger": null,
+      "sell_trigger": null,
+      "name": "Duke Energy CORP",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/DUK?period1=1451606400&period2=1794960000&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-17T08:28:52.458243+00:00",
+      "model_eligible": false,
+      "ticker": "DUK",
+      "quote_url": "https://finance.yahoo.com/quote/DUK/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 947.0311045884785,
+        "lower": 841.7085918794656,
+        "upper": 978.909180596694,
+        "rsi": 56.68150398714201,
+        "k": 0.7910218545926101,
+        "d": 0.8835001123294538,
+        "macd": 15.306345259288719,
+        "macd_signal": 9.328985799591697
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 0,
+      "asset": "US_EQIX",
+      "date": "2026-11-16",
+      "observations": 2734,
+      "previous": {
+        "price": 953.4835677366088,
+        "lower": 837.7655453611766,
+        "upper": 975.07205847998,
+        "rsi": 58.24939506991933,
+        "k": 0.9132041908419662,
+        "d": 0.9234595207904305,
+        "macd": 15.121112814141725,
+        "macd_signal": 7.83464593466744
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 1044.8508011946649,
+        "move_pct": 10.329090156832056,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "EQUINIX INC",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/EQIX?period1=1451606400&period2=1794960000&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-17T08:28:52.394948+00:00",
+      "model_eligible": false,
+      "ticker": "EQIX",
+      "quote_url": "https://finance.yahoo.com/quote/EQIX/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 50.10895099574086,
+        "lower": 50.3225554487879,
+        "upper": 62.326768966250135,
+        "rsi": 32.31690081367004,
+        "k": 0.6628692779263224,
+        "d": 0.788678603917857,
+        "macd": -2.340738772209747,
+        "macd_signal": -2.027118825839742
+      },
+      "buy": {
+        "BB": true,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "asset": "US_FCX",
+      "date": "2026-11-16",
+      "observations": 2734,
+      "previous": {
+        "price": 53.60115968011835,
+        "lower": 51.12866704675145,
+        "upper": 62.72357073196418,
+        "rsi": 38.721064138561495,
+        "k": 0.862670938525936,
+        "d": 0.8512450228753982,
+        "macd": -2.072558752077917,
+        "macd_signal": -1.94871383924724
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 71.9749340568298,
+        "move_pct": 43.636880490568416,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "FREEPORT-MCMORAN INC",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/FCX?period1=1451606400&period2=1794960000&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-17T08:28:52.774027+00:00",
+      "model_eligible": false,
+      "ticker": "FCX",
+      "quote_url": "https://finance.yahoo.com/quote/FCX/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 295.2424120898686,
+        "lower": 249.48783432325232,
+        "upper": 313.3613198185758,
+        "rsi": 56.478721769043084,
+        "k": 0.6617504226328502,
+        "d": 0.8107954498827684,
+        "macd": 6.641742556716395,
+        "macd_signal": 4.329418675979682
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 0,
+      "asset": "US_GE",
+      "date": "2026-11-16",
+      "observations": 2734,
+      "previous": {
+        "price": 300.2262011930816,
+        "lower": 249.19201648023974,
+        "upper": 311.86385402759447,
+        "rsi": 60.18706882986255,
+        "k": 0.8386170510320611,
+        "d": 0.9235453090051506,
+        "macd": 6.880170443533416,
+        "macd_signal": 3.751337705795502
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 325.0542282077927,
+        "move_pct": 10.097402980453118,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "GENERAL ELECTRIC CO",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/GE?period1=1451606400&period2=1794960000&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-17T08:28:50.821562+00:00",
+      "model_eligible": false,
+      "ticker": "GE",
+      "quote_url": "https://finance.yahoo.com/quote/GE/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 693.272205669347,
+        "lower": 670.2879463981003,
+        "upper": 834.891849938751,
+        "rsi": 39.270553373800944,
+        "k": 0.45026408692111,
+        "d": 0.5171535793076273,
+        "macd": -29.964108465368895,
+        "macd_signal": -27.16235813584174
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 0,
+      "sell_votes": 1,
+      "asset": "US_GEV",
+      "date": "2026-11-16",
+      "observations": 663,
+      "previous": {
+        "price": 726.682957729653,
+        "lower": 677.2834313648204,
+        "upper": 839.4992114377383,
+        "rsi": 43.21796337439526,
+        "k": 0.5564645798419839,
+        "d": 0.5523914613082715,
+        "macd": -28.15782235101733,
+        "macd_signal": -26.461920553459947
+      },
+      "buy_trigger": null,
+      "sell_trigger": null,
+      "name": "GE Vernova Inc.",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/GEV?period1=1451606400&period2=1794960000&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-17T08:28:51.229163+00:00",
+      "model_eligible": false,
+      "ticker": "GEV",
+      "quote_url": "https://finance.yahoo.com/quote/GEV/",
+      "analysis_only": true,
+      "model_status_text": "Short-history reference — not an allocation recommendation",
+      "short_history": true,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 257.59942002969234,
+        "lower": 233.78690289223445,
+        "upper": 304.16677566667016,
+        "rsi": 37.99014032457501,
+        "k": 0.8716585279147112,
+        "d": 0.8753982210847943,
+        "macd": -9.642980266361178,
+        "macd_signal": -10.750165306051155
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "asset": "US_GOOGL",
+      "date": "2026-11-16",
+      "observations": 2734,
+      "previous": {
+        "price": 267.616711014904,
+        "lower": 233.06375623357346,
+        "upper": 309.79189503735336,
+        "rsi": 43.9547707311659,
+        "k": 0.9453999151382878,
+        "d": 0.8051719370405279,
+        "macd": -9.779084065125232,
+        "macd_signal": -11.02696156597365
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 323.00842864950545,
+        "move_pct": 25.39175306073038,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "Alphabet Inc.",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/GOOGL?period1=1451606400&period2=1794960000&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-17T08:28:49.008710+00:00",
+      "model_eligible": false,
+      "ticker": "GOOGL",
+      "quote_url": "https://finance.yahoo.com/quote/GOOGL/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 315.5166240835528,
+        "lower": 274.11479259010855,
+        "upper": 327.15826367662385,
+        "rsi": 68.36466902624032,
+        "k": 0.354919771635276,
+        "d": 0.3690747622239083,
+        "macd": 11.559061126498307,
+        "macd_signal": 10.852720821864997
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 0,
+      "asset": "US_HD",
+      "date": "2026-11-16",
+      "observations": 2734,
+      "previous": {
+        "price": 315.49945932085257,
+        "lower": 271.01728707020675,
+        "upper": 326.3103433033431,
+        "rsi": 68.35495014562257,
+        "k": 0.3818318013261985,
+        "d": 0.4046158038013213,
+        "macd": 11.781724734785541,
+        "macd_signal": 10.676135745706668
+      },
+      "buy_trigger": null,
+      "sell_trigger": null,
+      "name": "HOME DEPOT, INC.",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/HD?period1=1451606400&period2=1794960000&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-17T08:28:50.959383+00:00",
+      "model_eligible": false,
+      "ticker": "HD",
+      "quote_url": "https://finance.yahoo.com/quote/HD/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 256.5371234728244,
+        "lower": 228.61841541676202,
+        "upper": 260.333263113624,
+        "rsi": 65.56600482961524,
+        "k": 0.9335984517459114,
+        "d": 0.9094149947087814,
+        "macd": 6.04074337452505,
+        "macd_signal": 4.675763359295384
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "asset": "US_JNJ",
+      "date": "2026-11-16",
+      "observations": 2734,
+      "previous": {
+        "price": 258.55048859934857,
+        "lower": 226.20025197553696,
+        "upper": 259.7070677297165,
+        "rsi": 68.6411373238628,
+        "k": 0.9430955797185437,
+        "d": 0.8736928341548289,
+        "macd": 5.846909345967873,
+        "macd_signal": 4.334518355487968
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 261.446150530097,
+        "move_pct": 1.913573751361008,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "JOHNSON & JOHNSON",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/JNJ?period1=1451606400&period2=1794960000&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-17T08:28:49.971835+00:00",
+      "model_eligible": false,
+      "ticker": "JNJ",
+      "quote_url": "https://finance.yahoo.com/quote/JNJ/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 307.0728086572346,
+        "lower": 294.31938192436104,
+        "upper": 313.31786317902623,
+        "rsi": 53.458431852217444,
+        "k": 0.60612425547354,
+        "d": 0.6253593436411631,
+        "macd": 2.372565994218689,
+        "macd_signal": 1.700016497051834
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 0,
+      "asset": "US_JPM",
+      "date": "2026-11-16",
+      "observations": 2734,
+      "previous": {
+        "price": 313.2374252998609,
+        "lower": 293.5198638425052,
+        "upper": 313.1232405982141,
+        "rsi": 60.8806838298284,
+        "k": 0.7013998928418063,
+        "d": 0.598040172777686,
+        "macd": 2.483228425387836,
+        "macd_signal": 1.53187912276012
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 326.7341585669585,
+        "move_pct": 6.402829998429005,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "JPMORGAN CHASE & CO",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/JPM?period1=1451606400&period2=1794960000&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-17T08:28:49.461487+00:00",
+      "model_eligible": false,
+      "ticker": "JPM",
+      "quote_url": "https://finance.yahoo.com/quote/JPM/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 90.32141216354968,
+        "lower": 80.46305987040643,
+        "upper": 89.79867196121387,
+        "rsi": 79.90914139505249,
+        "k": 0.9999999999999978,
+        "d": 0.9657153584574036,
+        "macd": 2.351788866091795,
+        "macd_signal": 1.982384446868842
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": true,
+        "RSI": true,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 3,
+      "asset": "US_KO",
+      "date": "2026-11-16",
+      "observations": 2734,
+      "previous": {
+        "price": 89.80275063336953,
+        "lower": 80.6989148887318,
+        "upper": 88.85316999548188,
+        "rsi": 78.88794279440641,
+        "k": 0.9999999999999978,
+        "d": 0.8853590063291117,
+        "macd": 2.186870665019043,
+        "macd_signal": 1.890033342063103
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 90.32141216354968,
+        "move_pct": 0,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": true
+      },
+      "name": "COCA COLA CO",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/KO?period1=1451606400&period2=1794960000&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-17T08:28:50.570460+00:00",
+      "model_eligible": false,
+      "ticker": "KO",
+      "quote_url": "https://finance.yahoo.com/quote/KO/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 475.26786087947727,
+        "lower": 444.04734115578174,
+        "upper": 478.0093501160236,
+        "rsi": 72.06989529554002,
+        "k": 0.6184219261631091,
+        "d": 0.5827788525096042,
+        "macd": 10.141673897268106,
+        "macd_signal": 9.779802525964568
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": true,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "asset": "US_LIN",
+      "date": "2026-11-16",
+      "observations": 2734,
+      "previous": {
+        "price": 475.9862446241348,
+        "lower": 443.1964609245169,
+        "upper": 476.1833331182632,
+        "rsi": 73.18464108173978,
+        "k": 0.6508989018572189,
+        "d": 0.5042870311012001,
+        "macd": 10.081413742480095,
+        "macd_signal": 9.689334683138682
+      },
+      "buy_trigger": null,
+      "sell_trigger": null,
+      "name": "LINDE PLC",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/LIN?period1=1451606400&period2=1794960000&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-17T08:28:51.363685+00:00",
+      "model_eligible": false,
+      "ticker": "LIN",
+      "quote_url": "https://finance.yahoo.com/quote/LIN/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 1299.8638495962523,
+        "lower": 1101.820788367774,
+        "upper": 1344.5028980955788,
+        "rsi": 71.7037869528614,
+        "k": 0.569039300985137,
+        "d": 0.5644807994520424,
+        "macd": 55.46927098585661,
+        "macd_signal": 52.613774786802125
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": true,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "asset": "US_LLY",
+      "date": "2026-11-16",
+      "observations": 2734,
+      "previous": {
+        "price": 1306.0984437205937,
+        "lower": 1087.0823480638871,
+        "upper": 1339.7529459405362,
+        "rsi": 73.55919610932214,
+        "k": 0.5876840805698195,
+        "d": 0.5385240397632444,
+        "macd": 55.7459142040575,
+        "macd_signal": 51.89990073703849
+      },
+      "buy_trigger": null,
+      "sell_trigger": null,
+      "name": "ELI LILLY & Co",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/LLY?period1=1451606400&period2=1794960000&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-17T08:28:49.040378+00:00",
+      "model_eligible": false,
+      "ticker": "LLY",
+      "quote_url": "https://finance.yahoo.com/quote/LLY/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 600.7899237086039,
+        "lower": 539.2921211775528,
+        "upper": 610.9414483074889,
+        "rsi": 71.0482471594145,
+        "k": 0.416404234721317,
+        "d": 0.3953647828997471,
+        "macd": 18.09492097367172,
+        "macd_signal": 17.942174241309306
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": true,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "asset": "US_MA",
+      "date": "2026-11-16",
+      "observations": 2734,
+      "previous": {
+        "price": 598.253711944812,
+        "lower": 537.0381377031885,
+        "upper": 608.0295818977689,
+        "rsi": 70.18538183671933,
+        "k": 0.4156719096692745,
+        "d": 0.3760272426650437,
+        "macd": 18.01469072735233,
+        "macd_signal": 17.903987558218702
+      },
+      "buy_trigger": null,
+      "sell_trigger": null,
+      "name": "Mastercard Inc",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/MA?period1=1451606400&period2=1794960000&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-17T08:28:50.159173+00:00",
+      "model_eligible": false,
+      "ticker": "MA",
+      "quote_url": "https://finance.yahoo.com/quote/MA/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 249.3826161501129,
+        "lower": 213.0930806370044,
+        "upper": 259.94222887322275,
+        "rsi": 72.07404644097147,
+        "k": 0.4463995765927916,
+        "d": 0.5236117990202139,
+        "macd": 8.43699144460794,
+        "macd_signal": 7.728276697006283
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": true,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "asset": "US_MCD",
+      "date": "2026-11-16",
+      "observations": 2734,
+      "previous": {
+        "price": 246.08215818015125,
+        "lower": 210.62450764155588,
+        "upper": 259.09124833107154,
+        "rsi": 69.24245434753969,
+        "k": 0.4585297044065061,
+        "d": 0.6552762752248489,
+        "macd": 8.517281757467629,
+        "macd_signal": 7.551098010105869
+      },
+      "buy_trigger": null,
+      "sell_trigger": null,
+      "name": "MCDONALDS CORP",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/MCD?period1=1451606400&period2=1794960000&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-17T08:28:51.620283+00:00",
+      "model_eligible": false,
+      "ticker": "MCD",
+      "quote_url": "https://finance.yahoo.com/quote/MCD/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 568.7397613442267,
+        "lower": 524.7856603381355,
+        "upper": 609.024438529632,
+        "rsi": 46.65048288422003,
+        "k": 0.8633077490729378,
+        "d": 0.8727466098754514,
+        "macd": -10.342117070565223,
+        "macd_signal": -12.952044931723837
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "asset": "US_META",
+      "date": "2026-11-16",
+      "observations": 2734,
+      "previous": {
+        "price": 580.609846581077,
+        "lower": 519.937054540255,
+        "upper": 619.844502709028,
+        "rsi": 50.368676767804736,
+        "k": 0.8808459189896216,
+        "d": 0.8886628775449238,
+        "macd": -11.25231680697334,
+        "macd_signal": -13.60452689701349
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 678.0653951077251,
+        "move_pct": 19.222435495824165,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "Meta Platforms, Inc.",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/META?period1=1451606400&period2=1794960000&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-17T08:28:48.971828+00:00",
+      "model_eligible": false,
+      "ticker": "META",
+      "quote_url": "https://finance.yahoo.com/quote/META/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 365.1625226451845,
+        "lower": 325.4150057880544,
+        "upper": 435.3841620948384,
+        "rsi": 46.12887740109178,
+        "k": 0.6987892620763884,
+        "d": 0.5526793911089299,
+        "macd": -6.642017152443316,
+        "macd_signal": -4.650253040699271
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 0,
+      "sell_votes": 1,
+      "asset": "US_MPC",
+      "date": "2026-11-16",
+      "observations": 2734,
+      "previous": {
+        "price": 375.1809571991354,
+        "lower": 325.8773515962479,
+        "upper": 440.60511880532533,
+        "rsi": 49.999701555922854,
+        "k": 0.593901529219896,
+        "d": 0.4071114513481577,
+        "macd": -6.903456577714962,
+        "macd_signal": -4.15231201276326
+      },
+      "buy_trigger": null,
+      "sell_trigger": null,
+      "name": "Marathon Petroleum Corp",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/MPC?period1=1451606400&period2=1794960000&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-17T08:28:52.148750+00:00",
+      "model_eligible": false,
+      "ticker": "MPC",
+      "quote_url": "https://finance.yahoo.com/quote/MPC/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 131.16034747945088,
+        "lower": 126.59739106486502,
+        "upper": 135.7780648178974,
+        "rsi": 50.90618560150344,
+        "k": 0.6410673065979952,
+        "d": 0.6857763515886374,
+        "macd": 0.988168710003805,
+        "macd_signal": 0.9835340391170336
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 0,
+      "asset": "US_MRK",
+      "date": "2026-11-16",
+      "observations": 2734,
+      "previous": {
+        "price": 133.6952538064024,
+        "lower": 126.22562566645668,
+        "upper": 135.8293415603707,
+        "rsi": 56.62566943007808,
+        "k": 0.7398388724613989,
+        "d": 0.6967486719049715,
+        "macd": 1.132277287890503,
+        "macd_signal": 0.9823753713953407
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 143.75361101391516,
+        "move_pct": 9.601425870297643,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "Merck & Co., Inc.",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/MRK?period1=1451606400&period2=1794960000&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-17T08:28:50.695463+00:00",
+      "model_eligible": false,
+      "ticker": "MRK",
+      "quote_url": "https://finance.yahoo.com/quote/MRK/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 470.3014256713048,
+        "lower": 457.07246186289507,
+        "upper": 489.59667379048113,
+        "rsi": 50.1083473483069,
+        "k": 0.435609954978769,
+        "d": 0.4317366140726691,
+        "macd": 3.074559761299952,
+        "macd_signal": 4.661869190586886
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 0,
+      "sell_votes": 1,
+      "asset": "US_MSFT",
+      "date": "2026-11-16",
+      "observations": 2734,
+      "previous": {
+        "price": 474.01375758488285,
+        "lower": 457.3628333268178,
+        "upper": 489.8057828802519,
+        "rsi": 52.01737812752824,
+        "k": 0.4250340983331451,
+        "d": 0.4688151099792806,
+        "macd": 3.651733326684621,
+        "macd_signal": 5.058696547908619
+      },
+      "buy_trigger": null,
+      "sell_trigger": null,
+      "name": "MICROSOFT CORP",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/MSFT?period1=1451606400&period2=1794960000&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-17T08:28:48.602580+00:00",
+      "model_eligible": false,
+      "ticker": "MSFT",
+      "quote_url": "https://finance.yahoo.com/quote/MSFT/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 652.8236966871709,
+        "lower": 584.7610303908134,
+        "upper": 899.3399303819367,
+        "rsi": 39.31024128781423,
+        "k": 0.5570620834308214,
+        "d": 0.5815182545277857,
+        "macd": -47.41179704060312,
+        "macd_signal": -45.29815494425119
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 0,
+      "sell_votes": 1,
+      "asset": "US_MU",
+      "date": "2026-11-16",
+      "observations": 2734,
+      "previous": {
+        "price": 704.2254773421948,
+        "lower": 595.6573069387547,
+        "upper": 903.775985672099,
+        "rsi": 43.67424287830269,
+        "k": 0.6392461547031463,
+        "d": 0.5446709380820678,
+        "macd": -45.891830140162824,
+        "macd_signal": -44.76974442016321
+      },
+      "buy_trigger": null,
+      "sell_trigger": null,
+      "name": "MICRON TECHNOLOGY INC",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/MU?period1=1451606400&period2=1794960000&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-17T08:28:49.382561+00:00",
+      "model_eligible": false,
+      "ticker": "MU",
+      "quote_url": "https://finance.yahoo.com/quote/MU/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 77.48319987097388,
+        "lower": 70.13365821461767,
+        "upper": 80.33926498787537,
+        "rsi": 66.3901338202425,
+        "k": 0.3030553751068628,
+        "d": 0.3091365747483107,
+        "macd": 1.790437451405921,
+        "macd_signal": 1.770942559060483
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 0,
+      "asset": "US_NEE",
+      "date": "2026-11-16",
+      "observations": 2734,
+      "previous": {
+        "price": 77.01773683186937,
+        "lower": 69.30534213047524,
+        "upper": 80.38318074362375,
+        "rsi": 64.6332283447981,
+        "k": 0.3046729849884635,
+        "d": 0.3695692696397348,
+        "macd": 1.835246790655148,
+        "macd_signal": 1.766068835974123
+      },
+      "buy_trigger": {
+        "price": 66.73815161169207,
+        "move_pct": -13.867584556619505,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "sell_trigger": null,
+      "name": "NEXTERA ENERGY INC",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/NEE?period1=1451606400&period2=1794960000&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-17T08:28:51.706379+00:00",
+      "model_eligible": false,
+      "ticker": "NEE",
+      "quote_url": "https://finance.yahoo.com/quote/NEE/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 100.15434679371144,
+        "lower": 93.9437665139454,
+        "upper": 110.86391686733745,
+        "rsi": 45.21603440127253,
+        "k": 0.3697249150473262,
+        "d": 0.4759363036364689,
+        "macd": 0.1147459117174492,
+        "macd_signal": 0.137648533896393
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 0,
+      "sell_votes": 1,
+      "asset": "US_NEM",
+      "date": "2026-11-16",
+      "observations": 2734,
+      "previous": {
+        "price": 102.37061110174488,
+        "lower": 94.17914541672636,
+        "upper": 111.12624378729947,
+        "rsi": 48.30763192676941,
+        "k": 0.4855828098852014,
+        "d": 0.6122730284079462,
+        "macd": 0.4489696542123625,
+        "macd_signal": 0.1433741894411289
+      },
+      "buy_trigger": null,
+      "sell_trigger": null,
+      "name": "NEWMONT Corp /DE/",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/NEM?period1=1451606400&period2=1794960000&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-17T08:28:51.974771+00:00",
+      "model_eligible": false,
+      "ticker": "NEM",
+      "quote_url": "https://finance.yahoo.com/quote/NEM/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 55.15707281641547,
+        "lower": 54.06516302987239,
+        "upper": 60.33039212050776,
+        "rsi": 37.78001088824026,
+        "k": 0.5393666564571968,
+        "d": 0.6578817343723329,
+        "macd": -1.396995784161199,
+        "macd_signal": -1.47894378859384
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 0,
+      "asset": "US_NFLX",
+      "date": "2026-11-16",
+      "observations": 2734,
+      "previous": {
+        "price": 56.234167142489056,
+        "lower": 53.871680037734286,
+        "upper": 61.230884844289044,
+        "rsi": 40.867428951058024,
+        "k": 0.730205873140469,
+        "d": 0.7127829972330941,
+        "macd": -1.331610400162674,
+        "macd_signal": -1.499430789702
+      },
+      "buy_trigger": null,
+      "sell_trigger": null,
+      "name": "NETFLIX INC",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/NFLX?period1=1451606400&period2=1794960000&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-17T08:28:51.458680+00:00",
+      "model_eligible": false,
+      "ticker": "NFLX",
+      "quote_url": "https://finance.yahoo.com/quote/NFLX/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 141.76502577596554,
+        "lower": 138.49218253966998,
+        "upper": 211.77634228229917,
+        "rsi": 25.307325702383558,
+        "k": 0.07195977823377543,
+        "d": 0.1159213083670601,
+        "macd": -12.941469909949717,
+        "macd_signal": -9.259612137455377
+      },
+      "buy": {
+        "BB": false,
+        "RSI": true,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 2,
+      "sell_votes": 1,
+      "asset": "US_NVDA",
+      "date": "2026-11-16",
+      "observations": 2734,
+      "previous": {
+        "price": 147.34890164994175,
+        "lower": 143.65719855152042,
+        "upper": 211.77468973631682,
+        "rsi": 27.442407683756144,
+        "k": 0.152161116767892,
+        "d": 0.1303590034931894,
+        "macd": -12.001725744612827,
+        "macd_signal": -8.339147694331793
+      },
+      "buy_trigger": {
+        "price": 137.45201408825574,
+        "move_pct": -3.04236652453741,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "sell_trigger": null,
+      "name": "NVIDIA CORP",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/NVDA?period1=1451606400&period2=1794960000&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-17T08:28:48.618213+00:00",
+      "model_eligible": false,
+      "ticker": "NVDA",
+      "quote_url": "https://finance.yahoo.com/quote/NVDA/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 157.09097900168962,
+        "lower": 138.3344767431173,
+        "upper": 155.69268779975187,
+        "rsi": 79.7629114728353,
+        "k": 1,
+        "d": 0.9593706292033478,
+        "macd": 4.685554360434026,
+        "macd_signal": 4.205877261683407
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": true,
+        "RSI": true,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 3,
+      "asset": "US_PG",
+      "date": "2026-11-16",
+      "observations": 2734,
+      "previous": {
+        "price": 153.63735346702663,
+        "lower": 138.3861684160305,
+        "upper": 153.98000534839855,
+        "rsi": 75.92754697917312,
+        "k": 1,
+        "d": 0.8778931107679582,
+        "macd": 4.346517293530951,
+        "macd_signal": 4.085957986995751
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 157.09097900168962,
+        "move_pct": 0,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": true
+      },
+      "name": "PROCTER & GAMBLE Co",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/PG?period1=1451606400&period2=1794960000&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-17T08:28:50.586089+00:00",
+      "model_eligible": false,
+      "ticker": "PG",
+      "quote_url": "https://finance.yahoo.com/quote/PG/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 115.85254991294816,
+        "lower": 111.93644651319332,
+        "upper": 117.59553879169886,
+        "rsi": 51.64954240231787,
+        "k": 0.7840886593476899,
+        "d": 0.8364551770720589,
+        "macd": 0.2270296147896858,
+        "macd_signal": -0.06741609483000052
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 0,
+      "asset": "US_PLD",
+      "date": "2026-11-16",
+      "observations": 2734,
+      "previous": {
+        "price": 116.42236533563636,
+        "lower": 111.17701008539021,
+        "upper": 117.82450832066957,
+        "rsi": 53.7374857074685,
+        "k": 0.8717418683301382,
+        "d": 0.8796170655383091,
+        "macd": 0.2209158883114526,
+        "macd_signal": -0.1410275222349221
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 124.06334629877124,
+        "move_pct": 7.087281541919177,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "Prologis, Inc.",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/PLD?period1=1451606400&period2=1794960000&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-17T08:28:52.069765+00:00",
+      "model_eligible": false,
+      "ticker": "PLD",
+      "quote_url": "https://finance.yahoo.com/quote/PLD/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 176.94752078232108,
+        "lower": 168.6763052303275,
+        "upper": 183.6016805084389,
+        "rsi": 53.22435701086242,
+        "k": 0.4801025227517939,
+        "d": 0.5451334771982902,
+        "macd": 2.056544870405219,
+        "macd_signal": 1.968770639620659
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 0,
+      "asset": "US_RTX",
+      "date": "2026-11-16",
+      "observations": 2734,
+      "previous": {
+        "price": 179.67788801217398,
+        "lower": 168.08917071277006,
+        "upper": 183.6085396168379,
+        "rsi": 57.73765709457655,
+        "k": 0.5803477195756802,
+        "d": 0.5595994960203222,
+        "macd": 2.22742504820215,
+        "macd_signal": 1.946827081924519
+      },
+      "buy_trigger": null,
+      "sell_trigger": null,
+      "name": "RTX Corp",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/RTX?period1=1451606400&period2=1794960000&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-17T08:28:51.165887+00:00",
+      "model_eligible": false,
+      "ticker": "RTX",
+      "quote_url": "https://finance.yahoo.com/quote/RTX/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 318.2676671008915,
+        "lower": 287.612410761292,
+        "upper": 327.69113848097555,
+        "rsi": 59.27052564626742,
+        "k": 0.6414968807067138,
+        "d": 0.6524607329824068,
+        "macd": 6.932529407515744,
+        "macd_signal": 6.21596058375239
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 0,
+      "asset": "US_SHW",
+      "date": "2026-11-16",
+      "observations": 2734,
+      "previous": {
+        "price": 316.5852466960165,
+        "lower": 286.4162623930922,
+        "upper": 326.6026123753055,
+        "rsi": 58.299134127185575,
+        "k": 0.6639926926343677,
+        "d": 0.659252738593647,
+        "macd": 6.964557017829179,
+        "macd_signal": 6.036818377811551
+      },
+      "buy_trigger": null,
+      "sell_trigger": null,
+      "name": "SHERWIN WILLIAMS CO",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/SHW?period1=1451606400&period2=1794960000&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-17T08:28:52.907936+00:00",
+      "model_eligible": false,
+      "ticker": "SHW",
+      "quote_url": "https://finance.yahoo.com/quote/SHW/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 85.92700144329802,
+        "lower": 80.90530399911259,
+        "upper": 85.67109505590747,
+        "rsi": 68.0438969680932,
+        "k": 0.4227005382811767,
+        "d": 0.3351030409330751,
+        "macd": 1.580590311604396,
+        "macd_signal": 1.604370813847925
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "sell": {
+        "BB": true,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 0,
+      "sell_votes": 2,
+      "asset": "US_SO",
+      "date": "2026-11-16",
+      "observations": 2734,
+      "previous": {
+        "price": 84.68150229631797,
+        "lower": 80.37901192803868,
+        "upper": 85.55747064795817,
+        "rsi": 64.12638980352301,
+        "k": 0.3335492086156605,
+        "d": 0.2987579145365263,
+        "macd": 1.48879709554511,
+        "macd_signal": 1.610315939408807
+      },
+      "buy_trigger": {
+        "price": 73.12419089918815,
+        "move_pct": -14.89963612026921,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "sell_trigger": null,
+      "name": "SOUTHERN CO",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/SO?period1=1451606400&period2=1794960000&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-17T08:28:52.474255+00:00",
+      "model_eligible": false,
+      "ticker": "SO",
+      "quote_url": "https://finance.yahoo.com/quote/SO/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 344.77936284217816,
+        "lower": 315.6987131979772,
+        "upper": 375.5519667165988,
+        "rsi": 51.75707889848207,
+        "k": 0.6182221879152188,
+        "d": 0.6220019027466138,
+        "macd": 4.005112894478771,
+        "macd_signal": 4.244528570706867
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 0,
+      "sell_votes": 1,
+      "asset": "US_TSLA",
+      "date": "2026-11-16",
+      "observations": 2734,
+      "previous": {
+        "price": 353.0763673730575,
+        "lower": 313.8699458753412,
+        "upper": 375.69210711435727,
+        "rsi": 55.45694044103705,
+        "k": 0.6490045880688808,
+        "d": 0.5882925292003258,
+        "macd": 4.352842121262483,
+        "macd_signal": 4.304382489763892
+      },
+      "buy_trigger": null,
+      "sell_trigger": null,
+      "name": "Tesla, Inc.",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/TSLA?period1=1451606400&period2=1794960000&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-17T08:28:49.271635+00:00",
+      "model_eligible": false,
+      "ticker": "TSLA",
+      "quote_url": "https://finance.yahoo.com/quote/TSLA/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 387.19810373622494,
+        "lower": 355.43836055749387,
+        "upper": 391.2509223621247,
+        "rsi": 68.75910931039121,
+        "k": 0.2066893330082993,
+        "d": 0.154018765302364,
+        "macd": 10.48047151209596,
+        "macd_signal": 10.755968320174148
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 0,
+      "sell_votes": 1,
+      "asset": "US_V",
+      "date": "2026-11-16",
+      "observations": 2734,
+      "previous": {
+        "price": 385.2334507470367,
+        "lower": 354.16368952026187,
+        "upper": 389.70066172753684,
+        "rsi": 67.65303709115695,
+        "k": 0.172129032252697,
+        "d": 0.1128682978482981,
+        "macd": 10.419417311316863,
+        "macd_signal": 10.824842522193693
+      },
+      "buy_trigger": {
+        "price": 315.5860793123,
+        "move_pct": -18.49493159519964,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "sell_trigger": null,
+      "name": "VISA INC.",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/V?period1=1451606400&period2=1794960000&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-17T08:28:49.818579+00:00",
+      "model_eligible": false,
+      "ticker": "V",
+      "quote_url": "https://finance.yahoo.com/quote/V/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 222.1263790598188,
+        "lower": 203.3466669493117,
+        "upper": 226.8663908791821,
+        "rsi": 65.60913893402125,
+        "k": 0.8939285627501553,
+        "d": 0.9200614517371277,
+        "macd": 4.248478815045161,
+        "macd_signal": 3.71683267009644
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "asset": "US_WELL",
+      "date": "2026-11-16",
+      "observations": 2734,
+      "previous": {
+        "price": 221.19074078344843,
+        "lower": 202.7192762807212,
+        "upper": 226.08381575821267,
+        "rsi": 64.3961225631165,
+        "k": 0.9163451762316536,
+        "d": 0.9524664323687352,
+        "macd": 4.233553668584847,
+        "macd_signal": 3.58392113385926
+      },
+      "buy_trigger": null,
+      "sell_trigger": {
+        "price": 228.13622050949448,
+        "move_pct": 2.705595560110052,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "WELLTOWER INC.",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/WELL?period1=1451606400&period2=1794960000&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-17T08:28:51.813845+00:00",
+      "model_eligible": false,
+      "ticker": "WELL",
+      "quote_url": "https://finance.yahoo.com/quote/WELL/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 116.58798226085834,
+        "lower": 103.74690170632626,
+        "upper": 117.83146853088432,
+        "rsi": 73.66427651473646,
+        "k": 0.437931556952097,
+        "d": 0.2867895283679359,
+        "macd": 3.764030060692733,
+        "macd_signal": 3.735426249485289
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "sell": {
+        "BB": false,
+        "RSI": true,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "asset": "US_WMT",
+      "date": "2026-11-16",
+      "observations": 2734,
+      "previous": {
+        "price": 115.8975717860031,
+        "lower": 103.40752785720002,
+        "upper": 117.08665412704207,
+        "rsi": 72.58451224100735,
+        "k": 0.2932488470347035,
+        "d": 0.1555702771444462,
+        "macd": 3.688146352173902,
+        "macd_signal": 3.728275296683428
+      },
+      "buy_trigger": null,
+      "sell_trigger": null,
+      "name": "Walmart Inc.",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/WMT?period1=1451606400&period2=1794960000&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-17T08:28:50.050185+00:00",
+      "model_eligible": false,
+      "ticker": "WMT",
+      "quote_url": "https://finance.yahoo.com/quote/WMT/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 151.50716825602643,
+        "lower": 143.2528926380858,
+        "upper": 169.71625801751262,
+        "rsi": 47.350671443441094,
+        "k": 0.2881648560880704,
+        "d": 0.2283234452983104,
+        "macd": -0.3818959286577126,
+        "macd_signal": 0.7020231960619221
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 0,
+      "sell_votes": 1,
+      "asset": "US_XOM",
+      "date": "2026-11-16",
+      "observations": 2734,
+      "previous": {
+        "price": 154.3521501428616,
+        "lower": 143.7858960746329,
+        "upper": 169.91494299182585,
+        "rsi": 51.70653806360414,
+        "k": 0.2574113038406395,
+        "d": 0.149551379422897,
+        "macd": -0.2741441073249575,
+        "macd_signal": 0.9730029772418307
+      },
+      "buy_trigger": null,
+      "sell_trigger": null,
+      "name": "ExxonMobil Holdings Corp",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/XOM?period1=1451606400&period2=1794960000&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-17T08:28:49.836589+00:00",
+      "model_eligible": false,
+      "ticker": "XOM",
+      "quote_url": "https://finance.yahoo.com/quote/XOM/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
     }
   ],
   "unavailable": [],
@@ -5161,7 +7968,12 @@
       "PFE"
     ],
     "experimental_companies": 46,
-    "experimental_prepared_histories": 45
+    "experimental_prepared_histories": 45,
+    "reference_companies": 47,
+    "long_history_reference_companies": 46,
+    "short_history_only": [
+      "GEV"
+    ]
   },
   "model_input_sha256": "7adaf51d1260d9c3703528b477e0cf1034e621158b7c10f859307fe314e2b46e"
 }
