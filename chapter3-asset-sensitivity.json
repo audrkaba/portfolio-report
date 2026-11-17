@@ -16,7 +16,7 @@
     "HAE1T": "Harju Elekter Group",
     "HPR1T": "Hepsor",
     "IDX1R": "INDEXO",
-    "IGN1L": "Ignitis grupė",
+    "IGN1L": "Ignitis grupÄ—",
     "IGR1R": "LAU Infra Grupa",
     "INF1T": "Infortar",
     "KALVE": "Kalve Coffee",
@@ -33,9 +33,9 @@
     "NTU1L": "Novaturas",
     "PKG1T": "Pro Kapital Grupp",
     "PRIMO": "Primostar Group",
-    "PZV1L": "Pieno žvaigždės",
+    "PZV1L": "Pieno Å¾vaigÅ¾dÄ—s",
     "ROE1L": "Artea Bankas",
-    "RSU1L": "Rokiškio sūris",
+    "RSU1L": "RokiÅ¡kio sÅ«ris",
     "SAF1R": "SAF Tehnika",
     "SAUNA": "Saunum Group",
     "SE0013876927": "Swedbank Robur Access Edge Japan C",
@@ -68,8 +68,8 @@
     "TSM1T": "Tallinna Sadam",
     "TVE1T": "Tallinna Vesi",
     "US_PFE": "Pfizer Inc.",
-    "VIRSI": "VIRŠI-A",
-    "VLP1L": "Vilkyškių pieninė",
+    "VIRSI": "VIRÅ I-A",
+    "VLP1L": "VilkyÅ¡kiÅ³ pieninÄ—",
     "US_AAPL": "Apple Inc.",
     "US_ABBV": "AbbVie Inc.",
     "US_AMD": "ADVANCED MICRO DEVICES INC",
@@ -3924,6 +3924,86 @@
               "SD": 0.0009823858617635656,
               "CVaR95": 0.0021061920817679325,
               "loss_probability": -0.00945423709964599
+            },
+            "current_addition": {
+              "asset": "VLP1L",
+              "quantity": 32.0,
+              "terminal": {
+                "mean_return": 0.004732744633511377,
+                "SD": 0.01994129870261446,
+                "Sharpe": 0.2373338218383378,
+                "Sortino": 0.3548555782160339,
+                "Rachev": 1.03488114369406,
+                "CVaR95": 0.054471344315705515,
+                "VaR95": 0.040362096052997606,
+                "worst_return": -0.21312418831005328,
+                "loss_probability": 0.2105100157545351,
+                "upper_tail_mean": 0.05637136710399026,
+                "expected_terminal_wealth_EUR": 15070.991169502671,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.26973684210526316,
+                "OUT": 49,
+                "IN": 8,
+                "D": 152,
+                "expected_return": 0.004732744633511377,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  5,
+                  21,
+                  23
+                ],
+                "IN_by_order": [
+                  0,
+                  4,
+                  4
+                ]
+              },
+              "cash_EUR": 3015.2860665481194,
+              "status": "Current plus this exact proposed buy; all other Current quantities unchanged",
+              "baseline": {
+                "mean_return": 0.003991808198747184,
+                "SD": 0.01896512764943162,
+                "Sharpe": 0.21048148330637875,
+                "Sortino": 0.31091236578240655,
+                "Rachev": 1.0156808529582073,
+                "CVaR95": 0.052371900036172044,
+                "VaR95": 0.0391613166452256,
+                "worst_return": -0.20299828491669236,
+                "loss_probability": 0.2305093731419694,
+                "upper_tail_mean": 0.05319313609978119,
+                "expected_terminal_wealth_EUR": 15059.877122981206,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.2631578947368421,
+                "OUT": 48,
+                "IN": 8,
+                "D": 152,
+                "expected_return": 0.003991808198747184,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  4,
+                  21,
+                  23
+                ],
+                "IN_by_order": [
+                  0,
+                  4,
+                  4
+                ]
+              },
+              "delta": {
+                "netSD": 0.006578947368421073,
+                "Sharpe": 0.026852338531959036,
+                "Rachev": 0.01920029073585261,
+                "Sortino": 0.043943212433627366,
+                "mean_return": 0.0007409364347641927,
+                "SD": 0.000976171053182838,
+                "CVaR95": 0.0020994442795334717,
+                "loss_probability": -0.019999357387434302
+              }
             }
           },
           {
@@ -4004,6 +4084,86 @@
               "SD": 0.0005265317112052997,
               "CVaR95": 0.0004059632723519141,
               "loss_probability": 0.03052437782157419
+            },
+            "current_addition": {
+              "asset": "SE0015192349",
+              "quantity": 25.745,
+              "terminal": {
+                "mean_return": 0.0043096899047051765,
+                "SD": 0.019460975138301407,
+                "Sharpe": 0.22145292690001014,
+                "Sortino": 0.3321919893214772,
+                "Rachev": 1.0278102565017586,
+                "CVaR95": 0.052753742386377554,
+                "VaR95": 0.03921535446254042,
+                "worst_return": -0.20432011567368866,
+                "loss_probability": 0.2589035772976092,
+                "upper_tail_mean": 0.05422083749357041,
+                "expected_terminal_wealth_EUR": 15064.645348570579,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.26973684210526316,
+                "OUT": 49,
+                "IN": 8,
+                "D": 152,
+                "expected_return": 0.0043096899047051765,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  4,
+                  22,
+                  23
+                ],
+                "IN_by_order": [
+                  0,
+                  4,
+                  4
+                ]
+              },
+              "cash_EUR": 3006.492421548119,
+              "status": "Current plus this exact proposed buy; all other Current quantities unchanged",
+              "baseline": {
+                "mean_return": 0.003991808198747184,
+                "SD": 0.01896512764943162,
+                "Sharpe": 0.21048148330637875,
+                "Sortino": 0.31091236578240655,
+                "Rachev": 1.0156808529582073,
+                "CVaR95": 0.052371900036172044,
+                "VaR95": 0.0391613166452256,
+                "worst_return": -0.20299828491669236,
+                "loss_probability": 0.2305093731419694,
+                "upper_tail_mean": 0.05319313609978119,
+                "expected_terminal_wealth_EUR": 15059.877122981206,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.2631578947368421,
+                "OUT": 48,
+                "IN": 8,
+                "D": 152,
+                "expected_return": 0.003991808198747184,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  4,
+                  21,
+                  23
+                ],
+                "IN_by_order": [
+                  0,
+                  4,
+                  4
+                ]
+              },
+              "delta": {
+                "netSD": 0.006578947368421073,
+                "Sharpe": 0.010971443593631391,
+                "Rachev": 0.012129403543551298,
+                "Sortino": 0.021279623539070647,
+                "mean_return": 0.0003178817059579925,
+                "SD": 0.0004958474888697856,
+                "CVaR95": 0.0003818423502055107,
+                "loss_probability": 0.028394204155639813
+              }
             }
           }
         ],
@@ -6017,6 +6177,86 @@
               "SD": 0.0005762235382030627,
               "CVaR95": 0.00018454030651193776,
               "loss_probability": 0.03234291595233829
+            },
+            "current_addition": {
+              "asset": "SE0014261889",
+              "quantity": 43.588,
+              "terminal": {
+                "mean_return": 0.0043651211454572465,
+                "SD": 0.01952928001964034,
+                "Sharpe": 0.223516747215837,
+                "Sortino": 0.3371507455470871,
+                "Rachev": 1.031318299264033,
+                "CVaR95": 0.05254847728070303,
+                "VaR95": 0.039038624050737464,
+                "worst_return": -0.20287574724151225,
+                "loss_probability": 0.2675690726002805,
+                "upper_tail_mean": 0.05419420621804933,
+                "expected_terminal_wealth_EUR": 15065.476817181858,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.26973684210526316,
+                "OUT": 49,
+                "IN": 8,
+                "D": 152,
+                "expected_return": 0.0043651211454572465,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  4,
+                  22,
+                  23
+                ],
+                "IN_by_order": [
+                  0,
+                  4,
+                  4
+                ]
+              },
+              "cash_EUR": 2806.488939348119,
+              "status": "Current plus this exact proposed buy; all other Current quantities unchanged",
+              "baseline": {
+                "mean_return": 0.003991808198747184,
+                "SD": 0.01896512764943162,
+                "Sharpe": 0.21048148330637875,
+                "Sortino": 0.31091236578240655,
+                "Rachev": 1.0156808529582073,
+                "CVaR95": 0.052371900036172044,
+                "VaR95": 0.0391613166452256,
+                "worst_return": -0.20299828491669236,
+                "loss_probability": 0.2305093731419694,
+                "upper_tail_mean": 0.05319313609978119,
+                "expected_terminal_wealth_EUR": 15059.877122981206,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.2631578947368421,
+                "OUT": 48,
+                "IN": 8,
+                "D": 152,
+                "expected_return": 0.003991808198747184,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  4,
+                  21,
+                  23
+                ],
+                "IN_by_order": [
+                  0,
+                  4,
+                  4
+                ]
+              },
+              "delta": {
+                "netSD": 0.006578947368421073,
+                "Sharpe": 0.01303526390945825,
+                "Rachev": 0.015637446305825753,
+                "Sortino": 0.026238379764680575,
+                "mean_return": 0.00037331294671006255,
+                "SD": 0.0005641523702087196,
+                "CVaR95": 0.00017657724453098989,
+                "loss_probability": 0.03705969945831111
+              }
             }
           },
           {
@@ -6097,6 +6337,86 @@
               "SD": 6.134281686970972e-05,
               "CVaR95": -0.0003737602131587067,
               "loss_probability": 0.005012822289392982
+            },
+            "current_addition": {
+              "asset": "US_PFE",
+              "quantity": 11.476635000000002,
+              "terminal": {
+                "mean_return": 0.00402016643260447,
+                "SD": 0.01901439929830699,
+                "Sharpe": 0.21142747501691617,
+                "Sortino": 0.31507280944750304,
+                "Rachev": 1.0311422795959182,
+                "CVaR95": 0.051990176761032396,
+                "VaR95": 0.038877141312017784,
+                "worst_return": -0.20131884945149028,
+                "loss_probability": 0.2402389789373352,
+                "upper_tail_mean": 0.053609269381965675,
+                "expected_terminal_wealth_EUR": 15060.302496489068,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.26973684210526316,
+                "OUT": 49,
+                "IN": 8,
+                "D": 152,
+                "expected_return": 0.00402016643260447,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  4,
+                  21,
+                  24
+                ],
+                "IN_by_order": [
+                  0,
+                  4,
+                  4
+                ]
+              },
+              "cash_EUR": 3206.486086322623,
+              "status": "Current plus this exact proposed buy; all other Current quantities unchanged",
+              "baseline": {
+                "mean_return": 0.003991808198747184,
+                "SD": 0.01896512764943162,
+                "Sharpe": 0.21048148330637875,
+                "Sortino": 0.31091236578240655,
+                "Rachev": 1.0156808529582073,
+                "CVaR95": 0.052371900036172044,
+                "VaR95": 0.0391613166452256,
+                "worst_return": -0.20299828491669236,
+                "loss_probability": 0.2305093731419694,
+                "upper_tail_mean": 0.05319313609978119,
+                "expected_terminal_wealth_EUR": 15059.877122981206,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.2631578947368421,
+                "OUT": 48,
+                "IN": 8,
+                "D": 152,
+                "expected_return": 0.003991808198747184,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  4,
+                  21,
+                  23
+                ],
+                "IN_by_order": [
+                  0,
+                  4,
+                  4
+                ]
+              },
+              "delta": {
+                "netSD": 0.006578947368421073,
+                "Sharpe": 0.0009459917105374138,
+                "Rachev": 0.015461426637710884,
+                "Sortino": 0.0041604436650964916,
+                "mean_return": 2.8358233857285996e-05,
+                "SD": 4.927164887537014e-05,
+                "CVaR95": -0.00038172327513964766,
+                "loss_probability": 0.009729605795365803
+              }
             }
           }
         ],
@@ -7561,6 +7881,86 @@
               "SD": 0.0009823858617635656,
               "CVaR95": 0.0021061920817679325,
               "loss_probability": -0.00945423709964599
+            },
+            "current_addition": {
+              "asset": "VLP1L",
+              "quantity": 32.0,
+              "terminal": {
+                "mean_return": 0.004732744633511377,
+                "SD": 0.01994129870261446,
+                "Sharpe": 0.2373338218383378,
+                "Sortino": 0.3548555782160339,
+                "Rachev": 1.03488114369406,
+                "CVaR95": 0.054471344315705515,
+                "VaR95": 0.040362096052997606,
+                "worst_return": -0.21312418831005328,
+                "loss_probability": 0.2105100157545351,
+                "upper_tail_mean": 0.05637136710399026,
+                "expected_terminal_wealth_EUR": 15070.991169502671,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.26973684210526316,
+                "OUT": 49,
+                "IN": 8,
+                "D": 152,
+                "expected_return": 0.004732744633511377,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  5,
+                  21,
+                  23
+                ],
+                "IN_by_order": [
+                  0,
+                  4,
+                  4
+                ]
+              },
+              "cash_EUR": 3015.2860665481194,
+              "status": "Current plus this exact proposed buy; all other Current quantities unchanged",
+              "baseline": {
+                "mean_return": 0.003991808198747184,
+                "SD": 0.01896512764943162,
+                "Sharpe": 0.21048148330637875,
+                "Sortino": 0.31091236578240655,
+                "Rachev": 1.0156808529582073,
+                "CVaR95": 0.052371900036172044,
+                "VaR95": 0.0391613166452256,
+                "worst_return": -0.20299828491669236,
+                "loss_probability": 0.2305093731419694,
+                "upper_tail_mean": 0.05319313609978119,
+                "expected_terminal_wealth_EUR": 15059.877122981206,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.2631578947368421,
+                "OUT": 48,
+                "IN": 8,
+                "D": 152,
+                "expected_return": 0.003991808198747184,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  4,
+                  21,
+                  23
+                ],
+                "IN_by_order": [
+                  0,
+                  4,
+                  4
+                ]
+              },
+              "delta": {
+                "netSD": 0.006578947368421073,
+                "Sharpe": 0.026852338531959036,
+                "Rachev": 0.01920029073585261,
+                "Sortino": 0.043943212433627366,
+                "mean_return": 0.0007409364347641927,
+                "SD": 0.000976171053182838,
+                "CVaR95": 0.0020994442795334717,
+                "loss_probability": -0.019999357387434302
+              }
             }
           },
           {
@@ -7641,6 +8041,86 @@
               "SD": 0.0005265317112052997,
               "CVaR95": 0.0004059632723519141,
               "loss_probability": 0.03052437782157419
+            },
+            "current_addition": {
+              "asset": "SE0015192349",
+              "quantity": 25.745,
+              "terminal": {
+                "mean_return": 0.0043096899047051765,
+                "SD": 0.019460975138301407,
+                "Sharpe": 0.22145292690001014,
+                "Sortino": 0.3321919893214772,
+                "Rachev": 1.0278102565017586,
+                "CVaR95": 0.052753742386377554,
+                "VaR95": 0.03921535446254042,
+                "worst_return": -0.20432011567368866,
+                "loss_probability": 0.2589035772976092,
+                "upper_tail_mean": 0.05422083749357041,
+                "expected_terminal_wealth_EUR": 15064.645348570579,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.26973684210526316,
+                "OUT": 49,
+                "IN": 8,
+                "D": 152,
+                "expected_return": 0.0043096899047051765,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  4,
+                  22,
+                  23
+                ],
+                "IN_by_order": [
+                  0,
+                  4,
+                  4
+                ]
+              },
+              "cash_EUR": 3006.492421548119,
+              "status": "Current plus this exact proposed buy; all other Current quantities unchanged",
+              "baseline": {
+                "mean_return": 0.003991808198747184,
+                "SD": 0.01896512764943162,
+                "Sharpe": 0.21048148330637875,
+                "Sortino": 0.31091236578240655,
+                "Rachev": 1.0156808529582073,
+                "CVaR95": 0.052371900036172044,
+                "VaR95": 0.0391613166452256,
+                "worst_return": -0.20299828491669236,
+                "loss_probability": 0.2305093731419694,
+                "upper_tail_mean": 0.05319313609978119,
+                "expected_terminal_wealth_EUR": 15059.877122981206,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.2631578947368421,
+                "OUT": 48,
+                "IN": 8,
+                "D": 152,
+                "expected_return": 0.003991808198747184,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  4,
+                  21,
+                  23
+                ],
+                "IN_by_order": [
+                  0,
+                  4,
+                  4
+                ]
+              },
+              "delta": {
+                "netSD": 0.006578947368421073,
+                "Sharpe": 0.010971443593631391,
+                "Rachev": 0.012129403543551298,
+                "Sortino": 0.021279623539070647,
+                "mean_return": 0.0003178817059579925,
+                "SD": 0.0004958474888697856,
+                "CVaR95": 0.0003818423502055107,
+                "loss_probability": 0.028394204155639813
+              }
             }
           }
         ],
@@ -9654,6 +10134,86 @@
               "SD": 0.0005762235382030627,
               "CVaR95": 0.00018454030651193776,
               "loss_probability": 0.03234291595233829
+            },
+            "current_addition": {
+              "asset": "SE0014261889",
+              "quantity": 43.588,
+              "terminal": {
+                "mean_return": 0.0043651211454572465,
+                "SD": 0.01952928001964034,
+                "Sharpe": 0.223516747215837,
+                "Sortino": 0.3371507455470871,
+                "Rachev": 1.031318299264033,
+                "CVaR95": 0.05254847728070303,
+                "VaR95": 0.039038624050737464,
+                "worst_return": -0.20287574724151225,
+                "loss_probability": 0.2675690726002805,
+                "upper_tail_mean": 0.05419420621804933,
+                "expected_terminal_wealth_EUR": 15065.476817181858,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.26973684210526316,
+                "OUT": 49,
+                "IN": 8,
+                "D": 152,
+                "expected_return": 0.0043651211454572465,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  4,
+                  22,
+                  23
+                ],
+                "IN_by_order": [
+                  0,
+                  4,
+                  4
+                ]
+              },
+              "cash_EUR": 2806.488939348119,
+              "status": "Current plus this exact proposed buy; all other Current quantities unchanged",
+              "baseline": {
+                "mean_return": 0.003991808198747184,
+                "SD": 0.01896512764943162,
+                "Sharpe": 0.21048148330637875,
+                "Sortino": 0.31091236578240655,
+                "Rachev": 1.0156808529582073,
+                "CVaR95": 0.052371900036172044,
+                "VaR95": 0.0391613166452256,
+                "worst_return": -0.20299828491669236,
+                "loss_probability": 0.2305093731419694,
+                "upper_tail_mean": 0.05319313609978119,
+                "expected_terminal_wealth_EUR": 15059.877122981206,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.2631578947368421,
+                "OUT": 48,
+                "IN": 8,
+                "D": 152,
+                "expected_return": 0.003991808198747184,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  4,
+                  21,
+                  23
+                ],
+                "IN_by_order": [
+                  0,
+                  4,
+                  4
+                ]
+              },
+              "delta": {
+                "netSD": 0.006578947368421073,
+                "Sharpe": 0.01303526390945825,
+                "Rachev": 0.015637446305825753,
+                "Sortino": 0.026238379764680575,
+                "mean_return": 0.00037331294671006255,
+                "SD": 0.0005641523702087196,
+                "CVaR95": 0.00017657724453098989,
+                "loss_probability": 0.03705969945831111
+              }
             }
           },
           {
@@ -9734,6 +10294,86 @@
               "SD": 6.134281686970972e-05,
               "CVaR95": -0.0003737602131587067,
               "loss_probability": 0.005012822289392982
+            },
+            "current_addition": {
+              "asset": "US_PFE",
+              "quantity": 11.476635000000002,
+              "terminal": {
+                "mean_return": 0.00402016643260447,
+                "SD": 0.01901439929830699,
+                "Sharpe": 0.21142747501691617,
+                "Sortino": 0.31507280944750304,
+                "Rachev": 1.0311422795959182,
+                "CVaR95": 0.051990176761032396,
+                "VaR95": 0.038877141312017784,
+                "worst_return": -0.20131884945149028,
+                "loss_probability": 0.2402389789373352,
+                "upper_tail_mean": 0.053609269381965675,
+                "expected_terminal_wealth_EUR": 15060.302496489068,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.26973684210526316,
+                "OUT": 49,
+                "IN": 8,
+                "D": 152,
+                "expected_return": 0.00402016643260447,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  4,
+                  21,
+                  24
+                ],
+                "IN_by_order": [
+                  0,
+                  4,
+                  4
+                ]
+              },
+              "cash_EUR": 3206.486086322623,
+              "status": "Current plus this exact proposed buy; all other Current quantities unchanged",
+              "baseline": {
+                "mean_return": 0.003991808198747184,
+                "SD": 0.01896512764943162,
+                "Sharpe": 0.21048148330637875,
+                "Sortino": 0.31091236578240655,
+                "Rachev": 1.0156808529582073,
+                "CVaR95": 0.052371900036172044,
+                "VaR95": 0.0391613166452256,
+                "worst_return": -0.20299828491669236,
+                "loss_probability": 0.2305093731419694,
+                "upper_tail_mean": 0.05319313609978119,
+                "expected_terminal_wealth_EUR": 15059.877122981206,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.2631578947368421,
+                "OUT": 48,
+                "IN": 8,
+                "D": 152,
+                "expected_return": 0.003991808198747184,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  4,
+                  21,
+                  23
+                ],
+                "IN_by_order": [
+                  0,
+                  4,
+                  4
+                ]
+              },
+              "delta": {
+                "netSD": 0.006578947368421073,
+                "Sharpe": 0.0009459917105374138,
+                "Rachev": 0.015461426637710884,
+                "Sortino": 0.0041604436650964916,
+                "mean_return": 2.8358233857285996e-05,
+                "SD": 4.927164887537014e-05,
+                "CVaR95": -0.00038172327513964766,
+                "loss_probability": 0.009729605795365803
+              }
             }
           }
         ],
@@ -12579,6 +13219,86 @@
               "SD": 0.0004518817089473517,
               "CVaR95": 0.0013494046673973876,
               "loss_probability": -0.0021975469010240556
+            },
+            "current_addition": {
+              "asset": "AKO1L",
+              "quantity": 134.0,
+              "terminal": {
+                "mean_return": 0.004118356647106643,
+                "SD": 0.01945014149027089,
+                "Sharpe": 0.21173916134063478,
+                "Sortino": 0.3127328566083141,
+                "Rachev": 1.0162762917622405,
+                "CVaR95": 0.05373131320099673,
+                "VaR95": 0.04022138530527428,
+                "worst_return": -0.2082242093390112,
+                "loss_probability": 0.22798492428606648,
+                "upper_tail_mean": 0.054605859731424476,
+                "expected_terminal_wealth_EUR": 15061.775349706599,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.2631578947368421,
+                "OUT": 48,
+                "IN": 8,
+                "D": 152,
+                "expected_return": 0.004118356647106643,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  4,
+                  21,
+                  23
+                ],
+                "IN_by_order": [
+                  0,
+                  4,
+                  4
+                ]
+              },
+              "cash_EUR": 3267.966066548119,
+              "status": "Current plus this exact proposed buy; all other Current quantities unchanged",
+              "baseline": {
+                "mean_return": 0.003991808198747184,
+                "SD": 0.01896512764943162,
+                "Sharpe": 0.21048148330637875,
+                "Sortino": 0.31091236578240655,
+                "Rachev": 1.0156808529582073,
+                "CVaR95": 0.052371900036172044,
+                "VaR95": 0.0391613166452256,
+                "worst_return": -0.20299828491669236,
+                "loss_probability": 0.2305093731419694,
+                "upper_tail_mean": 0.05319313609978119,
+                "expected_terminal_wealth_EUR": 15059.877122981206,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.2631578947368421,
+                "OUT": 48,
+                "IN": 8,
+                "D": 152,
+                "expected_return": 0.003991808198747184,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  4,
+                  21,
+                  23
+                ],
+                "IN_by_order": [
+                  0,
+                  4,
+                  4
+                ]
+              },
+              "delta": {
+                "netSD": 0.0,
+                "Sharpe": 0.0012576780342560268,
+                "Rachev": 0.0005954388040332326,
+                "Sortino": 0.0018204908259075725,
+                "mean_return": 0.0001265484483594587,
+                "SD": 0.00048501384083926916,
+                "CVaR95": 0.0013594131648246854,
+                "loss_probability": -0.0025244488559029166
+              }
             }
           },
           {
@@ -12659,6 +13379,86 @@
               "SD": 0.0004566959007048198,
               "CVaR95": 0.00012840949882335362,
               "loss_probability": 0.01943110042367291
+            },
+            "current_addition": {
+              "asset": "SE0014261756",
+              "quantity": 24.884,
+              "terminal": {
+                "mean_return": 0.004308025878317695,
+                "SD": 0.019292829199795778,
+                "Sharpe": 0.22329674065446536,
+                "Sortino": 0.3343649338189242,
+                "Rachev": 1.0281599358728863,
+                "CVaR95": 0.0524441291320645,
+                "VaR95": 0.03912176527841916,
+                "worst_return": -0.20329115802682074,
+                "loss_probability": 0.24613087551226553,
+                "upper_tail_mean": 0.0539209524453328,
+                "expected_terminal_wealth_EUR": 15064.620388174766,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.26973684210526316,
+                "OUT": 49,
+                "IN": 8,
+                "D": 152,
+                "expected_return": 0.004308025878317695,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  4,
+                  22,
+                  23
+                ],
+                "IN_by_order": [
+                  0,
+                  4,
+                  4
+                ]
+              },
+              "cash_EUR": 3015.4600481481193,
+              "status": "Current plus this exact proposed buy; all other Current quantities unchanged",
+              "baseline": {
+                "mean_return": 0.003991808198747184,
+                "SD": 0.01896512764943162,
+                "Sharpe": 0.21048148330637875,
+                "Sortino": 0.31091236578240655,
+                "Rachev": 1.0156808529582073,
+                "CVaR95": 0.052371900036172044,
+                "VaR95": 0.0391613166452256,
+                "worst_return": -0.20299828491669236,
+                "loss_probability": 0.2305093731419694,
+                "upper_tail_mean": 0.05319313609978119,
+                "expected_terminal_wealth_EUR": 15059.877122981206,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.2631578947368421,
+                "OUT": 48,
+                "IN": 8,
+                "D": 152,
+                "expected_return": 0.003991808198747184,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  4,
+                  21,
+                  23
+                ],
+                "IN_by_order": [
+                  0,
+                  4,
+                  4
+                ]
+              },
+              "delta": {
+                "netSD": 0.006578947368421073,
+                "Sharpe": 0.012815257348086612,
+                "Rachev": 0.01247908291467903,
+                "Sortino": 0.02345256803651763,
+                "mean_return": 0.0003162176795705107,
+                "SD": 0.0003277015503641567,
+                "CVaR95": 7.222909589245374e-05,
+                "loss_probability": 0.015621502370296136
+              }
             }
           },
           {
@@ -12739,6 +13539,86 @@
               "SD": 0.0003194192881223745,
               "CVaR95": 0.0002584345179827939,
               "loss_probability": 0.011689559102164904
+            },
+            "current_addition": {
+              "asset": "SE0014261764",
+              "quantity": 6.223,
+              "terminal": {
+                "mean_return": 0.004139504944819858,
+                "SD": 0.019193667474543038,
+                "Sharpe": 0.21567034806194127,
+                "Sortino": 0.320676451785921,
+                "Rachev": 1.0197586622116896,
+                "CVaR95": 0.052593724116741465,
+                "VaR95": 0.03933983638410061,
+                "worst_return": -0.2038888635295001,
+                "loss_probability": 0.2442582052697313,
+                "upper_tail_mean": 0.05363290574601895,
+                "expected_terminal_wealth_EUR": 15062.092574172299,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.2631578947368421,
+                "OUT": 48,
+                "IN": 8,
+                "D": 152,
+                "expected_return": 0.004139504944819858,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  4,
+                  21,
+                  23
+                ],
+                "IN_by_order": [
+                  0,
+                  4,
+                  4
+                ]
+              },
+              "cash_EUR": 3349.686380148119,
+              "status": "Current plus this exact proposed buy; all other Current quantities unchanged",
+              "baseline": {
+                "mean_return": 0.003991808198747184,
+                "SD": 0.01896512764943162,
+                "Sharpe": 0.21048148330637875,
+                "Sortino": 0.31091236578240655,
+                "Rachev": 1.0156808529582073,
+                "CVaR95": 0.052371900036172044,
+                "VaR95": 0.0391613166452256,
+                "worst_return": -0.20299828491669236,
+                "loss_probability": 0.2305093731419694,
+                "upper_tail_mean": 0.05319313609978119,
+                "expected_terminal_wealth_EUR": 15059.877122981206,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.2631578947368421,
+                "OUT": 48,
+                "IN": 8,
+                "D": 152,
+                "expected_return": 0.003991808198747184,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  4,
+                  21,
+                  23
+                ],
+                "IN_by_order": [
+                  0,
+                  4,
+                  4
+                ]
+              },
+              "delta": {
+                "netSD": 0.0,
+                "Sharpe": 0.005188864755562517,
+                "Rachev": 0.004077809253482334,
+                "Sortino": 0.009764086003514472,
+                "mean_return": 0.00014769674607267424,
+                "SD": 0.00022853982511141652,
+                "CVaR95": 0.0002218240805694216,
+                "loss_probability": 0.0137488321277619
+              }
             }
           }
         ],
@@ -14203,6 +15083,86 @@
               "SD": 0.00027874259967709467,
               "CVaR95": 0.0005290555540146194,
               "loss_probability": 0.010661981821379007
+            },
+            "current_addition": {
+              "asset": "SE0013876927",
+              "quantity": 19.599,
+              "terminal": {
+                "mean_return": 0.004077963707374868,
+                "SD": 0.01923882203108577,
+                "Sharpe": 0.21196535322099047,
+                "Sortino": 0.31407310995400717,
+                "Rachev": 1.0127365110517543,
+                "CVaR95": 0.05289883945752396,
+                "VaR95": 0.03952810345249606,
+                "worst_return": -0.20510705852481578,
+                "loss_probability": 0.24605366487800423,
+                "upper_tail_mean": 0.05357258611089969,
+                "expected_terminal_wealth_EUR": 15061.169455610623,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.2631578947368421,
+                "OUT": 48,
+                "IN": 8,
+                "D": 152,
+                "expected_return": 0.004077963707374868,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  4,
+                  21,
+                  23
+                ],
+                "IN_by_order": [
+                  0,
+                  4,
+                  4
+                ]
+              },
+              "cash_EUR": 3206.474374048119,
+              "status": "Current plus this exact proposed buy; all other Current quantities unchanged",
+              "baseline": {
+                "mean_return": 0.003991808198747184,
+                "SD": 0.01896512764943162,
+                "Sharpe": 0.21048148330637875,
+                "Sortino": 0.31091236578240655,
+                "Rachev": 1.0156808529582073,
+                "CVaR95": 0.052371900036172044,
+                "VaR95": 0.0391613166452256,
+                "worst_return": -0.20299828491669236,
+                "loss_probability": 0.2305093731419694,
+                "upper_tail_mean": 0.05319313609978119,
+                "expected_terminal_wealth_EUR": 15059.877122981206,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.2631578947368421,
+                "OUT": 48,
+                "IN": 8,
+                "D": 152,
+                "expected_return": 0.003991808198747184,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  4,
+                  21,
+                  23
+                ],
+                "IN_by_order": [
+                  0,
+                  4,
+                  4
+                ]
+              },
+              "delta": {
+                "netSD": 0.0,
+                "Sharpe": 0.0014838699146117185,
+                "Rachev": -0.002944341906452985,
+                "Sortino": 0.0031607441716006157,
+                "mean_return": 8.615550862768433e-05,
+                "SD": 0.0002736943816541472,
+                "CVaR95": 0.0005269394213519157,
+                "loss_probability": 0.015544291736034832
+              }
             }
           },
           {
@@ -14283,6 +15243,86 @@
               "SD": 0.0001297127438525357,
               "CVaR95": 0.00041739543883470565,
               "loss_probability": 0.00565930472721754
+            },
+            "current_addition": {
+              "asset": "SE0015948617",
+              "quantity": 65.213,
+              "terminal": {
+                "mean_return": 0.0039768841892790004,
+                "SD": 0.019089792175261192,
+                "Sharpe": 0.20832516942917362,
+                "Sortino": 0.3071082461186974,
+                "Rachev": 1.0062095156790953,
+                "CVaR95": 0.05278717934234407,
+                "VaR95": 0.03934504830096845,
+                "worst_return": -0.20472647502035113,
+                "loss_probability": 0.24105098778384276,
+                "upper_tail_mean": 0.053114962160125574,
+                "expected_terminal_wealth_EUR": 15059.653262839187,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.25,
+                "OUT": 48,
+                "IN": 10,
+                "D": 152,
+                "expected_return": 0.0039768841892790004,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  4,
+                  21,
+                  23
+                ],
+                "IN_by_order": [
+                  0,
+                  5,
+                  5
+                ]
+              },
+              "cash_EUR": 2856.351584348119,
+              "status": "Current plus this exact proposed buy; all other Current quantities unchanged",
+              "baseline": {
+                "mean_return": 0.003991808198747184,
+                "SD": 0.01896512764943162,
+                "Sharpe": 0.21048148330637875,
+                "Sortino": 0.31091236578240655,
+                "Rachev": 1.0156808529582073,
+                "CVaR95": 0.052371900036172044,
+                "VaR95": 0.0391613166452256,
+                "worst_return": -0.20299828491669236,
+                "loss_probability": 0.2305093731419694,
+                "upper_tail_mean": 0.05319313609978119,
+                "expected_terminal_wealth_EUR": 15059.877122981206,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.2631578947368421,
+                "OUT": 48,
+                "IN": 8,
+                "D": 152,
+                "expected_return": 0.003991808198747184,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  4,
+                  21,
+                  23
+                ],
+                "IN_by_order": [
+                  0,
+                  4,
+                  4
+                ]
+              },
+              "delta": {
+                "netSD": -0.01315789473684209,
+                "Sharpe": -0.002156313877205135,
+                "Rachev": -0.00947133727911198,
+                "Sortino": -0.003804119663709138,
+                "mean_return": -1.4924009468183543e-05,
+                "SD": 0.00012466452582957088,
+                "CVaR95": 0.00041527930617202974,
+                "loss_probability": 0.010541614641873365
+              }
             }
           }
         ],
@@ -15745,6 +16785,86 @@
               "SD": 0.00042734236276995453,
               "CVaR95": 0.0006169225540580067,
               "loss_probability": 0.048533034537452335
+            },
+            "current_addition": {
+              "asset": "SE0013876927",
+              "quantity": 19.6,
+              "terminal": {
+                "mean_return": 0.004077968103288364,
+                "SD": 0.019238836255505928,
+                "Sharpe": 0.2119654249940039,
+                "Sortino": 0.3140732660774618,
+                "Rachev": 1.0127363676826797,
+                "CVaR95": 0.0528988664838018,
+                "VaR95": 0.03952813617993372,
+                "worst_return": -0.20510716612079558,
+                "loss_probability": 0.24605366487800423,
+                "upper_tail_mean": 0.053572605897336485,
+                "expected_terminal_wealth_EUR": 15061.169521549326,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.2631578947368421,
+                "OUT": 48,
+                "IN": 8,
+                "D": 152,
+                "expected_return": 0.004077968103288364,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  4,
+                  21,
+                  23
+                ],
+                "IN_by_order": [
+                  0,
+                  4,
+                  4
+                ]
+              },
+              "cash_EUR": 3206.459066548119,
+              "status": "Current plus this exact proposed buy; all other Current quantities unchanged",
+              "baseline": {
+                "mean_return": 0.003991808198747184,
+                "SD": 0.01896512764943162,
+                "Sharpe": 0.21048148330637875,
+                "Sortino": 0.31091236578240655,
+                "Rachev": 1.0156808529582073,
+                "CVaR95": 0.052371900036172044,
+                "VaR95": 0.0391613166452256,
+                "worst_return": -0.20299828491669236,
+                "loss_probability": 0.2305093731419694,
+                "upper_tail_mean": 0.05319313609978119,
+                "expected_terminal_wealth_EUR": 15059.877122981206,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.2631578947368421,
+                "OUT": 48,
+                "IN": 8,
+                "D": 152,
+                "expected_return": 0.003991808198747184,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  4,
+                  21,
+                  23
+                ],
+                "IN_by_order": [
+                  0,
+                  4,
+                  4
+                ]
+              },
+              "delta": {
+                "netSD": 0.0,
+                "Sharpe": 0.00148394168762514,
+                "Rachev": -0.0029444852755275974,
+                "Sortino": 0.0031609002950552245,
+                "mean_return": 8.615990454118039e-05,
+                "SD": 0.0002737086060743063,
+                "CVaR95": 0.0005269664476297564,
+                "loss_probability": 0.015544291736034832
+              }
             }
           },
           {
@@ -15825,6 +16945,86 @@
               "SD": 0.0016160784991485879,
               "CVaR95": 0.0012521452546345024,
               "loss_probability": 0.11395024835124296
+            },
+            "current_addition": {
+              "asset": "SE0014261764",
+              "quantity": 27.779999999999998,
+              "terminal": {
+                "mean_return": 0.004651139004773034,
+                "SD": 0.020066276453513707,
+                "Sharpe": 0.23178884311436843,
+                "Sortino": 0.3526074506494036,
+                "Rachev": 1.035212440785853,
+                "CVaR95": 0.05339928974750431,
+                "VaR95": 0.03920313558395678,
+                "worst_return": -0.20697390340677735,
+                "loss_probability": 0.2795345326353059,
+                "upper_tail_mean": 0.05527960907574491,
+                "expected_terminal_wealth_EUR": 15069.767085071595,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.2631578947368421,
+                "OUT": 48,
+                "IN": 8,
+                "D": 152,
+                "expected_return": 0.004651139004773034,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  4,
+                  21,
+                  23
+                ],
+                "IN_by_order": [
+                  0,
+                  4,
+                  4
+                ]
+              },
+              "cash_EUR": 2806.5189625481194,
+              "status": "Current plus this exact proposed buy; all other Current quantities unchanged",
+              "baseline": {
+                "mean_return": 0.003991808198747184,
+                "SD": 0.01896512764943162,
+                "Sharpe": 0.21048148330637875,
+                "Sortino": 0.31091236578240655,
+                "Rachev": 1.0156808529582073,
+                "CVaR95": 0.052371900036172044,
+                "VaR95": 0.0391613166452256,
+                "worst_return": -0.20299828491669236,
+                "loss_probability": 0.2305093731419694,
+                "upper_tail_mean": 0.05319313609978119,
+                "expected_terminal_wealth_EUR": 15059.877122981206,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.2631578947368421,
+                "OUT": 48,
+                "IN": 8,
+                "D": 152,
+                "expected_return": 0.003991808198747184,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  4,
+                  21,
+                  23
+                ],
+                "IN_by_order": [
+                  0,
+                  4,
+                  4
+                ]
+              },
+              "delta": {
+                "netSD": 0.0,
+                "Sharpe": 0.021307359807989673,
+                "Rachev": 0.019531587827645636,
+                "Sortino": 0.04169508486699702,
+                "mean_return": 0.0006593308060258499,
+                "SD": 0.0011011488040820853,
+                "CVaR95": 0.0010273897113322675,
+                "loss_probability": 0.04902515949333652
+              }
             }
           }
         ],
@@ -18670,6 +19870,86 @@
               "SD": 0.0007206338485833625,
               "CVaR95": 0.0015790764143049016,
               "loss_probability": -0.014875123265105233
+            },
+            "current_addition": {
+              "asset": "VLP1L",
+              "quantity": 24.0,
+              "terminal": {
+                "mean_return": 0.004547510524820326,
+                "SD": 0.01969707648522542,
+                "Sharpe": 0.2308723595723136,
+                "Sortino": 0.3441864275993899,
+                "Rachev": 1.030222352728706,
+                "CVaR95": 0.05394633386321028,
+                "VaR95": 0.04005426707344264,
+                "worst_return": -0.21059271246171304,
+                "loss_probability": 0.21246008673403852,
+                "upper_tail_mean": 0.055576718993644754,
+                "expected_terminal_wealth_EUR": 15068.212657872304,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.26973684210526316,
+                "OUT": 49,
+                "IN": 8,
+                "D": 152,
+                "expected_return": 0.004547510524820326,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  4,
+                  22,
+                  23
+                ],
+                "IN_by_order": [
+                  0,
+                  4,
+                  4
+                ]
+              },
+              "cash_EUR": 3138.086066548119,
+              "status": "Current plus this exact proposed buy; all other Current quantities unchanged",
+              "baseline": {
+                "mean_return": 0.003991808198747184,
+                "SD": 0.01896512764943162,
+                "Sharpe": 0.21048148330637875,
+                "Sortino": 0.31091236578240655,
+                "Rachev": 1.0156808529582073,
+                "CVaR95": 0.052371900036172044,
+                "VaR95": 0.0391613166452256,
+                "worst_return": -0.20299828491669236,
+                "loss_probability": 0.2305093731419694,
+                "upper_tail_mean": 0.05319313609978119,
+                "expected_terminal_wealth_EUR": 15059.877122981206,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.2631578947368421,
+                "OUT": 48,
+                "IN": 8,
+                "D": 152,
+                "expected_return": 0.003991808198747184,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  4,
+                  21,
+                  23
+                ],
+                "IN_by_order": [
+                  0,
+                  4,
+                  4
+                ]
+              },
+              "delta": {
+                "netSD": 0.006578947368421073,
+                "Sharpe": 0.02039087626593486,
+                "Rachev": 0.014541499770498678,
+                "Sortino": 0.033274061816983336,
+                "mean_return": 0.0005557023260731424,
+                "SD": 0.0007319488357937984,
+                "CVaR95": 0.0015744338270382366,
+                "loss_probability": -0.01804928640793088
+              }
             }
           },
           {
@@ -18750,6 +20030,86 @@
               "SD": 0.0009778220464801745,
               "CVaR95": 0.0007609527902817572,
               "loss_probability": 0.04926790869248948
+            },
+            "current_addition": {
+              "asset": "SE0014261764",
+              "quantity": 18.392,
+              "terminal": {
+                "mean_return": 0.004428324116113184,
+                "SD": 0.01967138882266997,
+                "Sharpe": 0.2251149705815298,
+                "Sortino": 0.3390737102861905,
+                "Rachev": 1.0281606708952888,
+                "CVaR95": 0.053042478614573514,
+                "VaR95": 0.03927606058221126,
+                "worst_return": -0.20563037905886813,
+                "loss_probability": 0.2659716216902468,
+                "upper_tail_mean": 0.05453619039830892,
+                "expected_terminal_wealth_EUR": 15066.424861741698,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.26973684210526316,
+                "OUT": 49,
+                "IN": 8,
+                "D": 152,
+                "expected_return": 0.004428324116113184,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  4,
+                  22,
+                  23
+                ],
+                "IN_by_order": [
+                  0,
+                  4,
+                  4
+                ]
+              },
+              "cash_EUR": 3043.0665209481194,
+              "status": "Current plus this exact proposed buy; all other Current quantities unchanged",
+              "baseline": {
+                "mean_return": 0.003991808198747184,
+                "SD": 0.01896512764943162,
+                "Sharpe": 0.21048148330637875,
+                "Sortino": 0.31091236578240655,
+                "Rachev": 1.0156808529582073,
+                "CVaR95": 0.052371900036172044,
+                "VaR95": 0.0391613166452256,
+                "worst_return": -0.20299828491669236,
+                "loss_probability": 0.2305093731419694,
+                "upper_tail_mean": 0.05319313609978119,
+                "expected_terminal_wealth_EUR": 15059.877122981206,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.2631578947368421,
+                "OUT": 48,
+                "IN": 8,
+                "D": 152,
+                "expected_return": 0.003991808198747184,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  4,
+                  21,
+                  23
+                ],
+                "IN_by_order": [
+                  0,
+                  4,
+                  4
+                ]
+              },
+              "delta": {
+                "netSD": 0.006578947368421073,
+                "Sharpe": 0.014633487275151041,
+                "Rachev": 0.012479817937081528,
+                "Sortino": 0.028161344503783936,
+                "mean_return": 0.00043651591736600017,
+                "SD": 0.000706261173238347,
+                "CVaR95": 0.0006705785784014706,
+                "loss_probability": 0.0354622485482774
+              }
             }
           }
         ],
@@ -20214,6 +21574,86 @@
               "SD": 0.0014649486568712178,
               "CVaR95": 0.0031498736192376586,
               "loss_probability": -0.02799384466720506
+            },
+            "current_addition": {
+              "asset": "VLP1L",
+              "quantity": 48.0,
+              "terminal": {
+                "mean_return": 0.0051032128508934705,
+                "SD": 0.02043007630630284,
+                "Sharpe": 0.2497892212629225,
+                "Sortino": 0.37559463104486346,
+                "Rachev": 1.0439317264273662,
+                "CVaR95": 0.055521773655409716,
+                "VaR95": 0.041058356888787305,
+                "worst_return": -0.21818714000673373,
+                "loss_probability": 0.20251552847476434,
+                "upper_tail_mean": 0.05796094102640132,
+                "expected_terminal_wealth_EUR": 15076.548192763401,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.2631578947368421,
+                "OUT": 48,
+                "IN": 8,
+                "D": 152,
+                "expected_return": 0.0051032128508934705,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  5,
+                  21,
+                  22
+                ],
+                "IN_by_order": [
+                  0,
+                  4,
+                  4
+                ]
+              },
+              "cash_EUR": 2769.686066548119,
+              "status": "Current plus this exact proposed buy; all other Current quantities unchanged",
+              "baseline": {
+                "mean_return": 0.003991808198747184,
+                "SD": 0.01896512764943162,
+                "Sharpe": 0.21048148330637875,
+                "Sortino": 0.31091236578240655,
+                "Rachev": 1.0156808529582073,
+                "CVaR95": 0.052371900036172044,
+                "VaR95": 0.0391613166452256,
+                "worst_return": -0.20299828491669236,
+                "loss_probability": 0.2305093731419694,
+                "upper_tail_mean": 0.05319313609978119,
+                "expected_terminal_wealth_EUR": 15059.877122981206,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.2631578947368421,
+                "OUT": 48,
+                "IN": 8,
+                "D": 152,
+                "expected_return": 0.003991808198747184,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  4,
+                  21,
+                  23
+                ],
+                "IN_by_order": [
+                  0,
+                  4,
+                  4
+                ]
+              },
+              "delta": {
+                "netSD": 0.0,
+                "Sharpe": 0.03930773795654374,
+                "Rachev": 0.028250873469158888,
+                "Sortino": 0.0646822652624569,
+                "mean_return": 0.0011114046521462865,
+                "SD": 0.0014649486568712178,
+                "CVaR95": 0.0031498736192376725,
+                "loss_probability": -0.02799384466720506
+              }
             }
           }
         ],
@@ -21676,6 +23116,86 @@
               "SD": 0.0014794541974998063,
               "CVaR95": 0.0031661664502069496,
               "loss_probability": -0.012654036333361623
+            },
+            "current_addition": {
+              "asset": "VLP1L",
+              "quantity": 48.0,
+              "terminal": {
+                "mean_return": 0.0051032128508934705,
+                "SD": 0.02043007630630284,
+                "Sharpe": 0.2497892212629225,
+                "Sortino": 0.37559463104486346,
+                "Rachev": 1.0439317264273662,
+                "CVaR95": 0.055521773655409716,
+                "VaR95": 0.041058356888787305,
+                "worst_return": -0.21818714000673373,
+                "loss_probability": 0.20251552847476434,
+                "upper_tail_mean": 0.05796094102640132,
+                "expected_terminal_wealth_EUR": 15076.548192763401,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.2631578947368421,
+                "OUT": 48,
+                "IN": 8,
+                "D": 152,
+                "expected_return": 0.0051032128508934705,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  5,
+                  21,
+                  22
+                ],
+                "IN_by_order": [
+                  0,
+                  4,
+                  4
+                ]
+              },
+              "cash_EUR": 2769.686066548119,
+              "status": "Current plus this exact proposed buy; all other Current quantities unchanged",
+              "baseline": {
+                "mean_return": 0.003991808198747184,
+                "SD": 0.01896512764943162,
+                "Sharpe": 0.21048148330637875,
+                "Sortino": 0.31091236578240655,
+                "Rachev": 1.0156808529582073,
+                "CVaR95": 0.052371900036172044,
+                "VaR95": 0.0391613166452256,
+                "worst_return": -0.20299828491669236,
+                "loss_probability": 0.2305093731419694,
+                "upper_tail_mean": 0.05319313609978119,
+                "expected_terminal_wealth_EUR": 15059.877122981206,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.2631578947368421,
+                "OUT": 48,
+                "IN": 8,
+                "D": 152,
+                "expected_return": 0.003991808198747184,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  4,
+                  21,
+                  23
+                ],
+                "IN_by_order": [
+                  0,
+                  4,
+                  4
+                ]
+              },
+              "delta": {
+                "netSD": 0.0,
+                "Sharpe": 0.03930773795654374,
+                "Rachev": 0.028250873469158888,
+                "Sortino": 0.0646822652624569,
+                "mean_return": 0.0011114046521462865,
+                "SD": 0.0014649486568712178,
+                "CVaR95": 0.0031498736192376725,
+                "loss_probability": -0.02799384466720506
+              }
             }
           }
         ],
@@ -23140,6 +24660,86 @@
               "SD": 0.0014649486568712178,
               "CVaR95": 0.0031498736192376586,
               "loss_probability": -0.02799384466720506
+            },
+            "current_addition": {
+              "asset": "VLP1L",
+              "quantity": 48.0,
+              "terminal": {
+                "mean_return": 0.0051032128508934705,
+                "SD": 0.02043007630630284,
+                "Sharpe": 0.2497892212629225,
+                "Sortino": 0.37559463104486346,
+                "Rachev": 1.0439317264273662,
+                "CVaR95": 0.055521773655409716,
+                "VaR95": 0.041058356888787305,
+                "worst_return": -0.21818714000673373,
+                "loss_probability": 0.20251552847476434,
+                "upper_tail_mean": 0.05796094102640132,
+                "expected_terminal_wealth_EUR": 15076.548192763401,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.2631578947368421,
+                "OUT": 48,
+                "IN": 8,
+                "D": 152,
+                "expected_return": 0.0051032128508934705,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  5,
+                  21,
+                  22
+                ],
+                "IN_by_order": [
+                  0,
+                  4,
+                  4
+                ]
+              },
+              "cash_EUR": 2769.686066548119,
+              "status": "Current plus this exact proposed buy; all other Current quantities unchanged",
+              "baseline": {
+                "mean_return": 0.003991808198747184,
+                "SD": 0.01896512764943162,
+                "Sharpe": 0.21048148330637875,
+                "Sortino": 0.31091236578240655,
+                "Rachev": 1.0156808529582073,
+                "CVaR95": 0.052371900036172044,
+                "VaR95": 0.0391613166452256,
+                "worst_return": -0.20299828491669236,
+                "loss_probability": 0.2305093731419694,
+                "upper_tail_mean": 0.05319313609978119,
+                "expected_terminal_wealth_EUR": 15059.877122981206,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.2631578947368421,
+                "OUT": 48,
+                "IN": 8,
+                "D": 152,
+                "expected_return": 0.003991808198747184,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  4,
+                  21,
+                  23
+                ],
+                "IN_by_order": [
+                  0,
+                  4,
+                  4
+                ]
+              },
+              "delta": {
+                "netSD": 0.0,
+                "Sharpe": 0.03930773795654374,
+                "Rachev": 0.028250873469158888,
+                "Sortino": 0.0646822652624569,
+                "mean_return": 0.0011114046521462865,
+                "SD": 0.0014649486568712178,
+                "CVaR95": 0.0031498736192376725,
+                "loss_probability": -0.02799384466720506
+              }
             }
           }
         ],
@@ -24602,6 +26202,86 @@
               "SD": 0.0014794541974998063,
               "CVaR95": 0.0031661664502069496,
               "loss_probability": -0.012654036333361623
+            },
+            "current_addition": {
+              "asset": "VLP1L",
+              "quantity": 48.0,
+              "terminal": {
+                "mean_return": 0.0051032128508934705,
+                "SD": 0.02043007630630284,
+                "Sharpe": 0.2497892212629225,
+                "Sortino": 0.37559463104486346,
+                "Rachev": 1.0439317264273662,
+                "CVaR95": 0.055521773655409716,
+                "VaR95": 0.041058356888787305,
+                "worst_return": -0.21818714000673373,
+                "loss_probability": 0.20251552847476434,
+                "upper_tail_mean": 0.05796094102640132,
+                "expected_terminal_wealth_EUR": 15076.548192763401,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.2631578947368421,
+                "OUT": 48,
+                "IN": 8,
+                "D": 152,
+                "expected_return": 0.0051032128508934705,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  5,
+                  21,
+                  22
+                ],
+                "IN_by_order": [
+                  0,
+                  4,
+                  4
+                ]
+              },
+              "cash_EUR": 2769.686066548119,
+              "status": "Current plus this exact proposed buy; all other Current quantities unchanged",
+              "baseline": {
+                "mean_return": 0.003991808198747184,
+                "SD": 0.01896512764943162,
+                "Sharpe": 0.21048148330637875,
+                "Sortino": 0.31091236578240655,
+                "Rachev": 1.0156808529582073,
+                "CVaR95": 0.052371900036172044,
+                "VaR95": 0.0391613166452256,
+                "worst_return": -0.20299828491669236,
+                "loss_probability": 0.2305093731419694,
+                "upper_tail_mean": 0.05319313609978119,
+                "expected_terminal_wealth_EUR": 15059.877122981206,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.2631578947368421,
+                "OUT": 48,
+                "IN": 8,
+                "D": 152,
+                "expected_return": 0.003991808198747184,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  4,
+                  21,
+                  23
+                ],
+                "IN_by_order": [
+                  0,
+                  4,
+                  4
+                ]
+              },
+              "delta": {
+                "netSD": 0.0,
+                "Sharpe": 0.03930773795654374,
+                "Rachev": 0.028250873469158888,
+                "Sortino": 0.0646822652624569,
+                "mean_return": 0.0011114046521462865,
+                "SD": 0.0014649486568712178,
+                "CVaR95": 0.0031498736192376725,
+                "loss_probability": -0.02799384466720506
+              }
             }
           }
         ],
@@ -26066,6 +27746,86 @@
               "SD": 0.0002537524724044553,
               "CVaR95": 6.534583493148644e-05,
               "loss_probability": 0.006995848153889261
+            },
+            "current_addition": {
+              "asset": "SE0014261756",
+              "quantity": 15.204,
+              "terminal": {
+                "mean_return": 0.00418501562521359,
+                "SD": 0.019162029454027944,
+                "Sharpe": 0.21840148170390591,
+                "Sortino": 0.32530017198886707,
+                "Rachev": 1.0232683645114948,
+                "CVaR95": 0.05241393108569168,
+                "VaR95": 0.03919711986050093,
+                "worst_return": -0.20317722892755846,
+                "loss_probability": 0.24238502187377542,
+                "upper_tail_mean": 0.05363351753967393,
+                "expected_terminal_wealth_EUR": 15062.775234378205,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.2631578947368421,
+                "OUT": 48,
+                "IN": 8,
+                "D": 152,
+                "expected_return": 0.00418501562521359,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  4,
+                  21,
+                  23
+                ],
+                "IN_by_order": [
+                  0,
+                  4,
+                  4
+                ]
+              },
+              "cash_EUR": 3206.471616148119,
+              "status": "Current plus this exact proposed buy; all other Current quantities unchanged",
+              "baseline": {
+                "mean_return": 0.003991808198747184,
+                "SD": 0.01896512764943162,
+                "Sharpe": 0.21048148330637875,
+                "Sortino": 0.31091236578240655,
+                "Rachev": 1.0156808529582073,
+                "CVaR95": 0.052371900036172044,
+                "VaR95": 0.0391613166452256,
+                "worst_return": -0.20299828491669236,
+                "loss_probability": 0.2305093731419694,
+                "upper_tail_mean": 0.05319313609978119,
+                "expected_terminal_wealth_EUR": 15059.877122981206,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.2631578947368421,
+                "OUT": 48,
+                "IN": 8,
+                "D": 152,
+                "expected_return": 0.003991808198747184,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  4,
+                  21,
+                  23
+                ],
+                "IN_by_order": [
+                  0,
+                  4,
+                  4
+                ]
+              },
+              "delta": {
+                "netSD": 0.0,
+                "Sharpe": 0.007919998397527162,
+                "Rachev": 0.007587511553287518,
+                "Sortino": 0.014387806206460518,
+                "mean_return": 0.0001932074264664064,
+                "SD": 0.00019690180459632292,
+                "CVaR95": 4.203104951963632e-05,
+                "loss_probability": 0.011875648731806021
+              }
             }
           },
           {
@@ -26146,6 +27906,86 @@
               "SD": 0.0008115189385616943,
               "CVaR95": 0.0005788071186682772,
               "loss_probability": 0.03790013982831064
+            },
+            "current_addition": {
+              "asset": "SE0015192349",
+              "quantity": 36.042,
+              "terminal": {
+                "mean_return": 0.004436830239770216,
+                "SD": 0.01967253420035115,
+                "Sharpe": 0.22553424965915267,
+                "Sortino": 0.3403974868931459,
+                "Rachev": 1.0328635078415886,
+                "CVaR95": 0.05291351817958633,
+                "VaR95": 0.03922778686652338,
+                "worst_return": -0.20484879663328434,
+                "loss_probability": 0.2662249034173933,
+                "upper_tail_mean": 0.05465244199920721,
+                "expected_terminal_wealth_EUR": 15066.552453596552,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.26973684210526316,
+                "OUT": 49,
+                "IN": 8,
+                "D": 152,
+                "expected_return": 0.004436830239770216,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  4,
+                  22,
+                  23
+                ],
+                "IN_by_order": [
+                  0,
+                  4,
+                  4
+                ]
+              },
+              "cash_EUR": 2806.5143845481193,
+              "status": "Current plus this exact proposed buy; all other Current quantities unchanged",
+              "baseline": {
+                "mean_return": 0.003991808198747184,
+                "SD": 0.01896512764943162,
+                "Sharpe": 0.21048148330637875,
+                "Sortino": 0.31091236578240655,
+                "Rachev": 1.0156808529582073,
+                "CVaR95": 0.052371900036172044,
+                "VaR95": 0.0391613166452256,
+                "worst_return": -0.20299828491669236,
+                "loss_probability": 0.2305093731419694,
+                "upper_tail_mean": 0.05319313609978119,
+                "expected_terminal_wealth_EUR": 15059.877122981206,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.2631578947368421,
+                "OUT": 48,
+                "IN": 8,
+                "D": 152,
+                "expected_return": 0.003991808198747184,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  4,
+                  21,
+                  23
+                ],
+                "IN_by_order": [
+                  0,
+                  4,
+                  4
+                ]
+              },
+              "delta": {
+                "netSD": 0.006578947368421073,
+                "Sharpe": 0.015052766352773916,
+                "Rachev": 0.017182654883381332,
+                "Sortino": 0.029485121110739365,
+                "mean_return": 0.00044502204102303197,
+                "SD": 0.0007074065509195294,
+                "CVaR95": 0.000541618143414288,
+                "loss_probability": 0.0357155302754239
+              }
             }
           }
         ],
@@ -27608,6 +29448,86 @@
               "SD": 0.0014695415758073822,
               "CVaR95": 0.003154215341010229,
               "loss_probability": -0.028235888722755315
+            },
+            "current_addition": {
+              "asset": "VLP1L",
+              "quantity": 48.0,
+              "terminal": {
+                "mean_return": 0.0051032128508934705,
+                "SD": 0.02043007630630284,
+                "Sharpe": 0.2497892212629225,
+                "Sortino": 0.37559463104486346,
+                "Rachev": 1.0439317264273662,
+                "CVaR95": 0.055521773655409716,
+                "VaR95": 0.041058356888787305,
+                "worst_return": -0.21818714000673373,
+                "loss_probability": 0.20251552847476434,
+                "upper_tail_mean": 0.05796094102640132,
+                "expected_terminal_wealth_EUR": 15076.548192763401,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.2631578947368421,
+                "OUT": 48,
+                "IN": 8,
+                "D": 152,
+                "expected_return": 0.0051032128508934705,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  5,
+                  21,
+                  22
+                ],
+                "IN_by_order": [
+                  0,
+                  4,
+                  4
+                ]
+              },
+              "cash_EUR": 2769.686066548119,
+              "status": "Current plus this exact proposed buy; all other Current quantities unchanged",
+              "baseline": {
+                "mean_return": 0.003991808198747184,
+                "SD": 0.01896512764943162,
+                "Sharpe": 0.21048148330637875,
+                "Sortino": 0.31091236578240655,
+                "Rachev": 1.0156808529582073,
+                "CVaR95": 0.052371900036172044,
+                "VaR95": 0.0391613166452256,
+                "worst_return": -0.20299828491669236,
+                "loss_probability": 0.2305093731419694,
+                "upper_tail_mean": 0.05319313609978119,
+                "expected_terminal_wealth_EUR": 15059.877122981206,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.2631578947368421,
+                "OUT": 48,
+                "IN": 8,
+                "D": 152,
+                "expected_return": 0.003991808198747184,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  4,
+                  21,
+                  23
+                ],
+                "IN_by_order": [
+                  0,
+                  4,
+                  4
+                ]
+              },
+              "delta": {
+                "netSD": 0.0,
+                "Sharpe": 0.03930773795654374,
+                "Rachev": 0.028250873469158888,
+                "Sortino": 0.0646822652624569,
+                "mean_return": 0.0011114046521462865,
+                "SD": 0.0014649486568712178,
+                "CVaR95": 0.0031498736192376725,
+                "loss_probability": -0.02799384466720506
+              }
             }
           },
           {
@@ -27688,6 +29608,86 @@
               "SD": 0.00039435276318426984,
               "CVaR95": 0.0003797269543199741,
               "loss_probability": 0.018941125797119707
+            },
+            "current_addition": {
+              "asset": "SE0014261764",
+              "quantity": 10.445,
+              "terminal": {
+                "mean_return": 0.004239709936290022,
+                "SD": 0.019354887493679723,
+                "Sharpe": 0.21905112792179676,
+                "Sortino": 0.32716569503035575,
+                "Rachev": 1.022596167834597,
+                "CVaR95": 0.05274728526871946,
+                "VaR95": 0.039309785743698845,
+                "worst_return": -0.20449307739793562,
+                "loss_probability": 0.24969254299463936,
+                "upper_tail_mean": 0.05393917177947081,
+                "expected_terminal_wealth_EUR": 15063.595649044351,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.2631578947368421,
+                "OUT": 48,
+                "IN": 8,
+                "D": 152,
+                "expected_return": 0.004239709936290022,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  4,
+                  21,
+                  23
+                ],
+                "IN_by_order": [
+                  0,
+                  4,
+                  4
+                ]
+              },
+              "cash_EUR": 3243.305490548119,
+              "status": "Current plus this exact proposed buy; all other Current quantities unchanged",
+              "baseline": {
+                "mean_return": 0.003991808198747184,
+                "SD": 0.01896512764943162,
+                "Sharpe": 0.21048148330637875,
+                "Sortino": 0.31091236578240655,
+                "Rachev": 1.0156808529582073,
+                "CVaR95": 0.052371900036172044,
+                "VaR95": 0.0391613166452256,
+                "worst_return": -0.20299828491669236,
+                "loss_probability": 0.2305093731419694,
+                "upper_tail_mean": 0.05319313609978119,
+                "expected_terminal_wealth_EUR": 15059.877122981206,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.2631578947368421,
+                "OUT": 48,
+                "IN": 8,
+                "D": 152,
+                "expected_return": 0.003991808198747184,
+                "scenarios": 160000,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  4,
+                  21,
+                  23
+                ],
+                "IN_by_order": [
+                  0,
+                  4,
+                  4
+                ]
+              },
+              "delta": {
+                "netSD": 0.0,
+                "Sharpe": 0.00856964461541801,
+                "Rachev": 0.006915314876389633,
+                "Sortino": 0.0162533292479492,
+                "mean_return": 0.0002479017375428376,
+                "SD": 0.0003897598442481019,
+                "CVaR95": 0.00037538523254741774,
+                "loss_probability": 0.019183169852669962
+              }
             }
           }
         ],
@@ -29124,6 +31124,86 @@
               "SD": 0.0009588089725617224,
               "CVaR95": -0.0010851282599692869,
               "loss_probability": 0.0180030537156928
+            },
+            "current_addition": {
+              "asset": "SE0014261764",
+              "quantity": 27.781000000000002,
+              "terminal": {
+                "mean_return": 0.002630733434953618,
+                "SD": 0.017900261082544392,
+                "Sharpe": 0.1469662047286563,
+                "Sortino": 0.22470135789855594,
+                "Rachev": 0.9550890516474676,
+                "CVaR95": 0.04491534054497496,
+                "VaR95": 0.03193452620221422,
+                "worst_return": -0.06434448998868368,
+                "loss_probability": 0.43088949105495655,
+                "upper_tail_mean": 0.04289815000552318,
+                "expected_terminal_wealth_EUR": 15039.461001524303,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.4452054794520548,
+                "OUT": 69,
+                "IN": 4,
+                "D": 146,
+                "expected_return": 0.002630733434953618,
+                "scenarios": 20,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  0,
+                  34,
+                  35
+                ],
+                "IN_by_order": [
+                  0,
+                  1,
+                  3
+                ]
+              },
+              "cash_EUR": 2806.493765748119,
+              "status": "Current plus this exact proposed buy; all other Current quantities unchanged",
+              "baseline": {
+                "mean_return": 0.0018882037945105856,
+                "SD": 0.017338844157910024,
+                "Sharpe": 0.10890021141629457,
+                "Sortino": 0.16052546864789508,
+                "Rachev": 0.8856678621621048,
+                "CVaR95": 0.045692744299354174,
+                "VaR95": 0.03295238526502953,
+                "worst_return": -0.06508731340131135,
+                "loss_probability": 0.45397429751270346,
+                "upper_tail_mean": 0.04046859515992871,
+                "expected_terminal_wealth_EUR": 15028.323056917658,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.3972602739726027,
+                "OUT": 64,
+                "IN": 6,
+                "D": 146,
+                "expected_return": 0.0018882037945105856,
+                "scenarios": 20,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  0,
+                  32,
+                  32
+                ],
+                "IN_by_order": [
+                  0,
+                  2,
+                  4
+                ]
+              },
+              "delta": {
+                "netSD": 0.04794520547945208,
+                "Sharpe": 0.038065993312361726,
+                "Rachev": 0.0694211894853628,
+                "Sortino": 0.06417588925066087,
+                "mean_return": 0.0007425296404430324,
+                "SD": 0.0005614169246343677,
+                "CVaR95": -0.0007774037543792148,
+                "loss_probability": -0.02308480645774691
+              }
             }
           },
           {
@@ -29204,6 +31284,86 @@
               "SD": 0.00035042147574473187,
               "CVaR95": -4.3688403509462015e-07,
               "loss_probability": 0.0180030537156928
+            },
+            "current_addition": {
+              "asset": "US_PFE",
+              "quantity": 11.476635000000002,
+              "terminal": {
+                "mean_return": 0.0015882106560885457,
+                "SD": 0.01756179601433452,
+                "Sharpe": 0.09043554855051246,
+                "Sortino": 0.13252610219863215,
+                "Rachev": 0.8970000234834523,
+                "CVaR95": 0.04569230741531908,
+                "VaR95": 0.033380192219530994,
+                "worst_return": -0.0651795839887273,
+                "loss_probability": 0.45397429751270346,
+                "upper_tail_mean": 0.040986000824554336,
+                "expected_terminal_wealth_EUR": 15023.823159841328,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.3767123287671233,
+                "OUT": 61,
+                "IN": 6,
+                "D": 146,
+                "expected_return": 0.0015882106560885457,
+                "scenarios": 20,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  0,
+                  30,
+                  31
+                ],
+                "IN_by_order": [
+                  0,
+                  2,
+                  4
+                ]
+              },
+              "cash_EUR": 3206.486086322623,
+              "status": "Current plus this exact proposed buy; all other Current quantities unchanged",
+              "baseline": {
+                "mean_return": 0.0018882037945105856,
+                "SD": 0.017338844157910024,
+                "Sharpe": 0.10890021141629457,
+                "Sortino": 0.16052546864789508,
+                "Rachev": 0.8856678621621048,
+                "CVaR95": 0.045692744299354174,
+                "VaR95": 0.03295238526502953,
+                "worst_return": -0.06508731340131135,
+                "loss_probability": 0.45397429751270346,
+                "upper_tail_mean": 0.04046859515992871,
+                "expected_terminal_wealth_EUR": 15028.323056917658,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.3972602739726027,
+                "OUT": 64,
+                "IN": 6,
+                "D": 146,
+                "expected_return": 0.0018882037945105856,
+                "scenarios": 20,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  0,
+                  32,
+                  32
+                ],
+                "IN_by_order": [
+                  0,
+                  2,
+                  4
+                ]
+              },
+              "delta": {
+                "netSD": -0.020547945205479423,
+                "Sharpe": -0.018464662865782105,
+                "Rachev": 0.011332161321347511,
+                "Sortino": -0.02799936644926293,
+                "mean_return": -0.0002999931384220398,
+                "SD": 0.0002229518564244963,
+                "CVaR95": -4.3688403509462015e-07,
+                "loss_probability": 0.0
+              }
             }
           }
         ],
@@ -33135,6 +35295,86 @@
               "SD": 0.0007697490429255556,
               "CVaR95": 0.001827734799651981,
               "loss_probability": 0.0
+            },
+            "current_addition": {
+              "asset": "VLP1L",
+              "quantity": 32.0,
+              "terminal": {
+                "mean_return": 0.0026473558401449615,
+                "SD": 0.01811672592351325,
+                "Sharpe": 0.14612771928668547,
+                "Sortino": 0.21806071943468935,
+                "Rachev": 0.8882889395608897,
+                "CVaR95": 0.047520479099006155,
+                "VaR95": 0.034125726256763814,
+                "worst_return": -0.06758100384006313,
+                "loss_probability": 0.45397429751270346,
+                "upper_tail_mean": 0.0422119159862816,
+                "expected_terminal_wealth_EUR": 15039.710337602175,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.4383561643835616,
+                "OUT": 68,
+                "IN": 4,
+                "D": 146,
+                "expected_return": 0.0026473558401449615,
+                "scenarios": 20,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  0,
+                  34,
+                  34
+                ],
+                "IN_by_order": [
+                  0,
+                  1,
+                  3
+                ]
+              },
+              "cash_EUR": 3015.2860665481194,
+              "status": "Current plus this exact proposed buy; all other Current quantities unchanged",
+              "baseline": {
+                "mean_return": 0.0018882037945105856,
+                "SD": 0.017338844157910024,
+                "Sharpe": 0.10890021141629457,
+                "Sortino": 0.16052546864789508,
+                "Rachev": 0.8856678621621048,
+                "CVaR95": 0.045692744299354174,
+                "VaR95": 0.03295238526502953,
+                "worst_return": -0.06508731340131135,
+                "loss_probability": 0.45397429751270346,
+                "upper_tail_mean": 0.04046859515992871,
+                "expected_terminal_wealth_EUR": 15028.323056917658,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.3972602739726027,
+                "OUT": 64,
+                "IN": 6,
+                "D": 146,
+                "expected_return": 0.0018882037945105856,
+                "scenarios": 20,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  0,
+                  32,
+                  32
+                ],
+                "IN_by_order": [
+                  0,
+                  2,
+                  4
+                ]
+              },
+              "delta": {
+                "netSD": 0.0410958904109589,
+                "Sharpe": 0.037227507870390905,
+                "Rachev": 0.002621077398784921,
+                "Sortino": 0.05753525078679428,
+                "mean_return": 0.000759152045634376,
+                "SD": 0.0007778817656032243,
+                "CVaR95": 0.001827734799651981,
+                "loss_probability": 0.0
+              }
             }
           },
           {
@@ -33215,6 +35455,86 @@
               "SD": 0.00035418051587767993,
               "CVaR95": 0.0006189343133072844,
               "loss_probability": -0.02308480645774691
+            },
+            "current_addition": {
+              "asset": "SE0015192315",
+              "quantity": 34.866,
+              "terminal": {
+                "mean_return": 0.0025279465966163176,
+                "SD": 0.01770115739646537,
+                "Sharpe": 0.14281250315988417,
+                "Sortino": 0.21366716410914685,
+                "Rachev": 0.919322604782138,
+                "CVaR95": 0.04631167861266146,
+                "VaR95": 0.034441622362932856,
+                "worst_return": -0.06250406990915214,
+                "loss_probability": 0.43088949105495655,
+                "upper_tail_mean": 0.04257537301402516,
+                "expected_terminal_wealth_EUR": 15037.919198949245,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.4246575342465753,
+                "OUT": 66,
+                "IN": 4,
+                "D": 146,
+                "expected_return": 0.0025279465966163176,
+                "scenarios": 20,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  0,
+                  33,
+                  33
+                ],
+                "IN_by_order": [
+                  0,
+                  1,
+                  3
+                ]
+              },
+              "cash_EUR": 3006.493680148119,
+              "status": "Current plus this exact proposed buy; all other Current quantities unchanged",
+              "baseline": {
+                "mean_return": 0.0018882037945105856,
+                "SD": 0.017338844157910024,
+                "Sharpe": 0.10890021141629457,
+                "Sortino": 0.16052546864789508,
+                "Rachev": 0.8856678621621048,
+                "CVaR95": 0.045692744299354174,
+                "VaR95": 0.03295238526502953,
+                "worst_return": -0.06508731340131135,
+                "loss_probability": 0.45397429751270346,
+                "upper_tail_mean": 0.04046859515992871,
+                "expected_terminal_wealth_EUR": 15028.323056917658,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.3972602739726027,
+                "OUT": 64,
+                "IN": 6,
+                "D": 146,
+                "expected_return": 0.0018882037945105856,
+                "scenarios": 20,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  0,
+                  32,
+                  32
+                ],
+                "IN_by_order": [
+                  0,
+                  2,
+                  4
+                ]
+              },
+              "delta": {
+                "netSD": 0.0273972602739726,
+                "Sharpe": 0.033912291743589604,
+                "Rachev": 0.03365474262003321,
+                "Sortino": 0.053141695461251776,
+                "mean_return": 0.0006397428021057321,
+                "SD": 0.00036231323855534514,
+                "CVaR95": 0.0006189343133072844,
+                "loss_probability": -0.02308480645774691
+              }
             }
           }
         ],
@@ -36561,6 +38881,86 @@
               "SD": 0.0018737915724985899,
               "CVaR95": 0.001210233364739622,
               "loss_probability": 0.0
+            },
+            "current_addition": {
+              "asset": "SE0014261756",
+              "quantity": 76.016,
+              "terminal": {
+                "mean_return": 0.0026322547347704607,
+                "SD": 0.01785039988091871,
+                "Sharpe": 0.14746194776197843,
+                "Sortino": 0.22454577422419486,
+                "Rachev": 0.9571885554192172,
+                "CVaR95": 0.04455253125265847,
+                "VaR95": 0.03121957784099403,
+                "worst_return": -0.0651400435884909,
+                "loss_probability": 0.43088949105495655,
+                "upper_tail_mean": 0.04264517303000169,
+                "expected_terminal_wealth_EUR": 15039.483821021555,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.4383561643835616,
+                "OUT": 68,
+                "IN": 4,
+                "D": 146,
+                "expected_return": 0.0026322547347704607,
+                "scenarios": 20,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  0,
+                  34,
+                  34
+                ],
+                "IN_by_order": [
+                  0,
+                  1,
+                  3
+                ]
+              },
+              "cash_EUR": 2006.492744948119,
+              "status": "Current plus this exact proposed buy; all other Current quantities unchanged",
+              "baseline": {
+                "mean_return": 0.0018882037945105856,
+                "SD": 0.017338844157910024,
+                "Sharpe": 0.10890021141629457,
+                "Sortino": 0.16052546864789508,
+                "Rachev": 0.8856678621621048,
+                "CVaR95": 0.045692744299354174,
+                "VaR95": 0.03295238526502953,
+                "worst_return": -0.06508731340131135,
+                "loss_probability": 0.45397429751270346,
+                "upper_tail_mean": 0.04046859515992871,
+                "expected_terminal_wealth_EUR": 15028.323056917658,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.3972602739726027,
+                "OUT": 64,
+                "IN": 6,
+                "D": 146,
+                "expected_return": 0.0018882037945105856,
+                "scenarios": 20,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  0,
+                  32,
+                  32
+                ],
+                "IN_by_order": [
+                  0,
+                  2,
+                  4
+                ]
+              },
+              "delta": {
+                "netSD": 0.0410958904109589,
+                "Sharpe": 0.03856173634568387,
+                "Rachev": 0.07152069325711241,
+                "Sortino": 0.06402030557629979,
+                "mean_return": 0.0007440509402598752,
+                "SD": 0.0005115557230086845,
+                "CVaR95": -0.0011402130466957039,
+                "loss_probability": -0.02308480645774691
+              }
             }
           },
           {
@@ -36641,6 +39041,86 @@
               "SD": 0.003427428645860875,
               "CVaR95": 0.003223362010828224,
               "loss_probability": 0.0
+            },
+            "current_addition": {
+              "asset": "SE0015192315",
+              "quantity": 104.599,
+              "terminal": {
+                "mean_return": 0.0038074505494425375,
+                "SD": 0.018767155760520814,
+                "Sharpe": 0.20287840086306588,
+                "Sortino": 0.3134228243671133,
+                "Rachev": 0.9840045677808432,
+                "CVaR95": 0.04754956499107761,
+                "VaR95": 0.037420139271901284,
+                "worst_return": -0.05878451448224481,
+                "loss_probability": 0.43088949105495655,
+                "upper_tail_mean": 0.04678898914721244,
+                "expected_terminal_wealth_EUR": 15057.111758241637,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.4657534246575342,
+                "OUT": 71,
+                "IN": 3,
+                "D": 146,
+                "expected_return": 0.0038074505494425375,
+                "scenarios": 20,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  1,
+                  35,
+                  35
+                ],
+                "IN_by_order": [
+                  0,
+                  1,
+                  2
+                ]
+              },
+              "cash_EUR": 2006.494566948119,
+              "status": "Current plus this exact proposed buy; all other Current quantities unchanged",
+              "baseline": {
+                "mean_return": 0.0018882037945105856,
+                "SD": 0.017338844157910024,
+                "Sharpe": 0.10890021141629457,
+                "Sortino": 0.16052546864789508,
+                "Rachev": 0.8856678621621048,
+                "CVaR95": 0.045692744299354174,
+                "VaR95": 0.03295238526502953,
+                "worst_return": -0.06508731340131135,
+                "loss_probability": 0.45397429751270346,
+                "upper_tail_mean": 0.04046859515992871,
+                "expected_terminal_wealth_EUR": 15028.323056917658,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.3972602739726027,
+                "OUT": 64,
+                "IN": 6,
+                "D": 146,
+                "expected_return": 0.0018882037945105856,
+                "scenarios": 20,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  0,
+                  32,
+                  32
+                ],
+                "IN_by_order": [
+                  0,
+                  2,
+                  4
+                ]
+              },
+              "delta": {
+                "netSD": 0.0684931506849315,
+                "Sharpe": 0.09397818944677132,
+                "Rachev": 0.09833670561873842,
+                "Sortino": 0.1528973557192182,
+                "mean_return": 0.001919246754931952,
+                "SD": 0.0014283116026107892,
+                "CVaR95": 0.0018568206917234376,
+                "loss_probability": -0.02308480645774691
+              }
             }
           },
           {
@@ -36721,6 +39201,86 @@
               "SD": 0.003928474302103604,
               "CVaR95": 0.0019145266849171748,
               "loss_probability": 0.14393220981129862
+            },
+            "current_addition": {
+              "asset": "SE0015192323",
+              "quantity": 98.522,
+              "terminal": {
+                "mean_return": 0.0022252987080643573,
+                "SD": 0.01881462560798719,
+                "Sharpe": 0.11827493963630469,
+                "Sortino": 0.18141522012806346,
+                "Rachev": 0.9692748367281036,
+                "CVaR95": 0.045254259164235304,
+                "VaR95": 0.03198716773648668,
+                "worst_return": -0.06686555666674578,
+                "loss_probability": 0.46731101138776626,
+                "upper_tail_mean": 0.04386381466266546,
+                "expected_terminal_wealth_EUR": 15033.379480620966,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.3835616438356164,
+                "OUT": 63,
+                "IN": 7,
+                "D": 146,
+                "expected_return": 0.0022252987080643573,
+                "scenarios": 20,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  0,
+                  31,
+                  32
+                ],
+                "IN_by_order": [
+                  1,
+                  2,
+                  4
+                ]
+              },
+              "cash_EUR": 1506.499318748119,
+              "status": "Current plus this exact proposed buy; all other Current quantities unchanged",
+              "baseline": {
+                "mean_return": 0.0018882037945105856,
+                "SD": 0.017338844157910024,
+                "Sharpe": 0.10890021141629457,
+                "Sortino": 0.16052546864789508,
+                "Rachev": 0.8856678621621048,
+                "CVaR95": 0.045692744299354174,
+                "VaR95": 0.03295238526502953,
+                "worst_return": -0.06508731340131135,
+                "loss_probability": 0.45397429751270346,
+                "upper_tail_mean": 0.04046859515992871,
+                "expected_terminal_wealth_EUR": 15028.323056917658,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.3972602739726027,
+                "OUT": 64,
+                "IN": 6,
+                "D": 146,
+                "expected_return": 0.0018882037945105856,
+                "scenarios": 20,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  0,
+                  32,
+                  32
+                ],
+                "IN_by_order": [
+                  0,
+                  2,
+                  4
+                ]
+              },
+              "delta": {
+                "netSD": -0.0136986301369863,
+                "Sharpe": 0.00937472822001012,
+                "Rachev": 0.08360697456599875,
+                "Sortino": 0.02088975148016839,
+                "mean_return": 0.0003370949135537717,
+                "SD": 0.0014757814500771654,
+                "CVaR95": -0.00043848513511886983,
+                "loss_probability": 0.0133367138750628
+              }
             }
           }
         ],
@@ -38805,6 +41365,86 @@
               "SD": 0.0004578356536560184,
               "CVaR95": 0.001085217537293362,
               "loss_probability": 0.0
+            },
+            "current_addition": {
+              "asset": "VLP1L",
+              "quantity": 19.0,
+              "terminal": {
+                "mean_return": 0.002338950321605996,
+                "SD": 0.017796679811566043,
+                "Sharpe": 0.13142621805702853,
+                "Sortino": 0.19520018899375985,
+                "Rachev": 0.8872488298124236,
+                "CVaR95": 0.046777961836647536,
+                "VaR95": 0.03364905647887176,
+                "worst_return": -0.06656794209932022,
+                "loss_probability": 0.45397429751270346,
+                "upper_tail_mean": 0.041503691900575734,
+                "expected_terminal_wealth_EUR": 15035.08425482409,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.410958904109589,
+                "OUT": 66,
+                "IN": 6,
+                "D": 146,
+                "expected_return": 0.002338950321605996,
+                "scenarios": 20,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  0,
+                  33,
+                  33
+                ],
+                "IN_by_order": [
+                  0,
+                  2,
+                  4
+                ]
+              },
+              "cash_EUR": 3214.836066548119,
+              "status": "Current plus this exact proposed buy; all other Current quantities unchanged",
+              "baseline": {
+                "mean_return": 0.0018882037945105856,
+                "SD": 0.017338844157910024,
+                "Sharpe": 0.10890021141629457,
+                "Sortino": 0.16052546864789508,
+                "Rachev": 0.8856678621621048,
+                "CVaR95": 0.045692744299354174,
+                "VaR95": 0.03295238526502953,
+                "worst_return": -0.06508731340131135,
+                "loss_probability": 0.45397429751270346,
+                "upper_tail_mean": 0.04046859515992871,
+                "expected_terminal_wealth_EUR": 15028.323056917658,
+                "risk_free_horizon_return": 0.0,
+                "ratios_are_unannualised_four_week": true,
+                "netSD": 0.3972602739726027,
+                "OUT": 64,
+                "IN": 6,
+                "D": 146,
+                "expected_return": 0.0018882037945105856,
+                "scenarios": 20,
+                "probability_mass": 1.0,
+                "OUT_by_order": [
+                  0,
+                  32,
+                  32
+                ],
+                "IN_by_order": [
+                  0,
+                  2,
+                  4
+                ]
+              },
+              "delta": {
+                "netSD": 0.0136986301369863,
+                "Sharpe": 0.022526006640733967,
+                "Rachev": 0.0015809676503187875,
+                "Sortino": 0.034674720345864773,
+                "mean_return": 0.0004507465270954104,
+                "SD": 0.0004578356536560184,
+                "CVaR95": 0.001085217537293362,
+                "loss_probability": 0.0
+              }
             }
           }
         ],
