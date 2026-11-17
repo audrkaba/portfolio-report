@@ -33,7 +33,7 @@ document.querySelectorAll('details.stock-profile').forEach(function(profile) {
   profile.addEventListener('toggle', function() {
     if (!profile.open) return;
     document.querySelectorAll('details.stock-profile[open]').forEach(function(other) {
-      if (other !== profile) other.open = false;
+      if (other !== profile && !window.reportExpandAllActive) other.open = false;
     });
     profile.querySelectorAll('details.dominance-components[open] .dominance-explorer').forEach(initialiseDominanceExplorer);
     profile.querySelectorAll('details.frontier-components[open] .frontier-explorer').forEach(initialiseFrontierExplorer);
