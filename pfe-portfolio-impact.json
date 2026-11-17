@@ -1,10 +1,10 @@
 {
-  "computed_at_UTC": "2026-11-16T19:47:50.469577+00:00",
+  "computed_at_UTC": "2026-11-17T11:34:32.722019+00:00",
   "PFE_units": 5.491688,
   "PFE_quote": {
-    "latest_price_EUR": 26.140064594325406,
-    "latest_date": "2026-11-13",
-    "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/PFE?period1=1451606400&period2=1794700800&interval=1d&events=splits"
+    "latest_price_EUR": 26.20301489953837,
+    "latest_date": "2026-11-16",
+    "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/PFE?period1=1451606400&period2=1794960000&interval=1d&events=splits"
   },
   "current_holdings": {
     "TKM1T": 288,
@@ -16,8 +16,8 @@
     "MRK1T": 26,
     "GRG1L": 543,
     "HAE1T": 100,
-    "TAL1T": 700,
-    "ROE1L": 516,
+    "TAL1T": 1000,
+    "ROE1L": 620,
     "TSM1T": 330,
     "SE0014261764": 7.108,
     "US:PFE": 5.491688
@@ -156,25 +156,25 @@
           "recorded_PFE_units": 5.491688,
           "with_PFE": {
             "PFE_units": 5.491688,
-            "OUT": 83,
-            "IN": 0,
-            "D": 115,
-            "netSD": 0.7217391304347827,
-            "invested_EUR": 11222.509933451882,
-            "cash_EUR": 3777.490066548118,
-            "passes_EUR15000_wealth": true
-          },
-          "without_PFE": {
-            "PFE_units": 0.0,
             "OUT": 84,
             "IN": 0,
             "D": 115,
             "netSD": 0.7304347826086957,
-            "invested_EUR": 11078.9568544,
-            "cash_EUR": 3921.0431456000006,
+            "invested_EUR": 11493.859636887615,
+            "cash_EUR": 3506.140363112385,
             "passes_EUR15000_wealth": true
           },
-          "effect_of_PFE": -0.008695652173912993,
+          "without_PFE": {
+            "PFE_units": 0.0,
+            "OUT": 83,
+            "IN": 0,
+            "D": 115,
+            "netSD": 0.7217391304347827,
+            "invested_EUR": 11349.960854399998,
+            "cash_EUR": 3650.0391456000016,
+            "passes_EUR15000_wealth": true
+          },
+          "effect_of_PFE": 0.008695652173912993,
           "other_quantities_unchanged": true
         },
         {
@@ -187,8 +187,8 @@
             "IN": 0,
             "D": 116,
             "netSD": 1.0,
-            "invested_EUR": 6642.182234251882,
-            "cash_EUR": 8357.817765748117,
+            "invested_EUR": 6642.527937687616,
+            "cash_EUR": 8357.472062312383,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -214,8 +214,8 @@
             "IN": 0,
             "D": 115,
             "netSD": 0.8,
-            "invested_EUR": 12213.702319851882,
-            "cash_EUR": 2786.297680148118,
+            "invested_EUR": 12211.593456887616,
+            "cash_EUR": 2788.4065431123836,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -224,8 +224,8 @@
             "IN": 0,
             "D": 115,
             "netSD": 0.7913043478260869,
-            "invested_EUR": 12070.1492408,
-            "cash_EUR": 2929.8507592000005,
+            "invested_EUR": 12067.6946744,
+            "cash_EUR": 2932.3053256000003,
             "passes_EUR15000_wealth": true
           },
           "effect_of_PFE": 0.008695652173913104,
@@ -241,8 +241,8 @@
             "IN": 0,
             "D": 115,
             "netSD": 0.808695652173913,
-            "invested_EUR": 7853.687578451881,
-            "cash_EUR": 7146.312421548119,
+            "invested_EUR": 7847.203133387615,
+            "cash_EUR": 7152.796866612385,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -251,8 +251,8 @@
             "IN": 0,
             "D": 115,
             "netSD": 0.782608695652174,
-            "invested_EUR": 7710.134499399999,
-            "cash_EUR": 7289.865500600001,
+            "invested_EUR": 7703.304350899999,
+            "cash_EUR": 7296.695649100001,
             "passes_EUR15000_wealth": true
           },
           "effect_of_PFE": 0.02608695652173909,
@@ -268,8 +268,8 @@
             "IN": 0,
             "D": 115,
             "netSD": 0.7304347826086957,
-            "invested_EUR": 11922.507060651882,
-            "cash_EUR": 3077.492939348118,
+            "invested_EUR": 11922.852764087616,
+            "cash_EUR": 3077.1472359123836,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -295,8 +295,8 @@
             "IN": 0,
             "D": 115,
             "netSD": 0.9130434782608695,
-            "invested_EUR": 11527.821502451881,
-            "cash_EUR": 3472.1784975481187,
+            "invested_EUR": 11488.310880687615,
+            "cash_EUR": 3511.6891193123847,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -305,8 +305,8 @@
             "IN": 0,
             "D": 115,
             "netSD": 0.9130434782608695,
-            "invested_EUR": 11384.268423399999,
-            "cash_EUR": 3615.731576600001,
+            "invested_EUR": 11344.412098199999,
+            "cash_EUR": 3655.5879018000014,
             "passes_EUR15000_wealth": true
           },
           "effect_of_PFE": 0.0,
@@ -322,8 +322,8 @@
             "IN": 0,
             "D": 115,
             "netSD": 0.7478260869565218,
-            "invested_EUR": 11514.159933451883,
-            "cash_EUR": 3485.8400665481167,
+            "invested_EUR": 11514.505636887618,
+            "cash_EUR": 3485.4943631123824,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -349,8 +349,8 @@
             "IN": 0,
             "D": 115,
             "netSD": 0.808695652173913,
-            "invested_EUR": 7853.687578451881,
-            "cash_EUR": 7146.312421548119,
+            "invested_EUR": 7847.203133387615,
+            "cash_EUR": 7152.796866612385,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -359,8 +359,8 @@
             "IN": 0,
             "D": 115,
             "netSD": 0.782608695652174,
-            "invested_EUR": 7710.134499399999,
-            "cash_EUR": 7289.865500600001,
+            "invested_EUR": 7703.304350899999,
+            "cash_EUR": 7296.695649100001,
             "passes_EUR15000_wealth": true
           },
           "effect_of_PFE": 0.02608695652173909,
@@ -376,8 +376,8 @@
             "IN": 0,
             "D": 115,
             "netSD": 0.7304347826086957,
-            "invested_EUR": 11922.507060651882,
-            "cash_EUR": 3077.492939348118,
+            "invested_EUR": 11922.852764087616,
+            "cash_EUR": 3077.1472359123836,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -403,8 +403,8 @@
             "IN": 0,
             "D": 115,
             "netSD": 0.7217391304347827,
-            "invested_EUR": 11222.509933451882,
-            "cash_EUR": 3777.490066548118,
+            "invested_EUR": 11222.855636887616,
+            "cash_EUR": 3777.144363112384,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -430,8 +430,8 @@
             "IN": 0,
             "D": 123,
             "netSD": 1.0,
-            "invested_EUR": 4452.732638251881,
-            "cash_EUR": 10547.26736174812,
+            "invested_EUR": 4453.078341687616,
+            "cash_EUR": 10546.921658312385,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -457,8 +457,8 @@
             "IN": 0,
             "D": 115,
             "netSD": 0.7304347826086957,
-            "invested_EUR": 12172.656108151881,
-            "cash_EUR": 2827.343891848119,
+            "invested_EUR": 12172.701831787615,
+            "cash_EUR": 2827.2981682123846,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -467,8 +467,8 @@
             "IN": 0,
             "D": 115,
             "netSD": 0.7304347826086957,
-            "invested_EUR": 12029.103029099999,
-            "cash_EUR": 2970.896970900001,
+            "invested_EUR": 12028.803049299999,
+            "cash_EUR": 2971.1969507000013,
             "passes_EUR15000_wealth": true
           },
           "effect_of_PFE": 0.0,
@@ -484,8 +484,8 @@
             "IN": 0,
             "D": 118,
             "netSD": 1.0,
-            "invested_EUR": 4131.293037451882,
-            "cash_EUR": 10868.706962548118,
+            "invested_EUR": 4131.638740887616,
+            "cash_EUR": 10868.361259112384,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -511,8 +511,8 @@
             "IN": 0,
             "D": 115,
             "netSD": 0.7217391304347827,
-            "invested_EUR": 11222.509933451882,
-            "cash_EUR": 3777.490066548118,
+            "invested_EUR": 11222.855636887616,
+            "cash_EUR": 3777.144363112384,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -538,8 +538,8 @@
             "IN": 0,
             "D": 115,
             "netSD": 0.8782608695652174,
-            "invested_EUR": 3539.3314790518816,
-            "cash_EUR": 11460.668520948118,
+            "invested_EUR": 3539.6771824876164,
+            "cash_EUR": 11460.322817512384,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -565,8 +565,8 @@
             "IN": 0,
             "D": 115,
             "netSD": 0.8,
-            "invested_EUR": 11959.309933451881,
-            "cash_EUR": 3040.690066548119,
+            "invested_EUR": 11959.655636887615,
+            "cash_EUR": 3040.3443631123846,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -592,8 +592,8 @@
             "IN": 0,
             "D": 119,
             "netSD": 1.0,
-            "invested_EUR": 5715.757133451882,
-            "cash_EUR": 9284.242866548118,
+            "invested_EUR": 5716.102836887616,
+            "cash_EUR": 9283.897163112384,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -619,8 +619,8 @@
             "IN": 0,
             "D": 115,
             "netSD": 0.8,
-            "invested_EUR": 11959.309933451881,
-            "cash_EUR": 3040.690066548119,
+            "invested_EUR": 11959.655636887615,
+            "cash_EUR": 3040.3443631123846,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -646,8 +646,8 @@
             "IN": 0,
             "D": 119,
             "netSD": 1.0,
-            "invested_EUR": 5715.757133451882,
-            "cash_EUR": 9284.242866548118,
+            "invested_EUR": 5716.102836887616,
+            "cash_EUR": 9283.897163112384,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -673,8 +673,8 @@
             "IN": 0,
             "D": 115,
             "netSD": 0.8869565217391304,
-            "invested_EUR": 10039.49606585188,
-            "cash_EUR": 4960.503934148121,
+            "invested_EUR": 10030.279826687614,
+            "cash_EUR": 4969.720173312386,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -683,8 +683,8 @@
             "IN": 0,
             "D": 115,
             "netSD": 0.9043478260869565,
-            "invested_EUR": 9895.942986799997,
-            "cash_EUR": 5104.057013200003,
+            "invested_EUR": 9886.381044199998,
+            "cash_EUR": 5113.618955800002,
             "passes_EUR15000_wealth": true
           },
           "effect_of_PFE": -0.017391304347826098,
@@ -700,8 +700,8 @@
             "IN": 0,
             "D": 115,
             "netSD": 0.8434782608695652,
-            "invested_EUR": 12222.490509451882,
-            "cash_EUR": 2777.5094905481183,
+            "invested_EUR": 12222.836212887616,
+            "cash_EUR": 2777.163787112384,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -730,22 +730,22 @@
           "recorded_PFE_units": 5.491688,
           "with_PFE": {
             "PFE_units": 5.491688,
-            "OUT": 68,
+            "OUT": 69,
             "IN": 0,
             "D": 122,
-            "netSD": 0.5573770491803278,
-            "invested_EUR": 11222.509933451882,
-            "cash_EUR": 3777.490066548118,
+            "netSD": 0.5655737704918032,
+            "invested_EUR": 11493.859636887615,
+            "cash_EUR": 3506.140363112385,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
             "PFE_units": 0.0,
-            "OUT": 68,
+            "OUT": 69,
             "IN": 0,
             "D": 122,
-            "netSD": 0.5573770491803278,
-            "invested_EUR": 11078.9568544,
-            "cash_EUR": 3921.0431456000006,
+            "netSD": 0.5655737704918032,
+            "invested_EUR": 11349.960854399998,
+            "cash_EUR": 3650.0391456000016,
             "passes_EUR15000_wealth": true
           },
           "effect_of_PFE": 0.0,
@@ -761,8 +761,8 @@
             "IN": 0,
             "D": 122,
             "netSD": 0.819672131147541,
-            "invested_EUR": 6642.182234251882,
-            "cash_EUR": 8357.817765748117,
+            "invested_EUR": 6642.527937687616,
+            "cash_EUR": 8357.472062312383,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -788,8 +788,8 @@
             "IN": 0,
             "D": 122,
             "netSD": 0.5819672131147541,
-            "invested_EUR": 12213.702319851882,
-            "cash_EUR": 2786.297680148118,
+            "invested_EUR": 12211.593456887616,
+            "cash_EUR": 2788.4065431123836,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -798,8 +798,8 @@
             "IN": 0,
             "D": 122,
             "netSD": 0.5901639344262295,
-            "invested_EUR": 12070.1492408,
-            "cash_EUR": 2929.8507592000005,
+            "invested_EUR": 12067.6946744,
+            "cash_EUR": 2932.3053256000003,
             "passes_EUR15000_wealth": true
           },
           "effect_of_PFE": -0.008196721311475419,
@@ -815,8 +815,8 @@
             "IN": 2,
             "D": 122,
             "netSD": 0.5655737704918032,
-            "invested_EUR": 7853.687578451881,
-            "cash_EUR": 7146.312421548119,
+            "invested_EUR": 7847.203133387615,
+            "cash_EUR": 7152.796866612385,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -825,8 +825,8 @@
             "IN": 2,
             "D": 122,
             "netSD": 0.5819672131147541,
-            "invested_EUR": 7710.134499399999,
-            "cash_EUR": 7289.865500600001,
+            "invested_EUR": 7703.304350899999,
+            "cash_EUR": 7296.695649100001,
             "passes_EUR15000_wealth": true
           },
           "effect_of_PFE": -0.016393442622950838,
@@ -842,8 +842,8 @@
             "IN": 0,
             "D": 122,
             "netSD": 0.5737704918032787,
-            "invested_EUR": 11922.507060651882,
-            "cash_EUR": 3077.492939348118,
+            "invested_EUR": 11922.852764087616,
+            "cash_EUR": 3077.1472359123836,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -865,25 +865,25 @@
           "recorded_PFE_units": 5.491688,
           "with_PFE": {
             "PFE_units": 5.491688,
-            "OUT": 106,
+            "OUT": 104,
             "IN": 0,
             "D": 122,
-            "netSD": 0.8688524590163934,
-            "invested_EUR": 11527.821502451881,
-            "cash_EUR": 3472.1784975481187,
+            "netSD": 0.8524590163934426,
+            "invested_EUR": 11488.310880687615,
+            "cash_EUR": 3511.6891193123847,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
             "PFE_units": 0.0,
-            "OUT": 105,
+            "OUT": 104,
             "IN": 0,
             "D": 122,
-            "netSD": 0.860655737704918,
-            "invested_EUR": 11384.268423399999,
-            "cash_EUR": 3615.731576600001,
+            "netSD": 0.8524590163934426,
+            "invested_EUR": 11344.412098199999,
+            "cash_EUR": 3655.5879018000014,
             "passes_EUR15000_wealth": true
           },
-          "effect_of_PFE": 0.008196721311475419,
+          "effect_of_PFE": 0.0,
           "other_quantities_unchanged": true
         },
         {
@@ -896,8 +896,8 @@
             "IN": 0,
             "D": 122,
             "netSD": 0.5655737704918032,
-            "invested_EUR": 11514.159933451883,
-            "cash_EUR": 3485.8400665481167,
+            "invested_EUR": 11514.505636887618,
+            "cash_EUR": 3485.4943631123824,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -923,8 +923,8 @@
             "IN": 2,
             "D": 122,
             "netSD": 0.5655737704918032,
-            "invested_EUR": 7853.687578451881,
-            "cash_EUR": 7146.312421548119,
+            "invested_EUR": 7847.203133387615,
+            "cash_EUR": 7152.796866612385,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -933,8 +933,8 @@
             "IN": 2,
             "D": 122,
             "netSD": 0.5819672131147541,
-            "invested_EUR": 7710.134499399999,
-            "cash_EUR": 7289.865500600001,
+            "invested_EUR": 7703.304350899999,
+            "cash_EUR": 7296.695649100001,
             "passes_EUR15000_wealth": true
           },
           "effect_of_PFE": -0.016393442622950838,
@@ -950,8 +950,8 @@
             "IN": 0,
             "D": 122,
             "netSD": 0.5737704918032787,
-            "invested_EUR": 11922.507060651882,
-            "cash_EUR": 3077.492939348118,
+            "invested_EUR": 11922.852764087616,
+            "cash_EUR": 3077.1472359123836,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -977,8 +977,8 @@
             "IN": 0,
             "D": 122,
             "netSD": 0.5573770491803278,
-            "invested_EUR": 11222.509933451882,
-            "cash_EUR": 3777.490066548118,
+            "invested_EUR": 11222.855636887616,
+            "cash_EUR": 3777.144363112384,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -1004,8 +1004,8 @@
             "IN": 0,
             "D": 122,
             "netSD": 0.8032786885245902,
-            "invested_EUR": 4452.732638251881,
-            "cash_EUR": 10547.26736174812,
+            "invested_EUR": 4453.078341687616,
+            "cash_EUR": 10546.921658312385,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -1031,8 +1031,8 @@
             "IN": 0,
             "D": 122,
             "netSD": 0.5901639344262295,
-            "invested_EUR": 12172.656108151881,
-            "cash_EUR": 2827.343891848119,
+            "invested_EUR": 12172.701831787615,
+            "cash_EUR": 2827.2981682123846,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -1041,8 +1041,8 @@
             "IN": 0,
             "D": 122,
             "netSD": 0.5901639344262295,
-            "invested_EUR": 12029.103029099999,
-            "cash_EUR": 2970.896970900001,
+            "invested_EUR": 12028.803049299999,
+            "cash_EUR": 2971.1969507000013,
             "passes_EUR15000_wealth": true
           },
           "effect_of_PFE": 0.0,
@@ -1058,8 +1058,8 @@
             "IN": 0,
             "D": 122,
             "netSD": 0.8114754098360656,
-            "invested_EUR": 4131.293037451882,
-            "cash_EUR": 10868.706962548118,
+            "invested_EUR": 4131.638740887616,
+            "cash_EUR": 10868.361259112384,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -1085,8 +1085,8 @@
             "IN": 0,
             "D": 122,
             "netSD": 0.5573770491803278,
-            "invested_EUR": 11222.509933451882,
-            "cash_EUR": 3777.490066548118,
+            "invested_EUR": 11222.855636887616,
+            "cash_EUR": 3777.144363112384,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -1112,8 +1112,8 @@
             "IN": 3,
             "D": 122,
             "netSD": 0.6065573770491803,
-            "invested_EUR": 3539.3314790518816,
-            "cash_EUR": 11460.668520948118,
+            "invested_EUR": 3539.6771824876164,
+            "cash_EUR": 11460.322817512384,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -1139,8 +1139,8 @@
             "IN": 0,
             "D": 122,
             "netSD": 0.5737704918032787,
-            "invested_EUR": 11959.309933451881,
-            "cash_EUR": 3040.690066548119,
+            "invested_EUR": 11959.655636887615,
+            "cash_EUR": 3040.3443631123846,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -1166,8 +1166,8 @@
             "IN": 2,
             "D": 122,
             "netSD": 0.6721311475409836,
-            "invested_EUR": 5715.757133451882,
-            "cash_EUR": 9284.242866548118,
+            "invested_EUR": 5716.102836887616,
+            "cash_EUR": 9283.897163112384,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -1193,8 +1193,8 @@
             "IN": 0,
             "D": 122,
             "netSD": 0.5737704918032787,
-            "invested_EUR": 11959.309933451881,
-            "cash_EUR": 3040.690066548119,
+            "invested_EUR": 11959.655636887615,
+            "cash_EUR": 3040.3443631123846,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -1220,8 +1220,8 @@
             "IN": 2,
             "D": 122,
             "netSD": 0.6721311475409836,
-            "invested_EUR": 5715.757133451882,
-            "cash_EUR": 9284.242866548118,
+            "invested_EUR": 5716.102836887616,
+            "cash_EUR": 9283.897163112384,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -1247,8 +1247,8 @@
             "IN": 0,
             "D": 122,
             "netSD": 0.6885245901639344,
-            "invested_EUR": 10039.49606585188,
-            "cash_EUR": 4960.503934148121,
+            "invested_EUR": 10030.279826687614,
+            "cash_EUR": 4969.720173312386,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -1257,8 +1257,8 @@
             "IN": 0,
             "D": 122,
             "netSD": 0.6885245901639344,
-            "invested_EUR": 9895.942986799997,
-            "cash_EUR": 5104.057013200003,
+            "invested_EUR": 9886.381044199998,
+            "cash_EUR": 5113.618955800002,
             "passes_EUR15000_wealth": true
           },
           "effect_of_PFE": 0.0,
@@ -1274,8 +1274,8 @@
             "IN": 0,
             "D": 122,
             "netSD": 0.5901639344262295,
-            "invested_EUR": 12222.490509451882,
-            "cash_EUR": 2777.5094905481183,
+            "invested_EUR": 12222.836212887616,
+            "cash_EUR": 2777.163787112384,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -1308,8 +1308,8 @@
             "IN": 2,
             "D": 142,
             "netSD": 0.5070422535211268,
-            "invested_EUR": 11222.509933451882,
-            "cash_EUR": 3777.490066548118,
+            "invested_EUR": 11493.859636887615,
+            "cash_EUR": 3506.140363112385,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -1318,8 +1318,8 @@
             "IN": 2,
             "D": 142,
             "netSD": 0.5140845070422535,
-            "invested_EUR": 11078.9568544,
-            "cash_EUR": 3921.0431456000006,
+            "invested_EUR": 11349.960854399998,
+            "cash_EUR": 3650.0391456000016,
             "passes_EUR15000_wealth": true
           },
           "effect_of_PFE": -0.007042253521126751,
@@ -1335,8 +1335,8 @@
             "IN": 2,
             "D": 142,
             "netSD": 0.47183098591549294,
-            "invested_EUR": 6642.182234251882,
-            "cash_EUR": 8357.817765748117,
+            "invested_EUR": 6642.527937687616,
+            "cash_EUR": 8357.472062312383,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -1362,8 +1362,8 @@
             "IN": 2,
             "D": 142,
             "netSD": 0.47183098591549294,
-            "invested_EUR": 12213.702319851882,
-            "cash_EUR": 2786.297680148118,
+            "invested_EUR": 12211.593456887616,
+            "cash_EUR": 2788.4065431123836,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -1372,8 +1372,8 @@
             "IN": 2,
             "D": 142,
             "netSD": 0.5,
-            "invested_EUR": 12070.1492408,
-            "cash_EUR": 2929.8507592000005,
+            "invested_EUR": 12067.6946744,
+            "cash_EUR": 2932.3053256000003,
             "passes_EUR15000_wealth": true
           },
           "effect_of_PFE": -0.02816901408450706,
@@ -1385,12 +1385,12 @@
           "recorded_PFE_units": 5.491688,
           "with_PFE": {
             "PFE_units": 5.491688,
-            "OUT": 47,
+            "OUT": 46,
             "IN": 6,
             "D": 142,
-            "netSD": 0.2887323943661972,
-            "invested_EUR": 7853.687578451881,
-            "cash_EUR": 7146.312421548119,
+            "netSD": 0.28169014084507044,
+            "invested_EUR": 7847.203133387615,
+            "cash_EUR": 7152.796866612385,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -1399,11 +1399,11 @@
             "IN": 7,
             "D": 142,
             "netSD": 0.28169014084507044,
-            "invested_EUR": 7710.134499399999,
-            "cash_EUR": 7289.865500600001,
+            "invested_EUR": 7703.304350899999,
+            "cash_EUR": 7296.695649100001,
             "passes_EUR15000_wealth": true
           },
-          "effect_of_PFE": 0.007042253521126751,
+          "effect_of_PFE": 0.0,
           "other_quantities_unchanged": true
         },
         {
@@ -1416,8 +1416,8 @@
             "IN": 2,
             "D": 142,
             "netSD": 0.5211267605633803,
-            "invested_EUR": 11922.507060651882,
-            "cash_EUR": 3077.492939348118,
+            "invested_EUR": 11922.852764087616,
+            "cash_EUR": 3077.1472359123836,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -1443,8 +1443,8 @@
             "IN": 5,
             "D": 142,
             "netSD": 0.29577464788732394,
-            "invested_EUR": 11527.821502451881,
-            "cash_EUR": 3472.1784975481187,
+            "invested_EUR": 11488.310880687615,
+            "cash_EUR": 3511.6891193123847,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -1453,8 +1453,8 @@
             "IN": 6,
             "D": 142,
             "netSD": 0.2887323943661972,
-            "invested_EUR": 11384.268423399999,
-            "cash_EUR": 3615.731576600001,
+            "invested_EUR": 11344.412098199999,
+            "cash_EUR": 3655.5879018000014,
             "passes_EUR15000_wealth": true
           },
           "effect_of_PFE": 0.007042253521126751,
@@ -1470,8 +1470,8 @@
             "IN": 2,
             "D": 142,
             "netSD": 0.5140845070422535,
-            "invested_EUR": 11514.159933451883,
-            "cash_EUR": 3485.8400665481167,
+            "invested_EUR": 11514.505636887618,
+            "cash_EUR": 3485.4943631123824,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -1493,12 +1493,12 @@
           "recorded_PFE_units": 5.491688,
           "with_PFE": {
             "PFE_units": 5.491688,
-            "OUT": 47,
+            "OUT": 46,
             "IN": 6,
             "D": 142,
-            "netSD": 0.2887323943661972,
-            "invested_EUR": 7853.687578451881,
-            "cash_EUR": 7146.312421548119,
+            "netSD": 0.28169014084507044,
+            "invested_EUR": 7847.203133387615,
+            "cash_EUR": 7152.796866612385,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -1507,11 +1507,11 @@
             "IN": 7,
             "D": 142,
             "netSD": 0.28169014084507044,
-            "invested_EUR": 7710.134499399999,
-            "cash_EUR": 7289.865500600001,
+            "invested_EUR": 7703.304350899999,
+            "cash_EUR": 7296.695649100001,
             "passes_EUR15000_wealth": true
           },
-          "effect_of_PFE": 0.007042253521126751,
+          "effect_of_PFE": 0.0,
           "other_quantities_unchanged": true
         },
         {
@@ -1524,8 +1524,8 @@
             "IN": 2,
             "D": 142,
             "netSD": 0.5211267605633803,
-            "invested_EUR": 11922.507060651882,
-            "cash_EUR": 3077.492939348118,
+            "invested_EUR": 11922.852764087616,
+            "cash_EUR": 3077.1472359123836,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -1551,8 +1551,8 @@
             "IN": 2,
             "D": 142,
             "netSD": 0.5070422535211268,
-            "invested_EUR": 11222.509933451882,
-            "cash_EUR": 3777.490066548118,
+            "invested_EUR": 11222.855636887616,
+            "cash_EUR": 3777.144363112384,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -1578,8 +1578,8 @@
             "IN": 5,
             "D": 142,
             "netSD": 0.3732394366197183,
-            "invested_EUR": 4452.732638251881,
-            "cash_EUR": 10547.26736174812,
+            "invested_EUR": 4453.078341687616,
+            "cash_EUR": 10546.921658312385,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -1605,8 +1605,8 @@
             "IN": 1,
             "D": 142,
             "netSD": 0.5,
-            "invested_EUR": 12172.656108151881,
-            "cash_EUR": 2827.343891848119,
+            "invested_EUR": 12172.701831787615,
+            "cash_EUR": 2827.2981682123846,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -1615,8 +1615,8 @@
             "IN": 2,
             "D": 142,
             "netSD": 0.49295774647887325,
-            "invested_EUR": 12029.103029099999,
-            "cash_EUR": 2970.896970900001,
+            "invested_EUR": 12028.803049299999,
+            "cash_EUR": 2971.1969507000013,
             "passes_EUR15000_wealth": true
           },
           "effect_of_PFE": 0.007042253521126751,
@@ -1632,8 +1632,8 @@
             "IN": 5,
             "D": 142,
             "netSD": 0.3732394366197183,
-            "invested_EUR": 4131.293037451882,
-            "cash_EUR": 10868.706962548118,
+            "invested_EUR": 4131.638740887616,
+            "cash_EUR": 10868.361259112384,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -1659,8 +1659,8 @@
             "IN": 2,
             "D": 142,
             "netSD": 0.5070422535211268,
-            "invested_EUR": 11222.509933451882,
-            "cash_EUR": 3777.490066548118,
+            "invested_EUR": 11222.855636887616,
+            "cash_EUR": 3777.144363112384,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -1686,8 +1686,8 @@
             "IN": 8,
             "D": 142,
             "netSD": 0.2746478873239437,
-            "invested_EUR": 3539.3314790518816,
-            "cash_EUR": 11460.668520948118,
+            "invested_EUR": 3539.6771824876164,
+            "cash_EUR": 11460.322817512384,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -1713,8 +1713,8 @@
             "IN": 2,
             "D": 142,
             "netSD": 0.5140845070422535,
-            "invested_EUR": 11959.309933451881,
-            "cash_EUR": 3040.690066548119,
+            "invested_EUR": 11959.655636887615,
+            "cash_EUR": 3040.3443631123846,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -1740,8 +1740,8 @@
             "IN": 2,
             "D": 142,
             "netSD": 0.49295774647887325,
-            "invested_EUR": 5715.757133451882,
-            "cash_EUR": 9284.242866548118,
+            "invested_EUR": 5716.102836887616,
+            "cash_EUR": 9283.897163112384,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -1767,8 +1767,8 @@
             "IN": 2,
             "D": 142,
             "netSD": 0.5140845070422535,
-            "invested_EUR": 11959.309933451881,
-            "cash_EUR": 3040.690066548119,
+            "invested_EUR": 11959.655636887615,
+            "cash_EUR": 3040.3443631123846,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -1794,8 +1794,8 @@
             "IN": 2,
             "D": 142,
             "netSD": 0.49295774647887325,
-            "invested_EUR": 5715.757133451882,
-            "cash_EUR": 9284.242866548118,
+            "invested_EUR": 5716.102836887616,
+            "cash_EUR": 9283.897163112384,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -1821,8 +1821,8 @@
             "IN": 1,
             "D": 142,
             "netSD": 0.5,
-            "invested_EUR": 10039.49606585188,
-            "cash_EUR": 4960.503934148121,
+            "invested_EUR": 10030.279826687614,
+            "cash_EUR": 4969.720173312386,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -1831,8 +1831,8 @@
             "IN": 1,
             "D": 142,
             "netSD": 0.5211267605633803,
-            "invested_EUR": 9895.942986799997,
-            "cash_EUR": 5104.057013200003,
+            "invested_EUR": 9886.381044199998,
+            "cash_EUR": 5113.618955800002,
             "passes_EUR15000_wealth": true
           },
           "effect_of_PFE": -0.021126760563380254,
@@ -1848,8 +1848,8 @@
             "IN": 2,
             "D": 142,
             "netSD": 0.5140845070422535,
-            "invested_EUR": 12222.490509451882,
-            "cash_EUR": 2777.5094905481183,
+            "invested_EUR": 12222.836212887616,
+            "cash_EUR": 2777.163787112384,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -1878,25 +1878,25 @@
           "recorded_PFE_units": 5.491688,
           "with_PFE": {
             "PFE_units": 5.491688,
-            "OUT": 103,
+            "OUT": 100,
             "IN": 0,
             "D": 124,
-            "netSD": 0.8306451612903226,
-            "invested_EUR": 11222.509933451882,
-            "cash_EUR": 3777.490066548118,
+            "netSD": 0.8064516129032258,
+            "invested_EUR": 11493.859636887615,
+            "cash_EUR": 3506.140363112385,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
             "PFE_units": 0.0,
-            "OUT": 103,
+            "OUT": 102,
             "IN": 0,
             "D": 124,
-            "netSD": 0.8306451612903226,
-            "invested_EUR": 11078.9568544,
-            "cash_EUR": 3921.0431456000006,
+            "netSD": 0.8225806451612904,
+            "invested_EUR": 11349.960854399998,
+            "cash_EUR": 3650.0391456000016,
             "passes_EUR15000_wealth": true
           },
-          "effect_of_PFE": 0.0,
+          "effect_of_PFE": -0.016129032258064613,
           "other_quantities_unchanged": true
         },
         {
@@ -1909,8 +1909,8 @@
             "IN": 0,
             "D": 124,
             "netSD": 0.9032258064516129,
-            "invested_EUR": 6642.182234251882,
-            "cash_EUR": 8357.817765748117,
+            "invested_EUR": 6642.527937687616,
+            "cash_EUR": 8357.472062312383,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -1936,8 +1936,8 @@
             "IN": 0,
             "D": 124,
             "netSD": 0.8467741935483871,
-            "invested_EUR": 12213.702319851882,
-            "cash_EUR": 2786.297680148118,
+            "invested_EUR": 12211.593456887616,
+            "cash_EUR": 2788.4065431123836,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -1946,8 +1946,8 @@
             "IN": 0,
             "D": 124,
             "netSD": 0.8629032258064516,
-            "invested_EUR": 12070.1492408,
-            "cash_EUR": 2929.8507592000005,
+            "invested_EUR": 12067.6946744,
+            "cash_EUR": 2932.3053256000003,
             "passes_EUR15000_wealth": true
           },
           "effect_of_PFE": -0.016129032258064502,
@@ -1963,8 +1963,8 @@
             "IN": 0,
             "D": 124,
             "netSD": 1.0,
-            "invested_EUR": 7853.687578451881,
-            "cash_EUR": 7146.312421548119,
+            "invested_EUR": 7847.203133387615,
+            "cash_EUR": 7152.796866612385,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -1973,8 +1973,8 @@
             "IN": 0,
             "D": 124,
             "netSD": 1.0,
-            "invested_EUR": 7710.134499399999,
-            "cash_EUR": 7289.865500600001,
+            "invested_EUR": 7703.304350899999,
+            "cash_EUR": 7296.695649100001,
             "passes_EUR15000_wealth": true
           },
           "effect_of_PFE": 0.0,
@@ -1990,8 +1990,8 @@
             "IN": 0,
             "D": 124,
             "netSD": 0.8225806451612904,
-            "invested_EUR": 11922.507060651882,
-            "cash_EUR": 3077.492939348118,
+            "invested_EUR": 11922.852764087616,
+            "cash_EUR": 3077.1472359123836,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -2017,8 +2017,8 @@
             "IN": 0,
             "D": 124,
             "netSD": 0.6612903225806451,
-            "invested_EUR": 11527.821502451881,
-            "cash_EUR": 3472.1784975481187,
+            "invested_EUR": 11488.310880687615,
+            "cash_EUR": 3511.6891193123847,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -2027,8 +2027,8 @@
             "IN": 0,
             "D": 124,
             "netSD": 0.6612903225806451,
-            "invested_EUR": 11384.268423399999,
-            "cash_EUR": 3615.731576600001,
+            "invested_EUR": 11344.412098199999,
+            "cash_EUR": 3655.5879018000014,
             "passes_EUR15000_wealth": true
           },
           "effect_of_PFE": 0.0,
@@ -2044,8 +2044,8 @@
             "IN": 0,
             "D": 124,
             "netSD": 0.8467741935483871,
-            "invested_EUR": 11514.159933451883,
-            "cash_EUR": 3485.8400665481167,
+            "invested_EUR": 11514.505636887618,
+            "cash_EUR": 3485.4943631123824,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -2071,8 +2071,8 @@
             "IN": 0,
             "D": 124,
             "netSD": 1.0,
-            "invested_EUR": 7853.687578451881,
-            "cash_EUR": 7146.312421548119,
+            "invested_EUR": 7847.203133387615,
+            "cash_EUR": 7152.796866612385,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -2081,8 +2081,8 @@
             "IN": 0,
             "D": 124,
             "netSD": 1.0,
-            "invested_EUR": 7710.134499399999,
-            "cash_EUR": 7289.865500600001,
+            "invested_EUR": 7703.304350899999,
+            "cash_EUR": 7296.695649100001,
             "passes_EUR15000_wealth": true
           },
           "effect_of_PFE": 0.0,
@@ -2098,8 +2098,8 @@
             "IN": 0,
             "D": 124,
             "netSD": 0.8225806451612904,
-            "invested_EUR": 11922.507060651882,
-            "cash_EUR": 3077.492939348118,
+            "invested_EUR": 11922.852764087616,
+            "cash_EUR": 3077.1472359123836,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -2125,8 +2125,8 @@
             "IN": 0,
             "D": 124,
             "netSD": 0.8306451612903226,
-            "invested_EUR": 11222.509933451882,
-            "cash_EUR": 3777.490066548118,
+            "invested_EUR": 11222.855636887616,
+            "cash_EUR": 3777.144363112384,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -2152,8 +2152,8 @@
             "IN": 0,
             "D": 126,
             "netSD": 1.0,
-            "invested_EUR": 4452.732638251881,
-            "cash_EUR": 10547.26736174812,
+            "invested_EUR": 4453.078341687616,
+            "cash_EUR": 10546.921658312385,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -2179,8 +2179,8 @@
             "IN": 0,
             "D": 124,
             "netSD": 0.8225806451612904,
-            "invested_EUR": 12172.656108151881,
-            "cash_EUR": 2827.343891848119,
+            "invested_EUR": 12172.701831787615,
+            "cash_EUR": 2827.2981682123846,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -2189,8 +2189,8 @@
             "IN": 0,
             "D": 124,
             "netSD": 0.8225806451612904,
-            "invested_EUR": 12029.103029099999,
-            "cash_EUR": 2970.896970900001,
+            "invested_EUR": 12028.803049299999,
+            "cash_EUR": 2971.1969507000013,
             "passes_EUR15000_wealth": true
           },
           "effect_of_PFE": 0.0,
@@ -2206,8 +2206,8 @@
             "IN": 0,
             "D": 124,
             "netSD": 0.9193548387096774,
-            "invested_EUR": 4131.293037451882,
-            "cash_EUR": 10868.706962548118,
+            "invested_EUR": 4131.638740887616,
+            "cash_EUR": 10868.361259112384,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -2233,8 +2233,8 @@
             "IN": 0,
             "D": 124,
             "netSD": 0.8306451612903226,
-            "invested_EUR": 11222.509933451882,
-            "cash_EUR": 3777.490066548118,
+            "invested_EUR": 11222.855636887616,
+            "cash_EUR": 3777.144363112384,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -2260,8 +2260,8 @@
             "IN": 0,
             "D": 126,
             "netSD": 1.0,
-            "invested_EUR": 3539.3314790518816,
-            "cash_EUR": 11460.668520948118,
+            "invested_EUR": 3539.6771824876164,
+            "cash_EUR": 11460.322817512384,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -2287,8 +2287,8 @@
             "IN": 0,
             "D": 124,
             "netSD": 0.8790322580645161,
-            "invested_EUR": 11959.309933451881,
-            "cash_EUR": 3040.690066548119,
+            "invested_EUR": 11959.655636887615,
+            "cash_EUR": 3040.3443631123846,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -2314,8 +2314,8 @@
             "IN": 0,
             "D": 127,
             "netSD": 1.0,
-            "invested_EUR": 5715.757133451882,
-            "cash_EUR": 9284.242866548118,
+            "invested_EUR": 5716.102836887616,
+            "cash_EUR": 9283.897163112384,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -2341,8 +2341,8 @@
             "IN": 0,
             "D": 124,
             "netSD": 0.8790322580645161,
-            "invested_EUR": 11959.309933451881,
-            "cash_EUR": 3040.690066548119,
+            "invested_EUR": 11959.655636887615,
+            "cash_EUR": 3040.3443631123846,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -2368,8 +2368,8 @@
             "IN": 0,
             "D": 127,
             "netSD": 1.0,
-            "invested_EUR": 5715.757133451882,
-            "cash_EUR": 9284.242866548118,
+            "invested_EUR": 5716.102836887616,
+            "cash_EUR": 9283.897163112384,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -2395,8 +2395,8 @@
             "IN": 0,
             "D": 124,
             "netSD": 0.8064516129032258,
-            "invested_EUR": 10039.49606585188,
-            "cash_EUR": 4960.503934148121,
+            "invested_EUR": 10030.279826687614,
+            "cash_EUR": 4969.720173312386,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -2405,8 +2405,8 @@
             "IN": 0,
             "D": 124,
             "netSD": 0.8225806451612904,
-            "invested_EUR": 9895.942986799997,
-            "cash_EUR": 5104.057013200003,
+            "invested_EUR": 9886.381044199998,
+            "cash_EUR": 5113.618955800002,
             "passes_EUR15000_wealth": true
           },
           "effect_of_PFE": -0.016129032258064613,
@@ -2422,8 +2422,8 @@
             "IN": 0,
             "D": 124,
             "netSD": 0.8629032258064516,
-            "invested_EUR": 12222.490509451882,
-            "cash_EUR": 2777.5094905481183,
+            "invested_EUR": 12222.836212887616,
+            "cash_EUR": 2777.163787112384,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -2456,8 +2456,8 @@
             "IN": 6,
             "D": 140,
             "netSD": 0.55,
-            "invested_EUR": 11222.509933451882,
-            "cash_EUR": 3777.490066548118,
+            "invested_EUR": 11493.859636887615,
+            "cash_EUR": 3506.140363112385,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -2466,8 +2466,8 @@
             "IN": 7,
             "D": 140,
             "netSD": 0.5285714285714286,
-            "invested_EUR": 11078.9568544,
-            "cash_EUR": 3921.0431456000006,
+            "invested_EUR": 11349.960854399998,
+            "cash_EUR": 3650.0391456000016,
             "passes_EUR15000_wealth": true
           },
           "effect_of_PFE": 0.021428571428571463,
@@ -2483,8 +2483,8 @@
             "IN": 6,
             "D": 140,
             "netSD": 0.4357142857142857,
-            "invested_EUR": 6642.182234251882,
-            "cash_EUR": 8357.817765748117,
+            "invested_EUR": 6642.527937687616,
+            "cash_EUR": 8357.472062312383,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -2510,8 +2510,8 @@
             "IN": 6,
             "D": 140,
             "netSD": 0.5357142857142857,
-            "invested_EUR": 12213.702319851882,
-            "cash_EUR": 2786.297680148118,
+            "invested_EUR": 12211.593456887616,
+            "cash_EUR": 2788.4065431123836,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -2520,8 +2520,8 @@
             "IN": 9,
             "D": 140,
             "netSD": 0.5071428571428571,
-            "invested_EUR": 12070.1492408,
-            "cash_EUR": 2929.8507592000005,
+            "invested_EUR": 12067.6946744,
+            "cash_EUR": 2932.3053256000003,
             "passes_EUR15000_wealth": true
           },
           "effect_of_PFE": 0.02857142857142858,
@@ -2537,8 +2537,8 @@
             "IN": 5,
             "D": 140,
             "netSD": 0.5571428571428572,
-            "invested_EUR": 7853.687578451881,
-            "cash_EUR": 7146.312421548119,
+            "invested_EUR": 7847.203133387615,
+            "cash_EUR": 7152.796866612385,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -2547,8 +2547,8 @@
             "IN": 7,
             "D": 140,
             "netSD": 0.5142857142857142,
-            "invested_EUR": 7710.134499399999,
-            "cash_EUR": 7289.865500600001,
+            "invested_EUR": 7703.304350899999,
+            "cash_EUR": 7296.695649100001,
             "passes_EUR15000_wealth": true
           },
           "effect_of_PFE": 0.04285714285714293,
@@ -2564,8 +2564,8 @@
             "IN": 6,
             "D": 140,
             "netSD": 0.5642857142857143,
-            "invested_EUR": 11922.507060651882,
-            "cash_EUR": 3077.492939348118,
+            "invested_EUR": 11922.852764087616,
+            "cash_EUR": 3077.1472359123836,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -2591,8 +2591,8 @@
             "IN": 6,
             "D": 140,
             "netSD": 0.35,
-            "invested_EUR": 11527.821502451881,
-            "cash_EUR": 3472.1784975481187,
+            "invested_EUR": 11488.310880687615,
+            "cash_EUR": 3511.6891193123847,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -2601,8 +2601,8 @@
             "IN": 7,
             "D": 140,
             "netSD": 0.34285714285714286,
-            "invested_EUR": 11384.268423399999,
-            "cash_EUR": 3615.731576600001,
+            "invested_EUR": 11344.412098199999,
+            "cash_EUR": 3655.5879018000014,
             "passes_EUR15000_wealth": true
           },
           "effect_of_PFE": 0.0071428571428571175,
@@ -2618,8 +2618,8 @@
             "IN": 6,
             "D": 140,
             "netSD": 0.55,
-            "invested_EUR": 11514.159933451883,
-            "cash_EUR": 3485.8400665481167,
+            "invested_EUR": 11514.505636887618,
+            "cash_EUR": 3485.4943631123824,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -2645,8 +2645,8 @@
             "IN": 5,
             "D": 140,
             "netSD": 0.5571428571428572,
-            "invested_EUR": 7853.687578451881,
-            "cash_EUR": 7146.312421548119,
+            "invested_EUR": 7847.203133387615,
+            "cash_EUR": 7152.796866612385,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -2655,8 +2655,8 @@
             "IN": 7,
             "D": 140,
             "netSD": 0.5142857142857142,
-            "invested_EUR": 7710.134499399999,
-            "cash_EUR": 7289.865500600001,
+            "invested_EUR": 7703.304350899999,
+            "cash_EUR": 7296.695649100001,
             "passes_EUR15000_wealth": true
           },
           "effect_of_PFE": 0.04285714285714293,
@@ -2672,8 +2672,8 @@
             "IN": 6,
             "D": 140,
             "netSD": 0.5642857142857143,
-            "invested_EUR": 11922.507060651882,
-            "cash_EUR": 3077.492939348118,
+            "invested_EUR": 11922.852764087616,
+            "cash_EUR": 3077.1472359123836,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -2699,8 +2699,8 @@
             "IN": 6,
             "D": 140,
             "netSD": 0.55,
-            "invested_EUR": 11222.509933451882,
-            "cash_EUR": 3777.490066548118,
+            "invested_EUR": 11222.855636887616,
+            "cash_EUR": 3777.144363112384,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -2726,8 +2726,8 @@
             "IN": 6,
             "D": 140,
             "netSD": 0.4642857142857143,
-            "invested_EUR": 4452.732638251881,
-            "cash_EUR": 10547.26736174812,
+            "invested_EUR": 4453.078341687616,
+            "cash_EUR": 10546.921658312385,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -2753,8 +2753,8 @@
             "IN": 5,
             "D": 140,
             "netSD": 0.5785714285714286,
-            "invested_EUR": 12172.656108151881,
-            "cash_EUR": 2827.343891848119,
+            "invested_EUR": 12172.701831787615,
+            "cash_EUR": 2827.2981682123846,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -2763,8 +2763,8 @@
             "IN": 6,
             "D": 140,
             "netSD": 0.5714285714285714,
-            "invested_EUR": 12029.103029099999,
-            "cash_EUR": 2970.896970900001,
+            "invested_EUR": 12028.803049299999,
+            "cash_EUR": 2971.1969507000013,
             "passes_EUR15000_wealth": true
           },
           "effect_of_PFE": 0.0071428571428572285,
@@ -2780,8 +2780,8 @@
             "IN": 8,
             "D": 140,
             "netSD": 0.36428571428571427,
-            "invested_EUR": 4131.293037451882,
-            "cash_EUR": 10868.706962548118,
+            "invested_EUR": 4131.638740887616,
+            "cash_EUR": 10868.361259112384,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -2807,8 +2807,8 @@
             "IN": 6,
             "D": 140,
             "netSD": 0.55,
-            "invested_EUR": 11222.509933451882,
-            "cash_EUR": 3777.490066548118,
+            "invested_EUR": 11222.855636887616,
+            "cash_EUR": 3777.144363112384,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -2834,8 +2834,8 @@
             "IN": 12,
             "D": 140,
             "netSD": 0.36428571428571427,
-            "invested_EUR": 3539.3314790518816,
-            "cash_EUR": 11460.668520948118,
+            "invested_EUR": 3539.6771824876164,
+            "cash_EUR": 11460.322817512384,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -2861,8 +2861,8 @@
             "IN": 7,
             "D": 140,
             "netSD": 0.5357142857142857,
-            "invested_EUR": 11959.309933451881,
-            "cash_EUR": 3040.690066548119,
+            "invested_EUR": 11959.655636887615,
+            "cash_EUR": 3040.3443631123846,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -2888,8 +2888,8 @@
             "IN": 6,
             "D": 140,
             "netSD": 0.5642857142857143,
-            "invested_EUR": 5715.757133451882,
-            "cash_EUR": 9284.242866548118,
+            "invested_EUR": 5716.102836887616,
+            "cash_EUR": 9283.897163112384,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -2915,8 +2915,8 @@
             "IN": 7,
             "D": 140,
             "netSD": 0.5357142857142857,
-            "invested_EUR": 11959.309933451881,
-            "cash_EUR": 3040.690066548119,
+            "invested_EUR": 11959.655636887615,
+            "cash_EUR": 3040.3443631123846,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -2942,8 +2942,8 @@
             "IN": 6,
             "D": 140,
             "netSD": 0.5642857142857143,
-            "invested_EUR": 5715.757133451882,
-            "cash_EUR": 9284.242866548118,
+            "invested_EUR": 5716.102836887616,
+            "cash_EUR": 9283.897163112384,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -2969,8 +2969,8 @@
             "IN": 6,
             "D": 140,
             "netSD": 0.4642857142857143,
-            "invested_EUR": 10039.49606585188,
-            "cash_EUR": 4960.503934148121,
+            "invested_EUR": 10030.279826687614,
+            "cash_EUR": 4969.720173312386,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {
@@ -2979,8 +2979,8 @@
             "IN": 6,
             "D": 140,
             "netSD": 0.4642857142857143,
-            "invested_EUR": 9895.942986799997,
-            "cash_EUR": 5104.057013200003,
+            "invested_EUR": 9886.381044199998,
+            "cash_EUR": 5113.618955800002,
             "passes_EUR15000_wealth": true
           },
           "effect_of_PFE": 0.0,
@@ -2996,8 +2996,8 @@
             "IN": 6,
             "D": 140,
             "netSD": 0.5357142857142857,
-            "invested_EUR": 12222.490509451882,
-            "cash_EUR": 2777.5094905481183,
+            "invested_EUR": 12222.836212887616,
+            "cash_EUR": 2777.163787112384,
             "passes_EUR15000_wealth": true
           },
           "without_PFE": {

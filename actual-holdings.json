@@ -1,5 +1,5 @@
 {
-  "confirmed_at": "2026-11-16T14:08:10.462041+00:00",
+  "confirmed_at": "2026-11-17T11:20:58.519010+00:00",
   "units": {
     "TKM1T": 288,
     "SAF1R": 100,
@@ -10,8 +10,8 @@
     "MRK1T": 26,
     "GRG1L": 543,
     "HAE1T": 100,
-    "TAL1T": 700,
-    "ROE1L": 516,
+    "TAL1T": 1000,
+    "ROE1L": 620,
     "TSM1T": 330,
     "SE0014261764": 7.108,
     "US:PFE": 5.491688
@@ -20,20 +20,69 @@
     "US:PFE": 6
   },
   "pending_model_updates": [
-    "US:PFE",
-    "VLP1L"
+    "TAL1T",
+    "ROE1L"
   ],
   "public_disclosure_authorized": true,
-  "scope": "Publicly authorized current holdings: VLP117 and PFE5.491688. Current monitoring uses these quantities; model analyses retain their frozen VLP107 and PFE1.719526 inputs until recalculated.",
-  "pending_quantity_updates": {
-    "VLP1L": {
-      "model_units": 107,
-      "actual_units": 117
+  "scope": "Latest user-confirmed public Current holdings; TAL1T1000 and Artea620 and derived results explicitly authorised on2026-11-17. Native trading policies retain their sealed November16 inventory. Sensitivity replays those signed trades without reoptimisation.",
+  "change_history": [
+    {
+      "reported_at": "2026-11-16T12:00:35.517226+02:00",
+      "asset": "VLP1L",
+      "previous_units": 107,
+      "change_units": 10,
+      "new_units": 117,
+      "kind": "user_confirmed_purchase",
+      "execution_price_EUR": null,
+      "fees_EUR": null,
+      "execution_timestamp": null
     },
-    "US:PFE": {
-      "model_units": 1.719526,
-      "actual_units": 5.491688
+    {
+      "reported_at": "2026-11-16T14:08:10.462041+00:00",
+      "asset": "US:PFE",
+      "previous_units": 1.719526,
+      "new_units": 5.491688,
+      "quantity_difference": 3.772162,
+      "exact_units": "5.491688",
+      "kind": "user_confirmed_current_total",
+      "execution_price": null,
+      "fees": null,
+      "execution_timestamp": null,
+      "public_disclosure_authorized": false
+    },
+    {
+      "recorded_at": "2026-11-16T14:37:12.691646+00:00",
+      "kind": "public_disclosure_authorized",
+      "asset": "US:PFE",
+      "units": 5.491688,
+      "source": "Explicit user approval"
+    }
+  ],
+  "pending_quantity_updates": {
+    "TAL1T": {
+      "model_units": 700.0,
+      "actual_units": 1000.0
+    },
+    "ROE1L": {
+      "model_units": 516.0,
+      "actual_units": 620.0
     }
   },
-  "public_disclosure_recorded_at": "2026-11-16T14:37:12.691646+00:00"
+  "public_disclosure_by_asset": {
+    "VLP1L": {
+      "units": 117,
+      "authorized": true,
+      "recorded_at": "2026-11-16T14:08:10.462041+00:00",
+      "source": "User explicitly answered: Taip, skelbti 117"
+    },
+    "US:PFE": {
+      "units": 5.491688,
+      "authorized": true,
+      "recorded_at": "2026-11-16T14:37:12.691646+00:00",
+      "source": "User explicitly answered: Taip, skelbti 5,491688"
+    }
+  },
+  "source": "User confirmed final Artea Bankas ROE1L total620; earlier TAL1T total1000 retained; execution prices and fees not supplied",
+  "model_snapshot_status": "Latest actual inventory differs from immutable live policies and sealed historical research inventories",
+  "public_disclosure_recorded_at": "2026-11-17T13:12:08.453115+00:00"
 }
