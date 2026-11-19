@@ -1,5 +1,5 @@
 {
-  "state": "complete_pending_live_verification",
+  "state": "complete_live_verified",
   "main_report_complete": true,
   "financial_calculations_complete": true,
   "technical_studies_complete": false,
@@ -35,5 +35,10 @@
     "price_status": "Latest available official observations; source dates retained",
     "updated_current_session": 0
   },
-  "updated_at": "2026-11-19T12:50:42.722161+00:00"
+  "updated_at": "2026-11-19T12:50:42.722161+00:00",
+  "holdings_positions": 16,
+  "AKO1L_units": 50,
+  "public_commit": "2ddfcdcfc35fce7b9de2a94b39e56fee8410025e",
+  "verified_at_UTC": "2026-11-19T13:23:05.676376+00:00",
+  "scope": "Holdings-only revision with unchanged verified18November closes and17November fund NAVs. Rolling research retains its separate sealed inventory and is reported independently."
 }
