@@ -1,6 +1,6 @@
 {
   "checked_at_UTC": "2026-11-18T21:15:35.660067+00:00",
-  "prepared_at_UTC": "2026-11-19T07:56:59.376820+00:00",
+  "prepared_at_UTC": "2026-11-19T12:50:27.000134+00:00",
   "quotes": {
     "AIR": {
       "price": 1.82,
@@ -822,5 +822,5 @@
       "bollinger_upper": 10.5554911302494
     }
   },
-  "scope": "Verified18November completed share closes and latest genuinely published fund NAVs; exact dates retained per instrument and shared with model inputs."
+  "scope": "Verified closing snapshot also used in this daily model revision. Baltic, PFE and NVDA closes2026-11-18; exact fund NAV dates2026-11-16 or2026-11-18 as published when this snapshot was downloaded. Model and Current quotes are frozen together; later external chart publications do not silently change calculated results. No intraday prices or invented missing NAV."
 }

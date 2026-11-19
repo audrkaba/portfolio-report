@@ -1,5 +1,5 @@
 {
-  "computed_at_UTC": "2026-11-19T07:57:04.841264+00:00",
+  "computed_at_UTC": "2026-11-19T12:50:32.559223+00:00",
   "holdings": {
     "TKM1T": 288,
     "SAF1R": 100,
@@ -14,8 +14,9 @@
     "ROE1L": 620,
     "TSM1T": 330,
     "SE0014261764": 7.108,
-    "US:PFE": 5.491688,
-    "US:NVDA": 0.28401
+    "US_PFE": 5.491688,
+    "US_NVDA": 0.28401,
+    "AKO1L": 50
   },
   "valuation_quotes": {
     "TKM1T": {
@@ -77,10 +78,14 @@
     "US_NVDA": {
       "price_EUR": 137.63676760928809,
       "date": "2026-11-18"
+    },
+    "AKO1L": {
+      "price_EUR": 1.6949999999999998,
+      "date": "2026-11-18"
     }
   },
-  "invested_EUR": 11487.650678163243,
-  "cash_with_EUR15000_account": 3512.3493218367566,
+  "invested_EUR": 11572.400678163245,
+  "cash_with_EUR15000_account": 3427.599321836755,
   "training_observations": 1133,
   "excluded_diagnostic_observations": 126,
   "unlabelled_training_observations": 42,
@@ -5982,10 +5987,10 @@
     }
   },
   "protected_input_sha256": {
-    "data\\current_holdings.json": "0cd8e58328e62d32bc5d4fde1283f42f7260bbc9a35b14c4bb299c0a1096139d",
+    "data\\current_holdings.json": "01d8e6a277abc11915332c2deddebaad0525ef4c83c765ca7b5ebbdc00fd60e1",
     "data\\long_history\\asset_returns.csv": "0f1c1bc4ac0f5ac473e7c6903e8b9816addd25bf9e32d6b31d8f690a016bfece",
     "data\\full_universe\\share_prices.csv": "b9c414836ca943100a899b123d198a5375788535311c2b5c21f83a9b5f20877a",
     "data\\full_universe\\fund_nav_eur.csv": "8bac9bd1c9e895974aff0fcc0ac600bcfa7ac17b19ce695404e9ef1a114762f6"
   },
-  "method": "Historical price-return stochastic dominance of orders 1-3. Network: all 72 eligible asset nodes, including PFE once, plus Current once. Current uses the 15 approved holdings and latest verified EUR valuation weights; invested-holdings returns exclude cash. D=max(OUT+IN) is recomputed on each complete network including this Current portfolio, with all incident reference degrees updated. No fixed archived D and no duplicate PFE candidate. FULL uses the existing training sample; R1-R4 use exact-date retrospective labels without filling. The 126 diagnostic observations are excluded. This is a historical evaluation, not terminal scenario-tree netSD, a new forecast, or reoptimisation of trading policies."
+  "method": "Historical price-return stochastic dominance of orders 1-3. Network: all 72 eligible asset nodes, including PFE once, plus Current once. Current uses the 16 sealed holdings and latest verified EUR valuation weights; invested-holdings returns exclude cash. D=max(OUT+IN) is recomputed on each complete network including this Current portfolio, with all incident reference degrees updated. No fixed archived D and no duplicate PFE candidate. FULL uses the existing training sample; R1-R4 use exact-date retrospective labels without filling. The 126 diagnostic observations are excluded. This is a historical evaluation, not terminal scenario-tree netSD, a new forecast, or reoptimisation of trading policies."
 }

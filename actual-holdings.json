@@ -1,5 +1,5 @@
 {
-  "confirmed_at": "2026-11-18T08:17:34.027143+00:00",
+  "confirmed_at": "2026-11-19T12:20:53.527815+00:00",
   "units": {
     "TKM1T": 288,
     "SAF1R": 100,
@@ -15,7 +15,8 @@
     "TSM1T": 330,
     "SE0014261764": 7.108,
     "US:PFE": 5.491688,
-    "US:NVDA": 0.28401
+    "US:NVDA": 0.28401,
+    "AKO1L": 50
   },
   "quantity_precision_overrides": {
     "US:PFE": 6,
@@ -24,6 +25,6 @@
   "public_disclosure_authorized": true,
   "pending_quantity_updates": {},
   "pending_model_updates": [],
-  "model_snapshot_status": "All current daily trading policies use this exact15-position inventory",
+  "model_snapshot_status": "All current daily trading policies use this exact16-position inventory",
   "scope": "Confirmed Current quantities used in this daily C4 revision; completed share closes 2026-11-18 and individual published fund NAV dates retained. Execution prices, fees and execution timestamps were not supplied."
 }

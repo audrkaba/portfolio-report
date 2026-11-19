@@ -1,0 +1,95 @@
+{
+  "input_hash": "d3bca8d25bdd1fcd773d0656a2ac1a7ec323f9a20dda1044d786c8848587e37c",
+  "AKO1L_units": 50,
+  "positions": 16,
+  "rows": [
+    {
+      "model": "STOCHASTIC",
+      "policy": "NO_SALE",
+      "terminal_netSD": 0.6390532544378699,
+      "dominance_backend": "CPU",
+      "wealth_backend": "CPU canonical NumPy row-sum"
+    },
+    {
+      "model": "STOCHASTIC",
+      "policy": "SALE",
+      "terminal_netSD": 0.8,
+      "dominance_backend": "CPU",
+      "wealth_backend": "CPU canonical NumPy row-sum"
+    },
+    {
+      "model": "STOCHASTIC",
+      "policy": "NO_INITIAL_SALES",
+      "terminal_netSD": 0.7823529411764706,
+      "dominance_backend": "CPU",
+      "wealth_backend": "CPU canonical NumPy row-sum"
+    },
+    {
+      "model": "stochA",
+      "policy": "NO_SALE",
+      "terminal_netSD": 0.8058823529411765,
+      "dominance_backend": "CPU",
+      "wealth_backend": "CPU canonical NumPy row-sum"
+    },
+    {
+      "model": "stochA",
+      "policy": "SALE",
+      "terminal_netSD": 1.0,
+      "dominance_backend": "CPU",
+      "wealth_backend": "CPU canonical NumPy row-sum"
+    },
+    {
+      "model": "stochA",
+      "policy": "NO_INITIAL_SALES",
+      "terminal_netSD": 1.0,
+      "dominance_backend": "CPU",
+      "wealth_backend": "CPU canonical NumPy row-sum"
+    },
+    {
+      "model": "STOCHASTIC2",
+      "policy": "NO_SALE",
+      "terminal_netSD": 0.42196531791907516,
+      "dominance_backend": "CPU",
+      "wealth_backend": "CPU canonical NumPy row-sum"
+    },
+    {
+      "model": "STOCHASTIC2",
+      "policy": "SALE",
+      "terminal_netSD": 0.6647398843930635,
+      "dominance_backend": "CPU",
+      "wealth_backend": "CPU canonical NumPy row-sum"
+    },
+    {
+      "model": "STOCHASTIC2",
+      "policy": "NO_INITIAL_SALES",
+      "terminal_netSD": 0.48554913294797686,
+      "dominance_backend": "CPU",
+      "wealth_backend": "CPU canonical NumPy row-sum"
+    },
+    {
+      "model": "stoch2A",
+      "policy": "NO_SALE",
+      "terminal_netSD": 0.42196531791907516,
+      "dominance_backend": "CPU",
+      "wealth_backend": "CPU canonical NumPy row-sum"
+    },
+    {
+      "model": "stoch2A",
+      "policy": "SALE",
+      "terminal_netSD": 0.6647398843930635,
+      "dominance_backend": "CPU",
+      "wealth_backend": "CPU canonical NumPy row-sum"
+    },
+    {
+      "model": "stoch2A",
+      "policy": "NO_INITIAL_SALES",
+      "terminal_netSD": 0.48554913294797686,
+      "dominance_backend": "CPU",
+      "wealth_backend": "CPU canonical NumPy row-sum"
+    }
+  ],
+  "individual_case_energy_measured": false,
+  "financial_scope": "Holdings-only revision; unchanged prices/forecast law",
+  "public_disclosure_authorized": true,
+  "standing_user_reported_holdings_authorization": true
+}
