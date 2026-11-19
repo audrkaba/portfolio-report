@@ -888,19 +888,21 @@ window.renderSelectedPortfolioSensitivity=function(profile,scope,policy){
   const setCell=(name,value)=>{const i=labels.indexOf(name);if(i>=0)row.cells[i].textContent=value;};
   const fmt=value=>value==null?'\u2014':Number(value).toFixed(6);
   const signed=value=>(value>0?'+':'')+fmt(value);
-  const modes={},scopes=new Set(['ALL']),allModes=new Set();
+  const modes={},scopes=new Set(['ALL']),allModes=new Set(),purchaseModes=new Set();
+  const hasPurchase=b=>Number(b.rows.find(z=>z.asset===asset)?.units??0)>currentHolding(asset,b)+1e-8||Number(b.future_purchases?.[asset]?.total_maximum)>1e-8;
   for(const [model,cases] of Object.entries(data)){
    modes[model]=Object.entries(cases).filter(([key,b])=>currentHolding(asset,b)>0||b.rows.some(z=>z.asset===asset&&Number(z.units)>1e-8)||Number(b.future_purchases?.[asset]?.total_maximum)>1e-8||(!b.future_purchases&&b.future_assets?.includes(asset))).map(([key])=>key);
    if(modes[model].length)scopes.add(model);modes[model].forEach(key=>allModes.add(key));
+   Object.entries(cases).filter(([,b])=>hasPurchase(b)).forEach(([key])=>purchaseModes.add(key));
   }
-  modes.ANY=modes.ALL=[...allModes];if(allModes.size)scopes.add('ANY');
+  modes.ALL=[...allModes];modes.ANY=[...purchaseModes];if(purchaseModes.size)scopes.add('ANY');
   profile.dataset.saleMembership=JSON.stringify(modes);profile.dataset.portfolioScopes=[...scopes].join(' ');
-  const cases=data[scope]?Object.entries(data[scope]).filter(([key])=>policy==='ALL'||policy===key):[];
-  const plans=cases.map(([key,basket])=>{
+  const cases=data[scope]?Object.entries(data[scope]).filter(([key])=>policy==='ALL'||policy===key).map(([key,basket])=>[scope,key,basket]):(scope==='ANY'||scope==='ALL')?Object.entries(data).flatMap(([model,cases])=>Object.entries(cases).filter(([key,b])=>(policy==='ALL'||policy===key)&&(scope==='ANY'?hasPurchase(b):(Number(b.rows.find(z=>z.asset===asset)?.units)>1e-8||Number(b.future_purchases?.[asset]?.total_maximum)>1e-8))).map(([key,b])=>[model,key,b])):[];
+  const plans=cases.map(([model,key,basket])=>{
    const selected=basket.rows.find(z=>z.asset===asset),target=selected?.units??0,change=Number((target-current).toFixed(6));
-   return {key,target,change,weight:selected?.weight??0,value:selected?.value??0,decision:change>0?'BUY':change<0?'SELL':'HOLD',impact:evaluation(scope,key)?.changes[asset],future:basket.future_purchases?.[asset]};
+   return {model,key,target,change,weight:selected?.weight??0,value:selected?.value??0,decision:change>0?'BUY':change<0?'SELL':'HOLD',impact:evaluation(model,key)?.changes[asset],future:basket.future_purchases?.[asset]};
   });
-  const consensus=field=>plans.length&&plans.every(z=>z[field]===plans[0][field])?plans[0][field]:null;
+  const consensus=field=>plans.length>0&&plans.every(z=>z[field]===plans[0][field])?plans[0][field]:null;
   const target=consensus('target'),change=consensus('change'),weight=consensus('weight');
   setCell('current units',current);setCell('target units',target??'\u2014');setCell('change',change??'\u2014');setCell('weight %',weight==null?'\u2014':(100*weight).toFixed(2)+'%');
   const targetValue=consensus('value');setCell('target value eur',targetValue==null?'\u2014':targetValue.toFixed(2));
@@ -911,20 +913,22 @@ window.renderSelectedPortfolioSensitivity=function(profile,scope,policy){
   table.after(notes);notes.replaceChildren();
   const intro=document.createElement('p');intro.className='profile-context-note';
   intro.textContent='Portfolio: '+(data[scope]?scope:scope==='ALL'?'All instruments':'Any portfolio')+'; policy: '+(policy==='ALL'?'Sale and No-sale':policy==='SALE'?'Sale':'No-sale')+'; history: '+(context?.label||'Full history')+(context?' ('+context.observations+' observations)':'')+'.';notes.append(intro);
+  if(scope==='ANY'){const p=document.createElement('p');p.className='profile-any-purchase-explanation';p.textContent='This filter includes only assets with a positive additional purchase in at least one model under the selected sale policy, initially or later in its scenario tree. It does not combine model orders. A zero initial quantity can mean conditional later purchases; the exact stage quantities are listed below. Different model quantities have no single common target, so the table shows a dash.';notes.append(p);}
   if(plans.length){
    for(const plan of plans){
-    const p=document.createElement('p');p.className='profile-policy-note';p.dataset.policy=plan.key;p.dataset.targetUnits=plan.target;p.dataset.changeUnits=plan.change;p.dataset.decision=plan.decision;
-    p.textContent=(plan.key==='SALE'?'Sale':'No-sale')+': target '+plan.target+' units; change '+(plan.change>0?'+':'')+plan.change+'; weight '+(100*plan.weight).toFixed(2)+'%; decision '+plan.decision+'.';
+    const prefix=(scope==='ANY'||scope==='ALL'?plan.model+' / ':'')+(plan.key==='SALE'?'Sale':'No-sale');
+    const p=document.createElement('p');p.className='profile-policy-note';p.dataset.model=plan.model;p.dataset.policy=plan.key;p.dataset.targetUnits=plan.target;p.dataset.changeUnits=plan.change;p.dataset.decision=plan.decision;
+    p.textContent=prefix+': initial target '+plan.target+' units; '+(plan.change>0?'BUY '+plan.change+' additional units':plan.change<0?'SELL '+Math.abs(plan.change)+' units':'no initial purchase (0 additional units)')+'; weight '+(100*plan.weight).toFixed(2)+'%; decision '+plan.decision+'.';
     if(plan.impact){const e=plan.impact;p.dataset.tradeNetsdDelta=e.delta;p.dataset.portfolioNetsd=e.portfolio_netSD;
      p.textContent+=' Current netSD before this trade '+fmt(e.before_netSD)+'; after this trade '+fmt(e.after_netSD)+'; change '+signed(e.delta)+'. Portfolio netSD '+fmt(e.portfolio_netSD)+'; without this asset '+fmt(e.without_asset_netSD)+'; change on removal '+signed(e.removal_delta)+'.';}
     notes.append(p);
     if((plan.future?.total_maximum??0)>0){
-     const future=document.createElement('p');future.className='profile-future-purchases';future.dataset.policy=plan.key;future.dataset.commonFutureUnits=plan.future.total_minimum;
-     future.textContent=(plan.key==='SALE'?'Sale':'No-sale')+' — later purchases: '+plan.future.stages.map(s=>`Stage ${s.stage} (${s.date}): ${s.minimum}–${s.maximum} units (common to all ${s.nodes} stage scenarios: ${s.minimum} units)`).join('; ')+`. Total later purchases: ${plan.future.total_minimum}–${plan.future.total_maximum} units (common to all complete scenario paths: ${plan.future.total_minimum} units).`;
+     const future=document.createElement('p');future.className='profile-future-purchases';future.dataset.model=plan.model;future.dataset.policy=plan.key;future.dataset.commonFutureUnits=plan.future.total_minimum;
+     future.textContent=prefix+' — conditional LATER BUY, additional units: '+plan.future.stages.filter(s=>Number(s.maximum)>1e-8).map(s=>`Stage ${s.stage} (${s.date}): ${s.minimum}–${s.maximum} units (common to all ${s.nodes} stage scenarios: ${s.minimum} units)`).join('; ')+`. Cumulative later gross purchases on a complete scenario path: ${plan.future.total_minimum}–${plan.future.total_maximum} additional units (common to all complete paths: ${plan.future.total_minimum} units). These are conditional future quantities, not an instruction to buy them now.`;
      notes.append(future);
     }
    }
-   if(target==null||weight==null){const p=document.createElement('p');p.className='profile-policy-help';p.textContent='Sale and No-sale differ. The table shows a dash where one value cannot represent both policies; both results are listed above. Select one policy to show its values in the table.';notes.append(p);}
+   if(target==null||weight==null){const p=document.createElement('p');p.className='profile-policy-help';p.textContent='The selected plans differ. The table shows a dash where one value cannot represent all plans; exact quantities for each model and sale policy are listed above. Select one portfolio and policy for a single initial target.';notes.append(p);}
   }else{const p=document.createElement('p');p.textContent='Select a portfolio and policy to display its target quantities. The table retains the common instrument fields.';notes.append(p);}
   if(diagnostic){const p=document.createElement('p');p.className='regime-asset-impact';p.textContent='Standardised addition: Current netSD '+fmt(diagnostic.current_netSD)+'; after adding '+diagnostic.add_units+' units (EUR '+diagnostic.add_value_EUR.toFixed(2)+') '+fmt(diagnostic.after_add_netSD)+'; change '+signed(diagnostic.add_delta)+'. Hypothetical diagnostic, not an executable order.';notes.append(p);}
   const metricNote=document.createElement('p');metricNote.className='profile-metric-scope-note';metricNote.textContent='Individual netSD, OUT and IN use the selected history. Rachev and Sortino in the table use the full training sample; technical indicators use the latest price history. A red attractiveness score fails your EUR 1,000 weekly market-turnover minimum; open the score for its liquidity breakdown. Portfolio sensitivity follows the selected portfolio, policy and history; the original Stochastic reference diagnostics are separately labelled.';notes.append(metricNote);
@@ -935,7 +939,7 @@ window.renderSelectedPortfolioSensitivity=function(profile,scope,policy){
   summary.textContent=asset+' \u2014 '+(assetInfo[asset]?.name??saved.name??asset)+(plans.length?' | current action: '+[...new Set(plans.map(z=>z.decision))].join(' / ')+' | allocation target '+(target??'\u2014')+' units':'');
   const laterPlans=plans.filter(p=>Number(p.future?.total_maximum)>1e-8);
   if(laterPlans.length){
-   const laterText=laterPlans.map(p=>(policy==='ALL'?(p.key==='SALE'?'Sale: ':'No-sale: '):'')+(p.future.stages||[]).filter(s=>Number(s.maximum)>1e-8).map(s=>'stage '+s.stage+' ('+s.date+'): up to '+s.maximum+' units; common '+s.minimum).join('; ')).join(' / ');
+   const laterText=laterPlans.map(p=>((scope==='ANY'||scope==='ALL')?p.model+' / ':'')+(policy==='ALL'?(p.key==='SALE'?'Sale: ':'No-sale: '):'')+(p.future.stages||[]).filter(s=>Number(s.maximum)>1e-8).map(s=>'stage '+s.stage+' ('+s.date+'): up to '+s.maximum+' additional units; common '+s.minimum).join('; ')).join(' / ');
    summary.textContent+=' | Conditional later BUY: '+laterText;
   }
   profile.dataset.futurePurchase=String(laterPlans.length>0);
