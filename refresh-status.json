@@ -1,10 +1,10 @@
 {
-  "state": "complete_live_verified",
+  "state": "complete_pending_live_verification",
   "main_report_complete": true,
   "financial_calculations_complete": true,
   "technical_studies_complete": false,
   "technical_study_scope": "Previously measured historical studies retained; no new speed-up experiment requested",
-  "model_input_hash": "d3bca8d25bdd1fcd773d0656a2ac1a7ec323f9a20dda1044d786c8848587e37c",
+  "model_input_hash": "79b05fd1cd265dd827810c0f1dbbe01ca4019e5d78eaa269c948d12584da5a12",
   "holdings": {
     "TKM1T": 288,
     "SAF1R": 100,
@@ -24,21 +24,16 @@
     "AKO1L": 50
   },
   "market": {
-    "as_of": "2026-11-18T23:15:35.660067+02:00",
-    "requested_end": "2026-11-18",
+    "as_of": "2026-11-19T18:07:13.257702+02:00",
+    "requested_end": "2026-11-19",
     "assets": 93,
-    "new_observations": 81,
-    "share_last": "2026-11-18",
-    "fund_last": "2026-11-17",
+    "new_observations": 89,
+    "share_last": "2026-11-19",
+    "fund_last": "2026-11-18",
     "historical_repairs_preserved": true,
     "intraday": false,
     "price_status": "Latest available official observations; source dates retained",
     "updated_current_session": 0
   },
-  "updated_at": "2026-11-19T12:50:42.722161+00:00",
-  "holdings_positions": 16,
-  "AKO1L_units": 50,
-  "public_commit": "2ddfcdcfc35fce7b9de2a94b39e56fee8410025e",
-  "verified_at_UTC": "2026-11-19T13:23:05.676376+00:00",
-  "scope": "Holdings-only revision with unchanged verified18November closes and17November fund NAVs. Rolling research retains its separate sealed inventory and is reported independently."
+  "updated_at": "2026-11-19T18:19:20.806142+00:00"
 }

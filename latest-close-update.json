@@ -1,8 +1,7 @@
 {
   "passed": true,
   "observed_at_UTC": "2026-11-19T16:11:43.298321+00:00",
-  "scope": "Verified19November Baltic closes; US completed closes18November and individual published fund NAV dates. Current valuation only; policies are still recalculating.",
-  "models_recalculated": false,
+  "scope": "Price/Current valuation snapshot only. Refer to the main report for model completion status and independently checked recommendations.",
   "rows": [
     {
       "asset": "AIR",
