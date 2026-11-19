@@ -3,7 +3,7 @@
  function makeParts(root){
   const headings=[...(root.matches?.('h2,h3,h4,h5,h6')?[root]:[]),...root.querySelectorAll('h2,h3,h4,h5,h6')];
   for(const h of headings){
-   if(!h.isConnected||h.closest('summary,table,figure,[role="dialog"],.metric-modal,#asset-dialog'))continue;
+   if(!h.isConnected||h.closest('summary,table,figure,[role="dialog"],.metric-modal,#asset-dialog,#current-portfolio-overview'))continue;
    const level=Number(h.tagName.slice(1)),d=document.createElement('details'),s=document.createElement('summary');
    d.className='research-subsection';h.before(d);s.innerHTML=h.innerHTML;
    if(h.id)s.id=h.id;d.append(s);
