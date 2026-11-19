@@ -1,7 +1,7 @@
 (()=>{
  const input=document.getElementById('current-market-quotes-data'),held=document.getElementById('current-holdings-monitor-data');if(!input||!held)return;
  const market=JSON.parse(input.textContent),holdings=JSON.parse(held.textContent),baskets=JSON.parse(document.getElementById('current-portfolio-baskets').textContent),previous=window.updateSelectedPortfolioProfile,cache=new WeakMap();
- const canonical=a=>a==='US_PFE'?'US:PFE':a;
+ const canonical=a=>a.startsWith('US_')?a.replace('US_','US:'):a;
  const historicalElement=document.getElementById('current-holdings-netsd-data'),historical=historicalElement?JSON.parse(historicalElement.textContent):null;
  const impactElement=document.getElementById('pfe-portfolio-impact-data'),impact=impactElement?JSON.parse(impactElement.textContent):null;
  const selectedHistory=()=>document.querySelector('select[name="profile-history-regime"]')?.value||'FULL';
@@ -37,7 +37,7 @@
    }
    const context=historical?.contexts[selectedHistory()],score=context?.assets[asset.replace('US:','US_')];
    if(score){f.set('individual netsd',score.netSD.toFixed(6));f.set('out',score.OUT);f.set('in',score.IN)}
-   note.textContent='Confirmed holding: '+units+' units. '+(quote?'Latest verified EUR price '+quote.price.toFixed(4)+' dated '+quote.date+'. ':'')+'Current monitoring proposes no trades. '+(score?'Historical netSD: '+selectedHistory()+', '+context.observations+' training observations ('+context.first_return_date+' to '+context.last_return_date+'); D='+score.D+' on the complete 72-node network including PFE and confirmed Current. Excludes cash and the 126 diagnostic observations. The native historical metrics use the refreshed common training/diagnostic split.':'Historical analytics pending.');
+   note.textContent='Confirmed holding: '+units+' units. '+(quote?'Latest verified EUR price '+quote.price.toFixed(4)+' dated '+quote.date+'. ':'')+'Current monitoring proposes no trades. '+(score?'Historical netSD: '+selectedHistory()+', '+context.observations+' training observations ('+context.first_return_date+' to '+context.last_return_date+'); D='+score.D+' on the complete '+context.network_nodes+'-node network including all eligible assets and confirmed Current. Excludes cash and the 126 diagnostic observations. The native historical metrics use the refreshed common training/diagnostic split.':'Historical analytics pending.');
    if(profile.dataset.currentPending==='true'){
     const text=profile.querySelector(':scope > p:not(.confirmed-holding-scope)');if(text)text.textContent='Confirmed PFE holding, latest completed-session quote and regime-dependent historical netSD are shown. Reoptimised trading allocations and full scenario-tree evaluation remain pending.';
     let p=profile.querySelector('.pfe-portfolio-impact');if(!p){p=document.createElement('p');p.className='pfe-portfolio-impact';table.after(p)}
@@ -47,9 +47,10 @@
   }else{
    const old=snapshot?.current_units;
    const validated=baskets[scope]?.[policy]?.validated===true;
-   note.textContent='Confirmed holding: '+units+' units. '+(old!=null?'Model input: '+old+' units. ':'')+(validated?'Recalculated allocation using the latest completed-session quotes.':'Target and analytics are an earlier model snapshot, not recalculated current orders.');
+   const inventoryMatches=old==null||Math.abs(old-units)<=1e-9;
+   note.textContent='Confirmed holding: '+units+' units. '+(old!=null?'Model input: '+old+' units. ':'')+(!inventoryMatches?'The inventory changed after this model was sealed. Its recorded target is not a newly recalculated order.':validated?'Recalculated allocation using its stated completed-session quotes.':'Target and analytics are an earlier model snapshot, not recalculated current orders.');
    if(old!=null&&Math.abs(old-units)>1e-9)f.set('change','Pending recalculation');
-   const summary=profile.querySelector(':scope > summary');if(summary){summary.textContent=summary.textContent.replace(validated?'recorded action:':'current action:',validated?'current action:':'recorded action:');summary.textContent=summary.textContent.replace(/ \| held now:.*$/,'');summary.textContent+=' | held now: '+units+' units'}
+   const summary=profile.querySelector(':scope > summary');if(summary){const fresh=validated&&inventoryMatches;summary.textContent=summary.textContent.replace(fresh?'recorded action:':'current action:',fresh?'current action:':'recorded action:');summary.textContent=summary.textContent.replace(/ \| held now:.*$/,'');summary.textContent+=' | held now: '+units+' units'}
   }
   return result;
  };
@@ -62,14 +63,14 @@
   document.querySelectorAll('.actual-current-netsd').forEach(e=>e.remove());
   if(document.querySelector('input[name="portfolio-scope"]:checked')?.value!=='CURRENT'||!historical)return;
   const context=historical.contexts[selectedHistory()],score=context.assets.Current,host=document.querySelector('.current-portfolio-composition');if(!host)return;
-  const p=document.createElement('p');p.className='actual-current-netsd';p.textContent='Confirmed Current portfolio historical netSD: '+score.netSD.toFixed(6)+' ('+selectedHistory()+', OUT '+score.OUT+', IN '+score.IN+', D '+score.D+'). Uses all 14 confirmed holdings, including 117 VLP and 5.491688 PFE, valued at the latest verified quotes. Invested-holdings returns exclude cash; '+context.observations+' training observations. This is not terminal scenario-tree netSD and does not represent reoptimised orders.';host.append(p);
+  const p=document.createElement('p');p.className='actual-current-netsd';p.textContent='Confirmed Current portfolio historical netSD: '+score.netSD.toFixed(6)+' ('+selectedHistory()+', OUT '+score.OUT+', IN '+score.IN+', D '+score.D+'). Uses all '+Object.values(holdings.units).filter(q=>q>0).length+' confirmed holdings, including '+holdings.units.TAL1T+' TAL1T,117 VLP and5.491688 PFE, valued at the latest verified quotes. Invested-holdings returns exclude cash; '+context.observations+' training observations. This is not terminal scenario-tree netSD and does not represent reoptimised orders.';host.append(p);
  }
  document.addEventListener('change',e=>{if(e.target.matches('input[name="portfolio-scope"],input[name="sale-policy"],select[name="profile-history-regime"]'))queueMicrotask(currentNetSD)});
  function initialise(){
   const filters=document.querySelector('.profile-filters');if(filters&&!document.getElementById('confirmed-holdings-shortcut')){
    const box=document.createElement('aside');box.id='confirmed-holdings-shortcut';box.style.cssText='border:1px solid #bfd1d9;border-radius:5px;padding:.65rem;margin:.6rem 0;overflow-wrap:anywhere';
-   const p=document.createElement('p');p.textContent='Confirmed holdings: VLP1L '+holdings.units.VLP1L+'; PFE '+holdings.units['US:PFE']+'; Robur Technology C '+holdings.units.SE0014261764+' units. “Updates only” filters recorded model changes; it is not a list of all investments held.';box.append(p);
-   for(const [label,asset] of [['View all Current holdings',null],['View PFE holding','US:PFE']]){const b=document.createElement('button');b.type='button';b.textContent=label;b.style.marginRight='.5rem';b.addEventListener('click',()=>showCurrent(asset));box.append(b)}
+   const p=document.createElement('p');p.textContent='Confirmed holdings: Artea (ROE1L) '+holdings.units.ROE1L+'; TAL1T '+holdings.units.TAL1T+'; VLP1L '+holdings.units.VLP1L+'; PFE '+holdings.units['US:PFE']+'; NVIDIA '+holdings.units['US:NVDA']+'; Robur Technology C '+holdings.units.SE0014261764+' units. “Updates only” filters recorded model changes; it is not a list of all investments held.';box.append(p);
+   for(const [label,asset] of [['View all Current holdings',null],['View PFE holding','US:PFE'],['View NVIDIA holding','US:NVDA'],['View TAL1T holding','TAL1T'],['View Artea holding','ROE1L']]){const b=document.createElement('button');b.type='button';b.textContent=label;b.style.marginRight='.5rem';b.addEventListener('click',()=>showCurrent(asset));box.append(b)}
    filters.after(box);
   }
   if(filters&&!document.getElementById('profile-supporting-information')){

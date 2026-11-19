@@ -9,7 +9,7 @@
   monitored.add(profile);
   original?.(profile,'ALL',policy);
   const raw=profile.dataset.currentAsset||profile.id.replace(/^(share-|fund-)/,'').toUpperCase();
-  const asset=raw==='US_PFE'&&holdings.units['US:PFE']?'US:PFE':raw,units=holdings.units[asset]||0;
+  const asset=raw.startsWith('US_')?raw.replace('US_','US:'):raw,units=holdings.units[asset]||0;
   profile.dataset.portfolioScopes=units>0?'CURRENT':'';
   profile.dataset.saleMembership=JSON.stringify({CURRENT:units>0?['SALE','NO_SALE']:[]});
   profile.dataset.signal='HOLD';profile.dataset.hasUpdate='false';profile.dataset.netsdEffect='UNCHANGED';

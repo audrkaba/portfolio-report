@@ -1,0 +1,26 @@
+'use strict';
+(async()=>{
+ const data=await fetch('rolling-validation.json').then(r=>{if(!r.ok)throw Error(r.status);return r.json()});
+ const $=id=>document.getElementById(id),escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ $('study-status').textContent=`${data.verified_folds} / ${data.planned_folds} windows verified. ${data.is_complete?'Study complete.':'Calculations in progress; unfinished windows are excluded.'} Sources end 2026-11-17; calendar windows: six months / one month / seven-day step.`;
+ const rows=data.completed.flatMap(f=>f.metrics.map(r=>({...r,origin:f.fold.origin,regime:f.origin_regime||null}))).filter(r=>r.cost_bps===(r.scope==='IS'?0:10));
+ const metrics=['netSD','mean_return','Rachev','Sharpe','maximum_drawdown','Sortino','STD','accumulated_wealth_EUR','CVaR95','fees_EUR','turnover_EUR'];
+ function options(el,values){el.replaceChildren(...values.map(v=>{const o=document.createElement('option');o.value=v;o.textContent=v;return o}));}
+ options($('case'),[...new Set(rows.map(r=>r.case))].sort());options($('metric'),metrics);options($('origin'),data.completed.map(x=>x.fold.id));
+ function plot(host,points,label){
+  const valid=points.filter(p=>Number.isFinite(p[1]));if(!valid.length){host.textContent='No verified observations for this selection.';return;}
+  const lo=Math.min(...valid.map(p=>p[1])),hi=Math.max(...valid.map(p=>p[1])),span=hi-lo||1,w=1000,h=320;
+  const x=i=>75+(w-100)*i/Math.max(1,points.length-1),y=v=>h-55-(v-lo)/span*(h-90);
+  let paths='',open=false;points.forEach((p,i)=>{if(Number.isFinite(p[1])){paths+=(open?' L':' M')+x(i).toFixed(2)+','+y(p[1]).toFixed(2);open=true;}else open=false;});
+  host.innerHTML=`<svg viewBox="0 0 ${w} ${h}" role="img" aria-label="${escape(label)}"><line x1="75" y1="${h-55}" x2="980" y2="${h-55}" stroke="#aaa"/><path d="${paths}" fill="none" stroke="#1762a0" stroke-width="2"/><text x="5" y="30" font-size="14">${hi.toPrecision(5)}</text><text x="5" y="${h-55}" font-size="14">${lo.toPrecision(5)}</text><text x="75" y="${h-12}" font-size="14">${escape(points[0][0])}</text><text x="850" y="${h-12}" font-size="14">${escape(points.at(-1)[0])}</text>${points.filter(p=>Number.isFinite(p[1])).map(p=>{const i=points.indexOf(p);return `<circle cx="${x(i)}" cy="${y(p[1])}" r="3" fill="#1762a0"><title>${escape(p[0])}: ${escape(p[1])}</title></circle>`}).join('')}</svg>`;
+ }
+ let renderId=0;const curveCache=new Map();async function render(){
+  const thisRender=++renderId;
+  let selected=rows.filter(r=>r.case===$('case').value&&r.scope===$('scope').value&&($('regime').value==='all'||r.regime===$('regime').value));
+  const metric=$('metric').value;plot($('chart'),selected.map(r=>[r.origin,r[metric]]),metric);
+  $('chart-note').textContent=`${selected.length} overlapping folds. Ratios are unannualised unless labelled otherwise. Missing values remain unavailable. Held-out tails have different lengths.`;
+  $('result-table').innerHTML='<table><thead><tr><th>Origin</th><th>Sessions</th><th>'+escape(metric)+'</th><th>netSD denominator</th><th>Tail mass</th></tr></thead><tbody>'+selected.map(r=>`<tr><td>${escape(r.origin)}</td><td>${r.observations}</td><td>${Number.isFinite(r[metric])?r[metric].toPrecision(6):'Unavailable'}</td><td>${r.netSD_D??'—'}</td><td>${r.tail_observation_mass??'—'}</td></tr>`).join('')+'</tbody></table>';
+  const fold=data.completed.find(f=>f.fold.id===$('origin').value);if(fold){if(!curveCache.has(fold.fold.id))curveCache.set(fold.fold.id,await fetch('rolling-validation-folds/'+fold.fold.id+'.json').then(r=>r.json()));if(thisRender!==renderId)return;const curve=curveCache.get(fold.fold.id)?.[$('case').value]||[];plot($('wealth-chart'),curve,'Accumulated wealth in EUR');const p=fold.parameters||{};$('regime-parameters').innerHTML='<p>Training: '+escape(fold.fold.training_first)+' to '+escape(fold.fold.origin)+'; OOS ends '+escape(fold.fold.OOS_end)+'.</p><table><thead><tr><th>Parameter</th><th>Window value</th></tr></thead><tbody>'+Object.entries(p).filter(([k,v])=>typeof v==='number').map(([k,v])=>'<tr><td>'+escape(k)+'</td><td>'+escape(v.toPrecision(6))+'</td></tr>').join('')+'</tbody></table><table><thead><tr><th>Period</th><th>Sessions</th><th>R1</th><th>R2</th><th>R3</th><th>R4</th><th>Unknown</th></tr></thead><tbody>'+(fold.regimes||[]).map(r=>'<tr><td>'+escape(r.scope)+'</td><td>'+r.observations+'</td>'+[1,2,3,4].map(k=>'<td>'+(r.regime_counts[k]||0)+'</td>').join('')+'<td>'+r.unclassified+'</td></tr>').join('')+'</tbody></table>';}
+ }
+ for(const id of ['case','scope','metric','regime','origin'])$(id).addEventListener('change',render);render();
+})().catch(e=>{document.getElementById('study-status').textContent='Experiment data unavailable: '+e.message;});

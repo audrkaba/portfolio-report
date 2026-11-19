@@ -1,0 +1,910 @@
+{
+  "run": "20261118_daily",
+  "configuration": "C4",
+  "branching": [
+    20,
+    20,
+    10,
+    4
+  ],
+  "assets": 72,
+  "current_positions": 15,
+  "production_policies": [
+    {
+      "model": "STOCHASTIC",
+      "policy": "NO_SALE",
+      "law": "Original20-scenario law",
+      "decision_nodes": 21,
+      "outcomes": 20,
+      "netSD": 0.9929577464788732,
+      "objective": 0.9661455296785891,
+      "own_search_seconds": 8.307535899977665,
+      "own_search_gross_component_Wh": 0.24934935138822223,
+      "dominance_backend": "CPU",
+      "wealth_backend": "GPU",
+      "cpu_workers": 48,
+      "CPU_calibration_seconds": 0.0012866000179201365,
+      "GPU_calibration_seconds": 0.27931000001262873,
+      "whole_command_includes_startup": true
+    },
+    {
+      "model": "STOCHASTIC",
+      "policy": "SALE",
+      "law": "Original20-scenario law",
+      "decision_nodes": 21,
+      "outcomes": 20,
+      "netSD": 1.0,
+      "objective": 0.9860041669746896,
+      "own_search_seconds": 9.376217999990331,
+      "own_search_gross_component_Wh": 0.2895640833333333,
+      "dominance_backend": "CPU",
+      "wealth_backend": "GPU",
+      "cpu_workers": 48,
+      "CPU_calibration_seconds": 0.0015569999814033508,
+      "GPU_calibration_seconds": 0.264122699998552,
+      "whole_command_includes_startup": true
+    },
+    {
+      "model": "STOCHASTIC",
+      "policy": "NO_INITIAL_SALES",
+      "law": "Original20-scenario law",
+      "decision_nodes": 21,
+      "outcomes": 20,
+      "netSD": 1.0,
+      "objective": 0.9839986685840011,
+      "own_search_seconds": 8.309291099983966,
+      "own_search_gross_component_Wh": 0.24950049583266667,
+      "dominance_backend": "CPU",
+      "wealth_backend": "GPU",
+      "cpu_workers": 48,
+      "CPU_calibration_seconds": 0.0015093999973032624,
+      "GPU_calibration_seconds": 0.2762599000125192,
+      "whole_command_includes_startup": true
+    },
+    {
+      "model": "STOCHASTIC2",
+      "policy": "NO_SALE",
+      "law": "C4:20x20x10x4",
+      "decision_nodes": 4421,
+      "outcomes": 16000,
+      "netSD": 0.35365853658536583,
+      "objective": 0.3322171772615718,
+      "own_search_seconds": 138.8201371000032,
+      "own_search_gross_component_Wh": 3.4348958041670006,
+      "dominance_backend": "CPU",
+      "wealth_backend": "GPU",
+      "cpu_workers": 48,
+      "CPU_calibration_seconds": 0.003469400020549074,
+      "GPU_calibration_seconds": 0.2844057999900542,
+      "whole_command_includes_startup": true
+    },
+    {
+      "model": "STOCHASTIC2",
+      "policy": "SALE",
+      "law": "C4:20x20x10x4",
+      "decision_nodes": 4421,
+      "outcomes": 16000,
+      "netSD": 0.6932515337423313,
+      "objective": 0.6792939834596292,
+      "own_search_seconds": 346.8308260999911,
+      "own_search_gross_component_Wh": 8.41777989722289,
+      "dominance_backend": "CPU",
+      "wealth_backend": "GPU",
+      "cpu_workers": 48,
+      "CPU_calibration_seconds": 0.003702199988765642,
+      "GPU_calibration_seconds": 0.35216869998839684,
+      "whole_command_includes_startup": true
+    },
+    {
+      "model": "STOCHASTIC2",
+      "policy": "NO_INITIAL_SALES",
+      "law": "C4:20x20x10x4",
+      "decision_nodes": 4421,
+      "outcomes": 16000,
+      "netSD": 0.4573170731707317,
+      "objective": 0.4380552579428336,
+      "own_search_seconds": 113.61220740000135,
+      "own_search_gross_component_Wh": 2.814489397222889,
+      "dominance_backend": "CPU",
+      "wealth_backend": "GPU",
+      "cpu_workers": 48,
+      "CPU_calibration_seconds": 0.003413999977055937,
+      "GPU_calibration_seconds": 0.29173480000463314,
+      "whole_command_includes_startup": true
+    },
+    {
+      "model": "stochA",
+      "policy": "NO_SALE",
+      "law": "Original20-scenario law",
+      "decision_nodes": 21,
+      "outcomes": 20,
+      "netSD": 1.0,
+      "objective": 0.9775170401726426,
+      "own_search_seconds": 7.305524199997308,
+      "own_search_gross_component_Wh": 0.21385139722255556,
+      "dominance_backend": "CPU",
+      "wealth_backend": "GPU",
+      "cpu_workers": 48,
+      "CPU_calibration_seconds": 0.00163569999858737,
+      "GPU_calibration_seconds": 0.2684112999995705,
+      "whole_command_includes_startup": true
+    },
+    {
+      "model": "stochA",
+      "policy": "SALE",
+      "law": "Original20-scenario law",
+      "decision_nodes": 21,
+      "outcomes": 20,
+      "netSD": 1.0,
+      "objective": 0.987935656367125,
+      "own_search_seconds": 16.48827880001045,
+      "own_search_gross_component_Wh": 0.4762399833336666,
+      "dominance_backend": "CPU",
+      "wealth_backend": "GPU",
+      "cpu_workers": 48,
+      "CPU_calibration_seconds": 0.0014836000045761466,
+      "GPU_calibration_seconds": 0.3385837000096217,
+      "whole_command_includes_startup": true
+    },
+    {
+      "model": "stochA",
+      "policy": "NO_INITIAL_SALES",
+      "law": "Original20-scenario law",
+      "decision_nodes": 21,
+      "outcomes": 20,
+      "netSD": 1.0,
+      "objective": 0.9842127279525263,
+      "own_search_seconds": 8.303281200001948,
+      "own_search_gross_component_Wh": 0.24817777222222223,
+      "dominance_backend": "CPU",
+      "wealth_backend": "GPU",
+      "cpu_workers": 48,
+      "CPU_calibration_seconds": 0.0015957000141497701,
+      "GPU_calibration_seconds": 0.26982800001860596,
+      "whole_command_includes_startup": true
+    },
+    {
+      "model": "stoch2A",
+      "policy": "NO_SALE",
+      "law": "C4:20x20x10x4",
+      "decision_nodes": 4421,
+      "outcomes": 16000,
+      "netSD": 0.35365853658536583,
+      "objective": 0.3322171772615718,
+      "own_search_seconds": 22.51734099999885,
+      "own_search_gross_component_Wh": 0.6780258472225557,
+      "dominance_backend": "CPU",
+      "wealth_backend": "GPU",
+      "cpu_workers": 48,
+      "CPU_calibration_seconds": 0.003469400020549074,
+      "GPU_calibration_seconds": 0.2844057999900542,
+      "whole_command_includes_startup": true
+    },
+    {
+      "model": "stoch2A",
+      "policy": "SALE",
+      "law": "C4:20x20x10x4",
+      "decision_nodes": 4421,
+      "outcomes": 16000,
+      "netSD": 0.6932515337423313,
+      "objective": 0.6792939834596292,
+      "own_search_seconds": 92.41792949999217,
+      "own_search_gross_component_Wh": 2.5624402750003337,
+      "dominance_backend": "CPU",
+      "wealth_backend": "GPU",
+      "cpu_workers": 48,
+      "CPU_calibration_seconds": 0.003702199988765642,
+      "GPU_calibration_seconds": 0.35216869998839684,
+      "whole_command_includes_startup": true
+    },
+    {
+      "model": "stoch2A",
+      "policy": "NO_INITIAL_SALES",
+      "law": "C4:20x20x10x4",
+      "decision_nodes": 4421,
+      "outcomes": 16000,
+      "netSD": 0.4573170731707317,
+      "objective": 0.4380552579428336,
+      "own_search_seconds": 22.465708499978064,
+      "own_search_gross_component_Wh": 0.6749329111104445,
+      "dominance_backend": "CPU",
+      "wealth_backend": "GPU",
+      "cpu_workers": 48,
+      "CPU_calibration_seconds": 0.003413999977055937,
+      "GPU_calibration_seconds": 0.29173480000463314,
+      "whole_command_includes_startup": true
+    }
+  ],
+  "completed_commands": [
+    {
+      "phase": "active_ui_contracts",
+      "seconds": 2.204490899981465,
+      "component_Wh": 0.052073758333666675,
+      "started_at": "2026-11-18T11:21:15.365566+02:00",
+      "ended_at": "2026-11-18T11:21:17.598682+02:00"
+    },
+    {
+      "phase": "alternatives",
+      "seconds": 20.432626099995105,
+      "component_Wh": 0.521367829166,
+      "started_at": "2026-11-18T10:32:11.535757+02:00",
+      "ended_at": "2026-11-18T10:32:31.990372+02:00"
+    },
+    {
+      "phase": "benchmark",
+      "seconds": 2.2881758000003174,
+      "component_Wh": 0.07151861388922222,
+      "started_at": "2026-11-18T10:10:24.276353+02:00",
+      "ended_at": "2026-11-18T10:10:26.806675+02:00"
+    },
+    {
+      "phase": "chapter3_sensitivity_report",
+      "seconds": 5.261089399980847,
+      "component_Wh": 0.12309312361077777,
+      "started_at": "2026-11-18T11:24:59.166446+02:00",
+      "ended_at": "2026-11-18T11:25:04.463778+02:00"
+    },
+    {
+      "phase": "chapter3_sensitivity_tables",
+      "seconds": 12.383063399989624,
+      "component_Wh": 0.3875373111111111,
+      "started_at": "2026-11-18T11:24:46.742152+02:00",
+      "ended_at": "2026-11-18T11:24:59.150822+02:00"
+    },
+    {
+      "phase": "current_network",
+      "seconds": 5.308422599977348,
+      "component_Wh": 0.1289550222228889,
+      "started_at": "2026-11-18T11:11:34.884249+02:00",
+      "ended_at": "2026-11-18T11:11:40.229125+02:00"
+    },
+    {
+      "phase": "current_widgets_and_archived_table_layout",
+      "seconds": 5.256050999974832,
+      "component_Wh": 0.123279054166,
+      "started_at": "2026-11-18T11:25:13.059107+02:00",
+      "ended_at": "2026-11-18T11:25:18.358541+02:00"
+    },
+    {
+      "phase": "daily_forecasts",
+      "seconds": 313.0510285999917,
+      "component_Wh": 16.89356806111111,
+      "started_at": "2026-11-18T10:24:53.119488+02:00",
+      "ended_at": "2026-11-18T10:30:06.343566+02:00"
+    },
+    {
+      "phase": "display_sources",
+      "seconds": 3.2945614000200294,
+      "component_Wh": 0.11906464166633333,
+      "started_at": "2026-11-18T10:33:13.395429+02:00",
+      "ended_at": "2026-11-18T10:33:16.879025+02:00"
+    },
+    {
+      "phase": "explicit_tree_pages",
+      "seconds": 2.197451900021406,
+      "component_Wh": 0.054555711110444445,
+      "started_at": "2026-11-18T11:17:58.524194+02:00",
+      "ended_at": "2026-11-18T11:18:00.743112+02:00"
+    },
+    {
+      "phase": "extended_reference_report",
+      "seconds": 4.222039699991001,
+      "component_Wh": 0.09482249999966667,
+      "started_at": "2026-11-18T11:24:42.492184+02:00",
+      "ended_at": "2026-11-18T11:24:46.726524+02:00"
+    },
+    {
+      "phase": "extended_systemic_reference",
+      "seconds": 59.02095239999471,
+      "component_Wh": 1.5538919513882223,
+      "started_at": "2026-11-18T11:23:43.414708+02:00",
+      "ended_at": "2026-11-18T11:24:42.476545+02:00"
+    },
+    {
+      "phase": "extended_technical_watch",
+      "seconds": 30.596951599989552,
+      "component_Wh": 0.710865298611111,
+      "started_at": "2026-11-18T11:23:12.774444+02:00",
+      "ended_at": "2026-11-18T11:23:43.398688+02:00"
+    },
+    {
+      "phase": "final_current_network",
+      "seconds": 5.255624399986118,
+      "component_Wh": 0.11903388749933334,
+      "started_at": "2026-11-18T11:25:07.759651+02:00",
+      "ended_at": "2026-11-18T11:25:13.047085+02:00"
+    },
+    {
+      "phase": "final_daily_labels",
+      "seconds": 3.212798799999291,
+      "component_Wh": 0.07279691527777778,
+      "started_at": "2026-11-18T11:25:18.370553+02:00",
+      "ended_at": "2026-11-18T11:25:21.616256+02:00"
+    },
+    {
+      "phase": "final_fresh_quote_audit",
+      "seconds": 3.244714699976612,
+      "component_Wh": 0.07366552777844444,
+      "started_at": "2026-11-18T11:25:04.463778+02:00",
+      "ended_at": "2026-11-18T11:25:07.746735+02:00"
+    },
+    {
+      "phase": "forecast_method_views",
+      "seconds": 11.419906399998581,
+      "component_Wh": 0.5004277055558889,
+      "started_at": "2026-11-18T11:11:40.244754+02:00",
+      "ended_at": "2026-11-18T11:11:51.676829+02:00"
+    },
+    {
+      "phase": "fresh_quote_audit",
+      "seconds": 3.2472957000136375,
+      "component_Wh": 0.07422375555555555,
+      "started_at": "2026-11-18T11:11:31.460248+02:00",
+      "ended_at": "2026-11-18T11:11:34.879721+02:00"
+    },
+    {
+      "phase": "fund_chart",
+      "seconds": 1.1851122999796644,
+      "component_Wh": 0.027235130555222226,
+      "started_at": "2026-11-18T11:21:17.607047+02:00",
+      "ended_at": "2026-11-18T11:21:18.818534+02:00"
+    },
+    {
+      "phase": "guard",
+      "seconds": 14.492340299999341,
+      "component_Wh": 0.6264578805558888,
+      "started_at": "2026-11-18T10:30:06.359192+02:00",
+      "ended_at": "2026-11-18T10:30:20.882924+02:00"
+    },
+    {
+      "phase": "hmm",
+      "seconds": 15.408708100003423,
+      "component_Wh": 0.44404676944444443,
+      "started_at": "2026-11-18T10:21:46.822253+02:00",
+      "ended_at": "2026-11-18T10:22:02.302461+02:00"
+    },
+    {
+      "phase": "inclusions",
+      "seconds": 13.3686061000044,
+      "component_Wh": 0.3425845361111111,
+      "started_at": "2026-11-18T10:36:53.319525+02:00",
+      "ended_at": "2026-11-18T10:37:06.726068+02:00"
+    },
+    {
+      "phase": "inference",
+      "seconds": 2.202714500017464,
+      "component_Wh": 0.059309100000000003,
+      "started_at": "2026-11-18T10:31:13.254792+02:00",
+      "ended_at": "2026-11-18T10:31:15.474656+02:00"
+    },
+    {
+      "phase": "inputs",
+      "seconds": 56.001994399994146,
+      "component_Wh": 1.410749941667,
+      "started_at": "2026-11-18T10:31:15.490285+02:00",
+      "ended_at": "2026-11-18T10:32:11.516603+02:00"
+    },
+    {
+      "phase": "integrate_market_research",
+      "seconds": 2.2386305000109132,
+      "component_Wh": 0.05250818194444444,
+      "started_at": "2026-11-18T11:18:23.832838+02:00",
+      "ended_at": "2026-11-18T11:18:26.101103+02:00"
+    },
+    {
+      "phase": "integrate_policy_comparisons",
+      "seconds": 8.30636049999157,
+      "component_Wh": 0.20213227916700002,
+      "started_at": "2026-11-18T11:18:00.754618+02:00",
+      "ended_at": "2026-11-18T11:18:09.086167+02:00"
+    },
+    {
+      "phase": "integrate_uniform_profiles",
+      "seconds": 9.352380500000436,
+      "component_Wh": 0.22055321944444448,
+      "started_at": "2026-11-18T11:18:09.098682+02:00",
+      "ended_at": "2026-11-18T11:18:18.477441+02:00"
+    },
+    {
+      "phase": "latest_attractiveness",
+      "seconds": 4.235033699980704,
+      "component_Wh": 0.09868601249966667,
+      "started_at": "2026-11-18T11:17:53.056185+02:00",
+      "ended_at": "2026-11-18T11:17:57.309381+02:00"
+    },
+    {
+      "phase": "latest_fundamentals",
+      "seconds": 99.51209590001963,
+      "component_Wh": 2.1903469847215558,
+      "started_at": "2026-11-18T11:15:59.973490+02:00",
+      "ended_at": "2026-11-18T11:17:39.670400+02:00"
+    },
+    {
+      "phase": "latest_issuer_evidence",
+      "seconds": 13.334381900000153,
+      "component_Wh": 0.30746874999966667,
+      "started_at": "2026-11-18T11:17:39.686038+02:00",
+      "ended_at": "2026-11-18T11:17:53.044162+02:00"
+    },
+    {
+      "phase": "latest_liquidity",
+      "seconds": 2.212433599983342,
+      "component_Wh": 0.054130316666999995,
+      "started_at": "2026-11-18T11:11:51.692335+02:00",
+      "ended_at": "2026-11-18T11:11:53.988911+02:00"
+    },
+    {
+      "phase": "market_inputs",
+      "seconds": 3.2698048999882303,
+      "component_Wh": 0.07510892083366667,
+      "started_at": "2026-11-18T10:21:43.517283+02:00",
+      "ended_at": "2026-11-18T10:21:46.806628+02:00"
+    },
+    {
+      "phase": "market_report",
+      "seconds": 9.319681000022683,
+      "component_Wh": 0.22595030555555556,
+      "started_at": "2026-11-18T10:22:02.318492+02:00",
+      "ended_at": "2026-11-18T10:22:11.666188+02:00"
+    },
+    {
+      "phase": "native_metrics_and_figures",
+      "seconds": 24.56335179999587,
+      "component_Wh": 0.6748413444447778,
+      "started_at": "2026-11-18T11:20:47.352339+02:00",
+      "ended_at": "2026-11-18T11:21:12.085944+02:00"
+    },
+    {
+      "phase": "pfe_historical_impact",
+      "seconds": 5.298442700004671,
+      "component_Wh": 0.12354035416633333,
+      "started_at": "2026-11-18T11:18:18.492464+02:00",
+      "ended_at": "2026-11-18T11:18:23.820667+02:00"
+    },
+    {
+      "phase": "refine_stochastic2_no_sale",
+      "seconds": 103.68043580002268,
+      "component_Wh": 3.3228821374999997,
+      "started_at": "2026-11-18T10:39:06.754818+02:00",
+      "ended_at": "2026-11-18T10:40:50.629896+02:00"
+    },
+    {
+      "phase": "regime_forecasts",
+      "seconds": 15.406379199994262,
+      "component_Wh": 0.5231547944441112,
+      "started_at": "2026-11-18T10:30:57.820121+02:00",
+      "ended_at": "2026-11-18T10:31:13.245276+02:00"
+    },
+    {
+      "phase": "stoch2a_no_initial_sales",
+      "seconds": 14.40561349998461,
+      "component_Wh": 0.517617994444111,
+      "started_at": "2026-11-18T10:36:02.765000+02:00",
+      "ended_at": "2026-11-18T10:36:17.213660+02:00"
+    },
+    {
+      "phase": "stoch2a_no_sale",
+      "seconds": 14.42456939999829,
+      "component_Wh": 0.5198886055552222,
+      "started_at": "2026-11-18T10:35:14.034507+02:00",
+      "ended_at": "2026-11-18T10:35:28.473522+02:00"
+    },
+    {
+      "phase": "stoch2a_sale",
+      "seconds": 23.568962300021667,
+      "component_Wh": 0.8385497388885557,
+      "started_at": "2026-11-18T10:35:33.786093+02:00",
+      "ended_at": "2026-11-18T10:35:57.387565+02:00"
+    },
+    {
+      "phase": "stochastic2_no_initial_sales",
+      "seconds": 32.64358090001042,
+      "component_Wh": 0.9414599430552221,
+      "started_at": "2026-11-18T10:34:06.286193+02:00",
+      "ended_at": "2026-11-18T10:34:38.965482+02:00"
+    },
+    {
+      "phase": "stochastic2_no_sale",
+      "seconds": 32.6674156000081,
+      "component_Wh": 0.9068295597222221,
+      "started_at": "2026-11-18T10:32:32.006739+02:00",
+      "ended_at": "2026-11-18T10:33:04.733776+02:00"
+    },
+    {
+      "phase": "stochastic2_sale",
+      "seconds": 50.89830249999068,
+      "component_Wh": 1.422251030554889,
+      "started_at": "2026-11-18T10:33:10.063393+02:00",
+      "ended_at": "2026-11-18T10:34:00.985872+02:00"
+    },
+    {
+      "phase": "stochastic_no_initial_sales",
+      "seconds": 5.261241300002439,
+      "component_Wh": 0.14644034027744443,
+      "started_at": "2026-11-18T10:35:04.431866+02:00",
+      "ended_at": "2026-11-18T10:35:09.707914+02:00"
+    },
+    {
+      "phase": "stochastic_no_sale",
+      "seconds": 5.243740100006107,
+      "component_Wh": 0.14675755972255555,
+      "started_at": "2026-11-18T10:34:44.271254+02:00",
+      "ended_at": "2026-11-18T10:34:49.531949+02:00"
+    },
+    {
+      "phase": "stochastic_sale",
+      "seconds": 6.276005799998529,
+      "component_Wh": 0.181853145833,
+      "started_at": "2026-11-18T10:34:53.825922+02:00",
+      "ended_at": "2026-11-18T10:35:00.129957+02:00"
+    },
+    {
+      "phase": "stocha_no_initial_sales",
+      "seconds": 6.253660200018203,
+      "component_Wh": 0.18204307777777778,
+      "started_at": "2026-11-18T10:36:42.741065+02:00",
+      "ended_at": "2026-11-18T10:36:49.020280+02:00"
+    },
+    {
+      "phase": "stocha_no_sale",
+      "seconds": 5.265375499991933,
+      "component_Wh": 0.15015708611111112,
+      "started_at": "2026-11-18T10:36:22.551235+02:00",
+      "ended_at": "2026-11-18T10:36:27.873579+02:00"
+    },
+    {
+      "phase": "stocha_sale",
+      "seconds": 6.266237099975115,
+      "component_Wh": 0.17541536666633334,
+      "started_at": "2026-11-18T10:36:32.144260+02:00",
+      "ended_at": "2026-11-18T10:36:38.442602+02:00"
+    },
+    {
+      "phase": "technicals",
+      "seconds": 224.07941870001378,
+      "component_Wh": 5.506407838888222,
+      "started_at": "2026-11-18T10:17:59.406133+02:00",
+      "ended_at": "2026-11-18T10:21:43.504769+02:00"
+    },
+    {
+      "phase": "technical_watch",
+      "seconds": 32.606680199998664,
+      "component_Wh": 0.7253045291663334,
+      "started_at": "2026-11-18T11:22:40.130887+02:00",
+      "ended_at": "2026-11-18T11:23:12.758806+02:00"
+    },
+    {
+      "phase": "uniform_active_summaries",
+      "seconds": 3.225362299999688,
+      "component_Wh": 0.076009779167,
+      "started_at": "2026-11-18T11:21:12.101961+02:00",
+      "ended_at": "2026-11-18T11:21:15.349912+02:00"
+    },
+    {
+      "phase": "validate_refined_stochastic2_no_sale",
+      "seconds": 5.292770300002303,
+      "component_Wh": 0.1407405736107778,
+      "started_at": "2026-11-18T10:40:50.642900+02:00",
+      "ended_at": "2026-11-18T10:40:55.958069+02:00"
+    },
+    {
+      "phase": "validate_stoch2a_no_initial_sales",
+      "seconds": 5.29006530001061,
+      "component_Wh": 0.14862768611144442,
+      "started_at": "2026-11-18T10:36:17.213660+02:00",
+      "ended_at": "2026-11-18T10:36:22.535610+02:00"
+    },
+    {
+      "phase": "validate_stoch2a_no_sale",
+      "seconds": 5.2542605999915395,
+      "component_Wh": 0.1430351027781111,
+      "started_at": "2026-11-18T10:35:28.489159+02:00",
+      "ended_at": "2026-11-18T10:35:33.782098+02:00"
+    },
+    {
+      "phase": "validate_stoch2a_sale",
+      "seconds": 5.322903199994471,
+      "component_Wh": 0.142590141667,
+      "started_at": "2026-11-18T10:35:57.403190+02:00",
+      "ended_at": "2026-11-18T10:36:02.740367+02:00"
+    },
+    {
+      "phase": "validate_stochastic2_no_initial_sales",
+      "seconds": 5.254200199997285,
+      "component_Wh": 0.14205473749966668,
+      "started_at": "2026-11-18T10:34:38.981107+02:00",
+      "ended_at": "2026-11-18T10:34:44.255626+02:00"
+    },
+    {
+      "phase": "validate_stochastic2_no_sale",
+      "seconds": 5.27847020002082,
+      "component_Wh": 0.13941061944377778,
+      "started_at": "2026-11-18T10:33:04.749414+02:00",
+      "ended_at": "2026-11-18T10:33:10.047768+02:00"
+    },
+    {
+      "phase": "validate_stochastic2_sale",
+      "seconds": 5.260491799999727,
+      "component_Wh": 0.135836945833,
+      "started_at": "2026-11-18T10:34:00.985872+02:00",
+      "ended_at": "2026-11-18T10:34:06.270187+02:00"
+    },
+    {
+      "phase": "validate_stochastic_no_initial_sales",
+      "seconds": 4.280157600005623,
+      "component_Wh": 0.10587160972222222,
+      "started_at": "2026-11-18T10:35:09.723531+02:00",
+      "ended_at": "2026-11-18T10:35:14.018882+02:00"
+    },
+    {
+      "phase": "validate_stochastic_no_sale",
+      "seconds": 4.247870199993486,
+      "component_Wh": 0.11040447777811112,
+      "started_at": "2026-11-18T10:34:49.547573+02:00",
+      "ended_at": "2026-11-18T10:34:53.810293+02:00"
+    },
+    {
+      "phase": "validate_stochastic_sale",
+      "seconds": 4.234569899999769,
+      "component_Wh": 0.10464829305622222,
+      "started_at": "2026-11-18T10:35:00.145575+02:00",
+      "ended_at": "2026-11-18T10:35:04.416238+02:00"
+    },
+    {
+      "phase": "validate_stocha_no_initial_sales",
+      "seconds": 4.244335199997295,
+      "component_Wh": 0.10111512222255556,
+      "started_at": "2026-11-18T10:36:49.035795+02:00",
+      "ended_at": "2026-11-18T10:36:53.303901+02:00"
+    },
+    {
+      "phase": "validate_stocha_no_sale",
+      "seconds": 4.227961700002197,
+      "component_Wh": 0.11773942777811112,
+      "started_at": "2026-11-18T10:36:27.889589+02:00",
+      "ended_at": "2026-11-18T10:36:32.128635+02:00"
+    },
+    {
+      "phase": "validate_stocha_sale",
+      "seconds": 4.25690599999507,
+      "component_Wh": 0.10134300694444445,
+      "started_at": "2026-11-18T10:36:38.458338+02:00",
+      "ended_at": "2026-11-18T10:36:42.725437+02:00"
+    },
+    {
+      "phase": "verified_results_page",
+      "seconds": 1.1755020999989938,
+      "component_Wh": 0.026252827777444445,
+      "started_at": "2026-11-18T11:17:57.319024+02:00",
+      "ended_at": "2026-11-18T11:17:58.508555+02:00"
+    },
+    {
+      "phase": "weekly_forecasts",
+      "seconds": 36.828196699992986,
+      "component_Wh": 2.0816405999996666,
+      "started_at": "2026-11-18T10:30:20.898563+02:00",
+      "ended_at": "2026-11-18T10:30:57.804110+02:00"
+    },
+    {
+      "phase": "whole_tree_sensitivity_page",
+      "seconds": 2.221272200025851,
+      "component_Wh": 0.050298823610777775,
+      "started_at": "2026-11-18T11:22:37.712276+02:00",
+      "ended_at": "2026-11-18T11:22:40.121354+02:00"
+    },
+    {
+      "phase": "c4_final_inclusions",
+      "seconds": 3.2260799999930896,
+      "component_Wh": 0.07680244166633333,
+      "started_at": "2026-11-18T11:07:23.036181+02:00",
+      "ended_at": "2026-11-18T11:07:26.274582+02:00"
+    },
+    {
+      "phase": "c4_historical_performance",
+      "seconds": 67.17377229998237,
+      "component_Wh": 2.5086397902774444,
+      "started_at": "2026-11-18T11:10:00.821543+02:00",
+      "ended_at": "2026-11-18T11:11:08.027105+02:00"
+    },
+    {
+      "phase": "c4_inclusions",
+      "seconds": 14.41347090000636,
+      "component_Wh": 0.35028383055555556,
+      "started_at": "2026-11-18T11:06:36.928442+02:00",
+      "ended_at": "2026-11-18T11:06:51.379598+02:00"
+    },
+    {
+      "phase": "c4_information_value",
+      "seconds": 31.6017642999941,
+      "component_Wh": 0.9366285111114444,
+      "started_at": "2026-11-18T11:06:51.382112+02:00",
+      "ended_at": "2026-11-18T11:07:23.020168+02:00"
+    },
+    {
+      "phase": "c4_refine_stoch2a_no_initial_sales",
+      "seconds": 22.465708499978064,
+      "component_Wh": 0.6749329111104445,
+      "started_at": "2026-11-18T11:04:46.036070+02:00",
+      "ended_at": "2026-11-18T11:05:08.538961+02:00"
+    },
+    {
+      "phase": "c4_refine_stoch2a_no_sale",
+      "seconds": 22.51734099999885,
+      "component_Wh": 0.6780258472225557,
+      "started_at": "2026-11-18T11:02:42.369343+02:00",
+      "ended_at": "2026-11-18T11:03:04.913300+02:00"
+    },
+    {
+      "phase": "c4_refine_stoch2a_sale",
+      "seconds": 92.41792949999217,
+      "component_Wh": 2.5624402750003337,
+      "started_at": "2026-11-18T11:03:09.259255+02:00",
+      "ended_at": "2026-11-18T11:04:41.727904+02:00"
+    },
+    {
+      "phase": "c4_refine_stochastic2_no_initial_sales",
+      "seconds": 113.61220740000135,
+      "component_Wh": 2.814489397222889,
+      "started_at": "2026-11-18T11:00:44.396657+02:00",
+      "ended_at": "2026-11-18T11:02:38.032006+02:00"
+    },
+    {
+      "phase": "c4_refine_stochastic2_no_sale",
+      "seconds": 138.8201371000032,
+      "component_Wh": 3.4348958041670006,
+      "started_at": "2026-11-18T10:52:29.811852+02:00",
+      "ended_at": "2026-11-18T10:54:48.818461+02:00"
+    },
+    {
+      "phase": "c4_refine_stochastic2_sale",
+      "seconds": 346.8308260999911,
+      "component_Wh": 8.41777989722289,
+      "started_at": "2026-11-18T10:54:53.164384+02:00",
+      "ended_at": "2026-11-18T11:00:40.035964+02:00"
+    },
+    {
+      "phase": "c4_refine_stochastic_no_initial_sales",
+      "seconds": 8.309291099983966,
+      "component_Wh": 0.24950049583266667,
+      "started_at": "2026-11-18T11:05:39.176774+02:00",
+      "ended_at": "2026-11-18T11:05:47.524991+02:00"
+    },
+    {
+      "phase": "c4_refine_stochastic_no_sale",
+      "seconds": 8.307535899977665,
+      "component_Wh": 0.24934935138822223,
+      "started_at": "2026-11-18T11:05:12.821688+02:00",
+      "ended_at": "2026-11-18T11:05:21.147341+02:00"
+    },
+    {
+      "phase": "c4_refine_stochastic_sale",
+      "seconds": 9.376217999990331,
+      "component_Wh": 0.2895640833333333,
+      "started_at": "2026-11-18T11:05:25.457776+02:00",
+      "ended_at": "2026-11-18T11:05:34.850197+02:00"
+    },
+    {
+      "phase": "c4_refine_stocha_no_initial_sales",
+      "seconds": 8.303281200001948,
+      "component_Wh": 0.24817777222222223,
+      "started_at": "2026-11-18T11:06:24.312353+02:00",
+      "ended_at": "2026-11-18T11:06:32.632280+02:00"
+    },
+    {
+      "phase": "c4_refine_stocha_no_sale",
+      "seconds": 7.305524199997308,
+      "component_Wh": 0.21385139722255556,
+      "started_at": "2026-11-18T11:05:51.787408+02:00",
+      "ended_at": "2026-11-18T11:05:59.129785+02:00"
+    },
+    {
+      "phase": "c4_refine_stocha_sale",
+      "seconds": 16.48827880001045,
+      "component_Wh": 0.4762399833336666,
+      "started_at": "2026-11-18T11:06:03.429213+02:00",
+      "ended_at": "2026-11-18T11:06:19.942155+02:00"
+    },
+    {
+      "phase": "c4_regime_portfolios",
+      "seconds": 140.10393949999707,
+      "component_Wh": 3.3425037597222222,
+      "started_at": "2026-11-18T11:07:26.290293+02:00",
+      "ended_at": "2026-11-18T11:09:46.410879+02:00"
+    },
+    {
+      "phase": "c4_sensitivity",
+      "seconds": 14.359937000001082,
+      "component_Wh": 0.34554131944444444,
+      "started_at": "2026-11-18T11:09:46.426518+02:00",
+      "ended_at": "2026-11-18T11:10:00.809224+02:00"
+    },
+    {
+      "phase": "c4_validate_stoch2a_no_initial_sales",
+      "seconds": 4.221178000007058,
+      "component_Wh": 0.10004953611177778,
+      "started_at": "2026-11-18T11:05:08.538961+02:00",
+      "ended_at": "2026-11-18T11:05:12.790022+02:00"
+    },
+    {
+      "phase": "c4_validate_stoch2a_no_sale",
+      "seconds": 4.278196200000821,
+      "component_Wh": 0.10073304444477778,
+      "started_at": "2026-11-18T11:03:04.928927+02:00",
+      "ended_at": "2026-11-18T11:03:09.243237+02:00"
+    },
+    {
+      "phase": "c4_validate_stoch2a_sale",
+      "seconds": 4.242623900005128,
+      "component_Wh": 0.10256895555622222,
+      "started_at": "2026-11-18T11:04:41.739926+02:00",
+      "ended_at": "2026-11-18T11:04:46.020555+02:00"
+    },
+    {
+      "phase": "c4_validate_stochastic2_no_initial_sales",
+      "seconds": 4.246059700002661,
+      "component_Wh": 0.10035055138922222,
+      "started_at": "2026-11-18T11:02:38.036172+02:00",
+      "ended_at": "2026-11-18T11:02:42.338092+02:00"
+    },
+    {
+      "phase": "c4_validate_stochastic2_no_sale",
+      "seconds": 4.258804200013401,
+      "component_Wh": 0.09965385000033333,
+      "started_at": "2026-11-18T10:54:48.834099+02:00",
+      "ended_at": "2026-11-18T10:54:53.132717+02:00"
+    },
+    {
+      "phase": "c4_validate_stochastic2_sale",
+      "seconds": 4.294044799986295,
+      "component_Wh": 0.09830923333333333,
+      "started_at": "2026-11-18T11:00:40.047976+02:00",
+      "ended_at": "2026-11-18T11:00:44.365001+02:00"
+    },
+    {
+      "phase": "c4_validate_stochastic_no_initial_sales",
+      "seconds": 4.215282699995441,
+      "component_Wh": 0.10505071388955556,
+      "started_at": "2026-11-18T11:05:47.537191+02:00",
+      "ended_at": "2026-11-18T11:05:51.755723+02:00"
+    },
+    {
+      "phase": "c4_validate_stochastic_no_sale",
+      "seconds": 4.247698399994988,
+      "component_Wh": 0.09919955555555555,
+      "started_at": "2026-11-18T11:05:21.160855+02:00",
+      "ended_at": "2026-11-18T11:05:25.426623+02:00"
+    },
+    {
+      "phase": "c4_validate_stochastic_sale",
+      "seconds": 4.243702999985544,
+      "component_Wh": 0.1047633069441111,
+      "started_at": "2026-11-18T11:05:34.865834+02:00",
+      "ended_at": "2026-11-18T11:05:39.161137+02:00"
+    },
+    {
+      "phase": "c4_validate_stocha_no_initial_sales",
+      "seconds": 4.254431900015334,
+      "component_Wh": 0.10495664722222223,
+      "started_at": "2026-11-18T11:06:32.647917+02:00",
+      "ended_at": "2026-11-18T11:06:36.912803+02:00"
+    },
+    {
+      "phase": "c4_validate_stocha_no_sale",
+      "seconds": 4.234635500004515,
+      "component_Wh": 0.10111423888855556,
+      "started_at": "2026-11-18T11:05:59.145418+02:00",
+      "ended_at": "2026-11-18T11:06:03.400745+02:00"
+    },
+    {
+      "phase": "c4_validate_stocha_sale",
+      "seconds": 4.298184499988565,
+      "component_Wh": 0.10633497083333333,
+      "started_at": "2026-11-18T11:06:19.945169+02:00",
+      "ended_at": "2026-11-18T11:06:24.287320+02:00"
+    }
+  ],
+  "run_kind": "repair / new asset and tree-configuration integration",
+  "routine_baseline_eligible": false,
+  "cycle_completion": "Pending live verification; no final total is fabricated",
+  "scope": "Own solver-command observations include startup, loading, JIT and reference preparation. Shared information-value, feasibility-inclusion, sensitivity, rendering, publication and cancelled superseded work belong to the full cycle, not each own solver-command duration. Gross CPU-package plus GPU-board energy is not isolated process energy or measured wall-socket electricity."
+}

@@ -30,6 +30,7 @@
    family('Scenario and objective',['node','probability','netSD','OUT','IN','penalty','objective']);family('Cash, return and terminal wealth',['cash_EUR','weekly_return','final_wealth_EUR']);
   }
   family(families.length?'Other fields':'Measures',names.map((_,i)=>i).filter(i=>!used.has(i)));
+  for(let p=table.parentElement;p;p=p.parentElement)if(p.tagName==='DETAILS')p.classList.add('a114-table-host');
   const wrapper=el('div');wrapper.className='a114-table-view chapter3-table-groups';wrapper.dataset.table=String(states.length);table.after(wrapper);table.hidden=true;table.dataset.a114Source=String(states.length);
   const controls=el('div');controls.className='a114-controls';wrapper.append(controls);
   const search=el('input');search.type='search';search.placeholder='Search rows';search.setAttribute('aria-label','Search '+title);controls.append(search);

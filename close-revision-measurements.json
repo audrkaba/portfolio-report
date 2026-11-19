@@ -1,0 +1,1002 @@
+{
+  "run": "20261118_close",
+  "share_closes": "2026-11-18",
+  "fund_NAV": "2026-11-17, individual instruments verified",
+  "run_class": "repair; excluded from routine daily baseline",
+  "first_recorded_action": "2026-11-18T20:40:16.586406+02:00",
+  "request_timestamp_known": false,
+  "private_check_elapsed_seconds_lower_bound": 48130.41054,
+  "live_verification_complete": false,
+  "continuous_cycle_energy_measured": false,
+  "model_rows": [
+    {
+      "model": "STOCHASTIC",
+      "policy": "NO_SALE",
+      "recorded_command_seconds": 23.285561999982747,
+      "whole_tree_terminal_netSD": 0.6390532544378699,
+      "command_CPU_worker_counts": [
+        12,
+        48
+      ],
+      "dominance_backend": "CPU",
+      "wealth_backend": "GPU",
+      "gross_component_Wh": 0.7221646930558888
+    },
+    {
+      "model": "STOCHASTIC",
+      "policy": "SALE",
+      "recorded_command_seconds": 28.30077940000774,
+      "whole_tree_terminal_netSD": 0.8,
+      "command_CPU_worker_counts": [
+        12,
+        48
+      ],
+      "dominance_backend": "CPU",
+      "wealth_backend": "GPU",
+      "gross_component_Wh": 0.8696275430548889
+    },
+    {
+      "model": "STOCHASTIC",
+      "policy": "NO_INITIAL_SALES",
+      "recorded_command_seconds": 23.224057000014,
+      "whole_tree_terminal_netSD": 0.7823529411764706,
+      "command_CPU_worker_counts": [
+        12,
+        48
+      ],
+      "dominance_backend": "CPU",
+      "wealth_backend": "GPU",
+      "gross_component_Wh": 0.7085822319431111
+    },
+    {
+      "model": "stochA",
+      "policy": "NO_SALE",
+      "recorded_command_seconds": 23.39389630000369,
+      "whole_tree_terminal_netSD": 0.8176470588235294,
+      "command_CPU_worker_counts": [
+        12,
+        48
+      ],
+      "dominance_backend": "CPU",
+      "wealth_backend": "GPU",
+      "gross_component_Wh": 0.7100331291673333
+    },
+    {
+      "model": "stochA",
+      "policy": "SALE",
+      "recorded_command_seconds": 30.22678760001145,
+      "whole_tree_terminal_netSD": 1.0,
+      "command_CPU_worker_counts": [
+        12,
+        48
+      ],
+      "dominance_backend": "CPU",
+      "wealth_backend": "GPU",
+      "gross_component_Wh": 0.9539159694447779
+    },
+    {
+      "model": "stochA",
+      "policy": "NO_INITIAL_SALES",
+      "recorded_command_seconds": 23.2123092000038,
+      "whole_tree_terminal_netSD": 1.0,
+      "command_CPU_worker_counts": [
+        12,
+        48
+      ],
+      "dominance_backend": "CPU",
+      "wealth_backend": "GPU",
+      "gross_component_Wh": 0.7551826069447778
+    },
+    {
+      "model": "STOCHASTIC2",
+      "policy": "NO_SALE",
+      "recorded_command_seconds": 164.91825919999974,
+      "whole_tree_terminal_netSD": 0.42196531791907516,
+      "command_CPU_worker_counts": [
+        48
+      ],
+      "dominance_backend": "CPU",
+      "wealth_backend": "GPU",
+      "gross_component_Wh": 4.020855861110778
+    },
+    {
+      "model": "STOCHASTIC2",
+      "policy": "SALE",
+      "recorded_command_seconds": 410.14145439999265,
+      "whole_tree_terminal_netSD": 0.6647398843930635,
+      "command_CPU_worker_counts": [
+        12,
+        48
+      ],
+      "dominance_backend": "CPU",
+      "wealth_backend": "GPU",
+      "gross_component_Wh": 9.738936015277444
+    },
+    {
+      "model": "STOCHASTIC2",
+      "policy": "NO_INITIAL_SALES",
+      "recorded_command_seconds": 143.41469190001226,
+      "whole_tree_terminal_netSD": 0.5144508670520231,
+      "command_CPU_worker_counts": [
+        12,
+        48
+      ],
+      "dominance_backend": "CPU",
+      "wealth_backend": "GPU",
+      "gross_component_Wh": 4.299072959722222
+    },
+    {
+      "model": "stoch2A",
+      "policy": "NO_SALE",
+      "recorded_command_seconds": 42.357740199993714,
+      "whole_tree_terminal_netSD": 0.4277456647398844,
+      "command_CPU_worker_counts": [
+        12,
+        48
+      ],
+      "dominance_backend": "CPU",
+      "wealth_backend": "GPU",
+      "gross_component_Wh": 1.4330497777784446
+    },
+    {
+      "model": "stoch2A",
+      "policy": "SALE",
+      "recorded_command_seconds": 200.71464639999613,
+      "whole_tree_terminal_netSD": 0.6647398843930635,
+      "command_CPU_worker_counts": [
+        12,
+        48
+      ],
+      "dominance_backend": "CPU",
+      "wealth_backend": "GPU",
+      "gross_component_Wh": 6.371874527776444
+    },
+    {
+      "model": "stoch2A",
+      "policy": "NO_INITIAL_SALES",
+      "recorded_command_seconds": 42.35266959998262,
+      "whole_tree_terminal_netSD": 0.5144508670520231,
+      "command_CPU_worker_counts": [
+        12,
+        48
+      ],
+      "dominance_backend": "CPU",
+      "wealth_backend": "GPU",
+      "gross_component_Wh": 1.4208854958326667
+    }
+  ],
+  "phase_attempts": [
+    {
+      "phase": "official_prices_0",
+      "status": "complete",
+      "started_at": "2026-11-18T23:15:34.653028+02:00",
+      "ended_at": "2026-11-18T23:15:57.391275+02:00",
+      "CPU_workers": 48,
+      "GPU_enabled": false,
+      "seconds": 22.547571900002367,
+      "gross_component_Wh": 0.557015270833
+    },
+    {
+      "phase": "benchmark",
+      "status": "complete",
+      "started_at": "2026-11-18T23:15:57.891332+02:00",
+      "ended_at": "2026-11-18T23:15:59.173556+02:00",
+      "CPU_workers": 48,
+      "GPU_enabled": false,
+      "seconds": 1.2529601999995066,
+      "gross_component_Wh": 0.02787330138888889
+    },
+    {
+      "phase": "daily_forecasts",
+      "status": "complete",
+      "started_at": "2026-11-18T23:15:59.189182+02:00",
+      "ended_at": "2026-11-18T23:22:28.595467+02:00",
+      "CPU_workers": 48,
+      "GPU_enabled": false,
+      "seconds": 389.37639439999475,
+      "gross_component_Wh": 22.67409556666633
+    },
+    {
+      "phase": "forecast_guard",
+      "status": "complete",
+      "started_at": "2026-11-18T23:22:28.611093+02:00",
+      "ended_at": "2026-11-18T23:22:43.072080+02:00",
+      "CPU_workers": 48,
+      "GPU_enabled": false,
+      "seconds": 14.435765099995479,
+      "gross_component_Wh": 0.6025549805548889
+    },
+    {
+      "phase": "weekly_forecasts",
+      "status": "complete",
+      "started_at": "2026-11-18T23:22:43.087714+02:00",
+      "ended_at": "2026-11-18T23:23:21.994995+02:00",
+      "CPU_workers": 48,
+      "GPU_enabled": false,
+      "seconds": 38.88063780000084,
+      "gross_component_Wh": 2.0530397277774446
+    },
+    {
+      "phase": "technicals",
+      "status": "complete",
+      "started_at": "2026-11-18T23:23:22.010623+02:00",
+      "ended_at": "2026-11-18T23:27:07.983003+02:00",
+      "CPU_workers": 48,
+      "GPU_enabled": false,
+      "seconds": 225.94171749999805,
+      "gross_component_Wh": 5.379815527778111
+    },
+    {
+      "phase": "market_inputs",
+      "status": "complete",
+      "started_at": "2026-11-18T23:27:07.998629+02:00",
+      "ended_at": "2026-11-18T23:27:11.313759+02:00",
+      "CPU_workers": 48,
+      "GPU_enabled": false,
+      "seconds": 3.2987040000007255,
+      "gross_component_Wh": 0.07763776805522223
+    },
+    {
+      "phase": "HMM",
+      "status": "complete",
+      "started_at": "2026-11-18T23:27:11.329385+02:00",
+      "ended_at": "2026-11-18T23:27:25.830069+02:00",
+      "CPU_workers": 48,
+      "GPU_enabled": false,
+      "seconds": 14.46711779999896,
+      "gross_component_Wh": 0.4150402916666666
+    },
+    {
+      "phase": "market_report",
+      "status": "complete",
+      "started_at": "2026-11-18T23:27:25.845739+02:00",
+      "ended_at": "2026-11-18T23:27:35.164074+02:00",
+      "CPU_workers": 48,
+      "GPU_enabled": false,
+      "seconds": 9.293438100001367,
+      "gross_component_Wh": 0.22240110138888888
+    },
+    {
+      "phase": "regime_forecasts",
+      "status": "complete",
+      "started_at": "2026-11-18T23:27:35.179729+02:00",
+      "ended_at": "2026-11-18T23:27:51.612827+02:00",
+      "CPU_workers": 48,
+      "GPU_enabled": false,
+      "seconds": 16.42185679999966,
+      "gross_component_Wh": 0.4917356486114444
+    },
+    {
+      "phase": "inference",
+      "status": "complete",
+      "started_at": "2026-11-18T23:27:51.628452+02:00",
+      "ended_at": "2026-11-18T23:27:54.896040+02:00",
+      "CPU_workers": 48,
+      "GPU_enabled": false,
+      "seconds": 3.230808000000252,
+      "gross_component_Wh": 0.075124854167
+    },
+    {
+      "phase": "inputs",
+      "status": "complete",
+      "started_at": "2026-11-18T23:27:54.911666+02:00",
+      "ended_at": "2026-11-18T23:28:47.884676+02:00",
+      "CPU_workers": 48,
+      "GPU_enabled": false,
+      "seconds": 52.95062689999759,
+      "gross_component_Wh": 1.2314346499993334
+    },
+    {
+      "phase": "alternatives",
+      "status": "complete",
+      "started_at": "2026-11-18T23:28:49.869021+02:00",
+      "ended_at": "2026-11-18T23:29:10.412458+02:00",
+      "CPU_workers": 48,
+      "GPU_enabled": false,
+      "seconds": 20.499244500002533,
+      "gross_component_Wh": 0.4894560263892222
+    },
+    {
+      "phase": "STOCHASTIC2_NO_SALE",
+      "status": "complete",
+      "started_at": "2026-11-18T23:29:10.428085+02:00",
+      "ended_at": "2026-11-18T23:29:46.076196+02:00",
+      "CPU_workers": 48,
+      "GPU_enabled": true,
+      "seconds": 35.63033179999911,
+      "gross_component_Wh": 0.9209729791669999
+    },
+    {
+      "phase": "validate_STOCHASTIC2_NO_SALE",
+      "status": "complete",
+      "started_at": "2026-11-18T23:29:46.091963+02:00",
+      "ended_at": "2026-11-18T23:29:50.390254+02:00",
+      "CPU_workers": 48,
+      "GPU_enabled": false,
+      "seconds": 4.281955099999323,
+      "gross_component_Wh": 0.10256859999966667
+    },
+    {
+      "phase": "STOCHASTIC2_SALE",
+      "status": "complete",
+      "started_at": "2026-11-18T23:29:50.405880+02:00",
+      "ended_at": "2026-11-18T23:30:25.091394+02:00",
+      "CPU_workers": 48,
+      "GPU_enabled": true,
+      "seconds": 34.65880219999963,
+      "gross_component_Wh": 0.9114525138885555
+    },
+    {
+      "phase": "validate_STOCHASTIC2_SALE",
+      "status": "complete",
+      "started_at": "2026-11-18T23:30:25.107021+02:00",
+      "ended_at": "2026-11-18T23:30:29.404309+02:00",
+      "CPU_workers": 48,
+      "GPU_enabled": false,
+      "seconds": 4.2821272000001045,
+      "gross_component_Wh": 0.10463605833366667
+    },
+    {
+      "phase": "STOCHASTIC2_NO_INITIAL_SALES",
+      "status": "complete",
+      "started_at": "2026-11-18T23:30:29.419935+02:00",
+      "ended_at": "2026-11-18T23:30:42.850951+02:00",
+      "CPU_workers": 48,
+      "GPU_enabled": true,
+      "seconds": 13.398140900004364,
+      "gross_component_Wh": 0.3926650305548888
+    },
+    {
+      "phase": "validate_STOCHASTIC2_NO_INITIAL_SALES",
+      "status": "complete",
+      "started_at": "2026-11-18T23:30:42.866577+02:00",
+      "ended_at": "2026-11-18T23:30:47.150371+02:00",
+      "CPU_workers": 48,
+      "GPU_enabled": false,
+      "seconds": 4.273913299999549,
+      "gross_component_Wh": 0.10134816388922221
+    },
+    {
+      "phase": "stoch2A_NO_SALE",
+      "status": "complete",
+      "started_at": "2026-11-18T23:30:47.165998+02:00",
+      "ended_at": "2026-11-18T23:30:55.591640+02:00",
+      "CPU_workers": 48,
+      "GPU_enabled": true,
+      "seconds": 8.387232999994012,
+      "gross_component_Wh": 0.25980962361144444
+    },
+    {
+      "phase": "validate_stoch2A_NO_SALE",
+      "status": "complete",
+      "started_at": "2026-11-18T23:30:55.591640+02:00",
+      "ended_at": "2026-11-18T23:30:59.952977+02:00",
+      "CPU_workers": 48,
+      "GPU_enabled": false,
+      "seconds": 4.325391600003059,
+      "gross_component_Wh": 0.110503741667
+    },
+    {
+      "phase": "stoch2A_SALE",
+      "status": "complete",
+      "started_at": "2026-11-18T23:30:59.968604+02:00",
+      "ended_at": "2026-11-18T23:31:10.427048+02:00",
+      "CPU_workers": 48,
+      "GPU_enabled": true,
+      "seconds": 10.335772800004634,
+      "gross_component_Wh": 0.330890695833
+    },
+    {
+      "phase": "validate_stoch2A_SALE",
+      "status": "complete",
+      "started_at": "2026-11-18T23:31:10.442674+02:00",
+      "ended_at": "2026-11-18T23:31:14.741964+02:00",
+      "CPU_workers": 48,
+      "GPU_enabled": false,
+      "seconds": 4.276215500001854,
+      "gross_component_Wh": 0.10414390138822223
+    },
+    {
+      "phase": "stoch2A_NO_INITIAL_SALES",
+      "status": "complete",
+      "started_at": "2026-11-18T23:31:14.741964+02:00",
+      "ended_at": "2026-11-18T23:31:23.148208+02:00",
+      "CPU_workers": 48,
+      "GPU_enabled": true,
+      "seconds": 8.37327440000081,
+      "gross_component_Wh": 0.26684757499966666
+    },
+    {
+      "phase": "validate_stoch2A_NO_INITIAL_SALES",
+      "status": "complete",
+      "started_at": "2026-11-18T23:31:23.164061+02:00",
+      "ended_at": "2026-11-18T23:31:27.498228+02:00",
+      "CPU_workers": 48,
+      "GPU_enabled": false,
+      "seconds": 4.3236006000006455,
+      "gross_component_Wh": 0.10671315555522222
+    },
+    {
+      "phase": "STOCHASTIC_NO_SALE",
+      "status": "complete",
+      "started_at": "2026-11-18T23:31:27.513854+02:00",
+      "ended_at": "2026-11-18T23:31:33.891419+02:00",
+      "CPU_workers": 48,
+      "GPU_enabled": true,
+      "seconds": 6.347093999997014,
+      "gross_component_Wh": 0.18313614305522222
+    },
+    {
+      "phase": "validate_STOCHASTIC_NO_SALE",
+      "status": "complete",
+      "started_at": "2026-11-18T23:31:33.907044+02:00",
+      "ended_at": "2026-11-18T23:31:38.206043+02:00",
+      "CPU_workers": 48,
+      "GPU_enabled": false,
+      "seconds": 4.289248799999768,
+      "gross_component_Wh": 0.10443213333299999
+    },
+    {
+      "phase": "STOCHASTIC_SALE",
+      "status": "complete",
+      "started_at": "2026-11-18T23:31:38.221669+02:00",
+      "ended_at": "2026-11-18T23:31:44.601832+02:00",
+      "CPU_workers": 48,
+      "GPU_enabled": true,
+      "seconds": 6.330836100001761,
+      "gross_component_Wh": 0.17790031944444445
+    },
+    {
+      "phase": "validate_STOCHASTIC_SALE",
+      "status": "complete",
+      "started_at": "2026-11-18T23:31:44.614859+02:00",
+      "ended_at": "2026-11-18T23:31:48.896882+02:00",
+      "CPU_workers": 48,
+      "GPU_enabled": false,
+      "seconds": 4.267616700002691,
+      "gross_component_Wh": 0.102485808333
+    },
+    {
+      "phase": "STOCHASTIC_NO_INITIAL_SALES",
+      "status": "complete",
+      "started_at": "2026-11-18T23:31:48.912508+02:00",
+      "ended_at": "2026-11-18T23:31:55.291370+02:00",
+      "CPU_workers": 48,
+      "GPU_enabled": true,
+      "seconds": 6.354283200002101,
+      "gross_component_Wh": 0.18786443055555557
+    },
+    {
+      "phase": "validate_STOCHASTIC_NO_INITIAL_SALES",
+      "status": "complete",
+      "started_at": "2026-11-18T23:31:55.306996+02:00",
+      "ended_at": "2026-11-18T23:31:59.622518+02:00",
+      "CPU_workers": 48,
+      "GPU_enabled": false,
+      "seconds": 4.292136199997913,
+      "gross_component_Wh": 0.10340066527711111
+    },
+    {
+      "phase": "stochA_NO_SALE",
+      "status": "complete",
+      "started_at": "2026-11-18T23:31:59.637921+02:00",
+      "ended_at": "2026-11-18T23:32:06.016467+02:00",
+      "CPU_workers": 48,
+      "GPU_enabled": true,
+      "seconds": 6.347414999996545,
+      "gross_component_Wh": 0.18426291527844443
+    },
+    {
+      "phase": "validate_stochA_NO_SALE",
+      "status": "complete",
+      "started_at": "2026-11-18T23:32:06.032093+02:00",
+      "ended_at": "2026-11-18T23:32:10.348138+02:00",
+      "CPU_workers": 48,
+      "GPU_enabled": false,
+      "seconds": 4.292638999999326,
+      "gross_component_Wh": 0.10444255555555555
+    },
+    {
+      "phase": "stochA_SALE",
+      "status": "complete",
+      "started_at": "2026-11-18T23:32:10.363764+02:00",
+      "ended_at": "2026-11-18T23:32:16.695649+02:00",
+      "CPU_workers": 48,
+      "GPU_enabled": true,
+      "seconds": 6.30796299999929,
+      "gross_component_Wh": 0.1824739152777778
+    },
+    {
+      "phase": "validate_stochA_SALE",
+      "status": "complete",
+      "started_at": "2026-11-18T23:32:16.711277+02:00",
+      "ended_at": "2026-11-18T23:32:20.977684+02:00",
+      "CPU_workers": 48,
+      "GPU_enabled": false,
+      "seconds": 4.246985799996764,
+      "gross_component_Wh": 0.10617609444411111
+    },
+    {
+      "phase": "stochA_NO_INITIAL_SALES",
+      "status": "complete",
+      "started_at": "2026-11-18T23:32:20.993310+02:00",
+      "ended_at": "2026-11-18T23:32:27.308880+02:00",
+      "CPU_workers": 48,
+      "GPU_enabled": true,
+      "seconds": 6.292109699999855,
+      "gross_component_Wh": 0.17862895833366665
+    },
+    {
+      "phase": "validate_stochA_NO_INITIAL_SALES",
+      "status": "complete",
+      "started_at": "2026-11-18T23:32:27.324506+02:00",
+      "ended_at": "2026-11-18T23:32:31.669381+02:00",
+      "CPU_workers": 48,
+      "GPU_enabled": false,
+      "seconds": 4.329815399993095,
+      "gross_component_Wh": 0.10297586666733334
+    },
+    {
+      "phase": "inclusions",
+      "status": "complete",
+      "started_at": "2026-11-18T23:32:31.685007+02:00",
+      "ended_at": "2026-11-18T23:32:49.161692+02:00",
+      "CPU_workers": 48,
+      "GPU_enabled": false,
+      "seconds": 17.44949859999906,
+      "gross_component_Wh": 0.42305659166666665
+    },
+    {
+      "phase": "information_value",
+      "status": "failed",
+      "started_at": "2026-11-18T23:32:49.177320+02:00",
+      "ended_at": "2026-11-18T23:33:26.977606+02:00",
+      "CPU_workers": 48,
+      "GPU_enabled": true,
+      "seconds": 37.78941479999776,
+      "gross_component_Wh": 1.0667651388888888
+    },
+    {
+      "phase": "information_value",
+      "status": "complete",
+      "started_at": "2026-11-19T09:09:33.340524+02:00",
+      "ended_at": "2026-11-19T09:10:04.117607+02:00",
+      "CPU_workers": 48,
+      "GPU_enabled": true,
+      "seconds": 30.591512600003625,
+      "gross_component_Wh": 0.783679975
+    },
+    {
+      "phase": "final_inclusions",
+      "status": "complete",
+      "started_at": "2026-11-19T09:10:04.122613+02:00",
+      "ended_at": "2026-11-19T09:10:08.450835+02:00",
+      "CPU_workers": 48,
+      "GPU_enabled": false,
+      "seconds": 4.296113900010823,
+      "gross_component_Wh": 0.10085059861077778
+    },
+    {
+      "phase": "regime_portfolios",
+      "status": "complete",
+      "started_at": "2026-11-19T09:10:08.466461+02:00",
+      "ended_at": "2026-11-19T09:11:43.931648+02:00",
+      "CPU_workers": 48,
+      "GPU_enabled": false,
+      "seconds": 95.43439169999328,
+      "gross_component_Wh": 2.215940298611111
+    },
+    {
+      "phase": "sensitivity",
+      "status": "failed",
+      "started_at": "2026-11-19T09:11:43.952951+02:00",
+      "ended_at": "2026-11-19T09:11:48.290525+02:00",
+      "CPU_workers": 48,
+      "GPU_enabled": true,
+      "seconds": 4.298927800002275,
+      "gross_component_Wh": 0.10418470833366668
+    },
+    {
+      "phase": "refine_STOCHASTIC2_NO_SALE",
+      "status": "complete",
+      "started_at": "2026-11-19T09:28:46.902865+02:00",
+      "ended_at": "2026-11-19T09:30:47.828899+02:00",
+      "CPU_workers": 48,
+      "GPU_enabled": true,
+      "seconds": 120.75935819999722,
+      "gross_component_Wh": 2.895139254166667
+    },
+    {
+      "phase": "validate_refined_STOCHASTIC2_NO_SALE",
+      "status": "complete",
+      "started_at": "2026-11-19T09:30:47.844919+02:00",
+      "ended_at": "2026-11-19T09:30:52.110993+02:00",
+      "CPU_workers": 48,
+      "GPU_enabled": false,
+      "seconds": 4.246614100004081,
+      "gross_component_Wh": 0.10217502777744444
+    },
+    {
+      "phase": "refine_STOCHASTIC2_SALE",
+      "status": "complete",
+      "started_at": "2026-11-19T09:30:52.127024+02:00",
+      "ended_at": "2026-11-19T09:36:59.072303+02:00",
+      "CPU_workers": 48,
+      "GPU_enabled": true,
+      "seconds": 366.8827823000029,
+      "gross_component_Wh": 8.615807070833666
+    },
+    {
+      "phase": "validate_refined_STOCHASTIC2_SALE",
+      "status": "complete",
+      "started_at": "2026-11-19T09:36:59.093551+02:00",
+      "ended_at": "2026-11-19T09:37:03.452379+02:00",
+      "CPU_workers": 12,
+      "GPU_enabled": false,
+      "seconds": 4.317742699990049,
+      "gross_component_Wh": 0.10704037222155556
+    },
+    {
+      "phase": "refine_STOCHASTIC2_NO_INITIAL_SALES",
+      "status": "complete",
+      "started_at": "2026-11-19T09:37:03.484048+02:00",
+      "ended_at": "2026-11-19T09:39:04.965530+02:00",
+      "CPU_workers": 12,
+      "GPU_enabled": true,
+      "seconds": 121.43226370000048,
+      "gross_component_Wh": 3.680769108333
+    },
+    {
+      "phase": "validate_refined_STOCHASTIC2_NO_INITIAL_SALES",
+      "status": "complete",
+      "started_at": "2026-11-19T09:39:04.969579+02:00",
+      "ended_at": "2026-11-19T09:39:09.313299+02:00",
+      "CPU_workers": 12,
+      "GPU_enabled": false,
+      "seconds": 4.310374000007869,
+      "gross_component_Wh": 0.1242906569451111
+    },
+    {
+      "phase": "refine_stoch2A_NO_SALE",
+      "status": "complete",
+      "started_at": "2026-11-19T09:39:09.344937+02:00",
+      "ended_at": "2026-11-19T09:39:34.793420+02:00",
+      "CPU_workers": 12,
+      "GPU_enabled": true,
+      "seconds": 25.417796599998837,
+      "gross_component_Wh": 0.9319127027777778
+    },
+    {
+      "phase": "validate_refined_stoch2A_NO_SALE",
+      "status": "complete",
+      "started_at": "2026-11-19T09:39:34.809049+02:00",
+      "ended_at": "2026-11-19T09:39:39.060591+02:00",
+      "CPU_workers": 12,
+      "GPU_enabled": false,
+      "seconds": 4.227318999997806,
+      "gross_component_Wh": 0.1308237097222222
+    },
+    {
+      "phase": "refine_stoch2A_SALE",
+      "status": "complete",
+      "started_at": "2026-11-19T09:39:39.097839+02:00",
+      "ended_at": "2026-11-19T09:42:40.998430+02:00",
+      "CPU_workers": 12,
+      "GPU_enabled": true,
+      "seconds": 181.87090549999266,
+      "gross_component_Wh": 5.790230976388555
+    },
+    {
+      "phase": "validate_refined_stoch2A_SALE",
+      "status": "complete",
+      "started_at": "2026-11-19T09:42:41.014059+02:00",
+      "ended_at": "2026-11-19T09:42:45.296163+02:00",
+      "CPU_workers": 12,
+      "GPU_enabled": false,
+      "seconds": 4.23175259999698,
+      "gross_component_Wh": 0.14660895416666667
+    },
+    {
+      "phase": "refine_stoch2A_NO_INITIAL_SALES",
+      "status": "complete",
+      "started_at": "2026-11-19T09:42:45.312194+02:00",
+      "ended_at": "2026-11-19T09:43:10.715319+02:00",
+      "CPU_workers": 12,
+      "GPU_enabled": true,
+      "seconds": 25.37297729999409,
+      "gross_component_Wh": 0.9184879583336667
+    },
+    {
+      "phase": "validate_refined_stoch2A_NO_INITIAL_SALES",
+      "status": "complete",
+      "started_at": "2026-11-19T09:43:10.730959+02:00",
+      "ended_at": "2026-11-19T09:43:15.047174+02:00",
+      "CPU_workers": 12,
+      "GPU_enabled": false,
+      "seconds": 4.282817299987073,
+      "gross_component_Wh": 0.12883680694411112
+    },
+    {
+      "phase": "refine_STOCHASTIC_NO_SALE",
+      "status": "complete",
+      "started_at": "2026-11-19T09:43:15.063206+02:00",
+      "ended_at": "2026-11-19T09:43:23.499090+02:00",
+      "CPU_workers": 12,
+      "GPU_enabled": true,
+      "seconds": 8.391721199994208,
+      "gross_component_Wh": 0.3065047402781111
+    },
+    {
+      "phase": "validate_refined_STOCHASTIC_NO_SALE",
+      "status": "complete",
+      "started_at": "2026-11-19T09:43:23.514731+02:00",
+      "ended_at": "2026-11-19T09:43:27.797833+02:00",
+      "CPU_workers": 12,
+      "GPU_enabled": false,
+      "seconds": 4.257497999991756,
+      "gross_component_Wh": 0.12809167638955557
+    },
+    {
+      "phase": "refine_STOCHASTIC_SALE",
+      "status": "complete",
+      "started_at": "2026-11-19T09:43:27.813842+02:00",
+      "ended_at": "2026-11-19T09:43:41.190243+02:00",
+      "CPU_workers": 12,
+      "GPU_enabled": true,
+      "seconds": 13.341449700004887,
+      "gross_component_Wh": 0.4622926444441111
+    },
+    {
+      "phase": "validate_refined_STOCHASTIC_SALE",
+      "status": "complete",
+      "started_at": "2026-11-19T09:43:41.215397+02:00",
+      "ended_at": "2026-11-19T09:43:45.621621+02:00",
+      "CPU_workers": 12,
+      "GPU_enabled": false,
+      "seconds": 4.360876899998402,
+      "gross_component_Wh": 0.12694877083333334
+    },
+    {
+      "phase": "refine_STOCHASTIC_NO_INITIAL_SALES",
+      "status": "complete",
+      "started_at": "2026-11-19T09:43:45.636909+02:00",
+      "ended_at": "2026-11-19T09:43:53.971935+02:00",
+      "CPU_workers": 12,
+      "GPU_enabled": true,
+      "seconds": 8.27569150000636,
+      "gross_component_Wh": 0.29135348749999995
+    },
+    {
+      "phase": "validate_refined_STOCHASTIC_NO_INITIAL_SALES",
+      "status": "complete",
+      "started_at": "2026-11-19T09:43:53.987565+02:00",
+      "ended_at": "2026-11-19T09:43:58.328755+02:00",
+      "CPU_workers": 12,
+      "GPU_enabled": false,
+      "seconds": 4.301946100007626,
+      "gross_component_Wh": 0.12596364861044446
+    },
+    {
+      "phase": "refine_stochA_NO_SALE",
+      "status": "complete",
+      "started_at": "2026-11-19T09:43:58.341272+02:00",
+      "ended_at": "2026-11-19T09:44:06.806005+02:00",
+      "CPU_workers": 12,
+      "GPU_enabled": true,
+      "seconds": 8.393779100006213,
+      "gross_component_Wh": 0.29357566527777773
+    },
+    {
+      "phase": "validate_refined_stochA_NO_SALE",
+      "status": "complete",
+      "started_at": "2026-11-19T09:44:06.810534+02:00",
+      "ended_at": "2026-11-19T09:44:11.219448+02:00",
+      "CPU_workers": 12,
+      "GPU_enabled": false,
+      "seconds": 4.360063200001605,
+      "gross_component_Wh": 0.12775199305555554
+    },
+    {
+      "phase": "refine_stochA_SALE",
+      "status": "complete",
+      "started_at": "2026-11-19T09:44:11.245083+02:00",
+      "ended_at": "2026-11-19T09:44:26.577728+02:00",
+      "CPU_workers": 12,
+      "GPU_enabled": true,
+      "seconds": 15.311384600005113,
+      "gross_component_Wh": 0.5391817222225556
+    },
+    {
+      "phase": "validate_refined_stochA_SALE",
+      "status": "complete",
+      "started_at": "2026-11-19T09:44:26.593739+02:00",
+      "ended_at": "2026-11-19T09:44:31.018424+02:00",
+      "CPU_workers": 12,
+      "GPU_enabled": false,
+      "seconds": 4.360454200010281,
+      "gross_component_Wh": 0.12608423750033335
+    },
+    {
+      "phase": "refine_stochA_NO_INITIAL_SALES",
+      "status": "complete",
+      "started_at": "2026-11-19T09:44:31.049675+02:00",
+      "ended_at": "2026-11-19T09:44:39.375944+02:00",
+      "CPU_workers": 12,
+      "GPU_enabled": true,
+      "seconds": 8.295685200006119,
+      "gross_component_Wh": 0.3357347291666667
+    },
+    {
+      "phase": "validate_refined_stochA_NO_INITIAL_SALES",
+      "status": "complete",
+      "started_at": "2026-11-19T09:44:39.391573+02:00",
+      "ended_at": "2026-11-19T09:44:43.720067+02:00",
+      "CPU_workers": 12,
+      "GPU_enabled": false,
+      "seconds": 4.294698900004732,
+      "gross_component_Wh": 0.13784305277711112
+    },
+    {
+      "phase": "inclusions",
+      "status": "complete",
+      "started_at": "2026-11-19T09:44:43.751322+02:00",
+      "ended_at": "2026-11-19T09:44:55.129640+02:00",
+      "CPU_workers": 12,
+      "GPU_enabled": false,
+      "seconds": 11.338970400000107,
+      "gross_component_Wh": 0.3462995430558889
+    },
+    {
+      "phase": "information_value",
+      "status": "complete",
+      "started_at": "2026-11-19T09:44:55.140645+02:00",
+      "ended_at": "2026-11-19T09:45:22.654666+02:00",
+      "CPU_workers": 12,
+      "GPU_enabled": true,
+      "seconds": 27.49897279999277,
+      "gross_component_Wh": 0.9729099555562223
+    },
+    {
+      "phase": "final_inclusions",
+      "status": "complete",
+      "started_at": "2026-11-19T09:45:22.670305+02:00",
+      "ended_at": "2026-11-19T09:45:27.059179+02:00",
+      "CPU_workers": 12,
+      "GPU_enabled": false,
+      "seconds": 4.3187398000009125,
+      "gross_component_Wh": 0.1379713444441111
+    },
+    {
+      "phase": "regime_portfolios",
+      "status": "complete",
+      "started_at": "2026-11-19T09:45:27.063686+02:00",
+      "ended_at": "2026-11-19T09:47:19.527797+02:00",
+      "CPU_workers": 12,
+      "GPU_enabled": false,
+      "seconds": 112.41921790000924,
+      "gross_component_Wh": 3.3924517138888888
+    },
+    {
+      "phase": "sensitivity",
+      "status": "complete",
+      "started_at": "2026-11-19T09:47:19.534303+02:00",
+      "ended_at": "2026-11-19T09:47:35.017375+02:00",
+      "CPU_workers": 12,
+      "GPU_enabled": true,
+      "seconds": 15.431710199991358,
+      "gross_component_Wh": 0.4708647430562222
+    },
+    {
+      "phase": "historical_performance",
+      "status": "complete",
+      "started_at": "2026-11-19T09:47:35.033308+02:00",
+      "ended_at": "2026-11-19T09:49:30.387532+02:00",
+      "CPU_workers": 12,
+      "GPU_enabled": false,
+      "seconds": 115.30393759999424,
+      "gross_component_Wh": 4.306964716667333
+    },
+    {
+      "phase": "report_prepare",
+      "status": "complete",
+      "started_at": "2026-11-19T09:49:30.418668+02:00",
+      "ended_at": "2026-11-19T09:49:36.809353+02:00",
+      "CPU_workers": 12,
+      "GPU_enabled": false,
+      "seconds": 6.310455500002718,
+      "gross_component_Wh": 0.21875562916699998
+    },
+    {
+      "phase": "report_integrate",
+      "status": "failed",
+      "started_at": "2026-11-19T09:49:36.811369+02:00",
+      "ended_at": "2026-11-19T09:51:53.263565+02:00",
+      "CPU_workers": 12,
+      "GPU_enabled": false,
+      "seconds": 136.41015619999962,
+      "gross_component_Wh": 4.149069555555889
+    },
+    {
+      "phase": "report_integrate",
+      "status": "complete",
+      "started_at": "2026-11-19T09:53:43.993752+02:00",
+      "ended_at": "2026-11-19T09:57:17.155220+02:00",
+      "CPU_workers": 12,
+      "GPU_enabled": false,
+      "seconds": 212.98789899999974,
+      "gross_component_Wh": 6.708778188889221
+    },
+    {
+      "phase": "reconcile_labels",
+      "status": "complete",
+      "started_at": "2026-11-19T09:57:17.170860+02:00",
+      "ended_at": "2026-11-19T09:57:20.470078+02:00",
+      "CPU_workers": 12,
+      "GPU_enabled": false,
+      "seconds": 3.2752911999996286,
+      "gross_component_Wh": 0.09306247499999999
+    },
+    {
+      "phase": "issuer_names",
+      "status": "complete",
+      "started_at": "2026-11-19T09:57:20.496723+02:00",
+      "ended_at": "2026-11-19T09:57:45.119806+02:00",
+      "CPU_workers": 12,
+      "GPU_enabled": false,
+      "seconds": 24.537279600001057,
+      "gross_component_Wh": 0.7785612097225555
+    },
+    {
+      "phase": "numeric_checks",
+      "status": "complete",
+      "started_at": "2026-11-19T09:57:45.123009+02:00",
+      "ended_at": "2026-11-19T09:57:51.493639+02:00",
+      "CPU_workers": 12,
+      "GPU_enabled": false,
+      "seconds": 6.297644699996454,
+      "gross_component_Wh": 0.18582031944477778
+    },
+    {
+      "phase": "browser_checks",
+      "status": "complete",
+      "started_at": "2026-11-19T09:57:51.496641+02:00",
+      "ended_at": "2026-11-19T09:58:01.889966+02:00",
+      "CPU_workers": 12,
+      "GPU_enabled": false,
+      "seconds": 10.34582539999974,
+      "gross_component_Wh": 0.3630850138892222
+    },
+    {
+      "phase": "table_layout_checks",
+      "status": "complete",
+      "started_at": "2026-11-19T09:58:01.905987+02:00",
+      "ended_at": "2026-11-19T09:59:50.215382+02:00",
+      "CPU_workers": 12,
+      "GPU_enabled": false,
+      "seconds": 108.25720049999654,
+      "gross_component_Wh": 3.3458962486111115
+    },
+    {
+      "phase": "math_checks",
+      "status": "complete",
+      "started_at": "2026-11-19T09:59:50.215382+02:00",
+      "ended_at": "2026-11-19T10:00:18.921112+02:00",
+      "CPU_workers": 12,
+      "GPU_enabled": false,
+      "seconds": 28.674755200001528,
+      "gross_component_Wh": 0.9108164874996666
+    },
+    {
+      "phase": "language_checks",
+      "status": "failed",
+      "started_at": "2026-11-19T10:00:18.937124+02:00",
+      "ended_at": "2026-11-19T10:00:25.324630+02:00",
+      "CPU_workers": 12,
+      "GPU_enabled": false,
+      "seconds": 6.344089299993357,
+      "gross_component_Wh": 0.192380645834
+    }
+  ],
+  "energy_scope": "Gross CPU-package plus GPU-board counters contain concurrent CPU-only research prefix work. Not isolated model energy or measured wall electricity. Waiting and gaps have no continuous energy coverage. Nested report subprocess intervals must not be added again.",
+  "timing_scope": "Each model row sums its root initial/refined-search and independent validation commands. Shared inclusions, information values, download and report commands are separate. End-to-end elapsed also contains waiting, failed attempts and overnight interruption. Publication/live validation not yet complete."
+}
