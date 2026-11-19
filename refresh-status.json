@@ -1,5 +1,5 @@
 {
-  "state": "complete_pending_live_verification",
+  "state": "complete_live_verified",
   "main_report_complete": true,
   "financial_calculations_complete": true,
   "technical_studies_complete": false,
@@ -34,5 +34,7 @@
     "price_status": "Latest available official observations; source dates retained",
     "updated_current_session": 0
   },
-  "updated_at": "2026-11-19T07:57:15.141389+00:00"
+  "updated_at": "2026-11-19T07:57:15.141389+00:00",
+  "live_verified_at_UTC": "2026-11-19T08:20:19.646451+00:00",
+  "notice": "The current financial report is complete and live-verified for18November closes. Dated archived pages retain their original snapshots. The separate rolling historical study reports its own progress."
 }

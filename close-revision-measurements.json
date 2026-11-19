@@ -3,10 +3,10 @@
   "share_closes": "2026-11-18",
   "fund_NAV": "2026-11-17, individual instruments verified",
   "run_class": "repair; excluded from routine daily baseline",
-  "first_recorded_action": "2026-11-18T20:40:16.586406+02:00",
+  "first_recorded_action": "2026-11-18T20:36:07+02:00",
   "request_timestamp_known": false,
-  "private_check_elapsed_seconds_lower_bound": 48130.41054,
-  "live_verification_complete": false,
+  "private_check_elapsed_seconds_lower_bound": 49452.646451,
+  "live_verification_complete": true,
   "continuous_cycle_energy_measured": false,
   "model_rows": [
     {
@@ -995,8 +995,19 @@
       "GPU_enabled": false,
       "seconds": 6.344089299993357,
       "gross_component_Wh": 0.192380645834
+    },
+    {
+      "phase": "language_checks",
+      "status": "complete",
+      "started_at": "2026-11-19T10:02:29.034319+02:00",
+      "ended_at": "2026-11-19T10:02:52.660303+02:00",
+      "CPU_workers": 12,
+      "GPU_enabled": false,
+      "seconds": 23.45515739999246,
+      "gross_component_Wh": 0.7516290611111112
     }
   ],
   "energy_scope": "Gross CPU-package plus GPU-board counters contain concurrent CPU-only research prefix work. Not isolated model energy or measured wall electricity. Waiting and gaps have no continuous energy coverage. Nested report subprocess intervals must not be added again.",
-  "timing_scope": "Each model row sums its root initial/refined-search and independent validation commands. Shared inclusions, information values, download and report commands are separate. End-to-end elapsed also contains waiting, failed attempts and overnight interruption. Publication/live validation not yet complete."
+  "timing_scope": "Each model row sums its root initial/refined-search and independent validation commands. Shared inclusions, information values, download and report commands are separate. End-to-end elapsed also contains waiting, failed attempts and overnight interruption. Publication/live validation not yet complete.",
+  "verified_at_UTC": "2026-11-19T08:20:19.646451+00:00"
 }

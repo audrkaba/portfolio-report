@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated_at_UTC": "2026-11-17T07:32:54.703512+00:00",
+  "updated_at_UTC": "2026-11-19T08:48:43.684395+00:00",
   "routine_verified_runs": 0,
   "cohorts": [],
   "phase_statistics": [],
@@ -227,6 +227,34 @@
       "timing_origin": "first_action_to_verified",
       "status": "verified_complete",
       "elapsed_seconds": 8142.879351,
+      "included_in_typical_statistics": false,
+      "exclusion_reason": "Not classified as a routine full refresh"
+    },
+    {
+      "run": "20261118_close",
+      "kind": "repair",
+      "scope": "full",
+      "profile": "full_models_cpu48_cuda1_C4",
+      "note": "Post-close pipeline required Windows Numba cache path repair; preserve timings and successful model checkpoints",
+      "start": "2026-11-18T20:36:07+02:00",
+      "verified_end": "2026-11-19T08:20:19.646451+00:00",
+      "timing_origin": "first_action_to_verified",
+      "status": "verified_complete",
+      "elapsed_seconds": 49452.646451,
+      "included_in_typical_statistics": false,
+      "exclusion_reason": "Not classified as a routine full refresh"
+    },
+    {
+      "run": "20261118_daily",
+      "kind": "repair",
+      "scope": "full",
+      "profile": "full_models_cpu48_cuda1",
+      "note": "First daily driver isolation and new NVIDIA holding integration change model dimension from71 to72; retain end-to-end time but exclude from comparable routine baseline.",
+      "start": "2026-11-18T10:06:03.192456+02:00",
+      "verified_end": null,
+      "timing_origin": "first_action_to_verified",
+      "status": "not_verified_complete",
+      "elapsed_seconds": null,
       "included_in_typical_statistics": false,
       "exclusion_reason": "Not classified as a routine full refresh"
     }
