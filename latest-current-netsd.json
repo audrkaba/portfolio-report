@@ -1,0 +1,106 @@
+{
+  "passed": true,
+  "computed_at_UTC": "2026-11-19T16:23:55.054640+00:00",
+  "invested_EUR": 11565.286012163246,
+  "cash_EUR": 3434.7139878367543,
+  "netSD": 0.7478260869565218,
+  "OUT": 86,
+  "IN": 0,
+  "D": 115,
+  "nodes": 73,
+  "training_observations": 1134,
+  "diagnostic_observations_excluded": 126,
+  "training_first": "2021-11-29",
+  "training_last": "2026-05-25",
+  "common_history_last": "2026-11-18",
+  "holdings": {
+    "AKO1L": 50.0,
+    "APG1L": 200.0,
+    "GRG1L": 543.0,
+    "HAE1T": 100.0,
+    "KNE1L": 928.0,
+    "MRK1T": 26.0,
+    "ROE1L": 620.0,
+    "RSU1L": 150.0,
+    "SAF1R": 100.0,
+    "TAL1T": 1000.0,
+    "TKM1T": 288.0,
+    "TSM1T": 330.0,
+    "VLP1L": 117.0,
+    "SE0014261764": 7.108,
+    "US_PFE": 5.491688,
+    "US_NVDA": 0.28401
+  },
+  "valuation_quotes": {
+    "AKO1L": {
+      "price_EUR": 1.6800000000000002,
+      "date": "2026-11-19"
+    },
+    "APG1L": {
+      "price_EUR": 3.85,
+      "date": "2026-11-19"
+    },
+    "GRG1L": {
+      "price_EUR": 0.92,
+      "date": "2026-11-19"
+    },
+    "HAE1T": {
+      "price_EUR": 5.12,
+      "date": "2026-11-19"
+    },
+    "KNE1L": {
+      "price_EUR": 0.475,
+      "date": "2026-11-19"
+    },
+    "MRK1T": {
+      "price_EUR": 26.85,
+      "date": "2026-11-19"
+    },
+    "ROE1L": {
+      "price_EUR": 0.82,
+      "date": "2026-11-19"
+    },
+    "RSU1L": {
+      "price_EUR": 4.3,
+      "date": "2026-11-19"
+    },
+    "SAF1R": {
+      "price_EUR": 16.6,
+      "date": "2026-11-19"
+    },
+    "TAL1T": {
+      "price_EUR": 0.613,
+      "date": "2026-11-19"
+    },
+    "TKM1T": {
+      "price_EUR": 8.99,
+      "date": "2026-11-19"
+    },
+    "TSM1T": {
+      "price_EUR": 1.238,
+      "date": "2026-11-19"
+    },
+    "VLP1L": {
+      "price_EUR": 15.25,
+      "date": "2026-11-19"
+    },
+    "SE0014261764": {
+      "price_EUR": 24.3288,
+      "date": "2026-11-18"
+    },
+    "US_PFE": {
+      "price_EUR": 25.583515195060524,
+      "date": "2026-11-18"
+    },
+    "US_NVDA": {
+      "price_EUR": 137.63676760928809,
+      "date": "2026-11-18"
+    }
+  },
+  "source_hashes": {
+    "share_prices.csv": "8adacb33e22b5f3fc9a00d6032adae88cfd6358c0e372cda60404962dfe56f7a",
+    "fund_nav_eur.csv": "413f241f7de5364c4a17a9bccdd08fd00ed0828d0e6f0f53c67bc6db04bf7af1",
+    "extended_history/prices_inception_screened.csv": "09f3088610e05b115e1c5e6623153d89324904508d3d1c9274284351ca364d7a"
+  },
+  "scope": "Historical training-sample Current netSD, all72 unchanged eligible references plus Current once; latest19Nov Baltic/18Nov US and fund valuation weights, invested holdings excluding cash. The last126 common sessions are excluded. This is not terminal scenario-tree netSD or a recalculated optimal trading policy; those remain pending."
+}

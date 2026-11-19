@@ -825,5 +825,7 @@
     }
   ],
   "current_value_EUR": 11565.286012163246,
-  "positions": 16
+  "positions": 16,
+  "historical_Current_netSD": 0.7478260869565218,
+  "historical_Current_denominator": 115
 }
