@@ -1,3 +1,4 @@
+// PORTFOLIO_PROGRESS {"verified_folds": 132, "planned_folds": 222, "is_complete": false}
 'use strict';
 (async()=>{
  const data=await fetch('rolling-validation.json').then(r=>{if(!r.ok)throw Error(r.status);return r.json()});
