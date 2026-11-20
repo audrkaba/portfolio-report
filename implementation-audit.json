@@ -1,758 +1,224 @@
 {
-  "observed_at": "2026-11-16T11:07:51.147280+02:00",
-  "scope": "Current delivery audit plus every previously catalogued requirement. Historical evidence is not silently upgraded to a current-run completion claim.",
+  "observed_at_UTC": "2026-11-20T12:45:22.677693+00:00",
+  "scope": "Verified completed financial snapshot and current data provenance; historical diagnostic records remain explicitly archived.",
   "all_requests_fully_verified": false,
   "current_financial_delivery_complete": true,
-  "reviewed_requirements": 46,
-  "pending_complete_models": [],
-  "live_delivery": {
-    "observed_at": "2026-11-16T11:07:40.056325+02:00",
-    "main": {
-      "default_model": "STOCHASTIC2",
-      "default_sale": "NO_SALE",
-      "default_updates": "UPDATES",
-      "default_regime": "R1",
-      "model_conditions": true,
-      "open_details": 0,
-      "quantities": {
-        "share-vlp1l": 107,
-        "fund-SE0014261764": 7.108
-      },
-      "fresh_sensitivity_links": 0,
-      "stale_sensitivity_data": false,
-      "embedded_sensitivity": {
-        "schema": 2,
-        "current_VLP": 107
+  "model_input_hash": "389634458f01a14ac6deaaa41f3d1a35bcca92712a81697989369c4ea9ca8219",
+  "market": {
+    "schema": 1,
+    "model_run": "20261120_akola100",
+    "model_input_hash": "389634458f01a14ac6deaaa41f3d1a35bcca92712a81697989369c4ea9ca8219",
+    "official_sources_checked_at_UTC": "2026-11-20T05:31:42.697241+00:00",
+    "official_sources_checked_at_Vilnius": "2026-11-20T07:31:42.697241+02:00",
+    "share_observations": [
+      "2026-11-19"
+    ],
+    "fund_NAV_observations": [
+      "2026-11-18"
+    ],
+    "share_last": "2026-11-19",
+    "fund_last": "2026-11-18",
+    "quote_records": 91,
+    "decision_assets": 72,
+    "training": {
+      "enabled": true,
+      "minimum_training_observations": 1134,
+      "diagnostic_observations": 126,
+      "excluded_by_user": [
+        "AIR",
+        "EJTC",
+        "FRGTE",
+        "MAGIC",
+        "SE0029504588"
+      ],
+      "maximum_common_history": true,
+      "assets": [
+        "AKO1L",
+        "AMG1L",
+        "APG1L",
+        "ARC1T",
+        "AUG1L",
+        "BAL1R",
+        "BERCM",
+        "CPA1T",
+        "CTS1L",
+        "DGR1R",
+        "EFT1T",
+        "EWA1L",
+        "GRG1L",
+        "HAE1T",
+        "HPR1T",
+        "IGN1L",
+        "INC1L",
+        "INL1L",
+        "INR1L",
+        "IVL1L",
+        "KNE1L",
+        "KNR1L",
+        "LGD1L",
+        "LHV1T",
+        "LINDA",
+        "MDARA",
+        "MODE",
+        "MRK1T",
+        "NCN1T",
+        "NEOFI",
+        "NTU1L",
+        "PKG1T",
+        "PRF1T",
+        "PZV1L",
+        "RKB1R",
+        "ROE1L",
+        "RSU1L",
+        "SAF1R",
+        "SAUNA",
+        "SCM1R",
+        "SFG1T",
+        "SKN1T",
+        "TAL1T",
+        "TEL1L",
+        "TKM1T",
+        "TPD1T",
+        "TSM1T",
+        "TVE1T",
+        "UTR1L",
+        "VBL1L",
+        "VIRSI",
+        "VLP1L",
+        "ZMP1L",
+        "SE0013876927",
+        "SE0013876950",
+        "SE0013876968",
+        "SE0014261756",
+        "SE0014261764",
+        "SE0014261871",
+        "SE0014261889",
+        "SE0014261897",
+        "SE0014263273",
+        "SE0014263281",
+        "SE0014263299",
+        "SE0015192315",
+        "SE0015192323",
+        "SE0015192331",
+        "SE0015192349",
+        "SE0015948609",
+        "SE0015948617",
+        "US_PFE",
+        "US_NVDA"
+      ],
+      "eligible_assets": 72,
+      "excluded_assets": 21,
+      "train_start": "2021-11-29",
+      "train_end": "2026-05-25",
+      "test_start": "2026-05-26",
+      "test_end": "2026-11-18",
+      "origin": "2026-11-18",
+      "calendar": "Observed Baltic sessions; forward fill only after first genuine price; never before inception",
+      "diagnostic_warning": "126-day segment is a descriptive fixed-allocation diagnostic, not an independent strategy backtest: current forecast centres use data through their current origin",
+      "sha256": {
+        "data\\full_universe\\extended_history\\prices_inception_screened.csv": "53ae7e7c8f3f7cf7a98d5d4a6475a761e1a9ba29a37d034ceef83eca1ddebcd4",
+        "data\\full_universe\\share_prices.csv": "de760e3201159435b1951807d5f661db5996c434455e17c155a6bd9ee0689a7d",
+        "data\\full_universe\\fund_nav_eur.csv": "413f241f7de5364c4a17a9bccdd08fd00ed0828d0e6f0f53c67bc6db04bf7af1"
       }
     },
-    "sensitivity": {
+    "model_manifest_sha256": "100cdf9b05ba193fe2b0e027c38002324fd3797cb1053ed5acc5c217d314a4b6",
+    "quote_snapshot_sha256": "fb85e7c4110e008213355b03a089488336f08f2cb8178b02b3e7980644314e03",
+    "price_file_sha256": {
+      "data\\full_universe\\share_prices.csv": "de760e3201159435b1951807d5f661db5996c434455e17c155a6bd9ee0689a7d",
+      "data\\full_universe\\fund_nav_eur.csv": "413f241f7de5364c4a17a9bccdd08fd00ed0828d0e6f0f53c67bc6db04bf7af1"
+    },
+    "scope": "Observation dates and actual official-source check time used by the completed model snapshot; not a claim of a new download at website build time."
+  },
+  "holdings": {
+    "TKM1T": 288.0,
+    "SAF1R": 100.0,
+    "APG1L": 200.0,
+    "KNE1L": 928.0,
+    "VLP1L": 117.0,
+    "RSU1L": 150.0,
+    "MRK1T": 26.0,
+    "GRG1L": 543.0,
+    "HAE1T": 100.0,
+    "TAL1T": 1000.0,
+    "ROE1L": 620.0,
+    "TSM1T": 330.0,
+    "SE0014261764": 11.2672,
+    "US_PFE": 5.491688,
+    "US_NVDA": 0.331988,
+    "AKO1L": 100.0
+  },
+  "verified_native_policies": [
+    {
+      "model": "STOCHASTIC",
+      "policy": "SALE",
+      "sha256": "bdfe4f82ef3b49fe145bb95b178504af4b57a1f0acdaa26038b2e7681f5ff49e"
+    },
+    {
+      "model": "STOCHASTIC",
+      "policy": "NO_SALE",
+      "sha256": "c76980f0c344a038379e3def0ac5c15cce65f16ad3869f8159198a75f0352907"
+    },
+    {
+      "model": "STOCHASTIC",
+      "policy": "NO_INITIAL_SALES",
+      "sha256": "c328d14da2affcc3bc5735f7586e826dcd4dbea448f7a61a4ac55f36f34124bb"
+    },
+    {
+      "model": "STOCHASTIC2",
+      "policy": "SALE",
+      "sha256": "d179ae09dc4bbbe83ada746c90f76e1e57b9c0ba0b36869d7209e0ccce98a118"
+    },
+    {
       "model": "STOCHASTIC2",
       "policy": "NO_SALE",
-      "asset": "VLP1L",
-      "baseline": "0.26291079812206575",
-      "coverage": 160000,
-      "current_VLP": 107
-    },
-    "original_tree": {
-      "current_VLP": 107.0,
-      "decision_steps": null,
-      "recourse_step": 10
-    },
-    "weekly_tree": {
-      "current_VLP": 107.0,
-      "decision_steps": [
-        0,
-        5,
-        10,
-        15
-      ],
-      "recourse_step": null
-    },
-    "all_current_financial_requests_visible": true
-  },
-  "requirements": [
-    {
-      "requirement": "Time and energy work resumed after financial verification",
-      "status": "Authorised to resume",
-      "detail": "48 production CPU workers, one CUDA owner, RAM ceiling 90%. Existing raw measurements and failed attempts remain archived. Financial runs performed during the user-requested energy pause remain unmeasured; no retrospective energy fabrication."
+      "sha256": "d87663794a2d21434258bfad40fd8de18ae0a2c3031490207fd374625c00c81a"
     },
     {
-      "requirement": "Current dated price snapshot",
-      "status": "Verified frozen snapshot; main integration complete",
-      "detail": "Shares 2026-11-13; fund NAV 2026-11-12; downloaded 2026-11-14T11:50:37.496914+02:00. These are frozen completed-session observations, not live prices."
+      "model": "STOCHASTIC2",
+      "policy": "NO_INITIAL_SALES",
+      "sha256": "704f393724447e393b6fd5e67dabe2b58d18e838d233c49ae946c12be5158333"
     },
     {
-      "requirement": "Entire-tree sensitivity; other model trades fixed",
-      "status": "Verified published completed-policy scope",
-      "detail": "160000 terminal scenarios; VLP107; all other model trades retained; 0 asset links. Stale sensitivity embedded in main: False. Other policies are added only when computed."
+      "model": "stochA",
+      "policy": "SALE",
+      "sha256": "eb7ed6bef867817d54f74d3bc8f63e70780596ed00a44184cb81b95b37c48c5b"
     },
     {
-      "requirement": "Current holdings: VLP1L 107 and Technology C 7.108",
-      "status": "Verified in main",
-      "detail": "Live main values: {'share-vlp1l': 107, 'fund-SE0014261764': 7.108}. Fresh whole-tree sensitivity VLP holding: 107. Do not substitute the partial page for a completed main-table refresh."
+      "model": "stochA",
+      "policy": "NO_SALE",
+      "sha256": "3f32c855b1589ce1d2edabd1f821fd81bed25de4eb6f6a7a6671c9a0c94a25b3"
     },
     {
-      "requirement": "1.1 default Stochastic 2, model conditions and collapsed disclosures",
-      "status": "Verified",
-      "detail": "Live default: STOCHASTIC2; model conditions present: True; open disclosures: 0."
+      "model": "stochA",
+      "policy": "NO_INITIAL_SALES",
+      "sha256": "b16dc8fae8048bd5ce33b53888ae74d4f3b06564e830fa4a14a8d414eff51e18"
     },
     {
-      "requirement": "Published original and Stochastic 2 tree holdings",
-      "status": "Verified",
-      "detail": "Original tree VLP: 107.0; weekly tree VLP: 107.0. Both must show 107 before final financial completion."
+      "model": "stoch2A",
+      "policy": "SALE",
+      "sha256": "0f6334a91f75bcd1c90a0e3f8912c86c8b2672472a6a2bd016e74670588b9103"
     },
     {
-      "requirement": "Current financial model completion",
-      "status": "Complete",
-      "detail": "Pending complete-model markers: none. No-sale Stochastic 2 already has a separately verified completed policy; this does not certify unfinished Sale policies."
+      "model": "stoch2A",
+      "policy": "NO_SALE",
+      "sha256": "c2d72857daf1f66d8ed062407003ffde6507a2496d33a36cb2aacb0126ad4120"
     },
     {
-      "requirement": "Supplementary section 1.1 explanations collapsed by default",
-      "status": "Verified live",
-      "detail": "Purchase-limit help, asset coverage and regime methodology remain accessible in closed disclosures; model data and dynamic regime updates are preserved. Refresh notices are removed only when the work is actually complete."
-    },
-    {
-      "requirement": "Published financial payload reconciliation",
-      "status": "Verified for dated snapshot",
-      "detail": "Checked 2026-11-14T11:16:28.386208+02:00; all 20 baskets, both scenario-tree initial allocations, embedded and separate whole-tree sensitivity, first trades and snapshot provenance compared with computed files. This is consistency verification, not confirmation that the newer closing request has been recalculated."
-    },
-    {
-      "requirement": "Latest requested closing snapshot",
-      "status": "Verified live",
-      "detail": "Requested close 2026-11-13; this audited model run uses 2026-11-13. A completed older run, a new download or a layout publication is not completion of the newer financial request."
-    },
-    {
-      "requirement": "Archived previous holding snapshot: VLP1L 87",
-      "status": "Superseded",
-      "detail": "Historical evidence only. The user corrected actual VLP1L holdings to 107; use the current-delivery rows above.",
-      "historical_status": "Verified",
-      "evidence": [
-        {
-          "path": "data/current_holdings.json",
-          "present": true,
-          "current_sha256": "d7fcbb82bb236a0eeceb31e81e2d4b049ed1aa2fb84cb7668e3294bc2faac664",
-          "matches_historical_evidence": false
-        },
-        {
-          "path": "data/instruction_audit/20261112/completion.json",
-          "present": true,
-          "current_sha256": "0038838aab1174660e0fee8442d6f7f79669672638318646c5756eaf4f52b4bc",
-          "matches_historical_evidence": true
-        }
-      ]
-    },
-    {
-      "requirement": "Closing prices, forecasts and model refresh",
-      "status": "Historical verification; current scope reviewed below",
-      "detail": "Baltic share snapshot: 12 November 2026. Fund NAV snapshot: 11 November. Common historical returns end on 11 November because fund observations lag. This is the frozen evening snapshot, not a claim that every provider still has no newer observation on 13 November.",
-      "historical_status": "Verified snapshot; NAV lag disclosed",
-      "evidence": [
-        {
-          "path": "data/long_history/market_refresh_validation.json",
-          "present": true,
-          "current_sha256": "14c7710eda5ad74da8c41748457d01a433f28b82486a03546d6f3d13da0c2b23",
-          "matches_historical_evidence": false
-        },
-        {
-          "path": "data/market_refresh/20261112_zzclose_cpu48/run_inputs.json",
-          "present": true,
-          "current_sha256": "0ec1884b3d2e0eec0f74d6d33f1af530617e81176ec507de358b44ac44f237ad",
-          "matches_historical_evidence": true
-        }
-      ]
-    },
-    {
-      "requirement": "Stochastic 2: four weekly decisions; valuation after four weeks",
-      "status": "Historical verification; current scope reviewed below",
-      "detail": "Decisions at sessions 0, 5, 10 and 15; final valuation at session 20. Only past information is available at each decision.",
-      "historical_status": "Verified",
-      "evidence": [
-        {
-          "path": "data/weekly_multistage/run_manifest.json",
-          "present": true,
-          "current_sha256": "70a739e7de4ed699c12266363f2aec133cbcb1ea248db52ae1a5540f7e3ee709",
-          "matches_historical_evidence": false
-        },
-        {
-          "path": "data/weekly_multistage/browser20_live.json",
-          "present": true,
-          "current_sha256": "c4760b067695acb82306e7c78ed9e7c5db844774d228b10fb41c8dbd04f85aed",
-          "matches_historical_evidence": true
-        }
-      ]
-    },
-    {
-      "requirement": "Twenty continuations per decision node",
-      "status": "Historical verification; current scope reviewed below",
-      "detail": "Decision-node counts: 1, 20, 400, 8000; 160000 terminal outcomes. Both native scenario explorer tables and all 20 root branches passed live checks.",
-      "historical_status": "Verified",
-      "evidence": [
-        {
-          "path": "data/weekly_multistage/browser20_live.json",
-          "present": true,
-          "current_sha256": "c4760b067695acb82306e7c78ed9e7c5db844774d228b10fb41c8dbd04f85aed",
-          "matches_historical_evidence": true
-        },
-        {
-          "path": "data/scenario_table_restore/live.json",
-          "present": true,
-          "current_sha256": "c79953d3735c2e292e0793b926aea17f7c3ad57efb49e40ed1086efea843bd32",
-          "matches_historical_evidence": true
-        }
-      ]
-    },
-    {
-      "requirement": "EUR 1000 aggregate gross buys per stage; EUR 750 per asset",
-      "status": "Historical verification; current scope reviewed below",
-      "detail": "The global EUR 1000 limit applies to all assets together at each decision; sales do not offset purchases.",
-      "historical_status": "Verified",
-      "evidence": [
-        {
-          "path": "data/stage_purchase_checks/latest.json",
-          "present": true,
-          "current_sha256": "edac7cf55a5c58cd955f2f0bfaeeaf98cd558b5aa16bf6706b176e5c6d3f604c",
-          "matches_historical_evidence": false
-        }
-      ]
-    },
-    {
-      "requirement": "Maximum 30% sector exposure",
-      "status": "Historical verification; current scope reviewed below",
-      "detail": "The shared configured sector cap and whole-policy feasibility checks were retained.",
-      "historical_status": "Verified in the daily model gates",
-      "evidence": [
-        {
-          "path": "data/investor_preferences.json",
-          "present": true,
-          "current_sha256": "39ca6b0b9036f799a259b4f4433d7a236f9af3d4f44e99c8e4615feccd397461",
-          "matches_historical_evidence": false
-        },
-        {
-          "path": "data/sector_limits/manifest.json",
-          "present": true,
-          "current_sha256": "a6565028eaef741cce33e310b50db4ed2fcd2ff24892d08ec6e39b1870c67423",
-          "matches_historical_evidence": false
-        },
-        {
-          "path": "data/stage_purchase_checks/latest.json",
-          "present": true,
-          "current_sha256": "edac7cf55a5c58cd955f2f0bfaeeaf98cd558b5aa16bf6706b176e5c6d3f604c",
-          "matches_historical_evidence": false
-        }
-      ]
-    },
-    {
-      "requirement": "Sale without technical/negative-forecast gates; No-sale forbids sales",
-      "status": "Historical verification; current scope reviewed below",
-      "detail": "Sale permissions are unrestricted by those former signal gates at every stage. Other budget, mean-return, sector and execution constraints still apply; identical trades alone do not establish a permission bug.",
-      "historical_status": "Verified",
-      "evidence": [
-        {
-          "path": "data/investor_preferences.json",
-          "present": true,
-          "current_sha256": "39ca6b0b9036f799a259b4f4433d7a236f9af3d4f44e99c8e4615feccd397461",
-          "matches_historical_evidence": false
-        },
-        {
-          "path": "R/sale_permissions.py",
-          "present": true,
-          "current_sha256": "bd5e7df51530ce527c50c142b449c85f51c782eb61acc76aa724fdbe979b89c3",
-          "matches_historical_evidence": true
-        },
-        {
-          "path": "data/weekly_multistage/run_manifest.json",
-          "present": true,
-          "current_sha256": "70a739e7de4ed699c12266363f2aec133cbcb1ea248db52ae1a5540f7e3ee709",
-          "matches_historical_evidence": false
-        }
-      ]
-    },
-    {
-      "requirement": "1.1 compact, uniform 19-column summaries",
-      "status": "Historical verification; current scope reviewed below",
-      "detail": "All 70 active profiles use the common schema. Compact vertical headings and grouped layouts were checked across laptop, tablet and phone sizes.",
-      "historical_status": "Verified",
-      "evidence": [
-        {
-          "path": "data/profile_summary_checks/layout_live.json",
-          "present": true,
-          "current_sha256": "104b68dfd2718b6a6e4d4cd5dd4c0dd4d4242d310e15fa152e6fbd9882663dde",
-          "matches_historical_evidence": true
-        }
-      ]
-    },
-    {
-      "requirement": "1.1 target value, Bollinger order, percentage weights and final attractiveness column",
-      "status": "Historical verification; current scope reviewed below",
-      "detail": "Target value uses unrounded units times price. The provider TradingView recommendation is exact-class verified or unavailable.",
-      "historical_status": "Verified",
-      "evidence": [
-        {
-          "path": "data/profile_summary_checks/live.json",
-          "present": true,
-          "current_sha256": "85696ca443fe1f7464c927b3194ada595a7bd33a2c9452830f83301b5f4608ee",
-          "matches_historical_evidence": false
-        }
-      ]
-    },
-    {
-      "requirement": "1.1 model/policy/regime selection and strict Updates only",
-      "status": "Historical verification; current scope reviewed below",
-      "detail": "120 live combinations passed. Updates only requires a nonzero initial quantity change; a future-only buy cannot admit an initial HOLD.",
-      "historical_status": "Verified",
-      "evidence": [
-        {
-          "path": "data/profile_update_filter_checks/live.json",
-          "present": true,
-          "current_sha256": "cfa16a188314ac3815178faf099a4b2b4f00a6b62781385102444c651796635c",
-          "matches_historical_evidence": false
-        }
-      ]
-    },
-    {
-      "requirement": "Tables 1.2, 1.3, 1.4a/b/c and all other tables fit",
-      "status": "Historical verification; current scope reviewed below",
-      "detail": "The sitewide gate covers all table documents and lazy fragments. Only the two scenario explorers retain their explicitly requested native scroll panels.",
-      "historical_status": "Verified",
-      "evidence": [
-        {
-          "path": "data/report_width_checks/all_tables_live.json",
-          "present": true,
-          "current_sha256": "d72e720c72cbed5959e4aad4ffbf8b9eb618c53c5e458c59d69084b522c5feef",
-          "matches_historical_evidence": false
-        }
-      ]
-    },
-    {
-      "requirement": "All five frontiers: click to pin asset labels",
-      "status": "Historical verification; current scope reviewed below",
-      "detail": "The live canvas selection and persistent label checks passed for all five model families.",
-      "historical_status": "Verified",
-      "evidence": [
-        {
-          "path": "data/frontier_labels/validation_live.json",
-          "present": true,
-          "current_sha256": "129cca131b46b24d94dc2fb8252744ed0b09e3c8b202dc2d0e607a0e1b6bc37f",
-          "matches_historical_evidence": true
-        }
-      ]
-    },
-    {
-      "requirement": "Figure 2.k: fixed asset positions across regimes",
-      "status": "Historical verification; current scope reviewed below",
-      "detail": "All regime panels use the same row and column order, so correlation changes are visible without moving assets.",
-      "historical_status": "Verified",
-      "evidence": [
-        {
-          "path": "data/market_analysis/correlation_plot_layout.json",
-          "present": true,
-          "current_sha256": "19ec92fbed04e0069bb5491e27f0540083c80fa1f1ab4fad1dd51bac895b7934",
-          "matches_historical_evidence": false
-        }
-      ]
-    },
-    {
-      "requirement": "Figure 3.c: explain zero dominance entries",
-      "status": "Historical verification; current scope reviewed below",
-      "detail": "Zero means that strict dominance was not detected in that pair/window; it does not mean equal return distributions.",
-      "historical_status": "Verified",
-      "evidence": [
-        {
-          "path": "data/long_history/portfolio_dominance_audit.json",
-          "present": true,
-          "current_sha256": "2ff9d03518a47c1db154f7ceecc6557bf4b215881983442d9cc73324060a5dd1",
-          "matches_historical_evidence": false
-        }
-      ]
-    },
-    {
-      "requirement": "Asset sensitivity: removal, exact initial trade, later positive minimum/weighted median/maximum",
-      "status": "Historical verification; current scope reviewed below",
-      "detail": "48 live selection cases passed. Later gross purchases exclude the initial purchase; the median includes zero and the positive minimum excludes zero. All other Current holdings stay fixed in historical marginal cases.",
-      "historical_status": "Verified",
-      "evidence": [
-        {
-          "path": "data/portfolio_sensitivity/validation_live.json",
-          "present": true,
-          "current_sha256": "dc7a76885ccbc1582a7e2561095f2136401c93b24fda2b520225d75de05566df",
-          "matches_historical_evidence": false
-        }
-      ]
-    },
-    {
-      "requirement": "True terminal portfolio NETSD, including all stages, trades and cash",
-      "status": "Historical verification; current scope reviewed below",
-      "detail": "Terminal whole-policy distribution scores are separate from historical initial-allocation diagnostics. Constituent NETSD values are never averaged as the portfolio objective.",
-      "historical_status": "Verified",
-      "evidence": [
-        {
-          "path": "data/model_compute_study/validation.json",
-          "present": true,
-          "current_sha256": "3d8ee692a3a20a8e0058ed523814fe78cbe4beb871873c9550e76988e086f222",
-          "matches_historical_evidence": true
-        }
-      ]
-    },
-    {
-      "requirement": "Section 4: both models, terminal NETSD, time, energy and complexity",
-      "status": "Historical verification; current scope reviewed below",
-      "detail": "The six policy rows, definitions, complexity charts and fitted curves were checked live. Saved-policy replay seconds are distinguished from full search and whole-refresh time.",
-      "historical_status": "Verified",
-      "evidence": [
-        {
-          "path": "data/model_compute_study/browser_live.json",
-          "present": true,
-          "current_sha256": "687eb3b8c9e482c32b3c8fc6868e004650c89d1a8f7bf7c4a659b988628d164a",
-          "matches_historical_evidence": true
-        }
-      ]
-    },
-    {
-      "requirement": "CPU48/CUDA workload-balance experiments",
-      "status": "Historical verification; current scope reviewed below",
-      "detail": "144 matched configurations and 432 raw timing/energy windows were preserved. Kernel speed-up is not labelled as whole-refresh speed-up.",
-      "historical_status": "Verified",
-      "evidence": [
-        {
-          "path": "data/hybrid_balance/validation_live.json",
-          "present": true,
-          "current_sha256": "fa4ccee8493376ac782f7e8f63dbc3d9955210738fdb0fe00c436ed52247481b",
-          "matches_historical_evidence": true
-        }
-      ]
-    },
-    {
-      "requirement": "English presentation and rendered equations",
-      "status": "Historical verification; current scope reviewed below",
-      "detail": "The local/live math and language gates passed. No LaTeX renderer errors were detected.",
-      "historical_status": "Verified",
-      "evidence": [
-        {
-          "path": "data/report_math_checks/live.json",
-          "present": true,
-          "current_sha256": "18a8f81fc6e6c4475a6f9a0bdde5e4fad150853abbca1f32667e760db446efda",
-          "matches_historical_evidence": false
-        }
-      ]
-    },
-    {
-      "requirement": "Liquidity in attractiveness",
-      "status": "Historical verification; current scope reviewed below",
-      "detail": "Liquidity weight is 5%; weekly turnover threshold EUR 1000. Missing facts remain unavailable, not zero.",
-      "historical_status": "Verified",
-      "evidence": [
-        {
-          "path": "data/stock_attractiveness/validation_live.json",
-          "present": true,
-          "current_sha256": "548459f1876da97ad77ca978636c93af83799c2513e96b952e330f190c34282c",
-          "matches_historical_evidence": true
-        }
-      ]
-    },
-    {
-      "requirement": "MarketScreener annual-fact supplementation",
-      "status": "Historical verification; current scope reviewed below",
-      "detail": "Only compatible missing annual facts were supplemented after identity/period/currency checks. The current matched-input supplement affects TSM1T; no proprietary graphic rating was inferred.",
-      "historical_status": "Verified",
-      "evidence": [
-        {
-          "path": "data/stock_attractiveness/marketscreener_validation_live.json",
-          "present": true,
-          "current_sha256": "3bba86a395b86c2bcd013b30193297c893302afbe5f9cf451590d664ff5b46ed",
-          "matches_historical_evidence": true
-        }
-      ]
-    },
-    {
-      "requirement": "Unique section, table and figure numbering",
-      "status": "Historical verification; current scope reviewed below",
-      "detail": "The published report numbering gate passed, and the current source has no duplicate labels.",
-      "historical_status": "Verified",
-      "evidence": [
-        {
-          "path": "R/report_numbering.py",
-          "present": true,
-          "current_sha256": "fda4b1c28d27ed2be9e78c90f81c3a273b98086e1a374c81381f5af394425207",
-          "matches_historical_evidence": true
-        }
-      ]
-    },
-    {
-      "requirement": "A common full-support histogram x-axis for each asset",
-      "status": "Historical verification; current scope reviewed below",
-      "detail": "Daily, training and regime views use the same per-asset limits, ticks and bin edges. Re-run R/check_histogram_axes.py as part of this review.",
-      "historical_status": "Verified by histogram gate",
-      "evidence": [
-        {
-          "path": "R/histogram_axes.py",
-          "present": true,
-          "current_sha256": "83c4b89d5308233f6a5ed5f3a0837a8977a74ec3b5d91f4a9e73dab48e068407",
-          "matches_historical_evidence": true
-        },
-        {
-          "path": "R/check_histogram_axes.py",
-          "present": true,
-          "current_sha256": "9a5cab335ad2cf32dc4e6893f8cec1f718043f0e7807c2eb98f70bb06136c8ea",
-          "matches_historical_evidence": true
-        }
-      ]
-    },
-    {
-      "requirement": "Dense CPU/GPU points, fitted time/energy curves and R-squared",
-      "status": "Historical verification; current scope reviewed below",
-      "detail": "Matched CPU/GPU settings: 1, 2, 4, 8, 16, 32, 48, 60 (the requested fallback for CPU64). Additional GPU settings: 64, 128, 256, 512, 1024. These historical benchmarks do not change the production CPU48 limit.",
-      "historical_status": "Verified",
-      "evidence": [
-        {
-          "path": "data/compute/dense_scaling.json",
-          "present": true,
-          "current_sha256": "eeb69e899bb3b8fb5e522ccec771f050c64a7a353a005d57bf2661133f6e260e",
-          "matches_historical_evidence": true
-        },
-        {
-          "path": "data/compute/validation.json",
-          "present": true,
-          "current_sha256": "58252f89d694dbad1b1b2da32f0a0ac3d0f03916b98945127a723d76eeeea663",
-          "matches_historical_evidence": true
-        }
-      ]
-    },
-    {
-      "requirement": "48 production CPU workers; CUDA; RAM below 90%",
-      "status": "Historical verification; current scope reviewed below",
-      "detail": "Configured CPU workers: 48; observed maximum RAM in the measured model phases: 9.93%. Browser audit work and per-phase utilisation are distinct.",
-      "historical_status": "Verified observed runs",
-      "evidence": [
-        {
-          "path": "data/compute_resources.json",
-          "present": true,
-          "current_sha256": "14a13b6e753681cd23c43a1713078375b436a25d1ebd46ce86732e58c8b4c9ac",
-          "matches_historical_evidence": true
-        },
-        {
-          "path": "data/market_refresh/20261112_zzclose_cpu48/resource_validation.json",
-          "present": true,
-          "current_sha256": "bdf533d311611efd7f7f0c2905e27d091c71d24cc899e550be19dd878d0e33a7",
-          "matches_historical_evidence": true
-        }
-      ]
-    },
-    {
-      "requirement": "Reboot/crash investigation",
-      "status": "Unresolved cause",
-      "detail": "The Windows MEMORY_MANAGEMENT / corrupted page-table finding was investigated. The exact hardware or driver cause remains unconfirmed; CPU48 is a mitigation, not proof that the fault is repaired.",
-      "historical_status": "Unresolved cause",
-      "evidence": [
-        {
-          "path": "data/market_refresh/20261112_stage1000_technology7108_cpu48/crash_investigation.json",
-          "present": true,
-          "current_sha256": "f432af4f6fb8b3a3bfbf3b23815a712de992341cd53ef92a4d410fe513fc4620",
-          "matches_historical_evidence": true
-        }
-      ]
-    },
-    {
-      "requirement": "Continuous request-to-publication timing and daily history",
-      "status": "Historical verification; current scope reviewed below",
-      "detail": "Wall time retains downloads, superseded attempts, idle time, retries, checks and deployment. Full Stochastic 2 energy was not continuously covered because the monitor failed before the solver ended; partial raw counters and a separately validated completed policy were preserved. Full energy remains explicitly unavailable.",
-      "historical_status": "Verified with measurement gap",
-      "evidence": [
-        {
-          "path": "data/market_refresh/20261112_zzclose_cpu48/lifecycle.json",
-          "present": true,
-          "current_sha256": "49b5c90ec935e779c992618a2865b2917ec82d77d1792c8a5e318675c9f4519a",
-          "matches_historical_evidence": true
-        },
-        {
-          "path": "data/market_refresh/20261112_zzclose_cpu48/stochastic2.recovered.measurement.json",
-          "present": true,
-          "current_sha256": "b25295b83e9978ddf7a93bdfce6976d807af60530710989f812b7fa2787c271b",
-          "matches_historical_evidence": true
-        },
-        {
-          "path": "data/compute_runs/validation.json",
-          "present": true,
-          "current_sha256": "aa0ab7df647464a4092c031d795ab9e4d6ea93b1d6815f5f2c5e3b3030a9d3d3",
-          "matches_historical_evidence": false
-        }
-      ]
-    },
-    {
-      "requirement": "MarketScreener links at every asset",
-      "status": "Partial external coverage; omission corrected",
-      "detail": "53 stock profiles have verified direct links. All 17 active Robur fund classes now have an explicitly labelled provider-restricted exact-ISIN web-search link and an unverified-class notice. These are not claimed to be direct MarketScreener fund pages. No C/N class is replaced by class A or Swedbank AB stock.",
-      "historical_status": "Partial external coverage; omission corrected",
-      "evidence": [
-        {
-          "path": "data/instruction_audit/20261113/provider_links.json",
-          "present": true,
-          "current_sha256": "e6ee42ee5c39379147ed9ad3b4180d27948ea1f61a33e73b50c7171860947065",
-          "matches_historical_evidence": true
-        },
-        {
-          "path": "data/marketscreener_research/20261112/audit.json",
-          "present": true,
-          "current_sha256": "f819322dad2d40c24c1f3881b6d635e9625feae0635cfec2ff8585c9355b67b4",
-          "matches_historical_evidence": true
-        }
-      ]
-    },
-    {
-      "requirement": "Optional US positions; fractional units; EUR 1000 cumulative US budget",
-      "status": "Limited scope: initial decision only",
-      "detail": "The published paired trial screens 44 valid US listings, permits 0-3 companies and 0.001-share units, and respects the shared initial-stage/sector limits. It makes only an initial US decision and holds afterward. It is not a four-stage Stochastic 2 reoptimisation with US trades at later nodes. R3 / No-sale selected zero US additions.",
-      "historical_status": "Limited scope: initial decision only",
-      "evidence": [
-        {
-          "path": "data/us_extension/20261112/trial.json",
-          "present": true,
-          "current_sha256": "cab2a62be80d0eab686edf712a9e3a32f560585749ff88628bfc767127994f81",
-          "matches_historical_evidence": true
-        },
-        {
-          "path": "data/us_extension/20261112/validation.json",
-          "present": true,
-          "current_sha256": "1779b6866bc24b34fcf96ad84546fe4fea158a905a094ab576f856a15b6369e7",
-          "matches_historical_evidence": true
-        },
-        {
-          "path": "data/us_extension/20261112/layout_live.json",
-          "present": true,
-          "current_sha256": "65ea9982a17e5c82e00485df0db54e6ea661262b160b4b4a00469816ed37d9c7",
-          "matches_historical_evidence": true
-        }
-      ]
-    },
-    {
-      "requirement": "Four-week forecasts: methods, regimes and half-year history",
-      "status": "Historical verification; current scope reviewed below",
-      "detail": "All 70 active assets have at least ten raw forecast-method paths. Regime-conditioned charts show the four regimes and five forecast clusters, with 126 observed historical sessions before the forecast. Raw methods and clustered display series are distinct.",
-      "historical_status": "Verified",
-      "evidence": [
-        {
-          "path": "data/long_history/live_browser.json",
-          "present": true,
-          "current_sha256": "eb8336fd9084c92c1b01cdfe6595b12ab7d0ad0db70251d00d76a4f8a10238c4",
-          "matches_historical_evidence": false
-        },
-        {
-          "path": "R/check_long_history_report.py",
-          "present": true,
-          "current_sha256": "30a6c85d0ca10051f4754a50b572df398fa73b71edc922d8392ccf69aba07091",
-          "matches_historical_evidence": false
-        }
-      ]
-    },
-    {
-      "requirement": "Separate portfolios for every market regime",
-      "status": "Limited scope: historical NETSD model only",
-      "detail": "Only the historical NETSD model is independently optimised for each regime. Other model allocations retain their full-history solutions and are evaluated in the selected regime. They are not five separately reoptimised versions of every model.",
-      "historical_status": "Limited scope: historical NETSD model only",
-      "evidence": [
-        {
-          "path": "data/regime_netsd/portfolio_payload.json",
-          "present": true,
-          "current_sha256": "7523fcc022977b1d69fc442b9fcb5580e21338be13918db12d9d28e85d6fcc0e",
-          "matches_historical_evidence": false
-        },
-        {
-          "path": "R/current_portfolio_selector.py",
-          "present": true,
-          "current_sha256": "43929d8f4a50e58577c90a14d979c3b1aee17c7be4e1985c5fb158aa03b225e9",
-          "matches_historical_evidence": false
-        }
-      ]
-    },
-    {
-      "requirement": "Default 1.1 view: Stochastic, No-sale, Updates only, current regime",
-      "status": "Historical verification; current scope reviewed below",
-      "detail": "The source defaults match the requested model/policy/update settings. Current-regime behaviour is covered by the profile selection tests.",
-      "historical_status": "Verified",
-      "evidence": [
-        {
-          "path": "data/profile_summary_checks/live.json",
-          "present": true,
-          "current_sha256": "85696ca443fe1f7464c927b3194ada595a7bd33a2c9452830f83301b5f4608ee",
-          "matches_historical_evidence": false
-        },
-        {
-          "path": "data/profile_update_filter_checks/live.json",
-          "present": true,
-          "current_sha256": "cfa16a188314ac3815178faf099a4b2b4f00a6b62781385102444c651796635c",
-          "matches_historical_evidence": false
-        }
-      ]
-    },
-    {
-      "requirement": "Publish completed portions during long jobs; remove temporary notices afterward",
-      "status": "Historical verification; current scope reviewed below",
-      "detail": "Dated progressive release records were retained. The final report has no temporary refresh banner, and the public completion status is true.",
-      "historical_status": "Verified for the completed refresh",
-      "evidence": [
-        {
-          "path": "data/progressive_publication/20261112_zzclose_cpu48/completion.json",
-          "present": true,
-          "current_sha256": "40d7f6e07637fdaca47a56667d706b3e393fb38c790d95a1d10c03f3c4432430",
-          "matches_historical_evidence": true
-        },
-        {
-          "path": "public_site/refresh-status.json",
-          "present": true,
-          "current_sha256": "0e5e6a5913c964a7eb81d769752e9511ba037d85501e7feb7d5561d784b70770",
-          "matches_historical_evidence": false
-        }
-      ]
-    },
-    {
-      "requirement": "External Yahoo chart: restore Bollinger, Stochastic RSI and MACD presets",
-      "status": "Not verified; external session dependent",
-      "detail": "Exact instrument chart links and the report?s own technical graphs are available. The external Yahoo URL does not demonstrate that these indicator selections persist in the user?s Yahoo session. The current help text asks the user to select indicators; this is not proof that the original external-session issue was fixed.",
-      "historical_status": "Not verified; external session dependent",
-      "evidence": [
-        {
-          "path": "data/full_universe/external_chart_links.json",
-          "present": true,
-          "current_sha256": "c7fdd73899bdd964639ab3352c039d8587a10549959c981c3b9974c9fa5b3931",
-          "matches_historical_evidence": true
-        },
-        {
-          "path": "R/external_instrument_links.py",
-          "present": true,
-          "current_sha256": "78a29574a3df6aea607e4a8e1e7318c60a43941115e1254d91905942328d3ecd",
-          "matches_historical_evidence": true
-        }
-      ]
-    },
-    {
-      "requirement": "No printed Unicode escapes, leaked table markup or broken text encoding",
-      "status": "Historical verification; current scope reviewed below",
-      "detail": "The sitewide text-integrity gate rejects printed Unicode escape tokens, leaked markup and common mojibake patterns. It passed for this audit build.",
-      "historical_status": "Verified by text-integrity gate",
-      "evidence": [
-        {
-          "path": "R/report_text_integrity.py",
-          "present": true,
-          "current_sha256": "e97f58f5be49d0ca5dfb16072dc21b1e7fdd33a2e52ed3c77a2ff925a084bf7c",
-          "matches_historical_evidence": true
-        },
-        {
-          "path": "R/display_unicode.py",
-          "present": true,
-          "current_sha256": "8794b3c26937655728f3e4c66960d28a6947dc9ffef663e33ac320e6038653da",
-          "matches_historical_evidence": true
-        }
-      ]
-    },
-    {
-      "requirement": "Experimental per-stock attractiveness indicator",
-      "status": "Historical verification; current scope reviewed below",
-      "detail": "64 of 67 research stocks have a score; EJTC, FRGTE and PRIMO remain unavailable. Financial, technical, disclosure/sentiment and liquidity inputs follow the published evidence and weights. Fund classes have no fabricated stock-attractiveness score.",
-      "historical_status": "Verified with unavailable cases shown",
-      "evidence": [
-        {
-          "path": "data/stock_attractiveness/scores.json",
-          "present": true,
-          "current_sha256": "ca3c3eb5f0cf553e3a8f133b1e612ae908103547531bf6d1eddb2755be0b7a9a",
-          "matches_historical_evidence": false
-        },
-        {
-          "path": "data/stock_attractiveness/validation_live.json",
-          "present": true,
-          "current_sha256": "548459f1876da97ad77ca978636c93af83799c2513e96b952e330f190c34282c",
-          "matches_historical_evidence": true
-        }
-      ]
+      "model": "stoch2A",
+      "policy": "NO_INITIAL_SALES",
+      "sha256": "1f6edc490427908a5687a9c1059332b2e32e1436a3b2437db3686ec0c0659a50"
     }
   ],
-  "limitations": [
-    "Exact Robur-class MarketScreener profiles remain unverified where only explicitly labelled exact-ISIN searches are available.",
-    "External Yahoo indicator persistence in the user session has not been independently verified.",
-    "The optional US trial is initial-decision only; no completed all-stage US experiment is claimed.",
-    "Independent historical regime optimisation is implemented for NETSD; other model allocations are evaluated by regime.",
-    "The crash component remains unresolved. Historical gaps in full-search energy cannot be reconstructed."
+  "main_model_allocations": 20,
+  "rolling_verified": 215,
+  "rolling_planned": 222,
+  "rolling_state": "all_remaining_origins_attempted_with_explicit_unavailable",
+  "unavailable_information_comparisons": [
+    {
+      "model": "stoch2A",
+      "policy": "SALE",
+      "reason": "EV initial vector has no feasible tested complete recourse policy"
+    }
   ],
-  "this_run_financial_delivery_complete": true,
-  "latest_requested_financial_delivery_complete": true,
-  "model_snapshot_end": "2026-11-13",
-  "latest_requested_end": "2026-11-13"
+  "archived_previous_audit": "implementation-audit-archived-20261116.json"
 }

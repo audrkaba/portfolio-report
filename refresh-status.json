@@ -1,5 +1,5 @@
 {
-  "state": "complete_pending_live_verification",
+  "state": "complete_live_verified",
   "main_report_complete": true,
   "financial_calculations_complete": true,
   "technical_studies_complete": false,
@@ -35,5 +35,7 @@
     "price_status": "Latest available official observations; source dates retained",
     "updated_current_session": 0
   },
-  "updated_at": "2026-11-20T09:05:05.847849+00:00"
+  "updated_at": "2026-11-20T09:05:05.847849+00:00",
+  "financial_release_verified_at_UTC": "2026-11-20T09:17:56.129347+00:00",
+  "financial_publication_commit": "5fdc8951ec66f461ebce5988c0ab531208e0b5fb"
 }
