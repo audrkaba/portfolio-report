@@ -7,3 +7,10 @@
 .co-main-grid{display:grid;grid-template-columns:minmax(0,1fr) 250px;gap:16px;align-items:start}.co-main-grid>*{min-width:0}.co-portfolio-picker{padding:12px;border:1px solid #d4dfe5;border-radius:6px;box-sizing:border-box;max-width:100%}.co-portfolio-picker>label{display:block;font-weight:600;font-size:.92rem;margin-bottom:8px}.co-portfolio-picker select{height:340px;display:block;box-sizing:border-box;width:100%;max-width:100%;font:inherit;font-size:.82rem;padding:4px}.co-portfolio-picker option{padding:4px;white-space:normal;overflow-wrap:anywhere}.co-portfolio-picker button{margin-top:8px;max-width:100%;font:inherit;font-size:.85rem;padding:5px 9px}.co-selected-line{display:flex;gap:7px;align-items:baseline;font-size:.78rem;overflow-wrap:anywhere;margin:5px 0}.co-selected-line span:first-child{flex:0 0 20px;border-top:3px solid;margin-top:5px}@media(max-width:850px){.co-main-grid{grid-template-columns:minmax(0,1fr)}.co-portfolio-picker select{height:220px}}
 
 .co-portfolio-picker option:checked{color:#162e40!important;background:#dceaf4}
+
+html body #co-composition table.co-composition-table :is(td,th){padding:.3rem .18rem!important;font-variant-numeric:tabular-nums}
+html body #co-composition table.co-composition-table thead th{line-height:1!important;writing-mode:vertical-rl!important;text-orientation:mixed;transform:rotate(180deg)!important;height:9rem!important;white-space:normal!important;vertical-align:middle;text-align:left!important}
+html body #co-composition table.co-composition-table tbody th{writing-mode:horizontal-tb!important;transform:none!important;height:auto!important;font-weight:normal}
+html body #co-composition table.co-composition-table tbody tr:first-child :is(th,td){font-weight:600}
+html body #co-composition table.co-composition-table time{font-variant-numeric:tabular-nums}
+@media(max-width:500px){html body #co-composition table.co-composition-table :is(td,th){padding:.3rem .1rem!important}}

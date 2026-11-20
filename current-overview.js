@@ -17,18 +17,10 @@ function line(name,x,y,color,extra={}){return {type:'scatter',mode:'lines',name,
 let compositionRows;
 function renderComposition(rows=compositionRows){
  if(!rows)return;compositionRows=rows;
- const host=$('co-holdings'),width=host.getBoundingClientRect().width||root.getBoundingClientRect().width-26;
- const headings=['Asset','Units','Latest EUR price','Quote date','Day','Month','Year to date','Since 2025-01-01','Value, EUR','Weight'];
- const count=Math.max(2,Math.min(10,Math.floor(width/105)));
- let html='';
- for(let start=1;start<headings.length;start+=count-1){
-  const indices=[0,...Array.from({length:Math.min(count-1,headings.length-start)},(_,i)=>start+i)];
-  html+=table(indices.map(i=>headings[i]),rows.map(r=>indices.map(i=>r[i]))).replace('<table>','<table class="horizontal-summary-group co-composition-table">');
- }
- host.innerHTML=html;
+ const headings=['Asset','Units','Latest EUR price','Day','Month','Year to date','Since 2025-01-01','Value, EUR','Weight','Quote date'];
+ const widths=[28,9,8,7,7,7,7,12,7,8];
+ $('co-holdings').innerHTML=table(headings,rows).replace('<table>','<table class="horizontal-summary-group co-composition-table"><colgroup>'+widths.map(w=>'<col style="width:'+w+'%">').join('')+'</colgroup>');
 }
-let compositionResize;
-window.addEventListener('resize',()=>{clearTimeout(compositionResize);compositionResize=setTimeout(()=>renderComposition(),150)});
 function table(headers,rows){return '<table><thead><tr>'+headers.map(h=>'<th scope="col">'+esc(h)+'</th>').join('')+'</tr></thead><tbody>'+rows.map(r=>'<tr>'+r.map((v,i)=>'<'+(i?'td':'th scope="row"')+' data-label="'+esc(headers[i])+'">'+v+'</'+(i?'td':'th')+'>').join('')+'</tr>').join('')+'</tbody></table>';}
 function changeCell(x){return x==null?'—':'<span class="'+(x<0?'co-negative':'co-positive')+'">'+pct(x)+'</span>';}
 function fitVisibleValueAxis(plot){
@@ -149,7 +141,7 @@ async function render(){
   const rollingPlot=$('current-overview-rolling-correlation');rollingPlot._coYBounds=[-1,1];bindValueAutoscale(rollingPlot);await fitVisibleValueAxis(rollingPlot);
   const compRows=data.composition.map(r=>{
    const name=r.asset==='CURRENT'?'<strong>Current portfolio</strong>':'<a class="co-asset-link" href="'+esc(data.profile_links[r.asset])+'">'+esc(r.asset+' — '+r.name)+'</a>';
-   return [name,r.units==null?'—':String(r.units),r.price_EUR==null?'—':Number(r.price_EUR).toFixed(4),r.date,...['day','month','YTD','since_2025'].map(k=>changeCell(r.changes[k])),eur(r.value_EUR),pct(r.weight)];
+   return [name,r.units==null?'—':String(r.units),r.price_EUR==null?'—':Number(r.price_EUR).toFixed(4),...['day','month','YTD','since_2025'].map(k=>changeCell(r.changes[k])),eur(r.value_EUR),pct(r.weight),'<time datetime="'+esc(r.date)+'" title="'+esc(r.date)+'">'+esc(r.date.slice(8,10)+'-'+r.date.slice(5,7))+'</time>'];
   });
   renderComposition(compRows);
   root.dataset.ready='true';root.dataset.period=key;
