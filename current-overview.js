@@ -16,6 +16,36 @@ function layout(title,height){return {title:{text:title,font:{size:13},x:.02},he
 function line(name,x,y,color,extra={}){return {type:'scatter',mode:'lines',name,x,y,line:{color,width:1.6},connectgaps:false,...extra};}
 function table(headers,rows){return '<table><thead><tr>'+headers.map(h=>'<th scope="col">'+esc(h)+'</th>').join('')+'</tr></thead><tbody>'+rows.map(r=>'<tr>'+r.map((v,i)=>'<'+(i?'td':'th scope="row"')+' data-label="'+esc(headers[i])+'">'+v+'</'+(i?'td':'th')+'>').join('')+'</tr>').join('')+'</tbody></table>';}
 function changeCell(x){return x==null?'—':'<span class="'+(x<0?'co-negative':'co-positive')+'">'+pct(x)+'</span>';}
+function fitVisibleValueAxis(plot){
+ const range=plot._fullLayout?.xaxis?.range;if(!range)return;
+ const start=Date.parse(range[0]),end=Date.parse(range[1]);if(!Number.isFinite(start)||!Number.isFinite(end))return;
+ let low=Infinity,high=-Infinity;
+ const include=y=>{if(Number.isFinite(y)){low=Math.min(low,y);high=Math.max(high,y);}};
+ for(const trace of plot.data){
+  if((trace.yaxis&&trace.yaxis!=='y')||trace.visible===false||trace.visible==='legendonly'||trace.type!=='scatter')continue;
+  let previous;
+  for(let i=0;i<trace.x.length;i++){
+   const x=Date.parse(trace.x[i]),y=trace.y[i];
+   if(y==null||!Number.isFinite(y)){previous=null;continue;}
+   if(x>=start&&x<=end)include(y);
+   if(previous&&x>previous.x){
+    for(const edge of [start,end])if(previous.x<edge&&edge<x)include(previous.y+(y-previous.y)*(edge-previous.x)/(x-previous.x));
+   }
+   previous={x,y};
+  }
+ }
+ if(!Number.isFinite(low))return;
+ const padding=high>low?(high-low)*.06:Math.max(Math.abs(low)*.005,1e-6),next=[low-padding,high+padding],old=plot.layout.yaxis.range;
+ if(old&&next.every((v,i)=>Math.abs(v-old[i])<1e-8))return;
+ return Plotly.relayout(plot,{'yaxis.range':next,'yaxis.autorange':false});
+}
+function bindValueAutoscale(plot){
+ if(plot._coValueAutoscale)return;plot._coValueAutoscale=true;
+ let queued=false;
+ const schedule=()=>{if(queued)return;queued=true;requestAnimationFrame(()=>{queued=false;Promise.resolve(fitVisibleValueAxis(plot)).catch(console.error);});};
+ plot.on('plotly_relayout',event=>{if(Object.keys(event).some(k=>k.startsWith('xaxis.range')||k==='xaxis.autorange'))schedule();});
+ plot.on('plotly_restyle',schedule);
+}
 async function render(){
  if(!data||!root.open)return;if(rendering){pending=true;return;}rendering=true;
  try{
@@ -40,6 +70,7 @@ async function render(){
   main.annotations=[{xref:'paper',yref:'paper',x:0,y:.425,text:'Stochastic RSI ·14 /14 /3 /3',showarrow:false,xanchor:'left',font:{size:11}},{xref:'paper',yref:'paper',x:0,y:.145,text:'Market regime',showarrow:false,xanchor:'left',font:{size:11}}];
   main.shapes=[20,80].map(y=>({type:'line',xref:'paper',yref:'y2',x0:0,x1:1,y0:y,y1:y,line:{color:'#b1bfca',dash:'dot',width:1}}));
   await Plotly.react('current-overview-price',traces,main,cfg);
+  const valuePlot=$('current-overview-price');bindValueAutoscale(valuePlot);await fitVisibleValueAxis(valuePlot);
   $('co-context').textContent=`Current invested value ${eur(data.current_value_EUR)} · ${Object.keys(data.holdings).length} holdings. Drag or zoom the common time axis to move all three panels together. Performance and benchmark rebasing follow History: ${period.first}–${period.last}. S&P500 last close ${data.benchmark_last.SP500_EUR}; Baltic index last close ${data.benchmark_last[baltic]}.`;
   $('co-regime-note').textContent=`Latest classified session: ${data.latest_classified_regime.date} — ${regimeNames[data.latest_classified_regime.regime]}. R1 blue; R2 amber; R3 purple; R4 red; unclassified grey. Missing regime dates are not filled.`;
   const columns=['CURRENT','SP500_EUR',baltic];
