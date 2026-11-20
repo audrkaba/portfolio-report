@@ -1,10 +1,13 @@
-// PORTFOLIO_PROGRESS {"verified_folds": 192, "planned_folds": 222, "is_complete": false}
+// PORTFOLIO_PROGRESS {"verified_folds": 195, "planned_folds": 222, "is_complete": false}
 'use strict';
 (async()=>{
  const data=await fetch('rolling-validation.json').then(r=>{if(!r.ok)throw Error(r.status);return r.json()});
  const $=id=>document.getElementById(id),escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
- $('study-status').textContent=`${data.verified_folds} / ${data.planned_folds} windows verified. ${data.is_complete?'Study complete.':'Calculations in progress; unfinished windows are excluded.'} Sources end 2026-11-17; calendar windows: six months / one month / seven-day step.`;
+ const queueEnded=data.progress?.state==='all_remaining_origins_attempted_with_explicit_unavailable';
+ const stopped=data.progress?.state?.includes('failed_checkpoint');
+ $('study-status').textContent=`${data.verified_folds} / ${data.planned_folds} windows verified. ${data.is_complete?'Study complete.':queueEnded?'Queue finished with unavailable origins; these are excluded.':stopped?'Study stopped at a preserved checkpoint; unfinished windows are excluded.':'Calculations in progress; unfinished windows are excluded.'} Sources end 2026-11-17; calendar windows: six months / one month / seven-day step.`;
  const frozen=document.createElement('p');frozen.textContent='Frozen study: Current uses the original research inventory, not subsequent live-account purchases. Previously checked windows are retained unchanged. Published calculation status: '+(data.progress?.state||'not recorded')+(data.progress?.current?' / origin '+data.progress.current:'')+(data.progress?.updated_at_UTC?' / as of '+data.progress.updated_at_UTC:'')+'.';$('study-status').after(frozen);
+ if(data.unavailable_origins?.length){const note=document.createElement('details');note.innerHTML='<summary>Unavailable origins and coverage</summary><ul>'+data.unavailable_origins.map(x=>'<li>'+escape(x.fold)+': '+escape(x.reason)+'</li>').join('')+'</ul>';frozen.after(note);}
  const rows=data.completed.flatMap(f=>f.metrics.map(r=>({...r,origin:f.fold.origin,regime:f.origin_regime||null}))).filter(r=>r.cost_bps===(r.scope==='IS'?0:10));
  const metrics=['netSD','mean_return','Rachev','Sharpe','maximum_drawdown','Sortino','STD','accumulated_wealth_EUR','CVaR95','fees_EUR','turnover_EUR'];
  function options(el,values){el.replaceChildren(...values.map(v=>{const o=document.createElement('option');o.value=v;o.textContent=v;return o}));}
