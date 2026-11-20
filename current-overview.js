@@ -58,7 +58,6 @@ const portfolioColors=['#c02663','#26734d','#6846a6','#c4631b','#086f83','#b1393
 function comparisonStyle(index){return {color:portfolioColors[index%portfolioColors.length],dash:['solid','dash','dot'][Math.floor(index/portfolioColors.length)%3]};}
 function setupPortfolioPicker(){
  const select=$('co-portfolios');select.replaceChildren();
- const current=document.createElement('option');current.value='CURRENT';current.textContent='Current (fixed holdings)';current.selected=true;select.append(current);
  const groups=new Map();
  for(const [index,p] of data.portfolio_comparison.portfolios.entries()){
   if(!groups.has(p.group)){const g=document.createElement('optgroup');g.label=p.group;groups.set(p.group,g);select.append(g)}
@@ -79,10 +78,9 @@ async function render(){
    traces.push(line('SMA20',dates,data.bollinger.mean,'#8197a4',{line:{color:'#8197a4',width:1,dash:'dot'}}));
   }
   const selectedPortfolios=new Set([...$('co-portfolios').selectedOptions].map(o=>o.value));
-  if(selectedPortfolios.has('CURRENT'))traces.push(line('Current: fixed units',dates,data.value,'#075b78',{line:{color:'#075b78',width:2.3}}));
+  traces.push(line('Current: fixed units',dates,data.value,'#075b78',{line:{color:'#075b78',width:2.3}}));
   traces.push(line('S&P500 · EUR',dates,normalize(data.benchmarks.SP500_EUR),'#d17a22'),line(baltic==='OMXB10'?'OMX Baltic10 · price':'OMX Baltic Benchmark · GI',dates,normalize(data.benchmarks[baltic]),'#8262a3'));
   const selectedLegend=[];
-  if(selectedPortfolios.has('CURRENT'))selectedLegend.push({label:'Current',color:'#075b78',dash:'solid'});
   for(const [index,p] of data.portfolio_comparison.portfolios.entries()){
    if(!selectedPortfolios.has(p.id))continue;
    const first=p.values.findIndex((v,i)=>i>=begin&&v!=null&&v>0),style=comparisonStyle(index);
@@ -101,11 +99,11 @@ async function render(){
   main.yaxis2={domain:[.20,.40],range:[0,100],anchor:'x',fixedrange:true,title:{text:'Stoch RSI'}};
   main.yaxis3={domain:[.02,.12],range:[-.5,.5],anchor:'x',visible:false,fixedrange:true};
   main.xaxis={type:'date',anchor:'y3',range:[period.first,period.last],automargin:true,rangeslider:{visible:true,range:[data.first,data.last],thickness:.07}};
-  main.legend.y=1.10;main.margin.t=90;
+  main.legend.itemdoubleclick=false;main.legend.y=1.10;main.margin.t=90;
   main.annotations=[{xref:'paper',yref:'paper',x:0,y:.425,text:'Stochastic RSI ·14 /14 /3 /3',showarrow:false,xanchor:'left',font:{size:11}},{xref:'paper',yref:'paper',x:0,y:.145,text:'Market regime',showarrow:false,xanchor:'left',font:{size:11}}];
   main.shapes=[20,80].map(y=>({type:'line',xref:'paper',yref:'y2',x0:0,x1:1,y0:y,y1:y,line:{color:'#b1bfca',dash:'dot',width:1}}));
   await Plotly.react('current-overview-price',traces,main,cfg);
-  const valuePlot=$('current-overview-price');bindValueAutoscale(valuePlot);await fitVisibleValueAxis(valuePlot);
+  const valuePlot=$('current-overview-price');if(!valuePlot._coCurrentPinned){valuePlot._coCurrentPinned=true;valuePlot.on('plotly_legendclick',e=>e.data[e.curveNumber].name==='Current: fixed units'?false:undefined);}bindValueAutoscale(valuePlot);await fitVisibleValueAxis(valuePlot);
   $('co-context').textContent=`Current invested value ${eur(data.current_value_EUR)} · ${Object.keys(data.holdings).length} holdings. Drag or zoom the common time axis to move all three panels together. Performance and benchmark rebasing follow History: ${period.first}–${period.last}. S&P500 last close ${data.benchmark_last.SP500_EUR}; Baltic index last close ${data.benchmark_last[baltic]}.`;
   $('co-regime-note').textContent=`Latest classified session: ${data.latest_classified_regime.date} — ${regimeNames[data.latest_classified_regime.regime]}. R1 blue; R2 amber; R3 purple; R4 red; unclassified grey. Missing regime dates are not filled.`;
   const columns=['CURRENT','SP500_EUR',baltic];
@@ -151,7 +149,7 @@ async function load(){if(loaded)return loaded;loaded=(async()=>{const response=a
 root.addEventListener('toggle',()=>{if(root.open)load().then(render).catch(e=>{$('current-overview-price').textContent='Unable to load Current analytics: '+e.message;loaded=null;});});
 ['co-period','co-baltic','co-bands','co-correlation-method','co-portfolios'].forEach(id=>$(id).addEventListener('change',()=>render().catch(console.error)));
 $('co-composition').addEventListener('toggle',()=>{if($('co-composition').open)renderComposition()});
-$('co-portfolios-reset').addEventListener('click',()=>{for(const option of $('co-portfolios').options)option.selected=option.value==='CURRENT';render().catch(console.error)});
+$('co-portfolios-reset').addEventListener('click',()=>{for(const option of $('co-portfolios').options)option.selected=false;render().catch(console.error)});
 root.querySelectorAll('details').forEach(d=>d.addEventListener('toggle',()=>{if(d.open&&window.Plotly)requestAnimationFrame(()=>d.querySelectorAll('.js-plotly-plot').forEach(p=>Plotly.Plots.resize(p)));}));
 root.addEventListener('click',event=>{
  const link=event.target.closest('a.co-asset-link');if(!link)return;const target=document.getElementById(link.hash.slice(1));if(!target)return;event.preventDefault();
