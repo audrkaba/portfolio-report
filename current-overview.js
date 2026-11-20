@@ -36,6 +36,7 @@ function fitVisibleValueAxis(plot){
  }
  if(!Number.isFinite(low))return;
  const padding=high>low?(high-low)*.06:Math.max(Math.abs(low)*.005,1e-6),next=[low-padding,high+padding],old=plot.layout.yaxis.range;
+ if(plot._coYBounds){next[0]=Math.max(plot._coYBounds[0],next[0]);next[1]=Math.min(plot._coYBounds[1],next[1]);}
  if(old&&next.every((v,i)=>Math.abs(v-old[i])<1e-8))return;
  return Plotly.relayout(plot,{'yaxis.range':next,'yaxis.autorange':false});
 }
@@ -87,7 +88,8 @@ async function render(){
   await Plotly.react('current-overview-correlations',[{type:'heatmap',x:assets,y:assets,z:period.correlations[method],zmin:-1,zmax:1,colorscale:[[0,'#2166ac'],[.5,'#ffffff'],[1,'#b2182b']],reversescale:false,colorbar:{title:{text:'ρ'},thickness:10,len:.8},hovertemplate:'%{y} × %{x}<br>Correlation %{z:.3f}<extra></extra>'}],cl,cfg);
   $('co-correlation-note').textContent=`${assets.length} held assets; ${period.correlation_observations} returns. Red: high positive correlation; blue: negative correlation; white: near zero. Asset order is fixed.`;
   const take=a=>a.slice(begin),selectedDates=dates.slice(begin);
-  await Plotly.react('current-overview-rolling-correlation',[line('Pairwise10th percentile',selectedDates,take(data.rolling_correlation.p10),'#b2c9d0',{showlegend:false,line:{width:0}}),line('10th–90th percentile',selectedDates,take(data.rolling_correlation.p90),'#b2c9d0',{fill:'tonexty',fillcolor:'rgba(30,110,130,.15)',line:{width:0}}),line('Median pairwise correlation',selectedDates,take(data.rolling_correlation.median),'#176d82')],{...layout('Rolling63-session holdings-only correlations',235),yaxis:{range:[-1,1]}},cfg);
+  await Plotly.react('current-overview-rolling-correlation',[line('Pairwise10th percentile',selectedDates,take(data.rolling_correlation.p10),'#b2c9d0',{showlegend:false,line:{width:0}}),line('10th–90th percentile',selectedDates,take(data.rolling_correlation.p90),'#b2c9d0',{fill:'tonexty',fillcolor:'rgba(30,110,130,.15)',line:{width:0}}),line('Median pairwise correlation',selectedDates,take(data.rolling_correlation.median),'#176d82')],{...layout('Rolling63-session holdings-only correlations',235),uirevision:'co-rolling-'+key,yaxis:{tickformat:'.2f',automargin:true}},cfg);
+  const rollingPlot=$('current-overview-rolling-correlation');rollingPlot._coYBounds=[-1,1];bindValueAutoscale(rollingPlot);await fitVisibleValueAxis(rollingPlot);
   const compRows=data.composition.map(r=>{
    const name=r.asset==='CURRENT'?'<strong>Current portfolio</strong>':'<a class="co-asset-link" href="'+esc(data.profile_links[r.asset])+'">'+esc(r.asset+' — '+r.name)+'</a>';
    return [name,r.units==null?'—':String(r.units),r.price_EUR==null?'—':Number(r.price_EUR).toFixed(4),r.date,...['day','month','YTD','since_2025'].map(k=>changeCell(r.changes[k])),eur(r.value_EUR),pct(r.weight)];
