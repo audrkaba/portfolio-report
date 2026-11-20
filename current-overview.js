@@ -74,36 +74,36 @@ async function render(){
   const traces=[];
   if(bands){
    traces.push(line('Lower Bollinger band',dates,data.bollinger.lower,'#a5b5bf',{line:{width:0},showlegend:false,hoverinfo:'skip'}));
-   traces.push(line('Bollinger ±2σ',dates,data.bollinger.upper,'#a5b5bf',{line:{width:0},fill:'tonexty',fillcolor:'rgba(40,110,140,.12)',hoverinfo:'skip'}));
-   traces.push(line('SMA20',dates,data.bollinger.mean,'#8197a4',{line:{color:'#8197a4',width:1,dash:'dot'}}));
+   traces.push(line('Bollinger ±2σ',dates,data.bollinger.upper,'#a5b5bf',{showlegend:false,line:{width:0},fill:'tonexty',fillcolor:'rgba(40,110,140,.12)',hoverinfo:'skip'}));
+   traces.push(line('SMA20',dates,data.bollinger.mean,'#8197a4',{showlegend:false,line:{color:'#8197a4',width:1,dash:'dot'}}));
   }
   const selectedPortfolios=new Set([...$('co-portfolios').selectedOptions].map(o=>o.value));
-  traces.push(line('Current: fixed units',dates,data.value,'#075b78',{line:{color:'#075b78',width:2.3}}));
-  traces.push(line('S&P500 · EUR',dates,normalize(data.benchmarks.SP500_EUR),'#d17a22'),line(baltic==='OMXB10'?'OMX Baltic10 · price':'OMX Baltic Benchmark · GI',dates,normalize(data.benchmarks[baltic]),'#8262a3'));
+  traces.push(line('Current',dates,data.value,'#075b78',{line:{color:'#075b78',width:2.3}}));
+  traces.push(line('S&P 500',dates,normalize(data.benchmarks.SP500_EUR),'#d17a22'),line(baltic==='OMXB10'?'OMX Baltic 10':'OMX Baltic Benchmark GI',dates,normalize(data.benchmarks[baltic]),'#8262a3'));
   const selectedLegend=[];
   for(const [index,p] of data.portfolio_comparison.portfolios.entries()){
    if(!selectedPortfolios.has(p.id))continue;
    const first=p.values.findIndex((v,i)=>i>=begin&&v!=null&&v>0),style=comparisonStyle(index);
    if(first<0)continue;
    const values=p.values.map(v=>v==null?null:v/p.values[first]*data.value[first]);
-   traces.push(line(p.label,dates,values,style.color,{showlegend:false,meta:{portfolio_id:p.id},line:{color:style.color,width:1.7,dash:style.dash}}));
+   traces.push(line(p.label.replace('; later sales allowed',''),dates,values,style.color,{showlegend:true,meta:{portfolio_id:p.id},line:{color:style.color,width:1.7,dash:style.dash}}));
    selectedLegend.push({label:p.label,...style});
   }
   $('co-selected-lines-list').innerHTML=selectedLegend.map(p=>'<div class="co-selected-line"><span style="border-color:'+p.color+';border-top-style:'+(p.dash==='solid'?'solid':p.dash==='dash'?'dashed':'dotted')+'"></span><span>'+esc(p.label)+'</span></div>').join('');
-  traces.push(line('Stoch RSI %K',dates,data.stoch_rsi.K,'#096e94',{yaxis:'y2'}),line('Stoch RSI %D',dates,data.stoch_rsi.D,'#c47b29',{yaxis:'y2'}));
+  traces.push(line('Stoch RSI %K',dates,data.stoch_rsi.K,'#096e94',{yaxis:'y2',showlegend:false}),line('Stoch RSI %D',dates,data.stoch_rsi.D,'#c47b29',{yaxis:'y2',showlegend:false}));
   const regimes=data.regimes.map(r=>r==null?0:r);
-  traces.push({type:'heatmap',name:'Market regime',x:dates,y:[0],z:[regimes],yaxis:'y3',zmin:0,zmax:4,colorscale:regimeColors.flatMap((c,i)=>[[Math.max(0,(i-.5)/4),c],[Math.min(1,(i+.5)/4),c]]),showscale:false,text:[regimes.map(r=>regimeNames[r])],hovertemplate:'%{x}<br>%{text}<extra></extra>'});
+  traces.push({type:'heatmap',name:'Market regime',showlegend:false,x:dates,y:[0],z:[regimes],yaxis:'y3',zmin:0,zmax:4,colorscale:regimeColors.flatMap((c,i)=>[[Math.max(0,(i-.5)/4),c],[Math.min(1,(i+.5)/4),c]]),showscale:false,text:[regimes.map(r=>regimeNames[r])],hovertemplate:'%{x}<br>%{text}<extra></extra>'});
   const compactMain=$('current-overview-price').getBoundingClientRect().width<750;
   const main=layout(small?'Current portfolio - linked panels':compactMain?'Portfolio comparison - linked panels':'Current value, Bollinger bands, Stochastic RSI and regime · shared time axis',small?650:730);
   main.uirevision='co-period-'+key;main.yaxis={domain:[.48,1],tickformat:',.0f',automargin:true,title:{text:'EUR'}};
   main.yaxis2={domain:[.20,.40],range:[0,100],anchor:'x',fixedrange:true,title:{text:'Stoch RSI'}};
   main.yaxis3={domain:[.02,.12],range:[-.5,.5],anchor:'x',visible:false,fixedrange:true};
   main.xaxis={type:'date',anchor:'y3',range:[period.first,period.last],automargin:true,rangeslider:{visible:true,range:[data.first,data.last],thickness:.07}};
-  main.legend.itemdoubleclick=false;main.legend.y=1.10;main.margin.t=90;
+  main.legend.traceorder='normal';main.legend.maxheight=90;main.legend.itemdoubleclick=false;main.legend.y=1.10;main.margin.t=90;
   main.annotations=[{xref:'paper',yref:'paper',x:0,y:.425,text:'Stochastic RSI ·14 /14 /3 /3',showarrow:false,xanchor:'left',font:{size:11}},{xref:'paper',yref:'paper',x:0,y:.145,text:'Market regime',showarrow:false,xanchor:'left',font:{size:11}}];
   main.shapes=[20,80].map(y=>({type:'line',xref:'paper',yref:'y2',x0:0,x1:1,y0:y,y1:y,line:{color:'#b1bfca',dash:'dot',width:1}}));
   await Plotly.react('current-overview-price',traces,main,cfg);
-  const valuePlot=$('current-overview-price');if(!valuePlot._coCurrentPinned){valuePlot._coCurrentPinned=true;valuePlot.on('plotly_legendclick',e=>e.data[e.curveNumber].name==='Current: fixed units'?false:undefined);}bindValueAutoscale(valuePlot);await fitVisibleValueAxis(valuePlot);
+  const valuePlot=$('current-overview-price');if(!valuePlot._coCurrentPinned){valuePlot._coCurrentPinned=true;valuePlot.on('plotly_legendclick',e=>e.data[e.curveNumber].name==='Current'?false:undefined);}bindValueAutoscale(valuePlot);await fitVisibleValueAxis(valuePlot);
   $('co-context').textContent=`Current invested value ${eur(data.current_value_EUR)} · ${Object.keys(data.holdings).length} holdings. Drag or zoom the common time axis to move all three panels together. Performance and benchmark rebasing follow History: ${period.first}–${period.last}. S&P500 last close ${data.benchmark_last.SP500_EUR}; Baltic index last close ${data.benchmark_last[baltic]}.`;
   $('co-regime-note').textContent=`Latest classified session: ${data.latest_classified_regime.date} — ${regimeNames[data.latest_classified_regime.regime]}. R1 blue; R2 amber; R3 purple; R4 red; unclassified grey. Missing regime dates are not filled.`;
   const columns=['CURRENT','SP500_EUR',baltic];
