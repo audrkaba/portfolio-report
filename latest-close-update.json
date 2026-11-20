@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "observed_at_UTC": "2026-11-20T09:07:00.475616+00:00",
+  "observed_at_UTC": "2026-11-20T16:14:52.691428+00:00",
   "scope": "Completed financial revision. Individual genuine quote dates retained. Historical Current metrics are the full-history fixed-quantity reconstruction, distinct from terminal model objectives.",
   "models_recalculated": true,
   "rows": [
@@ -766,8 +766,8 @@
       "date": "2026-11-19",
       "price_EUR": 132.805672969013,
       "previous_price_EUR": 137.63676760928809,
-      "units": 0.331988,
-      "value_EUR": 44.08988975763668
+      "units": 1.169741,
+      "value_EUR": 155.3482407044462
     },
     {
       "asset": "US_PFE",
@@ -775,8 +775,8 @@
       "date": "2026-11-19",
       "price_EUR": 25.054585985741763,
       "previous_price_EUR": 25.583515195060524,
-      "units": 5.491688,
-      "value_EUR": 137.5919692028662
+      "units": 5.883,
+      "value_EUR": 147.39612935411878
     },
     {
       "asset": "UTR1L",
@@ -811,8 +811,8 @@
       "date": "2026-11-19",
       "price_EUR": 15.25,
       "previous_price_EUR": 15.35,
-      "units": 117.0,
-      "value_EUR": 1784.25
+      "units": 127.0,
+      "value_EUR": 1936.75
     },
     {
       "asset": "ZMP1L",
@@ -824,7 +824,7 @@
       "value_EUR": 0.0
     }
   ],
-  "current_value_EUR": 11752.569314320503,
+  "current_value_EUR": 12026.131825418564,
   "positions": 16,
   "historical_Current_netSD": 0.5038167938931297,
   "historical_Current_denominator": 131

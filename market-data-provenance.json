@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "model_run": "20261120_akola100",
-  "model_input_hash": "389634458f01a14ac6deaaa41f3d1a35bcca92712a81697989369c4ea9ca8219",
+  "model_run": "20261120_us2",
+  "model_input_hash": "887e18a0e00ea2ea65e383c860345de79fe780a5b5c810d38f91c5fa017ba3df",
   "official_sources_checked_at_UTC": "2026-11-20T05:31:42.697241+00:00",
   "official_sources_checked_at_Vilnius": "2026-11-20T07:31:42.697241+02:00",
   "share_observations": [
@@ -115,8 +115,8 @@
       "data\\full_universe\\fund_nav_eur.csv": "413f241f7de5364c4a17a9bccdd08fd00ed0828d0e6f0f53c67bc6db04bf7af1"
     }
   },
-  "model_manifest_sha256": "100cdf9b05ba193fe2b0e027c38002324fd3797cb1053ed5acc5c217d314a4b6",
-  "quote_snapshot_sha256": "fb85e7c4110e008213355b03a089488336f08f2cb8178b02b3e7980644314e03",
+  "model_manifest_sha256": "b25be7777fbf7c48e559464df52fe33a5f2a9c952c117bd5044429aead380a29",
+  "quote_snapshot_sha256": "aff25515b8948fcabedd01472c672124de14f27e380ae21d7e3e7b51ce19aad1",
   "price_file_sha256": {
     "data\\full_universe\\share_prices.csv": "de760e3201159435b1951807d5f661db5996c434455e17c155a6bd9ee0689a7d",
     "data\\full_universe\\fund_nav_eur.csv": "413f241f7de5364c4a17a9bccdd08fd00ed0828d0e6f0f53c67bc6db04bf7af1"

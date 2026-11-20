@@ -199,9 +199,9 @@
     },
     "APG1L": {
       "netSD": {
-        "netSD": 0.24,
+        "netSD": 0.24444444444444444,
         "OUT": 63,
-        "IN": 9,
+        "IN": 8,
         "D": 225,
         "expected_return": -0.0002581860053653845,
         "scenarios": 52,
@@ -212,7 +212,7 @@
           32
         ],
         "IN_by_order": [
-          1,
+          0,
           4,
           4
         ]
@@ -1735,9 +1735,9 @@
     },
     "VIRSI": {
       "netSD": {
-        "netSD": 0.2168141592920354,
+        "netSD": 0.22123893805309736,
         "OUT": 62,
-        "IN": 13,
+        "IN": 12,
         "D": 226,
         "expected_return": -0.00031821461901923066,
         "scenarios": 52,
@@ -1748,7 +1748,7 @@
           31
         ],
         "IN_by_order": [
-          1,
+          0,
           5,
           7
         ]
@@ -3111,9 +3111,9 @@
     },
     "US_KO": {
       "netSD": {
-        "netSD": 0.5022026431718062,
+        "netSD": 0.4933920704845815,
         "OUT": 116,
-        "IN": 2,
+        "IN": 4,
         "D": 227,
         "expected_return": 0.0017451197427115386,
         "scenarios": 52,
@@ -3125,8 +3125,8 @@
         ],
         "IN_by_order": [
           0,
-          1,
-          1
+          2,
+          2
         ]
       },
       "mean_daily_pct": 0.17451197427411402,
@@ -3888,13 +3888,13 @@
         "OUT": 145,
         "IN": 0,
         "D": 225,
-        "expected_return": 0.0017042794063269228,
+        "expected_return": 0.00176448687775,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
-          3,
-          71,
-          71
+          1,
+          72,
+          72
         ],
         "IN_by_order": [
           0,
@@ -3903,15 +3903,15 @@
         ]
       },
       "narrow_same_window_netSD": {
-        "netSD": 0.7697841726618705,
-        "OUT": 107,
+        "netSD": 0.7553956834532374,
+        "OUT": 105,
         "IN": 0,
         "D": 139,
-        "expected_return": 0.0017042794063269228,
+        "expected_return": 0.00176448687775,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
-          3,
+          1,
           52,
           52
         ],
@@ -3921,19 +3921,19 @@
           0
         ]
       },
-      "delta_netSD": -0.125339728217426,
+      "delta_netSD": -0.11095123900879289,
       "cash_inclusive_netSD": {
-        "netSD": 0.6088888888888889,
-        "OUT": 137,
+        "netSD": 0.6133333333333333,
+        "OUT": 138,
         "IN": 0,
         "D": 225,
-        "expected_return": 0.00133531079025,
+        "expected_return": 0.001414663453076923,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
-          1,
-          68,
-          68
+          0,
+          69,
+          69
         ],
         "IN_by_order": [
           0,
@@ -3941,15 +3941,15 @@
           0
         ]
       },
-      "cash_EUR": 3247.4306856794974,
-      "invested_EUR": 11752.569314320503,
+      "cash_EUR": 2973.8681745814356,
+      "invested_EUR": 12026.131825418564,
       "account_wealth_EUR": 15000.0,
-      "mean_daily_pct": 0.133531079025,
-      "annualised_SD_pct": 5.838074399396558,
-      "VaR95_loss_pct": 0.37557010949999997,
-      "ES95_loss_pct": 0.508165507653846,
-      "beta": 0.09003403644077099,
-      "alpha_annualised_pct": 31.82749702696616,
+      "mean_daily_pct": 0.1414663453076923,
+      "annualised_SD_pct": 6.223724508992558,
+      "VaR95_loss_pct": 0.3731581459,
+      "ES95_loss_pct": 0.5150999619,
+      "beta": 0.11012009662596668,
+      "alpha_annualised_pct": 33.420632012010415,
       "MES5_loss_pct": null,
       "market_tail_days": 3,
       "delta_CoVaR_proxy_pct": null,
@@ -3961,17 +3961,17 @@
       "policy": "SALE",
       "allocation_regime": "FULL",
       "netSD": {
-        "netSD": 0.6177777777777778,
-        "OUT": 141,
+        "netSD": 0.6088888888888889,
+        "OUT": 139,
         "IN": 2,
         "D": 225,
-        "expected_return": 0.0017023074351730767,
+        "expected_return": 0.0016570162896346154,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
-          0,
-          70,
-          71
+          1,
+          69,
+          69
         ],
         "IN_by_order": [
           0,
@@ -3980,17 +3980,17 @@
         ]
       },
       "narrow_same_window_netSD": {
-        "netSD": 0.7266187050359713,
-        "OUT": 103,
+        "netSD": 0.7122302158273381,
+        "OUT": 101,
         "IN": 2,
         "D": 139,
-        "expected_return": 0.0017023074351730767,
+        "expected_return": 0.0016570162896346154,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
-          0,
-          51,
-          52
+          1,
+          50,
+          50
         ],
         "IN_by_order": [
           0,
@@ -3998,19 +3998,19 @@
           1
         ]
       },
-      "delta_netSD": -0.1088409272581935,
+      "delta_netSD": -0.10334132693844922,
       "cash_inclusive_netSD": {
-        "netSD": 0.5777777777777777,
-        "OUT": 130,
+        "netSD": 0.5866666666666667,
+        "OUT": 132,
         "IN": 0,
         "D": 225,
-        "expected_return": 0.0011789544927115383,
+        "expected_return": 0.001188238402288461,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
           0,
-          65,
-          65
+          66,
+          66
         ],
         "IN_by_order": [
           0,
@@ -4018,15 +4018,15 @@
           0
         ]
       },
-      "cash_EUR": 4611.560740324134,
-      "invested_EUR": 10388.439259675866,
-      "account_wealth_EUR": 15000.0,
-      "mean_daily_pct": 0.11789544927115388,
-      "annualised_SD_pct": 6.495256051281922,
-      "VaR95_loss_pct": 0.40626406829999995,
-      "ES95_loss_pct": 0.4760854019923077,
-      "beta": 0.15508596855522622,
-      "alpha_annualised_pct": 26.570633994193944,
+      "cash_EUR": 4243.572229226071,
+      "invested_EUR": 10756.427770773927,
+      "account_wealth_EUR": 14999.999999999998,
+      "mean_daily_pct": 0.11882384022884615,
+      "annualised_SD_pct": 7.118931559868417,
+      "VaR95_loss_pct": 0.49104103120000003,
+      "ES95_loss_pct": 0.5696826152769231,
+      "beta": 0.16988283624847314,
+      "alpha_annualised_pct": 26.505092355117487,
       "MES5_loss_pct": null,
       "market_tail_days": 3,
       "delta_CoVaR_proxy_pct": null,
@@ -4038,56 +4038,17 @@
       "policy": "NO_SALE",
       "allocation_regime": "FULL",
       "netSD": {
-        "netSD": 0.6266666666666667,
-        "OUT": 143,
-        "IN": 2,
-        "D": 225,
-        "expected_return": 0.0016929580097692306,
-        "scenarios": 52,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          1,
-          71,
-          71
-        ],
-        "IN_by_order": [
-          0,
-          1,
-          1
-        ]
-      },
-      "narrow_same_window_netSD": {
-        "netSD": 0.7410071942446043,
-        "OUT": 105,
-        "IN": 2,
-        "D": 139,
-        "expected_return": 0.0016929580097692306,
-        "scenarios": 52,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          1,
-          52,
-          52
-        ],
-        "IN_by_order": [
-          0,
-          1,
-          1
-        ]
-      },
-      "delta_netSD": -0.11434052757793756,
-      "cash_inclusive_netSD": {
-        "netSD": 0.6133333333333333,
-        "OUT": 138,
+        "netSD": 0.6488888888888888,
+        "OUT": 146,
         "IN": 0,
         "D": 225,
-        "expected_return": 0.001439267600557692,
+        "expected_return": 0.0019177172937115382,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
-          0,
-          69,
-          69
+          1,
+          72,
+          73
         ],
         "IN_by_order": [
           0,
@@ -4095,15 +4056,54 @@
           0
         ]
       },
-      "cash_EUR": 2247.7557715885487,
-      "invested_EUR": 12752.244228411451,
+      "narrow_same_window_netSD": {
+        "netSD": 0.7482014388489209,
+        "OUT": 104,
+        "IN": 0,
+        "D": 139,
+        "expected_return": 0.0019177172937115382,
+        "scenarios": 52,
+        "probability_mass": 1.0,
+        "OUT_by_order": [
+          1,
+          51,
+          52
+        ],
+        "IN_by_order": [
+          0,
+          0,
+          0
+        ]
+      },
+      "delta_netSD": -0.09931254996003203,
+      "cash_inclusive_netSD": {
+        "netSD": 0.6311111111111111,
+        "OUT": 142,
+        "IN": 0,
+        "D": 225,
+        "expected_return": 0.0016638283704999996,
+        "scenarios": 52,
+        "probability_mass": 1.0,
+        "OUT_by_order": [
+          0,
+          71,
+          71
+        ],
+        "IN_by_order": [
+          0,
+          0,
+          0
+        ]
+      },
+      "cash_EUR": 1985.868229226071,
+      "invested_EUR": 13014.131770773929,
       "account_wealth_EUR": 15000.0,
-      "mean_daily_pct": 0.14392676005576924,
-      "annualised_SD_pct": 6.832167589717287,
-      "VaR95_loss_pct": 0.48143387810000005,
-      "ES95_loss_pct": 0.6097500082923077,
-      "beta": 0.14055718517297988,
-      "alpha_annualised_pct": 33.42459430893865,
+      "mean_daily_pct": 0.16638283705,
+      "annualised_SD_pct": 8.134267913740233,
+      "VaR95_loss_pct": 0.4307952181,
+      "ES95_loss_pct": 0.6043387195615384,
+      "beta": 0.19471207256928105,
+      "alpha_annualised_pct": 37.98740312803452,
       "MES5_loss_pct": null,
       "market_tail_days": 3,
       "delta_CoVaR_proxy_pct": null,
@@ -4115,17 +4115,17 @@
       "policy": "SALE",
       "allocation_regime": "FULL",
       "netSD": {
-        "netSD": 0.7511111111111111,
-        "OUT": 169,
+        "netSD": 0.7733333333333333,
+        "OUT": 174,
         "IN": 0,
         "D": 225,
-        "expected_return": 0.002589425032057692,
+        "expected_return": 0.002728136630961538,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
-          1,
-          84,
-          84
+          2,
+          86,
+          86
         ],
         "IN_by_order": [
           0,
@@ -4134,15 +4134,15 @@
         ]
       },
       "narrow_same_window_netSD": {
-        "netSD": 0.8705035971223022,
-        "OUT": 121,
+        "netSD": 0.8776978417266187,
+        "OUT": 122,
         "IN": 0,
         "D": 139,
-        "expected_return": 0.002589425032057692,
+        "expected_return": 0.002728136630961538,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
-          1,
+          2,
           60,
           60
         ],
@@ -4152,13 +4152,13 @@
           0
         ]
       },
-      "delta_netSD": -0.11939248601119112,
+      "delta_netSD": -0.10436450839328537,
       "cash_inclusive_netSD": {
         "netSD": 0.6133333333333333,
         "OUT": 138,
         "IN": 0,
         "D": 225,
-        "expected_return": 0.001379872544980769,
+        "expected_return": 0.0014663928680961537,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
@@ -4172,15 +4172,15 @@
           0
         ]
       },
-      "cash_EUR": 7006.6856856794975,
-      "invested_EUR": 7993.314314320503,
+      "cash_EUR": 6937.393174581435,
+      "invested_EUR": 8062.606825418565,
       "account_wealth_EUR": 15000.0,
-      "mean_daily_pct": 0.13798725449807694,
-      "annualised_SD_pct": 5.601311629662059,
-      "VaR95_loss_pct": 0.2629205872,
-      "ES95_loss_pct": 0.3069849908923077,
-      "beta": 0.09682148976395831,
-      "alpha_annualised_pct": 32.81307172385991,
+      "mean_daily_pct": 0.14663928680961535,
+      "annualised_SD_pct": 6.025416945905187,
+      "VaR95_loss_pct": 0.2872004643,
+      "ES95_loss_pct": 0.3398464741076923,
+      "beta": 0.11773691412836157,
+      "alpha_annualised_pct": 34.57004499354345,
       "MES5_loss_pct": null,
       "market_tail_days": 3,
       "delta_CoVaR_proxy_pct": null,
@@ -4196,13 +4196,13 @@
         "OUT": 145,
         "IN": 0,
         "D": 225,
-        "expected_return": 0.0017042794063269228,
+        "expected_return": 0.001771745379480769,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
-          3,
-          71,
-          71
+          1,
+          72,
+          72
         ],
         "IN_by_order": [
           0,
@@ -4211,165 +4211,11 @@
         ]
       },
       "narrow_same_window_netSD": {
-        "netSD": 0.7697841726618705,
-        "OUT": 107,
-        "IN": 0,
-        "D": 139,
-        "expected_return": 0.0017042794063269228,
-        "scenarios": 52,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          3,
-          52,
-          52
-        ],
-        "IN_by_order": [
-          0,
-          0,
-          0
-        ]
-      },
-      "delta_netSD": -0.125339728217426,
-      "cash_inclusive_netSD": {
-        "netSD": 0.6088888888888889,
-        "OUT": 137,
-        "IN": 0,
-        "D": 225,
-        "expected_return": 0.00133531079025,
-        "scenarios": 52,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          1,
-          68,
-          68
-        ],
-        "IN_by_order": [
-          0,
-          0,
-          0
-        ]
-      },
-      "cash_EUR": 3247.4306856794974,
-      "invested_EUR": 11752.569314320503,
-      "account_wealth_EUR": 15000.0,
-      "mean_daily_pct": 0.133531079025,
-      "annualised_SD_pct": 5.838074399396558,
-      "VaR95_loss_pct": 0.37557010949999997,
-      "ES95_loss_pct": 0.508165507653846,
-      "beta": 0.09003403644077099,
-      "alpha_annualised_pct": 31.82749702696616,
-      "MES5_loss_pct": null,
-      "market_tail_days": 3,
-      "delta_CoVaR_proxy_pct": null,
-      "asset_tail_days": 3,
-      "zero_return_fraction": 0.0
-    },
-    "stochA|SALE": {
-      "model": "stochA",
-      "policy": "SALE",
-      "allocation_regime": "FULL",
-      "netSD": {
-        "netSD": 0.5422222222222223,
-        "OUT": 122,
-        "IN": 0,
-        "D": 225,
-        "expected_return": 0.0008862834212884614,
-        "scenarios": 52,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          0,
-          61,
-          61
-        ],
-        "IN_by_order": [
-          0,
-          0,
-          0
-        ]
-      },
-      "narrow_same_window_netSD": {
-        "netSD": 0.6330935251798561,
-        "OUT": 88,
-        "IN": 0,
-        "D": 139,
-        "expected_return": 0.0008862834212884614,
-        "scenarios": 52,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          0,
-          44,
-          44
-        ],
-        "IN_by_order": [
-          0,
-          0,
-          0
-        ]
-      },
-      "delta_netSD": -0.09087130295763379,
-      "cash_inclusive_netSD": {
-        "netSD": 0.5066666666666667,
-        "OUT": 114,
-        "IN": 0,
-        "D": 225,
-        "expected_return": 0.0006444191488653845,
-        "scenarios": 52,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          0,
-          57,
-          57
-        ],
-        "IN_by_order": [
-          0,
-          0,
-          0
-        ]
-      },
-      "cash_EUR": 4093.4581410394967,
-      "invested_EUR": 10906.541858960503,
-      "account_wealth_EUR": 15000.0,
-      "mean_daily_pct": 0.06444191488653846,
-      "annualised_SD_pct": 4.051185567281199,
-      "VaR95_loss_pct": 0.29900246020000004,
-      "ES95_loss_pct": 0.4070405760846154,
-      "beta": 0.04243782685691701,
-      "alpha_annualised_pct": 15.380399258399402,
-      "MES5_loss_pct": null,
-      "market_tail_days": 3,
-      "delta_CoVaR_proxy_pct": null,
-      "asset_tail_days": 3,
-      "zero_return_fraction": 0.0
-    },
-    "stochA|NO_SALE": {
-      "model": "stochA",
-      "policy": "NO_SALE",
-      "allocation_regime": "FULL",
-      "netSD": {
-        "netSD": 0.6266666666666667,
-        "OUT": 143,
-        "IN": 2,
-        "D": 225,
-        "expected_return": 0.0016559025916923075,
-        "scenarios": 52,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          1,
-          71,
-          71
-        ],
-        "IN_by_order": [
-          0,
-          1,
-          1
-        ]
-      },
-      "narrow_same_window_netSD": {
-        "netSD": 0.7410071942446043,
+        "netSD": 0.7553956834532374,
         "OUT": 105,
-        "IN": 2,
+        "IN": 0,
         "D": 139,
-        "expected_return": 0.0016559025916923075,
+        "expected_return": 0.001771745379480769,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
@@ -4379,94 +4225,17 @@
         ],
         "IN_by_order": [
           0,
-          1,
-          1
-        ]
-      },
-      "delta_netSD": -0.11434052757793756,
-      "cash_inclusive_netSD": {
-        "netSD": 0.6044444444444445,
-        "OUT": 136,
-        "IN": 0,
-        "D": 225,
-        "expected_return": 0.001330525374653846,
-        "scenarios": 52,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          0,
-          68,
-          68
-        ],
-        "IN_by_order": [
-          0,
           0,
           0
         ]
       },
-      "cash_EUR": 2947.430771588548,
-      "invested_EUR": 12052.569228411452,
-      "account_wealth_EUR": 15000.0,
-      "mean_daily_pct": 0.13305253746538462,
-      "annualised_SD_pct": 6.423391754543137,
-      "VaR95_loss_pct": 0.3993685687,
-      "ES95_loss_pct": 0.5413383393538461,
-      "beta": 0.1338229294401738,
-      "alpha_annualised_pct": 30.82059499208049,
-      "MES5_loss_pct": null,
-      "market_tail_days": 3,
-      "delta_CoVaR_proxy_pct": null,
-      "asset_tail_days": 3,
-      "zero_return_fraction": 0.0
-    },
-    "stoch2A|SALE": {
-      "model": "stoch2A",
-      "policy": "SALE",
-      "allocation_regime": "FULL",
-      "netSD": {
-        "netSD": 0.7511111111111111,
-        "OUT": 169,
-        "IN": 0,
-        "D": 225,
-        "expected_return": 0.002589425032057692,
-        "scenarios": 52,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          1,
-          84,
-          84
-        ],
-        "IN_by_order": [
-          0,
-          0,
-          0
-        ]
-      },
-      "narrow_same_window_netSD": {
-        "netSD": 0.8705035971223022,
-        "OUT": 121,
-        "IN": 0,
-        "D": 139,
-        "expected_return": 0.002589425032057692,
-        "scenarios": 52,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          1,
-          60,
-          60
-        ],
-        "IN_by_order": [
-          0,
-          0,
-          0
-        ]
-      },
-      "delta_netSD": -0.11939248601119112,
+      "delta_netSD": -0.11095123900879289,
       "cash_inclusive_netSD": {
         "netSD": 0.6133333333333333,
         "OUT": 138,
         "IN": 0,
         "D": 225,
-        "expected_return": 0.001379872544980769,
+        "expected_return": 0.0014030730055769232,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
@@ -4480,15 +4249,246 @@
           0
         ]
       },
-      "cash_EUR": 7006.6856856794975,
-      "invested_EUR": 7993.314314320503,
+      "cash_EUR": 3121.2643039355535,
+      "invested_EUR": 11878.735696064447,
       "account_wealth_EUR": 15000.0,
-      "mean_daily_pct": 0.13798725449807694,
-      "annualised_SD_pct": 5.601311629662059,
-      "VaR95_loss_pct": 0.2629205872,
-      "ES95_loss_pct": 0.3069849908923077,
-      "beta": 0.09682148976395831,
-      "alpha_annualised_pct": 32.81307172385991,
+      "mean_daily_pct": 0.1403073005576923,
+      "annualised_SD_pct": 6.2025992237884235,
+      "VaR95_loss_pct": 0.39153789769999997,
+      "ES95_loss_pct": 0.5228530288923077,
+      "beta": 0.10683993823228424,
+      "alpha_annualised_pct": 33.19494481641755,
+      "MES5_loss_pct": null,
+      "market_tail_days": 3,
+      "delta_CoVaR_proxy_pct": null,
+      "asset_tail_days": 3,
+      "zero_return_fraction": 0.0
+    },
+    "stochA|SALE": {
+      "model": "stochA",
+      "policy": "SALE",
+      "allocation_regime": "FULL",
+      "netSD": {
+        "netSD": 0.5555555555555556,
+        "OUT": 127,
+        "IN": 2,
+        "D": 225,
+        "expected_return": 0.0010548104577499998,
+        "scenarios": 52,
+        "probability_mass": 1.0,
+        "OUT_by_order": [
+          0,
+          63,
+          64
+        ],
+        "IN_by_order": [
+          0,
+          1,
+          1
+        ]
+      },
+      "narrow_same_window_netSD": {
+        "netSD": 0.6546762589928058,
+        "OUT": 93,
+        "IN": 2,
+        "D": 139,
+        "expected_return": 0.0010548104577499998,
+        "scenarios": 52,
+        "probability_mass": 1.0,
+        "OUT_by_order": [
+          0,
+          46,
+          47
+        ],
+        "IN_by_order": [
+          0,
+          1,
+          1
+        ]
+      },
+      "delta_netSD": -0.09912070343725021,
+      "cash_inclusive_netSD": {
+        "netSD": 0.5422222222222223,
+        "OUT": 122,
+        "IN": 0,
+        "D": 225,
+        "expected_return": 0.0008927672665192307,
+        "scenarios": 52,
+        "probability_mass": 1.0,
+        "OUT_by_order": [
+          0,
+          61,
+          61
+        ],
+        "IN_by_order": [
+          0,
+          0,
+          0
+        ]
+      },
+      "cash_EUR": 2304.3456299414356,
+      "invested_EUR": 12695.654370058564,
+      "account_wealth_EUR": 15000.0,
+      "mean_daily_pct": 0.08927672665192307,
+      "annualised_SD_pct": 7.130814835799179,
+      "VaR95_loss_pct": 0.39347995139999997,
+      "ES95_loss_pct": 0.6870949010153846,
+      "beta": 0.1019660072160759,
+      "alpha_annualised_pct": 20.433891045556667,
+      "MES5_loss_pct": null,
+      "market_tail_days": 3,
+      "delta_CoVaR_proxy_pct": null,
+      "asset_tail_days": 3,
+      "zero_return_fraction": 0.0
+    },
+    "stochA|NO_SALE": {
+      "model": "stochA",
+      "policy": "NO_SALE",
+      "allocation_regime": "FULL",
+      "netSD": {
+        "netSD": 0.6133333333333333,
+        "OUT": 140,
+        "IN": 2,
+        "D": 225,
+        "expected_return": 0.001614796896230769,
+        "scenarios": 52,
+        "probability_mass": 1.0,
+        "OUT_by_order": [
+          0,
+          69,
+          71
+        ],
+        "IN_by_order": [
+          0,
+          1,
+          1
+        ]
+      },
+      "narrow_same_window_netSD": {
+        "netSD": 0.7194244604316546,
+        "OUT": 102,
+        "IN": 2,
+        "D": 139,
+        "expected_return": 0.001614796896230769,
+        "scenarios": 52,
+        "probability_mass": 1.0,
+        "OUT_by_order": [
+          0,
+          50,
+          52
+        ],
+        "IN_by_order": [
+          0,
+          1,
+          1
+        ]
+      },
+      "delta_netSD": -0.10609112709832136,
+      "cash_inclusive_netSD": {
+        "netSD": 0.6,
+        "OUT": 137,
+        "IN": 2,
+        "D": 225,
+        "expected_return": 0.0013996492966538462,
+        "scenarios": 52,
+        "probability_mass": 1.0,
+        "OUT_by_order": [
+          0,
+          68,
+          69
+        ],
+        "IN_by_order": [
+          0,
+          1,
+          1
+        ]
+      },
+      "cash_EUR": 1998.526254822611,
+      "invested_EUR": 13001.473745177387,
+      "account_wealth_EUR": 14999.999999999998,
+      "mean_daily_pct": 0.13996492966538462,
+      "annualised_SD_pct": 8.297982738404698,
+      "VaR95_loss_pct": 0.5514891274,
+      "ES95_loss_pct": 0.6927182411307692,
+      "beta": 0.21950162133866852,
+      "alpha_annualised_pct": 30.82833733741102,
+      "MES5_loss_pct": null,
+      "market_tail_days": 3,
+      "delta_CoVaR_proxy_pct": null,
+      "asset_tail_days": 3,
+      "zero_return_fraction": 0.0
+    },
+    "stoch2A|SALE": {
+      "model": "stoch2A",
+      "policy": "SALE",
+      "allocation_regime": "FULL",
+      "netSD": {
+        "netSD": 0.7733333333333333,
+        "OUT": 174,
+        "IN": 0,
+        "D": 225,
+        "expected_return": 0.002728136630961538,
+        "scenarios": 52,
+        "probability_mass": 1.0,
+        "OUT_by_order": [
+          2,
+          86,
+          86
+        ],
+        "IN_by_order": [
+          0,
+          0,
+          0
+        ]
+      },
+      "narrow_same_window_netSD": {
+        "netSD": 0.8776978417266187,
+        "OUT": 122,
+        "IN": 0,
+        "D": 139,
+        "expected_return": 0.002728136630961538,
+        "scenarios": 52,
+        "probability_mass": 1.0,
+        "OUT_by_order": [
+          2,
+          60,
+          60
+        ],
+        "IN_by_order": [
+          0,
+          0,
+          0
+        ]
+      },
+      "delta_netSD": -0.10436450839328537,
+      "cash_inclusive_netSD": {
+        "netSD": 0.6133333333333333,
+        "OUT": 138,
+        "IN": 0,
+        "D": 225,
+        "expected_return": 0.0014663928680961537,
+        "scenarios": 52,
+        "probability_mass": 1.0,
+        "OUT_by_order": [
+          0,
+          69,
+          69
+        ],
+        "IN_by_order": [
+          0,
+          0,
+          0
+        ]
+      },
+      "cash_EUR": 6937.393174581435,
+      "invested_EUR": 8062.606825418565,
+      "account_wealth_EUR": 15000.0,
+      "mean_daily_pct": 0.14663928680961535,
+      "annualised_SD_pct": 6.025416945905187,
+      "VaR95_loss_pct": 0.2872004643,
+      "ES95_loss_pct": 0.3398464741076923,
+      "beta": 0.11773691412836157,
+      "alpha_annualised_pct": 34.57004499354345,
       "MES5_loss_pct": null,
       "market_tail_days": 3,
       "delta_CoVaR_proxy_pct": null,
@@ -4504,13 +4504,13 @@
         "OUT": 145,
         "IN": 0,
         "D": 225,
-        "expected_return": 0.0017042794063269228,
+        "expected_return": 0.001771745379480769,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
-          3,
-          71,
-          71
+          1,
+          72,
+          72
         ],
         "IN_by_order": [
           0,
@@ -4519,15 +4519,15 @@
         ]
       },
       "narrow_same_window_netSD": {
-        "netSD": 0.7697841726618705,
-        "OUT": 107,
+        "netSD": 0.7553956834532374,
+        "OUT": 105,
         "IN": 0,
         "D": 139,
-        "expected_return": 0.0017042794063269228,
+        "expected_return": 0.001771745379480769,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
-          3,
+          1,
           52,
           52
         ],
@@ -4537,19 +4537,19 @@
           0
         ]
       },
-      "delta_netSD": -0.125339728217426,
+      "delta_netSD": -0.11095123900879289,
       "cash_inclusive_netSD": {
-        "netSD": 0.6088888888888889,
-        "OUT": 137,
+        "netSD": 0.6133333333333333,
+        "OUT": 138,
         "IN": 0,
         "D": 225,
-        "expected_return": 0.00133531079025,
+        "expected_return": 0.0014030730055769232,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
-          1,
-          68,
-          68
+          0,
+          69,
+          69
         ],
         "IN_by_order": [
           0,
@@ -4557,15 +4557,15 @@
           0
         ]
       },
-      "cash_EUR": 3247.4306856794974,
-      "invested_EUR": 11752.569314320503,
+      "cash_EUR": 3121.2643039355535,
+      "invested_EUR": 11878.735696064447,
       "account_wealth_EUR": 15000.0,
-      "mean_daily_pct": 0.133531079025,
-      "annualised_SD_pct": 5.838074399396558,
-      "VaR95_loss_pct": 0.37557010949999997,
-      "ES95_loss_pct": 0.508165507653846,
-      "beta": 0.09003403644077099,
-      "alpha_annualised_pct": 31.82749702696616,
+      "mean_daily_pct": 0.1403073005576923,
+      "annualised_SD_pct": 6.2025992237884235,
+      "VaR95_loss_pct": 0.39153789769999997,
+      "ES95_loss_pct": 0.5228530288923077,
+      "beta": 0.10683993823228424,
+      "alpha_annualised_pct": 33.19494481641755,
       "MES5_loss_pct": null,
       "market_tail_days": 3,
       "delta_CoVaR_proxy_pct": null,
@@ -4581,13 +4581,90 @@
         "OUT": 145,
         "IN": 0,
         "D": 225,
-        "expected_return": 0.0017042794063269228,
+        "expected_return": 0.0017778545224038458,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
-          3,
-          71,
-          71
+          1,
+          72,
+          72
+        ],
+        "IN_by_order": [
+          0,
+          0,
+          0
+        ]
+      },
+      "narrow_same_window_netSD": {
+        "netSD": 0.7553956834532374,
+        "OUT": 105,
+        "IN": 0,
+        "D": 139,
+        "expected_return": 0.0017778545224038458,
+        "scenarios": 52,
+        "probability_mass": 1.0,
+        "OUT_by_order": [
+          1,
+          52,
+          52
+        ],
+        "IN_by_order": [
+          0,
+          0,
+          0
+        ]
+      },
+      "delta_netSD": -0.11095123900879289,
+      "cash_inclusive_netSD": {
+        "netSD": 0.6222222222222222,
+        "OUT": 140,
+        "IN": 0,
+        "D": 225,
+        "expected_return": 0.0014036468790192306,
+        "scenarios": 52,
+        "probability_mass": 1.0,
+        "OUT_by_order": [
+          2,
+          69,
+          69
+        ],
+        "IN_by_order": [
+          0,
+          0,
+          0
+        ]
+      },
+      "cash_EUR": 3157.2406967144943,
+      "invested_EUR": 11842.759303285506,
+      "account_wealth_EUR": 15000.0,
+      "mean_daily_pct": 0.14036468790192314,
+      "annualised_SD_pct": 6.138901176006241,
+      "VaR95_loss_pct": 0.3930039168,
+      "ES95_loss_pct": 0.5198718127615384,
+      "beta": 0.1015887153515286,
+      "alpha_annualised_pct": 33.315693860617415,
+      "MES5_loss_pct": null,
+      "market_tail_days": 3,
+      "delta_CoVaR_proxy_pct": null,
+      "asset_tail_days": 3,
+      "zero_return_fraction": 0.0
+    },
+    "MARKOWITZ|SALE": {
+      "model": "MARKOWITZ",
+      "policy": "SALE",
+      "allocation_regime": "FULL",
+      "netSD": {
+        "netSD": 0.7333333333333333,
+        "OUT": 165,
+        "IN": 0,
+        "D": 225,
+        "expected_return": 0.0033208742154807688,
+        "scenarios": 52,
+        "probability_mass": 1.0,
+        "OUT_by_order": [
+          1,
+          81,
+          83
         ],
         "IN_by_order": [
           0,
@@ -4600,88 +4677,11 @@
         "OUT": 107,
         "IN": 0,
         "D": 139,
-        "expected_return": 0.0017042794063269228,
-        "scenarios": 52,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          3,
-          52,
-          52
-        ],
-        "IN_by_order": [
-          0,
-          0,
-          0
-        ]
-      },
-      "delta_netSD": -0.125339728217426,
-      "cash_inclusive_netSD": {
-        "netSD": 0.6088888888888889,
-        "OUT": 137,
-        "IN": 0,
-        "D": 225,
-        "expected_return": 0.00133531079025,
+        "expected_return": 0.0033208742154807688,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
           1,
-          68,
-          68
-        ],
-        "IN_by_order": [
-          0,
-          0,
-          0
-        ]
-      },
-      "cash_EUR": 3247.4306856794974,
-      "invested_EUR": 11752.569314320503,
-      "account_wealth_EUR": 15000.0,
-      "mean_daily_pct": 0.133531079025,
-      "annualised_SD_pct": 5.838074399396558,
-      "VaR95_loss_pct": 0.37557010949999997,
-      "ES95_loss_pct": 0.508165507653846,
-      "beta": 0.09003403644077099,
-      "alpha_annualised_pct": 31.82749702696616,
-      "MES5_loss_pct": null,
-      "market_tail_days": 3,
-      "delta_CoVaR_proxy_pct": null,
-      "asset_tail_days": 3,
-      "zero_return_fraction": 0.0
-    },
-    "MARKOWITZ|SALE": {
-      "model": "MARKOWITZ",
-      "policy": "SALE",
-      "allocation_regime": "FULL",
-      "netSD": {
-        "netSD": 0.7377777777777778,
-        "OUT": 166,
-        "IN": 0,
-        "D": 225,
-        "expected_return": 0.003306530187461538,
-        "scenarios": 52,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          2,
-          81,
-          83
-        ],
-        "IN_by_order": [
-          0,
-          0,
-          0
-        ]
-      },
-      "narrow_same_window_netSD": {
-        "netSD": 0.7769784172661871,
-        "OUT": 108,
-        "IN": 0,
-        "D": 139,
-        "expected_return": 0.003306530187461538,
-        "scenarios": 52,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          2,
           52,
           54
         ],
@@ -4691,19 +4691,19 @@
           0
         ]
       },
-      "delta_netSD": -0.03920063948840935,
+      "delta_netSD": -0.03645083932853721,
       "cash_inclusive_netSD": {
-        "netSD": 0.5422222222222223,
-        "OUT": 122,
+        "netSD": 0.5511111111111111,
+        "OUT": 124,
         "IN": 0,
         "D": 225,
-        "expected_return": 0.0008900851352500001,
+        "expected_return": 0.0009924820132692308,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
           0,
-          61,
-          61
+          62,
+          62
         ],
         "IN_by_order": [
           0,
@@ -4711,15 +4711,15 @@
           0
         ]
       },
-      "cash_EUR": 10962.148756424756,
-      "invested_EUR": 4037.8512435752436,
+      "cash_EUR": 10517.074953091264,
+      "invested_EUR": 4482.9250469087365,
       "account_wealth_EUR": 15000.0,
-      "mean_daily_pct": 0.089008513525,
-      "annualised_SD_pct": 4.18622928963556,
-      "VaR95_loss_pct": 0.19580096219999998,
-      "ES95_loss_pct": 0.2703592167769231,
-      "beta": 0.11062736200855677,
-      "alpha_annualised_pct": 20.190991092314995,
+      "mean_daily_pct": 0.09924820132692308,
+      "annualised_SD_pct": 4.639258413155497,
+      "VaR95_loss_pct": 0.21683806,
+      "ES95_loss_pct": 0.2976742793076923,
+      "beta": 0.12223357513418773,
+      "alpha_annualised_pct": 22.53647673623331,
       "MES5_loss_pct": null,
       "market_tail_days": 3,
       "delta_CoVaR_proxy_pct": null,
@@ -4731,15 +4731,15 @@
       "policy": "NO_SALE",
       "allocation_regime": "FULL",
       "netSD": {
-        "netSD": 0.64,
-        "OUT": 144,
+        "netSD": 0.6355555555555555,
+        "OUT": 143,
         "IN": 0,
         "D": 225,
-        "expected_return": 0.001626773764,
+        "expected_return": 0.0016878959955192304,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
-          2,
+          1,
           71,
           71
         ],
@@ -4750,15 +4750,15 @@
         ]
       },
       "narrow_same_window_netSD": {
-        "netSD": 0.762589928057554,
-        "OUT": 106,
+        "netSD": 0.7553956834532374,
+        "OUT": 105,
         "IN": 0,
         "D": 139,
-        "expected_return": 0.001626773764,
+        "expected_return": 0.0016878959955192304,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
-          2,
+          1,
           52,
           52
         ],
@@ -4768,19 +4768,19 @@
           0
         ]
       },
-      "delta_netSD": -0.12258992805755398,
+      "delta_netSD": -0.11984012789768184,
       "cash_inclusive_netSD": {
-        "netSD": 0.6088888888888889,
-        "OUT": 137,
+        "netSD": 0.6133333333333333,
+        "OUT": 138,
         "IN": 0,
         "D": 225,
-        "expected_return": 0.001355923148826923,
+        "expected_return": 0.001423360133480769,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
-          1,
-          68,
-          68
+          0,
+          69,
+          69
         ],
         "IN_by_order": [
           0,
@@ -4788,15 +4788,15 @@
           0
         ]
       },
-      "cash_EUR": 2497.433457679497,
-      "invested_EUR": 12502.566542320503,
-      "account_wealth_EUR": 15000.0,
-      "mean_daily_pct": 0.1355923148826923,
-      "annualised_SD_pct": 5.8167059332449025,
-      "VaR95_loss_pct": 0.37123750720000004,
-      "ES95_loss_pct": 0.5037141752384615,
-      "beta": 0.09063687664545048,
-      "alpha_annualised_pct": 32.334726669428534,
+      "cash_EUR": 2350.8782177986595,
+      "invested_EUR": 12649.121782201342,
+      "account_wealth_EUR": 15000.000000000002,
+      "mean_daily_pct": 0.1423360133480769,
+      "annualised_SD_pct": 6.219519148800569,
+      "VaR95_loss_pct": 0.3863744602,
+      "ES95_loss_pct": 0.5200912375846153,
+      "beta": 0.11041879770877013,
+      "alpha_annualised_pct": 33.6337424956936,
       "MES5_loss_pct": null,
       "market_tail_days": 3,
       "delta_CoVaR_proxy_pct": null,
@@ -4808,17 +4808,17 @@
       "policy": "SALE",
       "allocation_regime": "FULL",
       "netSD": {
-        "netSD": 0.6828193832599119,
-        "OUT": 157,
+        "netSD": 0.6651982378854625,
+        "OUT": 153,
         "IN": 2,
         "D": 227,
-        "expected_return": 0.0035470382015576913,
+        "expected_return": 0.0035375634542692304,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
           1,
-          74,
-          82
+          73,
+          79
         ],
         "IN_by_order": [
           0,
@@ -4827,17 +4827,17 @@
         ]
       },
       "narrow_same_window_netSD": {
-        "netSD": 0.6666666666666666,
-        "OUT": 96,
+        "netSD": 0.6595744680851063,
+        "OUT": 95,
         "IN": 2,
         "D": 141,
-        "expected_return": 0.0035470382015576913,
+        "expected_return": 0.0035375634542692304,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
           1,
           45,
-          50
+          49
         ],
         "IN_by_order": [
           0,
@@ -4845,19 +4845,19 @@
           1
         ]
       },
-      "delta_netSD": 0.016152716593245242,
+      "delta_netSD": 0.005623769800356171,
       "cash_inclusive_netSD": {
-        "netSD": 0.5422222222222223,
-        "OUT": 122,
+        "netSD": 0.5511111111111111,
+        "OUT": 124,
         "IN": 0,
         "D": 225,
-        "expected_return": 0.0008785632524615384,
+        "expected_return": 0.0009707449611153847,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
           0,
-          61,
-          61
+          62,
+          62
         ],
         "IN_by_order": [
           0,
@@ -4865,15 +4865,15 @@
           0
         ]
       },
-      "cash_EUR": 11284.661162903005,
-      "invested_EUR": 3715.338837096994,
+      "cash_EUR": 10883.84078354466,
+      "invested_EUR": 4116.159216455341,
       "account_wealth_EUR": 15000.0,
-      "mean_daily_pct": 0.08785632524615385,
-      "annualised_SD_pct": 4.8954545914325935,
-      "VaR95_loss_pct": 0.2891430875,
-      "ES95_loss_pct": 0.34952454299999997,
-      "beta": 0.14054897467532046,
-      "alpha_annualised_pct": 19.295010921582165,
+      "mean_daily_pct": 0.09707449611153848,
+      "annualised_SD_pct": 5.444703592453144,
+      "VaR95_loss_pct": 0.3269981962,
+      "ES95_loss_pct": 0.3911424765076923,
+      "beta": 0.1564963388671908,
+      "alpha_annualised_pct": 21.29520718243349,
       "MES5_loss_pct": null,
       "market_tail_days": 3,
       "delta_CoVaR_proxy_pct": null,
@@ -4889,13 +4889,13 @@
         "OUT": 145,
         "IN": 0,
         "D": 225,
-        "expected_return": 0.0017042794063269228,
+        "expected_return": 0.0017778545224038458,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
-          3,
-          71,
-          71
+          1,
+          72,
+          72
         ],
         "IN_by_order": [
           0,
@@ -4904,15 +4904,15 @@
         ]
       },
       "narrow_same_window_netSD": {
-        "netSD": 0.7697841726618705,
-        "OUT": 107,
+        "netSD": 0.7553956834532374,
+        "OUT": 105,
         "IN": 0,
         "D": 139,
-        "expected_return": 0.0017042794063269228,
+        "expected_return": 0.0017778545224038458,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
-          3,
+          1,
           52,
           52
         ],
@@ -4922,19 +4922,19 @@
           0
         ]
       },
-      "delta_netSD": -0.125339728217426,
+      "delta_netSD": -0.11095123900879289,
       "cash_inclusive_netSD": {
-        "netSD": 0.6088888888888889,
-        "OUT": 137,
+        "netSD": 0.6222222222222222,
+        "OUT": 140,
         "IN": 0,
         "D": 225,
-        "expected_return": 0.00133531079025,
+        "expected_return": 0.0014036468790192306,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
-          1,
-          68,
-          68
+          2,
+          69,
+          69
         ],
         "IN_by_order": [
           0,
@@ -4942,15 +4942,15 @@
           0
         ]
       },
-      "cash_EUR": 3247.4306856794974,
-      "invested_EUR": 11752.569314320503,
+      "cash_EUR": 3157.2406967144943,
+      "invested_EUR": 11842.759303285506,
       "account_wealth_EUR": 15000.0,
-      "mean_daily_pct": 0.133531079025,
-      "annualised_SD_pct": 5.838074399396558,
-      "VaR95_loss_pct": 0.37557010949999997,
-      "ES95_loss_pct": 0.508165507653846,
-      "beta": 0.09003403644077099,
-      "alpha_annualised_pct": 31.82749702696616,
+      "mean_daily_pct": 0.14036468790192314,
+      "annualised_SD_pct": 6.138901176006241,
+      "VaR95_loss_pct": 0.3930039168,
+      "ES95_loss_pct": 0.5198718127615384,
+      "beta": 0.1015887153515286,
+      "alpha_annualised_pct": 33.315693860617415,
       "MES5_loss_pct": null,
       "market_tail_days": 3,
       "delta_CoVaR_proxy_pct": null,
@@ -4962,16 +4962,16 @@
       "policy": "SALE",
       "allocation_regime": "FULL",
       "netSD": {
-        "netSD": 0.7577092511013216,
-        "OUT": 174,
+        "netSD": 0.762114537444934,
+        "OUT": 175,
         "IN": 2,
         "D": 227,
-        "expected_return": 0.004677220933826922,
+        "expected_return": 0.004716379271461538,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
           3,
-          82,
+          83,
           89
         ],
         "IN_by_order": [
@@ -4985,7 +4985,7 @@
         "OUT": 105,
         "IN": 2,
         "D": 141,
-        "expected_return": 0.004677220933826922,
+        "expected_return": 0.004716379271461538,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
@@ -4999,19 +4999,19 @@
           1
         ]
       },
-      "delta_netSD": 0.027212797200612315,
+      "delta_netSD": 0.031618083544224684,
       "cash_inclusive_netSD": {
-        "netSD": 0.5511111111111111,
-        "OUT": 124,
+        "netSD": 0.5688888888888889,
+        "OUT": 128,
         "IN": 0,
         "D": 225,
-        "expected_return": 0.0010152147090384616,
+        "expected_return": 0.0011334651390769229,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
           0,
-          62,
-          62
+          64,
+          64
         ],
         "IN_by_order": [
           0,
@@ -5019,15 +5019,15 @@
           0
         ]
       },
-      "cash_EUR": 11744.173334736903,
-      "invested_EUR": 3255.8266652630978,
+      "cash_EUR": 11395.120895005311,
+      "invested_EUR": 3604.8791049946885,
       "account_wealth_EUR": 15000.0,
-      "mean_daily_pct": 0.10152147090384615,
-      "annualised_SD_pct": 4.9694001134765085,
-      "VaR95_loss_pct": 0.2580931835,
-      "ES95_loss_pct": 0.3229685103846154,
-      "beta": 0.13162765146839794,
-      "alpha_annualised_pct": 22.91919976607896,
+      "mean_daily_pct": 0.11334651390769229,
+      "annualised_SD_pct": 5.505885609205042,
+      "VaR95_loss_pct": 0.2839724315,
+      "ES95_loss_pct": 0.3543027843461538,
+      "beta": 0.14520858783037754,
+      "alpha_annualised_pct": 25.624225513881072,
       "MES5_loss_pct": null,
       "market_tail_days": 3,
       "delta_CoVaR_proxy_pct": null,
@@ -5043,7 +5043,7 @@
         "OUT": 140,
         "IN": 2,
         "D": 225,
-        "expected_return": 0.0016308859243461535,
+        "expected_return": 0.0016229441450961537,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
@@ -5062,7 +5062,7 @@
         "OUT": 102,
         "IN": 2,
         "D": 139,
-        "expected_return": 0.0016308859243461535,
+        "expected_return": 0.0016229441450961537,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
@@ -5078,16 +5078,16 @@
       },
       "delta_netSD": -0.10609112709832136,
       "cash_inclusive_netSD": {
-        "netSD": 0.6044444444444445,
-        "OUT": 138,
+        "netSD": 0.6,
+        "OUT": 137,
         "IN": 2,
         "D": 225,
-        "expected_return": 0.0013774715909423074,
+        "expected_return": 0.0014064895305576923,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
           0,
-          69,
+          68,
           69
         ],
         "IN_by_order": [
@@ -5096,15 +5096,15 @@
           1
         ]
       },
-      "cash_EUR": 2330.7669432863895,
-      "invested_EUR": 12669.23305671361,
+      "cash_EUR": 2000.5736041598102,
+      "invested_EUR": 12999.42639584019,
       "account_wealth_EUR": 15000.0,
-      "mean_daily_pct": 0.13774715909423077,
-      "annualised_SD_pct": 7.866394650093785,
-      "VaR95_loss_pct": 0.5159479801,
-      "ES95_loss_pct": 0.6658990703692308,
-      "beta": 0.20335595879408117,
-      "alpha_annualised_pct": 30.596255610656492,
+      "mean_daily_pct": 0.14064895305576924,
+      "annualised_SD_pct": 8.314269894316828,
+      "VaR95_loss_pct": 0.5640516269,
+      "ES95_loss_pct": 0.7028929012846153,
+      "beta": 0.2211770159068242,
+      "alpha_annualised_pct": 30.966800389929734,
       "MES5_loss_pct": null,
       "market_tail_days": 3,
       "delta_CoVaR_proxy_pct": null,
@@ -5116,17 +5116,17 @@
       "policy": "SALE",
       "allocation_regime": "FULL",
       "netSD": {
-        "netSD": 0.9288888888888889,
-        "OUT": 209,
+        "netSD": 0.7155555555555555,
+        "OUT": 161,
         "IN": 0,
         "D": 225,
-        "expected_return": 0.004263777043384616,
+        "expected_return": 0.002947435012192307,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
-          6,
-          101,
-          102
+          2,
+          78,
+          81
         ],
         "IN_by_order": [
           0,
@@ -5135,17 +5135,17 @@
         ]
       },
       "narrow_same_window_netSD": {
-        "netSD": 0.9424460431654677,
-        "OUT": 131,
+        "netSD": 0.7697841726618705,
+        "OUT": 107,
         "IN": 0,
         "D": 139,
-        "expected_return": 0.004263777043384616,
+        "expected_return": 0.002947435012192307,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
-          6,
-          62,
-          63
+          2,
+          51,
+          54
         ],
         "IN_by_order": [
           0,
@@ -5153,19 +5153,19 @@
           0
         ]
       },
-      "delta_netSD": -0.013557154276578776,
+      "delta_netSD": -0.05422861710631499,
       "cash_inclusive_netSD": {
-        "netSD": 0.6266666666666667,
-        "OUT": 141,
+        "netSD": 0.6044444444444445,
+        "OUT": 136,
         "IN": 0,
         "D": 225,
-        "expected_return": 0.0015426792912115383,
+        "expected_return": 0.0013264633041538462,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
           0,
-          70,
-          71
+          68,
+          68
         ],
         "IN_by_order": [
           0,
@@ -5173,15 +5173,15 @@
           0
         ]
       },
-      "cash_EUR": 9572.84254464,
-      "invested_EUR": 5427.157455359999,
+      "cash_EUR": 8249.40177485967,
+      "invested_EUR": 6750.598225140328,
       "account_wealth_EUR": 15000.0,
-      "mean_daily_pct": 0.15426792912115384,
-      "annualised_SD_pct": 5.611969743142168,
-      "VaR95_loss_pct": 0.20704281449999998,
-      "ES95_loss_pct": 0.2733067412307692,
-      "beta": 0.08377343958129913,
-      "alpha_annualised_pct": 37.179900929572405,
+      "mean_daily_pct": 0.13264633041538465,
+      "annualised_SD_pct": 6.9439935988061015,
+      "VaR95_loss_pct": 0.49049552890000003,
+      "ES95_loss_pct": 0.511016081476923,
+      "beta": 0.17931051893409275,
+      "alpha_annualised_pct": 29.797538768867426,
       "MES5_loss_pct": null,
       "market_tail_days": 3,
       "delta_CoVaR_proxy_pct": null,
@@ -5197,7 +5197,7 @@
         "OUT": 140,
         "IN": 2,
         "D": 225,
-        "expected_return": 0.0016308859243461535,
+        "expected_return": 0.0016229441450961537,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
@@ -5216,7 +5216,7 @@
         "OUT": 102,
         "IN": 2,
         "D": 139,
-        "expected_return": 0.0016308859243461535,
+        "expected_return": 0.0016229441450961537,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
@@ -5232,16 +5232,16 @@
       },
       "delta_netSD": -0.10609112709832136,
       "cash_inclusive_netSD": {
-        "netSD": 0.6044444444444445,
-        "OUT": 138,
+        "netSD": 0.6,
+        "OUT": 137,
         "IN": 2,
         "D": 225,
-        "expected_return": 0.0013774715909423074,
+        "expected_return": 0.0014064895305576923,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
           0,
-          69,
+          68,
           69
         ],
         "IN_by_order": [
@@ -5250,15 +5250,15 @@
           1
         ]
       },
-      "cash_EUR": 2330.7669432863895,
-      "invested_EUR": 12669.23305671361,
+      "cash_EUR": 2000.5736041598102,
+      "invested_EUR": 12999.42639584019,
       "account_wealth_EUR": 15000.0,
-      "mean_daily_pct": 0.13774715909423077,
-      "annualised_SD_pct": 7.866394650093785,
-      "VaR95_loss_pct": 0.5159479801,
-      "ES95_loss_pct": 0.6658990703692308,
-      "beta": 0.20335595879408117,
-      "alpha_annualised_pct": 30.596255610656492,
+      "mean_daily_pct": 0.14064895305576924,
+      "annualised_SD_pct": 8.314269894316828,
+      "VaR95_loss_pct": 0.5640516269,
+      "ES95_loss_pct": 0.7028929012846153,
+      "beta": 0.2211770159068242,
+      "alpha_annualised_pct": 30.966800389929734,
       "MES5_loss_pct": null,
       "market_tail_days": 3,
       "delta_CoVaR_proxy_pct": null,
@@ -5270,17 +5270,17 @@
       "policy": "SALE",
       "allocation_regime": "FULL",
       "netSD": {
-        "netSD": 0.9244444444444444,
-        "OUT": 208,
+        "netSD": 0.7155555555555555,
+        "OUT": 161,
         "IN": 0,
         "D": 225,
-        "expected_return": 0.004135155633365384,
+        "expected_return": 0.002947435012192307,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
-          6,
-          101,
-          101
+          2,
+          78,
+          81
         ],
         "IN_by_order": [
           0,
@@ -5289,17 +5289,17 @@
         ]
       },
       "narrow_same_window_netSD": {
-        "netSD": 0.935251798561151,
-        "OUT": 130,
+        "netSD": 0.7697841726618705,
+        "OUT": 107,
         "IN": 0,
         "D": 139,
-        "expected_return": 0.004135155633365384,
+        "expected_return": 0.002947435012192307,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
-          6,
-          62,
-          62
+          2,
+          51,
+          54
         ],
         "IN_by_order": [
           0,
@@ -5307,19 +5307,19 @@
           0
         ]
       },
-      "delta_netSD": -0.010807354116706636,
+      "delta_netSD": -0.05422861710631499,
       "cash_inclusive_netSD": {
-        "netSD": 0.6355555555555555,
-        "OUT": 143,
+        "netSD": 0.6044444444444445,
+        "OUT": 136,
         "IN": 0,
         "D": 225,
-        "expected_return": 0.001539013708076923,
+        "expected_return": 0.0013264633041538462,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
           0,
-          71,
-          72
+          68,
+          68
         ],
         "IN_by_order": [
           0,
@@ -5327,15 +5327,15 @@
           0
         ]
       },
-      "cash_EUR": 9417.3308896,
-      "invested_EUR": 5582.6691104,
+      "cash_EUR": 8249.40177485967,
+      "invested_EUR": 6750.598225140328,
       "account_wealth_EUR": 15000.0,
-      "mean_daily_pct": 0.15390137080769228,
-      "annualised_SD_pct": 5.422882706197303,
-      "VaR95_loss_pct": 0.193849999,
-      "ES95_loss_pct": 0.2609719862692308,
-      "beta": 0.07686874552153782,
-      "alpha_annualised_pct": 37.227282769297055,
+      "mean_daily_pct": 0.13264633041538465,
+      "annualised_SD_pct": 6.9439935988061015,
+      "VaR95_loss_pct": 0.49049552890000003,
+      "ES95_loss_pct": 0.511016081476923,
+      "beta": 0.17931051893409275,
+      "alpha_annualised_pct": 29.797538768867426,
       "MES5_loss_pct": null,
       "market_tail_days": 3,
       "delta_CoVaR_proxy_pct": null,
@@ -5347,16 +5347,16 @@
       "policy": "NO_INITIAL_SALES",
       "allocation_regime": "FULL",
       "netSD": {
-        "netSD": 0.6177777777777778,
-        "OUT": 141,
+        "netSD": 0.6133333333333333,
+        "OUT": 140,
         "IN": 2,
         "D": 225,
-        "expected_return": 0.0016389787197692305,
+        "expected_return": 0.0016194512956923075,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
           0,
-          70,
+          69,
           71
         ],
         "IN_by_order": [
@@ -5366,16 +5366,16 @@
         ]
       },
       "narrow_same_window_netSD": {
-        "netSD": 0.7266187050359713,
-        "OUT": 103,
+        "netSD": 0.7194244604316546,
+        "OUT": 102,
         "IN": 2,
         "D": 139,
-        "expected_return": 0.0016389787197692305,
+        "expected_return": 0.0016194512956923075,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
           0,
-          51,
+          50,
           52
         ],
         "IN_by_order": [
@@ -5384,35 +5384,35 @@
           1
         ]
       },
-      "delta_netSD": -0.1088409272581935,
+      "delta_netSD": -0.10609112709832136,
       "cash_inclusive_netSD": {
-        "netSD": 0.6088888888888889,
-        "OUT": 138,
-        "IN": 1,
+        "netSD": 0.6,
+        "OUT": 137,
+        "IN": 2,
         "D": 225,
-        "expected_return": 0.0013929045626538458,
+        "expected_return": 0.001406242090038461,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
           0,
-          69,
+          68,
           69
         ],
         "IN_by_order": [
           0,
-          0,
+          1,
           1
         ]
       },
-      "cash_EUR": 2252.080709059719,
-      "invested_EUR": 12747.919290940281,
+      "cash_EUR": 1974.8281979616568,
+      "invested_EUR": 13025.171802038343,
       "account_wealth_EUR": 15000.0,
-      "mean_daily_pct": 0.1392904562653846,
-      "annualised_SD_pct": 7.6646617508683885,
-      "VaR95_loss_pct": 0.45182454499999997,
-      "ES95_loss_pct": 0.6309356668076922,
-      "beta": 0.1928782415981836,
-      "alpha_annualised_pct": 31.197240845895184,
+      "mean_daily_pct": 0.14062420900384615,
+      "annualised_SD_pct": 8.139828945938511,
+      "VaR95_loss_pct": 0.52900772,
+      "ES95_loss_pct": 0.6784177505384615,
+      "beta": 0.2138435484763693,
+      "alpha_annualised_pct": 31.108998015604193,
       "MES5_loss_pct": null,
       "market_tail_days": 3,
       "delta_CoVaR_proxy_pct": null,
@@ -5428,13 +5428,13 @@
         "OUT": 145,
         "IN": 0,
         "D": 225,
-        "expected_return": 0.0017042794063269228,
+        "expected_return": 0.00176448687775,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
-          3,
-          71,
-          71
+          1,
+          72,
+          72
         ],
         "IN_by_order": [
           0,
@@ -5443,15 +5443,15 @@
         ]
       },
       "narrow_same_window_netSD": {
-        "netSD": 0.7697841726618705,
-        "OUT": 107,
+        "netSD": 0.7553956834532374,
+        "OUT": 105,
         "IN": 0,
         "D": 139,
-        "expected_return": 0.0017042794063269228,
+        "expected_return": 0.00176448687775,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
-          3,
+          1,
           52,
           52
         ],
@@ -5461,19 +5461,19 @@
           0
         ]
       },
-      "delta_netSD": -0.125339728217426,
+      "delta_netSD": -0.11095123900879289,
       "cash_inclusive_netSD": {
-        "netSD": 0.6088888888888889,
-        "OUT": 137,
+        "netSD": 0.6133333333333333,
+        "OUT": 138,
         "IN": 0,
         "D": 225,
-        "expected_return": 0.00133531079025,
+        "expected_return": 0.001414663453076923,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
-          1,
-          68,
-          68
+          0,
+          69,
+          69
         ],
         "IN_by_order": [
           0,
@@ -5481,15 +5481,15 @@
           0
         ]
       },
-      "cash_EUR": 3247.4306856794974,
-      "invested_EUR": 11752.569314320503,
+      "cash_EUR": 2973.8681745814356,
+      "invested_EUR": 12026.131825418564,
       "account_wealth_EUR": 15000.0,
-      "mean_daily_pct": 0.133531079025,
-      "annualised_SD_pct": 5.838074399396558,
-      "VaR95_loss_pct": 0.37557010949999997,
-      "ES95_loss_pct": 0.508165507653846,
-      "beta": 0.09003403644077099,
-      "alpha_annualised_pct": 31.82749702696616,
+      "mean_daily_pct": 0.1414663453076923,
+      "annualised_SD_pct": 6.223724508992558,
+      "VaR95_loss_pct": 0.3731581459,
+      "ES95_loss_pct": 0.5150999619,
+      "beta": 0.11012009662596668,
+      "alpha_annualised_pct": 33.420632012010415,
       "MES5_loss_pct": null,
       "market_tail_days": 3,
       "delta_CoVaR_proxy_pct": null,
@@ -5501,72 +5501,72 @@
       "policy": "NO_INITIAL_SALES",
       "allocation_regime": "FULL",
       "netSD": {
-        "netSD": 0.6711111111111111,
-        "OUT": 151,
-        "IN": 0,
+        "netSD": 0.6222222222222222,
+        "OUT": 141,
+        "IN": 1,
         "D": 225,
-        "expected_return": 0.0018732781443461534,
+        "expected_return": 0.0016642673437115385,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
-          3,
-          74,
-          74
-        ],
-        "IN_by_order": [
           0,
-          0,
-          0
-        ]
-      },
-      "narrow_same_window_netSD": {
-        "netSD": 0.7841726618705036,
-        "OUT": 109,
-        "IN": 0,
-        "D": 139,
-        "expected_return": 0.0018732781443461534,
-        "scenarios": 52,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          3,
-          53,
-          53
-        ],
-        "IN_by_order": [
-          0,
-          0,
-          0
-        ]
-      },
-      "delta_netSD": -0.1130615507593925,
-      "cash_inclusive_netSD": {
-        "netSD": 0.64,
-        "OUT": 144,
-        "IN": 0,
-        "D": 225,
-        "expected_return": 0.0016711326115961538,
-        "scenarios": 52,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          2,
-          71,
+          70,
           71
         ],
         "IN_by_order": [
           0,
           0,
-          0
+          1
         ]
       },
-      "cash_EUR": 1618.6507060011936,
-      "invested_EUR": 13381.349293998806,
+      "narrow_same_window_netSD": {
+        "netSD": 0.7338129496402878,
+        "OUT": 103,
+        "IN": 1,
+        "D": 139,
+        "expected_return": 0.0016642673437115385,
+        "scenarios": 52,
+        "probability_mass": 1.0,
+        "OUT_by_order": [
+          0,
+          51,
+          52
+        ],
+        "IN_by_order": [
+          0,
+          0,
+          1
+        ]
+      },
+      "delta_netSD": -0.11159072741806553,
+      "cash_inclusive_netSD": {
+        "netSD": 0.6222222222222222,
+        "OUT": 141,
+        "IN": 1,
+        "D": 225,
+        "expected_return": 0.001654433030923077,
+        "scenarios": 52,
+        "probability_mass": 1.0,
+        "OUT_by_order": [
+          0,
+          70,
+          71
+        ],
+        "IN_by_order": [
+          0,
+          0,
+          1
+        ]
+      },
+      "cash_EUR": 88.6364152858805,
+      "invested_EUR": 14911.36358471412,
       "account_wealth_EUR": 15000.0,
-      "mean_daily_pct": 0.16711326115961542,
-      "annualised_SD_pct": 6.749994252801043,
-      "VaR95_loss_pct": 0.40665710600000005,
-      "ES95_loss_pct": 0.4827559686538462,
-      "beta": 0.11437974473977663,
-      "alpha_annualised_pct": 39.797437353024975,
+      "mean_daily_pct": 0.1654433030923077,
+      "annualised_SD_pct": 8.058646425625769,
+      "VaR95_loss_pct": 0.4907359971,
+      "ES95_loss_pct": 0.8535880630615386,
+      "beta": 0.1158343155255537,
+      "alpha_annualised_pct": 39.3471666643583,
       "MES5_loss_pct": null,
       "market_tail_days": 3,
       "delta_CoVaR_proxy_pct": null,
@@ -5582,13 +5582,13 @@
         "OUT": 145,
         "IN": 0,
         "D": 225,
-        "expected_return": 0.0017042794063269228,
+        "expected_return": 0.00176448687775,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
-          3,
-          71,
-          71
+          1,
+          72,
+          72
         ],
         "IN_by_order": [
           0,
@@ -5597,15 +5597,15 @@
         ]
       },
       "narrow_same_window_netSD": {
-        "netSD": 0.7697841726618705,
-        "OUT": 107,
+        "netSD": 0.7553956834532374,
+        "OUT": 105,
         "IN": 0,
         "D": 139,
-        "expected_return": 0.0017042794063269228,
+        "expected_return": 0.00176448687775,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
-          3,
+          1,
           52,
           52
         ],
@@ -5615,19 +5615,19 @@
           0
         ]
       },
-      "delta_netSD": -0.125339728217426,
+      "delta_netSD": -0.11095123900879289,
       "cash_inclusive_netSD": {
-        "netSD": 0.6088888888888889,
-        "OUT": 137,
+        "netSD": 0.6133333333333333,
+        "OUT": 138,
         "IN": 0,
         "D": 225,
-        "expected_return": 0.00133531079025,
+        "expected_return": 0.001414663453076923,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
-          1,
-          68,
-          68
+          0,
+          69,
+          69
         ],
         "IN_by_order": [
           0,
@@ -5635,15 +5635,15 @@
           0
         ]
       },
-      "cash_EUR": 3247.4306856794974,
-      "invested_EUR": 11752.569314320503,
+      "cash_EUR": 2973.8681745814356,
+      "invested_EUR": 12026.131825418564,
       "account_wealth_EUR": 15000.0,
-      "mean_daily_pct": 0.133531079025,
-      "annualised_SD_pct": 5.838074399396558,
-      "VaR95_loss_pct": 0.37557010949999997,
-      "ES95_loss_pct": 0.508165507653846,
-      "beta": 0.09003403644077099,
-      "alpha_annualised_pct": 31.82749702696616,
+      "mean_daily_pct": 0.1414663453076923,
+      "annualised_SD_pct": 6.223724508992558,
+      "VaR95_loss_pct": 0.3731581459,
+      "ES95_loss_pct": 0.5150999619,
+      "beta": 0.11012009662596668,
+      "alpha_annualised_pct": 33.420632012010415,
       "MES5_loss_pct": null,
       "market_tail_days": 3,
       "delta_CoVaR_proxy_pct": null,
@@ -5655,17 +5655,17 @@
       "policy": "SALE",
       "allocation_regime": "R3",
       "netSD": {
-        "netSD": 0.96,
-        "OUT": 216,
+        "netSD": 0.9688888888888889,
+        "OUT": 218,
         "IN": 0,
         "D": 225,
-        "expected_return": 0.004239920484115384,
+        "expected_return": 0.0043295736290192306,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
           13,
-          101,
-          102
+          102,
+          103
         ],
         "IN_by_order": [
           0,
@@ -5674,17 +5674,17 @@
         ]
       },
       "narrow_same_window_netSD": {
-        "netSD": 0.9928057553956835,
-        "OUT": 138,
+        "netSD": 1.0,
+        "OUT": 140,
         "IN": 0,
-        "D": 139,
-        "expected_return": 0.004239920484115384,
+        "D": 140,
+        "expected_return": 0.0043295736290192306,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
           13,
-          62,
-          63
+          63,
+          64
         ],
         "IN_by_order": [
           0,
@@ -5692,19 +5692,19 @@
           0
         ]
       },
-      "delta_netSD": -0.032805755395683533,
+      "delta_netSD": -0.03111111111111109,
       "cash_inclusive_netSD": {
-        "netSD": 0.6533333333333333,
-        "OUT": 147,
+        "netSD": 0.6622222222222223,
+        "OUT": 149,
         "IN": 0,
         "D": 225,
-        "expected_return": 0.0017185669698653841,
+        "expected_return": 0.0017989234109615378,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
           2,
-          72,
-          73
+          73,
+          74
         ],
         "IN_by_order": [
           0,
@@ -5712,15 +5712,15 @@
           0
         ]
       },
-      "cash_EUR": 8920.05,
-      "invested_EUR": 6079.95,
+      "cash_EUR": 8767.55,
+      "invested_EUR": 6232.450000000001,
       "account_wealth_EUR": 15000.0,
-      "mean_daily_pct": 0.17185669698653847,
-      "annualised_SD_pct": 5.642036375734868,
-      "VaR95_loss_pct": 0.3117011117,
-      "ES95_loss_pct": 0.38260242008461537,
-      "beta": 0.08759783008722803,
-      "alpha_annualised_pct": 41.534862814294236,
+      "mean_daily_pct": 0.17989234109615385,
+      "annualised_SD_pct": 5.888479396795982,
+      "VaR95_loss_pct": 0.320901715,
+      "ES95_loss_pct": 0.3893084796538462,
+      "beta": 0.09122610342790882,
+      "alpha_annualised_pct": 43.486407024164315,
       "MES5_loss_pct": null,
       "market_tail_days": 3,
       "delta_CoVaR_proxy_pct": null,
@@ -5732,17 +5732,17 @@
       "policy": "NO_SALE",
       "allocation_regime": "R3",
       "netSD": {
-        "netSD": 0.6888888888888889,
-        "OUT": 155,
+        "netSD": 0.6977777777777778,
+        "OUT": 157,
         "IN": 0,
         "D": 225,
-        "expected_return": 0.0020465866959423072,
+        "expected_return": 0.002134091831230769,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
           1,
-          77,
-          77
+          78,
+          78
         ],
         "IN_by_order": [
           0,
@@ -5751,17 +5751,17 @@
         ]
       },
       "narrow_same_window_netSD": {
-        "netSD": 0.8129496402877698,
-        "OUT": 113,
+        "netSD": 0.8273381294964028,
+        "OUT": 115,
         "IN": 0,
         "D": 139,
-        "expected_return": 0.0020465866959423072,
+        "expected_return": 0.002134091831230769,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
           1,
-          56,
-          56
+          57,
+          57
         ],
         "IN_by_order": [
           0,
@@ -5769,19 +5769,19 @@
           0
         ]
       },
-      "delta_netSD": -0.12406075139888095,
+      "delta_netSD": -0.129560351718625,
       "cash_inclusive_netSD": {
-        "netSD": 0.64,
-        "OUT": 144,
+        "netSD": 0.6488888888888888,
+        "OUT": 146,
         "IN": 0,
         "D": 225,
-        "expected_return": 0.001739894670923077,
+        "expected_return": 0.0018101349065192305,
         "scenarios": 52,
         "probability_mass": 1.0,
         "OUT_by_order": [
-          1,
-          71,
-          72
+          0,
+          73,
+          73
         ],
         "IN_by_order": [
           0,
@@ -5789,15 +5789,15 @@
           0
         ]
       },
-      "cash_EUR": 2247.830685679495,
-      "invested_EUR": 12752.169314320501,
+      "cash_EUR": 2277.012544639998,
+      "invested_EUR": 12722.987455359998,
       "account_wealth_EUR": 14999.999999999996,
-      "mean_daily_pct": 0.17398946709230767,
-      "annualised_SD_pct": 7.044772115110607,
-      "VaR95_loss_pct": 0.41991559700000003,
-      "ES95_loss_pct": 0.500969051576923,
-      "beta": 0.11366485699143361,
-      "alpha_annualised_pct": 41.54471094125762,
+      "mean_daily_pct": 0.18101349065192307,
+      "annualised_SD_pct": 7.182981850643428,
+      "VaR95_loss_pct": 0.4648751201,
+      "ES95_loss_pct": 0.5080130492538462,
+      "beta": 0.10779566066511258,
+      "alpha_annualised_pct": 43.433560409936135,
       "MES5_loss_pct": null,
       "market_tail_days": 3,
       "delta_CoVaR_proxy_pct": null,
@@ -75441,8 +75441,8 @@
   "netSD_calibration": {
     "selected_backend": "CPU",
     "workers": 8,
-    "CPU_seconds": 0.002951200003735721,
-    "GPU_seconds": 0.4234491000097478,
+    "CPU_seconds": 0.00263499999709893,
+    "GPU_seconds": 0.43832560000009835,
     "GPU_error": null
   }
 }

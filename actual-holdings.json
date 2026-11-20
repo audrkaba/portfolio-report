@@ -1,11 +1,11 @@
 {
-  "confirmed_at": "2026-11-20T08:28:29.775159+00:00",
+  "confirmed_at": "2026-11-20T15:30:35.519505+00:00",
   "units": {
     "TKM1T": 288,
     "SAF1R": 100,
     "APG1L": 200,
     "KNE1L": 928,
-    "VLP1L": 117,
+    "VLP1L": 127,
     "RSU1L": 150,
     "MRK1T": 26,
     "GRG1L": 543,
@@ -14,8 +14,8 @@
     "ROE1L": 620,
     "TSM1T": 330,
     "SE0014261764": 11.2672,
-    "US:PFE": 5.491688,
-    "US:NVDA": 0.331988,
+    "US:PFE": 5.883,
+    "US:NVDA": 1.169741,
     "AKO1L": 100
   },
   "quantity_precision_overrides": {

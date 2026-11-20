@@ -1,0 +1,28 @@
+{
+  "model_run": "20261120_us2",
+  "input_hash": "887e18a0e00ea2ea65e383c860345de79fe780a5b5c810d38f91c5fa017ba3df",
+  "sales_policy": {
+    "version": "US_SALES_ALWAYS_V1",
+    "us_sales_always_allowed": true,
+    "non_US_sales_follow_selected_policy": true
+  },
+  "holdings": {
+    "TKM1T": 288,
+    "SAF1R": 100,
+    "APG1L": 200,
+    "KNE1L": 928,
+    "VLP1L": 127,
+    "RSU1L": 150,
+    "MRK1T": 26,
+    "GRG1L": 543,
+    "HAE1T": 100,
+    "TAL1T": 1000,
+    "ROE1L": 620,
+    "TSM1T": 330,
+    "SE0014261764": 11.2672,
+    "US_PFE": 5.883,
+    "US_NVDA": 1.169741,
+    "AKO1L": 100
+  },
+  "scope": "US shares may be sold at every decision under Sale, No-sale and No-initial-sales. All non-US sales follow the selected policy. No short positions, borrowing, purchase-cap or sector-cap exemption is introduced. Completed rolling research retains its older frozen sales contract."
+}
