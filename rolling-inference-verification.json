@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "paired_tests": 9828,
+  "columns": 1638,
+  "independent_direct_bootstrap_and_statsmodels_HAC": 15,
+  "all_Holm_families_independently_checked": true,
+  "source_metric_samples_checked": true,
+  "source_study_hash": "87a75523a7feec32f750f82244b07733d208166dbebd770b3c0d8ef14b4479bf"
+}

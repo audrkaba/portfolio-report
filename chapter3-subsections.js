@@ -6,6 +6,7 @@
   study.addEventListener('toggle',load);load();
   frame.addEventListener('load',()=>{
    const doc=frame.contentDocument;if(!doc)return;
+   doc.documentElement.classList.add('inline-study');
    const heading=doc.querySelector('h1');if(heading)heading.hidden=true;
    const resize=()=>{frame.style.height=Math.ceil(doc.body.getBoundingClientRect().height+36)+'px';};
    new ResizeObserver(resize).observe(doc.body);resize();

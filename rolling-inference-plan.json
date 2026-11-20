@@ -1,0 +1,41 @@
+{
+  "created_at_UTC": "2026-11-20T18:34:07.884359+00:00",
+  "scope": "Post-study exploratory analysis plan fixed before this inference computation; not preregistration of the original study",
+  "metrics": [
+    "netSD",
+    "mean_return",
+    "Sharpe",
+    "Sortino",
+    "Rachev",
+    "STD",
+    "maximum_drawdown",
+    "CVaR95",
+    "accumulated_wealth_EUR"
+  ],
+  "primary_scope": "OOS",
+  "primary_cost_bps": 10,
+  "primary_population": "ALL_MODELS_COMMON",
+  "primary_block": 30,
+  "block_sensitivity": [
+    4,
+    8,
+    13,
+    26,
+    30,
+    52
+  ],
+  "bootstrap_repetitions": 19999,
+  "seed": 20261120,
+  "tests": "Two-sided centred circular block bootstrap of paired mean metric differences; basic95% marginal intervals; Newey-West Bartlett HAC cross-check",
+  "multiplicity": "Holm across all contrasts and nine outcomes within each declared family, population and block setting. Unavailable tests occupy their planned family slots as p=1 for adjustment.",
+  "families": [
+    "vs_Current",
+    "later_decisions",
+    "purchase_caps",
+    "sale_permissions"
+  ],
+  "assumptions": "Conditional retrospective universe/inventory. Weak dependence and sufficiently stable finite-moment origin-metric process are required. Structural change and short-sample tail ratios limit inference. Adjustment does not undo adaptive design or establish an untouched-test winner.",
+  "RAM_ceiling_fraction": 0.9,
+  "CPU_workers": 8,
+  "GPU": false
+}
