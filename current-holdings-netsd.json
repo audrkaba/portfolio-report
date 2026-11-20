@@ -1,5 +1,5 @@
 {
-  "computed_at_UTC": "2026-11-20T06:43:47.340693+00:00",
+  "computed_at_UTC": "2026-11-20T08:07:27.223763+00:00",
   "holdings": {
     "TKM1T": 288,
     "SAF1R": 100,
@@ -13,9 +13,9 @@
     "TAL1T": 1000,
     "ROE1L": 620,
     "TSM1T": 330,
-    "SE0014261764": 7.108,
+    "SE0014261764": 11.2672,
     "US_PFE": 5.491688,
-    "US_NVDA": 0.28401,
+    "US_NVDA": 0.331988,
     "AKO1L": 50
   },
   "valuation_quotes": {
@@ -84,8 +84,8 @@
       "date": "2026-11-19"
     }
   },
-  "invested_EUR": 11561.009218782794,
-  "cash_with_EUR15000_account": 3438.990781217206,
+  "invested_EUR": 11668.569314320503,
+  "cash_with_EUR15000_account": 3331.4306856794974,
   "training_observations": 1134,
   "excluded_diagnostic_observations": 126,
   "unlabelled_training_observations": 42,
@@ -3684,9 +3684,9 @@
         },
         "ARC1T": {
           "OUT": 38,
-          "IN": 13,
+          "IN": 11,
           "D": 124,
-          "netSD": 0.20161290322580644,
+          "netSD": 0.21774193548387097,
           "OUT_by_order": [
             0,
             18,
@@ -3694,8 +3694,8 @@
           ],
           "IN_by_order": [
             0,
-            6,
-            7
+            5,
+            6
           ]
         },
         "AUG1L": {
@@ -4787,14 +4787,14 @@
           ]
         },
         "Current": {
-          "OUT": 100,
+          "OUT": 98,
           "IN": 0,
           "D": 124,
-          "netSD": 0.8064516129032258,
+          "netSD": 0.7903225806451613,
           "OUT_by_order": [
             0,
-            50,
-            50
+            49,
+            49
           ],
           "IN_by_order": [
             0,
@@ -4815,9 +4815,9 @@
       "assets": {
         "AKO1L": {
           "OUT": 14,
-          "IN": 32,
+          "IN": 30,
           "D": 142,
-          "netSD": -0.1267605633802817,
+          "netSD": -0.11267605633802817,
           "OUT_by_order": [
             0,
             6,
@@ -4825,8 +4825,8 @@
           ],
           "IN_by_order": [
             0,
-            14,
-            18
+            13,
+            17
           ]
         },
         "AMG1L": {
@@ -5966,14 +5966,14 @@
           ]
         },
         "Current": {
-          "OUT": 85,
+          "OUT": 83,
           "IN": 6,
           "D": 142,
-          "netSD": 0.5563380281690141,
+          "netSD": 0.5422535211267606,
           "OUT_by_order": [
             0,
-            40,
-            45
+            39,
+            44
           ],
           "IN_by_order": [
             0,
@@ -5987,7 +5987,7 @@
     }
   },
   "protected_input_sha256": {
-    "data\\current_holdings.json": "3e53e4dca22f373d2c1b0fcad3ac59ae13437c2745e88a04264c89da64431178",
+    "data\\current_holdings.json": "4a09136ec98b96f454e0e7d1825171a007d54a7c17bac269df1ac49a5a29831c",
     "data\\long_history\\asset_returns.csv": "d5d23e05b686c43aa0de5fbf8d1bd1a9087d16ec567cf13e3a74040fa73b11a5",
     "data\\full_universe\\share_prices.csv": "de760e3201159435b1951807d5f661db5996c434455e17c155a6bd9ee0689a7d",
     "data\\full_universe\\fund_nav_eur.csv": "413f241f7de5364c4a17a9bccdd08fd00ed0828d0e6f0f53c67bc6db04bf7af1"

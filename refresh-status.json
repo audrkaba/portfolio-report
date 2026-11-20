@@ -4,7 +4,7 @@
   "financial_calculations_complete": true,
   "technical_studies_complete": false,
   "technical_study_scope": "Previously measured historical studies retained; no new speed-up experiment requested",
-  "model_input_hash": "cb75fb974d14e00e679683f4088d3094e4897aea6f3149b56b1353ac00a005ff",
+  "model_input_hash": "4adf14c22a9e9d245d19af719037a2a30bd7997f42ac5ad7cd51058d00b01bfc",
   "holdings": {
     "TKM1T": 288,
     "SAF1R": 100,
@@ -18,9 +18,9 @@
     "TAL1T": 1000,
     "ROE1L": 620,
     "TSM1T": 330,
-    "SE0014261764": 7.108,
+    "SE0014261764": 11.2672,
     "US_PFE": 5.491688,
-    "US_NVDA": 0.28401,
+    "US_NVDA": 0.331988,
     "AKO1L": 50
   },
   "market": {
@@ -35,5 +35,5 @@
     "price_status": "Latest available official observations; source dates retained",
     "updated_current_session": 0
   },
-  "updated_at": "2026-11-20T06:43:57.427828+00:00"
+  "updated_at": "2026-11-20T08:07:37.380776+00:00"
 }

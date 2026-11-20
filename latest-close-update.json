@@ -1,7 +1,8 @@
 {
   "passed": true,
-  "observed_at_UTC": "2026-11-19T16:11:43.298321+00:00",
-  "scope": "Price/Current valuation snapshot only. Refer to the main report for model completion status and independently checked recommendations.",
+  "observed_at_UTC": "2026-11-20T08:09:30.566464+00:00",
+  "scope": "Completed financial revision: exact current quantities and individual genuine quote dates. Historical Current metrics below are the full-history fixed-quantity reconstruction, distinct from terminal model objectives.",
+  "models_recalculated": true,
   "rows": [
     {
       "asset": "AIR",
@@ -9,7 +10,7 @@
       "date": "2026-11-19",
       "price_EUR": 1.82,
       "previous_price_EUR": 1.82,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
@@ -27,7 +28,7 @@
       "date": "2026-11-19",
       "price_EUR": 1.21,
       "previous_price_EUR": 1.21,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
@@ -45,7 +46,7 @@
       "date": "2026-11-19",
       "price_EUR": 0.934,
       "previous_price_EUR": 0.944,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
@@ -54,7 +55,7 @@
       "date": "2026-11-19",
       "price_EUR": 0.079,
       "previous_price_EUR": 0.0742,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
@@ -63,7 +64,7 @@
       "date": "2026-11-19",
       "price_EUR": 0.65,
       "previous_price_EUR": 0.708,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
@@ -72,7 +73,7 @@
       "date": "2026-11-19",
       "price_EUR": 0.65,
       "previous_price_EUR": 0.7,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
@@ -81,7 +82,7 @@
       "date": "2026-11-19",
       "price_EUR": 2.39,
       "previous_price_EUR": 2.4,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
@@ -90,7 +91,7 @@
       "date": "2026-11-19",
       "price_EUR": 1.3,
       "previous_price_EUR": 1.3,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
@@ -99,7 +100,7 @@
       "date": "2026-11-19",
       "price_EUR": 1.88,
       "previous_price_EUR": 1.885,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
@@ -108,7 +109,7 @@
       "date": "2026-11-19",
       "price_EUR": 19.45,
       "previous_price_EUR": 19.45,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
@@ -117,7 +118,7 @@
       "date": "2026-11-19",
       "price_EUR": 7.25,
       "previous_price_EUR": 7.25,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
@@ -126,7 +127,7 @@
       "date": "2026-11-19",
       "price_EUR": 1.675,
       "previous_price_EUR": 1.73,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
@@ -135,7 +136,7 @@
       "date": "2026-11-19",
       "price_EUR": 10.9,
       "previous_price_EUR": 10.9,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
@@ -144,7 +145,7 @@
       "date": "2026-11-19",
       "price_EUR": 0.055,
       "previous_price_EUR": 0.05,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
@@ -171,7 +172,7 @@
       "date": "2026-11-19",
       "price_EUR": 4.27,
       "previous_price_EUR": 4.26,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
@@ -180,16 +181,16 @@
       "date": "2026-11-19",
       "price_EUR": 2.65,
       "previous_price_EUR": 2.66,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
       "asset": "IGN1L",
-      "name": "Ignitis grup<U+0117>",
+      "name": "Ignitis grupė",
       "date": "2026-11-19",
       "price_EUR": 22.05,
       "previous_price_EUR": 22.1,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
@@ -198,7 +199,7 @@
       "date": "2026-11-19",
       "price_EUR": 1.5550000000000002,
       "previous_price_EUR": 1.56,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
@@ -207,7 +208,7 @@
       "date": "2026-11-19",
       "price_EUR": 5.4,
       "previous_price_EUR": 5.45,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
@@ -216,7 +217,7 @@
       "date": "2026-11-19",
       "price_EUR": 67.0,
       "previous_price_EUR": 67.0,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
@@ -225,7 +226,7 @@
       "date": "2026-11-19",
       "price_EUR": 7.0,
       "previous_price_EUR": 7.0,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
@@ -234,7 +235,7 @@
       "date": "2026-11-19",
       "price_EUR": 2.68,
       "previous_price_EUR": 2.7,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
@@ -243,7 +244,7 @@
       "date": "2026-11-19",
       "price_EUR": 27.2,
       "previous_price_EUR": 27.0,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
@@ -252,7 +253,7 @@
       "date": "2026-11-19",
       "price_EUR": 10.8,
       "previous_price_EUR": 11.0,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
@@ -270,7 +271,7 @@
       "date": "2026-11-19",
       "price_EUR": 2.08,
       "previous_price_EUR": 2.1,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
@@ -279,7 +280,7 @@
       "date": "2026-11-19",
       "price_EUR": 1.18,
       "previous_price_EUR": 1.175,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
@@ -288,7 +289,7 @@
       "date": "2026-11-19",
       "price_EUR": 3.24,
       "previous_price_EUR": 3.225,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
@@ -297,7 +298,7 @@
       "date": "2026-11-19",
       "price_EUR": 4.02,
       "previous_price_EUR": 3.74,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
@@ -306,7 +307,7 @@
       "date": "2026-11-19",
       "price_EUR": 3.04,
       "previous_price_EUR": 3.08,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
@@ -315,7 +316,7 @@
       "date": "2026-11-19",
       "price_EUR": 1.69,
       "previous_price_EUR": 1.705,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
@@ -324,7 +325,7 @@
       "date": "2026-11-19",
       "price_EUR": 10.55,
       "previous_price_EUR": 10.5,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
@@ -333,7 +334,7 @@
       "date": "2026-11-19",
       "price_EUR": 5.0,
       "previous_price_EUR": 5.0,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
@@ -342,7 +343,7 @@
       "date": "2026-11-19",
       "price_EUR": 21.4,
       "previous_price_EUR": 21.4,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
@@ -360,7 +361,7 @@
       "date": "2026-11-19",
       "price_EUR": 0.522,
       "previous_price_EUR": 0.538,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
@@ -369,7 +370,7 @@
       "date": "2026-11-19",
       "price_EUR": 2.86,
       "previous_price_EUR": 2.94,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
@@ -378,7 +379,7 @@
       "date": "2026-11-19",
       "price_EUR": 0.714,
       "previous_price_EUR": 0.714,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
@@ -387,7 +388,7 @@
       "date": "2026-11-19",
       "price_EUR": 0.535,
       "previous_price_EUR": 0.535,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
@@ -396,7 +397,7 @@
       "date": "2026-11-19",
       "price_EUR": 0.051,
       "previous_price_EUR": 0.051,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
@@ -405,25 +406,25 @@
       "date": "2026-11-19",
       "price_EUR": 3.14,
       "previous_price_EUR": 3.0,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
       "asset": "PZV1L",
-      "name": "Pieno <U+017E>vaig<U+017E>d<U+0117>s",
+      "name": "Pieno žvaigždės",
       "date": "2026-11-19",
       "price_EUR": 1.815,
       "previous_price_EUR": 1.815,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
       "asset": "RKB1R",
-      "name": "R<U+012B>gas ku<U+0123>u b<U+016B>v<U+0113>tava",
+      "name": "Rīgas kuģu būvētava",
       "date": "2026-11-19",
       "price_EUR": 0.306,
       "previous_price_EUR": 0.3,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
@@ -437,7 +438,7 @@
     },
     {
       "asset": "RSU1L",
-      "name": "Roki<U+0161>kio s<U+016B>ris",
+      "name": "Rokiškio sūris",
       "date": "2026-11-19",
       "price_EUR": 4.3,
       "previous_price_EUR": 4.28,
@@ -459,16 +460,232 @@
       "date": "2026-11-19",
       "price_EUR": 2.21,
       "previous_price_EUR": 2.16,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
       "asset": "SCM1R",
-      "name": "Siguldas ciltslietu un m<U+0101>ksl<U+012B>g<U+0101>s aps<U+0113>klo<U+0161>anas stacija",
+      "name": "Siguldas ciltslietu un mākslīgās apsēklošanas stacija",
       "date": "2026-11-19",
       "price_EUR": 7.25,
       "previous_price_EUR": 7.25,
-      "units": 0.0,
+      "units": 0,
+      "value_EUR": 0.0
+    },
+    {
+      "asset": "SE0013876927",
+      "name": "Swedbank Robur Access Edge Japan C",
+      "date": "2026-11-18",
+      "price_EUR": 14.9925,
+      "previous_price_EUR": 14.9897,
+      "units": 0,
+      "value_EUR": 0.0
+    },
+    {
+      "asset": "SE0013876950",
+      "name": "Swedbank Robur Access Edge Em Mkt C",
+      "date": "2026-11-18",
+      "price_EUR": 13.0704,
+      "previous_price_EUR": 13.0574,
+      "units": 0,
+      "value_EUR": 0.0
+    },
+    {
+      "asset": "SE0013876968",
+      "name": "Swedbank Robur Access Asien C",
+      "date": "2026-11-18",
+      "price_EUR": 12.825,
+      "previous_price_EUR": 12.76,
+      "units": 0,
+      "value_EUR": 0.0
+    },
+    {
+      "asset": "SE0014261756",
+      "name": "Swedbank Robur Global High Dividend C",
+      "date": "2026-11-18",
+      "price_EUR": 19.3767,
+      "previous_price_EUR": 19.4266,
+      "units": 0,
+      "value_EUR": 0.0
+    },
+    {
+      "asset": "SE0014261764",
+      "name": "Swedbank Robur Technology C",
+      "date": "2026-11-18",
+      "price_EUR": 24.3288,
+      "previous_price_EUR": 24.0433,
+      "units": 11.2672,
+      "value_EUR": 274.11745536
+    },
+    {
+      "asset": "SE0014261871",
+      "name": "Swedbank Robur Healthcare C",
+      "date": "2026-11-18",
+      "price_EUR": 14.8832,
+      "previous_price_EUR": 15.0598,
+      "units": 0,
+      "value_EUR": 0.0
+    },
+    {
+      "asset": "SE0014261889",
+      "name": "Swedbank Robur Global Impact C",
+      "date": "2026-11-18",
+      "price_EUR": 15.5943,
+      "previous_price_EUR": 15.5981,
+      "units": 0,
+      "value_EUR": 0.0
+    },
+    {
+      "asset": "SE0014261897",
+      "name": "Swedbank Robur Fastighet C",
+      "date": "2026-11-18",
+      "price_EUR": 10.7999,
+      "previous_price_EUR": 10.7756,
+      "units": 0,
+      "value_EUR": 0.0
+    },
+    {
+      "asset": "SE0014263273",
+      "name": "Swedbank Savings Fund 30 N",
+      "date": "2026-11-18",
+      "price_EUR": 11.1982,
+      "previous_price_EUR": 11.1911,
+      "units": 0,
+      "value_EUR": 0.0
+    },
+    {
+      "asset": "SE0014263281",
+      "name": "Swedbank Savings Fund 100 N",
+      "date": "2026-11-18",
+      "price_EUR": 14.8086,
+      "previous_price_EUR": 14.7818,
+      "units": 0,
+      "value_EUR": 0.0
+    },
+    {
+      "asset": "SE0014263299",
+      "name": "Swedbank Savings Fund 60 N",
+      "date": "2026-11-18",
+      "price_EUR": 12.6978,
+      "previous_price_EUR": 12.6834,
+      "units": 0,
+      "value_EUR": 0.0
+    },
+    {
+      "asset": "SE0015192315",
+      "name": "Swedbank Robur Access Edge Sweden C",
+      "date": "2026-11-18",
+      "price_EUR": 13.8872,
+      "previous_price_EUR": 14.0334,
+      "units": 0,
+      "value_EUR": 0.0
+    },
+    {
+      "asset": "SE0015192323",
+      "name": "Swedbank Robur Access Edge USA C",
+      "date": "2026-11-18",
+      "price_EUR": 19.7896,
+      "previous_price_EUR": 19.7555,
+      "units": 0,
+      "value_EUR": 0.0
+    },
+    {
+      "asset": "SE0015192331",
+      "name": "Swedbank Robur Access Edge Europe C",
+      "date": "2026-11-18",
+      "price_EUR": 17.5926,
+      "previous_price_EUR": 17.755,
+      "units": 0,
+      "value_EUR": 0.0
+    },
+    {
+      "asset": "SE0015192349",
+      "name": "Swedbank Robur Access Edge Global C",
+      "date": "2026-11-18",
+      "price_EUR": 18.902,
+      "previous_price_EUR": 18.9224,
+      "units": 0,
+      "value_EUR": 0.0
+    },
+    {
+      "asset": "SE0015948609",
+      "name": "Swedbank Robur Corp Bond Europe HY C",
+      "date": "2026-11-18",
+      "price_EUR": 11.4376,
+      "previous_price_EUR": 11.4352,
+      "units": 0,
+      "value_EUR": 0.0
+    },
+    {
+      "asset": "SE0015948617",
+      "name": "Swedbank Robur Corp Bond Europe C",
+      "date": "2026-11-18",
+      "price_EUR": 9.9588,
+      "previous_price_EUR": 9.9578,
+      "units": 0,
+      "value_EUR": 0.0
+    },
+    {
+      "asset": "SE0017072416",
+      "name": "Swedbank Robur Corp Bond Nordic C",
+      "date": "2026-11-18",
+      "price_EUR": 11.9902,
+      "previous_price_EUR": 11.9889,
+      "units": 0,
+      "value_EUR": 0.0
+    },
+    {
+      "asset": "SE0019354200",
+      "name": "Swedbank Robur Emerging Europe C",
+      "date": "2026-11-18",
+      "price_EUR": 23.4215,
+      "previous_price_EUR": 23.718,
+      "units": 0,
+      "value_EUR": 0.0
+    },
+    {
+      "asset": "SE0025667199",
+      "name": "Swedbank Robur Corp Bond Nordic HY C",
+      "date": "2026-11-18",
+      "price_EUR": 10.5509,
+      "previous_price_EUR": 10.5491,
+      "units": 0,
+      "value_EUR": 0.0
+    },
+    {
+      "asset": "SE0025667215",
+      "name": "Swedbank Robur Security and Defence C",
+      "date": "2026-11-18",
+      "price_EUR": 10.6225,
+      "previous_price_EUR": 10.5114,
+      "units": 0,
+      "value_EUR": 0.0
+    },
+    {
+      "asset": "SE0026821472",
+      "name": "Swedbank Robur Small Cap Europe C",
+      "date": "2026-11-18",
+      "price_EUR": 10.8706,
+      "previous_price_EUR": 10.9185,
+      "units": 0,
+      "value_EUR": 0.0
+    },
+    {
+      "asset": "SE0027397514",
+      "name": "Swedbank Robur New Energy C",
+      "date": "2026-11-18",
+      "price_EUR": 8.6512,
+      "previous_price_EUR": 8.6358,
+      "units": 0,
+      "value_EUR": 0.0
+    },
+    {
+      "asset": "SE0029504588",
+      "name": "Swedbank Robur Food and Water C",
+      "date": "2026-11-18",
+      "price_EUR": 9.906,
+      "previous_price_EUR": 9.9587,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
@@ -477,7 +694,7 @@
       "date": "2026-11-19",
       "price_EUR": 1.03,
       "previous_price_EUR": 1.04,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
@@ -486,7 +703,7 @@
       "date": "2026-11-19",
       "price_EUR": 0.372,
       "previous_price_EUR": 0.372,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
@@ -504,7 +721,7 @@
       "date": "2026-11-19",
       "price_EUR": 2.21,
       "previous_price_EUR": 2.22,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
@@ -522,7 +739,7 @@
       "date": "2026-11-19",
       "price_EUR": 0.53,
       "previous_price_EUR": 0.56,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
@@ -540,16 +757,34 @@
       "date": "2026-11-19",
       "price_EUR": 10.85,
       "previous_price_EUR": 10.85,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
+      "asset": "US_NVDA",
+      "name": "NVIDIA Corporation",
+      "date": "2026-11-19",
+      "price_EUR": 132.805672969013,
+      "previous_price_EUR": 137.63676760928809,
+      "units": 0.331988,
+      "value_EUR": 44.08988975763668
+    },
+    {
+      "asset": "US_PFE",
+      "name": "Pfizer Inc.",
+      "date": "2026-11-19",
+      "price_EUR": 25.054585985741763,
+      "previous_price_EUR": 25.583515195060524,
+      "units": 5.491688,
+      "value_EUR": 137.5919692028662
+    },
+    {
       "asset": "UTR1L",
-      "name": "Utenos trikota<U+017E>as",
+      "name": "Utenos trikotažas",
       "date": "2026-11-19",
       "price_EUR": 0.358,
       "previous_price_EUR": 0.358,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
@@ -558,21 +793,21 @@
       "date": "2026-11-19",
       "price_EUR": 9.55,
       "previous_price_EUR": 9.55,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
       "asset": "VIRSI",
-      "name": "VIR<U+0160>I-A",
+      "name": "VIRŠI-A",
       "date": "2026-11-19",
       "price_EUR": 4.41,
       "previous_price_EUR": 4.4,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     },
     {
       "asset": "VLP1L",
-      "name": "Vilky<U+0161>ki<U+0173> pienin<U+0117>",
+      "name": "Vilkyškių pieninė",
       "date": "2026-11-19",
       "price_EUR": 15.25,
       "previous_price_EUR": 15.35,
@@ -581,250 +816,16 @@
     },
     {
       "asset": "ZMP1L",
-      "name": "<U+017D>emaitijos pienas",
+      "name": "Žemaitijos pienas",
       "date": "2026-11-19",
       "price_EUR": 2.8,
       "previous_price_EUR": 2.84,
-      "units": 0.0,
-      "value_EUR": 0.0
-    },
-    {
-      "asset": "US_PFE",
-      "name": "Pfizer Inc.",
-      "date": "2026-11-18",
-      "price_EUR": 25.583515195060524,
-      "previous_price_EUR": 25.583515195060524,
-      "units": 5.491688,
-      "value_EUR": 140.49668339453154
-    },
-    {
-      "asset": "US_NVDA",
-      "name": "NVIDIA Corporation",
-      "date": "2026-11-18",
-      "price_EUR": 137.63676760928809,
-      "previous_price_EUR": 137.63676760928809,
-      "units": 0.28401,
-      "value_EUR": 39.090218368713906
-    },
-    {
-      "asset": "SE0015192331",
-      "name": "Swedbank Robur Access Edge Europe C",
-      "date": "2026-11-18",
-      "price_EUR": 17.5926,
-      "previous_price_EUR": 17.755,
-      "units": 0.0,
-      "value_EUR": 0.0
-    },
-    {
-      "asset": "SE0015192349",
-      "name": "Swedbank Robur Access Edge Global C",
-      "date": "2026-11-18",
-      "price_EUR": 18.902,
-      "previous_price_EUR": 18.9224,
-      "units": 0.0,
-      "value_EUR": 0.0
-    },
-    {
-      "asset": "SE0014263281",
-      "name": "Swedbank Savings Fund 100 N",
-      "date": "2026-11-18",
-      "price_EUR": 14.8086,
-      "previous_price_EUR": 14.7818,
-      "units": 0.0,
-      "value_EUR": 0.0
-    },
-    {
-      "asset": "SE0014263273",
-      "name": "Swedbank Savings Fund 30 N",
-      "date": "2026-11-18",
-      "price_EUR": 11.1982,
-      "previous_price_EUR": 11.1911,
-      "units": 0.0,
-      "value_EUR": 0.0
-    },
-    {
-      "asset": "SE0015192323",
-      "name": "Swedbank Robur Access Edge USA C",
-      "date": "2026-11-18",
-      "price_EUR": 19.7896,
-      "previous_price_EUR": 19.7555,
-      "units": 0.0,
-      "value_EUR": 0.0
-    },
-    {
-      "asset": "SE0029504588",
-      "name": "Swedbank Robur Food and Water C",
-      "date": "2026-11-18",
-      "price_EUR": 9.906,
-      "previous_price_EUR": 9.9587,
-      "units": 0.0,
-      "value_EUR": 0.0
-    },
-    {
-      "asset": "SE0014263299",
-      "name": "Swedbank Savings Fund 60 N",
-      "date": "2026-11-18",
-      "price_EUR": 12.6978,
-      "previous_price_EUR": 12.6834,
-      "units": 0.0,
-      "value_EUR": 0.0
-    },
-    {
-      "asset": "SE0013876950",
-      "name": "Swedbank Robur Access Edge Em Mkt C",
-      "date": "2026-11-18",
-      "price_EUR": 13.0704,
-      "previous_price_EUR": 13.0574,
-      "units": 0.0,
-      "value_EUR": 0.0
-    },
-    {
-      "asset": "SE0013876927",
-      "name": "Swedbank Robur Access Edge Japan C",
-      "date": "2026-11-18",
-      "price_EUR": 14.9925,
-      "previous_price_EUR": 14.9897,
-      "units": 0.0,
-      "value_EUR": 0.0
-    },
-    {
-      "asset": "SE0013876968",
-      "name": "Swedbank Robur Access Asien C",
-      "date": "2026-11-18",
-      "price_EUR": 12.825,
-      "previous_price_EUR": 12.76,
-      "units": 0.0,
-      "value_EUR": 0.0
-    },
-    {
-      "asset": "SE0015192315",
-      "name": "Swedbank Robur Access Edge Sweden C",
-      "date": "2026-11-18",
-      "price_EUR": 13.8872,
-      "previous_price_EUR": 14.0334,
-      "units": 0.0,
-      "value_EUR": 0.0
-    },
-    {
-      "asset": "SE0014261756",
-      "name": "Swedbank Robur Global High Dividend C",
-      "date": "2026-11-18",
-      "price_EUR": 19.3767,
-      "previous_price_EUR": 19.4266,
-      "units": 0.0,
-      "value_EUR": 0.0
-    },
-    {
-      "asset": "SE0014261889",
-      "name": "Swedbank Robur Global Impact C",
-      "date": "2026-11-18",
-      "price_EUR": 15.5943,
-      "previous_price_EUR": 15.5981,
-      "units": 0.0,
-      "value_EUR": 0.0
-    },
-    {
-      "asset": "SE0015948617",
-      "name": "Swedbank Robur Corp Bond Europe C",
-      "date": "2026-11-18",
-      "price_EUR": 9.9588,
-      "previous_price_EUR": 9.9578,
-      "units": 0.0,
-      "value_EUR": 0.0
-    },
-    {
-      "asset": "SE0014261897",
-      "name": "Swedbank Robur Fastighet C",
-      "date": "2026-11-18",
-      "price_EUR": 10.7999,
-      "previous_price_EUR": 10.7756,
-      "units": 0.0,
-      "value_EUR": 0.0
-    },
-    {
-      "asset": "SE0014261764",
-      "name": "Swedbank Robur Technology C",
-      "date": "2026-11-18",
-      "price_EUR": 24.3288,
-      "previous_price_EUR": 24.0433,
-      "units": 7.108,
-      "value_EUR": 172.9291104
-    },
-    {
-      "asset": "SE0015948609",
-      "name": "Swedbank Robur Corp Bond Europe HY C",
-      "date": "2026-11-18",
-      "price_EUR": 11.4376,
-      "previous_price_EUR": 11.4352,
-      "units": 0.0,
-      "value_EUR": 0.0
-    },
-    {
-      "asset": "SE0017072416",
-      "name": "Swedbank Robur Corp Bond Nordic C",
-      "date": "2026-11-18",
-      "price_EUR": 11.9902,
-      "previous_price_EUR": 11.9889,
-      "units": 0.0,
-      "value_EUR": 0.0
-    },
-    {
-      "asset": "SE0019354200",
-      "name": "Swedbank Robur Emerging Europe C",
-      "date": "2026-11-18",
-      "price_EUR": 23.4215,
-      "previous_price_EUR": 23.718,
-      "units": 0.0,
-      "value_EUR": 0.0
-    },
-    {
-      "asset": "SE0014261871",
-      "name": "Swedbank Robur Healthcare C",
-      "date": "2026-11-18",
-      "price_EUR": 14.8832,
-      "previous_price_EUR": 15.0598,
-      "units": 0.0,
-      "value_EUR": 0.0
-    },
-    {
-      "asset": "SE0026821472",
-      "name": "Swedbank Robur Small Cap Europe C",
-      "date": "2026-11-18",
-      "price_EUR": 10.8706,
-      "previous_price_EUR": 10.9185,
-      "units": 0.0,
-      "value_EUR": 0.0
-    },
-    {
-      "asset": "SE0025667215",
-      "name": "Swedbank Robur Security and Defence C",
-      "date": "2026-11-18",
-      "price_EUR": 10.6225,
-      "previous_price_EUR": 10.5114,
-      "units": 0.0,
-      "value_EUR": 0.0
-    },
-    {
-      "asset": "SE0027397514",
-      "name": "Swedbank Robur New Energy C",
-      "date": "2026-11-18",
-      "price_EUR": 8.6512,
-      "previous_price_EUR": 8.6358,
-      "units": 0.0,
-      "value_EUR": 0.0
-    },
-    {
-      "asset": "SE0025667199",
-      "name": "Swedbank Robur Corp Bond Nordic HY C",
-      "date": "2026-11-18",
-      "price_EUR": 10.5509,
-      "previous_price_EUR": 10.5491,
-      "units": 0.0,
+      "units": 0,
       "value_EUR": 0.0
     }
   ],
-  "current_value_EUR": 11565.286012163246,
+  "current_value_EUR": 11668.569314320503,
   "positions": 16,
-  "historical_Current_netSD": 0.7478260869565218,
-  "historical_Current_denominator": 115
+  "historical_Current_netSD": 0.5038167938931297,
+  "historical_Current_denominator": 131
 }
