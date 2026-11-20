@@ -16,3 +16,9 @@ html body #co-composition table.co-composition-table time{font-variant-numeric:t
 @media(max-width:500px){html body #co-composition table.co-composition-table :is(td,th){padding:.3rem .1rem!important}}
 
 .co-correlation-columns{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px}.co-correlation-columns>*{min-width:0}.current-overview .co-correlation{margin-inline:0}@media(max-width:900px){.co-correlation-columns{grid-template-columns:minmax(0,1fr)}.co-correlation-reserved{display:none}}
+
+#co-metrics{width:100%;max-width:960px;min-width:0}
+html body #co-performance table.co-performance-table :is(th,td){padding:.3rem .18rem!important;font-variant-numeric:tabular-nums}
+html body #co-performance table.co-performance-table thead th{writing-mode:vertical-rl!important;text-orientation:mixed;transform:rotate(180deg)!important;height:10rem!important;line-height:1!important;text-align:left!important;vertical-align:middle}
+html body #co-performance table.co-performance-table tbody th{writing-mode:horizontal-tb!important;transform:none!important;height:auto!important}
+@media(max-width:500px){html body #co-performance table.co-performance-table :is(th,td){padding:.3rem .1rem!important}}
