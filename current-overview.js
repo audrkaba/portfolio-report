@@ -62,6 +62,19 @@ function bindValueAutoscale(plot){
  plot.on('plotly_relayout',event=>{if(Object.keys(event).some(k=>k.startsWith('xaxis.range')||k==='xaxis.autorange'))schedule();});
  plot.on('plotly_restyle',schedule);
 }
+const portfolioColors=['#c02663','#26734d','#6846a6','#c4631b','#086f83','#b13939','#577321','#885b35','#2362af','#a3308a','#536277','#00856b'];
+function comparisonStyle(index){return {color:portfolioColors[index%portfolioColors.length],dash:['solid','dash','dot'][Math.floor(index/portfolioColors.length)%3]};}
+function setupPortfolioPicker(){
+ const select=$('co-portfolios');select.replaceChildren();
+ const current=document.createElement('option');current.value='CURRENT';current.textContent='Current (fixed holdings)';current.selected=true;select.append(current);
+ const groups=new Map();
+ for(const [index,p] of data.portfolio_comparison.portfolios.entries()){
+  if(!groups.has(p.group)){const g=document.createElement('optgroup');g.label=p.group;groups.set(p.group,g);select.append(g)}
+  const option=document.createElement('option');option.value=p.id;option.textContent=p.label;option.style.color=comparisonStyle(index).color;
+  if(p.status!=='available'){option.disabled=true;option.textContent+=' / unavailable'}
+  groups.get(p.group).append(option);
+ }
+}
 async function render(){
  if(!data||!root.open)return;if(rendering){pending=true;return;}rendering=true;
  try{
@@ -73,11 +86,25 @@ async function render(){
    traces.push(line('Bollinger ±2σ',dates,data.bollinger.upper,'#a5b5bf',{line:{width:0},fill:'tonexty',fillcolor:'rgba(40,110,140,.12)',hoverinfo:'skip'}));
    traces.push(line('SMA20',dates,data.bollinger.mean,'#8197a4',{line:{color:'#8197a4',width:1,dash:'dot'}}));
   }
-  traces.push(line('Current: fixed units',dates,data.value,'#075b78',{line:{color:'#075b78',width:2.3}}),line('S&P500 · EUR',dates,normalize(data.benchmarks.SP500_EUR),'#d17a22'),line(baltic==='OMXB10'?'OMX Baltic10 · price':'OMX Baltic Benchmark · GI',dates,normalize(data.benchmarks[baltic]),'#8262a3'));
+  const selectedPortfolios=new Set([...$('co-portfolios').selectedOptions].map(o=>o.value));
+  if(selectedPortfolios.has('CURRENT'))traces.push(line('Current: fixed units',dates,data.value,'#075b78',{line:{color:'#075b78',width:2.3}}));
+  traces.push(line('S&P500 · EUR',dates,normalize(data.benchmarks.SP500_EUR),'#d17a22'),line(baltic==='OMXB10'?'OMX Baltic10 · price':'OMX Baltic Benchmark · GI',dates,normalize(data.benchmarks[baltic]),'#8262a3'));
+  const selectedLegend=[];
+  if(selectedPortfolios.has('CURRENT'))selectedLegend.push({label:'Current',color:'#075b78',dash:'solid'});
+  for(const [index,p] of data.portfolio_comparison.portfolios.entries()){
+   if(!selectedPortfolios.has(p.id))continue;
+   const first=p.values.findIndex((v,i)=>i>=begin&&v!=null&&v>0),style=comparisonStyle(index);
+   if(first<0)continue;
+   const values=p.values.map(v=>v==null?null:v/p.values[first]*data.value[first]);
+   traces.push(line(p.label,dates,values,style.color,{showlegend:false,meta:{portfolio_id:p.id},line:{color:style.color,width:1.7,dash:style.dash}}));
+   selectedLegend.push({label:p.label,...style});
+  }
+  $('co-selected-lines-list').innerHTML=selectedLegend.map(p=>'<div class="co-selected-line"><span style="border-color:'+p.color+';border-top-style:'+(p.dash==='solid'?'solid':p.dash==='dash'?'dashed':'dotted')+'"></span><span>'+esc(p.label)+'</span></div>').join('');
   traces.push(line('Stoch RSI %K',dates,data.stoch_rsi.K,'#096e94',{yaxis:'y2'}),line('Stoch RSI %D',dates,data.stoch_rsi.D,'#c47b29',{yaxis:'y2'}));
   const regimes=data.regimes.map(r=>r==null?0:r);
   traces.push({type:'heatmap',name:'Market regime',x:dates,y:[0],z:[regimes],yaxis:'y3',zmin:0,zmax:4,colorscale:regimeColors.flatMap((c,i)=>[[Math.max(0,(i-.5)/4),c],[Math.min(1,(i+.5)/4),c]]),showscale:false,text:[regimes.map(r=>regimeNames[r])],hovertemplate:'%{x}<br>%{text}<extra></extra>'});
-  const main=layout(small?'Current portfolio - linked panels':'Current value, Bollinger bands, Stochastic RSI and regime · shared time axis',small?650:730);
+  const compactMain=$('current-overview-price').getBoundingClientRect().width<750;
+  const main=layout(small?'Current portfolio - linked panels':compactMain?'Portfolio comparison - linked panels':'Current value, Bollinger bands, Stochastic RSI and regime · shared time axis',small?650:730);
   main.uirevision='co-period-'+key;main.yaxis={domain:[.48,1],tickformat:',.0f',automargin:true,title:{text:'EUR'}};
   main.yaxis2={domain:[.20,.40],range:[0,100],anchor:'x',fixedrange:true,title:{text:'Stoch RSI'}};
   main.yaxis3={domain:[.02,.12],range:[-.5,.5],anchor:'x',visible:false,fixedrange:true};
@@ -128,10 +155,11 @@ async function render(){
   root.dataset.ready='true';root.dataset.period=key;
  }finally{rendering=false;if(pending){pending=false;queueMicrotask(()=>render().catch(console.error));}}
 }
-async function load(){if(loaded)return loaded;loaded=(async()=>{const response=await fetch('current-overview.json',{cache:'no-store'});if(!response.ok)throw Error('Portfolio data HTTP'+response.status);data=await response.json();$('co-period').value=data.default_period||'1Y';await plotly();$('current-overview-price').replaceChildren();await render();})();return loaded;}
+async function load(){if(loaded)return loaded;loaded=(async()=>{const response=await fetch('current-overview.json',{cache:'no-store'});if(!response.ok)throw Error('Portfolio data HTTP'+response.status);data=await response.json();setupPortfolioPicker();$('co-period').value=data.default_period||'1Y';await plotly();$('current-overview-price').replaceChildren();await render();})();return loaded;}
 root.addEventListener('toggle',()=>{if(root.open)load().then(render).catch(e=>{$('current-overview-price').textContent='Unable to load Current analytics: '+e.message;loaded=null;});});
-['co-period','co-baltic','co-bands','co-correlation-method'].forEach(id=>$(id).addEventListener('change',()=>render().catch(console.error)));
+['co-period','co-baltic','co-bands','co-correlation-method','co-portfolios'].forEach(id=>$(id).addEventListener('change',()=>render().catch(console.error)));
 $('co-composition').addEventListener('toggle',()=>{if($('co-composition').open)renderComposition()});
+$('co-portfolios-reset').addEventListener('click',()=>{for(const option of $('co-portfolios').options)option.selected=option.value==='CURRENT';render().catch(console.error)});
 root.querySelectorAll('details').forEach(d=>d.addEventListener('toggle',()=>{if(d.open&&window.Plotly)requestAnimationFrame(()=>d.querySelectorAll('.js-plotly-plot').forEach(p=>Plotly.Plots.resize(p)));}));
 root.addEventListener('click',event=>{
  const link=event.target.closest('a.co-asset-link');if(!link)return;const target=document.getElementById(link.hash.slice(1));if(!target)return;event.preventDefault();
