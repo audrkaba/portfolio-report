@@ -1,5 +1,5 @@
 {
-  "confirmed_at": "2026-11-20T07:29:11.861276+00:00",
+  "confirmed_at": "2026-11-20T08:28:29.775159+00:00",
   "units": {
     "TKM1T": 288,
     "SAF1R": 100,
@@ -14,9 +14,9 @@
     "ROE1L": 620,
     "TSM1T": 330,
     "SE0014261764": 11.2672,
-    "US:PFE": 5.491688,
-    "US:NVDA": 0.331988,
-    "AKO1L": 50
+    "US_PFE": 5.491688,
+    "US_NVDA": 0.331988,
+    "AKO1L": 100
   },
   "quantity_precision_overrides": {
     "US:PFE": 6,
@@ -24,9 +24,15 @@
     "US_NVDA": 6,
     "SE0014261764": 4
   },
+  "pending_model_updates": [
+    "AKO1L"
+  ],
+  "pending_quantity_updates": {
+    "AKO1L": {
+      "model_units": 50,
+      "actual_units": 100
+    }
+  },
   "public_disclosure_authorized": true,
-  "pending_quantity_updates": {},
-  "pending_model_updates": [],
-  "model_snapshot_status": "All current daily trading policies use this exact 16-position inventory",
-  "scope": "Confirmed Current quantities used in this daily C4 revision; completed share closes 2026-11-19 and individual published fund NAV dates retained. Execution prices, fees and execution timestamps were not supplied."
+  "model_snapshot_status": "Verified20November policies retain AKO1L50; actual Current now AKO1L100 total"
 }

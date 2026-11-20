@@ -1,8 +1,8 @@
 {
   "passed": true,
-  "observed_at_UTC": "2026-11-20T08:09:30.566464+00:00",
-  "scope": "Completed financial revision: exact current quantities and individual genuine quote dates. Historical Current metrics below are the full-history fixed-quantity reconstruction, distinct from terminal model objectives.",
-  "models_recalculated": true,
+  "observed_at_UTC": "2026-11-20T08:34:32.535167+00:00",
+  "scope": "Current quantities/valuation updated; trading policies retain their previous inventory until reoptimisation completes. Individual genuine quote dates retained. Historical Current metrics are the full-history fixed-quantity reconstruction, distinct from terminal model objectives.",
+  "models_recalculated": false,
   "rows": [
     {
       "asset": "AIR",
@@ -19,8 +19,8 @@
       "date": "2026-11-19",
       "price_EUR": 1.6800000000000002,
       "previous_price_EUR": 1.6949999999999998,
-      "units": 50.0,
-      "value_EUR": 84.00000000000001
+      "units": 100.0,
+      "value_EUR": 168.00000000000003
     },
     {
       "asset": "AMG1L",
@@ -824,7 +824,7 @@
       "value_EUR": 0.0
     }
   ],
-  "current_value_EUR": 11668.569314320503,
+  "current_value_EUR": 11752.569314320503,
   "positions": 16,
   "historical_Current_netSD": 0.5038167938931297,
   "historical_Current_denominator": 131
