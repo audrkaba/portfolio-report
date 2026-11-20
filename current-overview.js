@@ -111,7 +111,8 @@ async function render(){
   $('co-metrics').innerHTML=table(['Metric','Current','S&P500 EUR',baltic,'Best possible · Sale','Best possible · No-sale'],rows.map(([label,metric,format])=>{
    const cells=['SALE','NO_SALE'].map(policy=>{
     const best=period.best_observed_by_policy?.[policy]?.[metric];
-    return best?format(best.value)+'<small class="co-best-case">('+esc(best.portfolio)+')</small>':'—';
+    const label=best?.portfolio.split('|').map(part=>part.trim()).filter(part=>!['SALE','NO_SALE','NO-SALE','NO SALE'].includes(part.toUpperCase())).join(' | ');
+    return best?format(best.value)+'<small class="co-best-case">('+esc(label)+')</small>':'—';
    });
    return [esc(label),...columns.map(c=>format(period.metrics[c][metric])),...cells];
   })).replace('<table>','<table class="horizontal-summary-group co-performance-table"><colgroup>'+[28,12,12,12,18,18].map(w=>'<col style="width:'+w+'%">').join('')+'</colgroup>');
