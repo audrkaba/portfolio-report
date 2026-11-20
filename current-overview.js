@@ -14,6 +14,21 @@ const cfg={responsive:true,displaylogo:false,scrollZoom:false,modeBarButtonsToRe
 async function plotly(){if(window.Plotly)return;await new Promise((resolve,reject)=>{const s=document.createElement('script');s.src='vendor/plotly/plotly-3.1.0.min.js';s.onload=resolve;s.onerror=reject;document.head.appendChild(s)});}
 function layout(title,height){return {title:{text:title,font:{size:13},x:.02},height,autosize:true,margin:{l:56,r:15,t:65,b:40},paper_bgcolor:'#fafcfd',plot_bgcolor:'#fff',font:{family:'system-ui',size:11,color:'#263c48'},xaxis:{type:'date',automargin:true},yaxis:{automargin:true},legend:{orientation:'h',x:0,y:1.12,font:{size:10}},hovermode:'x unified'};}
 function line(name,x,y,color,extra={}){return {type:'scatter',mode:'lines',name,x,y,line:{color,width:1.6},connectgaps:false,...extra};}
+let compositionRows;
+function renderComposition(rows=compositionRows){
+ if(!rows)return;compositionRows=rows;
+ const host=$('co-holdings'),width=host.getBoundingClientRect().width||root.getBoundingClientRect().width-26;
+ const headings=['Asset','Units','Latest EUR price','Quote date','Day','Month','Year to date','Since 2025-01-01','Value, EUR','Weight'];
+ const count=Math.max(2,Math.min(10,Math.floor(width/105)));
+ let html='';
+ for(let start=1;start<headings.length;start+=count-1){
+  const indices=[0,...Array.from({length:Math.min(count-1,headings.length-start)},(_,i)=>start+i)];
+  html+=table(indices.map(i=>headings[i]),rows.map(r=>indices.map(i=>r[i]))).replace('<table>','<table class="horizontal-summary-group co-composition-table">');
+ }
+ host.innerHTML=html;
+}
+let compositionResize;
+window.addEventListener('resize',()=>{clearTimeout(compositionResize);compositionResize=setTimeout(()=>renderComposition(),150)});
 function table(headers,rows){return '<table><thead><tr>'+headers.map(h=>'<th scope="col">'+esc(h)+'</th>').join('')+'</tr></thead><tbody>'+rows.map(r=>'<tr>'+r.map((v,i)=>'<'+(i?'td':'th scope="row"')+' data-label="'+esc(headers[i])+'">'+v+'</'+(i?'td':'th')+'>').join('')+'</tr>').join('')+'</tbody></table>';}
 function changeCell(x){return x==null?'—':'<span class="'+(x<0?'co-negative':'co-positive')+'">'+pct(x)+'</span>';}
 function fitVisibleValueAxis(plot){
@@ -94,13 +109,14 @@ async function render(){
    const name=r.asset==='CURRENT'?'<strong>Current portfolio</strong>':'<a class="co-asset-link" href="'+esc(data.profile_links[r.asset])+'">'+esc(r.asset+' — '+r.name)+'</a>';
    return [name,r.units==null?'—':String(r.units),r.price_EUR==null?'—':Number(r.price_EUR).toFixed(4),r.date,...['day','month','YTD','since_2025'].map(k=>changeCell(r.changes[k])),eur(r.value_EUR),pct(r.weight)];
   });
-  $('co-holdings').innerHTML=table(['Asset','Units','Latest EUR price','Quote date','Day','Month','Year to date','Since2025-01-01','Value, EUR','Weight'],compRows);
+  renderComposition(compRows);
   root.dataset.ready='true';root.dataset.period=key;
  }finally{rendering=false;if(pending){pending=false;queueMicrotask(()=>render().catch(console.error));}}
 }
 async function load(){if(loaded)return loaded;loaded=(async()=>{const response=await fetch('current-overview.json',{cache:'no-store'});if(!response.ok)throw Error('Portfolio data HTTP'+response.status);data=await response.json();$('co-period').value=data.default_period||'1Y';await plotly();$('current-overview-price').replaceChildren();await render();})();return loaded;}
 root.addEventListener('toggle',()=>{if(root.open)load().then(render).catch(e=>{$('current-overview-price').textContent='Unable to load Current analytics: '+e.message;loaded=null;});});
 ['co-period','co-baltic','co-bands','co-correlation-method'].forEach(id=>$(id).addEventListener('change',()=>render().catch(console.error)));
+$('co-composition').addEventListener('toggle',()=>{if($('co-composition').open)renderComposition()});
 root.querySelectorAll('details').forEach(d=>d.addEventListener('toggle',()=>{if(d.open&&window.Plotly)requestAnimationFrame(()=>d.querySelectorAll('.js-plotly-plot').forEach(p=>Plotly.Plots.resize(p)));}));
 root.addEventListener('click',event=>{
  const link=event.target.closest('a.co-asset-link');if(!link)return;const target=document.getElementById(link.hash.slice(1));if(!target)return;event.preventDefault();
