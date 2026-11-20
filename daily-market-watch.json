@@ -78,11 +78,15 @@
         },
         {
           "model": "MARKOWITZ / SALE",
-          "units": 62.0
+          "units": 23.0
+        },
+        {
+          "model": "NETSD / NO_SALE",
+          "units": 1.0
         },
         {
           "model": "stochA / NO_INITIAL_SALES",
-          "units": 892.0
+          "units": 446.0
         }
       ],
       "future_models": [
@@ -95,14 +99,6 @@
           "maximum_gross_units": 169.0
         },
         {
-          "model": "stochA / SALE",
-          "maximum_gross_units": 1.0
-        },
-        {
-          "model": "stochA / NO_SALE",
-          "maximum_gross_units": 559.0
-        },
-        {
           "model": "STOCHASTIC / NO_INITIAL_SALES",
           "maximum_gross_units": 169.0
         },
@@ -112,14 +108,14 @@
         },
         {
           "model": "stochA / NO_INITIAL_SALES",
-          "maximum_gross_units": 10.0
+          "maximum_gross_units": 273.0
         },
         {
           "model": "stoch2A / NO_INITIAL_SALES",
           "maximum_gross_units": 3.0
         }
       ],
-      "held_units": 50
+      "held_units": 100
     },
     {
       "values": {
@@ -178,11 +174,16 @@
       "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000102337/trading/chart_price_json?start=2026-11-09&end=2026-11-18&historical=1",
       "checked_at_UTC": "2026-11-19T07:54:48.733104+00:00",
       "model_eligible": true,
-      "initial_models": [],
+      "initial_models": [
+        {
+          "model": "NETSD / NO_SALE",
+          "units": 6.0
+        }
+      ],
       "future_models": [
         {
           "model": "STOCHASTIC / SALE",
-          "maximum_gross_units": 76.0
+          "maximum_gross_units": 126.0
         },
         {
           "model": "STOCHASTIC / NO_SALE",
@@ -190,27 +191,27 @@
         },
         {
           "model": "STOCHASTIC2 / SALE",
-          "maximum_gross_units": 203.0
+          "maximum_gross_units": 194.0
         },
         {
           "model": "STOCHASTIC2 / NO_SALE",
-          "maximum_gross_units": 92.0
+          "maximum_gross_units": 93.0
         },
         {
           "model": "stochA / SALE",
-          "maximum_gross_units": 786.0
+          "maximum_gross_units": 114.0
         },
         {
           "model": "stochA / NO_SALE",
-          "maximum_gross_units": 69.0
+          "maximum_gross_units": 49.0
         },
         {
           "model": "stoch2A / SALE",
-          "maximum_gross_units": 203.0
+          "maximum_gross_units": 194.0
         },
         {
           "model": "stoch2A / NO_SALE",
-          "maximum_gross_units": 92.0
+          "maximum_gross_units": 93.0
         },
         {
           "model": "STOCHASTIC / NO_INITIAL_SALES",
@@ -218,15 +219,15 @@
         },
         {
           "model": "STOCHASTIC2 / NO_INITIAL_SALES",
-          "maximum_gross_units": 193.0
+          "maximum_gross_units": 132.0
         },
         {
           "model": "stochA / NO_INITIAL_SALES",
-          "maximum_gross_units": 921.0
+          "maximum_gross_units": 933.0
         },
         {
           "model": "stoch2A / NO_INITIAL_SALES",
-          "maximum_gross_units": 193.0
+          "maximum_gross_units": 132.0
         }
       ],
       "held_units": 200
@@ -349,10 +350,6 @@
           "maximum_gross_units": 227.0
         },
         {
-          "model": "stochA / SALE",
-          "maximum_gross_units": 227.0
-        },
-        {
           "model": "stochA / NO_SALE",
           "maximum_gross_units": 227.0
         },
@@ -417,11 +414,15 @@
       "future_models": [
         {
           "model": "stochA / SALE",
-          "maximum_gross_units": 71.0
+          "maximum_gross_units": 1264.0
+        },
+        {
+          "model": "stochA / NO_SALE",
+          "maximum_gross_units": 918.0
         },
         {
           "model": "stochA / NO_INITIAL_SALES",
-          "maximum_gross_units": 777.0
+          "maximum_gross_units": 774.0
         }
       ],
       "held_units": 0
@@ -547,16 +548,20 @@
       "initial_models": [],
       "future_models": [
         {
+          "model": "STOCHASTIC / SALE",
+          "maximum_gross_units": 406.0
+        },
+        {
           "model": "STOCHASTIC / NO_SALE",
           "maximum_gross_units": 406.0
         },
         {
           "model": "stochA / SALE",
-          "maximum_gross_units": 410.0
+          "maximum_gross_units": 2169.0
         },
         {
           "model": "stochA / NO_SALE",
-          "maximum_gross_units": 1806.0
+          "maximum_gross_units": 1598.0
         },
         {
           "model": "STOCHASTIC / NO_INITIAL_SALES",
@@ -564,7 +569,7 @@
         },
         {
           "model": "stochA / NO_INITIAL_SALES",
-          "maximum_gross_units": 2443.0
+          "maximum_gross_units": 2445.0
         }
       ],
       "held_units": 0
@@ -616,7 +621,12 @@
       "checked_at_UTC": "2026-11-19T07:54:48.954994+00:00",
       "model_eligible": true,
       "initial_models": [],
-      "future_models": [],
+      "future_models": [
+        {
+          "model": "stochA / NO_SALE",
+          "maximum_gross_units": 85.0
+        }
+      ],
       "held_units": 0
     },
     {
@@ -913,19 +923,19 @@
       "future_models": [
         {
           "model": "STOCHASTIC / SALE",
-          "maximum_gross_units": 3.0
+          "maximum_gross_units": 1.0
         },
         {
           "model": "STOCHASTIC / NO_SALE",
-          "maximum_gross_units": 5.0
+          "maximum_gross_units": 3.0
         },
         {
           "model": "stochA / SALE",
-          "maximum_gross_units": 2.0
+          "maximum_gross_units": 4129.0
         },
         {
           "model": "stochA / NO_SALE",
-          "maximum_gross_units": 1507.0
+          "maximum_gross_units": 1471.0
         },
         {
           "model": "STOCHASTIC / NO_INITIAL_SALES",
@@ -933,7 +943,7 @@
         },
         {
           "model": "stochA / NO_INITIAL_SALES",
-          "maximum_gross_units": 4287.0
+          "maximum_gross_units": 4293.0
         }
       ],
       "held_units": 543
@@ -999,7 +1009,7 @@
       "future_models": [
         {
           "model": "STOCHASTIC / SALE",
-          "maximum_gross_units": 59.0
+          "maximum_gross_units": 98.0
         },
         {
           "model": "STOCHASTIC / NO_SALE",
@@ -1007,7 +1017,7 @@
         },
         {
           "model": "stochA / NO_SALE",
-          "maximum_gross_units": 430.0
+          "maximum_gross_units": 432.0
         },
         {
           "model": "STOCHASTIC / NO_INITIAL_SALES",
@@ -1015,7 +1025,7 @@
         },
         {
           "model": "stochA / NO_INITIAL_SALES",
-          "maximum_gross_units": 645.0
+          "maximum_gross_units": 648.0
         }
       ],
       "held_units": 100
@@ -1081,7 +1091,7 @@
       "future_models": [
         {
           "model": "stochA / SALE",
-          "maximum_gross_units": 95.0
+          "maximum_gross_units": 224.0
         }
       ],
       "held_units": 0
@@ -1466,8 +1476,24 @@
       "model_eligible": true,
       "initial_models": [
         {
-          "model": "stochA / SALE",
+          "model": "STOCHASTIC / SALE",
           "units": 1052.0
+        },
+        {
+          "model": "STOCHASTIC / NO_SALE",
+          "units": 1473.0
+        },
+        {
+          "model": "STOCHASTIC2 / SALE",
+          "units": 1473.0
+        },
+        {
+          "model": "stoch2A / SALE",
+          "units": 1473.0
+        },
+        {
+          "model": "NETSD / NO_SALE",
+          "units": 2.0
         }
       ],
       "future_models": [
@@ -1481,7 +1507,7 @@
         },
         {
           "model": "STOCHASTIC2 / SALE",
-          "maximum_gross_units": 57.0
+          "maximum_gross_units": 8.0
         },
         {
           "model": "STOCHASTIC2 / NO_SALE",
@@ -1489,15 +1515,15 @@
         },
         {
           "model": "stochA / SALE",
-          "maximum_gross_units": 1489.0
+          "maximum_gross_units": 6111.0
         },
         {
           "model": "stochA / NO_SALE",
-          "maximum_gross_units": 4398.0
+          "maximum_gross_units": 4407.0
         },
         {
           "model": "stoch2A / SALE",
-          "maximum_gross_units": 57.0
+          "maximum_gross_units": 8.0
         },
         {
           "model": "stoch2A / NO_SALE",
@@ -1513,7 +1539,7 @@
         },
         {
           "model": "stochA / NO_INITIAL_SALES",
-          "maximum_gross_units": 4971.0
+          "maximum_gross_units": 5385.0
         },
         {
           "model": "stoch2A / NO_INITIAL_SALES",
@@ -1766,7 +1792,7 @@
       "future_models": [
         {
           "model": "stochA / SALE",
-          "maximum_gross_units": 123.0
+          "maximum_gross_units": 47.0
         },
         {
           "model": "stochA / NO_SALE",
@@ -1927,22 +1953,6 @@
       "model_eligible": true,
       "initial_models": [
         {
-          "model": "STOCHASTIC / SALE",
-          "units": 26.0
-        },
-        {
-          "model": "STOCHASTIC / NO_SALE",
-          "units": 26.0
-        },
-        {
-          "model": "STOCHASTIC2 / SALE",
-          "units": 18.0
-        },
-        {
-          "model": "stoch2A / SALE",
-          "units": 18.0
-        },
-        {
           "model": "STOCHASTIC / NO_INITIAL_SALES",
           "units": 11.0
         }
@@ -1957,28 +1967,20 @@
           "maximum_gross_units": 28.0
         },
         {
-          "model": "STOCHASTIC2 / SALE",
-          "maximum_gross_units": 1.0
-        },
-        {
           "model": "STOCHASTIC2 / NO_SALE",
-          "maximum_gross_units": 6.0
+          "maximum_gross_units": 9.0
         },
         {
           "model": "stochA / SALE",
-          "maximum_gross_units": 124.0
+          "maximum_gross_units": 111.0
         },
         {
           "model": "stochA / NO_SALE",
           "maximum_gross_units": 80.0
         },
         {
-          "model": "stoch2A / SALE",
-          "maximum_gross_units": 1.0
-        },
-        {
           "model": "stoch2A / NO_SALE",
-          "maximum_gross_units": 6.0
+          "maximum_gross_units": 9.0
         },
         {
           "model": "STOCHASTIC / NO_INITIAL_SALES",
@@ -1986,15 +1988,15 @@
         },
         {
           "model": "STOCHASTIC2 / NO_INITIAL_SALES",
-          "maximum_gross_units": 26.0
+          "maximum_gross_units": 17.0
         },
         {
           "model": "stochA / NO_INITIAL_SALES",
-          "maximum_gross_units": 126.0
+          "maximum_gross_units": 127.0
         },
         {
           "model": "stoch2A / NO_INITIAL_SALES",
-          "maximum_gross_units": 26.0
+          "maximum_gross_units": 17.0
         }
       ],
       "held_units": 26
@@ -2170,8 +2172,16 @@
       "initial_models": [],
       "future_models": [
         {
+          "model": "STOCHASTIC / SALE",
+          "maximum_gross_units": 351.0
+        },
+        {
           "model": "STOCHASTIC / NO_SALE",
           "maximum_gross_units": 351.0
+        },
+        {
+          "model": "stochA / SALE",
+          "maximum_gross_units": 131.0
         },
         {
           "model": "STOCHASTIC / NO_INITIAL_SALES",
@@ -2179,7 +2189,7 @@
         },
         {
           "model": "stochA / NO_INITIAL_SALES",
-          "maximum_gross_units": 716.0
+          "maximum_gross_units": 721.0
         }
       ],
       "held_units": 0
@@ -2230,12 +2240,7 @@
       "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100006040/trading/chart_price_json?start=2026-11-09&end=2026-11-18&historical=1",
       "checked_at_UTC": "2026-11-19T07:54:50.293562+00:00",
       "model_eligible": true,
-      "initial_models": [
-        {
-          "model": "MINIMAX / SALE",
-          "units": 37.0
-        }
-      ],
+      "initial_models": [],
       "future_models": [
         {
           "model": "STOCHASTIC / SALE",
@@ -2244,6 +2249,10 @@
         {
           "model": "STOCHASTIC / NO_SALE",
           "maximum_gross_units": 1508.0
+        },
+        {
+          "model": "stochA / SALE",
+          "maximum_gross_units": 2051.0
         },
         {
           "model": "stochA / NO_SALE",
@@ -2390,11 +2399,11 @@
         },
         {
           "model": "stochA / SALE",
-          "maximum_gross_units": 1404.0
+          "maximum_gross_units": 224.0
         },
         {
           "model": "stochA / NO_SALE",
-          "maximum_gross_units": 951.0
+          "maximum_gross_units": 986.0
         },
         {
           "model": "STOCHASTIC / NO_INITIAL_SALES",
@@ -2453,12 +2462,7 @@
       "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000102253/trading/chart_price_json?start=2026-11-09&end=2026-11-18&historical=1",
       "checked_at_UTC": "2026-11-19T07:54:50.324697+00:00",
       "model_eligible": true,
-      "initial_models": [
-        {
-          "model": "stochA / SALE",
-          "units": 3048.0
-        }
-      ],
+      "initial_models": [],
       "future_models": [
         {
           "model": "STOCHASTIC / SALE",
@@ -2470,11 +2474,11 @@
         },
         {
           "model": "stochA / SALE",
-          "maximum_gross_units": 1771.0
+          "maximum_gross_units": 4746.0
         },
         {
           "model": "stochA / NO_SALE",
-          "maximum_gross_units": 1435.0
+          "maximum_gross_units": 1751.0
         },
         {
           "model": "STOCHASTIC / NO_INITIAL_SALES",
@@ -2486,7 +2490,7 @@
         },
         {
           "model": "stochA / NO_INITIAL_SALES",
-          "maximum_gross_units": 4851.0
+          "maximum_gross_units": 4870.0
         },
         {
           "model": "stoch2A / NO_INITIAL_SALES",
@@ -2552,32 +2556,19 @@
       "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000100372/trading/chart_price_json?start=2026-11-09&end=2026-11-18&historical=1",
       "checked_at_UTC": "2026-11-19T07:54:50.402980+00:00",
       "model_eligible": true,
-      "initial_models": [
-        {
-          "model": "STOCHASTIC2 / NO_INITIAL_SALES",
-          "units": 69.0
-        },
-        {
-          "model": "stoch2A / NO_INITIAL_SALES",
-          "units": 69.0
-        }
-      ],
+      "initial_models": [],
       "future_models": [
-        {
-          "model": "STOCHASTIC / SALE",
-          "maximum_gross_units": 174.0
-        },
         {
           "model": "STOCHASTIC / NO_SALE",
           "maximum_gross_units": 174.0
         },
         {
           "model": "stochA / SALE",
-          "maximum_gross_units": 439.0
+          "maximum_gross_units": 67.0
         },
         {
           "model": "stochA / NO_SALE",
-          "maximum_gross_units": 391.0
+          "maximum_gross_units": 370.0
         },
         {
           "model": "STOCHASTIC / NO_INITIAL_SALES",
@@ -2636,16 +2627,11 @@
       "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/LV0000101129/trading/chart_price_json?start=2026-11-09&end=2026-11-18&historical=1",
       "checked_at_UTC": "2026-11-19T07:54:50.434120+00:00",
       "model_eligible": true,
-      "initial_models": [
-        {
-          "model": "stochA / NO_INITIAL_SALES",
-          "units": 90.0
-        }
-      ],
+      "initial_models": [],
       "future_models": [
         {
           "model": "STOCHASTIC / SALE",
-          "maximum_gross_units": 17.0
+          "maximum_gross_units": 29.0
         },
         {
           "model": "STOCHASTIC / NO_SALE",
@@ -2653,11 +2639,11 @@
         },
         {
           "model": "stochA / SALE",
-          "maximum_gross_units": 205.0
+          "maximum_gross_units": 210.0
         },
         {
           "model": "stochA / NO_SALE",
-          "maximum_gross_units": 138.0
+          "maximum_gross_units": 151.0
         },
         {
           "model": "STOCHASTIC / NO_INITIAL_SALES",
@@ -2665,7 +2651,7 @@
         },
         {
           "model": "stochA / NO_INITIAL_SALES",
-          "maximum_gross_units": 71.0
+          "maximum_gross_units": 160.0
         }
       ],
       "held_units": 100
@@ -2735,10 +2721,6 @@
         },
         {
           "model": "STOCHASTIC / NO_SALE",
-          "maximum_gross_units": 56.0
-        },
-        {
-          "model": "stochA / SALE",
           "maximum_gross_units": 56.0
         },
         {
@@ -2816,8 +2798,8 @@
       "initial_models": [],
       "future_models": [
         {
-          "model": "stochA / SALE",
-          "maximum_gross_units": 350.615
+          "model": "STOCHASTIC / SALE",
+          "maximum_gross_units": 26.243
         },
         {
           "model": "STOCHASTIC / NO_INITIAL_SALES",
@@ -2825,7 +2807,7 @@
         },
         {
           "model": "stochA / NO_INITIAL_SALES",
-          "maximum_gross_units": 373.021
+          "maximum_gross_units": 376.25600000000003
         }
       ],
       "held_units": 0
@@ -2927,12 +2909,7 @@
       "checked_at_UTC": "2026-11-19T07:54:51.284558+00:00",
       "model_eligible": true,
       "initial_models": [],
-      "future_models": [
-        {
-          "model": "stochA / SALE",
-          "maximum_gross_units": 813.567
-        }
-      ],
+      "future_models": [],
       "held_units": 0
     },
     {
@@ -2995,11 +2972,11 @@
       "initial_models": [
         {
           "model": "MARKOWITZ / SALE",
-          "units": 22.799
+          "units": 25.543
         },
         {
           "model": "MINIMAX / SALE",
-          "units": 27.075
+          "units": 27.322
         },
         {
           "model": "ROBUST / SALE",
@@ -3058,17 +3035,17 @@
       "initial_models": [
         {
           "model": "NETSD / SALE",
-          "units": 0.5696
+          "units": 0.2466
         },
         {
           "model": "NETSD / NO_SALE",
-          "units": 0.5696
+          "units": 9.2139
         }
       ],
       "future_models": [
         {
           "model": "STOCHASTIC / SALE",
-          "maximum_gross_units": 6.1606
+          "maximum_gross_units": 0.4294
         },
         {
           "model": "STOCHASTIC / NO_SALE",
@@ -3076,27 +3053,27 @@
         },
         {
           "model": "STOCHASTIC2 / SALE",
-          "maximum_gross_units": 1.6541000000000001
+          "maximum_gross_units": 1.6362
         },
         {
           "model": "STOCHASTIC2 / NO_SALE",
-          "maximum_gross_units": 1.69
+          "maximum_gross_units": 1.6726
         },
         {
           "model": "stochA / SALE",
-          "maximum_gross_units": 0.0083
+          "maximum_gross_units": 0.0062
         },
         {
           "model": "stochA / NO_SALE",
-          "maximum_gross_units": 0.1833
+          "maximum_gross_units": 0.0207
         },
         {
           "model": "stoch2A / SALE",
-          "maximum_gross_units": 1.6541000000000001
+          "maximum_gross_units": 1.6362
         },
         {
           "model": "stoch2A / NO_SALE",
-          "maximum_gross_units": 1.69
+          "maximum_gross_units": 1.6726
         },
         {
           "model": "STOCHASTIC / NO_INITIAL_SALES",
@@ -3104,15 +3081,15 @@
         },
         {
           "model": "STOCHASTIC2 / NO_INITIAL_SALES",
-          "maximum_gross_units": 20.258000000000003
+          "maximum_gross_units": 30.367800000000003
         },
         {
           "model": "stochA / NO_INITIAL_SALES",
-          "maximum_gross_units": 0.0710999999999995
+          "maximum_gross_units": 0.3282000000000007
         },
         {
           "model": "stoch2A / NO_INITIAL_SALES",
-          "maximum_gross_units": 20.258000000000003
+          "maximum_gross_units": 30.367800000000003
         }
       ],
       "held_units": 11.2672
@@ -3275,7 +3252,12 @@
       "checked_at_UTC": "2026-11-19T07:54:51.847878+00:00",
       "model_eligible": true,
       "initial_models": [],
-      "future_models": [],
+      "future_models": [
+        {
+          "model": "stochA / NO_SALE",
+          "maximum_gross_units": 265.02
+        }
+      ],
       "held_units": 0
     },
     {
@@ -3499,8 +3481,8 @@
       "initial_models": [],
       "future_models": [
         {
-          "model": "stochA / NO_SALE",
-          "maximum_gross_units": 28.838
+          "model": "STOCHASTIC / SALE",
+          "maximum_gross_units": 26.145
         },
         {
           "model": "STOCHASTIC / NO_INITIAL_SALES",
@@ -3508,7 +3490,7 @@
         },
         {
           "model": "stochA / NO_INITIAL_SALES",
-          "maximum_gross_units": 363.853
+          "maximum_gross_units": 379.967
         }
       ],
       "held_units": 0
@@ -3735,7 +3717,11 @@
       "future_models": [
         {
           "model": "stochA / SALE",
-          "maximum_gross_units": 471.48
+          "maximum_gross_units": 68.852
+        },
+        {
+          "model": "stochA / NO_SALE",
+          "maximum_gross_units": 39.136
         }
       ],
       "held_units": 0
@@ -3806,7 +3792,11 @@
       "future_models": [
         {
           "model": "stochA / SALE",
-          "maximum_gross_units": 807.479
+          "maximum_gross_units": 151.821
+        },
+        {
+          "model": "stochA / NO_SALE",
+          "maximum_gross_units": 83.572
         }
       ],
       "held_units": 0
@@ -4218,15 +4208,15 @@
         },
         {
           "model": "STOCHASTIC / NO_SALE",
-          "maximum_gross_units": 238.0
+          "maximum_gross_units": 239.0
         },
         {
           "model": "stochA / SALE",
-          "maximum_gross_units": 502.0
+          "maximum_gross_units": 532.0
         },
         {
           "model": "stochA / NO_SALE",
-          "maximum_gross_units": 227.0
+          "maximum_gross_units": 216.0
         },
         {
           "model": "STOCHASTIC / NO_INITIAL_SALES",
@@ -4304,15 +4294,15 @@
         },
         {
           "model": "STOCHASTIC / NO_SALE",
-          "maximum_gross_units": 416.0
+          "maximum_gross_units": 422.0
         },
         {
           "model": "stochA / SALE",
-          "maximum_gross_units": 292.0
+          "maximum_gross_units": 863.0
         },
         {
           "model": "stochA / NO_SALE",
-          "maximum_gross_units": 426.0
+          "maximum_gross_units": 424.0
         },
         {
           "model": "STOCHASTIC / NO_INITIAL_SALES",
@@ -4320,7 +4310,7 @@
         },
         {
           "model": "stochA / NO_INITIAL_SALES",
-          "maximum_gross_units": 4945.0
+          "maximum_gross_units": 4937.0
         }
       ],
       "held_units": 1000
@@ -4386,11 +4376,15 @@
       "future_models": [
         {
           "model": "stochA / SALE",
-          "maximum_gross_units": 84.0
+          "maximum_gross_units": 1507.0
         },
         {
           "model": "stochA / NO_SALE",
-          "maximum_gross_units": 819.0
+          "maximum_gross_units": 1162.0
+        },
+        {
+          "model": "stochA / NO_INITIAL_SALES",
+          "maximum_gross_units": 426.0
         }
       ],
       "held_units": 0
@@ -4463,24 +4457,7 @@
       "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/EE0000001105/trading/chart_price_json?start=2026-11-09&end=2026-11-18&historical=1",
       "checked_at_UTC": "2026-11-19T07:54:50.637320+00:00",
       "model_eligible": true,
-      "initial_models": [
-        {
-          "model": "UPDATE2 / NO_SALE",
-          "units": 11.0
-        },
-        {
-          "model": "UPDATE3 / NO_SALE",
-          "units": 11.0
-        },
-        {
-          "model": "NETSD / SALE",
-          "units": 11.0
-        },
-        {
-          "model": "NETSD / NO_SALE",
-          "units": 11.0
-        }
-      ],
+      "initial_models": [],
       "future_models": [],
       "held_units": 288
     },
@@ -4534,15 +4511,15 @@
       "future_models": [
         {
           "model": "stochA / SALE",
-          "maximum_gross_units": 3174.0
+          "maximum_gross_units": 2.0
         },
         {
           "model": "stochA / NO_SALE",
-          "maximum_gross_units": 497.0
+          "maximum_gross_units": 1798.0
         },
         {
           "model": "stochA / NO_INITIAL_SALES",
-          "maximum_gross_units": 2604.0
+          "maximum_gross_units": 2470.0
         }
       ],
       "held_units": 330
@@ -4596,8 +4573,8 @@
       "initial_models": [],
       "future_models": [
         {
-          "model": "stochA / NO_INITIAL_SALES",
-          "maximum_gross_units": 10.0
+          "model": "stochA / NO_SALE",
+          "maximum_gross_units": 69.0
         }
       ],
       "held_units": 0
@@ -4663,8 +4640,16 @@
       "quote_url": "https://finance.yahoo.com/quote/PFE/",
       "initial_models": [
         {
+          "model": "UPDATE2 / NO_SALE",
+          "units": 3.0
+        },
+        {
+          "model": "UPDATE3 / NO_SALE",
+          "units": 3.0
+        },
+        {
           "model": "stochA / NO_INITIAL_SALES",
-          "units": 3.241083
+          "units": 11.973855
         }
       ],
       "future_models": [
@@ -4674,15 +4659,15 @@
         },
         {
           "model": "STOCHASTIC / NO_SALE",
-          "maximum_gross_units": 0.009696
+          "maximum_gross_units": 0.002505
         },
         {
           "model": "stochA / SALE",
-          "maximum_gross_units": 0.833113
+          "maximum_gross_units": 42.910484
         },
         {
           "model": "stochA / NO_SALE",
-          "maximum_gross_units": 0.006301
+          "maximum_gross_units": 30.037342
         },
         {
           "model": "STOCHASTIC / NO_INITIAL_SALES",
@@ -4694,7 +4679,7 @@
         },
         {
           "model": "stochA / NO_INITIAL_SALES",
-          "maximum_gross_units": 4.000000000559112e-06
+          "maximum_gross_units": 5.000000001587068e-06
         },
         {
           "model": "stoch2A / NO_INITIAL_SALES",
@@ -4753,7 +4738,7 @@
       "future_models": [
         {
           "model": "stochA / NO_INITIAL_SALES",
-          "maximum_gross_units": 324.0
+          "maximum_gross_units": 325.0
         }
       ],
       "held_units": 0
@@ -4818,11 +4803,11 @@
       "initial_models": [
         {
           "model": "STOCHASTIC2 / SALE",
-          "units": 32.0
+          "units": 19.0
         },
         {
           "model": "stoch2A / SALE",
-          "units": 32.0
+          "units": 19.0
         },
         {
           "model": "UPDATE2 / NO_SALE",
@@ -4842,11 +4827,7 @@
         },
         {
           "model": "NETSD / SALE",
-          "units": 9.0
-        },
-        {
-          "model": "NETSD / NO_SALE",
-          "units": 9.0
+          "units": 16.0
         },
         {
           "model": "NETSD R3 / SALE",
@@ -4855,6 +4836,10 @@
         {
           "model": "NETSD R3 / NO_SALE",
           "units": 49.0
+        },
+        {
+          "model": "stochA / NO_INITIAL_SALES",
+          "units": 38.0
         }
       ],
       "future_models": [
@@ -4868,27 +4853,23 @@
         },
         {
           "model": "STOCHASTIC2 / SALE",
-          "maximum_gross_units": 99.0
+          "maximum_gross_units": 101.0
         },
         {
           "model": "STOCHASTIC2 / NO_SALE",
-          "maximum_gross_units": 118.0
-        },
-        {
-          "model": "stochA / SALE",
-          "maximum_gross_units": 243.0
+          "maximum_gross_units": 112.0
         },
         {
           "model": "stochA / NO_SALE",
-          "maximum_gross_units": 119.0
+          "maximum_gross_units": 95.0
         },
         {
           "model": "stoch2A / SALE",
-          "maximum_gross_units": 99.0
+          "maximum_gross_units": 101.0
         },
         {
           "model": "stoch2A / NO_SALE",
-          "maximum_gross_units": 118.0
+          "maximum_gross_units": 112.0
         },
         {
           "model": "STOCHASTIC / NO_INITIAL_SALES",
@@ -4896,15 +4877,15 @@
         },
         {
           "model": "STOCHASTIC2 / NO_INITIAL_SALES",
-          "maximum_gross_units": 100.0
+          "maximum_gross_units": 115.0
         },
         {
           "model": "stochA / NO_INITIAL_SALES",
-          "maximum_gross_units": 161.0
+          "maximum_gross_units": 134.0
         },
         {
           "model": "stoch2A / NO_INITIAL_SALES",
-          "maximum_gross_units": 100.0
+          "maximum_gross_units": 115.0
         }
       ],
       "held_units": 117

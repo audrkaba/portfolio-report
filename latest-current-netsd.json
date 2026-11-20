@@ -1,5 +1,5 @@
 {
-  "scope": "Current quantities/valuation updated; trading policies retain their previous inventory until reoptimisation completes. Individual genuine quote dates retained. Historical Current metrics are the full-history fixed-quantity reconstruction, distinct from terminal model objectives.",
+  "scope": "Completed financial revision. Individual genuine quote dates retained. Historical Current metrics are the full-history fixed-quantity reconstruction, distinct from terminal model objectives.",
   "holdings": {
     "TKM1T": 288.0,
     "SAF1R": 100.0,

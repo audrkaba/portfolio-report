@@ -18,14 +18,14 @@ function table(headers,rows){return '<table><thead><tr>'+headers.map(h=>'<th sco
 function changeCell(x){return x==null?'—':'<span class="'+(x<0?'co-negative':'co-positive')+'">'+pct(x)+'</span>';}
 function fitVisibleValueAxis(plot){
  const range=plot._fullLayout?.xaxis?.range;if(!range)return;
- const start=Date.parse(range[0]),end=Date.parse(range[1]);if(!Number.isFinite(start)||!Number.isFinite(end))return;
+ const axis=plot._fullLayout.xaxis,start=axis.r2l(range[0]),end=axis.r2l(range[1]);if(!Number.isFinite(start)||!Number.isFinite(end))return;
  let low=Infinity,high=-Infinity;
  const include=y=>{if(Number.isFinite(y)){low=Math.min(low,y);high=Math.max(high,y);}};
  for(const trace of plot.data){
   if((trace.yaxis&&trace.yaxis!=='y')||trace.visible===false||trace.visible==='legendonly'||trace.type!=='scatter')continue;
   let previous;
   for(let i=0;i<trace.x.length;i++){
-   const x=Date.parse(trace.x[i]),y=trace.y[i];
+   const x=axis.d2l(trace.x[i]),y=trace.y[i];
    if(y==null||!Number.isFinite(y)){previous=null;continue;}
    if(x>=start&&x<=end)include(y);
    if(previous&&x>previous.x){

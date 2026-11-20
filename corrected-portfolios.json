@@ -19,20 +19,20 @@
         "completed": true,
         "model": "STOCHASTIC2",
         "policy": "NO_SALE",
-        "input_hash": "4adf14c22a9e9d245d19af719037a2a30bd7997f42ac5ad7cd51058d00b01bfc",
-        "objective": 0.5139253590846898,
+        "input_hash": "389634458f01a14ac6deaaa41f3d1a35bcca92712a81697989369c4ea9ca8219",
+        "objective": 0.5088380053950047,
         "terminal": {
-          "netSD": 0.5402298850574713,
-          "OUT": 101,
+          "netSD": 0.5344827586206896,
+          "OUT": 100,
           "IN": 7,
           "D": 174,
-          "expected_return": 0.011183925031287185,
+          "expected_return": 0.011219336912752655,
           "scenarios": 16000,
           "probability_mass": 1.0,
           "OUT_by_order": [
-            8,
-            46,
-            47
+            9,
+            45,
+            46
           ],
           "IN_by_order": [
             1,
@@ -40,18 +40,18 @@
             3
           ]
         },
-        "expected_penalty": 0.02630452597278144,
+        "expected_penalty": 0.025644753225684894,
         "current_terminal": {
-          "netSD": 0.3448275862068966,
-          "OUT": 70,
+          "netSD": 0.3333333333333333,
+          "OUT": 68,
           "IN": 10,
           "D": 174,
-          "expected_return": 0.00773042703129545,
+          "expected_return": 0.007779853931124875,
           "scenarios": 16000,
           "probability_mass": 1.0,
           "OUT_by_order": [
             6,
-            32,
+            30,
             32
           ],
           "IN_by_order": [
@@ -61,16 +61,16 @@
           ]
         },
         "initial_only_terminal": {
-          "netSD": 0.3448275862068966,
-          "OUT": 70,
+          "netSD": 0.3333333333333333,
+          "OUT": 68,
           "IN": 10,
           "D": 174,
-          "expected_return": 0.0077304270312954565,
+          "expected_return": 0.007779853931124881,
           "scenarios": 16000,
           "probability_mass": 1.0,
           "OUT_by_order": [
             6,
-            32,
+            30,
             32
           ],
           "IN_by_order": [
@@ -88,8 +88,8 @@
           15
         ],
         "valuation_step": 20,
-        "root_cash_EUR": 3331.4306856794974,
-        "minimum_node_cash_EUR": 331.432591535131,
+        "root_cash_EUR": 3247.4306856794974,
+        "minimum_node_cash_EUR": 247.43124339444125,
         "maximum_US_cumulative_gross_purchase_EUR": 999.9999997593497,
         "stage_cap_EUR": 1000,
         "asset_cap_EUR": 750,
@@ -105,12 +105,12 @@
         "calibration": {
           "selected_backend": "CPU",
           "workers": 8,
-          "CPU_seconds": 0.004863499998464249,
-          "GPU_seconds": 0.30792969999311026,
+          "CPU_seconds": 0.0048494999937247485,
+          "GPU_seconds": 0.31557669999892823,
           "GPU_error": null
         },
-        "seconds_including_reference_preparation": 66.90489489999891,
-        "computed_at_UTC": "2026-11-20T07:38:40.901846+00:00",
+        "seconds_including_reference_preparation": 64.89449280001281,
+        "computed_at_UTC": "2026-11-20T08:33:25.776997+00:00",
         "objective_definition": "Weighted FSD/SSD/TSD of the complete four-week self-financing policy cumulative-return distribution against all72 buy-and-hold asset references and actual Current with cash, normalised by the actual augmented-network maximum degree. Subtract probability-weighted existing final-decision penalties; historical rows calibrate forecasts and feasibility, never become terminal outcomes.",
         "search_definition": "Feasible structured joint-policy proposals and coordinate neighbourhood search; all node variables and all terminal outcomes explicit; no global-optimality certificate.",
         "current_VLP": 117.0,
@@ -119,21 +119,21 @@
         "dominance_backend": "CPU",
         "current_NVDA": 0.331988,
         "artifact_sha256": {
-          "policy.npz": "fe15f34c32273a7ebb3816cf83e1c14982e0f2b21aceaa3b71bb21afe3505ae6",
-          "outcomes.npz": "47579045c2a5860fad6566d7281fc3f44e3a272b600c90c0bea60205991a0314",
-          "allocation.csv": "3a7508e576236cbe85a80eb0d68beb82b38944d64fb0af39236b18d8412ff2a5",
-          "search_trace.csv": "ca867fe856b826530df8a6ccf73aeec7f3c7e7a5cbbbed113c7c6ea6db2dcc37"
+          "policy.npz": "d72c48674893977eabb91f892e44bb7d745f0b353adcb7b964db27605443f294",
+          "outcomes.npz": "3f106395435aa8b5a2621b8cc69db3919e7a5d06ff5548be9fcae8b6fe31f6e2",
+          "allocation.csv": "726d8617bb7d450fbe187264d602f26c67a8e238d2fd7d836f8ba17dc20bb478",
+          "search_trace.csv": "34a8c3147e09dfb31bebf31de26287973c32b1243728375efdbf82dabc492aa8"
         }
       },
       "rows": [
         {
           "asset": "AKO1L",
-          "current_units": 50.0,
-          "target_units": 50.0,
+          "current_units": 100.0,
+          "target_units": 100.0,
           "change": 0.0,
           "last_price": 1.6800000000000002,
-          "invested_EUR": 84.00000000000001,
-          "weight": 0.0056,
+          "invested_EUR": 168.00000000000003,
+          "weight": 0.0112,
           "name": "Akola Group"
         },
         {
@@ -855,18 +855,18 @@
         "completed": true,
         "model": "STOCHASTIC2",
         "policy": "SALE",
-        "input_hash": "4adf14c22a9e9d245d19af719037a2a30bd7997f42ac5ad7cd51058d00b01bfc",
-        "objective": 0.7590296639191272,
+        "input_hash": "389634458f01a14ac6deaaa41f3d1a35bcca92712a81697989369c4ea9ca8219",
+        "objective": 0.7485517976603416,
         "terminal": {
-          "netSD": 0.7701149425287356,
-          "OUT": 134,
+          "netSD": 0.764367816091954,
+          "OUT": 133,
           "IN": 0,
           "D": 174,
-          "expected_return": 0.011449144534585674,
+          "expected_return": 0.01126719687680817,
           "scenarios": 16000,
           "probability_mass": 1.0,
           "OUT_by_order": [
-            15,
+            14,
             59,
             60
           ],
@@ -876,18 +876,18 @@
             0
           ]
         },
-        "expected_penalty": 0.011085278609608402,
+        "expected_penalty": 0.015816018431612355,
         "current_terminal": {
-          "netSD": 0.3448275862068966,
-          "OUT": 70,
+          "netSD": 0.3333333333333333,
+          "OUT": 68,
           "IN": 10,
           "D": 174,
-          "expected_return": 0.00773042703129545,
+          "expected_return": 0.007779853931124875,
           "scenarios": 16000,
           "probability_mass": 1.0,
           "OUT_by_order": [
             6,
-            32,
+            30,
             32
           ],
           "IN_by_order": [
@@ -897,17 +897,17 @@
           ]
         },
         "initial_only_terminal": {
-          "netSD": 0.5574712643678161,
-          "OUT": 99,
+          "netSD": 0.5287356321839081,
+          "OUT": 94,
           "IN": 2,
           "D": 174,
-          "expected_return": 0.008125233700497543,
+          "expected_return": 0.007936736647096244,
           "scenarios": 16000,
           "probability_mass": 1.0,
           "OUT_by_order": [
-            9,
-            45,
-            45
+            8,
+            43,
+            43
           ],
           "IN_by_order": [
             0,
@@ -924,13 +924,13 @@
           15
         ],
         "valuation_step": 20,
-        "root_cash_EUR": 7192.810685679497,
-        "minimum_node_cash_EUR": 5220.069176502396,
+        "root_cash_EUR": 7006.685685679497,
+        "minimum_node_cash_EUR": 5033.941316903324,
         "maximum_US_cumulative_gross_purchase_EUR": 999.9999997593497,
         "stage_cap_EUR": 1000,
         "asset_cap_EUR": 750,
         "sector_cap": 0.3,
-        "evaluated_complete_policies": 8049,
+        "evaluated_complete_policies": 8085,
         "search_rounds": 2,
         "attained_solution_not_global_certificate": true,
         "recourse_rule": {
@@ -941,12 +941,12 @@
         "calibration": {
           "selected_backend": "CPU",
           "workers": 8,
-          "CPU_seconds": 0.004903900000499561,
-          "GPU_seconds": 0.3162386999974842,
+          "CPU_seconds": 0.004843699993216433,
+          "GPU_seconds": 0.31940139998914674,
           "GPU_error": null
         },
-        "seconds_including_reference_preparation": 315.1508510999993,
-        "computed_at_UTC": "2026-11-20T07:45:00.019954+00:00",
+        "seconds_including_reference_preparation": 320.3820263000089,
+        "computed_at_UTC": "2026-11-20T08:39:26.816735+00:00",
         "objective_definition": "Weighted FSD/SSD/TSD of the complete four-week self-financing policy cumulative-return distribution against all72 buy-and-hold asset references and actual Current with cash, normalised by the actual augmented-network maximum degree. Subtract probability-weighted existing final-decision penalties; historical rows calibrate forecasts and feasibility, never become terminal outcomes.",
         "search_definition": "Feasible structured joint-policy proposals and coordinate neighbourhood search; all node variables and all terminal outcomes explicit; no global-optimality certificate.",
         "current_VLP": 117.0,
@@ -955,21 +955,21 @@
         "dominance_backend": "CPU",
         "current_NVDA": 0.331988,
         "artifact_sha256": {
-          "policy.npz": "fe67cff8b0f06a1e781cc5bff1da0b8cab92eccce19bca189b1c2e6e3af018ae",
-          "outcomes.npz": "8a1d6dac9a4adc90efff9dbde3d38e48ab1f9061be3c6847fb1230bac6a793f3",
-          "allocation.csv": "b85975b9688db44cf29390beca83e6b15533c94d500c09c50f603e7ced2c7778",
-          "search_trace.csv": "a5e19989bc772051aeee23e02535ff8d4f422a01b23a12da00845acbb3ce265d"
+          "policy.npz": "e1f8924456ac5b3c2bd023005bcb73209a6baa40639ee7da11f3e8ed412b81e5",
+          "outcomes.npz": "e56feda146c6002509be7a3c8862ed61c30ae3b71dc7da3d0f5fd4334c5b844e",
+          "allocation.csv": "6a469b3f5e28bf2b565686a8f078c1006cef11a448adbf67cb44f3b44df5a16f",
+          "search_trace.csv": "385b69f87392f7495add5cd6f07a9e65d58921c87d5ddeb40503b80243fd4f6e"
         }
       },
       "rows": [
         {
           "asset": "AKO1L",
-          "current_units": 50.0,
-          "target_units": 0.0,
-          "change": -50.0,
+          "current_units": 100.0,
+          "target_units": 100.0,
+          "change": 0.0,
           "last_price": 1.6800000000000002,
-          "invested_EUR": 0.0,
-          "weight": 0.0,
+          "invested_EUR": 168.00000000000003,
+          "weight": 0.0112,
           "name": "Akola Group"
         },
         {
@@ -1165,11 +1165,11 @@
         {
           "asset": "KNE1L",
           "current_units": 928.0,
-          "target_units": 928.0,
-          "change": 0.0,
+          "target_units": 2401.0,
+          "change": 1473.0,
           "last_price": 0.475,
-          "invested_EUR": 440.8,
-          "weight": 0.0293866666666666,
+          "invested_EUR": 1140.475,
+          "weight": 0.0760316666666666,
           "name": "KN Energies"
         },
         {
@@ -1235,11 +1235,11 @@
         {
           "asset": "MRK1T",
           "current_units": 26.0,
-          "target_units": 44.0,
-          "change": 18.0,
+          "target_units": 26.0,
+          "change": 0.0,
           "last_price": 26.85,
-          "invested_EUR": 1181.4,
-          "weight": 0.07876,
+          "invested_EUR": 698.1,
+          "weight": 0.04654,
           "name": "Merko Ehitus"
         },
         {
@@ -1475,11 +1475,11 @@
         {
           "asset": "VLP1L",
           "current_units": 117.0,
-          "target_units": 149.0,
-          "change": 32.0,
+          "target_units": 136.0,
+          "change": 19.0,
           "last_price": 15.25,
-          "invested_EUR": 2272.25,
-          "weight": 0.1514833333333333,
+          "invested_EUR": 2074.0,
+          "weight": 0.1382666666666666,
           "name": "Vilkyškių pieninė"
         },
         {
@@ -1691,39 +1691,39 @@
         "completed": true,
         "model": "STOCHASTIC2",
         "policy": "NO_INITIAL_SALES",
-        "input_hash": "4adf14c22a9e9d245d19af719037a2a30bd7997f42ac5ad7cd51058d00b01bfc",
-        "objective": 0.6437261350293879,
+        "input_hash": "389634458f01a14ac6deaaa41f3d1a35bcca92712a81697989369c4ea9ca8219",
+        "objective": 0.627842876576034,
         "terminal": {
-          "netSD": 0.6666666666666666,
-          "OUT": 118,
-          "IN": 2,
+          "netSD": 0.6494252873563219,
+          "OUT": 117,
+          "IN": 4,
           "D": 174,
-          "expected_return": 0.011067674712303221,
+          "expected_return": 0.010938786762265621,
           "scenarios": 16000,
           "probability_mass": 1.0,
           "OUT_by_order": [
             10,
-            54,
+            53,
             54
           ],
           "IN_by_order": [
             0,
-            0,
-            2
+            1,
+            3
           ]
         },
-        "expected_penalty": 0.022940531637278737,
+        "expected_penalty": 0.02158241078028792,
         "current_terminal": {
-          "netSD": 0.3448275862068966,
-          "OUT": 70,
+          "netSD": 0.3333333333333333,
+          "OUT": 68,
           "IN": 10,
           "D": 174,
-          "expected_return": 0.00773042703129545,
+          "expected_return": 0.007779853931124875,
           "scenarios": 16000,
           "probability_mass": 1.0,
           "OUT_by_order": [
             6,
-            32,
+            30,
             32
           ],
           "IN_by_order": [
@@ -1733,17 +1733,17 @@
           ]
         },
         "initial_only_terminal": {
-          "netSD": 0.3505747126436782,
-          "OUT": 71,
+          "netSD": 0.3333333333333333,
+          "OUT": 68,
           "IN": 10,
           "D": 174,
-          "expected_return": 0.007946981593161947,
+          "expected_return": 0.007779853931124881,
           "scenarios": 16000,
           "probability_mass": 1.0,
           "OUT_by_order": [
             6,
-            32,
-            33
+            30,
+            32
           ],
           "IN_by_order": [
             2,
@@ -1760,13 +1760,13 @@
           15
         ],
         "valuation_step": 20,
-        "root_cash_EUR": 3034.7306856794967,
-        "minimum_node_cash_EUR": 3446.797925854444,
+        "root_cash_EUR": 3247.4306856794974,
+        "minimum_node_cash_EUR": 3659.498363146114,
         "maximum_US_cumulative_gross_purchase_EUR": 999.9999999930149,
         "stage_cap_EUR": 1000,
         "asset_cap_EUR": 750,
         "sector_cap": 0.3,
-        "evaluated_complete_policies": 4072,
+        "evaluated_complete_policies": 4073,
         "search_rounds": 2,
         "attained_solution_not_global_certificate": true,
         "recourse_rule": {
@@ -1777,12 +1777,12 @@
         "calibration": {
           "selected_backend": "CPU",
           "workers": 8,
-          "CPU_seconds": 0.004891399999905843,
-          "GPU_seconds": 0.3170708999969065,
+          "CPU_seconds": 0.004903499997453764,
+          "GPU_seconds": 0.317877800000133,
           "GPU_error": null
         },
-        "seconds_including_reference_preparation": 78.79110239999864,
-        "computed_at_UTC": "2026-11-20T07:46:46.597858+00:00",
+        "seconds_including_reference_preparation": 77.34687480000139,
+        "computed_at_UTC": "2026-11-20T08:41:08.649108+00:00",
         "objective_definition": "Weighted FSD/SSD/TSD of the complete four-week self-financing policy cumulative-return distribution against all72 buy-and-hold asset references and actual Current with cash, normalised by the actual augmented-network maximum degree. Subtract probability-weighted existing final-decision penalties; historical rows calibrate forecasts and feasibility, never become terminal outcomes.",
         "search_definition": "Feasible structured joint-policy proposals and coordinate neighbourhood search; all node variables and all terminal outcomes explicit; no global-optimality certificate.",
         "current_VLP": 117.0,
@@ -1791,21 +1791,21 @@
         "dominance_backend": "CPU",
         "current_NVDA": 0.331988,
         "artifact_sha256": {
-          "policy.npz": "1fa59d815ed7606b1630699c4f2f8a5b2a0814fbcb69abd6376945f90b33f314",
-          "outcomes.npz": "ed310bd3f0903198defcf7de358c429dd2eeb0fd6ff934a30c7db7e6aa747f83",
-          "allocation.csv": "4af0f78cde0a1587bc384ece43afed3ab7021ec93c742f70318492d1a4714b7b",
-          "search_trace.csv": "7eae814b8a3f31a5685f82e3e1b3da41b6319ffccd05a64969a9ca53483276d5"
+          "policy.npz": "ee931b4dd50a75c64776326194439eefdeb7d9acf984bcfa8154bae2dfe4981c",
+          "outcomes.npz": "b36cc6dda106a3de9117c679317adb9cbd287a29759cde56919de8bf1612e625",
+          "allocation.csv": "726d8617bb7d450fbe187264d602f26c67a8e238d2fd7d836f8ba17dc20bb478",
+          "search_trace.csv": "a1805c396264b00acd11592ee606af3d4080ff46a071c2f7daf70ac00ec16860"
         }
       },
       "rows": [
         {
           "asset": "AKO1L",
-          "current_units": 50.0,
-          "target_units": 50.0,
+          "current_units": 100.0,
+          "target_units": 100.0,
           "change": 0.0,
           "last_price": 1.6800000000000002,
-          "invested_EUR": 84.00000000000001,
-          "weight": 0.0056,
+          "invested_EUR": 168.00000000000003,
+          "weight": 0.0112,
           "name": "Akola Group"
         },
         {
@@ -2161,11 +2161,11 @@
         {
           "asset": "RSU1L",
           "current_units": 150.0,
-          "target_units": 219.0,
-          "change": 69.0,
+          "target_units": 150.0,
+          "change": 0.0,
           "last_price": 4.3,
-          "invested_EUR": 941.7,
-          "weight": 0.0627799999999999,
+          "invested_EUR": 645.0,
+          "weight": 0.043,
           "name": "Rokiškio sūris"
         },
         {
@@ -2527,18 +2527,18 @@
         "completed": true,
         "model": "STOCHASTIC",
         "policy": "NO_SALE",
-        "input_hash": "4adf14c22a9e9d245d19af719037a2a30bd7997f42ac5ad7cd51058d00b01bfc",
-        "objective": 0.6639707516794398,
+        "input_hash": "389634458f01a14ac6deaaa41f3d1a35bcca92712a81697989369c4ea9ca8219",
+        "objective": 0.6718782316479102,
         "terminal": {
-          "netSD": 0.6956521739130435,
-          "OUT": 96,
+          "netSD": 0.7028985507246377,
+          "OUT": 97,
           "IN": 0,
           "D": 138,
-          "expected_return": 0.003469215674082585,
+          "expected_return": 0.003413992783966931,
           "scenarios": 20,
           "probability_mass": 0.9999999999999999,
           "OUT_by_order": [
-            1,
+            2,
             47,
             48
           ],
@@ -2548,13 +2548,13 @@
             0
           ]
         },
-        "expected_penalty": 0.03168142223360374,
+        "expected_penalty": 0.03102031907672758,
         "current_terminal": {
           "netSD": 0.4420289855072464,
           "OUT": 65,
           "IN": 4,
           "D": 138,
-          "expected_return": -0.00164080179826827,
+          "expected_return": -0.0015535610012533685,
           "scenarios": 20,
           "probability_mass": 0.9999999999999999,
           "OUT_by_order": [
@@ -2573,7 +2573,7 @@
           "OUT": 71,
           "IN": 4,
           "D": 138,
-          "expected_return": -0.0002976572758422024,
+          "expected_return": -0.0003541836388480391,
           "scenarios": 20,
           "probability_mass": 0.9999999999999999,
           "OUT_by_order": [
@@ -2594,8 +2594,8 @@
           10
         ],
         "valuation_step": 20,
-        "root_cash_EUR": 2333.3307715885458,
-        "minimum_node_cash_EUR": 1333.3307784944272,
+        "root_cash_EUR": 2247.7557715885487,
+        "minimum_node_cash_EUR": 1247.7557734134284,
         "maximum_US_cumulative_gross_purchase_EUR": 999.9999984549615,
         "stage_cap_EUR": 1000,
         "asset_cap_EUR": 750,
@@ -2611,12 +2611,12 @@
         "calibration": {
           "selected_backend": "CPU",
           "workers": 8,
-          "CPU_seconds": 0.00151009999535745,
-          "GPU_seconds": 0.2924060000004829,
+          "CPU_seconds": 0.0015339000092353672,
+          "GPU_seconds": 0.28574490000028163,
           "GPU_error": null
         },
-        "seconds_including_reference_preparation": 3.3496723999996902,
-        "computed_at_UTC": "2026-11-20T07:52:28.832042+00:00",
+        "seconds_including_reference_preparation": 3.5372203000006266,
+        "computed_at_UTC": "2026-11-20T08:45:35.160357+00:00",
         "objective_definition": "Weighted FSD/SSD/TSD of the complete four-week self-financing policy cumulative-return distribution against all72 buy-and-hold asset references and actual Current with cash, normalised by the actual augmented-network maximum degree. Subtract probability-weighted existing final-decision penalties; historical rows calibrate forecasts and feasibility, never become terminal outcomes.",
         "search_definition": "Feasible structured joint-policy proposals and coordinate neighbourhood search; all node variables and all terminal outcomes explicit; no global-optimality certificate.",
         "current_VLP": 117.0,
@@ -2625,21 +2625,21 @@
         "dominance_backend": "CPU",
         "current_NVDA": 0.331988,
         "artifact_sha256": {
-          "policy.npz": "fa896ece6e21a783b4b7ee1aee0718233fd04107bf7a03ebab4c3ea52f679371",
-          "outcomes.npz": "071daf8cf7bb28c5406f5e32aabaf1a3051689e0b0fa01218fd6ca57932bf5fa",
-          "allocation.csv": "fd88bb2a6ac3c5a96914b08ac83e6b6dd9bbd60a3b7d18b6ce65aa8ac389788f",
-          "search_trace.csv": "4a3d4387207ab8793f75c872b292c665d2c9d850edeaa3ecb901a70d25a4c0b4"
+          "policy.npz": "01de64153a90de5381c88a57758b03e57382d69cd3f45d57efab0f4410e4169e",
+          "outcomes.npz": "a93754160048a9921f8126038842b60ea5a8b222c0e027b52ce6b239268be1f1",
+          "allocation.csv": "64a9aa615c35ce97f5f9ab8240a9d252f4d6920ac80763b667e029cc71be986a",
+          "search_trace.csv": "6ba6646ceba406782012319cd503baa852bfedefeb56fc33ed3e06747523ac2d"
         }
       },
       "rows": [
         {
           "asset": "AKO1L",
-          "current_units": 50.0,
-          "target_units": 50.0,
+          "current_units": 100.0,
+          "target_units": 100.0,
           "change": 0.0,
           "last_price": 1.6800000000000002,
-          "invested_EUR": 84.00000000000001,
-          "weight": 0.0056,
+          "invested_EUR": 168.00000000000003,
+          "weight": 0.0112,
           "name": "Akola Group"
         },
         {
@@ -2835,11 +2835,11 @@
         {
           "asset": "KNE1L",
           "current_units": 928.0,
-          "target_units": 928.0,
-          "change": 0.0,
+          "target_units": 2401.0,
+          "change": 1473.0,
           "last_price": 0.475,
-          "invested_EUR": 440.8,
-          "weight": 0.0293866666666666,
+          "invested_EUR": 1140.475,
+          "weight": 0.0760316666666666,
           "name": "KN Energies"
         },
         {
@@ -2905,11 +2905,11 @@
         {
           "asset": "MRK1T",
           "current_units": 26.0,
-          "target_units": 52.0,
-          "change": 26.0,
+          "target_units": 26.0,
+          "change": 0.0,
           "last_price": 26.85,
-          "invested_EUR": 1396.2,
-          "weight": 0.09308,
+          "invested_EUR": 698.1,
+          "weight": 0.04654,
           "name": "Merko Ehitus"
         },
         {
@@ -3361,20 +3361,20 @@
         "completed": true,
         "model": "STOCHASTIC",
         "policy": "SALE",
-        "input_hash": "4adf14c22a9e9d245d19af719037a2a30bd7997f42ac5ad7cd51058d00b01bfc",
-        "objective": 0.9234100677989786,
+        "input_hash": "389634458f01a14ac6deaaa41f3d1a35bcca92712a81697989369c4ea9ca8219",
+        "objective": 0.9592995949804737,
         "terminal": {
-          "netSD": 0.9420289855072463,
-          "OUT": 130,
+          "netSD": 0.9782608695652174,
+          "OUT": 135,
           "IN": 0,
           "D": 138,
-          "expected_return": 0.012059296538561737,
+          "expected_return": 0.012606849560666461,
           "scenarios": 20,
           "probability_mass": 0.9999999999999999,
           "OUT_by_order": [
-            4,
-            63,
-            63
+            5,
+            65,
+            65
           ],
           "IN_by_order": [
             0,
@@ -3382,13 +3382,13 @@
             0
           ]
         },
-        "expected_penalty": 0.018618917708267683,
+        "expected_penalty": 0.018961274584743705,
         "current_terminal": {
           "netSD": 0.4420289855072464,
           "OUT": 65,
           "IN": 4,
           "D": 138,
-          "expected_return": -0.00164080179826827,
+          "expected_return": -0.0015535610012533685,
           "scenarios": 20,
           "probability_mass": 0.9999999999999999,
           "OUT_by_order": [
@@ -3403,17 +3403,17 @@
           ]
         },
         "initial_only_terminal": {
-          "netSD": 0.7101449275362319,
-          "OUT": 98,
+          "netSD": 0.7463768115942029,
+          "OUT": 103,
           "IN": 0,
           "D": 138,
-          "expected_return": 0.004426463481419134,
+          "expected_return": 0.0048076528442416245,
           "scenarios": 20,
           "probability_mass": 0.9999999999999999,
           "OUT_by_order": [
-            0,
-            49,
-            49
+            1,
+            51,
+            51
           ],
           "IN_by_order": [
             0,
@@ -3428,13 +3428,13 @@
           10
         ],
         "valuation_step": 20,
-        "root_cash_EUR": 4652.110771588548,
-        "minimum_node_cash_EUR": 4459.841361918348,
-        "maximum_US_cumulative_gross_purchase_EUR": 999.9999984549615,
+        "root_cash_EUR": 4611.560740324136,
+        "minimum_node_cash_EUR": 4419.291330653936,
+        "maximum_US_cumulative_gross_purchase_EUR": 999.999999445659,
         "stage_cap_EUR": 1000,
         "asset_cap_EUR": 750,
         "sector_cap": 0.3,
-        "evaluated_complete_policies": 8107,
+        "evaluated_complete_policies": 8077,
         "search_rounds": 2,
         "attained_solution_not_global_certificate": true,
         "recourse_rule": {
@@ -3445,12 +3445,12 @@
         "calibration": {
           "selected_backend": "CPU",
           "workers": 8,
-          "CPU_seconds": 0.001443900000595022,
-          "GPU_seconds": 0.2834874999971362,
+          "CPU_seconds": 0.0014337000029627234,
+          "GPU_seconds": 0.28680759998678695,
           "GPU_error": null
         },
-        "seconds_including_reference_preparation": 5.162355299995397,
-        "computed_at_UTC": "2026-11-20T07:52:52.816710+00:00",
+        "seconds_including_reference_preparation": 5.045155600004364,
+        "computed_at_UTC": "2026-11-20T08:45:59.130912+00:00",
         "objective_definition": "Weighted FSD/SSD/TSD of the complete four-week self-financing policy cumulative-return distribution against all72 buy-and-hold asset references and actual Current with cash, normalised by the actual augmented-network maximum degree. Subtract probability-weighted existing final-decision penalties; historical rows calibrate forecasts and feasibility, never become terminal outcomes.",
         "search_definition": "Feasible structured joint-policy proposals and coordinate neighbourhood search; all node variables and all terminal outcomes explicit; no global-optimality certificate.",
         "current_VLP": 117.0,
@@ -3459,21 +3459,21 @@
         "dominance_backend": "CPU",
         "current_NVDA": 0.331988,
         "artifact_sha256": {
-          "policy.npz": "80a51db1151297fceee62f9f55c6bc71576bbf5623ff5b0c116239b68d2f908a",
-          "outcomes.npz": "0d1416ea7e84985dde767353ce1c5f4fe6a4274ed75fce234f912c78b7b7bb50",
-          "allocation.csv": "a14d64bba2d8063f56b6c73b96f193c1ec549fe948ce87b38ba462b400a9c42b",
-          "search_trace.csv": "24b54d453d9eee8339124a7f9082336c9771320518af71238fcd4dbb46a101a3"
+          "policy.npz": "8ffc446f20278a2da3feff4a9dd4a1b36421502213884283aefd1bc46853f8be",
+          "outcomes.npz": "a6a750fa3affeb9194ddc376b5fcdf1b5fb1853ef4bad50f28c5ad795cbc47e7",
+          "allocation.csv": "91b334c10c197ac19ff93d54da52608e316c58789c42192b9ebd6e69c7b83bc9",
+          "search_trace.csv": "5a162751dd59edbcec2569a734ab251fb0be63451e5a5f57c523e6739b2d262b"
         }
       },
       "rows": [
         {
           "asset": "AKO1L",
-          "current_units": 50.0,
-          "target_units": 50.0,
+          "current_units": 100.0,
+          "target_units": 100.0,
           "change": 0.0,
           "last_price": 1.6800000000000002,
-          "invested_EUR": 84.00000000000001,
-          "weight": 0.0056,
+          "invested_EUR": 168.00000000000003,
+          "weight": 0.0112,
           "name": "Akola Group"
         },
         {
@@ -3589,11 +3589,11 @@
         {
           "asset": "GRG1L",
           "current_units": 543.0,
-          "target_units": 271.0,
-          "change": -272.0,
+          "target_units": 0.0,
+          "change": -543.0,
           "last_price": 0.92,
-          "invested_EUR": 249.32,
-          "weight": 0.0166213333333333,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
           "name": "Grigeo Group"
         },
         {
@@ -3669,11 +3669,11 @@
         {
           "asset": "KNE1L",
           "current_units": 928.0,
-          "target_units": 928.0,
-          "change": 0.0,
+          "target_units": 1980.0,
+          "change": 1052.0,
           "last_price": 0.475,
-          "invested_EUR": 440.8,
-          "weight": 0.0293866666666666,
+          "invested_EUR": 940.5,
+          "weight": 0.0627,
           "name": "KN Energies"
         },
         {
@@ -3739,11 +3739,11 @@
         {
           "asset": "MRK1T",
           "current_units": 26.0,
-          "target_units": 52.0,
-          "change": 26.0,
+          "target_units": 26.0,
+          "change": 0.0,
           "last_price": 26.85,
-          "invested_EUR": 1396.2,
-          "weight": 0.09308,
+          "invested_EUR": 698.1,
+          "weight": 0.04654,
           "name": "Merko Ehitus"
         },
         {
@@ -3929,11 +3929,11 @@
         {
           "asset": "TSM1T",
           "current_units": 330.0,
-          "target_units": 0.0,
-          "change": -330.0,
+          "target_units": 165.0,
+          "change": -165.0,
           "last_price": 1.238,
-          "invested_EUR": 0.0,
-          "weight": 0.0,
+          "invested_EUR": 204.27,
+          "weight": 0.013618,
           "name": "Tallinna Sadam"
         },
         {
@@ -4179,11 +4179,11 @@
         {
           "asset": "US_NVDA",
           "current_units": 0.331988,
-          "target_units": 2.590927,
-          "change": 2.2589390000000003,
+          "target_units": 4.096887,
+          "change": 3.764899,
           "last_price": 132.805672969013,
-          "invested_EUR": 344.0898038485859,
-          "weight": 0.0229393202565723,
+          "invested_EUR": 544.0898351130007,
+          "weight": 0.0362726556742,
           "name": "NVIDIA Corporation"
         }
       ]
@@ -4195,14 +4195,14 @@
         "completed": true,
         "model": "STOCHASTIC",
         "policy": "NO_INITIAL_SALES",
-        "input_hash": "4adf14c22a9e9d245d19af719037a2a30bd7997f42ac5ad7cd51058d00b01bfc",
-        "objective": 0.8626692900348623,
+        "input_hash": "389634458f01a14ac6deaaa41f3d1a35bcca92712a81697989369c4ea9ca8219",
+        "objective": 0.8632827048352117,
         "terminal": {
           "netSD": 0.8840579710144928,
           "OUT": 122,
           "IN": 0,
           "D": 138,
-          "expected_return": 0.01066874037890144,
+          "expected_return": 0.010777849826270587,
           "scenarios": 20,
           "probability_mass": 0.9999999999999999,
           "OUT_by_order": [
@@ -4216,13 +4216,13 @@
             0
           ]
         },
-        "expected_penalty": 0.02138868097963048,
+        "expected_penalty": 0.02077526617928109,
         "current_terminal": {
           "netSD": 0.4420289855072464,
           "OUT": 65,
           "IN": 4,
           "D": 138,
-          "expected_return": -0.00164080179826827,
+          "expected_return": -0.0015535610012533685,
           "scenarios": 20,
           "probability_mass": 0.9999999999999999,
           "OUT_by_order": [
@@ -4241,7 +4241,7 @@
           "OUT": 75,
           "IN": 2,
           "D": 138,
-          "expected_return": 0.0003749678630615576,
+          "expected_return": 0.0004622086600765586,
           "scenarios": 20,
           "probability_mass": 0.9999999999999999,
           "OUT_by_order": [
@@ -4262,8 +4262,8 @@
           10
         ],
         "valuation_step": 20,
-        "root_cash_EUR": 2336.0807090597173,
-        "minimum_node_cash_EUR": 2336.0807090597173,
+        "root_cash_EUR": 2252.0807090597173,
+        "minimum_node_cash_EUR": 2252.0807090597173,
         "maximum_US_cumulative_gross_purchase_EUR": 999.9999913825513,
         "stage_cap_EUR": 1000,
         "asset_cap_EUR": 750,
@@ -4279,12 +4279,12 @@
         "calibration": {
           "selected_backend": "CPU",
           "workers": 8,
-          "CPU_seconds": 0.0016955000028247014,
-          "GPU_seconds": 0.28673800000251504,
+          "CPU_seconds": 0.0016018000023905188,
+          "GPU_seconds": 0.2758155000046827,
           "GPU_error": null
         },
-        "seconds_including_reference_preparation": 3.805017200000293,
-        "computed_at_UTC": "2026-11-20T07:53:15.941448+00:00",
+        "seconds_including_reference_preparation": 3.6264443000109168,
+        "computed_at_UTC": "2026-11-20T08:46:22.100777+00:00",
         "objective_definition": "Weighted FSD/SSD/TSD of the complete four-week self-financing policy cumulative-return distribution against all72 buy-and-hold asset references and actual Current with cash, normalised by the actual augmented-network maximum degree. Subtract probability-weighted existing final-decision penalties; historical rows calibrate forecasts and feasibility, never become terminal outcomes.",
         "search_definition": "Feasible structured joint-policy proposals and coordinate neighbourhood search; all node variables and all terminal outcomes explicit; no global-optimality certificate.",
         "current_VLP": 117.0,
@@ -4293,21 +4293,21 @@
         "dominance_backend": "CPU",
         "current_NVDA": 0.331988,
         "artifact_sha256": {
-          "policy.npz": "046226b9ba7d5c1acd536352414ca00cfda6d13414cf57c6826d32507f46859d",
-          "outcomes.npz": "2e7f714d79e24516d1da0011fa0150dfa0440e1f92482befbe240eb8db3cdc7e",
-          "allocation.csv": "180b3b37d72b6e5b94ff25fad9db24ef23cb72f99799fea1923543339aa3b46c",
-          "search_trace.csv": "d061a0dbda6468d54032dd895035bfea94d367cf555913d605261ef4cf8e9f72"
+          "policy.npz": "4e04bb9b03512c4303d8dc44e76911193e52e108de8a41cbe812af5d291e2ec5",
+          "outcomes.npz": "9bedbd4d8acd254c77f51fd39dfcffca5799ea58bbef509a37255158e06c128b",
+          "allocation.csv": "e5a70099450c9ef23bff9f10d3cec2f9a0984fe85d5e24b2ad3dc17eb514bacb",
+          "search_trace.csv": "e49c65e396f30a7f36136bc1c188dcf6a5ec7f9120fb76749cee22f2cb595dc2"
         }
       },
       "rows": [
         {
           "asset": "AKO1L",
-          "current_units": 50.0,
-          "target_units": 50.0,
+          "current_units": 100.0,
+          "target_units": 100.0,
           "change": 0.0,
           "last_price": 1.6800000000000002,
-          "invested_EUR": 84.00000000000001,
-          "weight": 0.0056,
+          "invested_EUR": 168.00000000000003,
+          "weight": 0.0112,
           "name": "Akola Group"
         },
         {
@@ -5029,20 +5029,20 @@
         "completed": true,
         "model": "stoch2A",
         "policy": "NO_SALE",
-        "input_hash": "4adf14c22a9e9d245d19af719037a2a30bd7997f42ac5ad7cd51058d00b01bfc",
-        "objective": 0.5139253590846898,
+        "input_hash": "389634458f01a14ac6deaaa41f3d1a35bcca92712a81697989369c4ea9ca8219",
+        "objective": 0.5088380053950047,
         "terminal": {
-          "netSD": 0.5402298850574713,
-          "OUT": 101,
+          "netSD": 0.5344827586206896,
+          "OUT": 100,
           "IN": 7,
           "D": 174,
-          "expected_return": 0.011183925031287185,
+          "expected_return": 0.011219336912752655,
           "scenarios": 16000,
           "probability_mass": 1.0,
           "OUT_by_order": [
-            8,
-            46,
-            47
+            9,
+            45,
+            46
           ],
           "IN_by_order": [
             1,
@@ -5050,18 +5050,18 @@
             3
           ]
         },
-        "expected_penalty": 0.02630452597278144,
+        "expected_penalty": 0.025644753225684894,
         "current_terminal": {
-          "netSD": 0.3448275862068966,
-          "OUT": 70,
+          "netSD": 0.3333333333333333,
+          "OUT": 68,
           "IN": 10,
           "D": 174,
-          "expected_return": 0.00773042703129545,
+          "expected_return": 0.007779853931124875,
           "scenarios": 16000,
           "probability_mass": 1.0,
           "OUT_by_order": [
             6,
-            32,
+            30,
             32
           ],
           "IN_by_order": [
@@ -5071,16 +5071,16 @@
           ]
         },
         "initial_only_terminal": {
-          "netSD": 0.3448275862068966,
-          "OUT": 70,
+          "netSD": 0.3333333333333333,
+          "OUT": 68,
           "IN": 10,
           "D": 174,
-          "expected_return": 0.0077304270312954565,
+          "expected_return": 0.007779853931124881,
           "scenarios": 16000,
           "probability_mass": 1.0,
           "OUT_by_order": [
             6,
-            32,
+            30,
             32
           ],
           "IN_by_order": [
@@ -5098,8 +5098,8 @@
           15
         ],
         "valuation_step": 20,
-        "root_cash_EUR": 3331.4306856794974,
-        "minimum_node_cash_EUR": 331.432591535131,
+        "root_cash_EUR": 3247.4306856794974,
+        "minimum_node_cash_EUR": 247.43124339444125,
         "maximum_US_cumulative_gross_purchase_EUR": 999.9999997593497,
         "stage_cap_EUR": null,
         "asset_cap_EUR": null,
@@ -5115,12 +5115,12 @@
         "calibration": {
           "selected_backend": "CPU",
           "workers": 8,
-          "CPU_seconds": 0.004863499998464249,
-          "GPU_seconds": 0.30792969999311026,
+          "CPU_seconds": 0.0048494999937247485,
+          "GPU_seconds": 0.31557669999892823,
           "GPU_error": null
         },
-        "seconds_including_reference_preparation": 66.90489489999891,
-        "computed_at_UTC": "2026-11-20T07:38:40.901846+00:00",
+        "seconds_including_reference_preparation": 64.89449280001281,
+        "computed_at_UTC": "2026-11-20T08:33:25.776997+00:00",
         "objective_definition": "Weighted FSD/SSD/TSD of the complete four-week self-financing policy cumulative-return distribution against all72 buy-and-hold asset references and actual Current with cash, normalised by the actual augmented-network maximum degree. Subtract probability-weighted existing final-decision penalties; historical rows calibrate forecasts and feasibility, never become terminal outcomes.",
         "search_definition": "Feasible structured joint-policy proposals and coordinate neighbourhood search; all node variables and all terminal outcomes explicit; no global-optimality certificate.",
         "current_VLP": 117.0,
@@ -5129,28 +5129,28 @@
         "dominance_backend": "CPU",
         "current_NVDA": 0.331988,
         "artifact_sha256": {
-          "policy.npz": "fe15f34c32273a7ebb3816cf83e1c14982e0f2b21aceaa3b71bb21afe3505ae6",
-          "outcomes.npz": "47579045c2a5860fad6566d7281fc3f44e3a272b600c90c0bea60205991a0314",
-          "allocation.csv": "3a7508e576236cbe85a80eb0d68beb82b38944d64fb0af39236b18d8412ff2a5",
-          "search_trace.csv": "ca867fe856b826530df8a6ccf73aeec7f3c7e7a5cbbbed113c7c6ea6db2dcc37"
+          "policy.npz": "d72c48674893977eabb91f892e44bb7d745f0b353adcb7b964db27605443f294",
+          "outcomes.npz": "3f106395435aa8b5a2621b8cc69db3919e7a5d06ff5548be9fcae8b6fe31f6e2",
+          "allocation.csv": "726d8617bb7d450fbe187264d602f26c67a8e238d2fd7d836f8ba17dc20bb478",
+          "search_trace.csv": "34a8c3147e09dfb31bebf31de26287973c32b1243728375efdbf82dabc492aa8"
         },
         "feasible_inclusion": {
           "source_model": "STOCHASTIC2",
           "source_policy": "NO_SALE",
-          "target_previous_objective": 0.49634117089242824,
+          "target_previous_objective": 0.47677483726468456,
           "why": "Known feasible policy belongs to the relaxed feasible set; no new optimality claim",
-          "target_original_search_seconds": 64.29074670000409
+          "target_original_search_seconds": 30.888356300012674
         }
       },
       "rows": [
         {
           "asset": "AKO1L",
-          "current_units": 50.0,
-          "target_units": 50.0,
+          "current_units": 100.0,
+          "target_units": 100.0,
           "change": 0.0,
           "last_price": 1.6800000000000002,
-          "invested_EUR": 84.00000000000001,
-          "weight": 0.0056,
+          "invested_EUR": 168.00000000000003,
+          "weight": 0.0112,
           "name": "Akola Group"
         },
         {
@@ -5872,18 +5872,18 @@
         "completed": true,
         "model": "stoch2A",
         "policy": "SALE",
-        "input_hash": "4adf14c22a9e9d245d19af719037a2a30bd7997f42ac5ad7cd51058d00b01bfc",
-        "objective": 0.7590296639191272,
+        "input_hash": "389634458f01a14ac6deaaa41f3d1a35bcca92712a81697989369c4ea9ca8219",
+        "objective": 0.7485517976603416,
         "terminal": {
-          "netSD": 0.7701149425287356,
-          "OUT": 134,
+          "netSD": 0.764367816091954,
+          "OUT": 133,
           "IN": 0,
           "D": 174,
-          "expected_return": 0.011449144534585674,
+          "expected_return": 0.01126719687680817,
           "scenarios": 16000,
           "probability_mass": 1.0,
           "OUT_by_order": [
-            15,
+            14,
             59,
             60
           ],
@@ -5893,18 +5893,18 @@
             0
           ]
         },
-        "expected_penalty": 0.011085278609608402,
+        "expected_penalty": 0.015816018431612355,
         "current_terminal": {
-          "netSD": 0.3448275862068966,
-          "OUT": 70,
+          "netSD": 0.3333333333333333,
+          "OUT": 68,
           "IN": 10,
           "D": 174,
-          "expected_return": 0.00773042703129545,
+          "expected_return": 0.007779853931124875,
           "scenarios": 16000,
           "probability_mass": 1.0,
           "OUT_by_order": [
             6,
-            32,
+            30,
             32
           ],
           "IN_by_order": [
@@ -5914,17 +5914,17 @@
           ]
         },
         "initial_only_terminal": {
-          "netSD": 0.5574712643678161,
-          "OUT": 99,
+          "netSD": 0.5287356321839081,
+          "OUT": 94,
           "IN": 2,
           "D": 174,
-          "expected_return": 0.008125233700497543,
+          "expected_return": 0.007936736647096244,
           "scenarios": 16000,
           "probability_mass": 1.0,
           "OUT_by_order": [
-            9,
-            45,
-            45
+            8,
+            43,
+            43
           ],
           "IN_by_order": [
             0,
@@ -5941,13 +5941,13 @@
           15
         ],
         "valuation_step": 20,
-        "root_cash_EUR": 7192.810685679497,
-        "minimum_node_cash_EUR": 5220.069176502396,
+        "root_cash_EUR": 7006.685685679497,
+        "minimum_node_cash_EUR": 5033.941316903324,
         "maximum_US_cumulative_gross_purchase_EUR": 999.9999997593497,
         "stage_cap_EUR": null,
         "asset_cap_EUR": null,
         "sector_cap": 0.3,
-        "evaluated_complete_policies": 8049,
+        "evaluated_complete_policies": 8085,
         "search_rounds": 2,
         "attained_solution_not_global_certificate": true,
         "recourse_rule": {
@@ -5958,12 +5958,12 @@
         "calibration": {
           "selected_backend": "CPU",
           "workers": 8,
-          "CPU_seconds": 0.004903900000499561,
-          "GPU_seconds": 0.3162386999974842,
+          "CPU_seconds": 0.004843699993216433,
+          "GPU_seconds": 0.31940139998914674,
           "GPU_error": null
         },
-        "seconds_including_reference_preparation": 315.1508510999993,
-        "computed_at_UTC": "2026-11-20T07:45:00.019954+00:00",
+        "seconds_including_reference_preparation": 320.3820263000089,
+        "computed_at_UTC": "2026-11-20T08:39:26.816735+00:00",
         "objective_definition": "Weighted FSD/SSD/TSD of the complete four-week self-financing policy cumulative-return distribution against all72 buy-and-hold asset references and actual Current with cash, normalised by the actual augmented-network maximum degree. Subtract probability-weighted existing final-decision penalties; historical rows calibrate forecasts and feasibility, never become terminal outcomes.",
         "search_definition": "Feasible structured joint-policy proposals and coordinate neighbourhood search; all node variables and all terminal outcomes explicit; no global-optimality certificate.",
         "current_VLP": 117.0,
@@ -5972,28 +5972,28 @@
         "dominance_backend": "CPU",
         "current_NVDA": 0.331988,
         "artifact_sha256": {
-          "policy.npz": "fe67cff8b0f06a1e781cc5bff1da0b8cab92eccce19bca189b1c2e6e3af018ae",
-          "outcomes.npz": "8a1d6dac9a4adc90efff9dbde3d38e48ab1f9061be3c6847fb1230bac6a793f3",
-          "allocation.csv": "b85975b9688db44cf29390beca83e6b15533c94d500c09c50f603e7ced2c7778",
-          "search_trace.csv": "a5e19989bc772051aeee23e02535ff8d4f422a01b23a12da00845acbb3ce265d"
+          "policy.npz": "e1f8924456ac5b3c2bd023005bcb73209a6baa40639ee7da11f3e8ed412b81e5",
+          "outcomes.npz": "e56feda146c6002509be7a3c8862ed61c30ae3b71dc7da3d0f5fd4334c5b844e",
+          "allocation.csv": "6a469b3f5e28bf2b565686a8f078c1006cef11a448adbf67cb44f3b44df5a16f",
+          "search_trace.csv": "385b69f87392f7495add5cd6f07a9e65d58921c87d5ddeb40503b80243fd4f6e"
         },
         "feasible_inclusion": {
           "source_model": "STOCHASTIC2",
           "source_policy": "SALE",
-          "target_previous_objective": 0.711351688550918,
+          "target_previous_objective": 0.7063789134806615,
           "why": "Known feasible policy belongs to the relaxed feasible set; no new optimality claim",
-          "target_original_search_seconds": 111.88446670000121
+          "target_original_search_seconds": 108.71794789998967
         }
       },
       "rows": [
         {
           "asset": "AKO1L",
-          "current_units": 50.0,
-          "target_units": 0.0,
-          "change": -50.0,
+          "current_units": 100.0,
+          "target_units": 100.0,
+          "change": 0.0,
           "last_price": 1.6800000000000002,
-          "invested_EUR": 0.0,
-          "weight": 0.0,
+          "invested_EUR": 168.00000000000003,
+          "weight": 0.0112,
           "name": "Akola Group"
         },
         {
@@ -6189,11 +6189,11 @@
         {
           "asset": "KNE1L",
           "current_units": 928.0,
-          "target_units": 928.0,
-          "change": 0.0,
+          "target_units": 2401.0,
+          "change": 1473.0,
           "last_price": 0.475,
-          "invested_EUR": 440.8,
-          "weight": 0.0293866666666666,
+          "invested_EUR": 1140.475,
+          "weight": 0.0760316666666666,
           "name": "KN Energies"
         },
         {
@@ -6259,11 +6259,11 @@
         {
           "asset": "MRK1T",
           "current_units": 26.0,
-          "target_units": 44.0,
-          "change": 18.0,
+          "target_units": 26.0,
+          "change": 0.0,
           "last_price": 26.85,
-          "invested_EUR": 1181.4,
-          "weight": 0.07876,
+          "invested_EUR": 698.1,
+          "weight": 0.04654,
           "name": "Merko Ehitus"
         },
         {
@@ -6499,11 +6499,11 @@
         {
           "asset": "VLP1L",
           "current_units": 117.0,
-          "target_units": 149.0,
-          "change": 32.0,
+          "target_units": 136.0,
+          "change": 19.0,
           "last_price": 15.25,
-          "invested_EUR": 2272.25,
-          "weight": 0.1514833333333333,
+          "invested_EUR": 2074.0,
+          "weight": 0.1382666666666666,
           "name": "Vilkyškių pieninė"
         },
         {
@@ -6715,39 +6715,39 @@
         "completed": true,
         "model": "stoch2A",
         "policy": "NO_INITIAL_SALES",
-        "input_hash": "4adf14c22a9e9d245d19af719037a2a30bd7997f42ac5ad7cd51058d00b01bfc",
-        "objective": 0.6437261350293879,
+        "input_hash": "389634458f01a14ac6deaaa41f3d1a35bcca92712a81697989369c4ea9ca8219",
+        "objective": 0.627842876576034,
         "terminal": {
-          "netSD": 0.6666666666666666,
-          "OUT": 118,
-          "IN": 2,
+          "netSD": 0.6494252873563219,
+          "OUT": 117,
+          "IN": 4,
           "D": 174,
-          "expected_return": 0.011067674712303221,
+          "expected_return": 0.010938786762265621,
           "scenarios": 16000,
           "probability_mass": 1.0,
           "OUT_by_order": [
             10,
-            54,
+            53,
             54
           ],
           "IN_by_order": [
             0,
-            0,
-            2
+            1,
+            3
           ]
         },
-        "expected_penalty": 0.022940531637278737,
+        "expected_penalty": 0.02158241078028792,
         "current_terminal": {
-          "netSD": 0.3448275862068966,
-          "OUT": 70,
+          "netSD": 0.3333333333333333,
+          "OUT": 68,
           "IN": 10,
           "D": 174,
-          "expected_return": 0.00773042703129545,
+          "expected_return": 0.007779853931124875,
           "scenarios": 16000,
           "probability_mass": 1.0,
           "OUT_by_order": [
             6,
-            32,
+            30,
             32
           ],
           "IN_by_order": [
@@ -6757,17 +6757,17 @@
           ]
         },
         "initial_only_terminal": {
-          "netSD": 0.3505747126436782,
-          "OUT": 71,
+          "netSD": 0.3333333333333333,
+          "OUT": 68,
           "IN": 10,
           "D": 174,
-          "expected_return": 0.007946981593161947,
+          "expected_return": 0.007779853931124881,
           "scenarios": 16000,
           "probability_mass": 1.0,
           "OUT_by_order": [
             6,
-            32,
-            33
+            30,
+            32
           ],
           "IN_by_order": [
             2,
@@ -6784,13 +6784,13 @@
           15
         ],
         "valuation_step": 20,
-        "root_cash_EUR": 3034.7306856794967,
-        "minimum_node_cash_EUR": 3446.797925854444,
+        "root_cash_EUR": 3247.4306856794974,
+        "minimum_node_cash_EUR": 3659.498363146114,
         "maximum_US_cumulative_gross_purchase_EUR": 999.9999999930149,
         "stage_cap_EUR": null,
         "asset_cap_EUR": null,
         "sector_cap": 0.3,
-        "evaluated_complete_policies": 4072,
+        "evaluated_complete_policies": 4073,
         "search_rounds": 2,
         "attained_solution_not_global_certificate": true,
         "recourse_rule": {
@@ -6801,12 +6801,12 @@
         "calibration": {
           "selected_backend": "CPU",
           "workers": 8,
-          "CPU_seconds": 0.004891399999905843,
-          "GPU_seconds": 0.3170708999969065,
+          "CPU_seconds": 0.004903499997453764,
+          "GPU_seconds": 0.317877800000133,
           "GPU_error": null
         },
-        "seconds_including_reference_preparation": 78.79110239999864,
-        "computed_at_UTC": "2026-11-20T07:46:46.597858+00:00",
+        "seconds_including_reference_preparation": 77.34687480000139,
+        "computed_at_UTC": "2026-11-20T08:41:08.649108+00:00",
         "objective_definition": "Weighted FSD/SSD/TSD of the complete four-week self-financing policy cumulative-return distribution against all72 buy-and-hold asset references and actual Current with cash, normalised by the actual augmented-network maximum degree. Subtract probability-weighted existing final-decision penalties; historical rows calibrate forecasts and feasibility, never become terminal outcomes.",
         "search_definition": "Feasible structured joint-policy proposals and coordinate neighbourhood search; all node variables and all terminal outcomes explicit; no global-optimality certificate.",
         "current_VLP": 117.0,
@@ -6815,28 +6815,28 @@
         "dominance_backend": "CPU",
         "current_NVDA": 0.331988,
         "artifact_sha256": {
-          "policy.npz": "1fa59d815ed7606b1630699c4f2f8a5b2a0814fbcb69abd6376945f90b33f314",
-          "outcomes.npz": "ed310bd3f0903198defcf7de358c429dd2eeb0fd6ff934a30c7db7e6aa747f83",
-          "allocation.csv": "4af0f78cde0a1587bc384ece43afed3ab7021ec93c742f70318492d1a4714b7b",
-          "search_trace.csv": "7eae814b8a3f31a5685f82e3e1b3da41b6319ffccd05a64969a9ca53483276d5"
+          "policy.npz": "ee931b4dd50a75c64776326194439eefdeb7d9acf984bcfa8154bae2dfe4981c",
+          "outcomes.npz": "b36cc6dda106a3de9117c679317adb9cbd287a29759cde56919de8bf1612e625",
+          "allocation.csv": "726d8617bb7d450fbe187264d602f26c67a8e238d2fd7d836f8ba17dc20bb478",
+          "search_trace.csv": "a1805c396264b00acd11592ee606af3d4080ff46a071c2f7daf70ac00ec16860"
         },
         "feasible_inclusion": {
           "source_model": "STOCHASTIC2",
           "source_policy": "NO_INITIAL_SALES",
-          "target_previous_objective": 0.49634117089242824,
+          "target_previous_objective": 0.47677483726468456,
           "why": "Known feasible policy belongs to the relaxed feasible set; no new optimality claim",
-          "target_original_search_seconds": 66.01543649999803
+          "target_original_search_seconds": 29.39057089999551
         }
       },
       "rows": [
         {
           "asset": "AKO1L",
-          "current_units": 50.0,
-          "target_units": 50.0,
+          "current_units": 100.0,
+          "target_units": 100.0,
           "change": 0.0,
           "last_price": 1.6800000000000002,
-          "invested_EUR": 84.00000000000001,
-          "weight": 0.0056,
+          "invested_EUR": 168.00000000000003,
+          "weight": 0.0112,
           "name": "Akola Group"
         },
         {
@@ -7192,11 +7192,11 @@
         {
           "asset": "RSU1L",
           "current_units": 150.0,
-          "target_units": 219.0,
-          "change": 69.0,
+          "target_units": 150.0,
+          "change": 0.0,
           "last_price": 4.3,
-          "invested_EUR": 941.7,
-          "weight": 0.0627799999999999,
+          "invested_EUR": 645.0,
+          "weight": 0.043,
           "name": "Rokiškio sūris"
         },
         {
@@ -7558,14 +7558,14 @@
         "completed": true,
         "model": "stochA",
         "policy": "NO_SALE",
-        "input_hash": "4adf14c22a9e9d245d19af719037a2a30bd7997f42ac5ad7cd51058d00b01bfc",
-        "objective": 0.8595505472940189,
+        "input_hash": "389634458f01a14ac6deaaa41f3d1a35bcca92712a81697989369c4ea9ca8219",
+        "objective": 0.8611155500579697,
         "terminal": {
           "netSD": 0.8913043478260869,
           "OUT": 123,
           "IN": 0,
           "D": 138,
-          "expected_return": 0.008712099864814131,
+          "expected_return": 0.008516834261296187,
           "scenarios": 20,
           "probability_mass": 0.9999999999999999,
           "OUT_by_order": [
@@ -7579,13 +7579,13 @@
             0
           ]
         },
-        "expected_penalty": 0.03175380053206804,
+        "expected_penalty": 0.0301887977681172,
         "current_terminal": {
           "netSD": 0.4420289855072464,
           "OUT": 65,
           "IN": 4,
           "D": 138,
-          "expected_return": -0.00164080179826827,
+          "expected_return": -0.0015535610012533685,
           "scenarios": 20,
           "probability_mass": 0.9999999999999999,
           "OUT_by_order": [
@@ -7600,17 +7600,17 @@
           ]
         },
         "initial_only_terminal": {
-          "netSD": 0.4420289855072464,
-          "OUT": 65,
+          "netSD": 0.45652173913043476,
+          "OUT": 67,
           "IN": 4,
           "D": 138,
-          "expected_return": -0.001640801798268263,
+          "expected_return": -0.0007958010720121964,
           "scenarios": 20,
           "probability_mass": 0.9999999999999999,
           "OUT_by_order": [
             0,
-            32,
-            33
+            33,
+            34
           ],
           "IN_by_order": [
             0,
@@ -7625,29 +7625,29 @@
           10
         ],
         "valuation_step": 20,
-        "root_cash_EUR": 3331.4306856794974,
-        "minimum_node_cash_EUR": 1.3355474948184565e-08,
-        "maximum_US_cumulative_gross_purchase_EUR": 999.9999996840763,
+        "root_cash_EUR": 2947.430771588548,
+        "minimum_node_cash_EUR": 2.45002547671902e-06,
+        "maximum_US_cumulative_gross_purchase_EUR": 999.9999913086426,
         "stage_cap_EUR": null,
         "asset_cap_EUR": null,
         "sector_cap": 0.3,
-        "evaluated_complete_policies": 5043,
+        "evaluated_complete_policies": 5045,
         "search_rounds": 2,
         "attained_solution_not_global_certificate": true,
         "recourse_rule": {
           "mode": 1,
-          "signal": 3,
+          "signal": 2,
           "fraction": 0.5
         },
         "calibration": {
           "selected_backend": "CPU",
           "workers": 8,
-          "CPU_seconds": 0.001305600002524443,
-          "GPU_seconds": 0.28555039999628207,
+          "CPU_seconds": 0.0014639000000897795,
+          "GPU_seconds": 0.2883177000039723,
           "GPU_error": null
         },
-        "seconds_including_reference_preparation": 3.191587300003448,
-        "computed_at_UTC": "2026-11-20T07:53:38.776900+00:00",
+        "seconds_including_reference_preparation": 3.192672400007723,
+        "computed_at_UTC": "2026-11-20T08:46:44.265441+00:00",
         "objective_definition": "Weighted FSD/SSD/TSD of the complete four-week self-financing policy cumulative-return distribution against all72 buy-and-hold asset references and actual Current with cash, normalised by the actual augmented-network maximum degree. Subtract probability-weighted existing final-decision penalties; historical rows calibrate forecasts and feasibility, never become terminal outcomes.",
         "search_definition": "Feasible structured joint-policy proposals and coordinate neighbourhood search; all node variables and all terminal outcomes explicit; no global-optimality certificate.",
         "current_VLP": 117.0,
@@ -7656,21 +7656,21 @@
         "dominance_backend": "CPU",
         "current_NVDA": 0.331988,
         "artifact_sha256": {
-          "policy.npz": "3a68a38e95bb186d7a67871a8743cce18fba95ff9bded77cf3c5ff97060c9487",
-          "outcomes.npz": "3d0976a14d9ed1e864d063b72e8315b0b3e4a36d559d788189fcdd81720b6933",
-          "allocation.csv": "3a7508e576236cbe85a80eb0d68beb82b38944d64fb0af39236b18d8412ff2a5",
-          "search_trace.csv": "baf1d807b06f01e9caca12eb26753d1e3caf7dca52f9f3cac4c8bcc97ccd5884"
+          "policy.npz": "0f0c139ed76595aa73f0161b1343b56c5e2585096fc5ec09e7d32ec36b816821",
+          "outcomes.npz": "e33e34b8f8a860b2117a2ff5e5771a6c726f2772499cb83bc672bdd0fdd2f4a4",
+          "allocation.csv": "5a4d4a89a8290d716abbb0145e967c793af92f1c93713a6e66c30b1ef008d553",
+          "search_trace.csv": "a153a248aec1926b9961b7db37a1cdb2fa3f43231d76025986a90b089291fb6c"
         }
       },
       "rows": [
         {
           "asset": "AKO1L",
-          "current_units": 50.0,
-          "target_units": 50.0,
+          "current_units": 100.0,
+          "target_units": 100.0,
           "change": 0.0,
           "last_price": 1.6800000000000002,
-          "invested_EUR": 84.00000000000001,
-          "weight": 0.0056,
+          "invested_EUR": 168.00000000000003,
+          "weight": 0.0112,
           "name": "Akola Group"
         },
         {
@@ -8376,11 +8376,11 @@
         {
           "asset": "US_NVDA",
           "current_units": 0.331988,
-          "target_units": 0.331988,
-          "change": 0.0,
+          "target_units": 2.590927,
+          "change": 2.2589390000000003,
           "last_price": 132.805672969013,
-          "invested_EUR": 44.08988975763668,
-          "weight": 0.0029393259838424,
+          "invested_EUR": 344.0898038485859,
+          "weight": 0.0229393202565723,
           "name": "NVIDIA Corporation"
         }
       ]
@@ -8392,20 +8392,20 @@
         "completed": true,
         "model": "stochA",
         "policy": "SALE",
-        "input_hash": "4adf14c22a9e9d245d19af719037a2a30bd7997f42ac5ad7cd51058d00b01bfc",
-        "objective": 0.9885915804267504,
+        "input_hash": "389634458f01a14ac6deaaa41f3d1a35bcca92712a81697989369c4ea9ca8219",
+        "objective": 0.9844720913846294,
         "terminal": {
           "netSD": 1.0,
-          "OUT": 138,
+          "OUT": 142,
           "IN": 0,
-          "D": 138,
-          "expected_return": 0.01822789405538175,
+          "D": 142,
+          "expected_return": 0.013808263996851622,
           "scenarios": 20,
           "probability_mass": 0.9999999999999999,
           "OUT_by_order": [
-            10,
-            64,
-            64
+            12,
+            65,
+            65
           ],
           "IN_by_order": [
             0,
@@ -8413,13 +8413,13 @@
             0
           ]
         },
-        "expected_penalty": 0.011408419573249565,
+        "expected_penalty": 0.015527908615370518,
         "current_terminal": {
           "netSD": 0.4420289855072464,
           "OUT": 65,
           "IN": 4,
           "D": 138,
-          "expected_return": -0.00164080179826827,
+          "expected_return": -0.0015535610012533685,
           "scenarios": 20,
           "probability_mass": 0.9999999999999999,
           "OUT_by_order": [
@@ -8434,17 +8434,17 @@
           ]
         },
         "initial_only_terminal": {
-          "netSD": 0.7536231884057971,
-          "OUT": 104,
+          "netSD": 0.7391304347826086,
+          "OUT": 102,
           "IN": 0,
           "D": 138,
-          "expected_return": 0.006774349735456055,
+          "expected_return": 0.004547970105123368,
           "scenarios": 20,
           "probability_mass": 0.9999999999999999,
           "OUT_by_order": [
-            0,
-            51,
-            53
+            2,
+            50,
+            50
           ],
           "IN_by_order": [
             0,
@@ -8459,29 +8459,29 @@
           10
         ],
         "valuation_step": 20,
-        "root_cash_EUR": 878.6205754371331,
-        "minimum_node_cash_EUR": 1.1336513239257329e-05,
+        "root_cash_EUR": 4093.4581410394967,
+        "minimum_node_cash_EUR": 3.3979176805587485e-07,
         "maximum_US_cumulative_gross_purchase_EUR": 999.9999990783876,
         "stage_cap_EUR": null,
         "asset_cap_EUR": null,
         "sector_cap": 0.3,
-        "evaluated_complete_policies": 10657,
+        "evaluated_complete_policies": 10654,
         "search_rounds": 2,
         "attained_solution_not_global_certificate": true,
         "recourse_rule": {
-          "mode": 3,
+          "mode": 1,
           "signal": 2,
-          "fraction": 1.0
+          "fraction": 0.5
         },
         "calibration": {
           "selected_backend": "CPU",
           "workers": 8,
-          "CPU_seconds": 0.001393300000927411,
-          "GPU_seconds": 0.2858328000002075,
+          "CPU_seconds": 0.00149940000846982,
+          "GPU_seconds": 0.31404649998876266,
           "GPU_error": null
         },
-        "seconds_including_reference_preparation": 3.902752200003306,
-        "computed_at_UTC": "2026-11-20T07:54:01.973047+00:00",
+        "seconds_including_reference_preparation": 4.534201499991468,
+        "computed_at_UTC": "2026-11-20T08:47:07.910200+00:00",
         "objective_definition": "Weighted FSD/SSD/TSD of the complete four-week self-financing policy cumulative-return distribution against all72 buy-and-hold asset references and actual Current with cash, normalised by the actual augmented-network maximum degree. Subtract probability-weighted existing final-decision penalties; historical rows calibrate forecasts and feasibility, never become terminal outcomes.",
         "search_definition": "Feasible structured joint-policy proposals and coordinate neighbourhood search; all node variables and all terminal outcomes explicit; no global-optimality certificate.",
         "current_VLP": 117.0,
@@ -8490,21 +8490,21 @@
         "dominance_backend": "CPU",
         "current_NVDA": 0.331988,
         "artifact_sha256": {
-          "policy.npz": "57a01c746e726fd42d4f5094dba6383295e8cd1a3f4fc4b35d05d33d9b14f3c5",
-          "outcomes.npz": "500e251200f2108f8ca663f63fe980beaf6c5fe9ea96cf2dfdc0cadbe6aa91d2",
-          "allocation.csv": "bea7a256ea9f8c144042e2b755319b38a5464bb4e98e7f5b3869919c49ffa86b",
-          "search_trace.csv": "225edb7ee361b653c3a728fd795227ef61210c20250413a40da5e620ae6b33c6"
+          "policy.npz": "6a97c9c073de19e5a6032ad2813027bace1e2e572b73d04c97a0419eff46089d",
+          "outcomes.npz": "ad1317d86f279e46db98d13730fdce4a39292795ec83eb36424df4a85b56d4c1",
+          "allocation.csv": "a41604e0de1b52c01d999b51d06955b880623dfad57d8c4aa4a02eb49b785899",
+          "search_trace.csv": "a86b6f5d5baae4b1a3a995cd680c58ef318059f20454a7a74e0e4c99e66caa6e"
         }
       },
       "rows": [
         {
           "asset": "AKO1L",
-          "current_units": 50.0,
-          "target_units": 1538.0,
+          "current_units": 100.0,
+          "target_units": 1588.0,
           "change": 1488.0,
           "last_price": 1.6800000000000002,
-          "invested_EUR": 2583.84,
-          "weight": 0.172256,
+          "invested_EUR": 2667.84,
+          "weight": 0.177856,
           "name": "Akola Group"
         },
         {
@@ -8630,11 +8630,11 @@
         {
           "asset": "HAE1T",
           "current_units": 100.0,
-          "target_units": 100.0,
-          "change": 0.0,
+          "target_units": 0.0,
+          "change": -100.0,
           "last_price": 5.12,
-          "invested_EUR": 512.0,
-          "weight": 0.0341333333333333,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
           "name": "Harju Elekter Group"
         },
         {
@@ -8700,11 +8700,11 @@
         {
           "asset": "KNE1L",
           "current_units": 928.0,
-          "target_units": 1980.0,
-          "change": 1052.0,
+          "target_units": 928.0,
+          "change": 0.0,
           "last_price": 0.475,
-          "invested_EUR": 940.5,
-          "weight": 0.0627,
+          "invested_EUR": 440.8,
+          "weight": 0.0293866666666666,
           "name": "KN Energies"
         },
         {
@@ -8850,11 +8850,11 @@
         {
           "asset": "ROE1L",
           "current_units": 620.0,
-          "target_units": 3668.0,
-          "change": 3048.0,
+          "target_units": 620.0,
+          "change": 0.0,
           "last_price": 0.82,
-          "invested_EUR": 3007.76,
-          "weight": 0.2005173333333333,
+          "invested_EUR": 508.4,
+          "weight": 0.0338933333333333,
           "name": "Artea Bankas"
         },
         {
@@ -9010,11 +9010,11 @@
         {
           "asset": "VLP1L",
           "current_units": 117.0,
-          "target_units": 29.0,
-          "change": -88.0,
+          "target_units": 58.0,
+          "change": -59.0,
           "last_price": 15.25,
-          "invested_EUR": 442.25,
-          "weight": 0.0294833333333333,
+          "invested_EUR": 884.5,
+          "weight": 0.0589666666666666,
           "name": "Vilkyškių pieninė"
         },
         {
@@ -9070,11 +9070,11 @@
         {
           "asset": "SE0014261764",
           "current_units": 11.2672,
-          "target_units": 11.2672,
-          "change": 0.0,
+          "target_units": 0.0,
+          "change": -11.2672,
           "last_price": 24.3288,
-          "invested_EUR": 274.11745536,
-          "weight": 0.018274497024,
+          "invested_EUR": 0.0,
+          "weight": 0.0,
           "name": "Swedbank Robur Technology C"
         },
         {
@@ -9210,11 +9210,11 @@
         {
           "asset": "US_NVDA",
           "current_units": 0.331988,
-          "target_units": 0.0,
-          "change": -0.331988,
+          "target_units": 0.331988,
+          "change": 0.0,
           "last_price": 132.805672969013,
-          "invested_EUR": 0.0,
-          "weight": 0.0,
+          "invested_EUR": 44.08988975763668,
+          "weight": 0.0029393259838424,
           "name": "NVIDIA Corporation"
         }
       ]
@@ -9226,20 +9226,20 @@
         "completed": true,
         "model": "stochA",
         "policy": "NO_INITIAL_SALES",
-        "input_hash": "4adf14c22a9e9d245d19af719037a2a30bd7997f42ac5ad7cd51058d00b01bfc",
-        "objective": 0.9824522213856622,
+        "input_hash": "389634458f01a14ac6deaaa41f3d1a35bcca92712a81697989369c4ea9ca8219",
+        "objective": 0.9822747147259946,
         "terminal": {
           "netSD": 1.0,
-          "OUT": 138,
+          "OUT": 148,
           "IN": 0,
-          "D": 138,
-          "expected_return": 0.025066058012943586,
+          "D": 148,
+          "expected_return": 0.02743877585741099,
           "scenarios": 20,
           "probability_mass": 0.9999999999999999,
           "OUT_by_order": [
-            9,
-            64,
-            65
+            14,
+            67,
+            67
           ],
           "IN_by_order": [
             0,
@@ -9247,13 +9247,13 @@
             0
           ]
         },
-        "expected_penalty": 0.01754777861433772,
+        "expected_penalty": 0.01772528527400537,
         "current_terminal": {
           "netSD": 0.4420289855072464,
           "OUT": 65,
           "IN": 4,
           "D": 138,
-          "expected_return": -0.00164080179826827,
+          "expected_return": -0.0015535610012533685,
           "scenarios": 20,
           "probability_mass": 0.9999999999999999,
           "OUT_by_order": [
@@ -9268,22 +9268,22 @@
           ]
         },
         "initial_only_terminal": {
-          "netSD": 0.3115942028985507,
-          "OUT": 55,
-          "IN": 12,
+          "netSD": 0.4420289855072464,
+          "OUT": 65,
+          "IN": 4,
           "D": 138,
-          "expected_return": -0.004099577966461989,
+          "expected_return": -0.0007618921476936504,
           "scenarios": 20,
           "probability_mass": 0.9999999999999999,
           "OUT_by_order": [
             0,
-            27,
-            28
+            32,
+            33
           ],
           "IN_by_order": [
             0,
-            6,
-            6
+            2,
+            2
           ]
         },
         "decision_nodes": 21,
@@ -9293,13 +9293,13 @@
           10
         ],
         "valuation_step": 20,
-        "root_cash_EUR": 257.6666929690691,
-        "minimum_node_cash_EUR": 6.758827396424749e-06,
-        "maximum_US_cumulative_gross_purchase_EUR": 999.9999977051416,
+        "root_cash_EUR": 1618.6507060011918,
+        "minimum_node_cash_EUR": 1.9673588667501463e-05,
+        "maximum_US_cumulative_gross_purchase_EUR": 999.9999955846214,
         "stage_cap_EUR": null,
         "asset_cap_EUR": null,
         "sector_cap": 0.3,
-        "evaluated_complete_policies": 5822,
+        "evaluated_complete_policies": 5823,
         "search_rounds": 2,
         "attained_solution_not_global_certificate": true,
         "recourse_rule": {
@@ -9310,12 +9310,12 @@
         "calibration": {
           "selected_backend": "CPU",
           "workers": 8,
-          "CPU_seconds": 0.0014250999956857413,
-          "GPU_seconds": 0.2849309000011999,
+          "CPU_seconds": 0.0013653999922098592,
+          "GPU_seconds": 0.2899036000017077,
           "GPU_error": null
         },
-        "seconds_including_reference_preparation": 3.524728500000492,
-        "computed_at_UTC": "2026-11-20T07:54:25.044186+00:00",
+        "seconds_including_reference_preparation": 3.7163355000084266,
+        "computed_at_UTC": "2026-11-20T08:47:30.491876+00:00",
         "objective_definition": "Weighted FSD/SSD/TSD of the complete four-week self-financing policy cumulative-return distribution against all72 buy-and-hold asset references and actual Current with cash, normalised by the actual augmented-network maximum degree. Subtract probability-weighted existing final-decision penalties; historical rows calibrate forecasts and feasibility, never become terminal outcomes.",
         "search_definition": "Feasible structured joint-policy proposals and coordinate neighbourhood search; all node variables and all terminal outcomes explicit; no global-optimality certificate.",
         "current_VLP": 117.0,
@@ -9324,21 +9324,21 @@
         "dominance_backend": "CPU",
         "current_NVDA": 0.331988,
         "artifact_sha256": {
-          "policy.npz": "fe1330f0164c8ee695410c20bdd270940359669e5666d3ea481386ff4ecd7560",
-          "outcomes.npz": "c3312bc733fdf449ace42c30a5570a4364fd6b12de4a0fcfa022a1f86f924749",
-          "allocation.csv": "2aeef10f668940062914200bbd6656728e779950ffb0121bb7d0c6eef1327db1",
-          "search_trace.csv": "a3e9422751f9bda17fe0abda34d3e8738350dfcc3a02235be7c311347a9e3c28"
+          "policy.npz": "2d4fad2f6f05895c951e0e74dfd13b67fba80a1df8a18f07b6b4572ffce5c644",
+          "outcomes.npz": "5872933c3d89341965dfea049ae95a113724d251904c2711bb9b9b3e3d62962c",
+          "allocation.csv": "4d4715099d3c732826e0ea5d0ce1a8b47ce2b37c66ac8b9894bc7252281bf3fe",
+          "search_trace.csv": "b99154f1ba5d38e00c6ac6a3163b203aea8323049f70c6e3ecb0cc751a154dfb"
         }
       },
       "rows": [
         {
           "asset": "AKO1L",
-          "current_units": 50.0,
-          "target_units": 942.0,
-          "change": 892.0,
+          "current_units": 100.0,
+          "target_units": 546.0,
+          "change": 446.0,
           "last_price": 1.6800000000000002,
-          "invested_EUR": 1582.5600000000002,
-          "weight": 0.105504,
+          "invested_EUR": 917.28,
+          "weight": 0.061152,
           "name": "Akola Group"
         },
         {
@@ -9704,11 +9704,11 @@
         {
           "asset": "SAF1R",
           "current_units": 100.0,
-          "target_units": 190.0,
-          "change": 90.0,
+          "target_units": 100.0,
+          "change": 0.0,
           "last_price": 16.6,
-          "invested_EUR": 3154.0000000000005,
-          "weight": 0.2102666666666666,
+          "invested_EUR": 1660.0000000000002,
+          "weight": 0.1106666666666666,
           "name": "SAF Tehnika"
         },
         {
@@ -9844,11 +9844,11 @@
         {
           "asset": "VLP1L",
           "current_units": 117.0,
-          "target_units": 117.0,
-          "change": 0.0,
+          "target_units": 155.0,
+          "change": 38.0,
           "last_price": 15.25,
-          "invested_EUR": 1784.25,
-          "weight": 0.11895,
+          "invested_EUR": 2363.75,
+          "weight": 0.1575833333333333,
           "name": "Vilkyškių pieninė"
         },
         {
@@ -10034,11 +10034,11 @@
         {
           "asset": "US_PFE",
           "current_units": 5.491688,
-          "target_units": 8.732771,
-          "change": 3.241083,
+          "target_units": 17.465543,
+          "change": 11.973855,
           "last_price": 25.054585985741763,
-          "invested_EUR": 218.79596191329207,
-          "weight": 0.0145863974608861,
+          "invested_EUR": 437.5919488811701,
+          "weight": 0.029172796592078,
           "name": "Pfizer Inc."
         },
         {
