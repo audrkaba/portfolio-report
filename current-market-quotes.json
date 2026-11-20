@@ -1,6 +1,6 @@
 {
-  "checked_at_UTC": "2026-11-19T16:07:13.257702+00:00",
-  "prepared_at_UTC": "2026-11-19T18:19:05.232633+00:00",
+  "checked_at_UTC": "2026-11-20T05:31:42.697241+00:00",
+  "prepared_at_UTC": "2026-11-20T06:43:41.685559+00:00",
   "quotes": {
     "AIR": {
       "price": 1.82,
@@ -588,22 +588,22 @@
       "bollinger_upper": 2.90912483766207
     },
     "US_PFE": {
-      "price": 25.583515195060524,
-      "date": "2026-11-18",
+      "price": 25.054585985741763,
+      "date": "2026-11-19",
       "name": "Pfizer Inc.",
       "type": "Share",
       "source": "https://finance.yahoo.com/quote/PFE/history/",
-      "bollinger_lower": 25.5714073775534,
-      "bollinger_upper": 27.5365851337718
+      "bollinger_lower": 25.3088709034885,
+      "bollinger_upper": 27.589720761851
     },
     "US_NVDA": {
-      "price": 137.63676760928809,
-      "date": "2026-11-18",
+      "price": 132.805672969013,
+      "date": "2026-11-19",
       "name": "NVIDIA Corporation",
       "type": "Share",
       "source": "https://finance.yahoo.com/quote/NVDA/history/",
-      "bollinger_lower": 130.044616214169,
-      "bollinger_upper": 209.073863974372
+      "bollinger_lower": 125.246204004997,
+      "bollinger_upper": 208.213976303839
     },
     "SE0015192331": {
       "price": 17.5926,
@@ -822,5 +822,5 @@
       "bollinger_upper": 10.5594392214509
     }
   },
-  "scope": "Verified financial model closing snapshot. Baltic completed closes 2026-11-19; US completed closes 2026-11-18; published fund NAV dates 2026-11-18. Exact instrument dates are retained. No intraday observation is substituted for a completed close."
+  "scope": "Verified financial model closing snapshot. Baltic completed closes 2026-11-19; US completed closes 2026-11-19; published fund NAV dates 2026-11-18. Exact instrument dates are retained. No intraday observation is substituted for a completed close."
 }
