@@ -2,3 +2,7 @@
 vendor/mathjax/tex-svg-full.js -text
 vendor/mathjax/LICENSE -text
 vendor/mathjax/provenance.json text eol=lf
+
+# Preserve audited statistical export bytes and their SHA-256 checksums.
+rolling-inference*.csv -text
+rolling-inference*.json -text
