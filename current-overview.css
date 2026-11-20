@@ -14,3 +14,5 @@ html body #co-composition table.co-composition-table tbody th{writing-mode:horiz
 html body #co-composition table.co-composition-table tbody tr:first-child :is(th,td){font-weight:600}
 html body #co-composition table.co-composition-table time{font-variant-numeric:tabular-nums}
 @media(max-width:500px){html body #co-composition table.co-composition-table :is(td,th){padding:.3rem .1rem!important}}
+
+.co-correlation-columns{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px}.co-correlation-columns>*{min-width:0}.current-overview .co-correlation{margin-inline:0}@media(max-width:900px){.co-correlation-columns{grid-template-columns:minmax(0,1fr)}.co-correlation-reserved{display:none}}
