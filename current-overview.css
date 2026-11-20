@@ -2,7 +2,7 @@
 
 .current-overview .co-price{height:730px}.co-best-case{display:block;font-size:.75rem;font-weight:normal;line-height:1.35;overflow-wrap:anywhere}.co-positive{color:#126048}.co-negative{color:#a32e3f}#co-composition th:first-child,#co-composition td:first-child{width:22%}#co-performance th:first-child,#co-performance td:first-child{width:28%}#co-composition tbody tr:first-child{background:#e2eef3;font-weight:600}@media(max-width:500px){.current-overview .co-price{height:650px}}
 
-.current-overview .co-correlation{width:100%;max-width:440px;height:auto;aspect-ratio:1 / 1;margin-inline:auto}
+.current-overview .co-correlation{width:100%;max-width:100%;height:auto;aspect-ratio:1 / 1;margin-inline:auto}
 
 .co-main-grid{display:grid;grid-template-columns:minmax(0,1fr) 250px;gap:16px;align-items:start}.co-main-grid>*{min-width:0}.co-portfolio-picker{padding:12px;border:1px solid #d4dfe5;border-radius:6px;box-sizing:border-box;max-width:100%}.co-portfolio-picker>label{display:block;font-weight:600;font-size:.92rem;margin-bottom:8px}.co-portfolio-picker select{height:340px;display:block;box-sizing:border-box;width:100%;max-width:100%;font:inherit;font-size:.82rem;padding:4px}.co-portfolio-picker option{padding:4px;white-space:normal;overflow-wrap:anywhere}.co-portfolio-picker button{margin-top:8px;max-width:100%;font:inherit;font-size:.85rem;padding:5px 9px}.co-selected-line{display:flex;gap:7px;align-items:baseline;font-size:.78rem;overflow-wrap:anywhere;margin:5px 0}.co-selected-line span:first-child{flex:0 0 20px;border-top:3px solid;margin-top:5px}@media(max-width:850px){.co-main-grid{grid-template-columns:minmax(0,1fr)}.co-portfolio-picker select{height:220px}}
 
@@ -22,3 +22,5 @@ html body #co-performance table.co-performance-table :is(th,td){padding:.3rem .1
 html body #co-performance table.co-performance-table thead th{writing-mode:vertical-rl!important;text-orientation:mixed;transform:rotate(180deg)!important;height:10rem!important;line-height:1!important;text-align:left!important;vertical-align:middle}
 html body #co-performance table.co-performance-table tbody th{writing-mode:horizontal-tb!important;transform:none!important;height:auto!important}
 @media(max-width:500px){html body #co-performance table.co-performance-table :is(th,td){padding:.3rem .1rem!important}}
+
+.co-correlation-heading{flex-direction:column;align-items:flex-start;justify-content:flex-start}.co-correlation-heading h3{margin-bottom:0}.co-correlation-heading>label{margin-bottom:8px}
