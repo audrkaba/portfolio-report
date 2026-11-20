@@ -1,5 +1,5 @@
 {
-  "confirmed_at": "2026-11-19T12:20:53.527815+00:00",
+  "confirmed_at": "2026-11-20T07:29:11.861276+00:00",
   "units": {
     "TKM1T": 288,
     "SAF1R": 100,
@@ -13,18 +13,31 @@
     "TAL1T": 1000,
     "ROE1L": 620,
     "TSM1T": 330,
-    "SE0014261764": 7.108,
-    "US:PFE": 5.491688,
-    "US:NVDA": 0.28401,
+    "SE0014261764": 11.2672,
+    "US_PFE": 5.491688,
+    "US_NVDA": 0.331988,
     "AKO1L": 50
   },
   "quantity_precision_overrides": {
     "US:PFE": 6,
-    "US:NVDA": 5
+    "US:NVDA": 6,
+    "US_NVDA": 6,
+    "SE0014261764": 4
+  },
+  "pending_model_updates": [
+    "SE0014261764",
+    "US_NVDA"
+  ],
+  "pending_quantity_updates": {
+    "SE0014261764": {
+      "model_units": 7.108,
+      "actual_units": 11.2672
+    },
+    "US_NVDA": {
+      "model_units": 0.28401,
+      "actual_units": 0.331988
+    }
   },
   "public_disclosure_authorized": true,
-  "pending_quantity_updates": {},
-  "pending_model_updates": [],
-  "model_snapshot_status": "All current daily trading policies use this exact16-position inventory",
-  "scope": "Confirmed Current quantities used in this daily C4 revision; completed share closes 2026-11-19 and individual published fund NAV dates retained. Execution prices, fees and execution timestamps were not supplied."
+  "model_snapshot_status": "Published US19 policies retain Technology C7.108 and NVIDIA0.28401 until a new verified revision is released."
 }
