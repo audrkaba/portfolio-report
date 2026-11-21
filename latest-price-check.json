@@ -1,0 +1,589 @@
+{
+  "prices_verified": true,
+  "models_updated": false,
+  "market": {
+    "as_of": "2026-11-21T09:06:55.174964+02:00",
+    "requested_end": "2026-11-20",
+    "assets": 93,
+    "new_observations": 91,
+    "share_last": "2026-11-20",
+    "fund_last": "2026-11-19",
+    "historical_repairs_preserved": true,
+    "intraday": false,
+    "price_status": "Latest available official observations; source dates retained",
+    "updated_current_session": 0
+  },
+  "holdings": [
+    {
+      "asset": "TKM1T",
+      "price_EUR": 8.94,
+      "date": "2026-11-20",
+      "units": 288,
+      "value_EUR": 2574.72
+    },
+    {
+      "asset": "SAF1R",
+      "price_EUR": 16.35,
+      "date": "2026-11-20",
+      "units": 100,
+      "value_EUR": 1635.0000000000002
+    },
+    {
+      "asset": "APG1L",
+      "price_EUR": 3.86,
+      "date": "2026-11-20",
+      "units": 200,
+      "value_EUR": 772.0
+    },
+    {
+      "asset": "KNE1L",
+      "price_EUR": 0.455,
+      "date": "2026-11-20",
+      "units": 928,
+      "value_EUR": 422.24
+    },
+    {
+      "asset": "VLP1L",
+      "price_EUR": 15.25,
+      "date": "2026-11-20",
+      "units": 127,
+      "value_EUR": 1936.75
+    },
+    {
+      "asset": "RSU1L",
+      "price_EUR": 4.4,
+      "date": "2026-11-20",
+      "units": 150,
+      "value_EUR": 660.0
+    },
+    {
+      "asset": "MRK1T",
+      "price_EUR": 26.7,
+      "date": "2026-11-20",
+      "units": 26,
+      "value_EUR": 694.1999999999999
+    },
+    {
+      "asset": "GRG1L",
+      "price_EUR": 0.918,
+      "date": "2026-11-20",
+      "units": 543,
+      "value_EUR": 498.47400000000005
+    },
+    {
+      "asset": "HAE1T",
+      "price_EUR": 5.08,
+      "date": "2026-11-20",
+      "units": 100,
+      "value_EUR": 508.0
+    },
+    {
+      "asset": "TAL1T",
+      "price_EUR": 0.61,
+      "date": "2026-11-20",
+      "units": 1000,
+      "value_EUR": 610.0
+    },
+    {
+      "asset": "ROE1L",
+      "price_EUR": 0.811,
+      "date": "2026-11-20",
+      "units": 620,
+      "value_EUR": 502.82000000000005
+    },
+    {
+      "asset": "TSM1T",
+      "price_EUR": 1.224,
+      "date": "2026-11-20",
+      "units": 330,
+      "value_EUR": 403.92
+    },
+    {
+      "asset": "SE0014261764",
+      "price_EUR": 23.727,
+      "date": "2026-11-19",
+      "units": 11.2672,
+      "value_EUR": 267.33685440000005
+    },
+    {
+      "asset": "US_PFE",
+      "price_EUR": 24.931755794841013,
+      "date": "2026-11-20",
+      "units": 5.883,
+      "value_EUR": 146.67351934104968
+    },
+    {
+      "asset": "US_NVDA",
+      "price_EUR": 114.22201890745848,
+      "date": "2026-11-20",
+      "units": 1.169741,
+      "value_EUR": 133.61017861882937
+    },
+    {
+      "asset": "AKO1L",
+      "price_EUR": 1.65,
+      "date": "2026-11-20",
+      "units": 100,
+      "value_EUR": 165.0
+    }
+  ],
+  "holding_value_EUR": 11930.74455235988,
+  "quotes": [
+    {
+      "asset": "AIR",
+      "price_EUR": 1.8,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "AKO1L",
+      "price_EUR": 1.65,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "AMG1L",
+      "price_EUR": 1.21,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "APG1L",
+      "price_EUR": 3.86,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "ARC1T",
+      "price_EUR": 0.936,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "AUG1L",
+      "price_EUR": 0.074,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "BAL1R",
+      "price_EUR": 0.65,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "BERCM",
+      "price_EUR": 0.582,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "CPA1T",
+      "price_EUR": 2.365,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "CTS1L",
+      "price_EUR": 1.3,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "DGR1R",
+      "price_EUR": 1.88,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "EFT1T",
+      "price_EUR": 19.45,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "EGG",
+      "price_EUR": 7.1,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "ELEVR",
+      "price_EUR": 1.675,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "EWA1L",
+      "price_EUR": 10.7,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "GRB2G",
+      "price_EUR": 0.06,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "GRG1L",
+      "price_EUR": 0.918,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "HAE1T",
+      "price_EUR": 5.08,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "HPR1T",
+      "price_EUR": 4.34,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "IDX1R",
+      "price_EUR": 2.6,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "IGN1L",
+      "price_EUR": 22.0,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "IGR1R",
+      "price_EUR": 1.55,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "INC1L",
+      "price_EUR": 5.4,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "INF1T",
+      "price_EUR": 67.0,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "INL1L",
+      "price_EUR": 6.75,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "INR1L",
+      "price_EUR": 2.64,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "IVL1L",
+      "price_EUR": 27.0,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "KALVE",
+      "price_EUR": 10.7,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "KNE1L",
+      "price_EUR": 0.455,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "KNR1L",
+      "price_EUR": 2.08,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "LGD1L",
+      "price_EUR": 1.215,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "LHV1T",
+      "price_EUR": 3.22,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "LINDA",
+      "price_EUR": 4.02,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "LVN1T",
+      "price_EUR": 3.01,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "MAGIC",
+      "price_EUR": 1.855,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "MDARA",
+      "price_EUR": 10.55,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "MODE",
+      "price_EUR": 5.0,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "MOLNR",
+      "price_EUR": 21.4,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "MRK1T",
+      "price_EUR": 26.7,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "NCN1T",
+      "price_EUR": 0.518,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "NEOFI",
+      "price_EUR": 2.86,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "NTU1L",
+      "price_EUR": 0.71,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "PKG1T",
+      "price_EUR": 0.53,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "PRF1T",
+      "price_EUR": 0.051,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "PRIMO",
+      "price_EUR": 3.14,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "PZV1L",
+      "price_EUR": 1.8,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "RKB1R",
+      "price_EUR": 0.306,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "ROE1L",
+      "price_EUR": 0.811,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "RSU1L",
+      "price_EUR": 4.4,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "SAF1R",
+      "price_EUR": 16.35,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "SAUNA",
+      "price_EUR": 2.19,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "SCM1R",
+      "price_EUR": 7.3,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "SFG1T",
+      "price_EUR": 1.035,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "SKN1T",
+      "price_EUR": 0.372,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "TAL1T",
+      "price_EUR": 0.61,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "TEL1L",
+      "price_EUR": 2.2,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "TKM1T",
+      "price_EUR": 8.94,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "TPD1T",
+      "price_EUR": 0.54,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "TSM1T",
+      "price_EUR": 1.224,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "TVE1T",
+      "price_EUR": 10.8,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "UTR1L",
+      "price_EUR": 0.37,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "VBL1L",
+      "price_EUR": 9.55,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "VIRSI",
+      "price_EUR": 4.43,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "VLP1L",
+      "price_EUR": 15.25,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "ZMP1L",
+      "price_EUR": 2.78,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "US_PFE",
+      "price_EUR": 24.931755794841013,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "US_NVDA",
+      "price_EUR": 114.22201890745848,
+      "date": "2026-11-20"
+    },
+    {
+      "asset": "SE0015192331",
+      "price_EUR": 17.4303,
+      "date": "2026-11-19"
+    },
+    {
+      "asset": "SE0015192349",
+      "price_EUR": 18.5645,
+      "date": "2026-11-19"
+    },
+    {
+      "asset": "SE0014263281",
+      "price_EUR": 14.5507,
+      "date": "2026-11-19"
+    },
+    {
+      "asset": "SE0014263273",
+      "price_EUR": 11.1356,
+      "date": "2026-11-19"
+    },
+    {
+      "asset": "SE0015192323",
+      "price_EUR": 19.3668,
+      "date": "2026-11-19"
+    },
+    {
+      "asset": "SE0029504588",
+      "price_EUR": 9.7733,
+      "date": "2026-11-19"
+    },
+    {
+      "asset": "SE0014263299",
+      "price_EUR": 12.5617,
+      "date": "2026-11-19"
+    },
+    {
+      "asset": "SE0013876950",
+      "price_EUR": 12.8894,
+      "date": "2026-11-19"
+    },
+    {
+      "asset": "SE0013876927",
+      "price_EUR": 14.9636,
+      "date": "2026-11-19"
+    },
+    {
+      "asset": "SE0013876968",
+      "price_EUR": 12.6739,
+      "date": "2026-11-19"
+    },
+    {
+      "asset": "SE0015192315",
+      "price_EUR": 13.859,
+      "date": "2026-11-19"
+    },
+    {
+      "asset": "SE0014261756",
+      "price_EUR": 19.1414,
+      "date": "2026-11-19"
+    },
+    {
+      "asset": "SE0014261889",
+      "price_EUR": 15.3034,
+      "date": "2026-11-19"
+    },
+    {
+      "asset": "SE0015948617",
+      "price_EUR": 9.9504,
+      "date": "2026-11-19"
+    },
+    {
+      "asset": "SE0014261897",
+      "price_EUR": 10.6176,
+      "date": "2026-11-19"
+    },
+    {
+      "asset": "SE0014261764",
+      "price_EUR": 23.727,
+      "date": "2026-11-19"
+    },
+    {
+      "asset": "SE0015948609",
+      "price_EUR": 11.4485,
+      "date": "2026-11-19"
+    },
+    {
+      "asset": "SE0017072416",
+      "price_EUR": 11.9941,
+      "date": "2026-11-19"
+    },
+    {
+      "asset": "SE0019354200",
+      "price_EUR": 23.3916,
+      "date": "2026-11-19"
+    },
+    {
+      "asset": "SE0014261871",
+      "price_EUR": 14.5575,
+      "date": "2026-11-19"
+    },
+    {
+      "asset": "SE0026821472",
+      "price_EUR": 10.8018,
+      "date": "2026-11-19"
+    },
+    {
+      "asset": "SE0025667215",
+      "price_EUR": 10.5496,
+      "date": "2026-11-19"
+    },
+    {
+      "asset": "SE0027397514",
+      "price_EUR": 8.5202,
+      "date": "2026-11-19"
+    },
+    {
+      "asset": "SE0025667199",
+      "price_EUR": 10.5612,
+      "date": "2026-11-19"
+    }
+  ],
+  "scope": "Fresh valuation only; main report retains its previous independently checked policy snapshot during recomputation."
+}
