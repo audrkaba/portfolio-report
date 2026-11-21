@@ -1,6 +1,5 @@
 {
   "prices_verified": true,
-  "models_updated": false,
   "market": {
     "as_of": "2026-11-21T09:06:55.174964+02:00",
     "requested_end": "2026-11-20",
@@ -585,5 +584,5 @@
       "date": "2026-11-19"
     }
   ],
-  "scope": "Fresh valuation only; main report retains its previous independently checked policy snapshot during recomputation."
+  "scope": "Verified completed-session source prices and Current valuation; model verification is recorded separately in implementation-audit.json."
 }

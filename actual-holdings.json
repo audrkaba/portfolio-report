@@ -28,5 +28,5 @@
   "pending_quantity_updates": {},
   "pending_model_updates": [],
   "model_snapshot_status": "All current daily trading policies use this exact 16-position inventory",
-  "scope": "Confirmed Current quantities used in this daily C4 revision; completed share closes 2026-11-19 and individual published fund NAV dates retained. Execution prices, fees and execution timestamps were not supplied."
+  "scope": "Confirmed Current quantities used in this daily C4 revision; completed share closes 2026-11-20 and individual published fund NAV dates retained. Execution prices, fees and execution timestamps were not supplied."
 }

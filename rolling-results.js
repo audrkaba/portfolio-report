@@ -4,7 +4,7 @@
  const data=await fetch('rolling-inference.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error(r.status);return r.json();});
  const escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const pct=new Set(['mean_return','STD','maximum_drawdown','CVaR95','cumulative_return']);
- const names={netSD:'netSD',mean_return:'Mean daily return',Sharpe:'Sharpe',Sortino:'Sortino',Rachev:'Rachev',STD:'Daily STD',maximum_drawdown:'Maximum drawdown',CVaR95:'CVaR95',accumulated_wealth_EUR:'End wealth EUR',cumulative_return:'Cumulative OOS return'};
+ const names={netSD:'netSD',mean_return:'Mean daily return',Sharpe:'Sharpe',Sortino:'Sortino',Rachev:'Rachev',STD:'Daily STD',maximum_drawdown:'Maximum drawdown',CVaR95:'CVaR95',accumulated_wealth_EUR:'Final wealth EUR',cumulative_return:'Cumulative OOS return'};
  const label=c=>c.replace('STOCHASTIC2','Stochastic 2').replace('STOCHASTIC','Stochastic').replace('stoch2A','Stochastic 2A').replace('stochA','Stochastic A').replace('MARKOWITZ','Markowitz').replace('MINIMAX','Minimax').replace('ROBUST','Robust').replace('UPDATE2','Update 2').replace('UPDATE3','Update 3').replace('NETSD','netSD').replace('NO_INITIAL_SALES','No initial sales').replace('NO_SALE','No sales').replace('SALE','Sale').replace('[observed-prefix]','(later decisions)');
  const fmt=(v,m,difference=false)=>!Number.isFinite(v)?'Unavailable':m.includes('EUR')?'EUR '+v.toFixed(2):pct.has(m)?(100*v).toFixed(4)+(difference?' pp':'%'):v.toFixed(5);
  const pformat=v=>!Number.isFinite(v)?'Unavailable':v<.0001?v.toExponential(2):v.toFixed(4);
@@ -12,6 +12,7 @@
  options($('infer-metric'),data.plan.metrics.map(m=>[m,names[m]]));
  function table(id,headers,rows,caption){
   const host=$(id),width=host.getBoundingClientRect().width||document.body.clientWidth-54,count=Math.max(2,Math.min(headers.length,Math.floor(width/145)));
+  if(!rows.length){host.innerHTML='<p>No finite results for this selection.</p>';return;}
   let out='';for(let start=1;start<headers.length;start+=count-1){const ix=[0,...Array.from({length:Math.min(count-1,headers.length-start)},(_,j)=>start+j)];
    out+='<table class="horizontal-summary-group"><caption>'+escape(caption)+(start>1?' — continued columns':'')+'</caption><thead><tr>'+ix.map(i=>'<th scope="col">'+escape(headers[i])+'</th>').join('')+'</tr></thead><tbody>'+rows.map(row=>'<tr>'+ix.map((i,j)=>'<'+(j?'td':'th scope="row"')+'>'+row[i]+'</'+(j?'td':'th')+'>').join('')+'</tr>').join('')+'</tbody></table>';
   }host.innerHTML=out||'<p>No finite results for this selection.</p>';
@@ -23,7 +24,20 @@
   host.dataset.figureReady='true';host.dataset.plotWidth=String(width);
  }
  const chooseDefault=family=>family==='purchase_caps'?'stoch2A / NO_SALE [observed-prefix]':family==='sale_permissions'?'STOCHASTIC2 / SALE [observed-prefix]':'STOCHASTIC2 / NO_SALE [observed-prefix]';
+ function renderWealth(){
+  if(!$('final-wealth-table'))return;
+  const scope=$('wealth-period').value,pop=$('wealth-population').value,policy=$('wealth-policy').value;
+  const eligible=c=>c==='Current'||policy==='ALL'||c.split(' / ')[1]?.split(' [')[0]===policy;
+  const rows=data.descriptive.filter(r=>r.metric==='accumulated_wealth_EUR'&&r.scope===scope&&r.population===pop&&eligible(r.case)).sort((a,b)=>b.mean-a.mean);
+  $('final-wealth-note').textContent=`${scope}; ${pop}. Values in EUR; mean, sample SD, median and range across origin accounts. Current is always retained as reference. These are final account values including cash, not invested holdings alone.`;
+  table('final-wealth-table',['Portfolio / finite origins','Final wealth mean [SD]','Median [minimum; maximum]','Paired difference vs Current / n'],rows.map(r=>[escape(label(r.case))+'<small>n='+r.n+'</small>',fmt(r.mean,'EUR')+'<small>['+fmt(r.SD,'EUR')+']</small>',fmt(r.median,'EUR')+'<small>['+fmt(r.minimum,'EUR')+'; '+fmt(r.maximum,'EUR')+']</small>',fmt(r.paired_delta,'EUR')+'<small>paired n='+r.paired_n+'</small>']),'Final wealth comparison: '+scope);
+  const tests=scope==='OOS'?data.tests.filter(r=>r.population===pop&&r.block===30&&r.family==='vs_Current'&&r.metric==='accumulated_wealth_EUR'&&eligible(r.case)):[];
+  table('final-wealth-tests',['Portfolio / paired origins','Difference [95% marginal CI]','Bootstrap Holm p / HAC Holm p'],tests.map(r=>[escape(label(r.case))+'<small>n='+r.n+'</small>',fmt(r.delta,'EUR')+'<small>['+fmt(r.ci_low,'EUR')+'; '+fmt(r.ci_high,'EUR')+']</small>',pformat(r.p_Holm)+' / '+pformat(r.hac_p_Holm)]),'Final wealth: existing paired OOS inference; no significance test is invented for IS or HELD_OUT');
+  plot('final-wealth-chart',[{type:'scatter',mode:'markers',x:rows.map(r=>r.mean),y:rows.map(r=>label(r.case)),error_x:{type:'data',array:rows.map(r=>r.SD)},marker:{color:rows.map(r=>r.case==='Current'?'#111':'#245d85'),size:7},customdata:rows.map(r=>r.n),hovertemplate:'%{y}<br>Final wealth:EUR%{x:.2f}<br>Origins:%{customdata}<extra></extra>'}],{height:Math.max(390,rows.length*25+110),margin:{l:document.body.clientWidth<600?105:290,r:20,t:30,b:65},xaxis:{title:{text:'Final wealth EUR (mean; error bars:sample SD)'}},yaxis:{autorange:'reversed',tickfont:{size:9}},showlegend:false});
+ }
+ for(const id of ['wealth-period','wealth-policy','wealth-population'])$(id)?.addEventListener('change',renderWealth);
  function render(){
+  renderWealth();
   const family=$('infer-family').value,metric=$('infer-metric').value,block=Number($('infer-block').value);
   $('infer-population').disabled=family!=='vs_Current';if(family!=='vs_Current')$('infer-population').value='ALL_MODELS_COMMON';
   const pop=$('infer-population').value;

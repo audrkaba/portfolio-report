@@ -1,6 +1,6 @@
 {
-  "model_run": "20261120_us2",
-  "input_hash": "887e18a0e00ea2ea65e383c860345de79fe780a5b5c810d38f91c5fa017ba3df",
+  "model_run": "20261121_close20",
+  "input_hash": "b1d34d42ecab7580ba9ab9b6f8725a67ed2c46df1f944db0249d8260f8a53584",
   "sales_policy": {
     "version": "US_SALES_ALWAYS_V1",
     "us_sales_always_allowed": true,

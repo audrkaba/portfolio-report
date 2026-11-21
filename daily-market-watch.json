@@ -1,5 +1,5 @@
 {
-  "checked_at_UTC": "2026-11-20T05:32:15.945793+00:00",
+  "checked_at_UTC": "2026-11-21T07:11:09.656765+00:00",
   "completed_session_cutoff": "2026-11-18",
   "default_near_pct": 2,
   "rows": [
@@ -74,11 +74,7 @@
       "initial_models": [
         {
           "model": "stochA / SALE",
-          "units": 446.0
-        },
-        {
-          "model": "stochA / NO_SALE",
-          "units": 178.0
+          "units": 303.0
         },
         {
           "model": "MARKOWITZ / SALE",
@@ -86,49 +82,61 @@
         },
         {
           "model": "UPDATE2 / NO_SALE",
-          "units": 118.0
+          "units": 120.0
         },
         {
           "model": "UPDATE3 / NO_SALE",
-          "units": 118.0
-        },
-        {
-          "model": "STOCHASTIC / NO_INITIAL_SALES",
-          "units": 178.0
+          "units": 120.0
         },
         {
           "model": "stochA / NO_INITIAL_SALES",
-          "units": 446.0
+          "units": 303.0
         }
       ],
       "future_models": [
         {
           "model": "STOCHASTIC / SALE",
-          "maximum_gross_units": 169.0
+          "maximum_gross_units": 323.0
         },
         {
           "model": "STOCHASTIC / NO_SALE",
-          "maximum_gross_units": 120.0
+          "maximum_gross_units": 492.0
         },
         {
           "model": "STOCHASTIC2 / SALE",
+          "maximum_gross_units": 78.0
+        },
+        {
+          "model": "STOCHASTIC2 / NO_SALE",
           "maximum_gross_units": 9.0
+        },
+        {
+          "model": "stochA / SALE",
+          "maximum_gross_units": 550.0
         },
         {
           "model": "stochA / NO_SALE",
-          "maximum_gross_units": 249.0
+          "maximum_gross_units": 506.0
         },
         {
           "model": "stoch2A / SALE",
-          "maximum_gross_units": 9.0
+          "maximum_gross_units": 78.0
         },
         {
           "model": "STOCHASTIC / NO_INITIAL_SALES",
-          "maximum_gross_units": 169.0
+          "maximum_gross_units": 323.0
+        },
+        {
+          "model": "STOCHASTIC2 / NO_INITIAL_SALES",
+          "maximum_gross_units": 9.0
         },
         {
           "model": "stochA / NO_INITIAL_SALES",
-          "maximum_gross_units": 1.0
+          "maximum_gross_units": 815.0
+        },
+        {
+          "model": "stoch2A / NO_INITIAL_SALES",
+          "maximum_gross_units": 9.0
         }
       ],
       "held_units": 100
@@ -190,55 +198,56 @@
       "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000102337/trading/chart_price_json?start=2026-11-09&end=2026-11-18&historical=1",
       "checked_at_UTC": "2026-11-19T07:54:48.733104+00:00",
       "model_eligible": true,
-      "initial_models": [],
+      "initial_models": [
+        {
+          "model": "UPDATE3 / SALE",
+          "units": 55.0
+        }
+      ],
       "future_models": [
         {
           "model": "STOCHASTIC / SALE",
-          "maximum_gross_units": 126.0
+          "maximum_gross_units": 187.0
         },
         {
           "model": "STOCHASTIC / NO_SALE",
-          "maximum_gross_units": 65.0
+          "maximum_gross_units": 56.0
         },
         {
           "model": "STOCHASTIC2 / SALE",
-          "maximum_gross_units": 228.0
+          "maximum_gross_units": 79.0
         },
         {
           "model": "STOCHASTIC2 / NO_SALE",
-          "maximum_gross_units": 89.0
+          "maximum_gross_units": 4.0
         },
         {
           "model": "stochA / SALE",
-          "maximum_gross_units": 793.0
+          "maximum_gross_units": 313.0
         },
         {
           "model": "stochA / NO_SALE",
-          "maximum_gross_units": 65.0
+          "maximum_gross_units": 66.0
         },
         {
           "model": "stoch2A / SALE",
-          "maximum_gross_units": 228.0
-        },
-        {
-          "model": "stoch2A / NO_SALE",
-          "maximum_gross_units": 89.0
+          "maximum_gross_units": 79.0
         },
         {
           "model": "STOCHASTIC / NO_INITIAL_SALES",
-          "maximum_gross_units": 177.0
+          "maximum_gross_units": 187.0
         },
         {
           "model": "STOCHASTIC2 / NO_INITIAL_SALES",
-          "maximum_gross_units": 173.0
+          "maximum_gross_units": 189.0
         },
         {
           "model": "stochA / NO_INITIAL_SALES",
-          "maximum_gross_units": 919.0
+          "maximum_gross_units": 775.0
         },
         {
           "model": "stoch2A / NO_INITIAL_SALES",
-          "maximum_gross_units": 173.0
+          "maximum_gross_units": 189.0
         }
       ],
       "held_units": 200
@@ -354,27 +363,27 @@
       "future_models": [
         {
           "model": "STOCHASTIC / SALE",
-          "maximum_gross_units": 227.0
+          "maximum_gross_units": 168.0
         },
         {
           "model": "STOCHASTIC / NO_SALE",
-          "maximum_gross_units": 227.0
+          "maximum_gross_units": 168.0
         },
         {
           "model": "stochA / SALE",
-          "maximum_gross_units": 227.0
+          "maximum_gross_units": 168.0
         },
         {
           "model": "stochA / NO_SALE",
-          "maximum_gross_units": 227.0
+          "maximum_gross_units": 168.0
         },
         {
           "model": "STOCHASTIC / NO_INITIAL_SALES",
-          "maximum_gross_units": 227.0
+          "maximum_gross_units": 168.0
         },
         {
           "model": "stochA / NO_INITIAL_SALES",
-          "maximum_gross_units": 227.0
+          "maximum_gross_units": 168.0
         }
       ],
       "held_units": 0
@@ -428,8 +437,28 @@
       "initial_models": [],
       "future_models": [
         {
+          "model": "STOCHASTIC / SALE",
+          "maximum_gross_units": 214.0
+        },
+        {
+          "model": "STOCHASTIC / NO_SALE",
+          "maximum_gross_units": 321.0
+        },
+        {
+          "model": "stochA / SALE",
+          "maximum_gross_units": 1117.0
+        },
+        {
+          "model": "stochA / NO_SALE",
+          "maximum_gross_units": 628.0
+        },
+        {
+          "model": "STOCHASTIC / NO_INITIAL_SALES",
+          "maximum_gross_units": 214.0
+        },
+        {
           "model": "stochA / NO_INITIAL_SALES",
-          "maximum_gross_units": 662.0
+          "maximum_gross_units": 1736.0
         }
       ],
       "held_units": 0
@@ -555,36 +584,24 @@
       "initial_models": [],
       "future_models": [
         {
-          "model": "STOCHASTIC / SALE",
-          "maximum_gross_units": 406.0
-        },
-        {
-          "model": "STOCHASTIC / NO_SALE",
-          "maximum_gross_units": 406.0
-        },
-        {
           "model": "STOCHASTIC2 / SALE",
-          "maximum_gross_units": 14.0
-        },
-        {
-          "model": "stochA / SALE",
-          "maximum_gross_units": 115.0
-        },
-        {
-          "model": "stochA / NO_SALE",
-          "maximum_gross_units": 1122.0
+          "maximum_gross_units": 91.0
         },
         {
           "model": "stoch2A / SALE",
-          "maximum_gross_units": 14.0
+          "maximum_gross_units": 91.0
         },
         {
-          "model": "STOCHASTIC / NO_INITIAL_SALES",
-          "maximum_gross_units": 406.0
+          "model": "STOCHASTIC2 / NO_INITIAL_SALES",
+          "maximum_gross_units": 336.0
         },
         {
           "model": "stochA / NO_INITIAL_SALES",
-          "maximum_gross_units": 2445.0
+          "maximum_gross_units": 257.0
+        },
+        {
+          "model": "stoch2A / NO_INITIAL_SALES",
+          "maximum_gross_units": 336.0
         }
       ],
       "held_units": 0
@@ -636,7 +653,12 @@
       "checked_at_UTC": "2026-11-19T07:54:48.954994+00:00",
       "model_eligible": true,
       "initial_models": [],
-      "future_models": [],
+      "future_models": [
+        {
+          "model": "stochA / SALE",
+          "maximum_gross_units": 134.0
+        }
+      ],
       "held_units": 0
     },
     {
@@ -932,28 +954,24 @@
       "initial_models": [],
       "future_models": [
         {
-          "model": "STOCHASTIC / SALE",
-          "maximum_gross_units": 3.0
-        },
-        {
-          "model": "STOCHASTIC / NO_SALE",
-          "maximum_gross_units": 15.0
-        },
-        {
           "model": "stochA / SALE",
-          "maximum_gross_units": 1544.0
+          "maximum_gross_units": 721.0
         },
         {
           "model": "stochA / NO_SALE",
-          "maximum_gross_units": 1670.0
+          "maximum_gross_units": 549.0
         },
         {
-          "model": "STOCHASTIC / NO_INITIAL_SALES",
-          "maximum_gross_units": 3.0
+          "model": "STOCHASTIC2 / NO_INITIAL_SALES",
+          "maximum_gross_units": 2.0
         },
         {
           "model": "stochA / NO_INITIAL_SALES",
-          "maximum_gross_units": 4285.0
+          "maximum_gross_units": 1353.0
+        },
+        {
+          "model": "stoch2A / NO_INITIAL_SALES",
+          "maximum_gross_units": 2.0
         }
       ],
       "held_units": 543
@@ -1018,24 +1036,16 @@
       "initial_models": [],
       "future_models": [
         {
-          "model": "STOCHASTIC / SALE",
-          "maximum_gross_units": 98.0
+          "model": "STOCHASTIC / NO_SALE",
+          "maximum_gross_units": 63.0
         },
         {
-          "model": "STOCHASTIC / NO_SALE",
-          "maximum_gross_units": 98.0
+          "model": "stochA / SALE",
+          "maximum_gross_units": 341.0
         },
         {
           "model": "stochA / NO_SALE",
-          "maximum_gross_units": 344.0
-        },
-        {
-          "model": "STOCHASTIC / NO_INITIAL_SALES",
-          "maximum_gross_units": 137.0
-        },
-        {
-          "model": "stochA / NO_INITIAL_SALES",
-          "maximum_gross_units": 643.0
+          "maximum_gross_units": 456.0
         }
       ],
       "held_units": 100
@@ -1233,8 +1243,16 @@
       "initial_models": [],
       "future_models": [
         {
+          "model": "stochA / SALE",
+          "maximum_gross_units": 32.0
+        },
+        {
+          "model": "stochA / NO_SALE",
+          "maximum_gross_units": 36.0
+        },
+        {
           "model": "stochA / NO_INITIAL_SALES",
-          "maximum_gross_units": 68.0
+          "maximum_gross_units": 48.0
         }
       ],
       "held_units": 0
@@ -1479,64 +1497,39 @@
       "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000111650/trading/chart_price_json?start=2026-11-09&end=2026-11-18&historical=1",
       "checked_at_UTC": "2026-11-19T07:54:49.705940+00:00",
       "model_eligible": true,
-      "initial_models": [
-        {
-          "model": "STOCHASTIC2 / SALE",
-          "units": 1473.0
-        },
-        {
-          "model": "stoch2A / SALE",
-          "units": 1473.0
-        }
-      ],
+      "initial_models": [],
       "future_models": [
         {
-          "model": "STOCHASTIC / SALE",
-          "maximum_gross_units": 1537.0
-        },
-        {
           "model": "STOCHASTIC / NO_SALE",
-          "maximum_gross_units": 1537.0
+          "maximum_gross_units": 151.0
         },
         {
           "model": "STOCHASTIC2 / SALE",
-          "maximum_gross_units": 245.0
-        },
-        {
-          "model": "STOCHASTIC2 / NO_SALE",
-          "maximum_gross_units": 57.0
+          "maximum_gross_units": 614.0
         },
         {
           "model": "stochA / SALE",
-          "maximum_gross_units": 1214.0
+          "maximum_gross_units": 2181.0
         },
         {
           "model": "stochA / NO_SALE",
-          "maximum_gross_units": 4247.0
+          "maximum_gross_units": 2590.0
         },
         {
           "model": "stoch2A / SALE",
-          "maximum_gross_units": 245.0
-        },
-        {
-          "model": "stoch2A / NO_SALE",
-          "maximum_gross_units": 57.0
-        },
-        {
-          "model": "STOCHASTIC / NO_INITIAL_SALES",
-          "maximum_gross_units": 1537.0
+          "maximum_gross_units": 614.0
         },
         {
           "model": "STOCHASTIC2 / NO_INITIAL_SALES",
-          "maximum_gross_units": 8.0
+          "maximum_gross_units": 1547.0
         },
         {
           "model": "stochA / NO_INITIAL_SALES",
-          "maximum_gross_units": 4948.0
+          "maximum_gross_units": 7030.0
         },
         {
           "model": "stoch2A / NO_INITIAL_SALES",
-          "maximum_gross_units": 8.0
+          "maximum_gross_units": 1547.0
         }
       ],
       "held_units": 928
@@ -1599,7 +1592,20 @@
       "checked_at_UTC": "2026-11-19T07:54:49.763804+00:00",
       "model_eligible": true,
       "initial_models": [],
-      "future_models": [],
+      "future_models": [
+        {
+          "model": "STOCHASTIC / NO_SALE",
+          "maximum_gross_units": 244.0
+        },
+        {
+          "model": "stochA / SALE",
+          "maximum_gross_units": 815.0
+        },
+        {
+          "model": "stochA / NO_SALE",
+          "maximum_gross_units": 849.0
+        }
+      ],
       "held_units": 0
     },
     {
@@ -1784,16 +1790,24 @@
       "initial_models": [],
       "future_models": [
         {
-          "model": "stochA / SALE",
-          "maximum_gross_units": 123.0
+          "model": "STOCHASTIC / SALE",
+          "maximum_gross_units": 13.0
+        },
+        {
+          "model": "STOCHASTIC / NO_SALE",
+          "maximum_gross_units": 23.0
         },
         {
           "model": "stochA / NO_SALE",
-          "maximum_gross_units": 22.0
+          "maximum_gross_units": 25.0
+        },
+        {
+          "model": "STOCHASTIC / NO_INITIAL_SALES",
+          "maximum_gross_units": 13.0
         },
         {
           "model": "stochA / NO_INITIAL_SALES",
-          "maximum_gross_units": 123.0
+          "maximum_gross_units": 108.0
         }
       ],
       "held_units": 0
@@ -1947,44 +1961,20 @@
       "initial_models": [],
       "future_models": [
         {
-          "model": "STOCHASTIC / SALE",
-          "maximum_gross_units": 9.0
-        },
-        {
-          "model": "STOCHASTIC / NO_SALE",
-          "maximum_gross_units": 28.0
-        },
-        {
-          "model": "STOCHASTIC2 / SALE",
-          "maximum_gross_units": 29.0
-        },
-        {
-          "model": "STOCHASTIC2 / NO_SALE",
-          "maximum_gross_units": 15.0
-        },
-        {
           "model": "stochA / SALE",
-          "maximum_gross_units": 125.0
+          "maximum_gross_units": 13.0
         },
         {
           "model": "stochA / NO_SALE",
-          "maximum_gross_units": 77.0
-        },
-        {
-          "model": "stoch2A / SALE",
-          "maximum_gross_units": 29.0
-        },
-        {
-          "model": "stoch2A / NO_SALE",
-          "maximum_gross_units": 15.0
+          "maximum_gross_units": 80.0
         },
         {
           "model": "STOCHASTIC / NO_INITIAL_SALES",
-          "maximum_gross_units": 28.0
+          "maximum_gross_units": 27.0
         },
         {
           "model": "stochA / NO_INITIAL_SALES",
-          "maximum_gross_units": 127.0
+          "maximum_gross_units": 125.0
         }
       ],
       "held_units": 26
@@ -2036,7 +2026,16 @@
       "checked_at_UTC": "2026-11-19T07:54:50.017827+00:00",
       "model_eligible": true,
       "initial_models": [],
-      "future_models": [],
+      "future_models": [
+        {
+          "model": "STOCHASTIC / NO_SALE",
+          "maximum_gross_units": 1457.0
+        },
+        {
+          "model": "stochA / SALE",
+          "maximum_gross_units": 18.0
+        }
+      ],
       "held_units": 0
     },
     {
@@ -2160,20 +2159,16 @@
       "initial_models": [],
       "future_models": [
         {
-          "model": "STOCHASTIC / SALE",
-          "maximum_gross_units": 351.0
-        },
-        {
           "model": "STOCHASTIC / NO_SALE",
-          "maximum_gross_units": 351.0
+          "maximum_gross_units": 437.0
         },
         {
-          "model": "STOCHASTIC / NO_INITIAL_SALES",
-          "maximum_gross_units": 351.0
+          "model": "stochA / NO_SALE",
+          "maximum_gross_units": 478.0
         },
         {
           "model": "stochA / NO_INITIAL_SALES",
-          "maximum_gross_units": 722.0
+          "maximum_gross_units": 2530.0
         }
       ],
       "held_units": 0
@@ -2228,23 +2223,23 @@
       "future_models": [
         {
           "model": "STOCHASTIC / SALE",
-          "maximum_gross_units": 1474.0
+          "maximum_gross_units": 1553.0
         },
         {
           "model": "STOCHASTIC / NO_SALE",
-          "maximum_gross_units": 1508.0
+          "maximum_gross_units": 1553.0
         },
         {
           "model": "stochA / NO_SALE",
-          "maximum_gross_units": 2051.0
+          "maximum_gross_units": 2056.0
         },
         {
           "model": "STOCHASTIC / NO_INITIAL_SALES",
-          "maximum_gross_units": 1474.0
+          "maximum_gross_units": 1553.0
         },
         {
           "model": "stochA / NO_INITIAL_SALES",
-          "maximum_gross_units": 2051.0
+          "maximum_gross_units": 2056.0
         }
       ],
       "held_units": 0
@@ -2371,27 +2366,27 @@
       "future_models": [
         {
           "model": "STOCHASTIC / SALE",
-          "maximum_gross_units": 406.0
+          "maximum_gross_units": 272.0
         },
         {
           "model": "STOCHASTIC / NO_SALE",
-          "maximum_gross_units": 406.0
+          "maximum_gross_units": 409.0
         },
         {
           "model": "stochA / SALE",
-          "maximum_gross_units": 1404.0
+          "maximum_gross_units": 356.0
         },
         {
           "model": "stochA / NO_SALE",
-          "maximum_gross_units": 667.0
+          "maximum_gross_units": 459.0
         },
         {
           "model": "STOCHASTIC / NO_INITIAL_SALES",
-          "maximum_gross_units": 406.0
+          "maximum_gross_units": 272.0
         },
         {
           "model": "stochA / NO_INITIAL_SALES",
-          "maximum_gross_units": 1404.0
+          "maximum_gross_units": 592.0
         }
       ],
       "held_units": 0
@@ -2442,48 +2437,31 @@
       "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000102253/trading/chart_price_json?start=2026-11-09&end=2026-11-18&historical=1",
       "checked_at_UTC": "2026-11-19T07:54:50.324697+00:00",
       "model_eligible": true,
-      "initial_models": [
-        {
-          "model": "stochA / SALE",
-          "units": 3048.0
-        },
-        {
-          "model": "stochA / NO_INITIAL_SALES",
-          "units": 365.0
-        }
-      ],
+      "initial_models": [],
       "future_models": [
         {
           "model": "STOCHASTIC / SALE",
-          "maximum_gross_units": 302.0
+          "maximum_gross_units": 15.0
         },
         {
           "model": "STOCHASTIC / NO_SALE",
-          "maximum_gross_units": 302.0
-        },
-        {
-          "model": "STOCHASTIC2 / SALE",
-          "maximum_gross_units": 4.0
+          "maximum_gross_units": 12.0
         },
         {
           "model": "stochA / SALE",
-          "maximum_gross_units": 883.0
+          "maximum_gross_units": 3131.0
         },
         {
           "model": "stochA / NO_SALE",
-          "maximum_gross_units": 923.0
-        },
-        {
-          "model": "stoch2A / SALE",
-          "maximum_gross_units": 4.0
+          "maximum_gross_units": 964.0
         },
         {
           "model": "STOCHASTIC / NO_INITIAL_SALES",
-          "maximum_gross_units": 302.0
+          "maximum_gross_units": 15.0
         },
         {
           "model": "stochA / NO_INITIAL_SALES",
-          "maximum_gross_units": 4472.0
+          "maximum_gross_units": 4739.0
         }
       ],
       "held_units": 620
@@ -2545,44 +2523,31 @@
       "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000100372/trading/chart_price_json?start=2026-11-09&end=2026-11-18&historical=1",
       "checked_at_UTC": "2026-11-19T07:54:50.402980+00:00",
       "model_eligible": true,
-      "initial_models": [
-        {
-          "model": "STOCHASTIC / SALE",
-          "units": 116.0
-        }
-      ],
+      "initial_models": [],
       "future_models": [
         {
           "model": "STOCHASTIC / SALE",
-          "maximum_gross_units": 174.0
+          "maximum_gross_units": 113.0
         },
         {
           "model": "STOCHASTIC / NO_SALE",
-          "maximum_gross_units": 174.0
-        },
-        {
-          "model": "STOCHASTIC2 / SALE",
-          "maximum_gross_units": 3.0
+          "maximum_gross_units": 67.0
         },
         {
           "model": "stochA / SALE",
-          "maximum_gross_units": 589.0
+          "maximum_gross_units": 158.0
         },
         {
           "model": "stochA / NO_SALE",
-          "maximum_gross_units": 264.0
-        },
-        {
-          "model": "stoch2A / SALE",
-          "maximum_gross_units": 3.0
+          "maximum_gross_units": 172.0
         },
         {
           "model": "STOCHASTIC / NO_INITIAL_SALES",
-          "maximum_gross_units": 174.0
+          "maximum_gross_units": 113.0
         },
         {
           "model": "stochA / NO_INITIAL_SALES",
-          "maximum_gross_units": 439.0
+          "maximum_gross_units": 385.0
         }
       ],
       "held_units": 150
@@ -2633,44 +2598,27 @@
       "source_url": "https://nasdaqbaltic.com/statistics/en/instrument/LV0000101129/trading/chart_price_json?start=2026-11-09&end=2026-11-18&historical=1",
       "checked_at_UTC": "2026-11-19T07:54:50.434120+00:00",
       "model_eligible": true,
-      "initial_models": [
-        {
-          "model": "stochA / NO_INITIAL_SALES",
-          "units": 120.0
-        }
-      ],
+      "initial_models": [],
       "future_models": [
         {
           "model": "STOCHASTIC / SALE",
-          "maximum_gross_units": 29.0
+          "maximum_gross_units": 32.0
         },
         {
           "model": "STOCHASTIC / NO_SALE",
-          "maximum_gross_units": 29.0
-        },
-        {
-          "model": "STOCHASTIC2 / SALE",
-          "maximum_gross_units": 1.0
-        },
-        {
-          "model": "stochA / SALE",
-          "maximum_gross_units": 267.0
+          "maximum_gross_units": 19.0
         },
         {
           "model": "stochA / NO_SALE",
-          "maximum_gross_units": 107.0
-        },
-        {
-          "model": "stoch2A / SALE",
-          "maximum_gross_units": 1.0
+          "maximum_gross_units": 96.0
         },
         {
           "model": "STOCHASTIC / NO_INITIAL_SALES",
-          "maximum_gross_units": 41.0
+          "maximum_gross_units": 32.0
         },
         {
           "model": "stochA / NO_INITIAL_SALES",
-          "maximum_gross_units": 40.0
+          "maximum_gross_units": 172.0
         }
       ],
       "held_units": 100
@@ -2735,28 +2683,8 @@
       "initial_models": [],
       "future_models": [
         {
-          "model": "STOCHASTIC / SALE",
-          "maximum_gross_units": 56.0
-        },
-        {
           "model": "STOCHASTIC / NO_SALE",
-          "maximum_gross_units": 56.0
-        },
-        {
-          "model": "stochA / SALE",
-          "maximum_gross_units": 56.0
-        },
-        {
-          "model": "stochA / NO_SALE",
-          "maximum_gross_units": 56.0
-        },
-        {
-          "model": "STOCHASTIC / NO_INITIAL_SALES",
-          "maximum_gross_units": 56.0
-        },
-        {
-          "model": "stochA / NO_INITIAL_SALES",
-          "maximum_gross_units": 56.0
+          "maximum_gross_units": 60.0
         }
       ],
       "held_units": 0
@@ -2822,19 +2750,19 @@
       "future_models": [
         {
           "model": "STOCHASTIC / SALE",
-          "maximum_gross_units": 26.243
+          "maximum_gross_units": 34.148
         },
         {
-          "model": "stochA / SALE",
-          "maximum_gross_units": 412.473
+          "model": "stochA / NO_SALE",
+          "maximum_gross_units": 45.091
         },
         {
           "model": "STOCHASTIC / NO_INITIAL_SALES",
-          "maximum_gross_units": 39.629
+          "maximum_gross_units": 34.148
         },
         {
           "model": "stochA / NO_INITIAL_SALES",
-          "maximum_gross_units": 377.516
+          "maximum_gross_units": 565.291
         }
       ],
       "held_units": 0
@@ -2935,11 +2863,28 @@
       "source_url": "https://tmsapi.auxality.systems/dataaccess/RoburMorningstarConnection/timeseriesPrice?isin=SE0013876968&currencyId=EUR&startDate=2026-11-09&endDate=2026-11-19",
       "checked_at_UTC": "2026-11-19T07:54:51.284558+00:00",
       "model_eligible": true,
-      "initial_models": [],
+      "initial_models": [
+        {
+          "model": "ROBUST / SALE",
+          "units": 23.671
+        }
+      ],
       "future_models": [
         {
-          "model": "stochA / SALE",
-          "maximum_gross_units": 824.18
+          "model": "STOCHASTIC / SALE",
+          "maximum_gross_units": 38.626
+        },
+        {
+          "model": "STOCHASTIC / NO_SALE",
+          "maximum_gross_units": 57.94
+        },
+        {
+          "model": "stochA / NO_SALE",
+          "maximum_gross_units": 92.03
+        },
+        {
+          "model": "STOCHASTIC / NO_INITIAL_SALES",
+          "maximum_gross_units": 38.626
         }
       ],
       "held_units": 0
@@ -3004,22 +2949,39 @@
       "initial_models": [
         {
           "model": "MARKOWITZ / SALE",
-          "units": 27.558
+          "units": 24.993
         },
         {
           "model": "MINIMAX / SALE",
-          "units": 30.014
-        },
-        {
-          "model": "ROBUST / SALE",
-          "units": 15.483
+          "units": 29.522
         },
         {
           "model": "NETSD / SALE",
-          "units": 36.123
+          "units": 36.569
+        },
+        {
+          "model": "STOCHASTIC2 / NO_INITIAL_SALES",
+          "units": 26.121
+        },
+        {
+          "model": "stoch2A / NO_INITIAL_SALES",
+          "units": 26.121
         }
       ],
-      "future_models": [],
+      "future_models": [
+        {
+          "model": "stochA / SALE",
+          "maximum_gross_units": 136.307
+        },
+        {
+          "model": "STOCHASTIC2 / NO_INITIAL_SALES",
+          "maximum_gross_units": 0.2010000000000005
+        },
+        {
+          "model": "stoch2A / NO_INITIAL_SALES",
+          "maximum_gross_units": 0.2010000000000005
+        }
+      ],
       "held_units": 0
     },
     {
@@ -3070,58 +3032,66 @@
       "model_eligible": true,
       "initial_models": [
         {
+          "model": "STOCHASTIC / SALE",
+          "units": 21.073
+        },
+        {
+          "model": "STOCHASTIC2 / SALE",
+          "units": 12.6438
+        },
+        {
+          "model": "stoch2A / SALE",
+          "units": 12.6438
+        },
+        {
           "model": "NETSD / NO_SALE",
-          "units": 0.2466
+          "units": 0.2528
         }
       ],
       "future_models": [
         {
           "model": "STOCHASTIC / SALE",
-          "maximum_gross_units": 0.4294
+          "maximum_gross_units": 20.4296
         },
         {
           "model": "STOCHASTIC / NO_SALE",
-          "maximum_gross_units": 0.4294
+          "maximum_gross_units": 11.2568
         },
         {
           "model": "STOCHASTIC2 / SALE",
-          "maximum_gross_units": 12.6631
+          "maximum_gross_units": 8.1416
         },
         {
           "model": "STOCHASTIC2 / NO_SALE",
-          "maximum_gross_units": 1.7073
+          "maximum_gross_units": 0.7247
         },
         {
           "model": "stochA / SALE",
-          "maximum_gross_units": 0.0005
+          "maximum_gross_units": 24.4017
         },
         {
           "model": "stochA / NO_SALE",
-          "maximum_gross_units": 0.6665
+          "maximum_gross_units": 10.576
         },
         {
           "model": "stoch2A / SALE",
-          "maximum_gross_units": 12.6631
-        },
-        {
-          "model": "stoch2A / NO_SALE",
-          "maximum_gross_units": 1.7073
+          "maximum_gross_units": 8.1416
         },
         {
           "model": "STOCHASTIC / NO_INITIAL_SALES",
-          "maximum_gross_units": 0.3239000000000001
+          "maximum_gross_units": 20.4296
         },
         {
           "model": "STOCHASTIC2 / NO_INITIAL_SALES",
-          "maximum_gross_units": 1.682500000000001
+          "maximum_gross_units": 1.4806999999999988
         },
         {
           "model": "stochA / NO_INITIAL_SALES",
-          "maximum_gross_units": 0.6308000000000007
+          "maximum_gross_units": 34.5522
         },
         {
           "model": "stoch2A / NO_INITIAL_SALES",
-          "maximum_gross_units": 1.682500000000001
+          "maximum_gross_units": 1.4806999999999988
         }
       ],
       "held_units": 11.2672
@@ -3172,8 +3142,38 @@
       "source_url": "https://tmsapi.auxality.systems/dataaccess/RoburMorningstarConnection/timeseriesPrice?isin=SE0014261871&currencyId=EUR&startDate=2026-11-09&endDate=2026-11-19",
       "checked_at_UTC": "2026-11-19T07:54:51.594470+00:00",
       "model_eligible": true,
-      "initial_models": [],
-      "future_models": [],
+      "initial_models": [
+        {
+          "model": "STOCHASTIC / NO_SALE",
+          "units": 48.085
+        },
+        {
+          "model": "STOCHASTIC2 / NO_SALE",
+          "units": 51.519
+        },
+        {
+          "model": "stoch2A / NO_SALE",
+          "units": 157.993
+        },
+        {
+          "model": "stochA / NO_INITIAL_SALES",
+          "units": 171.732
+        }
+      ],
+      "future_models": [
+        {
+          "model": "STOCHASTIC / NO_SALE",
+          "maximum_gross_units": 0.163
+        },
+        {
+          "model": "STOCHASTIC2 / NO_SALE",
+          "maximum_gross_units": 0.113
+        },
+        {
+          "model": "stochA / NO_INITIAL_SALES",
+          "maximum_gross_units": 1.3880000000000052
+        }
+      ],
       "held_units": 0
     },
     {
@@ -3283,8 +3283,26 @@
       "source_url": "https://tmsapi.auxality.systems/dataaccess/RoburMorningstarConnection/timeseriesPrice?isin=SE0014261897&currencyId=EUR&startDate=2026-11-09&endDate=2026-11-19",
       "checked_at_UTC": "2026-11-19T07:54:51.847878+00:00",
       "model_eligible": true,
-      "initial_models": [],
-      "future_models": [],
+      "initial_models": [
+        {
+          "model": "STOCHASTIC2 / NO_INITIAL_SALES",
+          "units": 47.091
+        },
+        {
+          "model": "stoch2A / NO_INITIAL_SALES",
+          "units": 47.091
+        }
+      ],
+      "future_models": [
+        {
+          "model": "STOCHASTIC2 / NO_INITIAL_SALES",
+          "maximum_gross_units": 0.026000000000003354
+        },
+        {
+          "model": "stoch2A / NO_INITIAL_SALES",
+          "maximum_gross_units": 0.026000000000003354
+        }
+      ],
       "held_units": 0
     },
     {
@@ -3506,28 +3524,7 @@
       "checked_at_UTC": "2026-11-19T07:54:52.252513+00:00",
       "model_eligible": true,
       "initial_models": [],
-      "future_models": [
-        {
-          "model": "STOCHASTIC / SALE",
-          "maximum_gross_units": 26.145
-        },
-        {
-          "model": "STOCHASTIC / NO_SALE",
-          "maximum_gross_units": 26.145
-        },
-        {
-          "model": "stochA / NO_SALE",
-          "maximum_gross_units": 32.604
-        },
-        {
-          "model": "STOCHASTIC / NO_INITIAL_SALES",
-          "maximum_gross_units": 40.882
-        },
-        {
-          "model": "stochA / NO_INITIAL_SALES",
-          "maximum_gross_units": 314.171
-        }
-      ],
+      "future_models": [],
       "held_units": 0
     },
     {
@@ -3576,8 +3573,58 @@
       "source_url": "https://tmsapi.auxality.systems/dataaccess/RoburMorningstarConnection/timeseriesPrice?isin=SE0015192323&currencyId=EUR&startDate=2026-11-09&endDate=2026-11-19",
       "checked_at_UTC": "2026-11-19T07:54:52.449762+00:00",
       "model_eligible": true,
-      "initial_models": [],
-      "future_models": [],
+      "initial_models": [
+        {
+          "model": "STOCHASTIC2 / SALE",
+          "units": 36.144
+        },
+        {
+          "model": "stochA / SALE",
+          "units": 258.172
+        },
+        {
+          "model": "stoch2A / SALE",
+          "units": 36.144
+        },
+        {
+          "model": "STOCHASTIC / NO_INITIAL_SALES",
+          "units": 25.817
+        }
+      ],
+      "future_models": [
+        {
+          "model": "STOCHASTIC / SALE",
+          "maximum_gross_units": 26.088
+        },
+        {
+          "model": "STOCHASTIC / NO_SALE",
+          "maximum_gross_units": 31.449
+        },
+        {
+          "model": "STOCHASTIC2 / SALE",
+          "maximum_gross_units": 0.192
+        },
+        {
+          "model": "stochA / SALE",
+          "maximum_gross_units": 0.015
+        },
+        {
+          "model": "stochA / NO_SALE",
+          "maximum_gross_units": 51.649
+        },
+        {
+          "model": "stoch2A / SALE",
+          "maximum_gross_units": 0.192
+        },
+        {
+          "model": "STOCHASTIC / NO_INITIAL_SALES",
+          "maximum_gross_units": 26.088
+        },
+        {
+          "model": "stochA / NO_INITIAL_SALES",
+          "maximum_gross_units": 552.838
+        }
+      ],
       "held_units": 0
     },
     {
@@ -3690,7 +3737,7 @@
       "initial_models": [
         {
           "model": "NETSD / SALE",
-          "units": 15.874
+          "units": 16.16
         }
       ],
       "future_models": [],
@@ -3757,7 +3804,7 @@
       "future_models": [
         {
           "model": "stochA / SALE",
-          "maximum_gross_units": 551.046
+          "maximum_gross_units": 187.531
         }
       ],
       "held_units": 0
@@ -3822,15 +3869,10 @@
       "initial_models": [
         {
           "model": "MINIMAX / NO_SALE",
-          "units": 75.31
+          "units": 69.507
         }
       ],
-      "future_models": [
-        {
-          "model": "stochA / SALE",
-          "maximum_gross_units": 853.61
-        }
-      ],
+      "future_models": [],
       "held_units": 0
     },
     {
@@ -4226,37 +4268,33 @@
       "initial_models": [
         {
           "model": "NETSD R3 / SALE",
-          "units": 245.0
+          "units": 244.0
         },
         {
           "model": "NETSD R3 / NO_SALE",
-          "units": 245.0
+          "units": 244.0
         }
       ],
       "future_models": [
         {
           "model": "STOCHASTIC / SALE",
-          "maximum_gross_units": 700.0
+          "maximum_gross_units": 1263.0
         },
         {
           "model": "STOCHASTIC / NO_SALE",
-          "maximum_gross_units": 237.0
+          "maximum_gross_units": 273.0
         },
         {
           "model": "stochA / SALE",
-          "maximum_gross_units": 609.0
+          "maximum_gross_units": 1905.0
         },
         {
           "model": "stochA / NO_SALE",
-          "maximum_gross_units": 250.0
-        },
-        {
-          "model": "STOCHASTIC / NO_INITIAL_SALES",
-          "maximum_gross_units": 700.0
+          "maximum_gross_units": 254.0
         },
         {
           "model": "stochA / NO_INITIAL_SALES",
-          "maximum_gross_units": 2750.0
+          "maximum_gross_units": 2895.0
         }
       ],
       "held_units": 0
@@ -4322,27 +4360,43 @@
       "future_models": [
         {
           "model": "STOCHASTIC / SALE",
-          "maximum_gross_units": 1185.0
+          "maximum_gross_units": 11.0
         },
         {
           "model": "STOCHASTIC / NO_SALE",
-          "maximum_gross_units": 427.0
+          "maximum_gross_units": 425.0
+        },
+        {
+          "model": "STOCHASTIC2 / SALE",
+          "maximum_gross_units": 1.0
         },
         {
           "model": "stochA / SALE",
-          "maximum_gross_units": 839.0
+          "maximum_gross_units": 2152.0
         },
         {
           "model": "stochA / NO_SALE",
-          "maximum_gross_units": 422.0
+          "maximum_gross_units": 384.0
+        },
+        {
+          "model": "stoch2A / SALE",
+          "maximum_gross_units": 1.0
         },
         {
           "model": "STOCHASTIC / NO_INITIAL_SALES",
-          "maximum_gross_units": 1185.0
+          "maximum_gross_units": 21.0
+        },
+        {
+          "model": "STOCHASTIC2 / NO_INITIAL_SALES",
+          "maximum_gross_units": 1.0
         },
         {
           "model": "stochA / NO_INITIAL_SALES",
-          "maximum_gross_units": 4942.0
+          "maximum_gross_units": 4741.0
+        },
+        {
+          "model": "stoch2A / NO_INITIAL_SALES",
+          "maximum_gross_units": 1.0
         }
       ],
       "held_units": 1000
@@ -4408,11 +4462,11 @@
       "future_models": [
         {
           "model": "stochA / SALE",
-          "maximum_gross_units": 589.0
+          "maximum_gross_units": 1192.0
         },
         {
-          "model": "stochA / NO_SALE",
-          "maximum_gross_units": 564.0
+          "model": "stochA / NO_INITIAL_SALES",
+          "maximum_gross_units": 1934.0
         }
       ],
       "held_units": 0
@@ -4486,7 +4540,12 @@
       "checked_at_UTC": "2026-11-19T07:54:50.637320+00:00",
       "model_eligible": true,
       "initial_models": [],
-      "future_models": [],
+      "future_models": [
+        {
+          "model": "stochA / SALE",
+          "maximum_gross_units": 140.0
+        }
+      ],
       "held_units": 288
     },
     {
@@ -4538,16 +4597,16 @@
       "initial_models": [],
       "future_models": [
         {
-          "model": "stochA / SALE",
-          "maximum_gross_units": 3392.0
+          "model": "STOCHASTIC / NO_SALE",
+          "maximum_gross_units": 2.0
         },
         {
-          "model": "stochA / NO_SALE",
-          "maximum_gross_units": 420.0
+          "model": "stochA / SALE",
+          "maximum_gross_units": 531.0
         },
         {
           "model": "stochA / NO_INITIAL_SALES",
-          "maximum_gross_units": 2594.0
+          "maximum_gross_units": 18.0
         }
       ],
       "held_units": 330
@@ -4601,22 +4660,26 @@
       "initial_models": [],
       "future_models": [
         {
+          "model": "stochA / NO_SALE",
+          "maximum_gross_units": 145.0
+        },
+        {
           "model": "stochA / NO_INITIAL_SALES",
-          "maximum_gross_units": 11.0
+          "maximum_gross_units": 94.0
         }
       ],
       "held_units": 0
     },
     {
       "values": {
-        "price": 25.054585985741763,
-        "lower": 25.30887090348852,
-        "upper": 27.589720761850955,
-        "rsi": 37.11191451594035,
+        "price": 24.931755794841013,
+        "lower": 25.05200967922308,
+        "upper": 27.65683067498622,
+        "rsi": 35.978754824208984,
         "k": -6.522560269672795e-16,
-        "d": 0.03236546787607068,
-        "macd": -0.05300802252452286,
-        "macd_signal": 0.1732533442252331
+        "d": 0.01219295412988614,
+        "macd": -0.1358343302623588,
+        "macd_signal": 0.1114358093277147
       },
       "buy": {
         "BB": true,
@@ -4633,21 +4696,21 @@
       "buy_votes": 2,
       "sell_votes": 1,
       "asset": "US_PFE",
-      "date": "2026-11-19",
-      "observations": 2737,
+      "date": "2026-11-20",
+      "observations": 2738,
       "previous": {
-        "price": 25.583515195060524,
-        "lower": 25.571407377553417,
-        "upper": 27.536585133771805,
-        "rsi": 42.45907555191768,
-        "k": 0.03657886238965888,
-        "d": 0.05253798162225522,
-        "macd": 0.04097314387859541,
-        "macd_signal": 0.2298186859126721
+        "price": 25.054585985741763,
+        "lower": 25.30887090348852,
+        "upper": 27.589720761850955,
+        "rsi": 37.11191451594035,
+        "k": -6.522560269672795e-16,
+        "d": 0.03236546787607068,
+        "macd": -0.05300802252452286,
+        "macd_signal": 0.1732533442252331
       },
       "buy_trigger": {
-        "price": 24.058925792926864,
-        "move_pct": -3.973963861871499,
+        "price": 24.130044199151644,
+        "move_pct": -3.215624291712593,
         "votes": 3,
         "components": {
           "BB": true,
@@ -4669,45 +4732,61 @@
       "initial_models": [
         {
           "model": "UPDATE2 / NO_SALE",
-          "units": 1.0
+          "units": 1.117
         },
         {
           "model": "UPDATE3 / NO_SALE",
-          "units": 1.0
+          "units": 1.117
         }
       ],
       "future_models": [
         {
           "model": "STOCHASTIC / SALE",
-          "maximum_gross_units": 5e-06
+          "maximum_gross_units": 0.085539
         },
         {
           "model": "STOCHASTIC / NO_SALE",
-          "maximum_gross_units": 0.012835
+          "maximum_gross_units": 29.297551
         },
         {
           "model": "STOCHASTIC2 / SALE",
-          "maximum_gross_units": 9.6e-05
+          "maximum_gross_units": 9.5e-05
+        },
+        {
+          "model": "STOCHASTIC2 / NO_SALE",
+          "maximum_gross_units": 8e-06
         },
         {
           "model": "stochA / SALE",
-          "maximum_gross_units": 8.756861
+          "maximum_gross_units": 41.853639
         },
         {
           "model": "stochA / NO_SALE",
-          "maximum_gross_units": 0.001717
+          "maximum_gross_units": 10.760462
         },
         {
           "model": "stoch2A / SALE",
-          "maximum_gross_units": 9.6e-05
+          "maximum_gross_units": 9.5e-05
+        },
+        {
+          "model": "stoch2A / NO_SALE",
+          "maximum_gross_units": 4e-06
         },
         {
           "model": "STOCHASTIC / NO_INITIAL_SALES",
-          "maximum_gross_units": 4.999999999810711e-06
+          "maximum_gross_units": 0.08553899999999981
+        },
+        {
+          "model": "STOCHASTIC2 / NO_INITIAL_SALES",
+          "maximum_gross_units": 9.50000000002853e-05
         },
         {
           "model": "stochA / NO_INITIAL_SALES",
-          "maximum_gross_units": 4.999999999810711e-06
+          "maximum_gross_units": 41.853639
+        },
+        {
+          "model": "stoch2A / NO_INITIAL_SALES",
+          "maximum_gross_units": 9.50000000002853e-05
         }
       ],
       "held_units": 5.883
@@ -4761,8 +4840,8 @@
       "initial_models": [],
       "future_models": [
         {
-          "model": "stochA / NO_INITIAL_SALES",
-          "maximum_gross_units": 333.0
+          "model": "stochA / SALE",
+          "maximum_gross_units": 205.0
         }
       ],
       "held_units": 0
@@ -4826,24 +4905,16 @@
       "model_eligible": true,
       "initial_models": [
         {
-          "model": "STOCHASTIC / NO_SALE",
-          "units": 32.0
-        },
-        {
-          "model": "STOCHASTIC2 / SALE",
-          "units": 19.0
-        },
-        {
-          "model": "stoch2A / SALE",
-          "units": 19.0
+          "model": "stochA / NO_SALE",
+          "units": 49.0
         },
         {
           "model": "UPDATE2 / SALE",
-          "units": 6.0
+          "units": 49.0
         },
         {
           "model": "UPDATE3 / SALE",
-          "units": 6.0
+          "units": 49.0
         },
         {
           "model": "NETSD / NO_SALE",
@@ -4861,131 +4932,61 @@
       "future_models": [
         {
           "model": "STOCHASTIC / SALE",
-          "maximum_gross_units": 48.0
+          "maximum_gross_units": 50.0
         },
         {
           "model": "STOCHASTIC / NO_SALE",
-          "maximum_gross_units": 48.0
+          "maximum_gross_units": 13.0
         },
         {
           "model": "STOCHASTIC2 / SALE",
-          "maximum_gross_units": 91.0
+          "maximum_gross_units": 131.0
         },
         {
           "model": "STOCHASTIC2 / NO_SALE",
-          "maximum_gross_units": 102.0
+          "maximum_gross_units": 38.0
         },
         {
           "model": "stochA / SALE",
-          "maximum_gross_units": 151.0
+          "maximum_gross_units": 45.0
         },
         {
           "model": "stochA / NO_SALE",
-          "maximum_gross_units": 84.0
-        },
-        {
-          "model": "stoch2A / SALE",
-          "maximum_gross_units": 91.0
-        },
-        {
-          "model": "stoch2A / NO_SALE",
-          "maximum_gross_units": 102.0
-        },
-        {
-          "model": "STOCHASTIC / NO_INITIAL_SALES",
           "maximum_gross_units": 48.0
         },
         {
+          "model": "stoch2A / SALE",
+          "maximum_gross_units": 131.0
+        },
+        {
+          "model": "STOCHASTIC / NO_INITIAL_SALES",
+          "maximum_gross_units": 50.0
+        },
+        {
           "model": "STOCHASTIC2 / NO_INITIAL_SALES",
-          "maximum_gross_units": 104.0
+          "maximum_gross_units": 130.0
         },
         {
           "model": "stochA / NO_INITIAL_SALES",
-          "maximum_gross_units": 150.0
+          "maximum_gross_units": 125.0
         },
         {
           "model": "stoch2A / NO_INITIAL_SALES",
-          "maximum_gross_units": 104.0
+          "maximum_gross_units": 130.0
         }
       ],
       "held_units": 127
     },
     {
       "values": {
-        "price": 317.6946792713593,
-        "lower": 298.73618588633695,
-        "upper": 326.07250000696143,
-        "rsi": 58.09468379482364,
-        "k": 0.8068285203654383,
-        "d": 0.8448277320728456,
-        "macd": 5.121412142017903,
-        "macd_signal": 4.732974327247398
-      },
-      "buy": {
-        "BB": false,
-        "RSI": false,
-        "StochRSI": false,
-        "MACD": true
-      },
-      "sell": {
-        "BB": false,
-        "RSI": false,
-        "StochRSI": true,
-        "MACD": false
-      },
-      "buy_votes": 1,
-      "sell_votes": 1,
-      "asset": "US_AAPL",
-      "date": "2026-11-19",
-      "observations": 2737,
-      "previous": {
-        "price": 321.3439206847477,
-        "lower": 298.59437963523106,
-        "upper": 325.52203611948147,
-        "rsi": 63.14293310051467,
-        "k": 0.8583583719030822,
-        "d": 0.8718646444259491,
-        "macd": 5.388681516626605,
-        "macd_signal": 4.635864873554771
-      },
-      "buy_trigger": null,
-      "sell_trigger": {
-        "price": 330.942718014295,
-        "move_pct": 4.170053704808785,
-        "votes": 3,
-        "components": {
-          "BB": true,
-          "RSI": true,
-          "StochRSI": true,
-          "MACD": false
-        },
-        "active": false
-      },
-      "name": "Apple Inc.",
-      "type": "Share",
-      "isin": "",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/AAPL?period1=1451606400&period2=1795219200&interval=1d&events=splits",
-      "checked_at_UTC": "2026-11-20T05:32:10.632322+00:00",
-      "model_eligible": false,
-      "ticker": "AAPL",
-      "quote_url": "https://finance.yahoo.com/quote/AAPL/",
-      "analysis_only": true,
-      "model_status_text": "Reference analysis — not an allocation recommendation",
-      "short_history": false,
-      "initial_models": [],
-      "future_models": [],
-      "held_units": 0
-    },
-    {
-      "values": {
-        "price": 260.76769672285286,
-        "lower": 252.4193573993593,
-        "upper": 269.0085319246944,
-        "rsi": 55.23987049781468,
-        "k": 0.3578652104304277,
-        "d": 0.4871524157504202,
-        "macd": 5.049955152857535,
-        "macd_signal": 5.650518227342066
+        "price": 311.7015446393028,
+        "lower": 298.8067573204183,
+        "upper": 326.10534391536584,
+        "rsi": 50.897702936315596,
+        "k": 0.6428398082077041,
+        "d": 0.7693422334920754,
+        "macd": 4.375564574259897,
+        "macd_signal": 4.661492376649898
       },
       "buy": {
         "BB": false,
@@ -5001,26 +5002,114 @@
       },
       "buy_votes": 0,
       "sell_votes": 1,
-      "asset": "US_ABBV",
-      "date": "2026-11-18",
-      "observations": 2736,
+      "asset": "US_AAPL",
+      "date": "2026-11-20",
+      "observations": 2738,
       "previous": {
-        "price": 266.4664731315122,
-        "lower": 251.4836969468554,
-        "upper": 269.21903279864364,
-        "rsi": 65.90423519261478,
-        "k": 0.5476791049651752,
-        "d": 0.5386887356339912,
-        "macd": 5.658439114758949,
-        "macd_signal": 5.800658995963198
+        "price": 317.6946792713593,
+        "lower": 298.73618588633695,
+        "upper": 326.07250000696143,
+        "rsi": 58.09468379482364,
+        "k": 0.8068285203654383,
+        "d": 0.8448277320728456,
+        "macd": 5.121412142017903,
+        "macd_signal": 4.732974327247398
       },
       "buy_trigger": null,
-      "sell_trigger": null,
+      "sell_trigger": {
+        "price": 334.5145406702913,
+        "move_pct": 7.318858832537201,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "name": "Apple Inc.",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/AAPL?period1=1451606400&period2=1795305600&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-21T07:11:05.704501+00:00",
+      "model_eligible": false,
+      "ticker": "AAPL",
+      "quote_url": "https://finance.yahoo.com/quote/AAPL/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 260.4185734367892,
+        "lower": 253.6745995437474,
+        "upper": 268.61871862823466,
+        "rsi": 54.27990609858127,
+        "k": 0.06663439297779981,
+        "d": 0.1944255729405402,
+        "macd": 3.844299142077489,
+        "macd_signal": 5.071751357764537
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "asset": "US_ABBV",
+      "date": "2026-11-20",
+      "observations": 2738,
+      "previous": {
+        "price": 257.9512450372288,
+        "lower": 252.97747460491829,
+        "upper": 268.7935086613763,
+        "rsi": 50.85960887042712,
+        "k": 0.1587771154133982,
+        "d": 0.3547738102696654,
+        "macd": 4.290999149063225,
+        "macd_signal": 5.378614411686298
+      },
+      "buy_trigger": {
+        "price": 235.01852474120676,
+        "move_pct": -9.75354728365706,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "sell_trigger": {
+        "price": 278.99389118621053,
+        "move_pct": 7.132869788924667,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": false,
+          "MACD": true
+        },
+        "active": false
+      },
       "name": "AbbVie Inc.",
       "type": "Share",
       "isin": "",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/ABBV?period1=1451606400&period2=1795219200&interval=1d&events=splits",
-      "checked_at_UTC": "2026-11-20T05:32:12.550702+00:00",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/ABBV?period1=1451606400&period2=1795305600&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-21T07:11:07.165199+00:00",
       "model_eligible": false,
       "ticker": "ABBV",
       "quote_url": "https://finance.yahoo.com/quote/ABBV/",
@@ -5033,6 +5122,33 @@
     },
     {
       "values": {
+        "price": 386.1601589157757,
+        "lower": 371.33349397046413,
+        "upper": 544.2372181397058,
+        "rsi": 39.228291764585066,
+        "k": 0.5548083693402335,
+        "d": 0.6286228946394918,
+        "macd": -11.68371583187195,
+        "macd_signal": -9.020918009988215
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 0,
+      "sell_votes": 1,
+      "asset": "US_AMD",
+      "date": "2026-11-20",
+      "observations": 2738,
+      "previous": {
         "price": 445.0418508382517,
         "lower": 381.6009332600265,
         "upper": 541.5245820443644,
@@ -5042,40 +5158,13 @@
         "macd": -5.850042514178369,
         "macd_signal": -8.35521855451728
       },
-      "buy": {
-        "BB": false,
-        "RSI": false,
-        "StochRSI": false,
-        "MACD": true
-      },
-      "sell": {
-        "BB": false,
-        "RSI": false,
-        "StochRSI": false,
-        "MACD": false
-      },
-      "buy_votes": 1,
-      "sell_votes": 0,
-      "asset": "US_AMD",
-      "date": "2026-11-19",
-      "observations": 2737,
-      "previous": {
-        "price": 483.3515815540094,
-        "lower": 382.2749562716296,
-        "upper": 541.6770292524418,
-        "rsi": 51.61894043578441,
-        "k": 0.6752374739709768,
-        "d": 0.7135254168842674,
-        "macd": -4.314289311495429,
-        "macd_signal": -8.981512564602008
-      },
       "buy_trigger": null,
       "sell_trigger": null,
       "name": "ADVANCED MICRO DEVICES INC",
       "type": "Share",
       "isin": "",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/AMD?period1=1451606400&period2=1795219200&interval=1d&events=splits",
-      "checked_at_UTC": "2026-11-20T05:32:14.516330+00:00",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/AMD?period1=1451606400&period2=1795305600&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-21T07:11:06.612149+00:00",
       "model_eligible": false,
       "ticker": "AMD",
       "quote_url": "https://finance.yahoo.com/quote/AMD/",
@@ -5088,14 +5177,14 @@
     },
     {
       "values": {
-        "price": 164.80166839199816,
-        "lower": 163.67627144417057,
-        "upper": 174.310354757714,
-        "rsi": 47.672280009636104,
-        "k": 0.05689525560479369,
-        "d": 0.2591657658746481,
-        "macd": 2.437021580759819,
-        "macd_signal": 3.466119775898532
+        "price": 167.61602066775905,
+        "lower": 163.58195837118365,
+        "upper": 174.2833965640807,
+        "rsi": 52.43412850043798,
+        "k": 0.1301168376263525,
+        "d": 0.1525869472936853,
+        "macd": 2.165734894690473,
+        "macd_signal": 3.206042799656921
       },
       "buy": {
         "BB": false,
@@ -5112,21 +5201,21 @@
       "buy_votes": 1,
       "sell_votes": 1,
       "asset": "US_AMT",
-      "date": "2026-11-19",
-      "observations": 2737,
+      "date": "2026-11-20",
+      "observations": 2738,
       "previous": {
-        "price": 168.50839471573556,
-        "lower": 162.99536409120785,
-        "upper": 174.71546897287973,
-        "rsi": 54.32339401590821,
-        "k": 0.2707487486499085,
-        "d": 0.4322793672775316,
-        "macd": 3.034386686972908,
-        "macd_signal": 3.72339432468321
+        "price": 164.80166839199816,
+        "lower": 163.67627144417057,
+        "upper": 174.310354757714,
+        "rsi": 47.672280009636104,
+        "k": 0.05689525560479369,
+        "d": 0.2591657658746481,
+        "macd": 2.437021580759819,
+        "macd_signal": 3.466119775898532
       },
       "buy_trigger": {
-        "price": 146.96742401328586,
-        "move_pct": -10.82164067434782,
+        "price": 148.24129743460367,
+        "move_pct": -11.558992485306096,
         "votes": 3,
         "components": {
           "BB": true,
@@ -5140,8 +5229,8 @@
       "name": "AMERICAN TOWER CORP /MA/",
       "type": "Share",
       "isin": "",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/AMT?period1=1451606400&period2=1795219200&interval=1d&events=splits",
-      "checked_at_UTC": "2026-11-20T05:32:15.919007+00:00",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/AMT?period1=1451606400&period2=1795305600&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-21T07:11:09.460582+00:00",
       "model_eligible": false,
       "ticker": "AMT",
       "quote_url": "https://finance.yahoo.com/quote/AMT/",
@@ -5154,6 +5243,33 @@
     },
     {
       "values": {
+        "price": 224.58599392558577,
+        "lower": 214.7790663271761,
+        "upper": 248.15552189250775,
+        "rsi": 44.46585305965465,
+        "k": 0.4521135140888746,
+        "d": 0.608610048764557,
+        "macd": 2.326841331889113,
+        "macd_signal": 2.980598184363414
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 0,
+      "sell_votes": 1,
+      "asset": "US_AMZN",
+      "date": "2026-11-20",
+      "observations": 2738,
+      "previous": {
         "price": 234.1430086582856,
         "lower": 214.32993146276635,
         "upper": 248.30276244789326,
@@ -5163,51 +5279,13 @@
         "macd": 3.481600271646386,
         "macd_signal": 3.14403739748199
       },
-      "buy": {
-        "BB": false,
-        "RSI": false,
-        "StochRSI": false,
-        "MACD": true
-      },
-      "sell": {
-        "BB": false,
-        "RSI": false,
-        "StochRSI": false,
-        "MACD": false
-      },
-      "buy_votes": 1,
-      "sell_votes": 0,
-      "asset": "US_AMZN",
-      "date": "2026-11-19",
-      "observations": 2737,
-      "previous": {
-        "price": 244.11012968123177,
-        "lower": 213.51453137654954,
-        "upper": 248.0492436301568,
-        "rsi": 61.332036068408726,
-        "k": 0.7176572197726966,
-        "d": 0.7547107388831509,
-        "macd": 3.93177326892868,
-        "macd_signal": 3.05964667894089
-      },
       "buy_trigger": null,
-      "sell_trigger": {
-        "price": 259.54242864788773,
-        "move_pct": 10.84782336023995,
-        "votes": 3,
-        "components": {
-          "BB": true,
-          "RSI": true,
-          "StochRSI": true,
-          "MACD": false
-        },
-        "active": false
-      },
+      "sell_trigger": null,
       "name": "AMAZON COM INC",
       "type": "Share",
       "isin": "",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/AMZN?period1=1451606400&period2=1795219200&interval=1d&events=splits",
-      "checked_at_UTC": "2026-11-20T05:32:10.613501+00:00",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/AMZN?period1=1451606400&period2=1795305600&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-21T07:11:05.682481+00:00",
       "model_eligible": false,
       "ticker": "AMZN",
       "quote_url": "https://finance.yahoo.com/quote/AMZN/",
@@ -5220,14 +5298,14 @@
     },
     {
       "values": {
-        "price": 315.3657149713286,
-        "lower": 264.29015927506094,
-        "upper": 334.58910020403715,
-        "rsi": 54.059702190614,
-        "k": 0.7957574665115814,
-        "d": 0.7585140887110872,
-        "macd": 2.673601058444149,
-        "macd_signal": -1.064771286487508
+        "price": 276.9881743968238,
+        "lower": 262.7780079269029,
+        "upper": 335.06067895562444,
+        "rsi": 42.21705157145378,
+        "k": 0.6653798689399292,
+        "d": 0.7383426405946493,
+        "macd": 0.09039251379022062,
+        "macd_signal": -0.8337385264319626
       },
       "buy": {
         "BB": false,
@@ -5244,22 +5322,22 @@
       "buy_votes": 1,
       "sell_votes": 0,
       "asset": "US_AVGO",
-      "date": "2026-11-19",
-      "observations": 2737,
+      "date": "2026-11-20",
+      "observations": 2738,
       "previous": {
-        "price": 322.8026876303508,
-        "lower": 263.43176673546515,
-        "upper": 332.7587561625532,
-        "rsi": 56.933549155850734,
-        "k": 0.7538905863324364,
-        "d": 0.7639004626993784,
-        "macd": 2.024294363366323,
-        "macd_signal": -1.999364372720422
+        "price": 315.3657149713286,
+        "lower": 264.29015927506094,
+        "upper": 334.58910020403715,
+        "rsi": 54.059702190614,
+        "k": 0.7957574665115814,
+        "d": 0.7585140887110872,
+        "macd": 2.673601058444149,
+        "macd_signal": -1.064771286487508
       },
       "buy_trigger": null,
       "sell_trigger": {
-        "price": 383.734325689506,
-        "move_pct": 21.679151370145977,
+        "price": 388.05853710371025,
+        "move_pct": 40.099315773590696,
         "votes": 3,
         "components": {
           "BB": true,
@@ -5272,8 +5350,8 @@
       "name": "Broadcom Inc.",
       "type": "Share",
       "isin": "",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/AVGO?period1=1451606400&period2=1795219200&interval=1d&events=splits",
-      "checked_at_UTC": "2026-11-20T05:32:11.021854+00:00",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/AVGO?period1=1451606400&period2=1795305600&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-21T07:11:06.118463+00:00",
       "model_eligible": false,
       "ticker": "AVGO",
       "quote_url": "https://finance.yahoo.com/quote/AVGO/",
@@ -5286,6 +5364,33 @@
     },
     {
       "values": {
+        "price": 518.6533212010919,
+        "lower": 475.85533796212195,
+        "upper": 547.2726183034413,
+        "rsi": 62.070307119586154,
+        "k": 7.401486830834377e-17,
+        "d": 0.2497567794561532,
+        "macd": 14.677175073646879,
+        "macd_signal": 16.07590063967527
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "asset": "US_BRK_B",
+      "date": "2026-11-20",
+      "observations": 2738,
+      "previous": {
         "price": 520.4148271718921,
         "lower": 472.4229110571399,
         "upper": 547.27980979531,
@@ -5294,6 +5399,100 @@
         "d": 0.5413018358508963,
         "macd": 16.03533363582096,
         "macd_signal": 16.42558203118237
+      },
+      "buy_trigger": {
+        "price": 452.6187849811811,
+        "move_pct": -12.731921983452976,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "sell_trigger": null,
+      "name": "BERKSHIRE HATHAWAY INC",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/BRK-B?period1=1451606400&period2=1795305600&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-21T07:11:06.409273+00:00",
+      "model_eligible": false,
+      "ticker": "BRK-B",
+      "quote_url": "https://finance.yahoo.com/quote/BRK-B/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 464.4677090145871,
+        "lower": 449.5079970432315,
+        "upper": 635.3294674171553,
+        "rsi": 26.418696970343554,
+        "k": 0.5004680492813643,
+        "d": 0.6235608610847491,
+        "macd": -41.527092783921944,
+        "macd_signal": -40.12800401950402
+      },
+      "buy": {
+        "BB": false,
+        "RSI": true,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "asset": "US_CAT",
+      "date": "2026-11-20",
+      "observations": 2738,
+      "previous": {
+        "price": 488.87372190428266,
+        "lower": 459.26084793109675,
+        "upper": 640.507492371332,
+        "rsi": 29.61776120529133,
+        "k": 0.6475726897678272,
+        "d": 0.7284077678622985,
+        "macd": -39.26500798667746,
+        "macd_signal": -39.77823182839954
+      },
+      "buy_trigger": null,
+      "sell_trigger": null,
+      "name": "CATERPILLAR INC",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/CAT?period1=1451606400&period2=1795305600&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-21T07:11:08.020328+00:00",
+      "model_eligible": false,
+      "ticker": "CAT",
+      "quote_url": "https://finance.yahoo.com/quote/CAT/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 216.02366120301127,
+        "lower": 211.4164150274945,
+        "upper": 259.0382768241756,
+        "rsi": 39.135797410818256,
+        "k": 0.3426515455805204,
+        "d": 0.5440264635661914,
+        "macd": -0.8972594273097343,
+        "macd_signal": 0.4317537048895892
       },
       "buy": {
         "BB": false,
@@ -5309,158 +5508,26 @@
       },
       "buy_votes": 0,
       "sell_votes": 1,
-      "asset": "US_BRK_B",
-      "date": "2026-11-19",
-      "observations": 2737,
+      "asset": "US_CEG",
+      "date": "2026-11-20",
+      "observations": 1216,
       "previous": {
-        "price": 523.9059036444087,
-        "lower": 469.997128666307,
-        "upper": 546.4789216691435,
-        "rsi": 67.54080492150901,
-        "k": 0.5413018358508959,
-        "d": 0.8053123350117088,
-        "macd": 17.35624328526609,
-        "macd_signal": 16.52314413002272
+        "price": 229.2849333872788,
+        "lower": 213.21850346851738,
+        "upper": 258.2774385362584,
+        "rsi": 44.78742682959932,
+        "k": 0.5482055673353803,
+        "d": 0.7183857277126187,
+        "macd": 1.095449920606427,
+        "macd_signal": 0.76400698793942
       },
       "buy_trigger": null,
       "sell_trigger": null,
-      "name": "BERKSHIRE HATHAWAY INC",
-      "type": "Share",
-      "isin": "",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/BRK-B?period1=1451606400&period2=1795219200&interval=1d&events=splits",
-      "checked_at_UTC": "2026-11-20T05:32:11.365275+00:00",
-      "model_eligible": false,
-      "ticker": "BRK-B",
-      "quote_url": "https://finance.yahoo.com/quote/BRK-B/",
-      "analysis_only": true,
-      "model_status_text": "Reference analysis — not an allocation recommendation",
-      "short_history": false,
-      "initial_models": [],
-      "future_models": [],
-      "held_units": 0
-    },
-    {
-      "values": {
-        "price": 488.87372190428266,
-        "lower": 459.26084793109675,
-        "upper": 640.507492371332,
-        "rsi": 29.61776120529133,
-        "k": 0.6475726897678272,
-        "d": 0.7284077678622985,
-        "macd": -39.26500798667746,
-        "macd_signal": -39.77823182839954
-      },
-      "buy": {
-        "BB": false,
-        "RSI": true,
-        "StochRSI": false,
-        "MACD": true
-      },
-      "sell": {
-        "BB": false,
-        "RSI": false,
-        "StochRSI": false,
-        "MACD": false
-      },
-      "buy_votes": 2,
-      "sell_votes": 0,
-      "asset": "US_CAT",
-      "date": "2026-11-19",
-      "observations": 2737,
-      "previous": {
-        "price": 509.45479534213166,
-        "lower": 464.63709334054715,
-        "upper": 649.0774301300403,
-        "rsi": 32.720285209404295,
-        "k": 0.7226418442050587,
-        "d": 0.8083192421549095,
-        "macd": -38.29161367806648,
-        "macd_signal": -39.90653778883006
-      },
-      "buy_trigger": null,
-      "sell_trigger": {
-        "price": 753.6047004026772,
-        "move_pct": 54.15119828228907,
-        "votes": 3,
-        "components": {
-          "BB": true,
-          "RSI": true,
-          "StochRSI": true,
-          "MACD": false
-        },
-        "active": false
-      },
-      "name": "CATERPILLAR INC",
-      "type": "Share",
-      "isin": "",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/CAT?period1=1451606400&period2=1795219200&interval=1d&events=splits",
-      "checked_at_UTC": "2026-11-20T05:32:14.084207+00:00",
-      "model_eligible": false,
-      "ticker": "CAT",
-      "quote_url": "https://finance.yahoo.com/quote/CAT/",
-      "analysis_only": true,
-      "model_status_text": "Reference analysis — not an allocation recommendation",
-      "short_history": false,
-      "initial_models": [],
-      "future_models": [],
-      "held_units": 0
-    },
-    {
-      "values": {
-        "price": 239.55141341573213,
-        "lower": 213.0456959880265,
-        "upper": 258.29819236689843,
-        "rsi": 49.97552985325952,
-        "k": 0.7412222777826752,
-        "d": 0.857172868934922,
-        "macd": 2.272699230703381,
-        "macd_signal": 0.6811462547726682
-      },
-      "buy": {
-        "BB": false,
-        "RSI": false,
-        "StochRSI": false,
-        "MACD": true
-      },
-      "sell": {
-        "BB": false,
-        "RSI": false,
-        "StochRSI": false,
-        "MACD": false
-      },
-      "buy_votes": 1,
-      "sell_votes": 0,
-      "asset": "US_CEG",
-      "date": "2026-11-18",
-      "observations": 1214,
-      "previous": {
-        "price": 243.94395060898967,
-        "lower": 213.05971756313312,
-        "upper": 258.4290819902199,
-        "rsi": 52.38643731713289,
-        "k": 0.8657293380198019,
-        "d": 0.9366622800820658,
-        "macd": 2.696925667519793,
-        "macd_signal": 0.28325801078999
-      },
-      "buy_trigger": null,
-      "sell_trigger": {
-        "price": 297.4026648975747,
-        "move_pct": 24.149826818781484,
-        "votes": 3,
-        "components": {
-          "BB": true,
-          "RSI": true,
-          "StochRSI": true,
-          "MACD": false
-        },
-        "active": false
-      },
       "name": "Constellation Energy Corp",
       "type": "Share",
       "isin": "",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/CEG?period1=1451606400&period2=1795219200&interval=1d&events=splits",
-      "checked_at_UTC": "2026-11-20T05:32:15.554034+00:00",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/CEG?period1=1451606400&period2=1795305600&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-21T07:11:09.385095+00:00",
       "model_eligible": false,
       "ticker": "CEG",
       "quote_url": "https://finance.yahoo.com/quote/CEG/",
@@ -5473,14 +5540,14 @@
     },
     {
       "values": {
-        "price": 122.8075013584098,
-        "lower": 116.476841728678,
-        "upper": 138.88199938810845,
-        "rsi": 45.78536327085801,
-        "k": 0.231309089724816,
-        "d": 0.287898737569074,
-        "macd": 0.08427120403521826,
-        "macd_signal": 0.8326969998566295
+        "price": 123.85804833229072,
+        "lower": 116.30531243624166,
+        "upper": 137.96662708549212,
+        "rsi": 47.81047067144728,
+        "k": 0.2686980000553006,
+        "d": 0.2548689609646032,
+        "macd": -0.03346538119427578,
+        "macd_signal": 0.6594645236464485
       },
       "buy": {
         "BB": false,
@@ -5497,21 +5564,21 @@
       "buy_votes": 0,
       "sell_votes": 1,
       "asset": "US_COP",
-      "date": "2026-11-19",
-      "observations": 2737,
+      "date": "2026-11-20",
+      "observations": 2738,
       "previous": {
-        "price": 122.538287651791,
-        "lower": 117.02448984067449,
-        "upper": 139.05047797050864,
-        "rsi": 45.28011261775038,
-        "k": 0.2645997931137009,
-        "d": 0.3305377079931531,
-        "macd": 0.340284919919128,
-        "macd_signal": 1.019803448811982
+        "price": 122.8075013584098,
+        "lower": 116.476841728678,
+        "upper": 138.88199938810845,
+        "rsi": 45.78536327085801,
+        "k": 0.231309089724816,
+        "d": 0.287898737569074,
+        "macd": 0.08427120403521826,
+        "macd_signal": 0.8326969998566295
       },
       "buy_trigger": {
-        "price": 107.82490754463169,
-        "move_pct": -12.200064041732993,
+        "price": 108.56177976522355,
+        "move_pct": -12.34983820028377,
         "votes": 3,
         "components": {
           "BB": true,
@@ -5525,8 +5592,8 @@
       "name": "CONOCOPHILLIPS",
       "type": "Share",
       "isin": "",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/COP?period1=1451606400&period2=1795219200&interval=1d&events=splits",
-      "checked_at_UTC": "2026-11-20T05:32:14.923853+00:00",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/COP?period1=1451606400&period2=1795305600&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-21T07:11:08.736566+00:00",
       "model_eligible": false,
       "ticker": "COP",
       "quote_url": "https://finance.yahoo.com/quote/COP/",
@@ -5539,14 +5606,14 @@
     },
     {
       "values": {
-        "price": 995.1145888416008,
-        "lower": 859.3779727594309,
-        "upper": 1031.9509294485904,
-        "rsi": 72.51306794321015,
-        "k": 0.6644183091356562,
-        "d": 0.8350811421922696,
-        "macd": 37.20390583977826,
-        "macd_signal": 34.2017593021894
+        "price": 1002.8662642530142,
+        "lower": 864.382573922493,
+        "upper": 1037.594787345135,
+        "rsi": 74.0555289315124,
+        "k": 0.5210514600197013,
+        "d": 0.6795218323361066,
+        "macd": 36.607880591656226,
+        "macd_signal": 34.68298356008277
       },
       "buy": {
         "BB": false,
@@ -5563,36 +5630,25 @@
       "buy_votes": 1,
       "sell_votes": 1,
       "asset": "US_COST",
-      "date": "2026-11-19",
-      "observations": 2737,
+      "date": "2026-11-20",
+      "observations": 2738,
       "previous": {
-        "price": 999.8358817625708,
-        "lower": 856.7584491176026,
-        "upper": 1025.9300358816406,
-        "rsi": 75.03608518811465,
-        "k": 0.8530957278529719,
-        "d": 0.9469417058137181,
-        "macd": 38.21276456796477,
-        "macd_signal": 33.45122266779218
+        "price": 995.1145888416008,
+        "lower": 859.3779727594309,
+        "upper": 1031.9509294485904,
+        "rsi": 72.51306794321015,
+        "k": 0.6644183091356562,
+        "d": 0.8350811421922696,
+        "macd": 37.20390583977826,
+        "macd_signal": 34.2017593021894
       },
       "buy_trigger": null,
-      "sell_trigger": {
-        "price": 1041.6879366463163,
-        "move_pct": 4.680199479230907,
-        "votes": 3,
-        "components": {
-          "BB": true,
-          "RSI": true,
-          "StochRSI": true,
-          "MACD": false
-        },
-        "active": false
-      },
+      "sell_trigger": null,
       "name": "COSTCO WHOLESALE CORP /NEW",
       "type": "Share",
       "isin": "",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/COST?period1=1451606400&period2=1795219200&interval=1d&events=splits",
-      "checked_at_UTC": "2026-11-20T05:32:12.578091+00:00",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/COST?period1=1451606400&period2=1795305600&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-21T07:11:07.193702+00:00",
       "model_eligible": false,
       "ticker": "COST",
       "quote_url": "https://finance.yahoo.com/quote/COST/",
@@ -5605,14 +5661,14 @@
     },
     {
       "values": {
-        "price": 187.8639010189229,
-        "lower": 182.19855439228684,
-        "upper": 213.23158015417255,
-        "rsi": 41.09141705235717,
-        "k": 0.1415500124743889,
-        "d": 0.2516530321994574,
-        "macd": -0.6963550394157494,
-        "macd_signal": 0.6594012689437989
+        "price": 189.59963158979755,
+        "lower": 181.68492246613258,
+        "upper": 211.86983112120888,
+        "rsi": 43.815210660199014,
+        "k": 0.1071007435848885,
+        "d": 0.1627187288738763,
+        "macd": -0.9658226923324094,
+        "macd_signal": 0.3343564766885573
       },
       "buy": {
         "BB": false,
@@ -5629,21 +5685,21 @@
       "buy_votes": 1,
       "sell_votes": 1,
       "asset": "US_CVX",
-      "date": "2026-11-19",
-      "observations": 2737,
+      "date": "2026-11-20",
+      "observations": 2738,
       "previous": {
-        "price": 187.70970540008437,
-        "lower": 183.4878415616466,
-        "upper": 213.38615658000046,
-        "rsi": 40.85489081908915,
-        "k": 0.2395054305623524,
-        "d": 0.3237652199747361,
-        "macd": -0.165558594630653,
-        "macd_signal": 0.998340346033686
+        "price": 187.8639010189229,
+        "lower": 182.19855439228684,
+        "upper": 213.23158015417255,
+        "rsi": 41.09141705235717,
+        "k": 0.1415500124743889,
+        "d": 0.2516530321994574,
+        "macd": -0.6963550394157494,
+        "macd_signal": 0.6594012689437989
       },
       "buy_trigger": {
-        "price": 173.81414575807545,
-        "move_pct": -7.478688127226873,
+        "price": 174.6267895208062,
+        "move_pct": -7.897083946547633,
         "votes": 3,
         "components": {
           "BB": true,
@@ -5657,8 +5713,8 @@
       "name": "CHEVRON CORP",
       "type": "Share",
       "isin": "",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/CVX?period1=1451606400&period2=1795219200&interval=1d&events=splits",
-      "checked_at_UTC": "2026-11-20T05:32:12.946530+00:00",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/CVX?period1=1451606400&period2=1795305600&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-21T07:11:07.352309+00:00",
       "model_eligible": false,
       "ticker": "CVX",
       "quote_url": "https://finance.yahoo.com/quote/CVX/",
@@ -5671,14 +5727,14 @@
     },
     {
       "values": {
-        "price": 109.39774381368268,
-        "lower": 96.22417701095867,
-        "upper": 112.00288915613163,
-        "rsi": 66.99162908621106,
-        "k": 0.5273254774389738,
-        "d": 0.6658977838413337,
-        "macd": 3.25963069561179,
-        "macd_signal": 2.974015949456618
+        "price": 107.35214136208698,
+        "lower": 96.62526586641486,
+        "upper": 112.28430322067162,
+        "rsi": 60.127753588729135,
+        "k": 0.4001390888054112,
+        "d": 0.5612395994738112,
+        "macd": 3.065180842251536,
+        "macd_signal": 2.992248928015602
       },
       "buy": {
         "BB": false,
@@ -5695,25 +5751,25 @@
       "buy_votes": 1,
       "sell_votes": 0,
       "asset": "US_DIS",
-      "date": "2026-11-19",
-      "observations": 2737,
+      "date": "2026-11-20",
+      "observations": 2738,
       "previous": {
-        "price": 111.560905005791,
-        "lower": 96.08065240206733,
-        "upper": 111.30302468070226,
-        "rsi": 75.44890115100355,
-        "k": 0.7562542321770378,
-        "d": 0.7714341840407563,
-        "macd": 3.252127085074775,
-        "macd_signal": 2.902612262917824
+        "price": 109.39774381368268,
+        "lower": 96.22417701095867,
+        "upper": 112.00288915613163,
+        "rsi": 66.99162908621106,
+        "k": 0.5273254774389738,
+        "d": 0.6658977838413337,
+        "macd": 3.25963069561179,
+        "macd_signal": 2.974015949456618
       },
       "buy_trigger": null,
       "sell_trigger": null,
       "name": "Walt Disney Co",
       "type": "Share",
       "isin": "",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/DIS?period1=1451606400&period2=1795219200&interval=1d&events=splits",
-      "checked_at_UTC": "2026-11-20T05:32:14.547847+00:00",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/DIS?period1=1451606400&period2=1795305600&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-21T07:11:08.379510+00:00",
       "model_eligible": false,
       "ticker": "DIS",
       "quote_url": "https://finance.yahoo.com/quote/DIS/",
@@ -5726,245 +5782,14 @@
     },
     {
       "values": {
-        "price": 117.23071380126598,
-        "lower": 110.23632621114635,
-        "upper": 119.41675953122345,
-        "rsi": 66.07585351486794,
-        "k": 0.5410827982109742,
-        "d": 0.7480546383686346,
-        "macd": 2.771954004861755,
-        "macd_signal": 2.757650108652973
-      },
-      "buy": {
-        "BB": false,
-        "RSI": false,
-        "StochRSI": false,
-        "MACD": true
-      },
-      "sell": {
-        "BB": false,
-        "RSI": false,
-        "StochRSI": false,
-        "MACD": false
-      },
-      "buy_votes": 1,
-      "sell_votes": 0,
-      "asset": "US_DUK",
-      "date": "2026-11-19",
-      "observations": 2737,
-      "previous": {
-        "price": 118.5722128480651,
-        "lower": 109.94253724953315,
-        "upper": 119.17890964514008,
-        "rsi": 73.55238457987612,
-        "k": 0.8638081134809309,
-        "d": 0.8215280179877945,
-        "macd": 2.891952941974864,
-        "macd_signal": 2.754074134600778
-      },
-      "buy_trigger": null,
-      "sell_trigger": {
-        "price": 119.97867421144619,
-        "move_pct": 2.34406182567366,
-        "votes": 3,
-        "components": {
-          "BB": true,
-          "RSI": true,
-          "StochRSI": true,
-          "MACD": false
-        },
-        "active": false
-      },
-      "name": "Duke Energy CORP",
-      "type": "Share",
-      "isin": "",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/DUK?period1=1451606400&period2=1795219200&interval=1d&events=splits",
-      "checked_at_UTC": "2026-11-20T05:32:15.591097+00:00",
-      "model_eligible": false,
-      "ticker": "DUK",
-      "quote_url": "https://finance.yahoo.com/quote/DUK/",
-      "analysis_only": true,
-      "model_status_text": "Reference analysis — not an allocation recommendation",
-      "short_history": false,
-      "initial_models": [],
-      "future_models": [],
-      "held_units": 0
-    },
-    {
-      "values": {
-        "price": 926.1735696806484,
-        "lower": 858.609278848508,
-        "upper": 981.6634784980561,
-        "rsi": 51.21017409519284,
-        "k": 0.4534473074060485,
-        "d": 0.5578249024388467,
-        "macd": 12.71730235184566,
-        "macd_signal": 11.555468025154923
-      },
-      "buy": {
-        "BB": false,
-        "RSI": false,
-        "StochRSI": false,
-        "MACD": true
-      },
-      "sell": {
-        "BB": false,
-        "RSI": false,
-        "StochRSI": false,
-        "MACD": false
-      },
-      "buy_votes": 1,
-      "sell_votes": 0,
-      "asset": "US_EQIX",
-      "date": "2026-11-19",
-      "observations": 2737,
-      "previous": {
-        "price": 945.0218818380744,
-        "lower": 847.7836381611215,
-        "upper": 984.8891647267204,
-        "rsi": 56.04548894721766,
-        "k": 0.5837667215732164,
-        "d": 0.670349751501034,
-        "macd": 14.591122409878267,
-        "macd_signal": 11.265009443482239
-      },
-      "buy_trigger": null,
-      "sell_trigger": null,
-      "name": "EQUINIX INC",
-      "type": "Share",
-      "isin": "",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/EQIX?period1=1451606400&period2=1795219200&interval=1d&events=splits",
-      "checked_at_UTC": "2026-11-20T05:32:15.700114+00:00",
-      "model_eligible": false,
-      "ticker": "EQIX",
-      "quote_url": "https://finance.yahoo.com/quote/EQIX/",
-      "analysis_only": true,
-      "model_status_text": "Reference analysis — not an allocation recommendation",
-      "short_history": false,
-      "initial_models": [],
-      "future_models": [],
-      "held_units": 0
-    },
-    {
-      "values": {
-        "price": 44.68704415200579,
-        "lower": 46.48189312596632,
-        "upper": 62.320918905677445,
-        "rsi": 25.121791821298554,
-        "k": 0.2080507456076154,
-        "d": 0.3565832790146497,
-        "macd": -3.318722034898258,
-        "macd_signal": -2.483528814828354
-      },
-      "buy": {
-        "BB": true,
-        "RSI": true,
-        "StochRSI": false,
-        "MACD": false
-      },
-      "sell": {
-        "BB": false,
-        "RSI": false,
-        "StochRSI": false,
-        "MACD": true
-      },
-      "buy_votes": 2,
-      "sell_votes": 1,
-      "asset": "US_FCX",
-      "date": "2026-11-19",
-      "observations": 2737,
-      "previous": {
-        "price": 46.90919106759615,
-        "lower": 48.39576298762691,
-        "upper": 61.70273519890915,
-        "rsi": 27.877155485143955,
-        "k": 0.3351057987229289,
-        "d": 0.5081894564542188,
-        "macd": -2.88119459065647,
-        "macd_signal": -2.274730509810877
-      },
-      "buy_trigger": null,
-      "sell_trigger": null,
-      "name": "FREEPORT-MCMORAN INC",
-      "type": "Share",
-      "isin": "",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/FCX?period1=1451606400&period2=1795219200&interval=1d&events=splits",
-      "checked_at_UTC": "2026-11-20T05:32:15.729964+00:00",
-      "model_eligible": false,
-      "ticker": "FCX",
-      "quote_url": "https://finance.yahoo.com/quote/FCX/",
-      "analysis_only": true,
-      "model_status_text": "Reference analysis — not an allocation recommendation",
-      "short_history": false,
-      "initial_models": [],
-      "future_models": [],
-      "held_units": 0
-    },
-    {
-      "values": {
-        "price": 290.1018967274495,
-        "lower": 256.45766810677355,
-        "upper": 315.7449676868331,
-        "rsi": 51.84608546225704,
-        "k": 0.3691694199528885,
-        "d": 0.4883878528704206,
-        "macd": 5.726567643683779,
-        "macd_signal": 5.240202239912479
-      },
-      "buy": {
-        "BB": false,
-        "RSI": false,
-        "StochRSI": false,
-        "MACD": true
-      },
-      "sell": {
-        "BB": false,
-        "RSI": false,
-        "StochRSI": false,
-        "MACD": false
-      },
-      "buy_votes": 1,
-      "sell_votes": 0,
-      "asset": "US_GE",
-      "date": "2026-11-19",
-      "observations": 2737,
-      "previous": {
-        "price": 299.14296690692527,
-        "lower": 253.32488907631762,
-        "upper": 316.06479118509935,
-        "rsi": 58.712422873332685,
-        "k": 0.525636124887011,
-        "d": 0.5859148537637412,
-        "macd": 6.521798736523181,
-        "macd_signal": 5.118610888969654
-      },
-      "buy_trigger": null,
-      "sell_trigger": null,
-      "name": "GENERAL ELECTRIC CO",
-      "type": "Share",
-      "isin": "",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/GE?period1=1451606400&period2=1795219200&interval=1d&events=splits",
-      "checked_at_UTC": "2026-11-20T05:32:13.730553+00:00",
-      "model_eligible": false,
-      "ticker": "GE",
-      "quote_url": "https://finance.yahoo.com/quote/GE/",
-      "analysis_only": true,
-      "model_status_text": "Reference analysis — not an allocation recommendation",
-      "short_history": false,
-      "initial_models": [],
-      "future_models": [],
-      "held_units": 0
-    },
-    {
-      "values": {
-        "price": 704.0663481975976,
-        "lower": 666.0342560147044,
-        "upper": 818.7154048224702,
-        "rsi": 41.368124415839354,
-        "k": 0.3601162166403212,
-        "d": 0.4025553546547558,
-        "macd": -29.651314339160308,
-        "macd_signal": -28.07030658865009
+        "price": 118.0891708637824,
+        "lower": 110.58964810180713,
+        "upper": 119.70644716355896,
+        "rsi": 68.29671055642842,
+        "k": 0.3831030130918433,
+        "d": 0.5959979749279197,
+        "macd": 2.714829429434147,
+        "macd_signal": 2.749085972809208
       },
       "buy": {
         "BB": false,
@@ -5980,26 +5805,268 @@
       },
       "buy_votes": 0,
       "sell_votes": 1,
-      "asset": "US_GEV",
-      "date": "2026-11-18",
-      "observations": 665,
+      "asset": "US_DUK",
+      "date": "2026-11-20",
+      "observations": 2738,
       "previous": {
-        "price": 709.7187852803087,
-        "lower": 666.3486173989468,
-        "upper": 830.4156283897123,
-        "rsi": 42.075251474670786,
-        "k": 0.3972857604028366,
-        "d": 0.4680048090553101,
-        "macd": -29.725840711745718,
-        "macd_signal": -27.675054651022535
+        "price": 117.23071380126598,
+        "lower": 110.23632621114635,
+        "upper": 119.41675953122345,
+        "rsi": 66.07585351486794,
+        "k": 0.5410827982109742,
+        "d": 0.7480546383686346,
+        "macd": 2.771954004861755,
+        "macd_signal": 2.757650108652973
+      },
+      "buy_trigger": null,
+      "sell_trigger": null,
+      "name": "Duke Energy CORP",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/DUK?period1=1451606400&period2=1795305600&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-21T07:11:09.311368+00:00",
+      "model_eligible": false,
+      "ticker": "DUK",
+      "quote_url": "https://finance.yahoo.com/quote/DUK/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 881.0008832603503,
+        "lower": 865.0520809423729,
+        "upper": 977.9968989840565,
+        "rsi": 41.883703785346164,
+        "k": 0.2748751503280439,
+        "d": 0.4373630597691009,
+        "macd": 7.500764046618542,
+        "macd_signal": 10.744527229447646
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 0,
+      "sell_votes": 1,
+      "asset": "US_EQIX",
+      "date": "2026-11-20",
+      "observations": 2738,
+      "previous": {
+        "price": 926.1735696806484,
+        "lower": 858.609278848508,
+        "upper": 981.6634784980561,
+        "rsi": 51.21017409519284,
+        "k": 0.4534473074060485,
+        "d": 0.5578249024388467,
+        "macd": 12.71730235184566,
+        "macd_signal": 11.555468025154923
+      },
+      "buy_trigger": null,
+      "sell_trigger": null,
+      "name": "EQUINIX INC",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/EQIX?period1=1451606400&period2=1795305600&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-21T07:11:09.136082+00:00",
+      "model_eligible": false,
+      "ticker": "EQIX",
+      "quote_url": "https://finance.yahoo.com/quote/EQIX/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 41.84713528522912,
+        "lower": 44.168314374838715,
+        "upper": 62.99592874941483,
+        "rsi": 22.1135956623404,
+        "k": 0.0616089131165353,
+        "d": 0.2015884858156922,
+        "macd": -3.850239434603793,
+        "macd_signal": -2.756870938783442
+      },
+      "buy": {
+        "BB": true,
+        "RSI": true,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 3,
+      "sell_votes": 1,
+      "asset": "US_FCX",
+      "date": "2026-11-20",
+      "observations": 2738,
+      "previous": {
+        "price": 44.68704415200579,
+        "lower": 46.48189312596632,
+        "upper": 62.320918905677445,
+        "rsi": 25.121791821298554,
+        "k": 0.2080507456076154,
+        "d": 0.3565832790146497,
+        "macd": -3.318722034898258,
+        "macd_signal": -2.483528814828354
+      },
+      "buy_trigger": {
+        "price": 41.84713528522912,
+        "move_pct": 0,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": true
+      },
+      "sell_trigger": null,
+      "name": "FREEPORT-MCMORAN INC",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/FCX?period1=1451606400&period2=1795305600&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-21T07:11:09.474309+00:00",
+      "model_eligible": false,
+      "ticker": "FCX",
+      "quote_url": "https://finance.yahoo.com/quote/FCX/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 281.7288399610441,
+        "lower": 261.2651999975714,
+        "upper": 313.59079735414826,
+        "rsi": 46.430478073366764,
+        "k": 0.1952096194976485,
+        "d": 0.3633383881125163,
+        "macd": 4.370327157743759,
+        "macd_signal": 5.066227223478736
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "asset": "US_GE",
+      "date": "2026-11-20",
+      "observations": 2738,
+      "previous": {
+        "price": 290.1018967274495,
+        "lower": 256.45766810677355,
+        "upper": 315.7449676868331,
+        "rsi": 51.84608546225704,
+        "k": 0.3691694199528885,
+        "d": 0.4883878528704206,
+        "macd": 5.726567643683779,
+        "macd_signal": 5.240202239912479
+      },
+      "buy_trigger": {
+        "price": 237.82707143341852,
+        "move_pct": -15.582987007541039,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "sell_trigger": null,
+      "name": "GENERAL ELECTRIC CO",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/GE?period1=1451606400&period2=1795305600&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-21T07:11:07.752724+00:00",
+      "model_eligible": false,
+      "ticker": "GE",
+      "quote_url": "https://finance.yahoo.com/quote/GE/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 636.3330455776559,
+        "lower": 643.4945841414022,
+        "upper": 827.0339658721406,
+        "rsi": 33.64318072999803,
+        "k": 0.2181003712820937,
+        "d": 0.3132923980262149,
+        "macd": -35.002193286899114,
+        "macd_signal": -29.850947783568078
+      },
+      "buy": {
+        "BB": true,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "asset": "US_GEV",
+      "date": "2026-11-20",
+      "observations": 667,
+      "previous": {
+        "price": 688.0276831303448,
+        "lower": 659.9162409519231,
+        "upper": 819.7923700001463,
+        "rsi": 39.347413932326155,
+        "k": 0.3616606061562304,
+        "d": 0.3730208610664625,
+        "macd": -30.534455684076192,
+        "macd_signal": -28.563136407735314
       },
       "buy_trigger": null,
       "sell_trigger": null,
       "name": "GE Vernova Inc.",
       "type": "Share",
       "isin": "",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/GEV?period1=1451606400&period2=1795219200&interval=1d&events=splits",
-      "checked_at_UTC": "2026-11-20T05:32:14.348751+00:00",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/GEV?period1=1451606400&period2=1795305600&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-21T07:11:08.197528+00:00",
       "model_eligible": false,
       "ticker": "GEV",
       "quote_url": "https://finance.yahoo.com/quote/GEV/",
@@ -6012,6 +6079,33 @@
     },
     {
       "values": {
+        "price": 241.39218247945576,
+        "lower": 233.95339958903722,
+        "upper": 286.51062641557104,
+        "rsi": 30.871830789774602,
+        "k": 0.4999771107737063,
+        "d": 0.5900674670113083,
+        "macd": -10.45060000972046,
+        "macd_signal": -10.227391860885385
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 0,
+      "sell_votes": 1,
+      "asset": "US_GOOGL",
+      "date": "2026-11-20",
+      "observations": 2738,
+      "previous": {
         "price": 248.05313288037607,
         "lower": 235.38808684192082,
         "upper": 289.54477875938386,
@@ -6021,40 +6115,13 @@
         "macd": -9.716984534748065,
         "macd_signal": -10.171589823676616
       },
-      "buy": {
-        "BB": false,
-        "RSI": false,
-        "StochRSI": false,
-        "MACD": true
-      },
-      "sell": {
-        "BB": false,
-        "RSI": false,
-        "StochRSI": false,
-        "MACD": false
-      },
-      "buy_votes": 1,
-      "sell_votes": 0,
-      "asset": "US_GOOGL",
-      "date": "2026-11-19",
-      "observations": 2737,
-      "previous": {
-        "price": 257.51276663147905,
-        "lower": 235.90960470227358,
-        "upper": 293.153244462462,
-        "rsi": 38.931554639224856,
-        "k": 0.6659164122410988,
-        "d": 0.7597078184151215,
-        "macd": -9.317492321553289,
-        "macd_signal": -10.285241145908753
-      },
       "buy_trigger": null,
       "sell_trigger": null,
       "name": "Alphabet Inc.",
       "type": "Share",
       "isin": "",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/GOOGL?period1=1451606400&period2=1795219200&interval=1d&events=splits",
-      "checked_at_UTC": "2026-11-20T05:32:10.917301+00:00",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/GOOGL?period1=1451606400&period2=1795305600&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-21T07:11:05.987363+00:00",
       "model_eligible": false,
       "ticker": "GOOGL",
       "quote_url": "https://finance.yahoo.com/quote/GOOGL/",
@@ -6067,14 +6134,14 @@
     },
     {
       "values": {
-        "price": 306.2954809641387,
-        "lower": 281.6341766494716,
-        "upper": 326.59340237230566,
-        "rsi": 57.76896234094263,
-        "k": -6.661338147750939e-16,
-        "d": 0.1248105843299647,
-        "macd": 8.936661343090805,
-        "macd_signal": 10.287085690625515
+        "price": 308.4986428980181,
+        "lower": 284.35937274015424,
+        "upper": 326.1439629530682,
+        "rsi": 59.579958057955714,
+        "k": 0.0341852501365514,
+        "d": 0.05303047858812304,
+        "macd": 8.302615858711647,
+        "macd_signal": 9.890191724242742
       },
       "buy": {
         "BB": false,
@@ -6091,21 +6158,21 @@
       "buy_votes": 1,
       "sell_votes": 1,
       "asset": "US_HD",
-      "date": "2026-11-19",
-      "observations": 2737,
+      "date": "2026-11-20",
+      "observations": 2738,
       "previous": {
-        "price": 307.8410053322734,
-        "lower": 280.41204848287947,
-        "upper": 326.4345331775423,
-        "rsi": 59.50565783862468,
-        "k": 0.124906185627815,
-        "d": 0.2431171748750569,
-        "macd": 9.840268084157458,
-        "macd_signal": 10.624691777509192
+        "price": 306.2954809641387,
+        "lower": 281.6341766494716,
+        "upper": 326.59340237230566,
+        "rsi": 57.76896234094263,
+        "k": -6.661338147750939e-16,
+        "d": 0.1248105843299647,
+        "macd": 8.936661343090805,
+        "macd_signal": 10.287085690625515
       },
       "buy_trigger": {
-        "price": 257.2782172525425,
-        "move_pct": -16.003260497772466,
+        "price": 260.77944818697443,
+        "move_pct": -15.468202473363368,
         "votes": 3,
         "components": {
           "BB": true,
@@ -6115,12 +6182,23 @@
         },
         "active": false
       },
-      "sell_trigger": null,
+      "sell_trigger": {
+        "price": 329.7688526090065,
+        "move_pct": 6.894749847577053,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": false,
+          "MACD": true
+        },
+        "active": false
+      },
       "name": "HOME DEPOT, INC.",
       "type": "Share",
       "isin": "",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/HD?period1=1451606400&period2=1795219200&interval=1d&events=splits",
-      "checked_at_UTC": "2026-11-20T05:32:13.680181+00:00",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/HD?period1=1451606400&period2=1795305600&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-21T07:11:07.973792+00:00",
       "model_eligible": false,
       "ticker": "HD",
       "quote_url": "https://finance.yahoo.com/quote/HD/",
@@ -6133,6 +6211,33 @@
     },
     {
       "values": {
+        "price": 246.10555161119484,
+        "lower": 235.48176933920075,
+        "upper": 259.08369834829864,
+        "rsi": 51.69599837050234,
+        "k": 0.08642119869588083,
+        "d": 0.2555765710061476,
+        "macd": 3.786014004506626,
+        "macd_signal": 4.650344317436911
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "asset": "US_JNJ",
+      "date": "2026-11-20",
+      "observations": 2738,
+      "previous": {
         "price": 243.03130881408072,
         "lower": 233.92575970030254,
         "upper": 259.5983476405681,
@@ -6142,40 +6247,24 @@
         "macd": 4.345147186690269,
         "macd_signal": 4.866426895669481
       },
-      "buy": {
-        "BB": false,
-        "RSI": false,
-        "StochRSI": false,
-        "MACD": false
+      "buy_trigger": {
+        "price": 215.25705165192295,
+        "move_pct": -12.534662366335937,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
       },
-      "sell": {
-        "BB": false,
-        "RSI": false,
-        "StochRSI": false,
-        "MACD": true
-      },
-      "buy_votes": 0,
-      "sell_votes": 1,
-      "asset": "US_JNJ",
-      "date": "2026-11-19",
-      "observations": 2737,
-      "previous": {
-        "price": 248.6323962500285,
-        "lower": 233.34631073035533,
-        "upper": 259.7577523289788,
-        "rsi": 54.701710701166704,
-        "k": 0.4736201497009082,
-        "d": 0.7272779175278337,
-        "macd": 5.308616119486231,
-        "macd_signal": 4.996746822914284
-      },
-      "buy_trigger": null,
       "sell_trigger": null,
       "name": "JOHNSON & JOHNSON",
       "type": "Share",
       "isin": "",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/JNJ?period1=1451606400&period2=1795219200&interval=1d&events=splits",
-      "checked_at_UTC": "2026-11-20T05:32:13.717098+00:00",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/JNJ?period1=1451606400&period2=1795305600&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-21T07:11:06.864767+00:00",
       "model_eligible": false,
       "ticker": "JNJ",
       "quote_url": "https://finance.yahoo.com/quote/JNJ/",
@@ -6188,14 +6277,14 @@
     },
     {
       "values": {
-        "price": 291.3209618092277,
-        "lower": 292.172633744584,
-        "upper": 314.4078045238026,
-        "rsi": 39.37968398948918,
+        "price": 282.5568687709708,
+        "lower": 288.54346804474767,
+        "upper": 316.66878623749426,
+        "rsi": 33.60809134575307,
         "k": 2.46099437125243e-15,
-        "d": 0.1724071674183333,
-        "macd": -0.2570547471197528,
-        "macd_signal": 1.166895266784718
+        "d": 0.03907523594969444,
+        "macd": -1.78286480595051,
+        "macd_signal": 0.5769432522376721
       },
       "buy": {
         "BB": true,
@@ -6212,21 +6301,21 @@
       "buy_votes": 2,
       "sell_votes": 1,
       "asset": "US_JPM",
-      "date": "2026-11-19",
-      "observations": 2737,
+      "date": "2026-11-20",
+      "observations": 2738,
       "previous": {
-        "price": 295.5050924066033,
-        "lower": 293.9505352573527,
-        "upper": 313.5326134829378,
-        "rsi": 42.624779927691165,
-        "k": 0.1172257078490825,
-        "d": 0.3744485859095124,
-        "macd": 0.8018286876689444,
-        "macd_signal": 1.522882770260835
+        "price": 291.3209618092277,
+        "lower": 292.172633744584,
+        "upper": 314.4078045238026,
+        "rsi": 39.37968398948918,
+        "k": 2.46099437125243e-15,
+        "d": 0.1724071674183333,
+        "macd": -0.2570547471197528,
+        "macd_signal": 1.166895266784718
       },
       "buy_trigger": {
-        "price": 274.13762568712707,
-        "move_pct": -5.898420771160707,
+        "price": 275.3650047578428,
+        "move_pct": -2.545280192412325,
         "votes": 3,
         "components": {
           "BB": true,
@@ -6240,8 +6329,8 @@
       "name": "JPMORGAN CHASE & CO",
       "type": "Share",
       "isin": "",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/JPM?period1=1451606400&period2=1795219200&interval=1d&events=splits",
-      "checked_at_UTC": "2026-11-20T05:32:11.428048+00:00",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/JPM?period1=1451606400&period2=1795305600&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-21T07:11:06.455912+00:00",
       "model_eligible": false,
       "ticker": "JPM",
       "quote_url": "https://finance.yahoo.com/quote/JPM/",
@@ -6254,6 +6343,33 @@
     },
     {
       "values": {
+        "price": 88.25295529005417,
+        "lower": 81.14680591264609,
+        "upper": 91.23755296929055,
+        "rsi": 63.104857419440336,
+        "k": 0.2300986998927176,
+        "d": 0.488713134096358,
+        "macd": 2.100052763589559,
+        "macd_signal": 2.142330283813135
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 0,
+      "sell_votes": 1,
+      "asset": "US_KO",
+      "date": "2026-11-20",
+      "observations": 2738,
+      "previous": {
         "price": 87.41811893912903,
         "lower": 80.76586570591137,
         "upper": 91.0760529212513,
@@ -6263,40 +6379,24 @@
         "macd": 2.212820215102298,
         "macd_signal": 2.152899663869029
       },
-      "buy": {
-        "BB": false,
-        "RSI": false,
-        "StochRSI": false,
-        "MACD": true
+      "buy_trigger": {
+        "price": 76.76660516740715,
+        "move_pct": -13.015258338823587,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
       },
-      "sell": {
-        "BB": false,
-        "RSI": false,
-        "StochRSI": false,
-        "MACD": false
-      },
-      "buy_votes": 1,
-      "sell_votes": 0,
-      "asset": "US_KO",
-      "date": "2026-11-19",
-      "observations": 2737,
-      "previous": {
-        "price": 89.43289235766834,
-        "lower": 80.6846924339989,
-        "upper": 90.92411544497959,
-        "rsi": 73.12072760528793,
-        "k": 0.784687017864839,
-        "d": 0.9072728219978298,
-        "macd": 2.409567533089444,
-        "macd_signal": 2.137919526060712
-      },
-      "buy_trigger": null,
       "sell_trigger": null,
       "name": "COCA COLA CO",
       "type": "Share",
       "isin": "",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/KO?period1=1451606400&period2=1795219200&interval=1d&events=splits",
-      "checked_at_UTC": "2026-11-20T05:32:13.325403+00:00",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/KO?period1=1451606400&period2=1795305600&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-21T07:11:07.526995+00:00",
       "model_eligible": false,
       "ticker": "KO",
       "quote_url": "https://finance.yahoo.com/quote/KO/",
@@ -6309,14 +6409,14 @@
     },
     {
       "values": {
-        "price": 464.1648393878076,
-        "lower": 449.71561477117916,
-        "upper": 477.47077686174,
-        "rsi": 56.88830941963437,
+        "price": 457.5341097108878,
+        "lower": 450.1881054569258,
+        "upper": 477.29203605780634,
+        "rsi": 49.49957497072695,
         "k": -9.992007221626409e-16,
-        "d": 0.2222722811744398,
-        "macd": 7.958691280890093,
-        "macd_signal": 9.23634427048992
+        "d": 0.07013484576190243,
+        "macd": 6.648022676477808,
+        "macd_signal": 8.718679951687498
       },
       "buy": {
         "BB": false,
@@ -6333,21 +6433,21 @@
       "buy_votes": 1,
       "sell_votes": 1,
       "asset": "US_LIN",
-      "date": "2026-11-19",
-      "observations": 2737,
+      "date": "2026-11-20",
+      "observations": 2738,
       "previous": {
-        "price": 466.9584000223662,
-        "lower": 448.8427410268819,
-        "upper": 477.4746887869855,
-        "rsi": 60.41636377608513,
-        "k": 0.210404537285711,
-        "d": 0.4284129232288098,
-        "macd": 8.84068940478619,
-        "macd_signal": 9.555757517889877
+        "price": 464.1648393878076,
+        "lower": 449.71561477117916,
+        "upper": 477.47077686174,
+        "rsi": 56.88830941963437,
+        "k": -9.992007221626409e-16,
+        "d": 0.2222722811744398,
+        "macd": 7.958691280890093,
+        "macd_signal": 9.23634427048992
       },
       "buy_trigger": {
-        "price": 421.28826433416873,
-        "move_pct": -9.237359535933242,
+        "price": 424.35087352328475,
+        "move_pct": -7.252625647642152,
         "votes": 3,
         "components": {
           "BB": true,
@@ -6358,8 +6458,8 @@
         "active": false
       },
       "sell_trigger": {
-        "price": 481.3482537962352,
-        "move_pct": 3.702006905799027,
+        "price": 483.57956483310653,
+        "move_pct": 5.692571235547161,
         "votes": 3,
         "components": {
           "BB": true,
@@ -6372,8 +6472,8 @@
       "name": "LINDE PLC",
       "type": "Share",
       "isin": "",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/LIN?period1=1451606400&period2=1795219200&interval=1d&events=splits",
-      "checked_at_UTC": "2026-11-20T05:32:14.446249+00:00",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/LIN?period1=1451606400&period2=1795305600&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-21T07:11:08.357578+00:00",
       "model_eligible": false,
       "ticker": "LIN",
       "quote_url": "https://finance.yahoo.com/quote/LIN/",
@@ -6386,14 +6486,14 @@
     },
     {
       "values": {
-        "price": 1229.1848572754618,
-        "lower": 1134.370727455518,
-        "upper": 1345.5656008405688,
-        "rsi": 53.5468738056468,
-        "k": 0.1058850481073347,
-        "d": 0.2964050841598144,
-        "macd": 43.120528340733244,
-        "macd_signal": 50.35232092948672
+        "price": 1225.7597682907758,
+        "lower": 1149.3795674333753,
+        "upper": 1339.3598474087996,
+        "rsi": 52.81180471011762,
+        "k": 7.031412489292658e-16,
+        "d": 0.1298408238847398,
+        "macd": 37.36684210723661,
+        "macd_signal": 47.755225165036705
       },
       "buy": {
         "BB": false,
@@ -6410,21 +6510,21 @@
       "buy_votes": 1,
       "sell_votes": 1,
       "asset": "US_LLY",
-      "date": "2026-11-19",
-      "observations": 2737,
+      "date": "2026-11-20",
+      "observations": 2738,
       "previous": {
-        "price": 1260.712983223924,
-        "lower": 1126.4670155388562,
-        "upper": 1347.167510778569,
-        "rsi": 60.777607557813695,
-        "k": 0.2836374235468841,
-        "d": 0.4507898351190818,
-        "macd": 49.48838020627204,
-        "macd_signal": 52.16026907667509
+        "price": 1229.1848572754618,
+        "lower": 1134.370727455518,
+        "upper": 1345.5656008405688,
+        "rsi": 53.5468738056468,
+        "k": 0.1058850481073347,
+        "d": 0.2964050841598144,
+        "macd": 43.120528340733244,
+        "macd_signal": 50.35232092948672
       },
       "buy_trigger": {
-        "price": 1021.1808979518859,
-        "move_pct": -16.92210558016678,
+        "price": 1036.0383148379656,
+        "move_pct": -15.477865921261358,
         "votes": 3,
         "components": {
           "BB": true,
@@ -6434,12 +6534,23 @@
         },
         "active": false
       },
-      "sell_trigger": null,
+      "sell_trigger": {
+        "price": 1364.144001769405,
+        "move_pct": 11.289670052688617,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": false,
+          "MACD": true
+        },
+        "active": false
+      },
       "name": "ELI LILLY & Co",
       "type": "Share",
       "isin": "",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/LLY?period1=1451606400&period2=1795219200&interval=1d&events=splits",
-      "checked_at_UTC": "2026-11-20T05:32:11.063195+00:00",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/LLY?period1=1451606400&period2=1795305600&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-21T07:11:06.070815+00:00",
       "model_eligible": false,
       "ticker": "LLY",
       "quote_url": "https://finance.yahoo.com/quote/LLY/",
@@ -6452,14 +6563,14 @@
     },
     {
       "values": {
-        "price": 569.9599708879185,
-        "lower": 545.6567151867619,
-        "upper": 611.7384083471734,
-        "rsi": 50.30024377027929,
+        "price": 569.2356932260863,
+        "lower": 547.4413879189262,
+        "upper": 611.1639148200497,
+        "rsi": 49.907459344501454,
         "k": 1.924386576016938e-15,
-        "d": 0.1683810057588633,
-        "macd": 13.236852675638147,
-        "macd_signal": 16.507488775070662
+        "d": 0.05749292619999215,
+        "macd": 11.105990510757351,
+        "macd_signal": 15.427189122208
       },
       "buy": {
         "BB": false,
@@ -6476,21 +6587,21 @@
       "buy_votes": 1,
       "sell_votes": 1,
       "asset": "US_MA",
-      "date": "2026-11-19",
-      "observations": 2737,
+      "date": "2026-11-20",
+      "observations": 2738,
       "previous": {
-        "price": 586.5882522950287,
-        "lower": 545.0921413074009,
-        "upper": 611.8183659474396,
-        "rsi": 60.44121568591416,
-        "k": 0.1724787785999619,
-        "d": 0.307182417332635,
-        "macd": 15.690326983417435,
-        "macd_signal": 17.325147799928793
+        "price": 569.9599708879185,
+        "lower": 545.6567151867619,
+        "upper": 611.7384083471734,
+        "rsi": 50.30024377027929,
+        "k": 1.924386576016938e-15,
+        "d": 0.1683810057588633,
+        "macd": 13.236852675638147,
+        "macd_signal": 16.507488775070662
       },
       "buy_trigger": {
-        "price": 502.89722979561105,
-        "move_pct": -11.766219474647144,
+        "price": 507.6874215167761,
+        "move_pct": -10.812440688757851,
         "votes": 3,
         "components": {
           "BB": true,
@@ -6501,8 +6612,8 @@
         "active": false
       },
       "sell_trigger": {
-        "price": 618.0116967002529,
-        "move_pct": 8.430719395517627,
+        "price": 630.390492603465,
+        "move_pct": 10.743317768917482,
         "votes": 3,
         "components": {
           "BB": true,
@@ -6515,8 +6626,8 @@
       "name": "Mastercard Inc",
       "type": "Share",
       "isin": "",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/MA?period1=1451606400&period2=1795219200&interval=1d&events=splits",
-      "checked_at_UTC": "2026-11-20T05:32:12.185640+00:00",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/MA?period1=1451606400&period2=1795305600&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-21T07:11:07.151160+00:00",
       "model_eligible": false,
       "ticker": "MA",
       "quote_url": "https://finance.yahoo.com/quote/MA/",
@@ -6529,14 +6640,14 @@
     },
     {
       "values": {
-        "price": 247.77111181178643,
-        "lower": 219.73724064421052,
-        "upper": 261.7118013418869,
-        "rsi": 66.42770477678405,
-        "k": 0.1698187584562388,
-        "d": 0.3043346830589615,
-        "macd": 7.770806307815121,
-        "macd_signal": 7.898336909040875
+        "price": 248.6260147719518,
+        "lower": 222.67741298253253,
+        "upper": 261.43642768313055,
+        "rsi": 67.33255098723016,
+        "k": 0.06905475845051808,
+        "d": 0.1904294953631052,
+        "macd": 7.417890106672075,
+        "macd_signal": 7.802247548567115
       },
       "buy": {
         "BB": false,
@@ -6553,21 +6664,21 @@
       "buy_votes": 1,
       "sell_votes": 1,
       "asset": "US_MCD",
-      "date": "2026-11-19",
-      "observations": 2737,
+      "date": "2026-11-20",
+      "observations": 2738,
       "previous": {
-        "price": 249.8450025340052,
-        "lower": 217.8800950218773,
-        "upper": 261.3380209577681,
-        "rsi": 70.84821964602118,
-        "k": 0.3324149691825525,
-        "d": 0.3965282891044791,
-        "macd": 8.195270468740887,
-        "macd_signal": 7.930219559347313
+        "price": 247.77111181178643,
+        "lower": 219.73724064421052,
+        "upper": 261.7118013418869,
+        "rsi": 66.42770477678405,
+        "k": 0.1698187584562388,
+        "d": 0.3043346830589615,
+        "macd": 7.770806307815121,
+        "macd_signal": 7.898336909040875
       },
       "buy_trigger": {
-        "price": 207.4109655899131,
-        "move_pct": -16.289286481683128,
+        "price": 210.2938314073961,
+        "move_pct": -15.417607606233508,
         "votes": 3,
         "components": {
           "BB": true,
@@ -6581,8 +6692,8 @@
       "name": "MCDONALDS CORP",
       "type": "Share",
       "isin": "",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/MCD?period1=1451606400&period2=1795219200&interval=1d&events=splits",
-      "checked_at_UTC": "2026-11-20T05:32:14.801185+00:00",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/MCD?period1=1451606400&period2=1795305600&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-21T07:11:08.415469+00:00",
       "model_eligible": false,
       "ticker": "MCD",
       "quote_url": "https://finance.yahoo.com/quote/MCD/",
@@ -6595,60 +6706,49 @@
     },
     {
       "values": {
-        "price": 561.9803107976044,
-        "lower": 538.2907736202474,
-        "upper": 584.0407963857788,
-        "rsi": 44.60386124510993,
-        "k": 0.7217983151592554,
-        "d": 0.8049199226722544,
-        "macd": -9.633818479369438,
-        "macd_signal": -11.808915651813882
+        "price": 510.3184957738569,
+        "lower": 525.9425406545428,
+        "upper": 586.3422923293095,
+        "rsi": 31.814351597856355,
+        "k": 0.3450722093526478,
+        "d": 0.5481123274889287,
+        "macd": -14.209533955008624,
+        "macd_signal": -12.13291455551468
       },
       "buy": {
-        "BB": false,
+        "BB": true,
         "RSI": false,
         "StochRSI": false,
-        "MACD": true
+        "MACD": false
       },
       "sell": {
         "BB": false,
         "RSI": false,
         "StochRSI": false,
-        "MACD": false
+        "MACD": true
       },
       "buy_votes": 1,
-      "sell_votes": 0,
+      "sell_votes": 1,
       "asset": "US_META",
-      "date": "2026-11-18",
-      "observations": 2736,
+      "date": "2026-11-20",
+      "observations": 2738,
       "previous": {
-        "price": 563.1722587288994,
-        "lower": 529.4408899466732,
-        "upper": 598.7827343927356,
-        "rsi": 44.973534161384805,
-        "k": 0.8296537037845725,
-        "d": 0.8579357906157098,
-        "macd": -9.955269997729602,
-        "macd_signal": -12.352689944924991
+        "price": 542.4126371025519,
+        "lower": 536.6163543930753,
+        "upper": 582.049297209334,
+        "rsi": 38.94443253960565,
+        "k": 0.5774664579548853,
+        "d": 0.7096394922995702,
+        "macd": -10.83313592095044,
+        "macd_signal": -11.613759705641193
       },
       "buy_trigger": null,
-      "sell_trigger": {
-        "price": 683.1472214187366,
-        "move_pct": 21.560703870419083,
-        "votes": 3,
-        "components": {
-          "BB": true,
-          "RSI": true,
-          "StochRSI": true,
-          "MACD": false
-        },
-        "active": false
-      },
+      "sell_trigger": null,
       "name": "Meta Platforms, Inc.",
       "type": "Share",
       "isin": "",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/META?period1=1451606400&period2=1795219200&interval=1d&events=splits",
-      "checked_at_UTC": "2026-11-20T05:32:10.959019+00:00",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/META?period1=1451606400&period2=1795305600&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-21T07:11:06.023531+00:00",
       "model_eligible": false,
       "ticker": "META",
       "quote_url": "https://finance.yahoo.com/quote/META/",
@@ -6661,14 +6761,14 @@
     },
     {
       "values": {
-        "price": 334.7252480674866,
-        "lower": 319.00211996627985,
-        "upper": 420.352678175834,
-        "rsi": 36.216149824422544,
-        "k": 0.4055721331335837,
-        "d": 0.562429479088015,
-        "macd": -9.936180870856845,
-        "macd_signal": -6.567120217898239
+        "price": 334.11283206679366,
+        "lower": 316.31602757303955,
+        "upper": 415.6013089155104,
+        "rsi": 36.036060434633974,
+        "k": 0.2893360600151584,
+        "d": 0.4143006614742826,
+        "macd": -11.133998791903196,
+        "macd_signal": -7.480495932699231
       },
       "buy": {
         "BB": false,
@@ -6685,25 +6785,25 @@
       "buy_votes": 0,
       "sell_votes": 1,
       "asset": "US_MPC",
-      "date": "2026-11-19",
-      "observations": 2737,
+      "date": "2026-11-20",
+      "observations": 2738,
       "previous": {
-        "price": 340.86431924832465,
-        "lower": 322.53817304133406,
-        "upper": 424.33294445104104,
-        "rsi": 37.983050417085714,
-        "k": 0.5479937912741056,
-        "d": 0.6601685220689499,
-        "macd": -8.325158449943103,
-        "macd_signal": -5.724855054658587
+        "price": 334.7252480674866,
+        "lower": 319.00211996627985,
+        "upper": 420.352678175834,
+        "rsi": 36.216149824422544,
+        "k": 0.4055721331335837,
+        "d": 0.562429479088015,
+        "macd": -9.936180870856845,
+        "macd_signal": -6.567120217898239
       },
       "buy_trigger": null,
       "sell_trigger": null,
       "name": "Marathon Petroleum Corp",
       "type": "Share",
       "isin": "",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/MPC?period1=1451606400&period2=1795219200&interval=1d&events=splits",
-      "checked_at_UTC": "2026-11-20T05:32:15.220356+00:00",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/MPC?period1=1451606400&period2=1795305600&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-21T07:11:09.122406+00:00",
       "model_eligible": false,
       "ticker": "MPC",
       "quote_url": "https://finance.yahoo.com/quote/MPC/",
@@ -6716,14 +6816,14 @@
     },
     {
       "values": {
-        "price": 120.82423358678471,
-        "lower": 123.57930413365021,
-        "upper": 136.78168967911495,
-        "rsi": 34.110128705440054,
-        "k": -1.480297366166875e-16,
-        "d": 0.1759451598780911,
-        "macd": -0.533798177913809,
-        "macd_signal": 0.5438715834996538
+        "price": 121.6742504283013,
+        "lower": 122.20138838720027,
+        "upper": 137.34838271779546,
+        "rsi": 36.061862659008646,
+        "k": 0.02889461960871117,
+        "d": 0.05137846125362037,
+        "macd": -1.091382401311535,
+        "macd_signal": 0.2168207865374161
       },
       "buy": {
         "BB": true,
@@ -6740,21 +6840,21 @@
       "buy_votes": 2,
       "sell_votes": 1,
       "asset": "US_MRK",
-      "date": "2026-11-19",
-      "observations": 2737,
+      "date": "2026-11-20",
+      "observations": 2738,
       "previous": {
-        "price": 125.61998429914011,
-        "lower": 125.68479363119448,
-        "upper": 135.73433956213043,
-        "rsi": 40.60346899105451,
-        "k": 0.1252407641521547,
-        "d": 0.3896342620774229,
-        "macd": 0.2721935554924642,
-        "macd_signal": 0.8132890238530195
+        "price": 120.82423358678471,
+        "lower": 123.57930413365021,
+        "upper": 136.78168967911495,
+        "rsi": 34.110128705440054,
+        "k": -1.480297366166875e-16,
+        "d": 0.1759451598780911,
+        "macd": -0.533798177913809,
+        "macd_signal": 0.5438715834996538
       },
       "buy_trigger": {
-        "price": 116.71569871611882,
-        "move_pct": -3.400422869402975,
+        "price": 117.00916462949543,
+        "move_pct": -3.834078108050365,
         "votes": 3,
         "components": {
           "BB": true,
@@ -6768,8 +6868,8 @@
       "name": "Merck & Co., Inc.",
       "type": "Share",
       "isin": "",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/MRK?period1=1451606400&period2=1795219200&interval=1d&events=splits",
-      "checked_at_UTC": "2026-11-20T05:32:13.342102+00:00",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/MRK?period1=1451606400&period2=1795305600&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-21T07:11:07.577390+00:00",
       "model_eligible": false,
       "ticker": "MRK",
       "quote_url": "https://finance.yahoo.com/quote/MRK/",
@@ -6782,17 +6882,17 @@
     },
     {
       "values": {
-        "price": 453.32968321776633,
-        "lower": 452.316044870318,
-        "upper": 490.7270194232111,
-        "rsi": 42.31558535797179,
-        "k": 0.1558199998569602,
-        "d": 0.2600790524091502,
-        "macd": -0.3968062995794526,
-        "macd_signal": 2.706084437325652
+        "price": 440.8735113864166,
+        "lower": 446.7400750980147,
+        "upper": 493.5298016255325,
+        "rsi": 37.39484362465812,
+        "k": 0.09569884066858632,
+        "d": 0.1751554424150422,
+        "macd": -2.507950193339752,
+        "macd_signal": 1.663277511192571
       },
       "buy": {
-        "BB": false,
+        "BB": true,
         "RSI": false,
         "StochRSI": true,
         "MACD": false
@@ -6803,24 +6903,24 @@
         "StochRSI": false,
         "MACD": true
       },
-      "buy_votes": 1,
+      "buy_votes": 2,
       "sell_votes": 1,
       "asset": "US_MSFT",
-      "date": "2026-11-19",
-      "observations": 2737,
+      "date": "2026-11-20",
+      "observations": 2738,
       "previous": {
-        "price": 463.4299859089368,
-        "lower": 454.509270694553,
-        "upper": 489.7050659813355,
-        "rsi": 46.969279821238594,
-        "k": 0.2739474867195848,
-        "d": 0.3533423707830865,
-        "macd": 1.035287957258276,
-        "macd_signal": 3.481807121551928
+        "price": 453.32968321776633,
+        "lower": 452.316044870318,
+        "upper": 490.7270194232111,
+        "rsi": 42.31558535797179,
+        "k": 0.1558199998569602,
+        "d": 0.2600790524091502,
+        "macd": -0.3968062995794526,
+        "macd_signal": 2.706084437325652
       },
       "buy_trigger": {
-        "price": 411.4807246487606,
-        "move_pct": -9.231462248833754,
+        "price": 414.469932737049,
+        "move_pct": -5.988923799557877,
         "votes": 3,
         "components": {
           "BB": true,
@@ -6834,8 +6934,8 @@
       "name": "MICROSOFT CORP",
       "type": "Share",
       "isin": "",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/MSFT?period1=1451606400&period2=1795219200&interval=1d&events=splits",
-      "checked_at_UTC": "2026-11-20T05:32:10.680008+00:00",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/MSFT?period1=1451606400&period2=1795305600&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-21T07:11:05.707008+00:00",
       "model_eligible": false,
       "ticker": "MSFT",
       "quote_url": "https://finance.yahoo.com/quote/MSFT/",
@@ -6848,14 +6948,14 @@
     },
     {
       "values": {
-        "price": 628.1295509838121,
-        "lower": 554.2643809395148,
-        "upper": 884.1141172627202,
-        "rsi": 37.17181233030753,
-        "k": 0.5487622900448074,
-        "d": 0.5296294133745149,
-        "macd": -50.2315095776662,
-        "macd_signal": -47.290605464248614
+        "price": 540.9554228986578,
+        "lower": 527.8090587317892,
+        "upper": 886.263303229715,
+        "rsi": 30.580644659733604,
+        "k": 0.4204090024451921,
+        "d": 0.4962542955928357,
+        "macd": -57.511855984696695,
+        "macd_signal": -49.33485556833823
       },
       "buy": {
         "BB": false,
@@ -6872,25 +6972,25 @@
       "buy_votes": 0,
       "sell_votes": 1,
       "asset": "US_MU",
-      "date": "2026-11-19",
-      "observations": 2737,
+      "date": "2026-11-20",
+      "observations": 2738,
       "previous": {
-        "price": 643.0251819212709,
-        "lower": 565.488108629695,
-        "upper": 886.5156308359949,
-        "rsi": 38.48803093126916,
-        "k": 0.5195915942885111,
-        "d": 0.5323960111698529,
-        "macd": -49.084411247505955,
-        "macd_signal": -46.55537943589422
+        "price": 628.1295509838121,
+        "lower": 554.2643809395148,
+        "upper": 884.1141172627202,
+        "rsi": 37.17181233030753,
+        "k": 0.5487622900448074,
+        "d": 0.5296294133745149,
+        "macd": -50.2315095776662,
+        "macd_signal": -47.290605464248614
       },
       "buy_trigger": null,
       "sell_trigger": null,
       "name": "MICRON TECHNOLOGY INC",
       "type": "Share",
       "isin": "",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/MU?period1=1451606400&period2=1795219200&interval=1d&events=splits",
-      "checked_at_UTC": "2026-11-20T05:32:11.349768+00:00",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/MU?period1=1451606400&period2=1795305600&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-21T07:11:06.424778+00:00",
       "model_eligible": false,
       "ticker": "MU",
       "quote_url": "https://finance.yahoo.com/quote/MU/",
@@ -6903,14 +7003,14 @@
     },
     {
       "values": {
-        "price": 76.22816677176796,
-        "lower": 72.53885526122924,
-        "upper": 79.65984780297363,
-        "rsi": 56.580843119713165,
+        "price": 75.9326632832049,
+        "lower": 72.89631850118839,
+        "upper": 79.5607095463764,
+        "rsi": 54.76222710364576,
         "k": 0.04618851222777019,
-        "d": 0.1455953804942127,
-        "macd": 1.460672632968809,
-        "macd_signal": 1.672763281809723
+        "d": 0.08862732967536531,
+        "macd": 1.298640372001813,
+        "macd_signal": 1.597938699848141
       },
       "buy": {
         "BB": false,
@@ -6927,21 +7027,21 @@
       "buy_votes": 1,
       "sell_votes": 1,
       "asset": "US_NEE",
-      "date": "2026-11-19",
-      "observations": 2737,
+      "date": "2026-11-20",
+      "observations": 2738,
       "previous": {
-        "price": 77.29759188484398,
-        "lower": 72.14995452708234,
-        "upper": 79.7351689439133,
-        "rsi": 63.68845502099792,
-        "k": 0.1735049645705559,
-        "d": 0.2312176681205769,
-        "macd": 1.61615094346979,
-        "macd_signal": 1.725785944019951
+        "price": 76.22816677176796,
+        "lower": 72.53885526122924,
+        "upper": 79.65984780297363,
+        "rsi": 56.580843119713165,
+        "k": 0.04618851222777019,
+        "d": 0.1455953804942127,
+        "macd": 1.460672632968809,
+        "macd_signal": 1.672763281809723
       },
       "buy_trigger": {
-        "price": 67.73762837808574,
-        "move_pct": -11.138321637857873,
+        "price": 68.344094861719,
+        "move_pct": -9.993813061953238,
         "votes": 3,
         "components": {
           "BB": true,
@@ -6951,12 +7051,23 @@
         },
         "active": false
       },
-      "sell_trigger": null,
+      "sell_trigger": {
+        "price": 80.2083911321672,
+        "move_pct": 5.630946767947775,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": false,
+          "MACD": true
+        },
+        "active": false
+      },
       "name": "NEXTERA ENERGY INC",
       "type": "Share",
       "isin": "",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/NEE?period1=1451606400&period2=1795219200&interval=1d&events=splits",
-      "checked_at_UTC": "2026-11-20T05:32:14.883631+00:00",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/NEE?period1=1451606400&period2=1795305600&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-21T07:11:08.585935+00:00",
       "model_eligible": false,
       "ticker": "NEE",
       "quote_url": "https://finance.yahoo.com/quote/NEE/",
@@ -6969,14 +7080,14 @@
     },
     {
       "values": {
-        "price": 91.02074513442304,
-        "lower": 91.20422057983019,
-        "upper": 111.33046348563552,
-        "rsi": 35.037102508497895,
-        "k": 0.1532591728719647,
-        "d": 0.2584884331596041,
-        "macd": -1.485458856855843,
-        "macd_signal": -0.3420611299370343
+        "price": 86.15104668350844,
+        "lower": 88.7730136667572,
+        "upper": 112.65015997310938,
+        "rsi": 30.833813883993944,
+        "k": 0.02873963215656539,
+        "d": 0.1456866352737025,
+        "macd": -2.493921421416928,
+        "macd_signal": -0.7724331882330131
       },
       "buy": {
         "BB": true,
@@ -6993,21 +7104,21 @@
       "buy_votes": 2,
       "sell_votes": 1,
       "asset": "US_NEM",
-      "date": "2026-11-19",
-      "observations": 2737,
+      "date": "2026-11-20",
+      "observations": 2738,
       "previous": {
-        "price": 95.30452113356752,
-        "lower": 92.91087623000972,
-        "upper": 110.7055798735846,
-        "rsi": 39.42747003098698,
-        "k": 0.2550611007925783,
-        "d": 0.3306436805513913,
-        "macd": -0.6725110788094639,
-        "macd_signal": -0.05621169820733221
+        "price": 91.02074513442304,
+        "lower": 91.20422057983019,
+        "upper": 111.33046348563552,
+        "rsi": 35.037102508497895,
+        "k": 0.1532591728719647,
+        "d": 0.2584884331596041,
+        "macd": -1.485458856855843,
+        "macd_signal": -0.3420611299370343
       },
       "buy_trigger": {
-        "price": 84.56145355493396,
-        "move_pct": -7.096504835188655,
+        "price": 85.02283087474929,
+        "move_pct": -1.309578759854024,
         "votes": 3,
         "components": {
           "BB": true,
@@ -7021,8 +7132,8 @@
       "name": "NEWMONT Corp /DE/",
       "type": "Share",
       "isin": "",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/NEM?period1=1451606400&period2=1795219200&interval=1d&events=splits",
-      "checked_at_UTC": "2026-11-20T05:32:15.167617+00:00",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/NEM?period1=1451606400&period2=1795305600&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-21T07:11:08.783633+00:00",
       "model_eligible": false,
       "ticker": "NEM",
       "quote_url": "https://finance.yahoo.com/quote/NEM/",
@@ -7035,6 +7146,33 @@
     },
     {
       "values": {
+        "price": 51.61965381459174,
+        "lower": 52.64400373896992,
+        "upper": 59.33538604690455,
+        "rsi": 29.395523998427805,
+        "k": 0.1183075312779281,
+        "d": 0.2046235499940553,
+        "macd": -1.875424075795422,
+        "macd_signal": -1.599586515048758
+      },
+      "buy": {
+        "BB": true,
+        "RSI": true,
+        "StochRSI": true,
+        "MACD": false
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 3,
+      "sell_votes": 1,
+      "asset": "US_NFLX",
+      "date": "2026-11-20",
+      "observations": 2738,
+      "previous": {
         "price": 53.18413308267164,
         "lower": 53.440098350672194,
         "upper": 59.26046716641364,
@@ -7043,6 +7181,111 @@
         "d": 0.2974772935641041,
         "macd": -1.671002221748942,
         "macd_signal": -1.530627124862092
+      },
+      "buy_trigger": {
+        "price": 51.61965381459174,
+        "move_pct": 0,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": true
+      },
+      "sell_trigger": null,
+      "name": "NETFLIX INC",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/NFLX?period1=1451606400&period2=1795305600&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-21T07:11:08.065936+00:00",
+      "model_eligible": false,
+      "ticker": "NFLX",
+      "quote_url": "https://finance.yahoo.com/quote/NFLX/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 154.11282540235442,
+        "lower": 140.08087058120097,
+        "upper": 158.44921994363537,
+        "rsi": 66.56710534275955,
+        "k": 0.230472359719817,
+        "d": 0.4835999003436502,
+        "macd": 4.381732156430729,
+        "macd_signal": 4.435539557403207
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 0,
+      "sell_votes": 1,
+      "asset": "US_PG",
+      "date": "2026-11-20",
+      "observations": 2738,
+      "previous": {
+        "price": 152.70197061819107,
+        "lower": 139.5629003624053,
+        "upper": 157.94168482870515,
+        "rsi": 64.21089633550214,
+        "k": 0.4434970039888967,
+        "d": 0.7168401131194648,
+        "macd": 4.536363316616615,
+        "macd_signal": 4.448991407646327
+      },
+      "buy_trigger": {
+        "price": 129.87302105690102,
+        "move_pct": -15.72860940169557,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "sell_trigger": null,
+      "name": "PROCTER & GAMBLE Co",
+      "type": "Share",
+      "isin": "",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/PG?period1=1451606400&period2=1795305600&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-21T07:11:07.562989+00:00",
+      "model_eligible": false,
+      "ticker": "PG",
+      "quote_url": "https://finance.yahoo.com/quote/PG/",
+      "analysis_only": true,
+      "model_status_text": "Reference analysis — not an allocation recommendation",
+      "short_history": false,
+      "initial_models": [],
+      "future_models": [],
+      "held_units": 0
+    },
+    {
+      "values": {
+        "price": 111.46496815286623,
+        "lower": 111.5754569584511,
+        "upper": 117.84302740354858,
+        "rsi": 37.993830981768916,
+        "k": 0.005581815062005731,
+        "d": 0.0956025219436915,
+        "macd": -0.4867465204032015,
+        "macd_signal": -0.1537743713789318
       },
       "buy": {
         "BB": true,
@@ -7058,104 +7301,10 @@
       },
       "buy_votes": 2,
       "sell_votes": 1,
-      "asset": "US_NFLX",
-      "date": "2026-11-19",
-      "observations": 2737,
+      "asset": "US_PLD",
+      "date": "2026-11-20",
+      "observations": 2738,
       "previous": {
-        "price": 54.54048112219568,
-        "lower": 53.77510940278285,
-        "upper": 59.590978821364494,
-        "rsi": 36.62734072189045,
-        "k": 0.3019524523460757,
-        "d": 0.4127292902637823,
-        "macd": -1.545072548472305,
-        "macd_signal": -1.495533350640379
-      },
-      "buy_trigger": {
-        "price": 51.809657647938245,
-        "move_pct": -2.584371230789562,
-        "votes": 3,
-        "components": {
-          "BB": true,
-          "RSI": true,
-          "StochRSI": true,
-          "MACD": false
-        },
-        "active": false
-      },
-      "sell_trigger": null,
-      "name": "NETFLIX INC",
-      "type": "Share",
-      "isin": "",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/NFLX?period1=1451606400&period2=1795219200&interval=1d&events=splits",
-      "checked_at_UTC": "2026-11-20T05:32:14.113646+00:00",
-      "model_eligible": false,
-      "ticker": "NFLX",
-      "quote_url": "https://finance.yahoo.com/quote/NFLX/",
-      "analysis_only": true,
-      "model_status_text": "Reference analysis — not an allocation recommendation",
-      "short_history": false,
-      "initial_models": [],
-      "future_models": [],
-      "held_units": 0
-    },
-    {
-      "values": {
-        "price": 152.70197061819107,
-        "lower": 139.5629003624053,
-        "upper": 157.94168482870515,
-        "rsi": 64.21089633550214,
-        "k": 0.4434970039888967,
-        "d": 0.7168401131194648,
-        "macd": 4.536363316616615,
-        "macd_signal": 4.448991407646327
-      },
-      "buy": {
-        "BB": false,
-        "RSI": false,
-        "StochRSI": false,
-        "MACD": true
-      },
-      "sell": {
-        "BB": false,
-        "RSI": false,
-        "StochRSI": false,
-        "MACD": false
-      },
-      "buy_votes": 1,
-      "sell_votes": 0,
-      "asset": "US_PG",
-      "date": "2026-11-19",
-      "observations": 2737,
-      "previous": {
-        "price": 155.26075244906346,
-        "lower": 139.4912572550073,
-        "upper": 157.52135455459555,
-        "rsi": 72.85828628165181,
-        "k": 0.7768303373222301,
-        "d": 0.9023411117898327,
-        "macd": 4.811396109036053,
-        "macd_signal": 4.427148430403754
-      },
-      "buy_trigger": null,
-      "sell_trigger": null,
-      "name": "PROCTER & GAMBLE Co",
-      "type": "Share",
-      "isin": "",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/PG?period1=1451606400&period2=1795219200&interval=1d&events=splits",
-      "checked_at_UTC": "2026-11-20T05:32:12.932569+00:00",
-      "model_eligible": false,
-      "ticker": "PG",
-      "quote_url": "https://finance.yahoo.com/quote/PG/",
-      "analysis_only": true,
-      "model_status_text": "Reference analysis — not an allocation recommendation",
-      "short_history": false,
-      "initial_models": [],
-      "future_models": [],
-      "held_units": 0
-    },
-    {
-      "values": {
         "price": 112.22707479107676,
         "lower": 111.90430874476456,
         "upper": 117.66491787531953,
@@ -7165,36 +7314,9 @@
         "macd": -0.2421803227731516,
         "macd_signal": -0.07053133412286439
       },
-      "buy": {
-        "BB": false,
-        "RSI": false,
-        "StochRSI": true,
-        "MACD": false
-      },
-      "sell": {
-        "BB": false,
-        "RSI": false,
-        "StochRSI": false,
-        "MACD": true
-      },
-      "buy_votes": 1,
-      "sell_votes": 1,
-      "asset": "US_PLD",
-      "date": "2026-11-19",
-      "observations": 2737,
-      "previous": {
-        "price": 114.1684912661407,
-        "lower": 112.07003848521903,
-        "upper": 117.58036317803403,
-        "rsi": 45.9441549611845,
-        "k": 0.2600886365052991,
-        "d": 0.5287812546934689,
-        "macd": -0.004098610811894332,
-        "macd_signal": -0.02761908696029257
-      },
       "buy_trigger": {
-        "price": 107.15303509605336,
-        "move_pct": -4.521226009382573,
+        "price": 107.51546570135591,
+        "move_pct": -3.543267913640691,
         "votes": 3,
         "components": {
           "BB": true,
@@ -7208,8 +7330,8 @@
       "name": "Prologis, Inc.",
       "type": "Share",
       "isin": "",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/PLD?period1=1451606400&period2=1795219200&interval=1d&events=splits",
-      "checked_at_UTC": "2026-11-20T05:32:15.258702+00:00",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/PLD?period1=1451606400&period2=1795305600&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-21T07:11:08.948113+00:00",
       "model_eligible": false,
       "ticker": "PLD",
       "quote_url": "https://finance.yahoo.com/quote/PLD/",
@@ -7222,14 +7344,14 @@
     },
     {
       "values": {
-        "price": 175.98253497216726,
-        "lower": 170.1823680005474,
-        "upper": 184.0424157444951,
-        "rsi": 50.57860739397753,
-        "k": 0.4412058989150545,
-        "d": 0.4699478305830367,
-        "macd": 1.884081578198334,
-        "macd_signal": 2.012748126313426
+        "price": 173.0391248125071,
+        "lower": 170.67912283917775,
+        "upper": 183.78444388592396,
+        "rsi": 46.371667315705196,
+        "k": 0.2773066739556025,
+        "d": 0.3996040828073708,
+        "macd": 1.381215065747085,
+        "macd_signal": 1.886441514200158
       },
       "buy": {
         "BB": false,
@@ -7246,25 +7368,25 @@
       "buy_votes": 0,
       "sell_votes": 1,
       "asset": "US_RTX",
-      "date": "2026-11-19",
-      "observations": 2737,
+      "date": "2026-11-20",
+      "observations": 2738,
       "previous": {
-        "price": 180.023702542161,
-        "lower": 169.93395136524586,
-        "upper": 184.0696432925636,
-        "rsi": 57.193652989309285,
-        "k": 0.4802996755514557,
-        "d": 0.4829133718619499,
-        "macd": 2.198824614878703,
-        "macd_signal": 2.044914763342199
+        "price": 175.98253497216726,
+        "lower": 170.1823680005474,
+        "upper": 184.0424157444951,
+        "rsi": 50.57860739397753,
+        "k": 0.4412058989150545,
+        "d": 0.4699478305830367,
+        "macd": 1.884081578198334,
+        "macd_signal": 2.012748126313426
       },
       "buy_trigger": null,
       "sell_trigger": null,
       "name": "RTX Corp",
       "type": "Share",
       "isin": "",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/RTX?period1=1451606400&period2=1795219200&interval=1d&events=splits",
-      "checked_at_UTC": "2026-11-20T05:32:14.100839+00:00",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/RTX?period1=1451606400&period2=1795305600&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-21T07:11:07.960439+00:00",
       "model_eligible": false,
       "ticker": "RTX",
       "quote_url": "https://finance.yahoo.com/quote/RTX/",
@@ -7277,14 +7399,14 @@
     },
     {
       "values": {
-        "price": 309.1611959354673,
-        "lower": 289.4324769192555,
-        "upper": 328.8768224867055,
-        "rsi": 51.47439329947397,
-        "k": 0.1117360147812205,
-        "d": 0.3053208536441501,
-        "macd": 5.365258115196013,
-        "macd_signal": 6.065749852802274
+        "price": 309.1355689120792,
+        "lower": 290.17790878083576,
+        "upper": 328.9314839624519,
+        "rsi": 51.45458679469418,
+        "k": 0.06991035363180169,
+        "d": 0.171839761936503,
+        "macd": 4.667321094672161,
+        "macd_signal": 5.786064101176251
       },
       "buy": {
         "BB": false,
@@ -7301,21 +7423,21 @@
       "buy_votes": 1,
       "sell_votes": 1,
       "asset": "US_SHW",
-      "date": "2026-11-19",
-      "observations": 2737,
+      "date": "2026-11-20",
+      "observations": 2738,
       "previous": {
-        "price": 316.0102170892739,
-        "lower": 289.39512453121847,
-        "upper": 328.84410658711397,
-        "rsi": 56.91096827552763,
-        "k": 0.333872917396487,
-        "d": 0.4819078089526479,
-        "macd": 6.175430133698512,
-        "macd_signal": 6.240872787203838
+        "price": 309.1611959354673,
+        "lower": 289.4324769192555,
+        "upper": 328.8768224867055,
+        "rsi": 51.47439329947397,
+        "k": 0.1117360147812205,
+        "d": 0.3053208536441501,
+        "macd": 5.365258115196013,
+        "macd_signal": 6.065749852802274
       },
       "buy_trigger": {
-        "price": 257.83974018090055,
-        "move_pct": -16.600225522894963,
+        "price": 261.50555624078993,
+        "move_pct": -15.407483790658727,
         "votes": 3,
         "components": {
           "BB": true,
@@ -7329,8 +7451,8 @@
       "name": "SHERWIN WILLIAMS CO",
       "type": "Share",
       "isin": "",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/SHW?period1=1451606400&period2=1795219200&interval=1d&events=splits",
-      "checked_at_UTC": "2026-11-20T05:32:15.945793+00:00",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/SHW?period1=1451606400&period2=1795305600&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-21T07:11:09.656765+00:00",
       "model_eligible": false,
       "ticker": "SHW",
       "quote_url": "https://finance.yahoo.com/quote/SHW/",
@@ -7343,14 +7465,14 @@
     },
     {
       "values": {
-        "price": 84.87081597118572,
-        "lower": 81.73542237696837,
-        "upper": 85.94600280165623,
-        "rsi": 59.63482308830219,
-        "k": 0.3576395288823243,
-        "d": 0.5038250802404396,
-        "macd": 1.547702999127651,
-        "macd_signal": 1.592346148618081
+        "price": 84.74067084023473,
+        "lower": 81.82623025345893,
+        "upper": 86.03032522819672,
+        "rsi": 58.93617957139743,
+        "k": 0.2280774395269216,
+        "d": 0.3990526266039415,
+        "macd": 1.460005771279128,
+        "macd_signal": 1.56587807315029
       },
       "buy": {
         "BB": false,
@@ -7367,25 +7489,25 @@
       "buy_votes": 0,
       "sell_votes": 1,
       "asset": "US_SO",
-      "date": "2026-11-19",
-      "observations": 2737,
+      "date": "2026-11-20",
+      "observations": 2738,
       "previous": {
-        "price": 86.07768386406762,
-        "lower": 81.73200100305957,
-        "upper": 85.83539029775253,
-        "rsi": 66.41405995906425,
-        "k": 0.6114409114025753,
-        "d": 0.5255120833733904,
-        "macd": 1.623873367533804,
-        "macd_signal": 1.603506935990688
+        "price": 84.87081597118572,
+        "lower": 81.73542237696837,
+        "upper": 85.94600280165623,
+        "rsi": 59.63482308830219,
+        "k": 0.3576395288823243,
+        "d": 0.5038250802404396,
+        "macd": 1.547702999127651,
+        "macd_signal": 1.592346148618081
       },
       "buy_trigger": null,
       "sell_trigger": null,
       "name": "SOUTHERN CO",
       "type": "Share",
       "isin": "",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/SO?period1=1451606400&period2=1795219200&interval=1d&events=splits",
-      "checked_at_UTC": "2026-11-20T05:32:15.341904+00:00",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/SO?period1=1451606400&period2=1795305600&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-21T07:11:09.108520+00:00",
       "model_eligible": false,
       "ticker": "SO",
       "quote_url": "https://finance.yahoo.com/quote/SO/",
@@ -7398,14 +7520,14 @@
     },
     {
       "values": {
-        "price": 340.6204545688768,
-        "lower": 317.8655683374261,
-        "upper": 375.8687434135436,
-        "rsi": 49.51666478654945,
-        "k": 0.5730463516374878,
-        "d": 0.574719237883115,
-        "macd": 3.1620238137466,
-        "macd_signal": 3.908139348268125
+        "price": 314.6678865552491,
+        "lower": 314.2834263262062,
+        "upper": 377.662961204321,
+        "rsi": 39.72876141684229,
+        "k": 0.4392254376860763,
+        "d": 0.5316354204178184,
+        "macd": 0.5012682023395882,
+        "macd_signal": 3.226765119082418
       },
       "buy": {
         "BB": false,
@@ -7422,25 +7544,25 @@
       "buy_votes": 0,
       "sell_votes": 1,
       "asset": "US_TSLA",
-      "date": "2026-11-19",
-      "observations": 2737,
+      "date": "2026-11-20",
+      "observations": 2738,
       "previous": {
-        "price": 349.85412219247183,
-        "lower": 317.1488005570816,
-        "upper": 375.9531834141326,
-        "rsi": 53.90415440031101,
-        "k": 0.5826344719298903,
-        "d": 0.5897778499756919,
-        "macd": 3.869679159082295,
-        "macd_signal": 4.094668231898506
+        "price": 340.6204545688768,
+        "lower": 317.8655683374261,
+        "upper": 375.8687434135436,
+        "rsi": 49.51666478654945,
+        "k": 0.5730463516374878,
+        "d": 0.574719237883115,
+        "macd": 3.1620238137466,
+        "macd_signal": 3.908139348268125
       },
       "buy_trigger": null,
       "sell_trigger": null,
       "name": "Tesla, Inc.",
       "type": "Share",
       "isin": "",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/TSLA?period1=1451606400&period2=1795219200&interval=1d&events=splits",
-      "checked_at_UTC": "2026-11-20T05:32:11.224729+00:00",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/TSLA?period1=1451606400&period2=1795305600&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-21T07:11:06.284239+00:00",
       "model_eligible": false,
       "ticker": "TSLA",
       "quote_url": "https://finance.yahoo.com/quote/TSLA/",
@@ -7453,14 +7575,14 @@
     },
     {
       "values": {
-        "price": 365.947962154294,
-        "lower": 357.7716960076239,
-        "upper": 391.7604502099504,
-        "rsi": 47.84574496541973,
+        "price": 365.6687853659577,
+        "lower": 357.97425045134355,
+        "upper": 391.6805669028681,
+        "rsi": 47.629140212823714,
         "k": -7.956598343146956e-16,
-        "d": 0.1079753344767707,
-        "macd": 7.384097792537773,
-        "macd_signal": 9.684342749997374
+        "d": 0.03907889014067071,
+        "macd": 5.966727016702009,
+        "macd_signal": 8.940819603338301
       },
       "buy": {
         "BB": false,
@@ -7477,21 +7599,21 @@
       "buy_votes": 1,
       "sell_votes": 1,
       "asset": "US_V",
-      "date": "2026-11-19",
-      "observations": 2737,
+      "date": "2026-11-20",
+      "observations": 2738,
       "previous": {
-        "price": 378.57403466511954,
-        "lower": 358.2820235568323,
-        "upper": 391.63346087975174,
-        "rsi": 59.140747668123545,
-        "k": 0.1172366704220198,
-        "d": 0.1768717788128708,
-        "macd": 9.05734797826426,
-        "macd_signal": 10.259403989362273
+        "price": 365.947962154294,
+        "lower": 357.7716960076239,
+        "upper": 391.7604502099504,
+        "rsi": 47.84574496541973,
+        "k": -7.956598343146956e-16,
+        "d": 0.1079753344767707,
+        "macd": 7.384097792537773,
+        "macd_signal": 9.684342749997374
       },
       "buy_trigger": {
-        "price": 326.6217118806368,
-        "move_pct": -10.74640504681268,
+        "price": 329.4307271434125,
+        "move_pct": -9.910077007606354,
         "votes": 3,
         "components": {
           "BB": true,
@@ -7502,8 +7624,8 @@
         "active": false
       },
       "sell_trigger": {
-        "price": 397.9340110694923,
-        "move_pct": 8.740600364844253,
+        "price": 411.281577718657,
+        "move_pct": 12.473799836934528,
         "votes": 3,
         "components": {
           "BB": true,
@@ -7516,8 +7638,8 @@
       "name": "VISA INC.",
       "type": "Share",
       "isin": "",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/V?period1=1451606400&period2=1795219200&interval=1d&events=splits",
-      "checked_at_UTC": "2026-11-20T05:32:11.709400+00:00",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/V?period1=1451606400&period2=1795305600&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-21T07:11:06.757791+00:00",
       "model_eligible": false,
       "ticker": "V",
       "quote_url": "https://finance.yahoo.com/quote/V/",
@@ -7530,6 +7652,33 @@
     },
     {
       "values": {
+        "price": 218.68971459316708,
+        "lower": 205.06896622639854,
+        "upper": 229.57961254119041,
+        "rsi": 54.538925124675664,
+        "k": 0.3678546800467582,
+        "d": 0.68220869331512,
+        "macd": 3.775360711833741,
+        "macd_signal": 3.973100128226351
+      },
+      "buy": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": false
+      },
+      "sell": {
+        "BB": false,
+        "RSI": false,
+        "StochRSI": false,
+        "MACD": true
+      },
+      "buy_votes": 0,
+      "sell_votes": 1,
+      "asset": "US_WELL",
+      "date": "2026-11-20",
+      "observations": 2738,
+      "previous": {
         "price": 221.2427242006971,
         "lower": 204.5415094272909,
         "upper": 229.44063583543672,
@@ -7539,51 +7688,13 @@
         "macd": 4.231294776916997,
         "macd_signal": 4.022534982324503
       },
-      "buy": {
-        "BB": false,
-        "RSI": false,
-        "StochRSI": false,
-        "MACD": true
-      },
-      "sell": {
-        "BB": false,
-        "RSI": false,
-        "StochRSI": false,
-        "MACD": false
-      },
-      "buy_votes": 1,
-      "sell_votes": 0,
-      "asset": "US_WELL",
-      "date": "2026-11-19",
-      "observations": 2737,
-      "previous": {
-        "price": 225.42851932895695,
-        "lower": 204.04269845955784,
-        "upper": 229.00214394101923,
-        "rsi": 69.69650926524102,
-        "k": 0.9775833865185003,
-        "d": 0.9362635953002784,
-        "macd": 4.491743535919596,
-        "macd_signal": 3.970345033676379
-      },
       "buy_trigger": null,
-      "sell_trigger": {
-        "price": 231.33409943563683,
-        "move_pct": 4.561223548208293,
-        "votes": 3,
-        "components": {
-          "BB": true,
-          "RSI": true,
-          "StochRSI": true,
-          "MACD": false
-        },
-        "active": false
-      },
+      "sell_trigger": null,
       "name": "WELLTOWER INC.",
       "type": "Share",
       "isin": "",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/WELL?period1=1451606400&period2=1795219200&interval=1d&events=splits",
-      "checked_at_UTC": "2026-11-20T05:32:14.898096+00:00",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/WELL?period1=1451606400&period2=1795305600&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-21T07:11:08.698020+00:00",
       "model_eligible": false,
       "ticker": "WELL",
       "quote_url": "https://finance.yahoo.com/quote/WELL/",
@@ -7596,14 +7707,14 @@
     },
     {
       "values": {
-        "price": 114.66521189549432,
-        "lower": 105.8634037089619,
-        "upper": 118.59404825001218,
-        "rsi": 64.9390062866191,
-        "k": 0.2711471574517253,
-        "d": 0.4060773251319336,
-        "macd": 3.476510632480469,
-        "macd_signal": 3.67492515461688
+        "price": 116.4240190611849,
+        "lower": 106.53535510049133,
+        "upper": 118.85334005919177,
+        "rsi": 68.64398619253231,
+        "k": 0.2581311009715179,
+        "d": 0.3297939763579951,
+        "macd": 3.418104744420077,
+        "macd_signal": 3.62356107257752
       },
       "buy": {
         "BB": false,
@@ -7620,25 +7731,47 @@
       "buy_votes": 0,
       "sell_votes": 1,
       "asset": "US_WMT",
-      "date": "2026-11-19",
-      "observations": 2737,
+      "date": "2026-11-20",
+      "observations": 2738,
       "previous": {
-        "price": 116.11962127129064,
-        "lower": 105.39508214075751,
-        "upper": 118.40530893626037,
-        "rsi": 71.41880220436134,
-        "k": 0.4601036706507471,
-        "d": 0.4616721249653908,
-        "macd": 3.679568904548148,
-        "macd_signal": 3.724528785150983
+        "price": 114.66521189549432,
+        "lower": 105.8634037089619,
+        "upper": 118.59404825001218,
+        "rsi": 64.9390062866191,
+        "k": 0.2711471574517253,
+        "d": 0.4060773251319336,
+        "macd": 3.476510632480469,
+        "macd_signal": 3.67492515461688
       },
-      "buy_trigger": null,
-      "sell_trigger": null,
+      "buy_trigger": {
+        "price": 97.32945714216902,
+        "move_pct": -16.400878506849192,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": true,
+          "MACD": false
+        },
+        "active": false
+      },
+      "sell_trigger": {
+        "price": 119.50729531224982,
+        "move_pct": 2.648316280375584,
+        "votes": 3,
+        "components": {
+          "BB": true,
+          "RSI": true,
+          "StochRSI": false,
+          "MACD": true
+        },
+        "active": false
+      },
       "name": "Walmart Inc.",
       "type": "Share",
       "isin": "",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/WMT?period1=1451606400&period2=1795219200&interval=1d&events=splits",
-      "checked_at_UTC": "2026-11-20T05:32:12.151898+00:00",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/WMT?period1=1451606400&period2=1795305600&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-21T07:11:06.983389+00:00",
       "model_eligible": false,
       "ticker": "WMT",
       "quote_url": "https://finance.yahoo.com/quote/WMT/",
@@ -7651,14 +7784,14 @@
     },
     {
       "values": {
-        "price": 144.5869656802959,
-        "lower": 140.22247378005207,
-        "upper": 169.44409577936946,
-        "rsi": 38.44861487812172,
-        "k": 0.103902613554693,
-        "d": 0.1899797544193735,
-        "macd": -1.394143242867983,
-        "macd_signal": -0.1135957200548681
+        "price": 145.5778029965096,
+        "lower": 139.3792128325253,
+        "upper": 168.47687054625885,
+        "rsi": 40.2814902063868,
+        "k": 0.05326404725463488,
+        "d": 0.1130514625973356,
+        "macd": -1.69738005922747,
+        "macd_signal": -0.4303525878893885
       },
       "buy": {
         "BB": false,
@@ -7675,21 +7808,21 @@
       "buy_votes": 1,
       "sell_votes": 1,
       "asset": "US_XOM",
-      "date": "2026-11-19",
-      "observations": 2737,
+      "date": "2026-11-20",
+      "observations": 2738,
       "previous": {
-        "price": 146.40773325223805,
-        "lower": 141.63010086713464,
-        "upper": 169.48406357696044,
-        "rsi": 40.573492012902825,
-        "k": 0.1819877269826799,
-        "d": 0.2514005019304993,
-        "macd": -0.8859390960765552,
-        "macd_signal": 0.2065411606484106
+        "price": 144.5869656802959,
+        "lower": 140.22247378005207,
+        "upper": 169.44409577936946,
+        "rsi": 38.44861487812172,
+        "k": 0.103902613554693,
+        "d": 0.1899797544193735,
+        "macd": -1.394143242867983,
+        "macd_signal": -0.1135957200548681
       },
       "buy_trigger": {
-        "price": 134.79594583006022,
-        "move_pct": -6.77171680321802,
+        "price": 135.49530335802734,
+        "move_pct": -6.925849567000264,
         "votes": 3,
         "components": {
           "BB": true,
@@ -7703,8 +7836,8 @@
       "name": "ExxonMobil Holdings Corp",
       "type": "Share",
       "isin": "",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/XOM?period1=1451606400&period2=1795219200&interval=1d&events=splits",
-      "checked_at_UTC": "2026-11-20T05:32:11.850060+00:00",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/XOM?period1=1451606400&period2=1795305600&interval=1d&events=splits",
+      "checked_at_UTC": "2026-11-21T07:11:06.816082+00:00",
       "model_eligible": false,
       "ticker": "XOM",
       "quote_url": "https://finance.yahoo.com/quote/XOM/",
