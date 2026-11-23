@@ -32,6 +32,13 @@
  };
  function decorate(){
   const active=isCurrent();
+  const pending=Object.entries(holdings.pending_quantity_updates||{}),section=document.getElementById('analytics-1-1');
+  let notice=document.getElementById('model-quantity-refresh-note');
+  if(pending.length&&section){
+   if(!notice){notice=document.createElement('p');notice.id='model-quantity-refresh-note';notice.style.fontSize='.85rem';notice.style.fontWeight='400';section.querySelector(':scope > summary')?.after(notice);}
+   notice.textContent='Confirmed Current: '+pending.map(([asset,item])=>asset+' '+item.actual_units+' units (model input '+item.model_units+')').join('; ')+'. Model plans await recalculation.';
+   notice.hidden=active;
+  }else if(notice)notice.remove();
   const conditions=document.querySelector('#selected-model-conditions');if(conditions)conditions.hidden=active;
   if(!active)return;
   const baseline=document.querySelector('.regime-portfolio-comparison tbody tr:first-child td:first-child');
@@ -51,4 +58,5 @@
   if(e.target.name==='profile-history-regime'&&isCurrent())queueMicrotask(()=>{const input=document.querySelector(selector+'[value="CURRENT"]');input.checked=true;input.dispatchEvent(new Event('change',{bubbles:true}));});
   queueMicrotask(decorate);
  },true);
+ queueMicrotask(decorate);
 })();
