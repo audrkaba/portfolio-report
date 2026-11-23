@@ -5,24 +5,133 @@
  function table(headers,rows){const t=el('table'),head=el('thead'),tr=el('tr'),body=el('tbody');headers.forEach(h=>tr.append(el('th',h)));head.append(tr);for(const row of rows){const r=el('tr');row.forEach((value,i)=>{const c=el('td');c.dataset.label=headers[i];if(value instanceof Node)c.append(value);else c.textContent=value;r.append(c);});body.append(r);}t.append(head,body);return t;}
  function host(id,headers,rows){const n=get(id);n.replaceChildren(table(headers,rows));window.reportTableFit?.(n);}
  function card(label,value,detail){const c=el('div',undefined,'metric-card');c.append(el('span',label),el('strong',value));if(detail)c.append(el('span',detail));return c;}
- function showAsset(asset){
-  const m=summary.scopes[scope].assets[asset],r=context.assets[asset];if(!m||!r)return;
-  let panel=get('reference-selected-asset');if(!panel){panel=el('details');panel.id='reference-selected-asset';get('reference-asset-table').after(panel);}
-  panel.replaceChildren(el('summary',(m.ticker||asset)+' — '+m.name));panel.open=true;
-  panel.append(el('p',`Selected context: ${scope} / ${regime}. ${context.observations} training observations. ${m.main_model_input?'Core reference asset.':'Additional analysis reference; this does not imply a purchase recommendation.'}`));
-  const rows=[];const collect=(object,prefix='')=>{for(const [key,value] of Object.entries(object||{})){if(value&&typeof value==='object'&&!Array.isArray(value))collect(value,prefix+key+' · ');else if(!Array.isArray(value))rows.push([prefix+key,typeof value==='number'?num(value,6):String(value??'—')]);}};
-  collect({sector:m.sector,first_date:m.first_date,last_date:m.last_date});collect(r);collect({GARCH:m.garch});panel.append(table(['Measure','Value'],rows));
-  if(m.quote_url){try{const url=new URL(m.quote_url);if(['https:','http:'].includes(url.protocol)){const p=el('p'),a=el('a','External quote source');a.href=url.href;a.target='_blank';a.rel='noopener noreferrer';p.append(a);panel.append(p);}}catch(_){}}
-  window.reportTableFit?.(panel);panel.scrollIntoView({block:'start'});
- }
- function linkName(asset){const m=summary.scopes[scope].assets[asset],box=el('span'),a=el('a',m.ticker||asset);a.href='#reference-selected-asset';a.dataset.referenceAsset=asset;a.title='Open asset analytics: '+m.name;a.addEventListener('click',event=>{event.preventDefault();showAsset(asset);history.replaceState(null,'','#reference-selected-asset');});box.append(a,el('span',m.name,'reference-name'));return box;}
+ const yahooLinks={
+  "AKO1L": "https://finance.yahoo.com/quote/AKO1L.VS/chart/",
+  "AMG1L": "https://finance.yahoo.com/quote/AMG1L.VS/chart/",
+  "APG1L": "https://finance.yahoo.com/quote/APG1L.VS/chart/",
+  "ARC1T": "https://finance.yahoo.com/quote/ARC1T.TL/chart/",
+  "AUG1L": "https://finance.yahoo.com/quote/AUG1L.VS/chart/",
+  "BAL1R": "https://finance.yahoo.com/quote/BAL1R.RG/chart/",
+  "BERCM": "https://finance.yahoo.com/lookup/?s=BERCM",
+  "CPA1T": "https://finance.yahoo.com/quote/CPA1T.TL/chart/",
+  "CTS1L": "https://finance.yahoo.com/lookup/?s=CTS1L",
+  "DGR1R": "https://finance.yahoo.com/quote/DGR1R.RG/chart/",
+  "EFT1T": "https://finance.yahoo.com/quote/EFT1T.TL/chart/",
+  "EWA1L": "https://finance.yahoo.com/lookup/?s=EWA1L",
+  "GRG1L": "https://finance.yahoo.com/quote/GRG1L.VS/chart/",
+  "HAE1T": "https://finance.yahoo.com/quote/HAE1T.TL/chart/",
+  "HPR1T": "https://finance.yahoo.com/quote/HPR1T.TL/chart/",
+  "IGN1L": "https://finance.yahoo.com/quote/IGN1L.VS/chart/",
+  "INC1L": "https://finance.yahoo.com/quote/INC1L.VS/chart/",
+  "INL1L": "https://finance.yahoo.com/quote/INL1L.VS/chart/",
+  "INR1L": "https://finance.yahoo.com/quote/INR1L.VS/chart/",
+  "IVL1L": "https://finance.yahoo.com/quote/IVL1L.VS/chart/",
+  "KNE1L": "https://finance.yahoo.com/quote/KNE1L.VS/chart/",
+  "KNR1L": "https://finance.yahoo.com/quote/KNR1L.VS/chart/",
+  "LGD1L": "https://finance.yahoo.com/quote/LGD1L.VS/chart/",
+  "LHV1T": "https://finance.yahoo.com/quote/LHV1T.TL/chart/",
+  "LINDA": "https://finance.yahoo.com/lookup/?s=LINDA",
+  "MDARA": "https://finance.yahoo.com/quote/MDARA.RG/chart/",
+  "MODE": "https://finance.yahoo.com/lookup/?s=MODE",
+  "MRK1T": "https://finance.yahoo.com/quote/MRK1T.TL/chart/",
+  "NCN1T": "https://finance.yahoo.com/quote/NCN1T.TL/chart/",
+  "NEOFI": "https://finance.yahoo.com/lookup/?s=NEOFI",
+  "NTU1L": "https://finance.yahoo.com/quote/NTU1L.VS/chart/",
+  "PKG1T": "https://finance.yahoo.com/quote/PKG1T.TL/chart/",
+  "PRF1T": "https://finance.yahoo.com/quote/PRF1T.TL/chart/",
+  "PZV1L": "https://finance.yahoo.com/quote/PZV1L.VS/chart/",
+  "RKB1R": "https://finance.yahoo.com/quote/RKB1R.RG/chart/",
+  "ROE1L": "https://finance.yahoo.com/quote/ROE1L.VS/chart/",
+  "RSU1L": "https://finance.yahoo.com/quote/RSU1L.VS/chart/",
+  "SAF1R": "https://finance.yahoo.com/quote/SAF1R.RG/chart/",
+  "SAUNA": "https://finance.yahoo.com/lookup/?s=SAUNA",
+  "SCM1R": "https://finance.yahoo.com/quote/SCM1R.RG/chart/",
+  "SFG1T": "https://finance.yahoo.com/quote/SFG1T.TL/chart/",
+  "SKN1T": "https://finance.yahoo.com/quote/SKN1T.TL/chart/",
+  "TAL1T": "https://finance.yahoo.com/quote/TAL1T.TL/chart/",
+  "TEL1L": "https://finance.yahoo.com/quote/TEL1L.VS/chart/",
+  "TKM1T": "https://finance.yahoo.com/quote/TKM1T.TL/chart/",
+  "TPD1T": "https://finance.yahoo.com/quote/TPD1T.TL/chart/",
+  "TSM1T": "https://finance.yahoo.com/quote/TSM1T.TL/chart/",
+  "TVE1T": "https://finance.yahoo.com/quote/TVE1T.TL/chart/",
+  "UTR1L": "https://finance.yahoo.com/quote/UTR1L.VS/chart/",
+  "VBL1L": "https://finance.yahoo.com/quote/VBL1L.VS/chart/",
+  "VIRSI": "https://finance.yahoo.com/quote/VIRSI.RG/chart/",
+  "VLP1L": "https://finance.yahoo.com/quote/VLP1L.VS/chart/",
+  "ZMP1L": "https://finance.yahoo.com/quote/ZMP1L.VS/chart/",
+  "SE0013876927": "https://finance.yahoo.com/quote/0P0001JFN6.F/chart/",
+  "SE0013876950": "https://finance.yahoo.com/quote/0P0001JFN4.F/chart/",
+  "SE0013876968": "https://finance.yahoo.com/quote/0P0001JFN9.F/chart/",
+  "SE0014261756": "https://finance.yahoo.com/quote/0P0001JOFO.F/chart/",
+  "SE0014261764": "https://finance.yahoo.com/quote/0P0001JOFN.F/chart/",
+  "SE0014261871": "https://finance.yahoo.com/quote/0P0001JOFL.F/chart/",
+  "SE0014261889": "https://finance.yahoo.com/quote/0P0001JOFK.F/chart/",
+  "SE0014261897": "https://finance.yahoo.com/quote/0P0001JOFM.F/chart/",
+  "SE0014263273": "https://finance.yahoo.com/quote/0P0001LPRD.F/chart/",
+  "SE0014263281": "https://finance.yahoo.com/quote/0P0001LPRF.F/chart/",
+  "SE0014263299": "https://finance.yahoo.com/quote/0P0001LPRE.F/chart/",
+  "SE0015192315": "https://finance.yahoo.com/quote/0P0001LMDT.F/chart/",
+  "SE0015192323": "https://finance.yahoo.com/quote/0P0001LMDQ.F/chart/",
+  "SE0015192331": "https://finance.yahoo.com/quote/0P0001LMDS.F/chart/",
+  "SE0015192349": "https://finance.yahoo.com/quote/0P0001LMDR.F/chart/",
+  "SE0015948609": "https://finance.yahoo.com/quote/0P0001MGC9.F/chart/",
+  "SE0015948617": "https://finance.yahoo.com/quote/0P0001MGCA.F/chart/",
+  "US_PFE": "https://finance.yahoo.com/quote/PFE/",
+  "US_NVDA": "https://finance.yahoo.com/quote/NVDA/",
+  "US_AAPL": "https://finance.yahoo.com/quote/AAPL/",
+  "US_ABBV": "https://finance.yahoo.com/quote/ABBV/",
+  "US_AMD": "https://finance.yahoo.com/quote/AMD/",
+  "US_AMT": "https://finance.yahoo.com/quote/AMT/",
+  "US_AMZN": "https://finance.yahoo.com/quote/AMZN/",
+  "US_AVGO": "https://finance.yahoo.com/quote/AVGO/",
+  "US_BRK_B": "https://finance.yahoo.com/quote/BRK-B/",
+  "US_CAT": "https://finance.yahoo.com/quote/CAT/",
+  "US_CEG": "https://finance.yahoo.com/quote/CEG/",
+  "US_COP": "https://finance.yahoo.com/quote/COP/",
+  "US_COST": "https://finance.yahoo.com/quote/COST/",
+  "US_CVX": "https://finance.yahoo.com/quote/CVX/",
+  "US_DIS": "https://finance.yahoo.com/quote/DIS/",
+  "US_DUK": "https://finance.yahoo.com/quote/DUK/",
+  "US_EQIX": "https://finance.yahoo.com/quote/EQIX/",
+  "US_FCX": "https://finance.yahoo.com/quote/FCX/",
+  "US_GE": "https://finance.yahoo.com/quote/GE/",
+  "US_GOOGL": "https://finance.yahoo.com/quote/GOOGL/",
+  "US_HD": "https://finance.yahoo.com/quote/HD/",
+  "US_JNJ": "https://finance.yahoo.com/quote/JNJ/",
+  "US_JPM": "https://finance.yahoo.com/quote/JPM/",
+  "US_KO": "https://finance.yahoo.com/quote/KO/",
+  "US_LIN": "https://finance.yahoo.com/quote/LIN/",
+  "US_LLY": "https://finance.yahoo.com/quote/LLY/",
+  "US_MA": "https://finance.yahoo.com/quote/MA/",
+  "US_MCD": "https://finance.yahoo.com/quote/MCD/",
+  "US_META": "https://finance.yahoo.com/quote/META/",
+  "US_MPC": "https://finance.yahoo.com/quote/MPC/",
+  "US_MRK": "https://finance.yahoo.com/quote/MRK/",
+  "US_MSFT": "https://finance.yahoo.com/quote/MSFT/",
+  "US_MU": "https://finance.yahoo.com/quote/MU/",
+  "US_NEE": "https://finance.yahoo.com/quote/NEE/",
+  "US_NEM": "https://finance.yahoo.com/quote/NEM/",
+  "US_NFLX": "https://finance.yahoo.com/quote/NFLX/",
+  "US_PG": "https://finance.yahoo.com/quote/PG/",
+  "US_PLD": "https://finance.yahoo.com/quote/PLD/",
+  "US_RTX": "https://finance.yahoo.com/quote/RTX/",
+  "US_SHW": "https://finance.yahoo.com/quote/SHW/",
+  "US_SO": "https://finance.yahoo.com/quote/SO/",
+  "US_TSLA": "https://finance.yahoo.com/quote/TSLA/",
+  "US_V": "https://finance.yahoo.com/quote/V/",
+  "US_WELL": "https://finance.yahoo.com/quote/WELL/",
+  "US_WMT": "https://finance.yahoo.com/quote/WMT/",
+  "US_XOM": "https://finance.yahoo.com/quote/XOM/",
+  "US_GEV": "https://finance.yahoo.com/quote/GEV/"
+}
+;
+ function linkName(asset){const m=summary.scopes[scope].assets[asset],box=el('span'),a=el('a',m.ticker||asset);a.href=yahooLinks[asset]||'https://finance.yahoo.com/lookup/?s='+encodeURIComponent(m.ticker||asset);a.target='_blank';a.rel='noopener noreferrer';a.dataset.referenceAsset=asset;a.title='Open Yahoo Finance: '+m.name;box.append(a,el('span',m.name,'reference-name'));return box;}
  function renderPortfolios(){if(!context?.available)return;const policy=get('reference-policy').value,family=get('reference-portfolio-measures').value;
   const p=Object.entries(context.portfolios).filter(([key,r])=>key==='Current'||policy==='ALL'||r.policy===policy).sort((a,b)=>a[0]==='Current'?-1:b[0]==='Current'?1:b[1].netSD.netSD-a[1].netSD.netSD);
   if(family==='netsd')host('reference-portfolio-table',['Model','Policy','netSD ·71 refs','netSD ·'+context.reference_assets+' refs','Change','D · expanded graph','Account netSD · with cash'],p.map(([key,r])=>[r.model,r.policy,num(r.narrow_same_window_netSD.netSD),num(r.netSD.netSD),num(r.delta_netSD),r.netSD.D,num(r.cash_inclusive_netSD.netSD)]));
   else host('reference-portfolio-table',['Model','Policy','Market beta','Annual SD %','Daily ES95 loss %','MES5 loss %','Conditional market-tail difference pp'],p.map(([key,r])=>[r.model,r.policy,num(r.beta),num(r.annualised_SD_pct,2),num(r.ES95_loss_pct,3),num(r.MES5_loss_pct,3),num(r.delta_CoVaR_proxy_pct,3)]));
  }
  function renderAssets(){if(!context?.available)return;const group=get('reference-asset-group').value,family=get('reference-asset-measures').value,meta=summary.scopes[scope].assets;
-  get('reference-selected-asset')?.remove();
   const assets=context.reference_names.filter(a=>group==='ALL'||(group==='US'?meta[a].US:meta[a].main_model_input));assets.sort((a,b)=>context.assets[b].netSD.netSD-context.assets[a].netSD.netSD);
   get('reference-asset-note').textContent=`${assets.length} assets. US additions are analysis references; portfolio purchase permissions and quantities are unchanged. `+(family==='garch'?'Parameters use training only; latest/next-session conditional volatility is filtered through '+summary.asof+' without refitting.':'Returns use the selected training context. A dash denotes an undefined or insufficient-sample measure.');
   let headers,rows;
@@ -58,7 +167,7 @@
   fillPair();renderPortfolios();renderAssets();renderMatrix();fitTables();get('reference-snapshot').textContent=`Completed closes through ${summary.asof} · ${summary.US_candidates} candidates + PFE =47 US companies. Long-history reference set116 assets; GEV short-history set117. No new US trade quantities are proposed.`;document.documentElement.dataset.referenceReady='true';window.reportTableFit?.();
  }
  async function load(){const token=++serial;scope=get('reference-scope').value;regime=get('reference-context').value;const meta=summary.scopes[scope].contexts[regime];if(!meta.available){context=meta;render();return;}const key=scope+'-'+regime;if(!cache.has(key)){const response=await fetch('extended-reference/'+key+'.json?v='+summary.version);if(!response.ok)throw Error('Context data HTTP '+response.status);cache.set(key,await response.json());}if(token!==serial)return;context=cache.get(key);render();}
- async function init(){try{const response=await fetch('extended-reference/summary.json?v=__VERSION__');if(!response.ok)throw Error('Manifest HTTP '+response.status);summary=await response.json();const params=new URLSearchParams(location.search);if(['long','short'].includes(params.get('scope')))get('reference-scope').value=params.get('scope');if(['FULL','R1','R2','R3','R4'].includes(params.get('context')))get('reference-context').value=params.get('context');
+ async function init(){try{const response=await fetch('extended-reference/summary.json?v=f1112089a766');if(!response.ok)throw Error('Manifest HTTP '+response.status);summary=await response.json();const params=new URLSearchParams(location.search);if(['long','short'].includes(params.get('scope')))get('reference-scope').value=params.get('scope');if(['FULL','R1','R2','R3','R4'].includes(params.get('context')))get('reference-context').value=params.get('context');
   for(const id of ['reference-scope','reference-context'])get(id).addEventListener('change',()=>load().catch(error=>{get('reference-window').textContent=error.message;}));
   for(const id of ['reference-policy','reference-portfolio-measures'])get(id).addEventListener('change',renderPortfolios);
   for(const id of ['reference-asset-group','reference-asset-measures'])get(id).addEventListener('change',renderAssets);
