@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "observed_at_UTC": "2026-11-23T10:49:07.987092+00:00",
+  "observed_at_UTC": "2026-11-23T16:46:14.353878+00:00",
   "scope": "Current quantities/valuation updated; trading policies retain their previous inventory until reoptimisation completes. Individual genuine quote dates retained. Historical Current metrics are the full-history fixed-quantity reconstruction, distinct from terminal model objectives.",
   "models_recalculated": false,
   "rows": [
@@ -262,8 +262,8 @@
       "date": "2026-11-20",
       "price_EUR": 0.455,
       "previous_price_EUR": 0.475,
-      "units": 928.0,
-      "value_EUR": 422.24
+      "units": 1000.0,
+      "value_EUR": 455.0
     },
     {
       "asset": "KNR1L",
@@ -433,8 +433,8 @@
       "date": "2026-11-20",
       "price_EUR": 0.811,
       "previous_price_EUR": 0.82,
-      "units": 620.0,
-      "value_EUR": 502.82000000000005
+      "units": 700.0,
+      "value_EUR": 567.7
     },
     {
       "asset": "RSU1L",
@@ -766,8 +766,8 @@
       "date": "2026-11-20",
       "price_EUR": 114.22201890745848,
       "previous_price_EUR": 132.805672969013,
-      "units": 1.169741,
-      "value_EUR": 133.61017861882937
+      "units": 2.814478,
+      "value_EUR": 321.4753593306259
     },
     {
       "asset": "US_PFE",
@@ -824,7 +824,7 @@
       "value_EUR": 0.0
     }
   ],
-  "current_value_EUR": 12211.49455235988,
+  "current_value_EUR": 12496.999733071676,
   "positions": 16,
   "historical_Current_netSD": 0.5190839694656488,
   "historical_Current_denominator": 131

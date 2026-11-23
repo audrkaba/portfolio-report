@@ -1,21 +1,21 @@
 {
-  "confirmed_at": "2026-11-23T10:43:03.750340+00:00",
+  "confirmed_at": "2026-11-23T16:42:50.146374+00:00",
   "units": {
     "TKM1T": 288,
     "SAF1R": 100,
     "APG1L": 200,
-    "KNE1L": 928,
+    "KNE1L": 1000,
     "VLP1L": 140,
     "RSU1L": 150,
     "MRK1T": 26,
     "GRG1L": 543,
     "HAE1T": 100,
     "TAL1T": 1000,
-    "ROE1L": 620,
+    "ROE1L": 700,
     "TSM1T": 330,
     "SE0014261764": 11.2672,
     "US:PFE": 5.883,
-    "US:NVDA": 1.169741,
+    "US:NVDA": 2.814478,
     "AKO1L": 150
   },
   "quantity_precision_overrides": {
@@ -25,13 +25,28 @@
     "SE0014261764": 4
   },
   "pending_model_updates": [
+    "KNE1L",
     "VLP1L",
+    "ROE1L",
+    "US_NVDA",
     "AKO1L"
   ],
   "pending_quantity_updates": {
+    "KNE1L": {
+      "actual_units": 1000,
+      "model_units": 928
+    },
     "VLP1L": {
       "actual_units": 140,
       "model_units": 127
+    },
+    "ROE1L": {
+      "actual_units": 700,
+      "model_units": 620
+    },
+    "US_NVDA": {
+      "actual_units": 2.814478,
+      "model_units": 1.169741
     },
     "AKO1L": {
       "actual_units": 150,
@@ -39,6 +54,6 @@
     }
   },
   "public_disclosure_authorized": true,
-  "model_snapshot_status": "Current updated; published daily model inputs retain VLP1L127 and AKO1L100 pending recomputation",
-  "scope": "User-confirmed16-position inventory. Only VLP and Akola totals changed. Execution prices, fees and timestamps were not supplied. Frozen retrospective studies retain their original inventory."
+  "model_snapshot_status": "Latest confirmed Current recorded; published daily policies retain their dated prior quantities until recalculation",
+  "scope": "Confirmed16-position Current. Trade prices, fees and execution timestamps not supplied. Frozen historical studies retain original inventory."
 }
