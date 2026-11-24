@@ -702,6 +702,39 @@ initialise();
 
 // Each baseline retains its fitted path. Only the explicit regime models react
 // to a changed initial state; no arbitrary drift adjustment is applied.
+// Preserve source cells, but display forecast records as compact column groups.
+function layoutForecastTables(scope=document,force=false){
+ for(const source of scope.querySelectorAll('.weekly-forecast table:not(.forecast-transposed)')){
+  const rows=[...(source.tBodies[0]?.rows||[])],heads=[...(source.tHead?.rows[0]?.cells||[])];
+  if(!rows.length||!heads.length||rows.some(r=>r.cells.length!==heads.length))continue;
+  const width=source.parentElement.getBoundingClientRect().width||innerWidth;
+  const batch=Math.max(1,Math.min(3,Math.floor((width-150)/140)));
+  const signature=JSON.stringify([batch,rows.map(r=>[...r.cells].map(c=>c.textContent))]);
+  if(!force&&source.dataset.forecastLayout===signature)continue;
+  source.nextElementSibling?.classList.contains('forecast-transposed-groups')&&source.nextElementSibling.remove();
+  const groups=document.createElement('div');groups.className='forecast-transposed-groups';
+  for(let start=0;start<rows.length;start+=batch){
+   const selected=rows.slice(start,start+batch),table=document.createElement('table');table.className='research-table horizontal-summary-group forecast-transposed';
+   const h=table.createTHead().insertRow();h.append(Object.assign(document.createElement('th'),{textContent:'Measure'}));
+   for(const row of selected){const c=document.createElement('th');c.scope='col';c.textContent=row.cells[0].textContent;h.append(c);}
+   const body=table.createTBody();
+   for(let j=1;j<heads.length;j++){
+    const row=body.insertRow(),label=document.createElement('th');label.scope='row';label.textContent=heads[j].textContent.trim().replaceAll('_',' ');row.append(label);
+    for(const original of selected){const c=row.insertCell();c.textContent=original.cells[j].textContent;}
+   }
+   groups.append(table);
+  }
+  source.hidden=true;source.classList.add('horizontal-summary-group','forecast-orientation-source');source.classList.remove('fit-stacked');source.after(groups);source.dataset.forecastLayout=signature;
+ }
+}
+if(!document.getElementById('forecast-transposed-style')){
+ const style=document.createElement('style');style.id='forecast-transposed-style';style.textContent='.forecast-orientation-source[hidden]{display:none!important}.weekly-forecast .forecast-transposed{display:table!important;width:100%!important;table-layout:fixed!important;margin:.6rem 0;border-collapse:collapse}.weekly-forecast .forecast-transposed :is(thead,tbody){position:static!important;display:table-row-group!important}.weekly-forecast .forecast-transposed tr{display:table-row!important}.weekly-forecast .forecast-transposed :is(th,td){display:table-cell!important;width:auto!important;white-space:normal!important;overflow-wrap:anywhere!important;writing-mode:horizontal-tb!important;transform:none!important;padding:.35rem!important;font-size:.78rem!important;vertical-align:top}.weekly-forecast .forecast-transposed tbody th{width:36%!important}.weekly-forecast .forecast-transposed :is(th,td)::before{display:none!important}';document.head.append(style);
+ document.addEventListener('toggle',e=>{if(e.target.tagName==='DETAILS'&&e.target.open&&e.target.closest('.weekly-forecast'))requestAnimationFrame(()=>layoutForecastTables(e.target.closest('.weekly-forecast')));},true);
+ let timer;window.addEventListener('resize',()=>{clearTimeout(timer);timer=setTimeout(()=>layoutForecastTables(),200)});
+}
+
+// Each baseline retains its fitted path. Only the explicit regime models react
+// to a changed initial state; no arbitrary drift adjustment is applied.
 function initialiseForecastComparison(box) {
  if(box.dataset.ready)return;
  box.dataset.ready='yes';
@@ -773,7 +806,7 @@ function initialiseForecastComparison(box) {
     ...[4,9,14,19].map(j=>path?number(path[j]):'Unavailable'),path?number(100*(path.at(-1)/data.last_price-1)):'—',
     number(model.validation_MAE_pp),number(model.test_MAE_pp),model.status];
    cells.forEach((value,j)=>{const cell=row.insertCell();cell.textContent=value;if(j===0){cell.style.borderLeft=`4px solid ${colours[i]}`;cell.style.whiteSpace='normal';}});
-  });canvas.dataset.methodCount=data.models.filter(m=>visible(m)&&values(m)).length;draw();
+  });canvas.dataset.methodCount=data.models.filter(m=>visible(m)&&values(m)).length;draw();layoutForecastTables(box.closest('.weekly-forecast')||box);
  }
  context.addEventListener('change',render);family.addEventListener('change',render);
  historyToggle.addEventListener('change',draw);
@@ -783,6 +816,9 @@ function initialiseForecastComparison(box) {
  render();
 }
 document.querySelectorAll('.forecast-comparison').forEach(initialiseForecastComparison);
+
+layoutForecastTables();
+
 
 
 
