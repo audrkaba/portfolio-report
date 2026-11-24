@@ -1,13 +1,9 @@
 {
-  "observed_at": "2026-11-24T08:18:02.880443+02:00",
-  "US_closes": {
-    "US_PFE": "2026-11-23",
-    "US_NVDA": "2026-11-23"
-  },
-  "completed_steps": [
-    "benchmark"
-  ],
-  "last_recorded_phase": "daily_forecasts",
-  "new_portfolios_published": false,
-  "scope": "Downloaded prices and calculation progress; main report still uses its explicitly dated prior financial snapshot."
+  "state": "complete_live_verified",
+  "new_portfolios_published": true,
+  "model_input_hash": "936f61c1651acc82a8b4da981a42a169e5f989b8accdd496d3baa59ce8a0d5b6",
+  "financial_publication_commit": "021aaa073c0ec4f15053c73b2579dda8bc2c5734",
+  "share_closes": "2026-11-23",
+  "fund_NAV": "2026-11-20",
+  "observed_at_UTC": "2026-11-24T07:18:26.191091+00:00"
 }

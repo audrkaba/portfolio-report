@@ -1,109 +1,128 @@
 {
-  "observed_at_UTC": "2026-11-21T08:15:06.523835+00:00",
-  "model_run": "20261121_close20",
-  "model_input_hash": "b1d34d42ecab7580ba9ab9b6f8725a67ed2c46df1f944db0249d8260f8a53584",
+  "passed": true,
+  "verified_at_UTC": "2026-11-24T07:18:26.107564+00:00",
+  "model_run": "20261123_us_close",
+  "model_input_hash": "936f61c1651acc82a8b4da981a42a169e5f989b8accdd496d3baa59ce8a0d5b6",
   "holdings": {
     "TKM1T": 288,
     "SAF1R": 100,
     "APG1L": 200,
-    "KNE1L": 928,
-    "VLP1L": 127,
+    "KNE1L": 1000,
+    "VLP1L": 140,
     "RSU1L": 150,
     "MRK1T": 26,
     "GRG1L": 543,
     "HAE1T": 100,
     "TAL1T": 1000,
-    "ROE1L": 620,
+    "ROE1L": 700,
     "TSM1T": 330,
     "SE0014261764": 11.2672,
     "US_PFE": 5.883,
-    "US_NVDA": 1.169741,
-    "AKO1L": 100
+    "US_NVDA": 2.814478,
+    "AKO1L": 150
+  },
+  "market": {
+    "as_of": "2026-11-23T23:15:02.240704+02:00",
+    "requested_end": "2026-11-23",
+    "assets": 93,
+    "new_observations": 91,
+    "share_last": "2026-11-23",
+    "fund_last": "2026-11-20",
+    "historical_repairs_preserved": true,
+    "intraday": false,
+    "price_status": "Latest available official observations; source dates retained",
+    "updated_current_session": 0
   },
   "sales_policy": {
     "version": "US_SALES_ALWAYS_V1",
     "us_sales_always_allowed": true,
     "non_US_sales_follow_selected_policy": true
   },
-  "market": {
-    "as_of": "2026-11-21T09:06:55.174964+02:00",
-    "requested_end": "2026-11-20",
-    "assets": 93,
-    "new_observations": 91,
-    "share_last": "2026-11-20",
-    "fund_last": "2026-11-19",
-    "historical_repairs_preserved": true,
-    "intraday": false,
-    "price_status": "Latest available official observations; source dates retained",
-    "updated_current_session": 0
+  "constraint_policy": {
+    "version": "TRADE_ONLY_SECTOR_30_V1",
+    "sector_cap": 0.3,
+    "unused_cash_allowed": true,
+    "minimum_gross_purchases_EUR": 0,
+    "passive_market_excess_allowed": true,
+    "forced_sales_for_passive_excess": false,
+    "trade_limit": "Post-trade sector EUR exposure <= max(30% of account wealth, pre-trade marked sector EUR exposure).",
+    "no_sale_permissions_unchanged": true
   },
   "verified_native_policies": [
     {
       "model": "STOCHASTIC",
       "policy": "SALE",
-      "sha256": "c260759bb2dc2cb76abcc874a8d2b7d58eca8becbab473c83d550d1f84f036f5"
+      "validation_sha256": "d6a139c4e05a1300f8e031fd458c154f98b6253fbc7921331a7a72830e1ec119"
     },
     {
       "model": "STOCHASTIC",
       "policy": "NO_SALE",
-      "sha256": "eeb5443c8f9cf9897f1d116f8d540f753c262baafb25bd754bcff090b6e6c12f"
+      "validation_sha256": "268fd39edac96c172b608efd2a3a9bb2a7ae97a2c46703afd574f0270389f605"
     },
     {
       "model": "STOCHASTIC",
       "policy": "NO_INITIAL_SALES",
-      "sha256": "f7d86bc159d60f727a368adfed37419ce47939aa35a6931209762bfbfcf3f8b2"
+      "validation_sha256": "18916fa0907f16ea07302b5f069d27aefb4c2777455d5d73ef9a10d63385d55b"
     },
     {
       "model": "STOCHASTIC2",
       "policy": "SALE",
-      "sha256": "b79dec1deb524d61ccba411c7e7da2904ba37959cb1bad4808821e83bfb82e4f"
+      "validation_sha256": "37e15150fae78bfdd9a1a9ec2624683b802430670ae6473785d4e1ef57a5355c"
     },
     {
       "model": "STOCHASTIC2",
       "policy": "NO_SALE",
-      "sha256": "6a3fbf666a77368103888a642e428159fa3aaf21e8bfa7dbb76ea9590d58827a"
+      "validation_sha256": "c7c34a443c52d855783006a86f33b51af888be3b2849d68a60d499a0f776c8f3"
     },
     {
       "model": "STOCHASTIC2",
       "policy": "NO_INITIAL_SALES",
-      "sha256": "5aa7d19caccbaeccd6cc3d8dc38293808cc077eab58b17ea84b8f39f2f5ae366"
+      "validation_sha256": "4ee4b7df4ac25126a1ab2b1b888bd97f412610f53b86da8b333aa4df0c6457ed"
     },
     {
       "model": "stochA",
       "policy": "SALE",
-      "sha256": "62f6755575cc7b69ea12801628cfa0492ee4f1a9f58cec63707712dd01978f31"
+      "validation_sha256": "ea5a185087e655cd7609d02f0718e7a384b0818b58dcc779cf3d2f3238f759ea"
     },
     {
       "model": "stochA",
       "policy": "NO_SALE",
-      "sha256": "6668f78f6f8408614a43a2167ddcce1f3856fcc5a269ea426a91a29594333005"
+      "validation_sha256": "28c97ccf7f65cc20dd5a3df9d29d6c1e5d83ce15b64f7e43b16fad6b3bfa6719"
     },
     {
       "model": "stochA",
       "policy": "NO_INITIAL_SALES",
-      "sha256": "4e8f3954974e9b9b92bfa1a6cea86898ee0c511e330843bc9fcb4c05d6d0aec8"
+      "validation_sha256": "da844c76ef6eb92c0d3c14b21843aa29eef86b231d7f93c18da8026dc1dabb3d"
     },
     {
       "model": "stoch2A",
       "policy": "SALE",
-      "sha256": "6fcf640b513bcb04713bad65a224c643df9130dc9b96a0a7869bdaf084886faf"
+      "validation_sha256": "60356a0668e51439f331ed139ff91e111d793633ebbcd4a6449a0bcfeacbf793"
     },
     {
       "model": "stoch2A",
       "policy": "NO_SALE",
-      "sha256": "9b30125bcd8add1d96ab06307261cd455f16936c7bc9dbadb262e8c5c9ac9daf"
+      "validation_sha256": "bcb7dfc264c1c9acd302be16ca9db96fbdd09a74427551e5a3cb9c361a2a96b6"
     },
     {
       "model": "stoch2A",
       "policy": "NO_INITIAL_SALES",
-      "sha256": "4219bc364e9ae1a52648e3a589853aa1d2330339dc8e628b76db047163c9978c"
+      "validation_sha256": "83ac795cecc92437598e6b738b1e0f6925b1c74c05abf18b774b4b3b44a8f397"
     }
   ],
   "main_model_allocations": 20,
-  "current_financial_calculations_complete": true,
-  "rolling_verified": 222,
-  "rolling_planned": 222,
-  "rolling_contract": "Original frozen Nov17 study; later production quantities and US-sale permission are separate",
-  "unavailable_information_comparisons": [],
-  "scope": "New completed-session prices and fully refitted daily models; previous snapshots archived."
+  "financial_publication_commit": "021aaa073c0ec4f15053c73b2579dda8bc2c5734",
+  "original_frozen_study": {
+    "state": "complete",
+    "origins": 222,
+    "scope": "Earlier frozen inventory and constraints; not a backtest of the current daily book"
+  },
+  "new_sector_rule_study": {
+    "state": "incomplete",
+    "last_recorded": {
+      "C4": 72,
+      "FULL": 71
+    }
+  },
+  "scope": "Verified Nov23 Baltic and US closes, individually dated NAVs, confirmed16-position inventory. Current composition and all daily policies use this revision. Historical studies retain explicitly separate inputs."
 }
