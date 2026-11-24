@@ -3,10 +3,12 @@
  const format=x=>x==null?'—':Number(x).toFixed(6);
  window.renderSelectedPortfolioSensitivity=function(profile,model,policy){
   const key=model+'/'+policy;profile.dataset.correctedSensitivityKey=key;
-  let host=profile.querySelector(':scope > .corrected-tree-sensitivity');
-  if(!host){host=document.createElement('details');host.className='corrected-tree-sensitivity';profile.append(host)}
+  const legacy=profile.querySelector(':scope > details.portfolio-sensitivity');
+  let host=profile.querySelector('.corrected-tree-sensitivity');
+  if(!host){host=document.createElement('details');host.className='corrected-tree-sensitivity';}
+  if(legacy){legacy.querySelectorAll(':scope > .selected-portfolio-sensitivity').forEach(e=>e.hidden=true);if(host.parentElement!==legacy)legacy.insertBefore(host,legacy.querySelector(':scope > summary')?.nextSibling||null);}
+  else if(host.parentElement!==profile)profile.append(host);
   host.replaceChildren();const title=document.createElement('summary');title.textContent='Portfolio sensitivity: complete four-week scenario tree';host.append(title);
-  profile.querySelectorAll(':scope > .portfolio-sensitivity,:scope > .selected-portfolio-sensitivity').forEach(e=>e.remove());
   if(!['STOCHASTIC','STOCHASTIC2','stochA','stoch2A'].includes(model)||policy==='ALL'){host.hidden=true;return}host.hidden=false;
   load().then(data=>{
    if(profile.dataset.correctedSensitivityKey!==key)return;
