@@ -53,7 +53,7 @@
    }
    return c;
   }
-  const voteFilters={},voteFields={};
+  const voteFilters={};
   for(const side of ['buy','sell']){
    const fieldset=el('fieldset',undefined,'watch-vote-filter');fieldset.append(el('legend',side.toUpperCase()+' votes'));
    voteFilters[side]=new Set([3,4]);
@@ -61,12 +61,12 @@
     const label=el('label'),input=el('input');input.type='checkbox';input.name='watch-'+side+'-votes';input.value=String(votes);input.checked=voteFilters[side].has(votes);
     input.addEventListener('change',()=>{input.checked?voteFilters[side].add(votes):voteFilters[side].delete(votes);render()});label.append(input,document.createTextNode(' '+votes+'/4'));fieldset.append(label);
    }
-   voteFields[side]=fieldset;
+   root.querySelector('.watch-controls').append(fieldset);
   }
   function render(){
    const near=Number(root.querySelector('#watch-near-pct').value),counts={};
    for(const side of ['buy','sell']){
-    const host=root.querySelector('#watch-'+side);host.replaceChildren(voteFields[side]);
+    const host=root.querySelector('#watch-'+side);host.replaceChildren();
     const matches=data.rows.filter(r=>(side!=='sell'||isHeld(r))&&voteFilters[side].has(Number(r[side+'_votes']))&&!(Number(r[side+'_votes'])===1&&r[side].MACD)&&r[side+'_trigger']&&(r[side+'_trigger'].active||Math.abs(r[side+'_trigger'].move_pct)<=near+1e-7)).sort((a,b)=>Number(b[side+'_trigger'].active)-Number(a[side+'_trigger'].active)||Math.abs(a[side+'_trigger'].move_pct)-Math.abs(b[side+'_trigger'].move_pct)||a.asset.localeCompare(b.asset));
     counts[side]=matches.length;host.append(el('div',`${side.toUpperCase()} watch · ${matches.length}`,'watch-side-title'));
     for(const supported of [true,false]){

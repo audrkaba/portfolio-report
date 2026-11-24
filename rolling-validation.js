@@ -1,4 +1,3 @@
-// PORTFOLIO_PROGRESS {"verified_folds": 222, "planned_folds": 222, "is_complete": true}
 'use strict';
 (async()=>{
  const data=await fetch('rolling-validation.json').then(r=>{if(!r.ok)throw Error(r.status);return r.json()});
@@ -15,12 +14,12 @@
  }
  const rows=data.completed.flatMap(f=>f.metrics.map(r=>({...r,origin:f.fold.origin,regime:f.origin_regime||null}))).filter(r=>r.cost_bps===(r.scope==='IS'?0:10));
  const metrics=['netSD','mean_return','Rachev','Sharpe','maximum_drawdown','Sortino','STD','accumulated_wealth_EUR','CVaR95','fees_EUR','turnover_EUR'];
- function options(el,values){el.replaceChildren(...values.map(v=>{const o=document.createElement('option');o.value=v;o.textContent=v;return o}));}
+ function options(el,values){el.replaceChildren(...values.map(v=>{const o=document.createElement('option');o.value=v;o.textContent=v==='accumulated_wealth_EUR'?'Final wealth EUR':v;return o}));}
  options($('case'),[...new Set(rows.map(r=>r.case))].sort());options($('metric'),metrics);options($('origin'),data.completed.map(x=>x.fold.id));
  const overview=document.createElement('details');overview.id='all-portfolio-comparison';
  overview.innerHTML='<summary>Results: all portfolios and all key measures</summary><p>Same period and origin-regime selection as below. Each cell is the mean across available verified windows; the smaller line gives sample SD and the number of finite observations. No missing value is replaced by zero. Daily mean return, STD, CVaR and maximum drawdown are percentages; Sharpe and Sortino are unannualised. Overlapping windows are descriptive and are never compounded.</p><p>Stochastic names without an observed-prefix suffix use only their fitted initial allocation. Observed-prefix rows execute the fitted later decision rules using only information available by that date. These are separate deployments. Sale, No-sale and No-initial-sales are separate policies.</p><label>Sale policy <select id="overview-policy"><option value="ALL">All policies</option><option value="SALE">Sale</option><option value="NO_SALE">No-sale</option><option value="NO_INITIAL_SALES">No initial sales; later sales allowed</option></select></label><label>Stochastic deployment <select id="overview-deployment"><option value="ALL">Initial-only and observed-prefix</option><option value="INITIAL">Initial-only</option><option value="CAUSAL">Observed-prefix</option></select></label><label>Origin coverage <select id="overview-origins"><option value="AVAILABLE">All available audited origins</option><option value="COMMON">Common origins with every native model feasible</option></select></label><p id="overview-coverage"></p><div id="all-portfolio-metrics"></div>';
  $('filters').before(overview);
- const overviewMeasures=[['netSD','netSD'],['Daily mean return','mean_return'],['Rachev','Rachev'],['Sharpe','Sharpe'],['Sortino','Sortino'],['Daily STD','STD'],['Maximum drawdown','maximum_drawdown'],['CVaR95','CVaR95'],['Accumulated wealth, EUR','accumulated_wealth_EUR']];
+ const overviewMeasures=[['netSD','netSD'],['Daily mean return','mean_return'],['Rachev','Rachev'],['Sharpe','Sharpe'],['Sortino','Sortino'],['Daily STD','STD'],['Maximum drawdown','maximum_drawdown'],['CVaR95','CVaR95'],['Final wealth, EUR','accumulated_wealth_EUR']];
  let overviewSignature='';
  function renderOverview(){
   const host=$('all-portfolio-metrics'),width=host.getBoundingClientRect().width||document.body.clientWidth-54,count=Math.max(2,Math.min(10,Math.floor(width/125)));
