@@ -8,7 +8,7 @@ const regimeNames=['Unclassified','R1: Baltic calm; world calm','R2: Baltic stre
 const pct=x=>x==null?'—':(100*x).toFixed(2)+'%';
 const num=x=>x==null?'—':Number(x).toFixed(3);
 const exact=x=>x==null?'—':Number(x).toFixed(6);
-const eur=x=>new Intl.NumberFormat('en',{style:'currency',currency:'EUR',maximumFractionDigits:2}).format(x);
+const eur=x=>x==null?'—':new Intl.NumberFormat('en',{style:'currency',currency:'EUR',maximumFractionDigits:2}).format(x);
 const esc=x=>String(x).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const cfg={responsive:true,displaylogo:false,scrollZoom:false,modeBarButtonsToRemove:['select2d','lasso2d'],toImageButtonOptions:{format:'png',scale:2}};
 async function plotly(){if(window.Plotly)return;await new Promise((resolve,reject)=>{const s=document.createElement('script');s.src='vendor/plotly/plotly-3.1.0.min.js';s.onload=resolve;s.onerror=reject;document.head.appendChild(s)});}
@@ -20,6 +20,7 @@ function renderComposition(rows=compositionRows){
  const headings=['Asset','Units','Unit value, EUR','Day','Month','Year to date','Since 2025-01-01','Value, EUR','Weight','Quote date'];
  const widths=[28,9,8,7,7,7,7,12,7,8];
  $('co-holdings').innerHTML=table(headings,rows).replace('<table>','<table class="horizontal-summary-group co-composition-table"><colgroup>'+widths.map(w=>'<col style="width:'+w+'%">').join('')+'</colgroup>');
+ for(const [i,row] of (data?.composition||[]).entries()){const tr=$('co-holdings').querySelectorAll('tbody tr')[i];if(tr&&row.fixed_income)tr.classList.add('co-fixed-income-row');if(tr&&row.cash)tr.classList.add('co-cash-row');}
 }
 function table(headers,rows){return '<table><thead><tr>'+headers.map(h=>'<th scope="col">'+esc(h)+'</th>').join('')+'</tr></thead><tbody>'+rows.map(r=>'<tr>'+r.map((v,i)=>'<'+(i?'td':'th scope="row"')+' data-label="'+esc(headers[i])+'">'+v+'</'+(i?'td':'th')+'>').join('')+'</tr>').join('')+'</tbody></table>';}
 function changeCell(x){return x==null?'—':'<span class="'+(x<0?'co-negative':'co-positive')+'">'+pct(x)+'</span>';}
@@ -67,25 +68,27 @@ function setupPortfolioPicker(){
  }
 }
 async function render(){
- if(!data||!root.open)return;if(rendering){pending=true;return;}rendering=true;
+ if(!data||!root.open)return;if(rendering){pending=true;return;}rendering=true;root.dataset.rendering='true';
  try{
   const key=$('co-period').value,period=data.periods[key],begin=data.dates.findIndex(d=>d>=period.first),dates=data.dates,baltic=$('co-baltic').value,bands=$('co-bands').checked,small=innerWidth<500;
-  const normalize=a=>{const base=a.slice(begin).find(v=>v!=null);return a.map(v=>v==null||base==null?null:v/base*data.value[begin]);};
+  const account=$('co-include-fixed')?.checked&&data.account_history_proxy;
+  const graphValue=account?account.value:data.value,graphBands=account?account.bollinger:data.bollinger;
+  const normalize=a=>{const base=a.slice(begin).find(v=>v!=null);return a.map(v=>v==null||base==null?null:v/base*graphValue[begin]);};
   const traces=[];
   if(bands){
-   traces.push(line('Lower Bollinger band',dates,data.bollinger.lower,'#a5b5bf',{line:{width:0},showlegend:false,hoverinfo:'skip'}));
-   traces.push(line('Bollinger ±2σ',dates,data.bollinger.upper,'#a5b5bf',{showlegend:false,line:{width:0},fill:'tonexty',fillcolor:'rgba(40,110,140,.12)',hoverinfo:'skip'}));
-   traces.push(line('SMA20',dates,data.bollinger.mean,'#8197a4',{showlegend:false,line:{color:'#8197a4',width:1,dash:'dot'}}));
+   traces.push(line('Lower Bollinger band',dates,graphBands.lower,'#a5b5bf',{line:{width:0},showlegend:false,hoverinfo:'skip'}));
+   traces.push(line('Bollinger ±2σ',dates,graphBands.upper,'#a5b5bf',{showlegend:false,line:{width:0},fill:'tonexty',fillcolor:'rgba(40,110,140,.12)',hoverinfo:'skip'}));
+   traces.push(line('SMA20',dates,graphBands.mean,'#8197a4',{showlegend:false,line:{color:'#8197a4',width:1,dash:'dot'}}));
   }
   const selectedPortfolios=new Set([...$('co-portfolios').selectedOptions].map(o=>o.value));
-  traces.push(line('Current',dates,data.value,'#075b78',{line:{color:'#075b78',width:2.3}}));
+  traces.push(line('Current',dates,graphValue,'#075b78',{line:{color:'#075b78',width:2.3}}));
   traces.push(line('S&P 500',dates,normalize(data.benchmarks.SP500_EUR),'#d17a22'),line(baltic==='OMXB10'?'OMX Baltic 10':'OMX Baltic Benchmark GI',dates,normalize(data.benchmarks[baltic]),'#8262a3'));
   const selectedLegend=[];
   for(const [index,p] of data.portfolio_comparison.portfolios.entries()){
    if(!selectedPortfolios.has(p.id))continue;
    const first=p.values.findIndex((v,i)=>i>=begin&&v!=null&&v>0),style=comparisonStyle(index);
    if(first<0)continue;
-   const values=p.values.map(v=>v==null?null:v/p.values[first]*data.value[first]);
+   const values=p.values.map(v=>v==null?null:v/p.values[first]*graphValue[first]);
    traces.push(line(p.label.replace('; later sales allowed',''),dates,values,style.color,{showlegend:true,meta:{portfolio_id:p.id},line:{color:style.color,width:1.7,dash:style.dash}}));
    selectedLegend.push({label:p.label,...style});
   }
@@ -104,7 +107,7 @@ async function render(){
   main.shapes=[20,80].map(y=>({type:'line',xref:'paper',yref:'y2',x0:0,x1:1,y0:y,y1:y,line:{color:'#b1bfca',dash:'dot',width:1}}));
   await Plotly.react('current-overview-price',traces,main,cfg);
   const valuePlot=$('current-overview-price');if(!valuePlot._coCurrentPinned){valuePlot._coCurrentPinned=true;valuePlot.on('plotly_legendclick',e=>e.data[e.curveNumber].name==='Current'?false:undefined);}bindValueAutoscale(valuePlot);await fitVisibleValueAxis(valuePlot);
-  $('co-context').textContent=(data.total_holdings_value_EUR!=null?`Total holdings ${eur(data.total_holdings_value_EUR)} · ${data.total_holdings_count} positions (bonds at indicative bid; savings notes at nominal). `:'')+`Price-history holdings ${eur(data.current_value_EUR)} · ${Object.keys(data.holdings).length} shares/fund positions. Drag or zoom the common time axis to move all three panels together. Chart rebasing follows History: ${period.first}–${period.last}. Performance uses full history ${data.periods.ALL.first} to ${data.periods.ALL.last}. S&P500 last close ${data.benchmark_last.SP500_EUR}; Baltic index last close ${data.benchmark_last[baltic]}.`;
+  $('co-context').textContent=(data.total_holdings_value_EUR!=null?`Total holdings ${eur(data.total_holdings_value_EUR)} · ${data.total_holdings_count} positions (bonds at indicative bid; savings notes at nominal; cash ${eur(data.reported_cash_EUR)}). `:'')+(account?'Chart: total-value illustration with constant latest fixed-income marks and reported cash; not historical bond quotes. ':'Chart: shares/fund price history only. ')+`Performance and correlations cover the ${Object.keys(data.holdings).length} shares/fund positions (${eur(data.current_value_EUR)}). Drag or zoom the common time axis to move all three panels together. Chart rebasing follows History: ${period.first}–${period.last}. Performance uses full history ${data.periods.ALL.first} to ${data.periods.ALL.last}. S&P500 last close ${data.benchmark_last.SP500_EUR}; Baltic index last close ${data.benchmark_last[baltic]}.`;
   $('co-regime-note').textContent=`Latest classified session: ${data.latest_classified_regime.date} — ${regimeNames[data.latest_classified_regime.regime]}. R1 blue; R2 amber; R3 purple; R4 red; unclassified grey. Missing regime dates are not filled.`;
   const fullPerformance=data.periods.ALL;
   const columns=['CURRENT','SP500_EUR',baltic];
@@ -139,17 +142,19 @@ async function render(){
   await Plotly.react('current-overview-rolling-correlation',[line('Pairwise10th percentile',selectedDates,take(data.rolling_correlation.p10),'#b2c9d0',{showlegend:false,line:{width:0}}),line('10th–90th percentile',selectedDates,take(data.rolling_correlation.p90),'#b2c9d0',{fill:'tonexty',fillcolor:'rgba(30,110,130,.15)',line:{width:0}}),line('Median pairwise correlation',selectedDates,take(data.rolling_correlation.median),'#176d82')],{...layout('Rolling63-session holdings-only correlations',235),uirevision:'co-rolling-'+key,yaxis:{tickformat:'.2f',automargin:true}},cfg);
   const rollingPlot=$('current-overview-rolling-correlation');rollingPlot._coYBounds=[-1,1];bindValueAutoscale(rollingPlot);await fitVisibleValueAxis(rollingPlot);
   const compRows=data.composition.map(r=>{
-    const name=r.asset==='CURRENT'?'<strong>Current portfolio</strong>':r.fixed_income?'<a class="co-fixed-income-link" href="#co-fi-'+esc(r.asset)+'">'+esc(r.asset+' — '+r.name)+'</a>':'<a class="co-asset-link" href="'+esc(data.profile_links[r.asset])+'">'+esc(r.asset+' — '+r.name)+'</a>';
+    const name=r.asset==='CURRENT'?'<strong>Current portfolio</strong>':r.cash?'Cash — EUR':r.fixed_income?'<a class="co-fixed-income-link" href="#co-fi-'+esc(r.asset)+'">'+esc(r.asset+' — '+r.name)+'</a>':'<a class="co-asset-link" href="'+esc(data.profile_links[r.asset])+'">'+esc(r.asset+' — '+r.name)+'</a>';
     return [name,r.units==null?'—':String(r.units),r.price_EUR==null?'—':Number(r.price_EUR).toFixed(4),...['day','month','YTD','since_2025'].map(k=>changeCell(r.changes[k])),eur(r.value_EUR),pct(r.weight),r.date?'<time datetime="'+esc(r.date)+'" title="'+esc(r.date)+'">'+esc(r.date.slice(8,10)+'-'+r.date.slice(5,7))+'</time>':'—'];
   });
   renderComposition(compRows);
+  if($('co-maturity')?.open&&data.fixed_income_maturity){const m=data.fixed_income_maturity;await Plotly.react('current-overview-maturity',[line('Fixed-income principal',m.dates,m.principal_outstanding,'#b48328',{stackgroup:'principal',line:{color:'#b48328',shape:'hv'}}),line('Cash',m.dates,m.cash,'#34836c',{stackgroup:'principal',line:{color:'#34836c',shape:'hv'}})],{...layout('Scheduled principal conversion — no reinvestment assumed',310),yaxis:{title:{text:'Nominal principal and cash, EUR'},rangemode:'tozero'}},cfg);}
   if($('co-fixed-income-rows'))$('co-fixed-income-rows').innerHTML=(data.fixed_income_details||[]).map(r=>'<details id="co-fi-'+esc(r.asset)+'"><summary>'+esc(r.asset+' — '+r.name)+'</summary><p>'+esc(r.instrument_code)+' · '+esc(r.units)+' units · annual coupon '+pct(r.annual_interest_rate)+' on nominal · maturity '+esc(r.maturity_date)+'. Valuation: '+esc(r.valuation.basis)+'; unit value '+eur(r.price_EUR)+', position '+eur(r.value_EUR)+'. '+esc(r.valuation.note)+(r.valuation.source?' <a href="'+esc(r.valuation.source)+'" target="_blank" rel="noopener">Quote source</a>':'')+'</p></details>').join('');
   root.dataset.ready='true';root.dataset.period=key;
- }finally{rendering=false;if(pending){pending=false;queueMicrotask(()=>render().catch(console.error));}}
+ }finally{rendering=false;root.dataset.rendering='false';if(pending){pending=false;queueMicrotask(()=>render().catch(console.error));}}
 }
 async function load(){if(loaded)return loaded;loaded=(async()=>{const response=await fetch('current-overview.json',{cache:'no-store'});if(!response.ok)throw Error('Portfolio data HTTP'+response.status);data=await response.json();setupPortfolioPicker();$('co-period').value=data.default_period||'1Y';await plotly();$('current-overview-price').replaceChildren();await render();})();return loaded;}
 root.addEventListener('toggle',()=>{if(root.open)load().then(render).catch(e=>{$('current-overview-price').textContent='Unable to load Current analytics: '+e.message;loaded=null;});});
-['co-period','co-baltic','co-bands','co-correlation-method','co-portfolios'].forEach(id=>$(id).addEventListener('change',()=>render().catch(console.error)));
+['co-period','co-baltic','co-bands','co-correlation-method','co-portfolios','co-include-fixed'].forEach(id=>$(id)?.addEventListener('change',()=>render().catch(console.error)));
+$('co-maturity')?.addEventListener('toggle',()=>{if($('co-maturity').open)render().catch(console.error)});
 $('co-composition').addEventListener('toggle',()=>{if($('co-composition').open)renderComposition()});
 $('co-portfolios-reset').addEventListener('click',()=>{for(const option of $('co-portfolios').options)option.selected=false;render().catch(console.error)});
 root.querySelectorAll('details').forEach(d=>d.addEventListener('toggle',()=>{if(d.open&&window.Plotly)requestAnimationFrame(()=>d.querySelectorAll('.js-plotly-plot').forEach(p=>Plotly.Plots.resize(p)));}));
