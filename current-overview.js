@@ -17,7 +17,7 @@ function line(name,x,y,color,extra={}){return {type:'scatter',mode:'lines',name,
 let compositionRows;
 function renderComposition(rows=compositionRows){
  if(!rows)return;compositionRows=rows;
- const headings=['Asset','Units','Latest EUR price','Day','Month','Year to date','Since 2025-01-01','Value, EUR','Weight','Quote date'];
+ const headings=['Asset','Units','Unit value, EUR','Day','Month','Year to date','Since 2025-01-01','Value, EUR','Weight','Quote date'];
  const widths=[28,9,8,7,7,7,7,12,7,8];
  $('co-holdings').innerHTML=table(headings,rows).replace('<table>','<table class="horizontal-summary-group co-composition-table"><colgroup>'+widths.map(w=>'<col style="width:'+w+'%">').join('')+'</colgroup>');
 }
@@ -104,7 +104,7 @@ async function render(){
   main.shapes=[20,80].map(y=>({type:'line',xref:'paper',yref:'y2',x0:0,x1:1,y0:y,y1:y,line:{color:'#b1bfca',dash:'dot',width:1}}));
   await Plotly.react('current-overview-price',traces,main,cfg);
   const valuePlot=$('current-overview-price');if(!valuePlot._coCurrentPinned){valuePlot._coCurrentPinned=true;valuePlot.on('plotly_legendclick',e=>e.data[e.curveNumber].name==='Current'?false:undefined);}bindValueAutoscale(valuePlot);await fitVisibleValueAxis(valuePlot);
-  $('co-context').textContent=`Current invested value ${eur(data.current_value_EUR)} · ${Object.keys(data.holdings).length} holdings. Drag or zoom the common time axis to move all three panels together. Chart rebasing follows History: ${period.first}–${period.last}. Performance uses full history ${data.periods.ALL.first} to ${data.periods.ALL.last}. S&P500 last close ${data.benchmark_last.SP500_EUR}; Baltic index last close ${data.benchmark_last[baltic]}.`;
+  $('co-context').textContent=(data.total_holdings_value_EUR!=null?`Total holdings ${eur(data.total_holdings_value_EUR)} · ${data.total_holdings_count} positions (bonds at indicative bid; savings notes at nominal). `:'')+`Price-history holdings ${eur(data.current_value_EUR)} · ${Object.keys(data.holdings).length} shares/fund positions. Drag or zoom the common time axis to move all three panels together. Chart rebasing follows History: ${period.first}–${period.last}. Performance uses full history ${data.periods.ALL.first} to ${data.periods.ALL.last}. S&P500 last close ${data.benchmark_last.SP500_EUR}; Baltic index last close ${data.benchmark_last[baltic]}.`;
   $('co-regime-note').textContent=`Latest classified session: ${data.latest_classified_regime.date} — ${regimeNames[data.latest_classified_regime.regime]}. R1 blue; R2 amber; R3 purple; R4 red; unclassified grey. Missing regime dates are not filled.`;
   const fullPerformance=data.periods.ALL;
   const columns=['CURRENT','SP500_EUR',baltic];
@@ -139,10 +139,11 @@ async function render(){
   await Plotly.react('current-overview-rolling-correlation',[line('Pairwise10th percentile',selectedDates,take(data.rolling_correlation.p10),'#b2c9d0',{showlegend:false,line:{width:0}}),line('10th–90th percentile',selectedDates,take(data.rolling_correlation.p90),'#b2c9d0',{fill:'tonexty',fillcolor:'rgba(30,110,130,.15)',line:{width:0}}),line('Median pairwise correlation',selectedDates,take(data.rolling_correlation.median),'#176d82')],{...layout('Rolling63-session holdings-only correlations',235),uirevision:'co-rolling-'+key,yaxis:{tickformat:'.2f',automargin:true}},cfg);
   const rollingPlot=$('current-overview-rolling-correlation');rollingPlot._coYBounds=[-1,1];bindValueAutoscale(rollingPlot);await fitVisibleValueAxis(rollingPlot);
   const compRows=data.composition.map(r=>{
-   const name=r.asset==='CURRENT'?'<strong>Current portfolio</strong>':'<a class="co-asset-link" href="'+esc(data.profile_links[r.asset])+'">'+esc(r.asset+' — '+r.name)+'</a>';
-   return [name,r.units==null?'—':String(r.units),r.price_EUR==null?'—':Number(r.price_EUR).toFixed(4),...['day','month','YTD','since_2025'].map(k=>changeCell(r.changes[k])),eur(r.value_EUR),pct(r.weight),'<time datetime="'+esc(r.date)+'" title="'+esc(r.date)+'">'+esc(r.date.slice(8,10)+'-'+r.date.slice(5,7))+'</time>'];
+    const name=r.asset==='CURRENT'?'<strong>Current portfolio</strong>':r.fixed_income?'<a class="co-fixed-income-link" href="#co-fi-'+esc(r.asset)+'">'+esc(r.asset+' — '+r.name)+'</a>':'<a class="co-asset-link" href="'+esc(data.profile_links[r.asset])+'">'+esc(r.asset+' — '+r.name)+'</a>';
+    return [name,r.units==null?'—':String(r.units),r.price_EUR==null?'—':Number(r.price_EUR).toFixed(4),...['day','month','YTD','since_2025'].map(k=>changeCell(r.changes[k])),eur(r.value_EUR),pct(r.weight),r.date?'<time datetime="'+esc(r.date)+'" title="'+esc(r.date)+'">'+esc(r.date.slice(8,10)+'-'+r.date.slice(5,7))+'</time>':'—'];
   });
   renderComposition(compRows);
+  if($('co-fixed-income-rows'))$('co-fixed-income-rows').innerHTML=(data.fixed_income_details||[]).map(r=>'<details id="co-fi-'+esc(r.asset)+'"><summary>'+esc(r.asset+' — '+r.name)+'</summary><p>'+esc(r.instrument_code)+' · '+esc(r.units)+' units · annual coupon '+pct(r.annual_interest_rate)+' on nominal · maturity '+esc(r.maturity_date)+'. Valuation: '+esc(r.valuation.basis)+'; unit value '+eur(r.price_EUR)+', position '+eur(r.value_EUR)+'. '+esc(r.valuation.note)+(r.valuation.source?' <a href="'+esc(r.valuation.source)+'" target="_blank" rel="noopener">Quote source</a>':'')+'</p></details>').join('');
   root.dataset.ready='true';root.dataset.period=key;
  }finally{rendering=false;if(pending){pending=false;queueMicrotask(()=>render().catch(console.error));}}
 }
@@ -153,6 +154,7 @@ $('co-composition').addEventListener('toggle',()=>{if($('co-composition').open)r
 $('co-portfolios-reset').addEventListener('click',()=>{for(const option of $('co-portfolios').options)option.selected=false;render().catch(console.error)});
 root.querySelectorAll('details').forEach(d=>d.addEventListener('toggle',()=>{if(d.open&&window.Plotly)requestAnimationFrame(()=>d.querySelectorAll('.js-plotly-plot').forEach(p=>Plotly.Plots.resize(p)));}));
 root.addEventListener('click',event=>{
+ const fixed=event.target.closest('a.co-fixed-income-link');if(fixed){const target=document.getElementById(fixed.hash.slice(1));if(target){event.preventDefault();for(let p=target;p;p=p.parentElement)if(p.tagName==='DETAILS')p.open=true;target.scrollIntoView({block:'start'});}return;}
  const link=event.target.closest('a.co-asset-link');if(!link)return;const target=document.getElementById(link.hash.slice(1));if(!target)return;event.preventDefault();
  for(const [name,value] of [['portfolio-scope','CURRENT'],['profile-update-mode','ALL'],['profile-instrument-type','ALL']]){const r=document.querySelector('input[name="'+name+'"][value="'+value+'"]');if(r){r.checked=true;r.dispatchEvent(new Event('change',{bubbles:true}));}}
  document.querySelectorAll('#analytics-1-1 .profile-filters input[type=checkbox]').forEach(c=>c.checked=true);
