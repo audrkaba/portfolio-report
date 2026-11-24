@@ -121,6 +121,7 @@ async function render(){
    return [esc(label),...columns.map(c=>format(fullPerformance.metrics[c][metric])),...cells];
   })).replace('<table>','<table class="horizontal-summary-group co-performance-table"><colgroup>'+[28,12,12,12,18,18].map(w=>'<col style="width:'+w+'%">').join('')+'</colgroup>');
   $('co-best-note').textContent=`Latest full-history model portfolios only; rolling-origin refits, archived versions and regime-only fits are excluded. All table values use the full available history: ${fullPerformance.first} to ${fullPerformance.last}, independently of the chart History selector. Complete-history allocations available: ${fullPerformance.hypotheses_evaluated_by_policy.SALE} Sale and ${fullPerformance.hypotheses_evaluated_by_policy.NO_SALE} No-sale. Plans without complete history are excluded rather than backfilled. Each cell gives only the best observed value and model name within that policy. Fixed initial invested holdings; excludes cash and later scenario trades. Returns and ratios are maximised; volatility, drawdown and loss measures are minimised. Diagnostic counts, skewness and kurtosis have no assumed best direction.`;
+  if($('co-correlations').open){
   const method=$('co-correlation-method').value,tree=period.correlation_clustering[method],order=tree.order,assets=order.map(i=>data.asset_order[i]);
   const host=$('current-overview-correlations'),size=Math.floor(host.getBoundingClientRect().width);
   const compact=size<360,margin={l:8,r:compact?68:85,t:compact?30:35,b:compact?95:115},pw=size-margin.l-margin.r,ph=size-margin.t-margin.b,side=Math.min(pw*.78,ph*.78),xd=[.18,.18+side/pw],yd=[0,side/ph];
@@ -141,6 +142,7 @@ async function render(){
   const take=a=>a.slice(begin),selectedDates=dates.slice(begin);
   await Plotly.react('current-overview-rolling-correlation',[line('Pairwise10th percentile',selectedDates,take(data.rolling_correlation.p10),'#b2c9d0',{showlegend:false,line:{width:0}}),line('10th–90th percentile',selectedDates,take(data.rolling_correlation.p90),'#b2c9d0',{fill:'tonexty',fillcolor:'rgba(30,110,130,.15)',line:{width:0}}),line('Median pairwise correlation',selectedDates,take(data.rolling_correlation.median),'#176d82')],{...layout('Rolling63-session holdings-only correlations',235),uirevision:'co-rolling-'+key,yaxis:{tickformat:'.2f',automargin:true}},cfg);
   const rollingPlot=$('current-overview-rolling-correlation');rollingPlot._coYBounds=[-1,1];bindValueAutoscale(rollingPlot);await fitVisibleValueAxis(rollingPlot);
+  }
   const compRows=data.composition.map(r=>{
     const name=r.asset==='CURRENT'?'<strong>Current portfolio</strong>':r.cash?'Cash — EUR':r.fixed_income?'<a class="co-fixed-income-link" href="#co-fi-'+esc(r.asset)+'">'+esc(r.asset+' — '+r.name)+'</a>':'<a class="co-asset-link" href="'+esc(data.profile_links[r.asset])+'">'+esc(r.asset+' — '+r.name)+'</a>';
     return [name,r.units==null?'—':String(r.units),r.price_EUR==null?'—':Number(r.price_EUR).toFixed(4),...['day','month','YTD','since_2025'].map(k=>changeCell(r.changes[k])),eur(r.value_EUR),pct(r.weight),r.date?'<time datetime="'+esc(r.date)+'" title="'+esc(r.date)+'">'+esc(r.date.slice(8,10)+'-'+r.date.slice(5,7))+'</time>':'—'];
@@ -154,6 +156,7 @@ async function render(){
 async function load(){if(loaded)return loaded;loaded=(async()=>{const response=await fetch('current-overview.json',{cache:'no-store'});if(!response.ok)throw Error('Portfolio data HTTP'+response.status);data=await response.json();setupPortfolioPicker();$('co-period').value=data.default_period||'1Y';await plotly();$('current-overview-price').replaceChildren();await render();})();return loaded;}
 root.addEventListener('toggle',()=>{if(root.open)load().then(render).catch(e=>{$('current-overview-price').textContent='Unable to load Current analytics: '+e.message;loaded=null;});});
 ['co-period','co-baltic','co-bands','co-correlation-method','co-portfolios','co-include-fixed'].forEach(id=>$(id)?.addEventListener('change',()=>render().catch(console.error)));
+$('co-correlations').addEventListener('toggle',()=>{if($('co-correlations').open)render().catch(console.error)});
 $('co-maturity')?.addEventListener('toggle',()=>{if($('co-maturity').open)render().catch(console.error)});
 $('co-composition').addEventListener('toggle',()=>{if($('co-composition').open)renderComposition()});
 $('co-portfolios-reset').addEventListener('click',()=>{for(const option of $('co-portfolios').options)option.selected=false;render().catch(console.error)});
