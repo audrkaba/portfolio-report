@@ -20,7 +20,9 @@
   set('current units',units);set('target units',units);set('change',0);
   const baskets=JSON.parse(document.getElementById('current-portfolio-baskets').textContent);
   const info=Object.values(baskets).flatMap(c=>Object.values(c)).flatMap(b=>b.rows).find(z=>z.asset===asset||z.asset===raw);
-  const value=info?units*info.price:null;
+  const quote=holdings.valuation_quotes?.[raw]||holdings.valuation_quotes?.[asset];
+  const price=quote?.price_EUR??info?.price,value=price==null?null:units*price;
+  if(price!=null)set('last price',price.toFixed(4));
   set('target value eur',value==null?'—':value.toFixed(2));set('weight %',value==null?'—':(value/15000*100).toFixed(2)+'%');
   const summary=profile.querySelector(':scope > summary');
   const name=info?.name||summary.textContent.split('|')[0].trim();
