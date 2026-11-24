@@ -71,8 +71,8 @@ async function render(){
  if(!data||!root.open)return;if(rendering){pending=true;return;}rendering=true;root.dataset.rendering='true';
  try{
   const key=$('co-period').value,period=data.periods[key],begin=data.dates.findIndex(d=>d>=period.first),dates=data.dates,baltic=$('co-baltic').value,bands=$('co-bands').checked,small=innerWidth<500;
-  const account=$('co-include-fixed')?.checked&&data.account_history_proxy;
-  const graphValue=account?account.value:data.value,graphBands=account?account.bollinger:data.bollinger;
+  const account=false;
+  const graphValue=data.value,graphBands=data.bollinger;
   const normalize=a=>{const base=a.slice(begin).find(v=>v!=null);return a.map(v=>v==null||base==null?null:v/base*graphValue[begin]);};
   const traces=[];
   if(bands){
