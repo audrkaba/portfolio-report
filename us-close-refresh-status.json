@@ -1,0 +1,13 @@
+{
+  "observed_at": "2026-11-24T08:18:02.880443+02:00",
+  "US_closes": {
+    "US_PFE": "2026-11-23",
+    "US_NVDA": "2026-11-23"
+  },
+  "completed_steps": [
+    "benchmark"
+  ],
+  "last_recorded_phase": "daily_forecasts",
+  "new_portfolios_published": false,
+  "scope": "Downloaded prices and calculation progress; main report still uses its explicitly dated prior financial snapshot."
+}
