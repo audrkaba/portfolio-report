@@ -1,0 +1,118 @@
+{
+  "as_of": "2026-11-24",
+  "checked_UTC": "2026-11-25T11:54:11.743647+00:00",
+  "input_hash": "9abfac304e9443d4a42e52c686cfd4bad86c3494dd3969350e05dc737506bba6",
+  "cases": [
+    {
+      "model": "STOCHASTIC2",
+      "policy": "NO_SALE",
+      "terminal_netSD": 0.32051282051282054,
+      "expected_return": 0.008403168079445826,
+      "model_cash_EUR": 2358.5888358838856,
+      "nodes": 4421,
+      "outcomes": 16000,
+      "caps": true,
+      "rows": [
+        {
+          "asset": "AKO1L",
+          "current_units": 150.0,
+          "target_units": 150.0,
+          "change": 0.0
+        },
+        {
+          "asset": "APG1L",
+          "current_units": 200.0,
+          "target_units": 200.0,
+          "change": 0.0
+        },
+        {
+          "asset": "GRG1L",
+          "current_units": 543.0,
+          "target_units": 543.0,
+          "change": 0.0
+        },
+        {
+          "asset": "HAE1T",
+          "current_units": 100.0,
+          "target_units": 100.0,
+          "change": 0.0
+        },
+        {
+          "asset": "KNE1L",
+          "current_units": 1000.0,
+          "target_units": 1000.0,
+          "change": 0.0
+        },
+        {
+          "asset": "MRK1T",
+          "current_units": 26.0,
+          "target_units": 26.0,
+          "change": 0.0
+        },
+        {
+          "asset": "ROE1L",
+          "current_units": 700.0,
+          "target_units": 700.0,
+          "change": 0.0
+        },
+        {
+          "asset": "RSU1L",
+          "current_units": 150.0,
+          "target_units": 150.0,
+          "change": 0.0
+        },
+        {
+          "asset": "SAF1R",
+          "current_units": 100.0,
+          "target_units": 100.0,
+          "change": 0.0
+        },
+        {
+          "asset": "TAL1T",
+          "current_units": 1000.0,
+          "target_units": 1000.0,
+          "change": 0.0
+        },
+        {
+          "asset": "TKM1T",
+          "current_units": 288.0,
+          "target_units": 288.0,
+          "change": 0.0
+        },
+        {
+          "asset": "TSM1T",
+          "current_units": 330.0,
+          "target_units": 330.0,
+          "change": 0.0
+        },
+        {
+          "asset": "VLP1L",
+          "current_units": 140.0,
+          "target_units": 140.0,
+          "change": 0.0
+        },
+        {
+          "asset": "SE0014261764",
+          "current_units": 15.4759,
+          "target_units": 15.4759,
+          "change": 0.0
+        },
+        {
+          "asset": "US_PFE",
+          "current_units": 5.883,
+          "target_units": 5.883,
+          "change": 0.0
+        },
+        {
+          "asset": "US_NVDA",
+          "current_units": 2.814478,
+          "target_units": 2.814478,
+          "change": 0.0
+        }
+      ]
+    }
+  ],
+  "complete_models": 1,
+  "planned_models": 12,
+  "scope": "Only independently validated completed policies. Remaining models and integrated report are still being updated."
+}
