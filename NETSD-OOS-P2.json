@@ -1,8 +1,8 @@
 {
-  "state": "running",
+  "state": "waiting_for_surviving_case_workers",
   "completed_cases": 1,
   "total_cases": 24,
-  "fitted_grid_settings": 1185,
+  "fitted_grid_settings": 1204,
   "total_grid_settings": 9600,
   "checked_model_cases": 5,
   "source_market_endpoint": "2026-11-17",
@@ -13,7 +13,7 @@
       "base_model": "STOCHASTIC2",
       "policy": "SALE",
       "complete": false,
-      "stochastic_grid_points": 100,
+      "stochastic_grid_points": 0,
       "phase": "stochastic_policy_search",
       "results": {
         "archive": {
@@ -26918,7 +26918,7 @@
       "base_model": "stoch2A",
       "policy": "SALE",
       "complete": false,
-      "stochastic_grid_points": 26,
+      "stochastic_grid_points": 84,
       "phase": "stochastic_policy_search",
       "results": {
         "archive": {
@@ -33308,7 +33308,7 @@
       "base_model": "stoch2A",
       "policy": "NO_SALE",
       "complete": false,
-      "stochastic_grid_points": 59,
+      "stochastic_grid_points": 120,
       "phase": "stochastic_policy_search",
       "results": {
         "archive": {
