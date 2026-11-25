@@ -107,6 +107,9 @@
     const direct=chapterThreeFragments.test(location.pathname);
     for(const table of document.querySelectorAll('table')){
       if(!direct&&!table.closest('#analytics-3'))continue;
+      // The scientific chapter's compact schemas already fit their container.
+      // Retain their intentional row/column orientation at every viewport.
+      if(table.classList.contains('c3-compact'))continue;
       if(table.style.display==='none'||(table.hidden&&!table.dataset.chapter3Source)){
         const view=chapterThreeState.get(table);if(view)view.group.hidden=true;continue;
       }
