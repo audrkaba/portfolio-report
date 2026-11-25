@@ -1,6 +1,6 @@
 {
-  "model_run": "20261123_us_close",
-  "input_hash": "936f61c1651acc82a8b4da981a42a169e5f989b8accdd496d3baa59ce8a0d5b6",
+  "model_run": "20261124_us_close",
+  "input_hash": "ee42477e8809929596945ca6d3fa65c94831d4eb809b1346101356f79a6de85c",
   "sales_policy": {
     "version": "US_SALES_ALWAYS_V1",
     "us_sales_always_allowed": true,
@@ -19,7 +19,7 @@
     "TAL1T": 1000,
     "ROE1L": 700,
     "TSM1T": 330,
-    "SE0014261764": 11.2672,
+    "SE0014261764": 15.4759,
     "US_PFE": 5.883,
     "US_NVDA": 2.814478,
     "AKO1L": 150

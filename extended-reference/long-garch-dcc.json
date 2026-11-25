@@ -931,7 +931,7 @@
       "last_training_sigma_pct": 1.3514953136081895,
       "next_training_sigma_pct": 1.3142865263986716,
       "latest_filtered_sigma_pct": 1.665539272756702,
-      "next_session_sigma_pct": 1.5400432696542683,
+      "next_session_sigma_pct": 1.5527041310067875,
       "parameters_estimated": 3,
       "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
     },
@@ -948,7 +948,7 @@
       "last_training_sigma_pct": 1.3413363650616408,
       "next_training_sigma_pct": 1.3083061323061995,
       "latest_filtered_sigma_pct": 1.6712871043429829,
-      "next_session_sigma_pct": 1.5407695229538803,
+      "next_session_sigma_pct": 1.5431196410992551,
       "parameters_estimated": 3,
       "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
     },
@@ -965,7 +965,7 @@
       "last_training_sigma_pct": 0.5320915638368892,
       "next_training_sigma_pct": 0.5393971966111527,
       "latest_filtered_sigma_pct": 0.8712137003708612,
-      "next_session_sigma_pct": 0.8141978355572497,
+      "next_session_sigma_pct": 0.9161018883854282,
       "parameters_estimated": 3,
       "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
     },
@@ -982,7 +982,7 @@
       "last_training_sigma_pct": 1.4551751382152154,
       "next_training_sigma_pct": 1.4452716202793225,
       "latest_filtered_sigma_pct": 3.0135349271774374,
-      "next_session_sigma_pct": 2.856194764095744,
+      "next_session_sigma_pct": 3.5768108026111527,
       "parameters_estimated": 3,
       "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
     },
@@ -999,7 +999,7 @@
       "last_training_sigma_pct": 0.7850365737834561,
       "next_training_sigma_pct": 0.7930176617050025,
       "latest_filtered_sigma_pct": 1.025368855063809,
-      "next_session_sigma_pct": 0.9556418119771402,
+      "next_session_sigma_pct": 1.1343173502752573,
       "parameters_estimated": 3,
       "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
     },
@@ -1016,7 +1016,7 @@
       "last_training_sigma_pct": 0.8672811867691935,
       "next_training_sigma_pct": 0.8447853934203085,
       "latest_filtered_sigma_pct": 1.286464264627505,
-      "next_session_sigma_pct": 1.2161995647487378,
+      "next_session_sigma_pct": 1.4655692017250233,
       "parameters_estimated": 3,
       "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
     },
@@ -1033,7 +1033,7 @@
       "last_training_sigma_pct": 0.8382868005989516,
       "next_training_sigma_pct": 0.8410428854316282,
       "latest_filtered_sigma_pct": 0.9953837126851169,
-      "next_session_sigma_pct": 0.9705256501238056,
+      "next_session_sigma_pct": 1.0466831921073478,
       "parameters_estimated": 3,
       "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
     },
@@ -1050,7 +1050,7 @@
       "last_training_sigma_pct": 0.3098926504782478,
       "next_training_sigma_pct": 0.3006667388142651,
       "latest_filtered_sigma_pct": 0.46431271558052734,
-      "next_session_sigma_pct": 0.44386104893460093,
+      "next_session_sigma_pct": 0.5681817453068388,
       "parameters_estimated": 3,
       "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
     },
@@ -1067,7 +1067,7 @@
       "last_training_sigma_pct": 0.7880498473114685,
       "next_training_sigma_pct": 0.7678411417396426,
       "latest_filtered_sigma_pct": 1.5266643607644559,
-      "next_session_sigma_pct": 1.4390558916778902,
+      "next_session_sigma_pct": 1.8270848690512622,
       "parameters_estimated": 3,
       "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
     },
@@ -1084,7 +1084,7 @@
       "last_training_sigma_pct": 0.5208369443578812,
       "next_training_sigma_pct": 0.5066914532301426,
       "latest_filtered_sigma_pct": 0.9105641287935714,
-      "next_session_sigma_pct": 0.8653690438633599,
+      "next_session_sigma_pct": 1.090012454574441,
       "parameters_estimated": 3,
       "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
     },
@@ -1101,7 +1101,7 @@
       "last_training_sigma_pct": 1.2602797734431892,
       "next_training_sigma_pct": 1.26082164991616,
       "latest_filtered_sigma_pct": 1.1952269504717985,
-      "next_session_sigma_pct": 1.159319679719786,
+      "next_session_sigma_pct": 1.3340849812785531,
       "parameters_estimated": 3,
       "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
     },
@@ -1118,7 +1118,7 @@
       "last_training_sigma_pct": 0.7150440650377776,
       "next_training_sigma_pct": 0.7102276324486083,
       "latest_filtered_sigma_pct": 1.7331033397445152,
-      "next_session_sigma_pct": 1.6159956769017696,
+      "next_session_sigma_pct": 2.382027857013323,
       "parameters_estimated": 3,
       "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
     },
@@ -1135,7 +1135,7 @@
       "last_training_sigma_pct": 0.7701544488803779,
       "next_training_sigma_pct": 0.7664028254540289,
       "latest_filtered_sigma_pct": 1.0852209038124192,
-      "next_session_sigma_pct": 1.0169560367946384,
+      "next_session_sigma_pct": 1.1812652887124868,
       "parameters_estimated": 3,
       "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
     },
@@ -1152,7 +1152,7 @@
       "last_training_sigma_pct": 0.6513493730358483,
       "next_training_sigma_pct": 0.6380054660180307,
       "latest_filtered_sigma_pct": 1.4774382177140772,
-      "next_session_sigma_pct": 1.3798007297583912,
+      "next_session_sigma_pct": 1.9281189295668153,
       "parameters_estimated": 3,
       "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
     },
@@ -1169,7 +1169,7 @@
       "last_training_sigma_pct": 0.11207693807431704,
       "next_training_sigma_pct": 0.10454263472193148,
       "latest_filtered_sigma_pct": 0.20848695006886642,
-      "next_session_sigma_pct": 0.1891092302676741,
+      "next_session_sigma_pct": 0.19652647405317436,
       "parameters_estimated": 3,
       "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
     },
@@ -1186,7 +1186,7 @@
       "last_training_sigma_pct": 0.23748795043681878,
       "next_training_sigma_pct": 0.23211562061817145,
       "latest_filtered_sigma_pct": 0.1538130581194703,
-      "next_session_sigma_pct": 0.1500576407448085,
+      "next_session_sigma_pct": 0.1529570709550466,
       "parameters_estimated": 3,
       "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
     },
@@ -1983,8 +1983,8 @@
     "optimizer_message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
     "pairs": 6670,
     "observations": 1101,
-    "CPU_seconds": 0.006220299997949041,
-    "GPU_seconds": 0.0057948999965447,
+    "CPU_seconds": 0.006240599999955521,
+    "GPU_seconds": 0.004424400000061723,
     "backend": "CUDA float64",
     "GPU_error": null,
     "CPU_GPU_verified": true,
@@ -3219,10 +3219,10 @@
     ],
     "regime_counts": {
       "FULL": 1101,
-      "R2": 23,
-      "R4": 55,
+      "R4": 56,
       "R3": 183,
-      "R1": 798
+      "R1": 798,
+      "R2": 22
     },
     "estimator": "Pairwise Gaussian composite likelihood DCC(1,1); full-training GARCH residuals; Ledoit-Wolf covariance target; regime summaries condition the fitted full chronological path, not concatenated regime episodes",
     "asset_indices": [

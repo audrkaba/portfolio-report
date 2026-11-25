@@ -1,6 +1,6 @@
 {
   "asof": "2026-11-23",
-  "started_at_UTC": "2026-11-24T06:55:16.836326+00:00",
+  "started_at_UTC": "2026-11-25T08:04:50.522280+00:00",
   "CPU_workers": 30,
   "GPU_available": true,
   "GPU_error": null,
@@ -1482,7 +1482,7 @@
           "US": false,
           "main_model_input": true,
           "allocation_universe": true,
-          "last_date": "2026-11-20",
+          "last_date": "2026-11-23",
           "garch": {
             "available": true,
             "mean_daily": 0.0004386411688515789,
@@ -1496,7 +1496,7 @@
             "last_training_sigma_pct": 1.3514953136081895,
             "next_training_sigma_pct": 1.3142865263986716,
             "latest_filtered_sigma_pct": 1.665539272756702,
-            "next_session_sigma_pct": 1.5400432696542683,
+            "next_session_sigma_pct": 1.5527041310067875,
             "parameters_estimated": 3,
             "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
           }
@@ -1509,7 +1509,7 @@
           "US": false,
           "main_model_input": true,
           "allocation_universe": true,
-          "last_date": "2026-11-20",
+          "last_date": "2026-11-23",
           "garch": {
             "available": true,
             "mean_daily": 0.00044948027497868255,
@@ -1523,7 +1523,7 @@
             "last_training_sigma_pct": 1.3413363650616408,
             "next_training_sigma_pct": 1.3083061323061995,
             "latest_filtered_sigma_pct": 1.6712871043429829,
-            "next_session_sigma_pct": 1.5407695229538803,
+            "next_session_sigma_pct": 1.5431196410992551,
             "parameters_estimated": 3,
             "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
           }
@@ -1536,7 +1536,7 @@
           "US": false,
           "main_model_input": true,
           "allocation_universe": true,
-          "last_date": "2026-11-20",
+          "last_date": "2026-11-23",
           "garch": {
             "available": true,
             "mean_daily": 0.00039341831032271553,
@@ -1550,7 +1550,7 @@
             "last_training_sigma_pct": 0.5320915638368892,
             "next_training_sigma_pct": 0.5393971966111527,
             "latest_filtered_sigma_pct": 0.8712137003708612,
-            "next_session_sigma_pct": 0.8141978355572497,
+            "next_session_sigma_pct": 0.9161018883854282,
             "parameters_estimated": 3,
             "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
           }
@@ -1563,7 +1563,7 @@
           "US": false,
           "main_model_input": true,
           "allocation_universe": true,
-          "last_date": "2026-11-20",
+          "last_date": "2026-11-23",
           "garch": {
             "available": true,
             "mean_daily": 0.0008443481503284971,
@@ -1577,7 +1577,7 @@
             "last_training_sigma_pct": 1.4551751382152154,
             "next_training_sigma_pct": 1.4452716202793225,
             "latest_filtered_sigma_pct": 3.0135349271774374,
-            "next_session_sigma_pct": 2.856194764095744,
+            "next_session_sigma_pct": 3.5768108026111527,
             "parameters_estimated": 3,
             "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
           }
@@ -1590,7 +1590,7 @@
           "US": false,
           "main_model_input": true,
           "allocation_universe": true,
-          "last_date": "2026-11-20",
+          "last_date": "2026-11-23",
           "garch": {
             "available": true,
             "mean_daily": 0.00011557871407302088,
@@ -1604,7 +1604,7 @@
             "last_training_sigma_pct": 0.7850365737834561,
             "next_training_sigma_pct": 0.7930176617050025,
             "latest_filtered_sigma_pct": 1.025368855063809,
-            "next_session_sigma_pct": 0.9556418119771402,
+            "next_session_sigma_pct": 1.1343173502752573,
             "parameters_estimated": 3,
             "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
           }
@@ -1617,7 +1617,7 @@
           "US": false,
           "main_model_input": true,
           "allocation_universe": true,
-          "last_date": "2026-11-20",
+          "last_date": "2026-11-23",
           "garch": {
             "available": true,
             "mean_daily": 0.00039678049031071413,
@@ -1631,7 +1631,7 @@
             "last_training_sigma_pct": 0.8672811867691935,
             "next_training_sigma_pct": 0.8447853934203085,
             "latest_filtered_sigma_pct": 1.286464264627505,
-            "next_session_sigma_pct": 1.2161995647487378,
+            "next_session_sigma_pct": 1.4655692017250233,
             "parameters_estimated": 3,
             "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
           }
@@ -1644,7 +1644,7 @@
           "US": false,
           "main_model_input": true,
           "allocation_universe": true,
-          "last_date": "2026-11-20",
+          "last_date": "2026-11-23",
           "garch": {
             "available": true,
             "mean_daily": -9.454123230991695e-05,
@@ -1658,7 +1658,7 @@
             "last_training_sigma_pct": 0.8382868005989516,
             "next_training_sigma_pct": 0.8410428854316282,
             "latest_filtered_sigma_pct": 0.9953837126851169,
-            "next_session_sigma_pct": 0.9705256501238056,
+            "next_session_sigma_pct": 1.0466831921073478,
             "parameters_estimated": 3,
             "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
           }
@@ -1671,7 +1671,7 @@
           "US": false,
           "main_model_input": true,
           "allocation_universe": true,
-          "last_date": "2026-11-20",
+          "last_date": "2026-11-23",
           "garch": {
             "available": true,
             "mean_daily": 0.00010582841620329038,
@@ -1685,7 +1685,7 @@
             "last_training_sigma_pct": 0.3098926504782478,
             "next_training_sigma_pct": 0.3006667388142651,
             "latest_filtered_sigma_pct": 0.46431271558052734,
-            "next_session_sigma_pct": 0.44386104893460093,
+            "next_session_sigma_pct": 0.5681817453068388,
             "parameters_estimated": 3,
             "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
           }
@@ -1698,7 +1698,7 @@
           "US": false,
           "main_model_input": true,
           "allocation_universe": true,
-          "last_date": "2026-11-20",
+          "last_date": "2026-11-23",
           "garch": {
             "available": true,
             "mean_daily": 0.00034602136008956327,
@@ -1712,7 +1712,7 @@
             "last_training_sigma_pct": 0.7880498473114685,
             "next_training_sigma_pct": 0.7678411417396426,
             "latest_filtered_sigma_pct": 1.5266643607644559,
-            "next_session_sigma_pct": 1.4390558916778902,
+            "next_session_sigma_pct": 1.8270848690512622,
             "parameters_estimated": 3,
             "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
           }
@@ -1725,7 +1725,7 @@
           "US": false,
           "main_model_input": true,
           "allocation_universe": true,
-          "last_date": "2026-11-20",
+          "last_date": "2026-11-23",
           "garch": {
             "available": true,
             "mean_daily": 0.0002072271032925237,
@@ -1739,7 +1739,7 @@
             "last_training_sigma_pct": 0.5208369443578812,
             "next_training_sigma_pct": 0.5066914532301426,
             "latest_filtered_sigma_pct": 0.9105641287935714,
-            "next_session_sigma_pct": 0.8653690438633599,
+            "next_session_sigma_pct": 1.090012454574441,
             "parameters_estimated": 3,
             "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
           }
@@ -1752,7 +1752,7 @@
           "US": false,
           "main_model_input": true,
           "allocation_universe": true,
-          "last_date": "2026-11-20",
+          "last_date": "2026-11-23",
           "garch": {
             "available": true,
             "mean_daily": 0.0002771947808669018,
@@ -1766,7 +1766,7 @@
             "last_training_sigma_pct": 1.2602797734431892,
             "next_training_sigma_pct": 1.26082164991616,
             "latest_filtered_sigma_pct": 1.1952269504717985,
-            "next_session_sigma_pct": 1.159319679719786,
+            "next_session_sigma_pct": 1.3340849812785531,
             "parameters_estimated": 3,
             "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
           }
@@ -1779,7 +1779,7 @@
           "US": false,
           "main_model_input": true,
           "allocation_universe": true,
-          "last_date": "2026-11-20",
+          "last_date": "2026-11-23",
           "garch": {
             "available": true,
             "mean_daily": 0.00046781088992654216,
@@ -1793,7 +1793,7 @@
             "last_training_sigma_pct": 0.7150440650377776,
             "next_training_sigma_pct": 0.7102276324486083,
             "latest_filtered_sigma_pct": 1.7331033397445152,
-            "next_session_sigma_pct": 1.6159956769017696,
+            "next_session_sigma_pct": 2.382027857013323,
             "parameters_estimated": 3,
             "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
           }
@@ -1806,7 +1806,7 @@
           "US": false,
           "main_model_input": true,
           "allocation_universe": true,
-          "last_date": "2026-11-20",
+          "last_date": "2026-11-23",
           "garch": {
             "available": true,
             "mean_daily": 0.0003654842322468408,
@@ -1820,7 +1820,7 @@
             "last_training_sigma_pct": 0.7701544488803779,
             "next_training_sigma_pct": 0.7664028254540289,
             "latest_filtered_sigma_pct": 1.0852209038124192,
-            "next_session_sigma_pct": 1.0169560367946384,
+            "next_session_sigma_pct": 1.1812652887124868,
             "parameters_estimated": 3,
             "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
           }
@@ -1833,7 +1833,7 @@
           "US": false,
           "main_model_input": true,
           "allocation_universe": true,
-          "last_date": "2026-11-20",
+          "last_date": "2026-11-23",
           "garch": {
             "available": true,
             "mean_daily": 0.00043168744060319086,
@@ -1847,7 +1847,7 @@
             "last_training_sigma_pct": 0.6513493730358483,
             "next_training_sigma_pct": 0.6380054660180307,
             "latest_filtered_sigma_pct": 1.4774382177140772,
-            "next_session_sigma_pct": 1.3798007297583912,
+            "next_session_sigma_pct": 1.9281189295668153,
             "parameters_estimated": 3,
             "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
           }
@@ -1860,7 +1860,7 @@
           "US": false,
           "main_model_input": true,
           "allocation_universe": true,
-          "last_date": "2026-11-20",
+          "last_date": "2026-11-23",
           "garch": {
             "available": true,
             "mean_daily": 0.00013314702393513628,
@@ -1874,7 +1874,7 @@
             "last_training_sigma_pct": 0.11207693807431704,
             "next_training_sigma_pct": 0.10454263472193148,
             "latest_filtered_sigma_pct": 0.20848695006886642,
-            "next_session_sigma_pct": 0.1891092302676741,
+            "next_session_sigma_pct": 0.19652647405317436,
             "parameters_estimated": 3,
             "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
           }
@@ -1887,7 +1887,7 @@
           "US": false,
           "main_model_input": true,
           "allocation_universe": true,
-          "last_date": "2026-11-20",
+          "last_date": "2026-11-23",
           "garch": {
             "available": true,
             "mean_daily": 2.3759030076811187e-05,
@@ -1901,7 +1901,7 @@
             "last_training_sigma_pct": 0.23748795043681878,
             "next_training_sigma_pct": 0.23211562061817145,
             "latest_filtered_sigma_pct": 0.1538130581194703,
-            "next_session_sigma_pct": 0.1500576407448085,
+            "next_session_sigma_pct": 0.1529570709550466,
             "parameters_estimated": 3,
             "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
           }
@@ -3448,7 +3448,7 @@
         },
         "R2": {
           "available": true,
-          "observations": 23,
+          "observations": 22,
           "reference_assets": 116,
           "train_start": "2022-01-20",
           "train_end": "2026-05-28",
@@ -3468,7 +3468,7 @@
         },
         "R4": {
           "available": true,
-          "observations": 55,
+          "observations": 56,
           "reference_assets": 116,
           "train_start": "2022-01-20",
           "train_end": "2026-05-28",
@@ -3496,17 +3496,17 @@
         "optimizer_message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
         "pairs": 6670,
         "observations": 1101,
-        "CPU_seconds": 0.006220299997949041,
-        "GPU_seconds": 0.0057948999965447,
+        "CPU_seconds": 0.006240599999955521,
+        "GPU_seconds": 0.004424400000061723,
         "backend": "CUDA float64",
         "GPU_error": null,
         "CPU_GPU_verified": true,
         "regime_counts": {
           "FULL": 1101,
-          "R2": 23,
-          "R4": 55,
+          "R4": 56,
           "R3": 183,
-          "R1": 798
+          "R1": 798,
+          "R2": 22
         },
         "estimator": "Pairwise Gaussian composite likelihood DCC(1,1); full-training GARCH residuals; Ledoit-Wolf covariance target; regime summaries condition the fitted full chronological path, not concatenated regime episodes",
         "asset_indices": [
@@ -5097,7 +5097,7 @@
           "US": false,
           "main_model_input": true,
           "allocation_universe": true,
-          "last_date": "2026-11-20",
+          "last_date": "2026-11-23",
           "garch": {
             "available": true,
             "mean_daily": 0.0009964208114872123,
@@ -5111,7 +5111,7 @@
             "last_training_sigma_pct": 1.3970700315896387,
             "next_training_sigma_pct": 1.3311346004800553,
             "latest_filtered_sigma_pct": 1.9885047259424036,
-            "next_session_sigma_pct": 1.672609298865404,
+            "next_session_sigma_pct": 1.6914560338494529,
             "parameters_estimated": 3,
             "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
           }
@@ -5124,7 +5124,7 @@
           "US": false,
           "main_model_input": true,
           "allocation_universe": true,
-          "last_date": "2026-11-20",
+          "last_date": "2026-11-23",
           "garch": {
             "available": true,
             "mean_daily": 0.0010518493072455477,
@@ -5138,7 +5138,7 @@
             "last_training_sigma_pct": 1.3263110558520195,
             "next_training_sigma_pct": 1.2914627948072581,
             "latest_filtered_sigma_pct": 1.8920241429631135,
-            "next_session_sigma_pct": 1.6243852187205168,
+            "next_session_sigma_pct": 1.6259800823073545,
             "parameters_estimated": 3,
             "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
           }
@@ -5151,7 +5151,7 @@
           "US": false,
           "main_model_input": true,
           "allocation_universe": true,
-          "last_date": "2026-11-20",
+          "last_date": "2026-11-23",
           "garch": {
             "available": true,
             "mean_daily": 0.0005073414970199773,
@@ -5165,7 +5165,7 @@
             "last_training_sigma_pct": 0.5329944581506644,
             "next_training_sigma_pct": 0.5469199251900358,
             "latest_filtered_sigma_pct": 0.9016283808889606,
-            "next_session_sigma_pct": 0.8049982683363486,
+            "next_session_sigma_pct": 0.93827580894361,
             "parameters_estimated": 3,
             "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
           }
@@ -5178,7 +5178,7 @@
           "US": false,
           "main_model_input": true,
           "allocation_universe": true,
-          "last_date": "2026-11-20",
+          "last_date": "2026-11-23",
           "garch": {
             "available": true,
             "mean_daily": 0.0010149454529472938,
@@ -5192,7 +5192,7 @@
             "last_training_sigma_pct": 1.5028808686216737,
             "next_training_sigma_pct": 1.4840665860989335,
             "latest_filtered_sigma_pct": 3.1303654917918826,
-            "next_session_sigma_pct": 2.815241106199318,
+            "next_session_sigma_pct": 3.8737970761025404,
             "parameters_estimated": 3,
             "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
           }
@@ -5205,7 +5205,7 @@
           "US": false,
           "main_model_input": true,
           "allocation_universe": true,
-          "last_date": "2026-11-20",
+          "last_date": "2026-11-23",
           "garch": {
             "available": true,
             "mean_daily": -0.00011191707866150958,
@@ -5219,7 +5219,7 @@
             "last_training_sigma_pct": 0.7813324287546771,
             "next_training_sigma_pct": 0.8124273280831825,
             "latest_filtered_sigma_pct": 1.0226220337492509,
-            "next_session_sigma_pct": 0.8920166305119007,
+            "next_session_sigma_pct": 1.2001897245148723,
             "parameters_estimated": 3,
             "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
           }
@@ -5232,7 +5232,7 @@
           "US": false,
           "main_model_input": true,
           "allocation_universe": true,
-          "last_date": "2026-11-20",
+          "last_date": "2026-11-23",
           "garch": {
             "available": true,
             "mean_daily": 0.0005323012294584343,
@@ -5246,7 +5246,7 @@
             "last_training_sigma_pct": 0.8747639736099595,
             "next_training_sigma_pct": 0.8395094150062009,
             "latest_filtered_sigma_pct": 1.40054594507461,
-            "next_session_sigma_pct": 1.2733590899133092,
+            "next_session_sigma_pct": 1.6027480896538595,
             "parameters_estimated": 3,
             "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
           }
@@ -5259,7 +5259,7 @@
           "US": false,
           "main_model_input": true,
           "allocation_universe": true,
-          "last_date": "2026-11-20",
+          "last_date": "2026-11-23",
           "garch": {
             "available": true,
             "mean_daily": 3.935372446467487e-05,
@@ -5273,7 +5273,7 @@
             "last_training_sigma_pct": 0.7424455570394077,
             "next_training_sigma_pct": 0.7934452082850613,
             "latest_filtered_sigma_pct": 1.0539525532754033,
-            "next_session_sigma_pct": 0.9336429545186946,
+            "next_session_sigma_pct": 1.1256063712910624,
             "parameters_estimated": 3,
             "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
           }
@@ -5286,7 +5286,7 @@
           "US": false,
           "main_model_input": true,
           "allocation_universe": true,
-          "last_date": "2026-11-20",
+          "last_date": "2026-11-23",
           "garch": {
             "available": true,
             "mean_daily": 0.00024372706875083617,
@@ -5300,7 +5300,7 @@
             "last_training_sigma_pct": 0.28724060582549626,
             "next_training_sigma_pct": 0.2741756766400285,
             "latest_filtered_sigma_pct": 0.4968037506420805,
-            "next_session_sigma_pct": 0.4459758270244648,
+            "next_session_sigma_pct": 0.6288124586888708,
             "parameters_estimated": 3,
             "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
           }
@@ -5313,7 +5313,7 @@
           "US": false,
           "main_model_input": true,
           "allocation_universe": true,
-          "last_date": "2026-11-20",
+          "last_date": "2026-11-23",
           "garch": {
             "available": true,
             "mean_daily": 0.0005433575441964138,
@@ -5327,7 +5327,7 @@
             "last_training_sigma_pct": 0.7771155940400625,
             "next_training_sigma_pct": 0.749656053889881,
             "latest_filtered_sigma_pct": 1.628527208988307,
-            "next_session_sigma_pct": 1.456805265124133,
+            "next_session_sigma_pct": 1.983511860744889,
             "parameters_estimated": 3,
             "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
           }
@@ -5340,7 +5340,7 @@
           "US": false,
           "main_model_input": true,
           "allocation_universe": true,
-          "last_date": "2026-11-20",
+          "last_date": "2026-11-23",
           "garch": {
             "available": true,
             "mean_daily": 0.0003734372680463609,
@@ -5354,7 +5354,7 @@
             "last_training_sigma_pct": 0.5086869110432924,
             "next_training_sigma_pct": 0.4880872319483064,
             "latest_filtered_sigma_pct": 0.9622037612044494,
-            "next_session_sigma_pct": 0.8642785724372826,
+            "next_session_sigma_pct": 1.1772057395273268,
             "parameters_estimated": 3,
             "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
           }
@@ -5367,7 +5367,7 @@
           "US": false,
           "main_model_input": true,
           "allocation_universe": true,
-          "last_date": "2026-11-20",
+          "last_date": "2026-11-23",
           "garch": {
             "available": true,
             "mean_daily": 0.0005790033742681874,
@@ -5381,7 +5381,7 @@
             "last_training_sigma_pct": 1.1374576965616334,
             "next_training_sigma_pct": 1.160860093992602,
             "latest_filtered_sigma_pct": 1.3983887775586883,
-            "next_session_sigma_pct": 1.271004711035466,
+            "next_session_sigma_pct": 1.5723977124808841,
             "parameters_estimated": 3,
             "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
           }
@@ -5394,7 +5394,7 @@
           "US": false,
           "main_model_input": true,
           "allocation_universe": true,
-          "last_date": "2026-11-20",
+          "last_date": "2026-11-23",
           "garch": {
             "available": true,
             "mean_daily": 0.0006056641800014996,
@@ -5408,7 +5408,7 @@
             "last_training_sigma_pct": 0.7074530888997789,
             "next_training_sigma_pct": 0.707444117050349,
             "latest_filtered_sigma_pct": 1.8950747616715282,
-            "next_session_sigma_pct": 1.6673134048076532,
+            "next_session_sigma_pct": 2.7309368588946086,
             "parameters_estimated": 3,
             "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
           }
@@ -5421,7 +5421,7 @@
           "US": false,
           "main_model_input": true,
           "allocation_universe": true,
-          "last_date": "2026-11-20",
+          "last_date": "2026-11-23",
           "garch": {
             "available": true,
             "mean_daily": 0.0005132592225600737,
@@ -5435,7 +5435,7 @@
             "last_training_sigma_pct": 0.6792679564438403,
             "next_training_sigma_pct": 0.7042537299210362,
             "latest_filtered_sigma_pct": 1.163370346316761,
-            "next_session_sigma_pct": 1.020414911250477,
+            "next_session_sigma_pct": 1.2644961086001387,
             "parameters_estimated": 3,
             "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
           }
@@ -5448,7 +5448,7 @@
           "US": false,
           "main_model_input": true,
           "allocation_universe": true,
-          "last_date": "2026-11-20",
+          "last_date": "2026-11-23",
           "garch": {
             "available": true,
             "mean_daily": 0.000561894667725405,
@@ -5462,7 +5462,7 @@
             "last_training_sigma_pct": 0.6476860604066325,
             "next_training_sigma_pct": 0.6341536660978386,
             "latest_filtered_sigma_pct": 1.5909698314002159,
-            "next_session_sigma_pct": 1.4078398294045875,
+            "next_session_sigma_pct": 2.135069252492399,
             "parameters_estimated": 3,
             "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
           }
@@ -5475,7 +5475,7 @@
           "US": false,
           "main_model_input": true,
           "allocation_universe": true,
-          "last_date": "2026-11-20",
+          "last_date": "2026-11-23",
           "garch": {
             "available": true,
             "mean_daily": 0.00023516532447961013,
@@ -5489,7 +5489,7 @@
             "last_training_sigma_pct": 0.1043032982461749,
             "next_training_sigma_pct": 0.08865512783890316,
             "latest_filtered_sigma_pct": 0.21885589921012985,
-            "next_session_sigma_pct": 0.16732516535114436,
+            "next_session_sigma_pct": 0.18095291097466298,
             "parameters_estimated": 3,
             "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
           }
@@ -5502,7 +5502,7 @@
           "US": false,
           "main_model_input": true,
           "allocation_universe": true,
-          "last_date": "2026-11-20",
+          "last_date": "2026-11-23",
           "garch": {
             "available": true,
             "mean_daily": 0.00015677303066011954,
@@ -5516,7 +5516,7 @@
             "last_training_sigma_pct": 0.20546816392221193,
             "next_training_sigma_pct": 0.1971203186671279,
             "latest_filtered_sigma_pct": 0.14069748550956163,
-            "next_session_sigma_pct": 0.13537653539172034,
+            "next_session_sigma_pct": 0.1394273169029224,
             "parameters_estimated": 3,
             "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
           }
@@ -7144,8 +7144,8 @@
         "optimizer_message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
         "pairs": 6786,
         "observations": 542,
-        "CPU_seconds": 0.0023233000028994866,
-        "GPU_seconds": 0.016192299997783266,
+        "CPU_seconds": 0.003142400000115231,
+        "GPU_seconds": 0.016234399999802918,
         "backend": "CPU48 Numba",
         "GPU_error": null,
         "CPU_GPU_verified": true,
@@ -7279,30 +7279,30 @@
       }
     }
   },
-  "completed_at_UTC": "2026-11-24T06:56:09.192536+00:00",
-  "elapsed_seconds": 52.353194799994526,
+  "completed_at_UTC": "2026-11-25T08:06:05.537990+00:00",
+  "elapsed_seconds": 75.0126429999998,
   "model_inputs_unchanged": true,
-  "sealed_model_input_hash": "936f61c1651acc82a8b4da981a42a169e5f989b8accdd496d3baa59ce8a0d5b6",
+  "sealed_model_input_hash": "ee42477e8809929596945ca6d3fa65c94831d4eb809b1346101356f79a6de85c",
   "sha256": {
-    "data/current_holdings.json": "17936f0c48919a214e5e0084d8c73014aad63a1d4a5e598ce554e2ab049554c8",
-    "data/investor_preferences.json": "c9183b967fe23281d2b6b2b283d6464aa33ff184d30378703f99e43bc1499db6",
-    "data/full_universe/share_prices.csv": "99e9311751819df50a4ad0041af1872e26107d6ce697362d204f8a7afc66834f",
-    "data/full_universe/fund_nav_eur.csv": "fd37ee6281df907478a72c4b2e554409e2ee9ff5d47117b8323ac3900c73e2fe",
+    "data/current_holdings.json": "8666982d3fa567ddfe6d2ec361a751296387fb1531484a6bad57649aa054a5cc",
+    "data/investor_preferences.json": "afa6e9b1fcae6b1e0e1a0bf4bcebf95483cdd6e3f14dbfa111222cfe76008b1d",
+    "data/full_universe/share_prices.csv": "aee1f83826a57ba3d793d2b9ff5eb3e308fb087a40c39b0b31c7a418b5102a53",
+    "data/full_universe/fund_nav_eur.csv": "e2b2cd7e98289c6e71290f708fcf157a582612742b6f35559e867c0a7ef13023",
     "data/long_history/asset_returns.csv": "a15e4456c5f98bbbd9a170f530cef87670586e3bfbe804dd17bed081bd98510f",
     "data/long_history/window.json": "d8c9f91fa676f331908c0aa8d8cc579c5cca2c81e81727ea40453f72b14fd1f7",
-    "data/full_universe/forecasts/manifest.json": "aaf13c90ac0ef3ca56f458cbe9da03bc83389cc830246bb89133480b9853b579",
-    "data/regime_conditional/20261106/manifest.json": "639a634703cb6faba6a8efa329dca4be50414d55a48e202c89d9da185aba371c",
-    "data/regime_conditional/20261106/tree.npz": "5b566a34b41f130d7c08793097aaf4103e015ac607a561d4788f07bd26410d13",
-    "data/weekly_multistage/tree.npz": "d2404294c3143a7d345b47f14f7dacb527051f678333c938964d0fd393832cf6",
+    "data/full_universe/forecasts/manifest.json": "201e20e8340a6c077623f5fa5054bc706e2e824340aeebd9e3dcf02c50b3fd6e",
+    "data/regime_conditional/20261106/manifest.json": "cec088e752c3b4b59ec444eefc1b8cbde5b0f79f629c021afe202ede80f94aab",
+    "data/regime_conditional/20261106/tree.npz": "1e23dfd441b5ba5b3ee1be68be5d8f6e87d9ed6f8600c1b41ce5ce02a681060d",
+    "data/weekly_multistage/tree.npz": "67a912cfefe076c78462253c8695407c424f1a4bdb9994075acec3f4f3225502",
     "R/terminal_netsd.py": "8bfcb80456fc1e8db3afb90e6683e188909b013a6ea6b743550b939a5de73792",
     "R/terminal_policy_engine.py": "1cfd3eac1330d77caa8b54c289bf540f8c5f4846b2f88457093edccd500f3a72",
-    "R/prepare_corrected_inputs.py": "3a703fe68b684d110b9835ccbe7e802e1de533994947aa633794d96dc0ed1a8a",
+    "R/prepare_corrected_inputs.py": "92f9caac6787ac77f9c5c34a17130bd36ccaa48324009c2673e078f02deccfdb",
     "data/sector_limits/upper_exposure.csv": "6674de85a65632727614cc6621b724a2def53343d6738512087b64964a90f11c",
     "R/validate_corrected_policy.py": "1af9e004e53f332c40f8d23c68345b56d3748abf80dfcf3c7eacf074fdb6f3df",
-    "R/portfolio_validation_evaluate.py": "d1dc30aeea01062187151ebb634df18b9080139abeb9a3e05612557391d172df",
-    "data/corrected_models/20261123_us_close/constraint_policy.json": "3e0e26ede9d648008be2e294a8227b5908961d8eea1171881dc48e4e64df3441",
-    "data/corrected_models/20261123_us_close/context_weekly.npz": "c72e9166b4dc42b61a63d60f64282ebf191a1df5a078d82b8113935cfa26de56"
+    "R/portfolio_validation_evaluate.py": "368fa7e320453858bd72d2c7123e840ae3cc6b04b4e6c56bc0c1b3d42132c346",
+    "data/corrected_models/20261124_us_close/constraint_policy.json": "3e0e26ede9d648008be2e294a8227b5908961d8eea1171881dc48e4e64df3441",
+    "data/corrected_models/20261124_us_close/context_weekly.npz": "46d76af2471917a88962a781568e2d8033bb0b6d6a545b41fd021d133b0f10cd"
   },
-  "version": "b114d37777c1",
+  "version": "ed3bbce0d83f",
   "GFEVD_offdiag_colour_max": 19.585739
 }

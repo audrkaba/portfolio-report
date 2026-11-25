@@ -1,91 +1,91 @@
 {
-  "checked_at_UTC": "2026-11-23T21:15:02.240704+00:00",
-  "prepared_at_UTC": "2026-11-24T06:56:33.994997+00:00",
+  "checked_at_UTC": "2026-11-25T06:09:26.166739+00:00",
+  "prepared_at_UTC": "2026-11-25T08:06:29.850398+00:00",
   "quotes": {
     "AIR": {
-      "price": 1.88,
-      "date": "2026-11-23",
+      "price": 1.84,
+      "date": "2026-11-24",
       "name": "Airobot Technologies",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100092792/trading/chart_price_json",
-      "bollinger_lower": 1.78231326668763,
-      "bollinger_upper": 1.90968673331236
+      "bollinger_lower": 1.78159653006341,
+      "bollinger_upper": 1.90840346993659
     },
     "AKO1L": {
-      "price": 1.645,
-      "date": "2026-11-23",
+      "price": 1.665,
+      "date": "2026-11-24",
       "name": "Akola Group",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000128092/trading/chart_price_json",
-      "bollinger_lower": 1.64393149192214,
-      "bollinger_upper": 1.96056850807786
+      "bollinger_lower": 1.62567292197911,
+      "bollinger_upper": 1.9598270780209
     },
     "AMG1L": {
       "price": 1.21,
-      "date": "2026-11-23",
+      "date": "2026-11-24",
       "name": "Amber Grid",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000128696/trading/chart_price_json",
-      "bollinger_lower": 1.1819286924943,
-      "bollinger_upper": 1.22407130750571
+      "bollinger_lower": 1.18226323941841,
+      "bollinger_upper": 1.2247367605816
     },
     "APG1L": {
       "price": 3.88,
-      "date": "2026-11-23",
+      "date": "2026-11-24",
       "name": "Apranga",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000102337/trading/chart_price_json",
-      "bollinger_lower": 3.77553513416867,
-      "bollinger_upper": 3.89646486583132
+      "bollinger_lower": 3.78101050512905,
+      "bollinger_upper": 3.89998949487094
     },
     "ARC1T": {
       "price": 0.938,
-      "date": "2026-11-23",
+      "date": "2026-11-24",
       "name": "Arco Vara",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100034653/trading/chart_price_json",
-      "bollinger_lower": 0.899631478011773,
-      "bollinger_upper": 1.04096852198822
+      "bollinger_lower": 0.898655200795303,
+      "bollinger_upper": 1.03324479920469
     },
     "AUG1L": {
-      "price": 0.075,
-      "date": "2026-11-23",
+      "price": 0.0754,
+      "date": "2026-11-24",
       "name": "AUGA group",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000127466/trading/chart_price_json",
-      "bollinger_lower": 0.0662129403569744,
-      "bollinger_upper": 0.0915470596430281
+      "bollinger_lower": 0.0673800886079275,
+      "bollinger_upper": 0.091079911392075
     },
     "BAL1R": {
       "price": 0.65,
-      "date": "2026-11-23",
+      "date": "2026-11-24",
       "name": "Amber Latvijas balzams",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/LV0000100808/trading/chart_price_json",
-      "bollinger_lower": 0.596537290313473,
-      "bollinger_upper": 0.923662709686532
+      "bollinger_lower": 0.5840526398653,
+      "bollinger_upper": 0.918347360134705
     },
     "BERCM": {
-      "price": 0.4,
-      "date": "2026-11-23",
+      "price": 0.319,
+      "date": "2026-11-24",
       "name": "Bercman Technologies",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100076407/trading/chart_price_json",
-      "bollinger_lower": 0.56050981966087,
-      "bollinger_upper": 1.31409018033914
+      "bollinger_lower": 0.441827701183975,
+      "bollinger_upper": 1.36017229881604
     },
     "CPA1T": {
-      "price": 2.35,
-      "date": "2026-11-23",
+      "price": 2.355,
+      "date": "2026-11-24",
       "name": "Coop Pank",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100007857/trading/chart_price_json",
-      "bollinger_lower": 2.34866215136863,
-      "bollinger_upper": 2.41633784863138
+      "bollinger_lower": 2.34981445688925,
+      "bollinger_upper": 2.41568554311075
     },
     "CTS1L": {
       "price": 1.3,
-      "date": "2026-11-23",
+      "date": "2026-11-24",
       "name": "City Service",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100126368/trading/chart_price_json",
@@ -93,17 +93,17 @@
       "bollinger_upper": 1.29999999999999
     },
     "DGR1R": {
-      "price": 1.88,
-      "date": "2026-11-23",
+      "price": 1.875,
+      "date": "2026-11-24",
       "name": "DelfinGroup",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/LV0000101806/trading/chart_price_json",
-      "bollinger_lower": 1.65327732035232,
-      "bollinger_upper": 1.95522267964768
+      "bollinger_lower": 1.66237547071204,
+      "bollinger_upper": 1.96112452928796
     },
     "EFT1T": {
-      "price": 19.35,
-      "date": "2026-11-23",
+      "price": 19.4,
+      "date": "2026-11-24",
       "name": "EfTEN Real Estate Fund",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100127242/trading/chart_price_json",
@@ -111,89 +111,89 @@
       "bollinger_upper": 19.5846214264281
     },
     "EGG": {
-      "price": 7.1,
-      "date": "2026-11-23",
+      "price": 7.05,
+      "date": "2026-11-24",
       "name": "Agrova Baltics",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/LV0000101921/trading/chart_price_json",
-      "bollinger_lower": 7.07704003045259,
-      "bollinger_upper": 7.45795996954741
+      "bollinger_lower": 7.04881287918057,
+      "bollinger_upper": 7.47118712081943
     },
     "ELEVR": {
-      "price": 1.665,
-      "date": "2026-11-23",
+      "price": 1.6800000000000002,
+      "date": "2026-11-24",
       "name": "Eleving Group",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/LU2818110020/trading/chart_price_json",
-      "bollinger_lower": 1.64945835741812,
-      "bollinger_upper": 1.72154164258188
+      "bollinger_lower": 1.65055990970666,
+      "bollinger_upper": 1.72144009029334
     },
     "EWA1L": {
       "price": 10.7,
-      "date": "2026-11-23",
+      "date": "2026-11-24",
       "name": "East West Agro",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000132060/trading/chart_price_json",
-      "bollinger_lower": 10.444636050931,
-      "bollinger_upper": 11.475363949069
+      "bollinger_lower": 10.4569665238884,
+      "bollinger_upper": 11.3830334761116
     },
     "GRB2G": {
-      "price": 0.05,
-      "date": "2026-11-23",
+      "price": 0.047,
+      "date": "2026-11-24",
       "name": "Grab2Go",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100107194/trading/chart_price_json",
-      "bollinger_lower": 0.02430656081434,
-      "bollinger_upper": 0.0636434391856597
+      "bollinger_lower": 0.0247028823772762,
+      "bollinger_upper": 0.0639471176227234
     },
     "GRG1L": {
-      "price": 0.92,
-      "date": "2026-11-23",
+      "price": 0.936,
+      "date": "2026-11-24",
       "name": "Grigeo Group",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000102030/trading/chart_price_json",
-      "bollinger_lower": 0.876343328538047,
-      "bollinger_upper": 1.04085667146196
+      "bollinger_lower": 0.875211836398378,
+      "bollinger_upper": 1.03508816360163
     },
     "HAE1T": {
-      "price": 5.02,
-      "date": "2026-11-23",
+      "price": 4.96,
+      "date": "2026-11-24",
       "name": "Harju Elekter Group",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100004250/trading/chart_price_json",
-      "bollinger_lower": 5.05200000000001,
-      "bollinger_upper": 5.26000000000001
+      "bollinger_lower": 5.01431288240391,
+      "bollinger_upper": 5.26968711759611
     },
     "HPR1T": {
       "price": 4.34,
-      "date": "2026-11-23",
+      "date": "2026-11-24",
       "name": "Hepsor",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100082306/trading/chart_price_json",
-      "bollinger_lower": 4.1696778378566,
-      "bollinger_upper": 4.41832216214332
+      "bollinger_lower": 4.16954084329946,
+      "bollinger_upper": 4.42045915670046
     },
     "IDX1R": {
       "price": 2.6,
-      "date": "2026-11-23",
+      "date": "2026-11-24",
       "name": "INDEXO",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/LV0000113751/trading/chart_price_json",
-      "bollinger_lower": 2.60050167787124,
-      "bollinger_upper": 2.74949832212876
+      "bollinger_lower": 2.59007078623076,
+      "bollinger_upper": 2.74892921376924
     },
     "IGN1L": {
-      "price": 21.95,
-      "date": "2026-11-23",
+      "price": 21.9,
+      "date": "2026-11-24",
       "name": "Ignitis grupė",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000115768/trading/chart_price_json",
-      "bollinger_lower": 21.2213755785733,
-      "bollinger_upper": 22.3286244214266
+      "bollinger_lower": 21.239909098421,
+      "bollinger_upper": 22.340090901579
     },
     "IGR1R": {
-      "price": 1.525,
-      "date": "2026-11-23",
+      "price": 1.54,
+      "date": "2026-11-24",
       "name": "LAU Infra Grupa",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/LV0000110906/trading/chart_price_json",
@@ -202,106 +202,106 @@
     },
     "INC1L": {
       "price": 5.5,
-      "date": "2026-11-23",
+      "date": "2026-11-24",
       "name": "INVL Technology",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000128860/trading/chart_price_json",
-      "bollinger_lower": 5.2933809621031,
-      "bollinger_upper": 5.52661903789691
+      "bollinger_lower": 5.29211794272556,
+      "bollinger_upper": 5.53788205727445
     },
     "INF1T": {
       "price": 67.2,
-      "date": "2026-11-23",
+      "date": "2026-11-24",
       "name": "Infortar",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100149394/trading/chart_price_json",
-      "bollinger_lower": 65.8365508620693,
-      "bollinger_upper": 68.0434491379307
+      "bollinger_lower": 65.851168862729,
+      "bollinger_upper": 67.988831137271
     },
     "INL1L": {
-      "price": 6.75,
-      "date": "2026-11-23",
+      "price": 6.9,
+      "date": "2026-11-24",
       "name": "INVL Baltic Farmland",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000128753/trading/chart_price_json",
-      "bollinger_lower": 6.75723636606026,
-      "bollinger_upper": 7.30276363393969
+      "bollinger_lower": 6.74359450077827,
+      "bollinger_upper": 7.29640549922168
     },
     "INR1L": {
-      "price": 2.64,
-      "date": "2026-11-23",
+      "price": 2.62,
+      "date": "2026-11-24",
       "name": "INVL Baltic Real Estate",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000127151/trading/chart_price_json",
-      "bollinger_lower": 2.6312405787815,
-      "bollinger_upper": 2.7307594212185
+      "bollinger_lower": 2.62146622649234,
+      "bollinger_upper": 2.73253377350766
     },
     "IVL1L": {
-      "price": 27.0,
-      "date": "2026-11-23",
+      "price": 26.6,
+      "date": "2026-11-24",
       "name": "Invalda INVL",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000102279/trading/chart_price_json",
-      "bollinger_lower": 25.1183087923782,
-      "bollinger_upper": 27.7216912076218
+      "bollinger_lower": 25.1608142104413,
+      "bollinger_upper": 27.7391857895587
     },
     "KALVE": {
-      "price": 10.6,
-      "date": "2026-11-23",
+      "price": 10.4,
+      "date": "2026-11-24",
       "name": "Kalve Coffee",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/LV0000102234/trading/chart_price_json",
-      "bollinger_lower": 10.5633182318535,
-      "bollinger_upper": 12.5866817681465
+      "bollinger_lower": 10.4150471708609,
+      "bollinger_upper": 12.5349528291391
     },
     "KNE1L": {
-      "price": 0.455,
-      "date": "2026-11-23",
+      "price": 0.452,
+      "date": "2026-11-24",
       "name": "KN Energies",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000111650/trading/chart_price_json",
-      "bollinger_lower": 0.459819972946403,
-      "bollinger_upper": 0.500480027053598
+      "bollinger_lower": 0.45523102025803,
+      "bollinger_upper": 0.502668979741971
     },
     "KNR1L": {
-      "price": 2.04,
-      "date": "2026-11-23",
+      "price": 2.08,
+      "date": "2026-11-24",
       "name": "Kauno energija",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000123010/trading/chart_price_json",
-      "bollinger_lower": 2.02091312551279,
-      "bollinger_upper": 2.11308687448721
+      "bollinger_lower": 2.022,
+      "bollinger_upper": 2.11
     },
     "LGD1L": {
-      "price": 1.18,
-      "date": "2026-11-23",
+      "price": 1.175,
+      "date": "2026-11-24",
       "name": "LITGRID",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000128415/trading/chart_price_json",
-      "bollinger_lower": 1.11688631758315,
-      "bollinger_upper": 1.20661368241685
+      "bollinger_lower": 1.12126827876156,
+      "bollinger_upper": 1.20673172123844
     },
     "LHV1T": {
       "price": 3.185,
-      "date": "2026-11-23",
+      "date": "2026-11-24",
       "name": "LHV Group",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100102203/trading/chart_price_json",
-      "bollinger_lower": 3.20159964878829,
-      "bollinger_upper": 3.2799003512117
+      "bollinger_lower": 3.19278501401121,
+      "bollinger_upper": 3.28021498598879
     },
     "LINDA": {
       "price": 4.02,
-      "date": "2026-11-23",
+      "date": "2026-11-24",
       "name": "Linda Nektar",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100060344/trading/chart_price_json",
-      "bollinger_lower": 3.8813575777614,
-      "bollinger_upper": 4.17464242223857
+      "bollinger_lower": 3.88286307790293,
+      "bollinger_upper": 4.17513692209704
     },
     "LVN1T": {
       "price": 2.99,
-      "date": "2026-11-23",
+      "date": "2026-11-24",
       "name": "Liven",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100003112/trading/chart_price_json",
@@ -309,17 +309,17 @@
       "bollinger_upper": null
     },
     "MAGIC": {
-      "price": 1.795,
-      "date": "2026-11-23",
+      "price": 1.81,
+      "date": "2026-11-24",
       "name": "TextMagic",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100073438/trading/chart_price_json",
-      "bollinger_lower": 1.67107554165464,
-      "bollinger_upper": 1.81992445834536
+      "bollinger_lower": 1.66874400981394,
+      "bollinger_upper": 1.82525599018606
     },
     "MDARA": {
-      "price": 10.55,
-      "date": "2026-11-23",
+      "price": 10.5,
+      "date": "2026-11-24",
       "name": "MADARA Cosmetics",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/LV0000101624/trading/chart_price_json",
@@ -327,80 +327,80 @@
       "bollinger_upper": 10.677685058346
     },
     "MODE": {
-      "price": 5.0,
-      "date": "2026-11-23",
+      "price": 4.76,
+      "date": "2026-11-24",
       "name": "Modera",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100084203/trading/chart_price_json",
-      "bollinger_lower": 4.89946556082692,
-      "bollinger_upper": 5.12453443917309
+      "bollinger_lower": 4.84391403627313,
+      "bollinger_upper": 5.15808596372688
     },
     "MOLNR": {
       "price": 21.4,
-      "date": "2026-11-23",
+      "date": "2026-11-24",
       "name": "J. Molner",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100109034/trading/chart_price_json",
-      "bollinger_lower": 18.2689220509979,
-      "bollinger_upper": 25.7610779490021
+      "bollinger_lower": 18.4412244855096,
+      "bollinger_upper": 25.7287755144904
     },
     "MRK1T": {
-      "price": 26.7,
-      "date": "2026-11-23",
+      "price": 26.65,
+      "date": "2026-11-24",
       "name": "Merko Ehitus",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100098328/trading/chart_price_json",
-      "bollinger_lower": 26.6245300448556,
-      "bollinger_upper": 27.0904699551444
+      "bollinger_lower": 26.5969903260562,
+      "bollinger_upper": 27.0880096739438
     },
     "NCN1T": {
-      "price": 0.514,
-      "date": "2026-11-23",
+      "price": 0.512,
+      "date": "2026-11-24",
       "name": "Nordecon",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100039496/trading/chart_price_json",
-      "bollinger_lower": 0.512927751279809,
-      "bollinger_upper": 0.567672248720191
+      "bollinger_lower": 0.508973345174662,
+      "bollinger_upper": 0.569026654825338
     },
     "NEOFI": {
       "price": 2.86,
-      "date": "2026-11-23",
+      "date": "2026-11-24",
       "name": "NEO Finance",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000132953/trading/chart_price_json",
-      "bollinger_lower": 2.81024758956369,
-      "bollinger_upper": 2.9917524104363
+      "bollinger_lower": 2.8064240650062,
+      "bollinger_upper": 2.98757593499379
     },
     "NTU1L": {
-      "price": 0.716,
-      "date": "2026-11-23",
+      "price": 0.714,
+      "date": "2026-11-24",
       "name": "Novaturas",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000131872/trading/chart_price_json",
-      "bollinger_lower": 0.711140905194483,
-      "bollinger_upper": 0.748259094805508
+      "bollinger_lower": 0.70905209934878,
+      "bollinger_upper": 0.74834790065121
     },
     "PKG1T": {
-      "price": 0.53,
-      "date": "2026-11-23",
+      "price": 0.515,
+      "date": "2026-11-24",
       "name": "Pro Kapital Grupp",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100006040/trading/chart_price_json",
-      "bollinger_lower": 0.52000880500079,
-      "bollinger_upper": 0.55549119499921
+      "bollinger_lower": 0.516900248757758,
+      "bollinger_upper": 0.557099751242242
     },
     "PRF1T": {
-      "price": 0.05,
-      "date": "2026-11-23",
+      "price": 0.051,
+      "date": "2026-11-24",
       "name": "PRFoods",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100101031/trading/chart_price_json",
-      "bollinger_lower": 0.0493575451811698,
-      "bollinger_upper": 0.0539224548188297
+      "bollinger_lower": 0.0495120192838317,
+      "bollinger_upper": 0.0538679807161678
     },
     "PRIMO": {
       "price": 3.0,
-      "date": "2026-11-23",
+      "date": "2026-11-24",
       "name": "Primostar Group",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100152224/trading/chart_price_json",
@@ -408,107 +408,107 @@
       "bollinger_upper": 3.1209799979996
     },
     "PZV1L": {
-      "price": 1.79,
-      "date": "2026-11-23",
+      "price": 1.8,
+      "date": "2026-11-24",
       "name": "Pieno žvaigždės",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000111676/trading/chart_price_json",
-      "bollinger_lower": 1.78031561285864,
-      "bollinger_upper": 1.81168438714136
+      "bollinger_lower": 1.78047818970441,
+      "bollinger_upper": 1.81202181029559
     },
     "RKB1R": {
-      "price": 0.306,
-      "date": "2026-11-23",
+      "price": 0.308,
+      "date": "2026-11-24",
       "name": "Rīgas kuģu būvētava",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/LV0000100378/trading/chart_price_json",
-      "bollinger_lower": 0.289862548701381,
-      "bollinger_upper": 0.31873745129862
+      "bollinger_lower": 0.289974160953667,
+      "bollinger_upper": 0.319025839046334
     },
     "ROE1L": {
-      "price": 0.804,
-      "date": "2026-11-23",
+      "price": 0.81,
+      "date": "2026-11-24",
       "name": "Artea Bankas",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000102253/trading/chart_price_json",
-      "bollinger_lower": 0.794828290500031,
-      "bollinger_upper": 0.869471709499967
+      "bollinger_lower": 0.796491487189905,
+      "bollinger_upper": 0.861108512810092
     },
     "RSU1L": {
-      "price": 4.36,
-      "date": "2026-11-23",
+      "price": 4.4,
+      "date": "2026-11-24",
       "name": "Rokiškio sūris",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000100372/trading/chart_price_json",
-      "bollinger_lower": 4.09461995769606,
-      "bollinger_upper": 4.46338004230393
+      "bollinger_lower": 4.09233097763543,
+      "bollinger_upper": 4.46966902236456
     },
     "SAF1R": {
-      "price": 16.2,
-      "date": "2026-11-23",
+      "price": 16.35,
+      "date": "2026-11-24",
       "name": "SAF Tehnika",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/LV0000101129/trading/chart_price_json",
-      "bollinger_lower": 15.8661055987198,
-      "bollinger_upper": 17.1538944012802
+      "bollinger_lower": 15.8927839287773,
+      "bollinger_upper": 17.1472160712227
     },
     "SAUNA": {
-      "price": 2.1,
-      "date": "2026-11-23",
+      "price": 2.09,
+      "date": "2026-11-24",
       "name": "Saunum Group",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100019753/trading/chart_price_json",
-      "bollinger_lower": 2.08009495573118,
-      "bollinger_upper": 2.55390504426877
+      "bollinger_lower": 2.04906611206917,
+      "bollinger_upper": 2.55193388793078
     },
     "SCM1R": {
       "price": 7.3,
-      "date": "2026-11-23",
+      "date": "2026-11-24",
       "name": "Siguldas ciltslietu un mākslīgās apsēklošanas stacija",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/LV0000100600/trading/chart_price_json",
-      "bollinger_lower": 6.93701027417916,
-      "bollinger_upper": 7.44798972582081
+      "bollinger_lower": 6.96403542352119,
+      "bollinger_upper": 7.45096457647878
     },
     "SFG1T": {
       "price": 1.03,
-      "date": "2026-11-23",
+      "date": "2026-11-24",
       "name": "Silvano Fashion Group",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100001751/trading/chart_price_json",
-      "bollinger_lower": 1.03086480791145,
-      "bollinger_upper": 1.06613519208855
+      "bollinger_lower": 1.02845276300901,
+      "bollinger_upper": 1.06554723699099
     },
     "SKN1T": {
       "price": 0.4,
-      "date": "2026-11-23",
+      "date": "2026-11-24",
       "name": "Nordic Fibreboard",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100092503/trading/chart_price_json",
-      "bollinger_lower": 0.345061378583824,
-      "bollinger_upper": 0.475338621416177
+      "bollinger_lower": 0.346111212158041,
+      "bollinger_upper": 0.468288787841961
     },
     "TAL1T": {
-      "price": 0.601,
-      "date": "2026-11-23",
+      "price": 0.609,
+      "date": "2026-11-24",
       "name": "Tallink Grupp",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100004466/trading/chart_price_json",
-      "bollinger_lower": 0.598217205714766,
-      "bollinger_upper": 0.674482794285235
+      "bollinger_lower": 0.594853778517346,
+      "bollinger_upper": 0.674246221482656
     },
     "TEL1L": {
-      "price": 2.19,
-      "date": "2026-11-23",
+      "price": 2.2,
+      "date": "2026-11-24",
       "name": "Telia Lietuva",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000123911/trading/chart_price_json",
-      "bollinger_lower": 2.19613052163235,
-      "bollinger_upper": 2.26686947836766
+      "bollinger_lower": 2.19217609472096,
+      "bollinger_upper": 2.26582390527904
     },
     "TKM1T": {
       "price": 8.9,
-      "date": "2026-11-23",
+      "date": "2026-11-24",
       "name": "TKM Grupp",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/EE0000001105/trading/chart_price_json",
@@ -517,142 +517,142 @@
     },
     "TPD1T": {
       "price": 0.57,
-      "date": "2026-11-23",
+      "date": "2026-11-24",
       "name": "Trigon Property Development",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100003443/trading/chart_price_json",
-      "bollinger_lower": 0.517632272062984,
-      "bollinger_upper": 0.591967727937014
+      "bollinger_lower": 0.523234768458147,
+      "bollinger_upper": 0.591365231541851
     },
     "TSM1T": {
-      "price": 1.228,
-      "date": "2026-11-23",
+      "price": 1.232,
+      "date": "2026-11-24",
       "name": "Tallinna Sadam",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100021635/trading/chart_price_json",
-      "bollinger_lower": 1.17803531245543,
-      "bollinger_upper": 1.24596468754457
+      "bollinger_lower": 1.17930755897003,
+      "bollinger_upper": 1.24809244102997
     },
     "TVE1T": {
-      "price": 10.85,
-      "date": "2026-11-23",
+      "price": 10.9,
+      "date": "2026-11-24",
       "name": "Tallinna Vesi",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/EE3100026436/trading/chart_price_json",
-      "bollinger_lower": 10.782550020016,
-      "bollinger_upper": 10.907449979984
+      "bollinger_lower": 10.7806045591987,
+      "bollinger_upper": 10.9143954408013
     },
     "UTR1L": {
-      "price": 0.37,
-      "date": "2026-11-23",
+      "price": 0.36,
+      "date": "2026-11-24",
       "name": "Utenos trikotažas",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000109324/trading/chart_price_json",
-      "bollinger_lower": 0.319055181949357,
-      "bollinger_upper": 0.38514481805064
+      "bollinger_lower": 0.322012660764159,
+      "bollinger_upper": 0.385187339235838
     },
     "VBL1L": {
       "price": 9.55,
-      "date": "2026-11-23",
+      "date": "2026-11-24",
       "name": "Vilniaus baldai",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000104267/trading/chart_price_json",
-      "bollinger_lower": 9.40996212411028,
-      "bollinger_upper": 9.90503787588974
+      "bollinger_lower": 9.40230677800978,
+      "bollinger_upper": 9.88769322199024
     },
     "VIRSI": {
       "price": 4.4,
-      "date": "2026-11-23",
+      "date": "2026-11-24",
       "name": "VIRŠI-A",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/LV0000101848/trading/chart_price_json",
-      "bollinger_lower": 4.38831544556186,
-      "bollinger_upper": 4.44268455443814
+      "bollinger_lower": 4.3865894285261,
+      "bollinger_upper": 4.44241057147391
     },
     "VLP1L": {
       "price": 15.15,
-      "date": "2026-11-23",
+      "date": "2026-11-24",
       "name": "Vilkyškių pieninė",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000127508/trading/chart_price_json",
-      "bollinger_lower": 15.0985073350291,
-      "bollinger_upper": 15.9164926649709
+      "bollinger_lower": 15.0562221819274,
+      "bollinger_upper": 15.8987778180726
     },
     "ZMP1L": {
       "price": 2.78,
-      "date": "2026-11-23",
+      "date": "2026-11-24",
       "name": "Žemaitijos pienas",
       "type": "Share",
       "source": "https://nasdaqbaltic.com/statistics/en/instrument/LT0000121865/trading/chart_price_json",
-      "bollinger_lower": 2.78576511156307,
-      "bollinger_upper": 2.92223488843693
+      "bollinger_lower": 2.776,
+      "bollinger_upper": 2.92
     },
     "US_PFE": {
-      "price": 25.047993069321027,
-      "date": "2026-11-23",
+      "price": 25.960046597165608,
+      "date": "2026-11-24",
       "name": "Pfizer Inc.",
       "type": "Share",
       "source": "https://finance.yahoo.com/quote/PFE/history/",
-      "bollinger_lower": 24.8620234467017,
-      "bollinger_upper": 27.6889418387223
+      "bollinger_lower": 24.8331615986801,
+      "bollinger_upper": 27.6411626749751
     },
     "US_NVDA": {
-      "price": 150.8821675214899,
-      "date": "2026-11-23",
+      "price": 141.7312823887736,
+      "date": "2026-11-24",
       "name": "NVIDIA Corporation",
       "type": "Share",
       "source": "https://finance.yahoo.com/quote/NVDA/history/",
-      "bollinger_lower": 116.707329215511,
-      "bollinger_upper": 205.109375452968
+      "bollinger_lower": 116.273957655185,
+      "bollinger_upper": 200.169686692404
     },
     "SE0015192331": {
-      "price": 17.1118,
-      "date": "2026-11-20",
+      "price": 17.43,
+      "date": "2026-11-23",
       "name": "Swedbank Robur Access Edge Europe C",
       "type": "Fund",
       "source": "https://www.swedbankrobur.se/fondlista.html",
-      "bollinger_lower": 17.1781981032091,
-      "bollinger_upper": 18.2768318967909
+      "bollinger_lower": 17.1820810361089,
+      "bollinger_upper": 18.2753289638911
     },
     "SE0015192349": {
-      "price": 17.9481,
-      "date": "2026-11-20",
+      "price": 18.7453,
+      "date": "2026-11-23",
       "name": "Swedbank Robur Access Edge Global C",
       "type": "Fund",
       "source": "https://www.swedbankrobur.se/fondlista.html",
-      "bollinger_lower": 18.3557136599598,
-      "bollinger_upper": 19.8526663400402
+      "bollinger_lower": 18.3181287653419,
+      "bollinger_upper": 19.8336912346581
     },
     "SE0014263281": {
-      "price": 14.022,
-      "date": "2026-11-20",
+      "price": 14.5852,
+      "date": "2026-11-23",
       "name": "Swedbank Savings Fund 100 N",
       "type": "Fund",
       "source": "https://www.swedbankrobur.se/fondlista.html",
-      "bollinger_lower": 14.3264944044185,
-      "bollinger_upper": 15.5874055955815
+      "bollinger_lower": 14.2844645620677,
+      "bollinger_upper": 15.5764454379323
     },
     "SE0014263273": {
-      "price": 11.0255,
-      "date": "2026-11-20",
+      "price": 11.1675,
+      "date": "2026-11-23",
       "name": "Swedbank Savings Fund 30 N",
       "type": "Fund",
       "source": "https://www.swedbankrobur.se/fondlista.html",
-      "bollinger_lower": 11.0971126879605,
-      "bollinger_upper": 11.3679473120395
+      "bollinger_lower": 11.0916194811637,
+      "bollinger_upper": 11.3682005188362
     },
     "SE0015192323": {
-      "price": 18.6515,
-      "date": "2026-11-20",
+      "price": 19.6899,
+      "date": "2026-11-23",
       "name": "Swedbank Robur Access Edge USA C",
       "type": "Fund",
       "source": "https://www.swedbankrobur.se/fondlista.html",
-      "bollinger_lower": 19.0839035600556,
-      "bollinger_upper": 20.8774464399444
+      "bollinger_lower": 19.0578051546432,
+      "bollinger_upper": 20.8412648453568
     },
     "SE0029504588": {
-      "price": 9.6119,
-      "date": "2026-11-20",
+      "price": 9.7398,
+      "date": "2026-11-23",
       "name": "Swedbank Robur Food and Water C",
       "type": "Fund",
       "source": "https://www.swedbankrobur.se/fondlista.html",
@@ -660,22 +660,22 @@
       "bollinger_upper": null
     },
     "SE0014263299": {
-      "price": 12.2965,
-      "date": "2026-11-20",
+      "price": 12.5949,
+      "date": "2026-11-23",
       "name": "Swedbank Savings Fund 60 N",
       "type": "Fund",
       "source": "https://www.swedbankrobur.se/fondlista.html",
-      "bollinger_lower": 12.4589499849202,
-      "bollinger_upper": 13.0889300150798
+      "bollinger_lower": 12.4390673332902,
+      "bollinger_upper": 13.0859626667098
     },
     "SE0013876950": {
-      "price": 12.4703,
-      "date": "2026-11-20",
+      "price": 12.5495,
+      "date": "2026-11-23",
       "name": "Swedbank Robur Access Edge Em Mkt C",
       "type": "Fund",
       "source": "https://www.swedbankrobur.se/fondlista.html",
-      "bollinger_lower": 12.6894636863789,
-      "bollinger_upper": 14.0470863136211
+      "bollinger_lower": 12.5576866164087,
+      "bollinger_upper": 14.0850833835913
     },
     "SE0013876927": {
       "price": 14.4522,
@@ -687,140 +687,140 @@
       "bollinger_upper": 15.7793881926473
     },
     "SE0013876968": {
-      "price": 12.2679,
-      "date": "2026-11-20",
+      "price": 12.3044,
+      "date": "2026-11-23",
       "name": "Swedbank Robur Access Asien C",
       "type": "Fund",
       "source": "https://www.swedbankrobur.se/fondlista.html",
-      "bollinger_lower": 12.4516452452065,
-      "bollinger_upper": 13.7179247547935
+      "bollinger_lower": 12.3247729791314,
+      "bollinger_upper": 13.7583170208686
     },
     "SE0015192315": {
-      "price": 13.4867,
-      "date": "2026-11-20",
+      "price": 13.8433,
+      "date": "2026-11-23",
       "name": "Swedbank Robur Access Edge Sweden C",
       "type": "Fund",
       "source": "https://www.swedbankrobur.se/fondlista.html",
-      "bollinger_lower": 13.6404766690831,
-      "bollinger_upper": 14.5658333309168
+      "bollinger_lower": 13.6613116157761,
+      "bollinger_upper": 14.5559883842238
     },
     "SE0014261756": {
-      "price": 18.8512,
-      "date": "2026-11-20",
+      "price": 19.1125,
+      "date": "2026-11-23",
       "name": "Swedbank Robur Global High Dividend C",
       "type": "Fund",
       "source": "https://www.swedbankrobur.se/fondlista.html",
-      "bollinger_lower": 18.8668564563076,
-      "bollinger_upper": 19.7543735436924
+      "bollinger_lower": 18.8740814646319,
+      "bollinger_upper": 19.751928535368
     },
     "SE0014261889": {
-      "price": 14.8196,
-      "date": "2026-11-20",
+      "price": 15.2967,
+      "date": "2026-11-23",
       "name": "Swedbank Robur Global Impact C",
       "type": "Fund",
       "source": "https://www.swedbankrobur.se/fondlista.html",
-      "bollinger_lower": 15.1977466915353,
-      "bollinger_upper": 16.3653233084646
+      "bollinger_lower": 15.135983904903,
+      "bollinger_upper": 16.3774960950969
     },
     "SE0015948617": {
-      "price": 9.9704,
-      "date": "2026-11-20",
+      "price": 9.9831,
+      "date": "2026-11-23",
       "name": "Swedbank Robur Corp Bond Europe C",
       "type": "Fund",
       "source": "https://www.swedbankrobur.se/fondlista.html",
-      "bollinger_lower": 9.89894309973135,
-      "bollinger_upper": 10.0195069002687
+      "bollinger_lower": 9.9113312420332,
+      "bollinger_upper": 10.0162587579668
     },
     "SE0014261897": {
-      "price": 10.4678,
-      "date": "2026-11-20",
+      "price": 10.6425,
+      "date": "2026-11-23",
       "name": "Swedbank Robur Fastighet C",
       "type": "Fund",
       "source": "https://www.swedbankrobur.se/fondlista.html",
-      "bollinger_lower": 10.2082962260179,
-      "bollinger_upper": 11.1401737739822
+      "bollinger_lower": 10.2497803246932,
+      "bollinger_upper": 11.1293796753069
     },
     "SE0014261764": {
-      "price": 21.8879,
-      "date": "2026-11-20",
+      "price": 23.7605,
+      "date": "2026-11-23",
       "name": "Swedbank Robur Technology C",
       "type": "Fund",
       "source": "https://www.swedbankrobur.se/fondlista.html",
-      "bollinger_lower": 22.0580103612931,
-      "bollinger_upper": 28.0456696387069
+      "bollinger_lower": 21.9752094056701,
+      "bollinger_upper": 27.8164105943299
     },
     "SE0015948609": {
-      "price": 11.4174,
-      "date": "2026-11-20",
+      "price": 11.4329,
+      "date": "2026-11-23",
       "name": "Swedbank Robur Corp Bond Europe HY C",
       "type": "Fund",
       "source": "https://www.swedbankrobur.se/fondlista.html",
-      "bollinger_lower": 11.3158669373502,
-      "bollinger_upper": 11.5494830626498
+      "bollinger_lower": 11.3421740239731,
+      "bollinger_upper": 11.5372259760269
     },
     "SE0017072416": {
-      "price": 11.9942,
-      "date": "2026-11-20",
+      "price": 11.9961,
+      "date": "2026-11-23",
       "name": "Swedbank Robur Corp Bond Nordic C",
       "type": "Fund",
       "source": "https://www.swedbankrobur.se/fondlista.html",
-      "bollinger_lower": 11.9455662277579,
-      "bollinger_upper": 12.0011337722421
+      "bollinger_lower": 11.9473750467832,
+      "bollinger_upper": 12.0034849532169
     },
     "SE0019354200": {
-      "price": 22.5771,
-      "date": "2026-11-20",
+      "price": 23.1313,
+      "date": "2026-11-23",
       "name": "Swedbank Robur Emerging Europe C",
       "type": "Fund",
       "source": "https://www.swedbankrobur.se/fondlista.html",
-      "bollinger_lower": 22.2277795131796,
-      "bollinger_upper": 24.0594104868203
+      "bollinger_lower": 22.3470357966685,
+      "bollinger_upper": 24.0202842033314
     },
     "SE0014261871": {
-      "price": 14.4888,
-      "date": "2026-11-20",
+      "price": 14.779,
+      "date": "2026-11-23",
       "name": "Swedbank Robur Healthcare C",
       "type": "Fund",
       "source": "https://www.swedbankrobur.se/fondlista.html",
-      "bollinger_lower": 14.29604371636,
-      "bollinger_upper": 15.46350628364
+      "bollinger_lower": 14.3694695581162,
+      "bollinger_upper": 15.4337204418838
     },
     "SE0026821472": {
-      "price": 10.4741,
-      "date": "2026-11-20",
+      "price": 10.687,
+      "date": "2026-11-23",
       "name": "Swedbank Robur Small Cap Europe C",
       "type": "Fund",
       "source": "https://www.swedbankrobur.se/fondlista.html",
-      "bollinger_lower": 10.536026162732,
-      "bollinger_upper": 11.3057638372679
+      "bollinger_lower": 10.5539077163683,
+      "bollinger_upper": 11.2968822836316
     },
     "SE0025667215": {
-      "price": 10.0925,
-      "date": "2026-11-20",
+      "price": 10.5151,
+      "date": "2026-11-23",
       "name": "Swedbank Robur Security and Defence C",
       "type": "Fund",
       "source": "https://www.swedbankrobur.se/fondlista.html",
-      "bollinger_lower": 10.1941298281403,
-      "bollinger_upper": 11.6877901718597
+      "bollinger_lower": 10.1506050343053,
+      "bollinger_upper": 11.6554749656947
     },
     "SE0027397514": {
-      "price": 8.2211,
-      "date": "2026-11-20",
+      "price": 8.4949,
+      "date": "2026-11-23",
       "name": "Swedbank Robur New Energy C",
       "type": "Fund",
       "source": "https://www.swedbankrobur.se/fondlista.html",
-      "bollinger_lower": 8.37712053955345,
-      "bollinger_upper": 9.06606946044672
+      "bollinger_lower": 8.3828494386321,
+      "bollinger_upper": 9.06333056136807
     },
     "SE0025667199": {
-      "price": 10.5588,
-      "date": "2026-11-20",
+      "price": 10.5569,
+      "date": "2026-11-23",
       "name": "Swedbank Robur Corp Bond Nordic HY C",
       "type": "Fund",
       "source": "https://www.swedbankrobur.se/fondlista.html",
-      "bollinger_lower": 10.4900094516601,
-      "bollinger_upper": 10.5682005483399
+      "bollinger_lower": 10.4942822999378,
+      "bollinger_upper": 10.5699777000622
     }
   },
-  "scope": "Verified financial model closing snapshot. Baltic completed closes 2026-11-23; US completed closes 2026-11-23; published fund NAV dates 2026-11-20. Exact instrument dates are retained. No intraday observation is substituted for a completed close."
+  "scope": "Verified financial model closing snapshot. Baltic completed closes 2026-11-24; US completed closes 2026-11-24; published fund NAV dates 2026-11-20, 2026-11-23. Exact instrument dates are retained. No intraday observation is substituted for a completed close."
 }

@@ -931,7 +931,7 @@
       "last_training_sigma_pct": 1.3970700315896387,
       "next_training_sigma_pct": 1.3311346004800553,
       "latest_filtered_sigma_pct": 1.9885047259424036,
-      "next_session_sigma_pct": 1.672609298865404,
+      "next_session_sigma_pct": 1.6914560338494529,
       "parameters_estimated": 3,
       "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
     },
@@ -948,7 +948,7 @@
       "last_training_sigma_pct": 1.3263110558520195,
       "next_training_sigma_pct": 1.2914627948072581,
       "latest_filtered_sigma_pct": 1.8920241429631135,
-      "next_session_sigma_pct": 1.6243852187205168,
+      "next_session_sigma_pct": 1.6259800823073545,
       "parameters_estimated": 3,
       "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
     },
@@ -965,7 +965,7 @@
       "last_training_sigma_pct": 0.5329944581506644,
       "next_training_sigma_pct": 0.5469199251900358,
       "latest_filtered_sigma_pct": 0.9016283808889606,
-      "next_session_sigma_pct": 0.8049982683363486,
+      "next_session_sigma_pct": 0.93827580894361,
       "parameters_estimated": 3,
       "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
     },
@@ -982,7 +982,7 @@
       "last_training_sigma_pct": 1.5028808686216737,
       "next_training_sigma_pct": 1.4840665860989335,
       "latest_filtered_sigma_pct": 3.1303654917918826,
-      "next_session_sigma_pct": 2.815241106199318,
+      "next_session_sigma_pct": 3.8737970761025404,
       "parameters_estimated": 3,
       "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
     },
@@ -999,7 +999,7 @@
       "last_training_sigma_pct": 0.7813324287546771,
       "next_training_sigma_pct": 0.8124273280831825,
       "latest_filtered_sigma_pct": 1.0226220337492509,
-      "next_session_sigma_pct": 0.8920166305119007,
+      "next_session_sigma_pct": 1.2001897245148723,
       "parameters_estimated": 3,
       "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
     },
@@ -1016,7 +1016,7 @@
       "last_training_sigma_pct": 0.8747639736099595,
       "next_training_sigma_pct": 0.8395094150062009,
       "latest_filtered_sigma_pct": 1.40054594507461,
-      "next_session_sigma_pct": 1.2733590899133092,
+      "next_session_sigma_pct": 1.6027480896538595,
       "parameters_estimated": 3,
       "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
     },
@@ -1033,7 +1033,7 @@
       "last_training_sigma_pct": 0.7424455570394077,
       "next_training_sigma_pct": 0.7934452082850613,
       "latest_filtered_sigma_pct": 1.0539525532754033,
-      "next_session_sigma_pct": 0.9336429545186946,
+      "next_session_sigma_pct": 1.1256063712910624,
       "parameters_estimated": 3,
       "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
     },
@@ -1050,7 +1050,7 @@
       "last_training_sigma_pct": 0.28724060582549626,
       "next_training_sigma_pct": 0.2741756766400285,
       "latest_filtered_sigma_pct": 0.4968037506420805,
-      "next_session_sigma_pct": 0.4459758270244648,
+      "next_session_sigma_pct": 0.6288124586888708,
       "parameters_estimated": 3,
       "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
     },
@@ -1067,7 +1067,7 @@
       "last_training_sigma_pct": 0.7771155940400625,
       "next_training_sigma_pct": 0.749656053889881,
       "latest_filtered_sigma_pct": 1.628527208988307,
-      "next_session_sigma_pct": 1.456805265124133,
+      "next_session_sigma_pct": 1.983511860744889,
       "parameters_estimated": 3,
       "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
     },
@@ -1084,7 +1084,7 @@
       "last_training_sigma_pct": 0.5086869110432924,
       "next_training_sigma_pct": 0.4880872319483064,
       "latest_filtered_sigma_pct": 0.9622037612044494,
-      "next_session_sigma_pct": 0.8642785724372826,
+      "next_session_sigma_pct": 1.1772057395273268,
       "parameters_estimated": 3,
       "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
     },
@@ -1101,7 +1101,7 @@
       "last_training_sigma_pct": 1.1374576965616334,
       "next_training_sigma_pct": 1.160860093992602,
       "latest_filtered_sigma_pct": 1.3983887775586883,
-      "next_session_sigma_pct": 1.271004711035466,
+      "next_session_sigma_pct": 1.5723977124808841,
       "parameters_estimated": 3,
       "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
     },
@@ -1118,7 +1118,7 @@
       "last_training_sigma_pct": 0.7074530888997789,
       "next_training_sigma_pct": 0.707444117050349,
       "latest_filtered_sigma_pct": 1.8950747616715282,
-      "next_session_sigma_pct": 1.6673134048076532,
+      "next_session_sigma_pct": 2.7309368588946086,
       "parameters_estimated": 3,
       "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
     },
@@ -1135,7 +1135,7 @@
       "last_training_sigma_pct": 0.6792679564438403,
       "next_training_sigma_pct": 0.7042537299210362,
       "latest_filtered_sigma_pct": 1.163370346316761,
-      "next_session_sigma_pct": 1.020414911250477,
+      "next_session_sigma_pct": 1.2644961086001387,
       "parameters_estimated": 3,
       "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
     },
@@ -1152,7 +1152,7 @@
       "last_training_sigma_pct": 0.6476860604066325,
       "next_training_sigma_pct": 0.6341536660978386,
       "latest_filtered_sigma_pct": 1.5909698314002159,
-      "next_session_sigma_pct": 1.4078398294045875,
+      "next_session_sigma_pct": 2.135069252492399,
       "parameters_estimated": 3,
       "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
     },
@@ -1169,7 +1169,7 @@
       "last_training_sigma_pct": 0.1043032982461749,
       "next_training_sigma_pct": 0.08865512783890316,
       "latest_filtered_sigma_pct": 0.21885589921012985,
-      "next_session_sigma_pct": 0.16732516535114436,
+      "next_session_sigma_pct": 0.18095291097466298,
       "parameters_estimated": 3,
       "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
     },
@@ -1186,7 +1186,7 @@
       "last_training_sigma_pct": 0.20546816392221193,
       "next_training_sigma_pct": 0.1971203186671279,
       "latest_filtered_sigma_pct": 0.14069748550956163,
-      "next_session_sigma_pct": 0.13537653539172034,
+      "next_session_sigma_pct": 0.1394273169029224,
       "parameters_estimated": 3,
       "mean_treatment": "Demeaned using training-sample mean; Gaussian quasi likelihood; parameters frozen while filtering the126 diagnostic observations"
     },
@@ -2000,8 +2000,8 @@
     "optimizer_message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
     "pairs": 6786,
     "observations": 542,
-    "CPU_seconds": 0.0023233000028994866,
-    "GPU_seconds": 0.016192299997783266,
+    "CPU_seconds": 0.003142400000115231,
+    "GPU_seconds": 0.016234399999802918,
     "backend": "CPU48 Numba",
     "GPU_error": null,
     "CPU_GPU_verified": true,

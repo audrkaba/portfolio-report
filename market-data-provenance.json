@@ -1,17 +1,18 @@
 {
   "schema": 1,
-  "model_run": "20261123_us_close",
-  "model_input_hash": "936f61c1651acc82a8b4da981a42a169e5f989b8accdd496d3baa59ce8a0d5b6",
-  "official_sources_checked_at_UTC": "2026-11-23T21:15:02.240704+00:00",
-  "official_sources_checked_at_Vilnius": "2026-11-23T23:15:02.240704+02:00",
+  "model_run": "20261124_us_close",
+  "model_input_hash": "ee42477e8809929596945ca6d3fa65c94831d4eb809b1346101356f79a6de85c",
+  "official_sources_checked_at_UTC": "2026-11-25T06:09:26.166739+00:00",
+  "official_sources_checked_at_Vilnius": "2026-11-25T08:09:26.166739+02:00",
   "share_observations": [
-    "2026-11-23"
+    "2026-11-24"
   ],
   "fund_NAV_observations": [
-    "2026-11-20"
+    "2026-11-20",
+    "2026-11-23"
   ],
-  "share_last": "2026-11-23",
-  "fund_last": "2026-11-20",
+  "share_last": "2026-11-24",
+  "fund_last": "2026-11-23",
   "quote_records": 91,
   "decision_assets": 72,
   "training": {
@@ -110,16 +111,16 @@
     "calendar": "Observed Baltic sessions; forward fill only after first genuine price; never before inception",
     "diagnostic_warning": "126-day segment is a descriptive fixed-allocation diagnostic, not an independent strategy backtest: current forecast centres use data through their current origin",
     "sha256": {
-      "data\\full_universe\\extended_history\\prices_inception_screened.csv": "dd28e016820f9e10a820329d7711302248644893b124159c27848793d9306b95",
-      "data\\full_universe\\share_prices.csv": "99e9311751819df50a4ad0041af1872e26107d6ce697362d204f8a7afc66834f",
-      "data\\full_universe\\fund_nav_eur.csv": "fd37ee6281df907478a72c4b2e554409e2ee9ff5d47117b8323ac3900c73e2fe"
+      "data\\full_universe\\extended_history\\prices_inception_screened.csv": "ff9d41bcad65b3e4c056cc5506ebb78d61c3e6b1bc92d125f6af64fa317097aa",
+      "data\\full_universe\\share_prices.csv": "aee1f83826a57ba3d793d2b9ff5eb3e308fb087a40c39b0b31c7a418b5102a53",
+      "data\\full_universe\\fund_nav_eur.csv": "e2b2cd7e98289c6e71290f708fcf157a582612742b6f35559e867c0a7ef13023"
     }
   },
-  "model_manifest_sha256": "7ba7b7dbcc901eea94f88d982349128f2468eee5a0f5e1a940a91e19f77cbcb9",
-  "quote_snapshot_sha256": "874182688badc508af70bba6341b130938eecb22031fbae6ddd680cf1b2d7ac9",
+  "model_manifest_sha256": "a747eefe65df6018756ab35c9ee870a37ee6b6f579940cf121b77eda11cecef3",
+  "quote_snapshot_sha256": "1860ad817e2a79d7c6c614c769179f40c18701e22940fe95b8c7cffc4aeb3210",
   "price_file_sha256": {
-    "data\\full_universe\\share_prices.csv": "99e9311751819df50a4ad0041af1872e26107d6ce697362d204f8a7afc66834f",
-    "data\\full_universe\\fund_nav_eur.csv": "fd37ee6281df907478a72c4b2e554409e2ee9ff5d47117b8323ac3900c73e2fe"
+    "data\\full_universe\\share_prices.csv": "aee1f83826a57ba3d793d2b9ff5eb3e308fb087a40c39b0b31c7a418b5102a53",
+    "data\\full_universe\\fund_nav_eur.csv": "e2b2cd7e98289c6e71290f708fcf157a582612742b6f35559e867c0a7ef13023"
   },
   "scope": "Observation dates and actual official-source check time used by the completed model snapshot; not a claim of a new download at website build time."
 }

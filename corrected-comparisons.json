@@ -1,131 +1,23 @@
 {
-  "input_hash": "936f61c1651acc82a8b4da981a42a169e5f989b8accdd496d3baa59ce8a0d5b6",
+  "input_hash": "ee42477e8809929596945ca6d3fa65c94831d4eb809b1346101356f79a6de85c",
   "native_stochastic": [
     {
       "completed": true,
       "model": "STOCHASTIC",
       "policy": "NO_SALE",
-      "input_hash": "936f61c1651acc82a8b4da981a42a169e5f989b8accdd496d3baa59ce8a0d5b6",
-      "objective": 0.4943437334422348,
+      "input_hash": "ee42477e8809929596945ca6d3fa65c94831d4eb809b1346101356f79a6de85c",
+      "objective": 0.6204248704010523,
       "terminal": {
-        "netSD": 0.5225806451612903,
-        "OUT": 83,
-        "IN": 2,
-        "D": 155,
-        "expected_return": 0.010155790730247043,
-        "scenarios": 20,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          0,
-          41,
-          42
-        ],
-        "IN_by_order": [
-          0,
-          1,
-          1
-        ]
-      },
-      "expected_penalty": 0.028236911719055485,
-      "current_terminal": {
-        "netSD": 0.3935483870967742,
-        "OUT": 64,
-        "IN": 3,
-        "D": 155,
-        "expected_return": 0.005204084357514557,
-        "scenarios": 20,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          0,
-          31,
-          33
-        ],
-        "IN_by_order": [
-          0,
-          1,
-          2
-        ]
-      },
-      "initial_only_terminal": {
-        "netSD": 0.44516129032258067,
-        "OUT": 72,
-        "IN": 3,
-        "D": 155,
-        "expected_return": 0.006982624434289943,
-        "scenarios": 20,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          0,
-          35,
-          37
-        ],
-        "IN_by_order": [
-          0,
-          1,
-          2
-        ]
-      },
-      "decision_nodes": 21,
-      "scenarios": 20,
-      "stages": [
-        0,
-        10
-      ],
-      "valuation_step": 20,
-      "root_cash_EUR": 1480.6228060195426,
-      "minimum_node_cash_EUR": 480.62294744268934,
-      "maximum_US_cumulative_gross_purchase_EUR": 999.9999895612615,
-      "stage_cap_EUR": 1000,
-      "asset_cap_EUR": 750,
-      "sector_cap": 0.3,
-      "evaluated_complete_policies": 3818,
-      "search_rounds": 2,
-      "attained_solution_not_global_certificate": true,
-      "recourse_rule": {
-        "mode": 1,
-        "signal": 3,
-        "fraction": 1.0
-      },
-      "calibration": {
-        "selected_backend": "CPU",
-        "workers": 30,
-        "CPU_seconds": 0.0019560000000637956,
-        "GPU_seconds": 0.2975838999991538,
-        "GPU_error": null
-      },
-      "seconds_including_reference_preparation": 4.813947499998903,
-      "computed_at_UTC": "2026-11-24T06:44:28.802182+00:00",
-      "objective_definition": "Weighted FSD/SSD/TSD of the complete four-week self-financing policy cumulative-return distribution against all72 buy-and-hold asset references and actual Current with cash, normalised by the actual augmented-network maximum degree. Subtract probability-weighted existing final-decision penalties; historical rows calibrate forecasts and feasibility, never become terminal outcomes.",
-      "search_definition": "Feasible structured joint-policy proposals and coordinate neighbourhood search; all node variables and all terminal outcomes explicit; no global-optimality certificate.",
-      "current_VLP": 140.0,
-      "current_PFE": 5.883,
-      "wealth_backend": "GPU",
-      "dominance_backend": "CPU",
-      "current_NVDA": 2.814478,
-      "artifact_sha256": {
-        "policy.npz": "fbc7ff1dd7bc2ef3666d1306b72fe9313d1b0db56995d470ca0142a51ee3f2cb",
-        "outcomes.npz": "62f7828df882f158236832f0a71884d89c54ef63a52438413dc4b6c8475ff18a",
-        "allocation.csv": "0ea4f48bb88464c92b4d53bf3e609392fd715d23c5e5c2e8e083da7da53f0afe",
-        "search_trace.csv": "69954a5def652697ad6ed7880a89058c12da243bfc39ec3b71c77e2a8ca16ed4"
-      }
-    },
-    {
-      "completed": true,
-      "model": "STOCHASTIC",
-      "policy": "SALE",
-      "input_hash": "936f61c1651acc82a8b4da981a42a169e5f989b8accdd496d3baa59ce8a0d5b6",
-      "objective": 0.6663286052293472,
-      "terminal": {
-        "netSD": 0.6838709677419355,
-        "OUT": 106,
+        "netSD": 0.6484848484848484,
+        "OUT": 107,
         "IN": 0,
-        "D": 155,
-        "expected_return": 0.015339723155979727,
+        "D": 165,
+        "expected_return": 0.01375422888761646,
         "scenarios": 20,
-        "probability_mass": 1.0,
+        "probability_mass": 0.9999999999999999,
         "OUT_by_order": [
-          2,
-          52,
+          6,
+          49,
           52
         ],
         "IN_by_order": [
@@ -134,43 +26,43 @@
           0
         ]
       },
-      "expected_penalty": 0.01754236251258818,
+      "expected_penalty": 0.028059978083796094,
       "current_terminal": {
-        "netSD": 0.3935483870967742,
-        "OUT": 64,
-        "IN": 3,
-        "D": 155,
-        "expected_return": 0.005204084357514557,
+        "netSD": 0.5333333333333333,
+        "OUT": 88,
+        "IN": 0,
+        "D": 165,
+        "expected_return": 0.008664151446927256,
         "scenarios": 20,
-        "probability_mass": 1.0,
+        "probability_mass": 0.9999999999999999,
         "OUT_by_order": [
-          0,
-          31,
-          33
+          4,
+          40,
+          44
         ],
         "IN_by_order": [
           0,
-          1,
-          2
+          0,
+          0
         ]
       },
       "initial_only_terminal": {
-        "netSD": 0.6064516129032258,
-        "OUT": 96,
-        "IN": 2,
-        "D": 155,
-        "expected_return": 0.010459012904361872,
+        "netSD": 0.5333333333333333,
+        "OUT": 88,
+        "IN": 0,
+        "D": 165,
+        "expected_return": 0.009149977849897977,
         "scenarios": 20,
-        "probability_mass": 1.0,
+        "probability_mass": 0.9999999999999999,
         "OUT_by_order": [
-          0,
-          48,
-          48
+          4,
+          40,
+          44
         ],
         "IN_by_order": [
           0,
-          1,
-          1
+          0,
+          0
         ]
       },
       "decision_nodes": 21,
@@ -180,13 +72,120 @@
         10
       ],
       "valuation_step": 20,
-      "root_cash_EUR": 5287.0229192464085,
-      "minimum_node_cash_EUR": 4287.023262064486,
-      "maximum_US_cumulative_gross_purchase_EUR": 999.999999549257,
+      "root_cash_EUR": 2050.8543477238854,
+      "minimum_node_cash_EUR": 1050.8543483537778,
+      "maximum_US_cumulative_gross_purchase_EUR": 750.0014836716117,
       "stage_cap_EUR": 1000,
       "asset_cap_EUR": 750,
       "sector_cap": 0.3,
-      "evaluated_complete_policies": 8039,
+      "evaluated_complete_policies": 4121,
+      "search_rounds": 2,
+      "attained_solution_not_global_certificate": true,
+      "recourse_rule": {
+        "mode": 1,
+        "signal": 3,
+        "fraction": 1.0
+      },
+      "calibration": {
+        "selected_backend": "CPU",
+        "workers": 4,
+        "CPU_seconds": 0.0016340999936801381,
+        "GPU_error": null
+      },
+      "seconds_including_reference_preparation": 3.3108290000018314,
+      "computed_at_UTC": "2026-11-25T07:28:48.293008+00:00",
+      "objective_definition": "Weighted FSD/SSD/TSD of the complete four-week self-financing policy cumulative-return distribution against all72 buy-and-hold asset references and actual Current with cash, normalised by the actual augmented-network maximum degree. Subtract probability-weighted existing final-decision penalties; historical rows calibrate forecasts and feasibility, never become terminal outcomes.",
+      "search_definition": "Feasible structured joint-policy proposals and coordinate neighbourhood search; all node variables and all terminal outcomes explicit; no global-optimality certificate.",
+      "current_VLP": 140.0,
+      "current_PFE": 5.883,
+      "wealth_backend": "GPU",
+      "dominance_backend": "CPU",
+      "current_NVDA": 2.814478,
+      "artifact_sha256": {
+        "policy.npz": "0f50544ed97f61cd92a036edab5f97fbe2401161b8646a010a51539a91ff6ce3",
+        "outcomes.npz": "21b059e15c276047f057dd19e9fdef446684c6cd2f44d47b98d1644968cf91dd",
+        "allocation.csv": "844d0472fb857936a60151c13efa344aede882222f359ffaa7eacf1f90641bb6",
+        "search_trace.csv": "be139bfc106b5d70f6535f6881dbcbc02afbf5d45dc37487ca39eef2fd09f651"
+      }
+    },
+    {
+      "completed": true,
+      "model": "STOCHASTIC",
+      "policy": "SALE",
+      "input_hash": "ee42477e8809929596945ca6d3fa65c94831d4eb809b1346101356f79a6de85c",
+      "objective": 0.7839513701756733,
+      "terminal": {
+        "netSD": 0.8,
+        "OUT": 132,
+        "IN": 0,
+        "D": 165,
+        "expected_return": 0.019493500775104613,
+        "scenarios": 20,
+        "probability_mass": 0.9999999999999999,
+        "OUT_by_order": [
+          8,
+          62,
+          62
+        ],
+        "IN_by_order": [
+          0,
+          0,
+          0
+        ]
+      },
+      "expected_penalty": 0.01604862982432677,
+      "current_terminal": {
+        "netSD": 0.5333333333333333,
+        "OUT": 88,
+        "IN": 0,
+        "D": 165,
+        "expected_return": 0.008664151446927256,
+        "scenarios": 20,
+        "probability_mass": 0.9999999999999999,
+        "OUT_by_order": [
+          4,
+          40,
+          44
+        ],
+        "IN_by_order": [
+          0,
+          0,
+          0
+        ]
+      },
+      "initial_only_terminal": {
+        "netSD": 0.6484848484848484,
+        "OUT": 107,
+        "IN": 0,
+        "D": 165,
+        "expected_return": 0.010307573325153793,
+        "scenarios": 20,
+        "probability_mass": 0.9999999999999999,
+        "OUT_by_order": [
+          4,
+          51,
+          52
+        ],
+        "IN_by_order": [
+          0,
+          0,
+          0
+        ]
+      },
+      "decision_nodes": 21,
+      "scenarios": 20,
+      "stages": [
+        0,
+        10
+      ],
+      "valuation_step": 20,
+      "root_cash_EUR": 4296.6464462502045,
+      "minimum_node_cash_EUR": 3296.6475716412606,
+      "maximum_US_cumulative_gross_purchase_EUR": 999.9999931924715,
+      "stage_cap_EUR": 1000,
+      "asset_cap_EUR": 750,
+      "sector_cap": 0.3,
+      "evaluated_complete_policies": 8666,
       "search_rounds": 2,
       "attained_solution_not_global_certificate": true,
       "recourse_rule": {
@@ -196,13 +195,12 @@
       },
       "calibration": {
         "selected_backend": "CPU",
-        "workers": 30,
-        "CPU_seconds": 0.0016787000058684498,
-        "GPU_seconds": 0.29648309999902267,
+        "workers": 4,
+        "CPU_seconds": 0.001517900003818795,
         "GPU_error": null
       },
-      "seconds_including_reference_preparation": 6.286180499999318,
-      "computed_at_UTC": "2026-11-24T06:44:54.505923+00:00",
+      "seconds_including_reference_preparation": 4.544762100005755,
+      "computed_at_UTC": "2026-11-25T07:29:19.787694+00:00",
       "objective_definition": "Weighted FSD/SSD/TSD of the complete four-week self-financing policy cumulative-return distribution against all72 buy-and-hold asset references and actual Current with cash, normalised by the actual augmented-network maximum degree. Subtract probability-weighted existing final-decision penalties; historical rows calibrate forecasts and feasibility, never become terminal outcomes.",
       "search_definition": "Feasible structured joint-policy proposals and coordinate neighbourhood search; all node variables and all terminal outcomes explicit; no global-optimality certificate.",
       "current_VLP": 140.0,
@@ -211,402 +209,181 @@
       "dominance_backend": "CPU",
       "current_NVDA": 2.814478,
       "artifact_sha256": {
-        "policy.npz": "0a64f7cfff7d33c5e413579bc22df16b3b05789bdaff8c44d458ce3432e1ac95",
-        "outcomes.npz": "e6ff2993a03a77f23c9a669532d5195f4f8fff9c63b5ff2925d7c1063840c248",
-        "allocation.csv": "d5cdb5559aaa50b8f5104d6a05df7f3d28b8bfeffdf169aad5bf70dedd81af6e",
-        "search_trace.csv": "80da0a3d97b8d51daa29daf3eae7189ac16ee3066d1da136a1ce3190d6b9089f"
+        "policy.npz": "43675208721e8a2a48890758721052303f9bf383eae83fb4420666fcf4ca22de",
+        "outcomes.npz": "c585eb0957824d9ec587a70cd89d74e99be494d5953f43cfa11c55e57c8c607e",
+        "allocation.csv": "dde1299779cc6ddc10f53cbd0d21a95a2d8f4f1d080b998f06bccc1f69acd9a1",
+        "search_trace.csv": "c74319e18731c904be99d01bbb618a75786e5440f630e528131a719f2dfb4200"
       }
     },
     {
       "completed": true,
       "model": "STOCHASTIC",
       "policy": "NO_INITIAL_SALES",
-      "input_hash": "936f61c1651acc82a8b4da981a42a169e5f989b8accdd496d3baa59ce8a0d5b6",
-      "objective": 0.518229332242281,
+      "input_hash": "ee42477e8809929596945ca6d3fa65c94831d4eb809b1346101356f79a6de85c",
+      "objective": 0.6204248704010523,
       "terminal": {
-        "netSD": 0.5419354838709678,
-        "OUT": 86,
-        "IN": 2,
-        "D": 155,
-        "expected_return": 0.007682923854714183,
+        "netSD": 0.6484848484848484,
+        "OUT": 107,
+        "IN": 0,
+        "D": 165,
+        "expected_return": 0.01375422888761646,
         "scenarios": 20,
-        "probability_mass": 1.0,
+        "probability_mass": 0.9999999999999999,
         "OUT_by_order": [
-          0,
-          42,
-          44
+          6,
+          49,
+          52
         ],
         "IN_by_order": [
           0,
-          1,
-          1
+          0,
+          0
         ]
       },
-      "expected_penalty": 0.02370615162868688,
+      "expected_penalty": 0.028059978083796094,
       "current_terminal": {
-        "netSD": 0.3935483870967742,
-        "OUT": 64,
-        "IN": 3,
-        "D": 155,
-        "expected_return": 0.005204084357514557,
+        "netSD": 0.5333333333333333,
+        "OUT": 88,
+        "IN": 0,
+        "D": 165,
+        "expected_return": 0.008664151446927256,
         "scenarios": 20,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          0,
-          31,
-          33
-        ],
-        "IN_by_order": [
-          0,
-          1,
-          2
-        ]
-      },
-      "initial_only_terminal": {
-        "netSD": 0.3935483870967742,
-        "OUT": 64,
-        "IN": 3,
-        "D": 155,
-        "expected_return": 0.007686617808644349,
-        "scenarios": 20,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          0,
-          31,
-          33
-        ],
-        "IN_by_order": [
-          0,
-          1,
-          2
-        ]
-      },
-      "decision_nodes": 21,
-      "scenarios": 20,
-      "stages": [
-        0,
-        10
-      ],
-      "valuation_step": 20,
-      "root_cash_EUR": 1481.6929075736189,
-      "minimum_node_cash_EUR": 4444.981110244459,
-      "maximum_US_cumulative_gross_purchase_EUR": 999.9999971371069,
-      "stage_cap_EUR": 1000,
-      "asset_cap_EUR": 750,
-      "sector_cap": 0.3,
-      "evaluated_complete_policies": 4088,
-      "search_rounds": 2,
-      "attained_solution_not_global_certificate": true,
-      "recourse_rule": {
-        "mode": 3,
-        "signal": 1,
-        "fraction": 0.5
-      },
-      "calibration": {
-        "selected_backend": "CPU",
-        "workers": 30,
-        "CPU_seconds": 0.0016729999988456257,
-        "GPU_seconds": 0.29991039999731584,
-        "GPU_error": null
-      },
-      "seconds_including_reference_preparation": 4.687136200001987,
-      "computed_at_UTC": "2026-11-24T06:45:18.218068+00:00",
-      "objective_definition": "Weighted FSD/SSD/TSD of the complete four-week self-financing policy cumulative-return distribution against all72 buy-and-hold asset references and actual Current with cash, normalised by the actual augmented-network maximum degree. Subtract probability-weighted existing final-decision penalties; historical rows calibrate forecasts and feasibility, never become terminal outcomes.",
-      "search_definition": "Feasible structured joint-policy proposals and coordinate neighbourhood search; all node variables and all terminal outcomes explicit; no global-optimality certificate.",
-      "current_VLP": 140.0,
-      "current_PFE": 5.883,
-      "wealth_backend": "GPU",
-      "dominance_backend": "CPU",
-      "current_NVDA": 2.814478,
-      "artifact_sha256": {
-        "policy.npz": "89974781615a566b919308b6664d1ca5c4da48dda9d4b2a7801d59bd59630f1b",
-        "outcomes.npz": "8f08e2c140e18225b054b5f8873987b1dd6c3cb1264fbb2bf5277477ed21d9af",
-        "allocation.csv": "60e4814758b3622046eb3dcce9836ea7ad28e77ff9d60ed0c9d646fefcc8da54",
-        "search_trace.csv": "4b351fd43c855c685b2ae327c154cbe550ab9a07a325860fb98745f731334745"
-      }
-    },
-    {
-      "completed": true,
-      "model": "STOCHASTIC2",
-      "policy": "NO_SALE",
-      "input_hash": "936f61c1651acc82a8b4da981a42a169e5f989b8accdd496d3baa59ce8a0d5b6",
-      "objective": 0.20194118729063887,
-      "terminal": {
-        "netSD": 0.22699386503067484,
-        "OUT": 47,
-        "IN": 10,
-        "D": 163,
-        "expected_return": 0.007662108895638373,
-        "scenarios": 16000,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          5,
-          21,
-          21
-        ],
-        "IN_by_order": [
-          0,
-          5,
-          5
-        ]
-      },
-      "expected_penalty": 0.025052677740035965,
-      "current_terminal": {
-        "netSD": 0.20245398773006135,
-        "OUT": 47,
-        "IN": 14,
-        "D": 163,
-        "expected_return": 0.005615599100818802,
-        "scenarios": 16000,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          5,
-          20,
-          22
-        ],
-        "IN_by_order": [
-          0,
-          7,
-          7
-        ]
-      },
-      "initial_only_terminal": {
-        "netSD": 0.20245398773006135,
-        "OUT": 47,
-        "IN": 14,
-        "D": 163,
-        "expected_return": 0.005615599100818795,
-        "scenarios": 16000,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          5,
-          20,
-          22
-        ],
-        "IN_by_order": [
-          0,
-          7,
-          7
-        ]
-      },
-      "decision_nodes": 4421,
-      "scenarios": 16000,
-      "stages": [
-        0,
-        5,
-        10,
-        15
-      ],
-      "valuation_step": 20,
-      "root_cash_EUR": 2480.622768811638,
-      "minimum_node_cash_EUR": 980.6228531405395,
-      "maximum_US_cumulative_gross_purchase_EUR": 999.9999999795658,
-      "stage_cap_EUR": 1000,
-      "asset_cap_EUR": 750,
-      "sector_cap": 0.3,
-      "evaluated_complete_policies": 3812,
-      "search_rounds": 2,
-      "attained_solution_not_global_certificate": true,
-      "recourse_rule": {
-        "mode": 1,
-        "signal": 1,
-        "fraction": 0.5
-      },
-      "calibration": {
-        "selected_backend": "CPU",
-        "workers": 30,
-        "CPU_seconds": 0.0034464999989722855,
-        "GPU_seconds": 0.3138241000051494,
-        "GPU_error": null
-      },
-      "seconds_including_reference_preparation": 129.7713569999978,
-      "computed_at_UTC": "2026-11-24T06:29:26.812898+00:00",
-      "objective_definition": "Weighted FSD/SSD/TSD of the complete four-week self-financing policy cumulative-return distribution against all72 buy-and-hold asset references and actual Current with cash, normalised by the actual augmented-network maximum degree. Subtract probability-weighted existing final-decision penalties; historical rows calibrate forecasts and feasibility, never become terminal outcomes.",
-      "search_definition": "Feasible structured joint-policy proposals and coordinate neighbourhood search; all node variables and all terminal outcomes explicit; no global-optimality certificate.",
-      "current_VLP": 140.0,
-      "current_PFE": 5.883,
-      "wealth_backend": "GPU",
-      "dominance_backend": "CPU",
-      "current_NVDA": 2.814478,
-      "artifact_sha256": {
-        "policy.npz": "201aaa610c96dcf0e8c6d5b6cb35fc395736cf108526fae78e09f45350cb4d0e",
-        "outcomes.npz": "a9d42f25f64c03914dacb0fe4ea075ed90f98661ad592796d5f989abc6423f5e",
-        "allocation.csv": "327bfde606ce42cad55e4ce5a6f888c91eaad1c722ee17c7b6d1d9d6527cb1bb",
-        "search_trace.csv": "87f6815adad4b19add8c8a943218da28e16fcaa2fd7a36518054b561577f9ac5"
-      }
-    },
-    {
-      "completed": true,
-      "model": "STOCHASTIC2",
-      "policy": "SALE",
-      "input_hash": "936f61c1651acc82a8b4da981a42a169e5f989b8accdd496d3baa59ce8a0d5b6",
-      "objective": 0.5426003089830442,
-      "terminal": {
-        "netSD": 0.5555555555555556,
-        "OUT": 97,
-        "IN": 7,
-        "D": 162,
-        "expected_return": 0.008214137455327201,
-        "scenarios": 16000,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          8,
-          44,
-          45
-        ],
-        "IN_by_order": [
-          1,
-          3,
-          3
-        ]
-      },
-      "expected_penalty": 0.012955246572511372,
-      "current_terminal": {
-        "netSD": 0.20245398773006135,
-        "OUT": 47,
-        "IN": 14,
-        "D": 163,
-        "expected_return": 0.005615599100818802,
-        "scenarios": 16000,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          5,
-          20,
-          22
-        ],
-        "IN_by_order": [
-          0,
-          7,
-          7
-        ]
-      },
-      "initial_only_terminal": {
-        "netSD": 0.4382716049382716,
-        "OUT": 79,
-        "IN": 8,
-        "D": 162,
-        "expected_return": 0.005919413949171612,
-        "scenarios": 16000,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          8,
-          35,
-          36
-        ],
-        "IN_by_order": [
-          0,
-          3,
-          5
-        ]
-      },
-      "decision_nodes": 4421,
-      "scenarios": 16000,
-      "stages": [
-        0,
-        5,
-        10,
-        15
-      ],
-      "valuation_step": 20,
-      "root_cash_EUR": 6723.377776811636,
-      "minimum_node_cash_EUR": 6080.9805082856965,
-      "maximum_US_cumulative_gross_purchase_EUR": 999.9999999936965,
-      "stage_cap_EUR": 1000,
-      "asset_cap_EUR": 750,
-      "sector_cap": 0.3,
-      "evaluated_complete_policies": 8018,
-      "search_rounds": 2,
-      "attained_solution_not_global_certificate": true,
-      "recourse_rule": {
-        "mode": 3,
-        "signal": 0,
-        "fraction": 0.5
-      },
-      "calibration": {
-        "selected_backend": "CPU",
-        "workers": 30,
-        "CPU_seconds": 0.0035139000028721057,
-        "GPU_seconds": 0.3237245999989682,
-        "GPU_error": null
-      },
-      "seconds_including_reference_preparation": 169.6718417000011,
-      "computed_at_UTC": "2026-11-24T06:33:02.583327+00:00",
-      "objective_definition": "Weighted FSD/SSD/TSD of the complete four-week self-financing policy cumulative-return distribution against all72 buy-and-hold asset references and actual Current with cash, normalised by the actual augmented-network maximum degree. Subtract probability-weighted existing final-decision penalties; historical rows calibrate forecasts and feasibility, never become terminal outcomes.",
-      "search_definition": "Feasible structured joint-policy proposals and coordinate neighbourhood search; all node variables and all terminal outcomes explicit; no global-optimality certificate.",
-      "current_VLP": 140.0,
-      "current_PFE": 5.883,
-      "wealth_backend": "GPU",
-      "dominance_backend": "CPU",
-      "current_NVDA": 2.814478,
-      "artifact_sha256": {
-        "policy.npz": "d34bb92f2d9682c5ff241dd8170c9d28aa8c7e3c63e308cfdbec8249986b3282",
-        "outcomes.npz": "bcbc775b3628b3f6f5774a775bc7dd32b32a6bcb6c4a996286b0f256e3385914",
-        "allocation.csv": "c86da468ab3edfad4a0525e19af59f7f4aeb11717656f700265cbd6e7c7773a6",
-        "search_trace.csv": "4202785462153f0fc15878c164f43a1f89e47e6d7a4bdc14cacd9e72e04e47ec"
-      }
-    },
-    {
-      "completed": true,
-      "model": "STOCHASTIC2",
-      "policy": "NO_INITIAL_SALES",
-      "input_hash": "936f61c1651acc82a8b4da981a42a169e5f989b8accdd496d3baa59ce8a0d5b6",
-      "objective": 0.38812897708007116,
-      "terminal": {
-        "netSD": 0.4110429447852761,
-        "OUT": 73,
-        "IN": 6,
-        "D": 163,
-        "expected_return": 0.00873065674614116,
-        "scenarios": 16000,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          9,
-          31,
-          33
-        ],
-        "IN_by_order": [
-          0,
-          3,
-          3
-        ]
-      },
-      "expected_penalty": 0.02291396770520492,
-      "current_terminal": {
-        "netSD": 0.20245398773006135,
-        "OUT": 47,
-        "IN": 14,
-        "D": 163,
-        "expected_return": 0.005615599100818802,
-        "scenarios": 16000,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          5,
-          20,
-          22
-        ],
-        "IN_by_order": [
-          0,
-          7,
-          7
-        ]
-      },
-      "initial_only_terminal": {
-        "netSD": 0.19631901840490798,
-        "OUT": 46,
-        "IN": 14,
-        "D": 163,
-        "expected_return": 0.005893072120629133,
-        "scenarios": 16000,
-        "probability_mass": 1.0,
+        "probability_mass": 0.9999999999999999,
         "OUT_by_order": [
           4,
-          20,
-          22
+          40,
+          44
         ],
         "IN_by_order": [
           0,
+          0,
+          0
+        ]
+      },
+      "initial_only_terminal": {
+        "netSD": 0.5333333333333333,
+        "OUT": 88,
+        "IN": 0,
+        "D": 165,
+        "expected_return": 0.009149977849897977,
+        "scenarios": 20,
+        "probability_mass": 0.9999999999999999,
+        "OUT_by_order": [
+          4,
+          40,
+          44
+        ],
+        "IN_by_order": [
+          0,
+          0,
+          0
+        ]
+      },
+      "decision_nodes": 21,
+      "scenarios": 20,
+      "stages": [
+        0,
+        10
+      ],
+      "valuation_step": 20,
+      "root_cash_EUR": 2050.8543477238854,
+      "minimum_node_cash_EUR": 1050.8543483537778,
+      "maximum_US_cumulative_gross_purchase_EUR": 750.0014836716117,
+      "stage_cap_EUR": 1000,
+      "asset_cap_EUR": 750,
+      "sector_cap": 0.3,
+      "evaluated_complete_policies": 4375,
+      "search_rounds": 2,
+      "attained_solution_not_global_certificate": true,
+      "recourse_rule": {
+        "mode": 1,
+        "signal": 3,
+        "fraction": 1.0
+      },
+      "calibration": {
+        "selected_backend": "CPU",
+        "workers": 4,
+        "CPU_seconds": 0.0015739000009489246,
+        "GPU_error": null
+      },
+      "seconds_including_reference_preparation": 3.44489220000105,
+      "computed_at_UTC": "2026-11-25T07:29:49.006612+00:00",
+      "objective_definition": "Weighted FSD/SSD/TSD of the complete four-week self-financing policy cumulative-return distribution against all72 buy-and-hold asset references and actual Current with cash, normalised by the actual augmented-network maximum degree. Subtract probability-weighted existing final-decision penalties; historical rows calibrate forecasts and feasibility, never become terminal outcomes.",
+      "search_definition": "Feasible structured joint-policy proposals and coordinate neighbourhood search; all node variables and all terminal outcomes explicit; no global-optimality certificate.",
+      "current_VLP": 140.0,
+      "current_PFE": 5.883,
+      "wealth_backend": "GPU",
+      "dominance_backend": "CPU",
+      "current_NVDA": 2.814478,
+      "artifact_sha256": {
+        "policy.npz": "0f50544ed97f61cd92a036edab5f97fbe2401161b8646a010a51539a91ff6ce3",
+        "outcomes.npz": "21b059e15c276047f057dd19e9fdef446684c6cd2f44d47b98d1644968cf91dd",
+        "allocation.csv": "844d0472fb857936a60151c13efa344aede882222f359ffaa7eacf1f90641bb6",
+        "search_trace.csv": "acd446138dbcf59bc957ab6a9fcf54ee2c35aad4454785605cf5d6e24d59ddfa"
+      }
+    },
+    {
+      "completed": true,
+      "model": "STOCHASTIC2",
+      "policy": "NO_SALE",
+      "input_hash": "ee42477e8809929596945ca6d3fa65c94831d4eb809b1346101356f79a6de85c",
+      "objective": 0.35993517884990706,
+      "terminal": {
+        "netSD": 0.3878787878787879,
+        "OUT": 68,
+        "IN": 4,
+        "D": 165,
+        "expected_return": 0.008929934466374533,
+        "scenarios": 16000,
+        "probability_mass": 0.9999999999999998,
+        "OUT_by_order": [
+          9,
+          29,
+          30
+        ],
+        "IN_by_order": [
+          0,
+          2,
+          2
+        ]
+      },
+      "expected_penalty": 0.02794360902888083,
+      "current_terminal": {
+        "netSD": 0.2710843373493976,
+        "OUT": 54,
+        "IN": 9,
+        "D": 166,
+        "expected_return": 0.006024458749863736,
+        "scenarios": 16000,
+        "probability_mass": 0.9999999999999998,
+        "OUT_by_order": [
           7,
-          7
+          23,
+          24
+        ],
+        "IN_by_order": [
+          1,
+          4,
+          4
+        ]
+      },
+      "initial_only_terminal": {
+        "netSD": 0.3393939393939394,
+        "OUT": 62,
+        "IN": 6,
+        "D": 165,
+        "expected_return": 0.007501173089213321,
+        "scenarios": 16000,
+        "probability_mass": 0.9999999999999998,
+        "OUT_by_order": [
+          9,
+          26,
+          27
+        ],
+        "IN_by_order": [
+          0,
+          3,
+          3
         ]
       },
       "decision_nodes": 4421,
@@ -618,29 +395,28 @@
         15
       ],
       "valuation_step": 20,
-      "root_cash_EUR": 1480.6363405116372,
-      "minimum_node_cash_EUR": 3584.161858949455,
-      "maximum_US_cumulative_gross_purchase_EUR": 999.9999999936965,
+      "root_cash_EUR": 1420.3775743157676,
+      "minimum_node_cash_EUR": 1.8789609157465748e-07,
+      "maximum_US_cumulative_gross_purchase_EUR": 999.9999999617781,
       "stage_cap_EUR": 1000,
       "asset_cap_EUR": 750,
       "sector_cap": 0.3,
-      "evaluated_complete_policies": 4071,
+      "evaluated_complete_policies": 4254,
       "search_rounds": 2,
       "attained_solution_not_global_certificate": true,
       "recourse_rule": {
-        "mode": 3,
+        "mode": 1,
         "signal": 0,
         "fraction": 0.5
       },
       "calibration": {
         "selected_backend": "CPU",
-        "workers": 30,
-        "CPU_seconds": 0.003397899999981746,
-        "GPU_seconds": 0.3224917999978061,
+        "workers": 4,
+        "CPU_seconds": 0.008011500001884997,
         "GPU_error": null
       },
-      "seconds_including_reference_preparation": 115.3061005999989,
-      "computed_at_UTC": "2026-11-24T06:35:23.734061+00:00",
+      "seconds_including_reference_preparation": 99.10470650000207,
+      "computed_at_UTC": "2026-11-25T07:05:12.961798+00:00",
       "objective_definition": "Weighted FSD/SSD/TSD of the complete four-week self-financing policy cumulative-return distribution against all72 buy-and-hold asset references and actual Current with cash, normalised by the actual augmented-network maximum degree. Subtract probability-weighted existing final-decision penalties; historical rows calibrate forecasts and feasibility, never become terminal outcomes.",
       "search_definition": "Feasible structured joint-policy proposals and coordinate neighbourhood search; all node variables and all terminal outcomes explicit; no global-optimality certificate.",
       "current_VLP": 140.0,
@@ -649,74 +425,293 @@
       "dominance_backend": "CPU",
       "current_NVDA": 2.814478,
       "artifact_sha256": {
-        "policy.npz": "5d10b867bd910ca739ddee7fd9a8777b1d7861c70daf5c55fd5935e123922b97",
-        "outcomes.npz": "4a3e951cbab4e47a8044f1be25c14c1bb4b98ce3a5bb948e6c1a0e78ae929584",
-        "allocation.csv": "d231c145f7cdc5b5ff520fc643457500c7d4c78cb82cc9dc7b853238ec33ac03",
-        "search_trace.csv": "145e7e8fbe85adf7e0e6512b05138cf2ccaaa7b9ce95bbee87909518f36a4cdf"
+        "policy.npz": "6c2ce3c496a519c317d21e9a7b510caa8eea3d87d52b646c02f0b7ca92af9ad8",
+        "outcomes.npz": "8f6225caf3ad1e02145501f0af2eb68c5b7a4b3a339dd61990b177d095d8df5b",
+        "allocation.csv": "6884f70ae2cc9151b9dcbf595186403eeae38de7467c5ff7b13d2f859344dd77",
+        "search_trace.csv": "08abfb43e59081d3e9e0969af8197634a8282bccbb8eb458902401662c249486"
+      }
+    },
+    {
+      "completed": true,
+      "model": "STOCHASTIC2",
+      "policy": "SALE",
+      "input_hash": "ee42477e8809929596945ca6d3fa65c94831d4eb809b1346101356f79a6de85c",
+      "objective": 0.7288364509804404,
+      "terminal": {
+        "netSD": 0.7454545454545455,
+        "OUT": 125,
+        "IN": 2,
+        "D": 165,
+        "expected_return": 0.009643337631210443,
+        "scenarios": 16000,
+        "probability_mass": 0.9999999999999998,
+        "OUT_by_order": [
+          19,
+          53,
+          53
+        ],
+        "IN_by_order": [
+          0,
+          1,
+          1
+        ]
+      },
+      "expected_penalty": 0.016618094474105144,
+      "current_terminal": {
+        "netSD": 0.2710843373493976,
+        "OUT": 54,
+        "IN": 9,
+        "D": 166,
+        "expected_return": 0.006024458749863736,
+        "scenarios": 16000,
+        "probability_mass": 0.9999999999999998,
+        "OUT_by_order": [
+          7,
+          23,
+          24
+        ],
+        "IN_by_order": [
+          1,
+          4,
+          4
+        ]
+      },
+      "initial_only_terminal": {
+        "netSD": 0.6545454545454545,
+        "OUT": 112,
+        "IN": 4,
+        "D": 165,
+        "expected_return": 0.0075167201877176255,
+        "scenarios": 16000,
+        "probability_mass": 0.9999999999999998,
+        "OUT_by_order": [
+          16,
+          48,
+          48
+        ],
+        "IN_by_order": [
+          0,
+          2,
+          2
+        ]
+      },
+      "decision_nodes": 4421,
+      "scenarios": 16000,
+      "stages": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "valuation_step": 20,
+      "root_cash_EUR": 6867.4523537820805,
+      "minimum_node_cash_EUR": 4727.227654414582,
+      "maximum_US_cumulative_gross_purchase_EUR": 999.9999999221816,
+      "stage_cap_EUR": 1000,
+      "asset_cap_EUR": 750,
+      "sector_cap": 0.3,
+      "evaluated_complete_policies": 8612,
+      "search_rounds": 2,
+      "attained_solution_not_global_certificate": true,
+      "recourse_rule": {
+        "mode": 3,
+        "signal": 0,
+        "fraction": 1.0
+      },
+      "calibration": {
+        "selected_backend": "CPU",
+        "workers": 30,
+        "CPU_seconds": 0.0035866999969584867,
+        "GPU_seconds": 0.293117400004121,
+        "GPU_error": null
+      },
+      "seconds_including_reference_preparation": 140.92785210000147,
+      "computed_at_UTC": "2026-11-25T07:08:24.667983+00:00",
+      "objective_definition": "Weighted FSD/SSD/TSD of the complete four-week self-financing policy cumulative-return distribution against all72 buy-and-hold asset references and actual Current with cash, normalised by the actual augmented-network maximum degree. Subtract probability-weighted existing final-decision penalties; historical rows calibrate forecasts and feasibility, never become terminal outcomes.",
+      "search_definition": "Feasible structured joint-policy proposals and coordinate neighbourhood search; all node variables and all terminal outcomes explicit; no global-optimality certificate.",
+      "current_VLP": 140.0,
+      "current_PFE": 5.883,
+      "wealth_backend": "GPU",
+      "dominance_backend": "CPU",
+      "current_NVDA": 2.814478,
+      "artifact_sha256": {
+        "policy.npz": "8b4a8695a74ccf376b8bb08fd2310bc176d95dc183162ebd90eb0dc676233e8a",
+        "outcomes.npz": "1030038aa3b4bbdc12e79a2997c9c91ec695f274395ad0411c1d5020aeb61e14",
+        "allocation.csv": "f2c0b649456ca33ad8416cf097d0635ea4e7d58167bdabd2fefcd12938f183e0",
+        "search_trace.csv": "dbaaf72e5fdf17fee1edfbc7cc52abe1ec721d8a4e9d56b8278d963126ede014"
+      }
+    },
+    {
+      "completed": true,
+      "model": "STOCHASTIC2",
+      "policy": "NO_INITIAL_SALES",
+      "input_hash": "ee42477e8809929596945ca6d3fa65c94831d4eb809b1346101356f79a6de85c",
+      "objective": 0.48993332790369276,
+      "terminal": {
+        "netSD": 0.5120481927710844,
+        "OUT": 89,
+        "IN": 4,
+        "D": 166,
+        "expected_return": 0.009464919431675788,
+        "scenarios": 16000,
+        "probability_mass": 0.9999999999999998,
+        "OUT_by_order": [
+          9,
+          39,
+          41
+        ],
+        "IN_by_order": [
+          1,
+          1,
+          2
+        ]
+      },
+      "expected_penalty": 0.0221148648673916,
+      "current_terminal": {
+        "netSD": 0.2710843373493976,
+        "OUT": 54,
+        "IN": 9,
+        "D": 166,
+        "expected_return": 0.006024458749863736,
+        "scenarios": 16000,
+        "probability_mass": 0.9999999999999998,
+        "OUT_by_order": [
+          7,
+          23,
+          24
+        ],
+        "IN_by_order": [
+          1,
+          4,
+          4
+        ]
+      },
+      "initial_only_terminal": {
+        "netSD": 0.3072289156626506,
+        "OUT": 58,
+        "IN": 7,
+        "D": 166,
+        "expected_return": 0.0062971868835325455,
+        "scenarios": 16000,
+        "probability_mass": 0.9999999999999998,
+        "OUT_by_order": [
+          8,
+          24,
+          26
+        ],
+        "IN_by_order": [
+          1,
+          3,
+          3
+        ]
+      },
+      "decision_nodes": 4421,
+      "scenarios": 16000,
+      "stages": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "valuation_step": 20,
+      "root_cash_EUR": 1594.0144347238856,
+      "minimum_node_cash_EUR": 1944.767138374856,
+      "maximum_US_cumulative_gross_purchase_EUR": 999.9999999741403,
+      "stage_cap_EUR": 1000,
+      "asset_cap_EUR": 750,
+      "sector_cap": 0.3,
+      "evaluated_complete_policies": 4362,
+      "search_rounds": 2,
+      "attained_solution_not_global_certificate": true,
+      "recourse_rule": {
+        "mode": 3,
+        "signal": 0,
+        "fraction": 1.0
+      },
+      "calibration": {
+        "selected_backend": "CPU",
+        "workers": 4,
+        "CPU_seconds": 0.008246399993367959,
+        "GPU_error": null
+      },
+      "seconds_including_reference_preparation": 95.00820010000461,
+      "computed_at_UTC": "2026-11-25T07:10:34.076490+00:00",
+      "objective_definition": "Weighted FSD/SSD/TSD of the complete four-week self-financing policy cumulative-return distribution against all72 buy-and-hold asset references and actual Current with cash, normalised by the actual augmented-network maximum degree. Subtract probability-weighted existing final-decision penalties; historical rows calibrate forecasts and feasibility, never become terminal outcomes.",
+      "search_definition": "Feasible structured joint-policy proposals and coordinate neighbourhood search; all node variables and all terminal outcomes explicit; no global-optimality certificate.",
+      "current_VLP": 140.0,
+      "current_PFE": 5.883,
+      "wealth_backend": "GPU",
+      "dominance_backend": "CPU",
+      "current_NVDA": 2.814478,
+      "artifact_sha256": {
+        "policy.npz": "5969c3f1af6ef8c2541063a1c0a4466b890dcff4ea6ea4125207936f6f566bdd",
+        "outcomes.npz": "d34fc61cc76bd2d1cf5b9841895b8bb93c8cdf04965540b8b78320ef68dff0e6",
+        "allocation.csv": "bddf693d6c84652e709450e97573e9c5b9f6efc726417991ad6324430450f958",
+        "search_trace.csv": "9573632ad789b1dce6eb7e0514e657fa88938df015a460f95f7cdf59d5212d15"
       }
     },
     {
       "completed": true,
       "model": "stochA",
       "policy": "NO_SALE",
-      "input_hash": "936f61c1651acc82a8b4da981a42a169e5f989b8accdd496d3baa59ce8a0d5b6",
-      "objective": 0.5182167418694865,
+      "input_hash": "ee42477e8809929596945ca6d3fa65c94831d4eb809b1346101356f79a6de85c",
+      "objective": 0.6955988622288841,
       "terminal": {
-        "netSD": 0.5483870967741935,
-        "OUT": 87,
-        "IN": 2,
-        "D": 155,
-        "expected_return": 0.013490286152699723,
+        "netSD": 0.7272727272727273,
+        "OUT": 120,
+        "IN": 0,
+        "D": 165,
+        "expected_return": 0.017908009731162706,
         "scenarios": 20,
-        "probability_mass": 1.0,
+        "probability_mass": 0.9999999999999999,
         "OUT_by_order": [
-          1,
-          42,
+          8,
+          56,
+          56
+        ],
+        "IN_by_order": [
+          0,
+          0,
+          0
+        ]
+      },
+      "expected_penalty": 0.03167386504384318,
+      "current_terminal": {
+        "netSD": 0.5333333333333333,
+        "OUT": 88,
+        "IN": 0,
+        "D": 165,
+        "expected_return": 0.008664151446927256,
+        "scenarios": 20,
+        "probability_mass": 0.9999999999999999,
+        "OUT_by_order": [
+          4,
+          40,
           44
         ],
         "IN_by_order": [
           0,
-          1,
-          1
-        ]
-      },
-      "expected_penalty": 0.030170354904707018,
-      "current_terminal": {
-        "netSD": 0.3935483870967742,
-        "OUT": 64,
-        "IN": 3,
-        "D": 155,
-        "expected_return": 0.005204084357514557,
-        "scenarios": 20,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
           0,
-          31,
-          33
-        ],
-        "IN_by_order": [
-          0,
-          1,
-          2
+          0
         ]
       },
       "initial_only_terminal": {
-        "netSD": 0.3935483870967742,
-        "OUT": 64,
-        "IN": 3,
-        "D": 155,
-        "expected_return": 0.006281661808885294,
+        "netSD": 0.5333333333333333,
+        "OUT": 88,
+        "IN": 0,
+        "D": 165,
+        "expected_return": 0.008664151446927252,
         "scenarios": 20,
-        "probability_mass": 1.0,
+        "probability_mass": 0.9999999999999999,
         "OUT_by_order": [
-          0,
-          31,
-          33
+          4,
+          40,
+          44
         ],
         "IN_by_order": [
           0,
-          1,
-          2
+          0,
+          0
         ]
       },
       "decision_nodes": 21,
@@ -726,13 +721,13 @@
         10
       ],
       "valuation_step": 20,
-      "root_cash_EUR": 2180.622849835654,
-      "minimum_node_cash_EUR": 3.165199359500548e-06,
-      "maximum_US_cumulative_gross_purchase_EUR": 999.9999977588217,
+      "root_cash_EUR": 2344.004347723885,
+      "minimum_node_cash_EUR": 4.401645583129721e-06,
+      "maximum_US_cumulative_gross_purchase_EUR": 999.9999973951326,
       "stage_cap_EUR": null,
       "asset_cap_EUR": null,
       "sector_cap": 0.3,
-      "evaluated_complete_policies": 5075,
+      "evaluated_complete_policies": 5473,
       "search_rounds": 2,
       "attained_solution_not_global_certificate": true,
       "recourse_rule": {
@@ -742,13 +737,12 @@
       },
       "calibration": {
         "selected_backend": "CPU",
-        "workers": 30,
-        "CPU_seconds": 0.0012826000020140782,
-        "GPU_seconds": 0.29305440000462113,
+        "workers": 4,
+        "CPU_seconds": 0.0015702000018791296,
         "GPU_error": null
       },
-      "seconds_including_reference_preparation": 3.2198110000026645,
-      "computed_at_UTC": "2026-11-24T06:45:39.851747+00:00",
+      "seconds_including_reference_preparation": 2.237400499994692,
+      "computed_at_UTC": "2026-11-25T07:30:16.201524+00:00",
       "objective_definition": "Weighted FSD/SSD/TSD of the complete four-week self-financing policy cumulative-return distribution against all72 buy-and-hold asset references and actual Current with cash, normalised by the actual augmented-network maximum degree. Subtract probability-weighted existing final-decision penalties; historical rows calibrate forecasts and feasibility, never become terminal outcomes.",
       "search_definition": "Feasible structured joint-policy proposals and coordinate neighbourhood search; all node variables and all terminal outcomes explicit; no global-optimality certificate.",
       "current_VLP": 140.0,
@@ -757,30 +751,30 @@
       "dominance_backend": "CPU",
       "current_NVDA": 2.814478,
       "artifact_sha256": {
-        "policy.npz": "1873a72cc5c8287f91d2465596983a538395bbe40b0c07fe298910662429e194",
-        "outcomes.npz": "5c88aaaf663a9c5ea9599b001504d0dfbec247110e36030cfb179d854206f20c",
-        "allocation.csv": "f88dcf30240c504afb0df4410240fbda5f9210e08f3ca41bb1b6b32fc4f8211d",
-        "search_trace.csv": "26dcb5795c265d8d1976079d25b9179bdea7713d841a90fe162155608bbc1e8f"
+        "policy.npz": "a1454c8e13bd318f9362e3812b47706fe14ea07f1ce4351d7057c1b6aa376f86",
+        "outcomes.npz": "3d091aa675d3b0450a8eb57b832000cc1fefcef62d88066f3074d0471d815040",
+        "allocation.csv": "28313c581bf9cac6a73fb4c52aaa9eef0a76b1a949d94a341d9ce7decfa9776d",
+        "search_trace.csv": "08a66cab3c4d0a65cd18394a9afdbac42c3cad4ddcfa0e8ad71c1de423d715d3"
       }
     },
     {
       "completed": true,
       "model": "stochA",
       "policy": "SALE",
-      "input_hash": "936f61c1651acc82a8b4da981a42a169e5f989b8accdd496d3baa59ce8a0d5b6",
-      "objective": 0.9776371933286725,
+      "input_hash": "ee42477e8809929596945ca6d3fa65c94831d4eb809b1346101356f79a6de85c",
+      "objective": 0.9830605799643835,
       "terminal": {
         "netSD": 1.0,
-        "OUT": 156,
+        "OUT": 165,
         "IN": 0,
-        "D": 156,
-        "expected_return": 0.029357712197132124,
+        "D": 165,
+        "expected_return": 0.03989097064713843,
         "scenarios": 20,
-        "probability_mass": 1.0,
+        "probability_mass": 0.9999999999999999,
         "OUT_by_order": [
-          20,
-          68,
-          68
+          27,
+          69,
+          69
         ],
         "IN_by_order": [
           0,
@@ -788,107 +782,38 @@
           0
         ]
       },
-      "expected_penalty": 0.02236280667132748,
+      "expected_penalty": 0.016939420035616496,
       "current_terminal": {
-        "netSD": 0.3935483870967742,
-        "OUT": 64,
-        "IN": 3,
-        "D": 155,
-        "expected_return": 0.005204084357514557,
-        "scenarios": 20,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          0,
-          31,
-          33
-        ],
-        "IN_by_order": [
-          0,
-          1,
-          2
-        ]
-      },
-      "initial_only_terminal": {
-        "netSD": 0.5548387096774193,
+        "netSD": 0.5333333333333333,
         "OUT": 88,
-        "IN": 2,
-        "D": 155,
-        "expected_return": 0.0071548071980087335,
+        "IN": 0,
+        "D": 165,
+        "expected_return": 0.008664151446927256,
         "scenarios": 20,
-        "probability_mass": 1.0,
+        "probability_mass": 0.9999999999999999,
         "OUT_by_order": [
-          0,
-          44,
+          4,
+          40,
           44
         ],
         "IN_by_order": [
           0,
-          1,
-          1
+          0,
+          0
         ]
       },
-      "decision_nodes": 21,
-      "scenarios": 20,
-      "stages": [
-        0,
-        10
-      ],
-      "valuation_step": 20,
-      "root_cash_EUR": 7369.5627688116365,
-      "minimum_node_cash_EUR": 1.670411802479066e-05,
-      "maximum_US_cumulative_gross_purchase_EUR": 999.999997126868,
-      "stage_cap_EUR": null,
-      "asset_cap_EUR": null,
-      "sector_cap": 0.3,
-      "evaluated_complete_policies": 10562,
-      "search_rounds": 2,
-      "attained_solution_not_global_certificate": true,
-      "recourse_rule": {
-        "mode": 1,
-        "signal": 0,
-        "fraction": 0.5
-      },
-      "calibration": {
-        "selected_backend": "CPU",
-        "workers": 30,
-        "CPU_seconds": 0.001597900001797825,
-        "GPU_seconds": 0.2939245999950799,
-        "GPU_error": null
-      },
-      "seconds_including_reference_preparation": 10.880453799996758,
-      "computed_at_UTC": "2026-11-24T06:46:09.682778+00:00",
-      "objective_definition": "Weighted FSD/SSD/TSD of the complete four-week self-financing policy cumulative-return distribution against all72 buy-and-hold asset references and actual Current with cash, normalised by the actual augmented-network maximum degree. Subtract probability-weighted existing final-decision penalties; historical rows calibrate forecasts and feasibility, never become terminal outcomes.",
-      "search_definition": "Feasible structured joint-policy proposals and coordinate neighbourhood search; all node variables and all terminal outcomes explicit; no global-optimality certificate.",
-      "current_VLP": 140.0,
-      "current_PFE": 5.883,
-      "wealth_backend": "GPU",
-      "dominance_backend": "CPU",
-      "current_NVDA": 2.814478,
-      "artifact_sha256": {
-        "policy.npz": "494808da077500b10de5377151f1e23e6412ae2cc524824d11f711ddeb3cab2d",
-        "outcomes.npz": "6078f9a0e94a381c9161e020f9c48732b4e2ecdc6ba0b20e5a50da8bf52cde9b",
-        "allocation.csv": "069d756c58c1745d513dd110de20b823d53d92ebffaa4b099b1de46318652278",
-        "search_trace.csv": "fb0b69be5aad1239c5b55a8ae864b33d62c26735de3636a7cbe1c573d920b7ef"
-      }
-    },
-    {
-      "completed": true,
-      "model": "stochA",
-      "policy": "NO_INITIAL_SALES",
-      "input_hash": "936f61c1651acc82a8b4da981a42a169e5f989b8accdd496d3baa59ce8a0d5b6",
-      "objective": 0.6286344830694015,
-      "terminal": {
-        "netSD": 0.6474358974358975,
-        "OUT": 101,
+      "initial_only_terminal": {
+        "netSD": 0.5151515151515151,
+        "OUT": 85,
         "IN": 0,
-        "D": 156,
-        "expected_return": 0.03089255588538468,
+        "D": 165,
+        "expected_return": 0.012904798311616823,
         "scenarios": 20,
-        "probability_mass": 1.0,
+        "probability_mass": 0.9999999999999999,
         "OUT_by_order": [
-          7,
-          47,
-          47
+          2,
+          40,
+          43
         ],
         "IN_by_order": [
           0,
@@ -896,45 +821,6 @@
           0
         ]
       },
-      "expected_penalty": 0.01880141436649599,
-      "current_terminal": {
-        "netSD": 0.3935483870967742,
-        "OUT": 64,
-        "IN": 3,
-        "D": 155,
-        "expected_return": 0.005204084357514557,
-        "scenarios": 20,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          0,
-          31,
-          33
-        ],
-        "IN_by_order": [
-          0,
-          1,
-          2
-        ]
-      },
-      "initial_only_terminal": {
-        "netSD": 0.3935483870967742,
-        "OUT": 64,
-        "IN": 3,
-        "D": 155,
-        "expected_return": 0.007898028527899035,
-        "scenarios": 20,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          0,
-          31,
-          33
-        ],
-        "IN_by_order": [
-          0,
-          1,
-          2
-        ]
-      },
       "decision_nodes": 21,
       "scenarios": 20,
       "stages": [
@@ -942,13 +828,13 @@
         10
       ],
       "valuation_step": 20,
-      "root_cash_EUR": 1730.6228204895106,
-      "minimum_node_cash_EUR": 1.925284323078813e-07,
-      "maximum_US_cumulative_gross_purchase_EUR": 999.9999995406619,
+      "root_cash_EUR": 1242.5092953238855,
+      "minimum_node_cash_EUR": 2.8977533474972006e-06,
+      "maximum_US_cumulative_gross_purchase_EUR": 999.9999929446961,
       "stage_cap_EUR": null,
       "asset_cap_EUR": null,
       "sector_cap": 0.3,
-      "evaluated_complete_policies": 5278,
+      "evaluated_complete_policies": 11468,
       "search_rounds": 2,
       "attained_solution_not_global_certificate": true,
       "recourse_rule": {
@@ -958,13 +844,12 @@
       },
       "calibration": {
         "selected_backend": "CPU",
-        "workers": 30,
-        "CPU_seconds": 0.0014796999967074953,
-        "GPU_seconds": 0.2968137999996543,
+        "workers": 4,
+        "CPU_seconds": 0.0015812999990885146,
         "GPU_error": null
       },
-      "seconds_including_reference_preparation": 3.152288299999782,
-      "computed_at_UTC": "2026-11-24T06:46:31.240022+00:00",
+      "seconds_including_reference_preparation": 9.894775499997195,
+      "computed_at_UTC": "2026-11-25T07:30:52.412769+00:00",
       "objective_definition": "Weighted FSD/SSD/TSD of the complete four-week self-financing policy cumulative-return distribution against all72 buy-and-hold asset references and actual Current with cash, normalised by the actual augmented-network maximum degree. Subtract probability-weighted existing final-decision penalties; historical rows calibrate forecasts and feasibility, never become terminal outcomes.",
       "search_definition": "Feasible structured joint-policy proposals and coordinate neighbourhood search; all node variables and all terminal outcomes explicit; no global-optimality certificate.",
       "current_VLP": 140.0,
@@ -973,74 +858,181 @@
       "dominance_backend": "CPU",
       "current_NVDA": 2.814478,
       "artifact_sha256": {
-        "policy.npz": "61050e5bd889eb36c2d5934ffa01eb909c002e6788e68f2b6843574c8e5bcba9",
-        "outcomes.npz": "44c183ba8f744b8988171cc7629b30b34296c093d25a125e247ca04c269ce3e4",
-        "allocation.csv": "4329b49b00c3e4788033224f225561b53eccdc59a955310b7ef5d6e0689ce438",
-        "search_trace.csv": "db72aab70bcfb206a878a6ddc0c69f5e07d6a7c2538dd3254dc9e33be94fdb0c"
+        "policy.npz": "6090e5b50505226da59f11c6c5cf6c2f75ffdc13743733d78669d5c23564c2ab",
+        "outcomes.npz": "eb924960faa32c910c3f30e7d8c517fb8ec529320fa85195678c30d128ec8b72",
+        "allocation.csv": "c6d8d32549f812b07e876a2ea582e03b2976b2bc56f25bb7a4bb822bf8dcb289",
+        "search_trace.csv": "74ea4cf497df675ca6b167ba0b0f2cfa23da414e38c6686beed99e4a22012af2"
+      }
+    },
+    {
+      "completed": true,
+      "model": "stochA",
+      "policy": "NO_INITIAL_SALES",
+      "input_hash": "ee42477e8809929596945ca6d3fa65c94831d4eb809b1346101356f79a6de85c",
+      "objective": 0.9780025416513874,
+      "terminal": {
+        "netSD": 1.0,
+        "OUT": 165,
+        "IN": 0,
+        "D": 165,
+        "expected_return": 0.0408745266434384,
+        "scenarios": 20,
+        "probability_mass": 0.9999999999999999,
+        "OUT_by_order": [
+          31,
+          67,
+          67
+        ],
+        "IN_by_order": [
+          0,
+          0,
+          0
+        ]
+      },
+      "expected_penalty": 0.02199745834861254,
+      "current_terminal": {
+        "netSD": 0.5333333333333333,
+        "OUT": 88,
+        "IN": 0,
+        "D": 165,
+        "expected_return": 0.008664151446927256,
+        "scenarios": 20,
+        "probability_mass": 0.9999999999999999,
+        "OUT_by_order": [
+          4,
+          40,
+          44
+        ],
+        "IN_by_order": [
+          0,
+          0,
+          0
+        ]
+      },
+      "initial_only_terminal": {
+        "netSD": 0.4909090909090909,
+        "OUT": 84,
+        "IN": 3,
+        "D": 165,
+        "expected_return": 0.012747571310604403,
+        "scenarios": 20,
+        "probability_mass": 0.9999999999999999,
+        "OUT_by_order": [
+          3,
+          40,
+          41
+        ],
+        "IN_by_order": [
+          1,
+          1,
+          1
+        ]
+      },
+      "decision_nodes": 21,
+      "scenarios": 20,
+      "stages": [
+        0,
+        10
+      ],
+      "valuation_step": 20,
+      "root_cash_EUR": 97.04435378208291,
+      "minimum_node_cash_EUR": 1.7348796518490417e-05,
+      "maximum_US_cumulative_gross_purchase_EUR": 999.9999995107686,
+      "stage_cap_EUR": null,
+      "asset_cap_EUR": null,
+      "sector_cap": 0.3,
+      "evaluated_complete_policies": 6149,
+      "search_rounds": 2,
+      "attained_solution_not_global_certificate": true,
+      "recourse_rule": {
+        "mode": 3,
+        "signal": 3,
+        "fraction": 1.0
+      },
+      "calibration": {
+        "selected_backend": "CPU",
+        "workers": 4,
+        "CPU_seconds": 0.0013600000020232983,
+        "GPU_error": null
+      },
+      "seconds_including_reference_preparation": 2.151965000004566,
+      "computed_at_UTC": "2026-11-25T07:31:21.318205+00:00",
+      "objective_definition": "Weighted FSD/SSD/TSD of the complete four-week self-financing policy cumulative-return distribution against all72 buy-and-hold asset references and actual Current with cash, normalised by the actual augmented-network maximum degree. Subtract probability-weighted existing final-decision penalties; historical rows calibrate forecasts and feasibility, never become terminal outcomes.",
+      "search_definition": "Feasible structured joint-policy proposals and coordinate neighbourhood search; all node variables and all terminal outcomes explicit; no global-optimality certificate.",
+      "current_VLP": 140.0,
+      "current_PFE": 5.883,
+      "wealth_backend": "GPU",
+      "dominance_backend": "CPU",
+      "current_NVDA": 2.814478,
+      "artifact_sha256": {
+        "policy.npz": "7feacb773f6fa7467765d8536549273c18ec0ca1521ee773de0a9a10dd597f2a",
+        "outcomes.npz": "89a19c789424432f2828b34a858cd2d58f4466a0d8ac714a44a23ef0b47b80a1",
+        "allocation.csv": "a29c5ba75d98eb8ddf58099373e8bff567a550495b68ef5ca2272cf76402f903",
+        "search_trace.csv": "1b39459eb950778b5781698c75e842c55291dd24449cd4ecdbce2c81bda483f8"
       }
     },
     {
       "completed": true,
       "model": "stoch2A",
       "policy": "NO_SALE",
-      "input_hash": "936f61c1651acc82a8b4da981a42a169e5f989b8accdd496d3baa59ce8a0d5b6",
-      "objective": 0.20194118729063887,
+      "input_hash": "ee42477e8809929596945ca6d3fa65c94831d4eb809b1346101356f79a6de85c",
+      "objective": 0.3626619106283304,
       "terminal": {
-        "netSD": 0.22699386503067484,
-        "OUT": 47,
-        "IN": 10,
-        "D": 163,
-        "expected_return": 0.007662108895638373,
+        "netSD": 0.3878787878787879,
+        "OUT": 68,
+        "IN": 4,
+        "D": 165,
+        "expected_return": 0.009097224938727057,
         "scenarios": 16000,
-        "probability_mass": 1.0,
+        "probability_mass": 0.9999999999999998,
         "OUT_by_order": [
-          5,
-          21,
-          21
+          8,
+          29,
+          31
         ],
         "IN_by_order": [
           0,
-          5,
-          5
+          2,
+          2
         ]
       },
-      "expected_penalty": 0.025052677740035965,
+      "expected_penalty": 0.025216877250457466,
       "current_terminal": {
-        "netSD": 0.20245398773006135,
-        "OUT": 47,
-        "IN": 14,
-        "D": 163,
-        "expected_return": 0.005615599100818802,
+        "netSD": 0.2710843373493976,
+        "OUT": 54,
+        "IN": 9,
+        "D": 166,
+        "expected_return": 0.006024458749863736,
         "scenarios": 16000,
-        "probability_mass": 1.0,
+        "probability_mass": 0.9999999999999998,
         "OUT_by_order": [
-          5,
-          20,
-          22
+          7,
+          23,
+          24
         ],
         "IN_by_order": [
-          0,
-          7,
-          7
+          1,
+          4,
+          4
         ]
       },
       "initial_only_terminal": {
-        "netSD": 0.20245398773006135,
-        "OUT": 47,
-        "IN": 14,
-        "D": 163,
-        "expected_return": 0.005615599100818795,
+        "netSD": 0.3212121212121212,
+        "OUT": 59,
+        "IN": 6,
+        "D": 165,
+        "expected_return": 0.007076528270378854,
         "scenarios": 16000,
-        "probability_mass": 1.0,
+        "probability_mass": 0.9999999999999998,
         "OUT_by_order": [
-          5,
-          20,
-          22
+          8,
+          25,
+          26
         ],
         "IN_by_order": [
           0,
-          7,
-          7
+          3,
+          3
         ]
       },
       "decision_nodes": 4421,
@@ -1052,29 +1044,28 @@
         15
       ],
       "valuation_step": 20,
-      "root_cash_EUR": 2480.622768811638,
-      "minimum_node_cash_EUR": 980.6228531405395,
-      "maximum_US_cumulative_gross_purchase_EUR": 999.9999999795658,
+      "root_cash_EUR": 1294.014522185933,
+      "minimum_node_cash_EUR": 2.31959205621024e-07,
+      "maximum_US_cumulative_gross_purchase_EUR": 999.999999995428,
       "stage_cap_EUR": null,
       "asset_cap_EUR": null,
       "sector_cap": 0.3,
-      "evaluated_complete_policies": 3812,
+      "evaluated_complete_policies": 5472,
       "search_rounds": 2,
       "attained_solution_not_global_certificate": true,
       "recourse_rule": {
-        "mode": 1,
-        "signal": 1,
+        "mode": 3,
+        "signal": 0,
         "fraction": 0.5
       },
       "calibration": {
         "selected_backend": "CPU",
-        "workers": 30,
-        "CPU_seconds": 0.0034464999989722855,
-        "GPU_seconds": 0.3138241000051494,
+        "workers": 4,
+        "CPU_seconds": 0.00832079999963753,
         "GPU_error": null
       },
-      "seconds_including_reference_preparation": 129.7713569999978,
-      "computed_at_UTC": "2026-11-24T06:29:26.812898+00:00",
+      "seconds_including_reference_preparation": 48.194782600003236,
+      "computed_at_UTC": "2026-11-25T07:12:03.164899+00:00",
       "objective_definition": "Weighted FSD/SSD/TSD of the complete four-week self-financing policy cumulative-return distribution against all72 buy-and-hold asset references and actual Current with cash, normalised by the actual augmented-network maximum degree. Subtract probability-weighted existing final-decision penalties; historical rows calibrate forecasts and feasibility, never become terminal outcomes.",
       "search_definition": "Feasible structured joint-policy proposals and coordinate neighbourhood search; all node variables and all terminal outcomes explicit; no global-optimality certificate.",
       "current_VLP": 140.0,
@@ -1083,37 +1074,178 @@
       "dominance_backend": "CPU",
       "current_NVDA": 2.814478,
       "artifact_sha256": {
-        "policy.npz": "201aaa610c96dcf0e8c6d5b6cb35fc395736cf108526fae78e09f45350cb4d0e",
-        "outcomes.npz": "a9d42f25f64c03914dacb0fe4ea075ed90f98661ad592796d5f989abc6423f5e",
-        "allocation.csv": "327bfde606ce42cad55e4ce5a6f888c91eaad1c722ee17c7b6d1d9d6527cb1bb",
-        "search_trace.csv": "87f6815adad4b19add8c8a943218da28e16fcaa2fd7a36518054b561577f9ac5"
-      },
-      "feasible_inclusion": {
-        "source_model": "STOCHASTIC2",
-        "source_policy": "NO_SALE",
-        "target_previous_objective": 0.18384168313037813,
-        "why": "Known feasible policy belongs to the relaxed feasible set; no new optimality claim",
-        "target_original_search_seconds": 15.782985399993777
+        "policy.npz": "5b9f5f61112ef8827026c7b7824685d2c20bdaeaa9044b2761713d6551b8e0c8",
+        "outcomes.npz": "c215915ece2f09d0c15170cce692df1f0e6bed116aea3e63232fae36bebd714e",
+        "allocation.csv": "6f4993edd1c79214883cdb7f73054c5ed0d0f9e1972e192f009337cdfe7aeed5",
+        "search_trace.csv": "3691fbe998d1a87021ef9f4c3bb6e109603d77c59cfdaf71e13a87cfbbe5b79f"
       }
     },
     {
       "completed": true,
       "model": "stoch2A",
       "policy": "SALE",
-      "input_hash": "936f61c1651acc82a8b4da981a42a169e5f989b8accdd496d3baa59ce8a0d5b6",
-      "objective": 0.5426003089830442,
+      "input_hash": "ee42477e8809929596945ca6d3fa65c94831d4eb809b1346101356f79a6de85c",
+      "objective": 0.7400744485021019,
       "terminal": {
-        "netSD": 0.5555555555555556,
-        "OUT": 97,
-        "IN": 7,
-        "D": 162,
-        "expected_return": 0.008214137455327201,
+        "netSD": 0.7575757575757576,
+        "OUT": 127,
+        "IN": 2,
+        "D": 165,
+        "expected_return": 0.012927570668505505,
         "scenarios": 16000,
-        "probability_mass": 1.0,
+        "probability_mass": 0.9999999999999998,
+        "OUT_by_order": [
+          21,
+          52,
+          54
+        ],
+        "IN_by_order": [
+          0,
+          1,
+          1
+        ]
+      },
+      "expected_penalty": 0.017501309073655606,
+      "current_terminal": {
+        "netSD": 0.2710843373493976,
+        "OUT": 54,
+        "IN": 9,
+        "D": 166,
+        "expected_return": 0.006024458749863736,
+        "scenarios": 16000,
+        "probability_mass": 0.9999999999999998,
+        "OUT_by_order": [
+          7,
+          23,
+          24
+        ],
+        "IN_by_order": [
+          1,
+          4,
+          4
+        ]
+      },
+      "initial_only_terminal": {
+        "netSD": 0.7300613496932515,
+        "OUT": 119,
+        "IN": 0,
+        "D": 163,
+        "expected_return": 0.009106952592514055,
+        "scenarios": 16000,
+        "probability_mass": 0.9999999999999998,
+        "OUT_by_order": [
+          16,
+          51,
+          52
+        ],
+        "IN_by_order": [
+          0,
+          0,
+          0
+        ]
+      },
+      "decision_nodes": 4421,
+      "scenarios": 16000,
+      "stages": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "valuation_step": 20,
+      "root_cash_EUR": 2840.188727273884,
+      "minimum_node_cash_EUR": 6.226629665206929e-06,
+      "maximum_US_cumulative_gross_purchase_EUR": 999.9999999963526,
+      "stage_cap_EUR": null,
+      "asset_cap_EUR": null,
+      "sector_cap": 0.3,
+      "evaluated_complete_policies": 11344,
+      "search_rounds": 2,
+      "attained_solution_not_global_certificate": true,
+      "recourse_rule": {
+        "mode": 3,
+        "signal": 2,
+        "fraction": 0.5
+      },
+      "calibration": {
+        "selected_backend": "CPU",
+        "workers": 4,
+        "CPU_seconds": 0.007970200000045224,
+        "GPU_error": null
+      },
+      "seconds_including_reference_preparation": 279.3458485,
+      "computed_at_UTC": "2026-11-25T07:51:58.742127+00:00",
+      "objective_definition": "Weighted FSD/SSD/TSD of the complete four-week self-financing policy cumulative-return distribution against all72 buy-and-hold asset references and actual Current with cash, normalised by the actual augmented-network maximum degree. Subtract probability-weighted existing final-decision penalties; historical rows calibrate forecasts and feasibility, never become terminal outcomes.",
+      "search_definition": "Feasible structured joint-policy proposals and coordinate neighbourhood search; all node variables and all terminal outcomes explicit; no global-optimality certificate.",
+      "current_VLP": 140.0,
+      "current_PFE": 5.883,
+      "wealth_backend": "GPU",
+      "dominance_backend": "CPU",
+      "current_NVDA": 2.814478,
+      "artifact_sha256": {
+        "policy.npz": "f79c134c92a4a5c18ddbc12e4f62d345895afd8ac28f9864546ea29838443166",
+        "outcomes.npz": "2ec698969ab2946590b3f6c7f49ad0ddca4a4b996e70edce506ee3a31bd32231",
+        "allocation.csv": "4c59cc86f22d2e843aac8147f16ecc33ed898e5e0a44196a8aa448759127f8a9",
+        "search_trace.csv": "e94e3487eadcea7a33bf763b9f27de634cd07d0729734d2567b12ddfa81f334c"
+      }
+    },
+    {
+      "completed": true,
+      "model": "stoch2A",
+      "policy": "NO_INITIAL_SALES",
+      "input_hash": "ee42477e8809929596945ca6d3fa65c94831d4eb809b1346101356f79a6de85c",
+      "objective": 0.48993332790369276,
+      "terminal": {
+        "netSD": 0.5120481927710844,
+        "OUT": 89,
+        "IN": 4,
+        "D": 166,
+        "expected_return": 0.009464919431675788,
+        "scenarios": 16000,
+        "probability_mass": 0.9999999999999998,
+        "OUT_by_order": [
+          9,
+          39,
+          41
+        ],
+        "IN_by_order": [
+          1,
+          1,
+          2
+        ]
+      },
+      "expected_penalty": 0.0221148648673916,
+      "current_terminal": {
+        "netSD": 0.2710843373493976,
+        "OUT": 54,
+        "IN": 9,
+        "D": 166,
+        "expected_return": 0.006024458749863736,
+        "scenarios": 16000,
+        "probability_mass": 0.9999999999999998,
+        "OUT_by_order": [
+          7,
+          23,
+          24
+        ],
+        "IN_by_order": [
+          1,
+          4,
+          4
+        ]
+      },
+      "initial_only_terminal": {
+        "netSD": 0.3072289156626506,
+        "OUT": 58,
+        "IN": 7,
+        "D": 166,
+        "expected_return": 0.0062971868835325455,
+        "scenarios": 16000,
+        "probability_mass": 0.9999999999999998,
         "OUT_by_order": [
           8,
-          44,
-          45
+          24,
+          26
         ],
         "IN_by_order": [
           1,
@@ -1121,45 +1253,6 @@
           3
         ]
       },
-      "expected_penalty": 0.012955246572511372,
-      "current_terminal": {
-        "netSD": 0.20245398773006135,
-        "OUT": 47,
-        "IN": 14,
-        "D": 163,
-        "expected_return": 0.005615599100818802,
-        "scenarios": 16000,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          5,
-          20,
-          22
-        ],
-        "IN_by_order": [
-          0,
-          7,
-          7
-        ]
-      },
-      "initial_only_terminal": {
-        "netSD": 0.4382716049382716,
-        "OUT": 79,
-        "IN": 8,
-        "D": 162,
-        "expected_return": 0.005919413949171612,
-        "scenarios": 16000,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          8,
-          35,
-          36
-        ],
-        "IN_by_order": [
-          0,
-          3,
-          5
-        ]
-      },
       "decision_nodes": 4421,
       "scenarios": 16000,
       "stages": [
@@ -1169,29 +1262,28 @@
         15
       ],
       "valuation_step": 20,
-      "root_cash_EUR": 6723.377776811636,
-      "minimum_node_cash_EUR": 6080.9805082856965,
-      "maximum_US_cumulative_gross_purchase_EUR": 999.9999999936965,
+      "root_cash_EUR": 1594.0144347238856,
+      "minimum_node_cash_EUR": 1944.767138374856,
+      "maximum_US_cumulative_gross_purchase_EUR": 999.9999999741403,
       "stage_cap_EUR": null,
       "asset_cap_EUR": null,
       "sector_cap": 0.3,
-      "evaluated_complete_policies": 8018,
+      "evaluated_complete_policies": 4362,
       "search_rounds": 2,
       "attained_solution_not_global_certificate": true,
       "recourse_rule": {
         "mode": 3,
         "signal": 0,
-        "fraction": 0.5
+        "fraction": 1.0
       },
       "calibration": {
         "selected_backend": "CPU",
-        "workers": 30,
-        "CPU_seconds": 0.0035139000028721057,
-        "GPU_seconds": 0.3237245999989682,
+        "workers": 4,
+        "CPU_seconds": 0.008246399993367959,
         "GPU_error": null
       },
-      "seconds_including_reference_preparation": 169.6718417000011,
-      "computed_at_UTC": "2026-11-24T06:33:02.583327+00:00",
+      "seconds_including_reference_preparation": 95.00820010000461,
+      "computed_at_UTC": "2026-11-25T07:10:34.076490+00:00",
       "objective_definition": "Weighted FSD/SSD/TSD of the complete four-week self-financing policy cumulative-return distribution against all72 buy-and-hold asset references and actual Current with cash, normalised by the actual augmented-network maximum degree. Subtract probability-weighted existing final-decision penalties; historical rows calibrate forecasts and feasibility, never become terminal outcomes.",
       "search_definition": "Feasible structured joint-policy proposals and coordinate neighbourhood search; all node variables and all terminal outcomes explicit; no global-optimality certificate.",
       "current_VLP": 140.0,
@@ -1200,134 +1292,17 @@
       "dominance_backend": "CPU",
       "current_NVDA": 2.814478,
       "artifact_sha256": {
-        "policy.npz": "d34bb92f2d9682c5ff241dd8170c9d28aa8c7e3c63e308cfdbec8249986b3282",
-        "outcomes.npz": "bcbc775b3628b3f6f5774a775bc7dd32b32a6bcb6c4a996286b0f256e3385914",
-        "allocation.csv": "c86da468ab3edfad4a0525e19af59f7f4aeb11717656f700265cbd6e7c7773a6",
-        "search_trace.csv": "4202785462153f0fc15878c164f43a1f89e47e6d7a4bdc14cacd9e72e04e47ec"
-      },
-      "feasible_inclusion": {
-        "source_model": "STOCHASTIC2",
-        "source_policy": "SALE",
-        "target_previous_objective": 0.5095527933374605,
-        "why": "Known feasible policy belongs to the relaxed feasible set; no new optimality claim",
-        "target_original_search_seconds": 344.909713699999
-      }
-    },
-    {
-      "completed": true,
-      "model": "stoch2A",
-      "policy": "NO_INITIAL_SALES",
-      "input_hash": "936f61c1651acc82a8b4da981a42a169e5f989b8accdd496d3baa59ce8a0d5b6",
-      "objective": 0.38812897708007116,
-      "terminal": {
-        "netSD": 0.4110429447852761,
-        "OUT": 73,
-        "IN": 6,
-        "D": 163,
-        "expected_return": 0.00873065674614116,
-        "scenarios": 16000,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          9,
-          31,
-          33
-        ],
-        "IN_by_order": [
-          0,
-          3,
-          3
-        ]
-      },
-      "expected_penalty": 0.02291396770520492,
-      "current_terminal": {
-        "netSD": 0.20245398773006135,
-        "OUT": 47,
-        "IN": 14,
-        "D": 163,
-        "expected_return": 0.005615599100818802,
-        "scenarios": 16000,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          5,
-          20,
-          22
-        ],
-        "IN_by_order": [
-          0,
-          7,
-          7
-        ]
-      },
-      "initial_only_terminal": {
-        "netSD": 0.19631901840490798,
-        "OUT": 46,
-        "IN": 14,
-        "D": 163,
-        "expected_return": 0.005893072120629133,
-        "scenarios": 16000,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          4,
-          20,
-          22
-        ],
-        "IN_by_order": [
-          0,
-          7,
-          7
-        ]
-      },
-      "decision_nodes": 4421,
-      "scenarios": 16000,
-      "stages": [
-        0,
-        5,
-        10,
-        15
-      ],
-      "valuation_step": 20,
-      "root_cash_EUR": 1480.6363405116372,
-      "minimum_node_cash_EUR": 3584.161858949455,
-      "maximum_US_cumulative_gross_purchase_EUR": 999.9999999936965,
-      "stage_cap_EUR": null,
-      "asset_cap_EUR": null,
-      "sector_cap": 0.3,
-      "evaluated_complete_policies": 4071,
-      "search_rounds": 2,
-      "attained_solution_not_global_certificate": true,
-      "recourse_rule": {
-        "mode": 3,
-        "signal": 0,
-        "fraction": 0.5
-      },
-      "calibration": {
-        "selected_backend": "CPU",
-        "workers": 30,
-        "CPU_seconds": 0.003397899999981746,
-        "GPU_seconds": 0.3224917999978061,
-        "GPU_error": null
-      },
-      "seconds_including_reference_preparation": 115.3061005999989,
-      "computed_at_UTC": "2026-11-24T06:35:23.734061+00:00",
-      "objective_definition": "Weighted FSD/SSD/TSD of the complete four-week self-financing policy cumulative-return distribution against all72 buy-and-hold asset references and actual Current with cash, normalised by the actual augmented-network maximum degree. Subtract probability-weighted existing final-decision penalties; historical rows calibrate forecasts and feasibility, never become terminal outcomes.",
-      "search_definition": "Feasible structured joint-policy proposals and coordinate neighbourhood search; all node variables and all terminal outcomes explicit; no global-optimality certificate.",
-      "current_VLP": 140.0,
-      "current_PFE": 5.883,
-      "wealth_backend": "GPU",
-      "dominance_backend": "CPU",
-      "current_NVDA": 2.814478,
-      "artifact_sha256": {
-        "policy.npz": "5d10b867bd910ca739ddee7fd9a8777b1d7861c70daf5c55fd5935e123922b97",
-        "outcomes.npz": "4a3e951cbab4e47a8044f1be25c14c1bb4b98ce3a5bb948e6c1a0e78ae929584",
-        "allocation.csv": "d231c145f7cdc5b5ff520fc643457500c7d4c78cb82cc9dc7b853238ec33ac03",
-        "search_trace.csv": "145e7e8fbe85adf7e0e6512b05138cf2ccaaa7b9ce95bbee87909518f36a4cdf"
+        "policy.npz": "5969c3f1af6ef8c2541063a1c0a4466b890dcff4ea6ea4125207936f6f566bdd",
+        "outcomes.npz": "d34fc61cc76bd2d1cf5b9841895b8bb93c8cdf04965540b8b78320ef68dff0e6",
+        "allocation.csv": "bddf693d6c84652e709450e97573e9c5b9f6efc726417991ad6324430450f958",
+        "search_trace.csv": "9573632ad789b1dce6eb7e0514e657fa88938df015a460f95f7cdf59d5212d15"
       },
       "feasible_inclusion": {
         "source_model": "STOCHASTIC2",
         "source_policy": "NO_INITIAL_SALES",
-        "target_previous_objective": 0.2791840805110525,
+        "target_previous_objective": 0.3962627510871336,
         "why": "Known feasible policy belongs to the relaxed feasible set; no new optimality claim",
-        "target_original_search_seconds": 47.93017709999549
+        "target_original_search_seconds": 54.52451999999903
       }
     }
   ],
@@ -1336,232 +1311,16 @@
       "model": "STOCHASTIC",
       "policy": "SALE",
       "terminal": {
-        "netSD": 0.4506172839506173,
-        "OUT": 79,
-        "IN": 6,
-        "D": 162,
-        "expected_return": 0.007134708288721914,
-        "scenarios": 16000,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          10,
-          34,
-          35
-        ],
-        "IN_by_order": [
-          0,
-          3,
-          3
-        ]
-      },
-      "execution": "Initial allocation held through week4; no later trades"
-    },
-    {
-      "model": "STOCHASTIC",
-      "policy": "NO_SALE",
-      "terminal": {
-        "netSD": 0.22699386503067484,
-        "OUT": 47,
-        "IN": 10,
-        "D": 163,
-        "expected_return": 0.006909208185107164,
-        "scenarios": 16000,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          5,
-          21,
-          21
-        ],
-        "IN_by_order": [
-          0,
-          5,
-          5
-        ]
-      },
-      "execution": "Initial allocation held through week4; no later trades"
-    },
-    {
-      "model": "STOCHASTIC2",
-      "policy": "SALE",
-      "terminal": {
-        "netSD": 0.4382716049382716,
-        "OUT": 79,
-        "IN": 8,
-        "D": 162,
-        "expected_return": 0.005919413949171612,
-        "scenarios": 16000,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          8,
-          35,
-          36
-        ],
-        "IN_by_order": [
-          0,
-          3,
-          5
-        ]
-      },
-      "execution": "Initial allocation held through week4; no later trades"
-    },
-    {
-      "model": "STOCHASTIC2",
-      "policy": "NO_SALE",
-      "terminal": {
-        "netSD": 0.20245398773006135,
-        "OUT": 47,
-        "IN": 14,
-        "D": 163,
-        "expected_return": 0.005615599100818795,
-        "scenarios": 16000,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          5,
-          20,
-          22
-        ],
-        "IN_by_order": [
-          0,
-          7,
-          7
-        ]
-      },
-      "execution": "Initial allocation held through week4; no later trades"
-    },
-    {
-      "model": "stochA",
-      "policy": "SALE",
-      "terminal": {
-        "netSD": 0.4074074074074074,
-        "OUT": 75,
-        "IN": 9,
-        "D": 162,
-        "expected_return": 0.005833154838188342,
-        "scenarios": 16000,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          8,
-          33,
-          34
-        ],
-        "IN_by_order": [
-          0,
-          4,
-          5
-        ]
-      },
-      "execution": "Initial allocation held through week4; no later trades"
-    },
-    {
-      "model": "stochA",
-      "policy": "NO_SALE",
-      "terminal": {
-        "netSD": 0.20245398773006135,
-        "OUT": 47,
-        "IN": 14,
-        "D": 163,
-        "expected_return": 0.006323899130132045,
-        "scenarios": 16000,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          5,
-          21,
-          21
-        ],
-        "IN_by_order": [
-          0,
-          7,
-          7
-        ]
-      },
-      "execution": "Initial allocation held through week4; no later trades"
-    },
-    {
-      "model": "stoch2A",
-      "policy": "SALE",
-      "terminal": {
-        "netSD": 0.4382716049382716,
-        "OUT": 79,
-        "IN": 8,
-        "D": 162,
-        "expected_return": 0.005919413949171612,
-        "scenarios": 16000,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          8,
-          35,
-          36
-        ],
-        "IN_by_order": [
-          0,
-          3,
-          5
-        ]
-      },
-      "execution": "Initial allocation held through week4; no later trades"
-    },
-    {
-      "model": "stoch2A",
-      "policy": "NO_SALE",
-      "terminal": {
-        "netSD": 0.20245398773006135,
-        "OUT": 47,
-        "IN": 14,
-        "D": 163,
-        "expected_return": 0.005615599100818795,
-        "scenarios": 16000,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          5,
-          20,
-          22
-        ],
-        "IN_by_order": [
-          0,
-          7,
-          7
-        ]
-      },
-      "execution": "Initial allocation held through week4; no later trades"
-    },
-    {
-      "model": "MARKOWITZ",
-      "policy": "NO_SALE",
-      "terminal": {
-        "netSD": 0.19631901840490798,
-        "OUT": 47,
-        "IN": 15,
-        "D": 163,
-        "expected_return": 0.005498537787536613,
-        "scenarios": 16000,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          5,
-          20,
-          22
-        ],
-        "IN_by_order": [
-          0,
-          7,
-          8
-        ]
-      },
-      "execution": "Initial allocation held through week4; no later trades"
-    },
-    {
-      "model": "MARKOWITZ",
-      "policy": "SALE",
-      "terminal": {
-        "netSD": 0.5370370370370371,
-        "OUT": 92,
+        "netSD": 0.5542168674698795,
+        "OUT": 97,
         "IN": 5,
-        "D": 162,
-        "expected_return": 0.005808654419168545,
+        "D": 166,
+        "expected_return": 0.00736045031964386,
         "scenarios": 16000,
-        "probability_mass": 1.0,
+        "probability_mass": 0.9999999999999998,
         "OUT_by_order": [
-          6,
-          43,
+          13,
+          41,
           43
         ],
         "IN_by_order": [
@@ -1573,47 +1332,95 @@
       "execution": "Initial allocation held through week4; no later trades"
     },
     {
-      "model": "MINIMAX",
+      "model": "STOCHASTIC",
       "policy": "NO_SALE",
       "terminal": {
-        "netSD": 0.1901840490797546,
-        "OUT": 45,
-        "IN": 14,
-        "D": 163,
-        "expected_return": 0.005748810657486822,
+        "netSD": 0.29518072289156627,
+        "OUT": 56,
+        "IN": 7,
+        "D": 166,
+        "expected_return": 0.006184097836835339,
         "scenarios": 16000,
-        "probability_mass": 1.0,
+        "probability_mass": 0.9999999999999998,
         "OUT_by_order": [
-          5,
-          20,
-          20
+          7,
+          24,
+          25
         ],
         "IN_by_order": [
-          0,
-          7,
-          7
+          1,
+          3,
+          3
         ]
       },
       "execution": "Initial allocation held through week4; no later trades"
     },
     {
-      "model": "MINIMAX",
+      "model": "STOCHASTIC2",
       "policy": "SALE",
       "terminal": {
-        "netSD": 0.5617283950617284,
-        "OUT": 93,
-        "IN": 2,
-        "D": 162,
-        "expected_return": 0.00583355153878406,
+        "netSD": 0.6545454545454545,
+        "OUT": 112,
+        "IN": 4,
+        "D": 165,
+        "expected_return": 0.0075167201877176255,
         "scenarios": 16000,
-        "probability_mass": 1.0,
+        "probability_mass": 0.9999999999999998,
         "OUT_by_order": [
-          5,
-          44,
-          44
+          16,
+          48,
+          48
         ],
         "IN_by_order": [
           0,
+          2,
+          2
+        ]
+      },
+      "execution": "Initial allocation held through week4; no later trades"
+    },
+    {
+      "model": "STOCHASTIC2",
+      "policy": "NO_SALE",
+      "terminal": {
+        "netSD": 0.3393939393939394,
+        "OUT": 62,
+        "IN": 6,
+        "D": 165,
+        "expected_return": 0.007501173089213321,
+        "scenarios": 16000,
+        "probability_mass": 0.9999999999999998,
+        "OUT_by_order": [
+          9,
+          26,
+          27
+        ],
+        "IN_by_order": [
+          0,
+          3,
+          3
+        ]
+      },
+      "execution": "Initial allocation held through week4; no later trades"
+    },
+    {
+      "model": "stochA",
+      "policy": "SALE",
+      "terminal": {
+        "netSD": 0.5301204819277109,
+        "OUT": 91,
+        "IN": 3,
+        "D": 166,
+        "expected_return": 0.00982833589558915,
+        "scenarios": 16000,
+        "probability_mass": 0.9999999999999998,
+        "OUT_by_order": [
+          12,
+          37,
+          42
+        ],
+        "IN_by_order": [
+          1,
           1,
           1
         ]
@@ -1621,193 +1428,361 @@
       "execution": "Initial allocation held through week4; no later trades"
     },
     {
-      "model": "ROBUST",
+      "model": "stochA",
       "policy": "NO_SALE",
       "terminal": {
-        "netSD": 0.19631901840490798,
-        "OUT": 47,
-        "IN": 15,
-        "D": 163,
-        "expected_return": 0.005498537787536613,
+        "netSD": 0.2710843373493976,
+        "OUT": 54,
+        "IN": 9,
+        "D": 166,
+        "expected_return": 0.00602445874986373,
         "scenarios": 16000,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          5,
-          20,
-          22
-        ],
-        "IN_by_order": [
-          0,
-          7,
-          8
-        ]
-      },
-      "execution": "Initial allocation held through week4; no later trades"
-    },
-    {
-      "model": "ROBUST",
-      "policy": "SALE",
-      "terminal": {
-        "netSD": 0.5617283950617284,
-        "OUT": 93,
-        "IN": 2,
-        "D": 162,
-        "expected_return": 0.005889439551301244,
-        "scenarios": 16000,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          5,
-          44,
-          44
-        ],
-        "IN_by_order": [
-          0,
-          1,
-          1
-        ]
-      },
-      "execution": "Initial allocation held through week4; no later trades"
-    },
-    {
-      "model": "UPDATE2",
-      "policy": "NO_SALE",
-      "terminal": {
-        "netSD": 0.1901840490797546,
-        "OUT": 41,
-        "IN": 10,
-        "D": 163,
-        "expected_return": 0.007407191991327302,
-        "scenarios": 16000,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          3,
-          19,
-          19
-        ],
-        "IN_by_order": [
-          0,
-          5,
-          5
-        ]
-      },
-      "execution": "Initial allocation held through week4; no later trades"
-    },
-    {
-      "model": "UPDATE2",
-      "policy": "SALE",
-      "terminal": {
-        "netSD": 0.4506172839506173,
-        "OUT": 81,
-        "IN": 8,
-        "D": 162,
-        "expected_return": 0.005168763105790799,
-        "scenarios": 16000,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          6,
-          36,
-          39
-        ],
-        "IN_by_order": [
-          1,
-          3,
-          4
-        ]
-      },
-      "execution": "Initial allocation held through week4; no later trades"
-    },
-    {
-      "model": "UPDATE3",
-      "policy": "NO_SALE",
-      "terminal": {
-        "netSD": 0.1901840490797546,
-        "OUT": 41,
-        "IN": 10,
-        "D": 163,
-        "expected_return": 0.007407191991327302,
-        "scenarios": 16000,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          3,
-          19,
-          19
-        ],
-        "IN_by_order": [
-          0,
-          5,
-          5
-        ]
-      },
-      "execution": "Initial allocation held through week4; no later trades"
-    },
-    {
-      "model": "UPDATE3",
-      "policy": "SALE",
-      "terminal": {
-        "netSD": 0.4506172839506173,
-        "OUT": 81,
-        "IN": 8,
-        "D": 162,
-        "expected_return": 0.005168763105790799,
-        "scenarios": 16000,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
-          6,
-          36,
-          39
-        ],
-        "IN_by_order": [
-          1,
-          3,
-          4
-        ]
-      },
-      "execution": "Initial allocation held through week4; no later trades"
-    },
-    {
-      "model": "NETSD",
-      "policy": "SALE",
-      "terminal": {
-        "netSD": 0.35802469135802467,
-        "OUT": 68,
-        "IN": 10,
-        "D": 162,
-        "expected_return": 0.0055780846367334495,
-        "scenarios": 16000,
-        "probability_mass": 1.0,
+        "probability_mass": 0.9999999999999998,
         "OUT_by_order": [
           7,
-          30,
-          31
+          23,
+          24
         ],
         "IN_by_order": [
-          0,
-          5,
-          5
-        ]
-      },
-      "execution": "Initial allocation held through week4; no later trades"
-    },
-    {
-      "model": "NETSD",
-      "policy": "NO_SALE",
-      "terminal": {
-        "netSD": 0.19631901840490798,
-        "OUT": 44,
-        "IN": 12,
-        "D": 163,
-        "expected_return": 0.0065351702440710376,
-        "scenarios": 16000,
-        "probability_mass": 1.0,
-        "OUT_by_order": [
+          1,
           4,
-          20,
-          20
+          4
+        ]
+      },
+      "execution": "Initial allocation held through week4; no later trades"
+    },
+    {
+      "model": "stoch2A",
+      "policy": "SALE",
+      "terminal": {
+        "netSD": 0.7300613496932515,
+        "OUT": 119,
+        "IN": 0,
+        "D": 163,
+        "expected_return": 0.009106952592514055,
+        "scenarios": 16000,
+        "probability_mass": 0.9999999999999998,
+        "OUT_by_order": [
+          16,
+          51,
+          52
         ],
         "IN_by_order": [
           0,
-          6,
-          6
+          0,
+          0
+        ]
+      },
+      "execution": "Initial allocation held through week4; no later trades"
+    },
+    {
+      "model": "stoch2A",
+      "policy": "NO_SALE",
+      "terminal": {
+        "netSD": 0.3212121212121212,
+        "OUT": 59,
+        "IN": 6,
+        "D": 165,
+        "expected_return": 0.007076528270378854,
+        "scenarios": 16000,
+        "probability_mass": 0.9999999999999998,
+        "OUT_by_order": [
+          8,
+          25,
+          26
+        ],
+        "IN_by_order": [
+          0,
+          3,
+          3
+        ]
+      },
+      "execution": "Initial allocation held through week4; no later trades"
+    },
+    {
+      "model": "MARKOWITZ",
+      "policy": "NO_SALE",
+      "terminal": {
+        "netSD": 0.25301204819277107,
+        "OUT": 52,
+        "IN": 10,
+        "D": 166,
+        "expected_return": 0.005920969894294582,
+        "scenarios": 16000,
+        "probability_mass": 0.9999999999999998,
+        "OUT_by_order": [
+          7,
+          22,
+          23
+        ],
+        "IN_by_order": [
+          1,
+          4,
+          5
+        ]
+      },
+      "execution": "Initial allocation held through week4; no later trades"
+    },
+    {
+      "model": "MARKOWITZ",
+      "policy": "SALE",
+      "terminal": {
+        "netSD": 0.6073619631901841,
+        "OUT": 99,
+        "IN": 0,
+        "D": 163,
+        "expected_return": 0.005915774804859284,
+        "scenarios": 16000,
+        "probability_mass": 0.9999999999999998,
+        "OUT_by_order": [
+          9,
+          45,
+          45
+        ],
+        "IN_by_order": [
+          0,
+          0,
+          0
+        ]
+      },
+      "execution": "Initial allocation held through week4; no later trades"
+    },
+    {
+      "model": "MINIMAX",
+      "policy": "NO_SALE",
+      "terminal": {
+        "netSD": 0.29518072289156627,
+        "OUT": 56,
+        "IN": 7,
+        "D": 166,
+        "expected_return": 0.006211454026842867,
+        "scenarios": 16000,
+        "probability_mass": 0.9999999999999998,
+        "OUT_by_order": [
+          7,
+          24,
+          25
+        ],
+        "IN_by_order": [
+          1,
+          3,
+          3
+        ]
+      },
+      "execution": "Initial allocation held through week4; no later trades"
+    },
+    {
+      "model": "MINIMAX",
+      "policy": "SALE",
+      "terminal": {
+        "netSD": 0.6871165644171779,
+        "OUT": 112,
+        "IN": 0,
+        "D": 163,
+        "expected_return": 0.006110173680132198,
+        "scenarios": 16000,
+        "probability_mass": 0.9999999999999998,
+        "OUT_by_order": [
+          10,
+          50,
+          52
+        ],
+        "IN_by_order": [
+          0,
+          0,
+          0
+        ]
+      },
+      "execution": "Initial allocation held through week4; no later trades"
+    },
+    {
+      "model": "ROBUST",
+      "policy": "NO_SALE",
+      "terminal": {
+        "netSD": 0.25301204819277107,
+        "OUT": 52,
+        "IN": 10,
+        "D": 166,
+        "expected_return": 0.005920969894294582,
+        "scenarios": 16000,
+        "probability_mass": 0.9999999999999998,
+        "OUT_by_order": [
+          7,
+          22,
+          23
+        ],
+        "IN_by_order": [
+          1,
+          4,
+          5
+        ]
+      },
+      "execution": "Initial allocation held through week4; no later trades"
+    },
+    {
+      "model": "ROBUST",
+      "policy": "SALE",
+      "terminal": {
+        "netSD": 0.6380368098159509,
+        "OUT": 104,
+        "IN": 0,
+        "D": 163,
+        "expected_return": 0.0060239739480836135,
+        "scenarios": 16000,
+        "probability_mass": 0.9999999999999998,
+        "OUT_by_order": [
+          8,
+          47,
+          49
+        ],
+        "IN_by_order": [
+          0,
+          0,
+          0
+        ]
+      },
+      "execution": "Initial allocation held through week4; no later trades"
+    },
+    {
+      "model": "UPDATE2",
+      "policy": "NO_SALE",
+      "terminal": {
+        "netSD": 0.30303030303030304,
+        "OUT": 56,
+        "IN": 6,
+        "D": 165,
+        "expected_return": 0.007182024792538469,
+        "scenarios": 16000,
+        "probability_mass": 0.9999999999999998,
+        "OUT_by_order": [
+          8,
+          23,
+          25
+        ],
+        "IN_by_order": [
+          0,
+          3,
+          3
+        ]
+      },
+      "execution": "Initial allocation held through week4; no later trades"
+    },
+    {
+      "model": "UPDATE2",
+      "policy": "SALE",
+      "terminal": {
+        "netSD": 0.5644171779141104,
+        "OUT": 92,
+        "IN": 0,
+        "D": 163,
+        "expected_return": 0.005145332549277501,
+        "scenarios": 16000,
+        "probability_mass": 0.9999999999999998,
+        "OUT_by_order": [
+          10,
+          41,
+          41
+        ],
+        "IN_by_order": [
+          0,
+          0,
+          0
+        ]
+      },
+      "execution": "Initial allocation held through week4; no later trades"
+    },
+    {
+      "model": "UPDATE3",
+      "policy": "NO_SALE",
+      "terminal": {
+        "netSD": 0.30303030303030304,
+        "OUT": 56,
+        "IN": 6,
+        "D": 165,
+        "expected_return": 0.007182024792538469,
+        "scenarios": 16000,
+        "probability_mass": 0.9999999999999998,
+        "OUT_by_order": [
+          8,
+          23,
+          25
+        ],
+        "IN_by_order": [
+          0,
+          3,
+          3
+        ]
+      },
+      "execution": "Initial allocation held through week4; no later trades"
+    },
+    {
+      "model": "UPDATE3",
+      "policy": "SALE",
+      "terminal": {
+        "netSD": 0.5644171779141104,
+        "OUT": 92,
+        "IN": 0,
+        "D": 163,
+        "expected_return": 0.005145332549277501,
+        "scenarios": 16000,
+        "probability_mass": 0.9999999999999998,
+        "OUT_by_order": [
+          10,
+          41,
+          41
+        ],
+        "IN_by_order": [
+          0,
+          0,
+          0
+        ]
+      },
+      "execution": "Initial allocation held through week4; no later trades"
+    },
+    {
+      "model": "NETSD",
+      "policy": "SALE",
+      "terminal": {
+        "netSD": 0.4457831325301205,
+        "OUT": 81,
+        "IN": 7,
+        "D": 166,
+        "expected_return": 0.005946427637189082,
+        "scenarios": 16000,
+        "probability_mass": 0.9999999999999998,
+        "OUT_by_order": [
+          11,
+          35,
+          35
+        ],
+        "IN_by_order": [
+          1,
+          3,
+          3
+        ]
+      },
+      "execution": "Initial allocation held through week4; no later trades"
+    },
+    {
+      "model": "NETSD",
+      "policy": "NO_SALE",
+      "terminal": {
+        "netSD": 0.3575757575757576,
+        "OUT": 65,
+        "IN": 6,
+        "D": 165,
+        "expected_return": 0.008331305106397374,
+        "scenarios": 16000,
+        "probability_mass": 0.9999999999999998,
+        "OUT_by_order": [
+          8,
+          28,
+          29
+        ],
+        "IN_by_order": [
+          0,
+          3,
+          3
         ]
       },
       "execution": "Initial allocation held through week4; no later trades"
@@ -1820,33 +1795,33 @@
         "policy": "NO_SALE",
         "status": "heuristic attained-policy estimates on complete native law",
         "scenarios": 16000,
-        "probability_mass": 1.0,
+        "probability_mass": 0.9999999999999998,
         "RP": {
-          "objective": 0.20194118729063887,
+          "objective": 0.35993517884990706,
           "terminal": {
-            "netSD": 0.22699386503067484,
-            "OUT": 47,
-            "IN": 10,
-            "D": 163,
-            "expected_return": 0.007662108895638373,
+            "netSD": 0.3878787878787879,
+            "OUT": 68,
+            "IN": 4,
+            "D": 165,
+            "expected_return": 0.008929934466374533,
             "scenarios": 16000,
-            "probability_mass": 1.0,
+            "probability_mass": 0.9999999999999998,
             "OUT_by_order": [
-              5,
-              21,
-              21
+              9,
+              29,
+              30
             ],
             "IN_by_order": [
               0,
-              5,
-              5
+              2,
+              2
             ]
           },
-          "expected_penalty": 0.025052677740035965
+          "expected_penalty": 0.02794360902888083
         },
-        "EV_deterministic_objective": 0.6777757236391102,
+        "EV_deterministic_objective": 0.6471304071248534,
         "EV_initial_units": {
-          "AKO1L": 332.0,
+          "AKO1L": 150.0,
           "AMG1L": 0.0,
           "APG1L": 200.0,
           "ARC1T": 0.0,
@@ -1890,7 +1865,7 @@
           "SKN1T": 0.0,
           "TAL1T": 1000.0,
           "TEL1L": 0.0,
-          "TKM1T": 321.0,
+          "TKM1T": 288.0,
           "TPD1T": 0.0,
           "TSM1T": 330.0,
           "TVE1T": 0.0,
@@ -1903,7 +1878,7 @@
           "SE0013876950": 0.0,
           "SE0013876968": 0.0,
           "SE0014261756": 0.0,
-          "SE0014261764": 11.2672,
+          "SE0014261764": 15.4759,
           "SE0014261871": 0.0,
           "SE0014261889": 0.0,
           "SE0014261897": 0.0,
@@ -1917,61 +1892,61 @@
           "SE0015948609": 0.0,
           "SE0015948617": 0.0,
           "US_PFE": 5.883,
-          "US_NVDA": 2.814478
+          "US_NVDA": 8.106182
         },
         "EEV": {
-          "objective": 0.17472746388815502,
+          "objective": 0.35705439985190945,
           "terminal": {
-            "netSD": 0.19631901840490798,
-            "OUT": 42,
-            "IN": 10,
-            "D": 163,
-            "expected_return": 0.007074374458136374,
+            "netSD": 0.38181818181818183,
+            "OUT": 67,
+            "IN": 4,
+            "D": 165,
+            "expected_return": 0.009203053530956226,
             "scenarios": 16000,
-            "probability_mass": 1.0,
+            "probability_mass": 0.9999999999999998,
             "OUT_by_order": [
-              4,
-              19,
-              19
+              8,
+              29,
+              30
             ],
             "IN_by_order": [
               0,
-              5,
-              5
+              2,
+              2
             ]
           },
-          "expected_penalty": 0.021591554516752952
+          "expected_penalty": 0.024763781966272394
         },
         "WS": {
-          "objective": 0.2683380272926705,
+          "objective": 0.4310016404649826,
           "terminal": {
-            "netSD": 0.294478527607362,
-            "OUT": 56,
-            "IN": 8,
-            "D": 163,
-            "expected_return": 0.010218635929299719,
+            "netSD": 0.46060606060606063,
+            "OUT": 80,
+            "IN": 4,
+            "D": 165,
+            "expected_return": 0.010609724855149022,
             "scenarios": 16000,
-            "probability_mass": 1.0,
+            "probability_mass": 0.9999999999999998,
             "OUT_by_order": [
-              7,
-              23,
-              26
+              12,
+              33,
+              35
             ],
             "IN_by_order": [
               0,
-              4,
-              4
+              2,
+              2
             ]
           },
-          "expected_penalty": 0.0261405003146915,
+          "expected_penalty": 0.029604420141078027,
           "rule": {
             "fraction": 1.0,
             "mean_normalisation": false
           },
-          "valid_new_policy_probability": 0.9997965381606033
+          "valid_new_policy_probability": 0.999996945102418
         },
-        "VSS": 0.027213723402483847,
-        "EVPI": 0.06639684000203161,
+        "VSS": 0.0028807789979976017,
+        "EVPI": 0.07106646161507557,
         "sampling_used": false,
         "definition": "Maximisation gaps in the same joint terminal-distribution objective, including penalties. EV replaces price paths by their probability means; EEV fixes its initial vector and searches feasible recourse on the complete law. WS allows future-informed pathwise decisions and is scored as one weighted terminal distribution; infeasible informed paths retain the original feasible RP path. No per-leaf netSD averaging. Integer heuristic optima are not certified, so these are attained-policy estimates, not exact optimal EVPI/VSS."
       },
@@ -1980,31 +1955,31 @@
         "policy": "SALE",
         "status": "heuristic attained-policy estimates on complete native law",
         "scenarios": 16000,
-        "probability_mass": 1.0,
+        "probability_mass": 0.9999999999999998,
         "RP": {
-          "objective": 0.5426003089830442,
+          "objective": 0.7288364509804404,
           "terminal": {
-            "netSD": 0.5555555555555556,
-            "OUT": 97,
-            "IN": 7,
-            "D": 162,
-            "expected_return": 0.008214137455327201,
+            "netSD": 0.7454545454545455,
+            "OUT": 125,
+            "IN": 2,
+            "D": 165,
+            "expected_return": 0.009643337631210443,
             "scenarios": 16000,
-            "probability_mass": 1.0,
+            "probability_mass": 0.9999999999999998,
             "OUT_by_order": [
-              8,
-              44,
-              45
+              19,
+              53,
+              53
             ],
             "IN_by_order": [
+              0,
               1,
-              3,
-              3
+              1
             ]
           },
-          "expected_penalty": 0.012955246572511372
+          "expected_penalty": 0.016618094474105144
         },
-        "EV_deterministic_objective": 0.784817776782532,
+        "EV_deterministic_objective": 0.7020923578962983,
         "EV_initial_units": {
           "AKO1L": 0.0,
           "AMG1L": 0.0,
@@ -2057,13 +2032,13 @@
           "UTR1L": 0.0,
           "VBL1L": 0.0,
           "VIRSI": 0.0,
-          "VLP1L": 189.0,
+          "VLP1L": 140.0,
           "ZMP1L": 0.0,
           "SE0013876927": 0.0,
           "SE0013876950": 0.0,
           "SE0013876968": 0.0,
           "SE0014261756": 0.0,
-          "SE0014261764": 11.2672,
+          "SE0014261764": 15.4759,
           "SE0014261871": 0.0,
           "SE0014261889": 0.0,
           "SE0014261897": 0.0,
@@ -2077,56 +2052,56 @@
           "SE0015948609": 0.0,
           "SE0015948617": 0.0,
           "US_PFE": 5.883,
-          "US_NVDA": 2.814478
+          "US_NVDA": 8.106182
         },
         "EEV": {
-          "objective": 0.43491811144012305,
+          "objective": 0.5550252881089731,
           "terminal": {
-            "netSD": 0.4539877300613497,
-            "OUT": 78,
-            "IN": 4,
-            "D": 163,
-            "expected_return": 0.010577705343154215,
+            "netSD": 0.572289156626506,
+            "OUT": 98,
+            "IN": 3,
+            "D": 166,
+            "expected_return": 0.009828604138680924,
             "scenarios": 16000,
-            "probability_mass": 1.0,
+            "probability_mass": 0.9999999999999998,
             "OUT_by_order": [
-              10,
-              34,
-              34
-            ],
-            "IN_by_order": [
-              0,
-              2,
-              2
-            ]
-          },
-          "expected_penalty": 0.019069618621226636
-        },
-        "WS": {
-          "objective": 0.5426003089830442,
-          "terminal": {
-            "netSD": 0.5555555555555556,
-            "OUT": 97,
-            "IN": 7,
-            "D": 162,
-            "expected_return": 0.008214137455327201,
-            "scenarios": 16000,
-            "probability_mass": 1.0,
-            "OUT_by_order": [
-              8,
-              44,
+              11,
+              42,
               45
             ],
             "IN_by_order": [
               1,
-              3,
-              3
+              1,
+              1
             ]
           },
-          "expected_penalty": 0.012955246572511372,
+          "expected_penalty": 0.01726386851753296
+        },
+        "WS": {
+          "objective": 0.7288364509804404,
+          "terminal": {
+            "netSD": 0.7454545454545455,
+            "OUT": 125,
+            "IN": 2,
+            "D": 165,
+            "expected_return": 0.009643337631210443,
+            "scenarios": 16000,
+            "probability_mass": 0.9999999999999998,
+            "OUT_by_order": [
+              19,
+              53,
+              53
+            ],
+            "IN_by_order": [
+              0,
+              1,
+              1
+            ]
+          },
+          "expected_penalty": 0.016618094474105144,
           "rule": "RP included unchanged in the perfect-information candidate set"
         },
-        "VSS": 0.10768219754292119,
+        "VSS": 0.17381116287146725,
         "EVPI": 0.0,
         "sampling_used": false,
         "definition": "Maximisation gaps in the same joint terminal-distribution objective, including penalties. EV replaces price paths by their probability means; EEV fixes its initial vector and searches feasible recourse on the complete law. WS allows future-informed pathwise decisions and is scored as one weighted terminal distribution; infeasible informed paths retain the original feasible RP path. No per-leaf netSD averaging. Integer heuristic optima are not certified, so these are attained-policy estimates, not exact optimal EVPI/VSS."
@@ -2136,33 +2111,33 @@
         "policy": "NO_INITIAL_SALES",
         "status": "heuristic attained-policy estimates on complete native law",
         "scenarios": 16000,
-        "probability_mass": 1.0,
+        "probability_mass": 0.9999999999999998,
         "RP": {
-          "objective": 0.38812897708007116,
+          "objective": 0.48993332790369276,
           "terminal": {
-            "netSD": 0.4110429447852761,
-            "OUT": 73,
-            "IN": 6,
-            "D": 163,
-            "expected_return": 0.00873065674614116,
+            "netSD": 0.5120481927710844,
+            "OUT": 89,
+            "IN": 4,
+            "D": 166,
+            "expected_return": 0.009464919431675788,
             "scenarios": 16000,
-            "probability_mass": 1.0,
+            "probability_mass": 0.9999999999999998,
             "OUT_by_order": [
               9,
-              31,
-              33
+              39,
+              41
             ],
             "IN_by_order": [
-              0,
-              3,
-              3
+              1,
+              1,
+              2
             ]
           },
-          "expected_penalty": 0.02291396770520492
+          "expected_penalty": 0.0221148648673916
         },
-        "EV_deterministic_objective": 0.7336770029209236,
+        "EV_deterministic_objective": 0.6488863119845477,
         "EV_initial_units": {
-          "AKO1L": 332.0,
+          "AKO1L": 150.0,
           "AMG1L": 0.0,
           "APG1L": 200.0,
           "ARC1T": 0.0,
@@ -2219,7 +2194,7 @@
           "SE0013876950": 0.0,
           "SE0013876968": 0.0,
           "SE0014261756": 0.0,
-          "SE0014261764": 11.2672,
+          "SE0014261764": 15.4759,
           "SE0014261871": 0.0,
           "SE0014261889": 0.0,
           "SE0014261897": 0.0,
@@ -2233,56 +2208,56 @@
           "SE0015948609": 0.0,
           "SE0015948617": 0.0,
           "US_PFE": 5.883,
-          "US_NVDA": 4.802784
+          "US_NVDA": 8.106182
         },
         "EEV": {
-          "objective": 0.34955923079376583,
+          "objective": 0.45657768085987477,
           "terminal": {
-            "netSD": 0.36809815950920244,
-            "OUT": 66,
-            "IN": 6,
-            "D": 163,
-            "expected_return": 0.009017028914190562,
+            "netSD": 0.47878787878787876,
+            "OUT": 82,
+            "IN": 3,
+            "D": 165,
+            "expected_return": 0.009702759562718412,
             "scenarios": 16000,
-            "probability_mass": 1.0,
+            "probability_mass": 0.9999999999999998,
             "OUT_by_order": [
-              7,
-              29,
-              30
+              10,
+              35,
+              37
             ],
             "IN_by_order": [
               0,
-              3,
-              3
+              1,
+              2
             ]
           },
-          "expected_penalty": 0.018538928715436623
+          "expected_penalty": 0.022210197928004008
         },
         "WS": {
-          "objective": 0.38812897708007116,
+          "objective": 0.48993332790369276,
           "terminal": {
-            "netSD": 0.4110429447852761,
-            "OUT": 73,
-            "IN": 6,
-            "D": 163,
-            "expected_return": 0.00873065674614116,
+            "netSD": 0.5120481927710844,
+            "OUT": 89,
+            "IN": 4,
+            "D": 166,
+            "expected_return": 0.009464919431675788,
             "scenarios": 16000,
-            "probability_mass": 1.0,
+            "probability_mass": 0.9999999999999998,
             "OUT_by_order": [
               9,
-              31,
-              33
+              39,
+              41
             ],
             "IN_by_order": [
-              0,
-              3,
-              3
+              1,
+              1,
+              2
             ]
           },
-          "expected_penalty": 0.02291396770520492,
+          "expected_penalty": 0.0221148648673916,
           "rule": "RP included unchanged in the perfect-information candidate set"
         },
-        "VSS": 0.03856974628630533,
+        "VSS": 0.03335564704381799,
         "EVPI": 0.0,
         "sampling_used": false,
         "definition": "Maximisation gaps in the same joint terminal-distribution objective, including penalties. EV replaces price paths by their probability means; EEV fixes its initial vector and searches feasible recourse on the complete law. WS allows future-informed pathwise decisions and is scored as one weighted terminal distribution; infeasible informed paths retain the original feasible RP path. No per-leaf netSD averaging. Integer heuristic optima are not certified, so these are attained-policy estimates, not exact optimal EVPI/VSS."
@@ -2292,31 +2267,31 @@
         "policy": "NO_SALE",
         "status": "heuristic attained-policy estimates on complete native law",
         "scenarios": 16000,
-        "probability_mass": 1.0,
+        "probability_mass": 0.9999999999999998,
         "RP": {
-          "objective": 0.20194118729063887,
+          "objective": 0.3626619106283304,
           "terminal": {
-            "netSD": 0.22699386503067484,
-            "OUT": 47,
-            "IN": 10,
-            "D": 163,
-            "expected_return": 0.007662108895638373,
+            "netSD": 0.3878787878787879,
+            "OUT": 68,
+            "IN": 4,
+            "D": 165,
+            "expected_return": 0.009097224938727057,
             "scenarios": 16000,
-            "probability_mass": 1.0,
+            "probability_mass": 0.9999999999999998,
             "OUT_by_order": [
-              5,
-              21,
-              21
+              8,
+              29,
+              31
             ],
             "IN_by_order": [
               0,
-              5,
-              5
+              2,
+              2
             ]
           },
-          "expected_penalty": 0.025052677740035965
+          "expected_penalty": 0.025216877250457466
         },
-        "EV_deterministic_objective": 0.7021701918883908,
+        "EV_deterministic_objective": 0.6472926547603716,
         "EV_initial_units": {
           "AKO1L": 150.0,
           "AMG1L": 0.0,
@@ -2355,7 +2330,7 @@
           "RKB1R": 0.0,
           "ROE1L": 700.0,
           "RSU1L": 150.0,
-          "SAF1R": 100.0,
+          "SAF1R": 118.0,
           "SAUNA": 0.0,
           "SCM1R": 0.0,
           "SFG1T": 0.0,
@@ -2369,13 +2344,13 @@
           "UTR1L": 0.0,
           "VBL1L": 0.0,
           "VIRSI": 0.0,
-          "VLP1L": 189.0,
+          "VLP1L": 140.0,
           "ZMP1L": 0.0,
           "SE0013876927": 0.0,
           "SE0013876950": 0.0,
           "SE0013876968": 0.0,
           "SE0014261756": 0.0,
-          "SE0014261764": 11.2672,
+          "SE0014261764": 15.4759,
           "SE0014261871": 0.0,
           "SE0014261889": 0.0,
           "SE0014261897": 0.0,
@@ -2389,44 +2364,21 @@
           "SE0015948609": 0.0,
           "SE0015948617": 0.0,
           "US_PFE": 5.883,
-          "US_NVDA": 7.785244
+          "US_NVDA": 8.106182
         },
         "EEV": {
-          "objective": 0.17144917024747242,
+          "objective": 0.31381254344595827,
           "terminal": {
-            "netSD": 0.19631901840490798,
-            "OUT": 42,
-            "IN": 10,
-            "D": 163,
-            "expected_return": 0.00847871759893775,
-            "scenarios": 16000,
-            "probability_mass": 1.0,
-            "OUT_by_order": [
-              4,
-              19,
-              19
-            ],
-            "IN_by_order": [
-              0,
-              5,
-              5
-            ]
-          },
-          "expected_penalty": 0.024869848157435554
-        },
-        "WS": {
-          "objective": 0.3119039582229328,
-          "terminal": {
-            "netSD": 0.3374233128834356,
-            "OUT": 61,
+            "netSD": 0.3393939393939394,
+            "OUT": 62,
             "IN": 6,
-            "D": 163,
-            "expected_return": 0.010937471858745756,
+            "D": 165,
+            "expected_return": 0.008116753663905074,
             "scenarios": 16000,
-            "probability_mass": 1.0,
+            "probability_mass": 0.9999999999999998,
             "OUT_by_order": [
               8,
-              26,
+              27,
               27
             ],
             "IN_by_order": [
@@ -2435,15 +2387,38 @@
               3
             ]
           },
-          "expected_penalty": 0.025519354660502747,
+          "expected_penalty": 0.025581395947981152
+        },
+        "WS": {
+          "objective": 0.4451854230492436,
+          "terminal": {
+            "netSD": 0.4727272727272727,
+            "OUT": 82,
+            "IN": 4,
+            "D": 165,
+            "expected_return": 0.011273384594237244,
+            "scenarios": 16000,
+            "probability_mass": 0.9999999999999998,
+            "OUT_by_order": [
+              13,
+              33,
+              36
+            ],
+            "IN_by_order": [
+              0,
+              2,
+              2
+            ]
+          },
+          "expected_penalty": 0.027541849678029168,
           "rule": {
             "fraction": 0.5,
             "mean_normalisation": false
           },
-          "valid_new_policy_probability": 0.9999766515083149
+          "valid_new_policy_probability": 0.9999999999999998
         },
-        "VSS": 0.030492017043166453,
-        "EVPI": 0.10996277093229395,
+        "VSS": 0.04884936718237215,
+        "EVPI": 0.08252351242091316,
         "sampling_used": false,
         "definition": "Maximisation gaps in the same joint terminal-distribution objective, including penalties. EV replaces price paths by their probability means; EEV fixes its initial vector and searches feasible recourse on the complete law. WS allows future-informed pathwise decisions and is scored as one weighted terminal distribution; infeasible informed paths retain the original feasible RP path. No per-leaf netSD averaging. Integer heuristic optima are not certified, so these are attained-policy estimates, not exact optimal EVPI/VSS."
       },
@@ -2452,35 +2427,35 @@
         "policy": "SALE",
         "status": "heuristic attained-policy estimates on complete native law",
         "scenarios": 16000,
-        "probability_mass": 1.0,
+        "probability_mass": 0.9999999999999998,
         "RP": {
-          "objective": 0.5426003089830442,
+          "objective": 0.7400744485021019,
           "terminal": {
-            "netSD": 0.5555555555555556,
-            "OUT": 97,
-            "IN": 7,
-            "D": 162,
-            "expected_return": 0.008214137455327201,
+            "netSD": 0.7575757575757576,
+            "OUT": 127,
+            "IN": 2,
+            "D": 165,
+            "expected_return": 0.012927570668505505,
             "scenarios": 16000,
-            "probability_mass": 1.0,
+            "probability_mass": 0.9999999999999998,
             "OUT_by_order": [
-              8,
-              44,
-              45
+              21,
+              52,
+              54
             ],
             "IN_by_order": [
+              0,
               1,
-              3,
-              3
+              1
             ]
           },
-          "expected_penalty": 0.012955246572511372
+          "expected_penalty": 0.017501309073655606
         },
-        "EV_deterministic_objective": 0.8783584480020253,
+        "EV_deterministic_objective": 0.8205391764113268,
         "EV_initial_units": {
-          "AKO1L": 332.0,
+          "AKO1L": 150.0,
           "AMG1L": 0.0,
-          "APG1L": 200.0,
+          "APG1L": 844.0,
           "ARC1T": 0.0,
           "AUG1L": 0.0,
           "BAL1R": 0.0,
@@ -2522,954 +2497,6 @@
           "SKN1T": 0.0,
           "TAL1T": 1000.0,
           "TEL1L": 0.0,
-          "TKM1T": 288.0,
-          "TPD1T": 0.0,
-          "TSM1T": 330.0,
-          "TVE1T": 0.0,
-          "UTR1L": 0.0,
-          "VBL1L": 0.0,
-          "VIRSI": 0.0,
-          "VLP1L": 140.0,
-          "ZMP1L": 0.0,
-          "SE0013876927": 0.0,
-          "SE0013876950": 0.0,
-          "SE0013876968": 0.0,
-          "SE0014261756": 0.0,
-          "SE0014261764": 11.2672,
-          "SE0014261871": 0.0,
-          "SE0014261889": 0.0,
-          "SE0014261897": 0.0,
-          "SE0014263273": 0.0,
-          "SE0014263281": 0.0,
-          "SE0014263299": 0.0,
-          "SE0015192315": 0.0,
-          "SE0015192323": 0.0,
-          "SE0015192331": 0.0,
-          "SE0015192349": 0.0,
-          "SE0015948609": 0.0,
-          "SE0015948617": 0.0,
-          "US_PFE": 5.883,
-          "US_NVDA": 2.814478
-        },
-        "EEV": {
-          "objective": 0.2430672784758421,
-          "terminal": {
-            "netSD": 0.25766871165644173,
-            "OUT": 46,
-            "IN": 4,
-            "D": 163,
-            "expected_return": 0.012382467563196248,
-            "scenarios": 16000,
-            "probability_mass": 1.0,
-            "OUT_by_order": [
-              3,
-              21,
-              22
-            ],
-            "IN_by_order": [
-              0,
-              2,
-              2
-            ]
-          },
-          "expected_penalty": 0.01460143318059962
-        },
-        "WS": {
-          "objective": 0.5426003089830442,
-          "terminal": {
-            "netSD": 0.5555555555555556,
-            "OUT": 97,
-            "IN": 7,
-            "D": 162,
-            "expected_return": 0.008214137455327201,
-            "scenarios": 16000,
-            "probability_mass": 1.0,
-            "OUT_by_order": [
-              8,
-              44,
-              45
-            ],
-            "IN_by_order": [
-              1,
-              3,
-              3
-            ]
-          },
-          "expected_penalty": 0.012955246572511372,
-          "rule": "RP included unchanged in the perfect-information candidate set"
-        },
-        "VSS": 0.29953303050720215,
-        "EVPI": 0.0,
-        "sampling_used": false,
-        "definition": "Maximisation gaps in the same joint terminal-distribution objective, including penalties. EV replaces price paths by their probability means; EEV fixes its initial vector and searches feasible recourse on the complete law. WS allows future-informed pathwise decisions and is scored as one weighted terminal distribution; infeasible informed paths retain the original feasible RP path. No per-leaf netSD averaging. Integer heuristic optima are not certified, so these are attained-policy estimates, not exact optimal EVPI/VSS."
-      },
-      {
-        "model": "stoch2A",
-        "policy": "NO_INITIAL_SALES",
-        "status": "heuristic attained-policy estimates on complete native law",
-        "scenarios": 16000,
-        "probability_mass": 1.0,
-        "RP": {
-          "objective": 0.38812897708007116,
-          "terminal": {
-            "netSD": 0.4110429447852761,
-            "OUT": 73,
-            "IN": 6,
-            "D": 163,
-            "expected_return": 0.00873065674614116,
-            "scenarios": 16000,
-            "probability_mass": 1.0,
-            "OUT_by_order": [
-              9,
-              31,
-              33
-            ],
-            "IN_by_order": [
-              0,
-              3,
-              3
-            ]
-          },
-          "expected_penalty": 0.02291396770520492
-        },
-        "EV_deterministic_objective": 0.8713944038671412,
-        "EV_initial_units": {
-          "AKO1L": 332.0,
-          "AMG1L": 0.0,
-          "APG1L": 200.0,
-          "ARC1T": 0.0,
-          "AUG1L": 0.0,
-          "BAL1R": 0.0,
-          "BERCM": 0.0,
-          "CPA1T": 0.0,
-          "CTS1L": 0.0,
-          "DGR1R": 0.0,
-          "EFT1T": 0.0,
-          "EWA1L": 0.0,
-          "GRG1L": 543.0,
-          "HAE1T": 100.0,
-          "HPR1T": 0.0,
-          "IGN1L": 0.0,
-          "INC1L": 0.0,
-          "INL1L": 0.0,
-          "INR1L": 0.0,
-          "IVL1L": 0.0,
-          "KNE1L": 1000.0,
-          "KNR1L": 0.0,
-          "LGD1L": 0.0,
-          "LHV1T": 0.0,
-          "LINDA": 0.0,
-          "MDARA": 0.0,
-          "MODE": 0.0,
-          "MRK1T": 26.0,
-          "NCN1T": 0.0,
-          "NEOFI": 0.0,
-          "NTU1L": 0.0,
-          "PKG1T": 0.0,
-          "PRF1T": 0.0,
-          "PZV1L": 0.0,
-          "RKB1R": 0.0,
-          "ROE1L": 700.0,
-          "RSU1L": 150.0,
-          "SAF1R": 223.0,
-          "SAUNA": 0.0,
-          "SCM1R": 0.0,
-          "SFG1T": 0.0,
-          "SKN1T": 0.0,
-          "TAL1T": 1000.0,
-          "TEL1L": 0.0,
-          "TKM1T": 288.0,
-          "TPD1T": 0.0,
-          "TSM1T": 330.0,
-          "TVE1T": 0.0,
-          "UTR1L": 0.0,
-          "VBL1L": 0.0,
-          "VIRSI": 0.0,
-          "VLP1L": 140.0,
-          "ZMP1L": 0.0,
-          "SE0013876927": 0.0,
-          "SE0013876950": 0.0,
-          "SE0013876968": 0.0,
-          "SE0014261756": 0.0,
-          "SE0014261764": 11.2672,
-          "SE0014261871": 0.0,
-          "SE0014261889": 0.0,
-          "SE0014261897": 0.0,
-          "SE0014263273": 0.0,
-          "SE0014263281": 0.0,
-          "SE0014263299": 0.0,
-          "SE0015192315": 0.0,
-          "SE0015192323": 0.0,
-          "SE0015192331": 0.0,
-          "SE0015192349": 0.0,
-          "SE0015948609": 0.0,
-          "SE0015948617": 0.0,
-          "US_PFE": 5.883,
-          "US_NVDA": 2.814478
-        },
-        "EEV": {
-          "objective": 0.19571610210681378,
-          "terminal": {
-            "netSD": 0.2147239263803681,
-            "OUT": 39,
-            "IN": 4,
-            "D": 163,
-            "expected_return": 0.011583882017274958,
-            "scenarios": 16000,
-            "probability_mass": 1.0,
-            "OUT_by_order": [
-              5,
-              17,
-              17
-            ],
-            "IN_by_order": [
-              0,
-              2,
-              2
-            ]
-          },
-          "expected_penalty": 0.01900782427355431
-        },
-        "WS": {
-          "objective": 0.39148418572358445,
-          "terminal": {
-            "netSD": 0.4110429447852761,
-            "OUT": 70,
-            "IN": 3,
-            "D": 163,
-            "expected_return": 0.016025278482814896,
-            "scenarios": 16000,
-            "probability_mass": 1.0,
-            "OUT_by_order": [
-              13,
-              28,
-              29
-            ],
-            "IN_by_order": [
-              0,
-              1,
-              2
-            ]
-          },
-          "expected_penalty": 0.019558759061691633,
-          "rule": {
-            "fraction": 1.0,
-            "mean_normalisation": false
-          },
-          "valid_new_policy_probability": 0.9999796474821617
-        },
-        "VSS": 0.19241287497325738,
-        "EVPI": 0.0033552086435132966,
-        "sampling_used": false,
-        "definition": "Maximisation gaps in the same joint terminal-distribution objective, including penalties. EV replaces price paths by their probability means; EEV fixes its initial vector and searches feasible recourse on the complete law. WS allows future-informed pathwise decisions and is scored as one weighted terminal distribution; infeasible informed paths retain the original feasible RP path. No per-leaf netSD averaging. Integer heuristic optima are not certified, so these are attained-policy estimates, not exact optimal EVPI/VSS."
-      },
-      {
-        "model": "STOCHASTIC",
-        "policy": "NO_SALE",
-        "status": "heuristic attained-policy estimates on complete native law",
-        "scenarios": 20,
-        "probability_mass": 1.0,
-        "RP": {
-          "objective": 0.4943437334422348,
-          "terminal": {
-            "netSD": 0.5225806451612903,
-            "OUT": 83,
-            "IN": 2,
-            "D": 155,
-            "expected_return": 0.010155790730247043,
-            "scenarios": 20,
-            "probability_mass": 1.0,
-            "OUT_by_order": [
-              0,
-              41,
-              42
-            ],
-            "IN_by_order": [
-              0,
-              1,
-              1
-            ]
-          },
-          "expected_penalty": 0.028236911719055485
-        },
-        "EV_deterministic_objective": 0.4272252288952864,
-        "EV_initial_units": {
-          "AKO1L": 150.0,
-          "AMG1L": 0.0,
-          "APG1L": 200.0,
-          "ARC1T": 0.0,
-          "AUG1L": 0.0,
-          "BAL1R": 0.0,
-          "BERCM": 0.0,
-          "CPA1T": 0.0,
-          "CTS1L": 0.0,
-          "DGR1R": 0.0,
-          "EFT1T": 0.0,
-          "EWA1L": 0.0,
-          "GRG1L": 543.0,
-          "HAE1T": 100.0,
-          "HPR1T": 0.0,
-          "IGN1L": 0.0,
-          "INC1L": 0.0,
-          "INL1L": 0.0,
-          "INR1L": 0.0,
-          "IVL1L": 0.0,
-          "KNE1L": 1000.0,
-          "KNR1L": 0.0,
-          "LGD1L": 0.0,
-          "LHV1T": 0.0,
-          "LINDA": 0.0,
-          "MDARA": 0.0,
-          "MODE": 0.0,
-          "MRK1T": 26.0,
-          "NCN1T": 0.0,
-          "NEOFI": 0.0,
-          "NTU1L": 0.0,
-          "PKG1T": 0.0,
-          "PRF1T": 0.0,
-          "PZV1L": 0.0,
-          "RKB1R": 0.0,
-          "ROE1L": 700.0,
-          "RSU1L": 150.0,
-          "SAF1R": 100.0,
-          "SAUNA": 0.0,
-          "SCM1R": 0.0,
-          "SFG1T": 0.0,
-          "SKN1T": 0.0,
-          "TAL1T": 1000.0,
-          "TEL1L": 0.0,
-          "TKM1T": 288.0,
-          "TPD1T": 0.0,
-          "TSM1T": 330.0,
-          "TVE1T": 0.0,
-          "UTR1L": 0.0,
-          "VBL1L": 0.0,
-          "VIRSI": 0.0,
-          "VLP1L": 140.0,
-          "ZMP1L": 0.0,
-          "SE0013876927": 0.0,
-          "SE0013876950": 0.0,
-          "SE0013876968": 0.0,
-          "SE0014261756": 0.0,
-          "SE0014261764": 11.2672,
-          "SE0014261871": 0.0,
-          "SE0014261889": 0.0,
-          "SE0014261897": 0.0,
-          "SE0014263273": 0.0,
-          "SE0014263281": 0.0,
-          "SE0014263299": 0.0,
-          "SE0015192315": 0.0,
-          "SE0015192323": 0.0,
-          "SE0015192331": 0.0,
-          "SE0015192349": 0.0,
-          "SE0015948609": 0.0,
-          "SE0015948617": 0.0,
-          "US_PFE": 0.0,
-          "US_NVDA": 7.785244
-        },
-        "EEV": {
-          "objective": 0.4699050918822736,
-          "terminal": {
-            "netSD": 0.4967741935483871,
-            "OUT": 79,
-            "IN": 2,
-            "D": 155,
-            "expected_return": 0.011393577775050609,
-            "scenarios": 20,
-            "probability_mass": 1.0,
-            "OUT_by_order": [
-              0,
-              38,
-              41
-            ],
-            "IN_by_order": [
-              0,
-              1,
-              1
-            ]
-          },
-          "expected_penalty": 0.0268691016661135
-        },
-        "WS": {
-          "objective": 0.5057595483551339,
-          "terminal": {
-            "netSD": 0.535483870967742,
-            "OUT": 85,
-            "IN": 2,
-            "D": 155,
-            "expected_return": 0.0135742201517326,
-            "scenarios": 20,
-            "probability_mass": 1.0,
-            "OUT_by_order": [
-              1,
-              41,
-              43
-            ],
-            "IN_by_order": [
-              0,
-              1,
-              1
-            ]
-          },
-          "expected_penalty": 0.029724322612608083,
-          "rule": {
-            "fraction": 1.0,
-            "mean_normalisation": false
-          },
-          "valid_new_policy_probability": 1.0
-        },
-        "VSS": 0.024438641559961227,
-        "EVPI": 0.011415814912899114,
-        "sampling_used": false,
-        "definition": "Maximisation gaps in the same joint terminal-distribution objective, including penalties. EV replaces price paths by their probability means; EEV fixes its initial vector and searches feasible recourse on the complete law. WS allows future-informed pathwise decisions and is scored as one weighted terminal distribution; infeasible informed paths retain the original feasible RP path. No per-leaf netSD averaging. Integer heuristic optima are not certified, so these are attained-policy estimates, not exact optimal EVPI/VSS."
-      },
-      {
-        "model": "STOCHASTIC",
-        "policy": "SALE",
-        "status": "heuristic attained-policy estimates on complete native law",
-        "scenarios": 20,
-        "probability_mass": 1.0,
-        "RP": {
-          "objective": 0.6663286052293472,
-          "terminal": {
-            "netSD": 0.6838709677419355,
-            "OUT": 106,
-            "IN": 0,
-            "D": 155,
-            "expected_return": 0.015339723155979727,
-            "scenarios": 20,
-            "probability_mass": 1.0,
-            "OUT_by_order": [
-              2,
-              52,
-              52
-            ],
-            "IN_by_order": [
-              0,
-              0,
-              0
-            ]
-          },
-          "expected_penalty": 0.01754236251258818
-        },
-        "EV_deterministic_objective": 0.5472482928759833,
-        "EV_initial_units": {
-          "AKO1L": 150.0,
-          "AMG1L": 0.0,
-          "APG1L": 200.0,
-          "ARC1T": 0.0,
-          "AUG1L": 0.0,
-          "BAL1R": 0.0,
-          "BERCM": 0.0,
-          "CPA1T": 0.0,
-          "CTS1L": 0.0,
-          "DGR1R": 0.0,
-          "EFT1T": 0.0,
-          "EWA1L": 0.0,
-          "GRG1L": 543.0,
-          "HAE1T": 100.0,
-          "HPR1T": 0.0,
-          "IGN1L": 0.0,
-          "INC1L": 0.0,
-          "INL1L": 0.0,
-          "INR1L": 0.0,
-          "IVL1L": 0.0,
-          "KNE1L": 1000.0,
-          "KNR1L": 0.0,
-          "LGD1L": 0.0,
-          "LHV1T": 0.0,
-          "LINDA": 0.0,
-          "MDARA": 0.0,
-          "MODE": 0.0,
-          "MRK1T": 26.0,
-          "NCN1T": 0.0,
-          "NEOFI": 0.0,
-          "NTU1L": 0.0,
-          "PKG1T": 0.0,
-          "PRF1T": 0.0,
-          "PZV1L": 0.0,
-          "RKB1R": 0.0,
-          "ROE1L": 700.0,
-          "RSU1L": 0.0,
-          "SAF1R": 100.0,
-          "SAUNA": 0.0,
-          "SCM1R": 0.0,
-          "SFG1T": 0.0,
-          "SKN1T": 0.0,
-          "TAL1T": 1000.0,
-          "TEL1L": 0.0,
-          "TKM1T": 288.0,
-          "TPD1T": 0.0,
-          "TSM1T": 330.0,
-          "TVE1T": 0.0,
-          "UTR1L": 0.0,
-          "VBL1L": 0.0,
-          "VIRSI": 0.0,
-          "VLP1L": 140.0,
-          "ZMP1L": 0.0,
-          "SE0013876927": 0.0,
-          "SE0013876950": 0.0,
-          "SE0013876968": 0.0,
-          "SE0014261756": 0.0,
-          "SE0014261764": 11.2672,
-          "SE0014261871": 0.0,
-          "SE0014261889": 0.0,
-          "SE0014261897": 0.0,
-          "SE0014263273": 0.0,
-          "SE0014263281": 0.0,
-          "SE0014263299": 0.0,
-          "SE0015192315": 0.0,
-          "SE0015192323": 0.0,
-          "SE0015192331": 0.0,
-          "SE0015192349": 0.0,
-          "SE0015948609": 0.0,
-          "SE0015948617": 0.0,
-          "US_PFE": 0.0,
-          "US_NVDA": 7.785244
-        },
-        "EEV": {
-          "objective": 0.5326960759393743,
-          "terminal": {
-            "netSD": 0.5548387096774193,
-            "OUT": 88,
-            "IN": 2,
-            "D": 155,
-            "expected_return": 0.008287205546868555,
-            "scenarios": 20,
-            "probability_mass": 1.0,
-            "OUT_by_order": [
-              0,
-              43,
-              45
-            ],
-            "IN_by_order": [
-              0,
-              1,
-              1
-            ]
-          },
-          "expected_penalty": 0.022142633738045082
-        },
-        "WS": {
-          "objective": 0.6663286052293472,
-          "terminal": {
-            "netSD": 0.6838709677419355,
-            "OUT": 106,
-            "IN": 0,
-            "D": 155,
-            "expected_return": 0.015339723155979727,
-            "scenarios": 20,
-            "probability_mass": 1.0,
-            "OUT_by_order": [
-              2,
-              52,
-              52
-            ],
-            "IN_by_order": [
-              0,
-              0,
-              0
-            ]
-          },
-          "expected_penalty": 0.01754236251258818,
-          "rule": "RP included unchanged in the perfect-information candidate set"
-        },
-        "VSS": 0.13363252928997293,
-        "EVPI": 0.0,
-        "sampling_used": false,
-        "definition": "Maximisation gaps in the same joint terminal-distribution objective, including penalties. EV replaces price paths by their probability means; EEV fixes its initial vector and searches feasible recourse on the complete law. WS allows future-informed pathwise decisions and is scored as one weighted terminal distribution; infeasible informed paths retain the original feasible RP path. No per-leaf netSD averaging. Integer heuristic optima are not certified, so these are attained-policy estimates, not exact optimal EVPI/VSS."
-      },
-      {
-        "model": "STOCHASTIC",
-        "policy": "NO_INITIAL_SALES",
-        "status": "heuristic attained-policy estimates on complete native law",
-        "scenarios": 20,
-        "probability_mass": 1.0,
-        "RP": {
-          "objective": 0.518229332242281,
-          "terminal": {
-            "netSD": 0.5419354838709678,
-            "OUT": 86,
-            "IN": 2,
-            "D": 155,
-            "expected_return": 0.007682923854714183,
-            "scenarios": 20,
-            "probability_mass": 1.0,
-            "OUT_by_order": [
-              0,
-              42,
-              44
-            ],
-            "IN_by_order": [
-              0,
-              1,
-              1
-            ]
-          },
-          "expected_penalty": 0.02370615162868688
-        },
-        "EV_deterministic_objective": 0.5211978034238077,
-        "EV_initial_units": {
-          "AKO1L": 605.0,
-          "AMG1L": 0.0,
-          "APG1L": 200.0,
-          "ARC1T": 0.0,
-          "AUG1L": 0.0,
-          "BAL1R": 0.0,
-          "BERCM": 0.0,
-          "CPA1T": 0.0,
-          "CTS1L": 0.0,
-          "DGR1R": 0.0,
-          "EFT1T": 0.0,
-          "EWA1L": 0.0,
-          "GRG1L": 543.0,
-          "HAE1T": 100.0,
-          "HPR1T": 0.0,
-          "IGN1L": 0.0,
-          "INC1L": 0.0,
-          "INL1L": 0.0,
-          "INR1L": 0.0,
-          "IVL1L": 0.0,
-          "KNE1L": 1000.0,
-          "KNR1L": 0.0,
-          "LGD1L": 0.0,
-          "LHV1T": 0.0,
-          "LINDA": 0.0,
-          "MDARA": 0.0,
-          "MODE": 0.0,
-          "MRK1T": 26.0,
-          "NCN1T": 0.0,
-          "NEOFI": 0.0,
-          "NTU1L": 0.0,
-          "PKG1T": 0.0,
-          "PRF1T": 0.0,
-          "PZV1L": 0.0,
-          "RKB1R": 0.0,
-          "ROE1L": 700.0,
-          "RSU1L": 150.0,
-          "SAF1R": 100.0,
-          "SAUNA": 0.0,
-          "SCM1R": 0.0,
-          "SFG1T": 0.0,
-          "SKN1T": 0.0,
-          "TAL1T": 1000.0,
-          "TEL1L": 0.0,
-          "TKM1T": 288.0,
-          "TPD1T": 0.0,
-          "TSM1T": 330.0,
-          "TVE1T": 0.0,
-          "UTR1L": 0.0,
-          "VBL1L": 0.0,
-          "VIRSI": 0.0,
-          "VLP1L": 140.0,
-          "ZMP1L": 0.0,
-          "SE0013876927": 0.0,
-          "SE0013876950": 0.0,
-          "SE0013876968": 0.0,
-          "SE0014261756": 0.0,
-          "SE0014261764": 11.2672,
-          "SE0014261871": 0.0,
-          "SE0014261889": 0.0,
-          "SE0014261897": 0.0,
-          "SE0014263273": 0.0,
-          "SE0014263281": 0.0,
-          "SE0014263299": 0.0,
-          "SE0015192315": 0.0,
-          "SE0015192323": 0.0,
-          "SE0015192331": 0.0,
-          "SE0015192349": 0.0,
-          "SE0015948609": 0.0,
-          "SE0015948617": 0.0,
-          "US_PFE": 5.883,
-          "US_NVDA": 2.814478
-        },
-        "EEV": {
-          "objective": 0.4311619729278263,
-          "terminal": {
-            "netSD": 0.45161290322580644,
-            "OUT": 73,
-            "IN": 3,
-            "D": 155,
-            "expected_return": 0.005784938896602469,
-            "scenarios": 20,
-            "probability_mass": 1.0,
-            "OUT_by_order": [
-              0,
-              34,
-              39
-            ],
-            "IN_by_order": [
-              0,
-              1,
-              2
-            ]
-          },
-          "expected_penalty": 0.02045093029798009
-        },
-        "WS": {
-          "objective": 0.5586049147486725,
-          "terminal": {
-            "netSD": 0.5806451612903226,
-            "OUT": 90,
-            "IN": 0,
-            "D": 155,
-            "expected_return": 0.016272464415269538,
-            "scenarios": 20,
-            "probability_mass": 1.0,
-            "OUT_by_order": [
-              1,
-              44,
-              45
-            ],
-            "IN_by_order": [
-              0,
-              0,
-              0
-            ]
-          },
-          "expected_penalty": 0.02204024654165018,
-          "rule": {
-            "fraction": 1.0,
-            "mean_normalisation": false
-          },
-          "valid_new_policy_probability": 0.9414998560719563
-        },
-        "VSS": 0.08706735931445464,
-        "EVPI": 0.040375582506391505,
-        "sampling_used": false,
-        "definition": "Maximisation gaps in the same joint terminal-distribution objective, including penalties. EV replaces price paths by their probability means; EEV fixes its initial vector and searches feasible recourse on the complete law. WS allows future-informed pathwise decisions and is scored as one weighted terminal distribution; infeasible informed paths retain the original feasible RP path. No per-leaf netSD averaging. Integer heuristic optima are not certified, so these are attained-policy estimates, not exact optimal EVPI/VSS."
-      },
-      {
-        "model": "stochA",
-        "policy": "NO_SALE",
-        "status": "heuristic attained-policy estimates on complete native law",
-        "scenarios": 20,
-        "probability_mass": 1.0,
-        "RP": {
-          "objective": 0.5182167418694865,
-          "terminal": {
-            "netSD": 0.5483870967741935,
-            "OUT": 87,
-            "IN": 2,
-            "D": 155,
-            "expected_return": 0.013490286152699723,
-            "scenarios": 20,
-            "probability_mass": 1.0,
-            "OUT_by_order": [
-              1,
-              42,
-              44
-            ],
-            "IN_by_order": [
-              0,
-              1,
-              1
-            ]
-          },
-          "expected_penalty": 0.030170354904707018
-        },
-        "EV_deterministic_objective": 0.5187469299216089,
-        "EV_initial_units": {
-          "AKO1L": 332.0,
-          "AMG1L": 0.0,
-          "APG1L": 200.0,
-          "ARC1T": 0.0,
-          "AUG1L": 0.0,
-          "BAL1R": 0.0,
-          "BERCM": 0.0,
-          "CPA1T": 0.0,
-          "CTS1L": 0.0,
-          "DGR1R": 0.0,
-          "EFT1T": 0.0,
-          "EWA1L": 0.0,
-          "GRG1L": 543.0,
-          "HAE1T": 100.0,
-          "HPR1T": 0.0,
-          "IGN1L": 0.0,
-          "INC1L": 0.0,
-          "INL1L": 0.0,
-          "INR1L": 0.0,
-          "IVL1L": 0.0,
-          "KNE1L": 1000.0,
-          "KNR1L": 0.0,
-          "LGD1L": 0.0,
-          "LHV1T": 0.0,
-          "LINDA": 0.0,
-          "MDARA": 0.0,
-          "MODE": 0.0,
-          "MRK1T": 26.0,
-          "NCN1T": 0.0,
-          "NEOFI": 0.0,
-          "NTU1L": 0.0,
-          "PKG1T": 0.0,
-          "PRF1T": 0.0,
-          "PZV1L": 0.0,
-          "RKB1R": 0.0,
-          "ROE1L": 700.0,
-          "RSU1L": 150.0,
-          "SAF1R": 100.0,
-          "SAUNA": 0.0,
-          "SCM1R": 0.0,
-          "SFG1T": 0.0,
-          "SKN1T": 0.0,
-          "TAL1T": 1000.0,
-          "TEL1L": 0.0,
-          "TKM1T": 288.0,
-          "TPD1T": 0.0,
-          "TSM1T": 330.0,
-          "TVE1T": 0.0,
-          "UTR1L": 0.0,
-          "VBL1L": 0.0,
-          "VIRSI": 0.0,
-          "VLP1L": 140.0,
-          "ZMP1L": 0.0,
-          "SE0013876927": 0.0,
-          "SE0013876950": 0.0,
-          "SE0013876968": 0.0,
-          "SE0014261756": 0.0,
-          "SE0014261764": 11.2672,
-          "SE0014261871": 0.0,
-          "SE0014261889": 0.0,
-          "SE0014261897": 0.0,
-          "SE0014263273": 0.0,
-          "SE0014263281": 0.0,
-          "SE0014263299": 0.0,
-          "SE0015192315": 0.0,
-          "SE0015192323": 0.0,
-          "SE0015192331": 0.0,
-          "SE0015192349": 0.0,
-          "SE0015948609": 0.0,
-          "SE0015948617": 0.0,
-          "US_PFE": 5.883,
-          "US_NVDA": 7.785244
-        },
-        "EEV": {
-          "objective": 0.47248982451594884,
-          "terminal": {
-            "netSD": 0.4967741935483871,
-            "OUT": 79,
-            "IN": 2,
-            "D": 155,
-            "expected_return": 0.012868544520650435,
-            "scenarios": 20,
-            "probability_mass": 1.0,
-            "OUT_by_order": [
-              0,
-              38,
-              41
-            ],
-            "IN_by_order": [
-              0,
-              1,
-              1
-            ]
-          },
-          "expected_penalty": 0.024284369032438236
-        },
-        "WS": {
-          "objective": 0.5182167418694865,
-          "terminal": {
-            "netSD": 0.5483870967741935,
-            "OUT": 87,
-            "IN": 2,
-            "D": 155,
-            "expected_return": 0.013490286152699723,
-            "scenarios": 20,
-            "probability_mass": 1.0,
-            "OUT_by_order": [
-              1,
-              42,
-              44
-            ],
-            "IN_by_order": [
-              0,
-              1,
-              1
-            ]
-          },
-          "expected_penalty": 0.030170354904707018,
-          "rule": "RP included unchanged in the perfect-information candidate set"
-        },
-        "VSS": 0.04572691735353768,
-        "EVPI": 0.0,
-        "sampling_used": false,
-        "definition": "Maximisation gaps in the same joint terminal-distribution objective, including penalties. EV replaces price paths by their probability means; EEV fixes its initial vector and searches feasible recourse on the complete law. WS allows future-informed pathwise decisions and is scored as one weighted terminal distribution; infeasible informed paths retain the original feasible RP path. No per-leaf netSD averaging. Integer heuristic optima are not certified, so these are attained-policy estimates, not exact optimal EVPI/VSS."
-      },
-      {
-        "model": "stochA",
-        "policy": "SALE",
-        "status": "heuristic attained-policy estimates on complete native law",
-        "scenarios": 20,
-        "probability_mass": 1.0,
-        "RP": {
-          "objective": 0.9776371933286725,
-          "terminal": {
-            "netSD": 1.0,
-            "OUT": 156,
-            "IN": 0,
-            "D": 156,
-            "expected_return": 0.029357712197132124,
-            "scenarios": 20,
-            "probability_mass": 1.0,
-            "OUT_by_order": [
-              20,
-              68,
-              68
-            ],
-            "IN_by_order": [
-              0,
-              0,
-              0
-            ]
-          },
-          "expected_penalty": 0.02236280667132748
-        },
-        "EV_deterministic_objective": 0.7455090668075501,
-        "EV_initial_units": {
-          "AKO1L": 150.0,
-          "AMG1L": 0.0,
-          "APG1L": 844.0,
-          "ARC1T": 0.0,
-          "AUG1L": 0.0,
-          "BAL1R": 0.0,
-          "BERCM": 0.0,
-          "CPA1T": 0.0,
-          "CTS1L": 0.0,
-          "DGR1R": 0.0,
-          "EFT1T": 0.0,
-          "EWA1L": 0.0,
-          "GRG1L": 543.0,
-          "HAE1T": 100.0,
-          "HPR1T": 0.0,
-          "IGN1L": 0.0,
-          "INC1L": 0.0,
-          "INL1L": 0.0,
-          "INR1L": 0.0,
-          "IVL1L": 0.0,
-          "KNE1L": 1000.0,
-          "KNR1L": 0.0,
-          "LGD1L": 0.0,
-          "LHV1T": 0.0,
-          "LINDA": 0.0,
-          "MDARA": 0.0,
-          "MODE": 0.0,
-          "MRK1T": 26.0,
-          "NCN1T": 0.0,
-          "NEOFI": 0.0,
-          "NTU1L": 0.0,
-          "PKG1T": 0.0,
-          "PRF1T": 0.0,
-          "PZV1L": 0.0,
-          "RKB1R": 0.0,
-          "ROE1L": 700.0,
-          "RSU1L": 150.0,
-          "SAF1R": 100.0,
-          "SAUNA": 0.0,
-          "SCM1R": 0.0,
-          "SFG1T": 0.0,
-          "SKN1T": 0.0,
-          "TAL1T": 1000.0,
-          "TEL1L": 0.0,
           "TKM1T": 0.0,
           "TPD1T": 0.0,
           "TSM1T": 330.0,
@@ -3483,7 +2510,7 @@
           "SE0013876950": 0.0,
           "SE0013876968": 0.0,
           "SE0014261756": 0.0,
-          "SE0014261764": 11.2672,
+          "SE0014261764": 15.4759,
           "SE0014261871": 0.0,
           "SE0014261889": 0.0,
           "SE0014261897": 0.0,
@@ -3497,90 +2524,90 @@
           "SE0015948609": 0.0,
           "SE0015948617": 0.0,
           "US_PFE": 5.883,
-          "US_NVDA": 7.785244
+          "US_NVDA": 2.814478
         },
         "EEV": {
-          "objective": 0.5973613532906868,
+          "objective": 0.3748506509940044,
           "terminal": {
-            "netSD": 0.6153846153846154,
-            "OUT": 96,
-            "IN": 0,
-            "D": 156,
-            "expected_return": 0.04138528956872431,
-            "scenarios": 20,
-            "probability_mass": 1.0,
+            "netSD": 0.39156626506024095,
+            "OUT": 71,
+            "IN": 6,
+            "D": 166,
+            "expected_return": 0.007390714431286164,
+            "scenarios": 16000,
+            "probability_mass": 0.9999999999999998,
             "OUT_by_order": [
               9,
-              42,
-              45
+              30,
+              32
             ],
             "IN_by_order": [
-              0,
-              0,
-              0
+              1,
+              2,
+              3
             ]
           },
-          "expected_penalty": 0.01802326209392852
+          "expected_penalty": 0.016715614066236586
         },
         "WS": {
-          "objective": 0.9776371933286725,
+          "objective": 0.7400744485021019,
           "terminal": {
-            "netSD": 1.0,
-            "OUT": 156,
-            "IN": 0,
-            "D": 156,
-            "expected_return": 0.029357712197132124,
-            "scenarios": 20,
-            "probability_mass": 1.0,
+            "netSD": 0.7575757575757576,
+            "OUT": 127,
+            "IN": 2,
+            "D": 165,
+            "expected_return": 0.012927570668505505,
+            "scenarios": 16000,
+            "probability_mass": 0.9999999999999998,
             "OUT_by_order": [
-              20,
-              68,
-              68
+              21,
+              52,
+              54
             ],
             "IN_by_order": [
               0,
-              0,
-              0
+              1,
+              1
             ]
           },
-          "expected_penalty": 0.02236280667132748,
+          "expected_penalty": 0.017501309073655606,
           "rule": "RP included unchanged in the perfect-information candidate set"
         },
-        "VSS": 0.38027584003798565,
+        "VSS": 0.3652237975080975,
         "EVPI": 0.0,
         "sampling_used": false,
         "definition": "Maximisation gaps in the same joint terminal-distribution objective, including penalties. EV replaces price paths by their probability means; EEV fixes its initial vector and searches feasible recourse on the complete law. WS allows future-informed pathwise decisions and is scored as one weighted terminal distribution; infeasible informed paths retain the original feasible RP path. No per-leaf netSD averaging. Integer heuristic optima are not certified, so these are attained-policy estimates, not exact optimal EVPI/VSS."
       },
       {
-        "model": "stochA",
+        "model": "stoch2A",
         "policy": "NO_INITIAL_SALES",
         "status": "heuristic attained-policy estimates on complete native law",
-        "scenarios": 20,
-        "probability_mass": 1.0,
+        "scenarios": 16000,
+        "probability_mass": 0.9999999999999998,
         "RP": {
-          "objective": 0.6286344830694015,
+          "objective": 0.48993332790369276,
           "terminal": {
-            "netSD": 0.6474358974358975,
-            "OUT": 101,
-            "IN": 0,
-            "D": 156,
-            "expected_return": 0.03089255588538468,
-            "scenarios": 20,
-            "probability_mass": 1.0,
+            "netSD": 0.5120481927710844,
+            "OUT": 89,
+            "IN": 4,
+            "D": 166,
+            "expected_return": 0.009464919431675788,
+            "scenarios": 16000,
+            "probability_mass": 0.9999999999999998,
             "OUT_by_order": [
-              7,
-              47,
-              47
+              9,
+              39,
+              41
             ],
             "IN_by_order": [
-              0,
-              0,
-              0
+              1,
+              1,
+              2
             ]
           },
-          "expected_penalty": 0.01880141436649599
+          "expected_penalty": 0.0221148648673916
         },
-        "EV_deterministic_objective": 0.6900661305573746,
+        "EV_deterministic_objective": 0.81350803929939,
         "EV_initial_units": {
           "AKO1L": 150.0,
           "AMG1L": 0.0,
@@ -3602,7 +2629,327 @@
           "INL1L": 0.0,
           "INR1L": 0.0,
           "IVL1L": 0.0,
-          "KNE1L": 2648.0,
+          "KNE1L": 1000.0,
+          "KNR1L": 0.0,
+          "LGD1L": 0.0,
+          "LHV1T": 0.0,
+          "LINDA": 0.0,
+          "MDARA": 0.0,
+          "MODE": 0.0,
+          "MRK1T": 26.0,
+          "NCN1T": 0.0,
+          "NEOFI": 0.0,
+          "NTU1L": 0.0,
+          "PKG1T": 0.0,
+          "PRF1T": 0.0,
+          "PZV1L": 0.0,
+          "RKB1R": 0.0,
+          "ROE1L": 700.0,
+          "RSU1L": 150.0,
+          "SAF1R": 145.0,
+          "SAUNA": 0.0,
+          "SCM1R": 0.0,
+          "SFG1T": 0.0,
+          "SKN1T": 0.0,
+          "TAL1T": 1000.0,
+          "TEL1L": 0.0,
+          "TKM1T": 288.0,
+          "TPD1T": 0.0,
+          "TSM1T": 330.0,
+          "TVE1T": 0.0,
+          "UTR1L": 0.0,
+          "VBL1L": 0.0,
+          "VIRSI": 0.0,
+          "VLP1L": 140.0,
+          "ZMP1L": 0.0,
+          "SE0013876927": 0.0,
+          "SE0013876950": 0.0,
+          "SE0013876968": 0.0,
+          "SE0014261756": 0.0,
+          "SE0014261764": 15.4759,
+          "SE0014261871": 0.0,
+          "SE0014261889": 0.0,
+          "SE0014261897": 0.0,
+          "SE0014263273": 0.0,
+          "SE0014263281": 0.0,
+          "SE0014263299": 0.0,
+          "SE0015192315": 0.0,
+          "SE0015192323": 0.0,
+          "SE0015192331": 0.0,
+          "SE0015192349": 0.0,
+          "SE0015948609": 0.0,
+          "SE0015948617": 0.0,
+          "US_PFE": 5.883,
+          "US_NVDA": 8.106182
+        },
+        "EEV": {
+          "objective": 0.29405265804054337,
+          "terminal": {
+            "netSD": 0.3151515151515151,
+            "OUT": 54,
+            "IN": 2,
+            "D": 165,
+            "expected_return": 0.012199938458109485,
+            "scenarios": 16000,
+            "probability_mass": 0.9999999999999998,
+            "OUT_by_order": [
+              6,
+              23,
+              25
+            ],
+            "IN_by_order": [
+              0,
+              1,
+              1
+            ]
+          },
+          "expected_penalty": 0.021098857110971765
+        },
+        "WS": {
+          "objective": 0.5118272054952874,
+          "terminal": {
+            "netSD": 0.5393939393939394,
+            "OUT": 91,
+            "IN": 2,
+            "D": 165,
+            "expected_return": 0.015622118045609297,
+            "scenarios": 16000,
+            "probability_mass": 0.9999999999999998,
+            "OUT_by_order": [
+              19,
+              35,
+              37
+            ],
+            "IN_by_order": [
+              0,
+              1,
+              1
+            ]
+          },
+          "expected_penalty": 0.027566733898652048,
+          "rule": {
+            "fraction": 0.5,
+            "mean_normalisation": false
+          },
+          "valid_new_policy_probability": 0.9999021445962648
+        },
+        "VSS": 0.1958806698631494,
+        "EVPI": 0.021893877591594613,
+        "sampling_used": false,
+        "definition": "Maximisation gaps in the same joint terminal-distribution objective, including penalties. EV replaces price paths by their probability means; EEV fixes its initial vector and searches feasible recourse on the complete law. WS allows future-informed pathwise decisions and is scored as one weighted terminal distribution; infeasible informed paths retain the original feasible RP path. No per-leaf netSD averaging. Integer heuristic optima are not certified, so these are attained-policy estimates, not exact optimal EVPI/VSS."
+      },
+      {
+        "model": "STOCHASTIC",
+        "policy": "NO_SALE",
+        "status": "heuristic attained-policy estimates on complete native law",
+        "scenarios": 20,
+        "probability_mass": 1.0000000000000002,
+        "RP": {
+          "objective": 0.6204248704010523,
+          "terminal": {
+            "netSD": 0.6484848484848484,
+            "OUT": 107,
+            "IN": 0,
+            "D": 165,
+            "expected_return": 0.01375422888761646,
+            "scenarios": 20,
+            "probability_mass": 0.9999999999999999,
+            "OUT_by_order": [
+              6,
+              49,
+              52
+            ],
+            "IN_by_order": [
+              0,
+              0,
+              0
+            ]
+          },
+          "expected_penalty": 0.028059978083796094
+        },
+        "EV_deterministic_objective": 0.48372240853982046,
+        "EV_initial_units": {
+          "AKO1L": 150.0,
+          "AMG1L": 0.0,
+          "APG1L": 200.0,
+          "ARC1T": 0.0,
+          "AUG1L": 0.0,
+          "BAL1R": 0.0,
+          "BERCM": 0.0,
+          "CPA1T": 0.0,
+          "CTS1L": 0.0,
+          "DGR1R": 0.0,
+          "EFT1T": 0.0,
+          "EWA1L": 0.0,
+          "GRG1L": 543.0,
+          "HAE1T": 100.0,
+          "HPR1T": 0.0,
+          "IGN1L": 0.0,
+          "INC1L": 0.0,
+          "INL1L": 0.0,
+          "INR1L": 0.0,
+          "IVL1L": 0.0,
+          "KNE1L": 1000.0,
+          "KNR1L": 0.0,
+          "LGD1L": 0.0,
+          "LHV1T": 0.0,
+          "LINDA": 0.0,
+          "MDARA": 0.0,
+          "MODE": 0.0,
+          "MRK1T": 26.0,
+          "NCN1T": 0.0,
+          "NEOFI": 0.0,
+          "NTU1L": 0.0,
+          "PKG1T": 0.0,
+          "PRF1T": 0.0,
+          "PZV1L": 0.0,
+          "RKB1R": 0.0,
+          "ROE1L": 700.0,
+          "RSU1L": 150.0,
+          "SAF1R": 118.0,
+          "SAUNA": 0.0,
+          "SCM1R": 0.0,
+          "SFG1T": 0.0,
+          "SKN1T": 0.0,
+          "TAL1T": 1000.0,
+          "TEL1L": 0.0,
+          "TKM1T": 288.0,
+          "TPD1T": 0.0,
+          "TSM1T": 330.0,
+          "TVE1T": 0.0,
+          "UTR1L": 0.0,
+          "VBL1L": 0.0,
+          "VIRSI": 0.0,
+          "VLP1L": 140.0,
+          "ZMP1L": 0.0,
+          "SE0013876927": 0.0,
+          "SE0013876950": 0.0,
+          "SE0013876968": 0.0,
+          "SE0014261756": 0.0,
+          "SE0014261764": 15.4759,
+          "SE0014261871": 0.0,
+          "SE0014261889": 0.0,
+          "SE0014261897": 0.0,
+          "SE0014263273": 0.0,
+          "SE0014263281": 0.0,
+          "SE0014263299": 0.0,
+          "SE0015192315": 0.0,
+          "SE0015192323": 0.0,
+          "SE0015192331": 0.0,
+          "SE0015192349": 0.0,
+          "SE0015948609": 0.0,
+          "SE0015948617": 0.0,
+          "US_PFE": 5.883,
+          "US_NVDA": 4.931159
+        },
+        "EEV": {
+          "objective": 0.580109564599799,
+          "terminal": {
+            "netSD": 0.6121212121212121,
+            "OUT": 101,
+            "IN": 0,
+            "D": 165,
+            "expected_return": 0.014596397073671429,
+            "scenarios": 20,
+            "probability_mass": 0.9999999999999999,
+            "OUT_by_order": [
+              6,
+              45,
+              50
+            ],
+            "IN_by_order": [
+              0,
+              0,
+              0
+            ]
+          },
+          "expected_penalty": 0.03201164752141304
+        },
+        "WS": {
+          "objective": 0.7071257395387865,
+          "terminal": {
+            "netSD": 0.7454545454545455,
+            "OUT": 123,
+            "IN": 0,
+            "D": 165,
+            "expected_return": 0.0188220422782139,
+            "scenarios": 20,
+            "probability_mass": 0.9999999999999999,
+            "OUT_by_order": [
+              9,
+              57,
+              57
+            ],
+            "IN_by_order": [
+              0,
+              0,
+              0
+            ]
+          },
+          "expected_penalty": 0.0383288059157589,
+          "rule": {
+            "fraction": 1.0,
+            "mean_normalisation": false
+          },
+          "valid_new_policy_probability": 1.0000000000000002
+        },
+        "VSS": 0.04031530580125331,
+        "EVPI": 0.08670086913773423,
+        "sampling_used": false,
+        "definition": "Maximisation gaps in the same joint terminal-distribution objective, including penalties. EV replaces price paths by their probability means; EEV fixes its initial vector and searches feasible recourse on the complete law. WS allows future-informed pathwise decisions and is scored as one weighted terminal distribution; infeasible informed paths retain the original feasible RP path. No per-leaf netSD averaging. Integer heuristic optima are not certified, so these are attained-policy estimates, not exact optimal EVPI/VSS."
+      },
+      {
+        "model": "STOCHASTIC",
+        "policy": "SALE",
+        "status": "heuristic attained-policy estimates on complete native law",
+        "scenarios": 20,
+        "probability_mass": 1.0000000000000002,
+        "RP": {
+          "objective": 0.7839513701756733,
+          "terminal": {
+            "netSD": 0.8,
+            "OUT": 132,
+            "IN": 0,
+            "D": 165,
+            "expected_return": 0.019493500775104613,
+            "scenarios": 20,
+            "probability_mass": 0.9999999999999999,
+            "OUT_by_order": [
+              8,
+              62,
+              62
+            ],
+            "IN_by_order": [
+              0,
+              0,
+              0
+            ]
+          },
+          "expected_penalty": 0.01604862982432677
+        },
+        "EV_deterministic_objective": 0.6879311629865625,
+        "EV_initial_units": {
+          "AKO1L": 150.0,
+          "AMG1L": 0.0,
+          "APG1L": 0.0,
+          "ARC1T": 0.0,
+          "AUG1L": 0.0,
+          "BAL1R": 0.0,
+          "BERCM": 0.0,
+          "CPA1T": 0.0,
+          "CTS1L": 0.0,
+          "DGR1R": 0.0,
+          "EFT1T": 0.0,
+          "EWA1L": 0.0,
+          "GRG1L": 543.0,
+          "HAE1T": 100.0,
+          "HPR1T": 0.0,
+          "IGN1L": 0.0,
+          "INC1L": 0.0,
+          "INL1L": 0.0,
+          "INR1L": 0.0,
+          "IVL1L": 0.0,
+          "KNE1L": 1000.0,
           "KNR1L": 0.0,
           "LGD1L": 0.0,
           "LHV1T": 0.0,
@@ -3639,7 +2986,7 @@
           "SE0013876950": 0.0,
           "SE0013876968": 0.0,
           "SE0014261756": 0.0,
-          "SE0014261764": 11.2672,
+          "SE0014261764": 15.4759,
           "SE0014261871": 0.0,
           "SE0014261889": 0.0,
           "SE0014261897": 0.0,
@@ -3653,45 +3000,22 @@
           "SE0015948609": 0.0,
           "SE0015948617": 0.0,
           "US_PFE": 5.883,
-          "US_NVDA": 7.785244
+          "US_NVDA": 8.106182
         },
         "EEV": {
-          "objective": 0.5838878744459537,
+          "objective": 0.6853402922792672,
           "terminal": {
-            "netSD": 0.6025641025641025,
-            "OUT": 94,
+            "netSD": 0.7090909090909091,
+            "OUT": 117,
             "IN": 0,
-            "D": 156,
-            "expected_return": 0.03129226038629816,
+            "D": 165,
+            "expected_return": 0.016493227611709647,
             "scenarios": 20,
-            "probability_mass": 1.0,
-            "OUT_by_order": [
-              6,
-              44,
-              44
-            ],
-            "IN_by_order": [
-              0,
-              0,
-              0
-            ]
-          },
-          "expected_penalty": 0.018676228118148896
-        },
-        "WS": {
-          "objective": 0.6286344830694015,
-          "terminal": {
-            "netSD": 0.6474358974358975,
-            "OUT": 101,
-            "IN": 0,
-            "D": 156,
-            "expected_return": 0.03089255588538468,
-            "scenarios": 20,
-            "probability_mass": 1.0,
+            "probability_mass": 0.9999999999999999,
             "OUT_by_order": [
               7,
-              47,
-              47
+              54,
+              56
             ],
             "IN_by_order": [
               0,
@@ -3699,16 +3023,671 @@
               0
             ]
           },
-          "expected_penalty": 0.01880141436649599,
+          "expected_penalty": 0.023750616811641964
+        },
+        "WS": {
+          "objective": 0.7839513701756733,
+          "terminal": {
+            "netSD": 0.8,
+            "OUT": 132,
+            "IN": 0,
+            "D": 165,
+            "expected_return": 0.019493500775104613,
+            "scenarios": 20,
+            "probability_mass": 0.9999999999999999,
+            "OUT_by_order": [
+              8,
+              62,
+              62
+            ],
+            "IN_by_order": [
+              0,
+              0,
+              0
+            ]
+          },
+          "expected_penalty": 0.01604862982432677,
           "rule": "RP included unchanged in the perfect-information candidate set"
         },
-        "VSS": 0.044746608623447814,
+        "VSS": 0.09861107789640611,
+        "EVPI": 0.0,
+        "sampling_used": false,
+        "definition": "Maximisation gaps in the same joint terminal-distribution objective, including penalties. EV replaces price paths by their probability means; EEV fixes its initial vector and searches feasible recourse on the complete law. WS allows future-informed pathwise decisions and is scored as one weighted terminal distribution; infeasible informed paths retain the original feasible RP path. No per-leaf netSD averaging. Integer heuristic optima are not certified, so these are attained-policy estimates, not exact optimal EVPI/VSS."
+      },
+      {
+        "model": "STOCHASTIC",
+        "policy": "NO_INITIAL_SALES",
+        "status": "heuristic attained-policy estimates on complete native law",
+        "scenarios": 20,
+        "probability_mass": 1.0000000000000002,
+        "RP": {
+          "objective": 0.6204248704010523,
+          "terminal": {
+            "netSD": 0.6484848484848484,
+            "OUT": 107,
+            "IN": 0,
+            "D": 165,
+            "expected_return": 0.01375422888761646,
+            "scenarios": 20,
+            "probability_mass": 0.9999999999999999,
+            "OUT_by_order": [
+              6,
+              49,
+              52
+            ],
+            "IN_by_order": [
+              0,
+              0,
+              0
+            ]
+          },
+          "expected_penalty": 0.028059978083796094
+        },
+        "EV_deterministic_objective": 0.6871912664406431,
+        "EV_initial_units": {
+          "AKO1L": 150.0,
+          "AMG1L": 0.0,
+          "APG1L": 200.0,
+          "ARC1T": 0.0,
+          "AUG1L": 0.0,
+          "BAL1R": 0.0,
+          "BERCM": 0.0,
+          "CPA1T": 0.0,
+          "CTS1L": 0.0,
+          "DGR1R": 0.0,
+          "EFT1T": 0.0,
+          "EWA1L": 0.0,
+          "GRG1L": 543.0,
+          "HAE1T": 100.0,
+          "HPR1T": 0.0,
+          "IGN1L": 0.0,
+          "INC1L": 0.0,
+          "INL1L": 0.0,
+          "INR1L": 0.0,
+          "IVL1L": 0.0,
+          "KNE1L": 1000.0,
+          "KNR1L": 0.0,
+          "LGD1L": 0.0,
+          "LHV1T": 0.0,
+          "LINDA": 0.0,
+          "MDARA": 0.0,
+          "MODE": 0.0,
+          "MRK1T": 54.0,
+          "NCN1T": 0.0,
+          "NEOFI": 0.0,
+          "NTU1L": 0.0,
+          "PKG1T": 0.0,
+          "PRF1T": 0.0,
+          "PZV1L": 0.0,
+          "RKB1R": 0.0,
+          "ROE1L": 700.0,
+          "RSU1L": 150.0,
+          "SAF1R": 100.0,
+          "SAUNA": 0.0,
+          "SCM1R": 0.0,
+          "SFG1T": 0.0,
+          "SKN1T": 0.0,
+          "TAL1T": 1000.0,
+          "TEL1L": 0.0,
+          "TKM1T": 288.0,
+          "TPD1T": 0.0,
+          "TSM1T": 330.0,
+          "TVE1T": 0.0,
+          "UTR1L": 0.0,
+          "VBL1L": 0.0,
+          "VIRSI": 0.0,
+          "VLP1L": 140.0,
+          "ZMP1L": 0.0,
+          "SE0013876927": 0.0,
+          "SE0013876950": 0.0,
+          "SE0013876968": 0.0,
+          "SE0014261756": 0.0,
+          "SE0014261764": 15.4759,
+          "SE0014261871": 0.0,
+          "SE0014261889": 0.0,
+          "SE0014261897": 0.0,
+          "SE0014263273": 0.0,
+          "SE0014263281": 0.0,
+          "SE0014263299": 0.0,
+          "SE0015192315": 0.0,
+          "SE0015192323": 0.0,
+          "SE0015192331": 0.0,
+          "SE0015192349": 0.0,
+          "SE0015948609": 0.0,
+          "SE0015948617": 0.0,
+          "US_PFE": 5.883,
+          "US_NVDA": 4.053091
+        },
+        "EEV": {
+          "objective": 0.5974566794904339,
+          "terminal": {
+            "netSD": 0.6303030303030303,
+            "OUT": 104,
+            "IN": 0,
+            "D": 165,
+            "expected_return": 0.015322279418613633,
+            "scenarios": 20,
+            "probability_mass": 0.9999999999999999,
+            "OUT_by_order": [
+              6,
+              47,
+              51
+            ],
+            "IN_by_order": [
+              0,
+              0,
+              0
+            ]
+          },
+          "expected_penalty": 0.03284635081259634
+        },
+        "WS": {
+          "objective": 0.7020953073582161,
+          "terminal": {
+            "netSD": 0.7333333333333333,
+            "OUT": 121,
+            "IN": 0,
+            "D": 165,
+            "expected_return": 0.01871240847350638,
+            "scenarios": 20,
+            "probability_mass": 0.9999999999999999,
+            "OUT_by_order": [
+              8,
+              56,
+              57
+            ],
+            "IN_by_order": [
+              0,
+              0,
+              0
+            ]
+          },
+          "expected_penalty": 0.031238025975117177,
+          "rule": {
+            "fraction": 1.0,
+            "mean_normalisation": false
+          },
+          "valid_new_policy_probability": 1.0000000000000002
+        },
+        "VSS": 0.022968190910618413,
+        "EVPI": 0.0816704369571638,
+        "sampling_used": false,
+        "definition": "Maximisation gaps in the same joint terminal-distribution objective, including penalties. EV replaces price paths by their probability means; EEV fixes its initial vector and searches feasible recourse on the complete law. WS allows future-informed pathwise decisions and is scored as one weighted terminal distribution; infeasible informed paths retain the original feasible RP path. No per-leaf netSD averaging. Integer heuristic optima are not certified, so these are attained-policy estimates, not exact optimal EVPI/VSS."
+      },
+      {
+        "model": "stochA",
+        "policy": "NO_SALE",
+        "status": "heuristic attained-policy estimates on complete native law",
+        "scenarios": 20,
+        "probability_mass": 1.0000000000000002,
+        "RP": {
+          "objective": 0.6955988622288841,
+          "terminal": {
+            "netSD": 0.7272727272727273,
+            "OUT": 120,
+            "IN": 0,
+            "D": 165,
+            "expected_return": 0.017908009731162706,
+            "scenarios": 20,
+            "probability_mass": 0.9999999999999999,
+            "OUT_by_order": [
+              8,
+              56,
+              56
+            ],
+            "IN_by_order": [
+              0,
+              0,
+              0
+            ]
+          },
+          "expected_penalty": 0.03167386504384318
+        },
+        "EV_deterministic_objective": 0.537158194674461,
+        "EV_initial_units": {
+          "AKO1L": 150.0,
+          "AMG1L": 0.0,
+          "APG1L": 200.0,
+          "ARC1T": 0.0,
+          "AUG1L": 0.0,
+          "BAL1R": 0.0,
+          "BERCM": 0.0,
+          "CPA1T": 0.0,
+          "CTS1L": 0.0,
+          "DGR1R": 0.0,
+          "EFT1T": 0.0,
+          "EWA1L": 0.0,
+          "GRG1L": 543.0,
+          "HAE1T": 100.0,
+          "HPR1T": 0.0,
+          "IGN1L": 0.0,
+          "INC1L": 0.0,
+          "INL1L": 0.0,
+          "INR1L": 0.0,
+          "IVL1L": 0.0,
+          "KNE1L": 1000.0,
+          "KNR1L": 0.0,
+          "LGD1L": 0.0,
+          "LHV1T": 0.0,
+          "LINDA": 0.0,
+          "MDARA": 0.0,
+          "MODE": 0.0,
+          "MRK1T": 101.0,
+          "NCN1T": 0.0,
+          "NEOFI": 0.0,
+          "NTU1L": 0.0,
+          "PKG1T": 0.0,
+          "PRF1T": 0.0,
+          "PZV1L": 0.0,
+          "RKB1R": 0.0,
+          "ROE1L": 700.0,
+          "RSU1L": 150.0,
+          "SAF1R": 100.0,
+          "SAUNA": 0.0,
+          "SCM1R": 0.0,
+          "SFG1T": 0.0,
+          "SKN1T": 0.0,
+          "TAL1T": 1000.0,
+          "TEL1L": 0.0,
+          "TKM1T": 288.0,
+          "TPD1T": 0.0,
+          "TSM1T": 330.0,
+          "TVE1T": 0.0,
+          "UTR1L": 0.0,
+          "VBL1L": 0.0,
+          "VIRSI": 0.0,
+          "VLP1L": 140.0,
+          "ZMP1L": 0.0,
+          "SE0013876927": 0.0,
+          "SE0013876950": 0.0,
+          "SE0013876968": 0.0,
+          "SE0014261756": 0.0,
+          "SE0014261764": 15.4759,
+          "SE0014261871": 0.0,
+          "SE0014261889": 0.0,
+          "SE0014261897": 0.0,
+          "SE0014263273": 0.0,
+          "SE0014263281": 0.0,
+          "SE0014263299": 0.0,
+          "SE0015192315": 0.0,
+          "SE0015192323": 0.0,
+          "SE0015192331": 0.0,
+          "SE0015192349": 0.0,
+          "SE0015948609": 0.0,
+          "SE0015948617": 0.0,
+          "US_PFE": 5.883,
+          "US_NVDA": 4.931159
+        },
+        "EEV": {
+          "objective": 0.4915806295165287,
+          "terminal": {
+            "netSD": 0.5212121212121212,
+            "OUT": 86,
+            "IN": 0,
+            "D": 165,
+            "expected_return": 0.013296266843816509,
+            "scenarios": 20,
+            "probability_mass": 0.9999999999999999,
+            "OUT_by_order": [
+              4,
+              39,
+              43
+            ],
+            "IN_by_order": [
+              0,
+              0,
+              0
+            ]
+          },
+          "expected_penalty": 0.029631491695592545
+        },
+        "WS": {
+          "objective": 0.7584524871546792,
+          "terminal": {
+            "netSD": 0.7878787878787878,
+            "OUT": 130,
+            "IN": 0,
+            "D": 165,
+            "expected_return": 0.02148840024499213,
+            "scenarios": 20,
+            "probability_mass": 0.9999999999999999,
+            "OUT_by_order": [
+              9,
+              60,
+              61
+            ],
+            "IN_by_order": [
+              0,
+              0,
+              0
+            ]
+          },
+          "expected_penalty": 0.029426300724108692,
+          "rule": {
+            "fraction": 0.5,
+            "mean_normalisation": false
+          },
+          "valid_new_policy_probability": 1.0000000000000002
+        },
+        "VSS": 0.20401823271235542,
+        "EVPI": 0.06285362492579505,
+        "sampling_used": false,
+        "definition": "Maximisation gaps in the same joint terminal-distribution objective, including penalties. EV replaces price paths by their probability means; EEV fixes its initial vector and searches feasible recourse on the complete law. WS allows future-informed pathwise decisions and is scored as one weighted terminal distribution; infeasible informed paths retain the original feasible RP path. No per-leaf netSD averaging. Integer heuristic optima are not certified, so these are attained-policy estimates, not exact optimal EVPI/VSS."
+      },
+      {
+        "model": "stochA",
+        "policy": "SALE",
+        "status": "heuristic attained-policy estimates on complete native law",
+        "scenarios": 20,
+        "probability_mass": 1.0000000000000002,
+        "RP": {
+          "objective": 0.9830605799643835,
+          "terminal": {
+            "netSD": 1.0,
+            "OUT": 165,
+            "IN": 0,
+            "D": 165,
+            "expected_return": 0.03989097064713843,
+            "scenarios": 20,
+            "probability_mass": 0.9999999999999999,
+            "OUT_by_order": [
+              27,
+              69,
+              69
+            ],
+            "IN_by_order": [
+              0,
+              0,
+              0
+            ]
+          },
+          "expected_penalty": 0.016939420035616496
+        },
+        "EV_deterministic_objective": 0.7652780787105709,
+        "EV_initial_units": {
+          "AKO1L": 330.0,
+          "AMG1L": 0.0,
+          "APG1L": 200.0,
+          "ARC1T": 0.0,
+          "AUG1L": 0.0,
+          "BAL1R": 0.0,
+          "BERCM": 0.0,
+          "CPA1T": 0.0,
+          "CTS1L": 0.0,
+          "DGR1R": 0.0,
+          "EFT1T": 0.0,
+          "EWA1L": 0.0,
+          "GRG1L": 543.0,
+          "HAE1T": 0.0,
+          "HPR1T": 0.0,
+          "IGN1L": 0.0,
+          "INC1L": 0.0,
+          "INL1L": 0.0,
+          "INR1L": 0.0,
+          "IVL1L": 0.0,
+          "KNE1L": 1000.0,
+          "KNR1L": 0.0,
+          "LGD1L": 0.0,
+          "LHV1T": 0.0,
+          "LINDA": 0.0,
+          "MDARA": 0.0,
+          "MODE": 0.0,
+          "MRK1T": 119.0,
+          "NCN1T": 0.0,
+          "NEOFI": 0.0,
+          "NTU1L": 0.0,
+          "PKG1T": 0.0,
+          "PRF1T": 0.0,
+          "PZV1L": 0.0,
+          "RKB1R": 0.0,
+          "ROE1L": 700.0,
+          "RSU1L": 150.0,
+          "SAF1R": 100.0,
+          "SAUNA": 0.0,
+          "SCM1R": 0.0,
+          "SFG1T": 0.0,
+          "SKN1T": 0.0,
+          "TAL1T": 1000.0,
+          "TEL1L": 0.0,
+          "TKM1T": 288.0,
+          "TPD1T": 0.0,
+          "TSM1T": 330.0,
+          "TVE1T": 0.0,
+          "UTR1L": 0.0,
+          "VBL1L": 0.0,
+          "VIRSI": 0.0,
+          "VLP1L": 140.0,
+          "ZMP1L": 0.0,
+          "SE0013876927": 0.0,
+          "SE0013876950": 0.0,
+          "SE0013876968": 0.0,
+          "SE0014261756": 0.0,
+          "SE0014261764": 15.4759,
+          "SE0014261871": 0.0,
+          "SE0014261889": 0.0,
+          "SE0014261897": 0.0,
+          "SE0014263273": 0.0,
+          "SE0014263281": 0.0,
+          "SE0014263299": 0.0,
+          "SE0015192315": 0.0,
+          "SE0015192323": 0.0,
+          "SE0015192331": 0.0,
+          "SE0015192349": 0.0,
+          "SE0015948609": 0.0,
+          "SE0015948617": 0.0,
+          "US_PFE": 5.883,
+          "US_NVDA": 2.814478
+        },
+        "EEV": {
+          "objective": 0.9004559506833443,
+          "terminal": {
+            "netSD": 0.9212121212121213,
+            "OUT": 152,
+            "IN": 0,
+            "D": 165,
+            "expected_return": 0.040826254646832864,
+            "scenarios": 20,
+            "probability_mass": 0.9999999999999999,
+            "OUT_by_order": [
+              26,
+              63,
+              63
+            ],
+            "IN_by_order": [
+              0,
+              0,
+              0
+            ]
+          },
+          "expected_penalty": 0.020756170528776992
+        },
+        "WS": {
+          "objective": 0.9830605799643835,
+          "terminal": {
+            "netSD": 1.0,
+            "OUT": 165,
+            "IN": 0,
+            "D": 165,
+            "expected_return": 0.03989097064713843,
+            "scenarios": 20,
+            "probability_mass": 0.9999999999999999,
+            "OUT_by_order": [
+              27,
+              69,
+              69
+            ],
+            "IN_by_order": [
+              0,
+              0,
+              0
+            ]
+          },
+          "expected_penalty": 0.016939420035616496,
+          "rule": "RP included unchanged in the perfect-information candidate set"
+        },
+        "VSS": 0.08260462928103918,
+        "EVPI": 0.0,
+        "sampling_used": false,
+        "definition": "Maximisation gaps in the same joint terminal-distribution objective, including penalties. EV replaces price paths by their probability means; EEV fixes its initial vector and searches feasible recourse on the complete law. WS allows future-informed pathwise decisions and is scored as one weighted terminal distribution; infeasible informed paths retain the original feasible RP path. No per-leaf netSD averaging. Integer heuristic optima are not certified, so these are attained-policy estimates, not exact optimal EVPI/VSS."
+      },
+      {
+        "model": "stochA",
+        "policy": "NO_INITIAL_SALES",
+        "status": "heuristic attained-policy estimates on complete native law",
+        "scenarios": 20,
+        "probability_mass": 1.0000000000000002,
+        "RP": {
+          "objective": 0.9780025416513874,
+          "terminal": {
+            "netSD": 1.0,
+            "OUT": 165,
+            "IN": 0,
+            "D": 165,
+            "expected_return": 0.0408745266434384,
+            "scenarios": 20,
+            "probability_mass": 0.9999999999999999,
+            "OUT_by_order": [
+              31,
+              67,
+              67
+            ],
+            "IN_by_order": [
+              0,
+              0,
+              0
+            ]
+          },
+          "expected_penalty": 0.02199745834861254
+        },
+        "EV_deterministic_objective": 0.7653004812733508,
+        "EV_initial_units": {
+          "AKO1L": 330.0,
+          "AMG1L": 0.0,
+          "APG1L": 200.0,
+          "ARC1T": 0.0,
+          "AUG1L": 0.0,
+          "BAL1R": 0.0,
+          "BERCM": 0.0,
+          "CPA1T": 0.0,
+          "CTS1L": 0.0,
+          "DGR1R": 0.0,
+          "EFT1T": 0.0,
+          "EWA1L": 0.0,
+          "GRG1L": 543.0,
+          "HAE1T": 100.0,
+          "HPR1T": 0.0,
+          "IGN1L": 0.0,
+          "INC1L": 0.0,
+          "INL1L": 0.0,
+          "INR1L": 0.0,
+          "IVL1L": 0.0,
+          "KNE1L": 1000.0,
+          "KNR1L": 0.0,
+          "LGD1L": 0.0,
+          "LHV1T": 0.0,
+          "LINDA": 0.0,
+          "MDARA": 0.0,
+          "MODE": 0.0,
+          "MRK1T": 101.0,
+          "NCN1T": 0.0,
+          "NEOFI": 0.0,
+          "NTU1L": 0.0,
+          "PKG1T": 0.0,
+          "PRF1T": 0.0,
+          "PZV1L": 0.0,
+          "RKB1R": 0.0,
+          "ROE1L": 700.0,
+          "RSU1L": 150.0,
+          "SAF1R": 100.0,
+          "SAUNA": 0.0,
+          "SCM1R": 0.0,
+          "SFG1T": 0.0,
+          "SKN1T": 0.0,
+          "TAL1T": 1000.0,
+          "TEL1L": 0.0,
+          "TKM1T": 288.0,
+          "TPD1T": 0.0,
+          "TSM1T": 330.0,
+          "TVE1T": 0.0,
+          "UTR1L": 0.0,
+          "VBL1L": 0.0,
+          "VIRSI": 0.0,
+          "VLP1L": 140.0,
+          "ZMP1L": 0.0,
+          "SE0013876927": 0.0,
+          "SE0013876950": 0.0,
+          "SE0013876968": 0.0,
+          "SE0014261756": 0.0,
+          "SE0014261764": 15.4759,
+          "SE0014261871": 0.0,
+          "SE0014261889": 0.0,
+          "SE0014261897": 0.0,
+          "SE0014263273": 0.0,
+          "SE0014263281": 0.0,
+          "SE0014263299": 0.0,
+          "SE0015192315": 0.0,
+          "SE0015192323": 0.0,
+          "SE0015192331": 0.0,
+          "SE0015192349": 0.0,
+          "SE0015948609": 0.0,
+          "SE0015948617": 0.0,
+          "US_PFE": 5.883,
+          "US_NVDA": 2.814478
+        },
+        "EEV": {
+          "objective": 0.8597494214742973,
+          "terminal": {
+            "netSD": 0.8787878787878788,
+            "OUT": 145,
+            "IN": 0,
+            "D": 165,
+            "expected_return": 0.03933818994688083,
+            "scenarios": 20,
+            "probability_mass": 0.9999999999999999,
+            "OUT_by_order": [
+              20,
+              62,
+              63
+            ],
+            "IN_by_order": [
+              0,
+              0,
+              0
+            ]
+          },
+          "expected_penalty": 0.019038457313581482
+        },
+        "WS": {
+          "objective": 0.9780025416513874,
+          "terminal": {
+            "netSD": 1.0,
+            "OUT": 165,
+            "IN": 0,
+            "D": 165,
+            "expected_return": 0.0408745266434384,
+            "scenarios": 20,
+            "probability_mass": 0.9999999999999999,
+            "OUT_by_order": [
+              31,
+              67,
+              67
+            ],
+            "IN_by_order": [
+              0,
+              0,
+              0
+            ]
+          },
+          "expected_penalty": 0.02199745834861254,
+          "rule": "RP included unchanged in the perfect-information candidate set"
+        },
+        "VSS": 0.11825312017709011,
         "EVPI": 0.0,
         "sampling_used": false,
         "definition": "Maximisation gaps in the same joint terminal-distribution objective, including penalties. EV replaces price paths by their probability means; EEV fixes its initial vector and searches feasible recourse on the complete law. WS allows future-informed pathwise decisions and is scored as one weighted terminal distribution; infeasible informed paths retain the original feasible RP path. No per-leaf netSD averaging. Integer heuristic optima are not certified, so these are attained-policy estimates, not exact optimal EVPI/VSS."
       }
     ],
-    "input_hash": "936f61c1651acc82a8b4da981a42a169e5f989b8accdd496d3baa59ce8a0d5b6",
+    "input_hash": "ee42477e8809929596945ca6d3fa65c94831d4eb809b1346101356f79a6de85c",
     "complete": true
   }
 }
