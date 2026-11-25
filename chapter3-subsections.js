@@ -20,6 +20,19 @@
    if(window.reportExpandAllActive===true)doc.querySelectorAll('details').forEach(e=>{e.open=true;});
   });
  }
+ document.querySelectorAll('iframe[data-c3-src]').forEach(extra=>{
+  const panel=extra.closest('details');if(!panel)return;
+  const load=()=>{if(panel.open&&extra.getClientRects().length&&!extra.getAttribute('src'))extra.src=extra.dataset.c3Src};
+  document.addEventListener('toggle',load,true);load();
+  extra.addEventListener('load',()=>{
+   const doc=extra.contentDocument;if(!doc)return;
+   const h=doc.querySelector('h1');if(h)h.hidden=true;
+   doc.querySelectorAll('details').forEach(e=>e.open=window.reportExpandAllActive===true);
+   const resize=()=>{const height=Math.ceil(doc.body.getBoundingClientRect().height+36);if(extra.style.height!==height+'px')extra.style.height=height+'px'};
+   new ResizeObserver(resize).observe(doc.body);resize();
+   document.addEventListener('click',event=>{if(event.target.closest('#expand-all-sections,#collapse-all-sections')&&typeof window.reportExpandAllActive==='boolean')doc.querySelectorAll('details').forEach(e=>e.open=window.reportExpandAllActive)});
+  });
+ });
  if(!document.getElementById('study-status'))return;
  let queued=false;
  const renumber=(parent,prefix)=>{
