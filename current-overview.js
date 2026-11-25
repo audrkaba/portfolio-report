@@ -21,6 +21,8 @@ function renderComposition(rows=compositionRows){
  const widths=[28,9,8,7,7,7,7,12,7,8];
  $('co-holdings').innerHTML=table(headings,rows).replace('<table>','<table class="horizontal-summary-group co-composition-table"><colgroup>'+widths.map(w=>'<col style="width:'+w+'%">').join('')+'</colgroup>');
  for(const [i,row] of (data?.composition||[]).entries()){const tr=$('co-holdings').querySelectorAll('tbody tr')[i];if(tr&&row.fixed_income)tr.classList.add('co-fixed-income-row');if(tr&&row.cash)tr.classList.add('co-cash-row');}
+ const account=data?.composition?.[0],cells=$('co-holdings').querySelector('tbody tr')?.children;
+ if(account?.partial_changes&&cells)for(const [i,key] of ['day','month','YTD','since_2025'].entries()){cells[i+3].innerHTML=changeCell(account.changes[key])+(account.changes[key]==null?'':'*');cells[i+3].title=(account.change_notes?.[key]||'')+' Known value change: '+eur(account.change_amounts_EUR?.[key]);}
 }
 function table(headers,rows){return '<table><thead><tr>'+headers.map(h=>'<th scope="col">'+esc(h)+'</th>').join('')+'</tr></thead><tbody>'+rows.map(r=>'<tr>'+r.map((v,i)=>'<'+(i?'td':'th scope="row"')+' data-label="'+esc(headers[i])+'">'+v+'</'+(i?'td':'th')+'>').join('')+'</tr>').join('')+'</tbody></table>';}
 function changeCell(x){return x==null?'—':'<span class="'+(x<0?'co-negative':'co-positive')+'">'+pct(x)+'</span>';}
@@ -151,6 +153,10 @@ async function render(){
     return [name,r.units==null?'—':String(r.units),r.price_EUR==null?'—':Number(r.price_EUR).toFixed(4),...['day','month','YTD','since_2025'].map(k=>changeCell(r.changes[k])),eur(r.value_EUR),pct(r.weight),r.date?'<time datetime="'+esc(r.date)+'" title="'+esc(r.date)+'">'+esc(r.date.slice(8,10)+'-'+r.date.slice(5,7))+'</time>':'—'];
   });
   renderComposition(compRows);
+  const market=(data.market_history_composition||data.composition)[0];
+  let summary=$('co-value-changes');
+  if(!summary){summary=document.createElement('div');summary.id='co-value-changes';$('current-overview-price').closest('.co-main-grid').after(summary);}
+  summary.innerHTML='<p><strong>Shares and funds — value change</strong></p>'+table(['Period','Change','Change EUR'],[['Day','day'],['Month','month'],['Year to date','YTD'],['Since 2025-01-01','since_2025']].map(([label,key])=>{const ret=market.changes[key],base=market.baseline_values_EUR?.[key]??(ret==null?null:market.value_EUR/(1+ret));return [label,changeCell(ret),base==null?'—':eur(market.value_EUR-base)];}))+ '<small>Fixed current quantities throughout history; latest available marks. Bonds, savings notes and cash are excluded here. Composition total changes marked * include only known shares/funds movement, holding other marks constant.</small>';
   if($('co-maturity')?.open&&data.fixed_income_maturity){const m=data.fixed_income_maturity;await Plotly.react('current-overview-maturity',[line('Fixed-income principal',m.dates,m.principal_outstanding,'#b48328',{stackgroup:'principal',line:{color:'#b48328',shape:'hv'}}),line('Cash',m.dates,m.cash,'#34836c',{stackgroup:'principal',line:{color:'#34836c',shape:'hv'}})],{...layout('Scheduled principal conversion — no reinvestment assumed',310),yaxis:{title:{text:'Nominal principal and cash, EUR'},rangemode:'tozero'}},cfg);}
   if($('co-fixed-income-rows'))$('co-fixed-income-rows').innerHTML=(data.fixed_income_details||[]).map(r=>'<details id="co-fi-'+esc(r.asset)+'"><summary>'+esc(r.asset+' — '+r.name)+'</summary><p>'+esc(r.instrument_code)+' · '+esc(r.units)+' units · annual coupon '+pct(r.annual_interest_rate)+' on nominal · maturity '+esc(r.maturity_date)+'. Valuation: '+esc(r.valuation.basis)+'; unit value '+eur(r.price_EUR)+', position '+eur(r.value_EUR)+'. '+esc(r.valuation.note)+(r.valuation.source?' <a href="'+esc(r.valuation.source)+'" target="_blank" rel="noopener">Quote source</a>':'')+'</p></details>').join('');
   root.dataset.ready='true';root.dataset.period=key;
