@@ -2,7 +2,7 @@
   "state": "running",
   "completed_cases": 6,
   "total_cases": 24,
-  "fitted_grid_settings": 3223,
+  "fitted_grid_settings": 3413,
   "total_grid_settings": 9600,
   "checked_model_cases": 15,
   "source_market_endpoint": "2026-11-17",
@@ -97880,7 +97880,7 @@
       "base_model": "stoch2A",
       "policy": "SALE",
       "complete": false,
-      "stochastic_grid_points": 107,
+      "stochastic_grid_points": 187,
       "phase": "stochastic_policy_search",
       "results": {
         "archive": {
@@ -120256,7 +120256,7 @@
       "base_model": "STOCHASTIC2",
       "policy": "SALE",
       "complete": false,
-      "stochastic_grid_points": 51,
+      "stochastic_grid_points": 161,
       "phase": "stochastic_policy_search",
       "results": {
         "archive": {
