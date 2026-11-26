@@ -1,0 +1,29 @@
+{
+  "scope": "Full latest-data research; pilot results are separate",
+  "models": [
+    {
+      "id": "NETSD-OOS:weighted",
+      "label": "NETSD-OOS · weighted sum",
+      "status": "pending",
+      "metrics": null
+    },
+    {
+      "id": "NETSD-OOS:epsilon",
+      "label": "NETSD-OOS · epsilon constraint",
+      "status": "pending",
+      "metrics": null
+    },
+    {
+      "id": "NETSD-OOS-STOCH:weighted",
+      "label": "NETSD-OOS-STOCH · weighted sum",
+      "status": "pending",
+      "metrics": null
+    },
+    {
+      "id": "NETSD-OOS-STOCH:epsilon",
+      "label": "NETSD-OOS-STOCH · epsilon constraint",
+      "status": "pending",
+      "metrics": null
+    }
+  ]
+}
