@@ -17,7 +17,7 @@ function line(name,x,y,color,extra={}){return {type:'scatter',mode:'lines',name,
 let compositionRows;
 function renderComposition(rows=compositionRows){
  if(!rows)return;compositionRows=rows;
- const headings=['Asset','Units','Unit value, EUR','Day','Month','Year to date','Since 2025-01-01','Value, EUR','Weight','Quote date'];
+ const headings=['Asset','Units','Unit value, EUR','Day','Month','Year to date','Since 2025-01-01','Value, EUR','Shares/funds weight','Quote date'];
  const widths=[28,9,8,7,7,7,7,12,7,8];
  $('co-holdings').innerHTML=table(headings,rows).replace('<table>','<table class="horizontal-summary-group co-composition-table"><colgroup>'+widths.map(w=>'<col style="width:'+w+'%">').join('')+'</colgroup>');
  for(const [i,row] of (data?.composition||[]).entries()){const tr=$('co-holdings').querySelectorAll('tbody tr')[i];if(tr&&row.fixed_income)tr.classList.add('co-fixed-income-row');if(tr&&row.cash)tr.classList.add('co-cash-row');}
