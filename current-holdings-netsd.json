@@ -1,5 +1,5 @@
 {
-  "computed_at_UTC": "2026-11-25T08:06:35.383035+00:00",
+  "computed_at_UTC": "2026-11-26T07:00:35.964792+00:00",
   "holdings": {
     "TKM1T": 288,
     "SAF1R": 100,
@@ -15,85 +15,85 @@
     "TSM1T": 330,
     "SE0014261764": 15.4759,
     "US_PFE": 5.883,
-    "US_NVDA": 2.814478,
+    "US_NVDA": 3.277507,
     "AKO1L": 150
   },
   "valuation_quotes": {
     "TKM1T": {
-      "price_EUR": 8.9,
-      "date": "2026-11-24"
+      "price_EUR": 8.85,
+      "date": "2026-11-25"
     },
     "SAF1R": {
-      "price_EUR": 16.35,
-      "date": "2026-11-24"
+      "price_EUR": 16.05,
+      "date": "2026-11-25"
     },
     "APG1L": {
-      "price_EUR": 3.88,
-      "date": "2026-11-24"
+      "price_EUR": 3.86,
+      "date": "2026-11-25"
     },
     "KNE1L": {
-      "price_EUR": 0.452,
-      "date": "2026-11-24"
+      "price_EUR": 0.448,
+      "date": "2026-11-25"
     },
     "VLP1L": {
-      "price_EUR": 15.15,
-      "date": "2026-11-24"
+      "price_EUR": 14.85,
+      "date": "2026-11-25"
     },
     "RSU1L": {
       "price_EUR": 4.4,
-      "date": "2026-11-24"
+      "date": "2026-11-25"
     },
     "MRK1T": {
-      "price_EUR": 26.65,
-      "date": "2026-11-24"
+      "price_EUR": 26.55,
+      "date": "2026-11-25"
     },
     "GRG1L": {
       "price_EUR": 0.936,
-      "date": "2026-11-24"
+      "date": "2026-11-25"
     },
     "HAE1T": {
-      "price_EUR": 4.96,
-      "date": "2026-11-24"
+      "price_EUR": 5.0,
+      "date": "2026-11-25"
     },
     "TAL1T": {
-      "price_EUR": 0.609,
-      "date": "2026-11-24"
+      "price_EUR": 0.605,
+      "date": "2026-11-25"
     },
     "ROE1L": {
-      "price_EUR": 0.81,
-      "date": "2026-11-24"
+      "price_EUR": 0.806,
+      "date": "2026-11-25"
     },
     "TSM1T": {
       "price_EUR": 1.232,
-      "date": "2026-11-24"
+      "date": "2026-11-25"
     },
     "SE0014261764": {
-      "price_EUR": 23.7605,
-      "date": "2026-11-23"
+      "price_EUR": 22.8181,
+      "date": "2026-11-24"
     },
     "US_PFE": {
-      "price_EUR": 25.960046597165608,
-      "date": "2026-11-24"
+      "price_EUR": 26.02651951026306,
+      "date": "2026-11-25"
     },
     "US_NVDA": {
-      "price_EUR": 141.7312823887736,
-      "date": "2026-11-24"
+      "price_EUR": 136.53406771994315,
+      "date": "2026-11-25"
     },
     "AKO1L": {
-      "price_EUR": 1.665,
-      "date": "2026-11-24"
+      "price_EUR": 1.66,
+      "date": "2026-11-25"
     }
   },
-  "invested_EUR": 12655.995652276117,
-  "cash_with_EUR15000_account": 2344.0043477238833,
-  "training_observations": 1136,
+  "invested_EUR": 12589.844010759465,
+  "cash_with_EUR15000_account": 2410.155989240535,
+  "training_observations": 1138,
   "excluded_diagnostic_observations": 126,
   "unlabelled_training_observations": 42,
   "contexts": {
     "FULL": {
-      "observations": 1136,
+      "observations": 1138,
       "first_return_date": "2021-11-29",
-      "last_return_date": "2026-05-27",
+      "last_return_date": "2026-05-29",
       "network_nodes": 73,
       "D": 115,
       "assets": {
@@ -114,19 +114,19 @@
           ]
         },
         "AMG1L": {
-          "OUT": 31,
-          "IN": 24,
+          "OUT": 33,
+          "IN": 22,
           "D": 115,
-          "netSD": 0.06086956521739131,
+          "netSD": 0.09565217391304348,
           "OUT_by_order": [
             0,
-            15,
-            16
+            16,
+            17
           ],
           "IN_by_order": [
             0,
-            12,
-            12
+            11,
+            11
           ]
         },
         "APG1L": {
@@ -258,14 +258,14 @@
           ]
         },
         "EFT1T": {
-          "OUT": 37,
+          "OUT": 39,
           "IN": 9,
           "D": 115,
-          "netSD": 0.24347826086956523,
+          "netSD": 0.2608695652173913,
           "OUT_by_order": [
             0,
-            18,
-            19
+            19,
+            20
           ],
           "IN_by_order": [
             0,
@@ -291,9 +291,9 @@
         },
         "GRG1L": {
           "OUT": 37,
-          "IN": 13,
+          "IN": 15,
           "D": 115,
-          "netSD": 0.20869565217391303,
+          "netSD": 0.19130434782608696,
           "OUT_by_order": [
             0,
             18,
@@ -301,18 +301,18 @@
           ],
           "IN_by_order": [
             0,
-            6,
-            7
+            7,
+            8
           ]
         },
         "HAE1T": {
-          "OUT": 21,
+          "OUT": 22,
           "IN": 33,
           "D": 115,
-          "netSD": -0.10434782608695652,
+          "netSD": -0.09565217391304348,
           "OUT_by_order": [
             0,
-            10,
+            11,
             11
           ],
           "IN_by_order": [
@@ -355,9 +355,9 @@
         },
         "INC1L": {
           "OUT": 31,
-          "IN": 2,
+          "IN": 3,
           "D": 115,
-          "netSD": 0.25217391304347825,
+          "netSD": 0.24347826086956523,
           "OUT_by_order": [
             0,
             15,
@@ -366,14 +366,14 @@
           "IN_by_order": [
             0,
             1,
-            1
+            2
           ]
         },
         "INL1L": {
           "OUT": 2,
-          "IN": 40,
+          "IN": 38,
           "D": 115,
-          "netSD": -0.33043478260869563,
+          "netSD": -0.3130434782608696,
           "OUT_by_order": [
             0,
             1,
@@ -381,19 +381,19 @@
           ],
           "IN_by_order": [
             0,
-            20,
-            20
+            19,
+            19
           ]
         },
         "INR1L": {
-          "OUT": 40,
+          "OUT": 39,
           "IN": 14,
           "D": 115,
-          "netSD": 0.22608695652173913,
+          "netSD": 0.21739130434782608,
           "OUT_by_order": [
             0,
             19,
-            21
+            20
           ],
           "IN_by_order": [
             0,
@@ -402,14 +402,14 @@
           ]
         },
         "IVL1L": {
-          "OUT": 38,
+          "OUT": 39,
           "IN": 2,
           "D": 115,
-          "netSD": 0.3130434782608696,
+          "netSD": 0.3217391304347826,
           "OUT_by_order": [
             0,
             19,
-            19
+            20
           ],
           "IN_by_order": [
             0,
@@ -419,9 +419,9 @@
         },
         "KNE1L": {
           "OUT": 52,
-          "IN": 6,
+          "IN": 4,
           "D": 115,
-          "netSD": 0.4,
+          "netSD": 0.41739130434782606,
           "OUT_by_order": [
             0,
             23,
@@ -429,19 +429,19 @@
           ],
           "IN_by_order": [
             0,
-            3,
-            3
+            2,
+            2
           ]
         },
         "KNR1L": {
-          "OUT": 5,
+          "OUT": 7,
           "IN": 2,
           "D": 115,
-          "netSD": 0.02608695652173913,
+          "netSD": 0.043478260869565216,
           "OUT_by_order": [
             0,
-            1,
-            4
+            2,
+            5
           ],
           "IN_by_order": [
             0,
@@ -450,14 +450,14 @@
           ]
         },
         "LGD1L": {
-          "OUT": 38,
+          "OUT": 34,
           "IN": 18,
           "D": 115,
-          "netSD": 0.17391304347826086,
+          "netSD": 0.1391304347826087,
           "OUT_by_order": [
             0,
-            19,
-            19
+            17,
+            17
           ],
           "IN_by_order": [
             0,
@@ -515,9 +515,9 @@
         },
         "MODE": {
           "OUT": 12,
-          "IN": 62,
+          "IN": 64,
           "D": 115,
-          "netSD": -0.43478260869565216,
+          "netSD": -0.45217391304347826,
           "OUT_by_order": [
             0,
             4,
@@ -525,8 +525,8 @@
           ],
           "IN_by_order": [
             0,
-            31,
-            31
+            32,
+            32
           ]
         },
         "MRK1T": {
@@ -659,9 +659,9 @@
         },
         "ROE1L": {
           "OUT": 31,
-          "IN": 21,
+          "IN": 20,
           "D": 115,
-          "netSD": 0.08695652173913043,
+          "netSD": 0.09565217391304348,
           "OUT_by_order": [
             0,
             15,
@@ -669,7 +669,7 @@
           ],
           "IN_by_order": [
             0,
-            8,
+            7,
             13
           ]
         },
@@ -723,9 +723,9 @@
         },
         "SCM1R": {
           "OUT": 1,
-          "IN": 3,
+          "IN": 5,
           "D": 115,
-          "netSD": -0.017391304347826087,
+          "netSD": -0.034782608695652174,
           "OUT_by_order": [
             0,
             0,
@@ -733,15 +733,15 @@
           ],
           "IN_by_order": [
             0,
-            1,
-            2
+            2,
+            3
           ]
         },
         "SFG1T": {
           "OUT": 3,
-          "IN": 91,
+          "IN": 92,
           "D": 115,
-          "netSD": -0.7652173913043478,
+          "netSD": -0.7739130434782608,
           "OUT_by_order": [
             0,
             1,
@@ -749,7 +749,7 @@
           ],
           "IN_by_order": [
             0,
-            44,
+            45,
             47
           ]
         },
@@ -786,30 +786,30 @@
           ]
         },
         "TEL1L": {
-          "OUT": 48,
-          "IN": 5,
+          "OUT": 46,
+          "IN": 7,
           "D": 115,
-          "netSD": 0.3739130434782609,
+          "netSD": 0.3391304347826087,
           "OUT_by_order": [
             0,
-            23,
-            25
+            22,
+            24
           ],
           "IN_by_order": [
             0,
-            2,
-            3
+            3,
+            4
           ]
         },
         "TKM1T": {
-          "OUT": 33,
+          "OUT": 35,
           "IN": 11,
           "D": 115,
-          "netSD": 0.19130434782608696,
+          "netSD": 0.20869565217391303,
           "OUT_by_order": [
             0,
-            16,
-            17
+            17,
+            18
           ],
           "IN_by_order": [
             0,
@@ -819,9 +819,9 @@
         },
         "TPD1T": {
           "OUT": 7,
-          "IN": 71,
+          "IN": 75,
           "D": 115,
-          "netSD": -0.5565217391304348,
+          "netSD": -0.591304347826087,
           "OUT_by_order": [
             0,
             2,
@@ -829,8 +829,8 @@
           ],
           "IN_by_order": [
             0,
-            35,
-            36
+            37,
+            38
           ]
         },
         "TSM1T": {
@@ -883,9 +883,9 @@
         },
         "VBL1L": {
           "OUT": 14,
-          "IN": 40,
+          "IN": 38,
           "D": 115,
-          "netSD": -0.22608695652173913,
+          "netSD": -0.20869565217391303,
           "OUT_by_order": [
             0,
             5,
@@ -893,8 +893,8 @@
           ],
           "IN_by_order": [
             0,
-            20,
-            20
+            19,
+            19
           ]
         },
         "VIRSI": {
@@ -914,13 +914,13 @@
           ]
         },
         "VLP1L": {
-          "OUT": 58,
+          "OUT": 57,
           "IN": 0,
           "D": 115,
-          "netSD": 0.5043478260869565,
+          "netSD": 0.4956521739130435,
           "OUT_by_order": [
             0,
-            28,
+            27,
             30
           ],
           "IN_by_order": [
@@ -947,9 +947,9 @@
         },
         "SE0013876927": {
           "OUT": 33,
-          "IN": 18,
+          "IN": 15,
           "D": 115,
-          "netSD": 0.13043478260869565,
+          "netSD": 0.1565217391304348,
           "OUT_by_order": [
             0,
             16,
@@ -957,8 +957,8 @@
           ],
           "IN_by_order": [
             0,
-            7,
-            11
+            6,
+            9
           ]
         },
         "SE0013876950": {
@@ -994,14 +994,14 @@
           ]
         },
         "SE0014261756": {
-          "OUT": 80,
+          "OUT": 78,
           "IN": 1,
           "D": 115,
-          "netSD": 0.6869565217391305,
+          "netSD": 0.6695652173913044,
           "OUT_by_order": [
             0,
-            38,
-            42
+            37,
+            41
           ],
           "IN_by_order": [
             0,
@@ -1074,14 +1074,14 @@
           ]
         },
         "SE0014263273": {
-          "OUT": 58,
+          "OUT": 60,
           "IN": 2,
           "D": 115,
-          "netSD": 0.48695652173913045,
+          "netSD": 0.5043478260869565,
           "OUT_by_order": [
             0,
-            29,
-            29
+            30,
+            30
           ],
           "IN_by_order": [
             0,
@@ -1090,14 +1090,14 @@
           ]
         },
         "SE0014263281": {
-          "OUT": 52,
+          "OUT": 54,
           "IN": 8,
           "D": 115,
-          "netSD": 0.3826086956521739,
+          "netSD": 0.4,
           "OUT_by_order": [
             0,
-            25,
-            27
+            26,
+            28
           ],
           "IN_by_order": [
             0,
@@ -1106,14 +1106,14 @@
           ]
         },
         "SE0014263299": {
-          "OUT": 61,
+          "OUT": 63,
           "IN": 0,
           "D": 115,
-          "netSD": 0.5304347826086957,
+          "netSD": 0.5478260869565217,
           "OUT_by_order": [
             0,
-            27,
-            34
+            28,
+            35
           ],
           "IN_by_order": [
             0,
@@ -1123,9 +1123,9 @@
         },
         "SE0015192315": {
           "OUT": 36,
-          "IN": 12,
+          "IN": 14,
           "D": 115,
-          "netSD": 0.20869565217391303,
+          "netSD": 0.19130434782608696,
           "OUT_by_order": [
             0,
             16,
@@ -1133,8 +1133,8 @@
           ],
           "IN_by_order": [
             0,
-            6,
-            6
+            7,
+            7
           ]
         },
         "SE0015192323": {
@@ -1154,14 +1154,14 @@
           ]
         },
         "SE0015192331": {
-          "OUT": 72,
+          "OUT": 70,
           "IN": 2,
           "D": 115,
-          "netSD": 0.6086956521739131,
+          "netSD": 0.591304347826087,
           "OUT_by_order": [
             0,
-            36,
-            36
+            35,
+            35
           ],
           "IN_by_order": [
             0,
@@ -1270,9 +1270,9 @@
       "augmented_denominator_check": 115
     },
     "R1": {
-      "observations": 820,
+      "observations": 822,
       "first_return_date": "2021-12-09",
-      "last_return_date": "2026-05-27",
+      "last_return_date": "2026-05-29",
       "network_nodes": 73,
       "D": 123,
       "assets": {
@@ -1309,14 +1309,14 @@
           ]
         },
         "APG1L": {
-          "OUT": 42,
+          "OUT": 40,
           "IN": 1,
           "D": 123,
-          "netSD": 0.3333333333333333,
+          "netSD": 0.3170731707317073,
           "OUT_by_order": [
             0,
-            21,
-            21
+            20,
+            20
           ],
           "IN_by_order": [
             0,
@@ -1389,14 +1389,14 @@
           ]
         },
         "CPA1T": {
-          "OUT": 20,
+          "OUT": 22,
           "IN": 41,
           "D": 123,
-          "netSD": -0.17073170731707318,
+          "netSD": -0.15447154471544716,
           "OUT_by_order": [
             0,
-            10,
-            10
+            11,
+            11
           ],
           "IN_by_order": [
             0,
@@ -1406,9 +1406,9 @@
         },
         "CTS1L": {
           "OUT": 0,
-          "IN": 12,
+          "IN": 10,
           "D": 123,
-          "netSD": -0.0975609756097561,
+          "netSD": -0.08130081300813008,
           "OUT_by_order": [
             0,
             0,
@@ -1416,8 +1416,8 @@
           ],
           "IN_by_order": [
             0,
-            5,
-            7
+            4,
+            6
           ]
         },
         "DGR1R": {
@@ -1517,14 +1517,14 @@
           ]
         },
         "IGN1L": {
-          "OUT": 55,
+          "OUT": 57,
           "IN": 10,
           "D": 123,
-          "netSD": 0.36585365853658536,
+          "netSD": 0.3821138211382114,
           "OUT_by_order": [
             0,
-            27,
-            28
+            28,
+            29
           ],
           "IN_by_order": [
             0,
@@ -1597,14 +1597,14 @@
           ]
         },
         "KNE1L": {
-          "OUT": 40,
+          "OUT": 42,
           "IN": 18,
           "D": 123,
-          "netSD": 0.17886178861788618,
+          "netSD": 0.1951219512195122,
           "OUT_by_order": [
             0,
-            20,
-            20
+            21,
+            21
           ],
           "IN_by_order": [
             0,
@@ -1614,9 +1614,9 @@
         },
         "KNR1L": {
           "OUT": 9,
-          "IN": 43,
+          "IN": 41,
           "D": 123,
-          "netSD": -0.2764227642276423,
+          "netSD": -0.2601626016260163,
           "OUT_by_order": [
             0,
             4,
@@ -1624,8 +1624,8 @@
           ],
           "IN_by_order": [
             0,
-            21,
-            22
+            20,
+            21
           ]
         },
         "LGD1L": {
@@ -1662,9 +1662,9 @@
         },
         "LINDA": {
           "OUT": 2,
-          "IN": 93,
+          "IN": 95,
           "D": 123,
-          "netSD": -0.7398373983739838,
+          "netSD": -0.7560975609756098,
           "OUT_by_order": [
             0,
             0,
@@ -1672,8 +1672,8 @@
           ],
           "IN_by_order": [
             0,
-            44,
-            49
+            45,
+            50
           ]
         },
         "MDARA": {
@@ -1693,13 +1693,13 @@
           ]
         },
         "MODE": {
-          "OUT": 13,
+          "OUT": 14,
           "IN": 86,
           "D": 123,
-          "netSD": -0.5934959349593496,
+          "netSD": -0.5853658536585366,
           "OUT_by_order": [
             0,
-            5,
+            6,
             8
           ],
           "IN_by_order": [
@@ -1709,14 +1709,14 @@
           ]
         },
         "MRK1T": {
-          "OUT": 37,
+          "OUT": 35,
           "IN": 16,
           "D": 123,
-          "netSD": 0.17073170731707318,
+          "netSD": 0.15447154471544716,
           "OUT_by_order": [
             0,
-            18,
-            19
+            17,
+            18
           ],
           "IN_by_order": [
             0,
@@ -1806,9 +1806,9 @@
         },
         "PZV1L": {
           "OUT": 30,
-          "IN": 42,
+          "IN": 44,
           "D": 123,
-          "netSD": -0.0975609756097561,
+          "netSD": -0.11382113821138211,
           "OUT_by_order": [
             0,
             15,
@@ -1816,8 +1816,8 @@
           ],
           "IN_by_order": [
             0,
-            19,
-            23
+            20,
+            24
           ]
         },
         "RKB1R": {
@@ -1902,9 +1902,9 @@
         },
         "SCM1R": {
           "OUT": 0,
-          "IN": 66,
+          "IN": 76,
           "D": 123,
-          "netSD": -0.5365853658536586,
+          "netSD": -0.6178861788617886,
           "OUT_by_order": [
             0,
             0,
@@ -1912,19 +1912,19 @@
           ],
           "IN_by_order": [
             0,
-            32,
-            34
+            37,
+            39
           ]
         },
         "SFG1T": {
-          "OUT": 33,
+          "OUT": 35,
           "IN": 41,
           "D": 123,
-          "netSD": -0.06504065040650407,
+          "netSD": -0.04878048780487805,
           "OUT_by_order": [
             0,
-            16,
-            17
+            17,
+            18
           ],
           "IN_by_order": [
             0,
@@ -1998,9 +1998,9 @@
         },
         "TPD1T": {
           "OUT": 5,
-          "IN": 96,
+          "IN": 97,
           "D": 123,
-          "netSD": -0.7398373983739838,
+          "netSD": -0.7479674796747967,
           "OUT_by_order": [
             0,
             1,
@@ -2008,7 +2008,7 @@
           ],
           "IN_by_order": [
             0,
-            47,
+            48,
             49
           ]
         },
@@ -2046,9 +2046,9 @@
         },
         "UTR1L": {
           "OUT": 0,
-          "IN": 74,
+          "IN": 72,
           "D": 123,
-          "netSD": -0.6016260162601627,
+          "netSD": -0.5853658536585366,
           "OUT_by_order": [
             0,
             0,
@@ -2056,15 +2056,15 @@
           ],
           "IN_by_order": [
             0,
-            37,
-            37
+            36,
+            36
           ]
         },
         "VBL1L": {
           "OUT": 14,
-          "IN": 36,
+          "IN": 38,
           "D": 123,
-          "netSD": -0.17886178861788618,
+          "netSD": -0.1951219512195122,
           "OUT_by_order": [
             0,
             6,
@@ -2072,8 +2072,8 @@
           ],
           "IN_by_order": [
             0,
-            18,
-            18
+            19,
+            19
           ]
         },
         "VIRSI": {
@@ -2094,9 +2094,9 @@
         },
         "VLP1L": {
           "OUT": 40,
-          "IN": 6,
+          "IN": 7,
           "D": 123,
-          "netSD": 0.2764227642276423,
+          "netSD": 0.2682926829268293,
           "OUT_by_order": [
             0,
             20,
@@ -2105,7 +2105,7 @@
           "IN_by_order": [
             0,
             3,
-            3
+            4
           ]
         },
         "ZMP1L": {
@@ -2205,14 +2205,14 @@
           ]
         },
         "SE0014261871": {
-          "OUT": 50,
+          "OUT": 52,
           "IN": 18,
           "D": 123,
-          "netSD": 0.2601626016260163,
+          "netSD": 0.2764227642276423,
           "OUT_by_order": [
             0,
-            24,
-            26
+            25,
+            27
           ],
           "IN_by_order": [
             0,
@@ -2237,14 +2237,14 @@
           ]
         },
         "SE0014261897": {
-          "OUT": 45,
+          "OUT": 47,
           "IN": 18,
           "D": 123,
-          "netSD": 0.21951219512195122,
+          "netSD": 0.23577235772357724,
           "OUT_by_order": [
             0,
-            22,
-            23
+            23,
+            24
           ],
           "IN_by_order": [
             0,
@@ -2253,14 +2253,14 @@
           ]
         },
         "SE0014263273": {
-          "OUT": 72,
+          "OUT": 74,
           "IN": 0,
           "D": 123,
-          "netSD": 0.5853658536585366,
+          "netSD": 0.6016260162601627,
           "OUT_by_order": [
             0,
-            36,
-            36
+            37,
+            37
           ],
           "IN_by_order": [
             0,
@@ -2301,14 +2301,14 @@
           ]
         },
         "SE0015192315": {
-          "OUT": 60,
+          "OUT": 61,
           "IN": 6,
           "D": 123,
-          "netSD": 0.43902439024390244,
+          "netSD": 0.44715447154471544,
           "OUT_by_order": [
             0,
             28,
-            32
+            33
           ],
           "IN_by_order": [
             0,
@@ -2601,9 +2601,9 @@
         },
         "DGR1R": {
           "OUT": 40,
-          "IN": 14,
+          "IN": 12,
           "D": 145,
-          "netSD": 0.1793103448275862,
+          "netSD": 0.19310344827586207,
           "OUT_by_order": [
             0,
             20,
@@ -2611,8 +2611,8 @@
           ],
           "IN_by_order": [
             0,
-            6,
-            8
+            5,
+            7
           ]
         },
         "EFT1T": {
@@ -3608,14 +3608,14 @@
           ]
         },
         "Current": {
-          "OUT": 73,
+          "OUT": 71,
           "IN": 2,
           "D": 145,
-          "netSD": 0.4896551724137931,
+          "netSD": 0.47586206896551725,
           "OUT_by_order": [
             1,
-            36,
-            36
+            35,
+            35
           ],
           "IN_by_order": [
             0,
@@ -4324,9 +4324,9 @@
         },
         "TEL1L": {
           "OUT": 54,
-          "IN": 1,
+          "IN": 0,
           "D": 125,
-          "netSD": 0.424,
+          "netSD": 0.432,
           "OUT_by_order": [
             0,
             27,
@@ -4335,7 +4335,7 @@
           "IN_by_order": [
             0,
             0,
-            1
+            0
           ]
         },
         "TKM1T": {
@@ -4787,14 +4787,14 @@
           ]
         },
         "Current": {
-          "OUT": 105,
+          "OUT": 104,
           "IN": 0,
           "D": 125,
-          "netSD": 0.84,
+          "netSD": 0.832,
           "OUT_by_order": [
             0,
             52,
-            53
+            52
           ],
           "IN_by_order": [
             0,
@@ -5987,10 +5987,10 @@
     }
   },
   "protected_input_sha256": {
-    "data\\current_holdings.json": "8666982d3fa567ddfe6d2ec361a751296387fb1531484a6bad57649aa054a5cc",
-    "data\\long_history\\asset_returns.csv": "a15e4456c5f98bbbd9a170f530cef87670586e3bfbe804dd17bed081bd98510f",
-    "data\\full_universe\\share_prices.csv": "aee1f83826a57ba3d793d2b9ff5eb3e308fb087a40c39b0b31c7a418b5102a53",
-    "data\\full_universe\\fund_nav_eur.csv": "e2b2cd7e98289c6e71290f708fcf157a582612742b6f35559e867c0a7ef13023"
+    "data\\current_holdings.json": "40ff870376fb250a42173a4c893c648b63d527bffe956d5927c96583f172bbd2",
+    "data\\long_history\\asset_returns.csv": "97485185376b3d508b6c8309cd38e714265a82422688068ee5e39928374cd6ca",
+    "data\\full_universe\\share_prices.csv": "d27600d8efc7a4e7477d80575f65bbc535fba6dd70ecbb7af6d0822d127a94a1",
+    "data\\full_universe\\fund_nav_eur.csv": "a14f0e1a64f524296861b556f0b15ece6cc4e3926f6b3bfdffa58852e474f990"
   },
   "method": "Historical price-return stochastic dominance of orders 1-3. Network: all 72 eligible asset nodes, including PFE once, plus Current once. Current uses the 16 sealed holdings and latest verified EUR valuation weights; invested-holdings returns exclude cash. D=max(OUT+IN) is recomputed on each complete network including this Current portfolio, with all incident reference degrees updated. No fixed archived D and no duplicate PFE candidate. FULL uses the existing training sample; R1-R4 use exact-date retrospective labels without filling. The 126 diagnostic observations are excluded. This is a historical evaluation, not terminal scenario-tree netSD, a new forecast, or reoptimisation of trading policies."
 }

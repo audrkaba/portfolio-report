@@ -38,128 +38,7 @@
   "Current_overview_matches": true,
   "Current_cards_match": true,
   "whole_tree_sensitivity_matches": true,
-  "saved_model_inventory_differences": {
-    "STOCHASTIC/SALE": {
-      "US_NVDA": {
-        "confirmed": 3.277507,
-        "model_snapshot": 2.814478
-      }
-    },
-    "STOCHASTIC/NO_SALE": {
-      "US_NVDA": {
-        "confirmed": 3.277507,
-        "model_snapshot": 2.814478
-      }
-    },
-    "STOCHASTIC2/SALE": {
-      "US_NVDA": {
-        "confirmed": 3.277507,
-        "model_snapshot": 2.814478
-      }
-    },
-    "STOCHASTIC2/NO_SALE": {
-      "US_NVDA": {
-        "confirmed": 3.277507,
-        "model_snapshot": 2.814478
-      }
-    },
-    "stochA/SALE": {
-      "US_NVDA": {
-        "confirmed": 3.277507,
-        "model_snapshot": 2.814478
-      }
-    },
-    "stochA/NO_SALE": {
-      "US_NVDA": {
-        "confirmed": 3.277507,
-        "model_snapshot": 2.814478
-      }
-    },
-    "stoch2A/SALE": {
-      "US_NVDA": {
-        "confirmed": 3.277507,
-        "model_snapshot": 2.814478
-      }
-    },
-    "stoch2A/NO_SALE": {
-      "US_NVDA": {
-        "confirmed": 3.277507,
-        "model_snapshot": 2.814478
-      }
-    },
-    "MARKOWITZ/NO_SALE": {
-      "US_NVDA": {
-        "confirmed": 3.277507,
-        "model_snapshot": 2.814478
-      }
-    },
-    "MARKOWITZ/SALE": {
-      "US_NVDA": {
-        "confirmed": 3.277507,
-        "model_snapshot": 2.814478
-      }
-    },
-    "MINIMAX/NO_SALE": {
-      "US_NVDA": {
-        "confirmed": 3.277507,
-        "model_snapshot": 2.814478
-      }
-    },
-    "MINIMAX/SALE": {
-      "US_NVDA": {
-        "confirmed": 3.277507,
-        "model_snapshot": 2.814478
-      }
-    },
-    "ROBUST/NO_SALE": {
-      "US_NVDA": {
-        "confirmed": 3.277507,
-        "model_snapshot": 2.814478
-      }
-    },
-    "ROBUST/SALE": {
-      "US_NVDA": {
-        "confirmed": 3.277507,
-        "model_snapshot": 2.814478
-      }
-    },
-    "UPDATE2/NO_SALE": {
-      "US_NVDA": {
-        "confirmed": 3.277507,
-        "model_snapshot": 2.814478
-      }
-    },
-    "UPDATE2/SALE": {
-      "US_NVDA": {
-        "confirmed": 3.277507,
-        "model_snapshot": 2.814478
-      }
-    },
-    "UPDATE3/NO_SALE": {
-      "US_NVDA": {
-        "confirmed": 3.277507,
-        "model_snapshot": 2.814478
-      }
-    },
-    "UPDATE3/SALE": {
-      "US_NVDA": {
-        "confirmed": 3.277507,
-        "model_snapshot": 2.814478
-      }
-    },
-    "NETSD/SALE": {
-      "US_NVDA": {
-        "confirmed": 3.277507,
-        "model_snapshot": 2.814478
-      }
-    },
-    "NETSD/NO_SALE": {
-      "US_NVDA": {
-        "confirmed": 3.277507,
-        "model_snapshot": 2.814478
-      }
-    }
-  },
+  "saved_model_inventory_differences": {},
   "historical_snapshot_fragments": [
     "active-long-history-portfolios",
     "portfolio-dominance-netsd",
@@ -172,5 +51,18 @@
   ],
   "actual_cash_EUR": 0.09,
   "weights_scope": "shares_and_funds_only",
-  "historical_values_overwritten": false
+  "historical_values_overwritten": false,
+  "native_Current_metrics_match": true,
+  "Current_correlation_holdings_match": true,
+  "reference_asset_count": 117,
+  "reference_US_count": 47,
+  "model_correlation_coverage_missing_assets": {},
+  "checked_primary_Current_parts": [
+    "overview",
+    "composition",
+    "chart cards",
+    "native performance",
+    "whole-tree sensitivity",
+    "correlations"
+  ]
 }

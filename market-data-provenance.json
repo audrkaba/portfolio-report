@@ -1,23 +1,22 @@
 {
   "schema": 1,
-  "model_run": "20261124_us_close",
-  "model_input_hash": "ee42477e8809929596945ca6d3fa65c94831d4eb809b1346101356f79a6de85c",
-  "official_sources_checked_at_UTC": "2026-11-25T06:09:26.166739+00:00",
-  "official_sources_checked_at_Vilnius": "2026-11-25T08:09:26.166739+02:00",
+  "model_run": "20261126_latest",
+  "model_input_hash": "263e73f6f7f0200ff3da7b4abc19b4e594b5f2d7f517f772e0d679e71fdb2027",
+  "official_sources_checked_at_UTC": "2026-11-26T05:54:43.750938+00:00",
+  "official_sources_checked_at_Vilnius": "2026-11-26T07:54:43.750938+02:00",
   "share_observations": [
-    "2026-11-24"
+    "2026-11-25"
   ],
   "fund_NAV_observations": [
-    "2026-11-20",
-    "2026-11-23"
+    "2026-11-24"
   ],
-  "share_last": "2026-11-24",
-  "fund_last": "2026-11-23",
+  "share_last": "2026-11-25",
+  "fund_last": "2026-11-24",
   "quote_records": 91,
   "decision_assets": 72,
   "training": {
     "enabled": true,
-    "minimum_training_observations": 1136,
+    "minimum_training_observations": 1138,
     "diagnostic_observations": 126,
     "excluded_by_user": [
       "AIR",
@@ -104,23 +103,23 @@
     "eligible_assets": 72,
     "excluded_assets": 21,
     "train_start": "2021-11-29",
-    "train_end": "2026-05-27",
-    "test_start": "2026-05-28",
-    "test_end": "2026-11-20",
-    "origin": "2026-11-20",
+    "train_end": "2026-05-29",
+    "test_start": "2026-06-01",
+    "test_end": "2026-11-24",
+    "origin": "2026-11-24",
     "calendar": "Observed Baltic sessions; forward fill only after first genuine price; never before inception",
     "diagnostic_warning": "126-day segment is a descriptive fixed-allocation diagnostic, not an independent strategy backtest: current forecast centres use data through their current origin",
     "sha256": {
-      "data\\full_universe\\extended_history\\prices_inception_screened.csv": "ff9d41bcad65b3e4c056cc5506ebb78d61c3e6b1bc92d125f6af64fa317097aa",
-      "data\\full_universe\\share_prices.csv": "aee1f83826a57ba3d793d2b9ff5eb3e308fb087a40c39b0b31c7a418b5102a53",
-      "data\\full_universe\\fund_nav_eur.csv": "e2b2cd7e98289c6e71290f708fcf157a582612742b6f35559e867c0a7ef13023"
+      "data\\full_universe\\extended_history\\prices_inception_screened.csv": "4f14fe394501eca465d2a0eb051aa3c6d6dd114bfa626d24adc8b7529642748d",
+      "data\\full_universe\\share_prices.csv": "d27600d8efc7a4e7477d80575f65bbc535fba6dd70ecbb7af6d0822d127a94a1",
+      "data\\full_universe\\fund_nav_eur.csv": "a14f0e1a64f524296861b556f0b15ece6cc4e3926f6b3bfdffa58852e474f990"
     }
   },
-  "model_manifest_sha256": "a747eefe65df6018756ab35c9ee870a37ee6b6f579940cf121b77eda11cecef3",
-  "quote_snapshot_sha256": "1860ad817e2a79d7c6c614c769179f40c18701e22940fe95b8c7cffc4aeb3210",
+  "model_manifest_sha256": "eb9d7f029479c3b82b9d7d31ef0a9c31a8921c338ea5ec8cdfecc2a379ed312f",
+  "quote_snapshot_sha256": "919b5c220a5e81fd966a05438b011321eaa21ad50fc1d0de0299ef49981898d0",
   "price_file_sha256": {
-    "data\\full_universe\\share_prices.csv": "aee1f83826a57ba3d793d2b9ff5eb3e308fb087a40c39b0b31c7a418b5102a53",
-    "data\\full_universe\\fund_nav_eur.csv": "e2b2cd7e98289c6e71290f708fcf157a582612742b6f35559e867c0a7ef13023"
+    "data\\full_universe\\share_prices.csv": "d27600d8efc7a4e7477d80575f65bbc535fba6dd70ecbb7af6d0822d127a94a1",
+    "data\\full_universe\\fund_nav_eur.csv": "a14f0e1a64f524296861b556f0b15ece6cc4e3926f6b3bfdffa58852e474f990"
   },
   "scope": "Observation dates and actual official-source check time used by the completed model snapshot; not a claim of a new download at website build time."
 }
