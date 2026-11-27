@@ -15,7 +15,8 @@
     "SE0014261764": 15.4759,
     "US_PFE": 5.883,
     "US_NVDA": 3.277507,
-    "AKO1L": 150.0
+    "AKO1L": 150.0,
+    "SE0014261756": 2.6129
   },
   "Current_widget_holdings": {
     "TKM1T": 288.0,
@@ -33,12 +34,134 @@
     "SE0014261764": 15.4759,
     "US_PFE": 5.883,
     "US_NVDA": 3.277507,
-    "AKO1L": 150.0
+    "AKO1L": 150.0,
+    "SE0014261756": 2.6129
   },
   "Current_overview_matches": true,
   "Current_cards_match": true,
-  "whole_tree_sensitivity_matches": true,
-  "saved_model_inventory_differences": {},
+  "whole_tree_sensitivity_matches": false,
+  "saved_model_inventory_differences": {
+    "STOCHASTIC/SALE": {
+      "SE0014261756": {
+        "confirmed": 2.6129,
+        "model_snapshot": 0
+      }
+    },
+    "STOCHASTIC/NO_SALE": {
+      "SE0014261756": {
+        "confirmed": 2.6129,
+        "model_snapshot": 0
+      }
+    },
+    "STOCHASTIC2/SALE": {
+      "SE0014261756": {
+        "confirmed": 2.6129,
+        "model_snapshot": 0
+      }
+    },
+    "STOCHASTIC2/NO_SALE": {
+      "SE0014261756": {
+        "confirmed": 2.6129,
+        "model_snapshot": 0
+      }
+    },
+    "stochA/SALE": {
+      "SE0014261756": {
+        "confirmed": 2.6129,
+        "model_snapshot": 0
+      }
+    },
+    "stochA/NO_SALE": {
+      "SE0014261756": {
+        "confirmed": 2.6129,
+        "model_snapshot": 0
+      }
+    },
+    "stoch2A/SALE": {
+      "SE0014261756": {
+        "confirmed": 2.6129,
+        "model_snapshot": 0
+      }
+    },
+    "stoch2A/NO_SALE": {
+      "SE0014261756": {
+        "confirmed": 2.6129,
+        "model_snapshot": 0
+      }
+    },
+    "MARKOWITZ/NO_SALE": {
+      "SE0014261756": {
+        "confirmed": 2.6129,
+        "model_snapshot": 0
+      }
+    },
+    "MARKOWITZ/SALE": {
+      "SE0014261756": {
+        "confirmed": 2.6129,
+        "model_snapshot": 0.0
+      }
+    },
+    "MINIMAX/NO_SALE": {
+      "SE0014261756": {
+        "confirmed": 2.6129,
+        "model_snapshot": 0
+      }
+    },
+    "MINIMAX/SALE": {
+      "SE0014261756": {
+        "confirmed": 2.6129,
+        "model_snapshot": 0.0
+      }
+    },
+    "ROBUST/NO_SALE": {
+      "SE0014261756": {
+        "confirmed": 2.6129,
+        "model_snapshot": 0
+      }
+    },
+    "ROBUST/SALE": {
+      "SE0014261756": {
+        "confirmed": 2.6129,
+        "model_snapshot": 0
+      }
+    },
+    "UPDATE2/NO_SALE": {
+      "SE0014261756": {
+        "confirmed": 2.6129,
+        "model_snapshot": 0
+      }
+    },
+    "UPDATE2/SALE": {
+      "SE0014261756": {
+        "confirmed": 2.6129,
+        "model_snapshot": 0
+      }
+    },
+    "UPDATE3/NO_SALE": {
+      "SE0014261756": {
+        "confirmed": 2.6129,
+        "model_snapshot": 0
+      }
+    },
+    "UPDATE3/SALE": {
+      "SE0014261756": {
+        "confirmed": 2.6129,
+        "model_snapshot": 0
+      }
+    },
+    "NETSD/SALE": {
+      "SE0014261756": {
+        "confirmed": 2.6129,
+        "model_snapshot": 0.0
+      }
+    },
+    "NETSD/NO_SALE": {
+      "SE0014261756": {
+        "confirmed": 2.6129,
+        "model_snapshot": 0
+      }
+    }
+  },
   "historical_snapshot_fragments": [
     "active-long-history-portfolios",
     "portfolio-dominance-netsd",
@@ -65,5 +188,8 @@
     "whole-tree sensitivity",
     "correlations"
   ],
-  "historical_extended_risk_asof": "2026-11-23"
+  "historical_extended_risk_asof": "2026-11-23",
+  "cash_reconciliation_pending": true,
+  "models_recalculated": false,
+  "new_inventory_pending_asset": "SE0014261756"
 }
