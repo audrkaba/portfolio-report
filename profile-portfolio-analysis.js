@@ -2,7 +2,8 @@
 const states=new WeakMap(),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const fmt=(v,n=6)=>v==null||!Number.isFinite(Number(v))?'–':Number(v).toFixed(n),qty=v=>v==null?'–':String(Number(Number(v).toFixed(8)));
 const difference=(a,b)=>a==null||b==null?null:a-b;
-let dataPromise,policyPromise,plotlyPromise;
+let dataPromise,policyPromise,quantilePromise,plotlyPromise;
+const quantiles=()=>quantilePromise||(quantilePromise=fetch('current-sensitivity.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Later-stage sensitivity unavailable');return r.json()}));
 const load=()=>dataPromise||(dataPromise=fetch('profile-portfolio-analysis.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Profile analysis HTTP '+r.status);return r.json()}));
 const policies=()=>policyPromise||(policyPromise=fetch('chapter3-asset-sensitivity.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Policy sensitivity unavailable');return r.json()}));
 const plotly=()=>window.Plotly?Promise.resolve():plotlyPromise||(plotlyPromise=new Promise((resolve,reject)=>{const s=document.createElement('script');s.src='vendor/plotly/plotly-3.1.0.min.js';s.onload=resolve;s.onerror=reject;document.head.append(s)}));
@@ -59,6 +60,7 @@ function renderSensitivity(s,d){
 async function renderPolicy(s,d,host){
  host.innerHTML='Loading saved scenario-law sensitivity…';try{
   const source=await policies();host.replaceChildren();const p=document.createElement('p');const different=JSON.stringify(Object.entries(source.holdings).sort())!==JSON.stringify(Object.entries(d.current_holdings).sort());p.textContent='These are saved model-law results, including cash and every original scenario; they do not use the historical-return sample above. '+(different?'Their base inventory predates the new High Dividend C holding; recalculation for latest Current is pending.':'Their Current inventory matches the recorded input.')+' Actual Current holds '+qty(d.assets[s.asset].current_units)+' units of this asset.';host.append(p);
+  const laterSource=d.policy_quantiles_source_verified?await quantiles():null;
   const select=document.createElement('select');select.className='pa-policy-model';for(const entry of d.portfolios.filter(p=>p.id!=='CURRENT')){const option=document.createElement('option');option.value=entry.id;option.textContent=entry.label+(entry.status==='pending'?' — pending':'');select.append(option)}host.append(select);const output=document.createElement('div');host.append(output);
   const choice=d.portfolios.find(p=>s.selected.has(p.series)&&p.id.startsWith('MODEL:'));if(choice)select.value=choice.id;
   function draw(){output.replaceChildren();const entry=d.portfolios.find(p=>p.id===select.value),id=entry.id.split(':'),item=id[0]==='MODEL'?source.models[id[1]]?.[id[2]]:null;
@@ -66,6 +68,8 @@ async function renderPolicy(s,d,host){
    const rows=[['Saved full policy',item.full_policy_baseline],['Saved initial decision only',item.initial_baseline],['Saved no-trade baseline',item.current_baseline]].map(([label,m])=>({values:[label,fmt(m?.netSD),fmt(m?.mean_return),fmt(m?.SD),fmt(m?.Sharpe),fmt(m?.Sortino),fmt(m?.Rachev)]}));table(output,['Policy scope','Terminal netSD','Expected return','SD','Sharpe','Sortino','Rachev'],rows);
    const remove=item.current_removal?.find(r=>r.asset===s.asset),initial=item.initial_buys?.find(r=>r.asset===s.asset),later=item.later_maximum_buys?.find(r=>r.asset===s.asset);
    table(output,['Asset counterfactual','Recorded quantity','Terminal netSD','Change vs recorded baseline'],[['Remove entire recorded holding',remove],['Exact recorded first buy',initial],['Maximum attained gross later purchases',later]].map(([label,r])=>({values:[label,qty(r?.quantity),fmt(r?.terminal?.netSD),fmt(r?.delta?.netSD??r?.delta)]})));
+   const quantileCases=laterSource?.models?.[id[1]]?.[id[2]]?.assets?.[s.asset]?.all_stages;
+   if(quantileCases?.length)table(output,['Saved later-stage purchase case','Later purchases','Total gross purchases','Terminal netSD','Change vs saved full policy'],quantileCases.map(r=>({values:[r.case,qty(r.later_units),qty(r.total_gross_purchase_units),fmt(r.terminal?.netSD),fmt(r.delta_vs_model?.netSD)]})));
    const link=document.createElement('a');link.href='#chapter3-asset-sensitivity';link.textContent='Open the complete scenario sensitivity tables and feasibility definitions';output.append(link);
   }select.addEventListener('change',draw);draw();
  }catch(e){host.textContent=e.message}}
