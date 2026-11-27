@@ -13,6 +13,12 @@ def load(p):
     try:return json.loads(p.read_text(encoding='utf-8-sig'))
     except (OSError,ValueError):return {}
 
+def committed_quotes_match(site):
+    try:
+        raw=subprocess.check_output(['git','show','HEAD:watch-latest-quotes.json'],cwd=site,stderr=subprocess.DEVNULL)
+        return json.loads(raw)==load(site/'watch-latest-quotes.json')
+    except (subprocess.CalledProcessError,ValueError):return False
+
 def refresh(site,check=False):
     watch=load(site/'daily-market-watch.json');assert watch.get('rows'),'Missing watch universe'
     target=site/'watch-latest-quotes.json';old=load(target);now=datetime.now(timezone.utc);today=now.astimezone(ZoneInfo('Europe/Vilnius')).date()
@@ -20,7 +26,10 @@ def refresh(site,check=False):
     recent=load(receipt_path)
     if check and target.exists() and recent.get('site')==str(site.resolve()) and recent.get('quote_sha256')==hashlib.sha256(target.read_bytes()).hexdigest() and recent.get('watch_sha256')==hashlib.sha256((site/'daily-market-watch.json').read_bytes()).hexdigest():
         if (now-datetime.fromisoformat(recent['checked_at_UTC'])).total_seconds()<90:
-            print('Quote check passed: verified source snapshot is less than 90 seconds old',flush=True);return 0
+            print('Quote source check is less than 90 seconds old',flush=True)
+            if not committed_quotes_match(site):
+                print('The verified quote snapshot must be committed before pushing.',file=sys.stderr);return 1
+            return 0
     fx={};fundkey=None;pre_errors={}
     try:
         root=ET.fromstring(get('https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist-90d.xml'))
@@ -89,7 +98,7 @@ def refresh(site,check=False):
     if receipt_path.parent.exists():receipt_path.write_text(json.dumps(receipt,indent=2),encoding='utf8')
     print(json.dumps(receipt),flush=True)
     if not prices:raise RuntimeError('All quote providers unavailable')
-    if check and changed:
+    if check and (changed or not committed_quotes_match(site)):
         print('Latest quotes changed. Include watch-latest-quotes.json in the reviewed commit, then push again.',file=sys.stderr)
         return 1
     return 0
