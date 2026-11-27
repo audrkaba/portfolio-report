@@ -11,6 +11,7 @@
   }
   const summary=root.querySelector(':scope > summary');if(summary){summary.style.display='list-item';summary.style.cursor='pointer'}
   const data=JSON.parse(dataNode.textContent),number=(x,d=2)=>Number.isFinite(x)?x.toLocaleString('en-GB',{minimumFractionDigits:d,maximumFractionDigits:d}):'—';
+  let latestQuotes={};
   const holdingsNode=document.getElementById('current-holdings-monitor-data');
   const actualHoldings=holdingsNode?JSON.parse(holdingsNode.textContent).units:null;
   const isHeld=r=>actualHoldings?Number(actualHoldings[r.asset.replace(/^US_/,'US:')]??actualHoldings[r.asset]??0)>0:Number(r.held_units||0)>0;
@@ -35,7 +36,11 @@
    const t=r[side+'_trigger'],v=r.values,c=el('li',undefined,'watch-card');c.dataset.asset=r.asset;c.dataset.active=String(t.active);
    const name=el('div');const link=el('a',r.ticker||(r.asset==='US_PFE'?'PFE':r.asset),'watch-asset');const profileId=r.asset.startsWith('SE')?'fund-'+r.asset:'share-'+r.asset.toLowerCase();link.href=document.getElementById(profileId)?'#'+profileId:r.analysis_only?'extended-reference.html?scope='+(r.short_history?'short':'long')+'&asset='+encodeURIComponent(r.asset)+'#extended-reference-assets':r.quote_url||(r.type==='Share'&&r.isin?'https://nasdaqbaltic.com/statistics/en/instrument/'+r.isin+'/trading':r.source_url);
    link.addEventListener('click',e=>{if(document.getElementById(link.hash.slice(1))){e.preventDefault();reveal(r.asset);}});name.append(link,el('span',r.name,'watch-name'));
-   const source=el('a',`€${number(v.price,4)} · ${r.date}`,'watch-quote');source.href=r.source_url;source.target='_blank';source.rel='noopener';source.title='Verified market-data source';name.append(source);
+   const fresh=latestQuotes.prices?.[r.asset];
+   const quote=el('a',fresh?`${fresh.kind==='NAV'?'Latest NAV':'Latest quote'} €${number(fresh.price_EUR,4)} · ${fresh.date}${fresh.timestamp_UTC?' '+new Date(fresh.timestamp_UTC).toLocaleTimeString('en-GB',{timeZone:'Europe/Vilnius',hour:'2-digit',minute:'2-digit'}):''}${fresh.refresh_ok===false?' · retained; latest check failed':''}`:'Latest quote — unavailable','watch-quote watch-latest-quote');
+   if(fresh){quote.href=fresh.source_url;quote.target='_blank';quote.rel='noopener';quote.title='Source checked '+fresh.checked_at_UTC+(fresh.native_currency==='USD'?'; USD '+number(fresh.native_price,4)+' converted with ECB rate dated '+fresh.FX_date:'');}
+   name.append(quote);
+   const source=el('a',`Signal close €${number(v.price,4)} · ${r.date}`,'watch-quote');source.href=r.source_url;source.target='_blank';source.rel='noopener';source.title='Verified market-data source';name.append(source);
    if(!r.model_eligible)name.append(el('span',r.model_status_text||'Short history — observation only','watch-name'));
    const signal=el('div');signal.append(el('span',`${t.active?'● ACTIVE':'◇ NEAR'} ${side.toUpperCase()} · ${r[side+'_votes']}/4`,'watch-signal'));
    signal.append(el('span',t.active?'Threshold already reached':`Trigger €${number(t.price,4)} (${t.move_pct>=0?'+':''}${number(t.move_pct,2)}%)`,'watch-quote'));
@@ -77,6 +82,7 @@
    root.querySelector('#watch-status').textContent=`${counts.buy} BUY · ${counts.sell} SELL · within ${near}%`;
   }
   root.querySelector('#watch-near-pct').addEventListener('change',render);render();root.dataset.ready='true';
+  fetch('watch-latest-quotes.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Quote snapshot unavailable');return r.json()}).then(q=>{latestQuotes=q;render();root.dataset.latestQuotes='ready';const stamp=new Date(q.checked_at_UTC).toLocaleString('en-GB',{timeZone:'Europe/Vilnius',dateStyle:'medium',timeStyle:'short'});root.querySelector('#watch-dates').textContent+=' Latest quote snapshot checked '+stamp+' (Europe/Vilnius). Signals retain the separately shown Signal close.';}).catch(()=>{root.dataset.latestQuotes='unavailable';});
  };
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
 })();

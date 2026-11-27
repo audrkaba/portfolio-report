@@ -1,0 +1,10 @@
+#!/bin/sh
+# Provider check before every site push; the quote snapshot must be reviewed.
+if [ -n "$PORTFOLIO_PUBLISH_PYTHON" ]; then
+  PYTHON_BIN="$PORTFOLIO_PUBLISH_PYTHON"
+elif [ -x 'D:/codex_temp/portfolio/local-compute/python/Scripts/python.exe' ]; then
+  PYTHON_BIN='D:/codex_temp/portfolio/local-compute/python/Scripts/python.exe'
+else
+  PYTHON_BIN=python3
+fi
+exec "$PYTHON_BIN" scripts/refresh-watch-quotes.py --site . --check
