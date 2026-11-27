@@ -17,13 +17,39 @@ function line(name,x,y,color,extra={}){return {type:'scatter',mode:'lines',name,
 let compositionRows;
 function renderComposition(rows=compositionRows){
  if(!rows)return;compositionRows=rows;
+ const raw=data.composition, periods=['day','month','YTD','since_2025'];
+ const groups=[['Baltic shares',r=>!r.fixed_income&&!r.cash&&r.asset!=='CURRENT'&&!r.asset.startsWith('US_')&&!/^SE[0-9]/.test(r.asset)],['US shares',r=>r.asset.startsWith('US_')],['Funds',r=>/^SE[0-9]/.test(r.asset)],['Bonds',r=>r.fixed_income&&!r.asset.startsWith('VTL')],['Savings notes',r=>r.fixed_income&&r.asset.startsWith('VTL')],['Cash',r=>r.cash]];
+ const output=[],classes=[];
+ const add=(cells,cls)=>{output.push(cells);classes.push(cls||'');};
+ const subtotal=(label,items,kind)=>{
+  const value=items.reduce((v,r)=>v+r.value_EUR,0);
+  const changes=periods.map(k=>{
+   if(!items.length||items.some(r=>!Number.isFinite(r.changes?.[k])||r.changes[k]<=-1))return '—';
+   const baseline=items.reduce((v,r)=>v+r.value_EUR/(1+r.changes[k]),0);
+   return baseline>0?changeCell(value/baseline-1):'—';
+  });
+  return ['<strong>'+esc(label)+'</strong>','—','—',...changes,eur(value),kind==='invested'?pct(items.reduce((v,r)=>v+(r.weight||0),0)):'—','—'];
+ };
+ let invested=[];
+ for(const [g,[label,predicate]] of groups.entries()){
+  const items=raw.filter(predicate);if(!items.length)continue;
+  for(const r of items)add(rows[raw.indexOf(r)],r.cash?'co-cash-row':r.fixed_income?'co-fixed-income-row':'');
+  add(subtotal(label+' subtotal',items,g<3?'invested':'other'),'co-subtotal '+(g===5?'co-cash-row':g>=3?'co-fixed-income-row':''));
+  if(g<3)invested.push(...items);
+  if(g===2)add(subtotal('Shares and funds total',invested,'invested'),'co-invested-total');
+ }
+ const account=raw.find(r=>r.asset==='CURRENT');
+ if(account){
+  const cells=[...rows[raw.indexOf(account)]];cells[0]='<strong>Total account value</strong>';cells[8]='—';
+  if(account.partial_changes)for(const [i,k] of periods.entries())cells[i+3]='<span title="'+esc((account.change_notes?.[k]||'')+' Known value change: '+eur(account.change_amounts_EUR?.[k]))+'">'+changeCell(account.changes[k])+(account.changes[k]==null?'':'*')+'</span>';
+  add(cells,'co-grand-total');
+ }
  const headings=['Asset','Units','Unit value, EUR','Day','Month','Year to date','Since 2025-01-01','Value, EUR','Shares/funds weight','Quote date'];
  const widths=[28,9,8,7,7,7,7,12,7,8];
- $('co-holdings').innerHTML=table(headings,rows).replace('<table>','<table class="horizontal-summary-group co-composition-table"><colgroup>'+widths.map(w=>'<col style="width:'+w+'%">').join('')+'</colgroup>');
- for(const [i,row] of (data?.composition||[]).entries()){const tr=$('co-holdings').querySelectorAll('tbody tr')[i];if(tr&&row.fixed_income)tr.classList.add('co-fixed-income-row');if(tr&&row.cash)tr.classList.add('co-cash-row');}
- const account=data?.composition?.[0],cells=$('co-holdings').querySelector('tbody tr')?.children;
- if(account?.partial_changes&&cells)for(const [i,key] of ['day','month','YTD','since_2025'].entries()){cells[i+3].innerHTML=changeCell(account.changes[key])+(account.changes[key]==null?'':'*');cells[i+3].title=(account.change_notes?.[key]||'')+' Known value change: '+eur(account.change_amounts_EUR?.[key]);}
+ $('co-holdings').innerHTML=table(headings,output).replace('<table>','<table class="horizontal-summary-group co-composition-table"><colgroup>'+widths.map(w=>'<col style="width:'+w+'%">').join('')+'</colgroup>');
+ $('co-holdings').querySelectorAll('tbody tr').forEach((tr,i)=>{tr.className=classes[i];});
 }
+
 function table(headers,rows){return '<table><thead><tr>'+headers.map(h=>'<th scope="col">'+esc(h)+'</th>').join('')+'</tr></thead><tbody>'+rows.map(r=>'<tr>'+r.map((v,i)=>'<'+(i?'td':'th scope="row"')+' data-label="'+esc(headers[i])+'">'+v+'</'+(i?'td':'th')+'>').join('')+'</tr>').join('')+'</tbody></table>';}
 function changeCell(x){return x==null?'—':'<span class="'+(x<0?'co-negative':'co-positive')+'">'+pct(x)+'</span>';}
 function fitVisibleValueAxis(plot){
