@@ -21,7 +21,7 @@
     "AKO1L": 150.0,
     "SE0014261756": 2.6129
   },
-  "source_sha256": "ac202b9312ed13c4567ee95a488df90e99072c9dc576b5ac97d3b0ad4eb6e202",
+  "source_sha256": "6222c6398de88a18fddfa2b1c937e89533803a664a7cba0f41de062eb55a3b0b",
   "native_function_source_sha256": "66f56a5aea907be56add6428d6acf4a9e7202a2b90e9933345175023dbc9df4f",
   "versions": [
     {
@@ -35,7 +35,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "ArithmeticReturn",
-      "value": 0.000301413302244,
+      "value": 0.000301413121733,
       "observations": 1472,
       "paired_benchmark": false,
       "unavailable_reason": null
@@ -53,7 +53,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "AnnualizedReturn_Arithmetic",
-      "value": 0.0759561521655088,
+      "value": 0.0759561066767162,
       "observations": 1472,
       "paired_benchmark": false,
       "unavailable_reason": null
@@ -80,7 +80,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "Volatility",
-      "value": 0.0055670190583104,
+      "value": 0.005566986603309,
       "observations": 1472,
       "paired_benchmark": false,
       "unavailable_reason": null
@@ -89,7 +89,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "Volatility_Annualized",
-      "value": 0.0883736878334789,
+      "value": 0.0883731726263028,
       "observations": 1472,
       "paired_benchmark": false,
       "unavailable_reason": null
@@ -107,7 +107,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "AverageDrawdown",
-      "value": 0.0167923067119523,
+      "value": 0.0167893939832571,
       "observations": 1472,
       "paired_benchmark": false,
       "unavailable_reason": null
@@ -134,7 +134,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "Sharpe_Daily",
-      "value": 0.054142674757711,
+      "value": 0.0541429579790692,
       "observations": 1472,
       "paired_benchmark": false,
       "unavailable_reason": null
@@ -143,7 +143,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "Sharpe_Annualized",
-      "value": 0.859488316348546,
+      "value": 0.859492812348225,
       "observations": 1472,
       "paired_benchmark": false,
       "unavailable_reason": null
@@ -152,7 +152,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "Sharpe_VaR",
-      "value": 0.0403672461847047,
+      "value": 0.0403672220094768,
       "observations": 1472,
       "paired_benchmark": false,
       "unavailable_reason": null
@@ -161,7 +161,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "Sharpe_ES",
-      "value": 0.0206620246730342,
+      "value": 0.020662012298914,
       "observations": 1472,
       "paired_benchmark": false,
       "unavailable_reason": null
@@ -170,7 +170,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "Sortino",
-      "value": 0.0735891930328436,
+      "value": 0.0735894526616787,
       "observations": 1472,
       "paired_benchmark": false,
       "unavailable_reason": null
@@ -179,7 +179,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "Calmar",
-      "value": 0.422712957166621,
+      "value": 0.422712957166622,
       "observations": 1472,
       "paired_benchmark": false,
       "unavailable_reason": null
@@ -188,7 +188,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "Omega",
-      "value": 1.18167559403456,
+      "value": 1.1816839614479,
       "observations": 1472,
       "paired_benchmark": false,
       "unavailable_reason": null
@@ -206,7 +206,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "Burke",
-      "value": 0.319521247648156,
+      "value": 0.319523827852345,
       "observations": 1472,
       "paired_benchmark": false,
       "unavailable_reason": null
@@ -215,7 +215,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "Martin",
-      "value": 0.996310644919497,
+      "value": 0.996310697914452,
       "observations": 1472,
       "paired_benchmark": false,
       "unavailable_reason": null
@@ -224,7 +224,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "UlcerIndex",
-      "value": 0.0749639634757126,
+      "value": 0.0749639594882899,
       "observations": 1472,
       "paired_benchmark": false,
       "unavailable_reason": null
@@ -233,7 +233,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "PainIndex",
-      "value": 0.0575763121722595,
+      "value": 0.057576235308841,
       "observations": 1472,
       "paired_benchmark": false,
       "unavailable_reason": null
@@ -242,7 +242,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "PainRatio",
-      "value": 1.29718962501029,
+      "value": 1.29719135673916,
       "observations": 1472,
       "paired_benchmark": false,
       "unavailable_reason": null
@@ -269,7 +269,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "DownsideDeviation",
-      "value": 0.0040958908478526,
+      "value": 0.0040958739443099,
       "observations": 1472,
       "paired_benchmark": false,
       "unavailable_reason": null
@@ -278,7 +278,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "DrawdownDeviation",
-      "value": 0.0057004513992792,
+      "value": 0.0057003990368581,
       "observations": 1472,
       "paired_benchmark": false,
       "unavailable_reason": null
@@ -296,7 +296,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "AdjustedSharpe",
-      "value": 0.464920249209614,
+      "value": 0.464908895864519,
       "observations": 1472,
       "paired_benchmark": false,
       "unavailable_reason": null
@@ -305,7 +305,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "Skewness",
-      "value": -0.975884514691556,
+      "value": -0.975901295607427,
       "observations": 1472,
       "paired_benchmark": false,
       "unavailable_reason": null
@@ -314,7 +314,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "Kurtosis",
-      "value": 13.3729561329505,
+      "value": 13.3732668347721,
       "observations": 1472,
       "paired_benchmark": false,
       "unavailable_reason": null
@@ -323,7 +323,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "UpsidePotential",
-      "value": 0.478647414660807,
+      "value": 0.478630448439295,
       "observations": 1472,
       "paired_benchmark": false,
       "unavailable_reason": null
@@ -332,7 +332,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "UpsideRisk",
-      "value": 0.003779573414025,
+      "value": 0.003779543946609,
       "observations": 1472,
       "paired_benchmark": false,
       "unavailable_reason": null
@@ -341,7 +341,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "BernardoLedoit",
-      "value": 1.18167559403456,
+      "value": 1.1816839614479,
       "observations": 1472,
       "paired_benchmark": false,
       "unavailable_reason": null
@@ -350,7 +350,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "DRatio",
-      "value": 0.693532377616015,
+      "value": 0.693527466766537,
       "observations": 1472,
       "paired_benchmark": false,
       "unavailable_reason": null
@@ -359,7 +359,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "Hurst",
-      "value": 0.365373182381715,
+      "value": 0.365373981612065,
       "observations": 1472,
       "paired_benchmark": false,
       "unavailable_reason": null
@@ -368,7 +368,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "Kappa",
-      "value": 0.0438354275730988,
+      "value": 0.0438354096826357,
       "observations": 1472,
       "paired_benchmark": false,
       "unavailable_reason": null
@@ -377,7 +377,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "Kelly",
-      "value": 9.72561332925322,
+      "value": 9.72572090381658,
       "observations": 1472,
       "paired_benchmark": false,
       "unavailable_reason": null
@@ -386,7 +386,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "Prospect",
-      "value": -0.43273358400211,
+      "value": -0.432711792060341,
       "observations": 1472,
       "paired_benchmark": false,
       "unavailable_reason": null
@@ -395,7 +395,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "Information_Daily",
-      "value": -0.0171754571572094,
+      "value": -0.0171755200273997,
       "observations": 1470,
       "paired_benchmark": true,
       "unavailable_reason": null
@@ -404,7 +404,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "Information_Annualized",
-      "value": -0.30027914687165,
+      "value": -0.300280246033491,
       "observations": 1470,
       "paired_benchmark": true,
       "unavailable_reason": null
@@ -413,7 +413,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "CAPMAlpha",
-      "value": 0.0002395687952175,
+      "value": 0.0002395674007163,
       "observations": 1470,
       "paired_benchmark": true,
       "unavailable_reason": null
@@ -422,7 +422,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "JensenAlpha",
-      "value": 0.060091160999326,
+      "value": 0.0600908728179566,
       "observations": 1470,
       "paired_benchmark": true,
       "unavailable_reason": null
@@ -431,7 +431,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "Treynor_Daily",
-      "value": 0.0024295020213138,
+      "value": 0.0024294561394163,
       "observations": 1470,
       "paired_benchmark": true,
       "unavailable_reason": null
@@ -440,7 +440,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "Treynor_Annualized",
-      "value": 0.634929793151473,
+      "value": 0.634917802305837,
       "observations": 1470,
       "paired_benchmark": true,
       "unavailable_reason": null
@@ -449,7 +449,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "Modigliani",
-      "value": 0.0006056148376106,
+      "value": 0.0006056180184206,
       "observations": 1470,
       "paired_benchmark": true,
       "unavailable_reason": null
@@ -458,7 +458,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "TrackingError_Daily",
-      "value": 0.0111667801132763,
+      "value": 0.0111667392377983,
       "observations": 1470,
       "paired_benchmark": true,
       "unavailable_reason": null
@@ -467,7 +467,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "TrackingError_Annualized",
-      "value": 0.177267138750425,
+      "value": 0.177266489872328,
       "observations": 1470,
       "paired_benchmark": true,
       "unavailable_reason": null
@@ -476,7 +476,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "M2Sortino",
-      "value": 0.0795982215048004,
+      "value": 0.0795982565503615,
       "observations": 1470,
       "paired_benchmark": true,
       "unavailable_reason": null
@@ -485,7 +485,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "Appraisal",
-      "value": 0.700622497811973,
+      "value": 0.700624261494574,
       "observations": 1470,
       "paired_benchmark": true,
       "unavailable_reason": null
@@ -494,7 +494,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "CAPMBeta",
-      "value": 0.118675207918026,
+      "value": 0.118677449178381,
       "observations": 1470,
       "paired_benchmark": true,
       "unavailable_reason": null
@@ -512,7 +512,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "OmegaExcessReturn",
-      "value": 0.0515522673352796,
+      "value": 0.0515523659077335,
       "observations": 1470,
       "paired_benchmark": true,
       "unavailable_reason": null
@@ -521,7 +521,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "BetaCoSkewness",
-      "value": 7.58544495421665,
+      "value": 7.58522379068403,
       "observations": 1470,
       "paired_benchmark": true,
       "unavailable_reason": null
@@ -530,7 +530,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "BetaCoKurtosis",
-      "value": 0.110204264988706,
+      "value": 0.110204559071534,
       "observations": 1470,
       "paired_benchmark": true,
       "unavailable_reason": null
@@ -548,7 +548,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "CoSkewness",
-      "value": -1.31772620004464e-07,
+      "value": -1.31768778002008e-07,
       "observations": 1470,
       "paired_benchmark": true,
       "unavailable_reason": null
@@ -557,7 +557,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "CoKurtosis",
-      "value": 1.51993377063996e-08,
+      "value": 1.51993782662112e-08,
       "observations": 1470,
       "paired_benchmark": true,
       "unavailable_reason": null
@@ -566,7 +566,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "FamaBeta",
-      "value": 0.501699768493772,
+      "value": 0.501696835013759,
       "observations": 1470,
       "paired_benchmark": true,
       "unavailable_reason": null
@@ -575,7 +575,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "MSquaredExcess",
-      "value": 0.0191481522529613,
+      "value": 0.01914893038126,
       "observations": 1470,
       "paired_benchmark": true,
       "unavailable_reason": null
@@ -584,7 +584,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "NetSelectivity",
-      "value": 0.0108418436930112,
+      "value": 0.0108422208800191,
       "observations": 1470,
       "paired_benchmark": true,
       "unavailable_reason": null
@@ -593,7 +593,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "Selectivity",
-      "value": 0.060091160999326,
+      "value": 0.0600908728179566,
       "observations": 1470,
       "paired_benchmark": true,
       "unavailable_reason": null
@@ -602,7 +602,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "SpecificRisk",
-      "value": 0.0857682435077223,
+      "value": 0.0857676162823287,
       "observations": 1470,
       "paired_benchmark": true,
       "unavailable_reason": null
@@ -611,7 +611,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "SystematicRisk",
-      "value": 0.0208878547789429,
+      "value": 0.0208882492599945,
       "observations": 1470,
       "paired_benchmark": true,
       "unavailable_reason": null
@@ -620,7 +620,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "TotalRisk",
-      "value": 0.0882751044840285,
+      "value": 0.0882745884153557,
       "observations": 1470,
       "paired_benchmark": true,
       "unavailable_reason": null
@@ -629,7 +629,7 @@
       "period": "ALL",
       "entity": "CURRENT",
       "metric": "UpCapture",
-      "value": 0.159122045498558,
+      "value": 0.15912200219258,
       "observations": 1470,
       "paired_benchmark": true,
       "unavailable_reason": null
