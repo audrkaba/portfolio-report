@@ -108,3 +108,34 @@ document.addEventListener('toggle',event=>{const profile=event.target.closest?.(
 document.addEventListener('change',event=>{if(event.target.matches('input[name="portfolio-scope"],input[name="sale-policy"],select[name="profile-history-regime"]'))queueMicrotask(()=>document.querySelectorAll('details.stock-profile[open]').forEach(refresh))});
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start();
 })();
+
+// Company calendars retain their source rows and links in compact horizontal groups.
+(()=>{
+function calendars(){
+ for(const section of document.querySelectorAll('#analytics-1-1 details.company-events')){
+  const tables=[...section.querySelectorAll('table')].filter(t=>!t.closest('.pa-event-groups'));
+  for(const original of tables){
+   if(original.dataset.paCalendar)continue;
+   const headers=[...(original.tHead?.rows[0]?.cells||[])],names=headers.map(c=>c.textContent.trim());
+   const rows=[...(original.tBodies[0]?.rows||[])];
+   const calendar=names[0]==='Published'&&names.includes('Official announcement');
+   const summary=names[0]==='Event type'&&names.includes('Abnormal 1d');
+   if((!calendar&&!summary)||!rows.length||rows.some(r=>r.cells.length!==headers.length))continue;
+   const groups=calendar?[
+    ['Official announcements',[0,1,2,3,4]],['Price movements around publication',[0,5,6,7,8]],['Abnormal return and direction reversal',[0,9,10]]
+   ]:[['Event counts and abnormal returns',[0,1,2,3,4]],['Direction, statistical tests and interpretation',[0,5,6,7,8,9]]];
+   const host=document.createElement('div');host.className='pa-event-groups';
+   for(const [label,indices] of groups){
+    const title=document.createElement('p');title.className='pa-event-title';title.textContent=label;host.append(title);
+    const table=document.createElement('table');table.className='pa-table pa-event-table horizontal-summary-group';table.setAttribute('aria-label',label);
+    const h=table.createTHead().insertRow();for(const i of indices)h.append(headers[i].cloneNode(true));
+    const body=table.createTBody();for(const row of rows){const tr=body.insertRow();for(const i of indices){const cell=row.cells[i].cloneNode(true);cell.removeAttribute('style');cell.removeAttribute('id');tr.append(cell)}}
+    host.append(table);
+   }
+   original.dataset.paCalendar='true';original.hidden=true;original.style.setProperty('display','none','important');original.after(host);
+  }
+ }
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',calendars);else calendars();
+document.addEventListener('toggle',event=>{if(event.target.open&&event.target.closest?.('.company-events'))calendars()},true);
+})();
