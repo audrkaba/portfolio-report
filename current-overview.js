@@ -57,14 +57,22 @@ function bindValueAutoscale(plot){
  plot.on('plotly_relayout',event=>{if(Object.keys(event).some(k=>k.startsWith('xaxis.range')||k==='xaxis.autorange'))schedule();});
  plot.on('plotly_restyle',schedule);
 }
-const portfolioColors=['#c02663','#26734d','#6846a6','#c4631b','#086f83','#b13939','#577321','#885b35','#2362af','#a3308a','#536277','#00856b'];
-function comparisonStyle(index){return {color:portfolioColors[index%portfolioColors.length],dash:['solid','dash','dot'][Math.floor(index/portfolioColors.length)%3]};}
+// Stable rainbow colours identify a portfolio; stroke identifies its sales policy.
+const portfolioStyleKeys=['MODEL:STOCHASTIC','MODEL:STOCHASTIC2','MODEL:STOCHA','MODEL:STOCH2A','MODEL:MARKOWITZ','MODEL:MINIMAX','MODEL:ROBUST','MODEL:UPDATE2','MODEL:UPDATE3','MODEL:NETSD','REGIME:NETSD:R1','REGIME:NETSD:R2','REGIME:NETSD:R3','REGIME:NETSD:R4'];
+function comparisonStyle(p){
+ const policy=String(p.policy||String(p.id).split(':').at(-1)).toUpperCase();
+ const key=String(p.id||p.model||p.label).replace(/:(NO_INITIAL_SALES|NO_SALE|SALE)$/i,'').toUpperCase();
+ const index=portfolioStyleKeys.indexOf(key);
+ let hash=0;for(const char of key)hash=(hash*31+char.charCodeAt(0))>>>0;
+ const hue=index>=0?Math.round(index*330/portfolioStyleKeys.length):hash%360;
+ return {color:'hsl('+hue+', 78%, 38%)',dash:policy==='NO_SALE'?'solid':policy==='NO_INITIAL_SALES'?'dot':'dash'};
+}
 function setupPortfolioPicker(){
  const select=$('co-portfolios');select.replaceChildren();
  const groups=new Map();
  for(const [index,p] of data.portfolio_comparison.portfolios.entries()){
   if(!groups.has(p.group)){const g=document.createElement('optgroup');g.label=p.group;groups.set(p.group,g);select.append(g)}
-  const option=document.createElement('option');option.value=p.id;option.textContent=p.label;option.style.color=comparisonStyle(index).color;
+  const option=document.createElement('option');option.value=p.id;option.textContent=p.label;option.style.color=comparisonStyle(p).color;
   if(p.status!=='available'){option.disabled=true;option.textContent+=' / unavailable'}
   groups.get(p.group).append(option);
  }
@@ -88,7 +96,7 @@ async function render(){
   const selectedLegend=[];
   for(const [index,p] of data.portfolio_comparison.portfolios.entries()){
    if(!selectedPortfolios.has(p.id))continue;
-   const first=p.values.findIndex((v,i)=>i>=begin&&v!=null&&v>0),style=comparisonStyle(index);
+   const first=p.values.findIndex((v,i)=>i>=begin&&v!=null&&v>0),style=comparisonStyle(p);
    if(first<0)continue;
    const values=p.values.map(v=>v==null?null:v/p.values[first]*graphValue[first]);
    traces.push(line(p.label.replace('; later sales allowed',''),dates,values,style.color,{showlegend:true,meta:{portfolio_id:p.id},line:{color:style.color,width:1.7,dash:style.dash}}));
