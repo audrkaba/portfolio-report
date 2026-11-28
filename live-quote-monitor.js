@@ -53,12 +53,18 @@
     if(Number.isFinite(target)&&f.get('target units')!=null){f.set('target value eur',(target*quote.price).toFixed(2));f.set('weight %',(100*target*quote.price/15000).toFixed(2)+'%');}
    }
    const old=snapshot?.current_units;
-   const validated=baskets[scope]?.[policy]?.validated===true;
+   const validated=baskets[scope]?.[policy]?.validated===true&&baskets[scope]?.[policy]?.current_rule_certified===true;
    const inventoryMatches=old==null||Math.abs(old-units)<=1e-9;
    note.textContent='Confirmed holding: '+units+' units. '+(old!=null?'Model input: '+old+' units. ':'')+(!inventoryMatches?'The inventory changed after this model was sealed. Its recorded target is not a newly recalculated order.':validated?'Recalculated allocation using its stated completed-session quotes.':'Target and analytics are an earlier model snapshot, not recalculated current orders.');
    if(quote)note.textContent+=' Display price, Bollinger bands and target value use the latest verified mark '+quote.date+'; target quantities remain the sealed model decision, not a new optimisation.';
+   if(baskets[scope]?.[policy]?.current_rule_certified!==true){
+    note.textContent+=' This is an archived allocation, not certified under the current EUR1 minimum per US-asset purchase and strict sector cap of 30% of invested shares/funds value. All original quantities remain visible for audit.';
+    const heading=profile.querySelector(':scope > summary');
+    if(heading)heading.textContent=heading.textContent.replace(/(?:current|recorded) action:/g,'archived action:').replace('Conditional later BUY:','Archived conditional quantities (not current orders):');
+    profile.dataset.currentRuleCertified='false';
+   }
    if(old!=null&&Math.abs(old-units)>1e-9)f.set('change','Pending recalculation');
-   const summary=profile.querySelector(':scope > summary');if(summary){const fresh=validated&&inventoryMatches;summary.textContent=summary.textContent.replace(fresh?'recorded action:':'current action:',fresh?'current action:':'recorded action:');summary.textContent=summary.textContent.replace(/ \| held now:.*$/,'');summary.textContent+=' | held now: '+units+' units'}
+   const summary=profile.querySelector(':scope > summary');if(summary){const fresh=validated&&inventoryMatches&&baskets[scope]?.[policy]?.current_rule_certified===true;summary.textContent=summary.textContent.replace(fresh?'recorded action:':'current action:',fresh?'current action:':'archived action:');summary.textContent=summary.textContent.replace(/ \| held now:.*$/,'');summary.textContent=summary.textContent.replace('Conditional later BUY:','Archived conditional quantities (not current orders):');summary.textContent+=' | held now: '+units+' units'}
   }
   return result;
  };

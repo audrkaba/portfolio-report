@@ -1,0 +1,257 @@
+{
+  "scope": "Audit of saved model policies; actual quantities retained. These are not newly optimised policies.",
+  "required_minimum_EUR": 1,
+  "required_sector_denominator": "Invested shares/funds value excluding cash, bonds and savings notes",
+  "cases": [
+    {
+      "model": "STOCHASTIC",
+      "policy": "SALE",
+      "source_input_hash": "263e73f6f7f0200ff3da7b4abc19b4e594b5f2d7f517f772e0d679e71fdb2027",
+      "minimum_US_purchase_passed": false,
+      "violations": {
+        "US_PFE": {
+          "nodes": 7,
+          "minimum_trade_EUR": 2.7119743509067592e-05,
+          "maximum_trade_EUR": 0.9927939745600703,
+          "minimum_additional_units": 1.000000000139778e-06,
+          "maximum_additional_units": 0.03887299999999971
+        },
+        "US_NVDA": {
+          "nodes": 4,
+          "minimum_trade_EUR": 0.004674444188620515,
+          "maximum_trade_EUR": 0.36913945922435865,
+          "minimum_additional_units": 2.9000000000056758e-05,
+          "maximum_additional_units": 0.002982999999999958
+        }
+      }
+    },
+    {
+      "model": "STOCHASTIC",
+      "policy": "NO_SALE",
+      "source_input_hash": "263e73f6f7f0200ff3da7b4abc19b4e594b5f2d7f517f772e0d679e71fdb2027",
+      "minimum_US_purchase_passed": false,
+      "violations": {
+        "US_PFE": {
+          "nodes": 5,
+          "minimum_trade_EUR": 4.9333512128364195e-05,
+          "maximum_trade_EUR": 0.5404908003913905,
+          "minimum_additional_units": 2.000000000279556e-06,
+          "maximum_additional_units": 0.0211629999999996
+        },
+        "US_NVDA": {
+          "nodes": 4,
+          "minimum_trade_EUR": 0.09216659287276313,
+          "maximum_trade_EUR": 0.36970032187161367,
+          "minimum_additional_units": 0.0006289999999999907,
+          "maximum_additional_units": 0.003054999999999808
+        }
+      }
+    },
+    {
+      "model": "STOCHASTIC",
+      "policy": "NO_INITIAL_SALES",
+      "source_input_hash": "263e73f6f7f0200ff3da7b4abc19b4e594b5f2d7f517f772e0d679e71fdb2027",
+      "minimum_US_purchase_passed": false,
+      "violations": {
+        "US_PFE": {
+          "nodes": 7,
+          "minimum_trade_EUR": 2.7119743509067592e-05,
+          "maximum_trade_EUR": 0.9927939745600703,
+          "minimum_additional_units": 1.000000000139778e-06,
+          "maximum_additional_units": 0.03887299999999971
+        },
+        "US_NVDA": {
+          "nodes": 4,
+          "minimum_trade_EUR": 0.004674444188620515,
+          "maximum_trade_EUR": 0.36913945922435865,
+          "minimum_additional_units": 2.9000000000056758e-05,
+          "maximum_additional_units": 0.002982999999999958
+        }
+      }
+    },
+    {
+      "model": "STOCHASTIC2",
+      "policy": "SALE",
+      "source_input_hash": "263e73f6f7f0200ff3da7b4abc19b4e594b5f2d7f517f772e0d679e71fdb2027",
+      "minimum_US_purchase_passed": false,
+      "violations": {
+        "US_NVDA": {
+          "nodes": 51,
+          "minimum_trade_EUR": 0.0001273157600927647,
+          "maximum_trade_EUR": 0.00013515934270253547,
+          "minimum_additional_units": 9.999999992515995e-07,
+          "maximum_additional_units": 9.999999992515995e-07
+        }
+      }
+    },
+    {
+      "model": "STOCHASTIC2",
+      "policy": "NO_SALE",
+      "source_input_hash": "263e73f6f7f0200ff3da7b4abc19b4e594b5f2d7f517f772e0d679e71fdb2027",
+      "minimum_US_purchase_passed": false,
+      "violations": {
+        "US_PFE": {
+          "nodes": 1126,
+          "minimum_trade_EUR": 2.45793127380689e-05,
+          "maximum_trade_EUR": 0.00012426211058169252,
+          "minimum_additional_units": 1.000000000139778e-06,
+          "maximum_additional_units": 4.999999999810711e-06
+        },
+        "US_NVDA": {
+          "nodes": 60,
+          "minimum_trade_EUR": 0.00012785760903979396,
+          "maximum_trade_EUR": 0.00014959726030123853,
+          "minimum_additional_units": 9.999999992515995e-07,
+          "maximum_additional_units": 9.999999992515995e-07
+        }
+      }
+    },
+    {
+      "model": "STOCHASTIC2",
+      "policy": "NO_INITIAL_SALES",
+      "source_input_hash": "263e73f6f7f0200ff3da7b4abc19b4e594b5f2d7f517f772e0d679e71fdb2027",
+      "minimum_US_purchase_passed": false,
+      "violations": {
+        "US_PFE": {
+          "nodes": 276,
+          "minimum_trade_EUR": 2.5280992753387467e-05,
+          "maximum_trade_EUR": 0.00013068786630146485,
+          "minimum_additional_units": 1e-06,
+          "maximum_additional_units": 4.9999999999999996e-06
+        },
+        "US_NVDA": {
+          "nodes": 14,
+          "minimum_trade_EUR": 0.00012785760903979396,
+          "maximum_trade_EUR": 0.00012986244702672262,
+          "minimum_additional_units": 9.999999992515995e-07,
+          "maximum_additional_units": 9.999999992515995e-07
+        }
+      }
+    },
+    {
+      "model": "stochA",
+      "policy": "SALE",
+      "source_input_hash": "263e73f6f7f0200ff3da7b4abc19b4e594b5f2d7f517f772e0d679e71fdb2027",
+      "minimum_US_purchase_passed": false,
+      "violations": {
+        "US_PFE": {
+          "nodes": 6,
+          "minimum_trade_EUR": 2.4666756064182097e-05,
+          "maximum_trade_EUR": 5.107884519840755e-05,
+          "minimum_additional_units": 1.000000000139778e-06,
+          "maximum_additional_units": 2.000000000279556e-06
+        },
+        "US_NVDA": {
+          "nodes": 4,
+          "minimum_trade_EUR": 0.004213278774779613,
+          "maximum_trade_EUR": 0.23561825332166678,
+          "minimum_additional_units": 3.300000000017178e-05,
+          "maximum_additional_units": 0.0016079999999991657
+        }
+      }
+    },
+    {
+      "model": "stochA",
+      "policy": "NO_SALE",
+      "source_input_hash": "263e73f6f7f0200ff3da7b4abc19b4e594b5f2d7f517f772e0d679e71fdb2027",
+      "minimum_US_purchase_passed": false,
+      "violations": {
+        "US_PFE": {
+          "nodes": 6,
+          "minimum_trade_EUR": 4.9333512084547235e-05,
+          "maximum_trade_EUR": 0.0001021576903968151,
+          "minimum_additional_units": 1.999999998503199e-06,
+          "maximum_additional_units": 4.000000000559112e-06
+        },
+        "US_NVDA": {
+          "nodes": 5,
+          "minimum_trade_EUR": 0.01101235001323222,
+          "maximum_trade_EUR": 0.5889154161745666,
+          "minimum_additional_units": 9.10000000002853e-05,
+          "maximum_additional_units": 0.004758999999999958
+        }
+      }
+    },
+    {
+      "model": "stochA",
+      "policy": "NO_INITIAL_SALES",
+      "source_input_hash": "263e73f6f7f0200ff3da7b4abc19b4e594b5f2d7f517f772e0d679e71fdb2027",
+      "minimum_US_purchase_passed": false,
+      "violations": {
+        "US_PFE": {
+          "nodes": 6,
+          "minimum_trade_EUR": 2.7309192369140507e-05,
+          "maximum_trade_EUR": 0.00010184036398806697,
+          "minimum_additional_units": 1.000000000139778e-06,
+          "maximum_additional_units": 3.9999999996709334e-06
+        },
+        "US_NVDA": {
+          "nodes": 2,
+          "minimum_trade_EUR": 0.08681907778288732,
+          "maximum_trade_EUR": 0.23597892885422375,
+          "minimum_additional_units": 0.0006800000000000139,
+          "maximum_additional_units": 0.0019499999999998963
+        }
+      }
+    },
+    {
+      "model": "stoch2A",
+      "policy": "SALE",
+      "source_input_hash": "263e73f6f7f0200ff3da7b4abc19b4e594b5f2d7f517f772e0d679e71fdb2027",
+      "minimum_US_purchase_passed": false,
+      "violations": {
+        "US_NVDA": {
+          "nodes": 51,
+          "minimum_trade_EUR": 0.0001273157600927647,
+          "maximum_trade_EUR": 0.00013515934270253547,
+          "minimum_additional_units": 9.999999992515995e-07,
+          "maximum_additional_units": 9.999999992515995e-07
+        }
+      }
+    },
+    {
+      "model": "stoch2A",
+      "policy": "NO_SALE",
+      "source_input_hash": "263e73f6f7f0200ff3da7b4abc19b4e594b5f2d7f517f772e0d679e71fdb2027",
+      "minimum_US_purchase_passed": false,
+      "violations": {
+        "US_PFE": {
+          "nodes": 1126,
+          "minimum_trade_EUR": 2.45793127380689e-05,
+          "maximum_trade_EUR": 0.00012426211058169252,
+          "minimum_additional_units": 1.000000000139778e-06,
+          "maximum_additional_units": 4.999999999810711e-06
+        },
+        "US_NVDA": {
+          "nodes": 60,
+          "minimum_trade_EUR": 0.00012785760903979396,
+          "maximum_trade_EUR": 0.00014959726030123853,
+          "minimum_additional_units": 9.999999992515995e-07,
+          "maximum_additional_units": 9.999999992515995e-07
+        }
+      }
+    },
+    {
+      "model": "stoch2A",
+      "policy": "NO_INITIAL_SALES",
+      "source_input_hash": "263e73f6f7f0200ff3da7b4abc19b4e594b5f2d7f517f772e0d679e71fdb2027",
+      "minimum_US_purchase_passed": false,
+      "violations": {
+        "US_PFE": {
+          "nodes": 276,
+          "minimum_trade_EUR": 2.5280992753387467e-05,
+          "maximum_trade_EUR": 0.00013068786630146485,
+          "minimum_additional_units": 1e-06,
+          "maximum_additional_units": 4.9999999999999996e-06
+        },
+        "US_NVDA": {
+          "nodes": 14,
+          "minimum_trade_EUR": 0.00012785760903979396,
+          "maximum_trade_EUR": 0.00012986244702672262,
+          "minimum_additional_units": 9.999999992515995e-07,
+          "maximum_additional_units": 9.999999992515995e-07
+        }
+      }
+    }
+  ]
+}
