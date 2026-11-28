@@ -68,11 +68,6 @@
   }
   return result;
  };
- function showCurrent(asset){
-  for(const [name,value] of [['profile-update-mode','ALL'],['profile-instrument-type','ALL']]){const i=document.querySelector(`input[name="${name}"][value="${value}"]`);if(i)i.checked=true}
-  const current=document.querySelector('input[name="portfolio-scope"][value="CURRENT"]');current.checked=true;current.dispatchEvent(new Event('change',{bubbles:true}));
-  if(asset)queueMicrotask(()=>{const p=[...document.querySelectorAll('details.stock-profile')].find(p=>assetOf(p)===asset);if(p){p.hidden=false;p.open=true;p.scrollIntoView({block:'start',behavior:'smooth'})}});
- }
  function currentNetSD(){
   document.querySelectorAll('.actual-current-netsd').forEach(e=>e.remove());
   if(document.querySelector('input[name="portfolio-scope"]:checked')?.value!=='CURRENT'||!historical)return;
@@ -81,22 +76,18 @@
  }
  document.addEventListener('change',e=>{if(e.target.matches('input[name="portfolio-scope"],input[name="sale-policy"],select[name="profile-history-regime"]'))queueMicrotask(currentNetSD)});
  function initialise(){
-  const filters=document.querySelector('.profile-filters');if(filters&&!document.getElementById('confirmed-holdings-shortcut')){
-   const box=document.createElement('aside');box.id='confirmed-holdings-shortcut';box.style.cssText='border:1px solid #bfd1d9;border-radius:5px;padding:.65rem;margin:.6rem 0;overflow-wrap:anywhere';
-   const p=document.createElement('p');p.textContent='Confirmed holdings: Artea (ROE1L) '+holdings.units.ROE1L+'; TAL1T '+holdings.units.TAL1T+'; VLP1L '+holdings.units.VLP1L+'; PFE '+holdings.units['US:PFE']+'; NVIDIA '+holdings.units['US:NVDA']+'; Robur Technology C '+holdings.units.SE0014261764+' units. “Updates only” filters recorded model changes; it is not a list of all investments held.';box.append(p);
-   for(const [label,asset] of [['View all Current holdings',null],['View PFE holding','US:PFE'],['View NVIDIA holding','US:NVDA'],['View TAL1T holding','TAL1T'],['View Artea holding','ROE1L']]){const b=document.createElement('button');b.type='button';b.textContent=label;b.style.marginRight='.5rem';b.addEventListener('click',()=>showCurrent(asset));box.append(b)}
-   filters.after(box);
-  }
+  document.getElementById('confirmed-holdings-shortcut')?.remove();
+  const filters=document.querySelector('.profile-filters');
   if(filters&&!document.getElementById('profile-supporting-information')){
    const section=document.getElementById('analytics-1-1'),zone=document.createElement('details');zone.id='profile-supporting-information';
    const summary=document.createElement('summary');summary.textContent='Additional information: model conditions, methodology and data notes';zone.append(summary);
    const children=[...section.children],firstAsset=children.findIndex(e=>e.matches('.stock-profile:not([data-current-pending="true"])'));
    const extras=children.filter((e,i)=>i<firstAsset&&!e.matches('.stock-profile')&&e.matches('details,nav,.profile-summary-note'));
    filters.before(zone);for(const e of extras){zone.append(e);if(e.tagName==='DETAILS')e.open=false}zone.open=false;
-   const heading=document.createElement('div');heading.setAttribute('role','heading');heading.setAttribute('aria-level','4');heading.id='profile-assets-heading';heading.textContent='My holdings and selected model asset profiles';
-   document.getElementById('confirmed-holdings-shortcut').after(heading);
+   const heading=document.getElementById('profile-assets-heading')||document.createElement('div');heading.setAttribute('role','heading');heading.setAttribute('aria-level','4');heading.id='profile-assets-heading';heading.textContent='My holdings and selected model asset profiles';
+   if(!heading.isConnected)filters.after(heading);
    for(const e of [...section.children]){if(e.matches('.stock-profile')&&e.compareDocumentPosition(filters)&Node.DOCUMENT_POSITION_FOLLOWING)heading.after(e)}
-   const style=document.createElement('style');style.textContent='#profile-supporting-information{margin:.45rem 0;font-size:.88rem}#profile-supporting-information>summary{font-weight:400}#selected-model-conditions{font-size:.82rem;padding:.2rem;margin:.25rem 0}#selected-model-conditions summary,#selected-model-conditions summary strong{font-weight:400!important;font-size:.82rem}#selected-model-conditions p{margin:.3rem 0;line-height:1.4}#profile-assets-heading{font-size:1rem;margin:.9rem 0 .4rem}#confirmed-holdings-shortcut p{margin:.2rem 0 .4rem}';document.head.append(style);
+   const style=document.createElement('style');style.textContent='#profile-supporting-information{margin:.45rem 0;font-size:.88rem}#profile-supporting-information>summary{font-weight:400}#selected-model-conditions{font-size:.82rem;padding:.2rem;margin:.25rem 0}#selected-model-conditions summary,#selected-model-conditions summary strong{font-weight:400!important;font-size:.82rem}#selected-model-conditions p{margin:.3rem 0;line-height:1.4}#profile-assets-heading{font-size:1rem;margin:.9rem 0 .4rem}';document.head.append(style);
   }
   const selected=document.querySelector('input[name="portfolio-scope"]:checked');selected?.dispatchEvent(new Event('change',{bubbles:true}));
  }
