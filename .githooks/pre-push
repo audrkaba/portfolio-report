@@ -7,4 +7,5 @@ elif [ -x 'D:/codex_temp/portfolio/local-compute/python/Scripts/python.exe' ]; t
 else
   PYTHON_BIN=python3
 fi
-exec "$PYTHON_BIN" scripts/refresh-watch-quotes.py --site . --check
+"$PYTHON_BIN" scripts/refresh-watch-quotes.py --site . --check || exit $?
+exec "$PYTHON_BIN" scripts/check-execution-contract.py --site .
