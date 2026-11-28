@@ -8,4 +8,5 @@ else
   PYTHON_BIN=python3
 fi
 "$PYTHON_BIN" scripts/refresh-watch-quotes.py --site . --check || exit $?
-exec "$PYTHON_BIN" scripts/check-execution-contract.py --site .
+"$PYTHON_BIN" scripts/check-execution-contract.py --site . || exit $?
+exec "$PYTHON_BIN" scripts/check-benchmark-coverage.py --site .

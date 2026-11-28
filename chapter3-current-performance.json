@@ -21,8 +21,19 @@
     "AKO1L": 150.0,
     "SE0014261756": 2.6129
   },
-  "source_sha256": "f80da28841fc632a17b28fa37990efdd986a95ba51b5758a33c75427b9483697",
+  "source_sha256": "3c39d92f4ea375e3e10b0b94b6151d9a754c9d803aa26b253669bf0c021fb459",
   "native_function_source_sha256": "66f56a5aea907be56add6428d6acf4a9e7202a2b90e9933345175023dbc9df4f",
+  "entities": [
+    "CURRENT",
+    "SP500_EUR",
+    "OMXBBGI",
+    "BERKSHIRE_EUR"
+  ],
+  "benchmark_entities": [
+    "SP500_EUR",
+    "OMXBBGI",
+    "BERKSHIRE_EUR"
+  ],
   "versions": [
     {
       "R_version": "R version 4.4.2 (2024-10-31 ucrt)",
@@ -1976,6 +1987,654 @@
       "unavailable_reason": null
     },
     {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "ArithmeticReturn",
+      "value": 0.0007402455982765,
+      "observations": 1473,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "GeometricReturn",
+      "value": 0.0006770574991739,
+      "observations": 1473,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "AnnualizedReturn_Arithmetic",
+      "value": 0.186541890765695,
+      "observations": 1473,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "AnnualizedReturn_Geometric",
+      "value": 0.18596970521471,
+      "observations": 1473,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "CumulativeReturn",
+      "value": 1.71005310853783,
+      "observations": 1473,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Volatility",
+      "value": 0.0112489068049334,
+      "observations": 1473,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Volatility_Annualized",
+      "value": 0.178570859563175,
+      "observations": 1473,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "MaximumDrawdown",
+      "value": 0.222462493190391,
+      "observations": 1473,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "AverageDrawdown",
+      "value": 0.0335430393113267,
+      "observations": 1473,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "AverageDrawdownLength",
+      "value": 28.3265306122449,
+      "observations": 1473,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "AverageRecoveryTime",
+      "value": 18.4285714285714,
+      "observations": 1473,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Sharpe_Daily",
+      "value": 0.0658060032955313,
+      "observations": 1473,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Sharpe_Annualized",
+      "value": 1.04463791697044,
+      "observations": 1473,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Sharpe_VaR",
+      "value": 0.0434071652373965,
+      "observations": 1473,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Sharpe_ES",
+      "value": 0.0298228010139407,
+      "observations": 1473,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Sortino",
+      "value": 0.0971070007880883,
+      "observations": 1473,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Calmar",
+      "value": 0.83595981753001,
+      "observations": 1473,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Omega",
+      "value": 1.19740458885947,
+      "observations": 1473,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Sterling",
+      "value": 0.57671732105882,
+      "observations": 1473,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Burke",
+      "value": 0.461452504251257,
+      "observations": 1473,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Martin",
+      "value": 1.98219778348861,
+      "observations": 1473,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "UlcerIndex",
+      "value": 0.0938199541760204,
+      "observations": 1473,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "PainIndex",
+      "value": 0.0712736640207557,
+      "observations": 1473,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "PainRatio",
+      "value": 2.60923452960905,
+      "observations": 1473,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "VaR_Loss",
+      "value": 0.0170535346924435,
+      "observations": 1473,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "ES_Loss",
+      "value": 0.0248214645542698,
+      "observations": 1473,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "DownsideDeviation",
+      "value": 0.0076229889942947,
+      "observations": 1473,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "DrawdownDeviation",
+      "value": 0.0101354469430225,
+      "observations": 1473,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Rachev",
+      "value": 1.02883407187772,
+      "observations": 1473,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "AdjustedSharpe",
+      "value": 0.87182520591677,
+      "observations": 1473,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Skewness",
+      "value": 0.0338548090477453,
+      "observations": 1473,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Kurtosis",
+      "value": 6.76785783228405,
+      "observations": 1473,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "UpsidePotential",
+      "value": 0.589025660577784,
+      "observations": 1473,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "UpsideRisk",
+      "value": 0.0083000001056504,
+      "observations": 1473,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "BernardoLedoit",
+      "value": 1.19740458885947,
+      "observations": 1473,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "DRatio",
+      "value": 0.700959080453113,
+      "observations": 1473,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Hurst",
+      "value": 0.344812838598234,
+      "observations": 1473,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Kappa",
+      "value": 0.0665779818292123,
+      "observations": 1473,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Kelly",
+      "value": 5.84999097571608,
+      "observations": 1473,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Prospect",
+      "value": -0.517791323949032,
+      "observations": 1473,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Information_Daily",
+      "value": 0.0192880597387192,
+      "observations": 1473,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Information_Annualized",
+      "value": 0.354438110104902,
+      "observations": 1473,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "CAPMAlpha",
+      "value": 0.0003958546551712,
+      "observations": 1473,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "JensenAlpha",
+      "value": 0.103942125278968,
+      "observations": 1473,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Treynor_Daily",
+      "value": 0.001081093866359,
+      "observations": 1473,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Treynor_Annualized",
+      "value": 0.296947759801088,
+      "observations": 1473,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Modigliani",
+      "value": 0.000729242688152,
+      "observations": 1473,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "TrackingError_Daily",
+      "value": 0.0097736761746461,
+      "observations": 1473,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "TrackingError_Annualized",
+      "value": 0.155152299317944,
+      "observations": 1473,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "M2Sortino",
+      "value": 0.186067555284956,
+      "observations": 1473,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Appraisal",
+      "value": 0.739873758289249,
+      "observations": 1473,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "CAPMBeta",
+      "value": 0.626270780218322,
+      "observations": 1473,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "ActiveReturn",
+      "value": 0.0549918877486821,
+      "observations": 1473,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "OmegaExcessReturn",
+      "value": 0.141672762987766,
+      "observations": 1473,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "BetaCoSkewness",
+      "value": -1.80983644993956,
+      "observations": 1473,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "BetaCoKurtosis",
+      "value": 0.66363618253888,
+      "observations": 1473,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "CDD",
+      "value": 0.0727683637830856,
+      "observations": 1473,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "CoSkewness",
+      "value": 3.39991752462854e-08,
+      "observations": 1473,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "CoKurtosis",
+      "value": 9.13569421614194e-08,
+      "observations": 1473,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "FamaBeta",
+      "value": 1.01508813225454,
+      "observations": 1473,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "MSquaredExcess",
+      "value": 0.0461792074779261,
+      "observations": 1473,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "NetSelectivity",
+      "value": 0.0530156771163436,
+      "observations": 1473,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Selectivity",
+      "value": 0.103942125278968,
+      "observations": 1473,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "SpecificRisk",
+      "value": 0.140486297985896,
+      "observations": 1473,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "SystematicRisk",
+      "value": 0.110171430429888,
+      "observations": 1473,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "TotalRisk",
+      "value": 0.178533313431274,
+      "observations": 1473,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "UpCapture",
+      "value": 0.660990292452852,
+      "observations": 1473,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "UpNumber",
+      "value": 0.724935732647815,
+      "observations": 1473,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "UpPercent",
+      "value": 0.363753213367609,
+      "observations": 1473,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "DownCapture",
+      "value": 0.55705589081884,
+      "observations": 1473,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "DownNumber",
+      "value": 0.672281776416539,
+      "observations": 1473,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "ALL",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "DownPercent",
+      "value": 0.635528330781011,
+      "observations": 1473,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
       "period": "5Y",
       "entity": "CURRENT",
       "metric": "ArithmeticReturn",
@@ -3915,6 +4574,654 @@
       "entity": "OMXBBGI",
       "metric": "DownPercent",
       "value": 0.865619546247818,
+      "observations": 1266,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "ArithmeticReturn",
+      "value": 0.0006607632860267,
+      "observations": 1266,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "GeometricReturn",
+      "value": 0.0005958247321098,
+      "observations": 1266,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "AnnualizedReturn_Arithmetic",
+      "value": 0.166512348078748,
+      "observations": 1266,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "AnnualizedReturn_Geometric",
+      "value": 0.161954056504118,
+      "observations": 1266,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "CumulativeReturn",
+      "value": 1.12567517340394,
+      "observations": 1266,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Volatility",
+      "value": 0.0114016091246943,
+      "observations": 1266,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Volatility_Annualized",
+      "value": 0.180994933739436,
+      "observations": 1266,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "MaximumDrawdown",
+      "value": 0.222462493190391,
+      "observations": 1266,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "AverageDrawdown",
+      "value": 0.0350224300420847,
+      "observations": 1266,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "AverageDrawdownLength",
+      "value": 32.5135135135135,
+      "observations": 1266,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "AverageRecoveryTime",
+      "value": 21.3243243243243,
+      "observations": 1266,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Sharpe_Daily",
+      "value": 0.0579535115438799,
+      "observations": 1266,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Sharpe_Annualized",
+      "value": 0.919983474888103,
+      "observations": 1266,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Sharpe_VaR",
+      "value": 0.0376328379129171,
+      "observations": 1266,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Sharpe_ES",
+      "value": 0.0258747489376945,
+      "observations": 1266,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Sortino",
+      "value": 0.0844133910499573,
+      "observations": 1266,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Calmar",
+      "value": 0.72800611995979,
+      "observations": 1266,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Omega",
+      "value": 1.17293916488239,
+      "observations": 1266,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Sterling",
+      "value": 0.502241531725972,
+      "observations": 1266,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Burke",
+      "value": 0.422781594601009,
+      "observations": 1266,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Martin",
+      "value": 1.60966229943024,
+      "observations": 1266,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "UlcerIndex",
+      "value": 0.100613685591968,
+      "observations": 1266,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "PainIndex",
+      "value": 0.0795723910561718,
+      "observations": 1266,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "PainRatio",
+      "value": 2.03530463712961,
+      "observations": 1266,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "VaR_Loss",
+      "value": 0.0175581572549961,
+      "observations": 1266,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "ES_Loss",
+      "value": 0.0255369931363536,
+      "observations": 1266,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "DownsideDeviation",
+      "value": 0.0078277069290549,
+      "observations": 1266,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "DrawdownDeviation",
+      "value": 0.0103658014052631,
+      "observations": 1266,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Rachev",
+      "value": 0.995623963437586,
+      "observations": 1266,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "AdjustedSharpe",
+      "value": 0.789111933688894,
+      "observations": 1266,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Skewness",
+      "value": -0.0148298770036257,
+      "observations": 1266,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Kurtosis",
+      "value": 6.96933985577074,
+      "observations": 1266,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "UpsidePotential",
+      "value": 0.572523710695378,
+      "observations": 1266,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "UpsideRisk",
+      "value": 0.0083100914540888,
+      "observations": 1266,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "BernardoLedoit",
+      "value": 1.17293916488239,
+      "observations": 1266,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "DRatio",
+      "value": 0.70665987839374,
+      "observations": 1266,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Hurst",
+      "value": 0.350235091538658,
+      "observations": 1266,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Kappa",
+      "value": 0.0576863883441951,
+      "observations": 1266,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Kelly",
+      "value": 5.08292390223768,
+      "observations": 1266,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Prospect",
+      "value": -0.525724508506819,
+      "observations": 1266,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Information_Daily",
+      "value": 0.0216594597637203,
+      "observations": 1266,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Information_Annualized",
+      "value": 0.388558425785868,
+      "observations": 1266,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "CAPMAlpha",
+      "value": 0.0003906113457227,
+      "observations": 1266,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "JensenAlpha",
+      "value": 0.101108714279278,
+      "observations": 1266,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Treynor_Daily",
+      "value": 0.0009779762858107,
+      "observations": 1266,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Treynor_Annualized",
+      "value": 0.265828553459051,
+      "observations": 1266,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Modigliani",
+      "value": 0.0006640953335294,
+      "observations": 1266,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "TrackingError_Daily",
+      "value": 0.0100651471531606,
+      "observations": 1266,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "TrackingError_Annualized",
+      "value": 0.159779257659197,
+      "observations": 1266,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "M2Sortino",
+      "value": 0.162162443802184,
+      "observations": 1266,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Appraisal",
+      "value": 0.706853169944926,
+      "observations": 1266,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "CAPMBeta",
+      "value": 0.609242515135099,
+      "observations": 1266,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "ActiveReturn",
+      "value": 0.062083576829292,
+      "observations": 1266,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "OmegaExcessReturn",
+      "value": 0.114711400190558,
+      "observations": 1266,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "BetaCoSkewness",
+      "value": 1.63843512324407,
+      "observations": 1266,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "BetaCoKurtosis",
+      "value": 0.657086496687359,
+      "observations": 1266,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "CDD",
+      "value": 0.0761541182229025,
+      "observations": 1266,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "CoSkewness",
+      "value": 3.70569676106263e-08,
+      "observations": 1266,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "CoKurtosis",
+      "value": 1.02586678554265e-07,
+      "observations": 1266,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "FamaBeta",
+      "value": 0.994982576545222,
+      "observations": 1266,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "MSquaredExcess",
+      "value": 0.0571887942732545,
+      "observations": 1266,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "NetSelectivity",
+      "value": 0.0625846693164524,
+      "observations": 1266,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Selectivity",
+      "value": 0.101108714279278,
+      "observations": 1266,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "SpecificRisk",
+      "value": 0.143040618021358,
+      "observations": 1266,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "SystematicRisk",
+      "value": 0.110825868972503,
+      "observations": 1266,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "TotalRisk",
+      "value": 0.180950246303901,
+      "observations": 1266,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "UpCapture",
+      "value": 0.638830381686432,
+      "observations": 1266,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "UpNumber",
+      "value": 0.728658536585366,
+      "observations": 1266,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "UpPercent",
+      "value": 0.355182926829268,
+      "observations": 1266,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "DownCapture",
+      "value": 0.539355190029619,
+      "observations": 1266,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "DownNumber",
+      "value": 0.661431064572426,
+      "observations": 1266,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "5Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "DownPercent",
+      "value": 0.645724258289703,
       "observations": 1266,
       "paired_benchmark": true,
       "unavailable_reason": null
@@ -5864,6 +7171,654 @@
       "unavailable_reason": null
     },
     {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "ArithmeticReturn",
+      "value": 0.0006906900997326,
+      "observations": 756,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "GeometricReturn",
+      "value": 0.0006316237890737,
+      "observations": 756,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "AnnualizedReturn_Arithmetic",
+      "value": 0.174053905132638,
+      "observations": 756,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "AnnualizedReturn_Geometric",
+      "value": 0.172477402789519,
+      "observations": 756,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "CumulativeReturn",
+      "value": 0.611808507952119,
+      "observations": 756,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Volatility",
+      "value": 0.0108658245249747,
+      "observations": 756,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Volatility_Annualized",
+      "value": 0.172489616896498,
+      "observations": 756,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "MaximumDrawdown",
+      "value": 0.205562459395853,
+      "observations": 756,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "AverageDrawdown",
+      "value": 0.0320492601839321,
+      "observations": 756,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "AverageDrawdownLength",
+      "value": 26.4444444444444,
+      "observations": 756,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "AverageRecoveryTime",
+      "value": 14.8518518518519,
+      "observations": 756,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Sharpe_Daily",
+      "value": 0.0635653647953881,
+      "observations": 756,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Sharpe_Annualized",
+      "value": 1.00906888347418,
+      "observations": 756,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Sharpe_VaR",
+      "value": 0.0461902255438126,
+      "observations": 756,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Sharpe_ES",
+      "value": 0.0273084659224751,
+      "observations": 756,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Sortino",
+      "value": 0.0904094132375848,
+      "observations": 756,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Calmar",
+      "value": 0.839051076234584,
+      "observations": 756,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Omega",
+      "value": 1.19592522791021,
+      "observations": 756,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Sterling",
+      "value": 0.564458746439385,
+      "observations": 756,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Burke",
+      "value": 0.61105567925292,
+      "observations": 756,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Martin",
+      "value": 1.6476826188909,
+      "observations": 756,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "UlcerIndex",
+      "value": 0.104678777825318,
+      "observations": 756,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "PainIndex",
+      "value": 0.0812138725777925,
+      "observations": 756,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "PainRatio",
+      "value": 2.12374311573811,
+      "observations": 756,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "VaR_Loss",
+      "value": 0.0149531657748143,
+      "observations": 756,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "ES_Loss",
+      "value": 0.0252921603759605,
+      "observations": 756,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "DownsideDeviation",
+      "value": 0.0076395817094581,
+      "observations": 756,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "DrawdownDeviation",
+      "value": 0.0098972200001804,
+      "observations": 756,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Rachev",
+      "value": 0.948711143314889,
+      "observations": 756,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "AdjustedSharpe",
+      "value": 0.688746556507271,
+      "observations": 756,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Skewness",
+      "value": -0.284521308449334,
+      "observations": 756,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Kurtosis",
+      "value": 9.35445855454099,
+      "observations": 756,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "UpsidePotential",
+      "value": 0.551857967882202,
+      "observations": 756,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "UpsideRisk",
+      "value": 0.0077475037644145,
+      "observations": 756,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "BernardoLedoit",
+      "value": 1.19592522791021,
+      "observations": 756,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "DRatio",
+      "value": 0.664440391715295,
+      "observations": 756,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Hurst",
+      "value": 0.384740742852592,
+      "observations": 756,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Kappa",
+      "value": 0.0586432494758107,
+      "observations": 756,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Kelly",
+      "value": 5.85002681106118,
+      "observations": 756,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Prospect",
+      "value": -0.486401280068187,
+      "observations": 756,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Information_Daily",
+      "value": 0.0006625499759135,
+      "observations": 756,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Information_Annualized",
+      "value": 0.012312487347467,
+      "observations": 756,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "CAPMAlpha",
+      "value": 0.000373386998219,
+      "observations": 756,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "JensenAlpha",
+      "value": 0.0927863817943817,
+      "observations": 756,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Treynor_Daily",
+      "value": 0.0013497223049146,
+      "observations": 756,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Treynor_Annualized",
+      "value": 0.368568444801832,
+      "observations": 756,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Modigliani",
+      "value": 0.0006597796111915,
+      "observations": 756,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "TrackingError_Daily",
+      "value": 0.0111789339370331,
+      "observations": 756,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "TrackingError_Annualized",
+      "value": 0.177460074721259,
+      "observations": 756,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "M2Sortino",
+      "value": 0.171902332860461,
+      "observations": 756,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Appraisal",
+      "value": 0.601751822341711,
+      "observations": 756,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "CAPMBeta",
+      "value": 0.467965733969045,
+      "observations": 756,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "ActiveReturn",
+      "value": 0.002184974924686,
+      "observations": 756,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "OmegaExcessReturn",
+      "value": 0.130669002223493,
+      "observations": 756,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "BetaCoSkewness",
+      "value": 0.79469365240765,
+      "observations": 756,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "BetaCoKurtosis",
+      "value": 0.589287470190397,
+      "observations": 756,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "CDD",
+      "value": 0.0732932961777447,
+      "observations": 756,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "CoSkewness",
+      "value": -6.79780857476348e-08,
+      "observations": 756,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "CoKurtosis",
+      "value": 1.04073797336767e-07,
+      "observations": 756,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "FamaBeta",
+      "value": 1.04684971771918,
+      "observations": 756,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "MSquaredExcess",
+      "value": -0.0047286599210627,
+      "observations": 756,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "NetSelectivity",
+      "value": -0.0057931772504944,
+      "observations": 756,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Selectivity",
+      "value": 0.0927863817943817,
+      "observations": 756,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "SpecificRisk",
+      "value": 0.154193769506679,
+      "observations": 756,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "SystematicRisk",
+      "value": 0.0771067984322296,
+      "observations": 756,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "TotalRisk",
+      "value": 0.172398308921948,
+      "observations": 756,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "UpCapture",
+      "value": 0.50383535777273,
+      "observations": 756,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "UpNumber",
+      "value": 0.673267326732673,
+      "observations": 756,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "UpPercent",
+      "value": 0.344059405940594,
+      "observations": 756,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "DownCapture",
+      "value": 0.391783714285101,
+      "observations": 756,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "DownNumber",
+      "value": 0.584848484848485,
+      "observations": 756,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "DownPercent",
+      "value": 0.639393939393939,
+      "observations": 756,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
       "period": "1Y",
       "entity": "CURRENT",
       "metric": "ArithmeticReturn",
@@ -7803,6 +9758,654 @@
       "entity": "OMXBBGI",
       "metric": "DownPercent",
       "value": 0.898305084745763,
+      "observations": 251,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "ArithmeticReturn",
+      "value": 0.0007894687597624,
+      "observations": 251,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "GeometricReturn",
+      "value": 0.0007410958516225,
+      "observations": 251,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "AnnualizedReturn_Arithmetic",
+      "value": 0.19894612746013,
+      "observations": 251,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "AnnualizedReturn_Geometric",
+      "value": 0.205249966699933,
+      "observations": 251,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "CumulativeReturn",
+      "value": 0.204357422410314,
+      "observations": 251,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Volatility",
+      "value": 0.00985274286983,
+      "observations": 251,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Volatility_Annualized",
+      "value": 0.156407444192611,
+      "observations": 251,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "MaximumDrawdown",
+      "value": 0.109872566567554,
+      "observations": 251,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "AverageDrawdown",
+      "value": 0.028268546476759,
+      "observations": 251,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "AverageDrawdownLength",
+      "value": 21.7272727272727,
+      "observations": 251,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "AverageRecoveryTime",
+      "value": 15.5454545454545,
+      "observations": 251,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Sharpe_Daily",
+      "value": 0.0801268002415692,
+      "observations": 251,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Sharpe_Annualized",
+      "value": 1.27197352074325,
+      "observations": 251,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Sharpe_VaR",
+      "value": 0.0534263803143185,
+      "observations": 251,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Sharpe_ES",
+      "value": 0.0374499324966349,
+      "observations": 251,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Sortino",
+      "value": 0.118532545987235,
+      "observations": 251,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Calmar",
+      "value": 1.86807292404275,
+      "observations": 251,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Omega",
+      "value": 1.23620230331538,
+      "observations": 251,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Sterling",
+      "value": 0.977974253885471,
+      "observations": 251,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Burke",
+      "value": 1.41838724563505,
+      "observations": 251,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Martin",
+      "value": 4.06254272695212,
+      "observations": 251,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "UlcerIndex",
+      "value": 0.050522537360221,
+      "observations": 251,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "PainIndex",
+      "value": 0.0421999286039949,
+      "observations": 251,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "PainRatio",
+      "value": 4.86375151545878,
+      "observations": 251,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "VaR_Loss",
+      "value": 0.014776759254844,
+      "observations": 251,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "ES_Loss",
+      "value": 0.0210806457350319,
+      "observations": 251,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "DownsideDeviation",
+      "value": 0.006660354362484,
+      "observations": 251,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "DrawdownDeviation",
+      "value": 0.0091495347472363,
+      "observations": 251,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Rachev",
+      "value": 1.03766493640524,
+      "observations": 251,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "AdjustedSharpe",
+      "value": 1.09626336490257,
+      "observations": 251,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Skewness",
+      "value": -0.179479558390461,
+      "observations": 251,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Kurtosis",
+      "value": 4.48473780187589,
+      "observations": 251,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "UpsidePotential",
+      "value": 0.620358922459822,
+      "observations": 251,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "UpsideRisk",
+      "value": 0.0072768622095006,
+      "observations": 251,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "BernardoLedoit",
+      "value": 1.23620230331538,
+      "observations": 251,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "DRatio",
+      "value": 0.697778525031,
+      "observations": 251,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Hurst",
+      "value": 0.362260789068637,
+      "observations": 251,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Kappa",
+      "value": 0.0829613428487922,
+      "observations": 251,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Kelly",
+      "value": 8.13243594196742,
+      "observations": 251,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Prospect",
+      "value": -0.5087504246035,
+      "observations": 251,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Information_Daily",
+      "value": 0.0194033067027928,
+      "observations": 251,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Information_Annualized",
+      "value": 0.359671770183456,
+      "observations": 251,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "CAPMAlpha",
+      "value": 0.0007174502175539,
+      "observations": 251,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "JensenAlpha",
+      "value": 0.187540249218205,
+      "observations": 251,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Treynor_Daily",
+      "value": 0.0055382002393902,
+      "observations": 251,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Treynor_Annualized",
+      "value": 1.53383049199875,
+      "observations": 251,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Modigliani",
+      "value": 0.0007604666282362,
+      "observations": 251,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "TrackingError_Daily",
+      "value": 0.0127688991915957,
+      "observations": 251,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "TrackingError_Annualized",
+      "value": 0.202699990662096,
+      "observations": 251,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "M2Sortino",
+      "value": 0.205041142537527,
+      "observations": 251,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Appraisal",
+      "value": 1.21155225143399,
+      "observations": 251,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "CAPMBeta",
+      "value": 0.133815286480887,
+      "observations": 251,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "ActiveReturn",
+      "value": 0.0729054644576062,
+      "observations": 251,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "OmegaExcessReturn",
+      "value": 0.17227237180771,
+      "observations": 251,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "BetaCoSkewness",
+      "value": 0.87859766039642,
+      "observations": 251,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "BetaCoKurtosis",
+      "value": 0.184283297816183,
+      "observations": 251,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "CDD",
+      "value": 0.0731862783978359,
+      "observations": 251,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "CoSkewness",
+      "value": -1.93098043220777e-08,
+      "observations": 251,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "CoKurtosis",
+      "value": 1.21910460433035e-08,
+      "observations": 251,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "FamaBeta",
+      "value": 1.03813728367465,
+      "observations": 251,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "MSquaredExcess",
+      "value": 0.0577256724354192,
+      "observations": 251,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "NetSelectivity",
+      "value": 0.0678582046328104,
+      "observations": 251,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Selectivity",
+      "value": 0.187540249218205,
+      "observations": 251,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "SpecificRisk",
+      "value": 0.154793364459711,
+      "observations": 251,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "SystematicRisk",
+      "value": 0.0201608277455305,
+      "observations": 251,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "TotalRisk",
+      "value": 0.1561007516194,
+      "observations": 251,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "UpCapture",
+      "value": 0.23464826979545,
+      "observations": 251,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "UpNumber",
+      "value": 0.571428571428571,
+      "observations": 251,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "UpPercent",
+      "value": 0.261904761904762,
+      "observations": 251,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "DownCapture",
+      "value": 0.0162949076973452,
+      "observations": 251,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "DownNumber",
+      "value": 0.5,
+      "observations": 251,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "1Y",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "DownPercent",
+      "value": 0.694915254237288,
       "observations": 251,
       "paired_benchmark": true,
       "unavailable_reason": null
@@ -9752,6 +12355,654 @@
       "unavailable_reason": null
     },
     {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "ArithmeticReturn",
+      "value": 0.0019847356928181,
+      "observations": 131,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "GeometricReturn",
+      "value": 0.0019432262947536,
+      "observations": 131,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "AnnualizedReturn_Arithmetic",
+      "value": 0.500153394590164,
+      "observations": 131,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "AnnualizedReturn_Geometric",
+      "value": 0.631040002300031,
+      "observations": 131,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "CumulativeReturn",
+      "value": 0.289578767406388,
+      "observations": 131,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Volatility",
+      "value": 0.009163148773783,
+      "observations": 131,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Volatility_Annualized",
+      "value": 0.145460477290299,
+      "observations": 131,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "MaximumDrawdown",
+      "value": 0.0749931974140451,
+      "observations": 131,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "AverageDrawdown",
+      "value": 0.0146381019391661,
+      "observations": 131,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "AverageDrawdownLength",
+      "value": 6.88235294117647,
+      "observations": 131,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "AverageRecoveryTime",
+      "value": 4.47058823529412,
+      "observations": 131,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Sharpe_Daily",
+      "value": 0.216599745547806,
+      "observations": 131,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Sharpe_Annualized",
+      "value": 3.43841436455619,
+      "observations": 131,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Sharpe_VaR",
+      "value": 0.160204310492244,
+      "observations": 131,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Sharpe_ES",
+      "value": 0.117868246488885,
+      "observations": 131,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Sortino",
+      "value": 0.3831542144008,
+      "observations": 131,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Calmar",
+      "value": 8.41462991391065,
+      "observations": 131,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Omega",
+      "value": 1.76765840995244,
+      "observations": 131,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Sterling",
+      "value": 3.60608304565663,
+      "observations": 131,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Burke",
+      "value": 6.70309626011498,
+      "observations": 131,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Martin",
+      "value": 22.237312991149,
+      "observations": 131,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "UlcerIndex",
+      "value": 0.0283775293602784,
+      "observations": 131,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "PainIndex",
+      "value": 0.0200243839888027,
+      "observations": 131,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "PainRatio",
+      "value": 31.5135787773995,
+      "observations": 131,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "VaR_Loss",
+      "value": 0.0123887783463492,
+      "observations": 131,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "ES_Loss",
+      "value": 0.0168385952276407,
+      "observations": 131,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "DownsideDeviation",
+      "value": 0.0051799918106654,
+      "observations": 131,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "DrawdownDeviation",
+      "value": 0.0085332517265578,
+      "observations": 131,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Rachev",
+      "value": 1.36887483959366,
+      "observations": 131,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "AdjustedSharpe",
+      "value": 2.39368735782096,
+      "observations": 131,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Skewness",
+      "value": 0.29773539799005,
+      "observations": 131,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Kurtosis",
+      "value": 3.96315658937758,
+      "observations": 131,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "UpsidePotential",
+      "value": 0.882274929335114,
+      "observations": 131,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "UpsideRisk",
+      "value": 0.007773623021193,
+      "observations": 131,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "BernardoLedoit",
+      "value": 1.76765840995244,
+      "observations": 131,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "DRatio",
+      "value": 0.432147345091092,
+      "observations": 131,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Hurst",
+      "value": 0.370969396736527,
+      "observations": 131,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Kappa",
+      "value": 0.276204396297473,
+      "observations": 131,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Kelly",
+      "value": 23.638134760785,
+      "observations": 131,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Prospect",
+      "value": -0.240746679267092,
+      "observations": 131,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Information_Daily",
+      "value": 0.127962825708244,
+      "observations": 131,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Information_Annualized",
+      "value": 2.6883763826166,
+      "observations": 131,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "CAPMAlpha",
+      "value": 0.0019592368547542,
+      "observations": 131,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "JensenAlpha",
+      "value": 0.625747045006217,
+      "observations": 131,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Treynor_Daily",
+      "value": 0.0219061040346694,
+      "observations": 131,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Treynor_Annualized",
+      "value": 7.11375097061204,
+      "observations": 131,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Modigliani",
+      "value": 0.0023312127742912,
+      "observations": 131,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "TrackingError_Daily",
+      "value": 0.0133884022515472,
+      "observations": 131,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "TrackingError_Annualized",
+      "value": 0.212534296860547,
+      "observations": 131,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "M2Sortino",
+      "value": 0.645156671369047,
+      "observations": 131,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Appraisal",
+      "value": 4.34198219578122,
+      "observations": 131,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "CAPMBeta",
+      "value": 0.0887070695765076,
+      "observations": 131,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "ActiveReturn",
+      "value": 0.57137218417592,
+      "observations": 131,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "OmegaExcessReturn",
+      "value": 0.601665915985989,
+      "observations": 131,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "BetaCoSkewness",
+      "value": 0.533396538742682,
+      "observations": 131,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "BetaCoKurtosis",
+      "value": 0.136858991233721,
+      "observations": 131,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "CDD",
+      "value": 0.0374077025007257,
+      "observations": 131,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "CoSkewness",
+      "value": 7.03637097624095e-08,
+      "observations": 131,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "CoKurtosis",
+      "value": 1.49566550843853e-08,
+      "observations": 131,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "FamaBeta",
+      "value": 0.851374749961004,
+      "observations": 131,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "MSquaredExcess",
+      "value": 0.643157590509,
+      "observations": 131,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "NetSelectivity",
+      "value": 0.580240328563897,
+      "observations": 131,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Selectivity",
+      "value": 0.625747045006217,
+      "observations": 131,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "SpecificRisk",
+      "value": 0.144115525304136,
+      "observations": 131,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "SystematicRisk",
+      "value": 0.0151559259658729,
+      "observations": 131,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "TotalRisk",
+      "value": 0.144910271290789,
+      "observations": 131,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "UpCapture",
+      "value": 0.365902256609467,
+      "observations": 131,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "UpNumber",
+      "value": 0.609375,
+      "observations": 131,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "UpPercent",
+      "value": 0.3125,
+      "observations": 131,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "DownCapture",
+      "value": -0.171293176940272,
+      "observations": 131,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "DownNumber",
+      "value": 0.476190476190476,
+      "observations": 131,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "6M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "DownPercent",
+      "value": 0.793650793650794,
+      "observations": 131,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
       "period": "3M",
       "entity": "CURRENT",
       "metric": "ArithmeticReturn",
@@ -11691,6 +14942,654 @@
       "entity": "OMXBBGI",
       "metric": "DownPercent",
       "value": 0.903225806451613,
+      "observations": 66,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "ArithmeticReturn",
+      "value": 0.0031724803954713,
+      "observations": 66,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "GeometricReturn",
+      "value": 0.0031358372208427,
+      "observations": 66,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "AnnualizedReturn_Arithmetic",
+      "value": 0.79946505965878,
+      "observations": 66,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "AnnualizedReturn_Geometric",
+      "value": 1.20118212578173,
+      "observations": 66,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "CumulativeReturn",
+      "value": 0.229541614396154,
+      "observations": 66,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Volatility",
+      "value": 0.0086415770175411,
+      "observations": 66,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Volatility_Annualized",
+      "value": 0.137180782342951,
+      "observations": 66,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "MaximumDrawdown",
+      "value": 0.0364429594413015,
+      "observations": 66,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "AverageDrawdown",
+      "value": 0.0118727640830419,
+      "observations": 66,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "AverageDrawdownLength",
+      "value": 5.33333333333333,
+      "observations": 66,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "AverageRecoveryTime",
+      "value": 3.33333333333333,
+      "observations": 66,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Sharpe_Daily",
+      "value": 0.367118222638259,
+      "observations": 66,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Sharpe_Annualized",
+      "value": 5.82782111316525,
+      "observations": 66,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Sharpe_VaR",
+      "value": 0.369998906409752,
+      "observations": 66,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Sharpe_ES",
+      "value": 0.208094012240627,
+      "observations": 66,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Sortino",
+      "value": 0.696269811773049,
+      "observations": 66,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Calmar",
+      "value": 32.9606086936069,
+      "observations": 66,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Omega",
+      "value": 2.60184637939492,
+      "observations": 66,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Sterling",
+      "value": 8.80354787597877,
+      "observations": 66,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Burke",
+      "value": 24.9628406206909,
+      "observations": 66,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Martin",
+      "value": 97.7318732696373,
+      "observations": 66,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "UlcerIndex",
+      "value": 0.0122905873549331,
+      "observations": 66,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "PainIndex",
+      "value": 0.0075506813700068,
+      "observations": 66,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "PainRatio",
+      "value": 159.082613464941,
+      "observations": 66,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "VaR_Loss",
+      "value": 0.0085742966817259,
+      "observations": 66,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "ES_Loss",
+      "value": 0.0152454189397958,
+      "observations": 66,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "DownsideDeviation",
+      "value": 0.0045563951528971,
+      "observations": 66,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "DrawdownDeviation",
+      "value": 0.0061888345609971,
+      "observations": 66,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Rachev",
+      "value": 1.43094525776726,
+      "observations": 66,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "AdjustedSharpe",
+      "value": -4.17491855878805,
+      "observations": 66,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Skewness",
+      "value": 0.0873878263999597,
+      "observations": 66,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Kurtosis",
+      "value": 4.27284226422367,
+      "observations": 66,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "UpsidePotential",
+      "value": 1.13093684397376,
+      "observations": 66,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "UpsideRisk",
+      "value": 0.007927753839859,
+      "observations": 66,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "BernardoLedoit",
+      "value": 2.60184637939492,
+      "observations": 66,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "DRatio",
+      "value": 0.187702124495464,
+      "observations": 66,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Hurst",
+      "value": 0.420060350278676,
+      "observations": 66,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Kappa",
+      "value": 0.478907499845324,
+      "observations": 66,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Kelly",
+      "value": 42.4827808504235,
+      "observations": 66,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Prospect",
+      "value": 0.152936021522155,
+      "observations": 66,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Information_Daily",
+      "value": 0.220779348667619,
+      "observations": 66,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Information_Annualized",
+      "value": 5.35559379165078,
+      "observations": 66,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "CAPMAlpha",
+      "value": 0.0031569874087429,
+      "observations": 66,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "JensenAlpha",
+      "value": 1.19968633170844,
+      "observations": 66,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Treynor_Daily",
+      "value": 0.0257062134075184,
+      "observations": 66,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Treynor_Annualized",
+      "value": 9.84676240890564,
+      "observations": 66,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Modigliani",
+      "value": 0.0046422501951875,
+      "observations": 66,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "TrackingError_Daily",
+      "value": 0.013984431936163,
+      "observations": 66,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "TrackingError_Annualized",
+      "value": 0.22199597477758,
+      "observations": 66,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "M2Sortino",
+      "value": 1.24849793957895,
+      "observations": 66,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Appraisal",
+      "value": 8.95615024960761,
+      "observations": 66,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "CAPMBeta",
+      "value": 0.121987519948217,
+      "observations": 66,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "ActiveReturn",
+      "value": 1.18892026429027,
+      "observations": 66,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "OmegaExcessReturn",
+      "value": 1.1707410962027,
+      "observations": 66,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "BetaCoSkewness",
+      "value": -0.481005665121204,
+      "observations": 66,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "BetaCoKurtosis",
+      "value": 0.155734029925928,
+      "observations": 66,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "CDD",
+      "value": 0.0311994657089377,
+      "observations": 66,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "CoSkewness",
+      "value": -1.91116849159527e-07,
+      "observations": 66,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "CoKurtosis",
+      "value": 3.06960433987027e-08,
+      "observations": 66,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "FamaBeta",
+      "value": 0.683392807815522,
+      "observations": 66,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "MSquaredExcess",
+      "value": 1.72426990030458,
+      "observations": 66,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "NetSelectivity",
+      "value": 1.19280245782804,
+      "observations": 66,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Selectivity",
+      "value": 1.19968633170844,
+      "observations": 66,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "SpecificRisk",
+      "value": 0.133951117195806,
+      "observations": 66,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "SystematicRisk",
+      "value": 0.0244871517979014,
+      "observations": 66,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "TotalRisk",
+      "value": 0.136170930822911,
+      "observations": 66,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "UpCapture",
+      "value": 0.518244843486103,
+      "observations": 66,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "UpNumber",
+      "value": 0.757575757575758,
+      "observations": 66,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "UpPercent",
+      "value": 0.393939393939394,
+      "observations": 66,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "DownCapture",
+      "value": -0.249217589492923,
+      "observations": 66,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "DownNumber",
+      "value": 0.419354838709677,
+      "observations": 66,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "3M",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "DownPercent",
+      "value": 0.806451612903226,
       "observations": 66,
       "paired_benchmark": true,
       "unavailable_reason": null
@@ -13638,8 +17537,656 @@
       "observations": 230,
       "paired_benchmark": true,
       "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "ArithmeticReturn",
+      "value": 0.0010351928902062,
+      "observations": 230,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "GeometricReturn",
+      "value": 0.0009867444476421,
+      "observations": 230,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "AnnualizedReturn_Arithmetic",
+      "value": 0.260868608331969,
+      "observations": 230,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "AnnualizedReturn_Geometric",
+      "value": 0.282148260605016,
+      "observations": 230,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "CumulativeReturn",
+      "value": 0.254628264513347,
+      "observations": 230,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Volatility",
+      "value": 0.0098632607158971,
+      "observations": 230,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Volatility_Annualized",
+      "value": 0.15657440982274,
+      "observations": 230,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "MaximumDrawdown",
+      "value": 0.0809702810571638,
+      "observations": 230,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "AverageDrawdown",
+      "value": 0.0250157447517783,
+      "observations": 230,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "AverageDrawdownLength",
+      "value": 12.7647058823529,
+      "observations": 230,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "AverageRecoveryTime",
+      "value": 7.17647058823529,
+      "observations": 230,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Sharpe_Daily",
+      "value": 0.104954428360365,
+      "observations": 230,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Sharpe_Annualized",
+      "value": 1.66609989861882,
+      "observations": 230,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Sharpe_VaR",
+      "value": 0.0748439281641165,
+      "observations": 230,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Sharpe_ES",
+      "value": 0.0490626104037019,
+      "observations": 230,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Sortino",
+      "value": 0.158822191886489,
+      "observations": 230,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Calmar",
+      "value": 3.4845903573661,
+      "observations": 230,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Omega",
+      "value": 1.32325097639271,
+      "observations": 230,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Sterling",
+      "value": 1.55908616020712,
+      "observations": 230,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Burke",
+      "value": 2.06408525681044,
+      "observations": 230,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Martin",
+      "value": 7.71835550512157,
+      "observations": 230,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "UlcerIndex",
+      "value": 0.0365554891087609,
+      "observations": 230,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "PainIndex",
+      "value": 0.0287142581758999,
+      "observations": 230,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "PainRatio",
+      "value": 9.82606825071406,
+      "observations": 230,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "VaR_Loss",
+      "value": 0.0138313543342657,
+      "observations": 230,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "ES_Loss",
+      "value": 0.0210994254420698,
+      "observations": 230,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "DownsideDeviation",
+      "value": 0.0065179360510657,
+      "observations": 230,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "DrawdownDeviation",
+      "value": 0.0101846947034576,
+      "observations": 230,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Rachev",
+      "value": 1.08303794764528,
+      "observations": 230,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "AdjustedSharpe",
+      "value": 1.25398844854893,
+      "observations": 230,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Skewness",
+      "value": -0.183396687790164,
+      "observations": 230,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Kurtosis",
+      "value": 4.69826496357873,
+      "observations": 230,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "UpsidePotential",
+      "value": 0.650149994384878,
+      "observations": 230,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "UpsideRisk",
+      "value": 0.0074464133899276,
+      "observations": 230,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "BernardoLedoit",
+      "value": 1.32325097639271,
+      "observations": 230,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "DRatio",
+      "value": 0.625632527183811,
+      "observations": 230,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Hurst",
+      "value": 0.367885036802738,
+      "observations": 230,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Kappa",
+      "value": 0.109120088474859,
+      "observations": 230,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Kelly",
+      "value": 10.6409463749858,
+      "observations": 230,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Prospect",
+      "value": -0.455337561236497,
+      "observations": 230,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Information_Daily",
+      "value": 0.0328219481454683,
+      "observations": 230,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Information_Annualized",
+      "value": 0.633142937117593,
+      "observations": 230,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "CAPMAlpha",
+      "value": 0.000952755605444,
+      "observations": 230,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "JensenAlpha",
+      "value": 0.26156568489875,
+      "observations": 230,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Treynor_Daily",
+      "value": 0.0073053478784768,
+      "observations": 230,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Treynor_Annualized",
+      "value": 2.08888046135156,
+      "observations": 230,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Modigliani",
+      "value": 0.0010234962439961,
+      "observations": 230,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "TrackingError_Daily",
+      "value": 0.012910917207163,
+      "observations": 230,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "TrackingError_Annualized",
+      "value": 0.204954456767387,
+      "observations": 230,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "M2Sortino",
+      "value": 0.282621072626046,
+      "observations": 230,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Appraisal",
+      "value": 1.68932727045514,
+      "observations": 230,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "CAPMBeta",
+      "value": 0.135071520762111,
+      "observations": 230,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "ActiveReturn",
+      "value": 0.129765466733044,
+      "observations": 230,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "OmegaExcessReturn",
+      "value": 0.249106663220827,
+      "observations": 230,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "BetaCoSkewness",
+      "value": 1.03504389208632,
+      "observations": 230,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "BetaCoKurtosis",
+      "value": 0.184554613862626,
+      "observations": 230,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "CDD",
+      "value": 0.0759113215518621,
+      "observations": 230,
+      "paired_benchmark": false,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "CoSkewness",
+      "value": -3.16197691259769e-08,
+      "observations": 230,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "CoKurtosis",
+      "value": 1.32684600539965e-08,
+      "observations": 230,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "FamaBeta",
+      "value": 1.01142812812326,
+      "observations": 230,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "MSquaredExcess",
+      "value": 0.109839780439568,
+      "observations": 230,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "NetSelectivity",
+      "value": 0.128024016640895,
+      "observations": 230,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "Selectivity",
+      "value": 0.26156568489875,
+      "observations": 230,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "SpecificRisk",
+      "value": 0.154834228673926,
+      "observations": 230,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "SystematicRisk",
+      "value": 0.0209097839570962,
+      "observations": 230,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "TotalRisk",
+      "value": 0.156239743452752,
+      "observations": 230,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "UpCapture",
+      "value": 0.263578749117641,
+      "observations": 230,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "UpNumber",
+      "value": 0.591304347826087,
+      "observations": 230,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "UpPercent",
+      "value": 0.260869565217391,
+      "observations": 230,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "DownCapture",
+      "value": -0.0198708925757482,
+      "observations": 230,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "DownNumber",
+      "value": 0.5,
+      "observations": 230,
+      "paired_benchmark": true,
+      "unavailable_reason": null
+    },
+    {
+      "period": "YTD",
+      "entity": "BERKSHIRE_EUR",
+      "metric": "DownPercent",
+      "value": 0.712962962962963,
+      "observations": 230,
+      "paired_benchmark": true,
+      "unavailable_reason": null
     }
   ],
   "metric_count": 72,
-  "semantics": "Native PerformanceAnalytics definitions on the same Current fixed-composition shares/funds returns and matched EUR SP500 benchmark; undefined values remain unavailable. Not OOS model optimisation. Native tail/annualisation conventions can differ from the separately labelled21-measure overview."
+  "semantics": "Native PerformanceAnalytics definitions on the same Current fixed-composition shares/funds returns and matched EUR SP500 relative-statistics benchmark; Berkshire is its EUR-converted BRK-B share proxy, not an index or fund; undefined values remain unavailable. Not OOS model optimisation. Native tail/annualisation conventions can differ from the separately labelled21-measure overview."
 }
