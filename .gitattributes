@@ -1,8 +1,3 @@
-# Preserve vendored upstream bytes and recorded SHA-256 checksums.
-vendor/mathjax/tex-svg-full.js -text
-vendor/mathjax/LICENSE -text
-vendor/mathjax/provenance.json text eol=lf
 
-# Preserve audited statistical export bytes and their SHA-256 checksums.
-rolling-inference*.csv -text -whitespace
-rolling-inference*.json -text -whitespace
+.githooks/pre-push text eol=lf
+scripts/check-execution-contract.py text eol=lf
