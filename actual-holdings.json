@@ -35,51 +35,51 @@
   },
   "valuation_quotes": {
     "TKM1T": {
-      "date": "2026-11-26",
-      "price_EUR": 8.86
+      "date": "2026-11-27",
+      "price_EUR": 8.89
     },
     "SAF1R": {
-      "date": "2026-11-26",
-      "price_EUR": 16.35
+      "date": "2026-11-27",
+      "price_EUR": 16.5
     },
     "APG1L": {
-      "date": "2026-11-26",
-      "price_EUR": 3.86
+      "date": "2026-11-27",
+      "price_EUR": 3.87
     },
     "KNE1L": {
-      "date": "2026-11-26",
-      "price_EUR": 0.457
+      "date": "2026-11-27",
+      "price_EUR": 0.458
     },
     "VLP1L": {
-      "date": "2026-11-26",
-      "price_EUR": 14.95
+      "date": "2026-11-27",
+      "price_EUR": 15.25
     },
     "RSU1L": {
-      "date": "2026-11-26",
-      "price_EUR": 4.38
+      "date": "2026-11-27",
+      "price_EUR": 4.36
     },
     "MRK1T": {
-      "date": "2026-11-26",
-      "price_EUR": 26.5
+      "date": "2026-11-27",
+      "price_EUR": 26.55
     },
     "GRG1L": {
-      "date": "2026-11-26",
-      "price_EUR": 0.95
+      "date": "2026-11-27",
+      "price_EUR": 0.952
     },
     "HAE1T": {
-      "date": "2026-11-26",
-      "price_EUR": 5.06
+      "date": "2026-11-27",
+      "price_EUR": 5.04
     },
     "TAL1T": {
-      "date": "2026-11-26",
-      "price_EUR": 0.605
+      "date": "2026-11-27",
+      "price_EUR": 0.607
     },
     "ROE1L": {
-      "date": "2026-11-26",
-      "price_EUR": 0.824
+      "date": "2026-11-27",
+      "price_EUR": 0.815
     },
     "TSM1T": {
-      "date": "2026-11-26",
+      "date": "2026-11-27",
       "price_EUR": 1.23
     },
     "SE0014261764": {
@@ -87,15 +87,15 @@
       "price_EUR": 22.589
     },
     "US_PFE": {
-      "date": "2026-11-25",
-      "price_EUR": 26.02651951026306
+      "date": "2026-11-27",
+      "price_EUR": 26.02902254266679
     },
     "US_NVDA": {
-      "date": "2026-11-25",
-      "price_EUR": 136.53406771994315
+      "date": "2026-11-27",
+      "price_EUR": 137.3459938789487
     },
     "AKO1L": {
-      "date": "2026-11-26",
+      "date": "2026-11-27",
       "price_EUR": 1.6949999999999998
     },
     "SE0014261756": {
@@ -104,5 +104,6 @@
     }
   },
   "cash_reconciliation_pending": true,
-  "scope": "Confirmed17 shares/fund positions; High Dividend C2.6129 added. Fixed income remains separate. Cash is last reported, not reconciled to this purchase."
+  "scope": "Confirmed17 shares/fund positions; High Dividend C2.6129 added. Fixed income remains separate. Cash is last reported, not reconciled to this purchase.",
+  "valuation_checked_at_UTC": "2026-11-28T07:03:35.814158+00:00"
 }

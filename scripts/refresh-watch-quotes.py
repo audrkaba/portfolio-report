@@ -3,11 +3,18 @@ from pathlib import Path
 from datetime import datetime,timedelta,timezone
 from zoneinfo import ZoneInfo
 from concurrent.futures import ThreadPoolExecutor,as_completed
-import argparse,hashlib,json,urllib.request,urllib.parse,re,xml.etree.ElementTree as ET,subprocess,sys
+import argparse,hashlib,json,time,urllib.error,urllib.request,urllib.parse,re,xml.etree.ElementTree as ET,subprocess,sys
 
 def get(url,headers=None):
     req=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0 PortfolioResearch',**(headers or {})})
-    with urllib.request.urlopen(req,timeout=20) as r:return r.read()
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(req,timeout=60) as r:return r.read()
+        except urllib.error.HTTPError as error:
+            if error.code not in [408,429,500,502,503,504] or attempt==2:raise
+        except (TimeoutError,urllib.error.URLError,OSError):
+            if attempt==2:raise
+        time.sleep(1+attempt)
 
 def load(p):
     try:return json.loads(p.read_text(encoding='utf-8-sig'))

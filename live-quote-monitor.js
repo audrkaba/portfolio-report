@@ -45,10 +45,18 @@
     if(row){p.textContent='Effect of the complete PFE holding on Current historical netSD: with PFE '+row.with_PFE.netSD.toFixed(6)+', without PFE '+row.without_PFE.netSD.toFixed(6)+', difference '+row.effect_of_PFE.toFixed(6)+'. Other asset quantities unchanged. ';const a=document.createElement('a');a.href='pfe-portfolio-impact.html';a.textContent='Compare PFE impact for Current and all 20 published model/policy allocations (historical sensitivity; not reoptimised plans)';p.append(a)}
    }
   }else{
+   if(quote){
+    f.set('last price',quote.price.toFixed(4));
+    if(Number.isFinite(quote.bollinger_lower))f.set('bollinger lower eur',quote.bollinger_lower.toFixed(4));
+    if(Number.isFinite(quote.bollinger_upper))f.set('bollinger upper eur',quote.bollinger_upper.toFixed(4));
+    const target=Number(String(f.get('target units')??'').replace(/[,\s]/g,''));
+    if(Number.isFinite(target)&&f.get('target units')!=null){f.set('target value eur',(target*quote.price).toFixed(2));f.set('weight %',(100*target*quote.price/15000).toFixed(2)+'%');}
+   }
    const old=snapshot?.current_units;
    const validated=baskets[scope]?.[policy]?.validated===true;
    const inventoryMatches=old==null||Math.abs(old-units)<=1e-9;
    note.textContent='Confirmed holding: '+units+' units. '+(old!=null?'Model input: '+old+' units. ':'')+(!inventoryMatches?'The inventory changed after this model was sealed. Its recorded target is not a newly recalculated order.':validated?'Recalculated allocation using its stated completed-session quotes.':'Target and analytics are an earlier model snapshot, not recalculated current orders.');
+   if(quote)note.textContent+=' Display price, Bollinger bands and target value use the latest verified mark '+quote.date+'; target quantities remain the sealed model decision, not a new optimisation.';
    if(old!=null&&Math.abs(old-units)>1e-9)f.set('change','Pending recalculation');
    const summary=profile.querySelector(':scope > summary');if(summary){const fresh=validated&&inventoryMatches;summary.textContent=summary.textContent.replace(fresh?'recorded action:':'current action:',fresh?'current action:':'recorded action:');summary.textContent=summary.textContent.replace(/ \| held now:.*$/,'');summary.textContent+=' | held now: '+units+' units'}
   }
