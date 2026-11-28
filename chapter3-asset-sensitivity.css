@@ -12,3 +12,9 @@
 #chapter3-asset-sensitivity .asset-sensitivity-row-note{font-size:.72rem;margin:.2rem 0}
 #chapter3-asset-sensitivity .sensitivity-baseline{font-size:.85rem}
 @media(max-width:600px){#chapter3-asset-sensitivity table{font-size:.67rem}#chapter3-asset-sensitivity th,#chapter3-asset-sensitivity td{padding:.18rem}.asset-sensitivity-controls>label{width:100%}}
+
+/* Table groups stay visible inside the single parent disclosure. */
+#chapter3-asset-sensitivity .asset-sensitivity-group{min-width:0;max-width:100%;box-sizing:border-box;border-top:2px solid #9bafbf;margin:1.2rem 0;padding:.65rem;background:#f3f7fb}
+#chapter3-asset-sensitivity #asset-initial-buy-section{border-color:#8cae99;background:#f3f8f4}
+#chapter3-asset-sensitivity #asset-later-buy-section{border-color:#b7a275;background:#fcf8ee}
+#chapter3-asset-sensitivity .asset-sensitivity-group>h4{font-size:1rem;font-weight:600;margin:.2rem 0 .65rem;overflow-wrap:anywhere}
